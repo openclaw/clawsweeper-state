@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T18:27:22.841Z",
+  "updated_at": "2026-08-30T18:27:25.668Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/sweet-cookie:43:5316084611:2026-08-30T13:05:55Z:clawsweeper_needs_human",
-      "comment_id": "5316084611",
-      "comment_version_key": "5316084611:2026-08-30T13:05:55Z",
-      "comment_url": "https://github.com/steipete/sweet-cookie/pull/43#issuecomment-5316084611",
-      "comment_created_at": "2026-08-17T12:33:23Z",
-      "comment_updated_at": "2026-08-30T13:05:55Z",
-      "comment_body_sha256": "398cce150d0c5dd0b734bfada9c7ddd67dea34d39868fe0b20ff6d27f2ff4bed",
-      "repo": "steipete/sweet-cookie",
-      "issue_number": 43,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed macOS provider selects Keychain account/service before decrypting a temporary SQLite cookie database; the supplied integration exer... (sha=996d433f16cc678ac91970bda61162aa9867c05c)",
-      "expected_head_sha": "996d433f16cc678ac91970bda61162aa9867c05c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T13:06:39.128Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/upstream-explicit-keychain",
-        "head_sha": "996d433f16cc678ac91970bda61162aa9867c05c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133291:5468862575:2026-08-30T13:06:14Z:clawsweeper_needs_human",
       "comment_id": "5468862575",
@@ -33019,6 +32986,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:179:5470220210:2026-08-30T18:26:27Z:clawsweeper_auto_merge",
+      "comment_id": "5470220210",
+      "comment_version_key": "5470220210:2026-08-30T18:26:27Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470220210",
+      "comment_created_at": "2026-08-30T17:34:33Z",
+      "comment_updated_at": "2026-08-30T18:26:27Z",
+      "comment_body_sha256": "ebba82e4a97f48c2a4e1c3bdc648625b6eccd4ced18521d54688def70e760025",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 179,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=dd07ec96aa3631a66cb1575a2dec152d419bf773)",
+      "expected_head_sha": "dd07ec96aa3631a66cb1575a2dec152d419bf773",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T18:27:25.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tar-raw-framing",
+        "head_sha": "dd07ec96aa3631a66cb1575a2dec152d419bf773",
+        "cluster_id": "automerge-openclaw-fs-safe-179",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-179.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
