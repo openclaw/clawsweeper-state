@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-172
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/172#issuecomment-5468237943"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/172#issuecomment-5468309033"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/172#issuecomment-
 Maintainer opted #172 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/172#issuecomment-5468237943
+Request comment: https://github.com/openclaw/fs-safe/pull/172#issuecomment-5468309033
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/172
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Require exact-head hosted proof in native-off and Windows lanes that callback symlink/directory/hardlink/FIFO substitutions are rejected without touching replacements or referents, staged mode/fsync occurs through one retained descriptor, and publication/cleanup replacement schedules never delete the observed substitute or roll back a post-rename final name.
+Compatibility defaults are restored: omitted mode preserves producer permissions, omitted sync options stay false, and only descriptor chmod failure remains best-effort for the directory. Verify exact-head hosted substitution/identity proof while retaining these upgrade behaviors.
 
