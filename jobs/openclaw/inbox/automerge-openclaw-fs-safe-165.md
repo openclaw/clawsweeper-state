@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-165
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/165#issuecomment-5465899088"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/165#issuecomment-5465940431"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/165#issuecomment-
 Maintainer opted #165 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/165#issuecomment-5465899088
+Request comment: https://github.com/openclaw/fs-safe/pull/165#issuecomment-5465940431
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/165
