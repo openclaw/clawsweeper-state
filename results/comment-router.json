@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T16:09:45.709Z",
+  "updated_at": "2026-08-30T16:10:01.841Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5310722401:2026-08-17T01:15:14Z:re_review",
-      "comment_id": "5310722401",
-      "comment_version_key": "5310722401:2026-08-17T01:15:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5310722401",
-      "comment_created_at": "2026-08-17T01:15:14Z",
-      "comment_updated_at": "2026-08-17T01:15:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:34:53.157Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5312926896:2026-08-17T07:07:37Z:re_review",
       "comment_id": "5312926896",
@@ -32601,6 +32574,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T16:09:45.709Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3543:5454855424:2026-08-30T16:09:02Z:clawsweeper_needs_human",
+      "comment_id": "5454855424",
+      "comment_version_key": "5454855424:2026-08-30T16:09:02Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3543#issuecomment-5454855424",
+      "comment_created_at": "2026-08-28T16:10:12Z",
+      "comment_updated_at": "2026-08-30T16:09:02Z",
+      "comment_body_sha256": "97288c92493105d18c3b050b9d72c25636f472f112b6bc4a25ba4be718c7d4c6",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3543,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Vite and its browser-test toolchain are upgraded together, and the exact PR run reports 60 Chromium failures; merging before triage could leave the build or browser-test path broken. (sha=4f66cf22fdf6089e25e21204a5c15de40058f672)",
+      "expected_head_sha": "4f66cf22fdf6089e25e21204a5c15de40058f672",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T16:10:01.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-e098b16569",
+        "head_sha": "4f66cf22fdf6089e25e21204a5c15de40058f672",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
