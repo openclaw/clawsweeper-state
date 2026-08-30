@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:55:33.580Z",
+  "updated_at": "2026-08-30T22:55:43.816Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133376:5469860800:2026-08-30T16:23:58Z:clawsweeper_needs_human",
-      "comment_id": "5469860800",
-      "comment_version_key": "5469860800:2026-08-30T16:23:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5469860800",
-      "comment_created_at": "2026-08-30T16:23:58Z",
-      "comment_updated_at": "2026-08-30T16:23:58Z",
-      "comment_body_sha256": "3f6a4accf8861f03ee0cbe87f3ae5aa1834936f242785a5e569a2bf77d25f0e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production owner is the Code Mode skill reader, but the supplied PR body only reports a focused Vitest result; it contains no observed afte...; Review finding: [P1] Enforce physical skill-root containment — src/agents/code-mode-skills.ts:99-105 - [P1] Handle node-hosted skill locators — src/agents/code-mode-skills.ts:99-1... (sha=35b7afe0598c1b671de9312b78da9022350c9756)",
-      "expected_head_sha": "35b7afe0598c1b671de9312b78da9022350c9756",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T17:12:25.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-skill-relative-read",
-        "head_sha": "35b7afe0598c1b671de9312b78da9022350c9756",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133381:5469915704:2026-08-30T16:44:47Z:clawsweeper_auto_repair",
       "comment_id": "5469915704",
@@ -34248,6 +34215,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123075:5471770825:2026-08-30T22:54:56Z:re_review",
+      "comment_id": "5471770825",
+      "comment_version_key": "5471770825:2026-08-30T22:54:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123075#issuecomment-5471770825",
+      "comment_created_at": "2026-08-30T22:54:56Z",
+      "comment_updated_at": "2026-08-30T22:54:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123075,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T22:55:41.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split/approval-ui-aug13",
+        "head_sha": "8300e46d4a5db58c4f847d60d94bde644bad6fe9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
