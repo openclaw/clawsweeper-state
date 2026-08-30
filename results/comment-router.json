@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:40:55.380Z",
+  "updated_at": "2026-08-30T01:41:20.303Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132465:5461059618:2026-08-29T22:17:20Z:clawsweeper_auto_repair",
-      "comment_id": "5461059618",
-      "comment_version_key": "5461059618:2026-08-29T22:17:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132465#issuecomment-5461059618",
-      "comment_created_at": "2026-08-29T07:28:04Z",
-      "comment_updated_at": "2026-08-29T22:17:20Z",
-      "comment_body_sha256": "2fdae89e8d8cdad91a3aa95540181053026f8e917708105dae9d8cbb3b79041d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8744d25a0993e22a7527ad3fb3659bfe8619d9c3)",
-      "expected_head_sha": "8744d25a0993e22a7527ad3fb3659bfe8619d9c3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T22:34:13.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/tests-core-ui",
-        "head_sha": "8744d25a0993e22a7527ad3fb3659bfe8619d9c3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132453:5461072539:2026-08-29T22:27:48Z:clawsweeper_auto_repair",
       "comment_id": "5461072539",
@@ -31087,6 +31054,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:207:5466045864:2026-08-30T01:40:35Z:clawsweeper_needs_human",
+      "comment_id": "5466045864",
+      "comment_version_key": "5466045864:2026-08-30T01:40:35Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/207#issuecomment-5466045864",
+      "comment_created_at": "2026-08-30T01:40:35Z",
+      "comment_updated_at": "2026-08-30T01:40:35Z",
+      "comment_body_sha256": "bc2de960e44d44d4e6c1ac3a922677c8df59a3db6692ecdb495ca5986449259e",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 207,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Codex fallback loop; supplied tests mock both scanner and provider processes, so they check ordering and re... (sha=739849b503b378cdc5ec3a81b5df9f01f7e70f1d)",
+      "expected_head_sha": "739849b503b378cdc5ec3a81b5df9f01f7e70f1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:41:20.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/autoreview-retry-presend-scan",
+        "head_sha": "739849b503b378cdc5ec3a81b5df9f01f7e70f1d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
