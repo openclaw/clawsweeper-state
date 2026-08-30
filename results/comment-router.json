@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-30T17:31:00.840Z",
+  "updated_at": "2026-08-30T17:30:13.674Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116019:5121566898:2026-08-30T11:49:58Z:clawsweeper_auto_repair",
+      "comment_id": "5121566898",
+      "comment_version_key": "5121566898:2026-08-30T11:49:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116019#issuecomment-5121566898",
+      "comment_created_at": "2026-07-29T17:52:19Z",
+      "comment_updated_at": "2026-08-30T11:49:58Z",
+      "comment_body_sha256": "17b7959723dea15ef345b0abd363125bc89076bd4b0ebd59b5243bda9dab3d58",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9c1d167f3636375c22641cbf8fdd31b82ed57f11)",
+      "expected_head_sha": "9c1d167f3636375c22641cbf8fdd31b82ed57f11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T12:25:08.982Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/guarded-fetch-unread-body-sweep",
+        "head_sha": "9c1d167f3636375c22641cbf8fdd31b82ed57f11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116232:5126674096:2026-08-30T12:00:16Z:clawsweeper_auto_repair",
       "comment_id": "5126674096",
@@ -32680,65 +32713,6 @@
         "cluster_id": "automerge-openclaw-openclaw-119525",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119525.md"
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:179:5470198831:2026-08-30T17:30:18Z:automerge",
-      "comment_id": "5470198831",
-      "comment_version_key": "5470198831:2026-08-30T17:30:18Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470198831",
-      "comment_created_at": "2026-08-30T17:30:18Z",
-      "comment_updated_at": "2026-08-30T17:30:18Z",
-      "comment_body_sha256": "ac6b4b3f8f402a60ce598ad5e457a85a80964bf17213912c72a81354ae663daa",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 179,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T17:30:54.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tar-raw-framing",
-        "head_sha": "07d8a2c3a271239f6e2b70e38b62d62e7b9bab30",
-        "cluster_id": "automerge-openclaw-fs-safe-179",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-179.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-179.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
