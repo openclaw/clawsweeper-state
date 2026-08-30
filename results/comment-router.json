@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T02:07:29.056Z",
+  "updated_at": "2026-08-30T02:07:50.289Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130394:5431175984:2026-08-29T23:41:28Z:clawsweeper_needs_human",
-      "comment_id": "5431175984",
-      "comment_version_key": "5431175984:2026-08-29T23:41:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130394#issuecomment-5431175984",
-      "comment_created_at": "2026-08-26T21:12:21Z",
-      "comment_updated_at": "2026-08-29T23:41:28Z",
-      "comment_body_sha256": "025afd0d889af49f482b05e42451336676ff7e9675290004751af00b16966e8b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130394,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Stop inferring approval keys from display metadata (P1)** - app/read supplies a tool name and display title, not an apps.&lt;app>.tools configuration identifier. Treating the title and app-name-derived variants...; Review finding: [P1] Stop inferring approval keys from display metadata — extensions/codex/src/app-server/plugin-inventory.ts:553-561 - [medium] Approval exemptions use unverified... (sha=ff98af10d3a9ff1d25022c901fdd03b70b082fad)",
-      "expected_head_sha": "ff98af10d3a9ff1d25022c901fdd03b70b082fad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T23:43:28.116Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/fix-codex-ask-managed-approvals",
-        "head_sha": "ff98af10d3a9ff1d25022c901fdd03b70b082fad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131959:5455674149:2026-08-29T23:40:36Z:clawsweeper_auto_repair",
       "comment_id": "5455674149",
@@ -30330,6 +30297,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:15:5464152387:2026-08-30T01:59:35Z:clawsweeper_needs_human",
+      "comment_id": "5464152387",
+      "comment_version_key": "5464152387:2026-08-30T01:59:35Z",
+      "comment_url": "https://github.com/openclaw/ask-molty/pull/15#issuecomment-5464152387",
+      "comment_created_at": "2026-08-29T18:35:22Z",
+      "comment_updated_at": "2026-08-30T01:59:35Z",
+      "comment_body_sha256": "80d2a0f4e44ccb4e051e996fd746c8b6f8d3d76fbd34d613cf9ef8c9782638a7",
+      "repo": "openclaw/ask-molty",
+      "issue_number": 15,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A response that sends headers and then stalls while streaming its body remains outside this header-only timeout’s scope; that is unchanged behavior and would need a separate body-idle... (sha=73f0f09e879502a1199321932841f7cf31e35f3f)",
+      "expected_head_sha": "73f0f09e879502a1199321932841f7cf31e35f3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T02:07:50.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f005-retrieval-fetch-abort",
+        "head_sha": "73f0f09e879502a1199321932841f7cf31e35f3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
