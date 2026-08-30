@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T12:46:22.915Z",
+  "updated_at": "2026-08-30T12:46:27.178Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125788:5327253258:2026-08-30T08:38:35Z:clawsweeper_auto_repair",
-      "comment_id": "5327253258",
-      "comment_version_key": "5327253258:2026-08-30T08:38:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125788#issuecomment-5327253258",
-      "comment_created_at": "2026-08-18T11:02:49Z",
-      "comment_updated_at": "2026-08-30T08:38:35Z",
-      "comment_body_sha256": "ef3b877a0a8796b6c48ce60bf67b2b05219ec85c761aab903949c4a87031b5a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125788,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=788593cbe72263aa496e52aa6af0b5713ba0d8cf)",
-      "expected_head_sha": "788593cbe72263aa496e52aa6af0b5713ba0d8cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T08:44:09.082Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-catalog-dropped-by-toolsallow",
-        "head_sha": "788593cbe72263aa496e52aa6af0b5713ba0d8cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126619:5354020910:2026-08-30T08:37:50Z:clawsweeper_auto_repair",
       "comment_id": "5354020910",
@@ -32001,6 +31968,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:174:5468657699:2026-08-30T12:42:08Z:clawsweeper_auto_merge",
+      "comment_id": "5468657699",
+      "comment_version_key": "5468657699:2026-08-30T12:42:08Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468657699",
+      "comment_created_at": "2026-08-30T12:22:41Z",
+      "comment_updated_at": "2026-08-30T12:42:08Z",
+      "comment_body_sha256": "5f9ada3c54596d3bc805410cdae9acb35cc25acde1caca21be30dab1259e0426",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 174,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=4baa21e50e2992906052f0d4a3c1c820bebad5f8); current checks are failing: Node 22 coverage (windows-latest):FAILURE",
+      "expected_head_sha": "4baa21e50e2992906052f0d4a3c1c820bebad5f8",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-30T12:46:25.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/atomic-before-rename-substitution",
+        "head_sha": "4baa21e50e2992906052f0d4a3c1c820bebad5f8",
+        "cluster_id": "automerge-openclaw-fs-safe-174",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-174.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-174.md"
+        },
+        {
+          "action": "comment",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
