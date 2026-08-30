@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T10:22:44.001Z",
+  "updated_at": "2026-08-30T10:22:53.184Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111367:5015420204:2026-08-30T06:11:58Z:clawsweeper_auto_repair",
-      "comment_id": "5015420204",
-      "comment_version_key": "5015420204:2026-08-30T06:11:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111367#issuecomment-5015420204",
-      "comment_created_at": "2026-07-19T10:46:57Z",
-      "comment_updated_at": "2026-08-30T06:11:58Z",
-      "comment_body_sha256": "969e90ea813b11943f2da2fb048b2aad7c0bd87ff548af78e51efe2d4ad1b3d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111367,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6f075ca976bdfc55f9ac743c0eb57092f8f8c1e7)",
-      "expected_head_sha": "6f075ca976bdfc55f9ac743c0eb57092f8f8c1e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T06:12:38.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-xhigh-supported-efforts",
-        "head_sha": "6f075ca976bdfc55f9ac743c0eb57092f8f8c1e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/proxyline:26:5464144325:2026-08-30T05:56:14Z:clawsweeper_needs_human",
       "comment_id": "5464144325",
@@ -32534,6 +32501,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133248:5468113612:2026-08-30T10:22:09Z:re_review",
+      "comment_id": "5468113612",
+      "comment_version_key": "5468113612:2026-08-30T10:22:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133248#issuecomment-5468113612",
+      "comment_created_at": "2026-08-30T10:22:09Z",
+      "comment_updated_at": "2026-08-30T10:22:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133248,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T10:22:50.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-ingress-queue-heartbeat",
+        "head_sha": "969bfac80baf57ef405452a187c5586aa1e17c1a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
