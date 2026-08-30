@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-30T06:13:42.236Z",
+  "updated_at": "2026-08-30T06:13:51.759Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:166:5466155147:2026-08-30T02:07:34Z:automerge",
-      "comment_id": "5466155147",
-      "comment_version_key": "5466155147:2026-08-30T02:07:34Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/166#issuecomment-5466155147",
-      "comment_created_at": "2026-08-30T02:07:34Z",
-      "comment_updated_at": "2026-08-30T02:07:34Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 166,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T02:08:10.008Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-lock-deadlines",
-        "head_sha": "c6bd99423660c63c7caf75996c5eb627b09db37e",
-        "cluster_id": "automerge-openclaw-fs-safe-166",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-166.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-166.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132887:5465356672:2026-08-30T02:10:54Z:clawsweeper_needs_human",
       "comment_id": "5465356672",
@@ -30926,6 +30867,39 @@
         "kind": "pull_request",
         "branch": "feat/orcarouter-builtin-provider",
         "head_sha": "49f8450fcd1ba44b75f801c856649987afeb9959",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111596:5018198129:2026-08-30T06:13:05Z:clawsweeper_needs_human",
+      "comment_id": "5018198129",
+      "comment_version_key": "5018198129:2026-08-30T06:13:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111596#issuecomment-5018198129",
+      "comment_created_at": "2026-07-20T02:19:47Z",
+      "comment_updated_at": "2026-08-30T06:13:05Z",
+      "comment_body_sha256": "cc45eb1af11042bc2763b3e1d5a9df99814cad1b3ba088f4bc95aa50f01deaad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal trace exercises production catalog input and proves the Windows grouping result changes from two groups to one,... (sha=577f537b877d5466e856ebcac0c466ca0d83375e)",
+      "expected_head_sha": "577f537b877d5466e856ebcac0c466ca0d83375e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T06:13:51.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-windows-path-identity",
+        "head_sha": "577f537b877d5466e856ebcac0c466ca0d83375e",
         "cluster_id": null,
         "job_path": null
       }
