@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T11:44:08.330Z",
+  "updated_at": "2026-08-30T11:48:25.037Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118211:5160425279:2026-08-30T07:51:59Z:clawsweeper_needs_human",
-      "comment_id": "5160425279",
-      "comment_version_key": "5160425279:2026-08-30T07:51:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118211#issuecomment-5160425279",
-      "comment_created_at": "2026-08-02T21:29:06Z",
-      "comment_updated_at": "2026-08-30T07:51:59Z",
-      "comment_body_sha256": "6b25a0312904952131f6f07b849bc31db0699896afbd45873cccf92960646ea3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118211,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied real loopback proofs cover literal, JSON, escaped-key, quoted, and nested-JSON bodies, but not the encoded signed-URL cas...; Review finding: [P1] Redact percent-encoded rejected-upgrade bodies — packages/gateway-client/src/client.ts:584 - [high] Encoded signed URL values bypass body redaction — packages... (sha=7da714b373f2d05521fc028cde8a92dd17c16ea3)",
-      "expected_head_sha": "7da714b373f2d05521fc028cde8a92dd17c16ea3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T07:56:51.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/net-policy-redact-cloud-signed-credentials",
-        "head_sha": "7da714b373f2d05521fc028cde8a92dd17c16ea3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120794:5229034586:2026-08-30T07:50:50Z:clawsweeper_auto_repair",
       "comment_id": "5229034586",
@@ -32028,6 +31995,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1664:5468495133:2026-08-30T11:47:36Z:re_review",
+      "comment_id": "5468495133",
+      "comment_version_key": "5468495133:2026-08-30T11:47:36Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1664#issuecomment-5468495133",
+      "comment_created_at": "2026-08-30T11:47:36Z",
+      "comment_updated_at": "2026-08-30T11:47:36Z",
+      "comment_body_sha256": "875343dd5779b0649fb6a3025664ce29cc69bd85d870ba2b2f916a650504d255",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1664,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T11:48:22.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/smolvm-exact-ownership",
+        "head_sha": "9cef85e30f0397bfb4ff4f644970a47a59d9ba55",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
