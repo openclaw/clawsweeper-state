@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T23:51:46.395Z",
+  "updated_at": "2026-08-30T23:51:50.918Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:78747:4393916980:2026-08-30T18:15:27Z:clawsweeper_auto_repair",
-      "comment_id": "4393916980",
-      "comment_version_key": "4393916980:2026-08-30T18:15:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/78747#issuecomment-4393916980",
-      "comment_created_at": "2026-05-07T03:14:43Z",
-      "comment_updated_at": "2026-08-30T18:15:27Z",
-      "comment_body_sha256": "a301cd2e220fe9ebc7929c6d1001c668e4fd9d3772a3ca6a433ff11149b38d6a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 78747,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=efc9a95b2b760590a2f020226ebb6774c8d0a3cd)",
-      "expected_head_sha": "efc9a95b2b760590a2f020226ebb6774c8d0a3cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T18:43:12.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-responses-tools-before-input",
-        "head_sha": "efc9a95b2b760590a2f020226ebb6774c8d0a3cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106529:4961034548:2026-08-30T18:09:25Z:clawsweeper_needs_human",
       "comment_id": "4961034548",
@@ -33863,6 +33830,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125663:5472032469:2026-08-30T23:50:58Z:re_review",
+      "comment_id": "5472032469",
+      "comment_version_key": "5472032469:2026-08-30T23:50:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125663#issuecomment-5472032469",
+      "comment_created_at": "2026-08-30T23:50:58Z",
+      "comment_updated_at": "2026-08-30T23:50:58Z",
+      "comment_body_sha256": "b7e6a34ec68d8d1ed4fadd9c35b8cfb7b588ee2c1d62ba261043ea0aa36ee2fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125663,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T23:51:48.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-host-trajectory-recorder",
+        "head_sha": "8c10ee6608134c15508630c8fc18f48ad97246d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
