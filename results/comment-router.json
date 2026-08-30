@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T14:56:17.530Z",
+  "updated_at": "2026-08-30T14:56:31.489Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5465201446:2026-08-29T22:17:35Z:re_review",
-      "comment_id": "5465201446",
-      "comment_version_key": "5465201446:2026-08-29T22:17:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5465201446",
-      "comment_created_at": "2026-08-29T22:17:35Z",
-      "comment_updated_at": "2026-08-29T22:17:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:13:42.429Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5465349481:2026-08-29T22:52:53Z:re_review",
       "comment_id": "5465349481",
@@ -31988,6 +31961,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/reef:11:5464081518:2026-08-30T14:55:50Z:clawsweeper_needs_human",
+      "comment_id": "5464081518",
+      "comment_version_key": "5464081518:2026-08-30T14:55:50Z",
+      "comment_url": "https://github.com/openclaw/reef/pull/11#issuecomment-5464081518",
+      "comment_created_at": "2026-08-29T18:20:35Z",
+      "comment_updated_at": "2026-08-30T14:55:50Z",
+      "comment_body_sha256": "7a89bba537c177002bbd7950506b13f3e24f13d37c274d60b21823606293c760",
+      "repo": "openclaw/reef",
+      "issue_number": 11,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owners are the canonical serializer and relay mail handler. The body supplies direct serializer output and a cu... (sha=02ceed97f53c5c16bc0a66dfe96b3eb1984e9a2f)",
+      "expected_head_sha": "02ceed97f53c5c16bc0a66dfe96b3eb1984e9a2f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T14:56:31.489Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f001-canonical-json-depth",
+        "head_sha": "02ceed97f53c5c16bc0a66dfe96b3eb1984e9a2f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
