@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133051",
+  "mode": "autonomous",
+  "run_id": "33292961554",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33292961554",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133051.md",
+  "published_at": "2026-08-30T04:52:13.612Z",
+  "canonical": "#133051",
+  "canonical_issue": "#133051",
+  "canonical_pr": null,
+  "summary": "Source defect confirmed; environment prevents creating or validating the required repair branch.",
+  "actions": [
+    {
+      "target": "#133051",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133051",
+      "candidate_fix": null,
+      "reason": "Narrow Telegram-owner repair; no config, SDK, persistence, or policy change is indicated."
+    },
+    {
+      "target": "#126246",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#133051",
+      "candidate_fix": null,
+      "reason": "Separate recovery-state design work."
+    },
+    {
+      "target": "#128971",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#133051",
+      "candidate_fix": null,
+      "reason": "Explicitly excluded ambiguous-delivery work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133051",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133051",
+      "candidate_fix": null,
+      "reason": "Writable worker can apply the narrow repair."
+    },
+    {
+      "target": "#133051",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133051",
+      "candidate_fix": null,
+      "reason": "Cannot edit, install dependencies, execute tests, or perform mandatory Codex-source inspection."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and sibling ../codex, then apply and validate the fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
