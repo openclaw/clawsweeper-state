@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-30T11:26:56.899Z",
+  "generated_at": "2026-08-30T11:37:23.769Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/33307826248.json",
+  "run_record": "results/runs/33308397916.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "33307826248",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "33308397916",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/fs-safe:#172:merge_canonical:blocked:job does not allow merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/fs-safe",
+      "target": "#172",
+      "title": "fix(temp): pin sibling temp publication",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33308397916",
+      "cluster_id": "automerge-openclaw-fs-safe-172",
+      "hook_run_id": "1d6932a7-630b-432f-9afb-51c896faeaf5",
+      "url": "https://github.com/openclaw/fs-safe/pull/172"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/fs-safe:#172:repair_contributor_branch:pushed:c54e130285607d137b0e528aeadf36347f26132a",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/fs-safe",
+      "target": "#172",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33308397916",
+      "cluster_id": "automerge-openclaw-fs-safe-172",
+      "hook_run_id": "667c93e5-cf8f-43b4-b30d-6fc5e0bddd81",
+      "url": "https://github.com/openclaw/fs-safe/pull/172"
+    }
+  ]
 }

@@ -2,21 +2,21 @@
 repo: "openclaw/fs-safe"
 cluster_id: "automerge-openclaw-fs-safe-172"
 mode: "autonomous"
-run_id: "33307880484"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33307880484"
-head_sha: "fa535d54a032862b022147a7cba4eaa3bdeb4a7b"
-workflow_conclusion: "failure"
+run_id: "33308397916"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33308397916"
+head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-30T11:16:41.971Z"
+published_at: "2026-08-30T11:37:13.816Z"
 canonical: "#172"
 canonical_issue: null
 canonical_pr: "#172"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
-apply_blocked: 0
+apply_blocked: 1
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/fs-safe
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33307880484](https://github.com/openclaw/clawsweeper/actions/runs/33307880484)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33308397916](https://github.com/openclaw/clawsweeper/actions/runs/33308397916)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -44,9 +44,9 @@ Make PR #172 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 | Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
-| Apply blocked | 0 |
+| Apply blocked | 1 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,14 +54,13 @@ Make PR #172 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | blocked | https://github.com/openclaw/fs-safe/pull/172 |  | source PR #172 changed during the repair settle window; requeue against the latest head |
-| automerge_repair_outcome_comment | updated | #172 |  |  |
+| repair_contributor_branch | pushed | https://github.com/openclaw/fs-safe/pull/172 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| #172 | merge_canonical | blocked | fix_pr | job does not allow merge |
 
 ## Worker Action Matrix
 
