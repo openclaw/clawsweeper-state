@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:04:27.924Z",
+  "updated_at": "2026-08-30T01:04:41.786Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131959:5465043022:2026-08-29T21:41:15Z:re_review",
-      "comment_id": "5465043022",
-      "comment_version_key": "5465043022:2026-08-29T21:41:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131959#issuecomment-5465043022",
-      "comment_created_at": "2026-08-29T21:41:15Z",
-      "comment_updated_at": "2026-08-29T21:41:15Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131959,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T21:42:05.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-agent-owner-global-session-key-127599",
-        "head_sha": "34806de272bbb11cc998a32394054e730a35725f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:204:5464181774:2026-08-29T21:35:31Z:clawsweeper_auto_repair",
       "comment_id": "5464181774",
@@ -31040,6 +30993,39 @@
         "kind": "pull_request",
         "branch": "steipete/sharp-hodgkin-e8ad2e",
         "head_sha": "3db9487e268d02b79699421c4fca5d3f23ebc74b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129120:5407334534:2026-08-30T01:03:45Z:clawsweeper_needs_human",
+      "comment_id": "5407334534",
+      "comment_version_key": "5407334534:2026-08-30T01:03:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129120#issuecomment-5407334534",
+      "comment_created_at": "2026-08-25T08:03:27Z",
+      "comment_updated_at": "2026-08-30T01:03:45Z",
+      "comment_body_sha256": "738004ce19ff3d2df0564dc01a63f609fb173f2e5dbad14d52db8931c3f6e63a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129120,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the session-search schema/executor and post-authorization prompt-description paths; supplied tests exercise t... (sha=42689ca72b67f7666c9464dc1fa992d1ad7bed0a)",
+      "expected_head_sha": "42689ca72b67f7666c9464dc1fa992d1ad7bed0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:04:41.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-search-empty-query-129054",
+        "head_sha": "42689ca72b67f7666c9464dc1fa992d1ad7bed0a",
         "cluster_id": null,
         "job_path": null
       }
