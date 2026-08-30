@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T04:20:06.996Z",
+  "updated_at": "2026-08-30T04:20:28.696Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132622:5465908728:2026-08-30T01:07:06Z:re_review",
-      "comment_id": "5465908728",
-      "comment_version_key": "5465908728:2026-08-30T01:07:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132622#issuecomment-5465908728",
-      "comment_created_at": "2026-08-30T01:07:06Z",
-      "comment_updated_at": "2026-08-30T01:07:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132622,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T01:07:57.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/feishu-group-management-130823",
-        "head_sha": "c9198adab1576e7be0e05828addd321642560305",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119736:5198764911:2026-08-05T23:56:59Z:re_review",
       "comment_id": "5198764911",
@@ -30957,6 +30910,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133061:5466665891:2026-08-30T04:19:51Z:clawsweeper_needs_human",
+      "comment_id": "5466665891",
+      "comment_version_key": "5466665891:2026-08-30T04:19:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133061#issuecomment-5466665891",
+      "comment_created_at": "2026-08-30T04:19:51Z",
+      "comment_updated_at": "2026-08-30T04:19:51Z",
+      "comment_body_sha256": "6f855192cf5d607e3b2bd7b3eb67fa0c70c247157fd1cb2f063eda6226128181",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133061,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI run and the PR's planned Control UI recording were still in progress in the reviewed snapshot, so the claimed concurrency improvement needs final merge-time validati... (sha=0df0d99891c98ec13aefad0c39732679806415ac)",
+      "expected_head_sha": "0df0d99891c98ec13aefad0c39732679806415ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T04:20:28.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-stress-efficiency",
+        "head_sha": "0df0d99891c98ec13aefad0c39732679806415ac",
         "cluster_id": null,
         "job_path": null
       }
