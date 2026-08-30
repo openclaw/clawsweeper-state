@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-174
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468844895"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468779963"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/174#issuecomment-
 Maintainer opted #174 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468844895
+Request comment: https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468779963
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/174
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-`RenameIdentityPolicy` is now exported from `@openclaw/fs-safe/atomic` and recorded in the public API fixture. Retain strict source-to-destination identity as the default, matching the repository's established `Root` policy; confirmed rename-unstable FUSE users must explicitly choose locked content verification. Recheck exact-head runtime, public types, Windows lock proof, and the packed consumer evidence.
+Verify exact staged identity remains pinned across async/sync `beforeRename`, retries, copy fallback, parent sync, final-name checks, and cleanup. Keep strict source-to-destination identity as the default; `renameIdentity: "verify-content-with-lock"` may accept a rename-unstable FUSE destination only after no-follow exact admission, SHA-256 content agreement, and exclusive async/sync sidecar locking. Confirm bigint-aware injected adapters and Windows lock snapshot proof.
 
