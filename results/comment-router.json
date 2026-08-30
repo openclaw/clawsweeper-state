@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T21:32:39.903Z",
+  "updated_at": "2026-08-30T21:32:48.341Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113611:5239162433:2026-08-10T10:50:47Z:re_review",
-      "comment_id": "5239162433",
-      "comment_version_key": "5239162433:2026-08-10T10:50:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113611#issuecomment-5239162433",
-      "comment_created_at": "2026-08-10T10:50:47Z",
-      "comment_updated_at": "2026-08-10T10:50:47Z",
-      "comment_body_sha256": "edec1c054a10074283223e6abc15eeacfe1545f01ea8c7e43c2775766449ed03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113611,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T16:09:45.709Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113611:5247226956:2026-08-10T23:34:30Z:re_review",
       "comment_id": "5247226956",
@@ -33770,6 +33743,39 @@
         "job_path": null
       },
       "source_delivery_conflict": true
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1312:5471384292:2026-08-30T21:32:08Z:clawsweeper_needs_human",
+      "comment_id": "5471384292",
+      "comment_version_key": "5471384292:2026-08-30T21:32:08Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1312#issuecomment-5471384292",
+      "comment_created_at": "2026-08-30T21:32:08Z",
+      "comment_updated_at": "2026-08-30T21:32:08Z",
+      "comment_body_sha256": "53e080a260d665f999b3a3f9a6b51a7b01692a359b50c191925f5ec24ef52399",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1312,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Ranges whose NUL-framed name-status or numstat output exceeds the 1 MiB raw-read cap now abort instead of completing with an explicit unavailable-statistics message; existing local-re... (sha=43c6be92944189bf960c3d84b846f64ca5033558)",
+      "expected_head_sha": "43c6be92944189bf960c3d84b846f64ca5033558",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T21:32:48.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/adoring-lederberg-2f6477",
+        "head_sha": "43c6be92944189bf960c3d84b846f64ca5033558",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
