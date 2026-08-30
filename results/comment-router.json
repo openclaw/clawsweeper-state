@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T21:52:55.946Z",
+  "updated_at": "2026-08-30T21:53:32.756Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132689:5469870610:2026-08-30T16:25:50Z:re_review",
-      "comment_id": "5469870610",
-      "comment_version_key": "5469870610:2026-08-30T16:25:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132689#issuecomment-5469870610",
-      "comment_created_at": "2026-08-30T16:25:50Z",
-      "comment_updated_at": "2026-08-30T16:25:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132689,
-      "author": "Solvely-Colin",
-      "author_id": 211764741,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:26:32.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ios-composer-durable-delivery",
-        "head_sha": "8817e126c4322606668242c0c2f17bb2ec2f7ff1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132683:5469870534:2026-08-30T16:25:50Z:re_review",
       "comment_id": "5469870534",
@@ -33931,6 +33884,39 @@
         "kind": "pull_request",
         "branch": "codex/simplify-review-publication",
         "head_sha": "66dcec898e15531491b9d841bcd840afb1c37011",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133571:5471481468:2026-08-30T21:52:48Z:clawsweeper_needs_human",
+      "comment_id": "5471481468",
+      "comment_version_key": "5471481468:2026-08-30T21:52:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133571#issuecomment-5471481468",
+      "comment_created_at": "2026-08-30T21:52:48Z",
+      "comment_updated_at": "2026-08-30T21:52:48Z",
+      "comment_body_sha256": "8cebaf4111dc4ae83d2dad91cf40dc9b210fc751e1decc2c8a8203e6330a634b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133571,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, so this review is not a landing-ready result. (sha=a2d28d32c9ac798b0f0cd4b75ea5126e4f44200b)",
+      "expected_head_sha": "a2d28d32c9ac798b0f0cd4b75ea5126e4f44200b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T21:53:32.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/trusting-lamport-059058",
+        "head_sha": "a2d28d32c9ac798b0f0cd4b75ea5126e4f44200b",
         "cluster_id": null,
         "job_path": null
       }
