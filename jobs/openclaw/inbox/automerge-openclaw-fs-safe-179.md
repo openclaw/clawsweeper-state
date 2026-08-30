@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-179
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470295454"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470198831"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/179#issuecomment-
 Maintainer opted #179 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470295454
+Request comment: https://github.com/openclaw/fs-safe/pull/179#issuecomment-5470198831
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/179
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Re-review exact head `e9ba72d738d0580668b6f0680a8d0c45ba0bd1c2`. Verify the prior P1 is fixed by clamping all internal TAR byte limits to `Number.MAX_SAFE_INTEGER` and logical entry counts to `2^32 - 1` before JavaScript/native backend selection, while malformed direct native values still reject. Confirm valid plain/gzip/zstd/bzip2 extraction and selected-entry reads accept `Number.MAX_VALUE` settings, ordinary limits still reject, and the posted fresh native `require`-mode consumer proof uses a byte-matched locally packed candidate binding. Retain all prior canonical framing, physical EOF, decoded-budget, PAX/GNU, non-publication, CI worker, and cross-platform checks as exact-head landing gates.
+Verify the exact head enforces one raw TAR contract before JavaScript/native parsing for plain, gzip, zstd, and bzip2: directory/hardlink/symlink raw sizes are zero; EOF is two zero blocks followed only by bounded zero padding; hidden headers, malformed/truncated framing, unsafe numeric sizes, and nonzero trailers reject with JS/native error parity. Check every native inspect/extract/read pass drains its retained meter through physical EOF, all decoded bytes count toward the derived ceiling, member/metadata budgets reject before bodies, and `readArchiveEntry.maxBytes` remains selected-output-only. Confirm PAX/GNU payload compatibility, destination non-publication on late errors, built-binding execution in Linux/macOS/Windows/musl CI, and the non-Windows four-worker CI cap does not alter workloads, timeouts, assertions, or coverage.
 
