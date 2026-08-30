@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-131561"
 mode: "autonomous"
-run_id: "33293137009"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33293137009"
+run_id: "33293306063"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33293306063"
 head_sha: "fa535d54a032862b022147a7cba4eaa3bdeb4a7b"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T05:01:34.876Z"
+published_at: "2026-08-30T05:10:47.540Z"
 canonical: "https://github.com/openclaw/openclaw/issues/131561"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/131561"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 1
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33293137009](https://github.com/openclaw/clawsweeper/actions/runs/33293137009)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33293306063](https://github.com/openclaw/clawsweeper/actions/runs/33293306063)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/131561
 
 ## Summary
 
-No implementation PR is appropriate from this checkout: latest main already prepares and starts canonical terminal persistence before the lazy async dispatch that the report says can be lost. Validation and the mandatory direct Codex-source check are blocked by the read-only checkout (no dependencies) and missing ../codex source.
+Current main source appears to have already moved successful terminal persistence to the lifecycle producer before lazy chat dispatch, so the requested lost-dispatch path is not reproducible by source inspection. No code or GitHub mutation was made. Final no-PR certification is blocked because ../codex is absent (the required direct Codex check cannot be performed) and the focused test cannot start: tsx is missing and this read-only checkout cannot run pnpm install.
 
 ## Impact
 
@@ -66,13 +66,13 @@ No implementation PR is appropriate from this checkout: latest main already prep
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #119714 | keep_closed | skipped | related | Already closed. |
-| #120315 | keep_related | planned | related | Open but outside this cluster's durable terminal-projection repair. |
-| #121756 | keep_closed | skipped | related | Already closed. |
-| #123192 | keep_closed | skipped | related | Already closed and retained as historical partial repair evidence. |
-| #126850 | keep_related | planned | related | Open UI follow-up remains independent of this narrow Gateway repair. |
-| #131561 | keep_canonical | blocked | canonical | The source-level reproduction no longer holds on current main; do not create a redundant PR without a writable dependency-ready checkout and the required direct Codex runtime inspection. |
+| #119714 | keep_closed | skipped | related | Closed context reference; no close action is valid. |
+| #120315 | keep_related | planned | related | Distinct cancellation/restart-recovery root cause. |
+| #121756 | keep_closed | skipped | related | Closed related context reference; no mutation. |
+| #123192 | keep_closed | skipped | related | Historical partial predecessor, already closed. |
+| #126850 | keep_related | planned | related | Related terminal-state symptom on a distinct UI reconciliation owner. |
+| #131561 | keep_canonical | blocked | canonical | Do not open a duplicate fix PR while current main already appears to contain the requested producer-owned repair; final no-PR certification requires the missing direct Codex inspection and runnable focused validation. |
 
 ## Needs Human
 
-- Provide a writable, dependency-ready checkout plus the required sibling ../codex source if a full runtime/Codex-contract verification or a new regression-only PR is still desired.
+- Provide a writable verification environment with the required ../codex checkout and dependencies, then run a real persisted-session regression that forces lazy chat-handler failure, retains a future controller expiry, advances the sweep/grace, proves status=done, and confirms an older terminal cannot overwrite a newer run.
