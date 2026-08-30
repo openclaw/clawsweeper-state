@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T15:15:34.673Z",
+  "updated_at": "2026-08-30T15:15:34.988Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3272:5467915232:2026-08-30T09:34:48Z:re_review",
-      "comment_id": "5467915232",
-      "comment_version_key": "5467915232:2026-08-30T09:34:48Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3272#issuecomment-5467915232",
-      "comment_created_at": "2026-08-30T09:34:48Z",
-      "comment_updated_at": "2026-08-30T09:34:48Z",
-      "comment_body_sha256": "5afaa7da5c312ae8d8640b145350203e51f9e0237608334e5c9a51f516f1883c",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3272,
-      "author": "akshayprabhu200",
-      "author_id": 12824090,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T10:21:35.898Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openrouter-token-activity",
-        "head_sha": "ea168b6596f2613c94833f62287dff8f3d84e3ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3272:5463968257:2026-08-30T10:20:49Z:clawsweeper_auto_repair",
       "comment_id": "5463968257",
@@ -32064,6 +32017,39 @@
         "kind": "pull_request",
         "branch": "fix/f002-history-last-context",
         "head_sha": "2036f6fe2a82d407d58691bacec20577ec9e4742",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:71:5335168897:2026-08-30T15:02:41Z:clawsweeper_needs_human",
+      "comment_id": "5335168897",
+      "comment_version_key": "5335168897:2026-08-30T15:02:41Z",
+      "comment_url": "https://github.com/openclaw/Tachikoma/pull/71#issuecomment-5335168897",
+      "comment_created_at": "2026-08-18T22:56:47Z",
+      "comment_updated_at": "2026-08-30T15:02:41Z",
+      "comment_body_sha256": "c665ee07e049bd1ff51f2de85622c53932749f76512a7a112a8e9270c6d8e606",
+      "repo": "openclaw/tachikoma",
+      "issue_number": 71,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is RealtimeSession.connect, but the supplied after-fix evidence is standalone URL parsing plus a suite using Never... (sha=2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7)",
+      "expected_head_sha": "2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T15:15:34.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/realtime-base-url-guard",
+        "head_sha": "2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7",
         "cluster_id": null,
         "job_path": null
       }
