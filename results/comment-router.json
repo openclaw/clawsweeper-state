@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:15:48.802Z",
+  "updated_at": "2026-08-30T01:16:40.289Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132770:5464137011:2026-08-29T22:01:21Z:clawsweeper_needs_human",
-      "comment_id": "5464137011",
-      "comment_version_key": "5464137011:2026-08-29T22:01:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132770#issuecomment-5464137011",
-      "comment_created_at": "2026-08-29T18:32:20Z",
-      "comment_updated_at": "2026-08-29T22:01:21Z",
-      "comment_body_sha256": "4c764fc42b6108af4412a8835b7e3952c3f3e43e059717aad36f3527faa6e8d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132770,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains in progress; landing should wait for its completion, although this is not an introduced semantic merge risk. (sha=f619e7a1b276785ddd2134dcf94eebd1f05d8de3)",
-      "expected_head_sha": "f619e7a1b276785ddd2134dcf94eebd1f05d8de3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T22:02:40.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup20k-registry-diagnostics-20260829",
-        "head_sha": "f619e7a1b276785ddd2134dcf94eebd1f05d8de3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-29T22:00:59Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
@@ -31059,6 +31026,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132513:5465945125:2026-08-30T01:15:59Z:re_review",
+      "comment_id": "5465945125",
+      "comment_version_key": "5465945125:2026-08-30T01:15:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132513#issuecomment-5465945125",
+      "comment_created_at": "2026-08-30T01:15:59Z",
+      "comment_updated_at": "2026-08-30T01:15:59Z",
+      "comment_body_sha256": "5be0482931d359d63ea5218e642975be34a153d024c5b836f53c24cb5fd97bbb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132513,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T01:16:38.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-frozen-plugin-security-inventory",
+        "head_sha": "0699afbdbeb5f2714667547e25b999c26a15d5b6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
