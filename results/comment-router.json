@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T12:18:22.162Z",
+  "updated_at": "2026-08-30T12:19:39.493Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127303:5373256327:2026-08-30T07:58:32Z:clawsweeper_auto_repair",
-      "comment_id": "5373256327",
-      "comment_version_key": "5373256327:2026-08-30T07:58:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127303#issuecomment-5373256327",
-      "comment_created_at": "2026-08-21T17:41:19Z",
-      "comment_updated_at": "2026-08-30T07:58:32Z",
-      "comment_body_sha256": "fb550f996fea783031ef4b448a5844a65252d46dbcfdc3c7d919c4dc7ccb32f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127303,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=79543ec7f26684d017f5ad9a877894b288cc7612)",
-      "expected_head_sha": "79543ec7f26684d017f5ad9a877894b288cc7612",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T08:07:26.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/90587-codex-riscv-platform-fallback",
-        "head_sha": "79543ec7f26684d017f5ad9a877894b288cc7612",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127309:5373421432:2026-08-30T08:00:15Z:clawsweeper_auto_repair",
       "comment_id": "5373421432",
@@ -32133,6 +32100,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133076:5468639060:2026-08-30T12:18:52Z:re_review",
+      "comment_id": "5468639060",
+      "comment_version_key": "5468639060:2026-08-30T12:18:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133076#issuecomment-5468639060",
+      "comment_created_at": "2026-08-30T12:18:52Z",
+      "comment_updated_at": "2026-08-30T12:18:52Z",
+      "comment_body_sha256": "897edd5d0e505e376e4e177ccad0b07ca96f3e8a82d3779959b8636c7d1e6904",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133076,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T12:19:37.762Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/swarm-cancel-final-c40cba",
+        "head_sha": "13aaeb30632302d7851878ab56a0d4a7b7d32682",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
