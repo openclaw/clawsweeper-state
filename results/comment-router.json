@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T16:23:23.822Z",
+  "updated_at": "2026-08-30T16:23:38.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133259:5468145309:2026-08-30T10:29:43Z:clawsweeper_needs_human",
-      "comment_id": "5468145309",
-      "comment_version_key": "5468145309:2026-08-30T10:29:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133259#issuecomment-5468145309",
-      "comment_created_at": "2026-08-30T10:29:43Z",
-      "comment_updated_at": "2026-08-30T10:29:43Z",
-      "comment_body_sha256": "8cfda7fee842b528a54879c124df7f7d09896200095d4c9e97ec6c194b58da33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133259,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head hosted checks are still in progress; merge should wait for their completion on commit 4a6bc5e2a9b068292ed64fe83401c57f3a600d2a. (sha=4a6bc5e2a9b068292ed64fe83401c57f3a600d2a)",
-      "expected_head_sha": "4a6bc5e2a9b068292ed64fe83401c57f3a600d2a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:37:03.317Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-20260830-doctor-json-output",
-        "head_sha": "4a6bc5e2a9b068292ed64fe83401c57f3a600d2a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133102:5466977092:2026-08-30T10:36:04Z:clawsweeper_auto_repair",
       "comment_id": "5466977092",
@@ -32621,6 +32588,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132635:5469854433:2026-08-30T16:22:47Z:re_review",
+      "comment_id": "5469854433",
+      "comment_version_key": "5469854433:2026-08-30T16:22:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132635#issuecomment-5469854433",
+      "comment_created_at": "2026-08-30T16:22:47Z",
+      "comment_updated_at": "2026-08-30T16:22:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132635,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T16:23:36.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-agents-aborted-terminal-merge",
+        "head_sha": "c165125d04fc2b185ea9315b9e7ea2ae195fa8da",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
