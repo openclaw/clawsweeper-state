@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T21:01:25.878Z",
+  "updated_at": "2026-08-30T21:01:37.179Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132622:5465908728:2026-08-30T01:07:06Z:re_review",
-      "comment_id": "5465908728",
-      "comment_version_key": "5465908728:2026-08-30T01:07:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132622#issuecomment-5465908728",
-      "comment_created_at": "2026-08-30T01:07:06Z",
-      "comment_updated_at": "2026-08-30T01:07:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132622,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T15:49:41.589Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132622:5466055334:2026-08-30T01:42:45Z:re_review",
       "comment_id": "5466055334",
@@ -33413,6 +33386,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133530:5471228834:2026-08-30T21:00:54Z:clawsweeper_needs_human",
+      "comment_id": "5471228834",
+      "comment_version_key": "5471228834:2026-08-30T21:00:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133530#issuecomment-5471228834",
+      "comment_created_at": "2026-08-30T21:00:54Z",
+      "comment_updated_at": "2026-08-30T21:00:54Z",
+      "comment_body_sha256": "de143d5ce7757b3762c81086fc77c9a15ad08ec2945b09716fd11c9d0f2027e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133530,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally blocks local setup, configuration, migration admission, and service recovery when an existing state database has a newer schema; that compatibility boundary must re... (sha=8cfaa7c6b212e189354715238ce0e1f7f1dd031f)",
+      "expected_head_sha": "8cfaa7c6b212e189354715238ce0e1f7f1dd031f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T21:01:37.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/setup-compatibility-ux",
+        "head_sha": "8cfaa7c6b212e189354715238ce0e1f7f1dd031f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
