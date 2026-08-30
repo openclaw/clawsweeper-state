@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T05:38:14.445Z",
+  "updated_at": "2026-08-30T05:38:27.267Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4602422401:2026-06-02T12:35:00Z:re_review",
-      "comment_id": "4602422401",
-      "comment_version_key": "4602422401:2026-06-02T12:35:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4602422401",
-      "comment_created_at": "2026-06-02T12:35:00Z",
-      "comment_updated_at": "2026-06-02T12:35:00Z",
-      "comment_body_sha256": "7ad6fb840a35e4ae483c82c3927948aaab8465f4fd631051b13031d1ae3845dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T02:04:06.014Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4609780678:2026-06-03T06:44:35Z:re_review",
       "comment_id": "4609780678",
@@ -30625,6 +30598,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T05:38:14.445Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111728:5020811331:2026-08-30T05:37:48Z:clawsweeper_needs_human",
+      "comment_id": "5020811331",
+      "comment_version_key": "5020811331:2026-08-30T05:37:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111728#issuecomment-5020811331",
+      "comment_created_at": "2026-07-20T09:37:21Z",
+      "comment_updated_at": "2026-08-30T05:37:48Z",
+      "comment_body_sha256": "cacecb95ea0fc119d145f150bdc5adeccbf3a17af784a1d796707e2891eb7504",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +19 lines; the shared null-prototype snapshot is justified by 16 normalization uses, but it should remain limited to this cron ownership boundary. (sha=13368705ea3e23683a84bd4935e8013ff08a9c1a)",
+      "expected_head_sha": "13368705ea3e23683a84bd4935e8013ff08a9c1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T05:38:27.267Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-hasOwn-vs-in-operator",
+        "head_sha": "13368705ea3e23683a84bd4935e8013ff08a9c1a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
