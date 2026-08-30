@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132766"
 mode: "autonomous"
-run_id: "33274670597"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33274670597"
-head_sha: "8d11c21558ba90ac6812b80b95efd0dd9b0aa936"
+run_id: "33315837568"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33315837568"
+head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-29T21:13:09.987Z"
+published_at: "2026-08-30T14:43:14.608Z"
 canonical: "https://github.com/openclaw/openclaw/issues/132766"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/132766"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33274670597](https://github.com/openclaw/clawsweeper/actions/runs/33274670597)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33315837568](https://github.com/openclaw/clawsweeper/actions/runs/33315837568)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/132766
 
 ## Summary
 
-Current main d3c07b02 still has four zero-argument transcript-fence lookups. Removing those early ambient-fence propagations lets the canonical transcript owner resolve and apply a fence only for the destination scope. Implementation is blocked because this worker cannot write the required regression or branch in the read-only checkout; ../codex is also unavailable for the repository-required direct Codex-source check.
+#132766 remains the canonical open bug. Static inspection on main 0a6c013be5f50981b12d021b387b4fd1ea7e491e confirms four durable writers can copy an ambient session A fence into destination session B. Implementation is blocked in this read-only checkout: tests cannot start because Corepack cannot create its cache, and the mandatory sibling ../codex source checkout is absent.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,8 @@ Current main d3c07b02 still has four zero-argument transcript-fence lookups. Rem
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #121003 | keep_closed | skipped | related | Already merged; no mutation is allowed or needed. |
-| #122630 | keep_closed | skipped | related | Adjacent session-lifecycle history, not the same root cause. |
-| #125885 | keep_closed | skipped | superseded | Closed predecessor of the active canonical issue. |
-| #132766 | fix_needed | blocked | canonical | The bug is narrowly repairable, but this worker cannot perform required writes or complete the repository's direct Codex-source gate. |
-| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | A writable executor can create the one authorized narrow fix PR. |
+| #132766 | fix_needed | blocked | canonical | A writable executor with the required sibling Codex checkout must apply and validate the narrow repair. |
+| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | Prepared narrow new-PR plan; execution is blocked only by this read-only worker environment. |
 
 ## Needs Human
 
