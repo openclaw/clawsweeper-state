@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-08-30T14:42:44.230Z",
+  "updated_at": "2026-08-30T14:42:40.835Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133244:5468066794:2026-08-30T10:11:17Z:clawsweeper_needs_human",
+      "comment_id": "5468066794",
+      "comment_version_key": "5468066794:2026-08-30T10:11:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133244#issuecomment-5468066794",
+      "comment_created_at": "2026-08-30T10:11:17Z",
+      "comment_updated_at": "2026-08-30T10:11:17Z",
+      "comment_body_sha256": "89ab57fdb42340ed9a415a5f9bd363fd028452bbcf011b71bdd07afb69972468",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are incomplete, and the supplied snapshot omits the body of the latest ClawSweeper comment; confirm its rank-up requirements before merge. (sha=694c45f9b2187d399eef847533107f8c7b6002b4)",
+      "expected_head_sha": "694c45f9b2187d399eef847533107f8c7b6002b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T10:11:58.200Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf50-display-parsing",
+        "head_sha": "694c45f9b2187d399eef847533107f8c7b6002b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126611:5353876596:2026-08-30T10:11:57Z:clawsweeper_auto_repair",
       "comment_id": "5353876596",
@@ -31887,39 +31920,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132704:5463482768:2026-08-30T14:41:53Z:clawsweeper_needs_human",
-      "comment_id": "5463482768",
-      "comment_version_key": "5463482768:2026-08-30T14:41:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132704#issuecomment-5463482768",
-      "comment_created_at": "2026-08-29T16:15:41Z",
-      "comment_updated_at": "2026-08-30T14:41:53Z",
-      "comment_body_sha256": "cd09dd6fd76f46ca9a2cad318b9704e2f253fc5a6e00fb7c3e019833c0e620cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132704,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The claimed exact-head stages map to the changed registry and direct-delivery owners, but the included test injects delivery dependencies and s... (sha=bd1c036d6c4f31ba69e58f14fcb5af3aaa96ed79)",
-      "expected_head_sha": "bd1c036d6c4f31ba69e58f14fcb5af3aaa96ed79",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T14:42:44.229Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-119143",
-        "head_sha": "bd1c036d6c4f31ba69e58f14fcb5af3aaa96ed79",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
