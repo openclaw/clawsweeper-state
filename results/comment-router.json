@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T00:41:48.801Z",
+  "updated_at": "2026-08-30T00:41:51.921Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132437:5461160892:2026-08-29T07:53:56Z:re_review",
-      "comment_id": "5461160892",
-      "comment_version_key": "5461160892:2026-08-29T07:53:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132437#issuecomment-5461160892",
-      "comment_created_at": "2026-08-29T07:53:56Z",
-      "comment_updated_at": "2026-08-29T07:53:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132437,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T21:12:57.943Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132437:5463125623:2026-08-29T15:02:38Z:re_review",
       "comment_id": "5463125623",
@@ -31115,6 +31088,39 @@
         "head_sha": "75680e431c5e3df0eda25f8cce0086bbfc8d30c1",
         "cluster_id": "automerge-openclaw-fs-safe-164",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-164.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129913:5421421674:2026-08-30T00:41:05Z:clawsweeper_needs_human",
+      "comment_id": "5421421674",
+      "comment_version_key": "5421421674:2026-08-30T00:41:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129913#issuecomment-5421421674",
+      "comment_created_at": "2026-08-26T06:21:18Z",
+      "comment_updated_at": "2026-08-30T00:41:05Z",
+      "comment_body_sha256": "b74d2355ec39a212e04a4aabc62d62cab970cfccbd829aa286409277ba81a00f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the session timer scheduler, which feeds the gateway delivery callback. Its committed SQLite tests and the supplied third-... (sha=626610f69675d047c56bc3a865b9a8db98f45b2f)",
+      "expected_head_sha": "626610f69675d047c56bc3a865b9a8db98f45b2f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T00:41:51.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/session-delivery-monotonic-20260826",
+        "head_sha": "626610f69675d047c56bc3a865b9a8db98f45b2f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
