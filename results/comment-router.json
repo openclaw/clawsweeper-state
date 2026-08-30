@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T14:39:54.691Z",
+  "updated_at": "2026-08-30T14:40:18.451Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124643:5308016057:2026-08-30T10:02:31Z:clawsweeper_needs_human",
-      "comment_id": "5308016057",
-      "comment_version_key": "5308016057:2026-08-30T10:02:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124643#issuecomment-5308016057",
-      "comment_created_at": "2026-08-16T14:50:00Z",
-      "comment_updated_at": "2026-08-30T10:02:31Z",
-      "comment_body_sha256": "4d6688fb3f2be59d65829c8939e4860cd9b1d357e20e54020c078fb236d847b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124643,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the PR explicitly leaves all three official-provider OIDC probes unfinished, so it does not show authorized acc...; Review finding: [P1] Declare the action audit table as lazy-additive — src/state/openclaw-state-db-contract.ts:27-35 - [medium] Prove real provider authority rejection before memo... (sha=2da4ec55ee89ef8a995f25a04912e37859b4a872)",
-      "expected_head_sha": "2da4ec55ee89ef8a995f25a04912e37859b4a872",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:10:33.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memory-permissions-p4-enterprise-integrations",
-        "head_sha": "2da4ec55ee89ef8a995f25a04912e37859b4a872",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127705:5376841523:2026-08-30T10:08:08Z:clawsweeper_needs_human",
       "comment_id": "5376841523",
@@ -31850,6 +31817,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119516:5469322684:2026-08-30T14:39:29Z:re_review",
+      "comment_id": "5469322684",
+      "comment_version_key": "5469322684:2026-08-30T14:39:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5469322684",
+      "comment_created_at": "2026-08-30T14:39:29Z",
+      "comment_updated_at": "2026-08-30T14:39:29Z",
+      "comment_body_sha256": "9639707e03342c58f4e83c028a80cf2cf4fa3d289aa0d824c65d4024c4ddfde3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119516,
+      "author": "zyw02",
+      "author_id": 59604424,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T14:40:16.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "auto/issue-119515",
+        "head_sha": "4ef413131693f4bc0b8acc3c374901f938632732",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
