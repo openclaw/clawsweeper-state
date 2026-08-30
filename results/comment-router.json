@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T10:03:59.052Z",
+  "updated_at": "2026-08-30T10:04:29.045Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133094:5466926161:2026-08-30T05:30:08Z:clawsweeper_needs_human",
-      "comment_id": "5466926161",
-      "comment_version_key": "5466926161:2026-08-30T05:30:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133094#issuecomment-5466926161",
-      "comment_created_at": "2026-08-30T05:30:08Z",
-      "comment_updated_at": "2026-08-30T05:30:08Z",
-      "comment_body_sha256": "406e07f6dc663c29153738cef2eea5204105314c770de3af23c42c5332e6a355",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133094,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes durable session-tree and model-context behavior; retain the one-row/one-provider-copy coverage and require exact-head CI before merge. (sha=38e776e6cfc9ef4f746d27e28b5140e9e6b836a0)",
-      "expected_head_sha": "38e776e6cfc9ef4f746d27e28b5140e9e6b836a0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T05:32:11.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-compaction-keyed-user-retry",
-        "head_sha": "38e776e6cfc9ef4f746d27e28b5140e9e6b836a0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133098:5466932711:2026-08-30T05:31:54Z:clawsweeper_needs_human",
       "comment_id": "5466932711",
@@ -32466,6 +32433,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:171:5468034962:2026-08-30T10:03:47Z:automerge",
+      "comment_id": "5468034962",
+      "comment_version_key": "5468034962:2026-08-30T10:03:47Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468034962",
+      "comment_created_at": "2026-08-30T10:03:47Z",
+      "comment_updated_at": "2026-08-30T10:03:47Z",
+      "comment_body_sha256": "ecdabdd1e56e103c3f3c28cc8d78fdaaaeb7b49aa6e9cdf2b91127f23b69168e",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 171,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T10:04:20.778Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/temp-workspace-cleanup-ownership",
+        "head_sha": "4b4eab89532afe4d1dc357966cbce6c30cbb512b",
+        "cluster_id": "automerge-openclaw-fs-safe-171",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }

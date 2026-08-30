@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-171
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5467915379"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468034962"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-
 Maintainer opted #171 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5467915379
+Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468034962
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/171
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Require exact-head hosted Windows proof that native no-replace rename accepts real directory sources, preserves existing empty and non-empty destinations, and rejects junction/reparse sources. Also verify native-off cleanup removes unchanged workspaces while a replacement raced after admission is preserved under quarantine and recursive deletion never targets the public workspace pathname.
+The overwrite-capable JavaScript fallback is removed. Verify exact-head native-off/unavailable admission rejects with `helper-unavailable` before child creation, and require the Windows native job's explicit JSON proof that directory no-replace/replace succeeds, empty and non-empty destinations are preserved, directory hard links are rejected, and junction rename sources are rejected and preserved.
 
