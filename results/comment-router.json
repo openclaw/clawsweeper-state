@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T11:08:40.075Z",
+  "updated_at": "2026-08-30T11:08:52.423Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133125:5467233237:2026-08-30T07:24:17Z:clawsweeper_needs_human",
-      "comment_id": "5467233237",
-      "comment_version_key": "5467233237:2026-08-30T07:24:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133125#issuecomment-5467233237",
-      "comment_created_at": "2026-08-30T06:49:15Z",
-      "comment_updated_at": "2026-08-30T07:24:17Z",
-      "comment_body_sha256": "2c7a6f8c509d1b068dd10786c98ebebfab8cc9bf7a232b606e9742534e9d1513",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133125,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A Telegram picker click now intentionally clears a previously compatible session runtime pin, so existing sessions change behavior after that explicit click; this policy should remain... (sha=b80fcaa17edc26af9654f6e7d6c70e34ba8fef91)",
-      "expected_head_sha": "b80fcaa17edc26af9654f6e7d6c70e34ba8fef91",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T07:29:02.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-telegram-model-runtime",
-        "head_sha": "b80fcaa17edc26af9654f6e7d6c70e34ba8fef91",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133123:5467234357:2026-08-30T07:10:07Z:clawsweeper_needs_human",
       "comment_id": "5467234357",
@@ -31895,6 +31862,53 @@
           "label": "clawsweeper:automerge",
           "job_path": null
         },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129345:5468311002:2026-08-30T11:08:09Z:re_review",
+      "comment_id": "5468311002",
+      "comment_version_key": "5468311002:2026-08-30T11:08:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129345#issuecomment-5468311002",
+      "comment_created_at": "2026-08-30T11:08:09Z",
+      "comment_updated_at": "2026-08-30T11:08:09Z",
+      "comment_body_sha256": "287b344857cf32c3465029fe3e7331ba7e4272bca784a583bfb85a26ad045df0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129345,
+      "author": "amalysh",
+      "author_id": 56567,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T11:08:50.479Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-channel-thread-parent-fallback",
+        "head_sha": "88d1d5c568ed06a068c4bf80709be36042bed548",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
         {
           "action": "dispatch_clawsweeper",
           "status": "executed",
