@@ -1,0 +1,60 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133475",
+  "mode": "autonomous",
+  "run_id": "33331465008",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33331465008",
+  "head_sha": "74b0f8552fde46842a933ca360ed272f0212193e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133475.md",
+  "published_at": "2026-08-30T20:15:48.013Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133475",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133475",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by required local-proof prerequisites: the mandated sibling ../codex source is absent and cannot be cloned in this read-only worker, and dependencies are unavailable, so the requested failing regression cannot run. No code or GitHub state was changed.",
+  "actions": [
+    {
+      "target": "#133475",
+      "action": "keep_canonical",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133475",
+      "candidate_fix": null,
+      "reason": "Keep the canonical issue open. Source inspection identifies a plausible narrow repair at the plugin-to-runner boundary, but this worker cannot create the required failing regression, inspect the required sibling Codex source, or issue a fix verdict under repository policy."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#133475",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
