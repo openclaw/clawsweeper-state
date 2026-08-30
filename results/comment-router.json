@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T10:04:40.863Z",
+  "updated_at": "2026-08-30T10:05:51.021Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:4724293317:2026-06-16T22:54:03Z:re_review",
-      "comment_id": "4724293317",
-      "comment_version_key": "4724293317:2026-06-16T22:54:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4724293317",
-      "comment_created_at": "2026-06-16T22:54:03Z",
-      "comment_updated_at": "2026-06-16T22:54:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T05:38:27.607Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:4991123224:2026-07-16T11:08:16Z:re_review",
       "comment_id": "4991123224",
@@ -32498,6 +32471,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/kova:103:5464068107:2026-08-30T10:05:06Z:clawsweeper_auto_repair",
+      "comment_id": "5464068107",
+      "comment_version_key": "5464068107:2026-08-30T10:05:06Z",
+      "comment_url": "https://github.com/openclaw/Kova/pull/103#issuecomment-5464068107",
+      "comment_created_at": "2026-08-29T18:17:38Z",
+      "comment_updated_at": "2026-08-30T10:05:06Z",
+      "comment_body_sha256": "d27d1008f51bf4839d354199bd176b32a61479598af2b3085071554225c93eee",
+      "repo": "openclaw/kova",
+      "issue_number": 103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=2908bea5cc94675916ac8031a7299273e64aea7c)",
+      "expected_head_sha": "2908bea5cc94675916ac8031a7299273e64aea7c",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-30T10:05:51.021Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f002-ps-timeout",
+        "head_sha": "2908bea5cc94675916ac8031a7299273e64aea7c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
