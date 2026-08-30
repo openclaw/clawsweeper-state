@@ -2,19 +2,19 @@
 repo: "openclaw/fs-safe"
 cluster_id: "automerge-openclaw-fs-safe-179"
 mode: "autonomous"
-run_id: "33325917138"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33325917138"
-head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
-workflow_conclusion: "failure"
+run_id: "33328721377"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33328721377"
+head_sha: "74b0f8552fde46842a933ca360ed272f0212193e"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-30T18:09:37.370Z"
+published_at: "2026-08-30T18:57:40.978Z"
 canonical: "#179"
 canonical_issue: null
-canonical_pr: "#179"
+canonical_pr: "https://github.com/openclaw/fs-safe/pull/179"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/fs-safe
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33325917138](https://github.com/openclaw/clawsweeper/actions/runs/33325917138)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33328721377](https://github.com/openclaw/clawsweeper/actions/runs/33328721377)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #179
 
 ## Summary
 
-Make PR #179 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+PR #179 is already merged unchanged into main as 309548dc907bc5b1b3c1ffb50e742a0e239c72a6. Its exact reviewed head was dd07ec96aa3631a66cb1575a2dec152d419bf773; no branch repair or further action is appropriate.
 
 ## Impact
 
@@ -44,7 +44,7 @@ Make PR #179 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 | Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Make PR #179 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | blocked | https://github.com/openclaw/fs-safe/pull/179 |  | source PR #179 changed during the repair settle window; requeue against the latest head |
-| automerge_repair_outcome_comment | updated | #179 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,7 +66,7 @@ Make PR #179 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #179 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #179 | keep_closed | skipped | canonical | Already closed and merged; closure, merge, repair, and replacement actions are invalid and unnecessary. |
 
 ## Needs Human
 
