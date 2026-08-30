@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T07:32:52.815Z",
+  "updated_at": "2026-08-30T07:33:02.551Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130993:5444046937:2026-08-27T19:13:33Z:re_review",
-      "comment_id": "5444046937",
-      "comment_version_key": "5444046937:2026-08-27T19:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130993#issuecomment-5444046937",
-      "comment_created_at": "2026-08-27T19:13:33Z",
-      "comment_updated_at": "2026-08-27T19:13:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130993,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T03:22:47.422Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130993:5445195297:2026-08-27T21:03:37Z:re_review",
       "comment_id": "5445195297",
@@ -31164,6 +31137,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133160:5467405783:2026-08-30T07:32:19Z:clawsweeper_needs_human",
+      "comment_id": "5467405783",
+      "comment_version_key": "5467405783:2026-08-30T07:32:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133160#issuecomment-5467405783",
+      "comment_created_at": "2026-08-30T07:32:19Z",
+      "comment_updated_at": "2026-08-30T07:32:19Z",
+      "comment_body_sha256": "794a921d2a60ef8c9e86b6fc22d62b3a59c91b7c4a7ba33058dc961e1c6b299a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is not yet green, and the supplied discussion omits the latest ClawSweeper comment body, so any remaining rank-up instruction could not be independently checked. (sha=085f9dddf080500ce51f87e57cc7e9fb94810d44)",
+      "expected_head_sha": "085f9dddf080500ce51f87e57cc7e9fb94810d44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T07:33:02.551Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/keen-blackwell-d36a6c",
+        "head_sha": "085f9dddf080500ce51f87e57cc7e9fb94810d44",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
