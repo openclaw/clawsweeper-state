@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T02:25:23.028Z",
+  "updated_at": "2026-08-30T02:25:40.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/tachikoma:71:5335168897:2026-08-29T23:55:52Z:clawsweeper_needs_human",
-      "comment_id": "5335168897",
-      "comment_version_key": "5335168897:2026-08-29T23:55:52Z",
-      "comment_url": "https://github.com/openclaw/Tachikoma/pull/71#issuecomment-5335168897",
-      "comment_created_at": "2026-08-18T22:56:47Z",
-      "comment_updated_at": "2026-08-29T23:55:52Z",
-      "comment_body_sha256": "d33c985b464a4fc18a75f5ee087576d2f29a7141d678968d7aac5d765f39896d",
-      "repo": "openclaw/tachikoma",
-      "issue_number": 71,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: RealtimeSession.connect is the changed production owner, but the after-fix suite injects NeverConnectTransport and the standalone terminal scri... (sha=2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7)",
-      "expected_head_sha": "2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T23:56:38.077Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/realtime-base-url-guard",
-        "head_sha": "2f58dacb91d6d08a8da61a1d468bbaf5b84c6fb7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131959:5465621879:2026-08-29T23:59:05Z:re_review",
       "comment_id": "5465621879",
@@ -30326,6 +30293,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:166:5466224724:2026-08-30T02:24:56Z:automerge",
+      "comment_id": "5466224724",
+      "comment_version_key": "5466224724:2026-08-30T02:24:56Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/166#issuecomment-5466224724",
+      "comment_created_at": "2026-08-30T02:24:56Z",
+      "comment_updated_at": "2026-08-30T02:24:56Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 166,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T02:25:32.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sync-lock-deadlines",
+        "head_sha": "c6bd99423660c63c7caf75996c5eb627b09db37e",
+        "cluster_id": "automerge-openclaw-fs-safe-166",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-166.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
