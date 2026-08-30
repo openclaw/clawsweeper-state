@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T12:31:28.434Z",
+  "updated_at": "2026-08-30T12:31:36.274Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131888:5454824371:2026-08-30T08:13:20Z:clawsweeper_needs_human",
-      "comment_id": "5454824371",
-      "comment_version_key": "5454824371:2026-08-30T08:13:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131888#issuecomment-5454824371",
-      "comment_created_at": "2026-08-28T16:07:18Z",
-      "comment_updated_at": "2026-08-30T08:13:20Z",
-      "comment_body_sha256": "56c7899ff9c308318546714401078dfe154584b5a2ce8ca37e5ffb279ed58cac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the branch already contains the bounded owner-level fix and now awaits normal exact-head CI completion and maintainer review. (sha=4a5ed52b83fc883d22e922549014a2fbc5b0e0f4)",
-      "expected_head_sha": "4a5ed52b83fc883d22e922549014a2fbc5b0e0f4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T08:30:57.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-sentinel-unscheduled-wake",
-        "head_sha": "4a5ed52b83fc883d22e922549014a2fbc5b0e0f4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132437:5460887716:2026-08-30T08:07:24Z:clawsweeper_needs_human",
       "comment_id": "5460887716",
@@ -31921,6 +31888,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133241:5468697802:2026-08-30T12:30:53Z:re_review",
+      "comment_id": "5468697802",
+      "comment_version_key": "5468697802:2026-08-30T12:30:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133241#issuecomment-5468697802",
+      "comment_created_at": "2026-08-30T12:30:53Z",
+      "comment_updated_at": "2026-08-30T12:30:53Z",
+      "comment_body_sha256": "5f602a75e309ca167663e951b466dad3c60e83b5a7a60d099ee1d2fab6728fd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133241,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T12:31:33.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-stop-admission-terminal",
+        "head_sha": "8e0f7ec852f4ea157c409a4aa9757bdfa4b0bd89",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
