@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T17:01:52.834Z",
+  "updated_at": "2026-08-30T17:02:13.446Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133091:5466911289:2026-08-30T11:10:51Z:clawsweeper_auto_repair",
-      "comment_id": "5466911289",
-      "comment_version_key": "5466911289:2026-08-30T11:10:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133091#issuecomment-5466911289",
-      "comment_created_at": "2026-08-30T05:25:57Z",
-      "comment_updated_at": "2026-08-30T11:10:51Z",
-      "comment_body_sha256": "cf29110fd9c18073ddc69e8335a91e89682f2d768b7863117d517a4e22e233bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133091,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=264a3d7a3dc75c89f4c9dbfaf6cd378fdf2d1aa2)",
-      "expected_head_sha": "264a3d7a3dc75c89f4c9dbfaf6cd378fdf2d1aa2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T11:11:43.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-search-completion-127333",
-        "head_sha": "264a3d7a3dc75c89f4c9dbfaf6cd378fdf2d1aa2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/octopool:75:5468330944:2026-08-30T11:12:19Z:clawsweeper_needs_human",
       "comment_id": "5468330944",
@@ -32532,6 +32499,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132998:5470053369:2026-08-30T17:01:26Z:re_review",
+      "comment_id": "5470053369",
+      "comment_version_key": "5470053369:2026-08-30T17:01:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132998#issuecomment-5470053369",
+      "comment_created_at": "2026-08-30T17:01:26Z",
+      "comment_updated_at": "2026-08-30T17:01:26Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132998,
+      "author": "pengzh1",
+      "author_id": 24854675,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T17:02:11.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sanitize-attributed-block-boundaries",
+        "head_sha": "f7fe753ab5af1e573ae15c3cf1c3de3899e8b5b9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
