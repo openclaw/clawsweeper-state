@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T05:23:06.190Z",
+  "updated_at": "2026-08-30T05:24:19.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132583:5466113841:2026-08-30T01:57:16Z:re_review",
-      "comment_id": "5466113841",
-      "comment_version_key": "5466113841:2026-08-30T01:57:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132583#issuecomment-5466113841",
-      "comment_created_at": "2026-08-30T01:57:16Z",
-      "comment_updated_at": "2026-08-30T01:57:16Z",
-      "comment_body_sha256": "a090ac66300f9a1813cac87c3537f058db8c61ff7a6402c1309c82b66c150efc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132583,
-      "author": "Marvinthebored",
-      "author_id": 262704729,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T01:57:53.919Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-resume-after-reconciliation-v2",
-        "head_sha": "3ebf836560de71aebbb150219e98faa927a92b94",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-08-30T01:57:07Z:clawsweeper_needs_human",
       "comment_id": "5365198371",
@@ -30443,6 +30396,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133090:5466902305:2026-08-30T05:23:34Z:clawsweeper_auto_repair",
+      "comment_id": "5466902305",
+      "comment_version_key": "5466902305:2026-08-30T05:23:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133090#issuecomment-5466902305",
+      "comment_created_at": "2026-08-30T05:23:34Z",
+      "comment_updated_at": "2026-08-30T05:23:34Z",
+      "comment_body_sha256": "c8f5eb45bc7f85bd01eb161dc7c12ff4a3be96a6fd27cefa08c46eea451fb7f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133090,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6ffe180f1d39299fbc12e97d05b3b73e29cc2d1e)",
+      "expected_head_sha": "6ffe180f1d39299fbc12e97d05b3b73e29cc2d1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T05:24:19.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/admiring-torvalds-da1e11",
+        "head_sha": "6ffe180f1d39299fbc12e97d05b3b73e29cc2d1e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
