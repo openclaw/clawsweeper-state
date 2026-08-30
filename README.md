@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Aug 30, 2026, 07:28 UTC
+Last source update: Aug 30, 2026, 07:37 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Aug 30, 2026, 07:28 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Aug 30, 2026, 07:26 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33297097366) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Aug 30, 2026, 07:28 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33299265503) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Aug 30, 2026, 07:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33299309225) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Aug 30, 2026, 07:31 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33299337562) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Aug 29, 2026, 09:05 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33244643511) |
 
 ### Repositories
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Aug 30, 2026, 07:17 UTC
+Last source update: Aug 30, 2026, 07:30 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 703 | 100% |
-| Run attempts archived | 2389 | audit |
+| Run attempts archived | 2390 | audit |
 | Latest successful clusters | 587 | 83.5% |
 | Latest failed clusters | 114 | 16.2% |
 | Latest cancelled clusters | 2 | 0.3% |
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119525](https://github.com/openclaw/openclaw/pull/119525) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 30, 2026, 07:17 UTC | [automerge-openclaw-openclaw-119525](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119525.md) | [33298019288](https://github.com/openclaw/clawsweeper/actions/runs/33298019288) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119525](https://github.com/openclaw/openclaw/pull/119525) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Aug 30, 2026, 07:30 UTC | [automerge-openclaw-openclaw-119525](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119525.md) | [33298578091](https://github.com/openclaw/clawsweeper/actions/runs/33298578091) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#133117](https://github.com/openclaw/openclaw/pull/133117) | automation_failed | A writable worker with the required sibling Codex source checkout must perform the narrow repair and regression proof before opening the PR. | Aug 30, 2026, 06:55 UTC | [issue-openclaw-openclaw-133117](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-133117.md) | [33297489009](https://github.com/openclaw/clawsweeper/actions/runs/33297489009) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#132969](https://github.com/openclaw/openclaw/pull/132969) | automation_blocked | A writable worker with installed dependencies and the required sibling Codex checkout must apply and validate the otherwise narrow owner-boundary r... | Aug 30, 2026, 02:21 UTC | [issue-openclaw-openclaw-132969](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-132969.md) | [33287144238](https://github.com/openclaw/clawsweeper/actions/runs/33287144238) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#115354](https://github.com/openclaw/openclaw/pull/115354) | automation_blocked | Repair at the public SDK deletion owner after a successful commit; do not add a route-time liveness check or alter the raw SQLite primitive. | Aug 30, 2026, 01:33 UTC | [issue-openclaw-openclaw-115354](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-115354.md) | [33285196965](https://github.com/openclaw/clawsweeper/actions/runs/33285196965) |
