@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-115354",
+  "mode": "autonomous",
+  "run_id": "33282395117",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33282395117",
+  "head_sha": "9f4da9302aea1e41525039417ad128b0522391a0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-115354.md",
+  "published_at": "2026-08-30T00:20:21.880Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/115354",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/115354",
+  "canonical_pr": null,
+  "summary": "#115354 remains a reproducible lifecycle bug on main: direct Plugin SDK deletion commits the session removal but does not unbind runtime conversation bindings, while Gateway deletion already awaits the shared unbind lifecycle. Implementation is blocked in this read-only checkout: dependencies are absent, Corepack cannot create its cache, and the mandated sibling ../codex source is absent and cannot be cloned.",
+  "actions": [
+    {
+      "target": "#115354",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "The source-level failure is clear, but this worker cannot create the mandatory Codex sibling checkout, write a regression, or run the required validation."
+    },
+    {
+      "target": "#115391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "Historical partial-overlap evidence only; no mutation is valid for an already-closed PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-115354",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#115354",
+      "candidate_fix": null,
+      "reason": "A narrow credited fix PR remains appropriate once the executor has a writable checkout and can satisfy the Codex-source and validation gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
