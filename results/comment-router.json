@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T01:33:56.103Z",
+  "updated_at": "2026-08-30T01:34:54.805Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127300:5465235665:2026-08-29T22:25:41Z:re_review",
-      "comment_id": "5465235665",
-      "comment_version_key": "5465235665:2026-08-29T22:25:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127300#issuecomment-5465235665",
-      "comment_created_at": "2026-08-29T22:25:41Z",
-      "comment_updated_at": "2026-08-29T22:25:41Z",
-      "comment_body_sha256": "c181382a1581a956b5a434927a4c1b0c7a120bd5c82c37e227733b8d9ec26c76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127300,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T22:26:27.089Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-slack-native-data-observation",
-        "head_sha": "d085a6d6d12b48f1b89b2ac15aceef1e5a14bfc2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5463704956:2026-08-29T17:02:05Z:re_review",
       "comment_id": "5463704956",
@@ -31031,6 +30984,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T01:33:56.103Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132980:5466018634:2026-08-30T01:34:15Z:clawsweeper_needs_human",
+      "comment_id": "5466018634",
+      "comment_version_key": "5466018634:2026-08-30T01:34:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132980#issuecomment-5466018634",
+      "comment_created_at": "2026-08-30T01:34:15Z",
+      "comment_updated_at": "2026-08-30T01:34:15Z",
+      "comment_body_sha256": "36ba9e1070da76e7c522d293b5ea748b11848a57ae785b731e280450faec1e89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132980,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging replaces the pnpm version selected by Corepack and by the installers’ missing-metadata fallback; an incorrect release or integrity value would block source, CI, or isolated bo... (sha=a35fb73e8de8f62953eb11b5b7706ec6c6a2c985)",
+      "expected_head_sha": "a35fb73e8de8f62953eb11b5b7706ec6c6a2c985",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:34:54.805Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/loving-almeida-556e5f",
+        "head_sha": "a35fb73e8de8f62953eb11b5b7706ec6c6a2c985",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
