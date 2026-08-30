@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T21:04:37.498Z",
+  "updated_at": "2026-08-30T21:04:56.489Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133358:5469768313:2026-08-30T16:05:50Z:clawsweeper_needs_human",
-      "comment_id": "5469768313",
-      "comment_version_key": "5469768313:2026-08-30T16:05:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133358#issuecomment-5469768313",
-      "comment_created_at": "2026-08-30T16:05:50Z",
-      "comment_updated_at": "2026-08-30T16:05:50Z",
-      "comment_body_sha256": "a75ba22ede69d72c7c1eaf9dc1dd033aac34ed7033681ae86a3d29cd64d1509d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133358,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the native ripgrep JSON parser in src/agents/sessions/tools/grep.ts; the added test exercises it with a mocked... (sha=d223dd64dc50206fdc7a51535703a2aeefd25237)",
-      "expected_head_sha": "d223dd64dc50206fdc7a51535703a2aeefd25237",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T16:06:35.552Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-grep-json-byte-paths",
-        "head_sha": "d223dd64dc50206fdc7a51535703a2aeefd25237",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96843:4802921698:2026-08-30T15:38:02Z:clawsweeper_auto_repair",
       "comment_id": "4802921698",
@@ -33523,6 +33490,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clickclack:184:5471245284:2026-08-30T21:04:13Z:re_review",
+      "comment_id": "5471245284",
+      "comment_version_key": "5471245284:2026-08-30T21:04:13Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/184#issuecomment-5471245284",
+      "comment_created_at": "2026-08-30T21:04:13Z",
+      "comment_updated_at": "2026-08-30T21:04:13Z",
+      "comment_body_sha256": "a965dc906c7d2463a9748f185438097127532e780593c042c22770cffa15b887",
+      "repo": "openclaw/clickclack",
+      "issue_number": 184,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T21:04:54.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-embedded-controls-identity",
+        "head_sha": "7e30c9c9db2c6c2686aa2b1cfd8d1749c2d71c06",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
