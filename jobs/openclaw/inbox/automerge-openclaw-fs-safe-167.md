@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-167
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/167#issuecomment-5467186905"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/167#issuecomment-5467249694"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/167#issuecomment-
 Maintainer opted #167 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/167#issuecomment-5467186905
+Request comment: https://github.com/openclaw/fs-safe/pull/167#issuecomment-5467249694
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/167
@@ -58,5 +58,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 
 Maintainer special instructions:
 
-The exact-head repair replaces the check-then-unlink path with a fail-closed per-ID lock, an atomic no-replace hardlink claim, and crash-recoverable source retirement. The PR body now includes the packed-consumer replacement-boundary proof and final local validation.
+The direct-reader compatibility finding is resolved through an explicit safe migration: acknowledgement rejects when pending data exists without a processing claim, preserves that pending generation, and directs callers to load through the generation-bound API first. Missing-state acknowledgement remains idempotent. Focused tests and P1 autoreview are clean.
 
