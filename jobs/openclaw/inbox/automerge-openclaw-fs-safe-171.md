@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-171
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468034962"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468109627"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-
 Maintainer opted #171 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468034962
+Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5468109627
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/171
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-The overwrite-capable JavaScript fallback is removed. Verify exact-head native-off/unavailable admission rejects with `helper-unavailable` before child creation, and require the Windows native job's explicit JSON proof that directory no-replace/replace succeeds, empty and non-empty destinations are preserved, directory hard links are rejected, and junction rename sources are rejected and preserved.
+The mismatched-quarantine restore path is removed. Verify a public replacement raced before native rename and a foreign quarantine swap after native rename both remain under quarantine, leave the public workspace name absent, perform no recursive deletion, and return `indeterminate`. Retain the exact-head Windows JSON proof already published in the PR body.
 
