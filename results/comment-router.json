@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T02:59:29.021Z",
+  "updated_at": "2026-08-30T02:59:43.985Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5274434622:2026-08-13T00:33:12Z:re_review",
-      "comment_id": "5274434622",
-      "comment_version_key": "5274434622:2026-08-13T00:33:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5274434622",
-      "comment_created_at": "2026-08-13T00:33:12Z",
-      "comment_updated_at": "2026-08-13T00:33:12Z",
-      "comment_body_sha256": "6722debfc98315e42136a29b14a2c3e2da3b1f58f9ab16aca36330f77a31666d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T00:20:21.026Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5274544253:2026-08-13T00:45:17Z:re_review",
       "comment_id": "5274544253",
@@ -30574,6 +30547,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120353:5223253022:2026-08-30T02:58:11Z:clawsweeper_needs_human",
+      "comment_id": "5223253022",
+      "comment_version_key": "5223253022:2026-08-30T02:58:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120353#issuecomment-5223253022",
+      "comment_created_at": "2026-08-07T23:40:24Z",
+      "comment_updated_at": "2026-08-30T02:58:11Z",
+      "comment_body_sha256": "f8d9bea938d8a903c468f04eee9ab3f28d58ef40b0a131a1f18ff37d9e6042cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120353,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main substantially changed the affected QA owners after this head; clean mergeability alone does not prove the merged fixture still records the intended evidence. (sha=0d724d4b3db8f07ef173c42af46eadf1c42c231d)",
+      "expected_head_sha": "0d724d4b3db8f07ef173c42af46eadf1c42c231d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T02:59:43.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-runtime-tool-evidence-20260807",
+        "head_sha": "0d724d4b3db8f07ef173c42af46eadf1c42c231d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
