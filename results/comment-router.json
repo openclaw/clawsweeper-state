@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:45:33.617Z",
+  "updated_at": "2026-08-30T22:45:57.677Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123432:5289036181:2026-08-30T16:29:34Z:clawsweeper_needs_human",
-      "comment_id": "5289036181",
-      "comment_version_key": "5289036181:2026-08-30T16:29:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123432#issuecomment-5289036181",
-      "comment_created_at": "2026-08-14T03:24:30Z",
-      "comment_updated_at": "2026-08-30T16:29:34Z",
-      "comment_body_sha256": "3d966c1cdee89fbebea9934138dc89488eafbae6239bb04c8e0bd85afb18dc7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head required check matrix is still in progress; merge only after it completes successfully for cd5f27bfda5a5f39581efa5ea014581cb063cf62. (sha=cd5f27bfda5a5f39581efa5ea014581cb063cf62)",
-      "expected_head_sha": "cd5f27bfda5a5f39581efa5ea014581cb063cf62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T17:12:25.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-compact-static-catalog",
-        "head_sha": "cd5f27bfda5a5f39581efa5ea014581cb063cf62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124476:5306412786:2026-08-30T17:08:10Z:clawsweeper_auto_repair",
       "comment_id": "5306412786",
@@ -34131,6 +34098,53 @@
         "kind": "pull_request",
         "branch": "fix/gateway-scoped-image-catalog",
         "head_sha": "b48ded7c4197f50a534c289792d67be6696e127a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132830:5471726618:2026-08-30T22:45:11Z:re_review",
+      "comment_id": "5471726618",
+      "comment_version_key": "5471726618:2026-08-30T22:45:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132830#issuecomment-5471726618",
+      "comment_created_at": "2026-08-30T22:45:11Z",
+      "comment_updated_at": "2026-08-30T22:45:11Z",
+      "comment_body_sha256": "ea29b101eaab0a7aa5d55fcd01bc22d27844292e251e5edf1811787a86b77aad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132830,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T22:45:55.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/memory-lancedb-narrow-sdk-imports",
+        "head_sha": "109349c351a246f153df106f18d31efe82f62ea8",
         "cluster_id": null,
         "job_path": null
       },
