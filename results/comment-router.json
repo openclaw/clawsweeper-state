@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T13:58:36.659Z",
+  "updated_at": "2026-08-30T13:59:28.227Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131695:5467921483:2026-08-30T09:36:15Z:re_review",
-      "comment_id": "5467921483",
-      "comment_version_key": "5467921483:2026-08-30T09:36:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131695#issuecomment-5467921483",
-      "comment_created_at": "2026-08-30T09:36:15Z",
-      "comment_updated_at": "2026-08-30T09:36:15Z",
-      "comment_body_sha256": "f4eef686dfc77728f39384e8769e1e651859474a3116ba35c2887c9478de0c82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131695,
-      "author": "uggy-ug",
-      "author_id": 72197489,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T09:37:08.819Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-dm-topic-label-media",
-        "head_sha": "ab711afe30a9cf417b4b25384957edded0b70c30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133225:5467928110:2026-08-30T09:37:49Z:clawsweeper_auto_repair",
       "comment_id": "5467928110",
@@ -32013,6 +31966,39 @@
         "kind": "pull_request",
         "branch": "jesse/meaningful-traffic-signals",
         "head_sha": "b2fe5c577a4d424b54ab5b070ff8096fdadc357c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132852:5464954214:2026-08-30T13:58:47Z:clawsweeper_needs_human",
+      "comment_id": "5464954214",
+      "comment_version_key": "5464954214:2026-08-30T13:58:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132852#issuecomment-5464954214",
+      "comment_created_at": "2026-08-29T21:21:21Z",
+      "comment_updated_at": "2026-08-30T13:58:47Z",
+      "comment_body_sha256": "9b75ff89bd52b34f09e45d3581fd7d0c7ca09f4e746d7468830b9c7a2fb23894",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owners are the four outbound mirror fence lookups and their transcript append calls; the supplied test exercise... (sha=f6124437211b40e72dd21b555bb4a63eb54514e3)",
+      "expected_head_sha": "f6124437211b40e72dd21b555bb4a63eb54514e3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T13:59:28.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mirror-writer-fence-destination-132766",
+        "head_sha": "f6124437211b40e72dd21b555bb4a63eb54514e3",
         "cluster_id": null,
         "job_path": null
       }
