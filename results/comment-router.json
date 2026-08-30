@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:45:16.033Z",
+  "updated_at": "2026-08-30T22:45:29.341Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123146:5279602923:2026-08-30T16:15:40Z:clawsweeper_needs_human",
-      "comment_id": "5279602923",
-      "comment_version_key": "5279602923:2026-08-30T16:15:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123146#issuecomment-5279602923",
-      "comment_created_at": "2026-08-13T11:07:17Z",
-      "comment_updated_at": "2026-08-30T16:15:40Z",
-      "comment_body_sha256": "399fdf7baac733ba8d082dfc6b26327b162bfa4d3f33723043f854b022b87447",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123146,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR provides mocked handler tests and an unverified manual claim, but no posted after-fix Telegram trace, recording, terminal output, or red... (sha=ea090826ce60779b160277f660c99dea0fceab64)",
-      "expected_head_sha": "ea090826ce60779b160277f660c99dea0fceab64",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T17:12:25.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-skip-audio-download-when-preflight-disabled",
-        "head_sha": "ea090826ce60779b160277f660c99dea0fceab64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123139:5279718579:2026-08-30T16:15:03Z:clawsweeper_auto_repair",
       "comment_id": "5279718579",
@@ -34106,6 +34073,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125663:5471724312:2026-08-30T22:44:41Z:re_review",
+      "comment_id": "5471724312",
+      "comment_version_key": "5471724312:2026-08-30T22:44:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125663#issuecomment-5471724312",
+      "comment_created_at": "2026-08-30T22:44:41Z",
+      "comment_updated_at": "2026-08-30T22:44:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125663,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T22:45:27.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-host-trajectory-recorder",
+        "head_sha": "37b6437549d8c480e5c6860d79374c7e5d72075f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
