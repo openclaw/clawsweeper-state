@@ -67,22 +67,25 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/132766 as an existing-behavior bug. An ambient owned transcript writer fence must never be spread into an outbound mirror for another session. Reuse the canonical full-scope matching contract at generic delivery and plugin-handled delivery; inspect source-reply mirroring in the same change so every zero-argument mirror fence call has an intentional, proven ownership rule. Preserve writer fencing for same-session writes, preserve best-effort/no-retry semantics after a confirmed channel send, and make session-rebound diagnostics identify the failed expectation without changing the stable refusal code. Add a regression that fails before the repair for a foreign ambient context and covers a matching context. Do not add config, persistence/schema changes, fallback retries, or CHANGELOG.md edits.
+Repair the cross-session transcript-fence leak reported at https://github.com/openclaw/openclaw/issues/132766. At every durable outbound mirror writer, request an inherited writer fence only with the fully resolved canonical destination scope (agent id, session id when known, session key, and store path), so an ambient run for session A cannot constrain an append to session B. Cover generic delivery, plugin-handled sends, and source-reply mirroring; audit the private WebChat persistence writer for the same invariant rather than assuming it is safe. Preserve the intentional post-send non-retry behavior, add distinct stable refusal diagnostics for session-id, lifecycle-revision, and writer-run mismatches if they can share the existing contract, and do not add configuration, schema, fallback, or channel-specific behavior. Establish a failing regression before editing and include release-note context in the PR body rather than editing CHANGELOG.md. Related context: https://github.com/openclaw/openclaw/issues/125885 was closed while the same defect remained; https://github.com/openclaw/openclaw/issues/122630 is adjacent but distinct.
 
 Likely files:
 
+- src/config/sessions/transcript-write-context.ts
 - src/infra/outbound/deliver-transcript.ts
 - src/infra/outbound/outbound-send-service.ts
 - src/infra/outbound/source-reply-mirror.ts
-- src/config/sessions/transcript-write-context.ts
-- src/config/sessions/transcript.ts
+- src/infra/outbound/deliver.test.ts
 - src/infra/outbound/outbound-send-service.test.ts
 - src/infra/outbound/source-reply-mirror.test.ts
+- src/config/sessions/transcript.ts
 - src/config/sessions/transcript.test.ts
 
 Validation:
 
-- pnpm test src/infra/outbound/deliver.test.ts src/infra/outbound/outbound-send-service.test.ts src/infra/outbound/source-reply-mirror.test.ts
+- pnpm test src/infra/outbound/deliver.test.ts
+- pnpm test src/infra/outbound/outbound-send-service.test.ts
+- pnpm test src/infra/outbound/source-reply-mirror.test.ts
 - pnpm test src/config/sessions/transcript.test.ts
 
 ## Operator Prompt
