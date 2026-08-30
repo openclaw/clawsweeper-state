@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T15:13:13.657Z",
+  "updated_at": "2026-08-30T15:14:08.680Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/lobster:144:5464281760:2026-08-30T10:15:54Z:clawsweeper_auto_repair",
-      "comment_id": "5464281760",
-      "comment_version_key": "5464281760:2026-08-30T10:15:54Z",
-      "comment_url": "https://github.com/openclaw/lobster/pull/144#issuecomment-5464281760",
-      "comment_created_at": "2026-08-29T19:03:15Z",
-      "comment_updated_at": "2026-08-30T10:15:54Z",
-      "comment_body_sha256": "d8dca4e72bfbfd1a3ada686baba95eb2c0974b6ea5891fdcb8411ba9619668e0",
-      "repo": "openclaw/lobster",
-      "issue_number": 144,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bc4a4f62134b9e00e80896d612fbbf2227de0744)",
-      "expected_head_sha": "bc4a4f62134b9e00e80896d612fbbf2227de0744",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T10:16:38.130Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f004-exec-abort-signal",
-        "head_sha": "bc4a4f62134b9e00e80896d612fbbf2227de0744",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133204:5468098349:2026-08-30T10:18:36Z:re_review",
       "comment_id": "5468098349",
@@ -32081,6 +32048,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133324:5469319304:2026-08-30T15:13:10Z:clawsweeper_needs_human",
+      "comment_id": "5469319304",
+      "comment_version_key": "5469319304:2026-08-30T15:13:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133324#issuecomment-5469319304",
+      "comment_created_at": "2026-08-30T14:38:50Z",
+      "comment_updated_at": "2026-08-30T15:13:10Z",
+      "comment_body_sha256": "13fb495baa7485c1c4bff6a4243f7abc8df5688665b7e3609509da13315c5911",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133324,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Authenticate built-in TTS before bypassing private replies (P1)** - coreBuiltinToolNames only says that some non-plugin tool named tts exists; it does not identify the tool that produced this result. Because cha...; Review finding: [P1] Authenticate built-in TTS before bypassing private replies — src/agents/embedded-agent-subscribe.handlers.tools.results.ts:723-727 - [high] Channel tool can i... (sha=0699e8e9bea658acf0c430fb6011f5a7d6bbeeb5)",
+      "expected_head_sha": "0699e8e9bea658acf0c430fb6011f5a7d6bbeeb5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T15:14:08.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-83636-tts-delivery",
+        "head_sha": "0699e8e9bea658acf0c430fb6011f5a7d6bbeeb5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
