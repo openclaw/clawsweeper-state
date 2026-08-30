@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133294",
+  "mode": "autonomous",
+  "run_id": "33314334467",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33314334467",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133294.md",
+  "published_at": "2026-08-30T13:57:08.756Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133294",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133294",
+  "canonical_pr": null,
+  "summary": "#133294 remains the canonical reproducible Telegram durable-ingress bug. A narrow shared-admission repair is identified, but this worker cannot implement or validate it: the checkout is read-only, dependencies lack tsx, and the mandatory sibling ../codex inspection is blocked because it is absent and cannot be cloned.",
+  "actions": [
+    {
+      "target": "#133294",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133294",
+      "candidate_fix": null,
+      "reason": "Implementation and regression proof require a writable dependency-ready checkout. The repository’s mandatory direct ../codex source inspection is also unavailable: the sibling is absent, clone creation failed on the read-only filesystem, and remote DNS was unavailable."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133294",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133294",
+      "candidate_fix": null,
+      "reason": "A fresh writable executor can apply this bounded fix on clawsweeper/issue-openclaw-openclaw-133294."
+    },
+    {
+      "target": "#54794",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed and not a target for this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
