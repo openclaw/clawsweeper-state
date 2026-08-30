@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-105517",
+  "mode": "autonomous",
+  "run_id": "33281926796",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33281926796",
+  "head_sha": "9f4da9302aea1e41525039417ad128b0522391a0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-105517.md",
+  "published_at": "2026-08-30T00:10:47.054Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/105517",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/105517",
+  "canonical_pr": null,
+  "summary": "#105517 remains a narrow, reproducible command-reply transcript defect on main 4db43443acc1f636550d39fccb3017340cc42c78. Implementation is blocked in this worker because the checkout is read-only and the mandatory sibling ../codex source is absent; the sandbox prevents creating that required clone. A new narrow fix PR remains appropriate.",
+  "actions": [
+    {
+      "target": "#105517",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "The repair path is clear, but this worker cannot satisfy the mandatory Codex-source gate or create the required branch delta in a read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-105517",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#105517",
+      "candidate_fix": null,
+      "reason": "Executor should create/update clawsweeper/issue-openclaw-openclaw-105517 after direct Codex-source inspection and a clean writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
