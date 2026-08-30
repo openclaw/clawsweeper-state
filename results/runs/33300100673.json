@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133170",
+  "mode": "autonomous",
+  "run_id": "33300100673",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33300100673",
+  "head_sha": "fa535d54a032862b022147a7cba4eaa3bdeb4a7b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133170.md",
+  "published_at": "2026-08-30T09:21:19.302Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133170",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133170",
+  "canonical_pr": null,
+  "summary": "#133170 remains the sole open canonical issue. Current main c5c6199b still suppresses RPC partial-transcript append failures. Implementation is blocked in this read-only worker: node_modules is absent (focused Vitest cannot load tsx) and the mandatory sibling ../codex source checkout is absent, so no compliant code verdict, patch, or PR-ready validation can be completed here.",
+  "actions": [
+    {
+      "target": "#133170",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133170",
+      "candidate_fix": null,
+      "reason": "The issue is still a distinct, source-backed bug and has no viable implementation PR."
+    },
+    {
+      "target": "#133170",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133170",
+      "candidate_fix": null,
+      "reason": "The narrow fix path is clear, but implementation and validation must run in a writable checkout with dependencies and the required sibling Codex source available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133170",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#133170",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR once the executor has a writable, dependency-complete checkout and has completed the required direct ../codex inspection."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
