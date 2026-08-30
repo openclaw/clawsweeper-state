@@ -31,17 +31,17 @@ security_policy: central_security_only
 security_sensitive: false
 target_branch: clawsweeper/automerge-openclaw-fs-safe-174
 source: pr_automerge
-requested_by: "clawsweeper[bot]"
-requested_by_id: "274271284"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468657699"
+requested_by: "steipete"
+requested_by_id: "58493"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468638842"
 ---
 
 # ClawSweeper adopted PR repair candidate
 
 Maintainer opted #174 into ClawSweeper automerge.
 
-Requested by: clawsweeper[bot]
-Request comment: https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468657699
+Requested by: steipete
+Request comment: https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468638842
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/174
@@ -55,4 +55,9 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 - Never add forbidden changelog credit lines for `@codex`, `@openclaw`, or `@steipete`; preserve contributor credit through source links, PR body, and commit/PR history.
 - Do not merge, close, or bypass review gates from the worker. The comment router owns final merge only after a passing ClawSweeper verdict for the exact current head.
 - Keep repair scope limited to actionable ClawSweeper findings, failing relevant checks, and required review feedback on this PR.
+
+Maintainer special instructions:
+
+Special instructions:
+Verify exact staged identity remains pinned across async/sync `beforeRename`, retries, copy fallback, parent sync, final-name checks, and cleanup. Substituted or hardlinked temp entries must be preserved rather than published or deleted; post-rename replacement must report without rollback.
 

@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T12:37:19.357Z",
+  "updated_at": "2026-08-30T12:37:29.000Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133148:5467344195:2026-08-30T08:10:59Z:clawsweeper_needs_human",
-      "comment_id": "5467344195",
-      "comment_version_key": "5467344195:2026-08-30T08:10:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133148#issuecomment-5467344195",
-      "comment_created_at": "2026-08-30T07:17:19Z",
-      "comment_updated_at": "2026-08-30T08:10:59Z",
-      "comment_body_sha256": "95400a17b418433244abd02cbdb76b3f15dc5f6adf2a557bfc6bc453aa37fe87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133148,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair work is needed: this active maintainer-labeled PR already contains the appropriate implementation and proof. (sha=ad92a490ce2a9b2b17978608e4f7ca86b329c803)",
-      "expected_head_sha": "ad92a490ce2a9b2b17978608e4f7ca86b329c803",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T08:30:57.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-20260830-launcher-profile-help",
-        "head_sha": "ad92a490ce2a9b2b17978608e4f7ca86b329c803",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133151:5467353272:2026-08-30T08:24:43Z:clawsweeper_needs_human",
       "comment_id": "5467353272",
@@ -31935,6 +31902,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:174:5468638842:2026-08-30T12:18:50Z:automerge",
+      "comment_id": "5468638842",
+      "comment_version_key": "5468638842:2026-08-30T12:18:50Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/174#issuecomment-5468638842",
+      "comment_created_at": "2026-08-30T12:18:50Z",
+      "comment_updated_at": "2026-08-30T12:18:50Z",
+      "comment_body_sha256": "5d9da51464518512496bb664c8a2f59acde24090756f03fd1c9e37f4fe601d87",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 174,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "automerge enabled; current checks are failing: Node 22 coverage (windows-latest):FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-30T12:37:26.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/atomic-before-rename-substitution",
+        "head_sha": "4baa21e50e2992906052f0d4a3c1c820bebad5f8",
+        "cluster_id": "automerge-openclaw-fs-safe-174",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-174.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-174.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
