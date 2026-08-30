@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T00:58:35.982Z",
+  "updated_at": "2026-08-30T01:00:34.796Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132453:5464994561:2026-08-29T21:30:28Z:re_review",
-      "comment_id": "5464994561",
-      "comment_version_key": "5464994561:2026-08-29T21:30:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5464994561",
-      "comment_created_at": "2026-08-29T21:30:28Z",
-      "comment_updated_at": "2026-08-29T21:30:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132453,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-29T21:31:15.587Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage",
-        "head_sha": "0c9365af028007db001327b62580cc7b104ff480",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132854:5464995229:2026-08-29T21:30:37Z:clawsweeper_needs_human",
       "comment_id": "5464995229",
@@ -31112,6 +31065,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-db-recreate-after-close",
         "head_sha": "9327d90357f5fb4c02c8a4a68d95de42cf4271bc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132883:5465317114:2026-08-30T00:59:47Z:clawsweeper_needs_human",
+      "comment_id": "5465317114",
+      "comment_version_key": "5465317114:2026-08-30T00:59:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132883#issuecomment-5465317114",
+      "comment_created_at": "2026-08-29T22:45:07Z",
+      "comment_updated_at": "2026-08-30T00:59:47Z",
+      "comment_body_sha256": "cc944118336e51c012c99178a82f9d8506d37c484b2a0fcdd184a8610d77d92b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132883,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix has a net production increase of 42 lines. The signal must cross four distinct owner boundaries and needs post-await fences, so a net-neutral repair does not appear avail... (sha=dd3c2c363c4d63a146253a75796bc49635ab2188)",
+      "expected_head_sha": "dd3c2c363c4d63a146253a75796bc49635ab2188",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T01:00:34.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/link-understanding-reply-abort-127637",
+        "head_sha": "dd3c2c363c4d63a146253a75796bc49635ab2188",
         "cluster_id": null,
         "job_path": null
       }
