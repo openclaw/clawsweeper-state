@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T17:40:35.843Z",
+  "updated_at": "2026-08-30T17:40:58.215Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133232:5467931646:2026-08-30T11:57:59Z:clawsweeper_needs_human",
-      "comment_id": "5467931646",
-      "comment_version_key": "5467931646:2026-08-30T11:57:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133232#issuecomment-5467931646",
-      "comment_created_at": "2026-08-30T09:38:40Z",
-      "comment_updated_at": "2026-08-30T11:57:59Z",
-      "comment_body_sha256": "a8f5edb9e833b4c602cd73655db64886fd7554a7316d0cd75cbf329b46a12249",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133232,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check rollup still has exact-head jobs in progress, so normal merge gating remains incomplete; this is not an introduced code defect. (sha=7cfcacd8af100607a8da51841fc21c2cda4578bb)",
-      "expected_head_sha": "7cfcacd8af100607a8da51841fc21c2cda4578bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T12:25:08.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stable-stringify-date-collections",
-        "head_sha": "7cfcacd8af100607a8da51841fc21c2cda4578bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133263:5468258040:2026-08-30T12:21:06Z:clawsweeper_needs_human",
       "comment_id": "5468258040",
@@ -32811,6 +32778,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133382:5469930243:2026-08-30T17:40:11Z:clawsweeper_needs_human",
+      "comment_id": "5469930243",
+      "comment_version_key": "5469930243:2026-08-30T17:40:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133382#issuecomment-5469930243",
+      "comment_created_at": "2026-08-30T16:37:46Z",
+      "comment_updated_at": "2026-08-30T17:40:11Z",
+      "comment_body_sha256": "c6f2f77d7aa87750d920e26683167f7c57e55d80cc6341bbd0d4413b552d7c3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133382,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging establishes newest-first ordering for the externally exported beta SessionCatalogProvider.read API; a current-source third-party provider that returns chronological pages woul... (sha=7a90bc3c7057d1b658ab45d1a74147f42fc98dae)",
+      "expected_head_sha": "7a90bc3c7057d1b658ab45d1a74147f42fc98dae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T17:40:58.215Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-beam-transcript-order",
+        "head_sha": "7a90bc3c7057d1b658ab45d1a74147f42fc98dae",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
