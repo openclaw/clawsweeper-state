@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-132766"
 mode: "autonomous"
-run_id: "33315837568"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33315837568"
+run_id: "33317642949"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33317642949"
 head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-30T14:43:14.608Z"
+published_at: "2026-08-30T15:04:25.623Z"
 canonical: "https://github.com/openclaw/openclaw/issues/132766"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/132766"
 canonical_pr: null
-actions_total: 2
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33315837568](https://github.com/openclaw/clawsweeper/actions/runs/33315837568)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33317642949](https://github.com/openclaw/clawsweeper/actions/runs/33317642949)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/132766
 
 ## Summary
 
-#132766 remains the canonical open bug. Static inspection on main 0a6c013be5f50981b12d021b387b4fd1ea7e491e confirms four durable writers can copy an ambient session A fence into destination session B. Implementation is blocked in this read-only checkout: tests cannot start because Corepack cannot create its cache, and the mandatory sibling ../codex source checkout is absent.
+No code or GitHub mutations were made. The source defect remains reproducible in this checkout, but implementation is blocked because the preflight main SHA is absent locally, node_modules is absent in a read-only checkout, and the mandatory sibling ../codex inspection cannot be performed or cloned on the read-only filesystem.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/132766
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #132766 | fix_needed | blocked | canonical | A writable executor with the required sibling Codex checkout must apply and validate the narrow repair. |
-| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | Prepared narrow new-PR plan; execution is blocked only by this read-only worker environment. |
+| #121003 | keep_closed | skipped | related | Already closed. |
+| #122630 | keep_closed | skipped | related | Already closed and adjacent, not this canonical bug. |
+| #125885 | keep_closed | skipped | superseded | Already closed; active canonical report is #132766. |
+| #132766 | fix_needed | blocked | canonical | A fresh writable checkout at preflight main or newer is required. The supplied main SHA 7cd04f982867d8efc3517d901937c25e69e00a5e is absent from this shallow checkout; ../codex is absent and git clone failed with a read-only filesystem; node_modules is absent, so the required failing regression and validation cannot be run. |
+| cluster:issue-openclaw-openclaw-132766 | build_fix_artifact | planned | canonical | Narrow new-fix-PR path is available once the environment blockers are removed. |
 
 ## Needs Human
 
