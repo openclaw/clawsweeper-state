@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T17:15:26.377Z",
+  "updated_at": "2026-08-30T17:16:14.287Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1664:5468523074:2026-08-30T11:54:00Z:re_review",
-      "comment_id": "5468523074",
-      "comment_version_key": "5468523074:2026-08-30T11:54:00Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1664#issuecomment-5468523074",
-      "comment_created_at": "2026-08-30T11:54:00Z",
-      "comment_updated_at": "2026-08-30T11:54:00Z",
-      "comment_body_sha256": "c19ff91b3d2e2160c3a0d47ff8dd7f8accf7b2cc7e60107e54429308785fc696",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1664,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T11:54:43.308Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/smolvm-exact-ownership",
-        "head_sha": "9cef85e30f0397bfb4ff4f644970a47a59d9ba55",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5468530216:2026-08-30T11:55:37Z:re_review",
       "comment_id": "5468530216",
@@ -32535,6 +32488,39 @@
         "kind": "pull_request",
         "branch": "steipete/great-lovelace-d04876",
         "head_sha": "68990564fd7f7db30724aee3588d357549bb47fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133400:5470125046:2026-08-30T17:15:27Z:clawsweeper_needs_human",
+      "comment_id": "5470125046",
+      "comment_version_key": "5470125046:2026-08-30T17:15:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133400#issuecomment-5470125046",
+      "comment_created_at": "2026-08-30T17:15:27Z",
+      "comment_updated_at": "2026-08-30T17:15:27Z",
+      "comment_body_sha256": "06474ccc4d08b3c9996aa9ef1512da42e19212bace832c98f2398b33b4d884ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133400,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refactor has focused loopback coverage but no authenticated OpenAI or Voyage batch run; a provider-specific status behavior visible only at the real boundary remains unobserved be... (sha=faf2f45fe6d4f281a7268c81381f0ce434f0d949)",
+      "expected_head_sha": "faf2f45fe6d4f281a7268c81381f0ce434f0d949",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T17:16:14.287Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-embedding-batch-20260830",
+        "head_sha": "faf2f45fe6d4f281a7268c81381f0ce434f0d949",
         "cluster_id": null,
         "job_path": null
       }
