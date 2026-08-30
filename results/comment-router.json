@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T23:52:46.114Z",
+  "updated_at": "2026-08-30T23:52:56.195Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123489:5289826383:2026-08-30T18:11:55Z:clawsweeper_auto_repair",
-      "comment_id": "5289826383",
-      "comment_version_key": "5289826383:2026-08-30T18:11:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123489#issuecomment-5289826383",
-      "comment_created_at": "2026-08-14T05:25:53Z",
-      "comment_updated_at": "2026-08-30T18:11:55Z",
-      "comment_body_sha256": "e796bc07e29006124b66ac9aae9028cb906f2ba6cf40e1a6fc8d8c6a65a07fc8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123489,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e5c7ebd3143c014fdb0412043c71b10bf66737f5)",
-      "expected_head_sha": "e5c7ebd3143c014fdb0412043c71b10bf66737f5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T18:43:12.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/tasks-follow",
-        "head_sha": "e5c7ebd3143c014fdb0412043c71b10bf66737f5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123774:5296461119:2026-08-30T18:10:04Z:clawsweeper_auto_repair",
       "comment_id": "5296461119",
@@ -33905,6 +33872,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132116:5472038244:2026-08-30T23:52:13Z:re_review",
+      "comment_id": "5472038244",
+      "comment_version_key": "5472038244:2026-08-30T23:52:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132116#issuecomment-5472038244",
+      "comment_created_at": "2026-08-30T23:52:13Z",
+      "comment_updated_at": "2026-08-30T23:52:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132116,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T23:52:54.397Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131581-codex-max-thinking",
+        "head_sha": "097c00b568265dc9accbe721a825006ed5281077",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
