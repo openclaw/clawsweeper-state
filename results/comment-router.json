@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T00:33:24.197Z",
+  "updated_at": "2026-08-30T00:33:40.878Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130993:5441576589:2026-08-29T20:59:46Z:clawsweeper_needs_human",
-      "comment_id": "5441576589",
-      "comment_version_key": "5441576589:2026-08-29T20:59:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130993#issuecomment-5441576589",
-      "comment_created_at": "2026-08-27T15:43:23Z",
-      "comment_updated_at": "2026-08-29T20:59:46Z",
-      "comment_body_sha256": "70a4032ff9f0c2fb0f2b79ca7ce4d0d54c0189558aa4d7819516e737d4edbdca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130993,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users who interpreted timeoutSeconds as a total wall-clock cap can see a staged built-in compaction run longer while each model request remains bounded. (sha=5594d1ba8b0bb5d6e02e396098c2177f27f721a8)",
-      "expected_head_sha": "5594d1ba8b0bb5d6e02e396098c2177f27f721a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-29T21:08:36.689Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/managed-context-pressure",
-        "head_sha": "5594d1ba8b0bb5d6e02e396098c2177f27f721a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132567:5462297775:2026-08-29T21:05:03Z:clawsweeper_auto_repair",
       "comment_id": "5462297775",
@@ -30986,6 +30953,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:164:5465767794:2026-08-30T00:32:53Z:automerge",
+      "comment_id": "5465767794",
+      "comment_version_key": "5465767794:2026-08-30T00:32:53Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/164#issuecomment-5465767794",
+      "comment_created_at": "2026-08-30T00:32:53Z",
+      "comment_updated_at": "2026-08-30T00:32:53Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 164,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T00:33:34.591Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-timeout-lifetime",
+        "head_sha": "75680e431c5e3df0eda25f8cce0086bbfc8d30c1",
+        "cluster_id": "automerge-openclaw-fs-safe-164",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-164.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-164.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
