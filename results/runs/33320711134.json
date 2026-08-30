@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133347",
+  "mode": "autonomous",
+  "run_id": "33320711134",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33320711134",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133347.md",
+  "published_at": "2026-08-30T16:04:21.522Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133347",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133347",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a repair verdict: the required sibling ../codex source checkout is absent, and this read-only worker cannot clone it. No GitHub mutations or code changes were made.",
+  "actions": [
+    {
+      "target": "#133347",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Provide the required ../codex checkout, or rerun in a writable/network-enabled worker, then verify the migration owner and create the narrow fix artifact."
+    },
+    {
+      "target": "#90072",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#96617",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Make sibling Codex source available at ../codex (or provide a writable/network-enabled worker) so the mandated direct-source gate can be completed before an implementation verdict or fix artifact."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#133347",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
