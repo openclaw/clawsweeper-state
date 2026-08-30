@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-30T10:19:05.444Z",
+  "updated_at": "2026-08-30T10:19:23.775Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133091:5466911289:2026-08-30T05:52:32Z:clawsweeper_auto_repair",
-      "comment_id": "5466911289",
-      "comment_version_key": "5466911289:2026-08-30T05:52:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133091#issuecomment-5466911289",
-      "comment_created_at": "2026-08-30T05:25:57Z",
-      "comment_updated_at": "2026-08-30T05:52:32Z",
-      "comment_body_sha256": "5a82cccfae3b9b94f32261cf3d9f0c3bfbb6a3a6fac51f042981b795703d0c7f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133091,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fd1c4ef034ab528a110c6d4e79710e21a481b88f)",
-      "expected_head_sha": "fd1c4ef034ab528a110c6d4e79710e21a481b88f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T06:00:23.319Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-search-completion-127333",
-        "head_sha": "fd1c4ef034ab528a110c6d4e79710e21a481b88f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133095:5466926154:2026-08-30T05:51:48Z:clawsweeper_needs_human",
       "comment_id": "5466926154",
@@ -32468,6 +32435,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133204:5468098349:2026-08-30T10:18:36Z:re_review",
+      "comment_id": "5468098349",
+      "comment_version_key": "5468098349:2026-08-30T10:18:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133204#issuecomment-5468098349",
+      "comment_created_at": "2026-08-30T10:18:36Z",
+      "comment_updated_at": "2026-08-30T10:18:36Z",
+      "comment_body_sha256": "f845174f773fe973fd0ab2f711711419171b91b8b900a1f82b70768387dff1bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133204,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-30T10:19:21.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-133051-telegram-terminal-receipt",
+        "head_sha": "d94c0be56aa8433e044e4ae5575c38d230c5208d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
