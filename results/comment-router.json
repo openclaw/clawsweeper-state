@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T03:44:38.799Z",
+  "updated_at": "2026-08-30T03:47:02.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80396:5221861428:2026-08-07T20:48:51Z:re_review",
-      "comment_id": "5221861428",
-      "comment_version_key": "5221861428:2026-08-07T20:48:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80396#issuecomment-5221861428",
-      "comment_created_at": "2026-08-07T20:48:51Z",
-      "comment_updated_at": "2026-08-07T20:48:51Z",
-      "comment_body_sha256": "64ac4bda9af1c14666cc35346e1b52cda55174bc4435779166690d56c72cafa4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80396,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T00:20:21.027Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80396:5222373911:2026-08-07T21:54:41Z:re_review",
       "comment_id": "5222373911",
@@ -31222,6 +31195,39 @@
       "status": "skipped",
       "processed_at": "2026-08-30T03:44:38.799Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1645:5466541190:2026-08-30T03:46:17Z:clawsweeper_needs_human",
+      "comment_id": "5466541190",
+      "comment_version_key": "5466541190:2026-08-30T03:46:17Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1645#issuecomment-5466541190",
+      "comment_created_at": "2026-08-30T03:46:17Z",
+      "comment_updated_at": "2026-08-30T03:46:17Z",
+      "comment_body_sha256": "2ddd126d6502648d3415d3b50483b251451a8582a98cfe27161b2588a34cdb85",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1645,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the code-server readiness loop and portal-bridge reconnect loop. The copied terminal trace runs the new readi... (sha=451e4931e2c8bb912c507b6c9822e82326bf2714)",
+      "expected_head_sha": "451e4931e2c8bb912c507b6c9822e82326bf2714",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T03:47:02.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-sleep-context",
+        "head_sha": "451e4931e2c8bb912c507b6c9822e82326bf2714",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
