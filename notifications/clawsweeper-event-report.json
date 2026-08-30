@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "generated_at": "2026-08-30T12:47:46.476Z",
+  "generated_at": "2026-08-30T13:00:20.716Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/33311524605.json",
+  "run_record": "results/runs/33311995369.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "33311524605",
+  "run_id": "33311995369",
   "considered": 2,
-  "pending": 2,
-  "sent": 2,
+  "pending": 1,
+  "sent": 1,
   "failed": 0,
-  "skipped": 0,
+  "skipped": 1,
   "actions": [
     {
       "key": "clawsweeper.merge_blocked:openclaw/fs-safe:#174:merge_canonical:blocked:job does not allow merge",
@@ -21,15 +21,15 @@
       "title": "fix(atomic): retain staged file ownership",
       "action": "merge_canonical",
       "event_status": "blocked",
-      "status": "sent",
-      "reason": "sent to OpenClaw hook; sent to status dashboard",
-      "run_id": "33311524605",
+      "status": "skipped",
+      "reason": "notification already sent",
+      "run_id": "33311995369",
       "cluster_id": "automerge-openclaw-fs-safe-174",
-      "hook_run_id": "5ecd6068-c1e3-4e99-9827-dd599b8b1fc0",
+      "hook_run_id": null,
       "url": "https://github.com/openclaw/fs-safe/pull/174"
     },
     {
-      "key": "clawsweeper.contributor_branch_repaired:openclaw/fs-safe:#174:repair_contributor_branch:pushed:4baa21e50e2992906052f0d4a3c1c820bebad5f8",
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/fs-safe:#174:repair_contributor_branch:pushed:e943dc8c981acadabb05134d8c5122a3077bbd00",
       "type": "clawsweeper.contributor_branch_repaired",
       "severity": "info",
       "repo": "openclaw/fs-safe",
@@ -39,9 +39,9 @@
       "event_status": "pushed",
       "status": "sent",
       "reason": "sent to OpenClaw hook; sent to status dashboard",
-      "run_id": "33311524605",
+      "run_id": "33311995369",
       "cluster_id": "automerge-openclaw-fs-safe-174",
-      "hook_run_id": "4ef9798a-34ad-444f-be51-9bd9a317d682",
+      "hook_run_id": "6fb66b65-de61-4592-8a72-597edc6fc529",
       "url": "https://github.com/openclaw/fs-safe/pull/174"
     }
   ]

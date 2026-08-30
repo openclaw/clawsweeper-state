@@ -2,12 +2,12 @@
 repo: "openclaw/fs-safe"
 cluster_id: "automerge-openclaw-fs-safe-174"
 mode: "autonomous"
-run_id: "33311524605"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33311524605"
+run_id: "33311995369"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33311995369"
 head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-08-30T12:47:34.691Z"
+published_at: "2026-08-30T13:00:02.179Z"
 canonical: "#174"
 canonical_issue: null
 canonical_pr: "#174"
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/fs-safe
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33311524605](https://github.com/openclaw/clawsweeper/actions/runs/33311524605)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33311995369](https://github.com/openclaw/clawsweeper/actions/runs/33311995369)
 
 Workflow conclusion: success
 
