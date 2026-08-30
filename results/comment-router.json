@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-30T08:11:41.902Z",
+  "updated_at": "2026-08-30T08:11:53.116Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5313500625:2026-08-17T08:12:33Z:re_review",
-      "comment_id": "5313500625",
-      "comment_version_key": "5313500625:2026-08-17T08:12:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5313500625",
-      "comment_created_at": "2026-08-17T08:12:33Z",
-      "comment_updated_at": "2026-08-17T08:12:33Z",
-      "comment_body_sha256": "4ada1d69bff257ec07c356dd7ca3a1dd516922f600b6c3d3d8acd95ef3b7b9c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T04:12:13.160Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313566199:2026-08-17T08:18:39Z:re_review",
       "comment_id": "5313566199",
@@ -31381,6 +31354,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133091:5466911289:2026-08-30T08:11:16Z:clawsweeper_needs_human",
+      "comment_id": "5466911289",
+      "comment_version_key": "5466911289:2026-08-30T08:11:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133091#issuecomment-5466911289",
+      "comment_created_at": "2026-08-30T05:25:57Z",
+      "comment_updated_at": "2026-08-30T08:11:16Z",
+      "comment_body_sha256": "5c9b86ce87ae9983a7e8df9ff742780fd5dabcd311d6d8051ecec4a58d96c37e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Plugins view's ClawHub completion renderer, reached from the page search task. The supplied before/after js... (sha=dd8f9c8cfa74a6126a657e3515ede1af5b0835e4)",
+      "expected_head_sha": "dd8f9c8cfa74a6126a657e3515ede1af5b0835e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T08:11:53.116Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-search-completion-127333",
+        "head_sha": "dd8f9c8cfa74a6126a657e3515ede1af5b0835e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
