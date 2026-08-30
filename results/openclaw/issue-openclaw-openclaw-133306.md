@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133306"
 mode: "autonomous"
-run_id: "33315132328"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33315132328"
+run_id: "33317189247"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33317189247"
 head_sha: "c179a466606f782ae73404357a0c94e6bead5807"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-30T14:19:13.878Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133306"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133306"
+published_at: "2026-08-30T15:44:44.086Z"
+canonical: "#133306"
+canonical_issue: "#133306"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 3
 ---
 
 # issue-openclaw-openclaw-133306
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33315132328](https://github.com/openclaw/clawsweeper/actions/runs/33315132328)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33317189247](https://github.com/openclaw/clawsweeper/actions/runs/33317189247)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/133306
+Canonical: #133306
 
 ## Summary
 
-#133306 is a narrow canonical plugin-loader bug on main, but this read-only checkout lacks tsx and the required sibling ../codex source is unavailable, so no locally validated branch or PR can be produced. A bounded new-PR artifact is ready for a writable executor.
+Narrow non-security fix remains appropriate, but no code or PR could be produced: the checkout is read-only, dependencies cannot be installed, required sibling Codex source cannot be cloned/inspected, and the preflight main SHA is absent locally. Source and Node contract inspection support normalizing file URLs only at native CommonJS load/cache boundaries while preserving ESM URL conversion.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/133306
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 3 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/133306
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133306 | fix_needed | blocked | canonical | Implementation and validation are blocked only by the worker environment. The deterministic executor should apply the artifact on a writable checkout with dependencies and the required sibling Codex source. |
-| cluster:issue-openclaw-openclaw-133306 | build_fix_artifact | planned |  | A writable executor can implement this as one narrow fix PR. |
+| #133306 | fix_needed | blocked | canonical | The job requires a writable, current-main checkout with installed dependencies and direct Codex source inspection before implementation and validation. |
+| #133306 | build_fix_artifact | planned | canonical | A focused replacement PR is still the correct next action once the environment blockers are removed. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout at current main, with the preflight main commit available and dependencies installable.
+- Provide the required sibling Codex source checkout so the acting worker can inspect the applicable runtime contract before editing.
+- Rerun the job after provisioning; first add and run the failing owner-boundary regression before applying the artifact.

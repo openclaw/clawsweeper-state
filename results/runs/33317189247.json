@@ -1,0 +1,57 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133306",
+  "mode": "autonomous",
+  "run_id": "33317189247",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33317189247",
+  "head_sha": "c179a466606f782ae73404357a0c94e6bead5807",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133306.md",
+  "published_at": "2026-08-30T15:44:44.086Z",
+  "canonical": "#133306",
+  "canonical_issue": "#133306",
+  "canonical_pr": null,
+  "summary": "Narrow non-security fix remains appropriate, but no code or PR could be produced: the checkout is read-only, dependencies cannot be installed, required sibling Codex source cannot be cloned/inspected, and the preflight main SHA is absent locally. Source and Node contract inspection support normalizing file URLs only at native CommonJS load/cache boundaries while preserving ESM URL conversion.",
+  "actions": [
+    {
+      "target": "#133306",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133306",
+      "candidate_fix": null,
+      "reason": "The job requires a writable, current-main checkout with installed dependencies and direct Codex source inspection before implementation and validation."
+    },
+    {
+      "target": "#133306",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133306",
+      "candidate_fix": null,
+      "reason": "A focused replacement PR is still the correct next action once the environment blockers are removed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout at current main, with the preflight main commit available and dependencies installable.",
+    "Provide the required sibling Codex source checkout so the acting worker can inspect the applicable runtime contract before editing.",
+    "Rerun the job after provisioning; first add and run the failing owner-boundary regression before applying the artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
