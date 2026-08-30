@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-30T22:04:03.589Z",
+  "updated_at": "2026-08-30T22:04:26.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:94344:5469971568:2026-08-30T16:44:56Z:re_review",
-      "comment_id": "5469971568",
-      "comment_version_key": "5469971568:2026-08-30T16:44:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/94344#issuecomment-5469971568",
-      "comment_created_at": "2026-08-30T16:44:56Z",
-      "comment_updated_at": "2026-08-30T16:44:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 94344,
-      "author": "mushuiyu886",
-      "author_id": 266724580,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T16:45:38.410Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-94166",
-        "head_sha": "a22c9c903927feae3495bb15ec53938e050696b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111237:5469971302:2026-08-30T16:44:52Z:re_review",
       "comment_id": "5469971302",
@@ -33963,6 +33916,39 @@
         "kind": "pull_request",
         "branch": "jesse/stage-signal-indexes",
         "head_sha": "bd01f13aa001714b63ec48748df5db7f3d1227f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3530:5413278014:2026-08-30T22:01:57Z:clawsweeper_needs_human",
+      "comment_id": "5413278014",
+      "comment_version_key": "5413278014:2026-08-30T22:01:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3530#issuecomment-5413278014",
+      "comment_created_at": "2026-08-25T16:11:02Z",
+      "comment_updated_at": "2026-08-30T22:01:57Z",
+      "comment_body_sha256": "7a3551bc604375271b610dde6add5618d94382310414a01bec34a8b9aa846cdd",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3530,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The grouped update changes browser/server runtime, Convex, OIDC/JWT, rendering, and email-client packages without an observed after-update integration trace for their ClawHub consumer... (sha=5619fcaed96a82b220c4c1f7c2f9a9517e1784ec)",
+      "expected_head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-30T22:04:26.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-d4c9adcfe4",
+        "head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
         "cluster_id": null,
         "job_path": null
       }
