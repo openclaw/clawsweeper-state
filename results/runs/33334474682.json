@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133514",
+  "mode": "autonomous",
+  "run_id": "33334474682",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33334474682",
+  "head_sha": "a65acb1ee9e24be3863a9060a91f116f77d286e1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133514.md",
+  "published_at": "2026-08-30T21:01:08.854Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133514",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133514",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before any code or GitHub mutation: the checkout is at 14d2cf0f, while preflight requires main 661fedfe, which is absent locally and cannot be fetched because github.com DNS resolution fails. The mandatory sibling ../codex source is also absent and cannot be cloned. No current-main verdict, regression edit, PR branch, or test validation can therefore be claimed.",
+  "actions": [
+    {
+      "target": "#133514",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133514",
+      "candidate_fix": null,
+      "reason": "Rehydrate the checkout at preflight main 661fedfe (or a newer verified main), make ../codex available for the mandated direct inspection, then establish the failing owner-boundary regression before applying the narrow route reorder."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133514",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133514",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable, current-main executor, but no executable patch or PR may be produced from this stale, dependency-incomplete read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#133514",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
