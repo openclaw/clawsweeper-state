@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:23:21.388Z",
+  "updated_at": "2026-08-31T19:23:41.810Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132450:5479983063:2026-08-31T14:42:32Z:re_review",
-      "comment_id": "5479983063",
-      "comment_version_key": "5479983063:2026-08-31T14:42:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132450#issuecomment-5479983063",
-      "comment_created_at": "2026-08-31T14:42:32Z",
-      "comment_updated_at": "2026-08-31T14:42:32Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132450,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T14:43:26.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-controls",
-        "head_sha": "83ef16cb0039d09f80f79f59f8cb3288403d736d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5479983396:2026-08-31T14:42:34Z:re_review",
       "comment_id": "5479983396",
@@ -32888,6 +32841,39 @@
         "kind": "pull_request",
         "branch": "codex/install-mingit-basic-parsing",
         "head_sha": "def4acd113cdeb7a979ddcff5192d266f90c0677",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134413:5483333156:2026-08-31T19:22:46Z:clawsweeper_needs_human",
+      "comment_id": "5483333156",
+      "comment_version_key": "5483333156:2026-08-31T19:22:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134413#issuecomment-5483333156",
+      "comment_created_at": "2026-08-31T19:22:46Z",
+      "comment_updated_at": "2026-08-31T19:22:46Z",
+      "comment_body_sha256": "058a4ea16d311c52d64b863c788149b4845d680480320ca83ae92ee781673a9e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134413,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The head remains a draft and substantive checks are skipped; before landing, verify the attached WebKit before/after evidence and run exact-head UI validation after the PR is ready fo... (sha=8d7123c4ebd66dc8c6a53a04fd8ed2b3baffa70c)",
+      "expected_head_sha": "8d7123c4ebd66dc8c6a53a04fd8ed2b3baffa70c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:23:41.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-composer-default-icon",
+        "head_sha": "8d7123c4ebd66dc8c6a53a04fd8ed2b3baffa70c",
         "cluster_id": null,
         "job_path": null
       }
