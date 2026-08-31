@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:28:58.318Z",
+  "updated_at": "2026-08-31T19:29:17.598Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128454:5390001178:2026-08-31T14:48:19Z:clawsweeper_auto_repair",
-      "comment_id": "5390001178",
-      "comment_version_key": "5390001178:2026-08-31T14:48:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5390001178",
-      "comment_created_at": "2026-08-24T02:25:21Z",
-      "comment_updated_at": "2026-08-31T14:48:19Z",
-      "comment_body_sha256": "0bec4b72e0135b95a76dd3c15453140e6a0203f46f13d257cd64630b00ba925b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=845edb5b38a0070b9cfdd693e751aef9ece2007b)",
-      "expected_head_sha": "845edb5b38a0070b9cfdd693e751aef9ece2007b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T14:50:09.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media-reopened",
-        "head_sha": "845edb5b38a0070b9cfdd693e751aef9ece2007b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5472957012:2026-08-31T02:29:38Z:re_review",
       "comment_id": "5472957012",
@@ -32869,6 +32836,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133340:5483395360:2026-08-31T19:28:16Z:re_review",
+      "comment_id": "5483395360",
+      "comment_version_key": "5483395360:2026-08-31T19:28:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133340#issuecomment-5483395360",
+      "comment_created_at": "2026-08-31T19:28:16Z",
+      "comment_updated_at": "2026-08-31T19:28:16Z",
+      "comment_body_sha256": "65cf00b2573de960d4835b56bf6f2d8a0d42a36fdc42f25edad4427422f40562",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133340,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T19:29:14.753Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/code-bug-untagged-spill-flush-20260830",
+        "head_sha": "5820ed59acc3224fef2a32c6ee6ce418a5af9a3d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
