@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133757",
+  "mode": "autonomous",
+  "run_id": "33354161396",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33354161396",
+  "head_sha": "c377cfc04209464760ed5a1537fa693c71e77cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133757.md",
+  "published_at": "2026-08-31T03:50:15.429Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133757",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133757",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked in this read-only checkout. Source inspection found the group route call still receives the account-start config while only direct messages refresh it, but the required sibling ../codex source is absent and focused tests cannot start because tsx is not installed.",
+  "actions": [
+    {
+      "target": "#133757",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133757",
+      "candidate_fix": null,
+      "reason": "A writable executor must restore dependencies and the required ../codex source preflight, add and demonstrate the failing regression, then apply the narrow repair."
+    },
+    {
+      "target": "#121970",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133757",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation or revival."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133757",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133757",
+      "candidate_fix": null,
+      "reason": "Provide the executor a narrow, credited new-PR plan after it resolves the local preflight blockers."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

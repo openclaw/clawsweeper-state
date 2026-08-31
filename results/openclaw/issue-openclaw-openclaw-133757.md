@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133757"
 mode: "autonomous"
-run_id: "33353873056"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33353873056"
+run_id: "33354161396"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33354161396"
 head_sha: "c377cfc04209464760ed5a1537fa693c71e77cf5"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-08-31T03:41:36.924Z"
+published_at: "2026-08-31T03:50:15.429Z"
 canonical: "https://github.com/openclaw/openclaw/issues/133757"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/133757"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33353873056](https://github.com/openclaw/clawsweeper/actions/runs/33353873056)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33354161396](https://github.com/openclaw/clawsweeper/actions/runs/33354161396)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/133757
 
 ## Summary
 
-Current main retains the Feishu group binding freshness defect. A narrow three-file repair is identified, but implementation is blocked: this checkout is read-only, dependencies cannot install, and the mandatory sibling ../codex source checkout is absent.
+Implementation is blocked in this read-only checkout. Source inspection found the group route call still receives the account-start config while only direct messages refresh it, but the required sibling ../codex source is absent and focused tests cannot start because tsx is not installed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main retains the Feishu group binding freshness defect. A narrow three-f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133757 | fix_needed | planned | canonical | Canonical bug: use one current runtime configuration snapshot for the entire inbound turn before account/group admission and route selection. |
-| #121970 | keep_closed | skipped | related | Already closed; do not mutate closed context refs. |
-| cluster:issue-openclaw-openclaw-133757 | build_fix_artifact | blocked | canonical | Only implementation is blocked by the restricted checkout; the diagnosis and narrow repair plan remain actionable. |
+| #133757 | fix_needed | blocked | canonical | A writable executor must restore dependencies and the required ../codex source preflight, add and demonstrate the failing regression, then apply the narrow repair. |
+| #121970 | keep_closed | skipped | related | Already closed; no mutation or revival. |
+| cluster:issue-openclaw-openclaw-133757 | build_fix_artifact | planned | canonical | Provide the executor a narrow, credited new-PR plan after it resolves the local preflight blockers. |
 
 ## Needs Human
 
