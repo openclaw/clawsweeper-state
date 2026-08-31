@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T23:15:58.952Z",
+  "updated_at": "2026-08-31T23:16:04.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5365867722:2026-08-21T06:07:23Z:re_review",
-      "comment_id": "5365867722",
-      "comment_version_key": "5365867722:2026-08-21T06:07:23Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5365867722",
-      "comment_created_at": "2026-08-21T06:07:23Z",
-      "comment_updated_at": "2026-08-21T06:07:23Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:37:07.476Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5375479320:2026-08-21T21:13:30Z:re_review",
       "comment_id": "5375479320",
@@ -33104,6 +33077,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134529:5486055878:2026-08-31T23:15:16Z:clawsweeper_needs_human",
+      "comment_id": "5486055878",
+      "comment_version_key": "5486055878:2026-08-31T23:15:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134529#issuecomment-5486055878",
+      "comment_created_at": "2026-08-31T23:15:16Z",
+      "comment_updated_at": "2026-08-31T23:15:16Z",
+      "comment_body_sha256": "d6c1887f23296131a864c268f29ce61c490fb7872200fc8aee0daf13e01ad79c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134529,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally invalidates existing unified and plugin-SDK declaration cache stamps for affected selector environments, causing one safe rebuild rather than reuse of stale decl... (sha=7265d60b84b5fc1f240652ab9be82938d48cc720)",
+      "expected_head_sha": "7265d60b84b5fc1f240652ab9be82938d48cc720",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T23:16:04.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/build-cache-plugin-selection",
+        "head_sha": "7265d60b84b5fc1f240652ab9be82938d48cc720",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
