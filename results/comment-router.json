@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T00:00:28.659Z",
+  "updated_at": "2026-08-31T00:00:55.388Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133423:5470286849:2026-08-30T18:30:00Z:clawsweeper_needs_human",
-      "comment_id": "5470286849",
-      "comment_version_key": "5470286849:2026-08-30T18:30:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133423#issuecomment-5470286849",
-      "comment_created_at": "2026-08-30T17:48:17Z",
-      "comment_updated_at": "2026-08-30T18:30:00Z",
-      "comment_body_sha256": "74ba91183986ae8cef8ec50a4486531fcbf9438233556009171a4ce6d830d36e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133423,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Protected-tag validation now depends on two live GitHub reference reads; an unavailable, malformed, moved, or ambiguous reference intentionally stops release-candidate progression rat... (sha=287e6f660554579f652a1bb146baefab9cb64442)",
-      "expected_head_sha": "287e6f660554579f652a1bb146baefab9cb64442",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T18:43:12.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-2026.8.1-candidate-preflight-ref",
-        "head_sha": "287e6f660554579f652a1bb146baefab9cb64442",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133426:5470328072:2026-08-30T18:38:35Z:clawsweeper_needs_human",
       "comment_id": "5470328072",
@@ -33947,6 +33914,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clickclack:182:5472073393:2026-08-30T23:59:56Z:re_review",
+      "comment_id": "5472073393",
+      "comment_version_key": "5472073393:2026-08-30T23:59:56Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/182#issuecomment-5472073393",
+      "comment_created_at": "2026-08-30T23:59:56Z",
+      "comment_updated_at": "2026-08-30T23:59:56Z",
+      "comment_body_sha256": "f25ec2c432db5fa1c5b1c4bfef3207cf728cf9ad98adb1d25cd6ace9ae3aef4f",
+      "repo": "openclaw/clickclack",
+      "issue_number": 182,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T00:00:48.152Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f001-r2-body-deadline",
+        "head_sha": "72a1e6eeefc39a66ad2046f861536b564bcd7223",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
