@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:30:32.051Z",
+  "updated_at": "2026-08-31T17:31:07.987Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5478533052:2026-08-31T12:42:51Z:re_review",
-      "comment_id": "5478533052",
-      "comment_version_key": "5478533052:2026-08-31T12:42:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5478533052",
-      "comment_created_at": "2026-08-31T12:42:51Z",
-      "comment_updated_at": "2026-08-31T12:42:51Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T12:43:40.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-roster",
-        "head_sha": "2ade2c7c1738cbb44dc2e6ab6dbd716060ad64d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5478533061:2026-08-31T12:42:52Z:re_review",
       "comment_id": "5478533061",
@@ -33073,6 +33026,39 @@
         "kind": "pull_request",
         "branch": "openclaw/find-session-about-x-video-web-ui-feature",
         "head_sha": "c9a7d8a439e820e3c4e52154c21e9f7917457420",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134032:5476927295:2026-08-31T17:26:45Z:clawsweeper_needs_human",
+      "comment_id": "5476927295",
+      "comment_version_key": "5476927295:2026-08-31T17:26:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5476927295",
+      "comment_created_at": "2026-08-31T10:17:36Z",
+      "comment_updated_at": "2026-08-31T17:26:45Z",
+      "comment_body_sha256": "bbe1437bea60a02905b65e070565d9b0b11980a15a29ec1782c21ca63ecc58d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The inspected proof uses a recording mock Slack client and direct handler calls, not an authenticated Slack run or an ephemeral Gatewa...; Review finding: [P1] Guard bookmark mutations with the cross-context policy — src/channels/plugins/message-action-names.ts:27 - [medium] Bookmark writes bypass cross-context restr... (sha=e1f75c2b7500251cb9a4185a8be09a28cdb76f85)",
+      "expected_head_sha": "e1f75c2b7500251cb9a4185a8be09a28cdb76f85",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T17:31:07.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-channel-bookmarks",
+        "head_sha": "e1f75c2b7500251cb9a4185a8be09a28cdb76f85",
         "cluster_id": null,
         "job_path": null
       }
