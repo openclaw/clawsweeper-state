@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T15:19:02.665Z",
+  "updated_at": "2026-08-31T15:19:26.274Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134040:5477055914:2026-08-31T10:48:16Z:clawsweeper_needs_human",
-      "comment_id": "5477055914",
-      "comment_version_key": "5477055914:2026-08-31T10:48:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134040#issuecomment-5477055914",
-      "comment_created_at": "2026-08-31T10:30:20Z",
-      "comment_updated_at": "2026-08-31T10:48:16Z",
-      "comment_body_sha256": "a1b991cedbe01214486d6ae266da6d5918465458dcb22f09e6b0c13fd9feb923",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134040,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is gatewayStatusCommand, reached from the registered probe action, but supplied terminal output calls tha... (sha=0c4d9e6a193d1e67ae00ad3ea3144bbb097d7e3d)",
-      "expected_head_sha": "0c4d9e6a193d1e67ae00ad3ea3144bbb097d7e3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:49:44.038Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-probe-blank-timeout-066",
-        "head_sha": "0c4d9e6a193d1e67ae00ad3ea3144bbb097d7e3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134049:5477257357:2026-08-31T10:48:59Z:clawsweeper_needs_human",
       "comment_id": "5477257357",
@@ -32938,6 +32905,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134189:5480436406:2026-08-31T15:18:46Z:re_review",
+      "comment_id": "5480436406",
+      "comment_version_key": "5480436406:2026-08-31T15:18:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134189#issuecomment-5480436406",
+      "comment_created_at": "2026-08-31T15:18:46Z",
+      "comment_updated_at": "2026-08-31T15:18:46Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134189,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T15:19:24.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openclaw-team-window-stuck-after-updates",
+        "head_sha": "2b0f76076ac83e290b7635446d614b17158089e3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
