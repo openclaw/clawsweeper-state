@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:36:53.634Z",
+  "updated_at": "2026-08-31T07:37:14.009Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:188:5473383021:2026-08-31T03:54:26Z:clawsweeper_needs_human",
-      "comment_id": "5473383021",
-      "comment_version_key": "5473383021:2026-08-31T03:54:26Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/188#issuecomment-5473383021",
-      "comment_created_at": "2026-08-31T03:37:26Z",
-      "comment_updated_at": "2026-08-31T03:54:26Z",
-      "comment_body_sha256": "8f12c75c7e6a00bd8196caecddd419e3dbecb2194797f20db6207fe92e5f4d79",
-      "repo": "openclaw/clickclack",
-      "issue_number": 188,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head still has the Playwright E2E check in progress; merge should wait for that exact-head result and for the draft PR to be marked ready. (sha=d1362ff81cfdece5a28cf2994f81f239d62707e1)",
-      "expected_head_sha": "d1362ff81cfdece5a28cf2994f81f239d62707e1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T03:55:09.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/direct-message-selection",
-        "head_sha": "d1362ff81cfdece5a28cf2994f81f239d62707e1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133758:5473337318:2026-08-31T03:56:36Z:clawsweeper_needs_human",
       "comment_id": "5473337318",
@@ -32482,6 +32449,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133778:5475254726:2026-08-31T07:36:27Z:re_review",
+      "comment_id": "5475254726",
+      "comment_version_key": "5475254726:2026-08-31T07:36:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133778#issuecomment-5475254726",
+      "comment_created_at": "2026-08-31T07:36:27Z",
+      "comment_updated_at": "2026-08-31T07:36:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133778,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T07:37:11.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-ci-timings-recent-push-filter-20260831",
+        "head_sha": "ac159a1a1c6dd5bf5228f61eb048bab2490e57e7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
