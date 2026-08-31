@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134201",
+  "mode": "autonomous",
+  "run_id": "33406466221",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33406466221",
+  "head_sha": "659dee73d0706fee9776f7986d9861e82b897d24",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134201.md",
+  "published_at": "2026-08-31T15:35:32.416Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134201",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134201",
+  "canonical_pr": null,
+  "summary": "#134201 is a source-proven installer bug on main 62de64b62192416a19bd6b4c3714ec73b5aa1aa2. A narrow two-file repair is planned, but this worker cannot write the regression or branch: the checkout is read-only, dependencies are absent, and the required sibling ../codex source is unavailable for the repository’s mandatory Codex gate.",
+  "actions": [
+    {
+      "target": "#134201",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "Implement on the designated branch after provisioning a writable checkout, dependencies, and the mandatory ../codex sibling source; no product or security decision is required."
+    },
+    {
+      "target": "#82305",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no action."
+    },
+    {
+      "target": "#123822",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "Closed historical context only; no action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134201",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "Narrow bug-only repair artifact ready for the deterministic executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134201",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "No existing implementation PR is hydrated; a new narrow PR is the designated canonical path."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
