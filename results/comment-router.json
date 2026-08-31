@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:30:23.808Z",
+  "updated_at": "2026-08-31T12:30:42.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133800:5476277265:2026-08-31T09:16:07Z:re_review",
-      "comment_id": "5476277265",
-      "comment_version_key": "5476277265:2026-08-31T09:16:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133800#issuecomment-5476277265",
-      "comment_created_at": "2026-08-31T09:16:07Z",
-      "comment_updated_at": "2026-08-31T09:16:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133800,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T09:16:47.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-scaffold-public-sdk-main",
-        "head_sha": "116bf0ba557b04e7c57f0ece1514bcd7c8a328d5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133989:5476276682:2026-08-31T09:16:04Z:clawsweeper_needs_human",
       "comment_id": "5476276682",
@@ -32305,6 +32258,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134095:5478377396:2026-08-31T12:29:49Z:clawsweeper_needs_human",
+      "comment_id": "5478377396",
+      "comment_version_key": "5478377396:2026-08-31T12:29:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134095#issuecomment-5478377396",
+      "comment_created_at": "2026-08-31T12:29:49Z",
+      "comment_updated_at": "2026-08-31T12:29:49Z",
+      "comment_body_sha256": "aa99f939146d856d5bac7ae7f7bd374cd39e0c6233c42b766ab65efb9d2429c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134095,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed behavior is test-fixture execution: the PR body reports focused suites and a temporary observer, but provides no inspectable after-... (sha=5f5d9ceeab0515583aa5decbc5731edec8a34984)",
+      "expected_head_sha": "5f5d9ceeab0515583aa5decbc5731edec8a34984",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:30:42.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-audit-provider-fixtures",
+        "head_sha": "5f5d9ceeab0515583aa5decbc5731edec8a34984",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
