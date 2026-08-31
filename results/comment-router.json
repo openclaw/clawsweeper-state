@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-31T08:24:20.543Z",
+  "updated_at": "2026-08-31T08:25:19.537Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133499:5473555988:2026-08-31T04:06:22Z:automerge",
-      "comment_id": "5473555988",
-      "comment_version_key": "5473555988:2026-08-31T04:06:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133499#issuecomment-5473555988",
-      "comment_created_at": "2026-08-31T04:06:22Z",
-      "comment_updated_at": "2026-08-31T04:06:22Z",
-      "comment_body_sha256": "bfad984c3915884a9b674e5aa0f48d6c7305e0f9f4a6fc73f048c001a95f3778",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133499,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T04:10:06.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/imessage-threaded-reply-service",
-        "head_sha": "fa318748d95009c745a66f862f389efe9c852e29",
-        "cluster_id": "automerge-openclaw-openclaw-133499",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133499.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133499:5471077308:2026-08-31T04:09:03Z:clawsweeper_needs_human",
       "comment_id": "5471077308",
@@ -32919,6 +32866,39 @@
         "kind": "pull_request",
         "branch": "codex/update-stable-upgrade-stress",
         "head_sha": "fc7b0c51f2cc83b0a05612f2a25dafde72ed956d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133728:5472939946:2026-08-31T08:23:54Z:clawsweeper_needs_human",
+      "comment_id": "5472939946",
+      "comment_version_key": "5472939946:2026-08-31T08:23:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133728#issuecomment-5472939946",
+      "comment_created_at": "2026-08-31T02:26:44Z",
+      "comment_updated_at": "2026-08-31T08:23:54Z",
+      "comment_body_sha256": "1694aa02a77dfacf0e8e689671b57860e0a771b46f1388891d24ee0ab4c1b848",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR supplies real cloud and earlier child-effect evidence, but its own body states that the final a...; Review finding: [medium] Prove the final authority fence on the exact head — src/gateway/worker-environments/placement-turn-claim-events.ts:99 (sha=6766b029f0886769d9c376413318a2c22c1dbe84)",
+      "expected_head_sha": "6766b029f0886769d9c376413318a2c22c1dbe84",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T08:25:19.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-session-stress-recovery",
+        "head_sha": "6766b029f0886769d9c376413318a2c22c1dbe84",
         "cluster_id": null,
         "job_path": null
       }
