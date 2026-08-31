@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T09:27:26.171Z",
+  "updated_at": "2026-08-31T09:27:40.108Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133563:5472506269:2026-08-31T01:15:17Z:re_review",
-      "comment_id": "5472506269",
-      "comment_version_key": "5472506269:2026-08-31T01:15:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133563#issuecomment-5472506269",
-      "comment_created_at": "2026-08-31T01:15:17Z",
-      "comment_updated_at": "2026-08-31T01:15:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133563,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T05:17:24.874Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133563:5472520002:2026-08-31T01:17:24Z:re_review",
       "comment_id": "5472520002",
@@ -33196,6 +33169,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134007:5476395183:2026-08-31T09:26:41Z:clawsweeper_auto_repair",
+      "comment_id": "5476395183",
+      "comment_version_key": "5476395183:2026-08-31T09:26:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134007#issuecomment-5476395183",
+      "comment_created_at": "2026-08-31T09:26:41Z",
+      "comment_updated_at": "2026-08-31T09:26:41Z",
+      "comment_body_sha256": "f501265e71e1c5e72cf628c91162f1051cd437b62df839fb0012b3344d7ba0ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134007,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c20b01e5a4aa6c7d571a32c6305dad91713e6d0e)",
+      "expected_head_sha": "c20b01e5a4aa6c7d571a32c6305dad91713e6d0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T09:27:40.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-heartbeat-stability-scans",
+        "head_sha": "c20b01e5a4aa6c7d571a32c6305dad91713e6d0e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
