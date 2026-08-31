@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:34:32.241Z",
+  "updated_at": "2026-08-31T03:35:05.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133381:5469915704:2026-08-30T23:04:00Z:clawsweeper_auto_repair",
-      "comment_id": "5469915704",
-      "comment_version_key": "5469915704:2026-08-30T23:04:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133381#issuecomment-5469915704",
-      "comment_created_at": "2026-08-30T16:34:57Z",
-      "comment_updated_at": "2026-08-30T23:04:00Z",
-      "comment_body_sha256": "8a7d57b135a5d7bfacd0a6a921197ca68985203d22b28f5d07eb8f88c7c55a2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133381,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0c84a093f1ec4498e690a422436d04a38f19494d)",
-      "expected_head_sha": "0c84a093f1ec4498e690a422436d04a38f19494d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T23:09:06.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/classify-socat-port-listener",
-        "head_sha": "0c84a093f1ec4498e690a422436d04a38f19494d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132723:5470928092:2026-08-30T23:04:09Z:clawsweeper_needs_human",
       "comment_id": "5470928092",
@@ -33196,6 +33163,53 @@
         "kind": "pull_request",
         "branch": "fix/issue-131770-doctor-orphan-heartbeat-transcripts",
         "head_sha": "416847a994214945377cbfe4eb339d68e9cf9f01",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133163:5473363826:2026-08-31T03:34:17Z:re_review",
+      "comment_id": "5473363826",
+      "comment_version_key": "5473363826:2026-08-31T03:34:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133163#issuecomment-5473363826",
+      "comment_created_at": "2026-08-31T03:34:17Z",
+      "comment_updated_at": "2026-08-31T03:34:17Z",
+      "comment_body_sha256": "4d266fccc9ff5ac74cd2afbf5c2b9213ef1bdb516896aae6ab6d69465e8f39fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133163,
+      "author": "openclaw-vm-hampbot",
+      "author_id": 311728453,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T03:35:01.866Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/agent-safe-start-dreaming",
+        "head_sha": "816d6d4d28d87135cd82b85abce4f7b172e22069",
         "cluster_id": null,
         "job_path": null
       },
