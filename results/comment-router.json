@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:55:58.786Z",
+  "updated_at": "2026-08-31T04:56:40.694Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3285:5472439827:2026-08-31T01:04:11Z:re_review",
-      "comment_id": "5472439827",
-      "comment_version_key": "5472439827:2026-08-31T01:04:11Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5472439827",
-      "comment_created_at": "2026-08-31T01:04:11Z",
-      "comment_updated_at": "2026-08-31T01:04:11Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3285,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T01:04:56.868Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/integrate-krill-switch-flags",
-        "head_sha": "155769e513543bcc1b08d6ee2ef85c6be20d4e72",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133563:5472440378:2026-08-31T01:04:16Z:re_review",
       "comment_id": "5472440378",
@@ -32473,6 +32426,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118282:5160760627:2026-08-31T04:55:39Z:clawsweeper_needs_human",
+      "comment_id": "5160760627",
+      "comment_version_key": "5160760627:2026-08-31T04:55:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118282#issuecomment-5160760627",
+      "comment_created_at": "2026-08-02T23:01:13Z",
+      "comment_updated_at": "2026-08-31T04:55:39Z",
+      "comment_body_sha256": "eab9f5312cd9b7a01f9b457bb9258e7e22300bb500c24a84adf102c20eef06d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118282,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed owner imports exec authorization policy into shared SQLite, but the reviewed body only asserts a re...; Review finding: [medium] Confirm legacy-policy recovery authority — src/infra/state-migrations.exec-approvals.ts:69 (sha=3301b6ddcc554e3b062318f12e895122e7411c6e)",
+      "expected_head_sha": "3301b6ddcc554e3b062318f12e895122e7411c6e",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T04:56:40.694Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-118242",
+        "head_sha": "3301b6ddcc554e3b062318f12e895122e7411c6e",
+        "cluster_id": "automerge-openclaw-openclaw-118282",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-118282.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
