@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T15:32:19.174Z",
+  "updated_at": "2026-08-31T15:32:25.777Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134045:5477336847:2026-08-31T10:56:20Z:clawsweeper_needs_human",
-      "comment_id": "5477336847",
-      "comment_version_key": "5477336847:2026-08-31T10:56:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134045#issuecomment-5477336847",
-      "comment_created_at": "2026-08-31T10:56:20Z",
-      "comment_updated_at": "2026-08-31T10:56:20Z",
-      "comment_body_sha256": "079bb98f7a1e9fe8352d2bf7636f44b0efdf7cc88cc67ec99758b76444c4a00d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134045,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Windows watcher test changes process.platform on Linux, while node:path remains POSIX there; it does not prove real Windows 8.3 path parsing and separator behavior. (sha=119877c19be00eeb8d5fdc7ca1d3fe983fb2e3c4)",
-      "expected_head_sha": "119877c19be00eeb8d5fdc7ca1d3fe983fb2e3c4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T11:03:49.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release81-forward-main",
-        "head_sha": "119877c19be00eeb8d5fdc7ca1d3fe983fb2e3c4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134056:5477351919:2026-08-31T10:57:57Z:clawsweeper_needs_human",
       "comment_id": "5477351919",
@@ -33166,6 +33133,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T15:32:19.174Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134220:5480593519:2026-08-31T15:31:35Z:clawsweeper_needs_human",
+      "comment_id": "5480593519",
+      "comment_version_key": "5480593519:2026-08-31T15:31:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134220#issuecomment-5480593519",
+      "comment_created_at": "2026-08-31T15:31:35Z",
+      "comment_updated_at": "2026-08-31T15:31:35Z",
+      "comment_body_sha256": "e6b1cb12502ce6f7567d1c6206dda170dd8c14e0d67d0bec2caace15b39d2d26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix has a net production increase of 93 lines. The added bounded record is justified by LINE supplying only a quoted identifier and by direct messages lacking a group-history... (sha=a1e071b78ef0b03470eb698c38f9f7ae7822f61f)",
+      "expected_head_sha": "a1e071b78ef0b03470eb698c38f9f7ae7822f61f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T15:32:25.777Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-quoted-message-context",
+        "head_sha": "a1e071b78ef0b03470eb698c38f9f7ae7822f61f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
