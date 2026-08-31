@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T09:10:25.793Z",
+  "updated_at": "2026-08-31T09:10:29.449Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133781:5473735559:2026-08-31T05:00:09Z:clawsweeper_needs_human",
-      "comment_id": "5473735559",
-      "comment_version_key": "5473735559:2026-08-31T05:00:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133781#issuecomment-5473735559",
-      "comment_created_at": "2026-08-31T04:30:02Z",
-      "comment_updated_at": "2026-08-31T05:00:09Z",
-      "comment_body_sha256": "75b1d999aa333c23ea63bdb688d5b8e34415c84e57fe2cc55abf39eff3c820df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133781,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing scripts that explicitly pass an empty timeout will now exit with an error rather than silently use 10,000 ms; omission remains unchanged. (sha=eb18f809b653fae0d00cb3a93bb0343c3522f5bf)",
-      "expected_head_sha": "eb18f809b653fae0d00cb3a93bb0343c3522f5bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T05:14:17.445Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channels-capabilities-blank-timeout",
-        "head_sha": "eb18f809b653fae0d00cb3a93bb0343c3522f5bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133791:5473790275:2026-08-31T05:06:45Z:clawsweeper_needs_human",
       "comment_id": "5473790275",
@@ -32788,6 +32755,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T09:10:25.793Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133772:5473598641:2026-08-31T09:00:50Z:clawsweeper_needs_human",
+      "comment_id": "5473598641",
+      "comment_version_key": "5473598641:2026-08-31T09:00:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133772#issuecomment-5473598641",
+      "comment_created_at": "2026-08-31T04:12:12Z",
+      "comment_updated_at": "2026-08-31T09:00:50Z",
+      "comment_body_sha256": "efe887d22fac5d4dd78a4218a9fc836d0e1adcec707fd7aa2692f619b370de71",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133772,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still incomplete, so the package refresh and its release-tool consumers have not yet cleared the repository’s required merge gate. (sha=1a5a91c575b8cbf0ae750f83d80f077fea817396)",
+      "expected_head_sha": "1a5a91c575b8cbf0ae750f83d80f077fea817396",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T09:10:29.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/deps-seven-day-refresh-20260830",
+        "head_sha": "1a5a91c575b8cbf0ae750f83d80f077fea817396",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
