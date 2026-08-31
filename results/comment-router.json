@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:55:00.138Z",
+  "updated_at": "2026-08-31T12:55:26.976Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133370:5476575504:2026-08-31T09:42:54Z:re_review",
-      "comment_id": "5476575504",
-      "comment_version_key": "5476575504:2026-08-31T09:42:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133370#issuecomment-5476575504",
-      "comment_created_at": "2026-08-31T09:42:54Z",
-      "comment_updated_at": "2026-08-31T09:42:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133370,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T09:43:37.833Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feature-lobster-structured-input",
-        "head_sha": "71cf337ab14d479119b70ee1e2ecc9858857056f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3543:5454855424:2026-08-31T09:43:23Z:clawsweeper_needs_human",
       "comment_id": "5454855424",
@@ -31902,6 +31855,39 @@
         "kind": "pull_request",
         "branch": "jesse/provider-profile-roster",
         "head_sha": "2ade2c7c1738cbb44dc2e6ab6dbd716060ad64d6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134111:5478662111:2026-08-31T12:54:39Z:clawsweeper_needs_human",
+      "comment_id": "5478662111",
+      "comment_version_key": "5478662111:2026-08-31T12:54:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134111#issuecomment-5478662111",
+      "comment_created_at": "2026-08-31T12:54:39Z",
+      "comment_updated_at": "2026-08-31T12:54:39Z",
+      "comment_body_sha256": "d0ccfa9e4f599951594b2832759aadf3f91f53359a40a57c6c5a94f3993a2ce6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134111,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is fallback-state preparation flowing through embedded execution; the PR body reports focused Vitest runs, but supplies no re... (sha=8c5c762a67429070d5fc64c773e5da6f9094c8da)",
+      "expected_head_sha": "8c5c762a67429070d5fc64c773e5da6f9094c8da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:55:26.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fallback-config-truth",
+        "head_sha": "8c5c762a67429070d5fc64c773e5da6f9094c8da",
         "cluster_id": null,
         "job_path": null
       }
