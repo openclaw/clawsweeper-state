@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T14:12:24.716Z",
+  "updated_at": "2026-08-31T14:12:57.575Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5050373477:2026-07-22T19:12:25Z:re_review",
-      "comment_id": "5050373477",
-      "comment_version_key": "5050373477:2026-07-22T19:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5050373477",
-      "comment_created_at": "2026-07-22T19:12:25Z",
-      "comment_updated_at": "2026-07-22T19:12:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:38:19.972Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5053280625:2026-07-23T01:19:19Z:re_review",
       "comment_id": "5053280625",
@@ -32127,6 +32100,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134168:5479595443:2026-08-31T14:11:52Z:clawsweeper_needs_human",
+      "comment_id": "5479595443",
+      "comment_version_key": "5479595443:2026-08-31T14:11:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134168#issuecomment-5479595443",
+      "comment_created_at": "2026-08-31T14:11:52Z",
+      "comment_updated_at": "2026-08-31T14:11:52Z",
+      "comment_body_sha256": "defe05cb1b311f6961e68c1d0e348b2864826ec1e9a18104ece22bf6d6ff891a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the exact-redaction registry, reached by the normal logging/diagnostic path through redactSensitiveTex... (sha=ab645ea2ea411b7a65fa76c4421fc2c87a7d9a0f)",
+      "expected_head_sha": "ab645ea2ea411b7a65fa76c4421fc2c87a7d9a0f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T14:12:57.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-secret-registry-lazy-50b",
+        "head_sha": "ab645ea2ea411b7a65fa76c4421fc2c87a7d9a0f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
