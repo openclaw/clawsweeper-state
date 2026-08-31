@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134256",
+  "mode": "autonomous",
+  "run_id": "33417577446",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33417577446",
+  "head_sha": "0baa4dbb4d12a0ee9ba3092c3c63a806dd891d88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134256.md",
+  "published_at": "2026-08-31T17:31:31.278Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134256",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134256",
+  "canonical_pr": null,
+  "summary": "Current main contains the confirmed owner-boundary gap: roster normalization converts legacy agents.list items to agents.entries before Doctor compatibility migrations, but the memorySearch migration and its follow-up normalizers inspect only agents.list. Unknown-key cleanup then removes the retained entries.<id>.memorySearch. A narrow fix artifact is ready, but this read-only checkout cannot create the repair branch or execute pnpm: Corepack fails creating its cache on EROFS. The required sibling ../codex source is also absent and cannot be cloned in this sandbox.",
+  "actions": [
+    {
+      "target": "#134256",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134256",
+      "candidate_fix": null,
+      "reason": "Implementation and local regression proof require a writable executor checkout with the required sibling Codex source available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134256",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134256",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable deterministic executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
