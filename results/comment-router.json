@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:40:36.030Z",
+  "updated_at": "2026-08-31T17:40:53.998Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134110:5478633862:2026-08-31T12:52:03Z:clawsweeper_needs_human",
-      "comment_id": "5478633862",
-      "comment_version_key": "5478633862:2026-08-31T12:52:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134110#issuecomment-5478633862",
-      "comment_created_at": "2026-08-31T12:52:03Z",
-      "comment_updated_at": "2026-08-31T12:52:03Z",
-      "comment_body_sha256": "d4352807362d245413a6ecc080b66ea094d1f1cf5650928d2a16f485bac2ec46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134110,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Keeping the draft open without a rebase can mislead reviewers into treating an already-integrated CI fixture correction as pending work. (sha=73e81af46f1859a61b5b281755da492ad147139e)",
-      "expected_head_sha": "73e81af46f1859a61b5b281755da492ad147139e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T12:52:47.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-ci-agent-prompt-provider-handle",
-        "head_sha": "73e81af46f1859a61b5b281755da492ad147139e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3557:5472118822:2026-08-31T12:52:11Z:clawsweeper_auto_repair",
       "comment_id": "5472118822",
@@ -33093,6 +33060,53 @@
         "kind": "pull_request",
         "branch": "pollybot/fix-127403-migration-backup",
         "head_sha": "931a7eb1756f7ad46c0c9817dc18e8dc77401440",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133617:5482140823:2026-08-31T17:39:50Z:re_review",
+      "comment_id": "5482140823",
+      "comment_version_key": "5482140823:2026-08-31T17:39:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133617#issuecomment-5482140823",
+      "comment_created_at": "2026-08-31T17:39:50Z",
+      "comment_updated_at": "2026-08-31T17:39:50Z",
+      "comment_body_sha256": "94cd7676da9dc38d452aec82848f3b5915c34e4675d422e203be9cc2cd76bbb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133617,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T17:40:51.950Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-drift-registry-target-20260826",
+        "head_sha": "ec80791494ceebf6c92fe7ab7f31e3c9aabe0dff",
         "cluster_id": null,
         "job_path": null
       },
