@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:49:53.946Z",
+  "updated_at": "2026-08-31T04:50:35.028Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3107:5420136345:2026-08-26T03:24:09Z:re_review",
-      "comment_id": "5420136345",
-      "comment_version_key": "5420136345:2026-08-26T03:24:09Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3107#issuecomment-5420136345",
-      "comment_created_at": "2026-08-26T03:24:09Z",
-      "comment_updated_at": "2026-08-26T03:24:09Z",
-      "comment_body_sha256": "6a5cc03ab006f349b9574c940a9a02c55655e8a62e5a20723140ee9bbae82c31",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3107,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T01:02:01.616Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3107:5425008049:2026-08-26T12:05:51Z:re_review",
       "comment_id": "5425008049",
@@ -32477,6 +32450,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133499:5473869562:2026-08-31T04:49:30Z:maintainer_approve_automerge",
+      "comment_id": "5473869562",
+      "comment_version_key": "5473869562:2026-08-31T04:49:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133499#issuecomment-5473869562",
+      "comment_created_at": "2026-08-31T04:49:30Z",
+      "comment_updated_at": "2026-08-31T04:49:30Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133499,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": "fa318748d95009c745a66f862f389efe9c852e29",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T04:50:35.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/imessage-threaded-reply-service",
+        "head_sha": "fa318748d95009c745a66f862f389efe9c852e29",
+        "cluster_id": "automerge-openclaw-openclaw-133499",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133499.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
