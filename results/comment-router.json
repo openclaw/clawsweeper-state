@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T05:33:30.532Z",
+  "updated_at": "2026-08-31T05:33:42.570Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5472692841:2026-08-31T01:46:45Z:re_review",
-      "comment_id": "5472692841",
-      "comment_version_key": "5472692841:2026-08-31T01:46:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5472692841",
-      "comment_created_at": "2026-08-31T01:46:45Z",
-      "comment_updated_at": "2026-08-31T01:46:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T01:47:23.590Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media-reopened",
-        "head_sha": "15e16925a073043b7699b0e7060b3d65587f1961",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/fs-safe:181:5472696098:2026-08-31T01:47:16Z:automerge",
       "comment_id": "5472696098",
@@ -32025,6 +31978,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T05:33:30.532Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133694:5472617566:2026-08-31T05:30:53Z:clawsweeper_auto_repair",
+      "comment_id": "5472617566",
+      "comment_version_key": "5472617566:2026-08-31T05:30:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133694#issuecomment-5472617566",
+      "comment_created_at": "2026-08-31T01:34:08Z",
+      "comment_updated_at": "2026-08-31T05:30:53Z",
+      "comment_body_sha256": "70930743b381a536ecfa0db53825c38d12807c59008c4ba9df45287c8de36b53",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133694,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2b8edeba53584cadcfbaf7921d2beb09697dfe4c)",
+      "expected_head_sha": "2b8edeba53584cadcfbaf7921d2beb09697dfe4c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T05:33:42.570Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-115354-unbind-on-sdk-delete",
+        "head_sha": "2b8edeba53584cadcfbaf7921d2beb09697dfe4c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
