@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T06:11:38.519Z",
+  "updated_at": "2026-08-31T06:12:02.192Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132628:5472868367:2026-08-31T02:15:17Z:re_review",
-      "comment_id": "5472868367",
-      "comment_version_key": "5472868367:2026-08-31T02:15:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132628#issuecomment-5472868367",
-      "comment_created_at": "2026-08-31T02:15:17Z",
-      "comment_updated_at": "2026-08-31T02:15:17Z",
-      "comment_body_sha256": "f1343c86666032818486a8c68ff82b607e5468ff996be43131be0c2acc537b4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132628,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T02:15:56.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-join-intro-room-admission",
-        "head_sha": "6ed9662fc804bdb2af2bfea73949ab721d1b2870",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3305:5472783938:2026-08-31T02:15:13Z:clawsweeper_needs_human",
       "comment_id": "5472783938",
@@ -32336,6 +32289,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133841:5474462292:2026-08-31T06:11:15Z:clawsweeper_needs_human",
+      "comment_id": "5474462292",
+      "comment_version_key": "5474462292:2026-08-31T06:11:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133841#issuecomment-5474462292",
+      "comment_created_at": "2026-08-31T06:11:15Z",
+      "comment_updated_at": "2026-08-31T06:11:15Z",
+      "comment_body_sha256": "0fbfed1c7b725c82fe493fb66909ea7acd45d90d49e2363300533b53bd5cf26c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133841,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; merge only after the required checks complete successfully. (sha=39111293924e464735e402084c88ae6eca83d42a)",
+      "expected_head_sha": "39111293924e464735e402084c88ae6eca83d42a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T06:12:02.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-help-metadata-20260830",
+        "head_sha": "39111293924e464735e402084c88ae6eca83d42a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
