@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T00:09:14.727Z",
+  "updated_at": "2026-08-31T00:09:16.277Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133446:5470734520:2026-08-30T19:18:44Z:re_review",
-      "comment_id": "5470734520",
-      "comment_version_key": "5470734520:2026-08-30T19:18:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133446#issuecomment-5470734520",
-      "comment_created_at": "2026-08-30T19:18:44Z",
-      "comment_updated_at": "2026-08-30T19:18:44Z",
-      "comment_body_sha256": "b3b5593edc7f4d57084a9e045d62a6f67c3716470b351f40d076d94bc00b1aba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133446,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T19:19:22.871Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/importer-performance-pass-six",
-        "head_sha": "27e94db402d56a298dadd56c5f5a8d033cd57948",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131901:5470737706:2026-08-30T19:19:25Z:re_review",
       "comment_id": "5470737706",
@@ -33922,6 +33875,39 @@
         "kind": "pull_request",
         "branch": "jesse/meaningful-traffic-signals",
         "head_sha": "b2fe5c577a4d424b54ab5b070ff8096fdadc357c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3557:5472118822:2026-08-31T00:08:35Z:clawsweeper_needs_human",
+      "comment_id": "5472118822",
+      "comment_version_key": "5472118822:2026-08-31T00:08:35Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3557#issuecomment-5472118822",
+      "comment_created_at": "2026-08-31T00:08:35Z",
+      "comment_updated_at": "2026-08-31T00:08:35Z",
+      "comment_body_sha256": "1fb9ca5038ee662e62bef2ad0e086089f109c299d7d1166745e8f3a44167734f",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3557,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The uniform title-first hero treatment is an intentional visual-policy choice that needs maintainer approval before landing. (sha=a01a2b88149da380ce29b6680a7b195527262329)",
+      "expected_head_sha": "a01a2b88149da380ce29b6680a7b195527262329",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T00:09:16.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/3556-hide-skill-detail-icon",
+        "head_sha": "a01a2b88149da380ce29b6680a7b195527262329",
         "cluster_id": null,
         "job_path": null
       }
