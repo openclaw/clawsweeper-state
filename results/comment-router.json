@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:19:23.911Z",
+  "updated_at": "2026-08-31T04:20:28.135Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132407:5472204942:2026-08-31T00:22:08Z:re_review",
-      "comment_id": "5472204942",
-      "comment_version_key": "5472204942:2026-08-31T00:22:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132407#issuecomment-5472204942",
-      "comment_created_at": "2026-08-31T00:22:08Z",
-      "comment_updated_at": "2026-08-31T00:22:08Z",
-      "comment_body_sha256": "f63969d656ec3b94163d695bc04f6696d31ad337b8955bb2894e861ee18d530b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132407,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T00:22:49.530Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/when-i-switch-the-workspace-security-setting-it-doesn-t-seem-to",
-        "head_sha": "a8685cc618df61a356f6726319c85967dcd183b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133323:5472208667:2026-08-31T00:22:50Z:re_review",
       "comment_id": "5472208667",
@@ -32406,6 +32359,39 @@
         "kind": "pull_request",
         "branch": "codex/test-fs-safe-env-isolation",
         "head_sha": "b41153f3a16213bf2f6a2aef89a4fd058b45911a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3559:5472376091:2026-08-31T04:18:45Z:clawsweeper_needs_human",
+      "comment_id": "5472376091",
+      "comment_version_key": "5472376091:2026-08-31T04:18:45Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3559#issuecomment-5472376091",
+      "comment_created_at": "2026-08-31T00:52:57Z",
+      "comment_updated_at": "2026-08-31T04:18:45Z",
+      "comment_body_sha256": "42b4087c5d0a480eceb128fd66a2dcc6169165b645d24ffb03c38c041ac9580b",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3559,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - The current member-authored PR is cleanly mergeable, proof-positive, and has no mechanical repair to dispatch. (sha=a0a01990925467bc08049b27d854468bda41a6ff)",
+      "expected_head_sha": "a0a01990925467bc08049b27d854468bda41a6ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:20:28.135Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/3558-mobile-skill-detail",
+        "head_sha": "a0a01990925467bc08049b27d854468bda41a6ff",
         "cluster_id": null,
         "job_path": null
       }
