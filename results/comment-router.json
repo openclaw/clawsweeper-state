@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:55:48.371Z",
+  "updated_at": "2026-08-31T07:56:04.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5305653939:2026-08-16T04:07:56Z:re_review",
-      "comment_id": "5305653939",
-      "comment_version_key": "5305653939:2026-08-16T04:07:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5305653939",
-      "comment_created_at": "2026-08-16T04:07:56Z",
-      "comment_updated_at": "2026-08-16T04:07:56Z",
-      "comment_body_sha256": "0ab1c4db0b3fdac059995c6d4efb58607b90436cbc349d4240be04d293302d5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T04:05:12.875Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5305686137:2026-08-16T04:18:02Z:re_review",
       "comment_id": "5305686137",
@@ -32393,6 +32366,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:252:5475112347:2026-08-31T07:55:23Z:clawsweeper_needs_human",
+      "comment_id": "5475112347",
+      "comment_version_key": "5475112347:2026-08-31T07:55:23Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/252#issuecomment-5475112347",
+      "comment_created_at": "2026-08-31T07:22:03Z",
+      "comment_updated_at": "2026-08-31T07:55:23Z",
+      "comment_body_sha256": "ced039a0b524f8332882956d4584320aee5f1d424cf26529af41614c446bd8c3",
+      "repo": "openclaw/imsg",
+      "issue_number": 252,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing JSON or RPC consumers that treated a blank list name as a sentinel will instead receive the raw identifier; the raw stored title remains available through display_name. (sha=74c699758cf148b46976e004324590697a2868e9)",
+      "expected_head_sha": "74c699758cf148b46976e004324590697a2868e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T07:56:04.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "triage/imsg-20260830",
+        "head_sha": "74c699758cf148b46976e004324590697a2868e9",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
