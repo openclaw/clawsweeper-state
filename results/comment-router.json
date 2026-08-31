@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T15:30:39.005Z",
+  "updated_at": "2026-08-31T15:31:57.828Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133920:5475189724:2026-08-31T10:56:34Z:clawsweeper_needs_human",
-      "comment_id": "5475189724",
-      "comment_version_key": "5475189724:2026-08-31T10:56:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133920#issuecomment-5475189724",
-      "comment_created_at": "2026-08-31T07:30:04Z",
-      "comment_updated_at": "2026-08-31T10:56:34Z",
-      "comment_body_sha256": "411eb33191793bcb22e43435c5cb1b5d291b313af57b0adb425eb524aa9787b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133920,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persistence semantics for existing legacy rosters and fixed session-store ownership; it should land only after exact-head CI confirms the covered upgrade paths. (sha=8501f518dfe4d95c3da1d8b1ea4599aa9d76d1cc)",
-      "expected_head_sha": "8501f518dfe4d95c3da1d8b1ea4599aa9d76d1cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T11:03:49.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-stable-upgrade-stress",
-        "head_sha": "8501f518dfe4d95c3da1d8b1ea4599aa9d76d1cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133925:5476067317:2026-08-31T11:00:35Z:clawsweeper_auto_repair",
       "comment_id": "5476067317",
@@ -33170,6 +33137,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129402:5480587257:2026-08-31T15:31:04Z:re_review",
+      "comment_id": "5480587257",
+      "comment_version_key": "5480587257:2026-08-31T15:31:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129402#issuecomment-5480587257",
+      "comment_created_at": "2026-08-31T15:31:04Z",
+      "comment_updated_at": "2026-08-31T15:31:04Z",
+      "comment_body_sha256": "66e4374c158ebb90932108334810baad0b2496074270a05992aa3ea913e2115b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129402,
+      "author": "ashawwal",
+      "author_id": 62305104,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T15:31:48.903Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-authenticated-hook-context",
+        "head_sha": "5c44ab74b0f51932282a0f0ced69d5a083e5c492",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
