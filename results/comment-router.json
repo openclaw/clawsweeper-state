@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:07:20.485Z",
+  "updated_at": "2026-08-31T12:07:28.116Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132437:5476010563:2026-08-31T08:49:48Z:re_review",
-      "comment_id": "5476010563",
-      "comment_version_key": "5476010563:2026-08-31T08:49:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132437#issuecomment-5476010563",
-      "comment_created_at": "2026-08-31T08:49:48Z",
-      "comment_updated_at": "2026-08-31T08:49:48Z",
-      "comment_body_sha256": "f143734b6ba8fd57c4edaa41fb681589c44295f480407fb58c056cf5228be660",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132437,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T08:55:21.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-code-mode-phase1-gaps-131340",
-        "head_sha": "3fa6fc4f8476c2e6f66add30511725067cc97b11",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133980:5476058512:2026-08-31T08:54:30Z:clawsweeper_needs_human",
       "comment_id": "5476058512",
@@ -32053,6 +32006,39 @@
         "kind": "pull_request",
         "branch": "codex/checkpoint-inspect-absence",
         "head_sha": "c0713e612d53ac9094a49612f49106118e7453bb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134086:5478079794:2026-08-31T12:06:37Z:clawsweeper_needs_human",
+      "comment_id": "5478079794",
+      "comment_version_key": "5478079794:2026-08-31T12:06:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134086#issuecomment-5478079794",
+      "comment_created_at": "2026-08-31T12:06:37Z",
+      "comment_updated_at": "2026-08-31T12:06:37Z",
+      "comment_body_sha256": "eefe85da56b4b57810a5413563b8538d24566219ae64ebe97345540289d30e94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134086,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is packages/ai/src/model-utils.ts, exercised only by the moved test; the PR body reports seven passing cases but h... (sha=5ee9721b3c98128d8b0affa26a44ecd41540aca1)",
+      "expected_head_sha": "5ee9721b3c98128d8b0affa26a44ecd41540aca1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:07:28.115Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-ai-model-utils-owner",
+        "head_sha": "5ee9721b3c98128d8b0affa26a44ecd41540aca1",
         "cluster_id": null,
         "job_path": null
       }
