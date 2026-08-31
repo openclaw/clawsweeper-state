@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:31:18.850Z",
+  "updated_at": "2026-08-31T01:31:30.446Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132704:5471094404:2026-08-30T20:32:38Z:re_review",
-      "comment_id": "5471094404",
-      "comment_version_key": "5471094404:2026-08-30T20:32:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132704#issuecomment-5471094404",
-      "comment_created_at": "2026-08-30T20:32:38Z",
-      "comment_updated_at": "2026-08-30T20:32:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132704,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T20:33:21.113Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-119143",
-        "head_sha": "9dacd35cb2128c7248d1cdcd5871c4c48f66a659",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawgo:6:5464071468:2026-08-30T20:15:20Z:clawsweeper_needs_human",
       "comment_id": "5464071468",
@@ -33928,6 +33881,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133688:5472597382:2026-08-31T01:30:32Z:clawsweeper_needs_human",
+      "comment_id": "5472597382",
+      "comment_version_key": "5472597382:2026-08-31T01:30:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133688#issuecomment-5472597382",
+      "comment_created_at": "2026-08-31T01:30:32Z",
+      "comment_updated_at": "2026-08-31T01:30:32Z",
+      "comment_body_sha256": "7ba09dbf7fcacf2ae91f60b4ec57d97309c95c53b70e1851a817255345e24745",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133688,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This review environment could not independently re-query GitHub’s REST API because DNS was unavailable; listed security and release owners should confirm the public-repository API con... (sha=685d70a83effd6dee9698353e076531019b358fa)",
+      "expected_head_sha": "685d70a83effd6dee9698353e076531019b358fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T01:31:30.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nostalgic-yalow-46eb16",
+        "head_sha": "685d70a83effd6dee9698353e076531019b358fa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
