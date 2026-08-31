@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:20:24.843Z",
+  "updated_at": "2026-08-31T19:20:24.955Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1322:5477789840:2026-08-31T14:39:01Z:clawsweeper_needs_human",
-      "comment_id": "5477789840",
-      "comment_version_key": "5477789840:2026-08-31T14:39:01Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1322#issuecomment-5477789840",
-      "comment_created_at": "2026-08-31T11:41:43Z",
-      "comment_updated_at": "2026-08-31T14:39:01Z",
-      "comment_body_sha256": "11355c5ab21a6fca3cfe8828ef3645a6d313ece04ce4411de6964ea39fe8f535",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1322,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared wrapper now observes failures for all Worker-to-Queue calls; the first deployment should confirm private bounded logs and unchanged sanitized responses for platform-generat... (sha=279512f1631467955258264cf28e3607845481ca)",
-      "expected_head_sha": "279512f1631467955258264cf28e3607845481ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T14:40:00.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-147-queue-correlation",
-        "head_sha": "279512f1631467955258264cf28e3607845481ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3559:5472376091:2026-08-31T14:40:06Z:clawsweeper_auto_repair",
       "comment_id": "5472376091",
@@ -32874,6 +32841,53 @@
       "processed_at": "2026-08-31T19:20:11.017Z",
       "target": {
         "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133845:5483295662:2026-08-31T19:19:20Z:re_review",
+      "comment_id": "5483295662",
+      "comment_version_key": "5483295662:2026-08-31T19:19:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133845#issuecomment-5483295662",
+      "comment_created_at": "2026-08-31T19:19:20Z",
+      "comment_updated_at": "2026-08-31T19:19:20Z",
+      "comment_body_sha256": "334d006e71d43586efd0a0a8198e3fa185965bc19ca28daea376a1f75a413a96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133845,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T19:20:14.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/npm-plugin-metadata-failure-format",
+        "head_sha": "b259c4e07b8fe5c3256e21dde155ef755d530808",
         "cluster_id": null,
         "job_path": null
       },
