@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:37:23.594Z",
+  "updated_at": "2026-08-31T19:37:38.558Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131362:5480241043:2026-08-31T15:03:19Z:re_review",
-      "comment_id": "5480241043",
-      "comment_version_key": "5480241043:2026-08-31T15:03:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131362#issuecomment-5480241043",
-      "comment_created_at": "2026-08-31T15:03:19Z",
-      "comment_updated_at": "2026-08-31T15:03:19Z",
-      "comment_body_sha256": "80459a8d8b0641847acb05af4889270cb8789507d5154d2035c75a0161a88746",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131362,
-      "author": "aspalagin",
-      "author_id": 263096044,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T15:04:07.757Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-wiki-lint-vault-wide-links",
-        "head_sha": "f4f7855e0b0ebe747323268e67ef275ebdc81a90",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-31T15:02:53Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
@@ -32824,6 +32777,39 @@
         "kind": "pull_request",
         "branch": "codex/code-bug-poll-vote-echo-expiry-20260831",
         "head_sha": "b01c912e483fb83bcc65cef3dde05eb5e85e18da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134212:5481160414:2026-08-31T19:36:30Z:clawsweeper_needs_human",
+      "comment_id": "5481160414",
+      "comment_version_key": "5481160414:2026-08-31T19:36:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134212#issuecomment-5481160414",
+      "comment_created_at": "2026-08-31T16:17:36Z",
+      "comment_updated_at": "2026-08-31T19:36:30Z",
+      "comment_body_sha256": "63fd4b9a823428e6665620bd05e548b32b601722e03394f1cc8f6316d3609184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134212,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, so landing should wait for its required checks to complete successfully. (sha=fe62b36cd4009c0a15dee57e4b987d8fa1ff3b2e)",
+      "expected_head_sha": "fe62b36cd4009c0a15dee57e4b987d8fa1ff3b2e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:37:38.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/drop-inert-include-thread-flag",
+        "head_sha": "fe62b36cd4009c0a15dee57e4b987d8fa1ff3b2e",
         "cluster_id": null,
         "job_path": null
       }
