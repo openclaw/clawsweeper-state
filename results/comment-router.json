@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:00:03.209Z",
+  "updated_at": "2026-08-31T04:00:09.951Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:122:5469803286:2026-08-30T23:58:26Z:clawsweeper_needs_human",
-      "comment_id": "5469803286",
-      "comment_version_key": "5469803286:2026-08-30T23:58:26Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/122#issuecomment-5469803286",
-      "comment_created_at": "2026-08-30T16:12:38Z",
-      "comment_updated_at": "2026-08-30T23:58:26Z",
-      "comment_body_sha256": "29370c6d462c9c06f01242de5484dc0786d9038f5e7c249bc7d6da90e536f162",
-      "repo": "openclaw/ocm",
-      "issue_number": 122,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes the meaning of JSON outcome for cleanup-failure cases; consumers that previously treated that field alone as the complete verdict must also honor exit statu... (sha=e372b57fc23626fc9420ae267efaaf538f9885d3)",
-      "expected_head_sha": "e372b57fc23626fc9420ae267efaaf538f9885d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T23:59:23.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/simulation-cleanup-outcome",
-        "head_sha": "e372b57fc23626fc9420ae267efaaf538f9885d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-30T23:58:53Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
@@ -32955,6 +32922,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132697:5463421551:2026-08-31T03:59:26Z:clawsweeper_needs_human",
+      "comment_id": "5463421551",
+      "comment_version_key": "5463421551:2026-08-31T03:59:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132697#issuecomment-5463421551",
+      "comment_created_at": "2026-08-29T16:02:53Z",
+      "comment_updated_at": "2026-08-31T03:59:26Z",
+      "comment_body_sha256": "0e76a8f983b529bf59be5b8b1cfab358fd52b357dc45e1f8dda1c3a0898c1401",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom Z.AI models that map off to an active effort will now send enabled thinking when no option is supplied; that is the intended correction, but it changes provider behavi... (sha=48225647737ed5391286b5be7ffc876201eae3f7)",
+      "expected_head_sha": "48225647737ed5391286b5be7ffc876201eae3f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:00:09.951Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-132625",
+        "head_sha": "48225647737ed5391286b5be7ffc876201eae3f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
