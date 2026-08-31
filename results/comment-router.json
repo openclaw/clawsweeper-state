@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T15:15:49.244Z",
+  "updated_at": "2026-08-31T15:16:57.655Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133728:5472939946:2026-08-31T10:46:20Z:clawsweeper_needs_human",
-      "comment_id": "5472939946",
-      "comment_version_key": "5472939946:2026-08-31T10:46:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133728#issuecomment-5472939946",
-      "comment_created_at": "2026-08-31T02:26:44Z",
-      "comment_updated_at": "2026-08-31T10:46:20Z",
-      "comment_body_sha256": "a176c4b3fadd600235154804495e1e9f55dff2be02ec58e52daa7a5d27939ad2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133728,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains incomplete, so required checks must finish successfully before merge. (sha=d6a3bf9d8d8bf98229445d6ed59c4e0f402c23a2)",
-      "expected_head_sha": "d6a3bf9d8d8bf98229445d6ed59c4e0f402c23a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:49:44.038Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-session-stress-recovery",
-        "head_sha": "d6a3bf9d8d8bf98229445d6ed59c4e0f402c23a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133795:5473924002:2026-08-31T10:41:43Z:clawsweeper_needs_human",
       "comment_id": "5473924002",
@@ -32910,6 +32877,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131568:5480401677:2026-08-31T15:16:02Z:re_review",
+      "comment_id": "5480401677",
+      "comment_version_key": "5480401677:2026-08-31T15:16:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131568#issuecomment-5480401677",
+      "comment_created_at": "2026-08-31T15:16:02Z",
+      "comment_updated_at": "2026-08-31T15:16:02Z",
+      "comment_body_sha256": "a44fd5c6f08fe719e40581277d79c172b11fd5c7dd8dd373da63bb530e08d4e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131568,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T15:16:54.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-reindex-shadow-orphan-cleanup",
+        "head_sha": "53c00be57c5f3fd7efc5514d8aa8554321a86b02",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
