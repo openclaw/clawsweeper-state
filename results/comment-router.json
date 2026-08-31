@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:35:05.689Z",
+  "updated_at": "2026-08-31T03:35:54.155Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132723:5470928092:2026-08-30T23:04:09Z:clawsweeper_needs_human",
-      "comment_id": "5470928092",
-      "comment_version_key": "5470928092:2026-08-30T23:04:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132723#issuecomment-5470928092",
-      "comment_created_at": "2026-08-30T19:58:51Z",
-      "comment_updated_at": "2026-08-30T23:04:09Z",
-      "comment_body_sha256": "05e6b4b96016b2d96c825226824d0c544b3bafe1036bf8405009714c5e06a4e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132723,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Slack preparation rejection helper, called from the monitor before dispatch; supplied evidence covers direc... (sha=c7fc9b675382401a3e98f3e4c1682f7cf33fcb80)",
-      "expected_head_sha": "c7fc9b675382401a3e98f3e4c1682f7cf33fcb80",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T23:09:06.597Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-131150",
-        "head_sha": "51f65b441a3140c668867ddad11d3d12c492f1a6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133520:5471183312:2026-08-30T23:05:59Z:clawsweeper_auto_repair",
       "comment_id": "5471183312",
@@ -33227,6 +33194,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3285:5186731649:2026-08-31T03:34:57Z:clawsweeper_needs_human",
+      "comment_id": "5186731649",
+      "comment_version_key": "5186731649:2026-08-31T03:34:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5186731649",
+      "comment_created_at": "2026-08-05T02:11:24Z",
+      "comment_updated_at": "2026-08-31T03:34:57Z",
+      "comment_body_sha256": "9600a7b809d4b1ecb2b0b9aa377df20c5b7c0441627dd7c7b1ff3330fbe9a6a7",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If operators enable the new key, every server-rendered homepage request may wait up to 200 ms on the external flag service before falling back; a rollout owner should explicitly accep... (sha=abda0265b89a2bec8d5b3bead3b55f15dd986f65)",
+      "expected_head_sha": "abda0265b89a2bec8d5b3bead3b55f15dd986f65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T03:35:54.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/integrate-krill-switch-flags",
+        "head_sha": "abda0265b89a2bec8d5b3bead3b55f15dd986f65",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
