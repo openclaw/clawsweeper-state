@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134081",
+  "mode": "autonomous",
+  "run_id": "33389684466",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33389684466",
+  "head_sha": "206fe726bbadaae32dcb9822a2511a351a5c9317",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134081.md",
+  "published_at": "2026-08-31T14:23:08.775Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134081",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134081",
+  "canonical_pr": null,
+  "summary": "#134081 remains the canonical open bug. Source inspection at main 43e9a3d81776741a1a9978cc8ee9772b432fdf7b supports the narrow Browser Talk callback-boundary repair, but this worker cannot create the required branch, add the regression, or validate it: the checkout is read-only, dependencies are absent, and Corepack cannot create its cache. The required sibling ../codex source is also absent and cannot be cloned in this environment, so no Codex protocol verdict is claimed.",
+  "actions": [
+    {
+      "target": "#134081",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134081",
+      "candidate_fix": null,
+      "reason": "Implementation and validation are blocked by the read-only worker environment; hand the artifact to a writable executor with dependencies and the required sibling Codex checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134081",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134081",
+      "candidate_fix": null,
+      "reason": "A writable executor must implement and validate the narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#134081",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
