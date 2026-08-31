@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-181
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/181#issuecomment-5472619032"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/181#issuecomment-5472696098"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/181#issuecomment-
 Maintainer opted #181 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/181#issuecomment-5472619032
+Request comment: https://github.com/openclaw/fs-safe/pull/181#issuecomment-5472696098
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/181
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review exact head `f566ae1525d0072054a26f9b5815cf24ff21e8f1`. Verify ordered exactly-once admission for node-tar-hidden `A/I/M/V` and unknown records while sparse `S` remains fail closed; every logical member must receive count, raw/effective path, canonical strip/depth/collision, and filter policy before parser suppression. Confirm the shared 64 MiB-capped manifest cost is enforced before JavaScript retention and native emission, independent of maxArchiveBytes. Validate checksum, strict fixed-field UTF-8, NFC/NFD component bounds, GNU effective type/separators, and raw linkname/type rules before metadata or filters. Confirm parser-visible agreement, canonical `readArchiveEntry` identity across ZIP/TAR/gzip/zstd/bzip2, legacy NUL-typeflag files under pinned node-tar 7.5.22, destination non-publication, and byte-matched candidate native proof. Require exact-head Linux/macOS/Windows/musl CI; decompression-ratio policy remains outside scope.
+Review exact head `d57dacb901a65fe07d667cffeeaacf0d6fe8ed97`. Retain all prior ignored-record, manifest-budget, raw-header, parser-agreement, canonical-read, legacy NUL-file, and native-proof requirements. Verify the only new commit builds `dist` before `test:coverage:collect`, allowing the low-heap manifest child proof to import the generated package surface without skipping tests, lowering thresholds, or changing source coverage. Require fresh exact-head Linux/macOS/Windows coverage plus all normal/native/package gates before merge.
 
