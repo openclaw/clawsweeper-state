@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T13:51:38.382Z",
+  "updated_at": "2026-08-31T13:52:39.200Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133815:5474206797:2026-08-31T10:23:05Z:clawsweeper_needs_human",
-      "comment_id": "5474206797",
-      "comment_version_key": "5474206797:2026-08-31T10:23:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133815#issuecomment-5474206797",
-      "comment_created_at": "2026-08-31T05:37:48Z",
-      "comment_updated_at": "2026-08-31T10:23:05Z",
-      "comment_body_sha256": "0071d931440f62820c1074d020e10c45c98b629c894025005c32a312cf332387",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133815,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes the collision case: an existing local @name now wins over legacy @name shorthand. The normal merge gate should confirm the current-base merge and retain the... (sha=c58eff8edec942e1b6808bcb0df5f4a9a92c80e5)",
-      "expected_head_sha": "c58eff8edec942e1b6808bcb0df5f4a9a92c80e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:23:45.818Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-agent-at-prefixed-session-paths-20260831",
-        "head_sha": "c58eff8edec942e1b6808bcb0df5f4a9a92c80e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133376:5476981153:2026-08-31T10:22:56Z:re_review",
       "comment_id": "5476981153",
@@ -31953,6 +31920,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133758:5473337318:2026-08-31T13:51:45Z:clawsweeper_needs_human",
+      "comment_id": "5473337318",
+      "comment_version_key": "5473337318:2026-08-31T13:51:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133758#issuecomment-5473337318",
+      "comment_created_at": "2026-08-31T03:29:47Z",
+      "comment_updated_at": "2026-08-31T13:51:45Z",
+      "comment_body_sha256": "01de87c00c60ba8b8360d65f5a33f8c44538c13afb8b3b106167871f515b5143",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133758,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still queued, so repository merge gates remain unverified despite the source and focused-test review. (sha=1ca2696f48c4eddd758b927803b0220f660ddd85)",
+      "expected_head_sha": "1ca2696f48c4eddd758b927803b0220f660ddd85",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T13:52:39.200Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-cli-table-width-20260831",
+        "head_sha": "1ca2696f48c4eddd758b927803b0220f660ddd85",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
