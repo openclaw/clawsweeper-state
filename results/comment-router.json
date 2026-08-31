@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:52:41.358Z",
+  "updated_at": "2026-08-31T17:52:41.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89636:5478731564:2026-08-31T13:00:49Z:re_review",
-      "comment_id": "5478731564",
-      "comment_version_key": "5478731564:2026-08-31T13:00:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89636#issuecomment-5478731564",
-      "comment_created_at": "2026-08-31T13:00:49Z",
-      "comment_updated_at": "2026-08-31T13:00:49Z",
-      "comment_body_sha256": "0301c05b1cd107448d8dd198c5ba65a517380a3510a9a32ecb722e26ed8f2094",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89636,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T13:06:24.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-persona-secretref",
-        "head_sha": "2bc232936ec7c08b08457efbe417138bb0f98899",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92230:4683232032:2026-08-31T09:35:09Z:clawsweeper_auto_repair",
       "comment_id": "4683232032",
@@ -33189,6 +33142,39 @@
         "kind": "pull_request",
         "branch": "codex/test-audit-runtime-import",
         "head_sha": "bb8ede803ec7c4881552d6b501d6a4525da2f81f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133649:5472170600:2026-08-31T17:47:12Z:clawsweeper_needs_human",
+      "comment_id": "5472170600",
+      "comment_version_key": "5472170600:2026-08-31T17:47:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133649#issuecomment-5472170600",
+      "comment_created_at": "2026-08-31T00:16:44Z",
+      "comment_updated_at": "2026-08-31T17:47:12Z",
+      "comment_body_sha256": "7c53f8695f644f07e4d4bcc91cedb9a55f44659aa5e4edf26134abf4ae7b882b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133649,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 148 net production lines; the closed probe state, shared description, and canonical route resolver justify the growth, but they remain a maintenance cost to weigh at... (sha=adad76f1d8233059de5fcc2427b5fb4c177d8061)",
+      "expected_head_sha": "adad76f1d8233059de5fcc2427b5fb4c177d8061",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T17:52:41.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-webhook-status",
+        "head_sha": "adad76f1d8233059de5fcc2427b5fb4c177d8061",
         "cluster_id": null,
         "job_path": null
       }
