@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-08-31T04:43:27.355Z
+Generated: 2026-08-31T05:38:40.662Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -45,7 +45,7 @@ Repository: openclaw/openclaw
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | clawsweeper/issue-openclaw-openclaw-116747 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | clawsweeper/issue-openclaw-openclaw-118185 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | clawsweeper/issue-openclaw-openclaw-116601 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#118282](https://github.com/openclaw/openclaw/pull/118282) | fix(doctor): import legacy exec approvals with null usage metadata | clawsweeper/issue-openclaw-openclaw-118242 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#118282](https://github.com/openclaw/openclaw/pull/118282) | fix(doctor): import historical exec approval metadata | clawsweeper/issue-openclaw-openclaw-118242 | MERGEABLE | CLEAN | skipped | head repository is unknown |
 | [#118045](https://github.com/openclaw/openclaw/pull/118045) | docs: remove retired openai-codex from /login valid args | clawsweeper/automerge-openclaw-openclaw-114609 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | clawsweeper/issue-openclaw-openclaw-90786 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
