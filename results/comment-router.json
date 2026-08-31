@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:07:29.995Z",
+  "updated_at": "2026-08-31T07:09:12.803Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133324:5469319304:2026-08-31T02:56:17Z:clawsweeper_needs_human",
-      "comment_id": "5469319304",
-      "comment_version_key": "5469319304:2026-08-31T02:56:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133324#issuecomment-5469319304",
-      "comment_created_at": "2026-08-30T14:38:50Z",
-      "comment_updated_at": "2026-08-31T02:56:17Z",
-      "comment_body_sha256": "659368bf5ca2cb2b39f8d5a29e4b434b0e60abd195c8cccf236908108e33dc53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133324,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the attempt marker out of the public Plugin SDK (P1)** - package.json exports this runtime subpath, so any plugin harness can call markCoreTtsAttemptResult on its own result and URL already present in toolM...; Review finding: [P1] Keep the attempt marker out of the public Plugin SDK — src/plugin-sdk/agent-harness-tool-runtime.ts:12-15 - [high] Public API can mint private-reply delivery... (sha=223c3830b315f731baf5865695eb9625955ac9a3)",
-      "expected_head_sha": "223c3830b315f731baf5865695eb9625955ac9a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T02:57:19.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-83636-tts-delivery",
-        "head_sha": "223c3830b315f731baf5865695eb9625955ac9a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131733:5473135401:2026-08-31T02:58:20Z:re_review",
       "comment_id": "5473135401",
@@ -32784,6 +32751,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133856:5474961636:2026-08-31T07:08:24Z:re_review",
+      "comment_id": "5474961636",
+      "comment_version_key": "5474961636:2026-08-31T07:08:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133856#issuecomment-5474961636",
+      "comment_created_at": "2026-08-31T07:08:24Z",
+      "comment_updated_at": "2026-08-31T07:08:24Z",
+      "comment_body_sha256": "a4689640b5f81889c6abf0a079073a77ebc94ca8c1568b63f6079bb805bc176d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133856,
+      "author": "zw-xysk",
+      "author_id": 294457748,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T07:09:10.468Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-image-lite-tier",
+        "head_sha": "6247f618d6001d0ced88defedb06b9e6a9a0cba8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
