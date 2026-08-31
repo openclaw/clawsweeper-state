@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134187",
+  "mode": "autonomous",
+  "run_id": "33404104762",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33404104762",
+  "head_sha": "ce333f9cf9dfb8a29d20ca966b9db4ee78ca1676",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134187.md",
+  "published_at": "2026-08-31T15:04:01.729Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134187",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134187",
+  "canonical_pr": null,
+  "summary": "Current main contains the reported classification gap. A narrow fix PR is appropriate, but this worker cannot implement or validate it: the checkout is read-only, dependencies are absent, and the repository-required sibling ../codex source is unavailable for the mandatory direct inspection gate.",
+  "actions": [
+    {
+      "target": "#134187",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134187",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this read-only environment, missing dependencies, and the absent mandatory ../codex checkout; the repair itself remains a narrow new-PR path."
+    },
+    {
+      "target": "#134186",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#134187",
+      "candidate_fix": null,
+      "reason": "Separate announce-retry subcluster; leave open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134187",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134187",
+      "candidate_fix": null,
+      "reason": "Create the single narrow PR on clawsweeper/issue-openclaw-openclaw-134187 in a writable environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
