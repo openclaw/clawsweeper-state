@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:21:16.127Z",
+  "updated_at": "2026-08-31T19:22:09.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3107:5479873326:2026-08-31T14:33:48Z:re_review",
-      "comment_id": "5479873326",
-      "comment_version_key": "5479873326:2026-08-31T14:33:48Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3107#issuecomment-5479873326",
-      "comment_created_at": "2026-08-31T14:33:48Z",
-      "comment_updated_at": "2026-08-31T14:33:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3107,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T14:41:29.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/spend-cache-ttl",
-        "head_sha": "e14604ff04b00e5e61ade68a7e4de93977922360",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3107:5355192750:2026-08-31T14:39:56Z:clawsweeper_auto_repair",
       "comment_id": "5355192750",
@@ -32902,6 +32855,39 @@
         "kind": "pull_request",
         "branch": "codex/release82-consent-reconciled",
         "head_sha": "94550699959da2e857630f8df12efa069c0345fe",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134410:5483316963:2026-08-31T19:21:17Z:clawsweeper_needs_human",
+      "comment_id": "5483316963",
+      "comment_version_key": "5483316963:2026-08-31T19:21:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134410#issuecomment-5483316963",
+      "comment_created_at": "2026-08-31T19:21:17Z",
+      "comment_updated_at": "2026-08-31T19:21:17Z",
+      "comment_body_sha256": "b58b586c6d02a707ec6e78c3b617b99c1c152ca4886be34eb1329af21e191d39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134410,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI and the sealed-package Docker confirmation described in the PR body are still pending; landing should wait for that release-path evidence. (sha=92660ed1739d773f114d45eec6f8f346263a8a43)",
+      "expected_head_sha": "92660ed1739d773f114d45eec6f8f346263a8a43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:22:09.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-baseline-auth-fixture",
+        "head_sha": "92660ed1739d773f114d45eec6f8f346263a8a43",
         "cluster_id": null,
         "job_path": null
       }
