@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:00:49.017Z",
+  "updated_at": "2026-08-31T04:01:09.292Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132180:5472050886:2026-08-30T23:54:54Z:re_review",
-      "comment_id": "5472050886",
-      "comment_version_key": "5472050886:2026-08-30T23:54:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132180#issuecomment-5472050886",
-      "comment_created_at": "2026-08-30T23:54:54Z",
-      "comment_updated_at": "2026-08-30T23:54:54Z",
-      "comment_body_sha256": "201be94458d53d2141149a4a38177776bdeb6c1c3a30391fc105dfe96625326e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132180,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T00:00:51.766Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/node-session-speed-followups-20260828",
-        "head_sha": "6e69c69467b5f9dc95126114d595f6e6f2439900",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132723:5472057150:2026-08-30T23:56:17Z:re_review",
       "comment_id": "5472057150",
@@ -32938,6 +32891,39 @@
         "kind": "pull_request",
         "branch": "fix/f002-sync-skills-paths",
         "head_sha": "1c18469f026577f4e15830850213804a73c20424",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:110:5462553544:2026-08-31T04:00:27Z:clawsweeper_needs_human",
+      "comment_id": "5462553544",
+      "comment_version_key": "5462553544:2026-08-31T04:00:27Z",
+      "comment_url": "https://github.com/openclaw/notcrawl/pull/110#issuecomment-5462553544",
+      "comment_created_at": "2026-08-29T13:00:12Z",
+      "comment_updated_at": "2026-08-31T04:00:27Z",
+      "comment_body_sha256": "94c44733a9c753d869137fba226c2d3b382d68578f5df481c94386198621f215",
+      "repo": "openclaw/notcrawl",
+      "issue_number": 110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner, notcrawlReleaseCheckOptions, feeds both crawlkit Notify and Check calls; the supplied macOS terminal tra... (sha=af33f56c1f5f5420cd9067941533ab6575d53b7e)",
+      "expected_head_sha": "af33f56c1f5f5420cd9067941533ab6575d53b7e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:01:09.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-check-http-timeout",
+        "head_sha": "af33f56c1f5f5420cd9067941533ab6575d53b7e",
         "cluster_id": null,
         "job_path": null
       }
