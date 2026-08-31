@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-171
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476296725"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476603295"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-
 Maintainer opted #171 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476296725
+Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476603295
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/171
@@ -59,12 +59,9 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review exact head `b34856a6cf06a6901a6d57b182d66e2b997a85be`, which merges current `main` and replaces all earlier proof state. The PR body now includes the requested final quarantine-swap authority trace: immediately before the real native remover consumes the retained workspace descriptor, both async and sync public cleanup swap in a nonempty replacement, return stable `indeterminate`, leave the public name absent, and preserve exact replacement and original bytes. The same standalone proof runs in native Linux, macOS, Windows, and Alpine/musl CI.
+Review exact head `0d61e42b8a62648d788e89db6257de3d52f3595f`. This head merges the automated `df49e8f` repair into the stronger reviewed `7a23cc9` implementation; the resulting tree is byte-identical to `7a23cc9`, with no force-push or lost history.
 
-Retain every prior bounded-cleanup, compatible-fallback, strict pre-creation, enumeration-identity, mount-crossing, POSIX residual, packed-consumer, and exact-head cross-platform requirement. Also verify the two accepted P1 repairs on this head:
+Verify the final Windows quarantine-root boundary through the compiled public API for async and sync cleanup: a junction/reparse replacement installed immediately before native removal is opened as a non-followed direct leaf, fails the retained descriptor identity/reparse check, remains preserved, returns stable `indeterminate`, leaves the public workspace absent, preserves the original owned tree, and leaves outside bytes exact. The PR body includes the expanded terminal JSON, and the standalone proof runs on Linux, macOS, Windows, and musl.
 
-- Linux calls a non-mutating runtime probe of the exact `openat2` descent flags, including `RESOLVE_NO_XDEV`, once against the retained parent descriptor. Missing/denied support selects compatible JavaScript cleanup even in global native `require` mode; `cleanupSafety: "require-bounded"` closes authority and rejects before `mkdtemp` or a scoped callback.
-- Windows opens each enumerated direct child with `FILE_OPEN_REPARSE_POINT`, binds volume/file ID/directory type/reparse state, recursively traverses only non-reparse directories, and deletes stable symlink/junction entries as exact leaves through `FileDispositionInfoEx`. Hosted proof must show async and sync reparse leaves removed while outside target bytes remain exact.
-
-Require fresh exact-head Node 22/24 checks on Linux, macOS, and Windows; three-OS coverage and merged thresholds; native Linux, macOS, Windows, and musl; package smoke on all three OSes; Cargo audit/clippy; analysis/security gates; the Windows append proof inherited from [PR #183](https://github.com/openclaw/fs-safe/pull/183); and a new exact-head review with no actionable finding before merge.
+Retain all previous requirements for runtime Linux `openat2`/`RESOLVE_NO_XDEV` admission, compatible fallback, strict pre-creation rejection, enumerated-child binding, Windows exact-handle leaf deletion, POSIX residual limits, packed-consumer proof, Windows append proof, and fresh exact-head Node, native, coverage, package, audit, analysis, and security gates. Require a new exact-head review with no actionable finding before merge.
 

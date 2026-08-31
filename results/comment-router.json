@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T09:46:06.914Z",
+  "updated_at": "2026-08-31T09:46:11.531Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119901:5202908645:2026-08-30T09:42:32Z:clawsweeper_auto_repair",
-      "comment_id": "5202908645",
-      "comment_version_key": "5202908645:2026-08-30T09:42:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119901#issuecomment-5202908645",
-      "comment_created_at": "2026-08-06T09:36:15Z",
-      "comment_updated_at": "2026-08-30T09:42:32Z",
-      "comment_body_sha256": "81945a6ab146085696597f8ad047a965e2563b67c50a16fe3c6a27d04520e460",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119901,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6f9eb81c559571844f0a4050ce8d2da647afd0ef)",
-      "expected_head_sha": "6f9eb81c559571844f0a4050ce8d2da647afd0ef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T05:46:28.145Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119884",
-        "head_sha": "6f9eb81c559571844f0a4050ce8d2da647afd0ef",
-        "cluster_id": "automerge-openclaw-openclaw-119901",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119901.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120040:5211043130:2026-08-31T05:19:33Z:clawsweeper_auto_repair",
       "comment_id": "5211043130",
@@ -33177,6 +33144,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:171:5476603295:2026-08-31T09:45:31Z:automerge",
+      "comment_id": "5476603295",
+      "comment_version_key": "5476603295:2026-08-31T09:45:31Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476603295",
+      "comment_created_at": "2026-08-31T09:45:31Z",
+      "comment_updated_at": "2026-08-31T09:45:31Z",
+      "comment_body_sha256": "7b8db2af8b5bda1ed0e59fadc34b584e788cfa2a6286322a1a81eca518885351",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 171,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T09:46:03.715Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/temp-workspace-cleanup-ownership",
+        "head_sha": "0d61e42b8a62648d788e89db6257de3d52f3595f",
+        "cluster_id": "automerge-openclaw-fs-safe-171",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129345:5411343629:2026-08-31T09:43:48Z:clawsweeper_needs_human",
