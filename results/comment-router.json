@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:39:26.950Z",
+  "updated_at": "2026-08-31T12:40:02.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133728:5472939946:2026-08-31T09:29:59Z:clawsweeper_needs_human",
-      "comment_id": "5472939946",
-      "comment_version_key": "5472939946:2026-08-31T09:29:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133728#issuecomment-5472939946",
-      "comment_created_at": "2026-08-31T02:26:44Z",
-      "comment_updated_at": "2026-08-31T09:29:59Z",
-      "comment_body_sha256": "3114d9c5bbcafdfb411e92b9488640dccc0a9b6e12de3a55d5cae9b6de3c615c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133728,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed worker authority owner is exercised by source tests, but the PR states that the exact-head live aut...; Review finding: [medium] Prove cancellation fences final effects on this head — src/gateway/worker-environments/worker-session-tool-executor.ts:569 (sha=6adb5bf26ac30810f7f9ada93a3dd72754c71b7f)",
-      "expected_head_sha": "6adb5bf26ac30810f7f9ada93a3dd72754c71b7f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T09:32:28.885Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-session-stress-recovery",
-        "head_sha": "6adb5bf26ac30810f7f9ada93a3dd72754c71b7f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133728:5473622525:2026-08-31T04:14:48Z:re_review",
       "comment_id": "5473622525",
@@ -31905,6 +31872,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T12:39:26.950Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133994:5476259848:2026-08-31T12:39:08Z:clawsweeper_needs_human",
+      "comment_id": "5476259848",
+      "comment_version_key": "5476259848:2026-08-31T12:39:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133994#issuecomment-5476259848",
+      "comment_created_at": "2026-08-31T09:14:29Z",
+      "comment_updated_at": "2026-08-31T12:39:08Z",
+      "comment_body_sha256": "8f7593803471870706db8d8e4714c3dc04c58ea1d6c2585b229750b32beac6a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133994,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes the generated CI checkout path, but the exact-head hosted Linux and native Windows checks are still queued; the real-Git fixture cannot establish runner-specific beh... (sha=f41f0be68139ebadb14dd2e7dccfd220ea96e41a)",
+      "expected_head_sha": "f41f0be68139ebadb14dd2e7dccfd220ea96e41a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:40:02.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-checkout-reuse-20260831",
+        "head_sha": "f41f0be68139ebadb14dd2e7dccfd220ea96e41a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
