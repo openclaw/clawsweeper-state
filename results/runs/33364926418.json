@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133860",
+  "mode": "autonomous",
+  "run_id": "33364926418",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33364926418",
+  "head_sha": "ddc75603add72a4b8dcd1a23d2497b1c8f1d178b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133860.md",
+  "published_at": "2026-08-31T06:54:02.570Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133860",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133860",
+  "canonical_pr": null,
+  "summary": "#133860 is a real remaining llama.cpp overflow-classification bug on main. A narrow four-file fix is planned, but implementation and validation are blocked: the mandatory sibling ../codex source is absent and this read-only worker cannot clone it; node_modules is absent and pnpm cannot create its Corepack cache.",
+  "actions": [
+    {
+      "target": "#64180",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation is permitted or needed."
+    },
+    {
+      "target": "#64196",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Closed merged PR is partial historical coverage, not a candidate for this changed upstream wording."
+    },
+    {
+      "target": "#133860",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "The defect is source-reproducible on current main, but this worker cannot satisfy the repository's Codex-source gate or execute the required regression suite."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133860",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "A fresh writable executor with ../codex and installed dependencies can implement and validate this narrow repair."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
