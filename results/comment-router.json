@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:22:20.233Z",
+  "updated_at": "2026-08-31T07:22:38.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:123:5473310526:2026-08-31T03:25:36Z:clawsweeper_needs_human",
-      "comment_id": "5473310526",
-      "comment_version_key": "5473310526:2026-08-31T03:25:36Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/123#issuecomment-5473310526",
-      "comment_created_at": "2026-08-31T03:25:36Z",
-      "comment_updated_at": "2026-08-31T03:25:36Z",
-      "comment_body_sha256": "ee192a114e0094f431bf9db8f188d09f33d856fd63665cee6f594737c121dbed",
-      "repo": "openclaw/ocm",
-      "issue_number": 123,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The signed v0.2.34 tag and publication must wait for successful exact-SHA main CI after squash merge; the current PR checks are not a substitute for that protected release step. (sha=2a1ac7ae5dcfc675803d30cee4ee89e6b9ab61c2)",
-      "expected_head_sha": "2a1ac7ae5dcfc675803d30cee4ee89e6b9ab61c2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T03:26:20.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/v0.2.34",
-        "head_sha": "2a1ac7ae5dcfc675803d30cee4ee89e6b9ab61c2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3285:5473318109:2026-08-31T03:26:52Z:re_review",
       "comment_id": "5473318109",
@@ -32694,6 +32661,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131590:5475110212:2026-08-31T07:21:49Z:re_review",
+      "comment_id": "5475110212",
+      "comment_version_key": "5475110212:2026-08-31T07:21:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131590#issuecomment-5475110212",
+      "comment_created_at": "2026-08-31T07:21:49Z",
+      "comment_updated_at": "2026-08-31T07:21:49Z",
+      "comment_body_sha256": "97163786cdc2d28bbc06412d3f93c86bab6f59ba61b01deb25c75d2d01e99643",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131590,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head `3b8f2ba540d`: the manual-pause p1 is fixed by explicit provenance, as the finding proposed. the terminal disposition is no longer inferred from disabled state: the exit watcher's fire path passes `onexitwatchercompletion: true` through `cron.run` (`cronservicerunoptions` → `manualrunoptions` → `applyjobresult`), and only that flag reaches the terminal gate — an operator's `automations run` of a manually paused on-exit job keeps the quiet pause (new regression test, plus the armed-watcher control). the pr body carries fresh exact-head harness proof on `3b8f2ba540d` covering all three lanes live: watcher alert delivered to the channel at first failure, best-effort fact + notice with no alert, and the paused operator control staying silent through the real `cron run --wait` cli path. the terminal-disposition tests moved to `src/cron/service.on-exit-terminal-disposition.test.ts` to respect max-lines without a suppression",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T07:22:32.242Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131490-oneshot-silent-disable",
+        "head_sha": "3b8f2ba540dfe8ef5d4cbb911b7146364e68a506",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
