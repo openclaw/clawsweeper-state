@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:11:11.694Z",
+  "updated_at": "2026-08-31T11:12:04.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133856:5475404974:2026-08-31T07:52:35Z:re_review",
-      "comment_id": "5475404974",
-      "comment_version_key": "5475404974:2026-08-31T07:52:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133856#issuecomment-5475404974",
-      "comment_created_at": "2026-08-31T07:52:35Z",
-      "comment_updated_at": "2026-08-31T07:52:35Z",
-      "comment_body_sha256": "fa58b06e51934213d2a8d55af5333013bf262e11ef21c165b99a694a7ebde2e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133856,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T07:53:17.652Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/google-image-lite-tier",
-        "head_sha": "f6e3a6fac15a682906fd6865ecf6bc5dc2ed73eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133773:5473568152:2026-08-31T07:54:13Z:clawsweeper_needs_human",
       "comment_id": "5473568152",
@@ -32396,6 +32349,39 @@
         "kind": "pull_request",
         "branch": "refactor/chat-input-ownership-cleanup",
         "head_sha": "834957b8e4188677831bf633d90c7783655438b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawpdf:19:5477481090:2026-08-31T11:11:19Z:clawsweeper_needs_human",
+      "comment_id": "5477481090",
+      "comment_version_key": "5477481090:2026-08-31T11:11:19Z",
+      "comment_url": "https://github.com/openclaw/clawpdf/pull/19#issuecomment-5477481090",
+      "comment_created_at": "2026-08-31T11:11:19Z",
+      "comment_updated_at": "2026-08-31T11:11:19Z",
+      "comment_body_sha256": "adee221bcce532a71b032c2366460f56da3ae5280951eaafa34849a320d269e0",
+      "repo": "openclaw/clawpdf",
+      "issue_number": 19,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refreshed Pages action chain is only exercised after merge; CI validates the same install/build tooling but not the deployment job itself. (sha=3527bf4367f1d10489dac5eb449fac2bd1ce8dca)",
+      "expected_head_sha": "3527bf4367f1d10489dac5eb449fac2bd1ce8dca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T11:12:04.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-refresh-20260830",
+        "head_sha": "3527bf4367f1d10489dac5eb449fac2bd1ce8dca",
         "cluster_id": null,
         "job_path": null
       }
