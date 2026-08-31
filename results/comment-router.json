@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T05:56:56.787Z",
+  "updated_at": "2026-08-31T05:57:36.164Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133713:5472796942:2026-08-31T02:04:06Z:clawsweeper_needs_human",
-      "comment_id": "5472796942",
-      "comment_version_key": "5472796942:2026-08-31T02:04:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133713#issuecomment-5472796942",
-      "comment_created_at": "2026-08-31T02:04:06Z",
-      "comment_updated_at": "2026-08-31T02:04:06Z",
-      "comment_body_sha256": "10075ec81021c78f402cec18676c349bdb3100fe9ea5860d49296294a6733261",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133713,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, so final merge readiness is not yet established. (sha=4e7d2c5629e4ed7fbd96445a7dea83bd85366444)",
-      "expected_head_sha": "4e7d2c5629e4ed7fbd96445a7dea83bd85366444",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T02:04:55.830Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/run-output-usage-cleanup",
-        "head_sha": "4e7d2c5629e4ed7fbd96445a7dea83bd85366444",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:206:5465775192:2026-08-31T02:05:14Z:clawsweeper_auto_repair",
       "comment_id": "5465775192",
@@ -31988,6 +31955,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:183:5473836483:2026-08-31T05:56:31Z:clawsweeper_auto_merge",
+      "comment_id": "5473836483",
+      "comment_version_key": "5473836483:2026-08-31T05:56:31Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/183#issuecomment-5473836483",
+      "comment_created_at": "2026-08-31T04:44:39Z",
+      "comment_updated_at": "2026-08-31T05:56:31Z",
+      "comment_body_sha256": "5abdbf1fdc1ebe3ff0c41c0cf4791cbfcb10e8a9530ac2f179d29b96d725c6cf",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=180dd9720dd2e9946d26e4f9d0024907ddc46413)",
+      "expected_head_sha": "180dd9720dd2e9946d26e4f9d0024907ddc46413",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T05:57:36.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/regular-append-exact-identity",
+        "head_sha": "180dd9720dd2e9946d26e4f9d0024907ddc46413",
+        "cluster_id": "automerge-openclaw-fs-safe-183",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-183.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
