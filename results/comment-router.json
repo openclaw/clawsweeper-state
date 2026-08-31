@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:19:53.457Z",
+  "updated_at": "2026-08-31T11:22:41.985Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133940:5475445550:2026-08-31T07:56:41Z:clawsweeper_auto_repair",
-      "comment_id": "5475445550",
-      "comment_version_key": "5475445550:2026-08-31T07:56:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133940#issuecomment-5475445550",
-      "comment_created_at": "2026-08-31T07:56:41Z",
-      "comment_updated_at": "2026-08-31T07:56:41Z",
-      "comment_body_sha256": "f7eeff403fb14a8977d302a4eda0383aaa9e763d40ff851decab3d69c4092f2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133940,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e77342db6071e083dad138573cdf2feefdea8b28)",
-      "expected_head_sha": "e77342db6071e083dad138573cdf2feefdea8b28",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-31T07:57:30.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/docs-list-fleet-in-cli-index-20260831",
-        "head_sha": "e77342db6071e083dad138573cdf2feefdea8b28",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133931:5475373294:2026-08-31T07:56:47Z:clawsweeper_auto_repair",
       "comment_id": "5475373294",
@@ -32231,6 +32198,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:3316:5477520217:2026-08-31T11:15:18Z:re_review",
+      "comment_id": "5477520217",
+      "comment_version_key": "5477520217:2026-08-31T11:15:18Z",
+      "comment_url": "https://github.com/steipete/CodexBar/issues/3316#issuecomment-5477520217",
+      "comment_created_at": "2026-08-31T11:15:18Z",
+      "comment_updated_at": "2026-08-31T11:15:18Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3316,
+      "author": "heyajulia",
+      "author_id": 68656233,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T11:22:38.755Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
