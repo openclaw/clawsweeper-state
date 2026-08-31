@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-08-31T13:53:52.416Z",
+  "updated_at": "2026-08-31T13:53:54.337Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:171:5477009562:2026-08-31T10:25:31Z:stop",
-      "comment_id": "5477009562",
-      "comment_version_key": "5477009562:2026-08-31T10:25:31Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5477009562",
-      "comment_created_at": "2026-08-31T10:25:31Z",
-      "comment_updated_at": "2026-08-31T10:25:31Z",
-      "comment_body_sha256": "df9e00c0a464a9b5f4eab2205ccd521e3f200ba47c5cbe02d32f5222d18250f7",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 171,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "stop",
-      "intent": "stop",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T10:26:15.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/temp-workspace-cleanup-ownership",
-        "head_sha": "139644fd89394f8de971104f212016b819872b67",
-        "cluster_id": "automerge-openclaw-fs-safe-171",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-08-30T14:53:36Z:clawsweeper_auto_repair",
       "comment_id": "5209715304",
@@ -31919,6 +31866,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T13:53:52.416Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134148:5479361984:2026-08-31T13:53:03Z:clawsweeper_auto_repair",
+      "comment_id": "5479361984",
+      "comment_version_key": "5479361984:2026-08-31T13:53:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134148#issuecomment-5479361984",
+      "comment_created_at": "2026-08-31T13:53:03Z",
+      "comment_updated_at": "2026-08-31T13:53:03Z",
+      "comment_body_sha256": "d8155e63170fcc4aa4c93750dd0e1df533b695e833f1a5b6964a225b07259607",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134148,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b7b5e1d567a0d4acf3ab2995413805ce8df751fd)",
+      "expected_head_sha": "b7b5e1d567a0d4acf3ab2995413805ce8df751fd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T13:53:54.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-detached-subagent-typing",
+        "head_sha": "b7b5e1d567a0d4acf3ab2995413805ce8df751fd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
