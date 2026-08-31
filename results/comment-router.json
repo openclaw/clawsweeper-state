@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T23:24:03.166Z",
+  "updated_at": "2026-08-31T23:26:10.847Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3324:5481462621:2026-08-31T16:43:15Z:clawsweeper_needs_human",
-      "comment_id": "5481462621",
-      "comment_version_key": "5481462621:2026-08-31T16:43:15Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3324#issuecomment-5481462621",
-      "comment_created_at": "2026-08-31T16:43:15Z",
-      "comment_updated_at": "2026-08-31T16:43:15Z",
-      "comment_body_sha256": "5dc714a841c010d7cd58d890dd4444d5883cccc8585ee163bde7777bd3476bbb",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3324,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally addresses only the restart-loop portion of https://github.com/steipete/CodexBar/issues/3316; the reported cost-materialization undercount remains separately unresol... (sha=bdb60377a48dbffd90a8bbfface36632a2ba9eac)",
-      "expected_head_sha": "bdb60377a48dbffd90a8bbfface36632a2ba9eac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:44:13.190Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-spend-catchup-terminal-pause",
-        "head_sha": "bdb60377a48dbffd90a8bbfface36632a2ba9eac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:199:5481228375:2026-08-31T16:43:33Z:clawsweeper_needs_human",
       "comment_id": "5481228375",
@@ -33164,6 +33131,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132186:5486167486:2026-08-31T23:25:24Z:re_review",
+      "comment_id": "5486167486",
+      "comment_version_key": "5486167486:2026-08-31T23:25:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132186#issuecomment-5486167486",
+      "comment_created_at": "2026-08-31T23:25:24Z",
+      "comment_updated_at": "2026-08-31T23:25:24Z",
+      "comment_body_sha256": "0be279bae328fe79d3dc8b2c42949eeb8aeff19a851f76c51c27b57c96a043b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132186,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T23:26:08.808Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galin/LocaFixesForOCReviewer",
+        "head_sha": "5181ef1b9fa00242c3454593d2f53f35b630db47",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
