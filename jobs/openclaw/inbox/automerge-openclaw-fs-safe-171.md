@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-171
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5474882484"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5467915379"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-
 Maintainer opted #171 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5474882484
+Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5467915379
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/171
@@ -59,9 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review exact head `0cfe2102e2ae0ceff503a8151487ce82ccdc455c`. The branch now merges current `main`, including the independently landed exact-bigint append-identity fix from [PR #183](https://github.com/openclaw/fs-safe/pull/183); the previous Windows fallback failures must not be carried forward.
-
-Retain every prior bounded-cleanup, compatible-fallback, strict pre-creation, enumeration-identity, mount-crossing, POSIX residual, Windows handle-deletion, packed-consumer, and exact-head cross-platform requirement. Verify the merge commit introduces no semantic conflict: default `cleanupSafety: "compatible"` still preserves native-off/unavailable creation and cleanup, while `cleanupSafety: "require-bounded"` still rejects before child creation unless native no-replace quarantine plus descriptor-relative owned-tree removal are available.
-
-Require fresh exact-head Node 22/24 checks on Linux, macOS, and Windows; three-OS coverage; native Linux, macOS, Windows, and musl; package smoke on all three OSes; Cargo audit/clippy; analysis/security gates; and an exact-head ClawSweeper review with no actionable finding before merge. In particular, require the hosted Windows production append proof now present on the merged head and all existing Windows owned-tree, replacement-preservation, file-ID binding, handle-deletion, directory-rename, and reparse-rejection proofs.
+Require exact-head hosted Windows proof that native no-replace rename accepts real directory sources, preserves existing empty and non-empty destinations, and rejects junction/reparse sources. Also verify native-off cleanup removes unchanged workspaces while a replacement raced after admission is preserved under quarantine and recursive deletion never targets the public workspace pathname.
 
