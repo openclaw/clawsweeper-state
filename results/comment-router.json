@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:32:38.480Z",
+  "updated_at": "2026-08-31T01:33:46.996Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3550:5470477879:2026-08-30T20:16:25Z:clawsweeper_needs_human",
-      "comment_id": "5470477879",
-      "comment_version_key": "5470477879:2026-08-30T20:16:25Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3550#issuecomment-5470477879",
-      "comment_created_at": "2026-08-30T18:26:37Z",
-      "comment_updated_at": "2026-08-30T20:16:25Z",
-      "comment_body_sha256": "6e1dc513ec844ab8af0acc494a3c56e94c6fe75ff4ec0443e83f7d778b03cbfa",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This makes overview and securityAuditUrl mandatory top-level fields on an existing public v1 response; an external client with unknown-field-rejecting decoding could need an upgrade d... (sha=e6cf5adc3fa2b64f2455bad2c7a5fca81d4e2f5b)",
-      "expected_head_sha": "e6cf5adc3fa2b64f2455bad2c7a5fca81d4e2f5b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T20:34:24.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/package-security-audit-metadata",
-        "head_sha": "e6cf5adc3fa2b64f2455bad2c7a5fca81d4e2f5b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132651:5463151086:2026-08-30T20:33:31Z:clawsweeper_auto_repair",
       "comment_id": "5463151086",
@@ -33953,6 +33920,53 @@
         "kind": "pull_request",
         "branch": "fix/sync-transactional-overlay",
         "head_sha": "8cb3e2748d267a13de102da9be7d5b44bc56a0a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133684:5472611406:2026-08-31T01:33:03Z:re_review",
+      "comment_id": "5472611406",
+      "comment_version_key": "5472611406:2026-08-31T01:33:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133684#issuecomment-5472611406",
+      "comment_created_at": "2026-08-31T01:33:03Z",
+      "comment_updated_at": "2026-08-31T01:33:03Z",
+      "comment_body_sha256": "5108ee2727c55293f42e82f2e7e7ca23fc1f4e129f02563044a095b8bb09500c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133684,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T01:33:45.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/133475-control-only-resume-recovery",
+        "head_sha": "d7eb7e39830f8e343285dd8d2219e8fdc62ebf9c",
         "cluster_id": null,
         "job_path": null
       },
