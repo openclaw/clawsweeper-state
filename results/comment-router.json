@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:09:34.762Z",
+  "updated_at": "2026-08-31T01:09:37.513Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133034:5470996527:2026-08-30T20:12:36Z:clawsweeper_needs_human",
-      "comment_id": "5470996527",
-      "comment_version_key": "5470996527:2026-08-30T20:12:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133034#issuecomment-5470996527",
-      "comment_created_at": "2026-08-30T20:12:36Z",
-      "comment_updated_at": "2026-08-30T20:12:36Z",
-      "comment_body_sha256": "2e65d7c78138c7030721adfbfd28f2758ebe3c02b9cffbc3732ffaccf5d110e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133034,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve real behavior proof assessment** - Needs stronger real behavior proof before merge: The PR body describes a real SQLite-backed baseline/candidate harness using the production cache, persistence seam, ter... (sha=afd26c0259ddf10382d4165d7a2075c2dda445c1)",
-      "expected_head_sha": "afd26c0259ddf10382d4165d7a2075c2dda445c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T20:21:19.139Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "session-observer-digest-fence",
-        "head_sha": "afd26c0259ddf10382d4165d7a2075c2dda445c1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133490:5471020817:2026-08-30T20:17:32Z:clawsweeper_auto_repair",
       "comment_id": "5471020817",
@@ -33800,6 +33767,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3285:5186731649:2026-08-31T01:08:49Z:clawsweeper_needs_human",
+      "comment_id": "5186731649",
+      "comment_version_key": "5186731649:2026-08-31T01:08:49Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5186731649",
+      "comment_created_at": "2026-08-05T02:11:24Z",
+      "comment_updated_at": "2026-08-31T01:08:49Z",
+      "comment_body_sha256": "136f3d5852603aa708b188e8dd4d8af2d9c834e385b78ca2996ff5faedd6d3ed",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3285,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the new SDK before enabling production flags** - This new registry dependency is imported by the SSR evaluator and browser provider; its implementation is outside this checkout,...; Review finding: [medium] Verify the new SDK before enabling production flags — package.json:105 (sha=155769e513543bcc1b08d6ee2ef85c6be20d4e72)",
+      "expected_head_sha": "155769e513543bcc1b08d6ee2ef85c6be20d4e72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T01:09:37.513Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/integrate-krill-switch-flags",
+        "head_sha": "155769e513543bcc1b08d6ee2ef85c6be20d4e72",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
