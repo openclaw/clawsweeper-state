@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:18:01.677Z",
+  "updated_at": "2026-08-31T10:18:25.667Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131590:5474586943:2026-08-31T06:25:50Z:re_review",
-      "comment_id": "5474586943",
-      "comment_version_key": "5474586943:2026-08-31T06:25:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131590#issuecomment-5474586943",
-      "comment_created_at": "2026-08-31T06:25:50Z",
-      "comment_updated_at": "2026-08-31T06:25:50Z",
-      "comment_body_sha256": "160e40f632a6d4596a67365a991440f779b7eac238ffeb0c6e90656b518d9eb0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131590,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head `1c0010c630d`: the p1 is fixed by consolidation. the terminal one-shot disposition is now a single shared helper in `timer-outcomes.ts` consumed by both the timed `at` branch and a new watcher-completed `on-exit` gate (`schedulemode: \"preserve\"` + pre-disabled + error); `autodisablecronjob` accepts the watcher's pre-disable via `completedoneshot` so the durable fact and notice are recorded without re-enabling or re-arming the completed watcher, and a manual force-run of a still-armed watcher keeps the plain preserve path. three new regression tests fail on pre-fix code. the pr body now carries exact-head real-behavior proof on `1c0010c630d`: real exit watchers armed by the gateway fired both scenarios — the default job's first terminal failure delivered the threshold-bypassed alert to the qa-channel, and the best-effort job recorded the durable fact plus the generic auto-disable notice with no alert. the docs claim about `at`/`on-exit` is now true as written",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T06:26:37.483Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/131490-oneshot-silent-disable",
-        "head_sha": "1c0010c630d9b1369335d8f954181a8b2e999e3d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133843:5474466074:2026-08-31T06:21:21Z:clawsweeper_needs_human",
       "comment_id": "5474466074",
@@ -33097,6 +33050,39 @@
         "kind": "pull_request",
         "branch": "codex/matrix-release-lifecycle",
         "head_sha": "3638c12b63c4efd17518438c11b82880554b930b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134032:5476927295:2026-08-31T10:17:36Z:clawsweeper_auto_repair",
+      "comment_id": "5476927295",
+      "comment_version_key": "5476927295:2026-08-31T10:17:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5476927295",
+      "comment_created_at": "2026-08-31T10:17:36Z",
+      "comment_updated_at": "2026-08-31T10:17:36Z",
+      "comment_body_sha256": "e26ce93ff45530ef0f086278ccf194ac1ce0744c8cf42de571e61aeab6b63ace",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c4258bdcacb11be2930a995d33175c48a7c88ef6)",
+      "expected_head_sha": "c4258bdcacb11be2930a995d33175c48a7c88ef6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T10:18:25.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-channel-bookmarks",
+        "head_sha": "c4258bdcacb11be2930a995d33175c48a7c88ef6",
         "cluster_id": null,
         "job_path": null
       }
