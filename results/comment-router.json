@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:33:59.117Z",
+  "updated_at": "2026-08-31T17:34:02.423Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134064:5477462659:2026-08-31T12:27:22Z:clawsweeper_needs_human",
-      "comment_id": "5477462659",
-      "comment_version_key": "5477462659:2026-08-31T12:27:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134064#issuecomment-5477462659",
-      "comment_created_at": "2026-08-31T11:09:29Z",
-      "comment_updated_at": "2026-08-31T12:27:22Z",
-      "comment_body_sha256": "07528896c2bd2877649ed99a02435db4bffab06296d4190c77f80fc6b7fd84a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134064,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The sanitizer is a prompt-injection boundary, and its exact head still has queued security and changed-path checks; merge should wait for those results. (sha=a298f8c68a5c27be3bbfc2732d9f75cfc1438532)",
-      "expected_head_sha": "a298f8c68a5c27be3bbfc2732d9f75cfc1438532",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T12:47:52.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-external-content-scans",
-        "head_sha": "a298f8c68a5c27be3bbfc2732d9f75cfc1438532",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131362:5450164810:2026-08-31T12:46:56Z:clawsweeper_needs_human",
       "comment_id": "5450164810",
@@ -33062,6 +33029,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134299:5482020491:2026-08-31T17:29:41Z:re_review",
+      "comment_id": "5482020491",
+      "comment_version_key": "5482020491:2026-08-31T17:29:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134299#issuecomment-5482020491",
+      "comment_created_at": "2026-08-31T17:29:41Z",
+      "comment_updated_at": "2026-08-31T17:29:41Z",
+      "comment_body_sha256": "6aa14f5ded41207fd2724d9cd7a01af6e91023bbd8be9f8d4710e9187684a9d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134299,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T17:34:00.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pollybot/fix-125694-uninstall-defaults",
+        "head_sha": "03fc0860b4eaf824ce7d4ed192152fb3168edfba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
