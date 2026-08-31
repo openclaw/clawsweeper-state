@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T14:39:58.023Z",
+  "updated_at": "2026-08-31T14:40:00.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5382141851:2026-08-22T19:17:40Z:re_review",
-      "comment_id": "5382141851",
-      "comment_version_key": "5382141851:2026-08-22T19:17:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5382141851",
-      "comment_created_at": "2026-08-22T19:17:40Z",
-      "comment_updated_at": "2026-08-22T19:17:40Z",
-      "comment_body_sha256": "f88ad507f0dd4cd9e42db383ae8c00b410198c778c96443b1f4504aa15c59a31",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:38:19.972Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5404205808:2026-08-25T02:18:35Z:re_review",
       "comment_id": "5404205808",
@@ -32537,6 +32510,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1322:5477789840:2026-08-31T14:39:01Z:clawsweeper_needs_human",
+      "comment_id": "5477789840",
+      "comment_version_key": "5477789840:2026-08-31T14:39:01Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1322#issuecomment-5477789840",
+      "comment_created_at": "2026-08-31T11:41:43Z",
+      "comment_updated_at": "2026-08-31T14:39:01Z",
+      "comment_body_sha256": "11355c5ab21a6fca3cfe8828ef3645a6d313ece04ce4411de6964ea39fe8f535",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1322,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared wrapper now observes failures for all Worker-to-Queue calls; the first deployment should confirm private bounded logs and unchanged sanitized responses for platform-generat... (sha=279512f1631467955258264cf28e3607845481ca)",
+      "expected_head_sha": "279512f1631467955258264cf28e3607845481ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T14:40:00.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-147-queue-correlation",
+        "head_sha": "279512f1631467955258264cf28e3607845481ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
