@@ -2,21 +2,21 @@
 repo: "openclaw/fs-safe"
 cluster_id: "automerge-openclaw-fs-safe-171"
 mode: "autonomous"
-run_id: "33377542496"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33377542496"
+run_id: "33379741107"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33379741107"
 head_sha: "206fe726bbadaae32dcb9822a2511a351a5c9317"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-08-31T10:56:40.178Z"
+published_at: "2026-08-31T11:56:42.094Z"
 canonical: "#171"
 canonical_issue: null
 canonical_pr: "#171"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 0
+fix_blocked: 1
 apply_executed: 0
-apply_blocked: 1
+apply_blocked: 0
 apply_skipped: 0
 needs_human_count: 0
 ---
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/fs-safe
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33377542496](https://github.com/openclaw/clawsweeper/actions/runs/33377542496)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33379741107](https://github.com/openclaw/clawsweeper/actions/runs/33379741107)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -44,9 +44,9 @@ Make PR #171 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 | Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
-| Apply blocked | 1 |
+| Apply blocked | 0 |
 | Apply skipped | 0 |
 | Needs human | 0 |
 
@@ -54,13 +54,14 @@ Make PR #171 merge-ready for ClawSweeper automerge. Rebase onto latest main, add
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| repair_contributor_branch | pushed | https://github.com/openclaw/fs-safe/pull/171 |  |  |
+| repair_contributor_branch | blocked | https://github.com/openclaw/fs-safe/pull/171 |  | source PR #171 changed during the repair settle window; requeue against the latest head |
+| automerge_repair_outcome_comment | updated | #171 |  |  |
 
 ## Apply Actions
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #171 | merge_canonical | blocked | fix_pr | job does not allow merge |
+| _None_ |  |  |  |  |
 
 ## Worker Action Matrix
 
