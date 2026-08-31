@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:45:30.969Z",
+  "updated_at": "2026-08-31T04:45:39.688Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3285:5472349621:2026-08-31T00:48:01Z:re_review",
-      "comment_id": "5472349621",
-      "comment_version_key": "5472349621:2026-08-31T00:48:01Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5472349621",
-      "comment_created_at": "2026-08-31T00:48:01Z",
-      "comment_updated_at": "2026-08-31T00:48:01Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3285,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T00:48:46.865Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/integrate-krill-switch-flags",
-        "head_sha": "e705d21939c288686fefa5b54f9d3320c99c86ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133665:5472354963:2026-08-31T00:48:57Z:clawsweeper_needs_human",
       "comment_id": "5472354963",
@@ -32408,6 +32361,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T04:45:30.969Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3530:5413278014:2026-08-31T04:41:31Z:clawsweeper_needs_human",
+      "comment_id": "5413278014",
+      "comment_version_key": "5413278014:2026-08-31T04:41:31Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3530#issuecomment-5413278014",
+      "comment_created_at": "2026-08-25T16:11:02Z",
+      "comment_updated_at": "2026-08-31T04:41:31Z",
+      "comment_body_sha256": "29148e80a89e95a55e7b3e55d1e1ae743d7a885e356e074c04cb35c52052ed56",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3530,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact PR head has a reported failing local-auth browser test; merging before it is classified could carry an incompatible runtime update or conceal test instability. (sha=5619fcaed96a82b220c4c1f7c2f9a9517e1784ec)",
+      "expected_head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:45:39.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/production-minor-and-patch-d4c9adcfe4",
+        "head_sha": "5619fcaed96a82b220c4c1f7c2f9a9517e1784ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
