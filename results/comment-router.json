@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T18:17:42.481Z",
+  "updated_at": "2026-08-31T18:18:24.632Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134056:5477351919:2026-08-31T13:09:56Z:clawsweeper_needs_human",
-      "comment_id": "5477351919",
-      "comment_version_key": "5477351919:2026-08-31T13:09:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134056#issuecomment-5477351919",
-      "comment_created_at": "2026-08-31T10:57:57Z",
-      "comment_updated_at": "2026-08-31T13:09:56Z",
-      "comment_body_sha256": "444407ea46d6e21da3484acbba07a7a4dbd819ae00c692354b1cd59a309c3059",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch changes the private state that releases audio and consumes process output; exact-head CI remains queued, so it should not merge until that gate is green. (sha=686475fbe2399f5bd289c6362722ca497e94dcaa)",
-      "expected_head_sha": "686475fbe2399f5bd289c6362722ca497e94dcaa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T13:23:36.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tts-nested-result-state",
-        "head_sha": "686475fbe2399f5bd289c6362722ca497e94dcaa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134051:5477407085:2026-08-31T13:20:39Z:clawsweeper_needs_human",
       "comment_id": "5477407085",
@@ -32972,6 +32939,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134357:5482573472:2026-08-31T18:17:21Z:clawsweeper_needs_human",
+      "comment_id": "5482573472",
+      "comment_version_key": "5482573472:2026-08-31T18:17:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134357#issuecomment-5482573472",
+      "comment_created_at": "2026-08-31T18:17:21Z",
+      "comment_updated_at": "2026-08-31T18:17:21Z",
+      "comment_body_sha256": "f1f8850709bc0e7d4dc9707a5d0aaf995db8a68b33b9768b2e776eafcd0495e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134357,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The review host has Node 24.19 rather than Node 26.5, so the engine-specific failure is supported by the maintainer’s supplied terminal trace rather than an independently rerun Node 2... (sha=9fa523d0fc13a45e0a9e3d354010ccee9fed4c0c)",
+      "expected_head_sha": "9fa523d0fc13a45e0a9e3d354010ccee9fed4c0c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T18:18:24.632Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/astral-token-strip",
+        "head_sha": "9fa523d0fc13a45e0a9e3d354010ccee9fed4c0c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
