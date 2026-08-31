@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:52:06.636Z",
+  "updated_at": "2026-08-31T11:52:30.602Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133964:5475822286:2026-08-31T08:31:08Z:clawsweeper_auto_repair",
-      "comment_id": "5475822286",
-      "comment_version_key": "5475822286:2026-08-31T08:31:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133964#issuecomment-5475822286",
-      "comment_created_at": "2026-08-31T08:31:08Z",
-      "comment_updated_at": "2026-08-31T08:31:08Z",
-      "comment_body_sha256": "2b527ca2d8d214fc28b941c089f293c8d223886ac7b8697a1247035f92c55242",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133964,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3048891a2a063e687931406ecd3e18f2807e871b)",
-      "expected_head_sha": "3048891a2a063e687931406ecd3e18f2807e871b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T08:37:28.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-133923",
-        "head_sha": "3048891a2a063e687931406ecd3e18f2807e871b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133966:5475847620:2026-08-31T08:33:49Z:clawsweeper_needs_human",
       "comment_id": "5475847620",
@@ -31961,6 +31928,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:185:5477841865:2026-08-31T11:51:32Z:clawsweeper_needs_human",
+      "comment_id": "5477841865",
+      "comment_version_key": "5477841865:2026-08-31T11:51:32Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/185#issuecomment-5477841865",
+      "comment_created_at": "2026-08-31T11:46:48Z",
+      "comment_updated_at": "2026-08-31T11:51:32Z",
+      "comment_body_sha256": "81cf813783312ad636f23abdc30459944bdf01e4c091b20251ef0c421a854c95",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 185,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is readSidecarLockSnapshot, reached after exclusive-create contention in sidecar acquisition; the supplied materia... (sha=6a532994a25033cfebbb040cb87f07c22658a3e1)",
+      "expected_head_sha": "6a532994a25033cfebbb040cb87f07c22658a3e1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T11:52:30.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sidecar-unlinked-snapshot",
+        "head_sha": "6a532994a25033cfebbb040cb87f07c22658a3e1",
+        "cluster_id": "automerge-openclaw-fs-safe-185",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-185.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
