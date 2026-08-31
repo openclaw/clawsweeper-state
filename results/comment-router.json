@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:59:22.445Z",
+  "updated_at": "2026-08-31T19:59:34.621Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134170:5479648469:2026-08-31T15:25:01Z:clawsweeper_needs_human",
-      "comment_id": "5479648469",
-      "comment_version_key": "5479648469:2026-08-31T15:25:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134170#issuecomment-5479648469",
-      "comment_created_at": "2026-08-31T14:15:46Z",
-      "comment_updated_at": "2026-08-31T15:25:01Z",
-      "comment_body_sha256": "80c30fc9689971538e2ce3a565c6be7d1b8c71909e77cc7d49874612d587fdec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134170,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The change controls whether accepted speech reaches channel delivery and whether timed-out media is suppressed; a maintainer should confirm the exact Codex dynamic-tool contract and c... (sha=31a66f76a87996eeba29b618cc8517c3faefd34e)",
-      "expected_head_sha": "31a66f76a87996eeba29b618cc8517c3faefd34e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T15:53:39.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-tool-media-lifecycle",
-        "head_sha": "31a66f76a87996eeba29b618cc8517c3faefd34e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134189:5480041783:2026-08-31T15:28:38Z:clawsweeper_auto_repair",
       "comment_id": "5480041783",
@@ -32181,6 +32148,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130563:5483762801:2026-08-31T19:58:46Z:re_review",
+      "comment_id": "5483762801",
+      "comment_version_key": "5483762801:2026-08-31T19:58:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130563#issuecomment-5483762801",
+      "comment_created_at": "2026-08-31T19:58:46Z",
+      "comment_updated_at": "2026-08-31T19:58:46Z",
+      "comment_body_sha256": "b2d5f3e88b9e1891a50eec45c36a39208d350bd6ca4d1a1e15dab418063ccde1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130563,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T19:59:32.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ocpr/auto-issue-20260826-2",
+        "head_sha": "04390cdae4f990c2c8e199ce7dde86098004e1d8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
