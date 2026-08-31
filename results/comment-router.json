@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:41:12.646Z",
+  "updated_at": "2026-08-31T04:41:59.968Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133034:5470996527:2026-08-31T00:45:23Z:clawsweeper_needs_human",
-      "comment_id": "5470996527",
-      "comment_version_key": "5470996527:2026-08-31T00:45:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133034#issuecomment-5470996527",
-      "comment_created_at": "2026-08-30T20:12:36Z",
-      "comment_updated_at": "2026-08-31T00:45:23Z",
-      "comment_body_sha256": "b21ea7b8b1e2db43caf781b71b8efb5d832ef18a2f10d61dcbf8c8531a978d61",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133034,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 16 lines for a new cache-fence input; this is justified because no existing fence observes accepted observer-digest writes. (sha=afd26c0259ddf10382d4165d7a2075c2dda445c1)",
-      "expected_head_sha": "afd26c0259ddf10382d4165d7a2075c2dda445c1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T00:46:55.755Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "session-observer-digest-fence",
-        "head_sha": "afd26c0259ddf10382d4165d7a2075c2dda445c1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133624:5472055860:2026-08-31T00:46:28Z:clawsweeper_needs_human",
       "comment_id": "5472055860",
@@ -32394,6 +32361,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:183:5473814106:2026-08-31T04:41:14Z:automerge",
+      "comment_id": "5473814106",
+      "comment_version_key": "5473814106:2026-08-31T04:41:14Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/183#issuecomment-5473814106",
+      "comment_created_at": "2026-08-31T04:41:14Z",
+      "comment_updated_at": "2026-08-31T04:41:14Z",
+      "comment_body_sha256": "4a2a0201e38f15c5ecf93079a1e6b1caff598287f9d93b2364618839896e85f3",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 183,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-31T04:41:54.461Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/regular-append-exact-identity",
+        "head_sha": "e9faa7c6a73f72bc65164205ba4cd5e584188a31",
+        "cluster_id": "automerge-openclaw-fs-safe-183",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-183.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-183.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
