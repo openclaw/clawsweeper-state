@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T18:46:07.911Z",
+  "updated_at": "2026-08-31T18:46:25.004Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5452711125:2026-08-28T12:50:31Z:re_review",
-      "comment_id": "5452711125",
-      "comment_version_key": "5452711125:2026-08-28T12:50:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5452711125",
-      "comment_created_at": "2026-08-28T12:50:31Z",
-      "comment_updated_at": "2026-08-28T12:50:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T13:39:36.293Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5456739067:2026-08-28T19:14:14Z:re_review",
       "comment_id": "5456739067",
@@ -33022,6 +32995,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134032:5476927295:2026-08-31T18:45:06Z:clawsweeper_needs_human",
+      "comment_id": "5476927295",
+      "comment_version_key": "5476927295:2026-08-31T18:45:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5476927295",
+      "comment_created_at": "2026-08-31T10:17:36Z",
+      "comment_updated_at": "2026-08-31T18:45:06Z",
+      "comment_body_sha256": "016ae8cd6465740b78a55fdac3264406dcc1189e7a20dcfddf1ad354cb87d962",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Slack bookmark action branch, reached from the message-action dispatcher, but the submitted evidence replac... (sha=013bd4dc482bfb9ef339e5317b3464410419bcce)",
+      "expected_head_sha": "013bd4dc482bfb9ef339e5317b3464410419bcce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T18:46:25.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-channel-bookmarks",
+        "head_sha": "013bd4dc482bfb9ef339e5317b3464410419bcce",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
