@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133981",
+  "mode": "autonomous",
+  "run_id": "33375256471",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33375256471",
+  "head_sha": "b3e6adf72579bf69671e1034aeefc019449e3d63",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133981.md",
+  "published_at": "2026-08-31T09:22:24.995Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133981",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133981",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a repair verdict: required sibling ../codex source is absent, and this read-only checkout cannot clone it, install dependencies, create the regression fixture, or edit the branch. The supplied current-main evidence localizes the reported path to the Memory Core doctor migration; a narrow, test-audited fix artifact is ready for a writable executor after the Codex gate is satisfied.",
+  "actions": [
+    {
+      "target": "#133981",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133981",
+      "candidate_fix": null,
+      "reason": "Canonical issue remains open while the repair executor completes the blocked implementation path."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133981",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133981",
+      "candidate_fix": null,
+      "reason": "Blocked on the mandatory Codex-source inspection and a writable/dependency-ready executor; no GitHub mutation was attempted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133981",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133981",
+      "candidate_fix": null,
+      "reason": "Artifact is constrained for a writable executor, but cannot be implemented or locally validated in this worker environment."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#133981",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
