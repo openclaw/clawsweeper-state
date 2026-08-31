@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T00:33:01.063Z",
+  "updated_at": "2026-08-31T00:33:03.249Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133034:5470891828:2026-08-30T19:51:07Z:re_review",
-      "comment_id": "5470891828",
-      "comment_version_key": "5470891828:2026-08-30T19:51:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133034#issuecomment-5470891828",
-      "comment_created_at": "2026-08-30T19:51:07Z",
-      "comment_updated_at": "2026-08-30T19:51:07Z",
-      "comment_body_sha256": "9d84a27ebafd6d82c538bd29353daf35f03686353aebeb469528753a2ed5eb4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133034,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T19:51:45.865Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "session-observer-digest-fence",
-        "head_sha": "afd26c0259ddf10382d4165d7a2075c2dda445c1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133406:5470862370:2026-08-30T19:44:58Z:re_review",
       "comment_id": "5470862370",
@@ -33818,6 +33771,39 @@
         "kind": "pull_request",
         "branch": "openclaw/what-s-with-all-these-emojis-do-we-show-that-for-progress-it-s",
         "head_sha": "5b673909e832f263e8c59de74bd87eaf5e81ded1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:4:5464290648:2026-08-30T23:52:28Z:clawsweeper_needs_human",
+      "comment_id": "5464290648",
+      "comment_version_key": "5464290648:2026-08-30T23:52:28Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/4#issuecomment-5464290648",
+      "comment_created_at": "2026-08-29T19:05:12Z",
+      "comment_updated_at": "2026-08-30T23:52:28Z",
+      "comment_body_sha256": "55ed1d8c8d025d67ce8e45798fbec8b477edd1b7e1ca6d26a77c0bbd0e740b76",
+      "repo": "openclaw/telemetry",
+      "issue_number": 4,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the public statistics handler, but the supplied Node trace and added tests replace Analytics Engine, caches.def... (sha=cf30fde2bdd76d7c3bc64f49c8b89cbe812a74a3)",
+      "expected_head_sha": "cf30fde2bdd76d7c3bc64f49c8b89cbe812a74a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T00:33:03.249Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f002-stats-cache",
+        "head_sha": "cf30fde2bdd76d7c3bc64f49c8b89cbe812a74a3",
         "cluster_id": null,
         "job_path": null
       }
