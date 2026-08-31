@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T09:18:42.243Z",
+  "updated_at": "2026-08-31T09:19:16.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5306286478:2026-08-16T07:17:42Z:re_review",
-      "comment_id": "5306286478",
-      "comment_version_key": "5306286478:2026-08-16T07:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5306286478",
-      "comment_created_at": "2026-08-16T07:17:42Z",
-      "comment_updated_at": "2026-08-16T07:17:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T05:14:50.037Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5307592000:2026-08-16T13:08:54Z:re_review",
       "comment_id": "5307592000",
@@ -33002,6 +32975,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133843:5474466074:2026-08-31T09:18:19Z:clawsweeper_needs_human",
+      "comment_id": "5474466074",
+      "comment_version_key": "5474466074:2026-08-31T09:18:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133843#issuecomment-5474466074",
+      "comment_created_at": "2026-08-31T06:11:43Z",
+      "comment_updated_at": "2026-08-31T09:18:19Z",
+      "comment_body_sha256": "623ea5a2bc0937130400bb6c9b0d27ef00a7c1af29057e4c8a05e507450e61a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133843,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Shared plans intentionally fail validation on v2026.8.1 because they omit agentId; this prevents wrong-store writes but makes plan generation and application a one-way version upgrade. (sha=a1c4cff16e29bee955f40adcc0192f10b174605d)",
+      "expected_head_sha": "a1c4cff16e29bee955f40adcc0192f10b174605d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T09:19:16.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/secrets-shared-auth-profile-owner-133296",
+        "head_sha": "a1c4cff16e29bee955f40adcc0192f10b174605d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
