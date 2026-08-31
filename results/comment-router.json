@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:53:13.877Z",
+  "updated_at": "2026-08-31T11:53:18.367Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133800:5473886438:2026-08-31T08:37:23Z:clawsweeper_auto_repair",
-      "comment_id": "5473886438",
-      "comment_version_key": "5473886438:2026-08-31T08:37:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133800#issuecomment-5473886438",
-      "comment_created_at": "2026-08-31T04:51:51Z",
-      "comment_updated_at": "2026-08-31T08:37:23Z",
-      "comment_body_sha256": "35970bfccc7327e2343f3aa94546b5f76d3cfa6c95a920c460a4f645f0725afd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133800,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bc8d1f3754642c1dc122d017ba4270cd66ddc6a4)",
-      "expected_head_sha": "bc8d1f3754642c1dc122d017ba4270cd66ddc6a4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T08:38:22.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-scaffold-public-sdk-main",
-        "head_sha": "bc8d1f3754642c1dc122d017ba4270cd66ddc6a4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133970:5475888869:2026-08-31T08:38:05Z:clawsweeper_auto_repair",
       "comment_id": "5475888869",
@@ -32017,6 +31984,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129635:5419027622:2026-08-31T11:52:36Z:clawsweeper_needs_human",
+      "comment_id": "5419027622",
+      "comment_version_key": "5419027622:2026-08-31T11:52:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129635#issuecomment-5419027622",
+      "comment_created_at": "2026-08-26T00:50:51Z",
+      "comment_updated_at": "2026-08-31T11:52:36Z",
+      "comment_body_sha256": "9e9651b12bcd8ef4259ca732753d7ce9cf32a422c1a0990548e0e0d0e1534f8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129635,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added E2E is a potentially sufficient ephemeral-gateway harness because it exercises real routing with mock channel and provider boundaries...; Review finding: [P1] Unify successor wake ownership before scheduling retries — src/agents/subagents/announce/subagent-announce.requester-settle-wake.ts:561-579 - [P1] Create the... (sha=7e11e906a66ce9959c978e4ac3bc0e314f3806cb)",
+      "expected_head_sha": "7e11e906a66ce9959c978e4ac3bc0e314f3806cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T11:53:18.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129455-requester-settle-continuation",
+        "head_sha": "7e11e906a66ce9959c978e4ac3bc0e314f3806cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
