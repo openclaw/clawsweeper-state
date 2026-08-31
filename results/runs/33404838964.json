@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134187",
+  "mode": "autonomous",
+  "run_id": "33404838964",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33404838964",
+  "head_sha": "659dee73d0706fee9776f7986d9861e82b897d24",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134187.md",
+  "published_at": "2026-08-31T15:18:49.649Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134187",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134187",
+  "canonical_pr": null,
+  "summary": "#134187 remains the canonical narrow bug. The supplied current-main SHA c681af5a4d2921c32f50c92dbcf6ee0adde181e3 is absent from this read-only checkout (HEAD ce178cb3f2ca3e5e59ed7c6fc68a498ff42ce900), ../codex is absent, and dependencies cannot be installed. The visible base confirms the classifier omission, but implementation and fresh-main regression proof are blocked.",
+  "actions": [
+    {
+      "target": "#134186",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#134187",
+      "candidate_fix": null,
+      "reason": "Keep open as the related announce-retry subcluster."
+    },
+    {
+      "target": "#134187",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134187",
+      "candidate_fix": null,
+      "reason": "A fresh writable checkout at the supplied main SHA, dependencies, and the required ../codex source inspection are needed before editing or proving the regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134187",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134187",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a fresh writable executor, but cannot be implemented or validated in this worker."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#134187",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
