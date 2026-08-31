@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Gemini inline memory embeddings so a call with more than the verified endpoint maximum is emitted as ordered requests of at most 100 inputs and returns one ordered embedding list. Keep the limit in extensions/google/embedding-provider.ts using the existing public chunkItems helper where suitable; do not add configuration, alter shared Memory Core batching policy, or change the remote async batch path. Add a regression test in extensions/google/embedding-provider.test.ts that supplies 101 inputs, verifies two outbound batchEmbedContents requests sized 100 and 1, and verifies ordered combined output. Apply the test-audit gate before adding coverage. Recheck the current Google contract with authorized official documentation or a redacted live test before landing. Do not edit CHANGELOG.md; include release-note context in the PR body.
+Repair the Gemini inline memory embedding request-count defect for https://github.com/openclaw/openclaw/issues/134015. First verify Google’s current batchEmbedContents request limit from an authoritative source or an approved live provider probe; do not add config. In extensions/google/embedding-provider.ts, make the private inline document embedding path partition inputs at that provider contract and concatenate validated results in original order, preserving cancellation and existing HTTP/error behavior. Add a provider-bound regression in extensions/google/embedding-provider.test.ts proving 101 inputs produce two request bodies at the verified bound and retain ordered results; consider a narrowly scoped generic recovery classification only if supported by an authoritative provider error contract. Do not impose a Google-specific cap on Memory Core’s provider-neutral byte batching, alter remote batch policy, or edit release-owned CHANGELOG.md. Put release-note context in the PR body.
 
 Likely files:
 
@@ -76,8 +76,9 @@ Likely files:
 
 Validation:
 
-- pnpm test extensions/google/embedding-provider.test.ts
-- pnpm check:changed -- extensions/google/embedding-provider.ts extensions/google/embedding-provider.test.ts
+- node scripts/run-vitest.mjs extensions/google/embedding-provider.test.ts
+- node scripts/run-vitest.mjs extensions/memory-core/src/memory/manager-embedding-policy.test.ts extensions/memory-core/src/memory/manager-embedding-ops.retry.test.ts
+- node scripts/check-changed.mjs -- extensions/google/embedding-provider.ts extensions/google/embedding-provider.test.ts
 
 ## Operator Prompt
 
