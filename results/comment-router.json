@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T14:56:09.169Z",
+  "updated_at": "2026-08-31T14:57:09.745Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132437:5460887716:2026-08-31T10:35:19Z:clawsweeper_needs_human",
-      "comment_id": "5460887716",
-      "comment_version_key": "5460887716:2026-08-31T10:35:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132437#issuecomment-5460887716",
-      "comment_created_at": "2026-08-29T06:45:39Z",
-      "comment_updated_at": "2026-08-31T10:35:19Z",
-      "comment_body_sha256": "af99454bd6ca850030bf5e6a26b78ac352465aa59c4d31ac493009c30105b1ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132437,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A misclassified read action could suppress needed reconciliation after a mutating operation, so each owner classification needs exact-head validation. (sha=220235caa30afd15d667ea47b0990c8207735f5c)",
-      "expected_head_sha": "220235caa30afd15d667ea47b0990c8207735f5c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:40:34.624Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-code-mode-phase1-gaps-131340",
-        "head_sha": "220235caa30afd15d667ea47b0990c8207735f5c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133370:5469834130:2026-08-31T10:35:13Z:clawsweeper_auto_repair",
       "comment_id": "5469834130",
@@ -32799,6 +32766,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T14:56:08.789Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133862:5474608491:2026-08-31T14:56:13Z:clawsweeper_needs_human",
+      "comment_id": "5474608491",
+      "comment_version_key": "5474608491:2026-08-31T14:56:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133862#issuecomment-5474608491",
+      "comment_created_at": "2026-08-31T06:28:22Z",
+      "comment_updated_at": "2026-08-31T14:56:13Z",
+      "comment_body_sha256": "52a11472db137cf3bc3924c4003c070e531461f58242651208129fb2123c05c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is +44 lines. The equivalent idle-race helper is core-private, while the extension boundary forbids importing src/**; adding a Plugin SDK surface for this one lifecycl... (sha=b2d25eefea667795a55aa5c35b15fe3b70103fb0)",
+      "expected_head_sha": "b2d25eefea667795a55aa5c35b15fe3b70103fb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T14:57:09.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-wait-for-idle-deadline",
+        "head_sha": "b2d25eefea667795a55aa5c35b15fe3b70103fb0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
