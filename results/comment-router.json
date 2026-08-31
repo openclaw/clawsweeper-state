@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:53:39.775Z",
+  "updated_at": "2026-08-31T04:54:29.935Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3285:5186731649:2026-08-31T01:02:03Z:clawsweeper_needs_human",
-      "comment_id": "5186731649",
-      "comment_version_key": "5186731649:2026-08-31T01:02:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3285#issuecomment-5186731649",
-      "comment_created_at": "2026-08-05T02:11:24Z",
-      "comment_updated_at": "2026-08-31T01:02:03Z",
-      "comment_body_sha256": "0ebc562547dcd7ee5bd38f8ab05adc03614c112f7880be8bf6c6d3973f9f8f52",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3285,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Review the newly executed flag SDK** - The integrity-pinned package is newly imported by the SSR evaluator and browser provider; its source/types were not present in this checkout, so t...; Review finding: [medium] Review the newly executed flag SDK — package.json:105 (sha=155769e513543bcc1b08d6ee2ef85c6be20d4e72)",
-      "expected_head_sha": "155769e513543bcc1b08d6ee2ef85c6be20d4e72",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T01:02:46.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/integrate-krill-switch-flags",
-        "head_sha": "155769e513543bcc1b08d6ee2ef85c6be20d4e72",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1686:5472230351:2026-08-31T01:02:34Z:clawsweeper_needs_human",
       "comment_id": "5472230351",
@@ -32501,6 +32468,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T04:53:39.775Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3550:5470477879:2026-08-31T04:53:48Z:clawsweeper_auto_repair",
+      "comment_id": "5470477879",
+      "comment_version_key": "5470477879:2026-08-31T04:53:48Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3550#issuecomment-5470477879",
+      "comment_created_at": "2026-08-30T18:26:37Z",
+      "comment_updated_at": "2026-08-31T04:53:48Z",
+      "comment_body_sha256": "ac889a4105d2e9546d1e34f85a7136bf13bd4638744f60564ea333226c229597",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3550,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e6cf5adc3fa2b64f2455bad2c7a5fca81d4e2f5b)",
+      "expected_head_sha": "e6cf5adc3fa2b64f2455bad2c7a5fca81d4e2f5b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:54:29.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-security-audit-metadata",
+        "head_sha": "e6cf5adc3fa2b64f2455bad2c7a5fca81d4e2f5b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
