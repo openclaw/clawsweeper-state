@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:45:31.614Z",
+  "updated_at": "2026-08-31T12:46:11.965Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133921:5476399809:2026-08-31T09:27:07Z:re_review",
-      "comment_id": "5476399809",
-      "comment_version_key": "5476399809:2026-08-31T09:27:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133921#issuecomment-5476399809",
-      "comment_created_at": "2026-08-31T09:27:07Z",
-      "comment_updated_at": "2026-08-31T09:27:07Z",
-      "comment_body_sha256": "ab2c52b42edd5b027070db4f41b520fd374addc0f29457ae1fd9df76e8fdfef3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133921,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T09:35:00.646Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/doctor-restore-exclusive-publication",
-        "head_sha": "1732187512246717c8224faac7273eef87917da7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133921:5475206433:2026-08-31T09:34:20Z:clawsweeper_needs_human",
       "comment_id": "5475206433",
@@ -31936,6 +31889,39 @@
         "kind": "pull_request",
         "branch": "fix/assistant-error-copy",
         "head_sha": "ddcb7c2b32e554bd2fded15111cb3b53e8490229",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133947:5475491917:2026-08-31T12:45:26Z:clawsweeper_needs_human",
+      "comment_id": "5475491917",
+      "comment_version_key": "5475491917:2026-08-31T12:45:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133947#issuecomment-5475491917",
+      "comment_created_at": "2026-08-31T08:00:59Z",
+      "comment_updated_at": "2026-08-31T12:45:26Z",
+      "comment_body_sha256": "95e5c7558b40fff98494b601d24c209a783f2324252a08a7b3c8d9a2a7d8d1a6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133947,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes durable presentation state for newly created Talk consult rows; exact-head CI was still running in the captured PR state and should complete green before merge. (sha=3a1bd11e0611468721f0d2dec2d3afc85cfa34a8)",
+      "expected_head_sha": "3a1bd11e0611468721f0d2dec2d3afc85cfa34a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:46:11.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-agent-consult-hidden-provenance",
+        "head_sha": "3a1bd11e0611468721f0d2dec2d3afc85cfa34a8",
         "cluster_id": null,
         "job_path": null
       }
