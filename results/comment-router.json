@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T08:32:51.360Z",
+  "updated_at": "2026-08-31T08:33:10.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5473351266:2026-08-31T03:32:09Z:re_review",
-      "comment_id": "5473351266",
-      "comment_version_key": "5473351266:2026-08-31T03:32:09Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5473351266",
-      "comment_created_at": "2026-08-31T03:32:09Z",
-      "comment_updated_at": "2026-08-31T03:32:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T04:12:56.564Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task/ec/codex-proxy-attribution",
-        "head_sha": "5576aeb04455764490d3e27825ffb7b12855a45a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133772:5473598641:2026-08-31T04:12:12Z:clawsweeper_needs_human",
       "comment_id": "5473598641",
@@ -33079,6 +33032,39 @@
         "kind": "pull_request",
         "branch": "chore/deps-refresh-20260830",
         "head_sha": "e8e74d62af7c1a3fded4b4088412905c7466c019",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126887:5363527632:2026-08-31T08:31:50Z:clawsweeper_needs_human",
+      "comment_id": "5363527632",
+      "comment_version_key": "5363527632:2026-08-31T08:31:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126887#issuecomment-5363527632",
+      "comment_created_at": "2026-08-21T00:02:50Z",
+      "comment_updated_at": "2026-08-31T08:31:50Z",
+      "comment_body_sha256": "eb49807b6bc4171738bd31c54fa9527dfe4baea2e9a2cfb21464f5a97009e5b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126887,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds 2,035 net production/automation lines to a release security path; it remains deliberately supplemental and does not attest to final publication bytes. (sha=7467b195226f0cce25b04a8c793491089af6e91e)",
+      "expected_head_sha": "7467b195226f0cce25b04a8c793491089af6e91e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T08:33:10.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-plugin-security-scanner",
+        "head_sha": "7467b195226f0cce25b04a8c793491089af6e91e",
         "cluster_id": null,
         "job_path": null
       }
