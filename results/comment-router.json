@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T05:14:50.037Z",
+  "updated_at": "2026-08-31T05:15:51.989Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/summarize:394:5398265427:2026-08-31T01:33:39Z:clawsweeper_needs_human",
-      "comment_id": "5398265427",
-      "comment_version_key": "5398265427:2026-08-31T01:33:39Z",
-      "comment_url": "https://github.com/steipete/summarize/pull/394#issuecomment-5398265427",
-      "comment_created_at": "2026-08-24T16:33:30Z",
-      "comment_updated_at": "2026-08-31T01:33:39Z",
-      "comment_body_sha256": "bb285ec75bff8f7bb8ba7b515760a51545909b5b57b066e3ec4e77d1f595e3e8",
-      "repo": "steipete/summarize",
-      "issue_number": 394,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No mechanical repair is needed; this PR awaits normal maintainer merge review. (sha=719ee87fb508d28aeb133495e1af92285ac05386)",
-      "expected_head_sha": "719ee87fb508d28aeb133495e1af92285ac05386",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T01:39:37.483Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/decode-entities-single-pass",
-        "head_sha": "719ee87fb508d28aeb133495e1af92285ac05386",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1249:5419033553:2026-08-31T01:40:37Z:clawsweeper_needs_human",
       "comment_id": "5419033553",
@@ -32037,6 +32004,53 @@
       "status": "skipped",
       "processed_at": "2026-08-31T05:14:50.037Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:77184:5474046854:2026-08-31T05:15:06Z:re_review",
+      "comment_id": "5474046854",
+      "comment_version_key": "5474046854:2026-08-31T05:15:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/77184#issuecomment-5474046854",
+      "comment_created_at": "2026-08-31T05:15:06Z",
+      "comment_updated_at": "2026-08-31T05:15:06Z",
+      "comment_body_sha256": "22b780766c21d6c2f018363290812641225b58b193621c88649e3e4c114f7eff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 77184,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head rebased on current main with the p2 docs finding fixed: the `plugin-sdk/command-status` row in `docs/plugins/sdk-subpaths.md` no longer implies a general plugin capability. it now states the supported acquisition path — dispatching the `status` gateway method from an authenticated plugin http route entitled with `contracts.gatewaymethoddispatch: [\"authenticated-request\"]`, a reviewed bundled/operator surface — and links the admin http rpc design page (https://docs.openclaw.ai/plugins/admin-http-rpc). the surface-budget conflict from the rebase is resolved additively (`4356`, +3 for the projections); `plugin-sdk:surface:check` and `check-changed` are clean, and the host-assignability test still passes. the remaining item is the maintainer decision on accepting the bounded public contract",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T05:15:49.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/76759-export-status-types",
+        "head_sha": "734024c6ccdc386e5c3a4a0d0ed539f957687434",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
