@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:47:10.135Z",
+  "updated_at": "2026-08-31T01:47:25.898Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132895:5465420168:2026-08-30T20:58:24Z:clawsweeper_needs_human",
-      "comment_id": "5465420168",
-      "comment_version_key": "5465420168:2026-08-30T20:58:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132895#issuecomment-5465420168",
-      "comment_created_at": "2026-08-29T23:09:51Z",
-      "comment_updated_at": "2026-08-30T20:58:24Z",
-      "comment_body_sha256": "9202365e3a53c72aac321845e7634b6dae0aae7df362ed25ffddb006f6e0702e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132895,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally removes the previously unscoped non-LINE /card text echo; existing users who relied on that undocumented behavior will instead continue through normal agent hand... (sha=a1995467007d0232dd825c0016a96ecc6c7a04bc)",
-      "expected_head_sha": "a1995467007d0232dd825c0016a96ecc6c7a04bc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T21:02:36.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-card-command-channel-scope",
-        "head_sha": "a1995467007d0232dd825c0016a96ecc6c7a04bc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132997:5466139637:2026-08-30T21:00:33Z:clawsweeper_needs_human",
       "comment_id": "5466139637",
@@ -34102,6 +34069,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128454:5472692841:2026-08-31T01:46:45Z:re_review",
+      "comment_id": "5472692841",
+      "comment_version_key": "5472692841:2026-08-31T01:46:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5472692841",
+      "comment_created_at": "2026-08-31T01:46:45Z",
+      "comment_updated_at": "2026-08-31T01:46:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128454,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T01:47:23.590Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media-reopened",
+        "head_sha": "15e16925a073043b7699b0e7060b3d65587f1961",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
