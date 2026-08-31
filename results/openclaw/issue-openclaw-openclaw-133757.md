@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133757"
 mode: "autonomous"
-run_id: "33353873056"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33353873056"
+run_id: "33355648120"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33355648120"
 head_sha: "c377cfc04209464760ed5a1537fa693c71e77cf5"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-31T03:41:36.924Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133757"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133757"
+published_at: "2026-08-31T04:13:00.710Z"
+canonical: "#133757"
+canonical_issue: "#133757"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33353873056](https://github.com/openclaw/clawsweeper/actions/runs/33353873056)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33355648120](https://github.com/openclaw/clawsweeper/actions/runs/33355648120)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/133757
+Canonical: #133757
 
 ## Summary
 
-Current main retains the Feishu group binding freshness defect. A narrow three-file repair is identified, but implementation is blocked: this checkout is read-only, dependencies cannot install, and the mandatory sibling ../codex source checkout is absent.
+#133757 is a reproducible Feishu group-routing bug. A narrow fix is defined, but this read-only checkout cannot create the branch or regression test; validation is additionally blocked by missing `tsx`, and the required sibling `../codex` source is absent.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Current main retains the Feishu group binding freshness defect. A narrow three-f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133757 | fix_needed | planned | canonical | Canonical bug: use one current runtime configuration snapshot for the entire inbound turn before account/group admission and route selection. |
-| #121970 | keep_closed | skipped | related | Already closed; do not mutate closed context refs. |
-| cluster:issue-openclaw-openclaw-133757 | build_fix_artifact | blocked | canonical | Only implementation is blocked by the restricted checkout; the diagnosis and narrow repair plan remain actionable. |
+| https://github.com/openclaw/openclaw/issues/133757 | fix_needed | planned | canonical | Implement the owner-boundary repair on the designated ClawSweeper branch once a write-enabled, dependency-complete checkout is available. |
+| https://github.com/openclaw/openclaw/pull/121970 | keep_closed | skipped | related | Historical overlapping context only; do not revive or close an already-closed PR. |
+| https://github.com/openclaw/openclaw/issues/133757 | build_fix_artifact | planned | canonical | The artifact preserves the requested narrow repair and test plan for deterministic execution. |
 
 ## Needs Human
 
