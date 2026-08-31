@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134297",
+  "mode": "autonomous",
+  "run_id": "33418824565",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33418824565",
+  "head_sha": "aba9826ab8c010a8f5a2b4411484dc4cb7e94f51",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134297.md",
+  "published_at": "2026-08-31T17:46:18.757Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134297",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134297",
+  "canonical_pr": null,
+  "summary": "#134297 is a current, narrow Gateway diagnostic bug. A bounded per-socket-source dedupe repair is ready as a new fix PR artifact; local implementation and validation are blocked because this checkout is read-only with no dependencies, and the mandatory sibling ../codex source is absent and cannot be cloned.",
+  "actions": [
+    {
+      "target": "#125369",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#134297",
+      "candidate_fix": null,
+      "reason": "Open, independent product/configuration work; no closure or fix action belongs in this bug-only cluster."
+    },
+    {
+      "target": "#125390",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context ref; no mutation is permitted or needed."
+    },
+    {
+      "target": "#134297",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134297",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only in this read-only, dependency-free checkout; the deterministic executor can apply the narrow artifact on clawsweeper/issue-openclaw-openclaw-134297."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134297",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134297",
+      "candidate_fix": null,
+      "reason": "Narrow non-security repair artifact for the canonical issue."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
