@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T21:04:28.771Z",
+  "updated_at": "2026-08-31T21:04:32.603Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134251:5481221944:2026-08-31T16:22:30Z:clawsweeper_needs_human",
-      "comment_id": "5481221944",
-      "comment_version_key": "5481221944:2026-08-31T16:22:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134251#issuecomment-5481221944",
-      "comment_created_at": "2026-08-31T16:22:30Z",
-      "comment_updated_at": "2026-08-31T16:22:30Z",
-      "comment_body_sha256": "d6a0050f934c21fb95d18d28302a1c54cbcfc6fc10febbddd2371d68760f8b88",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134251,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - No authenticated two-workspace Enterprise Grid trace is supplied; the PR explains that available Slack test credentials cannot exercise that live topology, while the focused handler a... (sha=544c4458ec3aa4127a186e301ee2247dd4a6bf1e)",
-      "expected_head_sha": "544c4458ec3aa4127a186e301ee2247dd4a6bf1e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:23:30.176Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-133932",
-        "head_sha": "544c4458ec3aa4127a186e301ee2247dd4a6bf1e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134263:5481223470:2026-08-31T16:22:38Z:clawsweeper_needs_human",
       "comment_id": "5481223470",
@@ -32253,6 +32220,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134400:5484535928:2026-08-31T21:03:13Z:re_review",
+      "comment_id": "5484535928",
+      "comment_version_key": "5484535928:2026-08-31T21:03:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134400#issuecomment-5484535928",
+      "comment_created_at": "2026-08-31T21:03:13Z",
+      "comment_updated_at": "2026-08-31T21:03:13Z",
+      "comment_body_sha256": "2f231b2d3acdc47ad19a1841fa4455241da3499d848d2f5f04064703fcf77d52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134400,
+      "author": "scotthuang",
+      "author_id": 1670837,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T21:04:30.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-preview-preserve-focus",
+        "head_sha": "fafc74649c9afc279e581883805d9b4d5fccc761",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
