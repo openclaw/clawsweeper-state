@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T08:15:24.881Z",
+  "updated_at": "2026-08-31T08:16:25.660Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121423:5236384473:2026-08-31T04:04:58Z:clawsweeper_needs_human",
-      "comment_id": "5236384473",
-      "comment_version_key": "5236384473:2026-08-31T04:04:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121423#issuecomment-5236384473",
-      "comment_created_at": "2026-08-10T05:48:26Z",
-      "comment_updated_at": "2026-08-31T04:04:58Z",
-      "comment_body_sha256": "c8548d814a10f3b3d2c1562ef6e84297c2c4d4a4ed01a872dfa59fff5eb4f6c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121423,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve historical verification** - A historical verification receipt failed or is malformed. A maintainer must resolve that verification blocker before merge; independently assessed contributor proof remains va...; Review finding: [P1] Remove trusted-context admission from this shadow-only phase — src/plugins/memory-access-context.ts:712-830 - [high] Trusted authority is introduced in an obs... (sha=49128378ce0c4f34cbee7f9816e897bf7175b760)",
-      "expected_head_sha": "49128378ce0c4f34cbee7f9816e897bf7175b760",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T04:10:03.549Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-permissions-pr-open-20260809-p0b",
-        "head_sha": "49128378ce0c4f34cbee7f9816e897bf7175b760",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121945:5251015453:2026-08-31T04:02:05Z:clawsweeper_needs_human",
       "comment_id": "5251015453",
@@ -32872,6 +32839,53 @@
       "status": "skipped",
       "processed_at": "2026-08-31T08:15:24.881Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133920:5475654175:2026-08-31T08:15:31Z:re_review",
+      "comment_id": "5475654175",
+      "comment_version_key": "5475654175:2026-08-31T08:15:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133920#issuecomment-5475654175",
+      "comment_created_at": "2026-08-31T08:15:31Z",
+      "comment_updated_at": "2026-08-31T08:15:31Z",
+      "comment_body_sha256": "f441feeb9858b585ab9102fc4af3ec7ccc53a45bea074c1c5ab2c4bb8a384c80",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133920,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T08:16:23.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-stable-upgrade-stress",
+        "head_sha": "fc7b0c51f2cc83b0a05612f2a25dafde72ed956d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
