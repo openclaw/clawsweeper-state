@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-08-31T13:52:39.200Z",
+  "updated_at": "2026-08-31T13:53:52.416Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133376:5476981153:2026-08-31T10:22:56Z:re_review",
-      "comment_id": "5476981153",
-      "comment_version_key": "5476981153:2026-08-31T10:22:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5476981153",
-      "comment_created_at": "2026-08-31T10:22:56Z",
-      "comment_updated_at": "2026-08-31T10:22:56Z",
-      "comment_body_sha256": "76abfd420e5ba3c6024d1d10f99cbb4f6501ccf4e7acf669ef928c33bb650045",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T10:23:52.188Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-skill-relative-read",
-        "head_sha": "3f928d5a71579e38ce978ac037c0e094f20e963e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133728:5476995286:2026-08-31T10:24:09Z:re_review",
-      "comment_id": "5476995286",
-      "comment_version_key": "5476995286:2026-08-31T10:24:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133728#issuecomment-5476995286",
-      "comment_created_at": "2026-08-31T10:24:09Z",
-      "comment_updated_at": "2026-08-31T10:24:09Z",
-      "comment_body_sha256": "b669aef3be47be151c049a99a773a4eb2e8586b64c4bb8da80f9d6116c26c010",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133728,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T10:25:00.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-session-stress-recovery",
-        "head_sha": "d6a3bf9d8d8bf98229445d6ed59c4e0f402c23a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/fs-safe:171:5477009562:2026-08-31T10:25:31Z:stop",
       "comment_id": "5477009562",
@@ -31953,6 +31859,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132689:5463529626:2026-08-31T13:53:02Z:clawsweeper_needs_human",
+      "comment_id": "5463529626",
+      "comment_version_key": "5463529626:2026-08-31T13:53:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132689#issuecomment-5463529626",
+      "comment_created_at": "2026-08-29T16:25:37Z",
+      "comment_updated_at": "2026-08-31T13:53:02Z",
+      "comment_body_sha256": "985fd364d5476f4d6de3f378606331a3bd7b28c9005f37c1caf981d34d299897",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The v9–v11 local client-state migration intentionally parks structured queued follow-ups when an older client later claims them; an Apple persistence owner must explicitly accept that... (sha=33ad964324f86301a60a060ab9435f05d51c11a7)",
+      "expected_head_sha": "33ad964324f86301a60a060ab9435f05d51c11a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T13:53:52.416Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ios-composer-durable-delivery",
+        "head_sha": "33ad964324f86301a60a060ab9435f05d51c11a7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132689:5469870610:2026-08-30T16:25:50Z:re_review",
+      "comment_id": "5469870610",
+      "comment_version_key": "5469870610:2026-08-30T16:25:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132689#issuecomment-5469870610",
+      "comment_created_at": "2026-08-30T16:25:50Z",
+      "comment_updated_at": "2026-08-30T16:25:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132689,
+      "author": "Solvely-Colin",
+      "author_id": 211764741,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T13:53:52.416Z",
+      "target": null
     }
   ]
 }
