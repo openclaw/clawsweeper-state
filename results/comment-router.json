@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:46:35.974Z",
+  "updated_at": "2026-08-31T01:46:40.791Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126404:5346767045:2026-08-30T20:40:58Z:clawsweeper_auto_repair",
-      "comment_id": "5346767045",
-      "comment_version_key": "5346767045:2026-08-30T20:40:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126404#issuecomment-5346767045",
-      "comment_created_at": "2026-08-19T19:06:09Z",
-      "comment_updated_at": "2026-08-30T20:40:58Z",
-      "comment_body_sha256": "e7cfca75729e3c7205d31aaac26384a99e52257c2c3b4fc85b59663349612300",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3f1e47da60d5d816cd52987587a41a29706dfa8a)",
-      "expected_head_sha": "3f1e47da60d5d816cd52987587a41a29706dfa8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T21:02:36.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/max-turn-finalization",
-        "head_sha": "3f1e47da60d5d816cd52987587a41a29706dfa8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126887:5363527632:2026-08-30T20:58:45Z:clawsweeper_auto_repair",
       "comment_id": "5363527632",
@@ -34102,6 +34069,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128244:5386791313:2026-08-31T01:45:53Z:clawsweeper_needs_human",
+      "comment_id": "5386791313",
+      "comment_version_key": "5386791313:2026-08-31T01:45:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128244#issuecomment-5386791313",
+      "comment_created_at": "2026-08-23T15:28:58Z",
+      "comment_updated_at": "2026-08-31T01:45:53Z",
+      "comment_body_sha256": "44a5ba447fdbae856d58112b892046a66fd4beb635a14b52d4fbd1546d0d6f4b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch conflicts with a current-main rewrite of all four touched production paths; rebasing must preserve the isolated maintenance writer and read-generation lease rather than rev... (sha=7ce082e7a16a24f8784f3e19fde2f8e8b6e77cde)",
+      "expected_head_sha": "7ce082e7a16a24f8784f3e19fde2f8e8b6e77cde",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T01:46:40.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-dirty-sync-nonblocking-128140",
+        "head_sha": "7ce082e7a16a24f8784f3e19fde2f8e8b6e77cde",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
