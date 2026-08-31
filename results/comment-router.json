@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T02:40:33.004Z",
+  "updated_at": "2026-08-31T02:41:08.525Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125969:5471724493:2026-08-30T22:44:44Z:re_review",
-      "comment_id": "5471724493",
-      "comment_version_key": "5471724493:2026-08-30T22:44:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125969#issuecomment-5471724493",
-      "comment_created_at": "2026-08-30T22:44:44Z",
-      "comment_updated_at": "2026-08-30T22:44:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125969,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T22:45:31.066Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-scoped-image-catalog",
-        "head_sha": "b48ded7c4197f50a534c289792d67be6696e127a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133596:5471727671:2026-08-30T22:45:25Z:clawsweeper_needs_human",
       "comment_id": "5471727671",
@@ -33179,6 +33132,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:94344:4737651505:2026-08-31T02:39:53Z:clawsweeper_needs_human",
+      "comment_id": "4737651505",
+      "comment_version_key": "4737651505:2026-08-31T02:39:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/94344#issuecomment-4737651505",
+      "comment_created_at": "2026-06-18T03:42:59Z",
+      "comment_updated_at": "2026-08-31T02:39:53Z",
+      "comment_body_sha256": "448a53406b6893071eb82c3fcac7167accad03b2660347d5c513a820cf6e2935",
+      "repo": "openclaw/openclaw",
+      "issue_number": 94344,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: provider configuration is the egress-authority producer, the embedding adapter binds it at src/plugins/openai-c...; Review finding: [P1] Preserve or explicitly approve remote-override upgrade behavior — src/plugins/openai-compatible-embedding-provider.ts:361-375 - [P2] Exercise an endpoint that... (sha=7c98f8858714d99dff60818234f2759c67d36875)",
+      "expected_head_sha": "7c98f8858714d99dff60818234f2759c67d36875",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T02:41:08.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-94166",
+        "head_sha": "7c98f8858714d99dff60818234f2759c67d36875",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
