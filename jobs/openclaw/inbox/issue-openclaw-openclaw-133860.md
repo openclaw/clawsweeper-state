@@ -67,20 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the current llama.cpp overflow wording gap for https://github.com/openclaw/openclaw/issues/133860. Before editing, add failing focused assertions for `Context size has been exceeded.` through the shared AI assistant-message path and raw agent failover path; add one embedded recovery assertion showing a matching prompt error invokes compaction and returns retry. Add a narrowly documented canonical pattern in `packages/ai/src/utils/overflow.ts` that is reused by the assistant-error and explicit-failover scopes; do not add provider-specific retry logic, config, fallbacks, or broaden the matcher beyond the established llama.cpp wording. Preserve negative rate-limit behavior. Include release-note context in the PR body, not CHANGELOG.md. Related prior art: https://github.com/openclaw/openclaw/pull/64196.
+Repair https://github.com/openclaw/openclaw/issues/133860 at the shared overflow-classifier owner. First add a regression for `Context size has been exceeded.` that fails on current main in the assistant-message classifier and raw failover classifier; add or adapt the recovery test to prove recognized overflow compacts and retries. Reuse one documented narrow llama.cpp regex in both required canonical scopes. Preserve rate-limit exclusions and the older counted-request matcher. Do not add configuration, change retry policy, or create provider-specific downstream handling. Do not edit CHANGELOG.md; capture user-visible release-note context in the PR body. If feasible, validate against a saved raw current llama-server response without exposing private endpoint data.
 
 Likely files:
 
 - packages/ai/src/utils/overflow.ts
 - packages/ai/src/utils/overflow.test.ts
-- src/agents/failover/context-overflow.test.ts
 - src/agents/failover/failover-classification.overflow.cases.ts
 - src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
 
 Validation:
 
 - pnpm test packages/ai/src/utils/overflow.test.ts
-- pnpm test src/agents/failover/context-overflow.test.ts src/agents/failover/classify.legacy-provider-predicates.test.ts
+- pnpm test src/agents/failover/failover-classification.corpus.test.ts
 - pnpm test src/agents/embedded-agent-runner/run.overflow-context-recovery.test.ts
 
 ## Operator Prompt
