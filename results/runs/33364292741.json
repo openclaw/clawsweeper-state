@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133860",
+  "mode": "autonomous",
+  "run_id": "33364292741",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33364292741",
+  "head_sha": "ddc75603add72a4b8dcd1a23d2497b1c8f1d178b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133860.md",
+  "published_at": "2026-08-31T06:43:46.530Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133860",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133860",
+  "canonical_pr": null,
+  "summary": "#133860 remains a reproducible narrow bug: the exact llama.cpp wording is absent from both canonical assistant and explicit failover scopes, so overflow recovery is skipped. Implementation could not be performed or validated because this worker checkout is read-only; pnpm also cannot initialize Corepack cache (EROFS). The required sibling Codex source checkout is absent, so the repository’s Codex hard gate prevents a code-change verdict.",
+  "actions": [
+    {
+      "target": "#133860",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "A one-pattern, two-scope repair is appropriate; branch implementation is blocked only by this read-only worker environment and missing mandatory Codex sibling source."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133860",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Executor should implement and validate the narrow repair on clawsweeper/issue-openclaw-openclaw-133860."
+    },
+    {
+      "target": "#64180",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Already closed; historical evidence only."
+    },
+    {
+      "target": "#64196",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; retain as prior art and contributor credit."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
