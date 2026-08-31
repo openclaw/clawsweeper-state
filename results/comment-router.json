@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:17:02.953Z",
+  "updated_at": "2026-08-31T12:17:07.243Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90745:4634964020:2026-08-31T08:58:54Z:clawsweeper_needs_human",
-      "comment_id": "4634964020",
-      "comment_version_key": "4634964020:2026-08-31T08:58:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-4634964020",
-      "comment_created_at": "2026-06-05T19:49:23Z",
-      "comment_updated_at": "2026-08-31T08:58:54Z",
-      "comment_body_sha256": "edbfc9cb8fb6c1d08e7830285692bac13892ed83624a8d3fe1158f47edd75a66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90745,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Focused tests exercise the production prompt owners and mocked provider boundary, but the submitted Telegram run did not complete a real reply...; Review finding: [medium] Verify the Codex application-context contract — extensions/codex/src/app-server/turn-params.ts:163 (sha=146696b5aae86b1a76e5c241677db325ea6e7847)",
-      "expected_head_sha": "146696b5aae86b1a76e5c241677db325ea6e7847",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T09:01:14.460Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-context-runtime",
-        "head_sha": "146696b5aae86b1a76e5c241677db325ea6e7847",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110455:5010176820:2026-08-31T08:58:00Z:clawsweeper_needs_human",
       "comment_id": "5010176820",
@@ -32244,6 +32211,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129035:5478202647:2026-08-31T12:16:15Z:re_review",
+      "comment_id": "5478202647",
+      "comment_version_key": "5478202647:2026-08-31T12:16:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129035#issuecomment-5478202647",
+      "comment_created_at": "2026-08-31T12:16:15Z",
+      "comment_updated_at": "2026-08-31T12:16:15Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129035,
+      "author": "pgondhi987",
+      "author_id": 270720687,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T12:17:04.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-976",
+        "head_sha": "cdf9b111687fc6e55216f4cbd76ade7e9231b5ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
