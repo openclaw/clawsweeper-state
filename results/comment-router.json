@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:51:49.022Z",
+  "updated_at": "2026-08-31T19:51:55.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128050:5480234121:2026-08-31T15:32:16Z:re_review",
-      "comment_id": "5480234121",
-      "comment_version_key": "5480234121:2026-08-31T15:32:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128050#issuecomment-5480234121",
-      "comment_created_at": "2026-08-31T15:02:47Z",
-      "comment_updated_at": "2026-08-31T15:32:16Z",
-      "comment_body_sha256": "ec96a3bd67783577eb0b02e9d1193c16819e29b008ee83f9e410a2e78e108fca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128050,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T15:53:32.088Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/find-session-about-x-video-web-ui-feature",
-        "head_sha": "248aa5dc0c7bb105fa5e8c9a4daaa4be91da0f10",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134038:5480772023:2026-08-31T15:45:37Z:re_review",
       "comment_id": "5480772023",
@@ -32222,6 +32175,39 @@
         "kind": "pull_request",
         "branch": "codex/release-validation-skill-update",
         "head_sha": "5bea7d850422b33f2b8bcff27e5970dcd72b6e3c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3328:5483665889:2026-08-31T19:50:38Z:clawsweeper_needs_human",
+      "comment_id": "5483665889",
+      "comment_version_key": "5483665889:2026-08-31T19:50:38Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3328#issuecomment-5483665889",
+      "comment_created_at": "2026-08-31T19:50:38Z",
+      "comment_updated_at": "2026-08-31T19:50:38Z",
+      "comment_body_sha256": "656e774fed5d0570b800bc8f664caa6bb31cb35e35a2a035f640deda7141a231",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3328,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current check state reports a lint failure; the supplied context attributes a local check failure to an unchanged process-cleanup fixture, but the exact CI failure has not been in... (sha=a35a265ec4a51134533abce6e81042a1ef85ed44)",
+      "expected_head_sha": "a35a265ec4a51134533abce6e81042a1ef85ed44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:51:55.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/claude-metadata-traversal-20260831",
+        "head_sha": "a35a265ec4a51134533abce6e81042a1ef85ed44",
         "cluster_id": null,
         "job_path": null
       }
