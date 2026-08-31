@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T13:31:55.005Z",
+  "updated_at": "2026-08-31T13:32:36.250Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133931:5475373294:2026-08-31T10:04:27Z:clawsweeper_needs_human",
-      "comment_id": "5475373294",
-      "comment_version_key": "5475373294:2026-08-31T10:04:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133931#issuecomment-5475373294",
-      "comment_created_at": "2026-08-31T07:49:07Z",
-      "comment_updated_at": "2026-08-31T10:04:27Z",
-      "comment_body_sha256": "ca9fc963be64a5df5e13a7459026ab521946b254421afbc5018c1351a670ae6c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133931,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes cache behavior across 18 CI consumers. The branch supplies live-run claims and an owner-boundary fixture, but this reviewer could not retrieve the linked GitHub artifacts... (sha=f7b169947fc4255a03dfee99a061357440018069)",
-      "expected_head_sha": "f7b169947fc4255a03dfee99a061357440018069",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:13:36.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-hybrid-cache-20260830",
-        "head_sha": "f7b169947fc4255a03dfee99a061357440018069",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133952:5475669873:2026-08-31T10:01:03Z:clawsweeper_needs_human",
       "comment_id": "5475669873",
@@ -31833,6 +31800,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134038:5479105218:2026-08-31T13:31:44Z:re_review",
+      "comment_id": "5479105218",
+      "comment_version_key": "5479105218:2026-08-31T13:31:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134038#issuecomment-5479105218",
+      "comment_created_at": "2026-08-31T13:31:44Z",
+      "comment_updated_at": "2026-08-31T13:31:44Z",
+      "comment_body_sha256": "de93cebf55bb13693297c5c5e69569a3e127bd4a05fb3e4048a28cf8f980271e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134038,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T13:32:33.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-windows-runtime-20260831",
+        "head_sha": "93582ed06d82332262f50571ab25cc7f8b55eb8b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
