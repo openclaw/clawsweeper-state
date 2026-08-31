@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:59:34.621Z",
+  "updated_at": "2026-08-31T20:00:51.384Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134189:5480041783:2026-08-31T15:28:38Z:clawsweeper_auto_repair",
-      "comment_id": "5480041783",
-      "comment_version_key": "5480041783:2026-08-31T15:28:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134189#issuecomment-5480041783",
-      "comment_created_at": "2026-08-31T14:47:18Z",
-      "comment_updated_at": "2026-08-31T15:28:38Z",
-      "comment_body_sha256": "0d3e6044594a6b7ada43470835998dba7e2bac66161779715d6b67478ede93ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134189,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2b0f76076ac83e290b7635446d614b17158089e3)",
-      "expected_head_sha": "2b0f76076ac83e290b7635446d614b17158089e3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T15:53:39.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openclaw-team-window-stuck-after-updates",
-        "head_sha": "05a1dc1cba4574912531cca347ba49b4a392b749",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5480904847:2026-08-31T15:56:37Z:re_review",
       "comment_id": "5480904847",
@@ -32195,6 +32162,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134406:5483229857:2026-08-31T19:59:58Z:clawsweeper_needs_human",
+      "comment_id": "5483229857",
+      "comment_version_key": "5483229857:2026-08-31T19:59:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134406#issuecomment-5483229857",
+      "comment_created_at": "2026-08-31T19:13:56Z",
+      "comment_updated_at": "2026-08-31T19:59:58Z",
+      "comment_body_sha256": "cda37411c89acbcd10002b09dee99e0e03f662447c69f6082733f95091a9a79d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134406,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that interpreted an unusable installed command as success will now receive exit code 1. This is intentional and matches the documented final-verification contract,... (sha=7d8995d0017c1a44b75511e3ef822297b247ae18)",
+      "expected_head_sha": "7d8995d0017c1a44b75511e3ef822297b247ae18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T20:00:51.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/install-path-failure-exit",
+        "head_sha": "7d8995d0017c1a44b75511e3ef822297b247ae18",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
