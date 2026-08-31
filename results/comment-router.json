@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-31T19:15:05.197Z",
+  "updated_at": "2026-08-31T19:13:10.100Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134043:5479832662:2026-08-31T14:30:33Z:re_review",
+      "comment_id": "5479832662",
+      "comment_version_key": "5479832662:2026-08-31T14:30:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134043#issuecomment-5479832662",
+      "comment_created_at": "2026-08-31T14:30:33Z",
+      "comment_updated_at": "2026-08-31T14:30:33Z",
+      "comment_body_sha256": "719a41661f05d601f4cacfca7541b26a2cd963f8e186c104966281854748d5ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134043,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T14:31:17.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/project-warm-start",
+        "head_sha": "6a7372898c107265bdff429bba7dfe1f15ec8c57",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1322:5479833912:2026-08-31T14:30:39Z:re_review",
       "comment_id": "5479833912",
@@ -32895,39 +32942,6 @@
         "kind": "pull_request",
         "branch": "codex/code-bug-poll-vote-echo-expiry-20260831",
         "head_sha": "5be01b4a584107bb46409c40d462defe2025dc8d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134406:5483229857:2026-08-31T19:13:56Z:clawsweeper_needs_human",
-      "comment_id": "5483229857",
-      "comment_version_key": "5483229857:2026-08-31T19:13:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134406#issuecomment-5483229857",
-      "comment_created_at": "2026-08-31T19:13:56Z",
-      "comment_updated_at": "2026-08-31T19:13:56Z",
-      "comment_body_sha256": "491912b64bda36101352601c44cbb43a62888d9c6ec2ae3f5652117460a63a40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Main’s final PATH-verification owner is changed at scripts/install.ps1:2175, and the fixtures inject that failure through Main plus Complete-In... (sha=7d8995d0017c1a44b75511e3ef822297b247ae18)",
-      "expected_head_sha": "7d8995d0017c1a44b75511e3ef822297b247ae18",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T19:15:05.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/install-path-failure-exit",
-        "head_sha": "7d8995d0017c1a44b75511e3ef822297b247ae18",
         "cluster_id": null,
         "job_path": null
       }
