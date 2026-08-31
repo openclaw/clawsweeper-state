@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T13:11:26.534Z",
+  "updated_at": "2026-08-31T13:13:03.317Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133800:5476718283:2026-08-31T09:56:49Z:re_review",
-      "comment_id": "5476718283",
-      "comment_version_key": "5476718283:2026-08-31T09:56:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133800#issuecomment-5476718283",
-      "comment_created_at": "2026-08-31T09:56:49Z",
-      "comment_updated_at": "2026-08-31T09:56:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133800,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T10:00:23.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-scaffold-public-sdk-main",
-        "head_sha": "1b2ec413a676d8482e56cca37baf9d0ec5502dae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111782:5021896042:2026-08-31T09:56:27Z:clawsweeper_auto_repair",
       "comment_id": "5021896042",
@@ -31800,6 +31753,39 @@
         "kind": "pull_request",
         "branch": "codex/release81-forward-main",
         "head_sha": "b8de099bbd28ce44da81bbd3890586b9ccb94495",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134129:5478866331:2026-08-31T13:12:17Z:clawsweeper_needs_human",
+      "comment_id": "5478866331",
+      "comment_version_key": "5478866331:2026-08-31T13:12:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134129#issuecomment-5478866331",
+      "comment_created_at": "2026-08-31T13:12:17Z",
+      "comment_updated_at": "2026-08-31T13:12:17Z",
+      "comment_body_sha256": "6402ce99602a04fd04af954418d232aa10324fb5cd6782f09a5f609029cc5912",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134129,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the long-lived Browser Talk consult runner, but the supplied evidence is a focused mocked regression t... (sha=dd30aa4b6dc4b71084b464f1c4f952ab5b5505f0)",
+      "expected_head_sha": "dd30aa4b6dc4b71084b464f1c4f952ab5b5505f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T13:13:03.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/134081-talk-agent-consult-admission",
+        "head_sha": "dd30aa4b6dc4b71084b464f1c4f952ab5b5505f0",
         "cluster_id": null,
         "job_path": null
       }
