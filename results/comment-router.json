@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:55:46.588Z",
+  "updated_at": "2026-08-31T12:55:47.881Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:171:5476603295:2026-08-31T09:45:31Z:automerge",
-      "comment_id": "5476603295",
-      "comment_version_key": "5476603295:2026-08-31T09:45:31Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476603295",
-      "comment_created_at": "2026-08-31T09:45:31Z",
-      "comment_updated_at": "2026-08-31T09:45:31Z",
-      "comment_body_sha256": "7b8db2af8b5bda1ed0e59fadc34b584e788cfa2a6286322a1a81eca518885351",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 171,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T09:46:03.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/temp-workspace-cleanup-ownership",
-        "head_sha": "0d61e42b8a62648d788e89db6257de3d52f3595f",
-        "cluster_id": "automerge-openclaw-fs-safe-171",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133795:5476430247:2026-08-31T09:29:58Z:re_review",
       "comment_id": "5476430247",
@@ -31888,6 +31829,39 @@
         "kind": "pull_request",
         "branch": "test-legacy-config-binding-repair",
         "head_sha": "767edd14025316c84da5c76dfb7d750ea5fa5b06",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134114:5478666991:2026-08-31T12:55:04Z:clawsweeper_auto_repair",
+      "comment_id": "5478666991",
+      "comment_version_key": "5478666991:2026-08-31T12:55:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134114#issuecomment-5478666991",
+      "comment_created_at": "2026-08-31T12:55:04Z",
+      "comment_updated_at": "2026-08-31T12:55:04Z",
+      "comment_body_sha256": "b9d68aeedd8acab6766a1962a6f39e7cad4d9e6085fbc6cef105fca00985311d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134114,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3c6c8349de32e0274d5fe263a048cc39f6a6f2ad)",
+      "expected_head_sha": "3c6c8349de32e0274d5fe263a048cc39f6a6f2ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:55:47.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test-absolute-deadline",
+        "head_sha": "3c6c8349de32e0274d5fe263a048cc39f6a6f2ad",
         "cluster_id": null,
         "job_path": null
       }
