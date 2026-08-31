@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:22:51.976Z",
+  "updated_at": "2026-08-31T03:23:49.092Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133457:5470875647:2026-08-30T23:03:38Z:clawsweeper_needs_human",
-      "comment_id": "5470875647",
-      "comment_version_key": "5470875647:2026-08-30T23:03:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133457#issuecomment-5470875647",
-      "comment_created_at": "2026-08-30T19:47:48Z",
-      "comment_updated_at": "2026-08-30T23:03:38Z",
-      "comment_body_sha256": "07065968257da4563fe266bf0484504880910cadf1305fc9653560f2491b7253",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133457,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The same-version nullable consumed_event_id column is safe for older SQLite readers but the documented intermediate-build incompatibility can interrupt an upgrade unless the release D... (sha=75d88f67186e497b3f1a93794930bb0cfa9bf963)",
-      "expected_head_sha": "75d88f67186e497b3f1a93794930bb0cfa9bf963",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T23:04:22.751Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-collect-custody",
-        "head_sha": "e7f546c2f95063410286f30f47ff0dd328c23c42",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125707:5329829515:2026-08-18T14:44:46Z:re_review",
       "comment_id": "5329829515",
@@ -33044,6 +33011,53 @@
         "kind": "pull_request",
         "branch": "jesse/integrate-krill-switch-flags",
         "head_sha": "abda0265b89a2bec8d5b3bead3b55f15dd986f65",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132464:5473294017:2026-08-31T03:23:03Z:re_review",
+      "comment_id": "5473294017",
+      "comment_version_key": "5473294017:2026-08-31T03:23:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132464#issuecomment-5473294017",
+      "comment_created_at": "2026-08-31T03:23:03Z",
+      "comment_updated_at": "2026-08-31T03:23:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132464,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T03:23:46.888Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-131770-doctor-orphan-heartbeat-transcripts",
+        "head_sha": "416847a994214945377cbfe4eb339d68e9cf9f01",
         "cluster_id": null,
         "job_path": null
       },
