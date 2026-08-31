@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-171
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476897222"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5477289258"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/171#issuecomment-
 Maintainer opted #171 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5476897222
+Request comment: https://github.com/openclaw/fs-safe/pull/171#issuecomment-5477289258
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/171
@@ -59,7 +59,9 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review exact head `139644fd89394f8de971104f212016b819872b67`. The accepted POSIX final-unlink result mismatch is fixed without changing the documented residual race: a leaf-to-directory substitution that makes `unlinkat` return `EISDIR` or platform `EPERM` is reinspected with no symlink following; confirmed type/identity drift becomes native `path-mismatch` and public stable `indeterminate`, while the same expected leaf still propagates its operational permission error. The symmetric directory-to-file `ENOTDIR` result also maps to ownership uncertainty.
+Review exact head `6f86e32cbf30514d44a476f6003f12d1b58fafb2`. The accepted POSIX final-root type-swap result mismatch is fixed: `ENOTDIR` and platform `EPERM` are followed by no-symlink reinspection; confirmed file/symlink/type/identity drift returns native `preserved` and public stable `indeterminate`, absence is preserved completion, and the same expected directory still propagates genuine operational errors.
 
-Require the deterministic native final-gap proof to preserve the substituted nonempty directory and original leaf bytes, the same-leaf operational-error proof, and public async/sync cleanup proof with absent public name, exact preserved bytes, one routed remover call, and no retry. Retain all previous exact-head requirements for Linux runtime `openat2`/`RESOLVE_NO_XDEV` admission, compatible fallback, strict pre-creation rejection, Windows exact-handle reparse leaf/root behavior, quarantine-swap terminal proof, POSIX residual limits, packed consumer, Windows append, Node/native/coverage/package/audit/analysis/security gates, and no actionable review finding before merge.
+Distinguish that repaired result contract from the intentional, documented OS limit. POSIX has no unlink-by-fd or expected-inode/CAS directory unlink, so a raced **empty directory** replacement can still be removed successfully after the final check. This is why the public option is named `require-bounded`, not exact/owned. The exact final-gap regression now proves that residual explicitly: the empty replacement name is removed as one entry, the original owned tree remains under its raced name after contents were removed, and an outside target remains untouched. Nonempty replacement trees are never traversed and remain preserved.
+
+Require the deterministic native file/symlink root-swap tests, same-directory operational-error test, empty-directory residual test, and public async/sync stable-`indeterminate` mapping tests. Retain all earlier exact-head requirements for runtime Linux `openat2`/`RESOLVE_NO_XDEV` admission, compatible fallback, strict pre-creation rejection, Windows exact-handle reparse leaf/root behavior, quarantine-swap terminal proof, packed consumer, Windows append proof, Node/native/coverage/package/audit/analysis/security gates, and no actionable finding outside the explicitly documented POSIX residual before merge.
 
