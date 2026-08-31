@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T00:22:45.812Z",
+  "updated_at": "2026-08-31T00:22:51.032Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132464:5461057795:2026-08-30T19:35:45Z:clawsweeper_needs_human",
-      "comment_id": "5461057795",
-      "comment_version_key": "5461057795:2026-08-30T19:35:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132464#issuecomment-5461057795",
-      "comment_created_at": "2026-08-29T07:27:35Z",
-      "comment_updated_at": "2026-08-30T19:35:45Z",
-      "comment_body_sha256": "d4859ba263addc64afa99a0c3f7a6f86b1b5e44b4b7d68adc679351ce7d0da5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is isolated-heartbeat rollover in src/infra/heartbeat-runner-execution.ts; the supplied real Doctor trace... (sha=a3445bc1ea57adec7d4c9d69ba1e0bd6a2b4dd99)",
-      "expected_head_sha": "a3445bc1ea57adec7d4c9d69ba1e0bd6a2b4dd99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T19:44:17.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-131770-doctor-orphan-heartbeat-transcripts",
-        "head_sha": "a3445bc1ea57adec7d4c9d69ba1e0bd6a2b4dd99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132477:5461132681:2026-08-30T19:42:11Z:clawsweeper_auto_repair",
       "comment_id": "5461132681",
@@ -33793,6 +33760,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132407:5472204942:2026-08-31T00:22:08Z:re_review",
+      "comment_id": "5472204942",
+      "comment_version_key": "5472204942:2026-08-31T00:22:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132407#issuecomment-5472204942",
+      "comment_created_at": "2026-08-31T00:22:08Z",
+      "comment_updated_at": "2026-08-31T00:22:08Z",
+      "comment_body_sha256": "f63969d656ec3b94163d695bc04f6696d31ad337b8955bb2894e861ee18d530b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132407,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T00:22:49.530Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/when-i-switch-the-workspace-security-setting-it-doesn-t-seem-to",
+        "head_sha": "a8685cc618df61a356f6726319c85967dcd183b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
