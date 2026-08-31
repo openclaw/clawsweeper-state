@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133935",
+  "mode": "autonomous",
+  "run_id": "33370236763",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33370236763",
+  "head_sha": "62241350beef738542b4802c172c28d7a8013db7",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133935.md",
+  "published_at": "2026-08-31T09:35:10.488Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133935",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133935",
+  "canonical_pr": null,
+  "summary": "#133935 remains the open canonical bug. Current main e7bacb6e552a46f61f3412b7be678fba918b10a0 still treats a missing path-backed record as reinstallable even when a healthy distinct configured load path provides the same plugin. A narrow Doctor repair is defined, but this worker cannot edit, run the fixture reproduction, or create the branch because the checkout is read-only and the required sibling ../codex source is unavailable for the repository’s mandatory direct-inspection gate.",
+  "actions": [
+    {
+      "target": "#133935",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133935",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the immutable checkout and unavailable mandatory Codex sibling inspection; the issue does not require maintainer product judgment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133935",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133935",
+      "candidate_fix": null,
+      "reason": "Ready for a writable executor after direct ../codex inspection and an actual pre-fix regression run."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
