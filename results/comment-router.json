@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:30:39.209Z",
+  "updated_at": "2026-08-31T04:31:18.911Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133659:5472242114:2026-08-31T00:28:58Z:clawsweeper_needs_human",
-      "comment_id": "5472242114",
-      "comment_version_key": "5472242114:2026-08-31T00:28:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133659#issuecomment-5472242114",
-      "comment_created_at": "2026-08-31T00:28:58Z",
-      "comment_updated_at": "2026-08-31T00:28:58Z",
-      "comment_body_sha256": "183c937c1f7ac53c9c88349c3fb3fd02c9679d2a0e486b422d03b82155ea7678",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133659,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair is needed; this fresh maintainer-owned PR should proceed through ordinary exact-head review and merge gates. (sha=de77a68d7e00aa41c28ad500af19def3052e87dd)",
-      "expected_head_sha": "de77a68d7e00aa41c28ad500af19def3052e87dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T00:29:41.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-diagnostic-preparation",
-        "head_sha": "de77a68d7e00aa41c28ad500af19def3052e87dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133586:5471612842:2026-08-31T00:29:58Z:clawsweeper_auto_repair",
       "comment_id": "5471612842",
@@ -32353,6 +32320,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:171:5473739951:2026-08-31T04:30:38Z:stop",
+      "comment_id": "5473739951",
+      "comment_version_key": "5473739951:2026-08-31T04:30:38Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/171#issuecomment-5473739951",
+      "comment_created_at": "2026-08-31T04:30:38Z",
+      "comment_updated_at": "2026-08-31T04:30:38Z",
+      "comment_body_sha256": "e9118108cb35bde292b061bd8c065710ea58428b2d4eed8e308a1230eb9d5cac",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 171,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "stop",
+      "intent": "stop",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T04:31:18.911Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/temp-workspace-cleanup-ownership",
+        "head_sha": "b896b29e676cd25f6161263c51d635c07e71939e",
+        "cluster_id": "automerge-openclaw-fs-safe-171",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
