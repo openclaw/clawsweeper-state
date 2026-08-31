@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:42:37.879Z",
+  "updated_at": "2026-08-31T19:45:35.266Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134100:5478478124:2026-08-31T15:14:13Z:clawsweeper_needs_human",
-      "comment_id": "5478478124",
-      "comment_version_key": "5478478124:2026-08-31T15:14:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134100#issuecomment-5478478124",
-      "comment_created_at": "2026-08-31T12:37:47Z",
-      "comment_updated_at": "2026-08-31T15:14:13Z",
-      "comment_body_sha256": "bd5b0407ffb7106be94065fd37c63facde8bdcc8b29e13c76a491b364980f421",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134100,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The refreshed head’s CI rollup is incomplete and includes a failed check-lint-core-1, so the supplied earlier hosted result does not yet establish a green exact-head merge gate. (sha=968877d04d58e5c8ca9cf5d221e8f01dbdcd121c)",
-      "expected_head_sha": "968877d04d58e5c8ca9cf5d221e8f01dbdcd121c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T15:25:26.788Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tooling-proof-balance",
-        "head_sha": "968877d04d58e5c8ca9cf5d221e8f01dbdcd121c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134105:5478637756:2026-08-31T14:58:19Z:clawsweeper_needs_human",
       "comment_id": "5478637756",
@@ -32493,6 +32460,53 @@
       "status": "skipped",
       "processed_at": "2026-08-31T19:42:37.879Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131329:5483593094:2026-08-31T19:44:52Z:re_review",
+      "comment_id": "5483593094",
+      "comment_version_key": "5483593094:2026-08-31T19:44:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131329#issuecomment-5483593094",
+      "comment_created_at": "2026-08-31T19:44:52Z",
+      "comment_updated_at": "2026-08-31T19:44:52Z",
+      "comment_body_sha256": "68a1349803b6664989112f7334072cfa261e077c2e908bebe604f9a143051168",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131329,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T19:45:32.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repro/memory-lancedb-autocapture-cursor-reset",
+        "head_sha": "425f4a9f756fa1343a6bd0a10986f513f13fd239",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
