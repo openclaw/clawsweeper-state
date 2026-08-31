@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T00:17:39.547Z",
+  "updated_at": "2026-08-31T00:17:39.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1308:5470828659:2026-08-30T19:37:54Z:re_review",
-      "comment_id": "5470828659",
-      "comment_version_key": "5470828659:2026-08-30T19:37:54Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1308#issuecomment-5470828659",
-      "comment_created_at": "2026-08-30T19:37:54Z",
-      "comment_updated_at": "2026-08-30T19:37:54Z",
-      "comment_body_sha256": "068360feb1a50d7dd55e2b6e68486f0dbd9b86bc187461bade8a4a8bc12b00de",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1308,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T19:38:36.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "review-checkout-reviewed-ancestry",
-        "head_sha": "f14ad532805d463ee09e9fcdaa3951fac31865f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:180:5470834555:2026-08-30T19:39:07Z:clawsweeper_auto_merge",
       "comment_id": "5470834555",
@@ -33788,6 +33741,39 @@
         "kind": "pull_request",
         "branch": "fix/line-webhook-status",
         "head_sha": "11925d216edcb69f5e531d4c9dcc927f6f39681c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133622:5472036885:2026-08-31T00:16:35Z:clawsweeper_needs_human",
+      "comment_id": "5472036885",
+      "comment_version_key": "5472036885:2026-08-31T00:16:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133622#issuecomment-5472036885",
+      "comment_created_at": "2026-08-30T23:51:56Z",
+      "comment_updated_at": "2026-08-31T00:16:35Z",
+      "comment_body_sha256": "b07c4ed0ad7ca8c4a1306cc20ca558ef4634eaefb108641caf14c4412a55546f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133622,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head hosted checks were still incomplete in the supplied snapshot, and the latest ClawSweeper rank-up list could not be rehydrated because GitHub was unreachable. (sha=c2dbad4e5cca92cc63b65674beaf7d40eefe5877)",
+      "expected_head_sha": "c2dbad4e5cca92cc63b65674beaf7d40eefe5877",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T00:17:39.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-cli-experience",
+        "head_sha": "c2dbad4e5cca92cc63b65674beaf7d40eefe5877",
         "cluster_id": null,
         "job_path": null
       }
