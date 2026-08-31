@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:56:10.746Z",
+  "updated_at": "2026-08-31T01:56:22.560Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132464:5461057795:2026-08-30T21:18:53Z:clawsweeper_auto_repair",
-      "comment_id": "5461057795",
-      "comment_version_key": "5461057795:2026-08-30T21:18:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132464#issuecomment-5461057795",
-      "comment_created_at": "2026-08-29T07:27:35Z",
-      "comment_updated_at": "2026-08-30T21:18:53Z",
-      "comment_body_sha256": "f02c6f284b07e5935fcc0482481387b2ddae1847b7f46e0e3bf9603e2bb8923c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=518385a40d37f4c1e2de1b28aa172019aae1fde6)",
-      "expected_head_sha": "518385a40d37f4c1e2de1b28aa172019aae1fde6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T21:19:50.470Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-131770-doctor-orphan-heartbeat-transcripts",
-        "head_sha": "518385a40d37f4c1e2de1b28aa172019aae1fde6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133548:5471320304:2026-08-30T21:19:09Z:clawsweeper_needs_human",
       "comment_id": "5471320304",
@@ -33802,6 +33769,53 @@
       "status": "skipped",
       "processed_at": "2026-08-31T01:56:09.313Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131669:5472746796:2026-08-31T01:55:36Z:re_review",
+      "comment_id": "5472746796",
+      "comment_version_key": "5472746796:2026-08-31T01:55:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131669#issuecomment-5472746796",
+      "comment_created_at": "2026-08-31T01:55:36Z",
+      "comment_updated_at": "2026-08-31T01:55:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131669,
+      "author": "sallyom",
+      "author_id": 11166065,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T01:56:20.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-session-tool-policy",
+        "head_sha": "8ed6a2ee9d39e9d09fb6969566c2af3aaad1da34",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
