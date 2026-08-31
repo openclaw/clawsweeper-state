@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:07:12.483Z",
+  "updated_at": "2026-08-31T04:07:19.969Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123052:5366193771:2026-08-21T06:47:40Z:re_review",
-      "comment_id": "5366193771",
-      "comment_version_key": "5366193771:2026-08-21T06:47:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123052#issuecomment-5366193771",
-      "comment_created_at": "2026-08-21T06:47:40Z",
-      "comment_updated_at": "2026-08-21T06:47:40Z",
-      "comment_body_sha256": "72ac9f29c2ded16cc53da75606c6d3a7caa3328a181d51a1d2bb111c38627c78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123052,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T00:13:34.388Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123052:5366310102:2026-08-21T06:59:19Z:re_review",
       "comment_id": "5366310102",
@@ -32401,6 +32374,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133324:5469319304:2026-08-31T04:06:27Z:clawsweeper_needs_human",
+      "comment_id": "5469319304",
+      "comment_version_key": "5469319304:2026-08-31T04:06:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133324#issuecomment-5469319304",
+      "comment_created_at": "2026-08-30T14:38:50Z",
+      "comment_updated_at": "2026-08-31T04:06:27Z",
+      "comment_body_sha256": "02de5a61b89fc3dc633e9e60271acdbf239e2c18be36e3adf36cd6125f38478a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133324,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bundled Codex app-server bridge directly transfers this delivery authority, but the required sibling Codex source checkout was unavailable for independent protocol verification. (sha=704520d666a880e991393ede7a238c29a8a168a7)",
+      "expected_head_sha": "704520d666a880e991393ede7a238c29a8a168a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:07:19.969Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-83636-tts-delivery",
+        "head_sha": "704520d666a880e991393ede7a238c29a8a168a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
