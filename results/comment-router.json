@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:22:20.201Z",
+  "updated_at": "2026-08-31T04:22:44.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1684:5472199326:2026-08-31T00:21:09Z:re_review",
-      "comment_id": "5472199326",
-      "comment_version_key": "5472199326:2026-08-31T00:21:09Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1684#issuecomment-5472199326",
-      "comment_created_at": "2026-08-31T00:21:09Z",
-      "comment_updated_at": "2026-08-31T00:21:09Z",
-      "comment_body_sha256": "face7bbe3e6f37613051cf9640b493d690d8c3058921ece4e78e4154568aa32d",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1684,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the main pr body now includes completed native docker proof for new and baseline-produced checkpoints, fixed-id replay, terminal refusal, and all public cleanup: 51/51 assertions, zero timeouts, no native fallback",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T00:25:42.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release048-live-fixes",
-        "head_sha": "a269710040cb36c42294b73a53fbc36393466cbb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1684:5472164853:2026-08-31T00:24:51Z:clawsweeper_needs_human",
       "comment_id": "5472164853",
@@ -32380,6 +32333,39 @@
         "head_sha": "b896b29e676cd25f6161263c51d635c07e71939e",
         "cluster_id": "automerge-openclaw-fs-safe-171",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-171.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:88:5473679188:2026-08-31T04:22:00Z:clawsweeper_needs_human",
+      "comment_id": "5473679188",
+      "comment_version_key": "5473679188:2026-08-31T04:22:00Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/88#issuecomment-5473679188",
+      "comment_created_at": "2026-08-31T04:22:00Z",
+      "comment_updated_at": "2026-08-31T04:22:00Z",
+      "comment_body_sha256": "9e2e3552a93d898a1f315c234de656a2e2375bb65c06d2aa1f6eb2dab72b45ee",
+      "repo": "openclaw/octopool",
+      "issue_number": 88,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: localGitHubToken selects the credential that runLogin sends to the caller-token endpoint; the added fake-gh and... (sha=7158aaefb6b031a7997f61b93c33e3df99532655)",
+      "expected_head_sha": "7158aaefb6b031a7997f61b93c33e3df99532655",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:22:44.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/qa0518-02-github-token-host",
+        "head_sha": "7158aaefb6b031a7997f61b93c33e3df99532655",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
