@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:36:42.851Z",
+  "updated_at": "2026-08-31T19:37:23.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134189:5480237717:2026-08-31T15:03:04Z:re_review",
-      "comment_id": "5480237717",
-      "comment_version_key": "5480237717:2026-08-31T15:03:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134189#issuecomment-5480237717",
-      "comment_created_at": "2026-08-31T15:03:04Z",
-      "comment_updated_at": "2026-08-31T15:03:04Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134189,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T15:03:47.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openclaw-team-window-stuck-after-updates",
-        "head_sha": "12eae79dc38ef7b4f681c140e243d174c78a9123",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131362:5480241043:2026-08-31T15:03:19Z:re_review",
       "comment_id": "5480241043",
@@ -32838,6 +32791,39 @@
         "kind": "pull_request",
         "branch": "roboclaw/fix-pending-input-order",
         "head_sha": "c960a56f59747c70fe23d29702a207bfbc58c5da",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133996:5476305683:2026-08-31T19:36:25Z:clawsweeper_needs_human",
+      "comment_id": "5476305683",
+      "comment_version_key": "5476305683:2026-08-31T19:36:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133996#issuecomment-5476305683",
+      "comment_created_at": "2026-08-31T09:18:44Z",
+      "comment_updated_at": "2026-08-31T19:36:25Z",
+      "comment_body_sha256": "24a9948bb303c4bf55bec78c0532d6b3a57a9cf5c6e8b17847ddaa544fbaa237",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133996,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still pending, so the PR should not land until required checks finish successfully. (sha=b01c912e483fb83bcc65cef3dde05eb5e85e18da)",
+      "expected_head_sha": "b01c912e483fb83bcc65cef3dde05eb5e85e18da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:37:23.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/code-bug-poll-vote-echo-expiry-20260831",
+        "head_sha": "b01c912e483fb83bcc65cef3dde05eb5e85e18da",
         "cluster_id": null,
         "job_path": null
       }
