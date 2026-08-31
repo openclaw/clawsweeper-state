@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:11:07.586Z",
+  "updated_at": "2026-08-31T10:11:22.402Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133380:5469912245:2026-08-31T06:04:23Z:clawsweeper_needs_human",
-      "comment_id": "5469912245",
-      "comment_version_key": "5469912245:2026-08-31T06:04:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133380#issuecomment-5469912245",
-      "comment_created_at": "2026-08-30T16:34:16Z",
-      "comment_updated_at": "2026-08-31T06:04:23Z",
-      "comment_body_sha256": "994661a39e89dd4e36331b4221a82404867d43f240b9a94d0f808abca03ac596",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133380,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing LaunchAgents retain /dev/null after upgrade until the operator runs the service-specific restart or forced install command; the PR documents and reports that intentional comp... (sha=e14289ac7e1d51e95ffaea921f2914570d58acef)",
-      "expected_head_sha": "e14289ac7e1d51e95ffaea921f2914570d58acef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T06:08:42.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/launchd-stderr-to-gateway-log",
-        "head_sha": "e14289ac7e1d51e95ffaea921f2914570d58acef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133782:5473740905:2026-08-31T06:01:33Z:clawsweeper_auto_repair",
       "comment_id": "5473740905",
@@ -33314,6 +33281,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134029:5476855133:2026-08-31T10:10:32Z:clawsweeper_needs_human",
+      "comment_id": "5476855133",
+      "comment_version_key": "5476855133:2026-08-31T10:10:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134029#issuecomment-5476855133",
+      "comment_created_at": "2026-08-31T10:10:32Z",
+      "comment_updated_at": "2026-08-31T10:10:32Z",
+      "comment_body_sha256": "6fd7dc5c5ee5551d0fdfb5fa20e96cc8a351381ac8fa0a734e4528822213f967",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134029,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 19 net production lines; the added plumbing is the explicit ownership state required at seven diagnostic consumers, and no smaller canonical owner-boundary refactor w... (sha=324e97bcb5d0c562871e8a4803f2aa68ee2c71de)",
+      "expected_head_sha": "324e97bcb5d0c562871e8a4803f2aa68ee2c71de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T10:11:22.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/upgrade-provider-diagnostics-20260831",
+        "head_sha": "324e97bcb5d0c562871e8a4803f2aa68ee2c71de",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
