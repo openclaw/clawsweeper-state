@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T16:05:59.595Z",
+  "updated_at": "2026-08-31T16:07:14.380Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132453:5465349491:2026-08-29T22:52:53Z:re_review",
-      "comment_id": "5465349491",
-      "comment_version_key": "5465349491:2026-08-29T22:52:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5465349491",
-      "comment_created_at": "2026-08-29T22:52:53Z",
-      "comment_updated_at": "2026-08-29T22:52:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132453,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T11:09:16.386Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132453:5466243628:2026-08-30T02:29:34Z:re_review",
       "comment_id": "5466243628",
@@ -33462,6 +33435,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:187:5481026432:2026-08-31T16:06:30Z:automerge",
+      "comment_id": "5481026432",
+      "comment_version_key": "5481026432:2026-08-31T16:06:30Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/187#issuecomment-5481026432",
+      "comment_created_at": "2026-08-31T16:06:30Z",
+      "comment_updated_at": "2026-08-31T16:06:30Z",
+      "comment_body_sha256": "5194005ef2d4ec68ea249788e86d86766ea082e12454b98679da0ac8960ab55b",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 187,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-31T16:07:08.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/0.7.0",
+        "head_sha": "413e15b2e8cc615bbd686cec028d9f8b70da5c9e",
+        "cluster_id": "automerge-openclaw-fs-safe-187",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-187.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-187.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
