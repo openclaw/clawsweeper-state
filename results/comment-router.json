@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:20:45.619Z",
+  "updated_at": "2026-08-31T17:22:39.153Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5465050097:2026-08-29T21:42:51Z:re_review",
-      "comment_id": "5465050097",
-      "comment_version_key": "5465050097:2026-08-29T21:42:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5465050097",
-      "comment_created_at": "2026-08-29T21:42:51Z",
-      "comment_updated_at": "2026-08-29T21:42:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T12:33:41.791Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5465201446:2026-08-29T22:17:35Z:re_review",
       "comment_id": "5465201446",
@@ -32980,6 +32953,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134315:5481920922:2026-08-31T17:21:50Z:clawsweeper_needs_human",
+      "comment_id": "5481920922",
+      "comment_version_key": "5481920922:2026-08-31T17:21:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134315#issuecomment-5481920922",
+      "comment_created_at": "2026-08-31T17:21:50Z",
+      "comment_updated_at": "2026-08-31T17:21:50Z",
+      "comment_body_sha256": "f46d57b8986eff2939659a5821232d48107761fea448e54ad00b84661cb8c74e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This test relies on Vitest mock-factory realization semantics; the read-only checkout has no installed Vitest source, so that dependency contract could not be independently inspected... (sha=ca83bc1cfeaf4cb45ccd6d8d5c122e69b5d8393e)",
+      "expected_head_sha": "ca83bc1cfeaf4cb45ccd6d8d5c122e69b5d8393e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T17:22:39.153Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-xai-oauth-lazy-import-proof",
+        "head_sha": "ca83bc1cfeaf4cb45ccd6d8d5c122e69b5d8393e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
