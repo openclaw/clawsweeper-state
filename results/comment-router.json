@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:21:07.318Z",
+  "updated_at": "2026-08-31T04:21:51.580Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133656:5472214875:2026-08-31T00:23:56Z:clawsweeper_needs_human",
-      "comment_id": "5472214875",
-      "comment_version_key": "5472214875:2026-08-31T00:23:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133656#issuecomment-5472214875",
-      "comment_created_at": "2026-08-31T00:23:56Z",
-      "comment_updated_at": "2026-08-31T00:23:56Z",
-      "comment_body_sha256": "d2110a0e09bd97a206ee5e460d7d48f6f4ca0530c0654a4dfc754a03ef038719",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133656,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two exact-head type-check jobs were still in progress in the supplied check state; normal merge gating should wait for their completion. (sha=7590b95c1c52e0fcc563d2f90ee84bfbfa4f6ea0)",
-      "expected_head_sha": "7590b95c1c52e0fcc563d2f90ee84bfbfa4f6ea0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T00:24:47.736Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/recursing-lehmann-060c88",
-        "head_sha": "7590b95c1c52e0fcc563d2f90ee84bfbfa4f6ea0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:53:5123889349:2026-08-31T00:24:19Z:clawsweeper_auto_repair",
       "comment_id": "5123889349",
@@ -32381,6 +32348,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133499:5471077308:2026-08-31T04:20:13Z:clawsweeper_needs_human",
+      "comment_id": "5471077308",
+      "comment_version_key": "5471077308:2026-08-31T04:20:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133499#issuecomment-5471077308",
+      "comment_created_at": "2026-08-30T20:29:09Z",
+      "comment_updated_at": "2026-08-31T04:20:13Z",
+      "comment_body_sha256": "6a9f4fe2d84279d6b4b40ec85746dd13bed3505ce1255a8ec71ba79b90e70f70",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The installed imsg bridge selector contract for both chat_id and chat_guid was not independently verified, and the supplied PR evidence has no post-fix installed-bridge trace; beta va... (sha=fa318748d95009c745a66f862f389efe9c852e29)",
+      "expected_head_sha": "fa318748d95009c745a66f862f389efe9c852e29",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T04:21:51.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/imessage-threaded-reply-service",
+        "head_sha": "fa318748d95009c745a66f862f389efe9c852e29",
+        "cluster_id": "automerge-openclaw-openclaw-133499",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133499.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
