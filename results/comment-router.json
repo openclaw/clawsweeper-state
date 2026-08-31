@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:42:50.668Z",
+  "updated_at": "2026-08-31T07:43:38.553Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133520:5473326973:2026-08-31T03:28:06Z:re_review",
-      "comment_id": "5473326973",
-      "comment_version_key": "5473326973:2026-08-31T03:28:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133520#issuecomment-5473326973",
-      "comment_created_at": "2026-08-31T03:28:06Z",
-      "comment_updated_at": "2026-08-31T03:28:06Z",
-      "comment_body_sha256": "f1b58f77c4fc10231df79a1905444293b9af1502777faecb6709db3b7be6d8b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133520,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T03:57:49.227Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133758:5473337318:2026-08-31T03:40:59Z:clawsweeper_auto_repair",
       "comment_id": "5473337318",
@@ -32246,6 +32219,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T07:42:50.668Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133778:5473679932:2026-08-31T07:42:49Z:clawsweeper_needs_human",
+      "comment_id": "5473679932",
+      "comment_version_key": "5473679932:2026-08-31T07:42:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133778#issuecomment-5473679932",
+      "comment_created_at": "2026-08-31T04:22:06Z",
+      "comment_updated_at": "2026-08-31T07:42:49Z",
+      "comment_body_sha256": "b22d20aac448d4c7467d95a1905eea88f76276d8b94fd157ea641ad523eb563c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133778,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has three failed compact-small checks in the supplied check rollup; GitHub was unreachable during review, so their logs and relationship to this change remain unverifie... (sha=ac159a1a1c6dd5bf5228f61eb048bab2490e57e7)",
+      "expected_head_sha": "ac159a1a1c6dd5bf5228f61eb048bab2490e57e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T07:43:38.553Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-ci-timings-recent-push-filter-20260831",
+        "head_sha": "ac159a1a1c6dd5bf5228f61eb048bab2490e57e7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
