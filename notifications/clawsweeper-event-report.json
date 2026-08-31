@@ -1,15 +1,48 @@
 {
   "version": 1,
-  "generated_at": "2026-08-31T10:15:22.959Z",
+  "generated_at": "2026-08-31T10:56:49.955Z",
   "input": "repair-apply-report.json",
-  "run_record": "results/runs/33379322056.json",
+  "run_record": "results/runs/33377542496.json",
   "ledger": "notifications/clawsweeper-event-ledger.json",
   "dry_run": false,
-  "run_id": "33379322056",
-  "considered": 0,
-  "pending": 0,
-  "sent": 0,
+  "run_id": "33377542496",
+  "considered": 2,
+  "pending": 2,
+  "sent": 2,
   "failed": 0,
   "skipped": 0,
-  "actions": []
+  "actions": [
+    {
+      "key": "clawsweeper.merge_blocked:openclaw/fs-safe:#171:merge_canonical:blocked:job does not allow merge",
+      "type": "clawsweeper.merge_blocked",
+      "severity": "warning",
+      "repo": "openclaw/fs-safe",
+      "target": "#171",
+      "title": "fix(temp): bound workspace cleanup ownership",
+      "action": "merge_canonical",
+      "event_status": "blocked",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33377542496",
+      "cluster_id": "automerge-openclaw-fs-safe-171",
+      "hook_run_id": "8bfa2138-da49-49ce-bd97-3ca365a5a472",
+      "url": "https://github.com/openclaw/fs-safe/pull/171"
+    },
+    {
+      "key": "clawsweeper.contributor_branch_repaired:openclaw/fs-safe:#171:repair_contributor_branch:pushed:df49e8f88119554290eda3175110b1cdd4f94d09",
+      "type": "clawsweeper.contributor_branch_repaired",
+      "severity": "info",
+      "repo": "openclaw/fs-safe",
+      "target": "#171",
+      "title": null,
+      "action": "repair_contributor_branch",
+      "event_status": "pushed",
+      "status": "sent",
+      "reason": "sent to OpenClaw hook; sent to status dashboard",
+      "run_id": "33377542496",
+      "cluster_id": "automerge-openclaw-fs-safe-171",
+      "hook_run_id": "664655be-413e-405d-8109-1e02a5c8213d",
+      "url": "https://github.com/openclaw/fs-safe/pull/171"
+    }
+  ]
 }
