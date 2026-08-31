@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-183
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/183#issuecomment-5473814106"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/183#issuecomment-5474315850"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/183#issuecomment-
 Maintainer opted #183 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/183#issuecomment-5473814106
+Request comment: https://github.com/openclaw/fs-safe/pull/183#issuecomment-5474315850
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/183
@@ -59,5 +59,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review exact head `e9faa7c6a73f72bc65164205ba4cd5e584188a31`. Verify async and sync regular-file append preserve exact bigint identity across preview, opened descriptor, and current pathname before chmod or append; rounded-equal identities must reject, Windows zero/unknown components must receive one same-object reinspection without reopening and fail closed if still unresolved, and stable create-or-append, hardlink, symlink, type, mode, and max-size behavior must remain unchanged. Require fresh exact-head Windows Node 22/24 and coverage proof for the previously failing replacement test, plus all normal Linux/macOS/native/package gates and a clean review before merge.
+Review exact head `180dd9720dd2e9946d26e4f9d0024907ddc46413`. Retain every prior exact-bigint, rounded-equal, same-object Windows reinspection, current-path, no-mutation, and compatibility requirement. The PR body now includes real exact-head Windows production-API proof from Node 22: async and sync timing hooks both ran, both raced calls rejected with the intended identity-change error, original/replacement bytes remained exact, and stable async/sync appends both produced `ab`; the same step passed on Node 24. The maintainer decision is explicit: persistent unknown Windows identities must fail closed before mutation. Verify the new test-only hooks cannot activate outside the existing test gate, require all exact-head CI gates plus the linked Windows proof, and merge only after a clean review.
 
