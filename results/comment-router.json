@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:11:03.041Z",
+  "updated_at": "2026-08-31T12:11:03.478Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/telecrawl:31:5466041539:2026-08-31T08:56:51Z:clawsweeper_needs_human",
-      "comment_id": "5466041539",
-      "comment_version_key": "5466041539:2026-08-31T08:56:51Z",
-      "comment_url": "https://github.com/openclaw/telecrawl/pull/31#issuecomment-5466041539",
-      "comment_created_at": "2026-08-30T01:39:36Z",
-      "comment_updated_at": "2026-08-31T08:56:51Z",
-      "comment_body_sha256": "7e2488be2c1e10117fef278e0219b3b86e4ba0a5e3e6979ab0708875c8c47e2c",
-      "repo": "openclaw/telecrawl",
-      "issue_number": 31,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair-lane action is needed; the reviewed patch is coherent and awaits ordinary maintainer merge gating. (sha=adf2467842c6abd08352094d596061ac0131f18b)",
-      "expected_head_sha": "adf2467842c6abd08352094d596061ac0131f18b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T08:58:16.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f003-fetch-media-batch",
-        "head_sha": "adf2467842c6abd08352094d596061ac0131f18b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123837:5476088439:2026-08-31T08:57:30Z:re_review",
       "comment_id": "5476088439",
@@ -32074,6 +32041,53 @@
         "kind": "pull_request",
         "branch": "codex/csw-147-queue-correlation",
         "head_sha": "181cd6f5c46ac1de48b9da030002e62ebe5782d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125707:5478121901:2026-08-31T12:10:04Z:re_review",
+      "comment_id": "5478121901",
+      "comment_version_key": "5478121901:2026-08-31T12:10:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5478121901",
+      "comment_created_at": "2026-08-31T12:10:04Z",
+      "comment_updated_at": "2026-08-31T12:10:04Z",
+      "comment_body_sha256": "dfc144966d4f2ec5b3f5a5b84186e0ee1c16b431349a8e5e2f77da48b205462e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125707,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — exact head `1263cfffd2f00d0713fcffbe603e1c321da6b62b`; exact ci passed and the exact luna max production proof passed: https://github.com/openclaw/openclaw/actions/runs/33343797910/job/99345820901. the test-local session-deletion observation reset preserves the strong uninterrupted warm-reuse assertion while correctly treating explicit post-deletion attachment as a new openclaw session",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T12:11:00.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cached-codex-effort-route",
+        "head_sha": "1263cfffd2f00d0713fcffbe603e1c321da6b62b",
         "cluster_id": null,
         "job_path": null
       },
