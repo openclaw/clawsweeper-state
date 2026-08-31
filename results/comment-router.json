@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T22:17:53.924Z",
+  "updated_at": "2026-08-31T22:19:43.645Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5467220507:2026-08-30T06:46:00Z:re_review",
-      "comment_id": "5467220507",
-      "comment_version_key": "5467220507:2026-08-30T06:46:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5467220507",
-      "comment_created_at": "2026-08-30T06:46:00Z",
-      "comment_updated_at": "2026-08-30T06:46:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:26:35.473Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5467465475:2026-08-30T07:47:11Z:re_review",
       "comment_id": "5467465475",
@@ -32924,6 +32897,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134230:5481059975:2026-08-31T22:18:05Z:clawsweeper_needs_human",
+      "comment_id": "5481059975",
+      "comment_version_key": "5481059975:2026-08-31T22:18:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134230#issuecomment-5481059975",
+      "comment_created_at": "2026-08-31T16:09:17Z",
+      "comment_updated_at": "2026-08-31T22:18:05Z",
+      "comment_body_sha256": "33d99b11e7e87546e2bea4ffd96d39752021ea327fc3a86f38b13c8687157f78",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134230,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: ACPX injects session/model context into the managed MCP child, and that child filters tool discovery before MCP...; Review finding: [medium] Prove policy rejection before plugin execution — src/mcp/plugin-tools-serve.ts:196 (sha=526193558dc9f3a105453f76ac938f5c111d60ba)",
+      "expected_head_sha": "526193558dc9f3a105453f76ac938f5c111d60ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T22:19:43.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-981",
+        "head_sha": "526193558dc9f3a105453f76ac938f5c111d60ba",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
