@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T05:56:56.787Z",
+  "updated_at": "2026-08-31T05:58:19.163Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133713:5472796942:2026-08-31T02:04:06Z:clawsweeper_needs_human",
-      "comment_id": "5472796942",
-      "comment_version_key": "5472796942:2026-08-31T02:04:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133713#issuecomment-5472796942",
-      "comment_created_at": "2026-08-31T02:04:06Z",
-      "comment_updated_at": "2026-08-31T02:04:06Z",
-      "comment_body_sha256": "10075ec81021c78f402cec18676c349bdb3100fe9ea5860d49296294a6733261",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133713,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, so final merge readiness is not yet established. (sha=4e7d2c5629e4ed7fbd96445a7dea83bd85366444)",
-      "expected_head_sha": "4e7d2c5629e4ed7fbd96445a7dea83bd85366444",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T02:04:55.830Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/run-output-usage-cleanup",
-        "head_sha": "4e7d2c5629e4ed7fbd96445a7dea83bd85366444",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:206:5465775192:2026-08-31T02:05:14Z:clawsweeper_auto_repair",
       "comment_id": "5465775192",
@@ -31988,6 +31955,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133380:5474358739:2026-08-31T05:57:32Z:re_review",
+      "comment_id": "5474358739",
+      "comment_version_key": "5474358739:2026-08-31T05:57:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133380#issuecomment-5474358739",
+      "comment_created_at": "2026-08-31T05:57:32Z",
+      "comment_updated_at": "2026-08-31T05:57:32Z",
+      "comment_body_sha256": "e8c967397d04e1d68510e27655fb08f3a011eecfb0e77c94b57f855cd731c035",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133380,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T05:58:16.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-stderr-to-gateway-log",
+        "head_sha": "e14289ac7e1d51e95ffaea921f2914570d58acef",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
