@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:29:27.253Z",
+  "updated_at": "2026-08-31T19:30:04.194Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3555:5480084047:2026-08-31T14:50:46Z:re_review",
-      "comment_id": "5480084047",
-      "comment_version_key": "5480084047:2026-08-31T14:50:46Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3555#issuecomment-5480084047",
-      "comment_created_at": "2026-08-31T14:50:46Z",
-      "comment_updated_at": "2026-08-31T14:50:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3555,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T14:51:32.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "brzezowski/fix-3554-skill-hero-metadata-wrap",
-        "head_sha": "56244ba1aa18bfacb2356ea8249e7169be2367dd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134032:5480085084:2026-08-31T14:50:52Z:re_review",
       "comment_id": "5480085084",
@@ -32903,6 +32856,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133845:5474508727:2026-08-31T19:29:03Z:clawsweeper_needs_human",
+      "comment_id": "5474508727",
+      "comment_version_key": "5474508727:2026-08-31T19:29:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133845#issuecomment-5474508727",
+      "comment_created_at": "2026-08-31T06:16:43Z",
+      "comment_updated_at": "2026-08-31T19:29:03Z",
+      "comment_body_sha256": "ff6c615502217d23c40a45ce70fb2f88b75bb2c031f13d8e138f189feca2994e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133845,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the npm failure formatter in src/infra/install-source-utils.ts, used by metadata, pack, archive, and i... (sha=b259c4e07b8fe5c3256e21dde155ef755d530808)",
+      "expected_head_sha": "b259c4e07b8fe5c3256e21dde155ef755d530808",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:30:04.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/npm-plugin-metadata-failure-format",
+        "head_sha": "b259c4e07b8fe5c3256e21dde155ef755d530808",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
