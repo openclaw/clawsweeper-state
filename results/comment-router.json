@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:12:59.749Z",
+  "updated_at": "2026-08-31T04:13:21.702Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1251:5472196394:2026-08-31T00:20:40Z:re_review",
-      "comment_id": "5472196394",
-      "comment_version_key": "5472196394:2026-08-31T00:20:40Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1251#issuecomment-5472196394",
-      "comment_created_at": "2026-08-31T00:20:40Z",
-      "comment_updated_at": "2026-08-31T00:20:40Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1251,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T00:21:23.501Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exact-review-completion-metadata-fallbacks",
-        "head_sha": "7cbe4493cf05142ee3338c63e64bbb291e2e7da1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131584:5472139444:2026-08-31T00:12:00Z:re_review",
       "comment_id": "5472139444",
@@ -32428,6 +32381,39 @@
         "kind": "pull_request",
         "branch": "steipete/deps-seven-day-refresh-20260830",
         "head_sha": "e3b0f76750d15b3c605d882e21cb0f3dd7ad60a4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133777:5473603204:2026-08-31T04:12:41Z:clawsweeper_needs_human",
+      "comment_id": "5473603204",
+      "comment_version_key": "5473603204:2026-08-31T04:12:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133777#issuecomment-5473603204",
+      "comment_created_at": "2026-08-31T04:12:41Z",
+      "comment_updated_at": "2026-08-31T04:12:41Z",
+      "comment_body_sha256": "2504fec007a541b8a3fe5cbaaa397cb80877cef6c50a99201c458361bb5fdeb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133777,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR remains a draft and the supplied body says exact-head hosted CI is pending; this review is not a merge recommendation. (sha=c5b8536a82acb9dc8b5600339f87dada4392736f)",
+      "expected_head_sha": "c5b8536a82acb9dc8b5600339f87dada4392736f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:13:21.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-code-mode-prefix-20260831",
+        "head_sha": "c5b8536a82acb9dc8b5600339f87dada4392736f",
         "cluster_id": null,
         "job_path": null
       }
