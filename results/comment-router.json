@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T23:36:46.972Z",
+  "updated_at": "2026-08-31T23:38:12.667Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134026:5476842797:2026-08-31T16:53:48Z:clawsweeper_needs_human",
-      "comment_id": "5476842797",
-      "comment_version_key": "5476842797:2026-08-31T16:53:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134026#issuecomment-5476842797",
-      "comment_created_at": "2026-08-31T10:09:23Z",
-      "comment_updated_at": "2026-08-31T16:53:48Z",
-      "comment_body_sha256": "b1a7a628dc86bd5309a1dc1123ffa9ca6924ee34d9843327043f31d48d378d4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134026,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The protected maintainer label requires explicit maintainer handling, and the review found no bounded repair for an automated worker. (sha=98a8eccc34951c884bf1145c2403cbfa6157a6dc)",
-      "expected_head_sha": "98a8eccc34951c884bf1145c2403cbfa6157a6dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:54:45.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/workspace-hash-reuse",
-        "head_sha": "98a8eccc34951c884bf1145c2403cbfa6157a6dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134249:5481594689:2026-08-31T16:54:43Z:clawsweeper_needs_human",
       "comment_id": "5481594689",
@@ -33059,6 +33026,53 @@
         "kind": "pull_request",
         "branch": "codex/checkpoint-pending-wait",
         "head_sha": "71de129ce749b247676ce4384f79e58f6b878e08",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134519:5486281813:2026-08-31T23:36:33Z:re_review",
+      "comment_id": "5486281813",
+      "comment_version_key": "5486281813:2026-08-31T23:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134519#issuecomment-5486281813",
+      "comment_created_at": "2026-08-31T23:36:33Z",
+      "comment_updated_at": "2026-08-31T23:36:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134519,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T23:38:10.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-install-smoke-frozen-baseline",
+        "head_sha": "912965ae0815c13a44f3665170dc9c242be75692",
         "cluster_id": null,
         "job_path": null
       },
