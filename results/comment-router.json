@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:49:53.946Z",
+  "updated_at": "2026-08-31T04:50:22.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3107:5420136345:2026-08-26T03:24:09Z:re_review",
-      "comment_id": "5420136345",
-      "comment_version_key": "5420136345:2026-08-26T03:24:09Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3107#issuecomment-5420136345",
-      "comment_created_at": "2026-08-26T03:24:09Z",
-      "comment_updated_at": "2026-08-26T03:24:09Z",
-      "comment_body_sha256": "6a5cc03ab006f349b9574c940a9a02c55655e8a62e5a20723140ee9bbae82c31",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3107,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T01:02:01.616Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3107:5425008049:2026-08-26T12:05:51Z:re_review",
       "comment_id": "5425008049",
@@ -32477,6 +32450,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:183:5473836483:2026-08-31T04:49:29Z:clawsweeper_needs_human",
+      "comment_id": "5473836483",
+      "comment_version_key": "5473836483:2026-08-31T04:49:29Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/183#issuecomment-5473836483",
+      "comment_created_at": "2026-08-31T04:44:39Z",
+      "comment_updated_at": "2026-08-31T04:49:29Z",
+      "comment_body_sha256": "86ad888d5c4ea150fee773c6d99b8b31e19d09d96dc0a5575385178a9e153d15",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 183,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the regular-file append boundary; supplied evidence covers mocked bigint stats and CI checks, but does not show... (sha=e9faa7c6a73f72bc65164205ba4cd5e584188a31)",
+      "expected_head_sha": "e9faa7c6a73f72bc65164205ba4cd5e584188a31",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T04:50:22.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/regular-append-exact-identity",
+        "head_sha": "e9faa7c6a73f72bc65164205ba4cd5e584188a31",
+        "cluster_id": "automerge-openclaw-fs-safe-183",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-183.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
