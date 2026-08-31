@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:00:49.490Z",
+  "updated_at": "2026-08-31T03:03:10.713Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132724:5463693484:2026-08-30T22:47:36Z:clawsweeper_auto_repair",
-      "comment_id": "5463693484",
-      "comment_version_key": "5463693484:2026-08-30T22:47:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132724#issuecomment-5463693484",
-      "comment_created_at": "2026-08-29T16:59:51Z",
-      "comment_updated_at": "2026-08-30T22:47:36Z",
-      "comment_body_sha256": "66e706843361ecf1293feb15fad6592413b20971fa961953943ee96a13fb61a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132724,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c69e7ed31b629837be5582909c81397d182334d0)",
-      "expected_head_sha": "c69e7ed31b629837be5582909c81397d182334d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T22:57:29.838Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-text-chunk-limit",
-        "head_sha": "c69e7ed31b629837be5582909c81397d182334d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132830:5464695309:2026-08-30T22:51:00Z:clawsweeper_needs_human",
       "comment_id": "5464695309",
@@ -33029,6 +32996,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132727:5473159858:2026-08-31T03:02:27Z:re_review",
+      "comment_id": "5473159858",
+      "comment_version_key": "5473159858:2026-08-31T03:02:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132727#issuecomment-5473159858",
+      "comment_created_at": "2026-08-31T03:02:27Z",
+      "comment_updated_at": "2026-08-31T03:02:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132727,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T03:03:04.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/code-bug-docs-link-audit-fence-20260830",
+        "head_sha": "b6bfbf8ac76308f49b76efb10b220cd04ff84aa2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
