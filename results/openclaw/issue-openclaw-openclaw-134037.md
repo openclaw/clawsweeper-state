@@ -2,59 +2,58 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134037"
 mode: "autonomous"
-run_id: "33386886505"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33386886505"
+run_id: "33385360495"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33385360495"
 head_sha: "206fe726bbadaae32dcb9822a2511a351a5c9317"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-31T11:42:41.405Z"
+result_status: "blocked"
+published_at: "2026-08-31T11:22:23.026Z"
 canonical: "https://github.com/openclaw/openclaw/issues/134037"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/134037"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134037
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33386886505](https://github.com/openclaw/clawsweeper/actions/runs/33386886505)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33385360495](https://github.com/openclaw/clawsweeper/actions/runs/33385360495)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/134037
 
 ## Summary
 
-No implementation PR is warranted: current main (20591d4835e1b9c0a5fe106d53d4682b1e1eeda4) already preserves pnpm ownership for the orphaned pnpm 11 global-project path described in #134037.
+No implementation PR is planned: current main at 620fb72e already contains the lexical pnpm-shim ownership path and its regression coverage, but the required sibling ../codex checkout is absent and this read-only worker cannot clone or inspect it to issue the required Codex verdict.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | skipped |  |  | worker marked the fix path as non-executable; closure actions may still apply |
 | issue_implementation_status_comment | updated | #134037 |  |  |
 
 ## Apply Actions
@@ -67,9 +66,8 @@ No implementation PR is warranted: current main (20591d4835e1b9c0a5fe106d53d4682
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134037 | keep_canonical | planned | canonical | The exact reported ownership gap is already represented by current-main source and regression coverage; this lane must neither open an empty PR nor close the issue. |
-| cluster:issue-openclaw-openclaw-134037 | build_fix_artifact | planned | fixed_by_candidate | Audited no-PR outcome: the requested repair is already on current main. |
+| #134037 | needs_human | blocked | needs_human | Provide an inspectable sibling ../codex checkout (or rerun in a writable executor that can clone it) before recording a fixed-on-main conclusion or posting an issue update. |
 
 ## Needs Human
 
-- none
+- Make ../codex available to the executor for the repository-required direct Codex inspection; after that, revalidate the existing current-main updater coverage and decide whether #134037 should receive a fixed-on-main update.
