@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:52:34.612Z",
+  "updated_at": "2026-08-31T03:53:21.807Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1316:5471863610:2026-08-30T23:25:39Z:clawsweeper_needs_human",
-      "comment_id": "5471863610",
-      "comment_version_key": "5471863610:2026-08-30T23:25:39Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1316#issuecomment-5471863610",
-      "comment_created_at": "2026-08-30T23:14:38Z",
-      "comment_updated_at": "2026-08-30T23:25:39Z",
-      "comment_body_sha256": "f08a7ff42aeee7719131e79cfa4ca1b10b6416529e79c72c508623c91b206875",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1316,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair-lane work is needed because the submitted PR already contains the focused implementation, regression coverage, and current-head real behavior proof. (sha=8ad2930f93f8e8668afc98a4395ee1fe700b18e8)",
-      "expected_head_sha": "8ad2930f93f8e8668afc98a4395ee1fe700b18e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T23:26:40.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-cached-review-source",
-        "head_sha": "8ad2930f93f8e8668afc98a4395ee1fe700b18e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133596:5471893292:2026-08-30T23:21:05Z:re_review",
       "comment_id": "5471893292",
@@ -33143,6 +33110,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132464:5461057795:2026-08-31T03:52:20Z:clawsweeper_needs_human",
+      "comment_id": "5461057795",
+      "comment_version_key": "5461057795:2026-08-31T03:52:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132464#issuecomment-5461057795",
+      "comment_created_at": "2026-08-29T07:27:35Z",
+      "comment_updated_at": "2026-08-31T03:52:20Z",
+      "comment_body_sha256": "19b7b8d31be77e9e8a86d64c7a5432323ced6b07182807816589834632211ba1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds production session-lifecycle state and archive behavior (+272/-14 production lines); this is justified by the missing owner boundary, but it remains merge-sensitive b... (sha=416847a994214945377cbfe4eb339d68e9cf9f01)",
+      "expected_head_sha": "416847a994214945377cbfe4eb339d68e9cf9f01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T03:53:21.807Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-131770-doctor-orphan-heartbeat-transcripts",
+        "head_sha": "416847a994214945377cbfe4eb339d68e9cf9f01",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
