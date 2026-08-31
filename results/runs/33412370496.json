@@ -1,0 +1,65 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134201",
+  "mode": "autonomous",
+  "run_id": "33412370496",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33412370496",
+  "head_sha": "659dee73d0706fee9776f7986d9861e82b897d24",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134201.md",
+  "published_at": "2026-08-31T16:31:40.553Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134201",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134201",
+  "canonical_pr": null,
+  "summary": "#134201 remains the canonical, source-proven installer bug. Current main appends `--silent` after `--loglevel error` in scripts/install.sh:1110, and npm maps that alias to `--loglevel silent`; EEXIST recovery subsequently depends on the captured log. The narrow repair is ready: remove the obsolete silent-flag path and add an owner-boundary fake-npm regression that fails before the change and proves the dangling launcher is moved before retry. This runner cannot apply or validate it: its filesystem is read-only (the focused test command fails before test collection with Corepack EROFS), and the required sibling ../codex checkout is absent and cannot be cloned under the sandbox.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/134201",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "One narrow bug-fix PR should own implementation and validation; no close or merge is permitted by this job."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/134201",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "The defect is reproducible from the current command and npm contract, but this read-only worker cannot edit the branch or run the requested test harness."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/134201",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134201",
+      "candidate_fix": null,
+      "reason": "A narrow replacement PR is appropriate once a writable executor is available."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout (and the required sibling ../codex source checkout) so ClawSweeper can apply the two-file repair and run the mandated focused validation."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
