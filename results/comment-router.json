@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T01:34:56.738Z",
+  "updated_at": "2026-08-31T01:35:10.079Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132668:5467700527:2026-08-30T08:44:00Z:re_review",
-      "comment_id": "5467700527",
-      "comment_version_key": "5467700527:2026-08-30T08:44:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132668#issuecomment-5467700527",
-      "comment_created_at": "2026-08-30T08:44:00Z",
-      "comment_updated_at": "2026-08-30T08:44:00Z",
-      "comment_body_sha256": "a8f0a9487e365d83c68e47481eeb6322365ab839856f1f6aa4814d6c437fd204",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132668,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T20:38:46.649Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133499:5471077308:2026-08-30T20:38:02Z:clawsweeper_auto_repair",
       "comment_id": "5471077308",
@@ -33988,6 +33961,65 @@
       "status": "skipped",
       "processed_at": "2026-08-31T01:34:56.738Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:181:5472619032:2026-08-31T01:34:24Z:automerge",
+      "comment_id": "5472619032",
+      "comment_version_key": "5472619032:2026-08-31T01:34:24Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/181#issuecomment-5472619032",
+      "comment_created_at": "2026-08-31T01:34:24Z",
+      "comment_updated_at": "2026-08-31T01:34:24Z",
+      "comment_body_sha256": "0e53101fa9fe5ef1a54c90fbdaa17c86a14d7b09d5e5cfeddb81ed52db8ef448",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 181,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-31T01:35:04.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tar-ignored-record-admission",
+        "head_sha": "f566ae1525d0072054a26f9b5815cf24ff21e8f1",
+        "cluster_id": "automerge-openclaw-fs-safe-181",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-181.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-181.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
