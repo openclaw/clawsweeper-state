@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:42:29.677Z",
+  "updated_at": "2026-08-31T11:42:39.635Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133795:5475717704:2026-08-31T08:21:13Z:re_review",
-      "comment_id": "5475717704",
-      "comment_version_key": "5475717704:2026-08-31T08:21:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133795#issuecomment-5475717704",
-      "comment_created_at": "2026-08-31T08:21:13Z",
-      "comment_updated_at": "2026-08-31T08:21:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133795,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T08:21:51.061Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026-7-33-release-validation",
-        "head_sha": "b4e50fa6d9cb5cb648b16598c2ff3c8bca9f7a90",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133800:5475718005:2026-08-31T08:21:15Z:re_review",
       "comment_id": "5475718005",
@@ -31975,6 +31928,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T11:42:29.677Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134073:5477789576:2026-08-31T11:41:41Z:clawsweeper_needs_human",
+      "comment_id": "5477789576",
+      "comment_version_key": "5477789576:2026-08-31T11:41:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134073#issuecomment-5477789576",
+      "comment_created_at": "2026-08-31T11:41:41Z",
+      "comment_updated_at": "2026-08-31T11:41:41Z",
+      "comment_body_sha256": "d8a25413d35c95aa8ebc87e3426e0ad678f915d43537e3d70471ed19998fd9a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134073,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Filesystem-backed local sessions with missing or unreadable rollout metadata now fail eligibility explicitly instead of relying on catalog membership; the documentation describes this... (sha=00d75bc3ae818c8d7d5aa478a7f944d808a11aed)",
+      "expected_head_sha": "00d75bc3ae818c8d7d5aa478a7f944d808a11aed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T11:42:39.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vigilant-moser-f91d29",
+        "head_sha": "00d75bc3ae818c8d7d5aa478a7f944d808a11aed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
