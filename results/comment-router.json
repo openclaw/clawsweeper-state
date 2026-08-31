@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T18:22:02.291Z",
+  "updated_at": "2026-08-31T18:22:44.299Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133952:5479126833:2026-08-31T13:33:36Z:re_review",
-      "comment_id": "5479126833",
-      "comment_version_key": "5479126833:2026-08-31T13:33:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133952#issuecomment-5479126833",
-      "comment_created_at": "2026-08-31T13:33:36Z",
-      "comment_updated_at": "2026-08-31T13:33:36Z",
-      "comment_body_sha256": "df7978fbfc0775ae71538f09f7ee6062dd054242f8419af926f391badca02c9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133952,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T13:34:23.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/admiring-williamson-39fb9d",
-        "head_sha": "792dab7cefff400b9192d41ea9e349f21df8e503",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132689:5479135852:2026-08-31T13:34:22Z:re_review",
       "comment_id": "5479135852",
@@ -32851,6 +32804,39 @@
         "kind": "pull_request",
         "branch": "codex/cleanup20k-channel-presence28-20260831",
         "head_sha": "bd20b1267f4ff78021cba65fbf7e3c2243edf7fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134181:5481948608:2026-08-31T18:21:44Z:clawsweeper_auto_repair",
+      "comment_id": "5481948608",
+      "comment_version_key": "5481948608:2026-08-31T18:21:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134181#issuecomment-5481948608",
+      "comment_created_at": "2026-08-31T17:23:55Z",
+      "comment_updated_at": "2026-08-31T18:21:44Z",
+      "comment_body_sha256": "b997c5e16a4707aaf1f5fed4a02a43acc28ed6695233e3427adf8bbf11709970",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=09cb3d444fdb1cafc6eed66e0eaac487aad002b6)",
+      "expected_head_sha": "09cb3d444fdb1cafc6eed66e0eaac487aad002b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T18:22:44.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/crabbox-settled-capture",
+        "head_sha": "09cb3d444fdb1cafc6eed66e0eaac487aad002b6",
         "cluster_id": null,
         "job_path": null
       }
