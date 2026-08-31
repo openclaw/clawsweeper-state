@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T20:00:51.384Z",
+  "updated_at": "2026-08-31T20:01:12.652Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5480904847:2026-08-31T15:56:37Z:re_review",
-      "comment_id": "5480904847",
-      "comment_version_key": "5480904847:2026-08-31T15:56:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/70#issuecomment-5480904847",
-      "comment_created_at": "2026-08-31T15:56:37Z",
-      "comment_updated_at": "2026-08-31T15:56:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 70,
-      "author": "alauppe",
-      "author_id": 307341,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T15:57:25.107Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maint/vpn-prompts-final",
-        "head_sha": "6724819ccf958d00a7817f487ec7ef98f5fcdc0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-08-31T15:58:12Z:clawsweeper_auto_repair",
       "comment_id": "5415957601",
@@ -32192,6 +32145,39 @@
         "kind": "pull_request",
         "branch": "codex/install-path-failure-exit",
         "head_sha": "7d8995d0017c1a44b75511e3ef822297b247ae18",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132477:5461132681:2026-08-31T20:00:03Z:clawsweeper_needs_human",
+      "comment_id": "5461132681",
+      "comment_version_key": "5461132681:2026-08-31T20:00:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132477#issuecomment-5461132681",
+      "comment_created_at": "2026-08-29T07:46:50Z",
+      "comment_updated_at": "2026-08-31T20:00:03Z",
+      "comment_body_sha256": "e2df8deb802cd0d421c747210c8264212b963faf879b7ca5c1966515ed8a2043",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132477,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied evidence identifies no exact-head staged-import run covering naming, a successful probe, default turn, and intended-only persistence, so compatibility behavior remains un... (sha=f9fb9ddbd6940e2fd967d6ce277c14f5e7546175)",
+      "expected_head_sha": "f9fb9ddbd6940e2fd967d6ce277c14f5e7546175",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T20:01:12.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/setup-verification-runtime-roster-04b48b",
+        "head_sha": "f9fb9ddbd6940e2fd967d6ce277c14f5e7546175",
         "cluster_id": null,
         "job_path": null
       }
