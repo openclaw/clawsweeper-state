@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:00:25.379Z",
+  "updated_at": "2026-08-31T11:01:49.283Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5250240163:2026-08-11T07:24:39Z:re_review",
-      "comment_id": "5250240163",
-      "comment_version_key": "5250240163:2026-08-11T07:24:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5250240163",
-      "comment_created_at": "2026-08-11T07:24:39Z",
-      "comment_updated_at": "2026-08-11T07:24:39Z",
-      "comment_body_sha256": "620704634535afbe8ea675c11b48bb57c621959cad77df2ad438566ce669c868",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T07:36:30.535Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5252018205:2026-08-11T10:34:17Z:re_review",
       "comment_id": "5252018205",
@@ -32399,6 +32372,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134040:5477055914:2026-08-31T11:00:36Z:clawsweeper_auto_repair",
+      "comment_id": "5477055914",
+      "comment_version_key": "5477055914:2026-08-31T11:00:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134040#issuecomment-5477055914",
+      "comment_created_at": "2026-08-31T10:30:20Z",
+      "comment_updated_at": "2026-08-31T11:00:36Z",
+      "comment_body_sha256": "767c0b427427673e72994c2bb341640ef18750712adb5dacc2df54d4d0ec9313",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=0c4d9e6a193d1e67ae00ad3ea3144bbb097d7e3d)",
+      "expected_head_sha": "0c4d9e6a193d1e67ae00ad3ea3144bbb097d7e3d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-08-31T11:01:49.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-probe-blank-timeout-066",
+        "head_sha": "0c4d9e6a193d1e67ae00ad3ea3144bbb097d7e3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
