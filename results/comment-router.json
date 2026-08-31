@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T06:08:52.827Z",
+  "updated_at": "2026-08-31T06:08:59.548Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131584:5472851008:2026-08-31T02:12:40Z:re_review",
-      "comment_id": "5472851008",
-      "comment_version_key": "5472851008:2026-08-31T02:12:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131584#issuecomment-5472851008",
-      "comment_created_at": "2026-08-31T02:12:40Z",
-      "comment_updated_at": "2026-08-31T02:12:40Z",
-      "comment_body_sha256": "898da8271132b23dad23d63f436bf2827dd2822262c73e3a475b98d9c3bb645f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131584,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T02:13:34.178Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/explicit-skill-repair-receipt",
-        "head_sha": "0b44325e5da4bec2a0f3986bc5717b923cc12642",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3294:5471135814:2026-08-31T02:14:41Z:clawsweeper_auto_repair",
       "comment_id": "5471135814",
@@ -32303,6 +32256,39 @@
         "kind": "pull_request",
         "branch": "fix/imessage-bare-numeric-125461",
         "head_sha": "96b7e3adea5465e7a11fd1fae4fc74835951a6fb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133838:5474437684:2026-08-31T06:08:10Z:clawsweeper_needs_human",
+      "comment_id": "5474437684",
+      "comment_version_key": "5474437684:2026-08-31T06:08:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133838#issuecomment-5474437684",
+      "comment_created_at": "2026-08-31T06:08:10Z",
+      "comment_updated_at": "2026-08-31T06:08:10Z",
+      "comment_body_sha256": "8244cbf79532d34c81ccdb6300b75bac84fe0103556f553d9d71d4accae106cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133838,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This is a normal focused PR review with no concrete repair-lane work to dispatch. (sha=6b4f71a9413c07450d05d07c7ce43d58ed4c56dc)",
+      "expected_head_sha": "6b4f71a9413c07450d05d07c7ce43d58ed4c56dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T06:08:59.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-formatter-failure-once",
+        "head_sha": "6b4f71a9413c07450d05d07c7ce43d58ed4c56dc",
         "cluster_id": null,
         "job_path": null
       }
