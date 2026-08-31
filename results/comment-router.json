@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T03:46:08.859Z",
+  "updated_at": "2026-08-31T03:46:15.602Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124688:5471840720:2026-08-30T23:09:55Z:re_review",
-      "comment_id": "5471840720",
-      "comment_version_key": "5471840720:2026-08-30T23:09:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124688#issuecomment-5471840720",
-      "comment_created_at": "2026-08-30T23:09:55Z",
-      "comment_updated_at": "2026-08-30T23:09:55Z",
-      "comment_body_sha256": "c7db08e32aa48d8388db7a7a54c5fd0881e0970faff83bd22bb5714edd4667b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124688,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T23:17:59.423Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/note-file-bind-config-pitfall",
-        "head_sha": "fef05b1cf673e4f9995a0b3075c2da2098bb563a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124688:5308501462:2026-08-30T23:17:18Z:clawsweeper_auto_repair",
       "comment_id": "5308501462",
@@ -33160,6 +33113,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-doctor-preparation",
         "head_sha": "8062827403a986d2e734fb12d1182f3651edd789",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123416:5289014423:2026-08-31T03:45:10Z:clawsweeper_auto_repair",
+      "comment_id": "5289014423",
+      "comment_version_key": "5289014423:2026-08-31T03:45:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123416#issuecomment-5289014423",
+      "comment_created_at": "2026-08-14T03:20:38Z",
+      "comment_updated_at": "2026-08-31T03:45:10Z",
+      "comment_body_sha256": "6a738d68d5909173dcff930f151ceabc74fbc339129c13ac5b15ad3803529e03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123416,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e9baedc9c515d9dc05e5bc83dcad541074c4a5dc)",
+      "expected_head_sha": "e9baedc9c515d9dc05e5bc83dcad541074c4a5dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T03:46:15.602Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/123297-compat-activation-gate",
+        "head_sha": "e9baedc9c515d9dc05e5bc83dcad541074c4a5dc",
         "cluster_id": null,
         "job_path": null
       }
