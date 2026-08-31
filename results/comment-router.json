@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T05:08:12.707Z",
+  "updated_at": "2026-08-31T05:08:18.275Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133563:5472520002:2026-08-31T01:17:24Z:re_review",
-      "comment_id": "5472520002",
-      "comment_version_key": "5472520002:2026-08-31T01:17:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133563#issuecomment-5472520002",
-      "comment_created_at": "2026-08-31T01:17:24Z",
-      "comment_updated_at": "2026-08-31T01:17:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133563,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T01:18:12.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/imessage-proof-db-migration",
-        "head_sha": "2ab98b72d81d620430931b91ee6c8e67941c573b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133091:5466911289:2026-08-31T01:18:13Z:clawsweeper_needs_human",
       "comment_id": "5466911289",
@@ -32264,6 +32217,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133563:5473991242:2026-08-31T05:07:25Z:automerge",
+      "comment_id": "5473991242",
+      "comment_version_key": "5473991242:2026-08-31T05:07:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133563#issuecomment-5473991242",
+      "comment_created_at": "2026-08-31T05:07:25Z",
+      "comment_updated_at": "2026-08-31T05:07:25Z",
+      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133563,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T05:08:07.514Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/imessage-proof-db-migration",
+        "head_sha": "b23b964b1b5bd2963b7b4358974d3ec1aaffb819",
+        "cluster_id": "automerge-openclaw-openclaw-133563",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133563.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133563.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133798:5473867702:2026-08-31T05:07:16Z:clawsweeper_auto_repair",
