@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T23:15:14.959Z",
+  "updated_at": "2026-08-31T23:15:46.863Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-31T16:36:00Z:clawsweeper_auto_repair",
-      "comment_id": "5357688049",
-      "comment_version_key": "5357688049:2026-08-31T16:36:00Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
-      "comment_created_at": "2026-08-20T15:00:20Z",
-      "comment_updated_at": "2026-08-31T16:36:00Z",
-      "comment_body_sha256": "05c59c644e1d1435ad1cb2c3a4fddc6f99541c61d29443c196bccf7a33e6a61c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5e7619810000429bea85b94ef136da9918751c51)",
-      "expected_head_sha": "5e7619810000429bea85b94ef136da9918751c51",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:37:07.476Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "5e7619810000429bea85b94ef136da9918751c51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5365543947:2026-08-21T05:22:06Z:re_review",
       "comment_id": "5365543947",
@@ -33070,6 +33037,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/acpx:514:5486051873:2026-08-31T23:14:53Z:re_review",
+      "comment_id": "5486051873",
+      "comment_version_key": "5486051873:2026-08-31T23:14:53Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/514#issuecomment-5486051873",
+      "comment_created_at": "2026-08-31T23:14:53Z",
+      "comment_updated_at": "2026-08-31T23:14:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/acpx",
+      "issue_number": 514,
+      "author": "MertBasar0",
+      "author_id": 100199793,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T23:15:44.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/process-lifecycle-hooks",
+        "head_sha": "0b85ce32f7175f2c7cda98e87b52c416211931aa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
