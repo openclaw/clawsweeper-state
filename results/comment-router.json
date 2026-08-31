@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:06:48.680Z",
+  "updated_at": "2026-08-31T04:07:12.483Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123052:5366058621:2026-08-21T06:31:16Z:re_review",
-      "comment_id": "5366058621",
-      "comment_version_key": "5366058621:2026-08-21T06:31:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123052#issuecomment-5366058621",
-      "comment_created_at": "2026-08-21T06:31:16Z",
-      "comment_updated_at": "2026-08-21T06:31:16Z",
-      "comment_body_sha256": "92694ec85e83e0d08534e5e060a8f88e7287234dd19ef065dbf0800ed9ffbe5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123052,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T00:13:34.388Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123052:5366193771:2026-08-21T06:47:40Z:re_review",
       "comment_id": "5366193771",
@@ -32375,6 +32348,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133499:5473555988:2026-08-31T04:06:22Z:automerge",
+      "comment_id": "5473555988",
+      "comment_version_key": "5473555988:2026-08-31T04:06:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133499#issuecomment-5473555988",
+      "comment_created_at": "2026-08-31T04:06:22Z",
+      "comment_updated_at": "2026-08-31T04:06:22Z",
+      "comment_body_sha256": "bfad984c3915884a9b674e5aa0f48d6c7305e0f9f4a6fc73f048c001a95f3778",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133499,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-31T04:07:01.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/imessage-threaded-reply-service",
+        "head_sha": "fa318748d95009c745a66f862f389efe9c852e29",
+        "cluster_id": "automerge-openclaw-openclaw-133499",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133499.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
