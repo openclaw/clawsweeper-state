@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133900"
 mode: "autonomous"
-run_id: "33370056780"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33370056780"
-head_sha: "62241350beef738542b4802c172c28d7a8013db7"
+run_id: "33367022440"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33367022440"
+head_sha: "1b9086615d892ecc7c1fd4b681e8a1b1208dfa5c"
 workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-08-31T08:08:11.424Z"
-canonical: "#133900"
-canonical_issue: "#133900"
+result_status: "blocked"
+published_at: "2026-08-31T08:20:15.870Z"
+canonical: "https://github.com/openclaw/openclaw/issues/133900"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/133900"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33370056780](https://github.com/openclaw/clawsweeper/actions/runs/33370056780)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33367022440](https://github.com/openclaw/clawsweeper/actions/runs/33367022440)
 
 Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #133900
+Canonical: https://github.com/openclaw/openclaw/issues/133900
 
 ## Summary
 
-Current main contains the reported backup defect. A narrow fix PR is planned for #133900; #95582 is an independent interrupted-backup cleanup issue.
+#133900 is a reproducible, narrow backup-scope bug on main. The canonical inventory receives no configured workspace roots when includeWorkspace is false, so state traversal admits nested workspace files. A new fix PR is warranted, but this worker cannot prepare it: the checkout is read-only, node_modules is absent, and the required sibling ../codex checkout is unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -54,7 +54,7 @@ Current main contains the reported backup defect. A narrow fix PR is planned for
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| issue_implementation_status_comment | updated | #133900 |  |  |
 
 ## Apply Actions
 
@@ -66,8 +66,9 @@ Current main contains the reported backup defect. A narrow fix PR is planned for
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #95582 | keep_independent | planned | independent | Different root cause and repair surface; retain both issues independently. |
-| #133900 | open_fix_pr | planned | canonical | The issue is a current, non-security regression with a narrow owner-boundary repair and an archive-level regression test. |
+| #133900 | fix_needed | blocked | canonical | Implementation is blocked only by the supplied worker environment; the deterministic executor should create/update clawsweeper/issue-openclaw-openclaw-133900 and run the artifact below. |
+| #95582 | keep_related | planned | related | Leave open under its own canonical repair path; it has no shared fix with this archive-scope regression. |
+| cluster:issue-openclaw-openclaw-133900 | build_fix_artifact | blocked | canonical | Artifact is ready for the executor, but this worker cannot write or validate the required branch. |
 
 ## Needs Human
 

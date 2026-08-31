@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133900",
+  "mode": "autonomous",
+  "run_id": "33367022440",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33367022440",
+  "head_sha": "1b9086615d892ecc7c1fd4b681e8a1b1208dfa5c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133900.md",
+  "published_at": "2026-08-31T08:20:15.870Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133900",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133900",
+  "canonical_pr": null,
+  "summary": "#133900 is a reproducible, narrow backup-scope bug on main. The canonical inventory receives no configured workspace roots when includeWorkspace is false, so state traversal admits nested workspace files. A new fix PR is warranted, but this worker cannot prepare it: the checkout is read-only, node_modules is absent, and the required sibling ../codex checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#133900",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133900",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the supplied worker environment; the deterministic executor should create/update clawsweeper/issue-openclaw-openclaw-133900 and run the artifact below."
+    },
+    {
+      "target": "#95582",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open under its own canonical repair path; it has no shared fix with this archive-scope regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133900",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133900",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for the executor, but this worker cannot write or validate the required branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#133900",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
