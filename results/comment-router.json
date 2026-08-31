@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T12:07:11.331Z",
+  "updated_at": "2026-08-31T12:07:20.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133788:5476059575:2026-08-31T08:54:37Z:re_review",
-      "comment_id": "5476059575",
-      "comment_version_key": "5476059575:2026-08-31T08:54:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133788#issuecomment-5476059575",
-      "comment_created_at": "2026-08-31T08:54:37Z",
-      "comment_updated_at": "2026-08-31T08:54:37Z",
-      "comment_body_sha256": "458e7bacfb5945f77088ceeca4b6bd895dc757debb0f5dd322f8d035728cec03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133788,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T08:55:18.753Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/per-agent-tool-progress-detail",
-        "head_sha": "d4f75a1effb28c440cb897df5dee953f99ab0d15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132437:5476010563:2026-08-31T08:49:48Z:re_review",
       "comment_id": "5476010563",
@@ -32067,6 +32020,39 @@
         "kind": "pull_request",
         "branch": "codex/workspace-hash-reuse",
         "head_sha": "3eae7482774be62227a26d02442a68c45b171d5c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1701:5478079698:2026-08-31T12:06:37Z:clawsweeper_needs_human",
+      "comment_id": "5478079698",
+      "comment_version_key": "5478079698:2026-08-31T12:06:37Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1701#issuecomment-5478079698",
+      "comment_created_at": "2026-08-31T12:06:37Z",
+      "comment_updated_at": "2026-08-31T12:06:37Z",
+      "comment_body_sha256": "4f69e2bd9535c803d7802c315cd054564f87732b5b042d81afc060e6ca19b8b6",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1701,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair is needed; this PR has a coherent bounded implementation and should proceed through normal merge validation. (sha=c0713e612d53ac9094a49612f49106118e7453bb)",
+      "expected_head_sha": "c0713e612d53ac9094a49612f49106118e7453bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T12:07:20.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/checkpoint-inspect-absence",
+        "head_sha": "c0713e612d53ac9094a49612f49106118e7453bb",
         "cluster_id": null,
         "job_path": null
       }
