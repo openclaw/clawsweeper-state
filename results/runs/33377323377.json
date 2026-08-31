@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134004",
+  "mode": "autonomous",
+  "run_id": "33377323377",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33377323377",
+  "head_sha": "206fe726bbadaae32dcb9822a2511a351a5c9317",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134004.md",
+  "published_at": "2026-08-31T09:46:44.985Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134004",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134004",
+  "canonical_pr": null,
+  "summary": "#134004 remains the canonical, narrow auth-forwarding bug. Static inspection identifies the owner-boundary repair and a regression shape, but this read-only checkout has neither the required Codex sibling source nor node_modules, so the worker could not alter, run, or validate the branch. The supplied fix artifact is ready for an executor with a writable verified environment.",
+  "actions": [
+    {
+      "target": "#126753",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed context ref; no closure action is valid."
+    },
+    {
+      "target": "#129766",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as its own product-decision subcluster."
+    },
+    {
+      "target": "#130673",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as a separate CLI status semantics decision."
+    },
+    {
+      "target": "#131877",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as a distinct diagnostics/product-direction subcluster."
+    },
+    {
+      "target": "#134004",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134004",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the constrained worker environment; execute the narrow new-fix-PR artifact in a writable checkout with dependencies and required Codex source available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134004",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134004",
+      "candidate_fix": null,
+      "reason": "Build one narrow credited PR from clawsweeper/issue-openclaw-openclaw-134004 after environment blockers are removed."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
