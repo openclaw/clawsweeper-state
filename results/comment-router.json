@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T02:28:24.845Z",
+  "updated_at": "2026-08-31T02:28:25.010Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clickclack:169:5471622411:2026-08-30T22:22:33Z:re_review",
-      "comment_id": "5471622411",
-      "comment_version_key": "5471622411:2026-08-30T22:22:33Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/169#issuecomment-5471622411",
-      "comment_created_at": "2026-08-30T22:22:33Z",
-      "comment_updated_at": "2026-08-30T22:22:33Z",
-      "comment_body_sha256": "54054d4a38f9c8f11e6c561f96c0e535f6c32fe9fe2623e4d483d16963994384",
-      "repo": "openclaw/clickclack",
-      "issue_number": 169,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T22:23:08.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-member-pagination-cursor",
-        "head_sha": "35dd5440c0579566918474af7005f5ba42296883",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1312:5471621680:2026-08-30T22:22:23Z:re_review",
       "comment_id": "5471621680",
@@ -33360,6 +33313,39 @@
         "kind": "pull_request",
         "branch": "fix/session-login-fetch-timeouts",
         "head_sha": "0a35187eb513b42674b47290b3cd1ef9c7042738",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ask-molty:14:5464068517:2026-08-31T02:05:31Z:clawsweeper_needs_human",
+      "comment_id": "5464068517",
+      "comment_version_key": "5464068517:2026-08-31T02:05:31Z",
+      "comment_url": "https://github.com/openclaw/ask-molty/pull/14#issuecomment-5464068517",
+      "comment_created_at": "2026-08-29T18:17:43Z",
+      "comment_updated_at": "2026-08-31T02:05:31Z",
+      "comment_body_sha256": "3ca76bc940268be6e929c6b74aed282a935962858f2a663dde9f6afa3c087644",
+      "repo": "openclaw/ask-molty",
+      "issue_number": 14,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair remains from this review; the branch is ready for normal maintainer approval. (sha=de4cade8fb71112e00386b519b5fd67bccbfb8ba)",
+      "expected_head_sha": "de4cade8fb71112e00386b519b5fd67bccbfb8ba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T02:28:25.010Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f004-oidc-token-abort",
+        "head_sha": "de4cade8fb71112e00386b519b5fd67bccbfb8ba",
         "cluster_id": null,
         "job_path": null
       }
