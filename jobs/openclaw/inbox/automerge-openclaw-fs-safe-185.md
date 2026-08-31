@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-185
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/185#issuecomment-5477815247"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/185#issuecomment-5478055586"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/185#issuecomment-
 Maintainer opted #185 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/185#issuecomment-5477815247
+Request comment: https://github.com/openclaw/fs-safe/pull/185#issuecomment-5478055586
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/185
@@ -59,7 +59,9 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review exact head `6a532994a25033cfebbb040cb87f07c22658a3e1`. Verify the owner boundary stays in `readSidecarLockSnapshot`, not `Root.open`: only a Root-backed open that fails with `path-mismatch` and is followed by same-capability `Root.stat(relative)` returning `not-found` may become an absent snapshot/retry.
+Review exact head `5581c300829ba572d61fefd725989509a44dd1c2`. The PR body now includes the requested inspectable runtime JSON from the compiled public file-lock and Root APIs.
 
-Require deterministic proof for unlink before and after identity admission, handle closure, a real two-manager owner-release/waiter-acquire handoff, replacement preservation, changed-root rejection, symlink/non-file/hardlink and operational probe failures, and create-only retry safety. Keep raw-path snapshots and generic Root behavior unchanged. Require fresh exact-head Node 22/24 Linux/macOS/Windows checks, three-OS coverage, native/package/audit/analysis/security gates, and no actionable review finding before merge.
+Require exact-head hosted Node 24 Linux and macOS proof showing: one post-identity hook call; owner release while the waiter holds the opened descriptor; Root.open records `path-mismatch`; same-capability `stat` records `not-found`; create-only retry transitions from `already-exists` to `created`; waiter payload/bytes are exact; `verifyStillHeld()` succeeds; the opened handle closes; and the path is absent after release. Separately require the after-open replacement trace to reject with `FsSafeError("path-mismatch")`, observe same-capability `present`, close the opened handle, and preserve exact replacement and displaced-original bytes.
+
+Keep the production owner boundary unchanged in `readSidecarLockSnapshot`, generic Root behavior fail-closed, raw-path snapshots unchanged, and all previous deterministic replacement/root-drift/probe-failure coverage. Require fresh exact-head Node/native/coverage/package/audit/analysis/security gates and no actionable review finding before merge.
 
