@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-31T07:13:37.908Z",
+  "updated_at": "2026-08-31T07:12:10.950Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133194:5473223157:2026-08-31T03:12:29Z:re_review",
+      "comment_id": "5473223157",
+      "comment_version_key": "5473223157:2026-08-31T03:12:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133194#issuecomment-5473223157",
+      "comment_created_at": "2026-08-31T03:12:29Z",
+      "comment_updated_at": "2026-08-31T03:12:29Z",
+      "comment_body_sha256": "3347aed4aaded8d6adb0ce767ba03bc451e00a45962691c6fafbb521a1bab395",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133194,
+      "author": "ZengWen-DT",
+      "author_id": 290981215,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T03:13:10.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/133170-chat-abort-partial-persist",
+        "head_sha": "35a4277d15c4325a0f2f66720972538d3d7587b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121808:5473226276:2026-08-31T03:12:55Z:re_review",
       "comment_id": "5473226276",
@@ -32682,39 +32729,6 @@
         "kind": "pull_request",
         "branch": "chore/deps-refresh-20260830",
         "head_sha": "94f63d8e40f32f186ca755b8d68780172a60d79b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:532:5474840868:2026-08-31T07:12:47Z:clawsweeper_needs_human",
-      "comment_id": "5474840868",
-      "comment_version_key": "5474840868:2026-08-31T07:12:47Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/532#issuecomment-5474840868",
-      "comment_created_at": "2026-08-31T06:54:46Z",
-      "comment_updated_at": "2026-08-31T07:12:47Z",
-      "comment_body_sha256": "5309ed816bf08966cdbff392afcae014f2639236176126e153f00149b7643e92",
-      "repo": "openclaw/acpx",
-      "issue_number": 532,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is FlowRunner's heartbeat timer and its FlowRunStore write path. The new test invokes the real runner but replaces... (sha=380c7bc3f3c6080cbf9605b41f5d5460e9ed51f4)",
-      "expected_head_sha": "380c7bc3f3c6080cbf9605b41f5d5460e9ed51f4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T07:13:37.908Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/deps-refresh-20260830",
-        "head_sha": "380c7bc3f3c6080cbf9605b41f5d5460e9ed51f4",
         "cluster_id": null,
         "job_path": null
       }
