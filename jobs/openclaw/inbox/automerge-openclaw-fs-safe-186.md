@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-fs-safe-186
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/fs-safe/pull/186#issuecomment-5480365436"
+request_comment_url: "https://github.com/openclaw/fs-safe/pull/186#issuecomment-5480601891"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/fs-safe/pull/186#issuecomment-
 Maintainer opted #186 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/fs-safe/pull/186#issuecomment-5480365436
+Request comment: https://github.com/openclaw/fs-safe/pull/186#issuecomment-5480601891
 
 
 Source PR: https://github.com/openclaw/fs-safe/pull/186
@@ -59,9 +59,7 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 Maintainer special instructions:
 
 Special instructions:
-Review and land exact head `6af017339b8033bbc2b1fd317ccb564c957ede27` after its normal exact-head checks pass. This is CHANGELOG.md only: rewrite Unreleased with five user-facing highlights, prioritize upgrade actions and user impact, and group detailed notes. All dated release sections remain byte-identical.
+Re-review exact head `6af017339b8033bbc2b1fd317ccb564c957ede27` with the updated main PR body. It now contains actual after-change terminal output from the production release-note generator, the generated Highlights Markdown, ordered section list, complete-body byte comparison, SHA-256 of the generated notes, and historical-release preservation proof. The temporary fixture only supplies the dated heading required by the generator; the repository remains Unreleased at package version 0.6.0.
 
-Verify preservation of material security qualifiers: compatible versus require-bounded cleanup, the POSIX leaf/empty-directory residual, native-only codec support, FUSE's weaker cooperating-writer contract, canonical pre-strip filter names, separate TAR decoded/manifest/output budgets, and queue claim/durability requirements. 0.7.0 is a recommendation, not a release instruction: keep Unreleased and all package versions/tags unchanged; do not release or publish.
-
-Local proof: complete pnpm check passed (6,086 tests; 76 skipped), historical section byte comparisons passed, and the real release-note extractor preserved the full rewritten body in isolated temporary dated-version fixtures. Codex autoreview found no actionable P0/P1 findings. This is a prose edit with no runtime change; no new runtime or screenshot proof is warranted. Stop rather than broadening into unrelated implementation or dependency work.
+This is inspectable real generated-artifact proof for the changed documentation surface, not a claim about new runtime behavior. CI and coverage are now fully green on this unchanged head. Confirm the content/qualifiers remain accurate, accept the generator evidence for this docs-only edit, and land the PR through normal gates. Do not modify runtime code, bump any version, tag, release, or publish.
 

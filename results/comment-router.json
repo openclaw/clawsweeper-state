@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T15:32:25.777Z",
+  "updated_at": "2026-08-31T15:33:03.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134056:5477351919:2026-08-31T10:57:57Z:clawsweeper_needs_human",
-      "comment_id": "5477351919",
-      "comment_version_key": "5477351919:2026-08-31T10:57:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134056#issuecomment-5477351919",
-      "comment_created_at": "2026-08-31T10:57:57Z",
-      "comment_updated_at": "2026-08-31T10:57:57Z",
-      "comment_body_sha256": "0d97528c516e6b27d3bfca2383ae960a9bc4b069e598ed70d13cf2ee7e901399",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes message-delivery behavior; exact-head CI and the planned production-boundary Gateway/QA-channel delivery evidence were not complete in the reviewed context. (sha=686475fbe2399f5bd289c6362722ca497e94dcaa)",
-      "expected_head_sha": "686475fbe2399f5bd289c6362722ca497e94dcaa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T11:03:49.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tts-nested-result-state",
-        "head_sha": "686475fbe2399f5bd289c6362722ca497e94dcaa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115286:5106969358:2026-08-31T10:51:07Z:clawsweeper_needs_human",
       "comment_id": "5106969358",
@@ -33166,6 +33133,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:186:5480601891:2026-08-31T15:32:16Z:automerge",
+      "comment_id": "5480601891",
+      "comment_version_key": "5480601891:2026-08-31T15:32:16Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/186#issuecomment-5480601891",
+      "comment_created_at": "2026-08-31T15:32:16Z",
+      "comment_updated_at": "2026-08-31T15:32:16Z",
+      "comment_body_sha256": "2109ab91c031b5fa823e7d13d58d4a23dbc0ca37425734438ba9f9d8f7a032df",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 186,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T15:32:54.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/unreleased-user-highlights",
+        "head_sha": "6af017339b8033bbc2b1fd317ccb564c957ede27",
+        "cluster_id": "automerge-openclaw-fs-safe-186",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-186.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
