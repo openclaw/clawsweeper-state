@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:47:42.843Z",
+  "updated_at": "2026-08-31T11:50:10.017Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133927:5475288707:2026-08-31T08:13:57Z:clawsweeper_needs_human",
-      "comment_id": "5475288707",
-      "comment_version_key": "5475288707:2026-08-31T08:13:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133927#issuecomment-5475288707",
-      "comment_created_at": "2026-08-31T07:40:01Z",
-      "comment_updated_at": "2026-08-31T08:13:57Z",
-      "comment_body_sha256": "e999c2ae6b18825b085ec7b4ce6bc0bbe1cb838fb05f7534a5c66c034ae6d9cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133927,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: source inspection found no concrete defect, and the protected maintainer PR should proceed through normal review and exact-head checks. (sha=79068f65bf96ccfe06052b523e8e8e2391cffe7b)",
-      "expected_head_sha": "79068f65bf96ccfe06052b523e8e8e2391cffe7b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T08:37:28.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/plugin-llm-error-constructor",
-        "head_sha": "79068f65bf96ccfe06052b523e8e8e2391cffe7b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133952:5475669873:2026-08-31T08:28:51Z:clawsweeper_needs_human",
       "comment_id": "5475669873",
@@ -31904,6 +31871,53 @@
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133988:5477867783:2026-08-31T11:49:19Z:re_review",
+      "comment_id": "5477867783",
+      "comment_version_key": "5477867783:2026-08-31T11:49:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133988#issuecomment-5477867783",
+      "comment_created_at": "2026-08-31T11:49:19Z",
+      "comment_updated_at": "2026-08-31T11:49:19Z",
+      "comment_body_sha256": "48683a92313b3c1a61a5d70eef493448b2416b8c79abcc0df4ed41465c081d8a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133988,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T11:50:04.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-title-memory",
+        "head_sha": "259ea6396f821394777ff4069af26ef58977f848",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
           "job_path": null
         },
         {
