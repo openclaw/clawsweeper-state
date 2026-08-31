@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133757",
+  "mode": "autonomous",
+  "run_id": "33353873056",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33353873056",
+  "head_sha": "c377cfc04209464760ed5a1537fa693c71e77cf5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133757.md",
+  "published_at": "2026-08-31T03:41:36.924Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133757",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133757",
+  "canonical_pr": null,
+  "summary": "Current main retains the Feishu group binding freshness defect. A narrow three-file repair is identified, but implementation is blocked: this checkout is read-only, dependencies cannot install, and the mandatory sibling ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#133757",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133757",
+      "candidate_fix": null,
+      "reason": "Canonical bug: use one current runtime configuration snapshot for the entire inbound turn before account/group admission and route selection."
+    },
+    {
+      "target": "#121970",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133757",
+      "candidate_fix": null,
+      "reason": "Already closed; do not mutate closed context refs."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-133757",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133757",
+      "candidate_fix": null,
+      "reason": "Only implementation is blocked by the restricted checkout; the diagnosis and narrow repair plan remain actionable."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
