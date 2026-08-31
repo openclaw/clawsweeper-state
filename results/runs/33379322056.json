@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133935",
+  "mode": "autonomous",
+  "run_id": "33379322056",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33379322056",
+  "head_sha": "206fe726bbadaae32dcb9822a2511a351a5c9317",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133935.md",
+  "published_at": "2026-08-31T10:15:20.868Z",
+  "canonical": "#133935",
+  "canonical_issue": "#133935",
+  "canonical_pr": null,
+  "summary": "#133935 remains the open canonical bug. Current main still classifies the missing path record as a missing payload and sends it only through package repair; no path-record pruning exists. A narrow Doctor fix is appropriate, but this worker cannot implement or validate it: the filesystem is read-only, pnpm/Corepack fails with EROFS before tests start, and required sibling ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#133935",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133935",
+      "candidate_fix": null,
+      "reason": "Provision a writable worker with ../codex available, then implement and run the red/green regression before opening the allowed fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable repair environment containing sibling ../codex; no product or security judgment is needed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
