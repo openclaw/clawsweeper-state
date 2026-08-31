@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T02:25:42.205Z",
+  "updated_at": "2026-08-31T02:26:18.799Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133584:5471601059:2026-08-30T22:17:52Z:clawsweeper_needs_human",
-      "comment_id": "5471601059",
-      "comment_version_key": "5471601059:2026-08-30T22:17:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133584#issuecomment-5471601059",
-      "comment_created_at": "2026-08-30T22:17:52Z",
-      "comment_updated_at": "2026-08-30T22:17:52Z",
-      "comment_body_sha256": "ebdc40978318c973f91981fd440b93f5d0b1adc08fc9e140ceb9350eb5911580",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133584,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Restrict bundled provenance to admitted plugin roots (P1)** - This accepts any configured directory or file parent beneath a bundled tree, including paths the bundled scan deliberately ignores such as node_modul...; Review finding: [P1] Restrict bundled provenance to admitted plugin roots — src/plugins/discovery.ts:1161-1165 - [high] Overbroad bundled-origin elevation — src/plugins/discovery.... (sha=34a0f2fd29eddb915f2a0f8ccd694de6a2f8f20c)",
-      "expected_head_sha": "34a0f2fd29eddb915f2a0f8ccd694de6a2f8f20c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T22:19:21.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/elastic-clarke-d81de0",
-        "head_sha": "34a0f2fd29eddb915f2a0f8ccd694de6a2f8f20c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133586:5471612842:2026-08-30T22:20:27Z:clawsweeper_auto_repair",
       "comment_id": "5471612842",
@@ -33349,6 +33316,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:182:5472932956:2026-08-31T02:25:42Z:automerge",
+      "comment_id": "5472932956",
+      "comment_version_key": "5472932956:2026-08-31T02:25:42Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/182#issuecomment-5472932956",
+      "comment_created_at": "2026-08-31T02:25:42Z",
+      "comment_updated_at": "2026-08-31T02:25:42Z",
+      "comment_body_sha256": "9a4d68628391c66aca0707195bb4ae4bb8927ac0c233e925b9ed01a52ba4843d",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 182,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-08-31T02:26:14.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tar-gzip-ratio-policy",
+        "head_sha": "60fec3b5f9faa5f8b3fc3f69a205c00c69d74aae",
+        "cluster_id": "automerge-openclaw-fs-safe-182",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-182.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-fs-safe-182.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
