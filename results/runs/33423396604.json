@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134256",
+  "mode": "autonomous",
+  "run_id": "33423396604",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33423396604",
+  "head_sha": "aba9826ab8c010a8f5a2b4411484dc4cb7e94f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134256.md",
+  "published_at": "2026-08-31T19:06:45.602Z",
+  "canonical": "#134256",
+  "canonical_issue": "#134256",
+  "canonical_pr": null,
+  "summary": "Current main has the reported silent-loss path: roster normalization turns legacy list entries into keyed entries before Doctor migration, keyed `memorySearch` is not migrated, and later strict unknown-key cleanup deletes it. A narrow repair plan is ready, but this worker cannot edit or validate it because the checkout and Corepack cache are read-only and dependencies are absent.",
+  "actions": [
+    {
+      "target": "#134256",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134256",
+      "candidate_fix": null,
+      "reason": "This is the sole open cluster item and remains the canonical bug report."
+    },
+    {
+      "target": "#134256",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134256",
+      "candidate_fix": null,
+      "reason": "Repair is bounded to Doctor's migration owner and requires source plus regression coverage; no config option, schema change, runtime alias, or changelog change is needed."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134256"
 mode: "autonomous"
-run_id: "33417577446"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33417577446"
-head_sha: "0baa4dbb4d12a0ee9ba3092c3c63a806dd891d88"
-workflow_conclusion: "failure"
+run_id: "33423396604"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33423396604"
+head_sha: "aba9826ab8c010a8f5a2b4411484dc4cb7e94f51"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-31T17:31:31.278Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134256"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134256"
+published_at: "2026-08-31T19:06:45.602Z"
+canonical: "#134256"
+canonical_issue: "#134256"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33417577446](https://github.com/openclaw/clawsweeper/actions/runs/33417577446)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33423396604](https://github.com/openclaw/clawsweeper/actions/runs/33423396604)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134256
+Canonical: #134256
 
 ## Summary
 
-Current main contains the confirmed owner-boundary gap: roster normalization converts legacy agents.list items to agents.entries before Doctor compatibility migrations, but the memorySearch migration and its follow-up normalizers inspect only agents.list. Unknown-key cleanup then removes the retained entries.<id>.memorySearch. A narrow fix artifact is ready, but this read-only checkout cannot create the repair branch or execute pnpm: Corepack fails creating its cache on EROFS. The required sibling ../codex source is also absent and cannot be cloned in this sandbox.
+Current main has the reported silent-loss path: roster normalization turns legacy list entries into keyed entries before Doctor migration, keyed `memorySearch` is not migrated, and later strict unknown-key cleanup deletes it. A narrow repair plan is ready, but this worker cannot edit or validate it because the checkout and Corepack cache are read-only and dependencies are absent.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Current main contains the confirmed owner-boundary gap: roster normalization con
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134256 | fix_needed | blocked | canonical | Implementation and local regression proof require a writable executor checkout with the required sibling Codex source available. |
-| cluster:issue-openclaw-openclaw-134256 | build_fix_artifact | planned | canonical | Prepared for a writable deterministic executor. |
+| #134256 | keep_canonical | planned | canonical | This is the sole open cluster item and remains the canonical bug report. |
+| #134256 | build_fix_artifact | planned | canonical | Repair is bounded to Doctor's migration owner and requires source plus regression coverage; no config option, schema change, runtime alias, or changelog change is needed. |
 
 ## Needs Human
 
