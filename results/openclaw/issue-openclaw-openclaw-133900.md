@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133900"
 mode: "autonomous"
-run_id: "33367457864"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33367457864"
-head_sha: "1b9086615d892ecc7c1fd4b681e8a1b1208dfa5c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-08-31T07:30:28.839Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133900"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133900"
+run_id: "33370056780"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33370056780"
+head_sha: "62241350beef738542b4802c172c28d7a8013db7"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-08-31T08:08:11.424Z"
+canonical: "#133900"
+canonical_issue: "#133900"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33367457864](https://github.com/openclaw/clawsweeper/actions/runs/33367457864)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33370056780](https://github.com/openclaw/clawsweeper/actions/runs/33370056780)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/133900
+Canonical: #133900
 
 ## Summary
 
-Narrow repair identified. Implementation is blocked because this worker is read-only and the required sibling ../codex checkout is absent; no GitHub or repository mutations were made.
+Current main contains the reported backup defect. A narrow fix PR is planned for #133900; #95582 is an independent interrupted-backup cleanup issue.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Narrow repair identified. Implementation is blocked because this worker is read-
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133900 | fix_needed | blocked | canonical | A writable executor with sibling ../codex is required to create the branch, add the regression, and validate the repair. |
-| #95582 | keep_related | planned | related | Adjacent backup concern, not a duplicate. |
-| cluster:issue-openclaw-openclaw-133900 | build_fix_artifact | planned | canonical | No viable implementation PR was hydrated; create one narrow credited fix PR. |
+| #95582 | keep_independent | planned | independent | Different root cause and repair surface; retain both issues independently. |
+| #133900 | open_fix_pr | planned | canonical | The issue is a current, non-security regression with a narrow owner-boundary repair and an archive-level regression test. |
 
 ## Needs Human
 
