@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T18:57:16.021Z",
+  "updated_at": "2026-08-31T18:57:31.680Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-08-31T13:56:05Z:clawsweeper_needs_human",
-      "comment_id": "4876928065",
-      "comment_version_key": "4876928065:2026-08-31T13:56:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4876928065",
-      "comment_created_at": "2026-07-03T13:44:49Z",
-      "comment_updated_at": "2026-08-31T13:56:05Z",
-      "comment_body_sha256": "3376cd60ce7dcee9db7bcddfaedba55b6159caf28039d52fd41d550f3423dd3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is Gateway history projection, with a Control UI omission outcome; source shows the stored callers opt in... (sha=56347bbdf88020dbda839be75188932acb45f864)",
-      "expected_head_sha": "56347bbdf88020dbda839be75188932acb45f864",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T13:57:11.054Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "56347bbdf88020dbda839be75188932acb45f864",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:4877397282:2026-07-03T15:09:31Z:re_review",
       "comment_id": "4877397282",
@@ -33059,6 +33026,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T18:57:16.021Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134040:5477055914:2026-08-31T18:56:14Z:clawsweeper_needs_human",
+      "comment_id": "5477055914",
+      "comment_version_key": "5477055914:2026-08-31T18:56:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134040#issuecomment-5477055914",
+      "comment_created_at": "2026-08-31T10:30:20Z",
+      "comment_updated_at": "2026-08-31T18:56:14Z",
+      "comment_body_sha256": "b0fff5bff94c1e076be63029b01fa68c7f59664ef60821de4e86b8801e15f0e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134040,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing scripts that explicitly pass an empty timeout will now exit 1 instead of silently receiving 3000 ms; that is the intended compatibility change, but exact-head CI is still in... (sha=9e8613745b50977f497f13c621c2cc9e8e222564)",
+      "expected_head_sha": "9e8613745b50977f497f13c621c2cc9e8e222564",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T18:57:31.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-probe-blank-timeout-066",
+        "head_sha": "9e8613745b50977f497f13c621c2cc9e8e222564",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
