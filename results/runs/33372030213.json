@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133955",
+  "mode": "autonomous",
+  "run_id": "33372030213",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33372030213",
+  "head_sha": "e3ebd2b979d39ab4a0902f349240af5bf18bd712",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133955.md",
+  "published_at": "2026-08-31T08:32:46.769Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/133955",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/133955",
+  "canonical_pr": null,
+  "summary": "#133955 remains a real current-main defect, but its requested reconnect repair has no semantically fitting existing detail code. A new code would be required, which the job explicitly forbids without maintainer direction; no safe implementation PR artifact is emitted.",
+  "actions": [
+    {
+      "target": "#133955",
+      "action": "needs_human",
+      "status": "planned",
+      "classification": "needs_human",
+      "canonical": "#133955",
+      "candidate_fix": null,
+      "reason": "Maintainer direction is required to either introduce a dedicated verified-user-required connect detail code or explicitly broaden an existing code’s contract. The job forbids introducing a parallel code when no existing contract fits."
+    },
+    {
+      "target": "#2",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Choose the public protocol contract for an operator role rejection that has a signed device identity but lacks verified-user identity: authorize a new structured connect-error detail code, or explicitly broaden an existing code. The current AUTH_IDENTITY_HEADER_REQUIRED and DEVICE_IDENTITY_REQUIRED contracts do not fit."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#133955",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
