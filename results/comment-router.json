@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T13:37:35.054Z",
+  "updated_at": "2026-08-31T13:37:47.847Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134030:5476902422:2026-08-31T10:15:07Z:clawsweeper_needs_human",
-      "comment_id": "5476902422",
-      "comment_version_key": "5476902422:2026-08-31T10:15:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134030#issuecomment-5476902422",
-      "comment_created_at": "2026-08-31T10:15:07Z",
-      "comment_updated_at": "2026-08-31T10:15:07Z",
-      "comment_body_sha256": "85a2c9fb1749a13c2a96b3c9ba44238f0480d1ecc3d85c3d5f3e20eac47367ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134030,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic Anthropic-owned API-key forwarding to a Claude CLI route is intentionally removed; installations relying on that implicit route will need native Claude login or a CLI-owned... (sha=9be54da880fe5140565b57e84cce9e015138fc19)",
-      "expected_head_sha": "9be54da880fe5140565b57e84cce9e015138fc19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:16:01.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-134004-claude-cli-auth",
-        "head_sha": "9be54da880fe5140565b57e84cce9e015138fc19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132951:5476908863:2026-08-31T10:15:45Z:re_review",
       "comment_id": "5476908863",
@@ -31863,6 +31830,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133563:5479166379:2026-08-31T13:36:55Z:maintainer_approve_automerge",
+      "comment_id": "5479166379",
+      "comment_version_key": "5479166379:2026-08-31T13:36:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133563#issuecomment-5479166379",
+      "comment_created_at": "2026-08-31T13:36:55Z",
+      "comment_updated_at": "2026-08-31T13:36:55Z",
+      "comment_body_sha256": "961a41804651a541a175f1c1d45aa8e726b0c2a5f639709a1a8ae0edc05b940d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133563,
+      "author": "omarshahine",
+      "author_id": 10343873,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "approve",
+      "intent": "maintainer_approve_automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": "b23b964b1b5bd2963b7b4358974d3ec1aaffb819",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T13:37:47.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/imessage-proof-db-migration",
+        "head_sha": "b23b964b1b5bd2963b7b4358974d3ec1aaffb819",
+        "cluster_id": "automerge-openclaw-openclaw-133563",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-133563.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "pending",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
