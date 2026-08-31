@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T00:36:00.719Z",
+  "updated_at": "2026-08-31T00:36:40.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132798:5470891166:2026-08-30T19:50:58Z:re_review",
-      "comment_id": "5470891166",
-      "comment_version_key": "5470891166:2026-08-30T19:50:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132798#issuecomment-5470891166",
-      "comment_created_at": "2026-08-30T19:50:58Z",
-      "comment_updated_at": "2026-08-30T19:50:58Z",
-      "comment_body_sha256": "bcdec509a6af6297087f9c0be2df52c07b10a641750fba70bb2561a2fa71e25a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132798,
-      "author": "vyctorbrzezowski",
-      "author_id": 51521767,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-30T19:57:47.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inbox-header-stability",
-        "head_sha": "1b1e677e205bcb79949b895e029472a76a06ffd0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:102173:4914801332:2026-08-30T19:53:32Z:clawsweeper_auto_repair",
       "comment_id": "4914801332",
@@ -33790,6 +33743,39 @@
         "kind": "pull_request",
         "branch": "fix/codeql-workflow-docs-20260825",
         "head_sha": "6c5e405888ee75416c2e5ddadb28866d4fde46ae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125707:5325833647:2026-08-31T00:20:51Z:clawsweeper_needs_human",
+      "comment_id": "5325833647",
+      "comment_version_key": "5325833647:2026-08-31T00:20:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5325833647",
+      "comment_created_at": "2026-08-18T08:48:15Z",
+      "comment_updated_at": "2026-08-31T00:20:51Z",
+      "comment_body_sha256": "37fafbb8cd022c20d23e842fc887ced3269989af304f78922dc6110cf70ccdcd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125707,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional durable binding field is compatibility- and session-state-sensitive; its exact upstream omission/null semantics could not be independently verified because the required C... (sha=1263cfffd2f00d0713fcffbe603e1c321da6b62b)",
+      "expected_head_sha": "1263cfffd2f00d0713fcffbe603e1c321da6b62b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T00:36:40.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cached-codex-effort-route",
+        "head_sha": "1263cfffd2f00d0713fcffbe603e1c321da6b62b",
         "cluster_id": null,
         "job_path": null
       }
