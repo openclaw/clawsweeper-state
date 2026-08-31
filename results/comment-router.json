@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T02:57:19.711Z",
+  "updated_at": "2026-08-31T02:59:12.293Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125663:5324596185:2026-08-30T22:54:25Z:clawsweeper_needs_human",
-      "comment_id": "5324596185",
-      "comment_version_key": "5324596185:2026-08-30T22:54:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125663#issuecomment-5324596185",
-      "comment_created_at": "2026-08-18T06:44:14Z",
-      "comment_updated_at": "2026-08-30T22:54:25Z",
-      "comment_body_sha256": "10ddaaee900b85b6642403504cfb46060b0fd979a76490024c751650223840f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125663,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the new E2E test constructs a real Gateway and exercises production approval resolution, but the supplied curre...; Review finding: [medium] Verify private-route custody at the final effect — src/agents/bash-tools.exec-gateway-approval.e2e.test.ts:240 (sha=37b6437549d8c480e5c6860d79374c7e5d72075f)",
-      "expected_head_sha": "37b6437549d8c480e5c6860d79374c7e5d72075f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-30T22:57:29.838Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-host-trajectory-recorder",
-        "head_sha": "37b6437549d8c480e5c6860d79374c7e5d72075f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126473:5349310549:2026-08-30T22:54:18Z:clawsweeper_auto_repair",
       "comment_id": "5349310549",
@@ -33001,6 +32968,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131733:5473135401:2026-08-31T02:58:20Z:re_review",
+      "comment_id": "5473135401",
+      "comment_version_key": "5473135401:2026-08-31T02:58:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131733#issuecomment-5473135401",
+      "comment_created_at": "2026-08-31T02:58:20Z",
+      "comment_updated_at": "2026-08-31T02:58:20Z",
+      "comment_body_sha256": "79484270af127a7a4881726820ffb940549d787bd7e8b3e875d00b24820f61de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131733,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T02:59:09.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-131401-shared-runtime-state",
+        "head_sha": "d7b485f3904f5cbf15f03a0fb3d192dc97edf645",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
