@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T20:04:28.308Z",
+  "updated_at": "2026-08-31T20:04:42.957Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134219:5480528282:2026-08-31T16:08:48Z:clawsweeper_needs_human",
-      "comment_id": "5480528282",
-      "comment_version_key": "5480528282:2026-08-31T16:08:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134219#issuecomment-5480528282",
-      "comment_created_at": "2026-08-31T15:26:23Z",
-      "comment_updated_at": "2026-08-31T16:08:48Z",
-      "comment_body_sha256": "69d1f6e8273f0584760475cfe4ce1cd7d092dafcb69246cc7e671eb63f8fcd65",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134219,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check rollup reports a failed openclaw/ci-gate and truncates underlying checks, so exact-head CI validation remains unresolved before landing. (sha=9ad928cdebff13e83a7723381fb676a47a03f6fe)",
-      "expected_head_sha": "9ad928cdebff13e83a7723381fb676a47a03f6fe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:09:55.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/134187-active-turn-claim-fallback",
-        "head_sha": "9ad928cdebff13e83a7723381fb676a47a03f6fe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/fs-safe:187:5481026432:2026-08-31T16:06:30Z:automerge",
       "comment_id": "5481026432",
@@ -32223,6 +32190,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-08-31T20:03:46Z:clawsweeper_needs_human",
+      "comment_id": "5381521199",
+      "comment_version_key": "5381521199:2026-08-31T20:03:46Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3512#issuecomment-5381521199",
+      "comment_created_at": "2026-08-22T16:51:50Z",
+      "comment_updated_at": "2026-08-31T20:03:46Z",
+      "comment_body_sha256": "649541248afd11aebe4c1b9ae92d1fb8b676e6466edd9a5001a952a1019e8936",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3512,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied test-merge artifact is stale rather than the exact current-main-plus-head merge; refresh that merge result and rerun the focused Skills tests before landing. (sha=4f39dc341c00c262505fb7d6ae333d8c7532a8a9)",
+      "expected_head_sha": "4f39dc341c00c262505fb7d6ae333d8c7532a8a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T20:04:42.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-first-page-error-state",
+        "head_sha": "4f39dc341c00c262505fb7d6ae333d8c7532a8a9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
