@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:52:16.248Z",
+  "updated_at": "2026-08-31T17:52:41.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134005:5477980940:2026-08-31T13:01:16Z:re_review",
-      "comment_id": "5477980940",
-      "comment_version_key": "5477980940:2026-08-31T13:01:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134005#issuecomment-5477980940",
-      "comment_created_at": "2026-08-31T11:57:46Z",
-      "comment_updated_at": "2026-08-31T13:01:16Z",
-      "comment_body_sha256": "1249105ee251ceec26bd9447419d21573cd772e795e6c6811444992bcca41a34",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134005,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T13:06:24.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/charming-dhawan-179d7b",
-        "head_sha": "ba724ab72e1b26dbcddbd716846f76f023f72b9a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89636:5478731564:2026-08-31T13:00:49Z:re_review",
       "comment_id": "5478731564",
@@ -33206,6 +33159,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T17:52:16.248Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134291:5481693328:2026-08-31T17:21:07Z:clawsweeper_needs_human",
+      "comment_id": "5481693328",
+      "comment_version_key": "5481693328:2026-08-31T17:21:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134291#issuecomment-5481693328",
+      "comment_created_at": "2026-08-31T17:03:24Z",
+      "comment_updated_at": "2026-08-31T17:21:07Z",
+      "comment_body_sha256": "164640f62f6ff07981d8eb9a99ce370ce2c20b1c6aeaba622b43132c1fa5fe43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134291,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Two later ClawSweeper comments were omitted from the supplied context and GitHub was unreachable during review; repository policy requires checking their Rank-up moves before landing. (sha=bb8ede803ec7c4881552d6b501d6a4525da2f81f)",
+      "expected_head_sha": "bb8ede803ec7c4881552d6b501d6a4525da2f81f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T17:52:41.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-audit-runtime-import",
+        "head_sha": "bb8ede803ec7c4881552d6b501d6a4525da2f81f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
