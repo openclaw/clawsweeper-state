@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-08-31T07:52:23.489Z",
+  "updated_at": "2026-08-31T07:49:44.211Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133616:5473512112:2026-08-31T03:59:15Z:re_review",
+      "comment_id": "5473512112",
+      "comment_version_key": "5473512112:2026-08-31T03:59:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133616#issuecomment-5473512112",
+      "comment_created_at": "2026-08-31T03:59:15Z",
+      "comment_updated_at": "2026-08-31T03:59:15Z",
+      "comment_body_sha256": "fbc899a39aca51bbe481ba39a121da24d31cc150716edbd81d853b410e6d4539",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133616,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T04:00:01.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-isolated-transport-concurrency",
+        "head_sha": "51abde291c7244b98cea3755ccf131171fcb2b57",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132697:5463421551:2026-08-31T03:59:26Z:clawsweeper_needs_human",
       "comment_id": "5463421551",
@@ -32174,39 +32221,6 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/matrix-outbound-emote",
         "head_sha": "36e0727f815b4a3fd77cbdbfd90da563700187ce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133843:5474466074:2026-08-31T07:51:28Z:clawsweeper_auto_repair",
-      "comment_id": "5474466074",
-      "comment_version_key": "5474466074:2026-08-31T07:51:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133843#issuecomment-5474466074",
-      "comment_created_at": "2026-08-31T06:11:43Z",
-      "comment_updated_at": "2026-08-31T07:51:28Z",
-      "comment_body_sha256": "a86e2f3fabfaeb5fcaaca8cd383b8ad75ca65664f9c936e5c7da1ffaca5443ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133843,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=df6f77ca9dc5a7b1f03d1ee87e00899a04322932)",
-      "expected_head_sha": "df6f77ca9dc5a7b1f03d1ee87e00899a04322932",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T07:52:23.489Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secrets-shared-auth-profile-owner-133296",
-        "head_sha": "df6f77ca9dc5a7b1f03d1ee87e00899a04322932",
         "cluster_id": null,
         "job_path": null
       }
