@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:08:13.276Z",
+  "updated_at": "2026-08-31T17:08:53.002Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132453:5478263242:2026-08-31T12:21:12Z:re_review",
-      "comment_id": "5478263242",
-      "comment_version_key": "5478263242:2026-08-31T12:21:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5478263242",
-      "comment_created_at": "2026-08-31T12:21:12Z",
-      "comment_updated_at": "2026-08-31T12:21:12Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132453,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T12:22:12.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage",
-        "head_sha": "a3b73c9b3de6737e669c34a4cb0761c84280a27b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133994:5478300683:2026-08-31T12:24:13Z:re_review",
       "comment_id": "5478300683",
@@ -32788,6 +32741,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134293:5481751742:2026-08-31T17:07:58Z:clawsweeper_needs_human",
+      "comment_id": "5481751742",
+      "comment_version_key": "5481751742:2026-08-31T17:07:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134293#issuecomment-5481751742",
+      "comment_created_at": "2026-08-31T17:07:58Z",
+      "comment_updated_at": "2026-08-31T17:07:58Z",
+      "comment_body_sha256": "2f755917a354ea4c6b00af77c2cfdd2ea66c8d1b244e704d626c16a8755db19d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134293,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete repair is needed; this is a normal protected maintainer PR awaiting ordinary review and exact-head checks. (sha=dc77444c74a2d218d39536f9894038210335ea5a)",
+      "expected_head_sha": "dc77444c74a2d218d39536f9894038210335ea5a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T17:08:53.002Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-mobile-renderer-value-fixtures",
+        "head_sha": "dc77444c74a2d218d39536f9894038210335ea5a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
