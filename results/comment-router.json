@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T06:19:57.954Z",
+  "updated_at": "2026-08-31T06:20:21.412Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128249:5421561217:2026-08-26T06:38:26Z:re_review",
-      "comment_id": "5421561217",
-      "comment_version_key": "5421561217:2026-08-26T06:38:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5421561217",
-      "comment_created_at": "2026-08-26T06:38:26Z",
-      "comment_updated_at": "2026-08-26T06:38:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T02:24:21.676Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5422114349:2026-08-26T07:36:26Z:re_review",
       "comment_id": "5422114349",
@@ -32300,6 +32273,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133846:5474533240:2026-08-31T06:19:37Z:clawsweeper_needs_human",
+      "comment_id": "5474533240",
+      "comment_version_key": "5474533240:2026-08-31T06:19:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133846#issuecomment-5474533240",
+      "comment_created_at": "2026-08-31T06:19:37Z",
+      "comment_updated_at": "2026-08-31T06:19:37Z",
+      "comment_body_sha256": "6ebd6574a25d7d46b8e5ebf654e01427f2a5131c56cb6dc6785b11f2949e2d80",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133846,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - One exact-head test-types check was still in progress in the captured status; wait for its result before landing. (sha=dc656f8ce6e0c2b3dea1cfc94891ab6bb57e1bd9)",
+      "expected_head_sha": "dc656f8ce6e0c2b3dea1cfc94891ab6bb57e1bd9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T06:20:21.412Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-qr-runtime-mocks",
+        "head_sha": "dc656f8ce6e0c2b3dea1cfc94891ab6bb57e1bd9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
