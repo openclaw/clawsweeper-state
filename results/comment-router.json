@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T09:38:44.009Z",
+  "updated_at": "2026-08-31T09:39:17.669Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5473832849:2026-08-31T04:44:04Z:re_review",
-      "comment_id": "5473832849",
-      "comment_version_key": "5473832849:2026-08-31T04:44:04Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5473832849",
-      "comment_created_at": "2026-08-31T04:44:04Z",
-      "comment_updated_at": "2026-08-31T04:44:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T05:33:43.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task/ec/codex-proxy-attribution",
-        "head_sha": "7dd482e5dd9da3b1f9f8dde10ef1791637a17dfd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133376:5469860800:2026-08-31T05:33:13Z:clawsweeper_needs_human",
       "comment_id": "5469860800",
@@ -33175,6 +33128,39 @@
         "kind": "pull_request",
         "branch": "chore/deps-refresh-20260830",
         "head_sha": "0a0649f4ed4e6ad3e9f5bef9561a4eea8bbc9e2c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134010:5476525219:2026-08-31T09:38:25Z:clawsweeper_needs_human",
+      "comment_id": "5476525219",
+      "comment_version_key": "5476525219:2026-08-31T09:38:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134010#issuecomment-5476525219",
+      "comment_created_at": "2026-08-31T09:38:25Z",
+      "comment_updated_at": "2026-08-31T09:38:25Z",
+      "comment_body_sha256": "237678c3e16918d0978aa683476a1f064f7220ecbba25ecaf104bb2a5c032308",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134010,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body contains a direct Node decoder transcript and claimed Vitest results, but the changed production owner is exercised in tests... (sha=d7308ca8cadb3382ca2a44f33a66d22e20b000bc)",
+      "expected_head_sha": "d7308ca8cadb3382ca2a44f33a66d22e20b000bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T09:39:17.669Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/volcengine-invalid-utf8-tts",
+        "head_sha": "d7308ca8cadb3382ca2a44f33a66d22e20b000bc",
         "cluster_id": null,
         "job_path": null
       }
