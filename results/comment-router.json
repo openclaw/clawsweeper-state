@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T04:32:26.390Z",
+  "updated_at": "2026-08-31T04:34:16.915Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116337:5468541243:2026-08-30T11:58:08Z:re_review",
-      "comment_id": "5468541243",
-      "comment_version_key": "5468541243:2026-08-30T11:58:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116337#issuecomment-5468541243",
-      "comment_created_at": "2026-08-30T11:58:08Z",
-      "comment_updated_at": "2026-08-30T11:58:08Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116337,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T00:46:18.572Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123053:5277537485:2026-08-13T07:46:52Z:re_review",
       "comment_id": "5277537485",
@@ -32326,6 +32299,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T04:32:26.390Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133788:5473762548:2026-08-31T04:33:39Z:clawsweeper_needs_human",
+      "comment_id": "5473762548",
+      "comment_version_key": "5473762548:2026-08-31T04:33:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133788#issuecomment-5473762548",
+      "comment_created_at": "2026-08-31T04:33:39Z",
+      "comment_updated_at": "2026-08-31T04:33:39Z",
+      "comment_body_sha256": "5d9b9f3406756385af9a17e62ed96bfac6955470e32ef78188d71099e842fda9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133788,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the agent configuration resolver, consumed by prepared reply execution; supplied evidence covers resolver-level... (sha=e2055ce08078f82a0e778317152a7702c67bd459)",
+      "expected_head_sha": "e2055ce08078f82a0e778317152a7702c67bd459",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T04:34:16.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/per-agent-tool-progress-detail",
+        "head_sha": "e2055ce08078f82a0e778317152a7702c67bd459",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
