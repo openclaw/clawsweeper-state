@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:40:12.953Z",
+  "updated_at": "2026-08-31T17:40:36.030Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:129:5474868182:2026-08-31T12:51:38Z:clawsweeper_auto_repair",
-      "comment_id": "5474868182",
-      "comment_version_key": "5474868182:2026-08-31T12:51:38Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/129#issuecomment-5474868182",
-      "comment_created_at": "2026-08-31T06:58:01Z",
-      "comment_updated_at": "2026-08-31T12:51:38Z",
-      "comment_body_sha256": "7176adf60a0060884873a6808857d17fada7dd09e5521a1cd4b51034b8a58fea",
-      "repo": "openclaw/ocm",
-      "issue_number": 129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=d77a335004f66d0f48553d7c14a58eb4a943a6c7)",
-      "expected_head_sha": "d77a335004f66d0f48553d7c14a58eb4a943a6c7",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-08-31T12:52:21.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/deps-refresh-20260830",
-        "head_sha": "d77a335004f66d0f48553d7c14a58eb4a943a6c7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134110:5478633862:2026-08-31T12:52:03Z:clawsweeper_needs_human",
       "comment_id": "5478633862",
@@ -33096,6 +33063,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134302:5482107176:2026-08-31T17:36:59Z:re_review",
+      "comment_id": "5482107176",
+      "comment_version_key": "5482107176:2026-08-31T17:36:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134302#issuecomment-5482107176",
+      "comment_created_at": "2026-08-31T17:36:59Z",
+      "comment_updated_at": "2026-08-31T17:36:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134302,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T17:40:33.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pollybot/fix-127403-migration-backup",
+        "head_sha": "931a7eb1756f7ad46c0c9817dc18e8dc77401440",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
