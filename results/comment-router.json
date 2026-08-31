@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:43:15.253Z",
+  "updated_at": "2026-08-31T10:43:39.812Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131590:5475110212:2026-08-31T07:21:49Z:re_review",
-      "comment_id": "5475110212",
-      "comment_version_key": "5475110212:2026-08-31T07:21:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131590#issuecomment-5475110212",
-      "comment_created_at": "2026-08-31T07:21:49Z",
-      "comment_updated_at": "2026-08-31T07:21:49Z",
-      "comment_body_sha256": "97163786cdc2d28bbc06412d3f93c86bab6f59ba61b01deb25c75d2d01e99643",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131590,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head `3b8f2ba540d`: the manual-pause p1 is fixed by explicit provenance, as the finding proposed. the terminal disposition is no longer inferred from disabled state: the exit watcher's fire path passes `onexitwatchercompletion: true` through `cron.run` (`cronservicerunoptions` → `manualrunoptions` → `applyjobresult`), and only that flag reaches the terminal gate — an operator's `automations run` of a manually paused on-exit job keeps the quiet pause (new regression test, plus the armed-watcher control). the pr body carries fresh exact-head harness proof on `3b8f2ba540d` covering all three lanes live: watcher alert delivered to the channel at first failure, best-effort fact + notice with no alert, and the paused operator control staying silent through the real `cron run --wait` cli path. the terminal-disposition tests moved to `src/cron/service.on-exit-terminal-disposition.test.ts` to respect max-lines without a suppression",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T07:22:32.242Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/131490-oneshot-silent-disable",
-        "head_sha": "3b8f2ba540dfe8ef5d4cbb911b7146364e68a506",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124286:5475056771:2026-08-31T07:16:40Z:re_review",
       "comment_id": "5475056771",
@@ -32344,6 +32297,39 @@
         "kind": "pull_request",
         "branch": "fix/docker-runtime-pnpm-lock",
         "head_sha": "b3b1fe3f813c1413991fad081466b3797c2957f0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133926:5475252461:2026-08-31T10:42:57Z:clawsweeper_needs_human",
+      "comment_id": "5475252461",
+      "comment_version_key": "5475252461:2026-08-31T10:42:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133926#issuecomment-5475252461",
+      "comment_created_at": "2026-08-31T07:36:13Z",
+      "comment_updated_at": "2026-08-31T10:42:57Z",
+      "comment_body_sha256": "ccced9979308e47450e189f38b6b91bed323b8bf0a4788ae1eff0787aa6003e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by five net lines for an additive model-facing result field; that growth is justified by recording the missing admission fact at the owner boundary rather than i... (sha=e0fb7c1801bae20799ef84866f44e586b0e89a32)",
+      "expected_head_sha": "e0fb7c1801bae20799ef84866f44e586b0e89a32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T10:43:39.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openclaw-openclaw-vacinc-issue-96020",
+        "head_sha": "e0fb7c1801bae20799ef84866f44e586b0e89a32",
         "cluster_id": null,
         "job_path": null
       }
