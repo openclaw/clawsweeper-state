@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:30:43.563Z",
+  "updated_at": "2026-08-31T19:31:02.476Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133735:5473054721:2026-08-31T14:51:03Z:clawsweeper_needs_human",
-      "comment_id": "5473054721",
-      "comment_version_key": "5473054721:2026-08-31T14:51:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133735#issuecomment-5473054721",
-      "comment_created_at": "2026-08-31T02:45:19Z",
-      "comment_updated_at": "2026-08-31T14:51:03Z",
-      "comment_body_sha256": "8c08c2f41196f0e332e2007ea8717c1ec88bbedf4647ed5ec34810b8eb2e319d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133735,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional WorkerProvider cancellation signal is a public plugin lifecycle contract; providers that ignore it remain type-compatible but cannot make Stop promptly interrupt their pr... (sha=b824eaf4760266d7395986c3c6745f5b711e83bd)",
-      "expected_head_sha": "b824eaf4760266d7395986c3c6745f5b711e83bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T14:51:54.211Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-provisioning-cancellation",
-        "head_sha": "b824eaf4760266d7395986c3c6745f5b711e83bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133735:5474840601:2026-08-31T06:54:44Z:re_review",
       "comment_id": "5474840601",
@@ -32875,6 +32842,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133687:5483419181:2026-08-31T19:30:14Z:re_review",
+      "comment_id": "5483419181",
+      "comment_version_key": "5483419181:2026-08-31T19:30:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133687#issuecomment-5483419181",
+      "comment_created_at": "2026-08-31T19:30:14Z",
+      "comment_updated_at": "2026-08-31T19:30:14Z",
+      "comment_body_sha256": "bcfbf65cc95b89f08b4299f64bd0a848b2569e207b659fb804bb8ccf4dacbf2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133687,
+      "author": "TheArchitectit",
+      "author_id": 241862351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real behavior proof added: pr body now leads with a redacted authority-chain evidence block (real acpx custom-command launch through the gateway, real claude-agent-acp adapter at the documented default path, adapter-env key fingerprint matching the 0600 key file, gateway env count 0; example suite 46/46). p1 fixes in fc8502f9eac + e1c8a94cd9c",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T19:30:59.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/acp-endpoint-registry",
+        "head_sha": "e1c8a94cd9ce9e7c75c4cd9e53e20f499a715485",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
