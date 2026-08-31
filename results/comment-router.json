@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T14:58:03.048Z",
+  "updated_at": "2026-08-31T14:59:22.849Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133926:5475252461:2026-08-31T10:28:38Z:clawsweeper_needs_human",
-      "comment_id": "5475252461",
-      "comment_version_key": "5475252461:2026-08-31T10:28:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133926#issuecomment-5475252461",
-      "comment_created_at": "2026-08-31T07:36:13Z",
-      "comment_updated_at": "2026-08-31T10:28:38Z",
-      "comment_body_sha256": "af0dab68f6284c9a900b18346c5489ee7e06e6d277b678182df678d1dcb875e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133926,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - This active maintainer-labeled PR already owns the linked narrow repair, so a separate repair job is not appropriate. (sha=51155f04770dc3bd71abf25a1f39e7781a0f6d65)",
-      "expected_head_sha": "51155f04770dc3bd71abf25a1f39e7781a0f6d65",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T10:40:34.624Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openclaw-openclaw-vacinc-issue-96020",
-        "head_sha": "e0fb7c1801bae20799ef84866f44e586b0e89a32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133940:5475445550:2026-08-31T10:37:01Z:clawsweeper_needs_human",
       "comment_id": "5475445550",
@@ -32827,6 +32794,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134198:5480175232:2026-08-31T14:58:17Z:clawsweeper_needs_human",
+      "comment_id": "5480175232",
+      "comment_version_key": "5480175232:2026-08-31T14:58:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134198#issuecomment-5480175232",
+      "comment_created_at": "2026-08-31T14:58:17Z",
+      "comment_updated_at": "2026-08-31T14:58:17Z",
+      "comment_body_sha256": "070b519c1bd217770078637391e8066f95a341bd557c94af62a15401060021f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134198,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The error now omits rejectedPath when the sidecar was not created; in-tree search found no consumer, but any external handler that assumed this undocumented field always existed must... (sha=253d061883fb6fd0b82b3d0812cd8c8952759e2b)",
+      "expected_head_sha": "253d061883fb6fd0b82b3d0812cd8c8952759e2b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T14:59:22.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-rejected-payload-save",
+        "head_sha": "253d061883fb6fd0b82b3d0812cd8c8952759e2b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
