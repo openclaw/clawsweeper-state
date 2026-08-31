@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134340",
+  "mode": "autonomous",
+  "run_id": "33423566426",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33423566426",
+  "head_sha": "aba9826ab8c010a8f5a2b4411484dc4cb7e94f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134340.md",
+  "published_at": "2026-08-31T18:47:55.567Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134340",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134340",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked by this read-only worker environment. Current main e339ce2e copies object-valued legacy paired.json entries directly into PairedDevice records at src/infra/device-pairing-migration.ts:75, while the SQLite mapper writes required timestamps at src/infra/device-pairing-store.ts:255. Focused Vitest could not start: tsx is absent; pnpm/Corepack cannot create its cache on the read-only filesystem. The mandatory sibling ../codex source is also absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#120292",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#134340",
+      "candidate_fix": null,
+      "reason": "Open related issue with a different user flow and owner boundary."
+    },
+    {
+      "target": "#127463",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134340",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#127973",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#134340",
+      "candidate_fix": null,
+      "reason": "Open related issue with a distinct migration owner and expected behavior."
+    },
+    {
+      "target": "#134340",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134340",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-ready checkout and the mandated ../codex source inspection are required before creating the regression and branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134340",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134340",
+      "candidate_fix": null,
+      "reason": "The narrow repair is planned but cannot be authored or validated in this read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 2,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#134340",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
