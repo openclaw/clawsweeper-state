@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:10:38.701Z",
+  "updated_at": "2026-08-31T10:11:07.586Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133376:5469860800:2026-08-31T06:04:29Z:clawsweeper_needs_human",
-      "comment_id": "5469860800",
-      "comment_version_key": "5469860800:2026-08-31T06:04:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5469860800",
-      "comment_created_at": "2026-08-30T16:23:58Z",
-      "comment_updated_at": "2026-08-31T06:04:29Z",
-      "comment_body_sha256": "0d6a1480b80c5cbff94e76b3af724dd68045d4b475eabd40124defec3c0112e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the fs-safe containment contract** - The new filesystem capability depends on fs-safe to enforce physical selected-root containment and classify containment failures; only OpenCl...; Review finding: [medium] Verify the fs-safe containment contract — src/agents/code-mode-skills.ts:127 (sha=09ca45d82ddb5e5384d108ba458da4f261c40fe4)",
-      "expected_head_sha": "09ca45d82ddb5e5384d108ba458da4f261c40fe4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T06:08:42.214Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-skill-relative-read",
-        "head_sha": "09ca45d82ddb5e5384d108ba458da4f261c40fe4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133380:5469912245:2026-08-31T06:04:23Z:clawsweeper_needs_human",
       "comment_id": "5469912245",
@@ -33300,6 +33267,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129145:5476852549:2026-08-31T10:10:17Z:re_review",
+      "comment_id": "5476852549",
+      "comment_version_key": "5476852549:2026-08-31T10:10:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129145#issuecomment-5476852549",
+      "comment_created_at": "2026-08-31T10:10:17Z",
+      "comment_updated_at": "2026-08-31T10:10:17Z",
+      "comment_body_sha256": "2cabf524e09819d8731ba1ef14880868d31ccd6b08c5082fc5f89201a0843ffa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129145,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T10:11:04.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-report-entry-cache-content-key",
+        "head_sha": "68bd798bb2305075ce6b9ff3cd58c3d0debc04b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
