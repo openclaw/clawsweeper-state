@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T11:50:50.761Z",
+  "updated_at": "2026-08-31T11:52:06.636Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133963:5475804501:2026-08-31T08:29:18Z:clawsweeper_needs_human",
-      "comment_id": "5475804501",
-      "comment_version_key": "5475804501:2026-08-31T08:29:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133963#issuecomment-5475804501",
-      "comment_created_at": "2026-08-31T08:29:18Z",
-      "comment_updated_at": "2026-08-31T08:29:18Z",
-      "comment_body_sha256": "9a8550307591936c1b2f2444c32f6db50448632b3ea27f78cb5462b9158e6401",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133963,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - openclaw plugins registry --refresh now exits unsuccessfully when its post-write reread remains stale; this corrects a false-success path but scripts that continued after the prior su... (sha=440a3a9808e83809a2377b556d528eabbb4272d3)",
-      "expected_head_sha": "440a3a9808e83809a2377b556d528eabbb4272d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T08:37:28.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-133901",
-        "head_sha": "d14076e45c8152040aa319995d63d195042cbcde",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133964:5475822286:2026-08-31T08:31:08Z:clawsweeper_auto_repair",
       "comment_id": "5475822286",
@@ -31961,6 +31928,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134054:5477317163:2026-08-31T11:50:30Z:clawsweeper_needs_human",
+      "comment_id": "5477317163",
+      "comment_version_key": "5477317163:2026-08-31T11:50:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134054#issuecomment-5477317163",
+      "comment_created_at": "2026-08-31T10:54:26Z",
+      "comment_updated_at": "2026-08-31T11:50:30Z",
+      "comment_body_sha256": "734d91676195185a149aaded2d814f4220546bfbb597b075c41fe444a7d8dbb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head hosted OpenGrep execution and SARIF upload were not independently observable, and the workflow relies on the pinned checkout action providing the merge parent at depth... (sha=d7efeac8232b2c7c44ad6834359f43de373fe444)",
+      "expected_head_sha": "d7efeac8232b2c7c44ad6834359f43de373fe444",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T11:52:06.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/opengrep-scan-base",
+        "head_sha": "d7efeac8232b2c7c44ad6834359f43de373fe444",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
