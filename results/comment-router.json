@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T05:14:17.468Z",
+  "updated_at": "2026-08-31T05:14:20.455Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:5472543857:2026-08-31T01:21:21Z:re_review",
-      "comment_id": "5472543857",
-      "comment_version_key": "5472543857:2026-08-31T01:21:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-5472543857",
-      "comment_created_at": "2026-08-31T01:21:21Z",
-      "comment_updated_at": "2026-08-31T01:21:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T01:21:59.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "acd73e4ea9e92aaf8348f58f22ca93173a4b6fa5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133499:5471045478:2026-08-30T20:22:31Z:re_review",
       "comment_id": "5471045478",
@@ -32338,6 +32291,39 @@
         "kind": "pull_request",
         "branch": "codex/release-2026.8.1-dmg-docs",
         "head_sha": "7459c34cdd6623f2338c64d343aa3ecc7f0c834c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1692:5473862773:2026-08-31T05:12:53Z:clawsweeper_needs_human",
+      "comment_id": "5473862773",
+      "comment_version_key": "5473862773:2026-08-31T05:12:53Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1692#issuecomment-5473862773",
+      "comment_created_at": "2026-08-31T04:48:38Z",
+      "comment_updated_at": "2026-08-31T05:12:53Z",
+      "comment_body_sha256": "c2ccb162f4e2ab7b6e8b3071c4edc74747cf14a7401fae4286e9b913f73fe231",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1692,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed coordinator admission path reaches request-level tests, but provider creation is mocked and the PR... (sha=e9ecd7e9a4ade023d1107ce2991943260826c8cd)",
+      "expected_head_sha": "e9ecd7e9a4ade023d1107ce2991943260826c8cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T05:14:20.455Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/coordinator-fixed-checkpoint-forks",
+        "head_sha": "e9ecd7e9a4ade023d1107ce2991943260826c8cd",
         "cluster_id": null,
         "job_path": null
       }
