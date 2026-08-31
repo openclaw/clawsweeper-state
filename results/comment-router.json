@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T06:15:38.076Z",
+  "updated_at": "2026-08-31T06:15:44.532Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133304:5472869159:2026-08-31T02:15:24Z:re_review",
-      "comment_id": "5472869159",
-      "comment_version_key": "5472869159:2026-08-31T02:15:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133304#issuecomment-5472869159",
-      "comment_created_at": "2026-08-31T02:15:24Z",
-      "comment_updated_at": "2026-08-31T02:15:24Z",
-      "comment_body_sha256": "f1343c86666032818486a8c68ff82b607e5468ff996be43131be0c2acc537b4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133304,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T02:23:41.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugins-authoring-config-guard",
-        "head_sha": "010dee5530a1eb362b6341c8bd6283837e1c0efb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131669:5472919158:2026-08-31T02:23:24Z:re_review",
       "comment_id": "5472919158",
@@ -32220,6 +32173,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T06:15:38.076Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1272:5474493797:2026-08-31T06:14:57Z:clawsweeper_needs_human",
+      "comment_id": "5474493797",
+      "comment_version_key": "5474493797:2026-08-31T06:14:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1272#issuecomment-5474493797",
+      "comment_created_at": "2026-08-31T06:14:57Z",
+      "comment_updated_at": "2026-08-31T06:14:57Z",
+      "comment_body_sha256": "29313b5d06cd2d12638345877cd902fb4b66a491fa0f99f5f88723dcf1b285ca",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1272,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - At the supplied snapshot, the broad test jobs were still in progress; their completion should be checked on this exact head before merge. (sha=a3b47357fe6b50f36be694a71c9cb87ce4082028)",
+      "expected_head_sha": "a3b47357fe6b50f36be694a71c9cb87ce4082028",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T06:15:44.532Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/github/gh-aw-actions/setup-cli-0.87.9",
+        "head_sha": "a3b47357fe6b50f36be694a71c9cb87ce4082028",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
