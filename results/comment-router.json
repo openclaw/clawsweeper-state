@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:34:37.247Z",
+  "updated_at": "2026-08-31T10:35:02.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119516:5456374119:2026-08-28T18:40:51Z:re_review",
-      "comment_id": "5456374119",
-      "comment_version_key": "5456374119:2026-08-28T18:40:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5456374119",
-      "comment_created_at": "2026-08-28T18:40:51Z",
-      "comment_updated_at": "2026-08-28T18:40:51Z",
-      "comment_body_sha256": "5ecce018a97d37bae413dadcfc4356c6852efd147666a10b32877c5191b6d742",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119516,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T06:44:56.299Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119516:5458760812:2026-08-28T23:18:57Z:re_review",
       "comment_id": "5458760812",
@@ -33246,6 +33219,39 @@
       "status": "skipped",
       "processed_at": "2026-08-31T10:34:37.247Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134043:5477091143:2026-08-31T10:34:02Z:clawsweeper_needs_human",
+      "comment_id": "5477091143",
+      "comment_version_key": "5477091143:2026-08-31T10:34:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134043#issuecomment-5477091143",
+      "comment_created_at": "2026-08-31T10:34:02Z",
+      "comment_updated_at": "2026-08-31T10:34:02Z",
+      "comment_body_sha256": "6908e7fce4ccc7d9e9519a9861a18a2796c6bb944459faf6120ab3ec964d294d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Daytona capture now explicitly permits stopping the source worker; neither the external CLI contract nor the real stop/capture/restore path could be independently inspected in this en... (sha=75ced5f6a4b6612e3f038832414a57a9d9aa1be2)",
+      "expected_head_sha": "75ced5f6a4b6612e3f038832414a57a9d9aa1be2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T10:35:02.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/project-warm-start",
+        "head_sha": "75ced5f6a4b6612e3f038832414a57a9d9aa1be2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
