@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-133923"
 mode: "autonomous"
-run_id: "33368924772"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33368924772"
-head_sha: "62241350beef738542b4802c172c28d7a8013db7"
-workflow_conclusion: "failure"
+run_id: "33375252189"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33375252189"
+head_sha: "b3e6adf72579bf69671e1034aeefc019449e3d63"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-31T07:54:40.672Z"
-canonical: "https://github.com/openclaw/openclaw/issues/133923"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/133923"
+published_at: "2026-08-31T10:00:08.065Z"
+canonical: "#133923"
+canonical_issue: "#133923"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33368924772](https://github.com/openclaw/clawsweeper/actions/runs/33368924772)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33375252189](https://github.com/openclaw/clawsweeper/actions/runs/33375252189)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/133923
+Canonical: #133923
 
 ## Summary
 
-#133923 has a narrow doctor-owned repair plan, but implementation is blocked in this worker: sibling ../codex is absent (required direct-inspection gate) and the read-only checkout has no node_modules for reproduction/validation.
+#133923 is a reproducible, non-security doctor false positive on current main (419bc1faca934d65fd66c86622711f3f84f8aa8e). The required narrow fix is clear, but this worker checkout is read-only and has no installed dependencies; no branch, patch, or validation run could be produced. A deterministic new-PR artifact is ready.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/133923
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #133923 | fix_needed | blocked | canonical | Implementation and validation require a writable, dependency-ready checkout plus the mandatory direct ../codex inspection. |
-| cluster:issue-openclaw-openclaw-133923 | build_fix_artifact | planned | canonical |  |
+| #133923 | build_fix_artifact | planned | canonical | A new narrow fix PR is appropriate, but this read-only worker cannot modify the branch, install dependencies, or run the requested validation. |
 
 ## Needs Human
 
