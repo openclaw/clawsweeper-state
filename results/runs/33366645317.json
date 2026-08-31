@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-133860",
+  "mode": "autonomous",
+  "run_id": "33366645317",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33366645317",
+  "head_sha": "1b9086615d892ecc7c1fd4b681e8a1b1208dfa5c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-133860.md",
+  "published_at": "2026-08-31T07:18:57.828Z",
+  "canonical": "#133860",
+  "canonical_issue": "#133860",
+  "canonical_pr": null,
+  "summary": "#133860 remains the canonical open bug. Current main lacks the current llama.cpp wording in both classifier routes, but this worker cannot create or validate the required PR: the checkout is read-only, dependencies are absent, and the mandatory sibling ../codex checkout is unavailable for the repository hard gate.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/64180",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133860",
+      "candidate_fix": "#64196",
+      "reason": "Historical related report; no closure action is valid for an already-closed issue."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/64196",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "The prior merged fix is useful historical context but only partially overlaps the current regression."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/133860",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary repair is clear, but the required implementation and validation cannot be completed in this environment."
+    },
+    {
+      "target": "clawsweeper/issue-openclaw-openclaw-133860",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Prepared deterministic implementation plan for a writable executor."
+    },
+    {
+      "target": "clawsweeper/issue-openclaw-openclaw-133860",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#133860",
+      "candidate_fix": null,
+      "reason": "Requires a writable checkout with dependencies and the repository-required ../codex sibling source."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
