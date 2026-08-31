@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Feishu group binding freshness for https://github.com/openclaw/openclaw/issues/133757. At the Feishu inbound-turn owner, obtain one current runtime configuration snapshot before account/group admission and route selection so a binding reload affects the next group event without account restart. Preserve one consistent snapshot across each turn; do not add configuration, restart accounts for bindings, change routing precedence, or add runtime compatibility fallbacks. Simplify the DM-only refresh path if the shared snapshot makes it redundant. Add a regression that starts with a wildcard Feishu group route, changes the live config to an exact peer binding, sends the next group event without restart, and proves the selected agent changes. Cover existing DM refreshed-policy behavior and relevant group admission/broadcast paths. Do not edit CHANGELOG.md.
+Repair the Feishu group bindings hot-reload bug in https://github.com/openclaw/openclaw/issues/133757. Preserve the existing binding grammar and Gateway reload classification; do not add configuration or restart behavior. Ensure every group route resolution uses the current runtime configuration rather than the account-start snapshot, while preserving direct-message reauthorization and Feishu account lifecycle semantics. Add a regression in extensions/feishu/src/bot.test.ts that starts with a wildcard group binding to one agent, supplies a current configuration with an exact group binding to another agent, delivers a group event without restart, and proves the resolver/dispatch selects the exact binding; establish that it fails before the repair. Review the closed overlapping context in https://github.com/openclaw/openclaw/pull/121970 but do not revive its broader unsupported claims. No CHANGELOG.md edit: it is release-owned.
 
 Likely files:
 
 - extensions/feishu/src/bot.ts
 - extensions/feishu/src/bot.test.ts
-- extensions/feishu/src/bot.broadcast.test.ts
+- src/routing/resolve-route.test.ts
 
 Validation:
 
 - node scripts/run-vitest.mjs extensions/feishu/src/bot.test.ts
-- pnpm test:extension feishu
+- pnpm test src/routing/resolve-route.test.ts
+- pnpm check:changed -- extensions/feishu/src/bot.ts extensions/feishu/src/bot.test.ts
 
 ## Operator Prompt
 
