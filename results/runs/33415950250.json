@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134182",
+  "mode": "autonomous",
+  "run_id": "33415950250",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33415950250",
+  "head_sha": "659dee73d0706fee9776f7986d9861e82b897d24",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134182.md",
+  "published_at": "2026-08-31T17:14:50.827Z",
+  "canonical": "#134182",
+  "canonical_issue": "#134182",
+  "canonical_pr": null,
+  "summary": "#134182 has a narrow, source-proven stale-lease repair path, but this read-only Linux checkout cannot create/validate the required macOS branch and the root-required sibling ../codex source is unavailable (network DNS cannot fetch it). No GitHub mutation or code change was made.",
+  "actions": [
+    {
+      "target": "#104424",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#134182",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#133793",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#133793",
+      "candidate_fix": null,
+      "reason": "Related macOS onboarding area, but distinct defect."
+    },
+    {
+      "target": "#134182",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134182",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the mandatory direct ../codex-source inspection and writable macOS test environment."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_independent": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable macOS repair environment with the required sibling ../codex checkout available; this runner cannot clone it because github.com DNS is unavailable and filesystem access is read-only."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
