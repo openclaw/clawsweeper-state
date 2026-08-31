@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T09:29:40.901Z",
+  "updated_at": "2026-08-31T09:30:49.292Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1269:5467054592:2026-08-31T05:13:31Z:clawsweeper_needs_human",
-      "comment_id": "5467054592",
-      "comment_version_key": "5467054592:2026-08-31T05:13:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1269#issuecomment-5467054592",
-      "comment_created_at": "2026-08-30T06:03:33Z",
-      "comment_updated_at": "2026-08-31T05:13:31Z",
-      "comment_body_sha256": "c6f63ab0755e39789ca3134523cbd249cb6893a60692fc30255fee9d3f035daa",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1269,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Enabling the feature intentionally permits any paired active gateway, including a remote one, to submit prompt content to Windows-local Ollama and consume local CPU/GPU resources. (sha=607439a7c28b106c2080ed358e05aedee0a18156)",
-      "expected_head_sha": "607439a7c28b106c2080ed358e05aedee0a18156",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T05:18:08.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/ollama-node-inference",
-        "head_sha": "607439a7c28b106c2080ed358e05aedee0a18156",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1269:5467472132:2026-08-30T07:48:49Z:re_review",
       "comment_id": "5467472132",
@@ -33194,6 +33161,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133897:5476430552:2026-08-31T09:29:59Z:re_review",
+      "comment_id": "5476430552",
+      "comment_version_key": "5476430552:2026-08-31T09:29:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133897#issuecomment-5476430552",
+      "comment_created_at": "2026-08-31T09:29:59Z",
+      "comment_updated_at": "2026-08-31T09:29:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133897,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T09:30:47.124Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extended-stable-plugin-dependency-freshness",
+        "head_sha": "cb75136985aff08dfa3690b80d817383ec01ec3c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
