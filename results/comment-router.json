@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-08-31T22:26:28.613Z",
+  "updated_at": "2026-08-31T22:27:08.034Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5468035343:2026-08-30T10:03:52Z:re_review",
-      "comment_id": "5468035343",
-      "comment_version_key": "5468035343:2026-08-30T10:03:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5468035343",
-      "comment_created_at": "2026-08-30T10:03:52Z",
-      "comment_updated_at": "2026-08-30T10:03:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:26:35.473Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5468363671:2026-08-30T11:19:35Z:re_review",
       "comment_id": "5468363671",
@@ -32950,6 +32923,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134492:5485592813:2026-08-31T22:26:07Z:clawsweeper_needs_human",
+      "comment_id": "5485592813",
+      "comment_version_key": "5485592813:2026-08-31T22:26:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134492#issuecomment-5485592813",
+      "comment_created_at": "2026-08-31T22:26:07Z",
+      "comment_updated_at": "2026-08-31T22:26:07Z",
+      "comment_body_sha256": "ef30fa0a24b6825b72e149cd13f0542cc5122ed3346d0607152bbbde0f88f43f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134492,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; this generated refresh awaits normal exact-head CI and merge handling. (sha=f53e0cea111c79115af2c6afd24879ed11c7ac7b)",
+      "expected_head_sha": "f53e0cea111c79115af2c6afd24879ed11c7ac7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T22:27:08.034Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/native-app-locale-refresh",
+        "head_sha": "f53e0cea111c79115af2c6afd24879ed11c7ac7b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
