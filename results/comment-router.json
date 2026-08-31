@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T19:40:27.549Z",
+  "updated_at": "2026-08-31T19:41:31.253Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134038:5480339981:2026-08-31T15:11:10Z:re_review",
-      "comment_id": "5480339981",
-      "comment_version_key": "5480339981:2026-08-31T15:11:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134038#issuecomment-5480339981",
-      "comment_created_at": "2026-08-31T15:11:10Z",
-      "comment_updated_at": "2026-08-31T15:11:10Z",
-      "comment_body_sha256": "8a43653eaf19e9b731158332bac9fc6eeaceda64e7df146a94b1cbcbe70721ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134038,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T15:12:13.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-windows-runtime-20260831",
-        "head_sha": "d088cbdd5bfcbd677e226ff73b8f02d1fc248aaf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3543:5454855424:2026-08-31T15:11:18Z:clawsweeper_needs_human",
       "comment_id": "5454855424",
@@ -32772,6 +32725,39 @@
         "kind": "pull_request",
         "branch": "fix/openai-responses-continuation-unsafe-integer",
         "head_sha": "877e77076bd13d6da202577921972119585f960f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133894:5474833737:2026-08-31T19:40:27Z:clawsweeper_needs_human",
+      "comment_id": "5474833737",
+      "comment_version_key": "5474833737:2026-08-31T19:40:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133894#issuecomment-5474833737",
+      "comment_created_at": "2026-08-31T06:53:55Z",
+      "comment_updated_at": "2026-08-31T19:40:27Z",
+      "comment_body_sha256": "9a1efdec3b4e956c972086ed314d0c598a46b4856ca07a225af6dea67491bd8a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133894,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head hosted checks are still in progress, so landing remains subject to the normal CI gate. (sha=5d2e193b77658d17c899d250dba51ba0533d181e)",
+      "expected_head_sha": "5d2e193b77658d17c899d250dba51ba0533d181e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T19:41:31.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-audit-task-benchmark",
+        "head_sha": "5d2e193b77658d17c899d250dba51ba0533d181e",
         "cluster_id": null,
         "job_path": null
       }
