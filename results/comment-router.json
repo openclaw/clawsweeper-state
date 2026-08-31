@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:20:53.196Z",
+  "updated_at": "2026-08-31T07:21:06.514Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132464:5473294017:2026-08-31T03:23:03Z:re_review",
-      "comment_id": "5473294017",
-      "comment_version_key": "5473294017:2026-08-31T03:23:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132464#issuecomment-5473294017",
-      "comment_created_at": "2026-08-31T03:23:03Z",
-      "comment_updated_at": "2026-08-31T03:23:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132464,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T03:23:46.888Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-131770-doctor-orphan-heartbeat-transcripts",
-        "head_sha": "416847a994214945377cbfe4eb339d68e9cf9f01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5473305472:2026-08-31T03:24:48Z:re_review",
       "comment_id": "5473305472",
@@ -32722,6 +32675,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133913:5475093289:2026-08-31T07:20:15Z:clawsweeper_needs_human",
+      "comment_id": "5475093289",
+      "comment_version_key": "5475093289:2026-08-31T07:20:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133913#issuecomment-5475093289",
+      "comment_created_at": "2026-08-31T07:20:15Z",
+      "comment_updated_at": "2026-08-31T07:20:15Z",
+      "comment_body_sha256": "7eaab35d3f2f1123eb11a6549c1063b086726d60243bc771e634a898f2fd8bc1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the fixtures demonstrate the allowed materialized-anchor path, but no evidence proves that the nearest forbidde...; Review finding: [P1] Reverify the anchor before honoring the handoff — scripts/pr:71-76 - [high] Caller-controlled handoff bypasses wrapper trust selection — scripts/pr:71 (sha=e2dabd38920685e6221bf2679d20786aaa63cbf6)",
+      "expected_head_sha": "e2dabd38920685e6221bf2679d20786aaa63cbf6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T07:21:06.514Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/pr-wrapper-anchor-exec",
+        "head_sha": "e2dabd38920685e6221bf2679d20786aaa63cbf6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
