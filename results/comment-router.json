@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-08-31T17:04:45.593Z",
+  "updated_at": "2026-08-31T17:05:38.518Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125707:5478121901:2026-08-31T12:10:04Z:re_review",
-      "comment_id": "5478121901",
-      "comment_version_key": "5478121901:2026-08-31T12:10:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125707#issuecomment-5478121901",
-      "comment_created_at": "2026-08-31T12:10:04Z",
-      "comment_updated_at": "2026-08-31T12:10:04Z",
-      "comment_body_sha256": "dfc144966d4f2ec5b3f5a5b84186e0ee1c16b431349a8e5e2f77da48b205462e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125707,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — exact head `1263cfffd2f00d0713fcffbe603e1c321da6b62b`; exact ci passed and the exact luna max production proof passed: https://github.com/openclaw/openclaw/actions/runs/33343797910/job/99345820901. the test-local session-deletion observation reset preserves the strong uninterrupted warm-reuse assertion while correctly treating explicit post-deletion attachment as a new openclaw session",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T12:11:00.655Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cached-codex-effort-route",
-        "head_sha": "1263cfffd2f00d0713fcffbe603e1c321da6b62b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:185:5477841865:2026-08-31T12:08:35Z:clawsweeper_auto_merge",
       "comment_id": "5477841865",
@@ -33007,6 +32960,39 @@
         "kind": "pull_request",
         "branch": "cleanup/macos-app-profile-source-invariants",
         "head_sha": "2302662bd5c8d00f26927ae929d010dc594a6eb4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132689:5463529626:2026-08-31T17:04:28Z:clawsweeper_needs_human",
+      "comment_id": "5463529626",
+      "comment_version_key": "5463529626:2026-08-31T17:04:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132689#issuecomment-5463529626",
+      "comment_created_at": "2026-08-29T16:25:37Z",
+      "comment_updated_at": "2026-08-31T17:04:28Z",
+      "comment_body_sha256": "c53c2379b062e5870a6d4bd9da569e6354742eebedd445269e48088ad620ebd3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The v9–v11 migration deliberately changes persisted local-outbox recovery after downgrade: an older app parks a structured queued follow-up and requires copy/resend. This needs explic... (sha=b23b3426b212db9b86dce6708d917bcc0457e347)",
+      "expected_head_sha": "b23b3426b212db9b86dce6708d917bcc0457e347",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T17:05:38.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ios-composer-durable-delivery",
+        "head_sha": "b23b3426b212db9b86dce6708d917bcc0457e347",
         "cluster_id": null,
         "job_path": null
       }
