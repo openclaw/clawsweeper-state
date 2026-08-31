@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T10:29:00.273Z",
+  "updated_at": "2026-08-31T10:29:10.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124293:5304497082:2026-08-31T06:41:29Z:clawsweeper_needs_human",
-      "comment_id": "5304497082",
-      "comment_version_key": "5304497082:2026-08-31T06:41:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124293#issuecomment-5304497082",
-      "comment_created_at": "2026-08-15T22:18:49Z",
-      "comment_updated_at": "2026-08-31T06:41:29Z",
-      "comment_body_sha256": "8de13887782a3d09045eeede599d50e73dd7e314ba26f3c927a60482c1e6548a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124293,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the new Windows process-start reader used by the shared PID helper; the supplied real-host trace prove...; Review finding: [P1] Reuse the trusted Windows executable resolver — src/infra/windows-process-start.ts:10-28 - [medium] Environment-selected system executable path — src/infra/wi... (sha=d8a39cfaeb05a4be512cb0bc57e5aa12c36335f3)",
-      "expected_head_sha": "d8a39cfaeb05a4be512cb0bc57e5aa12c36335f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T06:42:42.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/win32-file-lock-process-identity",
-        "head_sha": "d8a39cfaeb05a4be512cb0bc57e5aa12c36335f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:184:5474740815:2026-08-31T06:43:08Z:clawsweeper_needs_human",
       "comment_id": "5474740815",
@@ -33131,6 +33098,53 @@
         "kind": "pull_request",
         "branch": "alix/feature-lobster-structured-input",
         "head_sha": "ddf39cc2197142019088c0c0ea8fb2f2e4f7b3e3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133911:5477035892:2026-08-31T10:28:13Z:re_review",
+      "comment_id": "5477035892",
+      "comment_version_key": "5477035892:2026-08-31T10:28:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133911#issuecomment-5477035892",
+      "comment_created_at": "2026-08-31T10:28:13Z",
+      "comment_updated_at": "2026-08-31T10:28:13Z",
+      "comment_body_sha256": "d3d6543dbcf5cf19cc5ea9dc0b55ccb16b9eb9af34c705a466b30fb2f1f5ff97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133911,
+      "author": "backyMacky",
+      "author_id": 74327471,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-08-31T10:29:06.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/clickclack-wizard-setup-code",
+        "head_sha": "deedb32370b32fd01ff6cc20395c4b98ae6f063c",
         "cluster_id": null,
         "job_path": null
       },
