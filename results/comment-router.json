@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-08-31T07:01:30.354Z",
+  "updated_at": "2026-08-31T07:01:43.234Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132727:5463749709:2026-08-31T02:52:08Z:clawsweeper_auto_repair",
-      "comment_id": "5463749709",
-      "comment_version_key": "5463749709:2026-08-31T02:52:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132727#issuecomment-5463749709",
-      "comment_created_at": "2026-08-29T17:11:26Z",
-      "comment_updated_at": "2026-08-31T02:52:08Z",
-      "comment_body_sha256": "55973650abbf5596ac422e63fe97a18aed26058b96cff313a8e46b866472fd3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132727,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cfcc5ba88de1e455f05eab17897be913367a715a)",
-      "expected_head_sha": "cfcc5ba88de1e455f05eab17897be913367a715a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T02:55:30.395Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/code-bug-docs-link-audit-fence-20260830",
-        "head_sha": "cfcc5ba88de1e455f05eab17897be913367a715a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132727:5464005315:2026-08-29T18:04:31Z:re_review",
       "comment_id": "5464005315",
@@ -32680,6 +32647,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:532:5474840868:2026-08-31T07:01:03Z:clawsweeper_needs_human",
+      "comment_id": "5474840868",
+      "comment_version_key": "5474840868:2026-08-31T07:01:03Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/532#issuecomment-5474840868",
+      "comment_created_at": "2026-08-31T06:54:46Z",
+      "comment_updated_at": "2026-08-31T07:01:03Z",
+      "comment_body_sha256": "0c533eb7627b86d7e9cbe70c1a3c522c83f7ca82e80a6196e78e5a2f0f6c01b6",
+      "repo": "openclaw/acpx",
+      "issue_number": 532,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is FlowRunner’s heartbeat timer and its FlowRunStore write path. The supplied terminal trace proves a bui... (sha=380c7bc3f3c6080cbf9605b41f5d5460e9ed51f4)",
+      "expected_head_sha": "380c7bc3f3c6080cbf9605b41f5d5460e9ed51f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-08-31T07:01:43.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-refresh-20260830",
+        "head_sha": "380c7bc3f3c6080cbf9605b41f5d5460e9ed51f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
