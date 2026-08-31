@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134182",
+  "mode": "autonomous",
+  "run_id": "33404316968",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33404316968",
+  "head_sha": "ce333f9cf9dfb8a29d20ca966b9db4ee78ca1676",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134182.md",
+  "published_at": "2026-08-31T15:55:59.434Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134182",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134182",
+  "canonical_pr": null,
+  "summary": "The source-level repair shape is narrow, but implementation is blocked: the supplied current-main SHA is unavailable locally, required sibling ../codex source is absent and cannot be cloned, and this read-only Linux sandbox cannot run the macOS native proof.",
+  "actions": [
+    {
+      "target": "#104424",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#134182",
+      "candidate_fix": null,
+      "reason": "Provider-auth feature context, not a target for this repair."
+    },
+    {
+      "target": "#133793",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as an independent macOS onboarding defect."
+    },
+    {
+      "target": "#134182",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134182",
+      "candidate_fix": null,
+      "reason": "A provisioned runner must first refresh to the artifact SHA or newer main and provide ../codex source before implementing and validating."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134182",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134182",
+      "candidate_fix": null,
+      "reason": "Prepared narrow repair plan; execution remains blocked on the recorded environment gates."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
