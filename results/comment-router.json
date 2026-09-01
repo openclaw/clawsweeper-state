@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:33:07.361Z",
+  "updated_at": "2026-09-01T10:33:25.693Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110719:5011509405:2026-09-01T05:55:41Z:clawsweeper_needs_human",
-      "comment_id": "5011509405",
-      "comment_version_key": "5011509405:2026-09-01T05:55:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110719#issuecomment-5011509405",
-      "comment_created_at": "2026-07-18T13:53:15Z",
-      "comment_updated_at": "2026-09-01T05:55:41Z",
-      "comment_body_sha256": "7e0eb02701cb9b77a707d03f4375f8779703d4559bed9601e313df1f7d4f8382",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110719,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing oversized legacy files will now remain unmigrated until an operator reduces or otherwise handles them; Doctor warns and leaves both the source and recovery archive intact. (sha=5a530c759303750f04d5ec0945056887d5dead11)",
-      "expected_head_sha": "5a530c759303750f04d5ec0945056887d5dead11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:56:53.662Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bound-plugin-doctor-migration-reads",
-        "head_sha": "5a530c759303750f04d5ec0945056887d5dead11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110719:5013767288:2026-07-19T02:05:21Z:re_review",
       "comment_id": "5013767288",
@@ -33677,6 +33644,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134068:5492617111:2026-09-01T10:32:38Z:re_review",
+      "comment_id": "5492617111",
+      "comment_version_key": "5492617111:2026-09-01T10:32:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134068#issuecomment-5492617111",
+      "comment_created_at": "2026-09-01T10:32:38Z",
+      "comment_updated_at": "2026-09-01T10:32:38Z",
+      "comment_body_sha256": "a78a2a02c61ad4db0c9bdc945e20cf8e0e05669038668ff74e8017db5132ded0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134068,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T10:33:21.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-server-custom-skills-3525ad",
+        "head_sha": "21e77e0d199dc4e72e86c365b2db173a753673b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
