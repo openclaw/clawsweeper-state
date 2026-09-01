@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:21:52.128Z",
+  "updated_at": "2026-09-01T04:22:19.707Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134519:5485969223:2026-08-31T23:30:31Z:clawsweeper_auto_repair",
-      "comment_id": "5485969223",
-      "comment_version_key": "5485969223:2026-08-31T23:30:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134519#issuecomment-5485969223",
-      "comment_created_at": "2026-08-31T23:06:42Z",
-      "comment_updated_at": "2026-08-31T23:30:31Z",
-      "comment_body_sha256": "1df4bc52f9921ca7c569822302ac67865af4f9d591f2fcc413ad1c6f5da73102",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134519,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=94d4a70989548442405681d06bdf04289a549c61)",
-      "expected_head_sha": "94d4a70989548442405681d06bdf04289a549c61",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T23:31:18.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-install-smoke-frozen-baseline",
-        "head_sha": "94d4a70989548442405681d06bdf04289a549c61",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-08-31T23:32:11Z:clawsweeper_auto_repair",
       "comment_id": "5466178577",
@@ -33354,6 +33321,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115405:5117935490:2026-09-01T04:21:12Z:clawsweeper_needs_human",
+      "comment_id": "5117935490",
+      "comment_version_key": "5117935490:2026-09-01T04:21:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115405#issuecomment-5117935490",
+      "comment_created_at": "2026-07-29T12:46:41Z",
+      "comment_updated_at": "2026-09-01T04:21:12Z",
+      "comment_body_sha256": "5242bb56a16522c65f492594e29abaf8e4cd91057008564a966ed099c7eea7be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing CLI fallback completion-report runs that intentionally launch new work will lose those tools after upgrade; that is the intended parity with the shipped embedded report-only... (sha=3d04d908f3dabf832c62acc33111de6851b71e93)",
+      "expected_head_sha": "3d04d908f3dabf832c62acc33111de6851b71e93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T04:22:19.707Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegation-capability-cli-loopback",
+        "head_sha": "3d04d908f3dabf832c62acc33111de6851b71e93",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
