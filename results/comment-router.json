@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:40:44.495Z",
+  "updated_at": "2026-09-01T01:41:14.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5482565218:2026-08-31T18:16:42Z:re_review",
-      "comment_id": "5482565218",
-      "comment_version_key": "5482565218:2026-08-31T18:16:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/70#issuecomment-5482565218",
-      "comment_created_at": "2026-08-31T18:16:42Z",
-      "comment_updated_at": "2026-08-31T18:16:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 70,
-      "author": "alauppe",
-      "author_id": 307341,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T18:17:39.633Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maint/vpn-prompts-final",
-        "head_sha": "48bfe4ce9ceedb9fac49b437e2f91fb3da51154b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134357:5482573472:2026-08-31T18:17:21Z:clawsweeper_needs_human",
       "comment_id": "5482573472",
@@ -32912,6 +32865,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T01:40:44.495Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134549:5486491460:2026-09-01T01:37:42Z:clawsweeper_needs_human",
+      "comment_id": "5486491460",
+      "comment_version_key": "5486491460:2026-09-01T01:37:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134549#issuecomment-5486491460",
+      "comment_created_at": "2026-09-01T00:00:24Z",
+      "comment_updated_at": "2026-09-01T01:37:42Z",
+      "comment_body_sha256": "8615faba122c6d4b6e97a3b8e2d366d96b6bda56b566d136cbad14cb86b8e89d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134549,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 11 net lines for the routing predicate; it is justified by keeping invocation-context recognition at the CLI boundary and reusing the established safe lifecyc... (sha=6c6728eae9941c4e70063fdf4e9b2602767e9087)",
+      "expected_head_sha": "6c6728eae9941c4e70063fdf4e9b2602767e9087",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:41:14.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-agent-gateway-restart",
+        "head_sha": "6c6728eae9941c4e70063fdf4e9b2602767e9087",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
