@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135013",
+  "mode": "autonomous",
+  "run_id": "33495548911",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33495548911",
+  "head_sha": "ceae0fb905e6b715b525592fc5415707dc14fe7e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135013.md",
+  "published_at": "2026-09-01T10:29:29.592Z",
+  "canonical": "#135013",
+  "canonical_issue": "#135013",
+  "canonical_pr": null,
+  "summary": "Current main retains the reported setup-verification argv0 defect, but this read-only worker cannot make the required regression/branch changes and the mandated sibling ../codex source checkout is absent. No PR artifact can be safely finalized.",
+  "actions": [
+    {
+      "target": "#68788",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Central security handling only."
+    },
+    {
+      "target": "#80351",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is permitted."
+    },
+    {
+      "target": "#135013",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135013",
+      "candidate_fix": null,
+      "reason": "A safe repair must preserve the canonical hashed target while propagating a distinct argv0 through both direct and service-managed supervisor launch paths; this environment cannot implement or validate it."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "keep_closed": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with the required sibling ../codex source checkout so the mandatory Codex gate, failing regression, focused validation, and new fix PR can be completed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
