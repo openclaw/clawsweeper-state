@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:12:12.377Z",
+  "updated_at": "2026-09-01T04:12:40.362Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134525:5486013788:2026-08-31T23:11:22Z:clawsweeper_needs_human",
-      "comment_id": "5486013788",
-      "comment_version_key": "5486013788:2026-08-31T23:11:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134525#issuecomment-5486013788",
-      "comment_created_at": "2026-08-31T23:11:22Z",
-      "comment_updated_at": "2026-08-31T23:11:22Z",
-      "comment_body_sha256": "f9298f02d48c371296c1557642d8f75bfc0345de412a09389cc9f6e4144b9430",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134525,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: focused tests mock the app-server response and do not show the configured-server cron path rejecting the neares...; Review finding: [medium] Verify account identity before treating it as persisted authority — extensions/codex/src/app-server/scheduled-app-authority.ts:282 (sha=cf988336930872e4de1f763ac28586f5f23704ff)",
-      "expected_head_sha": "cf988336930872e4de1f763ac28586f5f23704ff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T23:12:03.688Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/fix-cron-configured-app-server-auth",
-        "head_sha": "cf988336930872e4de1f763ac28586f5f23704ff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134521:5486033627:2026-08-31T23:13:14Z:clawsweeper_needs_human",
       "comment_id": "5486033627",
@@ -33217,6 +33184,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134777:5488770782:2026-09-01T04:11:50Z:re_review",
+      "comment_id": "5488770782",
+      "comment_version_key": "5488770782:2026-09-01T04:11:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134777#issuecomment-5488770782",
+      "comment_created_at": "2026-09-01T04:11:50Z",
+      "comment_updated_at": "2026-09-01T04:11:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134777,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T04:12:37.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1001",
+        "head_sha": "4aacf769106b867f926d4c7ed3bbc8c32b6f00d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
