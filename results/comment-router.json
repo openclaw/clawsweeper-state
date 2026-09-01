@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-01T19:48:04.742Z",
+  "updated_at": "2026-09-01T19:46:40.323Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135044:5495704652:2026-09-01T14:42:51Z:re_review",
+      "comment_id": "5495704652",
+      "comment_version_key": "5495704652:2026-09-01T14:42:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135044#issuecomment-5495704652",
+      "comment_created_at": "2026-09-01T14:42:51Z",
+      "comment_updated_at": "2026-09-01T14:42:51Z",
+      "comment_body_sha256": "1422aae6d05b2b1f6e5231276e2e8c95ffcf119dfe4fa0f1d3db49645c30a519",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135044,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:43:46.350Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-model-picker-scope-availability",
+        "head_sha": "d68c2cb728c126064276f4fab3e235c285640e38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:steipete/oracle:441:5495645140:2026-09-01T14:38:26Z:re_review",
       "comment_id": "5495645140",
@@ -33429,39 +33476,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135439:5499493863:2026-09-01T19:47:02Z:clawsweeper_needs_human",
-      "comment_id": "5499493863",
-      "comment_version_key": "5499493863:2026-09-01T19:47:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135439#issuecomment-5499493863",
-      "comment_created_at": "2026-09-01T19:47:02Z",
-      "comment_updated_at": "2026-09-01T19:47:02Z",
-      "comment_body_sha256": "755f602df4c79746dc6be134c22e1b9425ea970fa29ceb00d7836706fd44c1e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135439,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head check summary contains failures for checks-node-compact-small-53 and openclaw/ci-gate; their logs were not available in the supplied context, so their relationship to t... (sha=57ec84311e14eff9a6cdc980df3025195056aa91)",
-      "expected_head_sha": "57ec84311e14eff9a6cdc980df3025195056aa91",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T19:48:04.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-vitest-shutdown-20260901",
-        "head_sha": "57ec84311e14eff9a6cdc980df3025195056aa91",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
