@@ -2,30 +2,30 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134256"
 mode: "autonomous"
-run_id: "33423396604"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33423396604"
+run_id: "33427095987"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33427095987"
 head_sha: "aba9826ab8c010a8f5a2b4411484dc4cb7e94f51"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-08-31T19:06:45.602Z"
+published_at: "2026-09-01T00:31:08.554Z"
 canonical: "#134256"
 canonical_issue: "#134256"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134256
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33423396604](https://github.com/openclaw/clawsweeper/actions/runs/33423396604)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33427095987](https://github.com/openclaw/clawsweeper/actions/runs/33427095987)
 
 Workflow conclusion: success
 
@@ -35,20 +35,20 @@ Canonical: #134256
 
 ## Summary
 
-Current main has the reported silent-loss path: roster normalization turns legacy list entries into keyed entries before Doctor migration, keyed `memorySearch` is not migrated, and later strict unknown-key cleanup deletes it. A narrow repair plan is ready, but this worker cannot edit or validate it because the checkout and Corepack cache are read-only and dependencies are absent.
+Current-main source tracing supports the reported loss path, but implementation is blocked: this read-only worker cannot create the required sibling ../codex checkout or write a patch/install dependencies. No GitHub mutation was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Current main has the reported silent-loss path: roster normalization turns legac
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134256 | keep_canonical | planned | canonical | This is the sole open cluster item and remains the canonical bug report. |
-| #134256 | build_fix_artifact | planned | canonical | Repair is bounded to Doctor's migration owner and requires source plus regression coverage; no config option, schema change, runtime alias, or changelog change is needed. |
+| #134256 | fix_needed | blocked | canonical | A writable checkout with dependencies and direct ../codex source access is required before code changes, validation, or opening the allowed fix PR. |
 
 ## Needs Human
 
-- none
+- Rerun this job on a writable worker that provides (or permits cloning) ../codex and permits pnpm/Corepack dependency installation.

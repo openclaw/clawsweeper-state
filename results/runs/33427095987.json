@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134256",
+  "mode": "autonomous",
+  "run_id": "33427095987",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33427095987",
+  "head_sha": "aba9826ab8c010a8f5a2b4411484dc4cb7e94f51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134256.md",
+  "published_at": "2026-09-01T00:31:08.554Z",
+  "canonical": "#134256",
+  "canonical_issue": "#134256",
+  "canonical_pr": null,
+  "summary": "Current-main source tracing supports the reported loss path, but implementation is blocked: this read-only worker cannot create the required sibling ../codex checkout or write a patch/install dependencies. No GitHub mutation was made.",
+  "actions": [
+    {
+      "target": "#134256",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134256",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies and direct ../codex source access is required before code changes, validation, or opening the allowed fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Rerun this job on a writable worker that provides (or permits cloning) ../codex and permits pnpm/Corepack dependency installation."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
