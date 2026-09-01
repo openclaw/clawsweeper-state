@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T05:28:02.013Z",
+  "updated_at": "2026-09-01T05:28:05.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134603:5487424886:2026-09-01T01:41:58Z:re_review",
-      "comment_id": "5487424886",
-      "comment_version_key": "5487424886:2026-09-01T01:41:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134603#issuecomment-5487424886",
-      "comment_created_at": "2026-09-01T01:41:58Z",
-      "comment_updated_at": "2026-09-01T01:41:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134603,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T01:42:36.488Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "993",
-        "head_sha": "841e0b9248b7eb7d3c2241983e160d71830319a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133843:5474466074:2026-09-01T01:42:55Z:clawsweeper_auto_repair",
       "comment_id": "5474466074",
@@ -33243,6 +33196,39 @@
         "kind": "pull_request",
         "branch": "codex/release-8.1-feedback-upgrade",
         "head_sha": "ad3cdb298775847ad91793f078e94e0565ffc652",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134865:5489340358:2026-09-01T05:27:22Z:clawsweeper_needs_human",
+      "comment_id": "5489340358",
+      "comment_version_key": "5489340358:2026-09-01T05:27:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134865#issuecomment-5489340358",
+      "comment_created_at": "2026-09-01T05:27:22Z",
+      "comment_updated_at": "2026-09-01T05:27:22Z",
+      "comment_body_sha256": "f25953df2e6c1cab8e88152f05c50543adb056b0f8043d87ae7c87ebc1e45605",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134865,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new update-triggered Codex handoff depends on Codex CLI behavior that could not be directly checked from the required sibling source checkout. (sha=c2a932f97f469dd95553c2a11319181829d6a3ad)",
+      "expected_head_sha": "c2a932f97f469dd95553c2a11319181829d6a3ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T05:28:05.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-failure-triage",
+        "head_sha": "c2a932f97f469dd95553c2a11319181829d6a3ad",
         "cluster_id": null,
         "job_path": null
       }
