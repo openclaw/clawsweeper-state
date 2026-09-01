@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T15:04:18.707Z",
+  "updated_at": "2026-09-01T15:05:33.444Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123893:5492503504:2026-09-01T10:22:14Z:re_review",
-      "comment_id": "5492503504",
-      "comment_version_key": "5492503504:2026-09-01T10:22:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123893#issuecomment-5492503504",
-      "comment_created_at": "2026-09-01T10:22:14Z",
-      "comment_updated_at": "2026-09-01T10:22:14Z",
-      "comment_body_sha256": "4c8dc61dcbb461c557a4d62f3dff85a2f7fd012c52eebf6ed794172ff5c88376",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123893,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T10:31:32.726Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ios-attachment-close",
-        "head_sha": "6aab88ff8edbdc5e6fae7f62ef6618d2997cfa01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123893:5299425202:2026-09-01T10:30:35Z:clawsweeper_needs_human",
       "comment_id": "5299425202",
@@ -32597,6 +32550,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134858:5489538044:2026-09-01T15:04:22Z:clawsweeper_auto_repair",
+      "comment_id": "5489538044",
+      "comment_version_key": "5489538044:2026-09-01T15:04:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134858#issuecomment-5489538044",
+      "comment_created_at": "2026-09-01T05:52:31Z",
+      "comment_updated_at": "2026-09-01T15:04:22Z",
+      "comment_body_sha256": "87cb2eddad19589a76e3acce2d7107bc45eee973023660c98ba25d1d3d7bad0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134858,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=379af832c2a33e7c8b360857d7a3b1b1cc40aed8)",
+      "expected_head_sha": "379af832c2a33e7c8b360857d7a3b1b1cc40aed8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T15:05:33.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-embeddings-env-proxy",
+        "head_sha": "379af832c2a33e7c8b360857d7a3b1b1cc40aed8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
