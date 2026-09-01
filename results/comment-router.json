@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:06:29.747Z",
+  "updated_at": "2026-09-01T19:06:57.821Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135259:5495393944:2026-09-01T14:20:06Z:re_review",
-      "comment_id": "5495393944",
-      "comment_version_key": "5495393944:2026-09-01T14:20:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135259#issuecomment-5495393944",
-      "comment_created_at": "2026-09-01T14:20:06Z",
-      "comment_updated_at": "2026-09-01T14:20:06Z",
-      "comment_body_sha256": "3a64bcd47cf3b253c6d3a5f504f94997a0fd74c0ce65e11191786fc86ce4f721",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135259,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:20:52.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/refactor-openai-image-auth",
-        "head_sha": "3ac5536f4885e5ed0c8e1d0fb7a054402b918a23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131733:5452041716:2026-09-01T14:21:13Z:clawsweeper_auto_repair",
       "comment_id": "5452041716",
@@ -33340,6 +33293,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126924:5364133840:2026-09-01T19:05:55Z:clawsweeper_needs_human",
+      "comment_id": "5364133840",
+      "comment_version_key": "5364133840:2026-09-01T19:05:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5364133840",
+      "comment_created_at": "2026-08-21T01:37:12Z",
+      "comment_updated_at": "2026-09-01T19:05:55Z",
+      "comment_body_sha256": "0c292c04d95008d30f0793e627bb705b3691fe9d016ecd22c7130c9dc1f50020",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The proof exercises the registry with a synthetic bare Gateway timeout, but it stubs the production Gateway call and does not show a real child... (sha=5512e1deede698379369a4e852d5a1500bf62093)",
+      "expected_head_sha": "5512e1deede698379369a4e852d5a1500bf62093",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T19:06:57.821Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-wait-expiry-not-death",
+        "head_sha": "5512e1deede698379369a4e852d5a1500bf62093",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
