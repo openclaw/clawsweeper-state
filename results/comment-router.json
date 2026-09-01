@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T15:54:12.721Z",
+  "updated_at": "2026-09-01T15:55:10.077Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119447:5187137771:2026-09-01T11:27:19Z:clawsweeper_needs_human",
-      "comment_id": "5187137771",
-      "comment_version_key": "5187137771:2026-09-01T11:27:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119447#issuecomment-5187137771",
-      "comment_created_at": "2026-08-05T03:18:46Z",
-      "comment_updated_at": "2026-09-01T11:27:19Z",
-      "comment_body_sha256": "6cb1eb39a1fa5445851af9d7860551766e28584b577e1fc8dbc0551b4d69f25d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119447,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing safeguard sessions configured with a reserve above 20,000 will make smaller staged-summary requests after upgrade, without an opt-out or migration. (sha=caeb1e25a6699b760eb92591adf7ca67b1b51a6d)",
-      "expected_head_sha": "caeb1e25a6699b760eb92591adf7ca67b1b51a6d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/compaction-summary-output-budget",
-        "head_sha": "caeb1e25a6699b760eb92591adf7ca67b1b51a6d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134744:5488581302:2026-09-01T11:25:48Z:clawsweeper_needs_human",
       "comment_id": "5488581302",
@@ -32093,6 +32060,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135268:5495698376:2026-09-01T15:53:53Z:clawsweeper_auto_repair",
+      "comment_id": "5495698376",
+      "comment_version_key": "5495698376:2026-09-01T15:53:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135268#issuecomment-5495698376",
+      "comment_created_at": "2026-09-01T14:42:23Z",
+      "comment_updated_at": "2026-09-01T15:53:53Z",
+      "comment_body_sha256": "6fccf129728782e59baf77275908ffee54d3d6290e42ef1cd7ce6e059ca88a76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135268,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=125db0156a962e29cf0e6933deed6bde822ea4db)",
+      "expected_head_sha": "125db0156a962e29cf0e6933deed6bde822ea4db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T15:55:10.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/early-stop-dictation",
+        "head_sha": "125db0156a962e29cf0e6933deed6bde822ea4db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
