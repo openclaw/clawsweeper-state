@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:14:35.248Z",
+  "updated_at": "2026-09-01T04:14:47.436Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134482:5485257491:2026-08-31T23:16:30Z:clawsweeper_auto_repair",
-      "comment_id": "5485257491",
-      "comment_version_key": "5485257491:2026-08-31T23:16:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134482#issuecomment-5485257491",
-      "comment_created_at": "2026-08-31T21:59:19Z",
-      "comment_updated_at": "2026-08-31T23:16:30Z",
-      "comment_body_sha256": "6a76268a178c0b0a2ab088b2bf9754761a9e962bc53bf343008e2854c9d7a884",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134482,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fdbe1ca8eb4a6519bbb0660df3c8c69cf178d9de)",
-      "expected_head_sha": "fdbe1ca8eb4a6519bbb0660df3c8c69cf178d9de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T23:17:25.444Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-134202-safe-restart-metadata",
-        "head_sha": "fdbe1ca8eb4a6519bbb0660df3c8c69cf178d9de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134524:5486077252:2026-08-31T23:17:10Z:clawsweeper_auto_repair",
       "comment_id": "5486077252",
@@ -33175,6 +33142,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115405:5488784345:2026-09-01T04:13:50Z:re_review",
+      "comment_id": "5488784345",
+      "comment_version_key": "5488784345:2026-09-01T04:13:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115405#issuecomment-5488784345",
+      "comment_created_at": "2026-09-01T04:13:50Z",
+      "comment_updated_at": "2026-09-01T04:13:50Z",
+      "comment_body_sha256": "faa62ba60bd137946bb01f55e72c067fb91c9f972b32a0d89b09e8dfa84e7b4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115405,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T04:14:44.991Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/delegation-capability-cli-loopback",
+        "head_sha": "3d04d908f3dabf832c62acc33111de6851b71e93",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
