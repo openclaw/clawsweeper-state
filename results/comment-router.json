@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:18:15.517Z",
+  "updated_at": "2026-09-01T14:18:21.425Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134831:5489105180:2026-09-01T09:40:11Z:clawsweeper_needs_human",
-      "comment_id": "5489105180",
-      "comment_version_key": "5489105180:2026-09-01T09:40:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134831#issuecomment-5489105180",
-      "comment_created_at": "2026-09-01T04:55:55Z",
-      "comment_updated_at": "2026-09-01T09:40:11Z",
-      "comment_body_sha256": "b6123d56259b65d3b99617415ef8cfecf29a8e7300aa04e521c8cd3ff1a8ae72",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134831,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persistent temporary-session deletion based on a propagated compaction identity; merge only after exact-head CI completes and the lifecycle coverage is accepted. (sha=3e20436a579225c3d08294a5d638af8a6a42156e)",
-      "expected_head_sha": "3e20436a579225c3d08294a5d638af8a6a42156e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T09:42:40.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-8.1-feedback-upgrade",
-        "head_sha": "3e20436a579225c3d08294a5d638af8a6a42156e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134862:5489320613:2026-09-01T09:37:56Z:clawsweeper_auto_repair",
       "comment_id": "5489320613",
@@ -32768,6 +32735,53 @@
         "kind": "pull_request",
         "branch": "fix/line-flex-hero-scheme",
         "head_sha": "459fcd5076e219186434a971ffa877bed44fefca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5495356762:2026-09-01T14:17:20Z:re_review",
+      "comment_id": "5495356762",
+      "comment_version_key": "5495356762:2026-09-01T14:17:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5495356762",
+      "comment_created_at": "2026-09-01T14:17:20Z",
+      "comment_updated_at": "2026-09-01T14:17:20Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:18:18.422Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "6d1efe7f100e654aaad8297b8baee463df4a6e33",
         "cluster_id": null,
         "job_path": null
       },
