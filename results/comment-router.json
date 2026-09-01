@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T21:45:47.186Z",
+  "updated_at": "2026-09-01T21:46:07.642Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135219:5495381388:2026-09-01T16:43:24Z:clawsweeper_auto_repair",
-      "comment_id": "5495381388",
-      "comment_version_key": "5495381388:2026-09-01T16:43:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135219#issuecomment-5495381388",
-      "comment_created_at": "2026-09-01T14:19:09Z",
-      "comment_updated_at": "2026-09-01T16:43:24Z",
-      "comment_body_sha256": "edabbb14ea4069920ec766f019c2c58375a65d04dd759146e0b7bc6dadc1eaa7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135219,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1c5965457e6584d4d2b84320e28d97f20fc037f8)",
-      "expected_head_sha": "1c5965457e6584d4d2b84320e28d97f20fc037f8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T16:44:22.465Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/separate-enumeration-deadline-132452",
-        "head_sha": "1c5965457e6584d4d2b84320e28d97f20fc037f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135268:5495698376:2026-09-01T16:44:11Z:clawsweeper_auto_repair",
       "comment_id": "5495698376",
@@ -33553,6 +33520,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117734:5500856336:2026-09-01T21:45:13Z:re_review",
+      "comment_id": "5500856336",
+      "comment_version_key": "5500856336:2026-09-01T21:45:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5500856336",
+      "comment_created_at": "2026-09-01T21:45:13Z",
+      "comment_updated_at": "2026-09-01T21:45:13Z",
+      "comment_body_sha256": "f7205765ec5e1f2ec2f3742fefe27eb5d04d6d9856cf0161bfd809b98ec41c6b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117734,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T21:46:05.964Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/conversation-burst-budget",
+        "head_sha": "8703e7f509f1d5ea83ded6141a544fa4fb22fb4c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
