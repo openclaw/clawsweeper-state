@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134999",
+  "mode": "autonomous",
+  "run_id": "33486504329",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33486504329",
+  "head_sha": "ce04d08fa319788439016ca9dca8415dbc913769",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134999.md",
+  "published_at": "2026-09-01T08:39:13.513Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134999",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134999",
+  "canonical_pr": null,
+  "summary": "#134999 remains the canonical open bug. Current main contains the stale same-PID recovery gap, but this read-only worker cannot install missing dependencies, run the required baseline/repaired regression, modify the branch, or satisfy the repository’s mandatory direct ../codex source inspection because that sibling checkout is absent. A narrow owner-local PR plan is ready for an executor with a writable checkout.",
+  "actions": [
+    {
+      "target": "#134999",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134999",
+      "candidate_fix": null,
+      "reason": "Implementation and proof are blocked only by the worker environment; no closure or merge action is permitted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134999",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134999",
+      "candidate_fix": null,
+      "reason": "A narrow non-security fix PR remains appropriate once the executor can reproduce and validate it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134999",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134999",
+      "candidate_fix": null,
+      "reason": "This worker has no writable filesystem or dependency-install capability; direct GitHub mutation is prohibited."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
