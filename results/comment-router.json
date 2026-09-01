@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-09-01T17:05:42.819Z",
+  "updated_at": "2026-09-01T17:05:45.124Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:62:5303306179:2026-09-01T12:11:06Z:clawsweeper_needs_human",
-      "comment_id": "5303306179",
-      "comment_version_key": "5303306179:2026-09-01T12:11:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/62#issuecomment-5303306179",
-      "comment_created_at": "2026-08-15T17:05:32Z",
-      "comment_updated_at": "2026-09-01T12:11:06Z",
-      "comment_body_sha256": "fdb282eab33aa199593ac00efe1f6aab3669e32fe6b7e5e0ea3620cbfde25f5f",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 62,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the patch has no actionable findings, adequate direct validation, and an existing member recommendation to merge. (sha=fdce460a7362484cf12a0d8c8ec5807c967f2d6f)",
-      "expected_head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:29:45.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/validate-deploy-playbook",
-        "head_sha": "fdce460a7362484cf12a0d8c8ec5807c967f2d6f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135093:5492493248:2026-09-01T12:24:38Z:clawsweeper_needs_human",
-      "comment_id": "5492493248",
-      "comment_version_key": "5492493248:2026-09-01T12:24:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135093#issuecomment-5492493248",
-      "comment_created_at": "2026-09-01T10:21:18Z",
-      "comment_updated_at": "2026-09-01T12:24:38Z",
-      "comment_body_sha256": "f0eb2f851194391972adab2a3c8d8de0e6a66a2d99cf050fa64895c2f593c468",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135093,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes default request payloads for the native Model Studio endpoint set, including Qwen’s default Coding Plan endpoint; no redacted vendor request/response acceptance evidence... (sha=1235c0ff1f145e7f069caba7618922ed9418ff3e)",
-      "expected_head_sha": "1235c0ff1f145e7f069caba7618922ed9418ff3e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:30:06.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/modelstudio-cache-defaults",
-        "head_sha": "1235c0ff1f145e7f069caba7618922ed9418ff3e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4600478603:2026-06-02T08:45:25Z:re_review",
       "comment_id": "4600478603",
@@ -32163,6 +32097,53 @@
       }
     },
     {
+      "idempotency_key": "comment-router:openclaw/openclaw:134865:5497424429:2026-09-01T16:54:56Z:re_review",
+      "comment_id": "5497424429",
+      "comment_version_key": "5497424429:2026-09-01T16:54:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134865#issuecomment-5497424429",
+      "comment_created_at": "2026-09-01T16:54:56Z",
+      "comment_updated_at": "2026-09-01T16:54:56Z",
+      "comment_body_sha256": "a59fe1158b89fa4b2c376612711566700261d07a83b5af52f9ebb5e9fe736651",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134865,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T17:05:39.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-failure-triage",
+        "head_sha": "1836c71d0f842d780e8eadcbb894c360f6db172d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135112:5492703616:2026-09-01T17:04:20Z:clawsweeper_needs_human",
       "comment_id": "5492703616",
       "comment_version_key": "5492703616:2026-09-01T17:04:20Z",
@@ -32221,6 +32202,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T17:05:42.819Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134865:5489340358:2026-09-01T17:04:37Z:clawsweeper_auto_repair",
+      "comment_id": "5489340358",
+      "comment_version_key": "5489340358:2026-09-01T17:04:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134865#issuecomment-5489340358",
+      "comment_created_at": "2026-09-01T05:27:22Z",
+      "comment_updated_at": "2026-09-01T17:04:37Z",
+      "comment_body_sha256": "c5952b3f33d386e88a72031820350ed9a57b52cab484bd610c6424121674626c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134865,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1836c71d0f842d780e8eadcbb894c360f6db172d)",
+      "expected_head_sha": "1836c71d0f842d780e8eadcbb894c360f6db172d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T17:05:45.124Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-failure-triage",
+        "head_sha": "1836c71d0f842d780e8eadcbb894c360f6db172d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
