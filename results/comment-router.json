@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:46:12.352Z",
+  "updated_at": "2026-09-01T23:46:29.110Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117734:5499166118:2026-09-01T19:20:43Z:re_review",
-      "comment_id": "5499166118",
-      "comment_version_key": "5499166118:2026-09-01T19:20:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5499166118",
-      "comment_created_at": "2026-09-01T19:20:43Z",
-      "comment_updated_at": "2026-09-01T19:20:43Z",
-      "comment_body_sha256": "ddf8caa890a8facfcd63c27598129deeea92cadd80f345aa3482b7c841fa7bc9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T19:52:34.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/conversation-burst-budget",
-        "head_sha": "43c9ee544a9954392f5a457e229f74a12200ad80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133091:5499332594:2026-09-01T19:33:57Z:re_review",
       "comment_id": "5499332594",
@@ -32605,6 +32558,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T23:46:12.352Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135270:5496056520:2026-09-01T23:41:53Z:clawsweeper_needs_human",
+      "comment_id": "5496056520",
+      "comment_version_key": "5496056520:2026-09-01T23:41:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135270#issuecomment-5496056520",
+      "comment_created_at": "2026-09-01T15:08:21Z",
+      "comment_updated_at": "2026-09-01T23:41:53Z",
+      "comment_body_sha256": "e514c6634ddcb60caedc627c92aa33349dbc1fe215d8d86930a2789d602e29c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135270,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI was still in progress at review time; it remains the normal landing gate. (sha=92f71b07bb0a3a1419a8adbbc551691e4d661aa9)",
+      "expected_head_sha": "92f71b07bb0a3a1419a8adbbc551691e4d661aa9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:46:29.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-gateway-suspend-empty-wait",
+        "head_sha": "92f71b07bb0a3a1419a8adbbc551691e4d661aa9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
