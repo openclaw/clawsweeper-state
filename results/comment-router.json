@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:49:55.107Z",
+  "updated_at": "2026-09-01T18:50:02.562Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124162:5302206606:2026-09-01T13:48:25Z:clawsweeper_needs_human",
-      "comment_id": "5302206606",
-      "comment_version_key": "5302206606:2026-09-01T13:48:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5302206606",
-      "comment_created_at": "2026-08-15T12:24:08Z",
-      "comment_updated_at": "2026-09-01T13:48:25Z",
-      "comment_body_sha256": "dc1ee81372092cc98d7db80b9862f0cc0ccfe0a18e7d15ecc3a6be064775571b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124162,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied September 1 trace runs the real lifecycle and shows a forced stop, supervisor restart, and inbound event after restart, b... (sha=6d1efe7f100e654aaad8297b8baee463df4a6e33)",
-      "expected_head_sha": "6d1efe7f100e654aaad8297b8baee463df4a6e33",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T13:51:02.099Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stall-aware-resume-breaker-122950",
-        "head_sha": "6d1efe7f100e654aaad8297b8baee463df4a6e33",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-01T13:51:20Z:clawsweeper_auto_repair",
       "comment_id": "5466178577",
@@ -33084,6 +33051,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T18:49:55.107Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135210:5498767857:2026-09-01T18:48:59Z:re_review",
+      "comment_id": "5498767857",
+      "comment_version_key": "5498767857:2026-09-01T18:48:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135210#issuecomment-5498767857",
+      "comment_created_at": "2026-09-01T18:48:59Z",
+      "comment_updated_at": "2026-09-01T18:48:59Z",
+      "comment_body_sha256": "85425f5100a0f2f97319e2e2d012db83814c43f965091331ede91efda522e66f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135210,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T18:49:58.656Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-ui-e2e-projects-20260901",
+        "head_sha": "fd837a051945f983647e4b82bc416a1f45c07419",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
