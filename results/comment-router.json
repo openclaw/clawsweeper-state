@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:46:25.862Z",
+  "updated_at": "2026-09-01T16:47:13.346Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110455:5308324669:2026-08-16T15:59:44Z:re_review",
-      "comment_id": "5308324669",
-      "comment_version_key": "5308324669:2026-08-16T15:59:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110455#issuecomment-5308324669",
-      "comment_created_at": "2026-08-16T15:59:44Z",
-      "comment_updated_at": "2026-08-16T15:59:44Z",
-      "comment_body_sha256": "054959720bc72cdf551b5a3896d62dcd4debf38bc32ebab6ba8a2ba8af647c48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110455,
-      "author": "superdiaodiao",
-      "author_id": 42577861,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:15:12.211Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110455:5338510467:2026-08-19T06:43:16Z:re_review",
       "comment_id": "5338510467",
@@ -32135,6 +32108,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3361:5497115127:2026-09-01T16:46:10Z:clawsweeper_needs_human",
+      "comment_id": "5497115127",
+      "comment_version_key": "5497115127:2026-09-01T16:46:10Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3361#issuecomment-5497115127",
+      "comment_created_at": "2026-09-01T16:29:04Z",
+      "comment_updated_at": "2026-09-01T16:46:10Z",
+      "comment_body_sha256": "4df58b4d7d1e0d91a24965f56e90850d16ec9e7a60c55e41e968fba3db5a9740",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two exact-head Linux build checks have failed, while the macOS test shards and Linux-musl build remain in progress; the supplied evidence does not establish whether those failures... (sha=99c8ad8633e18c4575be175e674c295e9dba1af9)",
+      "expected_head_sha": "99c8ad8633e18c4575be175e674c295e9dba1af9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T16:47:13.346Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/status-position-finite-values",
+        "head_sha": "99c8ad8633e18c4575be175e674c295e9dba1af9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
