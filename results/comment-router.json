@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T08:33:21.593Z",
+  "updated_at": "2026-09-01T08:33:56.787Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133897:5476198992:2026-08-31T09:08:43Z:re_review",
-      "comment_id": "5476198992",
-      "comment_version_key": "5476198992:2026-08-31T09:08:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133897#issuecomment-5476198992",
-      "comment_created_at": "2026-08-31T09:08:43Z",
-      "comment_updated_at": "2026-08-31T09:08:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133897,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T04:28:05.837Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133897:5476430552:2026-08-31T09:29:59Z:re_review",
       "comment_id": "5476430552",
@@ -32934,6 +32907,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135004:5491231928:2026-09-01T08:33:19Z:clawsweeper_needs_human",
+      "comment_id": "5491231928",
+      "comment_version_key": "5491231928:2026-09-01T08:33:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135004#issuecomment-5491231928",
+      "comment_created_at": "2026-09-01T08:33:19Z",
+      "comment_updated_at": "2026-09-01T08:33:19Z",
+      "comment_body_sha256": "2027cadb8f2d99b18764d5168f2f17cd595da6cb57f5ef066c2cebf04778ca5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135004,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The latest ClawSweeper comment is filtered from the supplied context, and the GitHub API could not be reached to read its rank-up moves; verify that comment before landing. (sha=e3f5db56ddf8875f85aff270e2aa85d4da4681cb)",
+      "expected_head_sha": "e3f5db56ddf8875f85aff270e2aa85d4da4681cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T08:33:56.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-backoff-sleep-timing",
+        "head_sha": "e3f5db56ddf8875f85aff270e2aa85d4da4681cb",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
