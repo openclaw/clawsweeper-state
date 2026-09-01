@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T08:05:57.416Z",
+  "updated_at": "2026-09-01T08:06:30.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134786:5488780483:2026-09-01T04:13:17Z:clawsweeper_auto_repair",
-      "comment_id": "5488780483",
-      "comment_version_key": "5488780483:2026-09-01T04:13:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134786#issuecomment-5488780483",
-      "comment_created_at": "2026-09-01T04:13:17Z",
-      "comment_updated_at": "2026-09-01T04:13:17Z",
-      "comment_body_sha256": "ba51d3688a8ac6cda26ca4edde89b0e9a2ed52a136f5099b6509f28febde7435",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134786,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ed6443dda93a690d5a024d210d09f326dda7ee8d)",
-      "expected_head_sha": "ed6443dda93a690d5a024d210d09f326dda7ee8d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T04:18:13.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026-7-33-package-acceptance",
-        "head_sha": "ed6443dda93a690d5a024d210d09f326dda7ee8d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134789:5488781693:2026-09-01T04:13:28Z:clawsweeper_needs_human",
       "comment_id": "5488781693",
@@ -32567,6 +32534,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134468:5490886347:2026-09-01T08:05:36Z:re_review",
+      "comment_id": "5490886347",
+      "comment_version_key": "5490886347:2026-09-01T08:05:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134468#issuecomment-5490886347",
+      "comment_created_at": "2026-09-01T08:05:36Z",
+      "comment_updated_at": "2026-09-01T08:05:36Z",
+      "comment_body_sha256": "805c20c0ef7d9a06442c77002e454a23bfae23125f620b22f84a15b7c9543304",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134468,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T08:06:27.254Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/134304-harness-runtime-diagnostics",
+        "head_sha": "225df86807257457e8651ec9cde8ba5b1c297fef",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
