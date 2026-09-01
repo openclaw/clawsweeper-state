@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:01:51.722Z",
+  "updated_at": "2026-09-01T23:02:08.071Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135425:5498665426:2026-09-01T18:40:36Z:re_review",
-      "comment_id": "5498665426",
-      "comment_version_key": "5498665426:2026-09-01T18:40:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135425#issuecomment-5498665426",
-      "comment_created_at": "2026-09-01T18:40:36Z",
-      "comment_updated_at": "2026-09-01T18:40:36Z",
-      "comment_body_sha256": "1e036424dace4776f68d6939c2fcc435b80569157dab3d473efa6370e675cdf9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135425,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T18:41:25.468Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/wonderful-perlman-01a8c4",
-        "head_sha": "ba5772c76d2940abceba4995bf70ed8454423911",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-09-01T18:40:33Z:clawsweeper_auto_repair",
       "comment_id": "5415957601",
@@ -32870,6 +32823,39 @@
         "kind": "pull_request",
         "branch": "steipete/release-validation-0901",
         "head_sha": "1cc83aca526b9ebc5a451b794be9054ca2cd2989",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:224:5501593323:2026-09-01T23:01:10Z:clawsweeper_needs_human",
+      "comment_id": "5501593323",
+      "comment_version_key": "5501593323:2026-09-01T23:01:10Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/224#issuecomment-5501593323",
+      "comment_created_at": "2026-09-01T23:01:10Z",
+      "comment_updated_at": "2026-09-01T23:01:10Z",
+      "comment_body_sha256": "bf557ecaf2493b4d18192874fecb146b2f9dd942c4e7b6f8620a4e9a1dc7e967",
+      "repo": "openclaw/clickclack",
+      "issue_number": 224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Keep this recent PR open as the implementation candidate for the linked report; no discrete repair blocker was found. (sha=b9c60f79217107ecb3b6c1d273875956fadebc7f)",
+      "expected_head_sha": "b9c60f79217107ecb3b6c1d273875956fadebc7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:02:08.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-dm-member-directory",
+        "head_sha": "b9c60f79217107ecb3b6c1d273875956fadebc7f",
         "cluster_id": null,
         "job_path": null
       }
