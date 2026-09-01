@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T20:05:18.848Z",
+  "updated_at": "2026-09-01T20:05:33.853Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5482565218:2026-08-31T18:16:42Z:re_review",
-      "comment_id": "5482565218",
-      "comment_version_key": "5482565218:2026-08-31T18:16:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/70#issuecomment-5482565218",
-      "comment_created_at": "2026-08-31T18:16:42Z",
-      "comment_updated_at": "2026-08-31T18:16:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 70,
-      "author": "alauppe",
-      "author_id": 307341,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T15:10:40.161Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5484439293:2026-08-31T20:55:44Z:re_review",
       "comment_id": "5484439293",
@@ -33424,6 +33397,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:537:5499458905:2026-09-01T20:04:31Z:clawsweeper_needs_human",
+      "comment_id": "5499458905",
+      "comment_version_key": "5499458905:2026-09-01T20:04:31Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/537#issuecomment-5499458905",
+      "comment_created_at": "2026-09-01T19:44:17Z",
+      "comment_updated_at": "2026-09-01T20:04:31Z",
+      "comment_body_sha256": "8dd4be1aed4994cad8994e82ec84bc61ca1228858478b89dedc7ae5a6fdaf821",
+      "repo": "openclaw/acpx",
+      "issue_number": 537,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Adding opaque _meta to summarized compare and embedding results creates a public output convention whose stability, documentation, and adapter-variation expectations need explicit mai... (sha=0d4f83beedbed862410d393aa0bc4a89678e4283)",
+      "expected_head_sha": "0d4f83beedbed862410d393aa0bc4a89678e4283",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T20:05:33.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/preserve-prompt-response-meta",
+        "head_sha": "0d4f83beedbed862410d393aa0bc4a89678e4283",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
