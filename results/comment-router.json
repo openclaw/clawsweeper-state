@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:04:47.309Z",
+  "updated_at": "2026-09-01T01:04:48.695Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5482163409:2026-08-31T17:41:46Z:re_review",
-      "comment_id": "5482163409",
-      "comment_version_key": "5482163409:2026-08-31T17:41:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/70#issuecomment-5482163409",
-      "comment_created_at": "2026-08-31T17:41:46Z",
-      "comment_updated_at": "2026-08-31T17:41:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 70,
-      "author": "alauppe",
-      "author_id": 307341,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:49:58.306Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maint/vpn-prompts-final",
-        "head_sha": "f940741d0f4b51d142277d937fa1c1dd26cb0f4e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134032:5482233462:2026-08-31T17:47:59Z:re_review",
       "comment_id": "5482233462",
@@ -32763,6 +32716,39 @@
         "kind": "pull_request",
         "branch": "codex/remove-selection-more-details",
         "head_sha": "f246e6ad7d60db4ed650af5855bc2d167bf46757",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134242:5486970423:2026-09-01T01:03:50Z:clawsweeper_needs_human",
+      "comment_id": "5486970423",
+      "comment_version_key": "5486970423:2026-09-01T01:03:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134242#issuecomment-5486970423",
+      "comment_created_at": "2026-09-01T01:03:50Z",
+      "comment_updated_at": "2026-09-01T01:03:50Z",
+      "comment_body_sha256": "5db4cddd48dd71e1a03737a8c781a4c7fa62976305456b455ae22d067309c410",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134242,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is Slack’s download-file result path, and the supplied test exercises the action adapter plus real image processin... (sha=8e2fb3f812208e876013357c6e1303c2e2d2ffaf)",
+      "expected_head_sha": "8e2fb3f812208e876013357c6e1303c2e2d2ffaf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:04:48.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-download-image-sanitization",
+        "head_sha": "8e2fb3f812208e876013357c6e1303c2e2d2ffaf",
         "cluster_id": null,
         "job_path": null
       }
