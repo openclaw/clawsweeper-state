@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:34:28.108Z",
+  "updated_at": "2026-09-01T04:34:40.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5463306517:2026-08-29T15:39:20Z:re_review",
-      "comment_id": "5463306517",
-      "comment_version_key": "5463306517:2026-08-29T15:39:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5463306517",
-      "comment_created_at": "2026-08-29T15:39:20Z",
-      "comment_updated_at": "2026-08-29T15:39:20Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T00:37:10.153Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5463457740:2026-08-29T16:10:29Z:re_review",
       "comment_id": "5463457740",
@@ -32844,6 +32817,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134734:5488524573:2026-09-01T04:33:59Z:clawsweeper_needs_human",
+      "comment_id": "5488524573",
+      "comment_version_key": "5488524573:2026-09-01T04:33:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134734#issuecomment-5488524573",
+      "comment_created_at": "2026-09-01T03:37:12Z",
+      "comment_updated_at": "2026-09-01T04:33:59Z",
+      "comment_body_sha256": "e681c75daf13f1d11ee9744418b76c12dfd87a305574c88df6ab695d187f00b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134734,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes artifact-cache publication and CI routing; exact-head hosted validation for dacf154eecd50eaf326d0643bb825895959cd595 is still running and should complete before merge. (sha=dacf154eecd50eaf326d0643bb825895959cd595)",
+      "expected_head_sha": "dacf154eecd50eaf326d0643bb825895959cd595",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T04:34:40.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-declaration-inputs-20260901",
+        "head_sha": "dacf154eecd50eaf326d0643bb825895959cd595",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
