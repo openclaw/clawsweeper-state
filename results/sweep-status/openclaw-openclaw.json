@@ -22,38 +22,38 @@
   "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
-    "generated_at": "2026-09-01T11:03:34.350Z",
+    "generated_at": "2026-09-01T12:04:52.228Z",
     "target_repo": "openclaw/openclaw",
     "mode": "close",
     "status": "ok",
-    "summary": "147 examined; 7/600 action records; 0 closed, 4 comments synced, 3 skipped; cursor at #128380.",
-    "examined": 147,
-    "action_records": 7,
-    "processed": 7,
+    "summary": "145 examined; 12/600 action records; 0 closed, 8 comments synced, 4 skipped; cursor at #125969.",
+    "examined": 145,
+    "action_records": 12,
+    "processed": 12,
     "processed_limit": 600,
     "close_limit": 40,
     "closed": 0,
-    "comment_synced": 4,
-    "skipped": 3,
+    "comment_synced": 8,
+    "skipped": 4,
     "skip_reasons": {
-      "skipped_protected_label": 1,
+      "skipped_changed_since_review": 2,
       "skipped_runtime_budget": 2
     },
     "lanes": {
       "closure": {
-        "processed": 3,
+        "processed": 4,
         "closed": 0,
         "comment_synced": 0,
-        "skipped": 3,
+        "skipped": 4,
         "skip_reasons": {
-          "skipped_protected_label": 1,
+          "skipped_changed_since_review": 2,
           "skipped_runtime_budget": 2
         }
       },
       "comment_sync": {
-        "processed": 4,
+        "processed": 8,
         "closed": 0,
-        "comment_synced": 4,
+        "comment_synced": 8,
         "skipped": 0,
         "skip_reasons": {}
       }
@@ -70,48 +70,48 @@
         "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
       },
       {
-        "reason": "skipped_protected_label",
-        "count": 1,
-        "bucket": "maintainer_review",
-        "owner": "maintainer",
-        "retryable": false,
-        "label": "Maintainer decision",
-        "summary": "A protected label or policy exemption blocks automated pruning.",
-        "next_step": "Confirm the policy should remain, or close manually if it should not."
+        "reason": "skipped_changed_since_review",
+        "count": 2,
+        "bucket": "review_refresh",
+        "owner": "clawsweeper",
+        "retryable": true,
+        "label": "Refresh review",
+        "summary": "The item changed after the review that proposed closing it.",
+        "next_step": "Queue a fresh ClawSweeper review before any close retry."
       }
     ],
     "next_action_buckets": {
-      "maintainer_review": 1,
+      "review_refresh": 2,
       "run_budget": 2
     },
     "cycle": {
       "basis": "scheduled_close_cursor",
-      "apply_ready_count": 364,
+      "apply_ready_count": 357,
       "candidate_counts": {
         "confirmed_proposal": 0,
         "guarded_retry": 122,
         "proof_required": 2,
-        "promotion_total": 650,
-        "promotion_eligible": 242,
-        "promotion_cooldown_eligible": 298,
-        "cooldown_eligible_total": 435,
+        "promotion_total": 647,
+        "promotion_eligible": 235,
+        "promotion_cooldown_eligible": 291,
+        "cooldown_eligible_total": 428,
         "inconsistent_or_stale": 0
       },
-      "window_size": 147,
+      "window_size": 145,
       "estimated_full_cycle_windows": 3,
       "estimated_full_cycle_minutes": 45,
       "scheduled_interval_minutes": 15,
-      "label": "364 currently actionable close candidates (0 confirmed proposals, 122 guarded retries, 242/650 promotion probes admitted; 2 require proof; 435 cooldown-eligible backlog (298 promotions); 0 inconsistent or stale records excluded) at 147 records per latest cursor advance: about 3 windows; scheduled cadence alone would take roughly 45 min at 15-minute intervals, while successful windows can continue sooner."
+      "label": "357 currently actionable close candidates (0 confirmed proposals, 122 guarded retries, 235/647 promotion probes admitted; 2 require proof; 428 cooldown-eligible backlog (291 promotions); 0 inconsistent or stale records excluded) at 145 records per latest cursor advance: about 3 windows; scheduled cadence alone would take roughly 45 min at 15-minute intervals, while successful windows can continue sooner."
     },
     "attention_reasons": [],
     "cursor_required": true,
     "cursor": {
       "path": "results/apply-cursors/openclaw-openclaw.json",
-      "next_after_number": 128380,
-      "next_after_apply_checked_at": "2026-09-01T11:01:40.492Z",
-      "updated_at": "2026-09-01T11:02:12.928Z"
+      "next_after_number": 125969,
+      "next_after_apply_checked_at": "2026-09-01T12:02:10.558Z",
+      "updated_at": "2026-09-01T12:02:25.745Z"
     },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33497055382"
+    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33501753960"
   },
   "updated_at": "2026-09-01T12:04:54.207Z"
 }
