@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:15:39.807Z",
+  "updated_at": "2026-09-01T11:15:40.329Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134828:5489811957:2026-09-01T06:24:45Z:re_review",
-      "comment_id": "5489811957",
-      "comment_version_key": "5489811957:2026-09-01T06:24:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134828#issuecomment-5489811957",
-      "comment_created_at": "2026-09-01T06:24:45Z",
-      "comment_updated_at": "2026-09-01T06:24:45Z",
-      "comment_body_sha256": "02b4f9ee4abc2306d8efbfefc5c66adf4fbf5951f8567fec449148149e67386a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134828,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T06:35:09.530Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/youthful-kapitsa-e97e1b",
-        "head_sha": "cc3db7db7c0fa4ddd210a24445ba3d7d7a771b81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134828:5489083090:2026-09-01T06:34:18Z:clawsweeper_needs_human",
       "comment_id": "5489083090",
@@ -33929,6 +33882,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119748:5199002047:2026-09-01T11:14:52Z:clawsweeper_needs_human",
+      "comment_id": "5199002047",
+      "comment_version_key": "5199002047:2026-09-01T11:14:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119748#issuecomment-5199002047",
+      "comment_created_at": "2026-08-06T00:30:01Z",
+      "comment_updated_at": "2026-09-01T11:14:52Z",
+      "comment_body_sha256": "b0ee822f930707e3dd80f78cab7b4ff94eb4421b3f67a5d2b6c13e0ffbc598b9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119748,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the manual command, automatic preflight notice, CLI, and notifier hook, but the submitted evidence is limited... (sha=330fcf35cb135eece077349e64135c973e25d575)",
+      "expected_head_sha": "330fcf35cb135eece077349e64135c973e25d575",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:15:40.329Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compact-nondecreasing-label",
+        "head_sha": "330fcf35cb135eece077349e64135c973e25d575",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
