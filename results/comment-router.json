@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:47:49.069Z",
+  "updated_at": "2026-09-01T03:48:03.356Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134380:5484709534:2026-08-31T21:16:06Z:re_review",
-      "comment_id": "5484709534",
-      "comment_version_key": "5484709534:2026-08-31T21:16:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134380#issuecomment-5484709534",
-      "comment_created_at": "2026-08-31T21:16:06Z",
-      "comment_updated_at": "2026-08-31T21:16:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134380,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T21:27:16.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openclaw-openclaw-vacinc-issue-134347",
-        "head_sha": "4be2ec0701ba3bd88ccca10395da400f96a27f07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134380:5482927685:2026-08-31T21:26:03Z:clawsweeper_needs_human",
       "comment_id": "5482927685",
@@ -33325,6 +33278,39 @@
         "kind": "pull_request",
         "branch": "chore/deps-refresh-20260830",
         "head_sha": "b197702676e1625d344d1539e07e9687b914e5ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1236:5399541400:2026-09-01T03:47:12Z:clawsweeper_needs_human",
+      "comment_id": "5399541400",
+      "comment_version_key": "5399541400:2026-09-01T03:47:12Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1236#issuecomment-5399541400",
+      "comment_created_at": "2026-08-24T18:24:37Z",
+      "comment_updated_at": "2026-09-01T03:47:12Z",
+      "comment_body_sha256": "d92764de104f9cdc43c5b05eb5690b32c99e8a59e5f74d3b2f63e675bf410ac1",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the apply lane’s label-freshness gate, and the added fixture invokes the built command through a scripted local... (sha=cff385b0c9a6c00fc8b261a6f40a68cc5c2b0f4b)",
+      "expected_head_sha": "cff385b0c9a6c00fc8b261a6f40a68cc5c2b0f4b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T03:48:03.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-label-reconciliation",
+        "head_sha": "cff385b0c9a6c00fc8b261a6f40a68cc5c2b0f4b",
         "cluster_id": null,
         "job_path": null
       }
