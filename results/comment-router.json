@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:33:19.815Z",
+  "updated_at": "2026-09-01T03:33:31.236Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134410:5484627551:2026-08-31T21:09:38Z:re_review",
-      "comment_id": "5484627551",
-      "comment_version_key": "5484627551:2026-08-31T21:09:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134410#issuecomment-5484627551",
-      "comment_created_at": "2026-08-31T21:09:38Z",
-      "comment_updated_at": "2026-08-31T21:09:38Z",
-      "comment_body_sha256": "645f7e8de6c34605771e349553e5e8b0a86112e3d7196cb6a9d3a27962148e79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134410,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T21:10:19.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-baseline-auth-fixture",
-        "head_sha": "f6b9a2b02abfba93ac8e27c5c3febfc1f226b630",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5484640265:2026-08-31T21:10:24Z:re_review",
       "comment_id": "5484640265",
@@ -33397,6 +33350,39 @@
         "kind": "pull_request",
         "branch": "codex/test-browser-native-shared-fixtures",
         "head_sha": "34445c9d9be68c6e1be0b66cdd6c8227cf0f1011",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134494:5485654865:2026-09-01T03:32:30Z:clawsweeper_needs_human",
+      "comment_id": "5485654865",
+      "comment_version_key": "5485654865:2026-09-01T03:32:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134494#issuecomment-5485654865",
+      "comment_created_at": "2026-08-31T22:31:16Z",
+      "comment_updated_at": "2026-09-01T03:32:30Z",
+      "comment_body_sha256": "849710cce0b63d48b07bbfc0a41b28cacfc5e42d3a186828aefd5740c3910c9b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the model-facing Tool Search handler in src/agents/tool-search.ts; the supplied exact-head Gateway QA trace reaches scalar... (sha=15039b209210493e4bc2d884d95b4899ec31ce81)",
+      "expected_head_sha": "15039b209210493e4bc2d884d95b4899ec31ce81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T03:33:31.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-search-exclusive-model-schema",
+        "head_sha": "15039b209210493e4bc2d884d95b4899ec31ce81",
         "cluster_id": null,
         "job_path": null
       }
