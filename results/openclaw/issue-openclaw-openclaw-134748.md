@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134748"
 mode: "autonomous"
-run_id: "33470893984"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33470893984"
+run_id: "33472136553"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33472136553"
 head_sha: "220ad5673ace96b2fab6473203796639c17ac710"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T05:06:41.989Z"
+published_at: "2026-09-01T05:19:59.304Z"
 canonical: "#134748"
 canonical_issue: "#134748"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134748
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33470893984](https://github.com/openclaw/clawsweeper/actions/runs/33470893984)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33472136553](https://github.com/openclaw/clawsweeper/actions/runs/33472136553)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #134748
 
 ## Summary
 
-#134748 remains the open canonical bug. Current main has a source-reproducible defect: temporary mapping preservation snapshots and restores the old boot mapping, but leaves it visible during the fresh boot run, so session admission rejects the new boot ID. A narrow fix artifact is ready, but this worker cannot edit, install dependencies, run tests, create a branch, or raise a PR because the checkout is read-only and has no node_modules. The required sibling ../codex checkout is also absent, so no Codex verdict is claimed.
+#134748 is a source-reproducible canonical bug, but this worker cannot produce a validated branch: the checkout lacks the artifact’s current-main SHA, filesystem writes are denied, dependencies cannot be installed, and the required sibling Codex source cannot be fetched. A narrow replacement PR artifact is ready for a writable, current checkout.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: #134748
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Canonical: #134748
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134748 | fix_needed | planned | canonical | Implement the owner-boundary lifecycle repair and regression on the ClawSweeper branch when a writable validation environment is available. |
-| #134748 | build_fix_artifact | planned | canonical | Fix PR is allowed by the job, but this read-only worker can only produce the artifact. |
+| #134748 | fix_needed | planned | canonical | Repair the temporary-session lifecycle at its storage owner; do not weaken expected-session-ID admission. |
+| #134748 | build_fix_artifact | blocked | canonical | A writable checkout at the preflight main SHA with dependencies and the required Codex sibling is required before opening the PR. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout refreshed to openclaw/openclaw@1d7937d4053ec237ef6a521f40b99343c39659dc (or refresh preflight), with dependencies and ../codex available, so the branch can be implemented and validated.
