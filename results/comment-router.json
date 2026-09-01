@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:55:18.359Z",
+  "updated_at": "2026-09-01T18:55:47.421Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135185:5495109459:2026-09-01T13:59:03Z:re_review",
-      "comment_id": "5495109459",
-      "comment_version_key": "5495109459:2026-09-01T13:59:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135185#issuecomment-5495109459",
-      "comment_created_at": "2026-09-01T13:59:03Z",
-      "comment_updated_at": "2026-09-01T13:59:03Z",
-      "comment_body_sha256": "e4b6a6b51eae2c329efa659b5c4eef924b80bbafac24cfbe95bc697e03d60c9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135185,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T13:59:33.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/attachment-failure-transcript",
-        "head_sha": "27bac6e9bdfe105dadf236cd14e2ccb192979923",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135185:5494065425:2026-09-01T13:58:30Z:clawsweeper_auto_repair",
       "comment_id": "5494065425",
@@ -33095,6 +33048,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-supervision-operation",
         "head_sha": "3d34631288a61bbcbaefc86e5d5581a8167a46ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-09-01T18:53:56Z:clawsweeper_needs_human",
+      "comment_id": "5357688049",
+      "comment_version_key": "5357688049:2026-09-01T18:53:56Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
+      "comment_created_at": "2026-08-20T15:00:20Z",
+      "comment_updated_at": "2026-09-01T18:53:56Z",
+      "comment_body_sha256": "86de02df88c9123b481c5c0dbaae227029f8f6bd19b682d1bef4a9d4448010a0",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new index consumers must not be activated until all three staged indexes from https://github.com/openclaw/clawhub/pull/3501 are ready in the target deployment; otherwise the scan... (sha=0aadf6ccc6a06d810d4c7d525924664a22508566)",
+      "expected_head_sha": "0aadf6ccc6a06d810d4c7d525924664a22508566",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:55:47.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "0aadf6ccc6a06d810d4c7d525924664a22508566",
         "cluster_id": null,
         "job_path": null
       }
