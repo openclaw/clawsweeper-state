@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T20:08:56.124Z",
+  "updated_at": "2026-09-01T20:09:45.732Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5495843420:2026-09-01T14:53:02Z:re_review",
-      "comment_id": "5495843420",
-      "comment_version_key": "5495843420:2026-09-01T14:53:02Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5495843420",
-      "comment_created_at": "2026-09-01T14:53:02Z",
-      "comment_updated_at": "2026-09-01T14:53:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T15:12:04.062Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task/ec/codex-proxy-attribution",
-        "head_sha": "7c19e3afbf464b30adeaf6e76bf33849c59b484c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1722:5496098524:2026-09-01T15:11:31Z:clawsweeper_needs_human",
       "comment_id": "5496098524",
@@ -33445,6 +33398,39 @@
         "kind": "pull_request",
         "branch": "fix/anthropic-delta-usage-context-snapshot",
         "head_sha": "75ce392e8dbba3233b0a08c44d46bc26b147afda",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135494:5499757289:2026-09-01T20:08:53Z:clawsweeper_needs_human",
+      "comment_id": "5499757289",
+      "comment_version_key": "5499757289:2026-09-01T20:08:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135494#issuecomment-5499757289",
+      "comment_created_at": "2026-09-01T20:08:53Z",
+      "comment_updated_at": "2026-09-01T20:08:53Z",
+      "comment_body_sha256": "cd7049fbdfb0146f9a9965399176864da4220fa1d3f14d0c0763b2c76bb7c221",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production owner is writeFileIfMissing in src/agents/workspace.ts, reached by normal message setup; the only supplied after-fix evidence is... (sha=21c08e15eecb1babab747ec9c904055877756897)",
+      "expected_head_sha": "21c08e15eecb1babab747ec9c904055877756897",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T20:09:45.732Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-eperm-bootstrap",
+        "head_sha": "21c08e15eecb1babab747ec9c904055877756897",
         "cluster_id": null,
         "job_path": null
       }
