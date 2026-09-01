@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:04:59.583Z",
+  "updated_at": "2026-09-01T16:05:17.276Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135080:5492416425:2026-09-01T11:04:35Z:clawsweeper_auto_repair",
-      "comment_id": "5492416425",
-      "comment_version_key": "5492416425:2026-09-01T11:04:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135080#issuecomment-5492416425",
-      "comment_created_at": "2026-09-01T10:14:21Z",
-      "comment_updated_at": "2026-09-01T11:04:35Z",
-      "comment_body_sha256": "a112011b03cec156ae2739cbccbf7154d9ae8d83ec4311c7e4384fec400af92c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135080,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b548ee3bd36a776870267ca9bf56490e1d8212b1)",
-      "expected_head_sha": "b548ee3bd36a776870267ca9bf56490e1d8212b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/agent-cwd-config-prompt",
-        "head_sha": "b548ee3bd36a776870267ca9bf56490e1d8212b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135093:5492493248:2026-09-01T11:13:11Z:clawsweeper_needs_human",
       "comment_id": "5492493248",
@@ -32113,6 +32080,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T16:04:59.583Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126457:5348830579:2026-09-01T16:04:19Z:clawsweeper_needs_human",
+      "comment_id": "5348830579",
+      "comment_version_key": "5348830579:2026-09-01T16:04:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126457#issuecomment-5348830579",
+      "comment_created_at": "2026-08-19T22:37:28Z",
+      "comment_updated_at": "2026-09-01T16:04:19Z",
+      "comment_body_sha256": "40d45ef7b22d7cb137a5e6ca8573f96cc942b29907c0a1227e7b25cf99edb39b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing macOS LaunchAgent installations whose active job timeout cannot be inspected will now abandon active work immediately; this is deliberate fail-closed behavior but lacks Gatew... (sha=5b059f2e256c4f1e03e637bbeb62f2b1e7ed60ea)",
+      "expected_head_sha": "5b059f2e256c4f1e03e637bbeb62f2b1e7ed60ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T16:05:17.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-tailscale-owner-lifecycle",
+        "head_sha": "5b059f2e256c4f1e03e637bbeb62f2b1e7ed60ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
