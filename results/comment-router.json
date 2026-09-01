@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T02:21:01.005Z",
+  "updated_at": "2026-09-01T02:21:11.478Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132453:5465349491:2026-08-29T22:52:53Z:re_review",
-      "comment_id": "5465349491",
-      "comment_version_key": "5465349491:2026-08-29T22:52:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5465349491",
-      "comment_created_at": "2026-08-29T22:52:53Z",
-      "comment_updated_at": "2026-08-29T22:52:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132453,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T19:01:43.158Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132453:5466243628:2026-08-30T02:29:34Z:re_review",
       "comment_id": "5466243628",
@@ -33178,6 +33151,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134634:5487614894:2026-09-01T02:20:23Z:clawsweeper_needs_human",
+      "comment_id": "5487614894",
+      "comment_version_key": "5487614894:2026-09-01T02:20:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134634#issuecomment-5487614894",
+      "comment_created_at": "2026-09-01T01:58:43Z",
+      "comment_updated_at": "2026-09-01T02:20:23Z",
+      "comment_body_sha256": "7f123f496b297a13c0e3a3a4beaa66fe055e77da18bd28d7679b6dfdb974fbe8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134634,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct upstream Codex contract check required by repository policy could not be completed locally; a reviewer with that checkout should verify the pinned token-usage event path be... (sha=8bcea6eacebe70890b8b4d6e5de0a887a5f23a1d)",
+      "expected_head_sha": "8bcea6eacebe70890b8b4d6e5de0a887a5f23a1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T02:21:11.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "context-usage-tool-only-fix",
+        "head_sha": "8bcea6eacebe70890b8b4d6e5de0a887a5f23a1d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
