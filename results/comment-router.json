@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:51:24.772Z",
+  "updated_at": "2026-09-01T16:52:18.576Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135130:5493703985:2026-09-01T12:09:01Z:re_review",
-      "comment_id": "5493703985",
-      "comment_version_key": "5493703985:2026-09-01T12:09:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135130#issuecomment-5493703985",
-      "comment_created_at": "2026-09-01T12:09:01Z",
-      "comment_updated_at": "2026-09-01T12:09:01Z",
-      "comment_body_sha256": "b06f97b733e61e3485adb4f4e7f5e9437165d115abbd1dcff59e770903d3765d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135130,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T12:18:07.948Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-wrapper-shim-spawn",
-        "head_sha": "7631a2bfe4bc82e7648e473846b144873c287212",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135130:5492917368:2026-09-01T12:17:13Z:clawsweeper_needs_human",
       "comment_id": "5492917368",
@@ -32213,6 +32166,33 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134524:5486077252:2026-09-01T16:51:21Z:clawsweeper_needs_human",
+      "comment_id": "5486077252",
+      "comment_version_key": "5486077252:2026-09-01T16:51:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134524#issuecomment-5486077252",
+      "comment_created_at": "2026-08-31T23:17:10Z",
+      "comment_updated_at": "2026-09-01T16:51:21Z",
+      "comment_body_sha256": "e7701bddb8bfa7aae43a196376924caf46cea595491b8362205488d66d56cef0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134524,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds a net 102 production lines across prepared catalog and auth-sensitive projection lifecycles; merge only after the pending exact-head CI validates those generation bo... (sha=7466f73160905766446ff02f959877e50c11ab61)",
+      "expected_head_sha": "7466f73160905766446ff02f959877e50c11ab61",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-01T16:52:18.576Z",
+      "target": null
     }
   ]
 }
