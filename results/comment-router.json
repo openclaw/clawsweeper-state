@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:03:57.017Z",
+  "updated_at": "2026-09-01T10:04:02.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134494:5489425954:2026-09-01T05:38:30Z:re_review",
-      "comment_id": "5489425954",
-      "comment_version_key": "5489425954:2026-09-01T05:38:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134494#issuecomment-5489425954",
-      "comment_created_at": "2026-09-01T05:38:30Z",
-      "comment_updated_at": "2026-09-01T05:38:30Z",
-      "comment_body_sha256": "e5424c63dffb29ffe873ba68a506c8c8b6233aa0042e551d53702e45e6d719fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134494,
-      "author": "jarvis-mns1",
-      "author_id": 267498334,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T05:39:13.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-exclusive-model-schema",
-        "head_sha": "2b04f6405b45d011b850c11cdcbe6d4df343933d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134572:5486790378:2026-09-01T05:38:19Z:clawsweeper_needs_human",
       "comment_id": "5486790378",
@@ -33560,6 +33513,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-cli-approval-expiry-strictness-20260831",
         "head_sha": "374502a71e3c7053834865c2ff5ca90b7d1fa2a2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135047:5491885047:2026-09-01T09:51:21Z:clawsweeper_needs_human",
+      "comment_id": "5491885047",
+      "comment_version_key": "5491885047:2026-09-01T09:51:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135047#issuecomment-5491885047",
+      "comment_created_at": "2026-09-01T09:29:08Z",
+      "comment_updated_at": "2026-09-01T09:51:21Z",
+      "comment_body_sha256": "44096f4a57686e27133ad7bd750dad31449f14153bac6ea4a83b955c515bcbef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135047,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this shared serializer refactor be accepted after the exact-head checks complete? | **Accept the refactor:** Merge after normal maintainer rev... (sha=aca5bfc457741c951767082b7958e5860bb4ed61)",
+      "expected_head_sha": "aca5bfc457741c951767082b7958e5860bb4ed61",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:04:02.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa50-command-args",
+        "head_sha": "aca5bfc457741c951767082b7958e5860bb4ed61",
         "cluster_id": null,
         "job_path": null
       }
