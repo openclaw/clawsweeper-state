@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T21:50:49.253Z",
+  "updated_at": "2026-09-01T21:51:03.085Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134753:5497414164:2026-09-01T16:54:03Z:re_review",
-      "comment_id": "5497414164",
-      "comment_version_key": "5497414164:2026-09-01T16:54:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134753#issuecomment-5497414164",
-      "comment_created_at": "2026-09-01T16:54:03Z",
-      "comment_updated_at": "2026-09-01T16:54:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134753,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T16:54:48.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "996",
-        "head_sha": "bf9fe2dc6e6d2902cefd67caab195ca5305432d5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1056:5497421362:2026-09-01T16:54:40Z:clawsweeper_needs_human",
       "comment_id": "5497421362",
@@ -33525,6 +33478,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135560:5500905190:2026-09-01T21:50:08Z:clawsweeper_needs_human",
+      "comment_id": "5500905190",
+      "comment_version_key": "5500905190:2026-09-01T21:50:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135560#issuecomment-5500905190",
+      "comment_created_at": "2026-09-01T21:50:08Z",
+      "comment_updated_at": "2026-09-01T21:50:08Z",
+      "comment_body_sha256": "a40382ed5338855f0b3cf82d41f68855950c5c5980737f8c96bc90d4edc18861",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135560,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The read-only checkout lacks installed Vitest sources and cannot resolve the upstream repository, so the reported focused test run could not be independently rerun in this review. (sha=88f72460b6437dd965337b3022b3ebe78318031c)",
+      "expected_head_sha": "88f72460b6437dd965337b3022b3ebe78318031c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T21:51:03.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-v5-git-commit",
+        "head_sha": "88f72460b6437dd965337b3022b3ebe78318031c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
