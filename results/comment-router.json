@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T21:29:29.680Z",
+  "updated_at": "2026-09-01T21:29:48.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128101:5497128407:2026-09-01T16:30:10Z:re_review",
-      "comment_id": "5497128407",
-      "comment_version_key": "5497128407:2026-09-01T16:30:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128101#issuecomment-5497128407",
-      "comment_created_at": "2026-09-01T16:30:10Z",
-      "comment_updated_at": "2026-09-01T16:30:10Z",
-      "comment_body_sha256": "12a51401bb8a36516263fb0bce359a7b1324b2783ac5d4593ae37b94ea972db3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128101,
-      "author": "masatohoshino",
-      "author_id": 246810661,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T16:31:00.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-realtime-playout-owner",
-        "head_sha": "e1d118fede810616b16125926313929afc575325",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135203:5495417683:2026-09-01T16:31:03Z:clawsweeper_needs_human",
       "comment_id": "5495417683",
@@ -33463,6 +33416,39 @@
         "kind": "pull_request",
         "branch": "fix/f004-claim-persist-error",
         "head_sha": "38a96ea9d456155ea809ad88330a85fe55a910bc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:148:5488187798:2026-09-01T21:07:20Z:clawsweeper_auto_repair",
+      "comment_id": "5488187798",
+      "comment_version_key": "5488187798:2026-09-01T21:07:20Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/148#issuecomment-5488187798",
+      "comment_created_at": "2026-09-01T02:53:03Z",
+      "comment_updated_at": "2026-09-01T21:07:20Z",
+      "comment_body_sha256": "1af048e9f705a97d766ba7bab26e2a0105ab6535fe672d1069573f1b6e0cc86f",
+      "repo": "openclaw/lobster",
+      "issue_number": 148,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3b8116f2dc875b682f07aca774c1b029cf72575b)",
+      "expected_head_sha": "3b8116f2dc875b682f07aca774c1b029cf72575b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T21:29:48.185Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "mission-control/cloud-approved/tx-continuous-20260901T020621Z-4f0a1ce4-1-9b695c7438",
+        "head_sha": "3b8116f2dc875b682f07aca774c1b029cf72575b",
         "cluster_id": null,
         "job_path": null
       }
