@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:00:02.909Z",
+  "updated_at": "2026-09-01T06:00:32.749Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134634:5487614894:2026-09-01T02:20:23Z:clawsweeper_needs_human",
-      "comment_id": "5487614894",
-      "comment_version_key": "5487614894:2026-09-01T02:20:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134634#issuecomment-5487614894",
-      "comment_created_at": "2026-09-01T01:58:43Z",
-      "comment_updated_at": "2026-09-01T02:20:23Z",
-      "comment_body_sha256": "7f123f496b297a13c0e3a3a4beaa66fe055e77da18bd28d7679b6dfdb974fbe8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134634,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The direct upstream Codex contract check required by repository policy could not be completed locally; a reviewer with that checkout should verify the pinned token-usage event path be... (sha=8bcea6eacebe70890b8b4d6e5de0a887a5f23a1d)",
-      "expected_head_sha": "8bcea6eacebe70890b8b4d6e5de0a887a5f23a1d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T02:21:11.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "context-usage-tool-only-fix",
-        "head_sha": "8bcea6eacebe70890b8b4d6e5de0a887a5f23a1d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134652:5487820014:2026-09-01T02:20:59Z:clawsweeper_needs_human",
       "comment_id": "5487820014",
@@ -32730,6 +32697,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134853:5489594818:2026-09-01T05:59:45Z:re_review",
+      "comment_id": "5489594818",
+      "comment_version_key": "5489594818:2026-09-01T05:59:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134853#issuecomment-5489594818",
+      "comment_created_at": "2026-09-01T05:59:45Z",
+      "comment_updated_at": "2026-09-01T05:59:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134853,
+      "author": "cmanrav",
+      "author_id": 269595473,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T06:00:27.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessionless-contextless-cdp-target",
+        "head_sha": "700a341d8fe287b32b4b78bb0e406e473bb76cc9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
