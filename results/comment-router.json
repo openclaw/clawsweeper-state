@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:48:28.752Z",
+  "updated_at": "2026-09-01T18:49:23.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134403:5490375259:2026-09-01T07:21:25Z:re_review",
-      "comment_id": "5490375259",
-      "comment_version_key": "5490375259:2026-09-01T07:21:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134403#issuecomment-5490375259",
-      "comment_created_at": "2026-09-01T07:21:25Z",
-      "comment_updated_at": "2026-09-01T07:21:25Z",
-      "comment_body_sha256": "32278f956e40495fbf668bf5b871d8e0e2acddfb819c42116e3b6ba321470fc0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134403,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T13:42:52.014Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134403:5490782991:2026-09-01T07:55:49Z:re_review",
       "comment_id": "5490782991",
@@ -33092,6 +33065,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135451:5498762984:2026-09-01T18:48:36Z:clawsweeper_needs_human",
+      "comment_id": "5498762984",
+      "comment_version_key": "5498762984:2026-09-01T18:48:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135451#issuecomment-5498762984",
+      "comment_created_at": "2026-09-01T18:48:36Z",
+      "comment_updated_at": "2026-09-01T18:48:36Z",
+      "comment_body_sha256": "17d186d9ec5f5c8e14361ff10915e711ce1727af0254797dc4a61e4af3f807f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing operators whose install record is missing can no longer recover by registering local npm bytes while offline; repair now reports the existing failure path until the selected... (sha=61888cd24c4c0ae7a8400dac18f859332a1bf880)",
+      "expected_head_sha": "61888cd24c4c0ae7a8400dac18f859332a1bf880",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:49:23.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-payload-convergence-20260901",
+        "head_sha": "61888cd24c4c0ae7a8400dac18f859332a1bf880",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
