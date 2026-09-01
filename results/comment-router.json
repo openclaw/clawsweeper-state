@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:54:15.016Z",
+  "updated_at": "2026-09-01T06:54:23.421Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:2457:5488047003:2026-09-01T02:40:56Z:re_review",
-      "comment_id": "5488047003",
-      "comment_version_key": "5488047003:2026-09-01T02:40:56Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/2457#issuecomment-5488047003",
-      "comment_created_at": "2026-09-01T02:40:56Z",
-      "comment_updated_at": "2026-09-01T02:40:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 2457,
-      "author": "EClinick",
-      "author_id": 69320739,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T03:16:46.997Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task/ec/codex-proxy-attribution",
-        "head_sha": "129a798957a6d5e45153729000942e0aefb80de6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134707:5488373898:2026-09-01T03:16:10Z:clawsweeper_needs_human",
       "comment_id": "5488373898",
@@ -32643,6 +32596,39 @@
         "kind": "pull_request",
         "branch": "feat/system-agent-channel-approvals",
         "head_sha": "1534ca14cfa7140deca627bf17e71cc20e77f7db",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134907:5489760936:2026-09-01T06:35:18Z:clawsweeper_needs_human",
+      "comment_id": "5489760936",
+      "comment_version_key": "5489760936:2026-09-01T06:35:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134907#issuecomment-5489760936",
+      "comment_created_at": "2026-09-01T06:18:59Z",
+      "comment_updated_at": "2026-09-01T06:35:18Z",
+      "comment_body_sha256": "e8623fc5207a6a8c3ad5d36b7ae59ba2fca30b99d1df6b057540cbbfe19e08c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134907,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is not green; the supplied test-merge evidence indicates the reported release-plan failure is outside this PR’s introduced paths, but it still must be resolved or rerun... (sha=aa7158dce864b128cbc9f2bf77a9aa74728679d8)",
+      "expected_head_sha": "aa7158dce864b128cbc9f2bf77a9aa74728679d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T06:54:23.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-8.1-feedback-custom-provider",
+        "head_sha": "aa7158dce864b128cbc9f2bf77a9aa74728679d8",
         "cluster_id": null,
         "job_path": null
       }
