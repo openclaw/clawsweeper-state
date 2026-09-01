@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T09:59:45.457Z",
+  "updated_at": "2026-09-01T10:01:21.910Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128249:5438538986:2026-08-27T11:48:52Z:re_review",
-      "comment_id": "5438538986",
-      "comment_version_key": "5438538986:2026-08-27T11:48:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5438538986",
-      "comment_created_at": "2026-08-27T11:48:52Z",
-      "comment_updated_at": "2026-08-27T11:48:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:37:12.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5463938291:2026-08-29T17:50:05Z:re_review",
       "comment_id": "5463938291",
@@ -33417,6 +33390,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1332:5490587623:2026-09-01T10:00:35Z:clawsweeper_needs_human",
+      "comment_id": "5490587623",
+      "comment_version_key": "5490587623:2026-09-01T10:00:35Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1332#issuecomment-5490587623",
+      "comment_created_at": "2026-09-01T07:39:52Z",
+      "comment_updated_at": "2026-09-01T10:00:35Z",
+      "comment_body_sha256": "317843a57ba1eeeb836dd5b0d36829271c56fc0087b4ad88423c285cfdf3bde1",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes a pre-model secret-scan exception; merge only with the documented exact digest, path, and mode boundary intact and after current-head checks complete. (sha=52d62998d9a4a67e7b3c28b35635b1dfebd63435)",
+      "expected_head_sha": "52d62998d9a4a67e7b3c28b35635b1dfebd63435",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:01:21.910Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openclaw-browser-scan-fixtures",
+        "head_sha": "52d62998d9a4a67e7b3c28b35635b1dfebd63435",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
