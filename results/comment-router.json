@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:38:16.279Z",
+  "updated_at": "2026-09-01T10:38:17.635Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134875:5489568913:2026-09-01T05:56:27Z:clawsweeper_needs_human",
-      "comment_id": "5489568913",
-      "comment_version_key": "5489568913:2026-09-01T05:56:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134875#issuecomment-5489568913",
-      "comment_created_at": "2026-09-01T05:56:27Z",
-      "comment_updated_at": "2026-09-01T05:56:27Z",
-      "comment_body_sha256": "997e7799d9f7ff1bec21aa4c50a6570686bd026d87628e606c538ae64467bdc7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134875,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head CI gate is red in an unchanged doctor-readiness test; its cause remains unproven and must be cleared by a fresh passing run or a separate owner-boundary repair before m... (sha=7121e4336fe261225b4ac2c6381240195a4e18cb)",
-      "expected_head_sha": "7121e4336fe261225b4ac2c6381240195a4e18cb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:57:15.668Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/angry-colden-b311fb",
-        "head_sha": "7121e4336fe261225b4ac2c6381240195a4e18cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134884:5489568998:2026-09-01T05:56:27Z:clawsweeper_auto_repair",
       "comment_id": "5489568998",
@@ -33787,6 +33754,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129403:5412624782:2026-09-01T10:37:14Z:clawsweeper_needs_human",
+      "comment_id": "5412624782",
+      "comment_version_key": "5412624782:2026-09-01T10:37:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129403#issuecomment-5412624782",
+      "comment_created_at": "2026-08-25T15:19:12Z",
+      "comment_updated_at": "2026-09-01T10:37:14Z",
+      "comment_body_sha256": "dcece449fd290f04e6e979c508cf33dc0f33e96e7c42e710aafe9a3f21fa61aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129403,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is configuration parsing, but the supplied terminal output calls a built helper directly rather than an O...; Review finding: [P1] Parse comments before quote state and honor escape parity — src/config/nesting-limit.ts:43-62 - [P1] Guard every configuration parser boundary before claiming... (sha=d8f1574da377843b4866e848559fcaa8cfa39a4d)",
+      "expected_head_sha": "d8f1574da377843b4866e848559fcaa8cfa39a4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:38:17.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "d8f1574da377843b4866e848559fcaa8cfa39a4d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
