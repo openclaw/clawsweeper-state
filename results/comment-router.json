@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T15:59:53.751Z",
+  "updated_at": "2026-09-01T16:00:50.585Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126212:5338314516:2026-09-01T11:23:34Z:clawsweeper_auto_repair",
-      "comment_id": "5338314516",
-      "comment_version_key": "5338314516:2026-09-01T11:23:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126212#issuecomment-5338314516",
-      "comment_created_at": "2026-08-19T06:18:35Z",
-      "comment_updated_at": "2026-09-01T11:23:34Z",
-      "comment_body_sha256": "05c6c8c242f7fc22c0e3ecc9529e9183127c0b95ce072196c76450e21a8df8c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7b0ffac26b14a526578e7f87f265fbdf9fdc0fff)",
-      "expected_head_sha": "7b0ffac26b14a526578e7f87f265fbdf9fdc0fff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "koc/tbs-business-lanes-main",
-        "head_sha": "7b0ffac26b14a526578e7f87f265fbdf9fdc0fff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130532:5433033650:2026-09-01T11:24:05Z:clawsweeper_needs_human",
       "comment_id": "5433033650",
@@ -32129,6 +32096,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:70:5456409647:2026-09-01T15:59:47Z:clawsweeper_needs_human",
+      "comment_id": "5456409647",
+      "comment_version_key": "5456409647:2026-09-01T15:59:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/70#issuecomment-5456409647",
+      "comment_created_at": "2026-08-28T18:44:35Z",
+      "comment_updated_at": "2026-09-01T15:59:47Z",
+      "comment_body_sha256": "205b43411a97db1de11c65d429a577a6c31cc2909b81d7ba94db204fa67da890",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 70,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Pin the NetBird repository signer (P1)** - The task accepts any key that gpg --show-keys can parse and then installs whatever pkgs.netbird.io returns as the APT trust root. A compromised or misrouted response ca...; Review finding: [P1] Pin the NetBird repository signer — roles/openclaw/tasks/netbird-linux.yml:158-173 - [high] Unpinned NetBird repository key — roles/openclaw/tasks/netbird-lin... (sha=b083ea5b4d318d80f6579257e44a55a3dee40060)",
+      "expected_head_sha": "b083ea5b4d318d80f6579257e44a55a3dee40060",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T16:00:50.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maint/vpn-prompts-final",
+        "head_sha": "b083ea5b4d318d80f6579257e44a55a3dee40060",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
