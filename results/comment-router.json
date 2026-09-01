@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:34:54.579Z",
+  "updated_at": "2026-09-01T23:37:16.927Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135404:5499268860:2026-09-01T19:29:06Z:clawsweeper_auto_repair",
-      "comment_id": "5499268860",
-      "comment_version_key": "5499268860:2026-09-01T19:29:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135404#issuecomment-5499268860",
-      "comment_created_at": "2026-09-01T19:29:06Z",
-      "comment_updated_at": "2026-09-01T19:29:06Z",
-      "comment_body_sha256": "8f017bed12b3ee3a3186cfdf60da134454ce18a564cdba6a357285fd4a1daddc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8592ea3754e366eb72aa2fc7e8c3772ee1e487eb)",
-      "expected_head_sha": "8592ea3754e366eb72aa2fc7e8c3772ee1e487eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T19:29:58.042Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-feishu-reply-not-exists",
-        "head_sha": "8592ea3754e366eb72aa2fc7e8c3772ee1e487eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1279:5498778408:2026-09-01T19:29:03Z:clawsweeper_auto_repair",
       "comment_id": "5498778408",
@@ -32725,6 +32692,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135654:5502038823:2026-09-01T23:36:21Z:clawsweeper_needs_human",
+      "comment_id": "5502038823",
+      "comment_version_key": "5502038823:2026-09-01T23:36:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135654#issuecomment-5502038823",
+      "comment_created_at": "2026-09-01T23:36:21Z",
+      "comment_updated_at": "2026-09-01T23:36:21Z",
+      "comment_body_sha256": "94fec7c35d75dcb6ddba32162be5358878b49e02def27a82173e4a790833fedc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135654,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Mark copied Beam transcript text as untrusted (P1)** - The copy path restores Beam-controlled snapshot text as normal user and assistant history, then appends a notice that only discusses machine/tool isolation...; Review finding: [P1] Mark copied Beam transcript text as untrusted — src/gateway/server-methods/session-catalog-gateway-copy.ts:75-81 - [high] External snapshot content is treated... (sha=3a5e1eed13c84064e340bb016886067c8379a572)",
+      "expected_head_sha": "3a5e1eed13c84064e340bb016886067c8379a572",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:37:16.927Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/beam-team-continuation",
+        "head_sha": "3a5e1eed13c84064e340bb016886067c8379a572",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
