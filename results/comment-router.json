@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:06:38.891Z",
+  "updated_at": "2026-09-01T16:06:43.389Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135125:5492875039:2026-09-01T10:57:13Z:clawsweeper_needs_human",
-      "comment_id": "5492875039",
-      "comment_version_key": "5492875039:2026-09-01T10:57:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135125#issuecomment-5492875039",
-      "comment_created_at": "2026-09-01T10:57:13Z",
-      "comment_updated_at": "2026-09-01T10:57:13Z",
-      "comment_body_sha256": "32aa8d19762eb17cafd5c697294a7b8e360ab5c7ec0c939a08341e403ded5c02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135125,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: review found no concrete introduced defect, and the maintainer label keeps normal maintainer handling in place. (sha=2eb07b076441925f85711a948b6971527fa6a732)",
-      "expected_head_sha": "2eb07b076441925f85711a948b6971527fa6a732",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa50-swift-talk-owner",
-        "head_sha": "2eb07b076441925f85711a948b6971527fa6a732",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135123:5492882307:2026-09-01T10:57:50Z:clawsweeper_needs_human",
       "comment_id": "5492882307",
@@ -32141,6 +32108,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135203:5496808341:2026-09-01T16:05:44Z:re_review",
+      "comment_id": "5496808341",
+      "comment_version_key": "5496808341:2026-09-01T16:05:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135203#issuecomment-5496808341",
+      "comment_created_at": "2026-09-01T16:05:44Z",
+      "comment_updated_at": "2026-09-01T16:05:44Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135203,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T16:06:40.637Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/powershell-strict-json-hint-135164",
+        "head_sha": "c5378d7dedfd4364dc312909a558c2c3ce1c3b1f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
