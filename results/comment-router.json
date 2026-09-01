@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:56:00.465Z",
+  "updated_at": "2026-09-01T16:57:48.470Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1718:5493901343:2026-09-01T12:24:40Z:re_review",
-      "comment_id": "5493901343",
-      "comment_version_key": "5493901343:2026-09-01T12:24:40Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1718#issuecomment-5493901343",
-      "comment_created_at": "2026-09-01T12:24:40Z",
-      "comment_updated_at": "2026-09-01T12:24:40Z",
-      "comment_body_sha256": "fea9ebc650b6db451ea643ada42b0a2b642027da921b7c70a780e4e7d6507205",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1718,
-      "author": "MichielMAnalytics",
-      "author_id": 135761097,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T12:25:25.176Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "boxd-grpc-tls",
-        "head_sha": "31acee26cc87f854e0b3d4a12834d592750133f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135017:5493916280:2026-09-01T12:25:54Z:re_review",
       "comment_id": "5493916280",
@@ -32176,6 +32129,39 @@
         "kind": "pull_request",
         "branch": "automation/design-system-audit",
         "head_sha": "ac3f53ca337b147091bfc63cd8e004a3abe70240",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135359:5497447523:2026-09-01T16:56:53Z:clawsweeper_needs_human",
+      "comment_id": "5497447523",
+      "comment_version_key": "5497447523:2026-09-01T16:56:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135359#issuecomment-5497447523",
+      "comment_created_at": "2026-09-01T16:56:53Z",
+      "comment_updated_at": "2026-09-01T16:56:53Z",
+      "comment_body_sha256": "59e96a4a178cd0c0d31ddec890e15f0e4abf8d39be8c0eb85469836059645a64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Matrix media-kind lookup, reached by inbound context summaries; the supplied evidence is regression tests a... (sha=ac878f98f2e51bf60926a5012cc8b57c744b67dc)",
+      "expected_head_sha": "ac878f98f2e51bf60926a5012cc8b57c744b67dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T16:57:48.470Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-msgtype-prototype-lookup",
+        "head_sha": "ac878f98f2e51bf60926a5012cc8b57c744b67dc",
         "cluster_id": null,
         "job_path": null
       }
