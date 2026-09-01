@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T02:12:24.589Z",
+  "updated_at": "2026-09-01T02:12:41.023Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134387:5483073019:2026-08-31T18:59:57Z:clawsweeper_needs_human",
-      "comment_id": "5483073019",
-      "comment_version_key": "5483073019:2026-08-31T18:59:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134387#issuecomment-5483073019",
-      "comment_created_at": "2026-08-31T18:59:57Z",
-      "comment_updated_at": "2026-08-31T18:59:57Z",
-      "comment_body_sha256": "1a2d765456dfa2537cb4c94870fb9758c752a988382c399b4350d154a888e32a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134387,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the patch has no actionable finding and remains a normal maintainer-owned review item. (sha=e009ce73be298ec4d09a8a7c31db1656cf14a8e4)",
-      "expected_head_sha": "e009ce73be298ec4d09a8a7c31db1656cf14a8e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T19:00:53.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-audit-terminal-counter-fixtures",
-        "head_sha": "e009ce73be298ec4d09a8a7c31db1656cf14a8e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/octopool:103:5483080402:2026-08-31T19:00:38Z:clawsweeper_auto_repair",
       "comment_id": "5483080402",
@@ -33030,6 +32997,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134281:5487726142:2026-09-01T02:11:56Z:re_review",
+      "comment_id": "5487726142",
+      "comment_version_key": "5487726142:2026-09-01T02:11:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134281#issuecomment-5487726142",
+      "comment_created_at": "2026-09-01T02:11:56Z",
+      "comment_updated_at": "2026-09-01T02:11:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134281,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T02:12:38.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llm-retry-owner",
+        "head_sha": "02cce9801c43d4485c01848802a64e96459a1989",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
