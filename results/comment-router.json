@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:44:48.761Z",
+  "updated_at": "2026-09-01T10:44:54.210Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134824:5489673202:2026-09-01T06:08:57Z:re_review",
-      "comment_id": "5489673202",
-      "comment_version_key": "5489673202:2026-09-01T06:08:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134824#issuecomment-5489673202",
-      "comment_created_at": "2026-09-01T06:08:57Z",
-      "comment_updated_at": "2026-09-01T06:08:57Z",
-      "comment_body_sha256": "6e2b7b6468e9f816e58c08f0e41ae940bcaed7a66c5dfd3934b3ad788f5becb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134824,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T06:09:42.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-faster-second-pass",
-        "head_sha": "d2ff92ebfc0d2f67c28ed1443b0a03eaac21607d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93842:4726596889:2026-09-01T05:54:59Z:clawsweeper_auto_repair",
       "comment_id": "4726596889",
@@ -33850,6 +33803,39 @@
         "kind": "pull_request",
         "branch": "openclaw/improve-skeleton-loading-for-sessions",
         "head_sha": "91c67f20b4a929dc4e0bfc6afe38bc47865415b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121598:5241295634:2026-09-01T10:44:11Z:clawsweeper_needs_human",
+      "comment_id": "5241295634",
+      "comment_version_key": "5241295634:2026-09-01T10:44:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121598#issuecomment-5241295634",
+      "comment_created_at": "2026-08-10T13:59:51Z",
+      "comment_updated_at": "2026-09-01T10:44:11Z",
+      "comment_body_sha256": "ca09d178e13a4c6d6866a3250d882c2a2d2da38fcf741a5cb67b4e58db97e7c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121598,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Reviewer limitation: the checkout has no installed Slack SDK source/types and DNS prevented upstream inspection. The branch's real-WebClient loopback test and existing established con... (sha=c788fd5676537e2a73a8c366568be53e1746896d)",
+      "expected_head_sha": "c788fd5676537e2a73a8c366568be53e1746896d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:44:54.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/problem-slack-enterprise-thread-resolver",
+        "head_sha": "c788fd5676537e2a73a8c366568be53e1746896d",
         "cluster_id": null,
         "job_path": null
       }
