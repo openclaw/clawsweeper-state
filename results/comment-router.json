@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:55:02.866Z",
+  "updated_at": "2026-09-01T11:55:22.652Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131329:5482688098:2026-08-31T18:27:56Z:re_review",
-      "comment_id": "5482688098",
-      "comment_version_key": "5482688098:2026-08-31T18:27:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131329#issuecomment-5482688098",
-      "comment_created_at": "2026-08-31T18:27:56Z",
-      "comment_updated_at": "2026-08-31T18:27:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131329,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T07:19:18.027Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131329:5483453264:2026-08-31T19:32:46Z:re_review",
       "comment_id": "5483453264",
@@ -33937,6 +33910,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135080:5493531241:2026-09-01T11:54:27Z:re_review",
+      "comment_id": "5493531241",
+      "comment_version_key": "5493531241:2026-09-01T11:54:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135080#issuecomment-5493531241",
+      "comment_created_at": "2026-09-01T11:54:27Z",
+      "comment_updated_at": "2026-09-01T11:54:27Z",
+      "comment_body_sha256": "664bfa59dfe4e6ee3930ff0e6353c816926fd659fcd69d80022d2ec1522aa017",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135080,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — since the last review: rebase with regenerated config baseline, plus two follow-ups from live proofing: the command lane now sources the config run cwd (mirroring the reply lane), imported from its owning module to avoid barrel-mock churn. live proof posted above",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T11:55:18.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/agent-cwd-config-prompt",
+        "head_sha": "652d7c7693c94d53022ff716a73d1dc7f8db35d6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
