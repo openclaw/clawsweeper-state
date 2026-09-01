@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:13:40.741Z",
+  "updated_at": "2026-09-01T06:13:45.921Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119265:5180980780:2026-09-01T01:52:52Z:clawsweeper_needs_human",
-      "comment_id": "5180980780",
-      "comment_version_key": "5180980780:2026-09-01T01:52:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119265#issuecomment-5180980780",
-      "comment_created_at": "2026-08-04T15:11:55Z",
-      "comment_updated_at": "2026-09-01T01:52:52Z",
-      "comment_body_sha256": "7fb906df4fa6df8e8a1e483a37c3e712f0e7e593533456685d88847413b38fa9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119265,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve historical verification** - A historical verification receipt failed or is malformed. A maintainer must resolve that verification blocker before merge; independently assessed contributor proof remains va...; Review finding: [P1] Preserve Code Mode control identity through final wrapping — src/agents/embedded-agent-runner/run/attempt-tool-catalog.ts:134-136 - [medium] Final wrapping dr... (sha=3f728d64ab6094ee7d6dce298b40ed66bfd88a31)",
-      "expected_head_sha": "3f728d64ab6094ee7d6dce298b40ed66bfd88a31",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T02:37:03.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-119253",
-        "head_sha": "3f728d64ab6094ee7d6dce298b40ed66bfd88a31",
-        "cluster_id": "issue-openclaw-openclaw-119253",
-        "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119253.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-30T18:15:55Z:clawsweeper_needs_human",
       "comment_id": "5188980437",
@@ -32727,6 +32680,39 @@
         "kind": "pull_request",
         "branch": "fix/f004-publish-blob-cleanup",
         "head_sha": "b702bc1a967b432a73f936fe719afba3e92215c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134757:5488649613:2026-09-01T06:12:55Z:clawsweeper_auto_repair",
+      "comment_id": "5488649613",
+      "comment_version_key": "5488649613:2026-09-01T06:12:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134757#issuecomment-5488649613",
+      "comment_created_at": "2026-09-01T03:54:22Z",
+      "comment_updated_at": "2026-09-01T06:12:55Z",
+      "comment_body_sha256": "e05009fae6686e453d930b8b048c3de8cce5e84bb762c4683601f2a970b0a44b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134757,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dd2e9088ce8355148f9e16b82b4a37a2d959502a)",
+      "expected_head_sha": "dd2e9088ce8355148f9e16b82b4a37a2d959502a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T06:13:45.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-app-translocation-copy-hang",
+        "head_sha": "dd2e9088ce8355148f9e16b82b4a37a2d959502a",
         "cluster_id": null,
         "job_path": null
       }
