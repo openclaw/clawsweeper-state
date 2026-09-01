@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135026",
+  "mode": "autonomous",
+  "run_id": "33489611257",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33489611257",
+  "head_sha": "ce04d08fa319788439016ca9dca8415dbc913769",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135026.md",
+  "published_at": "2026-09-01T09:15:55.100Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135026",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135026",
+  "canonical_pr": null,
+  "summary": "#135026 remains the canonical, source-proven UI data-loss bug. A narrow repair plan is ready, but this runner cannot safely implement or validate it: preflight main d9031e4 is absent, ../codex is absent, and the focused Vitest runner lacks tsx.",
+  "actions": [
+    {
+      "target": "#135026",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135026",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the stale/incomplete read-only checkout. Re-run in a writable checkout at the hydrated main SHA with dependencies and sibling Codex source available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135026",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135026",
+      "candidate_fix": null,
+      "reason": "A fresh writable executor can apply this narrow repair after refreshing main and satisfying the mandatory local dependency and Codex-source gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
