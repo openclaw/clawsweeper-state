@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:43:58.654Z",
+  "updated_at": "2026-09-01T14:44:49.770Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135069:5492195381:2026-09-01T10:16:17Z:clawsweeper_needs_human",
-      "comment_id": "5492195381",
-      "comment_version_key": "5492195381:2026-09-01T10:16:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135069#issuecomment-5492195381",
-      "comment_created_at": "2026-09-01T09:54:55Z",
-      "comment_updated_at": "2026-09-01T10:16:17Z",
-      "comment_body_sha256": "dde050e838376a4669f6aed244df4a9192032d57cd42a56033e1c10af9757458",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135069,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The open maintainer-authored PR already contains the focused repair; no separate ClawSweeper repair job should be queued. (sha=ddbbaf0473964ad22faa913e4df4250c6971af11)",
-      "expected_head_sha": "ddbbaf0473964ad22faa913e4df4250c6971af11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T10:17:16.390Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/130706-cron-metadata-main1138",
-        "head_sha": "ddbbaf0473964ad22faa913e4df4250c6971af11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135091:5492442591:2026-09-01T10:16:39Z:clawsweeper_needs_human",
       "comment_id": "5492442591",
@@ -32465,6 +32432,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135198:5495716463:2026-09-01T14:43:43Z:re_review",
+      "comment_id": "5495716463",
+      "comment_version_key": "5495716463:2026-09-01T14:43:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135198#issuecomment-5495716463",
+      "comment_created_at": "2026-09-01T14:43:43Z",
+      "comment_updated_at": "2026-09-01T14:43:43Z",
+      "comment_body_sha256": "3442f3fc5aea7f99d005b28168d0b6287d4a8459c119be10e3375afac17b2bb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135198,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — follow-up commit 3926efade37 addresses the review findings: (1) the shell-quote predicate now requires a balanced bare array/object with no quotes, so incomplete json like `{bad` keeps the generic error (no-hint regression tests added at both formatter and cli level); (2) real behavior proof added to the pr body: a redacted transcript of a real cli process receiving the exact quote-stripped argv windows powershell produces, showing the new recovery hint, the `{bad` no-hint case, and the `config patch --file` recovery path storing the intended array end-to-end; (3) the failed changed-extensions-config shard is in extensions/telegram (untouched by this pr) and passes 42/42 locally on the pr head — not branch-caused",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:44:47.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-135164-powershell-strict-json",
+        "head_sha": "7529e487e9e2c45bfaef61f04e90625b124bab90",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
