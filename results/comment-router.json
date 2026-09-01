@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:10:03.368Z",
+  "updated_at": "2026-09-01T03:10:36.850Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134425:5483622557:2026-08-31T19:47:02Z:clawsweeper_needs_human",
-      "comment_id": "5483622557",
-      "comment_version_key": "5483622557:2026-08-31T19:47:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134425#issuecomment-5483622557",
-      "comment_created_at": "2026-08-31T19:47:02Z",
-      "comment_updated_at": "2026-08-31T19:47:02Z",
-      "comment_body_sha256": "919c47b7a33d87c25a077d11a06a869eca49cd0da5f6e2edd0f4583de09c3e14",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134425,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the continuation resolver, reached after agent-history replay and before the HTTP request is sent. The branch supplies a d... (sha=3f41f58423c4da47eec7f86ba1d05b54a14939ad)",
-      "expected_head_sha": "3f41f58423c4da47eec7f86ba1d05b54a14939ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T19:48:16.388Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-responses-continuation-noncanonical-call-id",
-        "head_sha": "3f41f58423c4da47eec7f86ba1d05b54a14939ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134406:5483629433:2026-08-31T19:47:37Z:re_review",
       "comment_id": "5483629433",
@@ -33548,6 +33515,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133843:5488326056:2026-09-01T03:09:54Z:re_review",
+      "comment_id": "5488326056",
+      "comment_version_key": "5488326056:2026-09-01T03:09:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133843#issuecomment-5488326056",
+      "comment_created_at": "2026-09-01T03:09:54Z",
+      "comment_updated_at": "2026-09-01T03:09:54Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133843,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T03:10:35.213Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/secrets-shared-auth-profile-owner-133296",
+        "head_sha": "4ca18b23c76a79dfbde0f96c5b39f6740cc8358d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
