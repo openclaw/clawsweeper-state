@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:45:35.224Z",
+  "updated_at": "2026-09-01T19:45:52.729Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133406:5495692073:2026-09-01T14:41:56Z:re_review",
-      "comment_id": "5495692073",
-      "comment_version_key": "5495692073:2026-09-01T14:41:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133406#issuecomment-5495692073",
-      "comment_created_at": "2026-09-01T14:41:56Z",
-      "comment_updated_at": "2026-09-01T14:41:56Z",
-      "comment_body_sha256": "7f0a3452379b36a1331b26f1f548aa969b6ae923ddba7cbb633bc5ff951fb0b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133406,
-      "author": "aspalagin",
-      "author_id": 263096044,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:43:00.908Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telegram-rich-message-local-media",
-        "head_sha": "7a194a3b41973dad5376b2647ecfb5334862cd4c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135143:5493754096:2026-09-01T14:42:06Z:clawsweeper_needs_human",
       "comment_id": "5493754096",
@@ -33448,6 +33401,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3364:5498660589:2026-09-01T19:44:38Z:clawsweeper_needs_human",
+      "comment_id": "5498660589",
+      "comment_version_key": "5498660589:2026-09-01T19:44:38Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3364#issuecomment-5498660589",
+      "comment_created_at": "2026-09-01T18:40:11Z",
+      "comment_updated_at": "2026-09-01T19:44:38Z",
+      "comment_body_sha256": "21ca44f00b1c5b5167944fc3ba7cafcdf7c9c36774a39603be8c5858be9ee6e4",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3364,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - If lsof fails and process-scoped /proc remains unreadable or empty, the spawned CLI path now waits through its existing 15-second readiness deadline before returning the retained diag... (sha=e012297f2940a542796e95e1bb36f2e9cb3c9f8a)",
+      "expected_head_sha": "e012297f2940a542796e95e1bb36f2e9cb3c9f8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T19:45:52.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/antigravity-linux-port-fallback",
+        "head_sha": "e012297f2940a542796e95e1bb36f2e9cb3c9f8a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
