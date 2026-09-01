@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:33:06.295Z",
+  "updated_at": "2026-09-01T06:33:34.745Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134689:5488202392:2026-09-01T02:54:48Z:re_review",
-      "comment_id": "5488202392",
-      "comment_version_key": "5488202392:2026-09-01T02:54:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134689#issuecomment-5488202392",
-      "comment_created_at": "2026-09-01T02:54:48Z",
-      "comment_updated_at": "2026-09-01T02:54:48Z",
-      "comment_body_sha256": "01f5eead43e9bae5e01552ba05b7fb43bd5222e228855576247852b729263745",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134689,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T02:55:26.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-computer-act-result",
-        "head_sha": "54bb6d9c1f15ad873ef318c68db37d9b62270af0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134483:5485214890:2026-09-01T02:54:52Z:clawsweeper_auto_repair",
       "comment_id": "5485214890",
@@ -32641,6 +32594,39 @@
         "kind": "pull_request",
         "branch": "codex/turn-preparation-work-reduction",
         "head_sha": "a21ec769c128f86ac00efa546c04226d9157bc30",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134670:5488098559:2026-09-01T06:32:49Z:clawsweeper_needs_human",
+      "comment_id": "5488098559",
+      "comment_version_key": "5488098559:2026-09-01T06:32:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134670#issuecomment-5488098559",
+      "comment_created_at": "2026-09-01T02:45:10Z",
+      "comment_updated_at": "2026-09-01T06:32:49Z",
+      "comment_body_sha256": "33842a0836ecdf4c8dcfb423ad56e8540df5868d22c1bc221de33e676f900870",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134670,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied material does not show a production-path test that closes delegated authority after async...; Review finding: [P1] Revalidate authority synchronously at each persistent effect — src/system-agent/chat-turn-router.ts:592-595 - [P2] Publish system-agent expiry through the exp... (sha=df210bdaca411fd4c49c8e9b086ffc891ff1d2ea)",
+      "expected_head_sha": "df210bdaca411fd4c49c8e9b086ffc891ff1d2ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T06:33:34.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/system-agent-channel-approvals",
+        "head_sha": "df210bdaca411fd4c49c8e9b086ffc891ff1d2ea",
         "cluster_id": null,
         "job_path": null
       }
