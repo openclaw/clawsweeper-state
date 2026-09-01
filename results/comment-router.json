@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:08:05.909Z",
+  "updated_at": "2026-09-01T23:08:13.839Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134929:5498258340:2026-09-01T18:31:02Z:re_review",
-      "comment_id": "5498258340",
-      "comment_version_key": "5498258340:2026-09-01T18:31:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134929#issuecomment-5498258340",
-      "comment_created_at": "2026-09-01T18:06:48Z",
-      "comment_updated_at": "2026-09-01T18:31:02Z",
-      "comment_body_sha256": "51a82636b31ff7a0bcf41234b9fc1c42ea5d080480375d51df3c1022a4b49811",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134929,
-      "author": "hannesrudolph",
-      "author_id": 49103247,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T18:56:00.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/v2026.8.1-final-ledger",
-        "head_sha": "abccfdbc4d00c6825d0d4b29c779f692368732f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118467:5498326257:2026-09-01T18:12:33Z:re_review",
       "comment_id": "5498326257",
@@ -32734,6 +32687,39 @@
         "kind": "pull_request",
         "branch": "steipete/agent-cwd-config-prompt",
         "head_sha": "171ac315666b86dd84cb35155e43950fb1418fac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135625:5501663886:2026-09-01T23:06:54Z:clawsweeper_needs_human",
+      "comment_id": "5501663886",
+      "comment_version_key": "5501663886:2026-09-01T23:06:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135625#issuecomment-5501663886",
+      "comment_created_at": "2026-09-01T23:06:54Z",
+      "comment_updated_at": "2026-09-01T23:06:54Z",
+      "comment_body_sha256": "436db10f160386a9221d58dc7a3373a0171b3fee18f4a7094a2e0371a6c4b55a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135625,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact head has one reported failed Node check and an incomplete check rollup; inspect or rerun that check before merge to establish whether it is unrelated to this change. (sha=d898f68596851a0f192e6663df32d99f61db3224)",
+      "expected_head_sha": "d898f68596851a0f192e6663df32d99f61db3224",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:08:13.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf2-executable-header",
+        "head_sha": "d898f68596851a0f192e6663df32d99f61db3224",
         "cluster_id": null,
         "job_path": null
       }
