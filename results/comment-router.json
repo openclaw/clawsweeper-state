@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T05:53:54.819Z",
+  "updated_at": "2026-09-01T05:55:13.165Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134636:5487609415:2026-09-01T01:58:05Z:clawsweeper_needs_human",
-      "comment_id": "5487609415",
-      "comment_version_key": "5487609415:2026-09-01T01:58:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134636#issuecomment-5487609415",
-      "comment_created_at": "2026-09-01T01:58:05Z",
-      "comment_updated_at": "2026-09-01T01:58:05Z",
-      "comment_body_sha256": "9b7f43cc7131d7c391546d48eae5918b8a9f78e89a61dab98297346aeb75549a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134636,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI was still in progress in the supplied review snapshot, so merge gating remains incomplete. (sha=267bc58c64b6b57647605624df9e40d9f288ae99)",
-      "expected_head_sha": "267bc58c64b6b57647605624df9e40d9f288ae99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T01:58:49.765Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/session-hovercard-attribution",
-        "head_sha": "267bc58c64b6b57647605624df9e40d9f288ae99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134635:5487609925:2026-09-01T01:58:09Z:clawsweeper_needs_human",
       "comment_id": "5487609925",
@@ -32922,6 +32889,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132186:5489551923:2026-09-01T05:54:18Z:re_review",
+      "comment_id": "5489551923",
+      "comment_version_key": "5489551923:2026-09-01T05:54:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132186#issuecomment-5489551923",
+      "comment_created_at": "2026-09-01T05:54:18Z",
+      "comment_updated_at": "2026-09-01T05:54:18Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132186,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T05:55:09.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "galin/LocaFixesForOCReviewer",
+        "head_sha": "3f81742ea3d44c9cc223925e305a983d62ea42ac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
