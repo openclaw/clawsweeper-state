@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135061",
+  "mode": "autonomous",
+  "run_id": "33494454303",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33494454303",
+  "head_sha": "e038329b3fb1ee1d59cbbec555907d8ab3f09b06",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135061.md",
+  "published_at": "2026-09-01T10:14:27.453Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135061",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135061",
+  "canonical_pr": null,
+  "summary": "#135061 is a current, narrowly repairable WebChat/Gateway bug on main 433108d2f784083c4f8183315883109d536dc355. Implementation is blocked in this worker because the required sibling ../codex checkout is absent and the checkout is read-only with no installed dependencies.",
+  "actions": [
+    {
+      "target": "#135061",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135061",
+      "candidate_fix": null,
+      "reason": "Repair requires a writable, dependency-complete checkout and mandatory direct inspection of sibling ../codex before a Codex-gated implementation verdict or branch can be produced."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135061",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135061",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor after the mandatory Codex-source gate is satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#135061",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
