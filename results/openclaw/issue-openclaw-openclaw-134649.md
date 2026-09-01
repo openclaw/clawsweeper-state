@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134649"
 mode: "autonomous"
-run_id: "33462362362"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33462362362"
-head_sha: "ced376c343537d09f840bb9093c5cc1c8ff23c88"
-workflow_conclusion: "failure"
+run_id: "33464942218"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33464942218"
+head_sha: "ae37f02a3f5ba45b2bc52fc1d88f5b36b198874d"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T02:43:01.375Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134649"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134649"
+published_at: "2026-09-01T03:59:37.253Z"
+canonical: "#134649"
+canonical_issue: "#134649"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134649
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33462362362](https://github.com/openclaw/clawsweeper/actions/runs/33462362362)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33464942218](https://github.com/openclaw/clawsweeper/actions/runs/33464942218)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134649
+Canonical: #134649
 
 ## Summary
 
-#134649 remains the canonical open bug. Current main sends only SIGTERM during normal managed-local-service shutdown and returns; the existing restart path already waits and escalates. Implementation is blocked in this read-only checkout: no node_modules are present, Corepack cannot create its cache (EROFS), and the mandatory sibling ../codex source is absent and cannot be cloned here. A narrow, credited new-fix-PR artifact is prepared for an executor with a writable checkout.
+#134649 remains the canonical open bug. Current main routes CLI teardown through a synchronous SIGTERM-only stop, while the existing restart path waits and escalates. A repair could not be implemented: the worker is read-only, node_modules is absent, and required ../codex source is unavailable for the mandatory direct Codex inspection.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/134649
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/134649
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134649 | fix_needed | blocked | canonical | A writable executor must inspect the required Codex source, add the pre-fix regression, implement the owner-boundary repair, and run the declared validations. |
-| cluster:issue-openclaw-openclaw-134649 | build_fix_artifact | planned | canonical | Prepared for a writable ClawSweeper executor. |
+| #134649 | fix_needed | planned | canonical | Implementing or validating the canonical repair requires a writable branch, dependencies, and the mandatory direct ../codex source inspection. |
+| #134649 | build_fix_artifact | planned | canonical | A narrow new fix PR remains appropriate once the environment permits the required implementation and proof. |
 
 ## Needs Human
 
-- none
+- Provide a writable repair environment with dependencies and the required sibling ../codex checkout; then reproduce the SIGTERM-ignoring managed-child shutdown and implement the artifact below.

@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134649",
+  "mode": "autonomous",
+  "run_id": "33464942218",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33464942218",
+  "head_sha": "ae37f02a3f5ba45b2bc52fc1d88f5b36b198874d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134649.md",
+  "published_at": "2026-09-01T03:59:37.253Z",
+  "canonical": "#134649",
+  "canonical_issue": "#134649",
+  "canonical_pr": null,
+  "summary": "#134649 remains the canonical open bug. Current main routes CLI teardown through a synchronous SIGTERM-only stop, while the existing restart path waits and escalates. A repair could not be implemented: the worker is read-only, node_modules is absent, and required ../codex source is unavailable for the mandatory direct Codex inspection.",
+  "actions": [
+    {
+      "target": "#134649",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134649",
+      "candidate_fix": null,
+      "reason": "Implementing or validating the canonical repair requires a writable branch, dependencies, and the mandatory direct ../codex source inspection."
+    },
+    {
+      "target": "#134649",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134649",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR remains appropriate once the environment permits the required implementation and proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment with dependencies and the required sibling ../codex checkout; then reproduce the SIGTERM-ignoring managed-child shutdown and implement the artifact below."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
