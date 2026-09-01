@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T20:50:37.579Z",
+  "updated_at": "2026-09-01T20:51:00.204Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135243:5496445565:2026-09-01T15:37:23Z:re_review",
-      "comment_id": "5496445565",
-      "comment_version_key": "5496445565:2026-09-01T15:37:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135243#issuecomment-5496445565",
-      "comment_created_at": "2026-09-01T15:37:23Z",
-      "comment_updated_at": "2026-09-01T15:37:23Z",
-      "comment_body_sha256": "de2468cbd8154e235ee26ae89576867af909809a1001c6588a4bdc42770eee25",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135243,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T15:55:56.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/backup-exclude-nested-workspace",
-        "head_sha": "d77202296d042fe04365332b77e5d6f182ab6bf8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135243:5496181691:2026-09-01T15:54:38Z:clawsweeper_auto_repair",
       "comment_id": "5496181691",
@@ -33487,6 +33440,39 @@
         "kind": "pull_request",
         "branch": "codex/memory-lancedb-min-host-doc",
         "head_sha": "2b45fdf924c68c04ce514455183bf6b3d239ce84",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135520:5499730431:2026-09-01T20:50:12Z:clawsweeper_needs_human",
+      "comment_id": "5499730431",
+      "comment_version_key": "5499730431:2026-09-01T20:50:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135520#issuecomment-5499730431",
+      "comment_created_at": "2026-09-01T20:06:32Z",
+      "comment_updated_at": "2026-09-01T20:50:12Z",
+      "comment_body_sha256": "ab451dccaad59b20da5ede39e464f842d80841ec86867b11412c8e5147ce3d47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135520,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is transient memory-manager dirtiness, reached by the real CLI search entry point; the body reports tests and manual verifica... (sha=dfee3714c5105c414121872202c1952987e98e39)",
+      "expected_head_sha": "dfee3714c5105c414121872202c1952987e98e39",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T20:51:00.204Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-search-reindex",
+        "head_sha": "dfee3714c5105c414121872202c1952987e98e39",
         "cluster_id": null,
         "job_path": null
       }
