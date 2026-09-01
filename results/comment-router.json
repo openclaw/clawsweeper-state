@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T05:13:25.734Z",
+  "updated_at": "2026-09-01T05:14:06.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134494:5487178375:2026-09-01T01:23:24Z:re_review",
-      "comment_id": "5487178375",
-      "comment_version_key": "5487178375:2026-09-01T01:23:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134494#issuecomment-5487178375",
-      "comment_created_at": "2026-09-01T01:23:24Z",
-      "comment_updated_at": "2026-09-01T01:23:24Z",
-      "comment_body_sha256": "177040ed49ee3ef07fb858396c564fbb5f4d1ce22a1ac23ff547d04ee4d9559b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134494,
-      "author": "jarvis-mns1",
-      "author_id": 267498334,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T01:24:23.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-exclusive-model-schema",
-        "head_sha": "72ff030a82c1c9db04ebfd17c42eed53d1569726",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134590:5487183357:2026-09-01T01:23:59Z:clawsweeper_auto_repair",
       "comment_id": "5487183357",
@@ -33337,6 +33290,39 @@
         "kind": "pull_request",
         "branch": "fix/bash-chat-exit-status",
         "head_sha": "eb1fde6d0f73eaddf2a08658fec1d16ee96c12a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133105:5466996089:2026-09-01T05:13:10Z:clawsweeper_needs_human",
+      "comment_id": "5466996089",
+      "comment_version_key": "5466996089:2026-09-01T05:13:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133105#issuecomment-5466996089",
+      "comment_created_at": "2026-08-30T05:47:40Z",
+      "comment_updated_at": "2026-09-01T05:13:10Z",
+      "comment_body_sha256": "f7b124af0e47da2a72b09bfe98de2d8c5bc708a80e06c152a3867f8e8ae2a857",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by one net line; the local asynchronous registrar blocks are the narrow owner-boundary expression of the dynamic imports, while a shared wrapper would broaden th... (sha=84161c66d1bbc01ebae6c018d5ead750f0eacb68)",
+      "expected_head_sha": "84161c66d1bbc01ebae6c018d5ead750f0eacb68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T05:14:06.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/lazy-plugin-cli-runtimes-20260830",
+        "head_sha": "84161c66d1bbc01ebae6c018d5ead750f0eacb68",
         "cluster_id": null,
         "job_path": null
       }
