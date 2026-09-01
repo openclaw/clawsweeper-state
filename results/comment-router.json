@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:32:33.150Z",
+  "updated_at": "2026-09-01T19:32:44.232Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134995:5490998994:2026-09-01T13:39:27Z:clawsweeper_needs_human",
-      "comment_id": "5490998994",
-      "comment_version_key": "5490998994:2026-09-01T13:39:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134995#issuecomment-5490998994",
-      "comment_created_at": "2026-09-01T08:15:11Z",
-      "comment_updated_at": "2026-09-01T13:39:27Z",
-      "comment_body_sha256": "a07ca27c015b41763f9055694312b2b217574e71f2eb3bbf8701ac2358cc4bad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134995,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout could not independently inspect fetched current main because required promisor objects could not be fetched; refresh this exact patch against current main before merge. (sha=87002baafb23549a59715731aa8e67bc0c1b9f64)",
-      "expected_head_sha": "87002baafb23549a59715731aa8e67bc0c1b9f64",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T14:30:45.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-134502",
-        "head_sha": "87002baafb23549a59715731aa8e67bc0c1b9f64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134068:5491691220:2026-09-01T13:18:08Z:clawsweeper_needs_human",
       "comment_id": "5491691220",
@@ -33392,6 +33359,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130745:5499303848:2026-09-01T19:31:44Z:re_review",
+      "comment_id": "5499303848",
+      "comment_version_key": "5499303848:2026-09-01T19:31:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130745#issuecomment-5499303848",
+      "comment_created_at": "2026-09-01T19:31:44Z",
+      "comment_updated_at": "2026-09-01T19:31:44Z",
+      "comment_body_sha256": "a0e4c485504ee2d795507bd1999c57beaa35b899ec4d8234183e552e86b1f2d9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130745,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T19:32:41.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/app-server-runtime-chooser-bindings",
+        "head_sha": "f42a99405edfd4a4c532e6a9498bf08fbde53cf2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
