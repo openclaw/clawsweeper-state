@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134500",
+  "mode": "autonomous",
+  "run_id": "33448265597",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33448265597",
+  "head_sha": "ced376c343537d09f840bb9093c5cc1c8ff23c88",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134500.md",
+  "published_at": "2026-09-01T00:18:56.021Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134500",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134500",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a trustworthy latest-main repair: the supplied main SHA da24b3e7a4cd789fdef25bfe72bf4df4e097eaed is absent from this checkout, ../codex is unavailable for the mandatory direct-source gate, and the read-only environment prevents the focused Vitest command from initializing Corepack. The source shape supports a narrow policy-owner repair once those gates are restored.",
+  "actions": [
+    {
+      "target": "#46046",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134500",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#105413",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134500",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#134500",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134500",
+      "candidate_fix": null,
+      "reason": "Cannot verify or repair against the artifact's current-main SHA, inspect mandatory ../codex source, or run the reproduction in this read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134500",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134500",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor after exact-main and mandatory-source gates are restored."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#134500",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
