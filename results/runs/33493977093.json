@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135028",
+  "mode": "autonomous",
+  "run_id": "33493977093",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33493977093",
+  "head_sha": "e038329b3fb1ee1d59cbbec555907d8ab3f09b06",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135028.md",
+  "published_at": "2026-09-01T11:02:58.384Z",
+  "canonical": "#135028",
+  "canonical_issue": "#135028",
+  "canonical_pr": null,
+  "summary": "#135028 remains the open canonical issue. Current main directly starts device authorization at src/gateway/server-methods/tools-github.ts:175, while src/gateway/github-oauth-lifecycle.ts:572 requests a device code before writing its authorization record at :596. The requested repair is narrow, but this read-only worker cannot create the required regression or PR: the mandated ../codex checkout is absent and cloning it fails with EROFS; test dependencies are also unavailable and pnpm install fails with EROFS.",
+  "actions": [
+    {
+      "target": "#135028",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135028",
+      "candidate_fix": null,
+      "reason": "A writable checkout with the required sibling Codex source and installable dependencies is required before this worker can add the regression, validate it against pre-fix behavior, or open the permitted fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment containing ../codex and allowing dependency installation; then execute the attached narrow new-PR artifact and its regression-first validation."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
