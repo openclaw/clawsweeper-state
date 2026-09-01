@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:04:27.928Z",
+  "updated_at": "2026-09-01T18:04:40.078Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135200:5494307751:2026-09-01T12:59:00Z:clawsweeper_needs_human",
-      "comment_id": "5494307751",
-      "comment_version_key": "5494307751:2026-09-01T12:59:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135200#issuecomment-5494307751",
-      "comment_created_at": "2026-09-01T12:59:00Z",
-      "comment_updated_at": "2026-09-01T12:59:00Z",
-      "comment_body_sha256": "0d36a9c6601b45a3160278dd2832b9624a072fb209b41dadbc4e51a2698b62f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135200,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The local fetched-main ancestry contains this exact head, while the supplied GitHub state still marks this PR open and unmerged; reconcile that state before any merge or close action. (sha=65bc68ba1f8b16938559c751a4c5778c9ab9a3ae)",
-      "expected_head_sha": "65bc68ba1f8b16938559c751a4c5778c9ab9a3ae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:59:53.579Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-20260901-markdown-composition",
-        "head_sha": "65bc68ba1f8b16938559c751a4c5778c9ab9a3ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135202:5494314781:2026-09-01T12:59:34Z:clawsweeper_auto_repair",
       "comment_id": "5494314781",
@@ -33220,6 +33187,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T18:04:27.928Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130894:5498221950:2026-09-01T18:03:41Z:re_review",
+      "comment_id": "5498221950",
+      "comment_version_key": "5498221950:2026-09-01T18:03:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130894#issuecomment-5498221950",
+      "comment_created_at": "2026-09-01T18:03:41Z",
+      "comment_updated_at": "2026-09-01T18:03:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130894,
+      "author": "sliverp",
+      "author_id": 38134380,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T18:04:31.676Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/legacyNpmSpecs",
+        "head_sha": "fafa02eb7edc8890965d1b5fadcbab82f535a145",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
