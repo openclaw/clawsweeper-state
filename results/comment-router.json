@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:24:59.702Z",
+  "updated_at": "2026-09-01T03:25:37.148Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133925:5476067317:2026-08-31T20:06:00Z:clawsweeper_needs_human",
-      "comment_id": "5476067317",
-      "comment_version_key": "5476067317:2026-08-31T20:06:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133925#issuecomment-5476067317",
-      "comment_created_at": "2026-08-31T08:55:23Z",
-      "comment_updated_at": "2026-08-31T20:06:00Z",
-      "comment_body_sha256": "a980a232469e4a83a9cf43cc2cc0ac9c9b03502f16d146fe3f540d3cc58ba4ce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133925,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Bulk cleanup now deliberately performs synchronous SQLite analysis on the Gateway writer lane; the PR reports a bounded pause, but accepting that availability trade-off is a maintaine... (sha=27fa02d35b127f4dc68e30fc356e6e5892bd6b2e)",
-      "expected_head_sha": "27fa02d35b127f4dc68e30fc356e6e5892bd6b2e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T20:10:46.191Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openclaw-openclaw-vacinc-issue-119720",
-        "head_sha": "27fa02d35b127f4dc68e30fc356e6e5892bd6b2e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134074:5477945344:2026-08-31T20:10:18Z:clawsweeper_needs_human",
       "comment_id": "5477945344",
@@ -33454,6 +33421,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134494:5488436625:2026-09-01T03:24:45Z:re_review",
+      "comment_id": "5488436625",
+      "comment_version_key": "5488436625:2026-09-01T03:24:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134494#issuecomment-5488436625",
+      "comment_created_at": "2026-09-01T03:24:45Z",
+      "comment_updated_at": "2026-09-01T03:24:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134494,
+      "author": "jarvis-mns1",
+      "author_id": 267498334,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T03:25:33.402Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-search-exclusive-model-schema",
+        "head_sha": "15039b209210493e4bc2d884d95b4899ec31ce81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
