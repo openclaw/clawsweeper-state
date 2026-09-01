@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:57:10.723Z",
+  "updated_at": "2026-09-01T00:57:24.644Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134302:5482107176:2026-08-31T17:36:59Z:re_review",
-      "comment_id": "5482107176",
-      "comment_version_key": "5482107176:2026-08-31T17:36:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134302#issuecomment-5482107176",
-      "comment_created_at": "2026-08-31T17:36:59Z",
-      "comment_updated_at": "2026-08-31T17:36:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134302,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:40:33.110Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pollybot/fix-127403-migration-backup",
-        "head_sha": "931a7eb1756f7ad46c0c9817dc18e8dc77401440",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133617:5482140823:2026-08-31T17:39:50Z:re_review",
       "comment_id": "5482140823",
@@ -32831,6 +32784,39 @@
         "kind": "pull_request",
         "branch": "fix/f003-fetch-body-timeout",
         "head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134120:5478748385:2026-09-01T00:56:32Z:clawsweeper_needs_human",
+      "comment_id": "5478748385",
+      "comment_version_key": "5478748385:2026-09-01T00:56:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134120#issuecomment-5478748385",
+      "comment_created_at": "2026-08-31T13:02:17Z",
+      "comment_updated_at": "2026-09-01T00:56:32Z",
+      "comment_body_sha256": "bc9890dda04e75e53f7323363010e44c57f9aa7e699f389d6eb9d98b92bd4983",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134120,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal evidence runs the real Gateway, Teams plugin, mock provider, and loopback Bot Framework connector, but the added... (sha=69f09070484f87aa53a007bf8241f5fb7aedeb20)",
+      "expected_head_sha": "69f09070484f87aa53a007bf8241f5fb7aedeb20",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:57:24.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-reply-controls",
+        "head_sha": "69f09070484f87aa53a007bf8241f5fb7aedeb20",
         "cluster_id": null,
         "job_path": null
       }
