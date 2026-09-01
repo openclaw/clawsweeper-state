@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:28:17.640Z",
+  "updated_at": "2026-09-01T11:28:31.150Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:60:5490095435:2026-09-01T06:54:55Z:clawsweeper_needs_human",
-      "comment_id": "5490095435",
-      "comment_version_key": "5490095435:2026-09-01T06:54:55Z",
-      "comment_url": "https://github.com/openclaw/AXorcist/pull/60#issuecomment-5490095435",
-      "comment_created_at": "2026-09-01T06:54:55Z",
-      "comment_updated_at": "2026-09-01T06:54:55Z",
-      "comment_body_sha256": "f61c1547739d3902b43d7db339401e5a810bf5bbf238e00f0f72d6ff4d5a824d",
-      "repo": "openclaw/AXorcist",
-      "issue_number": 60,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If merged before the matching 0.1.9 tag and public artifact exist, the README’s SwiftPM example would point users at an unpublished version and the release instructions would name a n... (sha=6078e0646a98e4a0c17811df7800b4c58be5b63a)",
-      "expected_head_sha": "6078e0646a98e4a0c17811df7800b4c58be5b63a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T06:55:43.895Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/0.1.9-20260901",
-        "head_sha": "6078e0646a98e4a0c17811df7800b4c58be5b63a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134913:5489822536:2026-09-01T06:55:31Z:clawsweeper_auto_repair",
       "comment_id": "5489822536",
@@ -33719,6 +33686,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T11:28:17.640Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135135:5493219591:2026-09-01T11:27:45Z:re_review",
+      "comment_id": "5493219591",
+      "comment_version_key": "5493219591:2026-09-01T11:27:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135135#issuecomment-5493219591",
+      "comment_created_at": "2026-09-01T11:27:45Z",
+      "comment_updated_at": "2026-09-01T11:27:45Z",
+      "comment_body_sha256": "1577132dbaf61af48e73c7f6ccb54862398a2a1389e2b403da7e5665f15494bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135135,
+      "author": "arpe1618",
+      "author_id": 265149744,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review — added a real after-fix media-flow trace (loopback server through the production `readremotemediabuffer` path) to the evidence section",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T11:28:28.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/basename-dot-segments",
+        "head_sha": "7b3ab503ea7169da8157d66a6cbc527e97e8b14f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
