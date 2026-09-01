@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:59:48.460Z",
+  "updated_at": "2026-09-01T01:00:23.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/birdclaw:137:5482136994:2026-08-31T17:39:30Z:re_review",
-      "comment_id": "5482136994",
-      "comment_version_key": "5482136994:2026-08-31T17:39:30Z",
-      "comment_url": "https://github.com/steipete/birdclaw/pull/137#issuecomment-5482136994",
-      "comment_created_at": "2026-08-31T17:39:30Z",
-      "comment_updated_at": "2026-08-31T17:39:30Z",
-      "comment_body_sha256": "1977d707bd72ce3c4e02450c3b3a0781737adc9869df8e1e394c9fb2c1f3181d",
-      "repo": "steipete/birdclaw",
-      "issue_number": 137,
-      "author": "devYRPauli",
-      "author_id": 55940078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:44:40.153Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/validate-interval-seconds",
-        "head_sha": "24e1ef4afe0de38cb9f09573db58763fc2499bde",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:137:5481780979:2026-08-31T17:43:52Z:clawsweeper_auto_repair",
       "comment_id": "5481780979",
@@ -32803,6 +32756,39 @@
         "kind": "pull_request",
         "branch": "codex/test-sonnet-pricing-clock",
         "head_sha": "f16534e92daa701f052e4db8a2f6978b3ffb3f77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134589:5486939102:2026-09-01T00:59:33Z:clawsweeper_needs_human",
+      "comment_id": "5486939102",
+      "comment_version_key": "5486939102:2026-09-01T00:59:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134589#issuecomment-5486939102",
+      "comment_created_at": "2026-09-01T00:59:33Z",
+      "comment_updated_at": "2026-09-01T00:59:33Z",
+      "comment_body_sha256": "e28e78e42371341a9e2c4b8fc6f49c8d8bfe11e95b1fcd75eb679e9b6b026c17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the cron-to-heartbeat handoff in src/cron/service/timer-execution.ts, exercised in-process by the new 0m one-sh... (sha=cfb75dfff34c60fe0a34c6d5057a6481bdbc837d)",
+      "expected_head_sha": "cfb75dfff34c60fe0a34c6d5057a6481bdbc837d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:00:23.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-134500-cron-wake-bypass",
+        "head_sha": "cfb75dfff34c60fe0a34c6d5057a6481bdbc837d",
         "cluster_id": null,
         "job_path": null
       }
