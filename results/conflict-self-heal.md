@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-01T03:46:38.592Z
+Generated: 2026-09-01T05:40:25.959Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -22,7 +22,7 @@ Repository: openclaw/openclaw
 | [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | clawsweeper/issue-openclaw-openclaw-120536 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | clawsweeper/issue-openclaw-openclaw-91860 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | clawsweeper/issue-openclaw-openclaw-120134 | MERGEABLE | CLEAN | skipped | head repository is unknown |
+| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | clawsweeper/issue-openclaw-openclaw-120134 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
