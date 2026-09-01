@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:30:14.355Z",
+  "updated_at": "2026-09-01T06:30:21.707Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134517:5488179977:2026-09-01T02:52:02Z:re_review",
-      "comment_id": "5488179977",
-      "comment_version_key": "5488179977:2026-09-01T02:52:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134517#issuecomment-5488179977",
-      "comment_created_at": "2026-09-01T02:52:02Z",
-      "comment_updated_at": "2026-09-01T02:52:02Z",
-      "comment_body_sha256": "bbc1e0327c4ddf050639bd88a65a5161c8132d23310fab084296a5b54d1c95dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134517,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T02:52:38.068Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-progress-card-scroll-current",
-        "head_sha": "d5ce17ff54648f80398272af572fd7a133d3da23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-09-01T02:51:31Z:clawsweeper_needs_human",
       "comment_id": "5357688049",
@@ -32646,6 +32599,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T06:30:14.355Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134003:5476306309:2026-09-01T06:29:20Z:clawsweeper_needs_human",
+      "comment_id": "5476306309",
+      "comment_version_key": "5476306309:2026-09-01T06:29:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134003#issuecomment-5476306309",
+      "comment_created_at": "2026-08-31T09:18:48Z",
+      "comment_updated_at": "2026-09-01T06:29:20Z",
+      "comment_body_sha256": "786a6c69a00d868cb7138b3478b862255425a9ae6d774b77a16f7b9b09bcdc67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied live evidence demonstrates intended single-call native behavior, but the changed Gateway...; Review finding: [P1] Bind native controls to their voice session — src/gateway/talk-client-gateway-control.ts:285-290 - [high] Native controls can cross voice-call boundaries — sr... (sha=23fb6d85301f3a46a0cdee3f7308f5a24ae30434)",
+      "expected_head_sha": "23fb6d85301f3a46a0cdee3f7308f5a24ae30434",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T06:30:21.707Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "worktree-talk-native-gateway-control",
+        "head_sha": "23fb6d85301f3a46a0cdee3f7308f5a24ae30434",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
