@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:08:47.541Z",
+  "updated_at": "2026-09-01T16:09:00.508Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135126:5493120471:2026-09-01T11:18:55Z:clawsweeper_needs_human",
-      "comment_id": "5493120471",
-      "comment_version_key": "5493120471:2026-09-01T11:18:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135126#issuecomment-5493120471",
-      "comment_created_at": "2026-09-01T11:18:55Z",
-      "comment_updated_at": "2026-09-01T11:18:55Z",
-      "comment_body_sha256": "44727895962978b48e67406aed53d6420b35aa74aa90d74dc2da2a565e9e1f36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135126,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deeper source-line provenance could not be completed because required promised Git objects could not be fetched when github.com DNS resolution failed; this does not affect the verifie... (sha=161280e7bf06485e83ffac620f4a7ce5f81be2f3)",
-      "expected_head_sha": "161280e7bf06485e83ffac620f4a7ce5f81be2f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/policy-channel-deny-rule",
-        "head_sha": "161280e7bf06485e83ffac620f4a7ce5f81be2f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135141:5493162459:2026-09-01T11:22:48Z:clawsweeper_needs_human",
       "comment_id": "5493162459",
@@ -32169,6 +32136,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:89040:5496839993:2026-09-01T16:08:09Z:re_review",
+      "comment_id": "5496839993",
+      "comment_version_key": "5496839993:2026-09-01T16:08:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5496839993",
+      "comment_created_at": "2026-09-01T16:08:09Z",
+      "comment_updated_at": "2026-09-01T16:08:09Z",
+      "comment_body_sha256": "57329a5495dbdbf4e6b6cb9773d2f4dc4131864b7d969b3c7ea53cea1a90ad23",
+      "repo": "openclaw/openclaw",
+      "issue_number": 89040,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T16:08:58.025Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bootstrap-context-event-loop-stall",
+        "head_sha": "8f3e3f7544eab12b35fb6eab9b7b81254bd8f006",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
