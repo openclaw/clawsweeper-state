@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:03:10.150Z",
+  "updated_at": "2026-09-01T16:03:17.670Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134976:5491341079:2026-09-01T11:20:52Z:clawsweeper_needs_human",
-      "comment_id": "5491341079",
-      "comment_version_key": "5491341079:2026-09-01T11:20:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134976#issuecomment-5491341079",
-      "comment_created_at": "2026-09-01T08:42:24Z",
-      "comment_updated_at": "2026-09-01T11:20:52Z",
-      "comment_body_sha256": "3f0ba56e6eea36338bbb013db97c359dca9ac1b12e0e67e7ea005db0f8f2b8e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds net 42 production lines; the renderer-local per-select accounting is warranted to retain headings and overflow without creating a second delivery path, but it is the... (sha=d7c76e4d38c57fb970b2a100af871526b0ec65e6)",
-      "expected_head_sha": "d7c76e4d38c57fb970b2a100af871526b0ec65e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-select-prompt-words",
-        "head_sha": "d7c76e4d38c57fb970b2a100af871526b0ec65e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134931:5491689336:2026-09-01T11:21:08Z:clawsweeper_needs_human",
       "comment_id": "5491689336",
@@ -32117,6 +32084,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T16:03:10.150Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133406:5496765347:2026-09-01T16:02:40Z:re_review",
+      "comment_id": "5496765347",
+      "comment_version_key": "5496765347:2026-09-01T16:02:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133406#issuecomment-5496765347",
+      "comment_created_at": "2026-09-01T16:02:23Z",
+      "comment_updated_at": "2026-09-01T16:02:40Z",
+      "comment_body_sha256": "7b87db4f7a209f0cf796427d2da45a7bc2044c75f2f1be307213642f8ad8c31f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133406,
+      "author": "aspalagin",
+      "author_id": 263096044,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T16:03:14.894Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-rich-message-local-media",
+        "head_sha": "ad936016d72dd0284821be4aac5cfcee30c42615",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
