@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T08:57:02.859Z",
+  "updated_at": "2026-09-01T08:57:07.841Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130962:5489035792:2026-09-01T04:46:46Z:re_review",
-      "comment_id": "5489035792",
-      "comment_version_key": "5489035792:2026-09-01T04:46:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130962#issuecomment-5489035792",
-      "comment_created_at": "2026-09-01T04:46:46Z",
-      "comment_updated_at": "2026-09-01T04:46:46Z",
-      "comment_body_sha256": "1ce4d045d93d8e92868b06b489f7eb0365afab5bd2ca3199f11a68c87b1e175d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130962,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:47:27.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "gaoanze888/backup-legacy-audit-lease-scope",
-        "head_sha": "1c0106ca23130793972baf4c126921015f635ab7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132723:5489036556:2026-09-01T04:46:50Z:re_review",
       "comment_id": "5489036556",
@@ -33024,6 +32977,39 @@
         "kind": "pull_request",
         "branch": "fix/anthropic-refusal-terminal",
         "head_sha": "9395293a9ce675dfea48c7e3c2610ec95814d699",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134032:5476927295:2026-09-01T08:49:51Z:clawsweeper_auto_repair",
+      "comment_id": "5476927295",
+      "comment_version_key": "5476927295:2026-09-01T08:49:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5476927295",
+      "comment_created_at": "2026-08-31T10:17:36Z",
+      "comment_updated_at": "2026-09-01T08:49:51Z",
+      "comment_body_sha256": "4633b6dba18b2043db8817481e45923cfecafa8129dbdaf4358ccdffa59ec936",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8c0d1f2e4322988fa1bbfe2461fa655eeb082e9b)",
+      "expected_head_sha": "8c0d1f2e4322988fa1bbfe2461fa655eeb082e9b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T08:57:07.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-channel-bookmarks",
+        "head_sha": "5951f10686ea18786d3ac35e9bf786f2755e048c",
         "cluster_id": null,
         "job_path": null
       }
