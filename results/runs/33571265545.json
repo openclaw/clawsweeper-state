@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135649",
+  "mode": "autonomous",
+  "run_id": "33571265545",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33571265545",
+  "head_sha": "7b645130563f366f3cdefab956e3181636125d68",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135649.md",
+  "published_at": "2026-09-01T23:47:03.748Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135649",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135649",
+  "canonical_pr": null,
+  "summary": "#135649 is a confirmed narrow Control UI bug on current main (6104dfd409c7a06a9e3bd6fa5302963671ddd0bb). The map Add Entry handler autosaves an empty custom-N key before a sensitive MCP Env/Headers value can be entered; the subsequent server-redacted sentinel correctly blocks rename. A draft-first repair and regression are specified, but this read-only worker cannot modify the branch, cannot run pnpm because Corepack cannot create its cache, and cannot satisfy the required direct ../codex source inspection because that sibling checkout is absent.",
+  "actions": [
+    {
+      "target": "#135649",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135649",
+      "candidate_fix": null,
+      "reason": "Keep the source-proven canonical issue open while the planned fix PR is created."
+    },
+    {
+      "target": "#135649",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135649",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment. A writable executor with ../codex available should apply the artifact on clawsweeper/issue-openclaw-openclaw-135649."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135649",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135649",
+      "candidate_fix": null,
+      "reason": "Prepare a new narrow fix PR; no contributor PR exists to repair."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
