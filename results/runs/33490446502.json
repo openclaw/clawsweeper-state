@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134999",
+  "mode": "autonomous",
+  "run_id": "33490446502",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33490446502",
+  "head_sha": "1d79ae6c9f2dfc34eee2c430d3034ec126c82745",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134999.md",
+  "published_at": "2026-09-01T09:59:38.415Z",
+  "canonical": "#134999",
+  "canonical_issue": "#134999",
+  "canonical_pr": null,
+  "summary": "No implementation artifact was produced. The mandatory direct sibling Codex-source gate cannot be completed because ../codex is absent, and this read-only worker cannot clone it. The open canonical issue remains unchanged.",
+  "actions": [
+    {
+      "target": "#134999",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#134999",
+      "candidate_fix": null,
+      "reason": "Provision ../codex or rerun in a writable environment with the required sibling checkout, then reproduce the stale same-PID lock before editing."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required ../codex sibling checkout (or a writable rerun environment) so the mandated source gate and subsequent reproduction can proceed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

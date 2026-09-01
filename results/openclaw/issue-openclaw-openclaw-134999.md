@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134999"
 mode: "autonomous"
-run_id: "33486504329"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33486504329"
-head_sha: "ce04d08fa319788439016ca9dca8415dbc913769"
-workflow_conclusion: "failure"
+run_id: "33490446502"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33490446502"
+head_sha: "1d79ae6c9f2dfc34eee2c430d3034ec126c82745"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T08:39:13.513Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134999"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134999"
+published_at: "2026-09-01T09:59:38.415Z"
+canonical: "#134999"
+canonical_issue: "#134999"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134999
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33486504329](https://github.com/openclaw/clawsweeper/actions/runs/33486504329)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33490446502](https://github.com/openclaw/clawsweeper/actions/runs/33490446502)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134999
+Canonical: #134999
 
 ## Summary
 
-#134999 remains the canonical open bug. Current main contains the stale same-PID recovery gap, but this read-only worker cannot install missing dependencies, run the required baseline/repaired regression, modify the branch, or satisfy the repository’s mandatory direct ../codex source inspection because that sibling checkout is absent. A narrow owner-local PR plan is ready for an executor with a writable checkout.
+No implementation artifact was produced. The mandatory direct sibling Codex-source gate cannot be completed because ../codex is absent, and this read-only worker cannot clone it. The open canonical issue remains unchanged.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/134999
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134999 | fix_needed | blocked | canonical | Implementation and proof are blocked only by the worker environment; no closure or merge action is permitted. |
-| cluster:issue-openclaw-openclaw-134999 | build_fix_artifact | planned | canonical | A narrow non-security fix PR remains appropriate once the executor can reproduce and validate it. |
-| cluster:issue-openclaw-openclaw-134999 | open_fix_pr | blocked | canonical | This worker has no writable filesystem or dependency-install capability; direct GitHub mutation is prohibited. |
+| #134999 | needs_human | blocked | needs_human | Provision ../codex or rerun in a writable environment with the required sibling checkout, then reproduce the stale same-PID lock before editing. |
 
 ## Needs Human
 
-- none
+- Provide the required ../codex sibling checkout (or a writable rerun environment) so the mandated source gate and subsequent reproduction can proceed.
