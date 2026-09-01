@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:30:23.841Z",
+  "updated_at": "2026-09-01T11:30:35.670Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1073:5490112282:2026-09-01T06:56:33Z:re_review",
-      "comment_id": "5490112282",
-      "comment_version_key": "5490112282:2026-09-01T06:56:33Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1073#issuecomment-5490112282",
-      "comment_created_at": "2026-09-01T06:56:33Z",
-      "comment_updated_at": "2026-09-01T06:56:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1073,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T06:57:23.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/trusted-status-comment-fail-open",
-        "head_sha": "44dd657628dc7664e2074d025354c036986dd25a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1331:5490069512:2026-09-01T06:57:22Z:clawsweeper_needs_human",
       "comment_id": "5490069512",
@@ -33730,6 +33683,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-135026",
         "head_sha": "02c0f92f856c28e5bb324a5035e9cab4a030348a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135131:5492930425:2026-09-01T11:29:38Z:clawsweeper_needs_human",
+      "comment_id": "5492930425",
+      "comment_version_key": "5492930425:2026-09-01T11:29:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135131#issuecomment-5492930425",
+      "comment_created_at": "2026-09-01T11:01:39Z",
+      "comment_updated_at": "2026-09-01T11:29:38Z",
+      "comment_body_sha256": "4dba7d7da890ba62af1fcefdf7f1873a99f4f9706ebdc3dc623922b09c32a06d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head checks are still in progress, so native merge preparation should wait for the required CI result. (sha=d925b8f71ae01a0429384e11021ecc91e054fcc9)",
+      "expected_head_sha": "d925b8f71ae01a0429384e11021ecc91e054fcc9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:30:35.670Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/control-ui-lazy-english-headroom",
+        "head_sha": "d925b8f71ae01a0429384e11021ecc91e054fcc9",
         "cluster_id": null,
         "job_path": null
       }
