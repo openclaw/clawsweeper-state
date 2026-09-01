@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:51:49.608Z",
+  "updated_at": "2026-09-01T00:53:01.049Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134299:5482020491:2026-08-31T17:29:41Z:re_review",
-      "comment_id": "5482020491",
-      "comment_version_key": "5482020491:2026-08-31T17:29:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134299#issuecomment-5482020491",
-      "comment_created_at": "2026-08-31T17:29:41Z",
-      "comment_updated_at": "2026-08-31T17:29:41Z",
-      "comment_body_sha256": "6aa14f5ded41207fd2724d9cd7a01af6e91023bbd8be9f8d4710e9187684a9d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134299,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:34:00.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pollybot/fix-125694-uninstall-defaults",
-        "head_sha": "03fc0860b4eaf824ce7d4ed192152fb3168edfba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134060:5477458583:2026-08-31T17:34:06Z:clawsweeper_auto_repair",
       "comment_id": "5477458583",
@@ -32845,6 +32798,39 @@
         "kind": "pull_request",
         "branch": "fix/download-fail-closed-missing-blob",
         "head_sha": "669fe8c302b62abf8ecfa593f446ed3a82f6a916",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134582:5486886876:2026-09-01T00:52:20Z:clawsweeper_needs_human",
+      "comment_id": "5486886876",
+      "comment_version_key": "5486886876:2026-09-01T00:52:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134582#issuecomment-5486886876",
+      "comment_created_at": "2026-09-01T00:52:20Z",
+      "comment_updated_at": "2026-09-01T00:52:20Z",
+      "comment_body_sha256": "46976243b0e97e6f19510b4cc660e2c6fa045371c238dc3d0860a945de53cc8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134582,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Before merge, directly verify the locked @openclaw/fs-safe/path predicate contract for absolute, cross-drive, and UNC relative() results; the dependency source was unavailable in this... (sha=926cbf2e6515c17ef79338dfc85bec9d7356d80f)",
+      "expected_head_sha": "926cbf2e6515c17ef79338dfc85bec9d7356d80f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:53:01.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor-claw-path-containment",
+        "head_sha": "926cbf2e6515c17ef79338dfc85bec9d7356d80f",
         "cluster_id": null,
         "job_path": null
       }
