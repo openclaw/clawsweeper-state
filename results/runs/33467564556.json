@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134748",
+  "mode": "autonomous",
+  "run_id": "33467564556",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33467564556",
+  "head_sha": "1bcce8bcf392f4a357d247ce2f9b2216ca92dbd4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134748.md",
+  "published_at": "2026-09-01T04:14:23.837Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134748",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134748",
+  "canonical_pr": null,
+  "summary": "#134748 is a source-proven current-main boot-session admission regression. A narrow fix artifact is ready, but this worker cannot write or run the required proof: the checkout is read-only, dependencies are not hydrated, and mandatory direct ../codex inspection is unavailable.",
+  "actions": [
+    {
+      "target": "#134748",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134748",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment. A writable executor must perform the direct ../codex inspection, apply the narrow artifact, and run the listed proof."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134748",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134748",
+      "candidate_fix": null,
+      "reason": "Create one new ClawSweeper fix PR from the named branch after environment blockers are cleared."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
