@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:26:13.643Z",
+  "updated_at": "2026-09-01T01:27:15.637Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128454:5390001178:2026-08-31T17:59:48Z:clawsweeper_needs_human",
-      "comment_id": "5390001178",
-      "comment_version_key": "5390001178:2026-08-31T17:59:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5390001178",
-      "comment_created_at": "2026-08-24T02:25:21Z",
-      "comment_updated_at": "2026-08-31T17:59:48Z",
-      "comment_body_sha256": "3f5f7e8849c00c53e3586ebfc6765e53feebda1dfc1b1062198a37a41988fbf7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The real Gateway trace on the reviewed head shows failed-copy cleanup, successful-media retention, and explicit settlement, but it doe... (sha=282fbbb261b26a2c9cce083886835db29d062be8)",
-      "expected_head_sha": "282fbbb261b26a2c9cce083886835db29d062be8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:01:47.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media-reopened",
-        "head_sha": "282fbbb261b26a2c9cce083886835db29d062be8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-31T18:00:33Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
@@ -32856,6 +32823,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134032:5487214344:2026-09-01T01:26:30Z:re_review",
+      "comment_id": "5487214344",
+      "comment_version_key": "5487214344:2026-09-01T01:26:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5487214344",
+      "comment_created_at": "2026-09-01T01:26:30Z",
+      "comment_updated_at": "2026-09-01T01:26:30Z",
+      "comment_body_sha256": "5c8401bf8c32da13e8392c48993a89385accd57fbad54565cf05e087b3c120a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134032,
+      "author": "zw-xysk",
+      "author_id": 294457748,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T01:27:12.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-channel-bookmarks",
+        "head_sha": "527ff97d29e2c9680f25810cfdc86a6ff80da4b9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
