@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:43:44.500Z",
+  "updated_at": "2026-09-01T14:43:48.526Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133716:5472814113:2026-09-01T10:15:59Z:clawsweeper_needs_human",
-      "comment_id": "5472814113",
-      "comment_version_key": "5472814113:2026-09-01T10:15:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133716#issuecomment-5472814113",
-      "comment_created_at": "2026-08-31T02:06:54Z",
-      "comment_updated_at": "2026-09-01T10:15:59Z",
-      "comment_body_sha256": "6a18f094216e3fbcf9d58acef60d47e9e2d21a1bcf0d78e09335752d08426911",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133716,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Malformed UTF-8 responses that were previously silently replacement-decoded will now fail with the established malformed-response error; this is intentional, but a nonconforming inter... (sha=aca683caa361848b6a0af72aba9a0da731701aea)",
-      "expected_head_sha": "aca683caa361848b6a0af72aba9a0da731701aea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T10:17:00.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/amazon-bedrock-embedding-strict-utf8",
-        "head_sha": "aca683caa361848b6a0af72aba9a0da731701aea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134797:5488902748:2026-09-01T10:10:56Z:clawsweeper_needs_human",
       "comment_id": "5488902748",
@@ -32451,6 +32418,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135044:5495704652:2026-09-01T14:42:51Z:re_review",
+      "comment_id": "5495704652",
+      "comment_version_key": "5495704652:2026-09-01T14:42:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135044#issuecomment-5495704652",
+      "comment_created_at": "2026-09-01T14:42:51Z",
+      "comment_updated_at": "2026-09-01T14:42:51Z",
+      "comment_body_sha256": "1422aae6d05b2b1f6e5231276e2e8c95ffcf119dfe4fa0f1d3db49645c30a519",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135044,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:43:46.350Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-model-picker-scope-availability",
+        "head_sha": "d68c2cb728c126064276f4fab3e235c285640e38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
