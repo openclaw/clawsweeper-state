@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:55:05.698Z",
+  "updated_at": "2026-09-01T01:55:21.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134292:5482259646:2026-08-31T17:50:24Z:clawsweeper_needs_human",
-      "comment_id": "5482259646",
-      "comment_version_key": "5482259646:2026-08-31T17:50:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134292#issuecomment-5482259646",
-      "comment_created_at": "2026-08-31T17:50:24Z",
-      "comment_updated_at": "2026-08-31T17:50:24Z",
-      "comment_body_sha256": "88dc0301b713e6537bf278ec8124df493bf7554fb4f2f11a8e6b04f8b87d2d3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134292,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the build-artifact predicate, consumed by the CI manifest; the supplied evidence is focused Vitest and dry-run... (sha=e5abe038a89468a94111b548731234637b2e52cc)",
-      "expected_head_sha": "e5abe038a89468a94111b548731234637b2e52cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:49:16.850Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/code-bug-ci-build-artifact-scope-20260901",
-        "head_sha": "e5abe038a89468a94111b548731234637b2e52cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134334:5482270099:2026-08-31T17:51:23Z:clawsweeper_needs_human",
       "comment_id": "5482270099",
@@ -32972,6 +32939,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134629:5487569065:2026-09-01T01:54:34Z:re_review",
+      "comment_id": "5487569065",
+      "comment_version_key": "5487569065:2026-09-01T01:54:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134629#issuecomment-5487569065",
+      "comment_created_at": "2026-09-01T01:54:34Z",
+      "comment_updated_at": "2026-09-01T01:54:34Z",
+      "comment_body_sha256": "89c65e14e6cc2f7afd99edea715c2d2e7738cc6214869012f89c57bf5743ba07",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134629,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T01:55:19.428Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-2026.8.2-sparse-preflight",
+        "head_sha": "6f15dbdf95ed2601bf8e0a35620583ff9c3a41f7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
