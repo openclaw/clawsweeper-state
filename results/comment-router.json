@@ -2,33 +2,6 @@
   "updated_at": "2026-09-01T09:47:20.914Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/photoscrawl:14:5431841450:2026-08-26T22:26:48Z:re_review",
-      "comment_id": "5431841450",
-      "comment_version_key": "5431841450:2026-08-26T22:26:48Z",
-      "comment_url": "https://github.com/openclaw/photoscrawl/pull/14#issuecomment-5431841450",
-      "comment_created_at": "2026-08-26T22:26:48Z",
-      "comment_updated_at": "2026-08-26T22:26:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/photoscrawl",
-      "issue_number": 14,
-      "author": "mbelinky",
-      "author_id": 132747814,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:36:00.259Z",
-      "target": null
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:134633:5489400270:2026-09-01T05:35:14Z:re_review",
       "comment_id": "5489400270",
       "comment_version_key": "5489400270:2026-09-01T05:35:14Z",
@@ -33245,6 +33218,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135016:5491412905:2026-09-01T09:46:31Z:clawsweeper_needs_human",
+      "comment_id": "5491412905",
+      "comment_version_key": "5491412905:2026-09-01T09:46:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135016#issuecomment-5491412905",
+      "comment_created_at": "2026-09-01T08:48:27Z",
+      "comment_updated_at": "2026-09-01T09:46:31Z",
+      "comment_body_sha256": "11818a1b2c4bf4ad49054eb7b3aa2ade2d6354512a02386eb517b299461b1200",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135016,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The net +76 production lines alter recovery, queue collection, overflow, and abort custody; exact-head CI is currently failing and no redacted browser/Gateway restart trace yet confir... (sha=fcb73239f10edb14f46d407e836b317d763c9197)",
+      "expected_head_sha": "fcb73239f10edb14f46d407e836b317d763c9197",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T09:47:20.658Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-recovery-followup",
+        "head_sha": "fcb73239f10edb14f46d407e836b317d763c9197",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
