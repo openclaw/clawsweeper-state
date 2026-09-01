@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:20:10.428Z",
+  "updated_at": "2026-09-01T10:20:22.436Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132186:5489551923:2026-09-01T05:54:18Z:re_review",
-      "comment_id": "5489551923",
-      "comment_version_key": "5489551923:2026-09-01T05:54:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132186#issuecomment-5489551923",
-      "comment_created_at": "2026-09-01T05:54:18Z",
-      "comment_updated_at": "2026-09-01T05:54:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132186,
-      "author": "galiniliev",
-      "author_id": 5711535,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T05:55:09.102Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "galin/LocaFixesForOCReviewer",
-        "head_sha": "3f81742ea3d44c9cc223925e305a983d62ea42ac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106789:4962740326:2026-08-31T06:43:26Z:clawsweeper_auto_repair",
       "comment_id": "4962740326",
@@ -33706,6 +33659,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-132886",
         "head_sha": "df64c6993078b4c42c70af135d29d5b857d61b30",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134910:5489796281:2026-09-01T10:19:28Z:clawsweeper_needs_human",
+      "comment_id": "5489796281",
+      "comment_version_key": "5489796281:2026-09-01T10:19:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134910#issuecomment-5489796281",
+      "comment_created_at": "2026-09-01T06:22:56Z",
+      "comment_updated_at": "2026-09-01T10:19:28Z",
+      "comment_body_sha256": "320cbcbbd40c2be7eed6d3b4a07a3031a24af46a32a5bf23c3ee0fb521a537e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134910,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current head is marked dirty against main; resolving its conflict must retain the current-main built-runtime test changes while moving the regression to its intended E2E owner, th... (sha=a61ce79aa3a731c6fa1ff812e7d94c5504d9e84a)",
+      "expected_head_sha": "a61ce79aa3a731c6fa1ff812e7d94c5504d9e84a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:20:22.436Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa50-markdown-spans",
+        "head_sha": "a61ce79aa3a731c6fa1ff812e7d94c5504d9e84a",
         "cluster_id": null,
         "job_path": null
       }
