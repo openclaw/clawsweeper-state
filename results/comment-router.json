@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:25:06.094Z",
+  "updated_at": "2026-09-01T19:26:16.684Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128580:5391916504:2026-09-01T13:20:48Z:clawsweeper_needs_human",
-      "comment_id": "5391916504",
-      "comment_version_key": "5391916504:2026-09-01T13:20:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128580#issuecomment-5391916504",
-      "comment_created_at": "2026-08-24T07:15:23Z",
-      "comment_updated_at": "2026-09-01T13:20:48Z",
-      "comment_body_sha256": "ac3e4fb2efb6c38655fc86bb5dbada530e885b8c3c945185fd25d7469b17548d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the final payload builder, and the supplied terminal result directly exercises its four outcomes but does so wi... (sha=e4b24ea73e6cacfcacb6ccdf4ca7aad23dc559ca)",
-      "expected_head_sha": "e4b24ea73e6cacfcacb6ccdf4ca7aad23dc559ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T14:30:45.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/messaging-tool-blank-media-dedupe",
-        "head_sha": "e4b24ea73e6cacfcacb6ccdf4ca7aad23dc559ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129288:5410096379:2026-09-01T13:00:25Z:clawsweeper_needs_human",
       "comment_id": "5410096379",
@@ -33378,6 +33345,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:130894:5499222471:2026-09-01T19:25:19Z:re_review",
+      "comment_id": "5499222471",
+      "comment_version_key": "5499222471:2026-09-01T19:25:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130894#issuecomment-5499222471",
+      "comment_created_at": "2026-09-01T19:25:19Z",
+      "comment_updated_at": "2026-09-01T19:25:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130894,
+      "author": "sliverp",
+      "author_id": 38134380,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T19:26:12.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/legacyNpmSpecs",
+        "head_sha": "8d5a47a77f7ba212ed69e72ec9972e9244b2a946",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
