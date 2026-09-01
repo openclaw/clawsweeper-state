@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T12:11:39.282Z",
+  "updated_at": "2026-09-01T12:13:22.945Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119237:5180120776:2026-09-01T06:33:04Z:clawsweeper_needs_human",
-      "comment_id": "5180120776",
-      "comment_version_key": "5180120776:2026-09-01T06:33:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119237#issuecomment-5180120776",
-      "comment_created_at": "2026-08-04T14:00:10Z",
-      "comment_updated_at": "2026-09-01T06:33:04Z",
-      "comment_body_sha256": "149d5e5f870b4b5d3149930c125403bad7e918fd37e32ca5aab38a22f6a2f959",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119237,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: show allowed delivery still reaches I/O and that route reassignment or revocation before final dispatch cannot...; Review finding: [P1] Retain route-owner authorization at final delivery — src/gateway/conversation-send.ts:112 - [high] Address claim does not reauthorize delivery — src/gateway/c... (sha=30fb62a9ca0a59e1c9487374b83e6426cde178e6)",
-      "expected_head_sha": "30fb62a9ca0a59e1c9487374b83e6426cde178e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T07:30:43.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/code-mode-execution-accounting-stack-20260804",
-        "head_sha": "30fb62a9ca0a59e1c9487374b83e6426cde178e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119545:5189378651:2026-09-01T06:28:00Z:clawsweeper_auto_repair",
       "comment_id": "5189378651",
@@ -33953,6 +33920,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5493747641:2026-09-01T12:12:35Z:re_review",
+      "comment_id": "5493747641",
+      "comment_version_key": "5493747641:2026-09-01T12:12:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5493747641",
+      "comment_created_at": "2026-09-01T12:12:35Z",
+      "comment_updated_at": "2026-09-01T12:12:35Z",
+      "comment_body_sha256": "4d007d371f6d8b8293df965199d0f44cde7dcadf393ab676a3d5aa8c34425551",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T12:13:19.349Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "73fd0c76c2a7914bc14f1ba65ad96b7a848381c3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
