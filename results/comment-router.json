@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:52:35.795Z",
+  "updated_at": "2026-09-01T19:52:37.918Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135203:5495849777:2026-09-01T14:53:30Z:re_review",
-      "comment_id": "5495849777",
-      "comment_version_key": "5495849777:2026-09-01T14:53:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135203#issuecomment-5495849777",
-      "comment_created_at": "2026-09-01T14:53:30Z",
-      "comment_updated_at": "2026-09-01T14:53:30Z",
-      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135203,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:54:29.661Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/powershell-strict-json-hint-135164",
-        "head_sha": "adc204de213468daa649067efd92240a7f5b9639",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135219:5495860751:2026-09-01T14:54:18Z:re_review",
       "comment_id": "5495860751",
@@ -33403,6 +33356,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/production-minor-and-patch-1ae00306bc",
         "head_sha": "6323f8a79af982b4909e1616f7c9f6a60710a0c8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135428:5499548964:2026-09-01T19:51:27Z:clawsweeper_needs_human",
+      "comment_id": "5499548964",
+      "comment_version_key": "5499548964:2026-09-01T19:51:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135428#issuecomment-5499548964",
+      "comment_created_at": "2026-09-01T19:51:27Z",
+      "comment_updated_at": "2026-09-01T19:51:27Z",
+      "comment_body_sha256": "aa11ee82ce13441cb9057e2d2ffd1647f012ec9f7a795d1210836fb958970b2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This has no concrete repair blocker; the maintainer label keeps the merge decision in normal human handling. (sha=32e496a966460542d8bdf55e8a39f108bf2ecd7b)",
+      "expected_head_sha": "32e496a966460542d8bdf55e8a39f108bf2ecd7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T19:52:37.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/github-publication-cleanup",
+        "head_sha": "32e496a966460542d8bdf55e8a39f108bf2ecd7b",
         "cluster_id": null,
         "job_path": null
       }
