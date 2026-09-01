@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135457"
 mode: "autonomous"
-run_id: "33547103630"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33547103630"
-head_sha: "48bd2b42f1dd0504c9afc8643c9781290604b3b2"
-workflow_conclusion: "failure"
+run_id: "33557062612"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33557062612"
+head_sha: "5121370cfadc58069ebf4194cfbbbc138bd1e7a4"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T19:25:48.870Z"
-canonical: "https://github.com/openclaw/openclaw/issues/135457"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/135457"
+published_at: "2026-09-01T21:35:20.638Z"
+canonical: "#135457"
+canonical_issue: "#135457"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33547103630](https://github.com/openclaw/clawsweeper/actions/runs/33547103630)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33557062612](https://github.com/openclaw/clawsweeper/actions/runs/33557062612)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/135457
+Canonical: #135457
 
 ## Summary
 
-#135457 remains a reproducible, narrow Control UI defect. A UI-only repair artifact is ready, but this read-only checkout cannot install dependencies, edit, build, test, or create the requested branch/PR.
+Confirmed on main 4bfcb877121beee6b0a5296529ea49c3360ffaa9: selecting a heartbeat maps its locked payload to an empty form value, while cron.scratch.get privately returns scratch.content. A narrow two-file repair is ready, but this worker cannot edit, install dependencies, build, or create a branch because the checkout and parent directory are read-only.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/135457
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #135457 | fix_needed | blocked | canonical | A writable normal checkout with dependencies and the sibling Codex source is required before implementation and proof. |
-| #134994 | keep_related | planned | related | Compatibility awareness only; keep this repair independently landable. |
-| #112967 | keep_closed | skipped | related | Closed historical evidence only. |
-| cluster:issue-openclaw-openclaw-135457 | build_fix_artifact | planned | canonical | Apply in a writable prepared checkout and create/update clawsweeper/issue-openclaw-openclaw-135457. |
+| #134994 | keep_related | planned | related | Related heartbeat area, but a distinct broad product and persistence migration. |
+| #135457 | fix_needed | blocked | canonical | The repair requires branch edits and dependency installation, neither permitted in this read-only worker. |
+| #135457 | build_fix_artifact | planned | canonical | A deterministic executor with a writable checkout can apply the artifact. |
 
 ## Needs Human
 
