@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T07:53:51.961Z",
+  "updated_at": "2026-09-01T07:54:34.049Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134403:5488789570:2026-09-01T04:14:35Z:re_review",
-      "comment_id": "5488789570",
-      "comment_version_key": "5488789570:2026-09-01T04:14:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134403#issuecomment-5488789570",
-      "comment_created_at": "2026-09-01T04:14:35Z",
-      "comment_updated_at": "2026-09-01T04:14:35Z",
-      "comment_body_sha256": "c572187c1bcad0bb082917e4ee1bec58a30abc8490d450f14dd30988115af8da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134403,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:15:24.148Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/state-dir-split-brain",
-        "head_sha": "5d2b9bc4a6579c5948bd40f35a68f8797c15d9ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5488791213:2026-09-01T04:14:50Z:re_review",
       "comment_id": "5488791213",
@@ -32569,6 +32522,39 @@
         "kind": "pull_request",
         "branch": "codex/history-perf-eleventh",
         "head_sha": "4a888d932abeef8b1eee9f6885f2568341f0ae75",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134965:5490760810:2026-09-01T07:53:40Z:clawsweeper_needs_human",
+      "comment_id": "5490760810",
+      "comment_version_key": "5490760810:2026-09-01T07:53:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134965#issuecomment-5490760810",
+      "comment_created_at": "2026-09-01T07:53:40Z",
+      "comment_updated_at": "2026-09-01T07:53:40Z",
+      "comment_body_sha256": "27fbe3ac710f0e2195949c60ea0c06740ec7131c393c13d05273fb21d5c00f8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134965,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress and should complete successfully before landing. (sha=3cbae11c347da2f08f45ea1036227c3e3d39cb3e)",
+      "expected_head_sha": "3cbae11c347da2f08f45ea1036227c3e3d39cb3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T07:54:34.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa50-markdown-tokens",
+        "head_sha": "3cbae11c347da2f08f45ea1036227c3e3d39cb3e",
         "cluster_id": null,
         "job_path": null
       }
