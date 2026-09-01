@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:04:48.695Z",
+  "updated_at": "2026-09-01T01:04:50.164Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134032:5482233462:2026-08-31T17:47:59Z:re_review",
-      "comment_id": "5482233462",
-      "comment_version_key": "5482233462:2026-08-31T17:47:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5482233462",
-      "comment_created_at": "2026-08-31T17:47:59Z",
-      "comment_updated_at": "2026-08-31T17:47:59Z",
-      "comment_body_sha256": "4a0bedf4aff6cc513d51a359917bceec77f2171550ff2d47723abde4ed078820",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134032,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:50:04.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-channel-bookmarks",
-        "head_sha": "e1f75c2b7500251cb9a4185a8be09a28cdb76f85",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134043:5477091143:2026-08-31T17:49:07Z:clawsweeper_needs_human",
       "comment_id": "5477091143",
@@ -32749,6 +32702,39 @@
         "kind": "pull_request",
         "branch": "fix/slack-download-image-sanitization",
         "head_sha": "8e2fb3f812208e876013357c6e1303c2e2d2ffaf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134521:5486033627:2026-09-01T01:04:06Z:clawsweeper_needs_human",
+      "comment_id": "5486033627",
+      "comment_version_key": "5486033627:2026-09-01T01:04:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134521#issuecomment-5486033627",
+      "comment_created_at": "2026-08-31T23:13:14Z",
+      "comment_updated_at": "2026-09-01T01:04:06Z",
+      "comment_body_sha256": "acba9e155cd047b8fcc8a401cf57eaa8a742dd8c01c14503b241015364b218b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134521,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head required CI is incomplete; do not merge until the current head has a clean required-check rollup. (sha=1968da946e458d9798fffdf82ea6d79aa5aca315)",
+      "expected_head_sha": "1968da946e458d9798fffdf82ea6d79aa5aca315",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:04:50.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/130706-completion-owner",
+        "head_sha": "1968da946e458d9798fffdf82ea6d79aa5aca315",
         "cluster_id": null,
         "job_path": null
       }
