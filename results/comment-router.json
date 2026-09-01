@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:54:11.692Z",
+  "updated_at": "2026-09-01T03:54:35.827Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134250:5481120058:2026-08-31T21:59:12Z:clawsweeper_needs_human",
-      "comment_id": "5481120058",
-      "comment_version_key": "5481120058:2026-08-31T21:59:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134250#issuecomment-5481120058",
-      "comment_created_at": "2026-08-31T16:14:20Z",
-      "comment_updated_at": "2026-08-31T21:59:12Z",
-      "comment_body_sha256": "4b0672be41e2d319faf220296dd8ebf90d8061465278d1f35794aafbe98a1925",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134250,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the schema-17 callback in ensureOpenClawAgentDatabaseSchema, reached by Doctor’s media-persistence mig... (sha=d54f46a0bf3d5438b2fafbe09db37695133940a8)",
-      "expected_head_sha": "d54f46a0bf3d5438b2fafbe09db37695133940a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T22:00:11.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-134163",
-        "head_sha": "d54f46a0bf3d5438b2fafbe09db37695133940a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134420:5483461186:2026-08-31T21:59:21Z:clawsweeper_auto_repair",
       "comment_id": "5483461186",
@@ -33269,6 +33236,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134745:5488645892:2026-09-01T03:53:49Z:re_review",
+      "comment_id": "5488645892",
+      "comment_version_key": "5488645892:2026-09-01T03:53:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134745#issuecomment-5488645892",
+      "comment_created_at": "2026-09-01T03:53:49Z",
+      "comment_updated_at": "2026-09-01T03:53:49Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134745,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T03:54:33.816Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-testbox-go-toolchain",
+        "head_sha": "d1f41b86d8529e56a1b003d6a31189045f6ee4c0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
