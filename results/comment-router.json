@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:26:59.271Z",
+  "updated_at": "2026-09-01T03:27:30.478Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3330:5483894828:2026-08-31T20:09:11Z:re_review",
-      "comment_id": "5483894828",
-      "comment_version_key": "5483894828:2026-08-31T20:09:11Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3330#issuecomment-5483894828",
-      "comment_created_at": "2026-08-31T20:09:11Z",
-      "comment_updated_at": "2026-08-31T20:09:11Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3330,
-      "author": "brzvsk",
-      "author_id": 9456996,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T20:16:11.506Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/provider-gatekeeper-prefilter",
-        "head_sha": "f679e2ff22fe2f5a3ffce046563cae778650d198",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3330:5483967085:2026-08-31T20:14:54Z:clawsweeper_needs_human",
       "comment_id": "5483967085",
@@ -33471,6 +33424,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-cron-invalid-migration-134458",
         "head_sha": "786916e4ab2975cd97a5758aecddc38b0be9b4d9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134720:5488450519:2026-09-01T03:26:46Z:clawsweeper_needs_human",
+      "comment_id": "5488450519",
+      "comment_version_key": "5488450519:2026-09-01T03:26:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134720#issuecomment-5488450519",
+      "comment_created_at": "2026-09-01T03:26:46Z",
+      "comment_updated_at": "2026-09-01T03:26:46Z",
+      "comment_body_sha256": "90037ce43dab914e0447099b1616dfc312f2c3dce0ad77fc342ab25c5a60e334",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134720,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress. Local Vitest sources were unavailable and upstream retrieval failed in this read-only environment, so the lifecycle contract was not independently... (sha=01e168ed287760d5884da8020a38b3ff67b7a30e)",
+      "expected_head_sha": "01e168ed287760d5884da8020a38b3ff67b7a30e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T03:27:30.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-cli-startup-suite-imports",
+        "head_sha": "01e168ed287760d5884da8020a38b3ff67b7a30e",
         "cluster_id": null,
         "job_path": null
       }
