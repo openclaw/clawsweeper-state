@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T05:15:30.616Z",
+  "updated_at": "2026-09-01T05:15:51.042Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134032:5487214344:2026-09-01T01:26:30Z:re_review",
-      "comment_id": "5487214344",
-      "comment_version_key": "5487214344:2026-09-01T01:26:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134032#issuecomment-5487214344",
-      "comment_created_at": "2026-09-01T01:26:30Z",
-      "comment_updated_at": "2026-09-01T01:26:30Z",
-      "comment_body_sha256": "5c8401bf8c32da13e8392c48993a89385accd57fbad54565cf05e087b3c120a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134032,
-      "author": "zw-xysk",
-      "author_id": 294457748,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T01:27:12.541Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-channel-bookmarks",
-        "head_sha": "527ff97d29e2c9680f25810cfdc86a6ff80da4b9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134582:5487173405:2026-09-01T01:22:43Z:re_review",
       "comment_id": "5487173405",
@@ -33303,6 +33256,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-registry-package-build-normalization",
         "head_sha": "48ede80ce12165bf2851ab71783870ec52d6f5ce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134815:5489246566:2026-09-01T05:15:09Z:clawsweeper_needs_human",
+      "comment_id": "5489246566",
+      "comment_version_key": "5489246566:2026-09-01T05:15:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134815#issuecomment-5489246566",
+      "comment_created_at": "2026-09-01T05:15:09Z",
+      "comment_updated_at": "2026-09-01T05:15:09Z",
+      "comment_body_sha256": "ff4a8d83e3980a01a2e1752beac323beabc6b1c2085515c93a0fe4d1407ecd54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Reef’s introduced OAuth guard path is exercised through plugin-runtime mocks, while the PR body expressly disclaims a real OAuth request; an af... (sha=16172fa50768bf60b06c1638e594fc7e69bd0426)",
+      "expected_head_sha": "16172fa50768bf60b06c1638e594fc7e69bd0426",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T05:15:51.042Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/reef-openai-oauth-guard",
+        "head_sha": "16172fa50768bf60b06c1638e594fc7e69bd0426",
         "cluster_id": null,
         "job_path": null
       }
