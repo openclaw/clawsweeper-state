@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T22:29:40.548Z",
+  "updated_at": "2026-09-01T22:30:30.853Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135017:5491374394:2026-09-01T15:00:22Z:clawsweeper_auto_repair",
-      "comment_id": "5491374394",
-      "comment_version_key": "5491374394:2026-09-01T15:00:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135017#issuecomment-5491374394",
-      "comment_created_at": "2026-09-01T08:45:25Z",
-      "comment_updated_at": "2026-09-01T15:00:22Z",
-      "comment_body_sha256": "154950b54121ae46de69cc84978edcec9ffe7aea6b71b72a0034fec7f4afad55",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135017,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=92722decbef232edb4ab7c69f798183a61cd1b25)",
-      "expected_head_sha": "92722decbef232edb4ab7c69f798183a61cd1b25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T17:39:00.457Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-mythos5-context-windows",
-        "head_sha": "92722decbef232edb4ab7c69f798183a61cd1b25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135016:5491412905:2026-09-01T16:42:42Z:clawsweeper_needs_human",
       "comment_id": "5491412905",
@@ -32965,6 +32932,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121557:5501291657:2026-09-01T22:29:26Z:re_review",
+      "comment_id": "5501291657",
+      "comment_version_key": "5501291657:2026-09-01T22:29:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121557#issuecomment-5501291657",
+      "comment_created_at": "2026-09-01T22:29:26Z",
+      "comment_updated_at": "2026-09-01T22:29:26Z",
+      "comment_body_sha256": "8ca9c7321d2a97c9f7da3e135182de51dd297778a38c281f24173f67320dc83c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121557,
+      "author": "zyw02",
+      "author_id": 59604424,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T22:30:28.139Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-websearch-global-kill-switch",
+        "head_sha": "a9e565803358f7d1631f60f0cc9aac4274ad68fc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
