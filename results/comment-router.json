@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-01T09:48:35.275Z",
+  "updated_at": "2026-09-01T09:47:20.914Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134633:5489400270:2026-09-01T05:35:14Z:re_review",
+      "comment_id": "5489400270",
+      "comment_version_key": "5489400270:2026-09-01T05:35:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134633#issuecomment-5489400270",
+      "comment_created_at": "2026-09-01T05:35:14Z",
+      "comment_updated_at": "2026-09-01T05:35:14Z",
+      "comment_body_sha256": "295bf2f58218a878311b809b56af24b0e8d122bd3015eca8858eccc3778c185d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134633,
+      "author": "HAPPYFAPTAIN",
+      "author_id": 132920690,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T05:36:00.425Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stream-auto-follow-settle",
+        "head_sha": "0c2de90c36c83d121c7d10a67b665e0b241c5262",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132883:5465317114:2026-09-01T05:34:00Z:clawsweeper_auto_repair",
       "comment_id": "5465317114",
@@ -33201,39 +33248,6 @@
         "kind": "pull_request",
         "branch": "fix/restart-recovery-followup",
         "head_sha": "fcb73239f10edb14f46d407e836b317d763c9197",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:89:5482878521:2026-09-01T09:43:51Z:clawsweeper_needs_human",
-      "comment_id": "5482878521",
-      "comment_version_key": "5482878521:2026-09-01T09:43:51Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/89#issuecomment-5482878521",
-      "comment_created_at": "2026-08-31T18:44:46Z",
-      "comment_updated_at": "2026-09-01T09:43:51Z",
-      "comment_body_sha256": "afb473b9ecdd02cd7991358993e626d87f07eeff1761eed55bbd2a8eaf0fafa0",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 89,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is appropriate because the complete dependency-refresh implementation is already present and needs only normal maintainer merge review. (sha=90c35540d88ceff7ba093d87875397c481174ca0)",
-      "expected_head_sha": "90c35540d88ceff7ba093d87875397c481174ca0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T09:48:35.275Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/development-d865e249f0",
-        "head_sha": "90c35540d88ceff7ba093d87875397c481174ca0",
         "cluster_id": null,
         "job_path": null
       }
