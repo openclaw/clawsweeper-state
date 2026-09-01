@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:26:58.955Z",
+  "updated_at": "2026-09-01T11:27:51.067Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1331:5490080587:2026-09-01T06:53:28Z:re_review",
-      "comment_id": "5490080587",
-      "comment_version_key": "5490080587:2026-09-01T06:53:28Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1331#issuecomment-5490080587",
-      "comment_created_at": "2026-09-01T06:53:28Z",
-      "comment_updated_at": "2026-09-01T06:53:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1331,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T06:54:07.004Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/simplify-review-followups",
-        "head_sha": "8a105aa9396f0b2297430c76c480f3d34c0ba893",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134670:5488098559:2026-09-01T06:53:29Z:clawsweeper_auto_repair",
       "comment_id": "5488098559",
@@ -33762,6 +33715,39 @@
         "kind": "pull_request",
         "branch": "fix/f003-huggingface-retry-after-cap",
         "head_sha": "b7be605e23df7db4203400710d007f0a71c2cd2e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135057:5492144805:2026-09-01T11:26:59Z:clawsweeper_needs_human",
+      "comment_id": "5492144805",
+      "comment_version_key": "5492144805:2026-09-01T11:26:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135057#issuecomment-5492144805",
+      "comment_created_at": "2026-09-01T09:50:22Z",
+      "comment_updated_at": "2026-09-01T11:26:59Z",
+      "comment_body_sha256": "7ea06704262d1ccd531fd74e68d68babb335f9f7acacb37dd45b23a21c83f600",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the registry comparison used by the snapshot freshness selector and then the registry status command; the PR supplies a fo... (sha=adceda57b1a1b54816f00f522e963ac99deef9ce)",
+      "expected_head_sha": "adceda57b1a1b54816f00f522e963ac99deef9ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:27:51.067Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-registry-packagebuild-134657",
+        "head_sha": "adceda57b1a1b54816f00f522e963ac99deef9ce",
         "cluster_id": null,
         "job_path": null
       }
