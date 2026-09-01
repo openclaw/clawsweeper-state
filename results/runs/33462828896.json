@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134657",
+  "mode": "autonomous",
+  "run_id": "33462828896",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33462828896",
+  "head_sha": "ced376c343537d09f840bb9093c5cc1c8ff23c88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134657.md",
+  "published_at": "2026-09-01T02:55:58.060Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134657",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134657",
+  "canonical_pr": null,
+  "summary": "#134657 is a reproducible, narrow plugin-registry freshness defect on main 41ba63e169ffdff68c7764627beef3e64f82bafc. A fix artifact is ready, but this read-only worker cannot patch or run the required regressions; the repository-required sibling Codex source is also unavailable for the mandatory direct inspection gate.",
+  "actions": [
+    {
+      "target": "#133773",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical linked context only; no action is appropriate."
+    },
+    {
+      "target": "#134657",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134657",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment; the deterministic executor can apply the narrow artifact on clawsweeper/issue-openclaw-openclaw-134657."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134657",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134657",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited fix PR after applying and validating the artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
