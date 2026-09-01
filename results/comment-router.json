@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:04:52.121Z",
+  "updated_at": "2026-09-01T11:05:03.096Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111392:5174401186:2026-08-04T03:52:16Z:re_review",
-      "comment_id": "5174401186",
-      "comment_version_key": "5174401186:2026-08-04T03:52:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111392#issuecomment-5174401186",
-      "comment_created_at": "2026-08-04T03:52:16Z",
-      "comment_updated_at": "2026-08-04T03:52:16Z",
-      "comment_body_sha256": "0e04c2fb0eaf0057ed92dde22af8b43a2fc2506712aa049e839e753aa71cf16b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111392,
-      "author": "wuqxuan",
-      "author_id": 3159199,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T06:30:14.155Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-09-01T05:58:16Z:clawsweeper_auto_repair",
       "comment_id": "5304174384",
@@ -33869,6 +33842,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131329:5492961895:2026-09-01T11:04:15Z:re_review",
+      "comment_id": "5492961895",
+      "comment_version_key": "5492961895:2026-09-01T11:04:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131329#issuecomment-5492961895",
+      "comment_created_at": "2026-09-01T11:04:15Z",
+      "comment_updated_at": "2026-09-01T11:04:15Z",
+      "comment_body_sha256": "f4fd78c9c89e81308fcc450e077533f1056078c49681f3cf4b72e5262bd30341",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131329,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T11:05:00.513Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repro/memory-lancedb-autocapture-cursor-reset",
+        "head_sha": "784cd56f1d5b987e670dc2fee3f4873a6cf9c2c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
