@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134638",
+  "mode": "autonomous",
+  "run_id": "33461212386",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33461212386",
+  "head_sha": "ced376c343537d09f840bb9093c5cc1c8ff23c88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134638.md",
+  "published_at": "2026-09-01T02:22:42.671Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134638",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134638",
+  "canonical_pr": null,
+  "summary": "#134638 remains a real, narrow installer diagnostic-lifecycle bug on main. The proposed repair is a one-line removal plus a regression assertion, but this read-only checkout cannot create the branch or execute the pnpm test because Corepack cannot create its cache.",
+  "actions": [
+    {
+      "target": "#134201",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134638",
+      "candidate_fix": null,
+      "reason": "Closed context only; no closure or mutation is appropriate."
+    },
+    {
+      "target": "#134236",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134638",
+      "candidate_fix": null,
+      "reason": "Merged historical context, not a candidate fix for this lifecycle defect."
+    },
+    {
+      "target": "#134638",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134638",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only worker environment; the fix artifact is ready for a writable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134638",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134638",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate this focused new PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
