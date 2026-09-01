@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:10:45.904Z",
+  "updated_at": "2026-09-01T23:11:35.284Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5498851040:2026-09-01T18:55:24Z:re_review",
-      "comment_id": "5498851040",
-      "comment_version_key": "5498851040:2026-09-01T18:55:24Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5498851040",
-      "comment_created_at": "2026-09-01T18:55:24Z",
-      "comment_updated_at": "2026-09-01T18:55:24Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T18:56:19.698Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "0aadf6ccc6a06d810d4c7d525924664a22508566",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-09-01T18:22:32Z:clawsweeper_auto_repair",
       "comment_id": "4876928065",
@@ -32723,6 +32676,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135629:5501711300:2026-09-01T23:10:34Z:clawsweeper_needs_human",
+      "comment_id": "5501711300",
+      "comment_version_key": "5501711300:2026-09-01T23:10:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135629#issuecomment-5501711300",
+      "comment_created_at": "2026-09-01T23:10:34Z",
+      "comment_updated_at": "2026-09-01T23:10:34Z",
+      "comment_body_sha256": "7c73a779dff7abfed3bc2e59b537c20bf4cd4836f983810988b0cd330d8eb2fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135629,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned dependency patch changes shared dropdown behavior; official upstream source could not be inspected in this environment, so maintainers should confirm the patch against the... (sha=1d0954322dd796f980b6bde7ee38fef5fc619873)",
+      "expected_head_sha": "1d0954322dd796f980b6bde7ee38fef5fc619873",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:11:35.284Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/optimistic-brattain-e0fcfd",
+        "head_sha": "1d0954322dd796f980b6bde7ee38fef5fc619873",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
