@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:46:39.636Z",
+  "updated_at": "2026-09-01T19:46:40.323Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134858:5489538044:2026-09-01T14:42:28Z:clawsweeper_needs_human",
-      "comment_id": "5489538044",
-      "comment_version_key": "5489538044:2026-09-01T14:42:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134858#issuecomment-5489538044",
-      "comment_created_at": "2026-09-01T05:52:31Z",
-      "comment_updated_at": "2026-09-01T14:42:28Z",
-      "comment_body_sha256": "88fa7d9b754d5c6c4d15ce3275721ddcfa93a0d930f1ebbdba1e2243e73cd21d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134858,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the provider POST request at src/plugins/openai-compatible-embedding-provider.ts:309; the PR body describes a D... (sha=379af832c2a33e7c8b360857d7a3b1b1cc40aed8)",
-      "expected_head_sha": "379af832c2a33e7c8b360857d7a3b1b1cc40aed8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T14:43:44.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/memory-embeddings-env-proxy",
-        "head_sha": "379af832c2a33e7c8b360857d7a3b1b1cc40aed8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135044:5495704652:2026-09-01T14:42:51Z:re_review",
       "comment_id": "5495704652",
@@ -33445,6 +33412,53 @@
         "kind": "pull_request",
         "branch": "dev/stevenlee/cgp-02-plugin-readiness",
         "head_sha": "a669f4946b62590bc721a0c02d31c975814f321b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132089:5499479414:2026-09-01T19:45:50Z:re_review",
+      "comment_id": "5499479414",
+      "comment_version_key": "5499479414:2026-09-01T19:45:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132089#issuecomment-5499479414",
+      "comment_created_at": "2026-09-01T19:45:50Z",
+      "comment_updated_at": "2026-09-01T19:45:50Z",
+      "comment_body_sha256": "1eaf8037152a12f2ffb2ac57a53bc20447d45e12a0e73229690fa18383bb64c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132089,
+      "author": "stevenlee-oai",
+      "author_id": 213687449,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T19:46:38.007Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/cgp-03-plugin-recheck",
+        "head_sha": "080c97a4379c3246cab40acec97a33772268ff84",
         "cluster_id": null,
         "job_path": null
       },
