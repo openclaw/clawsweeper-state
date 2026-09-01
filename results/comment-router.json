@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T20:57:23.225Z",
+  "updated_at": "2026-09-01T20:57:25.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135243:5496720048:2026-09-01T15:58:56Z:re_review",
-      "comment_id": "5496720048",
-      "comment_version_key": "5496720048:2026-09-01T15:58:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135243#issuecomment-5496720048",
-      "comment_created_at": "2026-09-01T15:58:56Z",
-      "comment_updated_at": "2026-09-01T15:58:56Z",
-      "comment_body_sha256": "26233b34ac733d3d72dcd77e88dfd4c9dfe518c79075a8c8b064f9ab4e698cb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135243,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T15:59:51.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/backup-exclude-nested-workspace",
-        "head_sha": "6239dd86640216cc6eb0d402b60148eaf526d30c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:70:5456409647:2026-09-01T15:59:47Z:clawsweeper_needs_human",
       "comment_id": "5456409647",
@@ -33477,6 +33430,39 @@
         "kind": "pull_request",
         "branch": "fix/appearance-accent-section-order",
         "head_sha": "16e93b2a362a12fa81ee7b4c8c1133a027686eb6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135469:5499843636:2026-09-01T20:56:30Z:clawsweeper_needs_human",
+      "comment_id": "5499843636",
+      "comment_version_key": "5499843636:2026-09-01T20:56:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135469#issuecomment-5499843636",
+      "comment_created_at": "2026-09-01T20:16:15Z",
+      "comment_updated_at": "2026-09-01T20:56:30Z",
+      "comment_body_sha256": "eabff026c30ad0ce42b05f21a5def971880a727f3d78b9b77adfbe09b85a0c1c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135469,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the timing-refit workflow’s pr-body input, which the generated-PR action carries through PR_BODY to GitHub PR c... (sha=e02cfe1d76a934daa9c594da80661df093855154)",
+      "expected_head_sha": "e02cfe1d76a934daa9c594da80661df093855154",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T20:57:25.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-refit-pr-wording",
+        "head_sha": "e02cfe1d76a934daa9c594da80661df093855154",
         "cluster_id": null,
         "job_path": null
       }
