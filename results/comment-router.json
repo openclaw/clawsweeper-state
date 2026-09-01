@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:21:21.467Z",
+  "updated_at": "2026-09-01T18:21:51.840Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135137:5493096130:2026-09-01T13:09:51Z:clawsweeper_auto_repair",
-      "comment_id": "5493096130",
-      "comment_version_key": "5493096130:2026-09-01T13:09:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135137#issuecomment-5493096130",
-      "comment_created_at": "2026-09-01T11:16:37Z",
-      "comment_updated_at": "2026-09-01T13:09:51Z",
-      "comment_body_sha256": "60854562c6cc4360b80840e66302e1660560bf3ced886f9e3322e7cd11581dff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135137,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d7df235814c34f993d658c41f55af352c023cf76)",
-      "expected_head_sha": "d7df235814c34f993d658c41f55af352c023cf76",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T13:10:43.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/active-memory-pt-br-135085",
-        "head_sha": "d7df235814c34f993d658c41f55af352c023cf76",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:239:5373523641:2026-09-01T13:09:52Z:clawsweeper_auto_repair",
       "comment_id": "5373523641",
@@ -33208,6 +33175,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T18:21:21.467Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1275:5498425054:2026-09-01T18:20:59Z:re_review",
+      "comment_id": "5498425054",
+      "comment_version_key": "5498425054:2026-09-01T18:20:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1275#issuecomment-5498425054",
+      "comment_created_at": "2026-09-01T18:20:59Z",
+      "comment_updated_at": "2026-09-01T18:20:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1275,
+      "author": "larroy",
+      "author_id": 928489,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T18:21:45.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/uninstall-info-and-skill",
+        "head_sha": "0114b18566f653bd9c95a92abdb2d49758ea5a91",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
