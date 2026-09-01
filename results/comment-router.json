@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:40:08.532Z",
+  "updated_at": "2026-09-01T19:40:25.662Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132552:5495547801:2026-09-01T14:31:21Z:re_review",
-      "comment_id": "5495547801",
-      "comment_version_key": "5495547801:2026-09-01T14:31:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132552#issuecomment-5495547801",
-      "comment_created_at": "2026-09-01T14:31:21Z",
-      "comment_updated_at": "2026-09-01T14:31:21Z",
-      "comment_body_sha256": "1b762f009dc3f964b017b4d54665e1b91dba84db12f84bd0b7411ce63b014701",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132552,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:32:05.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-98468-scp-timeout",
-        "head_sha": "34a4ac8678959d537c07bbb63ad2c09adbebcfa7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134826:5495554247:2026-09-01T14:31:49Z:re_review",
       "comment_id": "5495554247",
@@ -33473,6 +33426,39 @@
         "kind": "pull_request",
         "branch": "automation/update-convex-ai-files",
         "head_sha": "94218ea342c7bae22eb02a4f4367a2f86fb88096",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135501:5499387899:2026-09-01T19:38:24Z:clawsweeper_needs_human",
+      "comment_id": "5499387899",
+      "comment_version_key": "5499387899:2026-09-01T19:38:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135501#issuecomment-5499387899",
+      "comment_created_at": "2026-09-01T19:38:24Z",
+      "comment_updated_at": "2026-09-01T19:38:24Z",
+      "comment_body_sha256": "82f7784a21a8ac5139daf59dddf7970296c1a415563bcfac78a12c98c54dd54f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135501,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; the source review does not replace completion of the macOS-focused checks reported by the branch. (sha=a14d1cd4cfa41412c6c87b8ccc72e4a1e656f52f)",
+      "expected_head_sha": "a14d1cd4cfa41412c6c87b8ccc72e4a1e656f52f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T19:40:25.662Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/nifty-swirles-759dc8",
+        "head_sha": "a14d1cd4cfa41412c6c87b8ccc72e4a1e656f52f",
         "cluster_id": null,
         "job_path": null
       }
