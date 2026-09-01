@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T09:36:08.829Z",
+  "updated_at": "2026-09-01T09:36:12.079Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:114678:5095208319:2026-09-01T05:20:46Z:clawsweeper_needs_human",
-      "comment_id": "5095208319",
-      "comment_version_key": "5095208319:2026-09-01T05:20:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114678#issuecomment-5095208319",
-      "comment_created_at": "2026-07-27T18:27:53Z",
-      "comment_updated_at": "2026-09-01T05:20:46Z",
-      "comment_body_sha256": "9821f8f2e2451599f44651d30d274ba68f228e227cca485275d798d8d58807c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114678,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a compatibility-sensitive persisted-state path: an empty legacy directory becomes a symlink, so merge only after exact-head CI completes and preserves the fail-closed outcome... (sha=fe2b921d6d70c23f50c85c64c0669017776e78bf)",
-      "expected_head_sha": "fe2b921d6d70c23f50c85c64c0669017776e78bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:26:05.580Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/112395-state-dir-skip-notice",
-        "head_sha": "fe2b921d6d70c23f50c85c64c0669017776e78bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119501:5188169696:2026-09-01T05:15:00Z:clawsweeper_auto_repair",
       "comment_id": "5188169696",
@@ -33145,6 +33112,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135034:5491959037:2026-09-01T09:35:03Z:re_review",
+      "comment_id": "5491959037",
+      "comment_version_key": "5491959037:2026-09-01T09:35:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135034#issuecomment-5491959037",
+      "comment_created_at": "2026-09-01T09:35:03Z",
+      "comment_updated_at": "2026-09-01T09:35:03Z",
+      "comment_body_sha256": "4d62ccd5e93a94ad91616181c8c57abe73412cbc6367aae12bcb6a9da117039c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135034,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T09:36:09.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-stream-normalization-20260901",
+        "head_sha": "ba47cf5f4b506fce3396d27c2300b6c8abf761e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
