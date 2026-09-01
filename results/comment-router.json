@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-01T07:44:07.894Z",
+  "updated_at": "2026-09-01T07:43:57.394Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134738:5488752323:2026-09-01T04:09:12Z:re_review",
+      "comment_id": "5488752323",
+      "comment_version_key": "5488752323:2026-09-01T04:09:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134738#issuecomment-5488752323",
+      "comment_created_at": "2026-09-01T04:09:12Z",
+      "comment_updated_at": "2026-09-01T04:09:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134738,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T04:09:53.511Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "995",
+        "head_sha": "202a4ca738ddfabe2829f73af556bcc06e3774c1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134766:5488753357:2026-09-01T04:09:21Z:clawsweeper_needs_human",
       "comment_id": "5488753357",
@@ -32614,39 +32661,6 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134970:5490629462:2026-09-01T07:43:19Z:clawsweeper_needs_human",
-      "comment_id": "5490629462",
-      "comment_version_key": "5490629462:2026-09-01T07:43:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134970#issuecomment-5490629462",
-      "comment_created_at": "2026-09-01T07:43:19Z",
-      "comment_updated_at": "2026-09-01T07:43:19Z",
-      "comment_body_sha256": "1b1583d3bb18c3be0c981437ccebf8b8267f983ea1772d02b336d84c2af2c7f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134970,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Require authority over the linked credential (P1)** - requireProfileMutationAccess proves only that the caller owns profileId; the supplied authProfileId is accepted whenever it exists. A write-scoped user can t...; Review finding: [P1] Require authority over the linked credential — src/gateway/server-methods/users.ts:123-146 - [P2] Do not materialize auth-link storage on profile reads — src/... (sha=4b6ae9de5af09805824835a950657f669136666b)",
-      "expected_head_sha": "4b6ae9de5af09805824835a950657f669136666b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T07:44:07.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/multiplayer-mechanics-df097d",
-        "head_sha": "4b6ae9de5af09805824835a950657f669136666b",
-        "cluster_id": null,
-        "job_path": null
       }
     }
   ]
