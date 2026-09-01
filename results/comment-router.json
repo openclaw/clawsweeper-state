@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:34:31.111Z",
+  "updated_at": "2026-09-01T18:35:37.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125130:5313408219:2026-08-17T08:02:41Z:re_review",
-      "comment_id": "5313408219",
-      "comment_version_key": "5313408219:2026-08-17T08:02:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125130#issuecomment-5313408219",
-      "comment_created_at": "2026-08-17T08:02:41Z",
-      "comment_updated_at": "2026-08-17T08:02:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125130,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T13:25:32.803Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125130:5322677728:2026-08-18T02:23:22Z:re_review",
       "comment_id": "5322677728",
@@ -33034,6 +33007,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T18:34:31.111Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135348:5497324659:2026-09-01T18:34:40Z:clawsweeper_needs_human",
+      "comment_id": "5497324659",
+      "comment_version_key": "5497324659:2026-09-01T18:34:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135348#issuecomment-5497324659",
+      "comment_created_at": "2026-09-01T16:46:27Z",
+      "comment_updated_at": "2026-09-01T18:34:40Z",
+      "comment_body_sha256": "cb94a820e6f9ed62948fb8e854ab902353e2107ea1c6fd28d46931114bf120a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135348,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair adds 22 net production lines to maintain a second active key; future hovercard lifecycle edits must keep the paired source-key and progress-key reset, generation, and cache... (sha=b9f05f406fc6120f946789995dc3f43488bd1896)",
+      "expected_head_sha": "b9f05f406fc6120f946789995dc3f43488bd1896",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:35:37.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-progress-card-owner-135156",
+        "head_sha": "b9f05f406fc6120f946789995dc3f43488bd1896",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
