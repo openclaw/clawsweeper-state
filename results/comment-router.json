@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T17:26:56.527Z",
+  "updated_at": "2026-09-01T17:27:06.990Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5309166762:2026-08-16T19:06:11Z:re_review",
-      "comment_id": "5309166762",
-      "comment_version_key": "5309166762:2026-08-16T19:06:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5309166762",
-      "comment_created_at": "2026-08-16T19:06:11Z",
-      "comment_updated_at": "2026-08-16T19:06:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:30:37.563Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5311656797:2026-08-17T04:07:49Z:re_review",
       "comment_id": "5311656797",
@@ -32737,6 +32710,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:220:5497557033:2026-09-01T17:26:24Z:clawsweeper_needs_human",
+      "comment_id": "5497557033",
+      "comment_version_key": "5497557033:2026-09-01T17:26:24Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/220#issuecomment-5497557033",
+      "comment_created_at": "2026-09-01T17:05:53Z",
+      "comment_updated_at": "2026-09-01T17:26:24Z",
+      "comment_body_sha256": "c25fbb4f2ae97f9d07f0fae248479a562a264f2ca868c72dd61a228135b2948f",
+      "repo": "openclaw/clickclack",
+      "issue_number": 220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared composer changes existing keyboard behavior across five surfaces; the exact-head Playwright E2E run is still in progress, so hosted validation of the final Escape-routing c... (sha=846084f6dc4135ac6f419ee59ef055c1a44961e6)",
+      "expected_head_sha": "846084f6dc4135ac6f419ee59ef055c1a44961e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T17:27:06.990Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-composer-keyboard",
+        "head_sha": "846084f6dc4135ac6f419ee59ef055c1a44961e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
