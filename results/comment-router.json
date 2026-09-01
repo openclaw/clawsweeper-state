@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T17:55:22.991Z",
+  "updated_at": "2026-09-01T17:55:32.493Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135155:5494239707:2026-09-01T12:53:21Z:re_review",
-      "comment_id": "5494239707",
-      "comment_version_key": "5494239707:2026-09-01T12:53:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135155#issuecomment-5494239707",
-      "comment_created_at": "2026-09-01T12:53:21Z",
-      "comment_updated_at": "2026-09-01T12:53:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135155,
-      "author": "brettdaman",
-      "author_id": 14179855,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T12:57:25.819Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-cron-admission-before-cleanup",
-        "head_sha": "28374ac7e122894da4abb0e7d44a57d1bbee35c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:83611:4478164772:2026-09-01T11:58:20Z:clawsweeper_needs_human",
       "comment_id": "4478164772",
@@ -33397,6 +33350,39 @@
         "kind": "pull_request",
         "branch": "steipete/musing-hawking-3bd632",
         "head_sha": "4d003c7a43d29345216df22a9550a60c745a289f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135359:5497447523:2026-09-01T17:54:36Z:clawsweeper_needs_human",
+      "comment_id": "5497447523",
+      "comment_version_key": "5497447523:2026-09-01T17:54:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135359#issuecomment-5497447523",
+      "comment_created_at": "2026-09-01T16:56:53Z",
+      "comment_updated_at": "2026-09-01T17:54:36Z",
+      "comment_body_sha256": "70ae9a8e0bf19c5952f49956055ab7c49df54136dc78d96cd35f523bb5235f8f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by three net lines for this bug fix; the named remote-controlled key and invariant comment make the ownership boundary explicit, and a net-neutral rewrite would... (sha=bf7ff42189eb6c4f8f6ede94ea0a01e9f0e2b210)",
+      "expected_head_sha": "bf7ff42189eb6c4f8f6ede94ea0a01e9f0e2b210",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T17:55:32.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-msgtype-prototype-lookup",
+        "head_sha": "bf7ff42189eb6c4f8f6ede94ea0a01e9f0e2b210",
         "cluster_id": null,
         "job_path": null
       }
