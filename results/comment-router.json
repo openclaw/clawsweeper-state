@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:55:13.671Z",
+  "updated_at": "2026-09-01T19:55:48.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134413:5483333156:2026-09-01T14:58:20Z:clawsweeper_needs_human",
-      "comment_id": "5483333156",
-      "comment_version_key": "5483333156:2026-09-01T14:58:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134413#issuecomment-5483333156",
-      "comment_created_at": "2026-08-31T19:22:46Z",
-      "comment_updated_at": "2026-09-01T14:58:20Z",
-      "comment_body_sha256": "34731691739c063de4f6597d9b78f127f45f79baa1fb976b4f4b75d67726987d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134413,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Substantive checks are skipped on this draft, and the supplied WebKit attachments could not be independently opened because GitHub hostname resolution was unavailable; verify the stat... (sha=d3df5025e779596be4f7d09659150fc38e2d8c5c)",
-      "expected_head_sha": "d3df5025e779596be4f7d09659150fc38e2d8c5c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T15:06:18.072Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-composer-default-icon",
-        "head_sha": "d3df5025e779596be4f7d09659150fc38e2d8c5c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134815:5489246566:2026-09-01T14:35:55Z:clawsweeper_auto_repair",
       "comment_id": "5489246566",
@@ -33390,6 +33357,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135199:5499588965:2026-09-01T19:54:52Z:re_review",
+      "comment_id": "5499588965",
+      "comment_version_key": "5499588965:2026-09-01T19:54:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135199#issuecomment-5499588965",
+      "comment_created_at": "2026-09-01T19:54:52Z",
+      "comment_updated_at": "2026-09-01T19:54:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135199,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T19:55:45.484Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/protocol-schema-signature-owner",
+        "head_sha": "c37ed5d96f76a74f6b88ec322310df7627e668fc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
