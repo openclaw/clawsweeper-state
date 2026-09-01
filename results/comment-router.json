@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:43:16.339Z",
+  "updated_at": "2026-09-01T23:43:36.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135505:5499531106:2026-09-01T19:49:58Z:clawsweeper_needs_human",
-      "comment_id": "5499531106",
-      "comment_version_key": "5499531106:2026-09-01T19:49:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135505#issuecomment-5499531106",
-      "comment_created_at": "2026-09-01T19:49:58Z",
-      "comment_updated_at": "2026-09-01T19:49:58Z",
-      "comment_body_sha256": "7ddccf7c38c122783fcda6a27be4e2f1b86f3adc9a4862b2dea3bbcaff542dc7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135505,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug-fix code has a net production increase of 80 lines; it is concentrated in shared selector propagation and the owner helper, so further special-case owner paths should not be a... (sha=246c05bae97da7a7c821e1d7b520a38d8e70e68f)",
-      "expected_head_sha": "246c05bae97da7a7c821e1d7b520a38d8e70e68f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T19:51:07.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-134421-channel-auth",
-        "head_sha": "246c05bae97da7a7c821e1d7b520a38d8e70e68f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135419:5499540134:2026-09-01T19:50:42Z:clawsweeper_needs_human",
       "comment_id": "5499540134",
@@ -32611,6 +32578,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135016:5502110643:2026-09-01T23:42:35Z:re_review",
+      "comment_id": "5502110643",
+      "comment_version_key": "5502110643:2026-09-01T23:42:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135016#issuecomment-5502110643",
+      "comment_created_at": "2026-09-01T23:42:35Z",
+      "comment_updated_at": "2026-09-01T23:42:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135016,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T23:43:33.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-recovery-followup",
+        "head_sha": "e1995fcbf3d873d86a1b4e290adebdd0d76b22c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
