@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135084",
+  "mode": "autonomous",
+  "run_id": "33500713367",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33500713367",
+  "head_sha": "b445c64591bcf9bf6d68122f28f6c95c4fa1dbf4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135084.md",
+  "published_at": "2026-09-01T11:26:38.341Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135084",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135084",
+  "canonical_pr": null,
+  "summary": "No fix PR is appropriate from current main: the reported synchronous first-turn stall cannot be reproduced in source because automatic curated reads already return [] while launching repair without awaiting it. The required Codex sibling checkout is also unavailable in this read-only environment, so no code-change verdict or proof claim can be completed.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/135084",
+      "action": "keep_canonical",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135084",
+      "candidate_fix": null,
+      "reason": "The job requires stopping when the failing regression does not reproduce on latest main. Current source and its dedicated gated regression cover the no-wait behavior; changing the implementation solely to substitute the detached-maintenance helper would not repair the reported first-turn stall without a new demonstrated failure."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

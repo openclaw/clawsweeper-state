@@ -2,32 +2,32 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135084"
 mode: "autonomous"
-run_id: "33496617149"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33496617149"
+run_id: "33500713367"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33500713367"
 head_sha: "b445c64591bcf9bf6d68122f28f6c95c4fa1dbf4"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T10:48:19.310Z"
+published_at: "2026-09-01T11:26:38.341Z"
 canonical: "https://github.com/openclaw/openclaw/issues/135084"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/135084"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-135084
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33496617149](https://github.com/openclaw/clawsweeper/actions/runs/33496617149)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33500713367](https://github.com/openclaw/clawsweeper/actions/runs/33500713367)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,20 +35,20 @@ Canonical: https://github.com/openclaw/openclaw/issues/135084
 
 ## Summary
 
-#135084 remains the open canonical bug. Current main c18a2c280206921fe072182a7a1b1425c67a7809 still awaits provenance repair from the automatic curated-read path. A narrow owner-local fix is planned, but this worker cannot implement or validate it: the checkout is read-only, dependencies lack tsx/Vitest, and the mandatory sibling ../codex source is absent and cannot be cloned in this sandbox.
+No fix PR is appropriate from current main: the reported synchronous first-turn stall cannot be reproduced in source because automatic curated reads already return [] while launching repair without awaiting it. The required Codex sibling checkout is also unavailable in this read-only environment, so no code-change verdict or proof claim can be completed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/135084
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #135084 | fix_needed | planned | canonical | The source evidence supports an owner-local repair with no config, schema, dependency, or prompt-policy change; implementation is blocked only by the worker environment and mandatory Codex-source gate. |
-| cluster:issue-openclaw-openclaw-135084 | build_fix_artifact | blocked | canonical | Executable implementation and proof require a writable checkout with dependencies plus the mandatory sibling Codex source. |
+| https://github.com/openclaw/openclaw/issues/135084 | keep_canonical | blocked | canonical | The job requires stopping when the failing regression does not reproduce on latest main. Current source and its dedicated gated regression cover the no-wait behavior; changing the implementation solely to substitute the detached-maintenance helper would not repair the reported first-turn stall without a new demonstrated failure. |
 
 ## Needs Human
 
-- Provide a writable repair environment with the exact sibling ../codex checkout available (or an approved equivalent that satisfies AGENTS.md), then execute the attached narrow fix and validation plan.
+- none
