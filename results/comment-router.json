@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:53:56.970Z",
+  "updated_at": "2026-09-01T00:54:19.657Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134303:5482093510:2026-08-31T17:35:51Z:re_review",
-      "comment_id": "5482093510",
-      "comment_version_key": "5482093510:2026-08-31T17:35:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134303#issuecomment-5482093510",
-      "comment_created_at": "2026-08-31T17:35:51Z",
-      "comment_updated_at": "2026-08-31T17:35:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134303,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:36:38.077Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pollybot/fix-127615-config-mutation",
-        "head_sha": "23ec2a49afb8db11e7583642306f93d0c1df61ac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1704:5482108457:2026-08-31T17:37:04Z:clawsweeper_needs_human",
       "comment_id": "5482108457",
@@ -32848,6 +32801,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134173:5479834158:2026-09-01T00:53:22Z:clawsweeper_needs_human",
+      "comment_id": "5479834158",
+      "comment_version_key": "5479834158:2026-09-01T00:53:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134173#issuecomment-5479834158",
+      "comment_created_at": "2026-08-31T14:30:40Z",
+      "comment_updated_at": "2026-09-01T00:53:22Z",
+      "comment_body_sha256": "e0e4cd66ce8c82aaf8ac7d29a41a7672bd02ca7269c0cd969312bccdfab62d82",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the inline document path in extensions/google/embedding-provider.ts:319, reached from Memory Core’s embedBatch... (sha=0f03c3e919fc6cd7b94c839eeeac7e80e356f3fb)",
+      "expected_head_sha": "0f03c3e919fc6cd7b94c839eeeac7e80e356f3fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:54:19.657Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gemini-embedding-batch-limit",
+        "head_sha": "0f03c3e919fc6cd7b94c839eeeac7e80e356f3fb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
