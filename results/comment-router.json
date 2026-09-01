@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T13:11:39.086Z",
+  "updated_at": "2026-09-01T13:12:57.302Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135039:5491665548:2026-09-01T09:10:20Z:clawsweeper_needs_human",
-      "comment_id": "5491665548",
-      "comment_version_key": "5491665548:2026-09-01T09:10:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135039#issuecomment-5491665548",
-      "comment_created_at": "2026-09-01T09:10:20Z",
-      "comment_updated_at": "2026-09-01T09:10:20Z",
-      "comment_body_sha256": "fbf7add335fc34aeb1de660b35ecf561cdcaff2eeb4363c8f8e8d2b0918e0ae3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135039,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch is dirty against current main, which separately changed the CI planner’s UI ownership logic; until rebased and run at the exact head, the merged workflow could misroute a p... (sha=6718f3614b30e34f7293bf7471d3730bc9823bf2)",
-      "expected_head_sha": "6718f3614b30e34f7293bf7471d3730bc9823bf2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T09:11:11.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-cli-runtime-ownership-20260901",
-        "head_sha": "6718f3614b30e34f7293bf7471d3730bc9823bf2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1236:5399541400:2026-09-01T09:10:28Z:clawsweeper_needs_human",
       "comment_id": "5399541400",
@@ -32691,6 +32658,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122669:5268735806:2026-09-01T13:12:08Z:clawsweeper_auto_repair",
+      "comment_id": "5268735806",
+      "comment_version_key": "5268735806:2026-09-01T13:12:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122669#issuecomment-5268735806",
+      "comment_created_at": "2026-08-12T15:15:18Z",
+      "comment_updated_at": "2026-09-01T13:12:08Z",
+      "comment_body_sha256": "1b6a09bde058f9e4127f272ff83b4f48ce648fab31ba8e87c6a8a740d351ff67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122669,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=9d5e4862c0f502b137ead6e994fc918a1c6c98b1)",
+      "expected_head_sha": "9d5e4862c0f502b137ead6e994fc918a1c6c98b1",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-01T13:12:57.302Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "patch-2",
+        "head_sha": "9d5e4862c0f502b137ead6e994fc918a1c6c98b1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
