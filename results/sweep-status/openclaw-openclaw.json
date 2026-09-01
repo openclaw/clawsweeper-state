@@ -3,9 +3,9 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Apply finished",
-  "detail": "Apply/comment-sync run finished with 0 fresh closes out of requested limit 40. See apply-report.json for per-item results.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33544256589",
+  "state": "Apply in progress",
+  "detail": "Starting apply/comment-sync run for up to 40 fresh all closes. Close reasons: all. Close candidate mix: 16 needs PR close proof, 293 needs live promotion check, 15 aging/low-signal, 39 policy-sensitive, 68 retry after guard skip. Scan window: 600 records (base_window). Existing Codex automated review comments are updated in place when closing or when comment-only sync is stale by 7 day(s); checkpoints commit every 40 fresh closes; close delay is 2000ms; sync-comments-only=false; item numbers=84827,122846,93292,87793,78436,82519,98519,98553,134124,134066,134022,134070,132487,132489,89823,35208,62615,80859,87764,95970,76027,124962,117413,44025,117823,67129,79360,70266,59727,115390,45179,126104,117423,110250,117232,117611,117369,87362,42539,87473,117905,45519,87136,71711,29100,112896,127733,60612,104159,128452,128326,128380,82735,52803,39734,46058,95601,123703,87371,82290,83440,67421,94661,67154,89756,79490,87212,90499,87714,87953,91726,120718,119558,120411,96489,124314,125192,125704,79384,126529,127302,128217,128395,128470,114146,109381,128650,105854,128504,129018,129737,70903,80621,112978,56880,123652,117742,93518,123265,98200,90595,89215,121188,99770,82540,128385,116547,44502,132898,115400,132612,110490,133315,122496,120633,96834,127862,132303,128010,131532,83857,131688,86119,134453,110898,106391,121982,125141,111822,116176,125900,124337,126150,126228,126322,126359,107693,126510,126405,112865,126513,120015,123786,112312,121945,85136,112375,121422,121423,119736,106818,127116,126549,126548,123730,98766,109584,122135,119784,126816,126986,119797,107179,125857,107375,117595,119800,119804,107302,110059,119814,109973,128077,97580,121578,118465,117906,128508,117074,113437,119446,119057,124557,127135,110046,95132,128001,96662,126573,118247,111005,120077,22439,111317,117582,119608,117151,115510,124222,102165,118822,75336,126516,117239,119461,120086,103845,124419,120360,125077,116520,126478,119675,128121,125365,111367,111020,122694,111596,103702,104114,129191,104703,121733,110299,110917,113548,79985,80818,83178,111591,83242,83760,84860,110840,85308,103761,119739,124305,112512,120794,118211,62063,97135,111965,128615,103928,121050,127303,83254,127309,127215,127226,119886,123487,124848,96937,113746,128642,112709,118726,126255,111964,107314,81190,119674,63112,122238,112388,72314,70002,81300,111795,112187,124643,114523,123075,86793,112055,127705,127722,127709,112754,126616,113896,119910,115286,128189,118358,95700,129345,87434,115048,113217,114254,119126,117976,117114,87552,87759,88084,114866,115829,118081,115145,119995,114996,123942,128725,117174,97375,119930,126619,126611,127770,124174,111452,116157,90033,109581,116019,119232,113739,115735,120384,128754,128748,122284,120573,123346,84758,126224,110835,123244,124480,116232,125082,119938,116237,68843,79185,93218,82950,128812,119289,127775,87471,95767,109245,115912,116403,125531,110438,110402,111913,108316,110004,126618,109902,127118,125577,112945,120623,115933,120185.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33550707057",
   "planned_count": null,
   "planned_capacity": null,
   "planned_shards": null,
@@ -19,99 +19,7 @@
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": {
-    "schema_version": 1,
-    "generated_at": "2026-09-01T19:22:08.703Z",
-    "target_repo": "openclaw/openclaw",
-    "mode": "close",
-    "status": "ok",
-    "summary": "142 examined; 8/600 action records; 0 closed, 3 comments synced, 5 skipped; cursor at #123321.",
-    "examined": 142,
-    "action_records": 8,
-    "processed": 8,
-    "processed_limit": 600,
-    "close_limit": 40,
-    "closed": 0,
-    "comment_synced": 3,
-    "skipped": 5,
-    "skip_reasons": {
-      "skipped_changed_since_review": 3,
-      "skipped_runtime_budget": 2
-    },
-    "lanes": {
-      "closure": {
-        "processed": 5,
-        "closed": 0,
-        "comment_synced": 0,
-        "skipped": 5,
-        "skip_reasons": {
-          "skipped_changed_since_review": 3,
-          "skipped_runtime_budget": 2
-        }
-      },
-      "comment_sync": {
-        "processed": 3,
-        "closed": 0,
-        "comment_synced": 3,
-        "skipped": 0,
-        "skip_reasons": {}
-      }
-    },
-    "next_actions": [
-      {
-        "reason": "skipped_changed_since_review",
-        "count": 3,
-        "bucket": "review_refresh",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Refresh review",
-        "summary": "The item changed after the review that proposed closing it.",
-        "next_step": "Queue a fresh ClawSweeper review before any close retry."
-      },
-      {
-        "reason": "skipped_runtime_budget",
-        "count": 2,
-        "bucket": "run_budget",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Runtime budget",
-        "summary": "The apply lane stopped because it reached its bounded runtime.",
-        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
-      }
-    ],
-    "next_action_buckets": {
-      "review_refresh": 3,
-      "run_budget": 2
-    },
-    "cycle": {
-      "basis": "scheduled_close_cursor",
-      "apply_ready_count": 370,
-      "candidate_counts": {
-        "confirmed_proposal": 0,
-        "guarded_retry": 124,
-        "proof_required": 2,
-        "promotion_total": 653,
-        "promotion_eligible": 246,
-        "promotion_cooldown_eligible": 298,
-        "cooldown_eligible_total": 436,
-        "inconsistent_or_stale": 0
-      },
-      "window_size": 142,
-      "estimated_full_cycle_windows": 3,
-      "estimated_full_cycle_minutes": 45,
-      "scheduled_interval_minutes": 15,
-      "label": "370 currently actionable close candidates (0 confirmed proposals, 124 guarded retries, 246/653 promotion probes admitted; 2 require proof; 436 cooldown-eligible backlog (298 promotions); 0 inconsistent or stale records excluded) at 142 records per latest cursor advance: about 3 windows; scheduled cadence alone would take roughly 45 min at 15-minute intervals, while successful windows can continue sooner."
-    },
-    "attention_reasons": [],
-    "cursor_required": true,
-    "cursor": {
-      "path": "results/apply-cursors/openclaw-openclaw.json",
-      "next_after_number": 123321,
-      "next_after_apply_checked_at": "2026-09-01T19:20:40.561Z",
-      "updated_at": "2026-09-01T19:21:02.901Z"
-    },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33544256589"
-  },
+  "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-09-01T19:22:08.703Z",
@@ -205,5 +113,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33544256589"
   },
-  "updated_at": "2026-09-01T19:22:09.318Z"
+  "updated_at": "2026-09-01T20:10:43.302Z"
 }
