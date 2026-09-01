@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T22:35:47.335Z",
+  "updated_at": "2026-09-01T22:35:50.709Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135223:5494857273:2026-09-01T16:44:19Z:clawsweeper_needs_human",
-      "comment_id": "5494857273",
-      "comment_version_key": "5494857273:2026-09-01T16:44:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135223#issuecomment-5494857273",
-      "comment_created_at": "2026-09-01T13:40:23Z",
-      "comment_updated_at": "2026-09-01T16:44:19Z",
-      "comment_body_sha256": "5f1c708aced2f821cdd343641cc412c2df50d54e0fef649b96d90d7bc310cbce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135223,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the sidebar-to-hovercard-to-Gateway path: the row supplies the DOM key, the hovercard watches and loads it, and...; Review finding: [P1] Preserve the catalog key used by hovercard lookup — ui/src/components/app-sidebar-session-catalog-render.ts:473 - [P1] Do not request admin scope from a read-... (sha=f3b20c3193ce1f981b7bcf5ab181833bfd0a395f)",
-      "expected_head_sha": "f3b20c3193ce1f981b7bcf5ab181833bfd0a395f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T17:39:00.457Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/catalog-progress-card-agent-key-135156",
-        "head_sha": "681af7c7e0c746707c92cf0f6672aba8bea2adb8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135184:5494869067:2026-09-01T17:02:29Z:clawsweeper_needs_human",
       "comment_id": "5494869067",
@@ -33001,6 +32968,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117074:5501342147:2026-09-01T22:34:50Z:re_review",
+      "comment_id": "5501342147",
+      "comment_version_key": "5501342147:2026-09-01T22:34:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5501342147",
+      "comment_created_at": "2026-09-01T22:34:50Z",
+      "comment_updated_at": "2026-09-01T22:34:50Z",
+      "comment_body_sha256": "fa5ecddf6f0b15cde82ffacf84478d76c27c6cb2c317feb1367ede4d944a1756",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117074,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T22:35:47.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sessions-tombstone-sweep",
+        "head_sha": "69ee9858236d22ba2d2db35414df74c8a9cacc57",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
