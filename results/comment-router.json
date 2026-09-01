@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T08:50:40.466Z",
+  "updated_at": "2026-09-01T08:52:15.686Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134802:5488914071:2026-09-01T04:31:13Z:clawsweeper_needs_human",
-      "comment_id": "5488914071",
-      "comment_version_key": "5488914071:2026-09-01T04:31:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134802#issuecomment-5488914071",
-      "comment_created_at": "2026-09-01T04:31:13Z",
-      "comment_updated_at": "2026-09-01T04:31:13Z",
-      "comment_body_sha256": "5114c2a9c66075312b17c4471303c160f621719865a7441ab54456c86d1984ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134802,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the branch already contains the focused owner-boundary fix and has no actionable review finding. (sha=2ab827c714ac598dacde54dfcce02acc53feb047)",
-      "expected_head_sha": "2ab827c714ac598dacde54dfcce02acc53feb047",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T04:31:56.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/command-reply-tts-owner",
-        "head_sha": "2ab827c714ac598dacde54dfcce02acc53feb047",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134804:5488918798:2026-09-01T04:31:52Z:clawsweeper_needs_human",
       "comment_id": "5488918798",
@@ -33191,6 +33158,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135020:5491449259:2026-09-01T08:51:25Z:re_review",
+      "comment_id": "5491449259",
+      "comment_version_key": "5491449259:2026-09-01T08:51:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135020#issuecomment-5491449259",
+      "comment_created_at": "2026-09-01T08:51:25Z",
+      "comment_updated_at": "2026-09-01T08:51:25Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135020,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T08:52:11.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-ci-timing-retry-fixture-clock",
+        "head_sha": "de60b5069eaba3a1f666cdfd53791e24bce7701a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
