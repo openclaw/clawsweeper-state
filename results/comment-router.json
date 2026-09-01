@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T15:24:28.601Z",
+  "updated_at": "2026-09-01T15:24:40.475Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135130:5492917368:2026-09-01T11:00:36Z:clawsweeper_needs_human",
-      "comment_id": "5492917368",
-      "comment_version_key": "5492917368:2026-09-01T11:00:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135130#issuecomment-5492917368",
-      "comment_created_at": "2026-09-01T11:00:36Z",
-      "comment_updated_at": "2026-09-01T11:00:36Z",
-      "comment_body_sha256": "551e7b8fc1993c5e2da7d85ca512f0c82b86f937fb88857b497156c0afeada02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135130,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the CLI identity resolver feeding the child-process launch path; the PR supplies a resolver unit test using a N...; Review finding: [P1] Keep execution bound to the hashed executable — src/agents/cli-executable-identity.ts:478-481 - [high] Mutable shim can replace the verified executable — src/... (sha=3be5914b6bbcf996ccd8ed6884f6a9f0d41d901e)",
-      "expected_head_sha": "3be5914b6bbcf996ccd8ed6884f6a9f0d41d901e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:01:25.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-wrapper-shim-spawn",
-        "head_sha": "3be5914b6bbcf996ccd8ed6884f6a9f0d41d901e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106789:4962740326:2026-09-01T11:00:19Z:clawsweeper_needs_human",
       "comment_id": "4962740326",
@@ -31905,6 +31872,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135284:5496253231:2026-09-01T15:23:05Z:clawsweeper_needs_human",
+      "comment_id": "5496253231",
+      "comment_version_key": "5496253231:2026-09-01T15:23:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135284#issuecomment-5496253231",
+      "comment_created_at": "2026-09-01T15:23:05Z",
+      "comment_updated_at": "2026-09-01T15:23:05Z",
+      "comment_body_sha256": "7cb8de5238e64fec5fa2180fb8616ffc7b68f988223867756104df1f1cff1cc5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check snapshot includes one failed run, checks-node-compact-large-13; its failure log was unavailable, so this review does not attribute it to the refactor, bu... (sha=424b8f602859df1f98831a0409fa861770f06957)",
+      "expected_head_sha": "424b8f602859df1f98831a0409fa861770f06957",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T15:24:40.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa50-claws-failure-output",
+        "head_sha": "424b8f602859df1f98831a0409fa861770f06957",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
