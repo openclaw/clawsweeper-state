@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:15:24.205Z",
+  "updated_at": "2026-09-01T18:15:38.108Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135173:5494348081:2026-09-01T13:02:13Z:re_review",
-      "comment_id": "5494348081",
-      "comment_version_key": "5494348081:2026-09-01T13:02:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135173#issuecomment-5494348081",
-      "comment_created_at": "2026-09-01T13:02:13Z",
-      "comment_updated_at": "2026-09-01T13:02:13Z",
-      "comment_body_sha256": "a4cf3e8fcb8483c79d9545063d33e8d5d691fa9ea34b8ea6feb64506c02d2131",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135173,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T13:03:19.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-env-template-credentials",
-        "head_sha": "f1d15fdea624febcd373ee4acafd0f12fcd913ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/shellbench:77:5464166539:2026-09-01T13:03:43Z:clawsweeper_auto_repair",
       "comment_id": "5464166539",
@@ -33245,6 +33198,39 @@
         "kind": "pull_request",
         "branch": "chore/deps-refresh-20260830",
         "head_sha": "b197702676e1625d344d1539e07e9687b914e5ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawgo:7:5464343779:2026-09-01T18:14:41Z:clawsweeper_auto_repair",
+      "comment_id": "5464343779",
+      "comment_version_key": "5464343779:2026-09-01T18:14:41Z",
+      "comment_url": "https://github.com/openclaw/clawgo/pull/7#issuecomment-5464343779",
+      "comment_created_at": "2026-08-29T19:16:48Z",
+      "comment_updated_at": "2026-09-01T18:14:41Z",
+      "comment_body_sha256": "d033f7417b27d43ec9e3cfe22c876e1cce50b47cfe705aabec686beb3f571237",
+      "repo": "openclaw/clawgo",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=e23643fed6e23b1c32aedaaf8d08057b034e78eb)",
+      "expected_head_sha": "e23643fed6e23b1c32aedaaf8d08057b034e78eb",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:15:38.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-tts-queue-reconnect",
+        "head_sha": "e23643fed6e23b1c32aedaaf8d08057b034e78eb",
         "cluster_id": null,
         "job_path": null
       }
