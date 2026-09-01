@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T12:18:12.519Z",
+  "updated_at": "2026-09-01T12:19:34.335Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134258:5481154831:2026-09-01T07:11:09Z:clawsweeper_needs_human",
-      "comment_id": "5481154831",
-      "comment_version_key": "5481154831:2026-09-01T07:11:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134258#issuecomment-5481154831",
-      "comment_created_at": "2026-08-31T16:17:08Z",
-      "comment_updated_at": "2026-09-01T07:11:09Z",
-      "comment_body_sha256": "0e98f0d4168142c201a0560ffec30fff5b814164700cd60a2aebec0da6978c0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134258,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing BYOK requests whose serialized envelope exceeds 32 MiB will now fail with HTTP 413, so the documented compatibility change needs explicit maintainer acceptance. (sha=8f34ce79dc48326d8f6b39ec50a9a7fc397e675a)",
-      "expected_head_sha": "8f34ce79dc48326d8f6b39ec50a9a7fc397e675a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T07:30:43.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/copilot-byok-body-limit-jjy",
-        "head_sha": "8f34ce79dc48326d8f6b39ec50a9a7fc397e675a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134221:5481597585:2026-09-01T07:06:14Z:clawsweeper_needs_human",
       "comment_id": "5481597585",
@@ -33901,6 +33868,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131568:5493822814:2026-09-01T12:18:40Z:re_review",
+      "comment_id": "5493822814",
+      "comment_version_key": "5493822814:2026-09-01T12:18:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131568#issuecomment-5493822814",
+      "comment_created_at": "2026-09-01T12:18:40Z",
+      "comment_updated_at": "2026-09-01T12:18:40Z",
+      "comment_body_sha256": "103aca37b75f5f6f6a87b47359645d58689aa5988b75d9708113560a8778d40c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131568,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T12:19:31.547Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-reindex-shadow-orphan-cleanup",
+        "head_sha": "1816179323799d15afab0a3523eb30ab6b3b9e0a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
