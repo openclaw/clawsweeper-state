@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T08:56:48.080Z",
+  "updated_at": "2026-09-01T08:57:02.859Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134468:5489028424:2026-09-01T04:46:05Z:re_review",
-      "comment_id": "5489028424",
-      "comment_version_key": "5489028424:2026-09-01T04:46:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134468#issuecomment-5489028424",
-      "comment_created_at": "2026-09-01T04:46:05Z",
-      "comment_updated_at": "2026-09-01T04:46:05Z",
-      "comment_body_sha256": "9d674cd6ca38ba5044e13f8e267b28aae15d7d345bf412cae2806646f63267fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134468,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:46:52.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/134304-harness-runtime-diagnostics",
-        "head_sha": "4b6c1ccbe248940c6909c8a21682abe47e0e4f12",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130962:5489035792:2026-09-01T04:46:46Z:re_review",
       "comment_id": "5489035792",
@@ -33041,6 +32994,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134980:5490742105:2026-09-01T08:55:59Z:clawsweeper_needs_human",
+      "comment_id": "5490742105",
+      "comment_version_key": "5490742105:2026-09-01T08:55:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134980#issuecomment-5490742105",
+      "comment_created_at": "2026-09-01T07:52:17Z",
+      "comment_updated_at": "2026-09-01T08:55:59Z",
+      "comment_body_sha256": "0cae15d9a758bb14946b446649e6845e48f1912ef1f940ad15a304a9b9492a9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134980,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the embedded retry decision and terminal error projection. The supplied runner test injects a mocked attempt... (sha=9395293a9ce675dfea48c7e3c2610ec95814d699)",
+      "expected_head_sha": "9395293a9ce675dfea48c7e3c2610ec95814d699",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T08:57:02.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-refusal-terminal",
+        "head_sha": "9395293a9ce675dfea48c7e3c2610ec95814d699",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
