@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T15:15:31.433Z",
+  "updated_at": "2026-09-01T15:15:37.097Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134794:5488849055:2026-09-01T10:45:14Z:clawsweeper_needs_human",
-      "comment_id": "5488849055",
-      "comment_version_key": "5488849055:2026-09-01T10:45:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134794#issuecomment-5488849055",
-      "comment_created_at": "2026-09-01T04:22:16Z",
-      "comment_updated_at": "2026-09-01T10:45:14Z",
-      "comment_body_sha256": "c876e41b2aede9a6b5a3a98054e75efcf55f461816a70e1b8cc18a81785f3076",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134794,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Runtime code is net +194 lines; the process-owner capture is justified, but its custom-spawner behavior depends on the pinned Agent SDK contract, whose installed source was unavailabl... (sha=d530c3ecd90add7ea397d4c646e3b993586da68d)",
-      "expected_head_sha": "d530c3ecd90add7ea397d4c646e3b993586da68d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T10:46:00.148Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claude-stderr-diagnostics",
-        "head_sha": "d530c3ecd90add7ea397d4c646e3b993586da68d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135116:5492771089:2026-09-01T10:47:12Z:clawsweeper_needs_human",
       "comment_id": "5492771089",
@@ -32001,6 +31968,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T15:15:31.433Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124162:5496141974:2026-09-01T15:14:47Z:re_review",
+      "comment_id": "5496141974",
+      "comment_version_key": "5496141974:2026-09-01T15:14:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5496141974",
+      "comment_created_at": "2026-09-01T15:14:47Z",
+      "comment_updated_at": "2026-09-01T15:14:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124162,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T15:15:34.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-aware-resume-breaker-122950",
+        "head_sha": "6d1efe7f100e654aaad8297b8baee463df4a6e33",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
