@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T17:50:16.161Z",
+  "updated_at": "2026-09-01T17:50:35.661Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3501:5365867758:2026-08-21T06:07:23Z:re_review",
-      "comment_id": "5365867758",
-      "comment_version_key": "5365867758:2026-08-21T06:07:23Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3501#issuecomment-5365867758",
-      "comment_created_at": "2026-08-21T06:07:23Z",
-      "comment_updated_at": "2026-08-21T06:07:23Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3501,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:46:39.965Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3501:5365906478:2026-09-01T12:45:35Z:clawsweeper_auto_repair",
       "comment_id": "5365906478",
@@ -33316,6 +33289,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T17:50:16.161Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118468:5162446005:2026-09-01T17:49:10Z:clawsweeper_needs_human",
+      "comment_id": "5162446005",
+      "comment_version_key": "5162446005:2026-09-01T17:49:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118468#issuecomment-5162446005",
+      "comment_created_at": "2026-08-03T04:54:57Z",
+      "comment_updated_at": "2026-09-01T17:49:10Z",
+      "comment_body_sha256": "5e8c2f7f7a78aab3dfb2f38da2c300ea746da7faad286c8e774c2c6a9ac89527",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118468,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the pre-output stale-abort handler; the focused suite covers both reasons but asserts against a mocked dispatch... (sha=77bc703fd9471480308784181d312f14bb1aa3d1)",
+      "expected_head_sha": "77bc703fd9471480308784181d312f14bb1aa3d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T17:50:35.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stall-diagnostics-wording",
+        "head_sha": "77bc703fd9471480308784181d312f14bb1aa3d1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
