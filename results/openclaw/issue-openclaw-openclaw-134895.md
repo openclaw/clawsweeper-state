@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134895"
 mode: "autonomous"
-run_id: "33476098664"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33476098664"
-head_sha: "220ad5673ace96b2fab6473203796639c17ac710"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-09-01T06:24:03.274Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134895"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134895"
+run_id: "33479834662"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33479834662"
+head_sha: "d887e65eb884b132b7d6c442938dcf5fe538b6df"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-09-01T07:19:35.121Z"
+canonical: "#134895"
+canonical_issue: "#134895"
 canonical_pr: null
-actions_total: 9
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33476098664](https://github.com/openclaw/clawsweeper/actions/runs/33476098664)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33479834662](https://github.com/openclaw/clawsweeper/actions/runs/33479834662)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134895
+Canonical: #134895
 
 ## Summary
 
-#134895 remains the canonical narrow creation-time visibility bug. Plan a credited new PR that returns the existing fail-closed delivery preview from `cron.add`; the CLI already prints that response unchanged. This read-only worker could not create the branch or run validation.
+A narrow non-security repair is indicated, but the read-only checkout prevents edits, validation, branch creation, and PR preparation. The repository-required sibling ../codex checkout is also absent and cannot be cloned here.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 9 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,15 +66,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/134895
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134895 | fix_needed | planned | canonical | Return the already-authoritative dry-run delivery result at the creation boundary; do not change delivery defaults, runtime completion policy, or deletion behavior. |
-| cluster:issue-openclaw-openclaw-134895 | build_fix_artifact | planned | canonical | Produce one narrow new-fix-PR artifact for the canonical issue. |
-| cluster:issue-openclaw-openclaw-134895 | open_fix_pr | planned | canonical | The deterministic executor owns branch creation, validation, PR publication, and labels. |
-| #9155 | keep_related | planned | related | Distinct configuration/product work; leave open. |
-| #80984 | keep_related | planned | related | Distinct public-contract decision; leave open. |
-| #90378 | keep_related | planned | related | Distinct migration/default-policy work; leave open. |
-| #3520 | keep_closed | skipped | related | Already closed; historical context only. |
-| #91613 | keep_closed | skipped | related | Already closed; historical context only. |
-| #122791 | keep_closed | skipped | independent | Already closed and independent. |
+| #134895 | fix_needed | blocked | canonical | Required edit and proof gates cannot run in this environment. |
 
 ## Needs Human
 
