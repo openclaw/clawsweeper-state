@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134960",
+  "mode": "autonomous",
+  "run_id": "33482639257",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33482639257",
+  "head_sha": "ce04d08fa319788439016ca9dca8415dbc913769",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134960.md",
+  "published_at": "2026-09-01T08:24:56.908Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134960",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134960",
+  "canonical_pr": null,
+  "summary": "#134960 is a confirmed narrow Windows identity-binding bug on main d37d5dd5be9adcdc51512f82887ecf36ba821316. The repair is ready as a new-PR artifact, but this worker cannot implement or validate it: the checkout is read-only, dependencies are absent, and the repository-required sibling ../codex source checkout is missing.",
+  "actions": [
+    {
+      "target": "#101378",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#134960",
+      "candidate_fix": null,
+      "reason": "Closed merged historical context only; no closure or mutation is appropriate."
+    },
+    {
+      "target": "#134960",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134960",
+      "candidate_fix": null,
+      "reason": "The fix is source-proven and scoped, but implementation and validation are blocked by the required Codex-source and writable/Windows execution environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134960",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134960",
+      "candidate_fix": null,
+      "reason": "A new narrow fix PR is the canonical path; no existing open contributor PR is available to repair."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
