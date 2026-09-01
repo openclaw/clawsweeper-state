@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:09:20.847Z",
+  "updated_at": "2026-09-01T16:11:06.758Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135145:5493195105:2026-09-01T11:25:40Z:clawsweeper_needs_human",
-      "comment_id": "5493195105",
-      "comment_version_key": "5493195105:2026-09-01T11:25:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135145#issuecomment-5493195105",
-      "comment_created_at": "2026-09-01T11:25:40Z",
-      "comment_updated_at": "2026-09-01T11:25:40Z",
-      "comment_body_sha256": "f5b8d4e2d2c5f060f81820f73594d602b32c22e8ab990262f91fbc92f2f02b8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135145,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provided exact-head check rollup is incomplete, so this review does not establish merge readiness. (sha=0d1d392c308f073acc5d2373d3ca0a281eac5507)",
-      "expected_head_sha": "0d1d392c308f073acc5d2373d3ca0a281eac5507",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup20k-json-schema-children87-20260831",
-        "head_sha": "0d1d392c308f073acc5d2373d3ca0a281eac5507",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135041:5491715306:2026-09-01T11:31:10Z:clawsweeper_auto_repair",
       "comment_id": "5491715306",
@@ -32183,6 +32150,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128101:5496869136:2026-09-01T16:10:23Z:re_review",
+      "comment_id": "5496869136",
+      "comment_version_key": "5496869136:2026-09-01T16:10:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128101#issuecomment-5496869136",
+      "comment_created_at": "2026-09-01T16:10:23Z",
+      "comment_updated_at": "2026-09-01T16:10:23Z",
+      "comment_body_sha256": "7f65a095987d8673a1c43024db3b7dda00c24808b3ee7c9cc5e4ced01cddc0a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128101,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T16:11:04.705Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-realtime-playout-owner",
+        "head_sha": "d108fcd30b12383fa76eb3aa111ed48c57e2a90d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
