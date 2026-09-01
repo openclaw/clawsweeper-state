@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134700"
 mode: "autonomous"
-run_id: "33465653891"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33465653891"
-head_sha: "ae37f02a3f5ba45b2bc52fc1d88f5b36b198874d"
-workflow_conclusion: "failure"
+run_id: "33468500239"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33468500239"
+head_sha: "1bcce8bcf392f4a357d247ce2f9b2216ca92dbd4"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T03:35:17.291Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134700"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134700"
+published_at: "2026-09-01T04:54:02.834Z"
+canonical: "#134700"
+canonical_issue: "#134700"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134700
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33465653891](https://github.com/openclaw/clawsweeper/actions/runs/33465653891)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33468500239](https://github.com/openclaw/clawsweeper/actions/runs/33468500239)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134700
+Canonical: #134700
 
 ## Summary
 
-#134700 is a narrow, source-reproducible auth-resolution defect. A fix PR is appropriate, but this read-only checkout cannot create the required regression/diff; validation is also blocked by missing dependencies and the mandatory sibling ../codex source is absent.
+No repair was applied: this worker is read-only, lacks test dependencies, and cannot perform the required direct ../codex inspection. Source inspection identifies the requested narrow repair path.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,13 +66,11 @@ Canonical: https://github.com/openclaw/openclaw/issues/134700
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #73049 | keep_closed | skipped | related | Already closed. |
-| #91902 | keep_closed | skipped | related | Already closed. |
-| #129750 | keep_independent | planned | independent | No duplicate or shared repair path. |
-| #134700 | fix_needed | planned | canonical | Canonical issue remains open and no candidate PR was hydrated. |
-| cluster:issue-openclaw-openclaw-134700 | build_fix_artifact | planned | canonical | Artifact is ready for an executor with a writable checkout and dependencies. |
-| cluster:issue-openclaw-openclaw-134700 | open_fix_pr | blocked | canonical | Implementation must be performed by the deterministic executor in a writable, dependency-ready checkout after satisfying the repository's Codex-source gate. |
+| #134700 | fix_needed | blocked | canonical | Read-only sandbox prevents edits, dependency installation, branch creation, and the mandatory sibling ../codex clone. |
+| #129750 | keep_related | planned | related | Same adapter family, distinct invariant. |
+| #73049 | keep_closed | skipped | related | Already closed; no closure action is valid. |
+| #91902 | keep_closed | skipped | related | Already closed; no closure action is valid. |
 
 ## Needs Human
 
-- none
+- Rerun in a writable worker with dependencies and the required sibling ../codex checkout available.
