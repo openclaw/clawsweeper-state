@@ -1,86 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:43:48.526Z",
+  "updated_at": "2026-09-01T14:43:58.654Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134797:5488902748:2026-09-01T10:10:56Z:clawsweeper_needs_human",
-      "comment_id": "5488902748",
-      "comment_version_key": "5488902748:2026-09-01T10:10:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134797#issuecomment-5488902748",
-      "comment_created_at": "2026-09-01T04:29:43Z",
-      "comment_updated_at": "2026-09-01T10:10:56Z",
-      "comment_body_sha256": "6a22c06ce8e3115e408ec60d5b6bc39267db5b2f8ac8637a5c2dd172e26fa8f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134797,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes existing scripts that pass an empty selector from implicit routing to a flag-specific error; callers that want default routing must omit that flag. (sha=44c2b21183eb6a48d29d0575e00124bbd5bf8b87)",
-      "expected_head_sha": "44c2b21183eb6a48d29d0575e00124bbd5bf8b87",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T10:17:00.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-blank-session-selectors",
-        "head_sha": "44c2b21183eb6a48d29d0575e00124bbd5bf8b87",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132623:5492436197:2026-09-01T10:16:05Z:re_review",
-      "comment_id": "5492436197",
-      "comment_version_key": "5492436197:2026-09-01T10:16:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132623#issuecomment-5492436197",
-      "comment_created_at": "2026-09-01T10:16:05Z",
-      "comment_updated_at": "2026-09-01T10:16:05Z",
-      "comment_body_sha256": "0a9ec67112b3ee1f026b9e4e867ac252a290d165cbf15a5b493c3f33bcf581e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132623,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T10:17:05.257Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-131102",
-        "head_sha": "268a6f836e3807c47477a051dcfd641b521e571c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135069:5492195381:2026-09-01T10:16:17Z:clawsweeper_needs_human",
       "comment_id": "5492195381",
@@ -32465,6 +32385,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:steipete/oracle:441:5495645140:2026-09-01T14:38:26Z:re_review",
+      "comment_id": "5495645140",
+      "comment_version_key": "5495645140:2026-09-01T14:38:26Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/441#issuecomment-5495645140",
+      "comment_created_at": "2026-09-01T14:38:26Z",
+      "comment_updated_at": "2026-09-01T14:38:26Z",
+      "comment_body_sha256": "c2017ee2d96c52713e13571db89e5b570ff36ea70700a386f501adfc1d642d1e",
+      "repo": "steipete/oracle",
+      "issue_number": 441,
+      "author": "Gabrielgvl",
+      "author_id": 20707866,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:43:56.441Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/locale-independent-effort-slider",
+        "head_sha": "5a50d19a5015bcb6d2a5025a662ce8d809d4574d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:441:5495095728:2026-09-01T14:42:48Z:clawsweeper_auto_repair",
+      "comment_id": "5495095728",
+      "comment_version_key": "5495095728:2026-09-01T14:42:48Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/441#issuecomment-5495095728",
+      "comment_created_at": "2026-09-01T13:58:02Z",
+      "comment_updated_at": "2026-09-01T14:42:48Z",
+      "comment_body_sha256": "8dbd58c545890ec3f9170e0471f449c70176e102f26b72c98ca96217b83d9afc",
+      "repo": "steipete/oracle",
+      "issue_number": 441,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a50d19a5015bcb6d2a5025a662ce8d809d4574d)",
+      "expected_head_sha": "5a50d19a5015bcb6d2a5025a662ce8d809d4574d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T14:43:58.654Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/locale-independent-effort-slider",
+        "head_sha": "5a50d19a5015bcb6d2a5025a662ce8d809d4574d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
