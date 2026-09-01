@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:04:48.120Z",
+  "updated_at": "2026-09-01T00:06:12.376Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119516:5461870093:2026-08-29T10:43:37Z:re_review",
-      "comment_id": "5461870093",
-      "comment_version_key": "5461870093:2026-08-29T10:43:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119516#issuecomment-5461870093",
-      "comment_created_at": "2026-08-29T10:43:37Z",
-      "comment_updated_at": "2026-08-29T10:43:37Z",
-      "comment_body_sha256": "49e31f95871416226a88bc899a2b69a214a3e7f9596f1e306dc3b0815dc89b24",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119516,
-      "author": "zyw02",
-      "author_id": 59604424,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T16:57:05.489Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119516:5462991378:2026-08-29T14:33:52Z:re_review",
       "comment_id": "5462991378",
@@ -33170,6 +33143,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T00:04:48.120Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134480:5485176965:2026-09-01T00:04:13Z:clawsweeper_needs_human",
+      "comment_id": "5485176965",
+      "comment_version_key": "5485176965:2026-09-01T00:04:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134480#issuecomment-5485176965",
+      "comment_created_at": "2026-08-31T21:52:38Z",
+      "comment_updated_at": "2026-09-01T00:04:13Z",
+      "comment_body_sha256": "43e908c9bb312ea642b17941ab1fb6b7ed365edbd303de5fef84003b06e1c282",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the Control UI Browser-panel selector; supplied component and mock-gateway E2E evidence verifies its request ledger, but n... (sha=fc0ee7abd2fdb9413cccbc5b1b4abef43b443f88)",
+      "expected_head_sha": "fc0ee7abd2fdb9413cccbc5b1b4abef43b443f88",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:06:12.376Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-panel-passive-follow",
+        "head_sha": "fc0ee7abd2fdb9413cccbc5b1b4abef43b443f88",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
