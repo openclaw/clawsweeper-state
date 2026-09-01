@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:10:36.850Z",
+  "updated_at": "2026-09-01T03:10:50.509Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134406:5483629433:2026-08-31T19:47:37Z:re_review",
-      "comment_id": "5483629433",
-      "comment_version_key": "5483629433:2026-08-31T19:47:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134406#issuecomment-5483629433",
-      "comment_created_at": "2026-08-31T19:47:37Z",
-      "comment_updated_at": "2026-08-31T19:47:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134406,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T19:48:20.055Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/install-path-failure-exit",
-        "head_sha": "7d8995d0017c1a44b75511e3ef822297b247ae18",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134388:5483629401:2026-08-31T19:47:37Z:re_review",
       "comment_id": "5483629401",
@@ -33562,6 +33515,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134699:5488326300:2026-09-01T03:09:57Z:clawsweeper_needs_human",
+      "comment_id": "5488326300",
+      "comment_version_key": "5488326300:2026-09-01T03:09:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134699#issuecomment-5488326300",
+      "comment_created_at": "2026-09-01T03:09:57Z",
+      "comment_updated_at": "2026-09-01T03:09:57Z",
+      "comment_body_sha256": "72fa8586e22a4ac0fc2f9e63e689cfbd7857fa9a1c3151227a145f0a37b4038a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134699,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing upgrade that reaches a readiness finding now exits nonzero and, when the service was stopped for update, leaves the Gateway stopped until the operator completes the intera... (sha=310d10fc7ee4513ee14148258099573e39c17bfa)",
+      "expected_head_sha": "310d10fc7ee4513ee14148258099573e39c17bfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T03:10:50.509Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-134204-llama-cpp-migration",
+        "head_sha": "310d10fc7ee4513ee14148258099573e39c17bfa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
