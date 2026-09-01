@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:45:40.582Z",
+  "updated_at": "2026-09-01T10:46:00.148Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134891:5489762126:2026-09-01T06:19:08Z:re_review",
-      "comment_id": "5489762126",
-      "comment_version_key": "5489762126:2026-09-01T06:19:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134891#issuecomment-5489762126",
-      "comment_created_at": "2026-09-01T06:19:08Z",
-      "comment_updated_at": "2026-09-01T06:19:08Z",
-      "comment_body_sha256": "7c626801f45f98807ed877f9760b8979041203787c53d45aa62c7bf3503aa00f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134891,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T06:20:23.116Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-gateway-memory-pass5",
-        "head_sha": "25f90162ed8ccad28292ae299fc43435c9c5887c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103113:4930384453:2026-09-01T06:14:32Z:clawsweeper_needs_human",
       "comment_id": "4930384453",
@@ -33837,6 +33790,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134794:5488849055:2026-09-01T10:45:14Z:clawsweeper_needs_human",
+      "comment_id": "5488849055",
+      "comment_version_key": "5488849055:2026-09-01T10:45:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134794#issuecomment-5488849055",
+      "comment_created_at": "2026-09-01T04:22:16Z",
+      "comment_updated_at": "2026-09-01T10:45:14Z",
+      "comment_body_sha256": "c876e41b2aede9a6b5a3a98054e75efcf55f461816a70e1b8cc18a81785f3076",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134794,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Runtime code is net +194 lines; the process-owner capture is justified, but its custom-spawner behavior depends on the pinned Agent SDK contract, whose installed source was unavailabl... (sha=d530c3ecd90add7ea397d4c646e3b993586da68d)",
+      "expected_head_sha": "d530c3ecd90add7ea397d4c646e3b993586da68d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:46:00.148Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claude-stderr-diagnostics",
+        "head_sha": "d530c3ecd90add7ea397d4c646e3b993586da68d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
