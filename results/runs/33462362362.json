@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134649",
+  "mode": "autonomous",
+  "run_id": "33462362362",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33462362362",
+  "head_sha": "ced376c343537d09f840bb9093c5cc1c8ff23c88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134649.md",
+  "published_at": "2026-09-01T02:43:01.375Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134649",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134649",
+  "canonical_pr": null,
+  "summary": "#134649 remains the canonical open bug. Current main sends only SIGTERM during normal managed-local-service shutdown and returns; the existing restart path already waits and escalates. Implementation is blocked in this read-only checkout: no node_modules are present, Corepack cannot create its cache (EROFS), and the mandatory sibling ../codex source is absent and cannot be cloned here. A narrow, credited new-fix-PR artifact is prepared for an executor with a writable checkout.",
+  "actions": [
+    {
+      "target": "#134649",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134649",
+      "candidate_fix": null,
+      "reason": "A writable executor must inspect the required Codex source, add the pre-fix regression, implement the owner-boundary repair, and run the declared validations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134649",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134649",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable ClawSweeper executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
