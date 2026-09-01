@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135291",
+  "mode": "autonomous",
+  "run_id": "33532529744",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33532529744",
+  "head_sha": "48bd2b42f1dd0504c9afc8643c9781290604b3b2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135291.md",
+  "published_at": "2026-09-01T17:05:59.785Z",
+  "canonical": "#135291",
+  "canonical_issue": "#135291",
+  "canonical_pr": null,
+  "summary": "#135291 remains the canonical open bug. Latest main statically retains the ownerless core Skill Workshop approval path, but this worker cannot create or validate the required repair: the checkout is read-only, ../codex is absent (a mandatory direct-inspection gate), and pnpm cannot initialize Corepack on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#135291",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135291",
+      "candidate_fix": null,
+      "reason": "A writable checkout with the required sibling Codex source is needed before any code change or implementation verdict; focused tests also require an installable package-manager cache."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
