@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:16:57.653Z",
+  "updated_at": "2026-09-01T10:17:00.546Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132450:5463457605:2026-08-29T16:10:27Z:re_review",
-      "comment_id": "5463457605",
-      "comment_version_key": "5463457605:2026-08-29T16:10:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132450#issuecomment-5463457605",
-      "comment_created_at": "2026-08-29T16:10:27Z",
-      "comment_updated_at": "2026-08-29T16:10:27Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132450,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:51:51.963Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132450:5463704554:2026-08-29T17:02:00Z:re_review",
       "comment_id": "5463704554",
@@ -33603,6 +33576,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133716:5472814113:2026-09-01T10:15:59Z:clawsweeper_needs_human",
+      "comment_id": "5472814113",
+      "comment_version_key": "5472814113:2026-09-01T10:15:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133716#issuecomment-5472814113",
+      "comment_created_at": "2026-08-31T02:06:54Z",
+      "comment_updated_at": "2026-09-01T10:15:59Z",
+      "comment_body_sha256": "6a18f094216e3fbcf9d58acef60d47e9e2d21a1bcf0d78e09335752d08426911",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133716,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Malformed UTF-8 responses that were previously silently replacement-decoded will now fail with the established malformed-response error; this is intentional, but a nonconforming inter... (sha=aca683caa361848b6a0af72aba9a0da731701aea)",
+      "expected_head_sha": "aca683caa361848b6a0af72aba9a0da731701aea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:17:00.546Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/amazon-bedrock-embedding-strict-utf8",
+        "head_sha": "aca683caa361848b6a0af72aba9a0da731701aea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
