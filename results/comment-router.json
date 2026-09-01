@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T09:45:47.404Z",
+  "updated_at": "2026-09-01T09:46:42.751Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134831:5489105180:2026-09-01T05:33:16Z:clawsweeper_needs_human",
-      "comment_id": "5489105180",
-      "comment_version_key": "5489105180:2026-09-01T05:33:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134831#issuecomment-5489105180",
-      "comment_created_at": "2026-09-01T04:55:55Z",
-      "comment_updated_at": "2026-09-01T05:33:16Z",
-      "comment_body_sha256": "2f07d637fa8f865c02347c6b08a618a21019cb7d8688c952cf0d331deda53f02",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134831,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Temporary SQLite session state is deleted after each run; the expected-ID fence is source- and test-covered, but this remains a session-state-sensitive merge surface. (sha=ad3cdb298775847ad91793f078e94e0565ffc652)",
-      "expected_head_sha": "ad3cdb298775847ad91793f078e94e0565ffc652",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:34:10.367Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-8.1-feedback-upgrade",
-        "head_sha": "ad3cdb298775847ad91793f078e94e0565ffc652",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134837:5489159134:2026-09-01T05:33:16Z:clawsweeper_needs_human",
       "comment_id": "5489159134",
@@ -33188,6 +33155,53 @@
         "kind": "pull_request",
         "branch": "fix/134304-harness-runtime-diagnostics",
         "head_sha": "76b1f6fd6b2caca886a7d570497a01479ecdc9a0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1236:5492091969:2026-09-01T09:45:46Z:re_review",
+      "comment_id": "5492091969",
+      "comment_version_key": "5492091969:2026-09-01T09:45:46Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1236#issuecomment-5492091969",
+      "comment_created_at": "2026-09-01T09:45:46Z",
+      "comment_updated_at": "2026-09-01T09:45:46Z",
+      "comment_body_sha256": "d313c6d4a2c28ba1c6052dcf9eef20b16d9789a16d411bf24a0e290f5f90b69a",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1236,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T09:46:38.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-label-reconciliation",
+        "head_sha": "c3f3db1d6664d076313643d019110aef88399772",
         "cluster_id": null,
         "job_path": null
       },
