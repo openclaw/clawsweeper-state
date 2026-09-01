@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T03:39:32.445Z",
+  "updated_at": "2026-09-01T03:40:12.527Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134101:5484711868:2026-08-31T21:16:18Z:re_review",
-      "comment_id": "5484711868",
-      "comment_version_key": "5484711868:2026-08-31T21:16:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134101#issuecomment-5484711868",
-      "comment_created_at": "2026-08-31T21:16:18Z",
-      "comment_updated_at": "2026-08-31T21:16:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134101,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T21:17:01.603Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release82-consent-reconciled",
-        "head_sha": "f291b3af2ba896b8ab384b5e5dc1bd9f47509e64",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134472:5484711110:2026-08-31T21:16:14Z:re_review",
       "comment_id": "5484711110",
@@ -33381,6 +33334,39 @@
         "kind": "pull_request",
         "branch": "codex/test-rastermill-metadata-suite",
         "head_sha": "29caa73b4712fae0c3ab32fa1ee8028d7562759e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134689:5488245458:2026-09-01T03:30:55Z:clawsweeper_needs_human",
+      "comment_id": "5488245458",
+      "comment_version_key": "5488245458:2026-09-01T03:30:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134689#issuecomment-5488245458",
+      "comment_created_at": "2026-09-01T03:00:28Z",
+      "comment_updated_at": "2026-09-01T03:30:55Z",
+      "comment_body_sha256": "a2baa5ca11a7c29c69fccffba63ef9bf124d844a4f56214617ecb0387a3e44e1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the macOS action-result serialization reached through the node runtime; supplied Swift bridge assertions, schem... (sha=54bb6d9c1f15ad873ef318c68db37d9b62270af0)",
+      "expected_head_sha": "54bb6d9c1f15ad873ef318c68db37d9b62270af0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T03:40:12.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-computer-act-result",
+        "head_sha": "54bb6d9c1f15ad873ef318c68db37d9b62270af0",
         "cluster_id": null,
         "job_path": null
       }
