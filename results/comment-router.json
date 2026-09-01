@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:05:43.792Z",
+  "updated_at": "2026-09-01T19:06:29.747Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135254:5495388527:2026-09-01T14:19:42Z:clawsweeper_needs_human",
-      "comment_id": "5495388527",
-      "comment_version_key": "5495388527:2026-09-01T14:19:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135254#issuecomment-5495388527",
-      "comment_created_at": "2026-09-01T14:19:42Z",
-      "comment_updated_at": "2026-09-01T14:19:42Z",
-      "comment_body_sha256": "c6c3009194f06b33aaa4e1c865c7d415bf57a0ed87394f09b1cc231ee756ccc8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135254,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI remains in progress in the supplied PR state, including the full-tree gates called out in the PR body; source review alone is not merge readiness. (sha=f650244fdaf83f894a3fc4d518a7ce2ee8de4fb5)",
-      "expected_head_sha": "f650244fdaf83f894a3fc4d518a7ce2ee8de4fb5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T14:20:24.880Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa50-twitch-send-owner",
-        "head_sha": "f650244fdaf83f894a3fc4d518a7ce2ee8de4fb5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135259:5495393944:2026-09-01T14:20:06Z:re_review",
       "comment_id": "5495393944",
@@ -33326,6 +33293,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135440:5498982377:2026-09-01T19:05:28Z:re_review",
+      "comment_id": "5498982377",
+      "comment_version_key": "5498982377:2026-09-01T19:05:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135440#issuecomment-5498982377",
+      "comment_created_at": "2026-09-01T19:05:28Z",
+      "comment_updated_at": "2026-09-01T19:05:28Z",
+      "comment_body_sha256": "99101f44a57df8843e2c0c08bd428e5fb4c3420df5afa116a7457fa50312bbfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135440,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T19:06:27.262Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-preflight-critical-path-20260901",
+        "head_sha": "2c7798e07cd421d03200629e73aa98308810b7fb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
