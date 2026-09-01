@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T21:51:03.085Z",
+  "updated_at": "2026-09-01T21:51:49.871Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1056:5497421362:2026-09-01T16:54:40Z:clawsweeper_needs_human",
-      "comment_id": "5497421362",
-      "comment_version_key": "5497421362:2026-09-01T16:54:40Z",
-      "comment_url": "https://github.com/openclaw/gogcli/pull/1056#issuecomment-5497421362",
-      "comment_created_at": "2026-09-01T16:54:40Z",
-      "comment_updated_at": "2026-09-01T16:54:40Z",
-      "comment_body_sha256": "0eaca08afacbb11c28545c03cbae190c049ed7101195160f579792f40e39de58",
-      "repo": "openclaw/gogcli",
-      "issue_number": 1056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Processes that already export GOOGLE_CLOUD_QUOTA_PROJECT will begin sending a billing header after upgrade even without the new CLI flag; APIs can then fail if that project lacks enab... (sha=645e845489c48e0b02e832a97db64c01c847063a)",
-      "expected_head_sha": "645e845489c48e0b02e832a97db64c01c847063a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T16:55:28.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prateek/gogcli-quota-project",
-        "head_sha": "645e845489c48e0b02e832a97db64c01c847063a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3516:5392108486:2026-09-01T16:54:54Z:clawsweeper_auto_repair",
       "comment_id": "5392108486",
@@ -33511,6 +33478,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134490:5500911341:2026-09-01T21:50:45Z:re_review",
+      "comment_id": "5500911341",
+      "comment_version_key": "5500911341:2026-09-01T21:50:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134490#issuecomment-5500911341",
+      "comment_created_at": "2026-09-01T21:50:45Z",
+      "comment_updated_at": "2026-09-01T21:50:45Z",
+      "comment_body_sha256": "b732749baa87178faa622477ab10827df96e155acd6cf1ed1116db8b3674922b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134490,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T21:51:47.554Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upgrade-experience-final-3e21d8",
+        "head_sha": "fb035e5eab6d5573a29a6f54467d34aa4836ecba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
