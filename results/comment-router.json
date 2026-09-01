@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:30:56.001Z",
+  "updated_at": "2026-09-01T16:31:02.638Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135165:5493491708:2026-09-01T11:50:49Z:clawsweeper_needs_human",
-      "comment_id": "5493491708",
-      "comment_version_key": "5493491708:2026-09-01T11:50:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135165#issuecomment-5493491708",
-      "comment_created_at": "2026-09-01T11:50:49Z",
-      "comment_updated_at": "2026-09-01T11:50:49Z",
-      "comment_body_sha256": "364cf73354ea0907bcec6b46dc5cde9fd0feccd267109a4ac653b580601e07c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135165,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout has no installed node-tar source and network resolution failed, so this review could not independently inspect tar 7.5.22’s synchronous-pack contract; the supplied succes... (sha=682df93f08cf5b7cbb3be57e7a7fe4d5531eb5ba)",
-      "expected_head_sha": "682df93f08cf5b7cbb3be57e7a7fe4d5531eb5ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:56:25.296Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/prepared-ci-extract-zlib",
-        "head_sha": "682df93f08cf5b7cbb3be57e7a7fe4d5531eb5ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135168:5493511218:2026-09-01T11:52:36Z:clawsweeper_needs_human",
       "comment_id": "5493511218",
@@ -32153,6 +32120,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128101:5497128407:2026-09-01T16:30:10Z:re_review",
+      "comment_id": "5497128407",
+      "comment_version_key": "5497128407:2026-09-01T16:30:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128101#issuecomment-5497128407",
+      "comment_created_at": "2026-09-01T16:30:10Z",
+      "comment_updated_at": "2026-09-01T16:30:10Z",
+      "comment_body_sha256": "12a51401bb8a36516263fb0bce359a7b1324b2783ac5d4593ae37b94ea972db3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128101,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T16:31:00.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-realtime-playout-owner",
+        "head_sha": "e1d118fede810616b16125926313929afc575325",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
