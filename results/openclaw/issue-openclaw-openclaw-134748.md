@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134748"
 mode: "autonomous"
-run_id: "33467564556"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33467564556"
-head_sha: "1bcce8bcf392f4a357d247ce2f9b2216ca92dbd4"
-workflow_conclusion: "failure"
+run_id: "33470893984"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33470893984"
+head_sha: "220ad5673ace96b2fab6473203796639c17ac710"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T04:14:23.837Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134748"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134748"
+published_at: "2026-09-01T05:06:41.989Z"
+canonical: "#134748"
+canonical_issue: "#134748"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33467564556](https://github.com/openclaw/clawsweeper/actions/runs/33467564556)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33470893984](https://github.com/openclaw/clawsweeper/actions/runs/33470893984)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134748
+Canonical: #134748
 
 ## Summary
 
-#134748 is a source-proven current-main boot-session admission regression. A narrow fix artifact is ready, but this worker cannot write or run the required proof: the checkout is read-only, dependencies are not hydrated, and mandatory direct ../codex inspection is unavailable.
+#134748 remains the open canonical bug. Current main has a source-reproducible defect: temporary mapping preservation snapshots and restores the old boot mapping, but leaves it visible during the fresh boot run, so session admission rejects the new boot ID. A narrow fix artifact is ready, but this worker cannot edit, install dependencies, run tests, create a branch, or raise a PR because the checkout is read-only and has no node_modules. The required sibling ../codex checkout is also absent, so no Codex verdict is claimed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/134748
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134748 | fix_needed | blocked | canonical | Implementation is blocked only by this worker environment. A writable executor must perform the direct ../codex inspection, apply the narrow artifact, and run the listed proof. |
-| cluster:issue-openclaw-openclaw-134748 | build_fix_artifact | planned | canonical | Create one new ClawSweeper fix PR from the named branch after environment blockers are cleared. |
+| #134748 | fix_needed | planned | canonical | Implement the owner-boundary lifecycle repair and regression on the ClawSweeper branch when a writable validation environment is available. |
+| #134748 | build_fix_artifact | planned | canonical | Fix PR is allowed by the job, but this read-only worker can only produce the artifact. |
 
 ## Needs Human
 
