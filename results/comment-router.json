@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T21:25:17.553Z",
+  "updated_at": "2026-09-01T21:25:31.691Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134996:5491014633:2026-09-01T16:24:53Z:clawsweeper_needs_human",
-      "comment_id": "5491014633",
-      "comment_version_key": "5491014633:2026-09-01T16:24:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134996#issuecomment-5491014633",
-      "comment_created_at": "2026-09-01T08:16:34Z",
-      "comment_updated_at": "2026-09-01T16:24:53Z",
-      "comment_body_sha256": "cf8716bde280167a7898656a46044b6f5ea228a357a0b4b94a2a932b38df768f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134996,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Approve the vendored browser fonts** - The stylesheet distributes two new WOFF2 files to browsers; recorded hashes match the committed assets, but acceptance of vendor binaries is an ex...; Review finding: [medium] Approve the vendored browser fonts — ui/public/fonts/noto-sans-vietnamese.css:19 (sha=da7295c4f7b1bbf5949e780d00dc6e200a614c32)",
-      "expected_head_sha": "da7295c4f7b1bbf5949e780d00dc6e200a614c32",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T16:25:39.723Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-133930",
-        "head_sha": "da7295c4f7b1bbf5949e780d00dc6e200a614c32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135267:5496085278:2026-09-01T16:25:23Z:clawsweeper_needs_human",
       "comment_id": "5496085278",
@@ -33480,6 +33447,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T21:25:17.553Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117734:5500447592:2026-09-01T21:24:43Z:re_review",
+      "comment_id": "5500447592",
+      "comment_version_key": "5500447592:2026-09-01T21:24:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5500447592",
+      "comment_created_at": "2026-09-01T21:07:27Z",
+      "comment_updated_at": "2026-09-01T21:24:43Z",
+      "comment_body_sha256": "0a4e11b68f07d9b9ad97f9906cbe3b4242e650eb23958d0e73b5317db0b10492",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117734,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T21:25:29.768Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/conversation-burst-budget",
+        "head_sha": "f788e2a27c4f0239896ca092042a87179fd643d5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
