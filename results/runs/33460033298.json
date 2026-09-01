@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134621",
+  "mode": "autonomous",
+  "run_id": "33460033298",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33460033298",
+  "head_sha": "ced376c343537d09f840bb9093c5cc1c8ff23c88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134621.md",
+  "published_at": "2026-09-01T02:03:40.620Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134621",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134621",
+  "canonical_pr": null,
+  "summary": "#134621 is a narrow, source-confirmed macOS producer/consumer contract defect. A repair artifact is ready, but implementation and local validation are blocked: this checkout is read-only with no node_modules, native proof requires disposable macOS CI, and required sibling ../codex source is unavailable for direct inspection.",
+  "actions": [
+    {
+      "target": "#134621",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#134621",
+      "candidate_fix": null,
+      "reason": "Repair must be executed in a writable checkout, then validated with dependencies installed and the disposable macOS CI lane."
+    },
+    {
+      "target": "#126070",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#134621",
+      "candidate_fix": null,
+      "reason": "Keep the delivery-outcome investigation separate from this response-envelope repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134621",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#134621",
+      "candidate_fix": null,
+      "reason": "A new credited ClawSweeper fix PR is the explicit job path once writable execution and platform validation are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
