@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:53:53.111Z",
+  "updated_at": "2026-09-01T14:54:33.888Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135062:5492116716:2026-09-01T10:20:52Z:clawsweeper_needs_human",
-      "comment_id": "5492116716",
-      "comment_version_key": "5492116716:2026-09-01T10:20:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135062#issuecomment-5492116716",
-      "comment_created_at": "2026-09-01T09:47:51Z",
-      "comment_updated_at": "2026-09-01T10:20:52Z",
-      "comment_body_sha256": "687c5170b5aa91715e5be953bb4b6549a49b17620ecce4b09aba804ed0e5a6cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135062,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgraded installations intentionally receive no automatic project or trigger recall until legacy provenance repair completes; foreground availability improves, but prompt context is t... (sha=d37acc412d47af5d8c3a0001c8385d6bdb214fee)",
-      "expected_head_sha": "d37acc412d47af5d8c3a0001c8385d6bdb214fee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T10:21:44.327Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-startup-reindex-foreground",
-        "head_sha": "d37acc412d47af5d8c3a0001c8385d6bdb214fee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134468:5484660681:2026-09-01T10:20:34Z:clawsweeper_auto_repair",
       "comment_id": "5484660681",
@@ -32493,6 +32460,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135203:5495849777:2026-09-01T14:53:30Z:re_review",
+      "comment_id": "5495849777",
+      "comment_version_key": "5495849777:2026-09-01T14:53:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135203#issuecomment-5495849777",
+      "comment_created_at": "2026-09-01T14:53:30Z",
+      "comment_updated_at": "2026-09-01T14:53:30Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135203,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:54:29.661Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/powershell-strict-json-hint-135164",
+        "head_sha": "adc204de213468daa649067efd92240a7f5b9639",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
