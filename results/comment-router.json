@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:14:09.710Z",
+  "updated_at": "2026-09-01T04:14:10.701Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134519:5486053041:2026-08-31T23:15:01Z:re_review",
-      "comment_id": "5486053041",
-      "comment_version_key": "5486053041:2026-08-31T23:15:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134519#issuecomment-5486053041",
-      "comment_created_at": "2026-08-31T23:15:01Z",
-      "comment_updated_at": "2026-08-31T23:15:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134519,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T23:15:54.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-install-smoke-frozen-baseline",
-        "head_sha": "2cc24d9f44aca04c568fa73c9f2bd91fcc2f545f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134529:5486055878:2026-08-31T23:15:16Z:clawsweeper_needs_human",
       "comment_id": "5486055878",
@@ -33214,6 +33167,39 @@
         "kind": "pull_request",
         "branch": "fix/2026-7-33-kova-performance",
         "head_sha": "13152f102ae7872d0bee43c7d78683f012ae2897",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134784:5488782005:2026-09-01T04:13:30Z:clawsweeper_needs_human",
+      "comment_id": "5488782005",
+      "comment_version_key": "5488782005:2026-09-01T04:13:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134784#issuecomment-5488782005",
+      "comment_created_at": "2026-09-01T04:13:30Z",
+      "comment_updated_at": "2026-09-01T04:13:30Z",
+      "comment_body_sha256": "d8c24b1470c529e2dc996347fa7048ffe028348476e611fc312e92873bcaadfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134784,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The release gate now depends on a new 2,233-line production tooling path; the available evidence is focused tests and static inspection, not an observed 2026.7.33 preflight artifact f... (sha=6ea7e181e9c57b331b9ed101ab3561ba538fb3ab)",
+      "expected_head_sha": "6ea7e181e9c57b331b9ed101ab3561ba538fb3ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T04:14:10.701Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026-7-33-npm-sdk-preflight",
+        "head_sha": "6ea7e181e9c57b331b9ed101ab3561ba538fb3ab",
         "cluster_id": null,
         "job_path": null
       }
