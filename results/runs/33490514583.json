@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135028",
+  "mode": "autonomous",
+  "run_id": "33490514583",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33490514583",
+  "head_sha": "1d79ae6c9f2dfc34eee2c430d3034ec126c82745",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135028.md",
+  "published_at": "2026-09-01T09:29:18.135Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135028",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135028",
+  "canonical_pr": null,
+  "summary": "#135028 remains a real, narrow bug on main 1544e234: authorization begins before checking for the required gh executable. A fix PR is planned, but this worker cannot write the read-only checkout or run tests because dependencies/Corepack cannot initialize; ../codex is also absent, so the repository-required direct Codex-source check cannot be completed.",
+  "actions": [
+    {
+      "target": "#135028",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135028",
+      "candidate_fix": null,
+      "reason": "The authorization handler is the correct public Gateway boundary: rejecting before service.startAuthorization prevents both device-code issuance and authorization-record creation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135028",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135028",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; implementation and validation remain blocked only by the worker environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135028",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135028",
+      "candidate_fix": null,
+      "reason": "The worker sandbox is read-only, so it cannot create the branch, edit the regression tests, install dependencies, or open the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
