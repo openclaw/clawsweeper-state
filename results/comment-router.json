@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:38:33.603Z",
+  "updated_at": "2026-09-01T11:40:39.080Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110562:5173876550:2026-08-04T02:23:23Z:re_review",
-      "comment_id": "5173876550",
-      "comment_version_key": "5173876550:2026-08-04T02:23:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110562#issuecomment-5173876550",
-      "comment_created_at": "2026-08-04T02:23:23Z",
-      "comment_updated_at": "2026-08-04T02:23:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110562,
-      "author": "sunlit-deng",
-      "author_id": 253064511,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T07:12:44.206Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110562:5175358267:2026-08-04T06:21:32Z:re_review",
       "comment_id": "5175358267",
@@ -33797,6 +33770,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134403:5483263432:2026-09-01T11:39:29Z:clawsweeper_needs_human",
+      "comment_id": "5483263432",
+      "comment_version_key": "5483263432:2026-09-01T11:39:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134403#issuecomment-5483263432",
+      "comment_created_at": "2026-08-31T19:16:41Z",
+      "comment_updated_at": "2026-09-01T11:39:29Z",
+      "comment_body_sha256": "72dada8302991c4f60a798331c023f9f304743460eb095068909cdf00c1e51cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134403,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The permanent waiver intentionally permits credentials and config to be written where a live Gateway will not consume them; its operator contract needs explicit maintainer acceptance. (sha=13596581cd11584bf791a05c62c93cca5091ce4d)",
+      "expected_head_sha": "13596581cd11584bf791a05c62c93cca5091ce4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:40:39.080Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-dir-split-brain",
+        "head_sha": "13596581cd11584bf791a05c62c93cca5091ce4d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
