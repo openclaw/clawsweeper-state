@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:53:03.063Z",
+  "updated_at": "2026-09-01T06:53:12.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134517:5488365993:2026-09-01T03:15:05Z:re_review",
-      "comment_id": "5488365993",
-      "comment_version_key": "5488365993:2026-09-01T03:15:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134517#issuecomment-5488365993",
-      "comment_created_at": "2026-09-01T03:15:05Z",
-      "comment_updated_at": "2026-09-01T03:15:05Z",
-      "comment_body_sha256": "db0d1f44019ffa6927df7de44e59bd9b9b20d5acdcf36a26f62761f30c4024ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134517,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T03:15:43.861Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-progress-card-scroll-current",
-        "head_sha": "d5ce17ff54648f80398272af572fd7a133d3da23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-01T03:14:57Z:clawsweeper_auto_repair",
       "comment_id": "5466178577",
@@ -32646,6 +32599,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1331:5490069512:2026-09-01T06:52:25Z:clawsweeper_needs_human",
+      "comment_id": "5490069512",
+      "comment_version_key": "5490069512:2026-09-01T06:52:25Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1331#issuecomment-5490069512",
+      "comment_created_at": "2026-09-01T06:52:25Z",
+      "comment_updated_at": "2026-09-01T06:52:25Z",
+      "comment_body_sha256": "1a9d63dcc96974d093ca6bbdd0b0f43c0debae2eba73ad22f711dcdcb479e8e7",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No concrete repair is needed; this is ready for normal maintainer and required-check review. (sha=8a105aa9396f0b2297430c76c480f3d34c0ba893)",
+      "expected_head_sha": "8a105aa9396f0b2297430c76c480f3d34c0ba893",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T06:53:12.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/simplify-review-followups",
+        "head_sha": "8a105aa9396f0b2297430c76c480f3d34c0ba893",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
