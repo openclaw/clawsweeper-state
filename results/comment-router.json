@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T07:19:18.027Z",
+  "updated_at": "2026-09-01T07:19:55.080Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134517:5485887591:2026-09-01T03:23:22Z:clawsweeper_auto_repair",
-      "comment_id": "5485887591",
-      "comment_version_key": "5485887591:2026-09-01T03:23:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134517#issuecomment-5485887591",
-      "comment_created_at": "2026-08-31T22:56:39Z",
-      "comment_updated_at": "2026-09-01T03:23:22Z",
-      "comment_body_sha256": "cf993e07eb31598a94153ba5da0d24279960eaab1d3838a889af114af989c643",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134517,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d5ce17ff54648f80398272af572fd7a133d3da23)",
-      "expected_head_sha": "d5ce17ff54648f80398272af572fd7a133d3da23",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T03:30:18.650Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/fix-progress-card-scroll-current",
-        "head_sha": "d5ce17ff54648f80398272af572fd7a133d3da23",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134524:5486077252:2026-09-01T03:09:32Z:clawsweeper_needs_human",
       "comment_id": "5486077252",
@@ -32686,6 +32653,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T07:19:18.027Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134911:5490235148:2026-09-01T07:19:08Z:clawsweeper_needs_human",
+      "comment_id": "5490235148",
+      "comment_version_key": "5490235148:2026-09-01T07:19:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134911#issuecomment-5490235148",
+      "comment_created_at": "2026-09-01T07:08:17Z",
+      "comment_updated_at": "2026-09-01T07:19:08Z",
+      "comment_body_sha256": "0c02b0a5ef401da1ad93ec5836d4a818c109eae132c6ddbf24442fa815d87bf6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds six production lines; no existing worker-environment teardown abstraction can absorb the exact-path state close without moving state-cache ownership into the runtime... (sha=b1e911ecf6fc6ee6fa26bb380a8acf70e8a008e9)",
+      "expected_head_sha": "b1e911ecf6fc6ee6fa26bb380a8acf70e8a008e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T07:19:55.080Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/worker-owned-state-close",
+        "head_sha": "b1e911ecf6fc6ee6fa26bb380a8acf70e8a008e9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
