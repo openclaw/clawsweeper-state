@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T07:49:00.857Z",
+  "updated_at": "2026-09-01T07:49:31.707Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134777:5488770782:2026-09-01T04:11:50Z:re_review",
-      "comment_id": "5488770782",
-      "comment_version_key": "5488770782:2026-09-01T04:11:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134777#issuecomment-5488770782",
-      "comment_created_at": "2026-09-01T04:11:50Z",
-      "comment_updated_at": "2026-09-01T04:11:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134777,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:12:37.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1001",
-        "head_sha": "4aacf769106b867f926d4c7ed3bbc8c32b6f00d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134768:5488783875:2026-09-01T04:13:46Z:re_review",
       "comment_id": "5488783875",
@@ -32625,6 +32578,39 @@
         "kind": "pull_request",
         "branch": "chore/control-ui-boot-manifest-refresh",
         "head_sha": "a4dbebb7bd8945206d3119503188c6894f9f7e72",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134926:5490694686:2026-09-01T07:48:36Z:clawsweeper_needs_human",
+      "comment_id": "5490694686",
+      "comment_version_key": "5490694686:2026-09-01T07:48:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134926#issuecomment-5490694686",
+      "comment_created_at": "2026-09-01T07:48:36Z",
+      "comment_updated_at": "2026-09-01T07:48:36Z",
+      "comment_body_sha256": "9954b25e931d9eb9019bfb3e1dac86a55bc0fbf442aa242db9eb0572c70beaf4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134926,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Require a passing ClawSweeper disposition before merge (P1)** - This parser accepts every trusted enriched completion marker after checking only identity and freshness. ClawSweeper emits that marker for pass, ne...; Review finding: [P1] Require a passing ClawSweeper disposition before merge — scripts/pr-lib/clawsweeper-review-gate.mjs:50 - [P1] Ignore legacy markers before selecting current c... (sha=72359789244dc2b632ed285cd2e1af11e01aaf02)",
+      "expected_head_sha": "72359789244dc2b632ed285cd2e1af11e01aaf02",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T07:49:31.707Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pr-require-clawsweeper-review",
+        "head_sha": "72359789244dc2b632ed285cd2e1af11e01aaf02",
         "cluster_id": null,
         "job_path": null
       }
