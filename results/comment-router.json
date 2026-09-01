@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T20:54:26.021Z",
+  "updated_at": "2026-09-01T20:54:28.549Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135256:5496580355:2026-09-01T15:47:58Z:re_review",
-      "comment_id": "5496580355",
-      "comment_version_key": "5496580355:2026-09-01T15:47:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135256#issuecomment-5496580355",
-      "comment_created_at": "2026-09-01T15:47:58Z",
-      "comment_updated_at": "2026-09-01T15:47:58Z",
-      "comment_body_sha256": "6d4d9f1fbd1b6f8af16f01a989413d7f4c1ea82f82fefebca7fba7e0aed9f5e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135256,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T15:58:55.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workspace-wx-eperm-exists",
-        "head_sha": "743d20a5cfe4452a95f9c5fc4e402996173606ac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135256:5496207959:2026-09-01T15:57:58Z:clawsweeper_needs_human",
       "comment_id": "5496207959",
@@ -33491,6 +33444,39 @@
         "kind": "pull_request",
         "branch": "rfc15/state-slice",
         "head_sha": "f9a9601cb0e8cd685e09b5d637a5cf96fe5ed1e5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135499:5499641816:2026-09-01T20:53:40Z:clawsweeper_needs_human",
+      "comment_id": "5499641816",
+      "comment_version_key": "5499641816:2026-09-01T20:53:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135499#issuecomment-5499641816",
+      "comment_created_at": "2026-09-01T19:59:03Z",
+      "comment_updated_at": "2026-09-01T20:53:40Z",
+      "comment_body_sha256": "93cdccb69344a115dead39b2edc9314b5a2fd44fb2227bc1e164efa838a05b8b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Substantive exact-head checks are skipped while this PR remains a draft, so the asserted focused Gateway and Control UI validation has not been independently confirmed on the current... (sha=7b38cb4338e4150b5aab9348281829396b5fb344)",
+      "expected_head_sha": "7b38cb4338e4150b5aab9348281829396b5fb344",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T20:54:28.549Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tasks-panel-stable-order",
+        "head_sha": "7b38cb4338e4150b5aab9348281829396b5fb344",
         "cluster_id": null,
         "job_path": null
       }
