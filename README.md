@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 1, 2026, 15:37 UTC
+Last source update: Sep 1, 2026, 16:03 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 1, 2026, 15:37 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Sep 1, 2026, 15:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33525778464) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 1, 2026, 15:37 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33526633902) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 1, 2026, 16:03 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33525775952) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 1, 2026, 16:03 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33529376312) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 1, 2026, 03:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33467035264) |
 
 ### Repositories
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 1, 2026, 12:42 UTC
+Last source update: Sep 1, 2026, 16:16 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 758 | 100% |
-| Run attempts archived | 2503 | audit |
-| Latest successful clusters | 631 | 83.2% |
-| Latest failed clusters | 125 | 16.5% |
+| Latest clusters reviewed | 759 | 100% |
+| Run attempts archived | 2504 | audit |
+| Latest successful clusters | 631 | 83.1% |
+| Latest failed clusters | 126 | 16.6% |
 | Latest cancelled clusters | 2 | 0.3% |
 | Needs-human clusters | 94 | 12.4% |
 | Fix actions failed | 30 | 4.5% |
@@ -115,9 +115,9 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 758 clusters: 271 maintainer action, 113 automation snapshot, 339 intervention needed, 35 no pending action, 0 completed.
+- Latest records: 759 clusters: 271 maintainer action, 113 automation snapshot, 340 intervention needed, 35 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-135028](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-135028.md) is maintainer_input: Provide a writable repair environment containing ../codex and allowing dependency installation; then execute the attached narrow new-PR a....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119975](https://github.com/openclaw/openclaw/pull/119975) is automation_failed: Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a sepa....
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#135291](https://github.com/openclaw/openclaw/pull/135291) is automation_failed: Implementation is blocked only by the read-only checkout and missing required local validation/Codex-source prerequisites; the issue rema....
 - Automation latest: [openclaw/fs-safe](https://github.com/openclaw/fs-safe) [#167](https://github.com/openclaw/fs-safe/pull/167) is action_planned: The calibrated automerge job requires repairing actionable review findings rather than pausing at the review blocker. Merge and close are....
 - Completed latest: no completed action in the latest records.
 
@@ -125,7 +125,7 @@ State: Failed clusters need inspection
 | --- | ---: | --- |
 | Maintainer Action | 271 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 113 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 339 | automation failure or blocker recorded |
+| Intervention Needed | 340 | automation failure or blocker recorded |
 | No Pending Action | 35 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -138,7 +138,7 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 69 |
-| automation_failed | 140 |
+| automation_failed | 141 |
 | automation_blocked | 199 |
 | reviewed_no_action | 35 |
 | completed | 0 |
@@ -187,6 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#135291](https://github.com/openclaw/openclaw/pull/135291) | automation_failed | Implementation is blocked only by the read-only checkout and missing required local validation/Codex-source prerequisites; the issue remains the op... | Sep 1, 2026, 16:16 UTC | [issue-openclaw-openclaw-135291](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-135291.md) | [33526968176](https://github.com/openclaw/clawsweeper/actions/runs/33526968176) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#119975](https://github.com/openclaw/openclaw/pull/119975) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Sep 1, 2026, 12:42 UTC | [automerge-openclaw-openclaw-119975](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-119975.md) | [33505913793](https://github.com/openclaw/clawsweeper/actions/runs/33505913793) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#134826](https://github.com/openclaw/openclaw/pull/134826) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Sep 1, 2026, 12:26 UTC | [automerge-openclaw-openclaw-134826](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-134826.md) | [33505274683](https://github.com/openclaw/clawsweeper/actions/runs/33505274683) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#135164](https://github.com/openclaw/openclaw/pull/135164) | automation_blocked | Implementation is blocked only by the constrained worker environment; the supplied hydrated issue remains a narrow canonical fix candidate. | Sep 1, 2026, 12:09 UTC | [issue-openclaw-openclaw-135164](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-135164.md) | [33504331882](https://github.com/openclaw/clawsweeper/actions/runs/33504331882) |
@@ -201,7 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#134657](https://github.com/openclaw/openclaw/pull/134657) | automation_failed | Implementation is blocked only by this worker environment; the deterministic executor can apply the narrow artifact on clawsweeper/issue-openclaw-o... | Sep 1, 2026, 02:55 UTC | [issue-openclaw-openclaw-134657](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-134657.md) | [33462828896](https://github.com/openclaw/clawsweeper/actions/runs/33462828896) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#134621](https://github.com/openclaw/openclaw/pull/134621) | automation_failed | Repair must be executed in a writable checkout, then validated with dependencies installed and the disposable macOS CI lane. | Sep 1, 2026, 02:03 UTC | [issue-openclaw-openclaw-134621](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-134621.md) | [33460033298](https://github.com/openclaw/clawsweeper/actions/runs/33460033298) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#134471](https://github.com/openclaw/openclaw/pull/134471) | automation_blocked | Keep the open canonical issue pending. OpenClaw policy prohibits a Codex verdict, code change, or proof-sufficient claim without direct inspection... | Sep 1, 2026, 01:36 UTC | [issue-openclaw-openclaw-134471](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-134471.md) | [33448277833](https://github.com/openclaw/clawsweeper/actions/runs/33448277833) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#134558](https://github.com/openclaw/openclaw/pull/134558) | automation_blocked | The direct source invariant is clear, but the job requires a failing browser regression before editing. Missing dependencies and a read-only filesy... | Sep 1, 2026, 00:46 UTC | [issue-openclaw-openclaw-134558](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-134558.md) | [33454685366](https://github.com/openclaw/clawsweeper/actions/runs/33454685366) |
 
 #### No Pending Action
 
