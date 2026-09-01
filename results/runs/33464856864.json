@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134687",
+  "mode": "autonomous",
+  "run_id": "33464856864",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33464856864",
+  "head_sha": "ae37f02a3f5ba45b2bc52fc1d88f5b36b198874d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134687.md",
+  "published_at": "2026-09-01T03:22:56.976Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/134687",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/134687",
+  "canonical_pr": null,
+  "summary": "Current main (a0868f477a8ec13269e59c0ea821c3814f03d3f6) has the owner-propagation defect: the resolved Dreaming workspace owner reaches applyShortTermPromotions but is dropped before consolidation. This worker could not create or locally validate the repair because the required sibling ../codex source checkout is absent and dependencies (tsx/node_modules) are unavailable in this read-only checkout. A narrow, executable fix artifact is prepared for a new credited ClawSweeper PR.",
+  "actions": [
+    {
+      "target": "#134687",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134687",
+      "candidate_fix": null,
+      "reason": "The bug is isolated to Memory Core’s promotion-to-consolidation owner boundary. Implementation is blocked only in this worker environment: ../codex is absent despite the repository’s mandatory direct-Codex-source gate, and the focused Vitest command cannot resolve tsx because node_modules is absent."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-134687",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134687",
+      "candidate_fix": null,
+      "reason": "Create one narrow PR after the executor satisfies the mandatory Codex-source and dependency prerequisites."
+    },
+    {
+      "target": "#101603",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Same Memory Core Dreaming area, but distinct behavior and a separate maintainer product decision."
+    },
+    {
+      "target": "#65653",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is permitted or needed."
+    },
+    {
+      "target": "#69811",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is permitted or needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
