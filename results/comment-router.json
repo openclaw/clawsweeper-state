@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:16:52.723Z",
+  "updated_at": "2026-09-01T04:18:03.967Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134423:5486138694:2026-08-31T23:22:47Z:re_review",
-      "comment_id": "5486138694",
-      "comment_version_key": "5486138694:2026-08-31T23:22:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134423#issuecomment-5486138694",
-      "comment_created_at": "2026-08-31T23:22:47Z",
-      "comment_updated_at": "2026-08-31T23:22:47Z",
-      "comment_body_sha256": "76387ac69c016f431134b5ea6bdc4236aae6ab36254323a9ca6f346cbdcdc2cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134423,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T23:23:35.489Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-responses-continuation-unsafe-integer",
-        "head_sha": "712e20ae8b59d22f54ff02b7d0b7de726e7dc5ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5391201786:2026-08-24T05:44:22Z:re_review",
       "comment_id": "5391201786",
@@ -33269,6 +33222,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-legacy-job-timer-arming",
         "head_sha": "6cd39a782f3d07735aa62f1b0057f35aeda032bd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134793:5488808646:2026-09-01T04:17:16Z:clawsweeper_needs_human",
+      "comment_id": "5488808646",
+      "comment_version_key": "5488808646:2026-09-01T04:17:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134793#issuecomment-5488808646",
+      "comment_created_at": "2026-09-01T04:17:16Z",
+      "comment_updated_at": "2026-09-01T04:17:16Z",
+      "comment_body_sha256": "e4b39c17a59b58d19082d03c0ede0762ae27998f179b52e120068bb1f28a58a7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head routing and baseline checks were still in progress in the captured PR state. (sha=f89ccef658dd2abdbdcfaca929e9890cce47b133)",
+      "expected_head_sha": "f89ccef658dd2abdbdcfaca929e9890cce47b133",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T04:18:03.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-test-local-check-scope",
+        "head_sha": "f89ccef658dd2abdbdcfaca929e9890cce47b133",
         "cluster_id": null,
         "job_path": null
       }
