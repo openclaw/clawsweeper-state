@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T22:05:01.748Z",
+  "updated_at": "2026-09-01T22:05:02.437Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/summarize:398:5497606680:2026-09-01T17:10:16Z:re_review",
-      "comment_id": "5497606680",
-      "comment_version_key": "5497606680:2026-09-01T17:10:16Z",
-      "comment_url": "https://github.com/steipete/summarize/pull/398#issuecomment-5497606680",
-      "comment_created_at": "2026-09-01T17:10:16Z",
-      "comment_updated_at": "2026-09-01T17:10:16Z",
-      "comment_body_sha256": "6a65c5bd9cde960e8bdbcea747b038101a2d83bc6d7bd683c5136074bfb4985e",
-      "repo": "steipete/summarize",
-      "issue_number": 398,
-      "author": "husodrn46",
-      "author_id": 76519526,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T17:16:12.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/turkish-localization",
-        "head_sha": "11ec47902095e40f27fc3d9cadbb55369d1cd40b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111811:5025234379:2026-09-01T17:15:19Z:clawsweeper_auto_repair",
       "comment_id": "5025234379",
@@ -33333,6 +33286,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T22:05:01.748Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135441:5498685216:2026-09-01T22:04:13Z:clawsweeper_auto_repair",
+      "comment_id": "5498685216",
+      "comment_version_key": "5498685216:2026-09-01T22:04:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135441#issuecomment-5498685216",
+      "comment_created_at": "2026-09-01T18:42:14Z",
+      "comment_updated_at": "2026-09-01T22:04:13Z",
+      "comment_body_sha256": "067b8893cf4c029790c0517cb92989b63d5a5ec0fd577e1076dd5552e23090d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135441,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7763d98e6ab4f6ea5ff3b78a058c22792656ddd7)",
+      "expected_head_sha": "7763d98e6ab4f6ea5ff3b78a058c22792656ddd7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T22:05:02.437Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-compaction-active-writer",
+        "head_sha": "7763d98e6ab4f6ea5ff3b78a058c22792656ddd7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
