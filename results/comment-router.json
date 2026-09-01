@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:49:19.792Z",
+  "updated_at": "2026-09-01T19:49:22.864Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135262:5495727658:2026-09-01T14:44:34Z:re_review",
-      "comment_id": "5495727658",
-      "comment_version_key": "5495727658:2026-09-01T14:44:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135262#issuecomment-5495727658",
-      "comment_created_at": "2026-09-01T14:44:34Z",
-      "comment_updated_at": "2026-09-01T14:44:34Z",
-      "comment_body_sha256": "bf5b89f0a420635e0696564ab377c9e99bacb334a091a84695b0f8e0555a84f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135262,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:45:23.479Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/managed-control-owner-drift-cause",
-        "head_sha": "0e709d518d304d82371a85ca9358accf8ed161fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135212:5495738361:2026-09-01T14:45:21Z:clawsweeper_needs_human",
       "comment_id": "5495738361",
@@ -33431,6 +33384,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-134353-feedback",
         "head_sha": "ee6e8994b7eefb452b4029cc5ef5dca52cb21f4a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135463:5499506970:2026-09-01T19:48:06Z:clawsweeper_needs_human",
+      "comment_id": "5499506970",
+      "comment_version_key": "5499506970:2026-09-01T19:48:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135463#issuecomment-5499506970",
+      "comment_created_at": "2026-09-01T19:48:06Z",
+      "comment_updated_at": "2026-09-01T19:48:06Z",
+      "comment_body_sha256": "e681d9eac844fae67f91f5e095f4478372aa1ae122b67581f2e0077563a896b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135463,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR remains a draft and its substantive exact-head CI checks are skipped, so the contributor-reported local validation still needs normal merge-time corroboration. (sha=7e23945903fa54dd9043b3c797e94301d772a22b)",
+      "expected_head_sha": "7e23945903fa54dd9043b3c797e94301d772a22b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T19:49:22.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/string-array-guard",
+        "head_sha": "7e23945903fa54dd9043b3c797e94301d772a22b",
         "cluster_id": null,
         "job_path": null
       }
