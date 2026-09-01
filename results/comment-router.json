@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:14:31.450Z",
+  "updated_at": "2026-09-01T04:14:35.248Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134482:5485921779:2026-08-31T23:00:57Z:re_review",
-      "comment_id": "5485921779",
-      "comment_version_key": "5485921779:2026-08-31T23:00:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134482#issuecomment-5485921779",
-      "comment_created_at": "2026-08-31T23:00:57Z",
-      "comment_updated_at": "2026-08-31T23:00:57Z",
-      "comment_body_sha256": "e200c03c80a53e59b8c69ec3e3b31e5ccac22ee0e8279f421ce62331cf9dabd7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134482,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T23:17:21.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-134202-safe-restart-metadata",
-        "head_sha": "fdbe1ca8eb4a6519bbb0660df3c8c69cf178d9de",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134482:5485257491:2026-08-31T23:16:30Z:clawsweeper_auto_repair",
       "comment_id": "5485257491",
@@ -33186,6 +33139,39 @@
         "kind": "pull_request",
         "branch": "fix/2026-7-33-provider-scaffold",
         "head_sha": "68a290fa82f57bb314843521c0ca8d079797bbff",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134783:5488784351:2026-09-01T04:13:50Z:clawsweeper_needs_human",
+      "comment_id": "5488784351",
+      "comment_version_key": "5488784351:2026-09-01T04:13:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134783#issuecomment-5488784351",
+      "comment_created_at": "2026-09-01T04:13:50Z",
+      "comment_updated_at": "2026-09-01T04:13:50Z",
+      "comment_body_sha256": "04f618ddec8c6290435365cddbf85a8ecde059519725fe2f47ae48e621add84d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134783,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize every shipped Codex pin before upgrading (P1)** - The changed manifest requests 0.151.0, but the managed-version constant, package-local npm shrinkwrap, and harness model-list reference remain at 0.1...; Review finding: [P1] Synchronize every shipped Codex pin before upgrading — extensions/codex/package.json:11 - [medium] Authorize the new Codex runtime dependency graph — extensio... (sha=ea553be5c232838f19eaea1df29d858135143573)",
+      "expected_head_sha": "ea553be5c232838f19eaea1df29d858135143573",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T04:14:35.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026-7-33-codex-dependency",
+        "head_sha": "ea553be5c232838f19eaea1df29d858135143573",
         "cluster_id": null,
         "job_path": null
       }
