@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:34:58.768Z",
+  "updated_at": "2026-09-01T00:34:59.874Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133952:5475669873:2026-08-31T17:09:51Z:clawsweeper_needs_human",
-      "comment_id": "5475669873",
-      "comment_version_key": "5475669873:2026-08-31T17:09:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133952#issuecomment-5475669873",
-      "comment_created_at": "2026-08-31T08:16:52Z",
-      "comment_updated_at": "2026-08-31T17:09:51Z",
-      "comment_body_sha256": "ffa509838c2e649994186eeebb5bbc12373c10e31baef2faaa78e15a89e8a951",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133952,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Malformed legacy approval files deliberately remain fail-closed until repaired, so the operator-facing migration path needs exact-head CI before landing. (sha=4ac68682a089bf279ba6fcf889ac6e899162352f)",
-      "expected_head_sha": "4ac68682a089bf279ba6fcf889ac6e899162352f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T17:14:10.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/admiring-williamson-39fb9d",
-        "head_sha": "4ac68682a089bf279ba6fcf889ac6e899162352f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134060:5477458583:2026-08-31T17:03:07Z:clawsweeper_auto_repair",
       "comment_id": "5477458583",
@@ -33332,6 +33299,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134569:5486750076:2026-09-01T00:34:14Z:clawsweeper_needs_human",
+      "comment_id": "5486750076",
+      "comment_version_key": "5486750076:2026-09-01T00:34:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134569#issuecomment-5486750076",
+      "comment_created_at": "2026-09-01T00:34:14Z",
+      "comment_updated_at": "2026-09-01T00:34:14Z",
+      "comment_body_sha256": "26986053f2dcd73cafa894ecca2b428ab0dff5f40b32f02f8378f55af188a11c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134569,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The imported timeout helper is supplied by external package @openclaw/fs-safe 0.5.6; its implementation was unavailable in the checkout, so the claimed timer-clear guarantee was not i... (sha=dcf4e001efb9a06d88e32e1b287c7bc13d0daeed)",
+      "expected_head_sha": "dcf4e001efb9a06d88e32e1b287c7bc13d0daeed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:34:59.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-minimax-oauth-deadlines",
+        "head_sha": "dcf4e001efb9a06d88e32e1b287c7bc13d0daeed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
