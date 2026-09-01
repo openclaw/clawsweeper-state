@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:55:20.392Z",
+  "updated_at": "2026-09-01T10:56:24.804Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5473511594:2026-08-31T03:59:09Z:re_review",
-      "comment_id": "5473511594",
-      "comment_version_key": "5473511594:2026-08-31T03:59:09Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5473511594",
-      "comment_created_at": "2026-08-31T03:59:09Z",
-      "comment_updated_at": "2026-08-31T03:59:09Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T06:24:24.043Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5473545678:2026-08-31T04:04:47Z:re_review",
       "comment_id": "5473545678",
@@ -33867,6 +33840,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131568:5492856247:2026-09-01T10:55:25Z:re_review",
+      "comment_id": "5492856247",
+      "comment_version_key": "5492856247:2026-09-01T10:55:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131568#issuecomment-5492856247",
+      "comment_created_at": "2026-09-01T10:55:25Z",
+      "comment_updated_at": "2026-09-01T10:55:25Z",
+      "comment_body_sha256": "5b8e9cd82641d935a19405bd267e3135d6bfade7c0247dcd2c1050b9c1f17957",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131568,
+      "author": "hartmark",
+      "author_id": 12826053,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T10:56:20.758Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-reindex-shadow-orphan-cleanup",
+        "head_sha": "4aefde021667df0f97491d552fd01c4f68c85c0b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
