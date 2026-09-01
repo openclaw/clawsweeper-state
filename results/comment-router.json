@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:56:24.804Z",
+  "updated_at": "2026-09-01T11:01:25.527Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3493:5473545678:2026-08-31T04:04:47Z:re_review",
-      "comment_id": "5473545678",
-      "comment_version_key": "5473545678:2026-08-31T04:04:47Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5473545678",
-      "comment_created_at": "2026-08-31T04:04:47Z",
-      "comment_updated_at": "2026-08-31T04:04:47Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T06:24:24.043Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3493:5487326615:2026-09-01T01:33:57Z:re_review",
       "comment_id": "5487326615",
@@ -33887,6 +33860,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135130:5492917368:2026-09-01T11:00:36Z:clawsweeper_needs_human",
+      "comment_id": "5492917368",
+      "comment_version_key": "5492917368:2026-09-01T11:00:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135130#issuecomment-5492917368",
+      "comment_created_at": "2026-09-01T11:00:36Z",
+      "comment_updated_at": "2026-09-01T11:00:36Z",
+      "comment_body_sha256": "551e7b8fc1993c5e2da7d85ca512f0c82b86f937fb88857b497156c0afeada02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the CLI identity resolver feeding the child-process launch path; the PR supplies a resolver unit test using a N...; Review finding: [P1] Keep execution bound to the hashed executable — src/agents/cli-executable-identity.ts:478-481 - [high] Mutable shim can replace the verified executable — src/... (sha=3be5914b6bbcf996ccd8ed6884f6a9f0d41d901e)",
+      "expected_head_sha": "3be5914b6bbcf996ccd8ed6884f6a9f0d41d901e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:01:25.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-wrapper-shim-spawn",
+        "head_sha": "3be5914b6bbcf996ccd8ed6884f6a9f0d41d901e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
