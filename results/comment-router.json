@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:43:33.401Z",
+  "updated_at": "2026-09-01T14:43:44.500Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120161:5492435095:2026-09-01T10:15:59Z:re_review",
-      "comment_id": "5492435095",
-      "comment_version_key": "5492435095:2026-09-01T10:15:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120161#issuecomment-5492435095",
-      "comment_created_at": "2026-09-01T10:15:59Z",
-      "comment_updated_at": "2026-09-01T10:15:59Z",
-      "comment_body_sha256": "0a9ec67112b3ee1f026b9e4e867ac252a290d165cbf15a5b493c3f33bcf581e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120161,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T10:16:54.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-shard-concurrency-env",
-        "head_sha": "eb9266b75ae0e7d91a7730c2ed34863801398eef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133716:5472814113:2026-09-01T10:15:59Z:clawsweeper_needs_human",
       "comment_id": "5472814113",
@@ -32462,6 +32415,39 @@
         "kind": "pull_request",
         "branch": "fix/early-stop-dictation",
         "head_sha": "81bd10a50133b1e890e0777f654a806e966e1656",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134858:5489538044:2026-09-01T14:42:28Z:clawsweeper_needs_human",
+      "comment_id": "5489538044",
+      "comment_version_key": "5489538044:2026-09-01T14:42:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134858#issuecomment-5489538044",
+      "comment_created_at": "2026-09-01T05:52:31Z",
+      "comment_updated_at": "2026-09-01T14:42:28Z",
+      "comment_body_sha256": "88fa7d9b754d5c6c4d15ce3275721ddcfa93a0d930f1ebbdba1e2243e73cd21d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134858,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the provider POST request at src/plugins/openai-compatible-embedding-provider.ts:309; the PR body describes a D... (sha=379af832c2a33e7c8b360857d7a3b1b1cc40aed8)",
+      "expected_head_sha": "379af832c2a33e7c8b360857d7a3b1b1cc40aed8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T14:43:44.500Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-embeddings-env-proxy",
+        "head_sha": "379af832c2a33e7c8b360857d7a3b1b1cc40aed8",
         "cluster_id": null,
         "job_path": null
       }
