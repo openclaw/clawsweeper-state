@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135502",
+  "mode": "autonomous",
+  "run_id": "33557058872",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33557058872",
+  "head_sha": "5121370cfadc58069ebf4194cfbbbc138bd1e7a4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135502.md",
+  "published_at": "2026-09-01T21:17:13.877Z",
+  "canonical": "#135502",
+  "canonical_issue": "#135502",
+  "canonical_pr": null,
+  "summary": "Signal still omits authorization for non-control plugin commands on current main. Microsoft Teams already requests the shared command gate for every inbound message, so its reported half does not reproduce. No branch or tests could be produced: the checkout is read-only, dependencies are absent, and both pnpm-install attempts failed when Corepack hit EROFS; ../codex is also absent for the repository-required direct inspection.",
+  "actions": [
+    {
+      "target": "#135502",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135502",
+      "candidate_fix": null,
+      "reason": "A narrow Signal-only repair is warranted, but this worker cannot write the branch or run its required regressions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and the required sibling ../codex source, then apply and validate the narrowed Signal repair artifact before opening the PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
