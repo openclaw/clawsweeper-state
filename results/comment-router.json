@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:22:45.153Z",
+  "updated_at": "2026-09-01T06:23:08.464Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134629:5487533959:2026-09-01T02:01:15Z:clawsweeper_needs_human",
-      "comment_id": "5487533959",
-      "comment_version_key": "5487533959:2026-09-01T02:01:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134629#issuecomment-5487533959",
-      "comment_created_at": "2026-09-01T01:51:18Z",
-      "comment_updated_at": "2026-09-01T02:01:15Z",
-      "comment_body_sha256": "96afea5607cbc6fbe92bebb567d458c3a7ee478ac98492412952505cca69fcdb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134629,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed because the submitted patch has no actionable review finding; exact-head checks remain the normal landing gate. (sha=6f15dbdf95ed2601bf8e0a35620583ff9c3a41f7)",
-      "expected_head_sha": "6f15dbdf95ed2601bf8e0a35620583ff9c3a41f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T02:37:03.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-2026.8.2-sparse-preflight",
-        "head_sha": "6f15dbdf95ed2601bf8e0a35620583ff9c3a41f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134632:5487606864:2026-09-01T01:57:45Z:clawsweeper_needs_human",
       "comment_id": "5487606864",
@@ -32768,6 +32735,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134737:5489791335:2026-09-01T06:22:23Z:re_review",
+      "comment_id": "5489791335",
+      "comment_version_key": "5489791335:2026-09-01T06:22:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134737#issuecomment-5489791335",
+      "comment_created_at": "2026-09-01T06:22:23Z",
+      "comment_updated_at": "2026-09-01T06:22:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134737,
+      "author": "lzhan011",
+      "author_id": 35493221,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T06:23:06.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-system-presence-clock-rollback",
+        "head_sha": "075e3efbaf863ad339e834e618389ce63e11e5c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
