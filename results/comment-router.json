@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T22:45:34.431Z",
+  "updated_at": "2026-09-01T22:45:39.809Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-09-01T17:58:39Z:clawsweeper_auto_repair",
-      "comment_id": "5357688049",
-      "comment_version_key": "5357688049:2026-09-01T17:58:39Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
-      "comment_created_at": "2026-08-20T15:00:20Z",
-      "comment_updated_at": "2026-09-01T17:58:39Z",
-      "comment_body_sha256": "c9f9b51ca13586e2e1a8d6190ad97e6a697b27668b701f84c885695c1139fb69",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3493,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2e0dd8604774683d3f9454f0d91c45286f986a68)",
-      "expected_head_sha": "2e0dd8604774683d3f9454f0d91c45286f986a68",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T17:59:30.111Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/meaningful-traffic-signals",
-        "head_sha": "2e0dd8604774683d3f9454f0d91c45286f986a68",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135401:5498162268:2026-09-01T17:58:44Z:clawsweeper_needs_human",
       "comment_id": "5498162268",
@@ -32589,6 +32556,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-09-01T22:43:57Z:clawsweeper_needs_human",
+      "comment_id": "5357688049",
+      "comment_version_key": "5357688049:2026-09-01T22:43:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
+      "comment_created_at": "2026-08-20T15:00:20Z",
+      "comment_updated_at": "2026-09-01T22:43:57Z",
+      "comment_body_sha256": "82546c6ad130a656ec6112bdeedab24bd41915d9d12b7d29b24dbf909c087d06",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deploying this consumer before https://github.com/openclaw/clawhub/pull/3501 has staged the three indexes and Convex reports them ready can make the scan fail when it reaches its new... (sha=89af0e83a4a40f301dd55a4d433fcd6a0b270038)",
+      "expected_head_sha": "89af0e83a4a40f301dd55a4d433fcd6a0b270038",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T22:45:39.809Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "89af0e83a4a40f301dd55a4d433fcd6a0b270038",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
