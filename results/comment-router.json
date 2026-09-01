@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:32:42.509Z",
+  "updated_at": "2026-09-01T01:33:00.110Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134300:5482439803:2026-08-31T18:06:29Z:re_review",
-      "comment_id": "5482439803",
-      "comment_version_key": "5482439803:2026-08-31T18:06:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134300#issuecomment-5482439803",
-      "comment_created_at": "2026-08-31T18:06:29Z",
-      "comment_updated_at": "2026-08-31T18:06:29Z",
-      "comment_body_sha256": "0f5b9adac3c196ba5f6ab7913fa9aeda05c72197128ee6969b0188d9dbce75c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134300,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T18:07:09.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/compiled-worker-test-deslop-00b6f0",
-        "head_sha": "cf5ffce5b61aa6cd79306454b7ed7512ce796283",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134339:5482436550:2026-08-31T18:06:11Z:clawsweeper_needs_human",
       "comment_id": "5482436550",
@@ -32887,6 +32840,39 @@
         "kind": "pull_request",
         "branch": "codex/test-changelog-fixture-identity",
         "head_sha": "0832fe453b9df04d81b8a6911be1b3bbd1ac60e4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134550:5486507768:2026-09-01T01:31:47Z:clawsweeper_needs_human",
+      "comment_id": "5486507768",
+      "comment_version_key": "5486507768:2026-09-01T01:31:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134550#issuecomment-5486507768",
+      "comment_created_at": "2026-09-01T00:02:34Z",
+      "comment_updated_at": "2026-09-01T01:31:47Z",
+      "comment_body_sha256": "bfaf23ca11b25d7b6777502543186e390f8aaa8caa86333cd3831ddeefd1ebe6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134550,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner is the ready continuation cache, claimed by the Responses transport and committed after a terminal response. The sup...; Review finding: [medium] Review the longer in-memory conversation retention — packages/ai/src/transports/openai-responses-continuation.ts:13 (sha=e71e466f1f5b318c824ed2684ea302ece42e5146)",
+      "expected_head_sha": "e71e466f1f5b318c824ed2684ea302ece42e5146",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:33:00.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-responses-continuation-idle-ttl-cache",
+        "head_sha": "e71e466f1f5b318c824ed2684ea302ece42e5146",
         "cluster_id": null,
         "job_path": null
       }
