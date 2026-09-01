@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T05:40:05.901Z",
+  "updated_at": "2026-09-01T05:40:51.017Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134404:5483208697:2026-08-31T19:11:58Z:clawsweeper_needs_human",
-      "comment_id": "5483208697",
-      "comment_version_key": "5483208697:2026-08-31T19:11:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134404#issuecomment-5483208697",
-      "comment_created_at": "2026-08-31T19:11:58Z",
-      "comment_updated_at": "2026-08-31T19:11:58Z",
-      "comment_body_sha256": "a958d7d83aacb969b79baaf9421ca0076ecf9d646b4046b8d523b9f208c7ee06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 19 net lines for bounded reporter state; the aggregate window counter is necessary in addition to the source cache to guarantee the 16-warning cap even when c... (sha=2788ddbb45fb8b8fae4d917af9cd9a4e99c88cc2)",
-      "expected_head_sha": "2788ddbb45fb8b8fae4d917af9cd9a4e99c88cc2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T01:49:29.130Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-unattributable-proxy-reporting",
-        "head_sha": "2788ddbb45fb8b8fae4d917af9cd9a4e99c88cc2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134405:5483216004:2026-08-31T19:12:38Z:clawsweeper_needs_human",
       "comment_id": "5483216004",
@@ -33054,6 +33021,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134817:5489440038:2026-09-01T05:40:00Z:re_review",
+      "comment_id": "5489440038",
+      "comment_version_key": "5489440038:2026-09-01T05:40:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134817#issuecomment-5489440038",
+      "comment_created_at": "2026-09-01T05:40:00Z",
+      "comment_updated_at": "2026-09-01T05:40:00Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134817,
+      "author": "lordratner",
+      "author_id": 49489398,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T05:40:48.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nextcloud-talk-structured-slash-commands",
+        "head_sha": "03872cd20c319746cd24ddf19660239542a894c6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
