@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:49:13.743Z",
+  "updated_at": "2026-09-01T14:49:24.797Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135082:5492451565:2026-09-01T10:17:28Z:clawsweeper_needs_human",
-      "comment_id": "5492451565",
-      "comment_version_key": "5492451565:2026-09-01T10:17:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135082#issuecomment-5492451565",
-      "comment_created_at": "2026-09-01T10:17:28Z",
-      "comment_updated_at": "2026-09-01T10:17:28Z",
-      "comment_body_sha256": "fa7282c6bffcc5543af0c90063593cc99bd7627fda3c899515c5fec0085f0ec8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135082,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Sanitize loader errors before returning status (P1)** - failedPlugin.error is recorded from raw String(error) and this new interpolation returns it through channels.status, which requires only operator.read. A f...; Review finding: [P1] Sanitize loader errors before returning status — src/channels/status/account-state.ts:58-61 - [medium] Raw plugin failure text reaches read-scoped status — sr... (sha=57d92cb43b04293319dea45b47c137ba9174e287)",
-      "expected_head_sha": "57d92cb43b04293319dea45b47c137ba9174e287",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T10:18:21.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-plugin-load-status",
-        "head_sha": "57d92cb43b04293319dea45b47c137ba9174e287",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:214:5492455740:2026-09-01T10:17:50Z:clawsweeper_needs_human",
       "comment_id": "5492455740",
@@ -32479,6 +32446,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135226:5495780771:2026-09-01T14:48:30Z:re_review",
+      "comment_id": "5495780771",
+      "comment_version_key": "5495780771:2026-09-01T14:48:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135226#issuecomment-5495780771",
+      "comment_created_at": "2026-09-01T14:48:30Z",
+      "comment_updated_at": "2026-09-01T14:48:30Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135226,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:49:22.140Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-built-artifact-checks-20260901",
+        "head_sha": "66e87a430e484d92abf40b554f24936be95e4488",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
