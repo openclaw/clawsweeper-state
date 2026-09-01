@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:07:28.046Z",
+  "updated_at": "2026-09-01T23:07:41.028Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117734:5498840218:2026-09-01T18:54:38Z:re_review",
-      "comment_id": "5498840218",
-      "comment_version_key": "5498840218:2026-09-01T18:54:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5498840218",
-      "comment_created_at": "2026-09-01T18:54:38Z",
-      "comment_updated_at": "2026-09-01T18:54:38Z",
-      "comment_body_sha256": "6f5524e935252d7ff6b2b354ac1c4b484a443607f38637a5d8811562a4b0adf6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T18:55:16.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/conversation-burst-budget",
-        "head_sha": "a4150ab7be046d012192c623b4ee06f1c02e3df6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135413:5498429745:2026-09-01T18:54:16Z:clawsweeper_auto_repair",
       "comment_id": "5498429745",
@@ -32771,6 +32724,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T23:07:28.046Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134531:5486134935:2026-09-01T23:06:41Z:clawsweeper_auto_repair",
+      "comment_id": "5486134935",
+      "comment_version_key": "5486134935:2026-09-01T23:06:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134531#issuecomment-5486134935",
+      "comment_created_at": "2026-08-31T23:22:27Z",
+      "comment_updated_at": "2026-09-01T23:06:41Z",
+      "comment_body_sha256": "ce61fcebce78e592fe2986a72ed6f6f6b70ac45b7a222310c0ed65b43ce3cea7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a4eb662d2a14ea838c69d61b050054605196b297)",
+      "expected_head_sha": "a4eb662d2a14ea838c69d61b050054605196b297",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:07:41.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cookie-sync-mainactor-isolation-crash",
+        "head_sha": "a4eb662d2a14ea838c69d61b050054605196b297",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
