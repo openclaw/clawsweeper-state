@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:21:38.534Z",
+  "updated_at": "2026-09-01T11:22:06.099Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134819:5489058200:2026-09-01T06:30:51Z:clawsweeper_auto_repair",
-      "comment_id": "5489058200",
-      "comment_version_key": "5489058200:2026-09-01T06:30:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134819#issuecomment-5489058200",
-      "comment_created_at": "2026-09-01T04:49:16Z",
-      "comment_updated_at": "2026-09-01T06:30:51Z",
-      "comment_body_sha256": "339d539c469692d42b5d0526e92acf786f705cf5518a0a3181ec1b2b5cb7522f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134819,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fda314a0071e77a60e46f79d5789bd20ec789b5e)",
-      "expected_head_sha": "fda314a0071e77a60e46f79d5789bd20ec789b5e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T06:42:25.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-agents-mcp-deferred-retirement-20260901",
-        "head_sha": "fda314a0071e77a60e46f79d5789bd20ec789b5e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134868:5489571472:2026-09-01T06:42:19Z:clawsweeper_auto_repair",
       "comment_id": "5489571472",
@@ -33857,6 +33824,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134931:5491689336:2026-09-01T11:21:08Z:clawsweeper_needs_human",
+      "comment_id": "5491689336",
+      "comment_version_key": "5491689336:2026-09-01T11:21:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134931#issuecomment-5491689336",
+      "comment_created_at": "2026-09-01T09:12:30Z",
+      "comment_updated_at": "2026-09-01T11:21:08Z",
+      "comment_body_sha256": "aff1655260cb4b566056fa76595673756be01058a0a07181fec4a7f6a9ec0142",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134931,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Prove stale session authority is rejected before real I/O** - Prepared workspace binding persists a session key and owner epoch on a node; the supplied proof does not yet demonstrate th...; Review finding: [medium] Prove stale session authority is rejected before real I/O — src/gateway/worker-environments/placement-dispatch-startup.ts:351 (sha=1b1db725f8b918ada3d7cc399bd9e38f0ce0df6c)",
+      "expected_head_sha": "1b1db725f8b918ada3d7cc399bd9e38f0ce0df6c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:22:06.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/prepared-reserve-integration",
+        "head_sha": "1b1db725f8b918ada3d7cc399bd9e38f0ce0df6c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
