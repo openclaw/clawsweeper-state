@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:27:01.608Z",
+  "updated_at": "2026-09-01T06:28:17.593Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:212:5488073562:2026-09-01T02:43:06Z:clawsweeper_auto_repair",
-      "comment_id": "5488073562",
-      "comment_version_key": "5488073562:2026-09-01T02:43:06Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/212#issuecomment-5488073562",
-      "comment_created_at": "2026-09-01T02:43:06Z",
-      "comment_updated_at": "2026-09-01T02:43:06Z",
-      "comment_body_sha256": "2700cfe132817e48ecfd5db9730659af635557d3d7a8fc3d3178fd7856864677",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=71541ed1263d4498505246a4aa15cdd92eb2070e)",
-      "expected_head_sha": "71541ed1263d4498505246a4aa15cdd92eb2070e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T02:43:52.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/autoreview-mixed-targets-20260830",
-        "head_sha": "71541ed1263d4498505246a4aa15cdd92eb2070e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-01T02:43:26Z:clawsweeper_auto_repair",
       "comment_id": "5466178577",
@@ -32716,6 +32683,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134893:5489724656:2026-09-01T06:27:37Z:re_review",
+      "comment_id": "5489724656",
+      "comment_version_key": "5489724656:2026-09-01T06:27:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134893#issuecomment-5489724656",
+      "comment_created_at": "2026-09-01T06:14:59Z",
+      "comment_updated_at": "2026-09-01T06:27:37Z",
+      "comment_body_sha256": "f2410813d7f4753ef49e5766349b9bd72c62156d41df29024ecf08a692b98f21",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134893,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the new two-file release-inventory repair changes behavior beyond the original pricing review. the original compatibility disposition and proof above remain unchanged",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T06:28:15.912Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/native-pricing-second-cohort",
+        "head_sha": "3961c5ebfc0126e77126d0f717c699b48e978ba6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
