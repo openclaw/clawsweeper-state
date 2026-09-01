@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T21:53:57.143Z",
+  "updated_at": "2026-09-01T21:54:54.267Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135359:5497447523:2026-09-01T16:56:53Z:clawsweeper_needs_human",
-      "comment_id": "5497447523",
-      "comment_version_key": "5497447523:2026-09-01T16:56:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135359#issuecomment-5497447523",
-      "comment_created_at": "2026-09-01T16:56:53Z",
-      "comment_updated_at": "2026-09-01T16:56:53Z",
-      "comment_body_sha256": "59e96a4a178cd0c0d31ddec890e15f0e4abf8d39be8c0eb85469836059645a64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135359,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Matrix media-kind lookup, reached by inbound context summaries; the supplied evidence is regression tests a... (sha=ac878f98f2e51bf60926a5012cc8b57c744b67dc)",
-      "expected_head_sha": "ac878f98f2e51bf60926a5012cc8b57c744b67dc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T16:57:48.470Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-msgtype-prototype-lookup",
-        "head_sha": "ac878f98f2e51bf60926a5012cc8b57c744b67dc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135357:5497452831:2026-09-01T16:57:22Z:clawsweeper_needs_human",
       "comment_id": "5497452831",
@@ -33525,6 +33492,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135097:5500943743:2026-09-01T21:54:02Z:re_review",
+      "comment_id": "5500943743",
+      "comment_version_key": "5500943743:2026-09-01T21:54:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135097#issuecomment-5500943743",
+      "comment_created_at": "2026-09-01T21:54:02Z",
+      "comment_updated_at": "2026-09-01T21:54:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135097,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T21:54:52.082Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/ssrf-blocked-hostnames",
+        "head_sha": "f800da75d2601e2c03c0d8b61abd86012724d8f6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
