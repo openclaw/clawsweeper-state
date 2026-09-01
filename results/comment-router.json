@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:38:34.458Z",
+  "updated_at": "2026-09-01T10:38:52.434Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121044:5232717780:2026-08-09T17:10:16Z:re_review",
-      "comment_id": "5232717780",
-      "comment_version_key": "5232717780:2026-08-09T17:10:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121044#issuecomment-5232717780",
-      "comment_created_at": "2026-08-09T17:10:16Z",
-      "comment_updated_at": "2026-08-09T17:10:16Z",
-      "comment_body_sha256": "9db3a81e2b3b1f29f0b3ef1015151845a760d1bff41c6b027f301b591803eff3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121044,
-      "author": "IlyaKuprov",
-      "author_id": 166841386,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:58:29.021Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121044:5237935182:2026-08-10T08:47:23Z:re_review",
       "comment_id": "5237935182",
@@ -33801,6 +33774,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135107:5492672660:2026-09-01T10:37:50Z:clawsweeper_needs_human",
+      "comment_id": "5492672660",
+      "comment_version_key": "5492672660:2026-09-01T10:37:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135107#issuecomment-5492672660",
+      "comment_created_at": "2026-09-01T10:37:50Z",
+      "comment_updated_at": "2026-09-01T10:37:50Z",
+      "comment_body_sha256": "1a16c17eec8dc712285fb554350130d435eb1f59d12adc854ead3df7c219e4da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The no-copy extraction change depends on clawpdf accepting a nonzero-offset Buffer view exactly as a Uint8Array; the installed dependency source was unavailable for independent contra... (sha=8a5c80a958ca010880dc6e0b2689c48474a881b4)",
+      "expected_head_sha": "8a5c80a958ca010880dc6e0b2689c48474a881b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T10:38:52.434Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-pdf-byte-ownership",
+        "head_sha": "8a5c80a958ca010880dc6e0b2689c48474a881b4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
