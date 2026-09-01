@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:23:05.557Z",
+  "updated_at": "2026-09-01T18:23:31.142Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134974:5494514545:2026-09-01T13:15:09Z:re_review",
-      "comment_id": "5494514545",
-      "comment_version_key": "5494514545:2026-09-01T13:15:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134974#issuecomment-5494514545",
-      "comment_created_at": "2026-09-01T13:15:09Z",
-      "comment_updated_at": "2026-09-01T13:15:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134974,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T13:15:52.632Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/openclaw-openclaw-vacinc-issue-124343",
-        "head_sha": "37ab2e56bfd1063072e0786b4020a13b08f59b0d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3566:5481137130:2026-09-01T12:44:23Z:clawsweeper_auto_repair",
       "comment_id": "5481137130",
@@ -33151,6 +33104,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-consult-context-retention",
         "head_sha": "e365da51c344e93297ae00e332303fe398a2c554",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135210:5496036139:2026-09-01T18:22:33Z:clawsweeper_needs_human",
+      "comment_id": "5496036139",
+      "comment_version_key": "5496036139:2026-09-01T18:22:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135210#issuecomment-5496036139",
+      "comment_created_at": "2026-09-01T15:06:50Z",
+      "comment_updated_at": "2026-09-01T18:22:33Z",
+      "comment_body_sha256": "99d69d69cb6ecacceef6ac1c20be5c4ff969ecaa2ac4528627670f3857b59fa7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135210,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR raises first-attempt Blacksmith Control UI fanout from four to fourteen rows; the supplied exact-head status has a failed CI gate, and no successful exact-head run yet proves t... (sha=c05dc6461dc292eb91e2b466c676717a69f799e1)",
+      "expected_head_sha": "c05dc6461dc292eb91e2b466c676717a69f799e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:23:31.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-ui-e2e-projects-20260901",
+        "head_sha": "c05dc6461dc292eb91e2b466c676717a69f799e1",
         "cluster_id": null,
         "job_path": null
       }
