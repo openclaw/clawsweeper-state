@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:35:01.861Z",
+  "updated_at": "2026-09-01T01:36:00.580Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134088:5481973520:2026-08-31T18:10:50Z:clawsweeper_needs_human",
-      "comment_id": "5481973520",
-      "comment_version_key": "5481973520:2026-08-31T18:10:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134088#issuecomment-5481973520",
-      "comment_created_at": "2026-08-31T17:25:32Z",
-      "comment_updated_at": "2026-08-31T18:10:50Z",
-      "comment_body_sha256": "bc7671d4fd6b3aaf2e75ec168afd88eefd7334add271e3bf08b3633464cc1f45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134088,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Retain snapshots whose catalog route is unknown (P1)** - The new sweep picks a binary only from current profiles, then asks the manager to delete every expired stored image. Neither the durable record nor its ke...; Review finding: [P1] Retain snapshots whose catalog route is unknown — extensions/crabbox/src/crabbox-worker-provider.ts:304-315 - [medium] Idle cleanup selects deletion catalog f... (sha=34530d799eb176bba30cab414d1b96cfd14fbef8)",
-      "expected_head_sha": "34530d799eb176bba30cab414d1b96cfd14fbef8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:11:39.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/idle-image-cleanup",
-        "head_sha": "34530d799eb176bba30cab414d1b96cfd14fbef8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134345:5482401768:2026-08-31T18:11:23Z:clawsweeper_needs_human",
-      "comment_id": "5482401768",
-      "comment_version_key": "5482401768:2026-08-31T18:11:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134345#issuecomment-5482401768",
-      "comment_created_at": "2026-08-31T18:03:00Z",
-      "comment_updated_at": "2026-08-31T18:11:23Z",
-      "comment_body_sha256": "2cc6b3fbef11e548b688abf67c76ab044b1d6ab4c4e432df574f1cb493f98bd2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134345,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair dispatch is appropriate: the branch is a coherent maintainer test refactor with no actionable defect found. (sha=258309d46d84cc052e687031ba3b56409cc44878)",
-      "expected_head_sha": "258309d46d84cc052e687031ba3b56409cc44878",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:12:18.109Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-profiler-parser-cases",
-        "head_sha": "258309d46d84cc052e687031ba3b56409cc44878",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1707:5482495910:2026-08-31T18:11:38Z:clawsweeper_needs_human",
       "comment_id": "5482495910",
@@ -32884,6 +32818,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134473:5487056818:2026-09-01T01:13:29Z:re_review",
+      "comment_id": "5487056818",
+      "comment_version_key": "5487056818:2026-09-01T01:13:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134473#issuecomment-5487056818",
+      "comment_created_at": "2026-09-01T01:13:29Z",
+      "comment_updated_at": "2026-09-01T01:13:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134473,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T01:35:58.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-picker-write-scope-disclosure",
+        "head_sha": "c9609905f0b84eea531568777264426efe02a30b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134473:5484828162:2026-09-01T01:35:04Z:clawsweeper_needs_human",
+      "comment_id": "5484828162",
+      "comment_version_key": "5484828162:2026-09-01T01:35:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134473#issuecomment-5484828162",
+      "comment_created_at": "2026-08-31T21:25:44Z",
+      "comment_updated_at": "2026-09-01T01:35:04Z",
+      "comment_body_sha256": "757bb39ceee067881b9af813a05d152338e7ab8062a793c413e7a56f857bc86a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds a net 130 production lines across agent, Gateway, and UI boundaries; the shared resolver prevents policy drift, but the responsible owner should confirm this is the... (sha=c9609905f0b84eea531568777264426efe02a30b)",
+      "expected_head_sha": "c9609905f0b84eea531568777264426efe02a30b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:36:00.580Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-picker-write-scope-disclosure",
+        "head_sha": "c9609905f0b84eea531568777264426efe02a30b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
