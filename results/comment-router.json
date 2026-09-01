@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T22:49:01.472Z",
+  "updated_at": "2026-09-01T22:49:37.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111902:5113333089:2026-07-29T04:42:17Z:re_review",
-      "comment_id": "5113333089",
-      "comment_version_key": "5113333089:2026-07-29T04:42:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111902#issuecomment-5113333089",
-      "comment_created_at": "2026-07-29T04:42:17Z",
-      "comment_updated_at": "2026-07-29T04:42:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111902,
-      "author": "ooiuuii",
-      "author_id": 169449607,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T18:26:30.035Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111902:5162377405:2026-08-03T04:41:44Z:re_review",
       "comment_id": "5162377405",
@@ -32762,6 +32735,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135451:5498762984:2026-09-01T22:48:34Z:clawsweeper_needs_human",
+      "comment_id": "5498762984",
+      "comment_version_key": "5498762984:2026-09-01T22:48:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135451#issuecomment-5498762984",
+      "comment_created_at": "2026-09-01T18:48:36Z",
+      "comment_updated_at": "2026-09-01T22:48:34Z",
+      "comment_body_sha256": "e1931729b85be0f9e3b465331c6a8894cbc01447a607ee628edd462a2f367f03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Operators with an orphaned local npm payload now require registry access for recovery; an unavailable registry leaves the local bytes unregistered rather than adopting unverified byte... (sha=851fa409a2da98390e08152ad7d5f3309ab19c81)",
+      "expected_head_sha": "851fa409a2da98390e08152ad7d5f3309ab19c81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T22:49:37.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-payload-convergence-20260901",
+        "head_sha": "851fa409a2da98390e08152ad7d5f3309ab19c81",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
