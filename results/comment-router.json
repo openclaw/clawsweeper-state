@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:12:28.470Z",
+  "updated_at": "2026-09-01T01:12:43.716Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5184610284:2026-08-04T21:05:14Z:re_review",
-      "comment_id": "5184610284",
-      "comment_version_key": "5184610284:2026-08-04T21:05:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5184610284",
-      "comment_created_at": "2026-08-04T21:05:14Z",
-      "comment_updated_at": "2026-08-04T21:05:14Z",
-      "comment_body_sha256": "4b86508b8715ea5590c4186f36eaed732d8fdc970781a791536cc47a37a6621a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T17:54:49.218Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5186263812:2026-08-05T00:52:15Z:re_review",
       "comment_id": "5186263812",
@@ -32736,6 +32709,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T01:12:28.470Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134600:5487037935:2026-09-01T01:11:56Z:clawsweeper_needs_human",
+      "comment_id": "5487037935",
+      "comment_version_key": "5487037935:2026-09-01T01:11:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134600#issuecomment-5487037935",
+      "comment_created_at": "2026-09-01T01:11:56Z",
+      "comment_updated_at": "2026-09-01T01:11:56Z",
+      "comment_body_sha256": "e9055a944b1d24e22e613bc6dd0837e1e65ca59c9cc4f387b8e72847ede971e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134600,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check status is still in progress and the PR body links the workflow rather than capturing its final output; merge should wait for the strict locale check on this exact h... (sha=e4fc7c9fc67354c85c396dee0614692a2a21cf86)",
+      "expected_head_sha": "e4fc7c9fc67354c85c396dee0614692a2a21cf86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:12:43.716Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "e4fc7c9fc67354c85c396dee0614692a2a21cf86",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
