@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:49:29.130Z",
+  "updated_at": "2026-09-01T01:50:05.094Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132051:5456968922:2026-08-31T17:11:21Z:clawsweeper_needs_human",
-      "comment_id": "5456968922",
-      "comment_version_key": "5456968922:2026-08-31T17:11:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132051#issuecomment-5456968922",
-      "comment_created_at": "2026-08-28T19:38:23Z",
-      "comment_updated_at": "2026-08-31T17:11:21Z",
-      "comment_body_sha256": "f00111ef71b368967ae05e9edc58112b2f4fe972563fd15d138ed492fcfe47c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132051,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This bug repair is net +206 production lines. The two-owner persistence model is source-justified, but the legacy timestamp fallback and added surface should be accepted only if no sm... (sha=05904e00524f5a75337b3745e477959629e64d42)",
-      "expected_head_sha": "05904e00524f5a75337b3745e477959629e64d42",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:49:16.850Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-failure-alert-delivery-outcome",
-        "head_sha": "05904e00524f5a75337b3745e477959629e64d42",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132451:5461037497:2026-08-31T17:22:06Z:clawsweeper_auto_repair",
       "comment_id": "5461037497",
@@ -32873,6 +32840,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134603:5487125409:2026-09-01T01:49:10Z:clawsweeper_needs_human",
+      "comment_id": "5487125409",
+      "comment_version_key": "5487125409:2026-09-01T01:49:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134603#issuecomment-5487125409",
+      "comment_created_at": "2026-09-01T01:18:23Z",
+      "comment_updated_at": "2026-09-01T01:49:10Z",
+      "comment_body_sha256": "1a5b9e8d74bd7856817064ff0467dfff0ec17d502ec581de8f66b1ea0af64d0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134603,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep fallback errors below the advertised response limit (P1)** - An allowed near-limit string ID is copied into bounded and then sent through writeJsonResponse without another size check, so the fallback can ex...; Review finding: [P1] Keep fallback errors below the advertised response limit — extensions/a2a/src/http.ts:78-81 - [P1] Bound task responses before JSON serialization — extensions... (sha=841e0b9248b7eb7d3c2241983e160d71830319a2)",
+      "expected_head_sha": "841e0b9248b7eb7d3c2241983e160d71830319a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:50:05.094Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "993",
+        "head_sha": "841e0b9248b7eb7d3c2241983e160d71830319a2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
