@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T13:46:07.498Z",
+  "updated_at": "2026-09-01T13:48:52.876Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:93247:5280827643:2026-08-13T13:07:10Z:re_review",
-      "comment_id": "5280827643",
-      "comment_version_key": "5280827643:2026-08-13T13:07:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/93247#issuecomment-5280827643",
-      "comment_created_at": "2026-08-13T13:07:10Z",
-      "comment_updated_at": "2026-08-13T13:07:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 93247,
-      "author": "1052326311",
-      "author_id": 65798732,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T09:29:15.275Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:93247:5298023358:2026-08-14T20:47:33Z:re_review",
       "comment_id": "5298023358",
@@ -32863,6 +32836,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135189:5494961943:2026-09-01T13:47:58Z:clawsweeper_needs_human",
+      "comment_id": "5494961943",
+      "comment_version_key": "5494961943:2026-09-01T13:47:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135189#issuecomment-5494961943",
+      "comment_created_at": "2026-09-01T13:47:58Z",
+      "comment_updated_at": "2026-09-01T13:47:58Z",
+      "comment_body_sha256": "dd9cc01d56f26f093114c61eba3a8477bfc46369a0956951916953f26fddbe13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned Execa implementation could not be independently read because dependencies are absent and GitHub DNS was unavailable; this limits independent confirmation of the PR body's u... (sha=5b48197d7befd3f64bd5ac817f2793623f611322)",
+      "expected_head_sha": "5b48197d7befd3f64bd5ac817f2793623f611322",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T13:48:52.876Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-exec-buffer-view",
+        "head_sha": "5b48197d7befd3f64bd5ac817f2793623f611322",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
