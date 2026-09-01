@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135084",
+  "mode": "autonomous",
+  "run_id": "33496617149",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33496617149",
+  "head_sha": "b445c64591bcf9bf6d68122f28f6c95c4fa1dbf4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135084.md",
+  "published_at": "2026-09-01T10:48:19.310Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135084",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135084",
+  "canonical_pr": null,
+  "summary": "#135084 remains the open canonical bug. Current main c18a2c280206921fe072182a7a1b1425c67a7809 still awaits provenance repair from the automatic curated-read path. A narrow owner-local fix is planned, but this worker cannot implement or validate it: the checkout is read-only, dependencies lack tsx/Vitest, and the mandatory sibling ../codex source is absent and cannot be cloned in this sandbox.",
+  "actions": [
+    {
+      "target": "#135084",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135084",
+      "candidate_fix": null,
+      "reason": "The source evidence supports an owner-local repair with no config, schema, dependency, or prompt-policy change; implementation is blocked only by the worker environment and mandatory Codex-source gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135084",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135084",
+      "candidate_fix": null,
+      "reason": "Executable implementation and proof require a writable checkout with dependencies plus the mandatory sibling Codex source."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment with the exact sibling ../codex checkout available (or an approved equivalent that satisfies AGENTS.md), then execute the attached narrow fix and validation plan."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
