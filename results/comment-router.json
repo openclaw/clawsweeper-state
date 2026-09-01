@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T11:48:48.878Z",
+  "updated_at": "2026-09-01T11:49:06.489Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134890:5490295603:2026-09-01T07:14:11Z:re_review",
-      "comment_id": "5490295603",
-      "comment_version_key": "5490295603:2026-09-01T07:14:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134890#issuecomment-5490295603",
-      "comment_created_at": "2026-09-01T07:14:11Z",
-      "comment_updated_at": "2026-09-01T07:14:11Z",
-      "comment_body_sha256": "59bde887a967a635d3630300bafb2e12740557f6184e336e7e863f8bdf0909fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134890,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T07:15:02.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-local-service-shutdown",
-        "head_sha": "971170beaa6123f2c4b4d5cd460a099c0d9c49c6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3352:5490306004:2026-09-01T07:15:06Z:clawsweeper_needs_human",
       "comment_id": "5490306004",
@@ -33917,6 +33870,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T11:48:48.878Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135166:5493463000:2026-09-01T11:48:18Z:clawsweeper_needs_human",
+      "comment_id": "5493463000",
+      "comment_version_key": "5493463000:2026-09-01T11:48:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135166#issuecomment-5493463000",
+      "comment_created_at": "2026-09-01T11:48:18Z",
+      "comment_updated_at": "2026-09-01T11:48:18Z",
+      "comment_body_sha256": "dcae48efeaa704bab1e82a081864be5627b5f7b4dc1ea5b5555e67e93800e73f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135166,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No repair job is needed because the submitted branch is focused and has no actionable review finding; it should proceed through normal exact-head CI and maintainer review. (sha=2e82626ef4d6661472b992903e0acce088b79b54)",
+      "expected_head_sha": "2e82626ef4d6661472b992903e0acce088b79b54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T11:49:06.489Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-134687",
+        "head_sha": "2e82626ef4d6661472b992903e0acce088b79b54",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
