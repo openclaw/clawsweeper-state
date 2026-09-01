@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T04:15:30.049Z",
+  "updated_at": "2026-09-01T04:15:35.022Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134534:5486126835:2026-08-31T23:21:43Z:clawsweeper_needs_human",
-      "comment_id": "5486126835",
-      "comment_version_key": "5486126835:2026-08-31T23:21:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134534#issuecomment-5486126835",
-      "comment_created_at": "2026-08-31T23:21:43Z",
-      "comment_updated_at": "2026-08-31T23:21:43Z",
-      "comment_body_sha256": "a25d7129d661542c628365c0c4e97b7774b90eb3473d09818477bf168c439f64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134534,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured exact-head checks are infrastructure/context checks or skipped; obtain a non-skipped changed-scope CI result after the draft is made ready before merging. (sha=1aaefa009ee1f8e8bf5ba2ac52aba0ea829ec0b5)",
-      "expected_head_sha": "1aaefa009ee1f8e8bf5ba2ac52aba0ea829ec0b5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T23:22:45.554Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-20260831-logs-json-response",
-        "head_sha": "1aaefa009ee1f8e8bf5ba2ac52aba0ea829ec0b5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-08-31T23:22:25Z:clawsweeper_auto_repair",
       "comment_id": "5357688049",
@@ -33220,6 +33187,53 @@
         "kind": "pull_request",
         "branch": "fix/state-dir-split-brain",
         "head_sha": "5d2b9bc4a6579c5948bd40f35a68f8797c15d9ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5488791213:2026-09-01T04:14:50Z:re_review",
+      "comment_id": "5488791213",
+      "comment_version_key": "5488791213:2026-09-01T04:14:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5488791213",
+      "comment_created_at": "2026-09-01T04:14:50Z",
+      "comment_updated_at": "2026-09-01T04:14:50Z",
+      "comment_body_sha256": "4397903f7dd394315f3aac713d3aed39468dd32410ce1b87e2a428370c5d07fe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T04:15:33.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "7590b26eac6ed9da0f5c4a2e10c7617fd093d381",
         "cluster_id": null,
         "job_path": null
       },
