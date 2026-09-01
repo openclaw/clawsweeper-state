@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T07:30:43.264Z",
+  "updated_at": "2026-09-01T07:31:00.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132868:5488699360:2026-09-01T04:01:42Z:re_review",
-      "comment_id": "5488699360",
-      "comment_version_key": "5488699360:2026-09-01T04:01:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132868#issuecomment-5488699360",
-      "comment_created_at": "2026-09-01T04:01:42Z",
-      "comment_updated_at": "2026-09-01T04:01:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132868,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:07:25.419Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-legacy-job-timer-arming",
-        "head_sha": "6cd39a782f3d07735aa62f1b0057f35aeda032bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133428:5488734615:2026-09-01T04:06:39Z:clawsweeper_auto_repair",
       "comment_id": "5488734615",
@@ -32665,6 +32618,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134959:5490468491:2026-09-01T07:29:52Z:clawsweeper_auto_repair",
+      "comment_id": "5490468491",
+      "comment_version_key": "5490468491:2026-09-01T07:29:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134959#issuecomment-5490468491",
+      "comment_created_at": "2026-09-01T07:29:52Z",
+      "comment_updated_at": "2026-09-01T07:29:52Z",
+      "comment_body_sha256": "4bc6184f1d0766813a1d1262baf08bcacdb50e15d48326c770965cd03cb79bdd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134959,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=88647ff1cbcc7715358eb775838265591e9c1ec8)",
+      "expected_head_sha": "88647ff1cbcc7715358eb775838265591e9c1ec8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T07:31:00.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/108893-embedding-retry-cooldown",
+        "head_sha": "88647ff1cbcc7715358eb775838265591e9c1ec8",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
