@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T19:51:07.983Z",
+  "updated_at": "2026-09-01T19:51:37.066Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3353:5495745381:2026-09-01T14:45:52Z:re_review",
-      "comment_id": "5495745381",
-      "comment_version_key": "5495745381:2026-09-01T14:45:52Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3353#issuecomment-5495745381",
-      "comment_created_at": "2026-09-01T14:45:52Z",
-      "comment_updated_at": "2026-09-01T14:45:52Z",
-      "comment_body_sha256": "e1cf667e8fd1b2817db3d34f1bfb058fbdb74fe4b65cd73f217cfceca7959ddc",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3353,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:53:23.308Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/usage-spend-ux",
-        "head_sha": "d17dcb916f85b4b8d347ee3a564554142ec2c531",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3353:5490977840:2026-09-01T14:52:38Z:clawsweeper_auto_repair",
       "comment_id": "5490977840",
@@ -33403,6 +33356,39 @@
         "kind": "pull_request",
         "branch": "codex/issue-134421-channel-auth",
         "head_sha": "246c05bae97da7a7c821e1d7b520a38d8e70e68f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135419:5499540134:2026-09-01T19:50:42Z:clawsweeper_needs_human",
+      "comment_id": "5499540134",
+      "comment_version_key": "5499540134:2026-09-01T19:50:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135419#issuecomment-5499540134",
+      "comment_created_at": "2026-09-01T19:50:42Z",
+      "comment_updated_at": "2026-09-01T19:50:42Z",
+      "comment_body_sha256": "b6182a3fd078e0119dfb3ee56f0f590ed0b1af6c069d34ea375225cd4652563f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135419,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is model-selection preparation, reached by chat directives and the picker. The PR adds mocked unit assertions for... (sha=ae187390aa2c7422eb03194c1bb3d8ed8004472f)",
+      "expected_head_sha": "ae187390aa2c7422eb03194c1bb3d8ed8004472f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T19:51:37.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/model-directive-harness-admission",
+        "head_sha": "ae187390aa2c7422eb03194c1bb3d8ed8004472f",
         "cluster_id": null,
         "job_path": null
       }
