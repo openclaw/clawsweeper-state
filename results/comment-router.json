@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T15:38:34.911Z",
+  "updated_at": "2026-09-01T15:39:02.583Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134547:5487720558:2026-09-01T11:10:44Z:clawsweeper_needs_human",
-      "comment_id": "5487720558",
-      "comment_version_key": "5487720558:2026-09-01T11:10:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134547#issuecomment-5487720558",
-      "comment_created_at": "2026-09-01T02:11:17Z",
-      "comment_updated_at": "2026-09-01T11:10:44Z",
-      "comment_body_sha256": "668d53280d155892dd8e1df533f112b795c2b7f0c540b4065213f369565af307",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134547,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is native compaction in extensions/codex/src/app-server/compact.ts, which now selects the bound live client before... (sha=708f17b74ecab7dde6780d51c70f54d49b20f8f0)",
-      "expected_head_sha": "708f17b74ecab7dde6780d51c70f54d49b20f8f0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:11:31.560Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-compaction-owner-20260831T232522Z",
-        "head_sha": "708f17b74ecab7dde6780d51c70f54d49b20f8f0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135136:5493052199:2026-09-01T11:12:30Z:clawsweeper_needs_human",
       "comment_id": "5493052199",
@@ -32001,6 +31968,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135268:5496389380:2026-09-01T15:33:04Z:re_review",
+      "comment_id": "5496389380",
+      "comment_version_key": "5496389380:2026-09-01T15:33:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135268#issuecomment-5496389380",
+      "comment_created_at": "2026-09-01T15:33:04Z",
+      "comment_updated_at": "2026-09-01T15:33:04Z",
+      "comment_body_sha256": "ec4f05d7826605aee3f32b8f444fe03dd83fbc240c4f1ce2f2fe1ac918428a4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135268,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T15:38:55.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/early-stop-dictation",
+        "head_sha": "23b9d98796343594b6fcfba2b250985bdeb0155b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
