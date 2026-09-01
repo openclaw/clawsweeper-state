@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:43:22.806Z",
+  "updated_at": "2026-09-01T18:43:36.160Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135200:5494307751:2026-09-01T13:39:30Z:clawsweeper_auto_repair",
-      "comment_id": "5494307751",
-      "comment_version_key": "5494307751:2026-09-01T13:39:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135200#issuecomment-5494307751",
-      "comment_created_at": "2026-09-01T12:59:00Z",
-      "comment_updated_at": "2026-09-01T13:39:30Z",
-      "comment_body_sha256": "b39381d8d67f3f317de64fd5b7992a6e2b81a701cce2fb635f9a0242a092edce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135200,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=955269052a86eb23b948562b2c7959bfd1019ae2)",
-      "expected_head_sha": "955269052a86eb23b948562b2c7959bfd1019ae2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T13:40:23.184Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-20260901-markdown-composition",
-        "head_sha": "955269052a86eb23b948562b2c7959bfd1019ae2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135137:5493096130:2026-09-01T13:39:25Z:clawsweeper_auto_repair",
       "comment_id": "5493096130",
@@ -33010,6 +32977,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135413:5498690888:2026-09-01T18:42:41Z:re_review",
+      "comment_id": "5498690888",
+      "comment_version_key": "5498690888:2026-09-01T18:42:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135413#issuecomment-5498690888",
+      "comment_created_at": "2026-09-01T18:42:41Z",
+      "comment_updated_at": "2026-09-01T18:42:41Z",
+      "comment_body_sha256": "a2796e4188acd70701a8088b3217cd15febb9536fa25b8c073ff930cb29d028b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135413,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — now names all nine lifecycle-replacement operations and adds a focused regression for the specific operation string",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T18:43:32.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-supervision-operation",
+        "head_sha": "3d34631288a61bbcbaefc86e5d5581a8167a46ed",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
