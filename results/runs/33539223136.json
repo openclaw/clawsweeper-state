@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135361",
+  "mode": "autonomous",
+  "run_id": "33539223136",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33539223136",
+  "head_sha": "48bd2b42f1dd0504c9afc8643c9781290604b3b2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135361.md",
+  "published_at": "2026-09-01T18:09:45.624Z",
+  "canonical": "#135361",
+  "canonical_issue": "#135361",
+  "canonical_pr": null,
+  "summary": "#135361 remains a reproducible, non-security canonical bug on main. The shared server-first discovery path only falls back after root /models returns HTTP 404; malformed JSON and an invalid model-list shape return invalid-response before /v1/models is tried. A writable repair environment with dependencies and the mandatory sibling Codex checkout is required to implement and validate the fix.",
+  "actions": [
+    {
+      "target": "#135361",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135361",
+      "candidate_fix": null,
+      "reason": "Implementation is authorized and narrowly specified, but this worker cannot edit, install dependencies, create the required branch, or satisfy the repository's mandatory ../codex source inspection because the filesystem is read-only and ../codex is absent."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable repair runner containing project dependencies and sibling ../codex source, then apply the attached new-fix-PR artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
