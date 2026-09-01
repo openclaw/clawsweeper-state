@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135378",
+  "mode": "autonomous",
+  "run_id": "33537196498",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33537196498",
+  "head_sha": "48bd2b42f1dd0504c9afc8643c9781290604b3b2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135378.md",
+  "published_at": "2026-09-01T17:53:22.072Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135378",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135378",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a repair verdict: the required sibling ../codex source checkout is unavailable after the mandated clone attempt, and this checkout is read-only with no node_modules. Current main still contains the reported UI projection collapse, so the issue remains the canonical repair target once those environment gates are restored.",
+  "actions": [
+    {
+      "target": "#135378",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135378",
+      "candidate_fix": null,
+      "reason": "Restore a readable ../codex checkout and writable dependency-ready repair workspace, then implement and validate the narrow conditional plan below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135378",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135378",
+      "candidate_fix": null,
+      "reason": "Blocked on direct Codex source access and a writable, dependency-ready checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide an accessible sibling ../codex checkout and a writable repair workspace with dependencies. The executor must inspect the exact Codex protocol/runtime behavior before editing, add the pre-fix regression, then run the listed validation."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#135378",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
