@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:25:39.585Z",
+  "updated_at": "2026-09-01T01:25:52.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-ansible:70:5482364132:2026-08-31T17:59:36Z:re_review",
-      "comment_id": "5482364132",
-      "comment_version_key": "5482364132:2026-08-31T17:59:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/70#issuecomment-5482364132",
-      "comment_created_at": "2026-08-31T17:59:36Z",
-      "comment_updated_at": "2026-08-31T17:59:36Z",
-      "comment_body_sha256": "9e53beedc5d9e91bb33f3492b9fa729b2d82888251b2fa087134e1fa11a15962",
-      "repo": "openclaw/openclaw-ansible",
-      "issue_number": 70,
-      "author": "alauppe",
-      "author_id": 307341,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T18:00:17.798Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "maint/vpn-prompts-final",
-        "head_sha": "1c667f86ce98872c17a3852aa0d51d9859f6d096",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134060:5477458583:2026-08-31T18:00:26Z:clawsweeper_auto_repair",
       "comment_id": "5477458583",
@@ -32867,6 +32820,39 @@
         "kind": "pull_request",
         "branch": "codex/test-media-registry-suite-import",
         "head_sha": "2481fa85c161332cdfe93f99a9fe2bd06e0d3f05",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:109:5487196457:2026-09-01T01:25:09Z:clawsweeper_needs_human",
+      "comment_id": "5487196457",
+      "comment_version_key": "5487196457:2026-09-01T01:25:09Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/109#issuecomment-5487196457",
+      "comment_created_at": "2026-09-01T01:25:09Z",
+      "comment_updated_at": "2026-09-01T01:25:09Z",
+      "comment_body_sha256": "69c648ce863570d7cab0b13643ac8e07947bd75c124107324a9148fe5dd5b018",
+      "repo": "openclaw/octopool",
+      "issue_number": 109,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Clients that ignore the existing body_encoding contract can observe base64 instead of lossy text for malformed UTF-8, a leading BOM, or an early NUL; compatible clients already decode... (sha=6d5c807d9b9e7a72144f6324e385c9645897259e)",
+      "expected_head_sha": "6d5c807d9b9e7a72144f6324e385c9645897259e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:25:52.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/qa0518-19-byte-fidelity",
+        "head_sha": "6d5c807d9b9e7a72144f6324e385c9645897259e",
         "cluster_id": null,
         "job_path": null
       }
