@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T23:06:52.258Z",
+  "updated_at": "2026-09-01T23:07:03.652Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135210:5498767857:2026-09-01T18:48:59Z:re_review",
-      "comment_id": "5498767857",
-      "comment_version_key": "5498767857:2026-09-01T18:48:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135210#issuecomment-5498767857",
-      "comment_created_at": "2026-09-01T18:48:59Z",
-      "comment_updated_at": "2026-09-01T18:48:59Z",
-      "comment_body_sha256": "85425f5100a0f2f97319e2e2d012db83814c43f965091331ede91efda522e66f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135210,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T18:49:58.656Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-ui-e2e-projects-20260901",
-        "head_sha": "fd837a051945f983647e4b82bc416a1f45c07419",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:90:5498778282:2026-09-01T18:49:47Z:clawsweeper_needs_human",
       "comment_id": "5498778282",
@@ -32794,6 +32747,39 @@
         "kind": "pull_request",
         "branch": "refactor/gateway-port-validator",
         "head_sha": "b5c317d352133a9ef99fa0e96b3dd77bee76e4c3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135622:5501653186:2026-09-01T23:06:03Z:clawsweeper_needs_human",
+      "comment_id": "5501653186",
+      "comment_version_key": "5501653186:2026-09-01T23:06:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135622#issuecomment-5501653186",
+      "comment_created_at": "2026-09-01T23:06:03Z",
+      "comment_updated_at": "2026-09-01T23:06:03Z",
+      "comment_body_sha256": "dd01cb4927e6f6a48f6f871b8769f831d8fd38cf1010bb79dd55c9f171759284",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135622,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured exact-head CI set was incomplete, so merge readiness remains unproven until the normal required checks finish for this head. (sha=44f9f77216d52b365a029a38acb22060219f5736)",
+      "expected_head_sha": "44f9f77216d52b365a029a38acb22060219f5736",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T23:07:03.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/pr-recovery-approved-head-20260901",
+        "head_sha": "44f9f77216d52b365a029a38acb22060219f5736",
         "cluster_id": null,
         "job_path": null
       }
