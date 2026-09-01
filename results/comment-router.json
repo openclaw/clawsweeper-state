@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T09:43:09.103Z",
+  "updated_at": "2026-09-01T09:43:21.444Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110561:5010557535:2026-09-01T05:31:09Z:clawsweeper_needs_human",
-      "comment_id": "5010557535",
-      "comment_version_key": "5010557535:2026-09-01T05:31:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110561#issuecomment-5010557535",
-      "comment_created_at": "2026-07-18T08:18:14Z",
-      "comment_updated_at": "2026-09-01T05:31:09Z",
-      "comment_body_sha256": "5a80833b31fc8da8cb898a242e716b322967e5edc93860cb8fb3c15497742d8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110561,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This rewrites persisted shared and agent state; exact-head CI is still in progress, so merge should wait for the current checks to complete successfully. (sha=689ebbc0fb84df636264a879e352945e55f46f3a)",
-      "expected_head_sha": "689ebbc0fb84df636264a879e352945e55f46f3a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:32:06.240Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/strict-blob-text-cast-110186",
-        "head_sha": "689ebbc0fb84df636264a879e352945e55f46f3a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110561:5010818157:2026-07-18T09:52:23Z:re_review",
       "comment_id": "5010818157",
@@ -33156,6 +33123,53 @@
         "kind": "pull_request",
         "branch": "fix/state-dir-split-brain",
         "head_sha": "afde37c301111525938d61b4e7cc739d1d90511a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135019:5492050568:2026-09-01T09:42:25Z:re_review",
+      "comment_id": "5492050568",
+      "comment_version_key": "5492050568:2026-09-01T09:42:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135019#issuecomment-5492050568",
+      "comment_created_at": "2026-09-01T09:42:25Z",
+      "comment_updated_at": "2026-09-01T09:42:25Z",
+      "comment_body_sha256": "8a2b354b290069bb7c7a37bdef7ff496e933985128cacfcdf732f5a723a13e95",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135019,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T09:43:19.109Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-sqlite-wal-monotonic-deadline",
+        "head_sha": "39af5cc35074b847dd4265fb8375018942140ef0",
         "cluster_id": null,
         "job_path": null
       },
