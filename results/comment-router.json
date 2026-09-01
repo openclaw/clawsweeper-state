@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:13:41.471Z",
+  "updated_at": "2026-09-01T00:13:51.362Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3318:5481081244:2026-08-31T16:11:01Z:re_review",
-      "comment_id": "5481081244",
-      "comment_version_key": "5481081244:2026-08-31T16:11:01Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3318#issuecomment-5481081244",
-      "comment_created_at": "2026-08-31T16:11:01Z",
-      "comment_updated_at": "2026-08-31T16:11:01Z",
-      "comment_body_sha256": "de1cd9d5f991c9ae9b362dbef9b9ab05de44db68d8bc56e0f9bec5f1a03e0376",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3318,
-      "author": "brzvsk",
-      "author_id": 9456996,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T16:57:05.653Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-priority-anchor-pruning",
-        "head_sha": "33c15569ba4a9fb775ca187f92b72b83bf632a89",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3318:5477858121:2026-08-31T16:55:59Z:clawsweeper_auto_repair",
       "comment_id": "5477858121",
@@ -33266,6 +33219,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134555:5486584491:2026-09-01T00:12:50Z:clawsweeper_needs_human",
+      "comment_id": "5486584491",
+      "comment_version_key": "5486584491:2026-09-01T00:12:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134555#issuecomment-5486584491",
+      "comment_created_at": "2026-09-01T00:12:50Z",
+      "comment_updated_at": "2026-09-01T00:12:50Z",
+      "comment_body_sha256": "49a9fd85b62bf5560dc704bf55f4f9ccd97c0b7f6987ce463921716c064229bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134555,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this draft branch as dirty and no pinned test-merge result is available; resolve the base drift and rerun the focused test on the resulting exact head before merge. (sha=68168793d4e8ea9f2f8f1ed77c89e34f179fb880)",
+      "expected_head_sha": "68168793d4e8ea9f2f8f1ed77c89e34f179fb880",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:13:51.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/teams-inline-code-contract",
+        "head_sha": "68168793d4e8ea9f2f8f1ed77c89e34f179fb880",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
