@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T09:13:16.625Z",
+  "updated_at": "2026-09-01T09:13:36.157Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122628:5489103828:2026-09-01T04:55:44Z:re_review",
-      "comment_id": "5489103828",
-      "comment_version_key": "5489103828:2026-09-01T04:55:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122628#issuecomment-5489103828",
-      "comment_created_at": "2026-09-01T04:55:44Z",
-      "comment_updated_at": "2026-09-01T04:55:44Z",
-      "comment_body_sha256": "5af62c237393b6996b4236f43a97dcc30bed2932182253ffa6a084933cd69b66",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122628,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:56:32.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/doctor-transcript-atomic",
-        "head_sha": "aa1b86ba69248910f73119c88ad1a30c3f8d74e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134831:5489105180:2026-09-01T04:55:55Z:clawsweeper_needs_human",
       "comment_id": "5489105180",
@@ -33206,6 +33159,39 @@
         "kind": "pull_request",
         "branch": "codex/prepared-reserve-integration",
         "head_sha": "2f8e865b352653b92bf18615d05a43e4c5c43f66",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134068:5491691220:2026-09-01T09:12:40Z:clawsweeper_needs_human",
+      "comment_id": "5491691220",
+      "comment_version_key": "5491691220:2026-09-01T09:12:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134068#issuecomment-5491691220",
+      "comment_created_at": "2026-09-01T09:12:40Z",
+      "comment_updated_at": "2026-09-01T09:12:40Z",
+      "comment_body_sha256": "c5d0af20ad2ffc7642fe6b9d068ec27d2352fe462ed7ca5f154469a3d4af0e8a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134068,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject raw ZIP member names before extraction (P1)** - uploadSkillLibrary passes an uploaded archive to the fs-safe 0.5.6 extraction flow. The PR records that its native-off path normalizes a physical ../SKILL.m...; Review finding: [P1] Reject raw ZIP member names before extraction — src/skills/library/import.ts:229-241 - [high] Raw ZIP traversal-style member name is normalized — src/skills/l... (sha=1f8f1620d49f0aa26e36f4bfb44d36fdd5937d7c)",
+      "expected_head_sha": "1f8f1620d49f0aa26e36f4bfb44d36fdd5937d7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T09:13:36.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/team-server-custom-skills-3525ad",
+        "head_sha": "1f8f1620d49f0aa26e36f4bfb44d36fdd5937d7c",
         "cluster_id": null,
         "job_path": null
       }
