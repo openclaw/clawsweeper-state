@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:36:17.300Z",
+  "updated_at": "2026-09-01T01:36:28.315Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134333:5482511368:2026-08-31T18:12:53Z:clawsweeper_auto_repair",
-      "comment_id": "5482511368",
-      "comment_version_key": "5482511368:2026-08-31T18:12:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134333#issuecomment-5482511368",
-      "comment_created_at": "2026-08-31T18:12:53Z",
-      "comment_updated_at": "2026-08-31T18:12:53Z",
-      "comment_body_sha256": "0f6073b725ac3f8be45987086dedfb011ab44ad3c7aae456e2aace6589e25cc8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134333,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0b9c37d6b5d8400e4c21fca405df1ece632c0989)",
-      "expected_head_sha": "0b9c37d6b5d8400e4c21fca405df1ece632c0989",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:13:41.116Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-maintenance-reindex-retry",
-        "head_sha": "0b9c37d6b5d8400e4c21fca405df1ece632c0989",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:14:5431689225:2026-08-31T18:13:00Z:clawsweeper_auto_repair",
       "comment_id": "5431689225",
@@ -32912,6 +32879,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/lobster:147:5487354813:2026-09-01T01:35:45Z:clawsweeper_needs_human",
+      "comment_id": "5487354813",
+      "comment_version_key": "5487354813:2026-09-01T01:35:45Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/147#issuecomment-5487354813",
+      "comment_created_at": "2026-09-01T01:35:45Z",
+      "comment_updated_at": "2026-09-01T01:35:45Z",
+      "comment_body_sha256": "c582d78ea59d2e0d9e0d060a2d67960b15ce80b32f9ce2009404400f867a12e8",
+      "repo": "openclaw/lobster",
+      "issue_number": 147,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: commandsListCommand is the changed production owner, but the PR body only says validation passed and supplies no after-fix tool output showing...; Review finding: [P2] Preserve unknown side-effect metadata — src/commands/commands_list.ts:56 - [low] Undeclared side effects appear safe — src/commands/commands_list.ts:56 (sha=ca6b06c3e24eb59105dbee228fb76a623f7436a3)",
+      "expected_head_sha": "ca6b06c3e24eb59105dbee228fb76a623f7436a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:36:28.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "mission-control/cloud-approved/tx-continuous-20260830T185913Z-f4d76556-1-405f75fc02",
+        "head_sha": "ca6b06c3e24eb59105dbee228fb76a623f7436a3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
