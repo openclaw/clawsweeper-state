@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:56:21.933Z",
+  "updated_at": "2026-09-01T18:57:11.542Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:439:5495209651:2026-09-01T14:06:29Z:re_review",
-      "comment_id": "5495209651",
-      "comment_version_key": "5495209651:2026-09-01T14:06:29Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/439#issuecomment-5495209651",
-      "comment_created_at": "2026-09-01T14:06:29Z",
-      "comment_updated_at": "2026-09-01T14:06:29Z",
-      "comment_body_sha256": "29f2f8a836d7f3326c472d4f85fd17d699bfe30a903b525b972a7ba6a0da9033",
-      "repo": "steipete/oracle",
-      "issue_number": 439,
-      "author": "mkubenka",
-      "author_id": 933201,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T14:14:34.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/perplexity-browser-provider",
-        "head_sha": "9a33d8f68bcd7cd306c590af11d237fa7d529611",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:439:5494278340:2026-09-01T14:13:27Z:clawsweeper_auto_repair",
       "comment_id": "5494278340",
@@ -33243,6 +33196,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135454:5498862887:2026-09-01T18:56:17Z:clawsweeper_needs_human",
+      "comment_id": "5498862887",
+      "comment_version_key": "5498862887:2026-09-01T18:56:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135454#issuecomment-5498862887",
+      "comment_created_at": "2026-09-01T18:56:17Z",
+      "comment_updated_at": "2026-09-01T18:56:17Z",
+      "comment_body_sha256": "e5f976d4256d4ca520a4c060b46f61a4996b5be601086af1bf26e10993441169",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes incomplete explicit repair from an incorrect successful restart to a nonzero result that leaves a managed Gateway stopped until the preserved legacy stat... (sha=00768a3743453eefe969ec59903249539f333fb8)",
+      "expected_head_sha": "00768a3743453eefe969ec59903249539f333fb8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:57:11.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-doctor-required-migrations-20260901",
+        "head_sha": "00768a3743453eefe969ec59903249539f333fb8",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
