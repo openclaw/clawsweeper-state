@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:50:44.848Z",
+  "updated_at": "2026-09-01T18:52:02.311Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135081:5495068166:2026-09-01T13:55:56Z:re_review",
-      "comment_id": "5495068166",
-      "comment_version_key": "5495068166:2026-09-01T13:55:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135081#issuecomment-5495068166",
-      "comment_created_at": "2026-09-01T13:55:56Z",
-      "comment_updated_at": "2026-09-01T13:55:56Z",
-      "comment_body_sha256": "e15e293385696c40180db3101339e973c20f8b3815324c854268e93cad453585",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135081,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T13:56:59.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/generic-commentary-segment-identity",
-        "head_sha": "4669d686e3538430655c68681c27b3656421d7f4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123457:5289369670:2026-09-01T13:56:56Z:clawsweeper_needs_human",
       "comment_id": "5289369670",
@@ -33109,6 +33062,39 @@
         "kind": "pull_request",
         "branch": "fix/toolcall-expander-layout-cycle",
         "head_sha": "482dd30f33ee2b04860c15a653237c9e6be91e2c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:88:5482879172:2026-09-01T18:50:52Z:clawsweeper_needs_human",
+      "comment_id": "5482879172",
+      "comment_version_key": "5482879172:2026-09-01T18:50:52Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/88#issuecomment-5482879172",
+      "comment_created_at": "2026-08-31T18:44:50Z",
+      "comment_updated_at": "2026-09-01T18:50:52Z",
+      "comment_body_sha256": "0005dd5fc8e870300426871992bf64f719ed5343e3011474185aaf75f283fc31",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 88,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: Better Auth owns session handling at /api/auth/* and is consulted before role-protected admin operations, but n...; Review finding: [P1] Align the auth generator with the runtime package — apps/api/package.json:22 - [P3] Record the production dependency upgrade — apps/api/package.json:22-26 - [... (sha=85827fd5a00edd92e4ce20083d5c44f5528fe8d5)",
+      "expected_head_sha": "85827fd5a00edd92e4ce20083d5c44f5528fe8d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:52:02.311Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-01f4130da0",
+        "head_sha": "85827fd5a00edd92e4ce20083d5c44f5528fe8d5",
         "cluster_id": null,
         "job_path": null
       }
