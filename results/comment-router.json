@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T14:13:01.178Z",
+  "updated_at": "2026-09-01T14:13:09.976Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133778:5473679932:2026-09-01T09:19:15Z:clawsweeper_needs_human",
-      "comment_id": "5473679932",
-      "comment_version_key": "5473679932:2026-09-01T09:19:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133778#issuecomment-5473679932",
-      "comment_created_at": "2026-08-31T04:22:06Z",
-      "comment_updated_at": "2026-09-01T09:19:15Z",
-      "comment_body_sha256": "afde5300aefddf28eb17099a752f25b9719e99f2a21e3da60ff784345e53a3a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133778,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the --recent GitHub-run selector, but the supplied terminal output is explicitly for ac159a1a1c6dd5bf5... (sha=151d593d4e49ef570b1a7479c066d8123a5d6301)",
-      "expected_head_sha": "151d593d4e49ef570b1a7479c066d8123a5d6301",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T09:42:40.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-ci-timings-recent-push-filter-20260831",
-        "head_sha": "151d593d4e49ef570b1a7479c066d8123a5d6301",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134403:5483263432:2026-09-01T09:36:27Z:clawsweeper_auto_repair",
       "comment_id": "5483263432",
@@ -32749,6 +32716,53 @@
       "status": "skipped",
       "processed_at": "2026-09-01T14:13:01.178Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132582:5495283574:2026-09-01T14:11:55Z:re_review",
+      "comment_id": "5495283574",
+      "comment_version_key": "5495283574:2026-09-01T14:11:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132582#issuecomment-5495283574",
+      "comment_created_at": "2026-09-01T14:11:55Z",
+      "comment_updated_at": "2026-09-01T14:11:55Z",
+      "comment_body_sha256": "366498185e62c673722ba1e078bd82b6102fed50f73d8304ae4630f9ec4fc49a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132582,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T14:13:06.890Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "tars/fix-cli-timeout-hash-race",
+        "head_sha": "c760790e3f4b60286cb86176a4ee95c2fd2845f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
