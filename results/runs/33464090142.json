@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-134638",
+  "mode": "autonomous",
+  "run_id": "33464090142",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33464090142",
+  "head_sha": "ced376c343537d09f840bb9093c5cc1c8ff23c88",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-134638.md",
+  "published_at": "2026-09-01T03:09:11.636Z",
+  "canonical": "#134638",
+  "canonical_issue": "#134638",
+  "canonical_pr": null,
+  "summary": "Current main still advertises an npm log that EXIT cleanup removes. Contributor PR #134655 is the active, narrow candidate, but its exact head/diff is unavailable locally and its exact-head CI was pending; no duplicate fix action is safe.",
+  "actions": [
+    {
+      "target": "#134638",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#134638",
+      "candidate_fix": "#134655",
+      "reason": null
+    },
+    {
+      "target": "#134655",
+      "action": "keep_related",
+      "status": "blocked",
+      "classification": "related",
+      "canonical": "#134638",
+      "candidate_fix": "#134655",
+      "reason": "Keep the contributor PR open as the related fix path. Verify #134655 from its exact head in a writable environment with sibling ../codex, then validate its regression and exact-head CI before any fix or merge decision."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide #134655's exact head to a writable worker with sibling ../codex, then validate its persistent-failure regression and exact-head CI."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

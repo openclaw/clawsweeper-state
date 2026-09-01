@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-134638"
 mode: "autonomous"
-run_id: "33461212386"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33461212386"
+run_id: "33464090142"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33464090142"
 head_sha: "ced376c343537d09f840bb9093c5cc1c8ff23c88"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-01T02:22:42.671Z"
-canonical: "https://github.com/openclaw/openclaw/issues/134638"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/134638"
+published_at: "2026-09-01T03:09:11.636Z"
+canonical: "#134638"
+canonical_issue: "#134638"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-134638
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33461212386](https://github.com/openclaw/clawsweeper/actions/runs/33461212386)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33464090142](https://github.com/openclaw/clawsweeper/actions/runs/33464090142)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/134638
+Canonical: #134638
 
 ## Summary
 
-#134638 remains a real, narrow installer diagnostic-lifecycle bug on main. The proposed repair is a one-line removal plus a regression assertion, but this read-only checkout cannot create the branch or execute the pnpm test because Corepack cannot create its cache.
+Current main still advertises an npm log that EXIT cleanup removes. Contributor PR #134655 is the active, narrow candidate, but its exact head/diff is unavailable locally and its exact-head CI was pending; no duplicate fix action is safe.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/134638
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #134201 | keep_closed | skipped | related | Closed context only; no closure or mutation is appropriate. |
-| #134236 | keep_closed | skipped | related | Merged historical context, not a candidate fix for this lifecycle defect. |
-| #134638 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only worker environment; the fix artifact is ready for a writable executor. |
-| cluster:issue-openclaw-openclaw-134638 | build_fix_artifact | planned | canonical | A writable executor can implement and validate this focused new PR. |
+| #134638 | keep_canonical | planned | canonical |  |
+| #134655 | keep_related | blocked | related | Keep the contributor PR open as the related fix path. Verify #134655 from its exact head in a writable environment with sibling ../codex, then validate its regression and exact-head CI before any fix or merge decision. |
 
 ## Needs Human
 
-- none
+- Provide #134655's exact head to a writable worker with sibling ../codex, then validate its persistent-failure regression and exact-head CI.
