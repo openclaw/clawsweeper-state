@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T18:22:18.951Z",
+  "updated_at": "2026-09-01T18:22:22.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125130:5494479683:2026-09-01T13:12:34Z:re_review",
-      "comment_id": "5494479683",
-      "comment_version_key": "5494479683:2026-09-01T13:12:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125130#issuecomment-5494479683",
-      "comment_created_at": "2026-09-01T13:12:34Z",
-      "comment_updated_at": "2026-09-01T13:12:34Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125130,
-      "author": "Alix-007",
-      "author_id": 267018309,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T13:13:20.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/candidate-core",
-        "head_sha": "c6d693e7be6431592dd8a4fa7cb7da05de0b141b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122779:5271674787:2026-09-01T13:12:35Z:clawsweeper_auto_repair",
       "comment_id": "5271674787",
@@ -33165,6 +33118,39 @@
         "kind": "pull_request",
         "branch": "fix/configured-mcp-dynamic-surface",
         "head_sha": "1e18ec5e996d6a60f373c9efc452e34b852dd0b7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1269:5467054592:2026-09-01T18:21:31Z:clawsweeper_needs_human",
+      "comment_id": "5467054592",
+      "comment_version_key": "5467054592:2026-09-01T18:21:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1269#issuecomment-5467054592",
+      "comment_created_at": "2026-08-30T06:03:33Z",
+      "comment_updated_at": "2026-09-01T18:21:31Z",
+      "comment_body_sha256": "8f56d95db6aff958ec96d73b4e0a21224b2e9369bb3c8f4615929afe43927e34",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1269,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied terminal evidence convincingly covers local MCP, paired-gateway calls, and MCP-originated...; Review finding: [P1] Revoke Ollama access before returning from a UI permission save — src/OpenClaw.Tray.WinUI/App.SettingsChangeCoordinator.cs:40-45 - [medium] UI disable defers... (sha=3415e1d898ed002c602f42c2a458892f13887bed)",
+      "expected_head_sha": "3415e1d898ed002c602f42c2a458892f13887bed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T18:22:22.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/ollama-node-inference",
+        "head_sha": "3415e1d898ed002c602f42c2a458892f13887bed",
         "cluster_id": null,
         "job_path": null
       }
