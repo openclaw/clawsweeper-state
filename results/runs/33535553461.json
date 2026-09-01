@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135305",
+  "mode": "autonomous",
+  "run_id": "33535553461",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33535553461",
+  "head_sha": "48bd2b42f1dd0504c9afc8643c9781290604b3b2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135305.md",
+  "published_at": "2026-09-01T17:36:55.109Z",
+  "canonical": "#135305",
+  "canonical_issue": "#135305",
+  "canonical_pr": null,
+  "summary": "#135305 remains the open canonical issue. Current main source proves the narrow JSON-diagnostic defect: the observer passes a native Error as metadata, and JSON.stringify emits it as {}. A new-fix-PR artifact is ready, but this worker cannot create or validate the branch because the checkout is read-only, dependencies cannot initialize, and required sibling ../codex source is absent.",
+  "actions": [
+    {
+      "target": "#135305",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135305",
+      "candidate_fix": null,
+      "reason": "Diagnostic-only bug with a clear owner-boundary repair; no Slack routing, lifecycle, configuration, persistence, or security-boundary change is warranted."
+    },
+    {
+      "target": "#135305",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135305",
+      "candidate_fix": null,
+      "reason": "Needs a writable executor with dependencies and the required ../codex checkout to apply the patch, run the regression pre/post-fix, changed-files check, and open/update the one permitted PR."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
