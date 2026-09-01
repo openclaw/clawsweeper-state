@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:42:15.676Z",
+  "updated_at": "2026-09-01T00:46:17.674Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3325:5481939004:2026-08-31T17:23:12Z:re_review",
-      "comment_id": "5481939004",
-      "comment_version_key": "5481939004:2026-08-31T17:23:12Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3325#issuecomment-5481939004",
-      "comment_created_at": "2026-08-31T17:23:12Z",
-      "comment_updated_at": "2026-08-31T17:23:12Z",
-      "comment_body_sha256": "0f4f4832c7074ccfcde55932718ff8c0669723d81a012c1bd776809611c2c522",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3325,
-      "author": "sf-jin-ku",
-      "author_id": 16588145,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:28:15.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/grok-adopt-no-usage-yet-zero",
-        "head_sha": "046bfc2555bb2ee49f672c20c70704add849a628",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3325:5481306655:2026-08-31T17:27:21Z:clawsweeper_needs_human",
       "comment_id": "5481306655",
@@ -32931,6 +32884,39 @@
         "kind": "pull_request",
         "branch": "refactor-transcript-event-json",
         "head_sha": "417f1f9b4a263dd7fb1bb4bd3a14735679bb64dd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128454:5390001178:2026-09-01T00:43:03Z:clawsweeper_needs_human",
+      "comment_id": "5390001178",
+      "comment_version_key": "5390001178:2026-09-01T00:43:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5390001178",
+      "comment_created_at": "2026-08-24T02:25:21Z",
+      "comment_updated_at": "2026-09-01T00:43:03Z",
+      "comment_body_sha256": "2889d654b2ee6758d3dfc2696ab7deb223587d3c6c0199c10a24b213245eee6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR base predates substantial current-main changes in the reply lifecycle; the supplied test merge is explicitly stale, so current-base integration still needs exact-head CI or an... (sha=af116f12f43cac4a816fb56ef8ba4002eaf99d67)",
+      "expected_head_sha": "af116f12f43cac4a816fb56ef8ba4002eaf99d67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:46:17.674Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media-reopened",
+        "head_sha": "af116f12f43cac4a816fb56ef8ba4002eaf99d67",
         "cluster_id": null,
         "job_path": null
       }
