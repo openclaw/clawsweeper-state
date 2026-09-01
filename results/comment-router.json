@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:55:21.363Z",
+  "updated_at": "2026-09-01T01:55:46.468Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134334:5482270099:2026-08-31T17:51:23Z:clawsweeper_needs_human",
-      "comment_id": "5482270099",
-      "comment_version_key": "5482270099:2026-08-31T17:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134334#issuecomment-5482270099",
-      "comment_created_at": "2026-08-31T17:51:23Z",
-      "comment_updated_at": "2026-08-31T17:51:23Z",
-      "comment_body_sha256": "5a769515774476d09484231b9ef8a54ca6bfa948ee22afe61ad9dfa15be80151",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134334,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The latest ClawSweeper comment was omitted from supplied comment text and live retrieval failed due DNS, so its rank-up moves must be checked before this draft is readied or merged. (sha=f2b580d4a4e1b9201866cc169fe20b9d9ad286a3)",
-      "expected_head_sha": "f2b580d4a4e1b9201866cc169fe20b9d9ad286a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-08-31T18:49:16.850Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/test-deliberate-silence-contract",
-        "head_sha": "f2b580d4a4e1b9201866cc169fe20b9d9ad286a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134345:5482401768:2026-08-31T18:40:06Z:clawsweeper_needs_human",
       "comment_id": "5482401768",
@@ -32986,6 +32953,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134525:5486013788:2026-09-01T01:54:46Z:clawsweeper_needs_human",
+      "comment_id": "5486013788",
+      "comment_version_key": "5486013788:2026-09-01T01:54:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134525#issuecomment-5486013788",
+      "comment_created_at": "2026-08-31T23:11:22Z",
+      "comment_updated_at": "2026-09-01T01:54:46Z",
+      "comment_body_sha256": "65bee1fcaccd3cfea9330d0f4da642dd729cd807e73a47b5dbb8e7dc0a483b41",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134525,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied E2E claim covers successful configured execution, but it does not show a same-endpoint ch...; Review finding: [P1] Bind configured authority to the active account — extensions/codex/src/app-server/scheduled-app-authority.ts:632-641 - [high] Configured authority omits activ... (sha=7402a30bebaae23e35db28e0ca0de91e94063787)",
+      "expected_head_sha": "7402a30bebaae23e35db28e0ca0de91e94063787",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:55:46.468Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/fix-cron-configured-app-server-auth",
+        "head_sha": "7402a30bebaae23e35db28e0ca0de91e94063787",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
