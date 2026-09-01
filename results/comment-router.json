@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T20:18:45.446Z",
+  "updated_at": "2026-09-01T20:19:33.462Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132450:5464352208:2026-08-29T19:18:34Z:re_review",
-      "comment_id": "5464352208",
-      "comment_version_key": "5464352208:2026-08-29T19:18:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132450#issuecomment-5464352208",
-      "comment_created_at": "2026-08-29T19:18:34Z",
-      "comment_updated_at": "2026-08-29T19:18:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132450,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T15:16:34.641Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132450:5465201449:2026-08-29T22:17:35Z:re_review",
       "comment_id": "5465201449",
@@ -33690,6 +33663,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3493:5357688049:2026-09-01T20:17:43Z:clawsweeper_needs_human",
+      "comment_id": "5357688049",
+      "comment_version_key": "5357688049:2026-09-01T20:17:43Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5357688049",
+      "comment_created_at": "2026-08-20T15:00:20Z",
+      "comment_updated_at": "2026-09-01T20:17:43Z",
+      "comment_body_sha256": "d683420629cbe53de498370d3aff6ed851f1b303b6ecdcd48cdc8c3d1b54b178",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deploying this consumer before https://github.com/openclaw/clawhub/pull/3501 has deployed and all three staged indexes are ready would make the scheduled signal scan query unavailable... (sha=89af0e83a4a40f301dd55a4d433fcd6a0b270038)",
+      "expected_head_sha": "89af0e83a4a40f301dd55a4d433fcd6a0b270038",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T20:19:33.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "89af0e83a4a40f301dd55a4d433fcd6a0b270038",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
