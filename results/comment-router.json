@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:54:50.654Z",
+  "updated_at": "2026-09-01T16:55:28.730Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126473:5349310549:2026-09-01T12:18:53Z:clawsweeper_auto_repair",
-      "comment_id": "5349310549",
-      "comment_version_key": "5349310549:2026-09-01T12:18:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126473#issuecomment-5349310549",
-      "comment_created_at": "2026-08-19T23:39:19Z",
-      "comment_updated_at": "2026-09-01T12:18:53Z",
-      "comment_body_sha256": "f318e9cd59b4b973a1de098d0824a180431e35a64bf4bb46ddd7acc6797f84bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126473,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f37a28d60dbac0abc036fd925c52c01a019e0b05)",
-      "expected_head_sha": "f37a28d60dbac0abc036fd925c52c01a019e0b05",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:19:58.784Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-usage-absent-cache-write",
-        "head_sha": "f37a28d60dbac0abc036fd925c52c01a019e0b05",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135162:5493444334:2026-09-01T12:19:30Z:clawsweeper_needs_human",
       "comment_id": "5493444334",
@@ -32193,6 +32160,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1056:5497421362:2026-09-01T16:54:40Z:clawsweeper_needs_human",
+      "comment_id": "5497421362",
+      "comment_version_key": "5497421362:2026-09-01T16:54:40Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1056#issuecomment-5497421362",
+      "comment_created_at": "2026-09-01T16:54:40Z",
+      "comment_updated_at": "2026-09-01T16:54:40Z",
+      "comment_body_sha256": "0eaca08afacbb11c28545c03cbae190c049ed7101195160f579792f40e39de58",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1056,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Processes that already export GOOGLE_CLOUD_QUOTA_PROJECT will begin sending a billing header after upgrade even without the new CLI flag; APIs can then fail if that project lacks enab... (sha=645e845489c48e0b02e832a97db64c01c847063a)",
+      "expected_head_sha": "645e845489c48e0b02e832a97db64c01c847063a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T16:55:28.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "prateek/gogcli-quota-project",
+        "head_sha": "645e845489c48e0b02e832a97db64c01c847063a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
