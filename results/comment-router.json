@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T09:00:42.156Z",
+  "updated_at": "2026-09-01T09:01:11.147Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134403:5489056918:2026-09-01T04:49:08Z:re_review",
-      "comment_id": "5489056918",
-      "comment_version_key": "5489056918:2026-09-01T04:49:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134403#issuecomment-5489056918",
-      "comment_created_at": "2026-09-01T04:49:08Z",
-      "comment_updated_at": "2026-09-01T04:49:08Z",
-      "comment_body_sha256": "903e1607094cc88c3c7ffc459712e1675a6b9ce3d79c9a05a8ae82adf59d2925",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134403,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — all four state-dir waiver alias gaps are closed at `008d8f9184d`, with real-parser coverage enumerating every applicable leaf",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T04:49:47.468Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/state-dir-split-brain",
-        "head_sha": "008d8f9184d0840466c51ecc69615ac4d413c866",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-01T04:49:18Z:clawsweeper_auto_repair",
       "comment_id": "5466178577",
@@ -33059,6 +33012,39 @@
       "status": "skipped",
       "processed_at": "2026-09-01T09:00:42.156Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134466:5486728592:2026-09-01T08:47:46Z:clawsweeper_needs_human",
+      "comment_id": "5486728592",
+      "comment_version_key": "5486728592:2026-09-01T08:47:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134466#issuecomment-5486728592",
+      "comment_created_at": "2026-09-01T00:31:22Z",
+      "comment_updated_at": "2026-09-01T08:47:46Z",
+      "comment_body_sha256": "8e70b6db40a1b4ac61e2105ba02dedf29a845a03013c6b9de5631dde8f43301a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134466,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this member-authored, behavior-neutral Status ownership refactor be accepted for landing after normal maintainer review? | **Accept the refact... (sha=8c40d0cc979741d0146edf1ddcb68bd0923f2b13)",
+      "expected_head_sha": "8c40d0cc979741d0146edf1ddcb68bd0923f2b13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T09:01:11.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup20k-status-report-owner-20260831",
+        "head_sha": "8c40d0cc979741d0146edf1ddcb68bd0923f2b13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
