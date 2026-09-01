@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-01T17:28:59.534Z",
+  "updated_at": "2026-09-01T17:29:05.292Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5351260788:2026-08-20T04:12:31Z:re_review",
-      "comment_id": "5351260788",
-      "comment_version_key": "5351260788:2026-08-20T04:12:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5351260788",
-      "comment_created_at": "2026-08-20T04:12:31Z",
-      "comment_updated_at": "2026-08-20T04:12:31Z",
-      "comment_body_sha256": "024e11490f33e000a1f48da5eb4a52e26136694fbcd2310731d9d8354738a97a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T12:30:37.563Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5354474221:2026-08-20T10:10:02Z:re_review",
       "comment_id": "5354474221",
@@ -32795,6 +32768,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135367:5497523692:2026-09-01T17:28:18Z:clawsweeper_needs_human",
+      "comment_id": "5497523692",
+      "comment_version_key": "5497523692:2026-09-01T17:28:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135367#issuecomment-5497523692",
+      "comment_created_at": "2026-09-01T17:02:57Z",
+      "comment_updated_at": "2026-09-01T17:28:18Z",
+      "comment_body_sha256": "6ac2ed8652115a403215a7bf71f57239ff4978fc095b7688139e24a773031860",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135367,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch changes approval, cancellation, and child-result collection in a production release workflow; the available check projection is incomplete, so exact-head workflow validatio... (sha=650636366915a4b99c0f8a0d3ed8094730503d98)",
+      "expected_head_sha": "650636366915a4b99c0f8a0d3ed8094730503d98",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T17:29:05.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-publish-performance",
+        "head_sha": "650636366915a4b99c0f8a0d3ed8094730503d98",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
