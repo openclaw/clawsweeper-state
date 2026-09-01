@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:37:28.442Z",
+  "updated_at": "2026-09-01T10:37:44.366Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134891:5489566645:2026-09-01T05:56:11Z:clawsweeper_needs_human",
-      "comment_id": "5489566645",
-      "comment_version_key": "5489566645:2026-09-01T05:56:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134891#issuecomment-5489566645",
-      "comment_created_at": "2026-09-01T05:56:11Z",
-      "comment_updated_at": "2026-09-01T05:56:11Z",
-      "comment_body_sha256": "456a8b054d8975e55c30e98fb6cce3037bcbf32d5df2c030a46cad75eaa20073",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134891,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as conflict-dirty, and no pinned test merge exists; rebasing will materially change the code that is ultimately reviewed and validated. (sha=d1b4d9cccef9383c9ded24a2ed56b5cd7152a0bf)",
-      "expected_head_sha": "d1b4d9cccef9383c9ded24a2ed56b5cd7152a0bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:56:54.870Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-gateway-memory-pass5",
-        "head_sha": "d1b4d9cccef9383c9ded24a2ed56b5cd7152a0bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134876:5489567628:2026-09-01T05:56:19Z:clawsweeper_needs_human",
       "comment_id": "5489567628",
@@ -33759,6 +33726,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134868:5492661057:2026-09-01T10:36:43Z:re_review",
+      "comment_id": "5492661057",
+      "comment_version_key": "5492661057:2026-09-01T10:36:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134868#issuecomment-5492661057",
+      "comment_created_at": "2026-09-01T10:36:43Z",
+      "comment_updated_at": "2026-09-01T10:36:43Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134868,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T10:37:41.455Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/improve-skeleton-loading-for-sessions",
+        "head_sha": "91c67f20b4a929dc4e0bfc6afe38bc47865415b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
