@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T05:25:16.987Z",
+  "updated_at": "2026-09-01T05:25:27.056Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134590:5487331663:2026-09-01T01:34:19Z:re_review",
-      "comment_id": "5487331663",
-      "comment_version_key": "5487331663:2026-09-01T01:34:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134590#issuecomment-5487331663",
-      "comment_created_at": "2026-09-01T01:34:19Z",
-      "comment_updated_at": "2026-09-01T01:34:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134590,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T01:34:59.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugins-orphan-install-record",
-        "head_sha": "a18318976053156a3cef8aed9882722deb3f7915",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134473:5487056818:2026-09-01T01:13:29Z:re_review",
       "comment_id": "5487056818",
@@ -33273,6 +33226,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-registry-package-build-normalization",
         "head_sha": "f25eec7e010d3c67a01a41897cab9d52bc079095",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134857:5489320240:2026-09-01T05:24:45Z:clawsweeper_needs_human",
+      "comment_id": "5489320240",
+      "comment_version_key": "5489320240:2026-09-01T05:24:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134857#issuecomment-5489320240",
+      "comment_created_at": "2026-09-01T05:24:45Z",
+      "comment_updated_at": "2026-09-01T05:24:45Z",
+      "comment_body_sha256": "c02ec5408c38c056d64115b66b7605f3f860be717949c34fc7f5ef261562746d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed regression test is macOS-only and could not be run in this read-only Linux review checkout; exact-head macOS CI remains the final independent verification. (sha=2c30df8fdf3553cc98e36c559836711634f00383)",
+      "expected_head_sha": "2c30df8fdf3553cc98e36c559836711634f00383",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T05:25:27.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/macos-worker-staging-volume",
+        "head_sha": "2c30df8fdf3553cc98e36c559836711634f00383",
         "cluster_id": null,
         "job_path": null
       }
