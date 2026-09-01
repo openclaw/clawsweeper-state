@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T16:05:18.606Z",
+  "updated_at": "2026-09-01T16:05:59.169Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135118:5492785291:2026-09-01T11:17:37Z:clawsweeper_needs_human",
-      "comment_id": "5492785291",
-      "comment_version_key": "5492785291:2026-09-01T11:17:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135118#issuecomment-5492785291",
-      "comment_created_at": "2026-09-01T10:48:35Z",
-      "comment_updated_at": "2026-09-01T11:17:37Z",
-      "comment_body_sha256": "5853b371ead7f612081e997291cfac187842bfd18502125d205bf774d08f5d67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135118,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix remains net +75 production lines across shared registry and diagnostics code; the accepted design should remain one final-guard classification path as adjacent runtime fl... (sha=4c3dc23b19742da884020394db63b45fafd44ab8)",
-      "expected_head_sha": "4c3dc23b19742da884020394db63b45fafd44ab8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T11:31:28.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/harness-recovery-sweep",
-        "head_sha": "4c3dc23b19742da884020394db63b45fafd44ab8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135122:5492868745:2026-09-01T10:56:38Z:clawsweeper_needs_human",
       "comment_id": "5492868745",
@@ -32127,6 +32094,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3493:5496797470:2026-09-01T16:04:53Z:re_review",
+      "comment_id": "5496797470",
+      "comment_version_key": "5496797470:2026-09-01T16:04:53Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3493#issuecomment-5496797470",
+      "comment_created_at": "2026-09-01T16:04:53Z",
+      "comment_updated_at": "2026-09-01T16:04:53Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3493,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T16:05:55.931Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/meaningful-traffic-signals",
+        "head_sha": "2e0dd8604774683d3f9454f0d91c45286f986a68",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
