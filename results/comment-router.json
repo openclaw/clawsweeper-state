@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:38:18.766Z",
+  "updated_at": "2026-09-01T10:38:34.458Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121044:5232125420:2026-09-01T05:57:28Z:clawsweeper_needs_human",
-      "comment_id": "5232125420",
-      "comment_version_key": "5232125420:2026-09-01T05:57:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121044#issuecomment-5232125420",
-      "comment_created_at": "2026-08-09T14:52:28Z",
-      "comment_updated_at": "2026-09-01T05:57:28Z",
-      "comment_body_sha256": "22cec0c5efaa7f7c62d5fa32110a5877768bf39736d910224717e87151ce4ad2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121044,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Every activated fallback performs a full memory-and-session rebuild, which can consume fallback-provider quota and delay recovery on a large corpus. (sha=cfd9a9cbc8c800855577e3c4c20ec6e4412ea1e8)",
-      "expected_head_sha": "cfd9a9cbc8c800855577e3c4c20ec6e4412ea1e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:58:29.021Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-zero-hit-full-reindex",
-        "head_sha": "cfd9a9cbc8c800855577e3c4c20ec6e4412ea1e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121044:5232717780:2026-08-09T17:10:16Z:re_review",
       "comment_id": "5232717780",
@@ -33787,6 +33754,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135022:5492672432:2026-09-01T10:37:49Z:re_review",
+      "comment_id": "5492672432",
+      "comment_version_key": "5492672432:2026-09-01T10:37:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135022#issuecomment-5492672432",
+      "comment_created_at": "2026-09-01T10:37:49Z",
+      "comment_updated_at": "2026-09-01T10:37:49Z",
+      "comment_body_sha256": "91e48efaaf4015f11277f9a9c6e90137bf1e4cb5af597335acd025b9bcdbd6d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135022,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T10:38:32.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-add-delivery-preview",
+        "head_sha": "1c0683c237cebf11df1fe091d2d4a1ecaa292c58",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
