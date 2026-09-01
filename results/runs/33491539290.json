@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135013",
+  "mode": "autonomous",
+  "run_id": "33491539290",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33491539290",
+  "head_sha": "abfcb0dc084c962d123d49e560a82446bb0988c0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135013.md",
+  "published_at": "2026-09-01T09:43:04.498Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135013",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135013",
+  "canonical_pr": null,
+  "summary": "#135013 is a real current-main CLI launch-boundary defect, but this read-only worker cannot satisfy the repository-required sibling Codex source gate or create/test a repair branch. A narrow, credited new-PR artifact is prepared for a writable executor.",
+  "actions": [
+    {
+      "target": "#135013",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135013",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment: it cannot clone the required sibling Codex source, write a branch, or run pnpm tests."
+    },
+    {
+      "target": "#68788",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this linked item to central OpenClaw security triage."
+    },
+    {
+      "target": "#80351",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135013",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135013",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable executor that can complete the required Codex-source inspection, regression reproduction, implementation, and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
