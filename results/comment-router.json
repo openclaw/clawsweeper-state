@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T00:15:30.882Z",
+  "updated_at": "2026-09-01T00:15:59.024Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134228:5481562660:2026-08-31T16:51:48Z:re_review",
-      "comment_id": "5481562660",
-      "comment_version_key": "5481562660:2026-08-31T16:51:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134228#issuecomment-5481562660",
-      "comment_created_at": "2026-08-31T16:51:48Z",
-      "comment_updated_at": "2026-08-31T16:51:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134228,
-      "author": "shakkernerd",
-      "author_id": 165377636,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:02:07.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-migration-convergence",
-        "head_sha": "94fa4c8261f2aeea3f43d2a56d4a2828038b57b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134252:5481667906:2026-08-31T17:01:20Z:re_review",
       "comment_id": "5481667906",
@@ -33269,6 +33222,39 @@
         "kind": "pull_request",
         "branch": "jjy/fix/copilot-byok-body-limit-jjy",
         "head_sha": "99d7f5014dc4074dc09273b6aa6d5b41d63b83a6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1698:5475778200:2026-09-01T00:15:07Z:clawsweeper_needs_human",
+      "comment_id": "5475778200",
+      "comment_version_key": "5475778200:2026-09-01T00:15:07Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1698#issuecomment-5475778200",
+      "comment_created_at": "2026-08-31T08:26:44Z",
+      "comment_updated_at": "2026-09-01T00:15:07Z",
+      "comment_body_sha256": "d56db7a2a0c57a05a7a368443d6c39878aa336e6d564695fad831cc983085ade",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1698,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - No discrete repair remains; the next action is ordinary maintainer merge review after the required exact-head checks finish. (sha=2ee843f580257bd8e80820b75b6586fb6c312747)",
+      "expected_head_sha": "2ee843f580257bd8e80820b75b6586fb6c312747",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T00:15:59.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/checkpoint-pending-wait",
+        "head_sha": "2ee843f580257bd8e80820b75b6586fb6c312747",
         "cluster_id": null,
         "job_path": null
       }
