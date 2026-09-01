@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T13:01:30.863Z",
+  "updated_at": "2026-09-01T13:03:22.143Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135029:5491517808:2026-09-01T08:57:10Z:clawsweeper_needs_human",
-      "comment_id": "5491517808",
-      "comment_version_key": "5491517808:2026-09-01T08:57:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135029#issuecomment-5491517808",
-      "comment_created_at": "2026-09-01T08:57:10Z",
-      "comment_updated_at": "2026-09-01T08:57:10Z",
-      "comment_body_sha256": "f4467360d472b33877bafd1b59adff02e9add7defb557edca2067e338ee35ee8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135029,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress; landing should wait for the required checks to complete successfully. (sha=42f8bdb1e753853564685b10af7dc6dbc12b92e4)",
-      "expected_head_sha": "42f8bdb1e753853564685b10af7dc6dbc12b92e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T09:11:07.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa50-heartbeat-skips",
-        "head_sha": "42f8bdb1e753853564685b10af7dc6dbc12b92e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135030:5491524741:2026-09-01T08:57:48Z:clawsweeper_needs_human",
       "comment_id": "5491524741",
@@ -32673,6 +32640,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135173:5494348081:2026-09-01T13:02:13Z:re_review",
+      "comment_id": "5494348081",
+      "comment_version_key": "5494348081:2026-09-01T13:02:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135173#issuecomment-5494348081",
+      "comment_created_at": "2026-09-01T13:02:13Z",
+      "comment_updated_at": "2026-09-01T13:02:13Z",
+      "comment_body_sha256": "a4cf3e8fcb8483c79d9545063d33e8d5d691fa9ea34b8ea6feb64506c02d2131",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135173,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T13:03:19.572Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-env-template-credentials",
+        "head_sha": "f1d15fdea624febcd373ee4acafd0f12fcd913ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
