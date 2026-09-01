@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T06:38:05.652Z",
+  "updated_at": "2026-09-01T06:38:26.250Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134673:5488097434:2026-09-01T03:00:27Z:clawsweeper_needs_human",
-      "comment_id": "5488097434",
-      "comment_version_key": "5488097434:2026-09-01T03:00:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134673#issuecomment-5488097434",
-      "comment_created_at": "2026-09-01T02:45:03Z",
-      "comment_updated_at": "2026-09-01T03:00:27Z",
-      "comment_body_sha256": "2aaf0eef267b1bc4b6c663ffd640a70702bd6d91d8daab5ef9333f5ebcde0bf5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134673,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed: the prior changelog finding is fixed and this cycle found no discrete, automatable patch defect. (sha=858138db7e15547a29ab3cd7f1434f5f239c99be)",
-      "expected_head_sha": "858138db7e15547a29ab3cd7f1434f5f239c99be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T03:01:37.141Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-turn-preparation-cleanup",
-        "head_sha": "858138db7e15547a29ab3cd7f1434f5f239c99be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134668:5488046753:2026-09-01T03:01:26Z:clawsweeper_needs_human",
       "comment_id": "5488046753",
@@ -32602,6 +32569,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:189:5489927855:2026-09-01T06:37:31Z:re_review",
+      "comment_id": "5489927855",
+      "comment_version_key": "5489927855:2026-09-01T06:37:31Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/189#issuecomment-5489927855",
+      "comment_created_at": "2026-09-01T06:37:31Z",
+      "comment_updated_at": "2026-09-01T06:37:31Z",
+      "comment_body_sha256": "b42e50f64731bf147fec4081e2a4842d7dec0a395cc0e89bfac088b981acc0e6",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 189,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T06:38:23.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/0.7.1-live-consumer-regressions",
+        "head_sha": "cce3a4059da04cdbc1c6e55f10fedec21e82da7c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
