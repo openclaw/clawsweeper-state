@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T13:52:13.554Z",
+  "updated_at": "2026-09-01T13:52:32.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122730:5491766225:2026-09-01T09:19:10Z:re_review",
-      "comment_id": "5491766225",
-      "comment_version_key": "5491766225:2026-09-01T09:19:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122730#issuecomment-5491766225",
-      "comment_created_at": "2026-09-01T09:19:10Z",
-      "comment_updated_at": "2026-09-01T09:19:10Z",
-      "comment_body_sha256": "185cdffa275cf90fd30b53b908e18c20a37fb4bd3149037c9c93cc0cc264fb4a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122730,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T09:29:19.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/secrets-default-alias-121083",
-        "head_sha": "11ece92e14438c3d142b3a3e2dabf3786b53b546",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122730:5276337710:2026-08-13T05:27:25Z:re_review",
       "comment_id": "5276337710",
@@ -32884,6 +32837,39 @@
         "kind": "pull_request",
         "branch": "fix/f003-fetch-body-timeout",
         "head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-09-01T13:51:24Z:clawsweeper_needs_human",
+      "comment_id": "5381521199",
+      "comment_version_key": "5381521199:2026-09-01T13:51:24Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3512#issuecomment-5381521199",
+      "comment_created_at": "2026-08-22T16:51:50Z",
+      "comment_updated_at": "2026-09-01T13:51:24Z",
+      "comment_body_sha256": "0c477861f49e627bd2a3b8ea8ae45a0c24beb665f2cb0720b95def28b7ee9c81",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3512,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied test-merge commit is stale, so focused Skills regression validation should be refreshed on the exact current-main-plus-head merge before landing. (sha=4f39dc341c00c262505fb7d6ae333d8c7532a8a9)",
+      "expected_head_sha": "4f39dc341c00c262505fb7d6ae333d8c7532a8a9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T13:52:32.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-first-page-error-state",
+        "head_sha": "4f39dc341c00c262505fb7d6ae333d8c7532a8a9",
         "cluster_id": null,
         "job_path": null
       }
