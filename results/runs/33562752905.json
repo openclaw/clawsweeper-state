@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135571",
+  "mode": "autonomous",
+  "run_id": "33562752905",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33562752905",
+  "head_sha": "5121370cfadc58069ebf4194cfbbbc138bd1e7a4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135571.md",
+  "published_at": "2026-09-01T22:22:53.653Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135571",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135571",
+  "canonical_pr": null,
+  "summary": "The narrow Codex dynamic-tool handoff gap is present on main 45be2a2ed06889541212c0a419acec92a8ecfb39, but implementation is blocked: the mandatory sibling ../codex source is absent and this worker has a read-only filesystem, so it cannot clone the required source, add the regression, or validate a branch.",
+  "actions": [
+    {
+      "target": "#135571",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135571",
+      "candidate_fix": null,
+      "reason": "A two-file repair is defined, but this worker cannot satisfy the mandatory Codex-source inspection or create the required regression/branch in the read-only checkout."
+    },
+    {
+      "target": "#87708",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": "#87749",
+      "candidate_fix": "#87749",
+      "reason": "Already closed; no closure or mutation is valid."
+    },
+    {
+      "target": "#87749",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135571",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; it is evidence, not a mutation target."
+    },
+    {
+      "target": "#95596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135571",
+      "candidate_fix": null,
+      "reason": "Already merged and closed; it is related evidence only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135571",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135571",
+      "candidate_fix": null,
+      "reason": "Executor must first provision ../codex and a writable task checkout, then implement and validate the narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 3
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#135571",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
