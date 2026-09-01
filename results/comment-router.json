@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-01T10:27:11.324Z",
+  "updated_at": "2026-09-01T10:27:29.969Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132723:5470928092:2026-09-01T05:35:23Z:clawsweeper_needs_human",
-      "comment_id": "5470928092",
-      "comment_version_key": "5470928092:2026-09-01T05:35:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132723#issuecomment-5470928092",
-      "comment_created_at": "2026-08-30T19:58:51Z",
-      "comment_updated_at": "2026-09-01T05:35:23Z",
-      "comment_body_sha256": "19e4f4d1d04ddb83a178e091c1c33de4686e6804069dea589e7f4ac8cc0ac871",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132723,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check state shows required exact-head CI still queued or running; do not merge until that run completes successfully on 9b0dcacddf1401e6f83cd4bb37717bfa7b15fa5b. (sha=9b0dcacddf1401e6f83cd4bb37717bfa7b15fa5b)",
-      "expected_head_sha": "9b0dcacddf1401e6f83cd4bb37717bfa7b15fa5b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T05:55:11.377Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-131150",
-        "head_sha": "9b0dcacddf1401e6f83cd4bb37717bfa7b15fa5b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133911:5475059228:2026-09-01T05:35:40Z:clawsweeper_auto_repair",
       "comment_id": "5475059228",
@@ -33673,6 +33640,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135107:5492552964:2026-09-01T10:26:46Z:re_review",
+      "comment_id": "5492552964",
+      "comment_version_key": "5492552964:2026-09-01T10:26:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135107#issuecomment-5492552964",
+      "comment_created_at": "2026-09-01T10:26:46Z",
+      "comment_updated_at": "2026-09-01T10:26:46Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135107,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-01T10:27:28.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-pdf-byte-ownership",
+        "head_sha": "8a5c80a958ca010880dc6e0b2689c48474a881b4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
