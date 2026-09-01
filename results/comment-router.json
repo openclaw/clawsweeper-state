@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-01T01:07:04.806Z",
+  "updated_at": "2026-09-01T01:07:05.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134310:5482051733:2026-08-31T17:32:18Z:re_review",
-      "comment_id": "5482051733",
-      "comment_version_key": "5482051733:2026-08-31T17:32:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134310#issuecomment-5482051733",
-      "comment_created_at": "2026-08-31T17:32:18Z",
-      "comment_updated_at": "2026-08-31T17:32:18Z",
-      "comment_body_sha256": "d8764b045c43023b21c039f5ab69645f8e681a0472600f1e6d74b641eb53a60f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134310,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-08-31T17:54:10.209Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/stoic-jang-e89dfb",
-        "head_sha": "e6313d56b0c519ad6770856122e283aac797c0bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134310:5481922378:2026-08-31T17:53:11Z:clawsweeper_needs_human",
       "comment_id": "5481922378",
@@ -32723,6 +32676,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-metadata-owned-maps-20260831",
         "head_sha": "2a77f85c909ac86b3b2c12b57a2c9d00d5daa233",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134473:5484828162:2026-09-01T01:06:16Z:clawsweeper_needs_human",
+      "comment_id": "5484828162",
+      "comment_version_key": "5484828162:2026-09-01T01:06:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134473#issuecomment-5484828162",
+      "comment_created_at": "2026-08-31T21:25:44Z",
+      "comment_updated_at": "2026-09-01T01:06:16Z",
+      "comment_body_sha256": "ceec2f3b2a405b13c5cdbb10e48c6f16be07dfdb788d167db417cdf902888845",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134473,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug-fix branch adds a net 130 production lines; the shared resolver and UI projection appear justified, but the responsible owner should confirm this remains the smallest canonica... (sha=b38c8e50ed5c5e97d1e9b142b0c46351ab629511)",
+      "expected_head_sha": "b38c8e50ed5c5e97d1e9b142b0c46351ab629511",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-01T01:07:05.185Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-picker-write-scope-disclosure",
+        "head_sha": "b38c8e50ed5c5e97d1e9b142b0c46351ab629511",
         "cluster_id": null,
         "job_path": null
       }
