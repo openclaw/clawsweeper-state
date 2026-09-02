@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-09-02T16:44:59.513Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5312087454",
+    "node_id": "IC_kwDOQb6kR88AAAABPKAFng",
+    "url": "https://github.com/openclaw/openclaw/issues/99253#issuecomment-5312087454",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/99253",
+    "pull_request_url": null,
+    "author": "jinngimk-lang",
+    "author_association": "NONE",
+    "created_at": "2026-08-17T05:08:14Z",
+    "updated_at": "2026-09-02T15:11:41Z",
+    "body_hash": "b022b4814f54b066b29a693a7d5ef7918dc174bdfb5da5231d5ac3539cf2eb66",
+    "body_excerpt": "The scary part isn’t that the model wrote a fake `user[...]` line. Models can emit weird text. The scary part is whether anything downstre ... vent exists. That observation/content ≠ authority distinction is a core AgentCI breaker pattern: https://github.com/jinngimk-lang/agentci",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": [
+      "https://github.com/jinngimk-lang/agentci"
+    ]
+  },
+  "model_result": {
+    "comment_id": "5312087454",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "Deterministically marked as GitHub-minimized spam.",
+      "Repeated promotional link to the same external project."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}

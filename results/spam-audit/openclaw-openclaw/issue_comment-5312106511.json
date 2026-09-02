@@ -1,0 +1,42 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-09-02T16:44:59.513Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5312106511",
+    "node_id": "IC_kwDOQb6kR88AAAABPKBQDw",
+    "url": "https://github.com/openclaw/openclaw/issues/123273#issuecomment-5312106511",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/123273",
+    "pull_request_url": null,
+    "author": "jinngimk-lang",
+    "author_association": "NONE",
+    "created_at": "2026-08-17T05:10:56Z",
+    "updated_at": "2026-09-02T15:11:43Z",
+    "body_hash": "65eec21d90dc0cf091bedbb780b4e3a2cd29d305a5f3cbfcf92d788212ae144c",
+    "body_excerpt": "Same bytes, same gateway, same model — default agent works, named agent fails. That’s a beautiful isolation regression because it removes  ...  collecting in AgentCI: https://github.com/jinngimk-lang/agentci The backend name is not the verdict; the effective resource boundary is.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam"
+    ],
+    "urls": [
+      "https://github.com/jinngimk-lang/agentci"
+    ]
+  },
+  "model_result": {
+    "comment_id": "5312106511",
+    "spam_signal": "high",
+    "confidence": 0.99,
+    "reasons": [
+      "Deterministically marked as GitHub-minimized spam.",
+      "Repeated promotional link to the same external project."
+    ],
+    "should_investigate": true
+  },
+  "model_error": null
+}
