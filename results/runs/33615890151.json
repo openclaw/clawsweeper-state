@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136123",
+  "mode": "autonomous",
+  "run_id": "33615890151",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33615890151",
+  "head_sha": "521f1ab5ca8c099b25d546baaa7a88ceedfd0174",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136123.md",
+  "published_at": "2026-09-02T10:13:31.505Z",
+  "canonical": "#136123",
+  "canonical_issue": "#136123",
+  "canonical_pr": null,
+  "summary": "#136123 is a current, narrow Windows runtime bug. Local implementation and validation are blocked: the checkout is read-only with no node_modules, this host is Linux, and the mandatory sibling ../codex checkout is absent and cannot be cloned. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#136123",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136123",
+      "candidate_fix": null,
+      "reason": "Repair the status owner; do not weaken Doctor’s conservative maintenance gate."
+    },
+    {
+      "target": "#136123",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136123",
+      "candidate_fix": null,
+      "reason": "A writable Windows-capable executor should implement and validate this artifact before opening the single permitted PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
