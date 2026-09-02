@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T15:27:35.351Z",
+  "updated_at": "2026-09-02T15:29:48.108Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90745:5013444897:2026-07-19T00:06:32Z:re_review",
-      "comment_id": "5013444897",
-      "comment_version_key": "5013444897:2026-07-19T00:06:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-5013444897",
-      "comment_created_at": "2026-07-19T00:06:32Z",
-      "comment_updated_at": "2026-07-19T00:06:32Z",
-      "comment_body_sha256": "2334b782ef29edd8319fd6528f9376fdb20cd10213deb8f9d84c887b9d5b354c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90745,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T10:55:27.675Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:90745:5013530694:2026-07-19T00:35:46Z:re_review",
       "comment_id": "5013530694",
@@ -32440,6 +32413,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125810:5328382625:2026-09-02T15:28:27Z:clawsweeper_needs_human",
+      "comment_id": "5328382625",
+      "comment_version_key": "5328382625:2026-09-02T15:28:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125810#issuecomment-5328382625",
+      "comment_created_at": "2026-08-18T12:48:48Z",
+      "comment_updated_at": "2026-09-02T15:28:27Z",
+      "comment_body_sha256": "d38c2f412853acff114f8aeec90d7006908fd29d7410aef77ac483a158400272",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125810,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the ACP manager’s cache-miss ensure and one-shot cleanup lifecycle. The PR supplies focused mocked regression c... (sha=4b2a1cd53f9bd04a2b16da476480ad5240f4d637)",
+      "expected_head_sha": "4b2a1cd53f9bd04a2b16da476480ad5240f4d637",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T15:29:48.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-124852-double-ensuresession",
+        "head_sha": "4b2a1cd53f9bd04a2b16da476480ad5240f4d637",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
