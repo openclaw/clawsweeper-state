@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T09:25:21.821Z",
+  "updated_at": "2026-09-02T09:25:27.303Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135276:5504823540:2026-09-02T05:22:33Z:re_review",
-      "comment_id": "5504823540",
-      "comment_version_key": "5504823540:2026-09-02T05:22:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135276#issuecomment-5504823540",
-      "comment_created_at": "2026-09-02T05:22:33Z",
-      "comment_updated_at": "2026-09-02T05:22:33Z",
-      "comment_body_sha256": "2e97e17dbacbad805f032433bf3cc1af21f6580770ce3bd89e6e2d96574806ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135276,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — current head: 03cf20a87e821f1388d302862e2499e13c188da3. pr body now contains current-head evidence and the successful real cli github_output transcript",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T05:23:40.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-ci-android-talk-scope-20260901",
-        "head_sha": "03cf20a87e821f1388d302862e2499e13c188da3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135957:5504825303:2026-09-02T05:22:45Z:clawsweeper_needs_human",
       "comment_id": "5504825303",
@@ -33253,6 +33206,39 @@
         "kind": "pull_request",
         "branch": "steipete/codex-session-runner-conflict-85a4a8",
         "head_sha": "5df8f5d8a4fd4418495ea8c9cf01af1ff67ffb73",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127096:5367101029:2026-09-02T09:24:28Z:clawsweeper_needs_human",
+      "comment_id": "5367101029",
+      "comment_version_key": "5367101029:2026-09-02T09:24:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127096#issuecomment-5367101029",
+      "comment_created_at": "2026-08-21T08:04:41Z",
+      "comment_updated_at": "2026-09-02T09:24:28Z",
+      "comment_body_sha256": "7ceb1f9b15d77152f090060ac7405040d6e780ed12a9c1ae42cb221ac9d3103d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127096,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 69 lines to maintain a process-global owner count; its lifecycle coverage should remain focused on all durable-row retirement paths. (sha=7d3d7adafb5ae3711d1b42c732d66a0f1969ad8d)",
+      "expected_head_sha": "7d3d7adafb5ae3711d1b42c732d66a0f1969ad8d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T09:25:27.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-browser-cold-activity-leak",
+        "head_sha": "7d3d7adafb5ae3711d1b42c732d66a0f1969ad8d",
         "cluster_id": null,
         "job_path": null
       }
