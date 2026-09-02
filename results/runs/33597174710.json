@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135948",
+  "mode": "autonomous",
+  "run_id": "33597174710",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33597174710",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135948.md",
+  "published_at": "2026-09-02T07:30:37.095Z",
+  "canonical": "#135948",
+  "canonical_issue": "#135948",
+  "canonical_pr": null,
+  "summary": "Current main reproduces the reported cache-only deep-link path. A narrow non-security repair is appropriate, but this worker cannot edit, install dependencies, inspect the required sibling Codex checkout, validate, or create the branch because the checkout is read-only and has no node_modules.",
+  "actions": [
+    {
+      "target": "#135948",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135948",
+      "candidate_fix": null,
+      "reason": "The canonical open issue is a source-proven Control UI bug; no security-sensitive signal was found."
+    },
+    {
+      "target": "#135948",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135948",
+      "candidate_fix": null,
+      "reason": "A contained owner-boundary implementation and behavioral regressions are defined in the fix artifact."
+    },
+    {
+      "target": "#135948",
+      "action": "open_fix_pr",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135948",
+      "candidate_fix": null,
+      "reason": "Open or update the one permitted ClawSweeper branch for the canonical issue after applying and validating the repair artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable implementation worker with dependencies (node_modules is absent) and the required sibling ../codex checkout. This sandbox cannot install, clone, edit, run the focused test, or create the PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
