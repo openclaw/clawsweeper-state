@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T16:47:36.449Z",
+  "updated_at": "2026-09-02T16:48:17.090Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:92230:5509480485:2026-09-02T12:24:49Z:re_review",
-      "comment_id": "5509480485",
-      "comment_version_key": "5509480485:2026-09-02T12:24:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92230#issuecomment-5509480485",
-      "comment_created_at": "2026-09-02T12:24:49Z",
-      "comment_updated_at": "2026-09-02T12:24:49Z",
-      "comment_body_sha256": "699dcc7e1bf1ff61f466e9b56d789f3b66a2268ccddef8d298e0c2288f502d51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92230,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T12:38:29.587Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawSean/slack-model-menu",
-        "head_sha": "2eac77ab1536864b2149e60e4e539fda0b07f797",
-        "cluster_id": "automerge-openclaw-openclaw-92230",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134987:5494492098:2026-09-01T13:13:27Z:re_review",
       "comment_id": "5494492098",
@@ -32798,6 +32751,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-docs-i18n-frontmatter-20260902",
         "head_sha": "76bbc8f6f8bc311f015bd915903c99820d8b0d11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135722:5502613367:2026-09-02T16:46:40Z:clawsweeper_needs_human",
+      "comment_id": "5502613367",
+      "comment_version_key": "5502613367:2026-09-02T16:46:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135722#issuecomment-5502613367",
+      "comment_created_at": "2026-09-02T00:43:55Z",
+      "comment_updated_at": "2026-09-02T16:46:40Z",
+      "comment_body_sha256": "72d2c59785df2cd66b10408054360563255f9fb3c3e76101762c358d44973e86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135722,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds a net 57 production lines to establish an eager application-lifetime owner; maintainers should confirm that broader lifecycle boundary before merge. (sha=bf34fb22ad4588779588268158e31be83bab4799)",
+      "expected_head_sha": "bf34fb22ad4588779588268158e31be83bab4799",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T16:48:17.090Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inbox-button-hidden-in-settings",
+        "head_sha": "bf34fb22ad4588779588268158e31be83bab4799",
         "cluster_id": null,
         "job_path": null
       }
