@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T09:42:37.068Z",
+  "updated_at": "2026-09-02T09:44:07.145Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124633:5307880441:2026-09-02T05:46:24Z:clawsweeper_needs_human",
-      "comment_id": "5307880441",
-      "comment_version_key": "5307880441:2026-09-02T05:46:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124633#issuecomment-5307880441",
-      "comment_created_at": "2026-08-16T14:17:53Z",
-      "comment_updated_at": "2026-09-02T05:46:24Z",
-      "comment_body_sha256": "17782e1869c66bd0aec0f6cbb91825df50c0ec2ba4bc0cca8af420d5a357dcc1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124633,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 14 lines for explicit status-marker propagation; the focused projections are the narrow owner boundary, and no net-neutral alternative is apparent without obs... (sha=8206ff15cf537c87db9360b62f96b01a7e1539de)",
-      "expected_head_sha": "8206ff15cf537c87db9360b62f96b01a7e1539de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:47:29.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/new-reset-ack-status-notice",
-        "head_sha": "8206ff15cf537c87db9360b62f96b01a7e1539de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124633:5308450181:2026-08-16T16:28:54Z:re_review",
       "comment_id": "5308450181",
@@ -33198,6 +33165,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134219:5507607855:2026-09-02T09:43:06Z:re_review",
+      "comment_id": "5507607855",
+      "comment_version_key": "5507607855:2026-09-02T09:43:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134219#issuecomment-5507607855",
+      "comment_created_at": "2026-09-02T09:43:06Z",
+      "comment_updated_at": "2026-09-02T09:43:06Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134219,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T09:44:01.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/134187-active-turn-claim-fallback",
+        "head_sha": "d672e587ac6d4c9d04ed4acfde3febd487b8c72c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
