@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:52:54.959Z",
+  "updated_at": "2026-09-02T20:53:01.237Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128642:5513160558:2026-09-02T16:52:09Z:re_review",
-      "comment_id": "5513160558",
-      "comment_version_key": "5513160558:2026-09-02T16:52:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128642#issuecomment-5513160558",
-      "comment_created_at": "2026-09-02T16:52:09Z",
-      "comment_updated_at": "2026-09-02T16:52:09Z",
-      "comment_body_sha256": "8cee0965673d7df7d8e3bc1e712b57d90d913d17527bc97b9642ae4a9b76b1e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128642,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T16:53:21.576Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bedrock-tooluse-input-sanitize-125873",
-        "head_sha": "e5afa3f4dee178c62fc085e572eee92b739b03e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120299:5220307173:2026-09-02T16:52:05Z:clawsweeper_auto_repair",
       "comment_id": "5220307173",
@@ -32606,6 +32559,39 @@
         "kind": "pull_request",
         "branch": "fix/inbox-button-hidden-in-settings",
         "head_sha": "53382462587ca2f8705840624fd643d172b7de52",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136531:5514728456:2026-09-02T20:51:50Z:clawsweeper_needs_human",
+      "comment_id": "5514728456",
+      "comment_version_key": "5514728456:2026-09-02T20:51:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136531#issuecomment-5514728456",
+      "comment_created_at": "2026-09-02T18:54:45Z",
+      "comment_updated_at": "2026-09-02T20:51:50Z",
+      "comment_body_sha256": "2d5f5179b4ba2ee6af7ad46741d8951338d313d1e4c4093ef2d7a8c543b43e27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The checkout has no installed diff package and package-host DNS failed, so this review could not directly inspect diff@9.0.0’s serializer contract; an exact-head admin/secops dependen... (sha=aa7361b9164a5d08c2b4d050cae61de2bc055427)",
+      "expected_head_sha": "aa7361b9164a5d08c2b4d050cae61de2bc055427",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:53:01.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa30b-oc-path-diff",
+        "head_sha": "aa7361b9164a5d08c2b4d050cae61de2bc055427",
         "cluster_id": null,
         "job_path": null
       }
