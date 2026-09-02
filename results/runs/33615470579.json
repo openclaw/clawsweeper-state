@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136200",
+  "mode": "autonomous",
+  "run_id": "33615470579",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33615470579",
+  "head_sha": "521f1ab5ca8c099b25d546baaa7a88ceedfd0174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136200.md",
+  "published_at": "2026-09-02T13:18:46.847Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136200",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136200",
+  "canonical_pr": null,
+  "summary": "#136200 is a valid canonical Feishu bug, but implementation is blocked: the supplied preflight main SHA (822ae0ff92b5707d4f58ae257c2fba4d0018178c) is absent from the target checkout, whose origin/main is d413210bc7420923d101ce64211511cdac7b9464. The required sibling ../codex source is also unavailable in this read-only environment. A narrow new-PR artifact is ready once the checkout/preflight is refreshed.",
+  "actions": [
+    {
+      "target": "#136200",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136200",
+      "candidate_fix": null,
+      "reason": "Refresh the target checkout and cluster preflight against one current main SHA, and make ../codex source available before an executor edits or opens the PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136200",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136200",
+      "candidate_fix": null,
+      "reason": "Non-mutating fix plan prepared; execution remains blocked on a refreshed, consistent checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
