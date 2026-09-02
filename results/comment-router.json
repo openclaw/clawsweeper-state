@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:54:29.562Z",
+  "updated_at": "2026-09-02T12:55:02.791Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136127:5506612072:2026-09-02T08:48:09Z:clawsweeper_auto_repair",
-      "comment_id": "5506612072",
-      "comment_version_key": "5506612072:2026-09-02T08:48:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136127#issuecomment-5506612072",
-      "comment_created_at": "2026-09-02T08:17:30Z",
-      "comment_updated_at": "2026-09-02T08:48:09Z",
-      "comment_body_sha256": "050fbf2f72de71d08422a3f59b17eb79f96c28401cc7afdf2cf0baefc58f8fb6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136127,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cd0007d7e4f98cda4df4573ecd4325d1a146b43d)",
-      "expected_head_sha": "cd0007d7e4f98cda4df4573ecd4325d1a146b43d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:00:47.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-frozen-target-compat-20260902-0712",
-        "head_sha": "32cf1b36c58d9f54d2ec1ac22fd30fea4fa0be97",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136150:5506640205:2026-09-02T08:54:33Z:clawsweeper_needs_human",
       "comment_id": "5506640205",
@@ -32413,6 +32380,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:101441:5509845215:2026-09-02T12:53:58Z:re_review",
+      "comment_id": "5509845215",
+      "comment_version_key": "5509845215:2026-09-02T12:53:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-5509845215",
+      "comment_created_at": "2026-09-02T12:53:58Z",
+      "comment_updated_at": "2026-09-02T12:53:58Z",
+      "comment_body_sha256": "a319d15dd308c95eca5baa77db570fca07b6c4f013e52e3d013120d01b8d3539",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101441,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T12:54:59.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zalouser-sanitize-outbound-90684",
+        "head_sha": "5626cab3d2de3c7b912e9ae1ccbfe41dba969a68",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
