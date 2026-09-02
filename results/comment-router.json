@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:38:43.522Z",
+  "updated_at": "2026-09-02T18:38:47.125Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136319:5511165580:2026-09-02T14:29:28Z:re_review",
-      "comment_id": "5511165580",
-      "comment_version_key": "5511165580:2026-09-02T14:29:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136319#issuecomment-5511165580",
-      "comment_created_at": "2026-09-02T14:29:28Z",
-      "comment_updated_at": "2026-09-02T14:29:28Z",
-      "comment_body_sha256": "d7508f337332045295ebf81451649b91630127596e7c9dfa293fef673836f3e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136319,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T14:30:29.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mobile-android-main",
-        "head_sha": "57076fb6e059afa6dda0d45cf842e9d406ae1ed9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129006:5405356874:2026-09-02T14:30:57Z:clawsweeper_auto_repair",
       "comment_id": "5405356874",
@@ -32930,6 +32883,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136507:5514517785:2026-09-02T18:37:44Z:clawsweeper_auto_repair",
+      "comment_id": "5514517785",
+      "comment_version_key": "5514517785:2026-09-02T18:37:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136507#issuecomment-5514517785",
+      "comment_created_at": "2026-09-02T18:37:44Z",
+      "comment_updated_at": "2026-09-02T18:37:44Z",
+      "comment_body_sha256": "c6fc1cad3b31d70a380c0d90d3b0f6292b583cf1a0ba1e90eaee72ef0a20665f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136507,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a8146e7a85796e86c1eb0944deb420170ac5c857)",
+      "expected_head_sha": "a8146e7a85796e86c1eb0944deb420170ac5c857",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:38:47.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/supervisor-timeout-before-adapter",
+        "head_sha": "a8146e7a85796e86c1eb0944deb420170ac5c857",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
