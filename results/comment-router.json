@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:18:14.528Z",
+  "updated_at": "2026-09-02T18:19:25.696Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135508:5510546779:2026-09-02T13:46:26Z:re_review",
-      "comment_id": "5510546779",
-      "comment_version_key": "5510546779:2026-09-02T13:46:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135508#issuecomment-5510546779",
-      "comment_created_at": "2026-09-02T13:46:26Z",
-      "comment_updated_at": "2026-09-02T13:46:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135508,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T13:47:28.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-scratch",
-        "head_sha": "60ce14fc1add86cad527951369b68806b81691cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136319:5510277515:2026-09-02T13:46:31Z:clawsweeper_auto_repair",
       "comment_id": "5510277515",
@@ -32861,6 +32814,39 @@
         "kind": "pull_request",
         "branch": "fix/security-fast-scanner-contract",
         "head_sha": "62ba18ff1cd03e154a09cf3397eb1e5bda80af81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3386:5514248233:2026-09-02T18:15:59Z:clawsweeper_needs_human",
+      "comment_id": "5514248233",
+      "comment_version_key": "5514248233:2026-09-02T18:15:59Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3386#issuecomment-5514248233",
+      "comment_created_at": "2026-09-02T18:15:59Z",
+      "comment_updated_at": "2026-09-02T18:15:59Z",
+      "comment_body_sha256": "5a2b4739a46669d883a22840db924a3aa0baa92e12bbab1cc512364077ce14bb",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3386,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users whose selected workspace differs from their auth-file default will no longer be able to promote that managed account into the System Account path; the PR deliberately r... (sha=8291dbde2165443151f7d2321fcd982286f22f8f)",
+      "expected_head_sha": "8291dbde2165443151f7d2321fcd982286f22f8f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:19:25.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-selected-workspace-owner",
+        "head_sha": "8291dbde2165443151f7d2321fcd982286f22f8f",
         "cluster_id": null,
         "job_path": null
       }
