@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:01:59.759Z",
+  "updated_at": "2026-09-02T18:02:08.420Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96011:4783088371:2026-09-02T13:39:24Z:clawsweeper_auto_repair",
-      "comment_id": "4783088371",
-      "comment_version_key": "4783088371:2026-09-02T13:39:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96011#issuecomment-4783088371",
-      "comment_created_at": "2026-06-23T20:17:04Z",
-      "comment_updated_at": "2026-09-02T13:39:24Z",
-      "comment_body_sha256": "9206994c4280decf9b0b1e285711b6847b8586ed88be0562a2fa4622de686190",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96011,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8242ed1a33551b09e1f41c49a2fcbeb40d23aafe)",
-      "expected_head_sha": "8242ed1a33551b09e1f41c49a2fcbeb40d23aafe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T13:46:46.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/skill-workshop-create-target-guard",
-        "head_sha": "8242ed1a33551b09e1f41c49a2fcbeb40d23aafe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:98544:4853447897:2026-09-02T13:41:04Z:clawsweeper_auto_repair",
       "comment_id": "4853447897",
@@ -32906,6 +32873,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126924:5514060926:2026-09-02T18:01:06Z:re_review",
+      "comment_id": "5514060926",
+      "comment_version_key": "5514060926:2026-09-02T18:01:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5514060926",
+      "comment_created_at": "2026-09-02T18:01:06Z",
+      "comment_updated_at": "2026-09-02T18:01:06Z",
+      "comment_body_sha256": "30ffb7c47fd703e9fded75a19c9fbb139f0380f6344e97416169084a20311d81",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126924,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T18:02:03.697Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-wait-expiry-not-death",
+        "head_sha": "9b2a47783df4ff12322a6283b14a7607e2035aa0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
