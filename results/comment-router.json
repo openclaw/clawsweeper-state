@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:25:15.897Z",
+  "updated_at": "2026-09-02T20:27:15.081Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119995:5209952075:2026-09-02T16:00:41Z:clawsweeper_auto_repair",
-      "comment_id": "5209952075",
-      "comment_version_key": "5209952075:2026-09-02T16:00:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119995#issuecomment-5209952075",
-      "comment_created_at": "2026-08-06T23:33:16Z",
-      "comment_updated_at": "2026-09-02T16:00:41Z",
-      "comment_body_sha256": "1a52f823ca2b516c161a84cbf6a7a52bbd38b07cec4de83e28970c0b2845c514",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119995,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e26ef9ec93be95e77299ae0373ee35ea00d75f96)",
-      "expected_head_sha": "e26ef9ec93be95e77299ae0373ee35ea00d75f96",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T16:12:22.191Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-node-compat-evidence",
-        "head_sha": "e26ef9ec93be95e77299ae0373ee35ea00d75f96",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120008:5209961695:2026-09-02T15:58:38Z:clawsweeper_auto_repair",
       "comment_id": "5209961695",
@@ -32583,6 +32550,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/AXorcist:62:5515914582:2026-09-02T20:26:14Z:clawsweeper_needs_human",
+      "comment_id": "5515914582",
+      "comment_version_key": "5515914582:2026-09-02T20:26:14Z",
+      "comment_url": "https://github.com/openclaw/AXorcist/pull/62#issuecomment-5515914582",
+      "comment_created_at": "2026-09-02T20:26:14Z",
+      "comment_updated_at": "2026-09-02T20:26:14Z",
+      "comment_body_sha256": "22317eee3a75ba85b675ef302e223099eccb068fef4289f6ddb5bef232d6ed5c",
+      "repo": "openclaw/AXorcist",
+      "issue_number": 62,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The supplied proof exercises direct helper use; no current production cleanup caller depends on the helper's new default timeout. (sha=04129359d59e2efa7ff81aeeef68a92fd9d54f48)",
+      "expected_head_sha": "04129359d59e2efa7ff81aeeef68a92fd9d54f48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:27:15.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cleanup-admission-timeout",
+        "head_sha": "04129359d59e2efa7ff81aeeef68a92fd9d54f48",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
