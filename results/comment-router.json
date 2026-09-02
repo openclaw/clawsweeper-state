@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:48:59.388Z",
+  "updated_at": "2026-09-02T21:49:00.608Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136146:5506596085:2026-09-02T16:36:05Z:clawsweeper_needs_human",
-      "comment_id": "5506596085",
-      "comment_version_key": "5506596085:2026-09-02T16:36:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136146#issuecomment-5506596085",
-      "comment_created_at": "2026-09-02T08:16:06Z",
-      "comment_updated_at": "2026-09-02T16:36:05Z",
-      "comment_body_sha256": "aa0304f2469d5377e80f5c5e1ef65d3a1c2af46e74042f701a6963f66b649f7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136146,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: demonstrate that a fresh worker frame after ordinary close begins is rejected before worker service or...; Review finding: [P1] Fence fresh worker frames once connection work starts closing — src/gateway/server/ws-connection/worker-connection.ts:403-435 - [high] New worker work can ent... (sha=cff270c288518202e67da87cba4451a8d45814cc)",
-      "expected_head_sha": "cff270c288518202e67da87cba4451a8d45814cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:40:18.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/gateway-lifetime-compact",
-        "head_sha": "cff270c288518202e67da87cba4451a8d45814cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136230:5507711573:2026-09-02T16:14:37Z:clawsweeper_needs_human",
       "comment_id": "5507711573",
@@ -32735,6 +32702,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136639:5516898774:2026-09-02T21:47:55Z:clawsweeper_needs_human",
+      "comment_id": "5516898774",
+      "comment_version_key": "5516898774:2026-09-02T21:47:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136639#issuecomment-5516898774",
+      "comment_created_at": "2026-09-02T21:47:55Z",
+      "comment_updated_at": "2026-09-02T21:47:55Z",
+      "comment_body_sha256": "569ee688704df6036fd95812c764e9c9e8ab820a71db2b9496b2c5be3507664d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136639,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new archive-first policy deliberately changes existing age and count cleanup from deleting eligible durable conversations to retaining them until explicit deletion or separately e... (sha=3663fe03aa65b2c75602bffe4e2cfe5835655ba5)",
+      "expected_head_sha": "3663fe03aa65b2c75602bffe4e2cfe5835655ba5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T21:49:00.608Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-cap-and-archiving-f99db5",
+        "head_sha": "3663fe03aa65b2c75602bffe4e2cfe5835655ba5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
