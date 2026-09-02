@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-02T20:43:17.817Z
+Generated: 2026-09-02T21:38:46.120Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -17,10 +17,10 @@ Repository: openclaw/openclaw
 
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
-| [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | MERGEABLE | BLOCKED | skipped | head branch does not start with clawsweeper/ |
+| [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
 | [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | CONFLICTING | DIRTY | skipped | head repository is unknown |
-| [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | clawsweeper/issue-openclaw-openclaw-120536 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | clawsweeper/issue-openclaw-openclaw-120536 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | clawsweeper/issue-openclaw-openclaw-91860 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
