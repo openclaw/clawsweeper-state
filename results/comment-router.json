@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T00:47:22.833Z",
+  "updated_at": "2026-09-02T00:47:32.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135421:5500062666:2026-09-01T20:34:28Z:re_review",
-      "comment_id": "5500062666",
-      "comment_version_key": "5500062666:2026-09-01T20:34:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135421#issuecomment-5500062666",
-      "comment_created_at": "2026-09-01T20:34:28Z",
-      "comment_updated_at": "2026-09-01T20:34:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135421,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T20:35:13.875Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/twitch-access-token-guidance",
-        "head_sha": "48018a5e34ca15106d0c9954eafd0cbca1ef9087",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:114636:5197038832:2026-08-05T20:35:21Z:re_review",
       "comment_id": "5197038832",
@@ -32506,6 +32459,39 @@
         "kind": "pull_request",
         "branch": "steipete/stabilize-e2e",
         "head_sha": "26ab73ca056dc6c58657e04dfbf35086db2b4cd3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1714:5488092964:2026-09-02T00:21:34Z:clawsweeper_needs_human",
+      "comment_id": "5488092964",
+      "comment_version_key": "5488092964:2026-09-02T00:21:34Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1714#issuecomment-5488092964",
+      "comment_created_at": "2026-09-01T02:44:41Z",
+      "comment_updated_at": "2026-09-02T00:21:34Z",
+      "comment_body_sha256": "6d4af9cedd1be5482c1f81d0357cf81c2b9427d9dc6d0ca930b10b81d5213e99",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1714,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the CLI now selects a normal broker session for an admin route, while the unchanged coordinator revali... (sha=abab2880c31f1d33fa06fa94baa4c3ae7a7cb1e8)",
+      "expected_head_sha": "abab2880c31f1d33fa06fa94baa4c3ae7a7cb1e8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T00:47:32.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/admin-github-session",
+        "head_sha": "abab2880c31f1d33fa06fa94baa4c3ae7a7cb1e8",
         "cluster_id": null,
         "job_path": null
       }
