@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:16:05.088Z",
+  "updated_at": "2026-09-02T03:16:08.338Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130894:5501951236:2026-09-01T23:28:41Z:re_review",
-      "comment_id": "5501951236",
-      "comment_version_key": "5501951236:2026-09-01T23:28:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130894#issuecomment-5501951236",
-      "comment_created_at": "2026-09-01T23:28:41Z",
-      "comment_updated_at": "2026-09-01T23:28:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130894,
-      "author": "sliverp",
-      "author_id": 38134380,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T23:29:35.283Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/legacyNpmSpecs",
-        "head_sha": "505abc76f23203c1e4e3da6982c08d3a5f0e09c1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135651:5501956425:2026-09-01T23:29:06Z:clawsweeper_needs_human",
       "comment_id": "5501956425",
@@ -32936,6 +32889,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T03:16:05.088Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117219:5149888634:2026-09-02T03:15:00Z:clawsweeper_needs_human",
+      "comment_id": "5149888634",
+      "comment_version_key": "5149888634:2026-09-02T03:15:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117219#issuecomment-5149888634",
+      "comment_created_at": "2026-08-01T04:58:07Z",
+      "comment_updated_at": "2026-09-02T03:15:00Z",
+      "comment_body_sha256": "9b6684337db70fb0fc300563c8689b03f8a82f6e600ac37a2d0fe3450fca7be6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117219,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The available merge proof is stale; before merge, the exact current-main result must demonstrate literal-path loading while retaining atomic, symlink-safe, encoding-preserving profile... (sha=b3d411e2d602795d0f615a87b679541a77460330)",
+      "expected_head_sha": "b3d411e2d602795d0f615a87b679541a77460330",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T03:16:08.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa400-cli-shell",
+        "head_sha": "b3d411e2d602795d0f615a87b679541a77460330",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
