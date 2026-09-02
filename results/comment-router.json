@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:08:17.294Z",
+  "updated_at": "2026-09-02T01:08:51.685Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135456:5499626332:2026-09-01T21:18:08Z:clawsweeper_needs_human",
-      "comment_id": "5499626332",
-      "comment_version_key": "5499626332:2026-09-01T21:18:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135456#issuecomment-5499626332",
-      "comment_created_at": "2026-09-01T19:57:49Z",
-      "comment_updated_at": "2026-09-01T21:18:08Z",
-      "comment_body_sha256": "79130b4f6ac773e04a0647e498572c2b0464511a51a649bc3cbb13b1656393e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135456,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the desktop tunnel manager. Supplied tests use real filesystem cleanup but a mocked SSH runner, so they do not... (sha=79de5440909a7be879f932524fe4bd3d42250634)",
-      "expected_head_sha": "79de5440909a7be879f932524fe4bd3d42250634",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T21:23:43.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/desktop-tunnel-short-socket-path",
-        "head_sha": "79de5440909a7be879f932524fe4bd3d42250634",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135468:5499793193:2026-09-01T21:09:58Z:clawsweeper_auto_repair",
       "comment_id": "5499793193",
@@ -32305,6 +32272,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134404:5502799295:2026-09-02T01:07:46Z:re_review",
+      "comment_id": "5502799295",
+      "comment_version_key": "5502799295:2026-09-02T01:07:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134404#issuecomment-5502799295",
+      "comment_created_at": "2026-09-02T01:07:46Z",
+      "comment_updated_at": "2026-09-02T01:07:46Z",
+      "comment_body_sha256": "886ccaa052451076ae073fd145cbc0b7b139726092f009eed56be960913237a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134404,
+      "author": "lzhan011",
+      "author_id": 35493221,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T01:08:48.670Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-unattributable-proxy-reporting",
+        "head_sha": "df3958d7acb51d4412e8ae1032393ada220d0f5d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
