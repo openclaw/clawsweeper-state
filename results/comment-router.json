@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:29:43.881Z",
+  "updated_at": "2026-09-02T12:30:12.434Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136171:5506887269:2026-09-02T08:42:03Z:clawsweeper_auto_repair",
-      "comment_id": "5506887269",
-      "comment_version_key": "5506887269:2026-09-02T08:42:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136171#issuecomment-5506887269",
-      "comment_created_at": "2026-09-02T08:42:03Z",
-      "comment_updated_at": "2026-09-02T08:42:03Z",
-      "comment_body_sha256": "b80d772f8aa342757a5005ddc8980ba2a7e237ea032b21992e416ecf805d5d41",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8d81e97532ae6f2a87e9ea5be4cf0797a136d2f4)",
-      "expected_head_sha": "8d81e97532ae6f2a87e9ea5be4cf0797a136d2f4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T08:43:15.740Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-archive-enametoolong",
-        "head_sha": "8d81e97532ae6f2a87e9ea5be4cf0797a136d2f4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135060:5492068345:2026-09-02T08:42:23Z:clawsweeper_auto_repair",
       "comment_id": "5492068345",
@@ -32556,6 +32523,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T12:29:43.881Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136283:5509535129:2026-09-02T12:29:18Z:clawsweeper_needs_human",
+      "comment_id": "5509535129",
+      "comment_version_key": "5509535129:2026-09-02T12:29:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136283#issuecomment-5509535129",
+      "comment_created_at": "2026-09-02T12:29:18Z",
+      "comment_updated_at": "2026-09-02T12:29:18Z",
+      "comment_body_sha256": "3321986bebc1eda089fb1ae7790936d62526df0ec5e430447a32c07fb5cbec51",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check snapshot contains three failed and many incomplete exact-head checks without failure logs, so merge validation remains outstanding. (sha=b64c86fb78796d9632fd73837af0e3e343d2d7bf)",
+      "expected_head_sha": "b64c86fb78796d9632fd73837af0e3e343d2d7bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T12:30:12.434Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-135905-session-maintenance-ingress",
+        "head_sha": "b64c86fb78796d9632fd73837af0e3e343d2d7bf",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
