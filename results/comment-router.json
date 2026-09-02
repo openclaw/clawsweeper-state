@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T06:38:39.435Z",
+  "updated_at": "2026-09-02T06:39:28.864Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135810:5503429994:2026-09-02T02:29:01Z:clawsweeper_needs_human",
-      "comment_id": "5503429994",
-      "comment_version_key": "5503429994:2026-09-02T02:29:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135810#issuecomment-5503429994",
-      "comment_created_at": "2026-09-02T02:29:01Z",
-      "comment_updated_at": "2026-09-02T02:29:01Z",
-      "comment_body_sha256": "4392e9c892ffaad34dfe79331fcccdc092a307a291a59bd4ae9eb5d78177e593",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135810,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair work is indicated; this is a coherent maintainer test cleanup awaiting normal exact-head validation. (sha=f99ee26ded0d1a45355548e0b6da4054a4d02280)",
-      "expected_head_sha": "f99ee26ded0d1a45355548e0b6da4054a4d02280",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T02:34:59.612Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-perf-v5-diffs-registration",
-        "head_sha": "f99ee26ded0d1a45355548e0b6da4054a4d02280",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135541:5500854964:2026-09-02T02:35:27Z:clawsweeper_auto_repair",
       "comment_id": "5500854964",
@@ -32571,6 +32538,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135846:5505544959:2026-09-02T06:38:24Z:re_review",
+      "comment_id": "5505544959",
+      "comment_version_key": "5505544959:2026-09-02T06:38:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135846#issuecomment-5505544959",
+      "comment_created_at": "2026-09-02T06:38:24Z",
+      "comment_updated_at": "2026-09-02T06:38:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135846,
+      "author": "louisfy",
+      "author_id": 54393156,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T06:39:26.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-empty-subagent-announce",
+        "head_sha": "5b96a05c92cc4cf5fc21b6cdbd6f986c62995f74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
