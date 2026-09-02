@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:13:43.885Z",
+  "updated_at": "2026-09-02T19:13:52.619Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128634:5393212558:2026-09-02T15:05:24Z:clawsweeper_auto_repair",
-      "comment_id": "5393212558",
-      "comment_version_key": "5393212558:2026-09-02T15:05:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128634#issuecomment-5393212558",
-      "comment_created_at": "2026-08-24T09:23:55Z",
-      "comment_updated_at": "2026-09-02T15:05:24Z",
-      "comment_body_sha256": "abedeb486acd2b57a7afd1d161087a53bcfe65b42ac5b4af95e6589f16df1a84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128634,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=735245c93d8b9b6716f6cb4b534e17c0aa400727)",
-      "expected_head_sha": "735245c93d8b9b6716f6cb4b534e17c0aa400727",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T15:08:42.033Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-zero-usage-snapshot",
-        "head_sha": "735245c93d8b9b6716f6cb4b534e17c0aa400727",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128820:5399317669:2026-09-02T14:59:03Z:clawsweeper_auto_repair",
       "comment_id": "5399317669",
@@ -32944,6 +32911,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T19:13:43.885Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1741:5512890675:2026-09-02T19:01:25Z:clawsweeper_needs_human",
+      "comment_id": "5512890675",
+      "comment_version_key": "5512890675:2026-09-02T19:01:25Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1741#issuecomment-5512890675",
+      "comment_created_at": "2026-09-02T16:31:20Z",
+      "comment_updated_at": "2026-09-02T19:01:25Z",
+      "comment_body_sha256": "c5e30c6b22410da3e59ffed6f6abbfabf71c55097580df6d390a064cfe376a3b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1741,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations that retain tenki.workspace or tenki.project will no longer create new leases until those values are removed and the intended Tenki workspace is selected by lo... (sha=fc55cf8ea0f824fc2e2c62de32ec9fdf3aaeaa86)",
+      "expected_head_sha": "fc55cf8ea0f824fc2e2c62de32ec9fdf3aaeaa86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T19:13:52.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tenki-cli-compatibility",
+        "head_sha": "fc55cf8ea0f824fc2e2c62de32ec9fdf3aaeaa86",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
