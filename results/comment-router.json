@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:30:04.037Z",
+  "updated_at": "2026-09-02T21:30:25.933Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136430:5512948184:2026-09-02T17:33:16Z:clawsweeper_needs_human",
-      "comment_id": "5512948184",
-      "comment_version_key": "5512948184:2026-09-02T17:33:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136430#issuecomment-5512948184",
-      "comment_created_at": "2026-09-02T16:35:44Z",
-      "comment_updated_at": "2026-09-02T17:33:16Z",
-      "comment_body_sha256": "ada16413a91a862198c15db497eee1760898ce054cd813bb409d5e7399b83569",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136430,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hosted checks are incomplete; the reported built-CLI precheck failure is owned by the still-open https://github.com/openclaw/openclaw/pull/136286, so this PR needs a refreshed green e... (sha=8a47b1dd656fd9ad58d76480dbeaf13dc78d7edb)",
-      "expected_head_sha": "8a47b1dd656fd9ad58d76480dbeaf13dc78d7edb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:40:18.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/amazing-germain-e35972",
-        "head_sha": "8a47b1dd656fd9ad58d76480dbeaf13dc78d7edb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136432:5512998052:2026-09-02T17:18:33Z:clawsweeper_auto_repair",
       "comment_id": "5512998052",
@@ -32637,6 +32604,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136286:5516684674:2026-09-02T21:29:21Z:re_review",
+      "comment_id": "5516684674",
+      "comment_version_key": "5516684674:2026-09-02T21:29:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136286#issuecomment-5516684674",
+      "comment_created_at": "2026-09-02T21:29:21Z",
+      "comment_updated_at": "2026-09-02T21:29:21Z",
+      "comment_body_sha256": "431cb730f684246cf69e51ad77eff8eb28093e8e3b73d04d1fb7c60ca8ed1aa7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136286,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T21:30:21.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-sixth-cli-output-close",
+        "head_sha": "3794eb16ea6e3856be62ff8a9ff4100fe691e7a4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
