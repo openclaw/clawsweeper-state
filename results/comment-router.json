@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:04:27.755Z",
+  "updated_at": "2026-09-02T02:04:51.151Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131584:5480587445:2026-08-31T15:31:05Z:re_review",
-      "comment_id": "5480587445",
-      "comment_version_key": "5480587445:2026-08-31T15:31:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131584#issuecomment-5480587445",
-      "comment_created_at": "2026-08-31T15:31:05Z",
-      "comment_updated_at": "2026-08-31T15:31:05Z",
-      "comment_body_sha256": "a1546602c15deff0dea35ccce74ecf42aef20a3919acbea5d8af284ae2e3e998",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131584,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:37:56.689Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131584:5484028122:2026-08-31T20:20:09Z:re_review",
       "comment_id": "5484028122",
@@ -32795,6 +32768,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134826:5489250431:2026-09-02T02:03:04Z:clawsweeper_needs_human",
+      "comment_id": "5489250431",
+      "comment_version_key": "5489250431:2026-09-02T02:03:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134826#issuecomment-5489250431",
+      "comment_created_at": "2026-09-01T05:15:37Z",
+      "comment_updated_at": "2026-09-02T02:03:04Z",
+      "comment_body_sha256": "3c3a6c5e1dd3f014dfc5bb0ce49d3c935b3df6423c5011a42c5feb1519300ccc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134826,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The parser’s compact_result interpretation depends on the pinned Anthropic SDK contract, which could not be independently read in this reviewer environment. (sha=a2da481860aace24479f18d99c0e63d185c9bcc4)",
+      "expected_head_sha": "a2da481860aace24479f18d99c0e63d185c9bcc4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T02:04:51.150Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/roboclaw-134697-clean",
+        "head_sha": "a2da481860aace24479f18d99c0e63d185c9bcc4",
+        "cluster_id": "automerge-openclaw-openclaw-134826",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-134826.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
