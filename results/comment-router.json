@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:38:10.460Z",
+  "updated_at": "2026-09-02T18:38:22.953Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136359:5511149856:2026-09-02T14:28:25Z:clawsweeper_needs_human",
-      "comment_id": "5511149856",
-      "comment_version_key": "5511149856:2026-09-02T14:28:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136359#issuecomment-5511149856",
-      "comment_created_at": "2026-09-02T14:28:25Z",
-      "comment_updated_at": "2026-09-02T14:28:25Z",
-      "comment_body_sha256": "3b6b6597735f293b669d88ca75a6add7cfbd8c9d20f12faa60691651ee43332d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136359,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the Responses retry helper; the new test injects SSE and HTTP outcomes through a custom SDK fetch, while the PR itself ide... (sha=7696bd0cd7889bdd168985ea604f930650583f8c)",
-      "expected_head_sha": "7696bd0cd7889bdd168985ea604f930650583f8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T14:29:23.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/responses-host-lifecycle-20260902",
-        "head_sha": "7696bd0cd7889bdd168985ea604f930650583f8c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136253:5508432920:2026-09-02T14:26:12Z:clawsweeper_auto_repair",
       "comment_id": "5508432920",
@@ -32916,6 +32883,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136504:5514511867:2026-09-02T18:37:15Z:clawsweeper_needs_human",
+      "comment_id": "5514511867",
+      "comment_version_key": "5514511867:2026-09-02T18:37:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136504#issuecomment-5514511867",
+      "comment_created_at": "2026-09-02T18:37:15Z",
+      "comment_updated_at": "2026-09-02T18:37:15Z",
+      "comment_body_sha256": "f9a78dbc59e8cd3159413de7d9c196e09ea3525b250f751caf575293954f3c2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136504,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the SMS route's pre-auth body-read boundary. The PR supplies test-only claims, and its added test uses an in-memory stream...; Review finding: [P1] Close the unread overflow request through the shared lifecycle — extensions/sms/src/webhook.ts:128-131 - [P1] Reuse the shared webhook in-flight limiter — ext... (sha=b429410aa60b19eab036de23737d0997c356058b)",
+      "expected_head_sha": "b429410aa60b19eab036de23737d0997c356058b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:38:22.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-985",
+        "head_sha": "b429410aa60b19eab036de23737d0997c356058b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
