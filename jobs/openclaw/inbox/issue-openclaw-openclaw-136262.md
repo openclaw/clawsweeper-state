@@ -67,18 +67,19 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the source-proven cumulative text replay in https://github.com/openclaw/openclaw/issues/136262. At the OpenAI-compatible completions stream producer, normalize a malformed cumulative content frame before it mutates the active text block and emits `text_delta`; do not add a generic consumer-side heuristic or configuration. Add a regression case for a prefix followed by its cumulative replay, plus a control proving legitimate repeated text remains. Confirm the regression fails before the fix and, if feasible, exercise the managed transport/agent-event boundary. Do not edit CHANGELOG.md.
+Repair the openai-completions transport’s handling of cumulative replay text frames at the producer boundary. Establish the failing regression before editing using incremental text, a cumulative replay, and a suffix; preserve legitimate repeated output. Normalize before mutating the active text block and before emitting text_delta so managed and direct consumers receive canonical incremental text. Add focused regression coverage for managed emitted events and final output, plus direct-mode partial output. Do not add config, change generic agent-loop or downstream subscriber policy, or modify release-owned CHANGELOG.md; put concise user-impact context in the PR body.
 
 Likely files:
 
 - packages/ai/src/transports/openai-completions-stream.ts
 - packages/ai/src/transports/openai-completions-stream.usage.test.ts
-- packages/agent-core/src/agent-loop.test.ts
+- packages/ai/src/providers/openai-completions.test.ts
 
 Validation:
 
-- pnpm test packages/ai/src/transports/openai-completions-stream.usage.test.ts
-- pnpm test packages/agent-core/src/agent-loop.test.ts
+- node scripts/run-vitest.mjs packages/ai/src/transports/openai-completions-stream.usage.test.ts
+- node scripts/run-vitest.mjs packages/ai/src/providers/openai-completions.test.ts
+- node scripts/run-vitest.mjs packages/agent-core/src/agent-loop.test.ts
 
 ## Operator Prompt
 
