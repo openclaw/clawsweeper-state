@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T15:24:28.325Z",
+  "updated_at": "2026-09-02T15:24:33.797Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126616:5508387750:2026-09-02T10:49:56Z:re_review",
-      "comment_id": "5508387750",
-      "comment_version_key": "5508387750:2026-09-02T10:49:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126616#issuecomment-5508387750",
-      "comment_created_at": "2026-09-02T10:49:56Z",
-      "comment_updated_at": "2026-09-02T10:49:56Z",
-      "comment_body_sha256": "37f62fff876abdc3ac1a926d4aa592047f9d6ec65b81796aaa9091df35708c5d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126616,
-      "author": "RaviTharuma",
-      "author_id": 25951435,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T10:50:50.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/http-user-session-from-conversation-id",
-        "head_sha": "92ce54b0ca649c442668932b6b8b207f08882947",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136241:5508079748:2026-09-02T10:49:15Z:clawsweeper_needs_human",
       "comment_id": "5508079748",
@@ -32473,6 +32426,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-mcp-oauth-runtime-projection",
         "head_sha": "7c4f9cea7ab316f0d2d843ee34f3b25139e5e18c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127959:5381016925:2026-09-02T15:22:30Z:clawsweeper_needs_human",
+      "comment_id": "5381016925",
+      "comment_version_key": "5381016925:2026-09-02T15:22:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127959#issuecomment-5381016925",
+      "comment_created_at": "2026-08-22T14:54:22Z",
+      "comment_updated_at": "2026-09-02T15:22:30Z",
+      "comment_body_sha256": "5c647844f21e97893b2f74ffdb3ecaec9f4ff316a29410af6a88747106aed629",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127959,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The shared quote builder is exercised with the pinned Baileys encoder after simulated cache expiry, but the supplied evidence does not show the... (sha=1d0c86ba271148b4289db75008a9125ed65bac50)",
+      "expected_head_sha": "1d0c86ba271148b4289db75008a9125ed65bac50",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T15:24:33.797Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-127948-whatsapp-quote-blank",
+        "head_sha": "1d0c86ba271148b4289db75008a9125ed65bac50",
         "cluster_id": null,
         "job_path": null
       }
