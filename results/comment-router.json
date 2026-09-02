@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:21:20.934Z",
+  "updated_at": "2026-09-02T01:21:35.639Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112423:5078795728:2026-07-25T14:11:28Z:re_review",
-      "comment_id": "5078795728",
-      "comment_version_key": "5078795728:2026-07-25T14:11:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/112423#issuecomment-5078795728",
-      "comment_created_at": "2026-07-25T14:11:28Z",
-      "comment_updated_at": "2026-07-25T14:11:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112423,
-      "author": "HermanZeng",
-      "author_id": 25895921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T21:59:11.725Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112423:5082503012:2026-07-26T07:15:24Z:re_review",
       "comment_id": "5082503012",
@@ -32285,6 +32258,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T01:21:20.934Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135749:5502901972:2026-09-02T01:20:36Z:clawsweeper_needs_human",
+      "comment_id": "5502901972",
+      "comment_version_key": "5502901972:2026-09-02T01:20:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135749#issuecomment-5502901972",
+      "comment_created_at": "2026-09-02T01:20:36Z",
+      "comment_updated_at": "2026-09-02T01:20:36Z",
+      "comment_body_sha256": "ab285d2c78354fd02b94a254ddefc2a9d48d50422c40a72597c91948033503c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135749,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the uninstall-warning matcher, reached from the CLI preview and managed uninstall paths; the supplied regression test mock... (sha=2a6108f08022a9169a7f97ac4623bcdfa8d4cca7)",
+      "expected_head_sha": "2a6108f08022a9169a7f97ac4623bcdfa8d4cca7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T01:21:35.639Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-scoped-spec-uninstall-warning",
+        "head_sha": "2a6108f08022a9169a7f97ac4623bcdfa8d4cca7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
