@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T13:45:58.256Z",
+  "updated_at": "2026-09-02T13:45:59.309Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136127:5506612072:2026-09-02T09:09:51Z:clawsweeper_needs_human",
-      "comment_id": "5506612072",
-      "comment_version_key": "5506612072:2026-09-02T09:09:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136127#issuecomment-5506612072",
-      "comment_created_at": "2026-09-02T08:17:30Z",
-      "comment_updated_at": "2026-09-02T09:09:51Z",
-      "comment_body_sha256": "44cbf1d41e7a5a49230e58ad62c46926918f48f6db1c239b4161b6fe24ae70ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136127,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head hosted frozen-target validation is still pending; merging without it could leave a release workflow that passes or fails incorrectly only in its credentialed Docker environ... (sha=32cf1b36c58d9f54d2ec1ac22fd30fea4fa0be97)",
-      "expected_head_sha": "32cf1b36c58d9f54d2ec1ac22fd30fea4fa0be97",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:30:35.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-frozen-target-compat-20260902-0712",
-        "head_sha": "32cf1b36c58d9f54d2ec1ac22fd30fea4fa0be97",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136177:5506984865:2026-09-02T09:11:11Z:clawsweeper_auto_repair",
       "comment_id": "5506984865",
@@ -32460,6 +32427,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T13:45:58.256Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-02T13:45:07Z:clawsweeper_auto_repair",
+      "comment_id": "5466178577",
+      "comment_version_key": "5466178577:2026-09-02T13:45:07Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3548#issuecomment-5466178577",
+      "comment_created_at": "2026-08-30T02:13:24Z",
+      "comment_updated_at": "2026-09-02T13:45:07Z",
+      "comment_body_sha256": "93b5dbe3de2ec30e70e8c85e53468d834812073a59a2af8656e5a22f5ef5f200",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3548,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0)",
+      "expected_head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-02T13:45:59.309Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-fetch-body-timeout",
+        "head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
