@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T10:31:29.239Z",
+  "updated_at": "2026-09-02T10:31:36.956Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136019:5505515821:2026-09-02T06:35:22Z:re_review",
-      "comment_id": "5505515821",
-      "comment_version_key": "5505515821:2026-09-02T06:35:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136019#issuecomment-5505515821",
-      "comment_created_at": "2026-09-02T06:35:22Z",
-      "comment_updated_at": "2026-09-02T06:35:22Z",
-      "comment_body_sha256": "e0f19a5ccc6a0542dbcea25010a5ec4fc5fcc4cd17e391dd54945c4f4b406985",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136019,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — evidence added since the last review (no code change on this head): the four-scenario live proof above and this authority-boundary scenario; pr body updated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T06:44:12.728Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/mcp-durable-tool-grants",
-        "head_sha": "027ab86d06e3f3a55452a9863ee7a46b72b6fa02",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135846:5503815114:2026-09-02T06:45:03Z:clawsweeper_needs_human",
       "comment_id": "5503815114",
@@ -33180,6 +33133,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-tools-namespaced-allowlist",
         "head_sha": "b0d798ed868f337482a4ed46f9248cee8ba993f0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136161:5506902718:2026-09-02T10:25:22Z:clawsweeper_needs_human",
+      "comment_id": "5506902718",
+      "comment_version_key": "5506902718:2026-09-02T10:25:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136161#issuecomment-5506902718",
+      "comment_created_at": "2026-09-02T08:43:25Z",
+      "comment_updated_at": "2026-09-02T10:25:22Z",
+      "comment_body_sha256": "bcbed7fee121880fb788473454a0e75670781e39448d33bfe28da2e9b382e317",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The revision fence governs visible queued state and direct-send progress; exact-head Android build, ktlint, ThirdParty, and Wear validation is still active, so landing before those ch... (sha=14c1787cad7cb836ae1df2dd71284d014941b312)",
+      "expected_head_sha": "14c1787cad7cb836ae1df2dd71284d014941b312",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T10:31:36.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-outbox-publication",
+        "head_sha": "14c1787cad7cb836ae1df2dd71284d014941b312",
         "cluster_id": null,
         "job_path": null
       }
