@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T04:57:34.208Z",
+  "updated_at": "2026-09-02T04:58:31.257Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135653:5502072476:2026-09-02T00:42:19Z:clawsweeper_auto_repair",
-      "comment_id": "5502072476",
-      "comment_version_key": "5502072476:2026-09-02T00:42:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135653#issuecomment-5502072476",
-      "comment_created_at": "2026-09-01T23:39:14Z",
-      "comment_updated_at": "2026-09-02T00:42:19Z",
-      "comment_body_sha256": "c83da888fd959dcd2b2b47606d2973041ab890bb5befcc1ce0784be14afc786f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135653,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=73fd83a515bdd59f6e4dfd57c4c8cb26722de56a)",
-      "expected_head_sha": "73fd83a515bdd59f6e4dfd57c4c8cb26722de56a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T00:51:32.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-reset",
-        "head_sha": "73fd83a515bdd59f6e4dfd57c4c8cb26722de56a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135657:5502109361:2026-09-01T23:51:07Z:clawsweeper_needs_human",
       "comment_id": "5502109361",
@@ -33257,6 +33224,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135730:5502688185:2026-09-02T04:57:35Z:clawsweeper_needs_human",
+      "comment_id": "5502688185",
+      "comment_version_key": "5502688185:2026-09-02T04:57:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135730#issuecomment-5502688185",
+      "comment_created_at": "2026-09-02T00:53:36Z",
+      "comment_updated_at": "2026-09-02T04:57:35Z",
+      "comment_body_sha256": "e6bad9b0f6298fd70e1336437d373d9146183a9e3245f8f700a6228c3c2e1bb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135730,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is handleFeishuMessage, and the new test reaches it through a long-lived receive-handler shape, but its inbound ex... (sha=9ec90674d85fd84cff3a0ff00447b0d40ac04f0d)",
+      "expected_head_sha": "9ec90674d85fd84cff3a0ff00447b0d40ac04f0d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T04:58:31.257Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-feishu-group-binding-hot-reload",
+        "head_sha": "9ec90674d85fd84cff3a0ff00447b0d40ac04f0d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
