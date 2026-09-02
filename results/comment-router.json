@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:36:31.837Z",
+  "updated_at": "2026-09-02T02:37:12.983Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135243:5501491493:2026-09-01T22:51:55Z:re_review",
-      "comment_id": "5501491493",
-      "comment_version_key": "5501491493:2026-09-01T22:51:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135243#issuecomment-5501491493",
-      "comment_created_at": "2026-09-01T22:51:55Z",
-      "comment_updated_at": "2026-09-01T22:51:55Z",
-      "comment_body_sha256": "822bd288c7814e84af0d6783389be50f7ae3562719428c656f7215f19e0f80ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135243,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T22:52:50.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/backup-exclude-nested-workspace",
-        "head_sha": "75a27f04d93eae6202c81a1d384a57f2320ec2fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135256:5501501675:2026-09-01T22:53:07Z:re_review",
       "comment_id": "5501501675",
@@ -33073,6 +33026,39 @@
         "kind": "pull_request",
         "branch": "openclaw/colin-upgrade-full-store-preflight",
         "head_sha": "07bf2ab46a077f07b7b8d22a0c25804e4595129f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135815:5503483723:2026-09-02T02:36:12Z:clawsweeper_auto_repair",
+      "comment_id": "5503483723",
+      "comment_version_key": "5503483723:2026-09-02T02:36:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135815#issuecomment-5503483723",
+      "comment_created_at": "2026-09-02T02:36:12Z",
+      "comment_updated_at": "2026-09-02T02:36:12Z",
+      "comment_body_sha256": "c2459a0ec7533a9cb070544c065cb545f8ae5d2bfbca374d8ca91d889cefeec8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135815,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5e28b686de9eb8108d09165cca4cff5ce738d362)",
+      "expected_head_sha": "5e28b686de9eb8108d09165cca4cff5ce738d362",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:37:12.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-queue-false-storage-error",
+        "head_sha": "5e28b686de9eb8108d09165cca4cff5ce738d362",
         "cluster_id": null,
         "job_path": null
       }
