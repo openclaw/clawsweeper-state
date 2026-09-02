@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136452",
+  "mode": "autonomous",
+  "run_id": "33665394150",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33665394150",
+  "head_sha": "56ccb516ab9d24031ed69bf4449b9916d2153367",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136452.md",
+  "published_at": "2026-09-02T18:43:17.684Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136452",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136452",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a repair verdict or code change: current main is clean at 1212f991db46ad4ffe8c11198c175a5736392a15, but the repository-required sibling ../codex checkout is absent and this worker has a read-only filesystem. The narrow repair and regression plan is preserved for a writable executor.",
+  "actions": [
+    {
+      "target": "#136452",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136452",
+      "candidate_fix": null,
+      "reason": "A writable executor must first provision and inspect ../codex, then capture the heartbeat regression failing on this base before applying the narrow owner-boundary repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136452",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136452",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but execution is blocked on the repository Codex hard gate and read-only checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#136452",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
