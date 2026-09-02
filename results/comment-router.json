@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:15:09.858Z",
+  "updated_at": "2026-09-02T21:16:16.781Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128454:5390001178:2026-09-02T17:28:28Z:clawsweeper_needs_human",
-      "comment_id": "5390001178",
-      "comment_version_key": "5390001178:2026-09-02T17:28:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5390001178",
-      "comment_created_at": "2026-08-24T02:25:21Z",
-      "comment_updated_at": "2026-09-02T17:28:28Z",
-      "comment_body_sha256": "d6b132db79e4a06643ec9ea1f838d0a2ec31ee2dc9c769172dc94e67c51c86e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied exact-head terminal trace exercises lifecycle cleanup and a hook-driven replacement, but...; Review finding: [P1] Make final directory removal identity-bound — src/infra/fs-safe.ts:220-231 - [high] Final directory deletion has a replacement race — src/infra/fs-safe.ts:231 (sha=b4ef64c56b612d6a04381debe20679d19979dad6)",
-      "expected_head_sha": "b4ef64c56b612d6a04381debe20679d19979dad6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:40:18.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media-reopened",
-        "head_sha": "b4ef64c56b612d6a04381debe20679d19979dad6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129635:5419027622:2026-09-02T17:26:48Z:clawsweeper_auto_repair",
       "comment_id": "5419027622",
@@ -32681,6 +32648,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136374:5516520561:2026-09-02T21:15:17Z:re_review",
+      "comment_id": "5516520561",
+      "comment_version_key": "5516520561:2026-09-02T21:15:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136374#issuecomment-5516520561",
+      "comment_created_at": "2026-09-02T21:15:17Z",
+      "comment_updated_at": "2026-09-02T21:15:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136374,
+      "author": "teddytennant",
+      "author_id": 192647641,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T21:16:12.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-emoji-prototype-key",
+        "head_sha": "f0df1df63b0bac0b28bd19dd9ab4ac85fb81adcc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
