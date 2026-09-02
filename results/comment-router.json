@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T04:51:08.778Z",
+  "updated_at": "2026-09-02T04:51:14.980Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135561:5501182168:2026-09-02T00:22:56Z:clawsweeper_needs_human",
-      "comment_id": "5501182168",
-      "comment_version_key": "5501182168:2026-09-02T00:22:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135561#issuecomment-5501182168",
-      "comment_created_at": "2026-09-01T22:18:01Z",
-      "comment_updated_at": "2026-09-02T00:22:56Z",
-      "comment_body_sha256": "e044a2590b43668839be4a710f64b75b1826f5c6a3e4ddefb90de27ef160610e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135561,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded Docker green run predates the final provenance-hardening commit, and exact-head CI was still in progress; the final two-file change has strong source and focused-test cov... (sha=982eb8f0d0a53d68a183d765e7184e14f7d8a3a7)",
-      "expected_head_sha": "982eb8f0d0a53d68a183d765e7184e14f7d8a3a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T00:51:32.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/upgrade-survivor-accepted-surface",
-        "head_sha": "1eb00b5c427dd3b8c2225854812b4fe66d430783",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135608:5501445370:2026-09-01T23:52:34Z:clawsweeper_needs_human",
       "comment_id": "5501445370",
@@ -33187,6 +33154,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1619:5504545759:2026-09-02T04:50:21Z:re_review",
+      "comment_id": "5504545759",
+      "comment_version_key": "5504545759:2026-09-02T04:50:21Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1619#issuecomment-5504545759",
+      "comment_created_at": "2026-09-02T04:50:21Z",
+      "comment_updated_at": "2026-09-02T04:50:21Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1619,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T04:51:10.844Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pool-provider-bound-capacity",
+        "head_sha": "937523aced0f6c2d3b9242461eeab1a03bd893e8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
