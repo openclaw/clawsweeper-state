@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:05:27.305Z",
+  "updated_at": "2026-09-02T23:05:41.638Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136496:5515404441:2026-09-02T19:48:05Z:re_review",
-      "comment_id": "5515404441",
-      "comment_version_key": "5515404441:2026-09-02T19:48:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136496#issuecomment-5515404441",
-      "comment_created_at": "2026-09-02T19:48:05Z",
-      "comment_updated_at": "2026-09-02T19:48:05Z",
-      "comment_body_sha256": "d75b17ef12705f481ab4486a4eb6a344a9373c40071bde1539079ef60764ab09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136496,
-      "author": "pfrederiksen",
-      "author_id": 908172,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T19:49:02.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-managed-policy-migration",
-        "head_sha": "54312474c27cc1ef013a2b5bae2c0a92c4369153",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128872:5401995071:2026-09-02T19:48:21Z:clawsweeper_auto_repair",
       "comment_id": "5401995071",
@@ -32566,6 +32519,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T23:05:27.305Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136701:5517643069:2026-09-02T23:04:50Z:clawsweeper_needs_human",
+      "comment_id": "5517643069",
+      "comment_version_key": "5517643069:2026-09-02T23:04:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136701#issuecomment-5517643069",
+      "comment_created_at": "2026-09-02T23:04:50Z",
+      "comment_updated_at": "2026-09-02T23:04:50Z",
+      "comment_body_sha256": "29d26cfe9657266a3ff7fdafd161d8a47ce9d7f5eeeb6018cb671a5b1886c150",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136701,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The release controller and its derived outputs were inspected, and the shipped tag establishes the release target, but no raw exact-he... (sha=16b752ef3fcb6bb420e8d67105bf38ba26a3e307)",
+      "expected_head_sha": "16b752ef3fcb6bb420e8d67105bf38ba26a3e307",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T23:05:41.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/close-out-2026.8.2-on-main",
+        "head_sha": "16b752ef3fcb6bb420e8d67105bf38ba26a3e307",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
