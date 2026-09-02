@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:48:32.796Z",
+  "updated_at": "2026-09-02T21:48:52.440Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135177:5494849198:2026-09-02T16:24:54Z:clawsweeper_needs_human",
-      "comment_id": "5494849198",
-      "comment_version_key": "5494849198:2026-09-02T16:24:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135177#issuecomment-5494849198",
-      "comment_created_at": "2026-09-01T13:39:46Z",
-      "comment_updated_at": "2026-09-02T16:24:54Z",
-      "comment_body_sha256": "38996e2f96465a1dfcfb905c671c13ef0da0801769711f02718f4995fa3aff8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135177,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The broad core/plugin dependency refresh can change runtime compatibility; the current exact-head integration gate is failed/incomplete, so the update has not yet cleared its required... (sha=672f7f4eafce1bb8f8dec2c3ceb66c0abb008f6c)",
-      "expected_head_sha": "672f7f4eafce1bb8f8dec2c3ceb66c0abb008f6c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:40:18.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/deps-seven-day-refresh-20260901",
-        "head_sha": "672f7f4eafce1bb8f8dec2c3ceb66c0abb008f6c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135350:5497310366:2026-09-02T16:24:54Z:clawsweeper_needs_human",
       "comment_id": "5497310366",
@@ -32707,6 +32674,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136454:5516899488:2026-09-02T21:47:59Z:re_review",
+      "comment_id": "5516899488",
+      "comment_version_key": "5516899488:2026-09-02T21:47:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136454#issuecomment-5516899488",
+      "comment_created_at": "2026-09-02T21:47:59Z",
+      "comment_updated_at": "2026-09-02T21:47:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136454,
+      "author": "HGLUSSY",
+      "author_id": 283802306,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T21:48:49.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/model-resolve-thinking-override",
+        "head_sha": "6c0ddaee082abba12f101c7cc1da81c5f94b1a71",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
