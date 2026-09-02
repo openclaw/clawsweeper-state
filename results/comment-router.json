@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:07:36.079Z",
+  "updated_at": "2026-09-02T08:08:10.516Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135898:5504342452:2026-09-02T04:23:14Z:clawsweeper_needs_human",
-      "comment_id": "5504342452",
-      "comment_version_key": "5504342452:2026-09-02T04:23:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135898#issuecomment-5504342452",
-      "comment_created_at": "2026-09-02T04:23:14Z",
-      "comment_updated_at": "2026-09-02T04:23:14Z",
-      "comment_body_sha256": "1ea2dc4e5964284e8b10f5654c94f2e954957580b85deda72f4662ff5045aa9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135898,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Await explicit Code Mode owner acceptance and the remaining exact-head CI; there is no concrete repair task for an automated worker. (sha=1143fda44831d0f9cde99eee8c3235f52fd4a08f)",
-      "expected_head_sha": "1143fda44831d0f9cde99eee8c3235f52fd4a08f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T04:24:05.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf3-code-mode-immutable-json",
-        "head_sha": "1143fda44831d0f9cde99eee8c3235f52fd4a08f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126228:5339092263:2026-09-02T04:23:40Z:clawsweeper_auto_repair",
       "comment_id": "5339092263",
@@ -32447,6 +32414,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:92230:5506495544:2026-09-02T08:07:11Z:re_review",
+      "comment_id": "5506495544",
+      "comment_version_key": "5506495544:2026-09-02T08:07:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/92230#issuecomment-5506495544",
+      "comment_created_at": "2026-09-02T08:07:11Z",
+      "comment_updated_at": "2026-09-02T08:07:11Z",
+      "comment_body_sha256": "0d9dc86ef78e2b4d49efb76f9bea969247a67c1678a17a4513ae18784e6dd245",
+      "repo": "openclaw/openclaw",
+      "issue_number": 92230,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T08:08:07.935Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawSean/slack-model-menu",
+        "head_sha": "6d8c210b59be9c4d592661459534e31bd856c91d",
+        "cluster_id": "automerge-openclaw-openclaw-92230",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
