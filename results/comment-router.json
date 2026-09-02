@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:42:29.784Z",
+  "updated_at": "2026-09-02T02:42:46.492Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5501501195:2026-09-01T22:53:04Z:re_review",
-      "comment_id": "5501501195",
-      "comment_version_key": "5501501195:2026-09-01T22:53:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5501501195",
-      "comment_created_at": "2026-09-01T22:53:04Z",
-      "comment_updated_at": "2026-09-01T22:53:04Z",
-      "comment_body_sha256": "1ded8fe79041e1518c7298c007fb26eac697ffa776086747d6fba6f063c80275",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T23:03:32.155Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sessions-tombstone-sweep",
-        "head_sha": "c8431242d75c081899949a6fcbddb71592478e91",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117074:5148085447:2026-09-01T23:02:20Z:clawsweeper_auto_repair",
       "comment_id": "5148085447",
@@ -32967,6 +32920,39 @@
         "kind": "pull_request",
         "branch": "fix/pinned-session-fallback-safety-net",
         "head_sha": "a9fd6be45133b5a29db6c62e81cc613ceb7b2ca1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131786:5453308136:2026-09-02T02:35:57Z:clawsweeper_auto_repair",
+      "comment_id": "5453308136",
+      "comment_version_key": "5453308136:2026-09-02T02:35:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131786#issuecomment-5453308136",
+      "comment_created_at": "2026-08-28T13:48:01Z",
+      "comment_updated_at": "2026-09-02T02:35:57Z",
+      "comment_body_sha256": "f4e673e70bd67be95fbfdf6a64d2bf9f42c8d951e6c400f3f7514e3ac7e40771",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131786,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0b79731df65e67c357f927bc373fe7ab7c181f42)",
+      "expected_head_sha": "0b79731df65e67c357f927bc373fe7ab7c181f42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:42:46.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-systemd-protect-tokens-stored-in-ser",
+        "head_sha": "0b79731df65e67c357f927bc373fe7ab7c181f42",
         "cluster_id": null,
         "job_path": null
       }
