@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135743",
+  "mode": "autonomous",
+  "run_id": "33578375700",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33578375700",
+  "head_sha": "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135743.md",
+  "published_at": "2026-09-02T02:42:19.935Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135743",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135743",
+  "canonical_pr": null,
+  "summary": "#135743 remains the open canonical bug. Current main df2530204103a129d3fdae87afac72c73bc0e0ec has the repeated roster projection: src/agents/harness-runtimes.ts:129 iterates agents and resolves each model ref through :107, while src/agents/model-runtime-policy.ts:165 reconstructs and searches the full roster per resolution. A narrow fix plan is ready, but this read-only checkout has no node_modules or dist/entry.js; pnpm test fails before execution because Corepack cannot create its cache (EROFS). The required sibling ../codex checkout is also absent, so no Codex-runtime verdict or locally validated PR should be produced here.",
+  "actions": [
+    {
+      "target": "#135743",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135743",
+      "candidate_fix": null,
+      "reason": "Implementation and pre-fix liveness reproduction require a writable dependency-ready checkout. The executor must first add the issue-shaped 632-agent × 57-model-ref benchmark fixture, show the pre-fix health/ready liveness failure, inspect ../codex as required by repository policy, then implement and validate the narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135743",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135743",
+      "candidate_fix": null,
+      "reason": "Narrow, bug-only new-PR plan; opening is contingent on the executor reproducing the liveness failure and passing the listed validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
