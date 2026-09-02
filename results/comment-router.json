@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:39:25.116Z",
+  "updated_at": "2026-09-02T07:39:49.447Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135838:5503790789:2026-09-02T03:36:48Z:clawsweeper_needs_human",
-      "comment_id": "5503790789",
-      "comment_version_key": "5503790789:2026-09-02T03:36:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135838#issuecomment-5503790789",
-      "comment_created_at": "2026-09-02T03:16:53Z",
-      "comment_updated_at": "2026-09-02T03:36:48Z",
-      "comment_body_sha256": "938a8daa2dc1d904b9b90fab24df13837b37c2472a090c60170adc20358bdeb8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135838,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied remote evidence exercised an older head, not 1b73bca; after repair, show an allowed place...; Review finding: [P1] Forward recovery authority into the dispatch continuation — src/gateway/worker-environments/placement-dispatch-startup.ts:461-481 - [P1] Fence interrupted chi... (sha=1b73bca38b9db91096fdd4e5b2ba6c7eee2de65c)",
-      "expected_head_sha": "1b73bca38b9db91096fdd4e5b2ba6c7eee2de65c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:46:42.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "worker-closure-bound-auth",
-        "head_sha": "1b73bca38b9db91096fdd4e5b2ba6c7eee2de65c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135854:5503940590:2026-09-02T03:36:32Z:clawsweeper_auto_repair",
       "comment_id": "5503940590",
@@ -32371,6 +32338,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136120:5506167032:2026-09-02T07:38:45Z:re_review",
+      "comment_id": "5506167032",
+      "comment_version_key": "5506167032:2026-09-02T07:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136120#issuecomment-5506167032",
+      "comment_created_at": "2026-09-02T07:38:45Z",
+      "comment_updated_at": "2026-09-02T07:38:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136120,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T07:39:47.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sdk-cache-relocated-shared-chunks",
+        "head_sha": "26bda88732b62f4f449db8be27cea9e795930570",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
