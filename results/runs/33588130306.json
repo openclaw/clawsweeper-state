@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135754",
+  "mode": "autonomous",
+  "run_id": "33588130306",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33588130306",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135754.md",
+  "published_at": "2026-09-02T03:58:42.424Z",
+  "canonical": "#135754",
+  "canonical_issue": "#135754",
+  "canonical_pr": null,
+  "summary": "#135754 remains reproducible on current main: each dirty search starts detached maintenance, and a rejected shadow publish restores dirty/full-retry state so the next search immediately starts another full rebuild. This worker cannot implement or validate the repair because the checkout is read-only and the mandatory sibling ../codex source is absent; cloning it failed on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#135754",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135754",
+      "candidate_fix": null,
+      "reason": "A writable checkout with the required sibling Codex source is necessary before code changes, the ordered regression, and validation can be completed."
+    },
+    {
+      "target": "#135754",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135754",
+      "candidate_fix": null,
+      "reason": "A narrow internal lifecycle repair is suitable after the environment blockers are removed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with ../codex available for the mandatory direct inspection, then rerun this job to implement and validate the fix branch."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
