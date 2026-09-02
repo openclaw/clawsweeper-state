@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T13:43:58.562Z",
+  "updated_at": "2026-09-02T13:44:54.466Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135528:5500670751:2026-09-02T09:21:27Z:clawsweeper_auto_repair",
-      "comment_id": "5500670751",
-      "comment_version_key": "5500670751:2026-09-02T09:21:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135528#issuecomment-5500670751",
-      "comment_created_at": "2026-09-01T21:27:40Z",
-      "comment_updated_at": "2026-09-02T09:21:27Z",
-      "comment_body_sha256": "a5230aeb70b89ef3a6097e3b1915b56e1c444d59a330b3f4f29d95c4a71a6a44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135528,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6ae549e72392d2d8a9af5c3339c30305226eeb81)",
-      "expected_head_sha": "6ae549e72392d2d8a9af5c3339c30305226eeb81",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:30:35.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workshop-global-skill-ownership",
-        "head_sha": "14f14b076d86ed8b68da02699d9b370f7c27a8e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135846:5503815114:2026-09-02T09:25:53Z:clawsweeper_needs_human",
       "comment_id": "5503815114",
@@ -32500,6 +32467,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135508:5510509268:2026-09-02T13:43:45Z:re_review",
+      "comment_id": "5510509268",
+      "comment_version_key": "5510509268:2026-09-02T13:43:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135508#issuecomment-5510509268",
+      "comment_created_at": "2026-09-02T13:43:45Z",
+      "comment_updated_at": "2026-09-02T13:43:45Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135508,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T13:44:51.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-scratch",
+        "head_sha": "60ce14fc1add86cad527951369b68806b81691cf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
