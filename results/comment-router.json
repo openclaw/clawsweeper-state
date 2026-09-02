@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:38:21.392Z",
+  "updated_at": "2026-09-02T20:38:21.917Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135480:5512987910:2026-09-02T16:38:49Z:re_review",
-      "comment_id": "5512987910",
-      "comment_version_key": "5512987910:2026-09-02T16:38:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135480#issuecomment-5512987910",
-      "comment_created_at": "2026-09-02T16:38:49Z",
-      "comment_updated_at": "2026-09-02T16:38:49Z",
-      "comment_body_sha256": "b776589d617e30c2a4071f3e385ec8dee82725850777ec6d9387f28d07c1de6b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135480,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T16:39:52.658Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/subagent-shared-cwd-advisory",
-        "head_sha": "8fc144df70c2646a8827d7dc0ea4a7872914ab77",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136356:5511135313:2026-09-02T16:38:40Z:clawsweeper_needs_human",
       "comment_id": "5511135313",
@@ -32624,6 +32577,39 @@
         "kind": "pull_request",
         "branch": "fix/f004-publish-blob-cleanup",
         "head_sha": "b702bc1a967b432a73f936fe719afba3e92215c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135588:5501143632:2026-09-02T20:37:22Z:clawsweeper_needs_human",
+      "comment_id": "5501143632",
+      "comment_version_key": "5501143632:2026-09-02T20:37:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135588#issuecomment-5501143632",
+      "comment_created_at": "2026-09-01T22:13:51Z",
+      "comment_updated_at": "2026-09-02T20:37:22Z",
+      "comment_body_sha256": "8c19dfe87594d6621805a4f4f81c4237c99a42a6678a927f5dcf6ee3acf16bae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native OpenCode Go users who set a custom User-Agent will now have it replaced on the two canonical Go endpoints; the PR discussion records this as intentional, but independent vendor... (sha=347ec04e37ee97bf89b0808407ac9278c48c8e7f)",
+      "expected_head_sha": "347ec04e37ee97bf89b0808407ac9278c48c8e7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:38:21.917Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openclaw-openclaw-vacinc-issue-135538",
+        "head_sha": "347ec04e37ee97bf89b0808407ac9278c48c8e7f",
         "cluster_id": null,
         "job_path": null
       }
