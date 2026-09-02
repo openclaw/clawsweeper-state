@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135633"
 mode: "autonomous"
-run_id: "33570033143"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33570033143"
-head_sha: "488b65173fa5bee156b917c57e651ec44dc41567"
-workflow_conclusion: "failure"
+run_id: "33578735941"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33578735941"
+head_sha: "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-02T00:00:46.620Z"
-canonical: "https://github.com/openclaw/openclaw/issues/135633"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/135633"
+published_at: "2026-09-02T02:01:53.399Z"
+canonical: "#135633"
+canonical_issue: "#135633"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-135633
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33570033143](https://github.com/openclaw/clawsweeper/actions/runs/33570033143)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33578735941](https://github.com/openclaw/clawsweeper/actions/runs/33578735941)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/135633
+Canonical: #135633
 
 ## Summary
 
-#135633 remains the canonical open bug. Current main contains the reported retry/misattribution path, but this read-only worker cannot create the required regression or repair branch: dependencies are absent, pnpm cannot create its Corepack cache, and the mandated sibling ../codex source is absent and cannot be cloned in this sandbox.
+#135633 remains a narrow, reproducible diagnostics/retry bug, but this read-only checkout cannot produce or validate the required repair branch.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/135633
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/135633
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #135633 | fix_needed | blocked | canonical | Implementation is blocked only by the read-only sandbox and unavailable mandatory Codex source; no maintainer product decision is unresolved. |
-| cluster:issue-openclaw-openclaw-135633 | build_fix_artifact | planned | canonical | Artifact is ready, but no executable PR action is safe until the blocked local prerequisites are available. |
+| #135633 | fix_needed | blocked | canonical | The requested repair is clear, but this worker has a read-only filesystem, missing test dependency, and no required sibling Codex checkout; it cannot edit, install, or validate a branch. |
+| #133543 | keep_closed | skipped | related | Historical related context only; no closure or mutation is applicable. |
 
 ## Needs Human
 
-- none
+- Provision a writable checkout with dependencies installed and the required sibling ../codex source, then apply and validate the repair artifact. No product decision is outstanding.

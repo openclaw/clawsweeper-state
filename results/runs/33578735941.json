@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135633",
+  "mode": "autonomous",
+  "run_id": "33578735941",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33578735941",
+  "head_sha": "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135633.md",
+  "published_at": "2026-09-02T02:01:53.399Z",
+  "canonical": "#135633",
+  "canonical_issue": "#135633",
+  "canonical_pr": null,
+  "summary": "#135633 remains a narrow, reproducible diagnostics/retry bug, but this read-only checkout cannot produce or validate the required repair branch.",
+  "actions": [
+    {
+      "target": "#135633",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135633",
+      "candidate_fix": null,
+      "reason": "The requested repair is clear, but this worker has a read-only filesystem, missing test dependency, and no required sibling Codex checkout; it cannot edit, install, or validate a branch."
+    },
+    {
+      "target": "#133543",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135633",
+      "candidate_fix": null,
+      "reason": "Historical related context only; no closure or mutation is applicable."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision a writable checkout with dependencies installed and the required sibling ../codex source, then apply and validate the repair artifact. No product decision is outstanding."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
