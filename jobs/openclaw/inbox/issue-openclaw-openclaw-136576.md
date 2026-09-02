@@ -67,18 +67,18 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair this existing macOS Tailscale dashboard-link bug for https://github.com/openclaw/openclaw/issues/136576. In the macOS Connection settings owner, stop emitting the retired hard-coded `/ui/` suffix. Derive the advertised URL from the Tailscale origin and the canonical configured `gateway.controlUi.basePath`, defaulting to `/`, consistent with docs/gateway/tailscale.md. Add focused macOS regression coverage for a normal Serve URL and a configured base path. Do not change Tailscale authentication, Serve/Funnel routing, persistence, or introduce a new configuration option. Establish the failing regression before editing and add user-visible release-note context in the PR body or commit message.
+Repair the Tailscale Dashboard URL shown by apps/macos/Sources/OpenClaw/TailscaleIntegrationSection.swift. The default Control UI path is `/`; preserve a configured gateway.controlUi.basePath by reusing or minimally extending the canonical dashboard-path owner in apps/macos/Sources/OpenClaw/GatewayEndpointStore.swift. Add a focused regression at the existing app URL boundary for both default-root and configured-base-path output, establishing that it fails before the repair. Do not add configuration, change Tailscale authentication or Gateway routing, or edit CHANGELOG.md. Include release-note context in the PR body and attach redacted after-fix native/Gateway evidence.
 
 Likely files:
 
 - apps/macos/Sources/OpenClaw/TailscaleIntegrationSection.swift
-- apps/macos/Tests/OpenClawIPCTests/TailscaleIntegrationSectionTests.swift
-- docs/gateway/tailscale.md
+- apps/macos/Sources/OpenClaw/GatewayEndpointStore.swift
+- apps/macos/Tests/OpenClawIPCTests/GatewayEndpointStoreTests.swift
 
 Validation:
 
-- Run the focused macOS Tailscale integration test through the repository’s disposable native-test workflow (`scripts/test-macos-native.mts`) on macOS.
-- Verify the displayed URL resolves to the origin root by default and preserves a configured `gateway.controlUi.basePath`.
+- Run the focused macOS native test target containing the dashboard-path regression on a disposable macOS runner.
+- Verify a Tailscale HTTPS URL resolves to the Control UI root by default and to the configured base path when set; attach redacted after-fix evidence.
 
 ## Operator Prompt
 
