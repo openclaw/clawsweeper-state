@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:11:21.008Z",
+  "updated_at": "2026-09-02T12:11:37.858Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135349:5506615617:2026-09-02T08:17:49Z:re_review",
-      "comment_id": "5506615617",
-      "comment_version_key": "5506615617:2026-09-02T08:17:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135349#issuecomment-5506615617",
-      "comment_created_at": "2026-09-02T08:17:49Z",
-      "comment_updated_at": "2026-09-02T08:17:49Z",
-      "comment_body_sha256": "c680e929cc408c9372d1a5e35db270ff8fa09e898ad2c315544268a313828575",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135349,
-      "author": "efe-arv",
-      "author_id": 259833796,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T08:18:59.834Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-archive-enametoolong",
-        "head_sha": "8d81e97532ae6f2a87e9ea5be4cf0797a136d2f4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133163:5506616609:2026-09-02T08:17:55Z:re_review",
       "comment_id": "5506616609",
@@ -32826,6 +32779,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T12:11:21.008Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135824:5503587844:2026-09-02T12:09:56Z:clawsweeper_needs_human",
+      "comment_id": "5503587844",
+      "comment_version_key": "5503587844:2026-09-02T12:09:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135824#issuecomment-5503587844",
+      "comment_created_at": "2026-09-02T02:49:50Z",
+      "comment_updated_at": "2026-09-02T12:09:56Z",
+      "comment_body_sha256": "d57a5a28a815d15f11b4c95416b070482b338d1d827914d8bb057003e2eefd45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135824,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8c214be49a87c8e078ad28dadf79bcb88a27983b)",
+      "expected_head_sha": "8c214be49a87c8e078ad28dadf79bcb88a27983b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T12:11:37.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/anthropic-catalog-home",
+        "head_sha": "8c214be49a87c8e078ad28dadf79bcb88a27983b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
