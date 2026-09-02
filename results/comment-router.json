@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:11:58.804Z",
+  "updated_at": "2026-09-02T12:12:26.801Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136138:5506536461:2026-09-02T08:19:19Z:clawsweeper_needs_human",
-      "comment_id": "5506536461",
-      "comment_version_key": "5506536461:2026-09-02T08:19:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136138#issuecomment-5506536461",
-      "comment_created_at": "2026-09-02T08:10:45Z",
-      "comment_updated_at": "2026-09-02T08:19:19Z",
-      "comment_body_sha256": "a6a18fc37bf6df5aaaba6b56ae5e6d240d5a067fe8988d067afc11187192a04b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head status reports a failing openclaw/ci-gate, but provides no failure log or causal evidence; its cause should be established before landing rather than inferred... (sha=7f65829012c398e559e260407910282144d4dea6)",
-      "expected_head_sha": "7f65829012c398e559e260407910282144d4dea6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T08:20:30.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/automations-rename-inventory",
-        "head_sha": "7f65829012c398e559e260407910282144d4dea6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136018:5505278642:2026-09-02T08:20:49Z:clawsweeper_needs_human",
       "comment_id": "5505278642",
@@ -32778,6 +32745,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T12:11:58.804Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136274:5509312849:2026-09-02T12:11:26Z:re_review",
+      "comment_id": "5509312849",
+      "comment_version_key": "5509312849:2026-09-02T12:11:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5509312849",
+      "comment_created_at": "2026-09-02T12:11:26Z",
+      "comment_updated_at": "2026-09-02T12:11:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136274,
+      "author": "a-tokyo",
+      "author_id": 12428415,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T12:12:23.131Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/per-team-sharepoint-upload",
+        "head_sha": "04c12a8f01fcaabdea1ed914be29ab7c49c9d553",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
