@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T10:51:37.857Z",
+  "updated_at": "2026-09-02T10:52:17.175Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5444795995:2026-08-27T20:24:12Z:re_review",
-      "comment_id": "5444795995",
-      "comment_version_key": "5444795995:2026-08-27T20:24:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5444795995",
-      "comment_created_at": "2026-08-27T20:24:12Z",
-      "comment_updated_at": "2026-08-27T20:24:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T06:48:07.853Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5452711125:2026-08-28T12:50:31Z:re_review",
       "comment_id": "5452711125",
@@ -33501,6 +33474,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133380:5469912245:2026-09-02T10:51:11Z:clawsweeper_needs_human",
+      "comment_id": "5469912245",
+      "comment_version_key": "5469912245:2026-09-02T10:51:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133380#issuecomment-5469912245",
+      "comment_created_at": "2026-08-30T16:34:16Z",
+      "comment_updated_at": "2026-09-02T10:51:11Z",
+      "comment_body_sha256": "030a67246e1eb2bcdeb8b3a50a1cbbe748b24ec068c83ed4e28138399f27d276",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133380,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Rewritten macOS LaunchAgents will retain raw process stderr on disk instead of discarding it; the existing 077 umask limits newly created logs to the service user, but the privacy and... (sha=59bdfc729c2b7568a5c37065a2bb5b3f1ee7abf2)",
+      "expected_head_sha": "59bdfc729c2b7568a5c37065a2bb5b3f1ee7abf2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T10:52:17.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-stderr-to-gateway-log",
+        "head_sha": "59bdfc729c2b7568a5c37065a2bb5b3f1ee7abf2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
