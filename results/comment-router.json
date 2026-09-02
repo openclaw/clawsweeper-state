@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:26:07.003Z",
+  "updated_at": "2026-09-02T22:26:25.806Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136476:5514595662:2026-09-02T18:44:05Z:re_review",
-      "comment_id": "5514595662",
-      "comment_version_key": "5514595662:2026-09-02T18:44:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136476#issuecomment-5514595662",
-      "comment_created_at": "2026-09-02T18:44:05Z",
-      "comment_updated_at": "2026-09-02T18:44:05Z",
-      "comment_body_sha256": "66f9b7fb68d6e476354a5f7112d09b4d1566a3405dc41f5a802d21745b1e4107",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136476,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T18:55:08.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-orphan-attribution",
-        "head_sha": "9c2132030251c6b0a60ff9a763e7f34e3f691312",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1356:5514717807:2026-09-02T18:53:53Z:re_review",
       "comment_id": "5514717807",
@@ -32604,6 +32557,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T22:26:07.003Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:34:5475563170:2026-09-02T22:25:18Z:clawsweeper_needs_human",
+      "comment_id": "5475563170",
+      "comment_version_key": "5475563170:2026-09-02T22:25:18Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/34#issuecomment-5475563170",
+      "comment_created_at": "2026-08-31T08:07:34Z",
+      "comment_updated_at": "2026-09-02T22:25:18Z",
+      "comment_body_sha256": "7ef5bef6bdfb4ff313402455e3bff1b14bb3f7b17cfe04611c42a8012ec8d9cb",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production inputs are the two manifests consumed by the shared ESP-SR AFE/WakeNet runtime; the PR supplies CI build and host-test o... (sha=bbd18e1c60a5b9c09053985c118e5c6f8f4ba032)",
+      "expected_head_sha": "bbd18e1c60a5b9c09053985c118e5c6f8f4ba032",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T22:26:25.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-refresh-20260830",
+        "head_sha": "bbd18e1c60a5b9c09053985c118e5c6f8f4ba032",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
