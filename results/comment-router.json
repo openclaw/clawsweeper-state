@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:49:33.730Z",
+  "updated_at": "2026-09-02T02:49:43.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5501699728:2026-09-01T23:09:43Z:re_review",
-      "comment_id": "5501699728",
-      "comment_version_key": "5501699728:2026-09-01T23:09:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5501699728",
-      "comment_created_at": "2026-09-01T23:09:43Z",
-      "comment_updated_at": "2026-09-01T23:09:43Z",
-      "comment_body_sha256": "dbdcc0ab5db2686712f9c786d4036e420d159574cd5176e3f1b62537d3031863",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T23:10:43.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sessions-tombstone-sweep",
-        "head_sha": "4763d6f48473763bdf67e1e83f33798c149c51e0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135629:5501711300:2026-09-01T23:10:34Z:clawsweeper_needs_human",
       "comment_id": "5501711300",
@@ -32963,6 +32916,39 @@
         "kind": "pull_request",
         "branch": "steipete/npm-package-size-reduction-c66637",
         "head_sha": "806575325355af3fee87bfd147f07ab300b79cf1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3548:5466178577:2026-09-02T02:48:46Z:clawsweeper_auto_repair",
+      "comment_id": "5466178577",
+      "comment_version_key": "5466178577:2026-09-02T02:48:46Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3548#issuecomment-5466178577",
+      "comment_created_at": "2026-08-30T02:13:24Z",
+      "comment_updated_at": "2026-09-02T02:48:46Z",
+      "comment_body_sha256": "6b3f61f67e5cf646c95d2d28162ec0a1f21292c9399f85a7368296c281700851",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3548,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0)",
+      "expected_head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:49:43.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-fetch-body-timeout",
+        "head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
         "cluster_id": null,
         "job_path": null
       }
