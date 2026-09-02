@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:43:15.232Z",
+  "updated_at": "2026-09-02T12:43:34.296Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136084:5505895056:2026-09-02T08:39:13Z:clawsweeper_needs_human",
-      "comment_id": "5505895056",
-      "comment_version_key": "5505895056:2026-09-02T08:39:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136084#issuecomment-5505895056",
-      "comment_created_at": "2026-09-02T07:13:15Z",
-      "comment_updated_at": "2026-09-02T08:39:13Z",
-      "comment_body_sha256": "c9c584a0805c768e7cf72418f2b6623e073c3973145e2ed9209d35fb591fd5b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136084,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new stop budget depends on Crabbox release/retry/cleanup timings that this reviewer could not independently inspect upstream; an incorrect bound can still terminate a valid cleanu... (sha=480f78872e2d92e24927d38834c2c244786b1178)",
-      "expected_head_sha": "480f78872e2d92e24927d38834c2c244786b1178",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T08:45:08.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-session-stress-fixes-20260902",
-        "head_sha": "480f78872e2d92e24927d38834c2c244786b1178",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136098:5506150407:2026-09-02T08:36:22Z:clawsweeper_auto_repair",
       "comment_id": "5506150407",
@@ -32576,6 +32543,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:101441:5509697522:2026-09-02T12:42:22Z:re_review",
+      "comment_id": "5509697522",
+      "comment_version_key": "5509697522:2026-09-02T12:42:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-5509697522",
+      "comment_created_at": "2026-09-02T12:42:22Z",
+      "comment_updated_at": "2026-09-02T12:42:22Z",
+      "comment_body_sha256": "d5f16fc6a2acb27887e33d3df0fc01a59b1d6c3d53c0ecca18eeb78203c92f0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101441,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T12:43:31.481Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zalouser-sanitize-outbound-90684",
+        "head_sha": "cbfc1e21f06b4402e25e0e90ff36e850208286e1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
