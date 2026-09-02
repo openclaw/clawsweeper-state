@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:46:42.818Z",
+  "updated_at": "2026-09-02T03:47:12.166Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89526:5248006493:2026-08-11T01:30:36Z:re_review",
-      "comment_id": "5248006493",
-      "comment_version_key": "5248006493:2026-08-11T01:30:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-5248006493",
-      "comment_created_at": "2026-08-11T01:30:36Z",
-      "comment_updated_at": "2026-08-11T01:30:36Z",
-      "comment_body_sha256": "8498386cb816ad2736fd8d1a9069fcfc580a554f50041059174d7ca446af4dc4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review this exact head, please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T23:56:45.392Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89526:5248089972:2026-08-11T01:46:02Z:re_review",
       "comment_id": "5248089972",
@@ -32996,6 +32969,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135864:5504044539:2026-09-02T03:46:19Z:clawsweeper_needs_human",
+      "comment_id": "5504044539",
+      "comment_version_key": "5504044539:2026-09-02T03:46:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135864#issuecomment-5504044539",
+      "comment_created_at": "2026-09-02T03:46:19Z",
+      "comment_updated_at": "2026-09-02T03:46:19Z",
+      "comment_body_sha256": "8087fda223f0257bb490434ff43ed502a24ee24b3235ab7cc185bb1489c0f36a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135864,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds 138 production lines; the closed producer diagnostic, single shared formatter, and path-preserving scan wrapper explain that growth, and no smaller net-neutral refact... (sha=cfde0fcc6dea2f3bce7332436bac90d6fc5da2d8)",
+      "expected_head_sha": "cfde0fcc6dea2f3bce7332436bac90d6fc5da2d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T03:47:12.166Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-index-diagnostics",
+        "head_sha": "cfde0fcc6dea2f3bce7332436bac90d6fc5da2d8",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
