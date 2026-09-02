@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T06:05:33.888Z",
+  "updated_at": "2026-09-02T06:05:42.197Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135728:5503292682:2026-09-02T02:11:05Z:re_review",
-      "comment_id": "5503292682",
-      "comment_version_key": "5503292682:2026-09-02T02:11:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135728#issuecomment-5503292682",
-      "comment_created_at": "2026-09-02T02:11:05Z",
-      "comment_updated_at": "2026-09-02T02:11:05Z",
-      "comment_body_sha256": "13389c74c9b5d38967288199b17329ce35089ed2a8e694833fdc0a26ab38cef0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135728,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T02:14:45.396Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pnpm-isolated-linker",
-        "head_sha": "63185720aa54f41b9c948688e94085597338f29f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116437:5132965098:2026-09-02T02:10:40Z:clawsweeper_needs_human",
       "comment_id": "5132965098",
@@ -32596,6 +32549,39 @@
         "kind": "pull_request",
         "branch": "fix/android-locale-state-description-test",
         "head_sha": "8d18c8910b6355a28f9c1e42cbcb4b79b658b435",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136010:5505238196:2026-09-02T06:04:51Z:clawsweeper_needs_human",
+      "comment_id": "5505238196",
+      "comment_version_key": "5505238196:2026-09-02T06:04:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136010#issuecomment-5505238196",
+      "comment_created_at": "2026-09-02T06:04:51Z",
+      "comment_updated_at": "2026-09-02T06:04:51Z",
+      "comment_body_sha256": "7dc7d844bbf410f4acda93982cf561a8dc33b5799355ceffa96d171eefd1f70b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136010,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds a supported Plugin SDK export for a retained read-only agent-database handle; its external compatibility and lifecycle commitment need an SDK-owner decision. (sha=64c8217a0871148dfa1fff3acc69753c4dafedda)",
+      "expected_head_sha": "64c8217a0871148dfa1fff3acc69753c4dafedda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T06:05:42.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-135684-readonly-sqlite",
+        "head_sha": "64c8217a0871148dfa1fff3acc69753c4dafedda",
         "cluster_id": null,
         "job_path": null
       }
