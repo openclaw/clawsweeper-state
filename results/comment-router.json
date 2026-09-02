@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:28:53.983Z",
+  "updated_at": "2026-09-02T02:29:12.558Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135593:5501240679:2026-09-01T22:39:27Z:clawsweeper_needs_human",
-      "comment_id": "5501240679",
-      "comment_version_key": "5501240679:2026-09-01T22:39:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135593#issuecomment-5501240679",
-      "comment_created_at": "2026-09-01T22:24:08Z",
-      "comment_updated_at": "2026-09-01T22:39:27Z",
-      "comment_body_sha256": "01d1305974c707e400fdb68029b25e1629faaface53612b2233089046ef38084",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135593,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing canonical profiles with 17–32 unfinished uploads will no longer begin further imports while global capacity remains; the supplied maintainer decision accepts this behavior an... (sha=7315701e8bf9600a4141deb36cc2b278bf7d1d84)",
-      "expected_head_sha": "7315701e8bf9600a4141deb36cc2b278bf7d1d84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:49:01.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/skill-library-upload-fairness",
-        "head_sha": "7315701e8bf9600a4141deb36cc2b278bf7d1d84",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135574:5501284877:2026-09-01T22:43:07Z:clawsweeper_auto_repair",
       "comment_id": "5501284877",
@@ -33088,6 +33055,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T02:28:53.983Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121557:5503422922:2026-09-02T02:28:04Z:re_review",
+      "comment_id": "5503422922",
+      "comment_version_key": "5503422922:2026-09-02T02:28:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121557#issuecomment-5503422922",
+      "comment_created_at": "2026-09-02T02:28:04Z",
+      "comment_updated_at": "2026-09-02T02:28:04Z",
+      "comment_body_sha256": "6bbf426f9cbd79a0443c190637af13457c9222a804fd50bc4e8c864731c4b166",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121557,
+      "author": "zyw02",
+      "author_id": 59604424,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T02:29:07.535Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-websearch-global-kill-switch",
+        "head_sha": "d42e8b2953f8c8b64dcb37928b64d9ababdacd83",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
