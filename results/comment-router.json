@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:16:53.409Z",
+  "updated_at": "2026-09-02T03:17:11.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131511:5502005764:2026-09-01T23:33:28Z:re_review",
-      "comment_id": "5502005764",
-      "comment_version_key": "5502005764:2026-09-01T23:33:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5502005764",
-      "comment_created_at": "2026-09-01T23:33:28Z",
-      "comment_updated_at": "2026-09-01T23:33:28Z",
-      "comment_body_sha256": "445c6ae690344b19202ff9baae3711f98c8527bc6a6bde8dbc202b1ea3f29139",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131511,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T23:34:23.704Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bundled-channel-icon-assets",
-        "head_sha": "64ea89b6f7807be25c287cd0bc937ddac73e5480",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135638:5502010568:2026-09-01T23:33:54Z:re_review",
       "comment_id": "5502010568",
@@ -32905,6 +32858,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-715-plugin-shell",
         "head_sha": "7967fc1fcbfa6ca846618425283d5bad42e8fcdf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135808:5503407292:2026-09-02T03:16:17Z:clawsweeper_needs_human",
+      "comment_id": "5503407292",
+      "comment_version_key": "5503407292:2026-09-02T03:16:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135808#issuecomment-5503407292",
+      "comment_created_at": "2026-09-02T02:25:54Z",
+      "comment_updated_at": "2026-09-02T03:16:17Z",
+      "comment_body_sha256": "771ff96ecdd00d5ca3b5e518aedc62f5ade8936fd7dfb33ab3d81a87d02b6b0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Native WebRTC dependency contract remains uninspected** - The new Rust bridge directly uses pinned str0m APIs, but upstream source and documentation could not be reached from this envir...; Review finding: [low] Native WebRTC dependency contract remains uninspected — apps/shared/OpenClawWatchRTC/Cargo.toml:11 (sha=600d25ea12ced6dad22295a00964f484e9d829b0)",
+      "expected_head_sha": "600d25ea12ced6dad22295a00964f484e9d829b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T03:17:11.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/watch-native-realtime-voice",
+        "head_sha": "600d25ea12ced6dad22295a00964f484e9d829b0",
         "cluster_id": null,
         "job_path": null
       }
