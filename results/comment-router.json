@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T13:48:08.927Z",
+  "updated_at": "2026-09-02T13:49:42.204Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-09-02T09:38:15Z:clawsweeper_needs_human",
-      "comment_id": "5381521199",
-      "comment_version_key": "5381521199:2026-09-02T09:38:15Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3512#issuecomment-5381521199",
-      "comment_created_at": "2026-08-22T16:51:50Z",
-      "comment_updated_at": "2026-09-02T09:38:15Z",
-      "comment_body_sha256": "6e94f1961a0d220b1b7d8fe54611ac8940adff11b38da468d4b8ad1024d414b0",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3512,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a4b40e6e7147c4ffb51465863d2a7c86fc44031f)",
-      "expected_head_sha": "a4b40e6e7147c4ffb51465863d2a7c86fc44031f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:39:23.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-first-page-error-state",
-        "head_sha": "a4b40e6e7147c4ffb51465863d2a7c86fc44031f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135060:5492068345:2026-09-02T09:40:18Z:clawsweeper_needs_human",
       "comment_id": "5492068345",
@@ -32540,6 +32507,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136322:5510580662:2026-09-02T13:48:52Z:re_review",
+      "comment_id": "5510580662",
+      "comment_version_key": "5510580662:2026-09-02T13:48:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136322#issuecomment-5510580662",
+      "comment_created_at": "2026-09-02T13:48:52Z",
+      "comment_updated_at": "2026-09-02T13:48:52Z",
+      "comment_body_sha256": "c41a6386bc81dd5a1b184eaadf3eb0fce8c6d54af0048151ca95d73cd8785e47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136322,
+      "author": "tzlwn1",
+      "author_id": 38945759,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T13:49:39.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/136262-openai-completions-cumulative-delta",
+        "head_sha": "39176354fad62103b7d5b74f0228826a3ebe88e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
