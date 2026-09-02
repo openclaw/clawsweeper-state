@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T10:38:06.198Z",
+  "updated_at": "2026-09-02T10:39:28.586Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136010:5505238196:2026-09-02T06:35:55Z:clawsweeper_needs_human",
-      "comment_id": "5505238196",
-      "comment_version_key": "5505238196:2026-09-02T06:35:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136010#issuecomment-5505238196",
-      "comment_created_at": "2026-09-02T06:04:51Z",
-      "comment_updated_at": "2026-09-02T06:35:55Z",
-      "comment_body_sha256": "5d51d5f9f609fdbbcd30ad74c1fdc6d1cb291da457abe30fa5e12fb7cf0c7d1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136010,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes diagnostic behavior across persisted state owners: an absent memory index now reports absence instead of initializing storage, so maintainers should retain the tested que... (sha=5556f3de7946c630446f1936fb7a60b82d27f725)",
-      "expected_head_sha": "5556f3de7946c630446f1936fb7a60b82d27f725",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T06:46:49.117Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-135684-readonly-sqlite",
-        "head_sha": "5faad6f3b060e257baa779583c59988217b29577",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136008:5505239279:2026-09-02T06:44:46Z:clawsweeper_needs_human",
       "comment_id": "5505239279",
@@ -33197,6 +33164,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:90745:5508256459:2026-09-02T10:38:25Z:re_review",
+      "comment_id": "5508256459",
+      "comment_version_key": "5508256459:2026-09-02T10:38:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-5508256459",
+      "comment_created_at": "2026-09-02T10:38:25Z",
+      "comment_updated_at": "2026-09-02T10:38:25Z",
+      "comment_body_sha256": "bc75218807043cc036ecd6cfdaecd6c8c4eb700c68029a4998671e70da03dff8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 90745,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T10:39:25.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-context-runtime",
+        "head_sha": "afe7d9f0bb54e2c8a564027faea5a00168229593",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
