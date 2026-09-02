@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:32:13.962Z",
+  "updated_at": "2026-09-02T19:33:03.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136230:5512118031:2026-09-02T15:34:36Z:re_review",
-      "comment_id": "5512118031",
-      "comment_version_key": "5512118031:2026-09-02T15:34:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136230#issuecomment-5512118031",
-      "comment_created_at": "2026-09-02T15:34:36Z",
-      "comment_updated_at": "2026-09-02T15:34:36Z",
-      "comment_body_sha256": "a4988af8281af1411f9814d180a9082c3b21841de69308203042dd393b5ce4b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136230,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T15:45:08.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/codex-plus-button-error-26d860",
-        "head_sha": "3824e033c5b4dace62fd086cadbdce79f66fccdb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136334:5510686891:2026-09-02T15:44:22Z:clawsweeper_needs_human",
       "comment_id": "5510686891",
@@ -32597,6 +32550,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136531:5514728456:2026-09-02T19:31:49Z:clawsweeper_needs_human",
+      "comment_id": "5514728456",
+      "comment_version_key": "5514728456:2026-09-02T19:31:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136531#issuecomment-5514728456",
+      "comment_created_at": "2026-09-02T18:54:45Z",
+      "comment_updated_at": "2026-09-02T19:31:49Z",
+      "comment_body_sha256": "dadea857df9f0fa4d0810b900a00efbc510c419de83d0eecb3992b32f7717ac1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as dirty against current main, so it cannot land until it is rebased and mergeability is refreshed. (sha=0650245ceb182851a009438dcc19e6a3a012eeea)",
+      "expected_head_sha": "0650245ceb182851a009438dcc19e6a3a012eeea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T19:33:03.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa30b-oc-path-diff",
+        "head_sha": "0650245ceb182851a009438dcc19e6a3a012eeea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
