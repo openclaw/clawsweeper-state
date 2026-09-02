@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:18:19.089Z",
+  "updated_at": "2026-09-02T03:18:35.527Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135516:5501976256:2026-09-01T23:30:47Z:re_review",
-      "comment_id": "5501976256",
-      "comment_version_key": "5501976256:2026-09-01T23:30:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135516#issuecomment-5501976256",
-      "comment_created_at": "2026-09-01T23:30:47Z",
-      "comment_updated_at": "2026-09-01T23:30:47Z",
-      "comment_body_sha256": "e189695249d0ad234d994a360fc13dd1a98afc888ba6c83d0541b1575ba119ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135516,
-      "author": "RayWangyangMa",
-      "author_id": 88625717,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T23:41:29.216Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-failure-alert-outcome",
-        "head_sha": "7cd410e196179708a18c5b497e59a3d9a842a377",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135417:5502030155:2026-09-01T23:35:36Z:re_review",
       "comment_id": "5502030155",
@@ -32907,6 +32860,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-135282-reject-isolated-yield",
         "head_sha": "ede7c4364396e04013ed0605e9cb38d3591dcfaf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135834:5503794623:2026-09-02T03:17:22Z:clawsweeper_needs_human",
+      "comment_id": "5503794623",
+      "comment_version_key": "5503794623:2026-09-02T03:17:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135834#issuecomment-5503794623",
+      "comment_created_at": "2026-09-02T03:17:22Z",
+      "comment_updated_at": "2026-09-02T03:17:22Z",
+      "comment_body_sha256": "28aff026ab7b2957da9265b1f615ca5ff9034268276dd108c40a51f980d17bfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135834,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - This already has a focused maintainer-owned implementation and no mechanical repair finding remains. (sha=d1684c2360e0986e46bd9aa9b0255dd6103a4508)",
+      "expected_head_sha": "d1684c2360e0986e46bd9aa9b0255dd6103a4508",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T03:18:35.527Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fb82-bundledext-followup",
+        "head_sha": "d1684c2360e0986e46bd9aa9b0255dd6103a4508",
         "cluster_id": null,
         "job_path": null
       }
