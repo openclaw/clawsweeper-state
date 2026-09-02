@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T16:33:57.165Z",
+  "updated_at": "2026-09-02T16:34:56.464Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135890:5504293369:2026-09-02T12:10:34Z:clawsweeper_needs_human",
-      "comment_id": "5504293369",
-      "comment_version_key": "5504293369:2026-09-02T12:10:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135890#issuecomment-5504293369",
-      "comment_created_at": "2026-09-02T04:16:39Z",
-      "comment_updated_at": "2026-09-02T12:10:34Z",
-      "comment_body_sha256": "bfa2054e3ee3d6edbe4952558efa32720505931fe87af7924aca1df5e3c15628",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135890,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Gate Task Lanes on configured providers (P1)** - This initial-load call is unconditional, while the new core descriptor is always advertised. With no taskLanes configuration, the service returns an empty snapsho...; Review finding: [P1] Gate Task Lanes on configured providers — ui/src/pages/cron/cron-page.ts:167 - [P1] Enforce the board-file cap before buffering — src/task-lanes/providers/jso... (sha=287183a3c01db92ce8f5c933a36c3f9d82c59305)",
-      "expected_head_sha": "287183a3c01db92ce8f5c933a36c3f9d82c59305",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T12:11:58.804Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/automation-task-lanes",
-        "head_sha": "287183a3c01db92ce8f5c933a36c3f9d82c59305",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135890:5506603108:2026-09-02T08:16:44Z:re_review",
       "comment_id": "5506603108",
@@ -32715,6 +32682,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136426:5512922401:2026-09-02T16:33:46Z:clawsweeper_needs_human",
+      "comment_id": "5512922401",
+      "comment_version_key": "5512922401:2026-09-02T16:33:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136426#issuecomment-5512922401",
+      "comment_created_at": "2026-09-02T16:33:46Z",
+      "comment_updated_at": "2026-09-02T16:33:46Z",
+      "comment_body_sha256": "ea1e7c0c85bc4eda8806cbe75ce7f32c99817291a38b40662f8efcc80b8a0ada",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136426,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the cron reaper’s persistent-session deletion selection path; the PR body supplies focused Vitest terminal traces, but no... (sha=b657f3a19ff51c69db34285c2798b3e9783df760)",
+      "expected_head_sha": "b657f3a19ff51c69db34285c2798b3e9783df760",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T16:34:56.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-reaper-busy-skip-136339",
+        "head_sha": "b657f3a19ff51c69db34285c2798b3e9783df760",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
