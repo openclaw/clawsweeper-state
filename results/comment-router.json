@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T09:00:47.029Z",
+  "updated_at": "2026-09-02T09:02:48.271Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117464:5152061513:2026-09-02T05:01:42Z:clawsweeper_auto_repair",
-      "comment_id": "5152061513",
-      "comment_version_key": "5152061513:2026-09-02T05:01:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117464#issuecomment-5152061513",
-      "comment_created_at": "2026-08-01T15:23:50Z",
-      "comment_updated_at": "2026-09-02T05:01:42Z",
-      "comment_body_sha256": "a3e73449d767443daa5fbe299bd6306f4f989d2833342a6eacf1fc02949a6b3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ff1d62dbc475bae5e9a9d370a64e6364fedf268b)",
-      "expected_head_sha": "ff1d62dbc475bae5e9a9d370a64e6364fedf268b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:10:05.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa402-discord-pins-opaque-pagination",
-        "head_sha": "ff1d62dbc475bae5e9a9d370a64e6364fedf268b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118467:5162443700:2026-09-02T05:07:03Z:clawsweeper_auto_repair",
       "comment_id": "5162443700",
@@ -33189,6 +33156,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136151:5507109804:2026-09-02T09:01:42Z:re_review",
+      "comment_id": "5507109804",
+      "comment_version_key": "5507109804:2026-09-02T09:01:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136151#issuecomment-5507109804",
+      "comment_created_at": "2026-09-02T09:01:42Z",
+      "comment_updated_at": "2026-09-02T09:01:42Z",
+      "comment_body_sha256": "dc5a3f27c864134fbd9b4442b2f7c66fc5c5ee438dfca24c129ee8ffecd9d6d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136151,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T09:02:43.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sanitize-gchat-labeled-url",
+        "head_sha": "7697eeae77541cf20853d496b8f7931caa04c180",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
