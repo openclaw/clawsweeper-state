@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T05:31:51.888Z",
+  "updated_at": "2026-09-02T05:31:56.704Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135281:5502936334:2026-09-02T01:25:00Z:re_review",
-      "comment_id": "5502936334",
-      "comment_version_key": "5502936334:2026-09-02T01:25:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135281#issuecomment-5502936334",
-      "comment_created_at": "2026-09-02T01:25:00Z",
-      "comment_updated_at": "2026-09-02T01:25:00Z",
-      "comment_body_sha256": "35ee3a29552db5c671340c94df5e9d137c15c06c073bb11291f1e95d766d9b2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135281,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T01:35:24.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gap-ssh-tunnel-monotonic-deadline",
-        "head_sha": "20fa5557cb1c7dc10feb3c9a5ee26de18abf8da4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134790:5488783528:2026-09-02T01:33:55Z:clawsweeper_needs_human",
       "comment_id": "5488783528",
@@ -32527,6 +32480,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T05:31:51.888Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135963:5504903094:2026-09-02T05:30:50Z:clawsweeper_needs_human",
+      "comment_id": "5504903094",
+      "comment_version_key": "5504903094:2026-09-02T05:30:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135963#issuecomment-5504903094",
+      "comment_created_at": "2026-09-02T05:30:50Z",
+      "comment_updated_at": "2026-09-02T05:30:50Z",
+      "comment_body_sha256": "068dd7d69056903a4c5d01027a0e452da49d5c229b930c810c25bf09918578ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135963,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging intentionally stops bot fallback after an ambiguous or partially accepted webhook send, so an affected reply now surfaces delivery failure rather than risking a duplicate bot... (sha=98e5ca04a471bb3fa6372d4907a3248eb2a2a483)",
+      "expected_head_sha": "98e5ca04a471bb3fa6372d4907a3248eb2a2a483",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T05:31:56.704Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa30-02-discord-webhook",
+        "head_sha": "98e5ca04a471bb3fa6372d4907a3248eb2a2a483",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
