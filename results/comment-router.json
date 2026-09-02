@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:27:04.272Z",
+  "updated_at": "2026-09-02T03:27:55.227Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134901:5489630833:2026-09-01T23:28:30Z:clawsweeper_needs_human",
-      "comment_id": "5489630833",
-      "comment_version_key": "5489630833:2026-09-01T23:28:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134901#issuecomment-5489630833",
-      "comment_created_at": "2026-09-01T06:04:14Z",
-      "comment_updated_at": "2026-09-01T23:28:30Z",
-      "comment_body_sha256": "51724309d7dca7c0993fa8d5679341ad04e91e192895d90a822ea2a5fd003f03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134901,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR supplies historical World-App claims and fake-backend PTY coverage, but no redacted exact-head...; Review finding: [P1] Keep external-verification retry reachable from the TUI — src/tui/tui-plugin-approvals.ts:640-648 - [P2] Document the external-verification plugin API — src/p... (sha=5d3e820beb21e77c441b6c4e3b42722df3dc76b0)",
-      "expected_head_sha": "5d3e820beb21e77c441b6c4e3b42722df3dc76b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T23:41:37.860Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rfc15/tui-actions",
-        "head_sha": "5d3e820beb21e77c441b6c4e3b42722df3dc76b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135210:5496036139:2026-09-01T23:34:46Z:clawsweeper_needs_human",
       "comment_id": "5496036139",
@@ -32919,6 +32886,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129403:5503869856:2026-09-02T03:26:53Z:re_review",
+      "comment_id": "5503869856",
+      "comment_version_key": "5503869856:2026-09-02T03:26:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129403#issuecomment-5503869856",
+      "comment_created_at": "2026-09-02T03:26:53Z",
+      "comment_updated_at": "2026-09-02T03:26:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129403,
+      "author": "xydigitLybnnnn",
+      "author_id": 280613588,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T03:27:51.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "ef8dc6cbddfc54ab634cc3a57fd782d6b1d702ca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
