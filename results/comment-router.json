@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T06:06:55.006Z",
+  "updated_at": "2026-09-02T06:07:36.482Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117351:5151158895:2026-09-02T02:10:49Z:clawsweeper_needs_human",
-      "comment_id": "5151158895",
-      "comment_version_key": "5151158895:2026-09-02T02:10:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117351#issuecomment-5151158895",
-      "comment_created_at": "2026-08-01T11:08:29Z",
-      "comment_updated_at": "2026-09-02T02:10:49Z",
-      "comment_body_sha256": "37aaa5b13c06044e71d89c99c3bdedeb871c556a6b4401034aa180bd255bfe1d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports this branch as conflicted with current main; resolving it is not worthwhile unless a maintainer identifies behavior absent from the shipped canonical fix. (sha=2282d6b4c229648a2ce42cce842464dd5c98b30f)",
-      "expected_head_sha": "2282d6b4c229648a2ce42cce842464dd5c98b30f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T02:15:15.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa400-plugin-enable-blocked",
-        "head_sha": "2282d6b4c229648a2ce42cce842464dd5c98b30f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117374:5151240910:2026-09-02T02:11:33Z:clawsweeper_auto_repair",
       "comment_id": "5151240910",
@@ -32579,6 +32546,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135857:5505256644:2026-09-02T06:06:42Z:re_review",
+      "comment_id": "5505256644",
+      "comment_version_key": "5505256644:2026-09-02T06:06:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135857#issuecomment-5505256644",
+      "comment_created_at": "2026-09-02T06:06:42Z",
+      "comment_updated_at": "2026-09-02T06:06:42Z",
+      "comment_body_sha256": "9176ef2e70513ae07d44e05297264d9c67f03775e4362f0549162e3d6cf005ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135857,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T06:07:34.239Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-chrome-mcp-endpoint-policy",
+        "head_sha": "5020996064bd19c5f3a32d91623d926544a87dd7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
