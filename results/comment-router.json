@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T16:50:36.944Z",
+  "updated_at": "2026-09-02T16:51:01.571Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:101441:5509697522:2026-09-02T12:42:22Z:re_review",
-      "comment_id": "5509697522",
-      "comment_version_key": "5509697522:2026-09-02T12:42:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-5509697522",
-      "comment_created_at": "2026-09-02T12:42:22Z",
-      "comment_updated_at": "2026-09-02T12:42:22Z",
-      "comment_body_sha256": "d5f16fc6a2acb27887e33d3df0fc01a59b1d6c3d53c0ecca18eeb78203c92f0c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101441,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T12:43:31.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalouser-sanitize-outbound-90684",
-        "head_sha": "cbfc1e21f06b4402e25e0e90ff36e850208286e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136293:5509708911:2026-09-02T12:43:17Z:clawsweeper_auto_repair",
       "comment_id": "5509708911",
@@ -32808,6 +32761,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-136284-legacy-tmp-shadow-cleanup",
         "head_sha": "b6b0daffa1fe51e81fc8108e45c7ec13ef7c57d1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120168:5214713094:2026-09-02T16:49:27Z:clawsweeper_auto_repair",
+      "comment_id": "5214713094",
+      "comment_version_key": "5214713094:2026-09-02T16:49:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120168#issuecomment-5214713094",
+      "comment_created_at": "2026-08-07T08:36:24Z",
+      "comment_updated_at": "2026-09-02T16:49:27Z",
+      "comment_body_sha256": "da2379088d016a17d813708532291cc613d0c20af4260dafe5c9f4a7a6bad2dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=089056737bd173a02afe129b9b27142fbf587c38)",
+      "expected_head_sha": "089056737bd173a02afe129b9b27142fbf587c38",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T16:51:01.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-e2ee-generation-lifecycle-20260807",
+        "head_sha": "089056737bd173a02afe129b9b27142fbf587c38",
         "cluster_id": null,
         "job_path": null
       }
