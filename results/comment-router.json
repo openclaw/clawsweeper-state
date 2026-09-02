@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:03:25.500Z",
+  "updated_at": "2026-09-02T22:03:46.182Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134898:5489629697:2026-09-02T18:13:33Z:clawsweeper_needs_human",
-      "comment_id": "5489629697",
-      "comment_version_key": "5489629697:2026-09-02T18:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134898#issuecomment-5489629697",
-      "comment_created_at": "2026-09-01T06:04:05Z",
-      "comment_updated_at": "2026-09-02T18:13:33Z",
-      "comment_body_sha256": "36d71dfd72f21d8ecc25274402aa6c0a3013dbe46274099ccc906436ea9fe053",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134898,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the body’s direct API test and two-line companion trace do not exercise the changed loader boundary wh...; Review finding: [P1] Fence grant storage until plugin registration commits — src/plugins/registry-api.ts:186-207 - [P2] Document the public approvals contract — src/plugins/plugin... (sha=a14a3b5a6ef7a1b2f8c6ff7a945155b56c226912)",
-      "expected_head_sha": "a14a3b5a6ef7a1b2f8c6ff7a945155b56c226912",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T18:28:18.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "rfc15/sdk-surface",
-        "head_sha": "a14a3b5a6ef7a1b2f8c6ff7a945155b56c226912",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134941:5490393660:2026-09-02T18:17:14Z:clawsweeper_needs_human",
       "comment_id": "5490393660",
@@ -32707,6 +32674,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136331:5510531710:2026-09-02T21:56:26Z:clawsweeper_needs_human",
+      "comment_id": "5510531710",
+      "comment_version_key": "5510531710:2026-09-02T21:56:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136331#issuecomment-5510531710",
+      "comment_created_at": "2026-09-02T13:45:19Z",
+      "comment_updated_at": "2026-09-02T21:56:26Z",
+      "comment_body_sha256": "2f7c49626b6f711d69ad3789efb4cfef93dc4ddeeb7bb30e768c0628feb01a6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fix changes a compatibility-sensitive credential boundary for existing OAuth MCP configurations; Codex’s external runtime contract could not be directly checked here, and the real... (sha=51148882aa5585ef63b909b35db3de7d9468f0fa)",
+      "expected_head_sha": "51148882aa5585ef63b909b35db3de7d9468f0fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T22:03:46.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-mcp-oauth-runtime-projection",
+        "head_sha": "51148882aa5585ef63b909b35db3de7d9468f0fa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
