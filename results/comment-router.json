@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:24:52.582Z",
+  "updated_at": "2026-09-02T08:25:03.257Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135877:5504475725:2026-09-02T04:41:07Z:re_review",
-      "comment_id": "5504475725",
-      "comment_version_key": "5504475725:2026-09-02T04:41:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135877#issuecomment-5504475725",
-      "comment_created_at": "2026-09-02T04:41:07Z",
-      "comment_updated_at": "2026-09-02T04:41:07Z",
-      "comment_body_sha256": "d1d77ce0f4628897bf97f7a0e2c746de40733587c83cc5609ca83ec7e3b16ee1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135877,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T04:42:12.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-docker-export-speed",
-        "head_sha": "aa861f0c0248634178f9ee24000242144ebc3d6d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130894:5504424455:2026-09-02T04:34:23Z:re_review",
       "comment_id": "5504424455",
@@ -32524,6 +32477,39 @@
         "kind": "pull_request",
         "branch": "fix/sanitize-gchat-labeled-url",
         "head_sha": "c3ed6653ad0d13be842c4ec9ec1b8e3a31fad3a3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93842:4726596889:2026-09-02T08:24:02Z:clawsweeper_needs_human",
+      "comment_id": "4726596889",
+      "comment_version_key": "4726596889:2026-09-02T08:24:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/93842#issuecomment-4726596889",
+      "comment_created_at": "2026-06-17T06:09:05Z",
+      "comment_updated_at": "2026-09-02T08:24:02Z",
+      "comment_body_sha256": "f8738658d1d75303e6d9fd31562fb2522eda8ee7aee06c9922d0a70097aa93fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 93842,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Relevant exact-head CI checks are currently skipped, so the patch still needs an executed exact-head CI result before merge. (sha=6fe94297414018d516376549341ea1c937db1f0e)",
+      "expected_head_sha": "6fe94297414018d516376549341ea1c937db1f0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T08:25:03.257Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/63234-plugin-config-validation-spam",
+        "head_sha": "6fe94297414018d516376549341ea1c937db1f0e",
         "cluster_id": null,
         "job_path": null
       }
