@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-02T15:50:07.764Z
+Generated: 2026-09-02T17:46:25.148Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -18,20 +18,20 @@ Repository: openclaw/openclaw
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
 | [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
-| [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | clawsweeper/issue-openclaw-openclaw-120536 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | clawsweeper/issue-openclaw-openclaw-91860 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | clawsweeper/issue-openclaw-openclaw-120134 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#120550](https://github.com/openclaw/openclaw/pull/120550) | fix(agents): preserve latest context-usage provenance | clawsweeper/issue-openclaw-openclaw-120536 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#120249](https://github.com/openclaw/openclaw/pull/120249) | fix(discord): honor maxLinesPerMessage for CLI sends | clawsweeper/issue-openclaw-openclaw-91860 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#120230](https://github.com/openclaw/openclaw/pull/120230) | fix(windows): preserve gateway restart CLI during Scheduled Task handoff | clawsweeper/issue-openclaw-openclaw-120134 | MERGEABLE | CLEAN | skipped | head repository is unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | CONFLICTING | DIRTY | skipped | head repository is unknown |
-| [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | clawsweeper/issue-openclaw-openclaw-119578 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | clawsweeper/issue-openclaw-openclaw-119754 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | clawsweeper/issue-openclaw-openclaw-96692 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | MERGEABLE | CLEAN | skipped | head repository is unknown |
+| [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#119784](https://github.com/openclaw/openclaw/pull/119784) | fix(gateway): avoid parsing excluded chat history payloads | clawsweeper/issue-openclaw-openclaw-119578 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | clawsweeper/issue-openclaw-openclaw-119754 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | clawsweeper/issue-openclaw-openclaw-96692 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | clawsweeper/issue-openclaw-openclaw-114169 | MERGEABLE | CLEAN | skipped | head repository is unknown |
-| [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | clawsweeper/issue-openclaw-openclaw-112625 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | clawsweeper/issue-openclaw-openclaw-112625 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#119718](https://github.com/openclaw/openclaw/pull/119718) | fix(googlechat): deliver remote media URLs as text links | clawsweeper/issue-openclaw-openclaw-89430 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | clawsweeper/issue-openclaw-openclaw-119692 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | clawsweeper/issue-openclaw-openclaw-92199 | CONFLICTING | DIRTY | skipped | head repository is unknown |
@@ -46,7 +46,7 @@ Repository: openclaw/openclaw
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | clawsweeper/issue-openclaw-openclaw-116601 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | clawsweeper/issue-openclaw-openclaw-90786 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | CONFLICTING | DIRTY | skipped | head repository is unknown |
-| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | MERGEABLE | CLEAN | skipped | head repository is unknown |
 | [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#107739](https://github.com/openclaw/openclaw/pull/107739) | feat(gateway): utility-model auto-titles for sessions beyond dashboard | molty/utility-model-session-titles | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
