@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T09:14:16.330Z",
+  "updated_at": "2026-09-02T09:15:59.211Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134987:5491088040:2026-09-02T05:09:10Z:clawsweeper_auto_repair",
-      "comment_id": "5491088040",
-      "comment_version_key": "5491088040:2026-09-02T05:09:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134987#issuecomment-5491088040",
-      "comment_created_at": "2026-09-01T08:22:25Z",
-      "comment_updated_at": "2026-09-02T05:09:10Z",
-      "comment_body_sha256": "57bfec37bc551bcb887cbd31285db8a21b8c007cf91ba8dbc01b6ddd3948ca6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134987,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5dcc2cb56875cf014b7347100d94af6beb558fe6)",
-      "expected_head_sha": "5dcc2cb56875cf014b7347100d94af6beb558fe6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:20:02.144Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agents-compaction-prune-accounting",
-        "head_sha": "5dcc2cb56875cf014b7347100d94af6beb558fe6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135276:5496229141:2026-09-02T05:10:13Z:clawsweeper_needs_human",
       "comment_id": "5496229141",
@@ -33234,6 +33201,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130490:5432419797:2026-09-02T09:14:35Z:clawsweeper_needs_human",
+      "comment_id": "5432419797",
+      "comment_version_key": "5432419797:2026-09-02T09:14:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130490#issuecomment-5432419797",
+      "comment_created_at": "2026-08-26T23:44:44Z",
+      "comment_updated_at": "2026-09-02T09:14:35Z",
+      "comment_body_sha256": "13a16f244becd308a6394427f97307a67314c14548b335d45120490873cda4ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130490,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Synchronize the TruffleHog workflow guard (P1)** - The introduced pin at this line no longer matches TRUFFLEHOG_V3_95_9 in test/scripts/ci-workflow-guards.test.ts:63, which is asserted against the parsed scan st...; Review finding: [P1] Synchronize the TruffleHog workflow guard — .github/workflows/ci.yml:1744 - [P1] Synchronize the Docs Agent action guard — .github/workflows/docs-agent.yml:18... (sha=03db2e7facccb648aad5bc1e7f1af7efd1cacf32)",
+      "expected_head_sha": "03db2e7facccb648aad5bc1e7f1af7efd1cacf32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T09:15:59.211Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-024263631a",
+        "head_sha": "03db2e7facccb648aad5bc1e7f1af7efd1cacf32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
