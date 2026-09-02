@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:48:06.280Z",
+  "updated_at": "2026-09-02T02:48:29.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130894:5498615677:2026-09-01T18:36:22Z:re_review",
-      "comment_id": "5498615677",
-      "comment_version_key": "5498615677:2026-09-01T18:36:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130894#issuecomment-5498615677",
-      "comment_created_at": "2026-09-01T18:36:22Z",
-      "comment_updated_at": "2026-09-01T18:36:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130894,
-      "author": "sliverp",
-      "author_id": 38134380,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T23:05:57.943Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130894:5498668322:2026-09-01T18:40:50Z:re_review",
       "comment_id": "5498668322",
@@ -33004,6 +32977,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T02:48:06.280Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1346:5503202519:2026-09-02T02:47:21Z:clawsweeper_needs_human",
+      "comment_id": "5503202519",
+      "comment_version_key": "5503202519:2026-09-02T02:47:21Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1346#issuecomment-5503202519",
+      "comment_created_at": "2026-09-02T01:59:38Z",
+      "comment_updated_at": "2026-09-02T02:47:21Z",
+      "comment_body_sha256": "a7b6fb2d32d1cacb8dc0d65e780f19172e333c60fa4d0e71e67a2b60aa563d15",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1346,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production path is scanner classification through CLI exit, workflow classification, and durable queue completion. The bod... (sha=568de8c437468b76afaafbed4ceb3790b2c2de42)",
+      "expected_head_sha": "568de8c437468b76afaafbed4ceb3790b2c2de42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:48:29.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/csw-149-mattermost-scan-fixture",
+        "head_sha": "568de8c437468b76afaafbed4ceb3790b2c2de42",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
