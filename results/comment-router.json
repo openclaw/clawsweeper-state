@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:55:10.048Z",
+  "updated_at": "2026-09-02T20:56:29.394Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136419:5512849150:2026-09-02T17:15:24Z:clawsweeper_needs_human",
-      "comment_id": "5512849150",
-      "comment_version_key": "5512849150:2026-09-02T17:15:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136419#issuecomment-5512849150",
-      "comment_created_at": "2026-09-02T16:28:09Z",
-      "comment_updated_at": "2026-09-02T17:15:24Z",
-      "comment_body_sha256": "4b2d9cf962ba846c28335aeb78feff897c864a09b7dd668241f704111a02e5c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136419,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep the detector independent of the candidate checkout (P1)** - After this becomes the base config, PR CI copies that config to $RUNNER_TEMP but runs the relative entry from the candidate checkout. A subsequent...; Review finding: [P1] Keep the detector independent of the candidate checkout — .pre-commit-config.yaml:73-77 - [P2] Describe the hook's text-file scope accurately — docs/gateway/s... (sha=b6271e19e0190a4e5fa30388465c47bc19ff18b8)",
-      "expected_head_sha": "b6271e19e0190a4e5fa30388465c47bc19ff18b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:16:48.993Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/festive-borg-612038",
-        "head_sha": "b6271e19e0190a4e5fa30388465c47bc19ff18b8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/imsg:239:5513467369:2026-09-02T17:15:53Z:re_review",
       "comment_id": "5513467369",
@@ -32695,6 +32662,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:110102:5516273709:2026-09-02T20:55:32Z:re_review",
+      "comment_id": "5516273709",
+      "comment_version_key": "5516273709:2026-09-02T20:55:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110102#issuecomment-5516273709",
+      "comment_created_at": "2026-09-02T20:55:32Z",
+      "comment_updated_at": "2026-09-02T20:55:32Z",
+      "comment_body_sha256": "adb89315f5becd2e78e7008f9c0085ee869603cec377bf967422b83dee8863af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110102,
+      "author": "Ittiz",
+      "author_id": 24983850,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T20:56:26.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "forge/plugin-ui-tab-actions",
+        "head_sha": "25eccd8b35394387cf1467992df19acb594c0b71",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
