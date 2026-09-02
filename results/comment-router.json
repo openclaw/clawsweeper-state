@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:39:43.588Z",
+  "updated_at": "2026-09-02T08:41:06.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133800:5504577843:2026-09-02T04:54:39Z:re_review",
-      "comment_id": "5504577843",
-      "comment_version_key": "5504577843:2026-09-02T04:54:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133800#issuecomment-5504577843",
-      "comment_created_at": "2026-09-02T04:54:39Z",
-      "comment_updated_at": "2026-09-02T04:54:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133800,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T04:55:30.391Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-scaffold-public-sdk-main",
-        "head_sha": "eb0e8e0646e2da7a9b93da12be410c34c7b56670",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135851:5504591161:2026-09-02T04:56:23Z:re_review",
       "comment_id": "5504591161",
@@ -32574,6 +32527,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-136123-schtasks-locale-numeric-runtime",
         "head_sha": "30d6044d565d242cb3ffad90d79342b56b2ff0b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:678:5506405451:2026-09-02T08:39:28Z:clawsweeper_needs_human",
+      "comment_id": "5506405451",
+      "comment_version_key": "5506405451:2026-09-02T08:39:28Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/678#issuecomment-5506405451",
+      "comment_created_at": "2026-09-02T07:58:58Z",
+      "comment_updated_at": "2026-09-02T08:39:28Z",
+      "comment_body_sha256": "f7dce73ed0d0649fecd03cb2716a6d97fe2f209d54dc36a62185c477cf032a56",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 678,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new synchronous eligibility probes run inside the retained one-second inventory budget; deterministic tests cover the decision matrix, but the corrected head has not yet shown nat... (sha=26d7ba508ce5a5b932c9067c0806a3d84a0ce274)",
+      "expected_head_sha": "26d7ba508ce5a5b932c9067c0806a3d84a0ce274",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T08:41:06.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "triage/prohibited-apps-20260902",
+        "head_sha": "26d7ba508ce5a5b932c9067c0806a3d84a0ce274",
         "cluster_id": null,
         "job_path": null
       }
