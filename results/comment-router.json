@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:28:35.457Z",
+  "updated_at": "2026-09-02T20:30:11.465Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136340:5510713171:2026-09-02T16:24:44Z:clawsweeper_needs_human",
-      "comment_id": "5510713171",
-      "comment_version_key": "5510713171:2026-09-02T16:24:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136340#issuecomment-5510713171",
-      "comment_created_at": "2026-09-02T13:58:08Z",
-      "comment_updated_at": "2026-09-02T16:24:44Z",
-      "comment_body_sha256": "74ab3373540b56198a146e4a18a47dba75b5541a872e7a505e51d4f54ed27ffa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136340,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup is incomplete, so landing readiness has not yet been established for e31ab9ff5bb4ab5741b9684d10101af684c10518. (sha=e31ab9ff5bb4ab5741b9684d10101af684c10518)",
-      "expected_head_sha": "e31ab9ff5bb4ab5741b9684d10101af684c10518",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T16:25:58.469Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-replaced-agent-contexts-20260902",
-        "head_sha": "e31ab9ff5bb4ab5741b9684d10101af684c10518",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120040:5208726521:2026-08-06T19:56:02Z:re_review",
       "comment_id": "5208726521",
@@ -32787,6 +32754,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T20:28:35.457Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136533:5514801187:2026-09-02T20:29:06Z:clawsweeper_needs_human",
+      "comment_id": "5514801187",
+      "comment_version_key": "5514801187:2026-09-02T20:29:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136533#issuecomment-5514801187",
+      "comment_created_at": "2026-09-02T19:00:40Z",
+      "comment_updated_at": "2026-09-02T20:29:06Z",
+      "comment_body_sha256": "5b42f61683154c7545a7f668411ed3432b58ce03fcce74422ab2aa7cdc5e4381",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136533,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is runSessionCompactionIfNeeded, reached before the real heartbeat turn from agent-runner-execute. The supplied fo... (sha=b14df256011b856d90d4587197a1df6587cefa32)",
+      "expected_head_sha": "b14df256011b856d90d4587197a1df6587cefa32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:30:11.465Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-136452-heartbeat-byte-cap",
+        "head_sha": "b14df256011b856d90d4587197a1df6587cefa32",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
