@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T17:19:28.547Z",
+  "updated_at": "2026-09-02T17:20:03.794Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136249:5508345990:2026-09-02T12:35:00Z:clawsweeper_needs_human",
-      "comment_id": "5508345990",
-      "comment_version_key": "5508345990:2026-09-02T12:35:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136249#issuecomment-5508345990",
-      "comment_created_at": "2026-09-02T10:46:11Z",
-      "comment_updated_at": "2026-09-02T12:35:00Z",
-      "comment_body_sha256": "01768b732580aa672ef11ba888ca8986e4b8eeeb9fd0398e60635ed274ba75f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136249,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A slow consumer intentionally receives the first callback and then the latest compatible snapshot; exact-head hosted checks should complete before merge to confirm message, tool, reas... (sha=cc7a5156392f7d813c9f5c46858b02b6d7f435a0)",
-      "expected_head_sha": "cc7a5156392f7d813c9f5c46858b02b6d7f435a0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T12:46:23.399Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/prepared-reply-delivery-20260902",
-        "head_sha": "fb1f833c2dfb1c548c26afa5eddf5673a466db02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136266:5508712111:2026-09-02T12:14:26Z:clawsweeper_needs_human",
       "comment_id": "5508712111",
@@ -32854,6 +32821,53 @@
         "kind": "pull_request",
         "branch": "fix/nextcloud-talk-inbound-media",
         "head_sha": "00b67e7e5fc23b0fc5ac134f836d0ac9094e64cf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128454:5513507017:2026-09-02T17:19:02Z:re_review",
+      "comment_id": "5513507017",
+      "comment_version_key": "5513507017:2026-09-02T17:19:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5513507017",
+      "comment_created_at": "2026-09-02T17:19:02Z",
+      "comment_updated_at": "2026-09-02T17:19:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128454,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T17:20:00.317Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media-reopened",
+        "head_sha": "b4ef64c56b612d6a04381debe20679d19979dad6",
         "cluster_id": null,
         "job_path": null
       },
