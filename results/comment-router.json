@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:05:15.779Z",
+  "updated_at": "2026-09-02T19:05:35.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136276:5509109154:2026-09-02T14:38:57Z:clawsweeper_needs_human",
-      "comment_id": "5509109154",
-      "comment_version_key": "5509109154:2026-09-02T14:38:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136276#issuecomment-5509109154",
-      "comment_created_at": "2026-09-02T11:54:15Z",
-      "comment_updated_at": "2026-09-02T14:38:57Z",
-      "comment_body_sha256": "1e0832b049d7a2d98aaa0ea2e04d2cb1cd8bd6f93a9c9ae0f41a05deb1279717",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136276,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix adds +63 production lines on an OOM-critical spawn path; the distinct exact-environment and shell-startup safety contract supports the growth, but the remaining exact-head... (sha=445a441198e953839423445394608d1c30a31b25)",
-      "expected_head_sha": "445a441198e953839423445394608d1c30a31b25",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T14:51:29.178Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/provider-local-service-oom-score",
-        "head_sha": "445a441198e953839423445394608d1c30a31b25",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136273:5509169494:2026-09-02T14:47:13Z:clawsweeper_needs_human",
       "comment_id": "5509169494",
@@ -33002,6 +32969,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T19:05:15.779Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136343:5514842071:2026-09-02T19:03:58Z:re_review",
+      "comment_id": "5514842071",
+      "comment_version_key": "5514842071:2026-09-02T19:03:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136343#issuecomment-5514842071",
+      "comment_created_at": "2026-09-02T19:03:58Z",
+      "comment_updated_at": "2026-09-02T19:03:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136343,
+      "author": "vsumner",
+      "author_id": 308886,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T19:05:27.969Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/backup-declared-absolute-symlinks",
+        "head_sha": "78cba814a35d199e6f359a6f0f9c13640219e1b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
