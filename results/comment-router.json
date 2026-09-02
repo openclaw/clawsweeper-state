@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T11:07:06.167Z",
+  "updated_at": "2026-09-02T11:07:27.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135798:5505867974:2026-09-02T07:10:31Z:re_review",
-      "comment_id": "5505867974",
-      "comment_version_key": "5505867974:2026-09-02T07:10:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135798#issuecomment-5505867974",
-      "comment_created_at": "2026-09-02T07:10:31Z",
-      "comment_updated_at": "2026-09-02T07:10:31Z",
-      "comment_body_sha256": "6ccc7d10ac36bf95828fd6bc73780bb38ad73bfed5d02c43345a31f127596ff4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135798,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T07:11:30.970Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-rename-redacted-sentinel-135649",
-        "head_sha": "9bbc914ed77966468519ead1d1fb0241554685a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136085:5505871548:2026-09-02T07:10:52Z:clawsweeper_needs_human",
       "comment_id": "5505871548",
@@ -33188,6 +33141,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-136200",
         "head_sha": "d3376b66904729489939dcd98b55959e9a6c18c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1061:5508569781:2026-09-02T11:06:20Z:clawsweeper_needs_human",
+      "comment_id": "5508569781",
+      "comment_version_key": "5508569781:2026-09-02T11:06:20Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1061#issuecomment-5508569781",
+      "comment_created_at": "2026-09-02T11:06:20Z",
+      "comment_updated_at": "2026-09-02T11:06:20Z",
+      "comment_body_sha256": "e7073b0410beac603082f3c93c96fe9830a958be27f8646d2cd54f9fce616e4c",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1061,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until the v0.38.2 GHCR tag is published and verified, the new version-specific container command could direct users to an unavailable image. (sha=250237e8ba1deaeac84214f79c187dc0c82ae3d1)",
+      "expected_head_sha": "250237e8ba1deaeac84214f79c187dc0c82ae3d1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T11:07:27.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/docs-release-0.38.2",
+        "head_sha": "250237e8ba1deaeac84214f79c187dc0c82ae3d1",
         "cluster_id": null,
         "job_path": null
       }
