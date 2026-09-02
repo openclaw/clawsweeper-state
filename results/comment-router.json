@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:52:55.614Z",
+  "updated_at": "2026-09-02T23:53:01.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134434:5516021452:2026-09-02T20:34:43Z:re_review",
-      "comment_id": "5516021452",
-      "comment_version_key": "5516021452:2026-09-02T20:34:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134434#issuecomment-5516021452",
-      "comment_created_at": "2026-09-02T20:34:43Z",
-      "comment_updated_at": "2026-09-02T20:34:43Z",
-      "comment_body_sha256": "c5dd6688e321d2beb8eddfbd83b188821fbba62eb8972a7de4dbca427c414483",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134434,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head 667b7376d5d509b1fa6e352f6fbbe65920ef25b3: refreshed real gateway receipt after final compatibility fix. service evidence is now literal current-head; ui chromium proof remains the only local host blocker",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T20:35:50.950Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/automation-grouping-tagging",
-        "head_sha": "667b7376d5d509b1fa6e352f6fbbe65920ef25b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5390456578:2026-08-24T03:43:46Z:re_review",
       "comment_id": "5390456578",
@@ -32677,6 +32630,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-136710-schema-reload-help",
         "head_sha": "7d7be73aacbb89b6c4768a393802b5dc2271197a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133366:5469819784:2026-09-02T23:51:27Z:clawsweeper_needs_human",
+      "comment_id": "5469819784",
+      "comment_version_key": "5469819784:2026-09-02T23:51:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133366#issuecomment-5469819784",
+      "comment_created_at": "2026-08-30T16:15:52Z",
+      "comment_updated_at": "2026-09-02T23:51:27Z",
+      "comment_body_sha256": "68049060f8f95ed9d3f8915de3f3f17a6242eaf2626d7ff84c850d547459e1ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133366,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the default maxEntries outcome for existing installations from deletion to archival, which can retain session state until later disk-budget cleanup. (sha=812f45b1c3c1611d7f305c6c5c6460cd909dc169)",
+      "expected_head_sha": "812f45b1c3c1611d7f305c6c5c6460cd909dc169",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T23:53:01.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-session-cap-default",
+        "head_sha": "812f45b1c3c1611d7f305c6c5c6460cd909dc169",
         "cluster_id": null,
         "job_path": null
       }
