@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:22:37.339Z",
+  "updated_at": "2026-09-02T18:25:09.032Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123180:5285532433:2026-09-02T13:58:15Z:clawsweeper_auto_repair",
-      "comment_id": "5285532433",
-      "comment_version_key": "5285532433:2026-09-02T13:58:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123180#issuecomment-5285532433",
-      "comment_created_at": "2026-08-13T19:39:20Z",
-      "comment_updated_at": "2026-09-02T13:58:15Z",
-      "comment_body_sha256": "389e366743618e7a564db8156dc87855b1686301757e164370f90200a81dae5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123180,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0b9b867a3f51ee9eab4a9b64f9371d8f676566bc)",
-      "expected_head_sha": "0b9b867a3f51ee9eab4a9b64f9371d8f676566bc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T14:00:40.399Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/test-hotspot-round-35",
-        "head_sha": "0b9b867a3f51ee9eab4a9b64f9371d8f676566bc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125810:5328382625:2026-09-02T13:57:33Z:clawsweeper_auto_repair",
       "comment_id": "5328382625",
@@ -32850,6 +32817,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136506:5514346649:2026-09-02T18:23:56Z:clawsweeper_needs_human",
+      "comment_id": "5514346649",
+      "comment_version_key": "5514346649:2026-09-02T18:23:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136506#issuecomment-5514346649",
+      "comment_created_at": "2026-09-02T18:23:56Z",
+      "comment_updated_at": "2026-09-02T18:23:56Z",
+      "comment_body_sha256": "9f576c1c75a9e8fe972ac87bc21971d9c7f2e054d1a30dfe5220c666fefbd4da",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136506,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the realtime handler, whose new check runs before call lookup and bridge creation; the supplied evidence is a l... (sha=d9f263a22f026c87c3c7de5678d93b6337334992)",
+      "expected_head_sha": "d9f263a22f026c87c3c7de5678d93b6337334992",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:25:09.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-989",
+        "head_sha": "d9f263a22f026c87c3c7de5678d93b6337334992",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
