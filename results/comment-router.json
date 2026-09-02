@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T11:03:11.702Z",
+  "updated_at": "2026-09-02T11:03:21.538Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135829:5503644381:2026-09-02T07:07:39Z:clawsweeper_needs_human",
-      "comment_id": "5503644381",
-      "comment_version_key": "5503644381:2026-09-02T07:07:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135829#issuecomment-5503644381",
-      "comment_created_at": "2026-09-02T02:57:24Z",
-      "comment_updated_at": "2026-09-02T07:07:39Z",
-      "comment_body_sha256": "13602a9de9c9c00c9364d09f9e540142bc53b00ce362d16d073435e082ea8fd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135829,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Review limitation: current-main source blobs could not be fetched in this environment, so this review cannot independently rule out later overlapping main-branch work. (sha=4c85530878c16917dcfd97c60f6d65dbd5f68606)",
-      "expected_head_sha": "4c85530878c16917dcfd97c60f6d65dbd5f68606",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T07:08:32.650Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-legacy-schedule-payload-validation",
-        "head_sha": "4c85530878c16917dcfd97c60f6d65dbd5f68606",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136080:5505843682:2026-09-02T07:08:07Z:clawsweeper_auto_repair",
       "comment_id": "5505843682",
@@ -33177,6 +33144,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136151:5508525563:2026-09-02T11:02:25Z:re_review",
+      "comment_id": "5508525563",
+      "comment_version_key": "5508525563:2026-09-02T11:02:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136151#issuecomment-5508525563",
+      "comment_created_at": "2026-09-02T11:02:25Z",
+      "comment_updated_at": "2026-09-02T11:02:25Z",
+      "comment_body_sha256": "5ff94b560ccf4063b4758df9f16c866d36cbe5a3900c8607ff82d0b27301f3f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136151,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T11:03:18.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sanitize-gchat-labeled-url",
+        "head_sha": "051ded11bcd509676f0370d8597f7b28771f4d04",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
