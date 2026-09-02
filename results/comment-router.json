@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:04:34.901Z",
+  "updated_at": "2026-09-02T12:04:52.813Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1351:5506475358:2026-09-02T08:05:23Z:clawsweeper_needs_human",
-      "comment_id": "5506475358",
-      "comment_version_key": "5506475358:2026-09-02T08:05:23Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1351#issuecomment-5506475358",
-      "comment_created_at": "2026-09-02T08:05:23Z",
-      "comment_updated_at": "2026-09-02T08:05:23Z",
-      "comment_body_sha256": "18f3ff79641bf7d9d6f05216a31d31c7f27d7f1445b80c126b32b29bea9ec2a3",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - This modifies the security-adjacent review-admission boundary: an incorrect digest or path binding could allow an unintended scanner finding to proceed, so the current full-check resu... (sha=1dc7cf26c7e2937e97fa9bc15a3aa4def38f6ead)",
-      "expected_head_sha": "1dc7cf26c7e2937e97fa9bc15a3aa4def38f6ead",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T08:06:38.085Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/review-config-fixtures-135851-current",
-        "head_sha": "1dc7cf26c7e2937e97fa9bc15a3aa4def38f6ead",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:92230:5506495544:2026-09-02T08:07:11Z:re_review",
       "comment_id": "5506495544",
@@ -32918,6 +32885,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T12:04:34.901Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136277:5509220385:2026-09-02T12:03:42Z:re_review",
+      "comment_id": "5509220385",
+      "comment_version_key": "5509220385:2026-09-02T12:03:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136277#issuecomment-5509220385",
+      "comment_created_at": "2026-09-02T12:03:42Z",
+      "comment_updated_at": "2026-09-02T12:03:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136277,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T12:04:50.094Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/mobile-remote-access-corrections",
+        "head_sha": "3c03b9177c2fbada225535145c32c695ed18baf2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
