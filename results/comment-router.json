@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T14:32:29.722Z",
+  "updated_at": "2026-09-02T14:32:36.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135016:5507693379:2026-09-02T09:50:23Z:re_review",
-      "comment_id": "5507693379",
-      "comment_version_key": "5507693379:2026-09-02T09:50:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135016#issuecomment-5507693379",
-      "comment_created_at": "2026-09-02T09:50:23Z",
-      "comment_updated_at": "2026-09-02T09:50:23Z",
-      "comment_body_sha256": "9f4a6a6cc501795fb543244a9684f0efc97f445bda1760458ef3e5f2a3066299",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135016,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T10:00:43.740Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-followup",
-        "head_sha": "6a76edc3e1520da7fb2aeb46a6a386898401445c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135016:5491175509:2026-09-01T08:28:59Z:re_review",
       "comment_id": "5491175509",
@@ -32510,6 +32463,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T14:32:29.722Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136331:5510531710:2026-09-02T14:31:28Z:clawsweeper_needs_human",
+      "comment_id": "5510531710",
+      "comment_version_key": "5510531710:2026-09-02T14:31:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136331#issuecomment-5510531710",
+      "comment_created_at": "2026-09-02T13:45:19Z",
+      "comment_updated_at": "2026-09-02T14:31:28Z",
+      "comment_body_sha256": "3fe58c0c3ba72f4a401ff3387b89734b4516ae521007d26a48d93e655bc32aff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes compatibility-sensitive OAuth configuration projection for existing CLI-agent setups; the selected-server join must continue to keep native discovery and each child adapt... (sha=6102d60fafd4cbcd0d98873e98173878abb5e40f)",
+      "expected_head_sha": "6102d60fafd4cbcd0d98873e98173878abb5e40f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T14:32:36.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-mcp-oauth-runtime-projection",
+        "head_sha": "6102d60fafd4cbcd0d98873e98173878abb5e40f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
