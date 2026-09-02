@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T15:33:11.454Z",
+  "updated_at": "2026-09-02T15:33:48.550Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90745:5460311872:2026-08-29T04:23:25Z:re_review",
-      "comment_id": "5460311872",
-      "comment_version_key": "5460311872:2026-08-29T04:23:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-5460311872",
-      "comment_created_at": "2026-08-29T04:23:25Z",
-      "comment_updated_at": "2026-08-29T04:23:25Z",
-      "comment_body_sha256": "675550245d7dcce8233e92c96bdd527bbc3745c00d4962d44fc577d4a46f8db6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90745,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T10:55:27.675Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:90745:5460415496:2026-08-29T04:49:18Z:re_review",
       "comment_id": "5460415496",
@@ -32472,6 +32445,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T15:33:11.454Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136255:5508566940:2026-09-02T15:29:34Z:clawsweeper_needs_human",
+      "comment_id": "5508566940",
+      "comment_version_key": "5508566940:2026-09-02T15:29:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136255#issuecomment-5508566940",
+      "comment_created_at": "2026-09-02T11:06:05Z",
+      "comment_updated_at": "2026-09-02T15:29:34Z",
+      "comment_body_sha256": "be8b53cdad39df96972f96b319c4fda8942fba1e7c32708e01d03b0e013e7289",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136255,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is getMessageFeishu, called by the inbound parent-quote path before agent context construction. The new test drive... (sha=498339e51a355e4d24d4e77b974a359e04d04bd8)",
+      "expected_head_sha": "498339e51a355e4d24d4e77b974a359e04d04bd8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T15:33:48.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-136200",
+        "head_sha": "498339e51a355e4d24d4e77b974a359e04d04bd8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
