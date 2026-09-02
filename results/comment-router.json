@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:06:58.501Z",
+  "updated_at": "2026-09-02T02:06:59.634Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135567:5501333753:2026-09-01T22:33:55Z:re_review",
-      "comment_id": "5501333753",
-      "comment_version_key": "5501333753:2026-09-01T22:33:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135567#issuecomment-5501333753",
-      "comment_created_at": "2026-09-01T22:33:55Z",
-      "comment_updated_at": "2026-09-01T22:33:55Z",
-      "comment_body_sha256": "70516a7dc22b41311cb26cb30ebbf707e9e8f9b64b9406564bb210907e45c3cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135567,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the session-expired message fallback is now scoped to claude-cli (prefix-bound pattern), with a new non-claude negative regression proving other providers keep their own recovery path",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T22:41:35.198Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-410-session-expired",
-        "head_sha": "106170d0f40d55df9a4546b1452405bbc919a3b4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1283:5501396835:2026-09-01T22:40:55Z:clawsweeper_needs_human",
       "comment_id": "5501396835",
@@ -32859,6 +32812,39 @@
         "kind": "pull_request",
         "branch": "fb82-bundledext",
         "head_sha": "fd90264ee991432ea2d58215e9a7a09e98e83e96",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135766:5503051496:2026-09-02T02:05:49Z:clawsweeper_needs_human",
+      "comment_id": "5503051496",
+      "comment_version_key": "5503051496:2026-09-02T02:05:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135766#issuecomment-5503051496",
+      "comment_created_at": "2026-09-02T01:40:12Z",
+      "comment_updated_at": "2026-09-02T02:05:49Z",
+      "comment_body_sha256": "256ab03b697c62a1225b5e41bcfdba864cf920e4b851434c0addda0be6077b95",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new request, headers, and success-payload parser depend on an external xAI billing contract; available live evidence proves only the redacted invalid-token response, while a succe... (sha=42ca5caa8f58fa33ce4a0cd4c880869575405446)",
+      "expected_head_sha": "42ca5caa8f58fa33ce4a0cd4c880869575405446",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:06:59.634Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/supergrok-usage-stats",
+        "head_sha": "1ddea885315541bb967aa63e2a2d69b27c068bd2",
         "cluster_id": null,
         "job_path": null
       }
