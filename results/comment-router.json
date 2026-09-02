@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:17:30.633Z",
+  "updated_at": "2026-09-02T01:17:38.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130894:5500749600:2026-09-01T21:34:58Z:re_review",
-      "comment_id": "5500749600",
-      "comment_version_key": "5500749600:2026-09-01T21:34:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130894#issuecomment-5500749600",
-      "comment_created_at": "2026-09-01T21:34:58Z",
-      "comment_updated_at": "2026-09-01T21:34:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130894,
-      "author": "sliverp",
-      "author_id": 38134380,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T21:36:35.484Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/legacyNpmSpecs",
-        "head_sha": "82b51c3f3de299812a44e6a5eee1d3d54ec5b3cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135542:5500756458:2026-09-01T21:35:37Z:clawsweeper_auto_repair",
       "comment_id": "5500756458",
@@ -32366,6 +32319,39 @@
         "kind": "pull_request",
         "branch": "steipete/interesting-noyce-7f07a4",
         "head_sha": "ecd2f70a35963cf356018dc4ce117f0f3a1f02cd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135748:5502869699:2026-09-02T01:16:41Z:clawsweeper_needs_human",
+      "comment_id": "5502869699",
+      "comment_version_key": "5502869699:2026-09-02T01:16:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135748#issuecomment-5502869699",
+      "comment_created_at": "2026-09-02T01:16:41Z",
+      "comment_updated_at": "2026-09-02T01:16:41Z",
+      "comment_body_sha256": "d1cb3ec156db765c8cf0f014a90746cd6832b026865b8dfa9dfcdbc81699f1ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135748,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production path is dashboard widget_put through board.widget.put to SqliteBoardStore; the body describes tests only, without inspec... (sha=67499088303ff17d22e622f858ee646080481326)",
+      "expected_head_sha": "67499088303ff17d22e622f858ee646080481326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T01:17:38.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/board-widget-put-replaces-record",
+        "head_sha": "67499088303ff17d22e622f858ee646080481326",
         "cluster_id": null,
         "job_path": null
       }
