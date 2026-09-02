@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:31:56.544Z",
+  "updated_at": "2026-09-02T08:33:14.107Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135794:5503330010:2026-09-02T04:40:15Z:clawsweeper_needs_human",
-      "comment_id": "5503330010",
-      "comment_version_key": "5503330010:2026-09-02T04:40:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135794#issuecomment-5503330010",
-      "comment_created_at": "2026-09-02T02:15:53Z",
-      "comment_updated_at": "2026-09-02T04:40:15Z",
-      "comment_body_sha256": "d74912fe401ff571528b369245050d4f73679f72528d21b24733b3e6ecfae902",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135794,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The linked report requested automatic recording after an unavailable Dictation tap, while this PR intentionally requires an explicit second tap; that product interaction choice needs... (sha=47e3c1ff268a2668a7fc8bd2679560ce943789f7)",
-      "expected_head_sha": "47e3c1ff268a2668a7fc8bd2679560ce943789f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T04:49:35.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/voice-android-dictation-20260901",
-        "head_sha": "47e3c1ff268a2668a7fc8bd2679560ce943789f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135825:5503622453:2026-09-02T04:48:04Z:clawsweeper_needs_human",
       "comment_id": "5503622453",
@@ -32541,6 +32508,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135465:5506288237:2026-09-02T08:32:21Z:re_review",
+      "comment_id": "5506288237",
+      "comment_version_key": "5506288237:2026-09-02T08:32:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135465#issuecomment-5506288237",
+      "comment_created_at": "2026-09-02T07:49:14Z",
+      "comment_updated_at": "2026-09-02T08:32:21Z",
+      "comment_body_sha256": "33fa8550ea0b825ff6b2ca777ba83f1ba6b830ce6b01cdee695d8d3e5eef92bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135465,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T08:33:10.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-failure-report",
+        "head_sha": "73088df68afd2a2b198a9424176339872022d868",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
