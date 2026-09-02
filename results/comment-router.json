@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:00:03.454Z",
+  "updated_at": "2026-09-02T23:00:39.241Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128872:5515287726:2026-09-02T19:39:00Z:re_review",
-      "comment_id": "5515287726",
-      "comment_version_key": "5515287726:2026-09-02T19:39:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128872#issuecomment-5515287726",
-      "comment_created_at": "2026-09-02T19:39:00Z",
-      "comment_updated_at": "2026-09-02T19:39:00Z",
-      "comment_body_sha256": "6f3eced4d22c387e1f716372268c3feee3eae6749a7c5cd23f3c671523241ee0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128872,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T19:39:58.373Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/group-message-tool-only-prompt-clarity",
-        "head_sha": "8ee597cc9bf341c1a165f79597234a1d77fc3768",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136390:5515311712:2026-09-02T19:40:57Z:re_review",
       "comment_id": "5515311712",
@@ -32645,6 +32598,39 @@
         "kind": "pull_request",
         "branch": "feat/meta-muse-spark-1.3",
         "head_sha": "82ec8e229c452afe692748c4715ea7bc6d3956dd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136706:5517599704:2026-09-02T22:59:44Z:clawsweeper_needs_human",
+      "comment_id": "5517599704",
+      "comment_version_key": "5517599704:2026-09-02T22:59:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136706#issuecomment-5517599704",
+      "comment_created_at": "2026-09-02T22:59:44Z",
+      "comment_updated_at": "2026-09-02T22:59:44Z",
+      "comment_body_sha256": "a9cd0aa39dae0ebf41db7eaffdadd498913129b0f41ce6a4a3dcaf643a8ee7ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied live status/title claims do not demonstrate that an allowed Stop reaches the intended abo...; Review finding: [P1] Authorize Stop before suppressing stream delivery — extensions/slack/src/monitor/events/agent.ts:63 - [medium] Pre-authorization Stop suppresses reply deliver... (sha=f56847f714ba3952c8694721146c072afec579b1)",
+      "expected_head_sha": "f56847f714ba3952c8694721146c072afec579b1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T23:00:39.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/slack-agent-sessions",
+        "head_sha": "f56847f714ba3952c8694721146c072afec579b1",
         "cluster_id": null,
         "job_path": null
       }
