@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135649",
+  "mode": "autonomous",
+  "run_id": "33573802206",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33573802206",
+  "head_sha": "311b985611cf2036bd23ca54420996f0ce5b81c5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135649.md",
+  "published_at": "2026-09-02T00:27:51.818Z",
+  "canonical": "#135649",
+  "canonical_issue": "#135649",
+  "canonical_pr": null,
+  "summary": "#135649 remains the canonical open bug. Current main contains the reported autosave path, but this worker cannot prepare a valid PR: the checkout is read-only, dependencies are absent, and required sibling Codex source is unavailable for direct inspection.",
+  "actions": [
+    {
+      "target": "#135649",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135649",
+      "candidate_fix": null,
+      "reason": "Provision an editable checkout with dependencies and the required sibling Codex clone, then implement and validate the narrow fix."
+    },
+    {
+      "target": "#135649",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135649",
+      "candidate_fix": null,
+      "reason": "A narrow non-security PR remains appropriate once the blocked implementation environment is repaired."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and sibling ../codex source, or rerun this job in the normal ClawSweeper execution environment."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
