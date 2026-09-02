@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T09:27:51.511Z",
+  "updated_at": "2026-09-02T09:27:55.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:75299:4924091236:2026-07-09T10:29:44Z:re_review",
-      "comment_id": "4924091236",
-      "comment_version_key": "4924091236:2026-07-09T10:29:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/75299#issuecomment-4924091236",
-      "comment_created_at": "2026-07-09T10:29:44Z",
-      "comment_updated_at": "2026-07-09T10:29:44Z",
-      "comment_body_sha256": "ff7680f9d55d551554d233d4657489a75d0a2813d36e89030f2c7b185933b23e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 75299,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:30:50.984Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:75299:5035845139:2026-07-21T15:22:09Z:re_review",
       "comment_id": "5035845139",
@@ -33154,6 +33127,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3565:5481122728:2026-09-02T09:23:17Z:clawsweeper_needs_human",
+      "comment_id": "5481122728",
+      "comment_version_key": "5481122728:2026-09-02T09:23:17Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3565#issuecomment-5481122728",
+      "comment_created_at": "2026-08-31T16:14:33Z",
+      "comment_updated_at": "2026-09-02T09:23:17Z",
+      "comment_body_sha256": "4f76a58edaf664421d1b9e89af1d84131d1c0b6e49b2d87a29118227800255c1",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3565,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging while the unit and browser suites fail could leave the repository’s build and test automation unusable; the supplied results do not yet isolate which of the 13 updates is resp... (sha=ea86d7cc145e6bc2e40129baa17adf4b74d7de36)",
+      "expected_head_sha": "ea86d7cc145e6bc2e40129baa17adf4b74d7de36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T09:27:55.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-185a7e76b0",
+        "head_sha": "ea86d7cc145e6bc2e40129baa17adf4b74d7de36",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
