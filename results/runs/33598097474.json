@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-94597",
+  "mode": "autonomous",
+  "run_id": "33598097474",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33598097474",
+  "head_sha": "68c04baa2229feb06f3630394ff7fbf3e07c0dea",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-94597.md",
+  "published_at": "2026-09-02T06:43:21.475Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/94597",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/94597",
+  "canonical_pr": null,
+  "summary": "#94597 remains the open canonical bug. The local checkout is a shallow, stale b351e32 and cannot access preflight main e467eedc; it is read-only and sibling ../codex is absent, so no branch/test/PR can be safely produced here. A narrow new-PR artifact is ready for a writable executor after refreshing main and provisioning the required Codex source.",
+  "actions": [
+    {
+      "target": "#94597",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#94597",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by stale/unavailable required source and read-only checkout, not by an unresolved product decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-94597",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#94597",
+      "candidate_fix": null,
+      "reason": "A refreshed writable executor can make the owner-local change and regression without config, schema, dependency, or changelog work."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
