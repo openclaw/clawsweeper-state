@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:39:49.762Z",
+  "updated_at": "2026-09-02T18:40:00.459Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135895:5511203213:2026-09-02T14:32:06Z:re_review",
-      "comment_id": "5511203213",
-      "comment_version_key": "5511203213:2026-09-02T14:32:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-5511203213",
-      "comment_created_at": "2026-09-02T14:32:06Z",
-      "comment_updated_at": "2026-09-02T14:32:06Z",
-      "comment_body_sha256": "ecd87f7092100c77f2f7e5262080c8ee18d5f32215c1e6960c986f7a03224e74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135895,
-      "author": "lordratner",
-      "author_id": 49489398,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T14:33:06.431Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nextcloud-talk-inbound-media",
-        "head_sha": "2ce10f8b61386da1882a0fbfb6f8419cce795908",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135486:5499332652:2026-09-02T14:32:19Z:clawsweeper_needs_human",
       "comment_id": "5499332652",
@@ -32933,6 +32886,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-990",
         "head_sha": "b46538c9814421e57bb391644dfe56e72374cffa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136476:5513723810:2026-09-02T18:38:47Z:clawsweeper_auto_repair",
+      "comment_id": "5513723810",
+      "comment_version_key": "5513723810:2026-09-02T18:38:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136476#issuecomment-5513723810",
+      "comment_created_at": "2026-09-02T17:35:00Z",
+      "comment_updated_at": "2026-09-02T18:38:47Z",
+      "comment_body_sha256": "f56dfea16e0a5e36a0a77a38ef8f95ba263866a1a522fe73c8ac34a58ca7176d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136476,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d80e1b9202ee83a90b5d6011cf9be1edb83566a2)",
+      "expected_head_sha": "d80e1b9202ee83a90b5d6011cf9be1edb83566a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:40:00.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-orphan-attribution",
+        "head_sha": "d80e1b9202ee83a90b5d6011cf9be1edb83566a2",
         "cluster_id": null,
         "job_path": null
       }
