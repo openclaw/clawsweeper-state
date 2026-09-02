@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:41:05.185Z",
+  "updated_at": "2026-09-02T07:41:35.539Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135798:5504082457:2026-09-02T03:51:23Z:re_review",
-      "comment_id": "5504082457",
-      "comment_version_key": "5504082457:2026-09-02T03:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135798#issuecomment-5504082457",
-      "comment_created_at": "2026-09-02T03:51:23Z",
-      "comment_updated_at": "2026-09-02T03:51:23Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135798,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T03:52:11.020Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-rename-redacted-sentinel-135649",
-        "head_sha": "1368478bef85836f6be547d367157eebda6922ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130894:5498546884:2026-09-01T18:31:03Z:re_review",
       "comment_id": "5498546884",
@@ -32358,6 +32311,39 @@
         "kind": "pull_request",
         "branch": "fix/mattermost-question-actions",
         "head_sha": "523038b6ce3ab2cc31c2247750c7e2767b3b5e41",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136112:5506184685:2026-09-02T07:40:24Z:clawsweeper_needs_human",
+      "comment_id": "5506184685",
+      "comment_version_key": "5506184685:2026-09-02T07:40:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136112#issuecomment-5506184685",
+      "comment_created_at": "2026-09-02T07:40:24Z",
+      "comment_updated_at": "2026-09-02T07:40:24Z",
+      "comment_body_sha256": "ffc7c1c56fd86f7357882e772d3c7cc5745cd41a776e9700e75b3b4d194ef298",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136112,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes release automation authorization by accepting a historical failed attempt in one narrow retry case; attach a controlled, non-publishing GitHub Actions retry trace before... (sha=551a6e672dcca83cfe287f3cb8744d1ef9bc5812)",
+      "expected_head_sha": "551a6e672dcca83cfe287f3cb8744d1ef9bc5812",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T07:41:35.539Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-workflow-recovery-20260902",
+        "head_sha": "551a6e672dcca83cfe287f3cb8744d1ef9bc5812",
         "cluster_id": null,
         "job_path": null
       }
