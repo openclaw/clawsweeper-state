@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T13:43:28.570Z",
+  "updated_at": "2026-09-02T13:43:38.724Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135455:5498908988:2026-09-02T09:26:28Z:clawsweeper_needs_human",
-      "comment_id": "5498908988",
-      "comment_version_key": "5498908988:2026-09-02T09:26:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135455#issuecomment-5498908988",
-      "comment_created_at": "2026-09-01T18:59:40Z",
-      "comment_updated_at": "2026-09-02T09:26:28Z",
-      "comment_body_sha256": "48d5b05cf24242e162e54575b795474ba4c2200c6a569cac54727f517567b697",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135455,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production owner is createGitBackup, whose warning is emitted and persisted by backupGitCreateCommand; the exact-head tests inject a failed... (sha=80453303367d6ffa311979b80b8dd343516aadf7)",
-      "expected_head_sha": "80453303367d6ffa311979b80b8dd343516aadf7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:30:35.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/git-backup-command-diagnostics",
-        "head_sha": "80453303367d6ffa311979b80b8dd343516aadf7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135467:5499745791:2026-09-02T09:26:59Z:clawsweeper_needs_human",
       "comment_id": "5499745791",
@@ -32500,6 +32467,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T13:43:28.570Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136330:5510489719:2026-09-02T13:42:19Z:clawsweeper_auto_repair",
+      "comment_id": "5510489719",
+      "comment_version_key": "5510489719:2026-09-02T13:42:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136330#issuecomment-5510489719",
+      "comment_created_at": "2026-09-02T13:42:19Z",
+      "comment_updated_at": "2026-09-02T13:42:19Z",
+      "comment_body_sha256": "58d361e39d2e71298a1d1c027f1fef3c2c29c9f0067f6caf61ad8a8a641a7d35",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136330,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=1ec0d27d605e9acac0120cbb375a9d0a81d14bb8)",
+      "expected_head_sha": "1ec0d27d605e9acac0120cbb375a9d0a81d14bb8",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-02T13:43:38.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/zalo-polling-ingress-journal",
+        "head_sha": "1ec0d27d605e9acac0120cbb375a9d0a81d14bb8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
