@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T16:19:38.148Z",
+  "updated_at": "2026-09-02T16:19:45.312Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103553:4934897631:2026-09-02T11:55:38Z:clawsweeper_auto_repair",
-      "comment_id": "4934897631",
-      "comment_version_key": "4934897631:2026-09-02T11:55:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103553#issuecomment-4934897631",
-      "comment_created_at": "2026-07-10T11:39:00Z",
-      "comment_updated_at": "2026-09-02T11:55:38Z",
-      "comment_body_sha256": "613aa3cd23371f8c83108e2e4abbba392cd5a77dcf5b17d2fb6d9e55cf2b555c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103553,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T12:10:31.571Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-activity-drain",
-        "head_sha": "948e13811904e91f039b1db765c46bcd33c71681",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106818:4963055124:2026-09-02T12:05:30Z:clawsweeper_needs_human",
       "comment_id": "4963055124",
@@ -32801,6 +32768,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136388:5512725879:2026-09-02T16:18:44Z:re_review",
+      "comment_id": "5512725879",
+      "comment_version_key": "5512725879:2026-09-02T16:18:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136388#issuecomment-5512725879",
+      "comment_created_at": "2026-09-02T16:18:44Z",
+      "comment_updated_at": "2026-09-02T16:18:44Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136388,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T16:19:42.439Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-security-fast-local-hooks",
+        "head_sha": "979ed7d6108dea1b34a6f5dc281a8bef9fd02145",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
