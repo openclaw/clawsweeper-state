@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:37:12.983Z",
+  "updated_at": "2026-09-02T02:38:09.104Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135256:5501501675:2026-09-01T22:53:07Z:re_review",
-      "comment_id": "5501501675",
-      "comment_version_key": "5501501675:2026-09-01T22:53:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135256#issuecomment-5501501675",
-      "comment_created_at": "2026-09-01T22:53:07Z",
-      "comment_updated_at": "2026-09-01T22:53:07Z",
-      "comment_body_sha256": "6bcb15acab802db316f3031fd507aafcac3418d4d82b58b3349eddaebed26ce5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135256,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T22:54:06.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workspace-wx-eperm-exists",
-        "head_sha": "743d20a5cfe4452a95f9c5fc4e402996173606ac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122586:5265943867:2026-09-01T22:53:11Z:clawsweeper_auto_repair",
       "comment_id": "5265943867",
@@ -33059,6 +33012,39 @@
         "kind": "pull_request",
         "branch": "fix/chat-queue-false-storage-error",
         "head_sha": "5e28b686de9eb8108d09165cca4cff5ce738d362",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135439:5499493863:2026-09-02T02:37:06Z:clawsweeper_needs_human",
+      "comment_id": "5499493863",
+      "comment_version_key": "5499493863:2026-09-02T02:37:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135439#issuecomment-5499493863",
+      "comment_created_at": "2026-09-01T19:47:02Z",
+      "comment_updated_at": "2026-09-02T02:37:06Z",
+      "comment_body_sha256": "ee46edbb3625a07e3048c3ca47444b9e96a66573fc7e974a61640c7d1a54012c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135439,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Exact-head CI is still in progress, so the full current matrix has not independently confirmed the shutdown-sensitive wrapper change. (sha=1df652fbe71d6a47f278af8ca3ba718b222e3a16)",
+      "expected_head_sha": "1df652fbe71d6a47f278af8ca3ba718b222e3a16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:38:09.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-vitest-shutdown-20260901",
+        "head_sha": "1df652fbe71d6a47f278af8ca3ba718b222e3a16",
         "cluster_id": null,
         "job_path": null
       }
