@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:20:30.705Z",
+  "updated_at": "2026-09-02T08:21:58.508Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135867:5504442071:2026-09-02T04:36:40Z:re_review",
-      "comment_id": "5504442071",
-      "comment_version_key": "5504442071:2026-09-02T04:36:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135867#issuecomment-5504442071",
-      "comment_created_at": "2026-09-02T04:36:40Z",
-      "comment_updated_at": "2026-09-02T04:36:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135867,
-      "author": "goslingmanagment",
-      "author_id": 220680726,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T04:37:28.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-fallback-model-catalog",
-        "head_sha": "cae21f05103fd1b9f807597cec99f95977b76c97",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135912:5504444318:2026-09-02T04:36:55Z:clawsweeper_auto_repair",
       "comment_id": "5504444318",
@@ -32524,6 +32477,39 @@
         "kind": "pull_request",
         "branch": "cleanup/automations-rename-inventory",
         "head_sha": "7f65829012c398e559e260407910282144d4dea6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136018:5505278642:2026-09-02T08:20:49Z:clawsweeper_needs_human",
+      "comment_id": "5505278642",
+      "comment_version_key": "5505278642:2026-09-02T08:20:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136018#issuecomment-5505278642",
+      "comment_created_at": "2026-09-02T06:09:08Z",
+      "comment_updated_at": "2026-09-02T08:20:49Z",
+      "comment_body_sha256": "80448bfc0c757e54200259d6d9edb1e1e42627075c493e5722320704daa474ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136018,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The modifier change depends on the native CUA driver's platform-specific vocabulary; exact-head macOS and Windows CUA 0.22 behavior remains pending in the PR body. (sha=1b43b57fe3334e1175416901f4a97613e6edecc2)",
+      "expected_head_sha": "1b43b57fe3334e1175416901f4a97613e6edecc2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T08:21:58.508Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cua-macos-command-modifiers",
+        "head_sha": "1b43b57fe3334e1175416901f4a97613e6edecc2",
         "cluster_id": null,
         "job_path": null
       }
