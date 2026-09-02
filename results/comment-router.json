@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:43:30.617Z",
+  "updated_at": "2026-09-02T08:44:24.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5314262838:2026-08-17T09:29:04Z:re_review",
-      "comment_id": "5314262838",
-      "comment_version_key": "5314262838:2026-08-17T09:29:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5314262838",
-      "comment_created_at": "2026-08-17T09:29:04Z",
-      "comment_updated_at": "2026-08-17T09:29:04Z",
-      "comment_body_sha256": "44c6816dfe6300a2fbc02fda07bc6e207a771ba8c8042927c606324c4011d3d7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:00:55.465Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5314334432:2026-08-17T09:35:45Z:re_review",
       "comment_id": "5314334432",
@@ -32573,6 +32546,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T08:43:30.617Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136161:5506902718:2026-09-02T08:43:25Z:clawsweeper_needs_human",
+      "comment_id": "5506902718",
+      "comment_version_key": "5506902718:2026-09-02T08:43:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136161#issuecomment-5506902718",
+      "comment_created_at": "2026-09-02T08:43:25Z",
+      "comment_updated_at": "2026-09-02T08:43:25Z",
+      "comment_body_sha256": "8b65edd9bf950099cc89b33722fb145dc100f5d4332078c83760c6590a6e8c64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new mutex holds while the Room-backed load is in progress, so a stalled older publication can delay newer outbox presentation; exact-head Android reconnect, gateway-switch, and co... (sha=079471cb47e118b0430bc0fce77e5b746c0b0405)",
+      "expected_head_sha": "079471cb47e118b0430bc0fce77e5b746c0b0405",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T08:44:24.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-outbox-publication",
+        "head_sha": "079471cb47e118b0430bc0fce77e5b746c0b0405",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
