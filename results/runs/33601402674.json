@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135892",
+  "mode": "autonomous",
+  "run_id": "33601402674",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33601402674",
+  "head_sha": "904579a319c4393f18c8d42c25e840b74dbab2c0",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135892.md",
+  "published_at": "2026-09-02T08:29:46.136Z",
+  "canonical": "#135892",
+  "canonical_issue": "#135892",
+  "canonical_pr": null,
+  "summary": "#135892 remains the open canonical bug. Current main b6966bed repeats the full preference scan for every model-reference candidate. No change or PR was created: this read-only checkout lacks node_modules, and the required sibling ../codex source is absent, so the mandatory direct-Codex gate cannot be completed.",
+  "actions": [
+    {
+      "target": "#135743",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135892",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#135892",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135892",
+      "candidate_fix": null,
+      "reason": "The narrow repair is clear, but implementation and regression proof require a writable dependency-complete checkout and the mandated direct ../codex inspection."
+    },
+    {
+      "target": "#135892",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135892",
+      "candidate_fix": null,
+      "reason": "Prepared narrow replacement path; do not open an empty PR."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies installed and a readable sibling ../codex checkout so the required direct-Codex gate, pre-fix regression, patch, and validation can run."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

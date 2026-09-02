@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135892"
 mode: "autonomous"
-run_id: "33592218268"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33592218268"
-head_sha: "43553c96ab2fcd03b7599eb67cd49e2507bb92ea"
-workflow_conclusion: "failure"
+run_id: "33601402674"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33601402674"
+head_sha: "904579a319c4393f18c8d42c25e840b74dbab2c0"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-02T06:17:37.482Z"
-canonical: "https://github.com/openclaw/openclaw/issues/135892"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/135892"
+published_at: "2026-09-02T08:29:46.136Z"
+canonical: "#135892"
+canonical_issue: "#135892"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-135892
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33592218268](https://github.com/openclaw/clawsweeper/actions/runs/33592218268)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33601402674](https://github.com/openclaw/clawsweeper/actions/runs/33601402674)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/135892
+Canonical: #135892
 
 ## Summary
 
-#135892 remains the canonical, source-reproducible startup performance defect. Current main passes every raw candidate into the preference scan, producing repeated full scans for model references that share one plugin. A narrow fix artifact is ready, but implementation and validation are blocked because this checkout is read-only, dependencies cannot be installed, and the required sibling ../codex source cannot be created or inspected.
+#135892 remains the open canonical bug. Current main b6966bed repeats the full preference scan for every model-reference candidate. No change or PR was created: this read-only checkout lacks node_modules, and the required sibling ../codex source is absent, so the mandatory direct-Codex gate cannot be completed.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/135892
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/135892
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #135892 | fix_needed | blocked | canonical | A writable, dependency-complete checkout with the required sibling Codex source is required before editing, demonstrating the pre-fix regression, and running the changed gate. |
-| #135743 | keep_related | planned | related | The reports share large-config startup symptoms but need separate owner-boundary repairs. |
-| cluster:issue-openclaw-openclaw-135892 | build_fix_artifact | planned | canonical | Narrow new-fix-PR plan ready for execution in a writable checkout. |
+| #135743 | keep_closed | skipped | related | Already closed; no closure action is valid. |
+| #135892 | fix_needed | blocked | canonical | The narrow repair is clear, but implementation and regression proof require a writable dependency-complete checkout and the mandated direct ../codex inspection. |
+| #135892 | build_fix_artifact | planned | canonical | Prepared narrow replacement path; do not open an empty PR. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies installed and a readable sibling ../codex checkout so the required direct-Codex gate, pre-fix regression, patch, and validation can run.
