@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:44:26.379Z",
+  "updated_at": "2026-09-02T18:44:35.983Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136363:5511269439:2026-09-02T14:36:25Z:re_review",
-      "comment_id": "5511269439",
-      "comment_version_key": "5511269439:2026-09-02T14:36:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136363#issuecomment-5511269439",
-      "comment_created_at": "2026-09-02T14:36:25Z",
-      "comment_updated_at": "2026-09-02T14:36:25Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136363,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T14:37:29.750Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/llama-managed-router-reconcile",
-        "head_sha": "9ca1fbe9afb5dd4d1e39adc360cd7fe751ca65fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135441:5511326042:2026-09-02T14:39:42Z:re_review",
       "comment_id": "5511326042",
@@ -33003,6 +32956,39 @@
         "kind": "pull_request",
         "branch": "codex/perf4-dedupe-entry",
         "head_sha": "94e42508e51d83743ff7ce9e3a690ecc52e3118d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136498:5514589756:2026-09-02T18:43:36Z:clawsweeper_needs_human",
+      "comment_id": "5514589756",
+      "comment_version_key": "5514589756:2026-09-02T18:43:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136498#issuecomment-5514589756",
+      "comment_created_at": "2026-09-02T18:43:36Z",
+      "comment_updated_at": "2026-09-02T18:43:36Z",
+      "comment_body_sha256": "6334cbdf78288263fd6ebab95e027d15dbac2436e78c9206c0249de2fcaff345",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136498,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the shared CLI parser feeding the runner’s terminal-error path; the supplied before/after harness trac... (sha=09e870b3202e438c314af2d887d2c21f59bf3ff2)",
+      "expected_head_sha": "09e870b3202e438c314af2d887d2c21f59bf3ff2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:44:35.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/136113-claude-cli-terminal-reason",
+        "head_sha": "09e870b3202e438c314af2d887d2c21f59bf3ff2",
         "cluster_id": null,
         "job_path": null
       }
