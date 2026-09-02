@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:18:46.754Z",
+  "updated_at": "2026-09-02T12:18:51.788Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135889:5506602938:2026-09-02T08:16:43Z:re_review",
-      "comment_id": "5506602938",
-      "comment_version_key": "5506602938:2026-09-02T08:16:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135889#issuecomment-5506602938",
-      "comment_created_at": "2026-09-02T08:16:43Z",
-      "comment_updated_at": "2026-09-02T08:16:43Z",
-      "comment_body_sha256": "ee30161e50f75ac840958e2c6cb38e475757d7b078c5f60d8ba2d0e92dc84ba3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135889,
-      "author": "TheArchitectit",
-      "author_id": 241862351,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T08:25:01.549Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/automation-single-pane",
-        "head_sha": "62138940cd840d49dd59bccc8d8774bc1b61e120",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93842:4726596889:2026-09-02T08:24:02Z:clawsweeper_needs_human",
       "comment_id": "4726596889",
@@ -32769,6 +32722,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-foundry-gpt-token-limits",
         "head_sha": "5f86a9affe7816f0a578ebadb51b59e0d487de49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136288:5509399851:2026-09-02T12:18:01Z:clawsweeper_needs_human",
+      "comment_id": "5509399851",
+      "comment_version_key": "5509399851:2026-09-02T12:18:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136288#issuecomment-5509399851",
+      "comment_created_at": "2026-09-02T12:18:01Z",
+      "comment_updated_at": "2026-09-02T12:18:01Z",
+      "comment_body_sha256": "8c44871fc9cb39b1672b94ea10a63d308db9dfdc48b9df69573170d2d6eb082c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136288,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is snapshot redaction, reached through Gateway config.get and consumed by the Settings → MCP map editor; the body... (sha=38b50d476e66206879179f407b08eb51fbacc1f7)",
+      "expected_head_sha": "38b50d476e66206879179f407b08eb51fbacc1f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T12:18:51.788Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-135649",
+        "head_sha": "38b50d476e66206879179f407b08eb51fbacc1f7",
         "cluster_id": null,
         "job_path": null
       }
