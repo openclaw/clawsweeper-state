@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:41:57.635Z",
+  "updated_at": "2026-09-02T23:42:06.525Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136395:5512266094:2026-09-02T18:59:15Z:clawsweeper_needs_human",
-      "comment_id": "5512266094",
-      "comment_version_key": "5512266094:2026-09-02T18:59:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136395#issuecomment-5512266094",
-      "comment_created_at": "2026-09-02T15:45:09Z",
-      "comment_updated_at": "2026-09-02T18:59:15Z",
-      "comment_body_sha256": "85e7e1b26bbc2c900828d9dc6803397a6beeb08d81c26cc3f72fe082dd739482",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136395,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The package deliberately retains two historical hashed filenames and a frozen ABI; changing or removing either before the accepted upgrade window closes could again strand an old upda... (sha=05201df7ed95df449f3968db69cfb27588194b10)",
-      "expected_head_sha": "05201df7ed95df449f3968db69cfb27588194b10",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T20:27:27.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-first-hop-bridge",
-        "head_sha": "05201df7ed95df449f3968db69cfb27588194b10",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136396:5512282681:2026-09-02T20:21:46Z:clawsweeper_needs_human",
       "comment_id": "5512282681",
@@ -32672,6 +32639,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135890:5518051027:2026-09-02T23:41:14Z:re_review",
+      "comment_id": "5518051027",
+      "comment_version_key": "5518051027:2026-09-02T23:41:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135890#issuecomment-5518051027",
+      "comment_created_at": "2026-09-02T23:41:14Z",
+      "comment_updated_at": "2026-09-02T23:41:14Z",
+      "comment_body_sha256": "9bdac23d96b378e95926eddecc8b03c66d2533dccb6b74f8077d1bb2b973f838",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135890,
+      "author": "TheArchitectit",
+      "author_id": 241862351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T23:42:04.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/automation-task-lanes",
+        "head_sha": "d09916b73bbb830fe2c0dae23e2a59f2fe117374",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
