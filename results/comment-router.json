@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-02T06:15:44.392Z",
+  "updated_at": "2026-09-02T06:14:55.521Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110917:5012628251:2026-09-02T02:03:26Z:clawsweeper_needs_human",
+      "comment_id": "5012628251",
+      "comment_version_key": "5012628251:2026-09-02T02:03:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/110917#issuecomment-5012628251",
+      "comment_created_at": "2026-07-18T19:33:31Z",
+      "comment_updated_at": "2026-09-02T02:03:26Z",
+      "comment_body_sha256": "b31b02243a19e81ca418c85de29fc3cfde5411776ca87a6ee9c6bdd69725f485",
+      "repo": "openclaw/openclaw",
+      "issue_number": 110917,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Do not send custom-endpoint keys to llmtr.com (P1)** - This enables base-URL overrides, but catalog construction invokes the builder before applying that override; the builder then requests the fixed LLMTR URL w...; Review finding: [P1] Do not send custom-endpoint keys to llmtr.com — extensions/llmtr/index.ts:36 - [high] Custom endpoint credentials reach the fixed catalog host — extensions/ll... (sha=d16aa4c262869d1833c8fe23122f155e7000d385)",
+      "expected_head_sha": "d16aa4c262869d1833c8fe23122f155e7000d385",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:15:15.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/llmtr-provider",
+        "head_sha": "d16aa4c262869d1833c8fe23122f155e7000d385",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111020:5013302283:2026-09-02T01:57:02Z:clawsweeper_auto_repair",
       "comment_id": "5013302283",
@@ -32588,39 +32621,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136023:5505328512:2026-09-02T06:14:44Z:clawsweeper_auto_repair",
-      "comment_id": "5505328512",
-      "comment_version_key": "5505328512:2026-09-02T06:14:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136023#issuecomment-5505328512",
-      "comment_created_at": "2026-09-02T06:14:44Z",
-      "comment_updated_at": "2026-09-02T06:14:44Z",
-      "comment_body_sha256": "bb3ec77058f52a5650df5389c5fc8377ce75de91a89d650ee80d38eaa4661fc0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136023,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=38240e812705dc5b9e3ed7d36f96a25319139b54)",
-      "expected_head_sha": "38240e812705dc5b9e3ed7d36f96a25319139b54",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T06:15:44.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/135881-restart-recovery-context",
-        "head_sha": "38240e812705dc5b9e3ed7d36f96a25319139b54",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
