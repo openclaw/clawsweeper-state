@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T15:02:14.672Z",
+  "updated_at": "2026-09-02T15:02:23.794Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1624:5462001752:2026-09-02T10:08:24Z:clawsweeper_needs_human",
-      "comment_id": "5462001752",
-      "comment_version_key": "5462001752:2026-09-02T10:08:24Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1624#issuecomment-5462001752",
-      "comment_created_at": "2026-08-29T11:10:41Z",
-      "comment_updated_at": "2026-09-02T10:08:24Z",
-      "comment_body_sha256": "bbb604979f166a306a535c6303d1ca04057dc398017f03fee30046bf51c30c72",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging the complete stack before the linked origin-fallback discrepancy is resolved could leave Git-overlay users with a sync path whose required runtime fallback has not been demons... (sha=6ab0515ce51c081abff4ce32f963569c018654d9)",
-      "expected_head_sha": "6ab0515ce51c081abff4ce32f963569c018654d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T10:20:25.696Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sync-transactional-overlay",
-        "head_sha": "6ab0515ce51c081abff4ce32f963569c018654d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136184:5507138872:2026-09-02T10:19:10Z:clawsweeper_auto_repair",
       "comment_id": "5507138872",
@@ -32522,6 +32489,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T15:02:14.672Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123984:5511645026:2026-09-02T15:01:04Z:re_review",
+      "comment_id": "5511645026",
+      "comment_version_key": "5511645026:2026-09-02T15:01:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123984#issuecomment-5511645026",
+      "comment_created_at": "2026-09-02T15:01:04Z",
+      "comment_updated_at": "2026-09-02T15:01:04Z",
+      "comment_body_sha256": "b65c6c2455f6ab0cf29b107cbc7486a0b48c2d3df01cff9dd4c1e05880fed193",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123984,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T15:02:20.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsean/telegram-ignore-slim",
+        "head_sha": "9ecbc278b35e21d2299305ffb0ac709397926f5c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
