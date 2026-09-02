@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136262",
+  "mode": "autonomous",
+  "run_id": "33623856737",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33623856737",
+  "head_sha": "59feb556c973b1606b6dc580b6e4bd0db6a729c1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136262.md",
+  "published_at": "2026-09-02T11:39:56.190Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136262",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136262",
+  "canonical_pr": null,
+  "summary": "#136262 remains the canonical, source-reproducible bug on current main (7ab7eb8aab504be5a0a3081882e2d3fd5e537f11). The managed completions producer appends a cumulative content replay as a bare delta; implementation is blocked because this runner is read-only, lacks dependencies, and lacks the required sibling ../codex checkout for the Codex hard gate.",
+  "actions": [
+    {
+      "target": "#136262",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136262",
+      "candidate_fix": null,
+      "reason": "A narrow producer repair is appropriate, but no branch diff, regression run, or required Codex source inspection can be completed in the read-only environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136262",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136262",
+      "candidate_fix": null,
+      "reason": "Prepared narrow fix plan for an executor with a writable checkout, dependencies, and ../codex available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
