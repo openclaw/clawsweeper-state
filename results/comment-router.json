@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T05:29:01.365Z",
+  "updated_at": "2026-09-02T05:29:33.290Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113089:5080149612:2026-07-25T19:01:21Z:re_review",
-      "comment_id": "5080149612",
-      "comment_version_key": "5080149612:2026-07-25T19:01:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5080149612",
-      "comment_created_at": "2026-07-25T19:01:21Z",
-      "comment_updated_at": "2026-07-25T19:01:21Z",
-      "comment_body_sha256": "1a2c3e98f0894344d2f898057a0618c9c50b8b61f5a4e196dbbeb32413aecec3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113089,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T01:30:12.609Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:113089:5080589138:2026-07-25T21:08:35Z:re_review",
       "comment_id": "5080589138",
@@ -32547,6 +32520,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134943:5491710348:2026-09-02T05:23:00Z:clawsweeper_needs_human",
+      "comment_id": "5491710348",
+      "comment_version_key": "5491710348:2026-09-02T05:23:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134943#issuecomment-5491710348",
+      "comment_created_at": "2026-09-01T09:14:24Z",
+      "comment_updated_at": "2026-09-02T05:23:00Z",
+      "comment_body_sha256": "81208297ceb94c786c2529692a3ae2726c55ed75c99bcf03b4ef646d424190b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Remove the release-owned changelog entry (P3)** - The SSH note was introduced in this normal feature PR, but CHANGELOG.md is release-owned and the PR body already carries release-note context. Remove this line a...; Review finding: [P3] Remove the release-owned changelog entry — CHANGELOG.md:38 - [medium] Resolve the native plugin trust boundary — src/plugin-sdk/control-ui.ts:211 - [medium] V... (sha=52b532547f6ae73f719719bd56073ff85c5082c3)",
+      "expected_head_sha": "52b532547f6ae73f719719bd56073ff85c5082c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T05:29:33.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/feature-plugin-ui",
+        "head_sha": "52b532547f6ae73f719719bd56073ff85c5082c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
