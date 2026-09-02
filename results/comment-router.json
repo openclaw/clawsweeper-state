@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T03:17:22.436Z",
+  "updated_at": "2026-09-02T03:17:29.518Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134826:5489250431:2026-09-01T23:37:19Z:clawsweeper_needs_human",
-      "comment_id": "5489250431",
-      "comment_version_key": "5489250431:2026-09-01T23:37:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134826#issuecomment-5489250431",
-      "comment_created_at": "2026-09-01T05:15:37Z",
-      "comment_updated_at": "2026-09-01T23:37:19Z",
-      "comment_body_sha256": "5aee5ab5a2933b686d1166601de62afb993111ccb1c5c7ba5e7a22340d6843f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134826,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the current head as dirty, so the final three-way merge result and its Telegram final-ordering behavior have not been established. (sha=60f7c06d373f2615ad12d82fcf9728ada0eea538)",
-      "expected_head_sha": "60f7c06d373f2615ad12d82fcf9728ada0eea538",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T23:38:47.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/roboclaw-134697-clean",
-        "head_sha": "60f7c06d373f2615ad12d82fcf9728ada0eea538",
-        "cluster_id": "automerge-openclaw-openclaw-134826",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-134826.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134826:5495554247:2026-09-01T14:31:49Z:re_review",
       "comment_id": "5495554247",
@@ -32877,6 +32830,39 @@
         "kind": "pull_request",
         "branch": "fix/inbox-button-hidden-in-settings",
         "head_sha": "a42a0e0ee526e5d2dd745ce8dcc4d227dc0c0c0f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135137:5493096130:2026-09-02T03:04:11Z:clawsweeper_auto_repair",
+      "comment_id": "5493096130",
+      "comment_version_key": "5493096130:2026-09-02T03:04:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135137#issuecomment-5493096130",
+      "comment_created_at": "2026-09-01T11:16:37Z",
+      "comment_updated_at": "2026-09-02T03:04:11Z",
+      "comment_body_sha256": "b69ff525350d738cc0d9bff4289ad9b53d24a9c236983bba10e277a5b4244c0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d58198f8a7d98159f2717330774d0ecd970f8efa)",
+      "expected_head_sha": "d58198f8a7d98159f2717330774d0ecd970f8efa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T03:17:29.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/active-memory-pt-br-135085",
+        "head_sha": "d58198f8a7d98159f2717330774d0ecd970f8efa",
         "cluster_id": null,
         "job_path": null
       }
