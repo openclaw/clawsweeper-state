@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T18:37:19.976Z",
+  "updated_at": "2026-09-02T18:38:00.679Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136309:5511134002:2026-09-02T14:27:19Z:re_review",
-      "comment_id": "5511134002",
-      "comment_version_key": "5511134002:2026-09-02T14:27:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136309#issuecomment-5511134002",
-      "comment_created_at": "2026-09-02T14:27:19Z",
-      "comment_updated_at": "2026-09-02T14:27:19Z",
-      "comment_body_sha256": "adf6b1a75b9bff6386dd4953647dc9ba3f6801562019f9921b08b1a905b64601",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136309,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T14:28:17.669Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-source-history",
-        "head_sha": "2dfe731d6ca40a3b7fcfcc0bdb83f03acf3d8d3b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136356:5511135313:2026-09-02T14:27:24Z:clawsweeper_needs_human",
       "comment_id": "5511135313",
@@ -32913,6 +32866,39 @@
         "kind": "pull_request",
         "branch": "fix/f004-session-logs-cleanup",
         "head_sha": "76a93be044600dd566bc9e97944d4518e6703f93",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136445:5513207755:2026-09-02T18:36:22Z:clawsweeper_needs_human",
+      "comment_id": "5513207755",
+      "comment_version_key": "5513207755:2026-09-02T18:36:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136445#issuecomment-5513207755",
+      "comment_created_at": "2026-09-02T16:55:52Z",
+      "comment_updated_at": "2026-09-02T18:36:22Z",
+      "comment_body_sha256": "a9784b56324cf0fd45d5bc033fc9ce0d3c834ba20c21953a7d9c750e69ec7b10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136445,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup still reports checks-node-compact-small-7 as failed and remains incomplete; resolve or classify that result and obtain a green exact-head required... (sha=7d87a8ff4673304ecea5d63cc9373890f11547c9)",
+      "expected_head_sha": "7d87a8ff4673304ecea5d63cc9373890f11547c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T18:38:00.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa30b-active-chat-escape",
+        "head_sha": "7d87a8ff4673304ecea5d63cc9373890f11547c9",
         "cluster_id": null,
         "job_path": null
       }
