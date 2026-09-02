@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:39:13.619Z",
+  "updated_at": "2026-09-02T07:39:18.891Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135808:5503407292:2026-09-02T03:39:35Z:clawsweeper_needs_human",
-      "comment_id": "5503407292",
-      "comment_version_key": "5503407292:2026-09-02T03:39:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135808#issuecomment-5503407292",
-      "comment_created_at": "2026-09-02T02:25:54Z",
-      "comment_updated_at": "2026-09-02T03:39:35Z",
-      "comment_body_sha256": "08105ba80f16c0831a53e61e08ddc2feaedb4d200fd0969153234c988017120d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135808,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned native RTC dependency** - The new bridge directly relies on str0m and Rust crypto, but upstream source and build-contract inspection was unavailable in this environmen...; Review finding: [medium] Verify the pinned native RTC dependency — apps/shared/OpenClawWatchRTC/Cargo.toml:11 (sha=600d25ea12ced6dad22295a00964f484e9d829b0)",
-      "expected_head_sha": "600d25ea12ced6dad22295a00964f484e9d829b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:46:42.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/watch-native-realtime-voice",
-        "head_sha": "600d25ea12ced6dad22295a00964f484e9d829b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135812:5503505089:2026-09-02T03:41:42Z:clawsweeper_auto_repair",
       "comment_id": "5503505089",
@@ -32357,6 +32324,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136120:5506162037:2026-09-02T07:38:17Z:re_review",
+      "comment_id": "5506162037",
+      "comment_version_key": "5506162037:2026-09-02T07:38:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136120#issuecomment-5506162037",
+      "comment_created_at": "2026-09-02T07:38:17Z",
+      "comment_updated_at": "2026-09-02T07:38:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136120,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T07:39:16.725Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sdk-cache-relocated-shared-chunks",
+        "head_sha": "26bda88732b62f4f449db8be27cea9e795930570",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
