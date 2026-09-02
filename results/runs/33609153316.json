@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136155",
+  "mode": "autonomous",
+  "run_id": "33609153316",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33609153316",
+  "head_sha": "904579a319c4393f18c8d42c25e840b74dbab2c0",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136155.md",
+  "published_at": "2026-09-02T09:27:40.832Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136155",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136155",
+  "canonical_pr": null,
+  "summary": "Current main cc6769b89216aa2d40aaf9ae667ddd6aba678f50 has the collection-review opt-in omission. A narrow repair plan is ready, but implementation and validation are blocked: this read-only checkout lacks dependencies and the required sibling ../codex source checkout.",
+  "actions": [
+    {
+      "target": "#136155",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136155",
+      "candidate_fix": null,
+      "reason": "No source files can be edited or dependencies installed in this read-only worker. ../codex is absent, so the repository-required direct Codex-source gate cannot be completed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136155",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136155",
+      "candidate_fix": null,
+      "reason": "Executor should create the prescribed branch after restoring a writable dependency-complete checkout and the required ../codex sibling checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#136155",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
