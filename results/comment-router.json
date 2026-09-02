@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T00:28:17.954Z",
+  "updated_at": "2026-09-02T00:29:10.202Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132671:5463256281:2026-08-29T15:28:58Z:re_review",
-      "comment_id": "5463256281",
-      "comment_version_key": "5463256281:2026-08-29T15:28:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132671#issuecomment-5463256281",
-      "comment_created_at": "2026-08-29T15:28:58Z",
-      "comment_updated_at": "2026-08-29T15:28:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132671,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T20:29:39.666Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131835:5499997088:2026-09-01T20:29:13Z:re_review",
       "comment_id": "5499997088",
@@ -32353,6 +32326,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127837:5379691979:2026-09-02T00:28:15Z:clawsweeper_needs_human",
+      "comment_id": "5379691979",
+      "comment_version_key": "5379691979:2026-09-02T00:28:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127837#issuecomment-5379691979",
+      "comment_created_at": "2026-08-22T10:07:36Z",
+      "comment_updated_at": "2026-09-02T00:28:15Z",
+      "comment_body_sha256": "9f4cf41e59626855887078494b4beb9ca1f6a35e7ed084cbac5c0d1c5bae2a96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new global 12 MiB/64-entry ceiling intentionally trades cache residency for extra guarded filesystem reads in high-workspace workloads; this resource policy needs maintainer accep... (sha=6d18ce66a7cdcc7b7a4d5f799b361fdd7afa32a7)",
+      "expected_head_sha": "6d18ce66a7cdcc7b7a4d5f799b361fdd7afa32a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T00:29:10.202Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/bug-05-workspace",
+        "head_sha": "6d18ce66a7cdcc7b7a4d5f799b361fdd7afa32a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
