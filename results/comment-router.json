@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:50:10.413Z",
+  "updated_at": "2026-09-02T23:51:06.447Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136577:5515966145:2026-09-02T20:30:31Z:clawsweeper_needs_human",
-      "comment_id": "5515966145",
-      "comment_version_key": "5515966145:2026-09-02T20:30:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136577#issuecomment-5515966145",
-      "comment_created_at": "2026-09-02T20:30:31Z",
-      "comment_updated_at": "2026-09-02T20:30:31Z",
-      "comment_body_sha256": "b33aebc01b06af7ecbeced6cdfcfe630f4d25af34e3f7502cf958193fc7c9b82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136577,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Run the key scan before network-capable Node setup (P2)** - openclaw_ensure_node downloads Node from nodejs.org when the runner lacks a suitable active or tool-cache Node. Moving it ahead of detection means a No...; Review finding: [P2] Run the key scan before network-capable Node setup — .github/workflows/ci.yml:1825-1831 - [medium] Node bootstrap can block secret scanning — .github/workflow... (sha=93d6bcebef3a8f300c488b1b4c8e38745176eee1)",
-      "expected_head_sha": "93d6bcebef3a8f300c488b1b4c8e38745176eee1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T20:31:41.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/private-key-scanner-ci",
-        "head_sha": "93d6bcebef3a8f300c488b1b4c8e38745176eee1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136580:5515994036:2026-09-02T20:32:46Z:clawsweeper_needs_human",
       "comment_id": "5515994036",
@@ -32680,6 +32647,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T23:50:10.413Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112641:5079568147:2026-09-02T23:49:25Z:clawsweeper_auto_repair",
+      "comment_id": "5079568147",
+      "comment_version_key": "5079568147:2026-09-02T23:49:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112641#issuecomment-5079568147",
+      "comment_created_at": "2026-07-25T17:40:52Z",
+      "comment_updated_at": "2026-09-02T23:49:25Z",
+      "comment_body_sha256": "47c632210a84106587b9dddcd2682dcae1b925fb5ba113c539ff4f9f4ba64bcc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112641,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d750aad3601b27d25b390ad1a1073182d33547c9)",
+      "expected_head_sha": "d750aad3601b27d25b390ad1a1073182d33547c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T23:51:06.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/enforce-session-maintenance-limits",
+        "head_sha": "d750aad3601b27d25b390ad1a1073182d33547c9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
