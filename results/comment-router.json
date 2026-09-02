@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:44:56.137Z",
+  "updated_at": "2026-09-02T01:44:59.838Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128249:5406233770:2026-08-25T06:03:35Z:re_review",
-      "comment_id": "5406233770",
-      "comment_version_key": "5406233770:2026-08-25T06:03:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128249#issuecomment-5406233770",
-      "comment_created_at": "2026-08-25T06:03:35Z",
-      "comment_updated_at": "2026-08-25T06:03:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128249,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:16:57.563Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5406907355:2026-08-25T07:20:00Z:re_review",
       "comment_id": "5406907355",
@@ -32652,6 +32625,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T01:44:56.136Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135742:5502808143:2026-09-02T01:43:49Z:clawsweeper_needs_human",
+      "comment_id": "5502808143",
+      "comment_version_key": "5502808143:2026-09-02T01:43:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135742#issuecomment-5502808143",
+      "comment_created_at": "2026-09-02T01:08:57Z",
+      "comment_updated_at": "2026-09-02T01:43:49Z",
+      "comment_body_sha256": "998dd6dc451a22270f6d55151e67ef097000a455330526adf75764e7a272ca0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that passed an explicitly empty --store will now fail instead of accidentally operating on the default store; the supplied proof and intended fail-closed behavior mak... (sha=37c995faee46794a99335280235993bc81a51a83)",
+      "expected_head_sha": "37c995faee46794a99335280235993bc81a51a83",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T01:44:59.838Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-blank-store",
+        "head_sha": "37c995faee46794a99335280235993bc81a51a83",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
