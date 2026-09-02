@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T14:13:28.869Z",
+  "updated_at": "2026-09-02T14:14:52.115Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135846:5503815114:2026-09-02T09:40:53Z:clawsweeper_needs_human",
-      "comment_id": "5503815114",
-      "comment_version_key": "5503815114:2026-09-02T09:40:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135846#issuecomment-5503815114",
-      "comment_created_at": "2026-09-02T03:19:50Z",
-      "comment_updated_at": "2026-09-02T09:40:53Z",
-      "comment_body_sha256": "7fba07bd8d27feea6ebf6cbb33db36d0db92c12bfb28fa1af2b5e2b2682438eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135846,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Core production changes are +50/-17; the added code has a concrete lifecycle-owner purpose, but this bug fix should not grow beyond the producer-to-durable-state boundary. (sha=983824999611730cc07364818c32c7ce4762dcd7)",
-      "expected_head_sha": "983824999611730cc07364818c32c7ce4762dcd7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:49:26.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-empty-subagent-announce",
-        "head_sha": "983824999611730cc07364818c32c7ce4762dcd7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135853:5503865038:2026-09-02T09:40:34Z:clawsweeper_needs_human",
       "comment_id": "5503865038",
@@ -32518,6 +32485,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136276:5510937341:2026-09-02T14:13:48Z:re_review",
+      "comment_id": "5510937341",
+      "comment_version_key": "5510937341:2026-09-02T14:13:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136276#issuecomment-5510937341",
+      "comment_created_at": "2026-09-02T14:13:48Z",
+      "comment_updated_at": "2026-09-02T14:13:48Z",
+      "comment_body_sha256": "ca836b143d848860cbaa082078745dbaced9acc46ef7c464ae7216de61d635c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136276,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T14:14:47.245Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-local-service-oom-score",
+        "head_sha": "9be7b6ba3268443bcfd4fc6aeaa025d08edb18d6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
