@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135635",
+  "mode": "autonomous",
+  "run_id": "33578733888",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33578733888",
+  "head_sha": "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135635.md",
+  "published_at": "2026-09-02T02:31:40.379Z",
+  "canonical": "#135635",
+  "canonical_issue": "#135635",
+  "canonical_pr": null,
+  "summary": "Confirmed the enabled-only recovery path incorrectly materializes delivery on current main. Local implementation and validation are blocked: the workspace is read-only, the required sibling ../codex source is absent and cannot be cloned, and the supplied pnpm test command fails before tests because Corepack cannot create its cache on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#135635",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135635",
+      "candidate_fix": null,
+      "reason": "The issue remains an open canonical bug; no safe locally validated implementation or PR can be produced in this read-only worker environment."
+    },
+    {
+      "target": "#135635",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135635",
+      "candidate_fix": null,
+      "reason": "Ready for execution in a writable checkout with the required Codex source and runnable Node package-manager cache."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair environment with sibling ../codex source available and a writable Corepack/pnpm cache, then rerun the focused validation before opening the allowed fix PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
