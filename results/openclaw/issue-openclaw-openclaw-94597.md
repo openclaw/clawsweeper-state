@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-94597"
 mode: "autonomous"
-run_id: "33600518938"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33600518938"
+run_id: "33602051322"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33602051322"
 head_sha: "904579a319c4393f18c8d42c25e840b74dbab2c0"
 workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-02T07:04:35.322Z"
+published_at: "2026-09-02T07:58:01.549Z"
 canonical: "https://github.com/openclaw/openclaw/issues/94597"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/94597"
 canonical_pr: null
@@ -18,14 +18,14 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 2
 ---
 
 # issue-openclaw-openclaw-94597
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33600518938](https://github.com/openclaw/clawsweeper/actions/runs/33600518938)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33602051322](https://github.com/openclaw/clawsweeper/actions/runs/33602051322)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/94597
 
 ## Summary
 
-#94597 remains the canonical open bug. Static inspection identifies the reported interception, but no fix branch is safe to produce: the preflight main SHA is absent from this shallow checkout, mandatory sibling ../codex source is absent, and focused tests cannot load tsx/esm because dependencies are missing in the read-only workspace.
+#94597 remains the open canonical issue. Implementation is blocked: the required ../codex source is absent, tests cannot start in this read-only runner, and current routing shows that a sink-only change cannot deliver through an actions-only plugin.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/94597
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 2 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/94597
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #94597 | fix_needed | blocked | canonical | Reacquire the artifact main revision, provision ../codex for the mandatory direct inspection, and install workspace dependencies before creating or validating the narrow fix branch. |
-| cluster:issue-openclaw-openclaw-94597 | build_fix_artifact | blocked |  | Artifact is intentionally non-executable until the listed workspace preconditions are restored. |
+| #94597 | fix_needed | blocked | canonical | Blocked pending a writable runner with the required ../codex checkout and test cache, plus maintainer direction on whether the stated sink-only boundary may expand to channel selection. |
+| cluster:issue-openclaw-openclaw-94597 | build_fix_artifact | blocked | canonical | A fix artifact is retained for the canonical issue, but opening a PR is blocked until the required owner-boundary decision and deterministic validation environment are available. |
 
 ## Needs Human
 
-- none
+- Confirm whether #94597 may change channel selection so a configured actions.handleAction-only plugin can be selected for send; current main makes the requested sink-only change insufficient.
+- Provide a writable implementation environment with ../codex available for the mandatory direct-source check and with a writable Corepack cache so the requested regression can be demonstrated.
