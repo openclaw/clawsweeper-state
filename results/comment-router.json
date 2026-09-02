@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:49:32.945Z",
+  "updated_at": "2026-09-02T07:49:40.449Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135255:5495506418:2026-09-02T03:53:02Z:clawsweeper_needs_human",
-      "comment_id": "5495506418",
-      "comment_version_key": "5495506418:2026-09-02T03:53:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135255#issuecomment-5495506418",
-      "comment_created_at": "2026-09-01T14:28:16Z",
-      "comment_updated_at": "2026-09-02T03:53:02Z",
-      "comment_body_sha256": "789508dac6b3940716ed01405e6ecce88b586df494c0fb7cdbc8d37aa5fbc0bc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135255,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix has a net production increase of 127 lines (with a substantial helper relocation); the added receipt and streaming handling is justified by the direct-reply owner boundary... (sha=5ec5b5786a741d0a3d1da0e532a938ff0ca98c02)",
-      "expected_head_sha": "5ec5b5786a741d0a3d1da0e532a938ff0ca98c02",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:59:28.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-reply-presentation",
-        "head_sha": "5ec5b5786a741d0a3d1da0e532a938ff0ca98c02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135462:5502355539:2026-09-02T03:49:41Z:clawsweeper_auto_repair",
       "comment_id": "5502355539",
@@ -32405,6 +32372,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136108:5506279147:2026-09-02T07:48:37Z:re_review",
+      "comment_id": "5506279147",
+      "comment_version_key": "5506279147:2026-09-02T07:48:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136108#issuecomment-5506279147",
+      "comment_created_at": "2026-09-02T07:48:37Z",
+      "comment_updated_at": "2026-09-02T07:48:37Z",
+      "comment_body_sha256": "ce0dff69ac5b8e6b5bbf20230dae8258d45b834b626b2b0a573aab6469e32930",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136108,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T07:49:37.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/control-ui-retention-streaming",
+        "head_sha": "76dfc2dddf02e1299a3d4a652f60e464a8f3ff46",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
