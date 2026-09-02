@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:10:45.276Z",
+  "updated_at": "2026-09-02T08:11:59.657Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120384:5224577987:2026-09-02T04:17:14Z:clawsweeper_auto_repair",
-      "comment_id": "5224577987",
-      "comment_version_key": "5224577987:2026-09-02T04:17:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120384#issuecomment-5224577987",
-      "comment_created_at": "2026-08-08T04:49:49Z",
-      "comment_updated_at": "2026-09-02T04:17:14Z",
-      "comment_body_sha256": "7c3ce72dddcb06e521b4615a5c4de7f9004815e87fd418539886cfcc3d21d5fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120384,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5c76359d5c60c4900e7567496768295a1e0fb005)",
-      "expected_head_sha": "5c76359d5c60c4900e7567496768295a1e0fb005",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T04:32:04.976Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-sqlite-snapshot-windows",
-        "head_sha": "5c76359d5c60c4900e7567496768295a1e0fb005",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122981:5275861923:2026-09-02T04:13:38Z:clawsweeper_auto_repair",
       "comment_id": "5275861923",
@@ -32449,6 +32416,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135862:5506515543:2026-09-02T08:08:58Z:re_review",
+      "comment_id": "5506515543",
+      "comment_version_key": "5506515543:2026-09-02T08:08:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135862#issuecomment-5506515543",
+      "comment_created_at": "2026-09-02T08:08:58Z",
+      "comment_updated_at": "2026-09-02T08:08:58Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135862,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T08:11:56.054Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-status-auth-none-135471",
+        "head_sha": "829e7d913b6afb8c73aa1334da1d619739924f20",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
