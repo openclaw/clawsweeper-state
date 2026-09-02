@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:57:27.786Z",
+  "updated_at": "2026-09-02T22:59:05.922Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136475:5515287542:2026-09-02T19:38:59Z:re_review",
-      "comment_id": "5515287542",
-      "comment_version_key": "5515287542:2026-09-02T19:38:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136475#issuecomment-5515287542",
-      "comment_created_at": "2026-09-02T19:38:59Z",
-      "comment_updated_at": "2026-09-02T19:38:59Z",
-      "comment_body_sha256": "6f3eced4d22c387e1f716372268c3feee3eae6749a7c5cd23f3c671523241ee0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136475,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T19:39:57.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/announce-timeout-split",
-        "head_sha": "7bf744631e698c467d8e0fdeae315148fb74e9a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135808:5503407292:2026-09-02T19:38:47Z:clawsweeper_needs_human",
       "comment_id": "5503407292",
@@ -32662,6 +32615,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T22:57:27.786Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136687:5517418175:2026-09-02T22:57:51Z:clawsweeper_needs_human",
+      "comment_id": "5517418175",
+      "comment_version_key": "5517418175:2026-09-02T22:57:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136687#issuecomment-5517418175",
+      "comment_created_at": "2026-09-02T22:38:47Z",
+      "comment_updated_at": "2026-09-02T22:57:51Z",
+      "comment_body_sha256": "f4481acd1ff898d623d35d6d828da1d1b7461b37e0856b6b19112d2d43f98a7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136687,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep page-scoped Gateway selection authoritative (P1)** - The global registry’s active profile is chosen before the existing page-specific selector. Two Control UIs on different same-origin base paths will there...; Review finding: [P1] Keep page-scoped Gateway selection authoritative — ui/src/app/settings.ts:505-510 - [P1] Do not recreate an active profile after removing it — ui/src/pages/co... (sha=5718f8903f6c306f1cd28c1e31fb1aecffcf4d63)",
+      "expected_head_sha": "5718f8903f6c306f1cd28c1e31fb1aecffcf4d63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T22:59:05.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/multi-gateway-control-ui",
+        "head_sha": "5718f8903f6c306f1cd28c1e31fb1aecffcf4d63",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
