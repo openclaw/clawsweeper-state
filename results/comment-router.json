@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:11:43.185Z",
+  "updated_at": "2026-09-02T19:12:36.032Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136319:5511638414:2026-09-02T15:00:37Z:re_review",
-      "comment_id": "5511638414",
-      "comment_version_key": "5511638414:2026-09-02T15:00:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136319#issuecomment-5511638414",
-      "comment_created_at": "2026-09-02T15:00:37Z",
-      "comment_updated_at": "2026-09-02T15:00:37Z",
-      "comment_body_sha256": "2b94af6bc752ca02dcde9d925e06eaeede3ff25bab5afb9446e91e477df78bf6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136319,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T15:08:33.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mobile-android-main",
-        "head_sha": "213f2fa24b840f70edb8367ec1ae0657cdb18962",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80532:4417481347:2026-09-02T14:48:36Z:clawsweeper_needs_human",
       "comment_id": "4417481347",
@@ -32971,6 +32924,39 @@
         "kind": "pull_request",
         "branch": "codex/cloud-cua-session-readiness",
         "head_sha": "5e707271fbf7f2ecc184d81c6bae7a42173eaa1d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136432:5512998052:2026-09-02T19:11:24Z:clawsweeper_auto_repair",
+      "comment_id": "5512998052",
+      "comment_version_key": "5512998052:2026-09-02T19:11:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136432#issuecomment-5512998052",
+      "comment_created_at": "2026-09-02T16:39:37Z",
+      "comment_updated_at": "2026-09-02T19:11:24Z",
+      "comment_body_sha256": "c02ac7534ff4c9da1960c02736759fa08469539cd7f5966608fddf2ec20b28df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136432,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=051eb6260fe7f5415a4c5d9667384e21870481a8)",
+      "expected_head_sha": "051eb6260fe7f5415a4c5d9667384e21870481a8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T19:12:36.032Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-gateway-feedback",
+        "head_sha": "051eb6260fe7f5415a4c5d9667384e21870481a8",
         "cluster_id": null,
         "job_path": null
       }
