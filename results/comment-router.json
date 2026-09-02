@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:45:59.281Z",
+  "updated_at": "2026-09-02T20:46:04.822Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134434:5512974598:2026-09-02T16:37:46Z:re_review",
-      "comment_id": "5512974598",
-      "comment_version_key": "5512974598:2026-09-02T16:37:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134434#issuecomment-5512974598",
-      "comment_created_at": "2026-09-02T16:37:46Z",
-      "comment_updated_at": "2026-09-02T16:37:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134434,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T16:48:16.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/automation-grouping-tagging",
-        "head_sha": "07bb31a9ff39716f6a7e014fffbffeba70f9a74a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135722:5502613367:2026-09-02T16:46:40Z:clawsweeper_needs_human",
       "comment_id": "5502613367",
@@ -32558,6 +32511,39 @@
         "kind": "pull_request",
         "branch": "steipete/openclaw-updater-reliability-53417f",
         "head_sha": "e791d72e08d4fea0332495d4a4bd38c29b6ec4e9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:363:5303706142:2026-09-02T18:05:29Z:clawsweeper_needs_human",
+      "comment_id": "5303706142",
+      "comment_version_key": "5303706142:2026-09-02T18:05:29Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/363#issuecomment-5303706142",
+      "comment_created_at": "2026-08-15T18:47:07Z",
+      "comment_updated_at": "2026-09-02T18:05:29Z",
+      "comment_body_sha256": "3ce8cc2fe581e5e7bdbb405c1774d99685edfbcf410110baa72718b5eebf0fce",
+      "repo": "openclaw/wacli",
+      "issue_number": 363,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owners are the live and history sync handlers that pass parsed edits to SQLite. A real linked-device terminal t... (sha=c2253b86c27dbea0c10ca8f1e7af6ea5c2e61290)",
+      "expected_head_sha": "c2253b86c27dbea0c10ca8f1e7af6ea5c2e61290",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:46:04.822Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/decrypt-encrypted-message-edits",
+        "head_sha": "c2253b86c27dbea0c10ca8f1e7af6ea5c2e61290",
         "cluster_id": null,
         "job_path": null
       }
