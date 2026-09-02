@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:37:46.346Z",
+  "updated_at": "2026-09-02T08:38:01.160Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1621:5504546447:2026-09-02T04:50:27Z:re_review",
-      "comment_id": "5504546447",
-      "comment_version_key": "5504546447:2026-09-02T04:50:27Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1621#issuecomment-5504546447",
-      "comment_created_at": "2026-09-02T04:50:27Z",
-      "comment_updated_at": "2026-09-02T04:50:27Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1621,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T04:51:13.909Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gcp-typed-cohort-v2",
-        "head_sha": "b6ae10f79ce4f19055dcdb1083792737655abda1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1620:5504546119:2026-09-02T04:50:24Z:re_review",
       "comment_id": "5504546119",
@@ -32602,6 +32555,39 @@
         "kind": "pull_request",
         "branch": "codex/code-bug-code-mode-approval-clock-20260901",
         "head_sha": "9201079f1f83eb4a50f5f5dea3c544a936479a67",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136125:5506443340:2026-09-02T08:36:26Z:clawsweeper_needs_human",
+      "comment_id": "5506443340",
+      "comment_version_key": "5506443340:2026-09-02T08:36:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136125#issuecomment-5506443340",
+      "comment_created_at": "2026-09-02T08:02:29Z",
+      "comment_updated_at": "2026-09-02T08:36:26Z",
+      "comment_body_sha256": "a4da3ef694b9a7b70ae0034ccfaa787dda160b991fb6e6977a6f0b64f8302b72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136125,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes CI job selection; the exact-head CI-routing check is still in progress and should complete before merge. (sha=0647979fe86331ba0a9259125a2308799169588c)",
+      "expected_head_sha": "0647979fe86331ba0a9259125a2308799169588c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T08:38:01.160Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/sweet-mclaren-4eed85",
+        "head_sha": "0647979fe86331ba0a9259125a2308799169588c",
         "cluster_id": null,
         "job_path": null
       }
