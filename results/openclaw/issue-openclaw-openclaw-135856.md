@@ -2,32 +2,32 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135856"
 mode: "autonomous"
-run_id: "33587446046"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33587446046"
+run_id: "33587823688"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33587823688"
 head_sha: "43553c96ab2fcd03b7599eb67cd49e2507bb92ea"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-02T03:47:58.495Z"
+published_at: "2026-09-02T04:21:13.004Z"
 canonical: "https://github.com/openclaw/openclaw/issues/135856"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/135856"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-135856
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33587446046](https://github.com/openclaw/clawsweeper/actions/runs/33587446046)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33587823688](https://github.com/openclaw/clawsweeper/actions/runs/33587823688)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,26 +35,26 @@ Canonical: https://github.com/openclaw/openclaw/issues/135856
 
 ## Summary
 
-#135856 remains the canonical open bug. Current main statically reproduces the failure: Spanish schtasks keys yield an unknown runtime before Doctor's COM-based offline check runs. A narrow owner-boundary fix is planned, but this read-only checkout cannot clone the required ../codex sibling, install dependencies, modify files, or run tests.
+Narrow repair path identified, but this read-only Linux checkout cannot create the required branch or run the tests: `tsx/esm` is absent and the mandatory sibling `../codex` checkout is unavailable. No GitHub mutation was made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #135856 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,11 +66,10 @@ Canonical: https://github.com/openclaw/openclaw/issues/135856
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #48771 | keep_closed | skipped | related | Already closed historical reference; no closure action is valid. |
-| #135856 | keep_canonical | planned | canonical | Hydrated open canonical issue; no implementation PR was present. |
-| cluster:issue-openclaw-openclaw-135856 | fix_needed | blocked | canonical | A writable, dependency-ready checkout with the required ../codex sibling is required to implement and validate the fix. |
-| cluster:issue-openclaw-openclaw-135856 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor; no GitHub or repository mutation was performed. |
+| #135856 | fix_needed | blocked | canonical | Implementation requires a writable, dependency-ready worker and the mandatory sibling Codex checkout before a code-change verdict or PR can be produced. |
+| cluster:issue-openclaw-openclaw-135856 | build_fix_artifact | planned | canonical | Executable repair plan for a writable worker. |
+| #48771 | keep_closed | skipped | related | Closed context reference. |
 
 ## Needs Human
 
-- none
+- Provide a writable, dependency-ready worker with sibling ../codex source available; execute the artifact and obtain the requested native Windows after-fix trace.

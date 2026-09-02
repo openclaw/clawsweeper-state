@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135856",
+  "mode": "autonomous",
+  "run_id": "33587823688",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33587823688",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135856.md",
+  "published_at": "2026-09-02T04:21:13.004Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135856",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135856",
+  "canonical_pr": null,
+  "summary": "Narrow repair path identified, but this read-only Linux checkout cannot create the required branch or run the tests: `tsx/esm` is absent and the mandatory sibling `../codex` checkout is unavailable. No GitHub mutation was made.",
+  "actions": [
+    {
+      "target": "#135856",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135856",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable, dependency-ready worker and the mandatory sibling Codex checkout before a code-change verdict or PR can be produced."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135856",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135856",
+      "candidate_fix": null,
+      "reason": "Executable repair plan for a writable worker."
+    },
+    {
+      "target": "#48771",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135856",
+      "candidate_fix": null,
+      "reason": "Closed context reference."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable, dependency-ready worker with sibling ../codex source available; execute the artifact and obtain the requested native Windows after-fix trace."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
