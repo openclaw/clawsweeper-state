@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135705",
+  "mode": "autonomous",
+  "run_id": "33581026819",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33581026819",
+  "head_sha": "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135705.md",
+  "published_at": "2026-09-02T02:13:53.940Z",
+  "canonical": "#135705",
+  "canonical_issue": "#135705",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a safe fix artifact can be produced: the required sibling Codex checkout is absent, and the focused browser harness cannot start because `tsx/esm` is missing in this read-only workspace.",
+  "actions": [
+    {
+      "target": "#128090",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#135705",
+      "candidate_fix": null,
+      "reason": "Related Review-panel UX work, but not the same bug or implementation scope."
+    },
+    {
+      "target": "#132797",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135705",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#135705",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": "#135705",
+      "candidate_fix": null,
+      "reason": "Provide a writable environment with dependencies and the required sibling `../codex` checkout, then reproduce the browser regression and create the narrow CSS-plus-E2E repair."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provision `../codex` for the mandatory direct-source inspection and a writable dependency-ready checkout; then rerun the focused Control UI E2E reproduction before implementing."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
