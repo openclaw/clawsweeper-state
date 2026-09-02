@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:27:27.802Z",
+  "updated_at": "2026-09-02T20:27:38.274Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136388:5512725879:2026-09-02T16:18:44Z:re_review",
-      "comment_id": "5512725879",
-      "comment_version_key": "5512725879:2026-09-02T16:18:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136388#issuecomment-5512725879",
-      "comment_created_at": "2026-09-02T16:18:44Z",
-      "comment_updated_at": "2026-09-02T16:18:44Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136388,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T16:19:42.439Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-security-fast-local-hooks",
-        "head_sha": "979ed7d6108dea1b34a6f5dc281a8bef9fd02145",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135295:5496483164:2026-09-02T16:20:40Z:clawsweeper_needs_human",
       "comment_id": "5496483164",
@@ -32800,6 +32753,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3373:5502643472:2026-09-02T20:26:33Z:clawsweeper_needs_human",
+      "comment_id": "5502643472",
+      "comment_version_key": "5502643472:2026-09-02T20:26:33Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3373#issuecomment-5502643472",
+      "comment_created_at": "2026-09-02T00:47:41Z",
+      "comment_updated_at": "2026-09-02T20:26:33Z",
+      "comment_body_sha256": "c53eb2fd1474f7f460d9ee152c795b9f6df00362647f250de56693688cdbddf3",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The optional fallback can still delay completion after usage data is secured—up to the remaining overall deadline—when the direct subscription request is unavailable; it no longer pre... (sha=973d8a0e1021b7844bb23300c6c8511471508030)",
+      "expected_head_sha": "973d8a0e1021b7844bb23300c6c8511471508030",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:27:38.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/subscription-metadata-upstream",
+        "head_sha": "973d8a0e1021b7844bb23300c6c8511471508030",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
