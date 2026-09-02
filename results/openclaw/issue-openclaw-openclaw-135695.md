@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135695"
 mode: "autonomous"
-run_id: "33574744650"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33574744650"
-head_sha: "311b985611cf2036bd23ca54420996f0ce5b81c5"
-workflow_conclusion: "failure"
+run_id: "33578732056"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33578732056"
+head_sha: "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-02T00:41:23.353Z"
-canonical: "https://github.com/openclaw/openclaw/issues/135695"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/135695"
+published_at: "2026-09-02T01:45:42.772Z"
+canonical: "#135695"
+canonical_issue: "#135695"
 canonical_pr: null
 actions_total: 2
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33574744650](https://github.com/openclaw/clawsweeper/actions/runs/33574744650)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33578732056](https://github.com/openclaw/clawsweeper/actions/runs/33578732056)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/135695
+Canonical: #135695
 
 ## Summary
 
-#135695 remains the canonical bug. Source inspection on local HEAD 3de571e8 confirms the CLI resolves the owner but drops agentId before image configured/explicit-model calls and audio/video handoffs; the runtime uses agentId for model selection. Implementation is blocked because this read-only checkout cannot create the required regression or branch, its local main does not contain preflight main 0edbcd8, and required sibling ../codex source is absent.
+Current origin/main retains the resolved agent ID only long enough to derive agentDir, so configured and explicit-model image describe calls lose ownership; audio, video, and Discord voice transcription share the same loss. No repair was applied: the checkout is read-only, dependencies are absent, and the mandatory ../codex source checkout is unavailable for the Codex hard gate.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/135695
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #135695 | fix_needed | blocked | canonical | A narrow owner-fact repair is indicated, but this worker cannot edit or validate a branch against the preflight main SHA. |
-| cluster:issue-openclaw-openclaw-135695 | build_fix_artifact | planned | canonical | Artifact is ready for a writable executor after refreshing to the preflight current main and satisfying the required Codex-source check. |
+| #135695 | fix_needed | planned | canonical | Implement the canonical bug repair in a writable worker after satisfying the mandatory Codex-source gate. |
+| #135695 | build_fix_artifact | planned | canonical | A narrow replacement PR is specified but cannot be created or validated in this read-only environment. |
 
 ## Needs Human
 
