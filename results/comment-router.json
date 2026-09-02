@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T06:46:14.990Z",
+  "updated_at": "2026-09-02T06:46:34.831Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:70002:5503515017:2026-09-02T02:40:06Z:re_review",
-      "comment_id": "5503515017",
-      "comment_version_key": "5503515017:2026-09-02T02:40:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/70002#issuecomment-5503515017",
-      "comment_created_at": "2026-09-02T02:40:06Z",
-      "comment_updated_at": "2026-09-02T02:40:06Z",
-      "comment_body_sha256": "5e445d891ca58e1e20a45d809ab7f28e0a5617d8218babc822600a541188dfec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 70002,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T02:40:53.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci/skip-docs-publish-in-forks",
-        "head_sha": "edfe6e69f5d9098f49b9117952abd04baee0bad0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135818:5503523652:2026-09-02T02:41:15Z:clawsweeper_needs_human",
       "comment_id": "5503523652",
@@ -32624,6 +32577,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-managed-runtime-dist",
         "head_sha": "544031f274103c197e1e6b827e9c5e1f972b35d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1734:5505025212:2026-09-02T06:13:51Z:clawsweeper_needs_human",
+      "comment_id": "5505025212",
+      "comment_version_key": "5505025212:2026-09-02T06:13:51Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1734#issuecomment-5505025212",
+      "comment_created_at": "2026-09-02T05:43:17Z",
+      "comment_updated_at": "2026-09-02T06:13:51Z",
+      "comment_body_sha256": "2206098be0d9a1bc6e2aba2b9d4a0b9f21c3c91c3ce89620caeb06ea5c236e55",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1734,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the local-container adapter’s post-OOM collector, which produces the failure digest, timing JSON, failure bundl... (sha=8228f7945cd4f518de0702cd68408e3b43cae4a5)",
+      "expected_head_sha": "8228f7945cd4f518de0702cd68408e3b43cae4a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T06:46:34.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue1677-memory-guidance-73f24b13",
+        "head_sha": "8228f7945cd4f518de0702cd68408e3b43cae4a5",
         "cluster_id": null,
         "job_path": null
       }
