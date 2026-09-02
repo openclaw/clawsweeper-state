@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135704",
+  "mode": "autonomous",
+  "run_id": "33575475221",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33575475221",
+  "head_sha": "311b985611cf2036bd23ca54420996f0ce5b81c5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135704.md",
+  "published_at": "2026-09-02T01:30:58.108Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135704",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135704",
+  "canonical_pr": null,
+  "summary": "#135704 is a reproducible, narrow iMessage inbound-echo bug on main fabe69f3. The required repair is blocked: this worker has a read-only checkout, the required ../codex source is absent, and test dependencies are incomplete.",
+  "actions": [
+    {
+      "target": "#122794",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#135704",
+      "candidate_fix": null,
+      "reason": "Same iMessage echo-cache family, but distinct reproduction and repair contract; keep open separately."
+    },
+    {
+      "target": "#128430",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#135704",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135704",
+      "candidate_fix": null,
+      "reason": "The fix shape is clear, but this environment cannot create the mandatory pre-fix regression, patch the branch, or validate it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135704",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135704",
+      "candidate_fix": null,
+      "reason": "Ready for a writable executor with dependencies and ../codex available."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with ../codex present and dependencies installable, then execute the artifact on clawsweeper/issue-openclaw-openclaw-135704."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#135704",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
