@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T06:14:55.521Z",
+  "updated_at": "2026-09-02T06:16:05.889Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110917:5012628251:2026-09-02T02:03:26Z:clawsweeper_needs_human",
-      "comment_id": "5012628251",
-      "comment_version_key": "5012628251:2026-09-02T02:03:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110917#issuecomment-5012628251",
-      "comment_created_at": "2026-07-18T19:33:31Z",
-      "comment_updated_at": "2026-09-02T02:03:26Z",
-      "comment_body_sha256": "b31b02243a19e81ca418c85de29fc3cfde5411776ca87a6ee9c6bdd69725f485",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110917,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Do not send custom-endpoint keys to llmtr.com (P1)** - This enables base-URL overrides, but catalog construction invokes the builder before applying that override; the builder then requests the fixed LLMTR URL w...; Review finding: [P1] Do not send custom-endpoint keys to llmtr.com — extensions/llmtr/index.ts:36 - [high] Custom endpoint credentials reach the fixed catalog host — extensions/ll... (sha=d16aa4c262869d1833c8fe23122f155e7000d385)",
-      "expected_head_sha": "d16aa4c262869d1833c8fe23122f155e7000d385",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T02:15:15.260Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/llmtr-provider",
-        "head_sha": "d16aa4c262869d1833c8fe23122f155e7000d385",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111020:5013302283:2026-09-02T01:57:02Z:clawsweeper_auto_repair",
       "comment_id": "5013302283",
@@ -32621,6 +32588,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135853:5503865038:2026-09-02T06:07:38Z:clawsweeper_needs_human",
+      "comment_id": "5503865038",
+      "comment_version_key": "5503865038:2026-09-02T06:07:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135853#issuecomment-5503865038",
+      "comment_created_at": "2026-09-02T03:26:13Z",
+      "comment_updated_at": "2026-09-02T06:07:38Z",
+      "comment_body_sha256": "632095cb7baf519feb69e00388bf96a4949a83506c681ce31bc53d02243258bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135853,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive Gateway RPC/event schemas and Plugin SDK export become supported compatibility surfaces without an explicit maintainer decision on their long-term scope. (sha=7835e3b63d544f889d7d5ef951ea7c7500d835cc)",
+      "expected_head_sha": "7835e3b63d544f889d7d5ef951ea7c7500d835cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T06:16:05.889Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/human-mentions-inbox",
+        "head_sha": "7835e3b63d544f889d7d5ef951ea7c7500d835cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
