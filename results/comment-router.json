@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:54:10.618Z",
+  "updated_at": "2026-09-02T12:54:29.562Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136105:5506099666:2026-09-02T08:47:19Z:clawsweeper_auto_repair",
-      "comment_id": "5506099666",
-      "comment_version_key": "5506099666:2026-09-02T08:47:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136105#issuecomment-5506099666",
-      "comment_created_at": "2026-09-02T07:32:34Z",
-      "comment_updated_at": "2026-09-02T08:47:19Z",
-      "comment_body_sha256": "f01bfb64a4a2c31469f20fcb9f616b83ca7b50b607270a54874cf81b8a734ae5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136105,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=835600f0c9f41bf120bd587cd9b1b2170dd09e9d)",
-      "expected_head_sha": "835600f0c9f41bf120bd587cd9b1b2170dd09e9d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T09:00:47.029Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-critical-path",
-        "head_sha": "9cf462f28f5cc7facb4efe5d7aab8fed06b19abf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136127:5506612072:2026-09-02T08:48:09Z:clawsweeper_auto_repair",
       "comment_id": "5506612072",
@@ -32413,6 +32380,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T12:54:10.618Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136301:5509838295:2026-09-02T12:53:26Z:clawsweeper_needs_human",
+      "comment_id": "5509838295",
+      "comment_version_key": "5509838295:2026-09-02T12:53:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136301#issuecomment-5509838295",
+      "comment_created_at": "2026-09-02T12:53:26Z",
+      "comment_updated_at": "2026-09-02T12:53:26Z",
+      "comment_body_sha256": "1a74fd895f7c2e8d8983b8e33c86b573035f3188098955acde92e6fbe2573521",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A permanently failing remote attachment now adds bounded 300 ms and 600 ms retry waits before the existing explicit failure. The six added production lines are necessary to retry at t... (sha=d0681300623e91c156e65f37a77b265c1b3c1068)",
+      "expected_head_sha": "d0681300623e91c156e65f37a77b265c1b3c1068",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T12:54:29.562Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-135860",
+        "head_sha": "d0681300623e91c156e65f37a77b265c1b3c1068",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
