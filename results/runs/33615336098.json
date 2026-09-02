@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136212",
+  "mode": "autonomous",
+  "run_id": "33615336098",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33615336098",
+  "head_sha": "521f1ab5ca8c099b25d546baaa7a88ceedfd0174",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136212.md",
+  "published_at": "2026-09-02T10:56:41.080Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136212",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136212",
+  "canonical_pr": null,
+  "summary": "#136212 remains the canonical open issue. Current main d413210bc7420923d101ce64211511cdac7b9464 retains an OAuth-only request reconstruction that converts an ordinary POST body to a stream and explicitly enables duplex transfer. Plan one narrow fix PR that buffers the reconstructed OAuth request body before dispatch and proves fixed-length framing at a loopback HTTP boundary. This worker could not run that wire test because loopback listeners are prohibited here, dependencies are absent, and the required sibling ../codex checkout is unavailable; the executor must complete those gates before opening the PR.",
+  "actions": [
+    {
+      "target": "#134307",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no closure or mutation is valid for this context reference."
+    },
+    {
+      "target": "#136212",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136212",
+      "candidate_fix": null,
+      "reason": "Narrow non-security repair candidate; no active implementation PR is hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136212",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136212",
+      "candidate_fix": null,
+      "reason": "Build the narrow fix after rerunning the owner-boundary wire reproduction and required dependency/Codex checks in a writable validation environment."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
