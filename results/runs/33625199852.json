@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136262",
+  "mode": "autonomous",
+  "run_id": "33625199852",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33625199852",
+  "head_sha": "59feb556c973b1606b6dc580b6e4bd0db6a729c1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136262.md",
+  "published_at": "2026-09-02T13:38:10.775Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136262",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136262",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a repair branch can be created: the checkout is read-only, required test tooling is absent, and the mandatory sibling ../codex source checkout is unavailable for the root-policy gate. No GitHub mutation or repository edit was made.",
+  "actions": [
+    {
+      "target": "#136262",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136262",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies and ../codex is required to add the pre-fix regression, inspect the mandatory Codex source, implement the narrow repair, and validate it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136262",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#136262",
+      "candidate_fix": null,
+      "reason": "Prepared for execution in a writable, policy-compliant repair environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

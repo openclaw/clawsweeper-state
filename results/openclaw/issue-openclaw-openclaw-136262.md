@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-136262"
 mode: "autonomous"
-run_id: "33623856737"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33623856737"
+run_id: "33625199852"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33625199852"
 head_sha: "59feb556c973b1606b6dc580b6e4bd0db6a729c1"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-02T11:39:56.190Z"
+published_at: "2026-09-02T13:38:10.775Z"
 canonical: "https://github.com/openclaw/openclaw/issues/136262"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/136262"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33623856737](https://github.com/openclaw/clawsweeper/actions/runs/33623856737)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33625199852](https://github.com/openclaw/clawsweeper/actions/runs/33625199852)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/136262
 
 ## Summary
 
-#136262 remains the canonical, source-reproducible bug on current main (7ab7eb8aab504be5a0a3081882e2d3fd5e537f11). The managed completions producer appends a cumulative content replay as a bare delta; implementation is blocked because this runner is read-only, lacks dependencies, and lacks the required sibling ../codex checkout for the Codex hard gate.
+Implementation is blocked before a repair branch can be created: the checkout is read-only, required test tooling is absent, and the mandatory sibling ../codex source checkout is unavailable for the root-policy gate. No GitHub mutation or repository edit was made.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/136262
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #136262 | fix_needed | blocked | canonical | A narrow producer repair is appropriate, but no branch diff, regression run, or required Codex source inspection can be completed in the read-only environment. |
-| cluster:issue-openclaw-openclaw-136262 | build_fix_artifact | planned | canonical | Prepared narrow fix plan for an executor with a writable checkout, dependencies, and ../codex available. |
+| #136262 | fix_needed | blocked | canonical | A writable checkout with dependencies and ../codex is required to add the pre-fix regression, inspect the mandatory Codex source, implement the narrow repair, and validate it. |
+| cluster:issue-openclaw-openclaw-136262 | build_fix_artifact | planned | canonical | Prepared for execution in a writable, policy-compliant repair environment. |
 
 ## Needs Human
 
