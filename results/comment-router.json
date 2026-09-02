@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:09:31.926Z",
+  "updated_at": "2026-09-02T23:09:38.918Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136475:5515459257:2026-09-02T19:51:44Z:re_review",
-      "comment_id": "5515459257",
-      "comment_version_key": "5515459257:2026-09-02T19:51:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136475#issuecomment-5515459257",
-      "comment_created_at": "2026-09-02T19:51:44Z",
-      "comment_updated_at": "2026-09-02T19:51:44Z",
-      "comment_body_sha256": "95a8cbc76a14b90782b10462564b05ec2683ae4e64ba9b7ec12eefa850a7c3b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136475,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T19:52:52.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/announce-timeout-split",
-        "head_sha": "429c90b9900083c382e51f0ec483f6397137af22",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136399:5512462877:2026-09-02T19:52:15Z:clawsweeper_needs_human",
       "comment_id": "5512462877",
@@ -32535,6 +32488,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/types/node-26.4.0",
         "head_sha": "1a0d51360655b4c48a3fb5330de92f48301868c2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136384:5511944684:2026-09-02T23:08:33Z:clawsweeper_needs_human",
+      "comment_id": "5511944684",
+      "comment_version_key": "5511944684:2026-09-02T23:08:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136384#issuecomment-5511944684",
+      "comment_created_at": "2026-09-02T15:22:29Z",
+      "comment_updated_at": "2026-09-02T23:08:33Z",
+      "comment_body_sha256": "b01f68d87662fa8e49843867195c8dad06a320497be92d983be921b21c125bcc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136384,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The provider metadata endpoint changes from recursive tree enumeration to a Hugging Face API contract that could not be independently rechecked here because upstream DNS was unavailab... (sha=95fb27cec008f9e7f5ebd5ef50328a9aa78d7006)",
+      "expected_head_sha": "95fb27cec008f9e7f5ebd5ef50328a9aa78d7006",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T23:09:38.918Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/llama-cpp-huggingface-metadata-bounds",
+        "head_sha": "95fb27cec008f9e7f5ebd5ef50328a9aa78d7006",
         "cluster_id": null,
         "job_path": null
       }
