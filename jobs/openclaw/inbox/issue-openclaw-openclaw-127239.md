@@ -67,21 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the catalog-only context-window cold-cache defect. Preserve one canonical context-resolution flow: do not hardcode DeepSeek and do not patch individual 200,000-token fallback consumers. Ensure prepared static provider-catalog metadata is available before read-only lookups used by model selection, memory flush, and session projection. Add a regression that begins with an empty cache and proves a catalog-only model resolves to its declared context window; it must fail before the repair. Preserve configured override precedence and retain the generic fallback for genuinely unknown models. Do not add configuration, migrations, or runtime compatibility aliases. Include release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the catalog-only context-window fallback in the shared memory-maintenance path. Reproduce the cold-cache case before editing: a provider-qualified DeepSeek V4 Flash model with no authored override must retain its prepared 1,000,000-token context value instead of falling back to 200,000. Preserve explicit configured caps and the intentional generic fallback for genuinely unavailable metadata. Prefer forwarding an already-prepared provider-qualified context fact through the owner boundary over model-specific branching or a new config option. Add a regression that fails before the repair and covers the affected memory-flush path; do not alter persisted config, schema, or public configuration.
 
 Likely files:
 
 - src/agents/context.ts
-- src/agents/context.lookup.test.ts
-- src/agents/context-cache-projection.ts
+- src/agents/context-resolution.ts
 - src/auto-reply/reply/memory-flush.ts
-- src/auto-reply/reply/reply-state.test.ts
+- src/auto-reply/reply/agent-runner-memory.ts
+- src/agents/context.lookup.test.ts
+- src/auto-reply/reply/agent-runner-memory.test.ts
 
 Validation:
 
 - pnpm test src/agents/context.lookup.test.ts
+- pnpm test src/auto-reply/reply/agent-runner-memory.test.ts
 - pnpm test src/auto-reply/reply/reply-state.test.ts
-- pnpm check:changed -- src/agents/context.ts src/agents/context.lookup.test.ts src/agents/context-cache-projection.ts src/auto-reply/reply/memory-flush.ts
 
 ## Operator Prompt
 
