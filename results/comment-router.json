@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T17:15:48.303Z",
+  "updated_at": "2026-09-02T17:16:08.740Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135016:5491412905:2026-09-02T12:31:50Z:clawsweeper_needs_human",
-      "comment_id": "5491412905",
-      "comment_version_key": "5491412905:2026-09-02T12:31:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135016#issuecomment-5491412905",
-      "comment_created_at": "2026-09-01T08:48:27Z",
-      "comment_updated_at": "2026-09-02T12:31:50Z",
-      "comment_body_sha256": "73ef2a82d354663711a0d33e06b584f919aae00e969115c61f6144aba44d93b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135016,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new generic named-owner mechanism changes message queueing and cancellation timing during startup recovery; maintainers should explicitly accept this as the permanent recovery lif... (sha=b12a1c4c300964a4ab88065b79d772260647bf67)",
-      "expected_head_sha": "b12a1c4c300964a4ab88065b79d772260647bf67",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T12:46:23.399Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/restart-recovery-followup",
-        "head_sha": "b12a1c4c300964a4ab88065b79d772260647bf67",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134931:5491689336:2026-09-02T12:40:37Z:clawsweeper_needs_human",
       "comment_id": "5491689336",
@@ -32807,6 +32774,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135895:5513437291:2026-09-02T17:13:28Z:re_review",
+      "comment_id": "5513437291",
+      "comment_version_key": "5513437291:2026-09-02T17:13:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-5513437291",
+      "comment_created_at": "2026-09-02T17:13:28Z",
+      "comment_updated_at": "2026-09-02T17:13:28Z",
+      "comment_body_sha256": "9d17349712dc6ab587b08f5e61c8c57ce5a9818da24f8b078b9ccf5410dc880a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135895,
+      "author": "lordratner",
+      "author_id": 49489398,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T17:16:04.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nextcloud-talk-inbound-media",
+        "head_sha": "00b67e7e5fc23b0fc5ac134f836d0ac9094e64cf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
