@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T05:14:00.754Z",
+  "updated_at": "2026-09-02T05:14:10.488Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135729:5502698134:2026-09-02T00:54:53Z:clawsweeper_needs_human",
-      "comment_id": "5502698134",
-      "comment_version_key": "5502698134:2026-09-02T00:54:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135729#issuecomment-5502698134",
-      "comment_created_at": "2026-09-02T00:54:53Z",
-      "comment_updated_at": "2026-09-02T00:54:53Z",
-      "comment_body_sha256": "c2f84f9d66b42e39065d5c01207d3fd4d81406c6232b56906ec8c4ac5a31f007",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135729,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the uninstall planner, whose marker is consumed by startup and repair policy; the PR supplies focused tests and... (sha=9652bea80ce10580ca0b474fd257fbd90ab68294)",
-      "expected_head_sha": "9652bea80ce10580ca0b474fd257fbd90ab68294",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T01:18:00.193Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-uninstall-provider-startup",
-        "head_sha": "9652bea80ce10580ca0b474fd257fbd90ab68294",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135735:5502712757:2026-09-02T00:56:47Z:clawsweeper_needs_human",
       "comment_id": "5502712757",
@@ -32515,6 +32482,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133800:5504726912:2026-09-02T05:12:42Z:re_review",
+      "comment_id": "5504726912",
+      "comment_version_key": "5504726912:2026-09-02T05:12:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133800#issuecomment-5504726912",
+      "comment_created_at": "2026-09-02T05:12:42Z",
+      "comment_updated_at": "2026-09-02T05:12:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133800,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T05:14:07.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-scaffold-public-sdk-main",
+        "head_sha": "23c11c2d425c33e63b19184b4b2915057075f6af",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
