@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:11:43.765Z",
+  "updated_at": "2026-09-02T02:11:49.142Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124162:5305159269:2026-08-16T01:35:04Z:re_review",
-      "comment_id": "5305159269",
-      "comment_version_key": "5305159269:2026-08-16T01:35:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124162#issuecomment-5305159269",
-      "comment_created_at": "2026-08-16T01:35:04Z",
-      "comment_updated_at": "2026-08-16T01:35:04Z",
-      "comment_body_sha256": "e87317264968f2586df7995b37541b25be15a0818e132d2949dfed0b8ff2a420",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124162,
-      "author": "markr9805",
-      "author_id": 23192809,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:44:03.191Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124162:5305204891:2026-08-16T01:49:35Z:re_review",
       "comment_id": "5305204891",
@@ -32946,6 +32919,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T02:11:43.765Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116437:5132965098:2026-09-02T02:10:40Z:clawsweeper_needs_human",
+      "comment_id": "5132965098",
+      "comment_version_key": "5132965098:2026-09-02T02:10:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116437#issuecomment-5132965098",
+      "comment_created_at": "2026-07-30T15:36:30Z",
+      "comment_updated_at": "2026-09-02T02:10:40Z",
+      "comment_body_sha256": "a12d7c9291abbfc88029335a22c03af50f8bcefb8d1eb01213f51abeec48da72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116437,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the draft dirty against its intended stacked parent, leaving the exact three-way merge and its session-state behavior unproven. (sha=c039575b1dc4e5228a3f6f73d6734ad1dd4926e6)",
+      "expected_head_sha": "c039575b1dc4e5228a3f6f73d6734ad1dd4926e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:11:49.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/session-store-ownership",
+        "head_sha": "c039575b1dc4e5228a3f6f73d6734ad1dd4926e6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
