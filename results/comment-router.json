@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:01:57.574Z",
+  "updated_at": "2026-09-02T07:03:17.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135831:5503673861:2026-09-02T03:01:18Z:clawsweeper_needs_human",
-      "comment_id": "5503673861",
-      "comment_version_key": "5503673861:2026-09-02T03:01:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135831#issuecomment-5503673861",
-      "comment_created_at": "2026-09-02T03:01:18Z",
-      "comment_updated_at": "2026-09-02T03:01:18Z",
-      "comment_body_sha256": "8ba9be9f17a0c3f167c5bf4ed587878667214129a20dc8c03cff4a70deebd3cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135831,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - The active PR already directly owns the source-proven issue; no separate repair lane is warranted. (sha=3b68e78d1e3eccbd068744e74d7c55e75645e14d)",
-      "expected_head_sha": "3b68e78d1e3eccbd068744e74d7c55e75645e14d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:02:18.212Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/message-cli-scoped-channel-135573",
-        "head_sha": "3b68e78d1e3eccbd068744e74d7c55e75645e14d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135832:5503678994:2026-09-02T03:02:01Z:clawsweeper_needs_human",
       "comment_id": "5503678994",
@@ -32427,6 +32394,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135831:5505783057:2026-09-02T07:02:13Z:re_review",
+      "comment_id": "5505783057",
+      "comment_version_key": "5505783057:2026-09-02T07:02:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135831#issuecomment-5505783057",
+      "comment_created_at": "2026-09-02T07:02:13Z",
+      "comment_updated_at": "2026-09-02T07:02:13Z",
+      "comment_body_sha256": "fd2da7aa3a8a0cb34613b886b89d9479dc129d95d1c439f87804650870497c20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135831,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T07:03:10.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/message-cli-scoped-channel-135573",
+        "head_sha": "a248f9cea50ada0245c59b40331309966c7d9bc1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
