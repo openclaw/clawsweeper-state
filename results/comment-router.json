@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T05:32:33.216Z",
+  "updated_at": "2026-09-02T05:32:50.600Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135561:5501182168:2026-09-02T01:38:10Z:clawsweeper_needs_human",
-      "comment_id": "5501182168",
-      "comment_version_key": "5501182168:2026-09-02T01:38:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135561#issuecomment-5501182168",
-      "comment_created_at": "2026-09-01T22:18:01Z",
-      "comment_updated_at": "2026-09-02T01:38:10Z",
-      "comment_body_sha256": "25edb855294d7516fb5481dd7ead6cedeb78c0aa60ec677cd78ea341afe4d25c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135561,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied successful Docker survivor run is for b56e3bb, while the final candidate-package trust-loader implementation was added later; an exact-head run must show that the emitted... (sha=5315475d723459fce6d3574174ac1eca60a6447c)",
-      "expected_head_sha": "5315475d723459fce6d3574174ac1eca60a6447c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T01:39:33.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/upgrade-survivor-accepted-surface",
-        "head_sha": "5315475d723459fce6d3574174ac1eca60a6447c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135761:5503038378:2026-09-02T01:38:28Z:clawsweeper_needs_human",
       "comment_id": "5503038378",
@@ -32463,6 +32430,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133800:5504912698:2026-09-02T05:31:53Z:re_review",
+      "comment_id": "5504912698",
+      "comment_version_key": "5504912698:2026-09-02T05:31:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133800#issuecomment-5504912698",
+      "comment_created_at": "2026-09-02T05:31:53Z",
+      "comment_updated_at": "2026-09-02T05:31:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133800,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T05:32:48.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/provider-scaffold-public-sdk-main",
+        "head_sha": "48b2413542cab6a802e1a29cdff13e513b7396e1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
