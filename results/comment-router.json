@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T23:24:11.268Z",
+  "updated_at": "2026-09-02T23:24:33.521Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5306286478:2026-08-16T07:17:42Z:re_review",
-      "comment_id": "5306286478",
-      "comment_version_key": "5306286478:2026-08-16T07:17:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5306286478",
-      "comment_created_at": "2026-08-16T07:17:42Z",
-      "comment_updated_at": "2026-08-16T07:17:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T20:23:15.648Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5307592000:2026-08-16T13:08:54Z:re_review",
       "comment_id": "5307592000",
@@ -32694,6 +32667,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T23:24:11.268Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1057:5498666420:2026-09-02T23:23:29Z:clawsweeper_needs_human",
+      "comment_id": "5498666420",
+      "comment_version_key": "5498666420:2026-09-02T23:23:29Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1057#issuecomment-5498666420",
+      "comment_created_at": "2026-09-01T18:40:41Z",
+      "comment_updated_at": "2026-09-02T23:23:29Z",
+      "comment_body_sha256": "f3223943a0f9acb901eebbf0895e5925c9b04d06746a4db3d94ed4db6b5cc32e",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Classify flattened Reply-To as untrusted content (P2)** - --wrap-untrusted normalizes this key to replyto, but the shared untrusted-content registry does not include it. A sender-controlled Reply-To display name...; Review finding: [P2] Classify flattened Reply-To as untrusted content — internal/cmd/gmail_get.go:83 - [medium] Flattened Reply-To bypasses untrusted wrapping — internal/cmd/gmail... (sha=5dbea716b234d1e72d8fe6ad7da543d2aa62916b)",
+      "expected_head_sha": "5dbea716b234d1e72d8fe6ad7da543d2aa62916b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T23:24:33.521Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "zora/reply-to-flattened-header",
+        "head_sha": "5dbea716b234d1e72d8fe6ad7da543d2aa62916b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
