@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:00:50.194Z",
+  "updated_at": "2026-09-02T02:00:51.782Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134572:5501268674:2026-09-01T22:26:56Z:maintainer_approve_automerge",
-      "comment_id": "5501268674",
-      "comment_version_key": "5501268674:2026-09-01T22:26:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134572#issuecomment-5501268674",
-      "comment_created_at": "2026-09-01T22:26:56Z",
-      "comment_updated_at": "2026-09-01T22:26:56Z",
-      "comment_body_sha256": "bfb20148953b95290c8bb93dcab3f1368189967dcc6592c9384ef3e77aefabaf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134572,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "approve",
-      "intent": "maintainer_approve_automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": "fbffbb18d1ac925da402929b00409b34cb3d3ff8",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T22:30:57.559Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "omarshahine/imessage-bridge-probe-revalidation",
-        "head_sha": "fbffbb18d1ac925da402929b00409b34cb3d3ff8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "pending",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "merge",
-          "status": "blocked",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118823:5170021459:2026-09-01T22:33:15Z:clawsweeper_auto_repair",
       "comment_id": "5170021459",
@@ -32786,6 +32733,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T02:00:50.194Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:70002:4340784926:2026-09-02T01:59:43Z:clawsweeper_needs_human",
+      "comment_id": "4340784926",
+      "comment_version_key": "4340784926:2026-09-02T01:59:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/70002#issuecomment-4340784926",
+      "comment_created_at": "2026-04-29T04:25:58Z",
+      "comment_updated_at": "2026-09-02T01:59:43Z",
+      "comment_body_sha256": "1f0f939d480424fd92e9c1b2f3b7f705dbd18f59e95e2a78eeca70c585f93eb4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 70002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the release translation workflow and its changed behavior is whether the dispatch API call runs; the body says... (sha=edfe6e69f5d9098f49b9117952abd04baee0bad0)",
+      "expected_head_sha": "edfe6e69f5d9098f49b9117952abd04baee0bad0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:00:51.782Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/skip-docs-publish-in-forks",
+        "head_sha": "edfe6e69f5d9098f49b9117952abd04baee0bad0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
