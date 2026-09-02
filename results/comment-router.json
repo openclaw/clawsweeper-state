@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:04:51.151Z",
+  "updated_at": "2026-09-02T02:05:12.934Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131584:5484028122:2026-08-31T20:20:09Z:re_review",
-      "comment_id": "5484028122",
-      "comment_version_key": "5484028122:2026-08-31T20:20:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131584#issuecomment-5484028122",
-      "comment_created_at": "2026-08-31T20:20:09Z",
-      "comment_updated_at": "2026-08-31T20:20:09Z",
-      "comment_body_sha256": "cb656dc0aef80e08802d5868c3f1fca840b89c5f0231d3235e20696f1109cabc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131584,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:37:56.689Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131584:5484962983:2026-08-31T21:35:45Z:re_review",
       "comment_id": "5484962983",
@@ -32824,6 +32797,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135728:5502695103:2026-09-02T02:04:11Z:clawsweeper_needs_human",
+      "comment_id": "5502695103",
+      "comment_version_key": "5502695103:2026-09-02T02:04:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135728#issuecomment-5502695103",
+      "comment_created_at": "2026-09-02T00:54:30Z",
+      "comment_updated_at": "2026-09-02T02:04:11Z",
+      "comment_body_sha256": "3de331857396e15c3aaa21f7aa19024117053fc06051e895cef45bf36c61051f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135728,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pnpm v12.1 virtual-store shortening implementation could not be directly checked in this reviewer environment; confirm that upstream contract alongside exact-head CI before merge. (sha=34b8ab9c2464160188177030d2739bbe257908d6)",
+      "expected_head_sha": "34b8ab9c2464160188177030d2739bbe257908d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T02:05:12.934Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pnpm-isolated-linker",
+        "head_sha": "34b8ab9c2464160188177030d2739bbe257908d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
