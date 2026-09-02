@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:03:30.770Z",
+  "updated_at": "2026-09-02T21:03:42.930Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabfleet:124:5513540479:2026-09-02T17:21:41Z:clawsweeper_auto_repair",
-      "comment_id": "5513540479",
-      "comment_version_key": "5513540479:2026-09-02T17:21:41Z",
-      "comment_url": "https://github.com/openclaw/crabfleet/pull/124#issuecomment-5513540479",
-      "comment_created_at": "2026-09-02T17:21:41Z",
-      "comment_updated_at": "2026-09-02T17:21:41Z",
-      "comment_body_sha256": "73e59fc2ce2cb6a667efeab1b9e9e33235712fd65675f00ba6917e8ce77a02da",
-      "repo": "openclaw/crabfleet",
-      "issue_number": 124,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d6e75cc3ff5dcf26eeea9988fe5958d4dd891c75)",
-      "expected_head_sha": "d6e75cc3ff5dcf26eeea9988fe5958d4dd891c75",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:23:06.736Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-api-timeout",
-        "head_sha": "d6e75cc3ff5dcf26eeea9988fe5958d4dd891c75",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:681:5512609469:2026-09-02T17:22:17Z:clawsweeper_needs_human",
       "comment_id": "5512609469",
@@ -32687,6 +32654,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134434:5516359128:2026-09-02T21:02:50Z:re_review",
+      "comment_id": "5516359128",
+      "comment_version_key": "5516359128:2026-09-02T21:02:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134434#issuecomment-5516359128",
+      "comment_created_at": "2026-09-02T21:02:50Z",
+      "comment_updated_at": "2026-09-02T21:02:50Z",
+      "comment_body_sha256": "54ce9a19fce86df0db9dd32c59fd5606d5a2417ca65990ee12fe35bb38065975",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134434,
+      "author": "jjjhenriksen",
+      "author_id": 179184921,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head 1f27283871b3d4eae8f06d79284718e2038e8c76. the pr body now contains a successful bundled control ui + real loopback gateway receipt and screenshot artifact path for create, work filter, escaped-comma tag round-trip, and clear",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T21:03:39.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/automation-grouping-tagging",
+        "head_sha": "1f27283871b3d4eae8f06d79284718e2038e8c76",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
