@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T14:35:29.349Z",
+  "updated_at": "2026-09-02T14:36:26.728Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135730:5507864728:2026-09-02T10:04:09Z:re_review",
-      "comment_id": "5507864728",
-      "comment_version_key": "5507864728:2026-09-02T10:04:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135730#issuecomment-5507864728",
-      "comment_created_at": "2026-09-02T10:04:09Z",
-      "comment_updated_at": "2026-09-02T10:04:09Z",
-      "comment_body_sha256": "687ea046b9a037a70e7b259a5adcd457df55077ad93c9dae7291c7f24c1af6fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135730,
-      "author": "qinghuanandejiangshi",
-      "author_id": 175406538,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T10:05:07.876Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-feishu-group-binding-hot-reload",
-        "head_sha": "9ec90674d85fd84cff3a0ff00447b0d40ac04f0d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136235:5507862475:2026-09-02T10:03:58Z:clawsweeper_auto_repair",
       "comment_id": "5507862475",
@@ -32486,6 +32439,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T14:35:29.349Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129144:5407424228:2026-09-02T14:34:58Z:clawsweeper_auto_repair",
+      "comment_id": "5407424228",
+      "comment_version_key": "5407424228:2026-09-02T14:34:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129144#issuecomment-5407424228",
+      "comment_created_at": "2026-08-25T08:12:08Z",
+      "comment_updated_at": "2026-09-02T14:34:58Z",
+      "comment_body_sha256": "2f26a20614a41e4d57166efca557f6a11d47439ca9ab21b1826211a6c658c76c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129144,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=95feb34d7813a3eefed7697b9fe36f098cebb4a4)",
+      "expected_head_sha": "95feb34d7813a3eefed7697b9fe36f098cebb4a4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T14:36:26.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-opaque-realtime-admission",
+        "head_sha": "95feb34d7813a3eefed7697b9fe36f098cebb4a4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
