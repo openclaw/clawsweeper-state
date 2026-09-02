@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T11:31:58.882Z",
+  "updated_at": "2026-09-02T11:32:06.844Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:215:5506104782:2026-09-02T07:33:03Z:clawsweeper_needs_human",
-      "comment_id": "5506104782",
-      "comment_version_key": "5506104782:2026-09-02T07:33:03Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/215#issuecomment-5506104782",
-      "comment_created_at": "2026-09-02T07:33:03Z",
-      "comment_updated_at": "2026-09-02T07:33:03Z",
-      "comment_body_sha256": "a6915eb06a54213d2650b3ba50e37ae7f51834a28d094c95d7cf33ce3f3a431f",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 215,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the local untracked-path classifier feeding source capture and snapshots; the PR describes native-Git... (sha=1191d3c40bdcd277ab40f7c781b4addc584b13d3)",
-      "expected_head_sha": "1191d3c40bdcd277ab40f7c781b4addc584b13d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T07:33:48.299Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-scope-and-input-cleanup",
-        "head_sha": "1191d3c40bdcd277ab40f7c781b4addc584b13d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136101:5506106715:2026-09-02T07:33:14Z:clawsweeper_needs_human",
       "comment_id": "5506106715",
@@ -33138,6 +33105,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132260:5508843318:2026-09-02T11:31:08Z:re_review",
+      "comment_id": "5508843318",
+      "comment_version_key": "5508843318:2026-09-02T11:31:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132260#issuecomment-5508843318",
+      "comment_created_at": "2026-09-02T11:31:08Z",
+      "comment_updated_at": "2026-09-02T11:31:08Z",
+      "comment_body_sha256": "363eef28520608f27b58b7181e1471dac45860633af93dc713a4a0a9d6a58ef8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132260,
+      "author": "0xNagato",
+      "author_id": 116608222,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T11:32:02.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-cold-start-append-catchup",
+        "head_sha": "ef31420d574dab9fd12343a5bca4dcc7d4b74870",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
