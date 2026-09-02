@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T10:23:59.398Z",
+  "updated_at": "2026-09-02T10:24:09.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126288:5505516711:2026-09-02T06:35:28Z:re_review",
-      "comment_id": "5505516711",
-      "comment_version_key": "5505516711:2026-09-02T06:35:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126288#issuecomment-5505516711",
-      "comment_created_at": "2026-09-02T06:35:28Z",
-      "comment_updated_at": "2026-09-02T06:35:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126288,
-      "author": "xydigitLybnnnn",
-      "author_id": 280613588,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T06:36:24.870Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/125284-approval-prompt-not-blocking-exec-v2",
-        "head_sha": "a8b9a2b322981def86541fc29f93f8907164be15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1045:5464144309:2026-09-02T06:35:53Z:clawsweeper_needs_human",
       "comment_id": "5464144309",
@@ -33216,6 +33169,39 @@
         "kind": "pull_request",
         "branch": "fix/webchat-omitted-image-placeholder",
         "head_sha": "99257564795ef536c959d28bfbfe3300db092473",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136173:5506965761:2026-09-02T10:22:55Z:clawsweeper_needs_human",
+      "comment_id": "5506965761",
+      "comment_version_key": "5506965761:2026-09-02T10:22:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136173#issuecomment-5506965761",
+      "comment_created_at": "2026-09-02T08:48:58Z",
+      "comment_updated_at": "2026-09-02T10:22:55Z",
+      "comment_body_sha256": "5abd773823fb14de5bb50562afa66e8ba3f4dbd8c48d86f9e117de3fa760384d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes persisted-in-memory selection and reconnect behavior for existing Android chats; merge should wait for the PR’s stated original-Gateway restoration and whole-Gateway tear... (sha=e6e122dec7e7a4dbfe8085afa6786e2758cddeba)",
+      "expected_head_sha": "e6e122dec7e7a4dbfe8085afa6786e2758cddeba",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T10:24:09.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-session-appearance-ownership",
+        "head_sha": "e6e122dec7e7a4dbfe8085afa6786e2758cddeba",
         "cluster_id": null,
         "job_path": null
       }
