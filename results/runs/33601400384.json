@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135970",
+  "mode": "autonomous",
+  "run_id": "33601400384",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33601400384",
+  "head_sha": "904579a319c4393f18c8d42c25e840b74dbab2c0",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135970.md",
+  "published_at": "2026-09-02T08:14:44.429Z",
+  "canonical": "#135970",
+  "canonical_issue": "#135970",
+  "canonical_pr": null,
+  "summary": "#135970 is a confirmed narrow packaging defect: Codex is excluded from root dist but is not selected for the external local-dist pipeline. A new fix PR is appropriate, but this read-only checkout lacks both plugin dependencies and the mandatory sibling ../codex source required before a code-change verdict; no branch, build, or tests could be performed.",
+  "actions": [
+    {
+      "target": "#135970",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135970",
+      "candidate_fix": null,
+      "reason": "Prepare the narrow repair artifact only; do not open a PR until a writable executor installs dependencies, inspects sibling ../codex source, and completes the required build proof."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
