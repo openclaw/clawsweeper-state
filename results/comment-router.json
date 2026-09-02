@@ -1,37 +1,6 @@
 {
-  "updated_at": "2026-09-02T09:12:16.159Z",
+  "updated_at": "2026-09-02T09:12:23.940Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:57592:4336627784:2026-09-02T05:11:05Z:autoclose",
-      "comment_id": "4336627784",
-      "comment_version_key": "4336627784:2026-09-02T05:11:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/57592#issuecomment-4336627784",
-      "comment_created_at": "2026-04-28T15:16:31Z",
-      "comment_updated_at": "2026-09-02T05:11:05Z",
-      "comment_body_sha256": "9908fe4d696d04f221ef79e899fcb2df13aa3a7edd9c431705e446bb18fa268d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 57592,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "autoclose structured ClawSweeper close marker: close-required",
-      "intent": "autoclose",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper close marker: close-required",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:20:02.144Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111731:5021256231:2026-09-02T05:09:24Z:clawsweeper_auto_repair",
       "comment_id": "5021256231",
@@ -33257,6 +33226,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132260:5507227345:2026-09-02T09:11:13Z:re_review",
+      "comment_id": "5507227345",
+      "comment_version_key": "5507227345:2026-09-02T09:11:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132260#issuecomment-5507227345",
+      "comment_created_at": "2026-09-02T09:11:13Z",
+      "comment_updated_at": "2026-09-02T09:11:13Z",
+      "comment_body_sha256": "b76fe119584ebdd9ca87b7bf5611c2432f365dfe58df05f38db8eb67a328c195",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132260,
+      "author": "0xNagato",
+      "author_id": 116608222,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T09:12:20.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-cold-start-append-catchup",
+        "head_sha": "c7e7f33de68b2549a074234e3c618b5542dc00f6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
