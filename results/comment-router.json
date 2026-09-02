@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T14:52:04.893Z",
+  "updated_at": "2026-09-02T14:52:14.686Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136171:5506887269:2026-09-02T10:11:57Z:clawsweeper_auto_repair",
-      "comment_id": "5506887269",
-      "comment_version_key": "5506887269:2026-09-02T10:11:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136171#issuecomment-5506887269",
-      "comment_created_at": "2026-09-02T08:42:03Z",
-      "comment_updated_at": "2026-09-02T10:11:57Z",
-      "comment_body_sha256": "76fa22b4d586114c87de6613b8973477e5a91314264e09723a0be81a50631463",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136171,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=31813bcf48e1b336f0c4a52fa764fb36ece8951a)",
-      "expected_head_sha": "31813bcf48e1b336f0c4a52fa764fb36ece8951a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T10:19:17.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-archive-enametoolong",
-        "head_sha": "31813bcf48e1b336f0c4a52fa764fb36ece8951a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136161:5506902718:2026-09-02T10:00:17Z:clawsweeper_needs_human",
       "comment_id": "5506902718",
@@ -32540,6 +32507,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128454:5511496098:2026-09-02T14:51:14Z:re_review",
+      "comment_id": "5511496098",
+      "comment_version_key": "5511496098:2026-09-02T14:51:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5511496098",
+      "comment_created_at": "2026-09-02T14:51:14Z",
+      "comment_updated_at": "2026-09-02T14:51:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128454,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T14:52:11.516Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/104358-clean-staging-media-reopened",
+        "head_sha": "d3e17d179adaf909811921269e052701348af7c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
