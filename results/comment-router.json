@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T10:00:47.706Z",
+  "updated_at": "2026-09-02T10:00:54.137Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136014:5505248052:2026-09-02T06:05:47Z:clawsweeper_needs_human",
-      "comment_id": "5505248052",
-      "comment_version_key": "5505248052:2026-09-02T06:05:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136014#issuecomment-5505248052",
-      "comment_created_at": "2026-09-02T06:05:47Z",
-      "comment_updated_at": "2026-09-02T06:05:47Z",
-      "comment_body_sha256": "51c2ec0cdadf586e9bf4ef414eded5c19468049ad4b949c7f0f81b7be9a75271",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136014,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body says its synthetic Gateway-send check is still pending, so end-to-end confirmation of the shared sanitizer's caller path is not yet recorded. (sha=ed3160c0fc6d6292c56aa5361b9bf83277682fdf)",
-      "expected_head_sha": "ed3160c0fc6d6292c56aa5361b9bf83277682fdf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T06:06:55.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf3-reasoning-preamble",
-        "head_sha": "ed3160c0fc6d6292c56aa5361b9bf83277682fdf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130877:5505306577:2026-09-02T06:12:15Z:re_review",
       "comment_id": "5505306577",
@@ -33135,6 +33102,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T10:00:47.706Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:122:5507807912:2026-09-02T09:59:59Z:clawsweeper_needs_human",
+      "comment_id": "5507807912",
+      "comment_version_key": "5507807912:2026-09-02T09:59:59Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/122#issuecomment-5507807912",
+      "comment_created_at": "2026-09-02T09:59:59Z",
+      "comment_updated_at": "2026-09-02T09:59:59Z",
+      "comment_body_sha256": "b1c54b41a030bc0acb12ac8aeb0c4750c76813895721893a1bbc28331f34c1c4",
+      "repo": "openclaw/octopool",
+      "issue_number": 122,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the protected pr merge lifecycle, but the reviewed body only promises a later shim-mediated exact-head squash m... (sha=626b9b7bab8e1fa6a9865ec266213fab51064419)",
+      "expected_head_sha": "626b9b7bab8e1fa6a9865ec266213fab51064419",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T10:00:54.137Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/protected-merge-subject-20260902",
+        "head_sha": "626b9b7bab8e1fa6a9865ec266213fab51064419",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
