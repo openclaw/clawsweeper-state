@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:52:31.507Z",
+  "updated_at": "2026-09-02T07:53:24.647Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135731:5502730355:2026-09-02T03:56:48Z:clawsweeper_needs_human",
-      "comment_id": "5502730355",
-      "comment_version_key": "5502730355:2026-09-02T03:56:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135731#issuecomment-5502730355",
-      "comment_created_at": "2026-09-02T00:59:08Z",
-      "comment_updated_at": "2026-09-02T03:56:48Z",
-      "comment_body_sha256": "41a218857cf2370096878bef8a8a7fea1af89222899c727121804521045acc57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135731,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by one net line; the persistent transition identity is the minimal controller-owned state needed to distinguish an obsolete fade completion from the current tran... (sha=27ae3f1a016d73b8882cdc6df0768e1aff6ddf4b)",
-      "expected_head_sha": "27ae3f1a016d73b8882cdc6df0768e1aff6ddf4b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:59:28.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/voice-overlay-dismissal-20260901",
-        "head_sha": "27ae3f1a016d73b8882cdc6df0768e1aff6ddf4b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135746:5502817799:2026-09-02T03:54:54Z:clawsweeper_needs_human",
       "comment_id": "5502817799",
@@ -32419,6 +32386,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136026:5506329098:2026-09-02T07:52:18Z:re_review",
+      "comment_id": "5506329098",
+      "comment_version_key": "5506329098:2026-09-02T07:52:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136026#issuecomment-5506329098",
+      "comment_created_at": "2026-09-02T07:52:18Z",
+      "comment_updated_at": "2026-09-02T07:52:18Z",
+      "comment_body_sha256": "3596b735827f3dffce1923e3906f35ece686652ee2c1b2efe226f47083439013",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136026,
+      "author": "yasuhito",
+      "author_id": 8810,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T07:53:22.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-managed-runtime-dist",
+        "head_sha": "c0fa13bb24d1cd0227a631ce819972ef5f1f7f5a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
