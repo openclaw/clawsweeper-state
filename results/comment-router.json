@@ -2,39 +2,6 @@
   "updated_at": "2026-09-02T18:38:53.977Z",
   "commands": [
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128845:5400763023:2026-09-02T14:31:13Z:clawsweeper_needs_human",
-      "comment_id": "5400763023",
-      "comment_version_key": "5400763023:2026-09-02T14:31:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128845#issuecomment-5400763023",
-      "comment_created_at": "2026-08-24T20:12:58Z",
-      "comment_updated_at": "2026-09-02T14:31:13Z",
-      "comment_body_sha256": "d5dfa1160d516849625c4d16c1042e479cf78be8b01b08f1ab4c44e361f6e26d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128845,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging deliberately changes idle-reset behavior: a visible direct cron mirror can keep its destination session alive for the configured idle window even without a new human turn. (sha=96535ba1d1f0ae40db38d90212c609f0b0a3342c)",
-      "expected_head_sha": "96535ba1d1f0ae40db38d90212c609f0b0a3342c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T14:32:29.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-delivery-mirror-idle-freshness",
-        "head_sha": "96535ba1d1f0ae40db38d90212c609f0b0a3342c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:128845:5407886026:2026-08-25T11:04:24Z:re_review",
       "comment_id": "5407886026",
       "comment_version_key": "5407886026:2026-08-25T11:04:24Z",
@@ -32883,6 +32850,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131735:5514520242:2026-09-02T18:37:56Z:re_review",
+      "comment_id": "5514520242",
+      "comment_version_key": "5514520242:2026-09-02T18:37:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131735#issuecomment-5514520242",
+      "comment_created_at": "2026-09-02T18:37:56Z",
+      "comment_updated_at": "2026-09-02T18:37:56Z",
+      "comment_body_sha256": "f9d22686f01103c1e22d44bf11ab85c072ebb701295da78179cd873d53603b0e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131735,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T18:38:50.028Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/subagent-background-completion-rejection",
+        "head_sha": "85b65fb964d68d6f7c5c0414d7c4d280430eb66e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136178:5514518966:2026-09-02T18:37:50Z:re_review",
