@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T16:39:56.061Z",
+  "updated_at": "2026-09-02T16:40:03.142Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5506505380:2026-09-02T08:08:06Z:re_review",
-      "comment_id": "5506505380",
-      "comment_version_key": "5506505380:2026-09-02T08:08:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5506505380",
-      "comment_created_at": "2026-09-02T08:08:06Z",
-      "comment_updated_at": "2026-09-02T08:08:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T12:25:36.139Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3236:5438113647:2026-09-02T11:28:14Z:clawsweeper_auto_repair",
       "comment_id": "5438113647",
@@ -32741,6 +32714,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136356:5511135313:2026-09-02T16:38:40Z:clawsweeper_needs_human",
+      "comment_id": "5511135313",
+      "comment_version_key": "5511135313:2026-09-02T16:38:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136356#issuecomment-5511135313",
+      "comment_created_at": "2026-09-02T14:27:24Z",
+      "comment_updated_at": "2026-09-02T16:38:40Z",
+      "comment_body_sha256": "5323f2e2581174015e95540d67af648878ce06f09adb08ec830b82a870633f07",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the shared remote workspace mutation-lock template used by transaction, receiver, and reset scripts; the PR sup... (sha=db967807bdd20c6d29b31e69573ba41fe2dd0e04)",
+      "expected_head_sha": "db967807bdd20c6d29b31e69573ba41fe2dd0e04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T16:40:03.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workspace-lock-race",
+        "head_sha": "db967807bdd20c6d29b31e69573ba41fe2dd0e04",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
