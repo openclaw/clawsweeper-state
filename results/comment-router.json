@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:19:51.982Z",
+  "updated_at": "2026-09-02T02:20:13.894Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135195:5495024906:2026-09-01T22:27:28Z:clawsweeper_needs_human",
-      "comment_id": "5495024906",
-      "comment_version_key": "5495024906:2026-09-01T22:27:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135195#issuecomment-5495024906",
-      "comment_created_at": "2026-09-01T13:52:39Z",
-      "comment_updated_at": "2026-09-01T22:27:28Z",
-      "comment_body_sha256": "0bd70eaf30f1f4f2879964fb75b49046b64693170a034deb1d590e198abf0f7a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135195,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +2 lines after removing the unused alternate ingress path; the remaining typed cross-owner handoff is justified, but should remain limited to this existing cont... (sha=47ee099e781aa561c4a291ef4ce1e1bbe4f47947)",
-      "expected_head_sha": "47ee099e781aa561c4a291ef4ce1e1bbe4f47947",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:49:01.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-mention-facts-context",
-        "head_sha": "47ee099e781aa561c4a291ef4ce1e1bbe4f47947",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135210:5496036139:2026-09-01T22:31:59Z:clawsweeper_needs_human",
       "comment_id": "5496036139",
@@ -33090,6 +33057,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131511:5503356956:2026-09-02T02:19:14Z:re_review",
+      "comment_id": "5503356956",
+      "comment_version_key": "5503356956:2026-09-02T02:19:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5503356956",
+      "comment_created_at": "2026-09-02T02:19:14Z",
+      "comment_updated_at": "2026-09-02T02:19:14Z",
+      "comment_body_sha256": "dfb8f8afc29b78c250f82c635bd299619c8042cb6cfde63a299ba891aa363dde",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131511,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T02:20:11.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bundled-channel-icon-assets",
+        "head_sha": "6f39168d48645a9e77ad9f1be15d7f56e491b399",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
