@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:27:39.094Z",
+  "updated_at": "2026-09-02T07:27:42.224Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135830:5503707733:2026-09-02T03:21:46Z:clawsweeper_needs_human",
-      "comment_id": "5503707733",
-      "comment_version_key": "5503707733:2026-09-02T03:21:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135830#issuecomment-5503707733",
-      "comment_created_at": "2026-09-02T03:05:51Z",
-      "comment_updated_at": "2026-09-02T03:21:46Z",
-      "comment_body_sha256": "66bdc5c55b6f638924dfcd7e86c3bd20690eb685e69fceaeb49078ee578349aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135830,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 20 net production lines; the shared inventory needs an explicit exclusion fact, but that deliberate growth should remain visible to the backup owner. (sha=889869148f9ad0dd716379764ab17c6c2ab724a9)",
-      "expected_head_sha": "889869148f9ad0dd716379764ab17c6c2ab724a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:32:35.644Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/pr-135243",
-        "head_sha": "889869148f9ad0dd716379764ab17c6c2ab724a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135853:5503865038:2026-09-02T03:26:13Z:clawsweeper_needs_human",
       "comment_id": "5503865038",
@@ -32326,6 +32293,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136092:5506035427:2026-09-02T07:26:36Z:clawsweeper_auto_repair",
+      "comment_id": "5506035427",
+      "comment_version_key": "5506035427:2026-09-02T07:26:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136092#issuecomment-5506035427",
+      "comment_created_at": "2026-09-02T07:26:36Z",
+      "comment_updated_at": "2026-09-02T07:26:36Z",
+      "comment_body_sha256": "59d816d92853e069d59c589f465dc2ccfcf9e1f0995ef9f97fe7bbef6372dfa6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136092,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=0e6dafb2022918dbdc29c3c3307992c10fe4f85a)",
+      "expected_head_sha": "0e6dafb2022918dbdc29c3c3307992c10fe4f85a",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-02T07:27:42.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pash/restore-slack-plugin-behavior",
+        "head_sha": "dd00e8118fd5545b432ef7508814c25b89d46196",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
