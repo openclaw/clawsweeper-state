@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:48:46.449Z",
+  "updated_at": "2026-09-02T19:49:06.731Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136309:5510030374:2026-09-02T15:38:52Z:clawsweeper_needs_human",
-      "comment_id": "5510030374",
-      "comment_version_key": "5510030374:2026-09-02T15:38:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136309#issuecomment-5510030374",
-      "comment_created_at": "2026-09-02T13:08:12Z",
-      "comment_updated_at": "2026-09-02T15:38:52Z",
-      "comment_body_sha256": "118100502657117922088ab79937c0e51126a44587bc7e7da76c438d1feba822",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This automation change has not yet shown an exact-head hosted trace for the conditional Tideclaw path, so its deadline and downstream tracking-ref behavior remain unproven in the rele... (sha=40f331cbccebf028f3ab59c84ad82d25f19410b3)",
-      "expected_head_sha": "40f331cbccebf028f3ab59c84ad82d25f19410b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T15:45:55.189Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-source-history",
-        "head_sha": "40f331cbccebf028f3ab59c84ad82d25f19410b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136325:5510415807:2026-09-02T15:16:18Z:clawsweeper_needs_human",
       "comment_id": "5510415807",
@@ -32655,6 +32622,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T19:48:46.449Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136496:5515404441:2026-09-02T19:48:05Z:re_review",
+      "comment_id": "5515404441",
+      "comment_version_key": "5515404441:2026-09-02T19:48:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136496#issuecomment-5515404441",
+      "comment_created_at": "2026-09-02T19:48:05Z",
+      "comment_updated_at": "2026-09-02T19:48:05Z",
+      "comment_body_sha256": "d75b17ef12705f481ab4486a4eb6a344a9373c40071bde1539079ef60764ab09",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136496,
+      "author": "pfrederiksen",
+      "author_id": 908172,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T19:49:02.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-managed-policy-migration",
+        "head_sha": "54312474c27cc1ef013a2b5bae2c0a92c4369153",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
