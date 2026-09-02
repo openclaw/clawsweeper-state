@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:55:40.600Z",
+  "updated_at": "2026-09-02T08:55:41.847Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5312911946:2026-08-17T07:05:49Z:re_review",
-      "comment_id": "5312911946",
-      "comment_version_key": "5312911946:2026-08-17T07:05:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5312911946",
-      "comment_created_at": "2026-08-17T07:05:49Z",
-      "comment_updated_at": "2026-08-17T07:05:49Z",
-      "comment_body_sha256": "fb2f2449369f324f40723cfd32665edd22d85d83715d360ca30d5f91c3177bad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T05:00:55.466Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313018912:2026-08-17T07:18:14Z:re_review",
       "comment_id": "5313018912",
@@ -33103,6 +33076,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136150:5506640205:2026-09-02T08:54:33Z:clawsweeper_needs_human",
+      "comment_id": "5506640205",
+      "comment_version_key": "5506640205:2026-09-02T08:54:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136150#issuecomment-5506640205",
+      "comment_created_at": "2026-09-02T08:20:02Z",
+      "comment_updated_at": "2026-09-02T08:54:33Z",
+      "comment_body_sha256": "55cf6c8ec8a22cc678f682ed26560f629967e7a7146a52d6755a61f48484d01e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "Maintainer decision needed: | Question | Recommendation | |---|---| | Should this maintainer-owned test-fixture cleanup land after its exact-head required checks finish green? | **Merge after checks:** Accept the canoni... (sha=a0a5fad1ce4131a833aea1aec2852e5d7c00c2d3)",
+      "expected_head_sha": "a0a5fad1ce4131a833aea1aec2852e5d7c00c2d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T08:55:41.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-perf-sixth-shared-ui-cleanup",
+        "head_sha": "a0a5fad1ce4131a833aea1aec2852e5d7c00c2d3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
