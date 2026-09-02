@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T20:17:05.025Z",
+  "updated_at": "2026-09-02T20:17:44.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5512499093:2026-09-02T16:02:07Z:re_review",
-      "comment_id": "5512499093",
-      "comment_version_key": "5512499093:2026-09-02T16:02:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5512499093",
-      "comment_created_at": "2026-09-02T16:02:07Z",
-      "comment_updated_at": "2026-09-02T16:02:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T16:03:03.366Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/104358-clean-staging-media-reopened",
-        "head_sha": "69310bfad6db85d3eeba34c3a90db0b540ef4b77",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:17:5298592194:2026-09-02T16:01:45Z:clawsweeper_auto_repair",
       "comment_id": "5298592194",
@@ -32812,6 +32765,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-managed-policy-migration",
         "head_sha": "54312474c27cc1ef013a2b5bae2c0a92c4369153",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136570:5515797954:2026-09-02T20:16:32Z:clawsweeper_needs_human",
+      "comment_id": "5515797954",
+      "comment_version_key": "5515797954:2026-09-02T20:16:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136570#issuecomment-5515797954",
+      "comment_created_at": "2026-09-02T20:16:32Z",
+      "comment_updated_at": "2026-09-02T20:16:32Z",
+      "comment_body_sha256": "61db8789e279ff8aa9fe2f54ca8e7559eae8118193997b8b5a729ee837b2fdf3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136570,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +8 lines for the schema property and typed visible-spawn handoff; this is justified by making a shipped model-facing contract visible while deleting the duplica... (sha=bbdcc15d16d901463fc7eef79b9c5b64b9d52f45)",
+      "expected_head_sha": "bbdcc15d16d901463fc7eef79b9c5b64b9d52f45",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T20:17:44.873Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/serene-keller-b510e5",
+        "head_sha": "bbdcc15d16d901463fc7eef79b9c5b64b9d52f45",
         "cluster_id": null,
         "job_path": null
       }
