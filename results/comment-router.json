@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:32:35.019Z",
+  "updated_at": "2026-09-02T22:33:08.432Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135798:5514848556:2026-09-02T19:04:30Z:re_review",
-      "comment_id": "5514848556",
-      "comment_version_key": "5514848556:2026-09-02T19:04:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135798#issuecomment-5514848556",
-      "comment_created_at": "2026-09-02T19:04:30Z",
-      "comment_updated_at": "2026-09-02T19:04:30Z",
-      "comment_body_sha256": "8c93b1c79831f96846fe59df93c975f0229efa584508542557f41826af88193b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135798,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T19:05:36.283Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-rename-redacted-sentinel-135649",
-        "head_sha": "aa9ae0cdf4083acc5f5da2a1650418bc2ae1d93f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133151:5467353272:2026-09-02T19:04:34Z:clawsweeper_needs_human",
       "comment_id": "5467353272",
@@ -32494,6 +32447,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136675:5517356672:2026-09-02T22:32:08Z:clawsweeper_needs_human",
+      "comment_id": "5517356672",
+      "comment_version_key": "5517356672:2026-09-02T22:32:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136675#issuecomment-5517356672",
+      "comment_created_at": "2026-09-02T22:32:08Z",
+      "comment_updated_at": "2026-09-02T22:32:08Z",
+      "comment_body_sha256": "b38972db92661eb75de54ab35a6140f241f479f1c9e4e2779f74db179bfa502f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136675,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the branch as draft and merge-conflicting; rebase it onto current main and rerun the focused lifecycle coverage before merge. (sha=1cbe1c4ee806814d2aa0aea9bdba80f3a1b3131f)",
+      "expected_head_sha": "1cbe1c4ee806814d2aa0aea9bdba80f3a1b3131f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T22:33:08.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-session-delivery-runtime-stop",
+        "head_sha": "1cbe1c4ee806814d2aa0aea9bdba80f3a1b3131f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
