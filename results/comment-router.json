@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T14:41:25.172Z",
+  "updated_at": "2026-09-02T14:41:27.409Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111020:5507885088:2026-09-02T10:05:51Z:re_review",
-      "comment_id": "5507885088",
-      "comment_version_key": "5507885088:2026-09-02T10:05:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111020#issuecomment-5507885088",
-      "comment_created_at": "2026-09-02T10:05:51Z",
-      "comment_updated_at": "2026-09-02T10:05:51Z",
-      "comment_body_sha256": "8ef556f635c90a6827af0907562f96c40833510b26572a8b5d7672a1c4cc5267",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111020,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T10:06:52.039Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-final-close-no-interrupt",
-        "head_sha": "9f809543c10db4e2b082076c919084857ee23fea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135846:5503815114:2026-09-02T10:06:16Z:clawsweeper_needs_human",
       "comment_id": "5503815114",
@@ -32486,6 +32439,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136309:5510030374:2026-09-02T14:39:57Z:clawsweeper_needs_human",
+      "comment_id": "5510030374",
+      "comment_version_key": "5510030374:2026-09-02T14:39:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136309#issuecomment-5510030374",
+      "comment_created_at": "2026-09-02T13:08:12Z",
+      "comment_updated_at": "2026-09-02T14:39:57Z",
+      "comment_body_sha256": "bcb08f7303d7a6abcaefb7dd018ea99a2d853f183f451ed51e01f36c58399b52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 219 net production lines to release-critical automation; exact-head preflight evidence should confirm the deadline and ancestry behavior in the workflow environment. (sha=2dfe731d6ca40a3b7fcfcc0bdb83f03acf3d8d3b)",
+      "expected_head_sha": "2dfe731d6ca40a3b7fcfcc0bdb83f03acf3d8d3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T14:41:27.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-source-history",
+        "head_sha": "2dfe731d6ca40a3b7fcfcc0bdb83f03acf3d8d3b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
