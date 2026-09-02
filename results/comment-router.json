@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T14:43:08.181Z",
+  "updated_at": "2026-09-02T14:45:14.653Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135730:5504539576:2026-09-02T04:50:11Z:re_review",
-      "comment_id": "5504539576",
-      "comment_version_key": "5504539576:2026-09-02T04:50:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135730#issuecomment-5504539576",
-      "comment_created_at": "2026-09-02T04:49:34Z",
-      "comment_updated_at": "2026-09-02T04:50:11Z",
-      "comment_body_sha256": "5d705433b5565a6905256ecfb8a2b3579d95800dd3dbe4daf8e44e0286d66812",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135730,
-      "author": "qinghuanandejiangshi",
-      "author_id": 175406538,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T10:12:09.047Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5507955846:2026-09-02T10:11:55Z:re_review",
       "comment_id": "5507955846",
@@ -32480,6 +32453,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:76:5464099731:2026-09-02T14:10:47Z:clawsweeper_auto_repair",
+      "comment_id": "5464099731",
+      "comment_version_key": "5464099731:2026-09-02T14:10:47Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/76#issuecomment-5464099731",
+      "comment_created_at": "2026-08-29T18:24:29Z",
+      "comment_updated_at": "2026-09-02T14:10:47Z",
+      "comment_body_sha256": "2cfb3d7173078d170bc9dc3fe2f69905971597ebd60cfc52a2cd41ba34240bc4",
+      "repo": "openclaw/shellbench",
+      "issue_number": 76,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=905dd76213e8dd3b8c2a5f6dccd663b58d62e459)",
+      "expected_head_sha": "905dd76213e8dd3b8c2a5f6dccd663b58d62e459",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-02T14:45:14.653Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-jobqueue-thread-lock",
+        "head_sha": "905dd76213e8dd3b8c2a5f6dccd663b58d62e459",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
