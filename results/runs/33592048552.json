@@ -1,0 +1,66 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135860",
+  "mode": "autonomous",
+  "run_id": "33592048552",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33592048552",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135860.md",
+  "published_at": "2026-09-02T05:14:40.181Z",
+  "canonical": "#135860",
+  "canonical_issue": "#135860",
+  "canonical_pr": null,
+  "summary": "No branch or PR was created. The requested narrow repair remains needed, but this worker cannot satisfy the repository’s mandatory direct ../codex inspection gate or edit/validate in this read-only checkout.",
+  "actions": [
+    {
+      "target": "#91744",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#135860",
+      "candidate_fix": null,
+      "reason": "Historical related context; no close action is valid for an already-closed issue."
+    },
+    {
+      "target": "#125878",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#135860",
+      "candidate_fix": null,
+      "reason": "Different root cause and scope; it must remain independent of this bounded inbound SCP repair."
+    },
+    {
+      "target": "#135860",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135860",
+      "candidate_fix": null,
+      "reason": "The source repair is narrow and non-security-sensitive, but required Codex inspection, editing, regression reproduction, and validation cannot occur in this environment."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout with the required sibling ../codex source available and dependencies/cache writable, then rerun this job to create and validate the single fix PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
