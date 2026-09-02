@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:29:21.475Z",
+  "updated_at": "2026-09-02T01:29:22.562Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119702:5247216258:2026-08-10T23:33:16Z:re_review",
-      "comment_id": "5247216258",
-      "comment_version_key": "5247216258:2026-08-10T23:33:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5247216258",
-      "comment_created_at": "2026-08-10T23:33:16Z",
-      "comment_updated_at": "2026-08-10T23:33:16Z",
-      "comment_body_sha256": "4fd84d8735775689b0a8b0e23df12105382415cf2c6428223560f5c9891d527a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T22:05:01.748Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119702:5255874931:2026-08-11T16:24:59Z:re_review",
       "comment_id": "5255874931",
@@ -32496,6 +32469,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T01:29:21.475Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:228:5502962209:2026-09-02T01:28:25Z:clawsweeper_needs_human",
+      "comment_id": "5502962209",
+      "comment_version_key": "5502962209:2026-09-02T01:28:25Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/228#issuecomment-5502962209",
+      "comment_created_at": "2026-09-02T01:28:25Z",
+      "comment_updated_at": "2026-09-02T01:28:25Z",
+      "comment_body_sha256": "49dc4ef73d3127fef6ad3a8d70759be9fdd9589d3ea98cf76ccb8dc75920d241",
+      "repo": "openclaw/clickclack",
+      "issue_number": 228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the release workflow’s new extraction step, which feeds GoReleaser through a runner-temporary file. The PR body... (sha=18264b035b1719bd419e48b3e25de18394538387)",
+      "expected_head_sha": "18264b035b1719bd419e48b3e25de18394538387",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T01:29:22.562Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-0.4.0",
+        "head_sha": "18264b035b1719bd419e48b3e25de18394538387",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
