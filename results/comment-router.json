@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:29:17.357Z",
+  "updated_at": "2026-09-02T08:29:29.740Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135465:5500642335:2026-09-02T04:33:26Z:clawsweeper_needs_human",
-      "comment_id": "5500642335",
-      "comment_version_key": "5500642335:2026-09-02T04:33:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135465#issuecomment-5500642335",
-      "comment_created_at": "2026-09-01T21:25:02Z",
-      "comment_updated_at": "2026-09-02T04:33:26Z",
-      "comment_body_sha256": "c16f86bd31b492db8344aeb33e06b41cbd9034fc2d23e11d9f05b916ffe5f20e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135465,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed production owner is update.report, which reaches the host GitHub CLI after asynchronous preparation...; Review finding: [P1] Revalidate live client authority before invoking the GitHub CLI — src/gateway/server-methods/update-report.ts:121-132 - [high] Revoked Gateway client can reta... (sha=836d63acf5e33ea8ba118709ae47c5553ee5937d)",
-      "expected_head_sha": "836d63acf5e33ea8ba118709ae47c5553ee5937d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T04:49:35.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-failure-report",
-        "head_sha": "788764741297184e7babf76584adaaa1482a9152",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135528:5500670751:2026-09-02T04:42:28Z:clawsweeper_auto_repair",
       "comment_id": "5500670751",
@@ -32499,6 +32466,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136151:5506732638:2026-09-02T08:28:14Z:re_review",
+      "comment_id": "5506732638",
+      "comment_version_key": "5506732638:2026-09-02T08:28:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136151#issuecomment-5506732638",
+      "comment_created_at": "2026-09-02T08:28:14Z",
+      "comment_updated_at": "2026-09-02T08:28:14Z",
+      "comment_body_sha256": "30f3617eb337ff030e5f68c392ba29cf907c01208041aca9807bae72eab4ce56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136151,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T08:29:26.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sanitize-gchat-labeled-url",
+        "head_sha": "5ba9c3951a72e277d6c4610b0ce64a0318d75aac",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
