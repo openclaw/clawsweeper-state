@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:05:35.241Z",
+  "updated_at": "2026-09-02T19:05:39.510Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136273:5509169494:2026-09-02T14:47:13Z:clawsweeper_needs_human",
-      "comment_id": "5509169494",
-      "comment_version_key": "5509169494:2026-09-02T14:47:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136273#issuecomment-5509169494",
-      "comment_created_at": "2026-09-02T11:59:23Z",
-      "comment_updated_at": "2026-09-02T14:47:13Z",
-      "comment_body_sha256": "170464452af27ca31d10f71f6bd1dca87ffe290e03ae80ebbcdbc6e58fce3d14",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136273,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The production diff is net +1 line for a bug fix; the added task is justified by moving a deleted configuration-time signing check onto the release lifecycle. (sha=d01147edb246cb0db3b89b6c9ff7495d8ccc69fa)",
-      "expected_head_sha": "d01147edb246cb0db3b89b6c9ff7495d8ccc69fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T14:51:29.178Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/android-release-task-validation",
-        "head_sha": "d01147edb246cb0db3b89b6c9ff7495d8ccc69fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136286:5509397867:2026-09-02T14:05:18Z:clawsweeper_auto_repair",
       "comment_id": "5509397867",
@@ -32999,6 +32966,53 @@
         "kind": "pull_request",
         "branch": "codex/backup-declared-absolute-symlinks",
         "head_sha": "78cba814a35d199e6f359a6f0f9c13640219e1b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135798:5514848556:2026-09-02T19:04:30Z:re_review",
+      "comment_id": "5514848556",
+      "comment_version_key": "5514848556:2026-09-02T19:04:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135798#issuecomment-5514848556",
+      "comment_created_at": "2026-09-02T19:04:30Z",
+      "comment_updated_at": "2026-09-02T19:04:30Z",
+      "comment_body_sha256": "8c93b1c79831f96846fe59df93c975f0229efa584508542557f41826af88193b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135798,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T19:05:36.283Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-rename-redacted-sentinel-135649",
+        "head_sha": "aa9ae0cdf4083acc5f5da2a1650418bc2ae1d93f",
         "cluster_id": null,
         "job_path": null
       },
