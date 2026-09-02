@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:29:58.896Z",
+  "updated_at": "2026-09-02T08:29:59.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135665:5502230176:2026-09-02T04:44:11Z:clawsweeper_needs_human",
-      "comment_id": "5502230176",
-      "comment_version_key": "5502230176:2026-09-02T04:44:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135665#issuecomment-5502230176",
-      "comment_created_at": "2026-09-01T23:56:32Z",
-      "comment_updated_at": "2026-09-02T04:44:11Z",
-      "comment_body_sha256": "e62b7bb378181ca9ef30c615da2844a1ba07c03e807564789321aeb8966f0db1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135665,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After runtime.close() resolves, the finalizer will terminate the worker despite any remaining referenced plugin-owned handles; this is the intended terminal-stop behavior, but it cuts... (sha=74e472d3227cffaf3e3d9aa35d6c14a7f08452ec)",
-      "expected_head_sha": "74e472d3227cffaf3e3d9aa35d6c14a7f08452ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T04:49:35.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pr/node-worker-exit-after-stop",
-        "head_sha": "74e472d3227cffaf3e3d9aa35d6c14a7f08452ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135731:5502730355:2026-09-02T04:40:02Z:clawsweeper_auto_repair",
       "comment_id": "5502730355",
@@ -32510,6 +32477,53 @@
         "kind": "pull_request",
         "branch": "feat/automation-task-lanes",
         "head_sha": "4e82e38f14eec69ea9d39097135c71b11b173557",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135889:5506740902:2026-09-02T08:28:59Z:re_review",
+      "comment_id": "5506740902",
+      "comment_version_key": "5506740902:2026-09-02T08:28:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135889#issuecomment-5506740902",
+      "comment_created_at": "2026-09-02T08:28:59Z",
+      "comment_updated_at": "2026-09-02T08:28:59Z",
+      "comment_body_sha256": "9b443655649a293d93ba58cb0a524cf852d281c4f88ebbee03fb4fe4e69a2671",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135889,
+      "author": "TheArchitectit",
+      "author_id": 241862351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T08:29:55.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/automation-single-pane",
+        "head_sha": "a5d2978f1d1e9f3d80d43ef7b56069d22e395504",
         "cluster_id": null,
         "job_path": null
       },
