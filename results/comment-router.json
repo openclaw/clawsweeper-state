@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T07:13:42.330Z",
+  "updated_at": "2026-09-02T07:13:51.470Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135848:5503850044:2026-09-02T03:24:07Z:clawsweeper_needs_human",
-      "comment_id": "5503850044",
-      "comment_version_key": "5503850044:2026-09-02T03:24:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135848#issuecomment-5503850044",
-      "comment_created_at": "2026-09-02T03:24:07Z",
-      "comment_updated_at": "2026-09-02T03:24:07Z",
-      "comment_body_sha256": "c7cf3029a29c95e56282baefa293fee7f921374f219a9cc512a6a46ff5761228",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135848,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This intentionally changes existing wrapper behavior: a supplied blank --account now exits with an error instead of inspecting the default account. (sha=81d31646a8c2c6cf5a94da21ed13a4898bd70019)",
-      "expected_head_sha": "81d31646a8c2c6cf5a94da21ed13a4898bd70019",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T03:25:07.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "channels-dead-letters-blank-account",
-        "head_sha": "81d31646a8c2c6cf5a94da21ed13a4898bd70019",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:135:5503850237:2026-09-02T03:24:09Z:clawsweeper_needs_human",
       "comment_id": "5503850237",
@@ -32385,6 +32352,53 @@
         "kind": "pull_request",
         "branch": "fix/mattermost-question-actions",
         "head_sha": "523038b6ce3ab2cc31c2247750c7e2767b3b5e41",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132260:5505890833:2026-09-02T07:12:50Z:re_review",
+      "comment_id": "5505890833",
+      "comment_version_key": "5505890833:2026-09-02T07:12:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132260#issuecomment-5505890833",
+      "comment_created_at": "2026-09-02T07:12:50Z",
+      "comment_updated_at": "2026-09-02T07:12:50Z",
+      "comment_body_sha256": "447d7bfdf34e0e4d2790bfaa8607e173380a5bbc5640a8dd5c1b3211a705f836",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132260,
+      "author": "0xNagato",
+      "author_id": 116608222,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T07:13:49.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-cold-start-append-catchup",
+        "head_sha": "c7e7f33de68b2549a074234e3c618b5542dc00f6",
         "cluster_id": null,
         "job_path": null
       },
