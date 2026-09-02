@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T04:42:11.196Z",
+  "updated_at": "2026-09-02T04:42:21.048Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131511:5448694148:2026-09-02T00:32:25Z:clawsweeper_needs_human",
-      "comment_id": "5448694148",
-      "comment_version_key": "5448694148:2026-09-02T00:32:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5448694148",
-      "comment_created_at": "2026-08-28T05:09:10Z",
-      "comment_updated_at": "2026-09-02T00:32:25Z",
-      "comment_body_sha256": "1e939dbaf7cd058a417b6128e12f947e44117be205394a217b1f8b7912480e7d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131511,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging would place 151 third-party marks in release artifacts. The source ledger provides attribution but does not record the authorization, license, or maintainer-approved policy th... (sha=61aaa21d7bba40dc85a271b98d0dcf507e54e5aa)",
-      "expected_head_sha": "61aaa21d7bba40dc85a271b98d0dcf507e54e5aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T00:51:32.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bundled-channel-icon-assets",
-        "head_sha": "9681f8e5044bde8e4dd2b77365f76ba3c4590005",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131786:5453308136:2026-09-02T00:26:34Z:clawsweeper_auto_repair",
       "comment_id": "5453308136",
@@ -33145,6 +33112,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135877:5504475725:2026-09-02T04:41:07Z:re_review",
+      "comment_id": "5504475725",
+      "comment_version_key": "5504475725:2026-09-02T04:41:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135877#issuecomment-5504475725",
+      "comment_created_at": "2026-09-02T04:41:07Z",
+      "comment_updated_at": "2026-09-02T04:41:07Z",
+      "comment_body_sha256": "d1d77ce0f4628897bf97f7a0e2c746de40733587c83cc5609ca83ec7e3b16ee1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135877,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T04:42:12.910Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-docker-export-speed",
+        "head_sha": "aa861f0c0248634178f9ee24000242144ebc3d6d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
