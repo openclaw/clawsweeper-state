@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135743",
+  "mode": "autonomous",
+  "run_id": "33585512082",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33585512082",
+  "head_sha": "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135743.md",
+  "published_at": "2026-09-02T03:24:20.084Z",
+  "canonical": "#135743",
+  "canonical_issue": "#135743",
+  "canonical_pr": null,
+  "summary": "#135743 remains a narrow, non-security startup-liveness repair, but implementation is blocked before editing: the mandatory sibling Codex source checkout is absent, dependencies are absent, and this worker filesystem is read-only.",
+  "actions": [
+    {
+      "target": "#135743",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135743",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan is clear, but the required direct Codex-source inspection and executable regression proof cannot be completed in this read-only, dependency-free environment."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Rerun this job in a writable checkout with the required sibling Codex source present and dependencies installed; then capture the pre-fix scale regression, implement the prepared-roster lookup, and validate the required tests."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
