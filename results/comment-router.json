@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:05:16.210Z",
+  "updated_at": "2026-09-02T21:05:16.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136395:5513047696:2026-09-02T16:43:22Z:re_review",
-      "comment_id": "5513047696",
-      "comment_version_key": "5513047696:2026-09-02T16:43:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136395#issuecomment-5513047696",
-      "comment_created_at": "2026-09-02T16:43:22Z",
-      "comment_updated_at": "2026-09-02T16:43:22Z",
-      "comment_body_sha256": "be1260fa7f754b4033658168f0cb385b43edb9aaa8c72ae24450e47a691ff431",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136395,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T17:26:12.018Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-first-hop-bridge",
-        "head_sha": "0034a3fc512de02f36eb634f7cb5bf900e79e2f5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1267:5464091244:2026-09-02T17:25:52Z:clawsweeper_auto_repair",
       "comment_id": "5464091244",
@@ -32698,6 +32651,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-selected-workspace-owner",
         "head_sha": "7b229737db9586a5c4f2dec292007b501733df04",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3242:5441324598:2026-09-02T21:02:57Z:clawsweeper_auto_repair",
+      "comment_id": "5441324598",
+      "comment_version_key": "5441324598:2026-09-02T21:02:57Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3242#issuecomment-5441324598",
+      "comment_created_at": "2026-08-27T15:23:14Z",
+      "comment_updated_at": "2026-09-02T21:02:57Z",
+      "comment_body_sha256": "2e979d325785ffc19d31889ca23aa13267653f0bcf1f5288d5265125d861ed58",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3242,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d6a9d938f04e2362478ada62192f27d82d3bee66)",
+      "expected_head_sha": "d6a9d938f04e2362478ada62192f27d82d3bee66",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T21:05:16.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/optimize-cost-catchup-policy",
+        "head_sha": "d6a9d938f04e2362478ada62192f27d82d3bee66",
         "cluster_id": null,
         "job_path": null
       }
