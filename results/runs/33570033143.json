@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135633",
+  "mode": "autonomous",
+  "run_id": "33570033143",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33570033143",
+  "head_sha": "488b65173fa5bee156b917c57e651ec44dc41567",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135633.md",
+  "published_at": "2026-09-02T00:00:46.620Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135633",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135633",
+  "canonical_pr": null,
+  "summary": "#135633 remains the canonical open bug. Current main contains the reported retry/misattribution path, but this read-only worker cannot create the required regression or repair branch: dependencies are absent, pnpm cannot create its Corepack cache, and the mandated sibling ../codex source is absent and cannot be cloned in this sandbox.",
+  "actions": [
+    {
+      "target": "#135633",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135633",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only sandbox and unavailable mandatory Codex source; no maintainer product decision is unresolved."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135633",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135633",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but no executable PR action is safe until the blocked local prerequisites are available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
