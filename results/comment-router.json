@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:33:20.054Z",
+  "updated_at": "2026-09-02T12:35:52.232Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136161:5506902718:2026-09-02T08:43:25Z:clawsweeper_needs_human",
-      "comment_id": "5506902718",
-      "comment_version_key": "5506902718:2026-09-02T08:43:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136161#issuecomment-5506902718",
-      "comment_created_at": "2026-09-02T08:43:25Z",
-      "comment_updated_at": "2026-09-02T08:43:25Z",
-      "comment_body_sha256": "8b65edd9bf950099cc89b33722fb145dc100f5d4332078c83760c6590a6e8c64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136161,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new mutex holds while the Room-backed load is in progress, so a stalled older publication can delay newer outbox presentation; exact-head Android reconnect, gateway-switch, and co... (sha=079471cb47e118b0430bc0fce77e5b746c0b0405)",
-      "expected_head_sha": "079471cb47e118b0430bc0fce77e5b746c0b0405",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T08:44:24.968Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/android-outbox-publication",
-        "head_sha": "079471cb47e118b0430bc0fce77e5b746c0b0405",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136169:5506901528:2026-09-02T08:43:19Z:clawsweeper_auto_repair",
       "comment_id": "5506901528",
@@ -32576,6 +32543,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90745:4634964020:2026-09-02T12:34:00Z:clawsweeper_needs_human",
+      "comment_id": "4634964020",
+      "comment_version_key": "4634964020:2026-09-02T12:34:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-4634964020",
+      "comment_created_at": "2026-06-05T19:49:23Z",
+      "comment_updated_at": "2026-09-02T12:34:00Z",
+      "comment_body_sha256": "8d4756ecf711b9c3d346362c325880f2ffbe8dc6b5c56d33bb35c16f1142e08e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 90745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies source-level and mocked provider-boundary tests, but its own body records that no Telegram Test Server run occurred and it does... (sha=7d3646259bf6c71a741dae09ea694718b770aee1)",
+      "expected_head_sha": "7d3646259bf6c71a741dae09ea694718b770aee1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T12:35:52.232Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reply-context-runtime",
+        "head_sha": "7d3646259bf6c71a741dae09ea694718b770aee1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
