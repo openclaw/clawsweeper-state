@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T00:52:28.053Z",
+  "updated_at": "2026-09-02T00:52:36.945Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135516:5500419681:2026-09-01T21:04:58Z:re_review",
-      "comment_id": "5500419681",
-      "comment_version_key": "5500419681:2026-09-01T21:04:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135516#issuecomment-5500419681",
-      "comment_created_at": "2026-09-01T21:04:58Z",
-      "comment_updated_at": "2026-09-01T21:04:58Z",
-      "comment_body_sha256": "5c1c70c5d0e78f23fa8efaf4b928ac03164f61b47734fa07bf306242f193fb92",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135516,
-      "author": "RayWangyangMa",
-      "author_id": 88625717,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T21:06:27.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-failure-alert-outcome",
-        "head_sha": "ef726ce2482ba4b8d1fe796cba54ce692ad3dcf8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-09-01T20:34:56Z:clawsweeper_auto_repair",
       "comment_id": "5415957601",
@@ -32466,6 +32419,39 @@
         "kind": "pull_request",
         "branch": "fix/windows-agent-gateway-restart",
         "head_sha": "0a8b47ddd0e06b8bd953119ad17f1f20125136b6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134431:5483625810:2026-09-02T00:51:21Z:clawsweeper_needs_human",
+      "comment_id": "5483625810",
+      "comment_version_key": "5483625810:2026-09-02T00:51:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134431#issuecomment-5483625810",
+      "comment_created_at": "2026-08-31T19:47:19Z",
+      "comment_updated_at": "2026-09-02T00:51:21Z",
+      "comment_body_sha256": "0297f6885336cf85efb34302f6d602785e13a3fb2ae679821a7312c7c8f22c64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134431,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new sign-in flow can persist a provider wildcard in an existing restrictive model policy; this is intentional and tested, but it changes an operator's reachable model set after lo... (sha=56b47b52f7d44d1a42d977edf1bcbabe347cc617)",
+      "expected_head_sha": "56b47b52f7d44d1a42d977edf1bcbabe347cc617",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T00:52:36.945Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/provider-login",
+        "head_sha": "56b47b52f7d44d1a42d977edf1bcbabe347cc617",
         "cluster_id": null,
         "job_path": null
       }
