@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-02T15:43:17.373Z",
+  "updated_at": "2026-09-02T15:45:27.448Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5396272822:2026-08-24T13:59:33Z:re_review",
-      "comment_id": "5396272822",
-      "comment_version_key": "5396272822:2026-08-24T13:59:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5396272822",
-      "comment_created_at": "2026-08-24T13:59:33Z",
-      "comment_updated_at": "2026-08-24T13:59:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T11:00:53.722Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5396715049:2026-08-24T14:32:51Z:re_review",
       "comment_id": "5396715049",
@@ -32573,6 +32546,39 @@
         "head_sha": "8f272db71ccfd04fb8599eb84c0ba320d2b5173c",
         "cluster_id": "issue-openclaw-openclaw-119578",
         "job_path": "jobs/openclaw/inbox/issue-openclaw-openclaw-119578.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136334:5510686891:2026-09-02T15:44:22Z:clawsweeper_needs_human",
+      "comment_id": "5510686891",
+      "comment_version_key": "5510686891:2026-09-02T15:44:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136334#issuecomment-5510686891",
+      "comment_created_at": "2026-09-02T13:56:16Z",
+      "comment_updated_at": "2026-09-02T15:44:22Z",
+      "comment_body_sha256": "323401ca877197394aee9d716c105c41ccf7ea8e61ffa6ce8a0faf8f5ca36d5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136334,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Queued exact-head CI has not yet exercised the hosted macOS collector and Linux reducer, so merging before its successful terminal result would leave the workflow change unvalidated i... (sha=f6e3b845f75ae64383a7015ce76aa168313d685b)",
+      "expected_head_sha": "f6e3b845f75ae64383a7015ce76aa168313d685b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T15:45:27.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-watch-screenshot-family",
+        "head_sha": "f6e3b845f75ae64383a7015ce76aa168313d685b",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
