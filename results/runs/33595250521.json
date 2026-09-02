@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135970",
+  "mode": "autonomous",
+  "run_id": "33595250521",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33595250521",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135970.md",
+  "published_at": "2026-09-02T05:51:50.598Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135970",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135970",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow canonical packaging repair, but this read-only checkout cannot install dependencies, run the source build, or create the requested branch. The required sibling ../codex source is also absent, so the Codex-contract gate cannot be completed here. A focused new-PR artifact is ready for an executor with a writable, dependency-ready checkout.",
+  "actions": [
+    {
+      "target": "#135970",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135970",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the read-only, dependency-free worker environment and missing required ../codex source; no maintainer product decision is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135970",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135970",
+      "candidate_fix": null,
+      "reason": "Narrow source-build packaging repair suitable for a new credited ClawSweeper PR once executed in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
