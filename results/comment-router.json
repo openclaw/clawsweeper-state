@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:30:25.933Z",
+  "updated_at": "2026-09-02T21:31:39.925Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136432:5512998052:2026-09-02T17:18:33Z:clawsweeper_auto_repair",
-      "comment_id": "5512998052",
-      "comment_version_key": "5512998052:2026-09-02T17:18:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136432#issuecomment-5512998052",
-      "comment_created_at": "2026-09-02T16:39:37Z",
-      "comment_updated_at": "2026-09-02T17:18:33Z",
-      "comment_body_sha256": "e3dc15d78bd500d10fcb185cf26f7361e8d89d52e70005f4e52c42aa1e145a09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7543251052fbda910d82ffe2eb3a0d1f5591c937)",
-      "expected_head_sha": "7543251052fbda910d82ffe2eb3a0d1f5591c937",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:40:18.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-gateway-feedback",
-        "head_sha": "81b0febe119ddb7e6b32d15d7d9e341949e28c9b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136434:5513010490:2026-09-02T17:16:06Z:clawsweeper_auto_repair",
       "comment_id": "5513010490",
@@ -32651,6 +32618,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1361:5516471893:2026-09-02T21:30:41Z:clawsweeper_needs_human",
+      "comment_id": "5516471893",
+      "comment_version_key": "5516471893:2026-09-02T21:30:41Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1361#issuecomment-5516471893",
+      "comment_created_at": "2026-09-02T21:11:52Z",
+      "comment_updated_at": "2026-09-02T21:30:41Z",
+      "comment_body_sha256": "f680145e9bd42dee7dca7d1fb2691bcf6b502f765aae9fa9298af76aa491f24c",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A dashboard response that legitimately takes longer than 15 seconds will now be recorded as failed, though the GitHub progress comment and worker completion remain available. (sha=9e4e640f8d51284e21086603d610a1b4fde1188e)",
+      "expected_head_sha": "9e4e640f8d51284e21086603d610a1b4fde1188e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T21:31:39.925Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-status-ingest-timeout",
+        "head_sha": "9e4e640f8d51284e21086603d610a1b4fde1188e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
