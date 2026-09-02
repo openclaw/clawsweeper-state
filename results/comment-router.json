@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T17:42:43.533Z",
+  "updated_at": "2026-09-02T17:43:58.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136319:5510436998:2026-09-02T13:38:30Z:re_review",
-      "comment_id": "5510436998",
-      "comment_version_key": "5510436998:2026-09-02T13:38:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136319#issuecomment-5510436998",
-      "comment_created_at": "2026-09-02T13:38:30Z",
-      "comment_updated_at": "2026-09-02T13:38:30Z",
-      "comment_body_sha256": "0311cde3254a71870bd100e1e69f23334e8ef3bfcf662b342812aa085123fd53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136319,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T13:39:32.186Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mobile-android-main",
-        "head_sha": "042048808e7cdf3d2b9b671de9273472e1204db0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3266:5461329080:2026-09-02T13:30:26Z:clawsweeper_auto_repair",
       "comment_id": "5461329080",
@@ -32837,6 +32790,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-120956-workboard-notification-truncation",
         "head_sha": "2c34ea55d58bec159055a9bbf8db31832e0137ed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136484:5513829155:2026-09-02T17:42:49Z:clawsweeper_needs_human",
+      "comment_id": "5513829155",
+      "comment_version_key": "5513829155:2026-09-02T17:42:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136484#issuecomment-5513829155",
+      "comment_created_at": "2026-09-02T17:42:49Z",
+      "comment_updated_at": "2026-09-02T17:42:49Z",
+      "comment_body_sha256": "f3ac59912479c0a86cabe1d37f8261ea30a215cb1f68211076c5689ba6e4a473",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production boundary is workspace dependency resolution feeding QA Lab’s Crabline transport import. The PR body describes a... (sha=8a8376cfb193d89b2a15329a144e56fe6c90f681)",
+      "expected_head_sha": "8a8376cfb193d89b2a15329a144e56fe6c90f681",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T17:43:58.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/crabline-seven-day-zod",
+        "head_sha": "8a8376cfb193d89b2a15329a144e56fe6c90f681",
         "cluster_id": null,
         "job_path": null
       }
