@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T05:09:50.038Z",
+  "updated_at": "2026-09-02T05:09:53.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135744:5502796797:2026-09-02T01:07:27Z:clawsweeper_needs_human",
-      "comment_id": "5502796797",
-      "comment_version_key": "5502796797:2026-09-02T01:07:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135744#issuecomment-5502796797",
-      "comment_created_at": "2026-09-02T01:07:27Z",
-      "comment_updated_at": "2026-09-02T01:07:27Z",
-      "comment_body_sha256": "493c7a3fdeb9691afa54c5cd51baa9187a092a8083e396c437c2aebb800ed408",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135744,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - No repair lane is needed; this maintainer-owned cleanup has no discrete actionable review finding. (sha=9b51faac41c0fb9ac1d2e7ae05bf6117dca888cd)",
-      "expected_head_sha": "9b51faac41c0fb9ac1d2e7ae05bf6117dca888cd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T01:18:00.192Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/feishu-provider-prefix",
-        "head_sha": "9b51faac41c0fb9ac1d2e7ae05bf6117dca888cd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135736:5502807275:2026-09-02T01:08:50Z:clawsweeper_needs_human",
       "comment_id": "5502807275",
@@ -32511,6 +32478,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135943:5504693923:2026-09-02T05:08:54Z:clawsweeper_needs_human",
+      "comment_id": "5504693923",
+      "comment_version_key": "5504693923:2026-09-02T05:08:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135943#issuecomment-5504693923",
+      "comment_created_at": "2026-09-02T05:08:54Z",
+      "comment_updated_at": "2026-09-02T05:08:54Z",
+      "comment_body_sha256": "b239e747d026dc78fa0c9d769509d068ee8f17b9fca8a29ed070c0b31b32805d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve symlinks before accepting a state path (P2)** - path.relative checks only the lexical name. An OPENCLAW_STATE_DIR symlink under the test home can target foreign state, and both spies accept that lexical...; Review finding: [P2] Resolve symlinks before accepting a state path — src/test-utils/state-path-guard.ts:18-20 - [medium] State guard accepts symlinked foreign databases — src/tes... (sha=8d70134a122f7097f29cb3054288ebec1bf2b7f7)",
+      "expected_head_sha": "8d70134a122f7097f29cb3054288ebec1bf2b7f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T05:09:53.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/sandbox-exec-server-state-isolation",
+        "head_sha": "8d70134a122f7097f29cb3054288ebec1bf2b7f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
