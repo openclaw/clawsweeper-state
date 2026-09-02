@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:18:53.618Z",
+  "updated_at": "2026-09-02T19:18:57.014Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136295:5509661781:2026-09-02T15:02:30Z:clawsweeper_needs_human",
-      "comment_id": "5509661781",
-      "comment_version_key": "5509661781:2026-09-02T15:02:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136295#issuecomment-5509661781",
-      "comment_created_at": "2026-09-02T12:39:35Z",
-      "comment_updated_at": "2026-09-02T15:02:30Z",
-      "comment_body_sha256": "378322a8a000c9142a908f81ad119c5a626192e28593636a1ae839b9920e5da5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136295,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current check rollup records a failing aggregate CI gate; the captured PR body attributes it to a built-artifact inventory check, but the Actions logs could not be independently r... (sha=49fb9c5af6d1eb72e528c1e327dcda91c7ba03fa)",
-      "expected_head_sha": "49fb9c5af6d1eb72e528c1e327dcda91c7ba03fa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T15:08:42.033Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-lint-resource-policy-20260902",
-        "head_sha": "49fb9c5af6d1eb72e528c1e327dcda91c7ba03fa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136309:5510030374:2026-09-02T14:59:29Z:clawsweeper_needs_human",
       "comment_id": "5510030374",
@@ -32838,6 +32805,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118727:5515016546:2026-09-02T19:17:45Z:re_review",
+      "comment_id": "5515016546",
+      "comment_version_key": "5515016546:2026-09-02T19:17:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118727#issuecomment-5515016546",
+      "comment_created_at": "2026-09-02T19:17:45Z",
+      "comment_updated_at": "2026-09-02T19:17:45Z",
+      "comment_body_sha256": "0953e2d28f95874d58da79b291e13afeb455c300b24999c0f56480537375cb61",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118727,
+      "author": "Weiming-Hu",
+      "author_id": 16421338,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T19:18:54.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/voice-call-tts-chunking",
+        "head_sha": "7be0694ffd7e89e18c2552ae020cf2ead4fba5be",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
