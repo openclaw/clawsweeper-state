@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T08:20:04.593Z",
+  "updated_at": "2026-09-02T08:20:20.939Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135873:5504228387:2026-09-02T04:33:32Z:clawsweeper_needs_human",
-      "comment_id": "5504228387",
-      "comment_version_key": "5504228387:2026-09-02T04:33:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135873#issuecomment-5504228387",
-      "comment_created_at": "2026-09-02T04:08:08Z",
-      "comment_updated_at": "2026-09-02T04:33:32Z",
-      "comment_body_sha256": "a101aaeac5e84fd992b266701ab4cd43a3cf5c4d75881e74e6c713d45ad2a57c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135873,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent retrieval of the GitHub CLI and Node upstream contracts was blocked by DNS in this environment; retain the required exact-head CI gate before landing. (sha=83cad58076dc54501a10d2798f0050f4082d43be)",
-      "expected_head_sha": "83cad58076dc54501a10d2798f0050f4082d43be",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T04:34:30.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/jolly-proskuriakova-45f27d",
-        "head_sha": "83cad58076dc54501a10d2798f0050f4082d43be",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134003:5476306309:2026-09-02T04:34:10Z:clawsweeper_needs_human",
       "comment_id": "5476306309",
@@ -32513,6 +32480,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92230:4683232032:2026-09-02T08:18:54Z:clawsweeper_needs_human",
+      "comment_id": "4683232032",
+      "comment_version_key": "4683232032:2026-09-02T08:18:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/92230#issuecomment-4683232032",
+      "comment_created_at": "2026-06-11T17:31:59Z",
+      "comment_updated_at": "2026-09-02T08:18:54Z",
+      "comment_body_sha256": "071c5dfa4f28b3b55b21a1221fc586d30e3a279b6b99d7b57c4c235fe6173c8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 92230,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof is required: the new long-reference Telegram /model menu can dispatch an opaque callback through a stale authori...; Review finding: [P1] Revalidate opaque model callbacks before mutating the session — extensions/telegram/src/bot-handlers.callback-router.ts:291-299 - [high] Opaque callback uses... (sha=6d8c210b59be9c4d592661459534e31bd856c91d)",
+      "expected_head_sha": "6d8c210b59be9c4d592661459534e31bd856c91d",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T08:20:20.939Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawSean/slack-model-menu",
+        "head_sha": "6d8c210b59be9c4d592661459534e31bd856c91d",
+        "cluster_id": "automerge-openclaw-openclaw-92230",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
