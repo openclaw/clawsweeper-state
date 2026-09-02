@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135882",
+  "mode": "autonomous",
+  "run_id": "33589707630",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33589707630",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135882.md",
+  "published_at": "2026-09-02T05:00:35.870Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135882",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135882",
+  "canonical_pr": null,
+  "summary": "#135882 remains the canonical, narrow non-security sanitizer repair. Current main a8fdaeaa455178bb99a3a8afa9e113c5cc241200 contains the defect, but this read-only checkout has neither node_modules nor the mandatory sibling ../codex source; no branch, test validation, or PR can be completed here.",
+  "actions": [
+    {
+      "target": "#135882",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135882",
+      "candidate_fix": null,
+      "reason": "Implementation is appropriate and a new ClawSweeper PR is the canonical path; the executor must use a writable checkout with dependencies and the required sibling Codex source."
+    },
+    {
+      "target": "#14629",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#135882",
+      "candidate_fix": null,
+      "reason": "Keep open as a related product/heuristic discussion."
+    },
+    {
+      "target": "#41699",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#41851",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical contributor work; do not mutate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135882",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135882",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement this isolated two-file repair after satisfying the required repository gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
