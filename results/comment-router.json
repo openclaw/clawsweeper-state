@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T12:06:26.745Z",
+  "updated_at": "2026-09-02T12:06:57.432Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-09-02T07:58:00Z:clawsweeper_auto_repair",
-      "comment_id": "4876928065",
-      "comment_version_key": "4876928065:2026-09-02T07:58:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4876928065",
-      "comment_created_at": "2026-07-03T13:44:49Z",
-      "comment_updated_at": "2026-09-02T07:58:00Z",
-      "comment_body_sha256": "73d991e706b887d69e01f8bde9a77bc388059286503ff3a1996873816be4546c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2c5c91f4c33bbeeaffcb177d85618f24196078ae)",
-      "expected_head_sha": "2c5c91f4c33bbeeaffcb177d85618f24196078ae",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T08:13:35.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "2c5c91f4c33bbeeaffcb177d85618f24196078ae",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110544:5010497363:2026-09-02T08:09:13Z:clawsweeper_auto_repair",
       "comment_id": "5010497363",
@@ -32832,6 +32799,39 @@
       "status": "skipped",
       "processed_at": "2026-09-02T12:06:26.745Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:106818:4963055124:2026-09-02T12:05:30Z:clawsweeper_needs_human",
+      "comment_id": "4963055124",
+      "comment_version_key": "4963055124:2026-09-02T12:05:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/106818#issuecomment-4963055124",
+      "comment_created_at": "2026-07-13T21:50:20Z",
+      "comment_updated_at": "2026-09-02T12:05:30Z",
+      "comment_body_sha256": "b38b3eff40affda3196d6647e8b0c41d4dfa68ba2273e6b2771ff83c8a2aae1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 106818,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body reports an emulated build and native-device Gateway checks, but no inspectable trace or artifact demonstrates the final pr...; Review finding: [P1] Remove the external Dockerfile frontend directive — Dockerfile.riscv64:1 - [P1] Restore required runtime packages — Dockerfile.riscv64:138-141 - [P2] Use the... (sha=164244de6e5182b2e2a68f4b875ca3a9e724d700)",
+      "expected_head_sha": "164244de6e5182b2e2a68f4b875ca3a9e724d700",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T12:06:57.432Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/riscv64-docker-refresh",
+        "head_sha": "164244de6e5182b2e2a68f4b875ca3a9e724d700",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
