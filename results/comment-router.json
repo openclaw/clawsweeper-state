@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:48:44.832Z",
+  "updated_at": "2026-09-02T22:49:03.874Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136410:5515034948:2026-09-02T19:19:12Z:re_review",
-      "comment_id": "5515034948",
-      "comment_version_key": "5515034948:2026-09-02T19:19:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136410#issuecomment-5515034948",
-      "comment_created_at": "2026-09-02T19:19:12Z",
-      "comment_updated_at": "2026-09-02T19:19:12Z",
-      "comment_body_sha256": "ad403d16528ff7df423193a67335e4f3d7242dd17c7ec43900614995931080cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136410,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T19:21:06.435Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/status-harness-pin-divergence",
-        "head_sha": "80175f615ef243c4b082f2f4ddce50a85750e110",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136079:5515015851:2026-09-02T19:21:29Z:re_review",
       "comment_id": "5515015851",
@@ -32589,6 +32542,39 @@
         "kind": "pull_request",
         "branch": "codex/test-doctor-contribution-factory",
         "head_sha": "7a8bd9cd882b9d951005de91e5f39b6acf8654a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131213:5445915880:2026-09-02T22:48:01Z:clawsweeper_auto_repair",
+      "comment_id": "5445915880",
+      "comment_version_key": "5445915880:2026-09-02T22:48:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131213#issuecomment-5445915880",
+      "comment_created_at": "2026-08-27T22:23:13Z",
+      "comment_updated_at": "2026-09-02T22:48:01Z",
+      "comment_body_sha256": "648f1b72ba20639a65beaf99a39b31e513c42d66bb2fdd493311b5b14e356e26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8c9f5da501da16eae9d310d735be8f7b10606aed)",
+      "expected_head_sha": "8c9f5da501da16eae9d310d735be8f7b10606aed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T22:49:03.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-completions-disabled-reasoning",
+        "head_sha": "8c9f5da501da16eae9d310d735be8f7b10606aed",
         "cluster_id": null,
         "job_path": null
       }
