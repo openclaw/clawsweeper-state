@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:32:05.158Z",
+  "updated_at": "2026-09-02T19:32:10.528Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119718:5196803797:2026-09-02T15:41:18Z:clawsweeper_needs_human",
-      "comment_id": "5196803797",
-      "comment_version_key": "5196803797:2026-09-02T15:41:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119718#issuecomment-5196803797",
-      "comment_created_at": "2026-08-05T20:10:31Z",
-      "comment_updated_at": "2026-09-02T15:41:18Z",
-      "comment_body_sha256": "7511c5ea0e7385587f5d0ad0b4f4e259d173613a1685ebeb3c11de1884d6178e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119718,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted branch predates main's confirmed-404 retry and partial-delivery handling; a mechanical conflict resolution could reintroduce duplicate sends or discard accepted chunks. (sha=81021f3ac1971e0452a8f7e7d74aeece7e9e4b20)",
-      "expected_head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T15:43:13.347Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-89430",
-        "head_sha": "81021f3ac1971e0452a8f7e7d74aeece7e9e4b20",
-        "cluster_id": "automerge-openclaw-openclaw-119718",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119718.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119737:5198118390:2026-09-02T15:42:26Z:clawsweeper_auto_repair",
       "comment_id": "5198118390",
@@ -32580,6 +32533,53 @@
         "kind": "pull_request",
         "branch": "fix/doctor-channel-routing-migrations",
         "head_sha": "7ce34f66f5b3120204346b2ffb35ca7b06baf248",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136432:5515193162:2026-09-02T19:31:15Z:re_review",
+      "comment_id": "5515193162",
+      "comment_version_key": "5515193162:2026-09-02T19:31:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136432#issuecomment-5515193162",
+      "comment_created_at": "2026-09-02T19:31:15Z",
+      "comment_updated_at": "2026-09-02T19:31:15Z",
+      "comment_body_sha256": "82c1cda6642d1558786bba3dfaa4e7c91ef027efd07533a7a5f7da8f25369d02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136432,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T19:32:07.982Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-gateway-feedback",
+        "head_sha": "cd899d04c2631641a25a06cf2c187e4c051e70f4",
         "cluster_id": null,
         "job_path": null
       },
