@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:16:07.137Z",
+  "updated_at": "2026-09-02T01:16:19.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135486:5500632393:2026-09-01T21:24:08Z:re_review",
-      "comment_id": "5500632393",
-      "comment_version_key": "5500632393:2026-09-01T21:24:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135486#issuecomment-5500632393",
-      "comment_created_at": "2026-09-01T21:24:08Z",
-      "comment_updated_at": "2026-09-01T21:24:08Z",
-      "comment_body_sha256": "2bb970b6f8a21692c47a60e2a201aa4332a3121b68dc1ae237485e1fb0fe4275",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135486,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T21:33:48.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/model-catalog-worker-plugin-scope",
-        "head_sha": "47249da9f75462bb9e066b9abd3f41fe514d8c94",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135456:5500741604:2026-09-01T21:34:12Z:re_review",
       "comment_id": "5500741604",
@@ -32380,6 +32333,39 @@
         "kind": "pull_request",
         "branch": "steipete/transcript-composition-refactor-9fa36683",
         "head_sha": "d62bb25fa55cd90834992a6dfd8d8b6b115c071e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135451:5498762984:2026-09-02T01:15:17Z:clawsweeper_needs_human",
+      "comment_id": "5498762984",
+      "comment_version_key": "5498762984:2026-09-02T01:15:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135451#issuecomment-5498762984",
+      "comment_created_at": "2026-09-01T18:48:36Z",
+      "comment_updated_at": "2026-09-02T01:15:17Z",
+      "comment_body_sha256": "88f6009a8db8448c3b1377d78ddd314172e70ef776bf09f181e7be2815ea03ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations that previously reconstructed an install record from an orphaned local npm payload while offline will now leave that payload unregistered until registry verific... (sha=7360279c395bfcb99ea216e8436d56db8c28dd67)",
+      "expected_head_sha": "7360279c395bfcb99ea216e8436d56db8c28dd67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T01:16:19.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-payload-convergence-20260901",
+        "head_sha": "7360279c395bfcb99ea216e8436d56db8c28dd67",
         "cluster_id": null,
         "job_path": null
       }
