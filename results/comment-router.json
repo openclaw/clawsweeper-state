@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T21:48:52.440Z",
+  "updated_at": "2026-09-02T21:48:59.388Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135350:5497310366:2026-09-02T16:24:54Z:clawsweeper_needs_human",
-      "comment_id": "5497310366",
-      "comment_version_key": "5497310366:2026-09-02T16:24:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135350#issuecomment-5497310366",
-      "comment_created_at": "2026-09-01T16:45:12Z",
-      "comment_updated_at": "2026-09-02T16:24:54Z",
-      "comment_body_sha256": "06d80268ae8387b14dea2c2f6319a53f1c6f105014d1ac0f7be74aaad3c8930b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135350,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The public question-gateway runtime now exposes an optional authorization callback and a new denied outcome; external plugins with exhaustive result handling need an intentional compa... (sha=28ce67aae99338c12c73d5cab56e84bcb46a0576)",
-      "expected_head_sha": "28ce67aae99338c12c73d5cab56e84bcb46a0576",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T17:40:18.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mattermost-question-actions",
-        "head_sha": "28ce67aae99338c12c73d5cab56e84bcb46a0576",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136146:5506596085:2026-09-02T16:36:05Z:clawsweeper_needs_human",
       "comment_id": "5506596085",
@@ -32712,6 +32679,53 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134826:5489250431:2026-09-02T21:47:33Z:clawsweeper_needs_human",
+      "comment_id": "5489250431",
+      "comment_version_key": "5489250431:2026-09-02T21:47:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134826#issuecomment-5489250431",
+      "comment_created_at": "2026-09-01T05:15:37Z",
+      "comment_updated_at": "2026-09-02T21:47:33Z",
+      "comment_body_sha256": "6a6b2292d8900f27e8567411c244321b8d91fc9b66962585c9ea915348a45c6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134826,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve session metadata before consuming lifecycle records (P2)** - Lifecycle records now return at this branch before handleParsedRecord extracts session_id and calls onSessionId. Claude declares that field a...; Review finding: [P2] Preserve session metadata before consuming lifecycle records — src/agents/cli-output-stream.ts:282-300 - [P2] Exercise the ref-trust decision in the regressio... (sha=b0b0b0c7f68feece6e4ad4b36c7fa300b0a81e65)",
+      "expected_head_sha": "b0b0b0c7f68feece6e4ad4b36c7fa300b0a81e65",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T21:48:59.388Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/roboclaw-134697-clean",
+        "head_sha": "b0b0b0c7f68feece6e4ad4b36c7fa300b0a81e65",
+        "cluster_id": "automerge-openclaw-openclaw-134826",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-134826.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
