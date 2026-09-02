@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-135892",
+  "mode": "autonomous",
+  "run_id": "33592218268",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33592218268",
+  "head_sha": "43553c96ab2fcd03b7599eb67cd49e2507bb92ea",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-135892.md",
+  "published_at": "2026-09-02T06:17:37.482Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/135892",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/135892",
+  "canonical_pr": null,
+  "summary": "#135892 remains the canonical, source-reproducible startup performance defect. Current main passes every raw candidate into the preference scan, producing repeated full scans for model references that share one plugin. A narrow fix artifact is ready, but implementation and validation are blocked because this checkout is read-only, dependencies cannot be installed, and the required sibling ../codex source cannot be created or inspected.",
+  "actions": [
+    {
+      "target": "#135892",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#135892",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-complete checkout with the required sibling Codex source is required before editing, demonstrating the pre-fix regression, and running the changed gate."
+    },
+    {
+      "target": "#135743",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#135892",
+      "candidate_fix": null,
+      "reason": "The reports share large-config startup symptoms but need separate owner-boundary repairs."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-135892",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#135892",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan ready for execution in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
