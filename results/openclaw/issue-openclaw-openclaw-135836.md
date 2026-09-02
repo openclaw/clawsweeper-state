@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-135836"
 mode: "autonomous"
-run_id: "33585970755"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33585970755"
-head_sha: "39592f04448bdc34d37b9e7f8d5c5d7c828b73f2"
-workflow_conclusion: "failure"
+run_id: "33592053009"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33592053009"
+head_sha: "43553c96ab2fcd03b7599eb67cd49e2507bb92ea"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-02T04:09:37.768Z"
-canonical: "https://github.com/openclaw/openclaw/issues/135836"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/135836"
+published_at: "2026-09-02T05:26:36.671Z"
+canonical: "#135836"
+canonical_issue: "#135836"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33585970755](https://github.com/openclaw/clawsweeper/actions/runs/33585970755)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33592053009](https://github.com/openclaw/clawsweeper/actions/runs/33592053009)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/135836
+Canonical: #135836
 
 ## Summary
 
-#135836 remains a reproducible canonical message-delivery bug on current local origin/main 20a69e750a50d404174a8e67fd00156d6729ef37. The narrow repair is clear, but this worker checkout is read-only, dependencies are absent, and the required sibling Codex source is unavailable; no branch, regression, or validation can be produced here.
+#135836 remains a narrow canonical bug: the no-handler producer throws retryable PlatformMessageNotDispatchedError, but cron and announce classify its message as permanent before the shared proven-not-sent contract. Repair could not be created because this workspace is read-only, ../codex is absent (the mandatory direct inspection cannot be completed), and validation cannot start because node_modules/tsx is missing.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/135836
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #126800 | keep_closed | skipped | related | Keep as related, closed historical evidence. |
-| #135836 | fix_needed | blocked | canonical | A narrow new fix PR is appropriate, but implementation and proof require a writable, dependency-ready checkout plus direct Codex source inspection. |
-| cluster:issue-openclaw-openclaw-135836 | build_fix_artifact | planned | canonical | Prepared a narrow, credited implementation plan for the executor. |
+| #135836 | fix_needed | blocked | canonical | A writable checkout with dependencies and the required sibling Codex source is required to add regressions that fail pre-fix, implement the two owner repairs, and validate the branch. |
+| #135836 | build_fix_artifact | planned | canonical | A narrow replacement PR is appropriate once the execution blockers are resolved. |
 
 ## Needs Human
 
