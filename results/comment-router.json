@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T02:40:11.257Z",
+  "updated_at": "2026-09-02T02:40:57.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135616:5501564661:2026-09-01T22:58:58Z:clawsweeper_needs_human",
-      "comment_id": "5501564661",
-      "comment_version_key": "5501564661:2026-09-01T22:58:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135616#issuecomment-5501564661",
-      "comment_created_at": "2026-09-01T22:58:58Z",
-      "comment_updated_at": "2026-09-01T22:58:58Z",
-      "comment_body_sha256": "55831cd428ff6c278c9fcee33e3c35cd11b59d33fba91911cb4dcb793686dbc4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135616,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup is incomplete and includes one failed job; its log was not available in the review context, so normal exact-head CI remains a landing gate. (sha=d348ce9ee681eb2e5a07eb5419af0f946344e31b)",
-      "expected_head_sha": "d348ce9ee681eb2e5a07eb5419af0f946344e31b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-01T23:00:07.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/skill-library-wire-cleanup",
-        "head_sha": "d348ce9ee681eb2e5a07eb5419af0f946344e31b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/octopool:120:5501590537:2026-09-01T23:00:57Z:clawsweeper_needs_human",
       "comment_id": "5501590537",
@@ -32970,6 +32937,53 @@
       "status": "skipped",
       "processed_at": "2026-09-02T02:40:11.256Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:70002:5503515017:2026-09-02T02:40:06Z:re_review",
+      "comment_id": "5503515017",
+      "comment_version_key": "5503515017:2026-09-02T02:40:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/70002#issuecomment-5503515017",
+      "comment_created_at": "2026-09-02T02:40:06Z",
+      "comment_updated_at": "2026-09-02T02:40:06Z",
+      "comment_body_sha256": "5e445d891ca58e1e20a45d809ab7f28e0a5617d8218babc822600a541188dfec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 70002,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T02:40:53.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/skip-docs-publish-in-forks",
+        "head_sha": "edfe6e69f5d9098f49b9117952abd04baee0bad0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
