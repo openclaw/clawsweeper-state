@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-02T01:00:09.536Z",
+  "updated_at": "2026-09-02T01:00:44.855Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135482:5500485367:2026-09-01T21:10:48Z:re_review",
-      "comment_id": "5500485367",
-      "comment_version_key": "5500485367:2026-09-01T21:10:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135482#issuecomment-5500485367",
-      "comment_created_at": "2026-09-01T21:10:48Z",
-      "comment_updated_at": "2026-09-01T21:10:48Z",
-      "comment_body_sha256": "5246f9914384b6bdfc87559916ccaa5aa532857629a70ec756db2c3e72348783",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135482,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-01T21:11:35.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/announce-steer-gate",
-        "head_sha": "4b0e51890a268b1272d836cdf38f309f5fde78bb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135468:5500511956:2026-09-01T21:13:11Z:re_review",
       "comment_id": "5500511956",
@@ -32400,6 +32353,39 @@
         "kind": "pull_request",
         "branch": "codex/voice-overlay-dismissal-20260901",
         "head_sha": "ff8b5691d7148f47b7b3d7089ee97929a06649b2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1345:5502735384:2026-09-02T00:59:47Z:clawsweeper_needs_human",
+      "comment_id": "5502735384",
+      "comment_version_key": "5502735384:2026-09-02T00:59:47Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1345#issuecomment-5502735384",
+      "comment_created_at": "2026-09-02T00:59:47Z",
+      "comment_updated_at": "2026-09-02T00:59:47Z",
+      "comment_body_sha256": "7db5304615a81cd590e8dcc880d66d972a0705687af94c0773623bbc9e903a59",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The four added fixture hashes intentionally extend the scanner exception boundary; a future edit must preserve exact literal, path, mode, and complete-scan checks rather than broadeni... (sha=10adaf807313080b4000d1c5b1a5a3a73c61af65)",
+      "expected_head_sha": "10adaf807313080b4000d1c5b1a5a3a73c61af65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-02T01:00:44.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/scan-refusal-diagnostics-20260901",
+        "head_sha": "10adaf807313080b4000d1c5b1a5a3a73c61af65",
         "cluster_id": null,
         "job_path": null
       }
