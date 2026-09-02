@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:23:49.993Z",
+  "updated_at": "2026-09-02T22:23:59.315Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libopus-wasm:8:5443977557:2026-09-02T18:51:37Z:clawsweeper_auto_repair",
-      "comment_id": "5443977557",
-      "comment_version_key": "5443977557:2026-09-02T18:51:37Z",
-      "comment_url": "https://github.com/openclaw/libopus-wasm/pull/8#issuecomment-5443977557",
-      "comment_created_at": "2026-08-27T19:07:31Z",
-      "comment_updated_at": "2026-09-02T18:51:37Z",
-      "comment_body_sha256": "5f365adbae709fd16c8947f478ed13c22195d814f569b0ba906b725d66c1f33b",
-      "repo": "openclaw/libopus-wasm",
-      "issue_number": 8,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=68a2e8684bd8ce25c9905bf6002807256be49bdd)",
-      "expected_head_sha": "68a2e8684bd8ce25c9905bf6002807256be49bdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T18:52:31.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-repo-libopus-wasm-pnpm-trust-policy",
-        "head_sha": "68a2e8684bd8ce25c9905bf6002807256be49bdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136524:5514684919:2026-09-02T18:51:12Z:clawsweeper_auto_repair",
       "comment_id": "5514684919",
@@ -32582,6 +32549,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136310:5517257525:2026-09-02T22:22:41Z:re_review",
+      "comment_id": "5517257525",
+      "comment_version_key": "5517257525:2026-09-02T22:22:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136310#issuecomment-5517257525",
+      "comment_created_at": "2026-09-02T22:22:41Z",
+      "comment_updated_at": "2026-09-02T22:22:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136310,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T22:23:56.663Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-136284-legacy-tmp-shadow-cleanup",
+        "head_sha": "0fc55f4b217391e9d524f1098d33f4f1811943df",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
