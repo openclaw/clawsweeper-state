@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T19:24:11.661Z",
+  "updated_at": "2026-09-02T19:25:05.449Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132136:5458031807:2026-09-02T15:11:46Z:clawsweeper_needs_human",
-      "comment_id": "5458031807",
-      "comment_version_key": "5458031807:2026-09-02T15:11:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132136#issuecomment-5458031807",
-      "comment_created_at": "2026-08-28T21:38:24Z",
-      "comment_updated_at": "2026-09-02T15:11:46Z",
-      "comment_body_sha256": "c72ac624d77e61f92060e9464351236e439dc41da4b970c92be1d287afd27d2d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132136,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared monitor changes release-lane capacity from startLimit to at most twice startLimit while a delivery callback remains open; for LINE this permits 16 rather than 8 open callba... (sha=6c1ff7f1e0338a4d00556ebf0485b101f0a503b3)",
-      "expected_head_sha": "6c1ff7f1e0338a4d00556ebf0485b101f0a503b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T15:12:58.027Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-image-set-aggregation",
-        "head_sha": "6c1ff7f1e0338a4d00556ebf0485b101f0a503b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawgo:7:5464343779:2026-09-02T15:12:04Z:clawsweeper_auto_repair",
       "comment_id": "5464343779",
@@ -32851,6 +32818,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136474:5515094548:2026-09-02T19:24:04Z:re_review",
+      "comment_id": "5515094548",
+      "comment_version_key": "5515094548:2026-09-02T19:24:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136474#issuecomment-5515094548",
+      "comment_created_at": "2026-09-02T19:24:04Z",
+      "comment_updated_at": "2026-09-02T19:24:04Z",
+      "comment_body_sha256": "613a9c07b4c6cb8e1011e81c9edd9d275ba2e4ad2d7cb78c36c58030ccf23c25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136474,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T19:25:01.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/surface-blocked-hook-registrations",
+        "head_sha": "8c2bf17c902fe98a4d0564d97781a86a51e5297e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
