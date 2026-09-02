@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T06:48:58.494Z",
+  "updated_at": "2026-09-02T06:49:24.412Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3570:5496950534:2026-09-02T02:57:28Z:clawsweeper_auto_repair",
-      "comment_id": "5496950534",
-      "comment_version_key": "5496950534:2026-09-02T02:57:28Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3570#issuecomment-5496950534",
-      "comment_created_at": "2026-09-01T16:16:10Z",
-      "comment_updated_at": "2026-09-02T02:57:28Z",
-      "comment_body_sha256": "191a189c74125ad20a0459826857143e798f9a34bb76d74e0a596be573ee3aad",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3570,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=6323f8a79af982b4909e1616f7c9f6a60710a0c8)",
-      "expected_head_sha": "6323f8a79af982b4909e1616f7c9f6a60710a0c8",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-09-02T02:58:16.423Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-1ae00306bc",
-        "head_sha": "6323f8a79af982b4909e1616f7c9f6a60710a0c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3547:5462457993:2026-09-02T02:57:31Z:clawsweeper_auto_repair",
       "comment_id": "5462457993",
@@ -32363,6 +32330,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128101:5505643779:2026-09-02T06:48:33Z:re_review",
+      "comment_id": "5505643779",
+      "comment_version_key": "5505643779:2026-09-02T06:48:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128101#issuecomment-5505643779",
+      "comment_created_at": "2026-09-02T06:48:33Z",
+      "comment_updated_at": "2026-09-02T06:48:33Z",
+      "comment_body_sha256": "9835562363af5c6958956c9ff19b5804cf29ab51b43d432a2d59dba47173c4de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128101,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T06:49:21.717Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-realtime-playout-owner",
+        "head_sha": "ca83f6db56d86596d4af14993de66ec95898e09e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
