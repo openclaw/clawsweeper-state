@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-02T22:12:06.203Z",
+  "updated_at": "2026-09-02T22:12:19.816Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136486:5514181457:2026-09-02T18:10:36Z:clawsweeper_needs_human",
-      "comment_id": "5514181457",
-      "comment_version_key": "5514181457:2026-09-02T18:10:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136486#issuecomment-5514181457",
-      "comment_created_at": "2026-09-02T18:10:36Z",
-      "comment_updated_at": "2026-09-02T18:10:36Z",
-      "comment_body_sha256": "63afdcfc2338db6f2adc4d7a9b8e053f8d8d5c698148bf0038da31b0450d6a0f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136486,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR body reports a passing in-process filesystem/tar regression that calls the archive verifier, but it supplies no after-fix NixOS/Home Man... (sha=90e6d08f009044026bb16a91c74a98a9fb554a84)",
-      "expected_head_sha": "90e6d08f009044026bb16a91c74a98a9fb554a84",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T18:28:18.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/backup-nix-absolute-config-symlink",
-        "head_sha": "90e6d08f009044026bb16a91c74a98a9fb554a84",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136496:5514209884:2026-09-02T18:12:51Z:clawsweeper_auto_repair",
       "comment_id": "5514209884",
@@ -32628,6 +32595,53 @@
         "kind": "pull_request",
         "branch": "fix/fix-981-narrow",
         "head_sha": "9c92d022c3f66b998b769d68b37295e0a14b01d6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136459:5517144129:2026-09-02T22:11:23Z:re_review",
+      "comment_id": "5517144129",
+      "comment_version_key": "5517144129:2026-09-02T22:11:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136459#issuecomment-5517144129",
+      "comment_created_at": "2026-09-02T22:11:23Z",
+      "comment_updated_at": "2026-09-02T22:11:23Z",
+      "comment_body_sha256": "78727534f3eb591e367db3089842f177a3897a9a22d5310d4ee521dff3c2c6a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136459,
+      "author": "akagifreeez",
+      "author_id": 161492586,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-02T22:12:16.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/schtasks-japanese-locale",
+        "head_sha": "bda7d70998677b5be2efd7dac27522c59eeae102",
         "cluster_id": null,
         "job_path": null
       },
