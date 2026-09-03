@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125360",
+  "mode": "autonomous",
+  "run_id": "33758403502",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33758403502",
+  "head_sha": "674841bcdc0a826ff4555f945cc81f122db0d6c2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125360.md",
+  "published_at": "2026-09-03T13:31:48.757Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125360",
+  "canonical_pr": null,
+  "summary": "#125360 remains the open canonical bug. Current main discards the native-plugin enablement response, then polls an empty marketplace inventory for the default discovery timeout. A narrow repair is identified, but implementation is blocked because the mandatory sibling ../codex source checkout is absent and this read-only, network-restricted worker cannot clone it; the targeted test command is also blocked by Corepack attempting a cache write.",
+  "actions": [
+    {
+      "target": "#125360",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#125360",
+      "candidate_fix": null,
+      "reason": "The reported behavior is a focused owner-boundary defect; no duplicate, candidate PR, or security signal is present."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125360",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125360",
+      "candidate_fix": null,
+      "reason": "Obtain the mandated Codex source checkout and a writable package-manager cache, then implement and validate the narrow repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125360",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125360",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor after the Codex source-contract gate is satisfied."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required sibling ../codex source checkout (or a writable, approved environment where it can be cloned) so the exact enablement response contract can be inspected before changing this Codex-integrated owner."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125360",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
