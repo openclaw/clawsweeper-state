@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T17:35:04.006Z",
+  "updated_at": "2026-09-03T17:35:17.220Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128327:5387834189:2026-09-03T11:32:46Z:clawsweeper_needs_human",
-      "comment_id": "5387834189",
-      "comment_version_key": "5387834189:2026-09-03T11:32:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128327#issuecomment-5387834189",
-      "comment_created_at": "2026-08-23T18:47:45Z",
-      "comment_updated_at": "2026-09-03T11:32:46Z",
-      "comment_body_sha256": "6296e0dbcdf1b83bd4392281b912534710108ddfccec166d4b544b731d31088d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128327,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed test uses temporary SQLite stores but replaces the final embedded-agent runtime with a mock. It supplies no after-fix production-pa...; Review finding: [P1] Add the missing direct-session identity check — src/plugins/registry.runtime-config.sqlite.test.ts:256 - [high] Foreign session IDs remain dispatchable — src/... (sha=826d15b3bd881f5775063229f2a4c78d93ab09ba)",
-      "expected_head_sha": "826d15b3bd881f5775063229f2a4c78d93ab09ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T11:43:08.369Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/embedded-run-session-identity-mismatch",
-        "head_sha": "826d15b3bd881f5775063229f2a4c78d93ab09ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128490:5390837311:2026-09-03T11:27:55Z:clawsweeper_needs_human",
       "comment_id": "5390837311",
@@ -31942,6 +31909,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126547:5529615790:2026-09-03T17:34:13Z:re_review",
+      "comment_id": "5529615790",
+      "comment_version_key": "5529615790:2026-09-03T17:34:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126547#issuecomment-5529615790",
+      "comment_created_at": "2026-09-03T17:34:13Z",
+      "comment_updated_at": "2026-09-03T17:34:13Z",
+      "comment_body_sha256": "cbc8df0731cdb273145ee8507ff405acf8f8671f2624c5d44e83c62249a0f0ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126547,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T17:35:15.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-channel-runtime-reload",
+        "head_sha": "74d8d8023b7b0fb693e20c8d4f50dfee34f585e3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
