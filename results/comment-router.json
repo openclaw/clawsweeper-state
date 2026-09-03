@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T09:22:12.885Z",
+  "updated_at": "2026-09-03T09:22:34.360Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134943:5491710348:2026-09-03T05:38:22Z:clawsweeper_needs_human",
-      "comment_id": "5491710348",
-      "comment_version_key": "5491710348:2026-09-03T05:38:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134943#issuecomment-5491710348",
-      "comment_created_at": "2026-09-01T09:14:24Z",
-      "comment_updated_at": "2026-09-03T05:38:22Z",
-      "comment_body_sha256": "cbb9d1444865365283f7c9e17350abd4aca2d219470155274160e429b873d894",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134943,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Revalidate action lifetime after resolve (P2)** - resolve() is arbitrary synchronous plugin code and can call its retained registerAction() disposer. That disposer aborts this registration, but dispatch continue...; Review finding: [P2] Revalidate action lifetime after resolve — ui/src/plugins/control-ui-actions.ts:68-72 - [medium] Native plugin code receives operator Gateway authority — src/... (sha=f0121a55c094c9ed6f351c2b674d9a6f69018f72)",
-      "expected_head_sha": "f0121a55c094c9ed6f351c2b674d9a6f69018f72",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T05:54:16.183Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feature-plugin-ui",
-        "head_sha": "9f9a8cad5078bfe507b288ff83b920372a4ea2b4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135528:5500670751:2026-09-03T05:43:30Z:clawsweeper_auto_repair",
       "comment_id": "5500670751",
@@ -32512,6 +32479,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137209:5523522399:2026-09-03T09:21:42Z:clawsweeper_needs_human",
+      "comment_id": "5523522399",
+      "comment_version_key": "5523522399:2026-09-03T09:21:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137209#issuecomment-5523522399",
+      "comment_created_at": "2026-09-03T09:21:42Z",
+      "comment_updated_at": "2026-09-03T09:21:42Z",
+      "comment_body_sha256": "b8dad8fd9316db761d17d02b6f5f0271e93e25d75eacdc8fc8d3a02f5a339cb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137209,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=753ca7a7e442a854449b20df8fac846c5539cd16)",
+      "expected_head_sha": "753ca7a7e442a854449b20df8fac846c5539cd16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T09:22:34.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qr-setup-code-only-json",
+        "head_sha": "753ca7a7e442a854449b20df8fac846c5539cd16",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
