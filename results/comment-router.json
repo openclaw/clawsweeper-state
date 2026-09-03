@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T15:06:08.563Z",
+  "updated_at": "2026-09-03T15:06:23.750Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110840:5012179246:2026-09-03T10:26:32Z:clawsweeper_auto_repair",
-      "comment_id": "5012179246",
-      "comment_version_key": "5012179246:2026-09-03T10:26:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110840#issuecomment-5012179246",
-      "comment_created_at": "2026-07-18T17:14:25Z",
-      "comment_updated_at": "2026-09-03T10:26:32Z",
-      "comment_body_sha256": "82449768deead5aaaa999c01563632d37b4fe7bc476aa3b7706d494b8520aab2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110840,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=094b4801020092af408cd0f6f724998a5431e939)",
-      "expected_head_sha": "094b4801020092af408cd0f6f724998a5431e939",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T10:43:53.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-tool-echo-utf16",
-        "head_sha": "094b4801020092af408cd0f6f724998a5431e939",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116176:5125641295:2026-09-03T10:38:11Z:clawsweeper_auto_repair",
       "comment_id": "5125641295",
@@ -31922,6 +31889,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137346:5527367658:2026-09-03T15:05:09Z:clawsweeper_needs_human",
+      "comment_id": "5527367658",
+      "comment_version_key": "5527367658:2026-09-03T15:05:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137346#issuecomment-5527367658",
+      "comment_created_at": "2026-09-03T14:35:04Z",
+      "comment_updated_at": "2026-09-03T15:05:09Z",
+      "comment_body_sha256": "c1adc5451238a2148d3d1b3862df7e17f22bd3f7dcb1e233cb1545337b0c71db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137346,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 17 net lines; the added QA-only typed facade is justified by the existing generic plugin public-surface loader, but should not expand into a general Slack API... (sha=f82c95059758d887687e46f7b4707b34ad689107)",
+      "expected_head_sha": "f82c95059758d887687e46f7b4707b34ad689107",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T15:06:23.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-slack-plugin-runtime",
+        "head_sha": "f82c95059758d887687e46f7b4707b34ad689107",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
