@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:45:26.819Z",
+  "updated_at": "2026-09-03T04:45:52.879Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136588:5516137784:2026-09-03T01:49:16Z:clawsweeper_auto_repair",
-      "comment_id": "5516137784",
-      "comment_version_key": "5516137784:2026-09-03T01:49:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136588#issuecomment-5516137784",
-      "comment_created_at": "2026-09-02T20:44:12Z",
-      "comment_updated_at": "2026-09-03T01:49:16Z",
-      "comment_body_sha256": "6b35b15fb130f91695d6201e5e63928b30f3718934fd3976ea799e643938fc56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136588,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9d5b5133c8f3ddfab4681f2bcdaf0fa6c1170ff9)",
-      "expected_head_sha": "9d5b5133c8f3ddfab4681f2bcdaf0fa6c1170ff9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:50:17.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/openclaw-updater-reliability-53417f",
-        "head_sha": "9d5b5133c8f3ddfab4681f2bcdaf0fa6c1170ff9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawdex:11:5516129785:2026-09-03T01:49:19Z:clawsweeper_auto_repair",
       "comment_id": "5516129785",
@@ -32847,6 +32814,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136747:5520508312:2026-09-03T04:44:48Z:re_review",
+      "comment_id": "5520508312",
+      "comment_version_key": "5520508312:2026-09-03T04:44:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136747#issuecomment-5520508312",
+      "comment_created_at": "2026-09-03T04:44:48Z",
+      "comment_updated_at": "2026-09-03T04:44:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136747,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T04:45:50.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/restore-chat-face-labels-v2",
+        "head_sha": "f2012d6c2125c859e1ae2c97853a376750397d14",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
