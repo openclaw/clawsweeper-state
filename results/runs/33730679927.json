@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137085",
+  "mode": "autonomous",
+  "run_id": "33730679927",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33730679927",
+  "head_sha": "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137085.md",
+  "published_at": "2026-09-03T08:21:06.565Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137085",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137085",
+  "canonical_pr": null,
+  "summary": "A narrow owner-boundary repair is planned, but this worker cannot build or validate it: required sibling ../codex source is absent, the filesystem is read-only, Swift is unavailable, and JS validation dependencies are missing.",
+  "actions": [
+    {
+      "target": "#137085",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "The implementation itself is narrow and non-security-sensitive, but direct Codex-source inspection, a mutable branch, and runnable Apple-native validation are mandatory before a repair can be produced."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137085",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a mutable executor after it satisfies the direct ../codex inspection gate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
