@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T07:03:33.924Z",
+  "updated_at": "2026-09-03T07:03:35.063Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136411:5520117837:2026-09-03T03:58:18Z:re_review",
-      "comment_id": "5520117837",
-      "comment_version_key": "5520117837:2026-09-03T03:58:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136411#issuecomment-5520117837",
-      "comment_created_at": "2026-09-03T03:58:18Z",
-      "comment_updated_at": "2026-09-03T03:58:18Z",
-      "comment_body_sha256": "4f844770e565dcac190d86276340456674b4220a265970b5319707066de2aa52",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136411,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review on `dd776a46ed7ba2f9edc5d5618493f297975cd1c2`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T03:59:12.314Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-diagnostic-warn-level",
-        "head_sha": "dd776a46ed7ba2f9edc5d5618493f297975cd1c2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136610:5516453899:2026-09-03T03:58:20Z:clawsweeper_needs_human",
       "comment_id": "5516453899",
@@ -32505,6 +32458,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T07:03:33.924Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137081:5521882544:2026-09-03T07:02:23Z:clawsweeper_needs_human",
+      "comment_id": "5521882544",
+      "comment_version_key": "5521882544:2026-09-03T07:02:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137081#issuecomment-5521882544",
+      "comment_created_at": "2026-09-03T07:02:23Z",
+      "comment_updated_at": "2026-09-03T07:02:23Z",
+      "comment_body_sha256": "e71c34cc3628986ed84d2c8a0b1e5d7911e27015273842b9203a533cb8f1921b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137081,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The patch has production net growth of 50 lines for a bug fix; the shared owner replaces the prior self-presence probe, but a real node-host-to-Gateway-to-Devices trace should verify... (sha=22bd13e7a89c3b9aae41bb1f3617a477a7073063)",
+      "expected_head_sha": "22bd13e7a89c3b9aae41bb1f3617a477a7073063",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T07:03:35.063Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/node-host-model-identifier",
+        "head_sha": "22bd13e7a89c3b9aae41bb1f3617a477a7073063",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
