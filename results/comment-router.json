@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T06:31:01.438Z",
+  "updated_at": "2026-09-03T06:31:28.944Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136872:5519814664:2026-09-03T03:18:42Z:re_review",
-      "comment_id": "5519814664",
-      "comment_version_key": "5519814664:2026-09-03T03:18:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136872#issuecomment-5519814664",
-      "comment_created_at": "2026-09-03T03:18:42Z",
-      "comment_updated_at": "2026-09-03T03:18:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136872,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T03:54:26.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/xai-private-helper-facade",
-        "head_sha": "acf9e9cf58152d7711e05a2370d145421a948a00",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136935:5519863298:2026-09-03T03:24:48Z:re_review",
       "comment_id": "5519863298",
@@ -32456,6 +32409,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-135668-native-question-routing",
         "head_sha": "78f45fdff2f1f67d86bb0d8f59f1accf22bafb76",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137030:5520981045:2026-09-03T06:30:41Z:clawsweeper_auto_repair",
+      "comment_id": "5520981045",
+      "comment_version_key": "5520981045:2026-09-03T06:30:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137030#issuecomment-5520981045",
+      "comment_created_at": "2026-09-03T05:29:55Z",
+      "comment_updated_at": "2026-09-03T06:30:41Z",
+      "comment_body_sha256": "8169a5dc73347b9bc91554be5a557014b57bf67ad7d16ad581435262cfc877df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c3f5668ff7ba61e8abaeb819928c6ea0bdcfcd0d)",
+      "expected_head_sha": "c3f5668ff7ba61e8abaeb819928c6ea0bdcfcd0d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T06:31:28.944Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-loop-stress-fixes",
+        "head_sha": "c3f5668ff7ba61e8abaeb819928c6ea0bdcfcd0d",
         "cluster_id": null,
         "job_path": null
       }
