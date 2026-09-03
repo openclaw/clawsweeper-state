@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:10:28.231Z",
+  "updated_at": "2026-09-03T05:10:30.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136533:5514801187:2026-09-03T01:43:33Z:clawsweeper_needs_human",
-      "comment_id": "5514801187",
-      "comment_version_key": "5514801187:2026-09-03T01:43:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136533#issuecomment-5514801187",
-      "comment_created_at": "2026-09-02T19:00:40Z",
-      "comment_updated_at": "2026-09-03T01:43:33Z",
-      "comment_body_sha256": "36776aa75159d133340c73dbe4bf1ad3645456acad91d2c84a0a30ff8d2e8c44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136533,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +4 lines; the extra conditions are necessary to separate the newly reachable byte-fuse path from the intentionally skipped heartbeat token-maintenance path, and... (sha=b14df256011b856d90d4587197a1df6587cefa32)",
-      "expected_head_sha": "b14df256011b856d90d4587197a1df6587cefa32",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T02:02:22.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-136452-heartbeat-byte-cap",
-        "head_sha": "b14df256011b856d90d4587197a1df6587cefa32",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136561:5515502208:2026-09-03T01:56:27Z:clawsweeper_needs_human",
       "comment_id": "5515502208",
@@ -32775,6 +32742,53 @@
         "kind": "pull_request",
         "branch": "codex/plugin-local-icon-assets",
         "head_sha": "dbed86e68949a1c1cc3bc5f01234ec7bf6a7eaea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131511:5520802106:2026-09-03T05:09:30Z:re_review",
+      "comment_id": "5520802106",
+      "comment_version_key": "5520802106:2026-09-03T05:09:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5520802106",
+      "comment_created_at": "2026-09-03T05:09:30Z",
+      "comment_updated_at": "2026-09-03T05:09:30Z",
+      "comment_body_sha256": "f74625e2b8d5d865753ab26ce062749118f88534dc3bbd629d08d097adb50671",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131511,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T05:10:28.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bundled-channel-icon-assets",
+        "head_sha": "ffd4f6ea13872ce002c2f78a776fdc8732203e0d",
         "cluster_id": null,
         "job_path": null
       },
