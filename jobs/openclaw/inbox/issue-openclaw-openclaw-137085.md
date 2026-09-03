@@ -67,17 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix the macOS/OpenClawKit device-identity migration lifecycle for https://github.com/openclaw/openclaw/issues/137085. Reproduce first with a focused Swift regression that seeds a valid canonical primary SQLite identity and a matching `device.json.native-importing` claim, then loads the identity store and demonstrates that the claim remains today. Refactor `DeviceIdentitySQLiteStore` so an interrupted native claim is reconciled safely even when a canonical identity already exists: clean only validated matching material after rereading the canonical row; preserve divergent or unsafe state with an actionable diagnostic; do not overwrite a canonical identity, add retries, change gateway protocol, add config, or alter SQLite schema. Keep ordinary retired source handling unchanged. Add regression coverage in the existing OpenClawKit test suite and obtain a native app/Gateway proof if feasible. Do not edit CHANGELOG.md; include concise release-note context in the PR body.
+Repair the macOS primary device-identity lifecycle for a valid existing SQLite row plus a lone matching .native-importing claim. Preserve the canonical SQLite row, do not add configuration, protocol, or SQLite schema changes, and retain the deliberate behavior that leaves an ordinary downgrade-recreated legacy JSON source for Doctor. Add a Swift regression that fails on current main, then prove the app retains the canonical identity, resolves the stale claim, and completes the native connection after the simulated upgrade state. Record release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - apps/shared/OpenClawKit/Sources/OpenClawKit/DeviceIdentitySQLiteStore.swift
 - apps/shared/OpenClawKit/Tests/OpenClawKitTests/DeviceIdentityStoreTests.swift
+- src/infra/state-migrations.device-identity.test.ts
+- src/node-host/startup-state-migrations.test.ts
 
 Validation:
 
-- swift test --package-path apps/shared/OpenClawKit --no-parallel --filter DeviceIdentityStoreTests
-- swift build --package-path apps/macos --product OpenClaw --configuration release
+- Run DeviceIdentityStoreTests through the disposable macOS native-test runner: scripts/test-macos-native.mts.
+- Run pnpm test src/infra/state-migrations.device-identity.test.ts src/node-host/startup-state-migrations.test.ts.
+- Capture a sanitized macOS upgrade-state connection trace showing the retained identity and successful native Gateway handshake.
 
 ## Operator Prompt
 
