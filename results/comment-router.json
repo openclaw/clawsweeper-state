@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:06:25.895Z",
+  "updated_at": "2026-09-03T01:06:33.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1358:5516354525:2026-09-02T21:02:26Z:re_review",
-      "comment_id": "5516354525",
-      "comment_version_key": "5516354525:2026-09-02T21:02:26Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1358#issuecomment-5516354525",
-      "comment_created_at": "2026-09-02T21:02:26Z",
-      "comment_updated_at": "2026-09-02T21:02:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1358,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T21:08:48.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/csw-147-fanout-identities",
-        "head_sha": "1ec0149ed24394b10b1277715b9349643cd67834",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1358:5516162183:2026-09-02T21:07:36Z:clawsweeper_needs_human",
       "comment_id": "5516162183",
@@ -33073,6 +33026,39 @@
         "kind": "pull_request",
         "branch": "fix/macos-localized-gateway-errors",
         "head_sha": "c978747cc46b17283989da361b1f0df3a59a204e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136776:5518737157:2026-09-03T01:05:31Z:clawsweeper_needs_human",
+      "comment_id": "5518737157",
+      "comment_version_key": "5518737157:2026-09-03T01:05:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136776#issuecomment-5518737157",
+      "comment_created_at": "2026-09-03T01:05:31Z",
+      "comment_updated_at": "2026-09-03T01:05:31Z",
+      "comment_body_sha256": "a763948bb73bc7236661e4896a213dfd59e583cc0f222d8adfe67644fcce586b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136776,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until exact-head CI finishes, the reduced fanout lacks observed native proof that all selected work completes with the expected coverage and bounded resource behavior. (sha=9a0691825dbd3919e5a874eb0744bc53e1b8d7c3)",
+      "expected_head_sha": "9a0691825dbd3919e5a874eb0744bc53e1b8d7c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T01:06:33.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-consolidate-shards-20260902",
+        "head_sha": "9a0691825dbd3919e5a874eb0744bc53e1b8d7c3",
         "cluster_id": null,
         "job_path": null
       }
