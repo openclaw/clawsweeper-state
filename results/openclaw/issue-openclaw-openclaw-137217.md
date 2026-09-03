@@ -7,7 +7,7 @@ run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33745761658"
 head_sha: "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-03T11:08:51.147Z"
+published_at: "2026-09-03T13:48:28.557Z"
 canonical: "#137217"
 canonical_issue: "#137217"
 canonical_pr: null
