@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:38:50.372Z",
+  "updated_at": "2026-09-03T08:38:54.094Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132451:5461037497:2026-09-03T04:52:46Z:clawsweeper_needs_human",
-      "comment_id": "5461037497",
-      "comment_version_key": "5461037497:2026-09-03T04:52:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5461037497",
-      "comment_created_at": "2026-08-29T07:22:42Z",
-      "comment_updated_at": "2026-09-03T04:52:46Z",
-      "comment_body_sha256": "7d2b38539d156178359e86677f72bbf6b121a518e4cb6f2c20d15b7cb3a3dbb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep last-use metadata behind administrator scope (P1)** - Late review catch: includeProfileIdentity is limited to operator.admin, but this line now returns lastUsedAt regardless of that boundary. An operator.re...; Review finding: [P1] Keep last-use metadata behind administrator scope — src/gateway/server-methods/models-auth-status.ts:410 - [P2] Preserve the lock source for recovery guidance... (sha=99bd43e20eec1604ada6df96042f905f96d8c16d)",
-      "expected_head_sha": "99bd43e20eec1604ada6df96042f905f96d8c16d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T05:13:52.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-roster",
-        "head_sha": "99bd43e20eec1604ada6df96042f905f96d8c16d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132552:5461954809:2026-09-03T05:01:51Z:clawsweeper_needs_human",
       "comment_id": "5461954809",
@@ -32080,6 +32047,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136202:5522986400:2026-09-03T08:37:48Z:re_review",
+      "comment_id": "5522986400",
+      "comment_version_key": "5522986400:2026-09-03T08:37:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136202#issuecomment-5522986400",
+      "comment_created_at": "2026-09-03T08:37:48Z",
+      "comment_updated_at": "2026-09-03T08:37:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136202,
+      "author": "KhanCold",
+      "author_id": 119404710,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T08:38:51.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/profile-utils-coverage",
+        "head_sha": "10f863a950107d66b71345822e2fa033c701a67c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
