@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T12:08:32.379Z",
+  "updated_at": "2026-09-03T12:11:15.420Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137109:5521842703:2026-09-03T06:58:55Z:clawsweeper_needs_human",
-      "comment_id": "5521842703",
-      "comment_version_key": "5521842703:2026-09-03T06:58:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137109#issuecomment-5521842703",
-      "comment_created_at": "2026-09-03T06:58:55Z",
-      "comment_updated_at": "2026-09-03T06:58:55Z",
-      "comment_body_sha256": "437ca0040c083fec3f8c4f5e17ce30fc6098694582fc4920485c0486bc4e35ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137109,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by one line; source inspection shows this is the direct missing sealed-plan input at the existing shared-validator call, with no duplicate path or removable wrap... (sha=a02da6b6852f3a01d2535a734d9bc124723d0646)",
-      "expected_head_sha": "a02da6b6852f3a01d2535a734d9bc124723d0646",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:03:04.585Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-continue-coverage-policy",
-        "head_sha": "a02da6b6852f3a01d2535a734d9bc124723d0646",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136410:5521859665:2026-09-03T07:00:30Z:re_review",
       "comment_id": "5521859665",
@@ -32494,6 +32461,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137120:5525519056:2026-09-03T12:10:19Z:re_review",
+      "comment_id": "5525519056",
+      "comment_version_key": "5525519056:2026-09-03T12:10:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137120#issuecomment-5525519056",
+      "comment_created_at": "2026-09-03T12:10:19Z",
+      "comment_updated_at": "2026-09-03T12:10:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137120,
+      "author": "shakkernerd",
+      "author_id": 165377636,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T12:11:12.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "workloop/fix-openai-catalog-auth-profile-c22cf759",
+        "head_sha": "c2bc5aaf893bc2c509f49040dadc0a9d5c2f9615",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
