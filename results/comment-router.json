@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T12:22:36.083Z",
+  "updated_at": "2026-09-03T12:23:28.674Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137131:5522430440:2026-09-03T07:50:59Z:clawsweeper_auto_repair",
-      "comment_id": "5522430440",
-      "comment_version_key": "5522430440:2026-09-03T07:50:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137131#issuecomment-5522430440",
-      "comment_created_at": "2026-09-03T07:50:59Z",
-      "comment_updated_at": "2026-09-03T07:50:59Z",
-      "comment_body_sha256": "5c48c576c9a530552d3a2284f367bac60504bb46adf94e79a4cfaaa328fa9873",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137131,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c3c440efbab90469c5e6d3df3d6321be4ed3d774)",
-      "expected_head_sha": "c3c440efbab90469c5e6d3df3d6321be4ed3d774",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:03:04.585Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/catalog-hydrate-models-dev",
-        "head_sha": "28d003335381afc50341c4628d8638a28617de3f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137117:5522430817:2026-09-03T07:51:01Z:clawsweeper_needs_human",
       "comment_id": "5522430817",
@@ -32568,6 +32535,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137223:5525675686:2026-09-03T12:22:09Z:re_review",
+      "comment_id": "5525675686",
+      "comment_version_key": "5525675686:2026-09-03T12:22:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137223#issuecomment-5525675686",
+      "comment_created_at": "2026-09-03T12:22:09Z",
+      "comment_updated_at": "2026-09-03T12:22:09Z",
+      "comment_body_sha256": "9bce8b0166370a43a3f96a0e2aa0a0ec6e09271b5ef41cdf439f5be9a6941918",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137223,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T12:23:20.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-windows-wrapper-patterns",
+        "head_sha": "d7d8865518e158b7999880e56ba87f4c52173c8b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
