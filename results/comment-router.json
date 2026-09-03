@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T00:00:44.617Z",
+  "updated_at": "2026-09-03T00:01:18.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5485399055:2026-08-31T22:11:26Z:re_review",
-      "comment_id": "5485399055",
-      "comment_version_key": "5485399055:2026-08-31T22:11:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5485399055",
-      "comment_created_at": "2026-08-31T22:11:26Z",
-      "comment_updated_at": "2026-08-31T22:11:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T20:37:10.881Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5486144287:2026-08-31T23:23:17Z:re_review",
       "comment_id": "5486144287",
@@ -32854,6 +32827,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T00:00:44.617Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134931:5491689336:2026-09-02T23:59:59Z:clawsweeper_needs_human",
+      "comment_id": "5491689336",
+      "comment_version_key": "5491689336:2026-09-02T23:59:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134931#issuecomment-5491689336",
+      "comment_created_at": "2026-09-01T09:12:30Z",
+      "comment_updated_at": "2026-09-02T23:59:59Z",
+      "comment_body_sha256": "0d908f642958230790515154fdf29905b45a29169829051e092a87c62a4302c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134931,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve real behavior proof assessment** - Needs stronger real behavior proof before merge: Authority-chain proof required: the introduced harness covers an allowed paired-node flow, but supplied native-provider...; Review finding: [P2] Document the prepared-worker provider hooks — src/plugins/capability-provider.types.ts:234-245 - [low] Prove prepared-workspace authority after lifecycle chan... (sha=e515ae3d06d3a1271c05a308e4857c34db27b72a)",
+      "expected_head_sha": "e515ae3d06d3a1271c05a308e4857c34db27b72a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T00:01:18.185Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/prepared-reserve-integration",
+        "head_sha": "e515ae3d06d3a1271c05a308e4857c34db27b72a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
