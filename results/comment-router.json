@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T10:39:39.968Z",
+  "updated_at": "2026-09-03T10:40:29.342Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3583:5522082949:2026-09-03T07:20:15Z:re_review",
-      "comment_id": "5522082949",
-      "comment_version_key": "5522082949:2026-09-03T07:20:15Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3583#issuecomment-5522082949",
-      "comment_created_at": "2026-09-03T07:20:15Z",
-      "comment_updated_at": "2026-09-03T07:20:15Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3583,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T07:20:48.535Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/remove-signal-severity",
-        "head_sha": "58bdc18ef1e5a016d291053ae74b63982d17c9d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3583:5521821634:2026-09-03T07:19:54Z:clawsweeper_needs_human",
       "comment_id": "5521821634",
@@ -32159,6 +32112,39 @@
         "kind": "pull_request",
         "branch": "feat/workshop-review-agent-turn",
         "head_sha": "618abf4f978bd316686a2e419eb2c9915cb5ae2e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134003:5476306309:2026-09-03T10:35:46Z:clawsweeper_needs_human",
+      "comment_id": "5476306309",
+      "comment_version_key": "5476306309:2026-09-03T10:35:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134003#issuecomment-5476306309",
+      "comment_created_at": "2026-08-31T09:18:48Z",
+      "comment_updated_at": "2026-09-03T10:35:46Z",
+      "comment_body_sha256": "35fe777309218c309c5ee2d55360824478a462a7e8defb69c671b49c854f119f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: source ties controls to the active call and connection, but available native-run evidence predates c82...; Review finding: [medium] Exact-head authority proof is incomplete — src/gateway/server-methods/talk-client-run-ownership.ts:17 (sha=c825a93b0b62f0586fac3d6e29bb9f3e32391d96)",
+      "expected_head_sha": "c825a93b0b62f0586fac3d6e29bb9f3e32391d96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T10:40:29.342Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "worktree-talk-native-gateway-control",
+        "head_sha": "c825a93b0b62f0586fac3d6e29bb9f3e32391d96",
         "cluster_id": null,
         "job_path": null
       }
