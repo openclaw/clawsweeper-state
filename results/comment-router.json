@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T06:20:55.802Z",
+  "updated_at": "2026-09-03T06:21:15.749Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131511:5448694148:2026-09-03T03:47:38Z:clawsweeper_needs_human",
-      "comment_id": "5448694148",
-      "comment_version_key": "5448694148:2026-09-03T03:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5448694148",
-      "comment_created_at": "2026-08-28T05:09:10Z",
-      "comment_updated_at": "2026-09-03T03:47:38Z",
-      "comment_body_sha256": "e6f2d7ba836034b371ed76ea22233131f2fd24b81f51705eeb647b4680c24613",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131511,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - PR #131510 remains open even though it defines the package-local icon contract this PR consumes, so merging this child alone would leave the intended compatibility cutover unresolved. (sha=94ddd39bc0e9cd4b2f7117e737063a19f0c35ecd)",
-      "expected_head_sha": "94ddd39bc0e9cd4b2f7117e737063a19f0c35ecd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T03:48:46.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bundled-channel-icon-assets",
-        "head_sha": "94ddd39bc0e9cd4b2f7117e737063a19f0c35ecd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131511:5500199896:2026-09-01T20:45:43Z:re_review",
       "comment_id": "5500199896",
@@ -32421,6 +32388,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136974:5521442012:2026-09-03T06:20:21Z:re_review",
+      "comment_id": "5521442012",
+      "comment_version_key": "5521442012:2026-09-03T06:20:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136974#issuecomment-5521442012",
+      "comment_created_at": "2026-09-03T06:20:21Z",
+      "comment_updated_at": "2026-09-03T06:20:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136974,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T06:21:13.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-resource-symlink-roots",
+        "head_sha": "58243efe9e24de5e78a8913cd7979983a7f47ab7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
