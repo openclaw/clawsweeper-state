@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T19:36:22.221Z",
+  "updated_at": "2026-09-03T19:37:18.980Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112709:5128482119:2026-09-03T12:35:44Z:clawsweeper_auto_repair",
-      "comment_id": "5128482119",
-      "comment_version_key": "5128482119:2026-09-03T12:35:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112709#issuecomment-5128482119",
-      "comment_created_at": "2026-07-30T08:32:34Z",
-      "comment_updated_at": "2026-09-03T12:35:44Z",
-      "comment_body_sha256": "a6e947da2401fecef1708d966b3c75e25e57fc6f92cfc6be3d67d27b2bc9a18e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112709,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9214b3628b24cca19cdf4062c1e813e3d7741715)",
-      "expected_head_sha": "9214b3628b24cca19cdf4062c1e813e3d7741715",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:41:11.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/taskflow-atomic-cancel-state",
-        "head_sha": "9214b3628b24cca19cdf4062c1e813e3d7741715",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117434:5151764708:2026-09-03T12:36:23Z:clawsweeper_auto_repair",
       "comment_id": "5151764708",
@@ -32162,6 +32129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131929:5455592482:2026-09-03T19:36:04Z:clawsweeper_needs_human",
+      "comment_id": "5455592482",
+      "comment_version_key": "5455592482:2026-09-03T19:36:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131929#issuecomment-5455592482",
+      "comment_created_at": "2026-08-28T17:23:03Z",
+      "comment_updated_at": "2026-09-03T19:36:04Z",
+      "comment_body_sha256": "17bda70fcb979cc445448164d56a093fce6b59165657d8c5a549e7d7dfb69ef8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131929,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fix adds net 13 production lines across seven distinct parser owners; that repetition is justified by their incompatible SDK, SSE, AWS-event, and NDJSON boundaries, but it remains... (sha=0f20d2f7cb2beb9df973427c99688a41ee7644a2)",
+      "expected_head_sha": "0f20d2f7cb2beb9df973427c99688a41ee7644a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T19:37:18.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-agent-use-transport-liveness-for-idl",
+        "head_sha": "0f20d2f7cb2beb9df973427c99688a41ee7644a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
