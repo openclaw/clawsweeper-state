@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-136710",
+  "mode": "autonomous",
+  "run_id": "33693665903",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33693665903",
+  "head_sha": "11f9b0825c298e5e64fced96bedb5b832f80b197",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-136710.md",
+  "published_at": "2026-09-03T00:22:47.675Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/136710",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/136710",
+  "canonical_pr": null,
+  "summary": "#136710 remains a narrow canonical configuration-help defect: current main has the stale “restart required” text while the generic plugins rule remains hot. Implementation and validation are blocked because this checkout is read-only, has no node_modules, and Corepack cannot create its cache (EROFS).",
+  "actions": [
+    {
+      "target": "#136710",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136710",
+      "candidate_fix": null,
+      "reason": "The exact production-copy contradiction is reproducible from current main, but this worker cannot edit the branch or provision dependencies in the read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-136710",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#136710",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix-PR plan is ready for a writable executor."
+    },
+    {
+      "target": "#136709",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#136710",
+      "candidate_fix": null,
+      "reason": "Already closed context reference; no mutation is valid or needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#136710",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
