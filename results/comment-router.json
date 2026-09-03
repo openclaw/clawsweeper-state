@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T20:26:40.693Z",
+  "updated_at": "2026-09-03T20:26:59.840Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126986:5387609355:2026-08-23T18:02:25Z:re_review",
-      "comment_id": "5387609355",
-      "comment_version_key": "5387609355:2026-08-23T18:02:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5387609355",
-      "comment_created_at": "2026-08-23T18:02:25Z",
-      "comment_updated_at": "2026-08-23T18:02:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126986,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T13:20:37.864Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126986:5387696494:2026-08-23T18:20:35Z:re_review",
       "comment_id": "5387696494",
@@ -32500,6 +32473,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T20:26:40.693Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137248:5524605555:2026-09-03T20:25:57Z:clawsweeper_needs_human",
+      "comment_id": "5524605555",
+      "comment_version_key": "5524605555:2026-09-03T20:25:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137248#issuecomment-5524605555",
+      "comment_created_at": "2026-09-03T10:53:09Z",
+      "comment_updated_at": "2026-09-03T20:25:57Z",
+      "comment_body_sha256": "0ab5265339e29320c70a71aa983f94f6e2296838ed3f34a971224745a9f2d6c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the PR describes an E2E that mints, redeems, then removes a session before a later HTTP request, but i...; Review finding: [P1] Revalidate ticket authority immediately before local file access — src/gateway/control-ui.ts:572-590 - [high] Session revocation can race ticketed file access... (sha=285b4ea639a4527d7d77a38826b1a988cf25112f)",
+      "expected_head_sha": "285b4ea639a4527d7d77a38826b1a988cf25112f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T20:26:59.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pb-f39/control-ui-media-ws-capability",
+        "head_sha": "285b4ea639a4527d7d77a38826b1a988cf25112f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
