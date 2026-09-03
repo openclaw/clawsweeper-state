@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:14:53.580Z",
+  "updated_at": "2026-09-03T05:15:01.277Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1756:5519408310:2026-09-03T02:27:46Z:re_review",
-      "comment_id": "5519408310",
-      "comment_version_key": "5519408310:2026-09-03T02:27:46Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1756#issuecomment-5519408310",
-      "comment_created_at": "2026-09-03T02:27:46Z",
-      "comment_updated_at": "2026-09-03T02:27:46Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1756,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T02:28:43.653Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/image-publication-rollback",
-        "head_sha": "9425842b42f999c9fc5aa4547ccd25b5baa8fe88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3565:5481122728:2026-09-03T02:07:52Z:clawsweeper_needs_human",
       "comment_id": "5481122728",
@@ -32946,6 +32899,39 @@
         "kind": "pull_request",
         "branch": "codex/coordinator-fixed-checkpoint-forks",
         "head_sha": "745a2691c538db3175b518fc94f0fff0a58c8f74",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136948:5520075661:2026-09-03T05:13:38Z:clawsweeper_needs_human",
+      "comment_id": "5520075661",
+      "comment_version_key": "5520075661:2026-09-03T05:13:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136948#issuecomment-5520075661",
+      "comment_created_at": "2026-09-03T03:52:50Z",
+      "comment_updated_at": "2026-09-03T05:13:38Z",
+      "comment_body_sha256": "5cee058a6658bb33c7b0d452125ed2e0c8ba41c9654c9a1fb27f973248e78a53",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136948,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The bug fix has net +1 production line; it appears to express a provider consent field, but the locked upstream source could not be independently read in this environment. (sha=e0d4603b80d3f8ad0d5f0a0a8cd91a7237fdf92e)",
+      "expected_head_sha": "e0d4603b80d3f8ad0d5f0a0a8cd91a7237fdf92e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:15:01.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-screen-scroll-intent-20260902",
+        "head_sha": "e0d4603b80d3f8ad0d5f0a0a8cd91a7237fdf92e",
         "cluster_id": null,
         "job_path": null
       }
