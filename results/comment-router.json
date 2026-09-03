@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:22:39.490Z",
+  "updated_at": "2026-09-03T04:22:40.320Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1692:5473862773:2026-09-03T01:17:42Z:clawsweeper_auto_repair",
-      "comment_id": "5473862773",
-      "comment_version_key": "5473862773:2026-09-03T01:17:42Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1692#issuecomment-5473862773",
-      "comment_created_at": "2026-08-31T04:48:38Z",
-      "comment_updated_at": "2026-09-03T01:17:42Z",
-      "comment_body_sha256": "b773c2c538eccbfe5de97474f5ab220785098b2c1bc368f4b9be600f61dcba06",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1692,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=070d0d1d294193155469e2d1cef6515560522b78)",
-      "expected_head_sha": "070d0d1d294193155469e2d1cef6515560522b78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:18:49.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/coordinator-fixed-checkpoint-forks",
-        "head_sha": "070d0d1d294193155469e2d1cef6515560522b78",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136755:5518840690:2026-09-03T01:18:16Z:re_review",
       "comment_id": "5518840690",
@@ -32815,6 +32782,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T04:22:39.490Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136588:5516137784:2026-09-03T03:59:18Z:clawsweeper_needs_human",
+      "comment_id": "5516137784",
+      "comment_version_key": "5516137784:2026-09-03T03:59:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136588#issuecomment-5516137784",
+      "comment_created_at": "2026-09-02T20:44:12Z",
+      "comment_updated_at": "2026-09-03T03:59:18Z",
+      "comment_body_sha256": "47d1b6f9ced7fd0ba76b7bb60aabd38f78678263840927196bf95155ed9477a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate ownership after managed-handoff startup (P1)** - startManagedServiceUpdateHandoff is awaited after the owner check, but the result is then used to schedule SIGUSR1 without checking whether commands.ow...; Review finding: [P1] Revalidate ownership after managed-handoff startup — src/gateway/server-methods/update.ts:461-471 - [P2] Correct the session-less fallback documentation — doc... (sha=a44bbe7f621dded39976710034371614e16bc7a2)",
+      "expected_head_sha": "a44bbe7f621dded39976710034371614e16bc7a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T04:22:40.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-updater-reliability-53417f",
+        "head_sha": "a44bbe7f621dded39976710034371614e16bc7a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
