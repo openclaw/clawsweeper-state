@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T13:19:17.424Z",
+  "updated_at": "2026-09-03T13:20:14.876Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116520:5135115842:2026-09-03T08:43:15Z:clawsweeper_auto_repair",
-      "comment_id": "5135115842",
-      "comment_version_key": "5135115842:2026-09-03T08:43:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116520#issuecomment-5135115842",
-      "comment_created_at": "2026-07-30T19:04:49Z",
-      "comment_updated_at": "2026-09-03T08:43:15Z",
-      "comment_body_sha256": "f604f361ec407f16ecda5cf777fa016b835e8e8a47f38d24bd1c45b1368f32dd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116520,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5be6cdd3edf0c8b7bf7dcabacb78687e07a4ef62)",
-      "expected_head_sha": "5be6cdd3edf0c8b7bf7dcabacb78687e07a4ef62",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:48:54.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-daemon-liveness",
-        "head_sha": "5be6cdd3edf0c8b7bf7dcabacb78687e07a4ef62",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:113217:5144942711:2026-09-03T08:37:00Z:clawsweeper_auto_repair",
       "comment_id": "5144942711",
@@ -32747,6 +32714,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137313:5526430616:2026-09-03T13:19:14Z:clawsweeper_needs_human",
+      "comment_id": "5526430616",
+      "comment_version_key": "5526430616:2026-09-03T13:19:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137313#issuecomment-5526430616",
+      "comment_created_at": "2026-09-03T13:19:14Z",
+      "comment_updated_at": "2026-09-03T13:19:14Z",
+      "comment_body_sha256": "45e1a4618cd4e29b25546ea82733e0f90769865751ff44cfc5c701fe55cb59f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137313,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Discord context builder, which feeds its payload to the inbound-turn dispatcher, but the PR supplies only r... (sha=ffae28547e18774622ee02d76e0d20ddd35ebdd5)",
+      "expected_head_sha": "ffae28547e18774622ee02d76e0d20ddd35ebdd5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T13:20:14.876Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-forward-snapshot-body",
+        "head_sha": "ffae28547e18774622ee02d76e0d20ddd35ebdd5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
