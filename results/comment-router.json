@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T22:47:12.353Z",
+  "updated_at": "2026-09-03T22:50:18.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125896:5331429410:2026-09-03T13:52:14Z:clawsweeper_auto_repair",
-      "comment_id": "5331429410",
-      "comment_version_key": "5331429410:2026-09-03T13:52:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125896#issuecomment-5331429410",
-      "comment_created_at": "2026-08-18T16:57:59Z",
-      "comment_updated_at": "2026-09-03T13:52:14Z",
-      "comment_body_sha256": "a5daef8b2b5a24a373a27f03f51791f63d32bb97afb9cf601337655584e8bc0b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125896,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=74aa5dacbddd5572fc4b1ee2e201bf5d6fb0e046)",
-      "expected_head_sha": "74aa5dacbddd5572fc4b1ee2e201bf5d6fb0e046",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T14:14:23.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/updater-protect-live-gateway",
-        "head_sha": "74aa5dacbddd5572fc4b1ee2e201bf5d6fb0e046",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125907:5331459034:2026-09-03T14:06:38Z:clawsweeper_needs_human",
       "comment_id": "5331459034",
@@ -33562,6 +33529,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137592:5533129150:2026-09-03T22:49:08Z:re_review",
+      "comment_id": "5533129150",
+      "comment_version_key": "5533129150:2026-09-03T22:49:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137592#issuecomment-5533129150",
+      "comment_created_at": "2026-09-03T22:49:08Z",
+      "comment_updated_at": "2026-09-03T22:49:08Z",
+      "comment_body_sha256": "180384593ee975338b65a451965c6dee05ba32a012e64b87b51ca07a0115ac09",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137592,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T22:50:15.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/direct-tsdown-dts-sanitize",
+        "head_sha": "659f2ec429ae7d888edec9bbdae765515c5b9c18",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
