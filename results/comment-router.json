@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T13:38:03.733Z",
+  "updated_at": "2026-09-03T13:39:16.470Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134115:5523432685:2026-09-03T09:14:28Z:re_review",
-      "comment_id": "5523432685",
-      "comment_version_key": "5523432685:2026-09-03T09:14:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134115#issuecomment-5523432685",
-      "comment_created_at": "2026-09-03T09:14:28Z",
-      "comment_updated_at": "2026-09-03T09:14:28Z",
-      "comment_body_sha256": "9f5ff3aefd1d87579f3520877b6f4e6bc53dcbcebda79c253612059b1a045300",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134115,
-      "author": "KhanCold",
-      "author_id": 119404710,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T09:15:31.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test-conversation-target",
-        "head_sha": "ee54cbd5ab81c0b6794b1d0a0f525b979bcf3aec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136202:5523433033:2026-09-03T09:14:29Z:re_review",
       "comment_id": "5523433033",
@@ -32088,6 +32041,39 @@
         "kind": "pull_request",
         "branch": "fix/f003-fetch-body-timeout",
         "head_sha": "4d3ef57bea9bdbfed80ed878d6b6a18aaa8194d0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3565:5481122728:2026-09-03T13:37:34Z:clawsweeper_needs_human",
+      "comment_id": "5481122728",
+      "comment_version_key": "5481122728:2026-09-03T13:37:34Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3565#issuecomment-5481122728",
+      "comment_created_at": "2026-08-31T16:14:33Z",
+      "comment_updated_at": "2026-09-03T13:37:34Z",
+      "comment_body_sha256": "7ebcc4c1123b0aadf2da525b154bd2a62ded96c6d8f76b644e934ade2c89f5e0",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3565,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Vite, React plugin, and TanStack devtools upgrades affect the build toolchain; the checks pass, but the supplied review material has no directly inspectable after-update runtime t... (sha=da9a78eb54f2c2718c6bad071fdf580ac56e5316)",
+      "expected_head_sha": "da9a78eb54f2c2718c6bad071fdf580ac56e5316",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T13:39:16.470Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/bun/development-minor-and-patch-185a7e76b0",
+        "head_sha": "da9a78eb54f2c2718c6bad071fdf580ac56e5316",
         "cluster_id": null,
         "job_path": null
       }
