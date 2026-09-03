@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:06:07.626Z",
+  "updated_at": "2026-09-03T01:06:08.079Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136519:5514718970:2026-09-02T18:53:59Z:re_review",
-      "comment_id": "5514718970",
-      "comment_version_key": "5514718970:2026-09-02T18:53:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136519#issuecomment-5514718970",
-      "comment_created_at": "2026-09-02T18:53:59Z",
-      "comment_updated_at": "2026-09-02T18:53:59Z",
-      "comment_body_sha256": "343c77e9ab9ca8f5a8626f2835e304df21cef099e68cdb720fc693ccdb64a709",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136519,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T21:07:43.260Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136606:5516402977:2026-09-02T21:06:34Z:clawsweeper_auto_repair",
       "comment_id": "5516402977",
@@ -33070,6 +33043,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T01:06:07.626Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134099:5487577183:2026-09-03T01:02:05Z:clawsweeper_needs_human",
+      "comment_id": "5487577183",
+      "comment_version_key": "5487577183:2026-09-03T01:02:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134099#issuecomment-5487577183",
+      "comment_created_at": "2026-09-01T01:55:10Z",
+      "comment_updated_at": "2026-09-03T01:02:05Z",
+      "comment_body_sha256": "7aa214ae56477aa37b774c2393223ba2fd5394d15728accaf4e0b2c781441ab6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134099,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fresh exact-head native package-update and Doctor matrix evidence remains absent; the prior native attempt stopped at restart-unhealthy/cleanup failure, leaving the complete productio... (sha=ead36b6d0bb45c1206d3df95c31b8433fcd1dd66)",
+      "expected_head_sha": "ead36b6d0bb45c1206d3df95c31b8433fcd1dd66",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T01:06:08.079Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/postinstall-operator-files",
+        "head_sha": "ead36b6d0bb45c1206d3df95c31b8433fcd1dd66",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
