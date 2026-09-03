@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T06:45:52.298Z",
+  "updated_at": "2026-09-03T06:46:12.499Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133150:5467339050:2026-09-03T03:36:09Z:clawsweeper_needs_human",
-      "comment_id": "5467339050",
-      "comment_version_key": "5467339050:2026-09-03T03:36:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133150#issuecomment-5467339050",
-      "comment_created_at": "2026-08-30T07:16:05Z",
-      "comment_updated_at": "2026-09-03T03:36:09Z",
-      "comment_body_sha256": "383eb041cea7aeb19dc11bd2b31606d69f80b4e47d086d703136b6dd6044a45b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive field changes the documented direct-Gateway compact response without a separately versioned response schema; consumers that strictly enumerate compact-row keys need maint... (sha=55be20bad8f788780204d0dcad910e18456b048b)",
-      "expected_head_sha": "55be20bad8f788780204d0dcad910e18456b048b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T03:55:05.482Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feat-automation-auto-disabled-readback",
-        "head_sha": "55be20bad8f788780204d0dcad910e18456b048b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133255:5468107788:2026-09-03T03:31:29Z:clawsweeper_needs_human",
       "comment_id": "5468107788",
@@ -32419,6 +32386,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134987:5521692889:2026-09-03T06:44:39Z:re_review",
+      "comment_id": "5521692889",
+      "comment_version_key": "5521692889:2026-09-03T06:44:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134987#issuecomment-5521692889",
+      "comment_created_at": "2026-09-03T06:44:39Z",
+      "comment_updated_at": "2026-09-03T06:44:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134987,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T06:46:10.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agents-compaction-prune-accounting",
+        "head_sha": "59d6d8db167f92ed42baa4e72b0f15309a09fe4d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
