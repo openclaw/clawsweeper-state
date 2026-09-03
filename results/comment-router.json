@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T13:04:02.498Z",
+  "updated_at": "2026-09-03T13:04:58.641Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137084:5522747627:2026-09-03T08:33:57Z:clawsweeper_needs_human",
-      "comment_id": "5522747627",
-      "comment_version_key": "5522747627:2026-09-03T08:33:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137084#issuecomment-5522747627",
-      "comment_created_at": "2026-09-03T08:18:55Z",
-      "comment_updated_at": "2026-09-03T08:33:57Z",
-      "comment_body_sha256": "02abdb5f62af9e42e2fad8740fe9b174cf4086314985db55e091f94b8b7bb6ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137084,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Until https://github.com/openclaw/openclaw/pull/137090 or an equivalent Gateway change lands, current main provides host statistics only for live node sessions, so disconnected rows w... (sha=896459bd6f8fc3c2addd77c0f3a4c59d0458e17e)",
-      "expected_head_sha": "896459bd6f8fc3c2addd77c0f3a4c59d0458e17e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:35:05.035Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/devices-design-pass",
-        "head_sha": "896459bd6f8fc3c2addd77c0f3a4c59d0458e17e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137183:5522940633:2026-09-03T08:34:11Z:clawsweeper_needs_human",
       "comment_id": "5522940633",
@@ -32905,6 +32872,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136761:5526215900:2026-09-03T13:03:58Z:re_review",
+      "comment_id": "5526215900",
+      "comment_version_key": "5526215900:2026-09-03T13:03:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5526215900",
+      "comment_created_at": "2026-09-03T13:03:58Z",
+      "comment_updated_at": "2026-09-03T13:03:58Z",
+      "comment_body_sha256": "0dd6e6d602c63fe8c62494ab378a43afea4c691a923f4e0a87f85bd2e3c138ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136761,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T13:04:52.686Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-target-scenarios",
+        "head_sha": "174d9f4a44425634d19c95d8be2c37e34421d477",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
