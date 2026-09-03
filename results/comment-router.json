@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:36:05.273Z",
+  "updated_at": "2026-09-03T05:37:19.212Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131733:5459630081:2026-08-29T01:53:22Z:re_review",
-      "comment_id": "5459630081",
-      "comment_version_key": "5459630081:2026-08-29T01:53:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131733#issuecomment-5459630081",
-      "comment_created_at": "2026-08-29T01:53:22Z",
-      "comment_updated_at": "2026-08-29T01:53:22Z",
-      "comment_body_sha256": "1a1c1c4416f5fc282e2aeb067ae15c88a31339d3f8d0eebbb4204f688400e44d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131733,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T02:56:15.905Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131733:5460089751:2026-08-29T03:36:59Z:re_review",
       "comment_id": "5460089751",
@@ -32545,6 +32518,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136699:5517536107:2026-09-03T05:36:19Z:clawsweeper_needs_human",
+      "comment_id": "5517536107",
+      "comment_version_key": "5517536107:2026-09-03T05:36:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136699#issuecomment-5517536107",
+      "comment_created_at": "2026-09-02T22:52:11Z",
+      "comment_updated_at": "2026-09-03T05:36:19Z",
+      "comment_body_sha256": "e699cb316e0d7b4c95738e9461e68be8ae934f5670eec4cfbb6fa21b78729ffd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136699,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Without fresh exact-head Testbox output, maintainers cannot yet confirm that historical qualification succeeds while a modern package missing a required artifact still fails closed. (sha=6d4ac9c09527ff03f96dbd0adaa443d753dcd593)",
+      "expected_head_sha": "6d4ac9c09527ff03f96dbd0adaa443d753dcd593",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:37:19.212Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-target-package-capabilities",
+        "head_sha": "6d4ac9c09527ff03f96dbd0adaa443d753dcd593",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
