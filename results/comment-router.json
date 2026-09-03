@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T10:06:24.739Z",
+  "updated_at": "2026-09-03T10:06:31.972Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132749:5463969937:2026-09-03T06:12:30Z:clawsweeper_auto_repair",
-      "comment_id": "5463969937",
-      "comment_version_key": "5463969937:2026-09-03T06:12:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132749#issuecomment-5463969937",
-      "comment_created_at": "2026-08-29T17:56:49Z",
-      "comment_updated_at": "2026-09-03T06:12:30Z",
-      "comment_body_sha256": "6a26d34dadd5abc18c77304a638422002c23abc069d76da835b3cc6a1790a2ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132749,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d3e45ebfb7f50797692128cc5b428b4c62649061)",
-      "expected_head_sha": "d3e45ebfb7f50797692128cc5b428b4c62649061",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T06:15:53.619Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feature-sandbox-image-mismatches",
-        "head_sha": "d3e45ebfb7f50797692128cc5b428b4c62649061",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137029:5521402031:2026-09-03T06:16:15Z:clawsweeper_needs_human",
       "comment_id": "5521402031",
@@ -32352,6 +32319,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137061:5524046475:2026-09-03T10:05:36Z:re_review",
+      "comment_id": "5524046475",
+      "comment_version_key": "5524046475:2026-09-03T10:05:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137061#issuecomment-5524046475",
+      "comment_created_at": "2026-09-03T10:05:36Z",
+      "comment_updated_at": "2026-09-03T10:05:36Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137061,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T10:06:29.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-ci-routing-self-scope-submit-20260903",
+        "head_sha": "8b7e9969179a88eee3e35ec014999770e1483a9b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
