@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:17:39.123Z",
+  "updated_at": "2026-09-03T05:17:46.381Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136871:5519526701:2026-09-03T02:42:41Z:clawsweeper_auto_repair",
-      "comment_id": "5519526701",
-      "comment_version_key": "5519526701:2026-09-03T02:42:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136871#issuecomment-5519526701",
-      "comment_created_at": "2026-09-03T02:42:41Z",
-      "comment_updated_at": "2026-09-03T02:42:41Z",
-      "comment_body_sha256": "d3ad0cbc7f8d7e6168e42f8423bd7866fef3caf6ce9458cbc952119dfeb901e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136871,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a60b1ecc0575da0a1fc9700f5d49b58a3c4fa60a)",
-      "expected_head_sha": "a60b1ecc0575da0a1fc9700f5d49b58a3c4fa60a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T02:43:46.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/kimi-private-helper-facade",
-        "head_sha": "a60b1ecc0575da0a1fc9700f5d49b58a3c4fa60a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3240:5441284101:2026-09-03T02:44:38Z:clawsweeper_auto_repair",
       "comment_id": "5441284101",
@@ -32539,6 +32506,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T05:17:39.122Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134943:5491710348:2026-09-03T05:16:41Z:clawsweeper_needs_human",
+      "comment_id": "5491710348",
+      "comment_version_key": "5491710348:2026-09-03T05:16:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134943#issuecomment-5491710348",
+      "comment_created_at": "2026-09-01T09:14:24Z",
+      "comment_updated_at": "2026-09-03T05:16:41Z",
+      "comment_body_sha256": "dfaa52d6ffb4a1ff6d753899e97e160fe46533e8ee691acfcebb2e5a1ae07bde",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134943,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Revalidate the action lifetime after resolve (P2)** - resolve() is public arbitrary synchronous plugin code and can call its retained registration disposer. That disposer removes and aborts entry, but this path...; Review finding: [P2] Revalidate the action lifetime after resolve — ui/src/plugins/control-ui-actions.ts:68-72 - [medium] Approve the native plugin authority boundary — src/plugin... (sha=05216639549d2efad15ffaf52e4e6b06b3fa9c51)",
+      "expected_head_sha": "05216639549d2efad15ffaf52e4e6b06b3fa9c51",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:17:46.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/feature-plugin-ui",
+        "head_sha": "05216639549d2efad15ffaf52e4e6b06b3fa9c51",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
