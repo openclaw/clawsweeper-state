@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-03T05:58:11.406Z",
+  "updated_at": "2026-09-03T05:57:08.394Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135499:5499641816:2026-09-03T03:22:12Z:clawsweeper_needs_human",
+      "comment_id": "5499641816",
+      "comment_version_key": "5499641816:2026-09-03T03:22:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135499#issuecomment-5499641816",
+      "comment_created_at": "2026-09-01T19:59:03Z",
+      "comment_updated_at": "2026-09-03T03:22:12Z",
+      "comment_body_sha256": "4b35ad6c5e8e24a24b5111009efe55be87409e47490025faa4f4637e9d3aa109",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The actual Gateway-to-Control-UI behavior has not been verified after the ordering and retry changes; mock coverage can miss the real request, authorization, and delivery path. (sha=cefc1dd1a410453170eccad2beef296d43898efc)",
+      "expected_head_sha": "cefc1dd1a410453170eccad2beef296d43898efc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T03:23:53.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tasks-panel-stable-order",
+        "head_sha": "cefc1dd1a410453170eccad2beef296d43898efc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136926:5519847696:2026-09-03T03:22:52Z:clawsweeper_needs_human",
       "comment_id": "5519847696",
@@ -32320,53 +32353,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136781:5521228078:2026-09-03T05:57:19Z:re_review",
-      "comment_id": "5521228078",
-      "comment_version_key": "5521228078:2026-09-03T05:57:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136781#issuecomment-5521228078",
-      "comment_created_at": "2026-09-03T05:57:19Z",
-      "comment_updated_at": "2026-09-03T05:57:19Z",
-      "comment_body_sha256": "ca8b15bdb9eaff4ae4768d4670aa181c06c6cface6a3f18c6dc2cc3bd4d13659",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136781,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T05:58:09.188Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-localized-gateway-errors",
-        "head_sha": "adf6f95e74e5d9bc473491618ef505de28295d58",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
