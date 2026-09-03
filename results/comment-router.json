@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T18:46:27.212Z",
+  "updated_at": "2026-09-03T18:46:39.615Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125815:5435000078:2026-08-27T05:59:08Z:re_review",
-      "comment_id": "5435000078",
-      "comment_version_key": "5435000078:2026-08-27T05:59:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5435000078",
-      "comment_created_at": "2026-08-27T05:59:08Z",
-      "comment_updated_at": "2026-08-27T05:59:08Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125815,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:35:05.534Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125815:5435345320:2026-08-27T06:42:31Z:re_review",
       "comment_id": "5435345320",
@@ -31965,6 +31938,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137449:5530492503:2026-09-03T18:45:39Z:freeform_assist",
+      "comment_id": "5530492503",
+      "comment_version_key": "5530492503:2026-09-03T18:45:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137449#issuecomment-5530492503",
+      "comment_created_at": "2026-09-03T18:45:39Z",
+      "comment_updated_at": "2026-09-03T18:45:39Z",
+      "comment_body_sha256": "6388a9e14969acbdad8c044067feb390c560be9d3bcf48114e7cd1b9aa37c7a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137449,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nplease review exact public head `b700d87eabaa05acde31f19c04c12445b27e8552` after its additive current-main integration. hosted ci is complete on that sha.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T18:46:37.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-candidate-development-source-root-20260903",
+        "head_sha": "b700d87eabaa05acde31f19c04c12445b27e8552",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
           "status": "executed",
           "label": null,
           "job_path": null
