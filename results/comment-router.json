@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:33:14.193Z",
+  "updated_at": "2026-09-03T05:33:15.315Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136871:5519611893:2026-09-03T02:53:09Z:re_review",
-      "comment_id": "5519611893",
-      "comment_version_key": "5519611893:2026-09-03T02:53:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136871#issuecomment-5519611893",
-      "comment_created_at": "2026-09-03T02:53:09Z",
-      "comment_updated_at": "2026-09-03T02:53:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136871,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T02:54:03.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/kimi-private-helper-facade",
-        "head_sha": "e0ff563f6641a1a147f317ee3af964047f4c89c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1756:5518963088:2026-09-03T02:53:13Z:clawsweeper_needs_human",
       "comment_id": "5518963088",
@@ -32559,6 +32512,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137028:5521004881:2026-09-03T05:32:17Z:clawsweeper_auto_repair",
+      "comment_id": "5521004881",
+      "comment_version_key": "5521004881:2026-09-03T05:32:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137028#issuecomment-5521004881",
+      "comment_created_at": "2026-09-03T05:32:17Z",
+      "comment_updated_at": "2026-09-03T05:32:17Z",
+      "comment_body_sha256": "ecfaaaa3f6a95a8e9db3679ede9c86ff2d690183db74ab7e0deb3b98ebb44d3f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137028,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b1093f7b0f4bc49dc4321b1cd4777f57cf124745)",
+      "expected_head_sha": "b1093f7b0f4bc49dc4321b1cd4777f57cf124745",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:33:15.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-hovercard-device-label",
+        "head_sha": "b1093f7b0f4bc49dc4321b1cd4777f57cf124745",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
