@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T16:37:04.969Z",
+  "updated_at": "2026-09-03T16:37:14.985Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137071:5524774070:2026-09-03T11:07:29Z:re_review",
-      "comment_id": "5524774070",
-      "comment_version_key": "5524774070:2026-09-03T11:07:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137071#issuecomment-5524774070",
-      "comment_created_at": "2026-09-03T11:07:29Z",
-      "comment_updated_at": "2026-09-03T11:07:29Z",
-      "comment_body_sha256": "8e4bdb781cc5b580ce93fae7a31c30768ba5b58aad577e6989ae6546afcd521e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137071,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T11:08:26.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-bootstrap-network-diagnostics",
-        "head_sha": "ae39681f1672ce7381ccc22e0000cf93f2167918",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130962:5440267521:2026-08-27T14:03:06Z:re_review",
       "comment_id": "5440267521",
@@ -31924,6 +31877,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:24:5464211971:2026-09-03T16:35:23Z:clawsweeper_needs_human",
+      "comment_id": "5464211971",
+      "comment_version_key": "5464211971:2026-09-03T16:35:23Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/24#issuecomment-5464211971",
+      "comment_created_at": "2026-08-29T18:48:37Z",
+      "comment_updated_at": "2026-09-03T16:35:23Z",
+      "comment_body_sha256": "a9f10c1185d6250cbfd6b0080f1514b5d9b0e7280c647065b3ddc6da233f48dc",
+      "repo": "openclaw/babelfish",
+      "issue_number": 24,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An imported PreToolUse hook that would normally block or rewrite a large tool input is skipped after the new size rejection, allowing the tool call to continue under existing generic... (sha=397ffbc80be72e2337069b45b52ea21263f883d6)",
+      "expected_head_sha": "397ffbc80be72e2337069b45b52ea21263f883d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T16:37:14.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f006-hook-stdin-cap",
+        "head_sha": "397ffbc80be72e2337069b45b52ea21263f883d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
