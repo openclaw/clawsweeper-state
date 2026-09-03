@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:30:59.822Z",
+  "updated_at": "2026-09-03T08:31:12.858Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:130745:5520720659:2026-09-03T05:01:32Z:re_review",
-      "comment_id": "5520720659",
-      "comment_version_key": "5520720659:2026-09-03T05:01:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130745#issuecomment-5520720659",
-      "comment_created_at": "2026-09-03T05:01:32Z",
-      "comment_updated_at": "2026-09-03T05:01:32Z",
-      "comment_body_sha256": "f7a7b40553709a5579f60cea450fe582d19608c56fa7c95076f2dc51b5b8fad5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130745,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review at `798e2266d238a81e33715bacb1ea79c0ac4ac802`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T05:02:33.301Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/app-server-runtime-chooser-bindings",
-        "head_sha": "798e2266d238a81e33715bacb1ea79c0ac4ac802",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136682:5520721582:2026-09-03T05:01:38Z:re_review",
       "comment_id": "5520721582",
@@ -32571,6 +32524,39 @@
         "kind": "pull_request",
         "branch": "fix/workbench-redact-run-json",
         "head_sha": "b6504bf74228a0228b9f8dce78f03b1718724fbf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136297:5509733078:2026-09-03T08:22:09Z:clawsweeper_needs_human",
+      "comment_id": "5509733078",
+      "comment_version_key": "5509733078:2026-09-03T08:22:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136297#issuecomment-5509733078",
+      "comment_created_at": "2026-09-02T12:45:15Z",
+      "comment_updated_at": "2026-09-03T08:22:09Z",
+      "comment_body_sha256": "7c2df375e278d12dbf7f1658722a8b43011a50e9a96af1ba04e41fc349971ee0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136297,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Desktop client depends on noVNC disconnect-event detail that could not be validated against the pinned dependency source in this offline read-only checkout; the PR body also recor... (sha=b31ea20901902c6f6c4a46429b4294439e65ffcb)",
+      "expected_head_sha": "b31ea20901902c6f6c4a46429b4294439e65ffcb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T08:31:12.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-cua-session-readiness",
+        "head_sha": "b31ea20901902c6f6c4a46429b4294439e65ffcb",
         "cluster_id": null,
         "job_path": null
       }
