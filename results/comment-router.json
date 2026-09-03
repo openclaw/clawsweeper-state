@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T18:37:54.802Z",
+  "updated_at": "2026-09-03T18:38:03.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125815:5395254354:2026-08-24T12:34:36Z:re_review",
-      "comment_id": "5395254354",
-      "comment_version_key": "5395254354:2026-08-24T12:34:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5395254354",
-      "comment_created_at": "2026-08-24T12:34:36Z",
-      "comment_updated_at": "2026-08-24T12:34:36Z",
-      "comment_body_sha256": "5c084afe0263d7cdbecc8ea9353ab8e3c4ef1c8397992f2f40c289ea4efbf926",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125815,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:35:05.534Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125815:5395840318:2026-08-24T13:24:43Z:re_review",
       "comment_id": "5395840318",
@@ -31906,6 +31879,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-03T18:36:44Z:clawsweeper_needs_human",
+      "comment_id": "5528348023",
+      "comment_version_key": "5528348023:2026-09-03T18:36:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5528348023",
+      "comment_created_at": "2026-09-03T15:52:26Z",
+      "comment_updated_at": "2026-09-03T18:36:44Z",
+      "comment_body_sha256": "b51aa9cd0147194e12b07796eb92aa7e35d1c2d0d5898a5b804e128c30ef5117",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This changes raw transcript, identity, active-branch, FTS, and watermark state in one new path; a session-storage owner should explicitly accept that compatibility-sensitive boundary. (sha=a8aec9ea1a6693be43068e0810f698b5f3e645a5)",
+      "expected_head_sha": "a8aec9ea1a6693be43068e0810f698b5f3e645a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T18:38:03.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "a8aec9ea1a6693be43068e0810f698b5f3e645a5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
