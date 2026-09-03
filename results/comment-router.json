@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T19:01:05.068Z",
+  "updated_at": "2026-09-03T19:01:34.293Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125815:5357969866:2026-08-20T15:21:11Z:re_review",
-      "comment_id": "5357969866",
-      "comment_version_key": "5357969866:2026-08-20T15:21:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125815#issuecomment-5357969866",
-      "comment_created_at": "2026-08-20T15:21:11Z",
-      "comment_updated_at": "2026-08-20T15:21:11Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125815,
-      "author": "clawsweeper",
-      "author_id": 280513762,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:35:05.535Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:125815:5358145430:2026-08-20T15:34:26Z:re_review",
       "comment_id": "5358145430",
@@ -32072,6 +32045,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132004:5456203648:2026-09-03T19:00:22Z:clawsweeper_needs_human",
+      "comment_id": "5456203648",
+      "comment_version_key": "5456203648:2026-09-03T19:00:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132004#issuecomment-5456203648",
+      "comment_created_at": "2026-08-28T18:23:06Z",
+      "comment_updated_at": "2026-09-03T19:00:22Z",
+      "comment_body_sha256": "f9f04e7562ef9711095382ed973dabaad9aee73f4dc2140d5425f5855aa0a898",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132004,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Wake or engine invalidation during an active Voice Wake command now finalizes and immediately sends whatever partial transcript exists; that delivery policy is intentional in the patc... (sha=ab07aec4f03753817a8a1b3c040878ee7ed6aed5)",
+      "expected_head_sha": "ab07aec4f03753817a8a1b3c040878ee7ed6aed5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T19:01:34.293Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-macos-reiniciar-captura-de-voz-ap-s",
+        "head_sha": "ab07aec4f03753817a8a1b3c040878ee7ed6aed5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
