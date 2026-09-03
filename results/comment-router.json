@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:48:57.520Z",
+  "updated_at": "2026-09-03T01:49:27.612Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136459:5517144129:2026-09-02T22:11:23Z:re_review",
-      "comment_id": "5517144129",
-      "comment_version_key": "5517144129:2026-09-02T22:11:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136459#issuecomment-5517144129",
-      "comment_created_at": "2026-09-02T22:11:23Z",
-      "comment_updated_at": "2026-09-02T22:11:23Z",
-      "comment_body_sha256": "78727534f3eb591e367db3089842f177a3897a9a22d5310d4ee521dff3c2c6a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136459,
-      "author": "akagifreeez",
-      "author_id": 161492586,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T22:12:16.684Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/schtasks-japanese-locale",
-        "head_sha": "bda7d70998677b5be2efd7dac27522c59eeae102",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136554:5517061182:2026-09-02T22:03:17Z:re_review",
       "comment_id": "5517061182",
@@ -33070,6 +33023,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T01:48:57.520Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136802:5518982426:2026-09-03T01:48:25Z:clawsweeper_needs_human",
+      "comment_id": "5518982426",
+      "comment_version_key": "5518982426:2026-09-03T01:48:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136802#issuecomment-5518982426",
+      "comment_created_at": "2026-09-03T01:36:28Z",
+      "comment_updated_at": "2026-09-03T01:48:25Z",
+      "comment_body_sha256": "d7f18d5ee90b6e2459984cc8c47508b197156a5265dc85ce0843e5abaf5a4d63",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136802,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The retry is designed for the opaque continuation invalidation proposed by open PR https://github.com/openclaw/openclaw/pull/133186, but the supplied branch has only controlled-client... (sha=1b31753dbfd4145def9a0c6c94bed63038315d4a)",
+      "expected_head_sha": "1b31753dbfd4145def9a0c6c94bed63038315d4a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T01:49:27.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workboard-full-scan-restart",
+        "head_sha": "1b31753dbfd4145def9a0c6c94bed63038315d4a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
