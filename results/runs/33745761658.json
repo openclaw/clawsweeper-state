@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137217",
+  "mode": "autonomous",
+  "run_id": "33745761658",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33745761658",
+  "head_sha": "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137217.md",
+  "published_at": "2026-09-03T11:08:51.147Z",
+  "canonical": "#137217",
+  "canonical_issue": "#137217",
+  "canonical_pr": null,
+  "summary": "Planned a narrow fix artifact for #137217. Normal text status alone excludes configured channel SecretRef targets, so its shared resolver never materializes a working store-backed Telegram token before channel and heartbeat inspection. The artifact restores the existing read-only resolver path without changing routing policy, config, or APIs. No code or GitHub state was mutated in this read-only worker.",
+  "actions": [
+    {
+      "target": "#33070",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; closure actions are forbidden for an already-closed issue."
+    },
+    {
+      "target": "#34292",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; closure actions are forbidden for an already-closed issue."
+    },
+    {
+      "target": "#66254",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; closure actions are forbidden for an already-closed issue."
+    },
+    {
+      "target": "#88022",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related SecretRef diagnostics, but not the same owner, root cause, or automatable fix scope."
+    },
+    {
+      "target": "#137217",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137217",
+      "candidate_fix": null,
+      "reason": "Focused non-security bug repair; retain genuine configured-unavailable diagnostics and fail-closed owner routing."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 3,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 3,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
