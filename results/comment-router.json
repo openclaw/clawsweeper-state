@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T14:18:58.917Z",
+  "updated_at": "2026-09-03T14:19:55.765Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134003:5476306309:2026-09-03T09:33:29Z:clawsweeper_needs_human",
-      "comment_id": "5476306309",
-      "comment_version_key": "5476306309:2026-09-03T09:33:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134003#issuecomment-5476306309",
-      "comment_created_at": "2026-08-31T09:18:48Z",
-      "comment_updated_at": "2026-09-03T09:33:29Z",
-      "comment_body_sha256": "e94e50586143cf40c26e86101cea0ae513e729598719578383521ffc29873b95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134003,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The public Talk client and Plugin SDK request contracts are compatibility-sensitive, so the mergeable head needs contract validation against current main. (sha=0278cca0f389649ac099515516c71612e8fa17fd)",
-      "expected_head_sha": "0278cca0f389649ac099515516c71612e8fa17fd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T10:06:26.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "worktree-talk-native-gateway-control",
-        "head_sha": "101f91f30e6e1a53312a3c30a014290d9a5cfe87",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134099:5487577183:2026-09-03T09:29:37Z:clawsweeper_needs_human",
       "comment_id": "5487577183",
@@ -31896,6 +31863,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134274:5527164626:2026-09-03T14:18:54Z:re_review",
+      "comment_id": "5527164626",
+      "comment_version_key": "5527164626:2026-09-03T14:18:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134274#issuecomment-5527164626",
+      "comment_created_at": "2026-09-03T14:18:54Z",
+      "comment_updated_at": "2026-09-03T14:18:54Z",
+      "comment_body_sha256": "25ace76e229583c0f50b400393f70af8613da9fb4f330e31bc20a36e709cecb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134274,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T14:19:51.924Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/real-gateway-proof-cleanup-438aed91",
+        "head_sha": "7738c2758ffdf42a082c3b2aa2d63b2ab5ae667c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
