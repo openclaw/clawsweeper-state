@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T20:16:23.620Z",
+  "updated_at": "2026-09-03T20:16:37.799Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137224:5523909557:2026-09-03T13:11:52Z:clawsweeper_auto_repair",
-      "comment_id": "5523909557",
-      "comment_version_key": "5523909557:2026-09-03T13:11:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137224#issuecomment-5523909557",
-      "comment_created_at": "2026-09-03T09:54:08Z",
-      "comment_updated_at": "2026-09-03T13:11:52Z",
-      "comment_body_sha256": "91105b7f0ba229a1f528c4818946dfab58b6779912714ac24f9264c438f8d2e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137224,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0f5d34a0b81e131734d7b3a71de74cdf2dea1959)",
-      "expected_head_sha": "0f5d34a0b81e131734d7b3a71de74cdf2dea1959",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T13:20:28.347Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-progress-card-stale-spinner",
-        "head_sha": "0f5d34a0b81e131734d7b3a71de74cdf2dea1959",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137256:5524789560:2026-09-03T13:08:43Z:clawsweeper_needs_human",
       "comment_id": "5524789560",
@@ -32418,6 +32385,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136761:5531564105:2026-09-03T20:15:33Z:freeform_assist",
+      "comment_id": "5531564105",
+      "comment_version_key": "5531564105:2026-09-03T20:15:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5531564105",
+      "comment_created_at": "2026-09-03T20:15:33Z",
+      "comment_updated_at": "2026-09-03T20:15:33Z",
+      "comment_body_sha256": "cd5019a863730c035e0bd3a8d91ff054b6c824b2cf69d141d868417c1af6a81a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136761,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nrebased onto current main and addressed the actionable frozen clawhub dialect forwarding finding. the published-baseline invocation now receives the resolved target capability; the boundary regression constructs a legacy clawhub source and asserts `legacy` reaches the container. also consolidated an overlapping planner declaration discovered by the changed-path gate.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T20:16:35.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-target-scenarios",
+        "head_sha": "4b58a28c02c6bc84bbdc63af9d5ef2313ea47694",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
