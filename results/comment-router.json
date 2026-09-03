@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:21:43.946Z",
+  "updated_at": "2026-09-03T05:21:46.009Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3580:5519157241:2026-09-03T02:48:39Z:clawsweeper_needs_human",
-      "comment_id": "5519157241",
-      "comment_version_key": "5519157241:2026-09-03T02:48:39Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3580#issuecomment-5519157241",
-      "comment_created_at": "2026-09-03T01:58:25Z",
-      "comment_updated_at": "2026-09-03T02:48:39Z",
-      "comment_body_sha256": "c052c063d832e51e3d5f2e0f62b51648c1866de08423df0b5d2c34c840e44cd4",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3580,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the API v1 list handler, which maps public catalog results into JSON consumed by CLI exploration. The supplied... (sha=71127b2c1d01076ebf5533b5cf0395945a541716)",
-      "expected_head_sha": "71127b2c1d01076ebf5533b5cf0395945a541716",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T02:49:28.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-list-owner-contract",
-        "head_sha": "71127b2c1d01076ebf5533b5cf0395945a541716",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136879:5519578770:2026-09-03T02:49:07Z:clawsweeper_auto_repair",
       "comment_id": "5519578770",
@@ -32559,6 +32526,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137003:5520675055:2026-09-03T05:20:48Z:clawsweeper_needs_human",
+      "comment_id": "5520675055",
+      "comment_version_key": "5520675055:2026-09-03T05:20:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137003#issuecomment-5520675055",
+      "comment_created_at": "2026-09-03T04:56:45Z",
+      "comment_updated_at": "2026-09-03T05:20:48Z",
+      "comment_body_sha256": "99c08b097c2ca330da639b68f855cfbb3fb530787eae1a5ca25db3c59fe8bc7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137003,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Workflow production code grows by 18 net lines; the added separate runner is justified because folding identity resolution back into candidate-owned preflight would reopen the trust b... (sha=0e844d050bb8950b5864700aa990103561bb762e)",
+      "expected_head_sha": "0e844d050bb8950b5864700aa990103561bb762e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:21:46.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-review-f03-20260902",
+        "head_sha": "0e844d050bb8950b5864700aa990103561bb762e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
