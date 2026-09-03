@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T09:30:35.034Z",
+  "updated_at": "2026-09-03T09:33:04.858Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133057:5466744650:2026-09-03T05:56:09Z:clawsweeper_needs_human",
-      "comment_id": "5466744650",
-      "comment_version_key": "5466744650:2026-09-03T05:56:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133057#issuecomment-5466744650",
-      "comment_created_at": "2026-08-30T04:41:06Z",
-      "comment_updated_at": "2026-09-03T05:56:09Z",
-      "comment_body_sha256": "7f563a15ec7ee386b0f4c2a6f810442d2356ea65040cb8e7a9d9bdd41f85c00f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133057,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the recovery path that schedules requester-visible completion work; required exact-head CI currently reports failures, so it should not merge until those failures are r... (sha=a6792f21670c4cda74024524a26cecda45dd2879)",
-      "expected_head_sha": "a6792f21670c4cda74024524a26cecda45dd2879",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T05:56:57.801Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/119869-bounded-restored-settle-wakes",
-        "head_sha": "a6792f21670c4cda74024524a26cecda45dd2879",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134943:5491710348:2026-09-03T05:56:01Z:clawsweeper_needs_human",
       "comment_id": "5491710348",
@@ -32482,6 +32449,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124980:5523646393:2026-09-03T09:32:07Z:re_review",
+      "comment_id": "5523646393",
+      "comment_version_key": "5523646393:2026-09-03T09:32:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124980#issuecomment-5523646393",
+      "comment_created_at": "2026-09-03T09:32:07Z",
+      "comment_updated_at": "2026-09-03T09:32:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124980,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T09:33:02.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/docs-secrets-quick-path-120355",
+        "head_sha": "699e3177333cbede37653c69c198d65593466b9d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
