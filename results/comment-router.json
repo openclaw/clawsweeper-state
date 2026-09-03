@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T13:39:57.128Z",
+  "updated_at": "2026-09-03T13:40:21.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137203:5523449577:2026-09-03T09:15:50Z:re_review",
-      "comment_id": "5523449577",
-      "comment_version_key": "5523449577:2026-09-03T09:15:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137203#issuecomment-5523449577",
-      "comment_created_at": "2026-09-03T09:15:50Z",
-      "comment_updated_at": "2026-09-03T09:15:50Z",
-      "comment_body_sha256": "5e132a290567840f317187a0333d67a4885fa9f48cb0b07e0da921f779f63f47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137203,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T09:16:43.681Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/watchos-upgrade-survivor",
-        "head_sha": "6ce0392a97880702561f99831677756992cfde79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136507:5514517785:2026-09-03T09:16:46Z:clawsweeper_auto_repair",
       "comment_id": "5514517785",
@@ -32060,6 +32013,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-normal-failover-prepared-context",
         "head_sha": "35f31c1b25a04f0c2ecf5c484758c3b72919d193",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137329:5526667254:2026-09-03T13:39:16Z:clawsweeper_auto_repair",
+      "comment_id": "5526667254",
+      "comment_version_key": "5526667254:2026-09-03T13:39:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137329#issuecomment-5526667254",
+      "comment_created_at": "2026-09-03T13:39:16Z",
+      "comment_updated_at": "2026-09-03T13:39:16Z",
+      "comment_body_sha256": "32f890773e1e5acfbf1911e3edb23a8864d3e0154395cdfdc55bc19202ffd01c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137329,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=92a9f636e8f8c6c2817d5a6edc782243f90b3cab)",
+      "expected_head_sha": "92a9f636e8f8c6c2817d5a6edc782243f90b3cab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T13:40:21.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tts-free-text-reply-137281",
+        "head_sha": "92a9f636e8f8c6c2817d5a6edc782243f90b3cab",
         "cluster_id": null,
         "job_path": null
       }
