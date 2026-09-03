@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T15:47:19.059Z",
+  "updated_at": "2026-09-03T15:48:12.693Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137211:5523564317:2026-09-03T10:32:21Z:clawsweeper_auto_repair",
-      "comment_id": "5523564317",
-      "comment_version_key": "5523564317:2026-09-03T10:32:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137211#issuecomment-5523564317",
-      "comment_created_at": "2026-09-03T09:25:12Z",
-      "comment_updated_at": "2026-09-03T10:32:21Z",
-      "comment_body_sha256": "fa2059588ea4f6a32a3a6e7e946c66d1776519e02bb08e3252115500d3ad09af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137211,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9a96161e2eadef9480a6a7681b816af24158177d)",
-      "expected_head_sha": "9a96161e2eadef9480a6a7681b816af24158177d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T10:43:53.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-fleet-writable-cache-137151",
-        "head_sha": "9a96161e2eadef9480a6a7681b816af24158177d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137213:5523666915:2026-09-03T10:25:29Z:clawsweeper_auto_repair",
       "comment_id": "5523666915",
@@ -31918,6 +31885,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1778:5528276755:2026-09-03T15:47:04Z:re_review",
+      "comment_id": "5528276755",
+      "comment_version_key": "5528276755:2026-09-03T15:47:04Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1778#issuecomment-5528276755",
+      "comment_created_at": "2026-09-03T15:47:04Z",
+      "comment_updated_at": "2026-09-03T15:47:04Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1778,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T15:48:10.239Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/aws-qualification-broker",
+        "head_sha": "fe159b1de54464de73a336824a01ba902e31707c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
