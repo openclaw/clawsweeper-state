@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T16:23:07.981Z",
+  "updated_at": "2026-09-03T16:25:52.330Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115432:5117930825:2026-09-03T10:55:50Z:clawsweeper_needs_human",
-      "comment_id": "5117930825",
-      "comment_version_key": "5117930825:2026-09-03T10:55:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115432#issuecomment-5117930825",
-      "comment_created_at": "2026-07-29T12:46:17Z",
-      "comment_updated_at": "2026-09-03T10:55:50Z",
-      "comment_body_sha256": "681eda7435179d7dd6c963bb306e457b203e9bb845051f6bd46da6770e2f5604",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Make the Teams audit match the effective DM allowlist (P1)** - conversation:&lt;16-hex> is projected into a bare stable ID before the runtime access check, but the new audit classifier excludes the same authored...; Review finding: [P1] Make the Teams audit match the effective DM allowlist — extensions/msteams/src/resolve-allowlist.ts:100-102 - [medium] Audit a different principal set than ru... (sha=0106433785a05b2ad2e022fdf29436752b6d9a67)",
-      "expected_head_sha": "0106433785a05b2ad2e022fdf29436752b6d9a67",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T11:02:41.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-security-audit-dm-policies",
-        "head_sha": "0106433785a05b2ad2e022fdf29436752b6d9a67",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116176:5125641295:2026-09-03T10:52:29Z:clawsweeper_auto_repair",
       "comment_id": "5125641295",
@@ -31900,6 +31867,53 @@
       "status": "skipped",
       "processed_at": "2026-09-03T16:23:07.981Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132116:5528756109:2026-09-03T16:24:34Z:re_review",
+      "comment_id": "5528756109",
+      "comment_version_key": "5528756109:2026-09-03T16:24:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132116#issuecomment-5528756109",
+      "comment_created_at": "2026-09-03T16:24:34Z",
+      "comment_updated_at": "2026-09-03T16:24:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132116,
+      "author": "PollyBot13",
+      "author_id": 261872620,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T16:25:41.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131581-codex-max-thinking",
+        "head_sha": "33d6ba0be9b99e054d132d6795f8002278bf7e9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
