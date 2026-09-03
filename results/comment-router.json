@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:22:50.040Z",
+  "updated_at": "2026-09-03T05:23:24.825Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136761:5519582087:2026-09-03T02:49:33Z:re_review",
-      "comment_id": "5519582087",
-      "comment_version_key": "5519582087:2026-09-03T02:49:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5519582087",
-      "comment_created_at": "2026-09-03T02:49:33Z",
-      "comment_updated_at": "2026-09-03T02:49:33Z",
-      "comment_body_sha256": "a6ba6e99eca43e1819b59b106a89dd37fce92e1ba0c400a5616c3a0f316adff8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136761,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased onto current main and added source-probed frozen-target coverage for the residual core harness skews from exact proof 33707381382: historical typed onboarding (interactive hooks only), bundle-mcp legacy runtime client (no post-target manager api import), jsonl header identity, and package-manifest-pinned codex dependency verification. focused red/green suite: 79 passed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T02:51:04.567Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-frozen-target-scenarios",
-        "head_sha": "d4192e3db66a28ee7396c00bc4155b3cdb15c511",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136687:5517418175:2026-09-03T02:49:58Z:clawsweeper_auto_repair",
       "comment_id": "5517418175",
@@ -32556,6 +32509,39 @@
         "kind": "pull_request",
         "branch": "repair/issue-136769",
         "head_sha": "1427129b1fa8c2af52a4c6f97e0911a08da83a17",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123806:5297415494:2026-09-03T05:22:33Z:clawsweeper_auto_repair",
+      "comment_id": "5297415494",
+      "comment_version_key": "5297415494:2026-09-03T05:22:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123806#issuecomment-5297415494",
+      "comment_created_at": "2026-08-14T19:38:26Z",
+      "comment_updated_at": "2026-09-03T05:22:33Z",
+      "comment_body_sha256": "77bdf1a283bddc50ab973a377c430108c453c971bf8c24dd80272545995e65ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123806,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d6dd31c903cfbe08247d51233068bf6dcade20ef)",
+      "expected_head_sha": "d6dd31c903cfbe08247d51233068bf6dcade20ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:23:24.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-typing-reaction-delay",
+        "head_sha": "d6dd31c903cfbe08247d51233068bf6dcade20ef",
         "cluster_id": null,
         "job_path": null
       }
