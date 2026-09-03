@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T10:21:42.642Z",
+  "updated_at": "2026-09-03T10:21:42.646Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137049:5521714492:2026-09-03T06:46:49Z:re_review",
-      "comment_id": "5521714492",
-      "comment_version_key": "5521714492:2026-09-03T06:46:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137049#issuecomment-5521714492",
-      "comment_created_at": "2026-09-03T06:46:49Z",
-      "comment_updated_at": "2026-09-03T06:46:49Z",
-      "comment_body_sha256": "5ce8498ed74381d81e999f5181446f9dd4d70e9aafe413d6efd9deff9b866c79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137049,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T06:47:54.754Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acpx-interrupt-terminal-136915-20260903",
-        "head_sha": "4fde9feb10a34f75f2a93e416c5b8f47a5db24ea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137069:5521421312:2026-09-03T06:47:19Z:clawsweeper_auto_repair",
       "comment_id": "5521421312",
@@ -32245,6 +32198,39 @@
         "kind": "pull_request",
         "branch": "subagent-direct-media-fallback",
         "head_sha": "db1c46b5aad65e1a85c047043970d5fc4e7a2ea4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137084:5522747627:2026-09-03T10:17:48Z:clawsweeper_needs_human",
+      "comment_id": "5522747627",
+      "comment_version_key": "5522747627:2026-09-03T10:17:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137084#issuecomment-5522747627",
+      "comment_created_at": "2026-09-03T08:18:55Z",
+      "comment_updated_at": "2026-09-03T10:17:48Z",
+      "comment_body_sha256": "2d66ea8b5f887b1a6afeb8e06db64f1306e5a1496921b3e95a1a347888c7d2b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137084,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - A Control UI maintainer must approve the current-head user-facing layout before merge because this PR carries the protected maintainer label. (sha=fd9d51543bd126804e2e214722da7b6f8cd4c993)",
+      "expected_head_sha": "fd9d51543bd126804e2e214722da7b6f8cd4c993",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T10:21:42.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/devices-design-pass",
+        "head_sha": "fd9d51543bd126804e2e214722da7b6f8cd4c993",
         "cluster_id": null,
         "job_path": null
       }
