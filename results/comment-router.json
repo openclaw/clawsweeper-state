@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T03:45:24.631Z",
+  "updated_at": "2026-09-03T03:45:27.752Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136728:5518006710:2026-09-02T23:37:11Z:clawsweeper_needs_human",
-      "comment_id": "5518006710",
-      "comment_version_key": "5518006710:2026-09-02T23:37:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136728#issuecomment-5518006710",
-      "comment_created_at": "2026-09-02T23:37:11Z",
-      "comment_updated_at": "2026-09-02T23:37:11Z",
-      "comment_body_sha256": "5f8a7535b566f5b106493a29dbb97abd06a8be33ac29cc7311205c0a4c435334",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136728,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The latest main workflow blobs were unavailable for local materialization, so this verdict is limited to the verified PR head and pinned merge result rather than a claim about subsequ... (sha=ad4e9cf57c57e560d9448a9b3384c0cf891d5d1c)",
-      "expected_head_sha": "ad4e9cf57c57e560d9448a9b3384c0cf891d5d1c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T23:47:46.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-ui-runner-capacity-20260902",
-        "head_sha": "ad4e9cf57c57e560d9448a9b3384c0cf891d5d1c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136729:5518052630:2026-09-02T23:41:25Z:clawsweeper_auto_repair",
       "comment_id": "5518052630",
@@ -33258,6 +33225,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136949:5520010233:2026-09-03T03:44:26Z:re_review",
+      "comment_id": "5520010233",
+      "comment_version_key": "5520010233:2026-09-03T03:44:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136949#issuecomment-5520010233",
+      "comment_created_at": "2026-09-03T03:44:26Z",
+      "comment_updated_at": "2026-09-03T03:44:26Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T03:45:25.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extended-stable-ci-checkout-auth",
+        "head_sha": "161efcba06ee5907b27ad1692781e1f7a46e3e79",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
