@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T10:06:16.770Z",
+  "updated_at": "2026-09-03T10:06:24.739Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136868:5521388641:2026-09-03T06:14:50Z:re_review",
-      "comment_id": "5521388641",
-      "comment_version_key": "5521388641:2026-09-03T06:14:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136868#issuecomment-5521388641",
-      "comment_created_at": "2026-09-03T06:14:50Z",
-      "comment_updated_at": "2026-09-03T06:14:50Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136868,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T06:15:47.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-embedding-batch-split-zhipu-bailian-136261",
-        "head_sha": "fda625fbb602cbf19d5e7e63019a9a63fffd4a25",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132749:5463969937:2026-09-03T06:12:30Z:clawsweeper_auto_repair",
       "comment_id": "5463969937",
@@ -32363,6 +32316,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-sidecar-indexing-runtime-131743",
         "head_sha": "25199dfc1556097abe93766ad316d9ba556009c4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3549:5466224970:2026-09-03T10:05:12Z:clawsweeper_auto_repair",
+      "comment_id": "5466224970",
+      "comment_version_key": "5466224970:2026-09-03T10:05:12Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3549#issuecomment-5466224970",
+      "comment_created_at": "2026-08-30T02:25:00Z",
+      "comment_updated_at": "2026-09-03T10:05:12Z",
+      "comment_body_sha256": "150280997ed9927d5f7fe3d33bee8f034da08296f634967f30b2f060c35add6d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3549,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b702bc1a967b432a73f936fe719afba3e92215c1)",
+      "expected_head_sha": "b702bc1a967b432a73f936fe719afba3e92215c1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T10:06:24.739Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f004-publish-blob-cleanup",
+        "head_sha": "b702bc1a967b432a73f936fe719afba3e92215c1",
         "cluster_id": null,
         "job_path": null
       }
