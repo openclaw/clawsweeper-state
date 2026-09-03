@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T15:09:28.812Z",
+  "updated_at": "2026-09-03T15:13:14.631Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119471:5187554081:2026-09-03T10:32:31Z:clawsweeper_auto_repair",
-      "comment_id": "5187554081",
-      "comment_version_key": "5187554081:2026-09-03T10:32:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119471#issuecomment-5187554081",
-      "comment_created_at": "2026-08-05T04:30:06Z",
-      "comment_updated_at": "2026-09-03T10:32:31Z",
-      "comment_body_sha256": "72005e28f257256058ae5297e5051de0feb12a1fb1c86229c8c665e6d121f82b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119471,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=09b005a87216528a5d6a92aae5f642f4729d76e3)",
-      "expected_head_sha": "09b005a87216528a5d6a92aae5f642f4729d76e3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T10:43:53.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-replay-kimi-tool-id-sanitization",
-        "head_sha": "09b005a87216528a5d6a92aae5f642f4729d76e3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122221:5258226036:2026-09-03T10:25:16Z:clawsweeper_needs_human",
       "comment_id": "5258226036",
@@ -31930,6 +31897,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136764:5527831397:2026-09-03T15:12:11Z:re_review",
+      "comment_id": "5527831397",
+      "comment_version_key": "5527831397:2026-09-03T15:12:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136764#issuecomment-5527831397",
+      "comment_created_at": "2026-09-03T15:12:11Z",
+      "comment_updated_at": "2026-09-03T15:12:11Z",
+      "comment_body_sha256": "1bff720067f80801abb3e325f597d5c2833183615e843211e64c00970cfacea3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136764,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T15:13:11.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/worktree-capacity-preflight",
+        "head_sha": "cfbe18319dfdb3fefc30f016fcf55817bc4d169b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
