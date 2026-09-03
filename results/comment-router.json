@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:38:41.969Z",
+  "updated_at": "2026-09-03T08:38:44.285Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125130:5312875847:2026-09-03T04:41:51Z:clawsweeper_needs_human",
-      "comment_id": "5312875847",
-      "comment_version_key": "5312875847:2026-09-03T04:41:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125130#issuecomment-5312875847",
-      "comment_created_at": "2026-08-17T07:01:32Z",
-      "comment_updated_at": "2026-09-03T04:41:51Z",
-      "comment_body_sha256": "e1a1b30598d5bb0f77d5d3702b87e8a6ef491853a05b703a7738cedace6f2f8c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125130,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner is src/agents/subagents/announce/subagent-announce-delivery.ts:334-346; mocked focused tests cover its phase handlin... (sha=e89ab35a9f20d6b902ea0d0e219453465ce000e0)",
-      "expected_head_sha": "e89ab35a9f20d6b902ea0d0e219453465ce000e0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T05:13:52.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/candidate-core",
-        "head_sha": "e89ab35a9f20d6b902ea0d0e219453465ce000e0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126255:5339397512:2026-09-03T05:07:48Z:clawsweeper_needs_human",
       "comment_id": "5339397512",
@@ -32052,6 +32019,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134125:5522986668:2026-09-03T08:37:50Z:re_review",
+      "comment_id": "5522986668",
+      "comment_version_key": "5522986668:2026-09-03T08:37:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134125#issuecomment-5522986668",
+      "comment_created_at": "2026-09-03T08:37:50Z",
+      "comment_updated_at": "2026-09-03T08:37:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134125,
+      "author": "KhanCold",
+      "author_id": 119404710,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T08:38:42.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test-embedded-state-lock",
+        "head_sha": "9033385457ce4b5a10865a31d432f31e5c57beaa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
