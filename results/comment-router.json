@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:06:48.204Z",
+  "updated_at": "2026-09-03T01:07:18.823Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136609:5516421707:2026-09-02T21:08:11Z:clawsweeper_needs_human",
-      "comment_id": "5516421707",
-      "comment_version_key": "5516421707:2026-09-02T21:08:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136609#issuecomment-5516421707",
-      "comment_created_at": "2026-09-02T21:08:11Z",
-      "comment_updated_at": "2026-09-02T21:08:11Z",
-      "comment_body_sha256": "663b3adbd4c9e986a5a86dcade6869494ad72ed06101b010859519bc7bd84900",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136609,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This fix adds net 18 production lines, including page-specific structural header rules that overlap the existing compact settings-header pattern; leaving both paths can cause later vi... (sha=d236e5591ade7057819d5f97f7b90d812a28ab14)",
-      "expected_head_sha": "d236e5591ade7057819d5f97f7b90d812a28ab14",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T21:09:08.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/align-model-provider-refresh",
-        "head_sha": "d236e5591ade7057819d5f97f7b90d812a28ab14",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136459:5513417450:2026-09-02T21:08:21Z:clawsweeper_auto_repair",
       "comment_id": "5513417450",
@@ -33062,6 +33029,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136454:5518743067:2026-09-03T01:06:16Z:re_review",
+      "comment_id": "5518743067",
+      "comment_version_key": "5518743067:2026-09-03T01:06:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136454#issuecomment-5518743067",
+      "comment_created_at": "2026-09-03T01:06:16Z",
+      "comment_updated_at": "2026-09-03T01:06:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136454,
+      "author": "HGLUSSY",
+      "author_id": 283802306,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T01:07:12.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/model-resolve-thinking-override",
+        "head_sha": "4593bc4ad59b9f4d6f4a24ec35cefef282cac16c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
