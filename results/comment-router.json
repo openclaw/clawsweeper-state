@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T14:33:52.849Z",
+  "updated_at": "2026-09-03T14:34:44.955Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135528:5500670751:2026-09-03T10:15:18Z:clawsweeper_needs_human",
-      "comment_id": "5500670751",
-      "comment_version_key": "5500670751:2026-09-03T10:15:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135528#issuecomment-5500670751",
-      "comment_created_at": "2026-09-01T21:27:40Z",
-      "comment_updated_at": "2026-09-03T10:15:18Z",
-      "comment_body_sha256": "b9a7e872dd02cb760391671da19f454bb3223ec77000df54d17825f06d08c959",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135528,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Key the skill-entry cache by the resolved Workshop root (P1)** - The new Workshop root is derived from agentId after this cache key is built, but the key includes neither agentId nor that resolved path. Two agen...; Review finding: [P1] Key the skill-entry cache by the resolved Workshop root — src/skills/loading/workspace-skill-loader.ts:446-450 - [high] Shared workspace cache can cross agent... (sha=605cfc33355342997f9ee4ade2c1276f7ad95db0)",
-      "expected_head_sha": "605cfc33355342997f9ee4ade2c1276f7ad95db0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T10:17:02.590Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workshop-global-skill-ownership",
-        "head_sha": "605cfc33355342997f9ee4ade2c1276f7ad95db0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136410:5512636854:2026-09-03T10:03:17Z:clawsweeper_auto_repair",
       "comment_id": "5512636854",
@@ -31796,6 +31763,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T14:33:52.849Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137200:5523175027:2026-09-03T14:33:43Z:clawsweeper_auto_repair",
+      "comment_id": "5523175027",
+      "comment_version_key": "5523175027:2026-09-03T14:33:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137200#issuecomment-5523175027",
+      "comment_created_at": "2026-09-03T08:53:42Z",
+      "comment_updated_at": "2026-09-03T14:33:43Z",
+      "comment_body_sha256": "bb5a091f7f78f3dfe7da7d7d7f99e15e438b573c43feee036b81b81a180fac3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137200,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=68c0659e412e7cc78fc717a5ba65c025d7ad15f5)",
+      "expected_head_sha": "68c0659e412e7cc78fc717a5ba65c025d7ad15f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T14:34:44.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-136966",
+        "head_sha": "68c0659e412e7cc78fc717a5ba65c025d7ad15f5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
