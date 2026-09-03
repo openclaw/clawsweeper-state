@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:57:56.485Z",
+  "updated_at": "2026-09-03T08:59:05.464Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137005:5521005228:2026-09-03T05:32:19Z:re_review",
-      "comment_id": "5521005228",
-      "comment_version_key": "5521005228:2026-09-03T05:32:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137005#issuecomment-5521005228",
-      "comment_created_at": "2026-09-03T05:32:19Z",
-      "comment_updated_at": "2026-09-03T05:32:19Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137005,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T05:33:12.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-persisted-role-reconnect-20260903",
-        "head_sha": "fe9cf1f8cbb2249c42b7719800a060a6d74c0eae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137028:5521004881:2026-09-03T05:32:17Z:clawsweeper_auto_repair",
       "comment_id": "5521004881",
@@ -32454,6 +32407,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T08:57:56.485Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137202:5523233924:2026-09-03T08:58:19Z:clawsweeper_needs_human",
+      "comment_id": "5523233924",
+      "comment_version_key": "5523233924:2026-09-03T08:58:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137202#issuecomment-5523233924",
+      "comment_created_at": "2026-09-03T08:58:19Z",
+      "comment_updated_at": "2026-09-03T08:58:19Z",
+      "comment_body_sha256": "b24a9cf3e38d2d82ead62dbc7095da814985e425271573670a797457acfcf8d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137202,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The release-candidate runner, maintained patch, report readers, and project inheritance affect shared CI and QA automation while final exact-head correctness and performance acceptanc... (sha=02723d1c1a1e5c201830a75a03e4cfde747330ec)",
+      "expected_head_sha": "02723d1c1a1e5c201830a75a03e4cfde747330ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T08:59:05.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/vitest5-migration-d2657a",
+        "head_sha": "02723d1c1a1e5c201830a75a03e4cfde747330ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
