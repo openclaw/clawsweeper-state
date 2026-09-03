@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:54:06.335Z",
+  "updated_at": "2026-09-03T05:54:09.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1752:5518186471:2026-09-03T03:14:17Z:clawsweeper_auto_repair",
-      "comment_id": "5518186471",
-      "comment_version_key": "5518186471:2026-09-03T03:14:17Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1752#issuecomment-5518186471",
-      "comment_created_at": "2026-09-02T23:57:43Z",
-      "comment_updated_at": "2026-09-03T03:14:17Z",
-      "comment_body_sha256": "248807259c0bcddc30a17957589023712e655a34097b4993a2cf61e98cbd68e4",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1752,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=536d8df4081f25ae1d696ba9bb2b6cdd3410e33b)",
-      "expected_head_sha": "536d8df4081f25ae1d696ba9bb2b6cdd3410e33b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T03:15:16.250Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/happy-montalcini-56aa1a",
-        "head_sha": "536d8df4081f25ae1d696ba9bb2b6cdd3410e33b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136873:5519737030:2026-09-03T03:08:42Z:re_review",
       "comment_id": "5519737030",
@@ -32445,6 +32412,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136961:5520210159:2026-09-03T05:53:12Z:clawsweeper_needs_human",
+      "comment_id": "5520210159",
+      "comment_version_key": "5520210159:2026-09-03T05:53:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136961#issuecomment-5520210159",
+      "comment_created_at": "2026-09-03T04:09:57Z",
+      "comment_updated_at": "2026-09-03T05:53:12Z",
+      "comment_body_sha256": "e433aabdb22444761193bffc99a10982e3dab4f404ccc590757258a9e8f6850d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the added integration test reaches the production coordinator and a local bare Git remote, but substit...; Review finding: [P1] Bind publication to the live operational run — src/gateway/worker-environments/worker-session-tool-executor.ts:479-498 - [high] Publication request outlives o... (sha=9d5d959343af0c61adc1f626ee934e2846f855ca)",
+      "expected_head_sha": "9d5d959343af0c61adc1f626ee934e2846f855ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:54:09.167Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/revert-worker-github-bearer",
+        "head_sha": "9d5d959343af0c61adc1f626ee934e2846f855ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
