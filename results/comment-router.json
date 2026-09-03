@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T09:44:03.260Z",
+  "updated_at": "2026-09-03T09:44:08.396Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136589:5516165831:2026-09-03T06:09:41Z:clawsweeper_needs_human",
-      "comment_id": "5516165831",
-      "comment_version_key": "5516165831:2026-09-03T06:09:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136589#issuecomment-5516165831",
-      "comment_created_at": "2026-09-02T20:46:30Z",
-      "comment_updated_at": "2026-09-03T06:09:41Z",
-      "comment_body_sha256": "f9c2b3a24baafd770799723b4bf23dffa8994d1b3379ab9ed771fc2dea7b8f39",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136589,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is an additive durable-transcript change: managed display blocks must remain separate from text-only model content and remain associated with the exact appended message. The patc... (sha=cf5f5320670ea37017683ea49c485af4c74f2db0)",
-      "expected_head_sha": "cf5f5320670ea37017683ea49c485af4c74f2db0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T06:12:47.212Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-136525-cron-media-transcript",
-        "head_sha": "cf5f5320670ea37017683ea49c485af4c74f2db0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136742:5518191756:2026-09-03T05:52:08Z:clawsweeper_needs_human",
       "comment_id": "5518191756",
@@ -32274,6 +32241,53 @@
       "status": "skipped",
       "processed_at": "2026-09-03T09:44:03.260Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134920:5523779164:2026-09-03T09:43:13Z:re_review",
+      "comment_id": "5523779164",
+      "comment_version_key": "5523779164:2026-09-03T09:43:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134920#issuecomment-5523779164",
+      "comment_created_at": "2026-09-03T09:43:13Z",
+      "comment_updated_at": "2026-09-03T09:43:13Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134920,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T09:44:05.388Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/announce-transcript-commit-wait",
+        "head_sha": "cb9008ed39eacb993aef7b7b9461c8fc8f772863",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
