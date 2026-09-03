@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T11:08:03.894Z",
+  "updated_at": "2026-09-03T11:08:17.381Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:74:5304878124:2026-09-03T07:58:18Z:clawsweeper_auto_repair",
-      "comment_id": "5304878124",
-      "comment_version_key": "5304878124:2026-09-03T07:58:18Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/74#issuecomment-5304878124",
-      "comment_created_at": "2026-08-16T00:12:20Z",
-      "comment_updated_at": "2026-09-03T07:58:18Z",
-      "comment_body_sha256": "f2e2391854a0022a04012725e165c081f91adeffa528ac020e9c7842043faaa8",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 74,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6fed9344d081f06ec5c64ee35a473a4e34b1be21)",
-      "expected_head_sha": "6fed9344d081f06ec5c64ee35a473a4e34b1be21",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T07:59:21.369Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-fetch-timeout",
-        "head_sha": "6fed9344d081f06ec5c64ee35a473a4e34b1be21",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/hermit:33:5464251097:2026-09-03T07:58:18Z:clawsweeper_needs_human",
       "comment_id": "5464251097",
@@ -32492,6 +32459,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3579:5515247828:2026-09-03T11:06:44Z:clawsweeper_needs_human",
+      "comment_id": "5515247828",
+      "comment_version_key": "5515247828:2026-09-03T11:06:44Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3579#issuecomment-5515247828",
+      "comment_created_at": "2026-09-02T19:35:45Z",
+      "comment_updated_at": "2026-09-03T11:06:44Z",
+      "comment_body_sha256": "5f1b54a113534f25b1f8943a66d19c0aa696470f28126fef7b43862c7e4ef043",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3579,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production helper receives an abort signal, but the supplied terminal trace uses a real mute origin only for standalone fe... (sha=6a6c06597ae17451c8aa47254e6a967119df2ab4)",
+      "expected_head_sha": "6a6c06597ae17451c8aa47254e6a967119df2ab4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T11:08:17.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hermit-content-rights-timeout",
+        "head_sha": "6a6c06597ae17451c8aa47254e6a967119df2ab4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
