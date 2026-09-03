@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:03:39.962Z",
+  "updated_at": "2026-09-03T08:04:24.111Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136436:5520411572:2026-09-03T04:39:22Z:re_review",
-      "comment_id": "5520411572",
-      "comment_version_key": "5520411572:2026-09-03T04:39:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136436#issuecomment-5520411572",
-      "comment_created_at": "2026-09-03T04:35:36Z",
-      "comment_updated_at": "2026-09-03T04:39:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136436,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T04:39:33.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-docs-i18n-frontmatter-20260902",
-        "head_sha": "5555a16795c6343896c2755d006dea3a0ff3788b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136971:5520233220:2026-09-03T04:39:05Z:clawsweeper_needs_human",
       "comment_id": "5520233220",
@@ -32710,6 +32663,39 @@
         "kind": "pull_request",
         "branch": "fix/workflow-crabbox-fetch-timeout",
         "head_sha": "fbed2f5aa891ad9d22bd9dd871859dc9bb9dd2c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130091:5424825369:2026-09-03T08:03:24Z:clawsweeper_needs_human",
+      "comment_id": "5424825369",
+      "comment_version_key": "5424825369:2026-09-03T08:03:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130091#issuecomment-5424825369",
+      "comment_created_at": "2026-08-26T11:48:25Z",
+      "comment_updated_at": "2026-09-03T08:03:24Z",
+      "comment_body_sha256": "68fc5b77cebd5a68047bb1ac5fccb8c828792bec59c53bc48d6649d6544abf97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the node-service environment passed to the LaunchAgent installer, but the submitted evidence is an isolated rec... (sha=46e2835b23ac351eeaa0ad82067dc780c97b764a)",
+      "expected_head_sha": "46e2835b23ac351eeaa0ad82067dc780c97b764a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T08:04:24.111Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/130020-darwin-node-compile-cache",
+        "head_sha": "46e2835b23ac351eeaa0ad82067dc780c97b764a",
         "cluster_id": null,
         "job_path": null
       }
