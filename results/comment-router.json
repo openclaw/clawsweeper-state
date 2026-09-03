@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T06:08:08.171Z",
+  "updated_at": "2026-09-03T06:08:30.822Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110455:5503231498:2026-09-02T02:03:24Z:re_review",
-      "comment_id": "5503231498",
-      "comment_version_key": "5503231498:2026-09-02T02:03:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110455#issuecomment-5503231498",
-      "comment_created_at": "2026-09-02T02:03:24Z",
-      "comment_updated_at": "2026-09-02T02:03:24Z",
-      "comment_body_sha256": "c43b4e30372ccc77144e4ee013105324811ce2c4941210174fea9e91f4318235",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110455,
-      "author": "superdiaodiao",
-      "author_id": 42577861,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T03:31:34.685Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136932:5519906856:2026-09-03T03:30:31Z:clawsweeper_needs_human",
       "comment_id": "5519906856",
@@ -32517,6 +32490,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T06:08:08.171Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137059:5521320763:2026-09-03T06:07:34Z:clawsweeper_needs_human",
+      "comment_id": "5521320763",
+      "comment_version_key": "5521320763:2026-09-03T06:07:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137059#issuecomment-5521320763",
+      "comment_created_at": "2026-09-03T06:07:34Z",
+      "comment_updated_at": "2026-09-03T06:07:34Z",
+      "comment_body_sha256": "91587c16eb7eef8991edbf3089325318585e4cee5c032cd3f43d92c0b671b00c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137059,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing cloud-worker configurations using a mapped or NAT64-embedded unspecified address will now fail before provisioning; that is the intended safer outcome, but visible checks sho... (sha=cd104d38cb9b0203f9d585f5fdeb035d78cd751f)",
+      "expected_head_sha": "cd104d38cb9b0203f9d585f5fdeb035d78cd751f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T06:08:30.822Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cloud-worker-unspecified-ipv6",
+        "head_sha": "cd104d38cb9b0203f9d585f5fdeb035d78cd751f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
