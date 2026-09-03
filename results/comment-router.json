@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T22:36:26.198Z",
+  "updated_at": "2026-09-03T22:37:26.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3576:5512625624:2026-09-03T14:13:03Z:clawsweeper_auto_repair",
-      "comment_id": "5512625624",
-      "comment_version_key": "5512625624:2026-09-03T14:13:03Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3576#issuecomment-5512625624",
-      "comment_created_at": "2026-09-02T16:11:21Z",
-      "comment_updated_at": "2026-09-03T14:13:03Z",
-      "comment_body_sha256": "334f1a9d62a06887fe2d4c2055504ccadf29980b0cc3776258cdbeba12d886f2",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3576,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2c9462fa0588c437a16d2f985bcdfaee9d4f160a)",
-      "expected_head_sha": "2c9462fa0588c437a16d2f985bcdfaee9d4f160a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T14:14:15.235Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-1c7282d76a",
-        "head_sha": "2c9462fa0588c437a16d2f985bcdfaee9d4f160a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-29T02:19:50Z:clawsweeper_needs_human",
       "comment_id": "4971448190",
@@ -33506,6 +33473,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136805:5519015479:2026-09-03T22:35:53Z:clawsweeper_needs_human",
+      "comment_id": "5519015479",
+      "comment_version_key": "5519015479:2026-09-03T22:35:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136805#issuecomment-5519015479",
+      "comment_created_at": "2026-09-03T01:40:46Z",
+      "comment_updated_at": "2026-09-03T22:35:53Z",
+      "comment_body_sha256": "1b8d40ae80ea3629711618ca560f2456b9fb3c83a06af4ff55682da7a980c8ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +32 lines; the byte counter and stateful UTF-8 decoder are necessary at this owner boundary because no existing bounded line decoder can enforce the cap before... (sha=0518caa29cea42907b70190bc747cdef5c681f22)",
+      "expected_head_sha": "0518caa29cea42907b70190bc747cdef5c681f22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T22:37:26.379Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/service-child-control-pending-cap",
+        "head_sha": "0518caa29cea42907b70190bc747cdef5c681f22",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
