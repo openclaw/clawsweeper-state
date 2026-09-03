@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:13:23.595Z",
+  "updated_at": "2026-09-03T05:13:37.051Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136754:5518290990:2026-09-03T01:43:57Z:clawsweeper_needs_human",
-      "comment_id": "5518290990",
-      "comment_version_key": "5518290990:2026-09-03T01:43:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136754#issuecomment-5518290990",
-      "comment_created_at": "2026-09-03T00:10:06Z",
-      "comment_updated_at": "2026-09-03T01:43:57Z",
-      "comment_body_sha256": "2aa8966c8f6af8d140e2143233a8fd3b7ccbeafddc7002c66b75057ef5c410eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136754,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive public agent-harness ownership callback and persisted-session routing change are compatibility-sensitive; current-head required CI and area-owner review should complete b... (sha=78e1cdb4d37b5ca57b786f38b9c974ef555b8573)",
-      "expected_head_sha": "78e1cdb4d37b5ca57b786f38b9c974ef555b8573",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T02:02:22.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/elastic-grothendieck-ef4aef",
-        "head_sha": "78e1cdb4d37b5ca57b786f38b9c974ef555b8573",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136773:5518709775:2026-09-03T01:45:30Z:clawsweeper_auto_repair",
       "comment_id": "5518709775",
@@ -32839,6 +32806,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136960:5520830874:2026-09-03T05:12:30Z:re_review",
+      "comment_id": "5520830874",
+      "comment_version_key": "5520830874:2026-09-03T05:12:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136960#issuecomment-5520830874",
+      "comment_created_at": "2026-09-03T05:12:30Z",
+      "comment_updated_at": "2026-09-03T05:12:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136960,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T05:13:32.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tailscale-control-ui-media-token",
+        "head_sha": "5ce8ddec7eb85b8db931b5757001e780942ac5be",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
