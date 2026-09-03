@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T20:07:17.435Z",
+  "updated_at": "2026-09-03T20:08:05.086Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137200:5523175027:2026-09-03T12:19:17Z:clawsweeper_auto_repair",
-      "comment_id": "5523175027",
-      "comment_version_key": "5523175027:2026-09-03T12:19:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137200#issuecomment-5523175027",
-      "comment_created_at": "2026-09-03T08:53:42Z",
-      "comment_updated_at": "2026-09-03T12:19:17Z",
-      "comment_body_sha256": "8c91ce489a7c232ec7e1df06b531751bb1df1d15e4b966499bde199b3f9d38ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137200,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=350c09b9d5bf62ca6bcff8e5e9551e8a050725ea)",
-      "expected_head_sha": "350c09b9d5bf62ca6bcff8e5e9551e8a050725ea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:41:11.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-136966",
-        "head_sha": "772c0016cb6e82583aa0114ac67a06254c97b326",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137210:5523573746:2026-09-03T12:00:59Z:clawsweeper_needs_human",
       "comment_id": "5523573746",
@@ -32190,6 +32157,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137259:5531454053:2026-09-03T20:06:52Z:re_review",
+      "comment_id": "5531454053",
+      "comment_version_key": "5531454053:2026-09-03T20:06:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137259#issuecomment-5531454053",
+      "comment_created_at": "2026-09-03T20:06:52Z",
+      "comment_updated_at": "2026-09-03T20:06:52Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137259,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T20:08:02.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/persist-native-approval-cards-after-finalization",
+        "head_sha": "338e251ba2afa391b802c4b97392aff1c251da88",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
