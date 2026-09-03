@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T19:36:02.395Z",
+  "updated_at": "2026-09-03T19:36:22.221Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:115432:5117930825:2026-09-03T11:47:06Z:clawsweeper_needs_human",
-      "comment_id": "5117930825",
-      "comment_version_key": "5117930825:2026-09-03T11:47:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/115432#issuecomment-5117930825",
-      "comment_created_at": "2026-07-29T12:46:17Z",
-      "comment_updated_at": "2026-09-03T11:47:06Z",
-      "comment_body_sha256": "b617ec13ef1f5f4309156aeda7067215624d419c3b99ebf690a680480f29ed05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 115432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing open-DM Teams configurations will begin producing critical audit findings, which can change operator-visible JSON and automation output even though message admission behavior... (sha=a0fbf1586ea731e7c3c5904db2d61aee97907c8d)",
-      "expected_head_sha": "a0fbf1586ea731e7c3c5904db2d61aee97907c8d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:41:11.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-security-audit-dm-policies",
-        "head_sha": "a0fbf1586ea731e7c3c5904db2d61aee97907c8d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112709:5128482119:2026-09-03T12:35:44Z:clawsweeper_auto_repair",
       "comment_id": "5128482119",
@@ -32148,6 +32115,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131624:5531081119:2026-09-03T19:35:02Z:re_review",
+      "comment_id": "5531081119",
+      "comment_version_key": "5531081119:2026-09-03T19:35:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131624#issuecomment-5531081119",
+      "comment_created_at": "2026-09-03T19:35:02Z",
+      "comment_updated_at": "2026-09-03T19:35:02Z",
+      "comment_body_sha256": "7d3b9d0aa89507ef1ed3b25431d5b91c6d5a0b221afd20d3fdfcc3deca4bce43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131624,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T19:36:07.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scalar-validation-error-127329",
+        "head_sha": "8a6f921df7dc841e809053c4ad94d97628ef2624",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
