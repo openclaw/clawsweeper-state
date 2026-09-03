@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T03:12:39.100Z",
+  "updated_at": "2026-09-03T03:13:44.882Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135840:5504964057:2026-09-02T05:37:09Z:re_review",
-      "comment_id": "5504964057",
-      "comment_version_key": "5504964057:2026-09-02T05:37:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135840#issuecomment-5504964057",
-      "comment_created_at": "2026-09-02T05:37:09Z",
-      "comment_updated_at": "2026-09-02T05:37:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135840,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T23:24:11.268Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135840:5505196266:2026-09-02T06:00:44Z:re_review",
       "comment_id": "5505196266",
@@ -33186,6 +33159,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136811:5519088174:2026-09-03T02:43:58Z:clawsweeper_needs_human",
+      "comment_id": "5519088174",
+      "comment_version_key": "5519088174:2026-09-03T02:43:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136811#issuecomment-5519088174",
+      "comment_created_at": "2026-09-03T01:49:54Z",
+      "comment_updated_at": "2026-09-03T02:43:58Z",
+      "comment_body_sha256": "ccf9ca0aef5c5d0decbad9b8abde9f33b390bddabf92e0d359fa66fad63eaebf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The branch adds 55 production/tooling lines to a bug fix. Most of that is the companion lazy-localization structure; its reported startup-budget result could not be independently reru... (sha=22b4a39f714969731d1d270960dd18daa99dba39)",
+      "expected_head_sha": "22b4a39f714969731d1d270960dd18daa99dba39",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T03:13:44.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/hide-disabled-hook-dispatch",
+        "head_sha": "61f3fa16809399706f253c6ac494747bdaf26fac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
