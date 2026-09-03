@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T11:09:07.059Z",
+  "updated_at": "2026-09-03T11:10:15.385Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137134:5522550324:2026-09-03T08:01:56Z:clawsweeper_auto_repair",
-      "comment_id": "5522550324",
-      "comment_version_key": "5522550324:2026-09-03T08:01:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137134#issuecomment-5522550324",
-      "comment_created_at": "2026-09-03T08:01:56Z",
-      "comment_updated_at": "2026-09-03T08:01:56Z",
-      "comment_body_sha256": "36dfb6395ea9c785145e6cf58233b42ba8f88c619de70b0d537b4854954d120a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137134,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a790a73954b5af4f8e0d3dd265436e9549eed6ce)",
-      "expected_head_sha": "a790a73954b5af4f8e0d3dd265436e9549eed6ce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:02:55.889Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-isolate-harness",
-        "head_sha": "a790a73954b5af4f8e0d3dd265436e9549eed6ce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111005:5013234781:2026-09-03T07:59:03Z:clawsweeper_auto_repair",
       "comment_id": "5013234781",
@@ -32444,6 +32411,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135528:5524784709:2026-09-03T11:08:26Z:re_review",
+      "comment_id": "5524784709",
+      "comment_version_key": "5524784709:2026-09-03T11:08:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135528#issuecomment-5524784709",
+      "comment_created_at": "2026-09-03T11:08:26Z",
+      "comment_updated_at": "2026-09-03T11:08:26Z",
+      "comment_body_sha256": "7926d1357a4480031bb2ca446c1842e83319667db2da0221636587576ec135c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135528,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T11:10:12.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/workshop-global-skill-ownership",
+        "head_sha": "a722613dc131b6ccac2d07ae5b40701bb4ab5b4c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
