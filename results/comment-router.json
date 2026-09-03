@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:15:17.774Z",
+  "updated_at": "2026-09-03T04:15:42.058Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136721:5517795044:2026-09-03T00:12:12Z:clawsweeper_auto_repair",
-      "comment_id": "5517795044",
-      "comment_version_key": "5517795044:2026-09-03T00:12:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136721#issuecomment-5517795044",
-      "comment_created_at": "2026-09-02T23:19:10Z",
-      "comment_updated_at": "2026-09-03T00:12:12Z",
-      "comment_body_sha256": "358647f73509108b4f8ca45c5b886f5b1a97ca41597fc692f74def9c094833cb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136721,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "trusted ClawSweeper review contains P-severity findings",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:10:40.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-2026-6-35-fast-uri",
-        "head_sha": "ba6b4e4f8a99db224ba6734ff8251d51596132f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136722:5517888080:2026-09-03T01:01:33Z:clawsweeper_needs_human",
       "comment_id": "5517888080",
@@ -32757,6 +32724,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135480:5520248484:2026-09-03T04:14:51Z:re_review",
+      "comment_id": "5520248484",
+      "comment_version_key": "5520248484:2026-09-03T04:14:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135480#issuecomment-5520248484",
+      "comment_created_at": "2026-09-03T04:14:51Z",
+      "comment_updated_at": "2026-09-03T04:14:51Z",
+      "comment_body_sha256": "a3cd664901ede114a0df5469f34421ca0991c11b61c740191b65ea6ce6ddd6e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135480,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — please review the exact head `a5bdd4f245887b3bbe5a3ee04e22a63d5c0379f0`. the only delta from the previously reviewed head is the two-line knip config registration above; no production code changed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T04:15:40.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/subagent-shared-cwd-advisory",
+        "head_sha": "a5bdd4f245887b3bbe5a3ee04e22a63d5c0379f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
