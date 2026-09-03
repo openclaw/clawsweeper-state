@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:15:50.711Z",
+  "updated_at": "2026-09-03T05:16:12.701Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136687:5517418175:2026-09-03T02:19:37Z:clawsweeper_needs_human",
-      "comment_id": "5517418175",
-      "comment_version_key": "5517418175:2026-09-03T02:19:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136687#issuecomment-5517418175",
-      "comment_created_at": "2026-09-02T22:38:47Z",
-      "comment_updated_at": "2026-09-03T02:19:37Z",
-      "comment_body_sha256": "f1fa76e87ad50f3cb46e5b679c4069250fb43b18738c557b845088d3956e646c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136687,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep query-distinct profile state isolated (P1)** - The new profile ID keeps query parameters, but settings, sessions, and session tokens still use gatewayOriginScope, which removes them. Selecting two saved URL...; Review finding: [P1] Keep query-distinct profile state isolated — ui/src/app/gateway-registry.ts:58-60 - [P1] Do not restore a removed Gateway profile — ui/src/pages/connection/co... (sha=9283a98e455b026a93112cf2e167ba94c6ee9a8c)",
-      "expected_head_sha": "9283a98e455b026a93112cf2e167ba94c6ee9a8c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T02:32:34.287Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/multi-gateway-control-ui",
-        "head_sha": "a2c886e5acdf42ed311229ca8b7d99d0644c782b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136699:5517536107:2026-09-03T02:02:00Z:clawsweeper_needs_human",
       "comment_id": "5517536107",
@@ -32688,6 +32655,53 @@
         "kind": "pull_request",
         "branch": "codex/control-ui-community-invite-policy",
         "head_sha": "31394045bf48034d5266b43845ceaef0c483c513",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136868:5520850495:2026-09-03T05:14:53Z:re_review",
+      "comment_id": "5520850495",
+      "comment_version_key": "5520850495:2026-09-03T05:14:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136868#issuecomment-5520850495",
+      "comment_created_at": "2026-09-03T05:14:53Z",
+      "comment_updated_at": "2026-09-03T05:14:53Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136868,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T05:16:10.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-embedding-batch-split-zhipu-bailian-136261",
+        "head_sha": "fda625fbb602cbf19d5e7e63019a9a63fffd4a25",
         "cluster_id": null,
         "job_path": null
       },
