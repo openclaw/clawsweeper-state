@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T15:15:43.058Z",
+  "updated_at": "2026-09-03T15:16:43.221Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125593:5323715668:2026-09-03T10:34:27Z:clawsweeper_auto_repair",
-      "comment_id": "5323715668",
-      "comment_version_key": "5323715668:2026-09-03T10:34:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125593#issuecomment-5323715668",
-      "comment_created_at": "2026-08-18T04:44:01Z",
-      "comment_updated_at": "2026-09-03T10:34:27Z",
-      "comment_body_sha256": "822f257e7ce5560e8b5a19283d2f194c66bb194ed7e57c29e55d50ab07a4cbd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125593,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a23640da6618687ad785535e35b751afb4e0ab70)",
-      "expected_head_sha": "a23640da6618687ad785535e35b751afb4e0ab70",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T10:43:53.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/debugging-skill-interrupted-run-recovery",
-        "head_sha": "a23640da6618687ad785535e35b751afb4e0ab70",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125605:5323794720:2026-09-03T10:36:08Z:clawsweeper_auto_repair",
       "comment_id": "5323794720",
@@ -31920,6 +31887,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T15:15:43.058Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137300:5525871565:2026-09-03T15:15:16Z:clawsweeper_needs_human",
+      "comment_id": "5525871565",
+      "comment_version_key": "5525871565:2026-09-03T15:15:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137300#issuecomment-5525871565",
+      "comment_created_at": "2026-09-03T12:38:11Z",
+      "comment_updated_at": "2026-09-03T15:15:16Z",
+      "comment_body_sha256": "0a665be3da805aeac2fd577c45ff7c0420819778c17fd8c64525fb038e4432ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied E2E uses mocked PluginRuntime Gateway and transport calls, so it does not demonstrate a configured...; Review finding: [P1] Fence approved prompts when the Reef lifecycle closes — extensions/reef/src/federation-coordinator.ts:131-162 - [P1] Do not infer standing-approval scope from... (sha=2f637d49ec68cc71841ab0a566751b7e1888d8bb)",
+      "expected_head_sha": "2f637d49ec68cc71841ab0a566751b7e1888d8bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T15:16:43.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pb-61a/federated-prompt-admission",
+        "head_sha": "2f637d49ec68cc71841ab0a566751b7e1888d8bb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
