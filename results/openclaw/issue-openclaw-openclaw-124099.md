@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-124099"
 mode: "autonomous"
-run_id: "33718163394"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33718163394"
+run_id: "33721671491"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33721671491"
 head_sha: "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-03T06:09:52.888Z"
+published_at: "2026-09-03T06:58:16.352Z"
 canonical: "https://github.com/openclaw/openclaw/issues/124099"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/124099"
 canonical_pr: null
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33718163394](https://github.com/openclaw/clawsweeper/actions/runs/33718163394)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33721671491](https://github.com/openclaw/clawsweeper/actions/runs/33721671491)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/124099
 
 ## Summary
 
-Current checkout source still routes SESSION_CANONICAL_KEY_MIGRATION_REQUIRED through unknown-error fallback: the session owner emits that code, while failover coordination recognition has no matching code check. Implementation is blocked because the required sibling ../codex source checkout is absent and this read-only workspace cannot create it, edit the regression/fix, create the required branch, or run write-producing validation.
+#124099 remains the canonical open issue. Current main reaches the unknown-error fallback path for SESSION_CANONICAL_KEY_MIGRATION_REQUIRED, so a narrow classifier repair and boundary regression are appropriate. Implementation and validation are blocked because this checkout is read-only, workspace tsx tooling is absent, and required sibling ../codex source is unavailable.
 
 ## Impact
 
@@ -54,7 +54,7 @@ Current checkout source still routes SESSION_CANONICAL_KEY_MIGRATION_REQUIRED th
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| issue_implementation_status_comment | updated | #124099 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,9 +66,9 @@ Current checkout source still routes SESSION_CANONICAL_KEY_MIGRATION_REQUIRED th
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #124099 | fix_needed | blocked | canonical | Narrow bug-fix path is identified, but the mandatory Codex inspection and writable implementation environment are unavailable. |
-| #124098 | keep_closed | skipped | related | Closed context reference only; no close, merge, or update action is valid. |
-| cluster:issue-openclaw-openclaw-124099 | build_fix_artifact | blocked | canonical | Artifact is ready for a writable executor after the required Codex checkout is made available. |
+| #124098 | keep_closed | skipped | related | Historical related context only; no mutation is valid for this closed PR. |
+| #124099 | fix_needed | blocked | canonical | A writable executor checkout with installed workspace dependencies and the required ../codex source is needed before editing and proving the regression. |
+| cluster:issue-openclaw-openclaw-124099 | build_fix_artifact | planned | canonical | Narrow executor-ready fix artifact; do not open the PR until the listed regression and changed gate pass. |
 
 ## Needs Human
 

@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124099",
+  "mode": "autonomous",
+  "run_id": "33721671491",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33721671491",
+  "head_sha": "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124099.md",
+  "published_at": "2026-09-03T06:58:16.352Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124099",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124099",
+  "canonical_pr": null,
+  "summary": "#124099 remains the canonical open issue. Current main reaches the unknown-error fallback path for SESSION_CANONICAL_KEY_MIGRATION_REQUIRED, so a narrow classifier repair and boundary regression are appropriate. Implementation and validation are blocked because this checkout is read-only, workspace tsx tooling is absent, and required sibling ../codex source is unavailable.",
+  "actions": [
+    {
+      "target": "#124098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124099",
+      "candidate_fix": null,
+      "reason": "Historical related context only; no mutation is valid for this closed PR."
+    },
+    {
+      "target": "#124099",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124099",
+      "candidate_fix": null,
+      "reason": "A writable executor checkout with installed workspace dependencies and the required ../codex source is needed before editing and proving the regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124099",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#124099",
+      "candidate_fix": null,
+      "reason": "Narrow executor-ready fix artifact; do not open the PR until the listed regression and changed gate pass."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
