@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:25:14.381Z",
+  "updated_at": "2026-09-03T04:25:17.026Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:445:5518841837:2026-09-03T01:18:25Z:re_review",
-      "comment_id": "5518841837",
-      "comment_version_key": "5518841837:2026-09-03T01:18:25Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/445#issuecomment-5518841837",
-      "comment_created_at": "2026-09-03T01:18:25Z",
-      "comment_updated_at": "2026-09-03T01:18:25Z",
-      "comment_body_sha256": "bcebd16b04df119da0c562c667e99d34836757942d81567259030504dc611c6e",
-      "repo": "steipete/oracle",
-      "issue_number": 445,
-      "author": "oraclexing",
-      "author_id": 160203845,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T01:24:12.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shared-chrome-concurrency-leases",
-        "head_sha": "728f03df2aab83e130f26d5c1c2f7b94a021c937",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:445:5515492304:2026-09-03T01:23:00Z:clawsweeper_needs_human",
       "comment_id": "5515492304",
@@ -32770,6 +32723,39 @@
         "kind": "pull_request",
         "branch": "alix/feat-fleet-logs-timestamps",
         "head_sha": "9e4759910122e5e30ce1d9b7dbe183ee49c71a24",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136790:5518895827:2026-09-03T04:19:36Z:clawsweeper_needs_human",
+      "comment_id": "5518895827",
+      "comment_version_key": "5518895827:2026-09-03T04:19:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136790#issuecomment-5518895827",
+      "comment_created_at": "2026-09-03T01:25:23Z",
+      "comment_updated_at": "2026-09-03T04:19:36Z",
+      "comment_body_sha256": "d24c7ac5660352d3bc126e23118df676b635b05e38d8d55b9f36cc17e2ecd30b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136790,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A public GitHub release may be available before native installers or apps; that intentional availability-contract change needs recorded release-manager acceptance before merge. (sha=df1499b33c34adebaa55d4b72de92504385cb036)",
+      "expected_head_sha": "df1499b33c34adebaa55d4b72de92504385cb036",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T04:25:17.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/release-publish-apps-non-blocking",
+        "head_sha": "df1499b33c34adebaa55d4b72de92504385cb036",
         "cluster_id": null,
         "job_path": null
       }
