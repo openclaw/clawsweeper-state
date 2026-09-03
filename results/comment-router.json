@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T20:00:39.488Z",
+  "updated_at": "2026-09-03T20:02:53.726Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133406:5470136375:2026-09-03T11:45:44Z:clawsweeper_auto_repair",
-      "comment_id": "5470136375",
-      "comment_version_key": "5470136375:2026-09-03T11:45:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133406#issuecomment-5470136375",
-      "comment_created_at": "2026-08-30T17:17:36Z",
-      "comment_updated_at": "2026-09-03T11:45:44Z",
-      "comment_body_sha256": "0c21b314ec19fe4b189ffc54c64c38f6c86d2e43bc964571422d460f5dff9078",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=adedd3af69935bd1704a80bfefb2da1caacb144c)",
-      "expected_head_sha": "adedd3af69935bd1704a80bfefb2da1caacb144c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T12:41:11.080Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telegram-rich-message-local-media",
-        "head_sha": "adedd3af69935bd1704a80bfefb2da1caacb144c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134003:5476306309:2026-09-03T12:12:46Z:clawsweeper_needs_human",
       "comment_id": "5476306309",
@@ -32174,6 +32141,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137489:5531394705:2026-09-03T20:01:57Z:re_review",
+      "comment_id": "5531394705",
+      "comment_version_key": "5531394705:2026-09-03T20:01:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137489#issuecomment-5531394705",
+      "comment_created_at": "2026-09-03T20:01:57Z",
+      "comment_updated_at": "2026-09-03T20:01:57Z",
+      "comment_body_sha256": "32cc9f0476778fb1e9f07be8221367193ccab1bdfdb9274331aecbaf48789744",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137489,
+      "author": "shojikumaru",
+      "author_id": 184229851,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T20:02:50.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/130965-codex-projection-call-id",
+        "head_sha": "64929bd86144eefd6ad200410449407f4c9ab6c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
