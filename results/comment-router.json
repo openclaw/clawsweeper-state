@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:00:42.372Z",
+  "updated_at": "2026-09-03T08:01:07.017Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123694:5294627257:2026-09-03T04:12:46Z:clawsweeper_needs_human",
-      "comment_id": "5294627257",
-      "comment_version_key": "5294627257:2026-09-03T04:12:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123694#issuecomment-5294627257",
-      "comment_created_at": "2026-08-14T14:44:06Z",
-      "comment_updated_at": "2026-09-03T04:12:46Z",
-      "comment_body_sha256": "ed04c6c6a8be5a91357882d5fe59aaeca23a9daea0e19ecb5bad8e6ee33a30c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123694,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging enables a daily hosted Cargo-update stream with up to five open pull requests; the current GitHub Cargo-specific option contract remains unverified in this review because netw... (sha=36d4e29ae5d79509f84a0360333af45af425b037)",
-      "expected_head_sha": "36d4e29ae5d79509f84a0360333af45af425b037",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T04:13:55.653Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "giodl/deps-linux-cargo",
-        "head_sha": "36d4e29ae5d79509f84a0360333af45af425b037",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123683:5294607323:2026-09-03T04:13:13Z:clawsweeper_needs_human",
       "comment_id": "5294607323",
@@ -32769,6 +32736,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134920:5522528565:2026-09-03T07:59:59Z:re_review",
+      "comment_id": "5522528565",
+      "comment_version_key": "5522528565:2026-09-03T07:59:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134920#issuecomment-5522528565",
+      "comment_created_at": "2026-09-03T07:59:59Z",
+      "comment_updated_at": "2026-09-03T07:59:59Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134920,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T08:01:00.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/announce-transcript-commit-wait",
+        "head_sha": "0e28248630eff0dafc170a0b70d137f96df7843f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
