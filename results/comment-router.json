@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T09:37:29.177Z",
+  "updated_at": "2026-09-03T09:37:32.665Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136784:5521264745:2026-09-03T06:01:31Z:re_review",
-      "comment_id": "5521264745",
-      "comment_version_key": "5521264745:2026-09-03T06:01:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136784#issuecomment-5521264745",
-      "comment_created_at": "2026-09-03T06:01:31Z",
-      "comment_updated_at": "2026-09-03T06:01:31Z",
-      "comment_body_sha256": "d360d1857d4527ccb00212ce2fad104630caab66e9c74ceab037c91690ed0080",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136784,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the latest head adds the agreed 24-hour capped exponential retry path for openai oauth when wham supplies no reset timestamp, plus the corresponding regressions and corrected pr evidence",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T06:02:21.916Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/recover-auto-auth-profile-order",
-        "head_sha": "83445df3d8347e5ffd320cb6ba1d006a3f842c20",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-09-03T06:04:19Z:clawsweeper_auto_repair",
       "comment_id": "5304174384",
@@ -32437,6 +32390,39 @@
         "kind": "pull_request",
         "branch": "agent/fix-codex-model-catalog-publication",
         "head_sha": "5c3ab13dc4c346a8780c8ab3acd128b307babdcc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137120:5522454174:2026-09-03T09:36:08Z:clawsweeper_needs_human",
+      "comment_id": "5522454174",
+      "comment_version_key": "5522454174:2026-09-03T09:36:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137120#issuecomment-5522454174",
+      "comment_created_at": "2026-09-03T07:53:06Z",
+      "comment_updated_at": "2026-09-03T09:36:08Z",
+      "comment_body_sha256": "d8098d9d785d4bbe35dd8cfff92a1c8a38523f06dfb03d80605001d7daa1dfcb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137120,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the exact head needs final-request evidence that locked materialization failure may advance from the a...; Review finding: [medium] Constrain public catalog-driven profile advancement — src/plugins/provider-catalog.types.ts:30 (sha=4286fde276de5735d4a2f7293eb29fee39927551)",
+      "expected_head_sha": "4286fde276de5735d4a2f7293eb29fee39927551",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T09:37:32.665Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "workloop/fix-openai-catalog-auth-profile-c22cf759",
+        "head_sha": "4286fde276de5735d4a2f7293eb29fee39927551",
         "cluster_id": null,
         "job_path": null
       }
