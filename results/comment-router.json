@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:40:55.246Z",
+  "updated_at": "2026-09-03T08:41:01.947Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136533:5514801187:2026-09-03T04:59:18Z:clawsweeper_needs_human",
-      "comment_id": "5514801187",
-      "comment_version_key": "5514801187:2026-09-03T04:59:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136533#issuecomment-5514801187",
-      "comment_created_at": "2026-09-02T19:00:40Z",
-      "comment_updated_at": "2026-09-03T04:59:18Z",
-      "comment_body_sha256": "4d0f874cce3a956eccee8e0f705e650331261566219016571ef849e3ac4e6134",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136533,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The submitted live gateway logs demonstrate the b14df256 heartbeat byte-cap repair through the real scheduler, SQLite transcript store... (sha=167cbf3994bf42e606a31c6eee47f0dd4dad922b)",
-      "expected_head_sha": "167cbf3994bf42e606a31c6eee47f0dd4dad922b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T05:13:52.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-136452-heartbeat-byte-cap",
-        "head_sha": "167cbf3994bf42e606a31c6eee47f0dd4dad922b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136610:5516453899:2026-09-03T04:50:30Z:clawsweeper_needs_human",
       "comment_id": "5516453899",
@@ -32178,6 +32145,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133165:5523010894:2026-09-03T08:39:57Z:re_review",
+      "comment_id": "5523010894",
+      "comment_version_key": "5523010894:2026-09-03T08:39:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133165#issuecomment-5523010894",
+      "comment_created_at": "2026-09-03T08:39:57Z",
+      "comment_updated_at": "2026-09-03T08:39:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133165,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T08:40:59.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ask-user-prompt-every-harness",
+        "head_sha": "f3d79cbf7ed179d8fae54d4963e0fabe5ad7611a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
