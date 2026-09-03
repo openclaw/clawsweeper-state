@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:46:35.067Z",
+  "updated_at": "2026-09-03T04:47:13.532Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136811:5519088174:2026-09-03T01:49:54Z:clawsweeper_needs_human",
-      "comment_id": "5519088174",
-      "comment_version_key": "5519088174:2026-09-03T01:49:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136811#issuecomment-5519088174",
-      "comment_created_at": "2026-09-03T01:49:54Z",
-      "comment_updated_at": "2026-09-03T01:49:54Z",
-      "comment_body_sha256": "84e12b683c7b21874c528af41600ff50cea9e010e3950e30ac320f5b9f6a9702",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136811,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain explicit maintainer landing judgment for this protected-label change after its exact-head required checks complete. (sha=ced74e21550662052eb9c644db86d0766039e11b)",
-      "expected_head_sha": "ced74e21550662052eb9c644db86d0766039e11b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:50:52.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/hide-disabled-hook-dispatch",
-        "head_sha": "ced74e21550662052eb9c644db86d0766039e11b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121123:5232605681:2026-09-03T01:50:12Z:clawsweeper_needs_human",
       "comment_id": "5232605681",
@@ -32861,6 +32828,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136977:5520523000:2026-09-03T04:46:01Z:re_review",
+      "comment_id": "5520523000",
+      "comment_version_key": "5520523000:2026-09-03T04:46:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136977#issuecomment-5520523000",
+      "comment_created_at": "2026-09-03T04:46:01Z",
+      "comment_updated_at": "2026-09-03T04:46:01Z",
+      "comment_body_sha256": "2acb9860e6a2c92c05e026dcaa9a6e089189d264ea83edad95f0d6055e1be2fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136977,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the only additional behavior since your review is classifying auth_bootstrap_token_invalid as an authentication failure",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T04:47:10.948Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-direct-auto-login",
+        "head_sha": "627a9a95875a08c225b22bee6fc80a8b6758e269",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
