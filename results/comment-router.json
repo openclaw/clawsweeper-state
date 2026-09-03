@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:25:01.288Z",
+  "updated_at": "2026-09-03T04:25:14.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136792:5518873016:2026-09-03T01:22:27Z:re_review",
-      "comment_id": "5518873016",
-      "comment_version_key": "5518873016:2026-09-03T01:22:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136792#issuecomment-5518873016",
-      "comment_created_at": "2026-09-03T01:22:27Z",
-      "comment_updated_at": "2026-09-03T01:22:27Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136792,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T01:23:31.469Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-plugin-capability-fixture",
-        "head_sha": "0967e39377b89645fc678e3e6046d9f8b8fc1c10",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/oracle:445:5518841837:2026-09-03T01:18:25Z:re_review",
       "comment_id": "5518841837",
@@ -32784,6 +32737,39 @@
         "kind": "pull_request",
         "branch": "alix/fix-83416-image-operation-deadline",
         "head_sha": "dc24f10c25a489faafbe38cbd8ce260a70cc417b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132554:5461953776:2026-09-03T03:52:58Z:clawsweeper_needs_human",
+      "comment_id": "5461953776",
+      "comment_version_key": "5461953776:2026-09-03T03:52:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132554#issuecomment-5461953776",
+      "comment_created_at": "2026-08-29T11:01:19Z",
+      "comment_updated_at": "2026-09-03T03:52:58Z",
+      "comment_body_sha256": "617a527c8472a1736ad0fa506162d2d56e65f885236c8626a253e12b41c3cd3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132554,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9e4759910122e5e30ce1d9b7dbe183ee49c71a24)",
+      "expected_head_sha": "9e4759910122e5e30ce1d9b7dbe183ee49c71a24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T04:25:14.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/feat-fleet-logs-timestamps",
+        "head_sha": "9e4759910122e5e30ce1d9b7dbe183ee49c71a24",
         "cluster_id": null,
         "job_path": null
       }
