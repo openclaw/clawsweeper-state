@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T03:03:53.224Z",
+  "updated_at": "2026-09-03T03:04:14.965Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136677:5517359827:2026-09-02T23:11:07Z:clawsweeper_auto_repair",
-      "comment_id": "5517359827",
-      "comment_version_key": "5517359827:2026-09-02T23:11:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136677#issuecomment-5517359827",
-      "comment_created_at": "2026-09-02T22:32:29Z",
-      "comment_updated_at": "2026-09-02T23:11:07Z",
-      "comment_body_sha256": "1b6f9d641c622498091b17457542cfad5949c0e5e77cf5231aacf0b736b78126",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136677,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ac3e52aca50607482b30513c783e5bc571669840)",
-      "expected_head_sha": "ac3e52aca50607482b30513c783e5bc571669840",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T23:16:11.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/134354-node-login-shell-path",
-        "head_sha": "ac3e52aca50607482b30513c783e5bc571669840",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136678:5517381167:2026-09-02T23:05:23Z:clawsweeper_needs_human",
       "comment_id": "5517381167",
@@ -33166,6 +33133,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135996:5519628182:2026-09-03T03:03:11Z:re_review",
+      "comment_id": "5519628182",
+      "comment_version_key": "5519628182:2026-09-03T03:03:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135996#issuecomment-5519628182",
+      "comment_created_at": "2026-09-03T02:55:09Z",
+      "comment_updated_at": "2026-09-03T03:03:11Z",
+      "comment_body_sha256": "5d32428c8208c6897200bc509efe8b92bff804e5c0967d62835c81f36381c4e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135996,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T03:04:10.158Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/grid-and-model-differences-causing-confusion",
+        "head_sha": "b97edec3331f0a35fc2337b15ec750082ea3673f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
