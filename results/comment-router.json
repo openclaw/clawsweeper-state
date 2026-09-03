@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T22:19:43.827Z",
+  "updated_at": "2026-09-03T22:19:47.943Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/libopus-wasm:8:5443977557:2026-09-03T13:53:01Z:clawsweeper_auto_repair",
-      "comment_id": "5443977557",
-      "comment_version_key": "5443977557:2026-09-03T13:53:01Z",
-      "comment_url": "https://github.com/openclaw/libopus-wasm/pull/8#issuecomment-5443977557",
-      "comment_created_at": "2026-08-27T19:07:31Z",
-      "comment_updated_at": "2026-09-03T13:53:01Z",
-      "comment_body_sha256": "0ce8eb578ee69abdb473b2304be6726185ef45154195b7d3c062389d53034b5c",
-      "repo": "openclaw/libopus-wasm",
-      "issue_number": 8,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=68a2e8684bd8ce25c9905bf6002807256be49bdd)",
-      "expected_head_sha": "68a2e8684bd8ce25c9905bf6002807256be49bdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T14:05:13.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-repo-libopus-wasm-pnpm-trust-policy",
-        "head_sha": "68a2e8684bd8ce25c9905bf6002807256be49bdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:536:5494814976:2026-09-03T13:30:28Z:clawsweeper_needs_human",
       "comment_id": "5494814976",
@@ -33410,6 +33377,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137585:5532693989:2026-09-03T22:18:40Z:clawsweeper_needs_human",
+      "comment_id": "5532693989",
+      "comment_version_key": "5532693989:2026-09-03T22:18:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137585#issuecomment-5532693989",
+      "comment_created_at": "2026-09-03T21:59:53Z",
+      "comment_updated_at": "2026-09-03T22:18:40Z",
+      "comment_body_sha256": "5f987764828245163c29b3444a79d1b5f1b9d7176dcc14c1bd29aee6ef531b26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137585,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The policy adds 22 production lines that approve a release-specific critical-finding inventory; merge should retain the linked immutable scan as the authority for the three-count ACPX... (sha=1ebe91ef239cf4f584f0c71ab9dbdc36a5d4e30e)",
+      "expected_head_sha": "1ebe91ef239cf4f584f0c71ab9dbdc36a5d4e30e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T22:19:47.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/7-33-plugin-security-layout",
+        "head_sha": "1ebe91ef239cf4f584f0c71ab9dbdc36a5d4e30e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
