@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:24:03.774Z",
+  "updated_at": "2026-09-03T04:25:01.288Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127873:5380566881:2026-08-22T13:05:49Z:re_review",
-      "comment_id": "5380566881",
-      "comment_version_key": "5380566881:2026-08-22T13:05:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127873#issuecomment-5380566881",
-      "comment_created_at": "2026-08-22T13:05:49Z",
-      "comment_updated_at": "2026-08-22T13:05:49Z",
-      "comment_body_sha256": "ce1d337ba18cef0a3da7d8f0e19df90facc9383935e0260bbb4ac4a7ef1b7646",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127873,
-      "author": "masatohoshino",
-      "author_id": 246810661,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-run",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:22:47.166Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136792:5518873016:2026-09-03T01:22:27Z:re_review",
       "comment_id": "5518873016",
@@ -32781,6 +32754,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132559:5462219938:2026-09-03T04:17:22Z:clawsweeper_auto_repair",
+      "comment_id": "5462219938",
+      "comment_version_key": "5462219938:2026-09-03T04:17:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132559#issuecomment-5462219938",
+      "comment_created_at": "2026-08-29T11:43:51Z",
+      "comment_updated_at": "2026-09-03T04:17:22Z",
+      "comment_body_sha256": "0511876c97b82e37b93e03b786ef58dfc93abcac9a5c2816e8d5b71026f4801e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132559,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dc24f10c25a489faafbe38cbd8ce260a70cc417b)",
+      "expected_head_sha": "dc24f10c25a489faafbe38cbd8ce260a70cc417b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T04:25:01.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-83416-image-operation-deadline",
+        "head_sha": "dc24f10c25a489faafbe38cbd8ce260a70cc417b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
