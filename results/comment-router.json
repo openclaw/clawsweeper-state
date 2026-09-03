@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T03:49:14.749Z",
+  "updated_at": "2026-09-03T03:50:01.201Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135453:5499156359:2026-09-01T19:19:53Z:re_review",
-      "comment_id": "5499156359",
-      "comment_version_key": "5499156359:2026-09-01T19:19:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135453#issuecomment-5499156359",
-      "comment_created_at": "2026-09-01T19:19:53Z",
-      "comment_updated_at": "2026-09-01T19:19:53Z",
-      "comment_body_sha256": "6d79741b6cebf19be3cbd5e37e814719063207247084b81f646b2749629fb1ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135453,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — assert now uses the declaration-specific /does not declare/ wording (no longer matches gateway.nodes.commands.allow), and the closing reference is now refs #135378 with a scope note so the broader diagnostics stay open",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T23:53:10.389Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136395:5512266094:2026-09-02T23:50:04Z:clawsweeper_needs_human",
       "comment_id": "5512266094",
@@ -33288,6 +33261,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawrouter:122:5520048834:2026-09-03T03:49:17Z:clawsweeper_needs_human",
+      "comment_id": "5520048834",
+      "comment_version_key": "5520048834:2026-09-03T03:49:17Z",
+      "comment_url": "https://github.com/openclaw/clawrouter/pull/122#issuecomment-5520048834",
+      "comment_created_at": "2026-09-03T03:49:17Z",
+      "comment_updated_at": "2026-09-03T03:49:17Z",
+      "comment_body_sha256": "7cca568b4eb34473e39d161ef7445e55ce1c29fd1254a2797a3310803948dd4b",
+      "repo": "openclaw/clawrouter",
+      "issue_number": 122,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Stop maintenance when a grant is disabled (P1)** - A normal grant update with enabled: false removes the grant from pool selection but still preserves its credential owner and alarm. Because this path has no ena...; Review finding: [P1] Stop maintenance when a grant is disabled — worker/grant-credentials.ts:292-298 - [medium] Disabled grants continue provider I/O — worker/grant-credentials.ts... (sha=4a57b4493ff1874252dffb33059a578933944fd8)",
+      "expected_head_sha": "4a57b4493ff1874252dffb33059a578933944fd8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T03:50:01.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/anthropic-setup-token",
+        "head_sha": "4a57b4493ff1874252dffb33059a578933944fd8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
