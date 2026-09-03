@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T09:42:03.767Z",
+  "updated_at": "2026-09-03T09:42:08.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137048:5521331716:2026-09-03T06:08:45Z:re_review",
-      "comment_id": "5521331716",
-      "comment_version_key": "5521331716:2026-09-03T06:08:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137048#issuecomment-5521331716",
-      "comment_created_at": "2026-09-03T06:08:45Z",
-      "comment_updated_at": "2026-09-03T06:08:45Z",
-      "comment_body_sha256": "1955ed983a33ccabfadca3966c87c1501c013fe4b283e7607876e352591d04d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137048,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T06:09:51.020Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-node-device-auth-gateway-20260903",
-        "head_sha": "4a0ad328768f2c31af87a27486e20ce3abc52062",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-09-03T06:08:37Z:clawsweeper_auto_repair",
       "comment_id": "5304174384",
@@ -32441,6 +32394,39 @@
         "kind": "pull_request",
         "branch": "codex/android-reader-affordance",
         "head_sha": "acabdc56d5ea5e06ae8a303d3e294c90dbbd45fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137212:5523753129:2026-09-03T09:40:57Z:clawsweeper_needs_human",
+      "comment_id": "5523753129",
+      "comment_version_key": "5523753129:2026-09-03T09:40:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137212#issuecomment-5523753129",
+      "comment_created_at": "2026-09-03T09:40:57Z",
+      "comment_updated_at": "2026-09-03T09:40:57Z",
+      "comment_body_sha256": "2f1c58343fd70eda72520e3e8f2a8ebb14cb2ad9dc587614d8fef431514e9f28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137212,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Authorize the fast-uri graph change** - The PR adds a global fast-uri@4.1.4 override and a matching minimum-release-age exception, which the repository dependency guard explicitly block...; Review finding: [low] Authorize the fast-uri graph change — pnpm-workspace.yaml:14 (sha=1c83bdd93c431e8bd575c6cb2a771aa56d5d9bd6)",
+      "expected_head_sha": "1c83bdd93c431e8bd575c6cb2a771aa56d5d9bd6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T09:42:08.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pash/native-codex-effort-backport",
+        "head_sha": "1c83bdd93c431e8bd575c6cb2a771aa56d5d9bd6",
         "cluster_id": null,
         "job_path": null
       }
