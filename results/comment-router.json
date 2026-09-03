@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T16:25:52.330Z",
+  "updated_at": "2026-09-03T16:25:57.081Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116176:5125641295:2026-09-03T10:52:29Z:clawsweeper_auto_repair",
-      "comment_id": "5125641295",
-      "comment_version_key": "5125641295:2026-09-03T10:52:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116176#issuecomment-5125641295",
-      "comment_created_at": "2026-07-30T02:23:58Z",
-      "comment_updated_at": "2026-09-03T10:52:29Z",
-      "comment_body_sha256": "1d050f5b9e90aeaed694e5e094bae6e89bfd680fed13a4443160c35698cb72f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116176,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=32925baf5501fd658c5106e23f2b472ebaf61e19)",
-      "expected_head_sha": "32925baf5501fd658c5106e23f2b472ebaf61e19",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T11:02:41.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/signal-autostart-httpurl-port",
-        "head_sha": "32925baf5501fd658c5106e23f2b472ebaf61e19",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124123:5301527037:2026-09-03T10:47:10Z:clawsweeper_auto_repair",
       "comment_id": "5301527037",
@@ -31914,6 +31881,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137403:5528755597:2026-09-03T16:24:32Z:clawsweeper_needs_human",
+      "comment_id": "5528755597",
+      "comment_version_key": "5528755597:2026-09-03T16:24:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137403#issuecomment-5528755597",
+      "comment_created_at": "2026-09-03T16:24:32Z",
+      "comment_updated_at": "2026-09-03T16:24:32Z",
+      "comment_body_sha256": "a8c2518208a48b5517ed676815e11ee59a7eddaef20df15c34aeecdc45ef0576",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137403,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Use a non-ticketing board read for gallery previews (P1)** - The new loader calls board.get for every visible card, but the thumbnail reads only layout fields. That endpoint prepares widget frames, including fre...; Review finding: [P1] Use a non-ticketing board read for gallery previews — ui/src/pages/dashboards/dashboards-page.ts:185-189 - [P1] Invalidate previews from board revisions and r... (sha=10d1f8343cada61ddf9051b16e1b0823f6f63719)",
+      "expected_head_sha": "10d1f8343cada61ddf9051b16e1b0823f6f63719",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T16:25:57.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/dashboards-card-view",
+        "head_sha": "10d1f8343cada61ddf9051b16e1b0823f6f63719",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
