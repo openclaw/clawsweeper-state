@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T10:10:26.357Z",
+  "updated_at": "2026-09-03T10:10:31.624Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136412:5512713116:2026-09-03T06:35:23Z:clawsweeper_needs_human",
-      "comment_id": "5512713116",
-      "comment_version_key": "5512713116:2026-09-03T06:35:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136412#issuecomment-5512713116",
-      "comment_created_at": "2026-09-02T16:17:46Z",
-      "comment_updated_at": "2026-09-03T06:35:23Z",
-      "comment_body_sha256": "3e79d582ffac84b5d1a7d6a60fba67a12bf4eb529563346517ad48a4bc79f0e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136412,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that explicitly pass an empty account argument will now fail instead of mutating a default account; the documentation correctly identifies omission of --account as th... (sha=bc9f34c4631bce84eef95cfbb953042247b5f0bb)",
-      "expected_head_sha": "bc9f34c4631bce84eef95cfbb953042247b5f0bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T06:46:57.056Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channels-blank-account",
-        "head_sha": "bc9f34c4631bce84eef95cfbb953042247b5f0bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136533:5514801187:2026-09-03T06:38:37Z:clawsweeper_needs_human",
       "comment_id": "5514801187",
@@ -32242,6 +32209,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137224:5523909557:2026-09-03T10:09:28Z:clawsweeper_needs_human",
+      "comment_id": "5523909557",
+      "comment_version_key": "5523909557:2026-09-03T10:09:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137224#issuecomment-5523909557",
+      "comment_created_at": "2026-09-03T09:54:08Z",
+      "comment_updated_at": "2026-09-03T10:09:28Z",
+      "comment_body_sha256": "a1fefd34e57d6642a26a671c34194a3e3acef3ac8a7178cc3fed30efbde2fec5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the board widget feeding the shared progress-card renderer; no supplied after-fix board run, browser capture, r...; Review finding: [P1] Restore the removed README content — README.md:1 - [P2] Preserve the row's authoritative live-run flag — ui/src/lib/board/widgets/session-progress.ts:91 - [lo... (sha=c7aac7a7462f448d46a9e4fefd7ab3fd7424ddec)",
+      "expected_head_sha": "c7aac7a7462f448d46a9e4fefd7ab3fd7424ddec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T10:10:31.624Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-progress-card-stale-spinner",
+        "head_sha": "c7aac7a7462f448d46a9e4fefd7ab3fd7424ddec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
