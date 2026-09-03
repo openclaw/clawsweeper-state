@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T00:13:51.839Z",
+  "updated_at": "2026-09-03T00:15:18.179Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134931:5491689336:2026-09-02T20:43:23Z:clawsweeper_needs_human",
-      "comment_id": "5491689336",
-      "comment_version_key": "5491689336:2026-09-02T20:43:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134931#issuecomment-5491689336",
-      "comment_created_at": "2026-09-01T09:12:30Z",
-      "comment_updated_at": "2026-09-02T20:43:23Z",
-      "comment_body_sha256": "40b1f0ad47ea35d6c5b041040de22453072eb16398a5bfbff7722e319576331d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134931,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing eligible profiles that omit the new settings receive a default reserve target, which can create billable standby workers without an operator configuration change. (sha=56602c112577de8063d27102dcb9a02b7a8ab27f)",
-      "expected_head_sha": "56602c112577de8063d27102dcb9a02b7a8ab27f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T20:53:22.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/prepared-reserve-integration",
-        "head_sha": "56602c112577de8063d27102dcb9a02b7a8ab27f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135410:5499258422:2026-09-02T20:23:30Z:clawsweeper_needs_human",
       "comment_id": "5499258422",
@@ -33028,6 +32995,53 @@
       "status": "skipped",
       "processed_at": "2026-09-03T00:13:51.839Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:128482:5518326548:2026-09-03T00:14:12Z:re_review",
+      "comment_id": "5518326548",
+      "comment_version_key": "5518326548:2026-09-03T00:14:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128482#issuecomment-5518326548",
+      "comment_created_at": "2026-09-03T00:14:12Z",
+      "comment_updated_at": "2026-09-03T00:14:12Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128482,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T00:15:14.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/appearance-media-prompt-lifecycle",
+        "head_sha": "42c953b2596b0d55505d4366e992c03dd808b16c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
