@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T02:39:26.693Z",
+  "updated_at": "2026-09-03T02:39:50.786Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128633:5430588525:2026-08-26T20:15:22Z:re_review",
-      "comment_id": "5430588525",
-      "comment_version_key": "5430588525:2026-08-26T20:15:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128633#issuecomment-5430588525",
-      "comment_created_at": "2026-08-26T20:15:22Z",
-      "comment_updated_at": "2026-08-26T20:15:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128633,
-      "author": "hartmark",
-      "author_id": 12826053,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T22:57:27.786Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128633:5452508241:2026-08-28T12:28:38Z:re_review",
       "comment_id": "5452508241",
@@ -32982,6 +32955,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136835:5519282688:2026-09-03T02:38:37Z:clawsweeper_needs_human",
+      "comment_id": "5519282688",
+      "comment_version_key": "5519282688:2026-09-03T02:38:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136835#issuecomment-5519282688",
+      "comment_created_at": "2026-09-03T02:14:07Z",
+      "comment_updated_at": "2026-09-03T02:38:37Z",
+      "comment_body_sha256": "ad6d5c669f73be607769f62b140fdc3e833cf00d18ed1f72162a860bd16f8f6c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136835,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR adds 167 net lines of release tooling across several legacy-dialect branches; the linked after-fix run is named but its result and trace are not present in the reviewed snapsho... (sha=cee0d57d539aa8de0f78c83728614c7c20ade4db)",
+      "expected_head_sha": "cee0d57d539aa8de0f78c83728614c7c20ade4db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T02:39:50.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frozen-plugin-prerelease-compat",
+        "head_sha": "cee0d57d539aa8de0f78c83728614c7c20ade4db",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
