@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T07:45:26.888Z",
+  "updated_at": "2026-09-03T07:45:46.426Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5318295438:2026-08-17T17:43:22Z:re_review",
-      "comment_id": "5318295438",
-      "comment_version_key": "5318295438:2026-08-17T17:43:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5318295438",
-      "comment_created_at": "2026-08-17T17:43:22Z",
-      "comment_updated_at": "2026-08-17T17:43:22Z",
-      "comment_body_sha256": "26b7267671543a0538a84fef675a85967ac3528eb1718fa7820ad481595af25e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T04:04:07.216Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5318342998:2026-08-17T17:50:28Z:re_review",
       "comment_id": "5318342998",
@@ -32501,6 +32474,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137114:5521946455:2026-09-03T07:44:39Z:clawsweeper_needs_human",
+      "comment_id": "5521946455",
+      "comment_version_key": "5521946455:2026-09-03T07:44:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137114#issuecomment-5521946455",
+      "comment_created_at": "2026-09-03T07:08:02Z",
+      "comment_updated_at": "2026-09-03T07:44:39Z",
+      "comment_body_sha256": "595557571d6e94e1fae5a0ffb2ac27aa5fe2d68d3cdbefade58d2cf9b3fbc8e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137114,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing automation that relied on undocumented command-specific options before status or health will now receive Commander’s normal error instead of running the fast route; this is t... (sha=d9873a3318ba04a3d18d4a36e730853b4e6b3360)",
+      "expected_head_sha": "d9873a3318ba04a3d18d4a36e730853b4e6b3360",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T07:45:46.426Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cli-route-option-order-current-20260903",
+        "head_sha": "d9873a3318ba04a3d18d4a36e730853b4e6b3360",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
