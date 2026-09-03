@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T06:21:15.749Z",
+  "updated_at": "2026-09-03T06:21:53.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131511:5500199896:2026-09-01T20:45:43Z:re_review",
-      "comment_id": "5500199896",
-      "comment_version_key": "5500199896:2026-09-01T20:45:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5500199896",
-      "comment_created_at": "2026-09-01T20:45:43Z",
-      "comment_updated_at": "2026-09-01T20:45:43Z",
-      "comment_body_sha256": "a5b5664d3fd4ac0f6c8063fc6961e205472006e84785afc69e77c0521840b571",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131511,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T03:48:46.907Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131511:5502005764:2026-09-01T23:33:28Z:re_review",
       "comment_id": "5502005764",
@@ -32435,6 +32408,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136952:5520140800:2026-09-03T06:20:49Z:clawsweeper_needs_human",
+      "comment_id": "5520140800",
+      "comment_version_key": "5520140800:2026-09-03T06:20:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136952#issuecomment-5520140800",
+      "comment_created_at": "2026-09-03T04:01:17Z",
+      "comment_updated_at": "2026-09-03T06:20:49Z",
+      "comment_body_sha256": "a8f1d76057b10b4bc896aa13e54b6ff01396e978ca5e730024d1f9fadf2e0bfb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136952,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The explicit system actor applies to the generic trusted in-process bridge when no scoped human authority exists; it intentionally bypasses named-role filtering, so its exact-head aut... (sha=53a5dc41becc788b16c60138efde9107a64e128a)",
+      "expected_head_sha": "53a5dc41becc788b16c60138efde9107a64e128a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T06:21:53.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/session-tools-bulk-patch",
+        "head_sha": "53a5dc41becc788b16c60138efde9107a64e128a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
