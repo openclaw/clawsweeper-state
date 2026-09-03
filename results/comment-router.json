@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:56:24.601Z",
+  "updated_at": "2026-09-03T05:56:44.307Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131511:5519845497:2026-09-03T03:22:37Z:re_review",
-      "comment_id": "5519845497",
-      "comment_version_key": "5519845497:2026-09-03T03:22:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131511#issuecomment-5519845497",
-      "comment_created_at": "2026-09-03T03:22:37Z",
-      "comment_updated_at": "2026-09-03T03:22:37Z",
-      "comment_body_sha256": "13316cf9753861f0feb83eaa7bb7baecab50ca04df093b034283f1abde8825c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131511,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T03:23:38.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bundled-channel-icon-assets",
-        "head_sha": "f86a6b1775e7960f7e0d34af53461807a079ef75",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136835:5519847334:2026-09-03T03:22:50Z:re_review",
       "comment_id": "5519847334",
@@ -32378,6 +32331,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-telegram-rtt-dm",
         "head_sha": "a6604b81fb47a29526135c37c738c87a33de5559",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1768:5520998910:2026-09-03T05:55:36Z:clawsweeper_auto_repair",
+      "comment_id": "5520998910",
+      "comment_version_key": "5520998910:2026-09-03T05:55:36Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1768#issuecomment-5520998910",
+      "comment_created_at": "2026-09-03T05:31:41Z",
+      "comment_updated_at": "2026-09-03T05:55:36Z",
+      "comment_body_sha256": "43c6156b850fe1af5029ce92c0f42b5d4e4930dad2f519b4c57e47d1c78c3bea",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=66ddd65565eb677d5072d18edea8657c9c967a28)",
+      "expected_head_sha": "66ddd65565eb677d5072d18edea8657c9c967a28",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:56:44.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/workspace-renewal-diagnostic-c396-20260903",
+        "head_sha": "66ddd65565eb677d5072d18edea8657c9c967a28",
         "cluster_id": null,
         "job_path": null
       }
