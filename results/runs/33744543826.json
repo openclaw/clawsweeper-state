@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-125360",
+  "mode": "autonomous",
+  "run_id": "33744543826",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33744543826",
+  "head_sha": "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-125360.md",
+  "published_at": "2026-09-03T11:30:03.392Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/125360",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/125360",
+  "canonical_pr": null,
+  "summary": "#125360 remains the open canonical bug. Current main retains the reported 60-second polling path, but implementation is blocked: mandatory exact upstream Codex source is absent and this worker has a read-only checkout with unavailable dependencies.",
+  "actions": [
+    {
+      "target": "#125360",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125360",
+      "candidate_fix": null,
+      "reason": "Provide an exact matching ../codex checkout and a writable, dependency-ready OpenClaw checkout. Then add and demonstrate the pre-fix regression before applying the narrow owner-boundary repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-125360",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#125360",
+      "candidate_fix": null,
+      "reason": "Executor must satisfy the dependency-contract and regression gates before opening the required fix PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#125360",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
