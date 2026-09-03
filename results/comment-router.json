@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T02:45:36.416Z",
+  "updated_at": "2026-09-03T02:46:02.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119056:5242305904:2026-08-10T15:23:22Z:re_review",
-      "comment_id": "5242305904",
-      "comment_version_key": "5242305904:2026-08-10T15:23:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5242305904",
-      "comment_created_at": "2026-08-10T15:23:22Z",
-      "comment_updated_at": "2026-08-10T15:23:22Z",
-      "comment_body_sha256": "dbdaa0922239e184428055b19df9569bff3cd99b998dbb609f72d7f1cbadbad0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T23:03:44.793Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/peekaboo:682:5515252666:2026-09-02T23:03:53Z:clawsweeper_auto_repair",
       "comment_id": "5515252666",
@@ -33042,6 +33015,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T02:45:36.416Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135862:5503935281:2026-09-03T02:44:56Z:clawsweeper_needs_human",
+      "comment_id": "5503935281",
+      "comment_version_key": "5503935281:2026-09-03T02:44:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135862#issuecomment-5503935281",
+      "comment_created_at": "2026-09-02T03:35:47Z",
+      "comment_updated_at": "2026-09-03T02:44:56Z",
+      "comment_body_sha256": "b7adb72b52ac4c4d293515d0bfa2a6b1bedf22b53316cf08b239bec3ce042647",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: status.gather selects and labels the managed-service target, but the supplied final-boundary trace reaches a mo...; Review finding: [medium] Prove final credential routing outside the mock — src/cli/daemon-cli/probe-final-io.test.ts:14 (sha=5083b70993148e5e3e3b77085a91b4094dfb5fb2)",
+      "expected_head_sha": "5083b70993148e5e3e3b77085a91b4094dfb5fb2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T02:46:02.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-status-auth-none-135471",
+        "head_sha": "5083b70993148e5e3e3b77085a91b4094dfb5fb2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
