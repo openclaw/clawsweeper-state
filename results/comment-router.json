@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:51:02.845Z",
+  "updated_at": "2026-09-03T01:51:55.690Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136586:5516131032:2026-09-02T22:11:54Z:clawsweeper_needs_human",
-      "comment_id": "5516131032",
-      "comment_version_key": "5516131032:2026-09-02T22:11:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136586#issuecomment-5516131032",
-      "comment_created_at": "2026-09-02T20:43:37Z",
-      "comment_updated_at": "2026-09-02T22:11:54Z",
-      "comment_body_sha256": "4f561ddf05cbc39c6b5ebe4e8df45f2683a5eb1fbe13e33f048c96f6020d2155",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136586,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Production code is net +4 lines; the growth is justified by one shared resolver replacing the prior remove-only comparison chain, but future fallback mutations should continue using t... (sha=b9f201398b57c54b9a7f1f8030bff521f2f6d35a)",
-      "expected_head_sha": "b9f201398b57c54b9a7f1f8030bff521f2f6d35a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T22:14:28.031Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/models-fallback-provider-alias-keys",
-        "head_sha": "b9f201398b57c54b9a7f1f8030bff521f2f6d35a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136610:5516453899:2026-09-02T22:08:15Z:clawsweeper_auto_repair",
       "comment_id": "5516453899",
@@ -32992,6 +32959,53 @@
       "status": "skipped",
       "processed_at": "2026-09-03T01:51:02.845Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1619:5519097722:2026-09-03T01:51:02Z:re_review",
+      "comment_id": "5519097722",
+      "comment_version_key": "5519097722:2026-09-03T01:51:02Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1619#issuecomment-5519097722",
+      "comment_created_at": "2026-09-03T01:51:02Z",
+      "comment_updated_at": "2026-09-03T01:51:02Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1619,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T01:51:54.021Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pool-provider-bound-capacity",
+        "head_sha": "1dffc2f110337e527f7c5e28f6cef6f75e55ce2d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
