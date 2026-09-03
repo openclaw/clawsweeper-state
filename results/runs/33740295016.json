@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137216",
+  "mode": "autonomous",
+  "run_id": "33740295016",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33740295016",
+  "head_sha": "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137216.md",
+  "published_at": "2026-09-03T10:10:31.025Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137216",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137216",
+  "canonical_pr": null,
+  "summary": "#137216 is a real, narrow CLI lifecycle bug on main. A repair artifact is ready, but implementation and validation are blocked in this read-only, dependency-missing checkout; the required sibling ../codex source checkout is also absent.",
+  "actions": [
+    {
+      "target": "#120367",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#137216",
+      "candidate_fix": null,
+      "reason": "Already closed; no mutation is valid."
+    },
+    {
+      "target": "#137216",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137216",
+      "candidate_fix": null,
+      "reason": "Use a writable, dependency-ready checkout, inspect the required ../codex runtime/protocol source, then add the regression, prove it fails on the direct-exit base, and apply the narrow lifecycle change."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137216",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137216",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix-PR plan is appropriate once the execution environment is writable and dependency-ready."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
