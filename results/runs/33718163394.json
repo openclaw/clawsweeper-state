@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-124099",
+  "mode": "autonomous",
+  "run_id": "33718163394",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33718163394",
+  "head_sha": "71e1290f7903e122ff8e5d3a66c5f11b0900a2b5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-124099.md",
+  "published_at": "2026-09-03T06:09:52.888Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/124099",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/124099",
+  "canonical_pr": null,
+  "summary": "Current checkout source still routes SESSION_CANONICAL_KEY_MIGRATION_REQUIRED through unknown-error fallback: the session owner emits that code, while failover coordination recognition has no matching code check. Implementation is blocked because the required sibling ../codex source checkout is absent and this read-only workspace cannot create it, edit the regression/fix, create the required branch, or run write-producing validation.",
+  "actions": [
+    {
+      "target": "#124099",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124099",
+      "candidate_fix": null,
+      "reason": "Narrow bug-fix path is identified, but the mandatory Codex inspection and writable implementation environment are unavailable."
+    },
+    {
+      "target": "#124098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#124099",
+      "candidate_fix": null,
+      "reason": "Closed context reference only; no close, merge, or update action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-124099",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#124099",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor after the required Codex checkout is made available."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#124099",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
