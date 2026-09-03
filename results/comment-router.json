@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:53:45.246Z",
+  "updated_at": "2026-09-03T05:54:06.335Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136913:5519777267:2026-09-03T03:13:57Z:clawsweeper_auto_repair",
-      "comment_id": "5519777267",
-      "comment_version_key": "5519777267:2026-09-03T03:13:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136913#issuecomment-5519777267",
-      "comment_created_at": "2026-09-03T03:13:57Z",
-      "comment_updated_at": "2026-09-03T03:13:57Z",
-      "comment_body_sha256": "7814b64a4bcccdd7670eac3dd8d41ae64fde88f2f1f759b21f1a7c707d44fc0d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136913,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5e02bac18a071c41bf552388da4fc173eb27a4f6)",
-      "expected_head_sha": "5e02bac18a071c41bf552388da4fc173eb27a4f6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T03:15:08.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/v2026.9.1-corrective-notes-a41af",
-        "head_sha": "5e02bac18a071c41bf552388da4fc173eb27a4f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1752:5518186471:2026-09-03T03:14:17Z:clawsweeper_auto_repair",
       "comment_id": "5518186471",
@@ -32431,6 +32398,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136745:5521189739:2026-09-03T05:53:03Z:re_review",
+      "comment_id": "5521189739",
+      "comment_version_key": "5521189739:2026-09-03T05:53:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136745#issuecomment-5521189739",
+      "comment_created_at": "2026-09-03T05:53:03Z",
+      "comment_updated_at": "2026-09-03T05:53:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136745,
+      "author": "mushuiyu886",
+      "author_id": 266724580,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T05:54:02.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-135668-native-question-routing",
+        "head_sha": "056d06d8ba6bccc111e72833996d22899351256b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
