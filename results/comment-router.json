@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T22:18:12.163Z",
+  "updated_at": "2026-09-03T22:18:35.948Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:25:5466076511:2026-09-03T14:02:11Z:clawsweeper_auto_repair",
-      "comment_id": "5466076511",
-      "comment_version_key": "5466076511:2026-09-03T14:02:11Z",
-      "comment_url": "https://github.com/openclaw/uirouter/pull/25#issuecomment-5466076511",
-      "comment_created_at": "2026-08-30T01:47:32Z",
-      "comment_updated_at": "2026-09-03T14:02:11Z",
-      "comment_body_sha256": "32b2cb10106189743d4cde1d3d717a94b39dd5ed56ceeaf9e65141272a17a271",
-      "repo": "openclaw/uirouter",
-      "issue_number": 25,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b981a9c73817a4b9ab5b1a538bec9d95d4e2f934)",
-      "expected_head_sha": "b981a9c73817a4b9ab5b1a538bec9d95d4e2f934",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T14:03:37.772Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f003-gctime-overflow",
-        "head_sha": "b981a9c73817a4b9ab5b1a538bec9d95d4e2f934",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1376:5526847936:2026-09-03T13:53:38Z:re_review",
       "comment_id": "5526847936",
@@ -33396,6 +33363,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135868:5504133260:2026-09-03T22:17:28Z:clawsweeper_needs_human",
+      "comment_id": "5504133260",
+      "comment_version_key": "5504133260:2026-09-03T22:17:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135868#issuecomment-5504133260",
+      "comment_created_at": "2026-09-02T03:58:05Z",
+      "comment_updated_at": "2026-09-03T22:17:28Z",
+      "comment_body_sha256": "c2d8fed4546b25f1eea2bd151b49a7855c575857870e9f645cfd05bda32e7d85",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135868,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: source and synthetic IPC/SQLite/native-boundary tests cover lease fencing, but no supplied exact-head...; Review finding: [medium] Native recovery authority lacks final-effect proof — src/infra/triage-continuation.ts:459 (sha=c2ffe95a2fb3f2216fe1b258c8f611cdc2ba1c05)",
+      "expected_head_sha": "c2ffe95a2fb3f2216fe1b258c8f611cdc2ba1c05",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T22:18:35.948Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/automatic-triage-final-540836b5",
+        "head_sha": "c2ffe95a2fb3f2216fe1b258c8f611cdc2ba1c05",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
