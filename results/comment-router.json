@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T02:51:09.530Z",
+  "updated_at": "2026-09-03T02:52:30.480Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135840:5517710209:2026-09-02T23:12:20Z:re_review",
-      "comment_id": "5517710209",
-      "comment_version_key": "5517710209:2026-09-02T23:12:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135840#issuecomment-5517710209",
-      "comment_created_at": "2026-09-02T23:12:20Z",
-      "comment_updated_at": "2026-09-02T23:12:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135840,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-02T23:13:12.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-716-plugin-settings",
-        "head_sha": "108e9069df26247e03bc10d6ae77b51fd1d85dd2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131901:5459395832:2026-08-29T01:10:22Z:re_review",
       "comment_id": "5459395832",
@@ -33053,6 +33006,39 @@
         "kind": "pull_request",
         "branch": "codex/multi-gateway-control-ui",
         "head_sha": "a2c886e5acdf42ed311229ca8b7d99d0644c782b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136812:5519114966:2026-09-03T02:50:38Z:clawsweeper_needs_human",
+      "comment_id": "5519114966",
+      "comment_version_key": "5519114966:2026-09-03T02:50:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136812#issuecomment-5519114966",
+      "comment_created_at": "2026-09-03T01:53:00Z",
+      "comment_updated_at": "2026-09-03T02:50:38Z",
+      "comment_body_sha256": "710fb2e05c85d89b33f968ca1df704714b43d50e85f79fa185de5757ce5a8948",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136812,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current-head strict locale check is not yet inspectable: the prior head failed it, while the supplied current check snapshot is incomplete and GitHub Actions logs were unavailable... (sha=3b42ba84dc71b042f705c3619b9b59cca83ff559)",
+      "expected_head_sha": "3b42ba84dc71b042f705c3619b9b59cca83ff559",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T02:52:30.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "3b42ba84dc71b042f705c3619b9b59cca83ff559",
         "cluster_id": null,
         "job_path": null
       }
