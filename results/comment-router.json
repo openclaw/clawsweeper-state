@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:52:59.268Z",
+  "updated_at": "2026-09-03T04:53:04.098Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121735:5246485962:2026-09-03T01:51:49Z:clawsweeper_auto_repair",
-      "comment_id": "5246485962",
-      "comment_version_key": "5246485962:2026-09-03T01:51:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121735#issuecomment-5246485962",
-      "comment_created_at": "2026-08-10T21:56:01Z",
-      "comment_updated_at": "2026-09-03T01:51:49Z",
-      "comment_body_sha256": "5cd4370fa20f63077d43d070382d35ce6bd54625653663938f21c208499b57f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121735,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cc1aaaa1a1ca492293a81a97ccee2450fb637984)",
-      "expected_head_sha": "cc1aaaa1a1ca492293a81a97ccee2450fb637984",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:53:05.808Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-database-verifier-ipc",
-        "head_sha": "cc1aaaa1a1ca492293a81a97ccee2450fb637984",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135984:5519045713:2026-09-03T01:44:45Z:re_review",
       "comment_id": "5519045713",
@@ -32891,6 +32858,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137001:5520614070:2026-09-03T04:52:16Z:clawsweeper_needs_human",
+      "comment_id": "5520614070",
+      "comment_version_key": "5520614070:2026-09-03T04:52:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137001#issuecomment-5520614070",
+      "comment_created_at": "2026-09-03T04:52:16Z",
+      "comment_updated_at": "2026-09-03T04:52:16Z",
+      "comment_body_sha256": "18c261b4461b6cf6486fe532d8fc42305e7bc005babd57f124a296f1b9d0a9be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137001,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Gateway disk-space monitor, invoked by the serialized worker-placement maintenance sweep. The PR body descr... (sha=c772657f63ee8c8b628eeba3f9cfea60c669ace7)",
+      "expected_head_sha": "c772657f63ee8c8b628eeba3f9cfea60c669ace7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T04:53:04.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/disk-space-stale-build-warn-once",
+        "head_sha": "c772657f63ee8c8b628eeba3f9cfea60c669ace7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
