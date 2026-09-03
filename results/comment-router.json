@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T11:53:44.261Z",
+  "updated_at": "2026-09-03T11:54:25.198Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137021:5520897463:2026-09-03T07:52:19Z:clawsweeper_auto_repair",
-      "comment_id": "5520897463",
-      "comment_version_key": "5520897463:2026-09-03T07:52:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137021#issuecomment-5520897463",
-      "comment_created_at": "2026-09-03T05:20:17Z",
-      "comment_updated_at": "2026-09-03T07:52:19Z",
-      "comment_body_sha256": "c831dfdca2d45734db52231b4872266da2632f4db545305a292f917dc1978851",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137021,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad6c2596e7ded6aa967c8b3cf96bea8252f234b1)",
-      "expected_head_sha": "ad6c2596e7ded6aa967c8b3cf96bea8252f234b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:03:04.585Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cache-ttl-pruning-sticky",
-        "head_sha": "e812a46b988cff50e3bfd9f586818ace14fedd5c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137030:5520981045:2026-09-03T07:39:18Z:clawsweeper_auto_repair",
       "comment_id": "5520981045",
@@ -32474,6 +32441,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137267:5525311501:2026-09-03T11:53:24Z:re_review",
+      "comment_id": "5525311501",
+      "comment_version_key": "5525311501:2026-09-03T11:53:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137267#issuecomment-5525311501",
+      "comment_created_at": "2026-09-03T11:53:24Z",
+      "comment_updated_at": "2026-09-03T11:53:24Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137267,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T11:54:22.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/accepted-send-retry-custody-v2",
+        "head_sha": "388b341c3881694692dcf15aa3a825919a9107db",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
