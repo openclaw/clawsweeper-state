@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:22:23.278Z",
+  "updated_at": "2026-09-03T04:22:27.226Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136703:5517562590:2026-09-03T01:16:39Z:clawsweeper_needs_human",
-      "comment_id": "5517562590",
-      "comment_version_key": "5517562590:2026-09-03T01:16:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136703#issuecomment-5517562590",
-      "comment_created_at": "2026-09-02T22:55:19Z",
-      "comment_updated_at": "2026-09-03T01:16:39Z",
-      "comment_body_sha256": "16579fda4bbe4d4a6085c4c307058d5be0bbab7d45dd7be74ad89a1337fb4189",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136703,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the updated bridge signer contract** - OpenClaw passes its trusted team and bundle allowlists into PeekabooBridge; before merging the version update, verify the resolved v4.3.0 s...; Review finding: [medium] Verify the updated bridge signer contract — apps/macos/Package.swift:24 (sha=46b7b9d43de9ee4fefa3c3d7a5cccbdb41c93bd8)",
-      "expected_head_sha": "46b7b9d43de9ee4fefa3c3d7a5cccbdb41c93bd8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T01:17:34.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/peekaboo-4.3.0",
-        "head_sha": "46b7b9d43de9ee4fefa3c3d7a5cccbdb41c93bd8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136784:5518830692:2026-09-03T01:17:03Z:clawsweeper_needs_human",
       "comment_id": "5518830692",
@@ -32821,6 +32788,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117074:5520300589:2026-09-03T04:21:32Z:re_review",
+      "comment_id": "5520300589",
+      "comment_version_key": "5520300589:2026-09-03T04:21:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5520300589",
+      "comment_created_at": "2026-09-03T04:21:32Z",
+      "comment_updated_at": "2026-09-03T04:21:32Z",
+      "comment_body_sha256": "836ad8a53f36a240a832c1a9defb22fdaeeaeba2819a99e13717fa6b7eef7ac8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117074,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — please review the exact head `453211f7af4d7f2d1bdae3f62b4e0f247fbf2b65`. the only delta from the previously reviewed head is the two-line knip config registration above; no production code changed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T04:22:23.559Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sessions-tombstone-sweep",
+        "head_sha": "453211f7af4d7f2d1bdae3f62b4e0f247fbf2b65",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
