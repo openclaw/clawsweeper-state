@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T22:33:22.759Z",
+  "updated_at": "2026-09-03T22:33:41.327Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131584:5484028122:2026-08-31T20:20:09Z:re_review",
-      "comment_id": "5484028122",
-      "comment_version_key": "5484028122:2026-08-31T20:20:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131584#issuecomment-5484028122",
-      "comment_created_at": "2026-08-31T20:20:09Z",
-      "comment_updated_at": "2026-08-31T20:20:09Z",
-      "comment_body_sha256": "cb656dc0aef80e08802d5868c3f1fca840b89c5f0231d3235e20696f1109cabc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131584,
-      "author": "ashawwal",
-      "author_id": 62305104,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T14:09:38.780Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131584:5484962983:2026-08-31T21:35:45Z:re_review",
       "comment_id": "5484962983",
@@ -33466,6 +33439,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1379:5532995524:2026-09-03T22:32:46Z:clawsweeper_needs_human",
+      "comment_id": "5532995524",
+      "comment_version_key": "5532995524:2026-09-03T22:32:46Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1379#issuecomment-5532995524",
+      "comment_created_at": "2026-09-03T22:32:46Z",
+      "comment_updated_at": "2026-09-03T22:32:46Z",
+      "comment_body_sha256": "557fc62d589799ba58b7958f96f06ef5e7667983ad36db2dfb7740782fa5f4da",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the GitHub snapshot workflow, which resolves a slug and calls the Worker’s signed snapshot trigger; th... (sha=2802129356da343d90a3498d02015718bdac6417)",
+      "expected_head_sha": "2802129356da343d90a3498d02015718bdac6417",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T22:33:41.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/batch-focused-hydration",
+        "head_sha": "2802129356da343d90a3498d02015718bdac6417",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
