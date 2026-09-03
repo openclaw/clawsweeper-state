@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T13:05:49.960Z",
+  "updated_at": "2026-09-03T13:06:03.127Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125389:5319889404:2026-09-03T08:46:04Z:clawsweeper_auto_repair",
-      "comment_id": "5319889404",
-      "comment_version_key": "5319889404:2026-09-03T08:46:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125389#issuecomment-5319889404",
-      "comment_created_at": "2026-08-17T20:30:01Z",
-      "comment_updated_at": "2026-09-03T08:46:04Z",
-      "comment_body_sha256": "718e46ed48096870cf98ea0f5e478ee00843e1af81ea0e1bbe9b24bfa79e419a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=195d94a219541c545ea69e519237bd72e892f61f)",
-      "expected_head_sha": "195d94a219541c545ea69e519237bd72e892f61f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T08:47:15.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/recovery-macos-fixtures-20260817",
-        "head_sha": "195d94a219541c545ea69e519237bd72e892f61f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134125:5478770733:2026-09-03T08:46:18Z:clawsweeper_auto_repair",
       "comment_id": "5478770733",
@@ -32771,6 +32738,53 @@
       "status": "skipped",
       "processed_at": "2026-09-03T13:05:49.960Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122388:5526229510:2026-09-03T13:05:01Z:re_review",
+      "comment_id": "5526229510",
+      "comment_version_key": "5526229510:2026-09-03T13:05:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122388#issuecomment-5526229510",
+      "comment_created_at": "2026-09-03T13:05:01Z",
+      "comment_updated_at": "2026-09-03T13:05:01Z",
+      "comment_body_sha256": "5f12450c1fd35148293c0b9b78cbc90b020d7e7ee2fa239e53cabb681a463f92",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122388,
+      "author": "markr9805",
+      "author_id": 23192809,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T13:06:00.535Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/restart-recovery-stale-claim-tolerance",
+        "head_sha": "ca8e259585d82d63c20e086839aab3a048f1b2fe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
