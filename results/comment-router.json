@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T05:56:44.307Z",
+  "updated_at": "2026-09-03T05:56:57.801Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136835:5519847334:2026-09-03T03:22:50Z:re_review",
-      "comment_id": "5519847334",
-      "comment_version_key": "5519847334:2026-09-03T03:22:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136835#issuecomment-5519847334",
-      "comment_created_at": "2026-09-03T03:22:50Z",
-      "comment_updated_at": "2026-09-03T03:22:50Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136835,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T03:23:43.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-plugin-prerelease-compat",
-        "head_sha": "36b33c87ae7377853983833839643de05c2d7759",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134071:5477632077:2026-09-03T03:22:50Z:clawsweeper_needs_human",
       "comment_id": "5477632077",
@@ -32364,6 +32317,39 @@
         "kind": "pull_request",
         "branch": "codex/workspace-renewal-diagnostic-c396-20260903",
         "head_sha": "66ddd65565eb677d5072d18edea8657c9c967a28",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133057:5466744650:2026-09-03T05:56:09Z:clawsweeper_needs_human",
+      "comment_id": "5466744650",
+      "comment_version_key": "5466744650:2026-09-03T05:56:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133057#issuecomment-5466744650",
+      "comment_created_at": "2026-08-30T04:41:06Z",
+      "comment_updated_at": "2026-09-03T05:56:09Z",
+      "comment_body_sha256": "7f563a15ec7ee386b0f4c2a6f810442d2356ea65040cb8e7a9d9bdd41f85c00f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR changes the recovery path that schedules requester-visible completion work; required exact-head CI currently reports failures, so it should not merge until those failures are r... (sha=a6792f21670c4cda74024524a26cecda45dd2879)",
+      "expected_head_sha": "a6792f21670c4cda74024524a26cecda45dd2879",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T05:56:57.801Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/119869-bounded-restored-settle-wakes",
+        "head_sha": "a6792f21670c4cda74024524a26cecda45dd2879",
         "cluster_id": null,
         "job_path": null
       }
