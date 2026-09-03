@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T09:43:14.718Z",
+  "updated_at": "2026-09-03T09:43:54.908Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137065:5521355819:2026-09-03T06:11:21Z:clawsweeper_auto_repair",
-      "comment_id": "5521355819",
-      "comment_version_key": "5521355819:2026-09-03T06:11:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137065#issuecomment-5521355819",
-      "comment_created_at": "2026-09-03T06:11:21Z",
-      "comment_updated_at": "2026-09-03T06:11:21Z",
-      "comment_body_sha256": "58c6c68933b403a74c3c1386bf08f6f3457c840eb15e312367743aaa2959986e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137065,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0c6810d17df95451cc69bbcb7fd92b0f8c8c45d7)",
-      "expected_head_sha": "0c6810d17df95451cc69bbcb7fd92b0f8c8c45d7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T06:12:16.722Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/linux-device-auth-credential-required-20260903",
-        "head_sha": "0c6810d17df95451cc69bbcb7fd92b0f8c8c45d7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137045:5521209480:2026-09-03T06:11:28Z:clawsweeper_needs_human",
       "comment_id": "5521209480",
@@ -32424,6 +32391,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T09:43:14.718Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132397:5460633261:2026-09-03T09:42:28Z:clawsweeper_needs_human",
+      "comment_id": "5460633261",
+      "comment_version_key": "5460633261:2026-09-03T09:42:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132397#issuecomment-5460633261",
+      "comment_created_at": "2026-08-29T05:43:33Z",
+      "comment_updated_at": "2026-09-03T09:42:28Z",
+      "comment_body_sha256": "4e50a38459dcf3ad32bb00a399588b8245f1e425573f7177c8d9b526fe5d456c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the allowlist command handler. The body names an exact-head Telegram Test Server scenario, but the ava... (sha=d59a179ea76154e6839e6d18713c0d058b810c22)",
+      "expected_head_sha": "d59a179ea76154e6839e6d18713c0d058b810c22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T09:43:54.908Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/allowlist-list-store-read-error",
+        "head_sha": "63f5029672c3a7451364f7c54af73212dd09343c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
