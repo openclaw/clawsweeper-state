@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T04:52:16.900Z",
+  "updated_at": "2026-09-03T04:52:39.773Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136801:5519107027:2026-09-03T01:52:01Z:re_review",
-      "comment_id": "5519107027",
-      "comment_version_key": "5519107027:2026-09-03T01:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136801#issuecomment-5519107027",
-      "comment_created_at": "2026-09-03T01:52:01Z",
-      "comment_updated_at": "2026-09-03T01:52:01Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136801,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T01:52:52.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-upgrade-baseline",
-        "head_sha": "3e14b1bc3badcae6668b6f73a6ff072fad45871f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121932:5250541738:2026-09-03T01:51:52Z:clawsweeper_needs_human",
       "comment_id": "5250541738",
@@ -32891,6 +32844,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136998:5520605493:2026-09-03T04:51:36Z:clawsweeper_auto_repair",
+      "comment_id": "5520605493",
+      "comment_version_key": "5520605493:2026-09-03T04:51:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136998#issuecomment-5520605493",
+      "comment_created_at": "2026-09-03T04:51:36Z",
+      "comment_updated_at": "2026-09-03T04:51:36Z",
+      "comment_body_sha256": "feb3eb1835ac0e83dceba9de0c9dbd0b49766b13842181fcdb79cea4f7409b5d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136998,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3f97d262de5f9ebfbcda60cd5179a86314d2f378)",
+      "expected_head_sha": "3f97d262de5f9ebfbcda60cd5179a86314d2f378",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T04:52:39.773Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/laughing-bassi-09961b",
+        "head_sha": "3f97d262de5f9ebfbcda60cd5179a86314d2f378",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
