@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T20:24:03.515Z",
+  "updated_at": "2026-09-03T20:24:23.577Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137312:5526433482:2026-09-03T13:19:27Z:clawsweeper_auto_repair",
-      "comment_id": "5526433482",
-      "comment_version_key": "5526433482:2026-09-03T13:19:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137312#issuecomment-5526433482",
-      "comment_created_at": "2026-09-03T13:19:27Z",
-      "comment_updated_at": "2026-09-03T13:19:27Z",
-      "comment_body_sha256": "f5c76816844824e94f69c36a68aa1090213aecc61ea935035144e7a54ed4c0e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137312,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fed82932aa561eecfaf63df3d2acdf262ca7c6ab)",
-      "expected_head_sha": "fed82932aa561eecfaf63df3d2acdf262ca7c6ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T13:20:34.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/updater-helper-owner-3e77ca",
-        "head_sha": "fed82932aa561eecfaf63df3d2acdf262ca7c6ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126986:5365198371:2026-09-03T13:19:20Z:clawsweeper_auto_repair",
       "comment_id": "5365198371",
@@ -32460,6 +32427,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137537:5531650972:2026-09-03T20:23:12Z:re_review",
+      "comment_id": "5531650972",
+      "comment_version_key": "5531650972:2026-09-03T20:23:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137537#issuecomment-5531650972",
+      "comment_created_at": "2026-09-03T20:23:12Z",
+      "comment_updated_at": "2026-09-03T20:23:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137537,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-03T20:24:15.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026-7-33-vulnerability-gate",
+        "head_sha": "f47630f871870e321e3f827d53c7adcb261c460b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
