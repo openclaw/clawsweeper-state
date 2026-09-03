@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:20:43.454Z",
+  "updated_at": "2026-09-03T01:22:10.597Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135147:5493252038:2026-09-02T21:19:40Z:clawsweeper_needs_human",
-      "comment_id": "5493252038",
-      "comment_version_key": "5493252038:2026-09-02T21:19:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135147#issuecomment-5493252038",
-      "comment_created_at": "2026-09-01T11:30:32Z",
-      "comment_updated_at": "2026-09-02T21:19:40Z",
-      "comment_body_sha256": "3d9a4dcd13d47722c4228ae0aaf5d38585bf4398d827b837a9064f0fc5d55172",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135147,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is probeGateway, reached by security audit --deep through the audit’s deep-probe call; the PR body reports only a...; Review finding: [P1] Restore the read-only probe scope — src/gateway/probe.ts:455 - [P1] Keep denied detail RPCs as failed audit probes — src/gateway/probe.ts:574-587 - [medium] A... (sha=bfd634f4bfe1ab918bc91cfefa9ec52869d9f9b1)",
-      "expected_head_sha": "bfd634f4bfe1ab918bc91cfefa9ec52869d9f9b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T21:58:28.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/security-audit-deep-probe-read-128217",
-        "head_sha": "bfd634f4bfe1ab918bc91cfefa9ec52869d9f9b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135744:5502796797:2026-09-02T21:47:41Z:clawsweeper_needs_human",
       "comment_id": "5502796797",
@@ -33048,6 +33015,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136146:5506596085:2026-09-03T01:19:54Z:clawsweeper_needs_human",
+      "comment_id": "5506596085",
+      "comment_version_key": "5506596085:2026-09-03T01:19:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136146#issuecomment-5506596085",
+      "comment_created_at": "2026-09-02T08:16:06Z",
+      "comment_updated_at": "2026-09-03T01:19:54Z",
+      "comment_body_sha256": "b8aaaf6e9235c0ed3218768e8c477d4942549e31c83f66e549b0108b58b43b3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136146,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: source inspection shows the close fence and connection-work drain, but the PR expressly leaves its pro...; Review finding: [medium] Verify post-close frames cannot reach native effects — src/gateway/server/ws-connection/worker-connection.ts:384 (sha=b496fb9134e69046a9b320e29dfc2354dfea9cab)",
+      "expected_head_sha": "b496fb9134e69046a9b320e29dfc2354dfea9cab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T01:22:10.597Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/gateway-lifetime-compact",
+        "head_sha": "b496fb9134e69046a9b320e29dfc2354dfea9cab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
