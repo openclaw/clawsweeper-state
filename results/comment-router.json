@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-03T06:30:49.867Z",
+  "updated_at": "2026-09-03T06:31:01.438Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136871:5519813471:2026-09-03T03:18:35Z:re_review",
-      "comment_id": "5519813471",
-      "comment_version_key": "5519813471:2026-09-03T03:18:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136871#issuecomment-5519813471",
-      "comment_created_at": "2026-09-03T03:18:35Z",
-      "comment_updated_at": "2026-09-03T03:18:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136871,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T03:54:26.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/kimi-private-helper-facade",
-        "head_sha": "270bef26860591b891e43ff7a45a7e2b2175b1d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136872:5519814664:2026-09-03T03:18:42Z:re_review",
       "comment_id": "5519814664",
@@ -32473,6 +32426,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T06:30:49.867Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136745:5518240899:2026-09-03T06:29:56Z:clawsweeper_needs_human",
+      "comment_id": "5518240899",
+      "comment_version_key": "5518240899:2026-09-03T06:29:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136745#issuecomment-5518240899",
+      "comment_created_at": "2026-09-03T00:04:14Z",
+      "comment_updated_at": "2026-09-03T06:29:56Z",
+      "comment_body_sha256": "ba63656a3601a57bb646b2b0c6460e3d59deceacc6633f890d4a7128a27e5166",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136745,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix adds 42 production lines across the CLI candidate, question bridge, and reply-run owner; the added pre-queue claim and durable-delivery boundary are justified because no... (sha=78f45fdff2f1f67d86bb0d8f59f1accf22bafb76)",
+      "expected_head_sha": "78f45fdff2f1f67d86bb0d8f59f1accf22bafb76",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T06:31:01.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-135668-native-question-routing",
+        "head_sha": "78f45fdff2f1f67d86bb0d8f59f1accf22bafb76",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
