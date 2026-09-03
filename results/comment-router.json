@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-03T08:20:33.756Z",
+  "updated_at": "2026-09-03T08:20:48.596Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136761:5518497582:2026-09-03T04:46:52Z:clawsweeper_auto_repair",
-      "comment_id": "5518497582",
-      "comment_version_key": "5518497582:2026-09-03T04:46:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5518497582",
-      "comment_created_at": "2026-09-03T00:35:04Z",
-      "comment_updated_at": "2026-09-03T04:46:52Z",
-      "comment_body_sha256": "bc9d4e015d5896f05347b0270c9c321039e0d3a3fe660d381c003da4b7e32795",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136761,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b4e4481cfe5da9ccae19e04d5ffc85e80e7eb998)",
-      "expected_head_sha": "b4e4481cfe5da9ccae19e04d5ffc85e80e7eb998",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T04:48:28.901Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-frozen-target-scenarios",
-        "head_sha": "b4e4481cfe5da9ccae19e04d5ffc85e80e7eb998",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132559:5462219938:2026-09-03T04:48:08Z:clawsweeper_auto_repair",
       "comment_id": "5462219938",
@@ -32648,6 +32615,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T08:20:33.756Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136306:5509970900:2026-09-03T08:19:35Z:clawsweeper_needs_human",
+      "comment_id": "5509970900",
+      "comment_version_key": "5509970900:2026-09-03T08:19:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136306#issuecomment-5509970900",
+      "comment_created_at": "2026-09-02T13:03:45Z",
+      "comment_updated_at": "2026-09-03T08:19:35Z",
+      "comment_body_sha256": "b99755c24dcbda65e9702af9cd2c35d0c951d5fac23e20a7a09c3557eb4e6969",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136306,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed regular expression is shared by several plain-text outbound paths; the two failed compact checks and queued CI gate must be resolved or shown unrelated on the exact head b... (sha=b818edf84ba5f286dc68127996139470189b3e40)",
+      "expected_head_sha": "b818edf84ba5f286dc68127996139470189b3e40",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T08:20:48.596Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/sanitize-unspaced-angle-link-label-4307",
+        "head_sha": "b818edf84ba5f286dc68127996139470189b3e40",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
