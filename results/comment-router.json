@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-03T01:43:58.808Z",
+  "updated_at": "2026-09-03T01:44:03.431Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5509160037:2026-09-02T11:58:35Z:re_review",
-      "comment_id": "5509160037",
-      "comment_version_key": "5509160037:2026-09-02T11:58:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5509160037",
-      "comment_created_at": "2026-09-02T11:58:35Z",
-      "comment_updated_at": "2026-09-02T11:58:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-02T22:08:01.845Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5509244719:2026-09-02T12:05:46Z:re_review",
       "comment_id": "5509244719",
@@ -33048,6 +33021,39 @@
       "status": "skipped",
       "processed_at": "2026-09-03T01:43:58.808Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136426:5512922401:2026-09-03T01:42:43Z:clawsweeper_needs_human",
+      "comment_id": "5512922401",
+      "comment_version_key": "5512922401:2026-09-03T01:42:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136426#issuecomment-5512922401",
+      "comment_created_at": "2026-09-02T16:33:46Z",
+      "comment_updated_at": "2026-09-03T01:42:43Z",
+      "comment_body_sha256": "cf5babf3aaee66b6d7d37c961912748e4795e6e7f9f093b5f32d2a051fa2e079",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136426,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This session-state deletion change is validated against the PR base, but main later changed the reaper test and the exact-head ci-gate is failing; merge safety requires an up-to-date... (sha=b657f3a19ff51c69db34285c2798b3e9783df760)",
+      "expected_head_sha": "b657f3a19ff51c69db34285c2798b3e9783df760",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T01:44:03.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-reaper-busy-skip-136339",
+        "head_sha": "b657f3a19ff51c69db34285c2798b3e9783df760",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
