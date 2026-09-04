@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:22:59.963Z",
+  "updated_at": "2026-09-04T01:24:41.524Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120129:5527640471:2026-09-03T14:56:44Z:re_review",
-      "comment_id": "5527640471",
-      "comment_version_key": "5527640471:2026-09-03T14:56:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120129#issuecomment-5527640471",
-      "comment_created_at": "2026-09-03T14:56:44Z",
-      "comment_updated_at": "2026-09-03T14:56:44Z",
-      "comment_body_sha256": "74acad899859d21ad593d35201b007d19be67a339a27952ebd03a75dc4687bd0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120129,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T14:58:01.849Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/docs-windows-workspace-paths",
-        "head_sha": "56d800a8007e1735e1eb4308cf2194d1120e3afa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137301:5525919424:2026-09-03T14:56:48Z:clawsweeper_auto_repair",
       "comment_id": "5525919424",
@@ -33935,6 +33888,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137739:5534331862:2026-09-04T01:23:44Z:clawsweeper_needs_human",
+      "comment_id": "5534331862",
+      "comment_version_key": "5534331862:2026-09-04T01:23:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137739#issuecomment-5534331862",
+      "comment_created_at": "2026-09-04T01:23:44Z",
+      "comment_updated_at": "2026-09-04T01:23:44Z",
+      "comment_body_sha256": "ebdc636ce10b2ae6b7bd02be2d1c91c31733452bf9625c61e7c1fb93d53edde4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137739,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repair adds 16 net production lines, and repeated wrapper replacement without a later policy update can retain small dead WeakRef cells until the next update or catalog disposal;... (sha=dcc5048705d2b2f7b3d081431168e35e85427f9e)",
+      "expected_head_sha": "dcc5048705d2b2f7b3d081431168e35e85427f9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:24:41.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf7-description-target-lifetime",
+        "head_sha": "dcc5048705d2b2f7b3d081431168e35e85427f9e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
