@@ -2,53 +2,6 @@
   "updated_at": "2026-09-04T02:09:26.856Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:137259:5531454053:2026-09-03T20:06:52Z:re_review",
-      "comment_id": "5531454053",
-      "comment_version_key": "5531454053:2026-09-03T20:06:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137259#issuecomment-5531454053",
-      "comment_created_at": "2026-09-03T20:06:52Z",
-      "comment_updated_at": "2026-09-03T20:06:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137259,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T20:08:02.073Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/persist-native-approval-cards-after-finalization",
-        "head_sha": "338e251ba2afa391b802c4b97392aff1c251da88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:137518:5531465462:2026-09-03T20:07:46Z:re_review",
       "comment_id": "5531465462",
       "comment_version_key": "5531465462:2026-09-03T20:07:46Z",
@@ -33568,6 +33521,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-parent-child-activity-indicator",
         "head_sha": "8ced8b8bd1032b425cf53e357f7e2353012d8ba2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/hermit:35:5511742255:2026-09-03T19:06:08Z:clawsweeper_needs_human",
+      "comment_id": "5511742255",
+      "comment_version_key": "5511742255:2026-09-03T19:06:08Z",
+      "comment_url": "https://github.com/openclaw/hermit/pull/35#issuecomment-5511742255",
+      "comment_created_at": "2026-09-02T15:07:57Z",
+      "comment_updated_at": "2026-09-03T19:06:08Z",
+      "comment_body_sha256": "f1d4c87680f44a9987f11a2d0c4cac11e2addc9dc4219b1c449a427683ffd652",
+      "repo": "openclaw/hermit",
+      "issue_number": 35,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the form-review modal decision handler, but the supplied after-fix trace replaces its configured action runner,... (sha=66bbb26c8987ebcef1e09e51849b19608f6b69cb)",
+      "expected_head_sha": "66bbb26c8987ebcef1e09e51849b19608f6b69cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T02:09:26.805Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/form-review-action-failure",
+        "head_sha": "66bbb26c8987ebcef1e09e51849b19608f6b69cb",
         "cluster_id": null,
         "job_path": null
       }
