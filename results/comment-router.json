@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T10:43:36.019Z",
+  "updated_at": "2026-09-04T10:44:01.161Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137974:5537023135:2026-09-04T07:09:56Z:re_review",
-      "comment_id": "5537023135",
-      "comment_version_key": "5537023135:2026-09-04T07:09:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137974#issuecomment-5537023135",
-      "comment_created_at": "2026-09-04T07:09:56Z",
-      "comment_updated_at": "2026-09-04T07:09:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137974,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T07:10:52.034Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/policy-digest-frame-context-137959",
-        "head_sha": "dfe862f88ea0ba3c2a6933a26108b59623d4d433",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137977:5537033051:2026-09-04T07:10:58Z:re_review",
       "comment_id": "5537033051",
@@ -33102,6 +33055,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138103:5538258601:2026-09-04T10:39:48Z:clawsweeper_needs_human",
+      "comment_id": "5538258601",
+      "comment_version_key": "5538258601:2026-09-04T10:39:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138103#issuecomment-5538258601",
+      "comment_created_at": "2026-09-04T09:10:18Z",
+      "comment_updated_at": "2026-09-04T10:39:48Z",
+      "comment_body_sha256": "2acf02fcc24596b17fd83bc841a7d4e039726eb25b2a7892956efc9c45efca87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The scoped agent-performance policy calls for before/after elapsed time and RSS evidence; the PR reports deterministic operation-count reductions but explicitly does not provide those... (sha=f4e93672ff91890974625e26a92e11d64c8e19f9)",
+      "expected_head_sha": "f4e93672ff91890974625e26a92e11d64c8e19f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T10:44:01.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf8-result-snapshot",
+        "head_sha": "f4e93672ff91890974625e26a92e11d64c8e19f9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
