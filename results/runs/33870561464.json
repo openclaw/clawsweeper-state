@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138224",
+  "mode": "autonomous",
+  "run_id": "33870561464",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33870561464",
+  "head_sha": "1ac35d2489a243b7a49ed30d887e5a384f4f9af3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138224.md",
+  "published_at": "2026-09-04T12:09:46.657Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138224",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138224",
+  "canonical_pr": null,
+  "summary": "Current main still invokes the task-state probe with PowerShell -EncodedCommand, while tests do not guard the argv/environment shape. No mutation occurred: this checkout is read-only, native Windows Defender proof is unavailable, focused tests cannot initialize Corepack, and the required sibling ../codex source checkout is absent.",
+  "actions": [
+    {
+      "target": "#138224",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138224",
+      "candidate_fix": null,
+      "reason": "Implementation needs a writable checkout, sibling Codex source, runnable dependencies, and a native Windows Node-service Defender before/after trace before a PR may open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138224",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138224",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan exists, but this worker cannot produce the required branch delta or native proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#138224",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
