@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T05:46:42.439Z",
+  "updated_at": "2026-09-04T05:47:54.965Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137657:5533688351:2026-09-04T02:59:50Z:clawsweeper_needs_human",
-      "comment_id": "5533688351",
-      "comment_version_key": "5533688351:2026-09-04T02:59:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137657#issuecomment-5533688351",
-      "comment_created_at": "2026-09-03T23:59:01Z",
-      "comment_updated_at": "2026-09-04T02:59:50Z",
-      "comment_body_sha256": "fc319002dbce189d9646576705ccefeb552cc6c1d024ed518db0e59614cf3c78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137657,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The workflow has a net +3 production-line delta; the explicit trusted tsconfig and script paths are the minimal boundary signals, while a shared shell abstraction would add more workf... (sha=f0ed171290a823b042dff7bfcd49fba96cb55e51)",
-      "expected_head_sha": "f0ed171290a823b042dff7bfcd49fba96cb55e51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T03:00:52.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/trusted-prepublish-tsconfig",
-        "head_sha": "f0ed171290a823b042dff7bfcd49fba96cb55e51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137667:5533798472:2026-09-04T03:00:40Z:clawsweeper_needs_human",
       "comment_id": "5533798472",
@@ -31928,6 +31895,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137944:5536284357:2026-09-04T05:47:00Z:re_review",
+      "comment_id": "5536284357",
+      "comment_version_key": "5536284357:2026-09-04T05:47:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137944#issuecomment-5536284357",
+      "comment_created_at": "2026-09-04T05:47:00Z",
+      "comment_updated_at": "2026-09-04T05:47:00Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137944,
+      "author": "ooiuuii",
+      "author_id": 169449607,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T05:47:52.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-stale-agent-db-leases",
+        "head_sha": "b1e7b040a21b5e5f9c1c5112271b19add675b6ba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
