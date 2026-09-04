@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T06:53:04.932Z",
+  "updated_at": "2026-09-04T06:53:20.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1398:5535177915:2026-09-04T03:19:53Z:re_review",
-      "comment_id": "5535177915",
-      "comment_version_key": "5535177915:2026-09-04T03:19:53Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1398#issuecomment-5535177915",
-      "comment_created_at": "2026-09-04T03:19:53Z",
-      "comment_updated_at": "2026-09-04T03:19:53Z",
-      "comment_body_sha256": "61d4b9b9caa05e5e513b0aa22e7163c67aeb2694d1353a728ae4ded0cbaf9332",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1398,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T03:25:01.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/deslop-execute-fix-artifact",
-        "head_sha": "917a7bf7cae434882944cb3ae0559544ddbc645b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1398:5534861430:2026-09-04T03:24:08Z:clawsweeper_needs_human",
       "comment_id": "5534861430",
@@ -32765,6 +32718,39 @@
         "kind": "pull_request",
         "branch": "codex/memory-deslop-harder",
         "head_sha": "178027f228372521ed5c4f8d9a0a242ddc14f5c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137989:5536859741:2026-09-04T06:52:20Z:clawsweeper_needs_human",
+      "comment_id": "5536859741",
+      "comment_version_key": "5536859741:2026-09-04T06:52:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137989#issuecomment-5536859741",
+      "comment_created_at": "2026-09-04T06:52:20Z",
+      "comment_updated_at": "2026-09-04T06:52:20Z",
+      "comment_body_sha256": "f6fde5b74d7ddefd4292c94600dda50381277946472d42390b9d6d54d5563d99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137989,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - Restoring fail-closed exit handling means an npm advisory outage can block otherwise healthy PR CI after the four-minute retry budget, reversing current main’s documented warning-and-... (sha=22074b1a37e5d75b2633337243cda2f3cef264be)",
+      "expected_head_sha": "22074b1a37e5d75b2633337243cda2f3cef264be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T06:53:20.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pnpm-audit-bulk-retries",
+        "head_sha": "22074b1a37e5d75b2633337243cda2f3cef264be",
         "cluster_id": null,
         "job_path": null
       }
