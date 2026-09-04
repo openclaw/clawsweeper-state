@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:54:09.078Z",
+  "updated_at": "2026-09-04T01:54:30.424Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137474:5530352061:2026-09-03T18:34:03Z:clawsweeper_needs_human",
-      "comment_id": "5530352061",
-      "comment_version_key": "5530352061:2026-09-03T18:34:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137474#issuecomment-5530352061",
-      "comment_created_at": "2026-09-03T18:34:03Z",
-      "comment_updated_at": "2026-09-03T18:34:03Z",
-      "comment_body_sha256": "5401476fbfa5c196c9b6abbec052ecfde481f25e85d4a3148e2721db6c654b44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137474,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 32 net lines for a narrow detector repair; the added explicit-control and neutral-format classification is justified by the shared UI boundary, but maintainer... (sha=2c0de58d6f3bd742d1f4ac32e5f208f0261fed15)",
-      "expected_head_sha": "2c0de58d6f3bd742d1f4ac32e5f208f0261fed15",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T18:35:18.299Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/text-direction-bidi-controls",
-        "head_sha": "2c0de58d6f3bd742d1f4ac32e5f208f0261fed15",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137259:5524850698:2026-09-03T18:34:40Z:clawsweeper_auto_repair",
       "comment_id": "5524850698",
@@ -33698,6 +33665,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137671:5534552890:2026-09-04T01:53:29Z:re_review",
+      "comment_id": "5534552890",
+      "comment_version_key": "5534552890:2026-09-04T01:53:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137671#issuecomment-5534552890",
+      "comment_created_at": "2026-09-04T01:53:29Z",
+      "comment_updated_at": "2026-09-04T01:53:29Z",
+      "comment_body_sha256": "c72843ef4507b7a03a5f2fed729e96351b5303cf5a5e968ed87ee040d7d8a442",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137671,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T01:54:28.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/browser-cleanup-ownership",
+        "head_sha": "0807123eb2cc12447a686c7d898eaa8852d0402f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
