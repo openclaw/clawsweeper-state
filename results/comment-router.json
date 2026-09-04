@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T11:46:54.436Z",
+  "updated_at": "2026-09-04T11:47:19.711Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137797:5534701741:2026-09-04T08:16:29Z:clawsweeper_auto_repair",
-      "comment_id": "5534701741",
-      "comment_version_key": "5534701741:2026-09-04T08:16:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137797#issuecomment-5534701741",
-      "comment_created_at": "2026-09-04T02:13:49Z",
-      "comment_updated_at": "2026-09-04T08:16:29Z",
-      "comment_body_sha256": "ea880915cb83163d96cd87693a435de27de8ae260cbe1ef7f39b3066abdd56f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137797,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=56ef58aa271f469782a63d0878bbd4edb222cae1)",
-      "expected_head_sha": "56ef58aa271f469782a63d0878bbd4edb222cae1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T08:17:44.696Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-linux-appimage-wayland",
-        "head_sha": "56ef58aa271f469782a63d0878bbd4edb222cae1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawpdf:22:5537713709:2026-09-04T08:16:52Z:clawsweeper_needs_human",
       "comment_id": "5537713709",
@@ -33085,6 +33052,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137797:5539982698:2026-09-04T11:46:24Z:re_review",
+      "comment_id": "5539982698",
+      "comment_version_key": "5539982698:2026-09-04T11:46:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137797#issuecomment-5539982698",
+      "comment_created_at": "2026-09-04T11:46:24Z",
+      "comment_updated_at": "2026-09-04T11:46:24Z",
+      "comment_body_sha256": "616b86c3885acadf45050aa1a0078135d90b5026159b0cfe5833f055876ba94c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137797,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T11:47:17.988Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-linux-appimage-wayland",
+        "head_sha": "1556b50dca8b7974ba56027075e045e8387ec804",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
