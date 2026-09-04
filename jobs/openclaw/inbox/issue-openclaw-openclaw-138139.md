@@ -67,22 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the provider-runtime snapshot equality path for this issue. First reproduce repeated large-catalog comparisons before editing, then eliminate redundant synchronous serialization at the provider-auth owner without changing credential, SecretRef, or header-selection semantics. Cache only against the complete caller config, runtime snapshot generation, and provider identity, or an equivalently safe owner-bound representation; do not cache a bare runtime-snapshot result, add a config option, move work behind readiness, alter provider routing, or add a fallback. Cover matching and changed provider configurations, replacement snapshot invalidation, and a repeated 400-model-catalog regression that fails before the fix. No CHANGELOG.md edit; include user-visible release-note context in the PR body if applicable.
+Investigate the source-proven repeated provider-config hashing in https://github.com/openclaw/openclaw/issues/138139, retaining https://github.com/openclaw/openclaw/issues/136035 as symptom context only. Before editing, establish a current-main regression measurement using a large catalog and repeated provider-auth/snapshot comparisons; capture event-loop or readiness impact and separately measure `selectApplicableRuntimeConfig`. Repair at the runtime-snapshot/provider-auth owner boundary without adding config, API, persistence, or fallback behavior. Do not memoize one Boolean solely by runtime snapshot identity: preserve differing input-config and provider outcomes, SecretRef provenance, fail-closed degraded-owner behavior, and replacement-snapshot invalidation. Add a regression that fails before the repair for repeated same-pair work and preserves equivalent, mismatched, clone, provider-replacement, and SecretRef sentinel behavior. Put user-visible release context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/model-auth-provider-config.ts
-- src/agents/model-auth-runtime-config.ts
-- src/agents/model-auth-model.ts
-- src/agents/model-provider-auth.test.ts
+- src/config/runtime-snapshot.ts
+- src/agents/model-auth.test.ts
 - src/config/runtime-snapshot.test.ts
 
 Validation:
 
-- pnpm test src/agents/model-provider-auth.test.ts
-- pnpm test src/config/runtime-snapshot.test.ts
-- Focused before/after repeated-comparison measurement using a provider entry with a 400-model catalog.
-- Run an isolated gateway-startup readiness check when feasible and record the observed result.
+- Capture a pre-edit and post-edit large-catalog provider-auth/snapshot benchmark with observed event-loop or readiness impact.
+- node scripts/run-vitest.mjs src/agents/model-auth.test.ts
+- node scripts/run-vitest.mjs src/config/runtime-snapshot.test.ts
+- pnpm check:changed
 
 ## Operator Prompt
 
