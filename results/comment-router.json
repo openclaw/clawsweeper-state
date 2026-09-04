@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T20:53:04.570Z",
+  "updated_at": "2026-09-04T20:53:47.880Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137517:5531249743:2026-09-04T15:45:27Z:clawsweeper_needs_human",
-      "comment_id": "5531249743",
-      "comment_version_key": "5531249743:2026-09-04T15:45:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137517#issuecomment-5531249743",
-      "comment_created_at": "2026-09-03T19:49:36Z",
-      "comment_updated_at": "2026-09-04T15:45:27Z",
-      "comment_body_sha256": "931c893e31df7c8cbdf90338855a573725ad06a14502458d17e213ffb3ac4403",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137517,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code is net +5 lines; the interval condition and its invariant comment should remain the single pre-busy decision surface so later wake classes do not acquire divergent ord... (sha=fbba43ffb4aabbde33f9006979fc414ee7c4fb73)",
-      "expected_head_sha": "fbba43ffb4aabbde33f9006979fc414ee7c4fb73",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T15:55:00.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-137492-heartbeat-empty-preflight",
-        "head_sha": "fbba43ffb4aabbde33f9006979fc414ee7c4fb73",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137543:5531790702:2026-09-04T15:51:59Z:clawsweeper_auto_repair",
       "comment_id": "5531790702",
@@ -32972,6 +32939,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138572:5546316707:2026-09-04T20:52:22Z:re_review",
+      "comment_id": "5546316707",
+      "comment_version_key": "5546316707:2026-09-04T20:52:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138572#issuecomment-5546316707",
+      "comment_created_at": "2026-09-04T20:52:22Z",
+      "comment_updated_at": "2026-09-04T20:52:22Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138572,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T20:53:45.820Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ancillary-passive-draft-concurrency",
+        "head_sha": "c5c2f922feaff1521144a73d25d99e5019a12fea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
