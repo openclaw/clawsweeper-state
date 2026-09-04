@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T20:06:18.816Z",
+  "updated_at": "2026-09-04T20:06:31.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138312:5542751955:2026-09-04T15:28:37Z:re_review",
-      "comment_id": "5542751955",
-      "comment_version_key": "5542751955:2026-09-04T15:28:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138312#issuecomment-5542751955",
-      "comment_created_at": "2026-09-04T15:28:37Z",
-      "comment_updated_at": "2026-09-04T15:28:37Z",
-      "comment_body_sha256": "ef2d6852ad33eb837088abd891d5ec207b908b5c66f9aad20b0a6717e1b412ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138312,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T15:34:15.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-sep04-catalog-source-refs",
-        "head_sha": "c2938804e4f0b3af0fc41a7dc44feaef3cc5ab1f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138204:5542816559:2026-09-04T15:33:31Z:re_review",
       "comment_id": "5542816559",
@@ -32926,6 +32879,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T20:06:18.816Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138375:5543134814:2026-09-04T19:58:39Z:clawsweeper_auto_repair",
+      "comment_id": "5543134814",
+      "comment_version_key": "5543134814:2026-09-04T19:58:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138375#issuecomment-5543134814",
+      "comment_created_at": "2026-09-04T16:00:05Z",
+      "comment_updated_at": "2026-09-04T19:58:39Z",
+      "comment_body_sha256": "17309d3a226a21a5ec722441d3cb68982a1bd0ee9dedf0128eb3c3b7e07c4167",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138375,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c43e555f7c695f6fa62c538499d3efb1c506ef74)",
+      "expected_head_sha": "c43e555f7c695f6fa62c538499d3efb1c506ef74",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T20:06:31.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-agents-descendant-drain-monotonic-20260904",
+        "head_sha": "c43e555f7c695f6fa62c538499d3efb1c506ef74",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
