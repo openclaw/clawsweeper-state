@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T02:58:11.048Z",
+  "updated_at": "2026-09-04T02:58:19.650Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137559:5532224807:2026-09-03T21:14:25Z:clawsweeper_needs_human",
-      "comment_id": "5532224807",
-      "comment_version_key": "5532224807:2026-09-03T21:14:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137559#issuecomment-5532224807",
-      "comment_created_at": "2026-09-03T21:14:25Z",
-      "comment_updated_at": "2026-09-03T21:14:25Z",
-      "comment_body_sha256": "22c45268bcd49111c169957a8037f3d90619fe5e4e016f6352b41da678ba3018",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137559,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=21e245a5e6cfaa681066c8a1561d61319bfa221c)",
-      "expected_head_sha": "21e245a5e6cfaa681066c8a1561d61319bfa221c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T21:15:58.968Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-openai-tts-fetch-fixtures",
-        "head_sha": "21e245a5e6cfaa681066c8a1561d61319bfa221c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134665:5532237989:2026-09-03T21:15:40Z:re_review",
       "comment_id": "5532237989",
@@ -33597,6 +33564,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T02:58:11.048Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137800:5534896902:2026-09-04T02:56:55Z:clawsweeper_needs_human",
+      "comment_id": "5534896902",
+      "comment_version_key": "5534896902:2026-09-04T02:56:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137800#issuecomment-5534896902",
+      "comment_created_at": "2026-09-04T02:40:35Z",
+      "comment_updated_at": "2026-09-04T02:56:55Z",
+      "comment_body_sha256": "4838722088822098e1e6abe22bdc1047de17d9f38b987dfe49a4cf4344782cfc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137800,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Fence direct failure cleanup with allocation ownership (P1)** - The failed renew and markAllocated branches dispatch cleanupSkillResourceAllocation using only params.assertCurrent. That leaves a stale Gateway ab...; Review finding: [P1] Fence direct failure cleanup with allocation ownership — src/gateway/worker-environments/skill-resource-transfer.ts:493-515 - [high] Stale owner can dispatch... (sha=42257cd8843599b3e2384de3b87927d0a4a71754)",
+      "expected_head_sha": "42257cd8843599b3e2384de3b87927d0a4a71754",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T02:58:19.650Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-resource-durable-ownership-post-137071",
+        "head_sha": "42257cd8843599b3e2384de3b87927d0a4a71754",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
