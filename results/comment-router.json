@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T12:44:34.215Z",
+  "updated_at": "2026-09-04T12:45:44.740Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111822:5538002584:2026-09-04T08:45:26Z:re_review",
-      "comment_id": "5538002584",
-      "comment_version_key": "5538002584:2026-09-04T08:45:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111822#issuecomment-5538002584",
-      "comment_created_at": "2026-09-04T08:45:26Z",
-      "comment_updated_at": "2026-09-04T08:45:26Z",
-      "comment_body_sha256": "abb44a55f46bc921fd62cd8739c6209ead854d328a2d30e2b6f8e776bb6dff13",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111822,
-      "author": "ooiuuii",
-      "author_id": 169449607,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T08:46:25.343Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-ignore-reply-ping-bot-mentions",
-        "head_sha": "bbdc19733e5502b0c429e1c28cf3b604cc879039",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1800:5538009011:2026-09-04T08:46:04Z:clawsweeper_needs_human",
       "comment_id": "5538009011",
@@ -33084,6 +33037,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138190:5539245882:2026-09-04T12:44:11Z:clawsweeper_needs_human",
+      "comment_id": "5539245882",
+      "comment_version_key": "5539245882:2026-09-04T12:44:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138190#issuecomment-5539245882",
+      "comment_created_at": "2026-09-04T10:37:55Z",
+      "comment_updated_at": "2026-09-04T12:44:11Z",
+      "comment_body_sha256": "3fee77b483aaea62d13be14441fd7b661c036ab2fb5916d51401679c9fddd8fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup is truncated and marked incomplete, so required-check completion should be confirmed before merge despite the visible CI gate success. (sha=472e937f27bc7bc26d8b2de666562d1b63de4f2d)",
+      "expected_head_sha": "472e937f27bc7bc26d8b2de666562d1b63de4f2d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T12:45:44.740Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-media-fact-classification",
+        "head_sha": "472e937f27bc7bc26d8b2de666562d1b63de4f2d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
