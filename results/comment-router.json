@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T13:11:47.945Z",
+  "updated_at": "2026-09-04T13:11:54.015Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1778:5528761675:2026-09-04T09:27:46Z:clawsweeper_needs_human",
-      "comment_id": "5528761675",
-      "comment_version_key": "5528761675:2026-09-04T09:27:46Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1778#issuecomment-5528761675",
-      "comment_created_at": "2026-09-03T16:25:01Z",
-      "comment_updated_at": "2026-09-04T09:27:46Z",
-      "comment_body_sha256": "e6596d86762c539923d0500fbaabaddeee9fa15804799c00ed5467f89bbbc840",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1778,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: AWSQualificationTransport, the registry, per-run Durable Object state, and DirectAuthoritySigner form the produ...; Review finding: [P1] Fence the run before publishing finalization — worker/src/aws-qualification-authority.ts:208-210 - [high] Finalization withdrawal races candidate AWS dispatch... (sha=850b1abe48cc86399abb48b74792983f43583b0b)",
-      "expected_head_sha": "850b1abe48cc86399abb48b74792983f43583b0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T09:30:25.271Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/aws-qualification-broker",
-        "head_sha": "850b1abe48cc86399abb48b74792983f43583b0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:225:5538481073:2026-09-04T09:29:51Z:clawsweeper_needs_human",
       "comment_id": "5538481073",
@@ -33170,6 +33137,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129144:5540893045:2026-09-04T13:09:08Z:re_review",
+      "comment_id": "5540893045",
+      "comment_version_key": "5540893045:2026-09-04T13:09:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129144#issuecomment-5540893045",
+      "comment_created_at": "2026-09-04T13:09:08Z",
+      "comment_updated_at": "2026-09-04T13:09:08Z",
+      "comment_body_sha256": "e7d19f859089fee7312f06667dc824ad8d9c1b71d36603c9709ed9d1b12327c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129144,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T13:11:51.978Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-opaque-realtime-admission",
+        "head_sha": "9eed078998740e6fc8674e2bfb0dca57d966ad69",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
