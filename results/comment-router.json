@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T06:47:10.418Z",
+  "updated_at": "2026-09-04T06:47:20.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3522:5535118368:2026-09-04T03:11:27Z:re_review",
-      "comment_id": "5535118368",
-      "comment_version_key": "5535118368:2026-09-04T03:11:27Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3522#issuecomment-5535118368",
-      "comment_created_at": "2026-09-04T03:11:27Z",
-      "comment_updated_at": "2026-09-04T03:11:27Z",
-      "comment_body_sha256": "8c2d92bbf6f584fed97e3ac92f6f786494d518f8bba053627b24a63b2e70a34f",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3522,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T03:12:24.256Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/aig-security-findings",
-        "head_sha": "88f26f159e1a21d836938984f3141d8c8ea89e99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137839:5535072915:2026-09-04T03:11:24Z:clawsweeper_needs_human",
       "comment_id": "5535072915",
@@ -32789,6 +32742,39 @@
         "kind": "pull_request",
         "branch": "codex/team-opt-tasks-20260904",
         "head_sha": "19861189c9816bfe7aa8f2a0628a9c4ea3c8ddf6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137236:5524214856:2026-09-04T06:39:02Z:clawsweeper_needs_human",
+      "comment_id": "5524214856",
+      "comment_version_key": "5524214856:2026-09-04T06:39:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137236#issuecomment-5524214856",
+      "comment_created_at": "2026-09-03T10:20:05Z",
+      "comment_updated_at": "2026-09-04T06:39:02Z",
+      "comment_body_sha256": "6e1a8762e03bdfb2c58fd957421eac542455d2efd6a1a27d9b44527f409e2bfc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner is the ask_user readiness waiter, entered from embedded-agent tool-start before prompt publication. The supplied pro... (sha=d048859468077b29c1dacdf114439c3692ac4fd3)",
+      "expected_head_sha": "d048859468077b29c1dacdf114439c3692ac4fd3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T06:47:20.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-ask-user-prompt-expiry",
+        "head_sha": "d048859468077b29c1dacdf114439c3692ac4fd3",
         "cluster_id": null,
         "job_path": null
       }
