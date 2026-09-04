@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138383",
+  "mode": "autonomous",
+  "run_id": "33893876691",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33893876691",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138383.md",
+  "published_at": "2026-09-04T17:05:37.583Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138383",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138383",
+  "canonical_pr": null,
+  "summary": "#138383 remains a reproducible canonical bug on local origin/main 9f60da4c2eaa99e02dc2ddd2740251f6ba541892. `dir_fetch` emits local paths, bundled manifest tools are marked trusted, but the runner never derives or forwards the exact trusted-name set into subscription filtering. A narrow new PR is appropriate, but this worker cannot edit or validate: the checkout is read-only, dependencies are incomplete (`tsx/esm` missing), and the mandatory sibling `../codex` source checkout is absent.",
+  "actions": [
+    {
+      "target": "#44759",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Security boundary requires central triage for this linked report."
+    },
+    {
+      "target": "#138383",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "No viable implementation PR is hydrated; a new narrow fix PR should own validation and close #138383."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138383",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Construct the bounded implementation from the artifact below."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138383",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Run the artifact in a writable, dependency-complete checkout with the required sibling Codex source available."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
