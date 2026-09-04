@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-04T07:12:03.358Z",
+  "updated_at": "2026-09-04T07:12:07.542Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137872:5535335362:2026-09-04T03:42:39Z:re_review",
-      "comment_id": "5535335362",
-      "comment_version_key": "5535335362:2026-09-04T03:42:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/137872#issuecomment-5535335362",
-      "comment_created_at": "2026-09-04T03:42:39Z",
-      "comment_updated_at": "2026-09-04T03:42:39Z",
-      "comment_body_sha256": "a767ef5f85bcc3f43d1a720df7826175328bc5c00f5cf24ae6e870d9143043c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137872,
-      "author": "Colton-Harris",
-      "author_id": 287090614,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T03:44:04.046Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawhub:3522:5535279915:2026-09-04T03:34:31Z:re_review",
       "comment_id": "5535279915",
@@ -32724,6 +32679,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137993:5537036092:2026-09-04T07:11:14Z:clawsweeper_needs_human",
+      "comment_id": "5537036092",
+      "comment_version_key": "5537036092:2026-09-04T07:11:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137993#issuecomment-5537036092",
+      "comment_created_at": "2026-09-04T07:11:14Z",
+      "comment_updated_at": "2026-09-04T07:11:14Z",
+      "comment_body_sha256": "df1b378db0b54d3ca71f069bbf31b5925413ef30e7efc5b1ceaaa2eb19f9eac2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137993,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The SDK's pre-start stderr-stream contract remains independently unverified because dependency source and network inspection were unavailable to this reviewer. (sha=85b84acf4611812cc133a93195b26421f43c3dc6)",
+      "expected_head_sha": "85b84acf4611812cc133a93195b26421f43c3dc6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T07:12:07.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-mcp-startup-stderr-ec0f57",
+        "head_sha": "85b84acf4611812cc133a93195b26421f43c3dc6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
