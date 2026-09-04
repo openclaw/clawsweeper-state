@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T08:05:42.460Z",
+  "updated_at": "2026-09-04T08:05:48.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5535666190:2026-09-04T04:29:44Z:re_review",
-      "comment_id": "5535666190",
-      "comment_version_key": "5535666190:2026-09-04T04:29:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5535666190",
-      "comment_created_at": "2026-09-04T04:29:44Z",
-      "comment_updated_at": "2026-09-04T04:29:44Z",
-      "comment_body_sha256": "5fca8fbbe9137639210700a538d919dfaf33cfba55a1dd1ca25f7a6469878fd7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T04:30:32.423Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "7063df826dc22d659bab4028495dd3adfd023c91",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1319:5535265926:2026-09-04T04:32:49Z:clawsweeper_auto_repair",
       "comment_id": "5535265926",
@@ -32823,6 +32776,39 @@
         "kind": "pull_request",
         "branch": "feat/aws-qualification-broker",
         "head_sha": "dbad689ffeed6c10765a37fe54caf56c57697e61",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:92:5537511175:2026-09-04T08:05:02Z:clawsweeper_needs_human",
+      "comment_id": "5537511175",
+      "comment_version_key": "5537511175:2026-09-04T08:05:02Z",
+      "comment_url": "https://github.com/openclaw/graincrawl/pull/92#issuecomment-5537511175",
+      "comment_created_at": "2026-09-04T07:58:51Z",
+      "comment_updated_at": "2026-09-04T08:05:02Z",
+      "comment_body_sha256": "be6063162c01f1b6f96191c38c4205545cc16e314d1b1a01aa06732f5a1127d8",
+      "repo": "openclaw/graincrawl",
+      "issue_number": 92,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured body reports the built CLI exercising the real SQLite archive through sync, search, repeat sync, tombstones, and integrit... (sha=ff36676f1eec2b3adc5a8856ef848eb9b129cbd6)",
+      "expected_head_sha": "ff36676f1eec2b3adc5a8856ef848eb9b129cbd6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T08:05:48.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep/graincrawl-20260904",
+        "head_sha": "ff36676f1eec2b3adc5a8856ef848eb9b129cbd6",
         "cluster_id": null,
         "job_path": null
       }
