@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T19:37:25.723Z",
+  "updated_at": "2026-09-04T19:38:07.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4941027566:2026-07-11T01:12:41Z:re_review",
-      "comment_id": "4941027566",
-      "comment_version_key": "4941027566:2026-07-11T01:12:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4941027566",
-      "comment_created_at": "2026-07-11T01:12:41Z",
-      "comment_updated_at": "2026-07-11T01:12:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T14:56:09.162Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4942215042:2026-07-11T03:59:48Z:re_review",
       "comment_id": "4942215042",
@@ -32702,6 +32675,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138467:5545578970:2026-09-04T19:37:14Z:clawsweeper_needs_human",
+      "comment_id": "5545578970",
+      "comment_version_key": "5545578970:2026-09-04T19:37:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138467#issuecomment-5545578970",
+      "comment_created_at": "2026-09-04T19:37:14Z",
+      "comment_updated_at": "2026-09-04T19:37:14Z",
+      "comment_body_sha256": "a89bc1e79f70dd20fb67e95f6f91f7d706fef07384b75281cb131607bc904f67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138467,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The fix adds one production line; that is the smallest direct way to apply the draft veto at the final mutation boundary, while reusing the broader classifier would mix in stale CI an... (sha=e6687c63dd6b6f59c5535b0161c9b0bb5eb9f6ec)",
+      "expected_head_sha": "e6687c63dd6b6f59c5535b0161c9b0bb5eb9f6ec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T19:38:07.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pr-ci-sweeper-fresh-draft-20260904",
+        "head_sha": "e6687c63dd6b6f59c5535b0161c9b0bb5eb9f6ec",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
