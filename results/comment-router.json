@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T23:54:47.817Z",
+  "updated_at": "2026-09-04T23:54:49.648Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138449:5544729014:2026-09-04T18:19:08Z:re_review",
-      "comment_id": "5544729014",
-      "comment_version_key": "5544729014:2026-09-04T18:19:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138449#issuecomment-5544729014",
-      "comment_created_at": "2026-09-04T18:19:08Z",
-      "comment_updated_at": "2026-09-04T18:19:08Z",
-      "comment_body_sha256": "266a5c4227fd26defd6ee5273a114760dccbbc885c7bc509938b5aa9efa39c0c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138449,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T18:36:22.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-agent-exec-auth-env-only",
-        "head_sha": "1445526171469010ef5ebcf1d7566d19e906660d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135599:5544810563:2026-09-04T18:26:06Z:re_review",
       "comment_id": "5544810563",
@@ -33341,6 +33294,39 @@
         "kind": "pull_request",
         "branch": "fix/launchd-tailscale-owner-lifecycle",
         "head_sha": "5817467d30a50e4fadfbfeed0b7b5bfaefaa1235",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133396:5470089671:2026-09-04T23:53:47Z:clawsweeper_needs_human",
+      "comment_id": "5470089671",
+      "comment_version_key": "5470089671:2026-09-04T23:53:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133396#issuecomment-5470089671",
+      "comment_created_at": "2026-08-30T17:08:31Z",
+      "comment_updated_at": "2026-09-04T23:53:47Z",
+      "comment_body_sha256": "9d5586d8bdd00f124886332c29d8f1963e484e0f1f5a12a10cbf5eb72c79e9dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133396,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Applicability of the historical loopback receipt to the refreshed branch remains unverified because its source revision and the earlier reviewed head were unavailable for comparison. (sha=602797142a4a38dbfddc307113eba55fb353cc1a)",
+      "expected_head_sha": "602797142a4a38dbfddc307113eba55fb353cc1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T23:54:49.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/feature-sessions-list-color-readback-20260831",
+        "head_sha": "602797142a4a38dbfddc307113eba55fb353cc1a",
         "cluster_id": null,
         "job_path": null
       }
