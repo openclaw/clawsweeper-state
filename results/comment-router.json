@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T06:53:43.009Z",
+  "updated_at": "2026-09-04T06:53:54.099Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3522:5535180686:2026-09-04T03:20:18Z:re_review",
-      "comment_id": "5535180686",
-      "comment_version_key": "5535180686:2026-09-04T03:20:18Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3522#issuecomment-5535180686",
-      "comment_created_at": "2026-09-04T03:20:18Z",
-      "comment_updated_at": "2026-09-04T03:20:18Z",
-      "comment_body_sha256": "bf6ea918bbad569c999fed2368c1bd9e67d6490521bdc4a898bb30801276ad37",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3522,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T03:26:25.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/aig-security-findings",
-        "head_sha": "88f26f159e1a21d836938984f3141d8c8ea89e99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3522:5404394263:2026-09-04T03:25:37Z:clawsweeper_needs_human",
       "comment_id": "5404394263",
@@ -32737,6 +32690,39 @@
         "kind": "pull_request",
         "branch": "fix/gemini-multitype-schema",
         "head_sha": "f0c944f4a342d0d734b737d6ff7736d60600a7c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1795:5536866230:2026-09-04T06:53:04Z:clawsweeper_needs_human",
+      "comment_id": "5536866230",
+      "comment_version_key": "5536866230:2026-09-04T06:53:04Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1795#issuecomment-5536866230",
+      "comment_created_at": "2026-09-04T06:53:04Z",
+      "comment_updated_at": "2026-09-04T06:53:04Z",
+      "comment_body_sha256": "7c1a471834c10167c51ab06957870b45bd862e1a7b390e930deb074d6be6bde9",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1795,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the CLI run path and delegated Blacksmith backend, but the supplied after-fix evidence is source-level Go cov... (sha=8cb374c05ad24e73a6d46456094a511214f78d27)",
+      "expected_head_sha": "8cb374c05ad24e73a6d46456094a511214f78d27",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T06:53:54.099Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failure-stage-reporting-a13dc443",
+        "head_sha": "8cb374c05ad24e73a6d46456094a511214f78d27",
         "cluster_id": null,
         "job_path": null
       }
