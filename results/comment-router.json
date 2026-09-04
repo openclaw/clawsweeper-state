@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:20:16.566Z",
+  "updated_at": "2026-09-04T01:20:23.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137346:5527476340:2026-09-03T14:43:48Z:re_review",
-      "comment_id": "5527476340",
-      "comment_version_key": "5527476340:2026-09-03T14:43:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137346#issuecomment-5527476340",
-      "comment_created_at": "2026-09-03T14:43:48Z",
-      "comment_updated_at": "2026-09-03T14:43:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137346,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T14:44:49.091Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-slack-plugin-runtime",
-        "head_sha": "a5c463b59ac160c22ee19de08f620db93007de4a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131584:5449252411:2026-09-03T14:43:11Z:clawsweeper_needs_human",
       "comment_id": "5449252411",
@@ -33912,6 +33865,39 @@
         "kind": "pull_request",
         "branch": "turkish-localization",
         "head_sha": "1954da6e6b372e4d18e5bac918efdab6d9ff8bef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137677:5533908002:2026-09-04T01:19:21Z:clawsweeper_needs_human",
+      "comment_id": "5533908002",
+      "comment_version_key": "5533908002:2026-09-04T01:19:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137677#issuecomment-5533908002",
+      "comment_created_at": "2026-09-04T00:27:14Z",
+      "comment_updated_at": "2026-09-04T01:19:21Z",
+      "comment_body_sha256": "9ab7780467a7d56956abbb2fc0659ad72debe0128f2e6719bc6e05d5442f216c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137677,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the Discord presence action; the added test invokes it with a registered mocked GatewayPlugin and observes no u... (sha=0cf6e6bd5bbcf4ac795f72d8484c8679716c57e4)",
+      "expected_head_sha": "0cf6e6bd5bbcf4ac795f72d8484c8679716c57e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:20:23.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-presence-prototype-lookup",
+        "head_sha": "0cf6e6bd5bbcf4ac795f72d8484c8679716c57e4",
         "cluster_id": null,
         "job_path": null
       }
