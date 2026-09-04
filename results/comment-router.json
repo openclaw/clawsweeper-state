@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T07:04:12.559Z",
+  "updated_at": "2026-09-04T07:04:55.560Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:222:5535276532:2026-09-04T03:34:02Z:re_review",
-      "comment_id": "5535276532",
-      "comment_version_key": "5535276532:2026-09-04T03:34:02Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/222#issuecomment-5535276532",
-      "comment_created_at": "2026-09-04T03:34:02Z",
-      "comment_updated_at": "2026-09-04T03:34:02Z",
-      "comment_body_sha256": "c002442926f3b283e942e2fa1ba836eb0dfcb77e13ca35b8b456dd6a8ea88955",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 222,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T03:39:12.809Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secret-directory-admission",
-        "head_sha": "cf2b9b1be99c8b59c91cae22da55e08c64fb22b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:222:5534426387:2026-09-04T03:38:10Z:clawsweeper_needs_human",
       "comment_id": "5534426387",
@@ -32681,6 +32634,39 @@
         "kind": "pull_request",
         "branch": "fix/f002-sync-skills-paths",
         "head_sha": "1c18469f026577f4e15830850213804a73c20424",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137691:5533974276:2026-09-04T07:03:57Z:clawsweeper_needs_human",
+      "comment_id": "5533974276",
+      "comment_version_key": "5533974276:2026-09-04T07:03:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137691#issuecomment-5533974276",
+      "comment_created_at": "2026-09-04T00:36:04Z",
+      "comment_updated_at": "2026-09-04T07:03:57Z",
+      "comment_body_sha256": "14e6fed7d710915ba221cc330e69795b6ed88062983332cdb4f3b369b61b63d7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137691,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head Android hosted checks were still running or queued in the captured state, so required CI has not yet independently confirmed this head. (sha=d958ba74f4fe13b921f1ce81f56c1131b64e8b73)",
+      "expected_head_sha": "d958ba74f4fe13b921f1ce81f56c1131b64e8b73",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T07:04:55.560Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-review-f24-20260902",
+        "head_sha": "d958ba74f4fe13b921f1ce81f56c1131b64e8b73",
         "cluster_id": null,
         "job_path": null
       }
