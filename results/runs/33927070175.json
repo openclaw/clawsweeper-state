@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138652",
+  "mode": "autonomous",
+  "run_id": "33927070175",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33927070175",
+  "head_sha": "4e54e61804ec0da9f1a3572e536e7c6f95049190",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138652.md",
+  "published_at": "2026-09-04T23:26:08.453Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138652",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138652",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the empty plugins.installs startup-repair gap on preflight main 6c63f671063728bfe9d64e4a14d157b3f4d562f7. Local implementation and executable reproduction are blocked by the enforced read-only filesystem: the focused test command failed during Corepack setup before test collection. No files or GitHub state changed. A narrow, regression-first repair artifact is ready for a writable executor.",
+  "actions": [
+    {
+      "target": "#138652",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138652",
+      "candidate_fix": null,
+      "reason": "Only local implementation is blocked. The canonical issue and narrow repair direction are clear; a writable executor must first demonstrate a failing regression on its current main before changing production code."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138652",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138652",
+      "candidate_fix": null,
+      "reason": "Preserve the actionable repair plan despite this worker's filesystem blocker; no unresolved maintainer product decision is required."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
