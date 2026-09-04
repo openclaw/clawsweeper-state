@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-04T17:41:28.413Z",
+  "updated_at": "2026-09-04T17:39:44.683Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137641:5540832751:2026-09-04T13:04:05Z:re_review",
+      "comment_id": "5540832751",
+      "comment_version_key": "5540832751:2026-09-04T13:04:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137641#issuecomment-5540832751",
+      "comment_created_at": "2026-09-04T13:04:05Z",
+      "comment_updated_at": "2026-09-04T13:04:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137641,
+      "author": "ly85206559",
+      "author_id": 12526624,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T13:04:10.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/zalo-missing-token-guidance",
+        "head_sha": "580336328835f4c2704abb0338489e90851e7615",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137641:5533599498:2026-09-04T13:03:23Z:clawsweeper_needs_human",
       "comment_id": "5533599498",
@@ -32688,39 +32735,6 @@
         "kind": "pull_request",
         "branch": "fix/deslop-campaign-bugs-4",
         "head_sha": "26972766485b739cb8768bb4707d2d981deaea9b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135815:5503483723:2026-09-04T17:40:35Z:clawsweeper_auto_repair",
-      "comment_id": "5503483723",
-      "comment_version_key": "5503483723:2026-09-04T17:40:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135815#issuecomment-5503483723",
-      "comment_created_at": "2026-09-02T02:36:12Z",
-      "comment_updated_at": "2026-09-04T17:40:35Z",
-      "comment_body_sha256": "1256f63caf17774052e0122b33594cbabcacd3b9cd494c31b15a25d527215122",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135815,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=32e69c12705187321b21b8ecc65886e28145f912)",
-      "expected_head_sha": "32e69c12705187321b21b8ecc65886e28145f912",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T17:41:28.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-queue-false-storage-error",
-        "head_sha": "32e69c12705187321b21b8ecc65886e28145f912",
         "cluster_id": null,
         "job_path": null
       }
