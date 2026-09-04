@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T22:54:56.266Z",
+  "updated_at": "2026-09-04T22:54:57.863Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3522:5535275469:2026-09-04T03:33:53Z:re_review",
-      "comment_id": "5535275469",
-      "comment_version_key": "5535275469:2026-09-04T03:33:53Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3522#issuecomment-5535275469",
-      "comment_created_at": "2026-09-04T03:33:53Z",
-      "comment_updated_at": "2026-09-04T03:33:53Z",
-      "comment_body_sha256": "6993358f64a97c3162e7f21df231e9792dd49fbc46b40e900cfef87f78529f28",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3522,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "COLLABORATOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T17:46:33.810Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137594:5532842645:2026-09-04T17:03:23Z:clawsweeper_needs_human",
       "comment_id": "5532842645",
@@ -33110,6 +33083,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T22:54:56.266Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138645:5546908999:2026-09-04T22:54:02Z:clawsweeper_needs_human",
+      "comment_id": "5546908999",
+      "comment_version_key": "5546908999:2026-09-04T22:54:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138645#issuecomment-5546908999",
+      "comment_created_at": "2026-09-04T21:57:47Z",
+      "comment_updated_at": "2026-09-04T22:54:02Z",
+      "comment_body_sha256": "9f2c1c9402c163dcd07f51682403b910ba6dd9f054df224bb6ce5b324eed2615",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138645,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed finalization and queued-delivery owners are exercised by mocked finalizer/direct-policy tests and real SQLite composition, but no c... (sha=a55ecc08cd38845edfac8c11c7fd7e0bc04ce34e)",
+      "expected_head_sha": "a55ecc08cd38845edfac8c11c7fd7e0bc04ce34e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T22:54:57.863Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/settled-fallback-source-suppression",
+        "head_sha": "a55ecc08cd38845edfac8c11c7fd7e0bc04ce34e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
