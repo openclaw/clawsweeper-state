@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-09-04T14:44:57.302Z",
+  "updated_at": "2026-09-04T14:44:59.462Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111624:5538850859:2026-09-04T10:01:09Z:re_review",
-      "comment_id": "5538850859",
-      "comment_version_key": "5538850859:2026-09-04T10:01:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111624#issuecomment-5538850859",
-      "comment_created_at": "2026-09-04T10:01:09Z",
-      "comment_updated_at": "2026-09-04T10:01:09Z",
-      "comment_body_sha256": "b2d3bcc4cc18175b6532aa7613d4591d7606de18f3db221a8d62d9c016324613",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111624,
-      "author": "ooiuuii",
-      "author_id": 169449607,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T10:07:33.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-msys-file-tool-paths",
-        "head_sha": "fb130c183fd07a846dc3d59e1352488a8fca04e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138090:5538885552:2026-09-04T10:04:33Z:re_review",
-      "comment_id": "5538885552",
-      "comment_version_key": "5538885552:2026-09-04T10:04:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138090#issuecomment-5538885552",
-      "comment_created_at": "2026-09-04T10:04:33Z",
-      "comment_updated_at": "2026-09-04T10:04:33Z",
-      "comment_body_sha256": "84e384a946461b2ede3ade107ee7019efe8610a950096095a438262e25eebd95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138090,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T10:07:33.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-wizard-enum-types",
-        "head_sha": "49709658c2c0bed086abb27023681e7e9e5dfda2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:93247:4706848560:2026-09-04T09:56:30Z:clawsweeper_auto_repair",
       "comment_id": "4706848560",
@@ -33831,6 +33737,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118466:5162442240:2026-09-04T14:43:59Z:clawsweeper_needs_human",
+      "comment_id": "5162442240",
+      "comment_version_key": "5162442240:2026-09-04T14:43:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118466#issuecomment-5162442240",
+      "comment_created_at": "2026-08-03T04:54:19Z",
+      "comment_updated_at": "2026-09-04T14:43:59Z",
+      "comment_body_sha256": "ba44028f9006f0f1102ebbbbc73d9b754a02cceb2fb8e42f4bbc023d8cfdbff2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118466,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current main changed every touched path after this head, and the stale test merge cannot establish the three-way integrated behavior. (sha=7468c5a45aca3d7976d8a66baff0840edafe2c58)",
+      "expected_head_sha": "7468c5a45aca3d7976d8a66baff0840edafe2c58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T14:44:59.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/generation-route-model-memo",
+        "head_sha": "7468c5a45aca3d7976d8a66baff0840edafe2c58",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118466:5499068099:2026-09-01T19:12:37Z:re_review",
+      "comment_id": "5499068099",
+      "comment_version_key": "5499068099:2026-09-01T19:12:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118466#issuecomment-5499068099",
+      "comment_created_at": "2026-09-01T19:12:37Z",
+      "comment_updated_at": "2026-09-01T19:12:37Z",
+      "comment_body_sha256": "df2d168bd54ae4263b4335df45f3ddb4473786219fcac43161404d062f2a4a7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118466,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T14:44:59.462Z",
+      "target": null
     }
   ]
 }
