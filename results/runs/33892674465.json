@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138308",
+  "mode": "autonomous",
+  "run_id": "33892674465",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33892674465",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138308.md",
+  "published_at": "2026-09-04T17:18:51.819Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138308",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138308",
+  "canonical_pr": null,
+  "summary": "The repair is narrowly specified, but this worker cannot implement it: the required sibling Codex checkout is absent, cloning is blocked by DNS, and the target checkout is read-only.",
+  "actions": [
+    {
+      "target": "#138308",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138308",
+      "candidate_fix": null,
+      "reason": "Repository policy requires direct sibling Codex inspection before a code change or verdict; the environment prevents that inspection and local writes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138308",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138308",
+      "candidate_fix": null,
+      "reason": "The executor can perform this narrow fix after restoring writable access and the required Codex source checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
