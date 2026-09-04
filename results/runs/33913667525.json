@@ -1,0 +1,42 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138430",
+  "mode": "autonomous",
+  "run_id": "33913667525",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33913667525",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138430.md",
+  "published_at": "2026-09-04T20:03:32.200Z",
+  "canonical": "#138430",
+  "canonical_issue": "#138430",
+  "canonical_pr": null,
+  "summary": "#138430 remains a narrow, source-reproducible iOS bug, but this worker cannot create or validate the required fix PR: the mandatory sibling ../codex source checkout is absent, this filesystem is read-only, and Swift/Corepack tooling cannot write required caches. No GitHub mutation or code change was made.",
+  "actions": [
+    {
+      "target": "#138430",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138430",
+      "candidate_fix": null,
+      "reason": "Required Codex source inspection cannot occur because ../codex is absent and the read-only worker cannot clone it. The worker also cannot edit, generate an iOS project, or run Swift tests; swift --version returned permissionDenied and pnpm docs:list failed attempting to create Corepack cache directories."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
