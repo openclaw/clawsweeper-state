@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137959"
-mode: "autonomous"
-run_id: "33842866487"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33842866487"
-head_sha: "aa7ed6c0cfe368d5c8713b740a5c69c3e4fcc6ea"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-04T06:49:44.868Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137959"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137959"
+mode: "plan"
+run_id: "33846825110"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33846825110"
+head_sha: "72b01b3a4d651e11d704d46250849341f584b3d1"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-04T07:08:35.410Z"
+canonical: "#137959"
+canonical_issue: "#137959"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33842866487](https://github.com/openclaw/clawsweeper/actions/runs/33842866487)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33846825110](https://github.com/openclaw/clawsweeper/actions/runs/33846825110)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/137959
+Canonical: #137959
 
 ## Summary
 
-#137959 remains the canonical narrow bootstrap-context bug. The hydrated preflight reports it on main 788655a900868fdc9d23d7aec1e0e4efed907e95; local static reproduction also retains a quoted imperative while dropping its framing prose. A fix artifact is ready, but this worker cannot validate or modify it: the checkout lacks the preflight main commit, pnpm cannot create its Corepack cache in the read-only sandbox, and the required sibling ../codex source is absent and cannot be cloned here.
+Plan one focused bootstrap-digest repair. An in-memory source probe reproduced lost example framing at 600- and 400-character budgets. No files or GitHub state changed; full tests remain blocked by missing dependencies.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/137959
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #136991 | keep_closed | skipped | related | Historical adjacent context only; no closure or mutation is appropriate. |
-| #137959 | fix_needed | planned | canonical | Implement the owner-boundary fix on a refreshed checkout before opening the one permitted credited ClawSweeper PR. |
-| cluster:issue-openclaw-openclaw-137959 | build_fix_artifact | blocked | canonical | Refresh to the preflight main SHA and use a writable executor with dependencies and the required sibling Codex checkout; then implement and validate the narrow artifact. |
+| #137959 | fix_needed | planned | canonical | Keep this issue as the repair owner and implement the supplied narrow plan after its validation prerequisites are satisfied. |
+| #136991 | route_security | planned | security_sensitive | Quarantine this exact historical reference for central security handling under the worker's credential-content rule. Recommend no GitHub mutation or reopening; it does not block the independent digest repair. |
 
 ## Needs Human
 
