@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137742",
+  "mode": "autonomous",
+  "run_id": "33826174052",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33826174052",
+  "head_sha": "6f229a508dd718a406651e1b3744a5c02617265e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137742.md",
+  "published_at": "2026-09-04T01:48:57.704Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137742",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137742",
+  "canonical_pr": null,
+  "summary": "#137742 is a reproducible Doctor-only false negative on main 75130176b97c4b3bf985e2c41e9a33288bc1a179. Implementation is blocked in this read-only checkout: the required sibling ../codex source is absent and cannot be cloned, and dependencies cannot be installed to run the regression. A narrow fix artifact is ready.",
+  "actions": [
+    {
+      "target": "#137742",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137742",
+      "candidate_fix": null,
+      "reason": "Produce the planned narrow repair in a writable checkout with ../codex available, then run the focused regression and changed gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137742",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137742",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan; no GitHub mutation is performed by this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
