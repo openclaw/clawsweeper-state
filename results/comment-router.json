@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:04:44.624Z",
+  "updated_at": "2026-09-04T03:05:01.377Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137589:5532785198:2026-09-03T22:09:01Z:re_review",
-      "comment_id": "5532785198",
-      "comment_version_key": "5532785198:2026-09-03T22:09:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137589#issuecomment-5532785198",
-      "comment_created_at": "2026-09-03T22:09:01Z",
-      "comment_updated_at": "2026-09-03T22:09:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137589,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T22:17:52.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/historical-release-package-guards",
-        "head_sha": "bb681370b5d160ed112ee9b603083652854215f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:68843:4326365175:2026-09-03T22:09:47Z:clawsweeper_needs_human",
       "comment_id": "4326365175",
@@ -33523,6 +33476,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T03:04:44.624Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137774:5534534822:2026-09-04T02:59:46Z:clawsweeper_needs_human",
+      "comment_id": "5534534822",
+      "comment_version_key": "5534534822:2026-09-04T02:59:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137774#issuecomment-5534534822",
+      "comment_created_at": "2026-09-04T01:50:54Z",
+      "comment_updated_at": "2026-09-04T02:59:46Z",
+      "comment_body_sha256": "0533509d4227999877e16d81ec32a226ff7e22dea8b8e44ef444f5a453d34ce5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137774,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required ci-gate is currently failing because its security-audit advisory request timed out; merge readiness still needs a successful exact-head gate. (sha=27b060eb2edb46192b926f5c88312a77a0f1c105)",
+      "expected_head_sha": "27b060eb2edb46192b926f5c88312a77a0f1c105",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T03:05:01.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-bounded-work",
+        "head_sha": "27b060eb2edb46192b926f5c88312a77a0f1c105",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
