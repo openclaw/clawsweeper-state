@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04T10:43:57.853Z",
+  "updated_at": "2026-09-04T10:43:36.019Z",
   "commands": [
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137974:5537023135:2026-09-04T07:09:56Z:re_review",
@@ -33057,37 +33057,51 @@
       "target": null
     },
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136884:5519581685:2026-09-04T10:34:39Z:clawsweeper_needs_human",
-      "comment_id": "5519581685",
-      "comment_version_key": "5519581685:2026-09-04T10:34:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136884#issuecomment-5519581685",
-      "comment_created_at": "2026-09-03T02:49:30Z",
-      "comment_updated_at": "2026-09-04T10:34:39Z",
-      "comment_body_sha256": "ac0ff30aef0d1da58c80c0b83187395c71b1288b5025f52da99b89fdbbe3b653",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136884,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
+      "idempotency_key": "comment-router:openclaw/crabbox:1775:5539293457:2026-09-04T10:42:30Z:re_review",
+      "comment_id": "5539293457",
+      "comment_version_key": "5539293457:2026-09-04T10:42:30Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1775#issuecomment-5539293457",
+      "comment_created_at": "2026-09-04T10:42:30Z",
+      "comment_updated_at": "2026-09-04T10:42:30Z",
+      "comment_body_sha256": "bc2f53b6690c13507b586ec509d14656d059921b299adb20b967873253a26c55",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1775,
+      "author": "vincentkoc",
+      "author_id": 25068,
       "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The resolver adds 20 net production lines to a release-security gate and intentionally narrows historical advisory coverage; listed security-owner confirmation should establish that p... (sha=27496c66f3c885799451e9f3e07c9eaa4b22af91)",
-      "expected_head_sha": "27496c66f3c885799451e9f3e07c9eaa4b22af91",
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
       "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T10:43:57.853Z",
+      "status": "executed",
+      "processed_at": "2026-09-04T10:43:33.786Z",
       "target": {
         "kind": "pull_request",
-        "branch": "fix/release-frozen-dependency-lockfiles",
-        "head_sha": "27496c66f3c885799451e9f3e07c9eaa4b22af91",
+        "branch": "feat/image-qualification-harness",
+        "head_sha": "687a0aa5daeec7147ec03aa27eedb3c6fc109950",
         "cluster_id": null,
         "job_path": null
-      }
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
