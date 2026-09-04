@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138316",
+  "mode": "autonomous",
+  "run_id": "33892149167",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33892149167",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138316.md",
+  "published_at": "2026-09-04T16:02:14.633Z",
+  "canonical": "#138316",
+  "canonical_issue": "#138316",
+  "canonical_pr": null,
+  "summary": "No code was changed. Current-main source tracing identifies the narrow CLI cron route omission, but the mandatory sibling ../codex checkout is absent in this read-only environment, so AGENTS.md prohibits an implementation verdict or edit.",
+  "actions": [
+    {
+      "target": "#138316",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Restore the required Codex source checkout (or provide an environment that contains it) before applying the prepared narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide the required sibling ../codex checkout or a writable/network-enabled worker that can clone it; then rerun this repair job so the acting worker can inspect the exact Codex protocol/runtime contract before editing."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
