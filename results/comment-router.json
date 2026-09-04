@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-04T21:42:56.119Z",
+  "updated_at": "2026-09-04T21:41:34.678Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137594:5532842645:2026-09-04T16:10:32Z:clawsweeper_auto_repair",
+      "comment_id": "5532842645",
+      "comment_version_key": "5532842645:2026-09-04T16:10:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137594#issuecomment-5532842645",
+      "comment_created_at": "2026-09-03T22:15:13Z",
+      "comment_updated_at": "2026-09-04T16:10:32Z",
+      "comment_body_sha256": "7167e6c6dba32adef170d0fa041c82ca432bd0dca0889b9af4ee31f002c379b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137594,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e95f778e8ed6cad6c84c20c132fe2936fb3e60a0)",
+      "expected_head_sha": "e95f778e8ed6cad6c84c20c132fe2936fb3e60a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T16:36:26.304Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-search-mcp-outage",
+        "head_sha": "e95f778e8ed6cad6c84c20c132fe2936fb3e60a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137874:5535323046:2026-09-04T16:09:23Z:clawsweeper_auto_repair",
       "comment_id": "5535323046",
@@ -32913,39 +32946,6 @@
           "job_path": null
         }
       ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138394:5543631825:2026-09-04T21:41:43Z:clawsweeper_needs_human",
-      "comment_id": "5543631825",
-      "comment_version_key": "5543631825:2026-09-04T21:41:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138394#issuecomment-5543631825",
-      "comment_created_at": "2026-09-04T16:40:23Z",
-      "comment_updated_at": "2026-09-04T21:41:43Z",
-      "comment_body_sha256": "89cec327977df430880cef92d3f909403e6dffd2d78cfa17724a2f89a208a42a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138394,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Fence replayed resumption notices with the current owner (P1)** - The new pending-notice branch awaits recovery after the sweeper’s identity check, then calls the external sender without an exact-current-owner c...; Review finding: [P1] Fence replayed resumption notices with the current owner — src/agents/subagents/registry/subagent-registry-restart-recovery.ts:51-57 - [medium] Stale recovery... (sha=ac2228d6b3eee731be4fb3758589d657b367c798)",
-      "expected_head_sha": "ac2228d6b3eee731be4fb3758589d657b367c798",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T21:42:56.119Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/restart-safe-task-recovery",
-        "head_sha": "ac2228d6b3eee731be4fb3758589d657b367c798",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
