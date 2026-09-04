@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T08:06:08.818Z",
+  "updated_at": "2026-09-04T08:06:16.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137893:5535492407:2026-09-04T04:05:30Z:re_review",
-      "comment_id": "5535492407",
-      "comment_version_key": "5535492407:2026-09-04T04:05:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5535492407",
-      "comment_created_at": "2026-09-04T04:05:30Z",
-      "comment_updated_at": "2026-09-04T04:05:30Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137893,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T04:36:03.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-native-legacy-package",
-        "head_sha": "d20b4f390eced5a728a4c93abd668a044d943259",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137411:5535600725:2026-09-04T04:20:33Z:re_review",
       "comment_id": "5535600725",
@@ -32795,6 +32748,39 @@
         "kind": "pull_request",
         "branch": "fix/prepare-hook-timeout",
         "head_sha": "335003e7cbbe5e9596d9c7004a2ac0375043ddad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/poltergeist:218:5482355552:2026-09-04T08:05:16Z:clawsweeper_needs_human",
+      "comment_id": "5482355552",
+      "comment_version_key": "5482355552:2026-09-04T08:05:16Z",
+      "comment_url": "https://github.com/steipete/poltergeist/pull/218#issuecomment-5482355552",
+      "comment_created_at": "2026-08-31T17:58:47Z",
+      "comment_updated_at": "2026-09-04T08:05:16Z",
+      "comment_body_sha256": "38f5bd7c916b8fefc9ff395e1bc2cd3b32f3f401a6bc45a81039d32be9191860",
+      "repo": "steipete/poltergeist",
+      "issue_number": 218,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e1d27e9763d4c9c3ee8fe5ef3443a6a67da1d602)",
+      "expected_head_sha": "e1d27e9763d4c9c3ee8fe5ef3443a6a67da1d602",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T08:06:16.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/es-toolkit-1.52.0",
+        "head_sha": "e1d27e9763d4c9c3ee8fe5ef3443a6a67da1d602",
         "cluster_id": null,
         "job_path": null
       }
