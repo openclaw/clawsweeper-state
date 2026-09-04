@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138620",
+  "mode": "autonomous",
+  "run_id": "33922487297",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33922487297",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138620.md",
+  "published_at": "2026-09-04T21:54:55.068Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138620",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138620",
+  "canonical_pr": null,
+  "summary": "Narrow fix plan prepared for #138620. Implementation is blocked in this worker: the required preflight main SHA is absent from the checkout, node_modules is missing in the read-only checkout, and mandatory sibling ../codex source is unavailable for the required direct inspection gate.",
+  "actions": [
+    {
+      "target": "#138620",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138620",
+      "candidate_fix": null,
+      "reason": "The issue has a narrow owner-boundary repair; a writable, current checkout must reproduce the child assertion before applying it."
+    },
+    {
+      "target": "#131074",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138620",
+      "candidate_fix": null,
+      "reason": "Related external-service update behavior, but a separate root cause and existing linked implementation path."
+    },
+    {
+      "target": "#137503",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent Doctor/service-maintenance bug."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138620",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138620",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for execution after refreshing the checkout and satisfying the Codex source gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138620",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138620",
+      "candidate_fix": null,
+      "reason": "Do not open a PR until the exact preflight base is available, the failing regression has run, and the mandatory direct Codex inspection gate is satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
