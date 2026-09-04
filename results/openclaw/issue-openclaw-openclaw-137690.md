@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137690"
 mode: "autonomous"
-run_id: "33822350006"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33822350006"
-head_sha: "72041f31e1d34cff19f50da4b23c4a22a78c828a"
-workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-09-04T01:18:11.910Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137690"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137690"
+run_id: "33826811539"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33826811539"
+head_sha: "6f229a508dd718a406651e1b3744a5c02617265e"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-09-04T02:07:14.308Z"
+canonical: "#137690"
+canonical_issue: "#137690"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33822350006](https://github.com/openclaw/clawsweeper/actions/runs/33822350006)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33826811539](https://github.com/openclaw/clawsweeper/actions/runs/33826811539)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/137690
+Canonical: #137690
 
 ## Summary
 
-A narrow repair is planned for visible sessions_spawn lineage. Current main cd8c74889d21ddcc9f3a2d47fe868224a0e44acb passes the policy/sandbox key to sessions_spawn while the durable run key is available separately; visible creation uses that policy key as parentSessionKey. The worker checkout is read-only, has no node_modules, and lacks ../codex required by the repository gate, so no branch edit or local validation was performed here.
+Latest main (7ea7ada9) still routes the policy/sandbox key as visible-spawn parent lineage. A narrow fix PR is appropriate, but this read-only checkout cannot create the patch/branch, install missing dependencies, or clone the mandatory sibling ../codex source.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ A narrow repair is planned for visible sessions_spawn lineage. Current main cd8c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #94930 | keep_closed | skipped | related | Historical related context; not a target for this repair. |
-| #137690 | keep_canonical | planned | canonical | Open canonical issue with a source-reproducible, bounded owner-boundary defect and no hydrated implementation PR. |
-| cluster:issue-openclaw-openclaw-137690 | fix_needed | planned | canonical | Create one narrow credited fix PR from clawsweeper/issue-openclaw-openclaw-137690. |
-| cluster:issue-openclaw-openclaw-137690 | build_fix_artifact | planned | canonical | Artifact supplies an executable, narrow PR path; no GitHub mutation is performed by this worker. |
+| #137690 | fix_needed | blocked | canonical | Use a writable repair environment with ../codex available, then implement and validate the attached narrow artifact. |
 
 ## Needs Human
 
