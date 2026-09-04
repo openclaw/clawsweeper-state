@@ -67,20 +67,17 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair `openclaw update repair` so each fresh `doctor --repair` child receives `serviceRepairPolicy: "external"` through `buildUpdateDoctorEnv`, matching the existing no-service-repair and no-activation finalization boundary. Preserve the builder’s general behavior of clearing inherited values when callers omit the policy; do not add configuration, alter direct Doctor semantics, or make the updater install, activate, or take over external services. Establish a regression that fails before the change by asserting the policy in the existing fresh child for both pre-plugin and post-plugin phases, then retain the existing Doctor service-policy coverage. Record release-note context in the PR body, not CHANGELOG.md.
+Repair the source-proven update-repair defect in src/cli/update-cli/update-command-fresh-doctor.ts. Preserve the external service-repair policy for its pre-plugin and post-plugin fresh Doctor children while service repair and activation remain disabled. Add a focused boundary regression in the colocated test that captures the runExec environment for both phases, proves the pre-fix omission, and verifies the post-plugin-only convergence marker. Reuse the existing exported helper; do not add a production test seam, weaken environment isolation, alter service ownership, or add configuration/schema surface. Validate the supported update-repair path and stop for maintainer review if broader service-policy behavior would change.
 
 Likely files:
 
 - src/cli/update-cli/update-command-fresh-doctor.ts
-- src/cli/update-cli/update-command-lease.test.ts
-- src/cli/update-cli/update-command-lease.test-support.ts
-- src/commands/doctor-gateway-daemon-flow.test.ts
+- src/cli/update-cli/update-command-fresh-doctor.test.ts
 
 Validation:
 
-- pnpm test src/cli/update-cli/update-command-lease.test.ts
-- pnpm test src/commands/doctor-gateway-daemon-flow.test.ts
-- pnpm check:changed -- src/cli/update-cli/update-command-fresh-doctor.ts src/cli/update-cli/update-command-lease.test.ts src/cli/update-cli/update-command-lease.test-support.ts
+- node scripts/run-vitest.mjs src/cli/update-cli/update-command-fresh-doctor.test.ts
+- node scripts/run-vitest.mjs src/infra/update-runner.test.ts
 
 ## Operator Prompt
 
