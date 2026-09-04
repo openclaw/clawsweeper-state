@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138153",
+  "mode": "autonomous",
+  "run_id": "33862518208",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33862518208",
+  "head_sha": "934d526e73e032ece6fcd23f374be9895dffd71b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138153.md",
+  "published_at": "2026-09-04T10:35:46.255Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138153",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138153",
+  "canonical_pr": null,
+  "summary": "#138153 remains the open canonical bug. Current main still conditionally uses a disposable full checkout and still injects a pre-payload receiver auto-commit, but this read-only checkout cannot install dependencies, run the required regression/native Testbox reproduction, inspect the required sibling ../codex source, or create the repair branch. A narrow, credited new-fix-PR artifact is prepared for a writable executor with the pinned native Testbox client.",
+  "actions": [
+    {
+      "target": "#138153",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138153",
+      "candidate_fix": null,
+      "reason": "Keep the source issue open while the repair is reproduced and validated in a writable Testbox-capable checkout."
+    },
+    {
+      "target": "#138153",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138153",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the worker environment: it is read-only, cannot hydrate dependencies, lacks the pinned native Testbox client, and cannot satisfy the mandatory sibling Codex-source inspection gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138153",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138153",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate the narrow repair without product, configuration, schema, or security-boundary changes."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
