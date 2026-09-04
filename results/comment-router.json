@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T08:26:01.247Z",
+  "updated_at": "2026-09-04T08:27:51.479Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137865:5535483277:2026-09-04T04:04:15Z:clawsweeper_needs_human",
-      "comment_id": "5535483277",
-      "comment_version_key": "5535483277:2026-09-04T04:04:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137865#issuecomment-5535483277",
-      "comment_created_at": "2026-09-04T04:04:15Z",
-      "comment_updated_at": "2026-09-04T04:04:15Z",
-      "comment_body_sha256": "b63c051f026973b79f483c2bb706c758a54ace687cad1544cf5ef37a2cfaa28d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137865,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Submitting an unbounded complete graph changes external npm request size; the review could not independently verify a practical payload limit or obtain a current live response because... (sha=2590ffd8b86edd712c4b841b720755cd368f4e02)",
-      "expected_head_sha": "2590ffd8b86edd712c4b841b720755cd368f4e02",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T04:36:42.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/npm-audit-single-bulk-request",
-        "head_sha": "2590ffd8b86edd712c4b841b720755cd368f4e02",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137868:5535487191:2026-09-04T04:04:45Z:clawsweeper_needs_human",
       "comment_id": "5535487191",
@@ -32744,6 +32711,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1620:5537815579:2026-09-04T08:26:56Z:re_review",
+      "comment_id": "5537815579",
+      "comment_version_key": "5537815579:2026-09-04T08:26:56Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1620#issuecomment-5537815579",
+      "comment_created_at": "2026-09-04T08:26:56Z",
+      "comment_updated_at": "2026-09-04T08:26:56Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1620,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T08:27:47.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gcp-created-image-provenance",
+        "head_sha": "813fb0be6f0a571e9fb2fc5cd37569c8fbf11c9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
