@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138388",
+  "mode": "autonomous",
+  "run_id": "33896539897",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33896539897",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138388.md",
+  "published_at": "2026-09-04T16:50:03.650Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138388",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138388",
+  "canonical_pr": null,
+  "summary": "#138388 remains the open canonical bug. Current main a3e18fac includes authProfileId unconditionally in the reply tool-authority fingerprint, while active steering queues non-route authority mismatches before injection. A narrow repair artifact is prepared, but implementation is blocked: the mandatory sibling ../codex source is absent and this checkout is read-only, so the required Codex runtime inspection, regression edit, and validation cannot be performed here.",
+  "actions": [
+    {
+      "target": "#138388",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138388",
+      "candidate_fix": null,
+      "reason": "Open canonical bug; no candidate PR was hydrated."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138388",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138388",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable checkout with the mandatory sibling Codex source available for direct runtime/protocol inspection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138388",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138388",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR path prepared; execution remains blocked on the stated environment prerequisites."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
