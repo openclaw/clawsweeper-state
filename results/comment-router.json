@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T14:34:08.386Z",
+  "updated_at": "2026-09-04T14:35:14.659Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137030:5520981045:2026-09-04T09:54:10Z:clawsweeper_needs_human",
-      "comment_id": "5520981045",
-      "comment_version_key": "5520981045:2026-09-04T09:54:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137030#issuecomment-5520981045",
-      "comment_created_at": "2026-09-03T05:29:55Z",
-      "comment_updated_at": "2026-09-04T09:54:10Z",
-      "comment_body_sha256": "1a4187ce77e76ca8918f116b537de028fa98425cc824e87838bb86607985a268",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137030,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The stale GitHub test merge does not match the pinned base and head, while exact-head checks include failures; landing without a refreshed current-main merge and exact-head validation... (sha=fe5cf89765bca34b6c9d1598708f20b628f9561b)",
-      "expected_head_sha": "fe5cf89765bca34b6c9d1598708f20b628f9561b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T09:59:04.731Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-loop-stress-fixes",
-        "head_sha": "fe5cf89765bca34b6c9d1598708f20b628f9561b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:404:5538778602:2026-09-04T09:54:21Z:clawsweeper_needs_human",
       "comment_id": "5538778602",
@@ -33789,6 +33756,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137424:5541976320:2026-09-04T14:34:11Z:re_review",
+      "comment_id": "5541976320",
+      "comment_version_key": "5541976320:2026-09-04T14:34:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137424#issuecomment-5541976320",
+      "comment_created_at": "2026-09-04T14:34:11Z",
+      "comment_updated_at": "2026-09-04T14:34:11Z",
+      "comment_body_sha256": "0074b4ccee55cdef94446cd37e34d04693cb3e1293818cc8071e81fcf7a0bc5e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137424,
+      "author": "ceckert",
+      "author_id": 779559,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T14:35:12.904Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/upstream-agent-db-recreate-cfa",
+        "head_sha": "8b3d66c5f3b8f7eef37cd762f4920358e444126b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
