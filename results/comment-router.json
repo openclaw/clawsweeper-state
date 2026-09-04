@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T05:29:00.475Z",
+  "updated_at": "2026-09-04T05:31:14.115Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137780:5534578747:2026-09-04T02:42:24Z:clawsweeper_needs_human",
-      "comment_id": "5534578747",
-      "comment_version_key": "5534578747:2026-09-04T02:42:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137780#issuecomment-5534578747",
-      "comment_created_at": "2026-09-04T01:57:06Z",
-      "comment_updated_at": "2026-09-04T02:42:24Z",
-      "comment_body_sha256": "4567577137dfe032a81eeb708aa626c4dc8b27b336b809ea2bfce2109d83a7f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137780,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Operators with a legacy owner value remain denied until they run the documented openclaw doctor --fix migration; the PR deliberately avoids silently accepting the retired runtime form. (sha=024ac64b6257b089efd405cfb64c46d0fe86f96f)",
-      "expected_head_sha": "024ac64b6257b089efd405cfb64c46d0fe86f96f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T02:52:36.706Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/legacy-owner-identity-migration",
-        "head_sha": "024ac64b6257b089efd405cfb64c46d0fe86f96f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137798:5534692584:2026-09-04T02:46:11Z:clawsweeper_needs_human",
       "comment_id": "5534692584",
@@ -31860,6 +31827,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:steipete/CodexBar:3411:5536117956:2026-09-04T05:25:27Z:re_review",
+      "comment_id": "5536117956",
+      "comment_version_key": "5536117956:2026-09-04T05:25:27Z",
+      "comment_url": "https://github.com/steipete/CodexBar/issues/3411#issuecomment-5536117956",
+      "comment_created_at": "2026-09-04T05:25:27Z",
+      "comment_updated_at": "2026-09-04T05:25:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3411,
+      "author": "kesslerio",
+      "author_id": 2647990,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T05:31:12.182Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
