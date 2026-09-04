@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T23:54:44.454Z",
+  "updated_at": "2026-09-04T23:54:47.817Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138289:5544725341:2026-09-04T18:18:50Z:re_review",
-      "comment_id": "5544725341",
-      "comment_version_key": "5544725341:2026-09-04T18:18:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138289#issuecomment-5544725341",
-      "comment_created_at": "2026-09-04T18:18:50Z",
-      "comment_updated_at": "2026-09-04T18:18:50Z",
-      "comment_body_sha256": "7075c3c65a9567653e6b0cb5dddc1154ef0e29631c31c0da85a46ca1174e88c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138289,
-      "author": "lgrosales",
-      "author_id": 1278571,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T18:36:22.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/openai-safety-identifier",
-        "head_sha": "910851d5ce2efd2a8b21c62128b3643db5064d98",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138449:5544729014:2026-09-04T18:19:08Z:re_review",
       "comment_id": "5544729014",
@@ -33358,6 +33311,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126457:5348830579:2026-09-04T23:53:48Z:clawsweeper_needs_human",
+      "comment_id": "5348830579",
+      "comment_version_key": "5348830579:2026-09-04T23:53:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126457#issuecomment-5348830579",
+      "comment_created_at": "2026-08-19T22:37:28Z",
+      "comment_updated_at": "2026-09-04T23:53:48Z",
+      "comment_body_sha256": "299cf4d0fa46462304b150b64c579b1d3cface6b72b09a67b0b5b1c1fac5ab37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - If loaded-job inspection fails or returns no valid timeout, existing LaunchAgents receive an immediate shutdown deadline; active work and resource cleanup may be cut short, and the na... (sha=5817467d30a50e4fadfbfeed0b7b5bfaefaa1235)",
+      "expected_head_sha": "5817467d30a50e4fadfbfeed0b7b5bfaefaa1235",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T23:54:47.817Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-tailscale-owner-lifecycle",
+        "head_sha": "5817467d30a50e4fadfbfeed0b7b5bfaefaa1235",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
