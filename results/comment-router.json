@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T10:44:14.127Z",
+  "updated_at": "2026-09-04T10:44:55.693Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137993:5537036092:2026-09-04T07:11:14Z:clawsweeper_needs_human",
-      "comment_id": "5537036092",
-      "comment_version_key": "5537036092:2026-09-04T07:11:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137993#issuecomment-5537036092",
-      "comment_created_at": "2026-09-04T07:11:14Z",
-      "comment_updated_at": "2026-09-04T07:11:14Z",
-      "comment_body_sha256": "df1b378db0b54d3ca71f069bbf31b5925413ef30e7efc5b1ceaaa2eb19f9eac2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137993,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The SDK's pre-start stderr-stream contract remains independently unverified because dependency source and network inspection were unavailable to this reviewer. (sha=85b84acf4611812cc133a93195b26421f43c3dc6)",
-      "expected_head_sha": "85b84acf4611812cc133a93195b26421f43c3dc6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T07:12:07.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-mcp-startup-stderr-ec0f57",
-        "head_sha": "85b84acf4611812cc133a93195b26421f43c3dc6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137687:5533962570:2026-09-04T07:07:00Z:clawsweeper_auto_repair",
       "comment_id": "5533962570",
@@ -33054,6 +33021,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138175:5539304616:2026-09-04T10:43:35Z:re_review",
+      "comment_id": "5539304616",
+      "comment_version_key": "5539304616:2026-09-04T10:43:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138175#issuecomment-5539304616",
+      "comment_created_at": "2026-09-04T10:43:35Z",
+      "comment_updated_at": "2026-09-04T10:43:35Z",
+      "comment_body_sha256": "848aa87312e5b42adf8b8e7d58f90430522769c86892bc3c4d0025dcb412246b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138175,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T10:44:53.937Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/vitest5-sequential-compat",
+        "head_sha": "5c88ceb2c4f4bd06d1f7b09ee9ea1b62c5d484ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
