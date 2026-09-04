@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138316",
+  "mode": "autonomous",
+  "run_id": "33895663443",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33895663443",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138316.md",
+  "published_at": "2026-09-04T16:38:56.804Z",
+  "canonical": "#138316",
+  "canonical_issue": "#138316",
+  "canonical_pr": null,
+  "summary": "Current source supports the reported CLI-only omission, but no repair branch or regression could be created or validated: the checkout is read-only, `pnpm install` cannot create Corepack cache files, and the mandatory sibling `../codex` source clone cannot be created for the required direct Codex protocol inspection.",
+  "actions": [
+    {
+      "target": "#66460",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Already closed."
+    },
+    {
+      "target": "#127777",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Potential cross-conversation sensitive-data exposure is out of scope for this repair lane."
+    },
+    {
+      "target": "#130249",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Related async-completion family, with distinct root cause and reproduction."
+    },
+    {
+      "target": "#135117",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Potential sensitive cross-channel disclosure requires central security handling."
+    },
+    {
+      "target": "#138269",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Already closed predecessor context."
+    },
+    {
+      "target": "#138316",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "A writable checkout with dependencies and the mandatory sibling Codex source is required before the worker may edit, reproduce, or declare the repair validated."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "route_security": 2,
+    "keep_related": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable repair checkout that includes a direct `../codex` clone and permits dependency installation, then rerun this job from the supplied artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
