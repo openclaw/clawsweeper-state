@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T04:48:11.160Z",
+  "updated_at": "2026-09-04T04:48:16.898Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137774:5534534822:2026-09-04T01:50:54Z:clawsweeper_needs_human",
-      "comment_id": "5534534822",
-      "comment_version_key": "5534534822:2026-09-04T01:50:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137774#issuecomment-5534534822",
-      "comment_created_at": "2026-09-04T01:50:54Z",
-      "comment_updated_at": "2026-09-04T01:50:54Z",
-      "comment_body_sha256": "de6d7dc69d563c4a27c7124013bf783f1595478d82ad2a3c5182c25253652e67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137774,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body says its exact-revision Gateway baseline/candidate comparison is still running; landing before that evidence appears would leave the claimed event-loop improvement unverif... (sha=734d23496755947d942e291a3988bb829cfc3ecb)",
-      "expected_head_sha": "734d23496755947d942e291a3988bb829cfc3ecb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T01:51:44.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-bounded-work",
-        "head_sha": "734d23496755947d942e291a3988bb829cfc3ecb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137771:5534534733:2026-09-04T01:50:54Z:clawsweeper_needs_human",
       "comment_id": "5534534733",
@@ -32718,6 +32685,53 @@
       "status": "skipped",
       "processed_at": "2026-09-04T04:48:11.160Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137147:5535784624:2026-09-04T04:47:48Z:re_review",
+      "comment_id": "5535784624",
+      "comment_version_key": "5535784624:2026-09-04T04:47:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137147#issuecomment-5535784624",
+      "comment_created_at": "2026-09-04T04:46:28Z",
+      "comment_updated_at": "2026-09-04T04:47:48Z",
+      "comment_body_sha256": "93c897e27a88dc02537836d06609a6dde9a44769dd0ac1f64b3579c732f495e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137147,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T04:48:12.066Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/code-bug-gateway-monotonic-deadline-20260902",
+        "head_sha": "985375e0f3b6f5d7a4750093b4c257524f068669",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
