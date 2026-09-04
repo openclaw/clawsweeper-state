@@ -1,0 +1,55 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138251",
+  "mode": "autonomous",
+  "run_id": "33878784259",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33878784259",
+  "head_sha": "1ac35d2489a243b7a49ed30d887e5a384f4f9af3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138251.md",
+  "published_at": "2026-09-04T13:47:10.044Z",
+  "canonical": "#138251",
+  "canonical_issue": "#138251",
+  "canonical_pr": null,
+  "summary": "#138251 remains the open canonical bug. Current main source shows normal and fast channel resets drop appearance metadata, while Gateway separately drops color. Implementation is blocked before code changes: required sibling ../codex source is absent and this sandbox is read-only/no-network.",
+  "actions": [
+    {
+      "target": "#138251",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138251",
+      "candidate_fix": null,
+      "reason": "Cannot satisfy the mandatory direct Codex-source inspection or write the failing-first regression and repair in this environment."
+    },
+    {
+      "target": "#138251",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138251",
+      "candidate_fix": null,
+      "reason": "Prepared for a writable worker after the Codex-source gate is satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable worker with sibling ../codex available for direct inspection (or permit its clone). Then implement and validate the prepared narrow repair on clawsweeper/issue-openclaw-openclaw-138251."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
