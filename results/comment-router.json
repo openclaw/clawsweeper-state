@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T08:16:57.386Z",
+  "updated_at": "2026-09-04T08:17:03.445Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137754:5534513297:2026-09-04T03:56:40Z:clawsweeper_needs_human",
-      "comment_id": "5534513297",
-      "comment_version_key": "5534513297:2026-09-04T03:56:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137754#issuecomment-5534513297",
-      "comment_created_at": "2026-09-04T01:47:48Z",
-      "comment_updated_at": "2026-09-04T03:56:40Z",
-      "comment_body_sha256": "4d511bd11b99e9c50c83b095809152f9fd7cf246c74f1d783103b207b921bc3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137754,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied check snapshot still includes failed iOS/security runs and queued native checks; merge only after required checks are green on the exact PR head. (sha=3fb50f942e47ba76b722324ddd759eaf00ab9a73)",
-      "expected_head_sha": "3fb50f942e47ba76b722324ddd759eaf00ab9a73",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T04:36:42.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-apple-active-session-archive-20260903",
-        "head_sha": "3fb50f942e47ba76b722324ddd759eaf00ab9a73",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137775:5534622015:2026-09-04T03:56:58Z:clawsweeper_needs_human",
       "comment_id": "5534622015",
@@ -32722,6 +32689,53 @@
       "status": "skipped",
       "processed_at": "2026-09-04T08:16:57.386Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131108:5537704289:2026-09-04T08:15:57Z:re_review",
+      "comment_id": "5537704289",
+      "comment_version_key": "5537704289:2026-09-04T08:15:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131108#issuecomment-5537704289",
+      "comment_created_at": "2026-09-04T08:15:57Z",
+      "comment_updated_at": "2026-09-04T08:15:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131108,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T08:17:00.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/atomic-bootstrap-publish",
+        "head_sha": "d3f27071d3c2ce70b4eb693df1245c2b7b97cdc9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
