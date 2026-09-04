@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T22:46:23.876Z",
+  "updated_at": "2026-09-04T22:46:42.091Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138372:5543968779:2026-09-04T17:10:03Z:re_review",
-      "comment_id": "5543968779",
-      "comment_version_key": "5543968779:2026-09-04T17:10:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138372#issuecomment-5543968779",
-      "comment_created_at": "2026-09-04T17:10:03Z",
-      "comment_updated_at": "2026-09-04T17:10:03Z",
-      "comment_body_sha256": "08c236a0c9cd53432bfd7c3df9451f52c4b277e7d868cc54847cb09574d774ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138372,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T17:41:41.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/native-app-locale-refresh",
-        "head_sha": "0f6bf65bd425087e913191f77261f5094c6f68a1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137390:5544039579:2026-09-04T17:16:28Z:re_review",
       "comment_id": "5544039579",
@@ -33185,6 +33138,39 @@
         "kind": "pull_request",
         "branch": "leon/feature-review-markdown-preview",
         "head_sha": "685e926dc38ed3c353b6de94b0585819e2582c49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137126:5522265070:2026-09-04T22:45:36Z:clawsweeper_needs_human",
+      "comment_id": "5522265070",
+      "comment_version_key": "5522265070:2026-09-04T22:45:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137126#issuecomment-5522265070",
+      "comment_created_at": "2026-09-03T07:36:33Z",
+      "comment_updated_at": "2026-09-04T22:45:36Z",
+      "comment_body_sha256": "ce2033eea95419bcf99b48385c54c887f085d40083332e519d5b03ae2c01ffe3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed owner is Memory Core's watcher-to-index synchronization lifecycle, but the supplied runs re... (sha=0c08915eee99cb4960685d7467332d27cc770087)",
+      "expected_head_sha": "0c08915eee99cb4960685d7467332d27cc770087",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T22:46:42.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-watch-kernel-capacity-degrade",
+        "head_sha": "0c08915eee99cb4960685d7467332d27cc770087",
         "cluster_id": null,
         "job_path": null
       }
