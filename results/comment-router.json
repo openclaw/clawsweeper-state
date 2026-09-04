@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:15:00.263Z",
+  "updated_at": "2026-09-04T21:32:02.646Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138384:5543300848:2026-09-04T16:12:39Z:clawsweeper_needs_human",
-      "comment_id": "5543300848",
-      "comment_version_key": "5543300848:2026-09-04T16:12:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138384#issuecomment-5543300848",
-      "comment_created_at": "2026-09-04T16:12:39Z",
-      "comment_updated_at": "2026-09-04T16:12:39Z",
-      "comment_body_sha256": "6679dd629435afedbf609d549fed616c52606da7af80611b4d49dd6394da14db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138384,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The added test exercises the real Workboard tool functions and host predicate, but it uses an in-memory store and does not show an after-fix re... (sha=2d0f7d549cbab626957037b4dad84a18b19b20f8)",
-      "expected_head_sha": "2d0f7d549cbab626957037b4dad84a18b19b20f8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T16:13:42.345Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workboard-blocked-card-result",
-        "head_sha": "2d0f7d549cbab626957037b4dad84a18b19b20f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3521:5398117326:2026-09-04T16:14:17Z:clawsweeper_needs_human",
       "comment_id": "5398117326",
@@ -32934,6 +32901,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138394:5546674688:2026-09-04T21:30:53Z:re_review",
+      "comment_id": "5546674688",
+      "comment_version_key": "5546674688:2026-09-04T21:30:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138394#issuecomment-5546674688",
+      "comment_created_at": "2026-09-04T21:30:53Z",
+      "comment_updated_at": "2026-09-04T21:30:53Z",
+      "comment_body_sha256": "57f2bb84243663fe2e3da1bb6e7d2a226a1130ca9f15ef32eee11dda7118c94f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138394,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T21:32:00.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/restart-safe-task-recovery",
+        "head_sha": "ac2228d6b3eee731be4fb3758589d657b367c798",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
