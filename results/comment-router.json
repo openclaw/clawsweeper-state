@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:51:05.963Z",
+  "updated_at": "2026-09-04T01:51:07.755Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137236:5530045095:2026-09-03T18:09:52Z:re_review",
-      "comment_id": "5530045095",
-      "comment_version_key": "5530045095:2026-09-03T18:09:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137236#issuecomment-5530045095",
-      "comment_created_at": "2026-09-03T18:09:52Z",
-      "comment_updated_at": "2026-09-03T18:09:52Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137236,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T18:25:30.312Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-ask-user-prompt-expiry",
-        "head_sha": "7cc95f6c19b4591c5377a50993e0e30a58555c95",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137236:5524214856:2026-09-03T18:24:31Z:clawsweeper_auto_repair",
       "comment_id": "5524214856",
@@ -33723,6 +33676,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-delete-ntfs-inode-identity",
         "head_sha": "55491f1afecc429d0315454b356bb5e340fb8c9a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137768:5534530021:2026-09-04T01:50:13Z:clawsweeper_needs_human",
+      "comment_id": "5534530021",
+      "comment_version_key": "5534530021:2026-09-04T01:50:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137768#issuecomment-5534530021",
+      "comment_created_at": "2026-09-04T01:50:13Z",
+      "comment_updated_at": "2026-09-04T01:50:13Z",
+      "comment_body_sha256": "3a1409449e52d669ad692bce5f3be33a987dc0d30c12e080b8f2c7ae5a90611b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging intentionally changes a trusted plugin with a present-but-broken optional policy artifact from silently proceeding without hooks to surfacing the artifact error; exact-head va... (sha=bd02ebedf9ff32cd1c6bcaad056574aa015fef27)",
+      "expected_head_sha": "bd02ebedf9ff32cd1c6bcaad056574aa015fef27",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:51:07.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/team-opt-provider-20260904",
+        "head_sha": "bd02ebedf9ff32cd1c6bcaad056574aa015fef27",
         "cluster_id": null,
         "job_path": null
       }
