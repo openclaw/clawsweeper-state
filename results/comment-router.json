@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:06:15.753Z",
+  "updated_at": "2026-09-04T01:06:55.838Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136764:5527368006:2026-09-03T14:35:05Z:re_review",
-      "comment_id": "5527368006",
-      "comment_version_key": "5527368006:2026-09-03T14:35:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136764#issuecomment-5527368006",
-      "comment_created_at": "2026-09-03T14:35:05Z",
-      "comment_updated_at": "2026-09-03T14:35:05Z",
-      "comment_body_sha256": "3276ff0f7c7f93c415aafb655ba7f17580f1240dad77ceb7889be710004a8b19",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136764,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T14:36:38.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/worktree-capacity-preflight",
-        "head_sha": "d578a6a986f0f4f69c09ce44d3759ecb7c659a70",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-09-03T14:39:35Z:clawsweeper_auto_repair",
       "comment_id": "5415957601",
@@ -33859,6 +33812,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T01:06:15.753Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137723:5534198277:2026-09-04T01:05:53Z:clawsweeper_auto_repair",
+      "comment_id": "5534198277",
+      "comment_version_key": "5534198277:2026-09-04T01:05:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137723#issuecomment-5534198277",
+      "comment_created_at": "2026-09-04T01:05:53Z",
+      "comment_updated_at": "2026-09-04T01:05:53Z",
+      "comment_body_sha256": "903f36b0f6d67322bb40c793f01f0ce09a13cf5159aaac440de33ba152caa472",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137723,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3af07a4bdf2af2a5e47944704e9dd382c53b9e64)",
+      "expected_head_sha": "3af07a4bdf2af2a5e47944704e9dd382c53b9e64",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:06:55.838Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/peaceful-babbage-a7949d",
+        "head_sha": "3af07a4bdf2af2a5e47944704e9dd382c53b9e64",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
