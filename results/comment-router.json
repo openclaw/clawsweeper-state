@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T20:46:05.260Z",
+  "updated_at": "2026-09-04T20:47:24.781Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138219:5542998292:2026-09-04T15:48:42Z:re_review",
-      "comment_id": "5542998292",
-      "comment_version_key": "5542998292:2026-09-04T15:48:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138219#issuecomment-5542998292",
-      "comment_created_at": "2026-09-04T15:48:42Z",
-      "comment_updated_at": "2026-09-04T15:48:42Z",
-      "comment_body_sha256": "582fe39171266b6a68a0b8bfd8beb5464eb2e08542dd8af7f92e348611f4a9f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138219,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T15:54:53.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "ff4da7324939e95d7f3532f893d09bd4d91bdda1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137892:5543002815:2026-09-04T15:49:05Z:re_review",
       "comment_id": "5543002815",
@@ -32997,6 +32950,39 @@
         "kind": "pull_request",
         "branch": "codex/sandbox-finalization-c396",
         "head_sha": "69d94c3a436d6ed8908844d9a725a944d54dc626",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138593:5546258797:2026-09-04T20:46:22Z:clawsweeper_needs_human",
+      "comment_id": "5546258797",
+      "comment_version_key": "5546258797:2026-09-04T20:46:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138593#issuecomment-5546258797",
+      "comment_created_at": "2026-09-04T20:46:22Z",
+      "comment_updated_at": "2026-09-04T20:46:22Z",
+      "comment_body_sha256": "d047ca2267cdb93d94fb7be13143bb0d9978e3eb4102db6ba29fe2980e013381",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138593,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 26 net lines for this bug fix; the added stable display-row reference is justified by supporting both persisted orderings without a duplicate card, and the ad... (sha=7d1bec73854213cc616bb17828203b0a5d177537)",
+      "expected_head_sha": "7d1bec73854213cc616bb17828203b0a5d177537",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T20:47:24.781Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/watch-canvas-preview-final",
+        "head_sha": "7d1bec73854213cc616bb17828203b0a5d177537",
         "cluster_id": null,
         "job_path": null
       }
