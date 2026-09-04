@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T22:03:17.196Z",
+  "updated_at": "2026-09-04T22:04:25.379Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138404:5543747814:2026-09-04T16:50:18Z:clawsweeper_needs_human",
-      "comment_id": "5543747814",
-      "comment_version_key": "5543747814:2026-09-04T16:50:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138404#issuecomment-5543747814",
-      "comment_created_at": "2026-09-04T16:50:18Z",
-      "comment_updated_at": "2026-09-04T16:50:18Z",
-      "comment_body_sha256": "eb00ab34ec4856b7b91dbc5e8dc1300e18c0101f4b9d1d67d36add9a21a408e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138404,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Testbox and POSIX changed-gate runs now fail closed on Crabbox versions below 0.37.0 and rely on the exact sync-plan --json response being complete; independent upstream contract proo... (sha=f2de3ab1a1d551ec06a52c5d0f25f44cee900aff)",
-      "expected_head_sha": "f2de3ab1a1d551ec06a52c5d0f25f44cee900aff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T16:53:33.388Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/laughing-yalow-a33e9b",
-        "head_sha": "f2de3ab1a1d551ec06a52c5d0f25f44cee900aff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138389:5543774766:2026-09-04T16:52:40Z:clawsweeper_needs_human",
       "comment_id": "5543774766",
@@ -32960,6 +32927,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138394:5546674688:2026-09-04T22:03:12Z:re_review",
+      "comment_id": "5546674688",
+      "comment_version_key": "5546674688:2026-09-04T22:03:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138394#issuecomment-5546674688",
+      "comment_created_at": "2026-09-04T21:30:53Z",
+      "comment_updated_at": "2026-09-04T22:03:12Z",
+      "comment_body_sha256": "bedffa7839961b7b2b7b5ba3755b2469cf3956609a1aec8492172b432d311d19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138394,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T22:04:23.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/restart-safe-task-recovery",
+        "head_sha": "a17e7f497e0a38b98ac4ee1c2f9b25ff59feac51",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
