@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:38:52.522Z",
+  "updated_at": "2026-09-04T21:38:59.664Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5543479563:2026-09-04T16:27:36Z:re_review",
-      "comment_id": "5543479563",
-      "comment_version_key": "5543479563:2026-09-04T16:27:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5543479563",
-      "comment_created_at": "2026-09-04T16:27:36Z",
-      "comment_updated_at": "2026-09-04T16:27:36Z",
-      "comment_body_sha256": "63c1f12a19bb545e424bef113a8b80f29e9fe7c0c3eaed567966215e55aa809d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T16:36:06.168Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bootstrap-context-event-loop-stall",
-        "head_sha": "87717e7bb213a89a8893a868ad9588e3c65eefef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137428:5543522805:2026-09-04T16:30:49Z:re_review",
       "comment_id": "5543522805",
@@ -32903,6 +32856,39 @@
         "kind": "pull_request",
         "branch": "codex/cloud-startup-recovery",
         "head_sha": "946ccd6dd67e0167f652625c91cb0a8131ae19fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138578:5546736030:2026-09-04T21:37:34Z:clawsweeper_needs_human",
+      "comment_id": "5546736030",
+      "comment_version_key": "5546736030:2026-09-04T21:37:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138578#issuecomment-5546736030",
+      "comment_created_at": "2026-09-04T21:37:34Z",
+      "comment_updated_at": "2026-09-04T21:37:34Z",
+      "comment_body_sha256": "3d6fafed39f1b335b7e0a9dadd2d37735b1f16a25127215d54febfbaad8a4f4c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138578,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed receipt can authorize package publication, but no redacted final-effect evidence shows tha...; Review finding: [medium] Verify the final ClawHub authorization boundary — .github/workflows/plugin-clawhub-release.yml:675 (sha=5ab9581b95a5ec094c5a31719fe4de9ad8c59aa4)",
+      "expected_head_sha": "5ab9581b95a5ec094c5a31719fe4de9ad8c59aa4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T21:38:59.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-recovery-approval-v2",
+        "head_sha": "5ab9581b95a5ec094c5a31719fe4de9ad8c59aa4",
         "cluster_id": null,
         "job_path": null
       }
