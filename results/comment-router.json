@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T02:09:38.869Z",
+  "updated_at": "2026-09-04T02:09:56.692Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137267:5531512278:2026-09-03T20:11:20Z:re_review",
-      "comment_id": "5531512278",
-      "comment_version_key": "5531512278:2026-09-03T20:11:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137267#issuecomment-5531512278",
-      "comment_created_at": "2026-09-03T20:11:20Z",
-      "comment_updated_at": "2026-09-03T20:11:20Z",
-      "comment_body_sha256": "31a5dd941e49d721cfa92d3f17cac05e63dcdbdb2eb3de0b103376dc3ad3e0ec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137267,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T20:12:21.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/accepted-send-retry-custody-v2",
-        "head_sha": "771904d60b046ef4fc39584a81d5d1af6a18f87e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131624:5450451641:2026-09-03T19:49:51Z:clawsweeper_needs_human",
       "comment_id": "5450451641",
@@ -33573,6 +33526,39 @@
         "kind": "pull_request",
         "branch": "codex/code-bug-gateway-monotonic-deadline-20260902",
         "head_sha": "a252eaf4ee3853960d4f948b8d2b333dcd448836",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:34:5475563170:2026-09-03T19:05:27Z:clawsweeper_auto_repair",
+      "comment_id": "5475563170",
+      "comment_version_key": "5475563170:2026-09-03T19:05:27Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/34#issuecomment-5475563170",
+      "comment_created_at": "2026-08-31T08:07:34Z",
+      "comment_updated_at": "2026-09-03T19:05:27Z",
+      "comment_body_sha256": "9cec42bdbb3865380a3e70d5944bbcb278a048a54e4c85582bcc5a23d6f80851",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bbd18e1c60a5b9c09053985c118e5c6f8f4ba032)",
+      "expected_head_sha": "bbd18e1c60a5b9c09053985c118e5c6f8f4ba032",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T02:09:56.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-refresh-20260830",
+        "head_sha": "bbd18e1c60a5b9c09053985c118e5c6f8f4ba032",
         "cluster_id": null,
         "job_path": null
       }
