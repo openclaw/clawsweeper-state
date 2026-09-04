@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137773",
+  "mode": "autonomous",
+  "run_id": "33827269826",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33827269826",
+  "head_sha": "6f229a508dd718a406651e1b3744a5c02617265e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137773.md",
+  "published_at": "2026-09-04T02:46:51.006Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137773",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137773",
+  "canonical_pr": null,
+  "summary": "#137773 is a reproducible, canonical Docker ownership defect. Current main creates /home/node/.cache as root in the browser-install layer before USER node; only its ms-playwright child is later chowned. A narrow new fix PR should create the cache parent as node-owned and extend the existing Dockerfile contract test. This worker could not implement or validate it because the checkout is read-only, dependencies cannot install (EROFS), Docker daemon access is denied, and ../codex cannot be fetched for the repository-required direct Codex-source gate.",
+  "actions": [
+    {
+      "target": "#137211",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#137773",
+      "candidate_fix": null,
+      "reason": "Adjacent cache-related work, but a distinct root cause and runtime surface."
+    },
+    {
+      "target": "#137773",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137773",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by worker-environment restrictions; the deterministic executor should apply the narrow artifact in a writable checkout with Docker access."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137773",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137773",
+      "candidate_fix": null,
+      "reason": "Narrow, non-security repair artifact for a new credited ClawSweeper PR."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
