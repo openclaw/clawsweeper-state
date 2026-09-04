@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:46:46.454Z",
+  "updated_at": "2026-09-04T01:46:50.768Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1778:5528276755:2026-09-03T15:47:04Z:re_review",
-      "comment_id": "5528276755",
-      "comment_version_key": "5528276755:2026-09-03T15:47:04Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1778#issuecomment-5528276755",
-      "comment_created_at": "2026-09-03T15:47:04Z",
-      "comment_updated_at": "2026-09-03T15:47:04Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1778,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T15:48:10.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/aws-qualification-broker",
-        "head_sha": "fe159b1de54464de73a336824a01ba902e31707c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/summarize:400:5528241745:2026-09-03T15:44:21Z:re_review",
       "comment_id": "5528241745",
@@ -33884,6 +33837,39 @@
         "kind": "pull_request",
         "branch": "dev/plarroy/build_improvement",
         "head_sha": "6a0f006891af2f3cfe746356d52aa82c4765da06",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137517:5531249743:2026-09-04T01:45:36Z:clawsweeper_auto_repair",
+      "comment_id": "5531249743",
+      "comment_version_key": "5531249743:2026-09-04T01:45:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137517#issuecomment-5531249743",
+      "comment_created_at": "2026-09-03T19:49:36Z",
+      "comment_updated_at": "2026-09-04T01:45:36Z",
+      "comment_body_sha256": "9316bdb4e7fbdf6ecb0f4b3214d2e332319b25481230e3cd9a45ff4accdb93ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0effee233b573e7cb342efdd07a7af159fb35375)",
+      "expected_head_sha": "0effee233b573e7cb342efdd07a7af159fb35375",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:46:50.768Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-137492-heartbeat-empty-preflight",
+        "head_sha": "0effee233b573e7cb342efdd07a7af159fb35375",
         "cluster_id": null,
         "job_path": null
       }
