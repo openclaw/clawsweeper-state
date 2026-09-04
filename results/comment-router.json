@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T02:35:18.650Z",
+  "updated_at": "2026-09-04T02:35:47.462Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137300:5525871565:2026-09-03T18:36:12Z:clawsweeper_needs_human",
-      "comment_id": "5525871565",
-      "comment_version_key": "5525871565:2026-09-03T18:36:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137300#issuecomment-5525871565",
-      "comment_created_at": "2026-09-03T12:38:11Z",
-      "comment_updated_at": "2026-09-03T18:36:12Z",
-      "comment_body_sha256": "2528e6be29c4843507344abb5d45b77e1311ea039fde081a3a79bce127a1fba0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137300,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed coordinator dispatches host agent work, but the supplied E2E uses mocked Gateway and transport impl...; Review finding: [P1] Revalidate lifecycle before persisting a standing grant — extensions/reef/src/federation-coordinator.ts:118-120 - [P1] Retry durable terminal outcomes while R... (sha=0e080ec575144df5b4f99e6b6a054216fab9e0b8)",
-      "expected_head_sha": "0e080ec575144df5b4f99e6b6a054216fab9e0b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T20:12:40.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pb-61a/federated-prompt-admission",
-        "head_sha": "0e080ec575144df5b4f99e6b6a054216fab9e0b8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137301:5525919424:2026-09-03T16:42:03Z:clawsweeper_needs_human",
       "comment_id": "5525919424",
@@ -33676,6 +33643,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137780:5534855439:2026-09-04T02:34:45Z:re_review",
+      "comment_id": "5534855439",
+      "comment_version_key": "5534855439:2026-09-04T02:34:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137780#issuecomment-5534855439",
+      "comment_created_at": "2026-09-04T02:34:45Z",
+      "comment_updated_at": "2026-09-04T02:34:45Z",
+      "comment_body_sha256": "1461c9974a4e1bf1d30b525ebef5f27a597b3d7b6c4d8920a259f6ccc89c32cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137780,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T02:35:45.868Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/legacy-owner-identity-migration",
+        "head_sha": "024ac64b6257b089efd405cfb64c46d0fe86f96f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
