@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T23:07:32.839Z",
+  "updated_at": "2026-09-04T23:08:40.740Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138350:5542979839:2026-09-04T17:42:03Z:clawsweeper_auto_repair",
-      "comment_id": "5542979839",
-      "comment_version_key": "5542979839:2026-09-04T17:42:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138350#issuecomment-5542979839",
-      "comment_created_at": "2026-09-04T15:47:11Z",
-      "comment_updated_at": "2026-09-04T17:42:03Z",
-      "comment_body_sha256": "f1848d00d8c8f22e5a0d828ae6e977fdd27f2b622bf7e6221c6d90ef1683e679",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138350,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e63100d1980b35275bf6cef6b87756a464b65c64)",
-      "expected_head_sha": "e63100d1980b35275bf6cef6b87756a464b65c64",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T17:51:09.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/control-ui-mock-refresh",
-        "head_sha": "e63100d1980b35275bf6cef6b87756a464b65c64",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138372:5543032179:2026-09-04T17:45:48Z:clawsweeper_auto_repair",
       "comment_id": "5543032179",
@@ -33278,6 +33245,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138524:5547474855:2026-09-04T23:07:40Z:re_review",
+      "comment_id": "5547474855",
+      "comment_version_key": "5547474855:2026-09-04T23:07:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138524#issuecomment-5547474855",
+      "comment_created_at": "2026-09-04T23:07:40Z",
+      "comment_updated_at": "2026-09-04T23:07:40Z",
+      "comment_body_sha256": "33f5c598f396f93ab331aef093164634857f75fd1cfe04c20c873efcdf71948d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138524,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T23:08:38.251Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-chrome-mcp-init-cleanup-24edfc",
+        "head_sha": "6419496e10404f624728f47d9ebcd874aaf60a79",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
