@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:13:57.493Z",
+  "updated_at": "2026-09-04T21:15:00.263Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138360:5543058439:2026-09-04T16:12:41Z:clawsweeper_needs_human",
-      "comment_id": "5543058439",
-      "comment_version_key": "5543058439:2026-09-04T16:12:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138360#issuecomment-5543058439",
-      "comment_created_at": "2026-09-04T15:53:57Z",
-      "comment_updated_at": "2026-09-04T16:12:41Z",
-      "comment_body_sha256": "4af3d87d9f98fb3f0d413719b37f99da122dd89b99a34f60252c1a43876d96f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138360,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=dafa0250a3a19de9ec53da3cfd65e3784c3a6311)",
-      "expected_head_sha": "dafa0250a3a19de9ec53da3cfd65e3784c3a6311",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T16:13:38.755Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-device-identity-conflict-diagnostics",
-        "head_sha": "dafa0250a3a19de9ec53da3cfd65e3784c3a6311",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138384:5543300848:2026-09-04T16:12:39Z:clawsweeper_needs_human",
       "comment_id": "5543300848",
@@ -32934,6 +32901,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:227:5546293363:2026-09-04T21:14:03Z:clawsweeper_needs_human",
+      "comment_id": "5546293363",
+      "comment_version_key": "5546293363:2026-09-04T21:14:03Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/227#issuecomment-5546293363",
+      "comment_created_at": "2026-09-04T20:49:58Z",
+      "comment_updated_at": "2026-09-04T21:14:03Z",
+      "comment_body_sha256": "809e703204de9ce5f732ec5abcf14a7539f37e09d528a730a355f3cf3de161df",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 227,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve retained locks across preloaded package copies (P1)** - When a v0.8 copy registered the global exit callback first, this early return leaves its retention-unaware handler active. That handler removes ra...; Review finding: [P1] Preserve retained locks across preloaded package copies — src/sidecar-lock.ts:142-146 - [medium] Honor retention under legacy global cleanup — src/sidecar-loc... (sha=54f875cbaf4bf4b8eaed467ea121b499727af085)",
+      "expected_head_sha": "54f875cbaf4bf4b8eaed467ea121b499727af085",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T21:15:00.263Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/lock-retain-on-exit",
+        "head_sha": "54f875cbaf4bf4b8eaed467ea121b499727af085",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
