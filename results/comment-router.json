@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T13:25:43.143Z",
+  "updated_at": "2026-09-04T13:26:14.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138046:5538510766:2026-09-04T09:32:01Z:clawsweeper_needs_human",
-      "comment_id": "5538510766",
-      "comment_version_key": "5538510766:2026-09-04T09:32:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138046#issuecomment-5538510766",
-      "comment_created_at": "2026-09-04T09:32:01Z",
-      "comment_updated_at": "2026-09-04T09:32:01Z",
-      "comment_body_sha256": "b294f4c4e0d46ef318e827d0cfef1d87cb4f5bbdc3e4b74e91fc009e8c186049",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138046,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new response.steer and configuration_update behavior depends on the current official OpenAI Responses contract, which could not be independently rechecked from this read-only envi... (sha=2025d133d6acf1b00e1fcf94151265fb5abd8227)",
-      "expected_head_sha": "2025d133d6acf1b00e1fcf94151265fb5abd8227",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T09:37:29.348Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/astra-responses-runtime",
-        "head_sha": "2025d133d6acf1b00e1fcf94151265fb5abd8227",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138092:5538516208:2026-09-04T09:32:23Z:clawsweeper_needs_human",
       "comment_id": "5538516208",
@@ -32968,6 +32935,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1816:5541085522:2026-09-04T13:25:19Z:clawsweeper_needs_human",
+      "comment_id": "5541085522",
+      "comment_version_key": "5541085522:2026-09-04T13:25:19Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1816#issuecomment-5541085522",
+      "comment_created_at": "2026-09-04T13:25:19Z",
+      "comment_updated_at": "2026-09-04T13:25:19Z",
+      "comment_body_sha256": "50a9b1916984267a96e998f7ec7dcb399557627c125596ddd2b760bf9087f3ae",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1816,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed AWS backend persists an instance identity that is later used for destructive cleanup, but the PR bo... (sha=679a7f81f87561c7efde861e05b943f63986234a)",
+      "expected_head_sha": "679a7f81f87561c7efde861e05b943f63986234a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T13:26:14.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/aws-archive-identity-composition",
+        "head_sha": "679a7f81f87561c7efde861e05b943f63986234a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
