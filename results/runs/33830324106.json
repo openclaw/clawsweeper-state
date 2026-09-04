@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137820",
+  "mode": "autonomous",
+  "run_id": "33830324106",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33830324106",
+  "head_sha": "c6dee040ad401c7df83076960dfeb52c7a59836f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137820.md",
+  "published_at": "2026-09-04T03:07:56.939Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137820",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137820",
+  "canonical_pr": null,
+  "summary": "#137820 is a reproducible narrow Gateway regression: the request agent is resolved before model-override validation, but src/gateway/http-utils.ts loads the catalog without that resolved agent, allowing ambient multi-agent owner selection. Implementation is blocked in this read-only checkout: required direct Codex inspection cannot occur because ../codex is absent, and pnpm cannot initialize Corepack (EROFS).",
+  "actions": [
+    {
+      "target": "#137820",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137820",
+      "candidate_fix": null,
+      "reason": "A narrow owner-boundary fix is identified, but no code change or PR can be safely produced until the mandatory Codex inspection and writable test environment are available."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137820",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137820",
+      "candidate_fix": null,
+      "reason": "Executor needs a writable checkout with dependencies plus the required ../codex clone before applying and validating this artifact."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
