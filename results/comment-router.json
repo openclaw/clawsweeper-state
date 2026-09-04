@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T13:06:43.325Z",
+  "updated_at": "2026-09-04T13:06:43.908Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111822:5032872221:2026-07-21T10:29:12Z:re_review",
-      "comment_id": "5032872221",
-      "comment_version_key": "5032872221:2026-07-21T10:29:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111822#issuecomment-5032872221",
-      "comment_created_at": "2026-07-21T10:29:12Z",
-      "comment_updated_at": "2026-07-21T10:29:12Z",
-      "comment_body_sha256": "52d7ac2d000efbcd92f3f9a4b97a4886191a27f65df4ce7a58c4e247c9202a26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111822,
-      "author": "ooiuuii",
-      "author_id": 169449607,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T09:21:01.641Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111822:5116125129:2026-07-29T09:58:06Z:re_review",
       "comment_id": "5116125129",
@@ -33098,6 +33071,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137189:5523010706:2026-09-04T13:05:34Z:clawsweeper_needs_human",
+      "comment_id": "5523010706",
+      "comment_version_key": "5523010706:2026-09-04T13:05:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137189#issuecomment-5523010706",
+      "comment_created_at": "2026-09-03T08:39:56Z",
+      "comment_updated_at": "2026-09-04T13:05:34Z",
+      "comment_body_sha256": "333c34c4d39b3a6c458bde6f4a329459d2ad38b56d3733e67eb4f316b20de4ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137189,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A legitimate verified self-chat row with is_from_me=false, the same parent GUID, and identical body within four seconds is intentionally suppressed; the supplied transport evidence do... (sha=fe01eef42e4410e8e78609d4adabfeb5a787569e)",
+      "expected_head_sha": "fe01eef42e4410e8e78609d4adabfeb5a787569e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T13:06:43.908Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-135704",
+        "head_sha": "fe01eef42e4410e8e78609d4adabfeb5a787569e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
