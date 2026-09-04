@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T11:09:33.168Z",
+  "updated_at": "2026-09-04T11:09:36.383Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137855:5535311815:2026-09-04T07:56:53Z:clawsweeper_needs_human",
-      "comment_id": "5535311815",
-      "comment_version_key": "5535311815:2026-09-04T07:56:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137855#issuecomment-5535311815",
-      "comment_created_at": "2026-09-04T03:39:11Z",
-      "comment_updated_at": "2026-09-04T07:56:53Z",
-      "comment_body_sha256": "8bd305d8843619c382f236b9a622ad2090284c26f370b91cad757961a6c618b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137855,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied Gateway screenshots and recording could not be independently inspected because this worker cannot reach GitHub; their visual contents still need reviewer confirmation. (sha=a45edabdd8c2b819c8e619622114cae5080c3ff3)",
-      "expected_head_sha": "a45edabdd8c2b819c8e619622114cae5080c3ff3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T07:57:48.520Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/137845-assistant-failure-copy-unclassified-fallback",
-        "head_sha": "a45edabdd8c2b819c8e619622114cae5080c3ff3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137641:5533599498:2026-09-04T07:56:52Z:clawsweeper_auto_repair",
       "comment_id": "5533599498",
@@ -33023,6 +32990,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136699:5539572838:2026-09-04T11:08:36Z:re_review",
+      "comment_id": "5539572838",
+      "comment_version_key": "5539572838:2026-09-04T11:08:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136699#issuecomment-5539572838",
+      "comment_created_at": "2026-09-04T11:08:36Z",
+      "comment_updated_at": "2026-09-04T11:08:36Z",
+      "comment_body_sha256": "bc1e933589e6fafcd3503777474f5d28bfd5b0767d77634ad25d17a669a275ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136699,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T11:09:33.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-target-package-capabilities",
+        "head_sha": "67f06707aff2be0e9f1a246a503fcc695ce1d84d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
