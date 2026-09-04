@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T11:57:12.858Z",
+  "updated_at": "2026-09-04T11:57:23.064Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110455:5537749091:2026-09-04T08:20:23Z:re_review",
-      "comment_id": "5537749091",
-      "comment_version_key": "5537749091:2026-09-04T08:20:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110455#issuecomment-5537749091",
-      "comment_created_at": "2026-09-04T08:20:23Z",
-      "comment_updated_at": "2026-09-04T08:20:23Z",
-      "comment_body_sha256": "47eb916e3cda4f61986b78c2e40c588a0f84cb224ad3cdd8073e1fc49ee7073f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110455,
-      "author": "superdiaodiao",
-      "author_id": 42577861,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T08:33:58.967Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/acp-session-new-ordering",
-        "head_sha": "f203c69bb024a0774b71f8f98f19bcfe2f72fcd7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138022:5537802360:2026-09-04T08:25:37Z:re_review",
       "comment_id": "5537802360",
@@ -33042,6 +32995,39 @@
         "kind": "pull_request",
         "branch": "codex/computer-local-wait-click-cleanup",
         "head_sha": "1c0c3a38dbdb7ee5898acc8f0a0a7f1108133e75",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138035:5537384343:2026-09-04T11:55:41Z:clawsweeper_needs_human",
+      "comment_id": "5537384343",
+      "comment_version_key": "5537384343:2026-09-04T11:55:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138035#issuecomment-5537384343",
+      "comment_created_at": "2026-09-04T07:45:51Z",
+      "comment_updated_at": "2026-09-04T11:55:41Z",
+      "comment_body_sha256": "f67c380711c8dfb1f8175d7f2886624ad3b1a56f6b5706c3871257b3cf213a32",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138035,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - file-type 22.0.2 is the authoritative byte-sniffing dependency, but its source could not be directly inspected because this blobless checkout has no local copy and GitHub DNS resoluti... (sha=2e0131402323e4388546eb190e4609ee6a83e3df)",
+      "expected_head_sha": "2e0131402323e4388546eb190e4609ee6a83e3df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T11:57:23.064Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-chat-audio-mime-20260904",
+        "head_sha": "2e0131402323e4388546eb190e4609ee6a83e3df",
         "cluster_id": null,
         "job_path": null
       }
