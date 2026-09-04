@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T13:14:11.456Z",
+  "updated_at": "2026-09-04T13:15:08.955Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137933:5538391387:2026-09-04T09:22:49Z:re_review",
-      "comment_id": "5538391387",
-      "comment_version_key": "5538391387:2026-09-04T09:22:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137933#issuecomment-5538391387",
-      "comment_created_at": "2026-09-04T09:22:49Z",
-      "comment_updated_at": "2026-09-04T09:22:49Z",
-      "comment_body_sha256": "a092152a3868c7e5996b8ac228023a2f0ee12cfdd9e4034ed4ace4a6d2ba11d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137933,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T09:36:39.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mac-team-profile-identity",
-        "head_sha": "5e8273a6f73e00a3ebc605bc8c0fbff0403a7ee4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131436:5538400517:2026-09-04T09:23:42Z:re_review",
       "comment_id": "5538400517",
@@ -33222,6 +33175,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T13:14:11.456Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:109249:4995779162:2026-09-04T13:14:05Z:clawsweeper_needs_human",
+      "comment_id": "4995779162",
+      "comment_version_key": "4995779162:2026-09-04T13:14:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/109249#issuecomment-4995779162",
+      "comment_created_at": "2026-07-16T19:26:42Z",
+      "comment_updated_at": "2026-09-04T13:14:05Z",
+      "comment_body_sha256": "192759ed8ad7d8e6d998fe52e480c948891e5e08e8cb45b18646da3b45b2aaef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 109249,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Prepared Telegram Desktop screenshots and GIFs visibly show the built-in reply and a configured reply for candidate 19e1ebeb66d896b8f7...; Review finding: [P1] Route raw pairing replies through the global template — src/plugin-sdk/channel-pairing.ts:40-47 - [low] Redact identifiers from replacement proof (sha=dc2519b35f9986c81dd38a73a078a1b6c4499105)",
+      "expected_head_sha": "dc2519b35f9986c81dd38a73a078a1b6c4499105",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T13:15:08.955Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/configurable-pairing-message",
+        "head_sha": "dc2519b35f9986c81dd38a73a078a1b6c4499105",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
