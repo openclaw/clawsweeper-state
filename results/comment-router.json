@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T05:48:27.166Z",
+  "updated_at": "2026-09-04T05:49:02.895Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:225:5534900917:2026-09-04T03:01:20Z:clawsweeper_needs_human",
-      "comment_id": "5534900917",
-      "comment_version_key": "5534900917:2026-09-04T03:01:20Z",
-      "comment_url": "https://github.com/openclaw/agent-skills/pull/225#issuecomment-5534900917",
-      "comment_created_at": "2026-09-04T02:41:10Z",
-      "comment_updated_at": "2026-09-04T03:01:20Z",
-      "comment_body_sha256": "b45b6ec4c34c9d316888553d4b17de4a8e499078786a7cb5f90b7b5e6a1809c1",
-      "repo": "openclaw/agent-skills",
-      "issue_number": 225,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On macOS, existing reviewer setups that deliberately set TMPDIR, TMP, or TEMP to shared scratch—or keep required tools there—will now fail closed until moved to a private temporary lo... (sha=c12920c4bf534605a1df65d3ceddcf1afc20ce89)",
-      "expected_head_sha": "c12920c4bf534605a1df65d3ceddcf1afc20ce89",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T03:02:12.952Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/autoreview-macos-scratch-confinement",
-        "head_sha": "c12920c4bf534605a1df65d3ceddcf1afc20ce89",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:91:5515448511:2026-09-04T03:01:17Z:clawsweeper_needs_human",
       "comment_id": "5515448511",
@@ -31956,6 +31923,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137898:5536292544:2026-09-04T05:48:03Z:re_review",
+      "comment_id": "5536292544",
+      "comment_version_key": "5536292544:2026-09-04T05:48:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137898#issuecomment-5536292544",
+      "comment_created_at": "2026-09-04T05:48:03Z",
+      "comment_updated_at": "2026-09-04T05:48:03Z",
+      "comment_body_sha256": "1d1f2a16ed69b91a14decdbb88e5b6dfe223845f2541349ed4d9c3aa348ecaf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137898,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T05:49:00.582Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-plugin-warm-tools-20260904",
+        "head_sha": "3960dfc0a91a6b51bbbabab89313ff023887256d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
