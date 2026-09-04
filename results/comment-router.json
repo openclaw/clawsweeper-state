@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:39:35.830Z",
+  "updated_at": "2026-09-04T03:39:50.992Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136949:5520095162:2026-09-03T23:53:51Z:clawsweeper_needs_human",
-      "comment_id": "5520095162",
-      "comment_version_key": "5520095162:2026-09-03T23:53:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136949#issuecomment-5520095162",
-      "comment_created_at": "2026-09-03T03:55:27Z",
-      "comment_updated_at": "2026-09-03T23:53:51Z",
-      "comment_body_sha256": "f47f30c807a3b7192954d20aad85313a6640946214f19869a5da6018ebeb8b52",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136949,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head security-fast gate still fails. The supplied context attributes it to the frozen fast-uri advisory baseline, but release validation cannot be considered complete until... (sha=f95d46e649cb58938eb40d70bdf2c012e34271a8)",
-      "expected_head_sha": "f95d46e649cb58938eb40d70bdf2c012e34271a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T00:16:02.876Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-ci-checkout-auth",
-        "head_sha": "f95d46e649cb58938eb40d70bdf2c012e34271a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136949:5520114142:2026-09-03T03:57:50Z:re_review",
       "comment_id": "5520114142",
@@ -32691,6 +32658,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136919:5535308412:2026-09-04T03:38:41Z:re_review",
+      "comment_id": "5535308412",
+      "comment_version_key": "5535308412:2026-09-04T03:38:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136919#issuecomment-5535308412",
+      "comment_created_at": "2026-09-04T03:38:41Z",
+      "comment_updated_at": "2026-09-04T03:38:41Z",
+      "comment_body_sha256": "9a34611023ec12db55ed42a7ed0f2287d245f033ae80f6f91c1e39fe0dd4cf6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136919,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T03:39:49.075Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-entry-smoke",
+        "head_sha": "837f2145328c3213636e01fc2f9be0fe2cbd6d01",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
