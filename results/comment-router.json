@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T12:53:06.619Z",
+  "updated_at": "2026-09-04T12:55:24.339Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138086:5538058091:2026-09-04T08:50:51Z:clawsweeper_needs_human",
-      "comment_id": "5538058091",
-      "comment_version_key": "5538058091:2026-09-04T08:50:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138086#issuecomment-5538058091",
-      "comment_created_at": "2026-09-04T08:50:51Z",
-      "comment_updated_at": "2026-09-04T08:50:51Z",
-      "comment_body_sha256": "c5e633a86ae7424b11bb39dbb66d2c3a5f60ff3f1a38cc9560c76403a090e0f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138086,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=12f619f2b3a592ed8a98794a0ce0c6e636e0030a)",
-      "expected_head_sha": "12f619f2b3a592ed8a98794a0ce0c6e636e0030a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T09:03:14.648Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf8-worker-trajectory",
-        "head_sha": "12f619f2b3a592ed8a98794a0ce0c6e636e0030a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138048:5537502243:2026-09-04T08:57:16Z:clawsweeper_needs_human",
       "comment_id": "5537502243",
@@ -33052,6 +33019,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1775:5540722431:2026-09-04T12:54:31Z:re_review",
+      "comment_id": "5540722431",
+      "comment_version_key": "5540722431:2026-09-04T12:54:31Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1775#issuecomment-5540722431",
+      "comment_created_at": "2026-09-04T12:54:31Z",
+      "comment_updated_at": "2026-09-04T12:54:31Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1775,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T12:55:21.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/image-qualification-harness",
+        "head_sha": "147e03b7424c7df27591e1e181cc64aa9c501999",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
