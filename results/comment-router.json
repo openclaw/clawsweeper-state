@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:31:38.724Z",
+  "updated_at": "2026-09-04T01:31:40.907Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132116:5527741197:2026-09-03T15:04:50Z:re_review",
-      "comment_id": "5527741197",
-      "comment_version_key": "5527741197:2026-09-03T15:04:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132116#issuecomment-5527741197",
-      "comment_created_at": "2026-09-03T15:04:50Z",
-      "comment_updated_at": "2026-09-03T15:04:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132116,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T15:06:05.835Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/131581-codex-max-thinking",
-        "head_sha": "9078f5c9121e9e10aac589a3d4200ccf94991400",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137346:5527367658:2026-09-03T15:05:09Z:clawsweeper_needs_human",
       "comment_id": "5527367658",
@@ -33912,6 +33865,39 @@
         "kind": "pull_request",
         "branch": "codex/perf7-queued-turn-listener",
         "head_sha": "900dee47d6309ccf5bee36e4dc869eae018e0d99",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137727:5534381702:2026-09-04T01:30:29Z:clawsweeper_needs_human",
+      "comment_id": "5534381702",
+      "comment_version_key": "5534381702:2026-09-04T01:30:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137727#issuecomment-5534381702",
+      "comment_created_at": "2026-09-04T01:30:29Z",
+      "comment_updated_at": "2026-09-04T01:30:29Z",
+      "comment_body_sha256": "c7f96dcb35050564fee93da80ae7281b40b7bc9bde924c74276cbba758947f4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137727,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Review the newly pinned OIDC-capable reusable workflow** - This line selects executable code from another repository for a job with id-token: write; unavailable upstream source prevente...; Review finding: [medium] Review the newly pinned OIDC-capable reusable workflow — .github/workflows/plugin-clawhub-release.yml:618 (sha=43ee7600197f14eb2b666c2e074dc7ad4fd915c7)",
+      "expected_head_sha": "43ee7600197f14eb2b666c2e074dc7ad4fd915c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:31:40.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/dazzling-heyrovsky-2e08fb",
+        "head_sha": "43ee7600197f14eb2b666c2e074dc7ad4fd915c7",
         "cluster_id": null,
         "job_path": null
       }
