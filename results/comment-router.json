@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T02:30:24.378Z",
+  "updated_at": "2026-09-04T02:33:25.281Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132116:5457899208:2026-09-03T18:47:01Z:clawsweeper_needs_human",
-      "comment_id": "5457899208",
-      "comment_version_key": "5457899208:2026-09-03T18:47:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132116#issuecomment-5457899208",
-      "comment_created_at": "2026-08-28T21:22:20Z",
-      "comment_updated_at": "2026-09-03T18:47:01Z",
-      "comment_body_sha256": "c0f384a460768574de4de4442c0ae3503daee2cd0155cd2d6c17fe98709eb80a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132116,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional thinkingExplicit and appliedThinking fields are exposed through the public ACP plugin SDK; third-party runtimes may ignore them, so maintainers must accept that compatibi... (sha=0d181fc9510ac463af5adb3addb95bea8434dfbd)",
-      "expected_head_sha": "0d181fc9510ac463af5adb3addb95bea8434dfbd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T20:12:40.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/131581-codex-max-thinking",
-        "head_sha": "0d181fc9510ac463af5adb3addb95bea8434dfbd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132801:5464486222:2026-09-03T16:35:50Z:clawsweeper_needs_human",
       "comment_id": "5464486222",
@@ -33564,6 +33531,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137105:5534839176:2026-09-04T02:32:31Z:re_review",
+      "comment_id": "5534839176",
+      "comment_version_key": "5534839176:2026-09-04T02:32:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137105#issuecomment-5534839176",
+      "comment_created_at": "2026-09-04T02:32:31Z",
+      "comment_updated_at": "2026-09-04T02:32:31Z",
+      "comment_body_sha256": "c19b828b2002d79135041d887d105dcba9923ddcaf85f628932aa6b8884a704e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137105,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T02:33:23.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-watch-emfile-polling",
+        "head_sha": "39253ebd89037542e07a356ba29da22303676c62",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
