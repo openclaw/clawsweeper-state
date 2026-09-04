@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138383",
+  "mode": "autonomous",
+  "run_id": "33900583374",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33900583374",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138383.md",
+  "published_at": "2026-09-04T17:36:55.305Z",
+  "canonical": "#138383",
+  "canonical_issue": "#138383",
+  "canonical_pr": null,
+  "summary": "No code change was made. The mandatory direct ../codex source inspection cannot be completed because ../codex is absent and cloning it failed with “Read-only file system”; repository policy forbids a code change without that inspection.",
+  "actions": [
+    {
+      "target": "#44759",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": "#44759",
+      "candidate_fix": null,
+      "reason": "Quarantine this linked security item; it is not part of the non-security repair."
+    },
+    {
+      "target": "#101434",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Historical related context; no action on a closed PR."
+    },
+    {
+      "target": "#116338",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Historical related context; no action on a closed issue."
+    },
+    {
+      "target": "#116400",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Historical related context; no action on a closed PR."
+    },
+    {
+      "target": "#120718",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Historical related context; no action on a closed issue."
+    },
+    {
+      "target": "#127098",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Historical related context; no action on a closed PR."
+    },
+    {
+      "target": "#138383",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138383",
+      "candidate_fix": null,
+      "reason": "Direct Codex-source inspection is mandatory before changing code, and this environment prevents obtaining that source."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "keep_closed": 5,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 5,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable environment containing ../codex (or otherwise make the required Codex source available) so the mandated direct inspection, regression reproduction, edit, and validation can proceed."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

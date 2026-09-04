@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138383"
 mode: "autonomous"
-run_id: "33893876691"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33893876691"
+run_id: "33900583374"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33900583374"
 head_sha: "666375f12276ff0a7aecf51430b9cdc2fb9914b3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-04T17:05:37.583Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138383"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138383"
+published_at: "2026-09-04T17:36:55.305Z"
+canonical: "#138383"
+canonical_issue: "#138383"
 canonical_pr: null
-actions_total: 4
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-138383
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33893876691](https://github.com/openclaw/clawsweeper/actions/runs/33893876691)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33900583374](https://github.com/openclaw/clawsweeper/actions/runs/33900583374)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/138383
+Canonical: #138383
 
 ## Summary
 
-#138383 remains a reproducible canonical bug on local origin/main 9f60da4c2eaa99e02dc2ddd2740251f6ba541892. `dir_fetch` emits local paths, bundled manifest tools are marked trusted, but the runner never derives or forwards the exact trusted-name set into subscription filtering. A narrow new PR is appropriate, but this worker cannot edit or validate: the checkout is read-only, dependencies are incomplete (`tsx/esm` missing), and the mandatory sibling `../codex` source checkout is absent.
+No code change was made. The mandatory direct ../codex source inspection cannot be completed because ../codex is absent and cloning it failed with “Read-only file system”; repository policy forbids a code change without that inspection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,11 +66,14 @@ Canonical: https://github.com/openclaw/openclaw/issues/138383
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #44759 | route_security | planned | security_sensitive | Security boundary requires central triage for this linked report. |
-| #138383 | fix_needed | planned | canonical | No viable implementation PR is hydrated; a new narrow fix PR should own validation and close #138383. |
-| cluster:issue-openclaw-openclaw-138383 | build_fix_artifact | planned | canonical | Construct the bounded implementation from the artifact below. |
-| cluster:issue-openclaw-openclaw-138383 | open_fix_pr | blocked | canonical | Run the artifact in a writable, dependency-complete checkout with the required sibling Codex source available. |
+| #44759 | route_security | planned | security_sensitive | Quarantine this linked security item; it is not part of the non-security repair. |
+| #101434 | keep_closed | skipped | related | Historical related context; no action on a closed PR. |
+| #116338 | keep_closed | skipped | related | Historical related context; no action on a closed issue. |
+| #116400 | keep_closed | skipped | related | Historical related context; no action on a closed PR. |
+| #120718 | keep_closed | skipped | related | Historical related context; no action on a closed issue. |
+| #127098 | keep_closed | skipped | related | Historical related context; no action on a closed PR. |
+| #138383 | fix_needed | blocked | canonical | Direct Codex-source inspection is mandatory before changing code, and this environment prevents obtaining that source. |
 
 ## Needs Human
 
-- none
+- Provide a writable environment containing ../codex (or otherwise make the required Codex source available) so the mandated direct inspection, regression reproduction, edit, and validation can proceed.
