@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:31:40.907Z",
+  "updated_at": "2026-09-04T01:32:12.313Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137346:5527367658:2026-09-03T15:05:09Z:clawsweeper_needs_human",
-      "comment_id": "5527367658",
-      "comment_version_key": "5527367658:2026-09-03T15:05:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137346#issuecomment-5527367658",
-      "comment_created_at": "2026-09-03T14:35:04Z",
-      "comment_updated_at": "2026-09-03T15:05:09Z",
-      "comment_body_sha256": "c1adc5451238a2148d3d1b3862df7e17f22bd3f7dcb1e233cb1545337b0c71db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137346,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 17 net lines; the added QA-only typed facade is justified by the existing generic plugin public-surface loader, but should not expand into a general Slack API... (sha=f82c95059758d887687e46f7b4707b34ad689107)",
-      "expected_head_sha": "f82c95059758d887687e46f7b4707b34ad689107",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T15:06:23.750Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-slack-plugin-runtime",
-        "head_sha": "f82c95059758d887687e46f7b4707b34ad689107",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:22:5464089319:2026-09-03T15:05:49Z:clawsweeper_auto_repair",
       "comment_id": "5464089319",
@@ -33901,6 +33868,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137738:5534386926:2026-09-04T01:31:12Z:re_review",
+      "comment_id": "5534386926",
+      "comment_version_key": "5534386926:2026-09-04T01:31:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137738#issuecomment-5534386926",
+      "comment_created_at": "2026-09-04T01:31:12Z",
+      "comment_updated_at": "2026-09-04T01:31:12Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137738,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T01:32:09.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-plugin-config-misattribution-137694",
+        "head_sha": "5167f4a91337c0b4d4776a59689c9e551cbbc3aa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
