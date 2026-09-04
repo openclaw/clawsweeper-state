@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T04:33:43.305Z",
+  "updated_at": "2026-09-04T04:34:19.534Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136661:5517226537:2026-09-04T01:30:46Z:clawsweeper_needs_human",
-      "comment_id": "5517226537",
-      "comment_version_key": "5517226537:2026-09-04T01:30:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136661#issuecomment-5517226537",
-      "comment_created_at": "2026-09-02T22:19:40Z",
-      "comment_updated_at": "2026-09-04T01:30:46Z",
-      "comment_body_sha256": "4af1002453b4b0f0f5d2e8e0f740c808f86ba9e665ecfdab39e1c176bceaf03b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136661,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes an existing persisted microphone preference after fallback; the in-repo interleaving test covers a newer same-scope selection, but the WebKit-only trigger has not been... (sha=b02045092b1f0ef5d401a51b5bd61680495f2cf0)",
-      "expected_head_sha": "b02045092b1f0ef5d401a51b5bd61680495f2cf0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T01:50:17.012Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/real-time-voice-error-message",
-        "head_sha": "71b5162d18938bbaeb5e498f185c93db6497fe8e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136699:5517536107:2026-09-03T23:47:44Z:clawsweeper_needs_human",
       "comment_id": "5517536107",
@@ -32548,6 +32515,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137807:5535691825:2026-09-04T04:33:16Z:re_review",
+      "comment_id": "5535691825",
+      "comment_version_key": "5535691825:2026-09-04T04:33:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137807#issuecomment-5535691825",
+      "comment_created_at": "2026-09-04T04:33:16Z",
+      "comment_updated_at": "2026-09-04T04:33:16Z",
+      "comment_body_sha256": "cfb4c342a87c04b67475eeddbbfdde1fbfa7c46409dc8d1774077610579ca98a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137807,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T04:34:17.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-pr-polling-owner-20260904",
+        "head_sha": "c1f44c10436927d2522bfd3363057e7eafea77eb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
