@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T07:34:04.595Z",
+  "updated_at": "2026-09-04T07:36:40.544Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135481:5499306006:2026-09-04T03:48:40Z:clawsweeper_auto_repair",
-      "comment_id": "5499306006",
-      "comment_version_key": "5499306006:2026-09-04T03:48:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135481#issuecomment-5499306006",
-      "comment_created_at": "2026-09-01T19:31:55Z",
-      "comment_updated_at": "2026-09-04T03:48:40Z",
-      "comment_body_sha256": "877b7e068863846e689b9bff2c28e248d23aa7cfd587ce2bfd390d9706c0b567",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135481,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6c5ca6bdcfed14a79deb2c0042f6ce574717cddf)",
-      "expected_head_sha": "6c5ca6bdcfed14a79deb2c0042f6ce574717cddf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T03:49:27.646Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/announce-lane-defer-drain",
-        "head_sha": "6c5ca6bdcfed14a79deb2c0042f6ce574717cddf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135481:5500145413:2026-09-01T20:41:02Z:re_review",
       "comment_id": "5500145413",
@@ -32764,6 +32731,53 @@
       "status": "skipped",
       "processed_at": "2026-09-04T07:34:04.595Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131590:5537279532:2026-09-04T07:35:41Z:re_review",
+      "comment_id": "5537279532",
+      "comment_version_key": "5537279532:2026-09-04T07:35:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131590#issuecomment-5537279532",
+      "comment_created_at": "2026-09-04T07:35:41Z",
+      "comment_updated_at": "2026-09-04T07:35:41Z",
+      "comment_body_sha256": "f7192e8f455f7714d1f77a77a3f256ff1f2f7d2e35154eb990d2125e1beebf9c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131590,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head `3875395518c`: the p2 docs mismatch is fixed. the `failurealert.after` exception in `docs/cli/cron.md` now distinguishes the two one-shot kinds exactly as shipped: timed `at` jobs alert immediately only on a permanent error or exhausted transient retries, while watcher-fired `on-exit` jobs are terminal on any error — including transient ones — because the watched command has already completed and retrying would re-arm and re-run it",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T07:36:36.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131490-oneshot-silent-disable",
+        "head_sha": "3875395518c1cebcf2e12bdb9bf2919f13cc7e9f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
