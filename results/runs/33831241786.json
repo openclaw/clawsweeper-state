@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137773",
+  "mode": "autonomous",
+  "run_id": "33831241786",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33831241786",
+  "head_sha": "d32eaf1ba7b63662c2b9f0697073d8208bacbd82",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137773.md",
+  "published_at": "2026-09-04T02:59:50.960Z",
+  "canonical": "#137773",
+  "canonical_issue": "#137773",
+  "canonical_pr": null,
+  "summary": "#137773 remains a reproducible, non-security Docker ownership bug on current main d84cdc5c. A one-line producer-boundary repair and focused regression test are ready as a new fix-PR artifact, but this worker cannot modify the read-only checkout or run the required Docker proof: daemon access is denied. The mandated sibling ../codex source is also unavailable, so no Codex verdict is claimed.",
+  "actions": [
+    {
+      "target": "#137773",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137773",
+      "candidate_fix": null,
+      "reason": "A narrow new PR should make /home/node/.cache node-owned before browser installation while retaining the existing Playwright path and final non-root runtime."
+    },
+    {
+      "target": "#137211",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#137773",
+      "candidate_fix": null,
+      "reason": "Keep open independently; it is adjacent Fleet work, not a candidate fix for this Dockerfile defect."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

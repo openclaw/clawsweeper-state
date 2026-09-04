@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137773"
 mode: "autonomous"
-run_id: "33827269826"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33827269826"
-head_sha: "6f229a508dd718a406651e1b3744a5c02617265e"
-workflow_conclusion: "failure"
+run_id: "33831241786"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33831241786"
+head_sha: "d32eaf1ba7b63662c2b9f0697073d8208bacbd82"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-04T02:46:51.006Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137773"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137773"
+published_at: "2026-09-04T02:59:50.960Z"
+canonical: "#137773"
+canonical_issue: "#137773"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33827269826](https://github.com/openclaw/clawsweeper/actions/runs/33827269826)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33831241786](https://github.com/openclaw/clawsweeper/actions/runs/33831241786)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/137773
+Canonical: #137773
 
 ## Summary
 
-#137773 is a reproducible, canonical Docker ownership defect. Current main creates /home/node/.cache as root in the browser-install layer before USER node; only its ms-playwright child is later chowned. A narrow new fix PR should create the cache parent as node-owned and extend the existing Dockerfile contract test. This worker could not implement or validate it because the checkout is read-only, dependencies cannot install (EROFS), Docker daemon access is denied, and ../codex cannot be fetched for the repository-required direct Codex-source gate.
+#137773 remains a reproducible, non-security Docker ownership bug on current main d84cdc5c. A one-line producer-boundary repair and focused regression test are ready as a new fix-PR artifact, but this worker cannot modify the read-only checkout or run the required Docker proof: daemon access is denied. The mandated sibling ../codex source is also unavailable, so no Codex verdict is claimed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/137773
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137211 | keep_related | planned | related | Adjacent cache-related work, but a distinct root cause and runtime surface. |
-| #137773 | fix_needed | blocked | canonical | Implementation is blocked only by worker-environment restrictions; the deterministic executor should apply the narrow artifact in a writable checkout with Docker access. |
-| cluster:issue-openclaw-openclaw-137773 | build_fix_artifact | planned | canonical | Narrow, non-security repair artifact for a new credited ClawSweeper PR. |
+| #137773 | build_fix_artifact | planned | canonical | A narrow new PR should make /home/node/.cache node-owned before browser installation while retaining the existing Playwright path and final non-root runtime. |
+| #137211 | keep_related | planned | related | Keep open independently; it is adjacent Fleet work, not a candidate fix for this Dockerfile defect. |
 
 ## Needs Human
 
