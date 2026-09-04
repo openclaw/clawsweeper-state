@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T23:02:50.849Z",
+  "updated_at": "2026-09-04T23:03:16.988Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135808:5503407292:2026-09-04T17:45:24Z:clawsweeper_needs_human",
-      "comment_id": "5503407292",
-      "comment_version_key": "5503407292:2026-09-04T17:45:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135808#issuecomment-5503407292",
-      "comment_created_at": "2026-09-02T02:25:54Z",
-      "comment_updated_at": "2026-09-04T17:45:24Z",
-      "comment_body_sha256": "017ec7a4385a9e829b41da9bb96544f67ed9ba3a74026768298cdb5f5de5bb91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135808,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned RTC dependency contract** - The new static Watch runtime directly calls str0m 0.23.1, but its authoritative source and documentation were unavailable in this review en...; Review finding: [medium] Verify the pinned RTC dependency contract — apps/shared/OpenClawWatchRTC/Cargo.toml:12 (sha=24bc1ab4a78d1b77ce1c0276792b89fb7cd974ac)",
-      "expected_head_sha": "24bc1ab4a78d1b77ce1c0276792b89fb7cd974ac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T17:51:09.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/watch-native-realtime-voice",
-        "head_sha": "907572fb2cff8e61fc18d663b017c0b9a411a172",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135815:5503483723:2026-09-04T17:40:35Z:clawsweeper_auto_repair",
       "comment_id": "5503483723",
@@ -33270,6 +33237,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122146:5547420870:2026-09-04T23:02:19Z:re_review",
+      "comment_id": "5547420870",
+      "comment_version_key": "5547420870:2026-09-04T23:02:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122146#issuecomment-5547420870",
+      "comment_created_at": "2026-09-04T23:02:19Z",
+      "comment_updated_at": "2026-09-04T23:02:19Z",
+      "comment_body_sha256": "fee3652587890cae91be60d5a8394267206c35fb20ecc166dffb58ce5dbec870",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122146,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T23:03:14.149Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-121592",
+        "head_sha": "87a99e6e0fc161f202caf872aaf3cee13c55e047",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
