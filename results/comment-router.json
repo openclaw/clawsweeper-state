@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T02:36:37.240Z",
+  "updated_at": "2026-09-04T02:37:56.491Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137321:5526545813:2026-09-03T18:47:25Z:clawsweeper_needs_human",
-      "comment_id": "5526545813",
-      "comment_version_key": "5526545813:2026-09-03T18:47:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137321#issuecomment-5526545813",
-      "comment_created_at": "2026-09-03T13:28:35Z",
-      "comment_updated_at": "2026-09-03T18:47:25Z",
-      "comment_body_sha256": "9d68d3e974466a2e8e1c09928fe22a8cc1a23bbf24af32f0b8abd4ca0d106c3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137321,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Monday schedule creates two targeted runner groups, each allowed 90 minutes, to execute three package-upgrade lanes; a maintainer should explicitly accept that recurring CI capaci... (sha=f17bfb05400278ff9b4938effb42f61534925d48)",
-      "expected_head_sha": "f17bfb05400278ff9b4938effb42f61534925d48",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T20:12:40.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-mobile-pairing-upgrade-20260903",
-        "head_sha": "f17bfb05400278ff9b4938effb42f61534925d48",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137326:5526619529:2026-09-03T14:47:11Z:clawsweeper_needs_human",
       "comment_id": "5526619529",
@@ -33690,6 +33657,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3522:5534871631:2026-09-04T02:36:54Z:re_review",
+      "comment_id": "5534871631",
+      "comment_version_key": "5534871631:2026-09-04T02:36:54Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3522#issuecomment-5534871631",
+      "comment_created_at": "2026-09-04T02:36:54Z",
+      "comment_updated_at": "2026-09-04T02:36:54Z",
+      "comment_body_sha256": "e5ee94d4c8d385e266af6810be0dd1d7c28449ac4cd17f42f172ad3e13295fc8",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3522,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "COLLABORATOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T02:37:53.813Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/aig-security-findings",
+        "head_sha": "c40ab5ea5dd2bc007f321ba383ef1f5d7e6597fa",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
