@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T08:07:05.876Z",
+  "updated_at": "2026-09-04T08:07:22.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137880:5535603916:2026-09-04T04:20:57Z:re_review",
-      "comment_id": "5535603916",
-      "comment_version_key": "5535603916:2026-09-04T04:20:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137880#issuecomment-5535603916",
-      "comment_created_at": "2026-09-04T04:20:57Z",
-      "comment_updated_at": "2026-09-04T04:20:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137880,
-      "author": "Colton-Harris",
-      "author_id": 287090614,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T04:36:03.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/capability-snapshot",
-        "head_sha": "f6dc0c29fa7ee3967b697d8de64848b9a364c2b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137313:5535637776:2026-09-04T04:25:44Z:re_review",
       "comment_id": "5535637776",
@@ -32753,6 +32706,39 @@
         "kind": "pull_request",
         "branch": "codex/native-media-snapshots",
         "head_sha": "42e713b403b02a86d94e807f89dc3c64600f9d11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:171:5537594220:2026-09-04T08:06:12Z:clawsweeper_needs_human",
+      "comment_id": "5537594220",
+      "comment_version_key": "5537594220:2026-09-04T08:06:12Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/171#issuecomment-5537594220",
+      "comment_created_at": "2026-09-04T08:06:12Z",
+      "comment_updated_at": "2026-09-04T08:06:12Z",
+      "comment_body_sha256": "ca57f90a7bcb8ee88a6f9b839e489cac1bb629bb7d5de9f375cf03da58289ca5",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 171,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured body reports the relevant real CLI path through HTTP sync, archive reopening, SQLite search, and integrity checking, but... (sha=1eebb3d75243f471f7bb22d80b4ecce8c4416f69)",
+      "expected_head_sha": "1eebb3d75243f471f7bb22d80b4ecce8c4416f69",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T08:07:22.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep/gitcrawl-deps-20260904",
+        "head_sha": "1eebb3d75243f471f7bb22d80b4ecce8c4416f69",
         "cluster_id": null,
         "job_path": null
       }
