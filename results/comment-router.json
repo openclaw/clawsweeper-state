@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T15:31:47.790Z",
+  "updated_at": "2026-09-04T15:32:40.839Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1416:5538812832:2026-09-04T10:47:33Z:clawsweeper_needs_human",
-      "comment_id": "5538812832",
-      "comment_version_key": "5538812832:2026-09-04T10:47:33Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1416#issuecomment-5538812832",
-      "comment_created_at": "2026-09-04T09:57:35Z",
-      "comment_updated_at": "2026-09-04T10:47:33Z",
-      "comment_body_sha256": "88896dad683412473c8bca71a7f93f68dd97ba99f102767b5764c922b0e60174",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1416,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Deploying the Worker and scheduled producer out of order temporarily fail-closes scheduled enqueue until the Worker advertises the v1 replay capability; maintainers should confirm tha... (sha=843078fc9b5ad2cd6b68edb8429e1db92107d0a6)",
-      "expected_head_sha": "843078fc9b5ad2cd6b68edb8429e1db92107d0a6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T10:48:33.387Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scheduled-enqueue-retry",
-        "head_sha": "843078fc9b5ad2cd6b68edb8429e1db92107d0a6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1416:5539183570:2026-09-04T10:31:39Z:re_review",
       "comment_id": "5539183570",
@@ -32979,6 +32946,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137248:5542794368:2026-09-04T15:31:44Z:re_review",
+      "comment_id": "5542794368",
+      "comment_version_key": "5542794368:2026-09-04T15:31:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137248#issuecomment-5542794368",
+      "comment_created_at": "2026-09-04T15:31:44Z",
+      "comment_updated_at": "2026-09-04T15:31:44Z",
+      "comment_body_sha256": "c0077abd1859dce1f952eacec7c6f0d0e987453a69fd1fb83fd38001753261ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137248,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T15:32:37.733Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pb-f39/control-ui-media-ws-capability",
+        "head_sha": "b380626ce70e5872a76a93ba9a9bc469e6da40c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
