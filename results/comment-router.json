@@ -2,53 +2,6 @@
   "updated_at": "2026-09-04T12:13:04.898Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/crabbox:1778:5537831658:2026-09-04T08:28:31Z:re_review",
-      "comment_id": "5537831658",
-      "comment_version_key": "5537831658:2026-09-04T08:28:31Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1778#issuecomment-5537831658",
-      "comment_created_at": "2026-09-04T08:28:31Z",
-      "comment_updated_at": "2026-09-04T08:28:31Z",
-      "comment_body_sha256": "9446ac30bd1daa9585cb9ed9d3713933fc0b890b4ca0cb796cb64953a70ef070",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1778,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T08:40:13.701Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/aws-qualification-broker",
-        "head_sha": "172bf66227408633ddb8315d2c95719bacd2f5cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138088:5537917639:2026-09-04T08:36:57Z:clawsweeper_needs_human",
       "comment_id": "5537917639",
       "comment_version_key": "5537917639:2026-09-04T08:36:57Z",
@@ -33052,6 +33005,39 @@
         "kind": "pull_request",
         "branch": "fix/synthesized-failure-attribution",
         "head_sha": "aebc435763802405b17e486b63c20aab63baf379",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1775:5526861507:2026-09-04T12:11:59Z:clawsweeper_needs_human",
+      "comment_id": "5526861507",
+      "comment_version_key": "5526861507:2026-09-04T12:11:59Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1775#issuecomment-5526861507",
+      "comment_created_at": "2026-09-03T13:54:45Z",
+      "comment_updated_at": "2026-09-04T12:11:59Z",
+      "comment_body_sha256": "978a773af4130965c6bfd2a9ac8af3707dfe6cb82ed059b251b7f69745aefc63",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the workflow passes an executor bearer token to the introduced relay, which dispatches to the private candidate...; Review finding: [medium] Prove rejection before final effects — scripts/image-qualification-relay-worker.mjs:266 (sha=1a4680e463ddec93fe47d0639cb54973dab7dc7b)",
+      "expected_head_sha": "1a4680e463ddec93fe47d0639cb54973dab7dc7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T12:13:04.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/image-qualification-harness",
+        "head_sha": "1a4680e463ddec93fe47d0639cb54973dab7dc7b",
         "cluster_id": null,
         "job_path": null
       }
