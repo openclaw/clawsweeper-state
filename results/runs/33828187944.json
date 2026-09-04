@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137085",
+  "mode": "autonomous",
+  "run_id": "33828187944",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33828187944",
+  "head_sha": "6f229a508dd718a406651e1b3744a5c02617265e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137085.md",
+  "published_at": "2026-09-04T02:24:56.885Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137085",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137085",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow Swift lifecycle defect on main 6b97bae2: an existing canonical SQLite identity returns before a lone matching native-import claim can resume. The repair plan is ready, but this worker cannot edit or validate: filesystem is read-only, pnpm/Corepack cannot create its cache, macOS-native tests require the disposable macOS runner, and ../codex is unavailable for the repository-required direct Codex-source gate.",
+  "actions": [
+    {
+      "target": "#137085",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "Real existing-behavior bug with a narrow owner-boundary repair; no configuration, protocol, or SQLite schema change is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137085",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "Artifact is sufficiently narrow for the deterministic executor, but no source edits or local validation are possible in this read-only Linux worker."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137085",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "Implementation and required validation require a writable checkout and disposable macOS CI runner."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
