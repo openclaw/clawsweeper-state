@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137959",
+  "mode": "autonomous",
+  "run_id": "33842866487",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33842866487",
+  "head_sha": "aa7ed6c0cfe368d5c8713b740a5c69c3e4fcc6ea",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137959.md",
+  "published_at": "2026-09-04T06:49:44.868Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137959",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137959",
+  "canonical_pr": null,
+  "summary": "#137959 remains the canonical narrow bootstrap-context bug. The hydrated preflight reports it on main 788655a900868fdc9d23d7aec1e0e4efed907e95; local static reproduction also retains a quoted imperative while dropping its framing prose. A fix artifact is ready, but this worker cannot validate or modify it: the checkout lacks the preflight main commit, pnpm cannot create its Corepack cache in the read-only sandbox, and the required sibling ../codex source is absent and cannot be cloned here.",
+  "actions": [
+    {
+      "target": "#136991",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#137959",
+      "candidate_fix": null,
+      "reason": "Historical adjacent context only; no closure or mutation is appropriate."
+    },
+    {
+      "target": "#137959",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137959",
+      "candidate_fix": null,
+      "reason": "Implement the owner-boundary fix on a refreshed checkout before opening the one permitted credited ClawSweeper PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137959",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137959",
+      "candidate_fix": null,
+      "reason": "Refresh to the preflight main SHA and use a writable executor with dependencies and the required sibling Codex checkout; then implement and validate the narrow artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 1,
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
