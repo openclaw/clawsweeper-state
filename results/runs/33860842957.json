@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138139",
+  "mode": "autonomous",
+  "run_id": "33860842957",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33860842957",
+  "head_sha": "41caa32f64b55dc321cf96ac8ada19aa9dcba8ae",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138139.md",
+  "published_at": "2026-09-04T10:10:53.659Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138139",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138139",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a safe edit: the supplied main SHA is unavailable locally, the checkout is shallow at a different SHA, dependencies needed for the required reproduction are absent, and the mandatory sibling ../codex source is absent in a read-only environment. Source inspection nevertheless identifies the reported repeated serialization path and a narrow owner-bound repair plan.",
+  "actions": [
+    {
+      "target": "#138139",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138139",
+      "candidate_fix": null,
+      "reason": "Provision a writable checkout at the supplied current-main SHA with dependencies and sibling Codex source, then run the required pre-fix 400-model reproduction before editing."
+    },
+    {
+      "target": "#136035",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138139",
+      "candidate_fix": null,
+      "reason": "Keep the broader startup incident open; this narrow provider-auth repair can supply evidence to it without claiming it resolves every startup stall."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138139",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138139",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a provisioned executor; no branch or PR may be created from this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#138139",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
