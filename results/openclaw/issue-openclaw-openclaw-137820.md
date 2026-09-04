@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137820"
 mode: "autonomous"
-run_id: "33830324106"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33830324106"
-head_sha: "c6dee040ad401c7df83076960dfeb52c7a59836f"
-workflow_conclusion: "failure"
+run_id: "33833716565"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33833716565"
+head_sha: "ea976d0cda362d3547f0058f25174f6a1c97ff18"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-04T03:07:56.939Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137820"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137820"
+published_at: "2026-09-04T03:40:45.445Z"
+canonical: "#137820"
+canonical_issue: "#137820"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33830324106](https://github.com/openclaw/clawsweeper/actions/runs/33830324106)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33833716565](https://github.com/openclaw/clawsweeper/actions/runs/33833716565)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/137820
+Canonical: #137820
 
 ## Summary
 
-#137820 is a reproducible narrow Gateway regression: the request agent is resolved before model-override validation, but src/gateway/http-utils.ts loads the catalog without that resolved agent, allowing ambient multi-agent owner selection. Implementation is blocked in this read-only checkout: required direct Codex inspection cannot occur because ../codex is absent, and pnpm cannot initialize Corepack (EROFS).
+Confirmed a narrow owner-boundary bug on main: model override validation drops the explicitly resolved request agent before loading the prepared model catalog. A writable executor can repair it with a one-line catalog argument change and focused regression coverage, but this worker cannot create or validate the branch because the checkout is read-only, dependencies are absent, and the required sibling Codex source checkout is unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/137820
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137820 | fix_needed | planned | canonical | A narrow owner-boundary fix is identified, but no code change or PR can be safely produced until the mandatory Codex inspection and writable test environment are available. |
-| cluster:issue-openclaw-openclaw-137820 | build_fix_artifact | blocked | canonical | Executor needs a writable checkout with dependencies plus the required ../codex clone before applying and validating this artifact. |
+| #137820 | fix_needed | planned | canonical | Canonical reproducible bug; the resolved request owner must also own catalog visibility validation. |
+| #137820 | build_fix_artifact | planned | canonical | A writable executor should create the narrow fix PR and run the prescribed regression suites. |
+| #137820 | open_fix_pr | blocked | canonical | Requires a writable repair executor with dependencies and the mandated Codex source checkout. |
 
 ## Needs Human
 

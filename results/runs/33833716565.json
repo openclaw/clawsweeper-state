@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137820",
+  "mode": "autonomous",
+  "run_id": "33833716565",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33833716565",
+  "head_sha": "ea976d0cda362d3547f0058f25174f6a1c97ff18",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137820.md",
+  "published_at": "2026-09-04T03:40:45.445Z",
+  "canonical": "#137820",
+  "canonical_issue": "#137820",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow owner-boundary bug on main: model override validation drops the explicitly resolved request agent before loading the prepared model catalog. A writable executor can repair it with a one-line catalog argument change and focused regression coverage, but this worker cannot create or validate the branch because the checkout is read-only, dependencies are absent, and the required sibling Codex source checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#137820",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137820",
+      "candidate_fix": null,
+      "reason": "Canonical reproducible bug; the resolved request owner must also own catalog visibility validation."
+    },
+    {
+      "target": "#137820",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137820",
+      "candidate_fix": null,
+      "reason": "A writable executor should create the narrow fix PR and run the prescribed regression suites."
+    },
+    {
+      "target": "#137820",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137820",
+      "candidate_fix": null,
+      "reason": "Requires a writable repair executor with dependencies and the mandated Codex source checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
