@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T18:39:03.850Z",
+  "updated_at": "2026-09-04T18:39:11.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:97339:5541959009:2026-09-04T14:32:54Z:re_review",
-      "comment_id": "5541959009",
-      "comment_version_key": "5541959009:2026-09-04T14:32:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/97339#issuecomment-5541959009",
-      "comment_created_at": "2026-09-04T14:32:54Z",
-      "comment_updated_at": "2026-09-04T14:32:54Z",
-      "comment_body_sha256": "e388591045111ee4bc25b1d50a72d2ade296294c9171d1a34399645b8253ac96",
-      "repo": "openclaw/openclaw",
-      "issue_number": 97339,
-      "author": "LinuxMum",
-      "author_id": 287682120,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T14:34:00.796Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-tool-schema-fix",
-        "head_sha": "405a309b66a5814c770028830a545526e2fc434b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138313:5541961831:2026-09-04T14:33:07Z:re_review",
       "comment_id": "5541961831",
@@ -32413,6 +32366,39 @@
         "kind": "pull_request",
         "branch": "automation/control-ui-locale-refresh",
         "head_sha": "943ca3c279acac0cef4ce6a5dbf57f53f72f060c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136374:5511718998:2026-09-04T18:38:18Z:clawsweeper_needs_human",
+      "comment_id": "5511718998",
+      "comment_version_key": "5511718998:2026-09-04T18:38:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136374#issuecomment-5511718998",
+      "comment_created_at": "2026-09-02T15:06:15Z",
+      "comment_updated_at": "2026-09-04T18:38:18Z",
+      "comment_body_sha256": "9638ae125dcfea0e142be0c124cc836a240cea28930e56eed13d791af5229b10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c8ce4ad4412d453e9c9c5b5ce33ffed3115612be)",
+      "expected_head_sha": "c8ce4ad4412d453e9c9c5b5ce33ffed3115612be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T18:39:11.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-emoji-prototype-key",
+        "head_sha": "c8ce4ad4412d453e9c9c5b5ce33ffed3115612be",
         "cluster_id": null,
         "job_path": null
       }
