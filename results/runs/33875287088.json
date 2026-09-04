@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138251",
+  "mode": "autonomous",
+  "run_id": "33875287088",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33875287088",
+  "head_sha": "1ac35d2489a243b7a49ed30d887e5a384f4f9af3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138251.md",
+  "published_at": "2026-09-04T13:16:37.303Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138251",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138251",
+  "canonical_pr": null,
+  "summary": "#138251 is a real current-main reset regression: the shared reset selection omits icon, color, category, boardFace, and visibility. A narrow new PR can centralize those fields and remove duplicate Gateway copying, but this read-only checkout lacks tsx and the required ../codex source, so no locally validated branch can be prepared here.",
+  "actions": [
+    {
+      "target": "#123520",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "fixed_by_candidate",
+      "canonical": null,
+      "candidate_fix": "#126575",
+      "reason": "Already closed."
+    },
+    {
+      "target": "#126575",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged and closed."
+    },
+    {
+      "target": "#138251",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138251",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked locally: filesystem access is read-only, required tsx tooling is absent, and ../codex is unavailable for the repository's mandatory direct Codex-source gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138251",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138251",
+      "candidate_fix": null,
+      "reason": "A writable executor can apply this narrow, reviewable repair."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
