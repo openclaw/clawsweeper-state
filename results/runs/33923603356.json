@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138630",
+  "mode": "autonomous",
+  "run_id": "33923603356",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33923603356",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138630.md",
+  "published_at": "2026-09-04T23:22:07.161Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138630",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138630",
+  "canonical_pr": null,
+  "summary": "#138630 is a reproducible remaining Discord preview-cleanup bug on current main. The per-turn stream requeues a second failed DELETE, but the only cleanup drain is in that turn's finalizer; the controller then dies. A narrow new fix PR is appropriate, but this checkout is read-only and lacks installed dependencies, so no branch or validated patch can be produced here.",
+  "actions": [
+    {
+      "target": "#112581",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different user-visible failure and root-cause scope; leave open independently."
+    },
+    {
+      "target": "#130006",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical partial-overlap evidence; no action on a closed PR."
+    },
+    {
+      "target": "#130391",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#130392",
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "#130392",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged partial repair is evidence, not a candidate for this remaining defect."
+    },
+    {
+      "target": "#138630",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138630",
+      "candidate_fix": null,
+      "reason": "Successful-final preview cleanup needs retry custody at the Discord message-handler lifecycle, not inside a completed turn."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138630",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138630",
+      "candidate_fix": null,
+      "reason": "Artifact is ready for a writable executor; local implementation and validation are blocked by the checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138630",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138630",
+      "candidate_fix": null,
+      "reason": "Requires a writable checkout with dependencies installed; use the supplied new-fix-PR artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_independent": 1,
+    "keep_closed": 3,
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
