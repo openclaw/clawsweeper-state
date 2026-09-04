@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 4, 2026, 03:48 UTC
+Last source update: Sep 4, 2026, 04:17 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 4, 2026, 03:48 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review publish complete | Sep 4, 2026, 03:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33833867177) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 4, 2026, 03:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33833636459) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 4, 2026, 04:17 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33834909595) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 4, 2026, 03:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33834940173) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 4, 2026, 00:55 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33823620635) |
 
 ### Repositories
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 4, 2026, 03:49 UTC
+Last source update: Sep 4, 2026, 03:58 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 808 | 100% |
-| Run attempts archived | 2597 | audit |
-| Latest successful clusters | 668 | 82.7% |
-| Latest failed clusters | 138 | 17.1% |
+| Run attempts archived | 2598 | audit |
+| Latest successful clusters | 669 | 82.8% |
+| Latest failed clusters | 137 | 17.0% |
 | Latest cancelled clusters | 2 | 0.2% |
 | Needs-human clusters | 113 | 14.0% |
 | Fix actions failed | 30 | 4.4% |
@@ -117,7 +117,7 @@ State: Failed clusters need inspection
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 808 clusters: 290 maintainer action, 115 automation snapshot, 368 intervention needed, 35 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-137085](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137085.md) is maintainer_input: Provide a writable disposable macOS CI context with sibling ../codex source available. It must add and demonstrate the pre-fix-failing Sw....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#137845](https://github.com/openclaw/openclaw/pull/137845) is automation_failed: Repair the lifecycle-owned user-facing formatting boundary without changing failover, retries, provider selection, or configuration..
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#137845](https://github.com/openclaw/openclaw/pull/137845) is automation_blocked: Requires a writable compliant repair worker..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#137217](https://github.com/openclaw/openclaw/pull/137217) is action_planned: Focused non-security bug repair; retain genuine configured-unavailable diagnostics and fail-closed owner routing..
 - Completed latest: no completed action in the latest records.
 
@@ -138,8 +138,8 @@ State: Failed clusters need inspection
 | repair_open | 1 |
 | automation_active | 0 |
 | action_planned | 71 |
-| automation_failed | 152 |
-| automation_blocked | 216 |
+| automation_failed | 151 |
+| automation_blocked | 217 |
 | reviewed_no_action | 35 |
 | completed | 0 |
 
@@ -187,7 +187,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#137845](https://github.com/openclaw/openclaw/pull/137845) | automation_failed | Repair the lifecycle-owned user-facing formatting boundary without changing failover, retries, provider selection, or configuration. | Sep 4, 2026, 03:49 UTC | [issue-openclaw-openclaw-137845](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137845.md) | [33832389817](https://github.com/openclaw/clawsweeper/actions/runs/33832389817) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#137845](https://github.com/openclaw/openclaw/pull/137845) | automation_blocked | Requires a writable compliant repair worker. | Sep 4, 2026, 03:58 UTC | [issue-openclaw-openclaw-137845](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137845.md) | [33834847125](https://github.com/openclaw/clawsweeper/actions/runs/33834847125) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#137820](https://github.com/openclaw/openclaw/pull/137820) | automation_blocked | Requires a writable repair executor with dependencies and the mandated Codex source checkout. | Sep 4, 2026, 03:40 UTC | [issue-openclaw-openclaw-137820](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137820.md) | [33833716565](https://github.com/openclaw/clawsweeper/actions/runs/33833716565) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=coreTests, extensions, extensionTests, docs,... | Sep 4, 2026, 03:28 UTC | [automerge-openclaw-openclaw-118303](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118303.md) | [33828018804](https://github.com/openclaw/clawsweeper/actions/runs/33828018804) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=coreTests, ui [check:changed] ui/src/e2e/new... | Sep 4, 2026, 03:10 UTC | [automerge-openclaw-openclaw-126056](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-126056.md) | [33827807793](https://github.com/openclaw/clawsweeper/actions/runs/33827807793) |
