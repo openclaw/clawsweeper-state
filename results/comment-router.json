@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:25:39.278Z",
+  "updated_at": "2026-09-04T01:25:57.893Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3582:5521654580:2026-09-03T15:00:17Z:clawsweeper_auto_repair",
-      "comment_id": "5521654580",
-      "comment_version_key": "5521654580:2026-09-03T15:00:17Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3582#issuecomment-5521654580",
-      "comment_created_at": "2026-09-03T06:40:51Z",
-      "comment_updated_at": "2026-09-03T15:00:17Z",
-      "comment_body_sha256": "c150fe34dc7690f9fa0269184f9d3a8218bd6281abbc7d170b78c6f7b812d46c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3582,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=364cb900e8c4a43e3b832d75ad0872ea49773802)",
-      "expected_head_sha": "364cb900e8c4a43e3b832d75ad0872ea49773802",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T15:01:21.817Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-717-plugin-categories",
-        "head_sha": "364cb900e8c4a43e3b832d75ad0872ea49773802",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3532:5415957601:2026-09-03T15:00:19Z:clawsweeper_auto_repair",
       "comment_id": "5415957601",
@@ -33935,6 +33902,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1390:5534341088:2026-09-04T01:25:00Z:clawsweeper_needs_human",
+      "comment_id": "5534341088",
+      "comment_version_key": "5534341088:2026-09-04T01:25:00Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1390#issuecomment-5534341088",
+      "comment_created_at": "2026-09-04T01:25:00Z",
+      "comment_updated_at": "2026-09-04T01:25:00Z",
+      "comment_body_sha256": "d7bdea7a9f71c3451f6959c42f049a996806a7a14d4269d4c66e5308c192600f",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1390,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owners are the trusted-command parser and GitHub label/router executor, but the supplied evidence consists of test, chec... (sha=1000e7ed8e2dc9f341bfd7896e588b7ac78f3ce9)",
+      "expected_head_sha": "1000e7ed8e2dc9f341bfd7896e588b7ac78f3ce9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:25:57.893Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/deslop-comment-router",
+        "head_sha": "1000e7ed8e2dc9f341bfd7896e588b7ac78f3ce9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
