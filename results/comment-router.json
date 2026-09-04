@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T23:03:16.988Z",
+  "updated_at": "2026-09-04T23:03:42.217Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135815:5503483723:2026-09-04T17:40:35Z:clawsweeper_auto_repair",
-      "comment_id": "5503483723",
-      "comment_version_key": "5503483723:2026-09-04T17:40:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135815#issuecomment-5503483723",
-      "comment_created_at": "2026-09-02T02:36:12Z",
-      "comment_updated_at": "2026-09-04T17:40:35Z",
-      "comment_body_sha256": "1256f63caf17774052e0122b33594cbabcacd3b9cd494c31b15a25d527215122",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135815,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=32e69c12705187321b21b8ecc65886e28145f912)",
-      "expected_head_sha": "32e69c12705187321b21b8ecc65886e28145f912",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T17:51:09.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-queue-false-storage-error",
-        "head_sha": "32e69c12705187321b21b8ecc65886e28145f912",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135868:5504133260:2026-09-04T17:41:39Z:clawsweeper_needs_human",
       "comment_id": "5504133260",
@@ -33284,6 +33251,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138394:5543631825:2026-09-04T23:02:34Z:clawsweeper_needs_human",
+      "comment_id": "5543631825",
+      "comment_version_key": "5543631825:2026-09-04T23:02:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138394#issuecomment-5543631825",
+      "comment_created_at": "2026-09-04T16:40:23Z",
+      "comment_updated_at": "2026-09-04T23:02:34Z",
+      "comment_body_sha256": "65ed2a47f38b812307058e8c0203f9c3acab9662f70667ea677f19606d671779",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138394,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied isolated Gateway/SQLite/QA-channel SIGKILL run supports automatic successor recovery and...; Review finding: [P1] [P1] Fence recovery notices at the final platform send — src/gateway/server-instance-runtime.ts:183-185 - [P2] [P2] Match notice IDs to their completion-reten... (sha=098e06cdd5755280521639ab6d6bf33dd7927de0)",
+      "expected_head_sha": "098e06cdd5755280521639ab6d6bf33dd7927de0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T23:03:42.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/restart-safe-task-recovery",
+        "head_sha": "098e06cdd5755280521639ab6d6bf33dd7927de0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
