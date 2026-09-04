@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T17:56:21.985Z",
+  "updated_at": "2026-09-04T17:56:37.585Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137576:5541406769:2026-09-04T13:50:54Z:re_review",
-      "comment_id": "5541406769",
-      "comment_version_key": "5541406769:2026-09-04T13:50:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137576#issuecomment-5541406769",
-      "comment_created_at": "2026-09-04T13:50:54Z",
-      "comment_updated_at": "2026-09-04T13:50:54Z",
-      "comment_body_sha256": "cd3da8c283f34482e3f6712256507e828303f4fa45cce9a55017cdd04c9b7056",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137576,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T13:51:49.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/improve-cloud-reconciliation-ux",
-        "head_sha": "d4d82262a970093750a2d5ab6671b0fdd8121a04",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137933:5538391387:2026-09-04T09:22:49Z:re_review",
       "comment_id": "5538391387",
@@ -32386,6 +32339,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138415:5544348648:2026-09-04T17:55:32Z:clawsweeper_auto_repair",
+      "comment_id": "5544348648",
+      "comment_version_key": "5544348648:2026-09-04T17:55:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138415#issuecomment-5544348648",
+      "comment_created_at": "2026-09-04T17:45:23Z",
+      "comment_updated_at": "2026-09-04T17:55:32Z",
+      "comment_body_sha256": "c17ca5aabc56f90f12c7c532ec34f7861dc8a2c5560b07a665f1c35be16aba87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138415,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5ca3c72f6450b17a6a458079c642fe5513366599)",
+      "expected_head_sha": "5ca3c72f6450b17a6a458079c642fe5513366599",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T17:56:37.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-quality-feedback-defect-list",
+        "head_sha": "5ca3c72f6450b17a6a458079c642fe5513366599",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
