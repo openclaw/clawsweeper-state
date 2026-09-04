@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138153"
 mode: "autonomous"
-run_id: "33865532771"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33865532771"
-head_sha: "70a0a787eaf8fa3424d88a7a07302fd4a7e0d783"
-workflow_conclusion: "success"
+run_id: "33862518208"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33862518208"
+head_sha: "934d526e73e032ece6fcd23f374be9895dffd71b"
+workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-04T11:05:09.955Z"
-canonical: "#138153"
-canonical_issue: "#138153"
+published_at: "2026-09-04T10:35:46.255Z"
+canonical: "https://github.com/openclaw/openclaw/issues/138153"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/138153"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 1
+needs_human_count: 0
 ---
 
 # issue-openclaw-openclaw-138153
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33865532771](https://github.com/openclaw/clawsweeper/actions/runs/33865532771)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33862518208](https://github.com/openclaw/clawsweeper/actions/runs/33862518208)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: #138153
+Canonical: https://github.com/openclaw/openclaw/issues/138153
 
 ## Summary
 
-Blocked before a permitted implementation: the checkout is at 22f6c810 and does not contain preflight main 98b1a1fcb5e40ec38d900e6562d1dad7f97c6f10; native Testbox tooling is absent; dependencies cannot be installed on the read-only filesystem. The current local wrapper still injects the receiver-dirt auto-commit at scripts/crabbox-wrapper.mts:3768, and the supplied job remains a narrow non-security fix candidate.
+#138153 remains the open canonical bug. Current main still conditionally uses a disposable full checkout and still injects a pre-payload receiver auto-commit, but this read-only checkout cannot install dependencies, run the required regression/native Testbox reproduction, inspect the required sibling ../codex source, or create the repair branch. A narrow, credited new-fix-PR artifact is prepared for a writable executor with the pinned native Testbox client.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 1 |
+| Needs human | 0 |
 
 ## Fix Execution Actions
 
@@ -66,8 +66,10 @@ Blocked before a permitted implementation: the checkout is at 22f6c810 and does 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138153 | build_fix_artifact | blocked | canonical | A current-main native Testbox reproduction is required before editing, but it cannot run in this immutable stale checkout. |
+| #138153 | keep_canonical | planned | canonical | Keep the source issue open while the repair is reproduced and validated in a writable Testbox-capable checkout. |
+| #138153 | fix_needed | blocked | canonical | Implementation is blocked only by the worker environment: it is read-only, cannot hydrate dependencies, lacks the pinned native Testbox client, and cannot satisfy the mandatory sibling Codex-source inspection gate. |
+| cluster:issue-openclaw-openclaw-138153 | build_fix_artifact | planned | canonical | A writable executor can implement and validate the narrow repair without product, configuration, schema, or security-boundary changes. |
 
 ## Needs Human
 
-- Provide a writable checkout at preflight main 98b1a1fcb5e40ec38d900e6562d1dad7f97c6f10 with dependencies, the pinned Crabbox/Blacksmith Testbox client, and the required sibling ../codex source so the mandated reproduction and repair can proceed.
+- none
