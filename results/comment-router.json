@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T20:47:24.781Z",
+  "updated_at": "2026-09-04T20:47:37.438Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137892:5543002815:2026-09-04T15:49:05Z:re_review",
-      "comment_id": "5543002815",
-      "comment_version_key": "5543002815:2026-09-04T15:49:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137892#issuecomment-5543002815",
-      "comment_created_at": "2026-09-04T15:49:05Z",
-      "comment_updated_at": "2026-09-04T15:49:05Z",
-      "comment_body_sha256": "881ada48f02249e33299448303edb5f7569ae523d92007aec14916858f229746",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137892,
-      "author": "pfrederiksen",
-      "author_id": 908172,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T15:54:53.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-pin-update-diagnostic",
-        "head_sha": "2122d339f932a67b636cbd4de7792ccda90d56d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136236:5507840965:2026-09-04T15:53:52Z:clawsweeper_auto_repair",
       "comment_id": "5507840965",
@@ -32983,6 +32936,39 @@
         "kind": "pull_request",
         "branch": "codex/watch-canvas-preview-final",
         "head_sha": "7d1bec73854213cc616bb17828203b0a5d177537",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137706:5534037386:2026-09-04T20:46:36Z:clawsweeper_auto_repair",
+      "comment_id": "5534037386",
+      "comment_version_key": "5534037386:2026-09-04T20:46:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137706#issuecomment-5534037386",
+      "comment_created_at": "2026-09-04T00:44:18Z",
+      "comment_updated_at": "2026-09-04T20:46:36Z",
+      "comment_body_sha256": "7e2883339625c0552ba55912d1a2b1da8e1d94d382f5236e25428f9c299cd7b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137706,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=50dfbfa9cc6e08845b0153011cf411547d17d192)",
+      "expected_head_sha": "50dfbfa9cc6e08845b0153011cf411547d17d192",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T20:47:37.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-reload-keeps-channel-webhook-routes",
+        "head_sha": "50dfbfa9cc6e08845b0153011cf411547d17d192",
         "cluster_id": null,
         "job_path": null
       }
