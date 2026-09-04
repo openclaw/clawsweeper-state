@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T14:02:32.458Z",
+  "updated_at": "2026-09-04T14:02:39.550Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136869:5538712639:2026-09-04T09:48:00Z:re_review",
-      "comment_id": "5538712639",
-      "comment_version_key": "5538712639:2026-09-04T09:48:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136869#issuecomment-5538712639",
-      "comment_created_at": "2026-09-04T09:48:00Z",
-      "comment_updated_at": "2026-09-04T09:48:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136869,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T09:50:32.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/136405-embedding-percall-timeout",
-        "head_sha": "73e525e37b06b73610ce3a952bb81687d9db930a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130490:5432419797:2026-09-04T09:47:22Z:clawsweeper_needs_human",
       "comment_id": "5432419797",
@@ -33696,6 +33649,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126457:5348830579:2026-09-04T14:01:30Z:clawsweeper_needs_human",
+      "comment_id": "5348830579",
+      "comment_version_key": "5348830579:2026-09-04T14:01:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126457#issuecomment-5348830579",
+      "comment_created_at": "2026-08-19T22:37:28Z",
+      "comment_updated_at": "2026-09-04T14:01:30Z",
+      "comment_body_sha256": "20e23b83a9abb80be676c84e50c30334620d8396b3a472cc1d7a2bbce96f8a25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The available real macOS LaunchAgent result is for parent 4844e67f139f151179b0d653301c84d97ea42ef7, but exact head 9b25c8589f13dd716cb... (sha=9b25c8589f13dd716cbcedf2bab87fcab81a9e0e)",
+      "expected_head_sha": "9b25c8589f13dd716cbcedf2bab87fcab81a9e0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T14:02:39.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/launchd-tailscale-owner-lifecycle",
+        "head_sha": "9b25c8589f13dd716cbcedf2bab87fcab81a9e0e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
