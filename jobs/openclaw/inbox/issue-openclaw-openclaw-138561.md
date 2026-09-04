@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the source-proven Active Memory observability gap: when the existing config.logging opt-in is true, the no-recall-intent early exit should emit one bounded, reason-coded info-level skipped-recall record. Preserve the tool-authority boundary, existing model-visible outcome, and quiet behavior when logging is false. Add a regression test that fails before the change. Do not change core dispatch behavior based only on this report’s unverified 2026.8.2 installation symptom, add configuration, or edit release-owned CHANGELOG.md; include release-note context in the PR body. Related released context: https://github.com/openclaw/openclaw/issues/135086.
+Repair the source-proven Active Memory observability bug in https://github.com/openclaw/openclaw/issues/138561. In the plugin owner, make an enabled `plugins.entries.active-memory.config.logging` setting produce a bounded info-level record when an eligible turn is intentionally skipped for no recall intent. Add a regression test that fails before the change and verifies the info-level record. Preserve `requiresToolAuthority` and all policy/eligibility behavior; do not infer or bypass the reporter’s unproven tool-authority condition, add configuration, change storage, or alter the model-visible outcome shipped in https://github.com/openclaw/openclaw/pull/135193. Put user-visible release-note context in the PR body or commit message, not CHANGELOG.md.
 
 Likely files:
 
@@ -77,7 +77,6 @@ Likely files:
 Validation:
 
 - pnpm test extensions/active-memory/index.test.ts
-- pnpm test src/agents/harness/selection.test.ts
 
 ## Operator Prompt
 
