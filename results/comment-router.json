@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T10:25:04.794Z",
+  "updated_at": "2026-09-04T10:25:30.144Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-04T06:54:41Z:clawsweeper_needs_human",
-      "comment_id": "5528348023",
-      "comment_version_key": "5528348023:2026-09-04T06:54:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5528348023",
-      "comment_created_at": "2026-09-03T15:52:26Z",
-      "comment_updated_at": "2026-09-04T06:54:41Z",
-      "comment_body_sha256": "f2081ebabdba65e48d346c8924a56a79c1f9933428ec8b24266ac71c6a95a103",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This is a material durable-store change: it replaces one full rewrite with a +890-production-line mutation path that changes raw transcript, identity, active projection, FTS, watermar... (sha=1d32e67a5f1599acaf5b84d8688023a9055b9524)",
-      "expected_head_sha": "1d32e67a5f1599acaf5b84d8688023a9055b9524",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T06:57:05.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "1d32e67a5f1599acaf5b84d8688023a9055b9524",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137411:5528879096:2026-09-04T06:41:00Z:clawsweeper_auto_repair",
       "comment_id": "5528879096",
@@ -32980,6 +32947,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T10:25:04.794Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:383:5527145413:2026-09-04T10:21:23Z:clawsweeper_needs_human",
+      "comment_id": "5527145413",
+      "comment_version_key": "5527145413:2026-09-04T10:21:23Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/383#issuecomment-5527145413",
+      "comment_created_at": "2026-09-03T14:17:23Z",
+      "comment_updated_at": "2026-09-04T10:21:23Z",
+      "comment_body_sha256": "ae6888a1e19b6ea20d44d98967b6222d2216e4fcadd7788b6701b86e0852ca5b",
+      "repo": "openclaw/wacli",
+      "issue_number": 383,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is the shared WhatsApp message parser, and the body claims live/history handler → SQLite → built-CLI resu... (sha=0c4636a5d99482e11c71158642b5c073bba3f472)",
+      "expected_head_sha": "0c4636a5d99482e11c71158642b5c073bba3f472",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T10:25:30.144Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/payloads-and-audio-caption",
+        "head_sha": "0c4636a5d99482e11c71158642b5c073bba3f472",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
