@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T15:16:49.560Z",
+  "updated_at": "2026-09-04T15:19:41.728Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138192:5539239804:2026-09-04T10:37:18Z:clawsweeper_needs_human",
-      "comment_id": "5539239804",
-      "comment_version_key": "5539239804:2026-09-04T10:37:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138192#issuecomment-5539239804",
-      "comment_created_at": "2026-09-04T10:37:18Z",
-      "comment_updated_at": "2026-09-04T10:37:18Z",
-      "comment_body_sha256": "8538801dfcc1bbed0f53842b5ed7f57e519289b2219484416c77a310c7646c1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138192,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports the draft as conflicting with main; its direct helper call overlaps the current-main canonical tool-creator refactor, so it must be rebased or explicitly retired before... (sha=5b8f3bd8c2f2f9e0eeb41b0eb09922385df2626f)",
-      "expected_head_sha": "5b8f3bd8c2f2f9e0eeb41b0eb09922385df2626f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T10:47:32.956Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/latest-audit-admin-20260904",
-        "head_sha": "5b8f3bd8c2f2f9e0eeb41b0eb09922385df2626f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138190:5539245882:2026-09-04T10:37:55Z:clawsweeper_needs_human",
       "comment_id": "5539245882",
@@ -32951,6 +32918,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1422:5542607675:2026-09-04T15:18:38Z:re_review",
+      "comment_id": "5542607675",
+      "comment_version_key": "5542607675:2026-09-04T15:18:38Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1422#issuecomment-5542607675",
+      "comment_created_at": "2026-09-04T15:18:38Z",
+      "comment_updated_at": "2026-09-04T15:18:38Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1422,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T15:19:39.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ack-safe-publication-supersede",
+        "head_sha": "0618ae25f19f6e5137ec4c3dd669c7346f2b7570",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
