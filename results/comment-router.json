@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T16:51:42.415Z",
+  "updated_at": "2026-09-04T16:51:45.765Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137797:5540372460:2026-09-04T12:23:27Z:re_review",
-      "comment_id": "5540372460",
-      "comment_version_key": "5540372460:2026-09-04T12:23:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137797#issuecomment-5540372460",
-      "comment_created_at": "2026-09-04T12:23:27Z",
-      "comment_updated_at": "2026-09-04T12:23:27Z",
-      "comment_body_sha256": "eb5917b7c906b5fa6a687d480d5c3b5bf447b58a9958f3071428a8dc78234093",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137797,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T12:52:12.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-linux-appimage-wayland",
-        "head_sha": "2207cca75cc284a3fcc742290adb74a238e73fb8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138219:5540373892:2026-09-04T12:23:36Z:re_review",
       "comment_id": "5540373892",
@@ -32831,6 +32784,39 @@
         "kind": "pull_request",
         "branch": "fix/deslop-campaign-bugs-4",
         "head_sha": "5f08f974d56492fafa3ffa4984d6ad9331ab4d75",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138349:5542961090:2026-09-04T16:47:51Z:clawsweeper_needs_human",
+      "comment_id": "5542961090",
+      "comment_version_key": "5542961090:2026-09-04T16:47:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138349#issuecomment-5542961090",
+      "comment_created_at": "2026-09-04T15:45:32Z",
+      "comment_updated_at": "2026-09-04T16:47:51Z",
+      "comment_body_sha256": "69666506cfd6752edb7f7b682ce1bd4b9f04a3670492cad92113c903e14a44b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138349,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The PR supplies focused fake-timer and mocked-transport tests, but no after-fix trace from a real gateway/durable transport or restart lifecycl...; Review finding: [P1] Preserve gateway send reconciliation after the initial timeout — src/agents/tools/message-tool-execution.ts:610-656 - [P1] Keep timed-out cron deliveries in a... (sha=d89ce8830c514711c2011e53d1ba28b160dec43b)",
+      "expected_head_sha": "d89ce8830c514711c2011e53d1ba28b160dec43b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T16:51:45.765Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/scheduler-pressure-audit-pr",
+        "head_sha": "d89ce8830c514711c2011e53d1ba28b160dec43b",
         "cluster_id": null,
         "job_path": null
       }
