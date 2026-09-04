@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138102"
 mode: "autonomous"
-run_id: "33857917914"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33857917914"
+run_id: "33860696610"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33860696610"
 head_sha: "41caa32f64b55dc321cf96ac8ada19aa9dcba8ae"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-04T09:43:24.021Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138102"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138102"
+published_at: "2026-09-04T10:02:46.390Z"
+canonical: "#138102"
+canonical_issue: "#138102"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-138102
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33857917914](https://github.com/openclaw/clawsweeper/actions/runs/33857917914)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33860696610](https://github.com/openclaw/clawsweeper/actions/runs/33860696610)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/138102
+Canonical: #138102
 
 ## Summary
 
-#138102 remains the canonical open bug. Source inspection identifies a narrow UI-side repair, but no branch/test/PR work can proceed: the checkout is read-only, pnpm/Corepack cannot initialize its cache, and the mandatory sibling ../codex source is absent and cannot be cloned under this environment’s restrictions.
+#138102 remains the canonical, non-security bug. Current main has the reported duplicate projection path, but no code or PR was produced because the mandatory sibling ../codex source checkout is absent and this read-only, network-restricted worker cannot create it.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,10 +66,9 @@ Canonical: https://github.com/openclaw/openclaw/issues/138102
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138102 | fix_needed | planned | canonical | The repair is bounded to existing UI projection/grouping owners and needs no config, protocol, persistent-store, or security-boundary change. |
-| #27085 | keep_closed | skipped | related | Already closed context reference; no closure or mutation action is valid. |
-| cluster:issue-openclaw-openclaw-138102 | build_fix_artifact | blocked | canonical | Provide a writable trusted checkout with dependencies and sibling ../codex source, then implement and validate this artifact on clawsweeper/issue-openclaw-openclaw-138102. |
+| #138102 | fix_needed | blocked | canonical | Restore the required ../codex checkout, then implement and validate the narrow fix artifact below. |
+| #27085 | keep_closed | skipped | related | Already closed; no closure or mutation action is valid. |
 
 ## Needs Human
 
-- none
+- Provision the exact sibling ../codex checkout (or a worker environment that can do so) before implementation. This is a repository hard gate, not a product decision.
