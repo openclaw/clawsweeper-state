@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138540",
+  "mode": "autonomous",
+  "run_id": "33912458497",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33912458497",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138540.md",
+  "published_at": "2026-09-04T20:41:12.172Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138540",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138540",
+  "canonical_pr": null,
+  "summary": "Current main c6447291964c1024d1d41e077ff2bcc58d3d2558 still omits the run-owned block-reply publisher from the MCP loopback tool construction path, so an unreserved ask_user call can wait without publishing to the originating chat. A narrow generic repair is planned, but this checkout is read-only and dependency-free, so no branch, regression, validation, or Telegram Test Server proof could be produced here.",
+  "actions": [
+    {
+      "target": "#137395",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138540",
+      "candidate_fix": null,
+      "reason": "Adjacent closed report with a distinct dispatch boundary."
+    },
+    {
+      "target": "#138352",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138540",
+      "candidate_fix": null,
+      "reason": "Adjacent native-CLI path; it does not provide the missing Gateway MCP loopback sender."
+    },
+    {
+      "target": "#138540",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138540",
+      "candidate_fix": null,
+      "reason": "Implementation is structurally clear, but the read-only checkout, missing dependencies/runtime, and unavailable required Codex sibling prevent the required failing regression, repair, and live validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138540",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138540",
+      "candidate_fix": null,
+      "reason": "New narrow fix PR required after a writable dependency-ready checkout completes the proof."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#138540",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
