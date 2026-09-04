@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T18:36:43.807Z",
+  "updated_at": "2026-09-04T18:39:03.850Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138204:5541888992:2026-09-04T14:27:55Z:re_review",
-      "comment_id": "5541888992",
-      "comment_version_key": "5541888992:2026-09-04T14:27:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138204#issuecomment-5541888992",
-      "comment_created_at": "2026-09-04T14:27:55Z",
-      "comment_updated_at": "2026-09-04T14:27:55Z",
-      "comment_body_sha256": "18f1ce1dcdf37e9d6eee0cf8bb94b3e233443e7cde129130d30273ce77308776",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138204,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T14:33:40.700Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/assistant-visible-glm-arg-key",
-        "head_sha": "92329ee101a9bde28401f89be5faf921c6670fef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:97339:5541959009:2026-09-04T14:32:54Z:re_review",
       "comment_id": "5541959009",
@@ -32429,6 +32382,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138435:5544532605:2026-09-04T18:37:24Z:clawsweeper_needs_human",
+      "comment_id": "5544532605",
+      "comment_version_key": "5544532605:2026-09-04T18:37:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138435#issuecomment-5544532605",
+      "comment_created_at": "2026-09-04T18:02:47Z",
+      "comment_updated_at": "2026-09-04T18:37:24Z",
+      "comment_body_sha256": "78ecbf7eaf05bf9f0e3971eaecc200ea8e789ef361e029fd68dc8dbcbd1080c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138435,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head openclaw/ci-gate check is failed in the supplied check state; its failure detail is not included, so merging remains blocked until it is resolved or identified as an in... (sha=943ca3c279acac0cef4ce6a5dbf57f53f72f060c)",
+      "expected_head_sha": "943ca3c279acac0cef4ce6a5dbf57f53f72f060c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T18:39:03.850Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "943ca3c279acac0cef4ce6a5dbf57f53f72f060c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
