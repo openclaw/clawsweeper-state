@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T14:54:42.070Z",
+  "updated_at": "2026-09-04T14:54:46.693Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138071:5538720311:2026-09-04T10:02:18Z:clawsweeper_needs_human",
-      "comment_id": "5538720311",
-      "comment_version_key": "5538720311:2026-09-04T10:02:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138071#issuecomment-5538720311",
-      "comment_created_at": "2026-09-04T09:48:45Z",
-      "comment_updated_at": "2026-09-04T10:02:18Z",
-      "comment_body_sha256": "5b21a1600a2953bddb5b9dba6191092d04f8bdfdaaa85ca80ffc0061b6e80f30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138071,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This bug fix changes durable restart-recovery state and adds production ownership logic; a regression could mis-associate session recovery after a Gateway restart, although the introd... (sha=963adabb490dfa6c11bb5ab7284571e207c64038)",
-      "expected_head_sha": "963adabb490dfa6c11bb5ab7284571e207c64038",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T10:07:49.483Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-gateway-restart-reply-cancellation",
-        "head_sha": "963adabb490dfa6c11bb5ab7284571e207c64038",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138145:5538773018:2026-09-04T09:53:49Z:clawsweeper_needs_human",
       "comment_id": "5538773018",
@@ -33725,6 +33692,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137300:5542234750:2026-09-04T14:52:26Z:re_review",
+      "comment_id": "5542234750",
+      "comment_version_key": "5542234750:2026-09-04T14:52:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137300#issuecomment-5542234750",
+      "comment_created_at": "2026-09-04T14:52:26Z",
+      "comment_updated_at": "2026-09-04T14:52:26Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137300,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T14:54:44.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pb-61a/federated-prompt-admission",
+        "head_sha": "552467b2235b37e9500f7c6db1d85a32d44f3932",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
