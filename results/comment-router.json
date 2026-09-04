@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:12:42.548Z",
+  "updated_at": "2026-09-04T21:12:57.952Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3595:5543276354:2026-09-04T16:10:43Z:clawsweeper_needs_human",
-      "comment_id": "5543276354",
-      "comment_version_key": "5543276354:2026-09-04T16:10:43Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3595#issuecomment-5543276354",
-      "comment_created_at": "2026-09-04T16:10:43Z",
-      "comment_updated_at": "2026-09-04T16:10:43Z",
-      "comment_body_sha256": "c75f62d5349deb142786730b41424a69d8a4fbdfa6fea448e662ddc129b246a8",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3595,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The update changes package-validation and cryptographic dependency versions; the captured snapshot still had package, unit, browser-smoke, and local-auth inspector gates in progress,... (sha=afd44cdde8b6ea9a8549bb507070dac1a99ef655)",
-      "expected_head_sha": "afd44cdde8b6ea9a8549bb507070dac1a99ef655",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T16:11:43.984Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-d3a9e4bc93",
-        "head_sha": "afd44cdde8b6ea9a8549bb507070dac1a99ef655",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138336:5542295276:2026-09-04T16:10:47Z:clawsweeper_needs_human",
       "comment_id": "5542295276",
@@ -32940,6 +32907,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5546501582:2026-09-04T21:11:58Z:re_review",
+      "comment_id": "5546501582",
+      "comment_version_key": "5546501582:2026-09-04T21:11:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5546501582",
+      "comment_created_at": "2026-09-04T21:11:58Z",
+      "comment_updated_at": "2026-09-04T21:11:58Z",
+      "comment_body_sha256": "d003bfed4d41137e5ba43efa0aa98df4446fca9c5442ec2fe7ce0ebbd75f817e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T21:12:55.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "32157bf50403475ab5d3e8a935d08d868f369851",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
