@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-04T21:50:49.930Z",
+  "updated_at": "2026-09-04T21:49:25.650Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138286:5541304060:2026-09-04T16:42:41Z:clawsweeper_auto_repair",
+      "comment_id": "5541304060",
+      "comment_version_key": "5541304060:2026-09-04T16:42:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138286#issuecomment-5541304060",
+      "comment_created_at": "2026-09-04T13:42:22Z",
+      "comment_updated_at": "2026-09-04T16:42:41Z",
+      "comment_body_sha256": "c80ac035a373d4acb57fa954fce499c9d3f4dbc1dbc1b48feb4e3b021d007b2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5f44627cbdbeabe44d6785fba2d838578127b64d)",
+      "expected_head_sha": "5f44627cbdbeabe44d6785fba2d838578127b64d",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-04T16:44:43.048Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-ios-operator-fleet",
+        "head_sha": "5f44627cbdbeabe44d6785fba2d838578127b64d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138278:5541379542:2026-09-04T16:41:00Z:clawsweeper_auto_repair",
       "comment_id": "5541379542",
@@ -32847,53 +32880,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128175:5546842602:2026-09-04T21:49:54Z:re_review",
-      "comment_id": "5546842602",
-      "comment_version_key": "5546842602:2026-09-04T21:49:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128175#issuecomment-5546842602",
-      "comment_created_at": "2026-09-04T21:49:54Z",
-      "comment_updated_at": "2026-09-04T21:49:54Z",
-      "comment_body_sha256": "cf5ba25888e58a61887bebe7ae3575c8faab120c128bede314dd566f153b1978",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128175,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T21:50:47.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-typed-gateway-auth-secretrefs",
-        "head_sha": "23b805fa3821e06e882d846843d96da2252a91bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
