@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:46:00.490Z",
+  "updated_at": "2026-09-04T03:46:47.222Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137562:5533955225:2026-09-04T00:33:29Z:re_review",
-      "comment_id": "5533955225",
-      "comment_version_key": "5533955225:2026-09-04T00:33:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137562#issuecomment-5533955225",
-      "comment_created_at": "2026-09-04T00:33:29Z",
-      "comment_updated_at": "2026-09-04T00:33:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137562,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T00:49:17.566Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-exec-positional-parser",
-        "head_sha": "0e8e941fa377ec7150099269925f80b81805b22b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137562:5532278362:2026-09-04T00:47:28Z:clawsweeper_needs_human",
       "comment_id": "5532278362",
@@ -32740,6 +32693,39 @@
         "kind": "pull_request",
         "branch": "codex/rich-text-composer",
         "head_sha": "5968ade001c2f47f98ea8a67f9708a57379bd7e9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129388:5442236054:2026-09-04T03:38:14Z:clawsweeper_needs_human",
+      "comment_id": "5442236054",
+      "comment_version_key": "5442236054:2026-09-04T03:38:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129388#issuecomment-5442236054",
+      "comment_created_at": "2026-08-27T16:39:00Z",
+      "comment_updated_at": "2026-09-04T03:38:14Z",
+      "comment_body_sha256": "6d9f052888c9ceb17488112ba49c659012c6bac42179aff800d6c52cd88e57d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied scenario matrix acknowledges missing authority and overlap cases, and no exact-head produ...; Review finding: [P1] Obtain approval before adding continuation configuration — src/config/zod-schema.agent-defaults.ts:257-311 - [medium] Prove stale and unauthorized recipient r... (sha=43c8fb88d299dc8e9f35dbc9da7b82c395575796)",
+      "expected_head_sha": "43c8fb88d299dc8e9f35dbc9da7b82c395575796",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T03:46:47.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codeagent/85651-upstream-1ba243c8-gates",
+        "head_sha": "43c8fb88d299dc8e9f35dbc9da7b82c395575796",
         "cluster_id": null,
         "job_path": null
       }
