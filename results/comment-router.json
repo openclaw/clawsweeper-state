@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-04T02:55:18.438Z",
+  "updated_at": "2026-09-04T02:54:10.351Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137403:5528755597:2026-09-03T21:04:23Z:clawsweeper_needs_human",
+      "comment_id": "5528755597",
+      "comment_version_key": "5528755597:2026-09-03T21:04:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137403#issuecomment-5528755597",
+      "comment_created_at": "2026-09-03T16:24:32Z",
+      "comment_updated_at": "2026-09-03T21:04:23Z",
+      "comment_body_sha256": "42018fcfd50efee059420b746a6858aabefe7798fcc78d5c3b2e06ff37934da6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137403,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep request authority on metadata-only reads (P1)** - Capture request authority before this early response. The normal board.get path fences an aborted request, retired Gateway context, and authorization/lifecy...; Review finding: [P1] Keep request authority on metadata-only reads — src/gateway/server-methods/board.ts:143-156 - [medium] Metadata response lacks authority validation — src/gate... (sha=a03a6583e66f266fb6795c91189bfbf1cb7653f9)",
+      "expected_head_sha": "a03a6583e66f266fb6795c91189bfbf1cb7653f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-03T21:05:46.980Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/dashboards-card-view",
+        "head_sha": "a03a6583e66f266fb6795c91189bfbf1cb7653f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3512:5381521199:2026-09-03T21:06:28Z:clawsweeper_needs_human",
       "comment_id": "5381521199",
@@ -33569,53 +33602,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124980:5534994049:2026-09-04T02:54:21Z:re_review",
-      "comment_id": "5534994049",
-      "comment_version_key": "5534994049:2026-09-04T02:54:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124980#issuecomment-5534994049",
-      "comment_created_at": "2026-09-04T02:54:21Z",
-      "comment_updated_at": "2026-09-04T02:54:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124980,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T02:55:16.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/docs-secrets-quick-path-120355",
-        "head_sha": "27ff525ee3aeade7b320758d230d8c743f819a81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
