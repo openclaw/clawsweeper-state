@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:56:33.401Z",
+  "updated_at": "2026-09-04T03:56:36.288Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137527:5534480548:2026-09-04T01:43:25Z:re_review",
-      "comment_id": "5534480548",
-      "comment_version_key": "5534480548:2026-09-04T01:43:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137527#issuecomment-5534480548",
-      "comment_created_at": "2026-09-04T01:43:25Z",
-      "comment_updated_at": "2026-09-04T01:43:25Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137527,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T01:44:32.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/github-issue-transport",
-        "head_sha": "c7d839a496e61e9ece606bbe042ed687c5bd76e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137765:5534485299:2026-09-04T01:44:02Z:clawsweeper_needs_human",
       "comment_id": "5534485299",
@@ -32480,6 +32433,39 @@
         "kind": "pull_request",
         "branch": "codex/team-browser-cleanup-20260904",
         "head_sha": "63ffa76bdf9fd77977c73ab129ba9c2140cab27e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136862:5519503850:2026-09-04T03:55:30Z:clawsweeper_needs_human",
+      "comment_id": "5519503850",
+      "comment_version_key": "5519503850:2026-09-04T03:55:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136862#issuecomment-5519503850",
+      "comment_created_at": "2026-09-03T02:39:50Z",
+      "comment_updated_at": "2026-09-04T03:55:30Z",
+      "comment_body_sha256": "4822b8a3de216f1e71a6780f717881721d8aebcac7ee8078948b48fdf06c2b64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The authenticated payload handoff intentionally relies on private ws receiver fields. The lockfile pins ws 8.21.3 and the PR adds integration coverage, but a future ws upgrade must re... (sha=34ba460bc30ac115c33bb1b3be1f1ab01111d66a)",
+      "expected_head_sha": "34ba460bc30ac115c33bb1b3be1f1ab01111d66a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T03:56:36.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/claw-chat-loading-perf-a3a519",
+        "head_sha": "34ba460bc30ac115c33bb1b3be1f1ab01111d66a",
         "cluster_id": null,
         "job_path": null
       }
