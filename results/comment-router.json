@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:44:41.685Z",
+  "updated_at": "2026-09-04T21:45:18.620Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137359:5543594234:2026-09-04T16:36:56Z:re_review",
-      "comment_id": "5543594234",
-      "comment_version_key": "5543594234:2026-09-04T16:36:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137359#issuecomment-5543594234",
-      "comment_created_at": "2026-09-04T16:36:56Z",
-      "comment_updated_at": "2026-09-04T16:36:56Z",
-      "comment_body_sha256": "aacc24e21675741b339757d94513e94bfd87df6affcfbfde74907ed13c05ab3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137359,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T16:37:52.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preflight-compaction-ingress-watchdog",
-        "head_sha": "173a527b4be4d943fd15c1070b5e127cbce4fc36",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132729:5543599131:2026-09-04T16:37:22Z:re_review",
       "comment_id": "5543599131",
@@ -32933,6 +32886,39 @@
         "kind": "pull_request",
         "branch": "fix/compaction-quality-feedback-defect-list",
         "head_sha": "83ed0f407a735b3a0a4f6eb9017510453d181121",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138633:5546792795:2026-09-04T21:44:13Z:clawsweeper_auto_repair",
+      "comment_id": "5546792795",
+      "comment_version_key": "5546792795:2026-09-04T21:44:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138633#issuecomment-5546792795",
+      "comment_created_at": "2026-09-04T21:44:13Z",
+      "comment_updated_at": "2026-09-04T21:44:13Z",
+      "comment_body_sha256": "c6df387c8e4dbf0bd6f3541c166fdfc9f99b9bf1d4ba84a6ee098b66d2242bf0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138633,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f9f0c77d5662e94684001b5995dffdcf64a67d5c)",
+      "expected_head_sha": "f9f0c77d5662e94684001b5995dffdcf64a67d5c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T21:45:18.620Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/lmstudio-loaded-context-138589",
+        "head_sha": "f9f0c77d5662e94684001b5995dffdcf64a67d5c",
         "cluster_id": null,
         "job_path": null
       }
