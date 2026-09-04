@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:39:50.992Z",
+  "updated_at": "2026-09-04T03:40:09.434Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136949:5520114142:2026-09-03T03:57:50Z:re_review",
-      "comment_id": "5520114142",
-      "comment_version_key": "5520114142:2026-09-03T03:57:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136949#issuecomment-5520114142",
-      "comment_created_at": "2026-09-03T03:57:50Z",
-      "comment_updated_at": "2026-09-03T03:57:50Z",
-      "comment_body_sha256": "289665792b725c62795d7bf95e952ab80b44d09b4f627bf3f63a77ae19027856",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head dc50286c25069c1ba815f97a7230911e86948fa0. addressed p1: all three testbox origins and header scopes now exactly use `https://github.com/${checkout_repo}.git`; guard verifies that relation. also covered shared shallow-base recovery and workflow sanity same-repo manual fetches",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T00:16:02.876Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136949:5520199775:2026-09-03T04:08:36Z:re_review",
       "comment_id": "5520199775",
@@ -32705,6 +32678,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137855:5535311815:2026-09-04T03:39:11Z:clawsweeper_needs_human",
+      "comment_id": "5535311815",
+      "comment_version_key": "5535311815:2026-09-04T03:39:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137855#issuecomment-5535311815",
+      "comment_created_at": "2026-09-04T03:39:11Z",
+      "comment_updated_at": "2026-09-04T03:39:11Z",
+      "comment_body_sha256": "8aea99dedc33906f076d2ce8c7c55ac53e5f6cc54cd32b2d5e3ea17701d0d9f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the shared failure-copy renderer, reached by the auto-reply formatter before channel delivery. The supplied evi... (sha=caee0083a76ff2a55328b60543acb9f05b0af220)",
+      "expected_head_sha": "caee0083a76ff2a55328b60543acb9f05b0af220",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T03:40:09.433Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/137845-assistant-failure-copy-unclassified-fallback",
+        "head_sha": "caee0083a76ff2a55328b60543acb9f05b0af220",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
