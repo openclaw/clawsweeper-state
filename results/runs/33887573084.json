@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138339",
+  "mode": "autonomous",
+  "run_id": "33887573084",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33887573084",
+  "head_sha": "666375f12276ff0a7aecf51430b9cdc2fb9914b3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138339.md",
+  "published_at": "2026-09-04T15:29:02.799Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138339",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138339",
+  "canonical_pr": null,
+  "summary": "Confirmed on main bf14f768cb5e2de48209660d21e6d439d95b846b: forced service installation uses a bespoke five-second readiness probe before selecting recovery restart, interrupting a legitimately starting systemd Gateway. A narrow canonical-verifier repair is specified, but this read-only checkout cannot create the branch/regression or install missing dependencies.",
+  "actions": [
+    {
+      "target": "#138339",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138339",
+      "candidate_fix": null,
+      "reason": "The bug is source-reproducible on current main. Implementation is blocked only by the immutable checkout, missing dependencies, and unavailable required Codex-source inspection."
+    },
+    {
+      "target": "#119958",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep independently tracked; it is not a replacement for the narrow #138339 repair."
+    },
+    {
+      "target": "#119975",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related but not canonical for the forced-install five-second probe defect."
+    },
+    {
+      "target": "#130900",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already closed; no action is valid."
+    },
+    {
+      "target": "#137008",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related lifecycle area but a distinct root cause."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138339",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138339",
+      "candidate_fix": null,
+      "reason": "An executor with a writable checkout should implement the narrow artifact on clawsweeper/issue-openclaw-openclaw-138339."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 2,
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#138339",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
