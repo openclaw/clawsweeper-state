@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T07:57:14.552Z",
+  "updated_at": "2026-09-04T07:57:48.520Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5530258549:2026-09-03T18:26:16Z:re_review",
-      "comment_id": "5530258549",
-      "comment_version_key": "5530258549:2026-09-03T18:26:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5530258549",
-      "comment_created_at": "2026-09-03T18:26:16Z",
-      "comment_updated_at": "2026-09-03T18:26:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T04:00:52.819Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5531406185:2026-09-03T20:02:58Z:re_review",
       "comment_id": "5531406185",
@@ -32854,6 +32827,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T07:57:14.552Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137855:5535311815:2026-09-04T07:56:53Z:clawsweeper_needs_human",
+      "comment_id": "5535311815",
+      "comment_version_key": "5535311815:2026-09-04T07:56:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137855#issuecomment-5535311815",
+      "comment_created_at": "2026-09-04T03:39:11Z",
+      "comment_updated_at": "2026-09-04T07:56:53Z",
+      "comment_body_sha256": "8bd305d8843619c382f236b9a622ad2090284c26f370b91cad757961a6c618b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137855,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied Gateway screenshots and recording could not be independently inspected because this worker cannot reach GitHub; their visual contents still need reviewer confirmation. (sha=a45edabdd8c2b819c8e619622114cae5080c3ff3)",
+      "expected_head_sha": "a45edabdd8c2b819c8e619622114cae5080c3ff3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T07:57:48.520Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/137845-assistant-failure-copy-unclassified-fallback",
+        "head_sha": "a45edabdd8c2b819c8e619622114cae5080c3ff3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
