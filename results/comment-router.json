@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:38:15.381Z",
+  "updated_at": "2026-09-04T03:38:15.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137671:5533681696:2026-09-03T23:58:06Z:re_review",
-      "comment_id": "5533681696",
-      "comment_version_key": "5533681696:2026-09-03T23:58:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137671#issuecomment-5533681696",
-      "comment_created_at": "2026-09-03T23:58:06Z",
-      "comment_updated_at": "2026-09-03T23:58:06Z",
-      "comment_body_sha256": "d7104477c99b431196a47efa6adca9d7400fb142596fe65b64545484cb9b4b99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137671,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T00:13:55.560Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-cleanup-ownership",
-        "head_sha": "7ac66599b10ab1e881d9d83a1a9baea24109b6d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137671:5533795236:2026-09-04T00:12:45Z:clawsweeper_needs_human",
       "comment_id": "5533795236",
@@ -32684,6 +32637,39 @@
         "kind": "pull_request",
         "branch": "test-command-format",
         "head_sha": "79ced598f4f1e491f7d19a18bf16225258ba81c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137847:5535298419:2026-09-04T03:37:12Z:clawsweeper_needs_human",
+      "comment_id": "5535298419",
+      "comment_version_key": "5535298419:2026-09-04T03:37:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137847#issuecomment-5535298419",
+      "comment_created_at": "2026-09-04T03:37:12Z",
+      "comment_updated_at": "2026-09-04T03:37:12Z",
+      "comment_body_sha256": "6e8bfffecf0923e8b810f1f08d9b5b03836409c087f0fb464955011a88491389",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137847,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removing --experimental-page-id-routing changes the built-in existing-session command line; the PR body describes the pinned Chrome MCP 1.8.0 default, but that upstream source was not... (sha=5f8a0eba52f8129a25b1dd9cb5193d49c307dbfd)",
+      "expected_head_sha": "5f8a0eba52f8129a25b1dd9cb5193d49c307dbfd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T03:38:15.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-audit-chrome-bootstrap",
+        "head_sha": "5f8a0eba52f8129a25b1dd9cb5193d49c307dbfd",
         "cluster_id": null,
         "job_path": null
       }
