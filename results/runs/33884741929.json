@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138288",
+  "mode": "autonomous",
+  "run_id": "33884741929",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33884741929",
+  "head_sha": "0a4965a67b03088c86b7df2586cd6be3e4db550a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138288.md",
+  "published_at": "2026-09-04T14:46:46.900Z",
+  "canonical": "#138288",
+  "canonical_issue": "#138288",
+  "canonical_pr": null,
+  "summary": "#138288 remains a source-proven canonical Telegram logging defect on main 523221e3767f814b694858b21a56711fb89b7697. A narrow two-file repair is ready, but this worker cannot modify the read-only checkout or validate it: the required tsx dependency is absent and the mandated sibling ../codex checkout is unavailable.",
+  "actions": [
+    {
+      "target": "#138288",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138288",
+      "candidate_fix": null,
+      "reason": "Needs a writable, dependency-ready execution checkout (and the required sibling Codex source) to add the regression, demonstrate it fails pre-fix, remove the log emission, and rerun validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies installed and the required ../codex source checkout, then execute the supplied narrow fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

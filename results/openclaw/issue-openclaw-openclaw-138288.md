@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138288"
 mode: "autonomous"
-run_id: "33880300181"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33880300181"
-head_sha: "1ac35d2489a243b7a49ed30d887e5a384f4f9af3"
-workflow_conclusion: "failure"
+run_id: "33884741929"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33884741929"
+head_sha: "0a4965a67b03088c86b7df2586cd6be3e4db550a"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-04T14:07:43.119Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138288"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138288"
+published_at: "2026-09-04T14:46:46.900Z"
+canonical: "#138288"
+canonical_issue: "#138288"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-138288
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33880300181](https://github.com/openclaw/clawsweeper/actions/runs/33880300181)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33884741929](https://github.com/openclaw/clawsweeper/actions/runs/33884741929)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/138288
+Canonical: #138288
 
 ## Summary
 
-#138288 remains a narrow, source-proven Telegram log-noise bug on current main dfb1faf0b28afde53899f34dfa5089bb137c76ea. The repair is limited to removing the poll-start log and strengthening its existing liveness test. Local implementation and validation are blocked because this read-only checkout lacks tsx/esm; the mandatory sibling ../codex source is also absent and cannot be cloned in this sandbox.
+#138288 remains a source-proven canonical Telegram logging defect on main 523221e3767f814b694858b21a56711fb89b7697. A narrow two-file repair is ready, but this worker cannot modify the read-only checkout or validate it: the required tsx dependency is absent and the mandated sibling ../codex checkout is unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/138288
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138288 | fix_needed | planned | canonical | No viable implementation PR exists; create the one narrow fix PR from the configured ClawSweeper branch. |
-| cluster:issue-openclaw-openclaw-138288 | build_fix_artifact | blocked | canonical | The artifact is complete, but the executor must install dependencies, make the two-file change, and run fresh review/validation in a writable checkout. |
+| #138288 | fix_needed | blocked | canonical | Needs a writable, dependency-ready execution checkout (and the required sibling Codex source) to add the regression, demonstrate it fails pre-fix, remove the log emission, and rerun validation. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies installed and the required ../codex source checkout, then execute the supplied narrow fix artifact.
