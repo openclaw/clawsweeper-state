@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138620"
 mode: "autonomous"
-run_id: "33922487297"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33922487297"
+run_id: "33923279334"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33923279334"
 head_sha: "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-04T21:54:55.068Z"
+published_at: "2026-09-04T22:37:25.151Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138620"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138620"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33922487297](https://github.com/openclaw/clawsweeper/actions/runs/33922487297)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33923279334](https://github.com/openclaw/clawsweeper/actions/runs/33923279334)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/138620
 
 ## Summary
 
-Narrow fix plan prepared for #138620. Implementation is blocked in this worker: the required preflight main SHA is absent from the checkout, node_modules is missing in the read-only checkout, and mandatory sibling ../codex source is unavailable for the required direct inspection gate.
+#138620 has a narrow source-proven repair, but this read-only checkout cannot implement or validate it: preflight main ec87f033ff00c057881798381df24140cd111c56 is absent, ../codex is absent despite the repository’s mandatory direct-Codex gate, and dependencies are missing (the changed-check harness cannot resolve tsx/esm; pnpm cannot initialize its cache on the read-only filesystem).
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Narrow fix plan prepared for #138620. Implementation is blocked in this worker: 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138620 | fix_needed | planned | canonical | The issue has a narrow owner-boundary repair; a writable, current checkout must reproduce the child assertion before applying it. |
-| #131074 | keep_related | planned | related | Related external-service update behavior, but a separate root cause and existing linked implementation path. |
-| #137503 | keep_independent | planned | independent | Independent Doctor/service-maintenance bug. |
-| cluster:issue-openclaw-openclaw-138620 | build_fix_artifact | planned | canonical | Artifact is ready for execution after refreshing the checkout and satisfying the Codex source gate. |
-| cluster:issue-openclaw-openclaw-138620 | open_fix_pr | blocked | canonical | Do not open a PR until the exact preflight base is available, the failing regression has run, and the mandatory direct Codex inspection gate is satisfied. |
+| #131074 | keep_related | planned | related | Related update/Doctor service behavior, but not the fresh-child policy-loss root cause in #138620. |
+| #137503 | keep_independent | planned | independent | Distinct root cause and repair surface; keep open independently. |
+| #138620 | fix_needed | planned | canonical | A canonical new fix PR is appropriate once the executor has the preflight main revision, sibling Codex source, and a writable dependency/cache environment. |
+| cluster:issue-openclaw-openclaw-138620 | build_fix_artifact | blocked | canonical | Artifact is ready, but implementation and validation must run in a writable checkout refreshed to the preflight main SHA. |
 
 ## Needs Human
 

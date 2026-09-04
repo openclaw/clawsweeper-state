@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138620",
+  "mode": "autonomous",
+  "run_id": "33923279334",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33923279334",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138620.md",
+  "published_at": "2026-09-04T22:37:25.151Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138620",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138620",
+  "canonical_pr": null,
+  "summary": "#138620 has a narrow source-proven repair, but this read-only checkout cannot implement or validate it: preflight main ec87f033ff00c057881798381df24140cd111c56 is absent, ../codex is absent despite the repository’s mandatory direct-Codex gate, and dependencies are missing (the changed-check harness cannot resolve tsx/esm; pnpm cannot initialize its cache on the read-only filesystem).",
+  "actions": [
+    {
+      "target": "#131074",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related update/Doctor service behavior, but not the fresh-child policy-loss root cause in #138620."
+    },
+    {
+      "target": "#137503",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct root cause and repair surface; keep open independently."
+    },
+    {
+      "target": "#138620",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138620",
+      "candidate_fix": null,
+      "reason": "A canonical new fix PR is appropriate once the executor has the preflight main revision, sibling Codex source, and a writable dependency/cache environment."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138620",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138620",
+      "candidate_fix": null,
+      "reason": "Artifact is ready, but implementation and validation must run in a writable checkout refreshed to the preflight main SHA."
+    }
+  ],
+  "action_counts": {
+    "keep_related": 1,
+    "keep_independent": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
