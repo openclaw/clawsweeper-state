@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:42:09.335Z",
+  "updated_at": "2026-09-04T03:42:24.701Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137536:5533492782:2026-09-03T23:33:29Z:re_review",
-      "comment_id": "5533492782",
-      "comment_version_key": "5533492782:2026-09-03T23:33:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137536#issuecomment-5533492782",
-      "comment_created_at": "2026-09-03T23:33:29Z",
-      "comment_updated_at": "2026-09-03T23:33:29Z",
-      "comment_body_sha256": "e6ae451150762c5289167ed807fd429046319e7cbc8fe3f8341fb7ab3948bd44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137536,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact current head; please confirm only current actionable findings and rank-up moves. note: required testbox changed-files runs were cancelled before command execution; direct aws standard/on-demand fallback reached allocation but never ssh-ready, and was released without executing the suite",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T00:17:56.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-managed-npm-cleanup",
-        "head_sha": "9b21570182b0922706b362b026d01b9b14d57005",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137536:5531757622:2026-09-04T00:16:53Z:clawsweeper_needs_human",
       "comment_id": "5531757622",
@@ -32706,6 +32659,39 @@
         "kind": "pull_request",
         "branch": "fix/approve-decision-prototype-lookup",
         "head_sha": "a98231de6f8dfd314b9b8e89145ea9cbcdfed109",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137652:5533643440:2026-09-04T03:41:28Z:clawsweeper_needs_human",
+      "comment_id": "5533643440",
+      "comment_version_key": "5533643440:2026-09-04T03:41:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137652#issuecomment-5533643440",
+      "comment_created_at": "2026-09-03T23:52:57Z",
+      "comment_updated_at": "2026-09-04T03:41:28Z",
+      "comment_body_sha256": "9fcb7b5e4629e406a62e7fe3b153d6af1671c7979b9248c1b3389a8a2e3a4c81",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137652,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewer could not independently read current-main source or the installed @openclaw/fs-safe v0.7.0 implementation because this blobless checkout lacks dependencies and its requir... (sha=382559ebe761b1e61e5b06ce74985b6ab54b6591)",
+      "expected_head_sha": "382559ebe761b1e61e5b06ce74985b6ab54b6591",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T03:42:24.701Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-audit-icons-20260903",
+        "head_sha": "382559ebe761b1e61e5b06ce74985b6ab54b6591",
         "cluster_id": null,
         "job_path": null
       }
