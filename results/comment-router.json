@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T12:47:10.298Z",
+  "updated_at": "2026-09-04T12:47:24.784Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1778:5528761675:2026-09-04T08:48:18Z:clawsweeper_needs_human",
-      "comment_id": "5528761675",
-      "comment_version_key": "5528761675:2026-09-04T08:48:18Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1778#issuecomment-5528761675",
-      "comment_created_at": "2026-09-03T16:25:01Z",
-      "comment_updated_at": "2026-09-04T08:48:18Z",
-      "comment_body_sha256": "724b9b5f2a17971c81f4d9b1f6ed4ecdd7149deac0bf841ef40426daf979a48a",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1778,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: AWSQualificationRun persists run authority and DirectAuthoritySigner reaches AWS, but supplied coverage uses fa...; Review finding: [medium] Validate persistent run authority at the final AWS effect — worker/src/aws-qualification-authority.ts:253 (sha=28e459901d1973f079d827b56cc1cda606a39eac)",
-      "expected_head_sha": "28e459901d1973f079d827b56cc1cda606a39eac",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T08:50:13.983Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/aws-qualification-broker",
-        "head_sha": "28e459901d1973f079d827b56cc1cda606a39eac",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137200:5523175027:2026-09-04T08:36:38Z:clawsweeper_auto_repair",
       "comment_id": "5523175027",
@@ -33068,6 +33035,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1775:5540627153:2026-09-04T12:46:14Z:re_review",
+      "comment_id": "5540627153",
+      "comment_version_key": "5540627153:2026-09-04T12:46:14Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1775#issuecomment-5540627153",
+      "comment_created_at": "2026-09-04T12:46:14Z",
+      "comment_updated_at": "2026-09-04T12:46:14Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1775,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T12:47:16.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/image-qualification-harness",
+        "head_sha": "809d8e88e077a56ba4e4d658593c7d6c9fe551fb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
