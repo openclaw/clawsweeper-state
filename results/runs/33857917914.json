@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138102",
+  "mode": "autonomous",
+  "run_id": "33857917914",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33857917914",
+  "head_sha": "41caa32f64b55dc321cf96ac8ada19aa9dcba8ae",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138102.md",
+  "published_at": "2026-09-04T09:43:24.021Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138102",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138102",
+  "canonical_pr": null,
+  "summary": "#138102 remains the canonical open bug. Source inspection identifies a narrow UI-side repair, but no branch/test/PR work can proceed: the checkout is read-only, pnpm/Corepack cannot initialize its cache, and the mandatory sibling ../codex source is absent and cannot be cloned under this environment’s restrictions.",
+  "actions": [
+    {
+      "target": "#138102",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138102",
+      "candidate_fix": null,
+      "reason": "The repair is bounded to existing UI projection/grouping owners and needs no config, protocol, persistent-store, or security-boundary change."
+    },
+    {
+      "target": "#27085",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138102",
+      "candidate_fix": null,
+      "reason": "Already closed context reference; no closure or mutation action is valid."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138102",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138102",
+      "candidate_fix": null,
+      "reason": "Provide a writable trusted checkout with dependencies and sibling ../codex source, then implement and validate this artifact on clawsweeper/issue-openclaw-openclaw-138102."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
