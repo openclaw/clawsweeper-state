@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:34:07.515Z",
+  "updated_at": "2026-09-04T01:35:15.483Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136764:5527831397:2026-09-03T15:12:11Z:re_review",
-      "comment_id": "5527831397",
-      "comment_version_key": "5527831397:2026-09-03T15:12:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136764#issuecomment-5527831397",
-      "comment_created_at": "2026-09-03T15:12:11Z",
-      "comment_updated_at": "2026-09-03T15:12:11Z",
-      "comment_body_sha256": "1bff720067f80801abb3e325f597d5c2833183615e843211e64c00970cfacea3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136764,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-03T15:13:11.891Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "roboclaw/worktree-capacity-preflight",
-        "head_sha": "cfbe18319dfdb3fefc30f016fcf55817bc4d169b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137360:5527839651:2026-09-03T15:12:45Z:clawsweeper_auto_repair",
       "comment_id": "5527839651",
@@ -33901,6 +33854,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T01:34:07.515Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137743:5534403747:2026-09-04T01:33:29Z:clawsweeper_needs_human",
+      "comment_id": "5534403747",
+      "comment_version_key": "5534403747:2026-09-04T01:33:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137743#issuecomment-5534403747",
+      "comment_created_at": "2026-09-04T01:33:29Z",
+      "comment_updated_at": "2026-09-04T01:33:29Z",
+      "comment_body_sha256": "4dae79488078cb9a2433408c360d9b22b22dc3e4a1fba35169802db5bd471d1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137743,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The patch relies on Vitest timeout and hook scheduling, but this node_modules-less review checkout could not inspect the Vitest runner directly; the pending exact-head test checks rem... (sha=8e9ac26335b4085615d9eec36d9d2400b5b48382)",
+      "expected_head_sha": "8e9ac26335b4085615d9eec36d9d2400b5b48382",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:35:15.483Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-gateway-session-tool-fixture",
+        "head_sha": "8e9ac26335b4085615d9eec36d9d2400b5b48382",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
