@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T15:00:58.862Z",
+  "updated_at": "2026-09-04T15:00:59.690Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135808:5539189215:2026-09-04T10:32:14Z:re_review",
-      "comment_id": "5539189215",
-      "comment_version_key": "5539189215:2026-09-04T10:32:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135808#issuecomment-5539189215",
-      "comment_created_at": "2026-09-04T10:32:14Z",
-      "comment_updated_at": "2026-09-04T10:32:14Z",
-      "comment_body_sha256": "53d54ccaf00011431981ea7f782e8c8125bdd944d19914e1e93a840d3898d121",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135808,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T10:34:39.282Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/watch-native-realtime-voice",
-        "head_sha": "ab81b616a9e40471ede404d672aa8066ab78f72c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137185:5522973195:2026-09-04T10:32:46Z:clawsweeper_needs_human",
       "comment_id": "5522973195",
@@ -33038,6 +32991,39 @@
         "kind": "pull_request",
         "branch": "fix/assistant-visible-glm-arg-key",
         "head_sha": "92329ee101a9bde28401f89be5faf921c6670fef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120340:5222864682:2026-09-04T14:59:12Z:clawsweeper_needs_human",
+      "comment_id": "5222864682",
+      "comment_version_key": "5222864682:2026-09-04T14:59:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120340#issuecomment-5222864682",
+      "comment_created_at": "2026-08-07T22:34:40Z",
+      "comment_updated_at": "2026-09-04T14:59:12Z",
+      "comment_body_sha256": "54df4a1c03686285c73273822479b22f0828708670ebdbbb308fa84deb62def6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120340,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The same-head benchmark proves the isolated bridge behavior but not a material reduction for the reported concurrent memory-exhaustion path. (sha=dcb121228ee7bdf668dfd96340b56e02ea7b6e2a)",
+      "expected_head_sha": "dcb121228ee7bdf668dfd96340b56e02ea7b6e2a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T15:00:59.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-hook-relay-memory",
+        "head_sha": "dcb121228ee7bdf668dfd96340b56e02ea7b6e2a",
         "cluster_id": null,
         "job_path": null
       }
