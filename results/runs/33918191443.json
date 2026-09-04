@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138590",
+  "mode": "autonomous",
+  "run_id": "33918191443",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33918191443",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138590.md",
+  "published_at": "2026-09-04T21:35:31.358Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138590",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138590",
+  "canonical_pr": null,
+  "summary": "Canonical issue remains open. Implementation is blocked before a repair verdict: the mandatory sibling ../codex checkout is absent and this read-only worker cannot clone it or edit the target tree. The traced candidate remains narrow and needs an executable fix PR after that gate is satisfied.",
+  "actions": [
+    {
+      "target": "#138590",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138590",
+      "candidate_fix": null,
+      "reason": "No mutation or closure is authorized in this worker run."
+    },
+    {
+      "target": "#138590",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138590",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the unavailable mandatory Codex source gate and read-only checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138590",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138590",
+      "candidate_fix": null,
+      "reason": "Narrow repair artifact prepared; executor must satisfy the blocked preconditions before opening the PR."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
