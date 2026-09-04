@@ -2,53 +2,6 @@
   "updated_at": "2026-09-04T08:07:22.381Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:137313:5535637776:2026-09-04T04:25:44Z:re_review",
-      "comment_id": "5535637776",
-      "comment_version_key": "5535637776:2026-09-04T04:25:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137313#issuecomment-5535637776",
-      "comment_created_at": "2026-09-04T04:25:44Z",
-      "comment_updated_at": "2026-09-04T04:25:44Z",
-      "comment_body_sha256": "8479f47eb13643e00b421a8afdcac808f9a462f524fe754dac41a202831bb097",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137313,
-      "author": "Marvinthebored",
-      "author_id": 262704729,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T04:36:03.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-forward-snapshot-body",
-        "head_sha": "04457409d368df68da1f32c533b0b16e0de64915",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:137807:5535691825:2026-09-04T04:33:16Z:re_review",
       "comment_id": "5535691825",
       "comment_version_key": "5535691825:2026-09-04T04:33:16Z",
@@ -32706,6 +32659,39 @@
         "kind": "pull_request",
         "branch": "codex/native-media-snapshots",
         "head_sha": "42e713b403b02a86d94e807f89dc3c64600f9d11",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137998:5536919640:2026-09-04T08:05:58Z:clawsweeper_needs_human",
+      "comment_id": "5536919640",
+      "comment_version_key": "5536919640:2026-09-04T08:05:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137998#issuecomment-5536919640",
+      "comment_created_at": "2026-09-04T06:59:00Z",
+      "comment_updated_at": "2026-09-04T08:05:58Z",
+      "comment_body_sha256": "e2f25a243473c58057eaea1f8b0dd5ef6bda82511102d8742c60aca5c12e34f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137998,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent inspection of fs-safe 0.7.0 remains a reviewer limitation; its unchanged descriptor-transfer contract is supported by the merged repair’s recorded inspection rather than a... (sha=1faa628258be85bf1be6a38885a950ebe519358f)",
+      "expected_head_sha": "1faa628258be85bf1be6a38885a950ebe519358f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T08:07:22.272Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/npm-stage-namespace-fix",
+        "head_sha": "1faa628258be85bf1be6a38885a950ebe519358f",
         "cluster_id": null,
         "job_path": null
       }
