@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T01:48:17.388Z",
+  "updated_at": "2026-09-04T01:48:27.017Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137376:5528219450:2026-09-03T16:02:03Z:clawsweeper_auto_repair",
-      "comment_id": "5528219450",
-      "comment_version_key": "5528219450:2026-09-03T16:02:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137376#issuecomment-5528219450",
-      "comment_created_at": "2026-09-03T15:42:32Z",
-      "comment_updated_at": "2026-09-03T16:02:03Z",
-      "comment_body_sha256": "1e4d873c59156627946b043a26a2f917fb9cde936f285f62636f2ca187bb88b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137376,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9e7d8a468f7482589ddf3002de19a98f979f66b1)",
-      "expected_head_sha": "9e7d8a468f7482589ddf3002de19a98f979f66b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T16:05:39.972Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-static-alias-parity",
-        "head_sha": "9e7d8a468f7482589ddf3002de19a98f979f66b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137147:5522346350:2026-09-03T16:04:21Z:clawsweeper_auto_repair",
       "comment_id": "5522346350",
@@ -33845,6 +33812,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T01:48:17.388Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137681:5533920152:2026-09-04T01:17:59Z:clawsweeper_needs_human",
+      "comment_id": "5533920152",
+      "comment_version_key": "5533920152:2026-09-04T01:17:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137681#issuecomment-5533920152",
+      "comment_created_at": "2026-09-04T00:28:53Z",
+      "comment_updated_at": "2026-09-04T01:17:59Z",
+      "comment_body_sha256": "2009e49b5636e4c53d7590edf5ced796cc9f323602520de26634ee98f4f68a16",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137681,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is reaction-name normalization, which feeds Graph setReaction/unsetReaction payloads and inbound system-event labe... (sha=3390fdd88936faa3bc9c580cbd8e8ed60605ebe0)",
+      "expected_head_sha": "3390fdd88936faa3bc9c580cbd8e8ed60605ebe0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T01:48:27.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-reaction-prototype-lookup",
+        "head_sha": "3390fdd88936faa3bc9c580cbd8e8ed60605ebe0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
