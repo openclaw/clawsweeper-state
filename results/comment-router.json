@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T10:52:44.625Z",
+  "updated_at": "2026-09-04T10:52:48.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137236:5537292675:2026-09-04T07:37:02Z:re_review",
-      "comment_id": "5537292675",
-      "comment_version_key": "5537292675:2026-09-04T07:37:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137236#issuecomment-5537292675",
-      "comment_created_at": "2026-09-04T07:37:02Z",
-      "comment_updated_at": "2026-09-04T07:37:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137236,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T07:37:57.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-ask-user-prompt-expiry",
-        "head_sha": "77802e17a753f7e9c8eb8c60f5975ab3f699a72e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137933:5537295113:2026-09-04T07:37:16Z:re_review",
       "comment_id": "5537295113",
@@ -32966,6 +32919,39 @@
         "kind": "pull_request",
         "branch": "chore/deps-refresh-20260904",
         "head_sha": "323d77458259bd755449af581129a3940ad4e2a8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telecrawl:34:5539390005:2026-09-04T10:51:48Z:clawsweeper_needs_human",
+      "comment_id": "5539390005",
+      "comment_version_key": "5539390005:2026-09-04T10:51:48Z",
+      "comment_url": "https://github.com/openclaw/telecrawl/pull/34#issuecomment-5539390005",
+      "comment_created_at": "2026-09-04T10:51:48Z",
+      "comment_updated_at": "2026-09-04T10:51:48Z",
+      "comment_body_sha256": "0c0bcdfde02cd8668d3a97e3e0f47e2f6087e0b58a4a4ec23314971d631d7836",
+      "repo": "openclaw/telecrawl",
+      "issue_number": 34,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the backup package's TestMain, which configures the environment inherited by the real Git client at the test helper entryp... (sha=2ecfef435a1a2bdac567a3088f2c8a6d720a16a3)",
+      "expected_head_sha": "2ecfef435a1a2bdac567a3088f2c8a6d720a16a3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T10:52:48.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/backup-test-maintenance-20260904",
+        "head_sha": "2ecfef435a1a2bdac567a3088f2c8a6d720a16a3",
         "cluster_id": null,
         "job_path": null
       }
