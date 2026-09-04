@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T17:46:33.810Z",
+  "updated_at": "2026-09-04T17:46:38.123Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119153:5176366481:2026-09-04T13:10:29Z:clawsweeper_needs_human",
-      "comment_id": "5176366481",
-      "comment_version_key": "5176366481:2026-09-04T13:10:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119153#issuecomment-5176366481",
-      "comment_created_at": "2026-08-04T08:16:02Z",
-      "comment_updated_at": "2026-09-04T13:10:29Z",
-      "comment_body_sha256": "40f149e4a57aede35b1d4573e379d18122897f58ad75075985d4540d7e0b69e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119153,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed production owner is Telegram inbound-context construction, exercised indirectly by existing handler fixtures; the supplied... (sha=9d82e8d2369329b04d22000ad17b7b0074081a0f)",
-      "expected_head_sha": "9d82e8d2369329b04d22000ad17b7b0074081a0f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T13:16:08.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "baxter/issue-88032-telegram-contract",
-        "head_sha": "9d82e8d2369329b04d22000ad17b7b0074081a0f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119153:5304775863:2026-08-15T23:41:48Z:re_review",
       "comment_id": "5304775863",
@@ -32708,6 +32675,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T17:46:33.810Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135808:5503407292:2026-09-04T17:45:24Z:clawsweeper_needs_human",
+      "comment_id": "5503407292",
+      "comment_version_key": "5503407292:2026-09-04T17:45:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135808#issuecomment-5503407292",
+      "comment_created_at": "2026-09-02T02:25:54Z",
+      "comment_updated_at": "2026-09-04T17:45:24Z",
+      "comment_body_sha256": "017ec7a4385a9e829b41da9bb96544f67ed9ba3a74026768298cdb5f5de5bb91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned RTC dependency contract** - The new static Watch runtime directly calls str0m 0.23.1, but its authoritative source and documentation were unavailable in this review en...; Review finding: [medium] Verify the pinned RTC dependency contract — apps/shared/OpenClawWatchRTC/Cargo.toml:12 (sha=24bc1ab4a78d1b77ce1c0276792b89fb7cd974ac)",
+      "expected_head_sha": "24bc1ab4a78d1b77ce1c0276792b89fb7cd974ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T17:46:38.123Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/watch-native-realtime-voice",
+        "head_sha": "24bc1ab4a78d1b77ce1c0276792b89fb7cd974ac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
