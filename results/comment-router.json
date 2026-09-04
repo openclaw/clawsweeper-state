@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T07:39:45.213Z",
+  "updated_at": "2026-09-04T07:40:10.407Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137527:5532862260:2026-09-03T22:17:21Z:re_review",
-      "comment_id": "5532862260",
-      "comment_version_key": "5532862260:2026-09-03T22:17:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137527#issuecomment-5532862260",
-      "comment_created_at": "2026-09-03T22:17:21Z",
-      "comment_updated_at": "2026-09-03T22:17:21Z",
-      "comment_body_sha256": "69c6cd8daaf9f002a79c1a0ae26bd77ff24fe3ef1b9c2deedc95f243fc52677b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137527,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T03:52:30.372Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137527:5533907089:2026-09-04T00:27:07Z:re_review",
       "comment_id": "5533907089",
@@ -32818,6 +32791,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112055:5047613926:2026-09-04T07:39:06Z:clawsweeper_needs_human",
+      "comment_id": "5047613926",
+      "comment_version_key": "5047613926:2026-09-04T07:39:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112055#issuecomment-5047613926",
+      "comment_created_at": "2026-07-22T14:44:26Z",
+      "comment_updated_at": "2026-09-04T07:39:06Z",
+      "comment_body_sha256": "3050aed230d36660c4e70a6e89cd71638c4987204e2d82740c6f76dde73b0ea0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112055,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Install-Node’s repair branch is exercised with substituted Winget and Node discovery, and the captured body expressly reports no live registrat... (sha=ea89bfced88d4e4be018860be23af3920a105fb3)",
+      "expected_head_sha": "ea89bfced88d4e4be018860be23af3920a105fb3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T07:40:10.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-winget-stale-node",
+        "head_sha": "ea89bfced88d4e4be018860be23af3920a105fb3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
