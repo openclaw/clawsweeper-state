@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137925",
+  "mode": "autonomous",
+  "run_id": "33845858866",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33845858866",
+  "head_sha": "b4f7d36406ed1e375dc8eac17abc00ff63a93f02",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137925.md",
+  "published_at": "2026-09-04T06:53:30.258Z",
+  "canonical": "#137925",
+  "canonical_issue": "#137925",
+  "canonical_pr": null,
+  "summary": "#137925 remains the canonical open bug. Current main still selects no opened_at value and consequently retains a live Windows legacy lease with null owner_start_time; a narrow owner-boundary fix is warranted, but this checkout is read-only, has no node_modules, and the required sibling ../codex source is unavailable for the repository hard gate. No branch, test, PR, comment, or label mutation was made.",
+  "actions": [
+    {
+      "target": "#137925",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137925",
+      "candidate_fix": null,
+      "reason": "A focused repair is clear, but this worker cannot modify or validate the branch in the provided environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies and the required sibling ../codex checkout so the regression can be added, demonstrated failing before the fix, and validated before opening the permitted PR."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
