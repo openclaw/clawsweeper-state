@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137729",
+  "mode": "autonomous",
+  "run_id": "33825199231",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33825199231",
+  "head_sha": "886855005b0dee33c4140a25c88b608fdb569c46",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137729.md",
+  "published_at": "2026-09-04T02:33:54.687Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137729",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137729",
+  "canonical_pr": null,
+  "summary": "Current main has a source-proven malformed-transcript crash in the shared replay transformer used by native Ollama. A narrow fix PR is appropriate, but this read-only checkout lacks dependencies and the required sibling ../codex source; the worker cannot create or validate the branch here.",
+  "actions": [
+    {
+      "target": "#137729",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137729",
+      "candidate_fix": null,
+      "reason": "Implementation and validation are blocked only by this worker environment; no maintainer product decision is outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137729",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137729",
+      "candidate_fix": null,
+      "reason": "Narrow new-fix-PR plan for the confirmed malformed persisted-transcript replay crash."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
