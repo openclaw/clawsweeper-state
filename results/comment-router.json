@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T15:59:10.622Z",
+  "updated_at": "2026-09-04T15:59:12.853Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120622:5539912818:2026-09-04T11:39:20Z:re_review",
-      "comment_id": "5539912818",
-      "comment_version_key": "5539912818:2026-09-04T11:39:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120622#issuecomment-5539912818",
-      "comment_created_at": "2026-09-04T11:39:20Z",
-      "comment_updated_at": "2026-09-04T11:39:20Z",
-      "comment_body_sha256": "c5f0367cb80ce764a449343a028be7d2e98970630f1ab193a0dfa2466699c24e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120622,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T11:42:28.128Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/terminal-context-usage-120536-20260808",
-        "head_sha": "4a845b38ce09dcd79afb15fbf88ac1112fbbdaf5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92230:4683232032:2026-09-04T03:51:35Z:clawsweeper_auto_repair",
       "comment_id": "4683232032",
@@ -32980,6 +32933,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-core-hot-reload",
         "head_sha": "adc162a285ca99c083dde7a73dc88036a67aeaed",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137868:5535487191:2026-09-04T15:58:17Z:clawsweeper_needs_human",
+      "comment_id": "5535487191",
+      "comment_version_key": "5535487191:2026-09-04T15:58:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137868#issuecomment-5535487191",
+      "comment_created_at": "2026-09-04T04:04:45Z",
+      "comment_updated_at": "2026-09-04T15:58:17Z",
+      "comment_body_sha256": "2988bb7d23d06806888106a6d9180b1ddf91d4934b4ce49a14984bfff7037b2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137868,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup reports failures for check-test-types-core-2 and openclaw/ci-gate; their logs were unavailable in this review environment, so they must pass or be... (sha=7b3aa18f4cc8e944361b4df342b2a8089e32b340)",
+      "expected_head_sha": "7b3aa18f4cc8e944361b4df342b2a8089e32b340",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T15:59:12.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/activity-loading-shift",
+        "head_sha": "7b3aa18f4cc8e944361b4df342b2a8089e32b340",
         "cluster_id": null,
         "job_path": null
       }
