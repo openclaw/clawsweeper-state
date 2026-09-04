@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:35:40.891Z",
+  "updated_at": "2026-09-04T21:36:51.498Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138338:5543343706:2026-09-04T16:16:00Z:re_review",
-      "comment_id": "5543343706",
-      "comment_version_key": "5543343706:2026-09-04T16:16:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138338#issuecomment-5543343706",
-      "comment_created_at": "2026-09-04T16:16:00Z",
-      "comment_updated_at": "2026-09-04T16:16:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138338,
-      "author": "patryk-roguszewski",
-      "author_id": 17571389,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T16:36:06.168Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/expose-extension-tab-id",
-        "head_sha": "39dc18e9f365df663912a0434ccf64dbb364cab2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138209:5543416779:2026-09-04T16:22:23Z:re_review",
       "comment_id": "5543416779",
@@ -32945,6 +32898,39 @@
         "kind": "pull_request",
         "branch": "feat/lock-retain-on-exit",
         "head_sha": "70ea15a5bc2b308de6f09cfafe0c8a3d4fcaa9e2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3135:5377914134:2026-09-04T21:19:42Z:clawsweeper_needs_human",
+      "comment_id": "5377914134",
+      "comment_version_key": "5377914134:2026-09-04T21:19:42Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3135#issuecomment-5377914134",
+      "comment_created_at": "2026-08-22T04:39:02Z",
+      "comment_updated_at": "2026-09-04T21:19:42Z",
+      "comment_body_sha256": "2e311f2fee700ae676984eb84392ead8a70342c6bfccd8d59744e347b8f4058b",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Merging changes existing Grok installations from token-only local history to a default dollar display; recorded values and fallback list-price estimates are useful but are not subscri... (sha=d6369e631c5ed23c6c4cdc00b547209ac68e8d6b)",
+      "expected_head_sha": "d6369e631c5ed23c6c4cdc00b547209ac68e8d6b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T21:36:51.498Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/grok-real-token-usage",
+        "head_sha": "d6369e631c5ed23c6c4cdc00b547209ac68e8d6b",
         "cluster_id": null,
         "job_path": null
       }
