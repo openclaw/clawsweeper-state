@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T16:47:30.755Z",
+  "updated_at": "2026-09-04T16:48:16.690Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5540586089:2026-09-04T12:43:44Z:re_review",
-      "comment_id": "5540586089",
-      "comment_version_key": "5540586089:2026-09-04T12:43:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5540586089",
-      "comment_created_at": "2026-09-04T12:42:40Z",
-      "comment_updated_at": "2026-09-04T12:43:44Z",
-      "comment_body_sha256": "ae426253ff4814a1b63df038ccb83c70360c875df6308d31ca565eaaf9d98373",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T12:44:32.157Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "04b06f34f7d03e431ea152c16dae654d280ab1b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138190:5539245882:2026-09-04T12:44:11Z:clawsweeper_needs_human",
       "comment_id": "5539245882",
@@ -33007,6 +32960,39 @@
         "kind": "pull_request",
         "branch": "codex/spawn-utils27-main329c-20260904",
         "head_sha": "a632f1d1aca1ae8cb5733ea741973145b8416d28",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137484:5530546903:2026-09-04T16:47:14Z:clawsweeper_needs_human",
+      "comment_id": "5530546903",
+      "comment_version_key": "5530546903:2026-09-04T16:47:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137484#issuecomment-5530546903",
+      "comment_created_at": "2026-09-03T18:50:12Z",
+      "comment_updated_at": "2026-09-04T16:47:14Z",
+      "comment_body_sha256": "65d8c14ed9bad7c50a96d767fd2c55241dca538d224b6311b5a63a0b28f7217c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Memory Core’s changed policy feeds the normal and deferred indexing fan-outs, but the inspectable evidence shows only a policy harness and regr... (sha=dd4110e7b53c2bcf0be9cf2fdb3a14537ff3452d)",
+      "expected_head_sha": "dd4110e7b53c2bcf0be9cf2fdb3a14537ff3452d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T16:48:16.690Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/136175-local-nonbatch-index-concurrency",
+        "head_sha": "dd4110e7b53c2bcf0be9cf2fdb3a14537ff3452d",
         "cluster_id": null,
         "job_path": null
       }
