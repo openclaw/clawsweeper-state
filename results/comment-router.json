@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T15:02:19.687Z",
+  "updated_at": "2026-09-04T15:02:30.797Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137797:5539185883:2026-09-04T10:31:53Z:re_review",
-      "comment_id": "5539185883",
-      "comment_version_key": "5539185883:2026-09-04T10:31:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137797#issuecomment-5539185883",
-      "comment_created_at": "2026-09-04T10:31:53Z",
-      "comment_updated_at": "2026-09-04T10:31:53Z",
-      "comment_body_sha256": "dc562d7732392be151e00811d63f4563de1f9475da20607cb951993b84d157ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137797,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T10:34:50.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-linux-appimage-wayland",
-        "head_sha": "1b058f97f2863502f2a51a3ba4c4ac175e4e8e73",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138183:5539202003:2026-09-04T10:33:34Z:clawsweeper_needs_human",
       "comment_id": "5539202003",
@@ -33024,6 +32977,39 @@
         "kind": "pull_request",
         "branch": "fix/sidebar-filter-owner-row-overlap",
         "head_sha": "adde66250ce66459b6b4415755fffd87d7082287",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138302:5541549094:2026-09-04T15:01:32Z:clawsweeper_needs_human",
+      "comment_id": "5541549094",
+      "comment_version_key": "5541549094:2026-09-04T15:01:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138302#issuecomment-5541549094",
+      "comment_created_at": "2026-09-04T14:02:14Z",
+      "comment_updated_at": "2026-09-04T15:01:32Z",
+      "comment_body_sha256": "63112c13a86d5c568e9b5575eda69207e6d28087762751118399aba16e38a1b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138302,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Wait for tokenjuice 0.8.3 to clear the release-age gate (P1)** - This introduced pin is not eligible for a clean install until 2026-09-11T14:38:14Z; the supplied CI evidence reports ERR_PNPM_MINIMUM_RELEASE_AGE_...; Review finding: [P1] Wait for tokenjuice 0.8.3 to clear the release-age gate — extensions/tokenjuice/package.json:11 - [low] Verify the newly published runtime artifact after the... (sha=b0f2708ef93aab9f05b2ca06aa1fa452e6db7a9f)",
+      "expected_head_sha": "b0f2708ef93aab9f05b2ca06aa1fa452e6db7a9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T15:02:30.797Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/tokenjuice-0.8.2",
+        "head_sha": "b0f2708ef93aab9f05b2ca06aa1fa452e6db7a9f",
         "cluster_id": null,
         "job_path": null
       }
