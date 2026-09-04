@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137729",
+  "mode": "autonomous",
+  "run_id": "33830389070",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33830389070",
+  "head_sha": "c6dee040ad401c7df83076960dfeb52c7a59836f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137729.md",
+  "published_at": "2026-09-04T02:53:17.884Z",
+  "canonical": "#137729",
+  "canonical_issue": "#137729",
+  "canonical_pr": null,
+  "summary": "#137729 remains a narrow, non-security shared-transcript repair: current main unconditionally trims assistant tool-call and tool-result IDs before the native Ollama caller projects messages. No code or PR was created because this read-only worker cannot provision the repository-required ../codex source checkout or dependencies needed to demonstrate the pre-fix regression and validate the repair.",
+  "actions": [
+    {
+      "target": "#1",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical linked PR; no mutation applies."
+    },
+    {
+      "target": "#111864",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#137729",
+      "candidate_fix": null,
+      "reason": "Already merged related predecessor, not a fix for malformed replay shapes."
+    },
+    {
+      "target": "#137729",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137729",
+      "candidate_fix": null,
+      "reason": "Required Codex sibling inspection and test dependencies are unavailable in this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable, dependency-ready worker with a readable ../codex checkout. Cloning https://github.com/openai/codex.git failed with EROFS, and both required pnpm install attempts failed before execution because Corepack could not create its cache on the read-only filesystem."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
