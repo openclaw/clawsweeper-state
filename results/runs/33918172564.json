@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138589",
+  "mode": "autonomous",
+  "run_id": "33918172564",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33918172564",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138589.md",
+  "published_at": "2026-09-04T22:14:03.299Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138589",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138589",
+  "canonical_pr": null,
+  "summary": "#138589 is a reproducible LM Studio discovery bug on main f14b1027271c420bab985543cb42ac52b8016ea1. A narrow zero-net-production-LOC repair is planned, but this read-only checkout cannot create the branch or run pnpm; no local LM Studio/current vendor-contract proof is available, and the mandatory sibling ../codex inspection is unavailable because cloning is blocked by the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#138589",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138589",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by this worker environment; the fix shape is clear and belongs in the LM Studio plugin."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138589",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138589",
+      "candidate_fix": null,
+      "reason": "Create one narrow credited ClawSweeper implementation PR when a writable validated checkout is available."
+    },
+    {
+      "target": "#130689",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    },
+    {
+      "target": "#31278",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context; no mutation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
