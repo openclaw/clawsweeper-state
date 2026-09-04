@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138288",
+  "mode": "autonomous",
+  "run_id": "33880300181",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33880300181",
+  "head_sha": "1ac35d2489a243b7a49ed30d887e5a384f4f9af3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138288.md",
+  "published_at": "2026-09-04T14:07:43.119Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138288",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138288",
+  "canonical_pr": null,
+  "summary": "#138288 remains a narrow, source-proven Telegram log-noise bug on current main dfb1faf0b28afde53899f34dfa5089bb137c76ea. The repair is limited to removing the poll-start log and strengthening its existing liveness test. Local implementation and validation are blocked because this read-only checkout lacks tsx/esm; the mandatory sibling ../codex source is also absent and cannot be cloned in this sandbox.",
+  "actions": [
+    {
+      "target": "#138288",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138288",
+      "candidate_fix": null,
+      "reason": "No viable implementation PR exists; create the one narrow fix PR from the configured ClawSweeper branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138288",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138288",
+      "candidate_fix": null,
+      "reason": "The artifact is complete, but the executor must install dependencies, make the two-file change, and run fresh review/validation in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
