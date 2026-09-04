@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137742",
+  "mode": "autonomous",
+  "run_id": "33827996506",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33827996506",
+  "head_sha": "6f229a508dd718a406651e1b3744a5c02617265e",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137742.md",
+  "published_at": "2026-09-04T02:17:04.715Z",
+  "canonical": "#137742",
+  "canonical_issue": "#137742",
+  "canonical_pr": null,
+  "summary": "Confirmed a narrow non-security Doctor classification gap on supplied main 6b97bae2: it checks only memory.remote.apiKey, then reports no key when no auth-profile store exists, without checking models.providers.<provider>.apiKey. A valid store SecretRef is already classified as configured-but-unresolved by the shared read-only availability owner; invalid refs are unavailable. Implementation is blocked because the required ../codex checkout cannot be created on the read-only filesystem and dependencies cannot be installed, so focused Vitest cannot load tsx/esm.",
+  "actions": [
+    {
+      "target": "#137742",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137742",
+      "candidate_fix": null,
+      "reason": "A writable, dependency-complete checkout and direct ../codex inspection are mandatory before implementation and proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable checkout with dependencies installed and a readable sibling ../codex checkout, then apply and validate the fix artifact."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137742"
 mode: "autonomous"
-run_id: "33826174052"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33826174052"
+run_id: "33827996506"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33827996506"
 head_sha: "6f229a508dd718a406651e1b3744a5c02617265e"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-04T01:48:57.704Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137742"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137742"
+published_at: "2026-09-04T02:17:04.715Z"
+canonical: "#137742"
+canonical_issue: "#137742"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-137742
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33826174052](https://github.com/openclaw/clawsweeper/actions/runs/33826174052)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33827996506](https://github.com/openclaw/clawsweeper/actions/runs/33827996506)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/137742
+Canonical: #137742
 
 ## Summary
 
-#137742 is a reproducible Doctor-only false negative on main 75130176b97c4b3bf985e2c41e9a33288bc1a179. Implementation is blocked in this read-only checkout: the required sibling ../codex source is absent and cannot be cloned, and dependencies cannot be installed to run the regression. A narrow fix artifact is ready.
+Confirmed a narrow non-security Doctor classification gap on supplied main 6b97bae2: it checks only memory.remote.apiKey, then reports no key when no auth-profile store exists, without checking models.providers.<provider>.apiKey. A valid store SecretRef is already classified as configured-but-unresolved by the shared read-only availability owner; invalid refs are unavailable. Implementation is blocked because the required ../codex checkout cannot be created on the read-only filesystem and dependencies cannot be installed, so focused Vitest cannot load tsx/esm.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/137742
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137742 | fix_needed | blocked | canonical | Produce the planned narrow repair in a writable checkout with ../codex available, then run the focused regression and changed gate. |
-| cluster:issue-openclaw-openclaw-137742 | build_fix_artifact | planned | canonical | Narrow new-fix-PR plan; no GitHub mutation is performed by this worker. |
+| #137742 | fix_needed | blocked | canonical | A writable, dependency-complete checkout and direct ../codex inspection are mandatory before implementation and proof. |
 
 ## Needs Human
 
-- none
+- Provide a writable checkout with dependencies installed and a readable sibling ../codex checkout, then apply and validate the fix artifact.
