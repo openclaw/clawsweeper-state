@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138225",
+  "mode": "autonomous",
+  "run_id": "33870809028",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33870809028",
+  "head_sha": "1ac35d2489a243b7a49ed30d887e5a384f4f9af3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138225.md",
+  "published_at": "2026-09-04T12:13:27.067Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138225",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138225",
+  "canonical_pr": null,
+  "summary": "#138225 remains a source-reproducible, bounded gateway bug on preflight main 62c90580682179dcd441646ce6946563373fbe9e. Active-run injection captures the prompt before the normal reply path applies managed-media understanding, so a text/plain offload reaches neither the marker nor extracted <file> content. No code or GitHub mutation was possible: the checkout is read-only, dependencies are absent, and the required sibling ../codex inspection could not be cloned on the read-only filesystem.",
+  "actions": [
+    {
+      "target": "#107434",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no mutation is permitted or needed."
+    },
+    {
+      "target": "#132429",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical image-only repair; it is not a candidate for this remaining bug."
+    },
+    {
+      "target": "#138225",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138225",
+      "candidate_fix": null,
+      "reason": "Implementation and proof are blocked only by the immutable worker environment; the hydrated issue is open and remains the canonical fix target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138225",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138225",
+      "candidate_fix": null,
+      "reason": "A writable executor can implement and validate the narrow repair from this artifact."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
