@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T10:22:49.485Z",
+  "updated_at": "2026-09-04T10:22:50.201Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136780:5536797017:2026-09-04T06:45:29Z:re_review",
-      "comment_id": "5536797017",
-      "comment_version_key": "5536797017:2026-09-04T06:45:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136780#issuecomment-5536797017",
-      "comment_created_at": "2026-09-04T06:45:29Z",
-      "comment_updated_at": "2026-09-04T06:45:29Z",
-      "comment_body_sha256": "641aeb1ec74121d0559c7081bc6d2639b3bf02a3ea6ce5bcb4ea0eb759676e8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136780,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T06:46:26.565Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/task-restart-cancellation-settlement",
-        "head_sha": "5e11b54ef0a5b91019f7ee79ba2900bc62280e67",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137972:5536802117:2026-09-04T06:45:59Z:clawsweeper_needs_human",
       "comment_id": "5536802117",
@@ -32941,6 +32894,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-plugin-channel-runtime-reload",
         "head_sha": "7179ebe50751ae4eeb93a23a43c2da907d83cd18",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/proxyline:29:5538993431:2026-09-04T10:13:25Z:clawsweeper_needs_human",
+      "comment_id": "5538993431",
+      "comment_version_key": "5538993431:2026-09-04T10:13:25Z",
+      "comment_url": "https://github.com/openclaw/proxyline/pull/29#issuecomment-5538993431",
+      "comment_created_at": "2026-09-04T10:13:25Z",
+      "comment_updated_at": "2026-09-04T10:13:25Z",
+      "comment_body_sha256": "e46bd47aa21c3b54c31f373122c69869b5e2f0252f94c455a27b3c981db2f521",
+      "repo": "openclaw/proxyline",
+      "issue_number": 29,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The PR body describes a real local Node 24 validation run, but provides no inspectable terminal output, runtime log, or linked artifac... (sha=c4169229b5a55e1a068513cc334bd4fbd8f70557)",
+      "expected_head_sha": "c4169229b5a55e1a068513cc334bd4fbd8f70557",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T10:22:50.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "maintenance/deps-20260904",
+        "head_sha": "c4169229b5a55e1a068513cc334bd4fbd8f70557",
         "cluster_id": null,
         "job_path": null
       }
