@@ -1,0 +1,44 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138430",
+  "mode": "autonomous",
+  "run_id": "33911718643",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33911718643",
+  "head_sha": "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138430.md",
+  "published_at": "2026-09-04T19:44:37.659Z",
+  "canonical": "#138430",
+  "canonical_issue": "#138430",
+  "canonical_pr": null,
+  "summary": "Blocked before implementation. The checkout is read-only and the mandatory sibling Codex source checkout is absent, so the required direct Codex protocol inspection and any code mutation cannot be completed safely.",
+  "actions": [
+    {
+      "target": "#138430",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138430",
+      "candidate_fix": null,
+      "reason": "A writable implementation environment with the required sibling Codex checkout is needed before creating the requested fix branch and regression tests."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Provide a writable target checkout and the required sibling ../codex source checkout (or an approved equivalent direct-source path), then rerun this repair job."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}

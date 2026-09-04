@@ -2,53 +2,53 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138430"
 mode: "autonomous"
-run_id: "33907981984"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33907981984"
+run_id: "33911718643"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33911718643"
 head_sha: "66af14ef3f725f5ecb1c0ab8f6b085cc40b3d642"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-04T19:05:44.085Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138430"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138430"
+published_at: "2026-09-04T19:44:37.659Z"
+canonical: "#138430"
+canonical_issue: "#138430"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-138430
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33907981984](https://github.com/openclaw/clawsweeper/actions/runs/33907981984)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33911718643](https://github.com/openclaw/clawsweeper/actions/runs/33911718643)
 
 Workflow conclusion: failure
 
 Worker result: blocked
 
-Canonical: https://github.com/openclaw/openclaw/issues/138430
+Canonical: #138430
 
 ## Summary
 
-#138430 is a source-reproducible canonical iOS bug on main 2b1fb5508ace6cf422a609c8cbd782d1cd45cf7e. A narrow four-file fix is planned, but this read-only runner cannot stage or validate it: ../codex is absent (the repository’s mandatory direct protocol preflight) and Swift/Xcode execution is unavailable.
+Blocked before implementation. The checkout is read-only and the mandatory sibling Codex source checkout is absent, so the required direct Codex protocol inspection and any code mutation cannot be completed safely.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +66,8 @@ Canonical: https://github.com/openclaw/openclaw/issues/138430
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138430 | fix_needed | blocked | canonical | Implementation is well-scoped, but cannot be safely staged or locally validated in this runner. |
-| cluster:issue-openclaw-openclaw-138430 | build_fix_artifact | planned | canonical | A narrow credited fix PR remains appropriate once the executor has a writable checkout and Apple toolchain. |
+| #138430 | fix_needed | blocked | canonical | A writable implementation environment with the required sibling Codex checkout is needed before creating the requested fix branch and regression tests. |
 
 ## Needs Human
 
-- none
+- Provide a writable target checkout and the required sibling ../codex source checkout (or an approved equivalent direct-source path), then rerun this repair job.
