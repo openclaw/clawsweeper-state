@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T19:30:10.477Z",
+  "updated_at": "2026-09-04T19:34:39.306Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4927177077:2026-07-09T16:10:10Z:re_review",
-      "comment_id": "4927177077",
-      "comment_version_key": "4927177077:2026-07-09T16:10:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4927177077",
-      "comment_created_at": "2026-07-09T16:10:10Z",
-      "comment_updated_at": "2026-07-09T16:10:10Z",
-      "comment_body_sha256": "1f45ecfc3097e26527439b4c1b8e4b05ad3b6cc71ac221144ac8090196c66ab7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto the latest upstream/main (clean, zero conflicts) to keep the branch current; head is now 8454950ed5. no code changes beyond the rebase",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T14:56:09.162Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4939931242:2026-07-10T22:10:56Z:re_review",
       "comment_id": "4939931242",
@@ -32676,6 +32649,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:387:5545544113:2026-09-04T19:33:48Z:clawsweeper_needs_human",
+      "comment_id": "5545544113",
+      "comment_version_key": "5545544113:2026-09-04T19:33:48Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/387#issuecomment-5545544113",
+      "comment_created_at": "2026-09-04T19:33:48Z",
+      "comment_updated_at": "2026-09-04T19:33:48Z",
+      "comment_body_sha256": "f6c4b6b87638b68cdd65e22609f602c968eb7b72f254848815e8319c177d3d64",
+      "repo": "openclaw/wacli",
+      "issue_number": 387,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed owner is writable media download setup, which now appends guidance after a typed lock failure. The body shows an abbreviat... (sha=4190e00723aa1047f34f88bcbd11135b9fa0dfe3)",
+      "expected_head_sha": "4190e00723aa1047f34f88bcbd11135b9fa0dfe3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T19:34:39.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/media-read-only",
+        "head_sha": "4190e00723aa1047f34f88bcbd11135b9fa0dfe3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
