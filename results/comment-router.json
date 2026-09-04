@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-04T20:50:58.548Z",
+  "updated_at": "2026-09-04T20:49:55.631Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128857:5401092105:2026-09-04T15:44:26Z:clawsweeper_needs_human",
+      "comment_id": "5401092105",
+      "comment_version_key": "5401092105:2026-09-04T15:44:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128857#issuecomment-5401092105",
+      "comment_created_at": "2026-08-24T20:40:32Z",
+      "comment_updated_at": "2026-09-04T15:44:26Z",
+      "comment_body_sha256": "5dace579dfbf36e0035c7e379ab21fbe7a070efa95cf229cb550dd0f2fc65acf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128857,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed production owner is the WhatsApp pairing callback, reached after CLI or Control UI approval and ending at the WhatsApp send transpo... (sha=88cf094a2db03b43af2c5941ead0c0888d10bee6)",
+      "expected_head_sha": "88cf094a2db03b43af2c5941ead0c0888d10bee6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T15:55:00.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/whatsapp-pairing-approval-notify",
+        "head_sha": "88cf094a2db03b43af2c5941ead0c0888d10bee6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128878:5402175890:2026-09-04T15:45:20Z:clawsweeper_auto_repair",
       "comment_id": "5402175890",
@@ -32939,53 +32972,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137594:5546292768:2026-09-04T20:49:54Z:re_review",
-      "comment_id": "5546292768",
-      "comment_version_key": "5546292768:2026-09-04T20:49:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137594#issuecomment-5546292768",
-      "comment_created_at": "2026-09-04T20:49:54Z",
-      "comment_updated_at": "2026-09-04T20:49:54Z",
-      "comment_body_sha256": "80eac24f7ffe9bb9a73727a86d61de0082ce18b9dc525b346d4ffe85e70d9024",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137594,
-      "author": "ylcn91",
-      "author_id": 7249450,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T20:50:56.248Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-mcp-outage",
-        "head_sha": "b39faeb64c0ad012d00f3316b8194d3333a4826b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
