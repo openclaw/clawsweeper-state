@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T03:45:14.031Z",
+  "updated_at": "2026-09-04T03:46:00.490Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137698:5533970199:2026-09-04T00:35:32Z:clawsweeper_needs_human",
-      "comment_id": "5533970199",
-      "comment_version_key": "5533970199:2026-09-04T00:35:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137698#issuecomment-5533970199",
-      "comment_created_at": "2026-09-04T00:35:32Z",
-      "comment_updated_at": "2026-09-04T00:35:32Z",
-      "comment_body_sha256": "35b3a1e71aa15927d0e51bd41800a2c5358ac6e129055a6c08880bfa891971e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137698,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied exact-head check rollup includes a failed CI gate, but no failure log was available to determine whether it is related to these three hunks. (sha=30f79acaba7d7cc1f13cfac6d15642e13de7a5c5)",
-      "expected_head_sha": "30f79acaba7d7cc1f13cfac6d15642e13de7a5c5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T00:38:45.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf7-backup-symlink-assets",
-        "head_sha": "30f79acaba7d7cc1f13cfac6d15642e13de7a5c5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:232:5534028323:2026-09-04T00:43:10Z:clawsweeper_needs_human",
       "comment_id": "5534028323",
@@ -32729,6 +32696,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136761:5535353107:2026-09-04T03:45:03Z:re_review",
+      "comment_id": "5535353107",
+      "comment_version_key": "5535353107:2026-09-04T03:45:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5535353107",
+      "comment_created_at": "2026-09-04T03:45:03Z",
+      "comment_updated_at": "2026-09-04T03:45:03Z",
+      "comment_body_sha256": "68689841f648ce12a4c998685b5f14f3df49a13c7499efcea63763de973ee1c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136761,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T03:45:58.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-target-scenarios",
+        "head_sha": "d8fade019bb465fab74f6b71d966e42edd819cd1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
