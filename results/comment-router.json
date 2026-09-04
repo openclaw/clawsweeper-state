@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T17:01:33.223Z",
+  "updated_at": "2026-09-04T17:02:15.936Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119722:5196416781:2026-09-02T15:57:22Z:clawsweeper_auto_repair",
-      "comment_id": "5196416781",
-      "comment_version_key": "5196416781:2026-09-02T15:57:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119722#issuecomment-5196416781",
-      "comment_created_at": "2026-08-05T19:33:37Z",
-      "comment_updated_at": "2026-09-02T15:57:22Z",
-      "comment_body_sha256": "8647a1062c81fe4633741f760719a691cc60813168f230511ce71ff908850a7c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119722,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d)",
-      "expected_head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-09-04T12:52:35.804Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-112625",
-        "head_sha": "a42000d40a7537a8dd68e3bbb3ebbc998c2cec6d",
-        "cluster_id": "automerge-openclaw-openclaw-119722",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119722.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138219:5539911715:2026-09-04T12:52:14Z:clawsweeper_needs_human",
       "comment_id": "5539911715",
@@ -32704,6 +32671,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132103:5457800153:2026-09-04T16:57:29Z:clawsweeper_needs_human",
+      "comment_id": "5457800153",
+      "comment_version_key": "5457800153:2026-09-04T16:57:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132103#issuecomment-5457800153",
+      "comment_created_at": "2026-08-28T21:11:07Z",
+      "comment_updated_at": "2026-09-04T16:57:29Z",
+      "comment_body_sha256": "91437dabd9e4baf5eca56328568175c0dea8079245860982ee70d838e612354f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132103,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Validate discovered MCP working directories before launch (P1)** - The discovery config preserves cwd, and this transport forwards it directly to buildExecSpec; OpenShell then emits cd &lt;cwd> without calling i...; Review finding: [P1] Validate discovered MCP working directories before launch — src/agents/sandbox/environment-mcp.ts:42 - [high] Unvalidated MCP working directory crosses the sa... (sha=0d10692b42b496c430e07010061b7d95bfb73a2c)",
+      "expected_head_sha": "0d10692b42b496c430e07010061b7d95bfb73a2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T17:02:15.936Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/sandbox-environment-capabilities",
+        "head_sha": "0d10692b42b496c430e07010061b7d95bfb73a2c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
