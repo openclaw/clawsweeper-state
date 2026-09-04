@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138316",
+  "mode": "autonomous",
+  "run_id": "33887071440",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33887071440",
+  "head_sha": "0a4965a67b03088c86b7df2586cd6be3e4db550a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138316.md",
+  "published_at": "2026-09-04T15:37:29.930Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138316",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138316",
+  "canonical_pr": null,
+  "summary": "A narrow CLI/embedded delivery-context parity repair is identified, but this read-only checkout cannot create the required failing regression or branch: `node scripts/run-vitest.mjs` fails before Vitest because `tsx/esm` is missing, and the mandatory sibling `../codex` source checkout is absent. The artifact preserves the exact repair and validation path for an executor with dependencies and the Codex checkout available.",
+  "actions": [
+    {
+      "target": "#66460",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Already closed; no closure action is valid."
+    },
+    {
+      "target": "#127777",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this separate security-sensitive linked report for central OpenClaw security triage."
+    },
+    {
+      "target": "#130249",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Shares async-completion routing context but has a distinct trigger and unresolved reproduction."
+    },
+    {
+      "target": "#135117",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this separate security-sensitive linked report for central OpenClaw security triage."
+    },
+    {
+      "target": "#138269",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Historical source context for the canonical CLI-path report; no closure action is valid."
+    },
+    {
+      "target": "#138316",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked only by the unavailable Codex sibling checkout, missing test dependency, and read-only workspace; the canonical narrow repair is ready for an executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138316",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138316",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow credited ClawSweeper PR once the executor can inspect `../codex`, install dependencies, reproduce, and validate."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "route_security": 2,
+    "keep_related": 1,
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
