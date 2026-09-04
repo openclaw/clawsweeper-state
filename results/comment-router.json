@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-04T02:39:45.756Z",
+  "updated_at": "2026-09-04T02:39:47.291Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137351:5527422803:2026-09-03T15:24:26Z:clawsweeper_auto_repair",
-      "comment_id": "5527422803",
-      "comment_version_key": "5527422803:2026-09-03T15:24:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137351#issuecomment-5527422803",
-      "comment_created_at": "2026-09-03T14:39:32Z",
-      "comment_updated_at": "2026-09-03T15:24:26Z",
-      "comment_body_sha256": "f682e401cf63a1bbf4da04156c4bbfe7f8b997070cc0c2c60fe314a9909e9d38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f0bcbf7434753c06f3fe259364d4d2edaa890964)",
-      "expected_head_sha": "f0bcbf7434753c06f3fe259364d4d2edaa890964",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-03T20:12:40.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-bootstrap-extra-files",
-        "head_sha": "f0bcbf7434753c06f3fe259364d4d2edaa890964",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137354:5527532707:2026-09-03T14:48:10Z:clawsweeper_needs_human",
       "comment_id": "5527532707",
@@ -33665,6 +33632,53 @@
       "status": "skipped",
       "processed_at": "2026-09-04T02:39:16.989Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137618:5534885916:2026-09-04T02:38:57Z:re_review",
+      "comment_id": "5534885916",
+      "comment_version_key": "5534885916:2026-09-04T02:38:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137618#issuecomment-5534885916",
+      "comment_created_at": "2026-09-04T02:38:57Z",
+      "comment_updated_at": "2026-09-04T02:38:57Z",
+      "comment_body_sha256": "701c4dd0d32a6fb465ca0089488778dbf210864692ea742ebe8ea934bd1c79e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137618,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-04T02:39:45.300Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/rich-text-composer",
+        "head_sha": "01b4486e180b38ee81ec0a7d4dcace49d484aaf7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137784:5534637107:2026-09-04T02:38:19Z:clawsweeper_needs_human",
