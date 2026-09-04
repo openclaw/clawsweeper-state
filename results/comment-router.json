@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-04T21:47:37.233Z",
+  "updated_at": "2026-09-04T21:47:39.933Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136236:5543646132:2026-09-04T16:41:43Z:re_review",
-      "comment_id": "5543646132",
-      "comment_version_key": "5543646132:2026-09-04T16:41:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136236#issuecomment-5543646132",
-      "comment_created_at": "2026-09-04T16:41:43Z",
-      "comment_updated_at": "2026-09-04T16:41:43Z",
-      "comment_body_sha256": "67ed1d22b69a091a08f7bf33e7c888207a18527a96f2aa066bb8c188059de63e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136236,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T16:42:38.853Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/qa-lab-sse-fixture",
-        "head_sha": "e3305f44a7eb4f5124d5ef3b9d04deefb2df5fdd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138392:5543665583:2026-09-04T16:43:30Z:clawsweeper_needs_human",
       "comment_id": "5543665583",
@@ -32891,6 +32844,39 @@
         "kind": "pull_request",
         "branch": "codex/perf9-recovery-equality",
         "head_sha": "1730ef9cf1e0f86f4e461ab71a43a70615cc356b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138579:5546794299:2026-09-04T21:44:24Z:clawsweeper_needs_human",
+      "comment_id": "5546794299",
+      "comment_version_key": "5546794299:2026-09-04T21:44:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138579#issuecomment-5546794299",
+      "comment_created_at": "2026-09-04T21:44:24Z",
+      "comment_updated_at": "2026-09-04T21:44:24Z",
+      "comment_body_sha256": "6450ccb95579c769ab03758665a8ca4f7d2a3b8ec9c6f9f952963ab5a4de60e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138579,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is the Gateway history projection, reached by WebSocket-style projection and HTTP/SSE snapshots; the PR supplies focused Vite... (sha=4a610d470397453e4e7c0a0e1debd6d545f63541)",
+      "expected_head_sha": "4a610d470397453e4e7c0a0e1debd6d545f63541",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T21:47:39.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-138493-provenance-sender",
+        "head_sha": "4a610d470397453e4e7c0a0e1debd6d545f63541",
         "cluster_id": null,
         "job_path": null
       }
