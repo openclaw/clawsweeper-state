@@ -2,19 +2,19 @@
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-128236"
 mode: "autonomous"
-run_id: "33900585965"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33900585965"
+run_id: "33890288308"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33890288308"
 head_sha: "666375f12276ff0a7aecf51430b9cdc2fb9914b3"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-04T17:33:05.153Z"
+published_at: "2026-09-04T16:55:44.450Z"
 canonical: "#128236"
 canonical_issue: null
 canonical_pr: "#128236"
 actions_total: 1
 fix_executed: 0
-fix_failed: 0
-fix_blocked: 0
+fix_failed: 1
+fix_blocked: 1
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33900585965](https://github.com/openclaw/clawsweeper/actions/runs/33900585965)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33890288308](https://github.com/openclaw/clawsweeper/actions/runs/33890288308)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #128236
 
 ## Summary
 
-#128236 remains the open canonical PR. It needs the requested contributor-branch repair loop before any merge decision; no GitHub mutation is proposed here.
+Make PR #128236 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
@@ -43,8 +43,8 @@ Canonical: #128236
 | --- | ---: |
 | Worker actions | 1 |
 | Fix executed | 0 |
-| Fix failed | 0 |
-| Fix blocked | 0 |
+| Fix failed | 1 |
+| Fix blocked | 1 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,9 @@ Canonical: #128236
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| _None_ |  |  |  |  |
+| repair_contributor_branch | failed |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
+| automerge_repair_outcome_comment | updated | #128236 |  |  |
 
 ## Apply Actions
 
@@ -66,7 +68,7 @@ Canonical: #128236
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #128236 | build_fix_artifact | planned | canonical | The adopted same-repository branch is writable, but the hydrated review blocks merge and the repair requires the actual PR head plus refreshed review context. |
+| #128236 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
