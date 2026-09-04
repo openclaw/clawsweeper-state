@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-04T23:00:01.876Z",
+  "updated_at": "2026-09-04T23:00:03.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132650:5463205931:2026-08-29T15:18:53Z:re_review",
-      "comment_id": "5463205931",
-      "comment_version_key": "5463205931:2026-08-29T15:18:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132650#issuecomment-5463205931",
-      "comment_created_at": "2026-08-29T15:18:53Z",
-      "comment_updated_at": "2026-08-29T15:18:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132650,
-      "author": "brayanjeshua",
-      "author_id": 28020481,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T17:48:54.005Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:129001:5410785218:2026-08-25T13:04:24Z:re_review",
       "comment_id": "5410785218",
@@ -33294,6 +33267,39 @@
       "status": "skipped",
       "processed_at": "2026-09-04T23:00:01.876Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123457:5289369670:2026-09-04T22:59:07Z:clawsweeper_needs_human",
+      "comment_id": "5289369670",
+      "comment_version_key": "5289369670:2026-09-04T22:59:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123457#issuecomment-5289369670",
+      "comment_created_at": "2026-08-14T04:12:19Z",
+      "comment_updated_at": "2026-09-04T22:59:07Z",
+      "comment_body_sha256": "f6ed9851cf975ae7578f9233352e3fbdb43a6b5f83b3f4d3de9423d6954942a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123457,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Already-issued node URLs now return HTTP/WebSocket 401 when their effective capability approval is absent or revoked; acceptance of this intentional fail-closed behavior is not yet re... (sha=5466ba41389a19584333df44c2759df9f778b331)",
+      "expected_head_sha": "5466ba41389a19584333df44c2759df9f778b331",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T23:00:03.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/plugin-node-capability-approval-current",
+        "head_sha": "5466ba41389a19584333df44c2759df9f778b331",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
