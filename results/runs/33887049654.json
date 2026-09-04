@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138308",
+  "mode": "autonomous",
+  "run_id": "33887049654",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33887049654",
+  "head_sha": "0a4965a67b03088c86b7df2586cd6be3e4db550a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138308.md",
+  "published_at": "2026-09-04T15:13:57.137Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138308",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138308",
+  "canonical_pr": null,
+  "summary": "Implementation is blocked before a fix artifact can be safely emitted: the required sibling Codex checkout is absent and this read-only, network-restricted worker cannot clone it. The local source pattern is consistent with the report, but AGENTS.md prohibits a Codex-related verdict or code change without direct upstream Codex protocol inspection.",
+  "actions": [
+    {
+      "target": "#138308",
+      "action": "needs_human",
+      "status": "blocked",
+      "classification": "needs_human",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Provide a readable sibling ../codex checkout or run this job in a writable, network-enabled worker so the acting agent can inspect the exact Codex tool-result protocol before authorizing a narrow workboard result-envelope repair."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "blocked": 1
+  },
+  "fix_counts": {
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [
+    "Codex hard gate: make ../codex available for direct inspection, or authorize a rerun in an environment that can clone it. Until then, no implementation verdict or fix artifact is permitted by the repository instructions."
+  ],
+  "fix_actions": [
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#138308",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
