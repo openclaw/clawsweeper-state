@@ -1,0 +1,87 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137085",
+  "mode": "autonomous",
+  "run_id": "33761810706",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33761810706",
+  "head_sha": "674841bcdc0a826ff4555f945cc81f122db0d6c2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137085.md",
+  "published_at": "2026-09-04T01:59:04.206Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137085",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137085",
+  "canonical_pr": null,
+  "summary": "#137085 remains the canonical open bug. Current main has the reported lifecycle defect: a valid SQLite row returns before a lone matching .native-importing claim is recovered. A narrow Swift-only repair is planned, but this read-only Linux checkout cannot create the branch or run the required macOS-native proof; ../codex is also absent and network resolution prevents the required direct Codex-source inspection.",
+  "actions": [
+    {
+      "target": "#137085",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "Implementation and required proof are blocked by the supplied read-only, non-macOS environment; hand the narrow artifact to a writable macOS-capable executor."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137085",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137085",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair remains appropriate once executed in a writable macOS-capable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=apps [check:changed] apps/shared/OpenClawKit/Sources/OpenClawKit/DeviceIdentitySQLiteStore.swift: app surface [check:changed] apps/shared/OpenClawKit/Tests/OpenClawKitTests/DeviceIdentityStoreTests.swift: app surface [check:changed] mobile protocol event coverage [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- apps/shared/OpenClawKit/Sources/OpenClawKit/DeviceIdentitySQLiteStore.swift apps/shared/OpenClawKit/Tests/OpenClawKitTests/DeviceIdentityStoreTests.swift No files found matching the given patterns. [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] lint apps (swiftlint unavailable on this host) [check:changed] Swift app lint skipped: swiftlint is unavailable on this non-macOS host; macOS CI owns SwiftLint coverage. [check:changed] macOS app CI tests $ pnpm test:macos:ci:1 && pnpm test:macos:ci:2 && pnpm test:macos:ci:3 $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/mac-elevation-host.test.ts [test] starting test/vitest/vitest.tooling.config.ts [test] passed 1 Vitest shard in 1.58s $ node --import ./scripts/tsx.mjs scripts/test-projects.mts test/scripts/vitest-process-group.test.ts test/scripts/package-mac-app.test.ts test/scripts/restart-mac.test.ts test/scripts/mac-node-worker.test.ts test/scripts/package-mac-dist.test.ts test/scripts/codesign-mac-app.test.ts test/scripts/notarize-mac-artifact.test.ts test/scripts/mac-elevation-artifact.test.ts [test] starting test/vitest/vitest.tooling.config.ts \u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m\u001b[1m\u001b[41m Failed Tests 1 \u001b[49m\u001b[22m\u001b[31m⎯⎯⎯⎯⎯⎯⎯\u001b[39m \u001b[41m\u001b[1m FAIL \u001b[22m\u001b[49m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/package-mac-app.test.ts\u001b[2m > \u001b[22mpackage-mac-app plist stamping\u001b[2m > \u001b[22mpasses an explicit signing identity and honors unset TMPDIR during worker verification \u001b[31m\u001b[1mAssertionError\u001b[22m: node:fs:3050 return binding.mkdtemp(prefix, options.encoding); ^ Error: EROFS: read-only file system, mkdtemp '/tmp/worker-proof-XXXXXX' at Object.mkdtempSync (node:fs:3050:18) at file:///tmp/clawsweeper-target-user-AI47yV/tmp/oc-vt-77XG34/openclaw-package-signing-identity-j3iPIN/scripts/verify-mac-node-worker.mjs:4:36 at ModuleJob.run (node:internal/modules/esm/module_job:439:25) at async node:internal/modules/esm/loader:643:26 at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) { errno: -30, code: 'EROFS', syscall: 'mkdtemp', path: '/tmp/worker-proof-XXXXXX' } Node.js v24.18.1 : expected 1 to be +0 // Object.is equality\u001b[39m \u001b[32m- Expected\u001b[39m \u001b[31m+ Received\u001b[39m \u001b[32m- 0\u001b[39m \u001b[31m+ 1\u001b[39m \u001b[90m \u001b[2m❯\u001b[22m ../../clawsweeper-target-user-AI47yV/tmp/oc-vt-77XG34/openclaw-package-signing-identity-j3iPIN/scripts/verify-mac-node-worker.mjs:\u001b[2m4:36\u001b[22m\u001b[39m \u001b[36m \u001b[2m❯\u001b[22m test/scripts/package-mac-app.test.ts:\u001b[2m1802:44\u001b[22m\u001b[39m \u001b[90m1800|\u001b[39m )\u001b[33m;\u001b[39m \u001b[90m1801|\u001b[39m \u001b[90m1802|\u001b[39m \u001b[34mexpect\u001b[39m(result\u001b[33m.\u001b[39mstatus\u001b[33m,\u001b[39m result\u001b[33m.\u001b[39mstderr)\u001b[33m.\u001b[39m\u001b[34mtoBe\u001b[39m(\u001b[34m0\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m |\u001b[39m \u001b[31m^\u001b[39m \u001b[90m1803|\u001b[39m expect(result.stdout).toContain(\"Signing bundle with explicit SI… \u001b[90m1804|\u001b[39m \u001b[34mexpect\u001b[39m(result\u001b[33m.\u001b[39mstdout)\u001b[33m.\u001b[39m\u001b[34mtoContain\u001b[39m(\u001b[32m`identity=\u001b[39m\u001b[36m${\u001b[39midentity\u001b[36m}\u001b[39m\u001b[32m`\u001b[39m)\u001b[33m;\u001b[39m \u001b[31m\u001b[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯\u001b[22m\u001b[39m [test] failed 1 Vitest shard in 5.45s [test] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 403ms ok mobile protocol event coverage 145ms ok conflict markers 143ms ok changelog attributions 129ms ok doctor deprecation registry 146ms ok guarded extension wildcard re-exports 138ms ok plugin-sdk wildcard re-exports 199ms ok duplicate scan target coverage 10.14s ok coercion helper declaration guard 174ms ok dependency pin guard 132ms ok format changed files 361ms ok package patch guard 14ms ok lint apps (swiftlint unavailable on this host) 7.54s failed:1 macOS app CI tests [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Protocol event coverage OK: 58 gateway events; ios handles 22, allowlists 36; android handles 20, allowlists 38. [doctor-deprecation-registry] OK as of 2026-09-03 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok Coercion helper declaration guard passed (111 allowlisted declarations). PASS direct dependency pin guard: checked 664 directly declared dependency specs across 181 tracked package manifests; 0 violations. Checking formatting... Finished in 15ms on 0 files using 4 threads. PASS package patch guard: no new pnpm patches; 6 approved patches allowlisted. \u001b[1m\u001b[30m\u001b[46m RUN \u001b[49m\u001b[39m\u001b[22m \u001b[36mv4.1.11 \u001b[39m\u001b[90m/tmp/clawsweeper-repair-target-D3hkUa/openclaw-openclaw\u001b[39m \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-host.test.ts\u001b[2m > \u001b[22mmac elevation host command contract\u001b ... scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mfully verifies a new destination-stage copy with healthy policy \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mfully verifies a new destination-stage copy with signature policy \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mfully verifies a new destination-stage copy with notarized policy \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mfully verifies a new destination-stage copy with stapler policy \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mfully verifies a new destination-stage copy with spctl policy \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt sourceCommit to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt peekabooCommit to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt version to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt build to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt authority to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt teamIdentifier to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt 'architectures' for 'main' to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt 'architectures' for 'helper' to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt 'entitlementsSha256' for 'main' to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mbinds receipt 'entitlementsSha256' for 'helper' to the fully audited app \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mpropagates notarized failure through conditional receipt verification \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mpropagates stapler failure through conditional receipt verification \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mpropagates spctl failure through conditional receipt verification \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mclassifies recovery planning after healthy policy result \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mclassifies recovery planning after notarized policy result \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mclassifies recovery planning after stapler policy result \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mclassifies recovery planning after spctl policy result \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mrejects foreign elf worker assets even without executable bits \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mrejects foreign pe worker assets even without executable bits \u001b[2m\u001b[90m↓\u001b[39m\u001b[22m \u001b[30m\u001b[46m tooling \u001b[49m\u001b[39m test/scripts/mac-elevation-artifact.test.ts\u001b[2m > \u001b[22mportable elevation native artifact verification\u001b[2m > \u001b[22mrejects foreign coff worker assets even without executable bits \u001b[2m Test Files \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m6 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m1 skipped\u001b[39m\u001b[90m (8)\u001b[39m \u001b[2m Tests \u001b[22m \u001b[1m\u001b[31m1 failed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[1m\u001b[32m200 passed\u001b[39m\u001b[22m\u001b[2m | \u001b[22m\u001b[33m365 skipped\u001b[39m\u001b[90m (566)\u001b[39m \u001b[2m Start at \u001b[22m 14:31:41 \u001b[2m Duration \u001b[22m 4.80s\u001b[2m (transform 281ms, setup 35ms, import 255ms, tests 4.28s, environment 0ms)\u001b[22m",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#137085",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
