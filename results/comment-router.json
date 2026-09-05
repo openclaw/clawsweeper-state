@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T06:49:23.982Z",
+  "updated_at": "2026-09-05T06:49:27.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137594:5548376523:2026-09-05T01:21:42Z:re_review",
-      "comment_id": "5548376523",
-      "comment_version_key": "5548376523:2026-09-05T01:21:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137594#issuecomment-5548376523",
-      "comment_created_at": "2026-09-05T01:21:42Z",
-      "comment_updated_at": "2026-09-05T01:21:42Z",
-      "comment_body_sha256": "6d2efc3b97449a9398860e5f8cf33d1b8702411d567dd86306db88e47141c8a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137594,
-      "author": "ylcn91",
-      "author_id": 7249450,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T01:39:27.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-mcp-outage",
-        "head_sha": "985fd9957653adfa6b2388a5a2b8cd966534e3b8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137594:5532842645:2026-09-05T01:38:08Z:clawsweeper_needs_human",
       "comment_id": "5532842645",
@@ -32520,6 +32473,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-715-plugin-shell",
         "head_sha": "53cb0c775ffbffeca6075748f7212d0d6d10c39a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133219:5467907140:2026-09-05T06:37:28Z:clawsweeper_needs_human",
+      "comment_id": "5467907140",
+      "comment_version_key": "5467907140:2026-09-05T06:37:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133219#issuecomment-5467907140",
+      "comment_created_at": "2026-08-30T09:32:57Z",
+      "comment_updated_at": "2026-09-05T06:37:28Z",
+      "comment_body_sha256": "8ef94795243af2fe5098b8e44fe3000ead9559b5599d80351bb48d949ab0206c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133219,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied observer test exercises defaultPersistDigest and real SQLite storage, but uses simulated time plus stubbed session reads and model... (sha=3b6dfe2e28dd6c62eff19eb17fc25d665af463eb)",
+      "expected_head_sha": "3b6dfe2e28dd6c62eff19eb17fc25d665af463eb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T06:49:27.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-observer-persist-digest-tristate",
+        "head_sha": "3b6dfe2e28dd6c62eff19eb17fc25d665af463eb",
         "cluster_id": null,
         "job_path": null
       }
