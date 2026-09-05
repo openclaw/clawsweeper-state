@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T07:47:28.935Z",
+  "updated_at": "2026-09-05T07:47:31.420Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126932:5548758470:2026-09-05T02:31:38Z:re_review",
-      "comment_id": "5548758470",
-      "comment_version_key": "5548758470:2026-09-05T02:31:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126932#issuecomment-5548758470",
-      "comment_created_at": "2026-09-05T02:31:38Z",
-      "comment_updated_at": "2026-09-05T02:31:38Z",
-      "comment_body_sha256": "887653f4472f0e504ae0451f2c10f2960cd984745274453934679646347295c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126932,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T02:32:34.316Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-meta-restore-126806",
-        "head_sha": "40bf9d02050cc16badf05283774616ebd746af2e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5548765436:2026-09-05T02:33:02Z:re_review",
       "comment_id": "5548765436",
@@ -32339,6 +32292,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-browser-tab-creation-cancellation-20260825",
         "head_sha": "7f26d0b4d5542cc96081830b07a0b1b65140cd7e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1083:5550379368:2026-09-05T07:46:37Z:clawsweeper_auto_repair",
+      "comment_id": "5550379368",
+      "comment_version_key": "5550379368:2026-09-05T07:46:37Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1083#issuecomment-5550379368",
+      "comment_created_at": "2026-09-05T07:46:37Z",
+      "comment_updated_at": "2026-09-05T07:46:37Z",
+      "comment_body_sha256": "9f96f6f6cb651b3a797563bd5d3f147a799e9badc6b232e9cd24a9193538d5bd",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1083,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=954989980bd619b54af43db7b1dfe9d04e214c85)",
+      "expected_head_sha": "954989980bd619b54af43db7b1dfe9d04e214c85",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-05T07:47:31.420Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/contacts-dedupe-page-token",
+        "head_sha": "954989980bd619b54af43db7b1dfe9d04e214c85",
         "cluster_id": null,
         "job_path": null
       }
