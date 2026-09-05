@@ -67,20 +67,20 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the remote-media SCP lifecycle bug in https://github.com/openclaw/openclaw/issues/98468. At the owner call in `src/auto-reply/reply/stage-sandbox-media.ts`, use the existing `runCommandWithTimeout` contract with an explicit bounded deadline and process-tree cleanup so a hung SCP transfer cannot retain the staging Promise or child tree. Preserve current SCP argv validation, stderr-tail behavior, and partial-staging semantics; do not add a config option, direct spawn path, or compatibility fallback. Treat https://github.com/openclaw/openclaw/pull/98141 and https://github.com/openclaw/openclaw/pull/101473 as unmerged prior attempts only. Extend focused regression coverage so it fails before the repair for the missing owner options, and prove timeout cleanup at the existing process boundary where feasible. Put user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Repair the unattended SCP hang described at https://github.com/openclaw/openclaw/issues/98468 on current main. Preserve the cancellation repair from https://github.com/openclaw/openclaw/pull/132552; the earlier timeout attempts at https://github.com/openclaw/openclaw/pull/98141 and https://github.com/openclaw/openclaw/pull/101473 closed unmerged. First recheck that no open PR owns this remaining fix. Inspect the installed Execa and OpenSSH contracts, then establish a failing no-abort staging regression before editing. Add a finite transfer deadline through runCommandWithTimeout in stageRemoteFileIntoRoot, without rebuilding subprocess settlement or cancellation. Validate the requested 30-second per-attempt budget against slow successful transfers and the existing three-attempt policy; stop for maintainer input if a new configuration or product-policy choice becomes necessary. Preserve strict SSH/path checks, bounded diagnostics, the 50 MiB cap, cancellation-reason handling, awaited descendant cleanup and unchanged contexts on failure. Extend the existing SCP boundary fixture to verify timeout without an external abort, bounded attempts, process-tree disappearance, temporary-directory cleanup and no failed-media publication. Retain success, explicit-cancellation and local-staging controls. Exercise an actual SSH/SCP stall in an isolated setup before landing and record redacted results. Run the focused staging/process tests and changed checks. Put behavior and issue context in the PR body; do not edit CHANGELOG.md. Do not add config, schema, protocol or plugin API surface.
 
 Likely files:
 
 - src/auto-reply/reply/stage-sandbox-media.ts
 - src/auto-reply/reply/stage-sandbox-media.scp.test.ts
-- src/process/exec.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/auto-reply/reply/stage-sandbox-media.scp.test.ts
-- node scripts/run-vitest.mjs src/process/exec.test.ts
-- node scripts/run-vitest.mjs src/process/exec.no-output-timer.test.ts
-- node scripts/check-changed.mjs -- src/auto-reply/reply/stage-sandbox-media.ts src/auto-reply/reply/stage-sandbox-media.scp.test.ts
+- pnpm test src/auto-reply/reply/stage-sandbox-media.scp.test.ts
+- pnpm test src/auto-reply/reply/stage-sandbox-media
+- pnpm test src/process/exec.test.ts src/process/exec.no-output-timer.test.ts src/process/exec.windows.test.ts
+- pnpm check:changed
+- git diff --check
 
 ## Operator Prompt
 
