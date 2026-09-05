@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T23:29:47.033Z",
+  "updated_at": "2026-09-05T23:30:18.088Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137731:5554077057:2026-09-05T18:59:00Z:re_review",
-      "comment_id": "5554077057",
-      "comment_version_key": "5554077057:2026-09-05T18:59:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137731#issuecomment-5554077057",
-      "comment_created_at": "2026-09-05T18:59:00Z",
-      "comment_updated_at": "2026-09-05T18:59:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137731,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T18:59:47.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/a2a-flake-hardening",
-        "head_sha": "89af9660e5f25b488add2ecd6f6649089ea6c8b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:10:5304643448:2026-09-05T18:58:57Z:clawsweeper_needs_human",
       "comment_id": "5304643448",
@@ -33082,6 +33035,39 @@
         "kind": "pull_request",
         "branch": "codex/team-reclamation-lock-cycle",
         "head_sha": "4d345bcc69b14443c6a8b27a97d7af8308de329c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139503:5555509733:2026-09-05T23:29:28Z:clawsweeper_needs_human",
+      "comment_id": "5555509733",
+      "comment_version_key": "5555509733:2026-09-05T23:29:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139503#issuecomment-5555509733",
+      "comment_created_at": "2026-09-05T23:29:28Z",
+      "comment_updated_at": "2026-09-05T23:29:28Z",
+      "comment_body_sha256": "bf67d99cfb5f244cc35f168b898bd9859698f0a6cf9768bf1547424a95760043",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139503,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing cloud sessions that relied on accidental Gateway-local file previews or downloads will lose that access after upgrade; the PR explicitly documents this intentional restrictio... (sha=ae5d95f45a0dcb975fd54918b18848c24659b259)",
+      "expected_head_sha": "ae5d95f45a0dcb975fd54918b18848c24659b259",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T23:30:18.088Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-135868-media-policy",
+        "head_sha": "ae5d95f45a0dcb975fd54918b18848c24659b259",
         "cluster_id": null,
         "job_path": null
       }
