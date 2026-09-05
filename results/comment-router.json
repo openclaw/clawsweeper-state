@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T09:55:33.565Z",
+  "updated_at": "2026-09-05T09:55:34.914Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137202:5549328340:2026-09-05T04:26:01Z:re_review",
-      "comment_id": "5549328340",
-      "comment_version_key": "5549328340:2026-09-05T04:26:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137202#issuecomment-5549328340",
-      "comment_created_at": "2026-09-05T04:26:01Z",
-      "comment_updated_at": "2026-09-05T04:26:01Z",
-      "comment_body_sha256": "cc3f7e3eb9b30605be37ec2e2b1e6334b7e1caeb10d175ea90cc34dd7d7849b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137202,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T04:33:59.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/vitest5-migration-d2657a",
-        "head_sha": "c15e68dbeb656abd817c4b12d6d71d99fde77647",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137144:5549346518:2026-09-05T04:29:53Z:re_review",
       "comment_id": "5549346518",
@@ -32201,6 +32154,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/summarize:402:5538389807:2026-09-05T09:54:43Z:clawsweeper_needs_human",
+      "comment_id": "5538389807",
+      "comment_version_key": "5538389807:2026-09-05T09:54:43Z",
+      "comment_url": "https://github.com/steipete/summarize/pull/402#issuecomment-5538389807",
+      "comment_created_at": "2026-09-04T09:22:40Z",
+      "comment_updated_at": "2026-09-05T09:54:43Z",
+      "comment_body_sha256": "4bfaca33784806d03f0cc3db33179296243631877d36790d2441a137228baa49",
+      "repo": "steipete/summarize",
+      "issue_number": 402,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The replacement action changes deployment polling, which can affect completion timing and timeout behavior. Upstream source inspection was unavailable, and the supplied successful che... (sha=dcf967296770591934ba713b4b68c6c0b060d468)",
+      "expected_head_sha": "dcf967296770591934ba713b4b68c6c0b060d468",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T09:55:34.914Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/github_actions/actions-e061d434e4",
+        "head_sha": "dcf967296770591934ba713b4b68c6c0b060d468",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
