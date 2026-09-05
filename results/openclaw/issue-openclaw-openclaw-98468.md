@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-98468"
-mode: "plan"
-run_id: "33979245701"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33979245701"
+mode: "autonomous"
+run_id: "33980587723"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33980587723"
 head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-05T17:10:37.797Z"
-canonical: "#98468"
-canonical_issue: "#98468"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-05T18:05:34.458Z"
+canonical: "https://github.com/openclaw/openclaw/issues/98468"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/98468"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33979245701](https://github.com/openclaw/clawsweeper/actions/runs/33979245701)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33980587723](https://github.com/openclaw/clawsweeper/actions/runs/33980587723)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #98468
+Canonical: https://github.com/openclaw/openclaw/issues/98468
 
 ## Summary
 
-Keep #98468 open and plan one narrow deadline repair. Current source still omits the SCP timeout. No files or GitHub state changed; reproduction, dependency verification, slow-transfer compatibility, and live SSH/SCP proof remain required.
+Current-main source still omits the SCP deadline. A narrow fix artifact is prepared, but implementation and reproduction are blocked by the read-only checkout and missing dependencies. No code or GitHub changes were made. Open-PR ownership and live SCP proof remain unverified.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ Keep #98468 open and plan one narrow deadline repair. Current source still omits
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #98468 | fix_needed | planned | canonical | The remaining repair belongs at the existing shared-runner call. Preserve cancellation and cleanup ownership; establish failing runtime proof before changing production code. |
-| #98141 | keep_closed | skipped | superseded | Historical timeout proposal only; preserve attribution without reopening or closing it again. |
-| #101473 | keep_closed | skipped | related | Useful historical context, not a surviving implementation candidate. |
-| #132552 | keep_closed | skipped | related | Preserve the landed cancellation repair and its contributor credit; it does not resolve the unattended deadline defect. |
+| #98468 | fix_needed | planned | canonical | The remaining source-supported defect belongs at the existing staging runner call. Preserve the merged cancellation repair and establish a failing no-abort regression before production edits. |
+| #98141 | keep_closed | skipped | superseded | Historical timeout proposal; preserve @zhangLei99586's credit without reopening or closing this PR again. |
+| #101473 | keep_closed | skipped | related | Historical related work by @zenglingbiao, not an open canonical implementation. |
+| #132552 | keep_closed | skipped | related | Preserve this cancellation repair and its regression coverage. Its merged status does not establish that unattended transfers are fixed. |
+| cluster:issue-openclaw-openclaw-98468 | build_fix_artifact | planned | canonical | A narrow executor plan remains useful despite the current worker's implementation blockers. |
+| cluster:issue-openclaw-openclaw-98468 | open_fix_pr | blocked | canonical | Publication is blocked on a writable executor completing PR-ownership checks, dependency inspection, failing-before/passing-after reproduction, implementation and required validation. |
 
 ## Needs Human
 
