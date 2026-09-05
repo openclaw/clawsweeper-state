@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-42986"
 mode: "autonomous"
-run_id: "33955797995"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33955797995"
+run_id: "33957863564"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33957863564"
 head_sha: "6a56eee17378928c246602b6f85f52866f406983"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-05T09:16:28.411Z"
+published_at: "2026-09-05T09:59:21.785Z"
 canonical: "https://github.com/openclaw/openclaw/issues/42986"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/42986"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33955797995](https://github.com/openclaw/clawsweeper/actions/runs/33955797995)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33957863564](https://github.com/openclaw/clawsweeper/actions/runs/33957863564)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/42986
 
 ## Summary
 
-Source inspection supports a narrow capability-exposure repair. Implementation is blocked by the read-only checkout and missing dependencies. No regression tests ran, files changed, or GitHub mutations occurred.
+Current-main source supports the reported capability-discovery defect. A narrow fix artifact is prepared, but implementation and reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Source inspection supports a narrow capability-exposure repair. Implementation i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #42986 | fix_needed | planned | canonical | Retain the canonical issue and prepare the documented bug-only repair. Executed reproduction remains a prerequisite to implementation. |
-| cluster:issue-openclaw-openclaw-42986 | build_fix_artifact | planned |  | A narrow repair plan is available despite local execution blockers; implementation and publication remain gated. |
-| cluster:issue-openclaw-openclaw-42986 | open_fix_pr | blocked |  | Blocked on a writable, dependency-ready executor, an executed failing/passing regression, required source inspection, Telegram behavior proof, and the canonical-PR recheck. |
+| #42986 | fix_needed | blocked | canonical | Implementation requires a writable, dependency-ready checkout and an actual failing baseline regression. Recheck the existing implementation branch/PR before creating work; required Telegram live proof remains outstanding. |
+| cluster:issue-openclaw-openclaw-42986 | build_fix_artifact | planned | canonical | Source evidence supports a bounded repair once the executor restores the missing prerequisites and captures the required failing regression. |
 
 ## Needs Human
 
