@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T07:47:47.142Z",
+  "updated_at": "2026-09-05T07:48:07.436Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138785:5548771855:2026-09-05T02:34:14Z:re_review",
-      "comment_id": "5548771855",
-      "comment_version_key": "5548771855:2026-09-05T02:34:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138785#issuecomment-5548771855",
-      "comment_created_at": "2026-09-05T02:34:14Z",
-      "comment_updated_at": "2026-09-05T02:34:14Z",
-      "comment_body_sha256": "9dfa6b4a329c23531c6ed653b822696fa8ab46d8ce0abe46a3fb402413bcd2fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138785,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T02:35:03.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/review-138394",
-        "head_sha": "e66d575d99bd56b76cd9100c506b2cebe73a0066",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138627:5546815818:2026-09-05T02:37:30Z:clawsweeper_auto_repair",
       "comment_id": "5546815818",
@@ -32311,6 +32264,39 @@
         "kind": "pull_request",
         "branch": "openclaw/color-blindness-themes-in-web-ui",
         "head_sha": "6fc1d460e6c7d8099f317497cc312ab4b6bccca3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136364:5511382247:2026-09-05T07:47:18Z:clawsweeper_needs_human",
+      "comment_id": "5511382247",
+      "comment_version_key": "5511382247:2026-09-05T07:47:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136364#issuecomment-5511382247",
+      "comment_created_at": "2026-09-02T14:43:30Z",
+      "comment_updated_at": "2026-09-05T07:47:18Z",
+      "comment_body_sha256": "18c7aba33f9a97cbf6e3cdc5915afed2c1f8b2022037b716169761627fc195b8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136364,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - With continuing user turns, an unrecharged inline key can become eligible every ten minutes instead of every five hours; the more frequent provider attempts need owner acceptance. (sha=c44f81187bd745c70b23a360fe15496c40251bf9)",
+      "expected_head_sha": "c44f81187bd745c70b23a360fe15496c40251bf9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T07:48:07.436Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/135835-billing-auth-cooldown",
+        "head_sha": "c44f81187bd745c70b23a360fe15496c40251bf9",
         "cluster_id": null,
         "job_path": null
       }
