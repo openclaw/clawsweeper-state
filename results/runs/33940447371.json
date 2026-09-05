@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138791",
+  "mode": "autonomous",
+  "run_id": "33940447371",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33940447371",
+  "head_sha": "da713f68d3fd46a1e6b123da5d709062b412cd1b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138791.md",
+  "published_at": "2026-09-05T03:32:51.165Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138791",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138791",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow two-file repair plan. Source inspection confirms the diagnostic mismatch at preflight main c748cd5714b8160f0ce0a895071f039877082f08. Implementation and runtime reproduction are blocked by the read-only checkout and unavailable dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#138791",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138791",
+      "candidate_fix": null,
+      "reason": "The existing validator owns this diagnostic inconsistency. Reuse its existing marker contract; no dependency, configuration option, or activation-policy change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138791",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138791",
+      "candidate_fix": null,
+      "reason": "A bounded diagnostic repair remains appropriate. The executor must establish the failing regression before changing production code."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138791",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#138791",
+      "candidate_fix": null,
+      "reason": "Implementation and publication require a writable executor with dependencies, refreshed main/PR ownership, a failing pre-fix regression, and passing post-fix validation. No PR should be opened from source inspection alone."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
