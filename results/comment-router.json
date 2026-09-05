@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T03:50:16.863Z",
+  "updated_at": "2026-09-05T03:51:04.688Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138059:5547315598:2026-09-04T22:48:08Z:re_review",
-      "comment_id": "5547315598",
-      "comment_version_key": "5547315598:2026-09-04T22:48:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138059#issuecomment-5547315598",
-      "comment_created_at": "2026-09-04T22:48:08Z",
-      "comment_updated_at": "2026-09-04T22:48:08Z",
-      "comment_body_sha256": "b8bc92db7a6577d57d1181d79e9865d83e44b9f0745f10f8b1ef6bb893ec263b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138059,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T22:49:30.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/unlimited-recursive-session-spawn",
-        "head_sha": "fddf69c6322eb4fec43b92cb6e33473db9e2adfa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:107479:4971448190:2026-08-29T02:19:50Z:clawsweeper_needs_human",
       "comment_id": "4971448190",
@@ -33424,6 +33377,39 @@
         "kind": "pull_request",
         "branch": "fix/active-memory-log-recall-skip",
         "head_sha": "802f3cab270074da4af2c90372b69d5b97c3d705",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138826:5549154136:2026-09-05T03:50:06Z:clawsweeper_needs_human",
+      "comment_id": "5549154136",
+      "comment_version_key": "5549154136:2026-09-05T03:50:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138826#issuecomment-5549154136",
+      "comment_created_at": "2026-09-05T03:50:06Z",
+      "comment_updated_at": "2026-09-05T03:50:06Z",
+      "comment_body_sha256": "29748829f5ca2247743659bed0d1b1b86e8c433d10cc9657937708e7a39984e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138826,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The shared plugin wizard's restoration is covered by mocked selections, but no supplied evidence shows a real after-fix wizard saving typed enu... (sha=be41b9551f412acaa152643bf2e3f4da4c66e184)",
+      "expected_head_sha": "be41b9551f412acaa152643bf2e3f4da4c66e184",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T03:51:04.688Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-wizard-typed-enum",
+        "head_sha": "be41b9551f412acaa152643bf2e3f4da4c66e184",
         "cluster_id": null,
         "job_path": null
       }
