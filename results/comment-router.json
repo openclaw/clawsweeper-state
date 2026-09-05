@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T15:04:22.147Z",
+  "updated_at": "2026-09-05T15:05:06.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136984:5551016625:2026-09-05T09:54:44Z:re_review",
-      "comment_id": "5551016625",
-      "comment_version_key": "5551016625:2026-09-05T09:54:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136984#issuecomment-5551016625",
-      "comment_created_at": "2026-09-05T09:54:44Z",
-      "comment_updated_at": "2026-09-05T09:54:44Z",
-      "comment_body_sha256": "28aad08f074b20aff63d17612e5fc405c761dfa2e8f131ce06c72c788fd00c9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136984,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T09:55:32.049Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-candidate-pool-floor",
-        "head_sha": "bc163a390d4c312042aa1a15dbb047d783a43823",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:402:5538389807:2026-09-05T09:54:43Z:clawsweeper_needs_human",
       "comment_id": "5538389807",
@@ -32091,6 +32044,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139160:5552681822:2026-09-05T15:04:12Z:clawsweeper_needs_human",
+      "comment_id": "5552681822",
+      "comment_version_key": "5552681822:2026-09-05T15:04:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139160#issuecomment-5552681822",
+      "comment_created_at": "2026-09-05T15:04:12Z",
+      "comment_updated_at": "2026-09-05T15:04:12Z",
+      "comment_body_sha256": "53aabb91f2ea6c40824a0faf7fd00ae27c717c44513128e46562b5cad3bc63b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Captured native output supports longer validation and successful managed setup with a single 120-second timeout. It does not exercise... (sha=ecc42effa8fb4195a203fca43b358bc5039ca9bb)",
+      "expected_head_sha": "ecc42effa8fb4195a203fca43b358bc5039ca9bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T15:05:06.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/llama-cpp-first-exec-timeout",
+        "head_sha": "ecc42effa8fb4195a203fca43b358bc5039ca9bb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
