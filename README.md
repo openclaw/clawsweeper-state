@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 5, 2026, 06:39 UTC
+Last source update: Sep 5, 2026, 06:57 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 5, 2026, 06:39 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 5, 2026, 06:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33949939730) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 5, 2026, 06:39 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33950386072) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Planning review | Sep 5, 2026, 06:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33951127366) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 5, 2026, 06:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33951145877) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 5, 2026, 06:31 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/33950045696) |
 
 ### Repositories
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 5, 2026, 06:22 UTC
+Last source update: Sep 5, 2026, 06:47 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 849 | 100% |
-| Run attempts archived | 2667 | audit |
-| Latest successful clusters | 700 | 82.4% |
-| Latest failed clusters | 147 | 17.3% |
+| Run attempts archived | 2668 | audit |
+| Latest successful clusters | 701 | 82.6% |
+| Latest failed clusters | 146 | 17.2% |
 | Latest cancelled clusters | 2 | 0.2% |
 | Needs-human clusters | 121 | 14.3% |
 | Fix actions failed | 32 | 4.5% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 849 clusters: 301 maintainer action, 123 automation snapshot, 390 intervention needed, 35 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#137836](https://github.com/openclaw/openclaw/issues/137836) is maintainer_input: Route this exact credential-migration item to central OpenClaw security handling without mutation; it is independent of compaction accoun....
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#137836](https://github.com/openclaw/openclaw/issues/137836) is maintainer_input: Route this item to central OpenClaw security handling despite the artifact's false sensitivity flag. No mutation or repair is proposed..
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-138812](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138812.md) is automation_blocked: validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=extensions, extensionTests [check:....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#138791](https://github.com/openclaw/openclaw/pull/138791) is action_planned: The existing marker contract provides a narrow repair path without changing configuration, activation, trust policy, or Doctor cleanup..
 - Completed latest: no completed action in the latest records.
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#137836](https://github.com/openclaw/openclaw/issues/137836) | maintainer_input | Route this exact credential-migration item to central OpenClaw security handling without mutation; it is independent of compaction accounting. | Sep 5, 2026, 06:22 UTC | [issue-openclaw-openclaw-138871](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138871.md) | [33948231551](https://github.com/openclaw/clawsweeper/actions/runs/33948231551) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#137836](https://github.com/openclaw/openclaw/issues/137836) | maintainer_input | Route this item to central OpenClaw security handling despite the artifact's false sensitivity flag. No mutation or repair is proposed. | Sep 5, 2026, 06:47 UTC | [issue-openclaw-openclaw-138871](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138871.md) | [33950448445](https://github.com/openclaw/clawsweeper/actions/runs/33950448445) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | maintainer_input | {"type":"thread.started","thread_id":"01a06f3e-edf8-7511-8ecc-8f61278a4a01"} {"type":"item.completed","item":{"id":"item_0","type":"error","message... | Sep 5, 2026, 01:49 UTC | [issue-openclaw-openclaw-138763](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138763.md) | [33937107698](https://github.com/openclaw/clawsweeper/actions/runs/33937107698) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#138672](https://github.com/openclaw/openclaw/issues/138672) | maintainer_input | Honor the explicit item-level quarantine rather than infer clearance from the implementation request. This routing is not a finding that the report... | Sep 5, 2026, 01:06 UTC | [issue-openclaw-openclaw-138672](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138672.md) | [33934833603](https://github.com/openclaw/clawsweeper/actions/runs/33934833603) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#44759](https://github.com/openclaw/openclaw/issues/44759) | maintainer_input | Provide a writable environment containing ../codex (or otherwise make the required Codex source available) so the mandated direct inspection, regre... | Sep 4, 2026, 17:36 UTC | [issue-openclaw-openclaw-138383](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138383.md) | [33900583374](https://github.com/openclaw/clawsweeper/actions/runs/33900583374) |
