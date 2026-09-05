@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T03:47:35.249Z",
+  "updated_at": "2026-09-05T03:47:49.812Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:448:5547242177:2026-09-04T22:38:29Z:re_review",
-      "comment_id": "5547242177",
-      "comment_version_key": "5547242177:2026-09-04T22:38:29Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/448#issuecomment-5547242177",
-      "comment_created_at": "2026-09-04T22:38:29Z",
-      "comment_updated_at": "2026-09-04T22:38:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/oracle",
-      "issue_number": 448,
-      "author": "malvarezcastillo",
-      "author_id": 6960749,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T22:45:47.275Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/gpt-6-latest-browser-model",
-        "head_sha": "b022dcfb0ab8f1f263569452402cbcc732314850",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:448:5547121575:2026-09-04T22:44:59Z:clawsweeper_auto_repair",
       "comment_id": "5547121575",
@@ -33396,6 +33349,39 @@
         "kind": "pull_request",
         "branch": "codex/release-2026-9-2-inline-directives",
         "head_sha": "0ad1d7cae6b933093816bf18cfdeddf3adbb6535",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135528:5500670751:2026-09-05T03:41:29Z:clawsweeper_needs_human",
+      "comment_id": "5500670751",
+      "comment_version_key": "5500670751:2026-09-05T03:41:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135528#issuecomment-5500670751",
+      "comment_created_at": "2026-09-01T21:27:40Z",
+      "comment_updated_at": "2026-09-05T03:41:29Z",
+      "comment_body_sha256": "73636e5f1844fe9bf517511dc5a3b593d2884676de3262b18920d8fd6658c64a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135528,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Scan grouped Workshop directories during deep audit (P2)** - A valid skill at &lt;agentDir>/workshop-skills/group/procedure/SKILL.md loads through recursive skill discovery, but this depth-one walk visits only t...; Review finding: [P2] Scan grouped Workshop directories during deep audit — src/security/audit-extra.async.ts:946-952 - [P3] Describe Workshop precedence separately from file prese... (sha=2e059cb189e417c02017a75efda1104e7d9b210e)",
+      "expected_head_sha": "2e059cb189e417c02017a75efda1104e7d9b210e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T03:47:49.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/workshop-global-skill-ownership",
+        "head_sha": "2e059cb189e417c02017a75efda1104e7d9b210e",
         "cluster_id": null,
         "job_path": null
       }
