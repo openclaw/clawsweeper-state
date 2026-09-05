@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T18:22:28.654Z",
+  "updated_at": "2026-09-05T18:22:33.575Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138964:5551940801:2026-09-05T12:51:21Z:re_review",
-      "comment_id": "5551940801",
-      "comment_version_key": "5551940801:2026-09-05T12:51:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138964#issuecomment-5551940801",
-      "comment_created_at": "2026-09-05T12:51:21Z",
-      "comment_updated_at": "2026-09-05T12:51:21Z",
-      "comment_body_sha256": "fbe90b522e89aeef944e8e038bfd25fc10bfdf38793a8c82eb05cbbc25f7cd34",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138964,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T12:52:12.183Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cua-dev-startup-recovery",
-        "head_sha": "41693be8eebb033d38a0c50253a27e0ecee97f43",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137594:5551949593:2026-09-05T12:53:00Z:re_review",
       "comment_id": "5551949593",
@@ -32298,6 +32251,39 @@
         "kind": "pull_request",
         "branch": "codex/copilot-tenant-ownership-20260905",
         "head_sha": "c1f01ffef98870e2369bba09a3e698b73f22b89b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139271:5553857010:2026-09-05T18:21:43Z:clawsweeper_needs_human",
+      "comment_id": "5553857010",
+      "comment_version_key": "5553857010:2026-09-05T18:21:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139271#issuecomment-5553857010",
+      "comment_created_at": "2026-09-05T18:21:43Z",
+      "comment_updated_at": "2026-09-05T18:21:43Z",
+      "comment_body_sha256": "dd12f4ee6dd17a2a13997ac2d98b395e1b97d5f0f5fcbf46217791c140a92fb4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewer could not retrieve the linked Windows run or independently compare its tested candidate with the submitted head; the PR explicitly reports subsequent worker environment w... (sha=5564c0c009f6fe98e3f5c206dab087aa5a2a8246)",
+      "expected_head_sha": "5564c0c009f6fe98e3f5c206dab087aa5a2a8246",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T18:22:33.575Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-139185-msys-git-paths",
+        "head_sha": "5564c0c009f6fe98e3f5c206dab087aa5a2a8246",
         "cluster_id": null,
         "job_path": null
       }
