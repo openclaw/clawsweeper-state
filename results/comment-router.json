@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T03:49:26.693Z",
+  "updated_at": "2026-09-05T03:50:15.274Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138603:5547263928:2026-09-04T22:41:21Z:re_review",
-      "comment_id": "5547263928",
-      "comment_version_key": "5547263928:2026-09-04T22:41:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138603#issuecomment-5547263928",
-      "comment_created_at": "2026-09-04T22:41:21Z",
-      "comment_updated_at": "2026-09-04T22:41:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138603,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T22:49:30.024Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/conversation-position-rail",
-        "head_sha": "9fb3c0982b4c65e81f20da027347fa36e994987e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138635:5547268430:2026-09-04T22:41:58Z:re_review",
       "comment_id": "5547268430",
@@ -33454,6 +33407,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138750:5548905923:2026-09-05T03:49:20Z:clawsweeper_needs_human",
+      "comment_id": "5548905923",
+      "comment_version_key": "5548905923:2026-09-05T03:49:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138750#issuecomment-5548905923",
+      "comment_created_at": "2026-09-05T03:00:32Z",
+      "comment_updated_at": "2026-09-05T03:49:20Z",
+      "comment_body_sha256": "15b52f862307ac283ac8490a31f3ddd4963035c4a3b645d5510f522348ce1504",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138750,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal trace attempts to show apply.ts retention followed by fresh CLI audit, but its apply/audit output does not match...; Review finding: [P2] [P2] Preserve segment boundaries in destination keys — src/secrets/apply.ts:403-408 - [P2] [P2] Identify auth destinations by their resolved store — src/secre... (sha=3bb3f6eb57606949a4763e94ec62a4ce5803d83b)",
+      "expected_head_sha": "3bb3f6eb57606949a4763e94ec62a4ce5803d83b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T03:50:15.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/secrets-apply-preserve-env-secretref",
+        "head_sha": "3bb3f6eb57606949a4763e94ec62a4ce5803d83b",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
