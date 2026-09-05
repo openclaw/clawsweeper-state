@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T21:35:53.052Z",
+  "updated_at": "2026-09-05T21:36:07.406Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:103113:4930384453:2026-09-05T16:00:35Z:clawsweeper_needs_human",
-      "comment_id": "4930384453",
-      "comment_version_key": "4930384453:2026-09-05T16:00:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/103113#issuecomment-4930384453",
-      "comment_created_at": "2026-07-09T23:15:11Z",
-      "comment_updated_at": "2026-09-05T16:00:35Z",
-      "comment_body_sha256": "fe9ab5421cef275c2e65f10d2bc6c77ce68800f61688e834768da07a2dcaccec",
-      "repo": "openclaw/openclaw",
-      "issue_number": 103113,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic recovery can send a URL to another eligible credentialed provider and consume that provider's credits; acceptance of this changed behavior remains unrecorded. (sha=f44e255f6d4083768ee873a27a28f513bed591bf)",
-      "expected_head_sha": "f44e255f6d4083768ee873a27a28f513bed591bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T16:40:31.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "llagy007/web-content-runtime-fallback-v2",
-        "head_sha": "f44e255f6d4083768ee873a27a28f513bed591bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132443:5460883969:2026-09-05T16:35:39Z:clawsweeper_auto_repair",
       "comment_id": "5460883969",
@@ -33269,6 +33236,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139405:5554939946:2026-09-05T21:35:15Z:re_review",
+      "comment_id": "5554939946",
+      "comment_version_key": "5554939946:2026-09-05T21:35:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139405#issuecomment-5554939946",
+      "comment_created_at": "2026-09-05T21:35:15Z",
+      "comment_updated_at": "2026-09-05T21:35:15Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139405,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T21:36:05.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-135868-testbox-hydration",
+        "head_sha": "320264ae4703afa3b99665febeac8026aab65a4b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
