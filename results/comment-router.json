@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T09:48:15.922Z",
+  "updated_at": "2026-09-05T09:49:16.986Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5465050097:2026-08-29T21:42:51Z:re_review",
-      "comment_id": "5465050097",
-      "comment_version_key": "5465050097:2026-08-29T21:42:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5465050097",
-      "comment_created_at": "2026-08-29T21:42:51Z",
-      "comment_updated_at": "2026-08-29T21:42:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T03:55:28.183Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122431:5262419744:2026-08-12T04:50:36Z:re_review",
       "comment_id": "5262419744",
@@ -32383,6 +32356,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138986:5550987369:2026-09-05T09:48:22Z:clawsweeper_needs_human",
+      "comment_id": "5550987369",
+      "comment_version_key": "5550987369:2026-09-05T09:48:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138986#issuecomment-5550987369",
+      "comment_created_at": "2026-09-05T09:48:22Z",
+      "comment_updated_at": "2026-09-05T09:48:22Z",
+      "comment_body_sha256": "be59c51748c05bff364c6c563a6cc0edb6dc26348da23adb642686c758b2284d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138986,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied evidence does not yet demonstrate compiled Linux early-stop cleanup and readiness with the current-main restart handoff; that composition could still expose shutdown stal... (sha=5fcb70015613439b4062a0b768d35836673cecb7)",
+      "expected_head_sha": "5fcb70015613439b4062a0b768d35836673cecb7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T09:49:16.986Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/team-preflight-event-loop-20260905",
+        "head_sha": "5fcb70015613439b4062a0b768d35836673cecb7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
