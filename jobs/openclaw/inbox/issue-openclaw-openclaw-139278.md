@@ -67,20 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Fix speech-start interruption being disabled by force-agent-consult in https://github.com/openclaw/openclaw/issues/139278. Recheck current main and open linked PRs before starting. In src/gateway/talk-realtime-relay-session-create.ts, separate interruption policy from automatic provider response generation using the existing Talk policy where appropriate. Keep autoRespondToAudio false for forced consult, preserve explicit interruption preferences, and retain provider echo/minimum-playback safeguards. First establish a regression that fails because speech-start during consult-result playback does not clear audio; prove the same scenario passes after repair and that finalized speech still routes through the consult exactly once. Cover provider-direct behavior and explicit interruption disablement. Inspect the voice-call sibling without broadening its semantics. Do not globally alter provider fallback behavior, introduce config/API/storage changes, or implement the separate timeout/progress requests in https://github.com/openclaw/openclaw/issues/139279. Stop for retriage if a new capability or policy decision becomes necessary. Run focused relay and OpenAI provider coverage plus changed-file checks, and obtain suitable real Talk playback evidence before landing. Keep release-note context and reporter credit in the PR body; do not edit CHANGELOG.md.
+Repair speech-start interruption for forced-agent-consult Gateway Talk sessions. First recheck this issue and related PRs for an existing implementation owner. Establish a failing regression through relay creation and the GA OpenAI bridge: forced consult must retain autoRespondToAudio=false while speech_started during active playback clears output. Repair src/gateway/talk-realtime-relay-session-create.ts at the control producer, preferably with net-neutral production LOC. Do not merely omit interruptResponseOnInputAudio, because its provider fallback inherits false. Preserve provider-direct behavior, echo/truncation safeguards, explicit turn cancellation, consult dispatch and exactly-once result delivery. Compare phone and Discord policies without changing their defaults. Extend existing boundary tests instead of adding test-only production seams. Verify a real Talk call before landing and record redacted evidence, including continued forced consultation after interruption. Do not add configuration, change schemas, alter tool authority, or implement timeout/progress features from https://github.com/openclaw/openclaw/issues/139279. Stop if the repair requires a new product policy. Run the focused tests and changed checks listed below; include user-visible release context in the PR body and do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/gateway/talk-realtime-relay-session-create.ts
 - src/gateway/talk-realtime-relay.test.ts
-- src/talk/realtime-session-policy.ts
 - extensions/openai/realtime-voice-bridge-events.test.ts
+- extensions/openai/realtime-voice-bridge-connection.test.ts
 
 Validation:
 
 - pnpm test src/gateway/talk-realtime-relay.test.ts
-- pnpm test src/talk/realtime-session-policy.test.ts src/talk/session-runtime.test.ts
-- pnpm test:extension openai
+- pnpm test extensions/openai/realtime-voice-bridge-events.test.ts
+- pnpm test extensions/openai/realtime-voice-bridge-connection.test.ts
+- pnpm test src/talk/session-runtime.test.ts src/talk/realtime-session-policy.test.ts
 - pnpm check:changed
 - git diff --check
 
