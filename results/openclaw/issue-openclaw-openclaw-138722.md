@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138722"
-mode: "autonomous"
-run_id: "33934278288"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33934278288"
-head_sha: "e5fffb689e4ae012121be84dbb47c0b8306b14b4"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T01:33:21.473Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138722"
+mode: "plan"
+run_id: "33937597214"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33937597214"
+head_sha: "9d76bdc16a76d2cc4fabdafaf4dc144da7f49a99"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T02:07:09.590Z"
+canonical: "#138722"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138722"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33934278288](https://github.com/openclaw/clawsweeper/actions/runs/33934278288)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33937597214](https://github.com/openclaw/clawsweeper/actions/runs/33937597214)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138722
+Canonical: #138722
 
 ## Summary
 
-Reproduced the chunk-budget defect using unchanged source functions at preflight main 4012f13f27d4279b76d4815ba4814a4b8f912850: two 1,600-character ASCII lines produce chunks of 1,600 and 3,201 characters. Weighted fine splitting also exceeds the same budget. A narrow repair artifact is ready, but implementation and PR creation are blocked by enforced read-only permissions and missing dependencies. No files or GitHub state were changed.
+Plan one narrow chunk-budget repair for #138722. Checkout HEAD matches the preflight main SHA. A read-only, source-extracted probe reproduced the 3,201-character ASCII chunk and weighted fine-splitting overflows. No files or GitHub state changed. Full regression tests, owning-PR discovery, and live Ollama verification remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Reproduced the chunk-budget defect using unchanged source functions at preflight
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #138722 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,8 @@ Reproduced the chunk-budget defect using unchanged source functions at preflight
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138722 | fix_needed | planned | canonical | The reported owner-level invariant fails on the supplied current-main SHA. Repair segmentation and overlap together; do not change provider policy or treat the closed estimator report as a duplicate. |
-| #116648 | keep_closed | skipped | related | Adjacent estimator context only. Preserve its closed state; no closure or reopening action is warranted. |
-| cluster:issue-openclaw-openclaw-138722 | build_fix_artifact | planned |  | A narrow, non-security repair can reuse existing owners and reindex machinery without new configuration, dependencies, schemas, or recovery policy. |
-| cluster:issue-openclaw-openclaw-138722 | open_fix_pr | blocked |  | Implementation and fix-PR publication are blocked on a writable, dependency-ready executor. Non-mutating classification and repair planning remain valid; no maintainer product decision is outstanding. |
+| #138722 | fix_needed | planned | canonical | The canonical producer still violates its budget on the supplied main snapshot. Repair segmentation and overlap together, preserving metadata and the downstream provider limiter. Missing execution capabilities do not require a maintainer product decision. |
+| #116648 | keep_closed | skipped | related | Historical estimator context only; no reopening, closure, comment, or other mutation is planned. |
 
 ## Needs Human
 

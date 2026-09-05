@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138722",
+  "mode": "plan",
+  "run_id": "33937597214",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33937597214",
+  "head_sha": "9d76bdc16a76d2cc4fabdafaf4dc144da7f49a99",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138722.md",
+  "published_at": "2026-09-05T02:07:09.590Z",
+  "canonical": "#138722",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138722",
+  "canonical_pr": null,
+  "summary": "Plan one narrow chunk-budget repair for #138722. Checkout HEAD matches the preflight main SHA. A read-only, source-extracted probe reproduced the 3,201-character ASCII chunk and weighted fine-splitting overflows. No files or GitHub state changed. Full regression tests, owning-PR discovery, and live Ollama verification remain pending.",
+  "actions": [
+    {
+      "target": "#138722",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138722",
+      "candidate_fix": null,
+      "reason": "The canonical producer still violates its budget on the supplied main snapshot. Repair segmentation and overlap together, preserving metadata and the downstream provider limiter. Missing execution capabilities do not require a maintainer product decision."
+    },
+    {
+      "target": "#116648",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical estimator context only; no reopening, closure, comment, or other mutation is planned."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
