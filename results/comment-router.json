@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-05T03:03:37.228Z",
+  "updated_at": "2026-09-05T03:03:09.708Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138365:5542959375:2026-09-04T21:54:48Z:clawsweeper_needs_human",
+      "comment_id": "5542959375",
+      "comment_version_key": "5542959375:2026-09-04T21:54:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138365#issuecomment-5542959375",
+      "comment_created_at": "2026-09-04T15:45:23Z",
+      "comment_updated_at": "2026-09-04T21:54:48Z",
+      "comment_body_sha256": "32e8f2313edb02f42680b5ed437673e2aced920a1a6cdb9d6cb1b1da168cd4c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138365,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A moved tag or GitHub read failure intentionally stops later writes without rolling back assets already uploaded, so operators may need the documented partial-publication recovery pro... (sha=b12f8ccbc2ad1dfef3403de8de81b35c81d1e585)",
+      "expected_head_sha": "b12f8ccbc2ad1dfef3403de8de81b35c81d1e585",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-04T21:59:33.715Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/release-linux-replay-reviewed",
+        "head_sha": "b12f8ccbc2ad1dfef3403de8de81b35c81d1e585",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138394:5543631825:2026-09-04T21:54:32Z:clawsweeper_needs_human",
       "comment_id": "5543631825",
@@ -33531,39 +33564,6 @@
       "status": "skipped",
       "processed_at": "2026-09-05T03:03:09.708Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137779:5534583775:2026-09-05T02:58:13Z:clawsweeper_needs_human",
-      "comment_id": "5534583775",
-      "comment_version_key": "5534583775:2026-09-05T02:58:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137779#issuecomment-5534583775",
-      "comment_created_at": "2026-09-04T01:57:49Z",
-      "comment_updated_at": "2026-09-05T02:58:13Z",
-      "comment_body_sha256": "baa79e2a197ba34f9d7136eae88a8ba85358339d0aa54bff5bf189e7d663edd0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137779,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured pre/post mock-gateway transcript supports the visible Telegram fix under repository polic...; Review finding: [P1] [P1] Preserve requester sandbox classification for hidden spawns — src/agents/openclaw-tools.ts:555 - [P1] [P1] Keep spawned runs visible to their initiating... (sha=691e6caccef9b40438638957966957daa7580d69)",
-      "expected_head_sha": "691e6caccef9b40438638957966957daa7580d69",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T03:03:37.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/visible-spawn-durable-parent-key-137690",
-        "head_sha": "691e6caccef9b40438638957966957daa7580d69",
-        "cluster_id": null,
-        "job_path": null
-      }
     }
   ]
 }
