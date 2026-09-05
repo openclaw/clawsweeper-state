@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-42986"
-mode: "plan"
-run_id: "33959210910"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33959210910"
+mode: "autonomous"
+run_id: "33959542486"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33959542486"
 head_sha: "6a56eee17378928c246602b6f85f52866f406983"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-05T10:28:40.878Z"
-canonical: "#42986"
-canonical_issue: "#42986"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-05T10:49:11.078Z"
+canonical: "https://github.com/openclaw/openclaw/issues/42986"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/42986"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33959210910](https://github.com/openclaw/clawsweeper/actions/runs/33959210910)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33959542486](https://github.com/openclaw/clawsweeper/actions/runs/33959542486)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #42986
+Canonical: https://github.com/openclaw/openclaw/issues/42986
 
 ## Summary
 
-Plan a narrow repair exposing Telegram’s existing persistent binding support. Source inspection matches the reported capability gap; executable reproduction remains pending because this read-only checkout lacks dependencies. No files or GitHub state changed.
+Source inspection supports a narrow capability-discovery repair. Implementation and reproduction are blocked by the read-only checkout and missing dependencies. Repair artifact prepared; no files or GitHub items changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Plan a narrow repair exposing Telegram’s existing persistent binding support. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #42986 | fix_needed | planned | canonical | Keep the issue open and prepare the bounded repair below. Implementation must first demonstrate a failing regression on refreshed main. Closure and merge are prohibited by this job. |
+| #42986 | fix_needed | planned | canonical | Keep the issue canonical and open. The source mismatch remains present, but a failing regression and repaired behavior have not been demonstrated. |
+| cluster:issue-openclaw-openclaw-42986 | build_fix_artifact | planned |  | A bounded executor can repair the shared discovery boundary after establishing the required failing regression. |
+| cluster:issue-openclaw-openclaw-42986 | open_fix_pr | blocked |  | Publication requires a writable, dependency-ready executor, demonstrated pre-fix failure and post-fix success, changed-gate validation, behavior proof, and a fresh canonical-PR check. |
 
 ## Needs Human
 
