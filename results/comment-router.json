@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T15:47:06.143Z",
+  "updated_at": "2026-09-05T15:47:55.473Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82105:4458886902:2026-09-05T10:06:40Z:clawsweeper_auto_repair",
-      "comment_id": "4458886902",
-      "comment_version_key": "4458886902:2026-09-05T10:06:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82105#issuecomment-4458886902",
-      "comment_created_at": "2026-05-15T10:10:25Z",
-      "comment_updated_at": "2026-09-05T10:06:40Z",
-      "comment_body_sha256": "167c31743dadc3a32b99071f6e5fec717a75dc14a8b889d98bd8a06849fead2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82105,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5a999dbd597d6ef062315c43b8d28eb354dd8922)",
-      "expected_head_sha": "5a999dbd597d6ef062315c43b8d28eb354dd8922",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T10:40:45.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docker-bundle-channel-voice-plugins",
-        "head_sha": "5a999dbd597d6ef062315c43b8d28eb354dd8922",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-08-30T03:33:43Z:clawsweeper_auto_repair",
       "comment_id": "5157206715",
@@ -32142,6 +32109,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139142:5552642415:2026-09-05T15:47:02Z:clawsweeper_needs_human",
+      "comment_id": "5552642415",
+      "comment_version_key": "5552642415:2026-09-05T15:47:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139142#issuecomment-5552642415",
+      "comment_created_at": "2026-09-05T14:57:12Z",
+      "comment_updated_at": "2026-09-05T15:47:02Z",
+      "comment_body_sha256": "27546612086976b86759c675e7b4016bf6b445fd1930102b062eec971abf4ac4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139142,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Untyped third-party callers relying on excluded channel, accountId, or writer fields will now use the factory’s bound scope; use of that undocumented override behavior outside bundled... (sha=2a37d56bf4ee906b510747309fbbb10498fa8c4d)",
+      "expected_head_sha": "2a37d56bf4ee906b510747309fbbb10498fa8c4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T15:47:55.473Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pairing-upsert-accountid",
+        "head_sha": "2a37d56bf4ee906b510747309fbbb10498fa8c4d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
