@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T23:48:44.049Z",
+  "updated_at": "2026-09-05T23:48:57.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123120:5554107968:2026-09-05T19:04:16Z:re_review",
-      "comment_id": "5554107968",
-      "comment_version_key": "5554107968:2026-09-05T19:04:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123120#issuecomment-5554107968",
-      "comment_created_at": "2026-09-05T19:04:16Z",
-      "comment_updated_at": "2026-09-05T19:04:16Z",
-      "comment_body_sha256": "05e6640cd6ca470a58545afe9d8f387868268bf3661cb2e4f9dc235091e31564",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123120,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T19:36:16.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/native-reasoning-delta-fastpath-v2",
-        "head_sha": "33b71756f698e22d11e4cde5cfa526159b178534",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139266:5554179858:2026-09-05T19:16:59Z:re_review",
       "comment_id": "5554179858",
@@ -32874,6 +32827,39 @@
         "kind": "pull_request",
         "branch": "steipete/ios-settings-into-dashboard",
         "head_sha": "c1252484e7e2be3cf298801e1f1d5279d7110f20",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139517:5555594772:2026-09-05T23:47:28Z:clawsweeper_needs_human",
+      "comment_id": "5555594772",
+      "comment_version_key": "5555594772:2026-09-05T23:47:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139517#issuecomment-5555594772",
+      "comment_created_at": "2026-09-05T23:47:28Z",
+      "comment_updated_at": "2026-09-05T23:47:28Z",
+      "comment_body_sha256": "aeea0cd5eb1a3e18b5a030a37bf8a1d08352e54a7ffca1707a629a255de7d570",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139517,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing commands requiring forced termination can now leave shutdown reporting cleanup failure even after their root exits; this conservative behavior is explicitly intended in the P... (sha=28e1c9676e6d9146a735ad9d8bd32f8bebb24892)",
+      "expected_head_sha": "28e1c9676e6d9146a735ad9d8bd32f8bebb24892",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T23:48:57.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-135868-s3-cleanup-evidence",
+        "head_sha": "28e1c9676e6d9146a735ad9d8bd32f8bebb24892",
         "cluster_id": null,
         "job_path": null
       }
