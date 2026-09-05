@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T12:43:43.777Z",
+  "updated_at": "2026-09-05T12:43:52.391Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/oracle:448:5547242177:2026-09-04T22:38:29Z:re_review",
-      "comment_id": "5547242177",
-      "comment_version_key": "5547242177:2026-09-04T22:38:29Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/448#issuecomment-5547242177",
-      "comment_created_at": "2026-09-04T22:38:29Z",
-      "comment_updated_at": "2026-09-04T22:38:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/oracle",
-      "issue_number": 448,
-      "author": "malvarezcastillo",
-      "author_id": 6960749,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T06:00:36.991Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138905:5549831096:2026-09-05T05:59:48Z:clawsweeper_auto_repair",
       "comment_id": "5549831096",
@@ -32783,6 +32756,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1447:5551896479:2026-09-05T12:42:55Z:re_review",
+      "comment_id": "5551896479",
+      "comment_version_key": "5551896479:2026-09-05T12:42:55Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1447#issuecomment-5551896479",
+      "comment_created_at": "2026-09-05T12:42:55Z",
+      "comment_updated_at": "2026-09-05T12:42:55Z",
+      "comment_body_sha256": "cb62e84b333844f390398146711a319e249a631f39eb458ae626897f7751f1ea",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1447,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T12:43:50.650Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repair-intake-store-materialization",
+        "head_sha": "7e9406ca78ad3ed1f4e690db6f83d65b9d3621c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
