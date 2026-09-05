@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139278",
+  "mode": "plan",
+  "run_id": "33988475877",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33988475877",
+  "head_sha": "0c05db6804c797e671d0c0a6c4e3c8a10d5993d5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139278.md",
+  "published_at": "2026-09-05T20:05:29.343Z",
+  "canonical": "#139278",
+  "canonical_issue": "#139278",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for #139278; keep #139279 separate. The reported coupling remains at the preflight main SHA. No changes, runtime tests, or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#139278",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "Speech-start interruption should be resolved independently of automatic responses. A bounded bug repair is supported; implementation ownership, failing/passing regression proof, and live verification remain prerequisites."
+    },
+    {
+      "target": "#139279",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "Related voice-consult surface, but distinct waiting-policy scope. Restoring speech-start interruption does not resolve this request."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
