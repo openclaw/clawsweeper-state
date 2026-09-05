@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T11:42:34.027Z",
+  "updated_at": "2026-09-05T11:44:32.464Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111899:5248004777:2026-08-11T01:30:17Z:re_review",
-      "comment_id": "5248004777",
-      "comment_version_key": "5248004777:2026-08-11T01:30:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111899#issuecomment-5248004777",
-      "comment_created_at": "2026-08-11T01:30:17Z",
-      "comment_updated_at": "2026-08-11T01:30:17Z",
-      "comment_body_sha256": "a635926486954f01e29c4ec54224cc014a150bd7a9b395b613558a0a19305f58",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111899,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T05:02:36.621Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:111899:5248532645:2026-08-11T03:07:02Z:re_review",
       "comment_id": "5248532645",
@@ -32949,6 +32922,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138852:5549537155:2026-09-05T11:43:27Z:clawsweeper_auto_repair",
+      "comment_id": "5549537155",
+      "comment_version_key": "5549537155:2026-09-05T11:43:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138852#issuecomment-5549537155",
+      "comment_created_at": "2026-09-05T05:06:24Z",
+      "comment_updated_at": "2026-09-05T11:43:27Z",
+      "comment_body_sha256": "bda57235bdae6a9d8f006645e7a16da683e4ec06dd3023017d25753b616a19cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=38fd219e39d895adf8423776dc877fe684a66ed3)",
+      "expected_head_sha": "38fd219e39d895adf8423776dc877fe684a66ed3",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-05T11:44:32.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-138099-device-alias-ui",
+        "head_sha": "38fd219e39d895adf8423776dc877fe684a66ed3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
