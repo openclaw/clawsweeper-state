@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33975543713",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33975543713",
+  "head_sha": "42226a81c43c2c8ded17a684a706e58f3a58577a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-09-05T16:21:03.317Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair artifact. Current source still omits the SCP deadline. Implementation and runtime reproduction are blocked by the read-only filesystem and missing dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "The source finding remains applicable. Continue with the existing staging owner and shared runner after restoring an executable checkout and completing the open-PR ownership check."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical proposal; retain attribution and its transfer-policy concerns without reopening or closing it again."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical related work by @zenglingbiao; it does not supply the remaining current-main deadline."
+    },
+    {
+      "target": "#132552",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Preserve the merged cancellation repair; do not classify it as a complete fix for the missing deadline."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is possible; local implementation, regression execution and PR readiness remain blocked by the execution environment."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
