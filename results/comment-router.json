@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T07:07:06.685Z",
+  "updated_at": "2026-09-05T07:07:21.174Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138579:5548594303:2026-09-05T02:00:41Z:re_review",
-      "comment_id": "5548594303",
-      "comment_version_key": "5548594303:2026-09-05T02:00:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138579#issuecomment-5548594303",
-      "comment_created_at": "2026-09-05T02:00:41Z",
-      "comment_updated_at": "2026-09-05T02:00:41Z",
-      "comment_body_sha256": "a0822ac268aa3f0a0eec7ca51fa47abc703eef1ec6d05e6d2845dc104f378b30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138579,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T02:01:51.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-138493-provenance-sender",
-        "head_sha": "33f3ccd129ce5d0091cb817b8473a4b85b9a0318",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138769:5548598464:2026-09-05T02:01:27Z:clawsweeper_auto_repair",
       "comment_id": "5548598464",
@@ -32327,6 +32280,39 @@
         "kind": "pull_request",
         "branch": "steipete/vitest5-migration-d2657a",
         "head_sha": "8dcb34735fbaedf243355cc3f1df77868a70f2f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138928:5550171493:2026-09-05T07:06:27Z:clawsweeper_needs_human",
+      "comment_id": "5550171493",
+      "comment_version_key": "5550171493:2026-09-05T07:06:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138928#issuecomment-5550171493",
+      "comment_created_at": "2026-09-05T07:06:27Z",
+      "comment_updated_at": "2026-09-05T07:06:27Z",
+      "comment_body_sha256": "5907cee38f022f1fb6cafa95add3bad27bff12f5ea63fccc37f0458a8579cc5d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138928,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence exercises memory-flush persistence followed by preflight against a SQLite fixture, but mocks agent execution and compacti... (sha=fa7d320f5294911a427092a9fc2d92d1540671d2)",
+      "expected_head_sha": "fa7d320f5294911a427092a9fc2d92d1540671d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T07:07:21.174Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-flush-stale-fresh-total-138871",
+        "head_sha": "fa7d320f5294911a427092a9fc2d92d1540671d2",
         "cluster_id": null,
         "job_path": null
       }
