@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:54:39.138Z",
+  "updated_at": "2026-09-05T00:54:43.729Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137594:5545650773:2026-09-04T19:44:28Z:re_review",
-      "comment_id": "5545650773",
-      "comment_version_key": "5545650773:2026-09-04T19:44:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137594#issuecomment-5545650773",
-      "comment_created_at": "2026-09-04T19:44:28Z",
-      "comment_updated_at": "2026-09-04T19:44:28Z",
-      "comment_body_sha256": "15c9b6dcd1e582bb3c4f29ef37ab65348e0728472badeba5ccca4fcf6ae0fe42",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137594,
-      "author": "ylcn91",
-      "author_id": 7249450,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T19:50:56.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-mcp-outage",
-        "head_sha": "0222bc70649949a7b22ffecae32c58fbeb3636fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133150:5467339050:2026-09-04T19:49:54Z:clawsweeper_auto_repair",
       "comment_id": "5467339050",
@@ -33168,6 +33121,39 @@
         "kind": "pull_request",
         "branch": "codex/stable-review-completion-cleanup-20260904",
         "head_sha": "3e861faee99b76a34c770b1aefdcf5b7b36bb651",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1860:5547904477:2026-09-05T00:53:54Z:clawsweeper_needs_human",
+      "comment_id": "5547904477",
+      "comment_version_key": "5547904477:2026-09-05T00:53:54Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1860#issuecomment-5547904477",
+      "comment_created_at": "2026-09-05T00:08:23Z",
+      "comment_updated_at": "2026-09-05T00:53:54Z",
+      "comment_body_sha256": "7a16de30df6590570abf82c0210a243476fcde98aef560912dbf0e62e0b54f38",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1860,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded synthetic merge tests fetched main rather than the frozen B3 base named in the qualification record; results from that different tree cannot alone certify frozen-B3 quali... (sha=f97e3403569024e8348799473887a1448c45bec5)",
+      "expected_head_sha": "f97e3403569024e8348799473887a1448c45bec5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T00:54:43.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "integration-v2/pr-1852-1b2d8fbe",
+        "head_sha": "f97e3403569024e8348799473887a1448c45bec5",
         "cluster_id": null,
         "job_path": null
       }
