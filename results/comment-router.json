@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T09:10:19.065Z",
+  "updated_at": "2026-09-05T09:10:32.373Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138820:5549050278:2026-09-05T03:29:21Z:re_review",
-      "comment_id": "5549050278",
-      "comment_version_key": "5549050278:2026-09-05T03:29:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138820#issuecomment-5549050278",
-      "comment_created_at": "2026-09-05T03:29:21Z",
-      "comment_updated_at": "2026-09-05T03:29:21Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138820,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T03:40:01.625Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-command-session-authority-20260905",
-        "head_sha": "b2abfc07617da32fe257d9c0177f8dea14b505e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136310:5549050296:2026-09-05T03:29:22Z:re_review",
       "comment_id": "5549050296",
@@ -32445,6 +32398,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T09:10:19.065Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138960:5550791946:2026-09-05T09:09:35Z:clawsweeper_needs_human",
+      "comment_id": "5550791946",
+      "comment_version_key": "5550791946:2026-09-05T09:09:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138960#issuecomment-5550791946",
+      "comment_created_at": "2026-09-05T09:09:35Z",
+      "comment_updated_at": "2026-09-05T09:09:35Z",
+      "comment_body_sha256": "11f0a31ebba509311ba9ec9cbb390f0ab11cb4cb6bbdb05815eaee4e9dbedd9c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138960,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct Kysely upstream-source verification remains a reviewer limitation; the assessment uses the existing adapter, its contract tests, and the captured native-run report. (sha=c95ce195553c493a24d7a4ac827ec0d990bf8d4d)",
+      "expected_head_sha": "c95ce195553c493a24d7a4ac827ec0d990bf8d4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T09:10:32.373Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sqlite-goal-claw-workspace",
+        "head_sha": "c95ce195553c493a24d7a4ac827ec0d990bf8d4d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
