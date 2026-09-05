@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T01:10:17.643Z",
+  "updated_at": "2026-09-05T01:11:16.210Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137798:5534692584:2026-09-04T19:46:56Z:clawsweeper_needs_human",
-      "comment_id": "5534692584",
-      "comment_version_key": "5534692584:2026-09-04T19:46:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137798#issuecomment-5534692584",
-      "comment_created_at": "2026-09-04T02:12:37Z",
-      "comment_updated_at": "2026-09-04T19:46:56Z",
-      "comment_body_sha256": "eb6920ad31936165af28300e45d661b9013132760f86fb66f660962b9e3cfb1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137798,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Direct upstream source/docs inspection for @anthropic-ai/claude-agent-sdk 0.3.243 was unavailable because DNS failed; the unchanged result shape and supplied production-artifact trace... (sha=b649c24a2bcd06345afb182a303603cdb0ebc520)",
-      "expected_head_sha": "b649c24a2bcd06345afb182a303603cdb0ebc520",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:53:57.888Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-user-input-validation-detail",
-        "head_sha": "b649c24a2bcd06345afb182a303603cdb0ebc520",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1836:5545733653:2026-09-04T19:52:44Z:clawsweeper_auto_repair",
       "comment_id": "5545733653",
@@ -33317,6 +33284,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138718:5548312212:2026-09-05T01:10:26Z:re_review",
+      "comment_id": "5548312212",
+      "comment_version_key": "5548312212:2026-09-05T01:10:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138718#issuecomment-5548312212",
+      "comment_created_at": "2026-09-05T01:10:26Z",
+      "comment_updated_at": "2026-09-05T01:10:26Z",
+      "comment_body_sha256": "2b0df167b07f5ce38913e627215ac9358916e92830f289a055275cb3c85af3f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138718,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T01:11:14.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hosted-periphery-routing",
+        "head_sha": "a69df926562c7763d6bc779906ff2c7470b40110",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
