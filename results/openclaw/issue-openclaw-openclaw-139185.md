@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139185"
-mode: "plan"
-run_id: "33977939017"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33977939017"
+mode: "autonomous"
+run_id: "33975570410"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33975570410"
 head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-05T16:34:12.134Z"
-canonical: "#139185"
-canonical_issue: "#139185"
+published_at: "2026-09-05T16:23:36.469Z"
+canonical: "https://github.com/openclaw/openclaw/issues/139185"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/139185"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33977939017](https://github.com/openclaw/clawsweeper/actions/runs/33977939017)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33975570410](https://github.com/openclaw/clawsweeper/actions/runs/33975570410)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #139185
+Canonical: https://github.com/openclaw/openclaw/issues/139185
 
 ## Summary
 
-Plan a shared Git-path repair for #139185. Current-source replay reproduces the representation mismatch. Native Windows/MSYS2 verification and existing-PR discovery remain pending. No files or GitHub state changed.
+Prepared a scoped repair artifact. Source-level simulation reproduces the wrong-drive expansion on the supplied main SHA. No files changed: read-only storage, missing dependencies, and unavailable native Windows/MSYS2 proof block implementation and validation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Plan a shared Git-path repair for #139185. Current-source replay reproduces the 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139185 | fix_needed | planned | canonical | The reported filesystem boundary still needs repair. Keep the issue open and implement one shared, path-field-specific conversion after obtaining the executable contract and failing owner-boundary regression. |
+| #139185 | fix_needed | planned | canonical | The reported Git/native-path mismatch remains present at the inspected boundaries. Keep the issue open and carry its repair through one implementation PR. |
+| cluster:issue-openclaw-openclaw-139185 | build_fix_artifact | planned |  | A narrow shared-boundary repair remains appropriate, conditional on verifying the selected MSYS2 executable's path-output contract before editing. |
+| cluster:issue-openclaw-openclaw-139185 | open_fix_pr | blocked |  | Blocked on implementing and validating the canonical fix in a writable environment, obtaining Windows/MSYS2 proof, and refreshing competing-PR discovery. The executor must satisfy these prerequisites before opening or updating the single authorized PR. |
 
 ## Needs Human
 
