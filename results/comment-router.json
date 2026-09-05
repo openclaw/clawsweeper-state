@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T06:49:43.738Z",
+  "updated_at": "2026-09-05T06:49:48.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138322:5548471342:2026-09-05T01:38:22Z:re_review",
-      "comment_id": "5548471342",
-      "comment_version_key": "5548471342:2026-09-05T01:38:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138322#issuecomment-5548471342",
-      "comment_created_at": "2026-09-05T01:38:22Z",
-      "comment_updated_at": "2026-09-05T01:38:22Z",
-      "comment_body_sha256": "a334d36d25e7506531390711c31d743d8d60d723404dd406cfaedf01c4eeda4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138322,
-      "author": "Amazingjun-j",
-      "author_id": 84921700,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T01:39:35.313Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-remove-worker-placement-138299",
-        "head_sha": "32cb40d62de1af0a123e9b06b86d056f2ed1ab21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132591:5462560834:2026-09-05T01:34:54Z:clawsweeper_needs_human",
       "comment_id": "5462560834",
@@ -32518,6 +32471,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-136452-heartbeat-byte-cap",
         "head_sha": "bf0d7d489021df6c594478101f2706a322e97103",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138881:5550047359:2026-09-05T06:42:31Z:clawsweeper_needs_human",
+      "comment_id": "5550047359",
+      "comment_version_key": "5550047359:2026-09-05T06:42:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138881#issuecomment-5550047359",
+      "comment_created_at": "2026-09-05T06:42:31Z",
+      "comment_updated_at": "2026-09-05T06:42:31Z",
+      "comment_body_sha256": "d3c65141689f20f9eae14a272e56de7a7ede5928190d7da7107e2e07a8eb9480",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence exercises the isolated formatter and mocked publication tests, but does not show sessions.github.publish reaching an obse... (sha=3fd1a3676688d38222a9dc81551358bc54147170)",
+      "expected_head_sha": "3fd1a3676688d38222a9dc81551358bc54147170",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T06:49:48.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-publication-footer-backtracking",
+        "head_sha": "3fd1a3676688d38222a9dc81551358bc54147170",
         "cluster_id": null,
         "job_path": null
       }
