@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T03:52:53.905Z",
+  "updated_at": "2026-09-05T03:53:31.428Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133087:5466867664:2026-09-04T22:46:13Z:clawsweeper_needs_human",
-      "comment_id": "5466867664",
-      "comment_version_key": "5466867664:2026-09-04T22:46:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133087#issuecomment-5466867664",
-      "comment_created_at": "2026-08-30T05:14:21Z",
-      "comment_updated_at": "2026-09-04T22:46:13Z",
-      "comment_body_sha256": "35d764d22f2f4749e47e8d2f42adbe714252d52fd2a7ae6ade8d96812567aa24",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133087,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a4400c8f1e9a2f5dd83c47e7f93df9531025326b)",
-      "expected_head_sha": "a4400c8f1e9a2f5dd83c47e7f93df9531025326b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T22:49:40.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/feature-auth-profile-reasons-20260830",
-        "head_sha": "a4400c8f1e9a2f5dd83c47e7f93df9531025326b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133086:5466882193:2026-09-04T22:42:22Z:clawsweeper_needs_human",
       "comment_id": "5466882193",
@@ -33353,6 +33320,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135889:5549166634:2026-09-05T03:52:39Z:re_review",
+      "comment_id": "5549166634",
+      "comment_version_key": "5549166634:2026-09-05T03:52:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135889#issuecomment-5549166634",
+      "comment_created_at": "2026-09-05T03:52:39Z",
+      "comment_updated_at": "2026-09-05T03:52:39Z",
+      "comment_body_sha256": "b9bb12493a0492b2edd7cbd438391dda4b8c5b31f7f62fdba993a36c05fb817a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135889,
+      "author": "TheArchitectit",
+      "author_id": 241862351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head updated to `bef7aac77fe`. round-9 note added to the pr body documenting both p2 budget fixes (usage-on-throw retention via the `onerror` hook; typed `crontokenbudgetexhaustederror` carrying `usagetotal` through the run boundary so `detectbudgetexhausted` classifies `budget-exhausted`), with failing-first coverage for each (verified red-without-fix → green-with-fix). budget-carry suite 5/5, tsc core zero errors in touched files, oxfmt + oxlint clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T03:53:29.528Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/automation-single-pane",
+        "head_sha": "bef7aac77fef57f9868680d571989fc3c67478a6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
