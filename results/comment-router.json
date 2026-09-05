@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T22:25:31.451Z",
+  "updated_at": "2026-09-05T22:25:42.878Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139033:5553704561:2026-09-05T17:56:19Z:re_review",
-      "comment_id": "5553704561",
-      "comment_version_key": "5553704561:2026-09-05T17:56:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139033#issuecomment-5553704561",
-      "comment_created_at": "2026-09-05T17:56:19Z",
-      "comment_updated_at": "2026-09-05T17:56:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139033,
-      "author": "jcorrius",
-      "author_id": 77185,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T17:57:12.665Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/i18n-catalan",
-        "head_sha": "80e3d1d384ccd751ea994da34b14cb8ff7217cac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138264:5553706971:2026-09-05T17:56:43Z:re_review",
       "comment_id": "5553706971",
@@ -33369,6 +33322,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T22:25:31.451Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135599:5554707035:2026-09-05T22:24:38Z:clawsweeper_needs_human",
+      "comment_id": "5554707035",
+      "comment_version_key": "5554707035:2026-09-05T22:24:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135599#issuecomment-5554707035",
+      "comment_created_at": "2026-09-05T20:52:35Z",
+      "comment_updated_at": "2026-09-05T22:24:38Z",
+      "comment_body_sha256": "6edb4c1e6bcd2f5e4608f77a2956b065cd9e2d7e4d7f0635c3bf33bd921ec1ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135599,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the scoped retained/unactivated/revoked callback cases use a substituted dispatch sink; captured earlier live-r...; Review finding: [P2] Prevent fixed facade properties from pinning a retired generation — src/plugin-sdk/facade-loader.ts:95-102 - [medium] Retained authority lacks final-effect ve... (sha=813938ebaa2a3ab695763eb442d5401132ce8c3f)",
+      "expected_head_sha": "813938ebaa2a3ab695763eb442d5401132ce8c3f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T22:25:42.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-lifecycle-reload",
+        "head_sha": "813938ebaa2a3ab695763eb442d5401132ce8c3f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
