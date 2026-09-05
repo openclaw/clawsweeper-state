@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-85687"
-mode: "plan"
-run_id: "33971797574"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33971797574"
+mode: "autonomous"
+run_id: "33970683750"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33970683750"
 head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-05T14:32:28.750Z"
-canonical: "#85687"
-canonical_issue: "#85687"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-05T14:13:17.652Z"
+canonical: "https://github.com/openclaw/openclaw/issues/85687"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/85687"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33971797574](https://github.com/openclaw/clawsweeper/actions/runs/33971797574)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33970683750](https://github.com/openclaw/clawsweeper/actions/runs/33970683750)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #85687
+Canonical: https://github.com/openclaw/openclaw/issues/85687
 
 ## Summary
 
-Prepared a conditional repair plan for #85687. No files or GitHub state changed. Runtime reproduction, existing-PR discovery, and required Codex source inspection remain incomplete; no compatibility or readiness verdict is issued.
+Prepared a narrow fix artifact. Implementation and reproduction are blocked by the read-only checkout, missing dependencies, and missing sibling Codex source. No files or GitHub state changed; no tests reached collection.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Prepared a conditional repair plan for #85687. No files or GitHub state changed.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #85687 | fix_needed | planned | canonical | Retain the canonical issue and pursue the job's bounded reproduction-first repair. Missing execution prerequisites do not require a product decision or security escalation. |
+| #85687 | fix_needed | planned | canonical | Current source supports the reported discrepancy, but the required composed failing reproduction must succeed before production edits or PR creation. |
+| cluster:issue-openclaw-openclaw-85687 | build_fix_artifact | planned |  | Plan is ready for a writable executor. Implementation remains blocked until dependencies and required Codex source are available, the fixing-PR recheck completes, and the production-order regression reproduces on current main. |
 
 ## Needs Human
 
