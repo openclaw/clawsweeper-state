@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T20:44:01.722Z",
+  "updated_at": "2026-09-05T20:44:08.418Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/graincrawl:88:5464254677:2026-09-05T15:01:28Z:clawsweeper_needs_human",
-      "comment_id": "5464254677",
-      "comment_version_key": "5464254677:2026-09-05T15:01:28Z",
-      "comment_url": "https://github.com/openclaw/graincrawl/pull/88#issuecomment-5464254677",
-      "comment_created_at": "2026-08-29T18:57:50Z",
-      "comment_updated_at": "2026-09-05T15:01:28Z",
-      "comment_body_sha256": "ca7b4b85af5620d817e4bfafe3f3273a8151f02a5a1ff24d0b4d1f0651ca1312",
-      "repo": "openclaw/graincrawl",
-      "issue_number": 88,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sync jobs will stop at the first enabled transcript or panel fetch failure, retaining earlier writes but deferring later documents and deletion updates until a successful ret... (sha=abc7092b8ce43e81f92d773529ea07c4b9f4f1e5)",
-      "expected_head_sha": "abc7092b8ce43e81f92d773529ea07c4b9f4f1e5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T15:05:23.721Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f002-private-api-fetch-errors",
-        "head_sha": "abc7092b8ce43e81f92d773529ea07c4b9f4f1e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/kova:107:5549892779:2026-09-05T15:01:44Z:clawsweeper_auto_repair",
       "comment_id": "5549892779",
@@ -33169,6 +33136,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139333:5554655736:2026-09-05T20:43:17Z:re_review",
+      "comment_id": "5554655736",
+      "comment_version_key": "5554655736:2026-09-05T20:43:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139333#issuecomment-5554655736",
+      "comment_created_at": "2026-09-05T20:43:17Z",
+      "comment_updated_at": "2026-09-05T20:43:17Z",
+      "comment_body_sha256": "c9a1e6131a62504edd2c13109146a3ba2d0022f4cd6b9fd6849e0c4aa6628998",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139333,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T20:44:06.212Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-135868-s1-daemon-env",
+        "head_sha": "14e69d9d8a1a17e48e5e4de07ec744aeee47d46c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
