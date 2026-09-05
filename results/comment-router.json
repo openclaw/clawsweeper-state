@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T08:50:43.764Z",
+  "updated_at": "2026-09-05T08:50:58.549Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136639:5516898774:2026-09-05T02:57:01Z:clawsweeper_needs_human",
-      "comment_id": "5516898774",
-      "comment_version_key": "5516898774:2026-09-05T02:57:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136639#issuecomment-5516898774",
-      "comment_created_at": "2026-09-02T21:47:55Z",
-      "comment_updated_at": "2026-09-05T02:57:01Z",
-      "comment_body_sha256": "b3bf8ba48ef6b6efd8fd890e8239ec984b117a5e2d69356b5ced59c09269bdaf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136639,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing pruneAfter settings will archive durable conversations rather than erase them, retaining more data for operators relying on expiry or space reclamation; the focused-head olde... (sha=1f96c26b915f15ca7caadd51824d26cad627cdc0)",
-      "expected_head_sha": "1f96c26b915f15ca7caadd51824d26cad627cdc0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T03:03:41.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/session-cap-and-archiving-f99db5",
-        "head_sha": "1f96c26b915f15ca7caadd51824d26cad627cdc0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136833:5519282917:2026-09-05T03:00:27Z:clawsweeper_auto_repair",
       "comment_id": "5519282917",
@@ -32316,6 +32283,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138946:5550695340:2026-09-05T08:50:02Z:re_review",
+      "comment_id": "5550695340",
+      "comment_version_key": "5550695340:2026-09-05T08:50:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138946#issuecomment-5550695340",
+      "comment_created_at": "2026-09-05T08:50:02Z",
+      "comment_updated_at": "2026-09-05T08:50:02Z",
+      "comment_body_sha256": "66cf5c8618f526fb903767c946f3eb5e4c00f6ce7701d2581fc45fbe38ba025d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138946,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T08:50:55.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-cleanup-metadata-projection",
+        "head_sha": "6da3302bfea01f85a9b73eacc2f87b4425927a21",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
