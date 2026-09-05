@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T14:46:02.985Z",
+  "updated_at": "2026-09-05T14:46:51.799Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5340639896:2026-08-19T10:10:59Z:re_review",
-      "comment_id": "5340639896",
-      "comment_version_key": "5340639896:2026-08-19T10:10:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5340639896",
-      "comment_created_at": "2026-08-19T10:10:59Z",
-      "comment_updated_at": "2026-08-19T10:10:59Z",
-      "comment_body_sha256": "cede761f785a3a0fde4b6bb9c14f0572192579d7ce793c7b58249b4af45df042",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T09:14:39.674Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5344826946:2026-08-19T16:11:14Z:re_review",
       "comment_id": "5344826946",
@@ -32067,6 +32040,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T14:46:02.985Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136518:5514537216:2026-09-05T14:45:52Z:clawsweeper_needs_human",
+      "comment_id": "5514537216",
+      "comment_version_key": "5514537216:2026-09-05T14:45:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136518#issuecomment-5514537216",
+      "comment_created_at": "2026-09-02T18:39:19Z",
+      "comment_updated_at": "2026-09-05T14:45:52Z",
+      "comment_body_sha256": "92fe766244e725c1bdc69cbe833642be60c39ab3ccdc350de947a372b3e0b77c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136518,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured macOS terminal run exercises the production URL predicate, but never exercises CanvasWindowController’s WebKit delegate o... (sha=e3c3ed8ba446b4feda61cda1dbdcabb401061de1)",
+      "expected_head_sha": "e3c3ed8ba446b4feda61cda1dbdcabb401061de1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T14:46:51.799Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-canvas-url-scheme-allowlist",
+        "head_sha": "e3c3ed8ba446b4feda61cda1dbdcabb401061de1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
