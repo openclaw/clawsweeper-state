@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T04:45:09.512Z",
+  "updated_at": "2026-09-05T04:46:18.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:125336:5547538190:2026-09-04T23:16:40Z:re_review",
-      "comment_id": "5547538190",
-      "comment_version_key": "5547538190:2026-09-04T23:16:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125336#issuecomment-5547538190",
-      "comment_created_at": "2026-09-04T23:16:40Z",
-      "comment_updated_at": "2026-09-04T23:16:40Z",
-      "comment_body_sha256": "fdf2fa5dfcc9f7f01e9d7447a7060cd7256fc7701f1398c45819e782ad2532c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125336,
-      "author": "obviyus",
-      "author_id": 22031114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T23:39:14.964Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reset-boundary-empty-transcript-header",
-        "head_sha": "d424ad6f14c6b80550322bd7d5bb1a9789d14374",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138473:5547547334:2026-09-04T23:17:59Z:re_review",
       "comment_id": "5547547334",
@@ -33483,6 +33436,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T04:45:09.512Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138732:5548178973:2026-09-05T04:45:22Z:clawsweeper_needs_human",
+      "comment_id": "5548178973",
+      "comment_version_key": "5548178973:2026-09-05T04:45:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138732#issuecomment-5548178973",
+      "comment_created_at": "2026-09-05T00:47:56Z",
+      "comment_updated_at": "2026-09-05T04:45:22Z",
+      "comment_body_sha256": "2d28d1e93f7d4274a8d4a6f5691e4c2378a9808d6a9f34b3984708ee94d999e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138732,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A silently broken socket still marked READY now ignores network wakes, while Gateway-only recovery during sustained failures can wait 30–60 seconds plus connection time; candidate nat... (sha=55c03e897943a43fe81e9f41b0d6fa5f80968bde)",
+      "expected_head_sha": "55c03e897943a43fe81e9f41b0d6fa5f80968bde",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T04:46:18.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/android-reconnect-minimal",
+        "head_sha": "55c03e897943a43fe81e9f41b0d6fa5f80968bde",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
