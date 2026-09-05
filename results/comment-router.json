@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:52:28.676Z",
+  "updated_at": "2026-09-05T00:52:50.337Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138545:5545606062:2026-09-04T19:39:56Z:clawsweeper_needs_human",
-      "comment_id": "5545606062",
-      "comment_version_key": "5545606062:2026-09-04T19:39:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138545#issuecomment-5545606062",
-      "comment_created_at": "2026-09-04T19:39:56Z",
-      "comment_updated_at": "2026-09-04T19:39:56Z",
-      "comment_body_sha256": "35802cdda3e802a53e8a69fa1504f5623e30ee9cf7f3639817a783bc54f7339c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138545,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Telegram turns use the changed shared text-command path for same-line directives, but the available evidence has no Test Server event trace showing the task reaches the agent and retu... (sha=1051fc53cdad07dc4b87213621e745ca6ea10303)",
-      "expected_head_sha": "1051fc53cdad07dc4b87213621e745ca6ea10303",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:41:21.210Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/r3-text-commands",
-        "head_sha": "1051fc53cdad07dc4b87213621e745ca6ea10303",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138475:5545624427:2026-09-04T19:41:45Z:clawsweeper_needs_human",
       "comment_id": "5545624427",
@@ -33291,6 +33258,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136639:5548205793:2026-09-05T00:51:56Z:re_review",
+      "comment_id": "5548205793",
+      "comment_version_key": "5548205793:2026-09-05T00:51:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136639#issuecomment-5548205793",
+      "comment_created_at": "2026-09-05T00:51:56Z",
+      "comment_updated_at": "2026-09-05T00:51:56Z",
+      "comment_body_sha256": "8430f1312b94549bda12bc30a9ad30d86864f8a73034c63643c9f996b5da8470",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136639,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:52:47.374Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/session-cap-and-archiving-f99db5",
+        "head_sha": "1f96c26b915f15ca7caadd51824d26cad627cdc0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
