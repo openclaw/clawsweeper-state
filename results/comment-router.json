@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T18:53:58.043Z",
+  "updated_at": "2026-09-05T18:54:50.086Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1334:5552216329:2026-09-05T13:43:04Z:clawsweeper_needs_human",
-      "comment_id": "5552216329",
-      "comment_version_key": "5552216329:2026-09-05T13:43:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1334#issuecomment-5552216329",
-      "comment_created_at": "2026-09-05T13:43:04Z",
-      "comment_updated_at": "2026-09-05T13:43:04Z",
-      "comment_body_sha256": "f2545e1a84f849064273bcd84725525d31a979573bb1089536ef9fa73552bf4b",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1334,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: StartGatewayStep's post-install start and health transition is exercised only through a fake command runner; no submitted current-head Windows/... (sha=f8f43dc6871221729f508f9ffe019527cbd3635d)",
-      "expected_head_sha": "f8f43dc6871221729f508f9ffe019527cbd3635d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T13:43:59.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/start-gateway-port-heuristic",
-        "head_sha": "f8f43dc6871221729f508f9ffe019527cbd3635d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-09-05T13:42:05Z:clawsweeper_auto_repair",
       "comment_id": "4591541970",
@@ -32328,6 +32295,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138881:5554046820:2026-09-05T18:53:54Z:re_review",
+      "comment_id": "5554046820",
+      "comment_version_key": "5554046820:2026-09-05T18:53:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138881#issuecomment-5554046820",
+      "comment_created_at": "2026-09-05T18:53:54Z",
+      "comment_updated_at": "2026-09-05T18:53:54Z",
+      "comment_body_sha256": "7916ba7f0d0e45c758f541dbfb7e63739036706e9ae0c1f4df88f10c7918a3e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138881,
+      "author": "lzhan011",
+      "author_id": 35493221,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T18:54:48.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-publication-footer-backtracking",
+        "head_sha": "3fd1a3676688d38222a9dc81551358bc54147170",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
