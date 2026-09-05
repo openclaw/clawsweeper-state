@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T21:13:30.694Z",
+  "updated_at": "2026-09-05T21:13:49.780Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138085:5553047640:2026-09-05T16:05:27Z:re_review",
-      "comment_id": "5553047640",
-      "comment_version_key": "5553047640:2026-09-05T16:05:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138085#issuecomment-5553047640",
-      "comment_created_at": "2026-09-05T16:05:27Z",
-      "comment_updated_at": "2026-09-05T16:05:27Z",
-      "comment_body_sha256": "eee5d158803a3f7f4a745386a37cae152efa661e550d8f9c414870e532124ffc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138085,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T16:06:17.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/docker-package-exact-identity",
-        "head_sha": "558a43c21ac27b453a17ac4e91e2ac2a4e3a7332",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139200:5553048419:2026-09-05T16:05:35Z:clawsweeper_needs_human",
       "comment_id": "5553048419",
@@ -33172,6 +33125,39 @@
         "kind": "pull_request",
         "branch": "codex/team-session-link-hovercard",
         "head_sha": "9f28e8cdb90715abc02d60b9763bf8448aea8fb2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139396:5554819269:2026-09-05T21:12:56Z:clawsweeper_auto_repair",
+      "comment_id": "5554819269",
+      "comment_version_key": "5554819269:2026-09-05T21:12:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139396#issuecomment-5554819269",
+      "comment_created_at": "2026-09-05T21:12:56Z",
+      "comment_updated_at": "2026-09-05T21:12:56Z",
+      "comment_body_sha256": "30707ee810585f65f311ad4f4b583651e250f6d906e93c5bf8fc8af803ee5ea0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139396,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b73c08da4f6e4ff31acdec6263ca212a4c9a3922)",
+      "expected_head_sha": "b73c08da4f6e4ff31acdec6263ca212a4c9a3922",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T21:13:49.780Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-persist-card-action-claims",
+        "head_sha": "b73c08da4f6e4ff31acdec6263ca212a4c9a3922",
         "cluster_id": null,
         "job_path": null
       }
