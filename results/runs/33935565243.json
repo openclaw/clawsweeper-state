@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-114067",
+  "mode": "autonomous",
+  "run_id": "33935565243",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33935565243",
+  "head_sha": "a3d052f35a888a41ae3518465ca0a53df74c8077",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-114067.md",
+  "published_at": "2026-09-05T01:28:51.022Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/114067",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/114067",
+  "canonical_pr": null,
+  "summary": "The configuration import-before-decision defect remains on preflight main b1fcd6741e593c15cc03cf7cb1a88a58f1aa8253. Prepared a narrow new-PR repair plan preserving contributor credit. Local implementation and runtime validation are blocked by the read-only checkout and missing dependencies/build artifacts. No files or GitHub state changed; no closure or merge recommended.",
+  "actions": [
+    {
+      "target": "#114067",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#114067",
+      "candidate_fix": null,
+      "reason": "The reported unnecessary work remains identifiable on current main, and no viable open canonical PR appears in the hydrated inventory. Keep the issue open while implementing and validating the narrow repair."
+    },
+    {
+      "target": "#114068",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#114067",
+      "candidate_fix": null,
+      "reason": "Preserve the closed PR and its contributor credit. Its findings inform the new issue-implementation plan; this lane does not reopen or close historical work."
+    },
+    {
+      "target": "#85396",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#114067",
+      "candidate_fix": null,
+      "reason": "No action against an already-closed PR. Carry forward relevant historical context without claiming its implementation landed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-114067",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#114067",
+      "candidate_fix": null,
+      "reason": "Return an executable plan for a writable executor. Reuse the designated branch, create at most one implementation PR, and retain all proof gates without expanding into a configuration-system rewrite."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#114067",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
