@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138871",
+  "mode": "plan",
+  "run_id": "33950448445",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33950448445",
+  "head_sha": "6a3ee13a060a6de078e372e7da666cc929f56cd9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138871.md",
+  "published_at": "2026-09-05T06:47:21.975Z",
+  "canonical": "#138871",
+  "canonical_issue": "#138871",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair plan for #138871 against preflight main bfbf880320bf77ecaaa43690a437c0f90c32510c. No code or GitHub changes made. Reproduction, implementation, and validation remain pending; this worker has a read-only filesystem and no sibling Codex checkout.",
+  "actions": [
+    {
+      "target": "#138871",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138871",
+      "candidate_fix": null,
+      "reason": "The job authorizes this bounded bug repair. Establish the failing ordered reproduction before editing production code; preserve freshness semantics and existing maintenance ownership."
+    },
+    {
+      "target": "#126838",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138871",
+      "candidate_fix": null,
+      "reason": "Different scope from stale-anchor promotion. Keep its policy decision outside this bug-only repair."
+    },
+    {
+      "target": "#137836",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this item to central OpenClaw security handling despite the artifact's false sensitivity flag. No mutation or repair is proposed."
+    },
+    {
+      "target": "#88138",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical ref only. No additional close, comment, label, merge, or fix action."
+    },
+    {
+      "target": "#15153",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; it does not establish a duplicate of the ordered maintenance defect."
+    },
+    {
+      "target": "#91716",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": null,
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical accounting context; preserve the distinction between billing totals and context snapshots."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 2,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
