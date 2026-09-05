@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138999"
-mode: "autonomous"
-run_id: "33961879632"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33961879632"
-head_sha: "7b776f5d6df93c3b7f101ffb33f6461fe7411e3d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T11:04:56.974Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138999"
+mode: "plan"
+run_id: "33963265552"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33963265552"
+head_sha: "a9ed9b5ba7eb12357da7cc2360d87cc5397c3c36"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T11:33:23.210Z"
+canonical: "#138999"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138999"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33961879632](https://github.com/openclaw/clawsweeper/actions/runs/33961879632)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33963265552](https://github.com/openclaw/clawsweeper/actions/runs/33963265552)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138999
+Canonical: #138999
 
 ## Summary
 
-Source inspection supports the reported lifecycle defect on preflight main. Implementation and runtime reproduction are blocked by the read-only filesystem and missing dependencies. No files or GitHub items changed; a narrow executor fix plan is provided.
+Prepared a lifecycle repair plan for historical browser previews. Runtime reproduction, existing-PR ownership checks, and before/after UI proof remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports the reported lifecycle defect on preflight main. Impl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138999 | fix_needed | blocked | canonical | Local reproduction and implementation require a writable executor with installed dependencies. This is an environment blocker, not an unresolved maintainer decision. |
-| cluster:issue-openclaw-openclaw-138999 | build_fix_artifact | planned | canonical | Artifact preparation is complete; applying and validating it remains blocked in this worker. |
+| #138999 | fix_needed | planned | canonical | Retain the canonical bug report and plan the bounded owner repair. No fixing PR has been established. Reproduction and validation must precede implementation and publication. |
 
 ## Needs Human
 
