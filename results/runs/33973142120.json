@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139109",
+  "mode": "plan",
+  "run_id": "33973142120",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33973142120",
+  "head_sha": "42226a81c43c2c8ded17a684a706e58f3a58577a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139109.md",
+  "published_at": "2026-09-05T15:00:31.166Z",
+  "canonical": "#139109",
+  "canonical_issue": "#139109",
+  "canonical_pr": null,
+  "summary": "Reproduced the boolean launchd parser failure on the preflight main commit. Prepared a narrow repair plan; repository files and GitHub remain unchanged. Native macOS proof and repository validation remain pending. The separate credential-handling PR is conservatively routed out of this repair lane.",
+  "actions": [
+    {
+      "target": "#139109",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139109",
+      "candidate_fix": null,
+      "reason": "The shared parser is the repair boundary. Extend its existing comparisons without changing service ownership, activation policy, configuration, or persistence."
+    },
+    {
+      "target": "#136257",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Conservatively refer this separate credential-handling item to central OpenClaw security handling without mutation. This is not a vulnerability finding or a Codex runtime verdict, and it does not block the independent launchd repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

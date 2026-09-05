@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139109"
-mode: "autonomous"
-run_id: "33970234620"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33970234620"
+mode: "plan"
+run_id: "33973142120"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33973142120"
 head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T14:29:13.647Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139109"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139109"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T15:00:31.166Z"
+canonical: "#139109"
+canonical_issue: "#139109"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33970234620](https://github.com/openclaw/clawsweeper/actions/runs/33970234620)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33973142120](https://github.com/openclaw/clawsweeper/actions/runs/33973142120)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139109
+Canonical: #139109
 
 ## Summary
 
-Reproduced both boolean parsing failures on checkout 44378c46bb04e1354f42a5826be76e1fd920c760. Narrow fix artifact prepared. Implementation is blocked by the read-only checkout, missing dependencies, unavailable current-main verification, and missing native macOS proof. No files or GitHub state changed.
+Reproduced the boolean launchd parser failure on the preflight main commit. Prepared a narrow repair plan; repository files and GitHub remain unchanged. Native macOS proof and repository validation remain pending. The separate credential-handling PR is conservatively routed out of this repair lane.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Reproduced both boolean parsing failures on checkout 44378c46bb04e1354f42a5826be
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139109 | fix_needed | planned | canonical | Keep the canonical issue open and repair the shared parsing boundary after the executor verifies current main and clears the environment blockers. |
-| #136257 | keep_related | planned | related | Retain the linked context PR outside this narrow repair. Do not replace it, borrow its changes, or close it. |
-| cluster:issue-openclaw-openclaw-139109 | build_fix_artifact | planned |  | The artifact is available for the deterministic executor; no locally validated branch or completed implementation is claimed. |
+| #139109 | fix_needed | planned | canonical | The shared parser is the repair boundary. Extend its existing comparisons without changing service ownership, activation policy, configuration, or persistence. |
+| #136257 | route_security | planned | security_sensitive | Conservatively refer this separate credential-handling item to central OpenClaw security handling without mutation. This is not a vulnerability finding or a Codex runtime verdict, and it does not block the independent launchd repair. |
 
 ## Needs Human
 
