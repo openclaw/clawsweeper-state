@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T12:03:57.902Z",
+  "updated_at": "2026-09-05T12:04:40.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137974:5549738079:2026-09-05T05:41:13Z:re_review",
-      "comment_id": "5549738079",
-      "comment_version_key": "5549738079:2026-09-05T05:41:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137974#issuecomment-5549738079",
-      "comment_created_at": "2026-09-05T05:41:13Z",
-      "comment_updated_at": "2026-09-05T05:41:13Z",
-      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137974,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T05:42:06.042Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/policy-digest-frame-context-137959",
-        "head_sha": "1d2ec8a8fdb3fa1e233f06f6b6680048897d95bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136257:5508665735:2026-09-05T05:40:12Z:clawsweeper_needs_human",
       "comment_id": "5508665735",
@@ -32904,6 +32857,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-138722",
         "head_sha": "56ac47589c12f63ab546a381d50eb36a7d8a169a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138928:5550171493:2026-09-05T11:57:21Z:clawsweeper_needs_human",
+      "comment_id": "5550171493",
+      "comment_version_key": "5550171493:2026-09-05T11:57:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138928#issuecomment-5550171493",
+      "comment_created_at": "2026-09-05T07:06:27Z",
+      "comment_updated_at": "2026-09-05T11:57:21Z",
+      "comment_body_sha256": "f5e0ee5fde76cfbdcb012f10ff33c27b572d8028fc92683e67340b7f661cf0f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138928,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured SQLite regression exercises memory-flush persistence followed by preflight, but mocks agent execution and compaction; it does not... (sha=f2ca14e326ebeeabc08217f85524d4040a9f9b43)",
+      "expected_head_sha": "f2ca14e326ebeeabc08217f85524d4040a9f9b43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T12:04:40.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-flush-stale-fresh-total-138871",
+        "head_sha": "f2ca14e326ebeeabc08217f85524d4040a9f9b43",
         "cluster_id": null,
         "job_path": null
       }
