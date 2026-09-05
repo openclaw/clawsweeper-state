@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138871",
+  "mode": "autonomous",
+  "run_id": "33948231551",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33948231551",
+  "head_sha": "3d77465b6b6efa3bc111b069b06b3bfdf05630cf",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138871.md",
+  "published_at": "2026-09-05T06:22:22.092Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138871",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138871",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair artifact against preflight main 7b1217e2e79e5b489ea542e3019f9e86c281529a. The reported source sequence remains present, but runtime reproduction and implementation are blocked by the read-only environment and missing dependencies. No files or GitHub items changed.",
+  "actions": [
+    {
+      "target": "#138871",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138871",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with dependencies and the required dependency-source inspection. Establish the failing real flush-to-preflight regression before production edits or PR creation."
+    },
+    {
+      "target": "#126838",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138871",
+      "candidate_fix": null,
+      "reason": "Different scope from the stale usage-anchor producer defect. Keep open outside this bug-only repair."
+    },
+    {
+      "target": "#137836",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this exact credential-migration item to central OpenClaw security handling without mutation; it is independent of compaction accounting."
+    },
+    {
+      "target": "#88138",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine as historical security context for central handling. No public mutation, reopening, or compaction repair is proposed."
+    },
+    {
+      "target": "#15153",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; it does not establish equivalence with the current defect."
+    },
+    {
+      "target": "#91716",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain as historical invariant evidence, not a repair target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138871",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138871",
+      "candidate_fix": null,
+      "reason": "A narrow executor handoff remains useful despite this worker's implementation blockers. Refresh ownership and prove the failure before editing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 2,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
