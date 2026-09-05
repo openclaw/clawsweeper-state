@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138760"
-mode: "autonomous"
-run_id: "33937828720"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33937828720"
-head_sha: "9d76bdc16a76d2cc4fabdafaf4dc144da7f49a99"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T02:40:32.310Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138760"
+mode: "plan"
+run_id: "33940356818"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33940356818"
+head_sha: "da713f68d3fd46a1e6b123da5d709062b412cd1b"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T03:00:50.274Z"
+canonical: "#138760"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138760"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33937828720](https://github.com/openclaw/clawsweeper/actions/runs/33937828720)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33940356818](https://github.com/openclaw/clawsweeper/actions/runs/33940356818)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138760
+Canonical: #138760
 
 ## Summary
 
-Implementation is blocked by the read-only environment, unavailable preflight main commit, and inaccessible GitHub. The reported late imports remain in the inspected checkout. Returning a narrow, conditional fix artifact; no code changes, regression execution, build, live-service validation, or GitHub mutations occurred.
+Prepared a focused repair plan for the removed-bundle restart failure. No files or GitHub state changed. Duplicate-intake refresh, executable reproduction, build validation, and isolated Linux service proof remain required before publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Implementation is blocked by the read-only environment, unavailable preflight ma
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138760 | fix_needed | planned | canonical | Keep the issue open as the canonical report. The supplied evidence and inspected source support a bounded repair investigation, but latest-main reproduction and duplicate-intake refresh remain mandatory before implementation. |
-| cluster:issue-openclaw-openclaw-138760 | build_fix_artifact | planned |  | Provide the deterministic executor a narrow repair plan, conditional on refreshed GitHub state and a failing reproduction on verified main. |
-| cluster:issue-openclaw-openclaw-138760 | open_fix_pr | blocked |  | Implementation and PR publication remain blocked until a writable executor verifies main, refreshes duplicate intake, demonstrates the failing regression, applies the repair, and completes the required validation. Do not open an unvalidated or duplicate PR. |
+| #138760 | fix_needed | planned | canonical | The report supports a narrow dependency-lifetime repair in the existing update execution boundary. Missing execution evidence blocks implementation readiness, not the non-mutating classification. |
 
 ## Needs Human
 
