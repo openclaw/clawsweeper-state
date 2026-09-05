@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138955",
+  "mode": "autonomous",
+  "run_id": "33955934673",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33955934673",
+  "head_sha": "6a56eee17378928c246602b6f85f52866f406983",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138955.md",
+  "published_at": "2026-09-05T09:38:28.835Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138955",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138955",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow diagnostic repair artifact against preflight main bf90b12fe5156fdcb4c65d4c6500da530198b09c. Source inspection and an error-reader probe confirm the defect. Implementation and browser validation are blocked by the read-only filesystem and missing dependencies. No files or GitHub items changed.",
+  "actions": [
+    {
+      "target": "#138955",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138955",
+      "candidate_fix": null,
+      "reason": "Repair the existing permission diagnostic without changing authorization, saved defaults, or protocol definitions."
+    },
+    {
+      "target": "#133700",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or other mutation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138955",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138955",
+      "candidate_fix": null,
+      "reason": "The narrow repair is sufficiently specified for a writable executor; runtime reproduction remains a pre-edit gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138955",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138955",
+      "candidate_fix": null,
+      "reason": "PR publication is blocked until a writable executor reproduces the failure, implements the repair, passes validation, and captures required UI evidence."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
