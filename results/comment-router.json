@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T02:32:31.975Z",
+  "updated_at": "2026-09-05T02:32:36.242Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133150:5467339050:2026-09-04T21:03:32Z:clawsweeper_needs_human",
-      "comment_id": "5467339050",
-      "comment_version_key": "5467339050:2026-09-04T21:03:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133150#issuecomment-5467339050",
-      "comment_created_at": "2026-08-30T07:16:05Z",
-      "comment_updated_at": "2026-09-04T21:03:32Z",
-      "comment_body_sha256": "d2d32042073c27594e6bf633d805e9d5451f29fb4ac618dc943d952724c9e653",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This adds an optional field to the direct compact Gateway response; although additive consumers can ignore it, maintainers must accept it as a supported response contract before merge. (sha=1555c5e04c1ddcad0265bdd27ec552d4b546c41d)",
-      "expected_head_sha": "1555c5e04c1ddcad0265bdd27ec552d4b546c41d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T21:04:31.434Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feat-automation-auto-disabled-readback",
-        "head_sha": "1555c5e04c1ddcad0265bdd27ec552d4b546c41d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138406:5543823927:2026-09-04T20:58:56Z:clawsweeper_needs_human",
       "comment_id": "5543823927",
@@ -33586,6 +33553,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126932:5548758470:2026-09-05T02:31:38Z:re_review",
+      "comment_id": "5548758470",
+      "comment_version_key": "5548758470:2026-09-05T02:31:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126932#issuecomment-5548758470",
+      "comment_created_at": "2026-09-05T02:31:38Z",
+      "comment_updated_at": "2026-09-05T02:31:38Z",
+      "comment_body_sha256": "887653f4472f0e504ae0451f2c10f2960cd984745274453934679646347295c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126932,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T02:32:34.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-meta-restore-126806",
+        "head_sha": "40bf9d02050cc16badf05283774616ebd746af2e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
