@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T20:59:29.047Z",
+  "updated_at": "2026-09-05T20:59:46.974Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138085:5552964834:2026-09-05T15:51:29Z:re_review",
-      "comment_id": "5552964834",
-      "comment_version_key": "5552964834:2026-09-05T15:51:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138085#issuecomment-5552964834",
-      "comment_created_at": "2026-09-05T15:51:29Z",
-      "comment_updated_at": "2026-09-05T15:51:29Z",
-      "comment_body_sha256": "bd3b4e3e9c82ee6596aae360dfd0c9318799652b978053c9e4d13a9f319d0d54",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138085,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T15:52:16.120Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/docker-package-exact-identity",
-        "head_sha": "12b97dae8bb1b9c41d9a133bf85743c0a9d2ef22",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-09-05T15:51:25Z:clawsweeper_needs_human",
       "comment_id": "4876928065",
@@ -33140,6 +33093,39 @@
         "kind": "pull_request",
         "branch": "fix/validate-template-systemexit",
         "head_sha": "daa2ade123852fb2736119ad0b05d1c523286b27",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132607:5462799452:2026-09-05T20:58:41Z:clawsweeper_needs_human",
+      "comment_id": "5462799452",
+      "comment_version_key": "5462799452:2026-09-05T20:58:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132607#issuecomment-5462799452",
+      "comment_created_at": "2026-08-29T13:54:04Z",
+      "comment_updated_at": "2026-09-05T20:58:41Z",
+      "comment_body_sha256": "e1c508fc89f423866ec2e81758d8a3b4c37b59b424b60f5f2ab606ad4bf33932",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132607,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The after-fix portion of the previously accepted PR proof could not be independently reread in this pass; its existing positive classification is preserved. (sha=9ab95df9c4f3a042d9f90ca480fec6629b242d12)",
+      "expected_head_sha": "9ab95df9c4f3a042d9f90ca480fec6629b242d12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T20:59:46.974Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ollama-runtime-context-carrier",
+        "head_sha": "9ab95df9c4f3a042d9f90ca480fec6629b242d12",
         "cluster_id": null,
         "job_path": null
       }
