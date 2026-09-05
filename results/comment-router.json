@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T22:16:06.744Z",
+  "updated_at": "2026-09-05T22:16:55.715Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136110:5506157633:2026-09-05T17:51:39Z:clawsweeper_needs_human",
-      "comment_id": "5506157633",
-      "comment_version_key": "5506157633:2026-09-05T17:51:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136110#issuecomment-5506157633",
-      "comment_created_at": "2026-09-02T07:37:53Z",
-      "comment_updated_at": "2026-09-05T17:51:39Z",
-      "comment_body_sha256": "5f8d1b44dc7780a465baf9adb05773d3ec4d3dea7629592c2b0af57591d6b822",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136110,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing non-embedded or read-only/no-access sandbox setups will refuse weekly reviews; third-party backends without directory-reading support cannot provide shell-free discovery. (sha=210ebc0bcf3465bc30b750becebcffd92c380dd7)",
-      "expected_head_sha": "210ebc0bcf3465bc30b750becebcffd92c380dd7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T17:53:36.007Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workshop-review-agent-turn",
-        "head_sha": "210ebc0bcf3465bc30b750becebcffd92c380dd7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137202:5523233924:2026-09-05T17:42:41Z:clawsweeper_needs_human",
       "comment_id": "5523233924",
@@ -33403,6 +33370,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139385:5555152030:2026-09-05T22:16:02Z:re_review",
+      "comment_id": "5555152030",
+      "comment_version_key": "5555152030:2026-09-05T22:16:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139385#issuecomment-5555152030",
+      "comment_created_at": "2026-09-05T22:16:02Z",
+      "comment_updated_at": "2026-09-05T22:16:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139385,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T22:16:53.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/team-panel-shortcuts",
+        "head_sha": "920aeeae8d509497eb83af68691371ede1de72a8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
