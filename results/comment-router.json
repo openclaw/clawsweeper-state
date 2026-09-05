@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T01:03:13.790Z",
+  "updated_at": "2026-09-05T01:03:34.359Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138389:5543774766:2026-09-04T19:47:50Z:clawsweeper_needs_human",
-      "comment_id": "5543774766",
-      "comment_version_key": "5543774766:2026-09-04T19:47:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138389#issuecomment-5543774766",
-      "comment_created_at": "2026-09-04T16:52:40Z",
-      "comment_updated_at": "2026-09-04T19:47:50Z",
-      "comment_body_sha256": "67a06f95dc18b411dfbd49794a51e1832cce3aaedf7c997ce5063b8643120653",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Preserve eval detection in fenced Markdown code (P1)** - The .md switch applies the relaxed regex to every SKILL.md line, including fenced JavaScript. Valid calls such as foo-eval (payload) therefore stop produc...; Review finding: [P1] Preserve eval detection in fenced Markdown code — src/skills/security/scanner.ts:572-578 - [medium] Markdown code fences lose dynamic-eval detection — src/ski... (sha=e7174e2ebe74f7099972719c8430e147e022c3d4)",
-      "expected_head_sha": "e7174e2ebe74f7099972719c8430e147e022c3d4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:51:20.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-scanner-eval-prose",
-        "head_sha": "e7174e2ebe74f7099972719c8430e147e022c3d4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138386:5544340529:2026-09-04T19:45:16Z:clawsweeper_needs_human",
       "comment_id": "5544340529",
@@ -33255,6 +33222,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5548265828:2026-09-05T01:03:01Z:re_review",
+      "comment_id": "5548265828",
+      "comment_version_key": "5548265828:2026-09-05T01:03:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5548265828",
+      "comment_created_at": "2026-09-05T01:02:30Z",
+      "comment_updated_at": "2026-09-05T01:03:01Z",
+      "comment_body_sha256": "d4a4c0d4da019753d72ec7351277d70876b0f0157f0d533c57b9e6c7ed4571f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T01:03:31.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "bc47cf20b3d1adc59379dd31ceafef3888015708",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
