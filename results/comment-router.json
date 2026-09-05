@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:58:26.011Z",
+  "updated_at": "2026-09-05T00:58:31.914Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136165:5506888683:2026-09-04T19:39:50Z:clawsweeper_auto_repair",
-      "comment_id": "5506888683",
-      "comment_version_key": "5506888683:2026-09-04T19:39:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136165#issuecomment-5506888683",
-      "comment_created_at": "2026-09-02T08:42:10Z",
-      "comment_updated_at": "2026-09-04T19:39:50Z",
-      "comment_body_sha256": "52a3c047645187cad3c4c16f86dee41403d80cc42ac3c0561a39f02127523a8b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136165,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=79af7db588a4bd6f1e0dd9f775936fdd7b1bd0d0)",
-      "expected_head_sha": "79af7db588a4bd6f1e0dd9f775936fdd7b1bd0d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:51:20.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "devmon/acp-alias-pr-ready-20260901",
-        "head_sha": "79af7db588a4bd6f1e0dd9f775936fdd7b1bd0d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136322:5510359918:2026-09-04T19:37:39Z:clawsweeper_auto_repair",
       "comment_id": "5510359918",
@@ -33185,6 +33152,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1618:5548239312:2026-09-05T00:57:40Z:re_review",
+      "comment_id": "5548239312",
+      "comment_version_key": "5548239312:2026-09-05T00:57:40Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1618#issuecomment-5548239312",
+      "comment_created_at": "2026-09-05T00:57:40Z",
+      "comment_updated_at": "2026-09-05T00:57:40Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1618,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:58:30.181Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/runner-phase-telemetry",
+        "head_sha": "54b9bc560e4e61364eb3e3340b842f3c2a37da30",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
