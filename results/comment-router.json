@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T01:41:09.605Z",
+  "updated_at": "2026-09-05T01:41:36.697Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138542:5545708684:2026-09-04T20:05:42Z:clawsweeper_needs_human",
-      "comment_id": "5545708684",
-      "comment_version_key": "5545708684:2026-09-04T20:05:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138542#issuecomment-5545708684",
-      "comment_created_at": "2026-09-04T19:50:10Z",
-      "comment_updated_at": "2026-09-04T20:05:42Z",
-      "comment_body_sha256": "0747561583501b5bb27738d4839128b6b3f767148a22099b8b2adc9a30c2420e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138542,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging changes the direct model-result contract from a short summary to bounded text of up to 8,192 bytes, increasing context use for existing callers. (sha=5a20e549f08df4f2c6ee20e413f561e7d279aca3)",
-      "expected_head_sha": "5a20e549f08df4f2c6ee20e413f561e7d279aca3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T20:34:13.980Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/youthful-mccarthy-a13751",
-        "head_sha": "5a20e549f08df4f2c6ee20e413f561e7d279aca3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138553:5545709920:2026-09-04T20:06:18Z:clawsweeper_needs_human",
       "comment_id": "5545709920",
@@ -33463,6 +33430,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138707:5548485202:2026-09-05T01:40:39Z:re_review",
+      "comment_id": "5548485202",
+      "comment_version_key": "5548485202:2026-09-05T01:40:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138707#issuecomment-5548485202",
+      "comment_created_at": "2026-09-05T01:40:39Z",
+      "comment_updated_at": "2026-09-05T01:40:39Z",
+      "comment_body_sha256": "1a735f78d2fefa497af33287131892d6c39a72cf509e64cefc35a4b0b417ab48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138707,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T01:41:35.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/anthropic-direct-cli",
+        "head_sha": "92315c776065ba5b739ced71c089763f59229d34",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
