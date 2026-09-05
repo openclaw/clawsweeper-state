@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:50:36.671Z",
+  "updated_at": "2026-09-05T00:50:45.928Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136165:5545190934:2026-09-04T19:00:49Z:re_review",
-      "comment_id": "5545190934",
-      "comment_version_key": "5545190934:2026-09-04T19:00:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136165#issuecomment-5545190934",
-      "comment_created_at": "2026-09-04T19:00:49Z",
-      "comment_updated_at": "2026-09-04T19:00:49Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136165,
-      "author": "service-cyber",
-      "author_id": 236179400,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T19:02:45.697Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "devmon/acp-alias-pr-ready-20260901",
-        "head_sha": "79af7db588a4bd6f1e0dd9f775936fdd7b1bd0d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/telemetry:4:5464290648:2026-09-04T19:01:09Z:clawsweeper_auto_repair",
       "comment_id": "5464290648",
@@ -33374,6 +33327,39 @@
         "kind": "pull_request",
         "branch": "chore/fs-safe-080",
         "head_sha": "f00352a50b6e4678b44d69ad1f9b0312a1b1383b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138697:5547746033:2026-09-05T00:48:04Z:clawsweeper_needs_human",
+      "comment_id": "5547746033",
+      "comment_version_key": "5547746033:2026-09-05T00:48:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138697#issuecomment-5547746033",
+      "comment_created_at": "2026-09-04T23:47:26Z",
+      "comment_updated_at": "2026-09-05T00:48:04Z",
+      "comment_body_sha256": "4c2c63daffacd73b0809546f99fbba66fc19b6864332a322c8b891dceca5e766",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The body leaves CIM visibility under supported Windows permission/provider configurations unresolved: silently omitting a live process could cause shared recovery callers to delete it... (sha=41999ec1472b022fcda9e31f9085e93bd46316d5)",
+      "expected_head_sha": "41999ec1472b022fcda9e31f9085e93bd46316d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T00:50:45.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-dead-pid-eperm",
+        "head_sha": "41999ec1472b022fcda9e31f9085e93bd46316d5",
         "cluster_id": null,
         "job_path": null
       }
