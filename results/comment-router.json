@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T10:45:10.396Z",
+  "updated_at": "2026-09-05T10:46:38.418Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300845356:2026-08-15T06:01:53Z:re_review",
-      "comment_id": "5300845356",
-      "comment_version_key": "5300845356:2026-08-15T06:01:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300845356",
-      "comment_created_at": "2026-08-15T06:01:53Z",
-      "comment_updated_at": "2026-08-15T06:01:53Z",
-      "comment_body_sha256": "1312856a30147810a3724a9d733c664d0f910e650cbc98939885b030da2195da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T04:48:50.684Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5300976254:2026-08-15T06:38:15Z:re_review",
       "comment_id": "5300976254",
@@ -32488,6 +32461,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T10:45:10.396Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137846:5535124839:2026-09-05T10:45:52Z:clawsweeper_needs_human",
+      "comment_id": "5535124839",
+      "comment_version_key": "5535124839:2026-09-05T10:45:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137846#issuecomment-5535124839",
+      "comment_created_at": "2026-09-04T03:12:24Z",
+      "comment_updated_at": "2026-09-05T10:45:52Z",
+      "comment_body_sha256": "2990c5886700e3953ca7db313bca70167bd429191d29caf88800a8f2694e94f3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137846,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reuse the canonical exact-release security result (P1)** - The prior finding remains unresolved: security is derived only from optional llmAnalysis, so absent analysis removes the Security section and present an...; Review finding: [P1] Reuse the canonical exact-release security result — src/infra/clawhub-plugin-catalog.ts:546-548 - [P2] Connect README copy controls to the shared click handle... (sha=d9a5fc9b1794fee009cd1a16bfef0a225f0e698c)",
+      "expected_head_sha": "d9a5fc9b1794fee009cd1a16bfef0a225f0e698c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T10:46:38.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-720-plugin-detail-pages",
+        "head_sha": "d9a5fc9b1794fee009cd1a16bfef0a225f0e698c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
