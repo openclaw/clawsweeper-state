@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T01:36:15.140Z",
+  "updated_at": "2026-09-05T01:36:58.997Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/acpx:514:5545966223:2026-09-04T20:16:22Z:re_review",
-      "comment_id": "5545966223",
-      "comment_version_key": "5545966223:2026-09-04T20:16:22Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/514#issuecomment-5545966223",
-      "comment_created_at": "2026-09-04T20:16:22Z",
-      "comment_updated_at": "2026-09-04T20:16:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/acpx",
-      "issue_number": 514,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T20:17:32.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/process-lifecycle-hooks",
-        "head_sha": "2b86d61913cf27aead42a25cae73af1b0d6963ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138473:5545966174:2026-09-04T20:16:22Z:re_review",
       "comment_id": "5545966174",
@@ -33566,6 +33519,39 @@
         "kind": "pull_request",
         "branch": "feat/twitter-syndication-upstream",
         "head_sha": "9560357432857ddce3d60b0622686f65601fae02",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137974:5537426320:2026-09-05T01:35:57Z:clawsweeper_needs_human",
+      "comment_id": "5537426320",
+      "comment_version_key": "5537426320:2026-09-05T01:35:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137974#issuecomment-5537426320",
+      "comment_created_at": "2026-09-04T07:50:12Z",
+      "comment_updated_at": "2026-09-05T01:35:57Z",
+      "comment_body_sha256": "5ff5870494942983c6a2779376999693c1f4cce31345206a479856d1f5088758",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137974,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured current-head terminal excerpt exercises the production bootstrap builder and supports the empty-fence repair, but not the... (sha=f6a6c0a28fe6e3aff9c2465a1546afbf7f8ac355)",
+      "expected_head_sha": "f6a6c0a28fe6e3aff9c2465a1546afbf7f8ac355",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T01:36:58.997Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/policy-digest-frame-context-137959",
+        "head_sha": "f6a6c0a28fe6e3aff9c2465a1546afbf7f8ac355",
         "cluster_id": null,
         "job_path": null
       }
