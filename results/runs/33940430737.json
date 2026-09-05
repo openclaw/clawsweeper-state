@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138779",
+  "mode": "autonomous",
+  "run_id": "33940430737",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33940430737",
+  "head_sha": "da713f68d3fd46a1e6b123da5d709062b412cd1b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138779.md",
+  "published_at": "2026-09-05T04:14:30.750Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138779",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138779",
+  "canonical_pr": null,
+  "summary": "The inbound-prefix defect remains in preflight main. A narrow repair artifact is prepared. Local implementation and regression validation are blocked by the read-only checkout and missing dependencies; no files or GitHub items changed.",
+  "actions": [
+    {
+      "target": "#138779",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138779",
+      "candidate_fix": null,
+      "reason": "Restore the documented outbound-only contract at the plugin-owned inbound formatter. No product decision, configuration change, or security-boundary change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138779",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138779",
+      "candidate_fix": null,
+      "reason": "The repair plan is actionable for a writable executor. Establish the failing regression before production edits, then validate the repaired branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138779",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#138779",
+      "candidate_fix": null,
+      "reason": "Publication is blocked on implementing and validating the canonical fix in a writable executor, followed by its live duplicate check. GitHub mutations remain owned by the deterministic applicator."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
