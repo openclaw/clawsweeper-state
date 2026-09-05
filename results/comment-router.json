@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T14:48:59.743Z",
+  "updated_at": "2026-09-05T14:49:15.352Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137886:5535475189:2026-09-05T09:39:15Z:clawsweeper_auto_repair",
-      "comment_id": "5535475189",
-      "comment_version_key": "5535475189:2026-09-05T09:39:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137886#issuecomment-5535475189",
-      "comment_created_at": "2026-09-04T04:03:06Z",
-      "comment_updated_at": "2026-09-05T09:39:15Z",
-      "comment_body_sha256": "c04a65f8cbe19e989613b1aad6ae381b5aeafaea48ab4ae50a3cf6e819e365e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137886,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=495b6adcbffde8f909c87559b41dc39ea7d1bca3)",
-      "expected_head_sha": "495b6adcbffde8f909c87559b41dc39ea7d1bca3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T09:42:54.663Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-721-plugin-install-wizard",
-        "head_sha": "495b6adcbffde8f909c87559b41dc39ea7d1bca3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138745:5548365400:2026-09-05T09:40:19Z:clawsweeper_needs_human",
       "comment_id": "5548365400",
@@ -32011,6 +31978,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139117:5552587128:2026-09-05T14:48:15Z:re_review",
+      "comment_id": "5552587128",
+      "comment_version_key": "5552587128:2026-09-05T14:48:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139117#issuecomment-5552587128",
+      "comment_created_at": "2026-09-05T14:48:15Z",
+      "comment_updated_at": "2026-09-05T14:48:15Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139117,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T14:49:13.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/docker-bundled-plugin-deps-staging",
+        "head_sha": "b8b0fa81dc8638dcba19c034263e383ba3aa5b17",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
