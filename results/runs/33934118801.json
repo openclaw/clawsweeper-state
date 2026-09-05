@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138368",
+  "mode": "autonomous",
+  "run_id": "33934118801",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33934118801",
+  "head_sha": "e5fffb689e4ae012121be84dbb47c0b8306b14b4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138368.md",
+  "published_at": "2026-09-05T00:57:48.405Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138368",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138368",
+  "canonical_pr": null,
+  "summary": "Local source at preflight main a592554b536c8d3ba6d833252718588451321b0d matches the reported missing-versus-empty plugin-scope condition. Implementation is blocked: the filesystem is read-only, the test runner cannot resolve tsx/esm, and authenticated GitHub discovery is unavailable. No regression reproduction, code changes, validated branch, or GitHub mutations were completed. A narrow repair artifact is provided for the executor; the issue remains open.",
+  "actions": [
+    {
+      "target": "#138368",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138368",
+      "candidate_fix": null,
+      "reason": "Keep this canonical issue open. The source condition warrants the supplied narrow repair path, but production-boundary reproduction must succeed before editing or opening a PR."
+    },
+    {
+      "target": "#137913",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only. Preserve the existing catalog repair; do not close, reopen, or treat it as fixing #138368."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138368",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138368",
+      "candidate_fix": null,
+      "reason": "Provide an actionable handoff without claiming implementation or validation. An appropriately provisioned executor must refresh discovery, reproduce first, repair narrowly, and validate before opening the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
