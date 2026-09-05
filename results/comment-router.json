@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T03:03:41.079Z",
+  "updated_at": "2026-09-05T03:03:50.577Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138621:5546870098:2026-09-04T21:53:06Z:clawsweeper_needs_human",
-      "comment_id": "5546870098",
-      "comment_version_key": "5546870098:2026-09-04T21:53:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138621#issuecomment-5546870098",
-      "comment_created_at": "2026-09-04T21:53:06Z",
-      "comment_updated_at": "2026-09-04T21:53:06Z",
-      "comment_body_sha256": "369b9ccfb360ec661debf574a26ae9150bb16c110398b33592aa4fb1f6cc50a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138621,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3b9b6e8e0028ed5d8a47161ff56b035d46b77722)",
-      "expected_head_sha": "3b9b6e8e0028ed5d8a47161ff56b035d46b77722",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T21:59:33.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/strict-smoke-declarations-20260904",
-        "head_sha": "3b9b6e8e0028ed5d8a47161ff56b035d46b77722",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138639:5546885081:2026-09-04T21:54:54Z:clawsweeper_auto_repair",
       "comment_id": "5546885081",
@@ -33592,6 +33559,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119589:5191500547:2026-09-05T03:02:33Z:clawsweeper_needs_human",
+      "comment_id": "5191500547",
+      "comment_version_key": "5191500547:2026-09-05T03:02:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119589#issuecomment-5191500547",
+      "comment_created_at": "2026-08-05T12:06:10Z",
+      "comment_updated_at": "2026-09-05T03:02:33Z",
+      "comment_body_sha256": "b0051d99fafd6a5e818bcd063d019b1ba10c86f0bc3ac12b5c3e30ef897e8844",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The WeChat failure has not been connected to an ACP producer, leaving the claimed repair owner unverified. (sha=61ed1c4b40db7738c45a67bbb69efc585bce9bf4)",
+      "expected_head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T03:03:50.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "clawsweeper/issue-openclaw-openclaw-92199",
+        "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
+        "cluster_id": "automerge-openclaw-openclaw-119589",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119589.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
