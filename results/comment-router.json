@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T10:00:03.632Z",
+  "updated_at": "2026-09-05T10:00:08.592Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:400:5332876553:2026-09-05T04:03:13Z:clawsweeper_auto_repair",
-      "comment_id": "5332876553",
-      "comment_version_key": "5332876553:2026-09-05T04:03:13Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/400#issuecomment-5332876553",
-      "comment_created_at": "2026-08-18T19:15:22Z",
-      "comment_updated_at": "2026-09-05T04:03:13Z",
-      "comment_body_sha256": "cedd07ca62471289061089525f5bc3fb8fa07471b6f92ae9afd062f10af820ca",
-      "repo": "steipete/oracle",
-      "issue_number": 400,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e3a6e67df08509d21fca67506ae3e3baf9d5eec2)",
-      "expected_head_sha": "e3a6e67df08509d21fca67506ae3e3baf9d5eec2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T04:36:51.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "serve-concurrency",
-        "head_sha": "e3a6e67df08509d21fca67506ae3e3baf9d5eec2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5549377610:2026-09-05T04:36:16Z:re_review",
       "comment_id": "5549377610",
@@ -32127,6 +32094,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T10:00:03.632Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/songsee:7:5304174384:2026-09-05T09:55:15Z:clawsweeper_needs_human",
+      "comment_id": "5304174384",
+      "comment_version_key": "5304174384:2026-09-05T09:55:15Z",
+      "comment_url": "https://github.com/openclaw/songsee/pull/7#issuecomment-5304174384",
+      "comment_created_at": "2026-08-15T20:50:14Z",
+      "comment_updated_at": "2026-09-05T09:55:15Z",
+      "comment_body_sha256": "e47c66f9b3375dc8fbf1b215c0b7300f90bb9732b8422a02519c35841aff64ab",
+      "repo": "openclaw/songsee",
+      "issue_number": 7,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Complete WAV files still allocate their full payload and decoded samples before --duration slicing; accepting this pre-existing resource contract remains an unresolved maintainer choi... (sha=6fc6aa9de696814db5665f2175a7384d8042e61b)",
+      "expected_head_sha": "6fc6aa9de696814db5665f2175a7384d8042e61b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T10:00:08.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ffmpeg-timeout-wav-cap",
+        "head_sha": "6fc6aa9de696814db5665f2175a7384d8042e61b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
