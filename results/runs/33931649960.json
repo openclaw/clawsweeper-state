@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138706",
+  "mode": "autonomous",
+  "run_id": "33931649960",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33931649960",
+  "head_sha": "e5fffb689e4ae012121be84dbb47c0b8306b14b4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138706.md",
+  "published_at": "2026-09-05T00:16:14.807Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138706",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138706",
+  "canonical_pr": null,
+  "summary": "The reported launch mechanism remains present in the inspected checkout, but implementation is blocked: this read-only Linux environment cannot establish the required failing native Windows regression. Local HEAD differs from the unavailable preflight main SHA, and the open-fixing-PR recheck could not complete. No files or GitHub state changed; the conditional repair artifact must not advance to a PR until these gates pass.",
+  "actions": [
+    {
+      "target": "#138706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138706",
+      "candidate_fix": null,
+      "reason": "Retain as the canonical second-stage console report. The older launcher and environment-inheritance reports do not establish coverage of this failure."
+    },
+    {
+      "target": "#137813",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep release/startup follow-up separate; do not close or incorporate it into this console-only repair."
+    },
+    {
+      "target": "#136980",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical lifecycle repair, not an open contributor branch or a proven fix for #138706."
+    },
+    {
+      "target": "#89231",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical outer-launcher context only."
+    },
+    {
+      "target": "#95079",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; not proof that the new second-stage report is duplicate or fixed."
+    },
+    {
+      "target": "#96835",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No established shared root cause; exclude from this Gateway repair."
+    },
+    {
+      "target": "#99502",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical launcher context; preserve its task-principal contract without reopening or closing anything."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138706",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138706",
+      "candidate_fix": null,
+      "reason": "Implementation and PR creation are blocked until a writable native Windows checkout of refreshed main is available, the existing-PR check completes, and the new regression demonstrably fails before production edits."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 5,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 5,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
