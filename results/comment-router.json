@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T22:29:15.570Z",
+  "updated_at": "2026-09-05T22:33:46.445Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139225:5553795900:2026-09-05T18:11:11Z:re_review",
-      "comment_id": "5553795900",
-      "comment_version_key": "5553795900:2026-09-05T18:11:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139225#issuecomment-5553795900",
-      "comment_created_at": "2026-09-05T18:11:11Z",
-      "comment_updated_at": "2026-09-05T18:11:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139225,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T18:17:11.401Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-139088-scratch-weakmap-carrier",
-        "head_sha": "b8653e85497d49c9ca308826acfcd1c64514f5b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139225:5553667283:2026-09-05T18:16:15Z:clawsweeper_needs_human",
       "comment_id": "5553667283",
@@ -33041,6 +32994,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1425:5545071927:2026-09-05T22:32:49Z:clawsweeper_needs_human",
+      "comment_id": "5545071927",
+      "comment_version_key": "5545071927:2026-09-05T22:32:49Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1425#issuecomment-5545071927",
+      "comment_created_at": "2026-09-04T18:49:04Z",
+      "comment_updated_at": "2026-09-05T22:32:49Z",
+      "comment_body_sha256": "db218927ebcdc232b0b1f5d0fcb54c945ded6b067c90984877bd962ef91bdae7",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Retained Crabbox traces credibly exercise the compiled consumer, real HTTP/Worker boundary, SQLite persistence and recovery. The curre... (sha=023480358242a5851de282afc908192efa847e18)",
+      "expected_head_sha": "023480358242a5851de282afc908192efa847e18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T22:33:46.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/clawsweeper-command-proof-readiness",
+        "head_sha": "023480358242a5851de282afc908192efa847e18",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
