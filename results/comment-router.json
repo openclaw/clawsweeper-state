@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T12:50:04.601Z",
+  "updated_at": "2026-09-05T12:50:20.967Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138896:5549802057:2026-09-05T06:40:34Z:clawsweeper_needs_human",
-      "comment_id": "5549802057",
-      "comment_version_key": "5549802057:2026-09-05T06:40:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138896#issuecomment-5549802057",
-      "comment_created_at": "2026-09-05T05:53:42Z",
-      "comment_updated_at": "2026-09-05T06:40:34Z",
-      "comment_body_sha256": "e0a91adc8156e36bb1da99bb5f87d43caad80f6d2f731d9436dfbbcb320fc553",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138896,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Reviewer-side verification of the pinned upstream guide and live Slack validation contract remains incomplete because external DNS resolution failed. (sha=fb1d848cd90e1d8b15d5eb5447c866c7b36c8107)",
-      "expected_head_sha": "fb1d848cd90e1d8b15d5eb5447c866c7b36c8107",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T06:41:32.423Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/vendor-slack-block-kit-skill",
-        "head_sha": "fb1d848cd90e1d8b15d5eb5447c866c7b36c8107",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138920:5550038827:2026-09-05T06:40:50Z:clawsweeper_needs_human",
       "comment_id": "5550038827",
@@ -32743,6 +32710,53 @@
       "status": "skipped",
       "processed_at": "2026-09-05T12:50:04.601Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139075:5551929583:2026-09-05T12:49:15Z:re_review",
+      "comment_id": "5551929583",
+      "comment_version_key": "5551929583:2026-09-05T12:49:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139075#issuecomment-5551929583",
+      "comment_created_at": "2026-09-05T12:49:15Z",
+      "comment_updated_at": "2026-09-05T12:49:15Z",
+      "comment_body_sha256": "c053764e3034c66f90612063b241c42cbab96534149e58a43cccf2574369b5a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139075,
+      "author": "ylcn91",
+      "author_id": 7249450,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added the esbuild alias contract (esbuild@0.28.2, `alias?: record<string, string>`) to the evidence section to cover the reviewer limitation behind the remaining merge-risk item. no code changes since 47cd139",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T12:50:19.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-clean-check-plugin-build-outputs",
+        "head_sha": "47cd139923a4158563128f4d3d34a187e2562846",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
