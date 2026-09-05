@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:49:20.316Z",
+  "updated_at": "2026-09-05T00:50:08.292Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137351:5527422803:2026-09-04T18:58:56Z:clawsweeper_auto_repair",
-      "comment_id": "5527422803",
-      "comment_version_key": "5527422803:2026-09-04T18:58:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137351#issuecomment-5527422803",
-      "comment_created_at": "2026-09-03T14:39:32Z",
-      "comment_updated_at": "2026-09-04T18:58:56Z",
-      "comment_body_sha256": "2382c90d623898788dd0de5f8413b3814f070ee33ba38f3e2e7e5ef234f3d625",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137351,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8506162cd634c958c6543abf2bc3f25b978b6a6d)",
-      "expected_head_sha": "8506162cd634c958c6543abf2bc3f25b978b6a6d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:02:27.020Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-bootstrap-extra-files",
-        "head_sha": "8506162cd634c958c6543abf2bc3f25b978b6a6d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:24:5458198119:2026-09-04T19:01:02Z:clawsweeper_needs_human",
       "comment_id": "5458198119",
@@ -33363,6 +33330,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138070:5548186557:2026-09-05T00:49:09Z:re_review",
+      "comment_id": "5548186557",
+      "comment_version_key": "5548186557:2026-09-05T00:49:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138070#issuecomment-5548186557",
+      "comment_created_at": "2026-09-05T00:49:09Z",
+      "comment_updated_at": "2026-09-05T00:49:09Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138070,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:50:05.424Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tui-remembered-session-provisional-label-134154",
+        "head_sha": "2738a8f476e5db6970c424b6ec97a53b0dfca364",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
