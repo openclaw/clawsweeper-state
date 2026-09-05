@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138706",
+  "mode": "plan",
+  "run_id": "33934830075",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33934830075",
+  "head_sha": "e5fffb689e4ae012121be84dbb47c0b8306b14b4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138706.md",
+  "published_at": "2026-09-05T01:11:41.581Z",
+  "canonical": "138706",
+  "canonical_issue": "138706",
+  "canonical_pr": null,
+  "summary": "Plan only: retain #138706 as the canonical second-stage console bug and keep #137813 separate. The checkout matches preflight main 061036abda8de52e0baf5bee15fe1206d298ef9f. A narrow reproduce-first repair is outlined, but native Windows reproduction, Microsoft flag-contract verification, and open-fixing-PR discovery remain execution prerequisites. No files or GitHub state changed; no runtime tests passed or failed because none were run.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/138706",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "138706",
+      "candidate_fix": null,
+      "reason": "Keep the issue open and plan the existing native-boundary repair. Do not edit production code or open a PR until a native Windows regression fails on the then-current main and the dependency contract is verified."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/137813",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "138706",
+      "candidate_fix": null,
+      "reason": "Related Windows supervisor surface, distinct failure and validation requirements. Preserve the ongoing thread; do not close or include its repair in this cluster."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/136980",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical lifecycle evidence only; not an open candidate or a contributor branch to replace."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/89231",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep as historical launcher context; no closure action."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/95079",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context does not establish identity with the new native-anchor failure."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/96835",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Do not infer a shared root cause from console symptoms or reopen historical work."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/99502",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the historical task-principal decision; it is not proof that the subsequent native command launch is hidden."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
