@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-05T08:33:44.180Z
+Generated: 2026-09-05T10:31:05.388Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -35,17 +35,17 @@ Repository: openclaw/openclaw
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | clawsweeper/issue-openclaw-openclaw-92199 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119367](https://github.com/openclaw/openclaw/pull/119367) | fix(memory-core): resume validated session transcript appends | clawsweeper/issue-openclaw-openclaw-119350 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119265](https://github.com/openclaw/openclaw/pull/119265) | fix(agents): audit direct embedded bundle tool calls | clawsweeper/issue-openclaw-openclaw-119253 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | clawsweeper/issue-openclaw-openclaw-119148 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | clawsweeper/issue-openclaw-openclaw-119148 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | clawsweeper/issue-openclaw-openclaw-118776 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118680](https://github.com/openclaw/openclaw/pull/118680) | fix(config): accept declared model compatibility routing settings | clawsweeper/issue-openclaw-openclaw-118667 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118679](https://github.com/openclaw/openclaw/pull/118679) | fix(workboard): reconcile terminal subagent runs | clawsweeper/issue-openclaw-openclaw-118669 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118361](https://github.com/openclaw/openclaw/pull/118361) | fix(browser): make extension deep doctor probe page snapshots | clawsweeper/issue-openclaw-openclaw-116747 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118309](https://github.com/openclaw/openclaw/pull/118309) | fix(claude-cli): deduplicate live and imported assistant turns | clawsweeper/issue-openclaw-openclaw-118185 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118303](https://github.com/openclaw/openclaw/pull/118303) | fix(minimax): route M3 image calls through MiniMax VL | clawsweeper/issue-openclaw-openclaw-116601 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | clawsweeper/issue-openclaw-openclaw-90786 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
+| [#117976](https://github.com/openclaw/openclaw/pull/117976) | fix(memory): resolve Google embedding provider alias | clawsweeper/issue-openclaw-openclaw-90786 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#117951](https://github.com/openclaw/openclaw/pull/117951) | fix(gateway): preserve assistant media in live chat events | clawsweeper/issue-openclaw-openclaw-73478 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#117906](https://github.com/openclaw/openclaw/pull/117906) | fix(feishu): preserve self mentions in agent-facing group messages | clawsweeper/issue-openclaw-openclaw-72504 | MERGEABLE | CLEAN | skipped | head repository is unknown |
+| [#117721](https://github.com/openclaw/openclaw/pull/117721) | fix(control-ui): render live thinking agent events in WebChat | clawsweeper/issue-openclaw-openclaw-88079 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#117144](https://github.com/openclaw/openclaw/pull/117144) | fix(ci): package runtime resources in dist artifact | clawsweeper/issue-openclaw-openclaw-98276 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#106789](https://github.com/openclaw/openclaw/pull/106789) | docs: respect configured Crabbox provider for agent tests | clawsweeper/automerge-openclaw-openclaw-104485 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#76744](https://github.com/openclaw/openclaw/pull/76744) | docs: standardize ACP behavior spelling | clawsweeper/issue-openclaw-openclaw-76734 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
