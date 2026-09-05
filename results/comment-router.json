@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T10:39:44.733Z",
+  "updated_at": "2026-09-05T10:39:49.462Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136761:5535008918:2026-09-04T02:56:24Z:re_review",
-      "comment_id": "5535008918",
-      "comment_version_key": "5535008918:2026-09-04T02:56:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5535008918",
-      "comment_created_at": "2026-09-04T02:56:24Z",
-      "comment_updated_at": "2026-09-04T02:56:24Z",
-      "comment_body_sha256": "cd5dd07b2ec3966556561f68445a80fa550bff679e2481bdb9d3ddda4f74a5ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136761,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T04:46:29.407Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5535203892:2026-09-04T03:23:37Z:re_review",
       "comment_id": "5535203892",
@@ -32265,6 +32238,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138984:5551089042:2026-09-05T10:38:44Z:clawsweeper_needs_human",
+      "comment_id": "5551089042",
+      "comment_version_key": "5551089042:2026-09-05T10:38:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138984#issuecomment-5551089042",
+      "comment_created_at": "2026-09-05T10:10:46Z",
+      "comment_updated_at": "2026-09-05T10:38:44Z",
+      "comment_body_sha256": "2ee85ffda3c4bda3b4cb1d91c03db0f1528217e9ffe8d3c59058e92ccd4df2ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138984,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured SQLite interruption test does not show the new publisher rejecting a closed or replaced retained m...; Review finding: [P1] Preserve the retained manager's admission check during publication — src/agents/embedded-agent-runner/transcript-rewrite.ts:255-260 - [P1] Commit admitted-inp... (sha=33cda55f95b3f94b98d41b537fe47e291b911647)",
+      "expected_head_sha": "33cda55f95b3f94b98d41b537fe47e291b911647",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T10:39:49.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/openclaw-openclaw-vacinc-issue-138965",
+        "head_sha": "33cda55f95b3f94b98d41b537fe47e291b911647",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
