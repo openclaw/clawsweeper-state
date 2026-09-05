@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-85687",
+  "mode": "autonomous",
+  "run_id": "33966244019",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33966244019",
+  "head_sha": "de425718e283e72d9cb98a9ef041f2fe4ee8f6c2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-85687.md",
+  "published_at": "2026-09-05T13:09:17.611Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/85687",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/85687",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair plan for heartbeat transcript pollution. Implementation is blocked by missing required Codex source inspection and unavailable dependencies in this read-only checkout. No code or GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#85687",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#85687",
+      "candidate_fix": null,
+      "reason": "Source evidence supports focused repair work. Keep the issue open while dependency proof and regression validation are completed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-85687",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#85687",
+      "candidate_fix": null,
+      "reason": "A bounded artifact remains useful despite this worker's implementation limitations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-85687",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#85687",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with dependencies, direct Codex contract inspection, and a demonstrated failing/passing regression before PR publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#85687",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
