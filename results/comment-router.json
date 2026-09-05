@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T19:51:45.658Z",
+  "updated_at": "2026-09-05T19:52:14.091Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139130:5552274899:2026-09-05T14:05:33Z:clawsweeper_needs_human",
-      "comment_id": "5552274899",
-      "comment_version_key": "5552274899:2026-09-05T14:05:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139130#issuecomment-5552274899",
-      "comment_created_at": "2026-09-05T13:53:37Z",
-      "comment_updated_at": "2026-09-05T14:05:33Z",
-      "comment_body_sha256": "74eceb21f19cc47b1a9f3ba14b9779e7202af7fd24237b9ff39489a9aa3cf114",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139130,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed session-creation preflight is covered through direct handlers with seeded stores and mocked Gateway context, but the supplied evide... (sha=fdfe89454a23787762c7d8cbee68447ff2908b59)",
-      "expected_head_sha": "fdfe89454a23787762c7d8cbee68447ff2908b59",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T14:06:28.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-selected-global-initialization-owner",
-        "head_sha": "fdfe89454a23787762c7d8cbee68447ff2908b59",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/carapace:81:5522898101:2026-09-05T13:59:53Z:clawsweeper_needs_human",
       "comment_id": "5522898101",
@@ -32785,6 +32752,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137893:5554368310:2026-09-05T19:51:15Z:re_review",
+      "comment_id": "5554368310",
+      "comment_version_key": "5554368310:2026-09-05T19:51:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5554368310",
+      "comment_created_at": "2026-09-05T19:51:15Z",
+      "comment_updated_at": "2026-09-05T19:51:15Z",
+      "comment_body_sha256": "f7ca48b4b195a925ab06a39d93808b953d100bce8f63c79b07bfafd277e54226",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137893,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T19:52:11.329Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fs-safe-native-legacy-package",
+        "head_sha": "224cb9f314f4094cd00a8d18c6d52ce9f894fd1a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
