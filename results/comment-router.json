@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T13:54:25.092Z",
+  "updated_at": "2026-09-05T13:54:36.103Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5536585333:2026-09-04T06:23:35Z:re_review",
-      "comment_id": "5536585333",
-      "comment_version_key": "5536585333:2026-09-04T06:23:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5536585333",
-      "comment_created_at": "2026-09-04T06:23:35Z",
-      "comment_updated_at": "2026-09-04T06:23:35Z",
-      "comment_body_sha256": "e83d0ce4141701c303e6f4174fe08c2347595ad5c74cb1098d9e3dea153c58c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T08:46:58.275Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5538120143:2026-09-04T08:56:57Z:re_review",
       "comment_id": "5538120143",
@@ -32012,6 +31985,39 @@
       "status": "skipped",
       "processed_at": "2026-09-05T13:54:25.092Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139130:5552274899:2026-09-05T13:53:37Z:clawsweeper_needs_human",
+      "comment_id": "5552274899",
+      "comment_version_key": "5552274899:2026-09-05T13:53:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139130#issuecomment-5552274899",
+      "comment_created_at": "2026-09-05T13:53:37Z",
+      "comment_updated_at": "2026-09-05T13:53:37Z",
+      "comment_body_sha256": "c174f63d3233fa10f0cc567958944133aa5fd5f82028bb673812103ece918d3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139130,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The new test reaches the session-creation owner through direct handler calls with mocked Gateway context and seeded stores; reported passes do... (sha=61a8645497145c9dfdc39f21270d5231ebb0f0a2)",
+      "expected_head_sha": "61a8645497145c9dfdc39f21270d5231ebb0f0a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T13:54:36.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-selected-global-initialization-owner",
+        "head_sha": "61a8645497145c9dfdc39f21270d5231ebb0f0a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
