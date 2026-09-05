@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139088"
-mode: "autonomous"
-run_id: "33967845789"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33967845789"
-head_sha: "d86223788661a3c3f72afcdbdb24c41c6e9c3bac"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T13:48:46.290Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139088"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139088"
+mode: "plan"
+run_id: "33970206602"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33970206602"
+head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T14:00:32.266Z"
+canonical: "#139088"
+canonical_issue: "#139088"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33967845789](https://github.com/openclaw/clawsweeper/actions/runs/33967845789)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33970206602](https://github.com/openclaw/clawsweeper/actions/runs/33970206602)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139088
+Canonical: #139088
 
 ## Summary
 
-The reported carrier defect remains in preflight main f09c139f3c62ab390320a2086f1eee89f345f6bb. A narrow repair artifact is prepared. Implementation and runtime reproduction are blocked by the read-only filesystem, missing dependencies, and absent sibling Codex source. No files or GitHub state changed.
+Prepared a narrow repair plan for accepted heartbeat scratch updates disappearing during reply normalization. Checkout matches preflight main 44378c46bb04e1354f42a5826be76e1fd920c760. No changes or GitHub mutations made. Runtime reproduction, Codex source inspection, and validation remain prerequisites.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The reported carrier defect remains in preflight main f09c139f3c62ab390320a2086f
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139088 | fix_needed | planned | canonical | Keep the issue open and retain the narrow repair path. Local implementation remains blocked; no fixed or merge-ready claim is supported. |
-| #113211 | keep_closed | skipped | related | Historical context for a distinct persistence race; no closure action. |
-| #135457 | keep_closed | skipped | related | Historical context for a distinct UI defect; no closure action. |
-| cluster:issue-openclaw-openclaw-139088 | build_fix_artifact | planned | canonical | Artifact preparation can proceed, but implementation and PR publication must wait for a writable executor with dependencies and required source/proof access. |
+| #139088 | fix_needed | planned | canonical | Retain this issue as the repair owner. Recheck existing PR ownership before implementation; the supplied preflight does not establish an exhaustive open-PR search. |
+| #113211 | keep_closed | skipped | related | Historical guardrail context; preserve the owning-job deletion protection. |
+| #135457 | keep_closed | skipped | related | Historical context only; no action required. |
 
 ## Needs Human
 
