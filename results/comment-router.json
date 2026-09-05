@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-05T17:34:43.772Z",
+  "updated_at": "2026-09-05T17:34:10.984Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136761:5518497582:2026-09-05T12:00:47Z:clawsweeper_needs_human",
+      "comment_id": "5518497582",
+      "comment_version_key": "5518497582:2026-09-05T12:00:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5518497582",
+      "comment_created_at": "2026-09-03T00:35:04Z",
+      "comment_updated_at": "2026-09-05T12:00:47Z",
+      "comment_body_sha256": "d72dc1402f123b1f14b31177c51d79697baa4b7923754442aa0c2d7903e6fe33",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136761,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Historical assertion profiles and omitted lanes change release coverage; the reported frozen mobile control still fails command-surface reapproval, leaving that candidate unqualified. (sha=93d0ac5929d2944acabc3327d9af47fabc9f13d2)",
+      "expected_head_sha": "93d0ac5929d2944acabc3327d9af47fabc9f13d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T12:02:12.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-target-scenarios",
+        "head_sha": "93d0ac5929d2944acabc3327d9af47fabc9f13d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5519251935:2026-09-03T02:10:22Z:re_review",
       "comment_id": "5519251935",
@@ -32088,53 +32121,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139206:5553566690:2026-09-05T17:33:48Z:re_review",
-      "comment_id": "5553566690",
-      "comment_version_key": "5553566690:2026-09-05T17:33:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139206#issuecomment-5553566690",
-      "comment_created_at": "2026-09-05T17:33:48Z",
-      "comment_updated_at": "2026-09-05T17:33:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139206,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T17:34:41.733Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigate-telegram-progress-card-rich-text",
-        "head_sha": "6ff6a27f300abb09e7f4381dc5413f42008fb2da",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
