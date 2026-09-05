@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:44:20.114Z",
+  "updated_at": "2026-09-05T00:45:37.181Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138129:5538833455:2026-09-04T18:38:54Z:clawsweeper_auto_repair",
-      "comment_id": "5538833455",
-      "comment_version_key": "5538833455:2026-09-04T18:38:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138129#issuecomment-5538833455",
-      "comment_created_at": "2026-09-04T09:59:33Z",
-      "comment_updated_at": "2026-09-04T18:38:54Z",
-      "comment_body_sha256": "e40850027a7fc328aac0ea196c8ec6d854bf894262f42a8b08c2998d4cb28fb0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad266e311cc34b0f4f75620ce5906c82635f2ea5)",
-      "expected_head_sha": "ad266e311cc34b0f4f75620ce5906c82635f2ea5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T18:56:58.722Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-flush-cli-backends",
-        "head_sha": "ad266e311cc34b0f4f75620ce5906c82635f2ea5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138201:5539454964:2026-09-04T18:37:55Z:clawsweeper_needs_human",
       "comment_id": "5539454964",
@@ -33356,6 +33323,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1756:5548149190:2026-09-05T00:43:39Z:re_review",
+      "comment_id": "5548149190",
+      "comment_version_key": "5548149190:2026-09-05T00:43:39Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1756#issuecomment-5548149190",
+      "comment_created_at": "2026-09-05T00:43:39Z",
+      "comment_updated_at": "2026-09-05T00:43:39Z",
+      "comment_body_sha256": "625da454d1b85b0261b28495a88406e90fa495ac859e7a302dfbf3762b6ffc5c",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1756,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:45:34.500Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/image-publication-rollback",
+        "head_sha": "7fe978452b5ffcde36d85032187bfe14f133867d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
