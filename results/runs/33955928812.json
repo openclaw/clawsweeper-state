@@ -1,0 +1,120 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138954",
+  "mode": "autonomous",
+  "run_id": "33955928812",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33955928812",
+  "head_sha": "6a56eee17378928c246602b6f85f52866f406983",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138954.md",
+  "published_at": "2026-09-05T09:26:45.863Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138954",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138954",
+  "canonical_pr": null,
+  "summary": "Completed non-mutating classifications and prepared a scoped repair artifact. Current source excludes the reported ZDR error from continuation recovery, but implementation requires upstream contract verification and executable regression proof unavailable in this sandbox. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#138954",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Keep this issue as the canonical report for the narrow outbound transport repair; no closure is authorized."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138954",
+      "action": "build_fix_artifact",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on direct upstream contract inspection, a writable dependency-ready checkout, and regression/live validation. Do not broaden generic unsupported_parameter errors into replay-safe failures without that evidence."
+    },
+    {
+      "target": "#108117",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different capability and execution boundary from outbound ZDR continuation."
+    },
+    {
+      "target": "#123053",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related Responses terminology, but not a repair candidate for the outbound provider failure. Preserve its separate maintainer workflow."
+    },
+    {
+      "target": "#123215",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep separate from the native-endpoint bug; this repair must not introduce the requested configuration surface."
+    },
+    {
+      "target": "#138046",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; no ZDR fix equivalence established."
+    },
+    {
+      "target": "#138434",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; reported validation does not establish ZDR coverage."
+    },
+    {
+      "target": "#138436",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context addressing a different continuation failure."
+    },
+    {
+      "target": "#138626",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; preserve Azure behavior in any shared transport repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "keep_independent": 1,
+    "keep_related": 2,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "blocked": 1,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
