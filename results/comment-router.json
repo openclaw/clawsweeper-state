@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:57:09.095Z",
+  "updated_at": "2026-09-05T00:57:57.434Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133150:5467339050:2026-09-04T19:45:11Z:clawsweeper_auto_repair",
-      "comment_id": "5467339050",
-      "comment_version_key": "5467339050:2026-09-04T19:45:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133150#issuecomment-5467339050",
-      "comment_created_at": "2026-08-30T07:16:05Z",
-      "comment_updated_at": "2026-09-04T19:45:11Z",
-      "comment_body_sha256": "98c0dfef55eb0b395080ad3f0494405c97c3951766446ca744764dd7e1fadfe3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9b8a9a4890eb27ccfc22cb30799e4611ea24c605)",
-      "expected_head_sha": "9b8a9a4890eb27ccfc22cb30799e4611ea24c605",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:51:20.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/feat-automation-auto-disabled-readback",
-        "head_sha": "9b8a9a4890eb27ccfc22cb30799e4611ea24c605",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135087:5492493234:2026-09-04T19:35:38Z:clawsweeper_auto_repair",
       "comment_id": "5492493234",
@@ -33157,6 +33124,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138059:5548236240:2026-09-05T00:57:09Z:freeform_assist",
+      "comment_id": "5548236240",
+      "comment_version_key": "5548236240:2026-09-05T00:57:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138059#issuecomment-5548236240",
+      "comment_created_at": "2026-09-05T00:57:09Z",
+      "comment_updated_at": "2026-09-05T00:57:09Z",
+      "comment_body_sha256": "5bae70b26589bd04782fea53f3f396420f84f7674b8842a697fbd36cdcf0780d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138059,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nexact head `0261960f86fe2d60a070dc9e112e746aadf89ada` removes the redundant synthetic positive dispatch test whose agent-turn mock conflicted with the accepted production-boundary proof in hosted ci. the real model-boundary production path and all authority denial/revocation/cleanup cases remain; local isolated authority suite is 19/19 and `pnpm check:changed` is green.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:57:55.519Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/unlimited-recursive-session-spawn",
+        "head_sha": "0261960f86fe2d60a070dc9e112e746aadf89ada",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
