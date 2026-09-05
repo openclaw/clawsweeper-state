@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T09:10:32.373Z",
+  "updated_at": "2026-09-05T09:10:35.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136310:5549050296:2026-09-05T03:29:22Z:re_review",
-      "comment_id": "5549050296",
-      "comment_version_key": "5549050296:2026-09-05T03:29:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136310#issuecomment-5549050296",
-      "comment_created_at": "2026-09-05T03:29:22Z",
-      "comment_updated_at": "2026-09-05T03:29:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136310,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T03:40:01.625Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-136284-legacy-tmp-shadow-cleanup",
-        "head_sha": "0fc55f4b217391e9d524f1098d33f4f1811943df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138204:5549054988:2026-09-05T03:30:19Z:re_review",
       "comment_id": "5549054988",
@@ -32428,6 +32381,39 @@
         "kind": "pull_request",
         "branch": "codex/sqlite-goal-claw-workspace",
         "head_sha": "c95ce195553c493a24d7a4ac827ec0d990bf8d4d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138953:5550684680:2026-09-05T09:09:44Z:clawsweeper_needs_human",
+      "comment_id": "5550684680",
+      "comment_version_key": "5550684680:2026-09-05T09:09:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138953#issuecomment-5550684680",
+      "comment_created_at": "2026-09-05T08:47:44Z",
+      "comment_updated_at": "2026-09-05T09:09:44Z",
+      "comment_body_sha256": "d8b8806f958312d66f164045212d623228e9c5891893e13368efc622850f7bfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138953,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied Crabbox fixtures do not show the ingress rejecting invalidated buffered sends before Telegram I/O...; Review finding: [P1] [P1] Revalidate proof authority before forwarding buffered requests — scripts/mantis/telegram-proof-ingress.mts:217-220 - [P1] [P1] Bind quarantine authorizat... (sha=4240c3154fd7e8f8054b9f41e0bf9b7695a61d9d)",
+      "expected_head_sha": "4240c3154fd7e8f8054b9f41e0bf9b7695a61d9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T09:10:35.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mantis-request-bound-proof-producer",
+        "head_sha": "4240c3154fd7e8f8054b9f41e0bf9b7695a61d9d",
         "cluster_id": null,
         "job_path": null
       }
