@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T18:21:40.904Z",
+  "updated_at": "2026-09-05T18:22:02.971Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137184:5549856146:2026-09-05T06:04:39Z:re_review",
-      "comment_id": "5549856146",
-      "comment_version_key": "5549856146:2026-09-05T06:04:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137184#issuecomment-5549856146",
-      "comment_created_at": "2026-09-05T06:04:39Z",
-      "comment_updated_at": "2026-09-05T06:04:39Z",
-      "comment_body_sha256": "ed2af765cd0fd6365d2f5e6dadbecdfd14beff3da7411dced461754df051d25b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137184,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T12:50:04.601Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139075:5551929583:2026-09-05T12:49:15Z:re_review",
       "comment_id": "5551929583",
@@ -32309,6 +32282,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132409:5460660564:2026-09-05T18:20:28Z:clawsweeper_needs_human",
+      "comment_id": "5460660564",
+      "comment_version_key": "5460660564:2026-09-05T18:20:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132409#issuecomment-5460660564",
+      "comment_created_at": "2026-08-29T05:50:19Z",
+      "comment_updated_at": "2026-09-05T18:20:28Z",
+      "comment_body_sha256": "bc6a4344e4f5b66f3d78bac57d9494e946970979187bc344e6dc9c5a9995d51d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing deferred handlers that ignore abort and never settle will retain their claim and block same-lane messages until monitor restart; acceptance of this recovery tradeoff is not r... (sha=fee6336bcdc357ff0eeda22babe46e8902f71bfc)",
+      "expected_head_sha": "fee6336bcdc357ff0eeda22babe46e8902f71bfc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T18:22:02.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ingress-stall-retry-fence",
+        "head_sha": "fee6336bcdc357ff0eeda22babe46e8902f71bfc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
