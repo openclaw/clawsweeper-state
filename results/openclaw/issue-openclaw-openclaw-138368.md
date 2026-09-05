@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138368"
-mode: "autonomous"
-run_id: "33934118801"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33934118801"
+mode: "plan"
+run_id: "33934828256"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33934828256"
 head_sha: "e5fffb689e4ae012121be84dbb47c0b8306b14b4"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T00:57:48.405Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138368"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138368"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T01:37:15.337Z"
+canonical: "#138368"
+canonical_issue: "#138368"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33934118801](https://github.com/openclaw/clawsweeper/actions/runs/33934118801)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33934828256](https://github.com/openclaw/clawsweeper/actions/runs/33934828256)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138368
+Canonical: #138368
 
 ## Summary
 
-Local source at preflight main a592554b536c8d3ba6d833252718588451321b0d matches the reported missing-versus-empty plugin-scope condition. Implementation is blocked: the filesystem is read-only, the test runner cannot resolve tsx/esm, and authenticated GitHub discovery is unavailable. No regression reproduction, code changes, validated branch, or GitHub mutations were completed. A narrow repair artifact is provided for the executor; the issue remains open.
+Plan only: retain #138368 as the canonical hook-loading report and prepare one gated repair on clawsweeper/issue-openclaw-openclaw-138368. The checkout matches preflight main 061036abda8de52e0baf5bee15fe1206d298ef9f. No files or GitHub state were changed, and no runtime reproduction, tests, build, or Codex contract verdict is claimed. The merged catalog-agent repair #137913 remains historical context, not a fix for this report.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Local source at preflight main a592554b536c8d3ba6d833252718588451321b0d matches 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138368 | fix_needed | planned | canonical | Keep this canonical issue open. The source condition warrants the supplied narrow repair path, but production-boundary reproduction must succeed before editing or opening a PR. |
-| #137913 | keep_closed | skipped | related | Historical context only. Preserve the existing catalog repair; do not close, reopen, or treat it as fixing #138368. |
-| cluster:issue-openclaw-openclaw-138368 | build_fix_artifact | planned |  | Provide an actionable handoff without claiming implementation or validation. An appropriately provisioned executor must refresh discovery, reproduce first, repair narrowly, and validate before opening the single issue PR. |
+| #138368 | fix_needed | planned | canonical | The supplied evidence supports a focused repair investigation, not duplicate closure or a validated fix claim. Preserve the issue and gate implementation/publication on refreshed discovery and the required before/after proof. |
+| #137913 | keep_closed | skipped | related | Already closed and merged; historical evidence only. Its passing checks do not validate the proposed hook-loading repair. |
 
 ## Needs Human
 
