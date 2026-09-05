@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138672",
+  "mode": "autonomous",
+  "run_id": "33928484449",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33928484449",
+  "head_sha": "4b2e9f16d984bc78c7b8c6ebeaff81838e48aef3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138672.md",
+  "published_at": "2026-09-05T00:32:28.111Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/138672",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/138672",
+  "canonical_pr": null,
+  "summary": "Confirmed the 15-second validation deadline on preflight main and reproduced premature termination with a synthetic 37-second subprocess delay. Implementation is blocked by the read-only filesystem; both required pnpm commands fail during Corepack bootstrap. Fresh macOS arm64 reproduction and post-fix proof remain outstanding. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#138672",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138672",
+      "candidate_fix": null,
+      "reason": "The reported deadline defect remains present on the supplied main SHA. Preserve this issue as canonical and proceed through the narrow repair artifact once implementation and native proof are available."
+    },
+    {
+      "target": "#128879",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138672",
+      "candidate_fix": null,
+      "reason": "Related installer surface, different reported failure and remaining work. Leave open outside this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138672",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#138672",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan is clear despite the worker's implementation limitations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-138672",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#138672",
+      "candidate_fix": null,
+      "reason": "Opening an implementation PR is blocked on a writable checkout, a failing owner-boundary regression followed by passing repair validation, and the required fresh macOS arm64 proof. No merge or closure is authorized."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "validation command failed (pnpm check:changed): validation command runtime budget exhausted",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
