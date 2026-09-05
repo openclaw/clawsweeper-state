@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T04:49:45.018Z",
+  "updated_at": "2026-09-05T04:50:38.341Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138092:5544452942:2026-09-04T17:55:18Z:re_review",
-      "comment_id": "5544452942",
-      "comment_version_key": "5544452942:2026-09-04T17:55:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138092#issuecomment-5544452942",
-      "comment_created_at": "2026-09-04T17:55:18Z",
-      "comment_updated_at": "2026-09-04T17:55:18Z",
-      "comment_body_sha256": "d44783d8e7650da94539e911ea5583dc5f26fdfcfd57966bda25500fcc6b9ebf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138092,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T00:07:08.342Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138545:5545606062:2026-09-05T00:05:54Z:clawsweeper_needs_human",
       "comment_id": "5545606062",
@@ -32651,6 +32624,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137233:5524124888:2026-09-05T04:47:56Z:clawsweeper_needs_human",
+      "comment_id": "5524124888",
+      "comment_version_key": "5524124888:2026-09-05T04:47:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137233#issuecomment-5524124888",
+      "comment_created_at": "2026-09-03T10:12:19Z",
+      "comment_updated_at": "2026-09-05T04:47:56Z",
+      "comment_body_sha256": "6680ce65b5a13d3503973eb13a3796b4af9a9cfe44008c2c599162d22a41a6d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137233,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Scripts passing an empty selector variable will exit 1 after upgrade instead of completing a broader report or skipping target diagnostics; callers wanting the default scope must omit... (sha=19d8f01de3a0f3d1d1f57306dce151485defad29)",
+      "expected_head_sha": "19d8f01de3a0f3d1d1f57306dce151485defad29",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T04:50:38.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/capabilities-blank-selectors",
+        "head_sha": "19d8f01de3a0f3d1d1f57306dce151485defad29",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
