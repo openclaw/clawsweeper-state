@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-05T23:45:23.709Z",
+  "updated_at": "2026-09-05T23:47:47.816Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136761:5519251935:2026-09-03T02:10:22Z:re_review",
-      "comment_id": "5519251935",
-      "comment_version_key": "5519251935:2026-09-03T02:10:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5519251935",
-      "comment_created_at": "2026-09-03T02:10:22Z",
-      "comment_updated_at": "2026-09-03T02:10:22Z",
-      "comment_body_sha256": "9ccb3838750229a2bac8db32dfaded4fd2072a9e140cf0cf4875beeedfc32a48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136761,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased to current main and now includes four additional source-derived frozen core harness modes (onboard cases, mcp memory config, session repair, gateway identity). the exact head, strict-default proof, and testbox requirement are in the updated pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T19:05:25.390Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5519582087:2026-09-03T02:49:33Z:re_review",
       "comment_id": "5519582087",
@@ -33126,6 +33099,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137893:5535531758:2026-09-05T23:46:26Z:clawsweeper_needs_human",
+      "comment_id": "5535531758",
+      "comment_version_key": "5535531758:2026-09-05T23:46:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5535531758",
+      "comment_created_at": "2026-09-04T04:10:57Z",
+      "comment_updated_at": "2026-09-05T23:46:26Z",
+      "comment_body_sha256": "f85ca38977e4af6d1bf35ff71294d5b4a92cff9d4e4d63d2269bf848b2745fc2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137893,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured landing state retains an operator-owned FRV hold; its disposition remains unresolved. (sha=fcae98270e956495cb3445cbe1ef3b3b519d3f25)",
+      "expected_head_sha": "fcae98270e956495cb3445cbe1ef3b3b519d3f25",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T23:47:47.816Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fs-safe-native-legacy-package",
+        "head_sha": "fcae98270e956495cb3445cbe1ef3b3b519d3f25",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
