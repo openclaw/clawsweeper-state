@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T12:19:37.969Z",
+  "updated_at": "2026-09-05T12:20:30.485Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138876:5549809920:2026-09-05T05:55:20Z:re_review",
-      "comment_id": "5549809920",
-      "comment_version_key": "5549809920:2026-09-05T05:55:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138876#issuecomment-5549809920",
-      "comment_created_at": "2026-09-05T05:55:20Z",
-      "comment_updated_at": "2026-09-05T05:55:20Z",
-      "comment_body_sha256": "6f9545ea0178c40615677902aa1e7545917834d650469efd0cc55f152c9a6a48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138876,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T05:59:26.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/confirm-native-cancellation",
-        "head_sha": "7ec21aa9e79fe1585404be4c2e833d73f34b2369",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117240:5150030015:2026-09-05T05:57:49Z:clawsweeper_needs_human",
       "comment_id": "5150030015",
@@ -32886,6 +32839,39 @@
         "kind": "pull_request",
         "branch": "codex/update-pnpm-12-3-4",
         "head_sha": "d24b823e6e67a928311c9a33fb16b7d07edf1c22",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1447:5551767864:2026-09-05T12:19:47Z:clawsweeper_needs_human",
+      "comment_id": "5551767864",
+      "comment_version_key": "5551767864:2026-09-05T12:19:47Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1447#issuecomment-5551767864",
+      "comment_created_at": "2026-09-05T12:19:47Z",
+      "comment_updated_at": "2026-09-05T12:19:47Z",
+      "comment_body_sha256": "453def31768c067567258fae42b6af4084ed0472fdc88e882c70c889e7e5fcba",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Any upstream helper byte change stops new raw and gzip imports until ClawSweeper's digest is reviewed and updated; ownership of coordinated updates should be explicit. (sha=c1ac1b2f1a4c469e8b387ea0196ab9f6049e811b)",
+      "expected_head_sha": "c1ac1b2f1a4c469e8b387ea0196ab9f6049e811b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T12:20:30.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/repair-intake-store-materialization",
+        "head_sha": "c1ac1b2f1a4c469e8b387ea0196ab9f6049e811b",
         "cluster_id": null,
         "job_path": null
       }
