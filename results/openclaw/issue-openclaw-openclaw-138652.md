@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138652"
-mode: "autonomous"
-run_id: "33927070175"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33927070175"
-head_sha: "4e54e61804ec0da9f1a3572e536e7c6f95049190"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-04T23:26:08.453Z"
+mode: "plan"
+run_id: "33931137403"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33931137403"
+head_sha: "e5fffb689e4ae012121be84dbb47c0b8306b14b4"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T00:01:26.724Z"
 canonical: "https://github.com/openclaw/openclaw/issues/138652"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/138652"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33927070175](https://github.com/openclaw/clawsweeper/actions/runs/33927070175)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33931137403](https://github.com/openclaw/clawsweeper/actions/runs/33931137403)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/138652
 
 ## Summary
 
-Source inspection supports the empty plugins.installs startup-repair gap on preflight main 6c63f671063728bfe9d64e4a14d157b3f4d562f7. Local implementation and executable reproduction are blocked by the enforced read-only filesystem: the focused test command failed during Corepack setup before test collection. No files or GitHub state changed. A narrow, regression-first repair artifact is ready for a writable executor.
+Plan a narrow startup/Doctor repair for empty retired plugins.installs values. Local HEAD matches preflight main 62ff6248557ce2d5193fe4aeade38be5652fb5f6, and source inspection supports the reported migration gap. Runtime reproduction and validation remain pending: the checkout is read-only, node_modules is absent, and pnpm docs:list failed during Corepack initialization with EROFS. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports the empty plugins.installs startup-repair gap on pref
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138652 | fix_needed | blocked | canonical | Only local implementation is blocked. The canonical issue and narrow repair direction are clear; a writable executor must first demonstrate a failing regression on its current main before changing production code. |
-| cluster:issue-openclaw-openclaw-138652 | build_fix_artifact | planned |  | Preserve the actionable repair plan despite this worker's filesystem blocker; no unresolved maintainer product decision is required. |
+| https://github.com/openclaw/openclaw/issues/138652 | fix_needed | planned | canonical | Keep the issue open and prepare the bounded repair below. Reproduce on the executor's refreshed main before production edits or PR publication. No unresolved maintainer product decision is needed for this plan. |
 
 ## Needs Human
 
