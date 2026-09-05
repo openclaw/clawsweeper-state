@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T20:53:03.908Z",
+  "updated_at": "2026-09-05T20:53:11.680Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139164:5552788593:2026-09-05T15:22:29Z:re_review",
-      "comment_id": "5552788593",
-      "comment_version_key": "5552788593:2026-09-05T15:22:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139164#issuecomment-5552788593",
-      "comment_created_at": "2026-09-05T15:22:29Z",
-      "comment_updated_at": "2026-09-05T15:22:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139164,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T15:39:52.464Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-project-recents-global-owner",
-        "head_sha": "24ac8e09080c7d4ec07fda841ed7cb90eb6b352a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139184:5552885352:2026-09-05T15:38:33Z:clawsweeper_needs_human",
       "comment_id": "5552885352",
@@ -33163,6 +33116,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139373:5554705556:2026-09-05T20:52:18Z:clawsweeper_needs_human",
+      "comment_id": "5554705556",
+      "comment_version_key": "5554705556:2026-09-05T20:52:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139373#issuecomment-5554705556",
+      "comment_created_at": "2026-09-05T20:52:18Z",
+      "comment_updated_at": "2026-09-05T20:52:18Z",
+      "comment_body_sha256": "38dc4eec51b9b316a7b8c51f875a2aae187bacd321426ae5109ace8c71f8065e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The attached before/after screenshots could not be retrieved in this review environment, so their visual contents and sanitization remain unchecked. (sha=141f05da5c847738c72f8abae356f9e47590b408)",
+      "expected_head_sha": "141f05da5c847738c72f8abae356f9e47590b408",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T20:53:11.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/team-sidebar-resize-reflow",
+        "head_sha": "141f05da5c847738c72f8abae356f9e47590b408",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
