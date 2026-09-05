@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T08:49:07.916Z",
+  "updated_at": "2026-09-05T08:49:08.300Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135528:5500670751:2026-09-05T03:00:00Z:clawsweeper_needs_human",
-      "comment_id": "5500670751",
-      "comment_version_key": "5500670751:2026-09-05T03:00:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135528#issuecomment-5500670751",
-      "comment_created_at": "2026-09-01T21:27:40Z",
-      "comment_updated_at": "2026-09-05T03:00:00Z",
-      "comment_body_sha256": "ea0fbbbf6c6ed467310eb9ecd6da5d276f84ad66bd661d098ab894c508ec02f9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135528,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations retaining skills.workshop.allowSymlinkTargetWrites require Doctor repair; the accepted schema-16 cutover also intentionally removes unattributable review-cache... (sha=2e059cb189e417c02017a75efda1104e7d9b210e)",
-      "expected_head_sha": "2e059cb189e417c02017a75efda1104e7d9b210e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T03:03:41.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workshop-global-skill-ownership",
-        "head_sha": "2e059cb189e417c02017a75efda1104e7d9b210e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135889:5504296414:2026-09-05T02:59:45Z:clawsweeper_auto_repair",
       "comment_id": "5504296414",
@@ -32269,6 +32236,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138504:5550687059:2026-09-05T08:48:14Z:re_review",
+      "comment_id": "5550687059",
+      "comment_version_key": "5550687059:2026-09-05T08:48:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138504#issuecomment-5550687059",
+      "comment_created_at": "2026-09-05T08:48:14Z",
+      "comment_updated_at": "2026-09-05T08:48:14Z",
+      "comment_body_sha256": "789cd039ce0ac5e5057b1cafaf10ec90d180431a8f0762553d294a7fee594cab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138504,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T08:49:04.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-138424-claude-cli-win-spawn-path",
+        "head_sha": "fdcde1b9684b29ff24fd09436cbfafb4bb1ebdc9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138970:5550655036:2026-09-05T08:48:05Z:clawsweeper_needs_human",
