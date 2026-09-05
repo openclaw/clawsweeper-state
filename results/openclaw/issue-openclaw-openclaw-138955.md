@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138955"
-mode: "plan"
-run_id: "33959208070"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33959208070"
+mode: "autonomous"
+run_id: "33955934673"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33955934673"
 head_sha: "6a56eee17378928c246602b6f85f52866f406983"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-05T10:31:48.492Z"
-canonical: "#138955"
-canonical_issue: "#138955"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-05T09:38:28.835Z"
+canonical: "https://github.com/openclaw/openclaw/issues/138955"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/138955"
 canonical_pr: null
-actions_total: 2
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33959208070](https://github.com/openclaw/clawsweeper/actions/runs/33959208070)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33955934673](https://github.com/openclaw/clawsweeper/actions/runs/33955934673)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #138955
+Canonical: https://github.com/openclaw/openclaw/issues/138955
 
 ## Summary
 
-Prepared a bounded diagnostic repair plan against preflight main 6a0423c3c97801836ce97a94a10e30094c7d3850. No edits or GitHub mutations. Runtime reproduction, branch validation, and existing-PR discovery remain pending.
+Prepared a narrow diagnostic repair artifact against preflight main bf90b12fe5156fdcb4c65d4c6500da530198b09c. Source inspection and an error-reader probe confirm the defect. Implementation and browser validation are blocked by the read-only filesystem and missing dependencies. No files or GitHub items changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,10 @@ Prepared a bounded diagnostic repair plan against preflight main 6a0423c3c978018
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138955 | fix_needed | planned | canonical | Plan the authorized repair, retaining reproduction and existing-PR checks as prerequisites. This does not authorize wider permissions or bypassing failed repository verification. |
-| #133700 | keep_closed | skipped | related | Historical context for retry and repository-discovery behavior; no closure action. |
+| #138955 | fix_needed | planned | canonical | Repair the existing permission diagnostic without changing authorization, saved defaults, or protocol definitions. |
+| #133700 | keep_closed | skipped | related | Historical context only; no closure or other mutation. |
+| cluster:issue-openclaw-openclaw-138955 | build_fix_artifact | planned | canonical | The narrow repair is sufficiently specified for a writable executor; runtime reproduction remains a pre-edit gate. |
+| cluster:issue-openclaw-openclaw-138955 | open_fix_pr | blocked | canonical | PR publication is blocked until a writable executor reproduces the failure, implements the repair, passes validation, and captures required UI evidence. |
 
 ## Needs Human
 
