@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139278",
+  "mode": "autonomous",
+  "run_id": "33988470815",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33988470815",
+  "head_sha": "0c05db6804c797e671d0c0a6c4e3c8a10d5993d5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139278.md",
+  "published_at": "2026-09-05T20:02:55.213Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/139278",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/139278",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported coupling in preflight main. Narrow fix artifact prepared; implementation and validation are blocked by the read-only checkout and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#139278",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "Source supports an ordinary, bounded playback bug. Preserve #139278 as the implementation owner; do not close or merge."
+    },
+    {
+      "target": "#139279",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "Keep open as separate related work; this fix does not satisfy its requested behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139278",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "A one-line production repair is supported by source inspection; executable before/after regression proof is required before applying it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139278",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked until a writable executor establishes the failing regression, applies the repair, completes review, and passes required validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
