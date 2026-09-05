@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T11:49:48.089Z",
+  "updated_at": "2026-09-05T11:51:07.981Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138836:5549500958:2026-09-05T04:59:16Z:clawsweeper_needs_human",
-      "comment_id": "5549500958",
-      "comment_version_key": "5549500958:2026-09-05T04:59:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138836#issuecomment-5549500958",
-      "comment_created_at": "2026-09-05T04:59:16Z",
-      "comment_updated_at": "2026-09-05T04:59:16Z",
-      "comment_body_sha256": "1d454c22a25cf7b8a5e952b0b2c4b9c112660986ba7d64f0a3fbdc127a588684",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138836,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: show an allowed Feishu tap resuming the waiting agent and excluded or revoked senders rejected before question-...; Review finding: [P1] Authorize the Feishu sender before resolving a question — extensions/feishu/src/card-action.ts:565-570 - [P2] Allow fresh taps to retry a failed question subm... (sha=3982f66caaa11791b84aea9aad7cf754583bd946)",
-      "expected_head_sha": "3982f66caaa11791b84aea9aad7cf754583bd946",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T05:03:20.091Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/feishu-askuser-question-buttons",
-        "head_sha": "3982f66caaa11791b84aea9aad7cf754583bd946",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138866:5549502313:2026-09-05T04:59:31Z:clawsweeper_needs_human",
       "comment_id": "5549502313",
@@ -32981,6 +32948,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136623:5551576868:2026-09-05T11:50:15Z:re_review",
+      "comment_id": "5551576868",
+      "comment_version_key": "5551576868:2026-09-05T11:50:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136623#issuecomment-5551576868",
+      "comment_created_at": "2026-09-05T11:50:15Z",
+      "comment_updated_at": "2026-09-05T11:50:15Z",
+      "comment_body_sha256": "72211dd4a2be3d2792490e2b8553b0ecd0a73f28e034d42eed58ce09eacb74e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136623,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T11:51:06.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/grep-json-byte-framing",
+        "head_sha": "b917bf4605cbf8c3639e314e07a8ab027c6c2b91",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
