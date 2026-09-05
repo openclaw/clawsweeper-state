@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138684"
-mode: "autonomous"
-run_id: "33930557014"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33930557014"
+mode: "plan"
+run_id: "33934831692"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33934831692"
 head_sha: "e5fffb689e4ae012121be84dbb47c0b8306b14b4"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T00:29:55.099Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138684"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138684"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T01:09:08.615Z"
+canonical: "#138684"
+canonical_issue: "#138684"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33930557014](https://github.com/openclaw/clawsweeper/actions/runs/33930557014)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33934831692](https://github.com/openclaw/clawsweeper/actions/runs/33934831692)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138684
+Canonical: #138684
 
 ## Summary
 
-Canonical issue retained; narrow conditional repair artifact prepared. Implementation is blocked by read-only filesystem permissions, missing dependencies, and an unavailable required main revision. Local source supports the reported preflight gap, but latest-main reproduction was not possible. No files, services, or GitHub state were changed.
+Keep #138684 open and plan a narrow candidate-cleanliness repair. Source inspection at the artifact's main SHA confirms the acceptance gap; runtime reproduction remains pending. No files, services, or GitHub state were changed. Existing-PR discovery requires authenticated executor access. A separate Gateway-descendant CLI handoff path needs follow-up and is not covered by the proposed preflight-only repair.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Canonical issue retained; narrow conditional repair artifact prepared. Implement
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138684 | fix_needed | blocked | canonical | Implementation is blocked until a writable, dependency-ready checkout of freshly verified main is available. Establish the failing regression before editing; do not open a PR if the defect no longer reproduces. The canonical classification is clear and requires no maintainer judgment. |
-| cluster:issue-openclaw-openclaw-138684 | build_fix_artifact | planned |  | Return the scoped executor plan despite implementation blockers. No merge, closure, publication, or completed-fix recommendation is made. |
+| #138684 | fix_needed | planned | canonical | A non-security availability defect has a narrow existing owner and reusable cleanliness contract. Plan failing/passing regression proof before implementation, retain restart and migration safeguards, and leave publication gated on validation and duplicate-PR discovery. |
 
 ## Needs Human
 
