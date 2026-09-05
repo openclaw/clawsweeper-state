@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33977632847",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33977632847",
+  "head_sha": "42226a81c43c2c8ded17a684a706e58f3a58577a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-09-05T17:06:31.605Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Current source still omits the SCP deadline. Implementation and reproduction are blocked by read-only access and missing dependencies; the focused test failed before collection with Corepack EROFS. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "The unattended-hang report remains applicable to the inspected source; merged cancellation work does not cover it."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical timeout proposal; no closure or branch replacement action."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical related work by @zenglingbiao; not an open implementation candidate."
+    },
+    {
+      "target": "#132552",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Preserve the merged cancellation repair; it is not a complete fix for #98468."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "A two-file implementation plan remains useful despite this worker's inability to edit or run the required reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Publication is blocked on a writable executor completing ownership recheck, dependency inspection, failing reproduction, implementation and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
