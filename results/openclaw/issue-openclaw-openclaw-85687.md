@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-85687"
 mode: "autonomous"
-run_id: "33968519225"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33968519225"
-head_sha: "fd710b694235ee9ad912d6296d1266b0a861b328"
+run_id: "33966244019"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33966244019"
+head_sha: "de425718e283e72d9cb98a9ef041f2fe4ee8f6c2"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-05T13:57:38.088Z"
+published_at: "2026-09-05T13:09:17.611Z"
 canonical: "https://github.com/openclaw/openclaw/issues/85687"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/85687"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33968519225](https://github.com/openclaw/clawsweeper/actions/runs/33968519225)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33966244019](https://github.com/openclaw/clawsweeper/actions/runs/33966244019)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/85687
 
 ## Summary
 
-Prepared a narrow repair plan. Implementation and reproduction are blocked by the read-only filesystem, missing dependencies and sibling Codex source, and unavailable GitHub access. No code or GitHub state changed.
+Prepared a narrow repair plan for heartbeat transcript pollution. Implementation is blocked by missing required Codex source inspection and unavailable dependencies in this read-only checkout. No code or GitHub mutations occurred.
 
 ## Impact
 
@@ -67,9 +67,9 @@ Prepared a narrow repair plan. Implementation and reproduction are blocked by th
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #85687 | fix_needed | planned | canonical | Keep this issue as the canonical repair request. The source observations support the supplied narrow plan, but latest-main reproduction remains unverified. |
-| cluster:issue-openclaw-openclaw-85687 | build_fix_artifact | planned |  | Return an executor-ready plan with explicit prerequisites; this artifact is not a validated patch. |
-| cluster:issue-openclaw-openclaw-85687 | open_fix_pr | blocked |  | Blocked until a writable executor can verify current main and existing PR state, inspect Codex source, establish the required failing regression, implement the repair, and pass validation. |
+| #85687 | fix_needed | planned | canonical | Source evidence supports focused repair work. Keep the issue open while dependency proof and regression validation are completed. |
+| cluster:issue-openclaw-openclaw-85687 | build_fix_artifact | planned |  | A bounded artifact remains useful despite this worker's implementation limitations. |
+| cluster:issue-openclaw-openclaw-85687 | open_fix_pr | blocked |  | Implementation requires a writable executor with dependencies, direct Codex contract inspection, and a demonstrated failing/passing regression before PR publication. |
 
 ## Needs Human
 
