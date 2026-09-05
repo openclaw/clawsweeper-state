@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138672"
-mode: "autonomous"
-run_id: "33928484449"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33928484449"
-head_sha: "4b2e9f16d984bc78c7b8c6ebeaff81838e48aef3"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T00:32:28.111Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138672"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138672"
+mode: "plan"
+run_id: "33934833603"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33934833603"
+head_sha: "e5fffb689e4ae012121be84dbb47c0b8306b14b4"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T01:06:01.918Z"
+canonical: "#138672"
+canonical_issue: "#138672"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33928484449](https://github.com/openclaw/clawsweeper/actions/runs/33928484449)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33934833603](https://github.com/openclaw/clawsweeper/actions/runs/33934833603)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138672
+Canonical: #138672
 
 ## Summary
 
-Confirmed the 15-second validation deadline on preflight main and reproduced premature termination with a synthetic 37-second subprocess delay. Implementation is blocked by the read-only filesystem; both required pnpm commands fail during Corepack bootstrap. Fresh macOS arm64 reproduction and post-fix proof remain outstanding. No files or GitHub state changed.
+Route #138672 to central OpenClaw security handling under the preflight's explicit quarantine gate. Keep #128879 open as a related but distinct Intel macOS compatibility report. No fix artifact is authorized while the canonical item's security gate remains unresolved. No code changes, tests, or GitHub mutations were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,7 +54,7 @@ Confirmed the 15-second validation deadline on preflight main and reproduced pre
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): validation command runtime budget exhausted |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -66,10 +66,8 @@ Confirmed the 15-second validation deadline on preflight main and reproduced pre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138672 | fix_needed | planned | canonical | The reported deadline defect remains present on the supplied main SHA. Preserve this issue as canonical and proceed through the narrow repair artifact once implementation and native proof are available. |
-| #128879 | keep_related | planned | related | Related installer surface, different reported failure and remaining work. Leave open outside this repair. |
-| cluster:issue-openclaw-openclaw-138672 | build_fix_artifact | planned |  | A narrow repair plan is clear despite the worker's implementation limitations. |
-| cluster:issue-openclaw-openclaw-138672 | open_fix_pr | blocked |  | Opening an implementation PR is blocked on a writable checkout, a failing owner-boundary regression followed by passing repair validation, and the required fresh macOS arm64 proof. No merge or closure is authorized. |
+| #138672 | route_security | planned | security_sensitive | Honor the explicit item-level quarantine rather than infer clearance from the implementation request. This routing is not a finding that the reported timeout constitutes a vulnerability. Central handling must reconcile the conflicting classification before a repair run proceeds; do not comment, label, close, merge, or create a fix PR for this item. |
+| #128879 | keep_related | planned | related | Shared plugin and setup surface do not establish duplicate root causes. Preserve this distinct platform/version report without extending the canonical item's quarantine or opening a separate repair under this job. |
 
 ## Needs Human
 

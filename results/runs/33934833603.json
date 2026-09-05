@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138672",
+  "mode": "plan",
+  "run_id": "33934833603",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33934833603",
+  "head_sha": "e5fffb689e4ae012121be84dbb47c0b8306b14b4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138672.md",
+  "published_at": "2026-09-05T01:06:01.918Z",
+  "canonical": "#138672",
+  "canonical_issue": "#138672",
+  "canonical_pr": null,
+  "summary": "Route #138672 to central OpenClaw security handling under the preflight's explicit quarantine gate. Keep #128879 open as a related but distinct Intel macOS compatibility report. No fix artifact is authorized while the canonical item's security gate remains unresolved. No code changes, tests, or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#138672",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": "#138672",
+      "candidate_fix": null,
+      "reason": "Honor the explicit item-level quarantine rather than infer clearance from the implementation request. This routing is not a finding that the reported timeout constitutes a vulnerability. Central handling must reconcile the conflicting classification before a repair run proceeds; do not comment, label, close, merge, or create a fix PR for this item."
+    },
+    {
+      "target": "#128879",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138672",
+      "candidate_fix": null,
+      "reason": "Shared plugin and setup surface do not establish duplicate root causes. Preserve this distinct platform/version report without extending the canonical item's quarantine or opening a separate repair under this job."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
