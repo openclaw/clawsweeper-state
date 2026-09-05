@@ -67,25 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the existing documented Telegram sessions_spawn(thread:true, mode:"session") capability exposure tracked at https://github.com/openclaw/openclaw/issues/42986. First recheck linked/open PRs to avoid duplicate work. Establish a failing current-source regression showing that a configured Telegram current-conversation binding adapter is excluded from the tool schema and runtime capability list. Separate explicit binding support from automatic child-thread placement using existing channel/binding contracts, then update the two discovery consumers consistently. Preserve the child-only predicate used by ACP slash-command defaults, Telegram current placement, Discord/Matrix child placement, iMessage current placement, account overrides, disabled policies, and rejection of unsupported channels. Reuse the current shared spawn-plan and session-binding service; do not restore subagent_spawning hooks, add configuration, change persistence schemas, or introduce automatic Telegram topic creation. Extend existing focused tests rather than duplicating suites; prove the regression fails before and passes after. Validate Telegram spawn acceptance, bound follow-up routing, and lifecycle behavior through the telegram-e2e-userbot skill before landing. Treat the closed-unmerged historical PRs as context, not landed fixes. Stop for renewed review if a new public capability, configuration option, security policy, or storage design becomes necessary. Target net-neutral production changes and report production/test deltas. Put user-visible release context in the PR body; do not edit release-owned CHANGELOG.md.
+Repair the documented native Telegram persistent-subagent workflow for https://github.com/openclaw/openclaw/issues/42986. Current docs/tools/subagents.md and extensions/telegram/src/config-ui-hints.ts promise sessions_spawn(thread=true) using current-conversation placement, and the Telegram adapter already implements it. Before editing, establish a failing regression: with a registered current-placement channel and enabled thread-binding/spawn policy, createSessionsSpawnTool omits thread and session mode, while collectRuntimeChannelCapabilities omits matching capabilities. Separate explicit binding availability from automatic child-thread placement in the shared capability selection; reuse existing channel metadata and account policy without loading broad plugin runtimes. Align schema and prompt capabilities. Preserve Telegram current placement, existing binding ownership and delivery, account overrides, disabled/unsupported behavior, Discord/Matrix child placement, and commands-acp/shared.ts default thread selection. Do not restore subagent_spawning, add configuration or public SDK contracts, change persistence, or add automatic Telegram child-topic creation. Stop for renewed review if those changes become necessary. Recheck for an open canonical repair before opening a PR. Related context: https://github.com/openclaw/openclaw/issues/77164 and the closed unmerged https://github.com/openclaw/openclaw/pull/82023. Extend existing focused tests, demonstrate pre-fix failure and post-fix success, and verify the resulting Telegram behavior under repository proof policy before landing. Put user-visible behavior and references in the PR body; do not edit release-owned CHANGELOG.md.
 
 Likely files:
 
-- src/channels/thread-bindings-policy.ts
-- src/channels/thread-bindings-policy.test.ts
 - src/agents/tools/sessions-spawn-tool.ts
 - src/agents/tools/sessions-spawn-tool.test.ts
 - src/agents/runtime-capabilities.ts
 - src/agents/runtime-capabilities.test.ts
-- src/agents/subagents/spawn/subagent-spawn.thread-binding.test.ts
+- src/channels/thread-bindings-policy.ts
+- src/channels/thread-bindings-policy.test.ts
 
 Validation:
 
-- node scripts/run-vitest.mjs src/channels/thread-bindings-policy.test.ts src/agents/runtime-capabilities.test.ts src/agents/tools/sessions-spawn-tool.test.ts
-- node scripts/run-vitest.mjs src/agents/subagents/spawn/subagent-spawn.thread-binding.test.ts extensions/telegram/src/thread-bindings.test.ts
-- node scripts/run-vitest.mjs src/auto-reply/reply/commands-acp/shared.test.ts src/auto-reply/reply/commands-acp.test.ts
+- pnpm test src/agents/tools/sessions-spawn-tool.test.ts src/agents/runtime-capabilities.test.ts src/channels/thread-bindings-policy.test.ts
+- pnpm test src/agents/sessions-spawn-hooks.test.ts src/agents/subagents/spawn/subagent-spawn.thread-binding.test.ts extensions/telegram/src/thread-bindings.test.ts
+- pnpm check:changed
 - git diff --check
-- Use telegram-e2e-userbot for Telegram spawn, bound follow-up, and lifecycle proof; redact captured evidence.
 
 ## Operator Prompt
 
