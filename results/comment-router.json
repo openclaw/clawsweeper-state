@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T07:47:31.420Z",
+  "updated_at": "2026-09-05T07:47:47.142Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5548765436:2026-09-05T02:33:02Z:re_review",
-      "comment_id": "5548765436",
-      "comment_version_key": "5548765436:2026-09-05T02:33:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5548765436",
-      "comment_created_at": "2026-09-05T02:33:02Z",
-      "comment_updated_at": "2026-09-05T02:33:02Z",
-      "comment_body_sha256": "ed34341216df659f3fef98f1431564ab01257f3b2a618ef2c6c7b6f8c55778cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T02:33:57.603Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "472d07f18dd0c28f4d1b7c153e690dc8e9a497fa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138785:5548771855:2026-09-05T02:34:14Z:re_review",
       "comment_id": "5548771855",
@@ -32325,6 +32278,39 @@
         "kind": "pull_request",
         "branch": "fix/contacts-dedupe-page-token",
         "head_sha": "954989980bd619b54af43db7b1dfe9d04e214c85",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:128954:5403950849:2026-09-05T07:46:36Z:clawsweeper_auto_repair",
+      "comment_id": "5403950849",
+      "comment_version_key": "5403950849:2026-09-05T07:46:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/128954#issuecomment-5403950849",
+      "comment_created_at": "2026-08-25T01:47:08Z",
+      "comment_updated_at": "2026-09-05T07:46:36Z",
+      "comment_body_sha256": "f09cc3649bcf34a95acc837128860a001e2acbef9d025a7dd2925ce1e07cec42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 128954,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6fc1d460e6c7d8099f317497cc312ab4b6bccca3)",
+      "expected_head_sha": "6fc1d460e6c7d8099f317497cc312ab4b6bccca3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T07:47:47.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/color-blindness-themes-in-web-ui",
+        "head_sha": "6fc1d460e6c7d8099f317497cc312ab4b6bccca3",
         "cluster_id": null,
         "job_path": null
       }
