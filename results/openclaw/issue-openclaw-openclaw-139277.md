@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139277"
-mode: "autonomous"
-run_id: "33988117935"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33988117935"
+mode: "plan"
+run_id: "33988474459"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33988474459"
 head_sha: "0c05db6804c797e671d0c0a6c4e3c8a10d5993d5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T19:54:06.636Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139277"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139277"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T19:58:51.343Z"
+canonical: "#139277"
+canonical_issue: "#139277"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33988117935](https://github.com/openclaw/clawsweeper/actions/runs/33988117935)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33988474459](https://github.com/openclaw/clawsweeper/actions/runs/33988474459)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139277
+Canonical: #139277
 
 ## Summary
 
-Source inspection confirms the reconnect defect at the supplied main SHA. A narrow fix artifact is ready. Implementation and runtime reproduction are blocked by the read-only workspace; live related-PR rechecks require GitHub access. No files or GitHub state were changed.
+Plan a narrow Android reconnect repair. The checkout matches preflight main 6b1314938d6dc37c187ae071271faf564ae19da4 and retains the reported selection-reset path. No files or GitHub state changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Source inspection confirms the reconnect defect at the supplied main SHA. A narr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139277 | fix_needed | planned | canonical | The gateway-scoped runtime owner can preserve the existing selection contract without settings, persistence, schema, provider, or session-key-format changes. |
-| cluster:issue-openclaw-openclaw-139277 | build_fix_artifact | planned |  | The source finding supports a narrow executor plan; a failing production-callback regression remains mandatory before implementation. |
-| cluster:issue-openclaw-openclaw-139277 | open_fix_pr | blocked |  | The executor must recheck current main and related work, obtain a failing regression, implement and validate in a writable checkout, then create or update the single authorized branch's PR. Merge and issue closure remain prohibited. |
+| #139277 | fix_needed | planned | canonical | The source inspection supports a bounded lifecycle repair. Retain the issue while the executor checks related PRs, reproduces the failure, implements the owner-level fix, and completes validation. |
 
 ## Needs Human
 
