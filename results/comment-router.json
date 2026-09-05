@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:36:20.447Z",
+  "updated_at": "2026-09-05T00:37:26.948Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135808:5503407292:2026-09-04T18:36:20Z:clawsweeper_needs_human",
-      "comment_id": "5503407292",
-      "comment_version_key": "5503407292:2026-09-04T18:36:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135808#issuecomment-5503407292",
-      "comment_created_at": "2026-09-02T02:25:54Z",
-      "comment_updated_at": "2026-09-04T18:36:20Z",
-      "comment_body_sha256": "d0dc9c1123958d5660b8b1d4f860210d7fe4dc99b3237691a4836e7d9f1abf10",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135808,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Verify the pinned native transport contract** - The new Rust engine directly relies on str0m 0.23.1 for ICE and WebRTC behavior; upstream source and documentation were unavailable to th...; Review finding: [low] Verify the pinned native transport contract — apps/shared/OpenClawWatchRTC/Cargo.toml:12 (sha=907572fb2cff8e61fc18d663b017c0b9a411a172)",
-      "expected_head_sha": "907572fb2cff8e61fc18d663b017c0b9a411a172",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T18:56:58.722Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/watch-native-realtime-voice",
-        "head_sha": "907572fb2cff8e61fc18d663b017c0b9a411a172",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137507:5530917102:2026-09-04T18:37:24Z:clawsweeper_auto_repair",
       "comment_id": "5530917102",
@@ -33314,6 +33281,53 @@
       "status": "skipped",
       "processed_at": "2026-09-05T00:36:20.447Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127177:5548106200:2026-09-05T00:36:31Z:re_review",
+      "comment_id": "5548106200",
+      "comment_version_key": "5548106200:2026-09-05T00:36:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127177#issuecomment-5548106200",
+      "comment_created_at": "2026-09-05T00:36:31Z",
+      "comment_updated_at": "2026-09-05T00:36:31Z",
+      "comment_body_sha256": "78b37faeebe1c894de12fef821e7bd8ee22f37fe3fed1ed1d964b229fe441fb5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127177,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:37:24.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-shared-client-platform-metadata",
+        "head_sha": "e081101d616dd7d13b7dac37e167a268c161067d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
