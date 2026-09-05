@@ -67,19 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair Android Talk agent selection across same-gateway reconnect for https://github.com/openclaw/openclaw/issues/139277. First recheck whether an open PR already owns this fix. Establish a failing regression through the operator disconnect/hello lifecycle: select a non-default agent, retain a non-main chat, reconnect with a different gateway default, and inspect the Talk destination. NodeRuntime currently clears selectedChatAgentId in clearOperatorGatewayState and prepares the hello default unconditionally. Preserve gateway-scoped selection intent across transient transport loss and apply it through the existing canonical chat/Talk binding. Keep gateway replacement, forgetting, stale async selections, and unavailable-agent behavior correctly scoped. Cover both realtime talk.session.create and ordinary Talk chat.send destinations; inspect Wear’s explicit-session path for collateral changes. Prefer absorbing the repair into the existing owner with neutral or negative production LOC. Do not add configuration, durable storage, schema changes, or thread targeting; stop for renewed triage if those become necessary. Extend existing Android regression coverage and obtain sanitized Android before/after evidence for picker and voice destination. Run focused Android tests and applicable lint. Put release-note context in the PR body; do not edit CHANGELOG.md.
+Repair Android Talk agent selection across transient reconnects for https://github.com/openclaw/openclaw/issues/139277. First recheck live related work and avoid opening a duplicate if an existing PR owns the fix. Establish a failing regression through the production connection callbacks: select a non-default agent, select or restore one of its non-main chats, disconnect and reconnect to the same gateway with a different default agent, then inspect the Talk request's sessionKey and the displayed Chat owner. NodeRuntime currently clears selectedChatAgentId in clearOperatorGatewayState and prepares Talk from hello.mainSessionKey on reconnect. Preserve or restore the intended selection at the gateway-scoped runtime owner before rebinding consumers. Preserve explicit gateway-switch isolation, removed-agent handling, newer user selections during reconnect, and the existing agent-plus-device key format. Cover both realtime talk.session.create and native Talk chat.send. Extend focused selection/lifecycle coverage and obtain redacted Android before/after request evidence. Do not add settings, disk persistence, schema changes, arbitrary thread targeting, or provider behavior changes; stop for renewed triage if those become necessary. Run focused Android tests, Android lint/style checks, and the repository changed checks. Keep release-note context and reporter credit in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - apps/android/app/src/main/java/ai/openclaw/app/NodeRuntime.kt
 - apps/android/app/src/test/java/ai/openclaw/app/NodeRuntimeAgentSelectionTest.kt
 - apps/android/app/src/test/java/ai/openclaw/app/voice/TalkModeManagerTest.kt
+- docs/platforms/android.md
 
 Validation:
 
-- cd apps/android && ./gradlew :app:testPlayDebugUnitTest --tests ai.openclaw.app.NodeRuntimeAgentSelectionTest --tests ai.openclaw.app.SessionKeyTest --tests ai.openclaw.app.voice.TalkModeManagerTest
+- cd apps/android && ./gradlew :app:testPlayDebugUnitTest --tests ai.openclaw.app.NodeRuntimeAgentSelectionTest --tests ai.openclaw.app.voice.TalkModeManagerTest
 - cd apps/android && ./gradlew :app:ktlintCheck :app:lintPlayDebug
-- Verify on Android that same-gateway reconnect preserves the selected Talk agent, while switching gateways does not reuse another gateway’s selection.
+- pnpm check:changed
+- git diff --check
+- On an isolated Android setup, verify the selected agent before and after a same-gateway reconnect in both native Talk and realtime relay request traces; also verify gateway switching and a newer picker selection remain isolated.
 
 ## Operator Prompt
 
