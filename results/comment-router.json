@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T16:45:10.056Z",
+  "updated_at": "2026-09-05T16:45:33.177Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138850:5549536243:2026-09-05T11:03:35Z:clawsweeper_needs_human",
-      "comment_id": "5549536243",
-      "comment_version_key": "5549536243:2026-09-05T11:03:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138850#issuecomment-5549536243",
-      "comment_created_at": "2026-09-05T05:06:14Z",
-      "comment_updated_at": "2026-09-05T11:03:35Z",
-      "comment_body_sha256": "128ce0721ba7e0e19deed6b1fd80f04dd8a6507be28fa89dce4aecd42c958fe1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138850,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Configurations retaining wizard.localModelLeanAutoModel fail strict validation until Doctor migrates them; the documented successful upgrade does not remove that operator requirement. (sha=fef477898f2eb64ee0078e17dbf16fc5a7b80c11)",
-      "expected_head_sha": "fef477898f2eb64ee0078e17dbf16fc5a7b80c11",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T11:37:23.416Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/local-model-agent-scope",
-        "head_sha": "fef477898f2eb64ee0078e17dbf16fc5a7b80c11",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138952:5550673014:2026-09-05T11:02:51Z:clawsweeper_needs_human",
       "comment_id": "5550673014",
@@ -32147,6 +32114,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127775:5553279265:2026-09-05T16:44:46Z:re_review",
+      "comment_id": "5553279265",
+      "comment_version_key": "5553279265:2026-09-05T16:44:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127775#issuecomment-5553279265",
+      "comment_created_at": "2026-09-05T16:44:46Z",
+      "comment_updated_at": "2026-09-05T16:44:46Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127775,
+      "author": "shad0wca7",
+      "author_id": 9969843,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T16:45:31.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/fix-wiki-agent-context",
+        "head_sha": "4789a7d814627e3ced4734cc157ff42c569d8e00",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
