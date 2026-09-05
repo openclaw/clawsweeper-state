@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:58:31.914Z",
+  "updated_at": "2026-09-05T00:58:40.702Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136322:5510359918:2026-09-04T19:37:39Z:clawsweeper_auto_repair",
-      "comment_id": "5510359918",
-      "comment_version_key": "5510359918:2026-09-04T19:37:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136322#issuecomment-5510359918",
-      "comment_created_at": "2026-09-02T13:32:48Z",
-      "comment_updated_at": "2026-09-04T19:37:39Z",
-      "comment_body_sha256": "fc66d74f7b0bdb0040317a25f5bef167a11e27c0a05f97d20b6e1bae42447952",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136322,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4bc6763ec83306848456015fe010b4643db46862)",
-      "expected_head_sha": "4bc6763ec83306848456015fe010b4643db46862",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:51:20.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/136262-openai-completions-cumulative-delta",
-        "head_sha": "4bc6763ec83306848456015fe010b4643db46862",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137614:5533104208:2026-09-04T19:45:16Z:clawsweeper_needs_human",
-      "comment_id": "5533104208",
-      "comment_version_key": "5533104208:2026-09-04T19:45:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137614#issuecomment-5533104208",
-      "comment_created_at": "2026-09-03T22:46:02Z",
-      "comment_updated_at": "2026-09-04T19:45:16Z",
-      "comment_body_sha256": "c98aec2cd2c75cb6cd033e11a7c3b79b3866b7883045f2794c3600438c46f2c8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137614,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Production code grows by 62 net lines to establish a shared internal projection; the abstraction is justified by removing duplicated quadratic snapshot work, but future snapshot calle... (sha=16f7fb1799fbe0318d38b30d7f28956aae3ff7a2)",
-      "expected_head_sha": "16f7fb1799fbe0318d38b30d7f28956aae3ff7a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-04T19:51:20.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/health-heartbeat-roster-batch",
-        "head_sha": "16f7fb1799fbe0318d38b30d7f28956aae3ff7a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137654:5533683178:2026-09-04T19:46:08Z:clawsweeper_needs_human",
       "comment_id": "5533683178",
@@ -33199,6 +33133,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136699:5548155525:2026-09-05T00:44:42Z:re_review",
+      "comment_id": "5548155525",
+      "comment_version_key": "5548155525:2026-09-05T00:44:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136699#issuecomment-5548155525",
+      "comment_created_at": "2026-09-05T00:44:42Z",
+      "comment_updated_at": "2026-09-05T00:44:42Z",
+      "comment_body_sha256": "d16df8613b10392f89de9612d9b2f6586ae487b80d999955c8e2c33d269c4dff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136699,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T00:58:31.512Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-target-package-capabilities",
+        "head_sha": "0d9796661f59ddd71385d7681120025324056b95",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136699:5517536107:2026-09-05T00:57:33Z:clawsweeper_needs_human",
+      "comment_id": "5517536107",
+      "comment_version_key": "5517536107:2026-09-05T00:57:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136699#issuecomment-5517536107",
+      "comment_created_at": "2026-09-02T22:52:11Z",
+      "comment_updated_at": "2026-09-05T00:57:33Z",
+      "comment_body_sha256": "c3a9c5a574ae920014292d00d4176c7fd68a0bc532dddbd1f4e677a6b3c3f967",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136699,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported exact-head tarball controls address linked manifests, but not candidate .npmrc directing...; Review finding: [P1] Reject project npm configuration before collecting inventory — scripts/lib/npm-pack-inventory.mts:201-204 - [high] Candidate .npmrc controls external log dest... (sha=0d9796661f59ddd71385d7681120025324056b95)",
+      "expected_head_sha": "0d9796661f59ddd71385d7681120025324056b95",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T00:58:40.701Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-target-package-capabilities",
+        "head_sha": "0d9796661f59ddd71385d7681120025324056b95",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
