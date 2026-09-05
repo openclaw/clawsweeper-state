@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139249"
-mode: "autonomous"
-run_id: "33982290322"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33982290322"
-head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T18:20:54.687Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139249"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139249"
+mode: "plan"
+run_id: "33984346428"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33984346428"
+head_sha: "f9deb128e547d65d6fa39c563fa391ea2dfdf490"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T18:38:33.810Z"
+canonical: "#139249"
+canonical_issue: "#139249"
 canonical_pr: null
-actions_total: 3
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33982290322](https://github.com/openclaw/clawsweeper/actions/runs/33982290322)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33984346428](https://github.com/openclaw/clawsweeper/actions/runs/33984346428)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139249
+Canonical: #139249
 
 ## Summary
 
-Implementation is blocked by the read-only workspace, missing dependencies and Codex source, and unavailable preflight main commit. Preserved the job's conditional repair plan; no code or GitHub changes, reproduction, or validation completed.
+Preserve the canonical issue and both existing contributor PRs; do not create competing work. Keep #84516 independent. Classification uses the supplied live preflight. No code changes, tests, or GitHub mutations were performed. No Codex correctness verdict is issued: the required sibling source checkout is absent and cannot be cloned in this read-only environment.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,10 @@ Implementation is blocked by the read-only workspace, missing dependencies and C
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139249 | fix_needed | blocked | canonical | Resume in a writable executor with current main, installed dependencies, and the pinned Codex source. Recheck repair ownership and reproduce before changing production code. |
-| #84516 | keep_independent | planned | independent | Preserve the existing maintainer classification; no evidence establishes a shared root cause. |
-| cluster:issue-openclaw-openclaw-139249 | build_fix_artifact | planned |  | Retain an actionable repair plan while blocking implementation in this environment. |
+| #139249 | keep_canonical | planned | canonical | Existing contributor PRs already target the reported pending-preview defect. Retain the issue as the tracking hub without dispatching a third implementation. |
+| #139260 | keep_related | planned | related | Preserve this existing repair candidate and contributor attribution. Recorded CI and proof gaps prevent merge or fixed-by-candidate closeout; they do not justify superseding useful work. |
+| #139272 | keep_related | planned | related | The reporter's implementation establishes active repair ownership. Preserve it for continued review and validation without selecting a canonical PR or creating a replacement. |
+| #84516 | keep_independent | planned | independent | No evidence establishes that the older upstream-silence investigation shares the pending-preview root cause. |
 
 ## Needs Human
 
