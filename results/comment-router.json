@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T00:54:03.806Z",
+  "updated_at": "2026-09-05T00:54:23.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138372:5545265831:2026-09-04T19:07:31Z:re_review",
-      "comment_id": "5545265831",
-      "comment_version_key": "5545265831:2026-09-04T19:07:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138372#issuecomment-5545265831",
-      "comment_created_at": "2026-09-04T19:07:31Z",
-      "comment_updated_at": "2026-09-04T19:07:31Z",
-      "comment_body_sha256": "5010d4848d2b12f11149dafa0e99c867ee3886a6c910a2cf0364bd16e5a46ea3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138372,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T19:50:56.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/native-app-locale-refresh",
-        "head_sha": "3f505d1ca861b7d1edceaff32ad2adfcca2bf729",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138358:5545266092:2026-09-04T19:07:33Z:re_review",
       "comment_id": "5545266092",
@@ -33224,6 +33177,39 @@
         "kind": "pull_request",
         "branch": "fix/compaction-quality-feedback-defect-list",
         "head_sha": "83ed0f407a735b3a0a4f6eb9017510453d181121",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138715:5548214889:2026-09-05T00:53:26Z:clawsweeper_needs_human",
+      "comment_id": "5548214889",
+      "comment_version_key": "5548214889:2026-09-05T00:53:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138715#issuecomment-5548214889",
+      "comment_created_at": "2026-09-05T00:53:26Z",
+      "comment_updated_at": "2026-09-05T00:53:26Z",
+      "comment_body_sha256": "16596093c0dff03a77ff699c7dbdc68ff8eca5647b4b979fb00a5f960edc9d9c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138715,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing operator checkouts using symlinked artifact entries or retention directories will now fail preservation even after a successful child command; recovery requires copying outpu... (sha=6471ac631b4e5497a846163366f485d619df602d)",
+      "expected_head_sha": "6471ac631b4e5497a846163366f485d619df602d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T00:54:23.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/serene-boyd-6d1f6d",
+        "head_sha": "6471ac631b4e5497a846163366f485d619df602d",
         "cluster_id": null,
         "job_path": null
       }
