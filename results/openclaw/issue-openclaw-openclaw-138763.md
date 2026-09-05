@@ -1,54 +1,64 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138763"
-mode: "plan"
-run_id: "33937595961"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33937595961"
-head_sha: "9d76bdc16a76d2cc4fabdafaf4dc144da7f49a99"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-05T02:03:37.755Z"
-canonical: "#138763"
-canonical_issue: "#138763"
+mode: "autonomous"
+run_id: "33937107698"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33937107698"
+head_sha: "e2a1fad90a596d364946f91e71f0edf93e2ae34f"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-05T01:49:07.070Z"
+canonical: null
+canonical_issue: null
 canonical_pr: null
-actions_total: 2
+actions_total: 0
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-138763
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33937595961](https://github.com/openclaw/clawsweeper/actions/runs/33937595961)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33937107698](https://github.com/openclaw/clawsweeper/actions/runs/33937107698)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #138763
+Canonical: unknown
 
 ## Summary
 
-Plan one narrow Telegram coalescing repair for #138763. A read-only reproduction confirms cross-topic suppression on the local checkout, but the preflight main SHA is unavailable locally. Reproduction on refreshed main, dependency inspection, regression tests, and Telegram Test Server proof remain execution gates. No repository edits or GitHub mutations occurred; no closure or merge is recommended.
+{"type":"thread.started","thread_id":"01a06f3e-edf8-7511-8ecc-8f61278a4a01"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Configured service tier `priority` is not advertised as supported for model `gpt-6-astra` and will be omitted from requests."}}
+{"type":"item.completed","item":{"id":"item_1","type":"error","message":"Model metadata for `gpt-6-astra` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 1/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more.)"}
+{"type":"error","message":"Reconnecting... 2/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more.)"}
+{"type":"error","message":"Reconnecting... 3/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more.)"}
+{"type":"error","message":"Reconnecting... 4/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more.)"}
+{"type":"error","message":"Reconnecting... 5/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more.)"}
+{"type":"error","message":"rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more."}
+{"type":"turn.failed","error":{"message":"rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit https://platform.openai.com/account/rate-limits to learn more."}}
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 0 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,9 +76,18 @@ Plan one narrow Telegram coalescing repair for #138763. A read-only reproduction
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138763 | fix_needed | planned | canonical | The supplied evidence supports a bounded repair in the existing Telegram handler, not a feature or security-boundary change. Keep the issue open and use the attached conditional implementation plan; first reproduce on refreshed main and confirm that another PR does not already own the work. |
-| #76951 | keep_closed | skipped | related | Historical context only. It is neither an open repair candidate nor proof that the remaining indicator defect is fixed. Preserve its attribution without reopening, replacing, or closing it again. |
+| _None_ |  |  |  |  |
 
 ## Needs Human
 
-- none
+- {"type":"thread.started","thread_id":"01a06f3e-edf8-7511-8ecc-8f61278a4a01"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Configured service tier `priority` is not advertised as supported for model `gpt-6-astra` and will be omitted from requests."}}
+{"type":"item.completed","item":{"id":"item_1","type":"error","message":"Model metadata for `gpt-6-astra` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
+{"type":"turn.started"}
+{"type":"error","message":"Reconnecting... 1/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more.)"}
+{"type":"error","message":"Reconnecting... 2/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more.)"}
+{"type":"error","message":"Reconnecting... 3/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more.)"}
+{"type":"error","message":"Reconnecting... 4/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more.)"}
+{"type":"error","message":"Reconnecting... 5/5 (rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more.)"}
+{"type":"error","message":"rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more."}
+{"type":"turn.failed","error":{"message":"rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 56598. Please try again in 84ms. Visit <external link> to learn more."}}
