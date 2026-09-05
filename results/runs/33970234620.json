@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139109",
+  "mode": "autonomous",
+  "run_id": "33970234620",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33970234620",
+  "head_sha": "42226a81c43c2c8ded17a684a706e58f3a58577a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139109.md",
+  "published_at": "2026-09-05T14:29:13.647Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/139109",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/139109",
+  "canonical_pr": null,
+  "summary": "Reproduced both boolean parsing failures on checkout 44378c46bb04e1354f42a5826be76e1fd920c760. Narrow fix artifact prepared. Implementation is blocked by the read-only checkout, missing dependencies, unavailable current-main verification, and missing native macOS proof. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#139109",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139109",
+      "candidate_fix": null,
+      "reason": "Keep the canonical issue open and repair the shared parsing boundary after the executor verifies current main and clears the environment blockers."
+    },
+    {
+      "target": "#136257",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain the linked context PR outside this narrow repair. Do not replace it, borrow its changes, or close it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139109",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#139109",
+      "candidate_fix": null,
+      "reason": "The artifact is available for the deterministic executor; no locally validated branch or completed implementation is claimed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
