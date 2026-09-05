@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-98468",
+  "mode": "autonomous",
+  "run_id": "33984072504",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33984072504",
+  "head_sha": "f9deb128e547d65d6fa39c563fa391ea2dfdf490",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-98468.md",
+  "published_at": "2026-09-05T18:35:24.764Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/98468",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair plan. Implementation and validation are blocked by the read-only checkout, missing dependencies, unavailable GitHub access, and an unverifiable preflight main SHA. No files or GitHub items were changed; no runtime reproduction or tests were completed.",
+  "actions": [
+    {
+      "target": "#98468",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "The hydrated report and local source support further repair work. Recheck current main and open PR ownership, then demonstrate the failing no-abort regression before editing production code."
+    },
+    {
+      "target": "#98141",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical timeout proposal by @zhangLei99586; preserve attribution without reopening or closing it again."
+    },
+    {
+      "target": "#101473",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Historical work by @zenglingbiao, not a viable open repair branch."
+    },
+    {
+      "target": "#132552",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Preserve the merged cancellation and cleanup behavior; it does not establish that #98468 is fixed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-98468",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#98468",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation remains blocked in this environment. Execute only after current-main, ownership, dependency and failing-reproduction prerequisites are satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
