@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139185",
+  "mode": "autonomous",
+  "run_id": "33975570410",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33975570410",
+  "head_sha": "42226a81c43c2c8ded17a684a706e58f3a58577a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139185.md",
+  "published_at": "2026-09-05T16:23:36.469Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/139185",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/139185",
+  "canonical_pr": null,
+  "summary": "Prepared a scoped repair artifact. Source-level simulation reproduces the wrong-drive expansion on the supplied main SHA. No files changed: read-only storage, missing dependencies, and unavailable native Windows/MSYS2 proof block implementation and validation.",
+  "actions": [
+    {
+      "target": "#139185",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139185",
+      "candidate_fix": null,
+      "reason": "The reported Git/native-path mismatch remains present at the inspected boundaries. Keep the issue open and carry its repair through one implementation PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139185",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#139185",
+      "candidate_fix": null,
+      "reason": "A narrow shared-boundary repair remains appropriate, conditional on verifying the selected MSYS2 executable's path-output contract before editing."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139185",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#139185",
+      "candidate_fix": null,
+      "reason": "Blocked on implementing and validating the canonical fix in a writable environment, obtaining Windows/MSYS2 proof, and refreshing competing-PR discovery. The executor must satisfy these prerequisites before opening or updating the single authorized PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
