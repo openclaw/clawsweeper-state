@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T14:09:39.600Z",
+  "updated_at": "2026-09-05T14:10:23.310Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138953:5550684680:2026-09-05T08:47:44Z:clawsweeper_needs_human",
-      "comment_id": "5550684680",
-      "comment_version_key": "5550684680:2026-09-05T08:47:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138953#issuecomment-5550684680",
-      "comment_created_at": "2026-09-05T08:47:44Z",
-      "comment_updated_at": "2026-09-05T08:47:44Z",
-      "comment_body_sha256": "a31e7d28171921ff7ca61a67378eed3e75e8a9290f7ff5bcbcb97ec92499def7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138953,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the supplied Crabbox run uses fixture transports and source assertions; it does not establish that the new ingr...; Review finding: [P1] Revalidate proof authority before forwarding buffered requests — scripts/mantis/telegram-proof-ingress.mts:217-224 - [P1] Bind quarantine authorization to the... (sha=4240c3154fd7e8f8054b9f41e0bf9b7695a61d9d)",
-      "expected_head_sha": "4240c3154fd7e8f8054b9f41e0bf9b7695a61d9d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T08:55:35.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/mantis-request-bound-proof-producer",
-        "head_sha": "4240c3154fd7e8f8054b9f41e0bf9b7695a61d9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138957:5550695955:2026-09-05T08:50:09Z:clawsweeper_needs_human",
       "comment_id": "5550695955",
@@ -32054,6 +32021,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139089:5552363585:2026-09-05T14:09:27Z:re_review",
+      "comment_id": "5552363585",
+      "comment_version_key": "5552363585:2026-09-05T14:09:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139089#issuecomment-5552363585",
+      "comment_created_at": "2026-09-05T14:09:27Z",
+      "comment_updated_at": "2026-09-05T14:09:27Z",
+      "comment_body_sha256": "350f54b2f37ff98371efb4b1e11194d902300abe43ae8424515c6c1033600e45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139089,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T14:10:20.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-stale-tab-restore",
+        "head_sha": "2f045f307099833ebc5b843f5ca29a7e837c19f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
