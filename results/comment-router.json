@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-05T12:41:21.691Z",
+  "updated_at": "2026-09-05T12:42:39.226Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131716:5451345226:2026-09-05T05:59:30Z:clawsweeper_auto_repair",
-      "comment_id": "5451345226",
-      "comment_version_key": "5451345226:2026-09-05T05:59:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131716#issuecomment-5451345226",
-      "comment_created_at": "2026-08-28T10:20:13Z",
-      "comment_updated_at": "2026-09-05T05:59:30Z",
-      "comment_body_sha256": "bddceeede36713b1ae1372eafd295c63a867a4e42472979c9475f4e45a3e2a97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131716,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e313f159bdc1687a1cbca6f06d1aeaf53773334b)",
-      "expected_head_sha": "e313f159bdc1687a1cbca6f06d1aeaf53773334b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T06:00:31.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "leon/feature-131588-session-preferences-v2-20260828",
-        "head_sha": "e313f159bdc1687a1cbca6f06d1aeaf53773334b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:448:5547121575:2026-09-05T05:59:26Z:clawsweeper_auto_repair",
       "comment_id": "5547121575",
@@ -32769,6 +32736,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5551889169:2026-09-05T12:41:39Z:re_review",
+      "comment_id": "5551889169",
+      "comment_version_key": "5551889169:2026-09-05T12:41:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5551889169",
+      "comment_created_at": "2026-09-05T12:41:29Z",
+      "comment_updated_at": "2026-09-05T12:41:39Z",
+      "comment_body_sha256": "af7b17b90b9b59a1c154f99e24b07fb6396c2cd7ea98c5bd2c334cd632af988e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-05T12:42:37.395Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "628747c8758e0cf8b2ea5a53bd8c6ec4aa6e34b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
