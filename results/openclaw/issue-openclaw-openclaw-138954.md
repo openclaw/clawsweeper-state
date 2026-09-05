@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138954"
-mode: "autonomous"
-run_id: "33955928812"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33955928812"
+mode: "plan"
+run_id: "33959209453"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33959209453"
 head_sha: "6a56eee17378928c246602b6f85f52866f406983"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-05T09:26:45.863Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138954"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138954"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-05T10:02:55.937Z"
+canonical: "#138954"
+canonical_issue: "#138954"
 canonical_pr: null
-actions_total: 9
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33955928812](https://github.com/openclaw/clawsweeper/actions/runs/33955928812)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/33959209453](https://github.com/openclaw/clawsweeper/actions/runs/33959209453)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138954
+Canonical: #138954
 
 ## Summary
 
-Completed non-mutating classifications and prepared a scoped repair artifact. Current source excludes the reported ZDR error from continuation recovery, but implementation requires upstream contract verification and executable regression proof unavailable in this sandbox. No files or GitHub state changed.
+Plan one focused ZDR continuation repair for #138954. Preserve related work; quarantine only #123053. No files or GitHub state changed. Production reproduction, dependency/Codex contract inspection, and authenticated validation remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 9 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,15 +66,14 @@ Completed non-mutating classifications and prepared a scoped repair artifact. Cu
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138954 | fix_needed | planned | canonical | Keep this issue as the canonical report for the narrow outbound transport repair; no closure is authorized. |
-| cluster:issue-openclaw-openclaw-138954 | build_fix_artifact | blocked | canonical | Implementation is blocked on direct upstream contract inspection, a writable dependency-ready checkout, and regression/live validation. Do not broaden generic unsupported_parameter errors into replay-safe failures without that evidence. |
-| #108117 | keep_independent | planned | independent | Different capability and execution boundary from outbound ZDR continuation. |
-| #123053 | keep_related | planned | related | Related Responses terminology, but not a repair candidate for the outbound provider failure. Preserve its separate maintainer workflow. |
-| #123215 | keep_related | planned | related | Keep separate from the native-endpoint bug; this repair must not introduce the requested configuration surface. |
-| #138046 | keep_closed | skipped | related | Historical context; no ZDR fix equivalence established. |
-| #138434 | keep_closed | skipped | related | Historical context; reported validation does not establish ZDR coverage. |
-| #138436 | keep_closed | skipped | related | Historical context addressing a different continuation failure. |
-| #138626 | keep_closed | skipped | related | Historical context; preserve Azure behavior in any shared transport repair. |
+| #138954 | fix_needed | planned | canonical | Retain as the canonical repair target. Establish the failing production-transport regression before implementation; the supplied review is not fresh runtime proof. |
+| #108117 | keep_independent | planned | independent | Separate feature request; exclude from this bug-only repair. |
+| #123053 | route_security | planned | security_sensitive | Precautionary read-only routing to central OpenClaw security handling, without asserting a current vulnerability. Do not modify, replace, or use this PR as the repair candidate. |
+| #123215 | keep_related | planned | related | Related continuation area, but different scope requiring a separate product decision. |
+| #138046 | keep_closed | skipped | related | Historical context only. |
+| #138434 | keep_closed | skipped | related | Historical context; preserve its repaired invariants. |
+| #138436 | keep_closed | skipped | related | Historical context only. |
+| #138626 | keep_closed | skipped | related | Historical context; its passing checks do not validate ZDR recovery. |
 
 ## Needs Human
 

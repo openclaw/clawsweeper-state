@@ -1,0 +1,110 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-138954",
+  "mode": "plan",
+  "run_id": "33959209453",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33959209453",
+  "head_sha": "6a56eee17378928c246602b6f85f52866f406983",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-138954.md",
+  "published_at": "2026-09-05T10:02:55.937Z",
+  "canonical": "#138954",
+  "canonical_issue": "#138954",
+  "canonical_pr": null,
+  "summary": "Plan one focused ZDR continuation repair for #138954. Preserve related work; quarantine only #123053. No files or GitHub state changed. Production reproduction, dependency/Codex contract inspection, and authenticated validation remain required.",
+  "actions": [
+    {
+      "target": "#138954",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Retain as the canonical repair target. Establish the failing production-transport regression before implementation; the supplied review is not fresh runtime proof."
+    },
+    {
+      "target": "#108117",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Separate feature request; exclude from this bug-only repair."
+    },
+    {
+      "target": "#123053",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Precautionary read-only routing to central OpenClaw security handling, without asserting a current vulnerability. Do not modify, replace, or use this PR as the repair candidate."
+    },
+    {
+      "target": "#123215",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Related continuation area, but different scope requiring a separate product decision."
+    },
+    {
+      "target": "#138046",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#138434",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Historical context; preserve its repaired invariants."
+    },
+    {
+      "target": "#138436",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#138626",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#138954",
+      "candidate_fix": null,
+      "reason": "Historical context; its passing checks do not validate ZDR recovery."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "route_security": 1,
+    "keep_related": 1,
+    "keep_closed": 4
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
