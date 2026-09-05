@@ -1,0 +1,86 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139278",
+  "mode": "autonomous",
+  "run_id": "33986030609",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/33986030609",
+  "head_sha": "f9deb128e547d65d6fa39c563fa391ea2dfdf490",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139278.md",
+  "published_at": "2026-09-05T19:19:37.035Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/139278",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/139278",
+  "canonical_pr": null,
+  "summary": "Confirmed the flag coupling on preflight main and prepared a narrow producer fix. Implementation and full validation remain blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#139278",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "The defect remains present in inspected main. A one-line producer repair is supported; executable regression and real Talk proof remain outstanding."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139278",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139278",
+      "candidate_fix": null,
+      "reason": "A narrow executable repair plan is available without product, configuration, schema, or authority changes. The executor must establish failing boundary coverage before editing production."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker failed: rate limit exceeded: Rate limit reached for gpt-6-astra in organization org-uV7eiQ9Go91bzhgJ7xfsJBZj on tokens per min (TPM): Limit 40000000, Used 40000000, Requested 65450. Please try again in 98ms. Visit https://platform.openai.com/account/rate-limits to learn more.",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#139278",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
