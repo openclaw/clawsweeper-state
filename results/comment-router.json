@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T02:47:27.228Z",
+  "updated_at": "2026-09-05T02:48:08.159Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137594:5546556502:2026-09-04T21:17:51Z:re_review",
-      "comment_id": "5546556502",
-      "comment_version_key": "5546556502:2026-09-04T21:17:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137594#issuecomment-5546556502",
-      "comment_created_at": "2026-09-04T21:17:51Z",
-      "comment_updated_at": "2026-09-04T21:17:51Z",
-      "comment_body_sha256": "2174a77af92839fc2d8e1b5fb5fcc24e18277fc319b934c699d3639ddd916b9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137594,
-      "author": "ylcn91",
-      "author_id": 7249450,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-04T21:40:35.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-mcp-outage",
-        "head_sha": "eede488824e6625d48a6212d6ab9748e9174b3bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:122006:5546649119:2026-09-04T21:28:03Z:re_review",
       "comment_id": "5546649119",
@@ -33633,6 +33586,39 @@
         "kind": "pull_request",
         "branch": "codex/sidepanel-state-owner",
         "head_sha": "32c37b74379303f3c53ac32d68b636ea14c2d8d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138787:5548841261:2026-09-05T02:47:12Z:clawsweeper_needs_human",
+      "comment_id": "5548841261",
+      "comment_version_key": "5548841261:2026-09-05T02:47:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138787#issuecomment-5548841261",
+      "comment_created_at": "2026-09-05T02:47:12Z",
+      "comment_updated_at": "2026-09-05T02:47:12Z",
+      "comment_body_sha256": "9bec22ccc36b06848cd3f8639e0a9d18c37c8dabfaf8a34be8c3d602a85a1336",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138787,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body supplies build and helper-driven smoke-test results for DashboardWindowController, but explicitly lacks real native fullscree... (sha=e57d36bc524ae44e2caed11e61eebb42fb13e76d)",
+      "expected_head_sha": "e57d36bc524ae44e2caed11e61eebb42fb13e76d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T02:48:08.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/136131-macos-fullscreen-titlebar",
+        "head_sha": "e57d36bc524ae44e2caed11e61eebb42fb13e76d",
         "cluster_id": null,
         "job_path": null
       }
