@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-05T05:46:09.242Z",
+  "updated_at": "2026-09-05T05:46:17.391Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1618:5548239312:2026-09-05T00:57:40Z:re_review",
-      "comment_id": "5548239312",
-      "comment_version_key": "5548239312:2026-09-05T00:57:40Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1618#issuecomment-5548239312",
-      "comment_created_at": "2026-09-05T00:57:40Z",
-      "comment_updated_at": "2026-09-05T00:57:40Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1618,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T00:58:30.181Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/runner-phase-telemetry",
-        "head_sha": "54b9bc560e4e61364eb3e3340b842f3c2a37da30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136699:5548155525:2026-09-05T00:44:42Z:re_review",
       "comment_id": "5548155525",
@@ -32566,6 +32519,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-managed-inference-and-ui-rebuild",
         "head_sha": "dab197ba3f2085642587dcc7257fa25814a3cc9d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138886:5549759732:2026-09-05T05:45:25Z:clawsweeper_needs_human",
+      "comment_id": "5549759732",
+      "comment_version_key": "5549759732:2026-09-05T05:45:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138886#issuecomment-5549759732",
+      "comment_created_at": "2026-09-05T05:45:25Z",
+      "comment_updated_at": "2026-09-05T05:45:25Z",
+      "comment_body_sha256": "2cc0ee8d0b76c47d22cebcc4ca98a1540bef920773bb2de8163a394a8fe3c1f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138886,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Table-list API failures now make metadata lookup return an error instead of returning application identifiers without tables; existing restricted-permission setups have no supplied ru... (sha=79fdbc8d5703365db0272af35eea0a1de5a3b22a)",
+      "expected_head_sha": "79fdbc8d5703365db0272af35eea0a1de5a3b22a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-05T05:46:17.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-bitable-pagination-117455",
+        "head_sha": "79fdbc8d5703365db0272af35eea0a1de5a3b22a",
         "cluster_id": null,
         "job_path": null
       }
