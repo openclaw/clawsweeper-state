@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T23:48:56.367Z",
+  "updated_at": "2026-09-06T23:50:37.915Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140352:5561134669:2026-09-06T18:07:24Z:clawsweeper_needs_human",
-      "comment_id": "5561134669",
-      "comment_version_key": "5561134669:2026-09-06T18:07:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140352#issuecomment-5561134669",
-      "comment_created_at": "2026-09-06T18:07:24Z",
-      "comment_updated_at": "2026-09-06T18:07:24Z",
-      "comment_body_sha256": "d836c34219e45dd6160ff014631fea578b57cf3200c2ea909db682c7dfb40050",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140352,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed Gateway refusal is exercised only through a suite with mocked plugin loading and handlers.... (sha=55ab2bb3a46345c1d447d418a05d8cce7d74ffd5)",
-      "expected_head_sha": "55ab2bb3a46345c1d447d418a05d8cce7d74ffd5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T18:08:14.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-gateway-request-error-context",
-        "head_sha": "55ab2bb3a46345c1d447d418a05d8cce7d74ffd5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140339:5561134316:2026-09-06T18:07:21Z:clawsweeper_auto_repair",
       "comment_id": "5561134316",
@@ -32290,6 +32257,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140505:5563133356:2026-09-06T23:49:01Z:re_review",
+      "comment_id": "5563133356",
+      "comment_version_key": "5563133356:2026-09-06T23:49:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140505#issuecomment-5563133356",
+      "comment_created_at": "2026-09-06T23:49:01Z",
+      "comment_updated_at": "2026-09-06T23:49:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140505,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T23:50:34.828Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/140467-sqlite-cleanup-sidecar-churn",
+        "head_sha": "3428a1cdb9bd9560cae549659e625e4c08b13b33",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
