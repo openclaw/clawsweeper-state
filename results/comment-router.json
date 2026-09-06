@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T03:09:29.921Z",
+  "updated_at": "2026-09-06T03:11:20.171Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116108:5174733269:2026-08-04T04:48:42Z:re_review",
-      "comment_id": "5174733269",
-      "comment_version_key": "5174733269:2026-08-04T04:48:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116108#issuecomment-5174733269",
-      "comment_created_at": "2026-08-04T04:48:42Z",
-      "comment_updated_at": "2026-08-04T04:48:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116108,
-      "author": "sasan1200",
-      "author_id": 28139727,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T21:54:23.834Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139426:5555036674:2026-09-05T21:53:48Z:clawsweeper_needs_human",
       "comment_id": "5555036674",
@@ -32410,6 +32383,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T03:09:29.921Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139657:5556549613:2026-09-06T03:10:30Z:clawsweeper_needs_human",
+      "comment_id": "5556549613",
+      "comment_version_key": "5556549613:2026-09-06T03:10:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139657#issuecomment-5556549613",
+      "comment_created_at": "2026-09-06T03:10:30Z",
+      "comment_updated_at": "2026-09-06T03:10:30Z",
+      "comment_body_sha256": "1221473e560ba50fff74da38093d8cd548470d4661671401babac139287dc738",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139657,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously successful one-shot runs can now fail cleanup and retain state or locks; legacy MCP runtimes without joinCleanup remain usable but cannot certify cleanup. Fresh-install and... (sha=f57f2b4a571ce3d4453c4e7b57e4a44ebc92afe0)",
+      "expected_head_sha": "f57f2b4a571ce3d4453c4e7b57e4a44ebc92afe0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T03:11:20.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/split-135868-s3-cleanup-consumers",
+        "head_sha": "f57f2b4a571ce3d4453c4e7b57e4a44ebc92afe0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
