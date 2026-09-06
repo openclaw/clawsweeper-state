@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T09:27:55.253Z",
+  "updated_at": "2026-09-06T09:29:15.505Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5346878920:2026-08-19T19:16:58Z:re_review",
-      "comment_id": "5346878920",
-      "comment_version_key": "5346878920:2026-08-19T19:16:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5346878920",
-      "comment_created_at": "2026-08-19T19:16:58Z",
-      "comment_updated_at": "2026-08-19T19:16:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T04:42:17.444Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5352695771:2026-08-20T07:19:01Z:re_review",
       "comment_id": "5352695771",
@@ -32611,6 +32584,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139558:5555848680:2026-09-06T09:26:54Z:clawsweeper_needs_human",
+      "comment_id": "5555848680",
+      "comment_version_key": "5555848680:2026-09-06T09:26:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139558#issuecomment-5555848680",
+      "comment_created_at": "2026-09-06T00:40:35Z",
+      "comment_updated_at": "2026-09-06T09:26:54Z",
+      "comment_body_sha256": "bb1a02b9da746e78b84662d621c7a6795b0dba49dae4d4ce7c6ad2e1ca5c5124",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139558,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging extends intentional refusal to selected messages containing Cursor or Amp machine credit: previously proceeding merges can stop, non-queue operators need a reviewed body file,... (sha=50015fba3a69ba72484902478c036a97ed8e16d3)",
+      "expected_head_sha": "50015fba3a69ba72484902478c036a97ed8e16d3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T09:29:15.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cursor-squash-credit",
+        "head_sha": "50015fba3a69ba72484902478c036a97ed8e16d3",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
