@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139527",
+  "mode": "autonomous",
+  "run_id": "34000178998",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34000178998",
+  "head_sha": "03182ae34303203557df136e147297ad5be25099",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139527.md",
+  "published_at": "2026-09-06T00:28:54.220Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/139527",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/139527",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow no-progress repair for #139527. Fix artifact prepared; implementation and regression validation are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#139527",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139527",
+      "candidate_fix": null,
+      "reason": "The source finding supports repair planning without a product or security-boundary change. A writable executor must reproduce the defect before implementation."
+    },
+    {
+      "target": "#122321",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only; disk-retention work is outside this repair."
+    },
+    {
+      "target": "#122378",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only; release-publishing and rollback policy are outside this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139527",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#139527",
+      "candidate_fix": null,
+      "reason": "One narrow implementation PR remains appropriate, conditional on failing regression proof against refreshed main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139527",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#139527",
+      "candidate_fix": null,
+      "reason": "Implementation and publication require a writable executor, reproduction, validation, review, and renewed PR ownership checks."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
