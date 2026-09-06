@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T11:20:49.059Z",
+  "updated_at": "2026-09-06T11:24:25.823Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1904:5557274344:2026-09-06T05:47:41Z:re_review",
-      "comment_id": "5557274344",
-      "comment_version_key": "5557274344:2026-09-06T05:47:41Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1904#issuecomment-5557274344",
-      "comment_created_at": "2026-09-06T05:47:41Z",
-      "comment_updated_at": "2026-09-06T05:47:41Z",
-      "comment_body_sha256": "7c0b6ac3f03bc370ac7a64eb58f7974b699aead62d9d753b959d81aba65c9cf9",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1904,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T05:48:41.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/aws-empty-describe-cleanup-20260906",
-        "head_sha": "0ac90de2ce3a5c1523c1885e81c7018a16b828b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139799:5557274964:2026-09-06T05:47:49Z:clawsweeper_needs_human",
       "comment_id": "5557274964",
@@ -32832,6 +32785,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140046:5558709971:2026-09-06T11:23:31Z:clawsweeper_needs_human",
+      "comment_id": "5558709971",
+      "comment_version_key": "5558709971:2026-09-06T11:23:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140046#issuecomment-5558709971",
+      "comment_created_at": "2026-09-06T10:47:20Z",
+      "comment_updated_at": "2026-09-06T11:23:31Z",
+      "comment_body_sha256": "89fcafea827a3fe29cfd258a792de2a230ca7c9b313a0dbbeee19293d2483fcb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140046,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=54073b7baa07083cdd6f3bea97c5f63e31b71f03)",
+      "expected_head_sha": "54073b7baa07083cdd6f3bea97c5f63e31b71f03",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T11:24:25.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-one-shot-diagnostics-flush",
+        "head_sha": "54073b7baa07083cdd6f3bea97c5f63e31b71f03",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
