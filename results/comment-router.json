@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T10:17:10.582Z",
+  "updated_at": "2026-09-06T10:19:43.830Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139657:5556549613:2026-09-06T05:03:29Z:clawsweeper_needs_human",
-      "comment_id": "5556549613",
-      "comment_version_key": "5556549613:2026-09-06T05:03:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139657#issuecomment-5556549613",
-      "comment_created_at": "2026-09-06T03:10:30Z",
-      "comment_updated_at": "2026-09-06T05:03:29Z",
-      "comment_body_sha256": "7f93c98b4986939b3c22c3205637b8c31f7f4e4d77161f351cd2bc6c1c6ae6d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139657,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously successful one-shot commands can report cleanup failure and retain state or locks; failed CLI or Gateway cleanup can prevent subsequent owned work. The PR body explicitly a... (sha=5b16717a71e0ed2d5b507e8154f54ee4bd45fa09)",
-      "expected_head_sha": "5b16717a71e0ed2d5b507e8154f54ee4bd45fa09",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T05:06:37.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/split-135868-s3-cleanup-consumers",
-        "head_sha": "5b16717a71e0ed2d5b507e8154f54ee4bd45fa09",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139661:5556581050:2026-09-06T05:04:33Z:clawsweeper_auto_repair",
       "comment_id": "5556581050",
@@ -32762,6 +32729,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5558573324:2026-09-06T10:18:44Z:re_review",
+      "comment_id": "5558573324",
+      "comment_version_key": "5558573324:2026-09-06T10:18:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5558573324",
+      "comment_created_at": "2026-09-06T10:18:44Z",
+      "comment_updated_at": "2026-09-06T10:18:44Z",
+      "comment_body_sha256": "92459ccfec044b9f95278713cc7db161c0a93578c8d4899e5fce57aba67f4d15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head cc11bd207618a3579412339ae5d272adca8be7f0",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T10:19:40.754Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "cc11bd207618a3579412339ae5d272adca8be7f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
