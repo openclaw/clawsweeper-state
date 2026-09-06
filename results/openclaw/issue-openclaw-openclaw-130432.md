@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130432"
-mode: "plan"
-run_id: "34014057945"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34014057945"
+mode: "autonomous"
+run_id: "34015412277"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34015412277"
 head_sha: "10c64167c30da64c0b0c78a2b3872bf7435cb0e3"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-06T05:38:44.174Z"
-canonical: "#130432"
-canonical_issue: "#130432"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-06T06:10:55.568Z"
+canonical: "https://github.com/openclaw/openclaw/issues/130432"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/130432"
 canonical_pr: null
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34014057945](https://github.com/openclaw/clawsweeper/actions/runs/34014057945)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34015412277](https://github.com/openclaw/clawsweeper/actions/runs/34015412277)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #130432
+Canonical: https://github.com/openclaw/openclaw/issues/130432
 
 ## Summary
 
-Plan a narrow repair for session-derived Google Chat destinations. Source inspection supports the hydrated finding at main f7231b0d7855f2d2caab1cdd0906b8b0b0e6bb87. No changes, regression tests, or live sends were performed. Related-PR discovery and production-boundary reproduction remain implementation prerequisites.
+Source inspection supports a narrow canonical-delivery repair. Implementation is blocked by the read-only workspace, missing dependencies, unavailable GitHub access, and an unverified main revision. No files or GitHub state changed; no regression tests or live Google Chat proof ran.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Plan a narrow repair for session-derived Google Chat destinations. Source inspec
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130432 | fix_needed | planned | canonical | A bounded delivery-routing repair is supported by the job and hydrated review. Keep the issue open and prepare one implementation path; do not claim the API failure repaired before regression and live contract evidence. |
+| #130432 | fix_needed | planned | canonical | Keep the issue open. The hydrated report and inspected source support repair planning, but implementation must first establish a failing regression on verified current main. |
+| cluster:issue-openclaw-openclaw-130432 | build_fix_artifact | planned |  | Provide a bounded executor handoff. Editing and validation remain blocked in this worker environment; no PR should be opened before reproduction and existing-work checks succeed. |
 
 ## Needs Human
 
