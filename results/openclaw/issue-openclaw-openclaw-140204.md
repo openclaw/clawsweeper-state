@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140204"
-mode: "autonomous"
-run_id: "34042692173"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34042692173"
-head_sha: "04e5065bfa7808d2ef60bf31cdb12e7dd6c4f5fa"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34043715399"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34043715399"
+head_sha: "02de5c6936817036036ecbc8fc21ba3e5550344f"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-06T15:42:07.681Z"
-canonical: "https://github.com/openclaw/openclaw/issues/140204"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/140204"
+published_at: "2026-09-06T16:31:58.246Z"
+canonical: "#140204"
+canonical_issue: "#140204"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34042692173](https://github.com/openclaw/clawsweeper/actions/runs/34042692173)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34043715399](https://github.com/openclaw/clawsweeper/actions/runs/34043715399)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/140204
+Canonical: #140204
 
 ## Summary
 
-Source confirms the diagnostic defect. A narrow fix artifact is ready; implementation and runtime validation are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.
+Plan a narrow diagnostic repair for #140204. Source inspection confirms the message substitution remains. No files or GitHub state changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Source confirms the diagnostic defect. A narrow fix artifact is ready; implement
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140204 | fix_needed | planned | canonical | The repository producer already supplies the correct diagnostic. Preserve it through the existing redacting formatter without changing worktree eligibility or lifecycle authority. |
-| cluster:issue-openclaw-openclaw-140204 | build_fix_artifact | planned |  | A two-file diagnostic repair is supported by source evidence and requires no new configuration, capability, storage, or policy. |
-| cluster:issue-openclaw-openclaw-140204 | open_fix_pr | blocked |  | Publication is blocked until the executor implements and validates the canonical fix path in a writable checkout and completes the ownership recheck. |
+| #140204 | fix_needed | planned | canonical | A specific existing diagnostic is discarded by the shared preparation owner. A narrow fix is appropriate, subject to failing-regression proof and a fresh ownership check before implementation. |
 
 ## Needs Human
 
