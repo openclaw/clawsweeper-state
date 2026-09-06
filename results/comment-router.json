@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T20:39:27.128Z",
+  "updated_at": "2026-09-06T20:39:36.340Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5461271534:2026-08-29T08:21:00Z:re_review",
-      "comment_id": "5461271534",
-      "comment_version_key": "5461271534:2026-08-29T08:21:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5461271534",
-      "comment_created_at": "2026-08-29T08:21:00Z",
-      "comment_updated_at": "2026-08-29T08:21:00Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T14:59:17.191Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5463306517:2026-08-29T15:39:20Z:re_review",
       "comment_id": "5463306517",
@@ -32466,6 +32439,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140429:5562019742:2026-09-06T20:38:40Z:clawsweeper_needs_human",
+      "comment_id": "5562019742",
+      "comment_version_key": "5562019742:2026-09-06T20:38:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140429#issuecomment-5562019742",
+      "comment_created_at": "2026-09-06T20:38:40Z",
+      "comment_updated_at": "2026-09-06T20:38:40Z",
+      "comment_body_sha256": "b0fe987b9591ea398ea5b2fe4e1bb7709daf1f32e3bd057fb4d0c9b337385000",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140429,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The Gateway projector clears saved thread fields, but the captured PR supplies no after-fix RPC, persistence, or delivery trace; its manual DM... (sha=5e3416dfbaaf49aa82182e6e5a36344250e802e1)",
+      "expected_head_sha": "5e3416dfbaaf49aa82182e6e5a36344250e802e1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T20:39:36.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/sessions-patch-clear-thread-d7db",
+        "head_sha": "5e3416dfbaaf49aa82182e6e5a36344250e802e1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
