@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T08:54:07.157Z",
+  "updated_at": "2026-09-06T08:54:14.171Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5556872778:2026-09-06T04:24:29Z:re_review",
-      "comment_id": "5556872778",
-      "comment_version_key": "5556872778:2026-09-06T04:24:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5556872778",
-      "comment_created_at": "2026-09-06T04:24:19Z",
-      "comment_updated_at": "2026-09-06T04:24:29Z",
-      "comment_body_sha256": "585c4857c845fbc43c2bda69588b160baaa0f6a0991e725b6473f188a2803e46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T04:25:11.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "839ccfddd2386f52ccee3ccf343c4095d4060bf1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116372:5129991370:2026-09-06T04:24:12Z:clawsweeper_auto_repair",
       "comment_id": "5129991370",
@@ -32419,6 +32372,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-question-prompt-provider-fallback",
         "head_sha": "d431d17596b9571e69d68c78eb83c53fdde45776",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139924:5557970652:2026-09-06T08:53:17Z:clawsweeper_needs_human",
+      "comment_id": "5557970652",
+      "comment_version_key": "5557970652:2026-09-06T08:53:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139924#issuecomment-5557970652",
+      "comment_created_at": "2026-09-06T08:16:04Z",
+      "comment_updated_at": "2026-09-06T08:53:17Z",
+      "comment_body_sha256": "40c12a3deefb530b13be9a699216d2462e8733ab38c6dad4dbcc78d796705c93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4af27929a0718f0077eeedf57884172139528333)",
+      "expected_head_sha": "4af27929a0718f0077eeedf57884172139528333",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T08:54:14.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-auth-timeout",
+        "head_sha": "4af27929a0718f0077eeedf57884172139528333",
         "cluster_id": null,
         "job_path": null
       }
