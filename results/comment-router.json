@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T14:59:17.191Z",
+  "updated_at": "2026-09-06T14:59:25.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:4877546532:2026-07-03T15:09:58Z:re_review",
-      "comment_id": "4877546532",
-      "comment_version_key": "4877546532:2026-07-03T15:09:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4877546532",
-      "comment_created_at": "2026-07-03T15:09:58Z",
-      "comment_updated_at": "2026-07-03T15:09:58Z",
-      "comment_body_sha256": "d2f41c8d87641a27b5850a83052f0c03316a73e25608c3a151dd52bc23918c0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T08:20:47.514Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:4880965827:2026-07-04T06:26:08Z:re_review",
       "comment_id": "4880965827",
@@ -32940,6 +32913,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T14:59:17.191Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140137:5559624307:2026-09-06T14:58:24Z:clawsweeper_needs_human",
+      "comment_id": "5559624307",
+      "comment_version_key": "5559624307:2026-09-06T14:58:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140137#issuecomment-5559624307",
+      "comment_created_at": "2026-09-06T13:44:32Z",
+      "comment_updated_at": "2026-09-06T14:58:24Z",
+      "comment_body_sha256": "69e8a9324ab2bdbdaa75900c78f98e9aa9892c15cd4a000a78c56acd03fe8fb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence tests mocked wake delivery and real-registry tracking selection, but does not exercise settlement through Gateway admissi... (sha=4c93f6b1e57bfd5df47b84965446132e23a570c0)",
+      "expected_head_sha": "4c93f6b1e57bfd5df47b84965446132e23a570c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T14:59:25.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nested-requester-yield-batch-wake",
+        "head_sha": "4c93f6b1e57bfd5df47b84965446132e23a570c0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
