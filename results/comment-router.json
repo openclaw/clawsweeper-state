@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T11:56:09.822Z",
+  "updated_at": "2026-09-06T11:56:35.229Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139633:5557331784:2026-09-06T06:01:23Z:re_review",
-      "comment_id": "5557331784",
-      "comment_version_key": "5557331784:2026-09-06T06:01:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139633#issuecomment-5557331784",
-      "comment_created_at": "2026-09-06T06:01:23Z",
-      "comment_updated_at": "2026-09-06T06:01:23Z",
-      "comment_body_sha256": "760f4a4b93b2825fc4ec5d3280379f41d9bd68319ee88486c0801e7af85e75c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139633,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T06:02:15.435Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/unguarded-trim-crash-rebased",
-        "head_sha": "0541b129bb97c9cff60ceb526c08287b5b54f542",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139735:5556927924:2026-09-06T06:01:26Z:clawsweeper_needs_human",
       "comment_id": "5556927924",
@@ -32773,6 +32726,39 @@
         "kind": "pull_request",
         "branch": "codex/cleanup20k-process-activity207-20260901",
         "head_sha": "5512104ddb994d466f84d5c7fa81db3032beb78b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-06T11:54:18Z:clawsweeper_needs_human",
+      "comment_id": "5528348023",
+      "comment_version_key": "5528348023:2026-09-06T11:54:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5528348023",
+      "comment_created_at": "2026-09-03T15:52:26Z",
+      "comment_updated_at": "2026-09-06T11:54:18Z",
+      "comment_body_sha256": "338ade6b006aad1194cfad7979af8027126905abe07ee3e048ab49b3f61d3d74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sessions gain new append rejection and retry behavior plus direct projection maintenance; representative existing-store reopen and recovery evidence is still needed to assess... (sha=aa6d7c05452d57660321ed84297ee3caf50c7177)",
+      "expected_head_sha": "aa6d7c05452d57660321ed84297ee3caf50c7177",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T11:56:35.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "aa6d7c05452d57660321ed84297ee3caf50c7177",
         "cluster_id": null,
         "job_path": null
       }
