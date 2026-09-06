@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T06:02:17.102Z",
+  "updated_at": "2026-09-06T06:02:17.686Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136699:5548155525:2026-09-05T00:44:42Z:re_review",
-      "comment_id": "5548155525",
-      "comment_version_key": "5548155525:2026-09-05T00:44:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136699#issuecomment-5548155525",
-      "comment_created_at": "2026-09-05T00:44:42Z",
-      "comment_updated_at": "2026-09-05T00:44:42Z",
-      "comment_body_sha256": "d16df8613b10392f89de9612d9b2f6586ae487b80d999955c8e2c33d269c4dff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136699,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T01:52:30.804Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136699:5548350138:2026-09-05T01:17:03Z:re_review",
       "comment_id": "5548350138",
@@ -32552,6 +32525,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139735:5556927924:2026-09-06T06:01:26Z:clawsweeper_needs_human",
+      "comment_id": "5556927924",
+      "comment_version_key": "5556927924:2026-09-06T06:01:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139735#issuecomment-5556927924",
+      "comment_created_at": "2026-09-06T04:36:42Z",
+      "comment_updated_at": "2026-09-06T06:01:26Z",
+      "comment_body_sha256": "c762b70678f7f272b9465a0f472039da86dca081656e76b1e503569595457aba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139735,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Same-host HTTP services can collect the native asset grant** - A matching request to another HTTP port on the cookie hostname can carry the grant. Its replay is constrained to the signe...; Review finding: [medium] Same-host HTTP services can collect the native asset grant — src/gateway/control-ui-plugin-auth-cookie.ts:134 (sha=a0fabcbd923c999df0bd3bc3b7b3f28779e8a162)",
+      "expected_head_sha": "a0fabcbd923c999df0bd3bc3b7b3f28779e8a162",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T06:02:17.686Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/native-plugin-stylesheet-auth",
+        "head_sha": "a0fabcbd923c999df0bd3bc3b7b3f28779e8a162",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
