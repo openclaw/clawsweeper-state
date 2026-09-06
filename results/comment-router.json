@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T06:40:54.192Z",
+  "updated_at": "2026-09-06T06:41:03.102Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133032:5556286755:2026-09-06T02:14:02Z:re_review",
-      "comment_id": "5556286755",
-      "comment_version_key": "5556286755:2026-09-06T02:14:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133032#issuecomment-5556286755",
-      "comment_created_at": "2026-09-06T02:14:02Z",
-      "comment_updated_at": "2026-09-06T02:14:02Z",
-      "comment_body_sha256": "1d0c6414704f4649edcd87c44bf3634c404ceb598452135e26baf5d41bedc9a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133032,
-      "author": "TurboTheTurtle",
-      "author_id": 35905412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T02:15:02.061Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/127641-node-binding-unavailable",
-        "head_sha": "2cfe54b5a223b62418525dda5d7a060a082cd38c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139592:5556072946:2026-09-06T02:15:13Z:clawsweeper_needs_human",
       "comment_id": "5556072946",
@@ -32661,6 +32614,39 @@
         "kind": "pull_request",
         "branch": "codex/team-update-recovery",
         "head_sha": "9621e29547ff420b76fdb4d901a628f78a162726",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139851:5557491065:2026-09-06T06:40:10Z:clawsweeper_needs_human",
+      "comment_id": "5557491065",
+      "comment_version_key": "5557491065:2026-09-06T06:40:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139851#issuecomment-5557491065",
+      "comment_created_at": "2026-09-06T06:35:33Z",
+      "comment_updated_at": "2026-09-06T06:40:10Z",
+      "comment_body_sha256": "f7f862969bfa8bd48ba190d7d7669e2dd0f7a91203a277f91a7eb852f194bf55",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139851,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Sustained Markdown throughput remains unmeasured; the disclosed early-call regressions do not establish a long-running break-even point. (sha=49d3f8ca33ab1b3225a62d9ba53189732a07e30f)",
+      "expected_head_sha": "49d3f8ca33ab1b3225a62d9ba53189732a07e30f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T06:41:03.102Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf51-readability",
+        "head_sha": "49d3f8ca33ab1b3225a62d9ba53189732a07e30f",
         "cluster_id": null,
         "job_path": null
       }
