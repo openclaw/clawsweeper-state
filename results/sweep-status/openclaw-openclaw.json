@@ -3,119 +3,23 @@
   "slug": "openclaw-openclaw",
   "display_name": "OpenClaw",
   "target_repo": "openclaw/openclaw",
-  "state": "Review in progress",
-  "detail": "Planned 3 items across 1 shards. Capacity is 3 items; due backlog scanned is 4582. Capacity reason: saturated: due backlog filled planned capacity. Review shards are starting; publish will merge artifacts when they finish.",
-  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34009713003",
-  "planned_count": 3,
-  "planned_capacity": 3,
-  "planned_shards": 1,
-  "active_codex": 1,
-  "due_backlog": 4582,
-  "oldest_unreviewed_at": "2026-03-28T09:20:36Z",
-  "capacity_reason": "saturated: due backlog filled planned capacity",
+  "state": "Apply in progress",
+  "detail": "Starting apply/comment-sync run for up to 40 fresh all closes. Close reasons: all. Close candidate mix: 6 implemented-on-main, 4 needs PR close proof, 218 needs live promotion check, 12 aging/low-signal, 34 policy-sensitive, 78 retry after guard skip, 1 other close candidates. Scan window: 600 records (base_window). Existing Codex automated review comments are updated in place when closing or when comment-only sync is stale by 7 day(s); checkpoints commit every 40 fresh closes; close delay is 2000ms; sync-comments-only=false; item numbers=128217,126529,132898,135676,132303,135913,121188,98553,89823,122846,135764,135767,128340,82519,138679,108892,98753,87109,96011,87764,99659,76027,117423,110250,117369,117905,29100,112896,60612,109584,98766,44025,39734,46058,79797,57592,56227,117367,117558,126104,128380,127226,126728,67129,123405,124962,120881,80859,129419,129844,70266,115390,110438,131467,117230,89785,115430,82011,77378,48920,84110,91563,97886,102078,104855,114600,127228,130195,130432,87371,82290,83440,67421,94661,67154,89756,79490,90499,87714,87953,96489,79384,114146,109381,105854,117742,93518,82540,116547,44502,115400,110490,86119,62615,127302,128470,128650,128504,128010,135779,128395,135937,129018,127862,129737,133315,136471,136386,120411,136565,108384,125192,136895,137493,123265,125079,123799,137927,137705,123071,136786,128267,129366,43367,78091,139022,45503,89215,83164,53023,90866,115642,138369.",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34009204152",
+  "planned_count": null,
+  "planned_capacity": null,
+  "planned_shards": null,
+  "active_codex": null,
+  "due_backlog": null,
+  "oldest_unreviewed_at": null,
+  "capacity_reason": null,
   "inherited_label_cleanups": null,
   "self_heal_conflict_repairs": null,
   "failed_review_retries": null,
   "failed_review_retry_exhaustions": null,
   "bot_owned_proof_decisions_requested": null,
   "bot_owned_proof_dispatches": null,
-  "apply_health": {
-    "schema_version": 1,
-    "generated_at": "2026-09-06T03:42:45.946Z",
-    "target_repo": "openclaw/openclaw",
-    "mode": "comment_sync",
-    "status": "ok",
-    "summary": "1 examined; 10/40 action records; 0 closed, 5 comments synced, 5 skipped; cursor at #128940.",
-    "examined": 1,
-    "action_records": 10,
-    "processed": 10,
-    "processed_limit": 40,
-    "close_limit": 40,
-    "closed": 0,
-    "comment_synced": 5,
-    "skipped": 5,
-    "skip_reasons": {
-      "kept_open": 1,
-      "skipped_changed_since_review": 2,
-      "skipped_runtime_budget": 2
-    },
-    "lanes": {
-      "closure": {
-        "processed": 0,
-        "closed": 0,
-        "comment_synced": 0,
-        "skipped": 0,
-        "skip_reasons": {}
-      },
-      "comment_sync": {
-        "processed": 10,
-        "closed": 0,
-        "comment_synced": 5,
-        "skipped": 5,
-        "skip_reasons": {
-          "kept_open": 1,
-          "skipped_changed_since_review": 2,
-          "skipped_runtime_budget": 2
-        }
-      }
-    },
-    "next_actions": [
-      {
-        "reason": "skipped_runtime_budget",
-        "count": 2,
-        "bucket": "run_budget",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Runtime budget",
-        "summary": "The apply lane stopped because it reached its bounded runtime.",
-        "next_step": "Let the next scheduled run continue; tune runtime or batch size if this repeats."
-      },
-      {
-        "reason": "skipped_changed_since_review",
-        "count": 2,
-        "bucket": "review_refresh",
-        "owner": "clawsweeper",
-        "retryable": true,
-        "label": "Refresh review",
-        "summary": "The item changed after the review that proposed closing it.",
-        "next_step": "Queue a fresh ClawSweeper review before any close retry."
-      },
-      {
-        "reason": "kept_open",
-        "count": 1,
-        "bucket": "inspect",
-        "owner": "maintainer",
-        "retryable": false,
-        "label": "Inspect skip",
-        "summary": "Apply reported an unmapped skip bucket.",
-        "next_step": "Inspect the workflow run and add a deterministic mapping if this repeats."
-      }
-    ],
-    "next_action_buckets": {
-      "inspect": 1,
-      "review_refresh": 2,
-      "run_budget": 2
-    },
-    "cycle": {
-      "basis": "not_close_cursor",
-      "apply_ready_count": null,
-      "candidate_counts": null,
-      "window_size": 1,
-      "estimated_full_cycle_windows": null,
-      "estimated_full_cycle_minutes": null,
-      "scheduled_interval_minutes": null,
-      "label": "Cycle estimate is only reported for scheduled close cursor windows."
-    },
-    "attention_reasons": [],
-    "cursor_required": true,
-    "cursor": {
-      "path": "results/comment-sync-cursors/openclaw-openclaw.json",
-      "next_after_number": 128940,
-      "next_after_apply_checked_at": null,
-      "updated_at": "2026-09-06T03:42:23.179Z"
-    },
-    "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34007679069"
-  },
+  "apply_health": null,
   "last_close_apply_health": {
     "schema_version": 1,
     "generated_at": "2026-09-06T03:33:25.867Z",
@@ -198,5 +102,5 @@
     },
     "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34007504252"
   },
-  "updated_at": "2026-09-06T03:46:46.377Z"
+  "updated_at": "2026-09-06T03:47:21.100Z"
 }
