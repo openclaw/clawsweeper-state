@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139671"
-mode: "plan"
-run_id: "34011738056"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34011738056"
-head_sha: "80a0da6b3addc97d3a136e673bb6b872897e121f"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "34009017542"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34009017542"
+head_sha: "e4d0e82050300cafb9459a6d9cf8a2041f4e62cb"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-06T04:36:49.286Z"
-canonical: "#139671"
-canonical_issue: "#139671"
+published_at: "2026-09-06T03:53:43.109Z"
+canonical: "https://github.com/openclaw/openclaw/issues/139671"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/139671"
 canonical_pr: null
-actions_total: 5
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34011738056](https://github.com/openclaw/clawsweeper/actions/runs/34011738056)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34009017542](https://github.com/openclaw/clawsweeper/actions/runs/34009017542)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #139671
+Canonical: https://github.com/openclaw/openclaw/issues/139671
 
 ## Summary
 
-Plan a narrow sessions-tail projection fix. The clean checkout matches preflight main b3bdf3e11da5671dac9b6033edd49673c129f511 and still omits the list projection. No code or GitHub changes were made; runtime reproduction, review, and validation remain required.
+Verified the defect's source path on preflight main b80fbe402721854e48e823de5333648220a43f52. Prepared a narrow two-file fix plan. Local implementation and regression execution are blocked by the read-only workspace; no files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,13 @@ Plan a narrow sessions-tail projection fix. The clean checkout matches preflight
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139671 | fix_needed | planned | canonical | A focused existing-behavior repair is supported. Recheck fix ownership and reproduce on refreshed main before implementation; do not close or merge. |
-| #139432 | keep_closed | skipped | related | Historical repair pattern for another caller; no action needed. |
-| #139450 | keep_closed | skipped | related | Historical projection precedent; does not fix the tail caller. |
-| #139467 | keep_closed | skipped | related | Different performance defect in the same storage area; retain as history. |
-| #139529 | keep_closed | skipped | related | Different caller and payload requirements; no replacement or closure needed. |
+| #139671 | fix_needed | planned | canonical | The tail caller still loads unused payloads. The merged linked PRs cover different callers; a caller-only repair using the existing projection remains appropriate, subject to failing regression proof. |
+| #139432 | keep_closed | skipped | related | Historical evidence for metadata-only reads; no action on this merged PR. |
+| #139450 | keep_closed | skipped | related | Related repair precedent, not a fix for the tail caller. |
+| #139467 | keep_closed | skipped | related | Historical context for a distinct performance repair. |
+| #139529 | keep_closed | skipped | related | Useful parser instrumentation precedent; creation-specific changes do not resolve this issue. |
+| cluster:issue-openclaw-openclaw-139671 | build_fix_artifact | planned | canonical | Provide the executor a narrow implementation path without changing projection, parser, cache, schema, or public behavior. |
+| cluster:issue-openclaw-openclaw-139671 | open_fix_pr | blocked | canonical | Implementation and publication are blocked until a writable executor proves the regression, applies and validates the fix, and confirms no other PR owns it. Reuse clawsweeper/issue-openclaw-openclaw-139671; do not merge or close. |
 
 ## Needs Human
 
