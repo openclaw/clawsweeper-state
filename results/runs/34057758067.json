@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-140416",
+  "mode": "autonomous",
+  "run_id": "34057758067",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34057758067",
+  "head_sha": "bb8bd3eb709b093a10ff1336227e89986dbcbb0c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-140416.md",
+  "published_at": "2026-09-06T20:46:40.490Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/140416",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/140416",
+  "canonical_pr": null,
+  "summary": "Verified the defective worker arguments on the preflight main SHA and observed Node resolving tsx from /tmp. Prepared a narrow fix plan. Implementation and full regression validation are blocked by the read-only workspace and missing dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#140416",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#140416",
+      "candidate_fix": null,
+      "reason": "The source-worker defect remains present. The broader claim that packaged JavaScript workers require tsx is unsupported; keep this repair scoped to Node TypeScript launches."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140416",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#140416",
+      "candidate_fix": null,
+      "reason": "A bounded ordinary bug repair is supported by current source; no product or security decision is required."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140416",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#140416",
+      "candidate_fix": null,
+      "reason": "The executor must install dependencies in a writable checkout, establish the required failing regression, implement and validate the canonical fix path, and complete fresh review before opening or updating the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
