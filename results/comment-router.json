@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T01:46:25.811Z",
+  "updated_at": "2026-09-06T01:46:33.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:96311:5554494231:2026-09-05T20:14:05Z:re_review",
-      "comment_id": "5554494231",
-      "comment_version_key": "5554494231:2026-09-05T20:14:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96311#issuecomment-5554494231",
-      "comment_created_at": "2026-09-05T20:14:05Z",
-      "comment_updated_at": "2026-09-05T20:14:05Z",
-      "comment_body_sha256": "83d433171fbe5fb13b38ee618548e7c3809e0553bdedf99fdc160e470dc4fa63",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96311,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T20:41:24.455Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-mention-longest-first",
-        "head_sha": "17eca5c278301ff1c1a56f938e068b51ee5c3e77",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5554495566:2026-09-05T20:14:18Z:re_review",
       "comment_id": "5554495566",
@@ -33001,6 +32954,39 @@
         "kind": "pull_request",
         "branch": "fix/publication-reconcile-dry-run-20260906",
         "head_sha": "22909492a141b3db9c837b85ff4e53c3db72c3a4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139231:5553710032:2026-09-06T01:41:31Z:clawsweeper_needs_human",
+      "comment_id": "5553710032",
+      "comment_version_key": "5553710032:2026-09-06T01:41:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139231#issuecomment-5553710032",
+      "comment_created_at": "2026-09-05T17:57:16Z",
+      "comment_updated_at": "2026-09-06T01:41:31Z",
+      "comment_body_sha256": "eb5584da05f6f6b3bf1e43d37dfe08df12e50c9323ea42a44096bca63021b18f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139231,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The registry and dispatcher have mocked regression coverage, but the captured body explicitly lacks an after-fix run showing an initially absen... (sha=a2ba6d6260c2e81cf84e7d4ec728564d94f99f3e)",
+      "expected_head_sha": "a2ba6d6260c2e81cf84e7d4ec728564d94f99f3e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T01:46:33.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "rodrfons/media-understanding-resolve-requested-provider-by-id",
+        "head_sha": "a2ba6d6260c2e81cf84e7d4ec728564d94f99f3e",
         "cluster_id": null,
         "job_path": null
       }
