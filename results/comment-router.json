@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T08:22:45.491Z",
+  "updated_at": "2026-09-06T08:22:51.237Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139548:5556830205:2026-09-06T04:14:34Z:re_review",
-      "comment_id": "5556830205",
-      "comment_version_key": "5556830205:2026-09-06T04:14:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139548#issuecomment-5556830205",
-      "comment_created_at": "2026-09-06T04:14:34Z",
-      "comment_updated_at": "2026-09-06T04:14:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139548,
-      "author": "srikolagani",
-      "author_id": 32967996,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T04:15:30.156Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "srikolagani/fix-97616",
-        "head_sha": "c2566b6be950aab5747a1b5302a86a6db58d885f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139548:5556830786:2026-09-06T04:14:42Z:re_review",
       "comment_id": "5556830786",
@@ -32211,6 +32164,39 @@
         "kind": "pull_request",
         "branch": "fix/queued-followup-tool-authority",
         "head_sha": "2f42382c868244183fbde0519f961c0f15aa85fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139931:5557999852:2026-09-06T08:21:55Z:clawsweeper_needs_human",
+      "comment_id": "5557999852",
+      "comment_version_key": "5557999852:2026-09-06T08:21:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139931#issuecomment-5557999852",
+      "comment_created_at": "2026-09-06T08:21:55Z",
+      "comment_updated_at": "2026-09-06T08:21:55Z",
+      "comment_body_sha256": "3e932908d0afc6b2e488df90c72da3ba1353840ac69f357f9355eb43be8a254d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139931,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The linked visual captures could not be opened in this review environment, so their appearance was not independently inspected. (sha=3a4564647c2ff93f422ab4752de6b0a84aae6876)",
+      "expected_head_sha": "3a4564647c2ff93f422ab4752de6b0a84aae6876",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T08:22:51.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/android-operational-captions",
+        "head_sha": "3a4564647c2ff93f422ab4752de6b0a84aae6876",
         "cluster_id": null,
         "job_path": null
       }
