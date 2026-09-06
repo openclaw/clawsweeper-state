@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-140204",
+  "mode": "autonomous",
+  "run_id": "34042692173",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34042692173",
+  "head_sha": "04e5065bfa7808d2ef60bf31cdb12e7dd6c4f5fa",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-140204.md",
+  "published_at": "2026-09-06T15:42:07.681Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/140204",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/140204",
+  "canonical_pr": null,
+  "summary": "Source confirms the diagnostic defect. A narrow fix artifact is ready; implementation and runtime validation are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#140204",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#140204",
+      "candidate_fix": null,
+      "reason": "The repository producer already supplies the correct diagnostic. Preserve it through the existing redacting formatter without changing worktree eligibility or lifecycle authority."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140204",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#140204",
+      "candidate_fix": null,
+      "reason": "A two-file diagnostic repair is supported by source evidence and requires no new configuration, capability, storage, or policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140204",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#140204",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor implements and validates the canonical fix path in a writable checkout and completes the ownership recheck."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
