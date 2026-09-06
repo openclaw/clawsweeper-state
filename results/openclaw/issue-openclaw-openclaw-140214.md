@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140214"
-mode: "autonomous"
-run_id: "34042647864"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34042647864"
-head_sha: "04e5065bfa7808d2ef60bf31cdb12e7dd6c4f5fa"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34045609080"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34045609080"
+head_sha: "bb8bd3eb709b093a10ff1336227e89986dbcbb0c"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-06T15:56:22.263Z"
+published_at: "2026-09-06T16:34:52.847Z"
 canonical: "https://github.com/openclaw/openclaw/issues/140214"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/140214"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34042647864](https://github.com/openclaw/clawsweeper/actions/runs/34042647864)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34045609080](https://github.com/openclaw/clawsweeper/actions/runs/34045609080)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/140214
 
 ## Summary
 
-Confirmed the diagnostic omission in local source and prepared a narrow fix plan. Implementation and regression execution are blocked by the read-only workspace and missing dependencies. Current-main reconciliation and an ownership recheck remain required before implementation.
+Plan a narrow configured-root diagnostic fix for #140214. The checkout matches preflight main b741a0d5926de88ac6b4cf1ed8bd8ae2c43af954, and source inspection supports the reported defect. No changes or runtime tests were performed. Open-PR discovery requires an executor recheck because GitHub authentication is unavailable.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Confirmed the diagnostic omission in local source and prepared a narrow fix plan
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140214 | fix_needed | blocked | canonical | Implementation requires a writable executor checkout with dependencies. Reconcile current main, recheck existing PR ownership, and establish the failing regression before production edits. This is a diagnostic defect, not a request to change symlink acceptance. |
-| #23619 | keep_closed | skipped | related | Historical context with distinct scope; no closure action. |
-| #139166 | keep_closed | skipped | related | Resolved historical context, not coverage of #140214. |
-| #139195 | keep_closed | skipped | related | Use as wording context only; no merge or closeout recommendation. |
-| cluster:issue-openclaw-openclaw-140214 | build_fix_artifact | planned | canonical | A narrow diagnostic repair is supported by source evidence. The artifact is ready for an executor that can satisfy the outstanding reproduction and implementation gates. |
+| #140214 | fix_needed | planned | canonical | A diagnostic-only repair fits the authorized bug scope. Reproduce on current main and recheck existing PR ownership before implementation. |
+| #23619 | keep_closed | skipped | related | Historical context only. |
+| #139166 | keep_closed | skipped | related | Host-event migration guidance is distinct from memory source inspection. |
+| #139195 | keep_closed | skipped | related | Use as wording context only; it does not fix #140214. |
 
 ## Needs Human
 
