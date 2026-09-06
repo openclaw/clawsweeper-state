@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T08:16:06.111Z",
+  "updated_at": "2026-09-06T08:16:55.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120248:5556769932:2026-09-06T04:01:10Z:re_review",
-      "comment_id": "5556769932",
-      "comment_version_key": "5556769932:2026-09-06T04:01:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120248#issuecomment-5556769932",
-      "comment_created_at": "2026-09-06T04:01:10Z",
-      "comment_updated_at": "2026-09-06T04:01:10Z",
-      "comment_body_sha256": "19ccf59cbc584ab8915a698c84aa72a57461cbcc734292a5518d360f7f101b17",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120248,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T04:02:04.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/bedrock-streaming-toolcall-args-perf",
-        "head_sha": "4ddc1cc4a54500d8ce8e326095686cb635cd4235",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139698:5556769756:2026-09-06T04:01:08Z:clawsweeper_needs_human",
       "comment_id": "5556769756",
@@ -32379,6 +32332,39 @@
         "kind": "pull_request",
         "branch": "fix/pairing-approval-account",
         "head_sha": "a2014d63c1941d0d325e9415f1485c29e5088e65",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139924:5557970652:2026-09-06T08:16:04Z:clawsweeper_needs_human",
+      "comment_id": "5557970652",
+      "comment_version_key": "5557970652:2026-09-06T08:16:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139924#issuecomment-5557970652",
+      "comment_created_at": "2026-09-06T08:16:04Z",
+      "comment_updated_at": "2026-09-06T08:16:04Z",
+      "comment_body_sha256": "49694f5c8def5c5f5d55f02adea0e37af9726ab0d065efb443c95d2861935bd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the author's explicit not-ready-to-land statement after completing the retained Testbox validation identified in the PR body. (sha=59c733ff3a24975c5316abf951e55c765dcf1d79)",
+      "expected_head_sha": "59c733ff3a24975c5316abf951e55c765dcf1d79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T08:16:55.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-auth-timeout",
+        "head_sha": "59c733ff3a24975c5316abf951e55c765dcf1d79",
         "cluster_id": null,
         "job_path": null
       }
