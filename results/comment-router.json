@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T14:36:37.968Z",
+  "updated_at": "2026-09-06T14:38:29.397Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139648:5556478693:2026-09-06T07:55:03Z:clawsweeper_needs_human",
-      "comment_id": "5556478693",
-      "comment_version_key": "5556478693:2026-09-06T07:55:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139648#issuecomment-5556478693",
-      "comment_created_at": "2026-09-06T02:55:13Z",
-      "comment_updated_at": "2026-09-06T07:55:03Z",
-      "comment_body_sha256": "4ebc717136cdca45ed9068d0bc211a81c50a0db9ddff5540bc650718d554aa6f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139648,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent inspection of the pinned native PTY dependency was unavailable; supplied runtime evidence covers POSIX and explicitly makes no Windows native claim. (sha=48a028780659a2ec0002d0c95f9a70e8b1886474)",
-      "expected_head_sha": "48a028780659a2ec0002d0c95f9a70e8b1886474",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T07:59:40.332Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa30-22-process-hex-bytes-20260905",
-        "head_sha": "48a028780659a2ec0002d0c95f9a70e8b1886474",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139742:5556984270:2026-09-06T07:56:43Z:clawsweeper_needs_human",
       "comment_id": "5556984270",
@@ -32954,6 +32921,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140137:5559938811:2026-09-06T14:37:33Z:re_review",
+      "comment_id": "5559938811",
+      "comment_version_key": "5559938811:2026-09-06T14:37:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140137#issuecomment-5559938811",
+      "comment_created_at": "2026-09-06T14:37:33Z",
+      "comment_updated_at": "2026-09-06T14:37:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140137,
+      "author": "gaoanze888",
+      "author_id": 214786078,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T14:38:26.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nested-requester-yield-batch-wake",
+        "head_sha": "cc37527c1f6f1562b77a1b830142fb4af2d61c2a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
