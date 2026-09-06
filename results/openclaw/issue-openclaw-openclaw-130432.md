@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130432"
-mode: "autonomous"
-run_id: "34015412277"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34015412277"
+mode: "plan"
+run_id: "34017130135"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34017130135"
 head_sha: "10c64167c30da64c0b0c78a2b3872bf7435cb0e3"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-06T06:10:55.568Z"
-canonical: "https://github.com/openclaw/openclaw/issues/130432"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/130432"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-06T06:48:22.251Z"
+canonical: "#130432"
+canonical_issue: "#130432"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34015412277](https://github.com/openclaw/clawsweeper/actions/runs/34015412277)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34017130135](https://github.com/openclaw/clawsweeper/actions/runs/34017130135)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/130432
+Canonical: #130432
 
 ## Summary
 
-Source inspection supports a narrow canonical-delivery repair. Implementation is blocked by the read-only workspace, missing dependencies, unavailable GitHub access, and an unverified main revision. No files or GitHub state changed; no regression tests or live Google Chat proof ran.
+Plan a narrow repair for canonical Google Chat destinations in session-derived message-tool routing. No files or GitHub state changed. Production regression, existing-PR discovery, and live Google Chat validation remain execution prerequisites.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports a narrow canonical-delivery repair. Implementation is
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130432 | fix_needed | planned | canonical | Keep the issue open. The hydrated report and inspected source support repair planning, but implementation must first establish a failing regression on verified current main. |
-| cluster:issue-openclaw-openclaw-130432 | build_fix_artifact | planned |  | Provide a bounded executor handoff. Editing and validation remain blocked in this worker environment; no PR should be opened before reproduction and existing-work checks succeed. |
+| #130432 | fix_needed | planned | canonical | The supplied evidence supports a bounded routing repair. Existing-PR discovery and executable reproduction must precede implementation; missing proof does not require a maintainer product decision. |
 
 ## Needs Human
 
