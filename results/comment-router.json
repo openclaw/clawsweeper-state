@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T03:39:09.601Z",
+  "updated_at": "2026-09-06T03:39:36.463Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136361:5511212323:2026-09-05T22:11:39Z:clawsweeper_needs_human",
-      "comment_id": "5511212323",
-      "comment_version_key": "5511212323:2026-09-05T22:11:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136361#issuecomment-5511212323",
-      "comment_created_at": "2026-09-02T14:32:43Z",
-      "comment_updated_at": "2026-09-05T22:11:39Z",
-      "comment_body_sha256": "00856e74ce7d1a5986bf7d82fc01e9cfea6e5d0649aa020754a923c91257726d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The complete captured evidence exercises both SQLite patch APIs through regression tests on Node 24.20.0 with isolated state and reports reduce... (sha=7bacafe8faac1d693ed1d014ebc45523a4267b55)",
-      "expected_head_sha": "7bacafe8faac1d693ed1d014ebc45523a4267b55",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T22:12:47.749Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/session-entry-patch-reparse",
-        "head_sha": "7bacafe8faac1d693ed1d014ebc45523a4267b55",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139445:5555137747:2026-09-05T22:13:16Z:clawsweeper_needs_human",
       "comment_id": "5555137747",
@@ -32560,6 +32527,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139548:5556673322:2026-09-06T03:38:41Z:re_review",
+      "comment_id": "5556673322",
+      "comment_version_key": "5556673322:2026-09-06T03:38:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139548#issuecomment-5556673322",
+      "comment_created_at": "2026-09-06T03:38:41Z",
+      "comment_updated_at": "2026-09-06T03:38:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139548,
+      "author": "srikolagani",
+      "author_id": 32967996,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T03:39:34.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "srikolagani/fix-97616",
+        "head_sha": "867d22068290f9f8063b3176fd44855fdb248c40",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
