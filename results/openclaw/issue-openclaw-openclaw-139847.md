@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139847"
-mode: "plan"
-run_id: "34017128847"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34017128847"
-head_sha: "10c64167c30da64c0b0c78a2b3872bf7435cb0e3"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-06T06:46:05.486Z"
-canonical: "#139847"
-canonical_issue: "#139847"
+mode: "autonomous"
+run_id: "34018264090"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34018264090"
+head_sha: "04e5065bfa7808d2ef60bf31cdb12e7dd6c4f5fa"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-06T07:13:32.652Z"
+canonical: "https://github.com/openclaw/openclaw/issues/139847"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/139847"
 canonical_pr: null
-actions_total: 1
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34017128847](https://github.com/openclaw/clawsweeper/actions/runs/34017128847)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34018264090](https://github.com/openclaw/clawsweeper/actions/runs/34018264090)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #139847
+Canonical: https://github.com/openclaw/openclaw/issues/139847
 
 ## Summary
 
-Plan a narrow queued-admission repair for #139847. The snapshot omission remains in local main 7072eceb6b6908b458e8630b6cfaec88db5b0108. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state were changed.
+Source confirms the queued-admission defect on preflight main d1a69c0b2095594966ff0dbfe01f1ef36dff1343. A narrow fix artifact is ready. Implementation and runtime reproduction are blocked by the read-only workspace and absent dependencies; live fixing-PR discovery requires GitHub authentication. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,10 @@ Plan a narrow queued-admission repair for #139847. The snapshot omission remains
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139847 | fix_needed | planned | canonical | A focused fix plan is supported. Check current issue links and existing branch ownership, then reproduce the queued-operation failure before changing production code. Closure and merge are prohibited by this job. |
+| #139847 | fix_needed | blocked | canonical | The defect remains source-supported. Implementation must resume in a writable executor, first refreshing main and checking for existing fixing work, then demonstrating the requested failing regression before changing production code. |
+| #1 | keep_closed | skipped | independent | Historical context only; no mutation or repair proposed. |
+| #2 | keep_closed | skipped | independent | Historical context only; no mutation proposed. |
+| cluster:issue-openclaw-openclaw-139847 | build_fix_artifact | planned | canonical | A narrow ordinary bug repair is supported without changing authority policy. Artifact preparation can proceed despite this worker's implementation blockers. |
 
 ## Needs Human
 
