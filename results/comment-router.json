@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T06:22:51.152Z",
+  "updated_at": "2026-09-06T06:23:18.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1896:5556212627:2026-09-06T01:58:00Z:re_review",
-      "comment_id": "5556212627",
-      "comment_version_key": "5556212627:2026-09-06T01:58:00Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1896#issuecomment-5556212627",
-      "comment_created_at": "2026-09-06T01:58:00Z",
-      "comment_updated_at": "2026-09-06T01:58:00Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1896,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T02:01:54.923Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/bench-source-summary",
-        "head_sha": "9e22df916a6370bfebee8b9ba408ab0751348b53",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1896:5556157792:2026-09-06T02:01:07Z:clawsweeper_needs_human",
       "comment_id": "5556157792",
@@ -32795,6 +32748,39 @@
         "kind": "pull_request",
         "branch": "codex/watch-voice-default-setup",
         "head_sha": "2d26aa167ca4fde65c2f29aea8e929a35557af99",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139639:5556426332:2026-09-06T06:16:36Z:clawsweeper_needs_human",
+      "comment_id": "5556426332",
+      "comment_version_key": "5556426332:2026-09-06T06:16:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139639#issuecomment-5556426332",
+      "comment_created_at": "2026-09-06T02:44:41Z",
+      "comment_updated_at": "2026-09-06T06:16:36Z",
+      "comment_body_sha256": "129fdd79567f98c8e06aaea0a12db348ae9620f2d75eec0f0c9b044e1bfee14c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139639,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct inspection of pi-tui 0.84.4 was unavailable; the recorded terminal proof used 0.84.3, leaving independent verification of the newer dependency contract incomplete. (sha=c6e797b3e4f8be4ed7585d64c91f07dea1ab2005)",
+      "expected_head_sha": "c6e797b3e4f8be4ed7585d64c91f07dea1ab2005",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T06:23:18.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa30-19-tui-input-classification-20260905",
+        "head_sha": "c6e797b3e4f8be4ed7585d64c91f07dea1ab2005",
         "cluster_id": null,
         "job_path": null
       }
