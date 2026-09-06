@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T06:26:20.183Z",
+  "updated_at": "2026-09-06T06:27:16.104Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5556244432:2026-09-06T02:05:05Z:re_review",
-      "comment_id": "5556244432",
-      "comment_version_key": "5556244432:2026-09-06T02:05:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5556244432",
-      "comment_created_at": "2026-09-06T02:05:05Z",
-      "comment_updated_at": "2026-09-06T02:05:05Z",
-      "comment_body_sha256": "2b79c9eb15f85dc15ae2a21e8dc316eb7230c3318d55c6132d61b4b670239c99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `6090370ddc1366b77bb61091ba3b6d62b142c94e`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T02:05:57.660Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "6090370ddc1366b77bb61091ba3b6d62b142c94e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139615:5556245301:2026-09-06T02:05:15Z:clawsweeper_needs_human",
       "comment_id": "5556245301",
@@ -32747,6 +32700,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-139207-google-manifest-model-catalog",
         "head_sha": "0bd2e778304df0a3b481e8c6d6a95f0d55f2d73c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138451:5544504620:2026-09-06T06:21:45Z:clawsweeper_needs_human",
+      "comment_id": "5544504620",
+      "comment_version_key": "5544504620:2026-09-06T06:21:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138451#issuecomment-5544504620",
+      "comment_created_at": "2026-09-04T18:00:15Z",
+      "comment_updated_at": "2026-09-06T06:21:45Z",
+      "comment_body_sha256": "d52ba5f65bf89c20b4bdf7185fe5299328f048abf34d5eb512dbd2eb001771e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138451,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied snapshot reports conflicts with main, and no pinned merge result establishes integration safety. (sha=21d8b843e5fbe0c1423c6efbd765044a797355bc)",
+      "expected_head_sha": "21d8b843e5fbe0c1423c6efbd765044a797355bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T06:27:16.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/heartbeat-retirement-surfaces",
+        "head_sha": "21d8b843e5fbe0c1423c6efbd765044a797355bc",
         "cluster_id": null,
         "job_path": null
       }
