@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T18:48:45.196Z",
+  "updated_at": "2026-09-06T18:49:27.674Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140060:5559353586:2026-09-06T12:55:05Z:re_review",
-      "comment_id": "5559353586",
-      "comment_version_key": "5559353586:2026-09-06T12:55:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140060#issuecomment-5559353586",
-      "comment_created_at": "2026-09-06T12:55:05Z",
-      "comment_updated_at": "2026-09-06T12:55:05Z",
-      "comment_body_sha256": "e98226c2634e0a8c5899810447a99f1e6c14aea85a6497cd4aeea8f8c6fa92cc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140060,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T12:56:01.547Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-android-talk-agent-restore",
-        "head_sha": "d790476de5ec77cb7a2dce7c256b21ac6a5886d7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130827:5436726757:2026-09-06T12:55:45Z:clawsweeper_auto_repair",
       "comment_id": "5436726757",
@@ -32740,6 +32693,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T18:48:45.196Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137674:5533911185:2026-09-06T18:48:22Z:clawsweeper_needs_human",
+      "comment_id": "5533911185",
+      "comment_version_key": "5533911185:2026-09-06T18:48:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137674#issuecomment-5533911185",
+      "comment_created_at": "2026-09-04T00:27:40Z",
+      "comment_updated_at": "2026-09-06T18:48:22Z",
+      "comment_body_sha256": "9636cb47ccfd4e3bb2c5460360b6e5df3d97ca5d7932171fe760e5888f2cbd15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137674,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Returning readers can now reopen older saved content instead of the latest output; acceptance of this durable viewport policy and its retention/deletion contract is not recorded. (sha=2d652126208ed2ad9450af6f25e970543d0a5419)",
+      "expected_head_sha": "2d652126208ed2ad9450af6f25e970543d0a5419",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T18:49:27.674Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "roboclaw/feat-android-chat-reading-position",
+        "head_sha": "2d652126208ed2ad9450af6f25e970543d0a5419",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
