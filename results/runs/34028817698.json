@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-140052",
+  "mode": "autonomous",
+  "run_id": "34028817698",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34028817698",
+  "head_sha": "04e5065bfa7808d2ef60bf31cdb12e7dd6c4f5fa",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-140052.md",
+  "published_at": "2026-09-06T11:03:27.155Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/140052",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/140052",
+  "canonical_pr": null,
+  "summary": "Confirmed the heartbeat silence-policy mismatch in source at preflight main 9c56ee41de7382d42492e18a4a8c693947f286b9. Prepared a narrow fix artifact. Implementation and executable regression validation are blocked by the read-only workspace and missing dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#140052",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#140052",
+      "candidate_fix": null,
+      "reason": "The existing documented behavior supports a narrow producer-level repair without configuration, storage, provider-routing, or authorization changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140052",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#140052",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix PR is justified by current source evidence, conditional on demonstrating the failing regression before production edits."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140052",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#140052",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor rechecks ownership, reproduces the defect, implements the repair, and completes validation and review in a writable checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
