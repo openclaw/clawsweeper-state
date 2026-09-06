@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T07:39:34.485Z",
+  "updated_at": "2026-09-06T07:40:10.840Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139608:5556588048:2026-09-06T03:19:16Z:re_review",
-      "comment_id": "5556588048",
-      "comment_version_key": "5556588048:2026-09-06T03:19:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139608#issuecomment-5556588048",
-      "comment_created_at": "2026-09-06T03:19:16Z",
-      "comment_updated_at": "2026-09-06T03:19:16Z",
-      "comment_body_sha256": "b352e1bd654658329b0c6a2c12ab68c2f606c407c15da061b8aadd91d53bc8bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139608,
-      "author": "TheCrazyLex",
-      "author_id": 8428955,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T03:20:08.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/legacy-update-run-ownership",
-        "head_sha": "825ffb9a8f21a33a1dda292d28a4d40fbbdda794",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139663:5556588989:2026-09-06T03:19:28Z:clawsweeper_needs_human",
       "comment_id": "5556588989",
@@ -32569,6 +32522,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-sandbox-browser-fixtures",
         "head_sha": "cda54a9b9bebea7a5ac7307c47a5ba2eef33dc33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139620:5556256725:2026-09-06T07:38:01Z:clawsweeper_needs_human",
+      "comment_id": "5556256725",
+      "comment_version_key": "5556256725:2026-09-06T07:38:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139620#issuecomment-5556256725",
+      "comment_created_at": "2026-09-06T02:07:45Z",
+      "comment_updated_at": "2026-09-06T07:38:01Z",
+      "comment_body_sha256": "49388ae9d899446a5f95bc933dd22fb2b68f6c665e5e95b5735a01d94f2a92fa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the related combined deployment reports successful Discord delegation, but this head's body explicitly...; Review finding: [medium] Channel retirement is separate from captured Gateway resolution — src/plugins/registry-runtime.ts:131 (sha=5d63d7bb8e072c33c2155cb5db319c479d5489ae)",
+      "expected_head_sha": "5d63d7bb8e072c33c2155cb5db319c479d5489ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T07:40:10.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channel-session-gateway-owner",
+        "head_sha": "5d63d7bb8e072c33c2155cb5db319c479d5489ae",
         "cluster_id": null,
         "job_path": null
       }
