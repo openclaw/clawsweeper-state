@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T20:50:35.314Z",
+  "updated_at": "2026-09-06T20:50:36.391Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111373:5015436720:2026-09-06T15:24:47Z:clawsweeper_auto_repair",
-      "comment_id": "5015436720",
-      "comment_version_key": "5015436720:2026-09-06T15:24:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111373#issuecomment-5015436720",
-      "comment_created_at": "2026-07-19T10:53:01Z",
-      "comment_updated_at": "2026-09-06T15:24:47Z",
-      "comment_body_sha256": "be45d854a2dd4dca0632dfa65af30d5f011adf054cc5a64dee34f893fcb2521e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111373,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=13456575ce626069b4eed4b87abcadee68a5f4f1)",
-      "expected_head_sha": "13456575ce626069b4eed4b87abcadee68a5f4f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T15:27:41.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ingress-lane-starvation",
-        "head_sha": "13456575ce626069b4eed4b87abcadee68a5f4f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-06T15:22:15Z:clawsweeper_needs_human",
       "comment_id": "5528348023",
@@ -32363,6 +32330,53 @@
         "kind": "pull_request",
         "branch": "fix/historical-release-package-guards",
         "head_sha": "4f0ae4b0cf33e10f6420dc7b29ec2b90965ad6b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137588:5562081032:2026-09-06T20:49:37Z:re_review",
+      "comment_id": "5562081032",
+      "comment_version_key": "5562081032:2026-09-06T20:49:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137588#issuecomment-5562081032",
+      "comment_created_at": "2026-09-06T20:49:37Z",
+      "comment_updated_at": "2026-09-06T20:49:37Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137588,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T20:50:34.275Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026-7-33-sonnet-price-tests",
+        "head_sha": "efad7c22027782d866fdcd93d1050959ddd34398",
         "cluster_id": null,
         "job_path": null
       },
