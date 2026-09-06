@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-139671",
+  "mode": "autonomous",
+  "run_id": "34009017542",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34009017542",
+  "head_sha": "e4d0e82050300cafb9459a6d9cf8a2041f4e62cb",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-139671.md",
+  "published_at": "2026-09-06T03:53:43.109Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/139671",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/139671",
+  "canonical_pr": null,
+  "summary": "Verified the defect's source path on preflight main b80fbe402721854e48e823de5333648220a43f52. Prepared a narrow two-file fix plan. Local implementation and regression execution are blocked by the read-only workspace; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#139671",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139671",
+      "candidate_fix": null,
+      "reason": "The tail caller still loads unused payloads. The merged linked PRs cover different callers; a caller-only repair using the existing projection remains appropriate, subject to failing regression proof."
+    },
+    {
+      "target": "#139432",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence for metadata-only reads; no action on this merged PR."
+    },
+    {
+      "target": "#139450",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related repair precedent, not a fix for the tail caller."
+    },
+    {
+      "target": "#139467",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a distinct performance repair."
+    },
+    {
+      "target": "#139529",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Useful parser instrumentation precedent; creation-specific changes do not resolve this issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139671",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#139671",
+      "candidate_fix": null,
+      "reason": "Provide the executor a narrow implementation path without changing projection, parser, cache, schema, or public behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-139671",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#139671",
+      "candidate_fix": null,
+      "reason": "Implementation and publication are blocked until a writable executor proves the regression, applies and validates the fix, and confirms no other PR owns it. Reuse clawsweeper/issue-openclaw-openclaw-139671; do not merge or close."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
