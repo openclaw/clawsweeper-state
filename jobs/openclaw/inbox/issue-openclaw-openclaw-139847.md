@@ -67,20 +67,23 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair the queued-follow-up authority snapshot omission described in https://github.com/openclaw/openclaw/issues/139847. First recheck live issue/PR links and avoid creating competing work if an open PR already owns this fix. Current inspected source shows admitFollowupTurn creates an operation and executeFollowupTurn calls executeAgentTurn without the bindToolAuthoritySnapshot(prepareReplyToolAuthority(...)) step used by foreground admission. Establish a failing regression with the real reply operation and queued admission before editing; preserve the original order of active turn, queued input, active completion, follow-up admission, and route binding. Bind exactly the queued turn's finalized admitted policy facts once at the owning boundary, including refreshed session identity and queued toolsAllow/disableTools, without inheriting newer dispatcher authority. Verify initial route binding and a subsequent fallback route, and keep completed, aborted, replaced, or otherwise stale operations rejected. Do not weaken registry guards, alter permission policy, add configuration or storage changes, or make terminal failures blindly replay provider/tool effects. Treat the reporter's displacement hypothesis as unproven and stop for review if the observed failure requires a different or broader repair. Likely files are followup-turn-admission.ts, its existing tests, and a focused queued-run integration test. Run the focused admission, execution, registry, and reply-run integration suites plus pnpm check:changed. Record user-visible behavior and evidence in the PR body; do not edit release-owned CHANGELOG.md.
+Repair queued follow-up admission for https://github.com/openclaw/openclaw/issues/139847. First recheck live GitHub for an open fixing PR and avoid creating duplicate work. On the reviewed source, admitFollowupTurn creates an operation without binding a prepared tool-authority snapshot, while foreground agent-runner-run.ts binds one and agent-runner-cli-candidate.ts requires it before runtime launch. Establish a failing regression with real queued admission and registry route binding after a prior same-session operation completes; do not mock away this handoff. Bind the queued item's own resolved authority through the existing preparation contract at the lifecycle owner. Preserve queued sender/tool restrictions, session-generation handling, fallback snapshot reuse, active-owner rejection, cancellation, and terminal no-replay behavior. Verify normal foreground and hosted-provider sibling behavior without claiming all providers share the CLI failure. Keep changes focused on followup-turn-admission.ts and necessary regression coverage. Run the listed focused checks and record actual results. Do not weaken the registry guard, add generic retries, introduce configuration or authority-policy changes, or edit CHANGELOG.md; put user-visible context and reporter credit in the PR body. Stop for owner review if the repair requires a new security policy or broader lifecycle redesign.
 
 Likely files:
 
 - src/auto-reply/reply/followup-turn-admission.ts
 - src/auto-reply/reply/followup-turn-admission.test.ts
-- src/auto-reply/reply/agent-runner.runreplyagent.e2e.test.ts
+- src/auto-reply/reply/followup-turn-execution.test.ts
+- src/auto-reply/reply/followup-runner.test.ts
 
 Validation:
 
-- pnpm test src/auto-reply/reply/followup-turn-admission.test.ts src/auto-reply/reply/followup-turn-execution.test.ts
+- pnpm test src/auto-reply/reply/followup-turn-admission.test.ts
+- pnpm test src/auto-reply/reply/followup-turn-execution.test.ts
+- pnpm test src/auto-reply/reply/followup-runner.test.ts
 - pnpm test src/auto-reply/reply/reply-run-registry.test.ts
-- pnpm test src/auto-reply/reply/agent-runner.runreplyagent.e2e.test.ts
 - pnpm check:changed
+- git diff --check
 
 ## Operator Prompt
 
