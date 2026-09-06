@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T23:24:14.309Z",
+  "updated_at": "2026-09-06T23:25:18.222Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140281:5561017604:2026-09-06T17:46:39Z:re_review",
-      "comment_id": "5561017604",
-      "comment_version_key": "5561017604:2026-09-06T17:46:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140281#issuecomment-5561017604",
-      "comment_created_at": "2026-09-06T17:46:39Z",
-      "comment_updated_at": "2026-09-06T17:46:39Z",
-      "comment_body_sha256": "c57b303d198e69d94bc666fae724418db63322539a7a6168a0354490bed0f7dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140281,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T17:53:39.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/140214-symlink-extra-paths-diagnostic",
-        "head_sha": "68afaddca0ec5de01988cfdab5cc356386a760ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-09-05T13:45:24Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -32307,6 +32260,39 @@
         "kind": "pull_request",
         "branch": "openclaw/yield-transcript-incremental-v3",
         "head_sha": "02baa5dfbabd6881848bce216bb6233470164788",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140505:5562777920:2026-09-06T23:24:29Z:clawsweeper_auto_repair",
+      "comment_id": "5562777920",
+      "comment_version_key": "5562777920:2026-09-06T23:24:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140505#issuecomment-5562777920",
+      "comment_created_at": "2026-09-06T22:58:53Z",
+      "comment_updated_at": "2026-09-06T23:24:29Z",
+      "comment_body_sha256": "637b68a8a4735464dad0a9f6ad6edce80b21065f799e51cd191d1e10899d4e86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140505,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ada427773fcca08b472d44b3c438834b722fc7b7)",
+      "expected_head_sha": "ada427773fcca08b472d44b3c438834b722fc7b7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T23:25:18.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/140467-sqlite-cleanup-sidecar-churn",
+        "head_sha": "ada427773fcca08b472d44b3c438834b722fc7b7",
         "cluster_id": null,
         "job_path": null
       }
