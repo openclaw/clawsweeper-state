@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T10:47:22.216Z",
+  "updated_at": "2026-09-06T10:47:26.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5557105701:2026-09-06T05:08:47Z:re_review",
-      "comment_id": "5557105701",
-      "comment_version_key": "5557105701:2026-09-06T05:08:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5557105701",
-      "comment_created_at": "2026-09-06T05:08:47Z",
-      "comment_updated_at": "2026-09-06T05:08:47Z",
-      "comment_body_sha256": "6a27fc58d08f3d925af45261327a9d09722578a3fe41eef2dd062b7f218ff01f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `c8a276cafba2152f73c4e95979d7c49446ca5165`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T05:09:42.137Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "c8a276cafba2152f73c4e95979d7c49446ca5165",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139712:5556823657:2026-09-06T05:08:59Z:clawsweeper_needs_human",
       "comment_id": "5556823657",
@@ -32945,6 +32898,39 @@
         "kind": "pull_request",
         "branch": "codex/130860-archive-publish-20260906",
         "head_sha": "168e6080bd2292a04f0f5d8728b474daebf53fdc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140045:5558706159:2026-09-06T10:46:30Z:clawsweeper_needs_human",
+      "comment_id": "5558706159",
+      "comment_version_key": "5558706159:2026-09-06T10:46:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140045#issuecomment-5558706159",
+      "comment_created_at": "2026-09-06T10:46:30Z",
+      "comment_updated_at": "2026-09-06T10:46:30Z",
+      "comment_body_sha256": "5504ffdaf35625c7dd01fe70b1aabad47302d515dcf1e5b04ca225169b225836",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140045,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the supplied real-registry unit tests and mocked dispatch regression do not exercise followup-turn-exec... (sha=e4bcad4e796e2f349102f5e5cf0839a22d60d8fe)",
+      "expected_head_sha": "e4bcad4e796e2f349102f5e5cf0839a22d60d8fe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T10:47:26.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-queued-followup-tool-authority-v3",
+        "head_sha": "e4bcad4e796e2f349102f5e5cf0839a22d60d8fe",
         "cluster_id": null,
         "job_path": null
       }
