@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T19:13:13.042Z",
+  "updated_at": "2026-09-06T19:13:19.159Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140127:5559463826:2026-09-06T13:15:30Z:clawsweeper_needs_human",
-      "comment_id": "5559463826",
-      "comment_version_key": "5559463826:2026-09-06T13:15:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140127#issuecomment-5559463826",
-      "comment_created_at": "2026-09-06T13:15:30Z",
-      "comment_updated_at": "2026-09-06T13:15:30Z",
-      "comment_body_sha256": "72d7b369a508ee9e757b90b6a4434323595179d2dcb008ba1dd6971e1cf7b6b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140127,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Windows test results exercise the pattern collector and persistence decision, but do not show the real approval flow, saved-rule o... (sha=087d0728fd6db6d0eb0cbda95945655ecbebd623)",
-      "expected_head_sha": "087d0728fd6db6d0eb0cbda95945655ecbebd623",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T13:16:25.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-posix-shell-carrier-allow-always",
-        "head_sha": "087d0728fd6db6d0eb0cbda95945655ecbebd623",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140126:5559465033:2026-09-06T13:15:44Z:clawsweeper_needs_human",
       "comment_id": "5559465033",
@@ -32704,6 +32671,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120443:5561506670:2026-09-06T19:12:22Z:re_review",
+      "comment_id": "5561506670",
+      "comment_version_key": "5561506670:2026-09-06T19:12:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5561506670",
+      "comment_created_at": "2026-09-06T19:12:22Z",
+      "comment_updated_at": "2026-09-06T19:12:22Z",
+      "comment_body_sha256": "43b31bab1f241995af49a90364ce594d4a89d5da7d9db3bef9209015920714c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T19:13:16.441Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "9737873b185fe9f6f65e884f990f2cf3369f65ad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
