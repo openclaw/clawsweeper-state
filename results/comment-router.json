@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T02:37:45.746Z",
+  "updated_at": "2026-09-06T02:39:22.696Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139369:5554631764:2026-09-05T21:18:15Z:clawsweeper_needs_human",
-      "comment_id": "5554631764",
-      "comment_version_key": "5554631764:2026-09-05T21:18:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139369#issuecomment-5554631764",
-      "comment_created_at": "2026-09-05T20:38:48Z",
-      "comment_updated_at": "2026-09-05T21:18:15Z",
-      "comment_body_sha256": "516afa49a5e55e4a8c415e38009daea46fd62477748058884e5460a1967c1c48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139369,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native prepare will reject the current branch/title convention unless explicit release-automation admission is supplied. (sha=5093ed2b78543fe8b248fed8fdbbfcd660d80eed)",
-      "expected_head_sha": "5093ed2b78543fe8b248fed8fdbbfcd660d80eed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T21:19:29.014Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release92-stable-closeout",
-        "head_sha": "5093ed2b78543fe8b248fed8fdbbfcd660d80eed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134931:5491689336:2026-09-05T21:18:52Z:clawsweeper_needs_human",
       "comment_id": "5491689336",
@@ -32698,6 +32665,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139608:5556398491:2026-09-06T02:38:33Z:clawsweeper_needs_human",
+      "comment_id": "5556398491",
+      "comment_version_key": "5556398491:2026-09-06T02:38:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139608#issuecomment-5556398491",
+      "comment_created_at": "2026-09-06T02:38:33Z",
+      "comment_updated_at": "2026-09-06T02:38:33Z",
+      "comment_body_sha256": "4a1b22dafba4f38bff377ba6d9a49b1d953c3b9f151c7e67ed2f3a8dd37e840e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139608,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The update-command tests exercise legacy and inherited-run admission with real SQLite storage, but mocked process and service boundaries do not... (sha=825ffb9a8f21a33a1dda292d28a4d40fbbdda794)",
+      "expected_head_sha": "825ffb9a8f21a33a1dda292d28a4d40fbbdda794",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T02:39:22.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/legacy-update-run-ownership",
+        "head_sha": "825ffb9a8f21a33a1dda292d28a4d40fbbdda794",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
