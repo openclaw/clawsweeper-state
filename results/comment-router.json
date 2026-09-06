@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T03:39:03.355Z",
+  "updated_at": "2026-09-06T03:39:09.601Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139442:5555127368:2026-09-05T22:11:20Z:re_review",
-      "comment_id": "5555127368",
-      "comment_version_key": "5555127368:2026-09-05T22:11:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139442#issuecomment-5555127368",
-      "comment_created_at": "2026-09-05T22:11:20Z",
-      "comment_updated_at": "2026-09-05T22:11:20Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139442,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-05T22:12:19.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/vitest5-config-cleanup",
-        "head_sha": "452652261d95d96a8af22e95716870c975c826d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136361:5511212323:2026-09-05T22:11:39Z:clawsweeper_needs_human",
       "comment_id": "5511212323",
@@ -32574,6 +32527,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T03:39:03.355Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135599:5554707035:2026-09-06T03:37:58Z:clawsweeper_needs_human",
+      "comment_id": "5554707035",
+      "comment_version_key": "5554707035:2026-09-06T03:37:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135599#issuecomment-5554707035",
+      "comment_created_at": "2026-09-05T20:52:35Z",
+      "comment_updated_at": "2026-09-06T03:37:58Z",
+      "comment_body_sha256": "1aedcbb2a9ed430d1da427f73e61646041e156d194aa76490e685ba66fcd4fb8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135599,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installed plugins using custom native loaders can become unavailable under the new module host; fresh-install success does not establish stable-release upgrade compatibility. (sha=d47548edbebc6caaa77815695a29456695a77191)",
+      "expected_head_sha": "d47548edbebc6caaa77815695a29456695a77191",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T03:39:09.601Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-lifecycle-reload",
+        "head_sha": "d47548edbebc6caaa77815695a29456695a77191",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
