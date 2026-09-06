@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T04:02:46.028Z",
+  "updated_at": "2026-09-06T04:02:52.108Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5316503134:2026-08-17T13:10:59Z:re_review",
-      "comment_id": "5316503134",
-      "comment_version_key": "5316503134:2026-08-17T13:10:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5316503134",
-      "comment_created_at": "2026-08-17T13:10:59Z",
-      "comment_updated_at": "2026-08-17T13:10:59Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T22:26:46.742Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5328595642:2026-08-18T13:07:13Z:re_review",
       "comment_id": "5328595642",
@@ -32856,6 +32829,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139697:5556740088:2026-09-06T04:01:55Z:clawsweeper_needs_human",
+      "comment_id": "5556740088",
+      "comment_version_key": "5556740088:2026-09-06T04:01:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139697#issuecomment-5556740088",
+      "comment_created_at": "2026-09-06T03:54:05Z",
+      "comment_updated_at": "2026-09-06T04:01:55Z",
+      "comment_body_sha256": "8549e75eacbb2182a0bf7c403ecac3ff7ab13827777583ae57dcdd86d762dcdf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139697,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required security-owner involvement for the auth-profile test path is not identifiable from the supplied review-request metadata. (sha=956b341dc5745d73b70ae93360af56c9a903443e)",
+      "expected_head_sha": "956b341dc5745d73b70ae93360af56c9a903443e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T04:02:52.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-retry-e2e-main",
+        "head_sha": "956b341dc5745d73b70ae93360af56c9a903443e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
