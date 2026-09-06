@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130432"
-mode: "autonomous"
-run_id: "34012660802"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34012660802"
+mode: "plan"
+run_id: "34014057945"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34014057945"
 head_sha: "10c64167c30da64c0b0c78a2b3872bf7435cb0e3"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-06T05:36:23.948Z"
-canonical: "https://github.com/openclaw/openclaw/issues/130432"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/130432"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-06T05:38:44.174Z"
+canonical: "#130432"
+canonical_issue: "#130432"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34012660802](https://github.com/openclaw/clawsweeper/actions/runs/34012660802)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34014057945](https://github.com/openclaw/clawsweeper/actions/runs/34014057945)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/130432
+Canonical: #130432
 
 ## Summary
 
-Source inspection supports a narrow routing defect on the preflight main SHA. Implementation is blocked by the read-only workspace and absent dependencies. Related-PR verification also requires GitHub access. No files or GitHub state changed; regression tests and live Google Chat proof remain outstanding.
+Plan a narrow repair for session-derived Google Chat destinations. Source inspection supports the hydrated finding at main f7231b0d7855f2d2caab1cdd0906b8b0b0e6bb87. No changes, regression tests, or live sends were performed. Related-PR discovery and production-boundary reproduction remain implementation prerequisites.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports a narrow routing defect on the preflight main SHA. Im
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130432 | fix_needed | blocked | canonical | The issue remains actionable from source evidence, but the required production-boundary regression has not run. Resume implementation in a writable executor after checking existing related work and establishing the failing regression. |
-| cluster:issue-openclaw-openclaw-130432 | build_fix_artifact | planned |  | A conditional fix artifact is supported despite blocked local implementation. It does not authorize publishing an unvalidated patch. |
+| #130432 | fix_needed | planned | canonical | A bounded delivery-routing repair is supported by the job and hydrated review. Keep the issue open and prepare one implementation path; do not claim the API failure repaired before regression and live contract evidence. |
 
 ## Needs Human
 
