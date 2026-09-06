@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T20:21:19.831Z",
+  "updated_at": "2026-09-06T20:24:34.888Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140025:5558615908:2026-09-06T14:30:45Z:clawsweeper_needs_human",
-      "comment_id": "5558615908",
-      "comment_version_key": "5558615908:2026-09-06T14:30:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140025#issuecomment-5558615908",
-      "comment_created_at": "2026-09-06T10:27:33Z",
-      "comment_updated_at": "2026-09-06T14:30:45Z",
-      "comment_body_sha256": "80ed5ea3907f82e0fab7456c083e29db43bed21ba5b6e5f025036d051e1e7779",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously usable offline removal now requires an authenticated, compatible serving Gateway even with no scheduled jobs; this intentional operator requirement is explicitly accepted i... (sha=2aaef859d84b80ca55d4c3b87fd48d753ebca593)",
-      "expected_head_sha": "2aaef859d84b80ca55d4c3b87fd48d753ebca593",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T14:40:25.044Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/db-next-monitors-ready",
-        "head_sha": "2aaef859d84b80ca55d4c3b87fd48d753ebca593",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140137:5559624307:2026-09-06T14:35:43Z:clawsweeper_needs_human",
       "comment_id": "5559624307",
@@ -32378,6 +32345,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5561933986:2026-09-06T20:23:51Z:re_review",
+      "comment_id": "5561933986",
+      "comment_version_key": "5561933986:2026-09-06T20:23:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5561933986",
+      "comment_created_at": "2026-09-06T20:23:44Z",
+      "comment_updated_at": "2026-09-06T20:23:51Z",
+      "comment_body_sha256": "7be0e469529006e872034f604d9446c9c0479fddef0ab0c7e1b7e95329f7cae5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `0cfd0a650c2a4499e51e4deb18c6caddaeb472ca`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T20:24:33.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "0cfd0a650c2a4499e51e4deb18c6caddaeb472ca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
