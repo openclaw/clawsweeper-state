@@ -2,53 +2,6 @@
   "updated_at": "2026-09-06T05:58:25.215Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:138177:5556160715:2026-09-06T01:46:41Z:re_review",
-      "comment_id": "5556160715",
-      "comment_version_key": "5556160715:2026-09-06T01:46:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138177#issuecomment-5556160715",
-      "comment_created_at": "2026-09-06T01:46:41Z",
-      "comment_updated_at": "2026-09-06T01:46:41Z",
-      "comment_body_sha256": "5e8e17a528f2ad86d16fcf0b355b57cd1436a73c030cebfc9e5e478f0546a18c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138177,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T01:47:30.235Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026-7-33-private-qa-packaging",
-        "head_sha": "da24d4f5382e39c1a5af6d9fb382e46e181b39dc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139604:5556165257:2026-09-06T01:47:34Z:clawsweeper_auto_repair",
       "comment_id": "5556165257",
       "comment_version_key": "5556165257:2026-09-06T01:47:34Z",
@@ -32428,6 +32381,39 @@
         "kind": "pull_request",
         "branch": "codex/perf12-heartbeat-targets",
         "head_sha": "a946986bdbea0a671f8296ce3c356111505b25eb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-09-06T05:56:25Z:clawsweeper_auto_repair",
+      "comment_id": "4469526858",
+      "comment_version_key": "4469526858:2026-09-06T05:56:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4469526858",
+      "comment_created_at": "2026-05-17T05:54:16Z",
+      "comment_updated_at": "2026-09-06T05:56:25Z",
+      "comment_body_sha256": "47847f392762288b88233322c85c0676c87a658e95a7e9f1b8d3d1357b99a26c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82950,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=82912a4d5224b02e9a5d8d239148de923b5243e5)",
+      "expected_head_sha": "82912a4d5224b02e9a5d8d239148de923b5243e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T05:58:24.942Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-approval-redos-guard",
+        "head_sha": "82912a4d5224b02e9a5d8d239148de923b5243e5",
         "cluster_id": null,
         "job_path": null
       }
