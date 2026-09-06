@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139847"
-mode: "autonomous"
-run_id: "34016924972"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34016924972"
+mode: "plan"
+run_id: "34017128847"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34017128847"
 head_sha: "10c64167c30da64c0b0c78a2b3872bf7435cb0e3"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-06T06:43:18.590Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139847"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139847"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-06T06:46:05.486Z"
+canonical: "#139847"
+canonical_issue: "#139847"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34016924972](https://github.com/openclaw/clawsweeper/actions/runs/34016924972)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34017128847](https://github.com/openclaw/clawsweeper/actions/runs/34017128847)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139847
+Canonical: #139847
 
 ## Summary
 
-Source inspection supports the queued-admission snapshot omission. A narrow fix artifact is prepared, but implementation and runtime reproduction are blocked by the read-only checkout, missing dependencies, and unavailable GitHub access. Latest-main verification remains pending. No files or GitHub state changed.
+Plan a narrow queued-admission repair for #139847. The snapshot omission remains in local main 7072eceb6b6908b458e8630b6cfaec88db5b0108. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Source inspection supports the queued-admission snapshot omission. A narrow fix 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139847 | fix_needed | planned | canonical | Keep the issue open. The missing initialization has a narrow owning-boundary repair, conditional on reproduction against refreshed main. |
-| #1 | keep_closed | skipped | independent | Historical context only; no mutation or expansion. |
-| #2 | keep_closed | skipped | independent | Historical context only; no mutation or expansion. |
-| cluster:issue-openclaw-openclaw-139847 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation is blocked in this worker; a writable executor must refresh main and linked PR state, reproduce first, then implement and validate. |
+| #139847 | fix_needed | planned | canonical | A focused fix plan is supported. Check current issue links and existing branch ownership, then reproduce the queued-operation failure before changing production code. Closure and merge are prohibited by this job. |
 
 ## Needs Human
 
