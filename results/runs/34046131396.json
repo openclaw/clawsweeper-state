@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-140279",
+  "mode": "autonomous",
+  "run_id": "34046131396",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34046131396",
+  "head_sha": "bb8bd3eb709b093a10ff1336227e89986dbcbb0c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-140279.md",
+  "published_at": "2026-09-06T16:48:38.875Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/140279",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/140279",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow diagnostic repair. Implementation and regression validation are blocked by the read-only workspace, missing dependencies and sibling Codex source, and unavailable authenticated GitHub access. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#140279",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#140279",
+      "candidate_fix": null,
+      "reason": "Keep the issue open and prepare the diagnostic-only fix, contingent on current-main reproduction and an existing-PR recheck."
+    },
+    {
+      "target": "#78826",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#79457",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#133323",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged context, not a candidate fix for this issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140279",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#140279",
+      "candidate_fix": null,
+      "reason": "The repair plan is narrow and non-mutating; implementation requires the blocked prerequisites."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140279",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#140279",
+      "candidate_fix": null,
+      "reason": "Executor must establish current-main reproduction, inspect the exact Codex source contract, implement and validate in a writable checkout before opening or updating the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
