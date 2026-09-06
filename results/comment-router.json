@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T09:03:06.827Z",
+  "updated_at": "2026-09-06T09:04:14.253Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138125:5556920031:2026-09-06T04:34:57Z:re_review",
-      "comment_id": "5556920031",
-      "comment_version_key": "5556920031:2026-09-06T04:34:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138125#issuecomment-5556920031",
-      "comment_created_at": "2026-09-06T04:34:57Z",
-      "comment_updated_at": "2026-09-06T04:34:57Z",
-      "comment_body_sha256": "119cd7f8eeb437d40876ece84d5505e327c0d4a00123947590f65879c5f43b90",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138125,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T04:35:51.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/team-agent-open-timing-20260904",
-        "head_sha": "747c7b0a13e13c28b813677612eb23937755e40e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139637:5556903635:2026-09-06T04:31:21Z:re_review",
       "comment_id": "5556903635",
@@ -32427,6 +32380,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-exec-cleanup-retention",
         "head_sha": "15a722aef9fddabb66e7e1c69201a78931a384e8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139957:5558204738:2026-09-06T09:03:16Z:clawsweeper_needs_human",
+      "comment_id": "5558204738",
+      "comment_version_key": "5558204738:2026-09-06T09:03:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139957#issuecomment-5558204738",
+      "comment_created_at": "2026-09-06T09:03:16Z",
+      "comment_updated_at": "2026-09-06T09:03:16Z",
+      "comment_body_sha256": "194871ae3430eb17bd3c4c0af727bc408e71d474c06f327fd7dc3a6b3ab9ab13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139957,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3db7089fa17a3c4e319d4f8a3b31f2ea5a9bc170)",
+      "expected_head_sha": "3db7089fa17a3c4e319d4f8a3b31f2ea5a9bc170",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T09:04:14.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/process-tree-cancel-settlement",
+        "head_sha": "3db7089fa17a3c4e319d4f8a3b31f2ea5a9bc170",
         "cluster_id": null,
         "job_path": null
       }
