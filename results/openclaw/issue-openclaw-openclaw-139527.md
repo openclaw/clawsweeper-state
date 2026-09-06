@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139527"
-mode: "autonomous"
-run_id: "34002050132"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34002050132"
+mode: "plan"
+run_id: "34003170349"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34003170349"
 head_sha: "03182ae34303203557df136e147297ad5be25099"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-06T00:51:06.495Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139527"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139527"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-06T01:18:29.032Z"
+canonical: "#139527"
+canonical_issue: "#139527"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34002050132](https://github.com/openclaw/clawsweeper/actions/runs/34002050132)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34003170349](https://github.com/openclaw/clawsweeper/actions/runs/34003170349)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139527
+Canonical: #139527
 
 ## Summary
 
-Source inspection supports the stale-refresh defect on preflight main. Prepared a narrow fix plan; implementation and executable reproduction are blocked by the read-only workspace and absent dependencies. Ownership recheck requires authenticated GitHub access. No files or GitHub state changed.
+Plan one narrow Doctor repair for #139527. The checkout matches preflight main 4d8398494f8e8c5b259aee973f095881e6525196. Source inspection supports the no-progress refresh defect; executable reproduction and validation remain pending. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Source inspection supports the stale-refresh defect on preflight main. Prepared 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139527 | fix_needed | planned | canonical | Keep the issue open and implement the narrow Doctor repair after ownership and failing-regression prerequisites are satisfied. |
-| #122321 | keep_closed | skipped | related | Historical evidence only; closure does not prove the current release case is fixed. |
-| #122378 | keep_closed | skipped | related | Retain as historical context without reopening or expanding scope. |
-| cluster:issue-openclaw-openclaw-139527 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Applying and validating it requires a writable executor with dependencies and an ownership recheck. |
+| #139527 | fix_needed | planned | canonical | Keep this current report as the canonical repair target. Plan a guard against ineffective stale-runtime replacement while preserving existing source selection, migration validation, and installation protections. Keep the bundled launcher failure separate. |
 
 ## Needs Human
 
