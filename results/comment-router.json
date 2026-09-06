@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T14:00:42.277Z",
+  "updated_at": "2026-09-06T14:03:17.106Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139704:5556795771:2026-09-06T07:21:18Z:clawsweeper_needs_human",
-      "comment_id": "5556795771",
-      "comment_version_key": "5556795771:2026-09-06T07:21:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139704#issuecomment-5556795771",
-      "comment_created_at": "2026-09-06T04:06:50Z",
-      "comment_updated_at": "2026-09-06T07:21:18Z",
-      "comment_body_sha256": "1c751f7c2530895db707217ff44ba380cbee8b1d8a6bf873c8448cf2ab6bf4d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139704,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed Gateway-to-GitHub path needs allowed and retired-caller evidence at the final child-creati...; Review finding: [P1] [P1] Check live authority after the transport's final await — src/infra/github-issue.ts:262-264 - [high] Authority can expire before GitHub submission starts... (sha=7799cc118749157af1bd29965ba97a72bd186ac8)",
-      "expected_head_sha": "7799cc118749157af1bd29965ba97a72bd186ac8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T07:41:51.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-failure-report-consent",
-        "head_sha": "7799cc118749157af1bd29965ba97a72bd186ac8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139722:5556875570:2026-09-06T07:40:17Z:clawsweeper_needs_human",
       "comment_id": "5556875570",
@@ -32750,6 +32717,53 @@
       "status": "skipped",
       "processed_at": "2026-09-06T14:00:42.277Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140125:5559728652:2026-09-06T14:02:28Z:re_review",
+      "comment_id": "5559728652",
+      "comment_version_key": "5559728652:2026-09-06T14:02:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140125#issuecomment-5559728652",
+      "comment_created_at": "2026-09-06T14:02:28Z",
+      "comment_updated_at": "2026-09-06T14:02:28Z",
+      "comment_body_sha256": "9b6ee22445919de1735ab89fdf275866514b8330b23765fd57104e271297dfa1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140125,
+      "author": "Dreamer-HIT",
+      "author_id": 93043443,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T14:03:15.300Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-menu-label-overflow",
+        "head_sha": "411e3f41b5484be425fa0e726621ae0b10f2a62a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
