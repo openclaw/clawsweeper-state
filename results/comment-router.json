@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T21:38:06.329Z",
+  "updated_at": "2026-09-06T21:39:06.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140219:5560549059:2026-09-06T16:23:24Z:re_review",
-      "comment_id": "5560549059",
-      "comment_version_key": "5560549059:2026-09-06T16:23:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140219#issuecomment-5560549059",
-      "comment_created_at": "2026-09-06T16:23:24Z",
-      "comment_updated_at": "2026-09-06T16:23:24Z",
-      "comment_body_sha256": "5bda41b1db08c112f481efe6664c7e51b28e1571a078018a6d9d1e68aa106320",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140219,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T16:24:15.816Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-android-foreground-waits",
-        "head_sha": "6f9ca630fd3010ec44a98a7fd83a1336e134522f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132668:5560548761:2026-09-06T16:23:20Z:re_review",
       "comment_id": "5560548761",
@@ -32215,6 +32168,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:66:5562351113:2026-09-06T21:38:15Z:clawsweeper_needs_human",
+      "comment_id": "5562351113",
+      "comment_version_key": "5562351113:2026-09-06T21:38:15Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/66#issuecomment-5562351113",
+      "comment_created_at": "2026-09-06T21:38:15Z",
+      "comment_updated_at": "2026-09-06T21:38:15Z",
+      "comment_body_sha256": "6e4e03fb74c18868a643fe87a557456421a316bbfa48e8efb2315b0847461cb7",
+      "repo": "openclaw/rfcs",
+      "issue_number": 66,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence establishes proposal provenance but contains no after-change rendered-document verification. This external PR changes rfc... (sha=8835147c08cec582647dddb7e7433dade3ffe23c)",
+      "expected_head_sha": "8835147c08cec582647dddb7e7433dade3ffe23c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T21:39:06.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/plugin-update-availability",
+        "head_sha": "8835147c08cec582647dddb7e7433dade3ffe23c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
