@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T20:50:30.163Z",
+  "updated_at": "2026-09-06T20:50:35.314Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:96008:4783046494:2026-09-06T15:25:49Z:clawsweeper_needs_human",
-      "comment_id": "4783046494",
-      "comment_version_key": "4783046494:2026-09-06T15:25:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/96008#issuecomment-4783046494",
-      "comment_created_at": "2026-06-23T20:11:27Z",
-      "comment_updated_at": "2026-09-06T15:25:49Z",
-      "comment_body_sha256": "f16ed39ed8a3b4685ac2b52bcc62016829a16e6908541a97f7f2e6a0a35dcdfe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 96008,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with edited or missing SKILL.md files will stop passing default verification until restored or reinstalled; the discussion accepts this change, but compatibilit... (sha=ec436989624a3b558bfae3b9ae4e90f5eac7a9b7)",
-      "expected_head_sha": "ec436989624a3b558bfae3b9ae4e90f5eac7a9b7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T15:27:41.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feature/clawhub-verify-skill-file-hash",
-        "head_sha": "ec436989624a3b558bfae3b9ae4e90f5eac7a9b7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111373:5015436720:2026-09-06T15:24:47Z:clawsweeper_auto_repair",
       "comment_id": "5015436720",
@@ -32366,6 +32333,53 @@
       "status": "skipped",
       "processed_at": "2026-09-06T20:50:30.008Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137589:5562081131:2026-09-06T20:49:38Z:re_review",
+      "comment_id": "5562081131",
+      "comment_version_key": "5562081131:2026-09-06T20:49:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137589#issuecomment-5562081131",
+      "comment_created_at": "2026-09-06T20:49:38Z",
+      "comment_updated_at": "2026-09-06T20:49:38Z",
+      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137589,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "slash",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T20:50:33.090Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/historical-release-package-guards",
+        "head_sha": "4f0ae4b0cf33e10f6420dc7b29ec2b90965ad6b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
