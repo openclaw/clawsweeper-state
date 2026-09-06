@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140416"
-mode: "autonomous"
-run_id: "34057758067"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34057758067"
+mode: "plan"
+run_id: "34059392790"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34059392790"
 head_sha: "bb8bd3eb709b093a10ff1336227e89986dbcbb0c"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-06T20:46:40.490Z"
-canonical: "https://github.com/openclaw/openclaw/issues/140416"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/140416"
+published_at: "2026-09-06T20:58:11.972Z"
+canonical: "#140416"
+canonical_issue: "#140416"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34057758067](https://github.com/openclaw/clawsweeper/actions/runs/34057758067)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34059392790](https://github.com/openclaw/clawsweeper/actions/runs/34059392790)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/140416
+Canonical: #140416
 
 ## Summary
 
-Verified the defective worker arguments on the preflight main SHA and observed Node resolving tsx from /tmp. Prepared a narrow fix plan. Implementation and full regression validation are blocked by the read-only workspace and missing dependencies; no files or GitHub state changed.
+Plan a focused fix for #140416. The checkout matches preflight main a94e0b6c9f150b43478493171d190d11cf842734 and retains the reported bare tsx preload. Runtime reproduction and validation remain pending: this checkout is read-only and dependencies are absent. No changes or GitHub mutations were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Verified the defective worker arguments on the preflight main SHA and observed N
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140416 | fix_needed | planned | canonical | The source-worker defect remains present. The broader claim that packaged JavaScript workers require tsx is unsupported; keep this repair scoped to Node TypeScript launches. |
-| cluster:issue-openclaw-openclaw-140416 | build_fix_artifact | planned |  | A bounded ordinary bug repair is supported by current source; no product or security decision is required. |
-| cluster:issue-openclaw-openclaw-140416 | open_fix_pr | blocked |  | The executor must install dependencies in a writable checkout, establish the required failing regression, implement and validate the canonical fix path, and complete fresh review before opening or updating the PR. |
+| #140416 | fix_needed | planned | canonical | A narrow producer-level repair is supported by the supplied finding and current source. No candidate PR is supplied; recheck related work before implementation. Keep the issue open. |
 
 ## Needs Human
 
