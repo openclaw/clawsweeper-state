@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-06T06:30:36.226Z",
+  "updated_at": "2026-09-06T06:30:22.622Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129144:5556250489:2026-09-06T02:06:25Z:re_review",
+      "comment_id": "5556250489",
+      "comment_version_key": "5556250489:2026-09-06T02:06:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129144#issuecomment-5556250489",
+      "comment_created_at": "2026-09-06T02:06:25Z",
+      "comment_updated_at": "2026-09-06T02:06:25Z",
+      "comment_body_sha256": "7638a7c05327861aa8f4d7e43fba4bf813c8bbb34ca4b601419726938a48db3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129144,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T02:07:17.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-opaque-realtime-admission",
+        "head_sha": "4c36ee8f275501184d840e67e919c3cd09152f6e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139616:5556250851:2026-09-06T02:06:29Z:clawsweeper_needs_human",
       "comment_id": "5556250851",
@@ -32686,39 +32733,6 @@
         "kind": "pull_request",
         "branch": "codex/bun-script-test-portability",
         "head_sha": "25de50568548f061cb8aee042898c5497d5817f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139834:5557464050:2026-09-06T06:29:40Z:clawsweeper_needs_human",
-      "comment_id": "5557464050",
-      "comment_version_key": "5557464050:2026-09-06T06:29:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139834#issuecomment-5557464050",
-      "comment_created_at": "2026-09-06T06:29:40Z",
-      "comment_updated_at": "2026-09-06T06:29:40Z",
-      "comment_body_sha256": "351214ded76746afb71283a883e08f5ee176b870b7572c1516086069ba7df179",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139834,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=59218a59824e34462deed7fb9d674a178bbf56b9)",
-      "expected_head_sha": "59218a59824e34462deed7fb9d674a178bbf56b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T06:30:36.226Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-managed-child-fixtures",
-        "head_sha": "59218a59824e34462deed7fb9d674a178bbf56b9",
         "cluster_id": null,
         "job_path": null
       }
