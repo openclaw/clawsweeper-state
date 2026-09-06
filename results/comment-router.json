@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T16:21:44.748Z",
+  "updated_at": "2026-09-06T16:21:56.277Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137757:5538714944:2026-09-04T09:48:13Z:re_review",
-      "comment_id": "5538714944",
-      "comment_version_key": "5538714944:2026-09-04T09:48:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137757#issuecomment-5538714944",
-      "comment_created_at": "2026-09-04T09:48:13Z",
-      "comment_updated_at": "2026-09-04T09:48:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137757,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T09:54:57.004Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139993:5558454953:2026-09-06T09:54:11Z:clawsweeper_auto_repair",
       "comment_id": "5558454953",
@@ -32800,6 +32773,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T16:21:44.748Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140263:5560535058:2026-09-06T16:20:56Z:clawsweeper_needs_human",
+      "comment_id": "5560535058",
+      "comment_version_key": "5560535058:2026-09-06T16:20:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140263#issuecomment-5560535058",
+      "comment_created_at": "2026-09-06T16:20:56Z",
+      "comment_updated_at": "2026-09-06T16:20:56Z",
+      "comment_body_sha256": "b612f4e4687c0ccb6ac604ef33dfabf3d1844f1087251fb6023777bba546ff46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140263,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied regression exercises the real update command and backup owner with mocked service and com...; Review finding: [P1] Return only an owned service environment from the deferred lookup — src/cli/update-cli/update-command-execution.ts:565 - [medium] Foreign installation profile... (sha=efd0d24ba3a262cdbbeaeb8e6819b6c2d5f7f8a7)",
+      "expected_head_sha": "efd0d24ba3a262cdbbeaeb8e6819b6c2d5f7f8a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T16:21:56.277Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-admitted-git-doctor-profile-r294",
+        "head_sha": "efd0d24ba3a262cdbbeaeb8e6819b6c2d5f7f8a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
