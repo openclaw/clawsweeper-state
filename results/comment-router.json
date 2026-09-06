@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T13:02:48.805Z",
+  "updated_at": "2026-09-06T13:03:21.394Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139865:5557564115:2026-09-06T06:51:04Z:clawsweeper_needs_human",
-      "comment_id": "5557564115",
-      "comment_version_key": "5557564115:2026-09-06T06:51:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139865#issuecomment-5557564115",
-      "comment_created_at": "2026-09-06T06:51:04Z",
-      "comment_updated_at": "2026-09-06T06:51:04Z",
-      "comment_body_sha256": "47deae59b64d7b83486aed0d89be3b11a749c64c251a672627ebb138d16222ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139865,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when it is intended to land. (sha=9aef94c8bdd59b541f65ca91cb3491cfcac3c179)",
-      "expected_head_sha": "9aef94c8bdd59b541f65ca91cb3491cfcac3c179",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T06:51:57.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf51-context-descriptors",
-        "head_sha": "9aef94c8bdd59b541f65ca91cb3491cfcac3c179",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92230:4683232032:2026-09-04T03:51:35Z:clawsweeper_auto_repair",
       "comment_id": "4683232032",
@@ -32770,6 +32737,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140102:5559392667:2026-09-06T13:02:27Z:re_review",
+      "comment_id": "5559392667",
+      "comment_version_key": "5559392667:2026-09-06T13:02:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140102#issuecomment-5559392667",
+      "comment_created_at": "2026-09-06T13:02:27Z",
+      "comment_updated_at": "2026-09-06T13:02:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140102,
+      "author": "maximilliangrand",
+      "author_id": 214999687,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T13:03:19.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/memory-vector-point-deletes",
+        "head_sha": "8fbaac420e2d91a1e1472887bdca63bd96ca7ba2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
