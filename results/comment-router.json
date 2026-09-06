@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T11:58:08.695Z",
+  "updated_at": "2026-09-06T11:58:42.409Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138411:5543926878:2026-09-06T06:02:25Z:clawsweeper_needs_human",
-      "comment_id": "5543926878",
-      "comment_version_key": "5543926878:2026-09-06T06:02:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138411#issuecomment-5543926878",
-      "comment_created_at": "2026-09-04T17:06:03Z",
-      "comment_updated_at": "2026-09-06T06:02:25Z",
-      "comment_body_sha256": "f8cd34fbda92998e23df9ed0c5107c69376674f2ee5c3ea19655daf865a57d4b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138411,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured after-fix evidence exercises real file reading, staging, and outbound loading through Vitest with Gateway transport simulated. Tha... (sha=e2d4797932b854f19255c65f8d37b5269c6f44ee)",
-      "expected_head_sha": "e2d4797932b854f19255c65f8d37b5269c6f44ee",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T06:03:21.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-138382-file-fetch-filename",
-        "head_sha": "e2d4797932b854f19255c65f8d37b5269c6f44ee",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:233:5557266610:2026-09-06T06:02:59Z:clawsweeper_needs_human",
       "comment_id": "5557266610",
@@ -32762,6 +32729,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140064:5559053395:2026-09-06T11:57:50Z:re_review",
+      "comment_id": "5559053395",
+      "comment_version_key": "5559053395:2026-09-06T11:57:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140064#issuecomment-5559053395",
+      "comment_created_at": "2026-09-06T11:57:50Z",
+      "comment_updated_at": "2026-09-06T11:57:50Z",
+      "comment_body_sha256": "98bc91df73331622377aa1cc050b2e21becc03e90ba023754b7e7274562439f5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140064,
+      "author": "soroush5",
+      "author_id": 198905432,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T11:58:40.194Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-guard-shell-continuation",
+        "head_sha": "094c6c55c86bf6ddf7d77bce28b205cb5150b1e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
