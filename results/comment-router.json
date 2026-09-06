@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T08:43:58.490Z",
+  "updated_at": "2026-09-06T08:44:26.101Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120443:5243247924:2026-08-10T16:47:16Z:re_review",
-      "comment_id": "5243247924",
-      "comment_version_key": "5243247924:2026-08-10T16:47:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5243247924",
-      "comment_created_at": "2026-08-10T16:47:16Z",
-      "comment_updated_at": "2026-08-10T16:47:16Z",
-      "comment_body_sha256": "b5b8b87e490688cd2b23008f1048e6e4eef69958d9f588972c61b6cf385a3d8f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120443,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — addressed both p1 findings. model-locked stale bindings are now cleared through their owner (guarded re-read; confined to the confirmed thread-not-found path) and a locked recoverable-binding failure is surfaced as a harness-owned safe skip so a required preflight continues the turn instead of dropping it. the harness-owned deferral signal is now the neutral public typed field `harnesscompactiondisposition:\"harness_owned_automatic_compaction\"` on `embeddedagentcompactresult`, read structurally by core and covered by the regenerated plugin sdk api baseline (no more undeclared runtime-only property). this is an additive public sdk compact-result contract and needs a maintainer decision to bless the new disposition as an intentional cross-plugin signal. pr body evidence and the container proof (`scripts/proof/issue-119977-proof.mts`) are updated; the proof runner passes all assertions on the current head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T04:21:48.810Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120443:5246592864:2026-08-10T22:08:46Z:re_review",
       "comment_id": "5246592864",
@@ -32310,6 +32283,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127091:5558107679:2026-09-06T08:43:30Z:re_review",
+      "comment_id": "5558107679",
+      "comment_version_key": "5558107679:2026-09-06T08:43:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127091#issuecomment-5558107679",
+      "comment_created_at": "2026-09-06T08:43:30Z",
+      "comment_updated_at": "2026-09-06T08:43:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127091,
+      "author": "parthamehta123",
+      "author_id": 25328046,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T08:44:24.533Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "privacy/payload-redaction-v2",
+        "head_sha": "21967f91004f5ce10e2043f4d7f8c91bd3e8d8b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
