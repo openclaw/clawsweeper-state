@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-139963"
-mode: "autonomous"
-run_id: "34023570458"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34023570458"
+mode: "plan"
+run_id: "34024722730"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34024722730"
 head_sha: "04e5065bfa7808d2ef60bf31cdb12e7dd6c4f5fa"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-06T09:10:56.730Z"
-canonical: "https://github.com/openclaw/openclaw/issues/139963"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/139963"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-06T09:35:41.748Z"
+canonical: "#139963"
+canonical_issue: "#139963"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34023570458](https://github.com/openclaw/clawsweeper/actions/runs/34023570458)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34024722730](https://github.com/openclaw/clawsweeper/actions/runs/34024722730)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/139963
+Canonical: #139963
 
 ## Summary
 
-Defect remains source-supported on preflight main 9f089d6527cc94e3e495d726e0958798faa69f8e. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only environment. No files or GitHub state changed.
+Plan a narrow lifecycle repair for the lost nested-requester continuation. Source inspection confirms the reported depth-based early completion on preflight main. No files changed, tests run, or GitHub mutations performed. Runtime reproduction and related-PR ownership checks remain required before publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Defect remains source-supported on preflight main 9f089d6527cc94e3e495d726e09587
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #139963 | fix_needed | planned | canonical | The producer/dispatcher mismatch supports a narrow existing-behavior repair. Keep the issue open; establish a failing lifecycle regression and refresh related PR ownership before implementation or publication. |
-| cluster:issue-openclaw-openclaw-139963 | build_fix_artifact | planned | canonical | Artifact generation is complete. Applying and validating it requires a writable executor; publication also requires a refreshed, bounded related-work check. |
+| https://github.com/openclaw/openclaw/issues/139963 | build_fix_artifact | planned | canonical | A scoped non-security bug repair is supported. Implement only after a failing regression on refreshed main and a related-work check establish that this branch should own the fix. |
 
 ## Needs Human
 
