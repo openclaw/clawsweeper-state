@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 6, 2026, 02:43 UTC
+Last source update: Sep 6, 2026, 02:48 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 6, 2026, 02:43 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Hot intake publish complete | Sep 6, 2026, 02:43 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34006915386) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 6, 2026, 02:36 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34006878464) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 6, 2026, 02:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34006820335) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 6, 2026, 02:47 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34007290947) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 6, 2026, 01:15 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34003404611) |
 
 ### Repositories
