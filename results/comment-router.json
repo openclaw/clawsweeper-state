@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T00:45:54.876Z",
+  "updated_at": "2026-09-06T00:46:12.188Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138900:5549810390:2026-09-05T19:49:01Z:clawsweeper_needs_human",
-      "comment_id": "5549810390",
-      "comment_version_key": "5549810390:2026-09-05T19:49:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138900#issuecomment-5549810390",
-      "comment_created_at": "2026-09-05T05:55:26Z",
-      "comment_updated_at": "2026-09-05T19:49:01Z",
-      "comment_body_sha256": "678150b2446ca4bd332999607448f651da442733451c786bceb3ab36f0dad55f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138900,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: repository personal publication binds durable receipts to current profile, connection, lifecycle, and...; Review finding: [medium] Complete personal-publication authority evidence — src/gateway/github-repository-publication.ts:170 (sha=4fdc083bc9c3458a452b6adc78971600c24d82ce)",
-      "expected_head_sha": "4fdc083bc9c3458a452b6adc78971600c24d82ce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T19:55:12.270Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-repositories",
-        "head_sha": "4fdc083bc9c3458a452b6adc78971600c24d82ce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139061:5551671663:2026-09-05T19:49:25Z:clawsweeper_needs_human",
       "comment_id": "5551671663",
@@ -32982,6 +32949,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139491:5555870750:2026-09-06T00:45:16Z:re_review",
+      "comment_id": "5555870750",
+      "comment_version_key": "5555870750:2026-09-06T00:45:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139491#issuecomment-5555870750",
+      "comment_created_at": "2026-09-06T00:45:16Z",
+      "comment_updated_at": "2026-09-06T00:45:16Z",
+      "comment_body_sha256": "94312dcf6087440fa00582463ecf0cab31ac68351febb39c4150a6b571002b97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139491,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T00:46:09.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-current-cron-origin-20260905",
+        "head_sha": "a3bef6a3b2cd1755287155dffa52be96a9758c9e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
