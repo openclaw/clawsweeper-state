@@ -67,19 +67,21 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair #130432 at the announcement-routing owner boundary. Do not rewrite Google Chat session keys or add case-insensitive space discovery. Make Google Chat opt into the existing session lookup for announcement targets, so a saved deliveryContext supplies its exact `to` and accountId for both direct and group sessions; retain the normal parsed fallback when no context exists. Add a regression covering a mixed-case canonical Google Chat delivery target behind a folded session key, plus the no-context fallback. Before landing, run a permitted Google Chat transport-boundary proof or state the concrete infeasibility and include focused owner-boundary evidence.
+Repair Google Chat case loss in session-derived message-tool destinations. First recheck live related PRs and any maintainer disposition behind the existing no-new-fix-pr state; adopt existing work if present. Establish a failing regression through the production message-tool routing boundary using currentChannelProvider=webchat and a Google Chat group or per-channel DM session whose key contains spaces/abc while its canonical delivery metadata contains spaces/AbC. Trace message-tool-discovery.ts through message-tool-execution.ts to the Google Chat resolver and final send arguments. Restore or carry the canonical destination from the exact session and account using existing delivery-context owners; do not infer delivery identity from a folded key when authoritative metadata is available. Preserve normal inbound replies, explicit targets, account/thread identity, existing session keys, and sibling-channel behavior. Do not add a cross-session case-insensitive space scan, rewrite persisted keys, add configuration, alter authorization, or change storage semantics. Stop for renewed triage if the failing production boundary cannot be established or the repair requires those broader changes. Extend existing meaningful regression coverage and run pnpm check:changed, pnpm test src/agents/tools/message-tool.test.ts, and pnpm test:extension googlechat. Validate canonical final-send arguments and error propagation; obtain appropriate real Google Chat contract evidence before claiming the reported API failure is repaired. Keep release-note context in the PR body, not CHANGELOG.md.
 
 Likely files:
 
-- extensions/googlechat/src/channel-base.ts
-- extensions/googlechat/src/channel.test.ts
-- src/agents/tools/sessions.test.ts
+- src/agents/tools/message-tool-discovery.ts
+- src/agents/tools/message-tool-execution.ts
+- src/agents/openclaw-tools.ts
+- src/agents/tools/message-tool.test.ts
+- extensions/googlechat/src/targets.ts
 
 Validation:
 
-- pnpm test extensions/googlechat/src/channel.test.ts
-- pnpm test src/agents/tools/sessions.test.ts
-- Run a permitted redacted Google Chat send proving the stored canonical target is used for a session-derived announcement.
+- pnpm check:changed
+- pnpm test src/agents/tools/message-tool.test.ts
+- pnpm test:extension googlechat
 
 ## Operator Prompt
 
