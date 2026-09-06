@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T06:36:02.722Z",
+  "updated_at": "2026-09-06T06:36:24.992Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136699:5556273813:2026-09-06T02:11:23Z:re_review",
-      "comment_id": "5556273813",
-      "comment_version_key": "5556273813:2026-09-06T02:11:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136699#issuecomment-5556273813",
-      "comment_created_at": "2026-09-06T02:11:23Z",
-      "comment_updated_at": "2026-09-06T02:11:23Z",
-      "comment_body_sha256": "e777646d4beed6375de5e8b7577bad236de7cc2e20455d8cd50c49a152fe33a5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136699,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T02:12:49.930Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-target-package-capabilities",
-        "head_sha": "92b2db8b40ac53b9203b27466829cf66373d55b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138829:5556281639:2026-09-06T02:13:00Z:re_review",
       "comment_id": "5556281639",
@@ -32691,6 +32644,39 @@
         "kind": "pull_request",
         "branch": "codex/lmstudio-catalog",
         "head_sha": "d6d441ae1dd89729bd954d37d2f4fe02ca7c06ac",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139683:5556683983:2026-09-06T06:35:20Z:clawsweeper_needs_human",
+      "comment_id": "5556683983",
+      "comment_version_key": "5556683983:2026-09-06T06:35:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139683#issuecomment-5556683983",
+      "comment_created_at": "2026-09-06T03:41:03Z",
+      "comment_updated_at": "2026-09-06T06:35:20Z",
+      "comment_body_sha256": "fadc5fcd979e5496070c4ad3540f04eb16cb39e825b031d511fdb1ebaff0eda8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139683,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Doctor runs can now stop after a migration refusal or descriptor mismatch; operators must resolve the reported failure before later repairs proceed. The discussion explicitly... (sha=6314d2bad3a061798a9f9a9367a3157d991f7940)",
+      "expected_head_sha": "6314d2bad3a061798a9f9a9367a3157d991f7940",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T06:36:24.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-migration-authority-r152",
+        "head_sha": "6314d2bad3a061798a9f9a9367a3157d991f7940",
         "cluster_id": null,
         "job_path": null
       }
