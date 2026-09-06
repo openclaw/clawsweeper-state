@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T05:48:43.999Z",
+  "updated_at": "2026-09-06T05:49:00.125Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136374:5556097574:2026-09-06T01:33:41Z:re_review",
-      "comment_id": "5556097574",
-      "comment_version_key": "5556097574:2026-09-06T01:33:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136374#issuecomment-5556097574",
-      "comment_created_at": "2026-09-06T01:33:41Z",
-      "comment_updated_at": "2026-09-06T01:33:41Z",
-      "comment_body_sha256": "207cf9a5f5fce6ea7733f04722b29264caa1ae1d413416227d2cb8b2b527ebd9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136374,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T01:34:34.025Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-emoji-prototype-key",
-        "head_sha": "db97c8af12fa93f6f6fd86f6d417cabda5544a59",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:105617:4952375487:2026-09-06T01:21:57Z:clawsweeper_auto_repair",
       "comment_id": "4952375487",
@@ -32431,6 +32384,39 @@
         "kind": "pull_request",
         "branch": "codex/bun-ui-test-portability",
         "head_sha": "2198ec2b7ab462c34b27ed4dc601230ffd325511",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-06T05:46:43Z:clawsweeper_needs_human",
+      "comment_id": "5528348023",
+      "comment_version_key": "5528348023:2026-09-06T05:46:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5528348023",
+      "comment_created_at": "2026-09-03T15:52:26Z",
+      "comment_updated_at": "2026-09-06T05:46:43Z",
+      "comment_body_sha256": "0e144b9924313f4d9632290b385feeac46b2b1770bf4edd11a4e7853b247f23e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing stores immediately use a new coordinated transcript, identity, and projection repair path; accepted fresh/existing-store restart, recovery, and rollback compatibility evidenc... (sha=7d6c086ad3fea67d3ad1ba193b9c060f08d52a04)",
+      "expected_head_sha": "7d6c086ad3fea67d3ad1ba193b9c060f08d52a04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T05:49:00.125Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "7d6c086ad3fea67d3ad1ba193b9c060f08d52a04",
         "cluster_id": null,
         "job_path": null
       }
