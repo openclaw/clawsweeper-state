@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T22:26:28.285Z",
+  "updated_at": "2026-09-06T22:27:56.492Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140304:5560808722:2026-09-06T17:09:19Z:clawsweeper_needs_human",
-      "comment_id": "5560808722",
-      "comment_version_key": "5560808722:2026-09-06T17:09:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140304#issuecomment-5560808722",
-      "comment_created_at": "2026-09-06T17:09:19Z",
-      "comment_updated_at": "2026-09-06T17:09:19Z",
-      "comment_body_sha256": "b62d21b2c7663a55c7b383b638c1837fd2d785957b4f18a83f5aca8e76d4731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140304,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Completed child arrays remain retained until final assembly, and parent and expanded arrays briefly coexist; the reported allocation improvement does not establish lower peak heap. (sha=315989346c124aab0f71710f901b1cb872007834)",
-      "expected_head_sha": "315989346c124aab0f71710f901b1cb872007834",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T17:10:20.022Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf13-iframe-snapshot-assembly",
-        "head_sha": "315989346c124aab0f71710f901b1cb872007834",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137674:5533911185:2026-09-06T17:09:53Z:clawsweeper_needs_human",
       "comment_id": "5533911185",
@@ -32206,6 +32173,53 @@
       "status": "skipped",
       "processed_at": "2026-09-06T22:26:28.285Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5562618872:2026-09-06T22:27:38Z:re_review",
+      "comment_id": "5562618872",
+      "comment_version_key": "5562618872:2026-09-06T22:27:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5562618872",
+      "comment_created_at": "2026-09-06T22:27:04Z",
+      "comment_updated_at": "2026-09-06T22:27:38Z",
+      "comment_body_sha256": "5fec09f65d5ce2838055b096a3a33a7025aaf8c41e0d5ea822531c6681e0ecd6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `3988d1a38e3dfdbe0208f881d4892d0c2a4f5382`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T22:27:54.013Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "3988d1a38e3dfdbe0208f881d4892d0c2a4f5382",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
