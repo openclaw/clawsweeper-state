@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-06T07:57:37.631Z",
+  "updated_at": "2026-09-06T07:57:57.569Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139548:5556674658:2026-09-06T03:39:00Z:re_review",
-      "comment_id": "5556674658",
-      "comment_version_key": "5556674658:2026-09-06T03:39:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139548#issuecomment-5556674658",
-      "comment_created_at": "2026-09-06T03:39:00Z",
-      "comment_updated_at": "2026-09-06T03:39:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139548,
-      "author": "srikolagani",
-      "author_id": 32967996,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T03:39:48.367Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "srikolagani/fix-97616",
-        "head_sha": "867d22068290f9f8063b3176fd44855fdb248c40",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139651:5556473342:2026-09-06T03:35:07Z:clawsweeper_needs_human",
       "comment_id": "5556473342",
@@ -32404,6 +32357,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T07:57:37.631Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139388:5554787444:2026-09-06T07:57:10Z:clawsweeper_needs_human",
+      "comment_id": "5554787444",
+      "comment_version_key": "5554787444:2026-09-06T07:57:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139388#issuecomment-5554787444",
+      "comment_created_at": "2026-09-05T21:07:01Z",
+      "comment_updated_at": "2026-09-06T07:57:10Z",
+      "comment_body_sha256": "d6e8f129ca894bc582f886c99e93687cd087a2e05246a1c2d6437109745201cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139388,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The SDK-exported dispatcher changes preparation ownership and pending receipt semantics; compatibility coverage exercises repository wrappers and custom-dispatcher fixtures, not indep... (sha=0f97a2f26dad9bcabb465a319577e79149cc20de)",
+      "expected_head_sha": "0f97a2f26dad9bcabb465a319577e79149cc20de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T07:57:57.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deslop-delivery-custody",
+        "head_sha": "0f97a2f26dad9bcabb465a319577e79149cc20de",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
