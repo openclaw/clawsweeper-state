@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T20:41:57.410Z",
+  "updated_at": "2026-09-06T20:42:30.334Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5478533052:2026-08-31T12:42:51Z:re_review",
-      "comment_id": "5478533052",
-      "comment_version_key": "5478533052:2026-08-31T12:42:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5478533052",
-      "comment_created_at": "2026-08-31T12:42:51Z",
-      "comment_updated_at": "2026-08-31T12:42:51Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T14:59:17.191Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5479983396:2026-08-31T14:42:34Z:re_review",
       "comment_id": "5479983396",
@@ -32546,6 +32519,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140296:5560748817:2026-09-06T20:41:37Z:clawsweeper_needs_human",
+      "comment_id": "5560748817",
+      "comment_version_key": "5560748817:2026-09-06T20:41:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140296#issuecomment-5560748817",
+      "comment_created_at": "2026-09-06T16:58:57Z",
+      "comment_updated_at": "2026-09-06T20:41:37Z",
+      "comment_body_sha256": "5f20512a58164c9d8c4c43e679cfcc7450df09a0e0a56fc8fe09a8a33ecea524",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140296,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=33837db2f086e8d6db0f6b8d1c9127f7413d2231)",
+      "expected_head_sha": "33837db2f086e8d6db0f6b8d1c9127f7413d2231",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T20:42:30.334Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-sqlite-import-codex-rows",
+        "head_sha": "33837db2f086e8d6db0f6b8d1c9127f7413d2231",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
