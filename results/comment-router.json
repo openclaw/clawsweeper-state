@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T08:11:59.133Z",
+  "updated_at": "2026-09-06T08:12:05.418Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-09-06T03:51:10Z:clawsweeper_needs_human",
-      "comment_id": "4876928065",
-      "comment_version_key": "4876928065:2026-09-06T03:51:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4876928065",
-      "comment_created_at": "2026-07-03T13:44:49Z",
-      "comment_updated_at": "2026-09-06T03:51:10Z",
-      "comment_body_sha256": "17ffffa94458f64c84c98ed941de6e70b5604f984ff9fce30d3ae8116f163019",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Gateway clients that render stored Responses image payloads will receive omission metadata instead; historical images can disappear outside the updated Control UI unless thos... (sha=42dafb18f822bcd6a48966badcf3f21f02289de9)",
-      "expected_head_sha": "42dafb18f822bcd6a48966badcf3f21f02289de9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T03:57:53.989Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-history-sanitize-input-image",
-        "head_sha": "42dafb18f822bcd6a48966badcf3f21f02289de9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133376:5469860800:2026-09-06T03:50:35Z:clawsweeper_needs_human",
       "comment_id": "5469860800",
@@ -32366,6 +32333,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127091:5557946828:2026-09-06T08:11:12Z:re_review",
+      "comment_id": "5557946828",
+      "comment_version_key": "5557946828:2026-09-06T08:11:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127091#issuecomment-5557946828",
+      "comment_created_at": "2026-09-06T08:11:12Z",
+      "comment_updated_at": "2026-09-06T08:11:12Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127091,
+      "author": "parthamehta123",
+      "author_id": 25328046,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T08:12:03.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "privacy/payload-redaction-v2",
+        "head_sha": "51ee6671481bc94afc2202e8819402a9825702a0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
