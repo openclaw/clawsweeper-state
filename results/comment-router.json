@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T15:45:31.669Z",
+  "updated_at": "2026-09-06T15:45:40.868Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139542:5555728962:2026-09-06T08:53:39Z:clawsweeper_needs_human",
-      "comment_id": "5555728962",
-      "comment_version_key": "5555728962:2026-09-06T08:53:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139542#issuecomment-5555728962",
-      "comment_created_at": "2026-09-06T00:15:52Z",
-      "comment_updated_at": "2026-09-06T08:53:39Z",
-      "comment_body_sha256": "08aa68f4cc7cc9ecb9a73ae5d5289e70cb8d607976cad9d9a8e23242798eed35",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139542,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing compatible providers that emit different complete argument objects will now fail the turn immediately, even when a later terminal snapshot could potentially reconcile the cal... (sha=d63e0afa485fc2b5aed995422be4e5e6a5175990)",
-      "expected_head_sha": "d63e0afa485fc2b5aed995422be4e5e6a5175990",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T08:55:58.774Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/responses-output-item-done-stale-args",
-        "head_sha": "d63e0afa485fc2b5aed995422be4e5e6a5175990",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139692:5556712086:2026-09-06T08:50:48Z:clawsweeper_auto_repair",
       "comment_id": "5556712086",
@@ -33129,6 +33096,53 @@
         "kind": "pull_request",
         "branch": "codex/acp-session-new-ordering",
         "head_sha": "8d1632bff276c292bda4f30ab17d0460ccfe14ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139822:5560329176:2026-09-06T15:44:53Z:re_review",
+      "comment_id": "5560329176",
+      "comment_version_key": "5560329176:2026-09-06T15:44:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139822#issuecomment-5560329176",
+      "comment_created_at": "2026-09-06T15:44:53Z",
+      "comment_updated_at": "2026-09-06T15:44:53Z",
+      "comment_body_sha256": "11ec949be11a18fbb6746688dd115ff2fe2fc344e6d41c777889dff5ab6eefc6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139822,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T15:45:35.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/local-inference-responsiveness",
+        "head_sha": "c82fa7647fa634be8053a99c3988926c5096189c",
         "cluster_id": null,
         "job_path": null
       },
