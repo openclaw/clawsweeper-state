@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-06T04:42:17.444Z",
+  "updated_at": "2026-09-06T04:42:47.724Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112945:5247936816:2026-08-11T01:19:23Z:re_review",
-      "comment_id": "5247936816",
-      "comment_version_key": "5247936816:2026-08-11T01:19:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112945#issuecomment-5247936816",
-      "comment_created_at": "2026-08-11T01:19:23Z",
-      "comment_updated_at": "2026-08-11T01:19:23Z",
-      "comment_body_sha256": "d1b2dc45e9f758c6f8cd5ab231f2fff4b80fa859741ec5fb71f184dad80a90ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112945,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T23:48:12.820Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112945:5248102198:2026-08-11T01:48:19Z:re_review",
       "comment_id": "5248102198",
@@ -32500,6 +32473,39 @@
       "status": "skipped",
       "processed_at": "2026-09-06T04:42:17.444Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120443:5224337448:2026-09-06T04:35:07Z:clawsweeper_needs_human",
+      "comment_id": "5224337448",
+      "comment_version_key": "5224337448:2026-09-06T04:35:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120443#issuecomment-5224337448",
+      "comment_created_at": "2026-08-08T03:41:53Z",
+      "comment_updated_at": "2026-09-06T04:35:07Z",
+      "comment_body_sha256": "2e706ff1ab7460d0010b12fb58420e6ff3c28167d43682f06d5d02654023459c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120443,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured Evidence section explicitly leaves production preflight continuation and physical closed-client rejection pending. Older... (sha=f76627905dc11a7dc9cac916c5d504e224b49f51)",
+      "expected_head_sha": "f76627905dc11a7dc9cac916c5d504e224b49f51",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T04:42:47.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119977-codex-stale-binding-compaction",
+        "head_sha": "f76627905dc11a7dc9cac916c5d504e224b49f51",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
