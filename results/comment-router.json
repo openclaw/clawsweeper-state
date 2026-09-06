@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T15:33:46.200Z",
+  "updated_at": "2026-09-06T15:34:05.427Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139944:5558118204:2026-09-06T08:45:37Z:clawsweeper_auto_repair",
-      "comment_id": "5558118204",
-      "comment_version_key": "5558118204:2026-09-06T08:45:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139944#issuecomment-5558118204",
-      "comment_created_at": "2026-09-06T08:45:37Z",
-      "comment_updated_at": "2026-09-06T08:45:37Z",
-      "comment_body_sha256": "408b38ab97a2cb67be8404e91718353796e829140e064d521b4e58346606e834",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139944,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0a12bc2118da19175eb8c2424eeb98a397213ac0)",
-      "expected_head_sha": "0a12bc2118da19175eb8c2424eeb98a397213ac0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T08:47:45.864Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-presence-wait-completion",
-        "head_sha": "0a12bc2118da19175eb8c2424eeb98a397213ac0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139947:5558119994:2026-09-06T08:45:59Z:clawsweeper_needs_human",
       "comment_id": "5558119994",
@@ -33076,6 +33043,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140180:5560263725:2026-09-06T15:33:14Z:re_review",
+      "comment_id": "5560263725",
+      "comment_version_key": "5560263725:2026-09-06T15:33:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140180#issuecomment-5560263725",
+      "comment_created_at": "2026-09-06T15:33:14Z",
+      "comment_updated_at": "2026-09-06T15:33:14Z",
+      "comment_body_sha256": "58bd9a850e9a3bc7aa11469deef593e1c8a246e43eae2d78d92e8761585a2ba8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140180,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T15:34:03.571Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cmd-quote-trailing-backslash",
+        "head_sha": "1e6d77f6b3925f37a03bebdea92053d4d6593a72",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
