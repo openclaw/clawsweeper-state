@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-130432"
 mode: "autonomous"
-run_id: "34012426664"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34012426664"
+run_id: "34012660802"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34012660802"
 head_sha: "10c64167c30da64c0b0c78a2b3872bf7435cb0e3"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-06T04:55:16.733Z"
+published_at: "2026-09-06T05:36:23.948Z"
 canonical: "https://github.com/openclaw/openclaw/issues/130432"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/130432"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34012426664](https://github.com/openclaw/clawsweeper/actions/runs/34012426664)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34012660802](https://github.com/openclaw/clawsweeper/actions/runs/34012660802)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/130432
 
 ## Summary
 
-Source inspection supports the session-derived destination defect on preflight main. Implementation is blocked by the read-only checkout and missing dependencies; no failing production regression or live Google Chat proof was executed. A narrow fix artifact is prepared. No files or GitHub state changed.
+Source inspection supports a narrow routing defect on the preflight main SHA. Implementation is blocked by the read-only workspace and absent dependencies. Related-PR verification also requires GitHub access. No files or GitHub state changed; regression tests and live Google Chat proof remain outstanding.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Source inspection supports the session-derived destination defect on preflight m
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #130432 | fix_needed | blocked | canonical | Canonical bug classification is supported; implementation remains blocked until a writable executor establishes the failing production boundary and completes the existing-work check. |
-| cluster:issue-openclaw-openclaw-130432 | build_fix_artifact | planned | canonical | The artifact defines a narrow conditional repair for the executor; it does not authorize publication before reproduction and validation. |
+| #130432 | fix_needed | blocked | canonical | The issue remains actionable from source evidence, but the required production-boundary regression has not run. Resume implementation in a writable executor after checking existing related work and establishing the failing regression. |
+| cluster:issue-openclaw-openclaw-130432 | build_fix_artifact | planned |  | A conditional fix artifact is supported despite blocked local implementation. It does not authorize publishing an unvalidated patch. |
 
 ## Needs Human
 
