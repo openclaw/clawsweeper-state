@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-06T17:00:41.699Z",
+  "updated_at": "2026-09-06T17:01:38.205Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140010:5558632346:2026-09-06T10:31:03Z:re_review",
-      "comment_id": "5558632346",
-      "comment_version_key": "5558632346:2026-09-06T10:31:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/140010#issuecomment-5558632346",
-      "comment_created_at": "2026-09-06T10:31:03Z",
-      "comment_updated_at": "2026-09-06T10:31:03Z",
-      "comment_body_sha256": "5c5c8892e51133da747c7450a794a514131e3e6ecbc071996f05cb5d06a506a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140010,
-      "author": "TommyLei666",
-      "author_id": 212664666,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — fresh evidence added above (measured wake-to-reconnect table, 5 sanitized log windows, event-loop stall correlation for the worst case). thanks",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T10:39:31.530Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131604:5449651344:2026-09-06T10:27:32Z:clawsweeper_needs_human",
       "comment_id": "5449651344",
@@ -32783,6 +32738,39 @@
         "kind": "pull_request",
         "branch": "fix/101049-plugin-install-dep-gate",
         "head_sha": "8e7921dcd931636a3fddc51a859042bd7e0e9141",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132668:5463275621:2026-09-06T17:00:31Z:clawsweeper_auto_repair",
+      "comment_id": "5463275621",
+      "comment_version_key": "5463275621:2026-09-06T17:00:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132668#issuecomment-5463275621",
+      "comment_created_at": "2026-08-29T15:32:58Z",
+      "comment_updated_at": "2026-09-06T17:00:31Z",
+      "comment_body_sha256": "a6adebdc86a23f3adde28d09f504a3711dcb0196e0f179da4158b2d4dfa98458",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132668,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d1693762b53d6b50ccc27d35e210e7bb8293ec68)",
+      "expected_head_sha": "d1693762b53d6b50ccc27d35e210e7bb8293ec68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T17:01:38.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-132317",
+        "head_sha": "d1693762b53d6b50ccc27d35e210e7bb8293ec68",
         "cluster_id": null,
         "job_path": null
       }
