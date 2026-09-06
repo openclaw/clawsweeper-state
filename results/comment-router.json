@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T07:21:53.975Z",
+  "updated_at": "2026-09-06T07:22:47.092Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139660:5556567914:2026-09-06T03:14:41Z:clawsweeper_needs_human",
-      "comment_id": "5556567914",
-      "comment_version_key": "5556567914:2026-09-06T03:14:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139660#issuecomment-5556567914",
-      "comment_created_at": "2026-09-06T03:14:41Z",
-      "comment_updated_at": "2026-09-06T03:14:41Z",
-      "comment_body_sha256": "f989c3b02af6ec5de46ac0ff12bcd0f4ef14d4f14c7474e8269f9f9509e14c94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139660,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured evidence does not yet establish completed package-upgrade and ledger behavior for this exact head; the linked systemd run was pending. (sha=52a9be8b0cfc2dce87a7ac059d0d5b31c63b6d4c)",
-      "expected_head_sha": "52a9be8b0cfc2dce87a7ac059d0d5b31c63b6d4c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T03:15:31.608Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/npm-update-handoff",
-        "head_sha": "52a9be8b0cfc2dce87a7ac059d0d5b31c63b6d4c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1901:5556439352:2026-09-06T03:15:38Z:clawsweeper_needs_human",
       "comment_id": "5556439352",
@@ -32564,6 +32531,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139388:5557709083:2026-09-06T07:21:57Z:re_review",
+      "comment_id": "5557709083",
+      "comment_version_key": "5557709083:2026-09-06T07:21:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139388#issuecomment-5557709083",
+      "comment_created_at": "2026-09-06T07:21:57Z",
+      "comment_updated_at": "2026-09-06T07:21:57Z",
+      "comment_body_sha256": "53d25e086b5a9e9a057fd4334e2ad245ee99efa77875fcd01c962563f1eaad48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139388,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T07:22:44.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deslop-delivery-custody",
+        "head_sha": "78324e36404ef0fd5ac232fb83a2eac953dc6bc3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
