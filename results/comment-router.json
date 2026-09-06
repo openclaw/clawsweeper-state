@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T02:22:34.456Z",
+  "updated_at": "2026-09-06T02:23:28.770Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138839:5549528458:2026-09-05T21:08:52Z:clawsweeper_needs_human",
-      "comment_id": "5549528458",
-      "comment_version_key": "5549528458:2026-09-05T21:08:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138839#issuecomment-5549528458",
-      "comment_created_at": "2026-09-05T05:04:44Z",
-      "comment_updated_at": "2026-09-05T21:08:52Z",
-      "comment_body_sha256": "3b8fcee61a3fb4085332fcd6823c882a1e5511ec7f6457d70e42c9193a9efa07",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138839,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Bun on Windows refuses staged updates before stopping the service and requires manual installation/restart; native Windows service recovery remains explicitly unqualified. (sha=1f7644022e09d1f3f24fb92b955c0917a2bcf741)",
-      "expected_head_sha": "1f7644022e09d1f3f24fb92b955c0917a2bcf741",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-05T21:12:05.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/update-transaction",
-        "head_sha": "c0297906773074d024551865db37752d294c8e79",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139353:5554671199:2026-09-05T21:11:02Z:clawsweeper_needs_human",
       "comment_id": "5554671199",
@@ -32680,6 +32647,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:133050:5556327066:2026-09-06T02:22:30Z:re_review",
+      "comment_id": "5556327066",
+      "comment_version_key": "5556327066:2026-09-06T02:22:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133050#issuecomment-5556327066",
+      "comment_created_at": "2026-09-06T02:22:30Z",
+      "comment_updated_at": "2026-09-06T02:22:30Z",
+      "comment_body_sha256": "16ca8ab9211fe19914bfd63aa9cd554142f043f62a735d8bbf012f8747a3dc3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133050,
+      "author": "TurboTheTurtle",
+      "author_id": 35905412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T02:23:26.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/110564-compaction-fit-planning",
+        "head_sha": "11d8ff866a0d9129e682bade61884cd14d44854c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
