@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T06:57:39.597Z",
+  "updated_at": "2026-09-06T06:59:06.811Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139608:5556398491:2026-09-06T02:38:33Z:clawsweeper_needs_human",
-      "comment_id": "5556398491",
-      "comment_version_key": "5556398491:2026-09-06T02:38:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139608#issuecomment-5556398491",
-      "comment_created_at": "2026-09-06T02:38:33Z",
-      "comment_updated_at": "2026-09-06T02:38:33Z",
-      "comment_body_sha256": "4a1b22dafba4f38bff377ba6d9a49b1d953c3b9f151c7e67ed2f3a8dd37e840e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139608,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The update-command tests exercise legacy and inherited-run admission with real SQLite storage, but mocked process and service boundaries do not... (sha=825ffb9a8f21a33a1dda292d28a4d40fbbdda794)",
-      "expected_head_sha": "825ffb9a8f21a33a1dda292d28a4d40fbbdda794",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T02:39:22.696Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/legacy-update-run-ownership",
-        "head_sha": "825ffb9a8f21a33a1dda292d28a4d40fbbdda794",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139638:5556400130:2026-09-06T02:38:56Z:clawsweeper_needs_human",
       "comment_id": "5556400130",
@@ -32634,6 +32601,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139558:5557596751:2026-09-06T06:58:16Z:re_review",
+      "comment_id": "5557596751",
+      "comment_version_key": "5557596751:2026-09-06T06:58:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139558#issuecomment-5557596751",
+      "comment_created_at": "2026-09-06T06:58:16Z",
+      "comment_updated_at": "2026-09-06T06:58:16Z",
+      "comment_body_sha256": "9d1a5b499b92ef8e725ce6001a7e1aec696359b8e6c45260f6e93808c023ea22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139558,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T06:59:04.825Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-cursor-squash-credit",
+        "head_sha": "53c27b5e9665067a6d3bb7ae5c7fe7fc23deca09",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
