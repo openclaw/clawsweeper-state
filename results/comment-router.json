@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-06T09:09:59.291Z",
+  "updated_at": "2026-09-06T09:10:08.710Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-06T04:30:06Z:clawsweeper_needs_human",
-      "comment_id": "5528348023",
-      "comment_version_key": "5528348023:2026-09-06T04:30:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5528348023",
-      "comment_created_at": "2026-09-03T15:52:26Z",
-      "comment_updated_at": "2026-09-06T04:30:06Z",
-      "comment_body_sha256": "a9cbddf427d11c3021d1d33d6f644fa7bbc96957b9098093225f4ac534103de8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing databases immediately use a different coordinated transcript, identity, and projection mutation path; accepted fresh-store, existing-store restart/recovery, and rollback comp... (sha=839ccfddd2386f52ccee3ccf343c4095d4060bf1)",
-      "expected_head_sha": "839ccfddd2386f52ccee3ccf343c4095d4060bf1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T04:36:07.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "839ccfddd2386f52ccee3ccf343c4095d4060bf1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138900:5549810390:2026-09-06T04:34:12Z:clawsweeper_needs_human",
       "comment_id": "5549810390",
@@ -32388,6 +32355,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5558225863:2026-09-06T09:07:20Z:re_review",
+      "comment_id": "5558225863",
+      "comment_version_key": "5558225863:2026-09-06T09:07:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5558225863",
+      "comment_created_at": "2026-09-06T09:07:20Z",
+      "comment_updated_at": "2026-09-06T09:07:20Z",
+      "comment_body_sha256": "3cf888e16cbc8854283101229e239877117a11b990e2139a7f2e2c537af8ba20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `266b7b36442e606333700b05b326a036c8451115` (empty follow-up commit only retriggers the pull-request ci after github recorded a non-rerunnable startup failure on the prior code head)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T09:10:06.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "266b7b36442e606333700b05b326a036c8451115",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
