@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:16:55.848Z",
+  "updated_at": "2026-09-07T12:17:00.049Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141061:5568509721:2026-09-07T09:27:37Z:re_review",
-      "comment_id": "5568509721",
-      "comment_version_key": "5568509721:2026-09-07T09:27:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141061#issuecomment-5568509721",
-      "comment_created_at": "2026-09-07T09:27:37Z",
-      "comment_updated_at": "2026-09-07T09:27:37Z",
-      "comment_body_sha256": "85798115de642fe78068d3421f05eaf59bdbcd730893e81aa51cba246abc7971",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141061,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T09:28:26.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs-audit/split-slack",
-        "head_sha": "35e29df07ba07964b612cc8fd769996e4d35dc57",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137841:5535082834:2026-09-07T09:27:07Z:clawsweeper_needs_human",
       "comment_id": "5535082834",
@@ -30945,6 +30898,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-dashboard-gallery-client-contract",
         "head_sha": "a7ac1092ae16e4788724d20808fc3b839251186d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141205:5570491240:2026-09-07T12:16:06Z:clawsweeper_needs_human",
+      "comment_id": "5570491240",
+      "comment_version_key": "5570491240:2026-09-07T12:16:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141205#issuecomment-5570491240",
+      "comment_created_at": "2026-09-07T12:16:06Z",
+      "comment_updated_at": "2026-09-07T12:16:06Z",
+      "comment_body_sha256": "5aec519c916646f652a782d23695a2f3e0086e172389768936e8436a1a5c9f23",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The compact and expanded layouts have not received the explicitly required visual inspection; height assertions alone cannot establish visual quality. (sha=8f5ac4a909ec844505e06987099d2c123b140f32)",
+      "expected_head_sha": "8f5ac4a909ec844505e06987099d2c123b140f32",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T12:17:00.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/compact-completed-subagent-card",
+        "head_sha": "8f5ac4a909ec844505e06987099d2c123b140f32",
         "cluster_id": null,
         "job_path": null
       }
