@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T06:44:47.554Z",
+  "updated_at": "2026-09-07T06:45:19.765Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140598:5564082889:2026-09-07T02:15:22Z:re_review",
-      "comment_id": "5564082889",
-      "comment_version_key": "5564082889:2026-09-07T02:15:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140598#issuecomment-5564082889",
-      "comment_created_at": "2026-09-07T02:15:22Z",
-      "comment_updated_at": "2026-09-07T02:15:22Z",
-      "comment_body_sha256": "053cc06e0186fbac6a979e5475d2410b2938c04dec5743a4086df7e0851c43ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140598,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T02:21:52.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-git-to-package-same-version",
-        "head_sha": "8daff1941a1a73ac6e71ef7d090bf9e9a49a4208",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140598:5563922654:2026-09-07T02:20:57Z:clawsweeper_needs_human",
       "comment_id": "5563922654",
@@ -32119,6 +32072,39 @@
         "kind": "pull_request",
         "branch": "steipete/update-legacy-system-agent-owner",
         "head_sha": "1fe3cb0f256c8fba93e025c1126ab8fbd5c48e39",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140547:5563496948:2026-09-07T06:39:19Z:clawsweeper_needs_human",
+      "comment_id": "5563496948",
+      "comment_version_key": "5563496948:2026-09-07T06:39:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140547#issuecomment-5563496948",
+      "comment_created_at": "2026-09-07T00:49:12Z",
+      "comment_updated_at": "2026-09-07T06:39:19Z",
+      "comment_body_sha256": "75c868661d681a96d089f1d2bb59455acb49f8bc8d12d9cfe4702d916d5f2728",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140547,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured GitHub state reports conflicts; the reconciled branch has not been inspected, including its interaction with main's shared JSON projection. (sha=7845cc45612651c7823954633c2892dea4d1ea75)",
+      "expected_head_sha": "7845cc45612651c7823954633c2892dea4d1ea75",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T06:45:19.765Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/status-target-role-label",
+        "head_sha": "7845cc45612651c7823954633c2892dea4d1ea75",
         "cluster_id": null,
         "job_path": null
       }
