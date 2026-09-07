@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:01:17.819Z",
+  "updated_at": "2026-09-07T04:01:22.323Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137381:5528348023:2026-09-06T21:29:28Z:clawsweeper_needs_human",
-      "comment_id": "5528348023",
-      "comment_version_key": "5528348023:2026-09-06T21:29:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5528348023",
-      "comment_created_at": "2026-09-03T15:52:26Z",
-      "comment_updated_at": "2026-09-06T21:29:28Z",
-      "comment_body_sha256": "920d2056dc389a9a84a96cca6660313811b8e13230cee611721079f7189bc3e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing bounded sessions can refuse yield or precheck cleanup when removal crosses the hydrated window or planning limits; successful recovery from those refusals is not established... (sha=49ef6c2db883d4b8fafb4ff8deb494a04e5ec823)",
-      "expected_head_sha": "49ef6c2db883d4b8fafb4ff8deb494a04e5ec823",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T21:38:06.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "49ef6c2db883d4b8fafb4ff8deb494a04e5ec823",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137674:5533911185:2026-09-06T21:30:43Z:clawsweeper_needs_human",
       "comment_id": "5533911185",
@@ -33020,6 +32987,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137169:5564829210:2026-09-07T04:00:28Z:re_review",
+      "comment_id": "5564829210",
+      "comment_version_key": "5564829210:2026-09-07T04:00:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137169#issuecomment-5564829210",
+      "comment_created_at": "2026-09-07T04:00:28Z",
+      "comment_updated_at": "2026-09-07T04:00:28Z",
+      "comment_body_sha256": "5ae381932f285b5941532599db8eb912a8dfa3af4568bb103779120e944be77d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137169,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — please re-establish patch continuity against the fetchable `c54dc40841f` above",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T04:01:20.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-137142-discord-system-agent-approval",
+        "head_sha": "94e963a3e73d5e4f84bc3c87ee4f9c986f7bc0de",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
