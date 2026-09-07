@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141122",
+  "mode": "autonomous",
+  "run_id": "34110114724",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34110114724",
+  "head_sha": "e8779e8b672dfb8d51b3af5aba44815cfb9a7295",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141122.md",
+  "published_at": "2026-09-07T10:46:22.316Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141122",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141122",
+  "canonical_pr": null,
+  "summary": "Confirmed the lifecycle defect against preflight main and prepared a narrow fix artifact. Implementation is blocked by the read-only workspace. No files or GitHub state changed; supported-Node regression, performance comparison, focused tests, and changed checks remain pending.",
+  "actions": [
+    {
+      "target": "#141122",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "A narrow owner-level release repair is justified. Recheck live ownership and reproduce on supported Node 22 before editing."
+    },
+    {
+      "target": "#91588",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No evidence establishes that the transcript lifecycle leak covers this broader report; retain as context."
+    },
+    {
+      "target": "#121572",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate browser-memory investigation; no duplicate or fix coverage is established."
+    },
+    {
+      "target": "#140443",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The macOS restart report remains unresolved and is not proven to share this lifecycle root cause."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141122",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "Prepare one implementation on clawsweeper/issue-openclaw-openclaw-141122, reusing any existing PR for that branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141122",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "The deterministic executor needs a writable checkout, dependencies, supported Node 22, and a fresh ownership check before implementing, validating, and opening or updating the single PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 5,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
