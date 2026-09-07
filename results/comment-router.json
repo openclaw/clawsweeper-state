@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T09:05:31.292Z",
+  "updated_at": "2026-09-07T09:05:35.518Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140779:5565037524:2026-09-07T04:28:56Z:clawsweeper_needs_human",
-      "comment_id": "5565037524",
-      "comment_version_key": "5565037524:2026-09-07T04:28:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140779#issuecomment-5565037524",
-      "comment_created_at": "2026-09-07T04:28:56Z",
-      "comment_updated_at": "2026-09-07T04:28:56Z",
-      "comment_body_sha256": "fb25539cb4465aa5a27757f9285887052e1c7d456cc6ad6e02b2fb48a0c0e5a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140779,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Full type, lint, and build validation remains unestablished because the reported changed-file run stopped at the stale assertion baseline. (sha=fb1db29b924d271672109e4485c2b2c8911924a2)",
-      "expected_head_sha": "fb1db29b924d271672109e4485c2b2c8911924a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T04:29:46.720Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/dedup-group-policy-0906",
-        "head_sha": "fb1db29b924d271672109e4485c2b2c8911924a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140778:5565041390:2026-09-07T04:29:26Z:clawsweeper_auto_repair",
       "comment_id": "5565041390",
@@ -32660,6 +32627,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135418:5568164354:2026-09-07T09:04:42Z:re_review",
+      "comment_id": "5568164354",
+      "comment_version_key": "5568164354:2026-09-07T09:04:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135418#issuecomment-5568164354",
+      "comment_created_at": "2026-09-07T09:04:42Z",
+      "comment_updated_at": "2026-09-07T09:04:42Z",
+      "comment_body_sha256": "0ba547d2b3c2a3f04dbcedb62b07ea436c69cd2f56191a8c13cc794e7871e25b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135418,
+      "author": "ly85206559",
+      "author_id": 12526624,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T09:05:33.480Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fractional-media-byte-limit",
+        "head_sha": "25f95de9759ffa7e2b9e22d6e57feddc5a74240e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
