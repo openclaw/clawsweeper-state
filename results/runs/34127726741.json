@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141242",
+  "mode": "autonomous",
+  "run_id": "34127726741",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34127726741",
+  "head_sha": "ce5cdbf0f3f561955174cf264ae5d944c03a527e",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141242.md",
+  "published_at": "2026-09-07T14:31:00.443Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141242",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141242",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the running-plus-endedAt misclassification on preflight main. A narrow fix artifact is ready, but implementation and regression execution are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141242",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141242",
+      "candidate_fix": null,
+      "reason": "The existing lifecycle contract supports a narrow predicate repair. Execution must first establish the failing ordered regression on current main; native Codex behavior remains unverified."
+    },
+    {
+      "target": "#99964",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; no closeout action."
+    },
+    {
+      "target": "#99985",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve this prior fix; it does not exclude explicitly running sessions."
+    },
+    {
+      "target": "#102736",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context with a different lifecycle status."
+    },
+    {
+      "target": "#137643",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different cause of interrupted requester completion; no timeout-policy changes belong in this repair."
+    },
+    {
+      "target": "#138966",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical merged context; preserve its behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141242",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141242",
+      "candidate_fix": null,
+      "reason": "Hand off one bounded new-fix PR plan to the writable executor, gated on reproduction and refreshed ownership."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 5,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
