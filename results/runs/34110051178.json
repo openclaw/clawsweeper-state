@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141123",
+  "mode": "autonomous",
+  "run_id": "34110051178",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34110051178",
+  "head_sha": "e8779e8b672dfb8d51b3af5aba44815cfb9a7295",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141123.md",
+  "published_at": "2026-09-07T10:19:51.431Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141123",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141123",
+  "canonical_pr": null,
+  "summary": "Confirmed the startup coverage gap on preflight main. Narrow repair artifact prepared; implementation and regression validation are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141123",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141123",
+      "candidate_fix": null,
+      "reason": "Source confirms a narrow startup defect covered by existing error policy. Runtime reproduction remains a prerequisite to implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141123",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141123",
+      "candidate_fix": null,
+      "reason": "A bounded executor plan is supported by current source without changing configuration, dependencies, retry policy, or security boundaries."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141123",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#141123",
+      "candidate_fix": null,
+      "reason": "PR preparation is blocked on writable execution and the required reproduction and validation gates; no maintainer product decision is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
