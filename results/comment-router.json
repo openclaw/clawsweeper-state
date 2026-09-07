@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T09:14:26.746Z",
+  "updated_at": "2026-09-07T09:14:36.216Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140748:5564828655:2026-09-07T04:40:03Z:clawsweeper_needs_human",
-      "comment_id": "5564828655",
-      "comment_version_key": "5564828655:2026-09-07T04:40:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140748#issuecomment-5564828655",
-      "comment_created_at": "2026-09-07T04:00:23Z",
-      "comment_updated_at": "2026-09-07T04:40:03Z",
-      "comment_body_sha256": "5df703b5d489530f7eca05b058bf9f1368fb6e539177efe6525b93c8c7b0afae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140748,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing child pins disappear and lose maintenance protection without an explicit unpin. Eligible ordinary children can be archived, synthetic children removed, and cap-archived child... (sha=949279c087f1c10f5f8a75af717eb8bf5172f250)",
-      "expected_head_sha": "949279c087f1c10f5f8a75af717eb8bf5172f250",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T04:46:23.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/subagent-pinned-bug-6de80f",
-        "head_sha": "949279c087f1c10f5f8a75af717eb8bf5172f250",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140752:5564833404:2026-09-07T04:37:37Z:clawsweeper_needs_human",
       "comment_id": "5564833404",
@@ -32574,6 +32541,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140760:5568277384:2026-09-07T09:12:17Z:re_review",
+      "comment_id": "5568277384",
+      "comment_version_key": "5568277384:2026-09-07T09:12:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140760#issuecomment-5568277384",
+      "comment_created_at": "2026-09-07T09:12:17Z",
+      "comment_updated_at": "2026-09-07T09:12:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140760,
+      "author": "zenglingbiao",
+      "author_id": 290951975,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T09:14:34.108Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/daemon-env-atomic-write",
+        "head_sha": "1d333c1dfe9d66e06016dde243ceb38e68668bcf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
