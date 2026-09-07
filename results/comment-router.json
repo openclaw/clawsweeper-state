@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T02:23:19.671Z",
+  "updated_at": "2026-09-07T02:24:04.159Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5561765215:2026-09-06T19:55:08Z:re_review",
-      "comment_id": "5561765215",
-      "comment_version_key": "5561765215:2026-09-06T19:55:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5561765215",
-      "comment_created_at": "2026-09-06T19:54:56Z",
-      "comment_updated_at": "2026-09-06T19:55:08Z",
-      "comment_body_sha256": "ec3d313c99ca2ce5ec44ef72928999a6f61432b80f83fcec7cc2855c6d742dd1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `06652db2fdbe4e09a84ce9e14c50f77b6a5d6263`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T19:55:41.621Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "06652db2fdbe4e09a84ce9e14c50f77b6a5d6263",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134550:5561771333:2026-09-06T19:56:03Z:re_review",
       "comment_id": "5561771333",
@@ -32777,6 +32730,39 @@
         "kind": "pull_request",
         "branch": "codex/team-ws-close-diagnostics-20260907",
         "head_sha": "1f81dcad69975f0fdc8041fd95fe904f7a9681dc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140638:5564168364:2026-09-07T02:23:10Z:clawsweeper_needs_human",
+      "comment_id": "5564168364",
+      "comment_version_key": "5564168364:2026-09-07T02:23:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140638#issuecomment-5564168364",
+      "comment_created_at": "2026-09-07T02:23:10Z",
+      "comment_updated_at": "2026-09-07T02:23:10Z",
+      "comment_body_sha256": "99419e2ccebdf494fad320e2353e7c276f3fea4834d527f8477b3a7a24fc825a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140638,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent verification of Pi TUI’s exact rendered spacing remains limited by unavailable dependency source; the captured PR reports passing component checks. (sha=3ecafeb6cfbc6180701f6156fa1289164808a66f)",
+      "expected_head_sha": "3ecafeb6cfbc6180701f6156fa1289164808a66f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T02:24:04.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-tui-filter-render",
+        "head_sha": "3ecafeb6cfbc6180701f6156fa1289164808a66f",
         "cluster_id": null,
         "job_path": null
       }
