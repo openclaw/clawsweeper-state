@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:53:04.365Z",
+  "updated_at": "2026-09-07T04:53:59.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137893:5562663702:2026-09-06T22:35:47Z:re_review",
-      "comment_id": "5562663702",
-      "comment_version_key": "5562663702:2026-09-06T22:35:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5562663702",
-      "comment_created_at": "2026-09-06T22:35:47Z",
-      "comment_updated_at": "2026-09-06T22:35:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137893,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T22:36:47.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-native-legacy-package",
-        "head_sha": "5340769372ddf8a2599d85597db28c4e534b67b5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5562667892:2026-09-06T22:36:36Z:re_review",
       "comment_id": "5562667892",
@@ -33073,6 +33026,39 @@
         "kind": "pull_request",
         "branch": "kv/bedrock-prompt-cache-checkpoints",
         "head_sha": "9f51c58878faf022d81cd497f62109240a52f924",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140804:5565217771:2026-09-07T04:53:09Z:clawsweeper_needs_human",
+      "comment_id": "5565217771",
+      "comment_version_key": "5565217771:2026-09-07T04:53:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140804#issuecomment-5565217771",
+      "comment_created_at": "2026-09-07T04:53:09Z",
+      "comment_updated_at": "2026-09-07T04:53:09Z",
+      "comment_body_sha256": "a40ef2ca6d6a558272905bfa67153bc8c6db04d9493eca5272b915262308d241",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140804,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d5a8801391a2d3eaf5c9e1a407e81d764bf80cae)",
+      "expected_head_sha": "d5a8801391a2d3eaf5c9e1a407e81d764bf80cae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T04:53:59.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kv/managed-messages-tool-cache-marker",
+        "head_sha": "d5a8801391a2d3eaf5c9e1a407e81d764bf80cae",
         "cluster_id": null,
         "job_path": null
       }
