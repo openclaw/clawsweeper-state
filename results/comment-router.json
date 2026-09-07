@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:20:28.310Z",
+  "updated_at": "2026-09-07T12:20:35.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1477:5568631490:2026-09-07T09:37:00Z:re_review",
-      "comment_id": "5568631490",
-      "comment_version_key": "5568631490:2026-09-07T09:37:00Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1477#issuecomment-5568631490",
-      "comment_created_at": "2026-09-07T09:37:00Z",
-      "comment_updated_at": "2026-09-07T09:37:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1477,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T09:37:56.361Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/nervous-euler-716513",
-        "head_sha": "f59b58b780f378098f6c3fea5ec2b8032f4451c3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:34:5568643819:2026-09-07T09:37:56Z:clawsweeper_needs_human",
       "comment_id": "5568643819",
@@ -30909,6 +30862,39 @@
         "kind": "pull_request",
         "branch": "boxd-grpc-tls",
         "head_sha": "65036ebc007eefe360dda01076ceb9263df9c65c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141190:5570175370:2026-09-07T12:19:42Z:clawsweeper_auto_repair",
+      "comment_id": "5570175370",
+      "comment_version_key": "5570175370:2026-09-07T12:19:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141190#issuecomment-5570175370",
+      "comment_created_at": "2026-09-07T11:49:12Z",
+      "comment_updated_at": "2026-09-07T12:19:42Z",
+      "comment_body_sha256": "a80f0d0cd0e2acb62597549a0389f75f0b0207678c2e459a7d4bd14ae6105d3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=65f43c674bca762d1ee8f76404a07556b3d3f65b)",
+      "expected_head_sha": "65f43c674bca762d1ee8f76404a07556b3d3f65b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T12:20:35.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ios/native-chat-upstream",
+        "head_sha": "65f43c674bca762d1ee8f76404a07556b3d3f65b",
         "cluster_id": null,
         "job_path": null
       }
