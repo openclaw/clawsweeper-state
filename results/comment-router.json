@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T09:18:36.461Z",
+  "updated_at": "2026-09-07T09:18:49.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5565190226:2026-09-07T04:50:43Z:re_review",
-      "comment_id": "5565190226",
-      "comment_version_key": "5565190226:2026-09-07T04:50:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5565190226",
-      "comment_created_at": "2026-09-07T04:49:06Z",
-      "comment_updated_at": "2026-09-07T04:50:43Z",
-      "comment_body_sha256": "dd367a0d41a8aafe77bd3ad5e15624c111987fde4ae4e9a65332d0e78254243c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `42fc48c39d34ea9da1e92eeebb75de8c523d68eb`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T04:51:14.637Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "42fc48c39d34ea9da1e92eeebb75de8c523d68eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140115:5559406718:2026-09-07T04:50:58Z:clawsweeper_needs_human",
       "comment_id": "5559406718",
@@ -32585,6 +32538,39 @@
         "kind": "pull_request",
         "branch": "triage/20260907-release-workflows",
         "head_sha": "9a7bf8b62232716a32614b932e49603ab581413b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140672:5564339106:2026-09-07T09:17:53Z:clawsweeper_needs_human",
+      "comment_id": "5564339106",
+      "comment_version_key": "5564339106:2026-09-07T09:17:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140672#issuecomment-5564339106",
+      "comment_created_at": "2026-09-07T02:48:00Z",
+      "comment_updated_at": "2026-09-07T09:17:53Z",
+      "comment_body_sha256": "323cbd6c591cd7b93cb46a5c49f8f164c27aa54af175d70c64ebf7482c045263",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140672,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The approved support reduction stops existing Node 22/25, older Node 24/26, and explicitly configured older worker images from running; official ARMv7 and macOS 11–13.4 CLI/Gateway us... (sha=4839c57d6000cf1a4923a4e6cc7f11d0bacd706c)",
+      "expected_head_sha": "4839c57d6000cf1a4923a4e6cc7f11d0bacd706c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T09:18:49.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/compat-node-sqlite-floor",
+        "head_sha": "4839c57d6000cf1a4923a4e6cc7f11d0bacd706c",
         "cluster_id": null,
         "job_path": null
       }
