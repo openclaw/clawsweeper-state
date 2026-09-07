@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141122",
+  "mode": "plan",
+  "run_id": "34114076484",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34114076484",
+  "head_sha": "178dd28125eeb087f3afc2164a052f51ce958077",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141122.md",
+  "published_at": "2026-09-07T11:09:06.648Z",
+  "canonical": "#141122",
+  "canonical_issue": "#141122",
+  "canonical_pr": null,
+  "summary": "Plan one narrow lifecycle repair for #141122. The clean checkout matches preflight main 58e0a9de635caaa9f85821765dd3b2d60ef21b31 and retains the reported disposal gap. No code changes, runtime reproduction, validation, or GitHub mutations were performed. Related memory reports remain separate.",
+  "actions": [
+    {
+      "target": "#141122",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "Repair storage release at the lifecycle owner while preserving admitted-write ordering and bounded teardown. Publication requires successful reproduction, validation, and a refreshed competing-PR check."
+    },
+    {
+      "target": "#91588",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "Shared memory-growth symptoms do not prove the per-attempt storage defect explains this report."
+    },
+    {
+      "target": "#121572",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different subsystem and disputed mechanism; no browser changes or closure belong in this repair."
+    },
+    {
+      "target": "#140443",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "The storage repair cannot be claimed to resolve this distinct, unresolved incident."
+    },
+    {
+      "target": "#141132",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#141122",
+      "candidate_fix": null,
+      "reason": "Historical duplicate already consolidated by its reporter; no action needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_independent": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
