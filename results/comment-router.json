@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:02:21.768Z",
+  "updated_at": "2026-09-07T01:02:39.667Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133653:5532486896:2026-09-03T21:38:48Z:re_review",
-      "comment_id": "5532486896",
-      "comment_version_key": "5532486896:2026-09-03T21:38:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133653#issuecomment-5532486896",
-      "comment_created_at": "2026-09-03T21:38:48Z",
-      "comment_updated_at": "2026-09-03T21:38:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133653,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T18:39:36.852Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133653:5532869810:2026-09-03T22:18:14Z:re_review",
       "comment_id": "5532869810",
@@ -32442,6 +32415,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:236:5563570227:2026-09-07T01:01:55Z:clawsweeper_needs_human",
+      "comment_id": "5563570227",
+      "comment_version_key": "5563570227:2026-09-07T01:01:55Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/236#issuecomment-5563570227",
+      "comment_created_at": "2026-09-07T01:01:55Z",
+      "comment_updated_at": "2026-09-07T01:01:55Z",
+      "comment_body_sha256": "7d977ae997fdb1d7961cfe741cbf1be9864b53f8317043546f4ef831d80778e8",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence for move publication and cleanup consists of regression/consumer test totals and test source, without an observed consume... (sha=286469182737f58b3b499784bfe2827ec53d615f)",
+      "expected_head_sha": "286469182737f58b3b499784bfe2827ec53d615f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T01:02:39.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/move-authority-receipts",
+        "head_sha": "286469182737f58b3b499784bfe2827ec53d615f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
