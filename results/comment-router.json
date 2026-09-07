@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T08:41:39.919Z",
+  "updated_at": "2026-09-07T08:41:41.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137757:5564713710:2026-09-07T03:42:31Z:re_review",
-      "comment_id": "5564713710",
-      "comment_version_key": "5564713710:2026-09-07T03:42:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137757#issuecomment-5564713710",
-      "comment_created_at": "2026-09-07T03:42:31Z",
-      "comment_updated_at": "2026-09-07T03:42:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137757,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T03:43:24.905Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/137197-inline-model-prose",
-        "head_sha": "a3d1adbedd22ed45808e80bcf1674fbc53f4d9e3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140734:5564714335:2026-09-07T03:42:38Z:clawsweeper_needs_human",
       "comment_id": "5564714335",
@@ -32647,6 +32600,39 @@
         "kind": "pull_request",
         "branch": "chore/notes-4.3.2-20260907",
         "head_sha": "9601a61fde508d5797b448a89d219ec88aa7fca0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:124:5567843377:2026-09-07T08:40:51Z:clawsweeper_needs_human",
+      "comment_id": "5567843377",
+      "comment_version_key": "5567843377:2026-09-07T08:40:51Z",
+      "comment_url": "https://github.com/openclaw/notcrawl/pull/124#issuecomment-5567843377",
+      "comment_created_at": "2026-09-07T08:40:51Z",
+      "comment_updated_at": "2026-09-07T08:40:51Z",
+      "comment_body_sha256": "9e381324c242171d692856ea8531096546824c193a1232f420524d8381eb389c",
+      "repo": "openclaw/notcrawl",
+      "issue_number": 124,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed surface is the packaged changelog heading; the supplied validation reports checks but does not show its after-change rendered outpu... (sha=8643e793da1cb32ddeb10f3c3e27966a1252216d)",
+      "expected_head_sha": "8643e793da1cb32ddeb10f3c3e27966a1252216d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T08:41:41.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/0.6.0",
+        "head_sha": "8643e793da1cb32ddeb10f3c3e27966a1252216d",
         "cluster_id": null,
         "job_path": null
       }
