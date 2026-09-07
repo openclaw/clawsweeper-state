@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T19:18:51.503Z",
+  "updated_at": "2026-09-07T19:18:57.320Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141107:5572431363:2026-09-07T14:55:36Z:re_review",
-      "comment_id": "5572431363",
-      "comment_version_key": "5572431363:2026-09-07T14:55:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141107#issuecomment-5572431363",
-      "comment_created_at": "2026-09-07T14:55:36Z",
-      "comment_updated_at": "2026-09-07T14:55:36Z",
-      "comment_body_sha256": "4039401f98dbda820a1fe919587a9825cb4bca792561e50ece2427716ed023aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141107,
-      "author": "louisfy",
-      "author_id": 54393156,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — the pr body now includes redacted after-fix gateway-to-compatible-proxy evidence for head `98171bf`, including successful requests, stable cache affinity, observed cache reuse, and the cache-disabled case",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T14:57:24.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openai-responses-session-affinity",
-        "head_sha": "98171bfed6b2307e5f4de2da73e33b121c473487",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:80497:4417018595:2026-09-07T14:51:49Z:clawsweeper_auto_repair",
       "comment_id": "4417018595",
@@ -32106,6 +32059,39 @@
         "kind": "pull_request",
         "branch": "fix/inspector-spawn-timeout",
         "head_sha": "ece6c572c4c1595f3e75bbb9cb5564338d11f689",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-ansible:71:5466472431:2026-09-07T19:18:00Z:clawsweeper_needs_human",
+      "comment_id": "5466472431",
+      "comment_version_key": "5466472431:2026-09-07T19:18:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw-ansible/pull/71#issuecomment-5466472431",
+      "comment_created_at": "2026-08-30T03:28:19Z",
+      "comment_updated_at": "2026-09-07T19:18:00Z",
+      "comment_body_sha256": "c4fe4f1fcd1c11652b5343c59571904cf20a97fdbb5a2d71cd0a76afd2e0575a",
+      "repo": "openclaw/openclaw-ansible",
+      "issue_number": 71,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed sudoers policy was checked through source assertions and macOS visudo parsing, but no Linu... (sha=7d8cc8997163e408343176bac4edeefd4225301f)",
+      "expected_head_sha": "7d8cc8997163e408343176bac4edeefd4225301f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T19:18:57.320Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sudoers-pin-wildcards",
+        "head_sha": "7d8cc8997163e408343176bac4edeefd4225301f",
         "cluster_id": null,
         "job_path": null
       }
