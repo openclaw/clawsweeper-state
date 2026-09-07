@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T23:04:58.208Z",
+  "updated_at": "2026-09-07T23:06:44.755Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141170:5573898280:2026-09-07T17:22:06Z:re_review",
-      "comment_id": "5573898280",
-      "comment_version_key": "5573898280:2026-09-07T17:22:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141170#issuecomment-5573898280",
-      "comment_created_at": "2026-09-07T17:22:06Z",
-      "comment_updated_at": "2026-09-07T17:22:06Z",
-      "comment_body_sha256": "f29a45c603a480719cf2f3e42706fbc8b8d4c9f68e9b34dca36e9ba8ee87e3b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141170,
-      "author": "shannon0430",
-      "author_id": 258282406,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T17:22:54.861Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/slack-native-progress-recovery",
-        "head_sha": "2fec06eb352ffb4fc89178b5130aa594c7c1a4d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140977:5567171269:2026-09-07T17:17:24Z:clawsweeper_needs_human",
       "comment_id": "5567171269",
@@ -32852,6 +32805,39 @@
         "kind": "pull_request",
         "branch": "pr/1343",
         "head_sha": "b4db08d445fc9796b57579b68ab8738ccc5a426a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139030:5551368193:2026-09-07T23:05:43Z:clawsweeper_needs_human",
+      "comment_id": "5551368193",
+      "comment_version_key": "5551368193:2026-09-07T23:05:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139030#issuecomment-5551368193",
+      "comment_created_at": "2026-09-05T11:10:52Z",
+      "comment_updated_at": "2026-09-07T23:05:43Z",
+      "comment_body_sha256": "55d0eedd65f0d9a8e0961a300107a8762411e24238b659f05c52830b605b0c3c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139030,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required listed security-owner participation for the authorization-test change is not established in the supplied review record. (sha=c381ed174a801310cac7e245538478fc905a9caf)",
+      "expected_head_sha": "c381ed174a801310cac7e245538478fc905a9caf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T23:06:44.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-group-defaults-scope-error",
+        "head_sha": "c381ed174a801310cac7e245538478fc905a9caf",
         "cluster_id": null,
         "job_path": null
       }
