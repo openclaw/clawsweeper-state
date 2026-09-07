@@ -67,22 +67,22 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Address https://github.com/openclaw/openclaw/issues/141032 with a narrow existing-behavior fix. Recheck live related PR ownership before opening work. Establish a failing regression where settled side-effecting tools are followed by a prompt-phase idle timeout, summary recovery returns empty or fails, and the queue-level signal remains active. Trace prepareTerminalWithSettledTurnFinalization through cron finalization and completion-status resolution. Preserve the original timeout/error unless recovery produces a real final answer; prevent the generic synthetic fallback from becoming a normal successful cron announcement in that case. Preserve successful-turn fallback, genuine recovered answers, explicit cancellation, silent replies, tool-error handling, and completed side effects; never replay tools. Related https://github.com/openclaw/openclaw/issues/138528 concerns abort-cause detail and should not be folded into this repair. Do not change idle-window defaults, add configuration, change storage schemas, or redesign completion policy. Stop for renewed triage if any such change is necessary. Extend focused existing tests and validate failed completion with no normal announcement at the cron boundary. Record user-visible release-note context in the PR body; do not edit CHANGELOG.md.
+Repair https://github.com/openclaw/openclaw/issues/141032 at the embedded runner’s settled-turn finalization boundary. First recheck live linked and related PRs; reuse an existing open fix rather than creating a duplicate. Establish a failing regression with a completed successful tool batch, no lastToolError, a prompt-phase idle timeout, and summary recovery that either returns empty or throws. Current finalization synthesizes an ok attempt and erases the timeout before cron consumes the result. Preserve the failed terminal outcome when recovery does not produce a real answer, and ensure cron records error/failed completion without announcing generic fallback prose as a normal successful report. Extend existing owner tests and downstream cron coverage; verify completed tools are not replayed. Preserve actual successful recovery, ordinary successful-tool fallback behavior, explicit cancellation, tool-error handling, delivery authority, and intentional silence. Do not change watchdog durations, provider policy, configuration, schemas, or persistence semantics. Stop if a new feature or product-policy choice becomes necessary. Run the listed focused checks and include meaningful boundary proof. Keep release-note context in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
 - src/agents/embedded-agent-runner/run/settled-turn-finalization.ts
 - src/agents/embedded-agent-runner/run/settled-turn-finalization.test.ts
-- src/agents/embedded-agent-runner/run/terminal-resolution.test.ts
-- src/cron/cron-delivery-outcomes.e2e.test.ts
+- src/agents/embedded-agent-runner/run/settled-tool-evidence.test.ts
+- src/cron/isolated-agent/run.meta-error-status.test.ts
+- src/cron/completion-status.test.ts
 
 Validation:
 
-- pnpm test src/agents/embedded-agent-runner/run/settled-turn-finalization.test.ts
-- pnpm test src/agents/embedded-agent-runner/run/terminal-resolution.test.ts
-- pnpm test src/cron/cron-delivery-outcomes.e2e.test.ts
-- pnpm test src/cron/completion-status.test.ts
+- pnpm test src/agents/embedded-agent-runner/run/settled-tool-evidence.test.ts src/agents/embedded-agent-runner/run/settled-turn-finalization.test.ts
+- pnpm test src/cron/isolated-agent/run.meta-error-status.test.ts src/cron/completion-status.test.ts
 - pnpm check:changed
+- git diff --check
 
 ## Operator Prompt
 
