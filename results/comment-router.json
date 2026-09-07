@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T23:35:17.714Z",
+  "updated_at": "2026-09-07T23:36:25.289Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140977:5567171269:2026-09-07T17:51:08Z:clawsweeper_needs_human",
-      "comment_id": "5567171269",
-      "comment_version_key": "5567171269:2026-09-07T17:51:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140977#issuecomment-5567171269",
-      "comment_created_at": "2026-09-07T07:47:16Z",
-      "comment_updated_at": "2026-09-07T17:51:08Z",
-      "comment_body_sha256": "f966faebbd69d4bdf384b6e84827a79ffec6f4170558afa5f758d098456f0e44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140977,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=43df0bb83bfb977fba5835e0b49ad3d6403748ab)",
-      "expected_head_sha": "43df0bb83bfb977fba5835e0b49ad3d6403748ab",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T18:00:05.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/pr-marker-benennen-und-favorisieren",
-        "head_sha": "43df0bb83bfb977fba5835e0b49ad3d6403748ab",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141124:5569056293:2026-09-07T17:45:12Z:clawsweeper_needs_human",
       "comment_id": "5569056293",
@@ -32485,6 +32452,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/lobster:160:5576768150:2026-09-07T23:35:39Z:re_review",
+      "comment_id": "5576768150",
+      "comment_version_key": "5576768150:2026-09-07T23:35:39Z",
+      "comment_url": "https://github.com/openclaw/lobster/pull/160#issuecomment-5576768150",
+      "comment_created_at": "2026-09-07T23:35:39Z",
+      "comment_updated_at": "2026-09-07T23:35:39Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/lobster",
+      "issue_number": 160,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T23:36:23.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/for-each-timeout-retry",
+        "head_sha": "9bab55f070a1fd1c84279272d37e9292842a710d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
