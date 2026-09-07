@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-140821"
-mode: "plan"
-run_id: "34087185915"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34087185915"
+mode: "autonomous"
+run_id: "34088865844"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34088865844"
 head_sha: "6cd409f54dbb8c6f97dd07c46aa8631d180dfa88"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-07T05:37:57.697Z"
-canonical: "#140821"
-canonical_issue: "#140821"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-07T06:27:54.722Z"
+canonical: "https://github.com/openclaw/openclaw/issues/140821"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/140821"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34087185915](https://github.com/openclaw/clawsweeper/actions/runs/34087185915)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34088865844](https://github.com/openclaw/clawsweeper/actions/runs/34088865844)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #140821
+Canonical: https://github.com/openclaw/openclaw/issues/140821
 
 ## Summary
 
-Plan a narrow systemd SIGTERM restart repair for #140821. Source inspection at the preflight main SHA supports the reported failure. No changes or runtime validation performed; duplicate-PR discovery and failing regression proof remain execution prerequisites.
+Source supports a narrow run-loop repair. Implementation and reproduction are blocked by the read-only environment; live ownership and latest-main verification also remain incomplete. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Plan a narrow systemd SIGTERM restart repair for #140821. Source inspection at t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #140821 | fix_needed | planned | canonical | A narrow lifecycle repair is supported. Keep the issue open and prepare one implementation on the designated branch after duplicate discovery and reproduction gates. |
-| #31 | keep_closed | skipped | independent | Historical context only; no action required. |
+| #140821 | fix_needed | planned | canonical | Keep the issue open and prepare the narrow repair; reproduce against freshly verified main and recheck existing PR ownership before implementation. |
+| #31 | keep_closed | skipped | independent | Historical context only; no action warranted. |
+| cluster:issue-openclaw-openclaw-140821 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation, failing regression proof, review, and systemd validation require an executor with writable storage and an isolated service environment. |
 
 ## Needs Human
 
