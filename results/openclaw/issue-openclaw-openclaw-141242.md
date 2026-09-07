@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141242"
-mode: "autonomous"
-run_id: "34127726741"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34127726741"
-head_sha: "ce5cdbf0f3f561955174cf264ae5d944c03a527e"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-07T14:31:00.443Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141242"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141242"
+mode: "plan"
+run_id: "34135456966"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34135456966"
+head_sha: "330b8ee4e32dccf73f99b2d3e92203dbf70523c8"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-07T15:00:07.299Z"
+canonical: "#141242"
+canonical_issue: "#141242"
 canonical_pr: null
-actions_total: 7
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34127726741](https://github.com/openclaw/clawsweeper/actions/runs/34127726741)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34135456966](https://github.com/openclaw/clawsweeper/actions/runs/34135456966)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141242
+Canonical: #141242
 
 ## Summary
 
-Source inspection confirms the running-plus-endedAt misclassification on preflight main. A narrow fix artifact is ready, but implementation and regression execution are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.
+Plan a narrow repair for #141242. The checkout matches preflight main dd53f7fec223e300f1eee1a7ee73459e0764ca39, and source inspection confirms the reported predicate remains. Runtime reproduction, implementation, and validation are pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,7 @@ Source inspection confirms the running-plus-endedAt misclassification on preflig
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141242 | fix_needed | planned | canonical | The existing lifecycle contract supports a narrow predicate repair. Execution must first establish the failing ordered regression on current main; native Codex behavior remains unverified. |
-| #99964 | keep_closed | skipped | related | Historical context; no closeout action. |
-| #99985 | keep_closed | skipped | related | Preserve this prior fix; it does not exclude explicitly running sessions. |
-| #102736 | keep_closed | skipped | related | Historical context with a different lifecycle status. |
-| #137643 | keep_closed | skipped | related | Different cause of interrupted requester completion; no timeout-policy changes belong in this repair. |
-| #138966 | keep_closed | skipped | related | Historical merged context; preserve its behavior. |
-| cluster:issue-openclaw-openclaw-141242 | build_fix_artifact | planned |  | Hand off one bounded new-fix PR plan to the writable executor, gated on reproduction and refreshed ownership. |
+| #141242 | fix_needed | planned | canonical | The evidence supports a shared lifecycle-predicate repair without changing configuration, persistence semantics, or generation authority. Require a failing ordered regression before production edits. Keep the issue open. |
 
 ## Needs Human
 
