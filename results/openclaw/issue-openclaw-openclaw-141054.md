@@ -2,14 +2,14 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141054"
 mode: "plan"
-run_id: "34107585992"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34107585992"
+run_id: "34109019897"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34109019897"
 head_sha: "e8779e8b672dfb8d51b3af5aba44815cfb9a7295"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-07T09:58:28.564Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141054"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141054"
+published_at: "2026-09-07T10:37:31.289Z"
+canonical: "#141054"
+canonical_issue: "#141054"
 canonical_pr: null
 actions_total: 1
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34107585992](https://github.com/openclaw/clawsweeper/actions/runs/34107585992)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34109019897](https://github.com/openclaw/clawsweeper/actions/runs/34109019897)
 
 Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141054
+Canonical: #141054
 
 ## Summary
 
-Source inspection confirms the reported cache gap at preflight main e9a25669202cbe194ede76912260b2be461bfc75. A narrow Discord repair is planned. No files or GitHub state changed; runtime reproduction and validation remain pending.
+Plan a narrow Discord snapshot-cache repair. Source inspection supports the reported defect; no code changes, runtime reproduction, tests, or GitHub mutations were performed. Current ownership, competing PR discovery, and latest-main verification remain execution prerequisites.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Source inspection confirms the reported cache gap at preflight main e9a25669202c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/141054 | fix_needed | planned | canonical | Keep this issue open and prepare one validated implementation path. The source corroborates the finding: guild snapshots populate event baselines but never the member-info cache. No security-boundary change is required. |
+| #141054 | fix_needed | planned | canonical | Repair the existing snapshot-to-member-info path while preserving event policy and account isolation. Missing discovery details do not prevent this non-mutating recommendation; recheck them before implementation. |
 
 ## Needs Human
 
