@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141604",
+  "mode": "plan",
+  "run_id": "34168206006",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34168206006",
+  "head_sha": "b6297c4b6272da294d17186455db294e1a6b08fd",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141604.md",
+  "published_at": "2026-09-07T22:59:14.723Z",
+  "canonical": "#141604",
+  "canonical_issue": "#141604",
+  "canonical_pr": null,
+  "summary": "Plan a narrow stop-diagnostics fix for #141604. Source inspection at the preflight main SHA supports the reported gap. Existing-PR discovery remains unresolved because gh lacks authentication. No files or GitHub state changed; regression tests and validation were not run.",
+  "actions": [
+    {
+      "target": "#141604",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141604",
+      "candidate_fix": null,
+      "reason": "The diagnostics defect has a narrow repair path. Complete PR discovery and demonstrate the failing boundary regression before implementation; do not change retry policy or close the issue."
+    },
+    {
+      "target": "#99943",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#141604",
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve provider-timeout fallback as a positive control."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
