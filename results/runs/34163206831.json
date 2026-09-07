@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141564",
+  "mode": "plan",
+  "run_id": "34163206831",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34163206831",
+  "head_sha": "b6297c4b6272da294d17186455db294e1a6b08fd",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141564.md",
+  "published_at": "2026-09-07T21:33:01.457Z",
+  "canonical": "#141564",
+  "canonical_issue": "#141564",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Browser panel recovery fix for #141564. Source inspection matches the reported missing recovery trigger at the preflight main SHA. No files or GitHub state changed; runtime reproduction and validation remain required.",
+  "actions": [
+    {
+      "target": "#141564",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141564",
+      "candidate_fix": null,
+      "reason": "A focused recovery repair is supported by the issue and current-source inspection. Establish the failing regression before production edits, then validate one implementation PR without closing or merging."
+    },
+    {
+      "target": "#141031",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this historical authority-sensitive context outside ClawSweeper Repair. No mutation or new vulnerability claim is proposed; any security reassessment belongs to central OpenClaw security handling. The independent UI recovery fix can proceed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141564"
-mode: "autonomous"
-run_id: "34162204632"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34162204632"
-head_sha: "22a614ce1493487d5be5b6e3a860b6ef3e8c80bb"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34163206831"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34163206831"
+head_sha: "b6297c4b6272da294d17186455db294e1a6b08fd"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-07T21:18:59.924Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141564"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141564"
+published_at: "2026-09-07T21:33:01.457Z"
+canonical: "#141564"
+canonical_issue: "#141564"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34162204632](https://github.com/openclaw/clawsweeper/actions/runs/34162204632)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34163206831](https://github.com/openclaw/clawsweeper/actions/runs/34163206831)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141564
+Canonical: #141564
 
 ## Summary
 
-Source inspection supports a narrow recovery fix. Implementation is blocked in this worker by read-only access, missing dependencies, and unavailable latest-main verification. No code or GitHub state changed; runtime reproduction and validation remain required.
+Plan a narrow Browser panel recovery fix for #141564. Source inspection matches the reported missing recovery trigger at the preflight main SHA. No files or GitHub state changed; runtime reproduction and validation remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Source inspection supports a narrow recovery fix. Implementation is blocked in t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141564 | fix_needed | planned | canonical | A bounded existing-behavior defect remains supported by source. Keep the issue open while the executor establishes a failing regression on verified latest main. |
-| #141031 | keep_closed | skipped | related | Historical implementation context, not an open repair candidate or closure target. |
-| cluster:issue-openclaw-openclaw-141564 | build_fix_artifact | planned |  | The fix is sufficiently narrow to hand off without a product or security-policy decision. |
-| cluster:issue-openclaw-openclaw-141564 | open_fix_pr | blocked |  | PR implementation and publication are blocked until a writable executor verifies latest main and ownership, demonstrates the required failing regression, implements the repair, and completes review and validation. |
+| #141564 | fix_needed | planned | canonical | A focused recovery repair is supported by the issue and current-source inspection. Establish the failing regression before production edits, then validate one implementation PR without closing or merging. |
+| #141031 | route_security | planned | security_sensitive | Keep this historical authority-sensitive context outside ClawSweeper Repair. No mutation or new vulnerability claim is proposed; any security reassessment belongs to central OpenClaw security handling. The independent UI recovery fix can proceed. |
 
 ## Needs Human
 
