@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T21:18:29.309Z",
+  "updated_at": "2026-09-07T21:18:35.456Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141265:5571962648:2026-09-07T16:20:53Z:clawsweeper_auto_repair",
-      "comment_id": "5571962648",
-      "comment_version_key": "5571962648:2026-09-07T16:20:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141265#issuecomment-5571962648",
-      "comment_created_at": "2026-09-07T14:18:13Z",
-      "comment_updated_at": "2026-09-07T16:20:53Z",
-      "comment_body_sha256": "1c9a55fed7fa295680228a238cc0b1ed9db7088cb65533d0047d985f6a3db1d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141265,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=df8786bc8d6102ff4f384444ce487bdd68fc97cb)",
-      "expected_head_sha": "df8786bc8d6102ff4f384444ce487bdd68fc97cb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T16:23:46.511Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/code-mode-parity-integration",
-        "head_sha": "df8786bc8d6102ff4f384444ce487bdd68fc97cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141329:5573188930:2026-09-07T16:20:55Z:clawsweeper_needs_human",
       "comment_id": "5573188930",
@@ -32366,6 +32333,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134047:5575713930:2026-09-07T21:17:39Z:re_review",
+      "comment_id": "5575713930",
+      "comment_version_key": "5575713930:2026-09-07T21:17:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134047#issuecomment-5575713930",
+      "comment_created_at": "2026-09-07T21:17:39Z",
+      "comment_updated_at": "2026-09-07T21:17:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134047,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T21:18:33.663Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/docker-runtime-pnpm-lock",
+        "head_sha": "b9c90cb56f8cb9b9b6ac87cce2d088672bea1156",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
