@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:10:38.109Z",
+  "updated_at": "2026-09-07T04:10:41.728Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140458:5562359076:2026-09-06T21:39:45Z:re_review",
-      "comment_id": "5562359076",
-      "comment_version_key": "5562359076:2026-09-06T21:39:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140458#issuecomment-5562359076",
-      "comment_created_at": "2026-09-06T21:39:45Z",
-      "comment_updated_at": "2026-09-06T21:39:45Z",
-      "comment_body_sha256": "3947928184d044121832a3174562c664e4643dd8b93d7f083d7c67c73be2f80d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140458,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — updated to use the two-element `[\"--import\", \"<url>\"]` format to match `filteropenclawchildexecargv`'s output. the pinned file:// url now passes through transparently",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T21:39:48.951Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/140416-pin-tsx-worker-loader",
-        "head_sha": "a2d13812d5e0eb3571c3573e772a78e85b760ec6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140458:5562353906:2026-09-06T21:38:45Z:clawsweeper_auto_repair",
       "comment_id": "5562353906",
@@ -33085,6 +33038,39 @@
         "kind": "pull_request",
         "branch": "fix/daemon-env-atomic-write",
         "head_sha": "fbebb153791c0153c83d20e77018ac390b41583b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140711:5564585589:2026-09-07T04:09:49Z:clawsweeper_needs_human",
+      "comment_id": "5564585589",
+      "comment_version_key": "5564585589:2026-09-07T04:09:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140711#issuecomment-5564585589",
+      "comment_created_at": "2026-09-07T03:24:45Z",
+      "comment_updated_at": "2026-09-07T04:09:49Z",
+      "comment_body_sha256": "e26a13bf59cfdc1a68ea1cd5e9d4c77d285d448efe7e36cc87e2f5b39af048b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140711,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5d93096a549d6af0b4edffa15152a4b470e64c0e)",
+      "expected_head_sha": "5d93096a549d6af0b4edffa15152a4b470e64c0e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T04:10:41.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-activity-navigation",
+        "head_sha": "5d93096a549d6af0b4edffa15152a4b470e64c0e",
         "cluster_id": null,
         "job_path": null
       }
