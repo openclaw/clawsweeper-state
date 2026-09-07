@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141042",
+  "mode": "autonomous",
+  "run_id": "34102868613",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34102868613",
+  "head_sha": "792b2ebaba37e331f3d03479451253780eced6e4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141042.md",
+  "published_at": "2026-09-07T09:37:41.381Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141042",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141042",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow fix for #141042 on preflight main 6d1b7a8c0967dd4371b8b18f444b5722e3f61b0f. Fix artifact prepared; implementation and regression execution are blocked by the read-only filesystem and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141042",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141042",
+      "candidate_fix": null,
+      "reason": "The reported ordering defect remains in the inspected source. Runtime reproduction is pending, not disproven; establish the failing archive regression before modifying production code."
+    },
+    {
+      "target": "#67417",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or reopening action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141042",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141042",
+      "candidate_fix": null,
+      "reason": "The fix plan is ready for an executor with writable access. Implementation remains blocked in this worker; publication requires a demonstrated failing regression, repaired passing proof, and a refreshed implementation-PR check."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
