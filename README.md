@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 7, 2026, 09:45 UTC
+Last source update: Sep 7, 2026, 09:48 UTC
 
 ### Fleet
 
@@ -22,8 +22,8 @@ Last source update: Sep 7, 2026, 09:45 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review in progress | Sep 7, 2026, 09:45 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34107526735) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 7, 2026, 09:32 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34106424653) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 7, 2026, 09:46 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34106540632) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 7, 2026, 09:48 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34107926225) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 7, 2026, 08:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/34101229084) |
 
 ### Repositories
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 7, 2026, 09:44 UTC
+Last source update: Sep 7, 2026, 09:50 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 898 | 100% |
-| Run attempts archived | 2776 | audit |
-| Latest successful clusters | 737 | 82.1% |
-| Latest failed clusters | 159 | 17.7% |
+| Latest clusters reviewed | 899 | 100% |
+| Run attempts archived | 2777 | audit |
+| Latest successful clusters | 737 | 82.0% |
+| Latest failed clusters | 160 | 17.8% |
 | Latest cancelled clusters | 2 | 0.2% |
 | Needs-human clusters | 121 | 13.5% |
 | Fix actions failed | 33 | 4.6% |
@@ -115,15 +115,15 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 898 clusters: 304 maintainer action, 147 automation snapshot, 410 intervention needed, 37 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#40786](https://github.com/openclaw/openclaw/issues/40786) is maintainer_input: Refer this separate exclusion-policy request to central OpenClaw security handling without mutation; it does not block #139549..
+- Latest records: 899 clusters: 305 maintainer action, 147 automation snapshot, 410 intervention needed, 37 no pending action, 0 completed.
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#89399](https://github.com/openclaw/openclaw/issues/89399) is maintainer_input: Route only this broader trust-boundary request to central OpenClaw security handling, without public mutation. It does not block the ordi....
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#141054](https://github.com/openclaw/openclaw/pull/141054) is automation_failed: A narrow repair is supported by current source. Keep the issue open; reproduce through the existing listener/action harness before editing..
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#140879](https://github.com/openclaw/openclaw/pull/140879) is action_planned: A focused rendering defect with a defined existing-behavior contract. No boundary-bypass claim or security-policy change is needed. Curre....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
-| Maintainer Action | 304 | explicit decision, access, or merge authority recorded |
+| Maintainer Action | 305 | explicit decision, access, or merge authority recorded |
 | Automation Snapshot | 147 | repair, check, or planned action recorded; verify live status |
 | Intervention Needed | 410 | automation failure or blocker recorded |
 | No Pending Action | 37 | latest record proposes no repair or apply action |
@@ -131,7 +131,7 @@ State: Failed clusters need inspection
 
 | Lane state | Count |
 | --- | ---: |
-| maintainer_input | 157 |
+| maintainer_input | 158 |
 | merge_ready | 45 |
 | merge_not_authorized | 102 |
 | checks_blocked | 43 |
@@ -147,6 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#89399](https://github.com/openclaw/openclaw/issues/89399) | maintainer_input | Route only this broader trust-boundary request to central OpenClaw security handling, without public mutation. It does not block the ordinary start... | Sep 7, 2026, 09:50 UTC | [issue-openclaw-openclaw-141033](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-141033.md) | [34102318752](https://github.com/openclaw/clawsweeper/actions/runs/34102318752) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#40786](https://github.com/openclaw/openclaw/issues/40786) | maintainer_input | Refer this separate exclusion-policy request to central OpenClaw security handling without mutation; it does not block #139549. | Sep 6, 2026, 01:14 UTC | [issue-openclaw-openclaw-139549](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-139549.md) | [34003171622](https://github.com/openclaw/clawsweeper/actions/runs/34003171622) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#136257](https://github.com/openclaw/openclaw/issues/136257) | maintainer_input | Conservatively refer this separate credential-handling item to central OpenClaw security handling without mutation. This is not a vulnerability fin... | Sep 5, 2026, 15:00 UTC | [issue-openclaw-openclaw-139109](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-139109.md) | [33973142120](https://github.com/openclaw/clawsweeper/actions/runs/33973142120) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#123053](https://github.com/openclaw/openclaw/issues/123053) | maintainer_input | Precautionary read-only routing to central OpenClaw security handling, without asserting a current vulnerability. Do not modify, replace, or use th... | Sep 5, 2026, 10:02 UTC | [issue-openclaw-openclaw-138954](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138954.md) | [33959209453](https://github.com/openclaw/clawsweeper/actions/runs/33959209453) |
@@ -161,7 +162,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | maintainer_input | Provision the exact sibling ../codex checkout (or a worker environment that can do so) before implementation. This is a repository hard gate, not a... | Sep 4, 2026, 10:02 UTC | [issue-openclaw-openclaw-138102](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138102.md) | [33860696610](https://github.com/openclaw/clawsweeper/actions/runs/33860696610) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#136991](https://github.com/openclaw/openclaw/issues/136991) | maintainer_input | Quarantine this exact historical reference for central security handling under the worker's credential-content rule. Recommend no GitHub mutation o... | Sep 4, 2026, 07:08 UTC | [issue-openclaw-openclaw-137959](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137959.md) | [33846825110](https://github.com/openclaw/clawsweeper/actions/runs/33846825110) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | maintainer_input | Provide a writable checkout with dependencies and the required sibling ../codex checkout so the regression can be added, demonstrated failing befor... | Sep 4, 2026, 06:53 UTC | [issue-openclaw-openclaw-137925](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137925.md) | [33845858866](https://github.com/openclaw/clawsweeper/actions/runs/33845858866) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | maintainer_input | Provide a writable disposable macOS CI context with sibling ../codex source available. It must add and demonstrate the pre-fix-failing Swift regres... | Sep 4, 2026, 02:57 UTC | [issue-openclaw-openclaw-137085](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-137085.md) | [33830387073](https://github.com/openclaw/clawsweeper/actions/runs/33830387073) |
 
 #### Automation Snapshot
 
