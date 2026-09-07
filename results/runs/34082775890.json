@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-140770",
+  "mode": "autonomous",
+  "run_id": "34082775890",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34082775890",
+  "head_sha": "6cd409f54dbb8c6f97dd07c46aa8631d180dfa88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-140770.md",
+  "published_at": "2026-09-07T04:31:07.519Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/140770",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/140770",
+  "canonical_pr": null,
+  "summary": "The defect remains supported by checkout source and an isolated failing estimator probe. A narrow fix artifact is ready, but implementation and full regression validation are blocked by the read-only checkout, missing dependencies, and unavailable GitHub access. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#140770",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#140770",
+      "candidate_fix": null,
+      "reason": "The issue identifies a concrete accounting and exhausted-budget defect. Preserve it as the canonical report while preparing one implementation PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140770",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#140770",
+      "candidate_fix": null,
+      "reason": "The repair can stay within existing budgeting and recovery behavior without new configuration, minimum-output policy, storage semantics, or plugin APIs."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140770",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#140770",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked until a writable executor verifies current main and existing related work, reproduces the defect at the real boundary, and validates the repaired branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
