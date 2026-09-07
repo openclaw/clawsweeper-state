@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T10:48:57.976Z",
+  "updated_at": "2026-09-07T10:49:35.757Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140903:5565867963:2026-09-07T07:17:48Z:clawsweeper_needs_human",
-      "comment_id": "5565867963",
-      "comment_version_key": "5565867963:2026-09-07T07:17:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140903#issuecomment-5565867963",
-      "comment_created_at": "2026-09-07T06:11:37Z",
-      "comment_updated_at": "2026-09-07T07:17:48Z",
-      "comment_body_sha256": "010105e40a875f85fce08285525fe6599488e3ef3ff4e8c5e7d03ba42568d5b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140903,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing identity-authenticated scrapers whose effective scopes exclude reads will stop receiving metrics and require a role adjustment; this intentional transition is documented and... (sha=03fb057fb46acab83061a66abe47d9cbdb7b093d)",
-      "expected_head_sha": "03fb057fb46acab83061a66abe47d9cbdb7b093d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T07:18:43.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fix-1022",
-        "head_sha": "03fb057fb46acab83061a66abe47d9cbdb7b093d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3468:5566628371:2026-09-07T07:17:16Z:clawsweeper_needs_human",
       "comment_id": "5566628371",
@@ -32146,6 +32113,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141153:5569488879:2026-09-07T10:48:44Z:re_review",
+      "comment_id": "5569488879",
+      "comment_version_key": "5569488879:2026-09-07T10:48:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141153#issuecomment-5569488879",
+      "comment_created_at": "2026-09-07T10:48:44Z",
+      "comment_updated_at": "2026-09-07T10:48:44Z",
+      "comment_body_sha256": "dd0956dc0e0324826476daf41e9b58cdb95a21d8e965d19cc3497c4f82f12432",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141153,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T10:49:33.308Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-releasing",
+        "head_sha": "0fcdc36ff81a649d5aa92047195cf19f41e0971d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
