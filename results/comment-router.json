@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:14:00.823Z",
+  "updated_at": "2026-09-07T01:14:35.353Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140357:5561196639:2026-09-06T18:44:27Z:clawsweeper_needs_human",
-      "comment_id": "5561196639",
-      "comment_version_key": "5561196639:2026-09-06T18:44:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140357#issuecomment-5561196639",
-      "comment_created_at": "2026-09-06T18:18:08Z",
-      "comment_updated_at": "2026-09-06T18:44:27Z",
-      "comment_body_sha256": "2cc105252536b644a620ad61ec223a4e933c40b0ac7587b39613a1c8a5c22939",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140357,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Custom consumers reading the six former top-level image-result fields must adopt requested and outputs after upgrade; no affected in-tree reader was found. (sha=42c694a6c2ac1d3df86a97bb408fb45c12da6330)",
-      "expected_head_sha": "42c694a6c2ac1d3df86a97bb408fb45c12da6330",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T18:45:33.965Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-140295-image-settings",
-        "head_sha": "42c694a6c2ac1d3df86a97bb408fb45c12da6330",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140369:5561353957:2026-09-06T18:45:51Z:clawsweeper_needs_human",
       "comment_id": "5561353957",
@@ -32422,6 +32389,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140249:5563641316:2026-09-07T01:13:09Z:re_review",
+      "comment_id": "5563641316",
+      "comment_version_key": "5563641316:2026-09-07T01:13:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140249#issuecomment-5563641316",
+      "comment_created_at": "2026-09-07T01:13:09Z",
+      "comment_updated_at": "2026-09-07T01:13:09Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140249,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T01:14:32.943Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-bootstrap-truncation-notice-127528",
+        "head_sha": "5bf6fad326e12670bf8ebcb22b3df5f046e52b74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
