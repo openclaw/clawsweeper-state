@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141564",
+  "mode": "autonomous",
+  "run_id": "34162204632",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34162204632",
+  "head_sha": "22a614ce1493487d5be5b6e3a860b6ef3e8c80bb",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141564.md",
+  "published_at": "2026-09-07T21:18:59.924Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141564",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141564",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow recovery fix. Implementation is blocked in this worker by read-only access, missing dependencies, and unavailable latest-main verification. No code or GitHub state changed; runtime reproduction and validation remain required.",
+  "actions": [
+    {
+      "target": "#141564",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141564",
+      "candidate_fix": null,
+      "reason": "A bounded existing-behavior defect remains supported by source. Keep the issue open while the executor establishes a failing regression on verified latest main."
+    },
+    {
+      "target": "#141031",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#141564",
+      "candidate_fix": null,
+      "reason": "Historical implementation context, not an open repair candidate or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141564",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141564",
+      "candidate_fix": null,
+      "reason": "The fix is sufficiently narrow to hand off without a product or security-policy decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141564",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#141564",
+      "candidate_fix": null,
+      "reason": "PR implementation and publication are blocked until a writable executor verifies latest main and ownership, demonstrates the required failing regression, implements the repair, and completes review and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
