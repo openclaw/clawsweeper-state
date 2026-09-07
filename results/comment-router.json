@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T23:07:28.062Z",
+  "updated_at": "2026-09-07T23:07:33.689Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141317:5572966781:2026-09-07T17:22:27Z:clawsweeper_needs_human",
-      "comment_id": "5572966781",
-      "comment_version_key": "5572966781:2026-09-07T17:22:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141317#issuecomment-5572966781",
-      "comment_created_at": "2026-09-07T15:43:42Z",
-      "comment_updated_at": "2026-09-07T17:22:27Z",
-      "comment_body_sha256": "2a7018d1865f456dcf5b3ec5a81a9014a11036690791144553cb5de0331c1139",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141317,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured transcript exercises fetchPluralKitMessageInfo and shows credential masking, but its fetcher returns an in-memory Response; neithe... (sha=b12bd8338d9d8463006321c677fb973783ba63da)",
-      "expected_head_sha": "b12bd8338d9d8463006321c677fb973783ba63da",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T17:23:19.285Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-pluralkit-redact-errors",
-        "head_sha": "b12bd8338d9d8463006321c677fb973783ba63da",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141381:5573923663:2026-09-07T17:25:12Z:clawsweeper_needs_human",
       "comment_id": "5573923663",
@@ -32835,6 +32802,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141629:5576496848:2026-09-07T23:06:38Z:re_review",
+      "comment_id": "5576496848",
+      "comment_version_key": "5576496848:2026-09-07T23:06:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141629#issuecomment-5576496848",
+      "comment_created_at": "2026-09-07T23:06:38Z",
+      "comment_updated_at": "2026-09-07T23:06:38Z",
+      "comment_body_sha256": "25f2ede8de0a967e442aece63365fbbc0a058321853f6b7fa3e80a19901605e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141629,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T23:07:30.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-pending-final-state",
+        "head_sha": "2a737019e754244035f1503c02f354fb9bfc24db",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
