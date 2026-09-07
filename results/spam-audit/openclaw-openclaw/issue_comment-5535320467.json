@@ -1,0 +1,36 @@
+{
+  "kind": "spam_scan_audit",
+  "generated_at": "2026-09-07T12:42:24.789Z",
+  "model": "internal",
+  "status": "audit_only",
+  "action": "none",
+  "comment": {
+    "kind": "issue_comment",
+    "id": "5535320467",
+    "node_id": "IC_kwDOQb6kR88AAAABSe5Jkw",
+    "url": "https://github.com/openclaw/openclaw/issues/137705#issuecomment-5535320467",
+    "issue_url": "https://api.github.com/repos/openclaw/openclaw/issues/137705",
+    "pull_request_url": null,
+    "author": "gaoanze888",
+    "author_association": "NONE",
+    "created_at": "2026-09-04T03:40:29Z",
+    "updated_at": "2026-09-07T10:45:11Z",
+    "body_hash": "2177de8125f39c2d2e956a40daec0cd1842c7abaceb7771ff14edd9d16911a73",
+    "body_excerpt": "**Update with the exact root cause — it is two layers, and the `file://` case never reaches `buildLink` at all.** Probing `markdownToIR` d ... every channel surface (Telegram, Matrix, …) and also fixes the general \"unsupported scheme leaks raw Markdown\" class, not just `file://`.",
+    "minimized_reason": "SPAM"
+  },
+  "deterministic": {
+    "candidate": true,
+    "signals": [
+      "github_minimized_spam",
+      "multiple_external_links",
+      "outside_author_with_external_link"
+    ],
+    "urls": [
+      "https://o.com/",
+      "https://o.com/"
+    ]
+  },
+  "model_result": null,
+  "model_error": "The operation was aborted due to timeout"
+}
