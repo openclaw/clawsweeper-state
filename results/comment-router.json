@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T19:45:50.902Z",
+  "updated_at": "2026-09-07T19:46:18.802Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80532:5077319575:2026-07-25T06:30:34Z:re_review",
-      "comment_id": "5077319575",
-      "comment_version_key": "5077319575:2026-07-25T06:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80532#issuecomment-5077319575",
-      "comment_created_at": "2026-07-25T06:30:34Z",
-      "comment_updated_at": "2026-07-25T06:30:34Z",
-      "comment_body_sha256": "fa7bb2b3999533f8cff09e782bbf0d49e8a2523efc65cbfbb9e7a334d5b15eb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80532,
-      "author": "TheArchitectit",
-      "author_id": 241862351,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T15:16:56.108Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:80532:5518258797:2026-09-03T00:06:20Z:re_review",
       "comment_id": "5518258797",
@@ -32077,6 +32050,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136761:5575026639:2026-09-07T19:45:23Z:freeform_assist",
+      "comment_id": "5575026639",
+      "comment_version_key": "5575026639:2026-09-07T19:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5575026639",
+      "comment_created_at": "2026-09-07T19:45:23Z",
+      "comment_updated_at": "2026-09-07T19:45:23Z",
+      "comment_body_sha256": "8f27d15a4b1bd7f12c6c5dc30c37687e24420f74ae139a7f6820def0a39e3a01",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136761,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nnew exact head `72af514511f`: rebased to current main, fixes selected typed-onboarding scenario materialization and the frozen bundle-mcp readonly-mount failure. importantly, i removed the interim legacy-any-user mcp mode: frozen mcp owner-permission proof now explicitly requires the #136924 composite backport. no new compatibility env/mode remains for that security behavior.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T19:46:14.506Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-target-scenarios",
+        "head_sha": "72af514511f144b35dfc9e9126238abdc85ab05b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
