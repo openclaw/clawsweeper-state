@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:25:18.216Z",
+  "updated_at": "2026-09-07T04:25:24.772Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140460:5562362360:2026-09-06T21:49:28Z:clawsweeper_needs_human",
-      "comment_id": "5562362360",
-      "comment_version_key": "5562362360:2026-09-06T21:49:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140460#issuecomment-5562362360",
-      "comment_created_at": "2026-09-06T21:40:22Z",
-      "comment_updated_at": "2026-09-06T21:49:28Z",
-      "comment_body_sha256": "8e4bc260b70c6f8d0539a3837de526319d5e4acbfd6e3ade008770621968ea53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140460,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=24580920ff1ac2f31cdbe12c561ac0178e0e4ec3)",
-      "expected_head_sha": "24580920ff1ac2f31cdbe12c561ac0178e0e4ec3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T21:53:44.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cleanup-config-env-scanner",
-        "head_sha": "24580920ff1ac2f31cdbe12c561ac0178e0e4ec3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132769:5464120993:2026-09-06T21:52:27Z:clawsweeper_auto_repair",
       "comment_id": "5464120993",
@@ -33088,6 +33055,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137126:5565004178:2026-09-07T04:24:34Z:re_review",
+      "comment_id": "5565004178",
+      "comment_version_key": "5565004178:2026-09-07T04:24:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137126#issuecomment-5565004178",
+      "comment_created_at": "2026-09-07T04:24:34Z",
+      "comment_updated_at": "2026-09-07T04:24:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137126,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T04:25:22.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-watch-kernel-capacity-degrade",
+        "head_sha": "8f55d6cec9d4170e665e127f880eec98fefe1bda",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
