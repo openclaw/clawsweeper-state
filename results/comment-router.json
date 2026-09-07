@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T08:08:36.949Z",
+  "updated_at": "2026-09-07T08:09:51.826Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140716:5564634872:2026-09-07T03:32:18Z:clawsweeper_needs_human",
-      "comment_id": "5564634872",
-      "comment_version_key": "5564634872:2026-09-07T03:32:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140716#issuecomment-5564634872",
-      "comment_created_at": "2026-09-07T03:32:18Z",
-      "comment_updated_at": "2026-09-07T03:32:18Z",
-      "comment_body_sha256": "e13afafb40812cd9f009dd55339c642915ffa8d64c313fd09fa32cc577d1aacb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140716,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - External-plugin use of the new SDK export has not been exercised; its documented receipt precedence and empty-ID behavior become public compatibility commitments. (sha=63770dfd4c8b71d94958b353503795d07259f3ed)",
-      "expected_head_sha": "63770dfd4c8b71d94958b353503795d07259f3ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T03:33:12.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/dedup-channel-delivery-results-0906",
-        "head_sha": "63770dfd4c8b71d94958b353503795d07259f3ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140701:5564544516:2026-09-07T03:32:48Z:clawsweeper_needs_human",
       "comment_id": "5564544516",
@@ -32070,6 +32037,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140958:5567444726:2026-09-07T08:08:50Z:re_review",
+      "comment_id": "5567444726",
+      "comment_version_key": "5567444726:2026-09-07T08:08:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140958#issuecomment-5567444726",
+      "comment_created_at": "2026-09-07T08:08:50Z",
+      "comment_updated_at": "2026-09-07T08:08:50Z",
+      "comment_body_sha256": "885a4934b0440d92c9f690be3bf556c5edda7aa6f1f74814943e9a02bde24665",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140958,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T08:09:49.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-clawhub-missing-lock",
+        "head_sha": "00033b383127d0944fe0e9e39dc20b2ef383d1ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
