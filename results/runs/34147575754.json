@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141382",
+  "mode": "autonomous",
+  "run_id": "34147575754",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34147575754",
+  "head_sha": "f633c1e10228f0a337d8852c93a7af33c4c11aac",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141382.md",
+  "published_at": "2026-09-07T17:41:14.967Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141382",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141382",
+  "canonical_pr": null,
+  "summary": "The reported launch defect remains source-supported on preflight main. A narrow repair artifact is ready, but implementation and required regression proof are blocked by this read-only checkout, missing dependencies, and unavailable native Windows execution. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#141382",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141382",
+      "candidate_fix": null,
+      "reason": "Existing Windows CLI behavior needs a launch-contract repair. No new configuration, plugin API, or authorization change is indicated. Keep the issue open."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141382",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141382",
+      "candidate_fix": null,
+      "reason": "A writable executor can pursue this narrow artifact after refreshing main and checking for an existing fixing PR. It must first demonstrate the failing regression; stop if the defect no longer reproduces."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
