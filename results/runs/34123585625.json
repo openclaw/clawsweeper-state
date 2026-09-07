@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141202",
+  "mode": "plan",
+  "run_id": "34123585625",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34123585625",
+  "head_sha": "178dd28125eeb087f3afc2164a052f51ce958077",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141202.md",
+  "published_at": "2026-09-07T12:51:35.811Z",
+  "canonical": "#141202",
+  "canonical_issue": "#141202",
+  "canonical_pr": null,
+  "summary": "Plan a narrow heartbeat acknowledgement repair for #141202. Checkout matches preflight main 5990c8b8396c1027aab02c1afcb9845c37318d91. Source inspection supports the reported race; runtime reproduction and validation remain pending. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141202",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141202",
+      "candidate_fix": null,
+      "reason": "The remaining prompt/admission race is distinct from the earlier queue-consumption fix. Proceed with the reproduction-gated fix plan; do not close or merge."
+    },
+    {
+      "target": "#139989",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Independent routing work must remain outside the acknowledgement repair."
+    },
+    {
+      "target": "#120488",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#141202",
+      "candidate_fix": null,
+      "reason": "Historical context only; the new issue owns the remaining race."
+    },
+    {
+      "target": "#120575",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#141202",
+      "candidate_fix": null,
+      "reason": "Preserve the landed identity repair as historical context, not a current merge candidate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
