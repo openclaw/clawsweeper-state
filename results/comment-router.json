@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:38:47.030Z",
+  "updated_at": "2026-09-07T01:40:09.678Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/proxyline:31:5561512045:2026-09-06T19:13:13Z:re_review",
-      "comment_id": "5561512045",
-      "comment_version_key": "5561512045:2026-09-06T19:13:13Z",
-      "comment_url": "https://github.com/openclaw/proxyline/pull/31#issuecomment-5561512045",
-      "comment_created_at": "2026-09-06T19:13:13Z",
-      "comment_updated_at": "2026-09-06T19:13:13Z",
-      "comment_body_sha256": "52e4e5ed4e619d09481e2c1cd6da7176bdfd0c77e9360145269d9cdee710fa92",
-      "repo": "openclaw/proxyline",
-      "issue_number": 31,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T19:14:04.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-installed-undici",
-        "head_sha": "cd68dac9c7f5dd2c367417d74f55e7305cf5f413",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:140335:5561478799:2026-09-06T19:07:42Z:re_review",
       "comment_id": "5561478799",
@@ -32493,6 +32446,39 @@
         "kind": "pull_request",
         "branch": "openclaw/store-false-fork-pr-v2",
         "head_sha": "916780fc4b837da0a9413a51cfd11199517df762",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1349:5563808398:2026-09-07T01:39:22Z:clawsweeper_needs_human",
+      "comment_id": "5563808398",
+      "comment_version_key": "5563808398:2026-09-07T01:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1349#issuecomment-5563808398",
+      "comment_created_at": "2026-09-07T01:39:22Z",
+      "comment_updated_at": "2026-09-07T01:39:22Z",
+      "comment_body_sha256": "4039c9ab74ace6ecac1653b69daee8d6141d9ec885bd21743aff7037932c8526",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1349,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: StartGatewayStep's post-install ownership decision has no observed Windows/WSL after-fix result: the captured body explicitly reports that both... (sha=6a1bc7348663394b060b226f37c0b6d0adce2fea)",
+      "expected_head_sha": "6a1bc7348663394b060b226f37c0b6d0adce2fea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T01:40:09.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/setup-port-self-conflict",
+        "head_sha": "6a1bc7348663394b060b226f37c0b6d0adce2fea",
         "cluster_id": null,
         "job_path": null
       }
