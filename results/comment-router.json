@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T08:17:46.514Z",
+  "updated_at": "2026-09-07T08:17:59.802Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5465050097:2026-08-29T21:42:51Z:re_review",
-      "comment_id": "5465050097",
-      "comment_version_key": "5465050097:2026-08-29T21:42:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5465050097",
-      "comment_created_at": "2026-08-29T21:42:51Z",
-      "comment_updated_at": "2026-08-29T21:42:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T03:35:54.145Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5465201446:2026-08-29T22:17:35Z:re_review",
       "comment_id": "5465201446",
@@ -32178,6 +32151,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1954:5567551776:2026-09-07T08:17:07Z:clawsweeper_needs_human",
+      "comment_id": "5567551776",
+      "comment_version_key": "5567551776:2026-09-07T08:17:07Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1954#issuecomment-5567551776",
+      "comment_created_at": "2026-09-07T08:17:07Z",
+      "comment_updated_at": "2026-09-07T08:17:07Z",
+      "comment_body_sha256": "598d74a9fe082a4585084d387efba1b09ee625fc188f4be1d1aa733003920f24",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1954,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing image preparation that previously continued with disabled or incomplete cloud-init, non-tmpfs runtime storage, or cleanup errors will now stop before sync and version output. (sha=28949497bcc82a535ad48d54c52f1b2ae1d30446)",
+      "expected_head_sha": "28949497bcc82a535ad48d54c52f1b2ae1d30446",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T08:17:59.802Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/developer-image-cloud-init-state-20260907",
+        "head_sha": "28949497bcc82a535ad48d54c52f1b2ae1d30446",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
