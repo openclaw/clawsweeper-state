@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:01:03.724Z",
+  "updated_at": "2026-09-07T01:01:05.255Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134550:5486507768:2026-09-06T18:31:57Z:clawsweeper_needs_human",
-      "comment_id": "5486507768",
-      "comment_version_key": "5486507768:2026-09-06T18:31:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134550#issuecomment-5486507768",
-      "comment_created_at": "2026-09-01T00:02:34Z",
-      "comment_updated_at": "2026-09-06T18:31:57Z",
-      "comment_body_sha256": "62daf793f22c06e69c63874e425d266cfb522a839ca0fdfef647f9d5efa43738",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Recheck claim ownership after serializing the retained state (P2)** - The prior blocker remains unchanged. estimateRetainedBytes invokes JSON.stringify, allowing a caller-supplied toJSON or getter to synchronous...; Review finding: [P2] Recheck claim ownership after serializing the retained state — packages/ai/src/transports/openai-responses-continuation.ts:335-336 - [medium] Confirm acceptan... (sha=83ff4f0471f26b79ee18b00174b6770659b5083b)",
-      "expected_head_sha": "83ff4f0471f26b79ee18b00174b6770659b5083b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T18:38:53.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-responses-continuation-idle-ttl-cache",
-        "head_sha": "83ff4f0471f26b79ee18b00174b6770659b5083b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133653:5472226511:2026-09-06T18:38:42Z:clawsweeper_needs_human",
       "comment_id": "5472226511",
@@ -32367,6 +32334,51 @@
       "finding_id": null,
       "status": "executed",
       "processed_at": "2026-09-07T01:01:02.085Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140497:5563560021:2026-09-07T01:00:11Z:re_review",
+      "comment_id": "5563560021",
+      "comment_version_key": "5563560021:2026-09-07T01:00:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/140497#issuecomment-5563560021",
+      "comment_created_at": "2026-09-07T01:00:11Z",
+      "comment_updated_at": "2026-09-07T01:00:11Z",
+      "comment_body_sha256": "fff65f9c7f1695849c7b82ce29ece07a3fd5b067345ccf448ead53f27d0eef02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140497,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T01:01:02.793Z",
       "target": {
         "kind": "issue",
         "cluster_id": null,
