@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:56:56.798Z",
+  "updated_at": "2026-09-07T12:57:53.132Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141101:5569091687:2026-09-07T10:15:03Z:re_review",
-      "comment_id": "5569091687",
-      "comment_version_key": "5569091687:2026-09-07T10:15:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141101#issuecomment-5569091687",
-      "comment_created_at": "2026-09-07T10:15:03Z",
-      "comment_updated_at": "2026-09-07T10:15:03Z",
-      "comment_body_sha256": "7dea2018fe19223ce2524657d8457b25bdd23408182cbcdbd441dd6cc9526421",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141101,
-      "author": "KJ21-ENG",
-      "author_id": 140263938,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T10:15:52.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/side-chat-multiline-input",
-        "head_sha": "cadf3425ee832c5184854fba71503d3543ad37ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119056:5179651798:2026-08-04T13:21:05Z:re_review",
       "comment_id": "5179651798",
@@ -30869,6 +30822,39 @@
         "kind": "pull_request",
         "branch": "fix/prefetch-clone-timeout",
         "head_sha": "6a5be57fc540aedac8931d3bae7c3c67e79491f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141214:5570682848:2026-09-07T12:56:46Z:clawsweeper_needs_human",
+      "comment_id": "5570682848",
+      "comment_version_key": "5570682848:2026-09-07T12:56:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141214#issuecomment-5570682848",
+      "comment_created_at": "2026-09-07T12:32:24Z",
+      "comment_updated_at": "2026-09-07T12:56:46Z",
+      "comment_body_sha256": "1c04115be3fb2ff3ebe48f2365a446a86ad04c70cff7c90e1ca15585ff2abfe1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141214,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Update item 4 in the PR body to describe the final max-only Moonshot guidance instead of the superseded lower-effort change. (sha=b9a5a9bdbecd9e096072e0dad24d965a2a115b21)",
+      "expected_head_sha": "b9a5a9bdbecd9e096072e0dad24d965a2a115b21",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T12:57:53.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/accuracy-batch-3",
+        "head_sha": "b9a5a9bdbecd9e096072e0dad24d965a2a115b21",
         "cluster_id": null,
         "job_path": null
       }
