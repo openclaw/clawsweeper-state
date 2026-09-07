@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T08:22:54.975Z",
+  "updated_at": "2026-09-07T08:24:01.715Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5533972901:2026-09-04T00:35:53Z:re_review",
-      "comment_id": "5533972901",
-      "comment_version_key": "5533972901:2026-09-04T00:35:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5533972901",
-      "comment_created_at": "2026-09-04T00:35:53Z",
-      "comment_updated_at": "2026-09-04T00:35:53Z",
-      "comment_body_sha256": "1ffcadfe74c66813cc22da86d45f066bcda2bb94e5e5d53bdb465811990e301b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T03:37:16.138Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5534298907:2026-09-04T01:19:15Z:re_review",
       "comment_id": "5534298907",
@@ -32302,6 +32275,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136274:5508895313:2026-09-07T08:19:25Z:clawsweeper_needs_human",
+      "comment_id": "5508895313",
+      "comment_version_key": "5508895313:2026-09-07T08:19:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136274#issuecomment-5508895313",
+      "comment_created_at": "2026-09-02T11:35:47Z",
+      "comment_updated_at": "2026-09-07T08:19:25Z",
+      "comment_body_sha256": "7fba0b71adcfefd034fc15c5fcae92e175f87aeee61ead83cc42eebe3a3488a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136274,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the September 2 production logs and recipient observation support standard-channel discovery, upload,...; Review finding: [P1] Pass the Teams lookup into proactive site resolution — extensions/msteams/src/send.ts:297-301 - [P2] Encode and constrain the configured folder segment — exte... (sha=503c5516e83d800c60df05ff1ef6c7f89d2789a0)",
+      "expected_head_sha": "503c5516e83d800c60df05ff1ef6c7f89d2789a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T08:24:01.715Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/per-team-sharepoint-upload",
+        "head_sha": "503c5516e83d800c60df05ff1ef6c7f89d2789a0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
