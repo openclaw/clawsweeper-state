@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T16:52:59.989Z",
+  "updated_at": "2026-09-07T16:53:22.618Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5548975716:2026-09-05T03:14:29Z:re_review",
-      "comment_id": "5548975716",
-      "comment_version_key": "5548975716:2026-09-05T03:14:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5548975716",
-      "comment_created_at": "2026-09-05T03:14:29Z",
-      "comment_updated_at": "2026-09-05T03:14:29Z",
-      "comment_body_sha256": "c9a1f92854184b4b219b400d5f07cb9600733a6393e8eff6106a39da49bab409",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T11:07:11.699Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5549814561:2026-09-05T05:56:31Z:re_review",
       "comment_id": "5549814561",
@@ -32710,6 +32683,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/imsg:284:5573569016:2026-09-07T16:52:28Z:clawsweeper_needs_human",
+      "comment_id": "5573569016",
+      "comment_version_key": "5573569016:2026-09-07T16:52:28Z",
+      "comment_url": "https://github.com/openclaw/imsg/pull/284#issuecomment-5573569016",
+      "comment_created_at": "2026-09-07T16:44:13Z",
+      "comment_updated_at": "2026-09-07T16:52:28Z",
+      "comment_body_sha256": "3475bd6bdbbbc91f887c8be87ef11b1ae5f9794c2cad1c6b91a633512dbb1ab3",
+      "repo": "openclaw/imsg",
+      "issue_number": 284,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the native fixture exercises actual helper locking, activation, and readiness restoration, but no real... (sha=68ee0352cb681264b78858ae621523432d2f00ae)",
+      "expected_head_sha": "68ee0352cb681264b78858ae621523432d2f00ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T16:53:22.618Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/helper-single-claimer-guard",
+        "head_sha": "68ee0352cb681264b78858ae621523432d2f00ae",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
