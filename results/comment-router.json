@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T11:30:52.886Z",
+  "updated_at": "2026-09-07T11:31:41.346Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140760:5568277384:2026-09-07T09:12:17Z:re_review",
-      "comment_id": "5568277384",
-      "comment_version_key": "5568277384:2026-09-07T09:12:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140760#issuecomment-5568277384",
-      "comment_created_at": "2026-09-07T09:12:17Z",
-      "comment_updated_at": "2026-09-07T09:12:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140760,
-      "author": "zenglingbiao",
-      "author_id": 290951975,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T09:14:34.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/daemon-env-atomic-write",
-        "head_sha": "1d333c1dfe9d66e06016dde243ceb38e68668bcf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5568304311:2026-09-07T09:14:02Z:re_review",
       "comment_id": "5568304311",
@@ -30791,6 +30744,39 @@
         "kind": "pull_request",
         "branch": "codex/db-next-registry-repair4",
         "head_sha": "94c5976631c4bd749781147c7642776715080c12",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139145:5552894002:2026-09-07T11:30:28Z:clawsweeper_needs_human",
+      "comment_id": "5552894002",
+      "comment_version_key": "5552894002:2026-09-07T11:30:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139145#issuecomment-5552894002",
+      "comment_created_at": "2026-09-05T15:39:55Z",
+      "comment_updated_at": "2026-09-07T11:30:28Z",
+      "comment_body_sha256": "ea7da8ea06b7853d370d07cd48a62aad6be9689a49f9bc5e45a2880c8a7f252e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139145,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent inspection of the linked proof logs was unavailable; the supplied evidence covers Linux CLI/Gateway execution with simulated native commands, not real native-manager or ma... (sha=0489551f00b2dc1adf8585105ea1c0aba769bafb)",
+      "expected_head_sha": "0489551f00b2dc1adf8585105ea1c0aba769bafb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T11:31:41.346Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/start-repair-isloaded-probe",
+        "head_sha": "0489551f00b2dc1adf8585105ea1c0aba769bafb",
         "cluster_id": null,
         "job_path": null
       }
