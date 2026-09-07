@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T23:48:40.505Z",
+  "updated_at": "2026-09-07T23:48:54.405Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126924:5514060926:2026-09-02T18:01:06Z:re_review",
-      "comment_id": "5514060926",
-      "comment_version_key": "5514060926:2026-09-02T18:01:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5514060926",
-      "comment_created_at": "2026-09-02T18:01:06Z",
-      "comment_updated_at": "2026-09-02T18:01:06Z",
-      "comment_body_sha256": "30ffb7c47fd703e9fded75a19c9fbb139f0380f6344e97416169084a20311d81",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126924,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T18:11:27.274Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126924:5514779696:2026-09-02T18:58:54Z:re_review",
       "comment_id": "5514779696",
@@ -32532,6 +32505,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141665:5576890817:2026-09-07T23:47:56Z:clawsweeper_needs_human",
+      "comment_id": "5576890817",
+      "comment_version_key": "5576890817:2026-09-07T23:47:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141665#issuecomment-5576890817",
+      "comment_created_at": "2026-09-07T23:47:56Z",
+      "comment_updated_at": "2026-09-07T23:47:56Z",
+      "comment_body_sha256": "645a1493be9b58b6c865bcbc19f227a4e1fd349963cdc53e2094f7c3b506fc42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141665,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal trace demonstrates the real redactor preserving cause.code, but it stops before provider projection and final fo... (sha=487560deec60b902e531a29759bbaa895876245f)",
+      "expected_head_sha": "487560deec60b902e531a29759bbaa895876245f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T23:48:54.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dns-cause-code-redaction-141616",
+        "head_sha": "487560deec60b902e531a29759bbaa895876245f",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
