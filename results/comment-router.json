@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T15:42:05.716Z",
+  "updated_at": "2026-09-07T15:42:57.785Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128457:5390095573:2026-09-07T10:44:10Z:re_review",
-      "comment_id": "5390095573",
-      "comment_version_key": "5390095573:2026-09-07T10:44:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128457#issuecomment-5390095573",
-      "comment_created_at": "2026-08-24T02:41:57Z",
-      "comment_updated_at": "2026-09-07T10:44:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128457,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T10:53:18.111Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128249:5390354979:2026-09-07T10:44:11Z:re_review",
       "comment_id": "5390354979",
@@ -31938,6 +31911,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141315:5572949174:2026-09-07T15:42:01Z:clawsweeper_needs_human",
+      "comment_id": "5572949174",
+      "comment_version_key": "5572949174:2026-09-07T15:42:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141315#issuecomment-5572949174",
+      "comment_created_at": "2026-09-07T15:42:01Z",
+      "comment_updated_at": "2026-09-07T15:42:01Z",
+      "comment_body_sha256": "ebba43b329bddf273dde3a984050663a3b11fb9c18f1a42e5c36e2b9390463a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Handle socket errors before writing the unmatched-upgrade rejection (P1)** - Node removes its HTTP socket error listener before emitting upgrade. This branch now keeps the socket alive for an asynchronous write,...; Review finding: [P1] Handle socket errors before writing the unmatched-upgrade rejection — extensions/voice-call/src/webhook.ts:558 - [medium] Unauthenticated upgrade rejection ca... (sha=dfcadf06c9de9a9738c0edf46741b8e2cecf8a49)",
+      "expected_head_sha": "dfcadf06c9de9a9738c0edf46741b8e2cecf8a49",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T15:42:57.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-call-webhook-upgrade-reject-flush",
+        "head_sha": "dfcadf06c9de9a9738c0edf46741b8e2cecf8a49",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
