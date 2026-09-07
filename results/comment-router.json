@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T16:27:02.179Z",
+  "updated_at": "2026-09-07T16:27:26.720Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5569601011:2026-09-07T10:59:02Z:re_review",
-      "comment_id": "5569601011",
-      "comment_version_key": "5569601011:2026-09-07T10:59:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5569601011",
-      "comment_created_at": "2026-09-07T10:59:02Z",
-      "comment_updated_at": "2026-09-07T10:59:02Z",
-      "comment_body_sha256": "0bae146808001b940898f2d598fb9becf40507e3b8cd01c64ef5f025633bb297",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T10:59:50.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "93aa695176d917273ba0cc6422a654deae576a2e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140684:5564467160:2026-09-07T10:56:23Z:clawsweeper_needs_human",
       "comment_id": "5564467160",
@@ -32587,6 +32540,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141342:5573401574:2026-09-07T16:26:25Z:clawsweeper_needs_human",
+      "comment_id": "5573401574",
+      "comment_version_key": "5573401574:2026-09-07T16:26:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141342#issuecomment-5573401574",
+      "comment_created_at": "2026-09-07T16:26:25Z",
+      "comment_updated_at": "2026-09-07T16:26:25Z",
+      "comment_body_sha256": "8d11367782d6b81b55b74728cfa9ceaa326d830fed9bd1e5b8d7270fc8637a00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9d9f994b63e7ec832d00daf90004a925d8279451)",
+      "expected_head_sha": "9d9f994b63e7ec832d00daf90004a925d8279451",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T16:27:26.720Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dedup-native-swift-0906-talk-config",
+        "head_sha": "9d9f994b63e7ec832d00daf90004a925d8279451",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
