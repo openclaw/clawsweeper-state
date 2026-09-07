@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T11:00:18.729Z",
+  "updated_at": "2026-09-07T11:00:46.731Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140012:5567871927:2026-09-07T08:42:56Z:re_review",
-      "comment_id": "5567871927",
-      "comment_version_key": "5567871927:2026-09-07T08:42:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140012#issuecomment-5567871927",
-      "comment_created_at": "2026-09-07T08:42:56Z",
-      "comment_updated_at": "2026-09-07T08:42:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140012,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T08:43:47.609Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/139751-gpt6-generation-tier",
-        "head_sha": "1fa08a1bf022792f20e9ff4f3eb959074d603087",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136869:5567872866:2026-09-07T08:43:01Z:re_review",
       "comment_id": "5567872866",
@@ -31131,6 +31084,39 @@
         "kind": "pull_request",
         "branch": "fix/harvest-integrity-20260907",
         "head_sha": "b6beffde46405441859dfcec9f4cf5d3ed737d56",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141161:5569609515:2026-09-07T10:59:46Z:clawsweeper_auto_repair",
+      "comment_id": "5569609515",
+      "comment_version_key": "5569609515:2026-09-07T10:59:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141161#issuecomment-5569609515",
+      "comment_created_at": "2026-09-07T10:59:46Z",
+      "comment_updated_at": "2026-09-07T10:59:46Z",
+      "comment_body_sha256": "e7672188b82b7a13fad9c4b429c8ad0b32b2ccacd60abbb93d8ddbcc28100c45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141161,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=93856893aada8225ff8dfac73aea89c59b7f0f34)",
+      "expected_head_sha": "93856893aada8225ff8dfac73aea89c59b7f0f34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T11:00:46.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-141042-sqlite-sidecar-stat-cache",
+        "head_sha": "93856893aada8225ff8dfac73aea89c59b7f0f34",
         "cluster_id": null,
         "job_path": null
       }
