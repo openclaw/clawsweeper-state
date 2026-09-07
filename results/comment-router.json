@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T19:36:33.851Z",
+  "updated_at": "2026-09-07T19:36:36.799Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135890:5572547862:2026-09-07T15:05:44Z:re_review",
-      "comment_id": "5572547862",
-      "comment_version_key": "5572547862:2026-09-07T15:05:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135890#issuecomment-5572547862",
-      "comment_created_at": "2026-09-07T15:05:44Z",
-      "comment_updated_at": "2026-09-07T15:05:44Z",
-      "comment_body_sha256": "22394921d1b5c477905706b79057c2a96896a176dd82f0b77dba92771053f38b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135890,
-      "author": "TheArchitectit",
-      "author_id": 241862351,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T15:06:29.615Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/automation-task-lanes",
-        "head_sha": "9f4ffdb391099613e100af5d8c9651581222e510",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135889:5572561155:2026-09-07T15:06:52Z:re_review",
       "comment_id": "5572561155",
@@ -32036,6 +31989,39 @@
         "kind": "pull_request",
         "branch": "fix/clickclack-inbound-attachments",
         "head_sha": "ccf5d4f44893e71fb1d3343949f88bed8baf47ce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140487:5562647615:2026-09-07T19:26:55Z:clawsweeper_auto_repair",
+      "comment_id": "5562647615",
+      "comment_version_key": "5562647615:2026-09-07T19:26:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140487#issuecomment-5562647615",
+      "comment_created_at": "2026-09-06T22:32:44Z",
+      "comment_updated_at": "2026-09-07T19:26:55Z",
+      "comment_body_sha256": "138aec895241391924ca78693220848f4ac80cf9b6da83d3201da9394fc2ba42",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140487,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6ab030dda6c40a7a12d118e97d7487ed14919d1f)",
+      "expected_head_sha": "6ab030dda6c40a7a12d118e97d7487ed14919d1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T19:36:36.799Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-cli-memory-isolation",
+        "head_sha": "6ab030dda6c40a7a12d118e97d7487ed14919d1f",
         "cluster_id": null,
         "job_path": null
       }
