@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T20:59:43.310Z",
+  "updated_at": "2026-09-07T20:59:50.615Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:464:5573274419:2026-09-07T16:13:27Z:clawsweeper_needs_human",
-      "comment_id": "5573274419",
-      "comment_version_key": "5573274419:2026-09-07T16:13:27Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/464#issuecomment-5573274419",
-      "comment_created_at": "2026-09-07T16:13:27Z",
-      "comment_updated_at": "2026-09-07T16:13:27Z",
-      "comment_body_sha256": "bf4ad3478b34850a718ff4a563fbe982daacbaa91a86ba02bfd5c5d8ab722ee0",
-      "repo": "steipete/oracle",
-      "issue_number": 464,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Landing before the two pending implementation PRs would advertise capabilities absent from the pinned main branch; their current merge status could not be refreshed. (sha=746ad95157fa2109d0ba616e0a4bbc86e3155fad)",
-      "expected_head_sha": "746ad95157fa2109d0ba616e0a4bbc86e3155fad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T16:14:25.568Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/phase-two-final-notes-20260907",
-        "head_sha": "746ad95157fa2109d0ba616e0a4bbc86e3155fad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141336:5573278144:2026-09-07T16:13:48Z:clawsweeper_needs_human",
       "comment_id": "5573278144",
@@ -32231,6 +32198,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141451:5575580247:2026-09-07T20:58:52Z:re_review",
+      "comment_id": "5575580247",
+      "comment_version_key": "5575580247:2026-09-07T20:58:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141451#issuecomment-5575580247",
+      "comment_created_at": "2026-09-07T20:58:52Z",
+      "comment_updated_at": "2026-09-07T20:58:52Z",
+      "comment_body_sha256": "0dda480c8fc89c8b243befbb6a8c51ec72732c16baf3638b4621d444d908ed4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141451,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T20:59:48.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upg-preflight",
+        "head_sha": "85db417a42b58b5ba1f7961e365dd57577dda272",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
