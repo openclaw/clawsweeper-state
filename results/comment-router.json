@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T20:16:50.505Z",
+  "updated_at": "2026-09-07T20:17:49.077Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141310:5572939571:2026-09-07T15:41:06Z:re_review",
-      "comment_id": "5572939571",
-      "comment_version_key": "5572939571:2026-09-07T15:41:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141310#issuecomment-5572939571",
-      "comment_created_at": "2026-09-07T15:41:06Z",
-      "comment_updated_at": "2026-09-07T15:41:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141310,
-      "author": "hugenshen",
-      "author_id": 16300669,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T15:42:03.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/workspace-git-reject-truncated-stdout",
-        "head_sha": "9817b7b763cb6cc8e6b51fd011eb0b9fe2084e57",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141312:5572939129:2026-09-07T15:41:03Z:re_review",
       "comment_id": "5572939129",
@@ -32128,6 +32081,39 @@
         "kind": "pull_request",
         "branch": "codex/cli-respawn-diagnostics",
         "head_sha": "0b814afaf27554e071c9efa436a5c217e59fbadc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141524:5575185514:2026-09-07T20:16:43Z:clawsweeper_needs_human",
+      "comment_id": "5575185514",
+      "comment_version_key": "5575185514:2026-09-07T20:16:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141524#issuecomment-5575185514",
+      "comment_created_at": "2026-09-07T20:05:52Z",
+      "comment_updated_at": "2026-09-07T20:16:43Z",
+      "comment_body_sha256": "6052463c78b20d229d9fa543a00d0752df695bff85d034ad4e201ed986b30bf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141524,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded owner-review approval has not been verified as satisfying the restricted-path ownership requirement. (sha=a2e50640e9d9a5ed503e5dc2a9a896ed7400e564)",
+      "expected_head_sha": "a2e50640e9d9a5ed503e5dc2a9a896ed7400e564",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T20:17:49.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/catalog-attempt-failure",
+        "head_sha": "a2e50640e9d9a5ed503e5dc2a9a896ed7400e564",
         "cluster_id": null,
         "job_path": null
       }
