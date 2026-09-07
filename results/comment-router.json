@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:31:12.731Z",
+  "updated_at": "2026-09-07T04:31:31.173Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137838:5562527051:2026-09-06T22:09:32Z:re_review",
-      "comment_id": "5562527051",
-      "comment_version_key": "5562527051:2026-09-06T22:09:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137838#issuecomment-5562527051",
-      "comment_created_at": "2026-09-06T22:09:32Z",
-      "comment_updated_at": "2026-09-06T22:09:32Z",
-      "comment_body_sha256": "af36051f68997b83f4902985c0f0ddc2e1bac3f5ad385071bf8dc8b1ef8f58b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137838,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T22:10:32.980Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-tools-fixture-boundary",
-        "head_sha": "6b247b45fceb1f8da6bab72fb3a5f987ff8c178c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120249:5219149537:2026-09-02T16:51:51Z:clawsweeper_auto_repair",
       "comment_id": "5219149537",
@@ -33045,6 +32998,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-worker-transfer-file-modes-0906",
         "head_sha": "9ab6eef9d8a6a398447f46a2976eb9d4ba584d1e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140680:5564496840:2026-09-07T04:29:52Z:clawsweeper_needs_human",
+      "comment_id": "5564496840",
+      "comment_version_key": "5564496840:2026-09-07T04:29:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140680#issuecomment-5564496840",
+      "comment_created_at": "2026-09-07T03:11:49Z",
+      "comment_updated_at": "2026-09-07T04:29:52Z",
+      "comment_body_sha256": "91211e62bc8f15445c87ca368d2dcc237dabf8e72ae3036a2c7e34e91d74c203",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140680,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Actual Linux execution of the manually seeded pnpm cache through both consumer paths remains unqualified; a platform or archive-layout mismatch could stop preparation on image-cache h... (sha=31d32acbd1eb4d45b244fb5dd2e2f98037ee5e97)",
+      "expected_head_sha": "31d32acbd1eb4d45b244fb5dd2e2f98037ee5e97",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T04:31:31.173Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/crabbox-image-runtime-reuse-20260907",
+        "head_sha": "31d32acbd1eb4d45b244fb5dd2e2f98037ee5e97",
         "cluster_id": null,
         "job_path": null
       }
