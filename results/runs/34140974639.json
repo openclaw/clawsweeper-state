@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141260",
+  "mode": "plan",
+  "run_id": "34140974639",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34140974639",
+  "head_sha": "f633c1e10228f0a337d8852c93a7af33c4c11aac",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141260.md",
+  "published_at": "2026-09-07T16:07:15.030Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141260",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141260",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair plan for #141260. Checkout matches preflight main 5bba4d8b8802304968116fac4e44c6500095b82b. No changes or tests were run: this worker is read-only and dependencies are absent. Existing-PR discovery remains pending because gh lacks authentication.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/141260",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "139620",
+      "candidate_fix": null,
+      "reason": "A scoped repair is supported; execution must establish regression proof and refresh existing-PR discovery first."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/113159",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "139620",
+      "candidate_fix": null,
+      "reason": "Cooldown policy is distinct from preserving existing safe retry hints; retain its separate product discussion."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/115642",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Conservatively quarantine this exact linked item under the worker's credential-sensitive boundary. This does not establish a vulnerability or block #141260."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
