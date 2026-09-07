@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T14:44:15.571Z",
+  "updated_at": "2026-09-07T14:44:18.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:5053280625:2026-07-23T01:19:19Z:re_review",
-      "comment_id": "5053280625",
-      "comment_version_key": "5053280625:2026-07-23T01:19:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-5053280625",
-      "comment_created_at": "2026-07-23T01:19:19Z",
-      "comment_updated_at": "2026-07-23T01:19:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T10:42:13.596Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:5055554259:2026-07-23T07:16:43Z:re_review",
       "comment_id": "5055554259",
@@ -31442,6 +31415,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141276:5572288838:2026-09-07T14:43:17Z:clawsweeper_needs_human",
+      "comment_id": "5572288838",
+      "comment_version_key": "5572288838:2026-09-07T14:43:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141276#issuecomment-5572288838",
+      "comment_created_at": "2026-09-07T14:43:17Z",
+      "comment_updated_at": "2026-09-07T14:43:17Z",
+      "comment_body_sha256": "d11d16eb7c7b23d349d76deebb7ab51bd046f46907e1eb127782b404e746496a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141276,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: demonstrate that revocation during lazy observer acquisition prevents callbacks and new provider I/O. The suppl...; Review finding: [P1] Honor diagnostics disablement before acquiring refresh interest — extensions/diagnostics-prometheus/src/service.ts:1205-1206 - [P1] Refresh against the curren... (sha=dbda45ca5d560554321e11f1386545a47c22037b)",
+      "expected_head_sha": "dbda45ca5d560554321e11f1386545a47c22037b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T14:44:18.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/provider-usage-prometheus-139188",
+        "head_sha": "dbda45ca5d560554321e11f1386545a47c22037b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
