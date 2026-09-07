@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141032"
-mode: "autonomous"
-run_id: "34102557934"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34102557934"
-head_sha: "792b2ebaba37e331f3d03479451253780eced6e4"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34107588385"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34107588385"
+head_sha: "e8779e8b672dfb8d51b3af5aba44815cfb9a7295"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-07T09:28:53.390Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141032"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141032"
+published_at: "2026-09-07T10:04:30.709Z"
+canonical: "#141032"
+canonical_issue: "#141032"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34102557934](https://github.com/openclaw/clawsweeper/actions/runs/34102557934)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34107588385](https://github.com/openclaw/clawsweeper/actions/runs/34107588385)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141032
+Canonical: #141032
 
 ## Summary
 
-Source inspection supports a narrow finalization repair. Implementation and runtime reproduction are blocked by read-only access and missing dependencies. No files or GitHub state changed; validation and live PR ownership checks remain prerequisites.
+Plan a narrow finalization repair for #141032. Source inspection supports the reported timeout-to-success conversion. Runtime reproduction, implementation, validation, and existing-PR discovery remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports a narrow finalization repair. Implementation and runt
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141032 | fix_needed | planned | canonical | Preserve the original failed terminal outcome when summary recovery produces no real answer. Watchdog duration policy remains outside this repair. |
-| cluster:issue-openclaw-openclaw-141032 | build_fix_artifact | planned |  | Prepare one conditional repair path for the deterministic executor; reproduce on refreshed main before editing and reuse any existing issue fix PR. |
+| #141032 | fix_needed | planned | canonical | Preserve the original timeout when recovery produces no real answer. Existing-PR discovery and failing regression proof must precede implementation and publication. |
 
 ## Needs Human
 
