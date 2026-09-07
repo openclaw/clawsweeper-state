@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T07:59:56.133Z",
+  "updated_at": "2026-09-07T08:00:07.425Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1944:5564558060:2026-09-07T03:20:35Z:clawsweeper_auto_repair",
-      "comment_id": "5564558060",
-      "comment_version_key": "5564558060:2026-09-07T03:20:35Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1944#issuecomment-5564558060",
-      "comment_created_at": "2026-09-07T03:20:35Z",
-      "comment_updated_at": "2026-09-07T03:20:35Z",
-      "comment_body_sha256": "ad8f67788b650d3239aa1e9b27d9848af7bf4a30a394d6cebe22b2af903d335f",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1944,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6a3547c6d07ad3373ef4a427273ea5a9ee4b3334)",
-      "expected_head_sha": "6a3547c6d07ad3373ef4a427273ea5a9ee4b3334",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T03:21:23.917Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/developer-image-readiness-20260907",
-        "head_sha": "6a3547c6d07ad3373ef4a427273ea5a9ee4b3334",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140696:5564514057:2026-09-07T03:20:35Z:clawsweeper_needs_human",
       "comment_id": "5564514057",
@@ -32087,6 +32054,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140989:5567334506:2026-09-07T07:59:15Z:clawsweeper_needs_human",
+      "comment_id": "5567334506",
+      "comment_version_key": "5567334506:2026-09-07T07:59:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140989#issuecomment-5567334506",
+      "comment_created_at": "2026-09-07T07:59:15Z",
+      "comment_updated_at": "2026-09-07T07:59:15Z",
+      "comment_body_sha256": "26781a92ae8a30d6b197b6bbb8653c26486b1c9aa6697af996ab9d734da1a930",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140989,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied classifier observations and tests cover isolated classification and synthetic archive verification, but do not show the changed ba...; Review finding: [P1] Confirm metadata before bypassing SQLite sanitization — src/infra/sqlite-files.ts:12-14 - [medium] Matching-name database aliases can expose unsanitized bytes... (sha=7d12b12cfe7e8b03fb54697d057b2441ee4c91b7)",
+      "expected_head_sha": "7d12b12cfe7e8b03fb54697d057b2441ee4c91b7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T08:00:07.425Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/backup-appledouble-sqlite-140193",
+        "head_sha": "7d12b12cfe7e8b03fb54697d057b2441ee4c91b7",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
