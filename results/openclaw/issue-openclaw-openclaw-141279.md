@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141279"
 mode: "autonomous"
-run_id: "34134372236"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34134372236"
+run_id: "34137177618"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34137177618"
 head_sha: "330b8ee4e32dccf73f99b2d3e92203dbf70523c8"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-07T14:51:05.066Z"
+published_at: "2026-09-07T15:26:22.169Z"
 canonical: "https://github.com/openclaw/openclaw/issues/141279"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/141279"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34134372236](https://github.com/openclaw/clawsweeper/actions/runs/34134372236)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34137177618](https://github.com/openclaw/clawsweeper/actions/runs/34137177618)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/141279
 
 ## Summary
 
-Confirmed the six affected owners on preflight main dcc68718f57e196bef10a07178fc8061b896140c. Narrow fix artifact prepared; implementation and Windows regression proof are blocked by this read-only Linux environment. No files or GitHub state changed. Required tests were not run.
+Confirmed all 15 reported config assignments on preflight main 43bc88f6f78410b86548ac29ec3f13a762481ae9. Narrow repair artifact prepared; implementation is blocked by the read-only workspace and unavailable native Windows reproduction. Existing-PR recheck also requires authenticated GitHub access. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Confirmed the six affected owners on preflight main dcc68718f57e196bef10a07178fc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141279 | fix_needed | planned | canonical | The local-host defect remains source-confirmed and is distinct from the merged remote-worker repair. Proceed through the conditional fix artifact; establish native Windows failure before implementation. |
-| #140795 | keep_closed | skipped | related | Historical context only. |
-| #140803 | keep_closed | skipped | related | Preserve the merged repair as related context; it does not resolve #141279. |
-| cluster:issue-openclaw-openclaw-141279 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation remains blocked in this worker; a writable executor with native Windows proof must satisfy the reproduction and ownership prerequisites before opening a PR. |
+| #141279 | fix_needed | blocked | canonical | Implementation requires a writable executor, a fresh existing-PR check, and a failing native Windows owner-boundary regression before production edits. |
+| #140795 | keep_closed | skipped | related | Historical context, not a closure target. |
+| #140803 | keep_closed | skipped | related | Scoped precedent, not a fix for the remaining host operations. |
+| cluster:issue-openclaw-openclaw-141279 | build_fix_artifact | planned | canonical | The repair is source-supported and narrow. The artifact is a conditional executor handoff, not proof of an implemented or validated branch. |
 
 ## Needs Human
 

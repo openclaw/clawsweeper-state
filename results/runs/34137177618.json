@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141279",
+  "mode": "autonomous",
+  "run_id": "34137177618",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34137177618",
+  "head_sha": "330b8ee4e32dccf73f99b2d3e92203dbf70523c8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141279.md",
+  "published_at": "2026-09-07T15:26:22.169Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141279",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141279",
+  "canonical_pr": null,
+  "summary": "Confirmed all 15 reported config assignments on preflight main 43bc88f6f78410b86548ac29ec3f13a762481ae9. Narrow repair artifact prepared; implementation is blocked by the read-only workspace and unavailable native Windows reproduction. Existing-PR recheck also requires authenticated GitHub access. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141279",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#141279",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor, a fresh existing-PR check, and a failing native Windows owner-boundary regression before production edits."
+    },
+    {
+      "target": "#140795",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#140803",
+      "reason": "Historical context, not a closure target."
+    },
+    {
+      "target": "#140803",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Scoped precedent, not a fix for the remaining host operations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141279",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141279",
+      "candidate_fix": null,
+      "reason": "The repair is source-supported and narrow. The artifact is a conditional executor handoff, not proof of an implemented or validated branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
