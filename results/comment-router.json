@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T02:09:21.585Z",
+  "updated_at": "2026-09-07T02:09:25.868Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140367:5561586982:2026-09-06T19:25:31Z:re_review",
-      "comment_id": "5561586982",
-      "comment_version_key": "5561586982:2026-09-06T19:25:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140367#issuecomment-5561586982",
-      "comment_created_at": "2026-09-06T19:25:31Z",
-      "comment_updated_at": "2026-09-06T19:25:31Z",
-      "comment_body_sha256": "8577097230e2fc7acef6cfd20b340448012c88cdc236f1c7965aae3e004e6b74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140367,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T19:34:29.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/completions-incomplete-stream",
-        "head_sha": "43b605dc99d6ba5520922a25f5d3ceb2ba666c44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:140378:5561619592:2026-09-06T19:30:50Z:re_review",
       "comment_id": "5561619592",
@@ -32709,6 +32662,39 @@
         "kind": "pull_request",
         "branch": "codex/github-dashboard-auth-status",
         "head_sha": "6c988064d54dfcae3879bc9390ad11f3f9f71a93",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140614:5563999106:2026-09-07T02:08:31Z:clawsweeper_needs_human",
+      "comment_id": "5563999106",
+      "comment_version_key": "5563999106:2026-09-07T02:08:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140614#issuecomment-5563999106",
+      "comment_created_at": "2026-09-07T02:08:31Z",
+      "comment_updated_at": "2026-09-07T02:08:31Z",
+      "comment_body_sha256": "bab9ef8a8a098e97241530a091d32f8d074a15570aa3eb80b63534bb04e7a495",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140614,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Reviewer network access prevented inspection of the existing before/after emulator images, leaving their visual result and sanitization unverified. (sha=98ae53476ad80706a579aa67765bbbbef72b2fda)",
+      "expected_head_sha": "98ae53476ad80706a579aa67765bbbbef72b2fda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T02:09:25.868Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mobile-fold-adaptive-20260907",
+        "head_sha": "98ae53476ad80706a579aa67765bbbbef72b2fda",
         "cluster_id": null,
         "job_path": null
       }
