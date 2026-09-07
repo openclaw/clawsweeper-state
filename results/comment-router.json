@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T21:21:02.949Z",
+  "updated_at": "2026-09-07T21:21:46.873Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:133376:5473335523:2026-08-31T03:29:28Z:re_review",
-      "comment_id": "5473335523",
-      "comment_version_key": "5473335523:2026-08-31T03:29:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133376#issuecomment-5473335523",
-      "comment_created_at": "2026-08-31T03:29:28Z",
-      "comment_updated_at": "2026-08-31T03:29:28Z",
-      "comment_body_sha256": "67ec59370317bf3c6185c9a0f6409da36194f8f69ee8afb3ad276638cbef423a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133376,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T16:24:55.833Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133376:5474073607:2026-08-31T05:18:35Z:re_review",
       "comment_id": "5474073607",
@@ -32439,6 +32412,64 @@
         "kind": "pull_request",
         "branch": "fix/nextcloud-talk-inbound-media",
         "head_sha": "19f0e52c40328a973beb44896489bdca2c0abd9c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141544:5575738364:2026-09-07T21:20:59Z:request_proof",
+      "comment_id": "5575738364",
+      "comment_version_key": "5575738364:2026-09-07T21:20:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141544#issuecomment-5575738364",
+      "comment_created_at": "2026-09-07T21:20:59Z",
+      "comment_updated_at": "2026-09-07T21:20:59Z",
+      "comment_body_sha256": "4efdba29500041d6053cad6980f583e415bd05446a92e8c296cb3c7c7788c10e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141544,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "proof telegram-bot-e2e-proof",
+      "intent": "request_proof",
+      "proof_admission": {
+        "status": "queued",
+        "reason": "Queued one review with requested proof focus. The reviewer selects relevant supported checks and uses their observations before its final decision; no separate follow-up review is scheduled.",
+        "request": {
+          "repository": "openclaw/openclaw",
+          "pullRequest": 141544,
+          "headSha": "53be35ce84b35cdfa48269c11a2c92185f93380f",
+          "scenarioId": "telegram-bot-e2e-proof",
+          "requestId": "d8dd3533482689fc74d598e279af7d7f924f3c64bc511240c5f83372451fc019"
+        }
+      },
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T21:21:43.045Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/137927",
+        "head_sha": "53be35ce84b35cdfa48269c11a2c92185f93380f",
         "cluster_id": null,
         "job_path": null
       },
