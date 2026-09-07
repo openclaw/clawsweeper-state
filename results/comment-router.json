@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T07:43:25.317Z",
+  "updated_at": "2026-09-07T07:44:48.267Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140012:5564516339:2026-09-07T03:14:28Z:re_review",
-      "comment_id": "5564516339",
-      "comment_version_key": "5564516339:2026-09-07T03:14:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140012#issuecomment-5564516339",
-      "comment_created_at": "2026-09-07T03:14:28Z",
-      "comment_updated_at": "2026-09-07T03:14:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140012,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T03:15:27.974Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/139751-gpt6-generation-tier",
-        "head_sha": "1fa08a1bf022792f20e9ff4f3eb959074d603087",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1936:5563623373:2026-09-07T03:10:46Z:clawsweeper_needs_human",
       "comment_id": "5563623373",
@@ -32093,6 +32046,39 @@
         "kind": "pull_request",
         "branch": "codex/huggingface-integration",
         "head_sha": "7c2121d6cc50ad1511e5df924eab937db6452b87",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140976:5567104625:2026-09-07T07:43:55Z:clawsweeper_needs_human",
+      "comment_id": "5567104625",
+      "comment_version_key": "5567104625:2026-09-07T07:43:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140976#issuecomment-5567104625",
+      "comment_created_at": "2026-09-07T07:43:55Z",
+      "comment_updated_at": "2026-09-07T07:43:55Z",
+      "comment_body_sha256": "77265815a001a9479f1cc3859e74fc2ef8a149d9bbe6e3fd60d51b3663c934aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140976,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Browser CLI parser is covered through mocked request-dispatch tests, but the supplied evidence does not show actual CLI error outpu... (sha=c3fb332dff1cd0b3ebf721b1bcc3971dd3ce8d91)",
+      "expected_head_sha": "c3fb332dff1cd0b3ebf721b1bcc3971dd3ce8d91",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T07:44:48.267Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-cli-button-validation",
+        "head_sha": "c3fb332dff1cd0b3ebf721b1bcc3971dd3ce8d91",
         "cluster_id": null,
         "job_path": null
       }
