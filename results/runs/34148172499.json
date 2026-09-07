@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141382",
+  "mode": "autonomous",
+  "run_id": "34148172499",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34148172499",
+  "head_sha": "f633c1e10228f0a337d8852c93a7af33c4c11aac",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141382.md",
+  "published_at": "2026-09-07T18:17:19.583Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141382",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141382",
+  "canonical_pr": null,
+  "summary": "Verified the launch-path defect in preflight main and reproduced ENOENT followed by stdin EPIPE with a read-only Node probe. Prepared a narrow fix artifact. Implementation, full regression tests, existing-PR lookup, and native Windows proof remain blocked by this worker's environment. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141382",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141382",
+      "candidate_fix": null,
+      "reason": "The source supports a focused compatibility repair without new configuration, authorization changes, or a new plugin API. Full failing regression proof remains required before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141382",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141382",
+      "candidate_fix": null,
+      "reason": "A bounded executor plan is supported; local implementation is unavailable in this read-only workspace."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141382",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#141382",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked on existing-PR discovery, a writable executor, failing-before/passing-after regression evidence, and required Windows validation. Reuse clawsweeper/issue-openclaw-openclaw-141382 when present."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
