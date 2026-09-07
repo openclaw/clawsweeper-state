@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T20:15:19.845Z",
+  "updated_at": "2026-09-07T20:15:21.812Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141301:5572800078:2026-09-07T15:38:29Z:clawsweeper_needs_human",
-      "comment_id": "5572800078",
-      "comment_version_key": "5572800078:2026-09-07T15:38:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141301#issuecomment-5572800078",
-      "comment_created_at": "2026-09-07T15:27:59Z",
-      "comment_updated_at": "2026-09-07T15:38:29Z",
-      "comment_body_sha256": "9b9a47a3efdd5c30762408768457252e619f8a3f0ab09e9e462959f9434e1a26",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141301,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured body omits later runtime evidence, and retrieval failed; review conclusions rely on the supplied startup and webhook-verification excerpt. (sha=9cc7425afc6454653ca22922eae86df0016ae27a)",
-      "expected_head_sha": "9cc7425afc6454653ca22922eae86df0016ae27a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T15:42:02.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-secret-refs",
-        "head_sha": "09df6f062bd9c86e2a1b3097d7ad923cac9af850",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141303:5572833583:2026-09-07T15:31:07Z:clawsweeper_needs_human",
       "comment_id": "5572833583",
@@ -32131,6 +32098,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140339:5561134316:2026-09-07T20:13:59Z:clawsweeper_needs_human",
+      "comment_id": "5561134316",
+      "comment_version_key": "5561134316:2026-09-07T20:13:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140339#issuecomment-5561134316",
+      "comment_created_at": "2026-09-06T18:07:21Z",
+      "comment_updated_at": "2026-09-07T20:13:59Z",
+      "comment_body_sha256": "7bd8c603ce9ec8893c141e5d74f7984ed4a338ba6b00fa11d86de08d3d679683",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P0)** - Plugin downloads now occur while the Gateway is stopped on durable and legacy finalization paths; slow or failing downloads can prolong an existing user's outage. (sha=6f6ba0b5982ada07909432d7df8e91c3c1efa07b)",
+      "expected_head_sha": "6f6ba0b5982ada07909432d7df8e91c3c1efa07b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T20:15:21.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/update-recovery-checkpoint-integration-20260906",
+        "head_sha": "6f6ba0b5982ada07909432d7df8e91c3c1efa07b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
