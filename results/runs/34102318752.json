@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141033",
+  "mode": "autonomous",
+  "run_id": "34102318752",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34102318752",
+  "head_sha": "792b2ebaba37e331f3d03479451253780eced6e4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141033.md",
+  "published_at": "2026-09-07T09:50:51.585Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141033",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141033",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow local-inference fix. Implementation and runtime reproduction are blocked by the read-only filesystem and missing dependencies. No code or GitHub state changed; an executor-ready repair plan follows.",
+  "actions": [
+    {
+      "target": "#141033",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#141033",
+      "candidate_fix": null,
+      "reason": "The canonical fix path requires a failing fresh-process regression before implementation. This worker cannot create isolated state, install missing dependencies, or edit files under its read-only permissions."
+    },
+    {
+      "target": "#115062",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct setup-inference path; preserve its existing work and exclude it from this implementation."
+    },
+    {
+      "target": "#89399",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this broader trust-boundary request to central OpenClaw security handling, without public mutation. It does not block the ordinary startup repair for #141033."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141033",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141033",
+      "candidate_fix": null,
+      "reason": "A narrow repair plan is supported by source evidence. Execution remains conditional on reproducing the defect against refreshed main in a writable, isolated checkout."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
