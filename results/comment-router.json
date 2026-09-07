@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T02:41:49.297Z",
+  "updated_at": "2026-09-07T02:41:54.717Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5556244432:2026-09-06T02:05:05Z:re_review",
-      "comment_id": "5556244432",
-      "comment_version_key": "5556244432:2026-09-06T02:05:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5556244432",
-      "comment_created_at": "2026-09-06T02:05:05Z",
-      "comment_updated_at": "2026-09-06T02:05:05Z",
-      "comment_body_sha256": "2b79c9eb15f85dc15ae2a21e8dc316eb7230c3318d55c6132d61b4b670239c99",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `6090370ddc1366b77bb61091ba3b6d62b142c94e`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T20:13:36.932Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5557330289:2026-09-06T06:01:04Z:re_review",
       "comment_id": "5557330289",
@@ -32946,6 +32919,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140663:5564291523:2026-09-07T02:41:05Z:clawsweeper_needs_human",
+      "comment_id": "5564291523",
+      "comment_version_key": "5564291523:2026-09-07T02:41:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140663#issuecomment-5564291523",
+      "comment_created_at": "2026-09-07T02:41:05Z",
+      "comment_updated_at": "2026-09-07T02:41:05Z",
+      "comment_body_sha256": "3dff886e506a9fd558a343935a1ffd23e9d99f1751e89a02ff3a17c31ffca5ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140663,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured PR body demonstrates classifier unit tests and supplemental mocked media tests, but does not show prototype-named message types tr... (sha=6f7efd2caea7d34a60b2a2b44b2d45bbfb982afa)",
+      "expected_head_sha": "6f7efd2caea7d34a60b2a2b44b2d45bbfb982afa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T02:41:54.717Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-matrix-msgtype-proto-keys",
+        "head_sha": "6f7efd2caea7d34a60b2a2b44b2d45bbfb982afa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
