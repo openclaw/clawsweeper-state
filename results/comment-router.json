@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:24:52.493Z",
+  "updated_at": "2026-09-07T12:25:22.349Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:554:5568662806:2026-09-07T09:42:19Z:clawsweeper_needs_human",
-      "comment_id": "5568662806",
-      "comment_version_key": "5568662806:2026-09-07T09:42:19Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/554#issuecomment-5568662806",
-      "comment_created_at": "2026-09-07T09:39:26Z",
-      "comment_updated_at": "2026-09-07T09:42:19Z",
-      "comment_body_sha256": "76e12ac8dd1e69db863693c2b6d9136cbe43d7bf76a1239cc45b922183469153",
-      "repo": "openclaw/acpx",
-      "issue_number": 554,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured body reports real hook execution and both repaired adapter-summary paths, but does not show their output. Add a redacted... (sha=c9e0c6d12b8ea8d9a56ae6b9961cd41ca4e32db9)",
-      "expected_head_sha": "c9e0c6d12b8ea8d9a56ae6b9961cd41ca4e32db9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T09:43:25.749Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "triage/phase2-notes-deps",
-        "head_sha": "c9e0c6d12b8ea8d9a56ae6b9961cd41ca4e32db9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/babelfish:27:5568702627:2026-09-07T09:42:36Z:clawsweeper_needs_human",
       "comment_id": "5568702627",
@@ -30878,6 +30845,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136967:5570587579:2026-09-07T12:24:20Z:re_review",
+      "comment_id": "5570587579",
+      "comment_version_key": "5570587579:2026-09-07T12:24:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136967#issuecomment-5570587579",
+      "comment_created_at": "2026-09-07T12:24:20Z",
+      "comment_updated_at": "2026-09-07T12:24:20Z",
+      "comment_body_sha256": "dc5fb3d1fdc005bc968b7032319b983902c6d240da3dd8e540cc59d71e2a9705",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136967,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review rebased onto latest upstream/main (was ~4500 commits behind) and resolved conflicts: the config-agents doc page was rewritten upstream so the fixed-cap note moved to docs/gateway/config-agents/workspace-and-bootstrap.md, the doctor.md note merged with the new bootstrap-extra-files paragraph, and the tests were updated for the upstream rename of the bootstrap context mock (resolvebootstrapcontextforrun -> resolvebootstrapcontextfordiagnostics). no behavior change. local verification on the rebased head: pnpm test src/commands/doctor-bootstrap-size.test.ts + src/flows/doctor-core-bootstrap-size-check.test.ts (15 tests passed), oxlint clean, oxfmt clean, tsgo core + core test typecheck clean",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T12:25:19.766Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-136733-user-md-bootstrap-cap",
+        "head_sha": "3995613c5f323afb1994fb0d06c3b1bc33506f85",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
