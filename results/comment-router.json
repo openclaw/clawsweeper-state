@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T21:51:02.923Z",
+  "updated_at": "2026-09-07T21:51:22.853Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141315:5573827492:2026-09-07T17:13:37Z:re_review",
-      "comment_id": "5573827492",
-      "comment_version_key": "5573827492:2026-09-07T17:13:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141315#issuecomment-5573827492",
-      "comment_created_at": "2026-09-07T17:13:37Z",
-      "comment_updated_at": "2026-09-07T17:13:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141315,
-      "author": "hugenshen",
-      "author_id": 16300669,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T17:14:29.006Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-call-webhook-upgrade-reject-flush",
-        "head_sha": "6e15cdf90b5ea9d3a693baf1a7e5be609ebf5083",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141237:5573827188:2026-09-07T17:13:34Z:re_review",
       "comment_id": "5573827188",
@@ -32464,6 +32417,39 @@
         "kind": "pull_request",
         "branch": "pr/1342",
         "head_sha": "d31fec3e06b36876f680ead9168dafd61f88d9ff",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141541:5575508282:2026-09-07T21:50:14Z:clawsweeper_auto_repair",
+      "comment_id": "5575508282",
+      "comment_version_key": "5575508282:2026-09-07T21:50:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141541#issuecomment-5575508282",
+      "comment_created_at": "2026-09-07T20:48:45Z",
+      "comment_updated_at": "2026-09-07T21:50:14Z",
+      "comment_body_sha256": "f20de8b1ceda8eaaf24de06330615e5a9d4ae446f04bcd66ea0932872c2d7cea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141541,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=601a2bbb24a4c042e936492a2f24c88335acbb12)",
+      "expected_head_sha": "601a2bbb24a4c042e936492a2f24c88335acbb12",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T21:51:22.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/arcee-openrouter-credential-route",
+        "head_sha": "601a2bbb24a4c042e936492a2f24c88335acbb12",
         "cluster_id": null,
         "job_path": null
       }
