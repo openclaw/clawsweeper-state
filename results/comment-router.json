@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T16:04:35.432Z",
+  "updated_at": "2026-09-07T16:05:08.494Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131441:5463316223:2026-09-07T10:44:41Z:re_review",
-      "comment_id": "5463316223",
-      "comment_version_key": "5463316223:2026-09-07T10:44:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131441#issuecomment-5463316223",
-      "comment_created_at": "2026-08-29T15:41:25Z",
-      "comment_updated_at": "2026-09-07T10:44:41Z",
-      "comment_body_sha256": "87590a5a3b38a16b924e22c29cff97ef43221d5e1f0980ea59a5fb112f97b213",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131441,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T10:53:18.111Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131456:5463398657:2026-09-07T10:44:41Z:re_review",
       "comment_id": "5463398657",
@@ -32414,6 +32387,39 @@
       "status": "skipped",
       "processed_at": "2026-09-07T16:04:35.432Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141332:5573176894:2026-09-07T16:04:04Z:clawsweeper_needs_human",
+      "comment_id": "5573176894",
+      "comment_version_key": "5573176894:2026-09-07T16:04:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141332#issuecomment-5573176894",
+      "comment_created_at": "2026-09-07T16:04:04Z",
+      "comment_updated_at": "2026-09-07T16:04:04Z",
+      "comment_body_sha256": "5320867d392856918a0fbc4fa7163c19ee914d4cdd4e699349370ba7ee1ac7ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141332,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied tests exercise command generation, HTML/native-rich planning, and callback routing with a mocked Bot API. They do not show actual... (sha=545b43ba245e73ab8528182ff1a6a6a5fec41617)",
+      "expected_head_sha": "545b43ba245e73ab8528182ff1a6a6a5fec41617",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T16:05:08.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-command-help-code",
+        "head_sha": "545b43ba245e73ab8528182ff1a6a6a5fec41617",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
