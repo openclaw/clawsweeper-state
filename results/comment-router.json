@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T10:15:51.151Z",
+  "updated_at": "2026-09-07T10:15:54.597Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140648:5564282434:2026-09-07T05:50:33Z:clawsweeper_needs_human",
-      "comment_id": "5564282434",
-      "comment_version_key": "5564282434:2026-09-07T05:50:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140648#issuecomment-5564282434",
-      "comment_created_at": "2026-09-07T02:39:48Z",
-      "comment_updated_at": "2026-09-07T05:50:33Z",
-      "comment_body_sha256": "98eb94e08c280a850396e54cb1131524f9ad2e675e401a33be0b62f176029fcc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140648,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Legitimate migrations or plugin installations exceeding the shorter default budgets will now fail finalization and may require the existing --timeout override; successful upgrade evid... (sha=f0d57bfee36511951c21fc6984add3ab9124477c)",
-      "expected_head_sha": "f0d57bfee36511951c21fc6984add3ab9124477c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T05:51:22.666Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-finalize-bounded",
-        "head_sha": "f0d57bfee36511951c21fc6984add3ab9124477c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1945:5565404093:2026-09-07T05:50:51Z:clawsweeper_needs_human",
       "comment_id": "5565404093",
@@ -32734,6 +32701,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141101:5569091687:2026-09-07T10:15:03Z:re_review",
+      "comment_id": "5569091687",
+      "comment_version_key": "5569091687:2026-09-07T10:15:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141101#issuecomment-5569091687",
+      "comment_created_at": "2026-09-07T10:15:03Z",
+      "comment_updated_at": "2026-09-07T10:15:03Z",
+      "comment_body_sha256": "7dea2018fe19223ce2524657d8457b25bdd23408182cbcdbd441dd6cc9526421",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141101,
+      "author": "KJ21-ENG",
+      "author_id": 140263938,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T10:15:52.172Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/side-chat-multiline-input",
+        "head_sha": "cadf3425ee832c5184854fba71503d3543ad37ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
