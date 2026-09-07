@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141123"
-mode: "autonomous"
-run_id: "34110051178"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34110051178"
-head_sha: "e8779e8b672dfb8d51b3af5aba44815cfb9a7295"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-07T10:19:51.431Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141123"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141123"
+mode: "plan"
+run_id: "34112088530"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34112088530"
+head_sha: "178dd28125eeb087f3afc2164a052f51ce958077"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-07T10:40:35.207Z"
+canonical: "#141123"
+canonical_issue: "#141123"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34110051178](https://github.com/openclaw/clawsweeper/actions/runs/34110051178)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34112088530](https://github.com/openclaw/clawsweeper/actions/runs/34112088530)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141123
+Canonical: #141123
 
 ## Summary
 
-Confirmed the startup coverage gap on preflight main. Narrow repair artifact prepared; implementation and regression validation are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.
+Plan a narrow startup-handler repair for #141123. The clean checkout matches preflight main e3e2953f4b9a3ef1cd0568763c74c42f33067410 and retains the reported ordering gap. No files or GitHub state changed; runtime reproduction and validation remain pending. Related-PR discovery requires authenticated executor access.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed the startup coverage gap on preflight main. Narrow repair artifact pre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141123 | fix_needed | planned | canonical | Source confirms a narrow startup defect covered by existing error policy. Runtime reproduction remains a prerequisite to implementation. |
-| cluster:issue-openclaw-openclaw-141123 | build_fix_artifact | planned |  | A bounded executor plan is supported by current source without changing configuration, dependencies, retry policy, or security boundaries. |
-| cluster:issue-openclaw-openclaw-141123 | open_fix_pr | blocked |  | PR preparation is blocked on writable execution and the required reproduction and validation gates; no maintainer product decision is needed. |
+| #141123 | fix_needed | planned | canonical | The evidence supports a bounded startup-ownership repair. Require runtime reproduction and related-PR discovery before implementation; no product decision is presently unresolved. |
+| #141133 | keep_closed | skipped | duplicate | Historical duplicate context; no further closure action. |
 
 ## Needs Human
 
