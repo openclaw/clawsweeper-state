@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:26:43.782Z",
+  "updated_at": "2026-09-07T12:27:43.481Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141075:5568167550:2026-09-07T09:04:57Z:re_review",
-      "comment_id": "5568167550",
-      "comment_version_key": "5568167550:2026-09-07T09:04:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141075#issuecomment-5568167550",
-      "comment_created_at": "2026-09-07T09:04:57Z",
-      "comment_updated_at": "2026-09-07T09:04:57Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141075,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T09:48:15.464Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/ci-tooling-placement-classification",
-        "head_sha": "dca59eb5a02b1fd3d9c8fa3b666f71c38fbae23a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:133843:5568711263:2026-09-07T09:43:18Z:re_review",
       "comment_id": "5568711263",
@@ -30931,6 +30884,39 @@
         "kind": "pull_request",
         "branch": "fix/telegram-compaction-preview",
         "head_sha": "9edeb7442dda91acdce19e3708caa2567892e3f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140677:5564402084:2026-09-07T12:26:46Z:clawsweeper_needs_human",
+      "comment_id": "5564402084",
+      "comment_version_key": "5564402084:2026-09-07T12:26:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140677#issuecomment-5564402084",
+      "comment_created_at": "2026-09-07T02:57:42Z",
+      "comment_updated_at": "2026-09-07T12:26:46Z",
+      "comment_body_sha256": "296c52db4c87af60955c2aed2f4968b15bd0e111452d0c80e7c2c9f8b3529b94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140677,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installed or private plugins importing the three retired approval-runtime bindings will fail until migrated; the reported public-consumer audit cannot rule out private consumers. This... (sha=6e96706af6e941aa8226b29174b8971ce5af38be)",
+      "expected_head_sha": "6e96706af6e941aa8226b29174b8971ce5af38be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T12:27:43.481Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dedup-channels-approvals-0906-terminal",
+        "head_sha": "6e96706af6e941aa8226b29174b8971ce5af38be",
         "cluster_id": null,
         "job_path": null
       }
