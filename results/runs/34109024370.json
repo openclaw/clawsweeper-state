@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141033",
+  "mode": "plan",
+  "run_id": "34109024370",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34109024370",
+  "head_sha": "e8779e8b672dfb8d51b3af5aba44815cfb9a7295",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141033.md",
+  "published_at": "2026-09-07T10:09:37.126Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141033",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141033",
+  "canonical_pr": null,
+  "summary": "Plan a narrow local inference credential-preparation fix for #141033. Keep #115062 related and route only #89399 for its unresolved security-boundary decision. No changes or tests were executed; runtime reproduction and existing-PR discovery remain prerequisites.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/141033",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "141033",
+      "candidate_fix": null,
+      "reason": "A focused startup repair is supported by the reported failure and source trace. Require a failing runtime regression and check existing implementation ownership before editing."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/115062",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "141033",
+      "candidate_fix": null,
+      "reason": "Preserve the separate reproduction and reported implementation path; duplication or fix coverage is not established."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/89399",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this broader boundary decision to central OpenClaw security handling, without asserting a proven vulnerability or blocking the separate #141033 repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
