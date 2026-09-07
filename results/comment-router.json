@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T17:34:28.936Z",
+  "updated_at": "2026-09-07T17:34:31.953Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119056:5174219273:2026-09-07T12:14:37Z:clawsweeper_needs_human",
-      "comment_id": "5174219273",
-      "comment_version_key": "5174219273:2026-09-07T12:14:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5174219273",
-      "comment_created_at": "2026-08-04T03:19:55Z",
-      "comment_updated_at": "2026-09-07T12:14:37Z",
-      "comment_body_sha256": "4f87f60e0faf8175b5eab566d178f06983dd64f724c4efe78369ddab61bc81d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing collector with an absent or wrong-runtime/session backing task now fails acceptance and enters abort/cleanup; supported-release reachability and the user-visible recovery... (sha=f009ef9b145d0d73b381fb685f1e6be967a3a7ec)",
-      "expected_head_sha": "f009ef9b145d0d73b381fb685f1e6be967a3a7ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T12:16:05.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "f009ef9b145d0d73b381fb685f1e6be967a3a7ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140742:5564747082:2026-09-07T12:15:52Z:clawsweeper_needs_human",
       "comment_id": "5564747082",
@@ -32605,6 +32572,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140674:5573990040:2026-09-07T17:33:30Z:re_review",
+      "comment_id": "5573990040",
+      "comment_version_key": "5573990040:2026-09-07T17:33:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140674#issuecomment-5573990040",
+      "comment_created_at": "2026-09-07T17:33:30Z",
+      "comment_updated_at": "2026-09-07T17:33:30Z",
+      "comment_body_sha256": "8e6b31a12407f376f28f5df43fd578a989eb9f2cb183f7bcf11b79ca782634dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140674,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T17:34:29.565Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/db-next-registry-repair4",
+        "head_sha": "591b5354c85ec5c598e2496d03ddd8bafc21b158",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
