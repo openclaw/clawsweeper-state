@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:47:02.191Z",
+  "updated_at": "2026-09-07T04:47:43.854Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137893:5562603625:2026-09-06T22:24:07Z:re_review",
-      "comment_id": "5562603625",
-      "comment_version_key": "5562603625:2026-09-06T22:24:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5562603625",
-      "comment_created_at": "2026-09-06T22:24:07Z",
-      "comment_updated_at": "2026-09-06T22:24:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137893,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T22:32:10.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-native-legacy-package",
-        "head_sha": "d75a072115eb58885c5a5a2fbdbc7f658f951f52",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137893:5535531758:2026-09-06T22:31:16Z:clawsweeper_auto_repair",
       "comment_id": "5535531758",
@@ -33076,6 +33029,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1938:5563848087:2026-09-07T04:46:50Z:clawsweeper_needs_human",
+      "comment_id": "5563848087",
+      "comment_version_key": "5563848087:2026-09-07T04:46:50Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1938#issuecomment-5563848087",
+      "comment_created_at": "2026-09-07T01:45:40Z",
+      "comment_updated_at": "2026-09-07T04:46:50Z",
+      "comment_body_sha256": "d6012d158ba3972ff0f2550fd4ee9773d669cb3d3f8f264d173bdfd6fc93bec3",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1938,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e3033a57fb958b12bab304341d1dbdb4c3fa2a1e)",
+      "expected_head_sha": "e3033a57fb958b12bab304341d1dbdb4c3fa2a1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T04:47:43.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/aws-provisioning-timings",
+        "head_sha": "e3033a57fb958b12bab304341d1dbdb4c3fa2a1e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
