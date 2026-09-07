@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T07:32:42.679Z",
+  "updated_at": "2026-09-07T07:33:30.954Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140656:5564450472:2026-09-07T03:05:06Z:clawsweeper_needs_human",
-      "comment_id": "5564450472",
-      "comment_version_key": "5564450472:2026-09-07T03:05:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140656#issuecomment-5564450472",
-      "comment_created_at": "2026-09-07T03:05:06Z",
-      "comment_updated_at": "2026-09-07T03:05:06Z",
-      "comment_body_sha256": "183c34679f3a0bd5fbc576d5c7f060db4c2950549502866a473b7690eed4c3a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140656,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ce30d300e38d45826e2d993fae3a141a5cd5f8f0)",
-      "expected_head_sha": "ce30d300e38d45826e2d993fae3a141a5cd5f8f0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T03:06:08.459Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/deslop-port-diagnostics-20260906",
-        "head_sha": "ce30d300e38d45826e2d993fae3a141a5cd5f8f0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137834:5535067597:2026-09-07T02:58:57Z:clawsweeper_auto_repair",
       "comment_id": "5535067597",
@@ -32044,6 +32011,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:125462:5566891412:2026-09-07T07:32:26Z:re_review",
+      "comment_id": "5566891412",
+      "comment_version_key": "5566891412:2026-09-07T07:32:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125462#issuecomment-5566891412",
+      "comment_created_at": "2026-09-07T07:32:26Z",
+      "comment_updated_at": "2026-09-07T07:32:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125462,
+      "author": "zenglingbiao",
+      "author_id": 290951975,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T07:33:28.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/msteams-outbound-sanitize-text",
+        "head_sha": "735910226cb6a05473a3fc56400c9438ea0c92c3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
