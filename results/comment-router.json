@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T21:46:16.573Z",
+  "updated_at": "2026-09-07T21:46:18.971Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136476:5535314020:2026-09-04T03:39:31Z:re_review",
-      "comment_id": "5535314020",
-      "comment_version_key": "5535314020:2026-09-04T03:39:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136476#issuecomment-5535314020",
-      "comment_created_at": "2026-09-04T03:39:31Z",
-      "comment_updated_at": "2026-09-04T03:39:31Z",
-      "comment_body_sha256": "36f1762efe38c7558e5cd974f840655555919f093f5d883308daf7f451e4453d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136476,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T17:06:17.230Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141307:5573766307:2026-09-07T17:06:34Z:re_review",
       "comment_id": "5573766307",
@@ -32475,6 +32448,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141589:5575911888:2026-09-07T21:45:23Z:clawsweeper_needs_human",
+      "comment_id": "5575911888",
+      "comment_version_key": "5575911888:2026-09-07T21:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141589#issuecomment-5575911888",
+      "comment_created_at": "2026-09-07T21:45:23Z",
+      "comment_updated_at": "2026-09-07T21:45:23Z",
+      "comment_body_sha256": "1bcb0b740df722e7592d731caa24c709d8d74d870197e570b88afc49a1b88897",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured GitHub state reports merge conflicts; without a pinned test merge, the integrated result remains unreviewed. (sha=5892dc92d1c4e1b022c5f49a87859c0c31fd3085)",
+      "expected_head_sha": "5892dc92d1c4e1b022c5f49a87859c0c31fd3085",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T21:46:18.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reduce-ui-wire-contracts-01a0750a",
+        "head_sha": "5892dc92d1c4e1b022c5f49a87859c0c31fd3085",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
