@@ -1,6 +1,86 @@
 {
-  "updated_at": "2026-09-07T04:52:46.774Z",
+  "updated_at": "2026-09-07T04:52:03.633Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140485:5562656623:2026-09-06T22:34:24Z:clawsweeper_needs_human",
+      "comment_id": "5562656623",
+      "comment_version_key": "5562656623:2026-09-06T22:34:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140485#issuecomment-5562656623",
+      "comment_created_at": "2026-09-06T22:34:24Z",
+      "comment_updated_at": "2026-09-06T22:34:24Z",
+      "comment_body_sha256": "82be14d977db852109a4467bd2c15b11147ce75b1196a51093b94fb0ce815a7d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7c4b0d4d1bdba856542e1056a88ac8a9e3bc3cc0)",
+      "expected_head_sha": "7c4b0d4d1bdba856542e1056a88ac8a9e3bc3cc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-06T22:35:10.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf52-sdk-event-dequeue",
+        "head_sha": "7c4b0d4d1bdba856542e1056a88ac8a9e3bc3cc0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137893:5562663702:2026-09-06T22:35:47Z:re_review",
+      "comment_id": "5562663702",
+      "comment_version_key": "5562663702:2026-09-06T22:35:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5562663702",
+      "comment_created_at": "2026-09-06T22:35:47Z",
+      "comment_updated_at": "2026-09-06T22:35:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137893,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-06T22:36:47.197Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fs-safe-native-legacy-package",
+        "head_sha": "5340769372ddf8a2599d85597db28c4e534b67b5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136761:5562667892:2026-09-06T22:36:36Z:re_review",
       "comment_id": "5562667892",
@@ -32993,86 +33073,6 @@
         "kind": "pull_request",
         "branch": "steipete/dedup-channels-approvals-0906",
         "head_sha": "3e548fa63219909e9f4bedcca1573a44e690f631",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5565190226:2026-09-07T04:52:01Z:re_review",
-      "comment_id": "5565190226",
-      "comment_version_key": "5565190226:2026-09-07T04:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5565190226",
-      "comment_created_at": "2026-09-07T04:49:06Z",
-      "comment_updated_at": "2026-09-07T04:52:01Z",
-      "comment_body_sha256": "dd367a0d41a8aafe77bd3ad5e15624c111987fde4ae4e9a65332d0e78254243c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `42fc48c39d34ea9da1e92eeebb75de8c523d68eb`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T04:52:44.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "42fc48c39d34ea9da1e92eeebb75de8c523d68eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140798:5565209978:2026-09-07T04:51:59Z:clawsweeper_needs_human",
-      "comment_id": "5565209978",
-      "comment_version_key": "5565209978:2026-09-07T04:51:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140798#issuecomment-5565209978",
-      "comment_created_at": "2026-09-07T04:51:59Z",
-      "comment_updated_at": "2026-09-07T04:51:59Z",
-      "comment_body_sha256": "4740125fc768cb0c034ada12beca4bf4689b3c493c54de94807b121f0dd33bd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140798,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: supplied tests exercise synthetic ingress, mocked agent/transport boundaries, and selected real filesystem owne...; Review finding: [P1] Exclude native Discord forwards from administrator admission — extensions/discord/src/monitor/message-handler.context.ts:384-388 - [P1] Fence every mutation a... (sha=cace6d3c72eaccbc8888da75b6bcb4d299f0a2cf)",
-      "expected_head_sha": "cace6d3c72eaccbc8888da75b6bcb4d299f0a2cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T04:52:45.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/trusted-discord-administrator",
-        "head_sha": "cace6d3c72eaccbc8888da75b6bcb4d299f0a2cf",
         "cluster_id": null,
         "job_path": null
       }
