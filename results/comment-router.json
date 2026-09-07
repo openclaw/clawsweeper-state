@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T08:26:24.079Z",
+  "updated_at": "2026-09-07T08:26:41.246Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5543071986:2026-09-04T15:55:09Z:re_review",
-      "comment_id": "5543071986",
-      "comment_version_key": "5543071986:2026-09-04T15:55:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5543071986",
-      "comment_created_at": "2026-09-04T15:55:09Z",
-      "comment_updated_at": "2026-09-04T15:55:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T03:37:16.138Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5543607363:2026-09-04T16:39:07Z:re_review",
       "comment_id": "5543607363",
@@ -32361,6 +32334,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136761:5567664859:2026-09-07T08:25:52Z:freeform_assist",
+      "comment_id": "5567664859",
+      "comment_version_key": "5567664859:2026-09-07T08:25:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136761#issuecomment-5567664859",
+      "comment_created_at": "2026-09-07T08:25:52Z",
+      "comment_updated_at": "2026-09-07T08:25:52Z",
+      "comment_body_sha256": "bbb5b9307a559642049f3e5e1fc82243635b42619b6a5b6c1de917cf40f4f59a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136761,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nexact-head follow-up: the authorized frozen agent-bundle client is now materialized on the host archive before its root is mounted read-only. this replaces the in-container `ln` operations that failed on the readonly mount; no raw identity/env forwarding or selector contract changed. focused vitest, shell parse, format, lint, and changed-lane planning passed.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T08:26:39.126Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-target-scenarios",
+        "head_sha": "969b19e066cf17bc9fc0d9f803d1dd3bf1ccb674",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
           "status": "executed",
           "label": null,
           "job_path": null
