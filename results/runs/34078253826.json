@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-140681",
+  "mode": "autonomous",
+  "run_id": "34078253826",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34078253826",
+  "head_sha": "6cd409f54dbb8c6f97dd07c46aa8631d180dfa88",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-140681.md",
+  "published_at": "2026-09-07T03:10:09.740Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/140681",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/140681",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow dependency-graph repair. Implementation and packaged reproduction are blocked by the read-only checkout, missing dependencies/build, and unavailable GitHub access. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#140681",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#140681",
+      "candidate_fix": null,
+      "reason": "Keep the issue canonical. A focused repair remains plausible, but fresh duplicate discovery and packaged current-main reproduction must precede implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-140681",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#140681",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is non-mutating. Execution is blocked until a writable, dependency-equipped checkout and current GitHub state are available; stop without a PR if packaged reproduction fails."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
