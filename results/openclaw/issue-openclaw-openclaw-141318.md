@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141318"
-mode: "autonomous"
-run_id: "34140118764"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34140118764"
+mode: "plan"
+run_id: "34143720638"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34143720638"
 head_sha: "f633c1e10228f0a337d8852c93a7af33c4c11aac"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-07T16:00:36.054Z"
+published_at: "2026-09-07T16:38:37.702Z"
 canonical: "https://github.com/openclaw/openclaw/issues/141318"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/141318"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34140118764](https://github.com/openclaw/clawsweeper/actions/runs/34140118764)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34143720638](https://github.com/openclaw/clawsweeper/actions/runs/34143720638)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/141318
 
 ## Summary
 
-Source inspection supports both defects on preflight main 71e3383a0ef8414891c61cadb067d42c7f909198. Narrow repair artifact prepared; implementation and executable reproduction remain blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.
+Plan one focused fix for #141318: preserve bounded browsing, expose incomplete inventory with retry guidance, and suppress only proven-equivalent alias choices. Classify two linked issues separately and route #92655 to security handling. No files or GitHub state changed; regression tests and Telegram proof remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Source inspection supports both defects on preflight main 71e3383a0ef8414891c61c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141318 | fix_needed | blocked | canonical | Local implementation and reproduction require a writable executor with dependencies. This is an environment blocker, not an unresolved product decision. |
-| #123886 | keep_related | planned | related | Distinct presentation defect with separate reported ownership; leave open. |
-| #136321 | keep_related | planned | related | Separate feature proposal outside this bug-only repair. |
-| #92655 | route_security | planned | security_sensitive | Refer this item alone to central OpenClaw security handling without mutation. Its authorization-policy question is independent of #141318. |
-| cluster:issue-openclaw-openclaw-141318 | build_fix_artifact | planned | canonical | A focused executor repair is supported by source evidence, conditional on failing regressions against refreshed main before implementation. |
+| #141318 | fix_needed | planned | canonical | The narrowed job supports a non-security repair plan. Require failing regressions on refreshed main and an existing-PR check before implementation. |
+| #123886 | keep_related | planned | related | Shared picker surface, but a distinct message-edit defect with separate owning work. |
+| #136321 | keep_related | planned | related | Periodic refresh is outside the bounded initial-browse repair. Leave its product decision with its owning thread. |
+| #92655 | route_security | planned | security_sensitive | Route this authorization-sensitive item to central OpenClaw security handling without mutation. It does not block the unrelated inventory and presentation repair. |
 
 ## Needs Human
 

@@ -1,0 +1,71 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141318",
+  "mode": "plan",
+  "run_id": "34143720638",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34143720638",
+  "head_sha": "f633c1e10228f0a337d8852c93a7af33c4c11aac",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141318.md",
+  "published_at": "2026-09-07T16:38:37.702Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141318",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141318",
+  "canonical_pr": null,
+  "summary": "Plan one focused fix for #141318: preserve bounded browsing, expose incomplete inventory with retry guidance, and suppress only proven-equivalent alias choices. Classify two linked issues separately and route #92655 to security handling. No files or GitHub state changed; regression tests and Telegram proof remain pending.",
+  "actions": [
+    {
+      "target": "#141318",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141318",
+      "candidate_fix": null,
+      "reason": "The narrowed job supports a non-security repair plan. Require failing regressions on refreshed main and an existing-PR check before implementation."
+    },
+    {
+      "target": "#123886",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141318",
+      "candidate_fix": null,
+      "reason": "Shared picker surface, but a distinct message-edit defect with separate owning work."
+    },
+    {
+      "target": "#136321",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141318",
+      "candidate_fix": null,
+      "reason": "Periodic refresh is outside the bounded initial-browse repair. Leave its product decision with its owning thread."
+    },
+    {
+      "target": "#92655",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this authorization-sensitive item to central OpenClaw security handling without mutation. It does not block the unrelated inventory and presentation repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
