@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-07T11:44:35.815Z",
+  "updated_at": "2026-09-07T11:45:58.531Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132451:5468035149:2026-08-30T10:03:49Z:re_review",
-      "comment_id": "5468035149",
-      "comment_version_key": "5468035149:2026-08-30T10:03:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132451#issuecomment-5468035149",
-      "comment_created_at": "2026-08-30T10:03:49Z",
-      "comment_updated_at": "2026-08-30T10:03:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132451,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T09:20:42.482Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132451:5477992745:2026-08-31T11:58:41Z:re_review",
       "comment_id": "5477992745",
@@ -30824,6 +30797,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141047:5568015614:2026-09-07T11:45:01Z:clawsweeper_needs_human",
+      "comment_id": "5568015614",
+      "comment_version_key": "5568015614:2026-09-07T11:45:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141047#issuecomment-5568015614",
+      "comment_created_at": "2026-09-07T08:53:54Z",
+      "comment_updated_at": "2026-09-07T11:45:01Z",
+      "comment_body_sha256": "7e197f523a6a8f99d1916b2e73b8c2f1f6b8babbbe783f155a9ddf5716f4e8e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141047,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent inspection of the complete installed dependency and published captures was unavailable here; the captured maintainer verification covers those review limitations. (sha=760c6c79a16d897a8461f6ce3a9e22b49a7b7dc7)",
+      "expected_head_sha": "760c6c79a16d897a8461f6ce3a9e22b49a7b7dc7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T11:45:58.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-select-reopen-race",
+        "head_sha": "760c6c79a16d897a8461f6ce3a9e22b49a7b7dc7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
