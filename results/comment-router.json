@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:13:12.347Z",
+  "updated_at": "2026-09-07T01:13:50.236Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138953:5561342559:2026-09-06T18:43:56Z:re_review",
-      "comment_id": "5561342559",
-      "comment_version_key": "5561342559:2026-09-06T18:43:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138953#issuecomment-5561342559",
-      "comment_created_at": "2026-09-06T18:43:56Z",
-      "comment_updated_at": "2026-09-06T18:43:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138953,
-      "author": "brokemac79",
-      "author_id": 255583030,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T18:44:44.000Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/mantis-request-bound-proof-producer",
-        "head_sha": "97318e8bfb761e8a562d11ad396cf7c93ebdcd78",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1425:5561342443:2026-09-06T18:43:55Z:re_review",
       "comment_id": "5561342443",
@@ -32447,6 +32400,39 @@
         "kind": "pull_request",
         "branch": "fix/compaction-bootstrap-truncation-notice-127528",
         "head_sha": "5bf6fad326e12670bf8ebcb22b3df5f046e52b74",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawdex:18:5563640627:2026-09-07T01:13:03Z:clawsweeper_needs_human",
+      "comment_id": "5563640627",
+      "comment_version_key": "5563640627:2026-09-07T01:13:03Z",
+      "comment_url": "https://github.com/openclaw/clawdex/pull/18#issuecomment-5563640627",
+      "comment_created_at": "2026-09-07T01:13:03Z",
+      "comment_updated_at": "2026-09-07T01:13:03Z",
+      "comment_body_sha256": "2d5175078ecf7cd7266baa298f52ffff0ce19dc6680ab8d4d15c0ba911c4b087",
+      "repo": "openclaw/clawdex",
+      "issue_number": 18,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported six-archive snapshot and CLI smoke support packaging, but do not exercise the new signing...; Review finding: [P2] Preserve recovery after successful release promotion — .github/workflows/release-unified.yml:36 - [medium] Signing secrets leave the former release-only bound... (sha=76544ef7614ccb3f407f4b1f5df2e325c6818c3c)",
+      "expected_head_sha": "76544ef7614ccb3f407f4b1f5df2e325c6818c3c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T01:13:50.236Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/unified-release",
+        "head_sha": "76544ef7614ccb3f407f4b1f5df2e325c6818c3c",
         "cluster_id": null,
         "job_path": null
       }
