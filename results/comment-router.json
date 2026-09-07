@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T19:36:36.799Z",
+  "updated_at": "2026-09-07T19:36:46.265Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135889:5572561155:2026-09-07T15:06:52Z:re_review",
-      "comment_id": "5572561155",
-      "comment_version_key": "5572561155:2026-09-07T15:06:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135889#issuecomment-5572561155",
-      "comment_created_at": "2026-09-07T15:06:52Z",
-      "comment_updated_at": "2026-09-07T15:06:52Z",
-      "comment_body_sha256": "ade42141ac6ccb45e7ed3693be36c02b559eb2b774223eb1d8fcdbb2f72bfb8e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135889,
-      "author": "TheArchitectit",
-      "author_id": 241862351,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T15:07:43.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/automation-single-pane",
-        "head_sha": "62e236a71a42ca7f10d7b8d0737ca4103e6b80fb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1340:5553812162:2026-09-07T15:06:48Z:clawsweeper_needs_human",
       "comment_id": "5553812162",
@@ -32022,6 +31975,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-cli-memory-isolation",
         "head_sha": "6ab030dda6c40a7a12d118e97d7487ed14919d1f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141481:5574950544:2026-09-07T19:35:42Z:clawsweeper_auto_repair",
+      "comment_id": "5574950544",
+      "comment_version_key": "5574950544:2026-09-07T19:35:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141481#issuecomment-5574950544",
+      "comment_created_at": "2026-09-07T19:35:42Z",
+      "comment_updated_at": "2026-09-07T19:35:42Z",
+      "comment_body_sha256": "e93a15fe0ffaa45b7be3405e3866a6c48160419ae8df6de21d82746797856406",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a98f77effcc9fda8adc9120c8717056d18941bf8)",
+      "expected_head_sha": "a98f77effcc9fda8adc9120c8717056d18941bf8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T19:36:46.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/workboard-clickable-note-links",
+        "head_sha": "a98f77effcc9fda8adc9120c8717056d18941bf8",
         "cluster_id": null,
         "job_path": null
       }
