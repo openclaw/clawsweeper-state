@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141382"
-mode: "autonomous"
-run_id: "34148172499"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34148172499"
+mode: "plan"
+run_id: "34149873348"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34149873348"
 head_sha: "f633c1e10228f0a337d8852c93a7af33c4c11aac"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-07T18:17:19.583Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141382"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141382"
+published_at: "2026-09-07T18:24:14.785Z"
+canonical: "#141382"
+canonical_issue: "#141382"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34148172499](https://github.com/openclaw/clawsweeper/actions/runs/34148172499)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34149873348](https://github.com/openclaw/clawsweeper/actions/runs/34149873348)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141382
+Canonical: #141382
 
 ## Summary
 
-Verified the launch-path defect in preflight main and reproduced ENOENT followed by stdin EPIPE with a read-only Node probe. Prepared a narrow fix artifact. Implementation, full regression tests, existing-PR lookup, and native Windows proof remain blocked by this worker's environment. No files or GitHub state changed.
+Plan one focused Windows Claude CLI launch repair. Source inspection at preflight main fae6778b125c51e1a3ca765b01d487b6d8300f80 supports the reported defect. No files changed or tests run. Existing-fix discovery and native Windows reproduction remain execution prerequisites.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Verified the launch-path defect in preflight main and reproduced ENOENT followed
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141382 | fix_needed | planned | canonical | The source supports a focused compatibility repair without new configuration, authorization changes, or a new plugin API. Full failing regression proof remains required before implementation. |
-| cluster:issue-openclaw-openclaw-141382 | build_fix_artifact | planned |  | A bounded executor plan is supported; local implementation is unavailable in this read-only workspace. |
-| cluster:issue-openclaw-openclaw-141382 | open_fix_pr | blocked |  | PR creation is blocked on existing-PR discovery, a writable executor, failing-before/passing-after regression evidence, and required Windows validation. Reuse clawsweeper/issue-openclaw-openclaw-141382 when present. |
+| #141382 | fix_needed | planned | canonical | The documented existing workflow warrants a focused compatibility repair. Missing discovery and runtime proof are executor gates, not unresolved product judgment. Keep the issue open. |
 
 ## Needs Human
 
