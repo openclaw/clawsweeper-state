@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:38:55.497Z",
+  "updated_at": "2026-09-07T12:39:01.614Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3452:5568815124:2026-09-07T09:52:03Z:re_review",
-      "comment_id": "5568815124",
-      "comment_version_key": "5568815124:2026-09-07T09:52:03Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3452#issuecomment-5568815124",
-      "comment_created_at": "2026-09-07T09:52:03Z",
-      "comment_updated_at": "2026-09-07T09:52:03Z",
-      "comment_body_sha256": "3612dac8f918849512ce2f8a7a625936216242eb55787bf0120bddec2b37ca5f",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3452,
-      "author": "QuantIntellect",
-      "author_id": 195442302,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T09:57:36.492Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claude-swap-richer-usage-and-strategies",
-        "head_sha": "74fa8cea322a0c856308b45426e898241a2a3503",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3452:5561506574:2026-09-07T09:56:42Z:clawsweeper_needs_human",
       "comment_id": "5561506574",
@@ -30900,6 +30853,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1961:5570229754:2026-09-07T12:38:11Z:clawsweeper_needs_human",
+      "comment_id": "5570229754",
+      "comment_version_key": "5570229754:2026-09-07T12:38:11Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1961#issuecomment-5570229754",
+      "comment_created_at": "2026-09-07T11:54:12Z",
+      "comment_updated_at": "2026-09-07T12:38:11Z",
+      "comment_body_sha256": "6d8d7ee3f25bf53f6416709875eabf361b51154fea7d95a85c6d8e9cef1ace71",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured native CLI comparison exercises backend.Run through the command runner with real local shell operations and synthetic Kub... (sha=e0f7c50d3cc123218a89ec0f5073623f92c7ef53)",
+      "expected_head_sha": "e0f7c50d3cc123218a89ec0f5073623f92c7ef53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T12:39:01.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/agent-sandbox-bound-finalization-c396",
+        "head_sha": "e0f7c50d3cc123218a89ec0f5073623f92c7ef53",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
