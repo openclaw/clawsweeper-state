@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T01:06:01.802Z",
+  "updated_at": "2026-09-07T01:07:44.367Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140366:5561319988:2026-09-06T18:40:06Z:clawsweeper_needs_human",
-      "comment_id": "5561319988",
-      "comment_version_key": "5561319988:2026-09-06T18:40:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140366#issuecomment-5561319988",
-      "comment_created_at": "2026-09-06T18:40:06Z",
-      "comment_updated_at": "2026-09-06T18:40:06Z",
-      "comment_body_sha256": "1e7d7ee632639e0c4d7f65b1211039936456e22a1d79252fb2bd34502e5af714",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140366,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Listed secops-owner involvement for the changed authorization test is not established in the supplied review context. (sha=45f822f46736d44414cf26f1446f48881cacd9f7)",
-      "expected_head_sha": "45f822f46736d44414cf26f1446f48881cacd9f7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T18:40:57.652Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-140356-reset-progress-card",
-        "head_sha": "45f822f46736d44414cf26f1446f48881cacd9f7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81190:4435224992:2026-09-06T18:01:56Z:clawsweeper_needs_human",
       "comment_id": "4435224992",
@@ -32478,6 +32445,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126932:5563598768:2026-09-07T01:06:44Z:re_review",
+      "comment_id": "5563598768",
+      "comment_version_key": "5563598768:2026-09-07T01:06:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126932#issuecomment-5563598768",
+      "comment_created_at": "2026-09-07T01:06:44Z",
+      "comment_updated_at": "2026-09-07T01:06:44Z",
+      "comment_body_sha256": "f28a97a5d1e2b7e16be93c4253dd40ecdfb86f057ece76ccea29c2831e190112",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126932,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T01:07:42.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/config-meta-restore-126806",
+        "head_sha": "40fac9dcfc3956a3722c56392e1f3db8830aa439",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
