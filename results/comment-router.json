@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T10:27:52.849Z",
+  "updated_at": "2026-09-07T10:27:53.545Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140897:5565900997:2026-09-07T06:21:41Z:clawsweeper_needs_human",
-      "comment_id": "5565900997",
-      "comment_version_key": "5565900997:2026-09-07T06:21:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140897#issuecomment-5565900997",
-      "comment_created_at": "2026-09-07T06:15:10Z",
-      "comment_updated_at": "2026-09-07T06:21:41Z",
-      "comment_body_sha256": "cdcefd345442884fbe5218fd1eda81eb2353afba05fed0c788418062b7ddadd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Concurrent store sweeps can retain separate worker heaps and database connections between requests; the global request queue no longer bounds the number of resident reclamation worker... (sha=42994d79a4454791e71d1f5da54bce585c82d8d9)",
-      "expected_head_sha": "42994d79a4454791e71d1f5da54bce585c82d8d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T06:22:36.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/retention-sweep-followup-20260907",
-        "head_sha": "42994d79a4454791e71d1f5da54bce585c82d8d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140636:5564157030:2026-09-07T06:22:35Z:clawsweeper_auto_repair",
       "comment_id": "5564157030",
@@ -32596,6 +32563,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141107:5568774747:2026-09-07T10:21:39Z:clawsweeper_needs_human",
+      "comment_id": "5568774747",
+      "comment_version_key": "5568774747:2026-09-07T10:21:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141107#issuecomment-5568774747",
+      "comment_created_at": "2026-09-07T09:48:30Z",
+      "comment_updated_at": "2026-09-07T10:21:39Z",
+      "comment_body_sha256": "fcf6483e16fa8347e331832d0abadafb69a8fd02d7a7f4da44519b581bebb769",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Responses client and header builder are exercised through a substituted fetch returning HTTP 400. The reporter’s relay control supp... (sha=98171bfed6b2307e5f4de2da73e33b121c473487)",
+      "expected_head_sha": "98171bfed6b2307e5f4de2da73e33b121c473487",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T10:27:53.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/openai-responses-session-affinity",
+        "head_sha": "98171bfed6b2307e5f4de2da73e33b121c473487",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
