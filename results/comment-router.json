@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:18:31.663Z",
+  "updated_at": "2026-09-07T12:18:33.803Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1956:5568571027:2026-09-07T09:32:16Z:re_review",
-      "comment_id": "5568571027",
-      "comment_version_key": "5568571027:2026-09-07T09:32:16Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1956#issuecomment-5568571027",
-      "comment_created_at": "2026-09-07T09:32:16Z",
-      "comment_updated_at": "2026-09-07T09:32:16Z",
-      "comment_body_sha256": "33aaaf99d8862e168f5ad28b849893fc60c6547d24c58f70a45aa626797107d3",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1956,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T09:33:07.292Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qualification-runner-admission-20260907",
-        "head_sha": "9858cc093f68044d50c84d4cfda01439082df908",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137841:5568540818:2026-09-07T09:31:23Z:re_review",
       "comment_id": "5568540818",
@@ -30937,6 +30890,39 @@
         "kind": "pull_request",
         "branch": "feat/http-relations-20260907",
         "head_sha": "8835259ef6b224514f1c9c4fd1d7c0b4136e86a3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141204:5570509298:2026-09-07T12:17:36Z:clawsweeper_needs_human",
+      "comment_id": "5570509298",
+      "comment_version_key": "5570509298:2026-09-07T12:17:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141204#issuecomment-5570509298",
+      "comment_created_at": "2026-09-07T12:17:36Z",
+      "comment_updated_at": "2026-09-07T12:17:36Z",
+      "comment_body_sha256": "3271b225740acaf875e00a4c1d67f4e11bddece5b7c9c5aaa006efad5a7167d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141204,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c25828073d571e281f6457cba598bcc1788aac51)",
+      "expected_head_sha": "c25828073d571e281f6457cba598bcc1788aac51",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T12:18:33.803Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-flaky-tests-0907-telegram-loopback",
+        "head_sha": "c25828073d571e281f6457cba598bcc1788aac51",
         "cluster_id": null,
         "job_path": null
       }
