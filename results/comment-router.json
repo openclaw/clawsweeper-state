@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T10:10:32.432Z",
+  "updated_at": "2026-09-07T10:10:58.496Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140864:5565658724:2026-09-07T05:46:42Z:clawsweeper_auto_repair",
-      "comment_id": "5565658724",
-      "comment_version_key": "5565658724:2026-09-07T05:46:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140864#issuecomment-5565658724",
-      "comment_created_at": "2026-09-07T05:46:42Z",
-      "comment_updated_at": "2026-09-07T05:46:42Z",
-      "comment_body_sha256": "947d3bb322efc48bd4171b195b12c3f214e16db7c4b41d345fc8e0b431d33a06",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140864,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=34d8a677f8c7057373a57b400ccb310d05daadd5)",
-      "expected_head_sha": "34d8a677f8c7057373a57b400ccb310d05daadd5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T05:48:14.322Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-140757-skill-desc-preserve",
-        "head_sha": "34d8a677f8c7057373a57b400ccb310d05daadd5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140816:5565280165:2026-09-07T05:42:05Z:clawsweeper_needs_human",
       "comment_id": "5565280165",
@@ -32734,6 +32701,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113587:5569023585:2026-09-07T10:09:30Z:re_review",
+      "comment_id": "5569023585",
+      "comment_version_key": "5569023585:2026-09-07T10:09:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113587#issuecomment-5569023585",
+      "comment_created_at": "2026-09-07T10:09:30Z",
+      "comment_updated_at": "2026-09-07T10:09:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113587,
+      "author": "samson1357924",
+      "author_id": 98934496,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T10:10:56.425Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/opencode-models-dev-hybrid-catalog",
+        "head_sha": "99af400793a7bad462ed2e2ac0441132a6ea193f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
