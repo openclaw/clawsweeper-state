@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141054"
-mode: "autonomous"
-run_id: "34106116241"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34106116241"
-head_sha: "2fd1b5a8c847e0c42662127222e1493c9f4dcf80"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-07T09:44:17.303Z"
+mode: "plan"
+run_id: "34107585992"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34107585992"
+head_sha: "e8779e8b672dfb8d51b3af5aba44815cfb9a7295"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-07T09:58:28.564Z"
 canonical: "https://github.com/openclaw/openclaw/issues/141054"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/141054"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34106116241](https://github.com/openclaw/clawsweeper/actions/runs/34106116241)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34107585992](https://github.com/openclaw/clawsweeper/actions/runs/34107585992)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/141054
 
 ## Summary
 
-Confirmed the missing snapshot cache writer on preflight main. Prepared a narrow fix artifact; implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. Live ownership/PR recheck requires authenticated GitHub access. No files or GitHub state changed.
+Source inspection confirms the reported cache gap at preflight main e9a25669202cbe194ede76912260b2be461bfc75. A narrow Discord repair is planned. No files or GitHub state changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed the missing snapshot cache writer on preflight main. Prepared a narrow
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141054 | fix_needed | planned | canonical | A narrow repair is supported by current source. Keep the issue open; reproduce through the existing listener/action harness before editing. |
-| cluster:issue-openclaw-openclaw-141054 | build_fix_artifact | planned |  | Artifact preparation is complete. Apply it only in a writable executor after refreshing main, ownership, and competing-PR state. |
+| https://github.com/openclaw/openclaw/issues/141054 | fix_needed | planned | canonical | Keep this issue open and prepare one validated implementation path. The source corroborates the finding: guild snapshots populate event baselines but never the member-info cache. No security-boundary change is required. |
 
 ## Needs Human
 
