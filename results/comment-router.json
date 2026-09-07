@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T04:30:17.488Z",
+  "updated_at": "2026-09-07T04:31:12.731Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137893:5562476866:2026-09-06T22:02:03Z:re_review",
-      "comment_id": "5562476866",
-      "comment_version_key": "5562476866:2026-09-06T22:02:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137893#issuecomment-5562476866",
-      "comment_created_at": "2026-09-06T22:00:34Z",
-      "comment_updated_at": "2026-09-06T22:02:03Z",
-      "comment_body_sha256": "1496986ab8e442a420ddc563b36f2500a740bf0dda12360150d8f0ed00a81b40",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137893,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T22:10:32.980Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-native-legacy-package",
-        "head_sha": "dc4eb28aee09c79a3ff400787683872b51b709ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137838:5562527051:2026-09-06T22:09:32Z:re_review",
       "comment_id": "5562527051",
@@ -33059,6 +33012,39 @@
         "kind": "pull_request",
         "branch": "steipete/update-plugin-availability-preflight",
         "head_sha": "e4b144996722c72d226446a92b7d15c85dfd2237",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140771:5565048989:2026-09-07T04:30:23Z:clawsweeper_needs_human",
+      "comment_id": "5565048989",
+      "comment_version_key": "5565048989:2026-09-07T04:30:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140771#issuecomment-5565048989",
+      "comment_created_at": "2026-09-07T04:30:23Z",
+      "comment_updated_at": "2026-09-07T04:30:23Z",
+      "comment_body_sha256": "5cc4be23ce5104539c63b017624a2bfdf71b6292682c2c3283d210e575cf6dde",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140771,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9ab6eef9d8a6a398447f46a2976eb9d4ba584d1e)",
+      "expected_head_sha": "9ab6eef9d8a6a398447f46a2976eb9d4ba584d1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T04:31:12.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-worker-transfer-file-modes-0906",
+        "head_sha": "9ab6eef9d8a6a398447f46a2976eb9d4ba584d1e",
         "cluster_id": null,
         "job_path": null
       }
