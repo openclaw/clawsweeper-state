@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T12:34:40.826Z",
+  "updated_at": "2026-09-07T12:34:50.178Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141107:5568774747:2026-09-07T09:48:30Z:clawsweeper_needs_human",
-      "comment_id": "5568774747",
-      "comment_version_key": "5568774747:2026-09-07T09:48:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141107#issuecomment-5568774747",
-      "comment_created_at": "2026-09-07T09:48:30Z",
-      "comment_updated_at": "2026-09-07T09:48:30Z",
-      "comment_body_sha256": "2c42294d371570be9913c3bc3eea51238d9133bdcd18cb2227bb098a6e16ebe4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141107,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed Responses client and header builder are exercised only through a substituted fetch returning HTTP 400. The linked relay control sup... (sha=76425e79c196a9eaaa6e25056bb3212041f27c80)",
-      "expected_head_sha": "76425e79c196a9eaaa6e25056bb3212041f27c80",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T09:49:23.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/openai-responses-session-affinity",
-        "head_sha": "76425e79c196a9eaaa6e25056bb3212041f27c80",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:297:5568781512:2026-09-07T09:49:06Z:clawsweeper_auto_repair",
       "comment_id": "5568781512",
@@ -30906,6 +30873,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137381:5570701530:2026-09-07T12:34:00Z:re_review",
+      "comment_id": "5570701530",
+      "comment_version_key": "5570701530:2026-09-07T12:34:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5570701530",
+      "comment_created_at": "2026-09-07T12:34:00Z",
+      "comment_updated_at": "2026-09-07T12:34:00Z",
+      "comment_body_sha256": "de461b27caf9b2299e65f7f0094e3795cd8468f212bb6e9764727d75ee26ff04",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137381,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review exact head `a418b03f8f01a99af5e464d86bd6648bcbc6d320`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T12:34:48.331Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/yield-transcript-incremental-v3",
+        "head_sha": "a418b03f8f01a99af5e464d86bd6648bcbc6d320",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
