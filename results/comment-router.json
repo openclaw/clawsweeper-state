@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-07T05:26:13.465Z",
+  "updated_at": "2026-09-07T05:26:54.706Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140505:5563133356:2026-09-06T23:49:01Z:re_review",
-      "comment_id": "5563133356",
-      "comment_version_key": "5563133356:2026-09-06T23:49:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140505#issuecomment-5563133356",
-      "comment_created_at": "2026-09-06T23:49:01Z",
-      "comment_updated_at": "2026-09-06T23:49:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140505,
-      "author": "gaoanze888",
-      "author_id": 214786078,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-06T23:50:34.828Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/140467-sqlite-cleanup-sidecar-churn",
-        "head_sha": "3428a1cdb9bd9560cae549659e625e4c08b13b33",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140522:5563145583:2026-09-06T23:51:23Z:clawsweeper_needs_human",
       "comment_id": "5563145583",
@@ -32843,6 +32796,39 @@
         "kind": "pull_request",
         "branch": "codex/test-context-maintenance-engine-fixtures",
         "head_sha": "448360a20708b7b7568202dfba10cc0f8a73906e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140852:5565477192:2026-09-07T05:25:58Z:clawsweeper_needs_human",
+      "comment_id": "5565477192",
+      "comment_version_key": "5565477192:2026-09-07T05:25:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140852#issuecomment-5565477192",
+      "comment_created_at": "2026-09-07T05:25:58Z",
+      "comment_updated_at": "2026-09-07T05:25:58Z",
+      "comment_body_sha256": "3e73868cf2267bc98165ab8abb3b93161771944dc5b610271f23f368e676bcc3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The candidate build and Telegram entrypoint profile are still unrecorded, leaving packaged import resolution and startup-cost validation incomplete. (sha=eb32bfe41eb2f417c2080327636cb283df1f292d)",
+      "expected_head_sha": "eb32bfe41eb2f417c2080327636cb283df1f292d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-07T05:26:54.706Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/dedup-lifecycle-0906-permits",
+        "head_sha": "eb32bfe41eb2f417c2080327636cb283df1f292d",
         "cluster_id": null,
         "job_path": null
       }
