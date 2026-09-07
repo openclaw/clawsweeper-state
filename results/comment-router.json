@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-07T00:19:31.088Z",
+  "updated_at": "2026-09-07T00:23:23.543Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1346:5561209088:2026-09-06T18:20:25Z:clawsweeper_auto_repair",
-      "comment_id": "5561209088",
-      "comment_version_key": "5561209088:2026-09-06T18:20:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1346#issuecomment-5561209088",
-      "comment_created_at": "2026-09-06T18:20:25Z",
-      "comment_updated_at": "2026-09-06T18:20:25Z",
-      "comment_body_sha256": "331c02c13f98dd12858a41f66eb59bca392f86be0112802e625be5c458466339",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1346,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c41fd2f2074c622e6968f2becc231885d52712cf)",
-      "expected_head_sha": "c41fd2f2074c622e6968f2becc231885d52712cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-06T18:21:22.612Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chore/discover-winnode-skill",
-        "head_sha": "c41fd2f2074c622e6968f2becc231885d52712cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140316:5560828661:2026-09-06T18:20:39Z:clawsweeper_needs_human",
       "comment_id": "5560828661",
@@ -32288,6 +32255,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122595:5563337370:2026-09-07T00:22:34Z:re_review",
+      "comment_id": "5563337370",
+      "comment_version_key": "5563337370:2026-09-07T00:22:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122595#issuecomment-5563337370",
+      "comment_created_at": "2026-09-07T00:22:34Z",
+      "comment_updated_at": "2026-09-07T00:22:34Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122595,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-07T00:23:21.660Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-startup-trace-close",
+        "head_sha": "18e8cc2ce82db5f03af664da58cedfd397d25aa6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
