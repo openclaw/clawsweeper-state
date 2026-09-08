@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141835"
-mode: "autonomous"
-run_id: "34187209512"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34187209512"
+mode: "plan"
+run_id: "34188701678"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34188701678"
 head_sha: "175d75537c5fd3e68cde68e2098157957265fb51"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T04:37:20.221Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141835"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T04:59:53.591Z"
+canonical: "#141835"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/141835"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34187209512](https://github.com/openclaw/clawsweeper/actions/runs/34187209512)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34188701678](https://github.com/openclaw/clawsweeper/actions/runs/34188701678)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141835
+Canonical: #141835
 
 ## Summary
 
-Source confirms the misleading message CLI remediation on preflight main. A narrow fix artifact is ready, but implementation and runtime validation are blocked by the read-only workspace and absent dependencies. Direct GitHub rechecks require unavailable authentication. No files or GitHub state were changed.
+Plan a narrow message-CLI ownership diagnostic repair. No changes or runtime tests performed. Existing-PR discovery and failing-before/passing-after validation remain executor prerequisites.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Source confirms the misleading message CLI remediation on preflight main. A narr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141835 | fix_needed | planned | canonical | The accepted diagnostic-only repair remains supported by source. Executor must recheck related PR ownership and reproduce before editing. |
-| #128637 | keep_related | planned | related | Keep open outside this implementation scope. |
-| #124679 | keep_closed | skipped | related | Historical evidence only. |
-| #134421 | keep_closed | skipped | related | Historical evidence only. |
-| cluster:issue-openclaw-openclaw-141835 | build_fix_artifact | planned |  | Artifact preparation is complete; applying and validating it requires a writable executor with dependencies and authenticated ownership discovery. |
+| #141835 | fix_needed | planned | canonical | The accepted repair is bounded and non-security. Prepare one fix PR only after checking existing ownership and reproducing the diagnostic defect on current main. |
+| #128637 | keep_related | planned | related | Shared ambient-owner symptom family, but different callers and remaining work; the message diagnostic repair does not resolve this issue. |
+| #124679 | keep_closed | skipped | related | Already-closed historical context involving a distinct resolver-order repair. |
+| #134421 | keep_closed | skipped | related | Already-closed historical context; those repairs do not establish that the message diagnostic is fixed. |
 
 ## Needs Human
 

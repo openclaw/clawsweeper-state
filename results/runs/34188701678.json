@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141835",
+  "mode": "plan",
+  "run_id": "34188701678",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34188701678",
+  "head_sha": "175d75537c5fd3e68cde68e2098157957265fb51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141835.md",
+  "published_at": "2026-09-08T04:59:53.591Z",
+  "canonical": "#141835",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141835",
+  "canonical_pr": null,
+  "summary": "Plan a narrow message-CLI ownership diagnostic repair. No changes or runtime tests performed. Existing-PR discovery and failing-before/passing-after validation remain executor prerequisites.",
+  "actions": [
+    {
+      "target": "#141835",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141835",
+      "candidate_fix": null,
+      "reason": "The accepted repair is bounded and non-security. Prepare one fix PR only after checking existing ownership and reproducing the diagnostic defect on current main."
+    },
+    {
+      "target": "#128637",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141835",
+      "candidate_fix": null,
+      "reason": "Shared ambient-owner symptom family, but different callers and remaining work; the message diagnostic repair does not resolve this issue."
+    },
+    {
+      "target": "#124679",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#141835",
+      "candidate_fix": null,
+      "reason": "Already-closed historical context involving a distinct resolver-order repair."
+    },
+    {
+      "target": "#134421",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#141835",
+      "candidate_fix": null,
+      "reason": "Already-closed historical context; those repairs do not establish that the message diagnostic is fixed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
