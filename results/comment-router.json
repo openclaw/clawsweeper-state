@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:02:43.054Z",
+  "updated_at": "2026-09-08T11:02:46.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141870:5579878091:2026-09-08T05:40:49Z:re_review",
-      "comment_id": "5579878091",
-      "comment_version_key": "5579878091:2026-09-08T05:40:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141870#issuecomment-5579878091",
-      "comment_created_at": "2026-09-08T05:40:49Z",
-      "comment_updated_at": "2026-09-08T05:40:49Z",
-      "comment_body_sha256": "fac7a9489969cc71d0cb4d19c3e650498d69998d89492852fb4dd6d2238e7ccb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141870,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T05:41:59.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/audit-server-sessions-and-improve-openclaw-harness",
-        "head_sha": "138e9a9e6f03584bf8853757a490d3473450a563",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141808:5578647727:2026-09-08T05:41:34Z:clawsweeper_needs_human",
       "comment_id": "5578647727",
@@ -32864,6 +32817,39 @@
         "kind": "pull_request",
         "branch": "codex/huggingface-integration",
         "head_sha": "520156255ad468189ee26001ece551e11c6742a3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:56:5165223903:2026-09-08T11:01:58Z:clawsweeper_needs_human",
+      "comment_id": "5165223903",
+      "comment_version_key": "5165223903:2026-09-08T11:01:58Z",
+      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/56#issuecomment-5165223903",
+      "comment_created_at": "2026-08-03T10:31:01Z",
+      "comment_updated_at": "2026-09-08T11:01:58Z",
+      "comment_body_sha256": "f838787de8ab9a53918892109272213d2eb9a4203c58dcb52001d94acf98d09a",
+      "repo": "openclaw/plugin-inspector",
+      "issue_number": 56,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Only test/path-utils.test.js changes; the captured Linux/Node 22.22 transcript exercises unchanged src/path-utils.js through isolated tests and... (sha=8e79692ee54c6023c99633c72a380020f22db926)",
+      "expected_head_sha": "8e79692ee54c6023c99633c72a380020f22db926",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T11:02:46.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/scout-r-2026-07-30",
+        "head_sha": "8e79692ee54c6023c99633c72a380020f22db926",
         "cluster_id": null,
         "job_path": null
       }
