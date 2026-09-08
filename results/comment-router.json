@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T01:26:09.270Z",
+  "updated_at": "2026-09-08T01:27:28.848Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawhub:3549:5574779455:2026-09-07T19:13:45Z:re_review",
-      "comment_id": "5574779455",
-      "comment_version_key": "5574779455:2026-09-07T19:13:45Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3549#issuecomment-5574779455",
-      "comment_created_at": "2026-09-07T19:13:45Z",
-      "comment_updated_at": "2026-09-07T19:13:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3549,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T19:14:34.176Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f004-publish-blob-cleanup",
-        "head_sha": "d4bcf53fd9278badbe4010076452ffbc9ed01b37",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/esp-openclaw-node:28:5574779742:2026-09-07T19:13:47Z:re_review",
       "comment_id": "5574779742",
@@ -33140,6 +33093,39 @@
         "kind": "pull_request",
         "branch": "test/workspace-member-page-error-paths",
         "head_sha": "b223af43459f013d67b883dd134a08a506730944",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3485:5577493297:2026-09-08T01:25:15Z:clawsweeper_needs_human",
+      "comment_id": "5577493297",
+      "comment_version_key": "5577493297:2026-09-08T01:25:15Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3485#issuecomment-5577493297",
+      "comment_created_at": "2026-09-08T01:03:39Z",
+      "comment_updated_at": "2026-09-08T01:25:15Z",
+      "comment_body_sha256": "8df69ad69bafbd968045744d18223d02382644ed2b1a8077e4a211b582d5a1f6",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3485,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d519d1a225bbd55b346040a3475889cdf4fb337c)",
+      "expected_head_sha": "d519d1a225bbd55b346040a3475889cdf4fb337c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T01:27:28.848Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/claude-swap-measurement-time",
+        "head_sha": "d519d1a225bbd55b346040a3475889cdf4fb337c",
         "cluster_id": null,
         "job_path": null
       }
