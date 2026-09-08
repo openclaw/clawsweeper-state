@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:19:01.109Z",
+  "updated_at": "2026-09-08T16:19:06.558Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140933:5567619463:2026-09-07T08:21:57Z:re_review",
-      "comment_id": "5567619463",
-      "comment_version_key": "5567619463:2026-09-07T08:21:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140933#issuecomment-5567619463",
-      "comment_created_at": "2026-09-07T08:21:57Z",
-      "comment_updated_at": "2026-09-07T08:21:57Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140933,
-      "author": "IlyaKuprov",
-      "author_id": 166841386,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T09:41:36.899Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142077:5582890718:2026-09-08T09:40:48Z:clawsweeper_needs_human",
       "comment_id": "5582890718",
@@ -32320,6 +32293,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142286:5588329966:2026-09-08T16:18:07Z:clawsweeper_needs_human",
+      "comment_id": "5588329966",
+      "comment_version_key": "5588329966:2026-09-08T16:18:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142286#issuecomment-5588329966",
+      "comment_created_at": "2026-09-08T16:18:07Z",
+      "comment_updated_at": "2026-09-08T16:18:07Z",
+      "comment_body_sha256": "66c932c87c78383ff6f10ff1968f71e12f8bdccb514f9c038dd3747477a28037",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A cleanup callback that never settles can now keep an embedded Gateway close pending indefinitely; process-owned shutdown retains its existing forced-exit safeguards. (sha=d8e8bca0ec5d2cd9b51cd79d298936599ee8d6ef)",
+      "expected_head_sha": "d8e8bca0ec5d2cd9b51cd79d298936599ee8d6ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T16:19:06.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/split-host-cleanup-drain",
+        "head_sha": "d8e8bca0ec5d2cd9b51cd79d298936599ee8d6ef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
