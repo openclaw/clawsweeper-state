@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:38:24.372Z",
+  "updated_at": "2026-09-08T02:38:40.535Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133885:5474786233:2026-09-07T20:22:24Z:clawsweeper_needs_human",
-      "comment_id": "5474786233",
-      "comment_version_key": "5474786233:2026-09-07T20:22:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133885#issuecomment-5474786233",
-      "comment_created_at": "2026-08-31T06:48:18Z",
-      "comment_updated_at": "2026-09-07T20:22:24Z",
-      "comment_body_sha256": "f37ea83942f449b39da37256589bd768d8d0dae07053f6429232be17750e963f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133885,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence reports Vitest coverage, but does not exercise Gateway startup through real exposure preparation and connection teardown.... (sha=08529c283674702e6c3495e33912838e6dea9cfc)",
-      "expected_head_sha": "08529c283674702e6c3495e33912838e6dea9cfc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T20:31:06.855Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-133827-descr",
-        "head_sha": "d969dcb08011591f03442e7762d45a0c40d0f66a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141451:5574598653:2026-09-07T20:29:17Z:clawsweeper_needs_human",
       "comment_id": "5574598653",
@@ -33023,6 +32990,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141163:5578263454:2026-09-08T02:37:33Z:re_review",
+      "comment_id": "5578263454",
+      "comment_version_key": "5578263454:2026-09-08T02:37:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141163#issuecomment-5578263454",
+      "comment_created_at": "2026-09-08T02:37:33Z",
+      "comment_updated_at": "2026-09-08T02:37:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141163,
+      "author": "ly85206559",
+      "author_id": 12526624,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T02:38:36.644Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-fast-path-rejection-handler",
+        "head_sha": "6bfef9a2710309a7763580108df4982cf0509512",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
