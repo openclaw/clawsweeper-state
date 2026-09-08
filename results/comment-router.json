@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T03:13:52.919Z",
+  "updated_at": "2026-09-08T03:15:08.398Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135895:5575732770:2026-09-07T21:20:11Z:re_review",
-      "comment_id": "5575732770",
-      "comment_version_key": "5575732770:2026-09-07T21:20:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-5575732770",
-      "comment_created_at": "2026-09-07T21:20:11Z",
-      "comment_updated_at": "2026-09-07T21:20:11Z",
-      "comment_body_sha256": "b7c3f0cc1b3d6290bfe06a195b18f1db6e47f1b06eb906125150923c125420f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135895,
-      "author": "lordratner",
-      "author_id": 49489398,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T21:21:01.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nextcloud-talk-inbound-media",
-        "head_sha": "19f0e52c40328a973beb44896489bdca2c0abd9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141544:5575738364:2026-09-07T21:20:59Z:request_proof",
       "comment_id": "5575738364",
@@ -32800,6 +32753,39 @@
         "kind": "pull_request",
         "branch": "altaywtf/codex-harness-provider-ids",
         "head_sha": "0f9a05988b688e512833b582551f97a359e011f8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141774:5578190150:2026-09-08T03:14:07Z:clawsweeper_auto_repair",
+      "comment_id": "5578190150",
+      "comment_version_key": "5578190150:2026-09-08T03:14:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141774#issuecomment-5578190150",
+      "comment_created_at": "2026-09-08T02:28:23Z",
+      "comment_updated_at": "2026-09-08T03:14:07Z",
+      "comment_body_sha256": "45b997b53fe6c7e8ce7858703de97b462f6cc53c9d49ae1e35f15cb0d7aa6198",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141774,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=56a128666514739d2b0f9b6ba86e810a3ea3a88c)",
+      "expected_head_sha": "56a128666514739d2b0f9b6ba86e810a3ea3a88c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T03:15:08.398Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/full-validation-frozen-contracts",
+        "head_sha": "f5b39e2bf2b8fd80c2b02571fbfed41da089545c",
         "cluster_id": null,
         "job_path": null
       }
