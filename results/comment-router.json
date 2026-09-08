@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T06:32:16.399Z",
+  "updated_at": "2026-09-08T06:32:29.396Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Kova:115:5578084846:2026-09-08T02:15:44Z:clawsweeper_needs_human",
-      "comment_id": "5578084846",
-      "comment_version_key": "5578084846:2026-09-08T02:15:44Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/115#issuecomment-5578084846",
-      "comment_created_at": "2026-09-08T02:15:44Z",
-      "comment_updated_at": "2026-09-08T02:15:44Z",
-      "comment_body_sha256": "5ad5fc8d9c6d8c882c93e5ba40a1164cee06cd0e9ad2da8bfc510df371651bdb",
-      "repo": "openclaw/Kova",
-      "issue_number": 115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied body offers CI-only validation, without observed output from Kova’s package-backed version command showing 0.1.5 after the change.... (sha=959ef51737de369046440b99e9f89bf85f72bb24)",
-      "expected_head_sha": "959ef51737de369046440b99e9f89bf85f72bb24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T02:16:36.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/v0.1.5",
-        "head_sha": "959ef51737de369046440b99e9f89bf85f72bb24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141767:5578085654:2026-09-08T02:15:51Z:clawsweeper_needs_human",
       "comment_id": "5578085654",
@@ -31948,6 +31915,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135917:5580372947:2026-09-08T06:31:31Z:re_review",
+      "comment_id": "5580372947",
+      "comment_version_key": "5580372947:2026-09-08T06:31:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135917#issuecomment-5580372947",
+      "comment_created_at": "2026-09-08T06:31:31Z",
+      "comment_updated_at": "2026-09-08T06:31:31Z",
+      "comment_body_sha256": "4db2a4ff99292f42ee83a924ae7e744b5eddd497c30c2cd2db4a398f76d130e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135917,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T06:32:26.077Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/validate-worktree-base-ref",
+        "head_sha": "3cb5639580578560a4156007c692a9fd083eaadc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
