@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T20:32:19.366Z",
+  "updated_at": "2026-09-08T20:32:33.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1501:5588187095:2026-09-08T16:07:30Z:re_review",
-      "comment_id": "5588187095",
-      "comment_version_key": "5588187095:2026-09-08T16:07:30Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1501#issuecomment-5588187095",
-      "comment_created_at": "2026-09-08T16:07:30Z",
-      "comment_updated_at": "2026-09-08T16:07:30Z",
-      "comment_body_sha256": "1086f4271bfc9196175dc7ba54dd89dcccd9da1ed4cb6543c2d1a52feee108fc",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1501,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T16:16:03.669Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1501:5588219128:2026-09-08T16:14:52Z:clawsweeper_needs_human",
       "comment_id": "5588219128",
@@ -32808,6 +32781,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142520:5591466452:2026-09-08T20:31:40Z:clawsweeper_auto_repair",
+      "comment_id": "5591466452",
+      "comment_version_key": "5591466452:2026-09-08T20:31:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142520#issuecomment-5591466452",
+      "comment_created_at": "2026-09-08T20:31:40Z",
+      "comment_updated_at": "2026-09-08T20:31:40Z",
+      "comment_body_sha256": "946291a517cb4679098758e8766907eef1889ac3e621ce8b379c4f080f2eba5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142520,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e468fb0ad1821783c564ea9a9ec8cd8cf31ccec9)",
+      "expected_head_sha": "e468fb0ad1821783c564ea9a9ec8cd8cf31ccec9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T20:32:33.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-windows-native-cli-fixture",
+        "head_sha": "e468fb0ad1821783c564ea9a9ec8cd8cf31ccec9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
