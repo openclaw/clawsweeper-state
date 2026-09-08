@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142479"
-mode: "autonomous"
-run_id: "34271070523"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34271070523"
+mode: "plan"
+run_id: "34275370120"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34275370120"
 head_sha: "e4c2d57ad229dc8cef15dd5ef3d613386ced664b"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-08T19:58:50.852Z"
+published_at: "2026-09-08T20:38:36.331Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142479"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142479"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34271070523](https://github.com/openclaw/clawsweeper/actions/runs/34271070523)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34275370120](https://github.com/openclaw/clawsweeper/actions/runs/34275370120)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/142479
 
 ## Summary
 
-Verified the reported deadline race in source at preflight main b8bd114d0fa39bf445112f532b3fc382b644bd71. Prepared a narrow fix and regression plan. Local implementation and runtime reproduction remain blocked by the read-only filesystem and missing dependencies; no code or GitHub changes were made.
+Plan a narrow deadline-budget repair for #142479. The clean checkout matches preflight main 987cc6983035bd5a02a2d6e3d61f23b19a2b1616 and retains the reported timer race. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,8 @@ Verified the reported deadline race in source at preflight main b8bd114d0fa39bf4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142479 | fix_needed | planned | canonical | Repair the optional stage's remaining-budget calculation while preserving mandatory preflight cancellation and the full recall budget. |
-| #117534 | keep_closed | skipped | related | Historical repair guidance; no action on the closed contributor PR. |
-| #135086 | keep_closed | skipped | related | Historical context; observability changes are outside this repair. |
-| #135193 | keep_closed | skipped | related | Preserve the existing outcome behavior; this merged PR does not establish that the deadline race is fixed. |
-| #138544 | keep_related | planned | related | Distinct repair scope. Keep open without recommending merge, replacement, or closure. |
-| cluster:issue-openclaw-openclaw-142479 | build_fix_artifact | planned |  | A narrow new fix PR is justified by current source and explicit maintainer guidance, conditional on reproducing the defect before production edits. |
-| cluster:issue-openclaw-openclaw-142479 | open_fix_pr | blocked |  | Implementation and publication are blocked pending a writable executor that reproduces, repairs, and validates the branch. Reuse clawsweeper/issue-openclaw-openclaw-142479 and publish only through the deterministic applicator. |
+| #142479 | fix_needed | planned | canonical | The optional stage can exhaust the enclosing deadline before fallback recall. No hydrated open PR owns this repair. Establish a failing registered-hook regression before implementing the attached plan. |
+| #138544 | keep_related | planned | related | Different root cause and useful independent work within the same plugin area. Preserve this PR without combining it with the deadline repair. |
 
 ## Needs Human
 

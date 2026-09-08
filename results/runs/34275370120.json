@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142479",
+  "mode": "plan",
+  "run_id": "34275370120",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34275370120",
+  "head_sha": "e4c2d57ad229dc8cef15dd5ef3d613386ced664b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142479.md",
+  "published_at": "2026-09-08T20:38:36.331Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142479",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142479",
+  "canonical_pr": null,
+  "summary": "Plan a narrow deadline-budget repair for #142479. The clean checkout matches preflight main 987cc6983035bd5a02a2d6e3d61f23b19a2b1616 and retains the reported timer race. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#142479",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142479",
+      "candidate_fix": null,
+      "reason": "The optional stage can exhaust the enclosing deadline before fallback recall. No hydrated open PR owns this repair. Establish a failing registered-hook regression before implementing the attached plan."
+    },
+    {
+      "target": "#138544",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#142479",
+      "candidate_fix": null,
+      "reason": "Different root cause and useful independent work within the same plugin area. Preserve this PR without combining it with the deadline repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
