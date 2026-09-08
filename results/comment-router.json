@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T18:13:14.158Z",
+  "updated_at": "2026-09-08T18:14:10.949Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119057:5585189919:2026-09-08T12:33:13Z:re_review",
-      "comment_id": "5585189919",
-      "comment_version_key": "5585189919:2026-09-08T12:33:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5585189919",
-      "comment_created_at": "2026-09-08T12:33:13Z",
-      "comment_updated_at": "2026-09-08T12:33:13Z",
-      "comment_body_sha256": "3466a473c54ce8355c4d9dc3d263da88078eebbbab93a912120603aa73a7d9d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119057,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T12:34:01.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-semantic-observation-stack-20260804",
-        "head_sha": "3e5ce0ab9d22b2d0799b9a84402e43a9633ffc7c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142151:5585189549:2026-09-08T12:33:11Z:re_review",
       "comment_id": "5585189549",
@@ -32769,6 +32722,39 @@
         "kind": "pull_request",
         "branch": "fix/update-node-preflight-hint",
         "head_sha": "b960df2d199037530fa5a79e871debc7ead9145a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138689:5548158707:2026-09-08T18:06:48Z:clawsweeper_needs_human",
+      "comment_id": "5548158707",
+      "comment_version_key": "5548158707:2026-09-08T18:06:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138689#issuecomment-5548158707",
+      "comment_created_at": "2026-09-05T00:45:15Z",
+      "comment_updated_at": "2026-09-08T18:06:48Z",
+      "comment_body_sha256": "a6a6edeb6ad51f6172818b56968ddf50d6a2e0ff915fcfc651c3a48bd14a0aea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - New-DM creation, actual heartbeat delivery, and a third-party plugin upgrade were not directly exercised; the PR records maintainer acceptance of these validation limits. (sha=d04a229df533f9008ce987aee5c422c0310d9e48)",
+      "expected_head_sha": "d04a229df533f9008ce987aee5c422c0310d9e48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T18:14:10.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/heartbeat-owner-delivery",
+        "head_sha": "d04a229df533f9008ce987aee5c422c0310d9e48",
         "cluster_id": null,
         "job_path": null
       }
