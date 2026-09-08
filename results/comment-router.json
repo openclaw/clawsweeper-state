@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T07:37:25.768Z",
+  "updated_at": "2026-09-08T07:38:02.043Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5562890263:2026-09-06T23:14:55Z:re_review",
-      "comment_id": "5562890263",
-      "comment_version_key": "5562890263:2026-09-06T23:14:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5562890263",
-      "comment_created_at": "2026-09-06T23:14:55Z",
-      "comment_updated_at": "2026-09-06T23:14:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T03:16:46.419Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5563053344:2026-09-06T23:35:35Z:re_review",
       "comment_id": "5563053344",
@@ -31978,6 +31951,39 @@
       "status": "skipped",
       "processed_at": "2026-09-08T07:37:25.768Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141143:5569267855:2026-09-08T07:37:02Z:clawsweeper_needs_human",
+      "comment_id": "5569267855",
+      "comment_version_key": "5569267855:2026-09-08T07:37:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141143#issuecomment-5569267855",
+      "comment_created_at": "2026-09-07T10:29:48Z",
+      "comment_updated_at": "2026-09-08T07:37:02Z",
+      "comment_body_sha256": "fd95417282265b4869c01f04e31eb6b923544a82a7b7069a0168ff1dc2609315",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141143,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The shared reducer has reported failing-before/passing-after coverage and a Chromium test with injected Gateway events, but neither demonstrate... (sha=56611b36b24f643f0cc119f9c5afc5b166caf701)",
+      "expected_head_sha": "56611b36b24f643f0cc119f9c5afc5b166caf701",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T07:38:02.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/webchat-duplicate-commentary-render",
+        "head_sha": "56611b36b24f643f0cc119f9c5afc5b166caf701",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
