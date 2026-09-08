@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T05:06:29.445Z",
+  "updated_at": "2026-09-08T05:08:01.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141451:5577074491:2026-09-08T00:11:36Z:re_review",
-      "comment_id": "5577074491",
-      "comment_version_key": "5577074491:2026-09-08T00:11:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141451#issuecomment-5577074491",
-      "comment_created_at": "2026-09-08T00:11:36Z",
-      "comment_updated_at": "2026-09-08T00:11:36Z",
-      "comment_body_sha256": "67bf5207751d66e6a382204c097d5faf502b8b700161dcbad85c16af7e72bc08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141451,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T00:19:25.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upg-preflight",
-        "head_sha": "e2bc67087ae9d1cac435cfb5772bc8a1112b559f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141451:5574598653:2026-09-08T00:18:20Z:clawsweeper_needs_human",
       "comment_id": "5574598653",
@@ -32366,6 +32319,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1980:5579572152:2026-09-08T05:07:12Z:clawsweeper_needs_human",
+      "comment_id": "5579572152",
+      "comment_version_key": "5579572152:2026-09-08T05:07:12Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1980#issuecomment-5579572152",
+      "comment_created_at": "2026-09-08T05:07:12Z",
+      "comment_updated_at": "2026-09-08T05:07:12Z",
+      "comment_body_sha256": "4246d6f42ab54e0baff1115056c1797ac90a2298b0c396cd9296c7d39a4db539",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1980,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: AWSProvider reconciliation and EC2 permission updates are exercised through mocked fetch fixtures; the captured body explicitly leaves deployed... (sha=8d27e21d23feaa110bab5aaabc7e482d2c4bf4bb)",
+      "expected_head_sha": "8d27e21d23feaa110bab5aaabc7e482d2c4bf4bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T05:08:01.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/aws-access-refresh-groups",
+        "head_sha": "8d27e21d23feaa110bab5aaabc7e482d2c4bf4bb",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
