@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T05:56:15.238Z",
+  "updated_at": "2026-09-08T05:56:35.506Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132724:5463693484:2026-09-08T01:42:03Z:clawsweeper_needs_human",
-      "comment_id": "5463693484",
-      "comment_version_key": "5463693484:2026-09-08T01:42:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132724#issuecomment-5463693484",
-      "comment_created_at": "2026-08-29T16:59:51Z",
-      "comment_updated_at": "2026-09-08T01:42:03Z",
-      "comment_body_sha256": "120f0a640c7c04040e474ca69f5418bb13303c5dd687178bb8bff847dc0a5ccf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132724,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Operators who adopt either newly accepted LINE setting cannot retain it when rolling back to v2026.9.2; that release rejects the configuration. Existing configurations are not rewritt... (sha=f8a2aacfd05291bc8f0ca31b27222fce70708722)",
-      "expected_head_sha": "f8a2aacfd05291bc8f0ca31b27222fce70708722",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T01:42:51.692Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-text-chunk-limit",
-        "head_sha": "f8a2aacfd05291bc8f0ca31b27222fce70708722",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3486:5577538512:2026-09-08T01:39:38Z:clawsweeper_needs_human",
       "comment_id": "5577538512",
@@ -31887,6 +31854,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141825:5580010723:2026-09-08T05:55:38Z:re_review",
+      "comment_id": "5580010723",
+      "comment_version_key": "5580010723:2026-09-08T05:55:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141825#issuecomment-5580010723",
+      "comment_created_at": "2026-09-08T05:55:38Z",
+      "comment_updated_at": "2026-09-08T05:55:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141825,
+      "author": "clement-paradex",
+      "author_id": 290744036,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T05:56:33.619Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/configurable-cooldown-bypass-nqy5z6",
+        "head_sha": "4f5201b5e591a39542ba2f584fea43513a075e95",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
