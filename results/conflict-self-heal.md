@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-08T15:34:21.337Z
+Generated: 2026-09-08T16:35:54.406Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -34,7 +34,7 @@ Repository: openclaw/openclaw
 | [#119712](https://github.com/openclaw/openclaw/pull/119712) | fix(usage): preserve top-level cached tokens in completions streams | clawsweeper/issue-openclaw-openclaw-119692 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119589](https://github.com/openclaw/openclaw/pull/119589) | fix(acp): retain final-only text until dispatch completes | clawsweeper/issue-openclaw-openclaw-92199 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119265](https://github.com/openclaw/openclaw/pull/119265) | fix(agents): audit direct embedded bundle tool calls | clawsweeper/issue-openclaw-openclaw-119253 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | clawsweeper/issue-openclaw-openclaw-119148 | CONFLICTING | DIRTY | skipped | head repository is unknown |
+| [#119160](https://github.com/openclaw/openclaw/pull/119160) | fix(bedrock): honor Opus 5 maxTokens when reasoning is off | clawsweeper/issue-openclaw-openclaw-119148 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118806](https://github.com/openclaw/openclaw/pull/118806) | fix(agents): remove yield from leaf subagents | clawsweeper/issue-openclaw-openclaw-118776 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118680](https://github.com/openclaw/openclaw/pull/118680) | fix(config): accept declared model compatibility routing settings | clawsweeper/issue-openclaw-openclaw-118667 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#118679](https://github.com/openclaw/openclaw/pull/118679) | fix(workboard): reconcile terminal subagent runs | clawsweeper/issue-openclaw-openclaw-118669 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
