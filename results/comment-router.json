@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T20:09:45.986Z",
+  "updated_at": "2026-09-08T20:10:03.534Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142136:5584800063:2026-09-08T15:47:54Z:clawsweeper_needs_human",
-      "comment_id": "5584800063",
-      "comment_version_key": "5584800063:2026-09-08T15:47:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142136#issuecomment-5584800063",
-      "comment_created_at": "2026-09-08T12:01:01Z",
-      "comment_updated_at": "2026-09-08T15:47:54Z",
-      "comment_body_sha256": "9378f42fea78c155f54a9f2b74f06671d8d29af760cc911dc427cae891dffa4f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142136,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing subscription xai/auto selections stop resolving until Doctor repairs them or the operator selects a permitted concrete model. (sha=e0c1d383b5feb0cf8d702dafc326724bf7ae9a71)",
-      "expected_head_sha": "e0c1d383b5feb0cf8d702dafc326724bf7ae9a71",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T15:48:50.880Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/xai-curated-catalog",
-        "head_sha": "e0c1d383b5feb0cf8d702dafc326724bf7ae9a71",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141875:5587945300:2026-09-08T15:50:16Z:re_review",
       "comment_id": "5587945300",
@@ -32808,6 +32775,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138557:5591180357:2026-09-08T20:09:00Z:re_review",
+      "comment_id": "5591180357",
+      "comment_version_key": "5591180357:2026-09-08T20:09:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138557#issuecomment-5591180357",
+      "comment_created_at": "2026-09-08T20:09:00Z",
+      "comment_updated_at": "2026-09-08T20:09:00Z",
+      "comment_body_sha256": "9a02fef8a5357551be3d8b4bab867cc0ab0bd93219f5c9c61139aa449758c6be",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138557,
+      "author": "synthalorian",
+      "author_id": 212206047,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — runtime proof posted above showing 30-file fetch with corrected summary text (no false 'channel attaches' claim)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T20:10:00.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/138383-dir-fetch-attachment-promise",
+        "head_sha": "cb4961d87d4e909b9eef90e6b90eb7c92a656316",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
