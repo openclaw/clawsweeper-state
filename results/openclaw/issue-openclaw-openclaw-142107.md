@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142107"
-mode: "autonomous"
-run_id: "34215445366"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34215445366"
+mode: "plan"
+run_id: "34218055834"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34218055834"
 head_sha: "7f29952363878ca3b5d1f25be8d40a9f6ced784c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T10:51:05.214Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142107"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/142107"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T11:01:47.267Z"
+canonical: "#142107"
+canonical_issue: "#142107"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34215445366](https://github.com/openclaw/clawsweeper/actions/runs/34215445366)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34218055834](https://github.com/openclaw/clawsweeper/actions/runs/34218055834)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142107
+Canonical: #142107
 
 ## Summary
 
-Source inspection supports the private-topic collision. A narrow repair artifact is ready, but implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. Main freshness and contributor-PR discovery require executor verification. No files or GitHub state changed.
+Plan a narrow private-topic inbound identity repair. Source inspection supports the finding at preflight main 79bc8191d5bbd6f2eefe61aab1c17ea64223420f. No files or GitHub state changed; runtime reproduction, validation, and live Telegram proof remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Source inspection supports the private-topic collision. A narrow repair artifact
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142107 | fix_needed | planned | canonical | Repair private-topic identity at its inbound producer without changing authorization, persistent sessions, serialization, configuration, or timing. |
-| #126207 | keep_closed | skipped | related | Historical context only; not an open contributor fix or closure target. |
-| cluster:issue-openclaw-openclaw-142107 | build_fix_artifact | planned |  | The fix is narrow and source-supported; the executor must establish failing runtime proof before implementation. |
-| cluster:issue-openclaw-openclaw-142107 | open_fix_pr | blocked |  | PR creation is blocked on a writable, dependency-ready executor, verified current main, contributor-fix recheck, failing-then-passing regressions, required checks, review, and sanitized Telegram evidence. |
+| #142107 | fix_needed | planned | canonical | A focused producer repair is supported. Reproduce through the real processing and buffering owners before editing, and recheck contributor work before creating the single implementation PR. |
+| #126207 | keep_closed | skipped | related | Historical routing context, not an open repair candidate or proof that #142107 is fixed. |
 
 ## Needs Human
 
