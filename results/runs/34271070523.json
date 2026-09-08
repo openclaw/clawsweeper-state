@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142479",
+  "mode": "autonomous",
+  "run_id": "34271070523",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34271070523",
+  "head_sha": "e4c2d57ad229dc8cef15dd5ef3d613386ced664b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142479.md",
+  "published_at": "2026-09-08T19:58:50.852Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142479",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142479",
+  "canonical_pr": null,
+  "summary": "Verified the reported deadline race in source at preflight main b8bd114d0fa39bf445112f532b3fc382b644bd71. Prepared a narrow fix and regression plan. Local implementation and runtime reproduction remain blocked by the read-only filesystem and missing dependencies; no code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#142479",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142479",
+      "candidate_fix": null,
+      "reason": "Repair the optional stage's remaining-budget calculation while preserving mandatory preflight cancellation and the full recall budget."
+    },
+    {
+      "target": "#117534",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142479",
+      "candidate_fix": null,
+      "reason": "Historical repair guidance; no action on the closed contributor PR."
+    },
+    {
+      "target": "#135086",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; observability changes are outside this repair."
+    },
+    {
+      "target": "#135193",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing outcome behavior; this merged PR does not establish that the deadline race is fixed."
+    },
+    {
+      "target": "#138544",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct repair scope. Keep open without recommending merge, replacement, or closure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142479",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142479",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is justified by current source and explicit maintainer guidance, conditional on reproducing the defect before production edits."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142479",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#142479",
+      "candidate_fix": null,
+      "reason": "Implementation and publication are blocked pending a writable executor that reproduces, repairs, and validates the branch. Reuse clawsweeper/issue-openclaw-openclaw-142479 and publish only through the deterministic applicator."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
