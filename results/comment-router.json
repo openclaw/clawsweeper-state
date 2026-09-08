@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:31:54.707Z",
+  "updated_at": "2026-09-08T16:32:28.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5583108613:2026-09-08T09:53:09Z:re_review",
-      "comment_id": "5583108613",
-      "comment_version_key": "5583108613:2026-09-08T09:53:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5583108613",
-      "comment_created_at": "2026-09-08T09:53:09Z",
-      "comment_updated_at": "2026-09-08T09:53:09Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T09:57:52.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "d1a5cc398c048505bd71c9a805ccc77b64339d9e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142067:5582756375:2026-09-08T09:57:06Z:clawsweeper_needs_human",
       "comment_id": "5582756375",
@@ -32145,6 +32098,39 @@
         "kind": "pull_request",
         "branch": "altaywtf/codex-harness-provider-ids",
         "head_sha": "e4433bb73b52a0b16d8be6a013520c91b853596f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142195:5586210057:2026-09-08T16:30:57Z:clawsweeper_needs_human",
+      "comment_id": "5586210057",
+      "comment_version_key": "5586210057:2026-09-08T16:30:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142195#issuecomment-5586210057",
+      "comment_created_at": "2026-09-08T13:51:07Z",
+      "comment_updated_at": "2026-09-08T16:30:57Z",
+      "comment_body_sha256": "353d90381c0d0b3b0c18f5ae4ce37084cefabb381800f4c10c6611d942160d9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142195,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=f986ab9d1db63df4773c0d019c149bff1d40f3e0)",
+      "expected_head_sha": "f986ab9d1db63df4773c0d019c149bff1d40f3e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T16:32:28.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-bridge-0908",
+        "head_sha": "f986ab9d1db63df4773c0d019c149bff1d40f3e0",
         "cluster_id": null,
         "job_path": null
       }
