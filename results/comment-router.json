@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:33:18.104Z",
+  "updated_at": "2026-09-08T02:33:19.645Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141534:5575315191:2026-09-07T20:22:52Z:re_review",
-      "comment_id": "5575315191",
-      "comment_version_key": "5575315191:2026-09-07T20:22:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141534#issuecomment-5575315191",
-      "comment_created_at": "2026-09-07T20:22:52Z",
-      "comment_updated_at": "2026-09-07T20:22:52Z",
-      "comment_body_sha256": "98113cfa6cd3d95f89668ddc53897c08fee4d2a31efcdf5375f1ebd22dfd007b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141534,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T20:24:14.822Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-manifest-public-export",
-        "head_sha": "b60f40bf17833e337ae763b8f2bb4ad793a4c683",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141529:5575319757:2026-09-07T20:23:23Z:clawsweeper_needs_human",
       "comment_id": "5575319757",
@@ -33034,6 +32987,39 @@
         "kind": "pull_request",
         "branch": "fix/recovered-tab-retirement-phase3",
         "head_sha": "3f5529fb195fd7605d2d67fb0568cef9d8896bd6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141775:5578223853:2026-09-08T02:32:32Z:clawsweeper_needs_human",
+      "comment_id": "5578223853",
+      "comment_version_key": "5578223853:2026-09-08T02:32:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141775#issuecomment-5578223853",
+      "comment_created_at": "2026-09-08T02:32:32Z",
+      "comment_updated_at": "2026-09-08T02:32:32Z",
+      "comment_body_sha256": "8572ac76ea0037affcf953c143d13cba34d319e2c279cab770a49ceca1ae2c29",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141775,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports a real CLI read through the changed recommendation-store accessor and unknown-agent rejection, but provides no captur... (sha=02a1750c700e0578a07572b65d6547520db0bbe5)",
+      "expected_head_sha": "02a1750c700e0578a07572b65d6547520db0bbe5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T02:33:19.645Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/onboard-recommendations-agent-scope",
+        "head_sha": "02a1750c700e0578a07572b65d6547520db0bbe5",
         "cluster_id": null,
         "job_path": null
       }
