@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T06:34:23.139Z",
+  "updated_at": "2026-09-08T06:35:17.838Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141768:5578143052:2026-09-08T02:22:49Z:clawsweeper_needs_human",
-      "comment_id": "5578143052",
-      "comment_version_key": "5578143052:2026-09-08T02:22:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141768#issuecomment-5578143052",
-      "comment_created_at": "2026-09-08T02:22:49Z",
-      "comment_updated_at": "2026-09-08T02:22:49Z",
-      "comment_body_sha256": "799aabb90d9d75f84f6f38466866814c14bef63eb5456f03d56c184f96e0b333",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141768,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=51bf4ec8eabdcee4ad8f5dba661b51e970026753)",
-      "expected_head_sha": "51bf4ec8eabdcee4ad8f5dba661b51e970026753",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T02:23:49.769Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/doctor-secretref-fixture-main",
-        "head_sha": "51bf4ec8eabdcee4ad8f5dba661b51e970026753",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141754:5577977339:2026-09-08T02:23:35Z:clawsweeper_needs_human",
       "comment_id": "5577977339",
@@ -31912,6 +31879,53 @@
       "status": "skipped",
       "processed_at": "2026-09-08T06:34:23.139Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141893:5580404312:2026-09-08T06:34:14Z:re_review",
+      "comment_id": "5580404312",
+      "comment_version_key": "5580404312:2026-09-08T06:34:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141893#issuecomment-5580404312",
+      "comment_created_at": "2026-09-08T06:34:14Z",
+      "comment_updated_at": "2026-09-08T06:34:14Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141893,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T06:35:15.576Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frozen-onboard-fixture-contract",
+        "head_sha": "eb272974e88ba2fbc18a7ae0223db9c66ec22b9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
