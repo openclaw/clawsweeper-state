@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142107",
+  "mode": "autonomous",
+  "run_id": "34215445366",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34215445366",
+  "head_sha": "7f29952363878ca3b5d1f25be8d40a9f6ced784c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142107.md",
+  "published_at": "2026-09-08T10:51:05.214Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142107",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142107",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the private-topic collision. A narrow repair artifact is ready, but implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. Main freshness and contributor-PR discovery require executor verification. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#142107",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142107",
+      "candidate_fix": null,
+      "reason": "Repair private-topic identity at its inbound producer without changing authorization, persistent sessions, serialization, configuration, or timing."
+    },
+    {
+      "target": "#126207",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; not an open contributor fix or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142107",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142107",
+      "candidate_fix": null,
+      "reason": "The fix is narrow and source-supported; the executor must establish failing runtime proof before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142107",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#142107",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked on a writable, dependency-ready executor, verified current main, contributor-fix recheck, failing-then-passing regressions, required checks, review, and sanitized Telegram evidence."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
