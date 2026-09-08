@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T06:15:25.411Z",
+  "updated_at": "2026-09-08T06:15:46.666Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133633:5472113725:2026-09-08T01:55:16Z:clawsweeper_needs_human",
-      "comment_id": "5472113725",
-      "comment_version_key": "5472113725:2026-09-08T01:55:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/133633#issuecomment-5472113725",
-      "comment_created_at": "2026-08-31T00:07:43Z",
-      "comment_updated_at": "2026-09-08T01:55:16Z",
-      "comment_body_sha256": "a3cb30da21f96a55b7a28d79e76f8c18dbc0142789f2de7ad6d8ba27b54bc922",
-      "repo": "openclaw/openclaw",
-      "issue_number": 133633,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when it is ready to enter the landing workflow. (sha=63be3978bdaf3941ddf3b367c4624ed4e21da739)",
-      "expected_head_sha": "63be3978bdaf3941ddf3b367c4624ed4e21da739",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T01:58:15.470Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/130706-provider-normalization",
-        "head_sha": "63be3978bdaf3941ddf3b367c4624ed4e21da739",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134815:5489246566:2026-09-08T01:56:20Z:clawsweeper_needs_human",
       "comment_id": "5489246566",
@@ -31957,6 +31924,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:129403:5580196910:2026-09-08T06:14:42Z:re_review",
+      "comment_id": "5580196910",
+      "comment_version_key": "5580196910:2026-09-08T06:14:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129403#issuecomment-5580196910",
+      "comment_created_at": "2026-09-08T06:14:42Z",
+      "comment_updated_at": "2026-09-08T06:14:42Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129403,
+      "author": "xydigitLybnnnn",
+      "author_id": 280613588,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T06:15:44.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/129209-json-nesting-stack-overflow",
+        "head_sha": "7613fa245e4fdd47af2138c301cd16425cdf9485",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
