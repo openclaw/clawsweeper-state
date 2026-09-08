@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T05:48:10.645Z",
+  "updated_at": "2026-09-08T05:48:33.810Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141414:5577773147:2026-09-08T01:37:48Z:re_review",
-      "comment_id": "5577773147",
-      "comment_version_key": "5577773147:2026-09-08T01:37:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141414#issuecomment-5577773147",
-      "comment_created_at": "2026-09-08T01:37:48Z",
-      "comment_updated_at": "2026-09-08T01:37:48Z",
-      "comment_body_sha256": "c3526a401d368e0d1e404fc3e80b31fdcc36abd6cf045cfb2856de666562b6c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141414,
-      "author": "pfrederiksen",
-      "author_id": 908172,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T01:38:55.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-duplicate-prompt-recovery",
-        "head_sha": "c23d14ccf50452a92458a02165ab95e235f998a7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:130647:5535698418:2026-09-04T04:34:11Z:re_review",
       "comment_id": "5535698418",
@@ -31852,6 +31805,39 @@
         "kind": "pull_request",
         "branch": "fix/heartbeat-no-reply-retry-140052",
         "head_sha": "8b0bf0a77d7e944d9c764f06fb537c77c206edb1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:13:5579073760:2026-09-08T05:47:38Z:clawsweeper_needs_human",
+      "comment_id": "5579073760",
+      "comment_version_key": "5579073760:2026-09-08T05:47:38Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/13#issuecomment-5579073760",
+      "comment_created_at": "2026-09-08T04:13:04Z",
+      "comment_updated_at": "2026-09-08T05:47:38Z",
+      "comment_body_sha256": "f1952bbe847a7d6f7abe076de28f580b92e9b8380dec428ec7587446af5d2028",
+      "repo": "openclaw/telemetry",
+      "issue_number": 13,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Live Analytics Engine compatibility remains unproven; rejection of any changed cohort statement would make uncached public statistics requests return 503. (sha=4c5687c1a8dec00093f6a4b5c32464bda1d2b54f)",
+      "expected_head_sha": "4c5687c1a8dec00093f6a4b5c32464bda1d2b54f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T05:48:33.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telemetry-cohort-coverage-20260908",
+        "head_sha": "4c5687c1a8dec00093f6a4b5c32464bda1d2b54f",
         "cluster_id": null,
         "job_path": null
       }
