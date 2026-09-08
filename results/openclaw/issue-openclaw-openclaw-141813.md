@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141813"
-mode: "autonomous"
-run_id: "34184049336"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34184049336"
-head_sha: "da1f56d61a5eeaf160b84fddd8edc5411ea6eeb1"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34187405996"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34187405996"
+head_sha: "175d75537c5fd3e68cde68e2098157957265fb51"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-08T04:14:38.718Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141813"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141813"
+published_at: "2026-09-08T04:40:49.350Z"
+canonical: "#141813"
+canonical_issue: "#141813"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34184049336](https://github.com/openclaw/clawsweeper/actions/runs/34184049336)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34187405996](https://github.com/openclaw/clawsweeper/actions/runs/34187405996)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141813
+Canonical: #141813
 
 ## Summary
 
-Verified the missing picker-open discovery wiring on preflight main 2da0ae724dae7b858de0bb7b5e9eb602be937a6b. Prepared a narrow fix artifact. Local implementation and regression proof are blocked by the read-only workspace and missing dependencies; no code or GitHub state changed.
+Plan one narrow Models picker repair. Source inspection at preflight main 74185a32498d7e8e752b120e9ac09559dda7582b confirms missing onOpen wiring. No files or GitHub state changed; runtime reproduction, implementation, tests, and screenshots remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Verified the missing picker-open discovery wiring on preflight main 2da0ae724dae
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141813 | fix_needed | blocked | canonical | Only local implementation is blocked. A writable executor must establish the failing regression before applying the source-supported repair. |
-| #104545 | keep_related | planned | related | Preserve the existing replace-mode work and filtering semantics; it is not a duplicate of #141813. |
-| #123150 | keep_closed | skipped | related | Historical context only; do not reopen, replace, merge, or close this PR. |
-| cluster:issue-openclaw-openclaw-141813 | build_fix_artifact | planned | canonical | The defect has a narrow source-supported repair path. Delegate implementation and required failing-then-passing proof to the writable executor. |
+| #141813 | fix_needed | planned | canonical | Repair the picker-open catalog lifecycle while preserving prepared choices, existing filtering, and saved selections. |
+| #104545 | keep_related | planned | related | Distinct filtering-explanation work with existing contributor ownership; preserve it outside this repair. |
+| #123150 | keep_closed | skipped | related | Historical related context, not an open implementation candidate or proof that #141813 is fixed. |
 
 ## Needs Human
 
