@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T14:14:12.385Z",
+  "updated_at": "2026-09-08T14:14:50.279Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141965:5581335368:2026-09-08T07:51:54Z:re_review",
-      "comment_id": "5581335368",
-      "comment_version_key": "5581335368:2026-09-08T07:51:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141965#issuecomment-5581335368",
-      "comment_created_at": "2026-09-08T07:51:54Z",
-      "comment_updated_at": "2026-09-08T07:51:54Z",
-      "comment_body_sha256": "9731281e33450c7071aef91ce63a4f230a4ffc8db4be913f74c8e90d50ebbbeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141965,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T07:52:49.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-sandbox-image",
-        "head_sha": "0066135b0f38de3b3bd221c0bf9e1fc0e56e4e17",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5581337274:2026-09-08T07:52:03Z:re_review",
       "comment_id": "5581337274",
@@ -32363,6 +32316,39 @@
         "kind": "pull_request",
         "branch": "steipete/wsl2-readiness-run",
         "head_sha": "5e478044f60670b387bc5a0d5b71bb8d0af7dce1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142218:5586531231:2026-09-08T14:13:49Z:clawsweeper_needs_human",
+      "comment_id": "5586531231",
+      "comment_version_key": "5586531231:2026-09-08T14:13:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142218#issuecomment-5586531231",
+      "comment_created_at": "2026-09-08T14:13:49Z",
+      "comment_updated_at": "2026-09-08T14:13:49Z",
+      "comment_body_sha256": "e5932493ff0ee4c064ee0ead64967bcf84416f3718a50428ddc1e5f071c2b8ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142218,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied tests exercise the follow-up owner and lease guard through a replaced command runner, with provider preparation and target discove... (sha=d502378aaf64e2657bda73452466428b76283b0b)",
+      "expected_head_sha": "d502378aaf64e2657bda73452466428b76283b0b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T14:14:50.279Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/detached-peer-runtime-scope",
+        "head_sha": "d502378aaf64e2657bda73452466428b76283b0b",
         "cluster_id": null,
         "job_path": null
       }
