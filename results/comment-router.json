@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T00:49:32.713Z",
+  "updated_at": "2026-09-08T00:49:43.884Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128454:5509160037:2026-09-02T11:58:35Z:re_review",
-      "comment_id": "5509160037",
-      "comment_version_key": "5509160037:2026-09-02T11:58:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128454#issuecomment-5509160037",
-      "comment_created_at": "2026-09-02T11:58:35Z",
-      "comment_updated_at": "2026-09-02T11:58:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128454,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T18:25:34.206Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128454:5509244719:2026-09-02T12:05:46Z:re_review",
       "comment_id": "5509244719",
@@ -33085,6 +33058,39 @@
       "status": "skipped",
       "processed_at": "2026-09-08T00:49:32.713Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawgrit-reports:2:5577375782:2026-09-08T00:48:54Z:clawsweeper_needs_human",
+      "comment_id": "5577375782",
+      "comment_version_key": "5577375782:2026-09-08T00:48:54Z",
+      "comment_url": "https://github.com/openclaw/clawgrit-reports/pull/2#issuecomment-5577375782",
+      "comment_created_at": "2026-09-08T00:48:54Z",
+      "comment_updated_at": "2026-09-08T00:48:54Z",
+      "comment_body_sha256": "2f5b9ff3656c97178f01124f4448c85198532d6aa5dc44820052355e11c21809",
+      "repo": "openclaw/clawgrit-reports",
+      "issue_number": 2,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The Windows-worktree terminal parse confirms the dispatch YAML declares ten minutes, but it does not exercise GitHub Actions cancellat... (sha=8b7f703e950c07cfe8134de8ee39dc618a812f54)",
+      "expected_head_sha": "8b7f703e950c07cfe8134de8ee39dc618a812f54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T00:49:43.884Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dispatch-timeout-minutes",
+        "head_sha": "8b7f703e950c07cfe8134de8ee39dc618a812f54",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
