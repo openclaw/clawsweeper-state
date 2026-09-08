@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T22:33:08.020Z",
+  "updated_at": "2026-09-08T22:34:04.847Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141860:5589548221:2026-09-08T17:58:09Z:re_review",
-      "comment_id": "5589548221",
-      "comment_version_key": "5589548221:2026-09-08T17:58:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141860#issuecomment-5589548221",
-      "comment_created_at": "2026-09-08T17:58:09Z",
-      "comment_updated_at": "2026-09-08T17:58:09Z",
-      "comment_body_sha256": "e1f80d7eddf2d11e9f4292008cf1c33c60cf4998026bc9536fb50b2cc86cc784",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141860,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T17:59:09.414Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-fold-effort-sheet-20260908",
-        "head_sha": "02b4a18b98f61266c817d54aa62d5e7bd9abc357",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-09-05T13:45:24Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -33026,6 +32979,39 @@
       "status": "skipped",
       "processed_at": "2026-09-08T22:33:08.020Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142620:5592534674:2026-09-08T22:33:05Z:clawsweeper_needs_human",
+      "comment_id": "5592534674",
+      "comment_version_key": "5592534674:2026-09-08T22:33:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142620#issuecomment-5592534674",
+      "comment_created_at": "2026-09-08T22:08:59Z",
+      "comment_updated_at": "2026-09-08T22:33:05Z",
+      "comment_body_sha256": "5083ff3784a95d4771e81ee6c253190baa3296d18ff242a98dd76ed161f612ff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Ordinary SDK calls can initiate provider requests again. This restores the stable default, but corrected compiled-package evidence has not yet demonstrated fresh and upgraded plugin b... (sha=6187f5177e17c051caf3d2907516fbdfa32b37cc)",
+      "expected_head_sha": "6187f5177e17c051caf3d2907516fbdfa32b37cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T22:34:04.847Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sdk-writable-catalog-compatibility",
+        "head_sha": "6187f5177e17c051caf3d2907516fbdfa32b37cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
