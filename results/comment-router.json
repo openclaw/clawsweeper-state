@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T23:57:47.961Z",
+  "updated_at": "2026-09-08T23:58:16.812Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142427:5590086743:2026-09-08T18:42:23Z:re_review",
-      "comment_id": "5590086743",
-      "comment_version_key": "5590086743:2026-09-08T18:42:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142427#issuecomment-5590086743",
-      "comment_created_at": "2026-09-08T18:42:23Z",
-      "comment_updated_at": "2026-09-08T18:42:23Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142427,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T18:43:39.879Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026-6-35-node24-installer",
-        "head_sha": "2298ef9501b15951e8c64d4f168f9b437e7fe2cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142428:5590086737:2026-09-08T18:42:23Z:re_review",
       "comment_id": "5590086737",
@@ -33663,6 +33616,39 @@
         "kind": "pull_request",
         "branch": "fix/googlechat-conversational-markdown",
         "head_sha": "432735ae2d1ccb81fe73a4ae9c1bb9a567b25369",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:176:5593599704:2026-09-08T23:57:25Z:clawsweeper_needs_human",
+      "comment_id": "5593599704",
+      "comment_version_key": "5593599704:2026-09-08T23:57:25Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/176#issuecomment-5593599704",
+      "comment_created_at": "2026-09-08T23:57:25Z",
+      "comment_updated_at": "2026-09-08T23:57:25Z",
+      "comment_body_sha256": "67b3861442de867ae75fd8ade0aafc31682bdff0af19e989899fdb50acff8c08",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 176,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing remote endpoints that redirect credential-bearing requests to another host, scheme, or port will stop working after this upgrade; operators must configure the final HTTPS end... (sha=e228627db10f0372c54049b472a323860aefba0d)",
+      "expected_head_sha": "e228627db10f0372c54049b472a323860aefba0d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T23:58:16.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/crawlkit-v0.15.0-20260908",
+        "head_sha": "e228627db10f0372c54049b472a323860aefba0d",
         "cluster_id": null,
         "job_path": null
       }
