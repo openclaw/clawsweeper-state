@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:17:00.734Z",
+  "updated_at": "2026-09-08T11:17:06.338Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141870:5579966556:2026-09-08T05:50:49Z:re_review",
-      "comment_id": "5579966556",
-      "comment_version_key": "5579966556:2026-09-08T05:50:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141870#issuecomment-5579966556",
-      "comment_created_at": "2026-09-08T05:50:49Z",
-      "comment_updated_at": "2026-09-08T05:50:49Z",
-      "comment_body_sha256": "a9223fc56656dcab65af3d190b717437c3a065c52e225a373ce70775935a2fb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141870,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T05:51:42.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/audit-server-sessions-and-improve-openclaw-harness",
-        "head_sha": "26563a02a7bc7eb42f42cbe228394f9b889be21b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141880:5579799390:2026-09-08T05:51:07Z:clawsweeper_auto_repair",
       "comment_id": "5579799390",
@@ -32804,6 +32757,39 @@
         "kind": "pull_request",
         "branch": "fix/android-fold-background-tasks-20260908",
         "head_sha": "00587a1e6b4d9b81a88f90633f5d7ee686ee8a81",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141875:5579735061:2026-09-08T10:53:05Z:clawsweeper_needs_human",
+      "comment_id": "5579735061",
+      "comment_version_key": "5579735061:2026-09-08T10:53:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141875#issuecomment-5579735061",
+      "comment_created_at": "2026-09-08T05:24:40Z",
+      "comment_updated_at": "2026-09-08T10:53:05Z",
+      "comment_body_sha256": "d794d4a43b8cf193282753c9bcaff3f2dfceaf258bd8769a7b8bfa00ed16d125",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141875,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: supplied Vitest output covers real filesystem cleanup and classifier behavior, but recreates the manage... (sha=043ad0072db8021a67e71e5b2b5cc283222e9b81)",
+      "expected_head_sha": "043ad0072db8021a67e71e5b2b5cc283222e9b81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T11:17:06.338Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preserve-plugin-on-staged-artifact-failure-141245",
+        "head_sha": "043ad0072db8021a67e71e5b2b5cc283222e9b81",
         "cluster_id": null,
         "job_path": null
       }
