@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:50:26.488Z",
+  "updated_at": "2026-09-08T11:50:52.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126288:5580190518:2026-09-08T06:14:04Z:re_review",
-      "comment_id": "5580190518",
-      "comment_version_key": "5580190518:2026-09-08T06:14:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126288#issuecomment-5580190518",
-      "comment_created_at": "2026-09-08T06:14:04Z",
-      "comment_updated_at": "2026-09-08T06:14:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126288,
-      "author": "xydigitLybnnnn",
-      "author_id": 280613588,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T06:14:50.932Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/125284-approval-prompt-not-blocking-exec-v2",
-        "head_sha": "4a45defc8c0ccdadc5bc479d77c8dd8a146f0111",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141913:5580190094:2026-09-08T06:14:01Z:clawsweeper_needs_human",
       "comment_id": "5580190094",
@@ -32740,6 +32693,39 @@
         "kind": "pull_request",
         "branch": "feat/pi-provider-tokscale",
         "head_sha": "9b1a4f9b98b13a050592f12cff760817f247f8a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133102:5466977092:2026-09-08T11:49:56Z:clawsweeper_needs_human",
+      "comment_id": "5466977092",
+      "comment_version_key": "5466977092:2026-09-08T11:49:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133102#issuecomment-5466977092",
+      "comment_created_at": "2026-08-30T05:43:16Z",
+      "comment_updated_at": "2026-09-08T11:49:56Z",
+      "comment_body_sha256": "35e8f4a0f5bd56263b781663d44ea5f762922c9e8f05134eb60535ad837042b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133102,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Official package ownership and publication have not been accepted; standalone distribution would require adapting imports that are reserved for official plugins. (sha=60e8f942cac184c7fd47f67ac281a3d11effeacc)",
+      "expected_head_sha": "60e8f942cac184c7fd47f67ac281a3d11effeacc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T11:50:52.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "add-gandr",
+        "head_sha": "60e8f942cac184c7fd47f67ac281a3d11effeacc",
         "cluster_id": null,
         "job_path": null
       }
