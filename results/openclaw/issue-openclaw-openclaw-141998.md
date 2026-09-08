@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141998"
-mode: "autonomous"
-run_id: "34201730489"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34201730489"
+mode: "plan"
+run_id: "34210563086"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34210563086"
 head_sha: "c6ead2181a5c958c37fb717c7186d48613caeeb0"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T09:10:51.269Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141998"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141998"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T09:37:47.132Z"
+canonical: "#141998"
+canonical_issue: "#141998"
 canonical_pr: null
-actions_total: 5
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34201730489](https://github.com/openclaw/clawsweeper/actions/runs/34201730489)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34210563086](https://github.com/openclaw/clawsweeper/actions/runs/34210563086)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141998
+Canonical: #141998
 
 ## Summary
 
-Verified the missing argument-preservation option on preflight main fdd6acecfe91af913e044736e54ddc4cf0dfc908. Narrow fix artifact prepared. Implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies; the additional PR recheck requires unavailable GitHub authentication. No files or GitHub items changed.
+Plan a narrow Telegram ingress repair for #141998. The checkout matches preflight main 3a43bab6bab95a79bd3ee926ea86efca578a24be and retains the reported normalization call. No files or GitHub state were changed; regression tests and runtime proof remain execution requirements.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,7 @@ Verified the missing argument-preservation option on preflight main fdd6acecfe91
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141998 | fix_needed | planned | canonical | The source supports a distinct Telegram producer defect. Keep the issue open and require a failing real-builder regression before implementing the planned repair. |
-| #117143 | keep_closed | skipped | related | Historical context only; no action on the closed PR. |
-| #138530 | keep_closed | skipped | related | The completed core repair is related historical work, not a duplicate closure path for the Telegram defect. |
-| #138545 | keep_closed | skipped | related | Retain as supporting context; this merged PR does not fix the remaining Telegram boundary. |
-| cluster:issue-openclaw-openclaw-141998 | build_fix_artifact | planned | canonical | Hand off the narrow executable plan to a writable executor. Recheck PR ownership and reproduce before production edits; publish only after validation and required runtime proof. |
+| #141998 | fix_needed | planned | canonical | This is an ordinary message-loss defect with a specific producer-level repair, separate from the completed core fix. Recheck contributor PRs and the designated branch before implementation; establish the required failing builder regression on refreshed main before editing production code. |
 
 ## Needs Human
 
