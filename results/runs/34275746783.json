@@ -1,0 +1,120 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142524",
+  "mode": "autonomous",
+  "run_id": "34275746783",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34275746783",
+  "head_sha": "e4c2d57ad229dc8cef15dd5ef3d613386ced664b",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142524.md",
+  "published_at": "2026-09-08T20:56:42.789Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142524",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142524",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix plan. Implementation and regression execution are blocked by the read-only workspace, missing dependencies, and truncated response fixture. Source inspection supports the reported misclassification; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#142524",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142524",
+      "candidate_fix": null,
+      "reason": "Use the existing Kimi provider hook after reproducing the exact response on refreshed main."
+    },
+    {
+      "target": "#113159",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Exact reset integration is outside this classification repair."
+    },
+    {
+      "target": "#115642",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Recovery-policy changes are separate from Kimi quota classification."
+    },
+    {
+      "target": "#117596",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Usage collection and display remain outside this bug-only job."
+    },
+    {
+      "target": "#129327",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Proactive quota alerts are not part of correcting failure classification."
+    },
+    {
+      "target": "#42499",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Negative regression context; error type alone must not imply quota exhaustion."
+    },
+    {
+      "target": "#47720",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve genuine authentication failures while adding the scoped quota exception."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142524",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142524",
+      "candidate_fix": null,
+      "reason": "A narrow repair remains plausible without changing configuration, persistent state, or plugin contracts."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142524",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#142524",
+      "candidate_fix": null,
+      "reason": "Executor must hydrate the response, refresh main, reproduce, implement, review, and validate in a writable checkout before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 4,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 6,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
