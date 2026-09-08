@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T18:50:27.969Z",
+  "updated_at": "2026-09-08T18:51:00.347Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123864:5320700167:2026-08-17T21:54:15Z:re_review",
-      "comment_id": "5320700167",
-      "comment_version_key": "5320700167:2026-08-17T21:54:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5320700167",
-      "comment_created_at": "2026-08-17T21:53:25Z",
-      "comment_updated_at": "2026-08-17T21:54:15Z",
-      "comment_body_sha256": "fba16d95d8bbb189c85c5339d4ab98b6697dad735625106663cdbe565f470469",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123864,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T13:54:06.179Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123864:5352205677:2026-08-20T06:22:43Z:re_review",
       "comment_id": "5352205677",
@@ -32744,6 +32717,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1370:5589407367:2026-09-08T18:49:58Z:clawsweeper_needs_human",
+      "comment_id": "5589407367",
+      "comment_version_key": "5589407367:2026-09-08T18:49:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1370#issuecomment-5589407367",
+      "comment_created_at": "2026-09-08T17:46:09Z",
+      "comment_updated_at": "2026-09-08T18:49:58Z",
+      "comment_body_sha256": "7ff1d7532f544f1052d62da104fcbd0e5da7f6da89ca2b7a21e4ca4d3a6596a9",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1370,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: inspected native screenshots and reported UI Automation support browsing and compatibility gating, and...; Review finding: [medium] Authorization rejection before plugin side effects remains unverified — src/OpenClaw.Tray.WinUI/Presentation/ExtensionsPageViewModel.Plugins.cs:806 (sha=94fdfc33613112845a7619f00f9b84f02909c74d)",
+      "expected_head_sha": "94fdfc33613112845a7619f00f9b84f02909c74d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T18:51:00.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/extensions-hub",
+        "head_sha": "94fdfc33613112845a7619f00f9b84f02909c74d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
