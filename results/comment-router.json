@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T20:39:13.956Z",
+  "updated_at": "2026-09-08T20:39:19.164Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142286:5588329966:2026-09-08T16:18:07Z:clawsweeper_needs_human",
-      "comment_id": "5588329966",
-      "comment_version_key": "5588329966:2026-09-08T16:18:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142286#issuecomment-5588329966",
-      "comment_created_at": "2026-09-08T16:18:07Z",
-      "comment_updated_at": "2026-09-08T16:18:07Z",
-      "comment_body_sha256": "66c932c87c78383ff6f10ff1968f71e12f8bdccb514f9c038dd3747477a28037",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142286,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A cleanup callback that never settles can now keep an embedded Gateway close pending indefinitely; process-owned shutdown retains its existing forced-exit safeguards. (sha=d8e8bca0ec5d2cd9b51cd79d298936599ee8d6ef)",
-      "expected_head_sha": "d8e8bca0ec5d2cd9b51cd79d298936599ee8d6ef",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T16:19:06.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/split-host-cleanup-drain",
-        "head_sha": "d8e8bca0ec5d2cd9b51cd79d298936599ee8d6ef",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141686:5577176196:2026-09-08T16:18:00Z:clawsweeper_needs_human",
       "comment_id": "5577176196",
@@ -32805,6 +32772,53 @@
         "kind": "pull_request",
         "branch": "fix/release-fresh-cpu-calibration",
         "head_sha": "9cd35ffb5f567d92f10341674fcd240c7805ed22",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119056:5591545605:2026-09-08T20:38:22Z:re_review",
+      "comment_id": "5591545605",
+      "comment_version_key": "5591545605:2026-09-08T20:38:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5591545605",
+      "comment_created_at": "2026-09-08T20:38:22Z",
+      "comment_updated_at": "2026-09-08T20:38:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119056,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T20:39:17.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-concurrency-stack-20260804",
+        "head_sha": "e248c5e824d7e2bce59bc9d544f64fc38eaa2e7a",
         "cluster_id": null,
         "job_path": null
       },
