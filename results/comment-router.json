@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T12:52:49.663Z",
+  "updated_at": "2026-09-08T12:55:51.141Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1489:5580757935:2026-09-08T07:04:19Z:re_review",
-      "comment_id": "5580757935",
-      "comment_version_key": "5580757935:2026-09-08T07:04:19Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1489#issuecomment-5580757935",
-      "comment_created_at": "2026-09-08T07:04:19Z",
-      "comment_updated_at": "2026-09-08T07:04:19Z",
-      "comment_body_sha256": "a89ac758280568c2f6394110666de0a151e383580325878c384d7b78255b0e9c",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1489,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T07:05:19.570Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "review/readonly-github-token",
-        "head_sha": "8ca545360b53ff6b16b94990de9276dd146e1932",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3495:5580487780:2026-09-08T06:52:43Z:clawsweeper_needs_human",
       "comment_id": "5580487780",
@@ -32413,6 +32366,39 @@
         "kind": "pull_request",
         "branch": "codex/test-poll-failure-diagnostics",
         "head_sha": "1ddaf1b34c4e1e561661e299c7a786de166875f5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3509:5583990875:2026-09-08T12:54:40Z:clawsweeper_needs_human",
+      "comment_id": "5583990875",
+      "comment_version_key": "5583990875:2026-09-08T12:54:40Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3509#issuecomment-5583990875",
+      "comment_created_at": "2026-09-08T10:51:02Z",
+      "comment_updated_at": "2026-09-08T12:54:40Z",
+      "comment_body_sha256": "9928467edad6d66a63d764b06828d6b6857ffe90171e3ad46d263a76e8fe9fa7",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge or an explicit exception: duration coverage intercepts the usage worker's fetch boundary, and scanner te... (sha=5185e5c912da9feda810a37e83dd25a08a6d3b0f)",
+      "expected_head_sha": "5185e5c912da9feda810a37e83dd25a08a6d3b0f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T12:55:51.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-pending-token-checkpoints",
+        "head_sha": "5185e5c912da9feda810a37e83dd25a08a6d3b0f",
         "cluster_id": null,
         "job_path": null
       }
