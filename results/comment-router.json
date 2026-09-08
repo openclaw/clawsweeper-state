@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T04:00:34.169Z",
+  "updated_at": "2026-09-08T04:02:44.411Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140339:5561134316:2026-09-07T22:18:15Z:clawsweeper_needs_human",
-      "comment_id": "5561134316",
-      "comment_version_key": "5561134316:2026-09-07T22:18:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140339#issuecomment-5561134316",
-      "comment_created_at": "2026-09-06T18:07:21Z",
-      "comment_updated_at": "2026-09-07T22:18:15Z",
-      "comment_body_sha256": "b4b852d18df84424442eac1f5530df139f82625a0dd580a4ceb34a41cad2ed2c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140339,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new persisted recovery, publication, retention, and shared-state locking contract lacks linked design acceptance in the inspected discussion. (sha=28511c07fd1bb06465b382add38d99399ad2366b)",
-      "expected_head_sha": "28511c07fd1bb06465b382add38d99399ad2366b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T22:19:36.703Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/update-recovery-checkpoint-integration-20260906",
-        "head_sha": "28511c07fd1bb06465b382add38d99399ad2366b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141610:5576160870:2026-09-07T22:19:37Z:clawsweeper_needs_human",
       "comment_id": "5576160870",
@@ -32710,6 +32677,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141477:5578973910:2026-09-08T04:01:32Z:re_review",
+      "comment_id": "5578973910",
+      "comment_version_key": "5578973910:2026-09-08T04:01:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141477#issuecomment-5578973910",
+      "comment_created_at": "2026-09-08T04:01:32Z",
+      "comment_updated_at": "2026-09-08T04:01:32Z",
+      "comment_body_sha256": "faa8d7489c6d1f1aa32f132768f15db9190cd37404bde443c5a9a16f612592b2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141477,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T04:02:41.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oauth-refresh-owner-fence",
+        "head_sha": "f9ff56618cefa1a454f1885321a6a646bf4a2fd8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
