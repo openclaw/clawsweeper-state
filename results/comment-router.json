@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T10:59:31.117Z",
+  "updated_at": "2026-09-08T11:02:17.239Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1975:5577870771:2026-09-08T05:38:39Z:clawsweeper_needs_human",
-      "comment_id": "5577870771",
-      "comment_version_key": "5577870771:2026-09-08T05:38:39Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1975#issuecomment-5577870771",
-      "comment_created_at": "2026-09-08T01:49:23Z",
-      "comment_updated_at": "2026-09-08T05:38:39Z",
-      "comment_body_sha256": "30868d8d32071faa69c3a8af07edda76b473f3e334f24abaaeffcdb5872bc23b",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1975,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the cleanup API, allocation parser, and ordinary release are covered with synthetic AWS transport and mocked ac...; Review finding: [medium] Persisted cleanup authority lacks final-effect proof — worker/src/fleet.ts:7437 (sha=977de132df7569373bc33018443e3553299f55a9)",
-      "expected_head_sha": "977de132df7569373bc33018443e3553299f55a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T05:39:29.141Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/aws-legacy-cleanup-proof",
-        "head_sha": "977de132df7569373bc33018443e3553299f55a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141895:5579874285:2026-09-08T05:40:24Z:clawsweeper_needs_human",
       "comment_id": "5579874285",
@@ -32853,6 +32820,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141851:5584111649:2026-09-08T11:01:19Z:re_review",
+      "comment_id": "5584111649",
+      "comment_version_key": "5584111649:2026-09-08T11:01:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141851#issuecomment-5584111649",
+      "comment_created_at": "2026-09-08T11:01:19Z",
+      "comment_updated_at": "2026-09-08T11:01:19Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141851,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T11:02:14.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codeql-intel-arm64",
+        "head_sha": "b619670196d9f940459ef3a5bc8c426003497ec9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
