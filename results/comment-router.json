@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:46:24.139Z",
+  "updated_at": "2026-09-08T02:46:49.651Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120550:5225566532:2026-09-02T21:04:26Z:clawsweeper_needs_human",
-      "comment_id": "5225566532",
-      "comment_version_key": "5225566532:2026-09-02T21:04:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120550#issuecomment-5225566532",
-      "comment_created_at": "2026-08-08T09:44:21Z",
-      "comment_updated_at": "2026-09-02T21:04:26Z",
-      "comment_body_sha256": "d04a07aa80a2bf5f16b10d1b120af6dc66ff833e93265144e75c2d287b053e86",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120550,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - This branch uses pre-refactor usage-helper arguments and cannot be merged unchanged against current main; a broad rebase could reintroduce already-shipped retry/status churn. (sha=39af8be7f13b8b034602d18d44ab895db926274d)",
-      "expected_head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T20:41:22.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120536",
-        "head_sha": "39af8be7f13b8b034602d18d44ab895db926274d",
-        "cluster_id": "automerge-openclaw-openclaw-120550",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120550.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120569:5226146956:2026-09-03T00:16:21Z:clawsweeper_auto_repair",
       "comment_id": "5226146956",
@@ -33001,6 +32968,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141774:5578328662:2026-09-08T02:45:56Z:freeform_assist",
+      "comment_id": "5578328662",
+      "comment_version_key": "5578328662:2026-09-08T02:45:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141774#issuecomment-5578328662",
+      "comment_created_at": "2026-09-08T02:45:56Z",
+      "comment_updated_at": "2026-09-08T02:45:56Z",
+      "comment_body_sha256": "9ae56f138f573566d2650e94933651cdbb07318d09af6aff559f35b645fd430d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141774,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review\\n\\nfinal head adds target-owned frozen kitchen sink assertions after the previously pushed corrupt-update scenario materialization. focused docker helper contract is green; please review exact head.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T02:46:47.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/full-validation-frozen-contracts",
+        "head_sha": "7e0eb578f37273d94ed7dd1624d863428456f40e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
