@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:05:40.717Z",
+  "updated_at": "2026-09-08T19:05:53.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141179:5578486497:2026-09-08T03:06:42Z:re_review",
-      "comment_id": "5578486497",
-      "comment_version_key": "5578486497:2026-09-08T03:06:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141179#issuecomment-5578486497",
-      "comment_created_at": "2026-09-08T03:06:42Z",
-      "comment_updated_at": "2026-09-08T03:06:42Z",
-      "comment_body_sha256": "c407174e01adeccc59821fbcd21940ed110e03a57757346e0e2838c08081f06f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141179,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T14:01:59.532Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141179:5578807071:2026-09-08T03:43:59Z:re_review",
       "comment_id": "5578807071",
@@ -32836,6 +32809,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:133:5589900369:2026-09-08T18:56:33Z:clawsweeper_needs_human",
+      "comment_id": "5589900369",
+      "comment_version_key": "5589900369:2026-09-08T18:56:33Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/133#issuecomment-5589900369",
+      "comment_created_at": "2026-09-08T18:27:02Z",
+      "comment_updated_at": "2026-09-08T18:56:33Z",
+      "comment_body_sha256": "2ef2437c102b148cc9c8902053f615ba4733453dbb447ed76294c083eaefe8cf",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 133,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing 2026.7.1-2 installations also switch interpreter and npm hooks; native dependency loading, fresh installation, and activation with existing configuration remain unproven on L... (sha=424e7818ec1b1b1153917635e55c1550884d847f)",
+      "expected_head_sha": "424e7818ec1b1b1153917635e55c1550884d847f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T19:05:53.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openclaw-node24-runtime-20260908",
+        "head_sha": "424e7818ec1b1b1153917635e55c1550884d847f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
