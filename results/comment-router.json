@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T08:19:06.431Z",
+  "updated_at": "2026-09-08T08:19:28.807Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337912536:2026-08-19T05:27:16Z:re_review",
-      "comment_id": "5337912536",
-      "comment_version_key": "5337912536:2026-08-19T05:27:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337912536",
-      "comment_created_at": "2026-08-19T05:27:16Z",
-      "comment_updated_at": "2026-08-19T05:27:16Z",
-      "comment_body_sha256": "9186f8f1d1b8bb01739985a322f34642dd03c96408797bcbfcd4e4f0ed2d24f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T04:11:04.686Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5076894734:2026-07-25T04:19:00Z:re_review",
       "comment_id": "5076894734",
@@ -32066,6 +32039,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142023:5581673375:2026-09-08T08:18:35Z:clawsweeper_needs_human",
+      "comment_id": "5581673375",
+      "comment_version_key": "5581673375:2026-09-08T08:18:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142023#issuecomment-5581673375",
+      "comment_created_at": "2026-09-08T08:18:35Z",
+      "comment_updated_at": "2026-09-08T08:18:35Z",
+      "comment_body_sha256": "409538e738712b0f3f9db0f671b0e49424c71d6e910ee1d01fd720b04afc15cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142023,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The submitted evidence does not yet establish the configured-model result through sticker reception, reply generation, and cache reuse. (sha=831a7f7a9dd071710ea5d4d31f1f1bf4a8126046)",
+      "expected_head_sha": "831a7f7a9dd071710ea5d4d31f1f1bf4a8126046",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T08:19:28.807Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sticker-image-selection",
+        "head_sha": "831a7f7a9dd071710ea5d4d31f1f1bf4a8126046",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
