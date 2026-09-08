@@ -1,72 +1,6 @@
 {
-  "updated_at": "2026-09-08T15:32:44.052Z",
+  "updated_at": "2026-09-08T15:32:47.430Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141848:5579412797:2026-09-08T08:26:19Z:clawsweeper_needs_human",
-      "comment_id": "5579412797",
-      "comment_version_key": "5579412797:2026-09-08T08:26:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141848#issuecomment-5579412797",
-      "comment_created_at": "2026-09-08T04:49:04Z",
-      "comment_updated_at": "2026-09-08T08:26:19Z",
-      "comment_body_sha256": "b327c8a78e1b0f3428cbcd273035f4b793f6b818d97041fcb46b22afacc859d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141848,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: createDraftState now enables quoted progress cards, but the supplied dispatch and transport evidence uses mocks; the body explicitly says live... (sha=6a0174670e844da95106b461c036d58b184e7266)",
-      "expected_head_sha": "6a0174670e844da95106b461c036d58b184e7266",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T08:42:09.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-topic-progress-quotes",
-        "head_sha": "78ca1c2b1be853031cf7fa80d92ab42a40ba40eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141875:5579735061:2026-09-08T08:38:07Z:clawsweeper_auto_repair",
-      "comment_id": "5579735061",
-      "comment_version_key": "5579735061:2026-09-08T08:38:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141875#issuecomment-5579735061",
-      "comment_created_at": "2026-09-08T05:24:40Z",
-      "comment_updated_at": "2026-09-08T08:38:07Z",
-      "comment_body_sha256": "191b319c6e9bc9eb38935ef225c7fae9e4485676b3c87347c8c4ad0368310fac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141875,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=240a734cf054ed343ab88f1aec4a9f6bddfa5c85)",
-      "expected_head_sha": "240a734cf054ed343ab88f1aec4a9f6bddfa5c85",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T08:42:09.677Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-plugin-on-staged-artifact-failure-141245",
-        "head_sha": "240a734cf054ed343ab88f1aec4a9f6bddfa5c85",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141979:5581112282:2026-09-08T08:34:41Z:clawsweeper_needs_human",
       "comment_id": "5581112282",
@@ -32452,6 +32386,86 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1446:5587631588:2026-09-08T15:27:39Z:re_review",
+      "comment_id": "5587631588",
+      "comment_version_key": "5587631588:2026-09-08T15:27:39Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1446#issuecomment-5587631588",
+      "comment_created_at": "2026-09-08T15:27:39Z",
+      "comment_updated_at": "2026-09-08T15:27:39Z",
+      "comment_body_sha256": "959886c507ac84311355672888c9d37f13c2e98b7df95a3bdc0fa3a599745566",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1446,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T15:32:45.323Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cluster-selector-timeout",
+        "head_sha": "3d95f2f230298a6499202ea5a6ba913209474366",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1446:5551701259:2026-09-08T15:31:08Z:clawsweeper_needs_human",
+      "comment_id": "5551701259",
+      "comment_version_key": "5551701259:2026-09-08T15:31:08Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1446#issuecomment-5551701259",
+      "comment_created_at": "2026-09-05T12:09:32Z",
+      "comment_updated_at": "2026-09-08T15:31:08Z",
+      "comment_body_sha256": "75b6dfe24e440f49f5652d335e67b93bd53d666b5d0d7fc5deb9443706280bcc",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3d95f2f230298a6499202ea5a6ba913209474366)",
+      "expected_head_sha": "3d95f2f230298a6499202ea5a6ba913209474366",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T15:32:47.430Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cluster-selector-timeout",
+        "head_sha": "3d95f2f230298a6499202ea5a6ba913209474366",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
