@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T20:39:19.164Z",
+  "updated_at": "2026-09-08T20:39:21.652Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141686:5577176196:2026-09-08T16:18:00Z:clawsweeper_needs_human",
-      "comment_id": "5577176196",
-      "comment_version_key": "5577176196:2026-09-08T16:18:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141686#issuecomment-5577176196",
-      "comment_created_at": "2026-09-08T00:24:36Z",
-      "comment_updated_at": "2026-09-08T16:18:00Z",
-      "comment_body_sha256": "41384cd9492586beec335785f6e53e6de107704a61f7badf2b8be2dcb249af05",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141686,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional plugin API field imposes a 64-item default on undeclared providers. Existing short-chunk workloads can require more requests and experience greater latency or rate pressu... (sha=7ada10077d96a21a98a5986861f60d9dbef2a87c)",
-      "expected_head_sha": "7ada10077d96a21a98a5986861f60d9dbef2a87c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T16:19:11.359Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-embedding-input-cap",
-        "head_sha": "7ada10077d96a21a98a5986861f60d9dbef2a87c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141875:5579735061:2026-09-08T16:19:12Z:clawsweeper_needs_human",
       "comment_id": "5579735061",
@@ -32836,6 +32803,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142532:5591543586:2026-09-08T20:38:12Z:clawsweeper_auto_repair",
+      "comment_id": "5591543586",
+      "comment_version_key": "5591543586:2026-09-08T20:38:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142532#issuecomment-5591543586",
+      "comment_created_at": "2026-09-08T20:38:12Z",
+      "comment_updated_at": "2026-09-08T20:38:12Z",
+      "comment_body_sha256": "5d9afec3b2916102c7b3f4874e387303cfe1eda67d7e3b6defcbc2c84b296888",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142532,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=34c111ca9aaf0d517a5b8e6ed25b10d059952d9c)",
+      "expected_head_sha": "34c111ca9aaf0d517a5b8e6ed25b10d059952d9c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T20:39:21.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/142336-telegram-dashboard-collision",
+        "head_sha": "34c111ca9aaf0d517a5b8e6ed25b10d059952d9c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
