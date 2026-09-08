@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:10:02.400Z",
+  "updated_at": "2026-09-08T02:10:34.387Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136903:5519605263:2026-09-03T02:52:19Z:re_review",
-      "comment_id": "5519605263",
-      "comment_version_key": "5519605263:2026-09-03T02:52:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136903#issuecomment-5519605263",
-      "comment_created_at": "2026-09-03T02:52:19Z",
-      "comment_updated_at": "2026-09-03T02:52:19Z",
-      "comment_body_sha256": "f1b35e845a92bdb4961a69ea6abcd1c59a024055770e745261831faa852072be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136903,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T19:55:47.061Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141434:5574358027:2026-09-07T19:56:33Z:clawsweeper_needs_human",
       "comment_id": "5574358027",
@@ -33021,6 +32994,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141766:5578033299:2026-09-08T02:09:32Z:re_review",
+      "comment_id": "5578033299",
+      "comment_version_key": "5578033299:2026-09-08T02:09:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141766#issuecomment-5578033299",
+      "comment_created_at": "2026-09-08T02:09:32Z",
+      "comment_updated_at": "2026-09-08T02:09:32Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141766,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T02:10:27.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/extended-stable-opencode-session",
+        "head_sha": "da81895b9de6b96664beaa7fa9698d4abe53cb92",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
