@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142336"
-mode: "autonomous"
-run_id: "34252430271"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34252430271"
-head_sha: "2690dafa8c3382d05e733af9dfdc31c804b7305d"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T17:26:20.594Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142336"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/142336"
+mode: "plan"
+run_id: "34260042767"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34260042767"
+head_sha: "e4c2d57ad229dc8cef15dd5ef3d613386ced664b"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T18:08:39.338Z"
+canonical: "#142336"
+canonical_issue: "#142336"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34252430271](https://github.com/openclaw/clawsweeper/actions/runs/34252430271)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34260042767](https://github.com/openclaw/clawsweeper/actions/runs/34260042767)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142336
+Canonical: #142336
 
 ## Summary
 
-Confirmed the collision in source at preflight main 8d79c6ab2c3dd3db8716bec325a4d846d3ce34c5. Prepared a narrow repair plan. Implementation, failing regression, validation, and real Telegram proof are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed.
+Plan one narrow Telegram command-routing fix. No files or GitHub state changed; tests and live proof remain pending. Checkout HEAD 5aaf44006b306d33450ab92bc43520eb3242a93d differs from preflight main ac843360bb49423effaa7ee94ac0a306bc84f577, so refresh main and reproduce before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,10 @@ Confirmed the collision in source at preflight main 8d79c6ab2c3dd3db8716bec325a4
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142336 | fix_needed | planned | canonical | Restore existing Telegram command ownership through the existing channel name mapper without changing authorization or global command semantics. |
-| #102805 | route_security | planned | security_sensitive | Quarantine this exact historical ref for central OpenClaw security handling without mutation. Its security review is outside this command-routing repair. |
-| #137685 | keep_closed | skipped | related | Historical context, not an open repair or closure target. |
-| #140821 | keep_independent | planned | independent | Distinct process-lifecycle defect with separate implementation tracking; leave open outside this cluster. |
-| cluster:issue-openclaw-openclaw-142336 | build_fix_artifact | planned |  | One narrow new-fix path is supported by source evidence; the executor must first establish the failing regression on refreshed main. |
-| cluster:issue-openclaw-openclaw-142336 | open_fix_pr | blocked |  | Implementation and PR readiness are blocked until an executor with a writable, dependency-ready checkout completes reproduction, repair, review, required checks, and redacted Telegram proof. |
+| #142336 | fix_needed | planned | canonical | A focused compatibility repair is supported. Keep this issue open and prepare one implementation PR after current-main reproduction and required validation. |
+| #140821 | keep_independent | planned | independent | Gateway process lifecycle is independent of Telegram command-name ownership; leave it outside this repair. |
+| #137685 | keep_closed | skipped | related | Historical context only. Preserve core authoring while repairing Telegram's native-name collision. |
+| #102805 | route_security | planned | security_sensitive | Quarantine this exact historical item for central OpenClaw security handling without public mutation. It does not block the independent command-routing repair. |
 
 ## Needs Human
 

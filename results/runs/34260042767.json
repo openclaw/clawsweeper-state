@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142336",
+  "mode": "plan",
+  "run_id": "34260042767",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34260042767",
+  "head_sha": "e4c2d57ad229dc8cef15dd5ef3d613386ced664b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142336.md",
+  "published_at": "2026-09-08T18:08:39.338Z",
+  "canonical": "#142336",
+  "canonical_issue": "#142336",
+  "canonical_pr": null,
+  "summary": "Plan one narrow Telegram command-routing fix. No files or GitHub state changed; tests and live proof remain pending. Checkout HEAD 5aaf44006b306d33450ab92bc43520eb3242a93d differs from preflight main ac843360bb49423effaa7ee94ac0a306bc84f577, so refresh main and reproduce before implementation.",
+  "actions": [
+    {
+      "target": "#142336",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142336",
+      "candidate_fix": null,
+      "reason": "A focused compatibility repair is supported. Keep this issue open and prepare one implementation PR after current-main reproduction and required validation."
+    },
+    {
+      "target": "#140821",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Gateway process lifecycle is independent of Telegram command-name ownership; leave it outside this repair."
+    },
+    {
+      "target": "#137685",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142336",
+      "candidate_fix": null,
+      "reason": "Historical context only. Preserve core authoring while repairing Telegram's native-name collision."
+    },
+    {
+      "target": "#102805",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical item for central OpenClaw security handling without public mutation. It does not block the independent command-routing repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
