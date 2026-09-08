@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142013",
+  "mode": "autonomous",
+  "run_id": "34202835769",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34202835769",
+  "head_sha": "c6ead2181a5c958c37fb717c7186d48613caeeb0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142013.md",
+  "published_at": "2026-09-08T08:17:23.838Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142013",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142013",
+  "canonical_pr": null,
+  "summary": "The suspension retry gap remains in source at preflight main 76b618156232210f30cddc570c5593bd9d02d8c9. A narrow fix artifact is prepared, but implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#142013",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Local implementation is blocked by the read-only execution environment. The executor must establish the failing real-monitor regression before production edits; source inspection alone does not satisfy the reproduction gate."
+    },
+    {
+      "target": "#127256",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave open for its existing follow-up; exclude transport-admission policy changes from this fix."
+    },
+    {
+      "target": "#133871",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical ingress lifecycle work whose behavior must remain intact."
+    },
+    {
+      "target": "#136684",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#136713",
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#136713",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context, not a candidate fix for this issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142013",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Prepare the narrow executor handoff while keeping implementation blocked in this read-only worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
