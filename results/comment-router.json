@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T10:31:55.824Z",
+  "updated_at": "2026-09-08T10:32:21.659Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5559675287:2026-09-06T13:53:00Z:re_review",
-      "comment_id": "5559675287",
-      "comment_version_key": "5559675287:2026-09-06T13:53:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5559675287",
-      "comment_created_at": "2026-09-06T13:53:00Z",
-      "comment_updated_at": "2026-09-06T13:53:00Z",
-      "comment_body_sha256": "4ef969f116c44217e745f42b913d27fce85e2123a5fc43ef895f68a3e221cb5b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `daa73e5454fe5d1d1c3eed08879cf14d6195749e`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T05:14:22.483Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5559744317:2026-09-06T14:04:59Z:re_review",
       "comment_id": "5559744317",
@@ -33310,6 +33283,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141949:5580903249:2026-09-08T10:31:29Z:clawsweeper_needs_human",
+      "comment_id": "5580903249",
+      "comment_version_key": "5580903249:2026-09-08T10:31:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141949#issuecomment-5580903249",
+      "comment_created_at": "2026-09-08T07:15:43Z",
+      "comment_updated_at": "2026-09-08T10:31:29Z",
+      "comment_body_sha256": "031757e93120d7dd45dda6de680880556cdffb0f046dc1a691c1ef56dd45a773",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports real Gateway/Control UI and Telegram recovery through the changed partitioner, including updates before completion an... (sha=e95f778916edfa04515462d07d48f02852f965fa)",
+      "expected_head_sha": "e95f778916edfa04515462d07d48f02852f965fa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T10:32:21.659Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/reasoning-tag-partitioner-hold",
+        "head_sha": "e95f778916edfa04515462d07d48f02852f965fa",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
