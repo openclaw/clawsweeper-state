@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:32:51.379Z",
+  "updated_at": "2026-09-08T19:32:58.541Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141875:5587319609:2026-09-08T15:07:36Z:re_review",
-      "comment_id": "5587319609",
-      "comment_version_key": "5587319609:2026-09-08T15:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141875#issuecomment-5587319609",
-      "comment_created_at": "2026-09-08T15:07:36Z",
-      "comment_updated_at": "2026-09-08T15:07:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141875,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T15:08:57.383Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-plugin-on-staged-artifact-failure-141245",
-        "head_sha": "2d6bc74048ca41979ca8257260795e9a2ccf0b28",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141987:5581215192:2026-09-08T15:09:51Z:clawsweeper_needs_human",
       "comment_id": "5581215192",
@@ -32731,6 +32684,39 @@
         "kind": "pull_request",
         "branch": "fix/2026-7-33-hermetic-clawhub",
         "head_sha": "72c1026fcfd62da5fd930557458b4c9f0af8d4cc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141162:5569656278:2026-09-08T19:31:49Z:clawsweeper_auto_repair",
+      "comment_id": "5569656278",
+      "comment_version_key": "5569656278:2026-09-08T19:31:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141162#issuecomment-5569656278",
+      "comment_created_at": "2026-09-07T11:03:59Z",
+      "comment_updated_at": "2026-09-08T19:31:49Z",
+      "comment_body_sha256": "e2b8dccb84550b650a39029a5a0b6b6bcda11f7ac4830e201a6de4bf93a7ed1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141162,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3091cfc269d0866c50d997089e5d842511249312)",
+      "expected_head_sha": "3091cfc269d0866c50d997089e5d842511249312",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T19:32:58.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-security",
+        "head_sha": "3091cfc269d0866c50d997089e5d842511249312",
         "cluster_id": null,
         "job_path": null
       }
