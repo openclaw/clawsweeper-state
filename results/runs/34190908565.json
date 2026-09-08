@@ -1,0 +1,61 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141839",
+  "mode": "plan",
+  "run_id": "34190908565",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34190908565",
+  "head_sha": "175d75537c5fd3e68cde68e2098157957265fb51",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141839.md",
+  "published_at": "2026-09-08T05:37:55.787Z",
+  "canonical": "#141839",
+  "canonical_issue": "#141839",
+  "canonical_pr": null,
+  "summary": "Plan a narrow deadline-outcome repair for #141839; retain both linked diagnostics issues separately. Source inspection corroborates the reported exclusion, but runtime reproduction, current-main verification, and existing PR ownership checks remain pending. No files or GitHub state changed; tests were not run.",
+  "actions": [
+    {
+      "target": "#141839",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "The transcript persistence defect has a bounded repair path. Establish a failing regression and verify existing fix ownership before implementation or PR publication."
+    },
+    {
+      "target": "#141604",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "Fallback-stop diagnostics concern a different boundary from durable transcript outcomes and retain unique work."
+    },
+    {
+      "target": "#141838",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "Returned-result fallback diagnostics are related but do not resolve the missing transcript outcome."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
