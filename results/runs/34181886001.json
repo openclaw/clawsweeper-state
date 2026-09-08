@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141787",
+  "mode": "autonomous",
+  "run_id": "34181886001",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34181886001",
+  "head_sha": "da1f56d61a5eeaf160b84fddd8edc5411ea6eeb1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141787.md",
+  "published_at": "2026-09-08T03:05:21.211Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141787",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141787",
+  "canonical_pr": null,
+  "summary": "Source confirms the reported lifecycle defect on preflight main. Prepared a narrow fix plan; implementation and runtime reproduction are blocked by the read-only filesystem and missing dependencies. No GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#141787",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#141787",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked in this read-only worker. The executor must first reproduce the original sequence on refreshed main and recheck existing PR ownership before making changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141787",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#141787",
+      "candidate_fix": null,
+      "reason": "A bounded ordinary bug repair remains justified by current source. Runtime reproduction and successful validation remain prerequisites to publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
