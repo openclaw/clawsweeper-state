@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:19:11.359Z",
+  "updated_at": "2026-09-08T16:21:13.446Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142084:5582887469:2026-09-08T09:40:37Z:re_review",
-      "comment_id": "5582887469",
-      "comment_version_key": "5582887469:2026-09-08T09:40:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142084#issuecomment-5582887469",
-      "comment_created_at": "2026-09-08T09:40:37Z",
-      "comment_updated_at": "2026-09-08T09:40:37Z",
-      "comment_body_sha256": "ab397ebbcac98aa87fffca5ddedfe504a2a068b1705ef684376b6492503c041e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142084,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T09:41:45.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/wave12-whatsapp-text-tuples",
-        "head_sha": "65b1b51a4ce6428c3427f036f08b87cb2b27b7ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142066:5582759242:2026-09-08T09:42:21Z:clawsweeper_needs_human",
       "comment_id": "5582759242",
@@ -32323,6 +32276,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-embedding-input-cap",
         "head_sha": "7ada10077d96a21a98a5986861f60d9dbef2a87c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141875:5579735061:2026-09-08T16:19:12Z:clawsweeper_needs_human",
+      "comment_id": "5579735061",
+      "comment_version_key": "5579735061:2026-09-08T16:19:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141875#issuecomment-5579735061",
+      "comment_created_at": "2026-09-08T05:24:40Z",
+      "comment_updated_at": "2026-09-08T16:19:12Z",
+      "comment_body_sha256": "5fa11558c5aab3626fafde8e211452634de8081453f154539f6f25755fb23873",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141875,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=116b7be71a6bbaf328effaa48225f3881a4738ff)",
+      "expected_head_sha": "116b7be71a6bbaf328effaa48225f3881a4738ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T16:21:13.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preserve-plugin-on-staged-artifact-failure-141245",
+        "head_sha": "116b7be71a6bbaf328effaa48225f3881a4738ff",
         "cluster_id": null,
         "job_path": null
       }
