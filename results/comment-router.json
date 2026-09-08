@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:56:30.297Z",
+  "updated_at": "2026-09-08T02:56:55.567Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/rfcs:66:5562351113:2026-09-07T21:02:37Z:clawsweeper_needs_human",
-      "comment_id": "5562351113",
-      "comment_version_key": "5562351113:2026-09-07T21:02:37Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/66#issuecomment-5562351113",
-      "comment_created_at": "2026-09-06T21:38:15Z",
-      "comment_updated_at": "2026-09-07T21:02:37Z",
-      "comment_body_sha256": "0a939251844244c2a441aaaf42b6bd8676e7acfe0862d3677ce102dda56c2190",
-      "repo": "openclaw/rfcs",
-      "issue_number": 66,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed surface is the RFC document, not plugin runtime. The captured evidence contains no after-change rendering or link-verification proo... (sha=8835147c08cec582647dddb7e7433dade3ffe23c)",
-      "expected_head_sha": "8835147c08cec582647dddb7e7433dade3ffe23c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T21:03:25.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/plugin-update-availability",
-        "head_sha": "8835147c08cec582647dddb7e7433dade3ffe23c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141544:5575608873:2026-09-07T21:02:58Z:clawsweeper_needs_human",
       "comment_id": "5575608873",
@@ -32929,6 +32896,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141774:5578408104:2026-09-08T02:55:59Z:freeform_assist",
+      "comment_id": "5578408104",
+      "comment_version_key": "5578408104:2026-09-08T02:55:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141774#issuecomment-5578408104",
+      "comment_created_at": "2026-09-08T02:55:59Z",
+      "comment_updated_at": "2026-09-08T02:55:59Z",
+      "comment_body_sha256": "22265a36bec08274cf3a72a1c0d7fc65d11f66a284e7a43d9dd5b2831dead9c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141774,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\naccepted autoreview p1 fixed at edfbf5e6a6c. optional frozen-context selection now distinguishes absence from malformed authorization; invalid identity/context errors propagate instead of silently falling back to current assertions. focused executable regression and shell syntax pass.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T02:56:53.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/full-validation-frozen-contracts",
+        "head_sha": "edfbf5e6a6c59650a65c04f164cb83cd4ff2b1fc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
