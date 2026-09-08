@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T07:15:30.968Z",
+  "updated_at": "2026-09-08T07:15:51.408Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121309:5578297529:2026-09-08T02:41:57Z:re_review",
-      "comment_id": "5578297529",
-      "comment_version_key": "5578297529:2026-09-08T02:41:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5578297529",
-      "comment_created_at": "2026-09-08T02:41:57Z",
-      "comment_updated_at": "2026-09-08T02:41:57Z",
-      "comment_body_sha256": "085250c616e10df0646090817f6e7c1b4ec33c37901873326a93d560339c61bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121309,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T02:47:00.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prep/delete-cleanup-completion-receipts",
-        "head_sha": "92815daa13ce5f3b95568998e9a40f692ae08c8c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1361:5576221972:2026-09-08T02:41:33Z:clawsweeper_needs_human",
       "comment_id": "5576221972",
@@ -32053,6 +32006,39 @@
         "kind": "pull_request",
         "branch": "fix/bounded-failure-artifacts-20260908",
         "head_sha": "2a5602ef76514c151277e53d6265acbbfdfee477",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141935:5580613675:2026-09-08T07:14:31Z:clawsweeper_needs_human",
+      "comment_id": "5580613675",
+      "comment_version_key": "5580613675:2026-09-08T07:14:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141935#issuecomment-5580613675",
+      "comment_created_at": "2026-09-08T06:52:21Z",
+      "comment_updated_at": "2026-09-08T07:14:31Z",
+      "comment_body_sha256": "640cd0f5746b26bdabfaee2ad38621de52a95c7b513a9d8e97898308cc3fb857",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141935,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Parse candidate package metadata without executing a module (P1)** - The target checkout is not trusted when this line runs. Node resolves symlinks before choosing a module loader, so a candidate can make packag...; Review finding: [P1] Parse candidate package metadata without executing a module — .github/workflows/openclaw-performance.yml:154 - [high] Candidate metadata can execute before tr... (sha=99bbdfcc645d57ecff20c2ad05fb84a2d3d9d104)",
+      "expected_head_sha": "99bbdfcc645d57ecff20c2ad05fb84a2d3d9d104",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T07:15:51.408Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/733-status-cli-cpu-override",
+        "head_sha": "99bbdfcc645d57ecff20c2ad05fb84a2d3d9d104",
         "cluster_id": null,
         "job_path": null
       }
