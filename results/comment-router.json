@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:07:17.493Z",
+  "updated_at": "2026-09-08T11:07:38.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141893:5579918829:2026-09-08T05:45:23Z:freeform_assist",
-      "comment_id": "5579918829",
-      "comment_version_key": "5579918829:2026-09-08T05:45:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141893#issuecomment-5579918829",
-      "comment_created_at": "2026-09-08T05:45:23Z",
-      "comment_updated_at": "2026-09-08T05:45:23Z",
-      "comment_body_sha256": "7ac4bd0012112b5d67d9710f50c84d81e8cfd64c33eb182f5063d7714227b40e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141893,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nfinal exact head also fixes the update-channel failure from the same validation: historical clis may return zero with a structured dirty rejection. the existing assertion remains authoritative and proves reason=dirty, unchanged head, preserved user input, and no staging residue. final p1 autoreview is scoped-clean.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T05:46:06.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-onboard-fixture-contract",
-        "head_sha": "867a53139e60d572642af363861fd93c5a50ceda",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141880:5579924938:2026-09-08T05:46:05Z:re_review",
       "comment_id": "5579924938",
@@ -32825,6 +32778,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140847:5584176615:2026-09-08T11:06:50Z:re_review",
+      "comment_id": "5584176615",
+      "comment_version_key": "5584176615:2026-09-08T11:06:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140847#issuecomment-5584176615",
+      "comment_created_at": "2026-09-08T11:06:50Z",
+      "comment_updated_at": "2026-09-08T11:06:50Z",
+      "comment_body_sha256": "28a7e8707886bb99f9b63b16a2cd225f1facce12abad909a6d4f85267036b54b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140847,
+      "author": "waterundman",
+      "author_id": 120729380,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T11:07:35.864Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-talk-agent-persistence",
+        "head_sha": "3e5003d1176aa05c92c39f1daa2ceb4c9fa3b754",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
