@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T01:14:05.604Z",
+  "updated_at": "2026-09-08T01:15:21.115Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141434:5574358027:2026-09-07T19:03:08Z:clawsweeper_needs_human",
-      "comment_id": "5574358027",
-      "comment_version_key": "5574358027:2026-09-07T19:03:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141434#issuecomment-5574358027",
-      "comment_created_at": "2026-09-07T18:19:27Z",
-      "comment_updated_at": "2026-09-07T19:03:08Z",
-      "comment_body_sha256": "45f9cb4dbb165c33a72b1de16fa83ccf867482d7a9750ebb8d275e7318245657",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141434,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured integrated Linux RPC results and inspected real Worker/Gateway regressions support concur...; Review finding: [P2] Revalidate in-process authority before opening the database — src/config/sessions/session-accessor.sqlite-reclamation.ts:429-431 - [medium] Revoked native cle... (sha=a91576bde6d1a2f98b5a69c273c296043a0b5e7f)",
-      "expected_head_sha": "a91576bde6d1a2f98b5a69c273c296043a0b5e7f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T19:04:14.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/team-reclamation-admission-20260907",
-        "head_sha": "a91576bde6d1a2f98b5a69c273c296043a0b5e7f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140977:5567171269:2026-09-07T19:03:48Z:clawsweeper_needs_human",
       "comment_id": "5567171269",
@@ -33051,6 +33018,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/nix-openclaw:131:5577581957:2026-09-08T01:14:28Z:re_review",
+      "comment_id": "5577581957",
+      "comment_version_key": "5577581957:2026-09-08T01:14:28Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/131#issuecomment-5577581957",
+      "comment_created_at": "2026-09-08T01:14:28Z",
+      "comment_updated_at": "2026-09-08T01:14:28Z",
+      "comment_body_sha256": "e4fb66da11921abb15a509b350455a5b2c2f455cac226f1cd28fd725f6e430f8",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 131,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T01:15:19.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/resolve-home-state-paths-20260908",
+        "head_sha": "6cec9ba92a8f0e69c39612bdf794fdf052f8ff39",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
