@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141839",
+  "mode": "autonomous",
+  "run_id": "34187527730",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34187527730",
+  "head_sha": "175d75537c5fd3e68cde68e2098157957265fb51",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141839.md",
+  "published_at": "2026-09-08T05:07:39.474Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141839",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141839",
+  "canonical_pr": null,
+  "summary": "Verified the deadline transcript gap against preflight main 74185a32498d7e8e752b120e9ac09559dda7582b. Prepared a narrow fix artifact. Implementation and regression execution are blocked by the read-only filesystem; no code changed, tests ran, or GitHub mutations occurred.",
+  "actions": [
+    {
+      "target": "#141839",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "The source supports a bounded repair, but this worker cannot write the required failing regression or implementation. Execute the attached plan in a writable checkout, reproducing against refreshed main before production edits."
+    },
+    {
+      "target": "#141604",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "Keep open as separate fallback diagnostics work; this transcript repair does not establish coverage."
+    },
+    {
+      "target": "#141838",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "Keep open as related but distinct work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141839",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141839",
+      "candidate_fix": null,
+      "reason": "A non-mutating artifact remains actionable despite this worker's filesystem restriction. No merge or closure is authorized."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
