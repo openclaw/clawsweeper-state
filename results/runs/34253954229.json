@@ -1,0 +1,99 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142268",
+  "mode": "plan",
+  "run_id": "34253954229",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34253954229",
+  "head_sha": "2690dafa8c3382d05e733af9dfdc31c804b7305d",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142268.md",
+  "published_at": "2026-09-08T17:36:22.728Z",
+  "canonical": "#142268",
+  "canonical_issue": "#142268",
+  "canonical_pr": null,
+  "summary": "Plan one narrow repair for #142268. The clean checkout matches preflight main f7d2fa7402bbb8f955665151f5bdad259c87abe2, and source inspection supports the missing implicit-target handoff. #130722 addresses a distinct problem. No files or GitHub state changed; regression execution, fresh PR discovery, review, and Telegram proof remain pending.",
+  "actions": [
+    {
+      "target": "#142268",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142268",
+      "candidate_fix": null,
+      "reason": "Keep this issue as the canonical repair request. Establish a failing regression before implementation, then prepare the single authorized branch."
+    },
+    {
+      "target": "#130722",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#142268",
+      "candidate_fix": null,
+      "reason": "Distinct root cause and useful ongoing work; do not replace, close, or adopt this branch for #142268."
+    },
+    {
+      "target": "#54456",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142268",
+      "candidate_fix": null,
+      "reason": "Historical evidence for the same handoff family; preserve its platform-specific context."
+    },
+    {
+      "target": "#63637",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142268",
+      "candidate_fix": null,
+      "reason": "Retain attribution to the earlier proposal without treating its closed branch as a viable candidate."
+    },
+    {
+      "target": "#112018",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different delivery failure; historical context only."
+    },
+    {
+      "target": "#141905",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142268",
+      "candidate_fix": null,
+      "reason": "Preserve the landed guard and existing transport contract; this QA-specific change does not establish Telegram parity."
+    },
+    {
+      "target": "#142008",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142268",
+      "candidate_fix": null,
+      "reason": "The ingress repair is complete; its reported exploratory proof motivates this separate issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 5
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
