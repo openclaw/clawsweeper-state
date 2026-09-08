@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T09:03:56.730Z",
+  "updated_at": "2026-09-08T09:05:44.465Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138405:5543714048:2026-09-08T04:19:29Z:clawsweeper_needs_human",
-      "comment_id": "5543714048",
-      "comment_version_key": "5543714048:2026-09-08T04:19:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138405#issuecomment-5543714048",
-      "comment_created_at": "2026-09-04T16:47:21Z",
-      "comment_updated_at": "2026-09-08T04:19:29Z",
-      "comment_body_sha256": "834971ae59bf91c0bce4162bc101f9f3173b27cb0fb862a2647e7ae0c3949238",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138405,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Configurations opting into the new keys will be rejected by older strict schemas on rollback unless those keys are removed; existing configurations retain their current behavior. (sha=416210f51c73ca973ae552b0b31f1ed67d7d006b)",
-      "expected_head_sha": "416210f51c73ca973ae552b0b31f1ed67d7d006b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T04:24:27.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-narrative-timeout-configurable",
-        "head_sha": "416210f51c73ca973ae552b0b31f1ed67d7d006b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141113:5569018420:2026-09-08T04:26:00Z:clawsweeper_needs_human",
       "comment_id": "5569018420",
@@ -32694,6 +32661,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:1986:5582291573:2026-09-08T09:04:37Z:re_review",
+      "comment_id": "5582291573",
+      "comment_version_key": "5582291573:2026-09-08T09:04:37Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1986#issuecomment-5582291573",
+      "comment_created_at": "2026-09-08T09:04:37Z",
+      "comment_updated_at": "2026-09-08T09:04:37Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1986,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T09:05:41.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/image-publication-outcomes",
+        "head_sha": "c971031fa59a02c618071ff44dd5bf8bfbea3ecc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
