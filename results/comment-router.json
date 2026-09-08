@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T03:53:01.381Z",
+  "updated_at": "2026-09-08T03:53:08.606Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141611:5576110103:2026-09-07T22:12:31Z:re_review",
-      "comment_id": "5576110103",
-      "comment_version_key": "5576110103:2026-09-07T22:12:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141611#issuecomment-5576110103",
-      "comment_created_at": "2026-09-07T22:12:31Z",
-      "comment_updated_at": "2026-09-07T22:12:31Z",
-      "comment_body_sha256": "e3d2f030de8f7bf640bfbf6ffba24a51a9b47fc71380b5f0c47e5333e5e0f9b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141611,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T22:13:27.240Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/fs-safe-contract-sparse-liveness",
-        "head_sha": "2bb89bc3af96579eed509cad8b99c773f4dca316",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1357:5574494960:2026-09-07T22:12:17Z:clawsweeper_needs_human",
       "comment_id": "5574494960",
@@ -32707,6 +32660,39 @@
         "kind": "pull_request",
         "branch": "docs-audit/split-test-ref",
         "head_sha": "bc43a2f19752e02ac1b8d01e6b0ec9f06ac511b6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140674:5564356475:2026-09-08T03:51:59Z:clawsweeper_auto_repair",
+      "comment_id": "5564356475",
+      "comment_version_key": "5564356475:2026-09-08T03:51:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140674#issuecomment-5564356475",
+      "comment_created_at": "2026-09-07T02:50:35Z",
+      "comment_updated_at": "2026-09-08T03:51:59Z",
+      "comment_body_sha256": "0d9417db1fe45cfe47284ca1f29c5b40781819d4bb080aa4044b0a1fed653613",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140674,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=591b5354c85ec5c598e2496d03ddd8bafc21b158)",
+      "expected_head_sha": "591b5354c85ec5c598e2496d03ddd8bafc21b158",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T03:53:08.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/db-next-registry-repair4",
+        "head_sha": "591b5354c85ec5c598e2496d03ddd8bafc21b158",
         "cluster_id": null,
         "job_path": null
       }
