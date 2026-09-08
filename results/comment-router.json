@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T03:36:20.272Z",
+  "updated_at": "2026-09-08T03:36:22.731Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122981:5575935038:2026-09-07T21:48:29Z:re_review",
-      "comment_id": "5575935038",
-      "comment_version_key": "5575935038:2026-09-07T21:48:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122981#issuecomment-5575935038",
-      "comment_created_at": "2026-09-07T21:48:29Z",
-      "comment_updated_at": "2026-09-07T21:48:29Z",
-      "comment_body_sha256": "b7d642a62a5c449d555f90c4acfa25d003801b9341c425cdd388bf9639615695",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122981,
-      "author": "marmar9615-cloud",
-      "author_id": 271345736,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T21:49:35.039Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-test-sidecar-race",
-        "head_sha": "7d0098415ba17bf1f21af2cf6ff5977bb8415f86",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104920:4949759568:2026-09-07T21:42:52Z:clawsweeper_auto_repair",
       "comment_id": "4949759568",
@@ -32701,6 +32654,39 @@
         "kind": "pull_request",
         "branch": "fix/npm-companion-runtime-ownership",
         "head_sha": "57912b00a1d850b2cf921bd2479ae364fcc0e092",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:236:5540046725:2026-09-08T03:34:44Z:clawsweeper_needs_human",
+      "comment_id": "5540046725",
+      "comment_version_key": "5540046725:2026-09-08T03:34:44Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/236#issuecomment-5540046725",
+      "comment_created_at": "2026-09-04T11:52:47Z",
+      "comment_updated_at": "2026-09-08T03:34:44Z",
+      "comment_body_sha256": "e8d5872ab05651c0d0035f6b3c76be8b6634c6e8a892a6868fe29f72c40c806f",
+      "repo": "openclaw/clickclack",
+      "issue_number": 236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native screenshots could not be independently inspected because their attachment URLs returned cache misses; the recorded runtime observations remain available. (sha=056445d59092b16cc470e9eb4e7918d1f1cefee8)",
+      "expected_head_sha": "056445d59092b16cc470e9eb4e7918d1f1cefee8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T03:36:22.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/oss-sweep-renderer-20260904",
+        "head_sha": "056445d59092b16cc470e9eb4e7918d1f1cefee8",
         "cluster_id": null,
         "job_path": null
       }
