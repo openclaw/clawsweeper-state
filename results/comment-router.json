@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T14:14:50.279Z",
+  "updated_at": "2026-09-08T14:14:54.726Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5581337274:2026-09-08T07:52:03Z:re_review",
-      "comment_id": "5581337274",
-      "comment_version_key": "5581337274:2026-09-08T07:52:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5581337274",
-      "comment_created_at": "2026-09-08T07:52:03Z",
-      "comment_updated_at": "2026-09-08T07:52:03Z",
-      "comment_body_sha256": "5aafb07ba0cc198475af28ffdc0048917581204c523a66ea806d6862671073b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `865b7a876a832a1466d2ebc3faefd04dbe3eb52e`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T07:52:59.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/yield-transcript-incremental-v3",
-        "head_sha": "865b7a876a832a1466d2ebc3faefd04dbe3eb52e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3494:5579459546:2026-09-08T07:49:32Z:clawsweeper_auto_repair",
       "comment_id": "5579459546",
@@ -32349,6 +32302,39 @@
         "kind": "pull_request",
         "branch": "fix/detached-peer-runtime-scope",
         "head_sha": "d502378aaf64e2657bda73452466428b76283b0b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141686:5577176196:2026-09-08T14:13:48Z:clawsweeper_needs_human",
+      "comment_id": "5577176196",
+      "comment_version_key": "5577176196:2026-09-08T14:13:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141686#issuecomment-5577176196",
+      "comment_created_at": "2026-09-08T00:24:36Z",
+      "comment_updated_at": "2026-09-08T14:13:48Z",
+      "comment_body_sha256": "933a3e5b1e531df108ff5031d0e988f1e36f61dfd0ada616ceaaa76c420ba978",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141686,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing providers without a declaration will receive smaller batches, potentially increasing indexing latency and request-rate pressure; the new optional SDK field lets providers dec... (sha=e54f407e9eb52f3fc55a15e325ee4a8caad8ef7a)",
+      "expected_head_sha": "e54f407e9eb52f3fc55a15e325ee4a8caad8ef7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T14:14:54.726Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-embedding-input-cap",
+        "head_sha": "e54f407e9eb52f3fc55a15e325ee4a8caad8ef7a",
         "cluster_id": null,
         "job_path": null
       }
