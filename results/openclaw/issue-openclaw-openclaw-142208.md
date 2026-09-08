@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142208"
-mode: "autonomous"
-run_id: "34236387127"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34236387127"
-head_sha: "96e359e46d1b87ab8a9d73d939191fd1ff229263"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T14:43:53.754Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142208"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/142208"
+mode: "plan"
+run_id: "34241920700"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34241920700"
+head_sha: "ecdeaf5561ac59a404a0c69a51db9543b6c50b20"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T15:12:34.416Z"
+canonical: "#142208"
+canonical_issue: "#142208"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34236387127](https://github.com/openclaw/clawsweeper/actions/runs/34236387127)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34241920700](https://github.com/openclaw/clawsweeper/actions/runs/34241920700)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142208
+Canonical: #142208
 
 ## Summary
 
-Confirmed the hardcoded remediation defect in source at preflight main 1b011fe705abb14d163100f886d38e3a2b50f100. Implementation and regression execution are blocked by the read-only filesystem and absent dependencies. Narrow fix artifact provided; no files or GitHub state changed.
+Plan a narrow diagnostic fix for #142208. Source inspection confirms the defect remains at preflight main 225845acbfe8bed7f155d3113affeeee2fd48fbc. No files or GitHub state changed; regression execution and validation remain for the executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Confirmed the hardcoded remediation defect in source at preflight main 1b011fe70
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142208 | fix_needed | blocked | canonical | Only local implementation and validation are blocked. A writable executor must establish the failing CLI regression before applying the wording repair. |
-| #107930 | keep_related | planned | related | Keep open outside this narrowly authorized wording repair. |
-| #127414 | keep_related | planned | related | Distinct behavior and product decision; keep open. |
-| #140672 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-142208 | build_fix_artifact | planned | canonical | The source supports a narrow non-security bug fix without configuration, runtime-policy, or persistent-state changes. |
+| #142208 | fix_needed | planned | canonical | A target-dependent wording defect remains; the attached fix plan preserves runtime policy and credits @guarismo. |
+| #107930 | keep_related | planned | related | Broader upgrade migration work is distinct from correcting refusal advice and remains outside this fix. |
+| #127414 | keep_related | planned | related | Dry-run parity has separate behavior and output-contract work; the job explicitly excludes it. |
+| #140672 | keep_closed | skipped | related | Historical context only; no replacement or closure action is warranted. |
 
 ## Needs Human
 
