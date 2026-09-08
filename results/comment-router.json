@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T17:52:58.196Z",
+  "updated_at": "2026-09-08T17:53:39.538Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142113:5584544106:2026-09-08T11:38:34Z:re_review",
-      "comment_id": "5584544106",
-      "comment_version_key": "5584544106:2026-09-08T11:38:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142113#issuecomment-5584544106",
-      "comment_created_at": "2026-09-08T11:38:34Z",
-      "comment_updated_at": "2026-09-08T11:38:34Z",
-      "comment_body_sha256": "c1acf5356e4e311b2e72a7c4da94de71ea953dbd808ce9c7b2aa73b41d6697bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142113,
-      "author": "DasX",
-      "author_id": 1935468,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T11:41:19.579Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-cli-expected-error-framing",
-        "head_sha": "2961e7bc9f686f011332a4bda86adf85c276c11b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:299:5584614576:2026-09-08T11:44:48Z:clawsweeper_auto_repair",
       "comment_id": "5584614576",
@@ -32775,6 +32728,39 @@
         "kind": "pull_request",
         "branch": "fix/ui-startup-loading-orchestration",
         "head_sha": "4593ae46c09f1910fcb79822b6b2d55b9296491c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142378:5589483950:2026-09-08T17:52:44Z:clawsweeper_needs_human",
+      "comment_id": "5589483950",
+      "comment_version_key": "5589483950:2026-09-08T17:52:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142378#issuecomment-5589483950",
+      "comment_created_at": "2026-09-08T17:52:44Z",
+      "comment_updated_at": "2026-09-08T17:52:44Z",
+      "comment_body_sha256": "c6ac3c9e4084fe532694175cd1d20945aaed61078f52269377a60df12c04f5a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142378,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=fe29985c2acc9f8a0477ec0c613578fd059f075f)",
+      "expected_head_sha": "fe29985c2acc9f8a0477ec0c613578fd059f075f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T17:53:39.538Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-telegram-frozen-scenario-selection",
+        "head_sha": "fe29985c2acc9f8a0477ec0c613578fd059f075f",
         "cluster_id": null,
         "job_path": null
       }
