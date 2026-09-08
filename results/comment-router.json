@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:44:57.513Z",
+  "updated_at": "2026-09-08T19:45:02.841Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1494:5587367863:2026-09-08T15:11:00Z:re_review",
-      "comment_id": "5587367863",
-      "comment_version_key": "5587367863:2026-09-08T15:11:00Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1494#issuecomment-5587367863",
-      "comment_created_at": "2026-09-08T15:11:00Z",
-      "comment_updated_at": "2026-09-08T15:11:00Z",
-      "comment_body_sha256": "477210870a734e390decd44f6ca4d885d2c8ae8b6508bdcbee9573213630514f",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1494,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T15:15:50.522Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "review/terminal-scan-refusals",
-        "head_sha": "358138d4cbc08d628a8b21cf6269d726edb8063d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1494:5586258849:2026-09-08T15:14:47Z:clawsweeper_needs_human",
       "comment_id": "5586258849",
@@ -32730,6 +32683,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142461:5590586720:2026-09-08T19:43:49Z:clawsweeper_auto_repair",
+      "comment_id": "5590586720",
+      "comment_version_key": "5590586720:2026-09-08T19:43:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142461#issuecomment-5590586720",
+      "comment_created_at": "2026-09-08T19:23:46Z",
+      "comment_updated_at": "2026-09-08T19:43:49Z",
+      "comment_body_sha256": "274a2065bf0f14f04fa67abdae8979008884afd99c5623cb4dc82df248de580e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142461,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bc6fcd851edd64895acad0d3a7d83dcc115d1287)",
+      "expected_head_sha": "bc6fcd851edd64895acad0d3a7d83dcc115d1287",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T19:45:02.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026-7-33-hermetic-clawhub",
+        "head_sha": "bc6fcd851edd64895acad0d3a7d83dcc115d1287",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
