@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T09:59:28.439Z",
+  "updated_at": "2026-09-08T10:00:09.351Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141862:5579484741:2026-09-08T04:57:18Z:re_review",
-      "comment_id": "5579484741",
-      "comment_version_key": "5579484741:2026-09-08T04:57:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141862#issuecomment-5579484741",
-      "comment_created_at": "2026-09-08T04:57:18Z",
-      "comment_updated_at": "2026-09-08T04:57:18Z",
-      "comment_body_sha256": "ab397ebbcac98aa87fffca5ddedfe504a2a068b1705ef684376b6492503c041e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141862,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T05:03:58.929Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/npm-canonical-override-parser",
-        "head_sha": "f2f157fb6b3e56716a9679aae0fbe1c66010b68c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141862:5579534869:2026-09-08T05:03:09Z:clawsweeper_needs_human",
       "comment_id": "5579534869",
@@ -33158,6 +33111,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-docker-install-hook-20260908",
         "head_sha": "aa83dc88a38951b2dd8a76ea39e57f6782a6b30c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141894:5579910874:2026-09-08T09:58:28Z:clawsweeper_needs_human",
+      "comment_id": "5579910874",
+      "comment_version_key": "5579910874:2026-09-08T09:58:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141894#issuecomment-5579910874",
+      "comment_created_at": "2026-09-08T05:44:34Z",
+      "comment_updated_at": "2026-09-08T09:58:28Z",
+      "comment_body_sha256": "3ecf44d9e976e236f9a6eebff596c6229336dd5c0b8824c82619df4ed55564d8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141894,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required before/after visual acceptance remains unverified because the existing artifact's download host is blocked in this review environment. (sha=7d6292bf2dd22e043dd653523eeb9498415fb540)",
+      "expected_head_sha": "7d6292bf2dd22e043dd653523eeb9498415fb540",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T10:00:09.351Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/searchable-model-picker",
+        "head_sha": "7d6292bf2dd22e043dd653523eeb9498415fb540",
         "cluster_id": null,
         "job_path": null
       }
