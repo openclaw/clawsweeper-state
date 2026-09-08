@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T07:27:01.012Z",
+  "updated_at": "2026-09-08T07:27:05.554Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141763:5578078385:2026-09-08T02:46:28Z:clawsweeper_auto_repair",
-      "comment_id": "5578078385",
-      "comment_version_key": "5578078385:2026-09-08T02:46:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141763#issuecomment-5578078385",
-      "comment_created_at": "2026-09-08T02:15:01Z",
-      "comment_updated_at": "2026-09-08T02:46:28Z",
-      "comment_body_sha256": "91c978a894c1db647b2a4c792c687217f63bf916f424a6a491be46c22092e779",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141763,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f3161a6df11a24d8248134c1bb52754e364f6fd8)",
-      "expected_head_sha": "f3161a6df11a24d8248134c1bb52754e364f6fd8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T02:55:52.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/browser-panel-screencast-fallback",
-        "head_sha": "0c9529ff5a8de4df3fc7468f18dc85d8e3211eb3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141766:5578089580:2026-09-08T02:49:05Z:clawsweeper_needs_human",
       "comment_id": "5578089580",
@@ -32158,6 +32125,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rastermill:11:5581025539:2026-09-08T07:26:12Z:re_review",
+      "comment_id": "5581025539",
+      "comment_version_key": "5581025539:2026-09-08T07:26:12Z",
+      "comment_url": "https://github.com/openclaw/rastermill/pull/11#issuecomment-5581025539",
+      "comment_created_at": "2026-09-08T07:26:12Z",
+      "comment_updated_at": "2026-09-08T07:26:12Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/rastermill",
+      "issue_number": 11,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T07:27:03.250Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/rastermill-release-0.3.4",
+        "head_sha": "3076abe4bb6a1420d8b00adf4c624f6ede39b6dd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
