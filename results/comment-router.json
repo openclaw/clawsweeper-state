@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T07:14:05.401Z",
+  "updated_at": "2026-09-08T07:15:30.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141774:5578328662:2026-09-08T02:45:56Z:freeform_assist",
-      "comment_id": "5578328662",
-      "comment_version_key": "5578328662:2026-09-08T02:45:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141774#issuecomment-5578328662",
-      "comment_created_at": "2026-09-08T02:45:56Z",
-      "comment_updated_at": "2026-09-08T02:45:56Z",
-      "comment_body_sha256": "9ae56f138f573566d2650e94933651cdbb07318d09af6aff559f35b645fd430d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141774,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review\\n\\nfinal head adds target-owned frozen kitchen sink assertions after the previously pushed corrupt-update scenario materialization. focused docker helper contract is green; please review exact head.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T02:46:47.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/full-validation-frozen-contracts",
-        "head_sha": "7e0eb578f37273d94ed7dd1624d863428456f40e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121309:5578297529:2026-09-08T02:41:57Z:re_review",
       "comment_id": "5578297529",
@@ -32067,6 +32020,39 @@
         "kind": "pull_request",
         "branch": "fix/webchat-commentary-rendered-twice",
         "head_sha": "fd977ef0b43676b22009e9ce25a546c28560125c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1983:5580006033:2026-09-08T07:14:43Z:clawsweeper_needs_human",
+      "comment_id": "5580006033",
+      "comment_version_key": "5580006033:2026-09-08T07:14:43Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1983#issuecomment-5580006033",
+      "comment_created_at": "2026-09-08T05:55:08Z",
+      "comment_updated_at": "2026-09-08T07:14:43Z",
+      "comment_body_sha256": "71f7eebfb8909ad401c6a63cfd774324a8cc067415024af7aa1476bc123b3a4b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1983,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing SSH downloads above 1 GiB or leaving less than 1 GiB free will fail, including artifact-glob downloads using the shared transport. Automatic capture also rejects oversized in... (sha=2a5602ef76514c151277e53d6265acbbfdfee477)",
+      "expected_head_sha": "2a5602ef76514c151277e53d6265acbbfdfee477",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T07:15:30.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bounded-failure-artifacts-20260908",
+        "head_sha": "2a5602ef76514c151277e53d6265acbbfdfee477",
         "cluster_id": null,
         "job_path": null
       }
