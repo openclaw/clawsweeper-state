@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:59:35.079Z",
+  "updated_at": "2026-09-08T19:59:51.662Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142186:5585983667:2026-09-08T15:11:06Z:clawsweeper_auto_repair",
-      "comment_id": "5585983667",
-      "comment_version_key": "5585983667:2026-09-08T15:11:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142186#issuecomment-5585983667",
-      "comment_created_at": "2026-09-08T13:34:38Z",
-      "comment_updated_at": "2026-09-08T15:11:06Z",
-      "comment_body_sha256": "5ba22eb9b0ae9df29547381a38ed5a4c3461f07f7b73dab540e1c8a3c2bab5a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142186,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=55ff0a77145b7dcd005a1a8d732ce52e32187bc8)",
-      "expected_head_sha": "55ff0a77145b7dcd005a1a8d732ce52e32187bc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T15:35:23.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/daemon-bun-sqlite-probe",
-        "head_sha": "55ff0a77145b7dcd005a1a8d732ce52e32187bc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142187:5586045023:2026-09-08T15:15:24Z:clawsweeper_needs_human",
       "comment_id": "5586045023",
@@ -32794,6 +32761,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142456:5591043203:2026-09-08T19:58:53Z:re_review",
+      "comment_id": "5591043203",
+      "comment_version_key": "5591043203:2026-09-08T19:58:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142456#issuecomment-5591043203",
+      "comment_created_at": "2026-09-08T19:58:53Z",
+      "comment_updated_at": "2026-09-08T19:58:53Z",
+      "comment_body_sha256": "b64cea1a56ccc685c13519d2b546647ec61036e7dc835e4e7260f4a058d34f91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142456,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T19:59:49.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frozen-7-33-docker-contracts",
+        "head_sha": "a0abc699471b48315d9e080e44d4fbe1ca4eab2f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
