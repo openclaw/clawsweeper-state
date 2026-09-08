@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T21:26:54.709Z",
+  "updated_at": "2026-09-08T21:26:55.893Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131805:5589059019:2026-09-08T17:17:22Z:re_review",
-      "comment_id": "5589059019",
-      "comment_version_key": "5589059019:2026-09-08T17:17:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131805#issuecomment-5589059019",
-      "comment_created_at": "2026-09-08T17:17:22Z",
-      "comment_updated_at": "2026-09-08T17:17:22Z",
-      "comment_body_sha256": "61bf988af5253c627a298ada8285b12c6c755a80d7db95685edd3d0fa2296838",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131805,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T17:18:23.135Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/86174-explicit-default-selection",
-        "head_sha": "aefed097d3091264fcceba43d9254ebd1fd23806",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138090:5538026514:2026-09-08T17:16:45Z:clawsweeper_needs_human",
       "comment_id": "5538026514",
@@ -32785,6 +32738,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/issue-142489",
         "head_sha": "aad1f7d044230fd3fdda9f4ddaad91ece6bfc348",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-09-08T21:21:34Z:clawsweeper_needs_human",
+      "comment_id": "5241982342",
+      "comment_version_key": "5241982342:2026-09-08T21:21:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121622#issuecomment-5241982342",
+      "comment_created_at": "2026-08-10T14:55:55Z",
+      "comment_updated_at": "2026-09-08T21:21:34Z",
+      "comment_body_sha256": "e6b289c952689e76de7c2a3ac2c889c2f189dbd2050dc4f701fdd2f4da5b603c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121622,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the native harness uses the real TLS Gateway and both credential consumers, but the reviewed evidence establish...; Review finding: [P2] Reject pairing completions after the selection changes — apps/macos/Sources/OpenClaw/ConnectionSettingsView.swift:549-553 - [P2] Enable isolated persistence i... (sha=0ebd8f6cfb2637405fbc06cd071d5a69a27f3749)",
+      "expected_head_sha": "0ebd8f6cfb2637405fbc06cd071d5a69a27f3749",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T21:26:55.893Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-gateway-credential-boundary",
+        "head_sha": "0ebd8f6cfb2637405fbc06cd071d5a69a27f3749",
         "cluster_id": null,
         "job_path": null
       }
