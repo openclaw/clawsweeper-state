@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T09:08:43.764Z",
+  "updated_at": "2026-09-08T09:08:46.446Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112623:5078329042:2026-09-08T04:20:54Z:clawsweeper_needs_human",
-      "comment_id": "5078329042",
-      "comment_version_key": "5078329042:2026-09-08T04:20:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112623#issuecomment-5078329042",
-      "comment_created_at": "2026-07-25T11:32:53Z",
-      "comment_updated_at": "2026-09-08T04:20:54Z",
-      "comment_body_sha256": "71fe5fc572754826e7be9b97690d69520ee5882ffff17e3dba0ba4d9f8dd8187",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112623,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatically adding recent-child facts increases context on existing parent turns and can influence retry decisions; the desired default remains a product tradeoff rather than a demo... (sha=6e39899107d338a9912028e07fc5f8b3f69f1703)",
-      "expected_head_sha": "6e39899107d338a9912028e07fc5f8b3f69f1703",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T04:29:56.269Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "spike/recently-completed-subagents-prompt",
-        "head_sha": "6e39899107d338a9912028e07fc5f8b3f69f1703",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112623:5093478884:2026-07-27T15:44:15Z:re_review",
       "comment_id": "5093478884",
@@ -32658,6 +32625,53 @@
         "kind": "pull_request",
         "branch": "fix/validate-worktree-base-ref",
         "head_sha": "50ac2467e91224a3495aa518cf3376a259cff9ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141875:5582340543:2026-09-08T09:07:44Z:re_review",
+      "comment_id": "5582340543",
+      "comment_version_key": "5582340543:2026-09-08T09:07:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141875#issuecomment-5582340543",
+      "comment_created_at": "2026-09-08T09:07:44Z",
+      "comment_updated_at": "2026-09-08T09:07:44Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141875,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T09:08:43.142Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/preserve-plugin-on-staged-artifact-failure-141245",
+        "head_sha": "e0fad2bc78f3d69628b30530e32350e65cbee300",
         "cluster_id": null,
         "job_path": null
       },
