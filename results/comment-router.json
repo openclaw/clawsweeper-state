@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:59:03.404Z",
+  "updated_at": "2026-09-08T16:59:29.840Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124953:5346801762:2026-08-19T19:09:29Z:re_review",
-      "comment_id": "5346801762",
-      "comment_version_key": "5346801762:2026-08-19T19:09:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124953#issuecomment-5346801762",
-      "comment_created_at": "2026-08-19T19:09:29Z",
-      "comment_updated_at": "2026-08-19T19:09:29Z",
-      "comment_body_sha256": "680bad5997f7cab03acec2ab9fec12c4fefe5705bb17335a3ef16b13ad540491",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124953,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T10:20:55.978Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124953:5420403017:2026-08-26T04:02:50Z:re_review",
       "comment_id": "5420403017",
@@ -32230,6 +32203,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142349:5588823434:2026-09-08T16:58:19Z:clawsweeper_auto_repair",
+      "comment_id": "5588823434",
+      "comment_version_key": "5588823434:2026-09-08T16:58:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142349#issuecomment-5588823434",
+      "comment_created_at": "2026-09-08T16:58:19Z",
+      "comment_updated_at": "2026-09-08T16:58:19Z",
+      "comment_body_sha256": "d5d10eb3767d375e3dac684fcdb74899b9932ef3f88053d529f868ca1aa5cb72",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142349,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4cbf27e5e98864550a7959dc11e53ab8e08b4985)",
+      "expected_head_sha": "4cbf27e5e98864550a7959dc11e53ab8e08b4985",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T16:59:29.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bounded-heartbeat-recovery-deferral",
+        "head_sha": "4cbf27e5e98864550a7959dc11e53ab8e08b4985",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
