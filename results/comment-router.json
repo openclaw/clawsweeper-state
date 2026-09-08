@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:47:21.593Z",
+  "updated_at": "2026-09-08T02:47:46.469Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137586:5575527935:2026-09-07T20:51:30Z:re_review",
-      "comment_id": "5575527935",
-      "comment_version_key": "5575527935:2026-09-07T20:51:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137586#issuecomment-5575527935",
-      "comment_created_at": "2026-09-07T20:51:30Z",
-      "comment_updated_at": "2026-09-07T20:51:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137586,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T20:52:28.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-ci-contract-compat",
-        "head_sha": "47deec93c9e4557d35a14cbc488ee8041d2c3ace",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137592:5575527945:2026-09-07T20:51:30Z:re_review",
       "comment_id": "5575527945",
@@ -32998,6 +32951,39 @@
         "kind": "pull_request",
         "branch": "feat/trusted-discord-administrator",
         "head_sha": "4f0ba4ad1c919ebdfda497e1811e3d685c6925ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/cookbook:14:5578336101:2026-09-08T02:46:49Z:clawsweeper_needs_human",
+      "comment_id": "5578336101",
+      "comment_version_key": "5578336101:2026-09-08T02:46:49Z",
+      "comment_url": "https://github.com/openclaw/cookbook/pull/14#issuecomment-5578336101",
+      "comment_created_at": "2026-09-08T02:46:49Z",
+      "comment_updated_at": "2026-09-08T02:46:49Z",
+      "comment_body_sha256": "d55d6a7e6d1c3d7e81d3020b4fae9efb37e17fb041e997225f43a565748e08a2",
+      "repo": "openclaw/cookbook",
+      "issue_number": 14,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Merge https://github.com/openclaw/cookbook/pull/13 before this release-note PR. (sha=8921318ae62f7e1525884cfb8bd1308f8e3aa6ee)",
+      "expected_head_sha": "8921318ae62f7e1525884cfb8bd1308f8e3aa6ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T02:47:46.469Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "triage/cookbook-notes-20260908",
+        "head_sha": "8921318ae62f7e1525884cfb8bd1308f8e3aa6ee",
         "cluster_id": null,
         "job_path": null
       }
