@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:14:28.027Z",
+  "updated_at": "2026-09-08T16:14:31.877Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142065:5582824093:2026-09-08T09:37:01Z:re_review",
-      "comment_id": "5582824093",
-      "comment_version_key": "5582824093:2026-09-08T09:37:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142065#issuecomment-5582824093",
-      "comment_created_at": "2026-09-08T09:37:01Z",
-      "comment_updated_at": "2026-09-08T09:37:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142065,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T09:37:57.800Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-terminology-contracts",
-        "head_sha": "96a7ee692277bcf0ab4b003385118af341cedddc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142068:5582825006:2026-09-08T09:37:04Z:re_review",
       "comment_id": "5582825006",
@@ -32383,6 +32336,39 @@
         "kind": "pull_request",
         "branch": "openclaw/pr138726-split-i-i18n",
         "head_sha": "91bd0ba8e212a03de46f3bd4627a168293c7390d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142291:5588266128:2026-09-08T16:13:23Z:clawsweeper_needs_human",
+      "comment_id": "5588266128",
+      "comment_version_key": "5588266128:2026-09-08T16:13:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142291#issuecomment-5588266128",
+      "comment_created_at": "2026-09-08T16:13:23Z",
+      "comment_updated_at": "2026-09-08T16:13:23Z",
+      "comment_body_sha256": "44bf252f9e644b465fed82ed61b7e1026bda2797aba8fe9f9668886f66e70f6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142291,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=af4e34d9c2395b3687bfd2a3fa6ae01c00b1b4d2)",
+      "expected_head_sha": "af4e34d9c2395b3687bfd2a3fa6ae01c00b1b4d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T16:14:31.877Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stable-split-recovery",
+        "head_sha": "af4e34d9c2395b3687bfd2a3fa6ae01c00b1b4d2",
         "cluster_id": null,
         "job_path": null
       }
