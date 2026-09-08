@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T07:05:22.405Z",
+  "updated_at": "2026-09-08T07:09:04.647Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141277:5572274029:2026-09-08T02:39:57Z:clawsweeper_auto_repair",
-      "comment_id": "5572274029",
-      "comment_version_key": "5572274029:2026-09-08T02:39:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141277#issuecomment-5572274029",
-      "comment_created_at": "2026-09-07T14:42:00Z",
-      "comment_updated_at": "2026-09-08T02:39:57Z",
-      "comment_body_sha256": "1cdec4d2b5d44b7dc076f9a4034cf6735d3e9fe831df9271458b640780126eaa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141277,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c755a3e0ab411631054c3c9d7c9afcb67b2279df)",
-      "expected_head_sha": "c755a3e0ab411631054c3c9d7c9afcb67b2279df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T02:40:52.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/paired-node-computer-v2-schema",
-        "head_sha": "c755a3e0ab411631054c3c9d7c9afcb67b2279df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135418:5500062678:2026-09-01T20:34:28Z:re_review",
       "comment_id": "5500062678",
@@ -32026,6 +31993,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3495:5580487780:2026-09-08T06:52:43Z:clawsweeper_needs_human",
+      "comment_id": "5580487780",
+      "comment_version_key": "5580487780:2026-09-08T06:52:43Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3495#issuecomment-5580487780",
+      "comment_created_at": "2026-09-08T06:41:36Z",
+      "comment_updated_at": "2026-09-08T06:52:43Z",
+      "comment_body_sha256": "fbe960106b005b0e603ac5eddd37424d3964ec7589881f555b7308cbad686017",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3495,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied specification claims focused unit-test passes, but does not show the changed card and compact-row renderers in a freshly built app...; Review finding: [P1] Preserve redaction for non-Claude-swap account identities — Sources/CodexBar/MenuCardView.swift:1258-1260 - [P1] Redact supported email forms before preservin... (sha=3c82118dde25b615e9cd48a4d6b9c9f80a835a7d)",
+      "expected_head_sha": "3c82118dde25b615e9cd48a4d6b9c9f80a835a7d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T07:09:04.647Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claude-swap-alias-redaction",
+        "head_sha": "3c82118dde25b615e9cd48a4d6b9c9f80a835a7d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
