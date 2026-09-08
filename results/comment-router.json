@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T04:45:12.373Z",
+  "updated_at": "2026-09-08T04:47:19.421Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141651:5576699677:2026-09-07T23:28:37Z:re_review",
-      "comment_id": "5576699677",
-      "comment_version_key": "5576699677:2026-09-07T23:28:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141651#issuecomment-5576699677",
-      "comment_created_at": "2026-09-07T23:28:37Z",
-      "comment_updated_at": "2026-09-07T23:28:37Z",
-      "comment_body_sha256": "c41649282da2b972f3311098a1a85654244033dda83981b11aa95036481b1d38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141651,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T23:29:26.918Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026-7-33-openshell-gateway-json",
-        "head_sha": "0053d2feb6f827546612bfae3104091276e0e0d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141648:5576609782:2026-09-07T23:29:12Z:clawsweeper_needs_human",
       "comment_id": "5576609782",
@@ -32514,6 +32467,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141468:5574787882:2026-09-08T04:46:22Z:clawsweeper_needs_human",
+      "comment_id": "5574787882",
+      "comment_version_key": "5574787882:2026-09-08T04:46:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141468#issuecomment-5574787882",
+      "comment_created_at": "2026-09-07T19:14:53Z",
+      "comment_updated_at": "2026-09-08T04:46:22Z",
+      "comment_body_sha256": "96346e17940a71298385bc6c64ba37ab1fd7aacf7acc683ff2577693474d02a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141468,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrading an isolated Gateway, effective admins can read native process-HOME history that the released implementation excludes; owner acceptance of that expanded boundary is not... (sha=39f9097066f9ec21c2016c9fe659437fa23e62f1)",
+      "expected_head_sha": "39f9097066f9ec21c2016c9fe659437fa23e62f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T04:47:19.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-owner-local-session-catalog",
+        "head_sha": "39f9097066f9ec21c2016c9fe659437fa23e62f1",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
