@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T23:04:03.365Z",
+  "updated_at": "2026-09-08T23:04:20.767Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126986:5456075477:2026-08-28T18:10:23Z:re_review",
-      "comment_id": "5456075477",
-      "comment_version_key": "5456075477:2026-08-28T18:10:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126986#issuecomment-5456075477",
-      "comment_created_at": "2026-08-28T18:10:23Z",
-      "comment_updated_at": "2026-08-28T18:10:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126986,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T18:17:34.737Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126986:5456298390:2026-08-28T18:33:01Z:re_review",
       "comment_id": "5456298390",
@@ -33022,6 +32995,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142620:5592534674:2026-09-08T23:00:35Z:clawsweeper_needs_human",
+      "comment_id": "5592534674",
+      "comment_version_key": "5592534674:2026-09-08T23:00:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142620#issuecomment-5592534674",
+      "comment_created_at": "2026-09-08T22:08:59Z",
+      "comment_updated_at": "2026-09-08T23:00:35Z",
+      "comment_body_sha256": "cd59efae8be850600fe13dc2fb665ef2821d211679c5cf171364b178174273cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Plugins written against the recent main-only passive default may resume provider requests when options are omitted; readOnly:true remains the explicit passive control. (sha=6187f5177e17c051caf3d2907516fbdfa32b37cc)",
+      "expected_head_sha": "6187f5177e17c051caf3d2907516fbdfa32b37cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T23:04:20.767Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sdk-writable-catalog-compatibility",
+        "head_sha": "6187f5177e17c051caf3d2907516fbdfa32b37cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
