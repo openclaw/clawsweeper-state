@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:08:43.792Z",
+  "updated_at": "2026-09-08T19:09:00.045Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119467:5187470155:2026-08-13T05:11:29Z:clawsweeper_needs_human",
-      "comment_id": "5187470155",
-      "comment_version_key": "5187470155:2026-08-13T05:11:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119467#issuecomment-5187470155",
-      "comment_created_at": "2026-08-05T04:16:08Z",
-      "comment_updated_at": "2026-08-13T05:11:29Z",
-      "comment_body_sha256": "e3009a5d17f49b9cb1840e694f4cc89dc049c95333ded0b320be63206d12ed68",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119467,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Authorize the direct parser dependency** - The plugin now directly imports htmlparser2 for attacker-controlled HTML; its version and integrity were already lockfile-resolved through lin...; Review finding: [medium] Authorize the direct parser dependency — extensions/web-readability/package.json:9 (sha=2cb75b6b2a82b1b6dd20616f489c4bcfe56adde6)",
-      "expected_head_sha": "2cb75b6b2a82b1b6dd20616f489c4bcfe56adde6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T14:07:26.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/web-readability-depth-cap",
-        "head_sha": "2cb75b6b2a82b1b6dd20616f489c4bcfe56adde6",
-        "cluster_id": "automerge-openclaw-openclaw-119467",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119467.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119525:5188980437:2026-08-30T18:15:55Z:clawsweeper_needs_human",
       "comment_id": "5188980437",
@@ -32882,6 +32849,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119055:5590398156:2026-09-08T19:08:06Z:re_review",
+      "comment_id": "5590398156",
+      "comment_version_key": "5590398156:2026-09-08T19:08:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5590398156",
+      "comment_created_at": "2026-09-08T19:08:06Z",
+      "comment_updated_at": "2026-09-08T19:08:06Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119055,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T19:08:57.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-host-owned-replay-stack-20260804",
+        "head_sha": "d56ec714052820ac85f9edf9e3c8d8830e4ea9d9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
