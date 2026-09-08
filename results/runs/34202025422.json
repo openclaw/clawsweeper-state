@@ -1,0 +1,128 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142002",
+  "mode": "autonomous",
+  "run_id": "34202025422",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34202025422",
+  "head_sha": "c6ead2181a5c958c37fb717c7186d48613caeeb0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142002.md",
+  "published_at": "2026-09-08T09:17:38.477Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142002",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142002",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a missing shared completion-activity write on preflight main fdd6acecfe91af913e044736e54ddc4cf0dfc908. A narrow repair artifact is prepared. Implementation and reproduction are blocked by the read-only filesystem, absent dependencies, and missing ../codex source. No files or GitHub state changed; no tests ran.",
+  "actions": [
+    {
+      "target": "#142002",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142002",
+      "candidate_fix": null,
+      "reason": "The shared producer gap remains plausible on current preflight main; historical unread fixes address different boundaries. Keep the issue open pending regression proof and repair."
+    },
+    {
+      "target": "#100739",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical product context only."
+    },
+    {
+      "target": "#126837",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct retention interpretation; do not broaden this repair into backfill or retention changes."
+    },
+    {
+      "target": "#128986",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical projection fix; not a candidate implementation for #142002."
+    },
+    {
+      "target": "#129373",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct acknowledgement defect; preserve its repaired behavior."
+    },
+    {
+      "target": "#129386",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical acknowledgement contract; completion writes must preserve markedUnreadAt."
+    },
+    {
+      "target": "#134158",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct client latency defect."
+    },
+    {
+      "target": "#134160",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Does not supply the missing shared completion timestamp."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142002",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142002",
+      "candidate_fix": null,
+      "reason": "Prepare a narrow executor handoff; require a failing persistence regression and native source inspection before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142002",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#142002",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable trusted checkout, dependencies, and native Codex source to reproduce, repair, and validate before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 7,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 7,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
