@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141701"
-mode: "autonomous"
-run_id: "34174110259"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34174110259"
+mode: "plan"
+run_id: "34177372591"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34177372591"
 head_sha: "b6297c4b6272da294d17186455db294e1a6b08fd"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T01:11:47.112Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141701"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141701"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T01:48:41.549Z"
+canonical: "#141701"
+canonical_issue: "#141701"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34174110259](https://github.com/openclaw/clawsweeper/actions/runs/34174110259)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34177372591](https://github.com/openclaw/clawsweeper/actions/runs/34177372591)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141701
+Canonical: #141701
 
 ## Summary
 
-Source inspection supports a narrow configuration-validation repair on preflight main a00606a55d85b0417fd6b15e7b3d99f09acd7520. Implementation and regression proof are blocked by the read-only sandbox and absent dependencies. No files or GitHub state changed.
+Plan a narrow fix for effective Gateway configuration validation before restart and non-retryable startup error classification. Source inspection supports the reported gap; runtime reproduction, related-PR discovery, implementation, and validation remain pending. No changes were made.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports a narrow configuration-validation repair on preflight
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141701 | fix_needed | planned | canonical | Keep the issue open and prepare one narrow repair for effective successor validation and startup exit classification. No security-boundary change is required. |
-| cluster:issue-openclaw-openclaw-141701 | build_fix_artifact | planned |  | Artifact preparation is complete. A writable executor must first refresh ownership and main, establish the failing regression, then implement and validate before opening or updating the single authorized PR. |
+| #141701 | fix_needed | planned | canonical | Keep this canonical issue open and prepare the bounded repair. Implementation must first establish a failing regression on refreshed main and check for an existing owner PR. Neither closure nor merge is authorized. |
 
 ## Needs Human
 
