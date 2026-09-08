@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:29:28.272Z",
+  "updated_at": "2026-09-08T19:29:28.597Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119056:5587176939:2026-09-08T14:57:39Z:re_review",
-      "comment_id": "5587176939",
-      "comment_version_key": "5587176939:2026-09-08T14:57:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5587176939",
-      "comment_created_at": "2026-09-08T14:57:39Z",
-      "comment_updated_at": "2026-09-08T14:57:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T14:58:34.841Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "b8973a39d6d88b2d16bcf64c5c0f30e59c9c722c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142151:5587177659:2026-09-08T14:57:42Z:re_review",
       "comment_id": "5587177659",
@@ -32711,6 +32664,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-735-remove-vendor-logos",
         "head_sha": "c3315251caec9e269759d3dac3161a056aeadcd0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142405:5589892802:2026-09-08T19:23:50Z:clawsweeper_needs_human",
+      "comment_id": "5589892802",
+      "comment_version_key": "5589892802:2026-09-08T19:23:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142405#issuecomment-5589892802",
+      "comment_created_at": "2026-09-08T18:26:24Z",
+      "comment_updated_at": "2026-09-08T19:23:50Z",
+      "comment_body_sha256": "b88fc0c81875d92a3cffd20a1e9376d51eafed03d2d077c54e31e73721c664f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The full linked workflow trace could not be independently inspected because its storage host was blocked; the proof assessment relies on the captured before/after output and verified... (sha=25915c4e705d37406e0862c4dfd201e3d0568b86)",
+      "expected_head_sha": "25915c4e705d37406e0862c4dfd201e3d0568b86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T19:29:28.597Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-errtrace",
+        "head_sha": "25915c4e705d37406e0862c4dfd201e3d0568b86",
         "cluster_id": null,
         "job_path": null
       }
