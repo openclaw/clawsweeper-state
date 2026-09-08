@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142013"
-mode: "autonomous"
-run_id: "34202835769"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34202835769"
+mode: "plan"
+run_id: "34205561982"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34205561982"
 head_sha: "c6ead2181a5c958c37fb717c7186d48613caeeb0"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T08:17:23.838Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T08:45:43.845Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142013"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142013"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34202835769](https://github.com/openclaw/clawsweeper/actions/runs/34202835769)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34205561982](https://github.com/openclaw/clawsweeper/actions/runs/34205561982)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/142013
 
 ## Summary
 
-The suspension retry gap remains in source at preflight main 76b618156232210f30cddc570c5593bd9d02d8c9. A narrow fix artifact is prepared, but implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.
+Plan a narrow suspension-aware ingress scheduling repair for #142013. Source inspection matches the reported gap at preflight main 3574bb1336452adc1358d7428f2a0209140848e1. No code or GitHub mutations were made; runtime reproduction and validation remain required before publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ The suspension retry gap remains in source at preflight main 76b618156232210f30c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142013 | fix_needed | blocked | canonical | Local implementation is blocked by the read-only execution environment. The executor must establish the failing real-monitor regression before production edits; source inspection alone does not satisfy the reproduction gate. |
-| #127256 | keep_related | planned | related | Leave open for its existing follow-up; exclude transport-admission policy changes from this fix. |
-| #133871 | keep_closed | skipped | related | Historical ingress lifecycle work whose behavior must remain intact. |
-| #136684 | keep_closed | skipped | related | Historical context only. |
-| #136713 | keep_closed | skipped | related | Historical context, not a candidate fix for this issue. |
-| cluster:issue-openclaw-openclaw-142013 | build_fix_artifact | planned |  | Prepare the narrow executor handoff while keeping implementation blocked in this read-only worker. |
+| #142013 | fix_needed | planned | canonical | Repair the monitor scheduling owner, conditional on reproducing the defect on latest main. Preserve existing admission and durable settlement contracts. |
+| #127256 | keep_related | planned | related | Different owner and failure path from suspension-triggered durable ingress retries; retain for separate follow-up. |
+| #133871 | keep_closed | skipped | related | Historical ingress restart repair; already closed and does not cover suspension. |
+| #136684 | keep_closed | skipped | related | Historical evidence for a similar symptom in a different queue owner. |
+| #136713 | keep_closed | skipped | related | Already merged; its queue-retirement strategy must not be applied to retained durable ingress input. |
 
 ## Needs Human
 

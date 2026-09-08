@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142013",
+  "mode": "plan",
+  "run_id": "34205561982",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34205561982",
+  "head_sha": "c6ead2181a5c958c37fb717c7186d48613caeeb0",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142013.md",
+  "published_at": "2026-09-08T08:45:43.845Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142013",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142013",
+  "canonical_pr": null,
+  "summary": "Plan a narrow suspension-aware ingress scheduling repair for #142013. Source inspection matches the reported gap at preflight main 3574bb1336452adc1358d7428f2a0209140848e1. No code or GitHub mutations were made; runtime reproduction and validation remain required before publication.",
+  "actions": [
+    {
+      "target": "#142013",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Repair the monitor scheduling owner, conditional on reproducing the defect on latest main. Preserve existing admission and durable settlement contracts."
+    },
+    {
+      "target": "#127256",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Different owner and failure path from suspension-triggered durable ingress retries; retain for separate follow-up."
+    },
+    {
+      "target": "#133871",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Historical ingress restart repair; already closed and does not cover suspension."
+    },
+    {
+      "target": "#136684",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Historical evidence for a similar symptom in a different queue owner."
+    },
+    {
+      "target": "#136713",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#142013",
+      "candidate_fix": null,
+      "reason": "Already merged; its queue-retirement strategy must not be applied to retained durable ingress input."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
