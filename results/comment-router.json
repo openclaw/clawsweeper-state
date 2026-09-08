@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T15:27:27.908Z",
+  "updated_at": "2026-09-08T15:27:34.874Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3503:5581830929:2026-09-08T08:31:19Z:re_review",
-      "comment_id": "5581830929",
-      "comment_version_key": "5581830929:2026-09-08T08:31:19Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3503#issuecomment-5581830929",
-      "comment_created_at": "2026-09-08T08:31:19Z",
-      "comment_updated_at": "2026-09-08T08:31:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3503,
-      "author": "BUKOWSKIREAL",
-      "author_id": 233685554,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T08:36:01.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gpt-reserve-luna-pricing",
-        "head_sha": "dee9424bf8a1f23ec8d087b4e6b6ab002f0d7f34",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3503:5581689909:2026-09-08T08:34:42Z:clawsweeper_needs_human",
       "comment_id": "5581689909",
@@ -32465,6 +32418,39 @@
         "kind": "pull_request",
         "branch": "codex/memory-provider-scope-import",
         "head_sha": "5135bc01f00440ee0bd3a7378d1d1fb2562bf252",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124953:5310743582:2026-09-08T15:25:47Z:clawsweeper_needs_human",
+      "comment_id": "5310743582",
+      "comment_version_key": "5310743582:2026-09-08T15:25:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124953#issuecomment-5310743582",
+      "comment_created_at": "2026-08-17T01:19:39Z",
+      "comment_updated_at": "2026-09-08T15:25:47Z",
+      "comment_body_sha256": "9fe89669517b6c26e102b4143e90797ddf27168b6cd129487d5fbadc4a48db4a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124953,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A trajectory append or retention failure now rolls back recovery and force-clear state updates, potentially delaying recovery until storage succeeds; owner acceptance of this changed... (sha=e96e6e04bf20f28d1e16a8c5547c08e0cde08d7b)",
+      "expected_head_sha": "e96e6e04bf20f28d1e16a8c5547c08e0cde08d7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T15:27:34.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-104950-recovery-trajectory-interrupted",
+        "head_sha": "e96e6e04bf20f28d1e16a8c5547c08e0cde08d7b",
         "cluster_id": null,
         "job_path": null
       }
