@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T21:38:50.537Z",
+  "updated_at": "2026-09-08T21:39:22.567Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132668:5467221920:2026-08-30T06:46:21Z:re_review",
-      "comment_id": "5467221920",
-      "comment_version_key": "5467221920:2026-08-30T06:46:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132668#issuecomment-5467221920",
-      "comment_created_at": "2026-08-30T06:46:21Z",
-      "comment_updated_at": "2026-08-30T06:46:21Z",
-      "comment_body_sha256": "9ff68c62d1751d4bbb3c0960c06e3e679e2e192ab60f65bda5a1890a94354be6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132668,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T17:21:10.819Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132668:5467622999:2026-08-30T08:24:52Z:re_review",
       "comment_id": "5467622999",
@@ -32890,6 +32863,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:135:5592220804:2026-09-08T21:38:18Z:clawsweeper_needs_human",
+      "comment_id": "5592220804",
+      "comment_version_key": "5592220804:2026-09-08T21:38:18Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/135#issuecomment-5592220804",
+      "comment_created_at": "2026-09-08T21:38:18Z",
+      "comment_updated_at": "2026-09-08T21:38:18Z",
+      "comment_body_sha256": "a815dbce14ae82a4d84af1374458efcff5a83f6a53f1430c2a3fb7dba07eadcd",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Keyed-schema output and profile enumeration change together; a mismatch could leave configured agents without their Nix-managed tools. Fresh activation and generation-switch compatibi... (sha=f7ab38ba9b42af60bf0cdebe3001075fa6a0a9f4)",
+      "expected_head_sha": "f7ab38ba9b42af60bf0cdebe3001075fa6a0a9f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T21:39:22.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nix-agent-roster-schema-20260908",
+        "head_sha": "f7ab38ba9b42af60bf0cdebe3001075fa6a0a9f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
