@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T01:38:46.176Z",
+  "updated_at": "2026-09-08T01:38:57.453Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141121:5569041710:2026-09-07T19:22:18Z:clawsweeper_needs_human",
-      "comment_id": "5569041710",
-      "comment_version_key": "5569041710:2026-09-07T19:22:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141121#issuecomment-5569041710",
-      "comment_created_at": "2026-09-07T10:10:59Z",
-      "comment_updated_at": "2026-09-07T19:22:18Z",
-      "comment_body_sha256": "f0e6094838082f51bec6bd5ea7f325a4ade423fd5a6f55cff25ef2c78a0cc40b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141121,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The linked before/after images were unavailable for independent visual inspection; the behavior assessment relies on the supplied runtime observations and inspected source. (sha=68b5fb27aba5bd22c87cf2095771764b18514f36)",
-      "expected_head_sha": "68b5fb27aba5bd22c87cf2095771764b18514f36",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T19:23:28.720Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/local-storage-caching-web-ui-c6e428",
-        "head_sha": "68b5fb27aba5bd22c87cf2095771764b18514f36",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141476:5574846543:2026-09-07T19:22:42Z:clawsweeper_auto_repair",
       "comment_id": "5574846543",
@@ -33073,6 +33040,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141414:5577773147:2026-09-08T01:37:48Z:re_review",
+      "comment_id": "5577773147",
+      "comment_version_key": "5577773147:2026-09-08T01:37:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141414#issuecomment-5577773147",
+      "comment_created_at": "2026-09-08T01:37:48Z",
+      "comment_updated_at": "2026-09-08T01:37:48Z",
+      "comment_body_sha256": "c3526a401d368e0d1e404fc3e80b31fdcc36abd6cf045cfb2856de666562b6c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141414,
+      "author": "pfrederiksen",
+      "author_id": 908172,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T01:38:55.286Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-duplicate-prompt-recovery",
+        "head_sha": "c23d14ccf50452a92458a02165ab95e235f998a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
