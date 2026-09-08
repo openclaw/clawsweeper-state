@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T10:21:09.173Z",
+  "updated_at": "2026-09-08T10:22:37.321Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5553484453:2026-09-05T17:20:06Z:re_review",
-      "comment_id": "5553484453",
-      "comment_version_key": "5553484453:2026-09-05T17:20:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5553484453",
-      "comment_created_at": "2026-09-05T17:20:06Z",
-      "comment_updated_at": "2026-09-05T17:20:06Z",
-      "comment_body_sha256": "d83cdbc97402c8876a15b5d9d83d7c60563e8c0db6e216ff5160fa0059c05dfd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `5c32f0891be6efc79e80cb9b68a0ea4d5df80449`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T05:14:22.483Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5553810710:2026-09-05T18:14:00Z:re_review",
       "comment_id": "5553810710",
@@ -33215,6 +33188,39 @@
       "status": "skipped",
       "processed_at": "2026-09-08T10:21:09.173Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:43:5583624564:2026-09-08T10:21:11Z:clawsweeper_needs_human",
+      "comment_id": "5583624564",
+      "comment_version_key": "5583624564:2026-09-08T10:21:11Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/43#issuecomment-5583624564",
+      "comment_created_at": "2026-09-08T10:21:11Z",
+      "comment_updated_at": "2026-09-08T10:21:11Z",
+      "comment_body_sha256": "f8fe3f798c13ad7221015f5e001715c26076dd3210194aec94547370edaaa620",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The cutoff changes placement preference for all ordinary Tab5 allocations above 1 KiB, not only WebSocket buffers; its effects on existing board workloads remain physically unqualifie... (sha=d4aae3f2f07f7d2f8a59b9df1b73c63849df6edd)",
+      "expected_head_sha": "d4aae3f2f07f7d2f8a59b9df1b73c63849df6edd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T10:22:37.321Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tab5-psram-allocation-policy",
+        "head_sha": "d4aae3f2f07f7d2f8a59b9df1b73c63849df6edd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
