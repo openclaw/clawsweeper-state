@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T05:46:30.344Z",
+  "updated_at": "2026-09-08T05:46:44.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141716:5577666339:2026-09-08T01:24:36Z:re_review",
-      "comment_id": "5577666339",
-      "comment_version_key": "5577666339:2026-09-08T01:24:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141716#issuecomment-5577666339",
-      "comment_created_at": "2026-09-08T01:24:36Z",
-      "comment_updated_at": "2026-09-08T01:24:36Z",
-      "comment_body_sha256": "d54d6746c428a94334e932e37e3d08fa43eb47bcb6481a7edb0cfe58832462aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141716,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T01:31:31.591Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/vitest-scheduling-host-snapshot",
-        "head_sha": "b7a1898fad90c86c2a977cf6dbaa0af7cf2205d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141716:5577463067:2026-09-08T01:30:25Z:clawsweeper_needs_human",
       "comment_id": "5577463067",
@@ -31838,6 +31791,39 @@
         "kind": "pull_request",
         "branch": "test/remove-benchmark-compare-test-seams",
         "head_sha": "afe0662476d61d1330e7bda5740c3251daeb48f5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141899:5579921659:2026-09-08T05:45:43Z:clawsweeper_needs_human",
+      "comment_id": "5579921659",
+      "comment_version_key": "5579921659:2026-09-08T05:45:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141899#issuecomment-5579921659",
+      "comment_created_at": "2026-09-08T05:45:43Z",
+      "comment_updated_at": "2026-09-08T05:45:43Z",
+      "comment_body_sha256": "bf1fc9616e47ef438aa304ab08b76629047b1805a5a9e7fa9240fe42f9106666",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141899,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Background Tasks pane containment, native text selection, and reading-state continuity have not yet been demonstrated in the supplied emulator evidence. (sha=00587a1e6b4d9b81a88f90633f5d7ee686ee8a81)",
+      "expected_head_sha": "00587a1e6b4d9b81a88f90633f5d7ee686ee8a81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T05:46:44.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-fold-background-tasks-20260908",
+        "head_sha": "00587a1e6b4d9b81a88f90633f5d7ee686ee8a81",
         "cluster_id": null,
         "job_path": null
       }
