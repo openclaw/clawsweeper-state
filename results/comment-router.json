@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T14:52:38.991Z",
+  "updated_at": "2026-09-08T14:53:22.533Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142001:5581377688:2026-09-08T08:11:48Z:clawsweeper_needs_human",
-      "comment_id": "5581377688",
-      "comment_version_key": "5581377688:2026-09-08T08:11:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142001#issuecomment-5581377688",
-      "comment_created_at": "2026-09-08T07:55:14Z",
-      "comment_updated_at": "2026-09-08T08:11:48Z",
-      "comment_body_sha256": "a2ed222e6114ef1053c5b23935ebc5b56e9044578911cb7ff321351d4b4ee662",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142001,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new public SDK opt-in promises usable POSIX and Windows path syntax across four CLIs; available receiver evidence establishes only part of that contract, so some opted-in terminal... (sha=4b22f5c2e796bae9ec3d370671090342d1c0848d)",
-      "expected_head_sha": "4b22f5c2e796bae9ec3d370671090342d1c0848d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T08:18:07.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/node-terminal-upload-paths",
-        "head_sha": "4b22f5c2e796bae9ec3d370671090342d1c0848d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141924:5580376204:2026-09-08T08:18:00Z:clawsweeper_auto_repair",
       "comment_id": "5580376204",
@@ -32436,6 +32403,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131805:5587093210:2026-09-08T14:52:15Z:re_review",
+      "comment_id": "5587093210",
+      "comment_version_key": "5587093210:2026-09-08T14:52:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131805#issuecomment-5587093210",
+      "comment_created_at": "2026-09-08T14:52:15Z",
+      "comment_updated_at": "2026-09-08T14:52:15Z",
+      "comment_body_sha256": "4b499713466f14ae23a3811fdbf7842cd8222a1ab2435c06796990b1478c5789",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131805,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T14:53:20.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/86174-explicit-default-selection",
+        "head_sha": "e3ed58e24bda3353d0c8d97d836db6093f01421e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
