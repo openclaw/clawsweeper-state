@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:48:47.176Z",
+  "updated_at": "2026-09-08T11:48:56.933Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141808:5580088657:2026-09-08T06:03:52Z:re_review",
-      "comment_id": "5580088657",
-      "comment_version_key": "5580088657:2026-09-08T06:03:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141808#issuecomment-5580088657",
-      "comment_created_at": "2026-09-08T06:03:52Z",
-      "comment_updated_at": "2026-09-08T06:03:52Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141808,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T06:04:47.523Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dreaming-empty-workspace-noop-141787",
-        "head_sha": "6f15b2fe0258246f3f9107878ddbd12e527f739e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141908:5580113309:2026-09-08T06:06:15Z:clawsweeper_needs_human",
       "comment_id": "5580113309",
@@ -32754,6 +32707,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-explicit-gateway-auth-expected",
         "head_sha": "9b2187b8d813ebf0c7e9d27930c835bb64eaad49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw-tools:22:5550755956:2026-09-08T11:48:02Z:clawsweeper_auto_repair",
+      "comment_id": "5550755956",
+      "comment_version_key": "5550755956:2026-09-08T11:48:02Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw-tools/pull/22#issuecomment-5550755956",
+      "comment_created_at": "2026-09-05T09:02:31Z",
+      "comment_updated_at": "2026-09-08T11:48:02Z",
+      "comment_body_sha256": "1a6d1a617c29c2a7d329c48b3ce31974bc72da1b1dff85670d09c89f178be278",
+      "repo": "openclaw/nix-openclaw-tools",
+      "issue_number": 22,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=34f8030e3746d5bf24ea2e07197889280c3f0c9d)",
+      "expected_head_sha": "34f8030e3746d5bf24ea2e07197889280c3f0c9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T11:48:56.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nix-build-summarize-timeout",
+        "head_sha": "34f8030e3746d5bf24ea2e07197889280c3f0c9d",
         "cluster_id": null,
         "job_path": null
       }
