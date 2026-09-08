@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T09:31:17.141Z",
+  "updated_at": "2026-09-08T09:31:34.365Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140674:5564356475:2026-09-08T04:13:20Z:clawsweeper_auto_repair",
-      "comment_id": "5564356475",
-      "comment_version_key": "5564356475:2026-09-08T04:13:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140674#issuecomment-5564356475",
-      "comment_created_at": "2026-09-07T02:50:35Z",
-      "comment_updated_at": "2026-09-08T04:13:20Z",
-      "comment_body_sha256": "554572faca58d95dde072abd09f1122d10df8d611a0fa30a83138d7d6d1341ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140674,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=591b5354c85ec5c598e2496d03ddd8bafc21b158)",
-      "expected_head_sha": "591b5354c85ec5c598e2496d03ddd8bafc21b158",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T04:32:37.700Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/db-next-registry-repair4",
-        "head_sha": "591b5354c85ec5c598e2496d03ddd8bafc21b158",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141134:5569403476:2026-09-08T04:17:03Z:clawsweeper_needs_human",
       "comment_id": "5569403476",
@@ -32890,6 +32857,53 @@
       "status": "skipped",
       "processed_at": "2026-09-08T09:31:17.141Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142008:5582714204:2026-09-08T09:30:35Z:re_review",
+      "comment_id": "5582714204",
+      "comment_version_key": "5582714204:2026-09-08T09:30:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142008#issuecomment-5582714204",
+      "comment_created_at": "2026-09-08T09:30:35Z",
+      "comment_updated_at": "2026-09-08T09:30:35Z",
+      "comment_body_sha256": "9063db4d344faaaedb5f5b3c525a7c5e826b81ec15d1a619b2e0035b6c2c31b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142008,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T09:31:32.033Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-multiline-command-projection",
+        "head_sha": "22f6d5281a0c25f41c739af93b65586f8430b8e7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
