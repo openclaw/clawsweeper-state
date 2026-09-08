@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:20:21.662Z",
+  "updated_at": "2026-09-08T19:21:22.948Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141825:5579069648:2026-09-08T14:33:35Z:clawsweeper_needs_human",
-      "comment_id": "5579069648",
-      "comment_version_key": "5579069648:2026-09-08T14:33:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141825#issuecomment-5579069648",
-      "comment_created_at": "2026-09-08T04:12:35Z",
-      "comment_updated_at": "2026-09-08T14:33:35Z",
-      "comment_body_sha256": "d935909136b62770b2af80018efed1f6a78b81af575dff95c678c75a963aba53",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141825,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Opting in suppresses billing and permanent-credential failure backoff as well as rate limits, so broken credentials can be retried every turn and stored failure markers disappear from... (sha=9a941c8f2e5f2c087be6f999fedd9559450aa261)",
-      "expected_head_sha": "9a941c8f2e5f2c087be6f999fedd9559450aa261",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T14:34:36.202Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "claude/configurable-cooldown-bypass-nqy5z6",
-        "head_sha": "9a941c8f2e5f2c087be6f999fedd9559450aa261",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141825:5580010723:2026-09-08T05:55:38Z:re_review",
       "comment_id": "5580010723",
@@ -32700,6 +32667,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142279:5590545261:2026-09-08T19:20:26Z:re_review",
+      "comment_id": "5590545261",
+      "comment_version_key": "5590545261:2026-09-08T19:20:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142279#issuecomment-5590545261",
+      "comment_created_at": "2026-09-08T19:20:26Z",
+      "comment_updated_at": "2026-09-08T19:20:26Z",
+      "comment_body_sha256": "614f341bbdd2a07f8c32a8b0db55c86cfb334cda8b2536f140f500f0ac7bf970",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142279,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T19:21:20.259Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/exec-reviewer-transcript-context",
+        "head_sha": "9744e6d666c19e03b1d920e325a043d40c7f2c81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
