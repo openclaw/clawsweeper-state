@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T03:30:13.260Z",
+  "updated_at": "2026-09-08T03:30:19.512Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141544:5575608873:2026-09-07T21:29:47Z:clawsweeper_needs_human",
-      "comment_id": "5575608873",
-      "comment_version_key": "5575608873:2026-09-07T21:29:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141544#issuecomment-5575608873",
-      "comment_created_at": "2026-09-07T21:02:58Z",
-      "comment_updated_at": "2026-09-07T21:29:47Z",
-      "comment_body_sha256": "721e850e75ee2252b52da080aec72ed945979f5904816344c11fdfc4fa0e5505",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141544,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The live Telegram preview/final lifecycle remains unverified because the requested proof service returned HTTP 500 without observations. (sha=53be35ce84b35cdfa48269c11a2c92185f93380f)",
-      "expected_head_sha": "53be35ce84b35cdfa48269c11a2c92185f93380f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-07T21:41:20.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/137927",
-        "head_sha": "53be35ce84b35cdfa48269c11a2c92185f93380f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141553:5575614936:2026-09-07T21:38:46Z:clawsweeper_needs_human",
       "comment_id": "5575614936",
@@ -32662,6 +32629,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113089:5578669660:2026-09-08T03:29:25Z:re_review",
+      "comment_id": "5578669660",
+      "comment_version_key": "5578669660:2026-09-08T03:29:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113089#issuecomment-5578669660",
+      "comment_created_at": "2026-09-08T03:29:25Z",
+      "comment_updated_at": "2026-09-08T03:29:25Z",
+      "comment_body_sha256": "0ed8a26d1f0401d0dbff0a383252b80d5417f7144ca2831c6ee813026e46f692",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113089,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T03:30:17.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/spawn-session-id",
+        "head_sha": "5dfa2aa88dbf471acad0cdd2a7e16d4cd56b6654",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
