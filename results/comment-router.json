@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T02:10:43.007Z",
+  "updated_at": "2026-09-08T02:10:54.707Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141481:5575108124:2026-09-07T19:55:57Z:re_review",
-      "comment_id": "5575108124",
-      "comment_version_key": "5575108124:2026-09-07T19:55:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141481#issuecomment-5575108124",
-      "comment_created_at": "2026-09-07T19:55:57Z",
-      "comment_updated_at": "2026-09-07T19:55:57Z",
-      "comment_body_sha256": "ed65a552d93ccdaacf3d9f47bc8d9df2f6cf656e5d348bd66d2c8add1d18c830",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141481,
-      "author": "schjonhaug",
-      "author_id": 84225,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T19:57:37.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/workboard-clickable-note-links",
-        "head_sha": "fec2a60e36eb62804d040d131f33f016e049c84e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:74940:4350593201:2026-09-07T19:52:00Z:clawsweeper_auto_repair",
       "comment_id": "4350593201",
@@ -33038,6 +32991,39 @@
         "kind": "pull_request",
         "branch": "chore/phase3-notes-deps",
         "head_sha": "d7f228bb8c61772cdd467c6c0be68b485b7bf4b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:236:5540046725:2026-09-08T02:09:36Z:clawsweeper_needs_human",
+      "comment_id": "5540046725",
+      "comment_version_key": "5540046725:2026-09-08T02:09:36Z",
+      "comment_url": "https://github.com/openclaw/clickclack/pull/236#issuecomment-5540046725",
+      "comment_created_at": "2026-09-04T11:52:47Z",
+      "comment_updated_at": "2026-09-08T02:09:36Z",
+      "comment_body_sha256": "23355cc173fe9d5b2d47a1c2734110dca8236f0768eb49c259a549f99ef55376",
+      "repo": "openclaw/clickclack",
+      "issue_number": 236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The consolidated notes describe open sibling changes, and their overlapping embedded bundles have not yet been verified together after landing. (sha=71789389988fe47d120a3eeb39ea28e7d7348039)",
+      "expected_head_sha": "71789389988fe47d120a3eeb39ea28e7d7348039",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T02:10:54.707Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/oss-sweep-renderer-20260904",
+        "head_sha": "71789389988fe47d120a3eeb39ea28e7d7348039",
         "cluster_id": null,
         "job_path": null
       }
