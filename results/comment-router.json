@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T04:50:22.338Z",
+  "updated_at": "2026-09-08T04:50:29.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141648:5576772280:2026-09-07T23:36:05Z:re_review",
-      "comment_id": "5576772280",
-      "comment_version_key": "5576772280:2026-09-07T23:36:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141648#issuecomment-5576772280",
-      "comment_created_at": "2026-09-07T23:36:05Z",
-      "comment_updated_at": "2026-09-07T23:36:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141648,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T23:39:30.719Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/root-docker-frozen-source",
-        "head_sha": "71201330b96ba418f7ef789949b2410080771447",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141451:5576778012:2026-09-07T23:36:39Z:re_review",
       "comment_id": "5576778012",
@@ -32452,6 +32405,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-141042-sqlite-sidecar-stat-cache",
         "head_sha": "89a3decc00d1f0a1e52fc2d886259e56ce16c08d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141847:5579417884:2026-09-08T04:49:36Z:clawsweeper_needs_human",
+      "comment_id": "5579417884",
+      "comment_version_key": "5579417884:2026-09-08T04:49:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141847#issuecomment-5579417884",
+      "comment_created_at": "2026-09-08T04:49:36Z",
+      "comment_updated_at": "2026-09-08T04:49:36Z",
+      "comment_body_sha256": "8d4e652cac2b8247f843195ee78c9fd7bda8521283fbeb58883d38e94884ddfe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141847,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=efbe56a52f413a54298c2a21f26019a1ab4297cc)",
+      "expected_head_sha": "efbe56a52f413a54298c2a21f26019a1ab4297cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T04:50:29.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-runtime-deslop",
+        "head_sha": "efbe56a52f413a54298c2a21f26019a1ab4297cc",
         "cluster_id": null,
         "job_path": null
       }
