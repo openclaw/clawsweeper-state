@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142200"
-mode: "autonomous"
-run_id: "34235573355"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34235573355"
-head_sha: "96e359e46d1b87ab8a9d73d939191fd1ff229263"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-08T15:20:04.241Z"
+mode: "plan"
+run_id: "34245567456"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34245567456"
+head_sha: "f789a4a58f814a5ad36da46a15013ca29ae2d3f2"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-08T15:40:53.858Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142200"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142200"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34235573355](https://github.com/openclaw/clawsweeper/actions/runs/34235573355)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34245567456](https://github.com/openclaw/clawsweeper/actions/runs/34245567456)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/142200
 
 ## Summary
 
-Confirmed the suppression mechanism on preflight main 1b011fe705abb14d163100f886d38e3a2b50f100. Prepared a narrow fix plan. Implementation and full regression validation are blocked by the read-only workspace and absent dependencies; no files or GitHub state changed.
+Plan a focused repair for #142200. The clean checkout matches preflight main 8ad9f570ebfcb8ca94ef4790f2149ad545f4b644 and retains the reported suppression mechanism. No code or GitHub changes were made; executable reproduction and validation remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Confirmed the suppression mechanism on preflight main 1b011fe705abb14d163100f886
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142200 | fix_needed | planned | canonical | The reported ordinary recovery defect remains present and has a focused owner-level repair path. Keep the issue open. |
-| #108455 | keep_closed | skipped | related | Historical safeguard to preserve, not a fix for recurring healthy-loop heartbeat lateness. |
-| cluster:issue-openclaw-openclaw-142200 | build_fix_artifact | planned | canonical | Artifact preparation is possible; applying and validating it requires a writable executor. No unresolved product decision is needed. |
+| https://github.com/openclaw/openclaw/issues/142200 | fix_needed | planned | canonical | Preserve #142200 as the canonical issue and prepare one implementation PR after demonstrating the defect at the heartbeat boundary. |
 
 ## Needs Human
 
