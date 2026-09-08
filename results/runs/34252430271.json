@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142336",
+  "mode": "autonomous",
+  "run_id": "34252430271",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34252430271",
+  "head_sha": "2690dafa8c3382d05e733af9dfdc31c804b7305d",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142336.md",
+  "published_at": "2026-09-08T17:26:20.594Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142336",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142336",
+  "canonical_pr": null,
+  "summary": "Confirmed the collision in source at preflight main 8d79c6ab2c3dd3db8716bec325a4d846d3ce34c5. Prepared a narrow repair plan. Implementation, failing regression, validation, and real Telegram proof are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#142336",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142336",
+      "candidate_fix": null,
+      "reason": "Restore existing Telegram command ownership through the existing channel name mapper without changing authorization or global command semantics."
+    },
+    {
+      "target": "#102805",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact historical ref for central OpenClaw security handling without mutation. Its security review is outside this command-routing repair."
+    },
+    {
+      "target": "#137685",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context, not an open repair or closure target."
+    },
+    {
+      "target": "#140821",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct process-lifecycle defect with separate implementation tracking; leave open outside this cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142336",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#142336",
+      "candidate_fix": null,
+      "reason": "One narrow new-fix path is supported by source evidence; the executor must first establish the failing regression on refreshed main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142336",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#142336",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked until an executor with a writable, dependency-ready checkout completes reproduction, repair, review, required checks, and redacted Telegram proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "keep_independent": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
