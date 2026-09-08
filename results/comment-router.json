@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T19:37:21.127Z",
+  "updated_at": "2026-09-08T19:38:51.232Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142151:5585287135:2026-09-08T15:11:53Z:clawsweeper_needs_human",
-      "comment_id": "5585287135",
-      "comment_version_key": "5585287135:2026-09-08T15:11:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142151#issuecomment-5585287135",
-      "comment_created_at": "2026-09-08T12:41:01Z",
-      "comment_updated_at": "2026-09-08T15:11:53Z",
-      "comment_body_sha256": "5d165616bc54961026a02a95c5ce1fb334a436637372b83e20551fb9102460c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142151,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the Gateway guard, Slack per-send fetch binding, and upload fence have meaningful mocked coverage, but no suppl...; Review finding: [medium] Production revocation coverage remains incomplete — extensions/slack/src/client-options.ts:185 (sha=11480063dda3c55256ec884501fe36f8349dff2b)",
-      "expected_head_sha": "11480063dda3c55256ec884501fe36f8349dff2b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T15:13:10.469Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-slack-transport-stack-20260908",
-        "head_sha": "11480063dda3c55256ec884501fe36f8349dff2b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142230:5586732338:2026-09-08T15:11:52Z:clawsweeper_auto_repair",
       "comment_id": "5586732338",
@@ -32720,6 +32687,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142461:5590771231:2026-09-08T19:37:52Z:re_review",
+      "comment_id": "5590771231",
+      "comment_version_key": "5590771231:2026-09-08T19:37:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142461#issuecomment-5590771231",
+      "comment_created_at": "2026-09-08T19:37:52Z",
+      "comment_updated_at": "2026-09-08T19:37:52Z",
+      "comment_body_sha256": "e8ef69618e725ab66ec7022b2086d04139f92a846598101a1c78c1d01cd2048c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142461,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T19:38:49.004Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/2026-7-33-hermetic-clawhub",
+        "head_sha": "bc6fcd851edd64895acad0d3a7d83dcc115d1287",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
