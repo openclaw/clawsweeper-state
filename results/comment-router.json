@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-08T23:16:59.909Z",
+  "updated_at": "2026-09-08T23:18:45.827Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5584991089:2026-09-08T12:17:07Z:re_review",
-      "comment_id": "5584991089",
-      "comment_version_key": "5584991089:2026-09-08T12:17:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5584991089",
-      "comment_created_at": "2026-09-08T12:17:07Z",
-      "comment_updated_at": "2026-09-08T12:17:07Z",
-      "comment_body_sha256": "e899ddafb3685603d88d4ea368329e61a6df5c42f2eaecc0e64796d6a8d44dde",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `43e8aba956dbbd92ac9db26012fdc41c959515f0`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T18:18:50.147Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5530258549:2026-09-03T18:26:16Z:re_review",
       "comment_id": "5530258549",
@@ -33232,6 +33205,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142552:5591695969:2026-09-08T23:17:04Z:clawsweeper_needs_human",
+      "comment_id": "5591695969",
+      "comment_version_key": "5591695969:2026-09-08T23:17:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142552#issuecomment-5591695969",
+      "comment_created_at": "2026-09-08T20:51:26Z",
+      "comment_updated_at": "2026-09-08T23:17:04Z",
+      "comment_body_sha256": "8ea8eebebaeaa07447ea310d4e71609be4caf4d78f7407cf4bc8502a949321dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142552,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Publishing a new helper through the deprecated media-runtime barrel creates a third-party contract before its supported location and documentation have owner acceptance. (sha=9d77ebd0f29ad1bf1028ea6cfb8c6b024c94f451)",
+      "expected_head_sha": "9d77ebd0f29ad1bf1028ea6cfb8c6b024c94f451",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T23:18:45.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-audio-duration-main",
+        "head_sha": "9d77ebd0f29ad1bf1028ea6cfb8c6b024c94f451",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
