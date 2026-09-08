@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-141787"
-mode: "autonomous"
-run_id: "34181886001"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34181886001"
+mode: "plan"
+run_id: "34183991575"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34183991575"
 head_sha: "da1f56d61a5eeaf160b84fddd8edc5411ea6eeb1"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-08T03:05:21.211Z"
-canonical: "https://github.com/openclaw/openclaw/issues/141787"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/141787"
+published_at: "2026-09-08T03:39:13.177Z"
+canonical: "#141787"
+canonical_issue: "#141787"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34181886001](https://github.com/openclaw/clawsweeper/actions/runs/34181886001)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34183991575](https://github.com/openclaw/clawsweeper/actions/runs/34183991575)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/141787
+Canonical: #141787
 
 ## Summary
 
-Source confirms the reported lifecycle defect on preflight main. Prepared a narrow fix plan; implementation and runtime reproduction are blocked by the read-only filesystem and missing dependencies. No GitHub mutations occurred.
+Plan a narrow first-run lifecycle repair for #141787. No files or GitHub state changed. Runtime reproduction, refreshed-main verification, and existing-PR discovery remain prerequisites for implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source confirms the reported lifecycle defect on preflight main. Prepared a narr
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #141787 | fix_needed | blocked | canonical | Implementation is blocked in this read-only worker. The executor must first reproduce the original sequence on refreshed main and recheck existing PR ownership before making changes. |
-| cluster:issue-openclaw-openclaw-141787 | build_fix_artifact | planned |  | A bounded ordinary bug repair remains justified by current source. Runtime reproduction and successful validation remain prerequisites to publication. |
+| #141787 | fix_needed | planned | canonical | The supplied evidence supports a bounded bug repair. Keep the issue open and prepare one implementation path; merge and closure are prohibited by this job. |
 
 ## Needs Human
 
