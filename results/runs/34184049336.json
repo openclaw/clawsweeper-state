@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-141813",
+  "mode": "autonomous",
+  "run_id": "34184049336",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34184049336",
+  "head_sha": "da1f56d61a5eeaf160b84fddd8edc5411ea6eeb1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-141813.md",
+  "published_at": "2026-09-08T04:14:38.718Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/141813",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/141813",
+  "canonical_pr": null,
+  "summary": "Verified the missing picker-open discovery wiring on preflight main 2da0ae724dae7b858de0bb7b5e9eb602be937a6b. Prepared a narrow fix artifact. Local implementation and regression proof are blocked by the read-only workspace and missing dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#141813",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#141813",
+      "candidate_fix": null,
+      "reason": "Only local implementation is blocked. A writable executor must establish the failing regression before applying the source-supported repair."
+    },
+    {
+      "target": "#104545",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing replace-mode work and filtering semantics; it is not a duplicate of #141813."
+    },
+    {
+      "target": "#123150",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; do not reopen, replace, merge, or close this PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-141813",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#141813",
+      "candidate_fix": null,
+      "reason": "The defect has a narrow source-supported repair path. Delegate implementation and required failing-then-passing proof to the writable executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
