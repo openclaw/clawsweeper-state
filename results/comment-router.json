@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:18:50.919Z",
+  "updated_at": "2026-09-08T16:19:01.109Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140933:5566233865:2026-09-08T09:40:37Z:clawsweeper_needs_human",
-      "comment_id": "5566233865",
-      "comment_version_key": "5566233865:2026-09-08T09:40:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140933#issuecomment-5566233865",
-      "comment_created_at": "2026-09-07T06:48:24Z",
-      "comment_updated_at": "2026-09-08T09:40:37Z",
-      "comment_body_sha256": "ce8a04efc8251506ffc798ce933060d36009c3ecb87353be3c2c50ae1db18168",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140933,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The shared setting and optional SDK field create a lasting configuration contract: explicitly setting a deadline can now terminate primary reads that were previously unbounded. Defaul... (sha=9df902471dadab73e171a1b243ff8601fe6550da)",
-      "expected_head_sha": "9df902471dadab73e171a1b243ff8601fe6550da",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T09:41:36.899Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/memory-search-timeout-config",
-        "head_sha": "9df902471dadab73e171a1b243ff8601fe6550da",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:140933:5567619463:2026-09-07T08:21:57Z:re_review",
       "comment_id": "5567619463",
@@ -32306,6 +32273,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142248:5588134580:2026-09-08T16:18:06Z:re_review",
+      "comment_id": "5588134580",
+      "comment_version_key": "5588134580:2026-09-08T16:18:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142248#issuecomment-5588134580",
+      "comment_created_at": "2026-09-08T16:03:39Z",
+      "comment_updated_at": "2026-09-08T16:18:06Z",
+      "comment_body_sha256": "63a164998da5ca39477e41e1286f4859b3a5e120641e5db3279e1adbaaa1a70a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142248,
+      "author": "TheAngryPit",
+      "author_id": 7040636,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T16:18:58.087Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dev-node-candidate-preflight",
+        "head_sha": "1fac01c21f8cc5a83fa01f6e46359319a4b5b210",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
