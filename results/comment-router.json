@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T16:15:05.345Z",
+  "updated_at": "2026-09-08T16:15:11.745Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142067:5582824663:2026-09-08T09:37:03Z:re_review",
-      "comment_id": "5582824663",
-      "comment_version_key": "5582824663:2026-09-08T09:37:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142067#issuecomment-5582824663",
-      "comment_created_at": "2026-09-08T09:37:03Z",
-      "comment_updated_at": "2026-09-08T09:37:03Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142067,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T09:38:01.503Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-chromeos-cohort",
-        "head_sha": "7145928c253dcb869504bfa374974f19dcb167b3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131281:5446801933:2026-09-08T09:34:28Z:clawsweeper_needs_human",
       "comment_id": "5446801933",
@@ -32355,6 +32308,39 @@
         "kind": "pull_request",
         "branch": "openclaw/pr138726-split-s-state",
         "head_sha": "16d6648cff48e548fe791edce9ff7c3193d467bd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142296:5588273226:2026-09-08T16:13:55Z:clawsweeper_needs_human",
+      "comment_id": "5588273226",
+      "comment_version_key": "5588273226:2026-09-08T16:13:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142296#issuecomment-5588273226",
+      "comment_created_at": "2026-09-08T16:13:55Z",
+      "comment_updated_at": "2026-09-08T16:13:55Z",
+      "comment_body_sha256": "4d751ca0561edb6523b408b644ccf13fc99ab912b9e5b21a8c23a7e0e4369ea8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142296,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the new offer route consumes a connection-bound bearer capability, but supplied evidence only rejects leases al...; Review finding: [P2] Cancel pending offers when their captured connection retires — apps/android/app/src/main/java/ai/openclaw/app/gateway/GatewayRealtimeOffer.kt:47-49 - [medium]... (sha=53ce336b3f7f5684fb0c9017408b2bbfc2ac1bd6)",
+      "expected_head_sha": "53ce336b3f7f5684fb0c9017408b2bbfc2ac1bd6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T16:15:11.744Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr138726-split-m-media",
+        "head_sha": "53ce336b3f7f5684fb0c9017408b2bbfc2ac1bd6",
         "cluster_id": null,
         "job_path": null
       }
