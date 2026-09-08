@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T04:49:20.618Z",
+  "updated_at": "2026-09-08T04:49:43.755Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141652:5576780479:2026-09-07T23:36:54Z:re_review",
-      "comment_id": "5576780479",
-      "comment_version_key": "5576780479:2026-09-07T23:36:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141652#issuecomment-5576780479",
-      "comment_created_at": "2026-09-07T23:36:54Z",
-      "comment_updated_at": "2026-09-07T23:36:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141652,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T23:37:46.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-legacy-same-version-update",
-        "head_sha": "72a28692f4723039b8e3728a99f612a744ce70c7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141642:5576532043:2026-09-07T23:37:05Z:clawsweeper_needs_human",
       "comment_id": "5576532043",
@@ -32469,6 +32422,39 @@
       "status": "skipped",
       "processed_at": "2026-09-08T04:49:20.618Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141808:5578647727:2026-09-08T04:48:18Z:clawsweeper_needs_human",
+      "comment_id": "5578647727",
+      "comment_version_key": "5578647727:2026-09-08T04:48:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141808#issuecomment-5578647727",
+      "comment_created_at": "2026-09-08T03:26:34Z",
+      "comment_updated_at": "2026-09-08T04:48:18Z",
+      "comment_body_sha256": "4576ab0af4c44e40ca74a424c060c1f18d6c3b8256161a7f9c09ed0e4e300456",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141808,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence contains helper tests and suite results, but no real scheduled sweep exercising the new deep-report gate and observing it... (sha=27ab67c3b17d00901bb45abf913fff301eac30a1)",
+      "expected_head_sha": "27ab67c3b17d00901bb45abf913fff301eac30a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T04:49:43.755Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dreaming-empty-workspace-noop-141787",
+        "head_sha": "27ab67c3b17d00901bb45abf913fff301eac30a1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
