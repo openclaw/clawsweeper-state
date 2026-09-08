@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T11:04:24.686Z",
+  "updated_at": "2026-09-08T11:04:39.569Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141893:5579894516:2026-09-08T05:42:41Z:freeform_assist",
-      "comment_id": "5579894516",
-      "comment_version_key": "5579894516:2026-09-08T05:42:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141893#issuecomment-5579894516",
-      "comment_created_at": "2026-09-08T05:42:41Z",
-      "comment_updated_at": "2026-09-08T05:42:41Z",
-      "comment_body_sha256": "f20f43844835effe250affddbb46bcd64e5358decdff7ca966ea92dccdf342ac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141893,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nexact head now also keeps the selected upgrade-survivor runner, assertions, and fixtures as one target-owned scenario directory. this addresses the same mixed-generation invariant and the high-fanout `assert-exec-approvals`/clawhub failures. focused proof and final p1 autoreview are clean.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T05:43:29.372Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-onboard-fixture-contract",
-        "head_sha": "7ff9470f3f2c4e0eeddbec3f66b7f662f7b4ed12",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:165:5578672354:2026-09-08T05:42:48Z:clawsweeper_needs_human",
       "comment_id": "5578672354",
@@ -32850,6 +32803,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-skills-acquisition-142106",
         "head_sha": "7f08fd8199ef921b16a5806069fd622108908191",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142125:5584136005:2026-09-08T11:03:25Z:clawsweeper_needs_human",
+      "comment_id": "5584136005",
+      "comment_version_key": "5584136005:2026-09-08T11:03:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142125#issuecomment-5584136005",
+      "comment_created_at": "2026-09-08T11:03:25Z",
+      "comment_updated_at": "2026-09-08T11:03:25Z",
+      "comment_body_sha256": "ebdb6e64d99af6d4034878d754bba8a62a2f804dd15bb6ea97bbc9d0d3f09cce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142125,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=92a1ef0b901f9b4b272682fc2fc623b75795c8f3)",
+      "expected_head_sha": "92a1ef0b901f9b4b272682fc2fc623b75795c8f3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T11:04:39.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-vllm-policy-import",
+        "head_sha": "92a1ef0b901f9b4b272682fc2fc623b75795c8f3",
         "cluster_id": null,
         "job_path": null
       }
