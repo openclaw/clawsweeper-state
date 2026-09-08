@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T18:51:52.090Z",
+  "updated_at": "2026-09-08T18:52:28.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1423:5586194818:2026-09-08T13:49:59Z:re_review",
-      "comment_id": "5586194818",
-      "comment_version_key": "5586194818:2026-09-08T13:49:59Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1423#issuecomment-5586194818",
-      "comment_created_at": "2026-09-08T13:49:59Z",
-      "comment_updated_at": "2026-09-08T13:49:59Z",
-      "comment_body_sha256": "1f6cb8b6028355125acff61f0374c06ee40ad846a61120f1768dd358dfe19018",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1423,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T13:55:06.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-work-state-timeout",
-        "head_sha": "51f325bd50bbb60b4aee8d3c9974cf43188054d6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142196:5586254225:2026-09-08T13:54:17Z:clawsweeper_needs_human",
       "comment_id": "5586254225",
@@ -32753,6 +32706,39 @@
         "kind": "pull_request",
         "branch": "fix/2026-7-33-opencode-live-session",
         "head_sha": "bad2785db95cbf3e8209c5649ef57820ed378166",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139171:5553272812:2026-09-08T18:51:20Z:clawsweeper_needs_human",
+      "comment_id": "5553272812",
+      "comment_version_key": "5553272812:2026-09-08T18:51:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139171#issuecomment-5553272812",
+      "comment_created_at": "2026-09-05T16:43:37Z",
+      "comment_updated_at": "2026-09-08T18:51:20Z",
+      "comment_body_sha256": "1c31db7a3d1d91ef984682c85c246b606116cd1c3694a1ec32be46ea6d52a995",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139171,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with threadParticipation enabled will process additional unmentioned messages before the first reply; operators who relied on the documented first-reply thresho... (sha=9598c5da9ea5660306a874c57cb77a168759cbcf)",
+      "expected_head_sha": "9598c5da9ea5660306a874c57cb77a168759cbcf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T18:52:28.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-inflight-thread-followups",
+        "head_sha": "9598c5da9ea5660306a874c57cb77a168759cbcf",
         "cluster_id": null,
         "job_path": null
       }
