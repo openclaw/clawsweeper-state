@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-08T05:42:48.799Z",
+  "updated_at": "2026-09-08T05:43:31.955Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131624:5450451641:2026-09-08T01:27:42Z:clawsweeper_needs_human",
-      "comment_id": "5450451641",
-      "comment_version_key": "5450451641:2026-09-08T01:27:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131624#issuecomment-5450451641",
-      "comment_created_at": "2026-08-28T08:50:12Z",
-      "comment_updated_at": "2026-09-08T01:27:42Z",
-      "comment_body_sha256": "9b167685dae25c4f22f74dade68f4040e54521973ca9b0bb3c0bb82b7d4d4572",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Supplied GitHub metadata reports merge conflicts; there is no verified test-merge tree to assess conflict resolution against current main. (sha=12abe2415684652a557f4fa39a1fd3d2010ae099)",
-      "expected_head_sha": "12abe2415684652a557f4fa39a1fd3d2010ae099",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T01:28:44.119Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scalar-validation-error-127329",
-        "head_sha": "12abe2415684652a557f4fa39a1fd3d2010ae099",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/poltergeist:222:5577496521:2026-09-08T01:24:06Z:clawsweeper_needs_human",
       "comment_id": "5577496521",
@@ -31793,6 +31760,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141893:5579894516:2026-09-08T05:42:41Z:freeform_assist",
+      "comment_id": "5579894516",
+      "comment_version_key": "5579894516:2026-09-08T05:42:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141893#issuecomment-5579894516",
+      "comment_created_at": "2026-09-08T05:42:41Z",
+      "comment_updated_at": "2026-09-08T05:42:41Z",
+      "comment_body_sha256": "f20f43844835effe250affddbb46bcd64e5358decdff7ca966ea92dccdf342ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141893,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nexact head now also keeps the selected upgrade-survivor runner, assertions, and fixtures as one target-owned scenario directory. this addresses the same mixed-generation invariant and the high-fanout `assert-exec-approvals`/clawhub failures. focused proof and final p1 autoreview are clean.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-08T05:43:29.372Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frozen-onboard-fixture-contract",
+        "head_sha": "7ff9470f3f2c4e0eeddbec3f66b7f662f7b4ed12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
