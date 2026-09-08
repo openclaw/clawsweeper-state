@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-08T04:41:03.398Z",
+  "updated_at": "2026-09-08T04:41:16.025Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141652:5576685105:2026-09-07T23:27:13Z:re_review",
-      "comment_id": "5576685105",
-      "comment_version_key": "5576685105:2026-09-07T23:27:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141652#issuecomment-5576685105",
-      "comment_created_at": "2026-09-07T23:27:13Z",
-      "comment_updated_at": "2026-09-07T23:27:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141652,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-07T23:28:22.988Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-legacy-same-version-update",
-        "head_sha": "72a28692f4723039b8e3728a99f612a744ce70c7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141621:5576252113:2026-09-07T23:25:43Z:clawsweeper_needs_human",
       "comment_id": "5576252113",
@@ -32489,6 +32442,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:41:5579339339:2026-09-08T04:40:27Z:clawsweeper_needs_human",
+      "comment_id": "5579339339",
+      "comment_version_key": "5579339339:2026-09-08T04:40:27Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/41#issuecomment-5579339339",
+      "comment_created_at": "2026-09-08T04:40:27Z",
+      "comment_updated_at": "2026-09-08T04:40:27Z",
+      "comment_body_sha256": "a861de0a88e1e10cf20b8447adbfccd846979853f70ea9ea46c21b0aec764216",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 41,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a56ffda3c16090ddb039d4e0440dc161de88ab1f)",
+      "expected_head_sha": "a56ffda3c16090ddb039d4e0440dc161de88ab1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-08T04:41:16.025Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci/tab5-build-symbols",
+        "head_sha": "a56ffda3c16090ddb039d4e0440dc161de88ab1f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
