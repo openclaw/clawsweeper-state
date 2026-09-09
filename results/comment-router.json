@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T23:41:51.742Z",
+  "updated_at": "2026-09-09T23:42:05.632Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143183:5603810720:2026-09-09T17:52:10Z:clawsweeper_needs_human",
-      "comment_id": "5603810720",
-      "comment_version_key": "5603810720:2026-09-09T17:52:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143183#issuecomment-5603810720",
-      "comment_created_at": "2026-09-09T14:46:35Z",
-      "comment_updated_at": "2026-09-09T17:52:10Z",
-      "comment_body_sha256": "c4bc0ec304594b16171a7eb1eb5d434716200e487d65f409bee16e1f54d2e403",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143183,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing report/export clients using the old default /reports URLs can stop working after upgrade unless operators update URLs or explicitly pin basePath; this transition is accepted... (sha=f3b2b11645e5cb6fc6f9c66f99e110ae95bbd1e3)",
-      "expected_head_sha": "f3b2b11645e5cb6fc6f9c66f99e110ae95bbd1e3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T18:08:17.246Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/team-reports-url-f9f107",
-        "head_sha": "f3b2b11645e5cb6fc6f9c66f99e110ae95bbd1e3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143228:5604980327:2026-09-09T17:53:45Z:clawsweeper_needs_human",
       "comment_id": "5604980327",
@@ -32724,6 +32691,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141797:5610304641:2026-09-09T23:41:08Z:re_review",
+      "comment_id": "5610304641",
+      "comment_version_key": "5610304641:2026-09-09T23:41:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141797#issuecomment-5610304641",
+      "comment_created_at": "2026-09-09T23:41:08Z",
+      "comment_updated_at": "2026-09-09T23:41:08Z",
+      "comment_body_sha256": "98d5e91d70079280cee565a6886bd83a010212369f6be6236de7c64b5071fe03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141797,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T23:42:03.797Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/recovery-channel-progress",
+        "head_sha": "dcc1f62f270bd4af5f73b4470986cfcda2f32af3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
