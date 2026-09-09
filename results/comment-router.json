@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T11:35:47.314Z",
+  "updated_at": "2026-09-09T11:36:54.498Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142782:5594834302:2026-09-09T04:40:43Z:clawsweeper_auto_repair",
-      "comment_id": "5594834302",
-      "comment_version_key": "5594834302:2026-09-09T04:40:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142782#issuecomment-5594834302",
-      "comment_created_at": "2026-09-09T02:25:46Z",
-      "comment_updated_at": "2026-09-09T04:40:43Z",
-      "comment_body_sha256": "32f48e3fb2d0259cbb79a24b88433bca79789b833cf4d5bdbdb5ade1321f5a52",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142782,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=80307730d610e3a4e5131aa86c826c498278f52f)",
-      "expected_head_sha": "80307730d610e3a4e5131aa86c826c498278f52f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T04:41:39.232Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-771-unified-plugin-catalog",
-        "head_sha": "80307730d610e3a4e5131aa86c826c498278f52f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3648:5595909116:2026-09-09T04:41:32Z:clawsweeper_auto_repair",
       "comment_id": "5595909116",
@@ -33489,6 +33456,39 @@
       "status": "skipped",
       "processed_at": "2026-09-09T11:35:47.314Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143067:5600974727:2026-09-09T11:35:53Z:clawsweeper_needs_human",
+      "comment_id": "5600974727",
+      "comment_version_key": "5600974727:2026-09-09T11:35:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143067#issuecomment-5600974727",
+      "comment_created_at": "2026-09-09T11:18:54Z",
+      "comment_updated_at": "2026-09-09T11:35:53Z",
+      "comment_body_sha256": "8c57a204a1b11eba34198f43de338e41e869c9ffc151a79817f558421f695c2f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Scripts passing an explicitly blank --account will now fail instead of reaching default or broader account lookup; callers seeking the default scope must omit the option, as documente... (sha=eb436db578ad08b75d1f11dc89e4cced71234fc3)",
+      "expected_head_sha": "eb436db578ad08b75d1f11dc89e4cced71234fc3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T11:36:54.498Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/channels-blank-account-readonly",
+        "head_sha": "eb436db578ad08b75d1f11dc89e4cced71234fc3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
