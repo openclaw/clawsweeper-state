@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T00:37:17.719Z",
+  "updated_at": "2026-09-09T00:37:45.922Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120569:5226146956:2026-09-03T00:16:21Z:clawsweeper_auto_repair",
-      "comment_id": "5226146956",
-      "comment_version_key": "5226146956:2026-09-03T00:16:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120569#issuecomment-5226146956",
-      "comment_created_at": "2026-08-08T12:41:25Z",
-      "comment_updated_at": "2026-09-03T00:16:21Z",
-      "comment_body_sha256": "d1027ca9d6b9c05a51b3454f51c93ce646c6f7585358a01b96dd6f0cd66f3fab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120569,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=325722185315037a380d9e3fd0734c587413ff4e)",
-      "expected_head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T19:21:35.843Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-120356",
-        "head_sha": "325722185315037a380d9e3fd0734c587413ff4e",
-        "cluster_id": "automerge-openclaw-openclaw-120569",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-120569.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126056:5335368176:2026-09-04T07:54:40Z:clawsweeper_needs_human",
       "comment_id": "5335368176",
@@ -33180,6 +33147,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129535:5415915733:2026-09-09T00:36:33Z:clawsweeper_needs_human",
+      "comment_id": "5415915733",
+      "comment_version_key": "5415915733:2026-09-09T00:36:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129535#issuecomment-5415915733",
+      "comment_created_at": "2026-08-25T19:53:26Z",
+      "comment_updated_at": "2026-09-09T00:36:33Z",
+      "comment_body_sha256": "8b1e261adf7c0869786cdcef3a7a3b152fd85fdc742a12b29a9725ea8ee71ecd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the new retained attachment has mocked runner and FakeSocket coverage, but no production-path trace shows one a...; Review finding: [P1] Carry transcript-only requester finals into the voice attachment — src/agents/subagents/announce/subagent-announce-direct-delivery.ts:651-658 - [P1] Fence ret... (sha=fe9a06f7830e3c00ff1fd709b2de64590ab44c81)",
+      "expected_head_sha": "fe9a06f7830e3c00ff1fd709b2de64590ab44c81",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T00:37:45.922Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-subagent-completion-reattach",
+        "head_sha": "fe9a06f7830e3c00ff1fd709b2de64590ab44c81",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
