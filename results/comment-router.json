@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T16:27:59.154Z",
+  "updated_at": "2026-09-09T16:28:15.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141285:5600408475:2026-09-09T10:30:44Z:re_review",
-      "comment_id": "5600408475",
-      "comment_version_key": "5600408475:2026-09-09T10:30:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141285#issuecomment-5600408475",
-      "comment_created_at": "2026-09-09T10:30:44Z",
-      "comment_updated_at": "2026-09-09T10:30:44Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141285,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T10:31:46.090Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ui-avatar-grapheme-initials",
-        "head_sha": "cb81f803aafafaacbd3e57be7224f7214144da80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:174:5600410636:2026-09-09T10:30:55Z:clawsweeper_auto_repair",
       "comment_id": "5600410636",
@@ -33203,6 +33156,39 @@
         "kind": "pull_request",
         "branch": "feat-watch-direct-conversations-20260909",
         "head_sha": "0e71f4cc6372a46d36001072618fb724e5719946",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crawlkit:113:5601155906:2026-09-09T16:26:45Z:clawsweeper_needs_human",
+      "comment_id": "5601155906",
+      "comment_version_key": "5601155906:2026-09-09T16:26:45Z",
+      "comment_url": "https://github.com/openclaw/crawlkit/pull/113#issuecomment-5601155906",
+      "comment_created_at": "2026-09-09T11:34:19Z",
+      "comment_updated_at": "2026-09-09T16:26:45Z",
+      "comment_body_sha256": "18af3022c7669086bfedc953f1392457e629c40ae1d14048aefc2d7e5f2b2dbb",
+      "repo": "openclaw/crawlkit",
+      "issue_number": 113,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Discrawl compatibility remains unqualified at the new source pin; identical failures at the previous pin neither prove a Crawlkit regression nor establish compatibility. (sha=74949074c626f84b96f4db74656aaa930ff4ba8c)",
+      "expected_head_sha": "74949074c626f84b96f4db74656aaa930ff4ba8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T16:28:15.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/remote-archive-warnings-20260909",
+        "head_sha": "74949074c626f84b96f4db74656aaa930ff4ba8c",
         "cluster_id": null,
         "job_path": null
       }
