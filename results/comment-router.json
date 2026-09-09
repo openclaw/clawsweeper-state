@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T16:09:44.218Z",
+  "updated_at": "2026-09-09T16:09:45.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143010:5600173665:2026-09-09T10:11:30Z:re_review",
-      "comment_id": "5600173665",
-      "comment_version_key": "5600173665:2026-09-09T10:11:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143010#issuecomment-5600173665",
-      "comment_created_at": "2026-09-09T10:11:30Z",
-      "comment_updated_at": "2026-09-09T10:11:30Z",
-      "comment_body_sha256": "3ef13b9dc76d0268d5322bfaed7b58da2cf6a7d8a6fa97f93e1b859f10967b48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143010,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T10:12:24.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-prompt-cache-live",
-        "head_sha": "f6e0c8a51fca65ecf5bf9e8210ae7a2a2d241ce2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135359:5497447523:2026-09-09T10:06:48Z:clawsweeper_needs_human",
       "comment_id": "5497447523",
@@ -33347,6 +33300,39 @@
         "kind": "pull_request",
         "branch": "fix/frv-frozen-consumer-ownership-20260909",
         "head_sha": "cb79e822f0e3c0af9d40e7d966f8e60122d59a5b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142100:5583575228:2026-09-09T16:08:27Z:clawsweeper_needs_human",
+      "comment_id": "5583575228",
+      "comment_version_key": "5583575228:2026-09-09T16:08:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142100#issuecomment-5583575228",
+      "comment_created_at": "2026-09-08T10:17:31Z",
+      "comment_updated_at": "2026-09-09T16:08:27Z",
+      "comment_body_sha256": "3e9e88b7c85f1c7970d13207f39ec0177f1bcfea515a38a853bd1b45b1060313",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142100,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: plugin completion now checks the admitted literal selection and transfers a retained owner to execution, but av... (sha=ec1b8f9b230e2a334a695dbe39d14cc81fbcc807)",
+      "expected_head_sha": "ec1b8f9b230e2a334a695dbe39d14cc81fbcc807",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T16:09:45.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/130706-exact-model-identity",
+        "head_sha": "ec1b8f9b230e2a334a695dbe39d14cc81fbcc807",
         "cluster_id": null,
         "job_path": null
       }
