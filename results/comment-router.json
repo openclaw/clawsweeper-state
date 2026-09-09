@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T03:37:28.722Z",
+  "updated_at": "2026-09-09T03:39:05.464Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142626:5592515755:2026-09-08T22:07:05Z:re_review",
-      "comment_id": "5592515755",
-      "comment_version_key": "5592515755:2026-09-08T22:07:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592515755",
-      "comment_created_at": "2026-09-08T22:07:05Z",
-      "comment_updated_at": "2026-09-08T22:07:05Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142626,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T22:13:18.975Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-capability-refresh",
-        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-08T22:12:20Z:clawsweeper_auto_repair",
       "comment_id": "5592569053",
@@ -32968,6 +32921,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3642:5595148703:2026-09-09T03:38:04Z:clawsweeper_needs_human",
+      "comment_id": "5595148703",
+      "comment_version_key": "5595148703:2026-09-09T03:38:04Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3642#issuecomment-5595148703",
+      "comment_created_at": "2026-09-09T03:06:28Z",
+      "comment_updated_at": "2026-09-09T03:38:04Z",
+      "comment_body_sha256": "da80324403e0317e5085e41ca4eadccf6849e4f25a92a0efcda9da1274ece436",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3642,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected local Convex/Chromium artifacts demonstrate the new disclosure and successful company/re...; Review finding: [P1] Recheck publisher membership before promoting curated releases — convex/packages.ts:11447-11455 - [high] Revoked publisher membership survives queued publicat... (sha=b7d6356b099fc27de7ee8c63350c267253eb5591)",
+      "expected_head_sha": "b7d6356b099fc27de7ee8c63350c267253eb5591",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T03:39:05.464Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-723-plugin-provenance",
+        "head_sha": "b7d6356b099fc27de7ee8c63350c267253eb5591",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
