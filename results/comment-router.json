@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T11:36:54.498Z",
+  "updated_at": "2026-09-09T11:37:23.425Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3648:5595909116:2026-09-09T04:41:32Z:clawsweeper_auto_repair",
-      "comment_id": "5595909116",
-      "comment_version_key": "5595909116:2026-09-09T04:41:32Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3648#issuecomment-5595909116",
-      "comment_created_at": "2026-09-09T04:41:32Z",
-      "comment_updated_at": "2026-09-09T04:41:32Z",
-      "comment_body_sha256": "971ed7601ac76226ea20215595cc93e7668737202766f8cdd4e2e93b64f81698",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3648,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f28c0de01df2bb60e67e9908b1d5cc9a827c31aa)",
-      "expected_head_sha": "f28c0de01df2bb60e67e9908b1d5cc9a827c31aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T04:42:29.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-754-clawhub-categories",
-        "head_sha": "f28c0de01df2bb60e67e9908b1d5cc9a827c31aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5595862880:2026-09-09T04:37:08Z:re_review",
       "comment_id": "5595862880",
@@ -33489,6 +33456,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143000:5601180023:2026-09-09T11:36:20Z:re_review",
+      "comment_id": "5601180023",
+      "comment_version_key": "5601180023:2026-09-09T11:36:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143000#issuecomment-5601180023",
+      "comment_created_at": "2026-09-09T11:36:20Z",
+      "comment_updated_at": "2026-09-09T11:36:20Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143000,
+      "author": "gozu",
+      "author_id": 53414,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T11:37:13.838Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-install-default-timeout",
+        "head_sha": "2b35d23851da16bc0b26088b72ec2027e89b1626",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
