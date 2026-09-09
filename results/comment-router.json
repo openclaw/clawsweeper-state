@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T23:38:09.886Z",
+  "updated_at": "2026-09-09T23:38:13.030Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142877:5606442341:2026-09-09T18:01:40Z:re_review",
-      "comment_id": "5606442341",
-      "comment_version_key": "5606442341:2026-09-09T18:01:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142877#issuecomment-5606442341",
-      "comment_created_at": "2026-09-09T18:01:40Z",
-      "comment_updated_at": "2026-09-09T18:01:40Z",
-      "comment_body_sha256": "7f2948bf11229ceedde7a1173e6a1f8f4eba492325246d8ed18136ac69f20f79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142877,
-      "author": "NullArbitrage",
-      "author_id": 263110202,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — proof upgraded on head `6247020f275` (rebased onto latest main with both flake fixes included)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T18:02:45.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/verified-inference-fingerprint-canonical",
-        "head_sha": "6247020f275e228409a4b6a289bf543471a3b5bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1516:5606359146:2026-09-09T18:03:49Z:clawsweeper_needs_human",
       "comment_id": "5606359146",
@@ -32755,6 +32708,39 @@
         "kind": "pull_request",
         "branch": "fix/heartbeat-mcp-runtime-retire",
         "head_sha": "a293a8dcb0a610f62f0db93bf4039e118fea2460",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143484:5610262633:2026-09-09T23:37:03Z:clawsweeper_needs_human",
+      "comment_id": "5610262633",
+      "comment_version_key": "5610262633:2026-09-09T23:37:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143484#issuecomment-5610262633",
+      "comment_created_at": "2026-09-09T23:37:03Z",
+      "comment_updated_at": "2026-09-09T23:37:03Z",
+      "comment_body_sha256": "d94b551004fe291d6c6811f40d3a1a56db124bbbfbd597615e69daba604886ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143484,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing webhook installations with more than one hour of clock skew, or deliveries retaining a signed timestamp beyond that window, will start receiving generic 401 responses. Provid... (sha=49d1ec0eae137b2e9ed98922187200cdb8211a71)",
+      "expected_head_sha": "49d1ec0eae137b2e9ed98922187200cdb8211a71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T23:38:13.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "988",
+        "head_sha": "49d1ec0eae137b2e9ed98922187200cdb8211a71",
         "cluster_id": null,
         "job_path": null
       }
