@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T00:50:37.473Z",
+  "updated_at": "2026-09-09T00:51:40.113Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142456:5590671291:2026-09-08T19:30:25Z:re_review",
-      "comment_id": "5590671291",
-      "comment_version_key": "5590671291:2026-09-08T19:30:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142456#issuecomment-5590671291",
-      "comment_created_at": "2026-09-08T19:30:25Z",
-      "comment_updated_at": "2026-09-08T19:30:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142456,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T19:30:43.277Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-7-33-docker-contracts",
-        "head_sha": "f9aa7ba786b0d218e7ac70bd337bbb1acbba3270",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142466:5590665476:2026-09-08T19:29:56Z:clawsweeper_needs_human",
       "comment_id": "5590665476",
@@ -33159,6 +33112,39 @@
         "kind": "pull_request",
         "branch": "fix/release-frozen-dirty-exit",
         "head_sha": "278850933feb29d948951c2ec42b46de900665cb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142724:5594050577:2026-09-09T00:49:42Z:clawsweeper_needs_human",
+      "comment_id": "5594050577",
+      "comment_version_key": "5594050577:2026-09-09T00:49:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142724#issuecomment-5594050577",
+      "comment_created_at": "2026-09-09T00:49:42Z",
+      "comment_updated_at": "2026-09-09T00:49:42Z",
+      "comment_body_sha256": "f4c72cf6262c10e91ac85cd4a006bc59c045c127e56bfae15e5a36f71b3440e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142724,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show allowed file work and rejection of cancelled, expired, or replaced attempts before final file I/O...; Review finding: [P2] Reject duplicate flows before starting foreground execution — src/commands/tasks-supervise.ts:142-148 - [P2] Reserve storage headroom for claims and terminal... (sha=f79dde8f9d321e379e6acfaf1ecda494940c7955)",
+      "expected_head_sha": "f79dde8f9d321e379e6acfaf1ecda494940c7955",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T00:51:40.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/supervised-task-poc-ugqq",
+        "head_sha": "f79dde8f9d321e379e6acfaf1ecda494940c7955",
         "cluster_id": null,
         "job_path": null
       }
