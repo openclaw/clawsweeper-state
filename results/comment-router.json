@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T09:58:07.132Z",
+  "updated_at": "2026-09-09T09:58:33.305Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3236:5462054387:2026-08-29T11:20:31Z:re_review",
-      "comment_id": "5462054387",
-      "comment_version_key": "5462054387:2026-08-29T11:20:31Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3236#issuecomment-5462054387",
-      "comment_created_at": "2026-08-29T11:20:31Z",
-      "comment_updated_at": "2026-08-29T11:20:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3236,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T02:59:05.444Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3236:5462250419:2026-08-29T11:48:30Z:re_review",
       "comment_id": "5462250419",
@@ -32705,6 +32678,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:173:5599996721:2026-09-09T09:57:36Z:clawsweeper_needs_human",
+      "comment_id": "5599996721",
+      "comment_version_key": "5599996721:2026-09-09T09:57:36Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/173#issuecomment-5599996721",
+      "comment_created_at": "2026-09-09T09:57:36Z",
+      "comment_updated_at": "2026-09-09T09:57:36Z",
+      "comment_body_sha256": "924caffd61f14dad516cd6053a018f814fa9426496c31626d32da96f753c8404",
+      "repo": "openclaw/ocm",
+      "issue_number": 173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, scripts and users creating new environments outside a checkout can fail where remembered-source selection or prompting previously succeeded; they must add --repo. Exist... (sha=5cb291559f010ef2f6ff52213f55e1af3575993e)",
+      "expected_head_sha": "5cb291559f010ef2f6ff52213f55e1af3575993e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T09:58:33.305Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-source-selection",
+        "head_sha": "5cb291559f010ef2f6ff52213f55e1af3575993e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
