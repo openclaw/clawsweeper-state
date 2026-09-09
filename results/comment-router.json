@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T15:17:14.443Z",
+  "updated_at": "2026-09-09T15:18:37.868Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142963:5599221032:2026-09-09T08:59:15Z:re_review",
-      "comment_id": "5599221032",
-      "comment_version_key": "5599221032:2026-09-09T08:59:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142963#issuecomment-5599221032",
-      "comment_created_at": "2026-09-09T08:59:15Z",
-      "comment_updated_at": "2026-09-09T08:59:15Z",
-      "comment_body_sha256": "38e52a53df0d320491899681e86d1cf641eac54ef7e4e33754bdeaf3c364e18c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142963,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T09:00:10.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs-audit/split-telegram",
-        "head_sha": "f64a442adf48d22105ea9d1f4766efe3240c076d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134480:5485176965:2026-09-09T08:59:20Z:clawsweeper_needs_human",
       "comment_id": "5485176965",
@@ -33635,6 +33588,39 @@
         "kind": "pull_request",
         "branch": "codex/test-mcporter-audit-inputs",
         "head_sha": "7bea599928711a258d1c06b04f43a52505d552a3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142711:5594001832:2026-09-09T15:14:21Z:clawsweeper_needs_human",
+      "comment_id": "5594001832",
+      "comment_version_key": "5594001832:2026-09-09T15:14:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142711#issuecomment-5594001832",
+      "comment_created_at": "2026-09-09T00:43:35Z",
+      "comment_updated_at": "2026-09-09T15:14:21Z",
+      "comment_body_sha256": "d4c27c703466f1bd7b9b5ef37bfc8adfab5a89d37f6e4ba233e24f66d244b534",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142711,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the installed registry when enriching categories (P2)** - An uncategorized ClawHub install can record a clawhubUrl different from the current default. This call omits that URL, so listing plugins sends...; Review finding: [P2] Preserve the installed registry when enriching categories — src/plugins/management-service.ts:418-420 - [medium] Private package identities can reach the wron... (sha=5e40ddbcba82d8a489b8fbca05dc97cd08c16f6f)",
+      "expected_head_sha": "5e40ddbcba82d8a489b8fbca05dc97cd08c16f6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T15:18:37.868Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-754-gateway-categories",
+        "head_sha": "5e40ddbcba82d8a489b8fbca05dc97cd08c16f6f",
         "cluster_id": null,
         "job_path": null
       }
