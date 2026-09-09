@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T01:39:18.159Z",
+  "updated_at": "2026-09-09T01:39:20.380Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138557:5591180357:2026-09-08T20:09:00Z:re_review",
-      "comment_id": "5591180357",
-      "comment_version_key": "5591180357:2026-09-08T20:09:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138557#issuecomment-5591180357",
-      "comment_created_at": "2026-09-08T20:09:00Z",
-      "comment_updated_at": "2026-09-08T20:09:00Z",
-      "comment_body_sha256": "9a02fef8a5357551be3d8b4bab867cc0ab0bd93219f5c9c61139aa449758c6be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138557,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — runtime proof posted above showing 30-file fetch with corrected summary text (no false 'channel attaches' claim)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T20:10:00.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/138383-dir-fetch-attachment-promise",
-        "head_sha": "cb4961d87d4e909b9eef90e6b90eb7c92a656316",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142066:5582759242:2026-09-08T20:09:17Z:clawsweeper_auto_repair",
       "comment_id": "5582759242",
@@ -33162,6 +33115,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142694:5593610907:2026-09-09T01:38:19Z:clawsweeper_needs_human",
+      "comment_id": "5593610907",
+      "comment_version_key": "5593610907:2026-09-09T01:38:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142694#issuecomment-5593610907",
+      "comment_created_at": "2026-09-08T23:58:52Z",
+      "comment_updated_at": "2026-09-09T01:38:19Z",
+      "comment_body_sha256": "8c68385952b64f0949524e2cbd960a89291183a8229514a904cd641d9e364c2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142694,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head conflicts with main, and no reconciled merge result has been reviewed. (sha=4664948b134c0d4baf4f84ec9af20bbd04317958)",
+      "expected_head_sha": "4664948b134c0d4baf4f84ec9af20bbd04317958",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T01:39:20.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/user-avatar-align-to-bubble",
+        "head_sha": "4664948b134c0d4baf4f84ec9af20bbd04317958",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
