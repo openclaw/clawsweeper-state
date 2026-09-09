@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T10:17:18.958Z",
+  "updated_at": "2026-09-09T10:17:43.716Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142799:5595302455:2026-09-09T03:25:36Z:clawsweeper_needs_human",
-      "comment_id": "5595302455",
-      "comment_version_key": "5595302455:2026-09-09T03:25:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142799#issuecomment-5595302455",
-      "comment_created_at": "2026-09-09T03:25:36Z",
-      "comment_updated_at": "2026-09-09T03:25:36Z",
-      "comment_body_sha256": "6f574918406630da60f810ca545fe030d2976b736a435a980ecfe815a2b1c1ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142799,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied adapter recorder demonstrates fewer calls but replaces LINE transport and fabricates receipts; it does not show the patched produc... (sha=f62564c0cb1b7af461c0316cdb3e5f4a82389226)",
-      "expected_head_sha": "f62564c0cb1b7af461c0316cdb3e5f4a82389226",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T03:26:39.841Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-142734",
-        "head_sha": "f62564c0cb1b7af461c0316cdb3e5f4a82389226",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-09-09T03:17:32Z:clawsweeper_needs_human",
       "comment_id": "5241982342",
@@ -32805,6 +32772,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140249:5600235355:2026-09-09T10:16:44Z:re_review",
+      "comment_id": "5600235355",
+      "comment_version_key": "5600235355:2026-09-09T10:16:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140249#issuecomment-5600235355",
+      "comment_created_at": "2026-09-09T10:16:44Z",
+      "comment_updated_at": "2026-09-09T10:16:44Z",
+      "comment_body_sha256": "1cb9e068fa9ae1be89f0257780017a6fbce79db7e4edbdc47d626d5e39c5600c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140249,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T10:17:41.686Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-bootstrap-truncation-notice-127528",
+        "head_sha": "2c8adac1ca198df796169a09ababdc9c1c7f2bb0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
