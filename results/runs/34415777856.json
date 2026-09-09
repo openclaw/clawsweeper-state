@@ -1,0 +1,136 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143461",
+  "mode": "autonomous",
+  "run_id": "34415777856",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34415777856",
+  "head_sha": "97c9a7b45caf20f6d580fe0ae5cc48db31da15f4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143461.md",
+  "published_at": "2026-09-09T23:53:19.739Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143461",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143461",
+  "canonical_pr": null,
+  "summary": "Verified the reported defect in source on preflight main 9b30c3b373811fa9dfc8b173e5cc90837b515c6f. Prepared a narrow fix plan; implementation and runtime reproduction are blocked by the read-only filesystem and missing dependencies. No code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#143461",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "The existing suppression contract supports a bounded bug fix without changing hook policy or public APIs."
+    },
+    {
+      "target": "#137461",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this PR for central OpenClaw security handling without public mutation. The ordinary Telegram result-projection fix does not depend on it."
+    },
+    {
+      "target": "#57766",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#57843",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Do not reopen or replace this historical contributor branch."
+    },
+    {
+      "target": "#63011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; exclude its broader product scope."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143461",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "Repair the Telegram producer and the directly connected delivery-success gates using existing contracts."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143461",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness are blocked on a writable dependency-ready executor. No maintainer product decision is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#143461",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
