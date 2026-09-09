@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143385"
-mode: "plan"
-run_id: "34412294097"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34412294097"
+mode: "autonomous"
+run_id: "34412658590"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34412658590"
 head_sha: "97c9a7b45caf20f6d580fe0ae5cc48db31da15f4"
-workflow_conclusion: "success"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-09T22:33:03.468Z"
+published_at: "2026-09-09T23:15:18.575Z"
 canonical: "https://github.com/openclaw/openclaw/issues/143385"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/143385"
 canonical_pr: null
-actions_total: 3
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34412294097](https://github.com/openclaw/clawsweeper/actions/runs/34412294097)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34412658590](https://github.com/openclaw/clawsweeper/actions/runs/34412658590)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/143385
 
 ## Summary
 
-Plan one narrow fix for #143385. Source inspection matches the reported coverage-gate mismatch at preflight main e4a6d50073ceb4e97f5401e19d40ec3c02e0ff22. No files or GitHub state changed. Runtime reproduction, direct sibling Codex contract inspection, and validation remain required.
+Prepared a narrow repair plan for #143385. The reported coverage-gate mismatch remains in preflight main. Local implementation and regression validation are blocked by the read-only workspace, missing dependencies, and absent sibling Codex source. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,12 @@ Plan one narrow fix for #143385. Source inspection matches the reported coverage
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143385 | fix_needed | planned | canonical | Prepare the scoped repair below, conditional on direct Codex contract inspection and a failing regression on latest main. Merge and closure are prohibited. |
-| #84662 | keep_related | planned | related | Distinct history-growth mechanism; repairing successful-delivery coverage does not resolve persistent runtime-context accumulation. |
-| #143386 | keep_related | planned | related | Separate lifecycle defect with existing maintainer discussion; retain outside this repair. |
+| #143385 | fix_needed | blocked | canonical | Implementation is blocked in this worker. The executor must inspect the native interruption source contract and demonstrate the failing regression on current main before applying the planned repair. |
+| #84662 | keep_related | planned | related | Distinct mechanism and remaining work; preserve the existing maintainer follow-up. |
+| #143386 | keep_related | planned | related | Keep the separate catalog and history-ownership discussion outside this repair. |
+| #125324 | keep_closed | skipped | related | Historical continuity-budget and calibration work; not an open repair candidate. |
+| #143081 | keep_closed | skipped | related | Historical evidence only; no closure or merge action. |
+| cluster:issue-openclaw-openclaw-143385 | build_fix_artifact | planned | canonical | A narrow executor handoff is supported by local source inspection; publication remains contingent on direct dependency inspection and failing-then-passing regression proof. |
 
 ## Needs Human
 
