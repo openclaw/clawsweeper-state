@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143111"
-mode: "autonomous"
-run_id: "34354929119"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34354929119"
-head_sha: "6b3a33b697a6df6ef1cd31836b15f035c0a83cd2"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-09T13:49:53.675Z"
-canonical: "https://github.com/openclaw/openclaw/issues/143111"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/143111"
-canonical_pr: null
+mode: "plan"
+run_id: "34360151710"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34360151710"
+head_sha: "4899f29ef1540c9c080f20c22ad0b3ad7fb303b8"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-09T14:02:12.944Z"
+canonical: "#143111"
+canonical_issue: "#143111"
+canonical_pr: "#143125"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34354929119](https://github.com/openclaw/clawsweeper/actions/runs/34354929119)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34360151710](https://github.com/openclaw/clawsweeper/actions/runs/34360151710)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/143111
+Canonical: #143111
 
 ## Summary
 
-Confirmed the misleading diagnostic on preflight main. Prepared a narrow fix plan; implementation and runtime reproduction are blocked by the read-only sandbox and missing dependencies. No files or GitHub state changed.
+Keep issue #143111 open and preserve @LiuwqGit's existing PR #143125 as the canonical fix path. The hydrated PR already addresses the reported diagnostic bug and has passing CI; a competing implementation PR is unwarranted. No mutations or runtime tests were performed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Confirmed the misleading diagnostic on preflight main. Prepared a narrow fix pla
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143111 | fix_needed | planned | canonical | A narrow diagnostic repair is supported by current source and existing behavior. Local implementation requires a writable executor with installed dependencies. |
-| cluster:issue-openclaw-openclaw-143111 | build_fix_artifact | planned |  | The executor can implement this bounded plan after establishing the required failing regression. No maintainer product or security-policy decision is outstanding. |
+| #143111 | keep_canonical | planned | canonical | Preserve the canonical bug report while its existing contributor PR proceeds through maintainer review. |
+| #143125 | keep_canonical | planned | canonical | Retain @LiuwqGit's contribution and attribution. No concrete branch-repair need is established by the supplied evidence. Do not create a replacement PR or recommend merging under this job. |
 
 ## Needs Human
 
