@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T20:33:24.384Z",
+  "updated_at": "2026-09-09T20:33:27.950Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142853:5604615636:2026-09-09T15:43:02Z:re_review",
-      "comment_id": "5604615636",
-      "comment_version_key": "5604615636:2026-09-09T15:43:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142853#issuecomment-5604615636",
-      "comment_created_at": "2026-09-09T15:43:02Z",
-      "comment_updated_at": "2026-09-09T15:43:02Z",
-      "comment_body_sha256": "580dc0a64a3b74cc952d2947fe45408b79dfe04afea227aaeeb04335fad27ca4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142853,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T15:44:01.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/swarm-parent-active-childOutcome-142189",
-        "head_sha": "3ad1066f6bf72bc71ff4f9fbc98945bb6b927f9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135839:5604458778:2026-09-09T15:31:52Z:re_review",
       "comment_id": "5604458778",
@@ -32852,6 +32805,39 @@
         "kind": "pull_request",
         "branch": "codex/ready-worker-pool",
         "head_sha": "01187809e58a63c2782a6b3a9fcc3aa2ce9bd176",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143312:5606708800:2026-09-09T20:32:25Z:clawsweeper_needs_human",
+      "comment_id": "5606708800",
+      "comment_version_key": "5606708800:2026-09-09T20:32:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143312#issuecomment-5606708800",
+      "comment_created_at": "2026-09-09T18:22:34Z",
+      "comment_updated_at": "2026-09-09T20:32:25Z",
+      "comment_body_sha256": "892c83a7435a911725a09eab65601d3394998ea3d38ecb6aa6518441fdbb865b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143312,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepted upgrade impact: defective or WAL-unsafe custom Node builds that previously passed version checks will stop at startup until replaced; the PR explicitly documents and accepts... (sha=ca018d27b4f1ee9cb7f7611edd32bd317484d8ee)",
+      "expected_head_sha": "ca018d27b4f1ee9cb7f7611edd32bd317484d8ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T20:33:27.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-node-probe",
+        "head_sha": "ca018d27b4f1ee9cb7f7611edd32bd317484d8ee",
         "cluster_id": null,
         "job_path": null
       }
