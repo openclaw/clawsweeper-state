@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T07:56:07.078Z",
+  "updated_at": "2026-09-09T07:56:54.523Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142743:5594416411:2026-09-09T01:34:11Z:re_review",
-      "comment_id": "5594416411",
-      "comment_version_key": "5594416411:2026-09-09T01:34:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142743#issuecomment-5594416411",
-      "comment_created_at": "2026-09-09T01:34:11Z",
-      "comment_updated_at": "2026-09-09T01:34:11Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142743,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T01:34:58.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/7.33-matrix-qa-stability",
-        "head_sha": "3a5a79c7c875ad08c0e4d532a51b109e0411eebb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142712:5593980224:2026-09-09T01:35:37Z:clawsweeper_needs_human",
       "comment_id": "5593980224",
@@ -32320,6 +32273,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142852:5596320399:2026-09-09T07:55:55Z:clawsweeper_needs_human",
+      "comment_id": "5596320399",
+      "comment_version_key": "5596320399:2026-09-09T07:55:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142852#issuecomment-5596320399",
+      "comment_created_at": "2026-09-09T05:30:07Z",
+      "comment_updated_at": "2026-09-09T07:55:55Z",
+      "comment_body_sha256": "12f43997e18a97bd5c6ab6abc52c84f0471896642c854a6c27dee586d01edbd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence exercises the fallback with mocked Gateway results and sendMessage, without observed attachment transport or completion s...; Review finding: [P1] Strip private runtime context before extracting media directives — src/agents/subagents/announce/subagent-announce-completion-delivery.ts:91-96 - [P2] Commit... (sha=3c43ebbd0b0f22dc697889ffef6f6e722a4bbaad)",
+      "expected_head_sha": "3c43ebbd0b0f22dc697889ffef6f6e722a4bbaad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T07:56:54.523Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-132780-announce-media-drop",
+        "head_sha": "3c43ebbd0b0f22dc697889ffef6f6e722a4bbaad",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
