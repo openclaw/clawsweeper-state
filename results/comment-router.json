@@ -1,55 +1,6 @@
 {
-  "updated_at": "2026-09-09T20:42:49.381Z",
+  "updated_at": "2026-09-09T20:44:47.543Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-09T15:50:30Z:clawsweeper_auto_repair",
-      "comment_id": "5592569053",
-      "comment_version_key": "5592569053:2026-09-09T15:50:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
-      "comment_created_at": "2026-09-08T22:12:20Z",
-      "comment_updated_at": "2026-09-09T15:50:30Z",
-      "comment_body_sha256": "87bb233fb731e25a2b538d64af8892a65cf374277e359ca0ce7f911778158d87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142626,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
-      "forced_replay": true,
-      "attempt_id": "completed-review-5594644550-5592569053",
-      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-      "finding_id": "review-feedback",
-      "status": "waiting",
-      "processed_at": "2026-09-09T15:53:39.309Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-capability-refresh",
-        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-        "cluster_id": "automerge-openclaw-openclaw-142626",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143235:5604767551:2026-09-09T15:54:08Z:clawsweeper_needs_human",
       "comment_id": "5604767551",
@@ -32791,6 +32742,53 @@
           "status": "active",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143303:5608469803:2026-09-09T20:43:25Z:re_review",
+      "comment_id": "5608469803",
+      "comment_version_key": "5608469803:2026-09-09T20:43:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143303#issuecomment-5608469803",
+      "comment_created_at": "2026-09-09T20:43:25Z",
+      "comment_updated_at": "2026-09-09T20:43:25Z",
+      "comment_body_sha256": "89d6ed311f9d62141d94fdca1e76fcae7df2716efc17b94fd0ea69452c4a30fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143303,
+      "author": "Potrock",
+      "author_id": 12614996,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T20:44:44.808Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/hooks-standard-webhooks-signature",
+        "head_sha": "9dff2b35c2a85c919770cd88210e35f76c8d4157",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
         },
         {
           "action": "comment",
