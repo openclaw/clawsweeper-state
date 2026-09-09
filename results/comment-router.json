@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T08:37:21.932Z",
+  "updated_at": "2026-09-09T08:37:33.667Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135969:5572849722:2026-09-07T15:32:40Z:re_review",
-      "comment_id": "5572849722",
-      "comment_version_key": "5572849722:2026-09-07T15:32:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135969#issuecomment-5572849722",
-      "comment_created_at": "2026-09-07T15:32:40Z",
-      "comment_updated_at": "2026-09-07T15:32:40Z",
-      "comment_body_sha256": "7f8a13f0172abdd02103324b996e07e75178a7324a6535114d2876806926f2a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135969,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T01:49:16.663Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135969:5585188635:2026-09-08T12:33:07Z:re_review",
       "comment_id": "5585188635",
@@ -32340,6 +32313,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137334:5526978396:2026-09-09T08:36:34Z:clawsweeper_needs_human",
+      "comment_id": "5526978396",
+      "comment_version_key": "5526978396:2026-09-09T08:36:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137334#issuecomment-5526978396",
+      "comment_created_at": "2026-09-03T14:04:13Z",
+      "comment_updated_at": "2026-09-09T08:36:34Z",
+      "comment_body_sha256": "25cf0c9832b210bfdd8233576995c50a7030467f3082672338f958bb0a96dbc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137334,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that pass an empty or whitespace-only --account will stop with an error after upgrade; they must omit the option to retain default-account selection. (sha=3ebcb01bdb128c38d95bee11e7a715c582dd1c72)",
+      "expected_head_sha": "3ebcb01bdb128c38d95bee11e7a715c582dd1c72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T08:37:33.667Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-directory-empty-account-20260903",
+        "head_sha": "3ebcb01bdb128c38d95bee11e7a715c582dd1c72",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
