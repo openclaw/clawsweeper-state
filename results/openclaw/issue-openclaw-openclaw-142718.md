@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142718"
-mode: "autonomous"
-run_id: "34296166847"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34296166847"
-head_sha: "43be03fd3617138b917a7942f690cb9c415e0fc2"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34301484563"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34301484563"
+head_sha: "171da668af7c9bf4de887dea750f0af5c3b06d84"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-09T01:45:15.515Z"
+published_at: "2026-09-09T02:05:44.987Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142718"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142718"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34296166847](https://github.com/openclaw/clawsweeper/actions/runs/34296166847)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34301484563](https://github.com/openclaw/clawsweeper/actions/runs/34301484563)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/142718
 
 ## Summary
 
-Reproduced the exported SDK type defect on preflight main. Prepared a narrow fix plan. Local implementation and required validation remain blocked by the read-only workspace and missing repository dependencies; no files or GitHub state changed.
+Source inspection confirms the plugin-facing type mismatch at preflight main 9558fc6ba3c4e0c145768b39375e3b4083b0e2d9. Plan one narrow SDK repair. No files or GitHub state changed; compiler reproduction and validation remain pending because this read-only checkout has no node_modules.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Reproduced the exported SDK type defect on preflight main. Prepared a narrow fix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142718 | fix_needed | planned | canonical | The reported behavior is reproducible and has a narrow type-level repair. No viable open implementation PR is present in the supplied inventory. |
-| #85785 | keep_closed | skipped | related | Preserve as runtime-contract context and contributor provenance. |
-| cluster:issue-openclaw-openclaw-142718 | build_fix_artifact | planned | canonical | Hand off one narrow new-fix PR to the writable executor; no unresolved product or maintainer decision is needed. |
+| https://github.com/openclaw/openclaw/issues/142718 | fix_needed | planned | canonical | Existing runtime behavior supports the reported handler. Correct the registration input contract and prove it through the public SDK before opening the implementation PR. |
+| https://github.com/openclaw/openclaw/pull/85785 | keep_closed | skipped | related | Historical runtime-contract context, not an open candidate or proof that the exported type defect is fixed. |
 
 ## Needs Human
 

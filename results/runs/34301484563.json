@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142718",
+  "mode": "plan",
+  "run_id": "34301484563",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34301484563",
+  "head_sha": "171da668af7c9bf4de887dea750f0af5c3b06d84",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142718.md",
+  "published_at": "2026-09-09T02:05:44.987Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142718",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142718",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the plugin-facing type mismatch at preflight main 9558fc6ba3c4e0c145768b39375e3b4083b0e2d9. Plan one narrow SDK repair. No files or GitHub state changed; compiler reproduction and validation remain pending because this read-only checkout has no node_modules.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/142718",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "565",
+      "candidate_fix": null,
+      "reason": "Existing runtime behavior supports the reported handler. Correct the registration input contract and prove it through the public SDK before opening the implementation PR."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/pull/85785",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "565",
+      "candidate_fix": null,
+      "reason": "Historical runtime-contract context, not an open candidate or proof that the exported type defect is fixed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
