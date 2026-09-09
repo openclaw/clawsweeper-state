@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-09T17:34:46.782Z",
+  "updated_at": "2026-09-09T17:34:57.737Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140010:5602159402:2026-09-09T12:53:57Z:re_review",
-      "comment_id": "5602159402",
-      "comment_version_key": "5602159402:2026-09-09T12:53:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/140010#issuecomment-5602159402",
-      "comment_created_at": "2026-09-09T12:53:57Z",
-      "comment_updated_at": "2026-09-09T12:53:57Z",
-      "comment_body_sha256": "a2329b9cd23d9dfc349ff3f7b54d468da4e51674edac7dc81bbcbbe4e14f0411",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140010,
-      "author": "TommyLei666",
-      "author_id": 212664666,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — resubmitting after the discussion-truncation fix (clawsweeper#1493 / a6b55a7). my 2026-09-07t02:18z request was acked but no durable review ever landed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T12:54:55.325Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135296:5496610222:2026-09-09T12:54:55Z:clawsweeper_needs_human",
       "comment_id": "5496610222",
@@ -32836,6 +32791,39 @@
       "status": "skipped",
       "processed_at": "2026-09-09T17:34:46.782Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143097:5601966606:2026-09-09T17:33:52Z:clawsweeper_needs_human",
+      "comment_id": "5601966606",
+      "comment_version_key": "5601966606:2026-09-09T17:33:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143097#issuecomment-5601966606",
+      "comment_created_at": "2026-09-09T12:39:22Z",
+      "comment_updated_at": "2026-09-09T17:33:52Z",
+      "comment_body_sha256": "57a398c2eb9d197b3bd80937400af67bac0a53dc15231952fa408f419d94384c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143097,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=168b342e5fe74da57b7079979b846b554380778d)",
+      "expected_head_sha": "168b342e5fe74da57b7079979b846b554380778d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T17:34:57.737Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf66-json-output-mode",
+        "head_sha": "168b342e5fe74da57b7079979b846b554380778d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
