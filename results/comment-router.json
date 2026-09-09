@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T18:28:41.947Z",
+  "updated_at": "2026-09-09T18:28:55.547Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142756:5603113630:2026-09-09T13:59:56Z:re_review",
-      "comment_id": "5603113630",
-      "comment_version_key": "5603113630:2026-09-09T13:59:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142756#issuecomment-5603113630",
-      "comment_created_at": "2026-09-09T13:59:56Z",
-      "comment_updated_at": "2026-09-09T13:59:56Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142756,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T14:00:57.365Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-142718-gateway-handler-return",
-        "head_sha": "975638accf2ad39375f76aac9f69aa8182001283",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/kitchen-sink:95:5603024431:2026-09-09T14:00:33Z:clawsweeper_needs_human",
       "comment_id": "5603024431",
@@ -32874,6 +32827,39 @@
         "kind": "pull_request",
         "branch": "codex/test-handoff-typed-state-v3",
         "head_sha": "b86849981bf61aa7af8c5595a3f6484b97b56b9e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143201:5604217876:2026-09-09T18:27:50Z:clawsweeper_needs_human",
+      "comment_id": "5604217876",
+      "comment_version_key": "5604217876:2026-09-09T18:27:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143201#issuecomment-5604217876",
+      "comment_created_at": "2026-09-09T15:14:49Z",
+      "comment_updated_at": "2026-09-09T18:27:50Z",
+      "comment_body_sha256": "aa2cbbb6df7ac967abe1c1f7eb28fbb490fca960845e750945a839e857ec2674",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cleanup now preserves durable bindings when the attempt lacks a matching physical owner; maintainer acceptance of that recovery contract remains unrecorded. (sha=68b68904e929782a6be3f7390f9d3b51203e1b62)",
+      "expected_head_sha": "68b68904e929782a6be3f7390f9d3b51203e1b62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T18:28:55.547Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/125308-binding-generation",
+        "head_sha": "68b68904e929782a6be3f7390f9d3b51203e1b62",
         "cluster_id": null,
         "job_path": null
       }
