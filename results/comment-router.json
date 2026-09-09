@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T00:06:34.458Z",
+  "updated_at": "2026-09-09T00:07:05.625Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142424:5590088534:2026-09-08T18:42:32Z:clawsweeper_needs_human",
-      "comment_id": "5590088534",
-      "comment_version_key": "5590088534:2026-09-08T18:42:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142424#issuecomment-5590088534",
-      "comment_created_at": "2026-09-08T18:42:32Z",
-      "comment_updated_at": "2026-09-08T18:42:32Z",
-      "comment_body_sha256": "81d6bdce421e415ff9b569c736227502d3377f2482a14135bcf0a7262c466135",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142424,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The linked issue’s real OAuth comparison demonstrates that explicit false preserves optional fields, but it does not show an after-fix... (sha=70ef4d6ce0306a3007eec249640feb139c0338b7)",
-      "expected_head_sha": "70ef4d6ce0306a3007eec249640feb139c0338b7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T18:44:58.679Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "main",
-        "head_sha": "70ef4d6ce0306a3007eec249640feb139c0338b7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142419:5590096059:2026-09-08T18:43:08Z:clawsweeper_needs_human",
       "comment_id": "5590096059",
@@ -33666,6 +33633,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/agent-skills:241:5593670210:2026-09-09T00:06:13Z:clawsweeper_needs_human",
+      "comment_id": "5593670210",
+      "comment_version_key": "5593670210:2026-09-09T00:06:13Z",
+      "comment_url": "https://github.com/openclaw/agent-skills/pull/241#issuecomment-5593670210",
+      "comment_created_at": "2026-09-09T00:06:13Z",
+      "comment_updated_at": "2026-09-09T00:06:13Z",
+      "comment_body_sha256": "566ed0eebc79d85f140763d57ec5f55a2afb78fd853fd4cc5c7058c1bdee8760",
+      "repo": "openclaw/agent-skills",
+      "issue_number": 241,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **\\[P1\\] Preserve redaction of compiler-attached local paths (P1)** - For visible dialogue containing cc -I/Users/alice/private/include, main's /Users/ rule removes the private path. The replacement requires an al...; Review finding: [P1] [P1] Preserve redaction of compiler-attached local paths — skills/agent-transcript/scripts/agent-transcript:427-431 - [P2] [P2] Keep path matches from consumi... (sha=b9aa808c4d59da65509fd7ec1f6b6b6053e0fc65)",
+      "expected_head_sha": "b9aa808c4d59da65509fd7ec1f6b6b6053e0fc65",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T00:07:05.625Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-path-tokenize",
+        "head_sha": "b9aa808c4d59da65509fd7ec1f6b6b6053e0fc65",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
