@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142832",
+  "mode": "autonomous",
+  "run_id": "34312293350",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34312293350",
+  "head_sha": "6c7e5199956c52ef143e22ad475359f00b8bb5c0",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142832.md",
+  "published_at": "2026-09-09T04:55:13.685Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142832",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142832",
+  "canonical_pr": null,
+  "summary": "Reproduced the content-selection defect with current production functions and mocked media I/O. Prepared a narrow fix artifact. Local implementation and repository validation are blocked by the read-only checkout and missing dependencies; no files or GitHub items were changed.",
+  "actions": [
+    {
+      "target": "#142832",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#142832",
+      "candidate_fix": null,
+      "reason": "The bug remains actionable. Implementation requires a writable executor checkout with dependencies installed; this worker cannot edit files or validate a repaired branch."
+    },
+    {
+      "target": "#40078",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#142832",
+      "candidate_fix": null,
+      "reason": "Keep open as separate feature context. Implementing its configuration or retention behavior is outside this bug-only job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142832",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142832",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate; the executor must complete the production-order regression, implementation, review, and validation before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
