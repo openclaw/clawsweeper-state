@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143177"
-mode: "plan"
-run_id: "34370878538"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34370878538"
-head_sha: "aabbd983c31ee97dd10f86760a3deab7dc5bc142"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "34365811382"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34365811382"
+head_sha: "4899f29ef1540c9c080f20c22ad0b3ad7fb303b8"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-09T15:43:58.006Z"
-canonical: "#143177"
-canonical_issue: "#143177"
+published_at: "2026-09-09T16:59:45.223Z"
+canonical: "https://github.com/openclaw/openclaw/issues/143177"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/143177"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34370878538](https://github.com/openclaw/clawsweeper/actions/runs/34370878538)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34365811382](https://github.com/openclaw/clawsweeper/actions/runs/34365811382)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #143177
+Canonical: https://github.com/openclaw/openclaw/issues/143177
 
 ## Summary
 
-Plan one narrow UI repair for adopted native-session deletion. Checkout matches preflight main 8ced970bd77d3cefed2180d6cf05da78252df67b. No edits, runtime reproduction, validation, or GitHub mutations performed.
+Source inspection supports a narrow UI repair. Implementation and browser regression proof are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Plan one narrow UI repair for adopted native-session deletion. Checkout matches 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| https://github.com/openclaw/openclaw/issues/143177 | fix_needed | planned | canonical | A focused UI fix is supported. Require a failing browser regression on the execution base before production edits. Closure and merge remain prohibited. |
+| #143177 | fix_needed | planned | canonical | Keep the issue open and prepare one UI-only fix; do not implement native deletion or change Gateway authorization or storage semantics. |
+| cluster:issue-openclaw-openclaw-143177 | build_fix_artifact | planned |  | A concrete repair plan is available; executor implementation must begin with a failing browser regression. |
+| cluster:issue-openclaw-openclaw-143177 | open_fix_pr | blocked |  | PR creation is blocked on executor implementation and validation in a writable checkout, including the required source inspection and failing-then-passing browser proof. |
 
 ## Needs Human
 

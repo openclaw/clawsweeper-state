@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143177",
+  "mode": "autonomous",
+  "run_id": "34365811382",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34365811382",
+  "head_sha": "4899f29ef1540c9c080f20c22ad0b3ad7fb303b8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143177.md",
+  "published_at": "2026-09-09T16:59:45.223Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143177",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143177",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow UI repair. Implementation and browser regression proof are blocked by the read-only workspace and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143177",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143177",
+      "candidate_fix": null,
+      "reason": "Keep the issue open and prepare one UI-only fix; do not implement native deletion or change Gateway authorization or storage semantics."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143177",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#143177",
+      "candidate_fix": null,
+      "reason": "A concrete repair plan is available; executor implementation must begin with a failing browser regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143177",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#143177",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked on executor implementation and validation in a writable checkout, including the required source inspection and failing-then-passing browser proof."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
