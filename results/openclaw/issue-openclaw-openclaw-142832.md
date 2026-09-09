@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142832"
-mode: "autonomous"
-run_id: "34312293350"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34312293350"
+mode: "plan"
+run_id: "34312756662"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34312756662"
 head_sha: "6c7e5199956c52ef143e22ad475359f00b8bb5c0"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-09T04:55:13.685Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142832"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/142832"
+published_at: "2026-09-09T05:00:09.512Z"
+canonical: "#142832"
+canonical_issue: "#142832"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34312293350](https://github.com/openclaw/clawsweeper/actions/runs/34312293350)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34312756662](https://github.com/openclaw/clawsweeper/actions/runs/34312756662)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142832
+Canonical: #142832
 
 ## Summary
 
-Reproduced the content-selection defect with current production functions and mocked media I/O. Prepared a narrow fix artifact. Local implementation and repository validation are blocked by the read-only checkout and missing dependencies; no files or GitHub items were changed.
+Plan a narrow repair for lost Discord ambient audio content. Source inspection confirms the envelope/transcript selection defect on checkout main 9636ae49e0018fd24bc9aa1fa73af6bf28e05ec0. No edits, tests, or GitHub mutations were performed. Quarantine the separate retained-audio feature request.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Reproduced the content-selection defect with current production functions and mo
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142832 | fix_needed | blocked | canonical | The bug remains actionable. Implementation requires a writable executor checkout with dependencies installed; this worker cannot edit files or validate a repaired branch. |
-| #40078 | keep_related | planned | related | Keep open as separate feature context. Implementing its configuration or retention behavior is outside this bug-only job. |
-| cluster:issue-openclaw-openclaw-142832 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate; the executor must complete the production-order regression, implementation, review, and validation before publication. |
+| #142832 | build_fix_artifact | planned | canonical | A bounded content-preservation repair is supported by source inspection. Preserve admission, command provenance, and reply permissions; leave the issue open. |
+| #40078 | route_security | planned | security_sensitive | Conservatively route this feature's capture and retention concerns to central security handling without asserting a vulnerability. No mutation or implementation is proposed for this item, and it does not block #142832. |
 
 ## Needs Human
 
