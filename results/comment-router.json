@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T09:08:23.747Z",
+  "updated_at": "2026-09-09T09:09:59.824Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121622:5265003124:2026-08-12T09:39:44Z:re_review",
-      "comment_id": "5265003124",
-      "comment_version_key": "5265003124:2026-08-12T09:39:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121622#issuecomment-5265003124",
-      "comment_created_at": "2026-08-12T09:39:44Z",
-      "comment_updated_at": "2026-08-12T09:39:44Z",
-      "comment_body_sha256": "2921c7fa2b8429427bbed1e1262be8015d2eee35b3dc0deac9f4011cbdf71979",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121622,
-      "author": "jacobtomlinson",
-      "author_id": 1610850,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T02:20:32.044Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121622:5452323000:2026-08-28T12:08:20Z:re_review",
       "comment_id": "5452323000",
@@ -32423,6 +32396,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141762:5578064599:2026-09-09T09:09:07Z:clawsweeper_needs_human",
+      "comment_id": "5578064599",
+      "comment_version_key": "5578064599:2026-09-09T09:09:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141762#issuecomment-5578064599",
+      "comment_created_at": "2026-09-08T02:13:24Z",
+      "comment_updated_at": "2026-09-09T09:09:07Z",
+      "comment_body_sha256": "9317a657faee670372197e3e0d31befc0feb2cb99c41e18505285ea132e9d215",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141762,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Refresh the PR description to match the revised gh api command, remove the CLI/SDK-only statement, and record the query validation. (sha=b240ab020b59b407b11070858afdf8ea74a5dc8a)",
+      "expected_head_sha": "b240ab020b59b407b11070858afdf8ea74a5dc8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T09:09:59.824Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/android-apk-release-asset",
+        "head_sha": "b240ab020b59b407b11070858afdf8ea74a5dc8a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
