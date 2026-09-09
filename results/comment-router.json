@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T01:20:12.653Z",
+  "updated_at": "2026-09-09T01:20:18.014Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142456:5591043203:2026-09-08T19:58:53Z:re_review",
-      "comment_id": "5591043203",
-      "comment_version_key": "5591043203:2026-09-08T19:58:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142456#issuecomment-5591043203",
-      "comment_created_at": "2026-09-08T19:58:53Z",
-      "comment_updated_at": "2026-09-08T19:58:53Z",
-      "comment_body_sha256": "b64cea1a56ccc685c13519d2b546647ec61036e7dc835e4e7260f4a058d34f91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142456,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T19:59:49.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frozen-7-33-docker-contracts",
-        "head_sha": "a0abc699471b48315d9e080e44d4fbe1ca4eab2f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142491:5591045900:2026-09-08T19:59:06Z:clawsweeper_needs_human",
       "comment_id": "5591045900",
@@ -33113,6 +33066,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-137247",
         "head_sha": "b8d4919ee65c98c7128d9278d152cde0382671de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:15:5594295567:2026-09-09T01:19:27Z:clawsweeper_needs_human",
+      "comment_id": "5594295567",
+      "comment_version_key": "5594295567:2026-09-09T01:19:27Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/15#issuecomment-5594295567",
+      "comment_created_at": "2026-09-09T01:19:27Z",
+      "comment_updated_at": "2026-09-09T01:19:27Z",
+      "comment_body_sha256": "ec93b5842fd0f3ab185f8fc6cab5e4dea60737c03d600c25e9ba87ffd1a1032f",
+      "repo": "openclaw/telemetry",
+      "issue_number": 15,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain the requested human approval and mark the draft ready before merging. (sha=4b6ca623d3811de4973668c578398936cee010f6)",
+      "expected_head_sha": "4b6ca623d3811de4973668c578398936cee010f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T01:20:18.014Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telemetry-worker-health-20260909",
+        "head_sha": "4b6ca623d3811de4973668c578398936cee010f6",
         "cluster_id": null,
         "job_path": null
       }
