@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142847"
-mode: "autonomous"
-run_id: "34314358536"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34314358536"
+mode: "plan"
+run_id: "34315185229"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34315185229"
 head_sha: "6c7e5199956c52ef143e22ad475359f00b8bb5c0"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-09T05:25:11.798Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-09T05:36:02.612Z"
 canonical: "https://github.com/openclaw/openclaw/issues/142847"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142847"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34314358536](https://github.com/openclaw/clawsweeper/actions/runs/34314358536)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34315185229](https://github.com/openclaw/clawsweeper/actions/runs/34315185229)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/142847
 
 ## Summary
 
-Confirmed the reported serialization gap on preflight main. Prepared a narrow fix plan; implementation and required native Windows reproduction are blocked by this read-only Linux environment. No files or GitHub items changed.
+Plan a narrow Windows node-host quoting repair. The checkout matches preflight main 1ab71b84dc2996685c3e20aadc469ffbd4231483 and still lacks the proposed handling. Native Windows reproduction and validation remain prerequisites; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Confirmed the reported serialization gap on preflight main. Prepared a narrow fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142847 | fix_needed | planned | canonical | The issue remains source-supported and needs a focused repair. Native reproduction must precede production edits. |
-| #133185 | keep_closed | skipped | related | Historical related repair with a different serialization contract. |
-| #65724 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-142847 | build_fix_artifact | planned | canonical | Planning can proceed; implementation requires a writable executor and native Windows proof. Do not open a fix PR if the original defect cannot be reproduced on refreshed main. |
+| https://github.com/openclaw/openclaw/issues/142847 | fix_needed | planned | canonical | A focused repair path is supported. Implement only after reproducing the defect on current main and refreshing existing-PR ownership. |
 
 ## Needs Human
 
