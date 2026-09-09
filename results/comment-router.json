@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T19:10:37.477Z",
+  "updated_at": "2026-09-09T19:10:44.167Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137659:5533770278:2026-09-09T14:48:58Z:clawsweeper_auto_repair",
-      "comment_id": "5533770278",
-      "comment_version_key": "5533770278:2026-09-09T14:48:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137659#issuecomment-5533770278",
-      "comment_created_at": "2026-09-04T00:09:39Z",
-      "comment_updated_at": "2026-09-09T14:48:58Z",
-      "comment_body_sha256": "ca8285671732ff9416b076274bbc6af07c607a441ca5bfce108697c7fd72866e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137659,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1de36c0219488b9b377e21502959fe1751481901)",
-      "expected_head_sha": "1de36c0219488b9b377e21502959fe1751481901",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T14:53:08.842Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-718-full-catalog-ui",
-        "head_sha": "1de36c0219488b9b377e21502959fe1751481901",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137846:5535124839:2026-09-09T14:48:04Z:clawsweeper_needs_human",
       "comment_id": "5535124839",
@@ -32741,6 +32708,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143331:5607283013:2026-09-09T19:09:38Z:re_review",
+      "comment_id": "5607283013",
+      "comment_version_key": "5607283013:2026-09-09T19:09:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143331#issuecomment-5607283013",
+      "comment_created_at": "2026-09-09T19:09:38Z",
+      "comment_updated_at": "2026-09-09T19:09:38Z",
+      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143331,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T19:10:40.438Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/release-smoke-offline",
+        "head_sha": "67470b9580744ab9744c806bed0b2af77c85c88c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
