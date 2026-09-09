@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T14:07:00.793Z",
+  "updated_at": "2026-09-09T14:07:07.043Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Kova:123:5597498987:2026-09-09T06:54:04Z:clawsweeper_needs_human",
-      "comment_id": "5597498987",
-      "comment_version_key": "5597498987:2026-09-09T06:54:04Z",
-      "comment_url": "https://github.com/openclaw/Kova/pull/123#issuecomment-5597498987",
-      "comment_created_at": "2026-09-09T06:54:04Z",
-      "comment_updated_at": "2026-09-09T06:54:04Z",
-      "comment_body_sha256": "28e6c95e8591bd85c917869667cac7cdc042b215ac1c310938179e5f01f464e4",
-      "repo": "openclaw/Kova",
-      "issue_number": 123,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed OCM invocation and artifact-retention owners are exercised through a same-user fixture prefix, whil...; Review finding: [P2] Bound launcher exit even after the export stream finishes — src/ocm/transport.mjs:197-200 - [medium] Candidate export can bypass the evaluator's time bound —... (sha=da14529c14f0e485fead894c322ae593964e56cf)",
-      "expected_head_sha": "da14529c14f0e485fead894c322ae593964e56cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T06:55:06.580Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/performance-ocm-transport",
-        "head_sha": "da14529c14f0e485fead894c322ae593964e56cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142851:5596275912:2026-09-09T06:54:01Z:clawsweeper_auto_repair",
       "comment_id": "5596275912",
@@ -33858,6 +33825,53 @@
       "status": "skipped",
       "processed_at": "2026-09-09T14:07:00.793Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141771:5603207754:2026-09-09T14:06:10Z:re_review",
+      "comment_id": "5603207754",
+      "comment_version_key": "5603207754:2026-09-09T14:06:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141771#issuecomment-5603207754",
+      "comment_created_at": "2026-09-09T14:06:10Z",
+      "comment_updated_at": "2026-09-09T14:06:10Z",
+      "comment_body_sha256": "85a56c7e69c35d1cda5a94c43f137592239f68e9e8174a669c7ba01428f7fa85",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141771,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T14:07:05.042Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-effective-config-conflict-exit-code-141701",
+        "head_sha": "f5572017ba0165d886dc0b80d8ba7b5d4e733714",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
