@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T08:42:00.379Z",
+  "updated_at": "2026-09-09T08:42:19.837Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142151:5585189549:2026-09-08T12:33:11Z:re_review",
-      "comment_id": "5585189549",
-      "comment_version_key": "5585189549:2026-09-08T12:33:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142151#issuecomment-5585189549",
-      "comment_created_at": "2026-09-08T12:33:11Z",
-      "comment_updated_at": "2026-09-08T12:33:11Z",
-      "comment_body_sha256": "b4e7e0b04dc88516c148276c786985989817f3a5344c39578d21eb3560b54dd5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142151,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T01:49:49.272Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142151:5585287135:2026-09-09T01:48:44Z:clawsweeper_needs_human",
       "comment_id": "5585287135",
@@ -32413,6 +32386,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:173:5598971943:2026-09-09T08:41:21Z:clawsweeper_needs_human",
+      "comment_id": "5598971943",
+      "comment_version_key": "5598971943:2026-09-09T08:41:21Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/173#issuecomment-5598971943",
+      "comment_created_at": "2026-09-09T08:41:21Z",
+      "comment_updated_at": "2026-09-09T08:41:21Z",
+      "comment_body_sha256": "cabfb01faeca9399fed58b8ed63607b35993692f0b33223c8e51ee78b45567ab",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=10e42edc7995783ccf1d54b2b121b29bf4f4aa0d)",
+      "expected_head_sha": "10e42edc7995783ccf1d54b2b121b29bf4f4aa0d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T08:42:19.837Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/slacrawl-v0.9.0-20260909",
+        "head_sha": "10e42edc7995783ccf1d54b2b121b29bf4f4aa0d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
