@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T06:07:00.616Z",
+  "updated_at": "2026-09-09T06:07:09.664Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5559478749:2026-09-06T13:18:15Z:re_review",
-      "comment_id": "5559478749",
-      "comment_version_key": "5559478749:2026-09-06T13:18:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5559478749",
-      "comment_created_at": "2026-09-06T13:18:15Z",
-      "comment_updated_at": "2026-09-06T13:18:15Z",
-      "comment_body_sha256": "91431f02948fda85a1b6867cdc84377d913e95be6faa20d0d9c227b83f0b7d01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review exact head `275c42038842f329c482a41ef79e07bb896f4e0d`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T00:12:09.748Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5559604396:2026-09-06T13:41:10Z:re_review",
       "comment_id": "5559604396",
@@ -32297,6 +32270,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1354:5572226855:2026-09-09T05:59:50Z:clawsweeper_needs_human",
+      "comment_id": "5572226855",
+      "comment_version_key": "5572226855:2026-09-09T05:59:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1354#issuecomment-5572226855",
+      "comment_created_at": "2026-09-07T14:38:46Z",
+      "comment_updated_at": "2026-09-09T05:59:50Z",
+      "comment_body_sha256": "4de30ea5af6b344fdcd8a2802bc63822cc849ba449875d370d1ba78bb33a0a9e",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1354,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Publish hosts whose selected default redistributable is stale or lacks the target architecture can now stop despite another installed version being usable; operators must update the V... (sha=094125dc2f26134b7b19493014205f66d8cc69ac)",
+      "expected_head_sha": "094125dc2f26134b7b19493014205f66d8cc69ac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T06:07:09.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/local-build-vc-runtime",
+        "head_sha": "094125dc2f26134b7b19493014205f66d8cc69ac",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
