@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T08:45:18.873Z",
+  "updated_at": "2026-09-09T08:45:21.852Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119056:5242305904:2026-08-10T15:23:22Z:re_review",
-      "comment_id": "5242305904",
-      "comment_version_key": "5242305904:2026-08-10T15:23:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5242305904",
-      "comment_created_at": "2026-08-10T15:23:22Z",
-      "comment_updated_at": "2026-08-10T15:23:22Z",
-      "comment_body_sha256": "dbdaa0922239e184428055b19df9569bff3cd99b998dbb609f72d7f1cbadbad0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T01:51:53.572Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119056:5517557834:2026-09-02T22:54:46Z:re_review",
       "comment_id": "5517557834",
@@ -32485,6 +32458,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1995:5585877267:2026-09-09T08:44:23Z:clawsweeper_needs_human",
+      "comment_id": "5585877267",
+      "comment_version_key": "5585877267:2026-09-09T08:44:23Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1995#issuecomment-5585877267",
+      "comment_created_at": "2026-09-08T13:26:41Z",
+      "comment_updated_at": "2026-09-09T08:44:23Z",
+      "comment_body_sha256": "81079eea4880550994315e9989d79bbc6ec20d54c964326c67d466063a606623",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1995,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom images that provide only minimal capabilities or sudo-only Docker access will stop passing developer-image acceptance; direct-root preparation also requires a declared... (sha=4e243cd0659192a5241b373abda741e5c93d9d63)",
+      "expected_head_sha": "4e243cd0659192a5241b373abda741e5c93d9d63",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T08:45:21.852Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/devtools-image-acceptance",
+        "head_sha": "4e243cd0659192a5241b373abda741e5c93d9d63",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
