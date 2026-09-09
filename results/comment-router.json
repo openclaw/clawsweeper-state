@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T13:24:39.440Z",
+  "updated_at": "2026-09-09T13:25:50.149Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136181:5507044593:2026-09-09T05:57:54Z:clawsweeper_needs_human",
-      "comment_id": "5507044593",
-      "comment_version_key": "5507044593:2026-09-09T05:57:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136181#issuecomment-5507044593",
-      "comment_created_at": "2026-09-02T08:55:56Z",
-      "comment_updated_at": "2026-09-09T05:57:54Z",
-      "comment_body_sha256": "7f63419fc8e6b3058bea30017268e436a18311d28c43416321626579cd640ca5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136181,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d85036a8b5bd70ad4e45b8a2434e8a05ed9fdc8a)",
-      "expected_head_sha": "d85036a8b5bd70ad4e45b8a2434e8a05ed9fdc8a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T05:58:54.497Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tool-display35-61e579-20260902",
-        "head_sha": "d85036a8b5bd70ad4e45b8a2434e8a05ed9fdc8a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142709:5593925802:2026-09-09T05:59:49Z:clawsweeper_needs_human",
       "comment_id": "5593925802",
@@ -33794,6 +33761,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140609:5602593197:2026-09-09T13:24:19Z:re_review",
+      "comment_id": "5602593197",
+      "comment_version_key": "5602593197:2026-09-09T13:24:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140609#issuecomment-5602593197",
+      "comment_created_at": "2026-09-09T13:24:19Z",
+      "comment_updated_at": "2026-09-09T13:24:19Z",
+      "comment_body_sha256": "6f9d2a56220fe6de769c7d782bebd31a6d041ddf12d31b3f0cac638d68f20d28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140609,
+      "author": "saladinyao-cyber",
+      "author_id": 240252919,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T13:25:48.072Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/secret-egress-proxy-alias-fencing",
+        "head_sha": "c1e770043b6c4320018cebb40b6f89648fa9be84",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
