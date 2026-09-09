@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T04:27:58.014Z",
+  "updated_at": "2026-09-09T04:29:13.813Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/hermit:38:5593206131:2026-09-08T23:19:30Z:clawsweeper_needs_human",
-      "comment_id": "5593206131",
-      "comment_version_key": "5593206131:2026-09-08T23:19:30Z",
-      "comment_url": "https://github.com/openclaw/hermit/pull/38#issuecomment-5593206131",
-      "comment_created_at": "2026-09-08T23:19:30Z",
-      "comment_updated_at": "2026-09-08T23:19:30Z",
-      "comment_body_sha256": "eeef2b3bfc021ba906ccbdbddb035216c57990733296d95ce27f48d40da05c15",
-      "repo": "openclaw/hermit",
-      "issue_number": 38,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported real Carbon preflight stopped at channel access denial before the production receiver sent anything, so it does not estab... (sha=b563b0f9a45307fb5f4992c9c4445173ac949937)",
-      "expected_head_sha": "b563b0f9a45307fb5f4992c9c4445173ac949937",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T23:20:28.401Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-724-search-digest",
-        "head_sha": "b563b0f9a45307fb5f4992c9c4445173ac949937",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3632:5593211028:2026-09-08T23:19:53Z:clawsweeper_auto_repair",
       "comment_id": "5593211028",
@@ -32341,6 +32308,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142782:5595791223:2026-09-09T04:28:19Z:re_review",
+      "comment_id": "5595791223",
+      "comment_version_key": "5595791223:2026-09-09T04:28:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142782#issuecomment-5595791223",
+      "comment_created_at": "2026-09-09T04:28:19Z",
+      "comment_updated_at": "2026-09-09T04:28:19Z",
+      "comment_body_sha256": "8f83b240edeec237b0d61229850eebe290ac1eafd70cc1ad7c0aa963b183cc1f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142782,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T04:29:11.723Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-771-unified-plugin-catalog",
+        "head_sha": "80307730d610e3a4e5131aa86c826c498278f52f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
