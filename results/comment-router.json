@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T01:39:28.301Z",
+  "updated_at": "2026-09-09T01:39:34.370Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3516:5591041231:2026-09-08T20:09:55Z:clawsweeper_auto_repair",
-      "comment_id": "5591041231",
-      "comment_version_key": "5591041231:2026-09-08T20:09:55Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3516#issuecomment-5591041231",
-      "comment_created_at": "2026-09-08T19:58:43Z",
-      "comment_updated_at": "2026-09-08T20:09:55Z",
-      "comment_body_sha256": "0f3c19232062a0d5f830aea00b1d82914d77ed903fa6667b01ba0123102f6ada",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3516,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=60ce671413729bac986b2cc22728847ff3407fbb)",
-      "expected_head_sha": "60ce671413729bac986b2cc22728847ff3407fbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T20:10:52.196Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-2988-plugin-switcher-tabs",
-        "head_sha": "60ce671413729bac986b2cc22728847ff3407fbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142057:5582808130:2026-09-08T20:10:09Z:clawsweeper_needs_human",
       "comment_id": "5582808130",
@@ -33156,6 +33123,53 @@
       "status": "skipped",
       "processed_at": "2026-09-09T01:39:26.944Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142151:5594449922:2026-09-09T01:38:33Z:re_review",
+      "comment_id": "5594449922",
+      "comment_version_key": "5594449922:2026-09-09T01:38:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142151#issuecomment-5594449922",
+      "comment_created_at": "2026-09-09T01:38:33Z",
+      "comment_updated_at": "2026-09-09T01:38:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142151,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T01:39:32.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/code-mode-slack-transport-stack-20260908",
+        "head_sha": "6ee4c8efeeb0872dfef67db1d21478618c88543b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
