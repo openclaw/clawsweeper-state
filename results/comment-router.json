@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T01:43:15.417Z",
+  "updated_at": "2026-09-09T01:44:36.209Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141843:5579437105:2026-09-08T20:23:46Z:clawsweeper_needs_human",
-      "comment_id": "5579437105",
-      "comment_version_key": "5579437105:2026-09-08T20:23:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141843#issuecomment-5579437105",
-      "comment_created_at": "2026-09-08T04:51:42Z",
-      "comment_updated_at": "2026-09-08T20:23:46Z",
-      "comment_body_sha256": "a9f9ea9cbb426e0081f067991e862634c31f4ed16d2e8083604f5ff69b98e36e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141843,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The recorded loopback run exercises the production Responses transport and classifier through a 502-to-fallback decision, but stops be... (sha=630c17977260c783228cef7f82020230f71ea063)",
-      "expected_head_sha": "630c17977260c783228cef7f82020230f71ea063",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T20:25:03.966Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/failover-5xx-server-error",
-        "head_sha": "630c17977260c783228cef7f82020230f71ea063",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142485:5591389097:2026-09-08T20:25:09Z:freeform_assist",
       "comment_id": "5591389097",
@@ -33118,6 +33085,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142322:5594492464:2026-09-09T01:43:49Z:re_review",
+      "comment_id": "5594492464",
+      "comment_version_key": "5594492464:2026-09-09T01:43:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142322#issuecomment-5594492464",
+      "comment_created_at": "2026-09-09T01:43:49Z",
+      "comment_updated_at": "2026-09-09T01:43:49Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142322,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T01:44:34.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-preflight-node-hint-142208",
+        "head_sha": "37273f063868b207f4291ab86894c46d0d7f09a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
