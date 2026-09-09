@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T09:00:10.045Z",
+  "updated_at": "2026-09-09T09:00:12.753Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141305:5572908155:2026-09-09T01:44:09Z:clawsweeper_needs_human",
-      "comment_id": "5572908155",
-      "comment_version_key": "5572908155:2026-09-09T01:44:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141305#issuecomment-5572908155",
-      "comment_created_at": "2026-09-07T15:38:04Z",
-      "comment_updated_at": "2026-09-09T01:44:09Z",
-      "comment_body_sha256": "03c6ea912f3f887860cf917544067e2a827389179f3de354613a7c6c1167eb51",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141305,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the Windows trace exercises the production task runner and records its timeout, but bypasses S... (sha=9dd143752e54e479849eb9d6702104298f6eecc5)",
-      "expected_head_sha": "9dd143752e54e479849eb9d6702104298f6eecc5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T01:58:30.945Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/signal-wait-for-idle-timeout",
-        "head_sha": "d0e1c6753ff686840ba9c73192338b938b15737f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142203:5586358503:2026-09-09T01:54:45Z:clawsweeper_needs_human",
       "comment_id": "5586358503",
@@ -32702,6 +32669,53 @@
         "kind": "pull_request",
         "branch": "privacy/payload-redaction-v2",
         "head_sha": "75c568719878ffd2e128998b4e16841e998f8de1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142963:5599221032:2026-09-09T08:59:15Z:re_review",
+      "comment_id": "5599221032",
+      "comment_version_key": "5599221032:2026-09-09T08:59:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142963#issuecomment-5599221032",
+      "comment_created_at": "2026-09-09T08:59:15Z",
+      "comment_updated_at": "2026-09-09T08:59:15Z",
+      "comment_body_sha256": "38e52a53df0d320491899681e86d1cf641eac54ef7e4e33754bdeaf3c364e18c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142963,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T09:00:10.267Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-telegram",
+        "head_sha": "f64a442adf48d22105ea9d1f4766efe3240c076d",
         "cluster_id": null,
         "job_path": null
       },
