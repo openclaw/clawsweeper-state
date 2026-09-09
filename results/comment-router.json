@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T10:10:46.083Z",
+  "updated_at": "2026-09-09T10:10:52.775Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142776:5594731218:2026-09-09T03:07:16Z:clawsweeper_needs_human",
-      "comment_id": "5594731218",
-      "comment_version_key": "5594731218:2026-09-09T03:07:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142776#issuecomment-5594731218",
-      "comment_created_at": "2026-09-09T02:12:53Z",
-      "comment_updated_at": "2026-09-09T03:07:16Z",
-      "comment_body_sha256": "72ba568a9fb85f6c65629fd66179f46a1cc1ec979ae955e72f08e8053d9fdbd2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142776,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the new queue progress writer reaches Doctor's retained-handle surface, but supplied evidence does not...; Review finding: [P2] Guard progress writes with Doctor repair authority — src/channels/message/ingress-queue.ts:1729 - [medium] Retained Doctor queue can mutate after authority ex... (sha=a4886291bc62cbfbc06a3ea8f740a5e30b697380)",
-      "expected_head_sha": "a4886291bc62cbfbc06a3ea8f740a5e30b697380",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T03:18:00.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev/kevinlin/slack-ingress-observability",
-        "head_sha": "b781c40a7209cbf5444964b8146abd131a69e4eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142782:5594834302:2026-09-09T03:04:17Z:clawsweeper_auto_repair",
       "comment_id": "5594834302",
@@ -32746,6 +32713,53 @@
         "kind": "pull_request",
         "branch": "split-install-updating",
         "head_sha": "534cec92d0b7e7a9f8fb8bc0de09ee259d6ed9c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142996:5600152384:2026-09-09T10:09:47Z:re_review",
+      "comment_id": "5600152384",
+      "comment_version_key": "5600152384:2026-09-09T10:09:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142996#issuecomment-5600152384",
+      "comment_created_at": "2026-09-09T10:09:47Z",
+      "comment_updated_at": "2026-09-09T10:09:47Z",
+      "comment_body_sha256": "834b57d83652376430b5d0461200e433067f1a55d49d5f5818b312a1fd678b17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142996,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T10:10:50.433Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-channels-matrix",
+        "head_sha": "f8516c405865f9237ee4a8c591a191614b4b0f31",
         "cluster_id": null,
         "job_path": null
       },
