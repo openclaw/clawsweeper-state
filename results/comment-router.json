@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T09:55:30.896Z",
+  "updated_at": "2026-09-09T09:56:33.264Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129535:5595074272:2026-09-09T02:56:55Z:re_review",
-      "comment_id": "5595074272",
-      "comment_version_key": "5595074272:2026-09-09T02:56:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129535#issuecomment-5595074272",
-      "comment_created_at": "2026-09-09T02:56:55Z",
-      "comment_updated_at": "2026-09-09T02:56:55Z",
-      "comment_body_sha256": "4ae026a50b871d798ec985b6f0160277512cd645850a253dd6ca1e52ed8385fd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129535,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T02:57:52.872Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/talk-subagent-completion-reattach",
-        "head_sha": "fa2bf20e148536c1c33dcf3bf12712206bc4a6b9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142764:5595075527:2026-09-09T02:57:05Z:re_review",
       "comment_id": "5595075527",
@@ -32648,6 +32601,39 @@
         "kind": "pull_request",
         "branch": "docs-audit/split-providers-ollama",
         "head_sha": "94e2877a6f9a143af4d1ce4e4a4c360c8ff31b86",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142829:5595894139:2026-09-09T09:55:29Z:clawsweeper_auto_repair",
+      "comment_id": "5595894139",
+      "comment_version_key": "5595894139:2026-09-09T09:55:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142829#issuecomment-5595894139",
+      "comment_created_at": "2026-09-09T04:40:03Z",
+      "comment_updated_at": "2026-09-09T09:55:29Z",
+      "comment_body_sha256": "ce95ca9fb0b26356b6ff252f7d3ec2df6aa425352685ee767166bc5acbbcd168",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142829,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=a1d30dc8d9761cef36dd71bd069c944d9b0fd9e5)",
+      "expected_head_sha": "a1d30dc8d9761cef36dd71bd069c944d9b0fd9e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T09:56:33.264Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/local-whisper-transcript-replies",
+        "head_sha": "a1d30dc8d9761cef36dd71bd069c944d9b0fd9e5",
         "cluster_id": null,
         "job_path": null
       }
