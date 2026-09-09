@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T12:13:46.271Z",
+  "updated_at": "2026-09-09T12:13:49.717Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142760:5594609577:2026-09-09T05:09:40Z:clawsweeper_needs_human",
-      "comment_id": "5594609577",
-      "comment_version_key": "5594609577:2026-09-09T05:09:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142760#issuecomment-5594609577",
-      "comment_created_at": "2026-09-09T01:58:39Z",
-      "comment_updated_at": "2026-09-09T05:09:40Z",
-      "comment_body_sha256": "1af8033cb646c09ac5bc453a0aa008660b97f42619f3d3359753d6ff4d2be1bf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142760,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=3bf34b0570d3e55ad16f7c4cb25249797a59042b)",
-      "expected_head_sha": "3bf34b0570d3e55ad16f7c4cb25249797a59042b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T05:10:47.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-774-product-categories",
-        "head_sha": "3bf34b0570d3e55ad16f7c4cb25249797a59042b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142844:5596179605:2026-09-09T05:13:19Z:clawsweeper_needs_human",
       "comment_id": "5596179605",
@@ -33627,6 +33594,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143053:5601633290:2026-09-09T12:13:00Z:re_review",
+      "comment_id": "5601633290",
+      "comment_version_key": "5601633290:2026-09-09T12:13:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143053#issuecomment-5601633290",
+      "comment_created_at": "2026-09-09T12:13:00Z",
+      "comment_updated_at": "2026-09-09T12:13:00Z",
+      "comment_body_sha256": "cbb95d023263bcc2f3d33c1d35783f87dbf64acedda8189d8f6016e6c089104c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143053,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T12:13:47.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-ci-scope-routing",
+        "head_sha": "fac930548d1db01c0a564d4844c1dbb86e0a3775",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
