@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142820"
-mode: "autonomous"
-run_id: "34310212267"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34310212267"
-head_sha: "ff17d883716e291ba348ef28c391dbad122d5f92"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-09T04:52:43.156Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142820"
+mode: "plan"
+run_id: "34315189563"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34315189563"
+head_sha: "6c7e5199956c52ef143e22ad475359f00b8bb5c0"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-09T05:39:50.684Z"
+canonical: "#142820"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142820"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34310212267](https://github.com/openclaw/clawsweeper/actions/runs/34310212267)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34315189563](https://github.com/openclaw/clawsweeper/actions/runs/34315189563)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142820
+Canonical: #142820
 
 ## Summary
 
-Source inspection supports a narrow channel-dispatch repair. Implementation and runtime reproduction are blocked by the read-only workspace, missing dependencies, and unavailable preflight main commit. No files or GitHub state were changed; the executor fix plan is ready.
+Plan a narrow channel CLI selection repair using the existing forwarding policy. Source inspection confirms the reported difference at the preflight main SHA. No files changed, tests run, or GitHub mutations performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Source inspection supports a narrow channel-dispatch repair. Implementation and 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #142820 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,9 +66,8 @@ Source inspection supports a narrow channel-dispatch repair. Implementation and 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142820 | fix_needed | planned | canonical | Keep the issue open. Confirm the regression on refreshed main before implementing the caller repair. |
-| #135548 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-142820 | build_fix_artifact | planned | canonical | An authorized writable executor must refresh main, demonstrate the failing regression, implement the narrow fix, and complete validation before opening or updating the single implementation PR. |
+| #142820 | fix_needed | planned | canonical | The channel candidate forwards the selected profile directly; RPC applies the existing CLI forwarding selector. Prepare one implementation PR, contingent on a failing behavioral regression against the executor's current main. |
+| #135548 | keep_closed | skipped | related | Historical context only; no closure or reopening is proposed. |
 
 ## Needs Human
 
