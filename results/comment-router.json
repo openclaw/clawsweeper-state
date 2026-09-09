@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T05:00:19.003Z",
+  "updated_at": "2026-09-09T05:00:45.149Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142685:5593454956:2026-09-08T23:41:41Z:clawsweeper_auto_repair",
-      "comment_id": "5593454956",
-      "comment_version_key": "5593454956:2026-09-08T23:41:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142685#issuecomment-5593454956",
-      "comment_created_at": "2026-09-08T23:41:41Z",
-      "comment_updated_at": "2026-09-08T23:41:41Z",
-      "comment_body_sha256": "5422afc5da40600771ce403aaeacaa5231e7e785de624df85e28f1d6b90c205c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142685,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2282d5a25b4d6f4435f7e8b99048bebb826a3df0)",
-      "expected_head_sha": "2282d5a25b4d6f4435f7e8b99048bebb826a3df0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T23:42:32.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/minimax-live-tool-marker",
-        "head_sha": "2282d5a25b4d6f4435f7e8b99048bebb826a3df0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142686:5593458699:2026-09-08T23:42:00Z:clawsweeper_needs_human",
       "comment_id": "5593458699",
@@ -32205,6 +32172,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142802:5596070073:2026-09-09T04:59:46Z:re_review",
+      "comment_id": "5596070073",
+      "comment_version_key": "5596070073:2026-09-09T04:59:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142802#issuecomment-5596070073",
+      "comment_created_at": "2026-09-09T04:59:46Z",
+      "comment_updated_at": "2026-09-09T04:59:46Z",
+      "comment_body_sha256": "2fd8f708e3648c15cb5059063b47c1a555c1f2d1fcb525b7d6041b2bb62d88a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142802,
+      "author": "keshavbotagent",
+      "author_id": 267154163,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T05:00:42.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-progress-exit-priority",
+        "head_sha": "01433b7e1f0b2fc3dc2e153751887d780a33ba4c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
