@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143100",
+  "mode": "autonomous",
+  "run_id": "34352518852",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34352518852",
+  "head_sha": "6b3a33b697a6df6ef1cd31836b15f035c0a83cd2",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143100.md",
+  "published_at": "2026-09-09T13:27:05.264Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143100",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143100",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the desktop admission gap in the available checkout. A narrow fix artifact is prepared, but implementation and regression proof are blocked by the read-only workspace, missing dependencies, and unavailable latest-main verification. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#143100",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143100",
+      "candidate_fix": null,
+      "reason": "Retain this canonical issue and implement the existing build-admission contract at the desktop access owner after reproducing on verified latest main."
+    },
+    {
+      "target": "#121081",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence only; no closure or repair action."
+    },
+    {
+      "target": "#140400",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related historical refactor, not an implementation candidate."
+    },
+    {
+      "target": "#141336",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact authorization-related item for central OpenClaw security handling without public mutation. Preserve its existing behavior in the independent build-admission fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143100",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143100",
+      "candidate_fix": null,
+      "reason": "Artifact generation is complete. Applying it remains blocked until a writable executor verifies latest main and existing implementation work, then establishes a failing regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
