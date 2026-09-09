@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T13:15:28.504Z",
+  "updated_at": "2026-09-09T13:16:14.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119057:5570388927:2026-09-07T12:08:07Z:re_review",
-      "comment_id": "5570388927",
-      "comment_version_key": "5570388927:2026-09-07T12:08:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5570388927",
-      "comment_created_at": "2026-09-07T12:08:07Z",
-      "comment_updated_at": "2026-09-07T12:08:07Z",
-      "comment_body_sha256": "2a64000bc4c284028e88256bc628f3dfa54773dc44708c374da301efcde1561e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119057,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T05:47:56.263Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119057:5571749066:2026-09-07T14:01:09Z:re_review",
       "comment_id": "5571749066",
@@ -33730,6 +33703,39 @@
       "status": "skipped",
       "processed_at": "2026-09-09T13:15:28.504Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143115:5602446763:2026-09-09T13:14:21Z:clawsweeper_needs_human",
+      "comment_id": "5602446763",
+      "comment_version_key": "5602446763:2026-09-09T13:14:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143115#issuecomment-5602446763",
+      "comment_created_at": "2026-09-09T13:14:21Z",
+      "comment_updated_at": "2026-09-09T13:14:21Z",
+      "comment_body_sha256": "b4afb3c938b7f664846cef1e09dbad768ae22c2a5de3ee4cc34d82f8cbcf58f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed fallback attempt and runner exits are covered by mocked rejections, but the supplied evidence does not show their new stop reasons... (sha=0deca277ec36f609174b97027a7c6630905b9360)",
+      "expected_head_sha": "0deca277ec36f609174b97027a7c6630905b9360",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T13:16:14.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/name-remaining-fallback-chain-stops",
+        "head_sha": "0deca277ec36f609174b97027a7c6630905b9360",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
