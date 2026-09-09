@@ -2,53 +2,6 @@
   "updated_at": "2026-09-09T17:56:25.728Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:136869:5602555893:2026-09-09T13:21:45Z:re_review",
-      "comment_id": "5602555893",
-      "comment_version_key": "5602555893:2026-09-09T13:21:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136869#issuecomment-5602555893",
-      "comment_created_at": "2026-09-09T13:21:45Z",
-      "comment_updated_at": "2026-09-09T13:21:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136869,
-      "author": "holny",
-      "author_id": 12433219,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T13:22:37.635Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/136405-embedding-percall-timeout",
-        "head_sha": "285ecdf9ddf2d591b3eef20f9ccbbbce1cebf1c3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:140012:5602554471:2026-09-09T13:21:40Z:re_review",
       "comment_id": "5602554471",
       "comment_version_key": "5602554471:2026-09-09T13:21:40Z",
@@ -32817,6 +32770,39 @@
         "kind": "pull_request",
         "branch": "fix/oversized-durable-lease",
         "head_sha": "3c868b160730cbfc8ff3c687df7094d55d7a8f79",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143295:5606365843:2026-09-09T17:55:17Z:clawsweeper_auto_repair",
+      "comment_id": "5606365843",
+      "comment_version_key": "5606365843:2026-09-09T17:55:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5606365843",
+      "comment_created_at": "2026-09-09T17:55:17Z",
+      "comment_updated_at": "2026-09-09T17:55:17Z",
+      "comment_body_sha256": "2d356784127be8bd2dc8cc9938ff26c54d741bdb5f408c858102ec34960c2de5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=acc6773e48c89ca8528b09f5ed49323330ca265b)",
+      "expected_head_sha": "acc6773e48c89ca8528b09f5ed49323330ca265b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T17:56:21.241Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-reader-lifecycle-v2",
+        "head_sha": "acc6773e48c89ca8528b09f5ed49323330ca265b",
         "cluster_id": null,
         "job_path": null
       }
