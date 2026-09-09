@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T01:40:22.707Z",
+  "updated_at": "2026-09-09T01:41:26.114Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141797:5578600277:2026-09-08T20:11:57Z:clawsweeper_needs_human",
-      "comment_id": "5578600277",
-      "comment_version_key": "5578600277:2026-09-08T20:11:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141797#issuecomment-5578600277",
-      "comment_created_at": "2026-09-08T03:20:16Z",
-      "comment_updated_at": "2026-09-08T20:11:57Z",
-      "comment_body_sha256": "db36119e47466cd541f17c26333c37db7c250ed46890f9beeb7db475ff31f4be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141797,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: reported real-client HTTP cases positively cover notice fencing and in-flight recovery revocation, but...; Review finding: [P1] Preserve writer authorization when replaying split final replies — src/channels/turn/direct-delivery-custody.ts:118-121 - [high] Durable replay loses session-... (sha=9ba9604528a4c752dc6f0830310c711c0091067c)",
-      "expected_head_sha": "9ba9604528a4c752dc6f0830310c711c0091067c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T20:17:25.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/recovery-channel-progress",
-        "head_sha": "9ba9604528a4c752dc6f0830310c711c0091067c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142504:5591293623:2026-09-08T20:17:03Z:clawsweeper_needs_human",
       "comment_id": "5591293623",
@@ -33126,6 +33093,53 @@
       "status": "skipped",
       "processed_at": "2026-09-09T01:40:22.707Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142750:5594464715:2026-09-09T01:40:27Z:re_review",
+      "comment_id": "5594464715",
+      "comment_version_key": "5594464715:2026-09-09T01:40:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142750#issuecomment-5594464715",
+      "comment_created_at": "2026-09-09T01:40:27Z",
+      "comment_updated_at": "2026-09-09T01:40:27Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142750,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T01:41:23.913Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/7.33-matrix-e2ee-lifecycle",
+        "head_sha": "e7fa463effdef749ec80da5c2dba34e7732ac9f1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
