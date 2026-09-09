@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T18:18:44.602Z",
+  "updated_at": "2026-09-09T18:18:54.280Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142853:5602880272:2026-09-09T13:43:43Z:re_review",
-      "comment_id": "5602880272",
-      "comment_version_key": "5602880272:2026-09-09T13:43:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142853#issuecomment-5602880272",
-      "comment_created_at": "2026-09-09T13:43:43Z",
-      "comment_updated_at": "2026-09-09T13:43:43Z",
-      "comment_body_sha256": "1e4665e93978ac64d1802628fbf998dfe78284cd861216b33ed4f1ae466ba251",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142853,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T13:45:17.018Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/swarm-parent-active-childOutcome-142189",
-        "head_sha": "3ad1066f6bf72bc71ff4f9fbc98945bb6b927f9c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142743:5594314599:2026-09-09T13:33:19Z:clawsweeper_needs_human",
       "comment_id": "5594314599",
@@ -32886,6 +32839,39 @@
         "kind": "pull_request",
         "branch": "azchohfi-reactor-preview-14-upgrade",
         "head_sha": "8afdcadae7046ac907b42587e2185e426077acdd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143238:5604904299:2026-09-09T18:17:43Z:clawsweeper_needs_human",
+      "comment_id": "5604904299",
+      "comment_version_key": "5604904299:2026-09-09T18:17:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143238#issuecomment-5604904299",
+      "comment_created_at": "2026-09-09T16:04:06Z",
+      "comment_updated_at": "2026-09-09T18:17:43Z",
+      "comment_body_sha256": "bfdd43eb4d11a598d09ff6c381cd680ec5afce64526b01c632cc35c7a33c4eb4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143238,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plugins keep import and call compatibility but receive narrower credential-policy text after upgrade; downstream refusal and disclosure behavior has not been measured. The PR... (sha=780b2fe35d71d539179424c78c57000f8f669d2c)",
+      "expected_head_sha": "780b2fe35d71d539179424c78c57000f8f669d2c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T18:18:54.280Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/openclaw-masked-credential-login-ea0448",
+        "head_sha": "780b2fe35d71d539179424c78c57000f8f669d2c",
         "cluster_id": null,
         "job_path": null
       }
