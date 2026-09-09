@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T05:44:13.471Z",
+  "updated_at": "2026-09-09T05:44:21.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137381:5540265372:2026-09-04T12:14:03Z:re_review",
-      "comment_id": "5540265372",
-      "comment_version_key": "5540265372:2026-09-04T12:14:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137381#issuecomment-5540265372",
-      "comment_created_at": "2026-09-04T12:13:53Z",
-      "comment_updated_at": "2026-09-04T12:14:03Z",
-      "comment_body_sha256": "f14152ac437ef9083cb7e14eae06c492c8a8eb013b06b3d9a1d27053f8ebfdff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137381,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T00:12:09.748Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137381:5540586089:2026-09-04T12:43:44Z:re_review",
       "comment_id": "5540586089",
@@ -32100,6 +32073,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:137:5596434328:2026-09-09T05:43:25Z:clawsweeper_needs_human",
+      "comment_id": "5596434328",
+      "comment_version_key": "5596434328:2026-09-09T05:43:25Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/137#issuecomment-5596434328",
+      "comment_created_at": "2026-09-09T05:43:25Z",
+      "comment_updated_at": "2026-09-09T05:43:25Z",
+      "comment_body_sha256": "4d858be973f3f08e7aa4c03d666bb99e56494e99c6c2d00097ebd7cff85bc641",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 137,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - With a retired generated schema, existing raw NixOS QMD configuration will stop evaluation until operators migrate settings; configuration is not automatically rewritten. (sha=25450be6e7df3cfa1e1681985b338c08e5995145)",
+      "expected_head_sha": "25450be6e7df3cfa1e1681985b338c08e5995145",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T05:44:21.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nix-qmd-retirement-20260909",
+        "head_sha": "25450be6e7df3cfa1e1681985b338c08e5995145",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
