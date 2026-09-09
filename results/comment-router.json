@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T13:21:21.478Z",
+  "updated_at": "2026-09-09T13:22:39.796Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119056:5174219273:2026-09-09T05:47:22Z:clawsweeper_auto_repair",
-      "comment_id": "5174219273",
-      "comment_version_key": "5174219273:2026-09-09T05:47:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5174219273",
-      "comment_created_at": "2026-08-04T03:19:55Z",
-      "comment_updated_at": "2026-09-09T05:47:22Z",
-      "comment_body_sha256": "e8ad8f7cf3d656a0f113b5b660ff75de088e834bd6c8b10d69ce4e19d20fbfdc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3228873fb603e2b3616ca5a7c8452b0618ef88ce)",
-      "expected_head_sha": "3228873fb603e2b3616ca5a7c8452b0618ef88ce",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T05:48:49.667Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "3228873fb603e2b3616ca5a7c8452b0618ef88ce",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:177:5596474838:2026-09-09T05:48:13Z:clawsweeper_needs_human",
       "comment_id": "5596474838",
@@ -33766,6 +33733,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136869:5602555893:2026-09-09T13:21:45Z:re_review",
+      "comment_id": "5602555893",
+      "comment_version_key": "5602555893:2026-09-09T13:21:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136869#issuecomment-5602555893",
+      "comment_created_at": "2026-09-09T13:21:45Z",
+      "comment_updated_at": "2026-09-09T13:21:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136869,
+      "author": "holny",
+      "author_id": 12433219,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T13:22:37.635Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/136405-embedding-percall-timeout",
+        "head_sha": "285ecdf9ddf2d591b3eef20f9ccbbbce1cebf1c3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
