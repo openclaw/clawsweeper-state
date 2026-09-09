@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T00:08:27.185Z",
+  "updated_at": "2026-09-09T00:09:12.431Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142417:5590158449:2026-09-08T18:48:16Z:re_review",
-      "comment_id": "5590158449",
-      "comment_version_key": "5590158449:2026-09-08T18:48:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142417#issuecomment-5590158449",
-      "comment_created_at": "2026-09-08T18:48:16Z",
-      "comment_updated_at": "2026-09-08T18:48:16Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142417,
-      "author": "artdaal",
-      "author_id": 35874009,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T18:49:17.199Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-local-service-acquirer-identity",
-        "head_sha": "22c515336d41830f6abee7030bd649ac291afa4f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1369:5590078283:2026-09-08T18:41:39Z:re_review",
       "comment_id": "5590078283",
@@ -33657,6 +33610,39 @@
         "kind": "pull_request",
         "branch": "openclaw/improve-cloud-reconciliation-ux",
         "head_sha": "98165958dd6356911f3100c9e7d67bedbed2df0f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142623:5592588422:2026-09-09T00:07:43Z:clawsweeper_auto_repair",
+      "comment_id": "5592588422",
+      "comment_version_key": "5592588422:2026-09-09T00:07:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142623#issuecomment-5592588422",
+      "comment_created_at": "2026-09-08T22:14:21Z",
+      "comment_updated_at": "2026-09-09T00:07:43Z",
+      "comment_body_sha256": "b36de0e3af2e45ef4a6b81007ceb4c9ea71b7eb69715c7d8d7a1663a433eb00c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142623,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=4699fe2ae348e337d67f52f3ca61f61d0588d228)",
+      "expected_head_sha": "4699fe2ae348e337d67f52f3ca61f61d0588d228",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T00:09:12.431Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/composer-video-attachment-preview",
+        "head_sha": "4699fe2ae348e337d67f52f3ca61f61d0588d228",
         "cluster_id": null,
         "job_path": null
       }
