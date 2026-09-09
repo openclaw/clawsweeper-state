@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T18:59:12.911Z",
+  "updated_at": "2026-09-09T18:59:57.918Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119589:5191500547:2026-09-05T03:02:33Z:clawsweeper_needs_human",
-      "comment_id": "5191500547",
-      "comment_version_key": "5191500547:2026-09-05T03:02:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119589#issuecomment-5191500547",
-      "comment_created_at": "2026-08-05T12:06:10Z",
-      "comment_updated_at": "2026-09-05T03:02:33Z",
-      "comment_body_sha256": "b0051d99fafd6a5e818bcd063d019b1ba10c86f0bc3ac12b5c3e30ef897e8844",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119589,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The WeChat failure has not been connected to an ACP producer, leaving the claimed repair owner unverified. (sha=61ed1c4b40db7738c45a67bbb69efc585bce9bf4)",
-      "expected_head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T14:40:06.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-92199",
-        "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-        "cluster_id": "automerge-openclaw-openclaw-119589",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119589.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123122:5279067631:2026-09-09T14:34:38Z:clawsweeper_auto_repair",
       "comment_id": "5279067631",
@@ -32779,6 +32746,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142802:5607151769:2026-09-09T18:58:53Z:re_review",
+      "comment_id": "5607151769",
+      "comment_version_key": "5607151769:2026-09-09T18:58:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142802#issuecomment-5607151769",
+      "comment_created_at": "2026-09-09T18:58:53Z",
+      "comment_updated_at": "2026-09-09T18:58:53Z",
+      "comment_body_sha256": "e68e3712ecb6827ab65b3ab2745065c581022fe764adfc12ff041b1bb1c7fb57",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142802,
+      "author": "keshavbotagent",
+      "author_id": 267154163,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T18:59:55.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-progress-exit-priority",
+        "head_sha": "35b1332d618113325c3c3799ff203b7f6a20672b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
