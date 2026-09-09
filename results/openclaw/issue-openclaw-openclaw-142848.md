@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142848"
-mode: "autonomous"
-run_id: "34314398340"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34314398340"
-head_sha: "6c7e5199956c52ef143e22ad475359f00b8bb5c0"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34320554064"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34320554064"
+head_sha: "02b629e6936b4a1af2de9f3b5262312bb48bca1c"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-09T05:54:06.648Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142848"
+published_at: "2026-09-09T06:52:23.895Z"
+canonical: "#142848"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/142848"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34314398340](https://github.com/openclaw/clawsweeper/actions/runs/34314398340)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34320554064](https://github.com/openclaw/clawsweeper/actions/runs/34320554064)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142848
+Canonical: #142848
 
 ## Summary
 
-Reproduced the Chinese digest admission and priority defects against preflight main. Prepared a narrow fix artifact. Implementation and repository validation are blocked by the read-only workspace and absent dependencies; no files or GitHub state changed.
+Plan a narrow Chinese policy-digest repair for #142848. Checkout matches preflight main 338a53fbde2cd2668e987156a22b4383b4207bdc; both matchers remain English-only. No files or GitHub state changed; regression execution and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Reproduced the Chinese digest admission and priority defects against preflight m
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142848 | fix_needed | planned | canonical | A narrow repair belongs in the existing bootstrap digest owner; neither linked PR fixes Chinese admission and ranking. |
-| #89894 | keep_related | planned | related | Related truncation work with a different implementation scope; preserve the contributor PR independently. |
-| #137974 | keep_closed | skipped | related | Historical framing repair to preserve, not a closure target or a fix for this issue. |
-| cluster:issue-openclaw-openclaw-142848 | build_fix_artifact | planned | canonical | The bounded fix is supported by current-source reproduction and can be implemented by the writable executor. |
-| cluster:issue-openclaw-openclaw-142848 | open_fix_pr | blocked | canonical | Publication is blocked until the executor retrieves the full issue examples, implements the two-file repair, establishes failing regressions, and completes validation and review. |
+| https://github.com/openclaw/openclaw/issues/142848 | fix_needed | planned | canonical | A focused admission-and-ranking repair is appropriate. Establish failing builder regressions before implementation; do not close or merge from this lane. |
+| https://github.com/openclaw/openclaw/pull/89894 | keep_related | planned | related | Template ordering does not repair Chinese digest matching. Preserve the contributor's distinct work. |
+| https://github.com/openclaw/openclaw/pull/137974 | keep_closed | skipped | related | Historical framing repair; preserve its behavior in the new fix. |
 
 ## Needs Human
 
