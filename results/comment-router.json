@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T19:13:13.772Z",
+  "updated_at": "2026-09-09T19:13:23.518Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123837:5603862516:2026-09-09T14:53:11Z:re_review",
-      "comment_id": "5603862516",
-      "comment_version_key": "5603862516:2026-09-09T14:53:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5603862516",
-      "comment_created_at": "2026-09-09T14:50:09Z",
-      "comment_updated_at": "2026-09-09T14:53:11Z",
-      "comment_body_sha256": "d352160812d91903230dafe400156a819898250116f99e978c62bf3a3509738e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123837,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T14:54:39.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telegram-copy-text-buttons",
-        "head_sha": "9db9cc7a08ec132142b97cbdef6cd0a19fcf7755",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143190:5603903185:2026-09-09T14:52:58Z:clawsweeper_needs_human",
       "comment_id": "5603903185",
@@ -32768,6 +32721,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142712:5593980224:2026-09-09T19:12:11Z:clawsweeper_auto_repair",
+      "comment_id": "5593980224",
+      "comment_version_key": "5593980224:2026-09-09T19:12:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142712#issuecomment-5593980224",
+      "comment_created_at": "2026-09-09T00:40:52Z",
+      "comment_updated_at": "2026-09-09T19:12:11Z",
+      "comment_body_sha256": "9504fdea3747bb72d636712df3b4380dcf9c5d466bcb501a2100861646e56605",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142712,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dd94c0f9beaa1edb182891598e66530503b4936a)",
+      "expected_head_sha": "dd94c0f9beaa1edb182891598e66530503b4936a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T19:13:23.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-754-ui-category-groups",
+        "head_sha": "dd94c0f9beaa1edb182891598e66530503b4936a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
