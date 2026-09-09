@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T05:38:47.417Z",
+  "updated_at": "2026-09-09T05:39:12.307Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3516:5593656996:2026-09-09T00:04:37Z:re_review",
-      "comment_id": "5593656996",
-      "comment_version_key": "5593656996:2026-09-09T00:04:37Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3516#issuecomment-5593656996",
-      "comment_created_at": "2026-09-09T00:04:37Z",
-      "comment_updated_at": "2026-09-09T00:04:37Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3516,
-      "author": "harjothkhara",
-      "author_id": 48686985,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T00:11:30.338Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-2988-plugin-switcher-tabs",
-        "head_sha": "4c9575a6ed2df13ba12881afa559c6a563e37a99",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3516:5591041231:2026-09-09T00:10:34Z:clawsweeper_auto_repair",
       "comment_id": "5591041231",
@@ -31967,6 +31920,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142858:5596391565:2026-09-09T05:38:14Z:clawsweeper_needs_human",
+      "comment_id": "5596391565",
+      "comment_version_key": "5596391565:2026-09-09T05:38:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142858#issuecomment-5596391565",
+      "comment_created_at": "2026-09-09T05:38:14Z",
+      "comment_updated_at": "2026-09-09T05:38:14Z",
+      "comment_body_sha256": "47e56fc88a946ec84bad3332a1bd892d9b797b3ba597c86573ff0bf1959665d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142858,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2d1da8da584c8fa0710576a0fba7e3837c74e863)",
+      "expected_head_sha": "2d1da8da584c8fa0710576a0fba7e3837c74e863",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T05:39:12.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-cli-update",
+        "head_sha": "2d1da8da584c8fa0710576a0fba7e3837c74e863",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
