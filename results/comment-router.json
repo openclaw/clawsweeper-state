@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T19:16:52.684Z",
+  "updated_at": "2026-09-09T19:17:01.608Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132454:5461020893:2026-09-09T14:54:49Z:clawsweeper_needs_human",
-      "comment_id": "5461020893",
-      "comment_version_key": "5461020893:2026-09-09T14:54:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5461020893",
-      "comment_created_at": "2026-08-29T07:18:34Z",
-      "comment_updated_at": "2026-09-09T14:54:49Z",
-      "comment_body_sha256": "141605acbc2e1caf18bae8d6a8de1719d53ee28e0d377165df993b537bf3838b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The account-usage endpoint belongs to the still-unmerged Gateway dependency; shipping the UI independently to main would leave its new requests unsupported. (sha=dd491ec2ccf358df7ad924b0dc49765d06f1eee3)",
-      "expected_head_sha": "dd491ec2ccf358df7ad924b0dc49765d06f1eee3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T14:57:19.699Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "dd491ec2ccf358df7ad924b0dc49765d06f1eee3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132453:5461072539:2026-09-09T14:56:03Z:clawsweeper_needs_human",
       "comment_id": "5461072539",
@@ -32741,6 +32708,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142782:5607358975:2026-09-09T19:15:59Z:re_review",
+      "comment_id": "5607358975",
+      "comment_version_key": "5607358975:2026-09-09T19:15:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142782#issuecomment-5607358975",
+      "comment_created_at": "2026-09-09T19:15:59Z",
+      "comment_updated_at": "2026-09-09T19:15:59Z",
+      "comment_body_sha256": "2bedc01f20dbe1b0dcb987532602ee918d36abfdcedcf7a35502dd895745161b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142782,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T19:16:58.322Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-771-unified-plugin-catalog",
+        "head_sha": "48455cdc0314a90c1a18bc8fde596cccbc47ed14",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
