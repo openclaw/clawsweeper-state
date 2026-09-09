@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T10:28:59.875Z",
+  "updated_at": "2026-09-09T10:29:59.176Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:85136:4513884994:2026-09-09T03:29:44Z:clawsweeper_needs_human",
-      "comment_id": "4513884994",
-      "comment_version_key": "4513884994:2026-09-09T03:29:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/85136#issuecomment-4513884994",
-      "comment_created_at": "2026-05-22T00:28:29Z",
-      "comment_updated_at": "2026-09-09T03:29:44Z",
-      "comment_body_sha256": "6152f55d192f93456b9ae6e3ff18fd68b200543880b8ed2de3b2530d38c121d3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 85136,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Pin external Actions to immutable commit SHAs (P1)** - This secret-bearing workflow still uses mutable Action tags here and at lines 148, 155, and 219. Pin all four Actions to reviewed full SHAs and update the w...; Review finding: [P1] Pin external Actions to immutable commit SHAs — .github/workflows/crabbox-pr-desktop-lease.yml:64 - [high] Mutable Actions run in credentialed workflow — .git... (sha=eb024d63e368ccf6ede2127319e535d5ea29ac9c)",
-      "expected_head_sha": "eb024d63e368ccf6ede2127319e535d5ea29ac9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T03:36:15.796Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mantis-pr-desktop-lease",
-        "head_sha": "eb024d63e368ccf6ede2127319e535d5ea29ac9c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112312:5127924602:2026-09-09T03:28:59Z:clawsweeper_auto_repair",
       "comment_id": "5127924602",
@@ -32827,6 +32794,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142993:5600389346:2026-09-09T10:29:09Z:re_review",
+      "comment_id": "5600389346",
+      "comment_version_key": "5600389346:2026-09-09T10:29:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142993#issuecomment-5600389346",
+      "comment_created_at": "2026-09-09T10:29:09Z",
+      "comment_updated_at": "2026-09-09T10:29:09Z",
+      "comment_body_sha256": "aeb7a97ba07755fce51334fdb4e6103469a1543df07f8741e065922eec11618a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142993,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T10:29:56.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "split-install-updating",
+        "head_sha": "c202c0307be5ab537c3d595681d27ba804cf3658",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
