@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T08:40:34.009Z",
+  "updated_at": "2026-09-09T08:40:52.233Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119057:5590407972:2026-09-08T19:08:56Z:re_review",
-      "comment_id": "5590407972",
-      "comment_version_key": "5590407972:2026-09-08T19:08:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5590407972",
-      "comment_created_at": "2026-09-08T19:08:56Z",
-      "comment_updated_at": "2026-09-08T19:08:56Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119057,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T01:49:30.823Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134996:5491014633:2026-09-09T01:48:48Z:clawsweeper_needs_human",
       "comment_id": "5491014633",
@@ -32379,6 +32352,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1488:5598944815:2026-09-09T08:39:41Z:re_review",
+      "comment_id": "5598944815",
+      "comment_version_key": "5598944815:2026-09-09T08:39:41Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1488#issuecomment-5598944815",
+      "comment_created_at": "2026-09-09T08:39:41Z",
+      "comment_updated_at": "2026-09-09T08:39:41Z",
+      "comment_body_sha256": "3a16a1a77a2856caa09e4dd38f518e45b2eea67b1e7cacfdb83d5015b515b29e",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1488,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T08:40:49.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/review-output-policy-20260908",
+        "head_sha": "4a78370c8439e6e6de9d31a88bff4891c9cc05ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
