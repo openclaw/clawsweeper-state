@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T16:36:24.451Z",
+  "updated_at": "2026-09-09T16:37:35.903Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143010:5599822934:2026-09-09T10:35:00Z:clawsweeper_needs_human",
-      "comment_id": "5599822934",
-      "comment_version_key": "5599822934:2026-09-09T10:35:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143010#issuecomment-5599822934",
-      "comment_created_at": "2026-09-09T09:44:58Z",
-      "comment_updated_at": "2026-09-09T10:35:00Z",
-      "comment_body_sha256": "0a43ddbf6d9432a3be56ab66c5b66bf86711987a30a71655f13439fbc6a23f32",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143010,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The live suite's model access, accounting assumptions, and intended cache-defect failure remain unqualified; startup success cannot distinguish a working regression test from an earli... (sha=6cd61ce5e243135dd583b3fe7d850f1e9570eda1)",
-      "expected_head_sha": "6cd61ce5e243135dd583b3fe7d850f1e9570eda1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T10:36:03.142Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-prompt-cache-live",
-        "head_sha": "6cd61ce5e243135dd583b3fe7d850f1e9570eda1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142992:5600094305:2026-09-09T10:35:06Z:clawsweeper_needs_human",
       "comment_id": "5600094305",
@@ -33206,6 +33173,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142853:5605345395:2026-09-09T16:36:21Z:re_review",
+      "comment_id": "5605345395",
+      "comment_version_key": "5605345395:2026-09-09T16:36:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142853#issuecomment-5605345395",
+      "comment_created_at": "2026-09-09T16:36:21Z",
+      "comment_updated_at": "2026-09-09T16:36:21Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142853,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T16:37:34.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/swarm-parent-active-childOutcome-142189",
+        "head_sha": "3ad1066f6bf72bc71ff4f9fbc98945bb6b927f9c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
