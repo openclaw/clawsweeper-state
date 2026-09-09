@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143100",
+  "mode": "plan",
+  "run_id": "34357720541",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34357720541",
+  "head_sha": "6b3a33b697a6df6ef1cd31836b15f035c0a83cd2",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143100.md",
+  "published_at": "2026-09-09T13:40:08.813Z",
+  "canonical": "#143100",
+  "canonical_issue": "#143100",
+  "canonical_pr": "#143113",
+  "summary": "Keep #143100 open and repair the existing editable implementation PR #143113. Current-main source still lacks desktop build admission. CI and behavior proof remain outstanding. No code or GitHub mutations were performed, and no tests were run.",
+  "actions": [
+    {
+      "target": "#143100",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143100",
+      "candidate_fix": "#143113",
+      "reason": "Canonical bug report with an existing candidate implementation; failing candidate checks preclude fixed-by-candidate closeout."
+    },
+    {
+      "target": "#143113",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143113",
+      "candidate_fix": null,
+      "reason": "Reuse the useful editable contributor branch. Inspect complete review and failed-job details, complete regression and behavior proof, and repair attributable failures without opening competing work."
+    },
+    {
+      "target": "#121081",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#143100",
+      "candidate_fix": null,
+      "reason": "Historical sibling implementation; already closed."
+    },
+    {
+      "target": "#140400",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#143100",
+      "candidate_fix": null,
+      "reason": "Historical refactor does not resolve the desktop build-admission gap."
+    },
+    {
+      "target": "#141336",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical authority-related item for central security handling without public mutation. It does not block the separate build-compatibility repair."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
