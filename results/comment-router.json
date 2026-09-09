@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T21:34:17.870Z",
+  "updated_at": "2026-09-09T21:34:51.436Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135839:5605307198:2026-09-09T16:33:29Z:re_review",
-      "comment_id": "5605307198",
-      "comment_version_key": "5605307198:2026-09-09T16:33:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135839#issuecomment-5605307198",
-      "comment_created_at": "2026-09-09T16:33:29Z",
-      "comment_updated_at": "2026-09-09T16:33:29Z",
-      "comment_body_sha256": "ef255694e95b24fb39817a66c536eb1ab98b5675e705a16cb210a115b9f36524",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135839,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T16:39:14.392Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-715-plugin-shell",
-        "head_sha": "1df647b155341e88ad3dcea37a9d8e94d5d0aa7b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143260:5605369630:2026-09-09T16:38:13Z:clawsweeper_needs_human",
       "comment_id": "5605369630",
@@ -32928,6 +32881,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143359:5607866209:2026-09-09T21:33:42Z:clawsweeper_needs_human",
+      "comment_id": "5607866209",
+      "comment_version_key": "5607866209:2026-09-09T21:33:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143359#issuecomment-5607866209",
+      "comment_created_at": "2026-09-09T19:55:35Z",
+      "comment_updated_at": "2026-09-09T21:33:42Z",
+      "comment_body_sha256": "1ac021453ff109e7d07fe897d11964e3c0daf8839801030896b21a37be1ec261",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143359,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured body reports fresh sandbox shell success through the changed harness, but resumed executi...; Review finding: [P1] [P1] Preserve filtered tools when managed policy disables native shell — extensions/codex/src/app-server/dynamic-tool-build.ts:622-625 - [medium] Tightened po... (sha=fe8d0f4b1cc37d0777b25b0c4333bdb6be490cec)",
+      "expected_head_sha": "fe8d0f4b1cc37d0777b25b0c4333bdb6be490cec",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T21:34:51.436Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repair/native-sandbox-tool-policy",
+        "head_sha": "fe8d0f4b1cc37d0777b25b0c4333bdb6be490cec",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
