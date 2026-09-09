@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T22:09:54.653Z",
+  "updated_at": "2026-09-09T22:11:12.300Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143216:5604417850:2026-09-09T16:48:04Z:clawsweeper_auto_repair",
-      "comment_id": "5604417850",
-      "comment_version_key": "5604417850:2026-09-09T16:48:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143216#issuecomment-5604417850",
-      "comment_created_at": "2026-09-09T15:28:53Z",
-      "comment_updated_at": "2026-09-09T16:48:04Z",
-      "comment_body_sha256": "37027c4704cc43a59dda7ebf28e6667958c4a4562ce95c008d0aacf50e44c977",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143216,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ff45c44fb4686136b42ed4af8d6ee37ca18e3d40)",
-      "expected_head_sha": "ff45c44fb4686136b42ed4af8d6ee37ca18e3d40",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T16:53:34.982Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-wear-direct-conversations-20260909",
-        "head_sha": "ff45c44fb4686136b42ed4af8d6ee37ca18e3d40",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143220:5604720244:2026-09-09T16:45:10Z:clawsweeper_needs_human",
       "comment_id": "5604720244",
@@ -32891,6 +32858,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141569:5609432231:2026-09-09T22:10:09Z:re_review",
+      "comment_id": "5609432231",
+      "comment_version_key": "5609432231:2026-09-09T22:10:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141569#issuecomment-5609432231",
+      "comment_created_at": "2026-09-09T22:10:09Z",
+      "comment_updated_at": "2026-09-09T22:10:09Z",
+      "comment_body_sha256": "cd07760c116fcf0f27bb140a6e04498f8761247c22a4b00bbe0fff4e79ce315f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141569,
+      "author": "Bruce-Yii",
+      "author_id": 298228875,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T22:11:10.005Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/infer-local-account-secret-materialization",
+        "head_sha": "dc83f2406313fe1c317eb47efb35cfc5a0686158",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
