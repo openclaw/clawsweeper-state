@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-09T15:27:26.316Z",
+  "updated_at": "2026-09-09T15:27:58.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5468653986:2026-08-30T12:21:55Z:re_review",
-      "comment_id": "5468653986",
-      "comment_version_key": "5468653986:2026-08-30T12:21:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5468653986",
-      "comment_created_at": "2026-08-30T12:21:55Z",
-      "comment_updated_at": "2026-08-30T12:21:55Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T09:01:25.299Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5468702003:2026-08-30T12:31:45Z:re_review",
       "comment_id": "5468702003",
@@ -33778,6 +33751,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142300:5588315291:2026-09-09T15:18:30Z:clawsweeper_needs_human",
+      "comment_id": "5588315291",
+      "comment_version_key": "5588315291:2026-09-09T15:18:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142300#issuecomment-5588315291",
+      "comment_created_at": "2026-09-08T16:16:56Z",
+      "comment_updated_at": "2026-09-09T15:18:30Z",
+      "comment_body_sha256": "3ba706c6fb094c3650179a18d78380dd4a30575a78d95f702374fea74b3a8a48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - While Talk owns the preview, existing QR scanning and node capture can fail until the user releases it; discoverable recovery and successful reuse of the camera remain unverified. (sha=1b167095a4197408cdc60c719ddf8820c93d3475)",
+      "expected_head_sha": "1b167095a4197408cdc60c719ddf8820c93d3475",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T15:27:58.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr138726-split-k-camera",
+        "head_sha": "1b167095a4197408cdc60c719ddf8820c93d3475",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
