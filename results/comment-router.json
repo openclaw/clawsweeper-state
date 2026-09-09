@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T09:58:48.661Z",
+  "updated_at": "2026-09-09T09:59:03.180Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136476:5513723810:2026-09-09T02:57:56Z:clawsweeper_needs_human",
-      "comment_id": "5513723810",
-      "comment_version_key": "5513723810:2026-09-09T02:57:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136476#issuecomment-5513723810",
-      "comment_created_at": "2026-09-02T17:35:00Z",
-      "comment_updated_at": "2026-09-09T02:57:56Z",
-      "comment_body_sha256": "bd76a6bba7adf5ad2c69aeb868bbc3bd7ab2a617f39ff298aac644d441df9fad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136476,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new persisted host identity and recovery semantics lack an accepted upgrade/rollback contract; older-row preservation and the chosen rollback path remain unproven. (sha=77e3cb8af3820c3c7f8ffc4f89516af11072de0b)",
-      "expected_head_sha": "77e3cb8af3820c3c7f8ffc4f89516af11072de0b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T02:59:08.075Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-orphan-attribution",
-        "head_sha": "77e3cb8af3820c3c7f8ffc4f89516af11072de0b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136476:5514383843:2026-09-02T18:26:53Z:re_review",
       "comment_id": "5514383843",
@@ -32714,6 +32681,53 @@
         "kind": "pull_request",
         "branch": "docs-audit/split-tools-tts",
         "head_sha": "4a50e0ee9a17d9be66bbc611cf91e9bd4a42db40",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143004:5600001697:2026-09-09T09:58:02Z:re_review",
+      "comment_id": "5600001697",
+      "comment_version_key": "5600001697:2026-09-09T09:58:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143004#issuecomment-5600001697",
+      "comment_created_at": "2026-09-09T09:58:02Z",
+      "comment_updated_at": "2026-09-09T09:58:02Z",
+      "comment_body_sha256": "391db5c52a3ee1bddf9b968b9611b8ea1ce9e685059be9361b0bea00502e2588",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143004,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-09T09:59:00.848Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs-audit/split-providers-ollama",
+        "head_sha": "fbfabcbbfd12fc86e269b6eb7c09998005b89d87",
         "cluster_id": null,
         "job_path": null
       },
