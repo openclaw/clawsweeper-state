@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T21:05:41.989Z",
+  "updated_at": "2026-09-09T21:06:25.243Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142470:5604832000:2026-09-09T15:58:46Z:re_review",
-      "comment_id": "5604832000",
-      "comment_version_key": "5604832000:2026-09-09T15:58:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142470#issuecomment-5604832000",
-      "comment_created_at": "2026-09-09T15:58:46Z",
-      "comment_updated_at": "2026-09-09T15:58:46Z",
-      "comment_body_sha256": "0526ddeefb3c574f98a732426de7ab862059499b178919d816ed598c78257605",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142470,
-      "author": "zackmsa777-a11y",
-      "author_id": 243164115,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T15:59:52.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/queued-followup-implicit-reply-target",
-        "head_sha": "437760c23067c972356180107f42df48673d1e8c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3196:5416108606:2026-09-09T15:57:59Z:clawsweeper_needs_human",
       "comment_id": "5416108606",
@@ -33108,6 +33061,39 @@
         "kind": "pull_request",
         "branch": "fix/compaction-cli-auth-native-identity",
         "head_sha": "c2521d0b8c7393c5abb0acf433454a9f16189a4a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1381:5608736866:2026-09-09T21:05:33Z:clawsweeper_needs_human",
+      "comment_id": "5608736866",
+      "comment_version_key": "5608736866:2026-09-09T21:05:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1381#issuecomment-5608736866",
+      "comment_created_at": "2026-09-09T21:05:33Z",
+      "comment_updated_at": "2026-09-09T21:05:33Z",
+      "comment_body_sha256": "91b905ab0b3666bc48ccbe39c5fc1ee216492dfd76c838a281edd505e4d6db3e",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1381,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously accepted versionless custom-installer configurations now stop during configuration validation until the operator supplies an exact Gateway.Version; maintainer intent is exp... (sha=475509f150589515c37a043b4819fe303dd703fb)",
+      "expected_head_sha": "475509f150589515c37a043b4819fe303dd703fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T21:06:25.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr/1312-followup",
+        "head_sha": "475509f150589515c37a043b4819fe303dd703fb",
         "cluster_id": null,
         "job_path": null
       }
