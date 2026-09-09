@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T16:24:10.837Z",
+  "updated_at": "2026-09-09T16:26:56.518Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143010:5600388530:2026-09-09T10:29:05Z:re_review",
-      "comment_id": "5600388530",
-      "comment_version_key": "5600388530:2026-09-09T10:29:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143010#issuecomment-5600388530",
-      "comment_created_at": "2026-09-09T10:29:05Z",
-      "comment_updated_at": "2026-09-09T10:29:05Z",
-      "comment_body_sha256": "737c27e85a7f841d847cc255753faadcaef4daf2c212fae429c351329abcf781",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143010,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T10:30:01.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/gateway-prompt-cache-live",
-        "head_sha": "6cd61ce5e243135dd583b3fe7d850f1e9570eda1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143012:5600389537:2026-09-09T10:29:09Z:re_review",
       "comment_id": "5600389537",
@@ -33259,6 +33212,39 @@
         "kind": "pull_request",
         "branch": "fix/swarm-parent-active-childOutcome-142189",
         "head_sha": "3ad1066f6bf72bc71ff4f9fbc98945bb6b927f9c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143251:5605209594:2026-09-09T16:25:59Z:clawsweeper_needs_human",
+      "comment_id": "5605209594",
+      "comment_version_key": "5605209594:2026-09-09T16:25:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143251#issuecomment-5605209594",
+      "comment_created_at": "2026-09-09T16:25:59Z",
+      "comment_updated_at": "2026-09-09T16:25:59Z",
+      "comment_body_sha256": "299b932f33011667d62f6b054548d6516a00d5504bd0f95c3df7e204aa77f7aa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143251,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The precise shared-worker leak remains unlocated; the reported passing isolated runs support containment rather than a demonstrated root-cause repair. (sha=12495cba10c0f66dc8ccfb283c249799cc03781a)",
+      "expected_head_sha": "12495cba10c0f66dc8ccfb283c249799cc03781a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T16:26:56.518Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/announce-isolated-lane",
+        "head_sha": "12495cba10c0f66dc8ccfb283c249799cc03781a",
         "cluster_id": null,
         "job_path": null
       }
