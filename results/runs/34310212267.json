@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142820",
+  "mode": "autonomous",
+  "run_id": "34310212267",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34310212267",
+  "head_sha": "ff17d883716e291ba348ef28c391dbad122d5f92",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142820.md",
+  "published_at": "2026-09-09T04:52:43.156Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142820",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142820",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow channel-dispatch repair. Implementation and runtime reproduction are blocked by the read-only workspace, missing dependencies, and unavailable preflight main commit. No files or GitHub state were changed; the executor fix plan is ready.",
+  "actions": [
+    {
+      "target": "#142820",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142820",
+      "candidate_fix": null,
+      "reason": "Keep the issue open. Confirm the regression on refreshed main before implementing the caller repair."
+    },
+    {
+      "target": "#135548",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-142820",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#142820",
+      "candidate_fix": null,
+      "reason": "An authorized writable executor must refresh main, demonstrate the failing regression, implement the narrow fix, and complete validation before opening or updating the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#142820",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
