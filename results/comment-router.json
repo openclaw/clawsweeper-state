@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T14:03:13.958Z",
+  "updated_at": "2026-09-09T14:03:17.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142875:5597455831:2026-09-09T06:51:33Z:re_review",
-      "comment_id": "5597455831",
-      "comment_version_key": "5597455831:2026-09-09T06:51:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142875#issuecomment-5597455831",
-      "comment_created_at": "2026-09-09T06:51:33Z",
-      "comment_updated_at": "2026-09-09T06:51:33Z",
-      "comment_body_sha256": "5ce43ac203097f7b65879941e6bf48982cce2061e0ff0bc7441e00f136b40735",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142875,
-      "author": "j0urneyk",
-      "author_id": 62772873,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T06:52:29.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-runtime-pnpm-discovery",
-        "head_sha": "a97eb1155b18dde8ee07f9653b28058aa12120f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142899:5597467136:2026-09-09T06:52:08Z:clawsweeper_needs_human",
       "comment_id": "5597467136",
@@ -33801,6 +33754,39 @@
         "kind": "pull_request",
         "branch": "feat/store-durable-option",
         "head_sha": "4d772446d89b9289a2ea14bd35528a06fd3b3da2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/nix-openclaw:141:5603143179:2026-09-09T14:01:55Z:clawsweeper_needs_human",
+      "comment_id": "5603143179",
+      "comment_version_key": "5603143179:2026-09-09T14:01:55Z",
+      "comment_url": "https://github.com/openclaw/nix-openclaw/pull/141#issuecomment-5603143179",
+      "comment_created_at": "2026-09-09T14:01:55Z",
+      "comment_updated_at": "2026-09-09T14:01:55Z",
+      "comment_body_sha256": "e440f023c9faa33360270a090b4e866f3b53ef748c2e4a6753636f611dc2b354",
+      "repo": "openclaw/nix-openclaw",
+      "issue_number": 141,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Darwin baseline activation remains unobserved after the reported historical artifact hash mismatch; successful installed-generation upgrades and rollback are explicitly outside the de... (sha=5b5a17979b1afd7b5038d468800149fe0ede3761)",
+      "expected_head_sha": "5b5a17979b1afd7b5038d468800149fe0ede3761",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T14:03:17.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/nix-installed-upgrade-20260909",
+        "head_sha": "5b5a17979b1afd7b5038d468800149fe0ede3761",
         "cluster_id": null,
         "job_path": null
       }
