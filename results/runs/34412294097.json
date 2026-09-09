@@ -1,0 +1,61 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143385",
+  "mode": "plan",
+  "run_id": "34412294097",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34412294097",
+  "head_sha": "97c9a7b45caf20f6d580fe0ae5cc48db31da15f4",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143385.md",
+  "published_at": "2026-09-09T22:33:03.468Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143385",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143385",
+  "canonical_pr": null,
+  "summary": "Plan one narrow fix for #143385. Source inspection matches the reported coverage-gate mismatch at preflight main e4a6d50073ceb4e97f5401e19d40ec3c02e0ff22. No files or GitHub state changed. Runtime reproduction, direct sibling Codex contract inspection, and validation remain required.",
+  "actions": [
+    {
+      "target": "#143385",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143385",
+      "candidate_fix": null,
+      "reason": "Prepare the scoped repair below, conditional on direct Codex contract inspection and a failing regression on latest main. Merge and closure are prohibited."
+    },
+    {
+      "target": "#84662",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#143385",
+      "candidate_fix": null,
+      "reason": "Distinct history-growth mechanism; repairing successful-delivery coverage does not resolve persistent runtime-context accumulation."
+    },
+    {
+      "target": "#143386",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#143385",
+      "candidate_fix": null,
+      "reason": "Separate lifecycle defect with existing maintainer discussion; retain outside this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
