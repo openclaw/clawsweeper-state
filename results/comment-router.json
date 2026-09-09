@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T01:49:30.823Z",
+  "updated_at": "2026-09-09T01:49:44.998Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119057:5591546297:2026-09-08T20:38:26Z:re_review",
-      "comment_id": "5591546297",
-      "comment_version_key": "5591546297:2026-09-08T20:38:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5591546297",
-      "comment_created_at": "2026-09-08T20:38:26Z",
-      "comment_updated_at": "2026-09-08T20:38:26Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119057,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T20:39:11.644Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-semantic-observation-stack-20260804",
-        "head_sha": "d96598fd27a4d9481b9f0701e76e14b574e27945",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/Kova:122:5591537911:2026-09-08T20:37:43Z:re_review",
       "comment_id": "5591537911",
@@ -33010,6 +32963,39 @@
       "status": "skipped",
       "processed_at": "2026-09-09T01:49:30.823Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134996:5491014633:2026-09-09T01:48:48Z:clawsweeper_needs_human",
+      "comment_id": "5491014633",
+      "comment_version_key": "5491014633:2026-09-09T01:48:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134996#issuecomment-5491014633",
+      "comment_created_at": "2026-09-01T08:16:34Z",
+      "comment_updated_at": "2026-09-09T01:48:48Z",
+      "comment_body_sha256": "61010db151df8b8386ed3f59c4dfc141c75bb43f666ce4be3cfdba0efd77cf88",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134996,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Inspected screenshots and the reported real Gateway chat.inject run support the original rendering fix. However, the current fonts wer... (sha=c68fb6af6617befe69056299b3485b36943966c7)",
+      "expected_head_sha": "c68fb6af6617befe69056299b3485b36943966c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T01:49:44.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-133930",
+        "head_sha": "c68fb6af6617befe69056299b3485b36943966c7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
