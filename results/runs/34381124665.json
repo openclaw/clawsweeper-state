@@ -1,0 +1,108 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143267",
+  "mode": "autonomous",
+  "run_id": "34381124665",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34381124665",
+  "head_sha": "ea172802675ac6c67013f54f40a56675d41648a0",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143267.md",
+  "published_at": "2026-09-09T17:29:31.344Z",
+  "canonical": "https://github.com/openclaw/openclaw/pull/143282",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143267",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/143282",
+  "summary": "Confirmed the duplicate-write behavior in an in-memory probe of current main. Existing writable contributor PR #143282 is the canonical repair path; avoid a competing PR. Implementation and full validation are blocked by the read-only workspace and missing dependencies.",
+  "actions": [
+    {
+      "target": "#143267",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143267",
+      "candidate_fix": "#143282",
+      "reason": "The defect remains present on preflight main. Keep the report open while the existing contributor PR completes validation; closure is prohibited by this job."
+    },
+    {
+      "target": "#143282",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#143282",
+      "candidate_fix": null,
+      "reason": "Reuse and validate the editable contributor branch. The worker cannot implement or validate branch changes in this environment; pending checks alone do not establish a patch defect."
+    },
+    {
+      "target": "#136241",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context whose literal quoting and cleanup contracts must be preserved."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143267",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143282",
+      "candidate_fix": null,
+      "reason": "Provide an auditable executor handoff while keeping local implementation blocked and preserving the existing contributor path."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#143267",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
