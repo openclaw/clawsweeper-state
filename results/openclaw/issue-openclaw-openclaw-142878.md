@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-142878"
-mode: "autonomous"
-run_id: "34318712337"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34318712337"
+mode: "plan"
+run_id: "34324541624"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34324541624"
 head_sha: "02b629e6936b4a1af2de9f3b5262312bb48bca1c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-09T07:07:17.071Z"
-canonical: "https://github.com/openclaw/openclaw/issues/142878"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/142878"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-09T07:41:48.333Z"
+canonical: "#142878"
+canonical_issue: "#142878"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34318712337](https://github.com/openclaw/clawsweeper/actions/runs/34318712337)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34324541624](https://github.com/openclaw/clawsweeper/actions/runs/34324541624)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/142878
+Canonical: #142878
 
 ## Summary
 
-Scoped fix plan prepared. Implementation is blocked by the read-only workspace, missing dependencies and sibling Codex source, and unavailable GitHub DNS. Local source supports the reported defect, but latest-main reproduction and after-fix validation remain unperformed. No files or GitHub items were changed.
+Plan one focused native project-document budget inheritance fix for #142878. Local main matches preflight SHA 9e2a170789c81b29c8fe33d7572f61edcd25f5de and still supplies the unconditional 131072 default. No files or GitHub state changed. Native contract inspection, failing regression, implementation, and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Scoped fix plan prepared. Implementation is blocked by the read-only workspace, 
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #142878 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,11 +66,10 @@ Scoped fix plan prepared. Implementation is blocked by the read-only workspace, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142878 | fix_needed | planned | canonical | The hydrated report and local request producer support a narrow inheritance repair. Executor must verify the supported native contract and reproduce on refreshed main before implementation. |
-| #120618 | keep_related | planned | related | Keep this distinct instruction-delivery work open; it is neither the canonical fix nor superseded by this budget repair. |
-| #125966 | keep_closed | skipped | related | Historical evidence only; already closed. |
-| #126986 | keep_related | planned | related | Preserve @jason-allen-oneal's separate continuity work and its existing review path. This issue-specific PR must not replace or close it. |
-| cluster:issue-openclaw-openclaw-142878 | build_fix_artifact | planned | canonical | Artifact creation is non-mutating. Applying and validating it requires a writable executor with refreshed main, dependencies, and the exact supported Codex source. |
+| #142878 | fix_needed | planned | canonical | A narrow bug-fix plan is supported by the supplied report. Establish the failing regression and inspect the supported native source contract before implementing or claiming native behavior is verified. |
+| #120618 | keep_related | planned | related | Distinct instruction-delivery work; do not absorb its fallback, replace its branch, or close it through this issue implementation. |
+| #126986 | keep_related | planned | related | Preserve the contributor PR as separate continuity work. Check overlapping configuration logic without claiming the PR is superseded or importing its persistence and replay changes. |
+| #125966 | keep_closed | skipped | related | Historical evidence only; no closure action. |
 
 ## Needs Human
 
