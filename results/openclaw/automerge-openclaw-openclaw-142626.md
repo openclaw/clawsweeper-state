@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-142626"
-mode: "plan"
-run_id: "34330092648"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34330092648"
-head_sha: "02b629e6936b4a1af2de9f3b5262312bb48bca1c"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "34336737849"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34336737849"
+head_sha: "6b3a33b697a6df6ef1cd31836b15f035c0a83cd2"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-09T09:37:52.278Z"
+published_at: "2026-09-09T10:08:02.748Z"
 canonical: "#142626"
-canonical_issue: "#142603"
+canonical_issue: null
 canonical_pr: "#142626"
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34330092648](https://github.com/openclaw/clawsweeper/actions/runs/34330092648)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34336737849](https://github.com/openclaw/clawsweeper/actions/runs/34336737849)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #142626
 
 ## Summary
 
-Repair the editable contributor PR #142626 by removing its release-owned changelog addition, preserving release-note context and contributor credit in the PR, and completing fresh review and validation. Keep #142603 open. No mutations or tests were performed.
+Make PR #142626 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Repair the editable contributor PR #142626 by removing its release-owned changel
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #142626 | fix_needed | planned | canonical | The existing useful PR is repairable; replacement and maintainer escalation are unnecessary. |
-| #142626 | build_fix_artifact | planned | canonical | Provide the bounded edit pass with concrete cleanup, preservation, and validation requirements. |
-| #142603 | keep_canonical | planned | canonical | Retain the canonical bug report while its candidate fix completes repair and validation. |
-| #137029 | keep_closed | skipped | related | Historical context only; no action is required. |
+| #142626 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
 
 ## Needs Human
 
