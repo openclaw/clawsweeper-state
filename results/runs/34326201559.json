@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-142901",
+  "mode": "plan",
+  "run_id": "34326201559",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34326201559",
+  "head_sha": "02b629e6936b4a1af2de9f3b5262312bb48bca1c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-142901.md",
+  "published_at": "2026-09-09T08:00:59.934Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/142901",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/142901",
+  "canonical_pr": null,
+  "summary": "Plan one focused publication-permissions fix for #142901. The clean checkout matches preflight main 7b30cdcccf5a8eeb456016e4a41cb4dd8ba67cb1 and retains the reported source path. Runtime reproduction, implementation, tests, and container validation remain pending. Route the distinct authentication report separately; no GitHub mutations are planned.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/142901",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "142901",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is supported by source inspection. Establish a failing regression on current main before implementation; leave the issue open."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/139708",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Read-only routing to central OpenClaw security handling. This distinct authentication issue does not block #142901's browser artifact permissions repair."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/141117",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no further action."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
