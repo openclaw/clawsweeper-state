@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T08:11:09.875Z",
+  "updated_at": "2026-09-09T08:11:45.648Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142750:5594464715:2026-09-09T01:40:27Z:re_review",
-      "comment_id": "5594464715",
-      "comment_version_key": "5594464715:2026-09-09T01:40:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142750#issuecomment-5594464715",
-      "comment_created_at": "2026-09-09T01:40:27Z",
-      "comment_updated_at": "2026-09-09T01:40:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142750,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T01:41:23.913Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/7.33-matrix-e2ee-lifecycle",
-        "head_sha": "e7fa463effdef749ec80da5c2dba34e7732ac9f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:22439:4345750535:2026-09-09T01:20:07Z:clawsweeper_auto_repair",
       "comment_id": "4345750535",
@@ -32290,6 +32243,39 @@
         "kind": "pull_request",
         "branch": "openclaw-e9e/composer-fade",
         "head_sha": "aeade5d6d0acc23d4faf61f87c5178d621330b49",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142938:5598189400:2026-09-09T08:10:40Z:clawsweeper_needs_human",
+      "comment_id": "5598189400",
+      "comment_version_key": "5598189400:2026-09-09T08:10:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142938#issuecomment-5598189400",
+      "comment_created_at": "2026-09-09T07:48:29Z",
+      "comment_updated_at": "2026-09-09T08:10:40Z",
+      "comment_body_sha256": "1ddd893928727afc2fb1f57f5fdb55839a47e51a3ff8d950b02fc06d2fb41a0f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142938,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Hosted failure, skip, and cancellation paths have not demonstrated diagnostic artifact retention and correct success-artifact gating. (sha=aae9a5adae8b3c31f9d2a00b13abcbb7560c527e)",
+      "expected_head_sha": "aae9a5adae8b3c31f9d2a00b13abcbb7560c527e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T08:11:45.648Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-publication-diagnostics-20260909",
+        "head_sha": "aae9a5adae8b3c31f9d2a00b13abcbb7560c527e",
         "cluster_id": null,
         "job_path": null
       }
