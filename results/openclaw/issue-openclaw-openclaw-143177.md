@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143177"
-mode: "autonomous"
-run_id: "34365042068"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34365042068"
-head_sha: "4899f29ef1540c9c080f20c22ad0b3ad7fb303b8"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-09T14:54:53.809Z"
-canonical: "https://github.com/openclaw/openclaw/issues/143177"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/143177"
+mode: "plan"
+run_id: "34370878538"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34370878538"
+head_sha: "aabbd983c31ee97dd10f86760a3deab7dc5bc142"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-09T15:43:58.006Z"
+canonical: "#143177"
+canonical_issue: "#143177"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34365042068](https://github.com/openclaw/clawsweeper/actions/runs/34365042068)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34370878538](https://github.com/openclaw/clawsweeper/actions/runs/34370878538)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/143177
+Canonical: #143177
 
 ## Summary
 
-Prepared a narrow UI fix plan. Implementation and regression validation are blocked by the read-only checkout, missing dependencies, unavailable preflight main revision, and missing sibling Codex source. No files or GitHub state changed.
+Plan one narrow UI repair for adopted native-session deletion. Checkout matches preflight main 8ced970bd77d3cefed2180d6cf05da78252df67b. No edits, runtime reproduction, validation, or GitHub mutations performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Prepared a narrow UI fix plan. Implementation and regression validation are bloc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143177 | fix_needed | blocked | canonical | Implementation requires a writable checkout synchronized to verified current main, dependencies, and the required Codex source inspection. The issue remains the canonical bug report. |
-| cluster:issue-openclaw-openclaw-143177 | build_fix_artifact | planned |  | A narrow non-security UI repair is supported by the supplied review and inspected local source. Execute only after current-main reproduction and environment prerequisites are satisfied. |
+| https://github.com/openclaw/openclaw/issues/143177 | fix_needed | planned | canonical | A focused UI fix is supported. Require a failing browser regression on the execution base before production edits. Closure and merge remain prohibited. |
 
 ## Needs Human
 
