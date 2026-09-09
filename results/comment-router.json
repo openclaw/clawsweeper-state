@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T02:53:05.661Z",
+  "updated_at": "2026-09-09T02:53:20.255Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142537:5591626236:2026-09-08T21:04:47Z:clawsweeper_needs_human",
-      "comment_id": "5591626236",
-      "comment_version_key": "5591626236:2026-09-08T21:04:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142537#issuecomment-5591626236",
-      "comment_created_at": "2026-09-08T20:45:20Z",
-      "comment_updated_at": "2026-09-08T21:04:47Z",
-      "comment_body_sha256": "0f0e8e57f629bb4d8652272b75c9b210d9bbce3ff8f388d8851e491681ada033",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142537,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9ff783a07d731ce6174f06d7c9b6d9fee6b530b1)",
-      "expected_head_sha": "9ff783a07d731ce6174f06d7c9b6d9fee6b530b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-08T21:18:21.925Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pin-kova-release-cpu-calibration",
-        "head_sha": "9ff783a07d731ce6174f06d7c9b6d9fee6b530b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142550:5591695845:2026-09-08T21:10:55Z:clawsweeper_needs_human",
       "comment_id": "5591695845",
@@ -32930,6 +32897,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-09T02:52:00Z:clawsweeper_auto_repair",
+      "comment_id": "5592569053",
+      "comment_version_key": "5592569053:2026-09-09T02:52:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
+      "comment_created_at": "2026-09-08T22:12:20Z",
+      "comment_updated_at": "2026-09-09T02:52:00Z",
+      "comment_body_sha256": "216a4f194bbcd234409a0af0948815fdb7d48e85542b79f77119ace226efd637",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142626,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
+      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+      "finding_id": "review-feedback",
+      "status": "waiting",
+      "processed_at": "2026-09-09T02:53:00.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-capability-refresh",
+        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+        "cluster_id": "automerge-openclaw-openclaw-142626",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142780:5594771550:2026-09-09T02:52:11Z:clawsweeper_needs_human",
