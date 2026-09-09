@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-09T07:28:20.423Z",
+  "updated_at": "2026-09-09T07:28:52.553Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-09-09T01:01:31Z:clawsweeper_needs_human",
-      "comment_id": "5241982342",
-      "comment_version_key": "5241982342:2026-09-09T01:01:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121622#issuecomment-5241982342",
-      "comment_created_at": "2026-08-10T14:55:55Z",
-      "comment_updated_at": "2026-09-09T01:01:31Z",
-      "comment_body_sha256": "ba24479341d3e8f8ca8fe7945989a2f2e125c573234012acd431855969594e3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121622,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the native harness reaches real setup authentication, saved-route operator/node reconnects, and live revocation...; Review finding: [P2] Assert retirement of the certificate owner, not every route owner — apps/macos/Tests/OpenClawIPCTests/GatewayDiscoverySelectionSupportTests.swift:107 - [P2] G... (sha=d18bff681de91d53ff009e6a70791ecd8f5eed88)",
-      "expected_head_sha": "d18bff681de91d53ff009e6a70791ecd8f5eed88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T01:02:43.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-gateway-credential-boundary",
-        "head_sha": "d18bff681de91d53ff009e6a70791ecd8f5eed88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142733:5594154733:2026-09-09T01:03:06Z:clawsweeper_needs_human",
       "comment_id": "5594154733",
@@ -32407,6 +32374,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-09T07:27:31Z:clawsweeper_auto_repair",
+      "comment_id": "5592569053",
+      "comment_version_key": "5592569053:2026-09-09T07:27:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
+      "comment_created_at": "2026-09-08T22:12:20Z",
+      "comment_updated_at": "2026-09-09T07:27:31Z",
+      "comment_body_sha256": "4db9c7da7985991f1692caa088f59e85f12564e0ddf2e8939ecf53faa507dbda",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142626,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
+      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+      "finding_id": "review-feedback",
+      "status": "waiting",
+      "processed_at": "2026-09-09T07:28:35.053Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-capability-refresh",
+        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+        "cluster_id": "automerge-openclaw-openclaw-142626",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
