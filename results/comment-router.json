@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T03:26:26.352Z",
+  "updated_at": "2026-09-09T03:26:39.841Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142581:5592465370:2026-09-08T22:02:27Z:re_review",
-      "comment_id": "5592465370",
-      "comment_version_key": "5592465370:2026-09-08T22:02:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142581#issuecomment-5592465370",
-      "comment_created_at": "2026-09-08T22:02:27Z",
-      "comment_updated_at": "2026-09-08T22:02:27Z",
-      "comment_body_sha256": "967113762167a9381f6c6b658da5d6ca3ef736b39bae836e69dfd88f734db472",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142581,
-      "author": "aim9sour",
-      "author_id": 214139338,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — live behavior proof added to the pr body: control ui built from this branch (e2dba1b) served via gateway.controlui.root, chat renamed live c3-po to proofbot via set-identity with no reload (welcome + composer + tab title updated, gateway hot-reload logged). screenshots + logs linked in the body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-08T22:03:21.686Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-identity-live-refresh",
-        "head_sha": "e2dba1b4a54e0a2f3a45b862b3e3dcd4cd3be776",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137485:5530616414:2026-09-08T21:59:08Z:clawsweeper_needs_human",
       "comment_id": "5530616414",
@@ -32930,6 +32883,39 @@
         "kind": "pull_request",
         "branch": "codex/split-migration-provider-resources",
         "head_sha": "3503bcbee5613e8b72abacac64095b55f7fea4e3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142799:5595302455:2026-09-09T03:25:36Z:clawsweeper_needs_human",
+      "comment_id": "5595302455",
+      "comment_version_key": "5595302455:2026-09-09T03:25:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142799#issuecomment-5595302455",
+      "comment_created_at": "2026-09-09T03:25:36Z",
+      "comment_updated_at": "2026-09-09T03:25:36Z",
+      "comment_body_sha256": "6f574918406630da60f810ca545fe030d2976b736a435a980ecfe815a2b1c1ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142799,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied adapter recorder demonstrates fewer calls but replaces LINE transport and fabricates receipts; it does not show the patched produc... (sha=f62564c0cb1b7af461c0316cdb3e5f4a82389226)",
+      "expected_head_sha": "f62564c0cb1b7af461c0316cdb3e5f4a82389226",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T03:26:39.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-142734",
+        "head_sha": "f62564c0cb1b7af461c0316cdb3e5f4a82389226",
         "cluster_id": null,
         "job_path": null
       }
