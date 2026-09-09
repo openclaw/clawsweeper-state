@@ -1,6 +1,39 @@
 {
-  "updated_at": "2026-09-09T06:36:46.138Z",
+  "updated_at": "2026-09-09T06:35:40.687Z",
   "commands": [
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telecrawl:38:5592731911:2026-09-09T00:17:14Z:clawsweeper_needs_human",
+      "comment_id": "5592731911",
+      "comment_version_key": "5592731911:2026-09-09T00:17:14Z",
+      "comment_url": "https://github.com/openclaw/telecrawl/pull/38#issuecomment-5592731911",
+      "comment_created_at": "2026-09-08T22:28:26Z",
+      "comment_updated_at": "2026-09-09T00:17:14Z",
+      "comment_body_sha256": "ccb68bffe3d2ddf451c9c220a165ed3d57c64d367f6d752c5be311e695bbe0e0",
+      "repo": "openclaw/telecrawl",
+      "issue_number": 38,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing backup checkouts can stop publishing after remote advancement because push no longer fetches or rebases; preservation of commits, tags, and unrelated staging through operator... (sha=16e05a26ac4929ac1c30aa69cbada9e256c7cb3d)",
+      "expected_head_sha": "16e05a26ac4929ac1c30aa69cbada9e256c7cb3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T00:18:13.129Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/audit-safety-20260908",
+        "head_sha": "16e05a26ac4929ac1c30aa69cbada9e256c7cb3d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142703:5593777956:2026-09-09T00:17:56Z:clawsweeper_needs_human",
       "comment_id": "5593777956",
@@ -32462,53 +32495,6 @@
         "cluster_id": null,
         "job_path": null
       }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140158:5597179475:2026-09-09T06:35:49Z:re_review",
-      "comment_id": "5597179475",
-      "comment_version_key": "5597179475:2026-09-09T06:35:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140158#issuecomment-5597179475",
-      "comment_created_at": "2026-09-09T06:35:49Z",
-      "comment_updated_at": "2026-09-09T06:35:49Z",
-      "comment_body_sha256": "5c780caeea0b4064f75619c83b81ec1d1350b5f62cae4771f58a712ef50f998d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140158,
-      "author": "waterundman",
-      "author_id": 120729380,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T06:36:43.829Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-authority-retired-operation",
-        "head_sha": "9e850d471bb6c69284386ad8a691c41b89e590a8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
