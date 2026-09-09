@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-09T17:24:47.334Z",
+  "updated_at": "2026-09-09T17:25:30.785Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123837:5601914614:2026-09-09T12:35:15Z:re_review",
-      "comment_id": "5601914614",
-      "comment_version_key": "5601914614:2026-09-09T12:35:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5601914614",
-      "comment_created_at": "2026-09-09T12:35:15Z",
-      "comment_updated_at": "2026-09-09T12:35:15Z",
-      "comment_body_sha256": "a0d8634d8e15d9552c545ec7b05e4ad198e6e4e98560b226601a77b7807c1d15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123837,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T12:36:23.501Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telegram-copy-text-buttons",
-        "head_sha": "ef55d424b098b0007a562dbf89ca1bbd30befa4b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:176:5601151322:2026-09-09T12:36:08Z:clawsweeper_needs_human",
       "comment_id": "5601151322",
@@ -32852,6 +32805,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142810:5595458215:2026-09-09T17:24:38Z:clawsweeper_needs_human",
+      "comment_id": "5595458215",
+      "comment_version_key": "5595458215:2026-09-09T17:24:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142810#issuecomment-5595458215",
+      "comment_created_at": "2026-09-09T03:44:52Z",
+      "comment_updated_at": "2026-09-09T17:24:38Z",
+      "comment_body_sha256": "3978f17b1a0cbf3cf149573e689c4b6de3ebfe8a60724f634da09b5cadc4aee3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142810,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Tool results consume the existing 200-row offline budget and can evict older locally available conversation sooner; this tradeoff is accepted, but fresh-install and upgrade/reopen beh... (sha=441a72c40f97b128f1713f6935dbc74ba926106f)",
+      "expected_head_sha": "441a72c40f97b128f1713f6935dbc74ba926106f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-09T17:25:30.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-chat-tool-disclosures",
+        "head_sha": "441a72c40f97b128f1713f6935dbc74ba926106f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
