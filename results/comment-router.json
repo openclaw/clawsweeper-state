@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T02:41:03.969Z",
+  "updated_at": "2026-09-10T02:41:47.176Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129120:5593942663:2026-09-09T00:36:11Z:re_review",
-      "comment_id": "5593942663",
-      "comment_version_key": "5593942663:2026-09-09T00:36:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129120#issuecomment-5593942663",
-      "comment_created_at": "2026-09-09T00:36:11Z",
-      "comment_updated_at": "2026-09-09T00:36:11Z",
-      "comment_body_sha256": "ca0af53475be84b2718750f1488087fd452ab4812cd2003efb1bb09397b92c0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129120,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T21:41:14.856Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143412:5609149978:2026-09-09T21:42:47Z:clawsweeper_needs_human",
       "comment_id": "5609149978",
@@ -33186,6 +33159,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143561:5611363756:2026-09-10T02:40:45Z:clawsweeper_needs_human",
+      "comment_id": "5611363756",
+      "comment_version_key": "5611363756:2026-09-10T02:40:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143561#issuecomment-5611363756",
+      "comment_created_at": "2026-09-10T01:39:03Z",
+      "comment_updated_at": "2026-09-10T02:40:45Z",
+      "comment_body_sha256": "8a869398d44ae837f5b84b6605427ef86010a2212de66aec450bd7dbd1b2f585",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143561,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Scripts that relied on exit 0 for unknown accounts or repeated no-op deletion will now receive exit 1; this intentional compatibility change is documented in the PR. (sha=93e58d068fb01730b41bf6a48ce7082d04adee4a)",
+      "expected_head_sha": "93e58d068fb01730b41bf6a48ce7082d04adee4a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T02:41:47.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channels-remove-unknown-account",
+        "head_sha": "93e58d068fb01730b41bf6a48ce7082d04adee4a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
