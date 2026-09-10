@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T22:47:54.052Z",
+  "updated_at": "2026-09-10T22:49:19.344Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5303223849:2026-08-15T16:44:53Z:re_review",
-      "comment_id": "5303223849",
-      "comment_version_key": "5303223849:2026-08-15T16:44:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5303223849",
-      "comment_created_at": "2026-08-15T16:44:53Z",
-      "comment_updated_at": "2026-08-15T16:44:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T16:52:37.615Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82950:5303274938:2026-08-15T16:57:46Z:re_review",
       "comment_id": "5303274938",
@@ -33359,6 +33332,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143015:5599927102:2026-09-10T22:48:24Z:clawsweeper_needs_human",
+      "comment_id": "5599927102",
+      "comment_version_key": "5599927102:2026-09-10T22:48:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143015#issuecomment-5599927102",
+      "comment_created_at": "2026-09-09T09:51:44Z",
+      "comment_updated_at": "2026-09-10T22:48:24Z",
+      "comment_body_sha256": "685b580c9acb7f21234c1734acdea71ad5b1fd01950bdf394510f0a43bc07de8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143015,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported Chromium/SQLite run meaningfully proves scoped input and stale-control rejection through...; Review finding: [medium] Resolve forwarded-link browser authority — extensions/browser/src/human-intervention/service.ts:225 (sha=084f204b4a5279e3a5a7e948a48bf7150865a1c2)",
+      "expected_head_sha": "084f204b4a5279e3a5a7e948a48bf7150865a1c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T22:49:19.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/human-browser-handoff-pr",
+        "head_sha": "b1a66019e066661a2ef037735533beb55dfc980a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
