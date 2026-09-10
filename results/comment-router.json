@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:37:31.089Z",
+  "updated_at": "2026-09-10T04:38:11.524Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143521:5610485286:2026-09-10T00:01:35Z:clawsweeper_needs_human",
-      "comment_id": "5610485286",
-      "comment_version_key": "5610485286:2026-09-10T00:01:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143521#issuecomment-5610485286",
-      "comment_created_at": "2026-09-10T00:01:35Z",
-      "comment_updated_at": "2026-09-10T00:01:35Z",
-      "comment_body_sha256": "85b7f626c4679e5d60a2de19e9b50fd79e642464f70f8a2fffd666f5ff3e2762",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143521,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing plugins using the exported agent-scoped helpers without an explicit active workspace will lose sandbox-file access after upgrade. The intentional restriction is explained in... (sha=1a32876898cacb2bc0883833a5f8927b84ff0f78)",
-      "expected_head_sha": "1a32876898cacb2bc0883833a5f8927b84ff0f78",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T00:04:32.012Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "965",
-        "head_sha": "1a32876898cacb2bc0883833a5f8927b84ff0f78",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143525:5610485470:2026-09-10T00:01:36Z:clawsweeper_needs_human",
       "comment_id": "5610485470",
@@ -32821,6 +32788,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142522:5613242253:2026-09-10T04:37:10Z:re_review",
+      "comment_id": "5613242253",
+      "comment_version_key": "5613242253:2026-09-10T04:37:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142522#issuecomment-5613242253",
+      "comment_created_at": "2026-09-10T04:37:10Z",
+      "comment_updated_at": "2026-09-10T04:37:10Z",
+      "comment_body_sha256": "a654e2e778a0b2f66600c0e875eca15ff7406e729050b596849c2d5c5b6101ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142522,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T04:38:09.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-dangling-index",
+        "head_sha": "7413faed94895cc4199ec80c8a0d5ab0a483199a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
