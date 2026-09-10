@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144025",
+  "mode": "plan",
+  "run_id": "34483099076",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34483099076",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144025.md",
+  "published_at": "2026-09-10T13:38:20.765Z",
+  "canonical": "#144025",
+  "canonical_issue": "#144025",
+  "canonical_pr": null,
+  "summary": "Plan a narrow fix for #144025. The clean checkout matches preflight main fa8d8905fde3e72b8cbe97e82d829af9d147c72b and still uses bundled-only media-contract loading. Route #144027 and #144048 separately to security handling. No files or GitHub state changed; regression execution and packaged-install validation remain pending.",
+  "actions": [
+    {
+      "target": "#144025",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144025",
+      "candidate_fix": null,
+      "reason": "The discovery defect remains supported by current-source inspection. First establish a failing external-only regression on current main, then implement and validate the bounded repair. The linked contributor PR is quarantined and cannot serve as this lane's candidate fix."
+    },
+    {
+      "target": "#144027",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route to central OpenClaw security handling without public mutation; exclude filename validation and transport changes from this repair."
+    },
+    {
+      "target": "#144048",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this PR to central security handling. Do not repair, merge, close, label, or comment on it in this lane, despite its writable contributor branch."
+    },
+    {
+      "target": "#91744",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144025",
+      "candidate_fix": null,
+      "reason": "Historical context for a different failure stage; no closure action is appropriate."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144025",
+      "candidate_fix": null,
+      "reason": "Historical context only. SCP retry behavior is explicitly outside this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 2,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

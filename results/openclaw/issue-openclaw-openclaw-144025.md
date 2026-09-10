@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144025"
-mode: "autonomous"
-run_id: "34476465136"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34476465136"
+mode: "plan"
+run_id: "34483099076"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34483099076"
 head_sha: "fcaef5fe567b5ae6698d44c37357e12fd3bad60f"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-10T13:09:44.932Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144025"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/144025"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-10T13:38:20.765Z"
+canonical: "#144025"
+canonical_issue: "#144025"
 canonical_pr: null
 actions_total: 5
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34476465136](https://github.com/openclaw/clawsweeper/actions/runs/34476465136)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34483099076](https://github.com/openclaw/clawsweeper/actions/runs/34483099076)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144025
+Canonical: #144025
 
 ## Summary
 
-Confirmed the bundled-only lookup on preflight main 4aacaa0ee9dd387a23e2bad4747c1377d3a7457f. Prepared a narrow fix plan; implementation and executable reproduction are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed. Route only #144027 to security handling.
+Plan a narrow fix for #144025. The clean checkout matches preflight main fa8d8905fde3e72b8cbe97e82d829af9d147c72b and still uses bundled-only media-contract loading. Route #144027 and #144048 separately to security handling. No files or GitHub state changed; regression execution and packaged-install validation remain pending.
 
 ## Impact
 
@@ -66,11 +66,11 @@ Confirmed the bundled-only lookup on preflight main 4aacaa0ee9dd387a23e2bad4747c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144025 | fix_needed | blocked | canonical | The source supports a narrow existing-behavior repair. Implementation requires a writable executor that first establishes the requested failing external-only regression. |
-| #144027 | route_security | planned | security_sensitive | Route this item to central OpenClaw security handling without public mutation. Its filename-validation scope is separate from #144025. |
-| #135860 | keep_closed | skipped | related | Historical context only; exclude SCP retry changes from this repair. |
-| #91744 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-144025 | build_fix_artifact | planned | canonical | A narrow executor plan remains appropriate despite the local implementation blocker. Reproduce before editing and stop if the failure does not reproduce. |
+| #144025 | fix_needed | planned | canonical | The discovery defect remains supported by current-source inspection. First establish a failing external-only regression on current main, then implement and validate the bounded repair. The linked contributor PR is quarantined and cannot serve as this lane's candidate fix. |
+| #144027 | route_security | planned | security_sensitive | Route to central OpenClaw security handling without public mutation; exclude filename validation and transport changes from this repair. |
+| #144048 | route_security | planned | security_sensitive | Route this PR to central security handling. Do not repair, merge, close, label, or comment on it in this lane, despite its writable contributor branch. |
+| #91744 | keep_closed | skipped | related | Historical context for a different failure stage; no closure action is appropriate. |
+| #135860 | keep_closed | skipped | related | Historical context only. SCP retry behavior is explicitly outside this repair. |
 
 ## Needs Human
 
