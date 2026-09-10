@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T20:11:20.728Z",
+  "updated_at": "2026-09-10T20:12:03.814Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5468563595:2026-08-30T12:03:03Z:re_review",
-      "comment_id": "5468563595",
-      "comment_version_key": "5468563595:2026-08-30T12:03:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5468563595",
-      "comment_created_at": "2026-08-30T12:03:03Z",
-      "comment_updated_at": "2026-08-30T12:03:03Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T14:40:05.804Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5468653986:2026-08-30T12:21:55Z:re_review",
       "comment_id": "5468653986",
@@ -32564,6 +32537,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143589:5611555641:2026-09-10T20:11:01Z:clawsweeper_needs_human",
+      "comment_id": "5611555641",
+      "comment_version_key": "5611555641:2026-09-10T20:11:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143589#issuecomment-5611555641",
+      "comment_created_at": "2026-09-10T02:03:33Z",
+      "comment_updated_at": "2026-09-10T20:11:01Z",
+      "comment_body_sha256": "02e5a2838dbf1299de08b7b878a046e822c66a05f3ceab7447b540849622cf6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143589,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The interface’s lasting usefulness depends on the still-unaccepted paired-node design; its eventual contract may differ from the current local service surface. (sha=591c93dab2e6ae2583ac4946cd932c3d5925909e)",
+      "expected_head_sha": "591c93dab2e6ae2583ac4946cd932c3d5925909e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T20:12:03.814Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/fleet-paired-node-targets",
+        "head_sha": "591c93dab2e6ae2583ac4946cd932c3d5925909e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
