@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T10:17:01.381Z",
+  "updated_at": "2026-09-10T10:18:00.971Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143761:5614098654:2026-09-10T06:19:53Z:clawsweeper_auto_repair",
-      "comment_id": "5614098654",
-      "comment_version_key": "5614098654:2026-09-10T06:19:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143761#issuecomment-5614098654",
-      "comment_created_at": "2026-09-10T06:19:53Z",
-      "comment_updated_at": "2026-09-10T06:19:53Z",
-      "comment_body_sha256": "da127184c7ce26a8aa8bcf61bbc2c99e1c3ef8d47a14dd4e0f69193be0ac0620",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143761,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=61a51ceff5b781c4bdc43827fb28aa0250f1ae04)",
-      "expected_head_sha": "61a51ceff5b781c4bdc43827fb28aa0250f1ae04",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T06:21:01.081Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cyber-policy-composer-notices",
-        "head_sha": "61a51ceff5b781c4bdc43827fb28aa0250f1ae04",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T06:00:41Z:clawsweeper_auto_repair",
       "comment_id": "5592569053",
@@ -32275,6 +32242,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143597:5616998467:2026-09-10T10:16:55Z:re_review",
+      "comment_id": "5616998467",
+      "comment_version_key": "5616998467:2026-09-10T10:16:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143597#issuecomment-5616998467",
+      "comment_created_at": "2026-09-10T10:16:55Z",
+      "comment_updated_at": "2026-09-10T10:16:55Z",
+      "comment_body_sha256": "d6e4aa99a92df0035555c0cba31c03ce0575c6f866dccba79c21111e0485714c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143597,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T10:17:58.618Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/firecrawl-unresolvable-baseurl",
+        "head_sha": "c01c38b263a071d15542606060c6017cac21cdec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
