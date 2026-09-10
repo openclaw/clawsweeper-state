@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T13:10:40.444Z",
+  "updated_at": "2026-09-10T13:11:14.844Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143767:5615618276:2026-09-10T08:32:45Z:re_review",
-      "comment_id": "5615618276",
-      "comment_version_key": "5615618276:2026-09-10T08:32:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143767#issuecomment-5615618276",
-      "comment_created_at": "2026-09-10T08:32:45Z",
-      "comment_updated_at": "2026-09-10T08:32:45Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143767,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T08:35:24.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-warning-audit",
-        "head_sha": "f0f07b16e6ddd10383ebac165f9ba8255494c0ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143785:5614447688:2026-09-10T08:33:36Z:clawsweeper_needs_human",
       "comment_id": "5614447688",
@@ -33079,6 +33032,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T13:10:40.444Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:181:5611642596:2026-09-10T13:03:25Z:clawsweeper_needs_human",
+      "comment_id": "5611642596",
+      "comment_version_key": "5611642596:2026-09-10T13:03:25Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/181#issuecomment-5611642596",
+      "comment_created_at": "2026-09-10T02:14:59Z",
+      "comment_updated_at": "2026-09-10T13:03:25Z",
+      "comment_body_sha256": "44fe57a1a72dfeacc24b6c58f89cb6ee61f1a67a416921a28f05c5fb4dacd676",
+      "repo": "openclaw/ocm",
+      "issue_number": 181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Updating the CLI while an admission-version-9 daemon remains running prevents new plain, watched, and service-preparation sessions, including commands without --ui; the documented ref... (sha=6720b7dbd8abd776dbc3d057ab7ddc4b57145ac4)",
+      "expected_head_sha": "6720b7dbd8abd776dbc3d057ab7ddc4b57145ac4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T13:11:14.844Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-ui",
+        "head_sha": "6720b7dbd8abd776dbc3d057ab7ddc4b57145ac4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
