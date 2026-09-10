@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T19:08:38.931Z",
+  "updated_at": "2026-09-10T19:09:23.383Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:92230:5509656864:2026-09-02T12:39:11Z:re_review",
-      "comment_id": "5509656864",
-      "comment_version_key": "5509656864:2026-09-02T12:39:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/92230#issuecomment-5509656864",
-      "comment_created_at": "2026-09-02T12:39:11Z",
-      "comment_updated_at": "2026-09-02T12:39:11Z",
-      "comment_body_sha256": "58ef1361981be22799d15140f7c51f5cdfc238cd3d3f2d7ba99610cc62be9b0e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 92230,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T14:03:04.482Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:92230:5511587253:2026-09-02T14:57:23Z:re_review",
       "comment_id": "5511587253",
@@ -31903,6 +31876,39 @@
         "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
         "cluster_id": "automerge-openclaw-openclaw-142626",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:181:5611642596:2026-09-10T19:08:16Z:clawsweeper_needs_human",
+      "comment_id": "5611642596",
+      "comment_version_key": "5611642596:2026-09-10T19:08:16Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/181#issuecomment-5611642596",
+      "comment_created_at": "2026-09-10T02:14:59Z",
+      "comment_updated_at": "2026-09-10T19:08:16Z",
+      "comment_body_sha256": "ad97ca3b73fda43110eaa55077b8425d5e990deac30bfa3874f69c26bdbc339e",
+      "repo": "openclaw/ocm",
+      "issue_number": 181,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Updating the CLI while a version-9 daemon remains running prevents new dev sessions even without --ui; recovery requires an acknowledged refresh that interrupts managed Gateways. The... (sha=674731adbbdf7680b824f5236b68682d5700a1ae)",
+      "expected_head_sha": "674731adbbdf7680b824f5236b68682d5700a1ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T19:09:23.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-ui",
+        "head_sha": "674731adbbdf7680b824f5236b68682d5700a1ae",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
