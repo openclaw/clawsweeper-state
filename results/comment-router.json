@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T00:36:17.744Z",
+  "updated_at": "2026-09-10T00:37:55.248Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143311:5606632484:2026-09-09T18:54:41Z:clawsweeper_needs_human",
-      "comment_id": "5606632484",
-      "comment_version_key": "5606632484:2026-09-09T18:54:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143311#issuecomment-5606632484",
-      "comment_created_at": "2026-09-09T18:16:10Z",
-      "comment_updated_at": "2026-09-09T18:54:41Z",
-      "comment_body_sha256": "2a15695525cfd3bfe6f318bd3b99996598e16b404fe1e312b2c33aa83a0e66c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143311,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the CLI and onboarding owners persist consent consumed by the telemetry sender, but the captured evide...; Review finding: [medium] Complete revocation proof at the outbound boundary — src/infra/telemetry.ts:312 (sha=64a9cbacabd942d534d01d76ed735712a9b8032a)",
-      "expected_head_sha": "64a9cbacabd942d534d01d76ed735712a9b8032a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T18:58:45.338Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/telemetry-utc-offset-opt-in-20260909",
-        "head_sha": "64a9cbacabd942d534d01d76ed735712a9b8032a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143312:5606708800:2026-09-09T18:39:16Z:clawsweeper_auto_repair",
       "comment_id": "5606708800",
@@ -33099,6 +33066,53 @@
         "kind": "pull_request",
         "branch": "fix/7.33-claude-cli-continuity",
         "head_sha": "76d00339aac50bd9604c659acbe6b3a030843737",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1232:5610830061:2026-09-10T00:36:44Z:re_review",
+      "comment_id": "5610830061",
+      "comment_version_key": "5610830061:2026-09-10T00:36:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1232#issuecomment-5610830061",
+      "comment_created_at": "2026-09-10T00:36:44Z",
+      "comment_updated_at": "2026-09-10T00:36:44Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1232,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T00:37:44.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/local-ai-onboarding-resume",
+        "head_sha": "f7a6616563445b2bc06b2777b4690b08caa8a35c",
         "cluster_id": null,
         "job_path": null
       },
