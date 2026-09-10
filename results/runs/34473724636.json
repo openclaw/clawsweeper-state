@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143980",
+  "mode": "autonomous",
+  "run_id": "34473724636",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34473724636",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143980.md",
+  "published_at": "2026-09-10T12:44:07.871Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_pr": null,
+  "summary": "Confirmed the defective source path on preflight main 71b21c88574752cd9acc917970ec2850279cdfa2. Prepared a narrow fix artifact. Implementation and failing-regression proof are blocked by the read-only host and missing dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143980",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "The ordinary path-coordinate bug remains supported by current source and reporter evidence. A writable executor must establish the required failing registered-tool-to-Gateway regression before implementing or opening the PR."
+    },
+    {
+      "target": "#123585",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct ACP work by @Chinmayrawat15 remains open on its existing contributor branch. It is neither a replacement target nor a candidate fix for #143980."
+    },
+    {
+      "target": "#92827",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this item for central OpenClaw security handling without public mutation. Its existing security-review signal does not block the separate ordinary bug in #143980."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143980",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; local implementation remains blocked by host permissions and unavailable dependencies. Publication must wait for successful pre-fix reproduction, implementation validation, and fresh review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
