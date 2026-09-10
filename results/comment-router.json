@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T19:46:18.180Z",
+  "updated_at": "2026-09-10T19:46:21.665Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:474:5620356817:2026-09-10T14:31:40Z:clawsweeper_auto_repair",
-      "comment_id": "5620356817",
-      "comment_version_key": "5620356817:2026-09-10T14:31:40Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/474#issuecomment-5620356817",
-      "comment_created_at": "2026-09-10T14:31:40Z",
-      "comment_updated_at": "2026-09-10T14:31:40Z",
-      "comment_body_sha256": "25067a3e4bd8f5dd9c22ce24188fce9c265a732eeb476240e5534a1a7a0fde18",
-      "repo": "steipete/oracle",
-      "issue_number": 474,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c94207fabb7beeab4d10b1fd48577f938628c433)",
-      "expected_head_sha": "c94207fabb7beeab4d10b1fd48577f938628c433",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T14:32:44.579Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/refuse-stale-browser-harvest",
-        "head_sha": "c94207fabb7beeab4d10b1fd48577f938628c433",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T14:30:00Z:clawsweeper_auto_repair",
       "comment_id": "5592569053",
@@ -32108,6 +32075,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143505:5624481294:2026-09-10T19:45:23Z:re_review",
+      "comment_id": "5624481294",
+      "comment_version_key": "5624481294:2026-09-10T19:45:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143505#issuecomment-5624481294",
+      "comment_created_at": "2026-09-10T19:45:23Z",
+      "comment_updated_at": "2026-09-10T19:45:23Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143505,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T19:46:19.579Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tooling-startup-memory-output-aliases-20260909",
+        "head_sha": "dc25b3d4d835b669941677a0fa08f5bfa61d3c38",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
