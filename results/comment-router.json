@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T00:50:27.488Z",
+  "updated_at": "2026-09-10T00:52:17.668Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:95:5574546934:2026-09-09T18:41:27Z:clawsweeper_needs_human",
-      "comment_id": "5574546934",
-      "comment_version_key": "5574546934:2026-09-09T18:41:27Z",
-      "comment_url": "https://github.com/openclaw/krillswitch/pull/95#issuecomment-5574546934",
-      "comment_created_at": "2026-09-07T18:43:22Z",
-      "comment_updated_at": "2026-09-09T18:41:27Z",
-      "comment_body_sha256": "c62a5881f00c43e42ca4b684b79d95ebd2abab939852c55d0a507b5d5f461cc5",
-      "repo": "openclaw/krillswitch",
-      "issue_number": 95,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=28718c72747562a8587d28aa985f8409d9c61337)",
-      "expected_head_sha": "28718c72747562a8587d28aa985f8409d9c61337",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T19:01:39.511Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/npm_and_yarn/development-b0b8cede7b",
-        "head_sha": "28718c72747562a8587d28aa985f8409d9c61337",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131584:5484962983:2026-08-31T21:35:45Z:re_review",
       "comment_id": "5484962983",
@@ -33203,6 +33170,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142545:5610984578:2026-09-10T00:51:25Z:freeform_assist",
+      "comment_id": "5610984578",
+      "comment_version_key": "5610984578:2026-09-10T00:51:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142545#issuecomment-5610984578",
+      "comment_created_at": "2026-09-10T00:51:25Z",
+      "comment_updated_at": "2026-09-10T00:51:25Z",
+      "comment_body_sha256": "957ef709c014c27ab11bcf1dcdf7295d1aa9d0a1cfcb2e5310a5128c31d740ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142545,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nfinal rebased head: `9283797665c2036788506a9d6640ef3e3c2bd1a7`. the canonical shared-workspace/symlink finding is fixed with end-to-end cli coverage; exact-head focused suite is green. this changes no persisted schema or data format.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T00:52:15.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-promotion-bootstrap-budget",
+        "head_sha": "9283797665c2036788506a9d6640ef3e3c2bd1a7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
           "status": "executed",
           "label": null,
           "job_path": null
