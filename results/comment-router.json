@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T15:56:42.882Z",
+  "updated_at": "2026-09-10T15:56:46.067Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143992:5617918631:2026-09-10T11:26:27Z:re_review",
-      "comment_id": "5617918631",
-      "comment_version_key": "5617918631:2026-09-10T11:26:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143992#issuecomment-5617918631",
-      "comment_created_at": "2026-09-10T11:26:27Z",
-      "comment_updated_at": "2026-09-10T11:26:27Z",
-      "comment_body_sha256": "ab397ebbcac98aa87fffca5ddedfe504a2a068b1705ef684376b6492503c041e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143992,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T11:31:28.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/crabline-post-gateway-cleanup",
-        "head_sha": "29eb672648ac538b8368464431a0d71ae73fe2b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141276:5617925837:2026-09-10T11:27:06Z:re_review",
       "comment_id": "5617925837",
@@ -32222,6 +32175,39 @@
         "kind": "pull_request",
         "branch": "feat/slack-reasoning-cards",
         "head_sha": "9af65ae576d15080e81128097b0e7b195946b582",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:205:5621171986:2026-09-10T15:55:51Z:clawsweeper_needs_human",
+      "comment_id": "5621171986",
+      "comment_version_key": "5621171986:2026-09-10T15:55:51Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/205#issuecomment-5621171986",
+      "comment_created_at": "2026-09-10T15:28:11Z",
+      "comment_updated_at": "2026-09-10T15:55:51Z",
+      "comment_body_sha256": "4b71eb64c4e56c268568a3c7f2a79415f4db2609b972eeebfbbd19ba972d48be",
+      "repo": "openclaw/ocm",
+      "issue_number": 205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Once an address is retained, a conflicting listener or reservation prevents UI startup until the operator frees the port; native fresh-install and upgrade observations for this intent... (sha=90afa0f22c46338a1ffd2b43abb6fbb3a4456a26)",
+      "expected_head_sha": "90afa0f22c46338a1ffd2b43abb6fbb3a4456a26",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T15:56:46.067Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-ui-address",
+        "head_sha": "90afa0f22c46338a1ffd2b43abb6fbb3a4456a26",
         "cluster_id": null,
         "job_path": null
       }
