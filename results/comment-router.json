@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T01:37:55.610Z",
+  "updated_at": "2026-09-10T01:38:13.401Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137886:5535475189:2026-09-09T19:13:33Z:clawsweeper_needs_human",
-      "comment_id": "5535475189",
-      "comment_version_key": "5535475189:2026-09-09T19:13:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137886#issuecomment-5535475189",
-      "comment_created_at": "2026-09-04T04:03:06Z",
-      "comment_updated_at": "2026-09-09T19:13:33Z",
-      "comment_body_sha256": "6738ce006c296e982e5512aca398abeae4d35034a18586c12543e7ab5bb853d0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137886,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the downstream real WhatsApp run supports successful installation through this wizard, but does not de...; Review finding: [P1] Bind resumed installation to the confirmed Gateway and operator — ui/src/pages/plugins/plugins-page.ts:351-353 - [P2] Handle required restarts before waiting... (sha=3d9964ce5cff907580bc3d0ba7e6f73185676859)",
-      "expected_head_sha": "3d9964ce5cff907580bc3d0ba7e6f73185676859",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T19:14:41.914Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-721-plugin-install-wizard",
-        "head_sha": "3d9964ce5cff907580bc3d0ba7e6f73185676859",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137255:5524769377:2026-09-09T19:12:15Z:clawsweeper_needs_human",
       "comment_id": "5524769377",
@@ -33708,6 +33675,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143592:5611348578:2026-09-10T01:37:09Z:re_review",
+      "comment_id": "5611348578",
+      "comment_version_key": "5611348578:2026-09-10T01:37:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143592#issuecomment-5611348578",
+      "comment_created_at": "2026-09-10T01:37:09Z",
+      "comment_updated_at": "2026-09-10T01:37:09Z",
+      "comment_body_sha256": "fdb84d72adb990828dc4c9722fdde917d583cad349137b5f9ac8cb2116203cd2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143592,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T01:38:11.024Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/foreground-compaction-resources",
+        "head_sha": "cfa89da8fee3f7bab912560ca2e80fc6ae8afda3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
