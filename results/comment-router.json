@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T19:46:11.400Z",
+  "updated_at": "2026-09-10T19:46:18.180Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:113421:5620343778:2026-09-10T14:30:46Z:re_review",
-      "comment_id": "5620343778",
-      "comment_version_key": "5620343778:2026-09-10T14:30:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/113421#issuecomment-5620343778",
-      "comment_created_at": "2026-09-10T14:30:46Z",
-      "comment_updated_at": "2026-09-10T14:30:46Z",
-      "comment_body_sha256": "67f7fde46053b725de58886ed76ad8b0ac12236ba9d5d91ec2e6f9c5308ffe19",
-      "repo": "openclaw/openclaw",
-      "issue_number": 113421,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T14:32:19.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/readiness-core-owner-adoption",
-        "head_sha": "eb0463c9e5d561ad519a512d57d5717e80a820c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/oracle:474:5620356817:2026-09-10T14:31:40Z:clawsweeper_auto_repair",
       "comment_id": "5620356817",
@@ -32122,6 +32075,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144337:5624481628:2026-09-10T19:45:25Z:clawsweeper_needs_human",
+      "comment_id": "5624481628",
+      "comment_version_key": "5624481628:2026-09-10T19:45:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144337#issuecomment-5624481628",
+      "comment_created_at": "2026-09-10T19:45:25Z",
+      "comment_updated_at": "2026-09-10T19:45:25Z",
+      "comment_body_sha256": "b3a21a2893da0c38650f868ab9ac0769c6b7dabc703a35186b5e4d571cda4481",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144337,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied test exercises the changed auth-list formatter through a mocked store, but no after-change run of the registered CLI against a rea... (sha=350f183af44e47a20f3120b3350f681a8986449f)",
+      "expected_head_sha": "350f183af44e47a20f3120b3350f681a8986449f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T19:46:18.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "oc-feat-144064-auth-list-usage",
+        "head_sha": "350f183af44e47a20f3120b3350f681a8986449f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
