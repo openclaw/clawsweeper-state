@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144025",
+  "mode": "autonomous",
+  "run_id": "34476465136",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34476465136",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144025.md",
+  "published_at": "2026-09-10T13:09:44.932Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144025",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144025",
+  "canonical_pr": null,
+  "summary": "Confirmed the bundled-only lookup on preflight main 4aacaa0ee9dd387a23e2bad4747c1377d3a7457f. Prepared a narrow fix plan; implementation and executable reproduction are blocked by the read-only workspace and absent dependencies. No files or GitHub state changed. Route only #144027 to security handling.",
+  "actions": [
+    {
+      "target": "#144025",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144025",
+      "candidate_fix": null,
+      "reason": "The source supports a narrow existing-behavior repair. Implementation requires a writable executor that first establishes the requested failing external-only regression."
+    },
+    {
+      "target": "#144027",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this item to central OpenClaw security handling without public mutation. Its filename-validation scope is separate from #144025."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; exclude SCP retry changes from this repair."
+    },
+    {
+      "target": "#91744",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or reopening action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144025",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144025",
+      "candidate_fix": null,
+      "reason": "A narrow executor plan remains appropriate despite the local implementation blocker. Reproduce before editing and stop if the failure does not reproduce."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
