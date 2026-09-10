@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143980",
+  "mode": "autonomous",
+  "run_id": "34471013551",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34471013551",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143980.md",
+  "published_at": "2026-09-10T11:35:31.391Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_pr": null,
+  "summary": "Confirmed the explicit-cwd mismatch in preflight main source and prepared a narrow fix artifact. Implementation and executable regression proof are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143980",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "The explicit container-coordinate bug remains supported by current source. The executor must establish the failing registered-tool-to-acceptance regression before implementation or PR publication."
+    },
+    {
+      "target": "#123585",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct producer and failure mode; preserve the contributor's PR independently of this fix."
+    },
+    {
+      "target": "#92827",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this item for central OpenClaw security handling without public mutation; it does not block the independent #143980 repair plan."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143980",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "Produce one new-fix-PR plan for the deterministic executor, conditional on successful pre-fix reproduction and subsequent validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
