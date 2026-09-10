@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T02:21:15.609Z",
+  "updated_at": "2026-09-10T02:21:16.176Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142750:5594397880:2026-09-09T21:21:12Z:clawsweeper_auto_repair",
-      "comment_id": "5594397880",
-      "comment_version_key": "5594397880:2026-09-09T21:21:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142750#issuecomment-5594397880",
-      "comment_created_at": "2026-09-09T01:31:57Z",
-      "comment_updated_at": "2026-09-09T21:21:12Z",
-      "comment_body_sha256": "0ef268970d0ac555f1537cfe870dd7dae5fb9bf62949e3b26c819531afeff273",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142750,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=6b4d8444c4d703f5154620479a23ccd70d141b2f)",
-      "expected_head_sha": "6b4d8444c4d703f5154620479a23ccd70d141b2f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T21:22:22.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/7.33-matrix-e2ee-lifecycle",
-        "head_sha": "6b4d8444c4d703f5154620479a23ccd70d141b2f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142750:5594464715:2026-09-09T01:40:27Z:re_review",
       "comment_id": "5594464715",
@@ -32990,6 +32957,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T02:21:15.609Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143295:5606365843:2026-09-10T02:20:02Z:clawsweeper_needs_human",
+      "comment_id": "5606365843",
+      "comment_version_key": "5606365843:2026-09-10T02:20:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5606365843",
+      "comment_created_at": "2026-09-09T17:55:17Z",
+      "comment_updated_at": "2026-09-10T02:20:02Z",
+      "comment_body_sha256": "0c2271598d38852abb9ae48bccfa0e57cd0dd7f79cc329ef141dd680e552ffeb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143295,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional plugin API transfers reader cleanup to the runtime, but its freshness, replacement, shutdown, and writer-recovery obligations lack an accepted documented contract. (sha=9b20c66e599dadfe9c38b0da9d0bc06352513727)",
+      "expected_head_sha": "9b20c66e599dadfe9c38b0da9d0bc06352513727",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T02:21:16.176Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-reader-lifecycle-v2",
+        "head_sha": "9b20c66e599dadfe9c38b0da9d0bc06352513727",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
