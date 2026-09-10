@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:43:43.984Z",
+  "updated_at": "2026-09-10T04:43:47.138Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142711:5610594994:2026-09-10T00:12:13Z:re_review",
-      "comment_id": "5610594994",
-      "comment_version_key": "5610594994:2026-09-10T00:12:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142711#issuecomment-5610594994",
-      "comment_created_at": "2026-09-10T00:12:13Z",
-      "comment_updated_at": "2026-09-10T00:12:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142711,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:13:22.571Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-754-gateway-categories",
-        "head_sha": "55045de65bdb736f508d9c4d5567ed69ebfe5871",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142534:5591546201:2026-09-10T00:03:06Z:clawsweeper_needs_human",
       "comment_id": "5591546201",
@@ -32602,6 +32555,39 @@
         "kind": "pull_request",
         "branch": "release-test/2026.9.4-upgrades",
         "head_sha": "8000e3eb0b3c2b6dd65fb064ff84324aa28fbda5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143689:5613288258:2026-09-10T04:42:54Z:clawsweeper_needs_human",
+      "comment_id": "5613288258",
+      "comment_version_key": "5613288258:2026-09-10T04:42:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143689#issuecomment-5613288258",
+      "comment_created_at": "2026-09-10T04:42:54Z",
+      "comment_updated_at": "2026-09-10T04:42:54Z",
+      "comment_body_sha256": "f9988a933d5cac169ccbbd96a8a13d1e34a796ad8fcabdfcae8d2e7edcbd023f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143689,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=eaad454e6839fa7911cf9c2bcdd44084d06e1f33)",
+      "expected_head_sha": "eaad454e6839fa7911cf9c2bcdd44084d06e1f33",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:43:47.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-discord-published-registry",
+        "head_sha": "eaad454e6839fa7911cf9c2bcdd44084d06e1f33",
         "cluster_id": null,
         "job_path": null
       }
