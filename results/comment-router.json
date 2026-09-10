@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T02:45:06.506Z",
+  "updated_at": "2026-09-10T02:46:22.974Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-09T21:40:26Z:clawsweeper_auto_repair",
-      "comment_id": "5592569053",
-      "comment_version_key": "5592569053:2026-09-09T21:40:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
-      "comment_created_at": "2026-09-08T22:12:20Z",
-      "comment_updated_at": "2026-09-09T21:40:26Z",
-      "comment_body_sha256": "837489721b21b10b077efffabf64b58876b7298923560495f19ca4feda24325d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142626,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
-      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-      "finding_id": "review-feedback",
-      "status": "waiting",
-      "processed_at": "2026-09-09T21:47:49.422Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-capability-refresh",
-        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-        "cluster_id": "automerge-openclaw-openclaw-142626",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143344:5609167291:2026-09-09T21:44:29Z:re_review",
       "comment_id": "5609167291",
@@ -33210,6 +33163,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142877:5611870946:2026-09-10T02:44:53Z:re_review",
+      "comment_id": "5611870946",
+      "comment_version_key": "5611870946:2026-09-10T02:44:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142877#issuecomment-5611870946",
+      "comment_created_at": "2026-09-10T02:44:53Z",
+      "comment_updated_at": "2026-09-10T02:44:53Z",
+      "comment_body_sha256": "d90c2e16f061dc0058fa6f4bc6d182ef2b78a1fcb7cb30ca83978bdf84a4489b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142877,
+      "author": "NullArbitrage",
+      "author_id": 263110202,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — revision 12's remaining evidence gap is now closed on head `d497a667993` (fully green ci: 165/165 checks)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T02:46:20.758Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/verified-inference-fingerprint-canonical",
+        "head_sha": "d497a6679939fdf2db03ce94bf954e843df9209c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
