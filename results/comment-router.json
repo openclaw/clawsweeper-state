@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T01:39:21.358Z",
+  "updated_at": "2026-09-10T01:39:24.026Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123236:5607363755:2026-09-09T19:16:22Z:re_review",
-      "comment_id": "5607363755",
-      "comment_version_key": "5607363755:2026-09-09T19:16:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123236#issuecomment-5607363755",
-      "comment_created_at": "2026-09-09T19:16:22Z",
-      "comment_updated_at": "2026-09-09T19:16:22Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123236,
-      "author": "drobison00",
-      "author_id": 5256797,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T19:17:26.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-exec-authority-boundary",
-        "head_sha": "3908c64b6b456ab8458dbd74d1bc319ba13351b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143331:5607156542:2026-09-09T19:16:46Z:clawsweeper_needs_human",
       "comment_id": "5607156542",
@@ -33733,6 +33686,39 @@
         "kind": "pull_request",
         "branch": "fix/maturity-health-script-isolation",
         "head_sha": "1224a11ea7992124e45572398fc3252013a7412c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143548:5611357673:2026-09-10T01:38:17Z:clawsweeper_needs_human",
+      "comment_id": "5611357673",
+      "comment_version_key": "5611357673:2026-09-10T01:38:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143548#issuecomment-5611357673",
+      "comment_created_at": "2026-09-10T01:38:17Z",
+      "comment_updated_at": "2026-09-10T01:38:17Z",
+      "comment_body_sha256": "358b4dcf4baa6d9265e45e65130d5d493357009ec265e26401dd2c5b4fc38a19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143548,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=b9a4c0c107ca47cdee96cd5a36f37046cb4621c6)",
+      "expected_head_sha": "b9a4c0c107ca47cdee96cd5a36f37046cb4621c6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T01:39:24.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/fleet-cloud-execution",
+        "head_sha": "b9a4c0c107ca47cdee96cd5a36f37046cb4621c6",
         "cluster_id": null,
         "job_path": null
       }
