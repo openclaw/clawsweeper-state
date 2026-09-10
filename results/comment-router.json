@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T00:35:11.515Z",
+  "updated_at": "2026-09-10T00:36:05.514Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143293:5606519719:2026-09-09T18:36:51Z:clawsweeper_needs_human",
-      "comment_id": "5606519719",
-      "comment_version_key": "5606519719:2026-09-09T18:36:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143293#issuecomment-5606519719",
-      "comment_created_at": "2026-09-09T18:07:31Z",
-      "comment_updated_at": "2026-09-09T18:36:51Z",
-      "comment_body_sha256": "4e72c0305ac100a3439e623e1af957dc913f5465063674521b5df213f207e858",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143293,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured body supplies tests and checks, but no after-fix write-to-promotion evidence showing trusted segme...; Review finding: [P1] Revalidate trust against the content actually promoted — extensions/memory-core/src/short-term-promotion-apply.ts:322-326 - [P2] Quarantine an existing baseli... (sha=9bea43fa8c6f84205440ad6f9765b4e08bac9a15)",
-      "expected_head_sha": "9bea43fa8c6f84205440ad6f9765b4e08bac9a15",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T18:58:45.338Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memory-segment-provenance-fix-20260909",
-        "head_sha": "9bea43fa8c6f84205440ad6f9765b4e08bac9a15",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143310:5606613332:2026-09-09T18:49:52Z:clawsweeper_needs_human",
       "comment_id": "5606613332",
@@ -33088,6 +33055,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143508:5610810851:2026-09-10T00:34:53Z:re_review",
+      "comment_id": "5610810851",
+      "comment_version_key": "5610810851:2026-09-10T00:34:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143508#issuecomment-5610810851",
+      "comment_created_at": "2026-09-10T00:34:53Z",
+      "comment_updated_at": "2026-09-10T00:34:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143508,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T00:36:03.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-anthropic-cache-frozen-export",
+        "head_sha": "c994f10a193534d2f507b567ecff8ac5080544ab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
