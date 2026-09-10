@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:57:21.697Z",
+  "updated_at": "2026-09-10T04:58:53.555Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142545:5610984578:2026-09-10T00:51:25Z:freeform_assist",
-      "comment_id": "5610984578",
-      "comment_version_key": "5610984578:2026-09-10T00:51:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142545#issuecomment-5610984578",
-      "comment_created_at": "2026-09-10T00:51:25Z",
-      "comment_updated_at": "2026-09-10T00:51:25Z",
-      "comment_body_sha256": "957ef709c014c27ab11bcf1dcdf7295d1aa9d0a1cfcb2e5310a5128c31d740ca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142545,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nfinal rebased head: `9283797665c2036788506a9d6640ef3e3c2bd1a7`. the canonical shared-workspace/symlink finding is fixed with end-to-end cli coverage; exact-head focused suite is green. this changes no persisted schema or data format.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:52:15.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-promotion-bootstrap-budget",
-        "head_sha": "9283797665c2036788506a9d6640ef3e3c2bd1a7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119624:5610984592:2026-09-10T00:51:25Z:freeform_assist",
       "comment_id": "5610984592",
@@ -32385,6 +32338,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143327:5607101972:2026-09-10T04:53:46Z:clawsweeper_needs_human",
+      "comment_id": "5607101972",
+      "comment_version_key": "5607101972:2026-09-10T04:53:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5607101972",
+      "comment_created_at": "2026-09-09T18:54:48Z",
+      "comment_updated_at": "2026-09-10T04:53:46Z",
+      "comment_body_sha256": "058347af8c3557e00ad29ca4c07486c5339c1b5568a646a3c22faeb1cec393ed",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143327,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The timeout owner has corrected helper coverage and a runner-composition test, but both use fake clocks and mocked execution. The captured body... (sha=3582d62d1be40fa3631fe319b98b508151e6360b)",
+      "expected_head_sha": "3582d62d1be40fa3631fe319b98b508151e6360b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:58:53.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
+        "head_sha": "3582d62d1be40fa3631fe319b98b508151e6360b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
