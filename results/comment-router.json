@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T16:58:28.658Z",
+  "updated_at": "2026-09-10T16:58:36.764Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90745:5618840204:2026-09-10T12:41:35Z:re_review",
-      "comment_id": "5618840204",
-      "comment_version_key": "5618840204:2026-09-10T12:41:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90745#issuecomment-5618840204",
-      "comment_created_at": "2026-09-10T12:41:35Z",
-      "comment_updated_at": "2026-09-10T12:41:35Z",
-      "comment_body_sha256": "86897b3ae736738aa68d325d232d30c5282abcfcddc0c233415ad62dbf307199",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90745,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T12:42:27.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-context-runtime",
-        "head_sha": "be1f7985e1b2adc3ea790561ba050f91e86219db",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-09-10T12:43:04Z:clawsweeper_needs_human",
       "comment_id": "5159399788",
@@ -31669,6 +31622,39 @@
         "kind": "pull_request",
         "branch": "fix/session-routing-apple",
         "head_sha": "4ef745eeb9fc234f2c4a411243b7d7c1a6818a28",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126330:5343860679:2026-09-10T16:57:31Z:clawsweeper_needs_human",
+      "comment_id": "5343860679",
+      "comment_version_key": "5343860679:2026-09-10T16:57:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126330#issuecomment-5343860679",
+      "comment_created_at": "2026-08-19T14:52:46Z",
+      "comment_updated_at": "2026-09-10T16:57:31Z",
+      "comment_body_sha256": "dfcc7d633d919e97385670e55d03acd6e0d659aba5dae2d0f384cf57783601eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126330,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-head interoperability with supported released Apple clients remains unverified; the existing live log covers field publication, while fresh native captures are explicitly pend... (sha=a8bfc5efa18e6a9aff4f73a5e7175b2a3a541bb5)",
+      "expected_head_sha": "a8bfc5efa18e6a9aff4f73a5e7175b2a3a541bb5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T16:58:36.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-routing-gateway-compat",
+        "head_sha": "a8bfc5efa18e6a9aff4f73a5e7175b2a3a541bb5",
         "cluster_id": null,
         "job_path": null
       }
