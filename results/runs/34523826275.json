@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144325",
+  "mode": "plan",
+  "run_id": "34523826275",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34523826275",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144325.md",
+  "published_at": "2026-09-10T20:10:51.047Z",
+  "canonical": "#144325",
+  "canonical_issue": "#144325",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Doctor migration-order fix for #144325. Source inspection supports the reported mechanism, but latest-main reproduction remains pending: the read-only checkout is at 94fd88c0cb05e709bc33bdd09f8f596669cfbee8 and lacks the preflight main commit. No implementation, tests, CLI recovery proof, or GitHub mutations were performed.",
+  "actions": [
+    {
+      "target": "#144325",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "The reported normalization failure has a narrow repair path. Proceed through the attached reproduction and validation plan; do not close or merge."
+    },
+    {
+      "target": "#142681",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "Shared update symptoms do not establish the same root cause; alias-order repair does not cover the remaining import failure."
+    },
+    {
+      "target": "#136045",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "Historical implementation context; already closed and not a candidate for mutation."
+    },
+    {
+      "target": "#143138",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "Historical context addressing a different refusal mechanism; retain its closed state."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
