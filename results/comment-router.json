@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T11:03:54.777Z",
+  "updated_at": "2026-09-10T11:04:07.543Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143767:5614214926:2026-09-10T07:03:54Z:clawsweeper_needs_human",
-      "comment_id": "5614214926",
-      "comment_version_key": "5614214926:2026-09-10T07:03:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143767#issuecomment-5614214926",
-      "comment_created_at": "2026-09-10T06:32:21Z",
-      "comment_updated_at": "2026-09-10T07:03:54Z",
-      "comment_body_sha256": "186331731371dbaadc45b103dd4d5c3cdb971d3574e306beb609402130639978",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143767,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive plugin cleanup disposition permits upgrades to continue with retained legacy artifacts. Synthetic controls support that boundary, but successful packaged activation and d... (sha=a3566e3bdc4a2880b5c54941ad4892a1116a1c2f)",
-      "expected_head_sha": "a3566e3bdc4a2880b5c54941ad4892a1116a1c2f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T07:21:39.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-warning-audit",
-        "head_sha": "a3566e3bdc4a2880b5c54941ad4892a1116a1c2f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143801:5614632957:2026-09-10T07:12:58Z:clawsweeper_auto_repair",
       "comment_id": "5614632957",
@@ -32195,6 +32162,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T11:03:54.777Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:16:5596765584:2026-09-10T10:56:29Z:clawsweeper_needs_human",
+      "comment_id": "5596765584",
+      "comment_version_key": "5596765584:2026-09-10T10:56:29Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/16#issuecomment-5596765584",
+      "comment_created_at": "2026-09-09T06:11:53Z",
+      "comment_updated_at": "2026-09-10T10:56:29Z",
+      "comment_body_sha256": "426a9c69302db1196abe304ba07965abd00238c94ed2c58e46cc5cb76e3266a8",
+      "repo": "openclaw/telemetry",
+      "issue_number": 16,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Approve location retention outside feature opt-in** - The writer persists city and other geography with existing request metadata even without a feature body. This is intentional and di...; Review finding: [medium] Approve location retention outside feature opt-in — src/index.ts:160 (sha=1f9544da928ce78246b97479dd45fd509276c830)",
+      "expected_head_sha": "1f9544da928ce78246b97479dd45fd509276c830",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T11:04:07.543Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telemetry-utc-offset-receiver-20260909",
+        "head_sha": "1f9544da928ce78246b97479dd45fd509276c830",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
