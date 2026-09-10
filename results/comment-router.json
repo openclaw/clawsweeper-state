@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:51:31.202Z",
+  "updated_at": "2026-09-10T04:51:58.811Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143525:5610865973:2026-09-10T00:40:14Z:re_review",
-      "comment_id": "5610865973",
-      "comment_version_key": "5610865973:2026-09-10T00:40:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143525#issuecomment-5610865973",
-      "comment_created_at": "2026-09-10T00:40:14Z",
-      "comment_updated_at": "2026-09-10T00:40:14Z",
-      "comment_body_sha256": "9dcd506249b81606c74168194b3684f138fa7a4b2b9599fa6da7c0b0eca3654f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143525,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:41:05.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-explicit-chat-answers",
-        "head_sha": "a658650f02fd0f11efa8772642839958ea74bfdd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143518:5610875735:2026-09-10T00:41:06Z:re_review",
       "comment_id": "5610875735",
@@ -32401,6 +32354,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/endor-clawsweeper-e2e:2:5613360761:2026-09-10T04:51:13Z:autofix",
+      "comment_id": "5613360761",
+      "comment_version_key": "5613360761:2026-09-10T04:51:13Z",
+      "comment_url": "https://github.com/openclaw/endor-clawsweeper-e2e/pull/2#issuecomment-5613360761",
+      "comment_created_at": "2026-09-10T04:51:13Z",
+      "comment_updated_at": "2026-09-10T04:51:13Z",
+      "comment_body_sha256": "106736afc842d2899c3d2cc3386e09af14276de815a8a1b4889e53164329be4a",
+      "repo": "openclaw/endor-clawsweeper-e2e",
+      "issue_number": 2,
+      "author": "jesse-merhi",
+      "author_id": 79823012,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T04:51:53.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.5",
+        "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
+        "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
