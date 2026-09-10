@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T08:06:15.015Z",
+  "updated_at": "2026-09-10T08:06:31.061Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5139364327:2026-07-31T04:46:06Z:re_review",
-      "comment_id": "5139364327",
-      "comment_version_key": "5139364327:2026-07-31T04:46:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5139364327",
-      "comment_created_at": "2026-07-31T04:46:06Z",
-      "comment_updated_at": "2026-07-31T04:46:06Z",
-      "comment_body_sha256": "da54b00b3f31677e442714b411d7352e89fd05a80dde5421bcdb74f19f0343df",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T04:01:20.379Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5287613437:2026-08-13T23:37:50Z:re_review",
       "comment_id": "5287613437",
@@ -32475,6 +32448,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143844:5615194933:2026-09-10T08:05:25Z:clawsweeper_needs_human",
+      "comment_id": "5615194933",
+      "comment_version_key": "5615194933:2026-09-10T08:05:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143844#issuecomment-5615194933",
+      "comment_created_at": "2026-09-10T08:01:05Z",
+      "comment_updated_at": "2026-09-10T08:05:25Z",
+      "comment_body_sha256": "f94e7ff13dddaf7be4ea24f2a67629939457565600102d5ccd71248542bc506e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143844,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing installation whose snapshot deletion fails will now stop inspection even if the exit retry subsequently removes the copy. After activation, this can mark state unverified... (sha=01c3c6129c3587051004ba61889be2b0c4cb4b19)",
+      "expected_head_sha": "01c3c6129c3587051004ba61889be2b0c4cb4b19",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T08:06:31.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-state-snapshot-cleanup",
+        "head_sha": "01c3c6129c3587051004ba61889be2b0c4cb4b19",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
