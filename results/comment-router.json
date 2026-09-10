@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T19:33:33.946Z",
+  "updated_at": "2026-09-10T19:33:46.345Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:1995:5599138941:2026-09-09T08:52:22Z:re_review",
-      "comment_id": "5599138941",
-      "comment_version_key": "5599138941:2026-09-09T08:52:22Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/1995#issuecomment-5599138941",
-      "comment_created_at": "2026-09-09T08:52:22Z",
-      "comment_updated_at": "2026-09-09T08:52:22Z",
-      "comment_body_sha256": "408b3f1a308e2c8690d92767a567aafb87f80369311b7f6a06105d76815726ad",
-      "repo": "openclaw/crabbox",
-      "issue_number": 1995,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T14:24:56.981Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/crabbox:1995:5599432411:2026-09-09T09:14:49Z:re_review",
       "comment_id": "5599432411",
@@ -31992,6 +31965,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144320:5624170474:2026-09-10T19:32:50Z:clawsweeper_needs_human",
+      "comment_id": "5624170474",
+      "comment_version_key": "5624170474:2026-09-10T19:32:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144320#issuecomment-5624170474",
+      "comment_created_at": "2026-09-10T19:20:25Z",
+      "comment_updated_at": "2026-09-10T19:32:50Z",
+      "comment_body_sha256": "d3491f0e90c66a6ae2d0094859f5f4299095df444a9922c13700bbf973852abe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The sessions_send predicate is covered by mocked Gateway tool tests, but the captured body explicitly leaves the real visible-spawn → waited-se... (sha=5ec4e338fdb8b1d052837a90a87ab66eaa6f3658)",
+      "expected_head_sha": "5ec4e338fdb8b1d052837a90a87ab66eaa6f3658",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T19:33:46.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-144265",
+        "head_sha": "5ec4e338fdb8b1d052837a90a87ab66eaa6f3658",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
