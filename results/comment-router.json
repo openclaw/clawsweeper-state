@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T13:08:56.427Z",
+  "updated_at": "2026-09-10T13:09:12.300Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123145:5365672395:2026-08-21T05:42:01Z:re_review",
-      "comment_id": "5365672395",
-      "comment_version_key": "5365672395:2026-08-21T05:42:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123145#issuecomment-5365672395",
-      "comment_created_at": "2026-08-21T05:42:01Z",
-      "comment_updated_at": "2026-08-21T05:42:01Z",
-      "comment_body_sha256": "39939209a31ed27952eea65df243edceb98f9b15994398ae23e01947bbe30af7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123145,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T08:34:57.248Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123145:5420200368:2026-08-26T03:32:26Z:re_review",
       "comment_id": "5420200368",
@@ -33061,6 +33034,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111020:5013302283:2026-09-10T13:07:56Z:clawsweeper_needs_human",
+      "comment_id": "5013302283",
+      "comment_version_key": "5013302283:2026-09-10T13:07:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111020#issuecomment-5013302283",
+      "comment_created_at": "2026-07-18T23:14:51Z",
+      "comment_updated_at": "2026-09-10T13:07:56Z",
+      "comment_body_sha256": "c41002dd525b6b4108e562fac0f930949f9e47bd7354e745c9efa3b4443ed777",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111020,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing workflows that request more tools or approvals after final delivery will now receive rejection; native generation receives ten seconds of grace, and admitted tools continue u... (sha=dee387c0a8924ce6f1729acb8de1876ee7c1b0ff)",
+      "expected_head_sha": "dee387c0a8924ce6f1729acb8de1876ee7c1b0ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T13:09:12.300Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-final-close-no-interrupt",
+        "head_sha": "dee387c0a8924ce6f1729acb8de1876ee7c1b0ff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
