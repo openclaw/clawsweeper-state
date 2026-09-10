@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:30:45.221Z",
+  "updated_at": "2026-09-10T05:31:20.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132453:5579515910:2026-09-08T05:00:55Z:re_review",
-      "comment_id": "5579515910",
-      "comment_version_key": "5579515910:2026-09-08T05:00:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5579515910",
-      "comment_created_at": "2026-09-08T05:00:55Z",
-      "comment_updated_at": "2026-09-08T05:00:55Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132453,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T01:47:47.470Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132453:5579985257:2026-09-08T05:52:53Z:re_review",
       "comment_id": "5579985257",
@@ -31837,6 +31810,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143506:5610375096:2026-09-10T05:30:11Z:clawsweeper_needs_human",
+      "comment_id": "5610375096",
+      "comment_version_key": "5610375096:2026-09-10T05:30:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143506#issuecomment-5610375096",
+      "comment_created_at": "2026-09-09T23:47:56Z",
+      "comment_updated_at": "2026-09-10T05:30:11Z",
+      "comment_body_sha256": "37407877ea0d708318b4d6a7c22840f8f5e5e290e1eff0ca63adf51416d45f6d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143506,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=0cf99a72302348c58fd7a57bdc02abe72df24091)",
+      "expected_head_sha": "0cf99a72302348c58fd7a57bdc02abe72df24091",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T05:31:20.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-143385",
+        "head_sha": "0cf99a72302348c58fd7a57bdc02abe72df24091",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
