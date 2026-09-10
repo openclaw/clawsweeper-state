@@ -67,7 +67,7 @@ Bug-fix boundary:
 
 Review work prompt:
 
-Repair https://github.com/openclaw/openclaw/issues/143980 in one focused PR. First establish a failing regression through the registered suggest_task tool and Gateway acceptance path: a Docker-mounted /workspace is accepted as a card cwd but fails host session creation. Preserve the existing host-side omitted-cwd default in src/agents/agent-tools.ts. Pass existing sandbox context through src/agents/openclaw-tools.ts to the suggestion producer and reuse the existing path-mapping owner for explicit container coordinates; do not hard-code /workspace or add a second mount resolver. Preserve valid explicit host cwd behavior. Normalize only paths with a supported host counterpart and reject unsupported coordinates before recording unusable cards. Keep sessions.create authorization, canonical containment, source-session ownership, acceptance rollback, and user confirmation unchanged. Do not remap copied sandbox contents to a different host project, broaden accessible roots, or weaken read-only isolation. Stop for maintainer review if solving a variant requires new permissions, feature/config policy, or storage changes. Extend existing tool and session-start tests to cover explicit mapped root/subdirectory, omitted cwd, explicit host cwd, invalid paths, and unchanged containment rejection; prove the regression fails before the fix. Record focused results and a Docker after-fix acceptance transcript when feasible. No CHANGELOG.md edits; put user-facing context and reporter credit in the PR body.
+Repair this issue's explicit Docker container-cwd failure in task suggestions. Establish a failing regression before editing: a Docker workspace mounted from the selected agent's host workspace accepts a suggestion carrying /workspace, but local acceptance fails when that path does not exist on the host. Trace src/agents/agent-tools.ts and src/agents/openclaw-tools.ts into src/agents/tools/task-suggestion-tools.ts and the Gateway acceptance owner. Reuse the actual sandbox filesystem mapping at the producer boundary before recording a launchable host cwd; do not hard-code /workspace or infer the selected agent's host workspace from the string alone. Preserve the existing host-oriented default and explicit host cwd behavior. Keep session authorization, canonical containment, operator acceptance, and ephemeral registry semantics unchanged. Cover mapped roots and children, configured container workdirs, unsandboxed and host-path inputs, and rejection of unmappable or disallowed targets. Do not silently redirect private or read-only sandbox paths into a different writable workspace; stop for review if repair would require changing that policy, remote execution routing, configuration, or persisted schema. Extend the existing tool and session-start regression suites so the mapped suggestion reaches sessions.create and records the intended spawnedCwd. Obtain a redacted real Docker after-fix acceptance trace through the authorized implementation workflow. Run focused tests and changed-file checks. Record user-visible behavior and proof in the PR body; do not edit CHANGELOG.md.
 
 Likely files:
 
@@ -78,8 +78,9 @@ Likely files:
 
 Validation:
 
-- node scripts/run-vitest.mjs run src/agents/tools/task-suggestion-tools.test.ts
-- node scripts/run-vitest.mjs run --config test/vitest/vitest.gateway.config.ts src/gateway/server-methods/task-suggestions-session-start.test.ts src/gateway/server-methods/task-suggestions.test.ts src/gateway/server-methods/session-create-root.test.ts
+- node scripts/run-vitest.mjs src/agents/tools/task-suggestion-tools.test.ts
+- node scripts/run-vitest.mjs src/gateway/server-methods/task-suggestions-session-start.test.ts src/gateway/server-methods/task-suggestions.test.ts src/gateway/server-methods/session-create-root.test.ts
+- node scripts/check-changed.mjs
 - git diff --check
 
 ## Operator Prompt
