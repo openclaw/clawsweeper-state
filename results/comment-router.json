@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T12:48:38.336Z",
+  "updated_at": "2026-09-10T12:49:05.054Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143700:5615221413:2026-09-10T08:03:09Z:re_review",
-      "comment_id": "5615221413",
-      "comment_version_key": "5615221413:2026-09-10T08:03:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143700#issuecomment-5615221413",
-      "comment_created_at": "2026-09-10T08:03:09Z",
-      "comment_updated_at": "2026-09-10T08:03:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143700,
-      "author": "wangyan2026",
-      "author_id": 51532318,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T08:11:30.154Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/normalize-union-scalar-143646",
-        "head_sha": "90cda04b19649e1122a743a805e9b63a5c0dc0df",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143847:5615304209:2026-09-10T08:09:35Z:re_review",
       "comment_id": "5615304209",
@@ -32920,6 +32873,39 @@
         "kind": "pull_request",
         "branch": "fix/discord-model-runtime",
         "head_sha": "8e2d01943a0759a53b67b45bbdf516e3a060847c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143937:5617168563:2026-09-10T12:40:12Z:clawsweeper_needs_human",
+      "comment_id": "5617168563",
+      "comment_version_key": "5617168563:2026-09-10T12:40:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143937#issuecomment-5617168563",
+      "comment_created_at": "2026-09-10T10:29:40Z",
+      "comment_updated_at": "2026-09-10T12:40:12Z",
+      "comment_body_sha256": "dd5289545c915c98ab5b5a34504b947214dc1c72d5f69b0b160864a00abc6ee4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143937,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep marker-containing input subject to secret masking (P1)** - The previous P1 remains. redactSensitiveFieldValueWithConfig('password', 'hunter2⟦openclaw:redacted⟧', {}) reaches this early return and preserves...; Review finding: [P1] Keep marker-containing input subject to secret masking — src/logging/redact.ts:253-257 - [P2] Distinguish literal delimiter text from generated provenance — p... (sha=73a6e90772417ff5a6d479e7d34e93cd5b63f84d)",
+      "expected_head_sha": "73a6e90772417ff5a6d479e7d34e93cd5b63f84d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T12:49:05.054Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-142821-descr",
+        "head_sha": "73a6e90772417ff5a6d479e7d34e93cd5b63f84d",
         "cluster_id": null,
         "job_path": null
       }
