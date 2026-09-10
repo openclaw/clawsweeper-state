@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:02:42.015Z",
+  "updated_at": "2026-09-10T05:03:43.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132453:5611050770:2026-09-10T00:58:47Z:re_review",
-      "comment_id": "5611050770",
-      "comment_version_key": "5611050770:2026-09-10T00:58:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132453#issuecomment-5611050770",
-      "comment_created_at": "2026-09-10T00:58:47Z",
-      "comment_updated_at": "2026-09-10T00:58:47Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132453,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T01:00:14.418Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage",
-        "head_sha": "1ae6de4a84d30e8674e0eb19541306ab52c5e4f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5611064271:2026-09-10T01:00:28Z:re_review",
       "comment_id": "5611064271",
@@ -32254,6 +32207,39 @@
         "kind": "pull_request",
         "branch": "diag/tab5-allocation-failures",
         "head_sha": "04cea90c98c14a357b74fba331a1198242e388f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143631:5611923808:2026-09-10T05:02:36Z:clawsweeper_needs_human",
+      "comment_id": "5611923808",
+      "comment_version_key": "5611923808:2026-09-10T05:02:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143631#issuecomment-5611923808",
+      "comment_created_at": "2026-09-10T02:51:55Z",
+      "comment_updated_at": "2026-09-10T05:02:36Z",
+      "comment_body_sha256": "3402da26c31c28d0857193b9bc432272aae50a6193b55b65546fb6b04e861cf5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143631,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured body credits prerequisite Gateway wire traces, but explicitly leaves this native Talk pat...; Review finding: [medium] Native final-effect profile isolation remains unqualified — apps/ios/Sources/Voice/TalkRealtimeWebRTCSession.swift:739 (sha=704d750708350cdef7955636a0d5de24a4817c0f)",
+      "expected_head_sha": "704d750708350cdef7955636a0d5de24a4817c0f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T05:03:43.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-voice-20260909",
+        "head_sha": "704d750708350cdef7955636a0d5de24a4817c0f",
         "cluster_id": null,
         "job_path": null
       }
