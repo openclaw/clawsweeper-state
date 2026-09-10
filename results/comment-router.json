@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:17:51.078Z",
+  "updated_at": "2026-09-10T04:17:55.058Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1488:5610309106:2026-09-09T23:41:36Z:re_review",
-      "comment_id": "5610309106",
-      "comment_version_key": "5610309106:2026-09-09T23:41:36Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1488#issuecomment-5610309106",
-      "comment_created_at": "2026-09-09T23:41:36Z",
-      "comment_updated_at": "2026-09-09T23:41:36Z",
-      "comment_body_sha256": "e48a40f33a1a5fe33903615d4bdd8a8352cf08e801ae855ea6d136d533d0c612",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1488,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-09T23:47:43.301Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/review-output-policy-20260908",
-        "head_sha": "491bb0dc9d69634713f72f7663702595101397cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1488:5579929320:2026-09-09T23:46:36Z:clawsweeper_needs_human",
       "comment_id": "5579929320",
@@ -32754,6 +32707,39 @@
         "kind": "pull_request",
         "branch": "codex/plugin-bulk-rescan",
         "head_sha": "db917d48edf9fdbe442614476f153182f84897b9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143631:5611923808:2026-09-10T04:17:01Z:clawsweeper_needs_human",
+      "comment_id": "5611923808",
+      "comment_version_key": "5611923808:2026-09-10T04:17:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143631#issuecomment-5611923808",
+      "comment_created_at": "2026-09-10T02:51:55Z",
+      "comment_updated_at": "2026-09-10T04:17:01Z",
+      "comment_body_sha256": "dc42902421638f9162b8eaa845d5958d5a78a17e63a8ae85d3eb76ac7154b4c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143631,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the bound Talk request and cleanup owners need observed allowed-profile execution, forbidden-profile rejection,...; Review finding: [P2] [P2] Retain the call while another startup waiter remains — apps/ios/Sources/Model/NodeAppModel.swift:1437-1440 - [medium] Bound voice authority remains unqua... (sha=77b05177938b36cc7002a7cd9606c8a2470bb568)",
+      "expected_head_sha": "77b05177938b36cc7002a7cd9606c8a2470bb568",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:17:55.058Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-voice-20260909",
+        "head_sha": "77b05177938b36cc7002a7cd9606c8a2470bb568",
         "cluster_id": null,
         "job_path": null
       }
