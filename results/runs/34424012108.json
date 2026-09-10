@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143461",
+  "mode": "plan",
+  "run_id": "34424012108",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34424012108",
+  "head_sha": "cd76da8aa7b0fc26cf8d05aeb212375ab669acc3",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143461.md",
+  "published_at": "2026-09-10T01:48:18.359Z",
+  "canonical": "#143461",
+  "canonical_issue": "#143461",
+  "canonical_pr": null,
+  "summary": "Verified the reported throw on preflight main c98e00b4f94f474ee3494665c32cef2294109b6c. Plan one focused suppression-result repair, including downstream success-side-effect guards. Quarantine #137461 separately. No changes or runtime tests were performed; failing regression proof remains required before implementation.",
+  "actions": [
+    {
+      "target": "#143461",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "The narrow result-projection defect remains present and is independent of the broader security-sensitive policy proposal."
+    },
+    {
+      "target": "#137461",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Read-only routing to central OpenClaw security handling; exclude this PR and its implementation from the repair."
+    },
+    {
+      "target": "#57766",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "Historical context; no closure or reopening proposed."
+    },
+    {
+      "target": "#57843",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "Use the established lifecycle contract; do not revive or replace this historical branch."
+    },
+    {
+      "target": "#63011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "No action on this closed umbrella request; its broader scope is excluded."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
