@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143646",
+  "mode": "autonomous",
+  "run_id": "34434592660",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34434592660",
+  "head_sha": "1d41377123e9d796222f3d8014059202ab00ce21",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143646.md",
+  "published_at": "2026-09-10T03:53:25.991Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143646",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143646",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the analyzer defect on preflight main. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#143646",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143646",
+      "candidate_fix": null,
+      "reason": "A focused existing-behavior repair is supported by current source. Establish a failing actual-form regression before changing production code."
+    },
+    {
+      "target": "#128275",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Supporting historical context only; broader work remains outside this cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143646",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143646",
+      "candidate_fix": null,
+      "reason": "No viable PR is present in the hydrated inventory; prepare one narrow implementation on the job's designated branch."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143646",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#143646",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor checkout with dependencies. Reproduce through analyzeConfigSchema and the actual renderer, implement and validate, then let the deterministic applicator open or update the single PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
