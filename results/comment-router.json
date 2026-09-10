@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T14:15:03.854Z",
+  "updated_at": "2026-09-10T14:16:33.451Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-10T09:42:45Z:clawsweeper_auto_repair",
-      "comment_id": "5611675668",
-      "comment_version_key": "5611675668:2026-09-10T09:42:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143610#issuecomment-5611675668",
-      "comment_created_at": "2026-09-10T02:19:14Z",
-      "comment_updated_at": "2026-09-10T09:42:45Z",
-      "comment_body_sha256": "6cb4e0265744cd092a80a6a939bf7d69eb830e64b32faf5ae0143dd4666296f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143610,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c62182fccaaa6d2176462c86e078284038f28c99)",
-      "expected_head_sha": "c62182fccaaa6d2176462c86e078284038f28c99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T09:47:48.802Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/ios-conversation-actions-20260909",
-        "head_sha": "c62182fccaaa6d2176462c86e078284038f28c99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143631:5611923808:2026-09-10T09:44:30Z:clawsweeper_needs_human",
       "comment_id": "5611923808",
@@ -32775,6 +32742,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144082:5620121396:2026-09-10T14:15:29Z:re_review",
+      "comment_id": "5620121396",
+      "comment_version_key": "5620121396:2026-09-10T14:15:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144082#issuecomment-5620121396",
+      "comment_created_at": "2026-09-10T14:15:29Z",
+      "comment_updated_at": "2026-09-10T14:15:29Z",
+      "comment_body_sha256": "8731843651a1e8508ce336c955f64648d4168025dcc3f1a4470972ed56886933",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144082,
+      "author": "jensonhirst",
+      "author_id": 77512805,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T14:16:30.791Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/xai-oauth-refresh-expiry",
+        "head_sha": "77a9644ffce275e71f3a28cfadd2b34ab1145620",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
