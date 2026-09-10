@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:02:30.956Z",
+  "updated_at": "2026-09-10T04:02:37.861Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143487:5610288103:2026-09-09T23:39:31Z:clawsweeper_needs_human",
-      "comment_id": "5610288103",
-      "comment_version_key": "5610288103:2026-09-09T23:39:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143487#issuecomment-5610288103",
-      "comment_created_at": "2026-09-09T23:39:31Z",
-      "comment_updated_at": "2026-09-09T23:39:31Z",
-      "comment_body_sha256": "6c5b1f4a1e3a1297f611efaea0c111a809b4c81ea579e49060b93e6bc9e8945d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143487,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=50ec8145abf6852c8bb8d1d620b31bb2ab01e066)",
-      "expected_head_sha": "50ec8145abf6852c8bb8d1d620b31bb2ab01e066",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T23:42:35.634Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-update-fixture-temp-owner",
-        "head_sha": "50ec8145abf6852c8bb8d1d620b31bb2ab01e066",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118806:5170245430:2026-09-05T08:04:19Z:clawsweeper_auto_repair",
       "comment_id": "5170245430",
@@ -32685,6 +32652,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:131603:5612769772:2026-09-10T04:01:42Z:re_review",
+      "comment_id": "5612769772",
+      "comment_version_key": "5612769772:2026-09-10T04:01:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131603#issuecomment-5612769772",
+      "comment_created_at": "2026-09-10T04:01:42Z",
+      "comment_updated_at": "2026-09-10T04:01:42Z",
+      "comment_body_sha256": "c0bea96e9c889d71e39dadab30e464e12e9ee322b28f0114eb0bcac0e6f3ee4b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131603,
+      "author": "lonexreb",
+      "author_id": 95570942,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head `9aa24d88887`: both p2 findings are fixed and the merge conflicts are resolved (rebased onto current main)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T04:02:35.065Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/131491-stale-delivery-discard",
+        "head_sha": "9aa24d888877406d13699bee2b7f254cdba2c1d2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
