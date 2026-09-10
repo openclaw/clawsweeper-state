@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T16:59:54.833Z",
+  "updated_at": "2026-09-10T17:02:21.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5618868444:2026-09-10T12:43:53Z:re_review",
-      "comment_id": "5618868444",
-      "comment_version_key": "5618868444:2026-09-10T12:43:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5618868444",
-      "comment_created_at": "2026-09-10T12:43:53Z",
-      "comment_updated_at": "2026-09-10T12:43:53Z",
-      "comment_body_sha256": "bebf57910779ecaa978f7045a26666d3c39e6760ccd476bfa532189d99e9c63a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T12:44:49.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "76cfb9dbf7df3423ea990e440b022e9047ea3ac9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-09-10T12:43:23Z:clawsweeper_needs_human",
       "comment_id": "5133286180",
@@ -31672,6 +31625,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143587:5611566193:2026-09-10T17:01:35Z:clawsweeper_needs_human",
+      "comment_id": "5611566193",
+      "comment_version_key": "5611566193:2026-09-10T17:01:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143587#issuecomment-5611566193",
+      "comment_created_at": "2026-09-10T02:04:58Z",
+      "comment_updated_at": "2026-09-10T17:01:35Z",
+      "comment_body_sha256": "b2cf556c31ea0345d3fb2835730fac3759a56bfefda8f1b0e6cf86cf9edb451a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepted input can continue toward provider execution after the selected profile changes while its original host/session authority remains valid; the owner has explicitly left accepta... (sha=5e73780272115c4963c0cafe373544aa50b1d847)",
+      "expected_head_sha": "5e73780272115c4963c0cafe373544aa50b1d847",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T17:02:21.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-profile-binding-20260909",
+        "head_sha": "5e73780272115c4963c0cafe373544aa50b1d847",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
