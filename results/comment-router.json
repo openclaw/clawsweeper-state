@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T15:16:33.065Z",
+  "updated_at": "2026-09-10T15:18:47.930Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123984:5300383781:2026-09-10T10:55:30Z:clawsweeper_auto_repair",
-      "comment_id": "5300383781",
-      "comment_version_key": "5300383781:2026-09-10T10:55:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123984#issuecomment-5300383781",
-      "comment_created_at": "2026-08-15T03:47:51Z",
-      "comment_updated_at": "2026-09-10T10:55:30Z",
-      "comment_body_sha256": "908ce651ae59133eed1f3c5ac69af6145ec59a188695c693b489028ec9b1f40d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123984,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5fbc401c7f2702eb7d6577218e02568efbce6f44)",
-      "expected_head_sha": "5fbc401c7f2702eb7d6577218e02568efbce6f44",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T10:56:57.140Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsean/telegram-ignore-slim",
-        "head_sha": "f45bf5b08f43ea836502ce75a689fac6405c38d4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143956:5617558039:2026-09-10T10:56:18Z:clawsweeper_needs_human",
       "comment_id": "5617558039",
@@ -32237,6 +32204,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144119:5621018691:2026-09-10T15:17:39Z:re_review",
+      "comment_id": "5621018691",
+      "comment_version_key": "5621018691:2026-09-10T15:17:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144119#issuecomment-5621018691",
+      "comment_created_at": "2026-09-10T15:17:39Z",
+      "comment_updated_at": "2026-09-10T15:17:39Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144119,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T15:18:45.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/143389-subagent-kill-tree-refresh",
+        "head_sha": "6d706b4d6d9b513b7147cf54b77f77c1895f812f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
