@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:32:12.943Z",
+  "updated_at": "2026-09-10T04:32:16.104Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142959:5598689154:2026-09-09T23:53:44Z:clawsweeper_auto_repair",
-      "comment_id": "5598689154",
-      "comment_version_key": "5598689154:2026-09-09T23:53:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142959#issuecomment-5598689154",
-      "comment_created_at": "2026-09-09T08:21:01Z",
-      "comment_updated_at": "2026-09-09T23:53:44Z",
-      "comment_body_sha256": "0c4c95b89850b442b266e78a085d9a5697b67800e385c3818060347b0a4f7b83",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142959,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=72e3f602cf8c817bee4980f196f330046bc2d395)",
-      "expected_head_sha": "72e3f602cf8c817bee4980f196f330046bc2d395",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T00:02:10.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-actionable-current",
-        "head_sha": "20b8bd70339197420beaa39966fcef7e63f38c2b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143216:5604417850:2026-09-10T00:00:18Z:clawsweeper_needs_human",
       "comment_id": "5604417850",
@@ -32797,6 +32764,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143664:5612845448:2026-09-10T04:31:25Z:clawsweeper_needs_human",
+      "comment_id": "5612845448",
+      "comment_version_key": "5612845448:2026-09-10T04:31:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143664#issuecomment-5612845448",
+      "comment_created_at": "2026-09-10T04:07:58Z",
+      "comment_updated_at": "2026-09-10T04:31:25Z",
+      "comment_body_sha256": "13f83c96c1c426ff3fa931303d126f4af3608f406e53891961fe60de4d0ad864",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143664,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed registry and shared merge determine authenticated SDK request routing, but after-fix evidence cover...; Review finding: [P1] Preserve configured provider routes in every merge caller — src/agents/models-config.merge.ts:183-184 - [medium] Catalog routing can override authored request... (sha=7810c9f9e658eae2cea5f0d96fc253ac5d0e11cb)",
+      "expected_head_sha": "7810c9f9e658eae2cea5f0d96fc253ac5d0e11cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:32:16.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/registry-source-composition",
+        "head_sha": "7810c9f9e658eae2cea5f0d96fc253ac5d0e11cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
