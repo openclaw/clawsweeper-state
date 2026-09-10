@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:26:09.144Z",
+  "updated_at": "2026-09-10T05:27:05.968Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132454:5461020893:2026-09-10T01:45:02Z:clawsweeper_needs_human",
-      "comment_id": "5461020893",
-      "comment_version_key": "5461020893:2026-09-10T01:45:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5461020893",
-      "comment_created_at": "2026-08-29T07:18:34Z",
-      "comment_updated_at": "2026-09-10T01:45:02Z",
-      "comment_body_sha256": "3a2f0beff847227d93b0c0a5b21777db9bf366283c879debb2a9f6b0da61c08d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The account endpoint remains in an unmerged backend PR; this UI cannot ship independently of that backend’s acceptance and landing. (sha=2cb02d9a5dd26b540d710bb50776754abf8f9cc8)",
-      "expected_head_sha": "2cb02d9a5dd26b540d710bb50776754abf8f9cc8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T01:47:07.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "2cb02d9a5dd26b540d710bb50776754abf8f9cc8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119624:5192796525:2026-09-10T01:46:28Z:clawsweeper_needs_human",
       "comment_id": "5192796525",
@@ -31751,6 +31718,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143576:5613636657:2026-09-10T05:26:03Z:re_review",
+      "comment_id": "5613636657",
+      "comment_version_key": "5613636657:2026-09-10T05:26:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143576#issuecomment-5613636657",
+      "comment_created_at": "2026-09-10T05:26:03Z",
+      "comment_updated_at": "2026-09-10T05:26:03Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143576,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T05:27:04.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-cli-announce-order",
+        "head_sha": "b9b688a96f5c8d95cc764cdb32c57cec42861e26",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
