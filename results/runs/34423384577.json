@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143461",
+  "mode": "autonomous",
+  "run_id": "34423384577",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34423384577",
+  "head_sha": "cd76da8aa7b0fc26cf8d05aeb212375ab669acc3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143461.md",
+  "published_at": "2026-09-10T01:45:25.264Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143461",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143461",
+  "canonical_pr": null,
+  "summary": "Confirmed the defect in source at preflight main 88898e08d335c9e2553760ef366de15206eb4f26. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143461",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by the enforced read-only filesystem. A writable executor must first demonstrate the failing regression on current main, then implement and validate the fix."
+    },
+    {
+      "target": "#137461",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine for central OpenClaw security handling without public mutation. The narrow Telegram result-projection fix does not depend on this PR."
+    },
+    {
+      "target": "#57766",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#57843",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "superseded",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain contributor context without reopening or replacing the closed branch."
+    },
+    {
+      "target": "#63011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; do not expand the implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143461",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "A focused ordinary bug fix remains justified. Artifact preparation is complete; implementation requires a writable, dependency-ready executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
