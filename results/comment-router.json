@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T16:05:09.922Z",
+  "updated_at": "2026-09-10T16:05:13.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:118067:5618150657:2026-09-10T11:45:47Z:re_review",
-      "comment_id": "5618150657",
-      "comment_version_key": "5618150657:2026-09-10T11:45:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5618150657",
-      "comment_created_at": "2026-09-10T11:45:47Z",
-      "comment_updated_at": "2026-09-10T11:45:47Z",
-      "comment_body_sha256": "9b4a3deae1d77df233f86e207cd6d37d6134ea181d657eb8a96d75618f5ca0d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118067,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T11:46:53.394Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/discord-provider-endpoint-runtime",
-        "head_sha": "8cb757a4cde842c28f8ef05922c860284ed87c55",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116446:5618150879:2026-09-10T11:45:48Z:re_review",
       "comment_id": "5618150879",
@@ -32203,6 +32156,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121871:5249495446:2026-09-10T16:04:09Z:clawsweeper_needs_human",
+      "comment_id": "5249495446",
+      "comment_version_key": "5249495446:2026-09-10T16:04:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121871#issuecomment-5249495446",
+      "comment_created_at": "2026-08-11T05:53:31Z",
+      "comment_updated_at": "2026-09-10T16:04:09Z",
+      "comment_body_sha256": "c4e2fa0202d87549becad6c3b8bdcf8827836c975ba9fff56258ed030242329c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121871,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Explicit acceptance of the additive persisted correlation field, including its rollback contract, is not recorded in the available discussion. (sha=ba463d5777ba73e483384a74a44f3bd035948712)",
+      "expected_head_sha": "ba463d5777ba73e483384a74a44f3bd035948712",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T16:05:13.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/duplicate-channel-mirror-bubble",
+        "head_sha": "ba463d5777ba73e483384a74a44f3bd035948712",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
