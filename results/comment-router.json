@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T06:40:32.531Z",
+  "updated_at": "2026-09-10T06:40:35.364Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119055:5600802574:2026-09-09T11:04:38Z:re_review",
-      "comment_id": "5600802574",
-      "comment_version_key": "5600802574:2026-09-09T11:04:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5600802574",
-      "comment_created_at": "2026-09-09T11:04:38Z",
-      "comment_updated_at": "2026-09-09T11:04:38Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119055,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T02:15:52.829Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119055:5605825894:2026-09-09T17:12:34Z:re_review",
       "comment_id": "5605825894",
@@ -32255,6 +32228,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143631:5611923808:2026-09-10T06:38:45Z:clawsweeper_needs_human",
+      "comment_id": "5611923808",
+      "comment_version_key": "5611923808:2026-09-10T06:38:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143631#issuecomment-5611923808",
+      "comment_created_at": "2026-09-10T02:51:55Z",
+      "comment_updated_at": "2026-09-10T06:38:45Z",
+      "comment_body_sha256": "ded20ec779c25ee74ff9e2d920869bc888aa7f81197a0c13b6cedde84a3a484a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143631,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: startNativeTalk and its bound relay/WebRTC paths still lack native-to-real-Gateway traces showing allo...; Review finding: [medium] Native final-effect authority remains unproved — apps/ios/Sources/Voice/TalkRealtimeWebRTCSession.swift:740 (sha=dbea718391b2e76884697cafd70fe8f56291efa7)",
+      "expected_head_sha": "dbea718391b2e76884697cafd70fe8f56291efa7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T06:40:35.364Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-voice-20260909",
+        "head_sha": "dbea718391b2e76884697cafd70fe8f56291efa7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
