@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T09:15:56.858Z",
+  "updated_at": "2026-09-10T09:17:10.050Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135838:5503790789:2026-09-10T05:15:07Z:clawsweeper_needs_human",
-      "comment_id": "5503790789",
-      "comment_version_key": "5503790789:2026-09-10T05:15:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135838#issuecomment-5503790789",
-      "comment_created_at": "2026-09-02T03:16:53Z",
-      "comment_updated_at": "2026-09-10T05:15:07Z",
-      "comment_body_sha256": "ca43e47013a64538263388659523a0602e7cdafe784b69dac8665880497cf1ed",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135838,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the updated evidence reports tests and lint on the reviewed head, but explicitly excludes real Gateway-to-provi...; Review finding: [P1] [P1] Accept the exact prepared allocation selected for the child — src/gateway/worker-environments/worker-session-tool-executor.ts:307-310 - [P1] [P1] Resolve... (sha=da4d3461e0a7af08e9b6fb68bc315a6c1927e067)",
-      "expected_head_sha": "da4d3461e0a7af08e9b6fb68bc315a6c1927e067",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T05:16:16.083Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "worker-closure-bound-auth",
-        "head_sha": "da4d3461e0a7af08e9b6fb68bc315a6c1927e067",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T05:04:24Z:clawsweeper_auto_repair",
       "comment_id": "5592569053",
@@ -32385,6 +32352,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143837:5615032363:2026-09-10T09:16:06Z:clawsweeper_needs_human",
+      "comment_id": "5615032363",
+      "comment_version_key": "5615032363:2026-09-10T09:16:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143837#issuecomment-5615032363",
+      "comment_created_at": "2026-09-10T07:47:48Z",
+      "comment_updated_at": "2026-09-10T09:16:06Z",
+      "comment_body_sha256": "0db4873449f04a4b7d16caeb9f5e0c969fe09736c43d90efcf339c5a16cd9c62",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: source-mode checks cover composition and forks, but matching prepared-runtime-to-HTTP evidence must sh...; Review finding: [medium] Prepared request authority lacks final-effect coverage — src/agents/sessions/model-registry.ts:568 (sha=038b62c638f25716943ba8b8fc9f60a1f753ed22)",
+      "expected_head_sha": "038b62c638f25716943ba8b8fc9f60a1f753ed22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T09:17:10.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prepared-registry-composition",
+        "head_sha": "038b62c638f25716943ba8b8fc9f60a1f753ed22",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
