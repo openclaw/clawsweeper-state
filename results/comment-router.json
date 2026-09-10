@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T16:58:36.764Z",
+  "updated_at": "2026-09-10T16:59:54.833Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118067:5159399788:2026-09-10T12:43:04Z:clawsweeper_needs_human",
-      "comment_id": "5159399788",
-      "comment_version_key": "5159399788:2026-09-10T12:43:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118067#issuecomment-5159399788",
-      "comment_created_at": "2026-08-02T16:58:31Z",
-      "comment_updated_at": "2026-09-10T12:43:04Z",
-      "comment_body_sha256": "a00c0e57dbf111dff8791b11a16cc18e976fbaf4d0078851fb05b52967427148",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118067,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new plugin host API is process-wide: installing it overrides Discord account proxies and prevents interactive voice startup. Consumers must preserve the documented startup and shu... (sha=50beb4dfcc6732cf637d7fcd59030c248f458557)",
-      "expected_head_sha": "50beb4dfcc6732cf637d7fcd59030c248f458557",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T12:44:25.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/discord-provider-endpoint-runtime",
-        "head_sha": "50beb4dfcc6732cf637d7fcd59030c248f458557",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116446:5618868444:2026-09-10T12:43:53Z:re_review",
       "comment_id": "5618868444",
@@ -31658,6 +31625,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T16:58:44Z:clawsweeper_auto_repair",
+      "comment_id": "5592569053",
+      "comment_version_key": "5592569053:2026-09-10T16:58:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
+      "comment_created_at": "2026-09-08T22:12:20Z",
+      "comment_updated_at": "2026-09-10T16:58:44Z",
+      "comment_body_sha256": "847ef272b480be1839286bd5e5e8f42a4b732edb2e9f2de8113362e844980ae1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142626,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
+      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+      "finding_id": "review-feedback",
+      "status": "executed",
+      "processed_at": "2026-09-10T16:59:36.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-capability-refresh",
+        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+        "cluster_id": "automerge-openclaw-openclaw-142626",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
