@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T17:37:11.218Z",
+  "updated_at": "2026-09-10T17:37:52.727Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111020:5619078388:2026-09-10T13:00:24Z:re_review",
-      "comment_id": "5619078388",
-      "comment_version_key": "5619078388:2026-09-10T13:00:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111020#issuecomment-5619078388",
-      "comment_created_at": "2026-09-10T13:00:24Z",
-      "comment_updated_at": "2026-09-10T13:00:24Z",
-      "comment_body_sha256": "7d74871c796633de1729072fa784bb4176a8b8e931a17138745eadadf93d5dee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111020,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T13:01:26.383Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-final-close-no-interrupt",
-        "head_sha": "dee387c0a8924ce6f1729acb8de1876ee7c1b0ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T12:59:36Z:clawsweeper_auto_repair",
       "comment_id": "5592569053",
@@ -31843,6 +31796,39 @@
         "kind": "pull_request",
         "branch": "codex/simple-worker-first-7af9-20260910",
         "head_sha": "76097fb74f738512b807f8e9d4cfaf3ccc5b1bd6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144236:5622858429:2026-09-10T17:36:40Z:clawsweeper_auto_repair",
+      "comment_id": "5622858429",
+      "comment_version_key": "5622858429:2026-09-10T17:36:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144236#issuecomment-5622858429",
+      "comment_created_at": "2026-09-10T17:36:40Z",
+      "comment_updated_at": "2026-09-10T17:36:40Z",
+      "comment_body_sha256": "03282ca7f7bfafdf333c7baa3fa2fe896ee8454513f7022a9ebe7873cacfd50d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8d94d0778e82e0777d8ab1841a9b265f6ee09cf5)",
+      "expected_head_sha": "8d94d0778e82e0777d8ab1841a9b265f6ee09cf5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T17:37:52.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/frv-frozen-workflow-admission-20260909",
+        "head_sha": "8d94d0778e82e0777d8ab1841a9b265f6ee09cf5",
         "cluster_id": null,
         "job_path": null
       }
