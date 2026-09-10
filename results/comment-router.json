@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T13:39:48.867Z",
+  "updated_at": "2026-09-10T13:40:07.626Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117274:5150480268:2026-09-10T08:47:38Z:clawsweeper_needs_human",
-      "comment_id": "5150480268",
-      "comment_version_key": "5150480268:2026-09-10T08:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117274#issuecomment-5150480268",
-      "comment_created_at": "2026-08-01T07:47:42Z",
-      "comment_updated_at": "2026-09-10T08:47:38Z",
-      "comment_body_sha256": "acd954101620aef01a8615dcf812f9f4a969843762ecfa9417452617180f420f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117274,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owners are final tool assembly and exec-description generation; supplied tests exercise description strings but do not show a real... (sha=bfae1d45f11af7d217c08d1e386ad6c111ad5377)",
-      "expected_head_sha": "bfae1d45f11af7d217c08d1e386ad6c111ad5377",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T08:52:38.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/114128-literal-newline-guard",
-        "head_sha": "bfae1d45f11af7d217c08d1e386ad6c111ad5377",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142151:5585287135:2026-09-10T08:49:50Z:clawsweeper_needs_human",
       "comment_id": "5585287135",
@@ -32993,6 +32960,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T13:39:48.867Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144074:5619605957:2026-09-10T13:39:01Z:clawsweeper_needs_human",
+      "comment_id": "5619605957",
+      "comment_version_key": "5619605957:2026-09-10T13:39:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144074#issuecomment-5619605957",
+      "comment_created_at": "2026-09-10T13:39:01Z",
+      "comment_updated_at": "2026-09-10T13:39:01Z",
+      "comment_body_sha256": "78c2b14d6f2e8ffb1e82f817eeeee5729ba7a3520f50fd45c7fc4878c1744b47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144074,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Guarantee snapshot cleanup when opening or closing fails (P2)** - Once snapshot preparation succeeds, an exception from openNodeSqliteDatabase now exits before prepared.cleanup(); a throwing database.close() doe...; Review finding: [P2] Guarantee snapshot cleanup when opening or closing fails — src/agents/auth-profiles/shared-store-bootstrap.ts:129-134 - [medium] Authentication snapshots bypa... (sha=42e56221cca39a52ba1a5d4825715fc27f15e3cc)",
+      "expected_head_sha": "42e56221cca39a52ba1a5d4825715fc27f15e3cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T13:40:07.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shared-auth-legacy-cleanup-swallowed-070",
+        "head_sha": "42e56221cca39a52ba1a5d4825715fc27f15e3cc",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
