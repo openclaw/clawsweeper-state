@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:03:46.734Z",
+  "updated_at": "2026-09-10T05:05:01.037Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142522:5611069169:2026-09-10T01:01:05Z:re_review",
-      "comment_id": "5611069169",
-      "comment_version_key": "5611069169:2026-09-10T01:01:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142522#issuecomment-5611069169",
-      "comment_created_at": "2026-09-10T01:01:05Z",
-      "comment_updated_at": "2026-09-10T01:01:05Z",
-      "comment_body_sha256": "7ba0a2f9f1d65eee082f9669fb023db7934f6cca595515930bee64f2f91ce3d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142522,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T01:02:37.154Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-workshop-dangling-index",
-        "head_sha": "b87ddad7ad9f242d0b101af813199ac149595d98",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143577:5611076553:2026-09-10T01:02:03Z:re_review",
       "comment_id": "5611076553",
@@ -32226,6 +32179,39 @@
         "kind": "pull_request",
         "branch": "feat/macos-conversation-actions-20260909",
         "head_sha": "3d06a5130e98989d13d8bb6bbe46189ebee6cc28",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143648:5612291781:2026-09-10T05:04:12Z:clawsweeper_needs_human",
+      "comment_id": "5612291781",
+      "comment_version_key": "5612291781:2026-09-10T05:04:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143648#issuecomment-5612291781",
+      "comment_created_at": "2026-09-10T03:32:29Z",
+      "comment_updated_at": "2026-09-10T05:04:12Z",
+      "comment_body_sha256": "9eeb29e2982e1bfbc3b2ff3b80e814ba8fb2f9155a7790c10bb679c63b19924d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143648,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f9b0a37a07e497fb1f674fdf66e4c899cf658224)",
+      "expected_head_sha": "f9b0a37a07e497fb1f674fdf66e4c899cf658224",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T05:05:01.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ios-gateway-sni-host",
+        "head_sha": "f9b0a37a07e497fb1f674fdf66e4c899cf658224",
         "cluster_id": null,
         "job_path": null
       }
