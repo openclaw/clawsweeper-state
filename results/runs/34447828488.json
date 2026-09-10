@@ -1,0 +1,163 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143790",
+  "mode": "autonomous",
+  "run_id": "34447828488",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34447828488",
+  "head_sha": "978e0643b422a44b155031f80564b8102f2b9f69",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143790.md",
+  "published_at": "2026-09-10T07:39:36.189Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143790",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143790",
+  "canonical_pr": null,
+  "summary": "Confirmed object-union branch loss on preflight main d146f3b7d330cab7280131bfceaf2448a2de275f. Prepared a narrow fix artifact. Local implementation is blocked by read-only access and missing dependencies; no patch, validated branch, or live DeepSeek acceptance is claimed.",
+  "actions": [
+    {
+      "target": "#143790",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143790",
+      "candidate_fix": null,
+      "reason": "The nested DeepSeek object-union defect remains present. Existing string-const and root-property fixes address different shapes."
+    },
+    {
+      "target": "#113130",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different provider contract and repair path; leave open outside this implementation."
+    },
+    {
+      "target": "#78737",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#83361",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve existing primitive compatibility behavior."
+    },
+    {
+      "target": "#86468",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related repaired schema shape, not a fix for object unions."
+    },
+    {
+      "target": "#86712",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical repair whose behavior must remain intact."
+    },
+    {
+      "target": "#128743",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct normalization owner and schema shape."
+    },
+    {
+      "target": "#128799",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical precedent for preserving parent constraints; no action on the merged PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143790",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143790",
+      "candidate_fix": null,
+      "reason": "A bounded new fix PR is appropriate. Artifact preparation can proceed despite this worker's implementation restrictions."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143790",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#143790",
+      "candidate_fix": null,
+      "reason": "PR creation awaits executor reproduction using the complete issue fixture, implementation, focused validation, and review. No public mutation was attempted."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 6,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 6,
+    "blocked": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#143790",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
