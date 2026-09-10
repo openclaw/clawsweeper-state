@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T03:33:04.955Z",
+  "updated_at": "2026-09-10T03:33:28.075Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5481075273:2026-08-31T16:10:32Z:re_review",
-      "comment_id": "5481075273",
-      "comment_version_key": "5481075273:2026-08-31T16:10:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5481075273",
-      "comment_created_at": "2026-08-31T16:10:32Z",
-      "comment_updated_at": "2026-08-31T16:10:32Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T22:42:08.458Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5601996123:2026-09-09T12:41:43Z:re_review",
       "comment_id": "5601996123",
@@ -33088,6 +33061,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143648:5612291781:2026-09-10T03:32:29Z:clawsweeper_needs_human",
+      "comment_id": "5612291781",
+      "comment_version_key": "5612291781:2026-09-10T03:32:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143648#issuecomment-5612291781",
+      "comment_created_at": "2026-09-10T03:32:29Z",
+      "comment_updated_at": "2026-09-10T03:32:29Z",
+      "comment_body_sha256": "b5b54865fa5c04ec3f758505d73b86da71c68737cc78b10bfb096a7b11d92f4d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143648,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: show the real native TLS/WebSocket path rejecting another authority before sending upgrade credentials, alongsi...; Review finding: [P1] Preserve the session authority check in the Network TLS path — apps/shared/OpenClawKit/Sources/OpenClawKit/GatewayTLSPinning.swift:882-889 - [P1] Honor the ex... (sha=a823f8b000369169a0dc271a86df478cc79c34d6)",
+      "expected_head_sha": "a823f8b000369169a0dc271a86df478cc79c34d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T03:33:28.075Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ios-gateway-sni-host",
+        "head_sha": "a823f8b000369169a0dc271a86df478cc79c34d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
