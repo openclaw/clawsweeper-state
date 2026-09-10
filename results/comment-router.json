@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T07:27:43.601Z",
+  "updated_at": "2026-09-10T07:27:56.981Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126775:5377755395:2026-08-22T04:02:24Z:re_review",
-      "comment_id": "5377755395",
-      "comment_version_key": "5377755395:2026-08-22T04:02:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5377755395",
-      "comment_created_at": "2026-08-22T04:02:24Z",
-      "comment_updated_at": "2026-08-22T04:02:24Z",
-      "comment_body_sha256": "e5480f4ef3ecb2b7a8d39ed1bc33da4519c72f46b6f494baaad86f57cbe039b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126775,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T02:50:48.570Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142877:5597824837:2026-09-09T07:17:58Z:re_review",
       "comment_id": "5597824837",
@@ -32521,6 +32494,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143768:5614246017:2026-09-10T07:27:04Z:clawsweeper_needs_human",
+      "comment_id": "5614246017",
+      "comment_version_key": "5614246017:2026-09-10T07:27:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143768#issuecomment-5614246017",
+      "comment_created_at": "2026-09-10T06:35:35Z",
+      "comment_updated_at": "2026-09-10T07:27:04Z",
+      "comment_body_sha256": "728c477e9a4f424a22041e25499ac1c63a7b5b2d41d18dcad6250488788f80a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The intentionally stricter CLI contract can prevent inspecting or stopping existing leases when only an outdated binary exists and managed installation cannot complete; restricted hos... (sha=f9c20162ab0c29628c4b6dbb9c3edac25800c6dd)",
+      "expected_head_sha": "f9c20162ab0c29628c4b6dbb9c3edac25800c6dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T07:27:56.981Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/crabbox-managed-latest",
+        "head_sha": "f9c20162ab0c29628c4b6dbb9c3edac25800c6dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
