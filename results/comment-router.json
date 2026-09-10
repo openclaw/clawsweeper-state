@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T10:48:43.049Z",
+  "updated_at": "2026-09-10T10:49:04.715Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142888:5597190842:2026-09-10T06:44:38Z:clawsweeper_needs_human",
-      "comment_id": "5597190842",
-      "comment_version_key": "5597190842:2026-09-10T06:44:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142888#issuecomment-5597190842",
-      "comment_created_at": "2026-09-09T06:36:30Z",
-      "comment_updated_at": "2026-09-10T06:44:38Z",
-      "comment_body_sha256": "e2b90a247beb940065f9cbe6f33df812ce9c4f784d1015ff1b29232fd847f99e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Enabling the setting can suppress intentional repeated assistant text from live events and final content; the demonstrated final-answer preservation applies to the tested structured-r... (sha=a78d373546700296471d85e4c05d61387d2c1c40)",
-      "expected_head_sha": "a78d373546700296471d85e4c05d61387d2c1c40",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T06:52:12.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-completions-cumulative-delta-replay",
-        "head_sha": "a78d373546700296471d85e4c05d61387d2c1c40",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143502:5610356837:2026-09-10T06:51:25Z:clawsweeper_needs_human",
       "comment_id": "5610356837",
@@ -32385,6 +32352,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123837:5616371594:2026-09-10T10:48:07Z:re_review",
+      "comment_id": "5616371594",
+      "comment_version_key": "5616371594:2026-09-10T10:48:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123837#issuecomment-5616371594",
+      "comment_created_at": "2026-09-10T09:31:13Z",
+      "comment_updated_at": "2026-09-10T10:48:07Z",
+      "comment_body_sha256": "269105d6b624ef2b327a7d7b09f7c68cc8fd50ab0e073336c98765c50f585a11",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123837,
+      "author": "clawSean",
+      "author_id": 260045960,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T10:49:02.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-copy-text-buttons",
+        "head_sha": "8c59919aa1acfcc1d87f22bf5cfa708ad1112fab",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
