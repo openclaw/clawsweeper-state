@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:52:57.112Z",
+  "updated_at": "2026-09-10T04:54:43.578Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1518:5610848753:2026-09-10T00:38:38Z:re_review",
-      "comment_id": "5610848753",
-      "comment_version_key": "5610848753:2026-09-10T00:38:38Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1518#issuecomment-5610848753",
-      "comment_created_at": "2026-09-10T00:38:38Z",
-      "comment_updated_at": "2026-09-10T00:38:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1518,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:45:59.391Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/review-tree-blob-metadata",
-        "head_sha": "fef77a67db3de58445e229e5dfbacbdde8eb0e74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1518:5610886379:2026-09-10T00:44:59Z:clawsweeper_needs_human",
       "comment_id": "5610886379",
@@ -32396,6 +32349,39 @@
         "kind": "pull_request",
         "branch": "fix/skill-workshop-dangling-index",
         "head_sha": "f889e859a2cbd94036a0c00e9d27773e699c2705",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143700:5613379492:2026-09-10T04:53:39Z:clawsweeper_auto_repair",
+      "comment_id": "5613379492",
+      "comment_version_key": "5613379492:2026-09-10T04:53:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143700#issuecomment-5613379492",
+      "comment_created_at": "2026-09-10T04:53:39Z",
+      "comment_updated_at": "2026-09-10T04:53:39Z",
+      "comment_body_sha256": "45ce9ef362c47daf178398fe46b39298526a9fd18cf5084060a17020b0c5fb6a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143700,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=76fe4aa26366eda0398b75ebcb46260dbb0e1939)",
+      "expected_head_sha": "76fe4aa26366eda0398b75ebcb46260dbb0e1939",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:54:43.578Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/normalize-union-scalar-143646",
+        "head_sha": "76fe4aa26366eda0398b75ebcb46260dbb0e1939",
         "cluster_id": null,
         "job_path": null
       }
