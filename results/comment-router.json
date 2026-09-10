@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:38:25.739Z",
+  "updated_at": "2026-09-10T04:38:58.427Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143536:5610507488:2026-09-10T00:03:51Z:re_review",
-      "comment_id": "5610507488",
-      "comment_version_key": "5610507488:2026-09-10T00:03:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143536#issuecomment-5610507488",
-      "comment_created_at": "2026-09-10T00:03:51Z",
-      "comment_updated_at": "2026-09-10T00:03:51Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143536,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:04:49.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/wave13-labs-tuples",
-        "head_sha": "148a0b175bdee6b090278e53712f5d1767a13c15",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143533:5610507523:2026-09-10T00:03:51Z:re_review",
       "comment_id": "5610507523",
@@ -32812,6 +32765,39 @@
         "kind": "pull_request",
         "branch": "fix/gateway-test-sidecar-race",
         "head_sha": "56b22a371349fea8fdb3c09107cd521d17259f27",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3528:5607483686:2026-09-10T04:38:11Z:clawsweeper_needs_human",
+      "comment_id": "5607483686",
+      "comment_version_key": "5607483686:2026-09-10T04:38:11Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3528#issuecomment-5607483686",
+      "comment_created_at": "2026-09-09T19:25:42Z",
+      "comment_updated_at": "2026-09-10T04:38:11Z",
+      "comment_body_sha256": "5a936c0538ec74c9c9f2a9dc79ac2f8ed03a1170d046700e50a2d92770ec2a9f",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3528,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4b9ee5e081a98e8345e3c41e7adc20869db27149)",
+      "expected_head_sha": "4b9ee5e081a98e8345e3c41e7adc20869db27149",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:38:58.427Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/codex-activity-aggregate-read",
+        "head_sha": "4b9ee5e081a98e8345e3c41e7adc20869db27149",
         "cluster_id": null,
         "job_path": null
       }
