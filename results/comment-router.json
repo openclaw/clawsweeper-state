@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:20:07.095Z",
+  "updated_at": "2026-09-10T05:20:31.313Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119056:5611379996:2026-09-10T01:40:56Z:re_review",
-      "comment_id": "5611379996",
-      "comment_version_key": "5611379996:2026-09-10T01:40:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5611379996",
-      "comment_created_at": "2026-09-10T01:40:56Z",
-      "comment_updated_at": "2026-09-10T01:40:56Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T01:42:17.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "1befc28fe5c1eb92ff64565d6ef2605750814240",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143534:5611381780:2026-09-10T01:41:09Z:clawsweeper_needs_human",
       "comment_id": "5611381780",
@@ -31776,6 +31729,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-cron-legacy-enabled-maintenance",
         "head_sha": "3518e5a07b14452aaecff0a531e50b6c3d7f192e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143327:5607101972:2026-09-10T05:19:39Z:clawsweeper_needs_human",
+      "comment_id": "5607101972",
+      "comment_version_key": "5607101972:2026-09-10T05:19:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5607101972",
+      "comment_created_at": "2026-09-09T18:54:48Z",
+      "comment_updated_at": "2026-09-10T05:19:39Z",
+      "comment_body_sha256": "391be14951fa1be5cf79fe7b9b4f442e25ee8a7bd6f768f6fb81a40fe5ea7492",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143327,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the timeout owner is exercised through runEmbeddedAttempt, but fake timers and a mocked session establi... (sha=3582d62d1be40fa3631fe319b98b508151e6360b)",
+      "expected_head_sha": "3582d62d1be40fa3631fe319b98b508151e6360b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T05:20:31.313Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
+        "head_sha": "3582d62d1be40fa3631fe319b98b508151e6360b",
         "cluster_id": null,
         "job_path": null
       }
