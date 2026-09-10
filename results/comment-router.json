@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:47:35.814Z",
+  "updated_at": "2026-09-10T04:47:42.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw-windows-node:1232:5610740211:2026-09-10T00:27:39Z:re_review",
-      "comment_id": "5610740211",
-      "comment_version_key": "5610740211:2026-09-10T00:27:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1232#issuecomment-5610740211",
-      "comment_created_at": "2026-09-10T00:27:39Z",
-      "comment_updated_at": "2026-09-10T00:27:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1232,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:28:35.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/local-ai-onboarding-resume",
-        "head_sha": "4081b92f94c15b2587e87a2b3e5df7986d492eaa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142151:5610740929:2026-09-10T00:27:43Z:re_review",
       "comment_id": "5610740929",
@@ -32504,6 +32457,39 @@
         "kind": "pull_request",
         "branch": "fix/review-tree-metadata-output",
         "head_sha": "270b2471a67a9fcf8e978718546fbc745b9f1be6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143538:5611517302:2026-09-10T04:41:10Z:clawsweeper_needs_human",
+      "comment_id": "5611517302",
+      "comment_version_key": "5611517302:2026-09-10T04:41:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143538#issuecomment-5611517302",
+      "comment_created_at": "2026-09-10T01:58:27Z",
+      "comment_updated_at": "2026-09-10T04:41:10Z",
+      "comment_body_sha256": "1785e7ba7423e488b30405276797f673e1e96ec2d738def79e0accfc48c1e94d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143538,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On a Git installation with newer source metadata than its built runtime, external plugins previously admitted using the source version can now be skipped. The submitted validation doe... (sha=853d0c0258d2de21333de416d98307e2fba99d01)",
+      "expected_head_sha": "853d0c0258d2de21333de416d98307e2fba99d01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:47:42.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-build-visibility",
+        "head_sha": "853d0c0258d2de21333de416d98307e2fba99d01",
         "cluster_id": null,
         "job_path": null
       }
