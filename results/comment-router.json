@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T08:49:09.101Z",
+  "updated_at": "2026-09-10T08:49:24.170Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142522:5613320538:2026-09-10T04:46:37Z:re_review",
-      "comment_id": "5613320538",
-      "comment_version_key": "5613320538:2026-09-10T04:46:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142522#issuecomment-5613320538",
-      "comment_created_at": "2026-09-10T04:46:37Z",
-      "comment_updated_at": "2026-09-10T04:46:37Z",
-      "comment_body_sha256": "1cc749045468821266b176a59f13e6b6649f72b7e762252ca6563d733c50d5e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142522,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T04:47:51.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-workshop-dangling-index",
-        "head_sha": "f889e859a2cbd94036a0c00e9d27773e699c2705",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132453:5613332682:2026-09-10T04:47:47Z:re_review",
       "comment_id": "5613332682",
@@ -32564,6 +32517,39 @@
         "head_sha": "d5f7778480f01d0206072fb78a8969f3407d6d15",
         "cluster_id": "automerge-openclaw-openclaw-92230",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-92230.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143883:5615830706:2026-09-10T08:48:32Z:clawsweeper_needs_human",
+      "comment_id": "5615830706",
+      "comment_version_key": "5615830706:2026-09-10T08:48:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143883#issuecomment-5615830706",
+      "comment_created_at": "2026-09-10T08:48:32Z",
+      "comment_updated_at": "2026-09-10T08:48:32Z",
+      "comment_body_sha256": "c7816a67308301c7ffb40a5044d31a5ba82ba2a6029bf0fd846bd4d60dbef1d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143883,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0258675761399d6e70d6b986b6bb4e8e8678b9c5)",
+      "expected_head_sha": "0258675761399d6e70d6b986b6bb4e8e8678b9c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T08:49:24.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/handoff-ci-fixture-isolation-a265",
+        "head_sha": "0258675761399d6e70d6b986b6bb4e8e8678b9c5",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
