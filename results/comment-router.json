@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T19:46:21.665Z",
+  "updated_at": "2026-09-10T19:47:47.169Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T14:30:00Z:clawsweeper_auto_repair",
-      "comment_id": "5592569053",
-      "comment_version_key": "5592569053:2026-09-10T14:30:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
-      "comment_created_at": "2026-09-08T22:12:20Z",
-      "comment_updated_at": "2026-09-10T14:30:00Z",
-      "comment_body_sha256": "c5fea436c7b824ff34773b69fd37c43ff1363c46ef5e7ac968f68f090aed2372",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142626,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
-      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-      "finding_id": "review-feedback",
-      "status": "waiting",
-      "processed_at": "2026-09-10T14:34:23.861Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-capability-refresh",
-        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-        "cluster_id": "automerge-openclaw-openclaw-142626",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "active",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144102:5620281967:2026-09-10T14:33:38Z:clawsweeper_needs_human",
       "comment_id": "5620281967",
@@ -32122,6 +32075,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:180:5610457420:2026-09-10T19:46:42Z:clawsweeper_needs_human",
+      "comment_id": "5610457420",
+      "comment_version_key": "5610457420:2026-09-10T19:46:42Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/180#issuecomment-5610457420",
+      "comment_created_at": "2026-09-09T23:58:15Z",
+      "comment_updated_at": "2026-09-10T19:46:42Z",
+      "comment_body_sha256": "70bf898e555328016f6174c603971f958bfef89dc4ba88175db0f0baeb196cd6",
+      "repo": "openclaw/ocm",
+      "issue_number": 180,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Saving a borrowed binding makes the shared registry unreadable to older OCM binaries. An incompatible running daemon requires an explicitly acknowledged refresh that restarts managed... (sha=a9095020b96e2b6da75cc6aa417159b8b3bbe54b)",
+      "expected_head_sha": "a9095020b96e2b6da75cc6aa417159b8b3bbe54b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T19:47:47.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-borrowed-source",
+        "head_sha": "a9095020b96e2b6da75cc6aa417159b8b3bbe54b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
