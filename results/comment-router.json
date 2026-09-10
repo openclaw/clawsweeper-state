@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:55:22.459Z",
+  "updated_at": "2026-09-10T04:55:36.377Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1232:5419453107:2026-09-10T00:46:11Z:clawsweeper_auto_repair",
-      "comment_id": "5419453107",
-      "comment_version_key": "5419453107:2026-09-10T00:46:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1232#issuecomment-5419453107",
-      "comment_created_at": "2026-08-26T01:45:40Z",
-      "comment_updated_at": "2026-09-10T00:46:11Z",
-      "comment_body_sha256": "55939bc53807b2b2a5aa3d66f4bfe1f25c552679efc21c98992fef3b8e58dcc1",
-      "repo": "openclaw/openclaw-windows-node",
-      "issue_number": 1232,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=976e3afe485cb60784063919bcfa548e6f66abcc)",
-      "expected_head_sha": "976e3afe485cb60784063919bcfa548e6f66abcc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T00:47:24.485Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/local-ai-onboarding-resume",
-        "head_sha": "976e3afe485cb60784063919bcfa548e6f66abcc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143577:5610963663:2026-09-10T00:49:19Z:re_review",
       "comment_id": "5610963663",
@@ -32385,6 +32352,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/endor-clawsweeper-e2e:2:5610995404:2026-09-10T04:54:30Z:clawsweeper_auto_merge",
+      "comment_id": "5610995404",
+      "comment_version_key": "5610995404:2026-09-10T04:54:30Z",
+      "comment_url": "https://github.com/openclaw/endor-clawsweeper-e2e/pull/2#issuecomment-5610995404",
+      "comment_created_at": "2026-09-10T00:52:28Z",
+      "comment_updated_at": "2026-09-10T04:54:30Z",
+      "comment_body_sha256": "d567c080da716b2cf45d9694ace414b5c35fab15ed57607f6ecda4208066ba0c",
+      "repo": "openclaw/endor-clawsweeper-e2e",
+      "issue_number": 2,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=5b3495b31a5bc82948cf80cf25d7b15c97e14a22)",
+      "expected_head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T04:55:36.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.5",
+        "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
+        "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
