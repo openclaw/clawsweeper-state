@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T21:04:23.197Z",
+  "updated_at": "2026-09-10T21:04:28.045Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143468:5621318147:2026-09-10T15:38:07Z:re_review",
-      "comment_id": "5621318147",
-      "comment_version_key": "5621318147:2026-09-10T15:38:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143468#issuecomment-5621318147",
-      "comment_created_at": "2026-09-10T15:38:07Z",
-      "comment_updated_at": "2026-09-10T15:38:07Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143468,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T15:39:05.735Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-emulator-apt-source-isolation",
-        "head_sha": "a008a186793a5484e509865ac26c4218f2092d12",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143959:5621318823:2026-09-10T15:38:10Z:re_review",
       "comment_id": "5621318823",
@@ -32773,6 +32726,39 @@
         "kind": "pull_request",
         "branch": "karkarl-seed-design-system-v3",
         "head_sha": "cc86739888f9a58d762534c75ed3a8423e6162a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143781:5614349479:2026-09-10T21:03:23Z:clawsweeper_auto_repair",
+      "comment_id": "5614349479",
+      "comment_version_key": "5614349479:2026-09-10T21:03:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143781#issuecomment-5614349479",
+      "comment_created_at": "2026-09-10T06:46:22Z",
+      "comment_updated_at": "2026-09-10T21:03:23Z",
+      "comment_body_sha256": "984c38ce47c0c849ca4d7d35cf30e1b01fb464c2eb07dc2ec369373cef67cac1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143781,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=105d141f26d0822292d5f94a184b5de4a73bc79a)",
+      "expected_head_sha": "105d141f26d0822292d5f94a184b5de4a73bc79a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T21:04:28.045Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-catalog-canonical-auth-20260910",
+        "head_sha": "105d141f26d0822292d5f94a184b5de4a73bc79a",
         "cluster_id": null,
         "job_path": null
       }
