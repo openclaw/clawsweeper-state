@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T13:53:53.451Z",
+  "updated_at": "2026-09-10T13:54:01.059Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136984:5521481440:2026-09-03T06:24:25Z:re_review",
-      "comment_id": "5521481440",
-      "comment_version_key": "5521481440:2026-09-03T06:24:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136984#issuecomment-5521481440",
-      "comment_created_at": "2026-09-03T06:24:25Z",
-      "comment_updated_at": "2026-09-03T06:24:25Z",
-      "comment_body_sha256": "762ac32ec8cb91e52d8eea72dce84eb4611b8095d9159c65363b15c8f49f9eaa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136984,
-      "author": "linhongyu510",
-      "author_id": 204567536,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T09:06:35.550Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:136984:5522106245:2026-09-03T07:22:23Z:re_review",
       "comment_id": "5522106245",
@@ -32891,6 +32864,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T13:53:53.451Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144065:5619424188:2026-09-10T13:47:07Z:clawsweeper_needs_human",
+      "comment_id": "5619424188",
+      "comment_version_key": "5619424188:2026-09-10T13:47:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144065#issuecomment-5619424188",
+      "comment_created_at": "2026-09-10T13:25:58Z",
+      "comment_updated_at": "2026-09-10T13:47:07Z",
+      "comment_body_sha256": "b4c7bb208c34509023cf7aa9c6cccd85bb0b43e10c4477c656ce2463a999bac4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144065,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence covers planner/apply tests with mocked prompts or runtime preparation, but does not show this branch's real configure → a...; Review finding: [P1] Make shared plans rejectable by older readers — src/secrets/configure-plan.ts:304-305 - [P2] Separate shared-owner keys from agent IDs — src/secrets/configure... (sha=249dd45e2692baba6b6818f496b525902f631cfa)",
+      "expected_head_sha": "249dd45e2692baba6b6818f496b525902f631cfa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T13:54:01.059Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-143262-descr",
+        "head_sha": "249dd45e2692baba6b6818f496b525902f631cfa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
