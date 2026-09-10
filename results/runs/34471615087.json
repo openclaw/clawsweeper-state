@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143980",
+  "mode": "autonomous",
+  "run_id": "34471615087",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34471615087",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143980.md",
+  "published_at": "2026-09-10T11:47:01.019Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_pr": null,
+  "summary": "Confirmed the defective source path on preflight main 2f8cd215e92320703237b8def415b691f15f3b56. Prepared a narrow fix plan. Implementation, failing regression, validation, and Docker acceptance proof remain blocked by this read-only checkout with no installed dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143980",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "The explicit container-path defect remains supported by current source. No hydrated PR owns this repair; implementation requires an execution environment that permits writes and dependencies."
+    },
+    {
+      "target": "#123585",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct workflow and root cause. Preserve @Chinmayrawat15's PR unchanged; its repair and review belong to a separate cluster."
+    },
+    {
+      "target": "#92827",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine only this attachment-delivery item for central OpenClaw security handling without public mutation. It is not a dependency of the task-suggestion repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143980",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Applying it is blocked on writable execution; establish a failing regression before production edits and stop if it does not reproduce."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
