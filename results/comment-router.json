@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T23:59:11.570Z",
+  "updated_at": "2026-09-10T23:59:16.810Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143670:5623143989:2026-09-10T17:59:58Z:re_review",
-      "comment_id": "5623143989",
-      "comment_version_key": "5623143989:2026-09-10T17:59:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143670#issuecomment-5623143989",
-      "comment_created_at": "2026-09-10T17:59:58Z",
-      "comment_updated_at": "2026-09-10T17:59:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143670,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T18:01:34.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-cron-legacy-enabled-maintenance",
-        "head_sha": "5f5d662a101c86c2615c6eb677e26c51ccbed040",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144257:5623153959:2026-09-10T18:00:47Z:clawsweeper_needs_human",
       "comment_id": "5623153959",
@@ -33711,6 +33664,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141777:5578232387:2026-09-10T23:58:20Z:clawsweeper_needs_human",
+      "comment_id": "5578232387",
+      "comment_version_key": "5578232387:2026-09-10T23:58:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141777#issuecomment-5578232387",
+      "comment_created_at": "2026-09-08T02:33:38Z",
+      "comment_updated_at": "2026-09-10T23:58:20Z",
+      "comment_body_sha256": "d9e1c25d5286c6aa962304de623e8ed7db428a50db1f646465d33c47e5e730b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141777,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Have the assigned reviewer confirm acceptance or narrow the five native history-query flags. (sha=404bdb96b3c7f5d2c5569792f282f51826faf7d8)",
+      "expected_head_sha": "404bdb96b3c7f5d2c5569792f282f51826faf7d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T23:59:16.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/cron-runs-query-page-20260908",
+        "head_sha": "404bdb96b3c7f5d2c5569792f282f51826faf7d8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
