@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144325",
+  "mode": "autonomous",
+  "run_id": "34520663217",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34520663217",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144325.md",
+  "published_at": "2026-09-10T19:43:16.433Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144325",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144325",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow Doctor migration-order repair at preflight main bda26b81055406d1b7640895f53033ca4bd0cc0a. Implementation and executable reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed; an executor-ready repair plan follows.",
+  "actions": [
+    {
+      "target": "#144325",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "Keep this issue as the canonical bug. Stabilize migration owner sequencing within Doctor after selection and activation filtering, without altering global precedence or relaxing immutable-plan checks."
+    },
+    {
+      "target": "#142681",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related update-recovery symptoms, but the remaining partial-clone import work is not covered by alias-order normalization."
+    },
+    {
+      "target": "#136045",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical merged work; no closure or branch action."
+    },
+    {
+      "target": "#143138",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical merged work addressing a different refusal mechanism."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144325",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix path is supported by source evidence. The executor must establish the requested failing regression before editing production code."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144325",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144325",
+      "candidate_fix": null,
+      "reason": "Implementation and publication remain blocked until a writable executor reproduces the defect, applies the narrow fix, completes validation and review, and captures isolated CLI recovery."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
