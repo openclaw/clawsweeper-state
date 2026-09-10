@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144357",
+  "mode": "autonomous",
+  "run_id": "34525356439",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34525356439",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144357.md",
+  "published_at": "2026-09-10T21:00:40.493Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144357",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144357",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow transcript stdout repair plan. Source inspection supports the reported defect, but implementation and failing-regression proof are blocked by the read-only host. Local HEAD differs from preflight main; the executor must refresh main and reproduce before editing.",
+  "actions": [
+    {
+      "target": "#144357",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144357",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable execution host to create isolated SQLite fixtures and establish the required failing regression. Refresh main and recheck PR ownership before starting; stop if the defect no longer reproduces."
+    },
+    {
+      "target": "#128299",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#129954",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged historical context, not a fix candidate for this issue."
+    },
+    {
+      "target": "#131375",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144357",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144357",
+      "candidate_fix": null,
+      "reason": "A narrow repair fits existing behavior and requires no new configuration, storage contract, or product decision. Execution remains conditional on failing reproduction against refreshed main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 3,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
