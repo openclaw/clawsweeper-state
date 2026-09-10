@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T07:42:15.491Z",
+  "updated_at": "2026-09-10T07:42:51.308Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143583:5611521491:2026-09-10T03:10:11Z:clawsweeper_needs_human",
-      "comment_id": "5611521491",
-      "comment_version_key": "5611521491:2026-09-10T03:10:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143583#issuecomment-5611521491",
-      "comment_created_at": "2026-09-10T01:59:00Z",
-      "comment_updated_at": "2026-09-10T03:10:11Z",
-      "comment_body_sha256": "7912a740c23dd9f705e608f9c2cbd655ac6bea4593a34f40be6286595b9c1147",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143583,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Keep internal hook diagnostics out of caller-facing errors (P2)** - When a hook includes internal details in cancelReason, this interpolation returns them verbatim to the calling agent or Gateway client. seriali...; Review finding: [P2] Keep internal hook diagnostics out of caller-facing errors — extensions/telegram/src/action-runtime.ts:763-768 - [medium] Raw hook diagnostics become caller-v... (sha=39610e1719c46ca0152d9551c4a6d47b99ab9b9d)",
-      "expected_head_sha": "39610e1719c46ca0152d9551c4a6d47b99ab9b9d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T03:17:06.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sunlit/fix/issue-143461",
-        "head_sha": "39610e1719c46ca0152d9551c4a6d47b99ab9b9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-10T03:14:03Z:clawsweeper_needs_human",
       "comment_id": "5611675668",
@@ -32454,6 +32421,53 @@
         "kind": "pull_request",
         "branch": "fix/qa-profile-timeout-evidence",
         "head_sha": "9b33cb825c48b0d589cfb350b261c44ab8199c55",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143731:5614961549:2026-09-10T07:41:51Z:re_review",
+      "comment_id": "5614961549",
+      "comment_version_key": "5614961549:2026-09-10T07:41:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143731#issuecomment-5614961549",
+      "comment_created_at": "2026-09-10T07:41:51Z",
+      "comment_updated_at": "2026-09-10T07:41:51Z",
+      "comment_body_sha256": "a5a4094a0c1db96b0a800933a5dea73dcc4af422f1511b91d748b0f9d85e8d0a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143731,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T07:42:49.650Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-catalog-polish",
+        "head_sha": "2d9bfb66c5e7aa92960bb4da5482ac833b4f764d",
         "cluster_id": null,
         "job_path": null
       },
