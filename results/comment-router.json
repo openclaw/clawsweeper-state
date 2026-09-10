@@ -2,53 +2,6 @@
   "updated_at": "2026-09-10T04:45:43.962Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:143474:5610664776:2026-09-10T00:19:55Z:re_review",
-      "comment_id": "5610664776",
-      "comment_version_key": "5610664776:2026-09-10T00:19:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143474#issuecomment-5610664776",
-      "comment_created_at": "2026-09-10T00:19:55Z",
-      "comment_updated_at": "2026-09-10T00:19:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143474,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:20:45.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/triage-initial-prompt",
-        "head_sha": "e4a1045c842669509ea914d145d91ea960a2f6b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1321:5535959391:2026-09-10T00:20:23Z:clawsweeper_auto_repair",
       "comment_id": "5535959391",
       "comment_version_key": "5535959391:2026-09-10T00:20:23Z",
@@ -32541,6 +32494,39 @@
         "kind": "pull_request",
         "branch": "codex/android-swarm-fixture-c93ebfb0",
         "head_sha": "608632285db9ad28e04958495ca0e06046d852de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135838:5503790789:2026-09-10T04:44:48Z:clawsweeper_needs_human",
+      "comment_id": "5503790789",
+      "comment_version_key": "5503790789:2026-09-10T04:44:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135838#issuecomment-5503790789",
+      "comment_created_at": "2026-09-02T03:16:53Z",
+      "comment_updated_at": "2026-09-10T04:44:48Z",
+      "comment_body_sha256": "101f737a190224117f046d85f435c3f5415c5527d171bffc352892556e6945ae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135838,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured AWS run reports tests and lint on 39158634e68da1933deab20337114ec6872a43d3 and explicitly excludes...; Review finding: [P1] [P1] Accept the exact prepared allocation selected for the child — src/gateway/worker-environments/worker-session-tool-executor.ts:307-317 - [P1] [P1] Resolve... (sha=6399d718fb1c7c6a02a65cc99116144bb04c2c29)",
+      "expected_head_sha": "6399d718fb1c7c6a02a65cc99116144bb04c2c29",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:45:43.907Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "worker-closure-bound-auth",
+        "head_sha": "6399d718fb1c7c6a02a65cc99116144bb04c2c29",
         "cluster_id": null,
         "job_path": null
       }
