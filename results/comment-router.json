@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:47:43.002Z",
+  "updated_at": "2026-09-10T04:47:45.956Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119055:5610740806:2026-09-10T00:27:43Z:re_review",
-      "comment_id": "5610740806",
-      "comment_version_key": "5610740806:2026-09-10T00:27:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5610740806",
-      "comment_created_at": "2026-09-10T00:27:43Z",
-      "comment_updated_at": "2026-09-10T00:27:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119055,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:28:36.086Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-host-owned-replay-stack-20260804",
-        "head_sha": "3ef72ae37f162a0cfa3284746e8e5d3b5ae8f4a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119057:5610740837:2026-09-10T00:27:43Z:re_review",
       "comment_id": "5610740837",
@@ -32476,6 +32429,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-bundle-hook-components",
         "head_sha": "b66733e32885426994cd3ddfe27f9f2228f47cba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:50:5612844369:2026-09-10T04:40:40Z:clawsweeper_needs_human",
+      "comment_id": "5612844369",
+      "comment_version_key": "5612844369:2026-09-10T04:40:40Z",
+      "comment_url": "https://github.com/openclaw/esp-openclaw-node/pull/50#issuecomment-5612844369",
+      "comment_created_at": "2026-09-10T04:07:51Z",
+      "comment_updated_at": "2026-09-10T04:40:40Z",
+      "comment_body_sha256": "a71acb3323b9035613085e125366fe61dc99aaec78b35c0986d47f7e75190439",
+      "repo": "openclaw/esp-openclaw-node",
+      "issue_number": 50,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Confirm this diagnostic branch is ready to land and mark the draft ready for review. (sha=04cea90c98c14a357b74fba331a1198242e388f4)",
+      "expected_head_sha": "04cea90c98c14a357b74fba331a1198242e388f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:47:45.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "diag/tab5-allocation-failures",
+        "head_sha": "04cea90c98c14a357b74fba331a1198242e388f4",
         "cluster_id": null,
         "job_path": null
       }
