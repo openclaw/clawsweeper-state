@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T23:43:31.934Z",
+  "updated_at": "2026-09-10T23:45:43.585Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-09-05T13:45:24Z:clawsweeper_auto_repair",
-      "comment_id": "5157740894",
-      "comment_version_key": "5157740894:2026-09-05T13:45:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117976#issuecomment-5157740894",
-      "comment_created_at": "2026-08-02T12:07:40Z",
-      "comment_updated_at": "2026-09-05T13:45:24Z",
-      "comment_body_sha256": "2213727e0135149dcb26eb151ed833b7eb9fda3a0e2a6a47928309abb53a30ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2cee673d1a573267c84b41e724d49da7436e497b)",
-      "expected_head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T17:53:07.049Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-90786",
-        "head_sha": "2cee673d1a573267c84b41e724d49da7436e497b",
-        "cluster_id": "automerge-openclaw-openclaw-117976",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117976.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118679:5167057200:2026-09-08T00:31:18Z:clawsweeper_auto_repair",
       "comment_id": "5167057200",
@@ -33535,6 +33502,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:121668:5627018641:2026-09-10T23:44:49Z:re_review",
+      "comment_id": "5627018641",
+      "comment_version_key": "5627018641:2026-09-10T23:44:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121668#issuecomment-5627018641",
+      "comment_created_at": "2026-09-10T23:44:49Z",
+      "comment_updated_at": "2026-09-10T23:44:49Z",
+      "comment_body_sha256": "2298791e3689a36abfb01a54d3027fa69e87a11041114145d1d48559851f2807",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121668,
+      "author": "nvtoroy",
+      "author_id": 90771587,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T23:45:38.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-native-hook-relay-kill-switch",
+        "head_sha": "2b1502d3ac4708d7518dbe241481089b80ac8eeb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
