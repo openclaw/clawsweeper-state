@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143646"
-mode: "autonomous"
-run_id: "34434592660"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34434592660"
-head_sha: "1d41377123e9d796222f3d8014059202ab00ce21"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-10T03:53:25.991Z"
-canonical: "https://github.com/openclaw/openclaw/issues/143646"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/143646"
+mode: "plan"
+run_id: "34435066741"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34435066741"
+head_sha: "b7779fca60b87e196bf5050221cc33860889eded"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-10T03:57:58.998Z"
+canonical: "#143646"
+canonical_issue: "#143646"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34434592660](https://github.com/openclaw/clawsweeper/actions/runs/34434592660)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34435066741](https://github.com/openclaw/clawsweeper/actions/runs/34435066741)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/143646
+Canonical: #143646
 
 ## Summary
 
-Source inspection confirms the analyzer defect on preflight main. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. No files or GitHub state were changed.
+Plan one narrow Control UI fix for #143646. Source inspection supports the reported analyzer defect. Browser reproduction, implementation, and validation remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Source inspection confirms the analyzer defect on preflight main. A narrow fix a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143646 | fix_needed | planned | canonical | A focused existing-behavior repair is supported by current source. Establish a failing actual-form regression before changing production code. |
-| #128275 | keep_closed | skipped | related | Supporting historical context only; broader work remains outside this cluster. |
-| cluster:issue-openclaw-openclaw-143646 | build_fix_artifact | planned | canonical | No viable PR is present in the hydrated inventory; prepare one narrow implementation on the job's designated branch. |
-| cluster:issue-openclaw-openclaw-143646 | open_fix_pr | blocked | canonical | Implementation requires a writable executor checkout with dependencies. Reproduce through analyzeConfigSchema and the actual renderer, implement and validate, then let the deterministic applicator open or update the single PR. |
+| #143646 | fix_needed | planned | canonical | The focused bug has a concrete repair path without a new configuration option or runtime policy change. Reproduce against refreshed main before implementation. |
+| #128275 | keep_closed | skipped | related | Historical supporting context; broader structural-union and map work remains outside this repair. |
 
 ## Needs Human
 
