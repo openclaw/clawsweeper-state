@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143461",
+  "mode": "autonomous",
+  "run_id": "34418746785",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34418746785",
+  "head_sha": "97c9a7b45caf20f6d580fe0ae5cc48db31da15f4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143461.md",
+  "published_at": "2026-09-10T00:42:37.253Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143461",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143461",
+  "canonical_pr": null,
+  "summary": "Verified the defect in source at preflight main 2f80c55e067e16f6758080f8bbade621b8bed4a3. Prepared a narrow fix plan, but implementation and runtime reproduction are blocked by the read-only sandbox and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143461",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "The fix remains justified by current source. Implementation must start with a failing regression in a writable, dependency-ready executor."
+    },
+    {
+      "target": "#57766",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#57843",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Do not reopen, replace, or merge this historical contributor branch."
+    },
+    {
+      "target": "#63011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve closed state and avoid expanding into identity or audit contracts."
+    },
+    {
+      "target": "#137461",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine for central OpenClaw security handling without public mutation. The ordinary Telegram result-projection fix does not depend on this PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143461",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143461",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Applying and validating it is blocked in this worker by filesystem restrictions; the deterministic executor must reproduce before editing and must not publish an unvalidated fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
