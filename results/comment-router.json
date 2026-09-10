@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:47:53.654Z",
+  "updated_at": "2026-09-10T04:48:31.544Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142545:5610752166:2026-09-10T00:28:51Z:re_review",
-      "comment_id": "5610752166",
-      "comment_version_key": "5610752166:2026-09-10T00:28:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142545#issuecomment-5610752166",
-      "comment_created_at": "2026-09-10T00:28:51Z",
-      "comment_updated_at": "2026-09-10T00:28:51Z",
-      "comment_body_sha256": "51d49411b087cad58f5ae22756fb9880f4777a4bf22771701f1559e75b75c52f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142545,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:29:46.181Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-promotion-bootstrap-budget",
-        "head_sha": "a0b1226ed4bce05c06fb0796611a033ed06ff36e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119624:5610752132:2026-09-10T00:28:51Z:re_review",
       "comment_id": "5610752132",
@@ -32451,6 +32404,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143690:5613330334:2026-09-10T04:47:34Z:clawsweeper_needs_human",
+      "comment_id": "5613330334",
+      "comment_version_key": "5613330334:2026-09-10T04:47:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143690#issuecomment-5613330334",
+      "comment_created_at": "2026-09-10T04:47:34Z",
+      "comment_updated_at": "2026-09-10T04:47:34Z",
+      "comment_body_sha256": "068454ecbfc3068291b121af449805da99afb917851698a4a73d6aa7af6f16f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143690,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3c15f7617c55120fb3e271d5d52abfe3632f5964)",
+      "expected_head_sha": "3c15f7617c55120fb3e271d5d52abfe3632f5964",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:48:31.544Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-remaining-runtime-spies",
+        "head_sha": "3c15f7617c55120fb3e271d5d52abfe3632f5964",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
