@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T16:53:28.326Z",
+  "updated_at": "2026-09-10T16:53:33.681Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5618765396:2026-09-10T12:35:49Z:re_review",
-      "comment_id": "5618765396",
-      "comment_version_key": "5618765396:2026-09-10T12:35:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5618765396",
-      "comment_created_at": "2026-09-10T12:35:49Z",
-      "comment_updated_at": "2026-09-10T12:35:49Z",
-      "comment_body_sha256": "5ae6ef0063543e41aa3e3eb7507cd0baafd81e5198e87214af6eac51a26ac339",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T12:37:01.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "76cfb9dbf7df3423ea990e440b022e9047ea3ac9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144039:5618778698:2026-09-10T12:36:54Z:clawsweeper_needs_human",
       "comment_id": "5618778698",
@@ -31691,6 +31644,39 @@
         "kind": "pull_request",
         "branch": "feat/ios-conversation-actions-20260909",
         "head_sha": "1783132409bfac4533fd918421e8f7ff0b1f2bdd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143631:5611923808:2026-09-10T16:52:21Z:clawsweeper_needs_human",
+      "comment_id": "5611923808",
+      "comment_version_key": "5611923808:2026-09-10T16:52:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143631#issuecomment-5611923808",
+      "comment_created_at": "2026-09-10T02:51:55Z",
+      "comment_updated_at": "2026-09-10T16:52:21Z",
+      "comment_body_sha256": "542aab484499edecb48aa611c46584db242f3db8f6d6b7b9cc6a40ef10e84cac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143631,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the production iOS bound transport has a real-Gateway fixture for allowed effects, ACL/profile-loss de...; Review finding: [medium] Complete native denial-before-effect evidence — apps/ios/Tests/NativeActionGatewayWireTests.swift:318 (sha=532a2de2ad6124511e7a545ce0b8f535bb602886)",
+      "expected_head_sha": "532a2de2ad6124511e7a545ce0b8f535bb602886",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T16:53:33.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-voice-20260909",
+        "head_sha": "532a2de2ad6124511e7a545ce0b8f535bb602886",
         "cluster_id": null,
         "job_path": null
       }
