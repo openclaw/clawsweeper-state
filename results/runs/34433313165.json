@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143646",
+  "mode": "autonomous",
+  "run_id": "34433313165",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34433313165",
+  "head_sha": "1d41377123e9d796222f3d8014059202ab00ce21",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143646.md",
+  "published_at": "2026-09-10T03:34:44.624Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/143646",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143646",
+  "canonical_pr": null,
+  "summary": "Confirmed the normalization defect on the preflight main SHA. A narrow fix artifact is ready, but implementation and browser validation are blocked by the read-only workspace and missing dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#143646",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143646",
+      "candidate_fix": null,
+      "reason": "The existing string-or-false setting is still rejected at the analyzer boundary. Implementation requires a writable executor with dependencies and failing full-form regression proof before edits."
+    },
+    {
+      "target": "#128275",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical supporting context; broader union and map work is outside this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-143646",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143646",
+      "candidate_fix": null,
+      "reason": "Prepare one narrowly scoped PR through the executor; reproduce through analyzeConfigSchema and the actual form before changing production code."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
