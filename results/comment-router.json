@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:07:44.849Z",
+  "updated_at": "2026-09-10T05:10:28.910Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135969:5568873531:2026-09-07T09:57:05Z:re_review",
-      "comment_id": "5568873531",
-      "comment_version_key": "5568873531:2026-09-07T09:57:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135969#issuecomment-5568873531",
-      "comment_created_at": "2026-09-07T09:57:05Z",
-      "comment_updated_at": "2026-09-07T09:57:05Z",
-      "comment_body_sha256": "6b3e8e3976ff1e0fbcc2c296ec406eed0add83fe1ec7bf086069be507dce8dbf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135969,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T01:39:26.662Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135969:5569744067:2026-09-07T11:11:13Z:re_review",
       "comment_id": "5569744067",
@@ -31678,6 +31651,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2073:5613503856:2026-09-10T05:09:33Z:clawsweeper_needs_human",
+      "comment_id": "5613503856",
+      "comment_version_key": "5613503856:2026-09-10T05:09:33Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2073#issuecomment-5613503856",
+      "comment_created_at": "2026-09-10T05:09:33Z",
+      "comment_updated_at": "2026-09-10T05:09:33Z",
+      "comment_body_sha256": "5171837fbd63daf373dcdd6aa095f730a5d752e547b27ae9de6e2edb020631a0",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2073,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The CLI and coordinator tests execute generated bootstrap sections against mocked package commands and a fixture browser; they do not show real... (sha=09c1a8ced1aecdc789e4abc05ed1793043c737d8)",
+      "expected_head_sha": "09c1a8ced1aecdc789e4abc05ed1793043c737d8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T05:10:28.910Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/reuse-installed-bootstrap",
+        "head_sha": "09c1a8ced1aecdc789e4abc05ed1793043c737d8",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
