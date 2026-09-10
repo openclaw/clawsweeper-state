@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T00:34:10.720Z",
+  "updated_at": "2026-09-10T00:34:18.230Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143289:5606056287:2026-09-09T18:51:01Z:clawsweeper_needs_human",
-      "comment_id": "5606056287",
-      "comment_version_key": "5606056287:2026-09-09T18:51:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143289#issuecomment-5606056287",
-      "comment_created_at": "2026-09-09T17:30:43Z",
-      "comment_updated_at": "2026-09-09T18:51:01Z",
-      "comment_body_sha256": "81ab240039502d0d954a67587d1d1776809f3099f89feab197be1cc6f1b27b19",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143289,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The controlled 1 ms/104 ms result supports handler ordering but does not exercise the changed OpenAI terminal-response boundary or aud... (sha=d0d641bac734cf0f00d49663e1497faba2ee0719)",
-      "expected_head_sha": "d0d641bac734cf0f00d49663e1497faba2ee0719",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T18:58:45.338Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "john-with-claude/realtime-supervisor-streaming",
-        "head_sha": "d0d641bac734cf0f00d49663e1497faba2ee0719",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143304:5606475559:2026-09-09T18:41:43Z:clawsweeper_auto_repair",
       "comment_id": "5606475559",
@@ -33074,6 +33041,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143518:5610794716:2026-09-10T00:33:16Z:re_review",
+      "comment_id": "5610794716",
+      "comment_version_key": "5610794716:2026-09-10T00:33:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143518#issuecomment-5610794716",
+      "comment_created_at": "2026-09-10T00:33:16Z",
+      "comment_updated_at": "2026-09-10T00:33:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143518,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T00:34:16.297Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1007",
+        "head_sha": "9ec877ce0d8558909f3e45586dd83b3b4b595db1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
