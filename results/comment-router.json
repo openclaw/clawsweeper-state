@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:42:27.566Z",
+  "updated_at": "2026-09-10T04:43:28.507Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142782:5610595509:2026-09-10T00:12:16Z:re_review",
-      "comment_id": "5610595509",
-      "comment_version_key": "5610595509:2026-09-10T00:12:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142782#issuecomment-5610595509",
-      "comment_created_at": "2026-09-10T00:12:16Z",
-      "comment_updated_at": "2026-09-10T00:12:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142782,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:13:19.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-771-unified-plugin-catalog",
-        "head_sha": "4d86fb4baea05a4e5987a5561d73fb907245857e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142712:5610595173:2026-09-10T00:12:14Z:re_review",
       "comment_id": "5610595173",
@@ -32630,6 +32583,39 @@
         "kind": "pull_request",
         "branch": "fix/review-tree-metadata-output",
         "head_sha": "270b2471a67a9fcf8e978718546fbc745b9f1be6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142522:5591872482:2026-09-10T04:42:32Z:clawsweeper_needs_human",
+      "comment_id": "5591872482",
+      "comment_version_key": "5591872482:2026-09-10T04:42:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142522#issuecomment-5591872482",
+      "comment_created_at": "2026-09-08T21:06:43Z",
+      "comment_updated_at": "2026-09-10T04:42:32Z",
+      "comment_body_sha256": "08e967b5915770031f59ec1057427e3fdefb6df03b433c94d3b8cd9dd65cfc07",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts; the integrated result against current main has not been reviewed. (sha=7413faed94895cc4199ec80c8a0d5ab0a483199a)",
+      "expected_head_sha": "7413faed94895cc4199ec80c8a0d5ab0a483199a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:43:28.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-dangling-index",
+        "head_sha": "7413faed94895cc4199ec80c8a0d5ab0a483199a",
         "cluster_id": null,
         "job_path": null
       }
