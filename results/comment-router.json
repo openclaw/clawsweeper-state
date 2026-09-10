@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T08:59:53.878Z",
+  "updated_at": "2026-09-10T09:00:00.898Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5464188402:2026-08-29T18:43:19Z:re_review",
-      "comment_id": "5464188402",
-      "comment_version_key": "5464188402:2026-08-29T18:43:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5464188402",
-      "comment_created_at": "2026-08-29T18:43:19Z",
-      "comment_updated_at": "2026-08-29T18:43:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T05:07:09.089Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5464322150:2026-08-29T19:12:12Z:re_review",
       "comment_id": "5464322150",
@@ -32299,6 +32272,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143587:5611566193:2026-09-10T08:53:17Z:clawsweeper_needs_human",
+      "comment_id": "5611566193",
+      "comment_version_key": "5611566193:2026-09-10T08:53:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143587#issuecomment-5611566193",
+      "comment_created_at": "2026-09-10T02:04:58Z",
+      "comment_updated_at": "2026-09-10T08:53:17Z",
+      "comment_body_sha256": "a16eb5ff220273cb55f90b75cd986ea53b32093d616d0214d0e3ff8b1b9993ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepted input intentionally continues after profile selection changes while its original host/session authority remains valid; explicit owner acceptance of this boundary remains pend... (sha=8f513f11a49e4fe9d8989ba3591cc964c0c58dc7)",
+      "expected_head_sha": "8f513f11a49e4fe9d8989ba3591cc964c0c58dc7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T09:00:00.898Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-profile-binding-20260909",
+        "head_sha": "8f513f11a49e4fe9d8989ba3591cc964c0c58dc7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
