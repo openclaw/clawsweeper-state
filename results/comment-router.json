@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T12:41:57.587Z",
+  "updated_at": "2026-09-10T12:42:05.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119056:5570388270:2026-09-07T12:08:04Z:re_review",
-      "comment_id": "5570388270",
-      "comment_version_key": "5570388270:2026-09-07T12:08:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5570388270",
-      "comment_created_at": "2026-09-07T12:08:04Z",
-      "comment_updated_at": "2026-09-07T12:08:04Z",
-      "comment_body_sha256": "675dc552cd2282f61771afe7ded869b1788a133431e425293e2c76fdb235d847",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T08:09:28.135Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119056:5571748542:2026-09-07T14:01:07Z:re_review",
       "comment_id": "5571748542",
@@ -32811,6 +32784,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T12:41:57.587Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143891:5618832508:2026-09-10T12:41:00Z:clawsweeper_needs_human",
+      "comment_id": "5618832508",
+      "comment_version_key": "5618832508:2026-09-10T12:41:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143891#issuecomment-5618832508",
+      "comment_created_at": "2026-09-10T12:41:00Z",
+      "comment_updated_at": "2026-09-10T12:41:00Z",
+      "comment_body_sha256": "b5c59ac6642014845c8b54c328dc60353b63285dd97a2b249984c5c60fbc36b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143891,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence exercises preparation fixtures and settlement/formatting helpers, but does not show a real CLI backend failure passing th... (sha=c0f8957455a58d953968681953efc682ff4776ef)",
+      "expected_head_sha": "c0f8957455a58d953968681953efc682ff4776ef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T12:42:05.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-143707-cli-billing-auth-mode",
+        "head_sha": "c0f8957455a58d953968681953efc682ff4776ef",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
