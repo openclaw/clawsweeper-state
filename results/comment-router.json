@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T12:35:44.377Z",
+  "updated_at": "2026-09-10T12:36:02.569Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119057:5594450070:2026-09-09T01:38:34Z:re_review",
-      "comment_id": "5594450070",
-      "comment_version_key": "5594450070:2026-09-09T01:38:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119057#issuecomment-5594450070",
-      "comment_created_at": "2026-09-09T01:38:34Z",
-      "comment_updated_at": "2026-09-09T01:38:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119057,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T08:07:54.555Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119057:5596402999:2026-09-09T05:39:37Z:re_review",
       "comment_id": "5596402999",
@@ -32708,6 +32681,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T12:35:44.377Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:190:5615900141:2026-09-10T12:35:01Z:clawsweeper_needs_human",
+      "comment_id": "5615900141",
+      "comment_version_key": "5615900141:2026-09-10T12:35:01Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/190#issuecomment-5615900141",
+      "comment_created_at": "2026-09-10T08:54:09Z",
+      "comment_updated_at": "2026-09-10T12:35:01Z",
+      "comment_body_sha256": "44500ff0e4bbb199384a2e3aab5988c57fa5f73cfaf52f2dbddfa1292ff51fd4",
+      "repo": "openclaw/ocm",
+      "issue_number": 190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing Unix setup emitting unsupported or oversized pnpm telemetry can become an unfinished watch that blocks retry, service start, and destruction until operator verification; t... (sha=50a9664d1015a9468fccf03285b410258ea9673d)",
+      "expected_head_sha": "50a9664d1015a9468fccf03285b410258ea9673d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T12:36:02.569Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-install-observer",
+        "head_sha": "50a9664d1015a9468fccf03285b410258ea9673d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
