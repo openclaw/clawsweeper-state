@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144006",
+  "mode": "plan",
+  "run_id": "34479722282",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34479722282",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144006.md",
+  "published_at": "2026-09-10T13:06:16.293Z",
+  "canonical": "#144006",
+  "canonical_issue": "#144006",
+  "canonical_pr": null,
+  "summary": "Plan one narrow deduplication fix for #144006. Source inspection at preflight main 4229c9953504a27c23570914648e4b16d031ce2a supports the reported direct-delivery gap. Runtime reproduction, implementation, and Telegram proof remain pending: this read-only checkout has no node_modules or built runtime. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144006",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144006",
+      "candidate_fix": null,
+      "reason": "Extend existing final-payload deduplication to consume successful same-assistant-message caption delivery evidence. None of the hydrated PRs covers this exact failure."
+    },
+    {
+      "target": "#137329",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#144006",
+      "candidate_fix": null,
+      "reason": "Distinct text-loss defect with useful contributor work; do not replace or modify this PR for #144006."
+    },
+    {
+      "target": "#133968",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144006",
+      "candidate_fix": null,
+      "reason": "Historical context for successful-delivery accounting, not a fix for duplicate final text."
+    },
+    {
+      "target": "#140289",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144006",
+      "candidate_fix": null,
+      "reason": "Historical delivery-format repair; it does not resolve caption-versus-final duplication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

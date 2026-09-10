@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144006"
-mode: "autonomous"
-run_id: "34474471177"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34474471177"
+mode: "plan"
+run_id: "34479722282"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34479722282"
 head_sha: "fcaef5fe567b5ae6698d44c37357e12fd3bad60f"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-10T12:49:17.585Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144006"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/144006"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-10T13:06:16.293Z"
+canonical: "#144006"
+canonical_issue: "#144006"
 canonical_pr: null
-actions_total: 2
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34474471177](https://github.com/openclaw/clawsweeper/actions/runs/34474471177)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34479722282](https://github.com/openclaw/clawsweeper/actions/runs/34479722282)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144006
+Canonical: #144006
 
 ## Summary
 
-Source inspection supports the reported deduplication defect on preflight main. Implementation and executable reproduction are blocked by the read-only host and missing dependencies. A narrow executor fix plan is prepared; no files or GitHub state changed.
+Plan one narrow deduplication fix for #144006. Source inspection at preflight main 4229c9953504a27c23570914648e4b16d031ce2a supports the reported direct-delivery gap. Runtime reproduction, implementation, and Telegram proof remain pending: this read-only checkout has no node_modules or built runtime. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,10 @@ Source inspection supports the reported deduplication defect on preflight main. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144006 | fix_needed | blocked | canonical | The host prohibits filesystem writes, so dependencies cannot be installed and a failing regression or patch cannot be added. Telegram proof also lacks a dependency-ready runtime. Continue in an authorized writable executor; establish the requested failing regression before implementation. |
-| cluster:issue-openclaw-openclaw-144006 | build_fix_artifact | planned | canonical | A narrow ordinary bug fix appears viable without new configuration, features, persistence, or product policy. Publication remains conditional on reproduction and validation. |
+| #144006 | fix_needed | planned | canonical | Extend existing final-payload deduplication to consume successful same-assistant-message caption delivery evidence. None of the hydrated PRs covers this exact failure. |
+| #137329 | keep_related | planned | related | Distinct text-loss defect with useful contributor work; do not replace or modify this PR for #144006. |
+| #133968 | keep_closed | skipped | related | Historical context for successful-delivery accounting, not a fix for duplicate final text. |
+| #140289 | keep_closed | skipped | related | Historical delivery-format repair; it does not resolve caption-versus-final duplication. |
 
 ## Needs Human
 
