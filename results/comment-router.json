@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:41:31.921Z",
+  "updated_at": "2026-09-10T04:42:27.566Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142713:5610595331:2026-09-10T00:12:15Z:re_review",
-      "comment_id": "5610595331",
-      "comment_version_key": "5610595331:2026-09-10T00:12:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142713#issuecomment-5610595331",
-      "comment_created_at": "2026-09-10T00:12:15Z",
-      "comment_updated_at": "2026-09-10T00:12:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142713,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:13:19.169Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-771-plugin-detail-tabs",
-        "head_sha": "a7e078b39946ca3fae6c1f4f1f87574ca7f2d302",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142782:5610595509:2026-09-10T00:12:16Z:re_review",
       "comment_id": "5610595509",
@@ -32644,6 +32597,39 @@
         "kind": "pull_request",
         "branch": "jesse/provider-profile-usage",
         "head_sha": "3dc269ed88667762ddbd3c53640f8bdf037b8161",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1522:5611688661:2026-09-10T04:41:21Z:clawsweeper_needs_human",
+      "comment_id": "5611688661",
+      "comment_version_key": "5611688661:2026-09-10T04:41:21Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1522#issuecomment-5611688661",
+      "comment_created_at": "2026-09-10T02:20:58Z",
+      "comment_updated_at": "2026-09-10T04:41:21Z",
+      "comment_body_sha256": "bccb848118d6de4ec87532ca0d675215073113ff449a53af8e610e524ffef034",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add current-head production historical-hydration proof to the PR body, including command, environment, pinned revisions, observed completion, artifact, and limits; redact credentials... (sha=270b2471a67a9fcf8e978718546fbc745b9f1be6)",
+      "expected_head_sha": "270b2471a67a9fcf8e978718546fbc745b9f1be6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:42:27.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/review-tree-metadata-output",
+        "head_sha": "270b2471a67a9fcf8e978718546fbc745b9f1be6",
         "cluster_id": null,
         "job_path": null
       }
