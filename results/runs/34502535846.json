@@ -1,0 +1,80 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144124",
+  "mode": "plan",
+  "run_id": "34502535846",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34502535846",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144124.md",
+  "published_at": "2026-09-10T16:57:53.007Z",
+  "canonical": "#144124",
+  "canonical_issue": "#144124",
+  "canonical_pr": "#144136",
+  "summary": "Retain #144124 and contributor PR #144136 as the canonical diagnostic fix path. The hydrated PR has passing CI and favorable review; a competing implementation PR is unwarranted. Main still contains the reported failure path. No code or GitHub mutations were made, and no runtime tests were run.",
+  "actions": [
+    {
+      "target": "#144124",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144124",
+      "candidate_fix": "#144136",
+      "reason": "Keep the issue open while the existing contributor PR owns validation and follow-up."
+    },
+    {
+      "target": "#144136",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144136",
+      "candidate_fix": null,
+      "reason": "Preserve LiuwqGit's implementation and attribution. No concrete repair blocker justifies creating a competing PR; retention does not assert merge readiness."
+    },
+    {
+      "target": "#138432",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#144124",
+      "candidate_fix": null,
+      "reason": "Different failure path and remaining work; retain separately from the diagnostic fix."
+    },
+    {
+      "target": "#138691",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer this exact PR to central OpenClaw security handling without mutation. It does not block the separate diagnostic fix."
+    },
+    {
+      "target": "#87953",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Conservatively refer this enrollment-policy item to central OpenClaw security handling; no vulnerability verdict or public mutation is proposed."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_related": 1,
+    "route_security": 2
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
