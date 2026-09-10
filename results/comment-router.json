@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T07:24:09.783Z",
+  "updated_at": "2026-09-10T07:25:27.534Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126775:5369474942:2026-08-21T11:52:52Z:re_review",
-      "comment_id": "5369474942",
-      "comment_version_key": "5369474942:2026-08-21T11:52:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126775#issuecomment-5369474942",
-      "comment_created_at": "2026-08-21T11:52:52Z",
-      "comment_updated_at": "2026-08-21T11:52:52Z",
-      "comment_body_sha256": "b6aa241080fc131c2ba87d0d6037f6dcedf1bb496ee1345a2b4d2f0db2a7d265",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126775,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T02:50:48.570Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126775:5377235517:2026-08-22T01:59:00Z:re_review",
       "comment_id": "5377235517",
@@ -32483,6 +32456,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143635:5612000099:2026-09-10T07:24:27Z:clawsweeper_needs_human",
+      "comment_id": "5612000099",
+      "comment_version_key": "5612000099:2026-09-10T07:24:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143635#issuecomment-5612000099",
+      "comment_created_at": "2026-09-10T03:02:13Z",
+      "comment_updated_at": "2026-09-10T07:24:27Z",
+      "comment_body_sha256": "51378a289cb7c703bf84fc6217f27d70fbf6908510b0bb01a9b914608beca964",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143635,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the revised queued-execution test verifies the real running transition but mocks execution and queueMessage; it... (sha=42523d32df29426407a4a636345351fafa9c74b2)",
+      "expected_head_sha": "42523d32df29426407a4a636345351fafa9c74b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T07:25:27.534Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pash/slack-steering-progress",
+        "head_sha": "42523d32df29426407a4a636345351fafa9c74b2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
