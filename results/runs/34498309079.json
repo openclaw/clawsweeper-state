@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144150",
+  "mode": "autonomous",
+  "run_id": "34498309079",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34498309079",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144150.md",
+  "published_at": "2026-09-10T16:29:20.428Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144150",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144150",
+  "canonical_pr": null,
+  "summary": "Reproduced both sanitizer defects on preflight main 938b85449a9f6904e9b400ce183bf21e85020158. Prepared one narrow implementation artifact. No files or GitHub state were changed; implementation and full validation require the executor's writable checkout.",
+  "actions": [
+    {
+      "target": "#144150",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144150",
+      "candidate_fix": null,
+      "reason": "Both reported defects remain reproducible, and the existing shared sanitizer provides a bounded repair path."
+    },
+    {
+      "target": "#132940",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve its allocation improvements."
+    },
+    {
+      "target": "#141726",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; retain the shared scanner and its bounded-search behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144150",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144150",
+      "candidate_fix": null,
+      "reason": "A new focused PR is appropriate; neither historical merged PR is an open repair candidate."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#144150",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
