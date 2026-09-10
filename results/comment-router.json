@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T15:37:38.590Z",
+  "updated_at": "2026-09-10T15:39:07.996Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T10:56:12Z:clawsweeper_auto_repair",
-      "comment_id": "5592569053",
-      "comment_version_key": "5592569053:2026-09-10T10:56:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
-      "comment_created_at": "2026-09-08T22:12:20Z",
-      "comment_updated_at": "2026-09-10T10:56:12Z",
-      "comment_body_sha256": "0cec0b7f0169a15974ecf343612818035ac1aa08a57b8730d0a1203eea969a22",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142626,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
-      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-09-10T11:07:20.584Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-capability-refresh",
-        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-        "cluster_id": "automerge-openclaw-openclaw-142626",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143969:5617683658:2026-09-10T11:06:16Z:clawsweeper_needs_human",
       "comment_id": "5617683658",
@@ -32285,6 +32252,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143468:5621318147:2026-09-10T15:38:07Z:re_review",
+      "comment_id": "5621318147",
+      "comment_version_key": "5621318147:2026-09-10T15:38:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143468#issuecomment-5621318147",
+      "comment_created_at": "2026-09-10T15:38:07Z",
+      "comment_updated_at": "2026-09-10T15:38:07Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143468,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T15:39:05.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-emulator-apt-source-isolation",
+        "head_sha": "a008a186793a5484e509865ac26c4218f2092d12",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
