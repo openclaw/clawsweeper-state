@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T11:26:32.109Z",
+  "updated_at": "2026-09-10T11:27:25.328Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143823:5614896721:2026-09-10T07:36:14Z:clawsweeper_needs_human",
-      "comment_id": "5614896721",
-      "comment_version_key": "5614896721:2026-09-10T07:36:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143823#issuecomment-5614896721",
-      "comment_created_at": "2026-09-10T07:36:14Z",
-      "comment_updated_at": "2026-09-10T07:36:14Z",
-      "comment_body_sha256": "bad0f39fc68dce18bc5b3b8d8a202a1d5b064cc0309cba94cb08ec49115eb76a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143823,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied 423-test report exercises redaction helpers and an in-memory SessionManager with synthetic fixtures, but does not show the changed...; Review finding: [P2] [P2] Restrict the persisted-detail exemption to string values — src/agents/session-tool-result-guard.ts:238-239 - [medium] Resource containers lose inherited... (sha=655a2c1f6e4feb614299277b7efcb8d1a864cfd3)",
-      "expected_head_sha": "655a2c1f6e4feb614299277b7efcb8d1a864cfd3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T07:37:11.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/resource-token-replay-20260910",
-        "head_sha": "655a2c1f6e4feb614299277b7efcb8d1a864cfd3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143828:5614898869:2026-09-10T07:36:26Z:clawsweeper_needs_human",
       "comment_id": "5614898869",
@@ -32173,6 +32140,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T11:26:00Z:clawsweeper_auto_repair",
+      "comment_id": "5592569053",
+      "comment_version_key": "5592569053:2026-09-10T11:26:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
+      "comment_created_at": "2026-09-08T22:12:20Z",
+      "comment_updated_at": "2026-09-10T11:26:00Z",
+      "comment_body_sha256": "a44d5b26526346530794432131830c0b7d0b9076c4563a30b904075cd7113be7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142626,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
+      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+      "finding_id": "review-feedback",
+      "status": "waiting",
+      "processed_at": "2026-09-10T11:27:04.850Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-capability-refresh",
+        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+        "cluster_id": "automerge-openclaw-openclaw-142626",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
