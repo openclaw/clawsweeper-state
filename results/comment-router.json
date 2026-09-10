@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T17:29:17.103Z",
+  "updated_at": "2026-09-10T17:30:17.983Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143929:5617407945:2026-09-10T12:51:10Z:clawsweeper_needs_human",
-      "comment_id": "5617407945",
-      "comment_version_key": "5617407945:2026-09-10T12:51:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143929#issuecomment-5617407945",
-      "comment_created_at": "2026-09-10T10:46:43Z",
-      "comment_updated_at": "2026-09-10T12:51:10Z",
-      "comment_body_sha256": "3dc98f262fe71e901abc78acbf0e0af3cd84fe9cf89697ba3affd60622b4dd3f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143929,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b423b7475ac682d331a9d0e8a50da384debc60f9)",
-      "expected_head_sha": "b423b7475ac682d331a9d0e8a50da384debc60f9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T12:52:24.543Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/cloud-workers-build-ui",
-        "head_sha": "b423b7475ac682d331a9d0e8a50da384debc60f9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144029:5618641576:2026-09-10T12:37:57Z:clawsweeper_needs_human",
       "comment_id": "5618641576",
@@ -31796,6 +31763,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-10T17:28:53Z:clawsweeper_auto_repair",
+      "comment_id": "5592569053",
+      "comment_version_key": "5592569053:2026-09-10T17:28:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5592569053",
+      "comment_created_at": "2026-09-08T22:12:20Z",
+      "comment_updated_at": "2026-09-10T17:28:53Z",
+      "comment_body_sha256": "5f3381b341b920ec2d3ae6e18bd3d99615adcc520da35a37dc2e30c13e2de109",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142626,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=dec0af0c07664db89c00a9c079b2a2b458cd0331)",
+      "expected_head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+      "finding_id": "review-feedback",
+      "status": "waiting",
+      "processed_at": "2026-09-10T17:29:58.378Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/imessage-capability-refresh",
+        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
+        "cluster_id": "automerge-openclaw-openclaw-142626",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+      },
+      "actions": [
+        {
+          "action": "dispatch_repair",
+          "status": "active",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
