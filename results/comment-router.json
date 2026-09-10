@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T10:23:41.313Z",
+  "updated_at": "2026-09-10T10:24:10.369Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143474:5610157426:2026-09-10T06:23:52Z:clawsweeper_needs_human",
-      "comment_id": "5610157426",
-      "comment_version_key": "5610157426:2026-09-10T06:23:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143474#issuecomment-5610157426",
-      "comment_created_at": "2026-09-09T23:25:55Z",
-      "comment_updated_at": "2026-09-10T06:23:52Z",
-      "comment_body_sha256": "29db2020a4d41e16426ccdb5d2b90e1e8698f5498ab0c2ae6e04645fd3762fb7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143474,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing repair workflows that need Claude plugins, MCP servers, skills, or project instructions must use the manual handoff; older Claude installations also lose direct launch. This... (sha=79cbd54c722e73ebb5ccb317c87f156d909c0afc)",
-      "expected_head_sha": "79cbd54c722e73ebb5ccb317c87f156d909c0afc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T06:30:34.478Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/triage-initial-prompt",
-        "head_sha": "79cbd54c722e73ebb5ccb317c87f156d909c0afc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143745:5613937244:2026-09-10T06:23:12Z:clawsweeper_needs_human",
       "comment_id": "5613937244",
@@ -32303,6 +32270,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143935:5617094488:2026-09-10T10:23:20Z:re_review",
+      "comment_id": "5617094488",
+      "comment_version_key": "5617094488:2026-09-10T10:23:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143935#issuecomment-5617094488",
+      "comment_created_at": "2026-09-10T10:23:20Z",
+      "comment_updated_at": "2026-09-10T10:23:20Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143935,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T10:24:08.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "wave14/tui-session-tuples",
+        "head_sha": "1f1322b56d985334732fff05f47059bfaffcada4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
