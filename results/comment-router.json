@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T18:32:49.569Z",
+  "updated_at": "2026-09-10T18:33:34.051Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144074:5619605957:2026-09-10T13:39:01Z:clawsweeper_needs_human",
-      "comment_id": "5619605957",
-      "comment_version_key": "5619605957:2026-09-10T13:39:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144074#issuecomment-5619605957",
-      "comment_created_at": "2026-09-10T13:39:01Z",
-      "comment_updated_at": "2026-09-10T13:39:01Z",
-      "comment_body_sha256": "78c2b14d6f2e8ffb1e82f817eeeee5729ba7a3520f50fd45c7fc4878c1744b47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144074,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Guarantee snapshot cleanup when opening or closing fails (P2)** - Once snapshot preparation succeeds, an exception from openNodeSqliteDatabase now exits before prepared.cleanup(); a throwing database.close() doe...; Review finding: [P2] Guarantee snapshot cleanup when opening or closing fails — src/agents/auth-profiles/shared-store-bootstrap.ts:129-134 - [medium] Authentication snapshots bypa... (sha=42e56221cca39a52ba1a5d4825715fc27f15e3cc)",
-      "expected_head_sha": "42e56221cca39a52ba1a5d4825715fc27f15e3cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T13:40:07.626Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shared-auth-legacy-cleanup-swallowed-070",
-        "head_sha": "42e56221cca39a52ba1a5d4825715fc27f15e3cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144072:5619608360:2026-09-10T13:39:11Z:clawsweeper_needs_human",
       "comment_id": "5619608360",
@@ -31630,6 +31597,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143976:5623550752:2026-09-10T18:32:32Z:re_review",
+      "comment_id": "5623550752",
+      "comment_version_key": "5623550752:2026-09-10T18:32:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143976#issuecomment-5623550752",
+      "comment_created_at": "2026-09-10T18:32:32Z",
+      "comment_updated_at": "2026-09-10T18:32:32Z",
+      "comment_body_sha256": "d3135585227643a774f735699456d2ea3e44932b8d14a079614b792a75d1cd02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143976,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-10T18:33:31.702Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maturity-semantic-identity-20260910",
+        "head_sha": "95b76419144b48f24826c7769f59fd9a298c28c8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
