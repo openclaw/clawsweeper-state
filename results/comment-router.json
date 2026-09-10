@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T11:08:43.832Z",
+  "updated_at": "2026-09-10T11:09:18.787Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143196:5614747512:2026-09-10T07:23:15Z:re_review",
-      "comment_id": "5614747512",
-      "comment_version_key": "5614747512:2026-09-10T07:23:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143196#issuecomment-5614747512",
-      "comment_created_at": "2026-09-10T07:23:15Z",
-      "comment_updated_at": "2026-09-10T07:23:15Z",
-      "comment_body_sha256": "ee1f909721898949490fd08242e0c95e03389eeaf7aa4de99bc1e26d4b36eaef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143196,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T07:24:07.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-codex-voice-stt-139274",
-        "head_sha": "3d9550bd3830f374506141fb25f245b3d2d1b94d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143635:5612000099:2026-09-10T07:24:27Z:clawsweeper_needs_human",
       "comment_id": "5612000099",
@@ -32176,6 +32129,39 @@
         "kind": "pull_request",
         "branch": "fix/review-unavailable-file",
         "head_sha": "0584692c1013f7216b558e98e9b4be8ce019135f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1995:5585877267:2026-09-10T11:04:52Z:clawsweeper_needs_human",
+      "comment_id": "5585877267",
+      "comment_version_key": "5585877267:2026-09-10T11:04:52Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1995#issuecomment-5585877267",
+      "comment_created_at": "2026-09-08T13:26:41Z",
+      "comment_updated_at": "2026-09-10T11:04:52Z",
+      "comment_body_sha256": "feb00f6914be7130097379311a0fadeb7154db8f6c89acea7bd8bfc5df9c9f40",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1995,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing image rebakes can now stop on missing builder capabilities, unavailable nonroot Docker, undeclared runtime accounts or unknown Rust state; complete upgrade and intentional-re... (sha=059009b105d437aa9f5aee8b4e04efe46dc2f5df)",
+      "expected_head_sha": "059009b105d437aa9f5aee8b4e04efe46dc2f5df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T11:09:18.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/devtools-image-acceptance",
+        "head_sha": "059009b105d437aa9f5aee8b4e04efe46dc2f5df",
         "cluster_id": null,
         "job_path": null
       }
