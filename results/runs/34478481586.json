@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143980",
+  "mode": "plan",
+  "run_id": "34478481586",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34478481586",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143980.md",
+  "published_at": "2026-09-10T12:53:09.082Z",
+  "canonical": "#143980",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/143980",
+  "canonical_pr": null,
+  "summary": "Plan one focused fix for #143980. Source inspection confirms the reported path on preflight main f41b7696c8760ad9edee501eb431bb704910857c; executable reproduction remains required. Keep #123585 related and quarantine #92827 separately. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#143980",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "The demonstrated namespace mismatch has a narrow repair path; no hydrated PR owns this fix. Publication must wait for executable reproduction, implementation, review, and validation."
+    },
+    {
+      "target": "#123585",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "Useful contributor work addressing a distinct consumer. It neither replaces nor needs replacement by this issue's repair."
+    },
+    {
+      "target": "#92827",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer this exact item to central OpenClaw security handling without public mutation. Its attachment-delivery scope does not block the independent task-suggestion repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

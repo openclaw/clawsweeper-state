@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143980"
-mode: "autonomous"
-run_id: "34473724636"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34473724636"
+mode: "plan"
+run_id: "34478481586"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34478481586"
 head_sha: "fcaef5fe567b5ae6698d44c37357e12fd3bad60f"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-10T12:44:07.871Z"
-canonical: "https://github.com/openclaw/openclaw/issues/143980"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-10T12:53:09.082Z"
+canonical: "#143980"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/143980"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34473724636](https://github.com/openclaw/clawsweeper/actions/runs/34473724636)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34478481586](https://github.com/openclaw/clawsweeper/actions/runs/34478481586)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/143980
+Canonical: #143980
 
 ## Summary
 
-Confirmed the defective source path on preflight main 71b21c88574752cd9acc917970ec2850279cdfa2. Prepared a narrow fix artifact. Implementation and failing-regression proof are blocked by the read-only host and missing dependencies; no files or GitHub state changed.
+Plan one focused fix for #143980. Source inspection confirms the reported path on preflight main f41b7696c8760ad9edee501eb431bb704910857c; executable reproduction remains required. Keep #123585 related and quarantine #92827 separately. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed the defective source path on preflight main 71b21c88574752cd9acc917970
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143980 | fix_needed | planned | canonical | The ordinary path-coordinate bug remains supported by current source and reporter evidence. A writable executor must establish the required failing registered-tool-to-Gateway regression before implementing or opening the PR. |
-| #123585 | keep_related | planned | related | Distinct ACP work by @Chinmayrawat15 remains open on its existing contributor branch. It is neither a replacement target nor a candidate fix for #143980. |
-| #92827 | route_security | planned | security_sensitive | Quarantine this item for central OpenClaw security handling without public mutation. Its existing security-review signal does not block the separate ordinary bug in #143980. |
-| cluster:issue-openclaw-openclaw-143980 | build_fix_artifact | planned | canonical | Artifact preparation is complete; local implementation remains blocked by host permissions and unavailable dependencies. Publication must wait for successful pre-fix reproduction, implementation validation, and fresh review. |
+| #143980 | fix_needed | planned | canonical | The demonstrated namespace mismatch has a narrow repair path; no hydrated PR owns this fix. Publication must wait for executable reproduction, implementation, review, and validation. |
+| #123585 | keep_related | planned | related | Useful contributor work addressing a distinct consumer. It neither replaces nor needs replacement by this issue's repair. |
+| #92827 | route_security | planned | security_sensitive | Refer this exact item to central OpenClaw security handling without public mutation. Its attachment-delivery scope does not block the independent task-suggestion repair. |
 
 ## Needs Human
 
