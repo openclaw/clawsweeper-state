@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T04:52:41.323Z",
+  "updated_at": "2026-09-10T04:52:57.112Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131891:5610897179:2026-09-10T00:42:58Z:re_review",
-      "comment_id": "5610897179",
-      "comment_version_key": "5610897179:2026-09-10T00:42:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131891#issuecomment-5610897179",
-      "comment_created_at": "2026-09-10T00:42:58Z",
-      "comment_updated_at": "2026-09-10T00:42:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131891,
-      "author": "OllieinCanada",
-      "author_id": 73385593,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T00:43:52.462Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "experiment/graph-aware-session-retention",
-        "head_sha": "e2ba29e29296b9f11020ff122b18d9f90ffc733d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1518:5610848753:2026-09-10T00:38:38Z:re_review",
       "comment_id": "5610848753",
@@ -32410,6 +32363,39 @@
         "kind": "pull_request",
         "branch": "fix/f002-npm-audit-timeout",
         "head_sha": "8d0eb21393932d1d0a160b3728a5ecf58ba089ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142522:5591872482:2026-09-10T04:51:49Z:clawsweeper_needs_human",
+      "comment_id": "5591872482",
+      "comment_version_key": "5591872482:2026-09-10T04:51:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142522#issuecomment-5591872482",
+      "comment_created_at": "2026-09-08T21:06:43Z",
+      "comment_updated_at": "2026-09-10T04:51:49Z",
+      "comment_body_sha256": "a2a152683e68c7974ba29392f3ef58625e765ee8f76eb9ac134b8cadcc641242",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142522,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Update the PR description to match Doctor-only transactional DROP INDEX recovery and the current fixture, head, and validation evidence. (sha=f889e859a2cbd94036a0c00e9d27773e699c2705)",
+      "expected_head_sha": "f889e859a2cbd94036a0c00e9d27773e699c2705",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T04:52:57.112Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-workshop-dangling-index",
+        "head_sha": "f889e859a2cbd94036a0c00e9d27773e699c2705",
         "cluster_id": null,
         "job_path": null
       }
