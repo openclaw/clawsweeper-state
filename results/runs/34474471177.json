@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144006",
+  "mode": "autonomous",
+  "run_id": "34474471177",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34474471177",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144006.md",
+  "published_at": "2026-09-10T12:49:17.585Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144006",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144006",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the reported deduplication defect on preflight main. Implementation and executable reproduction are blocked by the read-only host and missing dependencies. A narrow executor fix plan is prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144006",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144006",
+      "candidate_fix": null,
+      "reason": "The host prohibits filesystem writes, so dependencies cannot be installed and a failing regression or patch cannot be added. Telegram proof also lacks a dependency-ready runtime. Continue in an authorized writable executor; establish the requested failing regression before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144006",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144006",
+      "candidate_fix": null,
+      "reason": "A narrow ordinary bug fix appears viable without new configuration, features, persistence, or product policy. Publication remains conditional on reproduction and validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
