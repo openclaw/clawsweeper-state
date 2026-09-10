@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T20:02:42.647Z",
+  "updated_at": "2026-09-10T20:02:47.741Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5464860514:2026-08-29T21:01:27Z:re_review",
-      "comment_id": "5464860514",
-      "comment_version_key": "5464860514:2026-08-29T21:01:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5464860514",
-      "comment_created_at": "2026-08-29T21:01:27Z",
-      "comment_updated_at": "2026-08-29T21:01:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T14:40:05.804Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5465050269:2026-08-29T21:42:54Z:re_review",
       "comment_id": "5465050269",
@@ -32411,6 +32384,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133248:5468082879:2026-09-10T20:01:31Z:clawsweeper_needs_human",
+      "comment_id": "5468082879",
+      "comment_version_key": "5468082879:2026-09-10T20:01:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133248#issuecomment-5468082879",
+      "comment_created_at": "2026-08-30T10:15:01Z",
+      "comment_updated_at": "2026-09-10T20:01:31Z",
+      "comment_body_sha256": "0acb92a2e8091637850e367bdfe9bf87f4541fd1a88687cebdc585302b443f90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party lifecycle wrappers that omit the optional cadence remain compatible but do not gain deeper-queue renewal; maintainers must accept that documented SDK adoption boundary. (sha=76097fef9397a04c10637e06dfaf64ebb6ca104a)",
+      "expected_head_sha": "76097fef9397a04c10637e06dfaf64ebb6ca104a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T20:02:47.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-ingress-queue-heartbeat",
+        "head_sha": "76097fef9397a04c10637e06dfaf64ebb6ca104a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
