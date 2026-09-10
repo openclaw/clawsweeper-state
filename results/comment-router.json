@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T12:23:43.889Z",
+  "updated_at": "2026-09-10T12:24:07.748Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142151:5611380174:2026-09-10T01:40:57Z:re_review",
-      "comment_id": "5611380174",
-      "comment_version_key": "5611380174:2026-09-10T01:40:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142151#issuecomment-5611380174",
-      "comment_created_at": "2026-09-10T01:40:57Z",
-      "comment_updated_at": "2026-09-10T01:40:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142151,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T08:05:30.844Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142151:5585189549:2026-09-08T12:33:11Z:re_review",
       "comment_id": "5585189549",
@@ -32484,6 +32457,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116446:5133286180:2026-09-10T12:22:40Z:clawsweeper_needs_human",
+      "comment_id": "5133286180",
+      "comment_version_key": "5133286180:2026-09-10T12:22:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5133286180",
+      "comment_created_at": "2026-07-30T16:03:22Z",
+      "comment_updated_at": "2026-09-10T12:22:40Z",
+      "comment_body_sha256": "d6442aca0bc075053b32a5806cc2a6606eb756db8ab39968d912155a7ecf21f7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Acceptance of the unmerged endpoint-runtime prerequisite may change the contract consumed by this integration; substantive changes would require corresponding integration validation. (sha=ab027b673147fa1091922af6fd4f6292c6bb4cd8)",
+      "expected_head_sha": "ab027b673147fa1091922af6fd4f6292c6bb4cd8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T12:24:07.748Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-crabline-discord-0.1.13",
+        "head_sha": "ab027b673147fa1091922af6fd4f6292c6bb4cd8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
