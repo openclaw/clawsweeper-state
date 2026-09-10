@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-10T08:58:43.625Z",
+  "updated_at": "2026-09-10T08:58:59.031Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5463487632:2026-08-29T16:16:41Z:re_review",
-      "comment_id": "5463487632",
-      "comment_version_key": "5463487632:2026-08-29T16:16:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5463487632",
-      "comment_created_at": "2026-08-29T16:16:41Z",
-      "comment_updated_at": "2026-08-29T16:16:41Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T05:07:09.089Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:132454:5463704956:2026-08-29T17:02:05Z:re_review",
       "comment_id": "5463704956",
@@ -32267,6 +32240,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/ocm:191:5615940820:2026-09-10T08:57:30Z:clawsweeper_needs_human",
+      "comment_id": "5615940820",
+      "comment_version_key": "5615940820:2026-09-10T08:57:30Z",
+      "comment_url": "https://github.com/openclaw/ocm/pull/191#issuecomment-5615940820",
+      "comment_created_at": "2026-09-10T08:57:30Z",
+      "comment_updated_at": "2026-09-10T08:57:30Z",
+      "comment_body_sha256": "a9ad467787c800e557bec719538a968ea26739c85f1b3c5a7aecb16ee9fb99f0",
+      "repo": "openclaw/ocm",
+      "issue_number": 191,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously working plain dev invocations can now refuse to start while an older daemon is running; recovery requires a daemon refresh that restarts managed gateways. (sha=777473d9b036407ccfe7b5423ce3aa2d445b4b86)",
+      "expected_head_sha": "777473d9b036407ccfe7b5423ce3aa2d445b4b86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T08:58:59.031Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev-foreground-owner",
+        "head_sha": "777473d9b036407ccfe7b5423ce3aa2d445b4b86",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
