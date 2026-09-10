@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T14:03:04.482Z",
+  "updated_at": "2026-09-10T14:03:10.359Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123984:5616481270:2026-09-10T09:39:07Z:re_review",
-      "comment_id": "5616481270",
-      "comment_version_key": "5616481270:2026-09-10T09:39:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123984#issuecomment-5616481270",
-      "comment_created_at": "2026-09-10T09:39:07Z",
-      "comment_updated_at": "2026-09-10T09:39:07Z",
-      "comment_body_sha256": "27b10f788510d63d26f6f3e256415f67992840b53e798e3609ae8d2f23b5147d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123984,
-      "author": "clawSean",
-      "author_id": 260045960,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T09:39:55.106Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsean/telegram-ignore-slim",
-        "head_sha": "438f31d05d950372e0e1759af210553ee420ca21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143840:5615090940:2026-09-10T09:41:40Z:clawsweeper_auto_repair",
       "comment_id": "5615090940",
@@ -32823,6 +32776,39 @@
       "status": "skipped",
       "processed_at": "2026-09-10T14:03:04.482Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142299:5588300364:2026-09-10T14:02:07Z:clawsweeper_needs_human",
+      "comment_id": "5588300364",
+      "comment_version_key": "5588300364:2026-09-10T14:02:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142299#issuecomment-5588300364",
+      "comment_created_at": "2026-09-08T16:15:45Z",
+      "comment_updated_at": "2026-09-10T14:02:07Z",
+      "comment_body_sha256": "dc9124ec270beb21201234d0e51b8f78d42749cda983b60875076fe3a43a501d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142299,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: retain the supplied real Runtime/ChatController/OkHttp relay and HTTP traces, but add allowed PTT resu...; Review finding: [P1] [P1] Revalidate activation before resuming WebRTC microphone capture — apps/android/app/src/main/java/ai/openclaw/app/voice/TalkModeManager.kt:1956-1959 - [hi... (sha=411c375d937e3c259b35cb00467ab46e0ff1a6a2)",
+      "expected_head_sha": "411c375d937e3c259b35cb00467ab46e0ff1a6a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T14:03:10.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr138726-split-u-activation",
+        "head_sha": "411c375d937e3c259b35cb00467ab46e0ff1a6a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
