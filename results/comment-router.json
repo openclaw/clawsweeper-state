@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T01:37:11.787Z",
+  "updated_at": "2026-09-10T01:37:55.610Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143312:5606708800:2026-09-09T19:07:28Z:clawsweeper_auto_repair",
-      "comment_id": "5606708800",
-      "comment_version_key": "5606708800:2026-09-09T19:07:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143312#issuecomment-5606708800",
-      "comment_created_at": "2026-09-09T18:22:34Z",
-      "comment_updated_at": "2026-09-09T19:07:28Z",
-      "comment_body_sha256": "d7dbcf23466e91cd08e27d982f7a44bd606c149306efd433d0df9df3e580ec78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143312,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d679c50447bd125344bc526f4f78d562a92994d3)",
-      "expected_head_sha": "d679c50447bd125344bc526f4f78d562a92994d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-09T19:13:13.771Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-node-probe",
-        "head_sha": "d679c50447bd125344bc526f4f78d562a92994d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143336:5607270749:2026-09-09T19:08:37Z:clawsweeper_needs_human",
       "comment_id": "5607270749",
@@ -33680,6 +33647,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142534:5591546201:2026-09-10T01:36:40Z:clawsweeper_needs_human",
+      "comment_id": "5591546201",
+      "comment_version_key": "5591546201:2026-09-10T01:36:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142534#issuecomment-5591546201",
+      "comment_created_at": "2026-09-08T20:38:25Z",
+      "comment_updated_at": "2026-09-10T01:36:40Z",
+      "comment_body_sha256": "6321d191f67b8aebba2f8dc3f893b656d8fd34610294fb29361bbabd67c692c1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142534,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal transcript exercises SQLite corruption detection but simulates Gateway handling; it never runs the changed produ... (sha=1f6a07aeafa3036554a1a9d91c1d640dc5a8b662)",
+      "expected_head_sha": "1f6a07aeafa3036554a1a9d91c1d640dc5a8b662",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T01:37:55.610Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/142476-cron-reaper-integrity-stalls",
+        "head_sha": "1f6a07aeafa3036554a1a9d91c1d640dc5a8b662",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
