@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-10T15:30:22.829Z",
+  "updated_at": "2026-09-10T15:30:45.403Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143938:5617223299:2026-09-10T11:00:17Z:clawsweeper_auto_repair",
-      "comment_id": "5617223299",
-      "comment_version_key": "5617223299:2026-09-10T11:00:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143938#issuecomment-5617223299",
-      "comment_created_at": "2026-09-10T10:33:45Z",
-      "comment_updated_at": "2026-09-10T11:00:17Z",
-      "comment_body_sha256": "c89cbd1ef529993b8d845a9816201a39070d0afb58ceaf7a14a96429a6ae7827",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143938,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c8f9ad08c296ff114cff1f695fc9a780532fe577)",
-      "expected_head_sha": "c8f9ad08c296ff114cff1f695fc9a780532fe577",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T11:02:04.441Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/desktop-match-viewport-20260910",
-        "head_sha": "c8f9ad08c296ff114cff1f695fc9a780532fe577",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137450:5617622407:2026-09-10T11:01:15Z:re_review",
       "comment_id": "5617622407",
@@ -32249,6 +32216,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144119:5620863972:2026-09-10T15:28:53Z:clawsweeper_needs_human",
+      "comment_id": "5620863972",
+      "comment_version_key": "5620863972:2026-09-10T15:28:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144119#issuecomment-5620863972",
+      "comment_created_at": "2026-09-10T15:06:45Z",
+      "comment_updated_at": "2026-09-10T15:28:53Z",
+      "comment_body_sha256": "bc5b5fcde86eb7bce683a583b9b7d707cb3439db62d96f3837e7f03e2ccdd92d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144119,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The tests call the existing cancellation owner with real registry/session fixtures and a substituted Gateway, but the contributor supplies no r... (sha=6d706b4d6d9b513b7147cf54b77f77c1895f812f)",
+      "expected_head_sha": "6d706b4d6d9b513b7147cf54b77f77c1895f812f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T15:30:45.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/143389-subagent-kill-tree-refresh",
+        "head_sha": "6d706b4d6d9b513b7147cf54b77f77c1895f812f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
