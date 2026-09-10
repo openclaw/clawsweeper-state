@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-143790"
-mode: "autonomous"
-run_id: "34447828488"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34447828488"
+mode: "plan"
+run_id: "34452292491"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34452292491"
 head_sha: "978e0643b422a44b155031f80564b8102f2b9f69"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-10T07:39:36.189Z"
-canonical: "https://github.com/openclaw/openclaw/issues/143790"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/143790"
+published_at: "2026-09-10T07:59:41.862Z"
+canonical: "#143790"
+canonical_issue: "#143790"
 canonical_pr: null
-actions_total: 10
+actions_total: 8
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34447828488](https://github.com/openclaw/clawsweeper/actions/runs/34447828488)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34452292491](https://github.com/openclaw/clawsweeper/actions/runs/34452292491)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/143790
+Canonical: #143790
 
 ## Summary
 
-Confirmed object-union branch loss on preflight main d146f3b7d330cab7280131bfceaf2448a2de275f. Prepared a narrow fix artifact. Local implementation is blocked by read-only access and missing dependencies; no patch, validated branch, or live DeepSeek acceptance is claimed.
+Plan one narrow DeepSeek repair for #143790. Checkout matches preflight main aeedd608d417d2fa2c626701f76a9e05c60d48ff; source still selects the first object variant. No edits, runtime tests, live provider validation, or GitHub mutations performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 10 |
+| Worker actions | 8 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Confirmed object-union branch loss on preflight main d146f3b7d330cab7280131bfcea
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #143790 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,16 +66,14 @@ Confirmed object-union branch loss on preflight main d146f3b7d330cab7280131bfcea
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143790 | fix_needed | planned | canonical | The nested DeepSeek object-union defect remains present. Existing string-const and root-property fixes address different shapes. |
-| #113130 | keep_related | planned | related | Different provider contract and repair path; leave open outside this implementation. |
+| #143790 | fix_needed | planned | canonical | The string-literal and root-level repairs cover different cases. Prepare the scoped fix artifact, with runtime reproduction required before implementation. |
+| #113130 | keep_related | planned | related | Different provider contract and root cause; exclude from this DeepSeek implementation. |
 | #78737 | keep_closed | skipped | related | Historical context only. |
-| #83361 | keep_closed | skipped | related | Historical context only; preserve existing primitive compatibility behavior. |
-| #86468 | keep_closed | skipped | related | Related repaired schema shape, not a fix for object unions. |
-| #86712 | keep_closed | skipped | related | Merged historical repair whose behavior must remain intact. |
-| #128743 | keep_closed | skipped | related | Distinct normalization owner and schema shape. |
-| #128799 | keep_closed | skipped | related | Historical precedent for preserving parent constraints; no action on the merged PR. |
-| cluster:issue-openclaw-openclaw-143790 | build_fix_artifact | planned | canonical | A bounded new fix PR is appropriate. Artifact preparation can proceed despite this worker's implementation restrictions. |
-| cluster:issue-openclaw-openclaw-143790 | open_fix_pr | blocked | canonical | PR creation awaits executor reproduction using the complete issue fixture, implementation, focused validation, and review. No public mutation was attempted. |
+| #83361 | keep_closed | skipped | related | Historical provider-compatibility context, distinct from local rejection after object-branch loss. |
+| #86468 | keep_closed | skipped | related | Preserve its existing behavior in regression coverage; no closeout action. |
+| #86712 | keep_closed | skipped | related | Merged historical repair does not cover object alternatives. |
+| #128743 | keep_closed | skipped | related | Different normalization boundary; historical context only. |
+| #128799 | keep_closed | skipped | related | Historical constraint-preservation evidence; do not reopen or treat as the nested DeepSeek fix. |
 
 ## Needs Human
 
