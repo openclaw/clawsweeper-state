@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144176",
+  "mode": "autonomous",
+  "run_id": "34540244733",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34540244733",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144176.md",
+  "published_at": "2026-09-10T23:09:02.012Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144176",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144176",
+  "canonical_pr": null,
+  "summary": "Reproduced the defect through the actual sampler on preflight main using synthetic Darwin readings. Prepared a narrow fix artifact. Implementation is blocked in this read-only workspace; dependencies and macOS runtime proof are unavailable.",
+  "actions": [
+    {
+      "target": "#144176",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144176",
+      "candidate_fix": null,
+      "reason": "A producer-side bug remains on the supplied current main. The prescribed repair fits existing behavior without configuration, storage, dependency, or policy changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144176",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#144176",
+      "candidate_fix": null,
+      "reason": "Prepare one new fix PR through the deterministic executor, reusing clawsweeper/issue-openclaw-openclaw-144176."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144176",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#144176",
+      "candidate_fix": null,
+      "reason": "The executor must implement and validate the artifact in a writable checkout, obtain required macOS evidence and fresh review, then open or update the single labeled PR. Merge and issue closure remain prohibited."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
