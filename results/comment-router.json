@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-10T05:03:43.278Z",
+  "updated_at": "2026-09-10T05:03:46.734Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132454:5611064271:2026-09-10T01:00:28Z:re_review",
-      "comment_id": "5611064271",
-      "comment_version_key": "5611064271:2026-09-10T01:00:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132454#issuecomment-5611064271",
-      "comment_created_at": "2026-09-10T01:00:28Z",
-      "comment_updated_at": "2026-09-10T01:00:28Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132454,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T01:01:30.705Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/provider-profile-usage-ui",
-        "head_sha": "2cb02d9a5dd26b540d710bb50776754abf8f9cc8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142522:5611069169:2026-09-10T01:01:05Z:re_review",
       "comment_id": "5611069169",
@@ -32240,6 +32193,39 @@
         "kind": "pull_request",
         "branch": "feat/ios-conversation-voice-20260909",
         "head_sha": "704d750708350cdef7955636a0d5de24a4817c0f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143615:5611740110:2026-09-10T05:02:44Z:clawsweeper_needs_human",
+      "comment_id": "5611740110",
+      "comment_version_key": "5611740110:2026-09-10T05:02:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143615#issuecomment-5611740110",
+      "comment_created_at": "2026-09-10T02:27:46Z",
+      "comment_updated_at": "2026-09-10T05:02:44Z",
+      "comment_body_sha256": "66f1cfd1c68061840ddf2a512eb0cf73299da25cf08e91006618c12c0dfc4eec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143615,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the native router, approval prompter, and media/widget owners still need allowed and foreign/reassigne...; Review finding: [P2] Preserve logical-route leases for ordinary outbox operations — apps/macos/Sources/OpenClaw/WebChatSwiftUI.swift:635-637 - [medium] Qualify foreign and reassig... (sha=3d06a5130e98989d13d8bb6bbe46189ebee6cc28)",
+      "expected_head_sha": "3d06a5130e98989d13d8bb6bbe46189ebee6cc28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-10T05:03:46.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/macos-conversation-actions-20260909",
+        "head_sha": "3d06a5130e98989d13d8bb6bbe46189ebee6cc28",
         "cluster_id": null,
         "job_path": null
       }
