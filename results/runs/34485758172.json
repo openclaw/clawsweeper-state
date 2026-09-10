@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-143980",
+  "mode": "plan",
+  "run_id": "34485758172",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34485758172",
+  "head_sha": "fcaef5fe567b5ae6698d44c37357e12fd3bad60f",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-143980.md",
+  "published_at": "2026-09-10T14:02:44.311Z",
+  "canonical": "#143980",
+  "canonical_issue": "#143980",
+  "canonical_pr": null,
+  "summary": "Plan one focused fix for #143980, retain #123585 as related, and route #92827 separately to security handling. No mutations or runtime regression tests were performed. Implementation requires reproduction on refreshed main; the local checkout differs from the preflight main SHA.",
+  "actions": [
+    {
+      "target": "#143980",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "A narrow repair is supported by the report and inspected source. Establish a failing registered-tool-to-Gateway regression on refreshed main before implementation or PR creation."
+    },
+    {
+      "target": "#123585",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#143980",
+      "candidate_fix": null,
+      "reason": "This contributor PR addresses a distinct cwd workflow and does not replace the requested task-suggestion repair. Preserve it without modification or closeout."
+    },
+    {
+      "target": "#92827",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this item for central OpenClaw security handling without public mutation. Its boundary concern does not block the separate bug-only plan for #143980."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
