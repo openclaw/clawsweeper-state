@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T11:55:46.201Z",
+  "updated_at": "2026-09-11T11:57:02.656Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144641:5629312607:2026-09-11T04:08:16Z:clawsweeper_needs_human",
-      "comment_id": "5629312607",
-      "comment_version_key": "5629312607:2026-09-11T04:08:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144641#issuecomment-5629312607",
-      "comment_created_at": "2026-09-11T04:08:16Z",
-      "comment_updated_at": "2026-09-11T04:08:16Z",
-      "comment_body_sha256": "bbfa4e0f06e5e7e0add8598eca6b6b3c09ef93fd1d2f7ab38609f573710ae191",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144641,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The Memory Host SDK repair has meaningful real-SQLite unit coverage, but no after-fix real-setup evidence showing normal memory initialization... (sha=48fbfde27f6cd7871e6ad148ce3333fccd32b2ca)",
-      "expected_head_sha": "48fbfde27f6cd7871e6ad148ce3333fccd32b2ca",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T04:09:18.306Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-fts-partial-reconcile",
-        "head_sha": "48fbfde27f6cd7871e6ad148ce3333fccd32b2ca",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144631:5629256748:2026-09-11T04:02:38Z:re_review",
       "comment_id": "5629256748",
@@ -32798,6 +32765,39 @@
       "status": "skipped",
       "processed_at": "2026-09-11T11:55:46.201Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143587:5611566193:2026-09-11T11:55:15Z:clawsweeper_needs_human",
+      "comment_id": "5611566193",
+      "comment_version_key": "5611566193:2026-09-11T11:55:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143587#issuecomment-5611566193",
+      "comment_created_at": "2026-09-10T02:04:58Z",
+      "comment_updated_at": "2026-09-11T11:55:15Z",
+      "comment_body_sha256": "69f921501e4454d5895599553409697d18901aa1376f7afe94ca7e8f8df85c27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve security concern: Accepted-input authority lifetime remains unaccepted** - The retained admission assertion intentionally excludes selected-profile matching while preserving host/session checks, allowing...; Review finding: [medium] Accepted-input authority lifetime remains unaccepted — src/gateway/server-methods/session-mutation-guards.ts:14 (sha=7389f156d23dc85eb913a97fcc520d59454872dd)",
+      "expected_head_sha": "7389f156d23dc85eb913a97fcc520d59454872dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T11:57:02.656Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-profile-binding-20260909",
+        "head_sha": "7389f156d23dc85eb913a97fcc520d59454872dd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
