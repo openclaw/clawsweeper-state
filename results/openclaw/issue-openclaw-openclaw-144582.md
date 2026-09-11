@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144582"
-mode: "autonomous"
-run_id: "34553732347"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34553732347"
+mode: "plan"
+run_id: "34555421302"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34555421302"
 head_sha: "c9a57f70fdab4c412fb73c769d2ebe2bb6492494"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-11T02:22:13.609Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144582"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/144582"
+published_at: "2026-09-11T02:45:22.931Z"
+canonical: "#144582"
+canonical_issue: "#144582"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34553732347](https://github.com/openclaw/clawsweeper/actions/runs/34553732347)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34555421302](https://github.com/openclaw/clawsweeper/actions/runs/34555421302)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144582
+Canonical: #144582
 
 ## Summary
 
-Confirmed the reported failure in source at the preflight main SHA. Prepared a narrow fix plan using the existing native external-link bridge. Implementation and runtime validation remain blocked by this read-only Linux workspace with no installed dependencies.
+Confirmed the reported source mismatch on preflight main a48c47a09c86d2cdfaf4d317f9c2f1d3be33215a. Prepared a narrow fix plan. No files or GitHub state changed; regression tests and native runtime validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Confirmed the reported failure in source at the preflight main SHA. Prepared a n
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144582 | fix_needed | planned | canonical | The existing session-menu flow conflicts with the native host contract. Reusing the established external-link operation fixes this integration without changing native destination policy or trust checks. |
-| cluster:issue-openclaw-openclaw-144582 | build_fix_artifact | planned |  | A narrow new fix PR is justified; no viable contributor PR appears in the hydrated inventory. |
-| cluster:issue-openclaw-openclaw-144582 | open_fix_pr | blocked |  | Implementation requires a writable executor with dependencies. Native success additionally requires an isolated macOS app and remote Gateway. No locally validated PR branch exists yet. |
+| #144582 | fix_needed | planned | canonical | A bounded integration bug remains. Reuse the existing bridge before browser popup reservation; retain the issue until the implementation and validation are complete. Closure and merge are prohibited by this job. |
 
 ## Needs Human
 
