@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T08:56:23.996Z",
+  "updated_at": "2026-09-11T08:57:30.921Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144543:5627934793:2026-09-11T01:19:20Z:clawsweeper_auto_repair",
-      "comment_id": "5627934793",
-      "comment_version_key": "5627934793:2026-09-11T01:19:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144543#issuecomment-5627934793",
-      "comment_created_at": "2026-09-11T01:19:20Z",
-      "comment_updated_at": "2026-09-11T01:19:20Z",
-      "comment_body_sha256": "94ddd57befbd7d7713cac52d7cd441430a9a5fa209452a930928b1f330d885e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144543,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=a12e22733712abae47092d91532478adc57e7ed2)",
-      "expected_head_sha": "a12e22733712abae47092d91532478adc57e7ed2",
-      "finding_id": "review-feedback",
-      "status": "skipped",
-      "processed_at": "2026-09-11T01:20:13.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-144424",
-        "head_sha": "a12e22733712abae47092d91532478adc57e7ed2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144532:5627881746:2026-09-11T01:13:44Z:re_review",
       "comment_id": "5627881746",
@@ -33264,6 +33231,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144764:5631184313:2026-09-11T08:56:34Z:clawsweeper_needs_human",
+      "comment_id": "5631184313",
+      "comment_version_key": "5631184313:2026-09-11T08:56:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144764#issuecomment-5631184313",
+      "comment_created_at": "2026-09-11T07:46:41Z",
+      "comment_updated_at": "2026-09-11T08:56:34Z",
+      "comment_body_sha256": "aa5118513c486ebc4134b3a31a31ae8c43c3d2352384d5b5a208150d7981bce6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144764,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The real SQLite tests exercise the changed persistence producer, but bypass config RPCs and startup consumption; the terminal trace ex... (sha=7702b2362b4f3b3b902fae172b49ab9f9fc46b15)",
+      "expected_head_sha": "7702b2362b4f3b3b902fae172b49ab9f9fc46b15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T08:57:30.921Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-hot-apply-sentinel-144063",
+        "head_sha": "7702b2362b4f3b3b902fae172b49ab9f9fc46b15",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
