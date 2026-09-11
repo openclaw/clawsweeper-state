@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T12:12:09.135Z",
+  "updated_at": "2026-09-11T12:12:32.444Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144671:5629780941:2026-09-11T05:08:26Z:re_review",
-      "comment_id": "5629780941",
-      "comment_version_key": "5629780941:2026-09-11T05:08:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144671#issuecomment-5629780941",
-      "comment_created_at": "2026-09-11T05:08:26Z",
-      "comment_updated_at": "2026-09-11T05:08:26Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144671,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T05:09:20.743Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/suspicious-solomon-046ad5",
-        "head_sha": "87d70d8896fe986f32c5fa36f70680960cda66ec",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144677:5629844574:2026-09-11T05:16:44Z:re_review",
       "comment_id": "5629844574",
@@ -32225,6 +32178,39 @@
         "kind": "pull_request",
         "branch": "openclaw/wear-pr-a2-20260910",
         "head_sha": "0f5ee519dfb8afd6355f7c090bbf4c781b02cc58",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144902:5634251971:2026-09-11T12:11:32Z:clawsweeper_needs_human",
+      "comment_id": "5634251971",
+      "comment_version_key": "5634251971:2026-09-11T12:11:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144902#issuecomment-5634251971",
+      "comment_created_at": "2026-09-11T12:11:32Z",
+      "comment_updated_at": "2026-09-11T12:11:32Z",
+      "comment_body_sha256": "148e27b4e255852c8469062f5c05b84037c9775d4dd541123bee3b1b24bca48f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing slow or concurrent known-length uploads can newly receive 504 or 503; SecOps has not yet accepted the buffering envelope and its operational tradeoffs. (sha=cf6d822576c0d2293833f4fe909a18e4f87d06e4)",
+      "expected_head_sha": "cf6d822576c0d2293833f4fe909a18e4f87d06e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T12:12:32.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-proxy-media-content-length-20260911",
+        "head_sha": "cf6d822576c0d2293833f4fe909a18e4f87d06e4",
         "cluster_id": null,
         "job_path": null
       }
