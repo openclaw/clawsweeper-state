@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T05:09:23.216Z",
+  "updated_at": "2026-09-11T05:17:53.128Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:206:5621251604:2026-09-10T23:27:14Z:clawsweeper_needs_human",
-      "comment_id": "5621251604",
-      "comment_version_key": "5621251604:2026-09-10T23:27:14Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/206#issuecomment-5621251604",
-      "comment_created_at": "2026-09-10T15:33:35Z",
-      "comment_updated_at": "2026-09-10T23:27:14Z",
-      "comment_body_sha256": "9814ef52ce6be3524cb805260a227259c709b96382f022a0dbb4694e62b4aca7",
-      "repo": "openclaw/ocm",
-      "issue_number": 206,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously working foreground commands on TLS, disabled-Control-UI, or backend-only installations will fail until operators add --no-ui; preserving plain execution also requires --no-... (sha=15ef78fff0f1b89b05c07d8827d9b4fa20ec2799)",
-      "expected_head_sha": "15ef78fff0f1b89b05c07d8827d9b4fa20ec2799",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T23:33:06.725Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dev-default-components",
-        "head_sha": "15ef78fff0f1b89b05c07d8827d9b4fa20ec2799",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:27:5626883066:2026-09-10T23:32:18Z:clawsweeper_needs_human",
       "comment_id": "5626883066",
@@ -33136,6 +33103,53 @@
         "kind": "pull_request",
         "branch": "steipete/suspicious-solomon-046ad5",
         "head_sha": "87d70d8896fe986f32c5fa36f70680960cda66ec",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144677:5629844574:2026-09-11T05:16:44Z:re_review",
+      "comment_id": "5629844574",
+      "comment_version_key": "5629844574:2026-09-11T05:16:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144677#issuecomment-5629844574",
+      "comment_created_at": "2026-09-11T05:16:44Z",
+      "comment_updated_at": "2026-09-11T05:16:44Z",
+      "comment_body_sha256": "5230f08b8d9985dc89607503f188b088691262e2047d1c7f818982ee6e7e5925",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144677,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T05:17:50.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/coordination-timeout-fix",
+        "head_sha": "53d30e0e2eb29e921055b737c0bc8e3d1aaed8ef",
         "cluster_id": null,
         "job_path": null
       },
