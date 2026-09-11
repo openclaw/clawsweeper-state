@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:05:50.751Z",
+  "updated_at": "2026-09-11T22:05:59.506Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142626:5594644550:2026-09-09T02:03:12Z:automerge",
-      "comment_id": "5594644550",
-      "comment_version_key": "5594644550:2026-09-09T02:03:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142626#issuecomment-5594644550",
-      "comment_created_at": "2026-09-09T02:03:12Z",
-      "comment_updated_at": "2026-09-09T02:03:12Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142626,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T15:46:05.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/imessage-capability-refresh",
-        "head_sha": "dec0af0c07664db89c00a9c079b2a2b458cd0331",
-        "cluster_id": "automerge-openclaw-openclaw-142626",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143327:5613544136:2026-09-10T05:14:38Z:re_review",
       "comment_id": "5613544136",
@@ -33254,6 +33201,39 @@
         "kind": "pull_request",
         "branch": "chore/phase4-notes-deps",
         "head_sha": "d5de9cf444e0e9985770aea0f25692ec4caab30f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144454:5626440812:2026-09-11T22:05:08Z:clawsweeper_needs_human",
+      "comment_id": "5626440812",
+      "comment_version_key": "5626440812:2026-09-11T22:05:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144454#issuecomment-5626440812",
+      "comment_created_at": "2026-09-10T22:45:20Z",
+      "comment_updated_at": "2026-09-11T22:05:08Z",
+      "comment_body_sha256": "64ca043ec5c6df906d0bff8e7d8e652facf699a683668aa11a71778ad7085c10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144454,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing SSH setups without native no-replace directory rename can reuse existing workspaces but will fail when creating or recreating one. (sha=e23770c3ff0479c0233cf6c73f3c54621c82c178)",
+      "expected_head_sha": "e23770c3ff0479c0233cf6c73f3c54621c82c178",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:05:59.506Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/crabbox-sandbox-backend",
+        "head_sha": "e23770c3ff0479c0233cf6c73f3c54621c82c178",
         "cluster_id": null,
         "job_path": null
       }
