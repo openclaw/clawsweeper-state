@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144788",
+  "mode": "autonomous",
+  "run_id": "34579905871",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34579905871",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144788.md",
+  "published_at": "2026-09-11T09:17:42.801Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144788",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144788",
+  "canonical_pr": null,
+  "summary": "Source supports a narrow lifecycle repair. Implementation and runtime reproduction are blocked by the read-only host, missing dependencies, and checkout/preflight SHA mismatch. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144788",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144788",
+      "candidate_fix": null,
+      "reason": "The non-security bug has a source-supported repair path; runtime confirmation is still required."
+    },
+    {
+      "target": "#107734",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical contract evidence, not a repair or closure target."
+    },
+    {
+      "target": "#143866",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Related ownership machinery, not proof that the webhook defect is fixed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144788",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#144788",
+      "candidate_fix": null,
+      "reason": "The artifact is ready for an authorized writable executor; no validated patch or PR exists from this worker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#144788",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
