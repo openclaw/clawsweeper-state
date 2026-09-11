@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T23:21:03.457Z",
+  "updated_at": "2026-09-11T23:22:15.178Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144316:5637766245:2026-09-11T16:51:23Z:re_review",
-      "comment_id": "5637766245",
-      "comment_version_key": "5637766245:2026-09-11T16:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144316#issuecomment-5637766245",
-      "comment_created_at": "2026-09-11T16:51:23Z",
-      "comment_updated_at": "2026-09-11T16:51:23Z",
-      "comment_body_sha256": "6904d2954d7f10b8737db5470e17d72896600fd1b0bb3c6bede1da2c859cb11e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144316,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T16:52:16.041Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/update-v6-plugin-authority",
-        "head_sha": "f16bbb97d327be80221218e15d9e3a3c034c4850",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145068:5637765793:2026-09-11T16:51:21Z:re_review",
       "comment_id": "5637765793",
@@ -33567,6 +33520,39 @@
         "kind": "pull_request",
         "branch": "docs/phase4-batch2-notes",
         "head_sha": "299b1eff75931209a120b0c2e80bf7e616a17a5d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:474:5620356817:2026-09-11T23:21:03Z:clawsweeper_needs_human",
+      "comment_id": "5620356817",
+      "comment_version_key": "5620356817:2026-09-11T23:21:03Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/474#issuecomment-5620356817",
+      "comment_created_at": "2026-09-10T14:31:40Z",
+      "comment_updated_at": "2026-09-11T23:21:03Z",
+      "comment_body_sha256": "19dd94242b8157210dcfcd75bc082027aa9c4c58a3c41788672193e755eb93aa",
+      "repo": "steipete/oracle",
+      "issue_number": 474,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Preserve the documented batch order: land https://github.com/steipete/oracle/pull/479 before this PR and https://github.com/steipete/oracle/pull/481 last. (sha=3a866b7555a865a29d4ef1fd44a96ef1942e4106)",
+      "expected_head_sha": "3a866b7555a865a29d4ef1fd44a96ef1942e4106",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T23:22:15.178Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/refuse-stale-browser-harvest",
+        "head_sha": "3a866b7555a865a29d4ef1fd44a96ef1942e4106",
         "cluster_id": null,
         "job_path": null
       }
