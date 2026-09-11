@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T01:22:34.429Z",
+  "updated_at": "2026-09-11T01:22:44.412Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/acpx:561:5624286275:2026-09-10T19:29:35Z:clawsweeper_auto_repair",
-      "comment_id": "5624286275",
-      "comment_version_key": "5624286275:2026-09-10T19:29:35Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/561#issuecomment-5624286275",
-      "comment_created_at": "2026-09-10T19:29:35Z",
-      "comment_updated_at": "2026-09-10T19:29:35Z",
-      "comment_body_sha256": "7c38a6e3ccc60ffb1fd38d8377bf01acbf682f74a7195c717803478b6791de0a",
-      "repo": "openclaw/acpx",
-      "issue_number": 561,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b67c08cb66699d9124c6c69c94dd87977feb3188)",
-      "expected_head_sha": "b67c08cb66699d9124c6c69c94dd87977feb3188",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T19:30:30.742Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/fx-built-in",
-        "head_sha": "b67c08cb66699d9124c6c69c94dd87977feb3188",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144322:5624288135:2026-09-10T19:29:45Z:clawsweeper_needs_human",
       "comment_id": "5624288135",
@@ -34301,6 +34268,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144540:5627954219:2026-09-11T01:21:43Z:re_review",
+      "comment_id": "5627954219",
+      "comment_version_key": "5627954219:2026-09-11T01:21:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144540#issuecomment-5627954219",
+      "comment_created_at": "2026-09-11T01:21:43Z",
+      "comment_updated_at": "2026-09-11T01:21:43Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144540,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T01:22:41.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-144500-perplexity-docs",
+        "head_sha": "529ec7afd074d3d0681433947610913f210578d6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
