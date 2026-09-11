@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T08:39:01.178Z",
+  "updated_at": "2026-09-11T08:40:06.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135350:5627742367:2026-09-11T00:58:33Z:re_review",
-      "comment_id": "5627742367",
-      "comment_version_key": "5627742367:2026-09-11T00:58:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135350#issuecomment-5627742367",
-      "comment_created_at": "2026-09-11T00:58:33Z",
-      "comment_updated_at": "2026-09-11T00:58:33Z",
-      "comment_body_sha256": "470e0815e5156182a27ebf7e9da8a8f507f898782f77e702cb6d85bea25ca365",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135350,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T01:05:45.238Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mattermost-question-actions",
-        "head_sha": "e38aa6fb65712ffb3d04965f85eb3db321a84ac3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:139023:5627553312:2026-09-11T01:05:04Z:re_review",
       "comment_id": "5627553312",
@@ -33275,6 +33228,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144766:5631328340:2026-09-11T08:39:06Z:clawsweeper_needs_human",
+      "comment_id": "5631328340",
+      "comment_version_key": "5631328340:2026-09-11T08:39:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144766#issuecomment-5631328340",
+      "comment_created_at": "2026-09-11T08:00:43Z",
+      "comment_updated_at": "2026-09-11T08:39:06Z",
+      "comment_body_sha256": "6df994fabac826b15cb67622af1904f78a3664e154b7142534c57f161fd06a8d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144766,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the described Codex composer round trip and inspected Profile screenshot support allowed sharing, but...; Review finding: [P1] Enforce existing send policy before relaying local-session input — src/gateway/server-methods/chat-send-setup.ts:63-69 - [P1] Fence asynchronous bridge work a... (sha=67152d15a35e9df513f7acac0b111d88a7c6c815)",
+      "expected_head_sha": "67152d15a35e9df513f7acac0b111d88a7c6c815",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T08:40:06.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "claude/local-sessions-team-server-2a31c6",
+        "head_sha": "67152d15a35e9df513f7acac0b111d88a7c6c815",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
