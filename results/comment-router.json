@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:04:50.051Z",
+  "updated_at": "2026-09-11T22:04:58.923Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132601:5636950660:2026-09-11T15:43:47Z:re_review",
-      "comment_id": "5636950660",
-      "comment_version_key": "5636950660:2026-09-11T15:43:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/132601#issuecomment-5636950660",
-      "comment_created_at": "2026-09-11T15:43:47Z",
-      "comment_updated_at": "2026-09-11T15:43:47Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132601,
-      "author": "ekinnee",
-      "author_id": 1707617,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T15:44:58.146Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142626:5592569053:2026-09-11T15:44:52Z:clawsweeper_auto_repair",
       "comment_id": "5592569053",
@@ -33280,6 +33235,39 @@
         "kind": "pull_request",
         "branch": "steipete/upd-timeout-budgets",
         "head_sha": "160b325ad2b4abd449a9230f3e57500f8868cd5c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:254:5638830177:2026-09-11T22:04:09Z:clawsweeper_needs_human",
+      "comment_id": "5638830177",
+      "comment_version_key": "5638830177:2026-09-11T22:04:09Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/254#issuecomment-5638830177",
+      "comment_created_at": "2026-09-11T18:16:33Z",
+      "comment_updated_at": "2026-09-11T22:04:09Z",
+      "comment_body_sha256": "294fc9a8395ae9b397546eb8522bd0553c7dba2008a5ab3d8c176248aa8b96ea",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 254,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=288bb639130286162931c8af9b716fce9335b477)",
+      "expected_head_sha": "288bb639130286162931c8af9b716fce9335b477",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:04:58.923Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/legacy-manager-exit-cleanup",
+        "head_sha": "288bb639130286162931c8af9b716fce9335b477",
         "cluster_id": null,
         "job_path": null
       }
