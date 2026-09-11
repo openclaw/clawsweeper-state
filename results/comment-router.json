@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T12:25:12.798Z",
+  "updated_at": "2026-09-11T12:26:13.491Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144701:5630366290:2026-09-11T06:22:05Z:re_review",
-      "comment_id": "5630366290",
-      "comment_version_key": "5630366290:2026-09-11T06:22:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144701#issuecomment-5630366290",
-      "comment_created_at": "2026-09-11T06:22:05Z",
-      "comment_updated_at": "2026-09-11T06:22:05Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144701,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T06:23:10.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/session-link-attribution-test",
-        "head_sha": "890f9d0002d57652566f0bf99640c0390a658f61",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144544:5630369414:2026-09-11T06:22:27Z:re_review",
       "comment_id": "5630369414",
@@ -32040,6 +31993,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144913:5634400565:2026-09-11T12:25:12Z:clawsweeper_needs_human",
+      "comment_id": "5634400565",
+      "comment_version_key": "5634400565:2026-09-11T12:25:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144913#issuecomment-5634400565",
+      "comment_created_at": "2026-09-11T12:25:12Z",
+      "comment_updated_at": "2026-09-11T12:25:12Z",
+      "comment_body_sha256": "f53844be9964a66ac1fad7afcd6e550db4a94002aa1e1cd8c87b296d2ba88a26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144913,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the fresh-build CLI validation and save/readback checks identified in the PR body, covering clean configuration and existing custom alias settings. (sha=474556d6124786bc7b75d3ecd6cfb47988335dd8)",
+      "expected_head_sha": "474556d6124786bc7b75d3ecd6cfb47988335dd8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T12:26:13.491Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-fireworks-alias",
+        "head_sha": "474556d6124786bc7b75d3ecd6cfb47988335dd8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
