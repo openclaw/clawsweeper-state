@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T07:48:18.486Z",
+  "updated_at": "2026-09-11T07:48:21.662Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137335:5527004091:2026-09-11T00:23:14Z:clawsweeper_needs_human",
-      "comment_id": "5527004091",
-      "comment_version_key": "5527004091:2026-09-11T00:23:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137335#issuecomment-5527004091",
-      "comment_created_at": "2026-09-03T14:06:09Z",
-      "comment_updated_at": "2026-09-11T00:23:14Z",
-      "comment_body_sha256": "724c76b00f53b5a0fa225a23bb54d0ac4e70a837ad1829cca55d12bbeae734dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that pass empty shell-expanded bounds will now fail until they omit those flags; the approving write-access reviewer explicitly accepted this compatibility change. (sha=0cffbf8ea24063f4665493d0a2fee10cc8c8ae6f)",
-      "expected_head_sha": "0cffbf8ea24063f4665493d0a2fee10cc8c8ae6f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T00:29:02.366Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-audit-empty-filters-20260903",
-        "head_sha": "0cffbf8ea24063f4665493d0a2fee10cc8c8ae6f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137411:5528879096:2026-09-11T00:28:05Z:clawsweeper_auto_repair",
       "comment_id": "5528879096",
@@ -33184,6 +33151,39 @@
       "status": "skipped",
       "processed_at": "2026-09-11T07:48:18.486Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116249:5126958553:2026-09-11T07:47:07Z:clawsweeper_needs_human",
+      "comment_id": "5126958553",
+      "comment_version_key": "5126958553:2026-09-11T07:47:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116249#issuecomment-5126958553",
+      "comment_created_at": "2026-07-30T05:25:27Z",
+      "comment_updated_at": "2026-09-11T07:47:07Z",
+      "comment_body_sha256": "84b9f8b493cafc8b6551f5c5819b97d7a726ca4009d364e6b3369d0281c91f00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116249,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Restore caller redaction metadata in capture records (P1)** - This prior blocker remains: replacing the metadata object drops capture.sensitiveRequestHeaderNames. With debug capture enabled, web-fetch supplies o...; Review finding: [P1] Restore caller redaction metadata in capture records — src/infra/net/fetch-guard.ts:669 - [P1] Preserve the refreshable timeout during response streaming — sr... (sha=77a4e1b04d0ed4c1eb459fff583f272cdd863ba0)",
+      "expected_head_sha": "77a4e1b04d0ed4c1eb459fff583f272cdd863ba0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T07:48:21.662Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-socket-retry-87407",
+        "head_sha": "77a4e1b04d0ed4c1eb459fff583f272cdd863ba0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
