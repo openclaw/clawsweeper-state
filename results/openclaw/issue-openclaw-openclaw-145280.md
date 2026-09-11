@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145280"
-mode: "autonomous"
-run_id: "34647300105"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34647300105"
+mode: "plan"
+run_id: "34651586659"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34651586659"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-11T21:50:08.476Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145280"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-11T21:59:41.091Z"
+canonical: "#145280"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145280"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34647300105](https://github.com/openclaw/clawsweeper/actions/runs/34647300105)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34651586659](https://github.com/openclaw/clawsweeper/actions/runs/34651586659)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145280
+Canonical: #145280
 
 ## Summary
 
-Confirmed the reported startup path on preflight main 9762b9ec1e44c3149bc828b7e2229862cd03cbd3 and prepared a narrow fix plan. Implementation and runtime reproduction are blocked by the read-only host and missing test dependencies. No files or GitHub state changed; no runtime validation or review is claimed.
+Plan one narrow candidate-startup fix for #145280. The clean checkout matches preflight main 07e7e4b8a2b3481486c226a3ff2a673cbe62525b and source inspection supports the reported collision. No code or GitHub changes were made; runtime reproduction and validation remain required before publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Confirmed the reported startup path on preflight main 9762b9ec1e44c3149bc828b7e2
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145280 | fix_needed | planned | canonical | A candidate-side startup repair remains warranted. Actual failing reproduction must precede implementation in a writable executor. |
-| #145252 | keep_related | planned | related | Keep the coordination tracker open; exclude unrelated timeout, trust, and diagnostics work. |
+| #145280 | fix_needed | planned | canonical | A focused transport-startup repair is supported. First reproduce through candidate startup; stop before implementation if it no longer reproduces on latest main. |
+| #145252 | keep_related | planned | related | Retain the broader coordination tracker; this repair addresses only the sandbox listener collision. |
 | #142633 | keep_closed | skipped | related | Historical context only. |
-| #144729 | keep_closed | skipped | related | Historical diagnostics repair, not a candidate fix for this collision. |
-| #144858 | keep_closed | skipped | related | Historical context outside this repair. |
-| cluster:issue-openclaw-openclaw-145280 | build_fix_artifact | planned | canonical | Prepare one new fix PR through the deterministic executor after failing reproduction, implementation, focused validation, and fresh review. |
+| #144729 | keep_closed | skipped | related | Historical diagnostics fix; neither a replacement nor a candidate fix for #145280. |
+| #144858 | keep_closed | skipped | related | Historical timeout context outside this repair. |
 
 ## Needs Human
 

@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145280",
+  "mode": "plan",
+  "run_id": "34651586659",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34651586659",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145280.md",
+  "published_at": "2026-09-11T21:59:41.091Z",
+  "canonical": "#145280",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145280",
+  "canonical_pr": null,
+  "summary": "Plan one narrow candidate-startup fix for #145280. The clean checkout matches preflight main 07e7e4b8a2b3481486c226a3ff2a673cbe62525b and source inspection supports the reported collision. No code or GitHub changes were made; runtime reproduction and validation remain required before publication.",
+  "actions": [
+    {
+      "target": "#145280",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145280",
+      "candidate_fix": null,
+      "reason": "A focused transport-startup repair is supported. First reproduce through candidate startup; stop before implementation if it no longer reproduces on latest main."
+    },
+    {
+      "target": "#145252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145280",
+      "candidate_fix": null,
+      "reason": "Retain the broader coordination tracker; this repair addresses only the sandbox listener collision."
+    },
+    {
+      "target": "#142633",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#144729",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical diagnostics fix; neither a replacement nor a candidate fix for #145280."
+    },
+    {
+      "target": "#144858",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical timeout context outside this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
