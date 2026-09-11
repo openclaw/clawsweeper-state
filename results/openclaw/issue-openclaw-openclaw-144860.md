@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144860"
-mode: "autonomous"
-run_id: "34591675399"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34591675399"
+mode: "plan"
+run_id: "34596273667"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34596273667"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-11T11:42:03.486Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144860"
+published_at: "2026-09-11T12:03:41.841Z"
+canonical: "#144860"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/144860"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34591675399](https://github.com/openclaw/clawsweeper/actions/runs/34591675399)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34596273667](https://github.com/openclaw/clawsweeper/actions/runs/34596273667)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144860
+Canonical: #144860
 
 ## Summary
 
-Verified the DELETE 404 defect in preflight main source and prepared a narrow fix plan. Local implementation and runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Plan a narrow DELETE-404 termination fix for #144860. The clean checkout matches preflight main 7764767a88b3a03850e4aee5f1ccea26b91c9886 and still rejects termination 404. No files or GitHub state changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,7 @@ Verified the DELETE 404 defect in preflight main source and prepared a narrow fi
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144860 | fix_needed | planned | canonical | A narrow termination-status repair remains necessary; adjacent merged recovery and cancellation changes do not cover it. |
-| #119332 | keep_closed | skipped | related | Historical context with partial symptom overlap. |
-| #126100 | keep_closed | skipped | related | Distinct historical recovery defect. |
-| #126101 | keep_closed | skipped | related | Preserve historical lifecycle work without expanding this repair. |
-| #141289 | keep_closed | skipped | related | Preserve @hugenshen's cancellation fix and regression coverage. |
-| cluster:issue-openclaw-openclaw-144860 | build_fix_artifact | planned | canonical | Prepare one new fix PR on clawsweeper/issue-openclaw-openclaw-144860, conditional on reproducing the defect before production edits. |
+| #144860 | fix_needed | planned | canonical | The existing termination owner can accept 404 alongside successful responses and 405, then reuse its terminated-session guard. No new configuration, dependency, authorization behavior, or product decision is needed. |
 
 ## Needs Human
 
