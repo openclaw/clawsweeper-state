@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145217",
+  "mode": "autonomous",
+  "run_id": "34641275866",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34641275866",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145217.md",
+  "published_at": "2026-09-11T21:00:14.576Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145217",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145217",
+  "canonical_pr": null,
+  "summary": "Confirmed the missing agentId handoff on preflight main 97e6e3cd4e400529ff729119f5aa030e33196037. Prepared a narrow fix plan. Implementation and runtime reproduction remain blocked on this read-only host with no node_modules; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145217",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145217",
+      "candidate_fix": null,
+      "reason": "A focused existing-behavior repair is justified by source evidence. Runtime reproduction must pass the job's reproduce-first gate before implementation proceeds."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145217",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145217",
+      "candidate_fix": null,
+      "reason": "The artifact defines one narrow new-fix PR on the requested branch, conditional on a failing regression through the real compaction entrypoint."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145217",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#145217",
+      "candidate_fix": null,
+      "reason": "PR publication is blocked pending runtime reproduction, implementation, review, and validation on a writable executor. If reproduction does not fail for the reported reason, stop and return to triage."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
