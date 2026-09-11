@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144788"
-mode: "autonomous"
-run_id: "34579905871"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34579905871"
+mode: "plan"
+run_id: "34584713110"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34584713110"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-11T09:17:42.801Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144788"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/144788"
-canonical_pr: null
-actions_total: 4
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-11T09:42:47.464Z"
+canonical: "#144788"
+canonical_issue: "#144788"
+canonical_pr: "#144801"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34579905871](https://github.com/openclaw/clawsweeper/actions/runs/34579905871)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34584713110](https://github.com/openclaw/clawsweeper/actions/runs/34584713110)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144788
+Canonical: #144788
 
 ## Summary
 
-Source supports a narrow lifecycle repair. Implementation and runtime reproduction are blocked by the read-only host, missing dependencies, and checkout/preflight SHA mismatch. No files or GitHub state changed.
+Keep #144788 open and preserve contributor PR #144801 as the canonical fix candidate. Complete its proof and check follow-up before considering another implementation PR. No files or GitHub state changed; runtime reproduction and validation were not executed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Source supports a narrow lifecycle repair. Implementation and runtime reproducti
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #144788 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,8 @@ Source supports a narrow lifecycle repair. Implementation and runtime reproducti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144788 | fix_needed | planned | canonical | The non-security bug has a source-supported repair path; runtime confirmation is still required. |
-| #107734 | keep_closed | skipped | related | Historical contract evidence, not a repair or closure target. |
-| #143866 | keep_closed | skipped | related | Related ownership machinery, not proof that the webhook defect is fixed. |
-| cluster:issue-openclaw-openclaw-144788 | build_fix_artifact | planned |  | The artifact is ready for an authorized writable executor; no validated patch or PR exists from this worker. |
+| #144788 | keep_canonical | planned | canonical | Retain the canonical report until the candidate's lifecycle behavior and plugin-specific reproduction gaps are resolved. Candidate coverage does not establish a completed fix. |
+| #144801 | fix_needed | planned | canonical | Preserve LiuwqGit's useful implementation and attribution. Retrieve the complete review and failed-check diagnostics, then complete isolated before/after public-helper proof, continuation fence and acknowledgement-order coverage, result/rejection and cleanup-retention coverage, and the embedded-runner cleanup sibling. Run the job's targeted Vitest commands, pnpm tsgo:core, node scripts/check-changed.mjs, and git diff --check after any repair. Record observed results and remaining plugin-specific gaps in the PR body, obtain fresh review, and leave merge/closure outside this lane. The supplied evidence does not justify replacing this writable contributor branch. |
 
 ## Needs Human
 

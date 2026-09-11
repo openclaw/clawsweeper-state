@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144788",
+  "mode": "plan",
+  "run_id": "34584713110",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34584713110",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144788.md",
+  "published_at": "2026-09-11T09:42:47.464Z",
+  "canonical": "#144788",
+  "canonical_issue": "#144788",
+  "canonical_pr": "#144801",
+  "summary": "Keep #144788 open and preserve contributor PR #144801 as the canonical fix candidate. Complete its proof and check follow-up before considering another implementation PR. No files or GitHub state changed; runtime reproduction and validation were not executed.",
+  "actions": [
+    {
+      "target": "#144788",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144788",
+      "candidate_fix": "#144801",
+      "reason": "Retain the canonical report until the candidate's lifecycle behavior and plugin-specific reproduction gaps are resolved. Candidate coverage does not establish a completed fix."
+    },
+    {
+      "target": "#144801",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144801",
+      "candidate_fix": null,
+      "reason": "Preserve LiuwqGit's useful implementation and attribution. Retrieve the complete review and failed-check diagnostics, then complete isolated before/after public-helper proof, continuation fence and acknowledgement-order coverage, result/rejection and cleanup-retention coverage, and the embedded-runner cleanup sibling. Run the job's targeted Vitest commands, pnpm tsgo:core, node scripts/check-changed.mjs, and git diff --check after any repair. Record observed results and remaining plugin-specific gaps in the PR body, obtain fresh review, and leave merge/closure outside this lane. The supplied evidence does not justify replacing this writable contributor branch."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "fix_needed": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
