@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144581"
-mode: "autonomous"
-run_id: "34553766012"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34553766012"
+mode: "plan"
+run_id: "34559012333"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34559012333"
 head_sha: "c9a57f70fdab4c412fb73c769d2ebe2bb6492494"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-11T03:02:00.859Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144581"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-11T03:43:49.981Z"
+canonical: "#144581"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/144581"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34553766012](https://github.com/openclaw/clawsweeper/actions/runs/34553766012)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34559012333](https://github.com/openclaw/clawsweeper/actions/runs/34559012333)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144581
+Canonical: #144581
 
 ## Summary
 
-Confirmed the reported path-arithmetic defect against preflight main. Prepared a narrow fix plan; implementation and required native snapshot reproduction are blocked by the read-only Linux host and missing dependencies. No files or GitHub state changed.
+Plan a narrow shared path-projection fix for #144581. The checkout matches preflight main ae94766f288b54ec7ac840cc4e1479232405949b. Read-only Windows path arithmetic reproduced malformed destinations in both namespace directions, including UNC paths. Native snapshot-worker reproduction and post-fix validation remain required; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed the reported path-arithmetic defect against preflight main. Prepared a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144581 | fix_needed | blocked | canonical | Implementation is blocked until a writable executor establishes the required failing snapshot-worker regression on Windows. The canonical bug classification is clear. |
-| #142749 | keep_closed | skipped | related | Historical context only; neither a repair target nor a fix for #144581. |
-| cluster:issue-openclaw-openclaw-144581 | build_fix_artifact | planned |  | A narrow non-security fix remains justified; artifact preparation is possible despite the implementation-host blocker. |
+| #144581 | fix_needed | planned | canonical | The issue has a bounded repair path shared by snapshot destinations and rehearsal configuration. Keep it open while the executor establishes the required failing worker regression and validates the repair. |
+| #142749 | keep_closed | skipped | related | Historical context for a separate update stage; no further action or replacement attribution is appropriate. |
 
 ## Needs Human
 
