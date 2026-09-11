@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T03:35:44.431Z",
+  "updated_at": "2026-09-11T03:36:08.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143833:5625802650:2026-09-10T21:39:31Z:re_review",
-      "comment_id": "5625802650",
-      "comment_version_key": "5625802650:2026-09-10T21:39:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143833#issuecomment-5625802650",
-      "comment_created_at": "2026-09-10T21:39:31Z",
-      "comment_updated_at": "2026-09-10T21:39:31Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143833,
-      "author": "thomasmoenco",
-      "author_id": 197481386,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T21:40:18.579Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "hugin/memory-daily-provenance-upstream-20260910",
-        "head_sha": "d0544e1609e524a496cc29a2c7c70be92f08091b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144423:5625801963:2026-09-10T21:39:27Z:clawsweeper_needs_human",
       "comment_id": "5625801963",
@@ -33878,6 +33831,39 @@
         "kind": "pull_request",
         "branch": "fix/appeal-unban-target-from-context",
         "head_sha": "375f747f70217b76c134b44819acbc1ff9f691de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142383:5589476617:2026-09-11T03:35:15Z:clawsweeper_needs_human",
+      "comment_id": "5589476617",
+      "comment_version_key": "5589476617:2026-09-11T03:35:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142383#issuecomment-5589476617",
+      "comment_created_at": "2026-09-08T17:52:06Z",
+      "comment_updated_at": "2026-09-11T03:35:15Z",
+      "comment_body_sha256": "e70ddee3eb756934bbdbcd2aacfcc0dba5c043021bdf87df260bb217a3c25077",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142383,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The documented startup JavaScript measurement remains over budget, and its quoted ceiling predates the checked-out baseline; current-head production-build compliance is unresolved. (sha=b050b4da512c057431c9340ca291c7430067fe48)",
+      "expected_head_sha": "b050b4da512c057431c9340ca291c7430067fe48",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T03:36:08.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-startup-loading-orchestration",
+        "head_sha": "b050b4da512c057431c9340ca291c7430067fe48",
         "cluster_id": null,
         "job_path": null
       }
