@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T04:08:24.273Z",
+  "updated_at": "2026-09-11T04:09:18.307Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144394:5626502742:2026-09-10T22:52:01Z:re_review",
-      "comment_id": "5626502742",
-      "comment_version_key": "5626502742:2026-09-10T22:52:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144394#issuecomment-5626502742",
-      "comment_created_at": "2026-09-10T22:52:01Z",
-      "comment_updated_at": "2026-09-10T22:52:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144394,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T22:53:04.880Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "931",
-        "head_sha": "83dfa54a5345bbe5867da5eb20c04c24e2929e46",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143504:5610363892:2026-09-10T22:48:18Z:clawsweeper_needs_human",
       "comment_id": "5610363892",
@@ -33116,6 +33069,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-compaction-writer-release",
         "head_sha": "280ba5a4d00e228e115b87d7101c63e2f16e18b2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144641:5629312607:2026-09-11T04:08:16Z:clawsweeper_needs_human",
+      "comment_id": "5629312607",
+      "comment_version_key": "5629312607:2026-09-11T04:08:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144641#issuecomment-5629312607",
+      "comment_created_at": "2026-09-11T04:08:16Z",
+      "comment_updated_at": "2026-09-11T04:08:16Z",
+      "comment_body_sha256": "bbfa4e0f06e5e7e0add8598eca6b6b3c09ef93fd1d2f7ab38609f573710ae191",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144641,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The Memory Host SDK repair has meaningful real-SQLite unit coverage, but no after-fix real-setup evidence showing normal memory initialization... (sha=48fbfde27f6cd7871e6ad148ce3333fccd32b2ca)",
+      "expected_head_sha": "48fbfde27f6cd7871e6ad148ce3333fccd32b2ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T04:09:18.306Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-fts-partial-reconcile",
+        "head_sha": "48fbfde27f6cd7871e6ad148ce3333fccd32b2ca",
         "cluster_id": null,
         "job_path": null
       }
