@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-11T03:32:41.617Z",
+  "updated_at": "2026-09-11T03:34:21.779Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119055:5610740806:2026-09-10T00:27:43Z:re_review",
-      "comment_id": "5610740806",
-      "comment_version_key": "5610740806:2026-09-10T00:27:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5610740806",
-      "comment_created_at": "2026-09-10T00:27:43Z",
-      "comment_updated_at": "2026-09-10T00:27:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119055,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T21:37:37.057Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119055:5611379515:2026-09-10T01:40:53Z:re_review",
       "comment_id": "5611379515",
@@ -33883,6 +33856,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144624:5629038462:2026-09-11T03:32:43Z:clawsweeper_needs_human",
+      "comment_id": "5629038462",
+      "comment_version_key": "5629038462:2026-09-11T03:32:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144624#issuecomment-5629038462",
+      "comment_created_at": "2026-09-11T03:32:43Z",
+      "comment_updated_at": "2026-09-11T03:32:43Z",
+      "comment_body_sha256": "d65786e2d003f0332a07bed34a2716cfbc7a728d60a63d05384e0a8222c9fb0b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144624,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing backups with generic SQLite hardlinks outside the inventory will now fail, including closed databases; operators must include every name before retrying. (sha=39cf36ba12d351e056990d2441a5522c79c9a19a)",
+      "expected_head_sha": "39cf36ba12d351e056990d2441a5522c79c9a19a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T03:34:21.779Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/issue-144585",
+        "head_sha": "39cf36ba12d351e056990d2441a5522c79c9a19a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
