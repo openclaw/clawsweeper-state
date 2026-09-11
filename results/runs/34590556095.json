@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144851",
+  "mode": "autonomous",
+  "run_id": "34590556095",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34590556095",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144851.md",
+  "published_at": "2026-09-11T11:19:34.562Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144851",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144851",
+  "canonical_pr": null,
+  "summary": "The reported defect remains in source at preflight main 56fcd66e484876f1eba1055fe6eb45f8b673006a. A narrow repair artifact is ready for the executor. Local implementation and regression validation are blocked by the read-only filesystem and missing dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#144851",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144851",
+      "candidate_fix": null,
+      "reason": "The QA Channel owner needs a local lifecycle repair. Runtime reproduction on this main SHA remains an executor prerequisite."
+    },
+    {
+      "target": "#118377",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#144851",
+      "candidate_fix": null,
+      "reason": "Related streaming symptom, different lifecycle owner and repair scope."
+    },
+    {
+      "target": "#119378",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical evidence for distinct durable final behavior; not a fix for this issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144851",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144851",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate; neither related PR implements this local repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
