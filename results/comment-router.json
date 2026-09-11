@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T03:27:48.918Z",
+  "updated_at": "2026-09-11T03:28:03.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144329:5624700595:2026-09-10T21:33:39Z:clawsweeper_needs_human",
-      "comment_id": "5624700595",
-      "comment_version_key": "5624700595:2026-09-10T21:33:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144329#issuecomment-5624700595",
-      "comment_created_at": "2026-09-10T20:03:36Z",
-      "comment_updated_at": "2026-09-10T21:33:39Z",
-      "comment_body_sha256": "232b62e58028b8e2e738dafdf1819f3504f84cdcc1f050b8aa15b52a06fb27c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144329,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required security-owner involvement for the new credential-writing RPC and auth-store guards is not established by the available review record. (sha=8bd0e5c9874fc5985606907358d2c8e3082a6054)",
-      "expected_head_sha": "8bd0e5c9874fc5985606907358d2c8e3082a6054",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T21:34:50.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/models-login-choices",
-        "head_sha": "8bd0e5c9874fc5985606907358d2c8e3082a6054",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper-state-archive-20260731:11:5593636437:2026-09-10T21:34:51Z:clawsweeper_needs_human",
       "comment_id": "5593636437",
@@ -33829,6 +33796,53 @@
         "cluster_id": "automerge-openclaw-openclaw-142626",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-142626.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143295:5628996738:2026-09-11T03:27:08Z:re_review",
+      "comment_id": "5628996738",
+      "comment_version_key": "5628996738:2026-09-11T03:27:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5628996738",
+      "comment_created_at": "2026-09-11T03:27:08Z",
+      "comment_updated_at": "2026-09-11T03:27:08Z",
+      "comment_body_sha256": "8867036b0666610d72173d4100b5dabf7783ee248e9e46e36390e86098965cd7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143295,
+      "author": "saladinyao-cyber",
+      "author_id": 240252919,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T03:28:01.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-reader-lifecycle-v2",
+        "head_sha": "cf5640497a207ffad4e8743302e1d7a9e0b9245e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
