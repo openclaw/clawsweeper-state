@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-11T16:22:57.394Z",
+  "updated_at": "2026-09-11T16:23:32.039Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89985:4945240275:2026-07-11T11:22:06Z:re_review",
-      "comment_id": "4945240275",
-      "comment_version_key": "4945240275:2026-07-11T11:22:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89985#issuecomment-4945240275",
-      "comment_created_at": "2026-07-11T11:22:06Z",
-      "comment_updated_at": "2026-07-11T11:22:06Z",
-      "comment_body_sha256": "90a58221605b45913b1112622843f3fd96a820d69f33c8b455f02288d81d5617",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89985,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T10:07:03.840Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89985:4946690986:2026-07-11T14:20:44Z:re_review",
       "comment_id": "4946690986",
@@ -32478,6 +32451,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:182:5637426280:2026-09-11T16:22:23Z:clawsweeper_needs_human",
+      "comment_id": "5637426280",
+      "comment_version_key": "5637426280:2026-09-11T16:22:23Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/182#issuecomment-5637426280",
+      "comment_created_at": "2026-09-11T16:22:23Z",
+      "comment_updated_at": "2026-09-11T16:22:23Z",
+      "comment_body_sha256": "a12652e2df3f54b3d7ee6cce3dbb3d152ba08d384ea4a8904cb689e62d252a7e",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 182,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports real status CLI timing runs, but does not show that the changed store/status/doctor path emitted the correct after-fi... (sha=48c1966781bf85ad8a80014d917b06b13c7ea266)",
+      "expected_head_sha": "48c1966781bf85ad8a80014d917b06b13c7ea266",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T16:23:32.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/portable-status-freshness",
+        "head_sha": "48c1966781bf85ad8a80014d917b06b13c7ea266",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
