@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T11:00:15.070Z",
+  "updated_at": "2026-09-11T11:03:25.210Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144640:5629265310:2026-09-11T04:03:29Z:clawsweeper_needs_human",
-      "comment_id": "5629265310",
-      "comment_version_key": "5629265310:2026-09-11T04:03:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144640#issuecomment-5629265310",
-      "comment_created_at": "2026-09-11T04:03:29Z",
-      "comment_updated_at": "2026-09-11T04:03:29Z",
-      "comment_body_sha256": "1ddce383994197c0e01d51bb68429bda123e7b437d46500da6eeaf586a93c3f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144640,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b7c9bcc1ee903eca3e83378a92af3e19b21631a3)",
-      "expected_head_sha": "b7c9bcc1ee903eca3e83378a92af3e19b21631a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T04:04:26.143Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1043",
-        "head_sha": "b7c9bcc1ee903eca3e83378a92af3e19b21631a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144611:5628914847:2026-09-11T04:03:21Z:clawsweeper_needs_human",
       "comment_id": "5628914847",
@@ -32378,6 +32345,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144863:5633467713:2026-09-11T11:02:31Z:re_review",
+      "comment_id": "5633467713",
+      "comment_version_key": "5633467713:2026-09-11T11:02:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144863#issuecomment-5633467713",
+      "comment_created_at": "2026-09-11T11:02:31Z",
+      "comment_updated_at": "2026-09-11T11:02:31Z",
+      "comment_body_sha256": "d16635be840f0f53a461afcbffb306f1fb47e637b7250fb019b1bf1d5a9b52ea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144863,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T11:03:23.057Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/7.33-matrix-voice-preflight",
+        "head_sha": "7df4c4f696a2ccb1b9c7706ee1fb906661ba6264",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
