@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-11T19:06:18.738Z",
+  "updated_at": "2026-09-11T19:06:50.183Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119055:5462383789:2026-08-29T12:20:20Z:re_review",
-      "comment_id": "5462383789",
-      "comment_version_key": "5462383789:2026-08-29T12:20:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5462383789",
-      "comment_created_at": "2026-08-29T12:20:20Z",
-      "comment_updated_at": "2026-08-29T12:20:20Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119055,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T12:11:19.651Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119055:5504818023:2026-09-02T05:21:59Z:re_review",
       "comment_id": "5504818023",
@@ -33633,6 +33606,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145136:5638969739:2026-09-11T19:05:39Z:clawsweeper_needs_human",
+      "comment_id": "5638969739",
+      "comment_version_key": "5638969739:2026-09-11T19:05:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145136#issuecomment-5638969739",
+      "comment_created_at": "2026-09-11T18:29:07Z",
+      "comment_updated_at": "2026-09-11T19:05:39Z",
+      "comment_body_sha256": "577bed54373dc1ba96b132e4e736aaa7d9f67b172b2838fe5d49c76fca49b8c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145136,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published updater's handoff remains unverified; direct Doctor success on older state does not establish that an actual upgrade preserves repaired references and restarts successfu... (sha=e52f2f5b29b14cb990c5ed2e2015a02b62b24070)",
+      "expected_head_sha": "e52f2f5b29b14cb990c5ed2e2015a02b62b24070",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T19:06:50.183Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-profile-rename-consumers",
+        "head_sha": "e52f2f5b29b14cb990c5ed2e2015a02b62b24070",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
