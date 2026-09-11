@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T14:39:06.352Z",
+  "updated_at": "2026-09-11T14:39:56.265Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:101441:4901108578:2026-09-11T08:24:32Z:clawsweeper_needs_human",
-      "comment_id": "4901108578",
-      "comment_version_key": "4901108578:2026-09-11T08:24:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/101441#issuecomment-4901108578",
-      "comment_created_at": "2026-07-07T07:10:06Z",
-      "comment_updated_at": "2026-09-11T08:24:32Z",
-      "comment_body_sha256": "4f9bc6a34465c114f471f3c20c8d13283ce98ef7be00184d67f648eb364c792e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 101441,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: monitor.ts now sanitizes the final custom reply, but the supplied test mocks dispatch and the Zalo send... (sha=875c9009cc67a798fff9a92eae1677d5bb54c94a)",
-      "expected_head_sha": "875c9009cc67a798fff9a92eae1677d5bb54c94a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T08:30:58.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/zalouser-sanitize-outbound-90684",
-        "head_sha": "875c9009cc67a798fff9a92eae1677d5bb54c94a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104018:4940953972:2026-09-11T08:26:28Z:clawsweeper_auto_repair",
       "comment_id": "4940953972",
@@ -31935,6 +31902,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:122553:5636117578:2026-09-11T14:38:59Z:re_review",
+      "comment_id": "5636117578",
+      "comment_version_key": "5636117578:2026-09-11T14:38:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/122553#issuecomment-5636117578",
+      "comment_created_at": "2026-09-11T14:38:59Z",
+      "comment_updated_at": "2026-09-11T14:38:59Z",
+      "comment_body_sha256": "1b335d895a1930b9bf21b99df1faf188a73727d93f6f0a1d077a923ca95f0f11",
+      "repo": "openclaw/openclaw",
+      "issue_number": 122553,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T14:39:54.367Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/media-fetch-retry-429",
+        "head_sha": "62c4a35710070a9fd0962fae77d0959dada6709e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
