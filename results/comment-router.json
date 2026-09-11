@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:03:55.959Z",
+  "updated_at": "2026-09-11T22:03:56.789Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145023:5636932939:2026-09-11T15:42:20Z:re_review",
-      "comment_id": "5636932939",
-      "comment_version_key": "5636932939:2026-09-11T15:42:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145023#issuecomment-5636932939",
-      "comment_created_at": "2026-09-11T15:42:20Z",
-      "comment_updated_at": "2026-09-11T15:42:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145023,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T15:43:12.173Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-doctor-service-ownership",
-        "head_sha": "b0c77a5f6ddb15a2ac6272673f5f33e7a01bf137",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145040:5636934890:2026-09-11T15:42:29Z:clawsweeper_auto_repair",
       "comment_id": "5636934890",
@@ -33297,6 +33250,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144768:5631236083:2026-09-11T22:02:47Z:clawsweeper_needs_human",
+      "comment_id": "5631236083",
+      "comment_version_key": "5631236083:2026-09-11T22:02:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144768#issuecomment-5631236083",
+      "comment_created_at": "2026-09-11T07:51:48Z",
+      "comment_updated_at": "2026-09-11T22:02:47Z",
+      "comment_body_sha256": "81271af88fc162e8bf4c41fab3c6756e61879598c5afc4014c33730a30bff08a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the hash-matched body preserves earlier Gateway evidence but explicitly leaves the newer retained-sour...; Review finding: [medium] Prove retained authority cannot survive withdrawal or reassignment — src/agents/prepared-model-runtime-auth.ts:50 (sha=94042eddb20bc3d30025dbe7bdd395abf3143478)",
+      "expected_head_sha": "94042eddb20bc3d30025dbe7bdd395abf3143478",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:03:56.789Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/provider-use-admission",
+        "head_sha": "94042eddb20bc3d30025dbe7bdd395abf3143478",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
