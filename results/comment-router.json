@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T12:15:39.458Z",
+  "updated_at": "2026-09-11T12:16:21.886Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:357:5629971480:2026-09-11T05:33:12Z:re_review",
-      "comment_id": "5629971480",
-      "comment_version_key": "5629971480:2026-09-11T05:33:12Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/357#issuecomment-5629971480",
-      "comment_created_at": "2026-09-11T05:33:12Z",
-      "comment_updated_at": "2026-09-11T05:33:12Z",
-      "comment_body_sha256": "75e8cbae1598ff666baffed8c85f7ab8517b9df48b88c9621ff4b79263c16c02",
-      "repo": "openclaw/mcporter",
-      "issue_number": 357,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T05:34:01.779Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oauth-tokencachedir-rm-jail",
-        "head_sha": "7d078ac9bb22fa4058e1d3ef8b31c0260e9b7a8f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144690:5630031932:2026-09-11T05:41:03Z:re_review",
       "comment_id": "5630031932",
@@ -32214,6 +32167,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142173:5585642582:2026-09-11T12:15:20Z:clawsweeper_needs_human",
+      "comment_id": "5585642582",
+      "comment_version_key": "5585642582:2026-09-11T12:15:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142173#issuecomment-5585642582",
+      "comment_created_at": "2026-09-08T13:08:55Z",
+      "comment_updated_at": "2026-09-11T12:15:20Z",
+      "comment_body_sha256": "f5c6d98fa099cf59c67a51e55e72be9e35cb6e96f1efc2725c0c7f253b634b1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142173,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the body and inspected verification records show tests/checks, but no rebuilt browser Talk listener rec...; Review finding: [P1] Remove the unrelated container-publishing workflows — .github/workflows/build-and-push.yml:38-41 - [P2] Consume follow-up identifiers from terminal wait respo... (sha=a13f55837bb8d9beddc3989168b3d0ecc72627c3)",
+      "expected_head_sha": "a13f55837bb8d9beddc3989168b3d0ecc72627c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T12:16:21.886Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/talk-queued-consult-empty-completion-142080",
+        "head_sha": "a13f55837bb8d9beddc3989168b3d0ecc72627c3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
