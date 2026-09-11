@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T16:43:12.999Z",
+  "updated_at": "2026-09-11T16:43:39.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110429:5010052996:2026-09-11T10:28:47Z:clawsweeper_needs_human",
-      "comment_id": "5010052996",
-      "comment_version_key": "5010052996:2026-09-11T10:28:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110429#issuecomment-5010052996",
-      "comment_created_at": "2026-07-18T05:22:08Z",
-      "comment_updated_at": "2026-09-11T10:28:47Z",
-      "comment_body_sha256": "2d892afa1fd59fb22ecf257a64cefd7d3fe4b870f0f6805908336f77849cd06b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110429,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A legacy-only operator who enables the cap by adding only the new plugin setting can mask the existing workflow and disable generation; the documented complete migration avoids this,... (sha=8b515acfc227436ec49d9b149b6e1171d1f06a5e)",
-      "expected_head_sha": "8b515acfc227436ec49d9b149b6e1171d1f06a5e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T10:33:52.246Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/comfy-workflow-file-cap",
-        "head_sha": "8b515acfc227436ec49d9b149b6e1171d1f06a5e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-09-11T10:31:16Z:clawsweeper_needs_human",
       "comment_id": "4591541970",
@@ -32412,6 +32379,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135895:5637668620:2026-09-11T16:42:45Z:re_review",
+      "comment_id": "5637668620",
+      "comment_version_key": "5637668620:2026-09-11T16:42:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-5637668620",
+      "comment_created_at": "2026-09-11T16:42:45Z",
+      "comment_updated_at": "2026-09-11T16:42:45Z",
+      "comment_body_sha256": "ac8aa2e909f4d38dd768860ccab1f91394077956edc257ddf1c079bdb68f6716",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135895,
+      "author": "lordratner",
+      "author_id": 49489398,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T16:43:37.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nextcloud-talk-inbound-media",
+        "head_sha": "324088e6c5d13934d0de8149a2a757a7eb01bbc9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
