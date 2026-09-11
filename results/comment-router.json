@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T04:57:25.408Z",
+  "updated_at": "2026-09-11T04:57:26.867Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:138439:5626778936:2026-09-10T23:23:26Z:re_review",
-      "comment_id": "5626778936",
-      "comment_version_key": "5626778936:2026-09-10T23:23:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138439#issuecomment-5626778936",
-      "comment_created_at": "2026-09-10T23:23:26Z",
-      "comment_updated_at": "2026-09-10T23:23:26Z",
-      "comment_body_sha256": "0e74f3ddc5c3d078d8715f2738d8f58bbc3a5866e54bb4d2bd8113c0ebd31974",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138439,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T23:24:14.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-schema-depth-guard",
-        "head_sha": "3032d9b0e1049b67ab8a7d591c75bf46fdbbc9f6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144439:5626786056:2026-09-10T23:24:03Z:re_review",
       "comment_id": "5626786056",
@@ -33114,6 +33067,53 @@
         "kind": "pull_request",
         "branch": "refactor/test-audit-feishu-bot-menu-fixtures-20260911",
         "head_sha": "c8c490c32c4f97180971445d708a8fdf069951fe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144131:5629634235:2026-09-11T04:48:31Z:re_review",
+      "comment_id": "5629634235",
+      "comment_version_key": "5629634235:2026-09-11T04:48:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144131#issuecomment-5629634235",
+      "comment_created_at": "2026-09-11T04:48:31Z",
+      "comment_updated_at": "2026-09-11T04:48:31Z",
+      "comment_body_sha256": "ecf773d0931e175063bb42223b1c469cb0c8140a6ff94fa8a87f948b158ddc48",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144131,
+      "author": "xiaoguomeiyitian",
+      "author_id": 10125426,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: pushed 9f0cd8e9bd6f32c6bbe4ff98811410dc20a58c5b — git_ssl_cainfo now points at a git-specific trust bundle (git-trust-bundle.pem) merging the proxy ca with the operator-configured ca sources (process git_ssl_cainfo/ssl_cert_file + http.sslcainfo git config, per-url overrides honored via git_config_global/system). real-git e2e proof added: bypassed private-ca clone succeeds through the merged bundle, the pre-fix proxy-only bundle is asserted to fail tls verification, and an intercepted clone succeeds with proxy-issued trust. full secrets suite 60/60, oxfmt clean, docs updated. evidence section in the pr body has details",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T04:57:24.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/egress-proxy-git-ssl-cainfo",
+        "head_sha": "a4983f1afb428d99658946270471d967c282506a",
         "cluster_id": null,
         "job_path": null
       },
