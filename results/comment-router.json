@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T00:21:29.711Z",
+  "updated_at": "2026-09-11T00:21:30.371Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144147:5621496575:2026-09-10T18:33:27Z:clawsweeper_needs_human",
-      "comment_id": "5621496575",
-      "comment_version_key": "5621496575:2026-09-10T18:33:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144147#issuecomment-5621496575",
-      "comment_created_at": "2026-09-10T15:50:53Z",
-      "comment_updated_at": "2026-09-10T18:33:27Z",
-      "comment_body_sha256": "ddf11c340b470132de9a896248442603f4af90bf7622e85fd6c7bfc13c7338e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144147,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Exclude wildcard access from the locked-DM audit finding (P2)** - For Mattermost with dmPolicy: \"allowlist\" and allowFrom: [\"mattermost:*\"], this filter changes admittedPrincipals from [\"*\"] to []. The registere...; Review finding: [P2] Exclude wildcard access from the locked-DM audit finding — src/channels/message-access/dm-allow-state.ts:31-33 - [medium] Public DM admission can be reported... (sha=ef7b2d235affcfd9175d44df86013fbb1861c87c)",
-      "expected_head_sha": "ef7b2d235affcfd9175d44df86013fbb1861c87c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T18:39:14.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/dm-wildcard-after-normalization",
-        "head_sha": "ef7b2d235affcfd9175d44df86013fbb1861c87c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144195:5622211758:2026-09-10T18:36:22Z:clawsweeper_needs_human",
       "comment_id": "5622211758",
@@ -33907,6 +33874,53 @@
         "kind": "pull_request",
         "branch": "fix/context-precheck-tool-schemas-140770",
         "head_sha": "12280f2fea43dcefd8841bbb818e339faa5a63a5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140508:5627381857:2026-09-11T00:20:43Z:re_review",
+      "comment_id": "5627381857",
+      "comment_version_key": "5627381857:2026-09-11T00:20:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140508#issuecomment-5627381857",
+      "comment_created_at": "2026-09-11T00:20:43Z",
+      "comment_updated_at": "2026-09-11T00:20:43Z",
+      "comment_body_sha256": "908640a37d53def75e53dbcf1436b4ad1329d496d3ad42ebb773ccb5a7e11954",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140508,
+      "author": "saladinyao-cyber",
+      "author_id": 240252919,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T00:21:28.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/memory-embedding-item-limit",
+        "head_sha": "961c2543d32fc230898969ae562fa382489b6a09",
         "cluster_id": null,
         "job_path": null
       },
