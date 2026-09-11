@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:24:39.716Z",
+  "updated_at": "2026-09-11T22:25:40.945Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145051:5637185437:2026-09-11T16:02:28Z:clawsweeper_auto_repair",
-      "comment_id": "5637185437",
-      "comment_version_key": "5637185437:2026-09-11T16:02:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145051#issuecomment-5637185437",
-      "comment_created_at": "2026-09-11T16:02:28Z",
-      "comment_updated_at": "2026-09-11T16:02:28Z",
-      "comment_body_sha256": "9e843e9121b7e3f17685860b1f99acba05f2ddd186040a0434eb842f9aec7e4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145051,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=301fa2121da5730dece939d9a49b194d651349d2)",
-      "expected_head_sha": "301fa2121da5730dece939d9a49b194d651349d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T16:03:49.470Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ux-login-messaging",
-        "head_sha": "301fa2121da5730dece939d9a49b194d651349d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145032:5636767118:2026-09-11T16:04:00Z:clawsweeper_needs_human",
       "comment_id": "5636767118",
@@ -33154,6 +33121,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145322:5641317598:2026-09-11T22:24:44Z:re_review",
+      "comment_id": "5641317598",
+      "comment_version_key": "5641317598:2026-09-11T22:24:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145322#issuecomment-5641317598",
+      "comment_created_at": "2026-09-11T22:24:44Z",
+      "comment_updated_at": "2026-09-11T22:24:44Z",
+      "comment_body_sha256": "0a106608520ddb7b086ca3c2b9c5db5ddac8ff032e9577957e5d0e54b5ef4ed4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145322,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T22:25:39.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/legacy-systemd-upgrade-diagnostics",
+        "head_sha": "fce27b7ccc5294a244089bea619a459740742068",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
