@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144911",
+  "mode": "autonomous",
+  "run_id": "34598605765",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34598605765",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144911.md",
+  "published_at": "2026-09-11T13:08:19.236Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144911",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144911",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Implementation is blocked because this host is read-only and the MCP SDK is not installed, preventing the required failing real-SDK regression. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144911",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144911",
+      "candidate_fix": null,
+      "reason": "Required reproduction and implementation need writable authorized isolation with installed dependencies. This is an environment blocker, not evidence that the defect fails to reproduce."
+    },
+    {
+      "target": "#144336",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#144911",
+      "candidate_fix": null,
+      "reason": "Retain the separate restart investigation and its existing maintainer-review requirements."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144911",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144911",
+      "candidate_fix": null,
+      "reason": "The executor can prepare one focused bug fix without changing process ownership, cleanup receipts, dependencies, or product policy."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
