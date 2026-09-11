@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-11T08:19:55.425Z",
+  "updated_at": "2026-09-11T08:21:32.747Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144447:5627588403:2026-09-11T00:49:31Z:re_review",
-      "comment_id": "5627588403",
-      "comment_version_key": "5627588403:2026-09-11T00:49:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/144447#issuecomment-5627588403",
-      "comment_created_at": "2026-09-11T00:40:20Z",
-      "comment_updated_at": "2026-09-11T00:49:31Z",
-      "comment_body_sha256": "09e4abab2cced3673e1e5d374b0e1ed20a75a5d7fa4854a1460a7ec6df9ea389",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144447,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T00:50:36.542Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144528:5627673971:2026-09-11T00:50:34Z:clawsweeper_needs_human",
       "comment_id": "5627673971",
@@ -33316,6 +33271,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-memory-fts-unavailable-fixture",
         "head_sha": "9d4224e1f20c24c3a8bebca1e56148463a61b8ae",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144762:5631185148:2026-09-11T08:13:54Z:clawsweeper_needs_human",
+      "comment_id": "5631185148",
+      "comment_version_key": "5631185148:2026-09-11T08:13:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144762#issuecomment-5631185148",
+      "comment_created_at": "2026-09-11T07:46:46Z",
+      "comment_updated_at": "2026-09-11T08:13:54Z",
+      "comment_body_sha256": "59d6fd6873ef3ce484a930d1301f7be84871d04d489cdf83980919c6335ef679",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144762,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An updated Apple app connected to a Gateway without published-model-catalog loses native model choices until the Gateway is updated; slash commands and upgrade guidance remain. This i... (sha=96d910899c49d8db4d60767cf20ab89f555aae66)",
+      "expected_head_sha": "96d910899c49d8db4d60767cf20ab89f555aae66",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T08:21:32.747Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-catalog-protocol-consumers",
+        "head_sha": "96d910899c49d8db4d60767cf20ab89f555aae66",
         "cluster_id": null,
         "job_path": null
       }
