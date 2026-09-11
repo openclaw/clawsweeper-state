@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T07:20:52.082Z",
+  "updated_at": "2026-09-11T07:21:24.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137335:5627201674:2026-09-11T00:03:05Z:re_review",
-      "comment_id": "5627201674",
-      "comment_version_key": "5627201674:2026-09-11T00:03:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137335#issuecomment-5627201674",
-      "comment_created_at": "2026-09-11T00:03:05Z",
-      "comment_updated_at": "2026-09-11T00:03:05Z",
-      "comment_body_sha256": "36fa53063d3af3dcf1edb4e348ff1a706749607ce91ddc452ca09a9812b66565",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137335,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T00:04:01.937Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "alix/fix-audit-empty-filters-20260903",
-        "head_sha": "0cffbf8ea24063f4665493d0a2fee10cc8c8ae6f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144512:5627203975:2026-09-11T00:03:20Z:clawsweeper_needs_human",
       "comment_id": "5627203975",
@@ -33279,6 +33232,39 @@
         "kind": "pull_request",
         "branch": "dependabot/go_modules/golang.org/x/sys-0.48.0",
         "head_sha": "ce9b670edef47c82eb006da5f6ed671e84498729",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1531:5630914576:2026-09-11T07:19:54Z:clawsweeper_needs_human",
+      "comment_id": "5630914576",
+      "comment_version_key": "5630914576:2026-09-11T07:19:54Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1531#issuecomment-5630914576",
+      "comment_created_at": "2026-09-11T07:19:54Z",
+      "comment_updated_at": "2026-09-11T07:19:54Z",
+      "comment_body_sha256": "bda068bc47d3da45012103d49b1585fd20c687fb89805d1adbd806f8b1f4ae06",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1531,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a42843b54e729c3d56c4b7439929e3390593ca6d)",
+      "expected_head_sha": "a42843b54e729c3d56c4b7439929e3390593ca6d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T07:21:24.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exact-review-alarm-liveness",
+        "head_sha": "a42843b54e729c3d56c4b7439929e3390593ca6d",
         "cluster_id": null,
         "job_path": null
       }
