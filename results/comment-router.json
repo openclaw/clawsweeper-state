@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T15:24:47.620Z",
+  "updated_at": "2026-09-11T15:25:36.090Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119056:5174219273:2026-09-11T09:13:35Z:clawsweeper_needs_human",
-      "comment_id": "5174219273",
-      "comment_version_key": "5174219273:2026-09-11T09:13:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119056#issuecomment-5174219273",
-      "comment_created_at": "2026-08-04T03:19:55Z",
-      "comment_updated_at": "2026-09-11T09:13:35Z",
-      "comment_body_sha256": "145867187f5443559f6e5b3f593b225eca6535d8fe093b5f012f510711ed6047",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119056,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the snapshot-matched body reports four passing cases through real Gateway preparation, dispatch, HTTP,... (sha=74e11247f818c2f5f4b44b1967242b441bd48be8)",
-      "expected_head_sha": "74e11247f818c2f5f4b44b1967242b441bd48be8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T09:19:02.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/code-mode-concurrency-stack-20260804",
-        "head_sha": "74e11247f818c2f5f4b44b1967242b441bd48be8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123457:5289369670:2026-09-11T09:08:47Z:clawsweeper_auto_repair",
       "comment_id": "5289369670",
@@ -31918,6 +31885,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143113:5636708720:2026-09-11T15:24:32Z:re_review",
+      "comment_id": "5636708720",
+      "comment_version_key": "5636708720:2026-09-11T15:24:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143113#issuecomment-5636708720",
+      "comment_created_at": "2026-09-11T15:24:32Z",
+      "comment_updated_at": "2026-09-11T15:24:32Z",
+      "comment_body_sha256": "6e3c62e8bd7ad72c7585da7fb715434603c8409fe774f3ba9c95df9604b4a598",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143113,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T15:25:33.712Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-143100-desktop-stale-build-admission",
+        "head_sha": "79db02cff06f47f7fb92a2bb898090ffc3fdc573",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
