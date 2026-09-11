@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T03:45:13.197Z",
+  "updated_at": "2026-09-11T03:48:31.734Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143833:5625893190:2026-09-10T21:48:33Z:re_review",
-      "comment_id": "5625893190",
-      "comment_version_key": "5625893190:2026-09-10T21:48:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143833#issuecomment-5625893190",
-      "comment_created_at": "2026-09-10T21:48:33Z",
-      "comment_updated_at": "2026-09-10T21:48:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143833,
-      "author": "thomasmoenco",
-      "author_id": 197481386,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T21:49:38.274Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "hugin/memory-daily-provenance-upstream-20260910",
-        "head_sha": "e649aa82064222014072c2e8e7f74b48141e7d74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-10T21:48:47Z:clawsweeper_needs_human",
       "comment_id": "5611675668",
@@ -33822,6 +33775,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-discord-webhook-text-limit",
         "head_sha": "b1010579aa5712041aa353558943fed7f25bddd9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3552:5629148281:2026-09-11T03:47:36Z:clawsweeper_needs_human",
+      "comment_id": "5629148281",
+      "comment_version_key": "5629148281:2026-09-11T03:47:36Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3552#issuecomment-5629148281",
+      "comment_created_at": "2026-09-11T03:47:36Z",
+      "comment_updated_at": "2026-09-11T03:47:36Z",
+      "comment_body_sha256": "e36b820a4f425377c808bd046b9030e4c630673b3fac2042a95a79156829d822",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3552,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the supplied evidence covers builds, lint, and assertions, not the changed dashboard projection, browse...; Review finding: [P1] [P1] Apply privacy mode to account labels and identifiers — Sources/CodexBarCLI/DashboardSnapshotBuilder.swift:180-186 - [P2] [P2] Carry the actual active acc... (sha=f34bb125b34645d56eb2b3166b99bbf35c85cf1e)",
+      "expected_head_sha": "f34bb125b34645d56eb2b3166b99bbf35c85cf1e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T03:48:31.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/dashboard-codex-accounts",
+        "head_sha": "f34bb125b34645d56eb2b3166b99bbf35c85cf1e",
         "cluster_id": null,
         "job_path": null
       }
