@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T15:17:01.632Z",
+  "updated_at": "2026-09-11T15:17:04.094Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142888:5597190842:2026-09-11T09:07:25Z:clawsweeper_needs_human",
-      "comment_id": "5597190842",
-      "comment_version_key": "5597190842:2026-09-11T09:07:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142888#issuecomment-5597190842",
-      "comment_created_at": "2026-09-09T06:36:30Z",
-      "comment_updated_at": "2026-09-11T09:07:25Z",
-      "comment_body_sha256": "ae2281b3dec08c51f7460fbba08f2e8163af1e019424bc6bbe5998517ba160c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142888,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - When enabled, equality-based suppression can remove intentional long repetition from live output and completed assistant content; the demonstrated final-answer preservation covers onl... (sha=1776ec8f1fd59400ecb8edfb980db149602fba92)",
-      "expected_head_sha": "1776ec8f1fd59400ecb8edfb980db149602fba92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T09:12:48.357Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-completions-cumulative-delta-replay",
-        "head_sha": "1776ec8f1fd59400ecb8edfb980db149602fba92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144779:5631319658:2026-09-11T09:06:17Z:clawsweeper_needs_human",
       "comment_id": "5631319658",
@@ -31902,6 +31869,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145021:5636599166:2026-09-11T15:15:58Z:re_review",
+      "comment_id": "5636599166",
+      "comment_version_key": "5636599166:2026-09-11T15:15:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/145021#issuecomment-5636599166",
+      "comment_created_at": "2026-09-11T15:15:58Z",
+      "comment_updated_at": "2026-09-11T15:15:58Z",
+      "comment_body_sha256": "ad4b8851d4cf00b5b485382956a425d015aff6bd3969951082d7427380d42780",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145021,
+      "author": "TheAngryPit",
+      "author_id": 7040636,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T15:17:01.847Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
