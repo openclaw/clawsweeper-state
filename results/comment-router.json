@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T10:07:47.525Z",
+  "updated_at": "2026-09-11T10:08:46.402Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144588:5628568092:2026-09-11T02:31:35Z:clawsweeper_needs_human",
-      "comment_id": "5628568092",
-      "comment_version_key": "5628568092:2026-09-11T02:31:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144588#issuecomment-5628568092",
-      "comment_created_at": "2026-09-11T02:31:35Z",
-      "comment_updated_at": "2026-09-11T02:31:35Z",
-      "comment_body_sha256": "9fe0cd71a5f21ca51e2024eddadb7b6dfd6eb85299bf1ef3d483517ca759ce82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144588,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Listed security-owner involvement for the changed auth files remains unverified. (sha=f1a1433828514a4f80b0f45a7450eb0fad08ab9e)",
-      "expected_head_sha": "f1a1433828514a4f80b0f45a7450eb0fad08ab9e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T02:32:39.186Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/prepared-auth-endpoint-facts",
-        "head_sha": "f1a1433828514a4f80b0f45a7450eb0fad08ab9e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:99556:4876928065:2026-09-11T02:23:45Z:clawsweeper_needs_human",
       "comment_id": "4876928065",
@@ -33105,6 +33072,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144576:5632868687:2026-09-11T10:07:48Z:re_review",
+      "comment_id": "5632868687",
+      "comment_version_key": "5632868687:2026-09-11T10:07:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144576#issuecomment-5632868687",
+      "comment_created_at": "2026-09-11T10:07:48Z",
+      "comment_updated_at": "2026-09-11T10:07:48Z",
+      "comment_body_sha256": "b7e4f29b4be9c6bec47c01aa620c3a793b6ea308dd88623f46391f4dd660d97d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144576,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T10:08:43.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-144493-chunking-upgrade-keyword-fallback",
+        "head_sha": "869f46634470cc866ae17932700bd0957204b270",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
