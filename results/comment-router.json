@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T00:19:58.371Z",
+  "updated_at": "2026-09-11T00:20:22.976Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143881:5615802895:2026-09-10T18:33:04Z:clawsweeper_needs_human",
-      "comment_id": "5615802895",
-      "comment_version_key": "5615802895:2026-09-10T18:33:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143881#issuecomment-5615802895",
-      "comment_created_at": "2026-09-10T08:46:26Z",
-      "comment_updated_at": "2026-09-10T18:33:04Z",
-      "comment_body_sha256": "a8fe219c0ca34101bc481f39f03e1668e25be7f13501105de11fe444d7f0b3fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143881,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing deployments that previously ignored invalid, unreachable, or rejecting proxy settings will stop receiving relay events until operators correct the proxy or configure NO_PROXY... (sha=567f9ac5b5b939ec082f48ded79d0dbaa6073df8)",
-      "expected_head_sha": "567f9ac5b5b939ec082f48ded79d0dbaa6073df8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T18:39:14.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "slack-relay-env-proxy",
-        "head_sha": "567f9ac5b5b939ec082f48ded79d0dbaa6073df8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144101:5620245795:2026-09-10T18:34:45Z:clawsweeper_needs_human",
       "comment_id": "5620245795",
@@ -33915,6 +33882,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143891:5627367245:2026-09-11T00:19:20Z:re_review",
+      "comment_id": "5627367245",
+      "comment_version_key": "5627367245:2026-09-11T00:19:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143891#issuecomment-5627367245",
+      "comment_created_at": "2026-09-11T00:19:20Z",
+      "comment_updated_at": "2026-09-11T00:19:20Z",
+      "comment_body_sha256": "612c50fbf1720bf2e20ace4465b7a6a415d61aa7b299b3a80353bb8ec21f7fc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143891,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T00:20:20.876Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-143707-cli-billing-auth-mode",
+        "head_sha": "86fc4f2d19c540220fdc39ddbec882b02160b99f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
