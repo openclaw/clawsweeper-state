@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T20:15:43.067Z",
+  "updated_at": "2026-09-11T20:16:14.012Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144244:5634925119:2026-09-11T13:11:34Z:re_review",
-      "comment_id": "5634925119",
-      "comment_version_key": "5634925119:2026-09-11T13:11:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144244#issuecomment-5634925119",
-      "comment_created_at": "2026-09-11T13:11:34Z",
-      "comment_updated_at": "2026-09-11T13:11:34Z",
-      "comment_body_sha256": "1012a4496aa9581b4d52082813b63ac413d57439324a4aedca59ea76d44309f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144244,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T13:12:30.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/ui-message-extraction-cache-rank110",
-        "head_sha": "70ad6dd13f5c16053b44776cc1eeebac5ff50b88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144936:5634885421:2026-09-11T13:13:53Z:clawsweeper_needs_human",
       "comment_id": "5634885421",
@@ -33496,6 +33449,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-sep11-catalog-seeds",
         "head_sha": "ffbb83dd9dd52012e908db2446fa040049bfddd3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144155:5621532251:2026-09-11T19:59:14Z:clawsweeper_needs_human",
+      "comment_id": "5621532251",
+      "comment_version_key": "5621532251:2026-09-11T19:59:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144155#issuecomment-5621532251",
+      "comment_created_at": "2026-09-10T15:53:26Z",
+      "comment_updated_at": "2026-09-11T19:59:14Z",
+      "comment_body_sha256": "c0befd06013a9a0667b94748c351dca06e94cbd961d5a81a6c10b5d7f5907f52",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144155,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fresh profiles using custom artifacts without declared schema support now refuse and require a declared artifact or exact published release; target-created state can remain after a la... (sha=13ccc03f99f794797642c14601021431f04c9861)",
+      "expected_head_sha": "13ccc03f99f794797642c14601021431f04c9861",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T20:16:14.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-stress-compat",
+        "head_sha": "13ccc03f99f794797642c14601021431f04c9861",
         "cluster_id": null,
         "job_path": null
       }
