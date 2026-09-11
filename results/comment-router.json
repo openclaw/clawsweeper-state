@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T15:54:44.242Z",
+  "updated_at": "2026-09-11T15:54:50.185Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144811:5632451779:2026-09-11T09:32:08Z:clawsweeper_auto_repair",
-      "comment_id": "5632451779",
-      "comment_version_key": "5632451779:2026-09-11T09:32:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144811#issuecomment-5632451779",
-      "comment_created_at": "2026-09-11T09:32:08Z",
-      "comment_updated_at": "2026-09-11T09:32:08Z",
-      "comment_body_sha256": "aadd87497081b24f754a8f6d730069d24b641cd66f4de9e3d287434799cf3438",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144811,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5453bfca6cc3485f012dedaea3178a709f4e1fbf)",
-      "expected_head_sha": "5453bfca6cc3485f012dedaea3178a709f4e1fbf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T09:33:04.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-validation-diagnostics",
-        "head_sha": "5453bfca6cc3485f012dedaea3178a709f4e1fbf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144810:5632451917:2026-09-11T09:32:09Z:clawsweeper_needs_human",
       "comment_id": "5632451917",
@@ -32360,6 +32327,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145040:5637073863:2026-09-11T15:53:44Z:re_review",
+      "comment_id": "5637073863",
+      "comment_version_key": "5637073863:2026-09-11T15:53:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145040#issuecomment-5637073863",
+      "comment_created_at": "2026-09-11T15:53:44Z",
+      "comment_updated_at": "2026-09-11T15:53:44Z",
+      "comment_body_sha256": "11ba55da69cf9480d1d5ee7c7a7ba3b81e6ace452f50d1c2084559972190cb0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145040,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T15:54:47.810Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/mac-browser-signin-expired-page",
+        "head_sha": "44cea79b0d155ef067fb12fa619a0437d056fc68",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
