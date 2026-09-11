@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T13:49:20.326Z",
+  "updated_at": "2026-09-11T13:49:20.892Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144708:5631221193:2026-09-11T07:50:24Z:re_review",
-      "comment_id": "5631221193",
-      "comment_version_key": "5631221193:2026-09-11T07:50:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144708#issuecomment-5631221193",
-      "comment_created_at": "2026-09-11T07:50:24Z",
-      "comment_updated_at": "2026-09-11T07:50:24Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144708,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T07:51:24.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/2026.9.4-main-closeout",
-        "head_sha": "516bf900eedda1f6513985b7e10f58d7eae59fc8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:24:5631230776:2026-09-11T07:51:19Z:clawsweeper_needs_human",
       "comment_id": "5631230776",
@@ -32115,6 +32068,39 @@
         "kind": "pull_request",
         "branch": "feat/dictation-standalone",
         "head_sha": "8e50138f685e0dc82bb7d83102e8cd17db5d0e42",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143631:5611923808:2026-09-11T13:47:59Z:clawsweeper_needs_human",
+      "comment_id": "5611923808",
+      "comment_version_key": "5611923808:2026-09-11T13:47:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143631#issuecomment-5611923808",
+      "comment_created_at": "2026-09-10T02:51:55Z",
+      "comment_updated_at": "2026-09-11T13:47:59Z",
+      "comment_body_sha256": "ff6f8cd8c0c340180db149416948a2f88bf1c9e29d6bf9d1909d6ef897a26841",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143631,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new selected-conversation action retains accepted-call ownership independently of foreground selection; selection changes and socket loss do not promise immediate revocation of al... (sha=2e8b318c5f90d17966f8264c7ef3264c7c130a1d)",
+      "expected_head_sha": "2e8b318c5f90d17966f8264c7ef3264c7c130a1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T13:49:20.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-conversation-voice-20260909",
+        "head_sha": "2e8b318c5f90d17966f8264c7ef3264c7c130a1d",
         "cluster_id": null,
         "job_path": null
       }
