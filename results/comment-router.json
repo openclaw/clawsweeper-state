@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T10:56:53.091Z",
+  "updated_at": "2026-09-11T10:56:58.156Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144511:5629188404:2026-09-11T03:53:11Z:re_review",
-      "comment_id": "5629188404",
-      "comment_version_key": "5629188404:2026-09-11T03:53:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144511#issuecomment-5629188404",
-      "comment_created_at": "2026-09-11T03:53:11Z",
-      "comment_updated_at": "2026-09-11T03:53:11Z",
-      "comment_body_sha256": "31331abb2e99d7bd754b6bcbe37b341a614145b0187f12305e3c9567fea14ca7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144511,
-      "author": "jjjhenriksen",
-      "author_id": 179184921,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T04:00:27.737Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-compaction-writer-release",
-        "head_sha": "280ba5a4d00e228e115b87d7101c63e2f16e18b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121622:5241982342:2026-09-11T03:53:08Z:clawsweeper_needs_human",
       "comment_id": "5241982342",
@@ -32398,6 +32351,39 @@
       "status": "skipped",
       "processed_at": "2026-09-11T10:56:53.091Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144736:5631132047:2026-09-11T10:55:56Z:clawsweeper_needs_human",
+      "comment_id": "5631132047",
+      "comment_version_key": "5631132047:2026-09-11T10:55:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144736#issuecomment-5631132047",
+      "comment_created_at": "2026-09-11T07:41:33Z",
+      "comment_updated_at": "2026-09-11T10:55:56Z",
+      "comment_body_sha256": "e0ed78baf667f3c6937a6c168f969e43eddea4f3fa8d4c11759c5b5855154b31",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144736,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 200-second absolute deadline also applies after upgrade: a healthy transfer taking longer will be terminated and skipped without retry unless the operator sets the new override. (sha=8707115c92011a12b3f61d4a68d8abe46103e726)",
+      "expected_head_sha": "8707115c92011a12b3f61d4a68d8abe46103e726",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T10:56:58.156Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-98468-scp-deadline",
+        "head_sha": "8707115c92011a12b3f61d4a68d8abe46103e726",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
