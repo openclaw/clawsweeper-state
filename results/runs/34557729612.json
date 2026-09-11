@@ -1,0 +1,107 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144610",
+  "mode": "autonomous",
+  "run_id": "34557729612",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34557729612",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144610.md",
+  "published_at": "2026-09-11T03:54:02.782Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144610",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144610",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the diagnostic gap on supplied main e62272f04a3ed701ae1a2f13d5ae29beb85f9224. A narrow fix artifact is prepared. The read-only host blocks regression fixture creation, implementation, and runtime validation; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#144610",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144610",
+      "candidate_fix": null,
+      "reason": "The warning-only repair fits the explicitly accepted scope. Establish the failing regression on a writable executor before implementing."
+    },
+    {
+      "target": "#142583",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#144610",
+      "candidate_fix": null,
+      "reason": "Distinct reproduction and remaining work; leave open outside this implementation."
+    },
+    {
+      "target": "#135528",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no replacement, merge, or closure action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144610",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144610",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation and validation require a writable executor. No maintainer product decision remains unresolved."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#144610",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
