@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T10:53:03.994Z",
+  "updated_at": "2026-09-11T10:53:10.185Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144615:5628974300:2026-09-11T03:49:54Z:clawsweeper_needs_human",
-      "comment_id": "5628974300",
-      "comment_version_key": "5628974300:2026-09-11T03:49:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144615#issuecomment-5628974300",
-      "comment_created_at": "2026-09-11T03:24:07Z",
-      "comment_updated_at": "2026-09-11T03:49:54Z",
-      "comment_body_sha256": "742fd5e7612260cb4745edc68fd5edf8de0b587b52e6d4ea4eee599879fddeba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144615,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current-main taxonomy and this branch’s validator extraction overlap, and GitHub reports conflicts; the final integrated category behavior has not yet been reviewed. (sha=45a4aa9fb727009d134ea509bf260eb6b858e65d)",
-      "expected_head_sha": "45a4aa9fb727009d134ea509bf260eb6b858e65d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T03:51:32.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-publish-metadata-2026-9-4",
-        "head_sha": "45a4aa9fb727009d134ea509bf260eb6b858e65d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144624:5629038462:2026-09-11T03:50:52Z:clawsweeper_needs_human",
       "comment_id": "5629038462",
@@ -32388,6 +32355,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144833:5633361331:2026-09-11T10:52:17Z:re_review",
+      "comment_id": "5633361331",
+      "comment_version_key": "5633361331:2026-09-11T10:52:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144833#issuecomment-5633361331",
+      "comment_created_at": "2026-09-11T10:52:17Z",
+      "comment_updated_at": "2026-09-11T10:52:17Z",
+      "comment_body_sha256": "9b834918e647bd7e730407c9e50a6b8696747c3027582fa9afde80f488258243",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144833,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T10:53:08.535Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/clawhub-clean-install-proof",
+        "head_sha": "1552aab0b481da3dd139bea868a96895fef33013",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
