@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145309",
+  "mode": "plan",
+  "run_id": "34654105570",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34654105570",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145309.md",
+  "published_at": "2026-09-11T22:34:20.595Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145309",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145309",
+  "canonical_pr": null,
+  "summary": "Verified the transcript-root mismatch in the clean checkout at preflight main 304261a77818f4fd02c77b07c20e3d1bed38fc7f. Prepared a narrow fix plan for #145309 and separately quarantined linked credential-boundary discussions. No files or GitHub state changed; regression tests and live resume proof remain pending.",
+  "actions": [
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/145309",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "767",
+      "candidate_fix": null,
+      "reason": "Repair existing documented alternate-directory behavior without changing credential selection, reseeding, authorization, or live-session generation safeguards."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/105763",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Leave this distinct credential-related request to central OpenClaw security handling; it does not block the transcript-directory fix."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/85177",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The requested recovery behavior involves a documented account boundary and belongs with central OpenClaw security handling."
+    },
+    {
+      "target": "https://github.com/openclaw/openclaw/issues/132758",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this item's credential-boundary discussion for central security handling. Its stateless-history and phantom-resume scopes are not duplicates of #145309."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "route_security": 3
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
