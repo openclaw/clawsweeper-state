@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145203",
+  "mode": "autonomous",
+  "run_id": "34639608512",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34639608512",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145203.md",
+  "published_at": "2026-09-11T19:47:54.469Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145203",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145203",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported progress-starvation path in preflight main. Implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. Prepared a narrow, reproduction-gated fix artifact; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145203",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145203",
+      "candidate_fix": null,
+      "reason": "The shared completion reducer contains a narrow ordinary bug affecting existing timeout behavior. Keep the issue open while the executor establishes a failing regression and repairs its progress decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145203",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145203",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow fix on clawsweeper/issue-openclaw-openclaw-145203, contingent on reproducing the defect on refreshed main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145203",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#145203",
+      "candidate_fix": null,
+      "reason": "PR creation is blocked on a writable executor establishing the failing regression, implementing the repair, completing review, and passing validation. No locally validated branch exists."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
