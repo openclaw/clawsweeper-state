@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T12:24:55.658Z",
+  "updated_at": "2026-09-11T12:24:56.714Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144684:5630253309:2026-09-11T06:09:08Z:re_review",
-      "comment_id": "5630253309",
-      "comment_version_key": "5630253309:2026-09-11T06:09:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144684#issuecomment-5630253309",
-      "comment_created_at": "2026-09-11T06:09:08Z",
-      "comment_updated_at": "2026-09-11T06:09:08Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144684,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T06:15:03.242Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-windows-concurrency-docs",
-        "head_sha": "3f828239fd44bfb8421305cb6525444d956de95f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143276:5630359018:2026-09-11T06:21:14Z:re_review",
       "comment_id": "5630359018",
@@ -32051,6 +32004,39 @@
         "kind": "pull_request",
         "branch": "fix/line-durable-crash-recovery",
         "head_sha": "6ae05548f666eeff5ec92c08307f87d8a9b825b0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3545:5625666755:2026-09-11T12:23:55Z:clawsweeper_auto_repair",
+      "comment_id": "5625666755",
+      "comment_version_key": "5625666755:2026-09-11T12:23:55Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3545#issuecomment-5625666755",
+      "comment_created_at": "2026-09-10T21:26:41Z",
+      "comment_updated_at": "2026-09-11T12:23:55Z",
+      "comment_body_sha256": "9e895b8ec12c05475031fff04b3fbd113bd2ce2e6f4378578307ec677cd0ffad",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3545,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fe4cf5f9fd815e398d77da4b1fb36a80ee27879d)",
+      "expected_head_sha": "fe4cf5f9fd815e398d77da4b1fb36a80ee27879d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T12:24:56.714Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ssh-remote-costs",
+        "head_sha": "fe4cf5f9fd815e398d77da4b1fb36a80ee27879d",
         "cluster_id": null,
         "job_path": null
       }
