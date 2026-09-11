@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144792",
+  "mode": "autonomous",
+  "run_id": "34580448398",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34580448398",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144792.md",
+  "published_at": "2026-09-11T09:14:21.001Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144792",
+  "canonical_pr": null,
+  "summary": "Reproduced oversized argv through the actual argument builder on preflight main. A narrow fix artifact is ready for the executor. Local implementation is blocked by the read-only host; Claude settings semantics and Windows runtime proof remain unverified. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144792",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144792",
+      "candidate_fix": null,
+      "reason": "The reported failure remains reproducible at the argument-builder boundary on preflight main; the earlier prompt fix does not cover tool lists."
+    },
+    {
+      "target": "#71600",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or other mutation is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144792",
+      "candidate_fix": null,
+      "reason": "A narrow transport-only repair can be prepared without a permission-policy, configuration, dependency, or persistence change; implementation must first verify Claude's settings contract."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144792",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144792",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor implements and validates the artifact on a writable checkout, completes the required isolated Windows proof, and obtains clean review. Reuse clawsweeper/issue-openclaw-openclaw-144792; do not merge or close."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
