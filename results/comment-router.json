@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T01:22:44.412Z",
+  "updated_at": "2026-09-11T01:23:14.043Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144322:5624288135:2026-09-10T19:29:45Z:clawsweeper_needs_human",
-      "comment_id": "5624288135",
-      "comment_version_key": "5624288135:2026-09-10T19:29:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144322#issuecomment-5624288135",
-      "comment_created_at": "2026-09-10T19:29:45Z",
-      "comment_updated_at": "2026-09-10T19:29:45Z",
-      "comment_body_sha256": "cb370deba617ccd6f37bcb6bfcd0bc434c5eed98c2aebacf305ad16794e602b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144322,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Attach sanitized native before/after screenshots of the light-mode streaming heading for visual acceptance before merge. (sha=2783f036f8dd38c6bb5bc75ae9cfb891968b687e)",
-      "expected_head_sha": "2783f036f8dd38c6bb5bc75ae9cfb891968b687e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T19:30:43.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/wear-pr-c1-20260910",
-        "head_sha": "2783f036f8dd38c6bb5bc75ae9cfb891968b687e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Kova:125:5620838378:2026-09-10T19:29:57Z:clawsweeper_needs_human",
       "comment_id": "5620838378",
@@ -34304,6 +34271,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:113366:5627959747:2026-09-11T01:22:23Z:freeform_assist",
+      "comment_id": "5627959747",
+      "comment_version_key": "5627959747:2026-09-11T01:22:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/113366#issuecomment-5627959747",
+      "comment_created_at": "2026-09-11T01:22:23Z",
+      "comment_updated_at": "2026-09-11T01:22:23Z",
+      "comment_body_sha256": "83bdb13fdad7e5ed1f006bce76e2b5f451fd4b06dfd98533b5b599e6b439d833",
+      "repo": "openclaw/openclaw",
+      "issue_number": 113366,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "please re-review current head 2ef3c08331c27f68674c575f134135d1226a716d. the current-main integration preserves reply quotes on malformed-carousel text fallbacks; 279 tests, full changed checks, build and startup profile pass.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T01:23:11.881Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-carousel-column-consistency",
+        "head_sha": "2ef3c08331c27f68674c575f134135d1226a716d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
           "status": "executed",
           "label": null,
           "job_path": null
