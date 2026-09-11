@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145371",
+  "mode": "plan",
+  "run_id": "34658124462",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34658124462",
+  "head_sha": "6bc31fc32aee440a3a2ae2a75431df508ef6c563",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145371.md",
+  "published_at": "2026-09-11T23:34:32.993Z",
+  "canonical": "#145371",
+  "canonical_issue": "#145371",
+  "canonical_pr": null,
+  "summary": "Plan one narrow fix for #145371, retain the distinct history-loading PR, and quarantine only #128812. No files or GitHub state changed. Source inspection supports redundant writes, but current-main runtime reproduction remains a prerequisite: local HEAD/origin/main is ee6a7ef0cb580c4efb1c863e7bbd3af5d17ac0fa, while preflight reports 0d857eb9b588061cf636e1de0dd4b2f50a5bd5a2, which is unavailable locally. Tests were not run in this read-only planning pass.",
+  "actions": [
+    {
+      "target": "#145371",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "A focused bug repair is appropriate, conditional on reproducing the defect against refreshed main before changing production code."
+    },
+    {
+      "target": "#123107",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Different root cause and useful independent work; do not replace, close, or adopt this branch for the restart-write fix."
+    },
+    {
+      "target": "#128812",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer only this item to central OpenClaw security handling without public mutation or inclusion in the fix."
+    },
+    {
+      "target": "#145373",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Historical duplicate context; no further action."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
