@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:13:10.276Z",
+  "updated_at": "2026-09-11T22:13:36.157Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145040:5637073863:2026-09-11T15:53:44Z:re_review",
-      "comment_id": "5637073863",
-      "comment_version_key": "5637073863:2026-09-11T15:53:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145040#issuecomment-5637073863",
-      "comment_created_at": "2026-09-11T15:53:44Z",
-      "comment_updated_at": "2026-09-11T15:53:44Z",
-      "comment_body_sha256": "11ba55da69cf9480d1d5ee7c7a7ba3b81e6ace452f50d1c2084559972190cb0c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145040,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T15:54:47.810Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/mac-browser-signin-expired-page",
-        "head_sha": "44cea79b0d155ef067fb12fa619a0437d056fc68",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144901:5637076709:2026-09-11T15:53:58Z:re_review",
       "comment_id": "5637076709",
@@ -33226,6 +33179,39 @@
         "kind": "pull_request",
         "branch": "codex/clawrouter-model-labels",
         "head_sha": "2bc51e6d1d365761343ca72d1451cc9a8cf1d085",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130877:5437893744:2026-09-11T22:07:39Z:clawsweeper_needs_human",
+      "comment_id": "5437893744",
+      "comment_version_key": "5437893744:2026-09-11T22:07:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130877#issuecomment-5437893744",
+      "comment_created_at": "2026-08-27T10:46:24Z",
+      "comment_updated_at": "2026-09-11T22:07:39Z",
+      "comment_body_sha256": "839f5236792949073a855c709e02f6064923733dde2c07faec2c0826a4f718b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing SQLite sessions above 50 MiB will become unexportable through this command even if they previously succeeded with sufficient heap; stored session data remains intact. (sha=462adacd09a040c7812947e907c7af815d2b9ad6)",
+      "expected_head_sha": "462adacd09a040c7812947e907c7af815d2b9ad6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:13:36.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/trajectory-sqlite-byte-budget-127433",
+        "head_sha": "462adacd09a040c7812947e907c7af815d2b9ad6",
         "cluster_id": null,
         "job_path": null
       }
