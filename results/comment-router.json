@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T19:26:55.227Z",
+  "updated_at": "2026-09-11T19:27:56.127Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144005:5634389836:2026-09-11T12:24:15Z:re_review",
-      "comment_id": "5634389836",
-      "comment_version_key": "5634389836:2026-09-11T12:24:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144005#issuecomment-5634389836",
-      "comment_created_at": "2026-09-11T12:24:15Z",
-      "comment_updated_at": "2026-09-11T12:24:15Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144005,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T12:25:09.470Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-backup-rollback",
-        "head_sha": "ecbcdc5e681d98f95234b1725e005bbdeb2742a7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144894:5634400603:2026-09-11T12:25:12Z:re_review",
       "comment_id": "5634400603",
@@ -33570,6 +33523,39 @@
         "kind": "pull_request",
         "branch": "codex/async-auth-profile-storage",
         "head_sha": "b89ef1731642bee572b729c8a50617ccc53c247f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145193:5639593784:2026-09-11T19:26:40Z:clawsweeper_needs_human",
+      "comment_id": "5639593784",
+      "comment_version_key": "5639593784:2026-09-11T19:26:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145193#issuecomment-5639593784",
+      "comment_created_at": "2026-09-11T19:26:40Z",
+      "comment_updated_at": "2026-09-11T19:26:40Z",
+      "comment_body_sha256": "c08c7521bd7676f9a2eda00f9be6f9f742bd20aeb46250ab6c9e3b0b85bee1e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145193,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously refused custom prefixes now enter package replacement, but actual upgrade preservation of the prefix, launcher, and existing operator state has not been demonstrated in the... (sha=5d1e5bf989dd3415777d8b5f8951cf932020d59c)",
+      "expected_head_sha": "5d1e5bf989dd3415777d8b5f8951cf932020d59c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T19:27:56.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-install-kind-unknown",
+        "head_sha": "5d1e5bf989dd3415777d8b5f8951cf932020d59c",
         "cluster_id": null,
         "job_path": null
       }
