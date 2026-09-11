@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145182"
-mode: "autonomous"
-run_id: "34637834883"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34637834883"
+mode: "plan"
+run_id: "34641480294"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34641480294"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-11T19:30:26.630Z"
+published_at: "2026-09-11T20:06:34.154Z"
 canonical: "https://github.com/openclaw/openclaw/issues/145182"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145182"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34637834883](https://github.com/openclaw/clawsweeper/actions/runs/34637834883)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34641480294](https://github.com/openclaw/clawsweeper/actions/runs/34641480294)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/145182
 
 ## Summary
 
-Prepared a narrow Teams SSO fix plan. The reported lookup remains in local source, but implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed.
+Plan one narrow Teams SSO repair. The checkout matches preflight main 3111f4a1eb164f5da6cecd5834dc5ddcd19a3035 and retains the reported App-level handler lookup. No changes or tests were run. Runtime reproduction requires the absent pinned SDK dependencies.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Prepared a narrow Teams SSO fix plan. The reported lookup remains in local sourc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145182 | fix_needed | planned | canonical | Source and hydrated evidence support a narrow existing-behavior repair. Require actual pinned-SDK reproduction on refreshed main before implementation; no unresolved product decision is identified. |
-| cluster:issue-openclaw-openclaw-145182 | build_fix_artifact | planned |  | Produce one conditional, cluster-scoped repair artifact for the executor. Do not publish an implementation unless the regression fails on refreshed main and passes after repair. |
+| https://github.com/openclaw/openclaw/issues/145182 | fix_needed | planned | canonical | A bounded SDK integration defect has a clear repair path. The supplied evidence describes failed sign-in, without a boundary-bypass or credential-exposure claim. Establish a failing regression against the actual pinned SDK before implementation. |
 
 ## Needs Human
 
