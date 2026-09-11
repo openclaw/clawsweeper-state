@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:50:01.061Z",
+  "updated_at": "2026-09-11T22:50:10.525Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123236:5637561019:2026-09-11T16:33:21Z:re_review",
-      "comment_id": "5637561019",
-      "comment_version_key": "5637561019:2026-09-11T16:33:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123236#issuecomment-5637561019",
-      "comment_created_at": "2026-09-11T16:33:21Z",
-      "comment_updated_at": "2026-09-11T16:33:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123236,
-      "author": "drobison00",
-      "author_id": 5256797,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T16:34:16.613Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-exec-authority-boundary",
-        "head_sha": "c69ce32e69fb2c402a8a1792a23f48f91d7baef5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89040:4591541970:2026-09-11T16:18:15Z:clawsweeper_needs_human",
       "comment_id": "4591541970",
@@ -33285,6 +33238,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1535:5641513613:2026-09-11T22:49:21Z:clawsweeper_needs_human",
+      "comment_id": "5641513613",
+      "comment_version_key": "5641513613:2026-09-11T22:49:21Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1535#issuecomment-5641513613",
+      "comment_created_at": "2026-09-11T22:49:21Z",
+      "comment_updated_at": "2026-09-11T22:49:21Z",
+      "comment_body_sha256": "3502f7211e29c88808a1df06ddb79fc8157bc3cb9b91fa28fce407738849bc03",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain the explicit approval reserved in the PR body before merging and triggering Worker deployment. (sha=ee9b75ed58b91d891ca694d52066667b17959843)",
+      "expected_head_sha": "ee9b75ed58b91d891ca694d52066667b17959843",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:50:10.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dashboard-publication-counts-batch2",
+        "head_sha": "ee9b75ed58b91d891ca694d52066667b17959843",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
