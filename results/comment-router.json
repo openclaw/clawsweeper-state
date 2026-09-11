@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T13:38:01.081Z",
+  "updated_at": "2026-09-11T13:41:24.111Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144737:5631173723:2026-09-11T07:45:37Z:clawsweeper_needs_human",
-      "comment_id": "5631173723",
-      "comment_version_key": "5631173723:2026-09-11T07:45:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144737#issuecomment-5631173723",
-      "comment_created_at": "2026-09-11T07:45:37Z",
-      "comment_updated_at": "2026-09-11T07:45:37Z",
-      "comment_body_sha256": "e7c1cb9b8f6c0c7629437296e83dcd1ba402d6f8cee647a5a0499465ec6cb38b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144737,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The failed UI shard remains unattributed because its detailed log was unavailable; browser cascade parity and startup-size claims were not independently executed in this read-only rev... (sha=210dee0d722e23526f300556631544138930cbd2)",
-      "expected_head_sha": "210dee0d722e23526f300556631544138930cbd2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T07:46:30.472Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ui/startup-mechanical-moves",
-        "head_sha": "210dee0d722e23526f300556631544138930cbd2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144666:5631174313:2026-09-11T07:45:41Z:clawsweeper_needs_human",
       "comment_id": "5631174313",
@@ -32086,6 +32053,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144730:5635279238:2026-09-11T13:40:32Z:re_review",
+      "comment_id": "5635279238",
+      "comment_version_key": "5635279238:2026-09-11T13:40:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144730#issuecomment-5635279238",
+      "comment_created_at": "2026-09-11T13:40:32Z",
+      "comment_updated_at": "2026-09-11T13:40:32Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144730,
+      "author": "mengyuyuan",
+      "author_id": 108800056,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T13:41:22.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/duplicate-assistant-replies",
+        "head_sha": "bd8afad9d5ef82a924cf870ca7bfd6529dcba970",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
