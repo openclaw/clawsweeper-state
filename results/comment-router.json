@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T16:01:24.494Z",
+  "updated_at": "2026-09-11T16:01:41.615Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144674:5632534261:2026-09-11T09:39:19Z:re_review",
-      "comment_id": "5632534261",
-      "comment_version_key": "5632534261:2026-09-11T09:39:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144674#issuecomment-5632534261",
-      "comment_created_at": "2026-09-11T09:39:19Z",
-      "comment_updated_at": "2026-09-11T09:39:19Z",
-      "comment_body_sha256": "1ace12a2767858f39883600654cb1b9ef99b19b1bf98f33f2a437b92819a2572",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144674,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T09:40:45.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/async-task-owner-reads",
-        "head_sha": "481defd38944173049500d3c15456605dbd220f8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144817:5632557432:2026-09-11T09:41:10Z:clawsweeper_needs_human",
       "comment_id": "5632557432",
@@ -32413,6 +32366,39 @@
         "kind": "pull_request",
         "branch": "steipete/mac-browser-signin-expired-page",
         "head_sha": "44cea79b0d155ef067fb12fa619a0437d056fc68",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145043:5637157715:2026-09-11T16:00:34Z:clawsweeper_needs_human",
+      "comment_id": "5637157715",
+      "comment_version_key": "5637157715:2026-09-11T16:00:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145043#issuecomment-5637157715",
+      "comment_created_at": "2026-09-11T16:00:34Z",
+      "comment_updated_at": "2026-09-11T16:00:34Z",
+      "comment_body_sha256": "404092730b4a034692fd4bbeccaa33e24ad9dacbc65783d373abad7fb6061139",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An unrelated active plugin that remains quarantined now stops ordinary Doctor repair before config/state repairs; operators may need to repair or disable that plugin first. (sha=96d9592070adfc74a9e65b016ba0b2c8b0230201)",
+      "expected_head_sha": "96d9592070adfc74a9e65b016ba0b2c8b0230201",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T16:01:41.615Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-stale-plugin-handoff-123326",
+        "head_sha": "96d9592070adfc74a9e65b016ba0b2c8b0230201",
         "cluster_id": null,
         "job_path": null
       }
