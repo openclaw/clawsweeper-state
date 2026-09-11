@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T19:23:02.096Z",
+  "updated_at": "2026-09-11T19:23:15.226Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144707:5634358284:2026-09-11T12:21:18Z:re_review",
-      "comment_id": "5634358284",
-      "comment_version_key": "5634358284:2026-09-11T12:21:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144707#issuecomment-5634358284",
-      "comment_created_at": "2026-09-11T12:21:18Z",
-      "comment_updated_at": "2026-09-11T12:21:18Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144707,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T12:22:13.369Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/claude-usage-schema",
-        "head_sha": "4a151324d172a24be66d33f0578bcb6d2c5bd85f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144705:5634354303:2026-09-11T12:20:56Z:re_review",
       "comment_id": "5634354303",
@@ -33598,6 +33551,39 @@
         "kind": "pull_request",
         "branch": "codex/update-stress-compat",
         "head_sha": "934e8b778690c84b3429efa3a9279ed8850a726b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144768:5631236083:2026-09-11T19:22:03Z:clawsweeper_needs_human",
+      "comment_id": "5631236083",
+      "comment_version_key": "5631236083:2026-09-11T19:22:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144768#issuecomment-5631236083",
+      "comment_created_at": "2026-09-11T07:51:48Z",
+      "comment_updated_at": "2026-09-11T19:22:03Z",
+      "comment_body_sha256": "2f89a9dc493d6163f2f463c356bafbd9542e9f3f16fddf7bf0dd70fb737a1ad0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserve earlier Gateway, Doctor, and corpus evidence at its stated revisions. For the new retained-so...; Review finding: [medium] Validate withdrawal after retaining automatic credential choices — src/agents/prepared-model-runtime-auth.ts:50 (sha=609ee0ca67122ff654b56baef26093f237f940e7)",
+      "expected_head_sha": "609ee0ca67122ff654b56baef26093f237f940e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T19:23:15.226Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/provider-use-admission",
+        "head_sha": "609ee0ca67122ff654b56baef26093f237f940e7",
         "cluster_id": null,
         "job_path": null
       }
