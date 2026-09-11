@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:26:14.512Z",
+  "updated_at": "2026-09-11T22:26:24.439Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125345:5317843873:2026-09-11T16:07:36Z:clawsweeper_needs_human",
-      "comment_id": "5317843873",
-      "comment_version_key": "5317843873:2026-09-11T16:07:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/125345#issuecomment-5317843873",
-      "comment_created_at": "2026-08-17T16:45:27Z",
-      "comment_updated_at": "2026-09-11T16:07:36Z",
-      "comment_body_sha256": "579352f2daf73ad691f6c4e74ca2263524180c278c51adf46150e86a8b4c3072",
-      "repo": "openclaw/openclaw",
-      "issue_number": 125345,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the complete pinned-head CLI transcript convincingly proves ordinary adoption, update, removal, retent...; Review finding: [P1] [P1] Canonicalize adopted identities in runtime consent checks — src/claws/tool-policy-runtime.ts:98-102 - [medium] Adopted ownership can be invisible to runt... (sha=0253219dc1feb17392925257a2212a8e480cd79d)",
-      "expected_head_sha": "0253219dc1feb17392925257a2212a8e480cd79d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T16:08:46.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claws-adopt-configured-agent",
-        "head_sha": "0253219dc1feb17392925257a2212a8e480cd79d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145003:5636839924:2026-09-11T16:02:32Z:clawsweeper_auto_repair",
       "comment_id": "5636839924",
@@ -33165,6 +33132,53 @@
         "kind": "pull_request",
         "branch": "fix/145266-git-dev-codex-host-authority",
         "head_sha": "8117af8525c07a07aab05453b10ad8b29a18baad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145193:5640915494:2026-09-11T22:25:28Z:re_review",
+      "comment_id": "5640915494",
+      "comment_version_key": "5640915494:2026-09-11T22:25:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145193#issuecomment-5640915494",
+      "comment_created_at": "2026-09-11T21:36:27Z",
+      "comment_updated_at": "2026-09-11T22:25:28Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145193,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T22:26:21.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-install-kind-unknown",
+        "head_sha": "8ca5f4481895448c0b287c4c1f57ed26669a05ad",
         "cluster_id": null,
         "job_path": null
       },
