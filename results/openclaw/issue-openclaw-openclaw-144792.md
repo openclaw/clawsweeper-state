@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-144792"
-mode: "autonomous"
-run_id: "34580448398"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34580448398"
+mode: "plan"
+run_id: "34584710960"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34584710960"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-11T09:14:21.001Z"
-canonical: "https://github.com/openclaw/openclaw/issues/144792"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/144792"
+published_at: "2026-09-11T09:38:34.597Z"
+canonical: "#144792"
+canonical_issue: "#144792"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34580448398](https://github.com/openclaw/clawsweeper/actions/runs/34580448398)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34584710960](https://github.com/openclaw/clawsweeper/actions/runs/34584710960)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/144792
+Canonical: #144792
 
 ## Summary
 
-Reproduced oversized argv through the actual argument builder on preflight main. A narrow fix artifact is ready for the executor. Local implementation is blocked by the read-only host; Claude settings semantics and Windows runtime proof remain unverified. No files or GitHub state changed.
+Plan prepared for #144792. The actual argument builder on preflight main produces 73,199-character allow and deny arguments. A narrow transport repair remains appropriate. No files or GitHub state changed; Windows execution and implementation validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Reproduced oversized argv through the actual argument builder on preflight main.
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #144792 | fix_needed | planned | canonical | The reported failure remains reproducible at the argument-builder boundary on preflight main; the earlier prompt fix does not cover tool lists. |
-| #71600 | keep_closed | skipped | related | Historical context only; no closure or other mutation is proposed. |
-| cluster:issue-openclaw-openclaw-144792 | build_fix_artifact | planned | canonical | A narrow transport-only repair can be prepared without a permission-policy, configuration, dependency, or persistence change; implementation must first verify Claude's settings contract. |
-| cluster:issue-openclaw-openclaw-144792 | open_fix_pr | blocked | canonical | Publication is blocked until the executor implements and validates the artifact on a writable checkout, completes the required isolated Windows proof, and obtains clean review. Reuse clawsweeper/issue-openclaw-openclaw-144792; do not merge or close. |
+| #144792 | fix_needed | planned | canonical | An ordinary launch-size defect remains reproducible at the argument builder. Settings-file equivalence and lifecycle behavior must be established before publishing a completed fix. |
+| #71600 | keep_closed | skipped | related | Historical context for a distinct argument overflow; no closure action is appropriate. |
 
 ## Needs Human
 
