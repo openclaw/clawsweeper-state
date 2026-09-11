@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T07:19:32.234Z",
+  "updated_at": "2026-09-11T07:19:32.358Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144480:5627161643:2026-09-10T23:58:54Z:re_review",
-      "comment_id": "5627161643",
-      "comment_version_key": "5627161643:2026-09-10T23:58:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144480#issuecomment-5627161643",
-      "comment_created_at": "2026-09-10T23:58:54Z",
-      "comment_updated_at": "2026-09-10T23:58:54Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144480,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T23:59:49.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sidebar-asset-download",
-        "head_sha": "14f56cefd09c96ea3badc7cbe7d674d5a18469d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123864:5627164688:2026-09-10T23:59:14Z:re_review",
       "comment_id": "5627164688",
@@ -33459,6 +33412,39 @@
         "kind": "pull_request",
         "branch": "fix/oauth-tokencachedir-rm-jail",
         "head_sha": "7d078ac9bb22fa4058e1d3ef8b31c0260e9b7a8f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/steipete.me:266:5630901439:2026-09-11T07:18:34Z:clawsweeper_needs_human",
+      "comment_id": "5630901439",
+      "comment_version_key": "5630901439:2026-09-11T07:18:34Z",
+      "comment_url": "https://github.com/steipete/steipete.me/pull/266#issuecomment-5630901439",
+      "comment_created_at": "2026-09-11T07:18:34Z",
+      "comment_updated_at": "2026-09-11T07:18:34Z",
+      "comment_body_sha256": "cb43c66fec55cd4e87fea470f7a91b9404d50e7941f7b84e7cbd221abdcb15ae",
+      "repo": "steipete/steipete.me",
+      "issue_number": 266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=62317c9d7b2fb15e67723ea90a55e446a55574bb)",
+      "expected_head_sha": "62317c9d7b2fb15e67723ea90a55e446a55574bb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T07:19:32.358Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/npm_and_yarn-8adb6fa9e2",
+        "head_sha": "62317c9d7b2fb15e67723ea90a55e446a55574bb",
         "cluster_id": null,
         "job_path": null
       }
