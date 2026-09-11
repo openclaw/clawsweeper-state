@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T05:00:16.538Z",
+  "updated_at": "2026-09-11T05:05:26.446Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138439:5544449069:2026-09-10T23:30:26Z:clawsweeper_needs_human",
-      "comment_id": "5544449069",
-      "comment_version_key": "5544449069:2026-09-10T23:30:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/138439#issuecomment-5544449069",
-      "comment_created_at": "2026-09-04T17:54:56Z",
-      "comment_updated_at": "2026-09-10T23:30:26Z",
-      "comment_body_sha256": "49d34b805028a34be977b0201f7084b6662af7ba965bd755f5fb2f64a486f1b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 138439,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing MCP or custom tool schema exceeding 256 traversal levels will stop materializing or building requests after upgrade even if it previously fit the JavaScript stack; deploym... (sha=3032d9b0e1049b67ab8a7d591c75bf46fdbbc9f6)",
-      "expected_head_sha": "3032d9b0e1049b67ab8a7d591c75bf46fdbbc9f6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T23:31:25.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-schema-depth-guard",
-        "head_sha": "3032d9b0e1049b67ab8a7d591c75bf46fdbbc9f6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138439:5572288194:2026-09-07T14:43:14Z:re_review",
       "comment_id": "5572288194",
@@ -33119,6 +33086,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:135895:5629750681:2026-09-11T05:04:29Z:re_review",
+      "comment_id": "5629750681",
+      "comment_version_key": "5629750681:2026-09-11T05:04:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/135895#issuecomment-5629750681",
+      "comment_created_at": "2026-09-11T05:04:29Z",
+      "comment_updated_at": "2026-09-11T05:04:29Z",
+      "comment_body_sha256": "1456dfb0fe1c7fa8a9f3897b271608f4d7433f403118719ed6aae89d40b1b423",
+      "repo": "openclaw/openclaw",
+      "issue_number": 135895,
+      "author": "lordratner",
+      "author_id": 49489398,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T05:05:24.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nextcloud-talk-inbound-media",
+        "head_sha": "fdabd35d152316a0eaf48515c790ce4cb5fc633b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
