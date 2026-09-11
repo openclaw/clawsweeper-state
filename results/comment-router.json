@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T19:16:42.270Z",
+  "updated_at": "2026-09-11T19:16:53.103Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5634281374:2026-09-11T12:14:17Z:re_review",
-      "comment_id": "5634281374",
-      "comment_version_key": "5634281374:2026-09-11T12:14:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5634281374",
-      "comment_created_at": "2026-09-11T12:14:17Z",
-      "comment_updated_at": "2026-09-11T12:14:17Z",
-      "comment_body_sha256": "bd7e6ba944fbf942d6907f4fdb9648ee7b6bdfca49fe3e846bc96fae48b8b1da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 36c34b43b0860674a64d642008f06af6a166ac20. the ci-found telegram lifecycle regression is fixed by restoring the existing cleanupaftergatewaystop-only transport contract; 67 focused tests, the full changed gate, and the real crabline↔bundled-discord e2e pass at this exact tree",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T12:15:36.997Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "36c34b43b0860674a64d642008f06af6a166ac20",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142173:5585642582:2026-09-11T12:15:20Z:clawsweeper_needs_human",
       "comment_id": "5585642582",
@@ -33628,6 +33581,39 @@
         "kind": "pull_request",
         "branch": "fix/daytona-fork-resource-labels",
         "head_sha": "1127cb90d417b7d50f9a63a36ed34ff12c5627ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1387:5611936000:2026-09-11T19:16:00Z:clawsweeper_needs_human",
+      "comment_id": "5611936000",
+      "comment_version_key": "5611936000:2026-09-11T19:16:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1387#issuecomment-5611936000",
+      "comment_created_at": "2026-09-10T02:53:33Z",
+      "comment_updated_at": "2026-09-11T19:16:00Z",
+      "comment_body_sha256": "0ea44047d3d27e20c0f6776c16c66464d596912979d48b501edb8ab205ad0022",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1387,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The replacement native pipe readers and deferred Process disposal have not completed the required integrated MXC run, leaving invocation availability and cleanup under that environmen... (sha=fc54e2ee07b21d40cd431eb42d396b2ad3618ca4)",
+      "expected_head_sha": "fc54e2ee07b21d40cd431eb42d396b2ad3618ca4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T19:16:53.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pr/1166",
+        "head_sha": "fc54e2ee07b21d40cd431eb42d396b2ad3618ca4",
         "cluster_id": null,
         "job_path": null
       }
