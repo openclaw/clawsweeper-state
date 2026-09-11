@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145280",
+  "mode": "autonomous",
+  "run_id": "34647300105",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34647300105",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145280.md",
+  "published_at": "2026-09-11T21:50:08.476Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145280",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145280",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported startup path on preflight main 9762b9ec1e44c3149bc828b7e2229862cd03cbd3 and prepared a narrow fix plan. Implementation and runtime reproduction are blocked by the read-only host and missing test dependencies. No files or GitHub state changed; no runtime validation or review is claimed.",
+  "actions": [
+    {
+      "target": "#145280",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145280",
+      "candidate_fix": null,
+      "reason": "A candidate-side startup repair remains warranted. Actual failing reproduction must precede implementation in a writable executor."
+    },
+    {
+      "target": "#145252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep the coordination tracker open; exclude unrelated timeout, trust, and diagnostics work."
+    },
+    {
+      "target": "#142633",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#144729",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical diagnostics repair, not a candidate fix for this collision."
+    },
+    {
+      "target": "#144858",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context outside this repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145280",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145280",
+      "candidate_fix": null,
+      "reason": "Prepare one new fix PR through the deterministic executor after failing reproduction, implementation, focused validation, and fresh review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
