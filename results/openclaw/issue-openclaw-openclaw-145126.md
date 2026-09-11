@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145126"
-mode: "autonomous"
-run_id: "34632273078"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34632273078"
+mode: "plan"
+run_id: "34641482781"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34641482781"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-11T19:36:53.156Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145126"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145126"
+published_at: "2026-09-11T21:04:26.383Z"
+canonical: "#145126"
+canonical_issue: "#145126"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34632273078](https://github.com/openclaw/clawsweeper/actions/runs/34632273078)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34641482781](https://github.com/openclaw/clawsweeper/actions/runs/34641482781)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145126
+Canonical: #145126
 
 ## Summary
 
-Verified the reported error path on preflight main ebb7cb266fb6ab0a054399b72f980b4cffa17447 and prepared a narrow fix artifact. Implementation and runtime reproduction are blocked here by the read-only filesystem and absent dependencies. No files or GitHub state changed.
+The reported handling gap remains on preflight main 3111f4a1eb164f5da6cecd5834dc5ddcd19a3035. Prepared a narrow fix plan; no code or GitHub mutations. Regression execution and Telegram proof remain implementation gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Verified the reported error path on preflight main ebb7cb266fb6ab0a054399b72f980
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145126 | fix_needed | planned | canonical | A bounded shared-handler bug remains supported by source. Executable reproduction must precede implementation in a writable, dependency-ready executor. |
-| #140085 | keep_related | planned | related | Distinct failure and remaining reproduction needs; retain outside this implementation. |
-| #126834 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-145126 | build_fix_artifact | planned | canonical | Hand the concrete repair plan to the deterministic executor for the single authorized branch and PR. |
+| #145126 | fix_needed | planned | canonical | A focused correction-notice repair fits the authorized bug-only scope. Keep the issue open; closure and merge are prohibited. |
+| #140085 | keep_related | planned | related | Initial delivery and post-timeout recovery are distinct from rejecting an incomplete answer to an already pending question. This fix does not establish coverage. |
+| #126834 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
 
 ## Needs Human
 
