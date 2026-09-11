@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T10:53:10.185Z",
+  "updated_at": "2026-09-11T10:53:24.367Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144624:5629038462:2026-09-11T03:50:52Z:clawsweeper_needs_human",
-      "comment_id": "5629038462",
-      "comment_version_key": "5629038462:2026-09-11T03:50:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144624#issuecomment-5629038462",
-      "comment_created_at": "2026-09-11T03:32:43Z",
-      "comment_updated_at": "2026-09-11T03:50:52Z",
-      "comment_body_sha256": "998d59e99265a1603df164d00cce1097d8845218917969956298aa0ead2807aa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144624,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing backups containing generic SQLite hardlinks outside the inventory will now fail, even for closed databases; operators must include every name before retrying. (sha=0d074b8388e50c1960b843b41b417264d426c90e)",
-      "expected_head_sha": "0d074b8388e50c1960b843b41b417264d426c90e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T03:51:48.800Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/issue-144585",
-        "head_sha": "0d074b8388e50c1960b843b41b417264d426c90e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144620:5629177996:2026-09-11T03:51:44Z:re_review",
       "comment_id": "5629177996",
@@ -32385,6 +32352,53 @@
         "kind": "pull_request",
         "branch": "fix/clawhub-clean-install-proof",
         "head_sha": "1552aab0b481da3dd139bea868a96895fef33013",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144852:5633364525:2026-09-11T10:52:31Z:re_review",
+      "comment_id": "5633364525",
+      "comment_version_key": "5633364525:2026-09-11T10:52:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144852#issuecomment-5633364525",
+      "comment_created_at": "2026-09-11T10:52:31Z",
+      "comment_updated_at": "2026-09-11T10:52:31Z",
+      "comment_body_sha256": "c82382cb2a77ba7da241668e1d155ad0edb41180641b9e10f69691944da61885",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144852,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T10:53:22.531Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-progress-scenario-cursor",
+        "head_sha": "f78200250217517299bdf85214323dc05029dc08",
         "cluster_id": null,
         "job_path": null
       },
