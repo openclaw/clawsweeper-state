@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-11T21:46:50.125Z",
+  "updated_at": "2026-09-11T21:47:45.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145021:5636599166:2026-09-11T15:15:58Z:re_review",
-      "comment_id": "5636599166",
-      "comment_version_key": "5636599166:2026-09-11T15:15:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/145021#issuecomment-5636599166",
-      "comment_created_at": "2026-09-11T15:15:58Z",
-      "comment_updated_at": "2026-09-11T15:15:58Z",
-      "comment_body_sha256": "ad4b8851d4cf00b5b485382956a425d015aff6bd3969951082d7427380d42780",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145021,
-      "author": "TheAngryPit",
-      "author_id": 7040636,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T15:17:01.847Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145025:5636605618:2026-09-11T15:16:29Z:clawsweeper_auto_repair",
       "comment_id": "5636605618",
@@ -33378,6 +33333,39 @@
         "kind": "pull_request",
         "branch": "feat/sheets-duplicate-tab-p4",
         "head_sha": "af7eee0c41ede469efbd1e233484645a9910bd33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1117:5641005541:2026-09-11T21:46:57Z:clawsweeper_needs_human",
+      "comment_id": "5641005541",
+      "comment_version_key": "5641005541:2026-09-11T21:46:57Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1117#issuecomment-5641005541",
+      "comment_created_at": "2026-09-11T21:46:57Z",
+      "comment_updated_at": "2026-09-11T21:46:57Z",
+      "comment_body_sha256": "032246d323ea20f2ef44d2b7011a4e3b272fb1b15220a290da9c0edd9853d47e",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1117,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Include the reserved Unreleased changelog entry in the coordinated landing, with the request/PR references and contributor thanks as required by repository policy. (sha=abc944e837f510abc68217ab70ca594c82c0389e)",
+      "expected_head_sha": "abc944e837f510abc68217ab70ca594c82c0389e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T21:47:45.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/drive-ls-sort-p4",
+        "head_sha": "abc944e837f510abc68217ab70ca594c82c0389e",
         "cluster_id": null,
         "job_path": null
       }
