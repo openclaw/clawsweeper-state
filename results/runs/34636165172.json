@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145116",
+  "mode": "plan",
+  "run_id": "34636165172",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34636165172",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145116.md",
+  "published_at": "2026-09-11T19:15:55.757Z",
+  "canonical": "#145116",
+  "canonical_issue": "#145116",
+  "canonical_pr": null,
+  "summary": "No new fix PR recommended. The canonical issue is already closed, and supplied main contains iterative lock acquisition and bulk regression coverage. Runtime reproduction was blocked by missing dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145116",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "canonical",
+      "canonical": "#145116",
+      "candidate_fix": null,
+      "reason": "The job's recursive source premise no longer matches supplied main. Stop implementation rather than create another repair without reproducing the defect."
+    },
+    {
+      "target": "#119720",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145116",
+      "candidate_fix": null,
+      "reason": "Shared session-maintenance area, but separate root cause and remaining work."
+    },
+    {
+      "target": "#127398",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145116",
+      "candidate_fix": null,
+      "reason": "Historical concurrency context; no closure or additional repair action."
+    },
+    {
+      "target": "#143241",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this credential-handling item to central OpenClaw security handling under the worker boundary. This is not a vulnerability finding and does not block the unrelated session-lock classification."
+    }
+  ],
+  "action_counts": {
+    "keep_closed": 2,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "skipped": 2,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
