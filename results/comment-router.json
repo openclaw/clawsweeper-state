@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-11T03:29:48.377Z",
+  "updated_at": "2026-09-11T03:30:48.366Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119055:5600802574:2026-09-09T11:04:38Z:re_review",
-      "comment_id": "5600802574",
-      "comment_version_key": "5600802574:2026-09-09T11:04:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119055#issuecomment-5600802574",
-      "comment_created_at": "2026-09-09T11:04:38Z",
-      "comment_updated_at": "2026-09-09T11:04:38Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119055,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T21:37:37.057Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119055:5605825894:2026-09-09T17:12:34Z:re_review",
       "comment_id": "5605825894",
@@ -33857,6 +33830,39 @@
       "status": "skipped",
       "processed_at": "2026-09-11T03:29:48.377Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144347:5624597271:2026-09-11T03:25:51Z:clawsweeper_needs_human",
+      "comment_id": "5624597271",
+      "comment_version_key": "5624597271:2026-09-11T03:25:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144347#issuecomment-5624597271",
+      "comment_created_at": "2026-09-10T19:55:01Z",
+      "comment_updated_at": "2026-09-11T03:25:51Z",
+      "comment_body_sha256": "42b3bd1438460162998e696c3d22f8cd86e90ff6b2c94e3489c000c1a87e8544",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144347,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party SDK callers relying on implicit sandbox source-parent expansion will lose attachment access until they supply trusted active-session context. (sha=aaaecd1fe3afeb9f39612bc1c26a0ced17507b28)",
+      "expected_head_sha": "aaaecd1fe3afeb9f39612bc1c26a0ced17507b28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T03:30:48.366Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1036",
+        "head_sha": "aaaecd1fe3afeb9f39612bc1c26a0ced17507b28",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
