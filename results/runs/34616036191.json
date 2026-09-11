@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145029",
+  "mode": "autonomous",
+  "run_id": "34616036191",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34616036191",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145029.md",
+  "published_at": "2026-09-11T15:40:23.042Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145029",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145029",
+  "canonical_pr": null,
+  "summary": "Confirmed the explanation gap in source at preflight main 21a5c18302119ae5c4cbf93ff0477393847dabaa. A narrow fix is planned; implementation and failing-regression proof are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145029",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#145029",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor to establish the failing dispatch regression, apply the prompt-only repair, and validate it. No unresolved product or security-boundary decision was identified."
+    },
+    {
+      "target": "#138701",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145029",
+      "candidate_fix": null,
+      "reason": "Historical context, not a complete fix for #145029 or an actionable open PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145029",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145029",
+      "candidate_fix": null,
+      "reason": "A focused new fix PR is appropriate once the executor establishes the required failing regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
