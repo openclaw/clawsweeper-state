@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145029"
-mode: "autonomous"
-run_id: "34616036191"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34616036191"
+mode: "plan"
+run_id: "34619072564"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34619072564"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-11T15:40:23.042Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145029"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145029"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-11T16:03:29.444Z"
+canonical: "#145029"
+canonical_issue: "#145029"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34616036191](https://github.com/openclaw/clawsweeper/actions/runs/34616036191)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34619072564](https://github.com/openclaw/clawsweeper/actions/runs/34619072564)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145029
+Canonical: #145029
 
 ## Summary
 
-Confirmed the explanation gap in source at preflight main 21a5c18302119ae5c4cbf93ff0477393847dabaa. A narrow fix is planned; implementation and failing-regression proof are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Plan a narrow recovery-prompt fix for #145029. Source inspection confirms the explanation gap in local main at 1846735b5d41932a573ff5927846e72fb11a850d, which differs from the preflight main SHA. No files or GitHub state changed. Runtime reproduction and fix validation remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed the explanation gap in source at preflight main 21a5c18302119ae5c4cbf9
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145029 | fix_needed | blocked | canonical | Implementation requires a writable executor to establish the failing dispatch regression, apply the prompt-only repair, and validate it. No unresolved product or security-boundary decision was identified. |
-| #138701 | keep_closed | skipped | related | Historical context, not a complete fix for #145029 or an actionable open PR. |
-| cluster:issue-openclaw-openclaw-145029 | build_fix_artifact | planned | canonical | A focused new fix PR is appropriate once the executor establishes the required failing regression. |
+| #145029 | fix_needed | planned | canonical | The remaining explanation gap is distinct from the merged Full Access repair. Prepare one implementation PR after reproducing the defect against refreshed main. |
+| #138701 | keep_closed | skipped | related | Historical Full Access recovery work; no reopening, replacement, or closure action is needed. |
 
 ## Needs Human
 
