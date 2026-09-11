@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T08:47:13.336Z",
+  "updated_at": "2026-09-11T08:47:30.565Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132136:5627818907:2026-09-11T01:07:02Z:re_review",
-      "comment_id": "5627818907",
-      "comment_version_key": "5627818907:2026-09-11T01:07:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132136#issuecomment-5627818907",
-      "comment_created_at": "2026-09-11T01:07:02Z",
-      "comment_updated_at": "2026-09-11T01:07:02Z",
-      "comment_body_sha256": "13d7d31ef287320ab810341fa2e827a0e260f3963a7cdc152948dc3b6c489a3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132136,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T01:10:58.875Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-image-set-aggregation",
-        "head_sha": "a0463eddeb56ff8642ebb7c04fd22a86a2d2c0fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142092:5583223951:2026-09-11T01:08:07Z:clawsweeper_needs_human",
       "comment_id": "5583223951",
@@ -33316,6 +33269,39 @@
         "kind": "pull_request",
         "branch": "stack/update-v6-plugin-authority",
         "head_sha": "5036d8199ddadf737f9580eb88c075a7f829d779",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144764:5631184313:2026-09-11T08:39:54Z:clawsweeper_auto_repair",
+      "comment_id": "5631184313",
+      "comment_version_key": "5631184313:2026-09-11T08:39:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144764#issuecomment-5631184313",
+      "comment_created_at": "2026-09-11T07:46:41Z",
+      "comment_updated_at": "2026-09-11T08:39:54Z",
+      "comment_body_sha256": "85aff3d283afa4729078adc7833935cb90f759d14c300ac4bf4e2224c72b492c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144764,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d266aa981312a025ce7734168b024b527a09f4d7)",
+      "expected_head_sha": "d266aa981312a025ce7734168b024b527a09f4d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T08:47:30.565Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-hot-apply-sentinel-144063",
+        "head_sha": "d266aa981312a025ce7734168b024b527a09f4d7",
         "cluster_id": null,
         "job_path": null
       }
