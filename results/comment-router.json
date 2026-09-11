@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:26:05.951Z",
+  "updated_at": "2026-09-11T22:26:14.512Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143327:5607101972:2026-09-11T16:03:55Z:clawsweeper_needs_human",
-      "comment_id": "5607101972",
-      "comment_version_key": "5607101972:2026-09-11T16:03:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5607101972",
-      "comment_created_at": "2026-09-09T18:54:48Z",
-      "comment_updated_at": "2026-09-11T16:03:55Z",
-      "comment_body_sha256": "cad43b4e5652c1e1449dc3ad3c7bc1460bb58ccb254f714550290e864fcef0d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143327,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied test reaches the production timeout owner through runEmbeddedAttempt with real timers and asserts successful continuation after a... (sha=175d5cfac3cd7b7d5869fc4c92104144f7f1937e)",
-      "expected_head_sha": "175d5cfac3cd7b7d5869fc4c92104144f7f1937e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T16:04:55.109Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
-        "head_sha": "175d5cfac3cd7b7d5869fc4c92104144f7f1937e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125345:5317843873:2026-09-11T16:07:36Z:clawsweeper_needs_human",
       "comment_id": "5317843873",
@@ -33168,6 +33135,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145298:5641322031:2026-09-11T22:25:16Z:re_review",
+      "comment_id": "5641322031",
+      "comment_version_key": "5641322031:2026-09-11T22:25:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145298#issuecomment-5641322031",
+      "comment_created_at": "2026-09-11T22:25:16Z",
+      "comment_updated_at": "2026-09-11T22:25:16Z",
+      "comment_body_sha256": "ff8d07d0ede7f3153ffdfea0f49072b301866f29cd41193b85070d29d2c71984",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145298,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T22:26:11.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/145266-git-dev-codex-host-authority",
+        "head_sha": "8117af8525c07a07aab05453b10ad8b29a18baad",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
