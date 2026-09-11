@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T02:28:45.851Z",
+  "updated_at": "2026-09-11T02:31:51.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144396:5625114729:2026-09-10T20:38:07Z:re_review",
-      "comment_id": "5625114729",
-      "comment_version_key": "5625114729:2026-09-10T20:38:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144396#issuecomment-5625114729",
-      "comment_created_at": "2026-09-10T20:38:07Z",
-      "comment_updated_at": "2026-09-10T20:38:07Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144396,
-      "author": "0xalydev",
-      "author_id": 325197450,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T20:38:59.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-retired-binding-session-deletion-144179",
-        "head_sha": "ec55915fa7b6e5e8591ec01057480fa77d54c771",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144396:5625118150:2026-09-10T20:38:25Z:re_review",
       "comment_id": "5625118150",
@@ -33760,6 +33713,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-search-reader-lifecycle-v2",
         "head_sha": "0b5a94b16ba74bde33d63135fe384a779ea1953f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144587:5628493402:2026-09-11T02:30:52Z:clawsweeper_needs_human",
+      "comment_id": "5628493402",
+      "comment_version_key": "5628493402:2026-09-11T02:30:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144587#issuecomment-5628493402",
+      "comment_created_at": "2026-09-11T02:22:14Z",
+      "comment_updated_at": "2026-09-11T02:30:52Z",
+      "comment_body_sha256": "bbee37cebb3673992077437ec3a3fcfcff9be65c99168fda5edcc0150811adb0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts; the resolved branch has not been reviewed or validated. (sha=80048788628ad66acf467401cfd714c7b091f82b)",
+      "expected_head_sha": "80048788628ad66acf467401cfd714c7b091f82b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T02:31:51.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/144476-exec-auto-reviewer-token-cap",
+        "head_sha": "80048788628ad66acf467401cfd714c7b091f82b",
         "cluster_id": null,
         "job_path": null
       }
