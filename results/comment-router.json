@@ -2,53 +2,6 @@
   "updated_at": "2026-09-11T07:55:53.409Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:144480:5627499238:2026-09-11T00:30:41Z:re_review",
-      "comment_id": "5627499238",
-      "comment_version_key": "5627499238:2026-09-11T00:30:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144480#issuecomment-5627499238",
-      "comment_created_at": "2026-09-11T00:30:41Z",
-      "comment_updated_at": "2026-09-11T00:30:41Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144480,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T00:37:24.688Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sidebar-asset-download",
-        "head_sha": "b653db18f399473f509f263f2b43d28f681ade3d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144480:5626740716:2026-09-11T00:36:30Z:clawsweeper_needs_human",
       "comment_id": "5626740716",
       "comment_version_key": "5626740716:2026-09-11T00:36:30Z",
@@ -33172,6 +33125,39 @@
         "kind": "pull_request",
         "branch": "refactor/workboard-controls",
         "head_sha": "3527f0396c5140a4d111e6270d371bb114057160",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144315:5624099169:2026-09-11T07:54:49Z:clawsweeper_needs_human",
+      "comment_id": "5624099169",
+      "comment_version_key": "5624099169:2026-09-11T07:54:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144315#issuecomment-5624099169",
+      "comment_created_at": "2026-09-10T19:14:33Z",
+      "comment_updated_at": "2026-09-11T07:54:49Z",
+      "comment_body_sha256": "145be0da10e55cc26cb909b80b44b14c75f237c711bd6a218fdfe985b64b4f64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144315,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported component execution covers include refusal, backup revocation, and compensation, but not...; Review finding: [P1] [P1] Recheck the captured owner before runtime finalization — src/config/io.runtime.ts:380-383 - [medium] Revoked executor can reach runtime publication — src... (sha=f0dcadd9af4fd253b4331be50cf7a5974c64de7a)",
+      "expected_head_sha": "f0dcadd9af4fd253b4331be50cf7a5974c64de7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T07:55:53.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/update-v6-config-authority",
+        "head_sha": "f0dcadd9af4fd253b4331be50cf7a5974c64de7a",
         "cluster_id": null,
         "job_path": null
       }
