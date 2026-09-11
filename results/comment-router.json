@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T02:01:06.414Z",
+  "updated_at": "2026-09-11T02:01:12.233Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144347:5624934442:2026-09-10T20:22:53Z:re_review",
-      "comment_id": "5624934442",
-      "comment_version_key": "5624934442:2026-09-10T20:22:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144347#issuecomment-5624934442",
-      "comment_created_at": "2026-09-10T20:22:53Z",
-      "comment_updated_at": "2026-09-10T20:22:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144347,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T20:23:48.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1036",
-        "head_sha": "e8ed5c9895f60304f1ae56cddcf31904a2417e0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144365:5624935820:2026-09-10T20:23:00Z:clawsweeper_needs_human",
       "comment_id": "5624935820",
@@ -33730,6 +33683,39 @@
         "kind": "pull_request",
         "branch": "codex/cua-ready-desktop",
         "head_sha": "c0e54be090d7c89e160a2ac5c758884434f70616",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144566:5628165893:2026-09-11T01:54:43Z:clawsweeper_needs_human",
+      "comment_id": "5628165893",
+      "comment_version_key": "5628165893:2026-09-11T01:54:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144566#issuecomment-5628165893",
+      "comment_created_at": "2026-09-11T01:44:58Z",
+      "comment_updated_at": "2026-09-11T01:54:43Z",
+      "comment_body_sha256": "4a3e8312318b4416d5cb6c7f552b428ffb170b5527eea5a249d0199563b13700",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144566,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed OAuth adapter has useful mocked DNS/auth/fetch coverage, but the captured body explicitly s... (sha=f6dc433d2151215c011600bac7b45abe759fce8a)",
+      "expected_head_sha": "f6dc433d2151215c011600bac7b45abe759fce8a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T02:01:12.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oauth-audio-private-network-opt-in",
+        "head_sha": "f6dc433d2151215c011600bac7b45abe759fce8a",
         "cluster_id": null,
         "job_path": null
       }
