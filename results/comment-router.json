@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T23:44:38.728Z",
+  "updated_at": "2026-09-11T23:45:04.381Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145003:5638174114:2026-09-11T17:26:30Z:re_review",
-      "comment_id": "5638174114",
-      "comment_version_key": "5638174114:2026-09-11T17:26:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145003#issuecomment-5638174114",
-      "comment_created_at": "2026-09-11T17:26:30Z",
-      "comment_updated_at": "2026-09-11T17:26:30Z",
-      "comment_body_sha256": "8ba686ad717ff01e6ee3b61188c10d373220298ae6965a39d12d7623b9954116",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145003,
-      "author": "FtlC-ian",
-      "author_id": 40432656,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T17:31:20.716Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "investigate/completion-recursion-main",
-        "head_sha": "86d2b14738874ee656a8dbc1f13e13e0e1f00986",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-09-06T21:23:36Z:clawsweeper_auto_repair",
       "comment_id": "5157206715",
@@ -33453,6 +33406,39 @@
         "kind": "pull_request",
         "branch": "codex/async-slack-presence-storage",
         "head_sha": "4a34fd13e4c4f51dcc08e23eab3af49652443160",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145051:5637185437:2026-09-11T23:44:01Z:clawsweeper_needs_human",
+      "comment_id": "5637185437",
+      "comment_version_key": "5637185437:2026-09-11T23:44:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145051#issuecomment-5637185437",
+      "comment_created_at": "2026-09-11T16:02:28Z",
+      "comment_updated_at": "2026-09-11T23:44:01Z",
+      "comment_body_sha256": "58f7f139b1e0a91094251c8949812f64cfa9a4c1f6b3c18f04dd396b3d51536a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145051,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Out-of-tree plugins using the unreleased generic login helpers need the documented registry, argument, and cleanup changes; no affected released consumer was identified. (sha=f428bbac1fffe5eb44e5e868d82af55df227e995)",
+      "expected_head_sha": "f428bbac1fffe5eb44e5e868d82af55df227e995",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T23:45:04.381Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ux-login-messaging",
+        "head_sha": "f428bbac1fffe5eb44e5e868d82af55df227e995",
         "cluster_id": null,
         "job_path": null
       }
