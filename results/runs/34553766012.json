@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144581",
+  "mode": "autonomous",
+  "run_id": "34553766012",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34553766012",
+  "head_sha": "c9a57f70fdab4c412fb73c769d2ebe2bb6492494",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144581.md",
+  "published_at": "2026-09-11T03:02:00.859Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144581",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144581",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported path-arithmetic defect against preflight main. Prepared a narrow fix plan; implementation and required native snapshot reproduction are blocked by the read-only Linux host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144581",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#144581",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked until a writable executor establishes the required failing snapshot-worker regression on Windows. The canonical bug classification is clear."
+    },
+    {
+      "target": "#142749",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#144581",
+      "candidate_fix": null,
+      "reason": "Historical context only; neither a repair target nor a fix for #144581."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144581",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#144581",
+      "candidate_fix": null,
+      "reason": "A narrow non-security fix remains justified; artifact preparation is possible despite the implementation-host blocker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
