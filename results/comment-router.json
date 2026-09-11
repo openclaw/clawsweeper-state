@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:58:50.143Z",
+  "updated_at": "2026-09-11T22:59:25.724Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110455:5384809441:2026-08-23T07:20:00Z:re_review",
-      "comment_id": "5384809441",
-      "comment_version_key": "5384809441:2026-08-23T07:20:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110455#issuecomment-5384809441",
-      "comment_created_at": "2026-08-23T07:20:00Z",
-      "comment_updated_at": "2026-08-23T07:20:00Z",
-      "comment_body_sha256": "52267c0bfe337bd5bf8c1e996fbc991375903c825d0e918ab07902626bb3498e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110455,
-      "author": "superdiaodiao",
-      "author_id": 42577861,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T16:36:19.124Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110455:5470032962:2026-08-30T16:57:26Z:re_review",
       "comment_id": "5470032962",
@@ -33317,6 +33290,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:19:5641577457:2026-09-11T22:58:26Z:clawsweeper_needs_human",
+      "comment_id": "5641577457",
+      "comment_version_key": "5641577457:2026-09-11T22:58:26Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/19#issuecomment-5641577457",
+      "comment_created_at": "2026-09-11T22:58:26Z",
+      "comment_updated_at": "2026-09-11T22:58:26Z",
+      "comment_body_sha256": "27dff01bfd96e301d0c659181abd8686265a63d06d8aba9ff35a4bdbd015defd",
+      "repo": "openclaw/telemetry",
+      "issue_number": 19,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing export commands targeting this checkout or its linked worktrees will stop with an error after upgrade, including the formerly documented ./results destination; operators must... (sha=23f03ee1b088a200ff0c1fc819a57c16108b442c)",
+      "expected_head_sha": "23f03ee1b088a200ff0c1fc819a57c16108b442c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:59:25.724Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/private-export-output-boundary",
+        "head_sha": "23f03ee1b088a200ff0c1fc819a57c16108b442c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
