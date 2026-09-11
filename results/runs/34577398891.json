@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-117144",
+  "mode": "autonomous",
+  "run_id": "34577398891",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34577398891",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-117144.md",
+  "published_at": "2026-09-11T08:47:08.937Z",
+  "canonical": "#117144",
+  "canonical_issue": null,
+  "canonical_pr": "#117144",
+  "summary": "Make PR #117144 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.",
+  "actions": [
+    {
+      "target": "#117144",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#117144",
+      "candidate_fix": "#117144",
+      "reason": "Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 1
+  },
+  "fix_counts": {
+    "failed": 1,
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "repair_contributor_branch",
+      "status": "failed",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=scripts, testRoot, tooling [check:changed] .github/workflows/ci.yml: tooling surface [check:changed] scripts/dist-runtime-build-artifact.mjs: tooling surface [check:changed] scripts/lib/workspace-bootstrap-smoke.mts: tooling surface [check:changed] test/scripts/ci-workflow-guards.test.ts: root test/support surface [check:changed] test/scripts/dist-runtime-build-artifact.test.ts: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- .github/workflows/ci.yml scripts/dist-runtime-build-artifact.mjs scripts/lib/workspace-bootstrap-smoke.mts test/scripts/ci-workflow-guards.test.ts test/scripts/dist-runtime-build-artifact.test.ts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] script TypeScript erasability $ node --disable-warning=ExperimentalWarning scripts/check-script-erasability.mjs [check:changed] typecheck scripts $ node scripts/run-tsgo.mjs -p tsconfig.scripts.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/scripts.tsbuildinfo [check:changed] typecheck test root $ node scripts/run-tsgo.mjs -p test/tsconfig/tsconfig.test.root.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/test-root.tsbuildinfo [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode full-tree unused-export scan produced no export sections. Error: ERR_PNPM_NO_OFFLINE_META × adding a new package ╰─▶ Failed to resolve knip@6.32.2 in package mirror \"/tmp/clawsweeper- target-user-kenLQH/cache/pnpm/v11/metadata/registry.npmjs.org/ knip.jsonl\" deadcode script unused-export scan produced no export sections. Error: ERR_PNPM_NO_OFFLINE_META × adding a new package ╰─▶ Failed to resolve knip@6.32.2 in package mirror \"/tmp/clawsweeper- target-user-kenLQH/cache/pnpm/v11/metadata/registry.npmjs.org/ knip.jsonl\" deadcode production unused-export scan produced no export sections. Error: ERR_PNPM_NO_OFFLINE_META × adding a new package ╰─▶ Failed to resolve knip@6.32.2 in package mirror \"/tmp/clawsweeper- target-user-kenLQH/cache/pnpm/v11/metadata/registry.npmjs.org/ knip.jsonl\" [check:changed] summary 211ms ok conflict markers 177ms ok changelog attributions 162ms ok doctor deprecation registry 173ms ok guarded extension wildcard re-exports 163ms ok plugin-sdk wildcard re-exports 243ms ok duplicate scan target coverage 259ms ok dependency pin guard 220ms ok format changed files 565ms ok package patch guard 767ms ok test temp creation report (warning-only) 27.99s ok core tsgo graph boundary 323ms ok script TypeScript erasability 21.49s ok typecheck scripts 19.91s ok typecheck test root 7.00s ok coercion helper declaration guard 121ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. [doctor-deprecation-registry] OK as of 2026-09-11 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 673 directly declared dependency specs across 182 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 46ms on 5 files using 8 threads. PASS package patch guard: no new pnpm patches; 6 approved patches allowlisted. [script-erasability] checked 629 TypeScript implementation files Coercion helper declaration guard passed (111 allowlisted declarations).",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "repair_contributor_branch",
+      "reason": "validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=scripts, testRoot, tooling [check:changed] .github/workflows/ci.yml: tooling surface [check:changed] scripts/dist-runtime-build-artifact.mjs: tooling surface [check:changed] scripts/lib/workspace-bootstrap-smoke.mts: tooling surface [check:changed] test/scripts/ci-workflow-guards.test.ts: root test/support surface [check:changed] test/scripts/dist-runtime-build-artifact.test.ts: root test/support surface [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- .github/workflows/ci.yml scripts/dist-runtime-build-artifact.mjs scripts/lib/workspace-bootstrap-smoke.mts test/scripts/ci-workflow-guards.test.ts test/scripts/dist-runtime-build-artifact.test.ts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] script TypeScript erasability $ node --disable-warning=ExperimentalWarning scripts/check-script-erasability.mjs [check:changed] typecheck scripts $ node scripts/run-tsgo.mjs -p tsconfig.scripts.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/scripts.tsbuildinfo [check:changed] typecheck test root $ node scripts/run-tsgo.mjs -p test/tsconfig/tsconfig.test.root.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/test-root.tsbuildinfo [check:changed] coercion helper declaration guard $ node --import ./scripts/tsx.mjs scripts/check-coercion-helper-declarations.mts [check:changed] dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) deadcode full-tree unused-export scan produced no export sections. Error: ERR_PNPM_NO_OFFLINE_META × adding a new package ╰─▶ Failed to resolve knip@6.32.2 in package mirror \"/tmp/clawsweeper- target-user-kenLQH/cache/pnpm/v11/metadata/registry.npmjs.org/ knip.jsonl\" deadcode script unused-export scan produced no export sections. Error: ERR_PNPM_NO_OFFLINE_META × adding a new package ╰─▶ Failed to resolve knip@6.32.2 in package mirror \"/tmp/clawsweeper- target-user-kenLQH/cache/pnpm/v11/metadata/registry.npmjs.org/ knip.jsonl\" deadcode production unused-export scan produced no export sections. Error: ERR_PNPM_NO_OFFLINE_META × adding a new package ╰─▶ Failed to resolve knip@6.32.2 in package mirror \"/tmp/clawsweeper- target-user-kenLQH/cache/pnpm/v11/metadata/registry.npmjs.org/ knip.jsonl\" [check:changed] summary 211ms ok conflict markers 177ms ok changelog attributions 162ms ok doctor deprecation registry 173ms ok guarded extension wildcard re-exports 163ms ok plugin-sdk wildcard re-exports 243ms ok duplicate scan target coverage 259ms ok dependency pin guard 220ms ok format changed files 565ms ok package patch guard 767ms ok test temp creation report (warning-only) 27.99s ok core tsgo graph boundary 323ms ok script TypeScript erasability 21.49s ok typecheck scripts 19.91s ok typecheck test root 7.00s ok coercion helper declaration guard 121ms failed:1 dead export scan (skip with OPENCLAW_CHECK_CHANGED_SKIP_DEADCODE=1) [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. [doctor-deprecation-registry] OK as of 2026-09-11 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 673 directly declared dependency specs across 182 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 46ms on 5 files using 8 threads. PASS package patch guard: no new pnpm patches; 6 approved patches allowlisted. [script-erasability] checked 629 TypeScript implementation files Coercion helper declaration guard passed (111 allowlisted declarations).",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "automerge_repair_outcome_comment",
+      "status": "updated",
+      "target": "#117144",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
