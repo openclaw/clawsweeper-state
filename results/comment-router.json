@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T15:31:57.448Z",
+  "updated_at": "2026-09-11T15:32:06.771Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144688:5632362609:2026-09-11T09:24:03Z:re_review",
-      "comment_id": "5632362609",
-      "comment_version_key": "5632362609:2026-09-11T09:24:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144688#issuecomment-5632362609",
-      "comment_created_at": "2026-09-11T09:24:03Z",
-      "comment_updated_at": "2026-09-11T09:24:03Z",
-      "comment_body_sha256": "ec7201a922de981b21eb232eaa8fdfefa9e73b7b745c8f079957e44691c5e2cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144688,
-      "author": "fszcd",
-      "author_id": 198843689,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T09:25:00.108Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-candidate-namespaced-state-paths",
-        "head_sha": "2b1f66c7b1f507c971320a5219c871832e6156bc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144805:5632364836:2026-09-11T09:24:15Z:clawsweeper_needs_human",
       "comment_id": "5632364836",
@@ -31959,6 +31912,39 @@
       "status": "waiting",
       "processed_at": "2026-09-11T15:31:57.448Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145033:5636794341:2026-09-11T15:31:09Z:clawsweeper_needs_human",
+      "comment_id": "5636794341",
+      "comment_version_key": "5636794341:2026-09-11T15:31:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145033#issuecomment-5636794341",
+      "comment_created_at": "2026-09-11T15:31:09Z",
+      "comment_updated_at": "2026-09-11T15:31:09Z",
+      "comment_body_sha256": "77733dcaf5a741a5e232990f1d56fc8043de864720d2d9cc3cc02069e1744b47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145033,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Before/after RSS is not included in the captured evidence, leaving the memory effect unquantified. (sha=cccb686dd7704bffd02075eba2039cf591376d37)",
+      "expected_head_sha": "cccb686dd7704bffd02075eba2039cf591376d37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T15:32:06.771Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/heartbeat-abort-imports",
+        "head_sha": "cccb686dd7704bffd02075eba2039cf591376d37",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
