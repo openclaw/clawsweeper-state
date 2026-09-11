@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T14:43:33.978Z",
+  "updated_at": "2026-09-11T14:43:36.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143976:5631744570:2026-09-11T08:37:29Z:re_review",
-      "comment_id": "5631744570",
-      "comment_version_key": "5631744570:2026-09-11T08:37:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143976#issuecomment-5631744570",
-      "comment_created_at": "2026-09-11T08:37:29Z",
-      "comment_updated_at": "2026-09-11T08:37:29Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143976,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T08:38:21.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-semantic-identity-20260910",
-        "head_sha": "95b76419144b48f24826c7769f59fd9a298c28c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144714:5631745404:2026-09-11T08:37:33Z:re_review",
       "comment_id": "5631745404",
@@ -31974,6 +31927,39 @@
         "kind": "pull_request",
         "branch": "fix/line-durable-crash-recovery",
         "head_sha": "23763edf5843a8d7915620042f768521fe1035c5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144967:5635758366:2026-09-11T14:42:37Z:clawsweeper_needs_human",
+      "comment_id": "5635758366",
+      "comment_version_key": "5635758366:2026-09-11T14:42:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144967#issuecomment-5635758366",
+      "comment_created_at": "2026-09-11T14:14:38Z",
+      "comment_updated_at": "2026-09-11T14:42:37Z",
+      "comment_body_sha256": "bd98d9e0130e2d4dc660c20def8212585ba69c992d273d77f0b28ed72b1de039",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144967,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The additive SDK formatter becomes a supported third-party contract; older producers intentionally retain legacy availability output when readiness metadata is absent. (sha=6956cd7e53f2e53bf852c2da2bb77919c2f78a15)",
+      "expected_head_sha": "6956cd7e53f2e53bf852c2da2bb77919c2f78a15",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T14:43:36.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ux-session-provider-leak",
+        "head_sha": "6956cd7e53f2e53bf852c2da2bb77919c2f78a15",
         "cluster_id": null,
         "job_path": null
       }
