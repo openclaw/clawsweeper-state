@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T12:18:13.224Z",
+  "updated_at": "2026-09-11T12:18:13.673Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144705:5630083046:2026-09-11T05:47:38Z:re_review",
-      "comment_id": "5630083046",
-      "comment_version_key": "5630083046:2026-09-11T05:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144705#issuecomment-5630083046",
-      "comment_created_at": "2026-09-11T05:47:38Z",
-      "comment_updated_at": "2026-09-11T05:47:38Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144705,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T05:48:24.516Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/native-device-settings-schema",
-        "head_sha": "5db756653b13c03e85ab13dd94452e151237f0e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143295:5630084023:2026-09-11T05:47:46Z:re_review",
       "comment_id": "5630084023",
@@ -32160,6 +32113,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144780:5631379728:2026-09-11T12:17:18Z:clawsweeper_needs_human",
+      "comment_id": "5631379728",
+      "comment_version_key": "5631379728:2026-09-11T12:17:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144780#issuecomment-5631379728",
+      "comment_created_at": "2026-09-11T08:05:28Z",
+      "comment_updated_at": "2026-09-11T12:17:18Z",
+      "comment_body_sha256": "7a0fc71dd1685edb69e8a000ebce6255408f2a2958447c6dd497074dd5df3a36",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144780,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: inspected Gateway evidence supports primary-only execution and restart-safe receipts, and Telegram tra...; Review finding: [P1] [P1] Preserve handwritten lists carrying the existing migration marker — src/commands/doctor/shared/model-policy-allowlist-repair.ts:162-169 - [medium] Histor... (sha=db08b186312718372216a6fba9dbe35827f59b57)",
+      "expected_head_sha": "db08b186312718372216a6fba9dbe35827f59b57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T12:18:13.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/allow-list-one-view",
+        "head_sha": "db08b186312718372216a6fba9dbe35827f59b57",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
