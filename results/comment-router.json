@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T07:19:32.358Z",
+  "updated_at": "2026-09-11T07:19:40.387Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123864:5627164688:2026-09-10T23:59:14Z:re_review",
-      "comment_id": "5627164688",
-      "comment_version_key": "5627164688:2026-09-10T23:59:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123864#issuecomment-5627164688",
-      "comment_created_at": "2026-09-10T23:59:14Z",
-      "comment_updated_at": "2026-09-10T23:59:14Z",
-      "comment_body_sha256": "066f68048fccc4197c6c7d11473a87e9252c4b9c0e3eeb1794930bef0aa416c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123864,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T00:00:12.308Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-reset-lifecycle-cas",
-        "head_sha": "abc63d838402f3bc2cd29a6dfd6e7a8081b6dba3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137969:5627168169:2026-09-10T23:59:40Z:re_review",
       "comment_id": "5627168169",
@@ -33445,6 +33398,39 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/npm_and_yarn-8adb6fa9e2",
         "head_sha": "62317c9d7b2fb15e67723ea90a55e446a55574bb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134438:5483655523:2026-09-11T07:14:34Z:clawsweeper_needs_human",
+      "comment_id": "5483655523",
+      "comment_version_key": "5483655523:2026-09-11T07:14:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134438#issuecomment-5483655523",
+      "comment_created_at": "2026-08-31T19:49:53Z",
+      "comment_updated_at": "2026-09-11T07:14:34Z",
+      "comment_body_sha256": "a245ab142f2d2dc4e08229c027b7a20a89340545bb4b9c326614d5097b13d031",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Listed-owner involvement required by repository policy remains unestablished; a requested team review alone does not demonstrate acceptance. (sha=8326c9cded23c0e787463c513e6b779086764a31)",
+      "expected_head_sha": "8326c9cded23c0e787463c513e6b779086764a31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T07:19:40.387Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/guard-api-retry-http-500",
+        "head_sha": "8326c9cded23c0e787463c513e6b779086764a31",
         "cluster_id": null,
         "job_path": null
       }
