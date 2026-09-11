@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-144859",
+  "mode": "autonomous",
+  "run_id": "34591694249",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34591694249",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-144859.md",
+  "published_at": "2026-09-11T11:45:29.959Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/144859",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/144859",
+  "canonical_pr": null,
+  "summary": "Confirmed the timeout loss against preflight main 227e7ae26af4e4f3f8a256c4fa808c7b046f4c88. Prepared a narrow fix artifact. Implementation and regression execution are blocked by the read-only host and missing test dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#144859",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#144859",
+      "candidate_fix": null,
+      "reason": "The existing update timeout is lost before readiness verification. Keep this issue as canonical while one implementation PR establishes and fixes the regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-144859",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#144859",
+      "candidate_fix": null,
+      "reason": "The fix plan is ready for the executor. Local implementation is blocked by host permissions and missing dependencies, not by unresolved product judgment. Require a failing regression before production edits."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
