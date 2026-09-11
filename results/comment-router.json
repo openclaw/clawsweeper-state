@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T19:20:45.552Z",
+  "updated_at": "2026-09-11T19:22:49.192Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3545:5634345743:2026-09-11T12:20:12Z:re_review",
-      "comment_id": "5634345743",
-      "comment_version_key": "5634345743:2026-09-11T12:20:12Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3545#issuecomment-5634345743",
-      "comment_created_at": "2026-09-11T12:20:12Z",
-      "comment_updated_at": "2026-09-11T12:20:12Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3545,
-      "author": "wicolian",
-      "author_id": 136704438,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T12:20:44.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ssh-remote-costs",
-        "head_sha": "fe4cf5f9fd815e398d77da4b1fb36a80ee27879d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3545:5625666755:2026-09-11T12:17:29Z:clawsweeper_auto_repair",
       "comment_id": "5625666755",
@@ -33615,6 +33568,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145191:5639541598:2026-09-11T19:21:50Z:clawsweeper_needs_human",
+      "comment_id": "5639541598",
+      "comment_version_key": "5639541598:2026-09-11T19:21:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145191#issuecomment-5639541598",
+      "comment_created_at": "2026-09-11T19:21:50Z",
+      "comment_updated_at": "2026-09-11T19:21:50Z",
+      "comment_body_sha256": "cab2a413811b7405e1915f57637404cb077eaa7aa144504c00ae3e98790d1038",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145191,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e9be88343e7897754dc500b8e33b625a5e5e161c)",
+      "expected_head_sha": "e9be88343e7897754dc500b8e33b625a5e5e161c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T19:22:49.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ws-heartbeat-ping-flush-20260911",
+        "head_sha": "e9be88343e7897754dc500b8e33b625a5e5e161c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
