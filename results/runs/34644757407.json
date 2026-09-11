@@ -1,0 +1,90 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145201",
+  "mode": "plan",
+  "run_id": "34644757407",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34644757407",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145201.md",
+  "published_at": "2026-09-11T20:43:59.250Z",
+  "canonical": "#145201",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145201",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for #145201 in the existing rich-to-plain classifier. The clean checkout matches preflight main 0f0ddbc12ca036908b87339c8329a3980873fae5 and still lacks the reported rejection wording. Runtime reproduction, implementation, tests, and Telegram proof remain pending. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#145201",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145201",
+      "candidate_fix": null,
+      "reason": "A specific rejection bypasses existing plain recovery. Reproduce on the execution-time main before implementing; stop if the regression does not reproduce."
+    },
+    {
+      "target": "#103458",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145201",
+      "candidate_fix": null,
+      "reason": "Client rollout and default-on policy are distinct from recovery after a definite API rejection."
+    },
+    {
+      "target": "#126246",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145201",
+      "candidate_fix": null,
+      "reason": "Immediate plain fallback does not resolve general ambiguous-send recovery or pipeline stalls."
+    },
+    {
+      "target": "#88810",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145201",
+      "candidate_fix": null,
+      "reason": "Already merged; no closeout or branch repair is needed."
+    },
+    {
+      "target": "#92413",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145201",
+      "candidate_fix": null,
+      "reason": "Historical transport work; not an open implementation candidate."
+    },
+    {
+      "target": "#92946",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145201",
+      "candidate_fix": null,
+      "reason": "Retain as historical context; the proposed repair recognizes one rejection rather than reviving broad transport fallback."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
