@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:44:59.734Z",
+  "updated_at": "2026-09-11T22:45:53.663Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144316:5637420676:2026-09-11T16:21:53Z:re_review",
-      "comment_id": "5637420676",
-      "comment_version_key": "5637420676:2026-09-11T16:21:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144316#issuecomment-5637420676",
-      "comment_created_at": "2026-09-11T16:21:53Z",
-      "comment_updated_at": "2026-09-11T16:21:53Z",
-      "comment_body_sha256": "481fa0eb6f872cae31551b109e8ae5844475107d0ad65c7d3800b4f72b073fa5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144316,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T16:22:55.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/update-v6-plugin-authority",
-        "head_sha": "e2b67cfd6b8403ee942c2afeda9ec34642e48510",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144925:5634768296:2026-09-11T16:22:24Z:clawsweeper_needs_human",
       "comment_id": "5634768296",
@@ -33311,6 +33264,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-profile-rename-consumers",
         "head_sha": "5d15d6698df7dc9bad34d159a091b9a06cd1860b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141301:5572800078:2026-09-11T22:39:29Z:clawsweeper_needs_human",
+      "comment_id": "5572800078",
+      "comment_version_key": "5572800078:2026-09-11T22:39:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141301#issuecomment-5572800078",
+      "comment_created_at": "2026-09-07T15:27:59Z",
+      "comment_updated_at": "2026-09-11T22:39:29Z",
+      "comment_body_sha256": "f77e0e1f2451209f588d77b5226b7694f2970917178bb8fa69210acf8bc0f48b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141301,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Listed security-owner acceptance of the restricted tests and credential-surface documentation remains unestablished. (sha=1a62a2db8e344ecd1aa2e6b0706cf344ae256c5e)",
+      "expected_head_sha": "1a62a2db8e344ecd1aa2e6b0706cf344ae256c5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:45:53.663Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-secret-refs",
+        "head_sha": "1a62a2db8e344ecd1aa2e6b0706cf344ae256c5e",
         "cluster_id": null,
         "job_path": null
       }
