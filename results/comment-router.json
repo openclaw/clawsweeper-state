@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T02:52:24.282Z",
+  "updated_at": "2026-09-11T02:53:24.892Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143501:5625435179:2026-09-10T21:06:09Z:re_review",
-      "comment_id": "5625435179",
-      "comment_version_key": "5625435179:2026-09-10T21:06:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143501#issuecomment-5625435179",
-      "comment_created_at": "2026-09-10T21:06:09Z",
-      "comment_updated_at": "2026-09-10T21:06:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143501,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-10T21:07:07.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1011",
-        "head_sha": "015d4c7d1093dc763ce07921998ed8bb0e4a67ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144412:5625454331:2026-09-10T21:07:48Z:clawsweeper_needs_human",
       "comment_id": "5625454331",
@@ -33673,6 +33626,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144596:5628732244:2026-09-11T02:52:33Z:clawsweeper_needs_human",
+      "comment_id": "5628732244",
+      "comment_version_key": "5628732244:2026-09-11T02:52:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144596#issuecomment-5628732244",
+      "comment_created_at": "2026-09-11T02:52:33Z",
+      "comment_updated_at": "2026-09-11T02:52:33Z",
+      "comment_body_sha256": "6dc67ed230c2508673b00781b1ec7ad30d5789187f3de516d10a8a4c25e3bdea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Linux tests exercise session-menu navigation with a mocked openclawLink handler; they do not exercise the macOS receiver or show t... (sha=31d45e2d3f82aadfe3aa57563df45f58412b991a)",
+      "expected_head_sha": "31d45e2d3f82aadfe3aa57563df45f58412b991a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T02:53:24.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-144582-macos-native-new-window",
+        "head_sha": "31d45e2d3f82aadfe3aa57563df45f58412b991a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
