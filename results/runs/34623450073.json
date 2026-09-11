@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145070",
+  "mode": "autonomous",
+  "run_id": "34623450073",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34623450073",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145070.md",
+  "published_at": "2026-09-11T17:31:38.464Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145070",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145070",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported inspection mismatch on preflight main 170b4827c8a8c5f34192b7785eb751e30612b995. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145070",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145070",
+      "candidate_fix": null,
+      "reason": "Doctor completion uses a runtime inspection that cannot satisfy the existing Linux identity contract."
+    },
+    {
+      "target": "#137377",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical Windows evidence does not establish resolution of the Linux defect."
+    },
+    {
+      "target": "#138934",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Different platform and failure sequence; the Linux Doctor caller repair does not cover this report."
+    },
+    {
+      "target": "#140908",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct reproduction and unresolved cause; retain as a separate investigation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145070",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145070",
+      "candidate_fix": null,
+      "reason": "Prepare a narrow caller repair, with reproduction and unloaded-unit authority checks required before publication."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145070",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#145070",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable isolated checkout with dependencies and an isolated Linux user-systemd environment before implementing, validating, and opening the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
