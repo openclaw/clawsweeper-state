@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T04:35:56.801Z",
+  "updated_at": "2026-09-11T04:57:24.395Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144480:5626740716:2026-09-10T23:19:36Z:clawsweeper_auto_repair",
-      "comment_id": "5626740716",
-      "comment_version_key": "5626740716:2026-09-10T23:19:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144480#issuecomment-5626740716",
-      "comment_created_at": "2026-09-10T23:19:36Z",
-      "comment_updated_at": "2026-09-10T23:19:36Z",
-      "comment_body_sha256": "e8d3493db1918f535254b56ce016a194203f7f66a84154d6ad0506b0a5704e91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144480,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8e23e32684295d9902a3a03622921e1f86028576)",
-      "expected_head_sha": "8e23e32684295d9902a3a03622921e1f86028576",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T23:21:50.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/sidebar-asset-download",
-        "head_sha": "8e23e32684295d9902a3a03622921e1f86028576",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144387:5625105274:2026-09-10T23:22:36Z:clawsweeper_needs_human",
       "comment_id": "5625105274",
@@ -33103,6 +33070,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144658:5629630876:2026-09-11T04:48:03Z:re_review",
+      "comment_id": "5629630876",
+      "comment_version_key": "5629630876:2026-09-11T04:48:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144658#issuecomment-5629630876",
+      "comment_created_at": "2026-09-11T04:48:03Z",
+      "comment_updated_at": "2026-09-11T04:48:03Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144658,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T04:57:22.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/test-audit-feishu-bot-menu-fixtures-20260911",
+        "head_sha": "c8c490c32c4f97180971445d708a8fdf069951fe",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
