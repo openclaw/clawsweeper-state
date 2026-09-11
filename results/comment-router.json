@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:14:56.680Z",
+  "updated_at": "2026-09-11T22:15:01.687Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143905:5637057026:2026-09-11T15:52:20Z:re_review",
-      "comment_id": "5637057026",
-      "comment_version_key": "5637057026:2026-09-11T15:52:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143905#issuecomment-5637057026",
-      "comment_created_at": "2026-09-11T15:52:20Z",
-      "comment_updated_at": "2026-09-11T15:52:20Z",
-      "comment_body_sha256": "eb262de827480341476d24f4b2e70b9d83c4a9923c85f1273d47737e9513dd7e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143905,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T15:57:07.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-native-child-custody",
-        "head_sha": "7793e227da75cba8352506a683b1470e8ad786a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "repair-loop-label-sweep:openclaw/openclaw:automerge:142626",
       "comment_id": "repair-loop-label-sweep:automerge:142626",
@@ -33184,6 +33137,39 @@
         "kind": "pull_request",
         "branch": "chore/phase4-deps-notes-20260911",
         "head_sha": "995c1b5ed1fc143a8f25b262ee2f4945aba7b5ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:30:5641234597:2026-09-11T22:14:09Z:clawsweeper_needs_human",
+      "comment_id": "5641234597",
+      "comment_version_key": "5641234597:2026-09-11T22:14:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/30#issuecomment-5641234597",
+      "comment_created_at": "2026-09-11T22:14:09Z",
+      "comment_updated_at": "2026-09-11T22:14:09Z",
+      "comment_body_sha256": "9ce8bdf73440f2cfd4494cfa6ac6d8587fbffa803c81b5b483eeaa367b5a66a9",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 30,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Repair an invalid existing runtime before reusing it (P2)** - If LocalState contains a truncated, malformed, or incompatible node.exe, this early return skips extraction. EnsureInstalledAsync subsequently reject...; Review finding: [P2] Repair an invalid existing runtime before reusing it — src/OpenClaw.Launcher/NodeRuntimeInstaller.cs:42-45 - [P2] Use one runtime version across build and lau... (sha=27cc6b84ac367786e8df3caa5d263726725bd657)",
+      "expected_head_sha": "27cc6b84ac367786e8df3caa5d263726725bd657",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T22:15:01.687Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/bundle-node-runtime",
+        "head_sha": "27cc6b84ac367786e8df3caa5d263726725bd657",
         "cluster_id": null,
         "job_path": null
       }
