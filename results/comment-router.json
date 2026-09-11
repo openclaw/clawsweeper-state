@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T17:46:23.253Z",
+  "updated_at": "2026-09-11T17:47:20.796Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144833:5633517498:2026-09-11T11:07:23Z:re_review",
-      "comment_id": "5633517498",
-      "comment_version_key": "5633517498:2026-09-11T11:07:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144833#issuecomment-5633517498",
-      "comment_created_at": "2026-09-11T11:07:23Z",
-      "comment_updated_at": "2026-09-11T11:07:23Z",
-      "comment_body_sha256": "510404d90db35a572ce9f2c6be1c197e44072e5e170bb863976402dfe13f15f4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144833,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T11:08:13.865Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/clawhub-clean-install-proof",
-        "head_sha": "1552aab0b481da3dd139bea868a96895fef33013",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144863:5633412784:2026-09-11T11:08:22Z:clawsweeper_needs_human",
       "comment_id": "5633412784",
@@ -33085,6 +33038,39 @@
         "kind": "pull_request",
         "branch": "codex/test-workboard-gateway-capture",
         "head_sha": "baafde9348505cbed3c37ac6ac1fb2cca70b3b2f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145061:5637409493:2026-09-11T17:45:59Z:clawsweeper_auto_repair",
+      "comment_id": "5637409493",
+      "comment_version_key": "5637409493:2026-09-11T17:45:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145061#issuecomment-5637409493",
+      "comment_created_at": "2026-09-11T16:20:55Z",
+      "comment_updated_at": "2026-09-11T17:45:59Z",
+      "comment_body_sha256": "dae0f92e6de973d986ab50db266e344aaf837c0b69a9bd287a737599c0e3977f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145061,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=07921eeb3e0a580b2e2e4c3f809c64b413522246)",
+      "expected_head_sha": "07921eeb3e0a580b2e2e4c3f809c64b413522246",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-11T17:47:20.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/compact-environment-picker",
+        "head_sha": "07921eeb3e0a580b2e2e4c3f809c64b413522246",
         "cluster_id": null,
         "job_path": null
       }
