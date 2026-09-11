@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T12:28:11.839Z",
+  "updated_at": "2026-09-11T12:28:47.973Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116249:5630619436:2026-09-11T06:49:40Z:re_review",
-      "comment_id": "5630619436",
-      "comment_version_key": "5630619436:2026-09-11T06:49:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116249#issuecomment-5630619436",
-      "comment_created_at": "2026-09-11T06:49:40Z",
-      "comment_updated_at": "2026-09-11T06:49:40Z",
-      "comment_body_sha256": "6837d59357af8ce11fcaac072383f48d33421eeabc623cb1d0cc2ba6239fda1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116249,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T06:50:34.224Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/anthropic-socket-retry-87407",
-        "head_sha": "77a4e1b04d0ed4c1eb459fff583f272cdd863ba0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-09-05T13:45:24Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -31947,6 +31900,39 @@
         "kind": "pull_request",
         "branch": "feat/ios-conversation-voice-20260909",
         "head_sha": "e05f023d14f49997f87744dfe064ceb7ee9151fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144902:5634251971:2026-09-11T12:27:37Z:clawsweeper_needs_human",
+      "comment_id": "5634251971",
+      "comment_version_key": "5634251971:2026-09-11T12:27:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144902#issuecomment-5634251971",
+      "comment_created_at": "2026-09-11T12:11:32Z",
+      "comment_updated_at": "2026-09-11T12:27:37Z",
+      "comment_body_sha256": "9425c6e14ec469fb219f3a002cb4c028ff0586bcc31d4d4ef2aff7f530d1c687",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing slow or concurrent known-length requests can newly receive 504 or 503; the shared buffering envelope and these operational tradeoffs lack explicit SecOps acceptance. (sha=cf6d822576c0d2293833f4fe909a18e4f87d06e4)",
+      "expected_head_sha": "cf6d822576c0d2293833f4fe909a18e4f87d06e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T12:28:47.973Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-proxy-media-content-length-20260911",
+        "head_sha": "cf6d822576c0d2293833f4fe909a18e4f87d06e4",
         "cluster_id": null,
         "job_path": null
       }
