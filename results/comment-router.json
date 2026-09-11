@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T02:11:33.667Z",
+  "updated_at": "2026-09-11T02:11:48.268Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144282:5623676360:2026-09-10T20:27:17Z:clawsweeper_needs_human",
-      "comment_id": "5623676360",
-      "comment_version_key": "5623676360:2026-09-10T20:27:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144282#issuecomment-5623676360",
-      "comment_created_at": "2026-09-10T18:40:31Z",
-      "comment_updated_at": "2026-09-10T20:27:17Z",
-      "comment_body_sha256": "bfc6e236142cd608a66bbd2c6e65a414a22d6017c307226a43bfef241b14e0b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144282,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported focused tests used an older Vitest version; validation with the repository’s pinned toolchain remains unverified. (sha=b99133ce0efe5500148411f796e2fb00fa13659d)",
-      "expected_head_sha": "b99133ce0efe5500148411f796e2fb00fa13659d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-10T20:33:33.540Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-placement-delivery-diagnostics",
-        "head_sha": "b99133ce0efe5500148411f796e2fb00fa13659d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144252:5623769598:2026-09-10T20:28:02Z:clawsweeper_auto_repair",
       "comment_id": "5623769598",
@@ -33741,6 +33708,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144554:5628397749:2026-09-11T02:10:52Z:re_review",
+      "comment_id": "5628397749",
+      "comment_version_key": "5628397749:2026-09-11T02:10:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144554#issuecomment-5628397749",
+      "comment_created_at": "2026-09-11T02:10:52Z",
+      "comment_updated_at": "2026-09-11T02:10:52Z",
+      "comment_body_sha256": "ff5e7320b7bedbf2ac3c8984adade5bc79cb4a379cc53cd66517c689726a2372",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144554,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T02:11:45.088Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-gateway-recovery",
+        "head_sha": "700e9a0374891c4b9cb4ced71995a0224254a28f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
