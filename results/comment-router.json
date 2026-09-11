@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T14:11:00.479Z",
+  "updated_at": "2026-09-11T14:11:02.742Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119735:5198106186:2026-09-04T03:52:56Z:clawsweeper_auto_repair",
-      "comment_id": "5198106186",
-      "comment_version_key": "5198106186:2026-09-04T03:52:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119735#issuecomment-5198106186",
-      "comment_created_at": "2026-08-05T22:26:45Z",
-      "comment_updated_at": "2026-09-04T03:52:56Z",
-      "comment_body_sha256": "93e1ee68b6731abc69eda82ca58031b68710056d1f1c8c767ed6448ee761c1e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119735,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f57eb9ab76670b2a0484db32e1e63ee9026ed190)",
-      "expected_head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T08:03:42.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-114169",
-        "head_sha": "f57eb9ab76670b2a0484db32e1e63ee9026ed190",
-        "cluster_id": "automerge-openclaw-openclaw-119735",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119735.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119735.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121050:5231352861:2026-09-03T00:43:54Z:clawsweeper_auto_repair",
       "comment_id": "5231352861",
@@ -32037,6 +31990,39 @@
         "kind": "pull_request",
         "branch": "codex/responses-endpoint-policy-reduction",
         "head_sha": "574ac12b00911319be7f8534b7f079a8f84f72f4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3622:5576129761:2026-09-11T14:10:01Z:clawsweeper_needs_human",
+      "comment_id": "5576129761",
+      "comment_version_key": "5576129761:2026-09-11T14:10:01Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3622#issuecomment-5576129761",
+      "comment_created_at": "2026-09-07T22:15:05Z",
+      "comment_updated_at": "2026-09-11T14:10:01Z",
+      "comment_body_sha256": "d48040e3fd6d2ada0f862053ca973467ef9768b0af51200ece29fa66fe7a0f72",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3622,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The Windows/Bun trace exercises the production publish handler’s rejection branches, but does not establish execution against real Con... (sha=d25c99fa4f403f2c0de001a08c4aa8386779b9df)",
+      "expected_head_sha": "d25c99fa4f403f2c0de001a08c4aa8386779b9df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T14:11:02.742Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-publish-legacy-zip-cleanup",
+        "head_sha": "d25c99fa4f403f2c0de001a08c4aa8386779b9df",
         "cluster_id": null,
         "job_path": null
       }
