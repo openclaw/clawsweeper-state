@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145099"
-mode: "autonomous"
-run_id: "34627513647"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34627513647"
+mode: "plan"
+run_id: "34630417895"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34630417895"
 head_sha: "e74b07a40a6ecb1c9743e17201ecca0d6114bce5"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-11T17:35:55.348Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-11T18:07:28.931Z"
 canonical: "https://github.com/openclaw/openclaw/issues/145099"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145099"
 canonical_pr: null
-actions_total: 4
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34627513647](https://github.com/openclaw/clawsweeper/actions/runs/34627513647)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34630417895](https://github.com/openclaw/clawsweeper/actions/runs/34630417895)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/145099
 
 ## Summary
 
-Confirmed the dropdown occlusion gap in preflight main. Implementation and runtime reproduction are blocked by the read-only checkout, missing dependencies, and unavailable macOS environment. No files or GitHub state changed; a narrow fix artifact is prepared.
+Plan one narrow dropdown occlusion fix for #145099. Source inspection supports the reported gap at the preflight main SHA. Runtime reproduction, dependency lifecycle inspection, and macOS visual proof remain required before publication. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,7 @@ Confirmed the dropdown occlusion gap in preflight main. Implementation and runti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145099 | fix_needed | blocked | canonical | The source-supported bug has a narrow repair path, but the required failing regression through the actual installed dropdown lifecycle cannot be established in this environment. Resume on a writable prepared checkout before editing production code. |
-| #140988 | keep_closed | skipped | related | Already merged; preserve as historical context. |
-| #144508 | keep_closed | skipped | related | Already merged; session ownership is separate from dropdown occlusion. |
-| cluster:issue-openclaw-openclaw-145099 | build_fix_artifact | planned | canonical | A focused adapter repair remains justified. The artifact is a handoff plan, not proof of reproduction or a validated branch; implementation must first satisfy the reproduction gate. |
+| https://github.com/openclaw/openclaw/issues/145099 | fix_needed | planned | canonical | Existing menu behavior needs repair through the shared dropdown adapter. No competing open implementation PR is present in the supplied artifact. |
 
 ## Needs Human
 
