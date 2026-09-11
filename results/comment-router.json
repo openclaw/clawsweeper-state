@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T10:07:04.980Z",
+  "updated_at": "2026-09-11T10:07:47.525Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:129191:5628564128:2026-09-11T02:31:04Z:re_review",
-      "comment_id": "5628564128",
-      "comment_version_key": "5628564128:2026-09-11T02:31:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129191#issuecomment-5628564128",
-      "comment_created_at": "2026-09-11T02:31:04Z",
-      "comment_updated_at": "2026-09-11T02:31:04Z",
-      "comment_body_sha256": "cf09275e8f71cbd469ff6bfe2d639afdccb646a78fd8e5974c28464532c27c1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129191,
-      "author": "igs-rogenlo",
-      "author_id": 161699971,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T02:31:56.807Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/wiki-bridge-ownership-visibility",
-        "head_sha": "656885b3666dd52712c039685b0be12aa4d868c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144588:5628568092:2026-09-11T02:31:35Z:clawsweeper_needs_human",
       "comment_id": "5628568092",
@@ -33119,6 +33072,39 @@
       "status": "skipped",
       "processed_at": "2026-09-11T10:07:04.980Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144099:5620261057:2026-09-11T10:06:49Z:clawsweeper_needs_human",
+      "comment_id": "5620261057",
+      "comment_version_key": "5620261057:2026-09-11T10:06:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144099#issuecomment-5620261057",
+      "comment_created_at": "2026-09-10T14:25:03Z",
+      "comment_updated_at": "2026-09-11T10:06:49Z",
+      "comment_body_sha256": "6abbde14f5c0884f3354de9153cec0d246bf59ae1bd9ed2185767812742afdca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144099,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with snapshot deletion failures can newly lose otherwise successful startup or diagnostic reads; a later successful process-exit retry does not undo the excepti... (sha=e79e3ea09af6df6105ce3aec080d6b32c05080e7)",
+      "expected_head_sha": "e79e3ea09af6df6105ce3aec080d6b32c05080e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T10:07:47.525Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-db-readonly-cleanup-swallowed-072",
+        "head_sha": "e79e3ea09af6df6105ce3aec080d6b32c05080e7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
