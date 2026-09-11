@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-11T16:47:00.449Z",
+  "updated_at": "2026-09-11T16:47:14.998Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89040:4883512442:2026-07-04T19:09:34Z:re_review",
-      "comment_id": "4883512442",
-      "comment_version_key": "4883512442:2026-07-04T19:09:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89040#issuecomment-4883512442",
-      "comment_created_at": "2026-07-04T19:09:34Z",
-      "comment_updated_at": "2026-07-04T19:09:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89040,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T10:34:06.451Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89040:4896498779:2026-07-06T18:49:15Z:re_review",
       "comment_id": "4896498779",
@@ -32606,6 +32579,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144768:5631236083:2026-09-11T16:46:13Z:clawsweeper_needs_human",
+      "comment_id": "5631236083",
+      "comment_version_key": "5631236083:2026-09-11T16:46:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144768#issuecomment-5631236083",
+      "comment_created_at": "2026-09-11T07:51:48Z",
+      "comment_updated_at": "2026-09-11T16:46:13Z",
+      "comment_body_sha256": "82d4eb18d21d52d135f33bea0cd6612be6081c0f0119c9349cef2e05ec8fd5bb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144768,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: retain the recorded Doctor/Gateway publication, session, withdrawal, and donor results, but add an all...; Review finding: [medium] Prove late account conflicts stop provider I/O — src/agents/model-auth-runtime-config.ts:104 (sha=7c1684c3b7f4d4dc6a0086b0e36a9ebb8662a406)",
+      "expected_head_sha": "7c1684c3b7f4d4dc6a0086b0e36a9ebb8662a406",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T16:47:14.998Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/provider-use-admission",
+        "head_sha": "7c1684c3b7f4d4dc6a0086b0e36a9ebb8662a406",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
