@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-11T22:53:41.863Z",
+  "updated_at": "2026-09-11T22:54:49.473Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145032:5636767118:2026-09-11T16:17:29Z:clawsweeper_needs_human",
-      "comment_id": "5636767118",
-      "comment_version_key": "5636767118:2026-09-11T16:17:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145032#issuecomment-5636767118",
-      "comment_created_at": "2026-09-11T15:29:00Z",
-      "comment_updated_at": "2026-09-11T16:17:29Z",
-      "comment_body_sha256": "3b698bfc9cf071da99cfff0eeee43dbbe83e1d3f38a059d1d64a8527c32c6b23",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145032,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Scripts using whitespace-only keys accepted by v2026.9.4 will fail locally after upgrading; the revised CLI cannot retry an existing pending action using that same key. No maintainer... (sha=9f5e4a2d88599c9c1dcdf6ea2a2041bcb3e7f559)",
-      "expected_head_sha": "9f5e4a2d88599c9c1dcdf6ea2a2041bcb3e7f559",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T16:34:20.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/nodes-invoke-idempotency-blank",
-        "head_sha": "9f5e4a2d88599c9c1dcdf6ea2a2041bcb3e7f559",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145033:5636794341:2026-09-11T16:22:07Z:clawsweeper_needs_human",
       "comment_id": "5636794341",
@@ -33248,6 +33215,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144316:5641544850:2026-09-11T22:53:47Z:re_review",
+      "comment_id": "5641544850",
+      "comment_version_key": "5641544850:2026-09-11T22:53:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144316#issuecomment-5641544850",
+      "comment_created_at": "2026-09-11T22:53:47Z",
+      "comment_updated_at": "2026-09-11T22:53:47Z",
+      "comment_body_sha256": "380a0a241a5ef7556b6c25023dfb0d6926da0a8bdc4581d150109c66172fae2c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144316,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-11T22:54:47.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "stack/update-v6-plugin-authority",
+        "head_sha": "da51bf37ddbbe49239f914e88bb8fd75b22a9c5f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
