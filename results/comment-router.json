@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T07:47:45.065Z",
+  "updated_at": "2026-09-11T07:47:52.330Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144508:5627461279:2026-09-11T00:27:17Z:re_review",
-      "comment_id": "5627461279",
-      "comment_version_key": "5627461279:2026-09-11T00:27:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144508#issuecomment-5627461279",
-      "comment_created_at": "2026-09-11T00:27:17Z",
-      "comment_updated_at": "2026-09-11T00:27:17Z",
-      "comment_body_sha256": "397ccdacfa71d9c67c9ee0558af81606beec318a01d61e2d86691cfc29ae2ea3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144508,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T00:28:21.600Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-local-browser-tabs",
-        "head_sha": "9f639c725df792ecb6c99400fd68450da0b7a50c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:135350:5497310366:2026-09-11T00:27:59Z:clawsweeper_needs_human",
       "comment_id": "5497310366",
@@ -33195,6 +33148,39 @@
         "kind": "pull_request",
         "branch": "feat/ios-catalog-protocol-consumers",
         "head_sha": "c3b8d6dfe111a942127baa7e1d236f346b1d3b87",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144764:5631184313:2026-09-11T07:46:41Z:clawsweeper_needs_human",
+      "comment_id": "5631184313",
+      "comment_version_key": "5631184313:2026-09-11T07:46:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144764#issuecomment-5631184313",
+      "comment_created_at": "2026-09-11T07:46:41Z",
+      "comment_updated_at": "2026-09-11T07:46:41Z",
+      "comment_body_sha256": "dcd7438d0830f65b08a01cc9313df0aca24f649db3c3ec53d252c866f727b8b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144764,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The terminal trace exercises unchanged restart classification, while mocked tests exercise the changed producer; no real configuration... (sha=c7b0f927e807618a1cf3ee327559849e1496e3ff)",
+      "expected_head_sha": "c7b0f927e807618a1cf3ee327559849e1496e3ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T07:47:52.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-hot-apply-sentinel-144063",
+        "head_sha": "c7b0f927e807618a1cf3ee327559849e1496e3ff",
         "cluster_id": null,
         "job_path": null
       }
