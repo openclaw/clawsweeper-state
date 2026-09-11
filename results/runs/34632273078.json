@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145126",
+  "mode": "autonomous",
+  "run_id": "34632273078",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34632273078",
+  "head_sha": "e74b07a40a6ecb1c9743e17201ecca0d6114bce5",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145126.md",
+  "published_at": "2026-09-11T19:36:53.156Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145126",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145126",
+  "canonical_pr": null,
+  "summary": "Verified the reported error path on preflight main ebb7cb266fb6ab0a054399b72f980b4cffa17447 and prepared a narrow fix artifact. Implementation and runtime reproduction are blocked here by the read-only filesystem and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145126",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145126",
+      "candidate_fix": null,
+      "reason": "A bounded shared-handler bug remains supported by source. Executable reproduction must precede implementation in a writable, dependency-ready executor."
+    },
+    {
+      "target": "#140085",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145126",
+      "candidate_fix": null,
+      "reason": "Distinct failure and remaining reproduction needs; retain outside this implementation."
+    },
+    {
+      "target": "#126834",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145126",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145126",
+      "candidate_fix": null,
+      "reason": "Hand the concrete repair plan to the deterministic executor for the single authorized branch and PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
