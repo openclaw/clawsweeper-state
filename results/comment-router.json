@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-11T23:09:44.538Z",
+  "updated_at": "2026-09-11T23:10:03.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144316:5637597434:2026-09-11T16:36:35Z:re_review",
-      "comment_id": "5637597434",
-      "comment_version_key": "5637597434:2026-09-11T16:36:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144316#issuecomment-5637597434",
-      "comment_created_at": "2026-09-11T16:36:35Z",
-      "comment_updated_at": "2026-09-11T16:36:35Z",
-      "comment_body_sha256": "5b002771cbe251b5d00af0d93038b73ee62427aed3217b6309fddae0c567d9e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144316,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T16:43:54.580Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/update-v6-plugin-authority",
-        "head_sha": "f0d2f0b4c8b44d6bac3a2b7525f6595d596457bf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143905:5637642942:2026-09-11T16:40:31Z:re_review",
       "comment_id": "5637642942",
@@ -33423,6 +33376,39 @@
         "kind": "pull_request",
         "branch": "fix/ux-login-discovery",
         "head_sha": "6a67c1df75fc3830c4ee2cde64e9c30de324e79c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144806:5632360481:2026-09-11T23:06:38Z:clawsweeper_needs_human",
+      "comment_id": "5632360481",
+      "comment_version_key": "5632360481:2026-09-11T23:06:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144806#issuecomment-5632360481",
+      "comment_created_at": "2026-09-11T09:23:52Z",
+      "comment_updated_at": "2026-09-11T23:06:38Z",
+      "comment_body_sha256": "3c7a17c48486b8973d1e00afeece479b804db9d470a87252ecfad47e211eb638",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144806,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, webhook callbacks using the ambient async-work signal will no longer receive cancellation when their triggering scope closes; plugins relying on that behavior could con... (sha=e9d92f7a5d758f019b1f42fd31ad83f13708169d)",
+      "expected_head_sha": "e9d92f7a5d758f019b1f42fd31ad83f13708169d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-11T23:10:03.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/issue-144788",
+        "head_sha": "e9d92f7a5d758f019b1f42fd31ad83f13708169d",
         "cluster_id": null,
         "job_path": null
       }
