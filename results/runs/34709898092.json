@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146268",
+  "mode": "autonomous",
+  "run_id": "34709898092",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34709898092",
+  "head_sha": "1853caed03ed1175b38412520c3a1f927e4674c3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146268.md",
+  "published_at": "2026-09-12T18:38:21.660Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/146268",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/146268",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow shared-validation fix on preflight main 8554267afb0ece9b9810979e5e56240861db4c1b. Implementation and required production-path reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed; the executor plan remains conditional on reproducing the defect.",
+  "actions": [
+    {
+      "target": "#146268",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146268",
+      "candidate_fix": null,
+      "reason": "The existing diagnostic contract can be shared without changing installation policy. Reproduce through the actual startup/probe boundary before implementing; stop for retriage if it does not reproduce."
+    },
+    {
+      "target": "#122021",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or parser change is warranted."
+    },
+    {
+      "target": "#144997",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing directory-command correction while sharing validation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-146268",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#146268",
+      "candidate_fix": null,
+      "reason": "Provide an executable handoff for a writable executor; reproduction must precede repair and publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#146268",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
