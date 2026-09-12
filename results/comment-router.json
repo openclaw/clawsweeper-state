@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T04:55:59.007Z",
+  "updated_at": "2026-09-12T04:56:11.600Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144853:5642178219:2026-09-12T00:29:18Z:re_review",
-      "comment_id": "5642178219",
-      "comment_version_key": "5642178219:2026-09-12T00:29:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144853#issuecomment-5642178219",
-      "comment_created_at": "2026-09-12T00:29:18Z",
-      "comment_updated_at": "2026-09-12T00:29:18Z",
-      "comment_body_sha256": "cecce972b243076d7309129f58286b594a6fb477766fa508aeecadbfec3d10b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144853,
-      "author": "JosephNatsu",
-      "author_id": 98800761,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T00:37:36.760Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/preserve-interleaved-widget-order",
-        "head_sha": "ad33f812b9028125e7216cef6b02af2ca5558100",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144853:5633290183:2026-09-12T00:36:33Z:clawsweeper_needs_human",
       "comment_id": "5633290183",
@@ -32880,6 +32833,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3576:5643343921:2026-09-12T04:55:23Z:clawsweeper_needs_human",
+      "comment_id": "5643343921",
+      "comment_version_key": "5643343921:2026-09-12T04:55:23Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3576#issuecomment-5643343921",
+      "comment_created_at": "2026-09-12T04:04:38Z",
+      "comment_updated_at": "2026-09-12T04:55:23Z",
+      "comment_body_sha256": "25581ca5e90c8abe973550ba420e3ea8e746acecce3f7d8b47858b0b617cc1a9",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3576,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=81ab16751f0044b8b7002dab3bf80f46d1de2b13)",
+      "expected_head_sha": "81ab16751f0044b8b7002dab3bf80f46d1de2b13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T04:56:11.600Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/groq-finite-rates",
+        "head_sha": "81ab16751f0044b8b7002dab3bf80f46d1de2b13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
