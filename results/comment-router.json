@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T22:39:32.173Z",
+  "updated_at": "2026-09-12T22:40:52.713Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5371132288:2026-08-21T14:20:49Z:re_review",
-      "comment_id": "5371132288",
-      "comment_version_key": "5371132288:2026-08-21T14:20:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5371132288",
-      "comment_created_at": "2026-08-21T14:20:49Z",
-      "comment_updated_at": "2026-08-21T14:20:49Z",
-      "comment_body_sha256": "6a3abddb1b186f206ddb51f613acd04bea04187d7894a255bf4552e5e521c1e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review `111c5f4529aaaafe10b6010985175f8bd428bef6`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T17:54:30.946Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5371757562:2026-08-21T15:16:04Z:re_review",
       "comment_id": "5371757562",
@@ -33720,6 +33693,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146262:5647625395:2026-09-12T22:39:47Z:clawsweeper_auto_repair",
+      "comment_id": "5647625395",
+      "comment_version_key": "5647625395:2026-09-12T22:39:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146262#issuecomment-5647625395",
+      "comment_created_at": "2026-09-12T17:49:12Z",
+      "comment_updated_at": "2026-09-12T22:39:47Z",
+      "comment_body_sha256": "a0301345ac8c014e6d8668d011c9fd7851f084164e096285f66b201f2e2e1d8e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146262,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9b2b5abd8e12ecd4a4b6fc318d2a0c2edcc3f84d)",
+      "expected_head_sha": "9b2b5abd8e12ecd4a4b6fc318d2a0c2edcc3f84d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T22:40:52.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-strict-recall-store-numbers",
+        "head_sha": "9b2b5abd8e12ecd4a4b6fc318d2a0c2edcc3f84d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
