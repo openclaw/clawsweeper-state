@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T17:51:37.543Z",
+  "updated_at": "2026-09-12T17:51:44.310Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145117:5638723135:2026-09-12T11:24:32Z:clawsweeper_needs_human",
-      "comment_id": "5638723135",
-      "comment_version_key": "5638723135:2026-09-12T11:24:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145117#issuecomment-5638723135",
-      "comment_created_at": "2026-09-11T18:06:59Z",
-      "comment_updated_at": "2026-09-12T11:24:32Z",
-      "comment_body_sha256": "41bf17d01e5abe00e87bf5e4717d4cd7a23c5b4c284d214697996a9bbbfb1627",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145117,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the terminal owner and SQLite store have focused coverage, but the captured body reports no successful...; Review finding: [medium] Prove restricted access after restart — src/gateway/server-methods/agent-wait.ts:31 (sha=62316c80c3d0f94f88b051976793197b810f7261)",
-      "expected_head_sha": "62316c80c3d0f94f88b051976793197b810f7261",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T11:26:47.710Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/durable-agent-run-terminal-receipts-v2",
-        "head_sha": "62316c80c3d0f94f88b051976793197b810f7261",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145219:5640000180:2026-09-12T11:22:31Z:clawsweeper_needs_human",
       "comment_id": "5640000180",
@@ -33796,6 +33763,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146084:5647632864:2026-09-12T17:50:35Z:re_review",
+      "comment_id": "5647632864",
+      "comment_version_key": "5647632864:2026-09-12T17:50:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146084#issuecomment-5647632864",
+      "comment_created_at": "2026-09-12T17:50:35Z",
+      "comment_updated_at": "2026-09-12T17:50:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146084,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T17:51:42.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1045",
+        "head_sha": "1f2a37d758b1d64aacfd7b7c1bcbd9558ebe6971",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
