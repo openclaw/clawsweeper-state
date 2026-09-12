@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T18:06:56.337Z",
+  "updated_at": "2026-09-12T18:07:09.295Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145848:5646155658:2026-09-12T13:23:14Z:re_review",
-      "comment_id": "5646155658",
-      "comment_version_key": "5646155658:2026-09-12T13:23:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145848#issuecomment-5646155658",
-      "comment_created_at": "2026-09-12T13:23:14Z",
-      "comment_updated_at": "2026-09-12T13:23:14Z",
-      "comment_body_sha256": "03c58ed5bfb2c84d29b2fdd461f31cae380cb0fb81e4e3d546d332eab0266777",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145848,
-      "author": "Anusha0501",
-      "author_id": 117845601,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T13:26:10.763Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-terminal-restore-noop",
-        "head_sha": "1311cd2732a9494c14b86bbc7259558d525b57e1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118806:5170245430:2026-09-05T08:04:19Z:clawsweeper_auto_repair",
       "comment_id": "5170245430",
@@ -32925,6 +32878,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-skill-probes-refresh-7006",
         "head_sha": "a0e38d7b2214120d3fbbbfdb9f54fd0f03b7d558",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:266:5647716999:2026-09-12T18:06:15Z:clawsweeper_needs_human",
+      "comment_id": "5647716999",
+      "comment_version_key": "5647716999:2026-09-12T18:06:15Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/266#issuecomment-5647716999",
+      "comment_created_at": "2026-09-12T18:06:15Z",
+      "comment_updated_at": "2026-09-12T18:06:15Z",
+      "comment_body_sha256": "7702f4c8aed990464539767c21747af88c9b8e3e3e57fbc1e55bccfba56c16e5",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports a relevant real child-process before/after result for the synchronous retry path, but provides no inspectable invocat... (sha=fc7bb93238fcc345e785ee7ef298654c5cf921ff)",
+      "expected_head_sha": "fc7bb93238fcc345e785ee7ef298654c5cf921ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T18:07:09.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/lock-zero-delay",
+        "head_sha": "fc7bb93238fcc345e785ee7ef298654c5cf921ff",
         "cluster_id": null,
         "job_path": null
       }
