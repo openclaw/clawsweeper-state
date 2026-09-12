@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T11:29:00.844Z",
+  "updated_at": "2026-09-12T11:29:37.511Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145190:5639510318:2026-09-12T05:41:55Z:clawsweeper_needs_human",
-      "comment_id": "5639510318",
-      "comment_version_key": "5639510318:2026-09-12T05:41:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145190#issuecomment-5639510318",
-      "comment_created_at": "2026-09-11T19:18:53Z",
-      "comment_updated_at": "2026-09-12T05:41:55Z",
-      "comment_body_sha256": "f4bdb508b02bf263a111397e3419a2fc2614a7507fb70d805f9febd10af61362",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145190,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Plugins relying on providerIds against v2026.9.4 can silently execute unscoped hooks; downstream adoption must honor the documented minimum host version. (sha=41371e829e44a404063e83e4352ac027675bf4ad)",
-      "expected_head_sha": "41371e829e44a404063e83e4352ac027675bf4ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T05:50:43.808Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ux-login-discovery",
-        "head_sha": "ad7ecff5cf4d014f6b412245bf758d9e1af1e236",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145305:5640937989:2026-09-12T05:44:15Z:clawsweeper_auto_repair",
       "comment_id": "5640937989",
@@ -33328,6 +33295,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145789:5645603554:2026-09-12T11:28:45Z:re_review",
+      "comment_id": "5645603554",
+      "comment_version_key": "5645603554:2026-09-12T11:28:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145789#issuecomment-5645603554",
+      "comment_created_at": "2026-09-12T11:28:45Z",
+      "comment_updated_at": "2026-09-12T11:28:45Z",
+      "comment_body_sha256": "68fff859080711a600639c5b57aafa3138781a3094b6102f4387581d5774d839",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145789,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T11:29:35.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-runtime-generation-watch",
+        "head_sha": "a83bac62d32a806cd061ec7f34a0b68775842112",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
