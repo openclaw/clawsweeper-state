@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T23:02:21.925Z",
+  "updated_at": "2026-09-12T23:02:42.568Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139868:5557589961:2026-09-12T18:04:38Z:clawsweeper_needs_human",
-      "comment_id": "5557589961",
-      "comment_version_key": "5557589961:2026-09-12T18:04:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139868#issuecomment-5557589961",
-      "comment_created_at": "2026-09-06T06:56:44Z",
-      "comment_updated_at": "2026-09-12T18:04:38Z",
-      "comment_body_sha256": "3cf3323069c9b74aef0ded61096e8da4f6ccc96970b8406bbced8e8ed2203882",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139868,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - On upgrade, existing custom baseUrl values gain permission to send credentials and request bodies to private destinations that were previously blocked; separate SDK/security-owner acc... (sha=548a8002bd7caa1afb8eff232e4bc7321f25a06d)",
-      "expected_head_sha": "548a8002bd7caa1afb8eff232e4bc7321f25a06d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T18:12:38.231Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "tavily-private-base-url",
-        "head_sha": "548a8002bd7caa1afb8eff232e4bc7321f25a06d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141179:5570175922:2026-09-12T18:07:05Z:clawsweeper_needs_human",
       "comment_id": "5570175922",
@@ -33884,6 +33851,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146356:5649269750:2026-09-12T23:01:41Z:re_review",
+      "comment_id": "5649269750",
+      "comment_version_key": "5649269750:2026-09-12T23:01:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146356#issuecomment-5649269750",
+      "comment_created_at": "2026-09-12T23:01:41Z",
+      "comment_updated_at": "2026-09-12T23:01:41Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146356,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T23:02:40.221Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1048",
+        "head_sha": "16aad4559aab8c0c3bb7d0d6dad4210289c95389",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
