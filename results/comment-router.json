@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T08:06:12.585Z",
+  "updated_at": "2026-09-12T08:06:18.962Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5300845356:2026-08-15T06:01:53Z:re_review",
-      "comment_id": "5300845356",
-      "comment_version_key": "5300845356:2026-08-15T06:01:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5300845356",
-      "comment_created_at": "2026-08-15T06:01:53Z",
-      "comment_updated_at": "2026-08-15T06:01:53Z",
-      "comment_body_sha256": "1312856a30147810a3724a9d733c664d0f910e650cbc98939885b030da2195da",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T04:01:59.253Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5300976254:2026-08-15T06:38:15Z:re_review",
       "comment_id": "5300976254",
@@ -32336,6 +32309,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145790:5644628977:2026-09-12T08:05:34Z:freeform_assist",
+      "comment_id": "5644628977",
+      "comment_version_key": "5644628977:2026-09-12T08:05:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145790#issuecomment-5644628977",
+      "comment_created_at": "2026-09-12T08:05:34Z",
+      "comment_updated_at": "2026-09-12T08:05:34Z",
+      "comment_body_sha256": "9d15eea8b4fe0e00b2fa51aae0d28baf4d74a167edf5529d793b1c83e1d7c51e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145790,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review\\n\\nreplacement head fixes the stable type boundary by using the typed runtime guard; focused install and runtime-path regressions plus core production/test types are green.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T08:06:16.831Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/7.33-repair-service-node",
+        "head_sha": "31d844b5d07e04efd0f170a79ac2f7666e9c05f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
