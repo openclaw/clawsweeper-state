@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T19:48:05.895Z",
+  "updated_at": "2026-09-12T19:48:18.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144542:5646807928:2026-09-12T15:25:02Z:re_review",
-      "comment_id": "5646807928",
-      "comment_version_key": "5646807928:2026-09-12T15:25:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144542#issuecomment-5646807928",
-      "comment_created_at": "2026-09-12T15:25:02Z",
-      "comment_updated_at": "2026-09-12T15:25:02Z",
-      "comment_body_sha256": "ce4ef474deed3d55113e4cca1f04ba0be418c3fd420f060945cfe260edf30ac4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144542,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T15:26:03.054Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw-85f/update-recovery-snapshot-cleanup",
-        "head_sha": "0184d2d731f4037902a67dc5603ade33649eebb0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133331:5469437793:2026-09-12T15:18:33Z:clawsweeper_needs_human",
       "comment_id": "5469437793",
@@ -33049,6 +33002,39 @@
         "kind": "pull_request",
         "branch": "docs/plain-english-pr-template",
         "head_sha": "4e3b8312a1d1bcb03a2d352254e0f944170b3fb4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/kitchen-sink:101:5648261628:2026-09-12T19:46:17Z:clawsweeper_needs_human",
+      "comment_id": "5648261628",
+      "comment_version_key": "5648261628:2026-09-12T19:46:17Z",
+      "comment_url": "https://github.com/openclaw/kitchen-sink/pull/101#issuecomment-5648261628",
+      "comment_created_at": "2026-09-12T19:46:17Z",
+      "comment_updated_at": "2026-09-12T19:46:17Z",
+      "comment_body_sha256": "522320709d316fb6e1d9091e4588c8e713b3e7f8bc5e3d2facc56e7399e6aa28",
+      "repo": "openclaw/kitchen-sink",
+      "issue_number": 101,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed owner is GitHub’s PR template: static checks establish its text, but no after-change editor or rendered-preview evidence was suppli... (sha=5ef113ea77d0e64ffdf9112ff1dec0026cce3c10)",
+      "expected_head_sha": "5ef113ea77d0e64ffdf9112ff1dec0026cce3c10",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T19:48:18.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/plain-english-pr-template",
+        "head_sha": "5ef113ea77d0e64ffdf9112ff1dec0026cce3c10",
         "cluster_id": null,
         "job_path": null
       }
