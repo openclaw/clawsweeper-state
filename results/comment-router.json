@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T14:12:20.604Z",
+  "updated_at": "2026-09-12T14:12:34.038Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145726:5644325735:2026-09-12T06:57:19Z:clawsweeper_auto_repair",
-      "comment_id": "5644325735",
-      "comment_version_key": "5644325735:2026-09-12T06:57:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145726#issuecomment-5644325735",
-      "comment_created_at": "2026-09-12T06:57:19Z",
-      "comment_updated_at": "2026-09-12T06:57:19Z",
-      "comment_body_sha256": "8a62de317c8ac73f4d03caabe67612224446328946aa88ba3cbb9f9660e2b8fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145726,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=312326507f6fe628b67e7e06f6caab106a8ab27f)",
-      "expected_head_sha": "312326507f6fe628b67e7e06f6caab106a8ab27f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T06:59:47.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "land/opencode-dispatch",
-        "head_sha": "312326507f6fe628b67e7e06f6caab106a8ab27f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3581:5644137218:2026-09-12T06:58:48Z:clawsweeper_needs_human",
       "comment_id": "5644137218",
@@ -33374,6 +33341,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:101866:5646399774:2026-09-12T14:11:39Z:re_review",
+      "comment_id": "5646399774",
+      "comment_version_key": "5646399774:2026-09-12T14:11:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/101866#issuecomment-5646399774",
+      "comment_created_at": "2026-09-12T14:11:39Z",
+      "comment_updated_at": "2026-09-12T14:11:39Z",
+      "comment_body_sha256": "b54e6577e422f2ac97f0e19c134a0de295ba21e55414e1d2333c477b7f4d2c37",
+      "repo": "openclaw/openclaw",
+      "issue_number": 101866,
+      "author": "amittell",
+      "author_id": 1388680,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T14:12:31.752Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/transcript-media-grounding-upstream",
+        "head_sha": "e8af2ea214f585270d404a737975b30b2bce7958",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
