@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145445"
-mode: "autonomous"
-run_id: "34662503323"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34662503323"
+mode: "plan"
+run_id: "34666220345"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34666220345"
 head_sha: "d47259a07a62294e032018259aaf117ef12ed4fe"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-12T01:47:58.958Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145445"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145445"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-12T01:59:43.777Z"
+canonical: "#145445"
+canonical_issue: "#145445"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34662503323](https://github.com/openclaw/clawsweeper/actions/runs/34662503323)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34666220345](https://github.com/openclaw/clawsweeper/actions/runs/34666220345)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145445
+Canonical: #145445
 
 ## Summary
 
-Source confirms the request/result mismatch on preflight main ab2219d36361f1538e5f772cb07bd3d04b1f969e. Narrow fix artifact prepared. Implementation and regression validation are blocked by the read-only host and missing dependencies; no files or GitHub state changed.
+Prepare one narrow fix for #145445. Source inspection confirms unconditional sharing on the preflight main SHA. Keep both linked feature requests separate. No changes made; failing regression and implementation validation remain executor gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Source confirms the request/result mismatch on preflight main ab2219d36361f1538e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145445 | fix_needed | planned | canonical | A narrow plugin-owned repair is supported by source. Establish the failing callback-level regression before implementation in a writable executor. |
-| #139279 | keep_related | planned | related | Progress cues and timeout policy are separate from incorrect request/result sharing. Leave open outside this repair. |
-| #139472 | keep_related | planned | related | Background delegation is a separate feature request. This repair preserves bounded single-flight execution. |
-| cluster:issue-openclaw-openclaw-145445 | build_fix_artifact | planned |  | The repair fits the authorized bug-only scope without config, SDK, provider, persistence, queue, or policy changes. |
-| cluster:issue-openclaw-openclaw-145445 | open_fix_pr | blocked |  | Blocked until a writable executor establishes the failing regression, implements the narrow repair, completes review and validation, and opens or updates the single authorized branch. |
+| #145445 | fix_needed | planned | canonical | A bounded plugin-owned repair is supported. Reproduce through the existing provider callback before implementing; do not publish if reproduction fails. |
+| #139279 | keep_related | planned | related | Progress cues and timeout policy are distinct from request/result correctness and remain outside this repair. |
+| #139472 | keep_related | planned | related | Background delegation is a separate capability. This repair preserves bounded single-flight execution. |
 
 ## Needs Human
 
