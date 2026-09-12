@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T11:00:58.893Z",
+  "updated_at": "2026-09-12T11:02:21.741Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5360009813:2026-08-20T18:24:29Z:re_review",
-      "comment_id": "5360009813",
-      "comment_version_key": "5360009813:2026-08-20T18:24:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5360009813",
-      "comment_created_at": "2026-08-20T18:24:29Z",
-      "comment_updated_at": "2026-08-20T18:24:29Z",
-      "comment_body_sha256": "109840ed6c7fc262003b61b431cbdf23e754bc5338f7313d2d6cd1417fa54079",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T05:41:42.717Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5360781950:2026-08-20T19:37:35Z:re_review",
       "comment_id": "5360781950",
@@ -33098,6 +33071,39 @@
       "status": "waiting",
       "processed_at": "2026-09-12T11:00:58.893Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144780:5631379728:2026-09-12T11:01:05Z:clawsweeper_needs_human",
+      "comment_id": "5631379728",
+      "comment_version_key": "5631379728:2026-09-12T11:01:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144780#issuecomment-5631379728",
+      "comment_created_at": "2026-09-11T08:05:28Z",
+      "comment_updated_at": "2026-09-12T11:01:05Z",
+      "comment_body_sha256": "89e26cf3ffc688a7c3418404a10c40723d72670caed3ddd7f8717c3655f1c1b5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144780,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing saved pins can remain stored while execution uses a different permitted default; final previous-state and published-updater evidence has not yet established preservation acro... (sha=f321319123c4e3ed5bb9a05e1790fe17a70d834f)",
+      "expected_head_sha": "f321319123c4e3ed5bb9a05e1790fe17a70d834f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T11:02:21.741Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/allow-list-one-view",
+        "head_sha": "f321319123c4e3ed5bb9a05e1790fe17a70d834f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
