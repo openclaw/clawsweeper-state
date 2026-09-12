@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T18:39:04.832Z",
+  "updated_at": "2026-09-12T18:39:16.376Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145219:5640000180:2026-09-12T14:22:03Z:clawsweeper_needs_human",
-      "comment_id": "5640000180",
-      "comment_version_key": "5640000180:2026-09-12T14:22:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145219#issuecomment-5640000180",
-      "comment_created_at": "2026-09-11T20:05:04Z",
-      "comment_updated_at": "2026-09-12T14:22:03Z",
-      "comment_body_sha256": "ec35d70615a94c650c1609ca35a5a45b91a6f1b24e5c7fc75384c34ad535e5ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145219,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Larger SQLite and service-command allowances can prolong genuine stalls and recovery downtime; the current hardware evidence has not completed activation and failure recovery. (sha=44a388157becd0ae6018a3ba77a3d934a736bfc4)",
-      "expected_head_sha": "44a388157becd0ae6018a3ba77a3d934a736bfc4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T14:23:12.836Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-timeout-budgets",
-        "head_sha": "44a388157becd0ae6018a3ba77a3d934a736bfc4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144987:5636227783:2026-09-12T14:22:17Z:clawsweeper_auto_repair",
       "comment_id": "5636227783",
@@ -32832,6 +32799,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146191:5647895391:2026-09-12T18:38:07Z:re_review",
+      "comment_id": "5647895391",
+      "comment_version_key": "5647895391:2026-09-12T18:38:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146191#issuecomment-5647895391",
+      "comment_created_at": "2026-09-12T18:38:07Z",
+      "comment_updated_at": "2026-09-12T18:38:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146191,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T18:39:14.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1052",
+        "head_sha": "9dd90fd537d523a7b4ed2fa2f049f69d3997065c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
