@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T07:57:51.481Z",
+  "updated_at": "2026-09-12T07:57:52.952Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337597313:2026-08-19T04:38:04Z:re_review",
-      "comment_id": "5337597313",
-      "comment_version_key": "5337597313:2026-08-19T04:38:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337597313",
-      "comment_created_at": "2026-08-19T04:38:04Z",
-      "comment_updated_at": "2026-08-19T04:38:04Z",
-      "comment_body_sha256": "e684be12e2b0f76990b59381145cbf2ae056b24d954d0b23701eeb41038f874e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T04:01:59.252Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5337631893:2026-08-19T04:43:30Z:re_review",
       "comment_id": "5337631893",
@@ -32156,6 +32129,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144819:5632578823:2026-09-12T07:56:49Z:clawsweeper_needs_human",
+      "comment_id": "5632578823",
+      "comment_version_key": "5632578823:2026-09-12T07:56:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144819#issuecomment-5632578823",
+      "comment_created_at": "2026-09-11T09:42:59Z",
+      "comment_updated_at": "2026-09-12T07:56:49Z",
+      "comment_body_sha256": "c52e4a024f41db70eeabdaee7acea902fc250874d93361f2212cf65389d8bf3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144819,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Windows evidence does not establish that descendants have stopped before installation reacquisition or parent validation; this path newly relies on the existing process Job. (sha=8814ffa29e2f0f6f7ae3f54c658c32784d03e4cb)",
+      "expected_head_sha": "8814ffa29e2f0f6f7ae3f54c658c32784d03e4cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T07:57:52.952Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-repair-runtime",
+        "head_sha": "8814ffa29e2f0f6f7ae3f54c658c32784d03e4cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
