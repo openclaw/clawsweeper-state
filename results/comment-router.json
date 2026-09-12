@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T20:51:19.403Z",
+  "updated_at": "2026-09-12T20:54:39.592Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146084:5646758760:2026-09-12T16:23:25Z:clawsweeper_needs_human",
-      "comment_id": "5646758760",
-      "comment_version_key": "5646758760:2026-09-12T16:23:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146084#issuecomment-5646758760",
-      "comment_created_at": "2026-09-12T15:16:01Z",
-      "comment_updated_at": "2026-09-12T16:23:25Z",
-      "comment_body_sha256": "ee0e35bcac98e5958795a83dbabd18fa23db8f1490e12621dcdfdd10f7a0682c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146084,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the RPC tests and SQLite/notifier unit tests do not show allowed delivery and rejected final effects through ca...; Review finding: [P1] Preserve notice isolation when a Control UI run adopts a campaign — src/gateway/update-run-notice.runtime.ts:28-31 - [medium] Campaign classification loses th... (sha=7f1792cce01a39acda76d715f1eaee9968e88b24)",
-      "expected_head_sha": "7f1792cce01a39acda76d715f1eaee9968e88b24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T16:24:21.333Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1045",
-        "head_sha": "7f1792cce01a39acda76d715f1eaee9968e88b24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126313:5342663494:2026-09-12T16:23:28Z:clawsweeper_auto_repair",
       "comment_id": "5342663494",
@@ -33227,6 +33194,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144502:5648620092:2026-09-12T20:52:34Z:re_review",
+      "comment_id": "5648620092",
+      "comment_version_key": "5648620092:2026-09-12T20:52:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/144502#issuecomment-5648620092",
+      "comment_created_at": "2026-09-12T20:52:34Z",
+      "comment_updated_at": "2026-09-12T20:52:34Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144502,
+      "author": "pdonizete",
+      "author_id": 2013236,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T20:54:38.020Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
