@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T15:26:05.104Z",
+  "updated_at": "2026-09-12T15:26:07.736Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117734:5608899903:2026-09-09T21:19:35Z:re_review",
-      "comment_id": "5608899903",
-      "comment_version_key": "5608899903:2026-09-09T21:19:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5608899903",
-      "comment_created_at": "2026-09-09T21:19:35Z",
-      "comment_updated_at": "2026-09-09T21:19:35Z",
-      "comment_body_sha256": "31c798fcfa63e93154f52f4d163e8f493b82a814f1f67e40cdf1373f2536a474",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T08:19:52.203Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145761:5644479320:2026-09-12T08:13:10Z:clawsweeper_needs_human",
       "comment_id": "5644479320",
@@ -33452,6 +33425,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133331:5469437793:2026-09-12T15:18:33Z:clawsweeper_needs_human",
+      "comment_id": "5469437793",
+      "comment_version_key": "5469437793:2026-09-12T15:18:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133331#issuecomment-5469437793",
+      "comment_created_at": "2026-08-30T15:01:34Z",
+      "comment_updated_at": "2026-09-12T15:18:33Z",
+      "comment_body_sha256": "bc549ae5309279d4a5997130a8b4c09ffca71c5b84cff7f89cb6ba96ec7b3631",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence exercises SessionsPage and real confirmation/modal owners with mocked session operations, covering cancellation and repla... (sha=146a01098c6a99027cb682a3ad9a330b6e6cc16d)",
+      "expected_head_sha": "146a01098c6a99027cb682a3ad9a330b6e6cc16d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T15:26:07.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-delete-all-archived-scope-race",
+        "head_sha": "146a01098c6a99027cb682a3ad9a330b6e6cc16d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
