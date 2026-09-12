@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T22:08:20.513Z",
+  "updated_at": "2026-09-12T22:08:31.751Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140380:5647642063:2026-09-12T17:52:19Z:re_review",
-      "comment_id": "5647642063",
-      "comment_version_key": "5647642063:2026-09-12T17:52:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140380#issuecomment-5647642063",
-      "comment_created_at": "2026-09-12T17:52:19Z",
-      "comment_updated_at": "2026-09-12T17:52:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140380,
-      "author": "PollyBot13",
-      "author_id": 261872620,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T17:53:16.762Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/memory-maintenance-status",
-        "head_sha": "4bca3fd906a771d144ce93d22e516fddcf7cfd8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146214:5647316835:2026-09-12T17:52:52Z:clawsweeper_needs_human",
       "comment_id": "5647316835",
@@ -32981,6 +32934,39 @@
         "kind": "pull_request",
         "branch": "fix/145740-agent-exec-auth-order-store-refs",
         "head_sha": "54df81efbea71f5b2cf71ffba28c074753c5f8c6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/oracle:492:5648912568:2026-09-12T22:07:28Z:clawsweeper_auto_repair",
+      "comment_id": "5648912568",
+      "comment_version_key": "5648912568:2026-09-12T22:07:28Z",
+      "comment_url": "https://github.com/steipete/oracle/pull/492#issuecomment-5648912568",
+      "comment_created_at": "2026-09-12T21:48:21Z",
+      "comment_updated_at": "2026-09-12T22:07:28Z",
+      "comment_body_sha256": "d64d61200a612fdb533ac803f139b7fa85ac56d8c7d49a9d7f8b4a1dc809ffcf",
+      "repo": "steipete/oracle",
+      "issue_number": 492,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=588abecdce628ff4f1bea98ebe7c9d3420518e54)",
+      "expected_head_sha": "588abecdce628ff4f1bea98ebe7c9d3420518e54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T22:08:31.751Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oracle-browser-provider-routing",
+        "head_sha": "588abecdce628ff4f1bea98ebe7c9d3420518e54",
         "cluster_id": null,
         "job_path": null
       }
