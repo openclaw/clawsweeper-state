@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T17:08:19.495Z",
+  "updated_at": "2026-09-12T17:08:28.568Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145790:5645223066:2026-09-12T10:05:40Z:re_review",
-      "comment_id": "5645223066",
-      "comment_version_key": "5645223066:2026-09-12T10:05:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145790#issuecomment-5645223066",
-      "comment_created_at": "2026-09-12T10:05:40Z",
-      "comment_updated_at": "2026-09-12T10:05:40Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145790,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T10:12:38.580Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/7.33-repair-service-node",
-        "head_sha": "95ef5142fe219e377ad76da2e5578859c48067ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145790:5644621056:2026-09-12T10:11:44Z:clawsweeper_needs_human",
       "comment_id": "5644621056",
@@ -33797,6 +33750,39 @@
         "kind": "pull_request",
         "branch": "codex/home-path-expansion",
         "head_sha": "4b7ea251ec22ccda394a9185f83067f4d6e1b178",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146172:5647104269:2026-09-12T17:07:41Z:clawsweeper_needs_human",
+      "comment_id": "5647104269",
+      "comment_version_key": "5647104269:2026-09-12T17:07:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146172#issuecomment-5647104269",
+      "comment_created_at": "2026-09-12T16:17:27Z",
+      "comment_updated_at": "2026-09-12T17:07:41Z",
+      "comment_body_sha256": "ce5966daae040b3bc92f23e6d85f8b723143756416a344c1af77f8fe57016fd5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146172,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserve the reported Node/Bun canonical reads and published-2026.9.4 upgrade, restart, restore, and d...; Review finding: [medium] Delegation refusal lacks canonical database-effect evidence — src/infra/state-database-coordinator.ts:437 (sha=058ce78c0ad7b93f47acfd883a27ae3632775907)",
+      "expected_head_sha": "058ce78c0ad7b93f47acfd883a27ae3632775907",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T17:08:28.568Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/shared-state-foundation-final",
+        "head_sha": "058ce78c0ad7b93f47acfd883a27ae3632775907",
         "cluster_id": null,
         "job_path": null
       }
