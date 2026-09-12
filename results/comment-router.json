@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T19:18:50.664Z",
+  "updated_at": "2026-09-12T19:19:24.540Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:258:5646595193:2026-09-12T15:03:23Z:clawsweeper_needs_human",
-      "comment_id": "5646595193",
-      "comment_version_key": "5646595193:2026-09-12T15:03:23Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/258#issuecomment-5646595193",
-      "comment_created_at": "2026-09-12T14:45:19Z",
-      "comment_updated_at": "2026-09-12T15:03:23Z",
-      "comment_body_sha256": "f845fa378de1f764876788fa2a1e52426dab46b8fdd25fc94e42705b8a26f28a",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 258,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed bounded readers have reported real-file unit tests with allocation/read spies, but no separate after-fix transcript demonstrates ca... (sha=48568f3507a45e47c65f0d3932977111716eff34)",
-      "expected_head_sha": "48568f3507a45e47c65f0d3932977111716eff34",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T15:04:15.454Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bounded-read-allocation",
-        "head_sha": "48568f3507a45e47c65f0d3932977111716eff34",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:260:5646690374:2026-09-12T15:03:26Z:clawsweeper_auto_repair",
       "comment_id": "5646690374",
@@ -32896,6 +32863,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143649:5648117210:2026-09-12T19:18:23Z:re_review",
+      "comment_id": "5648117210",
+      "comment_version_key": "5648117210:2026-09-12T19:18:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143649#issuecomment-5648117210",
+      "comment_created_at": "2026-09-12T19:18:23Z",
+      "comment_updated_at": "2026-09-12T19:18:23Z",
+      "comment_body_sha256": "d37eab8604a75b5fb81b580fd830e4e1cdcc9a8608ccb35a1150faf8fa354715",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143649,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T19:19:21.989Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/model-fallback-soft-error-138531",
+        "head_sha": "3857679d9460d7d2e7a952e132665c6169552adb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
