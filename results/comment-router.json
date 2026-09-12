@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T03:59:28.401Z",
+  "updated_at": "2026-09-12T04:00:14.101Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119589:5191500547:2026-09-05T03:02:33Z:clawsweeper_needs_human",
-      "comment_id": "5191500547",
-      "comment_version_key": "5191500547:2026-09-05T03:02:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119589#issuecomment-5191500547",
-      "comment_created_at": "2026-08-05T12:06:10Z",
-      "comment_updated_at": "2026-09-05T03:02:33Z",
-      "comment_body_sha256": "b0051d99fafd6a5e818bcd063d019b1ba10c86f0bc3ac12b5c3e30ef897e8844",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119589,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The WeChat failure has not been connected to an ACP producer, leaving the claimed repair owner unverified. (sha=61ed1c4b40db7738c45a67bbb69efc585bce9bf4)",
-      "expected_head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T23:18:21.529Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "clawsweeper/issue-openclaw-openclaw-92199",
-        "head_sha": "61ed1c4b40db7738c45a67bbb69efc585bce9bf4",
-        "cluster_id": "automerge-openclaw-openclaw-119589",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-119589.md"
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119983:5209715304:2026-09-04T03:52:15Z:clawsweeper_auto_repair",
       "comment_id": "5209715304",
@@ -33348,6 +33315,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145531:5643316892:2026-09-12T03:59:14Z:re_review",
+      "comment_id": "5643316892",
+      "comment_version_key": "5643316892:2026-09-12T03:59:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145531#issuecomment-5643316892",
+      "comment_created_at": "2026-09-12T03:59:14Z",
+      "comment_updated_at": "2026-09-12T03:59:14Z",
+      "comment_body_sha256": "5a8d2a90874c4ff304eec9c4191aa0f8d1dc59b66dc55eec2e812bfd1c21633c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145531,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T04:00:12.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/chat-send-during-history",
+        "head_sha": "51e89f10cbcadf8f7138b9d3b363e376f8483d97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
