@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146392"
-mode: "autonomous"
-run_id: "34716653527"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34716653527"
-head_sha: "4d43f8f5a62215e41ba180930e2ee72f21bf5ace"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34720080242"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34720080242"
+head_sha: "b6bc6ee2297cb438024c82138459113a91974fe8"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T21:11:23.150Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146392"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/146392"
+published_at: "2026-09-12T21:38:40.065Z"
+canonical: "#146392"
+canonical_issue: "#146392"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34716653527](https://github.com/openclaw/clawsweeper/actions/runs/34716653527)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34720080242](https://github.com/openclaw/clawsweeper/actions/runs/34720080242)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146392
+Canonical: #146392
 
 ## Summary
 
-Confirmed the PDF catalog omission on preflight main a0cd0b81391c73885079799ea80f4351c85552b8. Prepared a narrow fix plan. Local implementation is blocked by the read-only host; focused tests and changed-scope inspection failed before running because dependencies are missing. No files or GitHub state changed.
+Confirmed the PDF catalog omission by source inspection at preflight main 9b59fe4ef7da6444059d4fe4651b14097f13ab59. Prepared a narrow repair artifact. No files or GitHub state changed; executable regression and Doctor reproduction remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,8 @@ Confirmed the PDF catalog omission on preflight main a0cd0b81391c73885079799ea80
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146392 | fix_needed | planned | canonical | The source supports a narrow metadata repair. Executor must establish the failing regression on current main before implementation; local runtime reproduction and Doctor availability comparison remain unverified. |
-| #42726 | keep_closed | skipped | related | Historical context only. |
-| #43091 | keep_closed | skipped | related | Not an open repair candidate. |
-| #45269 | keep_closed | skipped | related | Provider and runtime selection are outside this PDF metadata repair. |
-| #57664 | keep_closed | skipped | related | Historical context only; preserve profile suppression behavior. |
-| #77801 | keep_closed | skipped | related | Historical context only; preserve declared-plugin diagnostics. |
-| cluster:issue-openclaw-openclaw-146392 | build_fix_artifact | planned |  | Artifact preparation is complete; editing, dependency installation, runtime reproduction, and repaired-branch validation require the writable executor. |
+| https://github.com/openclaw/openclaw/issues/146392 | fix_needed | planned | canonical | Repair existing catalog metadata, then prove unavailable and registered PDF behavior before publication. Historical warning fixes do not resolve this omission. |
+| https://github.com/openclaw/openclaw/issues/45269 | route_security | planned | security_sensitive | Quarantine this historical item for central security handling without public mutation or reopening. Its provider-related discussion is unnecessary for the PDF repair. |
 
 ## Needs Human
 
