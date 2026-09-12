@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T19:07:54.893Z",
+  "updated_at": "2026-09-12T19:09:13.691Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144834:5646637184:2026-09-12T14:53:20Z:re_review",
-      "comment_id": "5646637184",
-      "comment_version_key": "5646637184:2026-09-12T14:53:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144834#issuecomment-5646637184",
-      "comment_created_at": "2026-09-12T14:53:20Z",
-      "comment_updated_at": "2026-09-12T14:53:20Z",
-      "comment_body_sha256": "e2cdff3d91560b2d75f59265c0b3a55563114fe4ee16ee01e517a45f05109b5a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144834,
-      "author": "vantang",
-      "author_id": 16954599,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T14:54:14.362Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-silent-token",
-        "head_sha": "e9eb1d68cc6aae724b2c97ac96b4a5b53e579633",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146048:5646638802:2026-09-12T14:53:37Z:clawsweeper_needs_human",
       "comment_id": "5646638802",
@@ -32951,6 +32904,39 @@
         "kind": "pull_request",
         "branch": "codex/hot-reload-telegram-policy",
         "head_sha": "372c0cd32d2ff9b6cb99fdbdd4cacd49c8fd6139",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146190:5647186012:2026-09-12T19:08:24Z:clawsweeper_needs_human",
+      "comment_id": "5647186012",
+      "comment_version_key": "5647186012:2026-09-12T19:08:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146190#issuecomment-5647186012",
+      "comment_created_at": "2026-09-12T16:30:05Z",
+      "comment_updated_at": "2026-09-12T19:08:24Z",
+      "comment_body_sha256": "90669e342fbc677b7cd2b0687c78d640cd8725033d1276646efb164a5f23f08a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve surrounding-object context for configured patterns (P1)** - The earlier single-field example is fixed, but the prior compatibility blocker remains for rules using surrounding JSON. For example, /\"custom...; Review finding: [P1] Preserve surrounding-object context for configured patterns — src/logging/redact.ts:921-925 - [P1] Redact the completed file display message before encoding —... (sha=ef686b440924b493755b34e696bf775d26e0a45f)",
+      "expected_head_sha": "ef686b440924b493755b34e696bf775d26e0a45f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T19:09:13.691Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "bugloop/log-redaction-jsonl",
+        "head_sha": "ef686b440924b493755b34e696bf775d26e0a45f",
         "cluster_id": null,
         "job_path": null
       }
