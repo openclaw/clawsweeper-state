@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T06:07:50.354Z",
+  "updated_at": "2026-09-12T06:08:08.021Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145356:5641461096:2026-09-12T02:25:22Z:clawsweeper_needs_human",
-      "comment_id": "5641461096",
-      "comment_version_key": "5641461096:2026-09-12T02:25:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145356#issuecomment-5641461096",
-      "comment_created_at": "2026-09-11T22:42:25Z",
-      "comment_updated_at": "2026-09-12T02:25:22Z",
-      "comment_body_sha256": "a32fa0fecaa4e9bbfa190d7757acec9a995d554125adb97767b3091564348061",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145356,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Stable and beta source checkouts also switch from tracked registry copies to compiled bundles; an intentional registry version may stop taking effect unless explicitly selected throug... (sha=f28e9478f430422c28041ea03a36897f47014e49)",
-      "expected_head_sha": "f28e9478f430422c28041ea03a36897f47014e49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T02:40:50.689Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-git-plugin-convergence",
-        "head_sha": "f28e9478f430422c28041ea03a36897f47014e49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145369:5641603508:2026-09-12T02:25:22Z:clawsweeper_needs_human",
       "comment_id": "5641603508",
@@ -31836,6 +31803,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:82572:5644083321:2026-09-12T06:07:11Z:re_review",
+      "comment_id": "5644083321",
+      "comment_version_key": "5644083321:2026-09-12T06:07:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5644083321",
+      "comment_created_at": "2026-09-12T06:07:11Z",
+      "comment_updated_at": "2026-09-12T06:07:11Z",
+      "comment_body_sha256": "6f8a72cdbe4eba04f5be0bb598f0938a5054a1162341f324b9dd1fcfa0409dec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 82572,
+      "author": "jewseppi",
+      "author_id": 6901751,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T06:08:06.411Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/queue-followup-persistence",
+        "head_sha": "f6321e49d86054cabe4facd22b81be42782c5e52",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
