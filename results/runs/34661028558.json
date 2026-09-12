@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145371",
+  "mode": "autonomous",
+  "run_id": "34661028558",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34661028558",
+  "head_sha": "d47259a07a62294e032018259aaf117ef12ed4fe",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145371.md",
+  "published_at": "2026-09-12T01:30:02.108Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145371",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145371",
+  "canonical_pr": null,
+  "summary": "Source confirms the repeated-write path on preflight main a2faf04ef9b7f29f3091f29fd97229780a6e609a. Narrow fix artifact prepared; local implementation and runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145371",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on this host because filesystem access is read-only and node_modules is absent. The executor must establish a failing restored-run regression on refreshed main before changing production code."
+    },
+    {
+      "target": "#123107",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Keep this contributor's separate work open. Its review blockers belong to its own repair scope; this job neither replaces nor merges it."
+    },
+    {
+      "target": "#128812",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this item for central OpenClaw security handling without public mutation or incorporating its changes into this fix."
+    },
+    {
+      "target": "#145373",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Historical duplicate context only; no closure action is permitted or needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145371",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "A narrow ordinary bug fix remains justified by current source. The artifact hands implementation to a writable executor while preserving all reproduction and publication gates."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
