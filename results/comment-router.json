@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T15:07:13.732Z",
+  "updated_at": "2026-09-12T15:07:39.746Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144499:5644582921:2026-09-12T07:55:03Z:re_review",
-      "comment_id": "5644582921",
-      "comment_version_key": "5644582921:2026-09-12T07:55:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144499#issuecomment-5644582921",
-      "comment_created_at": "2026-09-12T07:55:03Z",
-      "comment_updated_at": "2026-09-12T07:55:03Z",
-      "comment_body_sha256": "83ad4b2dbbfdf0a1f73e58f3fb663b4fb30e457cbf7fe8914600601ef3905d93",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144499,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T07:57:49.273Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-stale-runtime-build",
-        "head_sha": "5372d8c38580d3f33146f3242be147b4071bf76e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144819:5632578823:2026-09-12T07:56:49Z:clawsweeper_needs_human",
       "comment_id": "5632578823",
@@ -33453,6 +33406,39 @@
         "kind": "pull_request",
         "branch": "bugloop/signal-delete-resolve",
         "head_sha": "5505650b428f853525fb081eaeea9b85b903807b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3497:5580990691:2026-09-12T15:00:49Z:clawsweeper_needs_human",
+      "comment_id": "5580990691",
+      "comment_version_key": "5580990691:2026-09-12T15:00:49Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3497#issuecomment-5580990691",
+      "comment_created_at": "2026-09-08T07:23:16Z",
+      "comment_updated_at": "2026-09-12T15:00:49Z",
+      "comment_body_sha256": "89a8b6570c2e672a05cbf8677dffbe14422e6d7e2f92273719fbc3240c2b9ffa",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3497,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured CodexBarCLI OAuth run with Grok 1.0.13 proves real renewal, resumed billing, and later CL...; Review finding: [medium] Credential-owner revocation coordination remains unproven — Sources/CodexBarCore/Providers/Grok/GrokSessionRecovery.swift:34 (sha=6573701321c78b750346a99bcc3790fd819b8326)",
+      "expected_head_sha": "6573701321c78b750346a99bcc3790fd819b8326",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T15:07:39.746Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/grok-session-recovery",
+        "head_sha": "6573701321c78b750346a99bcc3790fd819b8326",
         "cluster_id": null,
         "job_path": null
       }
