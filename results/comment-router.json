@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T22:27:15.641Z",
+  "updated_at": "2026-09-12T22:27:25.925Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5257625886:2026-08-11T19:06:51Z:re_review",
-      "comment_id": "5257625886",
-      "comment_version_key": "5257625886:2026-08-11T19:06:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5257625886",
-      "comment_created_at": "2026-08-11T19:06:51Z",
-      "comment_updated_at": "2026-08-11T19:06:51Z",
-      "comment_body_sha256": "f0439eaac18523f1214a6468b6a0ca5305f8be1098c7aeb516b70f0e1f2656e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T17:54:30.946Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5257754586:2026-08-11T19:19:21Z:re_review",
       "comment_id": "5257754586",
@@ -33406,6 +33379,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146409:5649097430:2026-09-12T22:26:22Z:re_review",
+      "comment_id": "5649097430",
+      "comment_version_key": "5649097430:2026-09-12T22:26:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146409#issuecomment-5649097430",
+      "comment_created_at": "2026-09-12T22:26:22Z",
+      "comment_updated_at": "2026-09-12T22:26:22Z",
+      "comment_body_sha256": "6217a0097ff818a760e625002425a47516a3b7dacc227033e6b949cf80bb8162",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146409,
+      "author": "eleqtrizit",
+      "author_id": 31522568,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — note: the branch was rebased onto current upstream/main (upstream #146412 fixed the unrelated `server-startup-finish.ts` sidecar type error that our earlier base carried, which was failing `check-prod-types`/`check-lint`/`check-test-types`). new head: `67cebd8744c748e6c83627ea81b6ae6146f303e6`. code content of the fix and its tests is unchanged (rebase only); 67/67 focused tests rerun green on the new head. the owner-acceptance and fresh/upgrade verification comment above still applies. please review this head instead of the previously queued `4e23d151`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T22:27:23.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1054",
+        "head_sha": "67cebd8744c748e6c83627ea81b6ae6146f303e6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
