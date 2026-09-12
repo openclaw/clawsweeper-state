@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145371"
-mode: "plan"
-run_id: "34665277024"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34665277024"
-head_sha: "d47259a07a62294e032018259aaf117ef12ed4fe"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-12T01:40:58.629Z"
-canonical: "#145371"
-canonical_issue: "#145371"
+mode: "autonomous"
+run_id: "34668102227"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34668102227"
+head_sha: "7cd87fe405a92bd1cd605f39feab4e61aec2c2a8"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-12T03:23:05.274Z"
+canonical: "https://github.com/openclaw/openclaw/issues/145371"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/145371"
 canonical_pr: null
-actions_total: 4
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34665277024](https://github.com/openclaw/clawsweeper/actions/runs/34665277024)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34668102227](https://github.com/openclaw/clawsweeper/actions/runs/34668102227)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #145371
+Canonical: https://github.com/openclaw/openclaw/issues/145371
 
 ## Summary
 
-Plan a narrow fix for #145371. Source inspection at preflight main e4129b6375e3179be5d9ed0a56a35f2871f4e73b supports redundant task persistence and mirrored-flow revision increments. No files or GitHub state changed; runtime reproduction and implementation validation remain required.
+Source inspection supports the repeated-write defect. Prepared a narrow fix artifact; implementation and regression execution are blocked by the read-only host and missing dependencies. The checkout also differs from the preflight main SHA. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,12 @@ Plan a narrow fix for #145371. Source inspection at preflight main e4129b6375e31
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145371 | fix_needed | planned | canonical | Prepare one implementation on clawsweeper/issue-openclaw-openclaw-145371, contingent on a failing current-main regression. Closing and merging are prohibited. |
-| #123107 | keep_related | planned | related | Keep this contributor's distinct work open. It is neither a duplicate nor an implementation owner for #145371; its review blockers remain outside this repair. |
-| #128812 | route_security | planned | security_sensitive | Route only this PR to central OpenClaw security handling. Do not modify, comment on, close, merge, or incorporate its patch. |
-| #145373 | keep_closed | skipped | duplicate | Historical duplicate context only; no further closure action. |
+| #145371 | fix_needed | planned | canonical | Repair equivalent writes in the existing task and mirrored-flow owners after reconciling current main and establishing the required failing restore regression. |
+| #123107 | keep_related | planned | related | Separate useful contributor work. Its unresolved findings remain with that PR and do not justify adopting or replacing it for this issue. |
+| #128812 | route_security | planned | security_sensitive | Route only this item to central OpenClaw security handling. The projection no-op repair does not depend on its cancellation changes. |
+| #145373 | keep_closed | skipped | duplicate | Historical duplicate evidence; no closure action is needed or authorized. |
+| cluster:issue-openclaw-openclaw-145371 | build_fix_artifact | planned |  | A narrow non-security fix remains appropriate, subject to reproduction on reconciled current main. |
+| cluster:issue-openclaw-openclaw-145371 | open_fix_pr | blocked |  | Implementation and publication require the writable executor to reconcile main, reproduce, patch, validate, obtain fresh review, and recheck the existing fix owner before opening or updating the single issue branch. |
 
 ## Needs Human
 

@@ -1,0 +1,94 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145371",
+  "mode": "autonomous",
+  "run_id": "34668102227",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34668102227",
+  "head_sha": "7cd87fe405a92bd1cd605f39feab4e61aec2c2a8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145371.md",
+  "published_at": "2026-09-12T03:23:05.274Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145371",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145371",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the repeated-write defect. Prepared a narrow fix artifact; implementation and regression execution are blocked by the read-only host and missing dependencies. The checkout also differs from the preflight main SHA. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145371",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Repair equivalent writes in the existing task and mirrored-flow owners after reconciling current main and establishing the required failing restore regression."
+    },
+    {
+      "target": "#123107",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate useful contributor work. Its unresolved findings remain with that PR and do not justify adopting or replacing it for this issue."
+    },
+    {
+      "target": "#128812",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this item to central OpenClaw security handling. The projection no-op repair does not depend on its cancellation changes."
+    },
+    {
+      "target": "#145373",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Historical duplicate evidence; no closure action is needed or authorized."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145371",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "A narrow non-security fix remains appropriate, subject to reproduction on reconciled current main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145371",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#145371",
+      "candidate_fix": null,
+      "reason": "Implementation and publication require the writable executor to reconcile main, reproduce, patch, validate, obtain fresh review, and recheck the existing fix owner before opening or updating the single issue branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
