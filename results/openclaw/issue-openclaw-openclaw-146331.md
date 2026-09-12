@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146331"
-mode: "autonomous"
-run_id: "34713199486"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34713199486"
-head_sha: "4d43f8f5a62215e41ba180930e2ee72f21bf5ace"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-12T19:52:49.069Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146331"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/146331"
+mode: "plan"
+run_id: "34717343843"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34717343843"
+head_sha: "f50781132bce6ae7c7841e6f74149df3a30ba848"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-12T20:39:41.876Z"
+canonical: "146331"
+canonical_issue: "146331"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34713199486](https://github.com/openclaw/clawsweeper/actions/runs/34713199486)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34717343843](https://github.com/openclaw/clawsweeper/actions/runs/34717343843)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146331
+Canonical: 146331
 
 ## Summary
 
-Source inspection confirms the reported ordering defect at preflight main f5400066cea144a99db4464f537b78b52119e1ee. A narrow fix artifact is ready for the executor. Implementation and executable reproduction are blocked here by the read-only filesystem and absent dependencies. No files or GitHub state were changed.
+Plan one narrow fix for #146331. The checkout matches preflight main 94874581abcc3880ef22fd27ec87d58aeebe9354, and source inspection confirms normalization follows boundary capture. Executable reproduction and validation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Source inspection confirms the reported ordering defect at preflight main f54000
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146331 | fix_needed | planned | canonical | The source supports a bounded existing-behavior bug. The executor must reproduce it before implementing the repair. |
-| #128509 | keep_related | planned | related | Keep this distinct contract discussion open and outside the implementation scope. |
-| cluster:issue-openclaw-openclaw-146331 | build_fix_artifact | planned |  | Hand off the narrow repair to a writable executor, with failing reproduction required before production edits or publication. |
+| https://github.com/openclaw/openclaw/issues/146331 | fix_needed | planned | canonical | Prepare a regression-first implementation on the designated branch. Opening a PR remains contingent on reproducing the defect and passing validation. |
+| https://github.com/openclaw/openclaw/issues/128509 | keep_related | planned | related | Retain separately. Its public-contract question is outside this replay-boundary fix and does not block the narrow repair. |
 
 ## Needs Human
 
