@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T19:42:31.448Z",
+  "updated_at": "2026-09-12T19:42:56.907Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145848:5645044279:2026-09-12T14:50:40Z:clawsweeper_needs_human",
-      "comment_id": "5645044279",
-      "comment_version_key": "5645044279:2026-09-12T14:50:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145848#issuecomment-5645044279",
-      "comment_created_at": "2026-09-12T09:34:40Z",
-      "comment_updated_at": "2026-09-12T14:50:40Z",
-      "comment_body_sha256": "1f3f00a8cb66729b15ac8224f5b002b3153659f67ca71e8348d31dfe64069ed9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145848,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: supplied tests cover registry replay and SQLite reload, but no after-fix Gateway restart evidence demon... (sha=a72be34d36536f48ab47770b9c14f12f84c4c80a)",
-      "expected_head_sha": "a72be34d36536f48ab47770b9c14f12f84c4c80a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T15:19:36.546Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-terminal-restore-noop",
-        "head_sha": "a72be34d36536f48ab47770b9c14f12f84c4c80a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145927:5645584298:2026-09-12T15:03:49Z:clawsweeper_needs_human",
       "comment_id": "5645584298",
@@ -32976,6 +32943,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146248:5648209439:2026-09-12T19:36:06Z:re_review",
+      "comment_id": "5648209439",
+      "comment_version_key": "5648209439:2026-09-12T19:36:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146248#issuecomment-5648209439",
+      "comment_created_at": "2026-09-12T19:36:06Z",
+      "comment_updated_at": "2026-09-12T19:36:06Z",
+      "comment_body_sha256": "92b09b33553428f3ad4826176657c0ae385f082b0d251c3455d18575471d0bd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146248,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T19:42:47.963Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigate-missing-subagents-display-bug",
+        "head_sha": "6615cff9bd2dae48deef9b23c14cb7f8c4f7b012",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
