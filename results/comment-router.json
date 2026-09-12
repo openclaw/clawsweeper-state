@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T04:21:41.117Z",
+  "updated_at": "2026-09-12T04:22:03.972Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145390:5641779266:2026-09-12T00:01:30Z:clawsweeper_needs_human",
-      "comment_id": "5641779266",
-      "comment_version_key": "5641779266:2026-09-12T00:01:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145390#issuecomment-5641779266",
-      "comment_created_at": "2026-09-11T23:25:04Z",
-      "comment_updated_at": "2026-09-12T00:01:30Z",
-      "comment_body_sha256": "2453297fdbac871d162de8a70bccf6f2343cff5f2a873a1d52868939cf7107ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145390,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Exclude arbitrary command arguments from public failure facts (P1)** - This prior finding remains unresolved. Failure facts now receive command stderr and finalization error messages, but this filter misses Comm...; Review finding: [P1] Exclude arbitrary command arguments from public failure facts — src/logging/diagnostic-support-redaction.ts:378-382 - [P2] Preserve the underlying Doctor erro... (sha=b947d9f7d87e4b1a1917f34d87d20745cfbc385d)",
-      "expected_head_sha": "b947d9f7d87e4b1a1917f34d87d20745cfbc385d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T00:02:28.626Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-failure-report-facts",
-        "head_sha": "b947d9f7d87e4b1a1917f34d87d20745cfbc385d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1539:5641645435:2026-09-12T00:04:26Z:clawsweeper_needs_human",
       "comment_id": "5641645435",
@@ -32756,6 +32723,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145456:5642334874:2026-09-12T04:21:02Z:clawsweeper_needs_human",
+      "comment_id": "5642334874",
+      "comment_version_key": "5642334874:2026-09-12T04:21:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145456#issuecomment-5642334874",
+      "comment_created_at": "2026-09-12T00:54:25Z",
+      "comment_updated_at": "2026-09-12T04:21:02Z",
+      "comment_body_sha256": "8d41403613e9d6d3d2aa8f56e4709e7a52a2cf058300e1f80bf5abc6a8f30e17",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145456,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If the original foreground parent disappears or settlement fails, the new durable task can remain running but unconfirmed indefinitely; acceptance of that retention and recovery contr... (sha=88e662e428b8ef0b51fe70997db6e79af532d4f0)",
+      "expected_head_sha": "88e662e428b8ef0b51fe70997db6e79af532d4f0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T04:22:03.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/original-startup-repair-20260911",
+        "head_sha": "88e662e428b8ef0b51fe70997db6e79af532d4f0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
