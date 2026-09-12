@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T17:08:10.300Z",
+  "updated_at": "2026-09-12T17:08:19.495Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145854:5645249996:2026-09-12T10:11:37Z:re_review",
-      "comment_id": "5645249996",
-      "comment_version_key": "5645249996:2026-09-12T10:11:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145854#issuecomment-5645249996",
-      "comment_created_at": "2026-09-12T10:11:37Z",
-      "comment_updated_at": "2026-09-12T10:11:37Z",
-      "comment_body_sha256": "20cda81172843e7dc6adca85aaa4170808fc21229cea0c6fb98a9463042c6d3d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145854,
-      "author": "kip-claw",
-      "author_id": 274822774,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T10:12:37.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "auto-trigger-linux-app-release",
-        "head_sha": "41e7203bdaa814bd346884c91e78a72ac3d76505",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145790:5645223066:2026-09-12T10:05:40Z:re_review",
       "comment_id": "5645223066",
@@ -33811,6 +33764,39 @@
         "kind": "pull_request",
         "branch": "steipete/upd-restart-lifecycle-handoff",
         "head_sha": "cafce22616e37ce3b065fb01ae7c5d759ae7c9d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:264:5647345017:2026-09-12T17:07:16Z:clawsweeper_needs_human",
+      "comment_id": "5647345017",
+      "comment_version_key": "5647345017:2026-09-12T17:07:16Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/264#issuecomment-5647345017",
+      "comment_created_at": "2026-09-12T16:58:42Z",
+      "comment_updated_at": "2026-09-12T17:07:16Z",
+      "comment_body_sha256": "4c582ff689aace340ba33dced03d5faa7d647f5ccd5a95899c8f3083007b5826",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 264,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed home helper and local-root read path have reported filesystem tests, but the ordinary-path... (sha=4b7ea251ec22ccda394a9185f83067f4d6e1b178)",
+      "expected_head_sha": "4b7ea251ec22ccda394a9185f83067f4d6e1b178",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T17:08:19.495Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/home-path-expansion",
+        "head_sha": "4b7ea251ec22ccda394a9185f83067f4d6e1b178",
         "cluster_id": null,
         "job_path": null
       }
