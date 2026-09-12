@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-12T20:37:38.225Z",
+  "updated_at": "2026-09-12T20:37:44.915Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146118:5647108462:2026-09-12T16:18:05Z:re_review",
-      "comment_id": "5647108462",
-      "comment_version_key": "5647108462:2026-09-12T16:18:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/146118#issuecomment-5647108462",
-      "comment_created_at": "2026-09-12T16:18:05Z",
-      "comment_updated_at": "2026-09-12T16:18:05Z",
-      "comment_body_sha256": "b17901ad4a6c398137065b99e8d2295ff8d5f993d12868d47cf22ea82408a270",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146118,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T16:18:55.674Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146174:5647060389:2026-09-12T16:10:01Z:re_review",
       "comment_id": "5647060389",
@@ -33264,6 +33219,39 @@
         "kind": "pull_request",
         "branch": "codex/release-0.12.6",
         "head_sha": "387d8663671ca336718416ce74f7fe06316d53bf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:286:5648332215:2026-09-12T20:11:31Z:clawsweeper_needs_human",
+      "comment_id": "5648332215",
+      "comment_version_key": "5648332215:2026-09-12T20:11:31Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/286#issuecomment-5648332215",
+      "comment_created_at": "2026-09-12T20:00:11Z",
+      "comment_updated_at": "2026-09-12T20:11:31Z",
+      "comment_body_sha256": "7f315d863614eade9f25b516bc1ffba6cbc74596432a486fbbc2443a3c4b044e",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence reports Linux validation and direct-helper tests with mocked Windows identity observations. It does not demonstrate Windo... (sha=57ceb4382fcf33e84bfc306672e035de33bbce1a)",
+      "expected_head_sha": "57ceb4382fcf33e84bfc306672e035de33bbce1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T20:37:44.915Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/write-mode-exact-identity",
+        "head_sha": "57ceb4382fcf33e84bfc306672e035de33bbce1a",
         "cluster_id": null,
         "job_path": null
       }
