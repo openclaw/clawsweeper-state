@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145371"
-mode: "autonomous"
-run_id: "34668102227"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34668102227"
+mode: "plan"
+run_id: "34670753971"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34670753971"
 head_sha: "7cd87fe405a92bd1cd605f39feab4e61aec2c2a8"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-12T03:23:05.274Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145371"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145371"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-12T03:45:08.590Z"
+canonical: "#145371"
+canonical_issue: "#145371"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34668102227](https://github.com/openclaw/clawsweeper/actions/runs/34668102227)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34670753971](https://github.com/openclaw/clawsweeper/actions/runs/34670753971)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145371
+Canonical: #145371
 
 ## Summary
 
-Source inspection supports the repeated-write defect. Prepared a narrow fix artifact; implementation and regression execution are blocked by the read-only host and missing dependencies. The checkout also differs from the preflight main SHA. No files or GitHub state changed.
+Plan a narrow fix for #145371. The clean checkout matches preflight main 0141569e7986c1f27a454f178a83680a3763a5ac and retains unconditional task persistence and mirrored-flow writes. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,10 @@ Source inspection supports the repeated-write defect. Prepared a narrow fix arti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145371 | fix_needed | planned | canonical | Repair equivalent writes in the existing task and mirrored-flow owners after reconciling current main and establishing the required failing restore regression. |
-| #123107 | keep_related | planned | related | Separate useful contributor work. Its unresolved findings remain with that PR and do not justify adopting or replacing it for this issue. |
-| #128812 | route_security | planned | security_sensitive | Route only this item to central OpenClaw security handling. The projection no-op repair does not depend on its cancellation changes. |
-| #145373 | keep_closed | skipped | duplicate | Historical duplicate evidence; no closure action is needed or authorized. |
-| cluster:issue-openclaw-openclaw-145371 | build_fix_artifact | planned |  | A narrow non-security fix remains appropriate, subject to reproduction on reconciled current main. |
-| cluster:issue-openclaw-openclaw-145371 | open_fix_pr | blocked |  | Implementation and publication require the writable executor to reconcile main, reproduce, patch, validate, obtain fresh review, and recheck the existing fix owner before opening or updating the single issue branch. |
+| #145371 | fix_needed | planned | canonical | Retain the canonical issue and prepare one implementation PR, conditional on reproducing the defect against current main. |
+| #123107 | keep_related | planned | related | Useful contributor work with distinct scope; do not replace, close, merge, or adopt its branch for this issue. |
+| #128812 | route_security | planned | security_sensitive | Quarantine this item for central OpenClaw security handling without public mutation. The independent projection-write repair does not depend on it. |
+| #145373 | keep_closed | skipped | duplicate | Historical duplicate context; no further closure action. |
 
 ## Needs Human
 
