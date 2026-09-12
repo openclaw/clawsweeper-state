@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145938",
+  "mode": "autonomous",
+  "run_id": "34692385240",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34692385240",
+  "head_sha": "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145938.md",
+  "published_at": "2026-09-12T12:42:48.319Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145938",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145938",
+  "canonical_pr": null,
+  "summary": "Confirmed the framing failure mechanism on the preflight main SHA using Node v24.18.1. Implementation and required CLI validation are blocked by the read-only host, absent dependencies, and unavailable Node v24.20.0. A narrow executor fix artifact is prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145938",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145938",
+      "candidate_fix": null,
+      "reason": "The source and runtime probe support a narrow codec repair. Executor must establish the required failing regression and isolated CLI reproduction before editing."
+    },
+    {
+      "target": "#89830",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical framing precedent only."
+    },
+    {
+      "target": "#90845",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Use as conceptual precedent only; do not import plugin-private code or treat it as this issue's fix."
+    },
+    {
+      "target": "#138306",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct serialization defect; retain its regression protection."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145938",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145938",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Local implementation is blocked by host restrictions; the executor needs a writable isolated checkout, dependencies, and Node v24.20.0."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
