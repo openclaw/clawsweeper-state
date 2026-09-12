@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T07:20:51.918Z",
+  "updated_at": "2026-09-12T07:22:32.992Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145335:5641227076:2026-09-12T03:32:13Z:clawsweeper_auto_repair",
-      "comment_id": "5641227076",
-      "comment_version_key": "5641227076:2026-09-12T03:32:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145335#issuecomment-5641227076",
-      "comment_created_at": "2026-09-11T22:13:14Z",
-      "comment_updated_at": "2026-09-12T03:32:13Z",
-      "comment_body_sha256": "9bc7b3fced84ee72ea416265e026401548873885401c1f80943222c0bebad56a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=25b26bf7374ddae1d59f4e62f8f329338cdd244c)",
-      "expected_head_sha": "25b26bf7374ddae1d59f4e62f8f329338cdd244c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T03:33:16.252Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/107930-node-upgrade-continuity-land",
-        "head_sha": "25b26bf7374ddae1d59f4e62f8f329338cdd244c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1546:5643193880:2026-09-12T03:34:37Z:clawsweeper_needs_human",
       "comment_id": "5643193880",
@@ -31912,6 +31879,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111252:5644436038:2026-09-12T07:21:37Z:re_review",
+      "comment_id": "5644436038",
+      "comment_version_key": "5644436038:2026-09-12T07:21:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111252#issuecomment-5644436038",
+      "comment_created_at": "2026-09-12T07:21:37Z",
+      "comment_updated_at": "2026-09-12T07:21:37Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111252,
+      "author": "ZengWen-DT",
+      "author_id": 290981215,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T07:22:31.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-exact-session-cursor",
+        "head_sha": "461dbe32e53524d6929144f992c8f2ff9d225b03",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
