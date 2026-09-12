@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145993"
-mode: "autonomous"
-run_id: "34698271218"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34698271218"
+mode: "plan"
+run_id: "34700608750"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34700608750"
 head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-12T14:43:12.802Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145993"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145993"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-12T14:58:59.406Z"
+canonical: "#145993"
+canonical_issue: "#145993"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34698271218](https://github.com/openclaw/clawsweeper/actions/runs/34698271218)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34700608750](https://github.com/openclaw/clawsweeper/actions/runs/34700608750)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145993
+Canonical: #145993
 
 ## Summary
 
-Source inspection supports the reported mismatch at preflight main 1ab6f6458ee01c7963404ee56c8e8395cfeb3e47. Implementation and regression proof are blocked by the read-only filesystem, missing dependencies, and absent required ../codex source. No files or GitHub state changed.
+Plan one narrow fix for #145993. Keep adjacent reports separate. No files or GitHub state changed; regression execution and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source inspection supports the reported mismatch at preflight main 1ab6f6458ee01
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145993 | fix_needed | planned | canonical | A narrow plugin-side repair is supported by source. Runtime reproduction remains mandatory before production edits; it was not possible on this host. |
-| #141233 | keep_related | planned | related | Historical duplicate-admission work is outside this fingerprint repair. Leave the issue open under the job's no-close policy. |
-| #143335 | keep_related | planned | related | Keep this separate investigation open; preserve the existing refusal and do not infer that the fingerprint repair resolves its symptoms. |
-| cluster:issue-openclaw-openclaw-145993 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation is blocked until a writable execution checkout with dependencies and the required adjacent Codex source is available. |
+| #145993 | fix_needed | planned | canonical | A bounded repair plan is supported, but implementation must first reproduce the defect on current main. |
+| #141233 | keep_related | planned | related | Historical duplicate-admission work does not belong in the fingerprint repair; closure is prohibited by this job. |
+| #143335 | keep_related | planned | related | Retain as adjacent work without changing refusal semantics or treating its security-shaped label alone as a vulnerability claim. |
 
 ## Needs Human
 
