@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-143727"
-mode: "autonomous"
-run_id: "34716685466"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34716685466"
-head_sha: "4d43f8f5a62215e41ba180930e2ee72f21bf5ace"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34718603346"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34718603346"
+head_sha: "94b21bfdb5a5d04ed5243c694f7788026213c12f"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T20:51:41.241Z"
-canonical: "#143727"
-canonical_issue: null
-canonical_pr: "#143727"
-actions_total: 1
+published_at: "2026-09-12T21:05:41.239Z"
+canonical: "https://github.com/openclaw/openclaw/pull/143727"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/143624"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/143727"
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34716685466](https://github.com/openclaw/clawsweeper/actions/runs/34716685466)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34718603346](https://github.com/openclaw/clawsweeper/actions/runs/34718603346)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #143727
+Canonical: https://github.com/openclaw/openclaw/pull/143727
 
 ## Summary
 
-Make PR #143727 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Plan a test-only repair of #143727 on its existing writable branch. Preserve the production fix from #143832, retain Gateway timeout-to-retry coverage, and validate against refreshed main. No edits, tests, or GitHub mutations performed; merge and closure remain disabled.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,10 @@ Make PR #143727 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #143727 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #143727 | fix_needed | planned | canonical | The remaining Gateway regression has distinct value. Repair the existing PR using the attached artifact, resolve the recorded review findings, and obtain fresh validation and review without bypassing human-review or merge gates. |
+| #143624 | keep_related | planned | related | Keep the incident investigation open; the test-only repair does not establish complete coverage or resolution. |
+| #143832 | keep_closed | skipped | related | Historical production-fix context; no further action. |
+| #145942 | keep_related | planned | related | Separate production follow-up with useful work; do not combine, repair, merge, or close it under this job. |
 
 ## Needs Human
 
