@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146017"
-mode: "autonomous"
-run_id: "34699182468"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34699182468"
+mode: "plan"
+run_id: "34703626461"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34703626461"
 head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-12T15:38:41.085Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-12T16:00:45.619Z"
 canonical: "https://github.com/openclaw/openclaw/issues/146017"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/146017"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/146071"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34699182468](https://github.com/openclaw/clawsweeper/actions/runs/34699182468)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34703626461](https://github.com/openclaw/clawsweeper/actions/runs/34703626461)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/146017
 
 ## Summary
 
-The defect remains in preflight main. Implementation is blocked by the read-only host, missing dependencies/build artifacts, and unverified published-driver compatibility. No files or GitHub state changed.
+No new PR recommended. The issue is already closed and #146071 is merged. The supplied main revision preserves rateLimit in candidate rehearsals. Published 2026.9.3/2026.9.4 drivers retain the documented first-hop limitation; no published-driver validation was run.
 
 ## Impact
 
@@ -66,8 +66,8 @@ The defect remains in preflight main. Implementation is blocked by the read-only
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146017 | fix_needed | planned | canonical | Source supports the reported root cause. Runtime reproduction remains unperformed, so the issue must remain open and cannot be described as fixed. |
-| cluster:issue-openclaw-openclaw-146017 | build_fix_artifact | blocked |  | Implementation and PR publication remain blocked until reproduction and published-driver compatibility are demonstrated in an authorized writable environment. Do not bypass Policy or invent a default rateLimit to satisfy the gate. |
+| https://github.com/openclaw/openclaw/issues/146017 | keep_closed | skipped | canonical | The reported producer defect is already repaired on supplied main. Stop the stale implementation job without creating another PR. |
+| https://github.com/openclaw/openclaw/pull/146071 | keep_closed | skipped | canonical | Retain the merged repair as historical resolution; no further mutation is warranted. |
 
 ## Needs Human
 
