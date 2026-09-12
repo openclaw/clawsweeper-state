@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T05:39:24.862Z",
+  "updated_at": "2026-09-12T05:39:36.640Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143295:5642459455:2026-09-12T01:13:55Z:re_review",
-      "comment_id": "5642459455",
-      "comment_version_key": "5642459455:2026-09-12T01:13:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5642459455",
-      "comment_created_at": "2026-09-12T01:13:55Z",
-      "comment_updated_at": "2026-09-12T01:13:55Z",
-      "comment_body_sha256": "5c8d8308592a37fa49711130d50e23c05caa13a80f849f6df2b9809338791581",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143295,
-      "author": "saladinyao-cyber",
-      "author_id": 240252919,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T01:22:07.793Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-reader-lifecycle-v2",
-        "head_sha": "6863e7013b087958baf3a9b42a2a4b6666dc71b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143295:5606365843:2026-09-12T01:21:05Z:clawsweeper_auto_repair",
       "comment_id": "5606365843",
@@ -32755,6 +32708,39 @@
         "kind": "pull_request",
         "branch": "codex/plugin-claw-removal-20260912",
         "head_sha": "5491f86bf9a99506f73e7f94624972acc008c6b9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:145:5643861726:2026-09-12T05:38:47Z:clawsweeper_needs_human",
+      "comment_id": "5643861726",
+      "comment_version_key": "5643861726:2026-09-12T05:38:47Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/145#issuecomment-5643861726",
+      "comment_created_at": "2026-09-12T05:38:47Z",
+      "comment_updated_at": "2026-09-12T05:38:47Z",
+      "comment_body_sha256": "0b759d79aca9786a62e96e65cf759552350bd35063e0496263bc8275658361fa",
+      "repo": "steipete/birdclaw",
+      "issue_number": 145,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b7653097a166729dbde992c800a1ad880ff8c14a)",
+      "expected_head_sha": "b7653097a166729dbde992c800a1ad880ff8c14a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T05:39:36.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-missing-thumbnails",
+        "head_sha": "b7653097a166729dbde992c800a1ad880ff8c14a",
         "cluster_id": null,
         "job_path": null
       }
