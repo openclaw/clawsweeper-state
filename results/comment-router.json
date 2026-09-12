@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T07:59:42.742Z",
+  "updated_at": "2026-09-12T08:00:25.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5337912536:2026-08-19T05:27:16Z:re_review",
-      "comment_id": "5337912536",
-      "comment_version_key": "5337912536:2026-08-19T05:27:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5337912536",
-      "comment_created_at": "2026-08-19T05:27:16Z",
-      "comment_updated_at": "2026-08-19T05:27:16Z",
-      "comment_body_sha256": "9186f8f1d1b8bb01739985a322f34642dd03c96408797bcbfcd4e4f0ed2d24f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T04:01:59.252Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5076894734:2026-07-25T04:19:00Z:re_review",
       "comment_id": "5076894734",
@@ -32197,6 +32170,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132769:5464120993:2026-09-12T07:59:07Z:clawsweeper_needs_human",
+      "comment_id": "5464120993",
+      "comment_version_key": "5464120993:2026-09-12T07:59:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132769#issuecomment-5464120993",
+      "comment_created_at": "2026-08-29T18:29:01Z",
+      "comment_updated_at": "2026-09-12T07:59:07Z",
+      "comment_body_sha256": "b8a05aa5c9642d7ebe0ffc95522a4087b0f7597870e3e9451408293f67f2b7b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132769,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Landing before https://github.com/openclaw/openclaw/pull/132839 would suppress photo turns in opted-in groups without delivering those photos to the following ordinary agent turn. (sha=af9e46cd0ba73f81cc64656d4d0b0162973cac87)",
+      "expected_head_sha": "af9e46cd0ba73f81cc64656d4d0b0162973cac87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T08:00:25.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/line-group-mention-nontext",
+        "head_sha": "af9e46cd0ba73f81cc64656d4d0b0162973cac87",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
