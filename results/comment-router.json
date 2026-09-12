@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T14:54:10.507Z",
+  "updated_at": "2026-09-12T14:54:16.434Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145773:5644536304:2026-09-12T07:44:30Z:clawsweeper_needs_human",
-      "comment_id": "5644536304",
-      "comment_version_key": "5644536304:2026-09-12T07:44:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145773#issuecomment-5644536304",
-      "comment_created_at": "2026-09-12T07:44:30Z",
-      "comment_updated_at": "2026-09-12T07:44:30Z",
-      "comment_body_sha256": "9204374c7262ca6d6d63b5ea3e59766b4547ffebb184923fe1be5d8187c2b8e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145773,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7ad1730c4813e460163ee28544f739bacd5b80a8)",
-      "expected_head_sha": "7ad1730c4813e460163ee28544f739bacd5b80a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T07:45:25.466Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "backport/7.33-doctor-enabled-skills",
-        "head_sha": "7ad1730c4813e460163ee28544f739bacd5b80a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:156:5644537145:2026-09-12T07:44:41Z:clawsweeper_needs_human",
       "comment_id": "5644537145",
@@ -33356,6 +33323,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144834:5646637184:2026-09-12T14:53:20Z:re_review",
+      "comment_id": "5646637184",
+      "comment_version_key": "5646637184:2026-09-12T14:53:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144834#issuecomment-5646637184",
+      "comment_created_at": "2026-09-12T14:53:20Z",
+      "comment_updated_at": "2026-09-12T14:53:20Z",
+      "comment_body_sha256": "e2cdff3d91560b2d75f59265c0b3a55563114fe4ee16ee01e517a45f05109b5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144834,
+      "author": "vantang",
+      "author_id": 16954599,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T14:54:14.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-silent-token",
+        "head_sha": "e9eb1d68cc6aae724b2c97ac96b4a5b53e579633",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
