@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T11:11:00.101Z",
+  "updated_at": "2026-09-12T11:11:23.558Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5370515172:2026-08-21T13:40:47Z:re_review",
-      "comment_id": "5370515172",
-      "comment_version_key": "5370515172:2026-08-21T13:40:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5370515172",
-      "comment_created_at": "2026-08-21T13:40:47Z",
-      "comment_updated_at": "2026-08-21T13:40:47Z",
-      "comment_body_sha256": "75c7088bece8fd56a33cbc588008ca73b60d23bbacdc309328e20898b68d5b95",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review `cabefe72f6c22d02aeb08b60f822d6e96aca1911`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T05:41:42.717Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5370666225:2026-08-21T13:51:32Z:re_review",
       "comment_id": "5370666225",
@@ -33188,6 +33161,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145916:5645500842:2026-09-12T11:06:41Z:clawsweeper_auto_repair",
+      "comment_id": "5645500842",
+      "comment_version_key": "5645500842:2026-09-12T11:06:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145916#issuecomment-5645500842",
+      "comment_created_at": "2026-09-12T11:06:41Z",
+      "comment_updated_at": "2026-09-12T11:06:41Z",
+      "comment_body_sha256": "eb4a905b29edf6adf5975ec93da587364448b0908c5ab69b7ad6f1697967066f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fddf18351d1337307eada3bcaf38ba7ce5b930ca)",
+      "expected_head_sha": "fddf18351d1337307eada3bcaf38ba7ce5b930ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T11:11:23.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-145827-tmux-find-sessions-fields",
+        "head_sha": "fddf18351d1337307eada3bcaf38ba7ce5b930ca",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
