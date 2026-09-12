@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T01:42:36.399Z",
+  "updated_at": "2026-09-12T01:43:28.087Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145248:5640337232:2026-09-11T20:36:48Z:re_review",
-      "comment_id": "5640337232",
-      "comment_version_key": "5640337232:2026-09-11T20:36:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145248#issuecomment-5640337232",
-      "comment_created_at": "2026-09-11T20:36:48Z",
-      "comment_updated_at": "2026-09-11T20:36:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145248,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-11T20:37:44.363Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/144866-subagent-spawn-thinking-compat",
-        "head_sha": "d44faf465a2b4493e85e2451525be5b2a9bffe7d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/discrawl:217:5640255166:2026-09-11T20:37:56Z:clawsweeper_needs_human",
       "comment_id": "5640255166",
@@ -33451,6 +33404,39 @@
         "kind": "pull_request",
         "branch": "codex/macos-capture-lifecycle",
         "head_sha": "0c74df3623475257c39512fb5ec3a2b917d0d7fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120781:5229230238:2026-09-12T01:42:22Z:clawsweeper_needs_human",
+      "comment_id": "5229230238",
+      "comment_version_key": "5229230238:2026-09-12T01:42:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120781#issuecomment-5229230238",
+      "comment_created_at": "2026-08-09T01:44:46Z",
+      "comment_updated_at": "2026-09-12T01:42:22Z",
+      "comment_body_sha256": "f65a7ab5e39b82b9217e0e2bc6c55a049ca349aa79ac533cec87d95684cd4152",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120781,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=9f02173e0a5367b5f3a8649013a3ecbdd813cb8e)",
+      "expected_head_sha": "9f02173e0a5367b5f3a8649013a3ecbdd813cb8e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T01:43:28.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/orphan-transcript-classification",
+        "head_sha": "9f02173e0a5367b5f3a8649013a3ecbdd813cb8e",
         "cluster_id": null,
         "job_path": null
       }
