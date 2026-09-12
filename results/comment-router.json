@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T03:56:15.694Z",
+  "updated_at": "2026-09-12T03:57:04.220Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145044:5637112305:2026-09-11T23:15:16Z:clawsweeper_needs_human",
-      "comment_id": "5637112305",
-      "comment_version_key": "5637112305:2026-09-11T23:15:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145044#issuecomment-5637112305",
-      "comment_created_at": "2026-09-11T15:56:59Z",
-      "comment_updated_at": "2026-09-11T23:15:16Z",
-      "comment_body_sha256": "28a1cf83d38cb80e55ca4bc28cb487836fc411112f27ef8f44412cc5898dd16f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145044,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A new updater targeting an older worker without candidateRehearsal support loses the previous inline repair attempt and returns unavailable; maintainers must accept that operator-visi... (sha=f94eb9660febb61e15e26f1df6edea0cfcff2bdd)",
-      "expected_head_sha": "f94eb9660febb61e15e26f1df6edea0cfcff2bdd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T23:18:21.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-144739-candidate-runtime",
-        "head_sha": "f94eb9660febb61e15e26f1df6edea0cfcff2bdd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145172:5639427609:2026-09-11T23:16:40Z:clawsweeper_needs_human",
       "comment_id": "5639427609",
@@ -33334,6 +33301,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145572:5643303247:2026-09-12T03:56:00Z:re_review",
+      "comment_id": "5643303247",
+      "comment_version_key": "5643303247:2026-09-12T03:56:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145572#issuecomment-5643303247",
+      "comment_created_at": "2026-09-12T03:56:00Z",
+      "comment_updated_at": "2026-09-12T03:56:00Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145572,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T03:57:02.127Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/tauri-inline-browser",
+        "head_sha": "916ad4fad726b100700ec444a373e36d462f6a65",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
