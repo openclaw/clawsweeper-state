@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T20:01:48.384Z",
+  "updated_at": "2026-09-12T20:01:56.721Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146037:5646911600:2026-09-12T15:43:31Z:re_review",
-      "comment_id": "5646911600",
-      "comment_version_key": "5646911600:2026-09-12T15:43:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146037#issuecomment-5646911600",
-      "comment_created_at": "2026-09-12T15:43:31Z",
-      "comment_updated_at": "2026-09-12T15:43:31Z",
-      "comment_body_sha256": "dfdd107fb666c0b19238ad605c99b9416600bd5f37038a2008b7abff3c1640e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146037,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T15:44:32.097Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-turn-allocation-reductions",
-        "head_sha": "46e73780bb8f4bf2caa3f8c9faae409733231147",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:134665:5646917911:2026-09-12T15:44:33Z:re_review",
       "comment_id": "5646917911",
@@ -33053,6 +33006,39 @@
         "kind": "pull_request",
         "branch": "codex/sqlite-cron-terminal-selection-0912",
         "head_sha": "a216fabec6765ffc14b8d88e7a028c719a9f4916",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146275:5647733389:2026-09-12T20:00:42Z:clawsweeper_needs_human",
+      "comment_id": "5647733389",
+      "comment_version_key": "5647733389:2026-09-12T20:00:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146275#issuecomment-5647733389",
+      "comment_created_at": "2026-09-12T18:09:15Z",
+      "comment_updated_at": "2026-09-12T20:00:42Z",
+      "comment_body_sha256": "3eacddbbec7d2b1fc8307c029f5186ac4f66a847f40df4e82deaa710c9243e1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146275,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=76f41cfa7ada5f3a52d0cdb868bf07e9def69c25)",
+      "expected_head_sha": "76f41cfa7ada5f3a52d0cdb868bf07e9def69c25",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T20:01:56.721Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-reload-consolidation-146072",
+        "head_sha": "76f41cfa7ada5f3a52d0cdb868bf07e9def69c25",
         "cluster_id": null,
         "job_path": null
       }
