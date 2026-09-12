@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T02:02:46.373Z",
+  "updated_at": "2026-09-12T02:03:27.690Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145242:5640267693:2026-09-11T21:10:57Z:clawsweeper_needs_human",
-      "comment_id": "5640267693",
-      "comment_version_key": "5640267693:2026-09-11T21:10:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145242#issuecomment-5640267693",
-      "comment_created_at": "2026-09-11T20:29:59Z",
-      "comment_updated_at": "2026-09-11T21:10:57Z",
-      "comment_body_sha256": "1339ccd735e08298a4cf04be969e681d5c58a35b00ae5f2a4e1326bd72df0956",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145242,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied tests exercise the cron adapter with injected heartbeat results; they do not show real empty-scratch preflight reaching non-failed... (sha=c76f1daeac66f565e77621b772f13bd4a27da765)",
-      "expected_head_sha": "c76f1daeac66f565e77621b772f13bd4a27da765",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T21:11:59.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-designed-skip-accounting",
-        "head_sha": "c76f1daeac66f565e77621b772f13bd4a27da765",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144542:5627912798:2026-09-11T21:07:04Z:clawsweeper_needs_human",
       "comment_id": "5627912798",
@@ -33454,6 +33421,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145489:5642729008:2026-09-12T02:02:39Z:re_review",
+      "comment_id": "5642729008",
+      "comment_version_key": "5642729008:2026-09-12T02:02:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145489#issuecomment-5642729008",
+      "comment_created_at": "2026-09-12T02:02:39Z",
+      "comment_updated_at": "2026-09-12T02:02:39Z",
+      "comment_body_sha256": "c265efccee9158667e15beba61b744c385a9416c30870442f96832cc8691dfc0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145489,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T02:03:26.217Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/e2e-clawhub-live-risk-fallback",
+        "head_sha": "6d98cb508357f3240e79e303625efa5ba339ee84",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
