@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T14:17:36.125Z",
+  "updated_at": "2026-09-12T14:17:55.203Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145733:5644357813:2026-09-12T07:04:24Z:clawsweeper_needs_human",
-      "comment_id": "5644357813",
-      "comment_version_key": "5644357813:2026-09-12T07:04:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145733#issuecomment-5644357813",
-      "comment_created_at": "2026-09-12T07:04:24Z",
-      "comment_updated_at": "2026-09-12T07:04:24Z",
-      "comment_body_sha256": "301a74c72e988e120e35cb1156efdddaec40c3ae3e91a1e7d0b326c790dc2dfb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145733,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Final-production Node 24/26 timings remain pending; the initial no-overlap controls showed approximately 9% slower medians despite not invoking the changed helper. (sha=a2722404f8042c308d8932932322d0f3ab386826)",
-      "expected_head_sha": "a2722404f8042c308d8932932322d0f3ab386826",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T07:05:17.043Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/v8-memory-overlap",
-        "head_sha": "a2722404f8042c308d8932932322d0f3ab386826",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3582:5644232985:2026-09-12T07:02:48Z:clawsweeper_needs_human",
       "comment_id": "5644232985",
@@ -33428,6 +33395,51 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145994:5646429955:2026-09-12T14:17:00Z:re_review",
+      "comment_id": "5646429955",
+      "comment_version_key": "5646429955:2026-09-12T14:17:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/issues/145994#issuecomment-5646429955",
+      "comment_created_at": "2026-09-12T14:17:00Z",
+      "comment_updated_at": "2026-09-12T14:17:00Z",
+      "comment_body_sha256": "52c2b6623195fd22c0fe4ab5fe531bb1ddca723ee343c788c93db7669900bd30",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145994,
+      "author": "pfrederiksen",
+      "author_id": 908172,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T14:17:52.674Z",
+      "target": {
+        "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
