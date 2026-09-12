@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T20:13:27.356Z",
+  "updated_at": "2026-09-12T20:14:17.218Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146145:5647006902:2026-09-12T16:00:30Z:clawsweeper_needs_human",
-      "comment_id": "5647006902",
-      "comment_version_key": "5647006902:2026-09-12T16:00:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146145#issuecomment-5647006902",
-      "comment_created_at": "2026-09-12T16:00:30Z",
-      "comment_updated_at": "2026-09-12T16:00:30Z",
-      "comment_body_sha256": "1183cde63f374027a9c9f227aa5618056c20f156e0949a882901ad013d98c6e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146145,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3c8580b4b7d101caff1c93adc0f5c3f61c2a49b3)",
-      "expected_head_sha": "3c8580b4b7d101caff1c93adc0f5c3f61c2a49b3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T16:01:17.530Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-perf3-create",
-        "head_sha": "3c8580b4b7d101caff1c93adc0f5c3f61c2a49b3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146153:5647007283:2026-09-12T16:00:34Z:clawsweeper_needs_human",
       "comment_id": "5647007283",
@@ -33045,6 +33012,55 @@
           "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143727:5613754975:2026-09-12T20:05:01Z:clawsweeper_needs_human",
+      "comment_id": "5613754975",
+      "comment_version_key": "5613754975:2026-09-12T20:05:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143727#issuecomment-5613754975",
+      "comment_created_at": "2026-09-10T05:40:38Z",
+      "comment_updated_at": "2026-09-12T20:05:01Z",
+      "comment_body_sha256": "b0252f6790552665562d9e2c7c8c4a4d0d4d868d1afa1d0eb7b2b7f70a00d977",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143727,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility of the retained Gateway fixture with refreshed main remains unvalidated; the body correctly identifies existing results as historical evidence for the original head. (sha=b67df2ae4ef490c07bfbbe717da3e31127ce7575)",
+      "forced_replay": true,
+      "attempt_id": "completed-review-5648310706-5613754975",
+      "expected_head_sha": "b67df2ae4ef490c07bfbbe717da3e31127ce7575",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T20:14:17.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/cron-timeout-admission-143624",
+        "head_sha": "b67df2ae4ef490c07bfbbe717da3e31127ce7575",
+        "cluster_id": "automerge-openclaw-openclaw-143727",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-143727.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
           "job_path": null
         },
         {
