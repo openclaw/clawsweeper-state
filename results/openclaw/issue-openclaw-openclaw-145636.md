@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145636"
-mode: "autonomous"
-run_id: "34675631032"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34675631032"
+mode: "plan"
+run_id: "34679462968"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34679462968"
 head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T06:47:31.281Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145636"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145636"
+published_at: "2026-09-12T07:06:04.267Z"
+canonical: "#145636"
+canonical_issue: "#145636"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34675631032](https://github.com/openclaw/clawsweeper/actions/runs/34675631032)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34679462968](https://github.com/openclaw/clawsweeper/actions/runs/34679462968)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145636
+Canonical: #145636
 
 ## Summary
 
-Source inspection confirms the defect on preflight main 55da47fd8d854cf9c2935870145bfe90c428cc35. A narrow repair is planned. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state were changed.
+Confirmed the reported resolver mismatch in the checkout matching preflight main 882aa555b2e8a0bbf465aab47d0617208d22b469. Prepared a narrow repair plan; no files or GitHub state changed. Runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Source inspection confirms the defect on preflight main 55da47fd8d854cf9c2935870
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145636 | fix_needed | planned | canonical | Reuse the existing resolver owner at both runtime readers while preserving dispatch and admitted-run checks. |
-| #141252 | keep_related | planned | related | A distinct root cause with separate remaining work; retain outside this implementation. |
-| cluster:issue-openclaw-openclaw-145636 | build_fix_artifact | planned | canonical | The deterministic executor can implement this bounded artifact in a writable checkout after establishing the required failing regression. |
+| #145636 | fix_needed | planned | canonical | Both runtime readers need the existing resolver owner. Establish failing regressions before implementation and reuse the designated branch after checking for an existing PR. |
+| #141252 | keep_related | planned | related | Related CLI reply behavior with a distinct root cause; exclude it from this repair and leave it open. |
 
 ## Needs Human
 

@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145636",
+  "mode": "plan",
+  "run_id": "34679462968",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34679462968",
+  "head_sha": "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145636.md",
+  "published_at": "2026-09-12T07:06:04.267Z",
+  "canonical": "#145636",
+  "canonical_issue": "#145636",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported resolver mismatch in the checkout matching preflight main 882aa555b2e8a0bbf465aab47d0617208d22b469. Prepared a narrow repair plan; no files or GitHub state changed. Runtime reproduction and validation remain pending.",
+  "actions": [
+    {
+      "target": "#145636",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145636",
+      "candidate_fix": null,
+      "reason": "Both runtime readers need the existing resolver owner. Establish failing regressions before implementation and reuse the designated branch after checking for an existing PR."
+    },
+    {
+      "target": "#141252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145636",
+      "candidate_fix": null,
+      "reason": "Related CLI reply behavior with a distinct root cause; exclude it from this repair and leave it open."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
