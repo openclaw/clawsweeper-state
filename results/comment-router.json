@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T01:49:34.552Z",
+  "updated_at": "2026-09-12T01:49:54.426Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145219:5640000180:2026-09-11T20:40:21Z:clawsweeper_needs_human",
-      "comment_id": "5640000180",
-      "comment_version_key": "5640000180:2026-09-11T20:40:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145219#issuecomment-5640000180",
-      "comment_created_at": "2026-09-11T20:05:04Z",
-      "comment_updated_at": "2026-09-11T20:40:21Z",
-      "comment_body_sha256": "d0f126aeb958870a0f87650f6fcaea117c10b5aac8cea63a60d0a2ab47805141",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145219,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The combined schema-inspection, readiness, and service-budget changes have not yet demonstrated final-head upgrade completion and recovery on the recorded throttled profile. (sha=5c3c698f238a82d888585072d4aaf20357b8dd94)",
-      "expected_head_sha": "5c3c698f238a82d888585072d4aaf20357b8dd94",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T20:43:12.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-timeout-budgets",
-        "head_sha": "5c3c698f238a82d888585072d4aaf20357b8dd94",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145247:5640383157:2026-09-11T20:41:23Z:clawsweeper_needs_human",
       "comment_id": "5640383157",
@@ -33426,6 +33393,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145489:5642648970:2026-09-12T01:49:00Z:re_review",
+      "comment_id": "5642648970",
+      "comment_version_key": "5642648970:2026-09-12T01:49:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145489#issuecomment-5642648970",
+      "comment_created_at": "2026-09-12T01:49:00Z",
+      "comment_updated_at": "2026-09-12T01:49:00Z",
+      "comment_body_sha256": "1a4f203062e21ce28baad57a83465323ce5e40b5d1cd4e2264a391b501599957",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145489,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T01:49:52.566Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/e2e-clawhub-live-risk-fallback",
+        "head_sha": "84e4019f0520bbe2b42dfa6ff613be2b0ae87cd6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
