@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T00:02:10.433Z",
+  "updated_at": "2026-09-12T00:02:28.626Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145121:5638734546:2026-09-11T18:08:02Z:clawsweeper_needs_human",
-      "comment_id": "5638734546",
-      "comment_version_key": "5638734546:2026-09-11T18:08:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145121#issuecomment-5638734546",
-      "comment_created_at": "2026-09-11T18:08:02Z",
-      "comment_updated_at": "2026-09-11T18:08:02Z",
-      "comment_body_sha256": "7d42e595ad11f6ef25410ab8c5ec9d1a4cd7942974bb6f745ad1edbb6a113314",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145121,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The executeAgentTurn regression exercises the changed candidate with mocked backend progress and a mocked reply operation; the captured body ex... (sha=38a196fd7b512b7586421ef5bc6df3b084dae9e4)",
-      "expected_head_sha": "38a196fd7b512b7586421ef5bc6df3b084dae9e4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T18:09:02.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-channel-progress-liveness",
-        "head_sha": "38a196fd7b512b7586421ef5bc6df3b084dae9e4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145122:5638737717:2026-09-11T18:08:19Z:clawsweeper_needs_human",
       "comment_id": "5638737717",
@@ -33404,6 +33371,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145390:5641779266:2026-09-12T00:01:30Z:clawsweeper_needs_human",
+      "comment_id": "5641779266",
+      "comment_version_key": "5641779266:2026-09-12T00:01:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145390#issuecomment-5641779266",
+      "comment_created_at": "2026-09-11T23:25:04Z",
+      "comment_updated_at": "2026-09-12T00:01:30Z",
+      "comment_body_sha256": "2453297fdbac871d162de8a70bccf6f2343cff5f2a873a1d52868939cf7107ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145390,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exclude arbitrary command arguments from public failure facts (P1)** - This prior finding remains unresolved. Failure facts now receive command stderr and finalization error messages, but this filter misses Comm...; Review finding: [P1] Exclude arbitrary command arguments from public failure facts — src/logging/diagnostic-support-redaction.ts:378-382 - [P2] Preserve the underlying Doctor erro... (sha=b947d9f7d87e4b1a1917f34d87d20745cfbc385d)",
+      "expected_head_sha": "b947d9f7d87e4b1a1917f34d87d20745cfbc385d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T00:02:28.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-failure-report-facts",
+        "head_sha": "b947d9f7d87e4b1a1917f34d87d20745cfbc385d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
