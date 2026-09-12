@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T11:59:40.915Z",
+  "updated_at": "2026-09-12T12:03:04.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145666:5644017503:2026-09-12T05:54:33Z:re_review",
-      "comment_id": "5644017503",
-      "comment_version_key": "5644017503:2026-09-12T05:54:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145666#issuecomment-5644017503",
-      "comment_created_at": "2026-09-12T05:54:33Z",
-      "comment_updated_at": "2026-09-12T05:54:33Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145666,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T05:59:38.454Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/wave15-agent-events-tuples",
-        "head_sha": "729885e5e0e06f34e59872213deca188b7e12c07",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145669:5644018775:2026-09-12T05:54:42Z:re_review",
       "comment_id": "5644018775",
@@ -33361,6 +33314,39 @@
         "kind": "pull_request",
         "branch": "bugloop/config-ui-ack-draft",
         "head_sha": "74501fdb5c776829bdfecd24eef13a247a48e547",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145942:5645755481:2026-09-12T12:02:09Z:clawsweeper_needs_human",
+      "comment_id": "5645755481",
+      "comment_version_key": "5645755481:2026-09-12T12:02:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145942#issuecomment-5645755481",
+      "comment_created_at": "2026-09-12T12:02:09Z",
+      "comment_updated_at": "2026-09-12T12:02:09Z",
+      "comment_body_sha256": "826f254a1f65ed155f39d45a29e8c028dda80a40bfcf70c57113422e32d43424",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145942,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the supplied Linux regression exercises the background-result owner and real transcript custody through... (sha=f0a9051b32a8dab0bd9b1bcca82a1267454e7b16)",
+      "expected_head_sha": "f0a9051b32a8dab0bd9b1bcca82a1267454e7b16",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T12:03:04.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/background-result-progress",
+        "head_sha": "f0a9051b32a8dab0bd9b1bcca82a1267454e7b16",
         "cluster_id": null,
         "job_path": null
       }
