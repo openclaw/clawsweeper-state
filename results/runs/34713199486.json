@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146331",
+  "mode": "autonomous",
+  "run_id": "34713199486",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34713199486",
+  "head_sha": "4d43f8f5a62215e41ba180930e2ee72f21bf5ace",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146331.md",
+  "published_at": "2026-09-12T19:52:49.069Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/146331",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/146331",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the reported ordering defect at preflight main f5400066cea144a99db4464f537b78b52119e1ee. A narrow fix artifact is ready for the executor. Implementation and executable reproduction are blocked here by the read-only filesystem and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#146331",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146331",
+      "candidate_fix": null,
+      "reason": "The source supports a bounded existing-behavior bug. The executor must reproduce it before implementing the repair."
+    },
+    {
+      "target": "#128509",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep this distinct contract discussion open and outside the implementation scope."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-146331",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#146331",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow repair to a writable executor, with failing reproduction required before production edits or publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
