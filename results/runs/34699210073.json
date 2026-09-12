@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145995",
+  "mode": "autonomous",
+  "run_id": "34699210073",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34699210073",
+  "head_sha": "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145995.md",
+  "published_at": "2026-09-12T15:03:32.509Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145995",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145995",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow diagnostic repair plan. The inspected source retains the generic exhaustion error. Implementation and reproduction are blocked by this host's read-only filesystem; no code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#145995",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145995",
+      "candidate_fix": null,
+      "reason": "The actionable-failure alternative fits the approved bug-only scope without changing snapshot consistency or persistence. Current-main reproduction remains a prerequisite."
+    },
+    {
+      "target": "#142392",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or other mutation is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145995",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#145995",
+      "candidate_fix": null,
+      "reason": "A bounded diagnostic fix remains supported by source evidence; implementation must first satisfy the reproduction gate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145995",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#145995",
+      "candidate_fix": null,
+      "reason": "Resume in a writable executor, reconcile main, reproduce before editing, implement and validate the attached plan, then let the deterministic applicator create or update the single issue PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
