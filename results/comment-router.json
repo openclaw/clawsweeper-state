@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T16:56:45.773Z",
+  "updated_at": "2026-09-12T16:57:07.843Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:116248:5127162503:2026-09-12T10:01:20Z:clawsweeper_auto_repair",
-      "comment_id": "5127162503",
-      "comment_version_key": "5127162503:2026-09-12T10:01:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116248#issuecomment-5127162503",
-      "comment_created_at": "2026-07-30T05:56:55Z",
-      "comment_updated_at": "2026-09-12T10:01:20Z",
-      "comment_body_sha256": "7e479b4c88ac6abe3f18a024b2c53c5085b0023a24778d03d65cc129dd819dd7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116248,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=09c70df3965008e6511d3c808be4d037f6c05eb9)",
-      "expected_head_sha": "09c70df3965008e6511d3c808be4d037f6c05eb9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T10:02:43.529Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auth-paste-subagent-breaks-main-env",
-        "head_sha": "09c70df3965008e6511d3c808be4d037f6c05eb9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145852:5645018861:2026-09-12T10:02:50Z:clawsweeper_needs_human",
       "comment_id": "5645018861",
@@ -33800,6 +33767,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146201:5647332007:2026-09-12T16:56:17Z:re_review",
+      "comment_id": "5647332007",
+      "comment_version_key": "5647332007:2026-09-12T16:56:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146201#issuecomment-5647332007",
+      "comment_created_at": "2026-09-12T16:56:17Z",
+      "comment_updated_at": "2026-09-12T16:56:17Z",
+      "comment_body_sha256": "ab173d8fdd4150d92e7912cfe3cc642847c4c1613efbb5d28d04aa310ecb69a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146201,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T16:57:05.950Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-model-selection-alert-borders",
+        "head_sha": "60eaebfdc8a891adbd2f7911c4a002b1ef4fa44c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
