@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T14:29:47.448Z",
+  "updated_at": "2026-09-12T14:31:13.964Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145524:5642823659:2026-09-12T07:19:30Z:clawsweeper_needs_human",
-      "comment_id": "5642823659",
-      "comment_version_key": "5642823659:2026-09-12T07:19:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145524#issuecomment-5642823659",
-      "comment_created_at": "2026-09-12T02:20:42Z",
-      "comment_updated_at": "2026-09-12T07:19:30Z",
-      "comment_body_sha256": "a4b7c70d95f5e827937ebd15d4cef5db9ac1c890c3b1d7aa6611702fee9e6626",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145524,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing launchers that supply an empty or malformed timeout will stop with exit status 1 instead of opening the TUI with the configured default; acceptance of that shipped-behavior c... (sha=38745cda0e2aa39bfab58563fbe25b77ee460a63)",
-      "expected_head_sha": "38745cda0e2aa39bfab58563fbe25b77ee460a63",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T07:20:28.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cursor/fix-tui-blank-timeout-ms-e997",
-        "head_sha": "38745cda0e2aa39bfab58563fbe25b77ee460a63",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145744:5644426708:2026-09-12T07:19:40Z:clawsweeper_needs_human",
       "comment_id": "5644426708",
@@ -33348,6 +33315,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134665:5646516757:2026-09-12T14:30:17Z:re_review",
+      "comment_id": "5646516757",
+      "comment_version_key": "5646516757:2026-09-12T14:30:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134665#issuecomment-5646516757",
+      "comment_created_at": "2026-09-12T14:30:17Z",
+      "comment_updated_at": "2026-09-12T14:30:17Z",
+      "comment_body_sha256": "4e20468e8efa1feacf242102cd60bed3d815717d7724fcb992fdfa366336d45d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134665,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T14:31:11.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-restart-result",
+        "head_sha": "f5c5bd4376022280268331c9da6360c88fa1d0b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
