@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T15:05:35.933Z",
+  "updated_at": "2026-09-12T15:05:48.424Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123058:5644569873:2026-09-12T07:52:03Z:re_review",
-      "comment_id": "5644569873",
-      "comment_version_key": "5644569873:2026-09-12T07:52:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123058#issuecomment-5644569873",
-      "comment_created_at": "2026-09-12T07:52:03Z",
-      "comment_updated_at": "2026-09-12T07:52:03Z",
-      "comment_body_sha256": "a49652a14053b3ac1a0b4aff1f77595ac14917c024421c8fd40edded8a83b96d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123058,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T07:52:59.246Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/doctor-diagnostics-aug13",
-        "head_sha": "acd20d848ae7730240729e43ce0da8d8d461887b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144811:5632451779:2026-09-12T07:52:17Z:clawsweeper_needs_human",
       "comment_id": "5632451779",
@@ -33473,6 +33426,39 @@
         "kind": "pull_request",
         "branch": "feat/composer-resize-handles",
         "head_sha": "e7145950718a10c8318350023a6d9518381d6624",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146068:5646698393:2026-09-12T15:04:53Z:clawsweeper_needs_human",
+      "comment_id": "5646698393",
+      "comment_version_key": "5646698393:2026-09-12T15:04:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146068#issuecomment-5646698393",
+      "comment_created_at": "2026-09-12T15:04:53Z",
+      "comment_updated_at": "2026-09-12T15:04:53Z",
+      "comment_body_sha256": "2907e8aa41bd5df045f358b0a269bf660ba56ece89057e089af073470deab872",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146068,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted listing function has newer main-side filtering semantics; preservation of those semantics cannot be verified until the conflict is resolved. (sha=5b3d91a329ce3c82badbf0e2956363dfac21c14a)",
+      "expected_head_sha": "5b3d91a329ce3c82badbf0e2956363dfac21c14a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T15:05:48.424Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory20-creation-02",
+        "head_sha": "5b3d91a329ce3c82badbf0e2956363dfac21c14a",
         "cluster_id": null,
         "job_path": null
       }
