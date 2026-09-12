@@ -1,15 +1,15 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146124"
-mode: "autonomous"
-run_id: "34703310600"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34703310600"
-head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "34706611749"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34706611749"
+head_sha: "1853caed03ed1175b38412520c3a1f927e4674c3"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T16:29:15.881Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146124"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/146124"
+published_at: "2026-09-12T16:59:06.481Z"
+canonical: "#146124"
+canonical_issue: "#146124"
 canonical_pr: null
 actions_total: 3
 fix_executed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34703310600](https://github.com/openclaw/clawsweeper/actions/runs/34703310600)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34706611749](https://github.com/openclaw/clawsweeper/actions/runs/34706611749)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146124
+Canonical: #146124
 
 ## Summary
 
-Reproduced the heartbeat filtering defect with unchanged source functions at preflight main a4f011c418ce826b8ec3a2b1a620a0edf7eba2e1. Prepared a narrow fix artifact. Local implementation and browser validation are blocked by read-only access and missing dependencies; no files or GitHub state changed.
+Plan a narrow classification-based sidebar fix for #146124. The clean checkout matches preflight main 4c02bfa0a6e09d40abfc33474cafa0bb410ff23c. Source inspection supports the reported omission; executable regression, browser proof, implementation, and validation remain pending. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Reproduced the heartbeat filtering defect with unchanged source functions at pre
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146124 | fix_needed | planned | canonical | A narrow omission in the existing shared UI predicate remains reproducible on the supplied current main. |
-| #141476 | keep_closed | skipped | related | Merged Team Mode work is historical context, not an open repair or closure target. |
-| cluster:issue-openclaw-openclaw-146124 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Local implementation is blocked by host permissions; the executor can apply this bounded plan on the designated branch. |
+| #146124 | fix_needed | planned | canonical | The supplied evidence supports a focused bug fix with an existing metadata contract. Keep this issue open; closure and merge are prohibited. |
+| #141476 | keep_closed | skipped | related | Historical Team Mode context; no further action. |
+| #146204 | keep_closed | skipped | related | Retain as historical contributor context, not an active fix candidate. Do not reopen, close again, or adopt its suffix heuristic. |
 
 ## Needs Human
 
