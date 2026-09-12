@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T23:08:06.230Z",
+  "updated_at": "2026-09-12T23:08:30.883Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2175:5647763486:2026-09-12T18:14:35Z:clawsweeper_needs_human",
-      "comment_id": "5647763486",
-      "comment_version_key": "5647763486:2026-09-12T18:14:35Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2175#issuecomment-5647763486",
-      "comment_created_at": "2026-09-12T18:14:35Z",
-      "comment_updated_at": "2026-09-12T18:14:35Z",
-      "comment_body_sha256": "13bcf4ed9f51ac7e1d4b5f641b90cea91719a71b432d5af05091d4c07fe39f2f",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2175,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed provider backends still call the same core execution and lease helpers, but the supplied evidence consists of test/build claims rat... (sha=240a4556ab5dec5da2f555863748e9368079dd17)",
-      "expected_head_sha": "240a4556ab5dec5da2f555863748e9368079dd17",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T18:15:34.222Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/provider-core-local-a43b",
-        "head_sha": "240a4556ab5dec5da2f555863748e9368079dd17",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146267:5647666597:2026-09-12T18:15:16Z:clawsweeper_auto_repair",
       "comment_id": "5647666597",
@@ -33898,6 +33865,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144902:5649295106:2026-09-12T23:06:57Z:re_review",
+      "comment_id": "5649295106",
+      "comment_version_key": "5649295106:2026-09-12T23:06:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144902#issuecomment-5649295106",
+      "comment_created_at": "2026-09-12T23:06:57Z",
+      "comment_updated_at": "2026-09-12T23:06:57Z",
+      "comment_body_sha256": "f6ad9b13764e71e3d81fcf1d402a36c963521636837481304cd0cbedb2a0beee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144902,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T23:08:28.626Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-proxy-media-content-length-20260911",
+        "head_sha": "8602bab0f1ef926850aa0148dfb4a881d0b41109",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
