@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-12T15:58:58.531Z",
+  "updated_at": "2026-09-12T15:59:02.944Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116248:5447040269:2026-08-28T00:57:47Z:re_review",
-      "comment_id": "5447040269",
-      "comment_version_key": "5447040269:2026-08-28T00:57:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116248#issuecomment-5447040269",
-      "comment_created_at": "2026-08-28T00:57:47Z",
-      "comment_updated_at": "2026-08-28T00:57:47Z",
-      "comment_body_sha256": "4f64747dbcde6a64fce7ced27cb882da03e035e65342f395b2d1741da7232d73",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116248,
-      "author": "ericcaiwx-star",
-      "author_id": 287630876,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T08:37:33.120Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116248:5447387389:2026-08-28T01:49:17Z:re_review",
       "comment_id": "5447387389",
@@ -33710,6 +33683,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146092:5646794556:2026-09-12T15:58:06Z:clawsweeper_needs_human",
+      "comment_id": "5646794556",
+      "comment_version_key": "5646794556:2026-09-12T15:58:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146092#issuecomment-5646794556",
+      "comment_created_at": "2026-09-12T15:22:35Z",
+      "comment_updated_at": "2026-09-12T15:58:06Z",
+      "comment_body_sha256": "d5386288e4ef7cc9cef83c358945108dfd9b39f91ff1458443d7dbc4faac79e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146092,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Standalone consumers now read settings and managed binaries from a different default directory. The recorded candidate Doctor runs do not establish that a published installation compl... (sha=eda1f4254bc18d6b6e0d2f33cd662bb6645d635d)",
+      "expected_head_sha": "eda1f4254bc18d6b6e0d2f33cd662bb6645d635d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T15:59:02.944Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-agent-dir-legacy-migration",
+        "head_sha": "eda1f4254bc18d6b6e0d2f33cd662bb6645d635d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
