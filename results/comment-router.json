@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T18:35:28.747Z",
+  "updated_at": "2026-09-12T18:36:46.510Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145664:5644039933:2026-09-12T14:19:11Z:clawsweeper_needs_human",
-      "comment_id": "5644039933",
-      "comment_version_key": "5644039933:2026-09-12T14:19:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145664#issuecomment-5644039933",
-      "comment_created_at": "2026-09-12T05:58:54Z",
-      "comment_updated_at": "2026-09-12T14:19:11Z",
-      "comment_body_sha256": "019178ea90db9ed9e0a9cbc19a6c18543d8dc7affff49e7783d6770417b5f8e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145664,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Git installations needing artifact replacement can stop update or repair when the affected runtime is active or cannot be verified offline; recovery may require intervention... (sha=5c85ddc0ec9bfffa82c7beb5a2b9f40de448204b)",
-      "expected_head_sha": "5c85ddc0ec9bfffa82c7beb5a2b9f40de448204b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T14:21:52.752Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/update-promote-runtime-overlay-20260912",
-        "head_sha": "5c85ddc0ec9bfffa82c7beb5a2b9f40de448204b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145839:5644949651:2026-09-12T14:18:52Z:clawsweeper_needs_human",
       "comment_id": "5644949651",
@@ -32818,6 +32785,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146076:5647883430:2026-09-12T18:35:55Z:re_review",
+      "comment_id": "5647883430",
+      "comment_version_key": "5647883430:2026-09-12T18:35:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146076#issuecomment-5647883430",
+      "comment_created_at": "2026-09-12T18:35:55Z",
+      "comment_updated_at": "2026-09-12T18:35:55Z",
+      "comment_body_sha256": "27920f61d0eb76d73bb4c92f257e079e731086e05c59b83f559139e9260636fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146076,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T18:36:44.891Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-140455-descr",
+        "head_sha": "97a0796469ad807725516232f94dba01577a8236",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
