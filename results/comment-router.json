@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T17:06:37.265Z",
+  "updated_at": "2026-09-12T17:06:38.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3246:5645223416:2026-09-12T10:05:45Z:re_review",
-      "comment_id": "5645223416",
-      "comment_version_key": "5645223416:2026-09-12T10:05:45Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3246#issuecomment-5645223416",
-      "comment_created_at": "2026-09-12T10:05:45Z",
-      "comment_updated_at": "2026-09-12T10:05:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3246,
-      "author": "Yuxin-Qiao",
-      "author_id": 104957188,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T10:11:13.696Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/pi-provider-tokscale",
-        "head_sha": "2c0c748de86cc96af8ae58e20424922914be34c7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3246:5443560635:2026-09-12T10:10:18Z:clawsweeper_needs_human",
       "comment_id": "5443560635",
@@ -33825,6 +33778,39 @@
         "kind": "pull_request",
         "branch": "codex/gateway-perf3-runtime",
         "head_sha": "c1166f750ae13ad084af5f095cf8e76b5125f7e4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146199:5647383889:2026-09-12T17:05:43Z:clawsweeper_needs_human",
+      "comment_id": "5647383889",
+      "comment_version_key": "5647383889:2026-09-12T17:05:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146199#issuecomment-5647383889",
+      "comment_created_at": "2026-09-12T17:05:43Z",
+      "comment_updated_at": "2026-09-12T17:05:43Z",
+      "comment_body_sha256": "96ff21679c7e1df1bd776cc3e001d63d6cb4117f89f0e119276927a0afbec29a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146199,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - End-to-end latency and resident-memory effects remain unquantified; allocation samples alone do not establish either. (sha=62d2e98415002d6a5d4597934dd4b3a9f8a311ca)",
+      "expected_head_sha": "62d2e98415002d6a5d4597934dd4b3a9f8a311ca",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T17:06:38.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory20-runtime-policy-16",
+        "head_sha": "62d2e98415002d6a5d4597934dd4b3a9f8a311ca",
         "cluster_id": null,
         "job_path": null
       }
