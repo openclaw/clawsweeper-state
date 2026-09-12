@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T01:02:57.950Z",
+  "updated_at": "2026-09-12T01:03:25.746Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145196:5639586900:2026-09-11T19:36:00Z:clawsweeper_needs_human",
-      "comment_id": "5639586900",
-      "comment_version_key": "5639586900:2026-09-11T19:36:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145196#issuecomment-5639586900",
-      "comment_created_at": "2026-09-11T19:26:01Z",
-      "comment_updated_at": "2026-09-11T19:36:00Z",
-      "comment_body_sha256": "319f82f2d39a3fc7c272069b3c2cccc79892696ef16f9cd2273b55366295b516",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145196,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported native SQLite checks establish durable ordering, but do not show that logout or replaceme...; Review finding: [P1] Revalidate ownership before publishing an awaited settlement — src/agents/auth-profiles/oauth-refresh-fence.ts:283-287 - [medium] Stale credential publication... (sha=b89ef1731642bee572b729c8a50617ccc53c247f)",
-      "expected_head_sha": "b89ef1731642bee572b729c8a50617ccc53c247f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T19:49:52.767Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/async-auth-profile-storage",
-        "head_sha": "b89ef1731642bee572b729c8a50617ccc53c247f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145193:5639593784:2026-09-11T19:39:54Z:clawsweeper_needs_human",
       "comment_id": "5639593784",
@@ -33294,6 +33261,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145248:5642378243:2026-09-12T01:01:05Z:re_review",
+      "comment_id": "5642378243",
+      "comment_version_key": "5642378243:2026-09-12T01:01:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145248#issuecomment-5642378243",
+      "comment_created_at": "2026-09-12T01:01:05Z",
+      "comment_updated_at": "2026-09-12T01:01:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145248,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T01:03:23.429Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/144866-subagent-spawn-thinking-compat",
+        "head_sha": "f68e27004d41c9820c6dc82f4b69cd44ea03d309",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
