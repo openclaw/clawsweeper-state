@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T14:10:16.604Z",
+  "updated_at": "2026-09-12T14:10:34.431Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145709:5644248910:2026-09-12T06:52:32Z:clawsweeper_needs_human",
-      "comment_id": "5644248910",
-      "comment_version_key": "5644248910:2026-09-12T06:52:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145709#issuecomment-5644248910",
-      "comment_created_at": "2026-09-12T06:39:53Z",
-      "comment_updated_at": "2026-09-12T06:52:32Z",
-      "comment_body_sha256": "7413ef33011b7b8482b2fb4073a3c8743682371c8f7d578c0813ac9cc5b36631",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145709,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=82876f905451cfdf0efc2b993481b36c38c50cc9)",
-      "expected_head_sha": "82876f905451cfdf0efc2b993481b36c38c50cc9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T06:59:47.241Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/sqlite-session-performance",
-        "head_sha": "82876f905451cfdf0efc2b993481b36c38c50cc9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145711:5644264579:2026-09-12T06:50:43Z:clawsweeper_needs_human",
       "comment_id": "5644264579",
@@ -33346,6 +33313,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145788:5646388721:2026-09-12T14:09:36Z:re_review",
+      "comment_id": "5646388721",
+      "comment_version_key": "5646388721:2026-09-12T14:09:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145788#issuecomment-5646388721",
+      "comment_created_at": "2026-09-12T14:09:36Z",
+      "comment_updated_at": "2026-09-12T14:09:36Z",
+      "comment_body_sha256": "a725d9d9c08fc35c8d2664186f59380464b30f5c9dfb834df6e8677422541645",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145788,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T14:10:32.041Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/escape-abort-preserve-cli-binding",
+        "head_sha": "a3d83ddcbf364f7352cfa69031fe619a468b7693",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
