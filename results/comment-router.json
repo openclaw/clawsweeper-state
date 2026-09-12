@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T20:32:48.808Z",
+  "updated_at": "2026-09-12T20:33:09.611Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146084:5647084261:2026-09-12T16:14:15Z:re_review",
-      "comment_id": "5647084261",
-      "comment_version_key": "5647084261:2026-09-12T16:14:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146084#issuecomment-5647084261",
-      "comment_created_at": "2026-09-12T16:14:15Z",
-      "comment_updated_at": "2026-09-12T16:14:15Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146084,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T16:15:10.435Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1045",
-        "head_sha": "7f1792cce01a39acda76d715f1eaee9968e88b24",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144768:5631236083:2026-09-12T16:14:00Z:clawsweeper_needs_human",
       "comment_id": "5631236083",
@@ -33265,6 +33218,39 @@
         "kind": "pull_request",
         "branch": "codex/apfs-clone-performance",
         "head_sha": "394adf4caff739eada826f406798b36594f64c6e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:283:5648212682:2026-09-12T20:03:39Z:clawsweeper_needs_human",
+      "comment_id": "5648212682",
+      "comment_version_key": "5648212682:2026-09-12T20:03:39Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/283#issuecomment-5648212682",
+      "comment_created_at": "2026-09-12T19:36:45Z",
+      "comment_updated_at": "2026-09-12T20:03:39Z",
+      "comment_body_sha256": "fb1131e64196a800d1baa0277628cd9deb138a410a68b1c2987936b4523eee68",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed windows-owner.ts parser and resolver are covered by injected responses and reported Linux checks on AWS Crabbox cbx_e7c5e5c92048. N... (sha=dabe0b7b1af09776fa5794f92acea9f294ba0a54)",
+      "expected_head_sha": "dabe0b7b1af09776fa5794f92acea9f294ba0a54",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T20:33:09.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-principal-keys",
+        "head_sha": "dabe0b7b1af09776fa5794f92acea9f294ba0a54",
         "cluster_id": null,
         "job_path": null
       }
