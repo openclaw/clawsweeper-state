@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-120143"
-mode: "autonomous"
-run_id: "34679230962"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34679230962"
+mode: "plan"
+run_id: "34680869523"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34680869523"
 head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T07:23:42.741Z"
+published_at: "2026-09-12T07:38:25.022Z"
 canonical: "#120143"
-canonical_issue: null
+canonical_issue: "#89254"
 canonical_pr: "#120143"
-actions_total: 1
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34679230962](https://github.com/openclaw/clawsweeper/actions/runs/34679230962)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34680869523](https://github.com/openclaw/clawsweeper/actions/runs/34680869523)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: #120143
 
 ## Summary
 
-Make PR #120143 merge-ready for ClawSweeper autofix. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Repair #120143 in place: rebase, correct Matrix diagnostic configuration resolution, address review feedback, and validate. Keep both items open. No mutations or tests were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,8 @@ Make PR #120143 merge-ready for ClawSweeper autofix. Rebase onto latest main, ad
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #120143 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #120143 | fix_needed | planned | canonical | A narrow repair is authorized and the existing branch is writable. Conflicts and unresolved review feedback require repair and fresh validation. |
+| #89254 | keep_related | planned | related | Preserve the source reproduction and follow-up thread while #120143 receives its bounded diagnostic repair. Closure is disabled. |
 
 ## Needs Human
 
