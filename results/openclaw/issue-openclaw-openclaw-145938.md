@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145938"
-mode: "autonomous"
-run_id: "34692385240"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34692385240"
+mode: "plan"
+run_id: "34695060129"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34695060129"
 head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-12T12:42:48.319Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145938"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/145938"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-12T13:02:16.139Z"
+canonical: "#145938"
+canonical_issue: "#145938"
 canonical_pr: null
-actions_total: 5
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34692385240](https://github.com/openclaw/clawsweeper/actions/runs/34692385240)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34695060129](https://github.com/openclaw/clawsweeper/actions/runs/34695060129)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145938
+Canonical: #145938
 
 ## Summary
 
-Confirmed the framing failure mechanism on the preflight main SHA using Node v24.18.1. Implementation and required CLI validation are blocked by the read-only host, absent dependencies, and unavailable Node v24.20.0. A narrow executor fix artifact is prepared; no files or GitHub state changed.
+Prepared a narrow codec repair plan. Checkout matches preflight main d8af54cc6c0f634f01f4f56607a8aee88c8f9e14. An in-memory Node v24.18.1 probe reproduced separator splitting; required Node v24.20.0 CLI reproduction and validation remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,7 @@ Confirmed the framing failure mechanism on the preflight main SHA using Node v24
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145938 | fix_needed | planned | canonical | The source and runtime probe support a narrow codec repair. Executor must establish the required failing regression and isolated CLI reproduction before editing. |
-| #89830 | keep_closed | skipped | related | Historical framing precedent only. |
-| #90845 | keep_closed | skipped | related | Use as conceptual precedent only; do not import plugin-private code or treat it as this issue's fix. |
-| #138306 | keep_closed | skipped | related | Distinct serialization defect; retain its regression protection. |
-| cluster:issue-openclaw-openclaw-145938 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Local implementation is blocked by host restrictions; the executor needs a writable isolated checkout, dependencies, and Node v24.20.0. |
+| #145938 | fix_needed | planned | canonical | The Git backup reader needs its own framing repair. No product or security judgment is required; implementation must first satisfy the job's exact-runtime reproduction gate. |
 
 ## Needs Human
 
