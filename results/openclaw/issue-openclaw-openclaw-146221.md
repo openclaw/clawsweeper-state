@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146221"
-mode: "autonomous"
-run_id: "34707087488"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34707087488"
+mode: "plan"
+run_id: "34709581666"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34709581666"
 head_sha: "1853caed03ed1175b38412520c3a1f927e4674c3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T17:32:56.083Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146221"
+published_at: "2026-09-12T18:02:59.080Z"
+canonical: "#146221"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/146221"
 canonical_pr: null
-actions_total: 7
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34707087488](https://github.com/openclaw/clawsweeper/actions/runs/34707087488)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34709581666](https://github.com/openclaw/clawsweeper/actions/runs/34709581666)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146221
+Canonical: #146221
 
 ## Summary
 
-Verified the draft-card closeout gap in source at preflight main d948d25a768753b4d110c27b885ceb3f7fda65df. Prepared a narrow fix artifact. Local implementation and failing-regression proof are blocked by the read-only host and missing test dependencies. No files or GitHub state changed.
+Plan a narrow Slack draft-card closeout fix for #146221. The checkout matches preflight main 0cbdfabeae986b3b9798137310600a09f82e5439. Source inspection supports the reported gap; failing regression and runtime validation remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,12 @@ Verified the draft-card closeout gap in source at preflight main d948d25a768753b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146221 | fix_needed | blocked | canonical | The fix is source-supported, but this host cannot write the required regression or production patch, or install dependencies. Executor must establish the failing dispatch regression on latest main before editing production code. |
-| #140554 | keep_independent | planned | independent | Separate lifecycle feature proposal outside the Slack bug-only repair. |
-| #141170 | keep_related | planned | related | Useful contributor work with a distinct transport failure. Preserve its branch and review path; no merge or replacement is proposed. |
-| #142772 | keep_related | planned | related | Different presentation surface and unresolved cause; this draft-card fix does not establish coverage. |
-| #142828 | keep_closed | skipped | related | Historical context only; no closure action. |
-| #144769 | keep_independent | planned | independent | Independent UI and persistence contract, outside this Slack completion repair. |
-| cluster:issue-openclaw-openclaw-146221 | build_fix_artifact | planned | canonical | A narrow new fix PR remains appropriate, contingent on reproduction and validation in a writable executor checkout. |
+| #146221 | fix_needed | planned | canonical | The reported draft-card defect has a narrow existing-owner repair. Reproduce before editing, then finalize successful acknowledged delivery during dispatch closeout without replaying media. Recheck for contributor work before publishing. |
+| #140554 | keep_independent | planned | independent | Automatic session-card expiry is separate from Slack transport closeout and outside this bug-only job. |
+| #141170 | keep_related | planned | related | Useful contributor work for a distinct native-stream rejection path. It does not replace the draft-card media closeout fix; no merge is authorized. |
+| #142772 | keep_related | planned | related | A distinct status/rendering symptom without evidence of the media-triggered draft-card defect. |
+| #142828 | keep_closed | skipped | related | Historical context only; already closed and distinct from draft-card closeout. |
+| #144769 | keep_independent | planned | independent | Control UI dismissal policy is outside the Slack lifecycle repair. |
 
 ## Needs Human
 
