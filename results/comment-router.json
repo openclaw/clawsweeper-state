@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T17:00:21.657Z",
+  "updated_at": "2026-09-12T17:01:38.193Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144951:5645193138:2026-09-12T09:59:10Z:re_review",
-      "comment_id": "5645193138",
-      "comment_version_key": "5645193138:2026-09-12T09:59:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144951#issuecomment-5645193138",
-      "comment_created_at": "2026-09-12T09:59:10Z",
-      "comment_updated_at": "2026-09-12T09:59:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144951,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T10:06:58.050Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stepfun-modelsdev-alias",
-        "head_sha": "c66be11ce7bec220309f9e7e44591ff35190e55b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144951:5635374758:2026-09-12T10:05:58Z:clawsweeper_needs_human",
       "comment_id": "5635374758",
@@ -33853,6 +33806,39 @@
         "kind": "pull_request",
         "branch": "codex/gateway-test-shard-headroom",
         "head_sha": "d6e3749e4a182aa1857d72207a4423e8f4c6a720",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146219:5647355499:2026-09-12T17:00:40Z:clawsweeper_needs_human",
+      "comment_id": "5647355499",
+      "comment_version_key": "5647355499:2026-09-12T17:00:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146219#issuecomment-5647355499",
+      "comment_created_at": "2026-09-12T17:00:40Z",
+      "comment_updated_at": "2026-09-12T17:00:40Z",
+      "comment_body_sha256": "cab69a097230656af9592c4dcd4f022e64bd0f38f06575bfc631098008c52c67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146219,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Whole-Gateway allocation benefits and latency/RSS tradeoffs remain unmeasured for this candidate; the isolated percentages cannot establish those outcomes. (sha=d9c7b9e5bf029324d3b7b57b314666b467f325de)",
+      "expected_head_sha": "d9c7b9e5bf029324d3b7b57b314666b467f325de",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T17:01:38.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-allocation-round4",
+        "head_sha": "d9c7b9e5bf029324d3b7b57b314666b467f325de",
         "cluster_id": null,
         "job_path": null
       }
