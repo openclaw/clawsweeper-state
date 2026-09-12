@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T19:15:27.003Z",
+  "updated_at": "2026-09-12T19:15:27.505Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145093:5646652201:2026-09-12T14:56:08Z:re_review",
-      "comment_id": "5646652201",
-      "comment_version_key": "5646652201:2026-09-12T14:56:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145093#issuecomment-5646652201",
-      "comment_created_at": "2026-09-12T14:56:08Z",
-      "comment_updated_at": "2026-09-12T14:56:08Z",
-      "comment_body_sha256": "7a575066f9b02fcda8538a338d4d70bc6d2d412cafc5c4c89e3ba08b0c3aa5a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145093,
-      "author": "Marvinthebored",
-      "author_id": 262704729,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T14:57:03.991Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/composer-resize-handles",
-        "head_sha": "e7145950718a10c8318350023a6d9518381d6624",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146059:5646653441:2026-09-12T14:56:23Z:clawsweeper_auto_repair",
       "comment_id": "5646653441",
@@ -32943,6 +32896,39 @@
         "kind": "pull_request",
         "branch": "feat/mcp-embedded-transport",
         "head_sha": "d8ae61be3422867ecf74215e7d0563ed0cb1e226",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146336:5648095155:2026-09-12T19:14:29Z:clawsweeper_needs_human",
+      "comment_id": "5648095155",
+      "comment_version_key": "5648095155:2026-09-12T19:14:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146336#issuecomment-5648095155",
+      "comment_created_at": "2026-09-12T19:14:29Z",
+      "comment_updated_at": "2026-09-12T19:14:29Z",
+      "comment_body_sha256": "7e573a31193ed5f359c6be75369788e57b42b43a5ab1289ac44e0160b37edd68",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146336,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured evidence does not yet establish the final built-artifact startup behavior or fresh-versus-upgraded-install auth behavior required by repository policy. (sha=05dbc37945c9700dcb61e70865a0f03cdd54b0e9)",
+      "expected_head_sha": "05dbc37945c9700dcb61e70865a0f03cdd54b0e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T19:15:27.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-synthetic-auth-discovery",
+        "head_sha": "05dbc37945c9700dcb61e70865a0f03cdd54b0e9",
         "cluster_id": null,
         "job_path": null
       }
