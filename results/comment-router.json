@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T16:45:19.106Z",
+  "updated_at": "2026-09-12T16:46:23.889Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145797:5645120817:2026-09-12T09:47:38Z:re_review",
-      "comment_id": "5645120817",
-      "comment_version_key": "5645120817:2026-09-12T09:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145797#issuecomment-5645120817",
-      "comment_created_at": "2026-09-12T09:47:38Z",
-      "comment_updated_at": "2026-09-12T09:47:38Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145797,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T09:48:38.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/7.33-extended-survivor-support",
-        "head_sha": "6465b0abe8cbd45b2352f83e637ab6b48aa6f9cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145789:5645118089:2026-09-12T09:47:12Z:re_review",
       "comment_id": "5645118089",
@@ -33836,6 +33789,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146205:5647272866:2026-09-12T16:45:31Z:clawsweeper_needs_human",
+      "comment_id": "5647272866",
+      "comment_version_key": "5647272866:2026-09-12T16:45:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146205#issuecomment-5647272866",
+      "comment_created_at": "2026-09-12T16:45:31Z",
+      "comment_updated_at": "2026-09-12T16:45:31Z",
+      "comment_body_sha256": "130bd80e9c6bed40bbc75bb98a09970a034fd006c4175f814ea241ff5929f3ca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146205,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal transcript exercises the placement store and service with real SQLite and reports successful abandonment and ret... (sha=a5a6dce0b191b7987eef9bd976160c01ff95e062)",
+      "expected_head_sha": "a5a6dce0b191b7987eef9bd976160c01ff95e062",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T16:46:23.889Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/146012-placement-abandon-pending-result",
+        "head_sha": "a5a6dce0b191b7987eef9bd976160c01ff95e062",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
