@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T03:06:21.298Z",
+  "updated_at": "2026-09-12T03:06:41.636Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145329:5641197774:2026-09-11T22:21:14Z:clawsweeper_needs_human",
-      "comment_id": "5641197774",
-      "comment_version_key": "5641197774:2026-09-11T22:21:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145329#issuecomment-5641197774",
-      "comment_created_at": "2026-09-11T22:09:34Z",
-      "comment_updated_at": "2026-09-11T22:21:14Z",
-      "comment_body_sha256": "3bc3ce5777a45e4c513e0fa88052748fa8514e2e0e6560cb4c021fbc7733f0f5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145329,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c9cff9c4ee95012099640d613603fd0567e53423)",
-      "expected_head_sha": "c9cff9c4ee95012099640d613603fd0567e53423",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T22:30:04.729Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/model-supported-reasoning",
-        "head_sha": "c9cff9c4ee95012099640d613603fd0567e53423",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145341:5641293662:2026-09-11T22:21:40Z:clawsweeper_auto_repair",
       "comment_id": "5641293662",
@@ -33388,6 +33355,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145093:5643048369:2026-09-12T03:05:50Z:re_review",
+      "comment_id": "5643048369",
+      "comment_version_key": "5643048369:2026-09-12T03:05:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145093#issuecomment-5643048369",
+      "comment_created_at": "2026-09-12T03:05:50Z",
+      "comment_updated_at": "2026-09-12T03:05:50Z",
+      "comment_body_sha256": "28f5754546db6a30d55f4982638b85a22ddbbd6255c0739ab90a92d651e77ac6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145093,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T03:06:40.074Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/composer-resize-handles",
+        "head_sha": "bc42f5b042c03e36ccea5f2844f63dc7aa7bb407",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
