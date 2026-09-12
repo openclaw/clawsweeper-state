@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T19:24:58.147Z",
+  "updated_at": "2026-09-12T19:24:58.475Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145505:5646709453:2026-09-12T15:06:55Z:re_review",
-      "comment_id": "5646709453",
-      "comment_version_key": "5646709453:2026-09-12T15:06:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145505#issuecomment-5646709453",
-      "comment_created_at": "2026-09-12T15:06:55Z",
-      "comment_updated_at": "2026-09-12T15:06:55Z",
-      "comment_body_sha256": "04861c4387b4f8a4eb2889f2a56ed292de92634dbadc61f784685e7ae18ce068",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145505,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T15:07:52.799Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-chat-actions-menu-1px",
-        "head_sha": "6d3acaf36e40c54a9cc9c060fc5aad3d52e62013",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3588:5646712610:2026-09-12T15:07:33Z:clawsweeper_needs_human",
       "comment_id": "5646712610",
@@ -32927,6 +32880,39 @@
         "kind": "pull_request",
         "branch": "codex/ci-shared-worker-generation",
         "head_sha": "0bb0b7cca144a8159531efde9a17c04ec00005a2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146267:5647666597:2026-09-12T19:24:05Z:clawsweeper_needs_human",
+      "comment_id": "5647666597",
+      "comment_version_key": "5647666597:2026-09-12T19:24:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146267#issuecomment-5647666597",
+      "comment_created_at": "2026-09-12T17:57:02Z",
+      "comment_updated_at": "2026-09-12T19:24:05Z",
+      "comment_body_sha256": "d36eff673888610423aff6d7168dc9cf868406b5898c92a72696bfbd2ccbfbf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146267,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Automatic renewal advances when existing remote clients need updated certificate pins: clients retaining the old pin cannot reconnect after renewal. The PR explicitly accepts operator... (sha=b59a26fc93180dd6fe6f3fbdd1877c66997e6b40)",
+      "expected_head_sha": "b59a26fc93180dd6fe6f3fbdd1877c66997e6b40",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T19:24:58.475Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/hot-reload-tls-renewal",
+        "head_sha": "b59a26fc93180dd6fe6f3fbdd1877c66997e6b40",
         "cluster_id": null,
         "job_path": null
       }
