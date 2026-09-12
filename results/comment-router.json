@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T02:49:27.833Z",
+  "updated_at": "2026-09-12T02:49:44.820Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/ocm:221:5641183439:2026-09-11T22:07:48Z:clawsweeper_needs_human",
-      "comment_id": "5641183439",
-      "comment_version_key": "5641183439:2026-09-11T22:07:48Z",
-      "comment_url": "https://github.com/openclaw/ocm/pull/221#issuecomment-5641183439",
-      "comment_created_at": "2026-09-11T22:07:48Z",
-      "comment_updated_at": "2026-09-11T22:07:48Z",
-      "comment_body_sha256": "a21b4a4001f80b88da82ae55f7b26387ed633e20b63a48eb598c7134ff318b3e",
-      "repo": "openclaw/ocm",
-      "issue_number": 221,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=629a9ae535d58509e5b49885c9b63bee232325c9)",
-      "expected_head_sha": "629a9ae535d58509e5b49885c9b63bee232325c9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-11T22:08:44.684Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "allow-unicode-root-siblings",
-        "head_sha": "629a9ae535d58509e5b49885c9b63bee232325c9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145328:5641182423:2026-09-11T22:07:40Z:clawsweeper_needs_human",
       "comment_id": "5641182423",
@@ -33436,6 +33403,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:111051:5642964735:2026-09-12T02:48:46Z:re_review",
+      "comment_id": "5642964735",
+      "comment_version_key": "5642964735:2026-09-12T02:48:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/111051#issuecomment-5642964735",
+      "comment_created_at": "2026-09-12T02:48:46Z",
+      "comment_updated_at": "2026-09-12T02:48:46Z",
+      "comment_body_sha256": "a41bc96d7daac30cdc99c53aaf7e5c4cf334223de5e8aef61c756a7eeddf61d0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 111051,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T02:49:42.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mantis-command-deadline",
+        "head_sha": "c636b8c256626f4cc6573808309b460f7c34b66d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
