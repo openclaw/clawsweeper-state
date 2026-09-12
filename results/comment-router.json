@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T07:38:10.383Z",
+  "updated_at": "2026-09-12T07:38:47.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137901:5643266013:2026-09-12T03:49:00Z:re_review",
-      "comment_id": "5643266013",
-      "comment_version_key": "5643266013:2026-09-12T03:49:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137901#issuecomment-5643266013",
-      "comment_created_at": "2026-09-12T03:49:00Z",
-      "comment_updated_at": "2026-09-12T03:49:00Z",
-      "comment_body_sha256": "99fe9bbb59b99af74376da5d96cdc1bdf1dcfb31f057c9f3606edc24c23c4957",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137901,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T03:50:40.962Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/team-opt-entry-reuse-20260904",
-        "head_sha": "ccd973f4f40f20b37ecc9b5d9587b079d6d8b5b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145498:5642605308:2026-09-12T03:44:01Z:clawsweeper_needs_human",
       "comment_id": "5642605308",
@@ -31923,6 +31876,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-account-readiness",
         "head_sha": "3780a7b14df79b596f9e6ea47b11737f32c7d09f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:33:5644507186:2026-09-12T07:37:50Z:clawsweeper_needs_human",
+      "comment_id": "5644507186",
+      "comment_version_key": "5644507186:2026-09-12T07:37:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/33#issuecomment-5644507186",
+      "comment_created_at": "2026-09-12T07:37:50Z",
+      "comment_updated_at": "2026-09-12T07:37:50Z",
+      "comment_body_sha256": "f9e66341dc3b8ef24a11c00052aeeda7f00b9f6bcf2f4d5525e8aebbcce1d0da",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 33,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The initial signing proof is automatically published as latest stable before the planned Windows fresh-install verification, exposing the recommended download before installation comp... (sha=97a4922c03b620ae52c3f92ec86345abb12a2e2d)",
+      "expected_head_sha": "97a4922c03b620ae52c3f92ec86345abb12a2e2d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T07:38:47.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/publish-msix-test-release",
+        "head_sha": "97a4922c03b620ae52c3f92ec86345abb12a2e2d",
         "cluster_id": null,
         "job_path": null
       }
