@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T21:13:35.061Z",
+  "updated_at": "2026-09-12T21:14:19.946Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120138:5212438693:2026-09-12T16:47:34Z:clawsweeper_needs_human",
-      "comment_id": "5212438693",
-      "comment_version_key": "5212438693:2026-09-12T16:47:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120138#issuecomment-5212438693",
-      "comment_created_at": "2026-08-07T04:36:34Z",
-      "comment_updated_at": "2026-09-12T16:47:34Z",
-      "comment_body_sha256": "0e269e7663c526e6a331a164a84b341f8fc709b2da2262235ba7d03ac0ae4654",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required secops involvement for the changed restricted paths is not established by the available discussion or live review metadata. (sha=6396182d02883b506720436839760ffe42c8e445)",
-      "expected_head_sha": "6396182d02883b506720436839760ffe42c8e445",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T16:50:18.236Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/secretref-docs-generator",
-        "head_sha": "6396182d02883b506720436839760ffe42c8e445",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126313:5342663494:2026-09-12T16:42:19Z:clawsweeper_auto_repair",
       "comment_id": "5342663494",
@@ -33125,6 +33092,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:132809:5648692311:2026-09-12T21:06:45Z:re_review",
+      "comment_id": "5648692311",
+      "comment_version_key": "5648692311:2026-09-12T21:06:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/132809#issuecomment-5648692311",
+      "comment_created_at": "2026-09-12T21:06:45Z",
+      "comment_updated_at": "2026-09-12T21:06:45Z",
+      "comment_body_sha256": "ce1d337ba18cef0a3da7d8f0e19df90facc9383935e0260bbb4ac4a7ef1b7646",
+      "repo": "openclaw/openclaw",
+      "issue_number": 132809,
+      "author": "yetval",
+      "author_id": 102706514,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-run",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T21:14:17.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-interaction-durable-ingress",
+        "head_sha": "dfa262ac5909e8e3fe8b19b541f308f33cf111b2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
