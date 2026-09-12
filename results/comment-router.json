@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T17:24:58.955Z",
+  "updated_at": "2026-09-12T17:25:14.612Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145866:5645278110:2026-09-12T10:17:40Z:re_review",
-      "comment_id": "5645278110",
-      "comment_version_key": "5645278110:2026-09-12T10:17:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145866#issuecomment-5645278110",
-      "comment_created_at": "2026-09-12T10:17:40Z",
-      "comment_updated_at": "2026-09-12T10:17:40Z",
-      "comment_body_sha256": "dbedbd7d82d15a3e66883b28cc25cd0fe0ad2b61d2bcbd437ef84dc41524f577",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145866,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T10:23:29.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dallin/type-improver-b12-home-dir-owner",
-        "head_sha": "e718ea9fff98a1c3aa5fd87d4fba3a30d3de2616",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145866:5645195038:2026-09-12T10:22:37Z:clawsweeper_needs_human",
       "comment_id": "5645195038",
@@ -33794,6 +33747,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2168:5647302972:2026-09-12T17:24:25Z:clawsweeper_needs_human",
+      "comment_id": "5647302972",
+      "comment_version_key": "5647302972:2026-09-12T17:24:25Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2168#issuecomment-5647302972",
+      "comment_created_at": "2026-09-12T16:51:03Z",
+      "comment_updated_at": "2026-09-12T17:24:25Z",
+      "comment_body_sha256": "572dbc26511eac59fc8e61ecc226669e2c3af2351ca5faab4b8ffe7d7f0835f4",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The production flag engine is exercised by generator fixtures, but supplied evidence does not show an after-change Crabbox CLI run resolving fr... (sha=82fc88c9037aa218884de6a150eddf1adce9944f)",
+      "expected_head_sha": "82fc88c9037aa218884de6a150eddf1adce9944f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T17:25:14.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/config-flags-engine-a43b",
+        "head_sha": "82fc88c9037aa218884de6a150eddf1adce9944f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
