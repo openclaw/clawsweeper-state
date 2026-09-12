@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145636",
+  "mode": "autonomous",
+  "run_id": "34675631032",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34675631032",
+  "head_sha": "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145636.md",
+  "published_at": "2026-09-12T06:47:31.281Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/145636",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145636",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the defect on preflight main 55da47fd8d854cf9c2935870145bfe90c428cc35. A narrow repair is planned. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#145636",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145636",
+      "candidate_fix": null,
+      "reason": "Reuse the existing resolver owner at both runtime readers while preserving dispatch and admitted-run checks."
+    },
+    {
+      "target": "#141252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#145636",
+      "candidate_fix": null,
+      "reason": "A distinct root cause with separate remaining work; retain outside this implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-145636",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145636",
+      "candidate_fix": null,
+      "reason": "The deterministic executor can implement this bounded artifact in a writable checkout after establishing the required failing regression."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
