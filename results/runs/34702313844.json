@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-145995",
+  "mode": "plan",
+  "run_id": "34702313844",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34702313844",
+  "head_sha": "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-145995.md",
+  "published_at": "2026-09-12T15:34:15.258Z",
+  "canonical": "#145995",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/145995",
+  "canonical_pr": null,
+  "summary": "Plan a narrow contention-diagnostic repair for #145995. Checkout HEAD matches preflight main a10ecfee37961ef0a0f2152b03b3ed80c6e1a12b and retains the reported generic exhaustion error. Current-main reproduction, implementation, and tests remain pending on a writable execution host. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#145995",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#145995",
+      "candidate_fix": null,
+      "reason": "The diagnostic defect has a narrow repair path. First prove exhaustion through the real synchronous worker on current main; stop if reproduction fails. Closure and merging are prohibited."
+    },
+    {
+      "target": "#142392",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#145995",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or implementation action."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

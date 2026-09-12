@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-145995"
-mode: "autonomous"
-run_id: "34699210073"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34699210073"
+mode: "plan"
+run_id: "34702313844"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34702313844"
 head_sha: "23c848fb2fb4f7f695788942cfe8c8d9ffa11ccc"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-12T15:03:32.509Z"
-canonical: "https://github.com/openclaw/openclaw/issues/145995"
+published_at: "2026-09-12T15:34:15.258Z"
+canonical: "#145995"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/145995"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34699210073](https://github.com/openclaw/clawsweeper/actions/runs/34699210073)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34702313844](https://github.com/openclaw/clawsweeper/actions/runs/34702313844)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/145995
+Canonical: #145995
 
 ## Summary
 
-Prepared a narrow diagnostic repair plan. The inspected source retains the generic exhaustion error. Implementation and reproduction are blocked by this host's read-only filesystem; no code or GitHub changes were made.
+Plan a narrow contention-diagnostic repair for #145995. Checkout HEAD matches preflight main a10ecfee37961ef0a0f2152b03b3ed80c6e1a12b and retains the reported generic exhaustion error. Current-main reproduction, implementation, and tests remain pending on a writable execution host. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Prepared a narrow diagnostic repair plan. The inspected source retains the gener
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #145995 | fix_needed | planned | canonical | The actionable-failure alternative fits the approved bug-only scope without changing snapshot consistency or persistence. Current-main reproduction remains a prerequisite. |
-| #142392 | keep_closed | skipped | related | Historical context only; no closure or other mutation is proposed. |
-| cluster:issue-openclaw-openclaw-145995 | build_fix_artifact | planned |  | A bounded diagnostic fix remains supported by source evidence; implementation must first satisfy the reproduction gate. |
-| cluster:issue-openclaw-openclaw-145995 | open_fix_pr | blocked |  | Resume in a writable executor, reconcile main, reproduce before editing, implement and validate the attached plan, then let the deterministic applicator create or update the single issue PR. |
+| #145995 | fix_needed | planned | canonical | The diagnostic defect has a narrow repair path. First prove exhaustion through the real synchronous worker on current main; stop if reproduction fails. Closure and merging are prohibited. |
+| #142392 | keep_closed | skipped | related | Historical context only; no closure or implementation action. |
 
 ## Needs Human
 
