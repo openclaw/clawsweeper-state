@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T18:12:25.950Z",
+  "updated_at": "2026-09-12T18:12:31.896Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3583:5646220616:2026-09-12T13:36:26Z:re_review",
-      "comment_id": "5646220616",
-      "comment_version_key": "5646220616:2026-09-12T13:36:26Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3583#issuecomment-5646220616",
-      "comment_created_at": "2026-09-12T13:36:26Z",
-      "comment_updated_at": "2026-09-12T13:36:26Z",
-      "comment_body_sha256": "6c7c01b285f0045f0029a498aba3fdc81e9fb7191623004156e2e3fe10aa49c3",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3583,
-      "author": "hhh2210",
-      "author_id": 107194248,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T13:38:14.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/antigravity-duplicate-quota-leak",
-        "head_sha": "df20306ef09ea73a0d2bffa1bdd3b2dd62b7b7bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3583:5644427648:2026-09-12T13:34:37Z:clawsweeper_needs_human",
       "comment_id": "5644427648",
@@ -32887,6 +32840,39 @@
         "kind": "pull_request",
         "branch": "fix/settled-post-tool-finalization-unavailable",
         "head_sha": "69eac3e84f8e2e85545c15105352bf5609d31b77",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146246:5647522932:2026-09-12T18:03:59Z:clawsweeper_needs_human",
+      "comment_id": "5647522932",
+      "comment_version_key": "5647522932:2026-09-12T18:03:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146246#issuecomment-5647522932",
+      "comment_created_at": "2026-09-12T17:31:01Z",
+      "comment_updated_at": "2026-09-12T18:03:59Z",
+      "comment_body_sha256": "b3969258c0b5f6e27f56cc76c2905847e42c5863457ff5874d79e66c1223e27e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing explicit fleets that used systemAgent only for ambient work will also use it for unscoped compatibility routing and reads; preservation across a published-updater upgrade has... (sha=4b102c3fb4b3c558b66c891f989251ddd0fea9c2)",
+      "expected_head_sha": "4b102c3fb4b3c558b66c891f989251ddd0fea9c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T18:12:31.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-default-agent-after-explicit-ownership",
+        "head_sha": "4b102c3fb4b3c558b66c891f989251ddd0fea9c2",
         "cluster_id": null,
         "job_path": null
       }
