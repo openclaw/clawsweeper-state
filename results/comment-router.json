@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-12T05:19:46.268Z",
+  "updated_at": "2026-09-12T05:20:09.120Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/imsg:290:5642365655:2026-09-12T00:59:22Z:clawsweeper_needs_human",
-      "comment_id": "5642365655",
-      "comment_version_key": "5642365655:2026-09-12T00:59:22Z",
-      "comment_url": "https://github.com/openclaw/imsg/pull/290#issuecomment-5642365655",
-      "comment_created_at": "2026-09-12T00:59:22Z",
-      "comment_updated_at": "2026-09-12T00:59:22Z",
-      "comment_body_sha256": "65343bcb2bfb54a198aabb1d30929154043954fda718126bdaa71725c46d5ef1",
-      "repo": "openclaw/imsg",
-      "issue_number": 290,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5d270d90d0e2c3b6304435b9da1c14de6809fbb5)",
-      "expected_head_sha": "5d270d90d0e2c3b6304435b9da1c14de6809fbb5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T01:00:17.014Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/next-unreleased-0.15.4-34662973263",
-        "head_sha": "5d270d90d0e2c3b6304435b9da1c14de6809fbb5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145369:5641603508:2026-09-12T00:58:12Z:clawsweeper_needs_human",
       "comment_id": "5641603508",
@@ -32796,6 +32763,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145633:5643718351:2026-09-12T05:18:40Z:re_review",
+      "comment_id": "5643718351",
+      "comment_version_key": "5643718351:2026-09-12T05:18:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145633#issuecomment-5643718351",
+      "comment_created_at": "2026-09-12T05:18:40Z",
+      "comment_updated_at": "2026-09-12T05:18:40Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145633,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-12T05:20:07.248Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pr123058-thinking-test-budget",
+        "head_sha": "371680dafbb4d7de13fb80aa5bec97040755f3da",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
