@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-12T18:58:01.265Z",
+  "updated_at": "2026-09-12T18:58:01.655Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:122553:5646564704:2026-09-12T14:39:27Z:re_review",
-      "comment_id": "5646564704",
-      "comment_version_key": "5646564704:2026-09-12T14:39:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/122553#issuecomment-5646564704",
-      "comment_created_at": "2026-09-12T14:39:27Z",
-      "comment_updated_at": "2026-09-12T14:39:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 122553,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T14:40:16.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/media-fetch-retry-429",
-        "head_sha": "c709a78a86c82d210ca7317506dc610371018b9a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:107921:5646566011:2026-09-12T14:39:42Z:re_review",
       "comment_id": "5646566011",
@@ -32971,6 +32924,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-dm-resource-separation",
         "head_sha": "ce94730929488894fb0b25a8f67a3d95a24b0f63",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146262:5647625395:2026-09-12T18:53:09Z:clawsweeper_needs_human",
+      "comment_id": "5647625395",
+      "comment_version_key": "5647625395:2026-09-12T18:53:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146262#issuecomment-5647625395",
+      "comment_created_at": "2026-09-12T17:49:12Z",
+      "comment_updated_at": "2026-09-12T18:53:09Z",
+      "comment_body_sha256": "18148dc699650de6c04b496db9823f49d4c4cedcad61f155169005550dfca895",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146262,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied Windows decoder trace and real SQLite read tests provide useful partial evidence for normalization. They do not demonstra... (sha=87fe4ca3ea773a7722ed4d8715dbfac58bf6dd78)",
+      "expected_head_sha": "87fe4ca3ea773a7722ed4d8715dbfac58bf6dd78",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-12T18:58:01.655Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-core-strict-recall-store-numbers",
+        "head_sha": "87fe4ca3ea773a7722ed4d8715dbfac58bf6dd78",
         "cluster_id": null,
         "job_path": null
       }
