@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T05:56:41.683Z",
+  "updated_at": "2026-09-13T05:56:45.897Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:110429:5010052996:2026-09-13T01:40:32Z:clawsweeper_needs_human",
-      "comment_id": "5010052996",
-      "comment_version_key": "5010052996:2026-09-13T01:40:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110429#issuecomment-5010052996",
-      "comment_created_at": "2026-07-18T05:22:08Z",
-      "comment_updated_at": "2026-09-13T01:40:32Z",
-      "comment_body_sha256": "1ff5001b25a88aec267d81b25808470ba365e1e917cca4b09f15064f886d8e17",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110429,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The opt-in design leaves default workflow reads unbounded; whether that tradeoff warrants a permanent configuration setting remains unconfirmed. (sha=e25d904b6f9f35ecded6d0fe106083eb4fda10a7)",
-      "expected_head_sha": "e25d904b6f9f35ecded6d0fe106083eb4fda10a7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T01:56:33.183Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jjy/fix/comfy-workflow-file-cap",
-        "head_sha": "e25d904b6f9f35ecded6d0fe106083eb4fda10a7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117951:5157206715:2026-09-06T21:23:36Z:clawsweeper_auto_repair",
       "comment_id": "5157206715",
@@ -32228,6 +32195,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:43:5651507632:2026-09-13T05:55:51Z:clawsweeper_needs_human",
+      "comment_id": "5651507632",
+      "comment_version_key": "5651507632:2026-09-13T05:55:51Z",
+      "comment_url": "https://github.com/openclaw/photoscrawl/pull/43#issuecomment-5651507632",
+      "comment_created_at": "2026-09-13T05:55:51Z",
+      "comment_updated_at": "2026-09-13T05:55:51Z",
+      "comment_body_sha256": "22294438b7cd8e898790f1ef0e540968b3d2fd0492fadaff70966481ef341d34",
+      "repo": "openclaw/photoscrawl",
+      "issue_number": 43,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing backfills with incomplete or contradictory mapped outputs will now stop entirely, including when the affected identity is retired. Operators must restore trustworthy evidence... (sha=ce7178774e710bc5fd2975df8cb46ccce4a4e6b0)",
+      "expected_head_sha": "ce7178774e710bc5fd2975df8cb46ccce4a4e6b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T05:56:45.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/backfill-key-identity",
+        "head_sha": "ce7178774e710bc5fd2975df8cb46ccce4a4e6b0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
