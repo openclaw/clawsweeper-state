@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T22:58:57.942Z",
+  "updated_at": "2026-09-13T22:59:10.759Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144056:5654915153:2026-09-13T17:35:39Z:re_review",
-      "comment_id": "5654915153",
-      "comment_version_key": "5654915153:2026-09-13T17:35:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144056#issuecomment-5654915153",
-      "comment_created_at": "2026-09-13T17:35:39Z",
-      "comment_updated_at": "2026-09-13T17:35:39Z",
-      "comment_body_sha256": "807d38416fd148eadb023a48552d4b7b3cac1e2dbf8ea20cb445a3af2c3a2c5e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144056,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T17:45:15.400Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-138947-descr",
-        "head_sha": "1d0f100cbb8cd3f1a68666dfe710f5e18226f78e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144056:5619222419:2026-09-13T17:43:47Z:clawsweeper_auto_repair",
       "comment_id": "5619222419",
@@ -33819,6 +33772,39 @@
         "kind": "pull_request",
         "branch": "fix/sck-concurrent-apps",
         "head_sha": "c18d9a4954ed5a67ff33044292a13664682b204b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147499:5656779266:2026-09-13T22:58:20Z:clawsweeper_needs_human",
+      "comment_id": "5656779266",
+      "comment_version_key": "5656779266:2026-09-13T22:58:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147499#issuecomment-5656779266",
+      "comment_created_at": "2026-09-13T22:58:20Z",
+      "comment_updated_at": "2026-09-13T22:58:20Z",
+      "comment_body_sha256": "72f82d91eccb5b973d59886c0fdcb714b8cb54d6972d4951dfb7822b74a49e56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the added requester-wake test reaches admission and caller-scope checks through mocked delivery, but does not e... (sha=0eddb57a1b3fed424f14053b019fdfcc798752da)",
+      "expected_head_sha": "0eddb57a1b3fed424f14053b019fdfcc798752da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T22:59:10.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/requester-automation-authority",
+        "head_sha": "0eddb57a1b3fed424f14053b019fdfcc798752da",
         "cluster_id": null,
         "job_path": null
       }
