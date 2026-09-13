@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147258",
+  "mode": "autonomous",
+  "run_id": "34774386338",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34774386338",
+  "head_sha": "94518a42a08de81623dfe84160f8a75957d20a58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147258.md",
+  "published_at": "2026-09-13T19:12:51.769Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147258",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147258",
+  "canonical_pr": null,
+  "summary": "Source confirms the guidance defect at preflight main 07b96d9b4122e1afdd0efbb662b2335eb716dfec. A narrow fix artifact is ready for the executor. Local implementation is blocked by the read-only host; focused tests and changed-scope discovery failed before execution because dependencies are absent. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#147258",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147258",
+      "candidate_fix": null,
+      "reason": "The existing discovery/recovery contract can be repaired within Memory Core without changing indexing, visibility, configuration, persisted state, or public APIs."
+    },
+    {
+      "target": "#85398",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#129866",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#130088",
+      "reason": "Preserve the resolved optional-wiki behavior."
+    },
+    {
+      "target": "#130088",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical merged work must remain intact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147258",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147258",
+      "candidate_fix": null,
+      "reason": "A narrow executable handoff is supported by source evidence; runtime reproduction, implementation, review, and validation remain executor work."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
