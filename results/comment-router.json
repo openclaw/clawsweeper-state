@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T21:56:27.485Z",
+  "updated_at": "2026-09-13T21:56:51.044Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146350:5654704687:2026-09-13T17:00:03Z:re_review",
-      "comment_id": "5654704687",
-      "comment_version_key": "5654704687:2026-09-13T17:00:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146350#issuecomment-5654704687",
-      "comment_created_at": "2026-09-13T17:00:03Z",
-      "comment_updated_at": "2026-09-13T17:00:03Z",
-      "comment_body_sha256": "dd5b91d264d558ed303ed9b677c5d0c459145b61e5069c1c0fdfc8bbae12d78f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146350,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T17:00:58.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auto-reset-detached-lifetime",
-        "head_sha": "a6fedab674c7babc195d9f3fd48c203350ee6965",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3621:5654708189:2026-09-13T17:00:36Z:clawsweeper_auto_repair",
       "comment_id": "5654708189",
@@ -33811,6 +33764,39 @@
         "kind": "pull_request",
         "branch": "fix/config-write-reference-intent-136025",
         "head_sha": "48b0e72b62c8a2c0f883fd2891c4926160f26998",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147437:5656387817:2026-09-13T21:49:54Z:clawsweeper_auto_repair",
+      "comment_id": "5656387817",
+      "comment_version_key": "5656387817:2026-09-13T21:49:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147437#issuecomment-5656387817",
+      "comment_created_at": "2026-09-13T21:49:54Z",
+      "comment_updated_at": "2026-09-13T21:49:54Z",
+      "comment_body_sha256": "8d67731fc608219d81b23d3d22f86c162bdd4176f09b8b1e5a5d7cf4b7be823e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147437,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5611b338bce76709a6a0c4babd6956ec419dbdcc)",
+      "expected_head_sha": "5611b338bce76709a6a0c4babd6956ec419dbdcc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T21:56:51.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-windows-task-handoff-silent-restart",
+        "head_sha": "5611b338bce76709a6a0c4babd6956ec419dbdcc",
         "cluster_id": null,
         "job_path": null
       }
