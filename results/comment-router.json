@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T04:01:08.406Z",
+  "updated_at": "2026-09-13T04:01:13.841Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/oracle:399:5332783167:2026-09-12T22:57:37Z:clawsweeper_needs_human",
-      "comment_id": "5332783167",
-      "comment_version_key": "5332783167:2026-09-12T22:57:37Z",
-      "comment_url": "https://github.com/steipete/oracle/pull/399#issuecomment-5332783167",
-      "comment_created_at": "2026-08-18T19:06:15Z",
-      "comment_updated_at": "2026-09-12T22:57:37Z",
-      "comment_body_sha256": "20e8e477585a19ca6f551750d2576df2700827ac6aa520c30bf2679e7c1be669",
-      "repo": "steipete/oracle",
-      "issue_number": 399,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports live Pro divergence and a matched follow-up, but provides no inspectable output connecting authenticated fetches to t...; Review finding: [P2] Mark the saved raw document as materialized — src/browser/chatgptConversation.ts:783-789 - [P2] Match the answer against the corresponding assistant turn — sr... (sha=09dc763714fe16df4ef055d0c42ea6dac5b7f789)",
-      "expected_head_sha": "09dc763714fe16df4ef055d0c42ea6dac5b7f789",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T22:58:43.713Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "provider-native-capture",
-        "head_sha": "09dc763714fe16df4ef055d0c42ea6dac5b7f789",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146525:5649066622:2026-09-12T22:57:24Z:clawsweeper_needs_human",
       "comment_id": "5649066622",
@@ -33386,6 +33353,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146709:5651026133:2026-09-13T04:00:14Z:re_review",
+      "comment_id": "5651026133",
+      "comment_version_key": "5651026133:2026-09-13T04:00:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146709#issuecomment-5651026133",
+      "comment_created_at": "2026-09-13T04:00:14Z",
+      "comment_updated_at": "2026-09-13T04:00:14Z",
+      "comment_body_sha256": "293a7be8089f7944b17d59e353b3d01d464d70bcb4d93d3cf7ccbba5555dad12",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146709,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T04:01:11.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ui-image-artifact-cache",
+        "head_sha": "5415a81ff586ef81fbac0ca2112da2ee682abe44",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
