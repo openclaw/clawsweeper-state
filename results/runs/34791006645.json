@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147502",
+  "mode": "plan",
+  "run_id": "34791006645",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34791006645",
+  "head_sha": "4cabb60d21c8322e13ed9d8c7e899b4ec883c30a",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147502.md",
+  "published_at": "2026-09-13T23:57:16.476Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147502",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147502",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/147542",
+  "summary": "Keep #147502 open and retain contributor PR #147542 as the canonical fix path. Keep the PR without mutation pending the complete review, diff, and outstanding behavior proof. A competing implementation PR is unnecessary. No files or GitHub state changed; runtime validation was not performed.",
+  "actions": [
+    {
+      "target": "#147502",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147502",
+      "candidate_fix": "#147542",
+      "reason": "Keep the canonical report open while #147542 completes validation. The job prohibits closure."
+    },
+    {
+      "target": "#147542",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#147542",
+      "candidate_fix": null,
+      "reason": "Preserve LiuwqGit's PR and attribution through the existing fix path https://github.com/openclaw/openclaw/pull/147542 for https://github.com/openclaw/openclaw/issues/147502. Downgrade the fix action to a non-mutating keep_related because the incomplete review and absent diff do not safely establish the required repair. Retrieve the complete review and diff and reproduce through redactSupportString against current main before defining an executable fix artifact. Outstanding validation includes a Windows diagnostic consumer or support export with genuine namespace-prefixed paths and malformed mid-path controls, the redaction and export suites, scoped changed-file checks, git diff --check, and fresh review. These are pending checks, not completed proof. Do not create a competing PR, close, or merge."
+    },
+    {
+      "target": "#144688",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#147502",
+      "candidate_fix": null,
+      "reason": "Historical related fix; leave closed."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
