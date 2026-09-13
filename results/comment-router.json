@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T01:02:37.484Z",
+  "updated_at": "2026-09-13T01:05:41.640Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146339:5648335848:2026-09-12T20:00:52Z:re_review",
-      "comment_id": "5648335848",
-      "comment_version_key": "5648335848:2026-09-12T20:00:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146339#issuecomment-5648335848",
-      "comment_created_at": "2026-09-12T20:00:52Z",
-      "comment_updated_at": "2026-09-12T20:00:52Z",
-      "comment_body_sha256": "983724b0f85049fbfd063c727bd662c1e93cb59f55888160f94eb5d1321fa047",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146339,
-      "author": "kip-claw",
-      "author_id": 274822774,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T20:01:45.565Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "mcp-stdio-missing-command-diagnostic",
-        "head_sha": "5951551620f2c8010c43b947d9b57292c3b3b0d7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1130:5648342116:2026-09-12T20:02:03Z:clawsweeper_needs_human",
       "comment_id": "5648342116",
@@ -33695,6 +33648,39 @@
         "kind": "pull_request",
         "branch": "fix/notifier-completion-ledger-batch2",
         "head_sha": "c012e866f61ab7ac49d02cf0acc7d3547707b28c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:297:5649842050:2026-09-13T01:04:45Z:clawsweeper_needs_human",
+      "comment_id": "5649842050",
+      "comment_version_key": "5649842050:2026-09-13T01:04:45Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/297#issuecomment-5649842050",
+      "comment_created_at": "2026-09-13T01:04:45Z",
+      "comment_updated_at": "2026-09-13T01:04:45Z",
+      "comment_body_sha256": "2f5e6738fc79536fea9a0fd47f37d2ad3a199993f8390613c1a21849401db148",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 297,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body supplies test/check results for the resolver and publication owners, but no separate after-fix runtime evidence through the p...; Review finding: [P1] [P1] Enforce final-symlink rejection during absolute root entry — src/root-path-existing.ts:44-49 - [medium] Canonicalization discards a forbidden final alias... (sha=a87cc73d0855705380fa8cda58e262fd3235f192)",
+      "expected_head_sha": "a87cc73d0855705380fa8cda58e262fd3235f192",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T01:05:41.640Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-parent-symlinks",
+        "head_sha": "a87cc73d0855705380fa8cda58e262fd3235f192",
         "cluster_id": null,
         "job_path": null
       }
