@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T06:36:44.767Z",
+  "updated_at": "2026-09-13T06:36:49.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141797:5650403614:2026-09-13T02:50:13Z:re_review",
-      "comment_id": "5650403614",
-      "comment_version_key": "5650403614:2026-09-13T02:50:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141797#issuecomment-5650403614",
-      "comment_created_at": "2026-09-13T02:50:13Z",
-      "comment_updated_at": "2026-09-13T02:50:13Z",
-      "comment_body_sha256": "bfd4aeb9fdf063a57e1c8fd3c48924bd59dd4366a0ea001a1cb602c5ab6cdb4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141797,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T02:51:02.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/recovery-channel-progress",
-        "head_sha": "6aeee72bdd03cdb0dd1c1e13f8e3932e8de3f9ed",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:297:5649842050:2026-09-13T02:50:10Z:clawsweeper_needs_human",
       "comment_id": "5649842050",
@@ -32187,6 +32140,39 @@
         "kind": "pull_request",
         "branch": "codex/sweep-subagent-session-scope-20260826",
         "head_sha": "96f043a28b08124f5d8ad628e5e7d04bcd669696",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/spogo:79:5651699182:2026-09-13T06:35:58Z:clawsweeper_needs_human",
+      "comment_id": "5651699182",
+      "comment_version_key": "5651699182:2026-09-13T06:35:58Z",
+      "comment_url": "https://github.com/openclaw/spogo/pull/79#issuecomment-5651699182",
+      "comment_created_at": "2026-09-13T06:35:58Z",
+      "comment_updated_at": "2026-09-13T06:35:58Z",
+      "comment_body_sha256": "77f4114296541d84ccc278e0b39c55ad347c738baaea2b8389ad7d59eeee0270",
+      "repo": "openclaw/spogo",
+      "issue_number": 79,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that relied on silently truncating malformed Spotify resources will now receive errors; the extent of that reliance is unknown, although the compatibility change is e... (sha=85bfa17e43373978ef3c03102161ffb139deaa52)",
+      "expected_head_sha": "85bfa17e43373978ef3c03102161ffb139deaa52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T06:36:49.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/phase-five-inputs",
+        "head_sha": "85bfa17e43373978ef3c03102161ffb139deaa52",
         "cluster_id": null,
         "job_path": null
       }
