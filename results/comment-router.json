@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T20:58:10.869Z",
+  "updated_at": "2026-09-13T20:58:14.846Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144065:5654230334:2026-09-13T15:33:53Z:re_review",
-      "comment_id": "5654230334",
-      "comment_version_key": "5654230334:2026-09-13T15:33:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144065#issuecomment-5654230334",
-      "comment_created_at": "2026-09-13T15:33:53Z",
-      "comment_updated_at": "2026-09-13T15:33:53Z",
-      "comment_body_sha256": "263b4a73b000598c6c37b4286af221098be5fdc629fb02d6aa3b7721592041ea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144065,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T15:35:01.498Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-143262-descr",
-        "head_sha": "249dd45e2692baba6b6818f496b525902f631cfa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147120:5654159534:2026-09-13T15:34:20Z:clawsweeper_needs_human",
       "comment_id": "5654159534",
@@ -33701,6 +33654,39 @@
         "kind": "pull_request",
         "branch": "fix/heartbeat-cli-fallback-silent",
         "head_sha": "a9b4ca1ccd8c232c8c900ca7aef6578087456b29",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147405:5656089009:2026-09-13T20:57:27Z:clawsweeper_needs_human",
+      "comment_id": "5656089009",
+      "comment_version_key": "5656089009:2026-09-13T20:57:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147405#issuecomment-5656089009",
+      "comment_created_at": "2026-09-13T20:57:27Z",
+      "comment_updated_at": "2026-09-13T20:57:27Z",
+      "comment_body_sha256": "afabc6716c8aa275162cca3701246abb8e7f39ec096e867050c4b25216f867e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147405,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published-updater-to-candidate compatibility remains unverified for the changed startup metadata and Doctor path; established-state restart measurements do not exercise that upgrade b... (sha=b33ac0d995d69ad699931f3db9bb35062e37e962)",
+      "expected_head_sha": "b33ac0d995d69ad699931f3db9bb35062e37e962",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T20:58:14.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-startup-prepared-facts",
+        "head_sha": "b33ac0d995d69ad699931f3db9bb35062e37e962",
         "cluster_id": null,
         "job_path": null
       }
