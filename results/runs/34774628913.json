@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147259",
+  "mode": "autonomous",
+  "run_id": "34774628913",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34774628913",
+  "head_sha": "94518a42a08de81623dfe84160f8a75957d20a58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147259.md",
+  "published_at": "2026-09-13T19:12:01.902Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147259",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147259",
+  "canonical_pr": null,
+  "summary": "Confirmed the logs caller omits the existing read-only lifecycle on preflight main 29517dc5f3adda1a7c721d5a20b2ca86d25bc204. Prepared a narrow fix artifact. Implementation and required CLI reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#147259",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#147259",
+      "candidate_fix": null,
+      "reason": "The narrow fix remains justified by current source, but implementation must wait for a writable executor to establish the required failing real-CLI regression before editing."
+    },
+    {
+      "target": "#138326",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open outside this bug-only implementation cluster."
+    },
+    {
+      "target": "#101290",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "No action on historical context; this repair does not establish reproduction or resolution of the broader corruption report."
+    },
+    {
+      "target": "#116853",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical startup defect is distinct from the residual Gateway-client lifecycle gap."
+    },
+    {
+      "target": "#116869",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the landed contributor work as context, not as a replacement target or proof that the residual issue is fixed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147259",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147259",
+      "candidate_fix": null,
+      "reason": "A bounded executor handoff is possible despite the local implementation blocker. Publication remains contingent on reproduction, repair, validation, and fresh review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
