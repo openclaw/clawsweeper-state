@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T21:57:13.429Z",
+  "updated_at": "2026-09-13T21:57:17.303Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143937:5654558288:2026-09-13T16:33:18Z:re_review",
-      "comment_id": "5654558288",
-      "comment_version_key": "5654558288:2026-09-13T16:33:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143937#issuecomment-5654558288",
-      "comment_created_at": "2026-09-13T16:33:18Z",
-      "comment_updated_at": "2026-09-13T16:33:18Z",
-      "comment_body_sha256": "153ac57a3ed68f2fe3a9207424f4c0c06bff049c403edaa41961980c1ad2907e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143937,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T17:01:46.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-142821-descr",
-        "head_sha": "a97624eecca503c0d4842cbd75c705e11ad66793",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147192:5654673385:2026-09-13T16:54:11Z:re_review",
       "comment_id": "5654673385",
@@ -33783,6 +33736,39 @@
         "kind": "pull_request",
         "branch": "fix/longcat-fractional-expiry",
         "head_sha": "f6e87ba562a2813dc21929bd4bca74573320cc6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147462:5656423629:2026-09-13T21:56:15Z:clawsweeper_needs_human",
+      "comment_id": "5656423629",
+      "comment_version_key": "5656423629:2026-09-13T21:56:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147462#issuecomment-5656423629",
+      "comment_created_at": "2026-09-13T21:56:15Z",
+      "comment_updated_at": "2026-09-13T21:56:15Z",
+      "comment_body_sha256": "28aaee3974062b56549fd18d9dd7ec069b00361d4189b5b4de63a87cde53b95b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147462,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1698c9d12b194d344585cce429877f5aa6c2194b)",
+      "expected_head_sha": "1698c9d12b194d344585cce429877f5aa6c2194b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T21:57:17.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-position-rail-stable-anchor",
+        "head_sha": "1698c9d12b194d344585cce429877f5aa6c2194b",
         "cluster_id": null,
         "job_path": null
       }
