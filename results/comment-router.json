@@ -2,53 +2,6 @@
   "updated_at": "2026-09-13T01:05:49.980Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:144572:5648345898:2026-09-12T20:02:46Z:re_review",
-      "comment_id": "5648345898",
-      "comment_version_key": "5648345898:2026-09-12T20:02:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144572#issuecomment-5648345898",
-      "comment_created_at": "2026-09-12T20:02:46Z",
-      "comment_updated_at": "2026-09-12T20:02:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144572,
-      "author": "pengzh1",
-      "author_id": 24854675,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T20:03:55.333Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-144493",
-        "head_sha": "c74d42f0ce77fa01ee487c34a5fc8066c5f068a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:104691:4948699444:2026-09-12T19:58:42Z:clawsweeper_needs_human",
       "comment_id": "4948699444",
       "comment_version_key": "4948699444:2026-09-12T19:58:42Z",
@@ -33634,6 +33587,39 @@
         "kind": "pull_request",
         "branch": "fix/phase5-backup-counts",
         "head_sha": "b9401530b2d8ed3340e12ac0b7ecb40634e72feb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121309:5235612506:2026-09-13T01:04:04Z:clawsweeper_needs_human",
+      "comment_id": "5235612506",
+      "comment_version_key": "5235612506:2026-09-13T01:04:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5235612506",
+      "comment_created_at": "2026-08-10T03:41:37Z",
+      "comment_updated_at": "2026-09-13T01:04:04Z",
+      "comment_body_sha256": "86e0f6cc45bc5c496410b437a6a6b0d1671d0037ff5eb1f89f879e6a224a0777",
+      "repo": "openclaw/openclaw",
+      "issue_number": 121309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the exact-tree WebSocket traces support retention, SQLite restoration, revision rejection, and safe ex...; Review finding: [P1] [P1] Preserve Gateway and cleanup ownership on delivered-run retries — src/agents/subagents/registry/subagent-registry-lifecycle-announce-cleanup.ts:462-468 -... (sha=ee86cfeac0331bf81849d217d603cbcad4345b99)",
+      "expected_head_sha": "ee86cfeac0331bf81849d217d603cbcad4345b99",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T01:05:49.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "prep/delete-cleanup-completion-receipts",
+        "head_sha": "ee86cfeac0331bf81849d217d603cbcad4345b99",
         "cluster_id": null,
         "job_path": null
       }
