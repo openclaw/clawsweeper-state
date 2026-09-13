@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146956"
-mode: "autonomous"
-run_id: "34753848833"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34753848833"
+mode: "plan"
+run_id: "34757687635"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34757687635"
 head_sha: "d75f027faca8704bcc220f7ae5127cc93bedaa67"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-13T11:51:55.245Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146956"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/146956"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-13T12:47:19.289Z"
+canonical: "#146956"
+canonical_issue: "#146956"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34753848833](https://github.com/openclaw/clawsweeper/actions/runs/34753848833)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34757687635](https://github.com/openclaw/clawsweeper/actions/runs/34757687635)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146956
+Canonical: #146956
 
 ## Summary
 
-Confirmed the launcher deadline conflict in source at preflight main e05d8b6c9077c2558c740580c90edae53a85057a. Prepared a narrow fix plan; implementation and required process reproduction are blocked by the read-only host, with dependencies and build output absent. No files or GitHub state changed.
+Plan a narrow launcher fix for #146956. The checkout matches preflight main 4aff70f27016f9acf62d0acc19c8bd3592993e4c and retains the competing two-second shutdown deadline. Keep all three linked items open as related work. No code or GitHub mutations occurred; real-process reproduction and validation remain executor gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Confirmed the launcher deadline conflict in source at preflight main e05d8b6c907
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #146956 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,11 +66,10 @@ Confirmed the launcher deadline conflict in source at preflight main e05d8b6c907
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146956 | fix_needed | planned | canonical | A focused restoration of the existing Gateway shutdown contract is supported by source. Establish the requested failing process regression before implementing or opening a PR. |
-| #127256 | keep_related | planned | related | Distinct lifecycle defect outside this implementation scope; keep open. |
-| #143420 | keep_related | planned | related | Durable task recovery is separate from premature launcher termination and expressly excluded from this repair. |
-| #145241 | keep_related | planned | related | Preserve @metahacker's separate lifecycle-error repair. It is neither the canonical fix nor a replacement source for #146956; no merge or supersession is proposed. |
-| cluster:issue-openclaw-openclaw-146956 | build_fix_artifact | planned | canonical | Artifact preparation is complete. A writable executor must reproduce, implement, validate, and obtain fresh review before publication. |
+| #146956 | fix_needed | planned | canonical | Restore the established Gateway-owned shutdown contract through the launcher layers, subject to a failing real-process regression on the executor's current main. |
+| #127256 | keep_related | planned | related | Transport admission during teardown is distinct from launcher-enforced premature termination. This fix must not change admission behavior. |
+| #143420 | keep_related | planned | related | Durable task settlement and successor recovery require separate work; allowing launcher cleanup to finish does not establish that this issue is fixed. |
+| #145241 | keep_related | planned | related | This useful contributor PR addresses premature cancellation of Gateway deadlines, a separate defect. Preserve its branch and credit; it is not a replacement or candidate fix for #146956. |
 
 ## Needs Human
 

@@ -1,0 +1,70 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146956",
+  "mode": "plan",
+  "run_id": "34757687635",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34757687635",
+  "head_sha": "d75f027faca8704bcc220f7ae5127cc93bedaa67",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146956.md",
+  "published_at": "2026-09-13T12:47:19.289Z",
+  "canonical": "#146956",
+  "canonical_issue": "#146956",
+  "canonical_pr": null,
+  "summary": "Plan a narrow launcher fix for #146956. The checkout matches preflight main 4aff70f27016f9acf62d0acc19c8bd3592993e4c and retains the competing two-second shutdown deadline. Keep all three linked items open as related work. No code or GitHub mutations occurred; real-process reproduction and validation remain executor gates.",
+  "actions": [
+    {
+      "target": "#146956",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146956",
+      "candidate_fix": null,
+      "reason": "Restore the established Gateway-owned shutdown contract through the launcher layers, subject to a failing real-process regression on the executor's current main."
+    },
+    {
+      "target": "#127256",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146956",
+      "candidate_fix": null,
+      "reason": "Transport admission during teardown is distinct from launcher-enforced premature termination. This fix must not change admission behavior."
+    },
+    {
+      "target": "#143420",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146956",
+      "candidate_fix": null,
+      "reason": "Durable task settlement and successor recovery require separate work; allowing launcher cleanup to finish does not establish that this issue is fixed."
+    },
+    {
+      "target": "#145241",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146956",
+      "candidate_fix": null,
+      "reason": "This useful contributor PR addresses premature cancellation of Gateway deadlines, a separate defect. Preserve its branch and credit; it is not a replacement or candidate fix for #146956."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
