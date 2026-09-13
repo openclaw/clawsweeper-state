@@ -1,0 +1,97 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147502",
+  "mode": "autonomous",
+  "run_id": "34788433095",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34788433095",
+  "head_sha": "4cabb60d21c8322e13ed9d8c7e899b4ec883c30a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147502.md",
+  "published_at": "2026-09-13T23:37:31.582Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147502",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147502",
+  "canonical_pr": null,
+  "summary": "The defect remains supported by source inspection at preflight main fa5b2d16805c7c81e2c395fbbc0ff27312b16da1. A narrow fix artifact is ready for the executor. Local implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#147502",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147502",
+      "candidate_fix": null,
+      "reason": "Keep this issue as the canonical bug. The implementation must first demonstrate the failing regression in a writable checkout with dependencies installed."
+    },
+    {
+      "target": "#144688",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The merged filesystem repair does not resolve the separate diagnostic-formatting defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147502",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147502",
+      "candidate_fix": null,
+      "reason": "Hand off one narrow new-fix PR plan. The executor must reproduce before editing, validate the completed branch, and reuse the designated branch if it exists."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#147502",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
