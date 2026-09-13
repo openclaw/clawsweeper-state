@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T20:14:15.152Z",
+  "updated_at": "2026-09-13T20:14:16.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147093:5653997361:2026-09-13T14:50:36Z:re_review",
-      "comment_id": "5653997361",
-      "comment_version_key": "5653997361:2026-09-13T14:50:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147093#issuecomment-5653997361",
-      "comment_created_at": "2026-09-13T14:50:36Z",
-      "comment_updated_at": "2026-09-13T14:50:36Z",
-      "comment_body_sha256": "95625991be591d33dbd5aa522bbc2f0408de43d33e17ff9aca2a7f1bd1155d85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147093,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T14:55:58.596Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bump-libopus-wasm-0.4.0",
-        "head_sha": "243f135f804510a9fcaef40cccde822312ca35d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147093:5653968955:2026-09-13T14:54:55Z:clawsweeper_needs_human",
       "comment_id": "5653968955",
@@ -33651,6 +33604,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-android-sidebar-animation-jitter",
         "head_sha": "b59483cfe5b39f0cd1b83cd08635d8499ca456f9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143587:5611566193:2026-09-13T20:12:33Z:clawsweeper_needs_human",
+      "comment_id": "5611566193",
+      "comment_version_key": "5611566193:2026-09-13T20:12:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143587#issuecomment-5611566193",
+      "comment_created_at": "2026-09-10T02:04:58Z",
+      "comment_updated_at": "2026-09-13T20:12:33Z",
+      "comment_body_sha256": "2a1b3a380adb29e22c5e1caf0175359fbd4a32bd361be5954f02e6fbe21cd1a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepted input intentionally continues after profile selection changes while its original host and session authority remain valid; acceptance of that authority-lifetime contract is st... (sha=98a283e46e16d0a35b9b58a32e8b82d06d241912)",
+      "expected_head_sha": "98a283e46e16d0a35b9b58a32e8b82d06d241912",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T20:14:16.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-profile-binding-20260909",
+        "head_sha": "98a283e46e16d0a35b9b58a32e8b82d06d241912",
         "cluster_id": null,
         "job_path": null
       }
