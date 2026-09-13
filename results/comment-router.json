@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T19:33:28.779Z",
+  "updated_at": "2026-09-13T19:33:52.472Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146865:5653663291:2026-09-13T13:46:46Z:re_review",
-      "comment_id": "5653663291",
-      "comment_version_key": "5653663291:2026-09-13T13:46:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146865#issuecomment-5653663291",
-      "comment_created_at": "2026-09-13T13:46:46Z",
-      "comment_updated_at": "2026-09-13T13:46:46Z",
-      "comment_body_sha256": "0ce42c2cf8785f61083d05726c6eb4f03915ec50d4dcfaf1664491f63b3933d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146865,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T13:49:37.533Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-service-residual-diagnostic",
-        "head_sha": "faac6708b10c584bcdba9186ccaf22736d7638a7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145720:5644295421:2026-09-13T13:40:18Z:clawsweeper_auto_repair",
       "comment_id": "5644295421",
@@ -33745,6 +33698,39 @@
         "kind": "pull_request",
         "branch": "feat/android-gateway-ingress-20260913",
         "head_sha": "910241f59992db440f766873d544dd4cf608b3a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147070:5653811862:2026-09-13T19:32:52Z:clawsweeper_needs_human",
+      "comment_id": "5653811862",
+      "comment_version_key": "5653811862:2026-09-13T19:32:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147070#issuecomment-5653811862",
+      "comment_created_at": "2026-09-13T14:15:45Z",
+      "comment_updated_at": "2026-09-13T19:32:52Z",
+      "comment_body_sha256": "297ce0870ab5de422b4c5d3d941c1cbefaf8fb666c577175138577c863b29531",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147070,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Standalone merge readiness remains unresolved: four unchanged declarations lack production consumers and were flagged by the previous shared-kit intersection check. (sha=2735a7f4919354c1bc313ab5e7ff65876519f3e0)",
+      "expected_head_sha": "2735a7f4919354c1bc313ab5e7ff65876519f3e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T19:33:52.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/shared-gateway-ingress-20260913",
+        "head_sha": "2735a7f4919354c1bc313ab5e7ff65876519f3e0",
         "cluster_id": null,
         "job_path": null
       }
