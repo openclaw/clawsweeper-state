@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T18:52:25.670Z",
+  "updated_at": "2026-09-13T18:52:28.134Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144507:5653443769:2026-09-13T13:02:46Z:re_review",
-      "comment_id": "5653443769",
-      "comment_version_key": "5653443769:2026-09-13T13:02:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144507#issuecomment-5653443769",
-      "comment_created_at": "2026-09-13T13:02:46Z",
-      "comment_updated_at": "2026-09-13T13:02:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144507,
-      "author": "pdonizete",
-      "author_id": 2013236,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T13:03:48.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-voice-16khz-vendor",
-        "head_sha": "8edacf6681c604b8c38fd4b5cb531f624d329fcb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:257:5653323738:2026-09-13T13:03:00Z:clawsweeper_auto_repair",
       "comment_id": "5653323738",
@@ -33789,6 +33742,39 @@
         "kind": "pull_request",
         "branch": "codex/code-mode-auto-results",
         "head_sha": "f6243261dd87e4ccbb3736ae4ff0cd306010e428",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147236:5655003402:2026-09-13T18:45:16Z:clawsweeper_needs_human",
+      "comment_id": "5655003402",
+      "comment_version_key": "5655003402:2026-09-13T18:45:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147236#issuecomment-5655003402",
+      "comment_created_at": "2026-09-13T17:51:54Z",
+      "comment_updated_at": "2026-09-13T18:45:16Z",
+      "comment_body_sha256": "547ddf646740aca62b42642bb3a6cd2cc8f4e364da2e92d507e0820fe92cb005",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-head CI failures remain unattributed because the review environment could not access hosted job logs. (sha=43359756f11fc34cf533d1e500db0e40d22d1a0a)",
+      "expected_head_sha": "43359756f11fc34cf533d1e500db0e40d22d1a0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T18:52:28.134Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-post-commit-observer-failures",
+        "head_sha": "43359756f11fc34cf533d1e500db0e40d22d1a0a",
         "cluster_id": null,
         "job_path": null
       }
