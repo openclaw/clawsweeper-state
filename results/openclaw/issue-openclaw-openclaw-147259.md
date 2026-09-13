@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147259"
-mode: "autonomous"
-run_id: "34774628913"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34774628913"
+mode: "plan"
+run_id: "34781418255"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34781418255"
 head_sha: "94518a42a08de81623dfe84160f8a75957d20a58"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-13T19:12:01.902Z"
-canonical: "https://github.com/openclaw/openclaw/issues/147259"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/147259"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-13T20:55:22.126Z"
+canonical: "#147259"
+canonical_issue: "#147259"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34774628913](https://github.com/openclaw/clawsweeper/actions/runs/34774628913)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34781418255](https://github.com/openclaw/clawsweeper/actions/runs/34781418255)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/147259
+Canonical: #147259
 
 ## Summary
 
-Confirmed the logs caller omits the existing read-only lifecycle on preflight main 29517dc5f3adda1a7c721d5a20b2ca86d25bc204. Prepared a narrow fix artifact. Implementation and required CLI reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state were changed.
+Plan a narrow logs caller repair using the existing read-only Gateway lifecycle. Checkout matches preflight main a441bd3b1efc901cd04e0ed0926524e26a2c479f. No changes made; runtime reproduction and validation remain prerequisites for implementation and PR publication.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Confirmed the logs caller omits the existing read-only lifecycle on preflight ma
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147259 | fix_needed | blocked | canonical | The narrow fix remains justified by current source, but implementation must wait for a writable executor to establish the required failing real-CLI regression before editing. |
-| #138326 | keep_independent | planned | independent | Keep open outside this bug-only implementation cluster. |
-| #101290 | keep_closed | skipped | related | No action on historical context; this repair does not establish reproduction or resolution of the broader corruption report. |
-| #116853 | keep_closed | skipped | related | Historical startup defect is distinct from the residual Gateway-client lifecycle gap. |
-| #116869 | keep_closed | skipped | related | Preserve the landed contributor work as context, not as a replacement target or proof that the residual issue is fixed. |
-| cluster:issue-openclaw-openclaw-147259 | build_fix_artifact | planned | canonical | A bounded executor handoff is possible despite the local implementation blocker. Publication remains contingent on reproduction, repair, validation, and fresh review. |
+| #147259 | fix_needed | planned | canonical | A bounded follow-up to the merged startup fix is appropriate, conditional on reproducing the remote-path mutation on current main. |
+| #138326 | keep_independent | planned | independent | Outside this bug-only repair; no configuration changes or duplicate closeout are warranted. |
+| #101290 | keep_closed | skipped | related | Historical evidence only. |
+| #116853 | keep_closed | skipped | related | The earlier startup defect is distinct from the remaining transport lifecycle gap. |
+| #116869 | keep_closed | skipped | related | Preserve the merged contributor work; this repair extends its established behavior. |
 
 ## Needs Human
 
