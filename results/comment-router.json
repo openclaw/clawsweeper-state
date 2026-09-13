@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-13T00:55:02.969Z",
+  "updated_at": "2026-09-13T00:56:39.603Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144502:5648270692:2026-09-12T19:48:03Z:re_review",
-      "comment_id": "5648270692",
-      "comment_version_key": "5648270692:2026-09-12T19:48:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/144502#issuecomment-5648270692",
-      "comment_created_at": "2026-09-12T19:48:03Z",
-      "comment_updated_at": "2026-09-12T19:48:03Z",
-      "comment_body_sha256": "c88bc3f745167bf7ea0b5e04f1c856a1fe94cebf7d00ab71ff46d20c838564b7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144502,
-      "author": "pdonizete",
-      "author_id": 2013236,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T19:49:56.739Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crawlbar:33:5648274444:2026-09-12T19:48:47Z:clawsweeper_needs_human",
       "comment_id": "5648274444",
@@ -33710,6 +33665,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146569:5649508365:2026-09-13T00:50:52Z:clawsweeper_auto_repair",
+      "comment_id": "5649508365",
+      "comment_version_key": "5649508365:2026-09-13T00:50:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146569#issuecomment-5649508365",
+      "comment_created_at": "2026-09-12T23:52:47Z",
+      "comment_updated_at": "2026-09-13T00:50:52Z",
+      "comment_body_sha256": "3e8e14c21ce948c73f6858c2b2ff4f239486ea127041bac822e1beb8cc6c1993",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146569,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=319d018ab69a2fb3a3d92846bde5ac00283feab9)",
+      "expected_head_sha": "319d018ab69a2fb3a3d92846bde5ac00283feab9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T00:56:39.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-systemd-install-missing-unit",
+        "head_sha": "319d018ab69a2fb3a3d92846bde5ac00283feab9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
