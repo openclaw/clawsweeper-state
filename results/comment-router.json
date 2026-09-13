@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T11:09:04.351Z",
+  "updated_at": "2026-09-13T11:09:46.860Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146361:5648240432:2026-09-13T05:29:18Z:clawsweeper_needs_human",
-      "comment_id": "5648240432",
-      "comment_version_key": "5648240432:2026-09-13T05:29:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146361#issuecomment-5648240432",
-      "comment_created_at": "2026-09-12T19:42:14Z",
-      "comment_updated_at": "2026-09-13T05:29:18Z",
-      "comment_body_sha256": "a8e8b37bba1bbbb0663cca9fbaeae50b1cba4c83daa789d744d7c829eb12229e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The added SDK operations require adapters to preserve the distinction between raw and prepared text; forwarding prepared fragments through raw normalization can still strip literal ex... (sha=88d5a80bf6cff4f1af31b7e499138c36a4dc77e6)",
-      "expected_head_sha": "88d5a80bf6cff4f1af31b7e499138c36a4dc77e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T05:30:08.352Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/integrate-streamed-delivery-main05e41b8",
-        "head_sha": "88d5a80bf6cff4f1af31b7e499138c36a4dc77e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146255:5647578301:2026-09-13T05:29:37Z:clawsweeper_auto_repair",
       "comment_id": "5647578301",
@@ -33490,6 +33457,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146951:5652890939:2026-09-13T11:08:53Z:re_review",
+      "comment_id": "5652890939",
+      "comment_version_key": "5652890939:2026-09-13T11:08:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146951#issuecomment-5652890939",
+      "comment_created_at": "2026-09-13T11:08:53Z",
+      "comment_updated_at": "2026-09-13T11:08:53Z",
+      "comment_body_sha256": "9bfcd1561c65380551068f3f515f50e99e826009ebd9a9c630f7a29754a87a5b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146951,
+      "author": "Frosmans",
+      "author_id": 37348612,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T11:09:44.958Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "docs/skill-readiness-visibility",
+        "head_sha": "d95a457e01144cd3d6cd113c2309fd39cca522a5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
