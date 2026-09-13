@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T13:34:40.230Z",
+  "updated_at": "2026-09-13T13:35:48.549Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146822:5651877060:2026-09-13T07:14:00Z:clawsweeper_needs_human",
-      "comment_id": "5651877060",
-      "comment_version_key": "5651877060:2026-09-13T07:14:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146822#issuecomment-5651877060",
-      "comment_created_at": "2026-09-13T07:14:00Z",
-      "comment_updated_at": "2026-09-13T07:14:00Z",
-      "comment_body_sha256": "e91d9f78690d2adf3f527608849659295b66ff9240f489167ef08a12fdbdaf52",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146822,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reduction in model observation turns is supported by source, but its elapsed-time and memory effects remain unmeasured in the supplied evidence. (sha=275cd988f35982f092df3d94cfce43af075d0e92)",
-      "expected_head_sha": "275cd988f35982f092df3d94cfce43af075d0e92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T07:16:01.881Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/cua-targeted-observation-20260913",
-        "head_sha": "275cd988f35982f092df3d94cfce43af075d0e92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146826:5651881750:2026-09-13T07:15:04Z:clawsweeper_needs_human",
       "comment_id": "5651881750",
@@ -33680,6 +33647,53 @@
       "status": "skipped",
       "processed_at": "2026-09-13T13:34:40.230Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146865:5653604099:2026-09-13T13:35:00Z:re_review",
+      "comment_id": "5653604099",
+      "comment_version_key": "5653604099:2026-09-13T13:35:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146865#issuecomment-5653604099",
+      "comment_created_at": "2026-09-13T13:35:00Z",
+      "comment_updated_at": "2026-09-13T13:35:00Z",
+      "comment_body_sha256": "773ae7baf0029ab4c28f17c16d1e0dcf59ecd080635debda1be8bff595802d39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146865,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T13:35:46.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-service-residual-diagnostic",
+        "head_sha": "ae06e212904d0f2acd045f51e4e9cc83cb563668",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
