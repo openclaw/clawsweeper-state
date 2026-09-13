@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T14:13:57.481Z",
+  "updated_at": "2026-09-13T14:14:52.346Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145950:5652006713:2026-09-13T07:40:26Z:re_review",
-      "comment_id": "5652006713",
-      "comment_version_key": "5652006713:2026-09-13T07:40:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145950#issuecomment-5652006713",
-      "comment_created_at": "2026-09-13T07:40:26Z",
-      "comment_updated_at": "2026-09-13T07:40:26Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145950,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T07:41:21.128Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/pr-142931-clean-replacement-20260912",
-        "head_sha": "d44f6649e20036c77d5db219b8298cf48c83968a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145088:5637983851:2026-09-13T07:32:48Z:clawsweeper_needs_human",
       "comment_id": "5637983851",
@@ -33697,6 +33650,39 @@
         "kind": "pull_request",
         "branch": "codex/pnpm-harness-fix",
         "head_sha": "d59a3ccd3432ca5311bd27450108a92bd83ea25a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147072:5653802376:2026-09-13T14:14:01Z:clawsweeper_needs_human",
+      "comment_id": "5653802376",
+      "comment_version_key": "5653802376:2026-09-13T14:14:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147072#issuecomment-5653802376",
+      "comment_created_at": "2026-09-13T14:14:01Z",
+      "comment_updated_at": "2026-09-13T14:14:01Z",
+      "comment_body_sha256": "f5c55929ddd1f12917addff2d3568f608ae80745baa8d2333149b63afa57fdb9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147072,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed memory-host resolver is exercised by meaningful SQLite/filesystem integration tests, but the supplied after-fix evidence remains te... (sha=be5a589a0ee148b54c51f6876ef5281ee9b29cb5)",
+      "expected_head_sha": "be5a589a0ee148b54c51f6876ef5281ee9b29cb5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T14:14:52.346Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-explicit-workspace",
+        "head_sha": "be5a589a0ee148b54c51f6876ef5281ee9b29cb5",
         "cluster_id": null,
         "job_path": null
       }
