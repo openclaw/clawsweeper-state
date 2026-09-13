@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T13:24:21.606Z",
+  "updated_at": "2026-09-13T13:24:50.711Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146681:5651819163:2026-09-13T07:00:37Z:re_review",
-      "comment_id": "5651819163",
-      "comment_version_key": "5651819163:2026-09-13T07:00:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146681#issuecomment-5651819163",
-      "comment_created_at": "2026-09-13T07:00:37Z",
-      "comment_updated_at": "2026-09-13T07:00:37Z",
-      "comment_body_sha256": "c525fa1af0c6333b3b1fe48287e89f0db943b8df12e9ab1c42042b74e32cce74",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146681,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T07:01:30.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/kitchen-sink-worker-diagnostic-20260913",
-        "head_sha": "74c657140537909884ec5cdc8e33a58e216a3893",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:50:5651549546:2026-09-13T07:00:34Z:clawsweeper_needs_human",
       "comment_id": "5651549546",
@@ -33767,6 +33720,39 @@
         "kind": "pull_request",
         "branch": "fix/doctor-service-residual-diagnostic",
         "head_sha": "ae06e212904d0f2acd045f51e4e9cc83cb563668",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147034:5653497028:2026-09-13T13:23:56Z:clawsweeper_needs_human",
+      "comment_id": "5653497028",
+      "comment_version_key": "5653497028:2026-09-13T13:23:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147034#issuecomment-5653497028",
+      "comment_created_at": "2026-09-13T13:13:23Z",
+      "comment_updated_at": "2026-09-13T13:23:56Z",
+      "comment_body_sha256": "e96d757b4021cf75736a0ed70f16e2c49a658bf31ff7cc702914f11cea7aa937",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147034,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=26c44b58ea09ce4071a1f846fa525765ea691ef5)",
+      "expected_head_sha": "26c44b58ea09ce4071a1f846fa525765ea691ef5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T13:24:50.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/qa-memory-get-arguments-20260913",
+        "head_sha": "26c44b58ea09ce4071a1f846fa525765ea691ef5",
         "cluster_id": null,
         "job_path": null
       }
