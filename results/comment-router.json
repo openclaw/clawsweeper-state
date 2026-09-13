@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T05:50:40.761Z",
+  "updated_at": "2026-09-13T05:50:48.984Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144748:5631266658:2026-09-13T01:36:10Z:clawsweeper_needs_human",
-      "comment_id": "5631266658",
-      "comment_version_key": "5631266658:2026-09-13T01:36:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144748#issuecomment-5631266658",
-      "comment_created_at": "2026-09-11T07:54:37Z",
-      "comment_updated_at": "2026-09-13T01:36:10Z",
-      "comment_body_sha256": "80e2aaf5288b1a8b9aa603ddd9574ac8fe508d08361ce070be6cbbbe5e630fe0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144748,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The experimental plugin contract gains five required members. Plugins adopting them cannot run on older hosts, and independent typed host implementations need corresponding additions;... (sha=b0898c1d47c84ca3109842d9ff352131b8682b99)",
-      "expected_head_sha": "b0898c1d47c84ca3109842d9ff352131b8682b99",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T01:42:57.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/workboard-controls",
-        "head_sha": "b0898c1d47c84ca3109842d9ff352131b8682b99",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144753:5631295271:2026-09-13T01:36:16Z:clawsweeper_needs_human",
       "comment_id": "5631295271",
@@ -32208,6 +32175,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116249:5651481952:2026-09-13T05:49:56Z:re_review",
+      "comment_id": "5651481952",
+      "comment_version_key": "5651481952:2026-09-13T05:49:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116249#issuecomment-5651481952",
+      "comment_created_at": "2026-09-13T05:49:56Z",
+      "comment_updated_at": "2026-09-13T05:49:56Z",
+      "comment_body_sha256": "2da66102310f107ff31c0187d164f3efd8fa88d04d1823f9139f42556f009235",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116249,
+      "author": "zhangguiping-xydt",
+      "author_id": 275915537,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T05:50:46.229Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/anthropic-socket-retry-87407",
+        "head_sha": "e93f4696f7790024c8d0be8863cf506e54d273c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
