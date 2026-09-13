@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T01:45:57.934Z",
+  "updated_at": "2026-09-13T01:46:00.017Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146403:5648598918:2026-09-12T20:48:21Z:clawsweeper_needs_human",
-      "comment_id": "5648598918",
-      "comment_version_key": "5648598918:2026-09-12T20:48:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146403#issuecomment-5648598918",
-      "comment_created_at": "2026-09-12T20:48:21Z",
-      "comment_updated_at": "2026-09-12T20:48:21Z",
-      "comment_body_sha256": "68bca5525b829ff1fd5bba77731cd41c7d39213aa1186597375ca61ed01e0013",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146403,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=6f64bfc690e36cfc32f80772d3828ba184899f48)",
-      "expected_head_sha": "6f64bfc690e36cfc32f80772d3828ba184899f48",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T20:49:33.100Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/refs-worktree-cloning",
-        "head_sha": "6f64bfc690e36cfc32f80772d3828ba184899f48",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146415:5648597111:2026-09-12T20:47:59Z:clawsweeper_needs_human",
       "comment_id": "5648597111",
@@ -33390,6 +33357,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146583:5650026581:2026-09-13T01:45:05Z:re_review",
+      "comment_id": "5650026581",
+      "comment_version_key": "5650026581:2026-09-13T01:45:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146583#issuecomment-5650026581",
+      "comment_created_at": "2026-09-13T01:45:05Z",
+      "comment_updated_at": "2026-09-13T01:45:05Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146583,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T01:45:57.951Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/135191-stale-delivery-replay",
+        "head_sha": "d13378acb2cf2ba913ad74fea5c7bfd04ae1a099",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
