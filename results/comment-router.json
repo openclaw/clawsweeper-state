@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T19:20:00.762Z",
+  "updated_at": "2026-09-13T19:20:20.612Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146865:5653604099:2026-09-13T13:35:00Z:re_review",
-      "comment_id": "5653604099",
-      "comment_version_key": "5653604099:2026-09-13T13:35:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146865#issuecomment-5653604099",
-      "comment_created_at": "2026-09-13T13:35:00Z",
-      "comment_updated_at": "2026-09-13T13:35:00Z",
-      "comment_body_sha256": "773ae7baf0029ab4c28f17c16d1e0dcf59ecd080635debda1be8bff595802d39",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146865,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T13:35:46.462Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-service-residual-diagnostic",
-        "head_sha": "ae06e212904d0f2acd045f51e4e9cc83cb563668",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147059:5653605165:2026-09-13T13:35:13Z:clawsweeper_needs_human",
       "comment_id": "5653605165",
@@ -33765,6 +33718,39 @@
         "kind": "pull_request",
         "branch": "codex/test-whatsapp-setup-runtime-fixtures",
         "head_sha": "a60c2d8ade3f73793de4634bd388b47385f766a9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142852:5596320399:2026-09-13T19:19:19Z:clawsweeper_needs_human",
+      "comment_id": "5596320399",
+      "comment_version_key": "5596320399:2026-09-13T19:19:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142852#issuecomment-5596320399",
+      "comment_created_at": "2026-09-09T05:30:07Z",
+      "comment_updated_at": "2026-09-13T19:19:19Z",
+      "comment_body_sha256": "e9b0fb760ce46a70e3be6a2835557de811c907ff0b49ae41f1f9bee993328663",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142852,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Strip private runtime context before extracting media directives (P1)** - This prior finding remains unfixed. A visible result containing a protected internal-context block with a MEDIA: reference passes the pay...; Review finding: [P1] Strip private runtime context before extracting media directives — src/agents/subagents/announce/subagent-announce-completion-delivery.ts:91-96 - [P2] Commit... (sha=3c43ebbd0b0f22dc697889ffef6f6e722a4bbaad)",
+      "expected_head_sha": "3c43ebbd0b0f22dc697889ffef6f6e722a4bbaad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T19:20:20.612Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-132780-announce-media-drop",
+        "head_sha": "3c43ebbd0b0f22dc697889ffef6f6e722a4bbaad",
         "cluster_id": null,
         "job_path": null
       }
