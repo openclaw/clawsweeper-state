@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T22:59:22.845Z",
+  "updated_at": "2026-09-13T22:59:49.682Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147219:5654969720:2026-09-13T17:45:45Z:re_review",
-      "comment_id": "5654969720",
-      "comment_version_key": "5654969720:2026-09-13T17:45:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147219#issuecomment-5654969720",
-      "comment_created_at": "2026-09-13T17:45:45Z",
-      "comment_updated_at": "2026-09-13T17:45:45Z",
-      "comment_body_sha256": "847808ae37a585277a47bd1fc97ea13057ef4346b85fc68ce8235cc8a5cdf7e2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147219,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T17:46:39.598Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/maturity-decision-context-20260912",
-        "head_sha": "0b336f985e6d54f108579f9f21a547cbc187338e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147229:5654970896:2026-09-13T17:45:58Z:clawsweeper_needs_human",
       "comment_id": "5654970896",
@@ -33779,6 +33732,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:36:5656782188:2026-09-13T22:58:56Z:clawsweeper_needs_human",
+      "comment_id": "5656782188",
+      "comment_version_key": "5656782188:2026-09-13T22:58:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/36#issuecomment-5656782188",
+      "comment_created_at": "2026-09-13T22:58:56Z",
+      "comment_updated_at": "2026-09-13T22:58:56Z",
+      "comment_body_sha256": "9af6de6b6774b0b50dadc28aa023e06f0f249044673472bb02ea2f4d6024e9de",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 36,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing v0.0.0.0 proof installations require the documented uninstall/reinstall transition; fresh installation and that transition have no demonstrated Windows result in the supplied... (sha=2cb9b0244f7b52ba331ab7e7ecd2c5e36b93fee3)",
+      "expected_head_sha": "2cb9b0244f7b52ba331ab7e7ecd2c5e36b93fee3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T22:59:49.682Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/gateway-msix-versioning",
+        "head_sha": "2cb9b0244f7b52ba331ab7e7ecd2c5e36b93fee3",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
