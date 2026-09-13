@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146921"
-mode: "autonomous"
-run_id: "34751526510"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34751526510"
+mode: "plan"
+run_id: "34754427364"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34754427364"
 head_sha: "d75f027faca8704bcc220f7ae5127cc93bedaa67"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-13T10:54:38.947Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146921"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/146921"
+published_at: "2026-09-13T11:31:26.218Z"
+canonical: "#146921"
+canonical_issue: "#146921"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34751526510](https://github.com/openclaw/clawsweeper/actions/runs/34751526510)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34754427364](https://github.com/openclaw/clawsweeper/actions/runs/34754427364)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146921
+Canonical: #146921
 
 ## Summary
 
-Confirmed the reported ordering defect in preflight main. Prepared a narrow fix artifact; local implementation and runtime reproduction are blocked by the read-only sandbox and missing Vitest dependencies. No files or GitHub state changed.
+Confirmed the reported ordering in checkout dee64cddf3c07e177b0ae60d0947356859cd5047, matching preflight main. Plan one narrow exact-ID repair. No files or GitHub state changed; runtime reproduction, measurements, and validation remain for execution.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed the reported ordering defect in preflight main. Prepared a narrow fix 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146921 | fix_needed | blocked | canonical | Implementation requires a writable executor with installed dependencies. Source verification supports the repair, but a failing regression through the real resolver must precede the production edit. |
-| #146803 | keep_closed | skipped | related | Historical precedent for the pipeline change, not a fix for the exact-ID defect. |
-| cluster:issue-openclaw-openclaw-146921 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate once the executor establishes the failing regression and completes validation. |
+| #146921 | fix_needed | planned | canonical | A narrow existing-behavior repair is supported. Reproduce before editing, preserve selection and visibility semantics, and reuse the designated branch after checking for an existing implementation PR. |
+| #146803 | keep_closed | skipped | related | Historical implementation precedent, not an open candidate or a fix for exact-ID resolution. |
 
 ## Needs Human
 
