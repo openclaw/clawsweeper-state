@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T21:17:00.392Z",
+  "updated_at": "2026-09-13T21:17:01.645Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143295:5606365843:2026-09-13T15:42:26Z:clawsweeper_auto_repair",
-      "comment_id": "5606365843",
-      "comment_version_key": "5606365843:2026-09-13T15:42:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5606365843",
-      "comment_created_at": "2026-09-09T17:55:17Z",
-      "comment_updated_at": "2026-09-13T15:42:26Z",
-      "comment_body_sha256": "e6f17cd03159e86ea91f6e7c78e624afbf4c250d725749b496c60a943e54495f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143295,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1c8c1e95a8c92cbac3deed1f04ccd34fb4309224)",
-      "expected_head_sha": "1c8c1e95a8c92cbac3deed1f04ccd34fb4309224",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T15:53:57.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-reader-lifecycle-v2",
-        "head_sha": "1c8c1e95a8c92cbac3deed1f04ccd34fb4309224",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147116:5654142525:2026-09-13T15:41:07Z:clawsweeper_needs_human",
       "comment_id": "5654142525",
@@ -33594,6 +33561,53 @@
         "kind": "pull_request",
         "branch": "fix/oc-142821-descr",
         "head_sha": "8230e9be72fc0e3dc57b029efb2991cbe77618ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:144065:5656196105:2026-09-13T21:16:02Z:re_review",
+      "comment_id": "5656196105",
+      "comment_version_key": "5656196105:2026-09-13T21:16:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144065#issuecomment-5656196105",
+      "comment_created_at": "2026-09-13T21:16:02Z",
+      "comment_updated_at": "2026-09-13T21:16:02Z",
+      "comment_body_sha256": "d10b29ec716b1a1b269e4cc947818135324a6909de291f6529c0e93425b30537",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144065,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review - revision 372c72240ef: shared plans now emit protocol revision 2 so released readers reject them (agent-local stays 1), owner discriminator added to picker keys, raw residue cleanup detection fixed, branch rebased onto main. owner re-ran the scoped suites (70 passed)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T21:16:59.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-143262-descr",
+        "head_sha": "372c72240ef707785fe807e187797ed9c1e847c4",
         "cluster_id": null,
         "job_path": null
       },
