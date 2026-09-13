@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T06:26:53.353Z",
+  "updated_at": "2026-09-13T06:26:53.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146191:5650271593:2026-09-13T02:34:42Z:re_review",
-      "comment_id": "5650271593",
-      "comment_version_key": "5650271593:2026-09-13T02:34:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146191#issuecomment-5650271593",
-      "comment_created_at": "2026-09-13T02:34:42Z",
-      "comment_updated_at": "2026-09-13T02:34:42Z",
-      "comment_body_sha256": "4afbb70d48c6aad4b849acab7e95e9101b6c772e9e879b746d7043ca6b4be3a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146191,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T02:35:34.926Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1052",
-        "head_sha": "d55c8cf264782b34888957e69f06e5559a377a67",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146645:5650274447:2026-09-13T02:35:05Z:clawsweeper_auto_repair",
       "comment_id": "5650274447",
@@ -32163,6 +32116,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-146674-search-stored-session-transcripts-from-t",
         "head_sha": "0c758803a813efae505f83aa12cb28bf7b015065",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146092:5646794556:2026-09-13T06:25:54Z:clawsweeper_needs_human",
+      "comment_id": "5646794556",
+      "comment_version_key": "5646794556:2026-09-13T06:25:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146092#issuecomment-5646794556",
+      "comment_created_at": "2026-09-12T15:22:35Z",
+      "comment_updated_at": "2026-09-13T06:25:54Z",
+      "comment_body_sha256": "301d7a551cb299818c5372001996c2c951dc1f182742917da4ddda621fc754c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146092,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed directory migration and deferred-warning behavior has not been qualified through a published updater running the candidate. An installed upgrade could still stop at a hand... (sha=1d88ebf8fe3c8c1a3d8567136df43b8c0d959ac6)",
+      "expected_head_sha": "1d88ebf8fe3c8c1a3d8567136df43b8c0d959ac6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T06:26:53.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-agent-dir-legacy-migration",
+        "head_sha": "1d88ebf8fe3c8c1a3d8567136df43b8c0d959ac6",
         "cluster_id": null,
         "job_path": null
       }
