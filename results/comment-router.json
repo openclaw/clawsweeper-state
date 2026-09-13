@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T02:15:28.339Z",
+  "updated_at": "2026-09-13T02:15:50.588Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137987:5536817442:2026-09-12T21:18:13Z:clawsweeper_needs_human",
-      "comment_id": "5536817442",
-      "comment_version_key": "5536817442:2026-09-12T21:18:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137987#issuecomment-5536817442",
-      "comment_created_at": "2026-09-04T06:47:41Z",
-      "comment_updated_at": "2026-09-12T21:18:13Z",
-      "comment_body_sha256": "5f02da089213ae8bca34821eaaae3ede2da6c7b547fb911733a92547bddd172f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137987,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed OpenAI listener and shared renderer lack after-fix evidence from a real login showing the callback page and final CLI outcome; the... (sha=d66f432e5b4e88d9f7efb694f6edc6c7f9601cdf)",
-      "expected_head_sha": "d66f432e5b4e88d9f7efb694f6edc6c7f9601cdf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T21:19:21.341Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oauth-callback-received-text",
-        "head_sha": "d66f432e5b4e88d9f7efb694f6edc6c7f9601cdf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/birdclaw:189:5648756237:2026-09-12T21:18:57Z:clawsweeper_needs_human",
       "comment_id": "5648756237",
@@ -33429,6 +33396,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146517:5650163159:2026-09-13T02:14:51Z:re_review",
+      "comment_id": "5650163159",
+      "comment_version_key": "5650163159:2026-09-13T02:14:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146517#issuecomment-5650163159",
+      "comment_created_at": "2026-09-13T02:14:51Z",
+      "comment_updated_at": "2026-09-13T02:14:51Z",
+      "comment_body_sha256": "04cd926be6f2ea000c17102f77bcca7ea58c54cdac9c277f7319f46b9e0f2528",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146517,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T02:15:48.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/exec-approval-boundaries",
+        "head_sha": "d4645149e4938db4a07cd83aec89b12f3978781b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
