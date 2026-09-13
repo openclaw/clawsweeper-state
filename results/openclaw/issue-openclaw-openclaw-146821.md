@@ -1,13 +1,13 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146821"
-mode: "autonomous"
-run_id: "34744648008"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34744648008"
+mode: "plan"
+run_id: "34746360069"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34746360069"
 head_sha: "d75f027faca8704bcc220f7ae5127cc93bedaa67"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-13T07:27:58.893Z"
+workflow_conclusion: "success"
+result_status: "needs_human"
+published_at: "2026-09-13T07:59:30.078Z"
 canonical: "https://github.com/openclaw/openclaw/issues/146821"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/146821"
 canonical_pr: null
@@ -18,24 +18,24 @@ fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
-needs_human_count: 0
+needs_human_count: 1
 ---
 
 # issue-openclaw-openclaw-146821
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34744648008](https://github.com/openclaw/clawsweeper/actions/runs/34744648008)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34746360069](https://github.com/openclaw/clawsweeper/actions/runs/34746360069)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: needs_human
 
 Canonical: https://github.com/openclaw/openclaw/issues/146821
 
 ## Summary
 
-Confirmed the native 45-second deadline and misleading fallback on preflight main 3f849337ee978fcf8b23072de1ca203d3f23656f. Prepared a narrow repair artifact. Implementation and native reproduction are blocked by the read-only Linux host without Xcode; no files or GitHub state changed.
+The native deadline defect remains at preflight main 5f482a7defc87b3c720a008efc215256af0a1fff. An active contributor claims this exact repair; resolve ownership before starting competing implementation. Native reproduction was not run: this read-only Linux host lacks Xcode. No changes or GitHub mutations were made.
 
 ## Impact
 
@@ -48,7 +48,7 @@ Confirmed the native 45-second deadline and misleading fallback on preflight mai
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
-| Needs human | 0 |
+| Needs human | 1 |
 
 ## Fix Execution Actions
 
@@ -66,12 +66,12 @@ Confirmed the native 45-second deadline and misleading fallback on preflight mai
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146821 | fix_needed | blocked | canonical | Implementation requires a writable authorized macOS/Xcode host and a failing regression through the native callback before production edits. Source verification alone does not satisfy the requested execution proof. |
-| #135795 | keep_closed | skipped | related | Historical ownership repair; it does not fix the native deadline mismatch. |
-| #139279 | keep_related | planned | related | Distinct policy and progress-cue work; leave open outside this bug-only implementation. |
-| #142173 | route_security | planned | security_sensitive | Quarantine this exact PR for central OpenClaw security handling without public mutation or a vulnerability verdict. The independent native timeout repair does not depend on it. |
-| cluster:issue-openclaw-openclaw-146821 | build_fix_artifact | planned | canonical | The narrow repair remains justified; applying it and proving native behavior require the specified host. |
+| #146821 | needs_human | planned | canonical | Keep this canonical issue open. Resolve the contributor handoff and hydrate any resulting PR before authorizing a competing fix artifact; native reproduction and validation also remain outstanding. |
+| #139279 | keep_related | planned | related | Separate product scope; the native bug repair does not satisfy this request. |
+| #142173 | route_security | planned | security_sensitive | Refer only this item to central security handling without public mutation or a vulnerability verdict. Its browser/Gateway correlation scope does not block the separate native deadline classification. |
+| #135795 | keep_closed | skipped | related | Historical ownership evidence, not a fix for the deadline defect. |
+| #111850 | keep_closed | skipped | independent | Different root cause and already resolved. |
 
 ## Needs Human
 
-- none
+- #146821: Resolve implementation ownership with @zyz619963502zyz. Prefer the claimed contributor repair; hydrate any resulting PR before deciding whether ClawSweeper should take over.
