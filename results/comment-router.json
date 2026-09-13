@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T17:15:52.048Z",
+  "updated_at": "2026-09-13T17:16:10.797Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146951:5652890939:2026-09-13T11:08:53Z:re_review",
-      "comment_id": "5652890939",
-      "comment_version_key": "5652890939:2026-09-13T11:08:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146951#issuecomment-5652890939",
-      "comment_created_at": "2026-09-13T11:08:53Z",
-      "comment_updated_at": "2026-09-13T11:08:53Z",
-      "comment_body_sha256": "9bfcd1561c65380551068f3f515f50e99e826009ebd9a9c630f7a29754a87a5b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146951,
-      "author": "Frosmans",
-      "author_id": 37348612,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T11:09:44.958Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/skill-readiness-visibility",
-        "head_sha": "d95a457e01144cd3d6cd113c2309fd39cca522a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146847:5652894397:2026-09-13T11:09:41Z:re_review",
       "comment_id": "5652894397",
@@ -33735,6 +33688,39 @@
         "kind": "pull_request",
         "branch": "refactor/acp-option-result-normalization-20260913",
         "head_sha": "9aaffbc7b3f711aa23b91cbfcc062a3b7cfcbeea",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/eightctl:105:5654793932:2026-09-13T17:15:27Z:clawsweeper_needs_human",
+      "comment_id": "5654793932",
+      "comment_version_key": "5654793932:2026-09-13T17:15:27Z",
+      "comment_url": "https://github.com/steipete/eightctl/pull/105#issuecomment-5654793932",
+      "comment_created_at": "2026-09-13T17:15:27Z",
+      "comment_updated_at": "2026-09-13T17:15:27Z",
+      "comment_body_sha256": "a74222b9c2c45b4e172e5ad550e217e74ab8dac556bd514f032230bbcd1e917a",
+      "repo": "steipete/eightctl",
+      "issue_number": 105,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e79d538b99f312ae342dd61f46c560696131f60b)",
+      "expected_head_sha": "e79d538b99f312ae342dd61f46c560696131f60b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T17:16:10.797Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-20260913",
+        "head_sha": "e79d538b99f312ae342dd61f46c560696131f60b",
         "cluster_id": null,
         "job_path": null
       }
