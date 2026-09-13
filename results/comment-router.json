@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T06:13:56.201Z",
+  "updated_at": "2026-09-13T06:14:12.269Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146643:5650047158:2026-09-13T02:17:48Z:clawsweeper_needs_human",
-      "comment_id": "5650047158",
-      "comment_version_key": "5650047158:2026-09-13T02:17:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146643#issuecomment-5650047158",
-      "comment_created_at": "2026-09-13T01:49:16Z",
-      "comment_updated_at": "2026-09-13T02:17:48Z",
-      "comment_body_sha256": "e41fdf10693369c65b9421d5fd3de808d7628b137427cc1af64e6fd0f73c9be0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146643,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Restoring the warning above usable catalogs reverses an explicit recent UX decision; whether the owner-review approval accepts that reversal remains unclear. (sha=04765a49899f37aae8719e5f0bd78fd6b5167872)",
-      "expected_head_sha": "04765a49899f37aae8719e5f0bd78fd6b5167872",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T02:20:00.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-partial-snapshot-cold-open",
-        "head_sha": "04765a49899f37aae8719e5f0bd78fd6b5167872",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146644:5650082934:2026-09-13T02:12:22Z:clawsweeper_needs_human",
       "comment_id": "5650082934",
@@ -32124,6 +32091,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143327:5651586478:2026-09-13T06:13:24Z:re_review",
+      "comment_id": "5651586478",
+      "comment_version_key": "5651586478:2026-09-13T06:13:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5651586478",
+      "comment_created_at": "2026-09-13T06:13:24Z",
+      "comment_updated_at": "2026-09-13T06:13:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143327,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T06:14:10.533Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
+        "head_sha": "7835651cb3bc686d08b96261353d2ffacc2ee09b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
