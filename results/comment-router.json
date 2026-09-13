@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T17:58:01.321Z",
+  "updated_at": "2026-09-13T17:58:46.409Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146857:5652987330:2026-09-13T11:30:39Z:re_review",
-      "comment_id": "5652987330",
-      "comment_version_key": "5652987330:2026-09-13T11:30:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146857#issuecomment-5652987330",
-      "comment_created_at": "2026-09-13T11:30:39Z",
-      "comment_updated_at": "2026-09-13T11:30:39Z",
-      "comment_body_sha256": "f8b60ea80946c13a510e6d1b4d5af27b4411258a1584307440233b1145b76eb5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146857,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T11:38:27.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-linux-unknown-gateway-recovery",
-        "head_sha": "619b9834a3b28b309c9d02e483fbce3663a08904",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146857:5652050161:2026-09-13T11:37:33Z:clawsweeper_needs_human",
       "comment_id": "5652050161",
@@ -33757,6 +33710,39 @@
         "kind": "pull_request",
         "branch": "codex/tauri-unified-titlebar",
         "head_sha": "65bb2fcbac3b3e35be3ce4ee089fdfc57c0f056b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146966:5652947898:2026-09-13T17:57:33Z:clawsweeper_needs_human",
+      "comment_id": "5652947898",
+      "comment_version_key": "5652947898:2026-09-13T17:57:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146966#issuecomment-5652947898",
+      "comment_created_at": "2026-09-13T11:21:41Z",
+      "comment_updated_at": "2026-09-13T17:57:33Z",
+      "comment_body_sha256": "0642b058685e3cb086a9d717d3e83b4fb757f91c1951e462c6dcb75dc2ef97ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146966,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The combined fixture may still stop during native menu interaction before establishing either intended preference-domain failure. (sha=deced87b45d41ff50a2038b4361c35529e1cf9da)",
+      "expected_head_sha": "deced87b45d41ff50a2038b4361c35529e1cf9da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T17:58:46.409Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-macos-profile-chat-preferences",
+        "head_sha": "deced87b45d41ff50a2038b4361c35529e1cf9da",
         "cluster_id": null,
         "job_path": null
       }
