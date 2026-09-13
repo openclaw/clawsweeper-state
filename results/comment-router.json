@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T15:31:59.479Z",
+  "updated_at": "2026-09-13T15:32:18.347Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146882:5652411584:2026-09-13T09:19:07Z:re_review",
-      "comment_id": "5652411584",
-      "comment_version_key": "5652411584:2026-09-13T09:19:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146882#issuecomment-5652411584",
-      "comment_created_at": "2026-09-13T09:19:07Z",
-      "comment_updated_at": "2026-09-13T09:19:07Z",
-      "comment_body_sha256": "89249ba492c63411bb296cfb086b63b38fcaf9f64cb669df4e97200df76428b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146882,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T09:25:59.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/gateway-expiry-metadata-20260913",
-        "head_sha": "35eda9f3201ad3dd5c64a2a2ab3d322543fdc52f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146798:5652424409:2026-09-13T09:22:57Z:re_review",
       "comment_id": "5652424409",
@@ -33755,6 +33708,39 @@
         "kind": "pull_request",
         "branch": "openclaw/bay-density20-followup-20260913",
         "head_sha": "eb481281358307d592e353003e4283b92e2355a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:731:5654216421:2026-09-13T15:31:23Z:clawsweeper_needs_human",
+      "comment_id": "5654216421",
+      "comment_version_key": "5654216421:2026-09-13T15:31:23Z",
+      "comment_url": "https://github.com/openclaw/Peekaboo/pull/731#issuecomment-5654216421",
+      "comment_created_at": "2026-09-13T15:31:23Z",
+      "comment_updated_at": "2026-09-13T15:31:23Z",
+      "comment_body_sha256": "17d18bfc81da87ce5d4ec7c1be7f86f6d881f8e6cca13b1464764c7ab07b150e",
+      "repo": "openclaw/Peekaboo",
+      "issue_number": 731,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied validation does not establish that the new universal binary pins and signed Node runtime pass the production packaging path; a mismatch would stop qualification artifact... (sha=8024b84d8099f3693471a549316ccb091a707379)",
+      "expected_head_sha": "8024b84d8099f3693471a549316ccb091a707379",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T15:32:18.347Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "chore/deps-20260913",
+        "head_sha": "8024b84d8099f3693471a549316ccb091a707379",
         "cluster_id": null,
         "job_path": null
       }
