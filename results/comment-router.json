@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T01:46:45.982Z",
+  "updated_at": "2026-09-13T01:46:54.978Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146401:5648508514:2026-09-12T20:49:56Z:clawsweeper_needs_human",
-      "comment_id": "5648508514",
-      "comment_version_key": "5648508514:2026-09-12T20:49:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146401#issuecomment-5648508514",
-      "comment_created_at": "2026-09-12T20:31:08Z",
-      "comment_updated_at": "2026-09-12T20:49:56Z",
-      "comment_body_sha256": "57b30f342a744097ec38938c5bc944ac66aa2697a73e3381ca5d13016de1b304",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146401,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Comparative peak RSS for the optimized implementation remains unreported, leaving its memory cost on large trees unquantified. (sha=30f1f01dfc2ef29b040a7e752a7040767fcf05bf)",
-      "expected_head_sha": "30f1f01dfc2ef29b040a7e752a7040767fcf05bf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T20:51:17.126Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/apfs-clone-performance",
-        "head_sha": "30f1f01dfc2ef29b040a7e752a7040767fcf05bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/wacli:389:5553159467:2026-09-12T20:44:56Z:clawsweeper_auto_repair",
       "comment_id": "5553159467",
@@ -33404,6 +33371,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145577:5650031022:2026-09-13T01:45:59Z:re_review",
+      "comment_id": "5650031022",
+      "comment_version_key": "5650031022:2026-09-13T01:45:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145577#issuecomment-5650031022",
+      "comment_created_at": "2026-09-13T01:45:59Z",
+      "comment_updated_at": "2026-09-13T01:45:59Z",
+      "comment_body_sha256": "cc097ad12e4040c3b8ac61f4ee02f6978cd70c957b76c2a14725292aa778ca97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145577,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T01:46:52.539Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-lint-private-reads",
+        "head_sha": "813671de69b9719f770daa37cc5279a3ef5dd602",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
