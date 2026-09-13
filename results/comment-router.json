@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T19:49:20.733Z",
+  "updated_at": "2026-09-13T19:49:45.168Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147018:5653831865:2026-09-13T14:19:33Z:re_review",
-      "comment_id": "5653831865",
-      "comment_version_key": "5653831865:2026-09-13T14:19:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147018#issuecomment-5653831865",
-      "comment_created_at": "2026-09-13T14:19:33Z",
-      "comment_updated_at": "2026-09-13T14:19:33Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147018,
-      "author": "xenaocx-dev",
-      "author_id": 307372580,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T14:20:23.567Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-dispatch-timeout-ownership",
-        "head_sha": "8ccb188ebac3eda72ee52226af6fff3727474cc0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143494:5653834493:2026-09-13T14:20:05Z:re_review",
       "comment_id": "5653834493",
@@ -33735,6 +33688,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147333:5655670903:2026-09-13T19:47:39Z:clawsweeper_needs_human",
+      "comment_id": "5655670903",
+      "comment_version_key": "5655670903:2026-09-13T19:47:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147333#issuecomment-5655670903",
+      "comment_created_at": "2026-09-13T19:47:39Z",
+      "comment_updated_at": "2026-09-13T19:47:39Z",
+      "comment_body_sha256": "49da7344d1ff7873fafde4a66377bf3cec14fd3973753a78a32d1d5968c41de1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147333,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Inspected synthetic full-app screenshots prove the visible chat-icon changes, but do not show installed-package discovery and the new... (sha=7174dfbfd555517c3bb1d9857cc993bf38518f17)",
+      "expected_head_sha": "7174dfbfd555517c3bb1d9857cc993bf38518f17",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T19:49:45.168Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-activity-icons",
+        "head_sha": "7174dfbfd555517c3bb1d9857cc993bf38518f17",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
