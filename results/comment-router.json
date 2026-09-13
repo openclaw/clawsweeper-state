@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T18:52:28.134Z",
+  "updated_at": "2026-09-13T18:53:41.823Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clickclack:257:5653323738:2026-09-13T13:03:00Z:clawsweeper_auto_repair",
-      "comment_id": "5653323738",
-      "comment_version_key": "5653323738:2026-09-13T13:03:00Z",
-      "comment_url": "https://github.com/openclaw/clickclack/pull/257#issuecomment-5653323738",
-      "comment_created_at": "2026-09-13T12:41:13Z",
-      "comment_updated_at": "2026-09-13T13:03:00Z",
-      "comment_body_sha256": "50f94cf0c660e5971724a846871f7e9c2c0c7b6f6dfbc55352264273962763dc",
-      "repo": "openclaw/clickclack",
-      "issue_number": 257,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=aa459dd5b64d7c2b59a6c8308c1b9c6a513c1d7e)",
-      "expected_head_sha": "aa459dd5b64d7c2b59a6c8308c1b9c6a513c1d7e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T13:03:50.339Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/delete-channels",
-        "head_sha": "aa459dd5b64d7c2b59a6c8308c1b9c6a513c1d7e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146996:5653101071:2026-09-13T13:03:20Z:clawsweeper_needs_human",
       "comment_id": "5653101071",
@@ -33778,6 +33745,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146635:5655350739:2026-09-13T18:52:47Z:re_review",
+      "comment_id": "5655350739",
+      "comment_version_key": "5655350739:2026-09-13T18:52:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146635#issuecomment-5655350739",
+      "comment_created_at": "2026-09-13T18:52:47Z",
+      "comment_updated_at": "2026-09-13T18:52:47Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146635,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T18:53:40.062Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-whatsapp-setup-runtime-fixtures",
+        "head_sha": "a60c2d8ade3f73793de4634bd388b47385f766a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
