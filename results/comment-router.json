@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-13T01:21:05.753Z",
+  "updated_at": "2026-09-13T01:22:00.517Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143727:5648420672:2026-09-12T20:16:47Z:rebase",
-      "comment_id": "5648420672",
-      "comment_version_key": "5648420672:2026-09-12T20:16:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143727#issuecomment-5648420672",
-      "comment_created_at": "2026-09-12T20:16:47Z",
-      "comment_updated_at": "2026-09-12T20:16:47Z",
-      "comment_body_sha256": "07fbf30fb1a0f848d02c5e421e8d9d8de7615e407f4363c905baa424477745b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143727,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "rebase",
-      "intent": "rebase",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T20:17:52.780Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/cron-timeout-admission-143624",
-        "head_sha": "b67df2ae4ef490c07bfbbe717da3e31127ce7575",
-        "cluster_id": "automerge-openclaw-openclaw-143727",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-143727.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-143727.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146272:5647709268:2026-09-12T20:14:23Z:clawsweeper_needs_human",
       "comment_id": "5647709268",
@@ -33619,6 +33566,39 @@
         "kind": "pull_request",
         "branch": "fix/groq-setup-catalog-discovery",
         "head_sha": "c9124d5c51a72ab5e9f7f24a9c73511c9f2c58a4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:297:5649842050:2026-09-13T01:21:05Z:clawsweeper_needs_human",
+      "comment_id": "5649842050",
+      "comment_version_key": "5649842050:2026-09-13T01:21:05Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/297#issuecomment-5649842050",
+      "comment_created_at": "2026-09-13T01:04:45Z",
+      "comment_updated_at": "2026-09-13T01:21:05Z",
+      "comment_body_sha256": "173a18e01bcfb16149c0f645f12bbaf8b33d5ab35b6aa0cf59aca41592c4f8df",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 297,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured body provides tests/checks for root resolution and publication, but no separate after-fix public-A...; Review finding: [P1] [P1] Enforce final-symlink rejection during absolute root entry — src/root-path-existing.ts:44-49 - [medium] Canonicalization removes evidence of the forbidde... (sha=3976203596b1f4e3276e8763edfabf1f0bd6d64d)",
+      "expected_head_sha": "3976203596b1f4e3276e8763edfabf1f0bd6d64d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T01:22:00.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-parent-symlinks",
+        "head_sha": "3976203596b1f4e3276e8763edfabf1f0bd6d64d",
         "cluster_id": null,
         "job_path": null
       }
