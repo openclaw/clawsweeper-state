@@ -1,0 +1,114 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146956",
+  "mode": "autonomous",
+  "run_id": "34753848833",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34753848833",
+  "head_sha": "d75f027faca8704bcc220f7ae5127cc93bedaa67",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146956.md",
+  "published_at": "2026-09-13T11:51:55.245Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/146956",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/146956",
+  "canonical_pr": null,
+  "summary": "Confirmed the launcher deadline conflict in source at preflight main e05d8b6c9077c2558c740580c90edae53a85057a. Prepared a narrow fix plan; implementation and required process reproduction are blocked by the read-only host, with dependencies and build output absent. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#146956",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146956",
+      "candidate_fix": null,
+      "reason": "A focused restoration of the existing Gateway shutdown contract is supported by source. Establish the requested failing process regression before implementing or opening a PR."
+    },
+    {
+      "target": "#127256",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct lifecycle defect outside this implementation scope; keep open."
+    },
+    {
+      "target": "#143420",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Durable task recovery is separate from premature launcher termination and expressly excluded from this repair."
+    },
+    {
+      "target": "#145241",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve @metahacker's separate lifecycle-error repair. It is neither the canonical fix nor a replacement source for #146956; no merge or supersession is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-146956",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146956",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. A writable executor must reproduce, implement, validate, and obtain fresh review before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 5
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#146956",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
