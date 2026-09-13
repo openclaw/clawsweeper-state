@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T21:57:17.303Z",
+  "updated_at": "2026-09-13T21:57:31.983Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147192:5654673385:2026-09-13T16:54:11Z:re_review",
-      "comment_id": "5654673385",
-      "comment_version_key": "5654673385:2026-09-13T16:54:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147192#issuecomment-5654673385",
-      "comment_created_at": "2026-09-13T16:54:11Z",
-      "comment_updated_at": "2026-09-13T16:54:11Z",
-      "comment_body_sha256": "3e94ddd7bddb18678352734749d22569b800701760ae710ff0c9894d96397f47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147192,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T17:01:46.375Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/exec-reviewer-thinking",
-        "head_sha": "77f7910fb0887f395ee1766c97152afa2407b1d5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147140:5654699517:2026-09-13T16:59:05Z:re_review",
       "comment_id": "5654699517",
@@ -33769,6 +33722,39 @@
         "kind": "pull_request",
         "branch": "fix/chat-position-rail-stable-anchor",
         "head_sha": "1698c9d12b194d344585cce429877f5aa6c2194b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147459:5656425429:2026-09-13T21:56:32Z:clawsweeper_needs_human",
+      "comment_id": "5656425429",
+      "comment_version_key": "5656425429:2026-09-13T21:56:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147459#issuecomment-5656425429",
+      "comment_created_at": "2026-09-13T21:56:32Z",
+      "comment_updated_at": "2026-09-13T21:56:32Z",
+      "comment_body_sha256": "2053676fa4b74f8506eebb04ef0ccbf72fa28086afdbdab3a55a7c52443e305f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the supplied tool-to-Gateway fixtures show unrestricted project selection and global-mode sandbox chec...; Review finding: [P2] Apply inherited sandbox containment before selecting a project — src/agents/tools/sessions-spawn-visible.ts:372-374 - [medium] Required sandbox policy arrives... (sha=043e8812c9ac0f1470c24031dd792b08a4cc20a2)",
+      "expected_head_sha": "043e8812c9ac0f1470c24031dd792b08a4cc20a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T21:57:31.983Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-subagent-managed-project-selection",
+        "head_sha": "043e8812c9ac0f1470c24031dd792b08a4cc20a2",
         "cluster_id": null,
         "job_path": null
       }
