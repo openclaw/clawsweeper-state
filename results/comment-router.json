@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T19:15:20.625Z",
+  "updated_at": "2026-09-13T19:15:22.633Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147051:5653579085:2026-09-13T13:30:01Z:clawsweeper_needs_human",
-      "comment_id": "5653579085",
-      "comment_version_key": "5653579085:2026-09-13T13:30:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147051#issuecomment-5653579085",
-      "comment_created_at": "2026-09-13T13:30:01Z",
-      "comment_updated_at": "2026-09-13T13:30:01Z",
-      "comment_body_sha256": "3531f39100a284d13ce1ca692564274f814eddfff00b3ff48238ffe3583f5509",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147051,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: demonstrate that an operator.read config.get client receives no literal credential canaries from valid...; Review finding: [P1] [P1] Exclude authoredConfig from public snapshot responses — src/config/io.snapshot-shared.ts:59 - [high] Unredacted authored configuration reaches read-scope... (sha=c73684acec38702fa719ddd802221c3ae83d2c26)",
-      "expected_head_sha": "c73684acec38702fa719ddd802221c3ae83d2c26",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T13:30:55.295Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/config-alias-reference-provenance-136025",
-        "head_sha": "c73684acec38702fa719ddd802221c3ae83d2c26",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147022:5653332354:2026-09-13T13:24:55Z:clawsweeper_needs_human",
       "comment_id": "5653332354",
@@ -33702,6 +33669,39 @@
       "status": "skipped",
       "processed_at": "2026-09-13T19:15:20.625Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147212:5654854871:2026-09-13T19:14:20Z:clawsweeper_needs_human",
+      "comment_id": "5654854871",
+      "comment_version_key": "5654854871:2026-09-13T19:14:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147212#issuecomment-5654854871",
+      "comment_created_at": "2026-09-13T17:24:33Z",
+      "comment_updated_at": "2026-09-13T19:14:20Z",
+      "comment_body_sha256": "2a6f015f7f54f600e3ed9f5f07b827bc99438dabad946703d8d196bd7320cf43",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147212,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing FreeBSD configurations referencing a readable file owned by another UID will stop reconnecting until ownership is corrected or the credential is replaced through Settings; th... (sha=546e6e360012aeeda032bd616905dba43f7156ee)",
+      "expected_head_sha": "546e6e360012aeeda032bd616905dba43f7156ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T19:15:22.633Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/freebsd-secret-file-owner",
+        "head_sha": "546e6e360012aeeda032bd616905dba43f7156ee",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
