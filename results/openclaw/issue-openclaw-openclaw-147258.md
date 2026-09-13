@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147258"
-mode: "autonomous"
-run_id: "34774386338"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34774386338"
+mode: "plan"
+run_id: "34781419775"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34781419775"
 head_sha: "94518a42a08de81623dfe84160f8a75957d20a58"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-13T19:12:51.769Z"
-canonical: "https://github.com/openclaw/openclaw/issues/147258"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/147258"
-canonical_pr: null
-actions_total: 5
+published_at: "2026-09-13T20:43:15.340Z"
+canonical: "#147258"
+canonical_issue: "#147258"
+canonical_pr: "#147328"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34774386338](https://github.com/openclaw/clawsweeper/actions/runs/34774386338)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34781419775](https://github.com/openclaw/clawsweeper/actions/runs/34781419775)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/147258
+Canonical: #147258
 
 ## Summary
 
-Source confirms the guidance defect at preflight main 07b96d9b4122e1afdd0efbb662b2335eb716dfec. A narrow fix artifact is ready for the executor. Local implementation is blocked by the read-only host; focused tests and changed-scope discovery failed before execution because dependencies are absent. No files or GitHub state changed.
+Keep #147258 open and complete the existing writable contributor PR #147328 under the contributor-first repair policy. Do not create a competing PR. Source inspection matches the preflight main SHA; runtime reproduction and after-fix validation remain pending. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,8 @@ Source confirms the guidance defect at preflight main 07b96d9b4122e1afdd0efbb662
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147258 | fix_needed | planned | canonical | The existing discovery/recovery contract can be repaired within Memory Core without changing indexing, visibility, configuration, persisted state, or public APIs. |
-| #85398 | keep_closed | skipped | related | Historical context only. |
-| #129866 | keep_closed | skipped | related | Preserve the resolved optional-wiki behavior. |
-| #130088 | keep_closed | skipped | related | Historical merged work must remain intact. |
-| cluster:issue-openclaw-openclaw-147258 | build_fix_artifact | planned | canonical | A narrow executable handoff is supported by source evidence; runtime reproduction, implementation, review, and validation remain executor work. |
+| #147258 | keep_canonical | planned | canonical | This remains the canonical bug report. Candidate completion is unproven, and closure is prohibited by the job. |
+| #147328 | fix_needed | planned | related | Preserve useful contributor work and complete missing documentation, current-head review reconciliation, and registered public-tool proof. Pending checks do not justify replacement or closure. |
 
 ## Needs Human
 
