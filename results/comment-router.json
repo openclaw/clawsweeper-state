@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T20:26:15.258Z",
+  "updated_at": "2026-09-13T20:26:20.564Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147115:5654138941:2026-09-13T15:16:48Z:clawsweeper_needs_human",
-      "comment_id": "5654138941",
-      "comment_version_key": "5654138941:2026-09-13T15:16:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147115#issuecomment-5654138941",
-      "comment_created_at": "2026-09-13T15:16:48Z",
-      "comment_updated_at": "2026-09-13T15:16:48Z",
-      "comment_body_sha256": "88a509879602a27dfe8810bcb834382774d534e55033340a266104a6a1a26229",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147115,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b71d51c8611b6e5224f023c3e8b48af2e02ca685)",
-      "expected_head_sha": "b71d51c8611b6e5224f023c3e8b48af2e02ca685",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T15:17:32.431Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-file-sidebar-scroll",
-        "head_sha": "b71d51c8611b6e5224f023c3e8b48af2e02ca685",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawdex:37:5654138257:2026-09-13T15:16:40Z:clawsweeper_needs_human",
       "comment_id": "5654138257",
@@ -33622,6 +33589,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147324:5655892347:2026-09-13T20:25:17Z:re_review",
+      "comment_id": "5655892347",
+      "comment_version_key": "5655892347:2026-09-13T20:25:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147324#issuecomment-5655892347",
+      "comment_created_at": "2026-09-13T20:25:17Z",
+      "comment_updated_at": "2026-09-13T20:25:17Z",
+      "comment_body_sha256": "fd1d8b9062626e868e7bbae7a799777442f141ef529d8bb6d0cec470f9294b47",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147324,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T20:26:17.858Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/freebsd-handoff-native-runtime",
+        "head_sha": "540d054cacd542b152284d4cd052ac8f2303a462",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
