@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T22:18:09.560Z",
+  "updated_at": "2026-09-13T22:18:50.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147174:5654567256:2026-09-13T16:56:04Z:clawsweeper_needs_human",
-      "comment_id": "5654567256",
-      "comment_version_key": "5654567256:2026-09-13T16:56:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147174#issuecomment-5654567256",
-      "comment_created_at": "2026-09-13T16:34:58Z",
-      "comment_updated_at": "2026-09-13T16:56:04Z",
-      "comment_body_sha256": "a5dcb225853cc234f974c1721d05640481e0afd9c96e65886d233f99680c5c1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147174,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removing a documented declaration-bundler workaround could affect plugin compilation if the reported package parity misses a relevant path; the detailed 113-change source-API report i... (sha=b7b94add2ca56a6558bc54a6fca94bdffe1755f8)",
-      "expected_head_sha": "b7b94add2ca56a6558bc54a6fca94bdffe1755f8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T17:02:00.341Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cleanup-types131-owner-65db",
-        "head_sha": "b7b94add2ca56a6558bc54a6fca94bdffe1755f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147176:5654584678:2026-09-13T16:38:05Z:clawsweeper_needs_human",
       "comment_id": "5654584678",
@@ -33766,6 +33733,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147464:5656543684:2026-09-13T22:17:59Z:freeform_assist",
+      "comment_id": "5656543684",
+      "comment_version_key": "5656543684:2026-09-13T22:17:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147464#issuecomment-5656543684",
+      "comment_created_at": "2026-09-13T22:17:59Z",
+      "comment_updated_at": "2026-09-13T22:17:59Z",
+      "comment_body_sha256": "e9b4165a16aa20b26c296d73cd15d164151f6646d9843eeaa8f6a0241bbc9863",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147464,
+      "author": "VACInc",
+      "author_id": 3279061,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "please re-review the remaining data-model compatibility gate for this exact head. your latest review accepts the published-updater proof and says the previous blocker is resolved, but its generated checklist still asks for that same proof. upgrade compatibility was tested and verified for existing data. the installed `openclaw@2026.9.3` updater successfully finalized the packed candidate at `b92319c442977a1336d4c7259637aadc5b104e57`. existing fixture data was preserved: 4,800 sessions, 23,890 events, and 2,200 cron jobs survived automatic migration, a subsequent doctor pass, and gateway restart. history rpc checks passed across both agents before and after restart. the complete command, package hash, copied output, and limits are in the pr body's published-driver upgrade proof section. exact-head ci is now green: https://github.com/openclaw/openclaw/actions/runs/34785030305 please reconcile the structured stored-data compatibility assessment and generated checklist with this accepted evidence. if any concrete compatibility case remains unproven, identify that case. no gate bypass, repair, or merge is requested.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T22:18:47.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/doctor-header-scan",
+        "head_sha": "b92319c442977a1336d4c7259637aadc5b104e57",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
