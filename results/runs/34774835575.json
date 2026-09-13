@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147264",
+  "mode": "autonomous",
+  "run_id": "34774835575",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34774835575",
+  "head_sha": "94518a42a08de81623dfe84160f8a75957d20a58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147264.md",
+  "published_at": "2026-09-13T19:06:30.380Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147264",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147264",
+  "canonical_pr": null,
+  "summary": "Current preflight main retains the circular scheduling dependency. A narrow fix artifact is prepared, but implementation and required runtime reproduction are blocked by this read-only host and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#147264",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#147264",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on a writable, dependency-complete isolated executor. Establish the failing real-handler regression on current main before changing production code or opening a PR."
+    },
+    {
+      "target": "#128851",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical recovery context with a distinct scope; no closeout action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147264",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147264",
+      "candidate_fix": null,
+      "reason": "The source supports a narrow scheduling repair with no public configuration or policy change. Artifact preparation can proceed despite the local implementation blocker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
