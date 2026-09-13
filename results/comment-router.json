@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T12:11:19.462Z",
+  "updated_at": "2026-09-13T12:13:15.179Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146685:5650726355:2026-09-13T06:04:32Z:clawsweeper_needs_human",
-      "comment_id": "5650726355",
-      "comment_version_key": "5650726355:2026-09-13T06:04:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146685#issuecomment-5650726355",
-      "comment_created_at": "2026-09-13T03:23:57Z",
-      "comment_updated_at": "2026-09-13T06:04:32Z",
-      "comment_body_sha256": "314b8caf1d2c608e3129c9c572aafb314fc0969e8e036c7f8efe1ab5eec4fbd2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146685,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The exact-head performance check failed; unavailable raw logs prevent determining whether this is a bundle regression, infrastructure failure, or another cause. (sha=1d35ba4d731d54e396bfb602dd20704d4fc11a95)",
-      "expected_head_sha": "1d35ba4d731d54e396bfb602dd20704d4fc11a95",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T06:13:12.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/chat-metadata-observation",
-        "head_sha": "1d35ba4d731d54e396bfb602dd20704d4fc11a95",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146790:5651583003:2026-09-13T06:12:41Z:clawsweeper_needs_human",
       "comment_id": "5651583003",
@@ -33584,6 +33551,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146847:5653185549:2026-09-13T12:12:20Z:re_review",
+      "comment_id": "5653185549",
+      "comment_version_key": "5653185549:2026-09-13T12:12:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146847#issuecomment-5653185549",
+      "comment_created_at": "2026-09-13T12:12:20Z",
+      "comment_updated_at": "2026-09-13T12:12:20Z",
+      "comment_body_sha256": "f02e7345e60e69268d6e9bd5b5db5f3a8da5ff7155b659174e2a6bd928dd0e6e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146847,
+      "author": "ericcaiwx-star",
+      "author_id": 287630876,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T12:13:13.013Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-plugin-ask-user-inbound",
+        "head_sha": "04d6fdf75690e99b850322d428905183795b0d7f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
