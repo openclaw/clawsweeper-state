@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T15:16:40.801Z",
+  "updated_at": "2026-09-13T15:17:15.684Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146833:5652205916:2026-09-13T08:26:02Z:re_review",
-      "comment_id": "5652205916",
-      "comment_version_key": "5652205916:2026-09-13T08:26:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146833#issuecomment-5652205916",
-      "comment_created_at": "2026-09-13T08:26:02Z",
-      "comment_updated_at": "2026-09-13T08:26:02Z",
-      "comment_body_sha256": "6c305183f209499e142f77d17b9e9b6b8e4a1e9e95a1897fd6ed3ec15352a420",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146833,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T08:26:58.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/cloud-workspace-author-lookups-20260913",
-        "head_sha": "4b3f8f8318b0e7c8db7d92777e3d76db8fcc58fc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3442:5553971223:2026-09-13T08:26:31Z:clawsweeper_needs_human",
       "comment_id": "5553971223",
@@ -33951,6 +33904,39 @@
         "kind": "pull_request",
         "branch": "feat/clickclack-native-questions",
         "head_sha": "bdbe23b51cb80aa5fce193228f26dd39b88a3be3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147113:5654136257:2026-09-13T15:16:17Z:clawsweeper_needs_human",
+      "comment_id": "5654136257",
+      "comment_version_key": "5654136257:2026-09-13T15:16:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147113#issuecomment-5654136257",
+      "comment_created_at": "2026-09-13T15:16:17Z",
+      "comment_updated_at": "2026-09-13T15:16:17Z",
+      "comment_body_sha256": "f548ece18ebfffde3a201e95c06913b942520b96289e893694e1cbc8fa7ee46b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147113,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Partial Linux publications and later optional desktop-test publication now require targeted operator recovery instead of the previous overwrite-based retry; that recovery path is desc... (sha=300b35b6de6aaaecfb074cf96c42e50be3caf56b)",
+      "expected_head_sha": "300b35b6de6aaaecfb074cf96c42e50be3caf56b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T15:17:15.684Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/linux-release-process",
+        "head_sha": "300b35b6de6aaaecfb074cf96c42e50be3caf56b",
         "cluster_id": null,
         "job_path": null
       }
