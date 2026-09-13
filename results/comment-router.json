@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T12:38:54.107Z",
+  "updated_at": "2026-09-13T12:39:32.146Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:140847:5651665588:2026-09-13T06:28:07Z:re_review",
-      "comment_id": "5651665588",
-      "comment_version_key": "5651665588:2026-09-13T06:28:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140847#issuecomment-5651665588",
-      "comment_created_at": "2026-09-13T06:28:07Z",
-      "comment_updated_at": "2026-09-13T06:28:07Z",
-      "comment_body_sha256": "b802185bf5cb519f5a727a88e4bd7979737f5d581a96ec9657dcf443cc128fa4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140847,
-      "author": "waterundman",
-      "author_id": 120729380,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T06:28:59.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-talk-agent-persistence",
-        "head_sha": "498a8f2a8f0103cab2c1e3eb060e3988a502254d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146798:5651667926:2026-09-13T06:28:40Z:clawsweeper_needs_human",
       "comment_id": "5651667926",
@@ -33576,6 +33529,39 @@
       "status": "skipped",
       "processed_at": "2026-09-13T12:38:54.107Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147019:5653311158:2026-09-13T12:38:36Z:clawsweeper_needs_human",
+      "comment_id": "5653311158",
+      "comment_version_key": "5653311158:2026-09-13T12:38:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147019#issuecomment-5653311158",
+      "comment_created_at": "2026-09-13T12:38:36Z",
+      "comment_updated_at": "2026-09-13T12:38:36Z",
+      "comment_body_sha256": "746cd5641ab2fde1aec3ffa1cdfa1bf160ef5759d2556778a384e51192d7695f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147019,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The enclosing deadline can interrupt a progressing activation and leave the Gateway stopped; native Windows normal completion, cancellation, and subsequent recovery are not demonstrat... (sha=9030b95481b0958ae1afd3a7416853059f5907da)",
+      "expected_head_sha": "9030b95481b0958ae1afd3a7416853059f5907da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T12:39:32.146Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-windows-handoff-start-identity",
+        "head_sha": "9030b95481b0958ae1afd3a7416853059f5907da",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
