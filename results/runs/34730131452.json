@@ -1,0 +1,106 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146612",
+  "mode": "autonomous",
+  "run_id": "34730131452",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34730131452",
+  "head_sha": "bbeeb8afb1ec3b2aa10d260d15df8e8bfc639b77",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146612.md",
+  "published_at": "2026-09-13T01:54:35.088Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/146612",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/146612",
+  "canonical_pr": null,
+  "summary": "Source inspection supports a narrow repair for #146612. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed; no validated branch or PR exists.",
+  "actions": [
+    {
+      "target": "#146612",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146612",
+      "candidate_fix": null,
+      "reason": "Ordinary startup availability defect with an existing resolution-facts owner. Require a failing real-reader regression before implementing or publishing."
+    },
+    {
+      "target": "#145252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146612",
+      "candidate_fix": null,
+      "reason": "Retain as coordination context; it is not a duplicate or a separate implementation authority."
+    },
+    {
+      "target": "#111578",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer this item to central OpenClaw security handling without public mutation. Its boundary decision does not block the independent startup repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-146612",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146612",
+      "candidate_fix": null,
+      "reason": "The narrow fix plan is actionable for the executor; this worker cannot produce or validate a patch under read-only permissions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {
+    "blocked": 1,
+    "updated": 1
+  },
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [
+    {
+      "action": "execute_fix",
+      "status": "blocked",
+      "target": null,
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": "new_fix_pr",
+      "reason": "Codex fix worker timed out after 1800000ms",
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    },
+    {
+      "action": "issue_implementation_status_comment",
+      "status": "updated",
+      "target": "#146612",
+      "pr": null,
+      "branch": null,
+      "source_action": null,
+      "source_status": null,
+      "repair_strategy": null,
+      "reason": null,
+      "title": null,
+      "url": null,
+      "commit": null,
+      "base_sync": false
+    }
+  ],
+  "apply_actions": []
+}
