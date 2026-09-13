@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-13T01:18:24.905Z",
+  "updated_at": "2026-09-13T01:18:28.040Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144502:5648396542:2026-09-12T20:12:25Z:re_review",
-      "comment_id": "5648396542",
-      "comment_version_key": "5648396542:2026-09-12T20:12:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/144502#issuecomment-5648396542",
-      "comment_created_at": "2026-09-12T20:12:25Z",
-      "comment_updated_at": "2026-09-12T20:12:25Z",
-      "comment_body_sha256": "c991933bb1c2dc7e1573907679e9345cd4c3ef03556189935d848baaeda4e878",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144502,
-      "author": "pdonizete",
-      "author_id": 2013236,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-12T20:13:17.720Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:143727:5648310706:2026-09-12T19:55:58Z:autofix",
       "comment_id": "5648310706",
@@ -33681,6 +33636,39 @@
         "kind": "pull_request",
         "branch": "codex/tenk-outbound-fixtures",
         "head_sha": "dc7d478210376c875a484cc192ea40a38409f1b4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146372:5648289864:2026-09-13T01:11:55Z:clawsweeper_needs_human",
+      "comment_id": "5648289864",
+      "comment_version_key": "5648289864:2026-09-13T01:11:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146372#issuecomment-5648289864",
+      "comment_created_at": "2026-09-12T19:51:50Z",
+      "comment_updated_at": "2026-09-13T01:11:55Z",
+      "comment_body_sha256": "40c3638c8cae8e002150ee7deaac9e315e478d9445f8e7a90597b2ab5bfe1509",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146372,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the local HTTP test exercises Slack dispatch settlement and a real SDK request, but substitute... (sha=7f168a8983c4a264cbdab55ed6da550363031767)",
+      "expected_head_sha": "7f168a8983c4a264cbdab55ed6da550363031767",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T01:18:28.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-146221",
+        "head_sha": "7f168a8983c4a264cbdab55ed6da550363031767",
         "cluster_id": null,
         "job_path": null
       }
