@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T15:03:47.535Z",
+  "updated_at": "2026-09-13T15:03:52.912Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146798:5651667926:2026-09-13T08:12:21Z:clawsweeper_needs_human",
-      "comment_id": "5651667926",
-      "comment_version_key": "5651667926:2026-09-13T08:12:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146798#issuecomment-5651667926",
-      "comment_created_at": "2026-09-13T06:28:40Z",
-      "comment_updated_at": "2026-09-13T08:12:21Z",
-      "comment_body_sha256": "aaf9fed11bbffc3f8b58ebf4d64c877e66051b85b37e65002f003fbe1c4eb541",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146798,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show admitted and role-revoked final transcripts through the real agent-dispatch boundary, including d...; Review finding: [P1] Stop transcript fallback when speaker admission is rejected — extensions/discord/src/voice/realtime-consults.ts:275-282 - [high] Admission rejection can becom... (sha=7d2e4acde8f18bb28deef27bac1333ae7bf510d6)",
-      "expected_head_sha": "7d2e4acde8f18bb28deef27bac1333ae7bf510d6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T08:18:23.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/discord-voice-playback-repair",
-        "head_sha": "7d2e4acde8f18bb28deef27bac1333ae7bf510d6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/stats-store:329:5652170370:2026-09-13T08:18:08Z:clawsweeper_auto_repair",
       "comment_id": "5652170370",
@@ -33928,6 +33895,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146968:5654063879:2026-09-13T15:02:57Z:re_review",
+      "comment_id": "5654063879",
+      "comment_version_key": "5654063879:2026-09-13T15:02:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146968#issuecomment-5654063879",
+      "comment_created_at": "2026-09-13T15:02:57Z",
+      "comment_updated_at": "2026-09-13T15:02:57Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146968,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T15:03:51.380Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/ux-sidebar-20260913",
+        "head_sha": "111b99125b277b8c0225b5ee413f8cfa6e0f6413",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
