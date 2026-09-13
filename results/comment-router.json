@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T17:00:24.563Z",
+  "updated_at": "2026-09-13T17:01:01.358Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3452:5561506574:2026-09-13T10:31:07Z:clawsweeper_needs_human",
-      "comment_id": "5561506574",
-      "comment_version_key": "5561506574:2026-09-13T10:31:07Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3452#issuecomment-5561506574",
-      "comment_created_at": "2026-09-06T19:12:21Z",
-      "comment_updated_at": "2026-09-13T10:31:07Z",
-      "comment_body_sha256": "18ef4eaf0ee190564e63499e005b28fde4b3530760b2552712ace158664985a3",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3452,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=cad7a26889b12b24fb5137e517db33f6f5b0b8dd)",
-      "expected_head_sha": "cad7a26889b12b24fb5137e517db33f6f5b0b8dd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T10:34:49.298Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/claude-swap-richer-usage-and-strategies",
-        "head_sha": "cad7a26889b12b24fb5137e517db33f6f5b0b8dd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146822:5651877060:2026-09-13T10:30:13Z:clawsweeper_needs_human",
       "comment_id": "5651877060",
@@ -33802,6 +33769,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146350:5654704687:2026-09-13T17:00:03Z:re_review",
+      "comment_id": "5654704687",
+      "comment_version_key": "5654704687:2026-09-13T17:00:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146350#issuecomment-5654704687",
+      "comment_created_at": "2026-09-13T17:00:03Z",
+      "comment_updated_at": "2026-09-13T17:00:03Z",
+      "comment_body_sha256": "dd5b91d264d558ed303ed9b677c5d0c459145b61e5069c1c0fdfc8bbae12d78f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146350,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T17:00:58.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auto-reset-detached-lifetime",
+        "head_sha": "a6fedab674c7babc195d9f3fd48c203350ee6965",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
