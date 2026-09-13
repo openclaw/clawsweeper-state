@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T17:23:53.934Z",
+  "updated_at": "2026-09-13T17:24:26.674Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144214:5652942870:2026-09-13T11:20:34Z:re_review",
-      "comment_id": "5652942870",
-      "comment_version_key": "5652942870:2026-09-13T11:20:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144214#issuecomment-5652942870",
-      "comment_created_at": "2026-09-13T11:20:34Z",
-      "comment_updated_at": "2026-09-13T11:20:34Z",
-      "comment_body_sha256": "45b449b0c14298242031aa8879e951f2c562a9e0780baeec79531179f49f0240",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144214,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T11:21:24.059Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/macos-connect-credentials-rank108",
-        "head_sha": "752a6831c7d6be5a024d9f4cabee8c39b962aa76",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146880:5652271482:2026-09-13T11:20:32Z:clawsweeper_needs_human",
       "comment_id": "5652271482",
@@ -33672,6 +33625,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2231:5654847647:2026-09-13T17:23:14Z:clawsweeper_needs_human",
+      "comment_id": "5654847647",
+      "comment_version_key": "5654847647:2026-09-13T17:23:14Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2231#issuecomment-5654847647",
+      "comment_created_at": "2026-09-13T17:23:14Z",
+      "comment_updated_at": "2026-09-13T17:23:14Z",
+      "comment_body_sha256": "073a2d728451fd1f51f632f7153a555dc853350814f26dec147a129e99f637ff",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2231,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports real corpus rendering and a successful docs gate, supporting preservation of existing output; it does not provide obs... (sha=b5b394248292019a6995b3e12df73542c0ee7db7)",
+      "expected_head_sha": "b5b394248292019a6995b3e12df73542c0ee7db7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T17:24:26.674Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/docs-heading-identity-c396",
+        "head_sha": "b5b394248292019a6995b3e12df73542c0ee7db7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
