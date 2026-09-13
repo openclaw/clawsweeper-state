@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T02:54:10.880Z",
+  "updated_at": "2026-09-13T02:54:23.583Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146373:5648307166:2026-09-12T21:49:44Z:clawsweeper_needs_human",
-      "comment_id": "5648307166",
-      "comment_version_key": "5648307166:2026-09-12T21:49:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146373#issuecomment-5648307166",
-      "comment_created_at": "2026-09-12T19:55:16Z",
-      "comment_updated_at": "2026-09-12T21:49:44Z",
-      "comment_body_sha256": "0a9ba7fcfb4edc0bdae37018ec2c7518d1e5f27eed43adc1c798722e07022da4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146373,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Comparative elapsed time and RSS remain unquantified, so the cost and benefit of asynchronous preparation have not been established by the supplied measurements. (sha=85953cb9e17fbf82f4a7f35bb1d7cc29e544462b)",
-      "expected_head_sha": "85953cb9e17fbf82f4a7f35bb1d7cc29e544462b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-12T21:50:42.147Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-async-skill-preparation-7006",
-        "head_sha": "85953cb9e17fbf82f4a7f35bb1d7cc29e544462b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/summarize:458:5648921298:2026-09-12T21:50:07Z:clawsweeper_needs_human",
       "comment_id": "5648921298",
@@ -33498,6 +33465,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146596:5650433900:2026-09-13T02:53:24Z:re_review",
+      "comment_id": "5650433900",
+      "comment_version_key": "5650433900:2026-09-13T02:53:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146596#issuecomment-5650433900",
+      "comment_created_at": "2026-09-13T02:53:24Z",
+      "comment_updated_at": "2026-09-13T02:53:24Z",
+      "comment_body_sha256": "eb92863b820634d9c8322d4ddaaad055497597e642c243cb931ab02cb3841dd3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146596,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T02:54:21.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/tool-result-secret-redaction",
+        "head_sha": "1b0977844544ac4e4af89495ab1faa1a91e1a94b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
