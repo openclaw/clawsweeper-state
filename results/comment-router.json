@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T14:15:22.041Z",
+  "updated_at": "2026-09-13T14:15:46.067Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146249:5647540597:2026-09-13T07:33:49Z:clawsweeper_needs_human",
-      "comment_id": "5647540597",
-      "comment_version_key": "5647540597:2026-09-13T07:33:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146249#issuecomment-5647540597",
-      "comment_created_at": "2026-09-12T17:33:23Z",
-      "comment_updated_at": "2026-09-13T07:33:49Z",
-      "comment_body_sha256": "27442fbb585bc094f941b8b04003d59f39bc7fa1d7dc733ee710fbb678e41026",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146249,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied receipt exercises ingestMemoryWikiSource with real temporary files inside Vitest, but remains isolated test evidence. The new CLI... (sha=c4d2cd78fa1bc08bcb86efd4b3761461a63ec312)",
-      "expected_head_sha": "c4d2cd78fa1bc08bcb86efd4b3761461a63ec312",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T07:41:28.406Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-memory-wiki-search-limit-20260912",
-        "head_sha": "0a772fcee8c7f933bf2e25874a99bda408779761",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146670:5650433203:2026-09-13T07:31:40Z:clawsweeper_needs_human",
       "comment_id": "5650433203",
@@ -33686,6 +33653,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:2225:5653807172:2026-09-13T14:14:54Z:re_review",
+      "comment_id": "5653807172",
+      "comment_version_key": "5653807172:2026-09-13T14:14:54Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2225#issuecomment-5653807172",
+      "comment_created_at": "2026-09-13T14:14:54Z",
+      "comment_updated_at": "2026-09-13T14:14:54Z",
+      "comment_body_sha256": "9c5bd50acf98e6ce6b27aff23d0a4cbbddc3d0e980195b86ccba747120804ce5",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2225,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T14:15:43.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/retained-image-qualification",
+        "head_sha": "599b434f3cfec5b21f9a7988e2eeca6b9a47aaba",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
