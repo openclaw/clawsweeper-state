@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146612",
+  "mode": "plan",
+  "run_id": "34732008345",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34732008345",
+  "head_sha": "bbeeb8afb1ec3b2aa10d260d15df8e8bfc639b77",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146612.md",
+  "published_at": "2026-09-13T02:06:56.308Z",
+  "canonical": "#146612",
+  "canonical_issue": "#146612",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for #146612. Source inspection at preflight main 8349435d885f3239d23bb147b5e4eb155f2e3983 supports the reported mechanism. Runtime reproduction and validation remain pending. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#146612",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146612",
+      "candidate_fix": null,
+      "reason": "Preserve active environment references through startup using authoritative resolution facts. This ordinary startup defect does not require changing credential access policy."
+    },
+    {
+      "target": "#145252",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146612",
+      "candidate_fix": null,
+      "reason": "The tracker spans distinct update and recovery incidents; this repair addresses only #146612."
+    },
+    {
+      "target": "#111578",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this item to central OpenClaw security handling without public mutation. Its credential-boundary decision is outside the independent #146612 repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,20 +1,20 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-146612"
-mode: "autonomous"
-run_id: "34730131452"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34730131452"
+mode: "plan"
+run_id: "34732008345"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34732008345"
 head_sha: "bbeeb8afb1ec3b2aa10d260d15df8e8bfc639b77"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-13T01:54:35.088Z"
-canonical: "https://github.com/openclaw/openclaw/issues/146612"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/146612"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-13T02:06:56.308Z"
+canonical: "#146612"
+canonical_issue: "#146612"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
-fix_blocked: 1
+fix_blocked: 0
 apply_executed: 0
 apply_blocked: 0
 apply_skipped: 0
@@ -25,26 +25,26 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34730131452](https://github.com/openclaw/clawsweeper/actions/runs/34730131452)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34732008345](https://github.com/openclaw/clawsweeper/actions/runs/34732008345)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/146612
+Canonical: #146612
 
 ## Summary
 
-Source inspection supports a narrow repair for #146612. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed; no validated branch or PR exists.
+Plan a narrow repair for #146612. Source inspection at preflight main 8349435d885f3239d23bb147b5e4eb155f2e3983 supports the reported mechanism. Runtime reproduction and validation remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
-| Fix blocked | 1 |
+| Fix blocked | 0 |
 | Applied executions | 0 |
 | Apply blocked | 0 |
 | Apply skipped | 0 |
@@ -54,8 +54,7 @@ Source inspection supports a narrow repair for #146612. Implementation and runti
 
 | Action | Status | Target | Branch | Reason |
 | --- | --- | --- | --- | --- |
-| execute_fix | blocked |  |  | Codex fix worker timed out after 1800000ms |
-| issue_implementation_status_comment | updated | #146612 |  |  |
+| _None_ |  |  |  |  |
 
 ## Apply Actions
 
@@ -67,10 +66,9 @@ Source inspection supports a narrow repair for #146612. Implementation and runti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #146612 | fix_needed | planned | canonical | Ordinary startup availability defect with an existing resolution-facts owner. Require a failing real-reader regression before implementing or publishing. |
-| #145252 | keep_related | planned | related | Retain as coordination context; it is not a duplicate or a separate implementation authority. |
-| #111578 | route_security | planned | security_sensitive | Refer this item to central OpenClaw security handling without public mutation. Its boundary decision does not block the independent startup repair. |
-| cluster:issue-openclaw-openclaw-146612 | build_fix_artifact | planned | canonical | The narrow fix plan is actionable for the executor; this worker cannot produce or validate a patch under read-only permissions. |
+| #146612 | fix_needed | planned | canonical | Preserve active environment references through startup using authoritative resolution facts. This ordinary startup defect does not require changing credential access policy. |
+| #145252 | keep_related | planned | related | The tracker spans distinct update and recovery incidents; this repair addresses only #146612. |
+| #111578 | route_security | planned | security_sensitive | Route this item to central OpenClaw security handling without public mutation. Its credential-boundary decision is outside the independent #146612 repair. |
 
 ## Needs Human
 
