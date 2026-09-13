@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T21:16:36.580Z",
+  "updated_at": "2026-09-13T21:16:59.019Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147134:5654183286:2026-09-13T15:51:23Z:clawsweeper_needs_human",
-      "comment_id": "5654183286",
-      "comment_version_key": "5654183286:2026-09-13T15:51:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147134#issuecomment-5654183286",
-      "comment_created_at": "2026-09-13T15:25:12Z",
-      "comment_updated_at": "2026-09-13T15:51:23Z",
-      "comment_body_sha256": "5ffe6f0d6c9f6132923aeede5905542bd84316de3dd40ae443d2901b63bd0e8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147134,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=c1469a023a9d26f077afa43c56f32657a4045356)",
-      "expected_head_sha": "c1469a023a9d26f077afa43c56f32657a4045356",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T15:52:17.778Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/code-mode-unified-discovery",
-        "head_sha": "c1469a023a9d26f077afa43c56f32657a4045356",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:140733:5654332886:2026-09-13T15:52:39Z:re_review",
       "comment_id": "5654332886",
@@ -33644,6 +33611,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143937:5656195969:2026-09-13T21:16:01Z:re_review",
+      "comment_id": "5656195969",
+      "comment_version_key": "5656195969:2026-09-13T21:16:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143937#issuecomment-5656195969",
+      "comment_created_at": "2026-09-13T21:16:01Z",
+      "comment_updated_at": "2026-09-13T21:16:01Z",
+      "comment_body_sha256": "ffa35bc68f42625d9f79e833ff462231220cefb38f86a2a48e94eacb8c8d3cce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143937,
+      "author": "Finn763",
+      "author_id": 165816600,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review - revision 8230e9be72f wires the provenance encoding into the existing transcript writer (single owner, competing module deleted), keeps sanitized output in the no-marker branch, and preserves the encoded/raw distinction on replay; red->green re-run by the owner (190 passed)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T21:16:56.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/oc-142821-descr",
+        "head_sha": "8230e9be72fc0e3dc57b029efb2991cbe77618ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
