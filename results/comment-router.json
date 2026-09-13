@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T15:41:17.242Z",
+  "updated_at": "2026-09-13T15:41:46.017Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146705:5650845360:2026-09-13T08:47:39Z:clawsweeper_needs_human",
-      "comment_id": "5650845360",
-      "comment_version_key": "5650845360:2026-09-13T08:47:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146705#issuecomment-5650845360",
-      "comment_created_at": "2026-09-13T03:36:49Z",
-      "comment_updated_at": "2026-09-13T08:47:39Z",
-      "comment_body_sha256": "e3b46f7341f1f3de9130d1117991a7cd3903d3645c293426040e0f61d70485ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146705,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The unresolved merge composition may interact with overlapping metadata and test-partition work; the reviewed branch and passing head CI do not establish the correctness of a future c... (sha=37c8acabc77dd65348a7d5bf66a4e2185ae6f141)",
-      "expected_head_sha": "37c8acabc77dd65348a7d5bf66a4e2185ae6f141",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T09:26:31.832Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/chat-metadata-refresh-owner",
-        "head_sha": "b63c66068ebf398672eb2427c302c0f493c3ded8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146708:5650893226:2026-09-13T08:47:46Z:clawsweeper_needs_human",
       "comment_id": "5650893226",
@@ -33763,6 +33730,53 @@
         "kind": "pull_request",
         "branch": "refactor/export-output-line-formatting-20260913",
         "head_sha": "3b18e50e7e4628be6b72adfb19f53c91e6ecf158",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147088:5654267213:2026-09-13T15:40:49Z:re_review",
+      "comment_id": "5654267213",
+      "comment_version_key": "5654267213:2026-09-13T15:40:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147088#issuecomment-5654267213",
+      "comment_created_at": "2026-09-13T15:40:49Z",
+      "comment_updated_at": "2026-09-13T15:40:49Z",
+      "comment_body_sha256": "12ec8b8f03884f0650da109084467796368842827056b9188c906221d474a14c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147088,
+      "author": "Gabrielnkl",
+      "author_id": 18104911,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — real-browser evidence added to the pr body (chromium 152, real indexeddb, two same-origin pages): stale-write suppression, equal-timestamp replacement survival, and deletedatabase concurrency",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T15:41:43.356Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prevent-stale-snapshot-flush",
+        "head_sha": "890f25be21bfc818bd9e6ec4bfdb88556bb8349a",
         "cluster_id": null,
         "job_path": null
       },
