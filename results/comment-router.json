@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T21:51:17.488Z",
+  "updated_at": "2026-09-13T21:52:07.891Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144475:5626694080:2026-09-13T16:43:57Z:clawsweeper_needs_human",
-      "comment_id": "5626694080",
-      "comment_version_key": "5626694080:2026-09-13T16:43:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144475#issuecomment-5626694080",
-      "comment_created_at": "2026-09-10T23:14:20Z",
-      "comment_updated_at": "2026-09-13T16:43:57Z",
-      "comment_body_sha256": "920a2cd659c9303d371f5a322330b3cd3ca5ff882d453301b671037ea66b7b9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144475,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, the scheduled sweep will automatically end qualifying existing flows, clear their wait metadata, and start the seven-day terminal retention window; acceptance of that c... (sha=8ca2e6e07e5d4026cf33f8cad1b62fb27a5b0377)",
-      "expected_head_sha": "8ca2e6e07e5d4026cf33f8cad1b62fb27a5b0377",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T16:44:53.015Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-143739-descr",
-        "head_sha": "8ca2e6e07e5d4026cf33f8cad1b62fb27a5b0377",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147196:5654675694:2026-09-13T16:54:37Z:clawsweeper_needs_human",
       "comment_id": "5654675694",
@@ -33772,6 +33739,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147431:5656392094:2026-09-13T21:50:39Z:re_review",
+      "comment_id": "5656392094",
+      "comment_version_key": "5656392094:2026-09-13T21:50:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147431#issuecomment-5656392094",
+      "comment_created_at": "2026-09-13T21:50:39Z",
+      "comment_updated_at": "2026-09-13T21:50:39Z",
+      "comment_body_sha256": "83f01b3f38150ea20425dc324d5226e693fcbca94370c49d3310356d2d5b1d27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147431,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T21:52:06.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/orchestration-liveness-product-20260913",
+        "head_sha": "762c171045bf58c73e228abf633b2591f2eb79a8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
