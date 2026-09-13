@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T18:34:44.293Z",
+  "updated_at": "2026-09-13T18:35:17.846Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146892:5653411028:2026-09-13T12:57:04Z:re_review",
-      "comment_id": "5653411028",
-      "comment_version_key": "5653411028:2026-09-13T12:57:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146892#issuecomment-5653411028",
-      "comment_created_at": "2026-09-13T12:57:04Z",
-      "comment_updated_at": "2026-09-13T12:57:04Z",
-      "comment_body_sha256": "9120cc996ccd9d6756003855a909a842078ac1ed970304c33cd02321a53ea5ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146892,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T12:57:53.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/channel-health-busy-reconnect-grace",
-        "head_sha": "5ec6e373c0b4edc8d038dc32e85917fafbe17eaa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147001:5653156975:2026-09-13T12:58:19Z:clawsweeper_needs_human",
       "comment_id": "5653156975",
@@ -33803,6 +33756,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145585:5643380995:2026-09-13T18:34:19Z:clawsweeper_needs_human",
+      "comment_id": "5643380995",
+      "comment_version_key": "5643380995:2026-09-13T18:34:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145585#issuecomment-5643380995",
+      "comment_created_at": "2026-09-12T04:12:37Z",
+      "comment_updated_at": "2026-09-13T18:34:19Z",
+      "comment_body_sha256": "cc641bbed158af75aa86ae524d1d7e0aa3aa6f7f8248f1a401f23903157793b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145585,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Active involvement from the listed auth CODEOWNER remains unverified; the existing team review request has no submitted review. (sha=931ff739c2aaf790c7c098ecbaac596777b88927)",
+      "expected_head_sha": "931ff739c2aaf790c7c098ecbaac596777b88927",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T18:35:17.846Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-store-owner-dedupe-20260912",
+        "head_sha": "931ff739c2aaf790c7c098ecbaac596777b88927",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
