@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T22:52:36.011Z",
+  "updated_at": "2026-09-13T22:53:01.718Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3620:5654479460:2026-09-13T16:36:50Z:clawsweeper_auto_repair",
-      "comment_id": "5654479460",
-      "comment_version_key": "5654479460:2026-09-13T16:36:50Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3620#issuecomment-5654479460",
-      "comment_created_at": "2026-09-13T16:19:14Z",
-      "comment_updated_at": "2026-09-13T16:36:50Z",
-      "comment_body_sha256": "00c5c8999f33785c45a042f0b08884300df3dbfeae0dc6a642a341791f705bb3",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3620,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e1a155c23b7eb79d820b2eef2a7e9c414769eb01)",
-      "expected_head_sha": "e1a155c23b7eb79d820b2eef2a7e9c414769eb01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T17:26:34.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "triage-cost-row-rescan",
-        "head_sha": "e1a155c23b7eb79d820b2eef2a7e9c414769eb01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147213:5654864045:2026-09-13T17:26:16Z:clawsweeper_needs_human",
       "comment_id": "5654864045",
@@ -33808,6 +33775,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147427:5656732084:2026-09-13T22:52:00Z:re_review",
+      "comment_id": "5656732084",
+      "comment_version_key": "5656732084:2026-09-13T22:52:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147427#issuecomment-5656732084",
+      "comment_created_at": "2026-09-13T22:52:00Z",
+      "comment_updated_at": "2026-09-13T22:52:00Z",
+      "comment_body_sha256": "281a1ac830790dbdd7b2acb4abdea4ec8c1d4d504799aafe74e60e63a97eb3c0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147427,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T22:52:59.618Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pair-device-node-command-overflow",
+        "head_sha": "7299effd0a0b34d22a42dec019e017b2ee7b3d62",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
