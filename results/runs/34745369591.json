@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146800",
+  "mode": "plan",
+  "run_id": "34745369591",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34745369591",
+  "head_sha": "d75f027faca8704bcc220f7ae5127cc93bedaa67",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146800.md",
+  "published_at": "2026-09-13T07:35:04.500Z",
+  "canonical": "#146800",
+  "canonical_issue": "#146800",
+  "canonical_pr": null,
+  "summary": "Plan a narrow shared-policy fix for #146800. Source inspection at preflight main confirms the busy early return bypasses reconnect grace. Preserve the historical hung-run fallback; keep #124162 as distinct related work. Implementation and runtime validation remain pending.",
+  "actions": [
+    {
+      "target": "#146800",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146800",
+      "candidate_fix": null,
+      "reason": "The job defines a bounded bug fix that preserves both reconnect grace and historical hung-run recovery. No additional product decision is needed for this plan."
+    },
+    {
+      "target": "#124162",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146800",
+      "candidate_fix": null,
+      "reason": "Useful contributor work with a different recovery responsibility. Preserve it independently of this shared-policy repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
