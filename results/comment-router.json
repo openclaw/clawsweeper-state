@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T12:15:07.767Z",
+  "updated_at": "2026-09-13T12:19:07.520Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144558:5651590317:2026-09-13T06:13:58Z:re_review",
-      "comment_id": "5651590317",
-      "comment_version_key": "5651590317:2026-09-13T06:13:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144558#issuecomment-5651590317",
-      "comment_created_at": "2026-09-13T06:13:58Z",
-      "comment_updated_at": "2026-09-13T06:13:58Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144558,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T06:14:56.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-snapshot-source-cleanup-swallowed-074",
-        "head_sha": "25044d9251e6c50423bea381b736743446b04a39",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146777:5651479716:2026-09-13T06:14:49Z:clawsweeper_needs_human",
       "comment_id": "5651479716",
@@ -33581,6 +33534,39 @@
         "kind": "pull_request",
         "branch": "steipete/ci-ui-e2e-quota-badge",
         "head_sha": "212732e649c6e4d81df2bc25fdede14e5e1cf793",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130741:5435182730:2026-09-13T12:13:11Z:clawsweeper_needs_human",
+      "comment_id": "5435182730",
+      "comment_version_key": "5435182730:2026-09-13T12:13:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130741#issuecomment-5435182730",
+      "comment_created_at": "2026-08-27T06:23:11Z",
+      "comment_updated_at": "2026-09-13T12:13:11Z",
+      "comment_body_sha256": "210c54eba85929e79284b72aca5926f96fae4d9a1470f2b30223fb1734e2a67a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130741,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final composed system has not yet demonstrated retained-state completion, Stop, recovery, and active deletion within the accepted 500 ms responsiveness target; historical passing... (sha=96f043a28b08124f5d8ad628e5e7d04bcd669696)",
+      "expected_head_sha": "96f043a28b08124f5d8ad628e5e7d04bcd669696",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T12:19:07.520Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sweep-subagent-session-scope-20260826",
+        "head_sha": "96f043a28b08124f5d8ad628e5e7d04bcd669696",
         "cluster_id": null,
         "job_path": null
       }
