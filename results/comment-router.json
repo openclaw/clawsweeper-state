@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T13:24:56.427Z",
+  "updated_at": "2026-09-13T13:25:06.967Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146809:5651818126:2026-09-13T07:00:23Z:clawsweeper_needs_human",
-      "comment_id": "5651818126",
-      "comment_version_key": "5651818126:2026-09-13T07:00:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146809#issuecomment-5651818126",
-      "comment_created_at": "2026-09-13T07:00:23Z",
-      "comment_updated_at": "2026-09-13T07:00:23Z",
-      "comment_body_sha256": "59c1f6a4e4ff69a5d0ad8d49332591859bbc10274770be098d4af5427b020e84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146809,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The failed compact test check remains unattributed because its detailed log was unavailable; the supplied validation claims do not establish that all current-head CI passes. (sha=0bc31512b803a1702349a58824a356bfdbcb9ff3)",
-      "expected_head_sha": "0bc31512b803a1702349a58824a356bfdbcb9ff3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T07:01:39.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tenk-inline-deferred-refresh",
-        "head_sha": "0bc31512b803a1702349a58824a356bfdbcb9ff3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/release-workflows:49:5651549192:2026-09-13T07:00:45Z:clawsweeper_needs_human",
       "comment_id": "5651549192",
@@ -33756,6 +33723,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146782:5653549988:2026-09-13T13:23:59Z:re_review",
+      "comment_id": "5653549988",
+      "comment_version_key": "5653549988:2026-09-13T13:23:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146782#issuecomment-5653549988",
+      "comment_created_at": "2026-09-13T13:23:59Z",
+      "comment_updated_at": "2026-09-13T13:23:59Z",
+      "comment_body_sha256": "51994cf8e23da30dcd26f2616d43958a15f5a5bae69532f58128bb6b7d04751f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146782,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T13:25:04.103Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/manifest-setup-provider-blocked-keys",
+        "head_sha": "ad7c011bb6e8c8d8f24c75d7a7d36f599edc2dd7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
