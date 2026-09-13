@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-13T07:25:15.967Z",
+  "updated_at": "2026-09-13T07:25:33.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5650794467:2026-09-13T03:31:23Z:re_review",
-      "comment_id": "5650794467",
-      "comment_version_key": "5650794467:2026-09-13T03:31:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5650794467",
-      "comment_created_at": "2026-09-13T03:31:23Z",
-      "comment_updated_at": "2026-09-13T03:31:23Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T03:32:08.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "c03cabcbc8ee93a5ab8b65bd62957a6d3bf70b60",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144416:5650794668:2026-09-13T03:31:24Z:re_review",
       "comment_id": "5650794668",
@@ -32279,6 +32232,39 @@
         "kind": "pull_request",
         "branch": "docs/phase-five-website",
         "head_sha": "cc54757bc411e48d63585bcae939dd726a1d514a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/RepoBar:128:5651873097:2026-09-13T07:24:45Z:clawsweeper_needs_human",
+      "comment_id": "5651873097",
+      "comment_version_key": "5651873097:2026-09-13T07:24:45Z",
+      "comment_url": "https://github.com/steipete/RepoBar/pull/128#issuecomment-5651873097",
+      "comment_created_at": "2026-09-13T07:13:02Z",
+      "comment_updated_at": "2026-09-13T07:24:45Z",
+      "comment_body_sha256": "63a61ee7a1fdac23156b07c6b27cbe1e65d261131ba01be894943e83a2e916eb",
+      "repo": "steipete/RepoBar",
+      "issue_number": 128,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The hosted platform installer fails before iOS compilation; available annotations do not distinguish an invalid invocation from a download or runner problem. (sha=b5b274ebb8be79286423003d0449ad0962e09219)",
+      "expected_head_sha": "b5b274ebb8be79286423003d0449ad0962e09219",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-13T07:25:33.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/phase-five-ios-local-context",
+        "head_sha": "b5b274ebb8be79286423003d0449ad0962e09219",
         "cluster_id": null,
         "job_path": null
       }
