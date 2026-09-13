@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T07:41:13.721Z",
+  "updated_at": "2026-09-13T07:41:23.562Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121309:5235612506:2026-09-13T03:43:58Z:clawsweeper_needs_human",
-      "comment_id": "5235612506",
-      "comment_version_key": "5235612506:2026-09-13T03:43:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121309#issuecomment-5235612506",
-      "comment_created_at": "2026-08-10T03:41:37Z",
-      "comment_updated_at": "2026-09-13T03:43:58Z",
-      "comment_body_sha256": "b9f6b9db312314fa380a7d54697d43a83a1a7b1cf945b401475eee67dff57acc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Legacy delivered or stamp-only records without a complete deletion identity now intentionally skip automatic deletion; an original child session can remain and require explicit cleanu... (sha=2ddee5b9d31bda7e6a6dbf9fc1783988f113f129)",
-      "expected_head_sha": "2ddee5b9d31bda7e6a6dbf9fc1783988f113f129",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T03:45:16.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "prep/delete-cleanup-completion-receipts",
-        "head_sha": "2ddee5b9d31bda7e6a6dbf9fc1783988f113f129",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146712:5650919092:2026-09-13T03:45:07Z:clawsweeper_needs_human",
       "comment_id": "5650919092",
@@ -32254,6 +32221,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145950:5652006713:2026-09-13T07:40:26Z:re_review",
+      "comment_id": "5652006713",
+      "comment_version_key": "5652006713:2026-09-13T07:40:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145950#issuecomment-5652006713",
+      "comment_created_at": "2026-09-13T07:40:26Z",
+      "comment_updated_at": "2026-09-13T07:40:26Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145950,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T07:41:21.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repair/pr-142931-clean-replacement-20260912",
+        "head_sha": "d44f6649e20036c77d5db219b8298cf48c83968a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
