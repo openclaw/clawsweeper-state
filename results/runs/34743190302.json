@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-146800",
+  "mode": "autonomous",
+  "run_id": "34743190302",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34743190302",
+  "head_sha": "8e008cbc0b4c9153f46a1b90167b215dea9ccdad",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-146800.md",
+  "published_at": "2026-09-13T07:20:12.340Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/146800",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/146800",
+  "canonical_pr": null,
+  "summary": "Reproduced the policy defect on preflight main 6886a0a140a4800a87d3a5d3b5795d36179f1943. Prepared a narrow fix artifact; implementation and branch validation remain blocked on this read-only host. No repository or GitHub mutations performed.",
+  "actions": [
+    {
+      "target": "#146800",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146800",
+      "candidate_fix": null,
+      "reason": "The initialized busy branch returns before evaluating the authoritative disconnect clock. This is a narrow existing-behavior repair."
+    },
+    {
+      "target": "#124162",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#146800",
+      "candidate_fix": null,
+      "reason": "Preserve the contributor's separate watchdog work; it is not an implementation of this issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-146800",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#146800",
+      "candidate_fix": null,
+      "reason": "The bug is reproduced and its repair scope is clear; the executor can implement the attached plan without a product decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-146800",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#146800",
+      "candidate_fix": null,
+      "reason": "Implementation and publication are blocked until the authorized executor applies the fix in a writable environment, validates it, reviews it, and reconciles existing issue-linked PRs."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
