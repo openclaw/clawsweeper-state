@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-13T19:44:12.088Z",
+  "updated_at": "2026-09-13T19:46:01.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140380:5561530510:2026-09-13T13:52:57Z:clawsweeper_needs_human",
-      "comment_id": "5561530510",
-      "comment_version_key": "5561530510:2026-09-13T13:52:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/140380#issuecomment-5561530510",
-      "comment_created_at": "2026-09-06T19:16:17Z",
-      "comment_updated_at": "2026-09-13T13:52:57Z",
-      "comment_body_sha256": "bd2cc2ac6f082137bc15d22766be0b480f28738f314574e41ce7d04476298e85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 140380,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party clients validating the older closed startup-phase union can reject the new event until upgraded with the Gateway. The PR records acceptance of this release-pair requiremen... (sha=6231925f39dee774d6dd0eb68d5bfc73a68abc56)",
-      "expected_head_sha": "6231925f39dee774d6dd0eb68d5bfc73a68abc56",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T13:58:43.333Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/memory-maintenance-status",
-        "head_sha": "6231925f39dee774d6dd0eb68d5bfc73a68abc56",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143502:5610356837:2026-09-13T13:57:08Z:clawsweeper_needs_human",
       "comment_id": "5610356837",
@@ -33734,6 +33701,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147300:5655655471:2026-09-13T19:44:50Z:re_review",
+      "comment_id": "5655655471",
+      "comment_version_key": "5655655471:2026-09-13T19:44:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147300#issuecomment-5655655471",
+      "comment_created_at": "2026-09-13T19:44:50Z",
+      "comment_updated_at": "2026-09-13T19:44:50Z",
+      "comment_body_sha256": "b60f0bab1b8182861d90ccaecdc6106192176aebc670c164c2e897418115c1fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147300,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-13T19:45:58.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-gateway-child-drain-20260914",
+        "head_sha": "2a81be469d628a0d30773c13b14d41a384e79d69",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
