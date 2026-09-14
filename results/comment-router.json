@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T00:50:05.027Z",
+  "updated_at": "2026-09-14T00:50:22.596Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147229:5655618688:2026-09-13T19:38:32Z:re_review",
-      "comment_id": "5655618688",
-      "comment_version_key": "5655618688:2026-09-13T19:38:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147229#issuecomment-5655618688",
-      "comment_created_at": "2026-09-13T19:38:32Z",
-      "comment_updated_at": "2026-09-13T19:38:32Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147229,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T19:46:53.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/telegram-rich-message-tool-2",
-        "head_sha": "e5942f3059bde7259da0a99b5a6d4ee761511c41",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2240:5655505722:2026-09-13T19:46:56Z:clawsweeper_needs_human",
       "comment_id": "5655505722",
@@ -33348,6 +33301,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147571:5657427783:2026-09-14T00:49:24Z:clawsweeper_needs_human",
+      "comment_id": "5657427783",
+      "comment_version_key": "5657427783:2026-09-14T00:49:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147571#issuecomment-5657427783",
+      "comment_created_at": "2026-09-14T00:34:31Z",
+      "comment_updated_at": "2026-09-14T00:49:24Z",
+      "comment_body_sha256": "7996835fc4e312014c07cd1696e0126cb9f5e986dcdd07fee398ae434c6bb0c9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147571,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing prompts or integrations that issue childless sessions_yield without waitFor:\"message\" will receive a corrective error instead of pausing; the author explicitly confirms this... (sha=e4406fe7aba802c92f78501fe0a56137df6c3048)",
+      "expected_head_sha": "e4406fe7aba802c92f78501fe0a56137df6c3048",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T00:50:22.596Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/subagent-experience",
+        "head_sha": "e4406fe7aba802c92f78501fe0a56137df6c3048",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
