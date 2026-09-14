@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T21:42:14.384Z",
+  "updated_at": "2026-09-14T21:44:00.487Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5667149567:2026-09-14T16:21:20Z:re_review",
-      "comment_id": "5667149567",
-      "comment_version_key": "5667149567:2026-09-14T16:21:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5667149567",
-      "comment_created_at": "2026-09-14T16:21:20Z",
-      "comment_updated_at": "2026-09-14T16:21:20Z",
-      "comment_body_sha256": "bb6f69c877c595b20c551bc56a2ae1c754b6b04a806dea0a482a4ce9c16615a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T16:22:35.264Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "9033faf3876434c3c1f7f6b11a2d72a52822b5c6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148121:5661643415:2026-09-14T09:10:49Z:re_review",
       "comment_id": "5661643415",
@@ -33226,6 +33179,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-tui-attachment-pass-20260914",
         "head_sha": "d89d5538bb4830d4f294dcd56adf4601f26fed5b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148532:5670752579:2026-09-14T21:41:47Z:clawsweeper_needs_human",
+      "comment_id": "5670752579",
+      "comment_version_key": "5670752579:2026-09-14T21:41:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148532#issuecomment-5670752579",
+      "comment_created_at": "2026-09-14T21:01:24Z",
+      "comment_updated_at": "2026-09-14T21:41:47Z",
+      "comment_body_sha256": "6326b45d31a1af45ff5299af809ece47553598c173a392a411506d7d899f6b99",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148532,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed CLI output owner is exercised with mocked capture responses; the Windows/Chrome trace predates the fix, and the body explicitly rep... (sha=deb338995a1a11d5b78982c0b49f3e28721c1c37)",
+      "expected_head_sha": "deb338995a1a11d5b78982c0b49f3e28721c1c37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T21:44:00.487Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-snapshot-empty-is-an-error",
+        "head_sha": "deb338995a1a11d5b78982c0b49f3e28721c1c37",
         "cluster_id": null,
         "job_path": null
       }
