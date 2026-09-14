@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:14:57.847Z",
+  "updated_at": "2026-09-14T05:15:16.865Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147635:5657644811:2026-09-14T01:09:18Z:clawsweeper_needs_human",
-      "comment_id": "5657644811",
-      "comment_version_key": "5657644811:2026-09-14T01:09:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147635#issuecomment-5657644811",
-      "comment_created_at": "2026-09-14T01:09:18Z",
-      "comment_updated_at": "2026-09-14T01:09:18Z",
-      "comment_body_sha256": "0969270f138634952e375e017387b49843203e5b3b284aadf8872203d51c2ac4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147635,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Packaged fresh-start and published-updater-to-candidate behavior remain unverified in the supplied evidence; an integration failure in the newly selected startup reader could prevent... (sha=b9c61f816d92252ae628d23f25e82217721d7452)",
-      "expected_head_sha": "b9c61f816d92252ae628d23f25e82217721d7452",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T01:10:17.728Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/startup-direct-checks-20260913",
-        "head_sha": "b9c61f816d92252ae628d23f25e82217721d7452",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147639:5657600792:2026-09-14T01:02:44Z:re_review",
       "comment_id": "5657600792",
@@ -33264,6 +33231,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147756:5659345757:2026-09-14T05:14:18Z:re_review",
+      "comment_id": "5659345757",
+      "comment_version_key": "5659345757:2026-09-14T05:14:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147756#issuecomment-5659345757",
+      "comment_created_at": "2026-09-14T05:14:18Z",
+      "comment_updated_at": "2026-09-14T05:14:18Z",
+      "comment_body_sha256": "2c3badfa40f211391e79a92ce6b210a1e06a72d214f7c9e90ec5838011fd2cc9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147756,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T05:15:15.138Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-evidence-occurrences-20260913",
+        "head_sha": "461aa5b7c559fed86dd003ce142c96b08f53ca70",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
