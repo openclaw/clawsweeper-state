@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148387"
 mode: "autonomous"
-run_id: "34871916484"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34871916484"
+run_id: "34875295802"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34875295802"
 head_sha: "5b8e55a50a363bc8388218797b3ab2d4a5b17d0b"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-09-14T17:27:06.635Z"
+result_status: "blocked"
+published_at: "2026-09-14T17:36:34.878Z"
 canonical: "https://github.com/openclaw/openclaw/issues/148387"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/148387"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34871916484](https://github.com/openclaw/clawsweeper/actions/runs/34871916484)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34875295802](https://github.com/openclaw/clawsweeper/actions/runs/34875295802)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/148387
 
 ## Summary
 
-Verified the reported warning path on preflight main. Prepared a narrow fix artifact. Implementation and executable reproduction are blocked on this read-only host with no installed dependencies; no files or GitHub state changed.
+Source supports the reported warning defect on preflight main. Implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. Narrow fix artifact prepared; no files or GitHub state changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Verified the reported warning path on preflight main. Prepared a narrow fix arti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148387 | fix_needed | blocked | canonical | Implementation requires a writable executor with dependencies. Source tracing supports the defect, but the required failing regression and Doctor reproduction remain unverified. |
-| cluster:issue-openclaw-openclaw-148387 | build_fix_artifact | planned | canonical | The source-supported defect has a narrow existing owner and needs no new configuration, persisted format, or product policy. |
+| #148387 | fix_needed | planned | canonical | The source supports a narrow diagnostic repair. Executable reproduction remains required before implementation; this worker could not run it. |
+| cluster:issue-openclaw-openclaw-148387 | build_fix_artifact | planned |  | Artifact preparation is complete. Implementation and publication readiness remain blocked until a writable executor reproduces the defect and completes validation. |
 
 ## Needs Human
 
