@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-85687"
-mode: "autonomous"
-run_id: "34870415036"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34870415036"
-head_sha: "5b8e55a50a363bc8388218797b3ab2d4a5b17d0b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-14T18:42:48.792Z"
-canonical: "https://github.com/openclaw/openclaw/issues/85687"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/85687"
+mode: "plan"
+run_id: "34884281495"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34884281495"
+head_sha: "16505cf0358d70341e1c8d0135d648e2f69b896c"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-14T19:04:13.094Z"
+canonical: "#85687"
+canonical_issue: "#85687"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34870415036](https://github.com/openclaw/clawsweeper/actions/runs/34870415036)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34884281495](https://github.com/openclaw/clawsweeper/actions/runs/34884281495)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/85687
+Canonical: #85687
 
 ## Summary
 
-Source inspection confirms the repair-text leak remains on preflight main. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only host and absent dependencies. The open-fixing-PR recheck also requires unavailable GitHub credentials. No files or GitHub state were changed.
+The source-level leak remains at preflight main 99ac7b6726a77d1766986fef8af1e91cbb033724. A narrow shared-repair fix is planned. No files or GitHub state changed; executable reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection confirms the repair-text leak remains on preflight main. A nar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #85687 | fix_needed | planned | canonical | The source finding remains valid; retain the issue and require a failing production-order regression before implementing the fix. |
-| cluster:issue-openclaw-openclaw-85687 | build_fix_artifact | planned |  | Artifact preparation is complete; local implementation and validation remain blocked by host capabilities. |
+| #85687 | fix_needed | planned | canonical | The central context leak has a concrete source path and needs no product decision. Keep the issue open and implement only after demonstrating the composed regression on current main. |
 
 ## Needs Human
 
