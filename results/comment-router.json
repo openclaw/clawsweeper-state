@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T18:11:21.374Z",
+  "updated_at": "2026-09-14T18:11:29.709Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148155:5663012291:2026-09-14T11:52:26Z:clawsweeper_needs_human",
-      "comment_id": "5663012291",
-      "comment_version_key": "5663012291:2026-09-14T11:52:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148155#issuecomment-5663012291",
-      "comment_created_at": "2026-09-14T11:09:52Z",
-      "comment_updated_at": "2026-09-14T11:52:26Z",
-      "comment_body_sha256": "d6b4ac54f5c56a46734a67b1bb071c221b3e13b4f960b9a97a4240107b6849a0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148155,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted merge has no verified combined result with current main; conflict resolution may alter shared reconciliation behavior. (sha=ccc407f7673aef3a920ad8f08da252884b9153e8)",
-      "expected_head_sha": "ccc407f7673aef3a920ad8f08da252884b9153e8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T11:55:07.994Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-batch-archive-confirmation",
-        "head_sha": "ccc407f7673aef3a920ad8f08da252884b9153e8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148207:5663450812:2026-09-14T11:51:01Z:clawsweeper_needs_human",
       "comment_id": "5663450812",
@@ -34443,6 +34410,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148121:5668514806:2026-09-14T18:10:35Z:re_review",
+      "comment_id": "5668514806",
+      "comment_version_key": "5668514806:2026-09-14T18:10:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5668514806",
+      "comment_created_at": "2026-09-14T18:10:35Z",
+      "comment_updated_at": "2026-09-14T18:10:35Z",
+      "comment_body_sha256": "8b65a859a211584ac1a43f4c0061f8b5d2bc6aa17ae58b28244717fd05be79e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148121,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — exact head a7dcdad7525c7d23a68d26e476ac3dd49979ace1. the latest review explicitly withdraws the false persistent-data-model blocker and reports no actionable findings, but its stale before merge checkbox and blocked state contradict that disposition. please refresh the exact-head verdict",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T18:11:27.987Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-provider-cohorts",
+        "head_sha": "a7dcdad7525c7d23a68d26e476ac3dd49979ace1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
