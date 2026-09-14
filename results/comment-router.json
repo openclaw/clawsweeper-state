@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T19:36:58.115Z",
+  "updated_at": "2026-09-14T19:37:39.389Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144984:5664783803:2026-09-14T13:31:39Z:re_review",
-      "comment_id": "5664783803",
-      "comment_version_key": "5664783803:2026-09-14T13:31:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144984#issuecomment-5664783803",
-      "comment_created_at": "2026-09-14T13:31:39Z",
-      "comment_updated_at": "2026-09-14T13:31:39Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144984,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T13:34:50.220Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/secrets-remove-unused-scope-param",
-        "head_sha": "28c905b7447cb1657c87944ca6889ced11b72317",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147660:5657780692:2026-09-14T13:33:50Z:clawsweeper_needs_human",
       "comment_id": "5657780692",
@@ -34032,6 +33985,39 @@
         "kind": "pull_request",
         "branch": "codex/chat-startup-extras-main-b8de9f-20260914",
         "head_sha": "c3fa55b11006badd9b11996831198c0a8ab2ca6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146646:5650063003:2026-09-14T19:35:35Z:clawsweeper_needs_human",
+      "comment_id": "5650063003",
+      "comment_version_key": "5650063003:2026-09-14T19:35:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146646#issuecomment-5650063003",
+      "comment_created_at": "2026-09-13T01:52:37Z",
+      "comment_updated_at": "2026-09-14T19:35:35Z",
+      "comment_body_sha256": "61457bd20ba21fbc935f223f5a1b9ff9d60ede17a3b61540b6d6c8cf25f0ef26",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146646,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied d15dc1c logs exercise the changed reply handler through real Gateway validation and loopback transports, showing one corr... (sha=2e9650c33b65ac710989c961b1a49b0450b36bc3)",
+      "expected_head_sha": "2e9650c33b65ac710989c961b1a49b0450b36bc3",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-14T19:37:39.389Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ask-user-incomplete-answer-notice",
+        "head_sha": "2e9650c33b65ac710989c961b1a49b0450b36bc3",
         "cluster_id": null,
         "job_path": null
       }
