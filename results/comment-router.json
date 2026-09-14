@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T10:57:22.670Z",
+  "updated_at": "2026-09-14T10:57:36.369Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137435:5529378637:2026-09-14T05:55:31Z:clawsweeper_needs_human",
-      "comment_id": "5529378637",
-      "comment_version_key": "5529378637:2026-09-14T05:55:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137435#issuecomment-5529378637",
-      "comment_created_at": "2026-09-03T17:14:50Z",
-      "comment_updated_at": "2026-09-14T05:55:31Z",
-      "comment_body_sha256": "7e77054bb5a63b78c7801621c7d445cc0102cf92aedaad6a6ca747a620d57b76",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137435,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing subagent thinking configuration that visible spawns previously ignored can now reject child creation; maintainer acceptance and fresh-install/upgrade coverage remain unrecord... (sha=f37ea0e403002ef32dc6b1034cf6245986b5eaad)",
-      "expected_head_sha": "f37ea0e403002ef32dc6b1034cf6245986b5eaad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T06:08:23.387Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/visible-session-effective-state",
-        "head_sha": "f37ea0e403002ef32dc6b1034cf6245986b5eaad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147939:5659520866:2026-09-14T05:58:04Z:clawsweeper_needs_human",
       "comment_id": "5659520866",
@@ -34647,6 +34614,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148150:5662867908:2026-09-14T10:56:32Z:re_review",
+      "comment_id": "5662867908",
+      "comment_version_key": "5662867908:2026-09-14T10:56:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148150#issuecomment-5662867908",
+      "comment_created_at": "2026-09-14T10:56:32Z",
+      "comment_updated_at": "2026-09-14T10:56:32Z",
+      "comment_body_sha256": "35aa681db2924491aeb9eb8389422d6f1461efa897c750170345dade34924a96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148150,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T10:57:33.905Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maturity-348158-bundled-skill-agent",
+        "head_sha": "e5d4a23a5f7f07ce6814c662f0b9e367b756e7eb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
