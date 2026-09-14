@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147776"
-mode: "autonomous"
-run_id: "34801796059"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34801796059"
+mode: "plan"
+run_id: "34804644677"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34804644677"
 head_sha: "60e9eac3f1cce2d8a4f886c9ebc5f4a9092429dc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-14T03:50:02.636Z"
-canonical: "https://github.com/openclaw/openclaw/issues/147776"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/147776"
-canonical_pr: null
-actions_total: 3
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-14T04:17:13.745Z"
+canonical: "147776"
+canonical_issue: "147776"
+canonical_pr: "147805"
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34801796059](https://github.com/openclaw/clawsweeper/actions/runs/34801796059)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34804644677](https://github.com/openclaw/clawsweeper/actions/runs/34804644677)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/147776
+Canonical: 147776
 
 ## Summary
 
-Source confirms incomplete details sanitization on the preflight main SHA. Implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state changed.
+Matching contributor PR #147805 already exists. Keep #147776 open and retain #147805 for proof follow-up without creating a competing implementation PR. The incomplete review excerpt does not support an executable repair plan. No files or GitHub state changed, and no tests were run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Source confirms incomplete details sanitization on the preflight main SHA. Imple
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147776 | fix_needed | planned | canonical | The existing sanitizer contract supports a narrow bug fix. Actual failing runner regression and subsequent validation remain required; this host cannot install dependencies or edit files. |
-| #104156 | keep_closed | skipped | related | Already merged; preserve its byte-accounting behavior and existing regression coverage. |
-| cluster:issue-openclaw-openclaw-147776 | build_fix_artifact | planned |  | Return an executable repair plan without claiming completed reproduction, implementation, review, or branch validation. |
+| https://github.com/openclaw/openclaw/issues/147776 | keep_canonical | planned | canonical | Retain the source issue until the existing candidate completes validation and the separately authorized landing workflow. |
+| https://github.com/openclaw/openclaw/pull/147805 | keep_related | planned | related | Retain LiuwqGit's existing PR and preserve contributor credit. Downgrade the executable fix recommendation because the supplied artifacts neither identify a confirmed remaining code defect nor contain the complete proof requirements needed for a safe repair artifact. Retrieve the complete review before defining further repair work; verify the job's requested coverage and validation on this candidate. Keep https://github.com/openclaw/openclaw/pull/147805 as the candidate for https://github.com/openclaw/openclaw/issues/147776. Merge and closure remain prohibited by this job. |
 
 ## Needs Human
 
