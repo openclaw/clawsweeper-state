@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:01:42.110Z",
+  "updated_at": "2026-09-14T05:01:53.244Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147457:5657518092:2026-09-14T00:49:10Z:re_review",
-      "comment_id": "5657518092",
-      "comment_version_key": "5657518092:2026-09-14T00:49:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147457#issuecomment-5657518092",
-      "comment_created_at": "2026-09-14T00:49:10Z",
-      "comment_updated_at": "2026-09-14T00:49:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147457,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T00:50:03.094Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/matrix-key-publication-durability",
-        "head_sha": "3af47c7a3ebe8c3bae438ae9bf8c8f408cc5ebae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147571:5657427783:2026-09-14T00:49:24Z:clawsweeper_needs_human",
       "comment_id": "5657427783",
@@ -33268,6 +33221,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147634:5657637785:2026-09-14T04:58:17Z:clawsweeper_needs_human",
+      "comment_id": "5657637785",
+      "comment_version_key": "5657637785:2026-09-14T04:58:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147634#issuecomment-5657637785",
+      "comment_created_at": "2026-09-14T01:08:17Z",
+      "comment_updated_at": "2026-09-14T04:58:17Z",
+      "comment_body_sha256": "2a4b6aabb34d29c9f9ad83f49b2ce51aba33aa2598ee04f30b1545ea1f13198e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147634,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured body adds useful Chromium/CSS output for the message renderer, but reconnect evidence remains a direct helper call; runni... (sha=f384115cb7432762655638a5da0bdbc0fd2b2cf1)",
+      "expected_head_sha": "f384115cb7432762655638a5da0bdbc0fd2b2cf1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:01:53.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/own-message-flash-peer-147511",
+        "head_sha": "f384115cb7432762655638a5da0bdbc0fd2b2cf1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
