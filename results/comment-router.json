@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T19:35:10.943Z",
+  "updated_at": "2026-09-14T19:35:53.977Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148122:5664767966:2026-09-14T13:30:33Z:re_review",
-      "comment_id": "5664767966",
-      "comment_version_key": "5664767966:2026-09-14T13:30:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5664767966",
-      "comment_created_at": "2026-09-14T13:30:33Z",
-      "comment_updated_at": "2026-09-14T13:30:33Z",
-      "comment_body_sha256": "aeb754a0fd1b0097dbbe71b10f79d9ea50577db07b2f0d91a8e1081530de6382",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148122,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — exact remote head 9fc4e0a782be after the base repair landed and the stack was rebased. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and docs lint pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T13:31:33.162Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-app-inventory",
-        "head_sha": "9fc4e0a782be4d8e21a6c0345e7ed4ed0239ec11",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148120:5664767199:2026-09-14T13:30:31Z:re_review",
       "comment_id": "5664767199",
@@ -34088,6 +34041,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-catalog-auth-145994",
         "head_sha": "c135ea3ec4b3ee87c85486440b26b57e09b5356c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148167:5662749861:2026-09-14T19:33:40Z:clawsweeper_needs_human",
+      "comment_id": "5662749861",
+      "comment_version_key": "5662749861:2026-09-14T19:33:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148167#issuecomment-5662749861",
+      "comment_created_at": "2026-09-14T10:46:36Z",
+      "comment_updated_at": "2026-09-14T19:33:40Z",
+      "comment_body_sha256": "fb8327cfc5fe92ad61c912c430acedecf4132746eceacfbad097bb300869972c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148167,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing CLI, SDK, and saved automation calls explicitly naming an unlisted primary will fail after upgrade; capability negotiation preserves old response shapes but does not preserve... (sha=9bd0f3026f411c925c75ab127cebd22a1f46ebaa)",
+      "expected_head_sha": "9bd0f3026f411c925c75ab127cebd22a1f46ebaa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T19:35:53.977Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/model-choice-policy",
+        "head_sha": "9bd0f3026f411c925c75ab127cebd22a1f46ebaa",
         "cluster_id": null,
         "job_path": null
       }
