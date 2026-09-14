@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:20:41.754Z",
+  "updated_at": "2026-09-14T02:20:50.953Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143937:5656195969:2026-09-13T21:16:01Z:re_review",
-      "comment_id": "5656195969",
-      "comment_version_key": "5656195969:2026-09-13T21:16:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143937#issuecomment-5656195969",
-      "comment_created_at": "2026-09-13T21:16:01Z",
-      "comment_updated_at": "2026-09-13T21:16:01Z",
-      "comment_body_sha256": "ffa35bc68f42625d9f79e833ff462231220cefb38f86a2a48e94eacb8c8d3cce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143937,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - revision 8230e9be72f wires the provenance encoding into the existing transcript writer (single owner, competing module deleted), keeps sanitized output in the no-marker branch, and preserves the encoded/raw distinction on replay; red->green re-run by the owner (190 passed)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T21:17:37.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-142821-descr",
-        "head_sha": "8230e9be72fc0e3dc57b029efb2991cbe77618ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144065:5656196105:2026-09-13T21:16:02Z:re_review",
       "comment_id": "5656196105",
@@ -33628,6 +33581,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147721:5658116078:2026-09-14T02:19:49Z:clawsweeper_needs_human",
+      "comment_id": "5658116078",
+      "comment_version_key": "5658116078:2026-09-14T02:19:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147721#issuecomment-5658116078",
+      "comment_created_at": "2026-09-14T02:19:49Z",
+      "comment_updated_at": "2026-09-14T02:19:49Z",
+      "comment_body_sha256": "38cc34b846df5c986e075307db6f59d505c81a22948c7f6ca98b50cd6be96059",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The composed completion and assistant-role query contracts have not yet been qualified with this native file action; older Gateways intentionally return a visible unavailable outcome. (sha=f044b2d534ad1bbbdd1f8b60ee00de7909bddcbe)",
+      "expected_head_sha": "f044b2d534ad1bbbdd1f8b60ee00de7909bddcbe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T02:20:50.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/apple-siri-files",
+        "head_sha": "f044b2d534ad1bbbdd1f8b60ee00de7909bddcbe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
