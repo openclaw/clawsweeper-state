@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T18:04:03.320Z",
+  "updated_at": "2026-09-14T18:04:46.996Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148120:5663398321:2026-09-14T11:46:06Z:re_review",
-      "comment_id": "5663398321",
-      "comment_version_key": "5663398321:2026-09-14T11:46:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148120#issuecomment-5663398321",
-      "comment_created_at": "2026-09-14T11:46:06Z",
-      "comment_updated_at": "2026-09-14T11:46:06Z",
-      "comment_body_sha256": "d1464730131ac9e8e1f138298587107fbd321f1ac01e3816a8f3cc4dbcf129ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148120,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 6d388409884. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and docs lint pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T11:54:52.074Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-channel-cohorts",
-        "head_sha": "6d388409884ff4405a9a6e03c4c3b76cd5402740",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148122:5663398805:2026-09-14T11:46:08Z:re_review",
       "comment_id": "5663398805",
@@ -34534,6 +34487,39 @@
         "kind": "pull_request",
         "branch": "codex/browser-auth-recovery",
         "head_sha": "05bfbf9c7ca66f29aca6c0f360fb215dce262528",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148427:5668427084:2026-09-14T18:03:33Z:clawsweeper_needs_human",
+      "comment_id": "5668427084",
+      "comment_version_key": "5668427084:2026-09-14T18:03:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148427#issuecomment-5668427084",
+      "comment_created_at": "2026-09-14T18:03:33Z",
+      "comment_updated_at": "2026-09-14T18:03:33Z",
+      "comment_body_sha256": "e44ad32514c5d98787e4359f417d98be195c038c2455efbb24cbdc41d4056887",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148427,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured evidence does not quantify cold-history latency improvement or confirm the candidate build's resulting lazy-loading boundary. (sha=c9188bb9d7ecc0730c07e934893340dfe9ef7291)",
+      "expected_head_sha": "c9188bb9d7ecc0730c07e934893340dfe9ef7291",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T18:04:46.996Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/avatar-fetch-lazy",
+        "head_sha": "c9188bb9d7ecc0730c07e934893340dfe9ef7291",
         "cluster_id": null,
         "job_path": null
       }
