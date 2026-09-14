@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T11:13:50.638Z",
+  "updated_at": "2026-09-14T11:13:55.286Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147244:5655062491:2026-09-14T06:23:13Z:clawsweeper_needs_human",
-      "comment_id": "5655062491",
-      "comment_version_key": "5655062491:2026-09-14T06:23:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147244#issuecomment-5655062491",
-      "comment_created_at": "2026-09-13T18:02:30Z",
-      "comment_updated_at": "2026-09-14T06:23:13Z",
-      "comment_body_sha256": "ac327c4d69f0ba141e9e66b08a53a833bfb7c8a6c6aa8226188212fbf0d4a49a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147244,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserved simulator-native TLS/Share receipts cover allowed socket/media I/O, foreign-authority refusa...; Review finding: [medium] Durable sign-out verification is incomplete — apps/ios/Tests/GatewayAccessRestartTests.swift:222 (sha=3d8e71515d79706c2b0018ac1321b02612ff74c6)",
-      "expected_head_sha": "3d8e71515d79706c2b0018ac1321b02612ff74c6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T06:24:46.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/ios-cloudflare-access-activation-20260913",
-        "head_sha": "3d8e71515d79706c2b0018ac1321b02612ff74c6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147987:5659897766:2026-09-14T06:24:11Z:clawsweeper_needs_human",
       "comment_id": "5659897766",
@@ -34682,6 +34649,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-inventory-warnings",
         "head_sha": "343f172de7b8625ff75d04cb80329f6eb2fd64ee",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148122:5663046552:2026-09-14T11:12:50Z:re_review",
+      "comment_id": "5663046552",
+      "comment_version_key": "5663046552:2026-09-14T11:12:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5663046552",
+      "comment_created_at": "2026-09-14T11:12:50Z",
+      "comment_updated_at": "2026-09-14T11:12:50Z",
+      "comment_body_sha256": "bfbeefa800b0e2289227ac2fb54ffec1393e299040fda4949c45c3b08b5f8410",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148122,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head bc1c00e20ef72a15e3c6a10fe132f9c75d514d17. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T11:13:52.328Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-app-inventory",
+        "head_sha": "bc1c00e20ef72a15e3c6a10fe132f9c75d514d17",
         "cluster_id": null,
         "job_path": null
       },
