@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:07:49.726Z",
+  "updated_at": "2026-09-14T23:08:05.507Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147457:5667815370:2026-09-14T17:13:48Z:re_review",
-      "comment_id": "5667815370",
-      "comment_version_key": "5667815370:2026-09-14T17:13:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147457#issuecomment-5667815370",
-      "comment_created_at": "2026-09-14T17:13:48Z",
-      "comment_updated_at": "2026-09-14T17:13:48Z",
-      "comment_body_sha256": "e50ad41deba7d5fc163da9f309cb827abbadb7ae03c22226b19dd5853b97def7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147457,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T17:14:38.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/matrix-key-publication-durability",
-        "head_sha": "acc7e76216cd191bde8d013252be87f9a71b4591",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148394:5667831023:2026-09-14T17:15:06Z:clawsweeper_needs_human",
       "comment_id": "5667831023",
@@ -33378,6 +33331,39 @@
         "kind": "pull_request",
         "branch": "codex/test-update-fixture-publication-20260914",
         "head_sha": "2c3fc1fd7ed29aaec41ecc1117378adf139d94f6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148459:5668967478:2026-09-14T23:06:58Z:clawsweeper_needs_human",
+      "comment_id": "5668967478",
+      "comment_version_key": "5668967478:2026-09-14T23:06:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148459#issuecomment-5668967478",
+      "comment_created_at": "2026-09-14T18:46:46Z",
+      "comment_updated_at": "2026-09-14T23:06:58Z",
+      "comment_body_sha256": "1526e2ddab24762f70a7769943e7722b6fa691c6ff96f4b1112462ee8cb84cec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148459,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The historical timing samples do not establish a consistent end-to-end recap speedup or elimination of timing failures. (sha=8ed70a481166129f0079469f20dd6d30287114e9)",
+      "expected_head_sha": "8ed70a481166129f0079469f20dd6d30287114e9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T23:08:05.507Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/recap-projection-stability",
+        "head_sha": "8ed70a481166129f0079469f20dd6d30287114e9",
         "cluster_id": null,
         "job_path": null
       }
