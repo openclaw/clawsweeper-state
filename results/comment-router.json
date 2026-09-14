@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T10:49:22.755Z",
+  "updated_at": "2026-09-14T10:51:34.842Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147980:5659716435:2026-09-14T06:04:43Z:re_review",
-      "comment_id": "5659716435",
-      "comment_version_key": "5659716435:2026-09-14T06:04:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147980#issuecomment-5659716435",
-      "comment_created_at": "2026-09-14T06:04:43Z",
-      "comment_updated_at": "2026-09-14T06:04:43Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147980,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T06:05:36.083Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test-audit/wave19-update-matrices",
-        "head_sha": "ca985d570992105102c2aad7cd816428e36eb465",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147981:5659716418:2026-09-14T06:04:43Z:re_review",
       "comment_id": "5659716418",
@@ -34562,6 +34515,39 @@
         "kind": "pull_request",
         "branch": "codex/whatsapp-relogin-history",
         "head_sha": "3790383362132e6d48d6155dfdca28d60cc2a62c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:356:5662800530:2026-09-14T10:50:44Z:clawsweeper_needs_human",
+      "comment_id": "5662800530",
+      "comment_version_key": "5662800530:2026-09-14T10:50:44Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/356#issuecomment-5662800530",
+      "comment_created_at": "2026-09-14T10:50:44Z",
+      "comment_updated_at": "2026-09-14T10:50:44Z",
+      "comment_body_sha256": "cdb88cb9b64ad83e1d3e771070447c44f9ffdb1542f491e7492d53cb15e548d4",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 356,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported WSL2 execution exercises the relevant real Python guest and installed-package smoke, but the captured evidence contains o... (sha=dd35888b09a118c7682666e230fa44c2c1527d6f)",
+      "expected_head_sha": "dd35888b09a118c7682666e230fa44c2c1527d6f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T10:51:34.842Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/guest-epipe-test-fix-20260914",
+        "head_sha": "dd35888b09a118c7682666e230fa44c2c1527d6f",
         "cluster_id": null,
         "job_path": null
       }
