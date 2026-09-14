@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T16:39:28.583Z",
+  "updated_at": "2026-09-14T16:39:32.736Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:323:5655965833:2026-09-14T10:20:20Z:clawsweeper_needs_human",
-      "comment_id": "5655965833",
-      "comment_version_key": "5655965833:2026-09-14T10:20:20Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/323#issuecomment-5655965833",
-      "comment_created_at": "2026-09-13T20:37:13Z",
-      "comment_updated_at": "2026-09-14T10:20:20Z",
-      "comment_body_sha256": "cab6754ddc6f08709723eb4a78593f92b97d54d485691b11023556bdf5290961",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 323,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Windows callers using drive-relative atomic or JSON publication paths will now receive invalid-path; acceptance of that deliberate compatibility break remains unresolved. (sha=8369df47567693c8c425f1dff8e1ee91d480290c)",
-      "expected_head_sha": "8369df47567693c8c425f1dff8e1ee91d480290c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T10:21:26.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/windows-ads-path-rejection-20260913",
-        "head_sha": "8369df47567693c8c425f1dff8e1ee91d480290c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:138289:5544725341:2026-09-04T18:18:50Z:re_review",
       "comment_id": "5544725341",
@@ -34849,6 +34816,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-provider-cohorts",
         "head_sha": "a7dcdad7525c7d23a68d26e476ac3dd49979ace1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148123:5667368834:2026-09-14T16:38:16Z:re_review",
+      "comment_id": "5667368834",
+      "comment_version_key": "5667368834:2026-09-14T16:38:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5667368834",
+      "comment_created_at": "2026-09-14T16:38:16Z",
+      "comment_updated_at": "2026-09-14T16:38:16Z",
+      "comment_body_sha256": "94166d9ec7cba3170cb5ce393a12e4caf5e0f685a7b5b5eda64e326729a7b235",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148123,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head dc29503297fc69f589f2be9b223152b1a9dd0b06 onto repaired stack. the argument-forwarding fix remains included. focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T16:39:30.106Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-inventory-warnings",
+        "head_sha": "dc29503297fc69f589f2be9b223152b1a9dd0b06",
         "cluster_id": null,
         "job_path": null
       },
