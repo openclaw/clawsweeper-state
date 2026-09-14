@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:19:02.823Z",
+  "updated_at": "2026-09-14T14:19:05.222Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147996:5661168847:2026-09-14T08:27:53Z:re_review",
-      "comment_id": "5661168847",
-      "comment_version_key": "5661168847:2026-09-14T08:27:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147996#issuecomment-5661168847",
-      "comment_created_at": "2026-09-14T08:27:53Z",
-      "comment_updated_at": "2026-09-14T08:27:53Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147996,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T08:30:38.642Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-qa-main-compat",
-        "head_sha": "be8000fa52d00dae51296bb2d28c471e6dff339e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147466:5661153639:2026-09-14T08:26:32Z:re_review",
       "comment_id": "5661153639",
@@ -34934,6 +34887,39 @@
         "kind": "pull_request",
         "branch": "fix/qa-evidence-startup-20260914",
         "head_sha": "cb1397dd2da649e4f6a8fa3b482a5ff0e76c75fc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148279:5665426569:2026-09-14T14:17:25Z:clawsweeper_needs_human",
+      "comment_id": "5665426569",
+      "comment_version_key": "5665426569:2026-09-14T14:17:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148279#issuecomment-5665426569",
+      "comment_created_at": "2026-09-14T14:17:25Z",
+      "comment_updated_at": "2026-09-14T14:17:25Z",
+      "comment_body_sha256": "e86dccc810c7648c3980aa9280b0780bdd977ee8aebca7531e342d9680246005",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148279,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The CLI preparation and settlement owners are exercised through synthetic backend failures, followed by direct formatter assertions; no after-f... (sha=24f6bbf71db58c3945c27af34b956a1b9899aa71)",
+      "expected_head_sha": "24f6bbf71db58c3945c27af34b956a1b9899aa71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T14:19:05.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-billing-recovery-copy",
+        "head_sha": "24f6bbf71db58c3945c27af34b956a1b9899aa71",
         "cluster_id": null,
         "job_path": null
       }
