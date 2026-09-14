@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T21:31:26.722Z",
+  "updated_at": "2026-09-14T21:32:49.617Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3693:5667050554:2026-09-14T16:14:21Z:clawsweeper_auto_repair",
-      "comment_id": "5667050554",
-      "comment_version_key": "5667050554:2026-09-14T16:14:21Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3693#issuecomment-5667050554",
-      "comment_created_at": "2026-09-14T16:14:21Z",
-      "comment_updated_at": "2026-09-14T16:14:21Z",
-      "comment_body_sha256": "c91477c518472c494219decb3aed9e301fd317e01e37f46ca6cb3e03ddb6c0b5",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3693,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=30c09dacda6be5ca060994206d0f39c8c4782769)",
-      "expected_head_sha": "30c09dacda6be5ca060994206d0f39c8c4782769",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T16:16:00.553Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "dependabot/bun/production-minor-and-patch-69f38d4e16",
-        "head_sha": "30c09dacda6be5ca060994206d0f39c8c4782769",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148344:5667064112:2026-09-14T16:15:19Z:clawsweeper_needs_human",
       "comment_id": "5667064112",
@@ -33201,6 +33168,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147335:5655675068:2026-09-14T21:31:35Z:clawsweeper_needs_human",
+      "comment_id": "5655675068",
+      "comment_version_key": "5655675068:2026-09-14T21:31:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147335#issuecomment-5655675068",
+      "comment_created_at": "2026-09-13T19:48:21Z",
+      "comment_updated_at": "2026-09-14T21:31:35Z",
+      "comment_body_sha256": "b0381fb7d103763a70551c127db84066c8addbdd3c4f16e2651b79bbf6eaf91b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147335,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **\\[P1\\] Mock tree signaling before cancelling synthetic children (P1)** - This suite mocks spawning but leaves signalProcessTree real. createStubChild() supplies PID 1234, and usedFallback: false makes the adapte...; Review finding: [P1] [P1] Mock tree signaling before cancelling synthetic children — src/process/supervisor/adapters/child.post-exit-drain.test.ts:77-78 - [medium] Synthetic PID r... (sha=78feb4f51b0ccc38b65781da8447d42d7f11c909)",
+      "expected_head_sha": "78feb4f51b0ccc38b65781da8447d42d7f11c909",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T21:32:49.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-session-stdio-children",
+        "head_sha": "78feb4f51b0ccc38b65781da8447d42d7f11c909",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
