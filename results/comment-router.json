@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:26:50.607Z",
+  "updated_at": "2026-09-14T02:27:22.511Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144507:5656206644:2026-09-13T21:17:59Z:re_review",
-      "comment_id": "5656206644",
-      "comment_version_key": "5656206644:2026-09-13T21:17:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144507#issuecomment-5656206644",
-      "comment_created_at": "2026-09-13T21:17:59Z",
-      "comment_updated_at": "2026-09-13T21:17:59Z",
-      "comment_body_sha256": "193138a036da177a1f9a72a30721569d537a12e15694d8eec171786e38f0c13c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144507,
-      "author": "pdonizete",
-      "author_id": 2013236,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — ci cleared (all 4 originally-failing checks + ci-gate now success). the merge brought in upstream-main fixes for the test files that were causing the original failures (#146949, #147028, #147029); the new check-node-compact-small-11 failure was from a test file (#146177) requiring systemd user session bus and is now properly skipped in non-user-manager sandboxes. whatsapp 16 khz + whatsapp vendor fix is preserved intact. real-device playback evidence on the revised production path is in the comment above",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T21:18:47.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/whatsapp-voice-16khz-vendor",
-        "head_sha": "5588ff4e2d62e8499b67151d19b72ba2b3be4b4f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147418:5656206754:2026-09-13T21:18:00Z:clawsweeper_needs_human",
       "comment_id": "5656206754",
@@ -33577,6 +33530,39 @@
         "kind": "pull_request",
         "branch": "refactor/web-provider-selection-settlement-20260914",
         "head_sha": "f824875532cf38705fa89964a2e52e79ad83a1a2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147733:5658157405:2026-09-14T02:26:16Z:clawsweeper_needs_human",
+      "comment_id": "5658157405",
+      "comment_version_key": "5658157405:2026-09-14T02:26:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147733#issuecomment-5658157405",
+      "comment_created_at": "2026-09-14T02:26:16Z",
+      "comment_updated_at": "2026-09-14T02:26:16Z",
+      "comment_body_sha256": "a7998b5570581c236ef183da5dddea6930a5f3e6cc56ccbae7b222eee206c847",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147733,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d8ec2f740fbfd5f2d6471243c3a3ec7f7daf7dc6)",
+      "expected_head_sha": "d8ec2f740fbfd5f2d6471243c3a3ec7f7daf7dc6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T02:27:22.511Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/freebsd-skill-install-guidance",
+        "head_sha": "d8ec2f740fbfd5f2d6471243c3a3ec7f7daf7dc6",
         "cluster_id": null,
         "job_path": null
       }
