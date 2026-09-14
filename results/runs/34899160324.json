@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-85687",
+  "mode": "autonomous",
+  "run_id": "34899160324",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34899160324",
+  "head_sha": "f4b109ab7df97f77267f41749edeec2c2f354148",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-85687.md",
+  "published_at": "2026-09-14T22:16:49.757Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/85687",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/85687",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the repair-text leak remains on preflight main. A narrow fix artifact is ready, but implementation and reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#85687",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#85687",
+      "candidate_fix": null,
+      "reason": "The canonical issue remains actionable. Runtime reproduction is still required before implementation or publication."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-85687",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#85687",
+      "candidate_fix": null,
+      "reason": "A bounded executor handoff is possible despite this host's implementation limitations."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-85687",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#85687",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until an authorized executor checks for existing work, reproduces the defect on refreshed main, implements the narrow repair, and completes validation and review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
