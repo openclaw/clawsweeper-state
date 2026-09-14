@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T00:12:39.588Z",
+  "updated_at": "2026-09-14T00:13:21.208Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147277:5655301799:2026-09-13T18:44:02Z:re_review",
-      "comment_id": "5655301799",
-      "comment_version_key": "5655301799:2026-09-13T18:44:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147277#issuecomment-5655301799",
-      "comment_created_at": "2026-09-13T18:44:02Z",
-      "comment_updated_at": "2026-09-13T18:44:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147277,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T18:44:59.708Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/startup-lease-readiness-heartbeat",
-        "head_sha": "8721112a0b12e3e01f09a67935482f7aa499ab9d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144521:5627555289:2026-09-13T18:47:12Z:clawsweeper_needs_human",
       "comment_id": "5627555289",
@@ -33661,6 +33614,39 @@
         "kind": "pull_request",
         "branch": "fix/update-repair-runtime",
         "head_sha": "d86aeec3c5725d59bd8a979335d899930f765745",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147574:5657279244:2026-09-14T00:12:24Z:clawsweeper_auto_repair",
+      "comment_id": "5657279244",
+      "comment_version_key": "5657279244:2026-09-14T00:12:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147574#issuecomment-5657279244",
+      "comment_created_at": "2026-09-14T00:12:24Z",
+      "comment_updated_at": "2026-09-14T00:12:24Z",
+      "comment_body_sha256": "7f0d26afe8059b3f62c2b8588e61f91569c3a80926be646d4fb6f27d0a54418b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147574,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=42d2a4c1b21a071bf2c0803538fc65a35bcde491)",
+      "expected_head_sha": "42d2a4c1b21a071bf2c0803538fc65a35bcde491",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T00:13:21.207Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/panel-loading-in-place",
+        "head_sha": "42d2a4c1b21a071bf2c0803538fc65a35bcde491",
         "cluster_id": null,
         "job_path": null
       }
