@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T07:34:47.664Z",
+  "updated_at": "2026-09-14T07:35:12.244Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147838:5658691125:2026-09-14T03:46:16Z:re_review",
-      "comment_id": "5658691125",
-      "comment_version_key": "5658691125:2026-09-14T03:46:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147838#issuecomment-5658691125",
-      "comment_created_at": "2026-09-14T03:46:16Z",
-      "comment_updated_at": "2026-09-14T03:46:16Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147838,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T03:49:00.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/theme-color-ansi-encoding-20260914",
-        "head_sha": "1131c6cf395aeb40f3cf6c2e394eda40a339de51",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:124467:5658701417:2026-09-14T03:47:40Z:re_review",
       "comment_id": "5658701417",
@@ -32884,6 +32837,39 @@
         "kind": "pull_request",
         "branch": "fix/141615-identity-resync",
         "head_sha": "a491ee99fe7a70d795d122f9f6a2ef1f54240669",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148049:5660579886:2026-09-14T07:33:41Z:clawsweeper_needs_human",
+      "comment_id": "5660579886",
+      "comment_version_key": "5660579886:2026-09-14T07:33:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148049#issuecomment-5660579886",
+      "comment_created_at": "2026-09-14T07:33:41Z",
+      "comment_updated_at": "2026-09-14T07:33:41Z",
+      "comment_body_sha256": "35d6e689cbaa0a5e074199157f2e0008c7dc95e06b1516160082823b4c9d5b7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148049,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=8013940d7049a2ce209e0ffa2c5f7c0a67e532d7)",
+      "expected_head_sha": "8013940d7049a2ce209e0ffa2c5f7c0a67e532d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T07:35:12.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/phase-signal-string-normalization-20260914",
+        "head_sha": "8013940d7049a2ce209e0ffa2c5f7c0a67e532d7",
         "cluster_id": null,
         "job_path": null
       }
