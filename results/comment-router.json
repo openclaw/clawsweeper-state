@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T18:31:14.668Z",
+  "updated_at": "2026-09-14T18:31:16.325Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147793:5663611806:2026-09-14T12:06:04Z:re_review",
-      "comment_id": "5663611806",
-      "comment_version_key": "5663611806:2026-09-14T12:06:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147793#issuecomment-5663611806",
-      "comment_created_at": "2026-09-14T12:06:04Z",
-      "comment_updated_at": "2026-09-14T12:06:04Z",
-      "comment_body_sha256": "be41f3ea814b4e66c77327949baf1a2895a8e2bb27b6d92cdc6b52555c28f409",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147793,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T12:08:37.486Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reset-memory-capture-hydration",
-        "head_sha": "f049ec7f36d96cf2f31a5d31418b83f130dfa256",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148223:5663632307:2026-09-14T12:07:54Z:clawsweeper_needs_human",
       "comment_id": "5663632307",
@@ -34366,6 +34319,39 @@
         "kind": "pull_request",
         "branch": "codex/worker-command-wasm",
         "head_sha": "87822bca5091595c716038ea3c62370e3d4a0b2a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148135:5662093334:2026-09-14T18:17:06Z:clawsweeper_needs_human",
+      "comment_id": "5662093334",
+      "comment_version_key": "5662093334:2026-09-14T18:17:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148135#issuecomment-5662093334",
+      "comment_created_at": "2026-09-14T09:47:09Z",
+      "comment_updated_at": "2026-09-14T18:17:06Z",
+      "comment_body_sha256": "fe60e2d622c947a9ba148380d4254601268c532938a32e1c34bd83d3408c2e20",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured body and inspected tests demonstrate sender propagation, registered-owner policy checks, and calls...; Review finding: [P1] [P1] Carry run-authority validation through final completion dispatch — src/agents/embedded-agent-runner/context-engine-capabilities.ts:40-42 - [medium] Run r... (sha=dc1b9689d7b509984ae6bb1b71bf407b60a18bc9)",
+      "expected_head_sha": "dc1b9689d7b509984ae6bb1b71bf407b60a18bc9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T18:31:16.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-recall-sender-id",
+        "head_sha": "dc1b9689d7b509984ae6bb1b71bf407b60a18bc9",
         "cluster_id": null,
         "job_path": null
       }
