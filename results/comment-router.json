@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T17:47:30.587Z",
+  "updated_at": "2026-09-14T17:47:38.227Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148120:5663256449:2026-09-14T11:32:34Z:re_review",
-      "comment_id": "5663256449",
-      "comment_version_key": "5663256449:2026-09-14T11:32:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148120#issuecomment-5663256449",
-      "comment_created_at": "2026-09-14T11:32:34Z",
-      "comment_updated_at": "2026-09-14T11:32:34Z",
-      "comment_body_sha256": "eb65d75248742e815764ba2e92d7459b093ee0b22c5636980b279ea8918af55c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148120,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 50e1348d4cdad90d5fef0a845ba3728b1ca664c4 onto current main. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T11:33:43.001Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-channel-cohorts",
-        "head_sha": "50e1348d4cde99181494ea80e8a5a2ce1ffad0a2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148121:5663256659:2026-09-14T11:32:35Z:re_review",
       "comment_id": "5663256659",
@@ -34702,6 +34655,39 @@
         "kind": "pull_request",
         "branch": "codex/bun-telegram-listen-error",
         "head_sha": "927bcf35a385c2d5e019eceb647ada3300fc17dc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3652:5668019171:2026-09-14T17:46:37Z:clawsweeper_auto_repair",
+      "comment_id": "5668019171",
+      "comment_version_key": "5668019171:2026-09-14T17:46:37Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3652#issuecomment-5668019171",
+      "comment_created_at": "2026-09-14T17:30:27Z",
+      "comment_updated_at": "2026-09-14T17:46:37Z",
+      "comment_body_sha256": "89fe7d16e4dcc36809ed1943cc9cf24d82b3dc611cb17ec5d6f1f07101814f40",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3652,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=807a39eb0260d7a8425d670853479f0b9b5d36ce)",
+      "expected_head_sha": "807a39eb0260d7a8425d670853479f0b9b5d36ce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T17:47:38.227Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "urda/spend-unpriced-source-day-total",
+        "head_sha": "807a39eb0260d7a8425d670853479f0b9b5d36ce",
         "cluster_id": null,
         "job_path": null
       }
