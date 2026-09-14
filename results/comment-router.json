@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:28:17.211Z",
+  "updated_at": "2026-09-14T23:28:28.433Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147490:5656699061:2026-09-14T17:16:48Z:clawsweeper_needs_human",
-      "comment_id": "5656699061",
-      "comment_version_key": "5656699061:2026-09-14T17:16:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147490#issuecomment-5656699061",
-      "comment_created_at": "2026-09-13T22:46:33Z",
-      "comment_updated_at": "2026-09-14T17:16:48Z",
-      "comment_body_sha256": "d6f81c619fb490e8589e65b55a1a525395f89331ffb337e9047f54ad4ce6f4f1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=4cd90aa96cd2001e26020789086e0feab89af6b9)",
-      "expected_head_sha": "4cd90aa96cd2001e26020789086e0feab89af6b9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T17:24:55.559Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/validate-empty-allow-warn",
-        "head_sha": "4cd90aa96cd2001e26020789086e0feab89af6b9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147490:5661298597:2026-09-14T08:39:49Z:re_review",
       "comment_id": "5661298597",
@@ -33321,6 +33288,53 @@
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148592:5672214727:2026-09-14T23:26:55Z:re_review",
+      "comment_id": "5672214727",
+      "comment_version_key": "5672214727:2026-09-14T23:26:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148592#issuecomment-5672214727",
+      "comment_created_at": "2026-09-14T23:26:55Z",
+      "comment_updated_at": "2026-09-14T23:26:55Z",
+      "comment_body_sha256": "f54c6f77db3d8487b471c9816a224f9bb7a1a966fb26f7bf522d1dddd8121aa6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148592,
+      "author": "Navras98",
+      "author_id": 182986534,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — addressed the p3 (audit mode now follows the branch taken: sigusr1 vs schtasks-restart) and added real-behavior proof to the pr body (live cron service + sqlite store, sabotaged monitor write, terminal output)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T23:28:25.731Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hot-reload-cron-retry-no-restart",
+        "head_sha": "ea9dfbdbb499d6e8735d5f964776e7869bce3079",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
