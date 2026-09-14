@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T01:42:50.684Z",
+  "updated_at": "2026-09-14T01:43:06.161Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147324:5655892347:2026-09-13T20:25:17Z:re_review",
-      "comment_id": "5655892347",
-      "comment_version_key": "5655892347:2026-09-13T20:25:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147324#issuecomment-5655892347",
-      "comment_created_at": "2026-09-13T20:25:17Z",
-      "comment_updated_at": "2026-09-13T20:25:17Z",
-      "comment_body_sha256": "fd1d8b9062626e868e7bbae7a799777442f141ef529d8bb6d0cec470f9294b47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147324,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T20:26:17.858Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/freebsd-handoff-native-runtime",
-        "head_sha": "540d054cacd542b152284d4cd052ac8f2303a462",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146966:5652947898:2026-09-13T20:25:52Z:clawsweeper_needs_human",
       "comment_id": "5652947898",
@@ -33519,6 +33472,39 @@
         "kind": "pull_request",
         "branch": "fix/official-plugin-readonly-authority",
         "head_sha": "f56d285cc148ad958d595318d894f79e0584409c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146503:5648905766:2026-09-14T01:42:03Z:clawsweeper_auto_repair",
+      "comment_id": "5648905766",
+      "comment_version_key": "5648905766:2026-09-14T01:42:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146503#issuecomment-5648905766",
+      "comment_created_at": "2026-09-12T21:46:58Z",
+      "comment_updated_at": "2026-09-14T01:42:03Z",
+      "comment_body_sha256": "9ddd1c0cd5b3e0a33b8a08152914114a92aabc01ef009b2bbc2712ee1dfd8391",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146503,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=864c9e36dcd5ab23b3508303a97c5225d86c950c)",
+      "expected_head_sha": "864c9e36dcd5ab23b3508303a97c5225d86c950c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T01:43:06.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-heartbeat-response-tool",
+        "head_sha": "864c9e36dcd5ab23b3508303a97c5225d86c950c",
         "cluster_id": null,
         "job_path": null
       }
