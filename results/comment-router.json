@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:43:41.170Z",
+  "updated_at": "2026-09-14T20:43:53.947Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148121:5665812124:2026-09-14T14:45:01Z:re_review",
-      "comment_id": "5665812124",
-      "comment_version_key": "5665812124:2026-09-14T14:45:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5665812124",
-      "comment_created_at": "2026-09-14T14:45:01Z",
-      "comment_updated_at": "2026-09-14T14:45:01Z",
-      "comment_body_sha256": "6f780f96fbfc41f028419cb989c61bc74d20452ee9654e9f36014f256fde22c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148121,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — exact head 74d769d7bb0 fixes the current-head unused-export finding by keeping maturityinventorymember internal. focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and deadcode:exports pass locally. compatibility note: this remains an in-memory read-only projection, not a persisted or serialized data-model migration",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T14:51:03.150Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-provider-cohorts",
-        "head_sha": "73cdb1fd750a5e2fcd070267140fd0a05acd83af",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145074:5665839369:2026-09-14T14:46:55Z:re_review",
       "comment_id": "5665839369",
@@ -33658,6 +33611,39 @@
         "kind": "pull_request",
         "branch": "codex/kimi-device-auth",
         "head_sha": "3ce9642999dc9125ae5332887acd201646293cce",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148500:5670531179:2026-09-14T20:42:47Z:clawsweeper_auto_repair",
+      "comment_id": "5670531179",
+      "comment_version_key": "5670531179:2026-09-14T20:42:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148500#issuecomment-5670531179",
+      "comment_created_at": "2026-09-14T20:42:47Z",
+      "comment_updated_at": "2026-09-14T20:42:47Z",
+      "comment_body_sha256": "c5f43d0d241ba0d1cc3e3694d0e4e55eb33a3bbc00ff709ad71b1e603fa3d34a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148500,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=f127ff9ff757def8631b116864ea7868c37488ea)",
+      "expected_head_sha": "f127ff9ff757def8631b116864ea7868c37488ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T20:43:53.947Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/rewind-branch-channel-context",
+        "head_sha": "f127ff9ff757def8631b116864ea7868c37488ea",
         "cluster_id": null,
         "job_path": null
       }
