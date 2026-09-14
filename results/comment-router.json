@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T04:21:51.340Z",
+  "updated_at": "2026-09-14T04:21:59.886Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147519:5656875441:2026-09-14T00:09:08Z:clawsweeper_needs_human",
-      "comment_id": "5656875441",
-      "comment_version_key": "5656875441:2026-09-14T00:09:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147519#issuecomment-5656875441",
-      "comment_created_at": "2026-09-13T23:10:48Z",
-      "comment_updated_at": "2026-09-14T00:09:08Z",
-      "comment_body_sha256": "ac589240a98ca753af0cc089b05ec59e207f966c612092e5d443ee43b12e70c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147519,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Reserve Systems in the shared URL contract (P2)** - Adding /systems without adding systems to CONTROL_UI_RESERVED_ROUTE_SEGMENTS leaves /systems/0123456789ab eligible for catalog-chat routing and lets Gateway ca...; Review finding: [P2] Reserve Systems in the shared URL contract — ui/src/app-route-paths.ts:84 - [low] Redact the internal hostname from the after screenshot (sha=f92c8c2e910f028a93a031f911204c5e7eb04db7)",
-      "expected_head_sha": "f92c8c2e910f028a93a031f911204c5e7eb04db7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T00:16:36.391Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/system-sidebar-and-vnc-visualizer",
-        "head_sha": "f92c8c2e910f028a93a031f911204c5e7eb04db7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147538:5657023217:2026-09-14T00:08:36Z:clawsweeper_needs_human",
       "comment_id": "5657023217",
@@ -32962,6 +32929,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124467:5658960008:2026-09-14T04:21:02Z:re_review",
+      "comment_id": "5658960008",
+      "comment_version_key": "5658960008:2026-09-14T04:21:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5658960008",
+      "comment_created_at": "2026-09-14T04:21:02Z",
+      "comment_updated_at": "2026-09-14T04:21:02Z",
+      "comment_body_sha256": "bfe6a78d96a53e85a60b9107575f79240b5d7f0fd6b69cba5fa885048285598a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124467,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T04:21:58.030Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-structured-identity",
+        "head_sha": "9e0b625afe4ecfcbb1ec7f456c082b05daaf5c53",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
