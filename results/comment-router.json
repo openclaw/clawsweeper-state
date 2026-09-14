@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:24:46.140Z",
+  "updated_at": "2026-09-14T14:24:46.959Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147942:5661004847:2026-09-14T08:13:41Z:re_review",
-      "comment_id": "5661004847",
-      "comment_version_key": "5661004847:2026-09-14T08:13:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147942#issuecomment-5661004847",
-      "comment_created_at": "2026-09-14T08:13:41Z",
-      "comment_updated_at": "2026-09-14T08:13:41Z",
-      "comment_body_sha256": "3d434db60382dee4d18d7e7162a2b2d19a40389ce7380f41d99adaa5c71a8245",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147942,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T08:40:43.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/thread-binding-policy-normalizers-20260914",
-        "head_sha": "ae9facd0bdb5ff10b1fa162be717f3773f0c386f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147929:5661082846:2026-09-14T08:20:06Z:re_review",
       "comment_id": "5661082846",
@@ -34880,6 +34833,39 @@
         "kind": "pull_request",
         "branch": "codex/test-shared-exit-listener-cleanup",
         "head_sha": "04b93c898b63398dc9132f5bc9f8ff99aba971c9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145043:5637157715:2026-09-14T14:10:03Z:clawsweeper_needs_human",
+      "comment_id": "5637157715",
+      "comment_version_key": "5637157715:2026-09-14T14:10:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145043#issuecomment-5637157715",
+      "comment_created_at": "2026-09-11T16:00:34Z",
+      "comment_updated_at": "2026-09-14T14:10:03Z",
+      "comment_body_sha256": "24a0dacfc0609acbf6573c24ff21cdeea9912c2decd14df26728a95a153535c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required plugin convergence can fail after the new early shared-state migration has committed. Returning to the previous binary may then be insufficient; recovery for that combined se... (sha=15b14c5da00fa2a1dcdba61c2271f2df46af8b1f)",
+      "expected_head_sha": "15b14c5da00fa2a1dcdba61c2271f2df46af8b1f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T14:24:46.959Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/doctor-stale-plugin-handoff-123326",
+        "head_sha": "15b14c5da00fa2a1dcdba61c2271f2df46af8b1f",
         "cluster_id": null,
         "job_path": null
       }
