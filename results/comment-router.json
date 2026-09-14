@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:54:12.778Z",
+  "updated_at": "2026-09-14T23:55:00.447Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148121:5668284959:2026-09-14T17:52:06Z:re_review",
-      "comment_id": "5668284959",
-      "comment_version_key": "5668284959:2026-09-14T17:52:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5668284959",
-      "comment_created_at": "2026-09-14T17:52:06Z",
-      "comment_updated_at": "2026-09-14T17:52:06Z",
-      "comment_body_sha256": "0e0fa6901b3f80d22a2127470fa62edfb02ed7d96a66b929821e437351ff9ac7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148121,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — exact head a7dcdad7525c7d23a68d26e476ac3dd49979ace1. the current review evidence explicitly confirms this is a read-only in-memory projection with no schema, persistence, migration, or upgrade boundary and says the prior compatibility requirement is withdrawn. please reconcile the stale blocked marker and before merge checkbox with that evidence",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T17:53:09.202Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-provider-cohorts",
-        "head_sha": "a7dcdad7525c7d23a68d26e476ac3dd49979ace1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147741:5658201183:2026-09-14T17:46:01Z:clawsweeper_needs_human",
       "comment_id": "5658201183",
@@ -33333,6 +33286,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148600:5672498582:2026-09-14T23:53:46Z:re_review",
+      "comment_id": "5672498582",
+      "comment_version_key": "5672498582:2026-09-14T23:53:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148600#issuecomment-5672498582",
+      "comment_created_at": "2026-09-14T23:53:46Z",
+      "comment_updated_at": "2026-09-14T23:53:46Z",
+      "comment_body_sha256": "1837312aeb00cbd0f497a7a1113ab1f87d5eaba5e1955560c6f9554dfcbcc0f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148600,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — please incorporate the executed before/after evidence and explicit risk resolution above",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T23:54:58.574Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-148568-engine-quarantine",
+        "head_sha": "a01a63fbf9663e8f9e93d55cf0732b52693ec16a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
