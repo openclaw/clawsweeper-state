@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T16:10:35.941Z",
+  "updated_at": "2026-09-14T16:10:38.170Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147908:5659232645:2026-09-14T09:30:12Z:clawsweeper_needs_human",
-      "comment_id": "5659232645",
-      "comment_version_key": "5659232645:2026-09-14T09:30:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147908#issuecomment-5659232645",
-      "comment_created_at": "2026-09-14T04:58:10Z",
-      "comment_updated_at": "2026-09-14T09:30:12Z",
-      "comment_body_sha256": "9d75286eb8fb238b03f5218de04794ad601d63a8d7ee68d5eb01de26e0431625",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147908,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent inspection of the raw qualification logs was blocked by the host network allowlist; assessment relies on the captured detailed results and previously accepted qualificatio... (sha=04543a61a0a8b3557c20aa078ce786d876f0f37d)",
-      "expected_head_sha": "04543a61a0a8b3557c20aa078ce786d876f0f37d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T09:34:15.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-disk-space-preflight",
-        "head_sha": "04543a61a0a8b3557c20aa078ce786d876f0f37d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147936:5659755936:2026-09-14T09:30:14Z:clawsweeper_needs_human",
       "comment_id": "5659755936",
@@ -35013,6 +34980,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148123:5666969290:2026-09-14T16:08:28Z:re_review",
+      "comment_id": "5666969290",
+      "comment_version_key": "5666969290:2026-09-14T16:08:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5666969290",
+      "comment_created_at": "2026-09-14T16:08:28Z",
+      "comment_updated_at": "2026-09-14T16:08:28Z",
+      "comment_body_sha256": "6c6c3fdf150402c091640963c04dad27d2c9bbf25948c85636faa2bd6f0d445e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148123,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head bcdfd85e7a1f4649d37818cc255bff423967b3b1. the argument-forwarding fix remains included; focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T16:10:36.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-inventory-warnings",
+        "head_sha": "bcdfd85e7a1f4649d37818cc255bff423967b3b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
