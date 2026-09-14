@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:18:45.199Z",
+  "updated_at": "2026-09-14T02:19:10.512Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146726:5656145549:2026-09-13T21:06:58Z:re_review",
-      "comment_id": "5656145549",
-      "comment_version_key": "5656145549:2026-09-13T21:06:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146726#issuecomment-5656145549",
-      "comment_created_at": "2026-09-13T21:06:58Z",
-      "comment_updated_at": "2026-09-13T21:06:58Z",
-      "comment_body_sha256": "012da77daece77df424d02464918f68955666a8edea1cb06076f5d578b59ece1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146726,
-      "author": "RamiNoodle733",
-      "author_id": 117773986,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T21:13:54.923Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "knightwatch-anthropic-setup-token-usage",
-        "head_sha": "4776b34a1366098d2a5197dd39e2423a71d61086",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146726:5651065951:2026-09-13T21:12:57Z:clawsweeper_auto_repair",
       "comment_id": "5651065951",
@@ -33639,6 +33592,39 @@
         "kind": "pull_request",
         "branch": "test/retire-plugin-stage-e2e-20260914",
         "head_sha": "a584cf068139c45f89f8888c886772683deb3999",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147659:5657798278:2026-09-14T02:17:39Z:clawsweeper_needs_human",
+      "comment_id": "5657798278",
+      "comment_version_key": "5657798278:2026-09-14T02:17:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147659#issuecomment-5657798278",
+      "comment_created_at": "2026-09-14T01:32:16Z",
+      "comment_updated_at": "2026-09-14T02:17:39Z",
+      "comment_body_sha256": "274ba544eef4f4de7266b806b4b71a61b7cc2cd9723dff092130768a8fc7514c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147659,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Opting Slack downloads into the lifetime fence makes bundled artifact fallbacks without a live registration fail closed; supported installations and upgrades still need package-level... (sha=48f7384bb9aecde259a3edd8ff0140944a04c712)",
+      "expected_head_sha": "48f7384bb9aecde259a3edd8ff0140944a04c712",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T02:19:10.512Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-download-reads",
+        "head_sha": "48f7384bb9aecde259a3edd8ff0140944a04c712",
         "cluster_id": null,
         "job_path": null
       }
