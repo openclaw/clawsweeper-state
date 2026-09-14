@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T13:32:28.529Z",
+  "updated_at": "2026-09-14T13:33:13.363Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148048:5660563418:2026-09-14T08:03:32Z:clawsweeper_needs_human",
-      "comment_id": "5660563418",
-      "comment_version_key": "5660563418:2026-09-14T08:03:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148048#issuecomment-5660563418",
-      "comment_created_at": "2026-09-14T07:32:01Z",
-      "comment_updated_at": "2026-09-14T08:03:32Z",
-      "comment_body_sha256": "36b9d6be52c57d251b9bd45a6cf578dc8a36bea2ddd1ca057f56579cf27da9e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148048,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub currently reports conflicts; retaining this cleanup would require reviewing the resolved patch against main. (sha=6141bd2078283f2cde87c8999bd119e86e09d16c)",
-      "expected_head_sha": "6141bd2078283f2cde87c8999bd119e86e09d16c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:08:38.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-ui-lint-baseline-121668",
-        "head_sha": "6141bd2078283f2cde87c8999bd119e86e09d16c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148070:5660883819:2026-09-14T08:03:35Z:clawsweeper_needs_human",
       "comment_id": "5660883819",
@@ -34883,6 +34850,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148121:5664767645:2026-09-14T13:30:32Z:re_review",
+      "comment_id": "5664767645",
+      "comment_version_key": "5664767645:2026-09-14T13:30:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5664767645",
+      "comment_created_at": "2026-09-14T13:30:32Z",
+      "comment_updated_at": "2026-09-14T13:30:32Z",
+      "comment_body_sha256": "c3c89ef192cbfcbc4172401f7769020249208e595849363771fbc87159bd6889",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148121,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — exact remote head 5f7b1dacc7e3 after the base repair landed and the stack was rebased. focused validation passes. compatibility note: this remains an in-memory read-only projection, not a persisted or serialized data-model migration",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T13:33:11.493Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-provider-cohorts",
+        "head_sha": "21b10b490c687ee3c5b7605721f00863faf44d43",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
