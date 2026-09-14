@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T09:20:52.537Z",
+  "updated_at": "2026-09-14T09:20:54.912Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147908:5659232645:2026-09-14T04:58:10Z:clawsweeper_auto_repair",
-      "comment_id": "5659232645",
-      "comment_version_key": "5659232645:2026-09-14T04:58:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147908#issuecomment-5659232645",
-      "comment_created_at": "2026-09-14T04:58:10Z",
-      "comment_updated_at": "2026-09-14T04:58:10Z",
-      "comment_body_sha256": "a8c850d782170445a1114c4f7661e2be180617c65d6a71d4b13f42d96d2bcb1f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147908,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c23697833dfa1f6511cc7503e5f9ca5a1d549569)",
-      "expected_head_sha": "c23697833dfa1f6511cc7503e5f9ca5a1d549569",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T05:02:36.420Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-disk-space-preflight",
-        "head_sha": "c23697833dfa1f6511cc7503e5f9ca5a1d549569",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147909:5659242211:2026-09-14T04:59:39Z:clawsweeper_needs_human",
       "comment_id": "5659242211",
@@ -34280,6 +34247,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146913:5661757269:2026-09-14T09:19:09Z:re_review",
+      "comment_id": "5661757269",
+      "comment_version_key": "5661757269:2026-09-14T09:19:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146913#issuecomment-5661757269",
+      "comment_created_at": "2026-09-14T09:19:09Z",
+      "comment_updated_at": "2026-09-14T09:19:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146913,
+      "author": "ycmjbot-bot",
+      "author_id": 257293033,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T09:20:52.867Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-monitor-ignores-task-signal",
+        "head_sha": "d270b946be0a7f266818e19384b0861c46a2cfa1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
