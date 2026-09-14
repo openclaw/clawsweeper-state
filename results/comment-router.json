@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:14:42.938Z",
+  "updated_at": "2026-09-14T20:18:39.326Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148123:5665503157:2026-09-14T14:22:51Z:re_review",
-      "comment_id": "5665503157",
-      "comment_version_key": "5665503157:2026-09-14T14:22:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5665503157",
-      "comment_created_at": "2026-09-14T14:22:51Z",
-      "comment_updated_at": "2026-09-14T14:22:51Z",
-      "comment_body_sha256": "bbc907eb49fa8252e527674b9d960a7df5ac42dc12e1c54237cd3351f1183639",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148123,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head b1fccce15ad. the argument-forwarding fix remains included; focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T14:23:53.300Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-inventory-warnings",
-        "head_sha": "b1fccce15ad2f45803f652f92b030032974a22f7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142470:5591729737:2026-09-08T20:54:24Z:re_review",
       "comment_id": "5591729737",
@@ -33736,6 +33689,39 @@
         "kind": "pull_request",
         "branch": "dependabot/pip/scripts/security/pip-4ea199e985",
         "head_sha": "b4b06ef3da8fb0d5e0bfb627408ffe43c84ad112",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:368:5669818462:2026-09-14T20:17:29Z:clawsweeper_needs_human",
+      "comment_id": "5669818462",
+      "comment_version_key": "5669818462:2026-09-14T20:17:29Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/368#issuecomment-5669818462",
+      "comment_created_at": "2026-09-14T19:45:39Z",
+      "comment_updated_at": "2026-09-14T20:17:29Z",
+      "comment_body_sha256": "97870f8d6084ebddb07aa54c8619fd47068ee9060fa9f656c2f394eb45865ae5",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 368,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing Windows installations whose executable lacks either bridge export can now fail native descriptor operations with ENOTSUP, including auto-mode operations without a guarded fal... (sha=1943799999fd533ff9c68f16efd4c8b653b7b20a)",
+      "expected_head_sha": "1943799999fd533ff9c68f16efd4c8b653b7b20a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T20:18:39.326Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-node-fd-bridge-20260914",
+        "head_sha": "1943799999fd533ff9c68f16efd4c8b653b7b20a",
         "cluster_id": null,
         "job_path": null
       }
