@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T12:06:00.186Z",
+  "updated_at": "2026-09-14T12:06:07.708Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121668:5243979530:2026-09-14T07:12:48Z:clawsweeper_needs_human",
-      "comment_id": "5243979530",
-      "comment_version_key": "5243979530:2026-09-14T07:12:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121668#issuecomment-5243979530",
-      "comment_created_at": "2026-08-10T17:58:38Z",
-      "comment_updated_at": "2026-09-14T07:12:48Z",
-      "comment_body_sha256": "92f043db724f3f78169a65c629950a971b682ac03b30f3946b54db2f64057f84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121668,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Real native captures and the source-attributed Codex 0.154.0 installed transition provide useful evidence, but do not qualify the fina... (sha=ef191aa7f5d87bc05ac22319e83ca17cdeb52ec7)",
-      "expected_head_sha": "ef191aa7f5d87bc05ac22319e83ca17cdeb52ec7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T07:14:05.857Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/codex-native-hook-relay-kill-switch",
-        "head_sha": "ef191aa7f5d87bc05ac22319e83ca17cdeb52ec7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121668:5246683495:2026-08-10T22:20:08Z:re_review",
       "comment_id": "5246683495",
@@ -34946,6 +34913,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-channel-cohorts",
         "head_sha": "4d651a015f6aaa3a17ae54f9150370c7e7128060",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148121:5663600603:2026-09-14T12:05:04Z:re_review",
+      "comment_id": "5663600603",
+      "comment_version_key": "5663600603:2026-09-14T12:05:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5663600603",
+      "comment_created_at": "2026-09-14T12:05:04Z",
+      "comment_updated_at": "2026-09-14T12:05:04Z",
+      "comment_body_sha256": "2f057d3010d412557f53628cd658e370e7830fcaa66984e0fd0c8614028ecce1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148121,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head 6c9d4f4d911. focused validation passes. compatibility note: this remains an in-memory read-only projection, not a persisted or serialized data-model migration",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T12:06:05.429Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-provider-cohorts",
+        "head_sha": "6c9d4f4d9116d3af9b448a6858866df89325c44f",
         "cluster_id": null,
         "job_path": null
       },
