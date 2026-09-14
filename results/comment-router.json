@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T15:36:53.312Z",
+  "updated_at": "2026-09-14T15:37:36.042Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147970:5659739722:2026-09-14T09:15:44Z:clawsweeper_needs_human",
-      "comment_id": "5659739722",
-      "comment_version_key": "5659739722:2026-09-14T09:15:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147970#issuecomment-5659739722",
-      "comment_created_at": "2026-09-14T06:07:41Z",
-      "comment_updated_at": "2026-09-14T09:15:44Z",
-      "comment_body_sha256": "84d89bee1a407c870c08b927902b71ee1d87cd14d283a95c53908af762e792cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147970,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=075f2b3d2612c841d378cfae23692ba1c630d01e)",
-      "expected_head_sha": "075f2b3d2612c841d378cfae23692ba1c630d01e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T09:19:19.408Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-runtime-config-reentry",
-        "head_sha": "075f2b3d2612c841d378cfae23692ba1c630d01e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147941:5659547988:2026-09-14T09:15:36Z:clawsweeper_needs_human",
       "comment_id": "5659547988",
@@ -35035,6 +35002,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148123:5666515019:2026-09-14T15:35:22Z:re_review",
+      "comment_id": "5666515019",
+      "comment_version_key": "5666515019:2026-09-14T15:35:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5666515019",
+      "comment_created_at": "2026-09-14T15:35:22Z",
+      "comment_updated_at": "2026-09-14T15:35:22Z",
+      "comment_body_sha256": "433f6a0a7fe9fcddeb7153f6aa24850397d8ee913c3616271829d0018697d5a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148123,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head aadf7d29269 onto repaired #148122; the argument-forwarding fix remains included. focused stack validation is green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T15:37:34.335Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-inventory-warnings",
+        "head_sha": "aadf7d29269dd58c83b3f950622aa4ad5ac9aa45",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
