@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-14T10:46:58.988Z",
+  "updated_at": "2026-09-14T10:47:35.856Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:128872:5514859878:2026-09-02T19:05:25Z:re_review",
-      "comment_id": "5514859878",
-      "comment_version_key": "5514859878:2026-09-02T19:05:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/128872#issuecomment-5514859878",
-      "comment_created_at": "2026-09-02T19:05:25Z",
-      "comment_updated_at": "2026-09-02T19:05:25Z",
-      "comment_body_sha256": "c9836ae4792cc94a94300f71c3c7f64a92feef25b5b3a4cea9a92dfbc247602b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 128872,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T06:05:34.532Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:128872:5515201266:2026-09-02T19:31:54Z:re_review",
       "comment_id": "5515201266",
@@ -34541,6 +34514,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148167:5662749861:2026-09-14T10:46:36Z:clawsweeper_needs_human",
+      "comment_id": "5662749861",
+      "comment_version_key": "5662749861:2026-09-14T10:46:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148167#issuecomment-5662749861",
+      "comment_created_at": "2026-09-14T10:46:36Z",
+      "comment_updated_at": "2026-09-14T10:46:36Z",
+      "comment_body_sha256": "b2c1482f11751292ccdd523e6d62ae70788237e3bb7e4bfb794e5b0eafb0474b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148167,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing commands, integrations, or saved automation explicitly selecting an unlisted configured primary can now receive a model-not-allowed error. Those users must choose Default whe... (sha=a6a9ffbe0ee55d394fff8549c3c8bcc87ff93ef1)",
+      "expected_head_sha": "a6a9ffbe0ee55d394fff8549c3c8bcc87ff93ef1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T10:47:35.856Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/model-choice-policy",
+        "head_sha": "a6a9ffbe0ee55d394fff8549c3c8bcc87ff93ef1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
