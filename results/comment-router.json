@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T13:07:40.839Z",
+  "updated_at": "2026-09-14T13:08:03.565Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148041:5660728128:2026-09-14T07:48:28Z:re_review",
-      "comment_id": "5660728128",
-      "comment_version_key": "5660728128:2026-09-14T07:48:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148041#issuecomment-5660728128",
-      "comment_created_at": "2026-09-14T07:48:28Z",
-      "comment_updated_at": "2026-09-14T07:48:28Z",
-      "comment_body_sha256": "5b002ed4b714ce5501d10ee6bc301104d42627195c8b2ccc9508a83fa1144798",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148041,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T08:00:22.844Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-skill-risk-fallback",
-        "head_sha": "75ac5eb6ed5799c13ed8cb0edd4d3070c8b79d4a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148004:5660775076:2026-09-14T07:53:06Z:re_review",
       "comment_id": "5660775076",
@@ -34852,6 +34805,39 @@
         "kind": "pull_request",
         "branch": "fix/1411-pending-new-session",
         "head_sha": "c5d9d2a0dd7a05d51a67947979dd6016c91a3a82",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147889:5659107481:2026-09-14T12:59:37Z:clawsweeper_needs_human",
+      "comment_id": "5659107481",
+      "comment_version_key": "5659107481:2026-09-14T12:59:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147889#issuecomment-5659107481",
+      "comment_created_at": "2026-09-14T04:39:58Z",
+      "comment_updated_at": "2026-09-14T12:59:37Z",
+      "comment_body_sha256": "8c8eb78d137a302d878df54efe34a2f0b03f101dfbc19d164008616447cd2770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Docker assertion has competing branch and current-main edits; the final integrated result has not been reviewed. (sha=2d84f1583ec5675520fef8042818168aa8760af1)",
+      "expected_head_sha": "2d84f1583ec5675520fef8042818168aa8760af1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T13:08:03.565Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sdk-api-declaration-pool-20260914",
+        "head_sha": "2d84f1583ec5675520fef8042818168aa8760af1",
         "cluster_id": null,
         "job_path": null
       }
