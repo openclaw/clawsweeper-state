@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T06:48:47.302Z",
+  "updated_at": "2026-09-14T06:48:52.609Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147751:5658355301:2026-09-14T02:56:47Z:re_review",
-      "comment_id": "5658355301",
-      "comment_version_key": "5658355301:2026-09-14T02:56:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147751#issuecomment-5658355301",
-      "comment_created_at": "2026-09-14T02:56:47Z",
-      "comment_updated_at": "2026-09-14T02:56:47Z",
-      "comment_body_sha256": "dd66f2d1c1a5abf83d9d35c715e0f890cbd94459aa2222392ff1947f65636392",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147751,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 0eaa10238fb0832a7d6ea78b31128fd09355ef44",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T02:57:02.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/memory-facade-contextual-types-20260914",
-        "head_sha": "0eaa10238fb0832a7d6ea78b31128fd09355ef44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147751:5658268125:2026-09-14T02:43:08Z:re_review",
       "comment_id": "5658268125",
@@ -32969,6 +32922,39 @@
       "status": "skipped",
       "processed_at": "2026-09-14T06:48:47.302Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147873:5658993921:2026-09-14T06:47:57Z:clawsweeper_needs_human",
+      "comment_id": "5658993921",
+      "comment_version_key": "5658993921:2026-09-14T06:47:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147873#issuecomment-5658993921",
+      "comment_created_at": "2026-09-14T04:25:25Z",
+      "comment_updated_at": "2026-09-14T06:47:57Z",
+      "comment_body_sha256": "6ea26c5a629a508031349de3b30ce8398ebece7ed5d4779d44b326040f250d5a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147873,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied evidence does not confirm screenshot delivery and rendering in the originating chat, which remains a repository landing requirement. (sha=18b50c4e33935b7db5788ffe4fc98a9f05606c1d)",
+      "expected_head_sha": "18b50c4e33935b7db5788ffe4fc98a9f05606c1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T06:48:52.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-side-chat-retry-conversation-loss",
+        "head_sha": "18b50c4e33935b7db5788ffe4fc98a9f05606c1d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
