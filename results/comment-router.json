@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T07:46:36.003Z",
+  "updated_at": "2026-09-14T07:47:44.564Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147813:5658707495:2026-09-14T04:01:04Z:clawsweeper_needs_human",
-      "comment_id": "5658707495",
-      "comment_version_key": "5658707495:2026-09-14T04:01:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147813#issuecomment-5658707495",
-      "comment_created_at": "2026-09-14T03:48:36Z",
-      "comment_updated_at": "2026-09-14T04:01:04Z",
-      "comment_body_sha256": "f24f724b1bd1dfa545b602a8566f56fd13f2aadf1f4f8e48ec30bf0b3ad92c98",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147813,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=383d0e8786bf3f4f58e15e9ff6a45582a8a3e1f1)",
-      "expected_head_sha": "383d0e8786bf3f4f58e15e9ff6a45582a8a3e1f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T04:10:17.771Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-inline-tool-dispatch-fixtures",
-        "head_sha": "383d0e8786bf3f4f58e15e9ff6a45582a8a3e1f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147731:5658186132:2026-09-14T04:01:16Z:clawsweeper_needs_human",
       "comment_id": "5658186132",
@@ -33028,6 +32995,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148048:5660691968:2026-09-14T07:44:55Z:re_review",
+      "comment_id": "5660691968",
+      "comment_version_key": "5660691968:2026-09-14T07:44:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148048#issuecomment-5660691968",
+      "comment_created_at": "2026-09-14T07:44:55Z",
+      "comment_updated_at": "2026-09-14T07:44:55Z",
+      "comment_body_sha256": "e5ddef113b42b960af8536ae766e15e7c394728680d6da7cbdc5e3fac1e22443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148048,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T07:47:42.130Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-ui-lint-baseline-121668",
+        "head_sha": "6141bd2078283f2cde87c8999bd119e86e09d16c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
