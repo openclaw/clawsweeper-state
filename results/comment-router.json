@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:15:41.311Z",
+  "updated_at": "2026-09-14T05:16:15.478Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147640:5657600801:2026-09-14T01:02:44Z:re_review",
-      "comment_id": "5657600801",
-      "comment_version_key": "5657600801:2026-09-14T01:02:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147640#issuecomment-5657600801",
-      "comment_created_at": "2026-09-14T01:02:44Z",
-      "comment_updated_at": "2026-09-14T01:02:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147640,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T01:11:31.902Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/wave17-qa-runtime-matrices",
-        "head_sha": "005e504beb91f4d294ed85ef7f4d0937f1621d11",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147640:5657655158:2026-09-14T01:10:40Z:clawsweeper_needs_human",
       "comment_id": "5657655158",
@@ -33261,6 +33214,39 @@
         "kind": "pull_request",
         "branch": "bugloop/offline-workspace-delete-archive-recovery",
         "head_sha": "f93765d356b0ba08040d0f3eafd7dad1c9896e0d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147307:5655598607:2026-09-14T05:08:48Z:clawsweeper_needs_human",
+      "comment_id": "5655598607",
+      "comment_version_key": "5655598607:2026-09-14T05:08:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147307#issuecomment-5655598607",
+      "comment_created_at": "2026-09-13T19:35:17Z",
+      "comment_updated_at": "2026-09-14T05:08:48Z",
+      "comment_body_sha256": "7f7d13826eead37386541702fdcbe1d26d77f9cb6f194362eadd4c487fae6155",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147307,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing HTTPS profiles now depend on an additional admission request before connecting; installed-version upgrade and live WARP compatibility remain unproved, so an existing setup co... (sha=0c5c7673a8445245e1590ed39417f70d39b5d909)",
+      "expected_head_sha": "0c5c7673a8445245e1590ed39417f70d39b5d909",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:16:15.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/android-cloudflare-access-runtime-20260913",
+        "head_sha": "0c5c7673a8445245e1590ed39417f70d39b5d909",
         "cluster_id": null,
         "job_path": null
       }
