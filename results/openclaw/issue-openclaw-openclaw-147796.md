@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147796"
-mode: "autonomous"
-run_id: "34802915701"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34802915701"
+mode: "plan"
+run_id: "34808143220"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34808143220"
 head_sha: "60e9eac3f1cce2d8a4f886c9ebc5f4a9092429dc"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-14T04:44:20.704Z"
-canonical: "https://github.com/openclaw/openclaw/issues/147796"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/147796"
+published_at: "2026-09-14T05:12:06.541Z"
+canonical: "#147796"
+canonical_issue: "#147796"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34802915701](https://github.com/openclaw/clawsweeper/actions/runs/34802915701)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34808143220](https://github.com/openclaw/clawsweeper/actions/runs/34808143220)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/147796
+Canonical: #147796
 
 ## Summary
 
-Confirmed the remaining heading localization defect in source at preflight main 79a074808205d7b9b6cc9ade3546dbc862d4e1fa. Prepared a narrow fix plan. Implementation, rendered regression, and screenshot delivery are blocked on this read-only host with missing dependencies. No files or GitHub state changed.
+Plan a narrow localization repair for the remaining SECURITY heading. No files or GitHub state changed. Latest-main rendered reproduction, tests, review, and screenshot delivery remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed the remaining heading localization defect in source at preflight main 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147796 | fix_needed | planned | canonical | The heading remains a presentation-only bug. The command metadata work is already present; no security-boundary change or product decision is needed. |
-| #137190 | keep_closed | skipped | related | Historical context only; no closure action. |
-| #137192 | keep_closed | skipped | related | Preserve the merged contribution by @husodrn46; do not replace or recreate it. |
-| cluster:issue-openclaw-openclaw-147796 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate; execution is blocked locally by host restrictions, not unresolved maintainer judgment. |
+| #147796 | fix_needed | planned | canonical | A presentation-only follow-up is appropriate. The heading's name does not indicate a security report or boundary change. Reproduce on latest main before implementing; closure and merge are prohibited. |
+| #137190 | keep_closed | skipped | related | Historical context for the completed field-localization repair. |
+| #137192 | keep_closed | skipped | related | Preserve the landed implementation and contributor credit; this is not a replacement PR. |
 
 ## Needs Human
 
