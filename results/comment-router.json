@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T16:07:30.114Z",
+  "updated_at": "2026-09-14T16:07:43.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146503:5661747320:2026-09-14T09:18:28Z:re_review",
-      "comment_id": "5661747320",
-      "comment_version_key": "5661747320:2026-09-14T09:18:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146503#issuecomment-5661747320",
-      "comment_created_at": "2026-09-14T09:18:28Z",
-      "comment_updated_at": "2026-09-14T09:18:28Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146503,
-      "author": "ycmjbot-bot",
-      "author_id": 257293033,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T09:33:51.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-heartbeat-response-tool",
-        "head_sha": "4c5aaccd2ec61a69d30e0ce8437530e3c064d62a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148032:5661778362:2026-09-14T09:20:39Z:re_review",
       "comment_id": "5661778362",
@@ -35010,6 +34963,39 @@
         "kind": "pull_request",
         "branch": "codex/zip-read-cleanup",
         "head_sha": "0b4f4764fce92e7bd9bd79cc3777d95edd53ca2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147889:5659107481:2026-09-14T15:46:03Z:clawsweeper_needs_human",
+      "comment_id": "5659107481",
+      "comment_version_key": "5659107481:2026-09-14T15:46:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147889#issuecomment-5659107481",
+      "comment_created_at": "2026-09-14T04:39:58Z",
+      "comment_updated_at": "2026-09-14T15:46:03Z",
+      "comment_body_sha256": "cf49018cd58bb01491c128e34cfa8a425aa515adcb9695122c44ce6657a8d5c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147889,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reduction in peak heap usage and the threshold for avoiding exhaustion have not been measured; output-preservation evidence does not establish either. (sha=b81a65c3e73b885c999eba4a9bc41b6bacadd056)",
+      "expected_head_sha": "b81a65c3e73b885c999eba4a9bc41b6bacadd056",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T16:07:43.666Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sdk-api-declaration-pool-20260914",
+        "head_sha": "b81a65c3e73b885c999eba4a9bc41b6bacadd056",
         "cluster_id": null,
         "job_path": null
       }
