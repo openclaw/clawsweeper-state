@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T12:46:13.465Z",
+  "updated_at": "2026-09-14T12:46:16.407Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148018:5660177850:2026-09-14T07:39:31Z:clawsweeper_needs_human",
-      "comment_id": "5660177850",
-      "comment_version_key": "5660177850:2026-09-14T07:39:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148018#issuecomment-5660177850",
-      "comment_created_at": "2026-09-14T06:54:48Z",
-      "comment_updated_at": "2026-09-14T07:39:31Z",
-      "comment_body_sha256": "72e3148a162f7e47c1b0d11d79b03b1ae8937d845d91c8efddb1b7a20a9326bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148018,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Users with unreadable or unavailable localStorage will lose automatic update diagnosis even when tab storage works; manual Ask remains available, but acceptance of this fallback and t... (sha=b9ad909d45f954d5e3344e72eec06117733de5ed)",
-      "expected_head_sha": "b9ad909d45f954d5e3344e72eec06117733de5ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T07:41:28.203Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-triage-run-browser-opt-out-143900",
-        "head_sha": "b9ad909d45f954d5e3344e72eec06117733de5ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147987:5659897766:2026-09-14T07:27:37Z:clawsweeper_needs_human",
       "comment_id": "5659897766",
@@ -34917,6 +34884,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148120:5664143110:2026-09-14T12:44:24Z:re_review",
+      "comment_id": "5664143110",
+      "comment_version_key": "5664143110:2026-09-14T12:44:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148120#issuecomment-5664143110",
+      "comment_created_at": "2026-09-14T12:44:24Z",
+      "comment_updated_at": "2026-09-14T12:44:24Z",
+      "comment_body_sha256": "89d35211c7c2e6bd4c6b053ecca9bd04cd0ef17b2d05e0db29f47f987d7d684d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148120,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head ba4defabc35014bb8431633f57a100a880c7edcb onto repaired main. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and full docs validation pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T12:46:13.967Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-channel-cohorts",
+        "head_sha": "ba4defabc35014bb8431633f57a100a880c7edcb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
