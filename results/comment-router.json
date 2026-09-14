@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-14T08:13:38.140Z",
+  "updated_at": "2026-09-14T08:13:52.533Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5324345481:2026-08-18T06:13:27Z:re_review",
-      "comment_id": "5324345481",
-      "comment_version_key": "5324345481:2026-08-18T06:13:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5324345481",
-      "comment_created_at": "2026-08-18T06:13:27Z",
-      "comment_updated_at": "2026-08-18T06:13:27Z",
-      "comment_body_sha256": "c98a7663019675246938efd2a24ab4d2431387273ded45b66cc6cf51ba5ecfe3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T04:12:19.074Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5324390082:2026-08-18T06:18:57Z:re_review",
       "comment_id": "5324390082",
@@ -33804,6 +33777,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148032:5660417023:2026-09-14T08:11:57Z:clawsweeper_needs_human",
+      "comment_id": "5660417023",
+      "comment_version_key": "5660417023:2026-09-14T08:11:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148032#issuecomment-5660417023",
+      "comment_created_at": "2026-09-14T07:17:25Z",
+      "comment_updated_at": "2026-09-14T08:11:57Z",
+      "comment_body_sha256": "dc50978c524d50ee7bd245bb20ce35ec4b2740e7e3527fe74e0a4967a0fbeada",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148032,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported fixture speedup predates the shared-reader changes merged into this head; performance against the updated base and production latency remain unmeasured. (sha=dd8beec7efcc522fcc064188593813df6d2c54b1)",
+      "expected_head_sha": "dd8beec7efcc522fcc064188593813df6d2c54b1",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T08:13:52.533Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/main-recovery-cpu-selection-20260914",
+        "head_sha": "dd8beec7efcc522fcc064188593813df6d2c54b1",
+        "cluster_id": "automerge-openclaw-openclaw-148032",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148032.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
