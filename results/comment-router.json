@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T04:16:27.775Z",
+  "updated_at": "2026-09-14T04:16:54.495Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146230:5657249146:2026-09-14T00:08:15Z:re_review",
-      "comment_id": "5657249146",
-      "comment_version_key": "5657249146:2026-09-14T00:08:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146230#issuecomment-5657249146",
-      "comment_created_at": "2026-09-14T00:08:15Z",
-      "comment_updated_at": "2026-09-14T00:08:15Z",
-      "comment_body_sha256": "fa0bb8b160bc8d76e628957db545bf9fa3c67fbbaa7e4aeac419ee052ffd1d27",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146230,
-      "author": "RamiNoodle733",
-      "author_id": 117773986,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T00:09:15.722Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/remote-ssh-sandbox-forward",
-        "head_sha": "0b6115fe3223f1763d7c1df4a7ba25ffd9c28a5d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145789:5657251620:2026-09-14T00:08:36Z:re_review",
       "comment_id": "5657251620",
@@ -33025,6 +32978,39 @@
         "kind": "pull_request",
         "branch": "fix/gateway-timeout-fixture-ownership-20260914",
         "head_sha": "7835e6f4ee345a0fb9619adc7d7afbdf1ea7e153",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147850:5658920111:2026-09-14T04:15:53Z:clawsweeper_needs_human",
+      "comment_id": "5658920111",
+      "comment_version_key": "5658920111:2026-09-14T04:15:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147850#issuecomment-5658920111",
+      "comment_created_at": "2026-09-14T04:15:53Z",
+      "comment_updated_at": "2026-09-14T04:15:53Z",
+      "comment_body_sha256": "157d3810a523098b4e85aeb8c6de7be367afae97fca45df8ae95812a6039f849",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147850,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Rendered translations and tooltip layout have not been visually verified in the available evidence. (sha=4bb66afe0d4d02cd5ae3b5f4e183a1829ca66eb9)",
+      "expected_head_sha": "4bb66afe0d4d02cd5ae3b5f4e183a1829ca66eb9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T04:16:54.495Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "automation/control-ui-locale-refresh",
+        "head_sha": "4bb66afe0d4d02cd5ae3b5f4e183a1829ca66eb9",
         "cluster_id": null,
         "job_path": null
       }
