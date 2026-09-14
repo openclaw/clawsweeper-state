@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T15:31:23.663Z",
+  "updated_at": "2026-09-14T15:31:53.978Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148028:5660406292:2026-09-14T09:06:01Z:clawsweeper_needs_human",
-      "comment_id": "5660406292",
-      "comment_version_key": "5660406292:2026-09-14T09:06:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148028#issuecomment-5660406292",
-      "comment_created_at": "2026-09-14T07:16:30Z",
-      "comment_updated_at": "2026-09-14T09:06:01Z",
-      "comment_body_sha256": "45651ccd40d5aa5d23770b6891c53979faf94f328191315bc3aac2d15d30a652",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148028,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=7456fb4ecefe2764984bf98046eea9165b75ba2b)",
-      "expected_head_sha": "7456fb4ecefe2764984bf98046eea9165b75ba2b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T09:07:17.434Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/doctor-preflight-worker-scope",
-        "head_sha": "7456fb4ecefe2764984bf98046eea9165b75ba2b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148050:5660585232:2026-09-14T09:02:05Z:clawsweeper_needs_human",
       "comment_id": "5660585232",
@@ -34965,6 +34932,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148121:5666360773:2026-09-14T15:24:14Z:re_review",
+      "comment_id": "5666360773",
+      "comment_version_key": "5666360773:2026-09-14T15:24:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5666360773",
+      "comment_created_at": "2026-09-14T15:24:14Z",
+      "comment_updated_at": "2026-09-14T15:24:14Z",
+      "comment_body_sha256": "3a1d6f08ba63e9ed45bfa5d030b466e1c4162ee970dfb93ab5591c9ed87776a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148121,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head f6bb74c9a08 onto #148120. compatibility note: the helper remains an in-memory read-only projection, not a persisted or serialized data-model migration",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T15:31:51.796Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-provider-cohorts",
+        "head_sha": "f6bb74c9a082beea358768278fa3460955558970",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
