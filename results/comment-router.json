@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:34:33.727Z",
+  "updated_at": "2026-09-14T02:34:47.736Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143587:5611566193:2026-09-13T21:27:28Z:clawsweeper_needs_human",
-      "comment_id": "5611566193",
-      "comment_version_key": "5611566193:2026-09-13T21:27:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143587#issuecomment-5611566193",
-      "comment_created_at": "2026-09-10T02:04:58Z",
-      "comment_updated_at": "2026-09-13T21:27:28Z",
-      "comment_body_sha256": "e5778c0397890a89b0b7861cd43b5fb816818639eaa5a39ca61b5b5baec6c3d6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143587,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Changing the selected profile does not cancel already accepted input: that input may continue executing while its original host and session authority remain valid. Explicit owner acce... (sha=845147cc710c49e536f3c3d88eb9c5727b0d8998)",
-      "expected_head_sha": "845147cc710c49e536f3c3d88eb9c5727b0d8998",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T21:34:50.248Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/gateway-profile-binding-20260909",
-        "head_sha": "845147cc710c49e536f3c3d88eb9c5727b0d8998",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147445:5656298985:2026-09-13T21:34:02Z:re_review",
       "comment_id": "5656298985",
@@ -33576,6 +33543,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147727:5658205321:2026-09-14T02:33:32Z:re_review",
+      "comment_id": "5658205321",
+      "comment_version_key": "5658205321:2026-09-14T02:33:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147727#issuecomment-5658205321",
+      "comment_created_at": "2026-09-14T02:33:32Z",
+      "comment_updated_at": "2026-09-14T02:33:32Z",
+      "comment_body_sha256": "2d89da55c79edffe41ba7f32c77f208623cb7026f82ed327ffe7b29f888401a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147727,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T02:34:45.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/session-history-schema-imports",
+        "head_sha": "1d56ec7eb265551c712f506d5ffe076361228ee8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
