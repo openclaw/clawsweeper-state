@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:05:58.907Z",
+  "updated_at": "2026-09-14T20:06:17.545Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148120:5665296087:2026-09-14T14:08:34Z:re_review",
-      "comment_id": "5665296087",
-      "comment_version_key": "5665296087:2026-09-14T14:08:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148120#issuecomment-5665296087",
-      "comment_created_at": "2026-09-14T14:08:34Z",
-      "comment_updated_at": "2026-09-14T14:08:34Z",
-      "comment_body_sha256": "015b4435031857c02d900248e9bce305c3af2e131a8187da2f01038ad8a9df3e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148120,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 1f5721a89c85 onto current main after #148129. focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T14:09:37.572Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-channel-cohorts",
-        "head_sha": "1f5721a89c85bce90b84979e6a96c5327ca35d32",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148277:5665295757:2026-09-14T14:08:33Z:clawsweeper_needs_human",
       "comment_id": "5665295757",
@@ -33848,6 +33801,39 @@
         "kind": "pull_request",
         "branch": "codex/catalog-owner-retirement-20260914",
         "head_sha": "2a0475a6c7ac3451d8148ef235a5ca760857a8d4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148502:5670066191:2026-09-14T20:04:57Z:clawsweeper_auto_repair",
+      "comment_id": "5670066191",
+      "comment_version_key": "5670066191:2026-09-14T20:04:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148502#issuecomment-5670066191",
+      "comment_created_at": "2026-09-14T20:04:57Z",
+      "comment_updated_at": "2026-09-14T20:04:57Z",
+      "comment_body_sha256": "9837112c3c9d9dc9c4f50d2ba34b60e92bd694c6fe08b5a47672d695f2d2e953",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148502,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=8e8aec77e48e84d8ba7d65679a02c3b7e0ebf4a3)",
+      "expected_head_sha": "8e8aec77e48e84d8ba7d65679a02c3b7e0ebf4a3",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-14T20:06:17.545Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-red-main-radius-deep-import",
+        "head_sha": "8e8aec77e48e84d8ba7d65679a02c3b7e0ebf4a3",
         "cluster_id": null,
         "job_path": null
       }
