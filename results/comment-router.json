@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T17:46:01.965Z",
+  "updated_at": "2026-09-14T17:46:08.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148122:5663215225:2026-09-14T11:28:31Z:re_review",
-      "comment_id": "5663215225",
-      "comment_version_key": "5663215225:2026-09-14T11:28:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5663215225",
-      "comment_created_at": "2026-09-14T11:28:31Z",
-      "comment_updated_at": "2026-09-14T11:28:31Z",
-      "comment_body_sha256": "7d0e312de1892ba81424234c292fe6aecce4f44d05257589dc12e320f12f7b09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148122,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 46aaeb35262f7207efec3284f5156aa3e45884db. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and docs lint pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T11:30:07.577Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-app-inventory",
-        "head_sha": "46aaeb35262f7207efec3284f5156aa3e45884db",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148036:5660472700:2026-09-14T11:30:55Z:clawsweeper_needs_human",
       "comment_id": "5660472700",
@@ -34716,6 +34669,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-dedupe-database-worker-list",
         "head_sha": "bf0341b10f75989d589c76388ff0bd2aae6739ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3653:5668201640:2026-09-14T17:45:13Z:clawsweeper_needs_human",
+      "comment_id": "5668201640",
+      "comment_version_key": "5668201640:2026-09-14T17:45:13Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3653#issuecomment-5668201640",
+      "comment_created_at": "2026-09-14T17:45:13Z",
+      "comment_updated_at": "2026-09-14T17:45:13Z",
+      "comment_body_sha256": "4bf7983491aa6975b8bbccf663a4b6375169bb4ed32168454e3d279422d6c0a3",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3653,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the reset callback and real CLI runner have no after-fix evidence showing the intended window starts, a mismatc...; Review finding: [P1] Reject workspace scopes the CLI cannot represent — Sources/CodexBarCore/Providers/Codex/CodexWindowKeepAlive.swift:74-79 - [P2] Use the resolved background po... (sha=a1c99abd2dbb9f70866994986450d43fd97982ae)",
+      "expected_head_sha": "a1c99abd2dbb9f70866994986450d43fd97982ae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T17:46:08.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/codex-window-keepalive",
+        "head_sha": "a1c99abd2dbb9f70866994986450d43fd97982ae",
         "cluster_id": null,
         "job_path": null
       }
