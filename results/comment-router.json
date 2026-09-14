@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:37:06.063Z",
+  "updated_at": "2026-09-14T14:38:38.699Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146050:5646642480:2026-09-14T08:46:08Z:clawsweeper_needs_human",
-      "comment_id": "5646642480",
-      "comment_version_key": "5646642480:2026-09-14T08:46:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146050#issuecomment-5646642480",
-      "comment_created_at": "2026-09-12T14:54:18Z",
-      "comment_updated_at": "2026-09-14T08:46:08Z",
-      "comment_body_sha256": "6dccd99d09aea880feb870d51a2287c5a12969bb44132ff006f5b6052ce4dfd9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146050,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR explicitly leaves screenshot rendering confirmation in both required destinations pending. (sha=240dfe3ae4d42e1966c048732604971dc3fbd77a)",
-      "expected_head_sha": "240dfe3ae4d42e1966c048732604971dc3fbd77a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:47:55.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/linux-audit-stack-06-updater-recovery-20260912",
-        "head_sha": "240dfe3ae4d42e1966c048732604971dc3fbd77a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148091:5661371379:2026-09-14T08:46:31Z:clawsweeper_needs_human",
       "comment_id": "5661371379",
@@ -34785,6 +34752,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145025:5665707917:2026-09-14T14:37:35Z:re_review",
+      "comment_id": "5665707917",
+      "comment_version_key": "5665707917:2026-09-14T14:37:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145025#issuecomment-5665707917",
+      "comment_created_at": "2026-09-14T14:37:35Z",
+      "comment_updated_at": "2026-09-14T14:37:35Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145025,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:38:35.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-skip-heartbeat-not-failed",
+        "head_sha": "a861d5c75e1a85766f34d641683714ab171f15a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
