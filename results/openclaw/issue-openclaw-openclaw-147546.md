@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147546"
-mode: "autonomous"
-run_id: "34790293765"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34790293765"
+mode: "plan"
+run_id: "34795352307"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34795352307"
 head_sha: "4cabb60d21c8322e13ed9d8c7e899b4ec883c30a"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-14T00:12:59.380Z"
-canonical: "https://github.com/openclaw/openclaw/issues/147546"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/147546"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-14T01:22:56.942Z"
+canonical: "#147546"
+canonical_issue: "#147546"
 canonical_pr: null
-actions_total: 5
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34790293765](https://github.com/openclaw/clawsweeper/actions/runs/34790293765)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34795352307](https://github.com/openclaw/clawsweeper/actions/runs/34795352307)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/147546
+Canonical: #147546
 
 ## Summary
 
-Reproduced both daily-cap errors in an isolated controller probe. Prepared a narrow fix artifact; implementation and required validation are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.
+Confirmed the matcher defect on preflight main 0a8e1d5b91806f1503f3ef46bc2165cc2ceaa044. Plan one narrow fix PR. No files or GitHub state changed; controller regression and validation remain for execution.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,7 @@ Reproduced both daily-cap errors in an isolated controller probe. Prepared a nar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147546 | fix_needed | planned | canonical | The existing exhausted-window exclusion misses both reported hyphenated daily-cap messages. Repair the shared evidence matcher without changing failover policy. |
-| #134281 | keep_closed | skipped | related | Already merged; no closeout or branch repair applies. |
-| #139465 | keep_closed | skipped | related | Already merged; retain as historical context. |
-| cluster:issue-openclaw-openclaw-147546 | build_fix_artifact | planned |  | A narrow new fix PR remains appropriate; the deterministic executor must implement and validate it in a writable checkout. |
-| cluster:issue-openclaw-openclaw-147546 | open_fix_pr | blocked |  | Blocked until the executor refreshes main, reproduces the regression, implements the fix, completes validation and review, and prepares the authorized branch. |
+| #147546 | fix_needed | planned | canonical | A narrow daily-window evidence repair fits the authorized bug-only scope. Closure and merge are prohibited. |
 
 ## Needs Human
 
