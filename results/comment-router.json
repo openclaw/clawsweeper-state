@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T08:24:15.398Z",
+  "updated_at": "2026-09-14T08:24:34.542Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147882:5658971695:2026-09-14T04:22:33Z:re_review",
-      "comment_id": "5658971695",
-      "comment_version_key": "5658971695:2026-09-14T04:22:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147882#issuecomment-5658971695",
-      "comment_created_at": "2026-09-14T04:22:33Z",
-      "comment_updated_at": "2026-09-14T04:22:33Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147882,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T04:27:44.929Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/windows-firewall-classifier-fallback-20260914",
-        "head_sha": "dfdb12b3fcb194205248b4741924cea38bc3e990",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabline:310:5659005265:2026-09-14T04:26:48Z:clawsweeper_needs_human",
       "comment_id": "5659005265",
@@ -34085,6 +34038,39 @@
         "kind": "pull_request",
         "branch": "fix/update-service-manager-route",
         "head_sha": "5ed8137be0ff47a86f359067fbcb3017187ef8b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148082:5661118115:2026-09-14T08:23:16Z:clawsweeper_needs_human",
+      "comment_id": "5661118115",
+      "comment_version_key": "5661118115:2026-09-14T08:23:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148082#issuecomment-5661118115",
+      "comment_created_at": "2026-09-14T08:23:16Z",
+      "comment_updated_at": "2026-09-14T08:23:16Z",
+      "comment_body_sha256": "6b1fd018a194b13882ddd48106029668cab4c85d4fbf8345a458663db14eda10",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148082,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The matched after-fix Chromium heap owner-reference result remains pending in the PR body; the reported test passes do not establish that browser heap result. (sha=54408772e544d3dc84ef7a646a906d59e3371f0a)",
+      "expected_head_sha": "54408772e544d3dc84ef7a646a906d59e3371f0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T08:24:34.542Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/desktop-keyboard-reset-retention-20260914",
+        "head_sha": "54408772e544d3dc84ef7a646a906d59e3371f0a",
         "cluster_id": null,
         "job_path": null
       }
