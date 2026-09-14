@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T03:41:50.006Z",
+  "updated_at": "2026-09-14T03:42:17.928Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147477:5656788743:2026-09-13T23:00:14Z:re_review",
-      "comment_id": "5656788743",
-      "comment_version_key": "5656788743:2026-09-13T23:00:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147477#issuecomment-5656788743",
-      "comment_created_at": "2026-09-13T23:00:14Z",
-      "comment_updated_at": "2026-09-13T23:00:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147477,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T23:01:10.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/147435-secret-provider-validate",
-        "head_sha": "781962fb0746516148d502bef51ad395303d5938",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:323:5655965833:2026-09-13T22:49:05Z:clawsweeper_needs_human",
       "comment_id": "5655965833",
@@ -33459,6 +33412,39 @@
         "kind": "pull_request",
         "branch": "codex/publication-object-size-batch",
         "head_sha": "65b1f92137b62ef671a4a2065545414b0d8d3c6c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147634:5657637785:2026-09-14T03:41:17Z:clawsweeper_needs_human",
+      "comment_id": "5657637785",
+      "comment_version_key": "5657637785:2026-09-14T03:41:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147634#issuecomment-5657637785",
+      "comment_created_at": "2026-09-14T01:08:17Z",
+      "comment_updated_at": "2026-09-14T03:41:17Z",
+      "comment_body_sha256": "ed41c299e642bf8acc7901ab4ca6bd7b86f18be0d2e933ee5accd4d772c31b02",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147634,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The ChatPane identity cache and message renderer are exercised through direct calls and jsdom tests, but the supplied evidence does not show ca... (sha=f384115cb7432762655638a5da0bdbc0fd2b2cf1)",
+      "expected_head_sha": "f384115cb7432762655638a5da0bdbc0fd2b2cf1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T03:42:17.928Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/own-message-flash-peer-147511",
+        "head_sha": "f384115cb7432762655638a5da0bdbc0fd2b2cf1",
         "cluster_id": null,
         "job_path": null
       }
