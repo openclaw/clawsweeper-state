@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T19:24:17.182Z",
+  "updated_at": "2026-09-14T19:29:04.421Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123037:5664491821:2026-09-14T13:10:31Z:re_review",
-      "comment_id": "5664491821",
-      "comment_version_key": "5664491821:2026-09-14T13:10:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123037#issuecomment-5664491821",
-      "comment_created_at": "2026-09-14T13:10:31Z",
-      "comment_updated_at": "2026-09-14T13:10:31Z",
-      "comment_body_sha256": "d9c7cf1eb529b8996fd8b76233d0619a1ef6737c2fdf84f45b5adb93f3337f57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123037,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T13:13:19.110Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shared-image-artifact-gh-api-timeout",
-        "head_sha": "71b50b7aa580d44fd1e104255bd94d0f9490a0a7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145032:5664492175:2026-09-14T13:10:32Z:re_review",
       "comment_id": "5664492175",
@@ -34214,6 +34167,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-cancel-preserve-completion",
         "head_sha": "b5df70f7d9751b9024e6a64e64770c03b90ab68e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142383:5589476617:2026-09-14T19:22:34Z:clawsweeper_needs_human",
+      "comment_id": "5589476617",
+      "comment_version_key": "5589476617:2026-09-14T19:22:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142383#issuecomment-5589476617",
+      "comment_created_at": "2026-09-08T17:52:06Z",
+      "comment_updated_at": "2026-09-14T19:22:34Z",
+      "comment_body_sha256": "70d4e9e355b00f7a2c699835b3526ad6eeda8f2b2f97e627bbd5112ec9ad8cb4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142383,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Coordinated reveal intentionally waits for sidebar readiness, so received history can remain hidden longer; the study demonstrates a visual-stability versus transcript-latency tradeof... (sha=6d2f7c79d0bf8e4231827ef92ac8dd7d2071be7f)",
+      "expected_head_sha": "6d2f7c79d0bf8e4231827ef92ac8dd7d2071be7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T19:29:04.421Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-startup-loading-orchestration",
+        "head_sha": "6d2f7c79d0bf8e4231827ef92ac8dd7d2071be7f",
         "cluster_id": null,
         "job_path": null
       }
