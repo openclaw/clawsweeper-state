@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:37:21.625Z",
+  "updated_at": "2026-09-14T23:37:54.462Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148416:5667984734:2026-09-14T17:27:41Z:freeform_assist",
-      "comment_id": "5667984734",
-      "comment_version_key": "5667984734:2026-09-14T17:27:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148416#issuecomment-5667984734",
-      "comment_created_at": "2026-09-14T17:27:41Z",
-      "comment_updated_at": "2026-09-14T17:27:41Z",
-      "comment_body_sha256": "8d99b3ed8761b4dc5edac26ce19e031886858e5b1cca68a31a64a5b7db9cc744",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148416,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review\\n\\nexact synchronized head: bf0341b10f75989d589c76388ff0bd2aae6739ab. final commit is no-content and only retriggers github after a zero-job buildfailed startup failure. tree validation is unchanged: focused unique-inventory contract and pnpm check:changed pass.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T17:28:38.554Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-dedupe-database-worker-list",
-        "head_sha": "bf0341b10f75989d589c76388ff0bd2aae6739ab",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147979:5659716415:2026-09-14T06:04:43Z:re_review",
       "comment_id": "5659716415",
@@ -33337,6 +33290,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:373:5672334460:2026-09-14T23:36:49Z:clawsweeper_needs_human",
+      "comment_id": "5672334460",
+      "comment_version_key": "5672334460:2026-09-14T23:36:49Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/373#issuecomment-5672334460",
+      "comment_created_at": "2026-09-14T23:36:49Z",
+      "comment_updated_at": "2026-09-14T23:36:49Z",
+      "comment_body_sha256": "0513fdb724341b16fa0e2b8cd7290c372a66ef1994aeab068730864b57f16a42",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed workspace factories and descriptor admission have tests and CI evidence, but no supplied un... (sha=4e998a03ef2b65dd9094a83d95c7e92fb1e7481a)",
+      "expected_head_sha": "4e998a03ef2b65dd9094a83d95c7e92fb1e7481a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T23:37:54.462Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/temp-workspace-admission-20260914",
+        "head_sha": "4e998a03ef2b65dd9094a83d95c7e92fb1e7481a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
