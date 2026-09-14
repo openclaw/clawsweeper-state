@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:51:25.843Z",
+  "updated_at": "2026-09-14T05:51:40.015Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1585:5657900060:2026-09-14T01:47:48Z:re_review",
-      "comment_id": "5657900060",
-      "comment_version_key": "5657900060:2026-09-14T01:47:48Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1585#issuecomment-5657900060",
-      "comment_created_at": "2026-09-14T01:47:48Z",
-      "comment_updated_at": "2026-09-14T01:47:48Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1585,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T01:48:52.072Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/review-openclaw-browser-uri-fixtures",
-        "head_sha": "42fff4ab9e0396a6262b3fbd1a03222f8cfb2cf2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145790:5644621056:2026-09-14T01:48:32Z:clawsweeper_needs_human",
       "comment_id": "5644621056",
@@ -33175,6 +33128,39 @@
         "kind": "pull_request",
         "branch": "fix/macos-ae-permission-probe-off-cooperative-pool",
         "head_sha": "621a4a4d8315dab1d2df35fdcefa8edc8e8f0c8e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147949:5659613971:2026-09-14T05:50:37Z:clawsweeper_auto_repair",
+      "comment_id": "5659613971",
+      "comment_version_key": "5659613971:2026-09-14T05:50:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5659613971",
+      "comment_created_at": "2026-09-14T05:50:37Z",
+      "comment_updated_at": "2026-09-14T05:50:37Z",
+      "comment_body_sha256": "3e1d0b709fd79cff7a29451f0fe131f11383c1c4efe5d03ed78d30be5a45d08f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ae8a85d7bee91b879ce284868991cf80cfd23872)",
+      "expected_head_sha": "ae8a85d7bee91b879ce284868991cf80cfd23872",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:51:40.015Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "ae8a85d7bee91b879ce284868991cf80cfd23872",
         "cluster_id": null,
         "job_path": null
       }
