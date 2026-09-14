@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T08:54:34.195Z",
+  "updated_at": "2026-09-14T08:54:58.011Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142967:5598875509:2026-09-14T04:32:04Z:clawsweeper_needs_human",
-      "comment_id": "5598875509",
-      "comment_version_key": "5598875509:2026-09-14T04:32:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142967#issuecomment-5598875509",
-      "comment_created_at": "2026-09-09T08:34:37Z",
-      "comment_updated_at": "2026-09-14T04:32:04Z",
-      "comment_body_sha256": "e8dade17802c8a94dca90eff1e7fe46fb12630ceb1b5469d3b36a5f6e008837b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142967,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserve the passing native grant-before-ACK, real Foundation/Gateway TLS/read, and parent limited/upg...; Review finding: [medium] Unqualified stale-authority interleavings — apps/ios/WatchApp/Sources/WatchGatewayController.swift:240 (sha=ff8e32bfca4174d26b7eb63c3dc48bcf7fc6b4e6)",
-      "expected_head_sha": "ff8e32bfca4174d26b7eb63c3dc48bcf7fc6b4e6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T04:46:49.601Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-watch-direct-conversations-20260909",
-        "head_sha": "ff8e32bfca4174d26b7eb63c3dc48bcf7fc6b4e6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144947:5635344060:2026-09-14T04:42:19Z:clawsweeper_needs_human",
       "comment_id": "5635344060",
@@ -34190,6 +34157,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148013:5661398521:2026-09-14T08:48:58Z:freeform_assist",
+      "comment_id": "5661398521",
+      "comment_version_key": "5661398521:2026-09-14T08:48:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148013#issuecomment-5661398521",
+      "comment_created_at": "2026-09-14T08:48:58Z",
+      "comment_updated_at": "2026-09-14T08:48:58Z",
+      "comment_body_sha256": "421fbbaadfb07e135ecf17a69e6d95aaefb77e0979069c3247b1334a0736822f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148013,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review\\n\\ncompatibility evidence added: the startup budget json is a ci ratchet fixture only, with no runtime persistence, schema, migration, backfill, or upgrade consumer.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T08:54:54.672Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/wave19-control-ui-ci-baseline",
+        "head_sha": "fed106f6954f478bb8f94fc643044733b1fb003a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
