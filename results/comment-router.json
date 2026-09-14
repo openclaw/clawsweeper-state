@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:24:28.987Z",
+  "updated_at": "2026-09-14T05:24:30.727Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147633:5657738955:2026-09-14T01:23:04Z:re_review",
-      "comment_id": "5657738955",
-      "comment_version_key": "5657738955:2026-09-14T01:23:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147633#issuecomment-5657738955",
-      "comment_created_at": "2026-09-14T01:23:04Z",
-      "comment_updated_at": "2026-09-14T01:23:04Z",
-      "comment_body_sha256": "1770a70ca324a7d5864777bb018651b17ee76d26ec7ab7127684618ced487645",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147633,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T01:30:11.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sqlite-readonly-sidecar-147259",
-        "head_sha": "55f0b6d24277a664c375435798ef9a6adde7204a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147633:5657617161:2026-09-14T01:29:15Z:clawsweeper_needs_human",
       "comment_id": "5657617161",
@@ -33145,6 +33098,39 @@
         "kind": "pull_request",
         "branch": "codex/ui-message-catalog-invalidation-20260914",
         "head_sha": "c10080f09a431129043e51a1dc511d6cb54bc0ab",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147844:5658916902:2026-09-14T05:18:16Z:clawsweeper_needs_human",
+      "comment_id": "5658916902",
+      "comment_version_key": "5658916902:2026-09-14T05:18:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147844#issuecomment-5658916902",
+      "comment_created_at": "2026-09-14T04:15:26Z",
+      "comment_updated_at": "2026-09-14T05:18:16Z",
+      "comment_body_sha256": "9945513ac4677bb84e0e4d89be1ba0af09d891cbf70a01ca4292cfb0c76efb4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147844,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The controlled run's complete remote closeout remains unverified, and this environment could not retrieve its raw artifact logs; the captured case results must not be described as a f... (sha=7835e6f4ee345a0fb9619adc7d7afbdf1ea7e153)",
+      "expected_head_sha": "7835e6f4ee345a0fb9619adc7d7afbdf1ea7e153",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:24:30.727Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gateway-timeout-fixture-ownership-20260914",
+        "head_sha": "7835e6f4ee345a0fb9619adc7d7afbdf1ea7e153",
         "cluster_id": null,
         "job_path": null
       }
