@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T06:14:54.235Z",
+  "updated_at": "2026-09-14T06:15:36.755Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147682:5657985744:2026-09-14T02:22:53Z:clawsweeper_needs_human",
-      "comment_id": "5657985744",
-      "comment_version_key": "5657985744:2026-09-14T02:22:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147682#issuecomment-5657985744",
-      "comment_created_at": "2026-09-14T02:01:01Z",
-      "comment_updated_at": "2026-09-14T02:22:53Z",
-      "comment_body_sha256": "0cd49c0cbb5d3a58b5b56358947a5b8cf5d8cba898c0ae9228669607bb109c64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147682,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing run/task-scoped requests containing stale managed IDs will now fail with artifact_not_found instead of returning fallback bytes or another URL. Valid retained-record download... (sha=f0a202b31ccc01bca37d1e7f7349994014bd7476)",
-      "expected_head_sha": "f0a202b31ccc01bca37d1e7f7349994014bd7476",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T02:28:11.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/artifact-assistant-filter",
-        "head_sha": "f0a202b31ccc01bca37d1e7f7349994014bd7476",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120598:5226597343:2026-09-14T02:28:09Z:clawsweeper_auto_repair",
       "comment_id": "5226597343",
@@ -32873,6 +32840,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147634:5659800984:2026-09-14T06:14:32Z:re_review",
+      "comment_id": "5659800984",
+      "comment_version_key": "5659800984:2026-09-14T06:14:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147634#issuecomment-5659800984",
+      "comment_created_at": "2026-09-14T06:14:32Z",
+      "comment_updated_at": "2026-09-14T06:14:32Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147634,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T06:15:32.730Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/own-message-flash-peer-147511",
+        "head_sha": "eb324a859fe99a324bcabb85fe9f4c54075068f3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
