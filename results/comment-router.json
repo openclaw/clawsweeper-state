@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T22:27:23.554Z",
+  "updated_at": "2026-09-14T22:27:26.532Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148175:5667455846:2026-09-14T16:44:57Z:re_review",
-      "comment_id": "5667455846",
-      "comment_version_key": "5667455846:2026-09-14T16:44:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148175#issuecomment-5667455846",
-      "comment_created_at": "2026-09-14T16:44:57Z",
-      "comment_updated_at": "2026-09-14T16:44:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148175,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T16:46:40.748Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-service-retention",
-        "head_sha": "221841ae1087a06154beb78d95e701ddd3f03b8a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148317:5667456074:2026-09-14T16:44:59Z:re_review",
       "comment_id": "5667456074",
@@ -33430,6 +33383,39 @@
         "kind": "pull_request",
         "branch": "fix/148498-empty-report-html-payload",
         "head_sha": "90ad1d421e443ce78b43db81f8b5819fdef9f5fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148564:5671655769:2026-09-14T22:26:28Z:clawsweeper_needs_human",
+      "comment_id": "5671655769",
+      "comment_version_key": "5671655769:2026-09-14T22:26:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148564#issuecomment-5671655769",
+      "comment_created_at": "2026-09-14T22:26:28Z",
+      "comment_updated_at": "2026-09-14T22:26:28Z",
+      "comment_body_sha256": "68862ed9240cdbbdeaf73a11e218c5e92f64bee3b34fde032bfa0dc8cbfba9a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148564,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d84af613e0015dd5ca25906e2ac10b73cc2490a2)",
+      "expected_head_sha": "d84af613e0015dd5ca25906e2ac10b73cc2490a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T22:27:26.532Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maturity-348652-ollama-startup",
+        "head_sha": "d84af613e0015dd5ca25906e2ac10b73cc2490a2",
         "cluster_id": null,
         "job_path": null
       }
