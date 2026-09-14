@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T08:47:52.061Z",
+  "updated_at": "2026-09-14T08:47:55.883Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147634:5659131319:2026-09-14T04:43:18Z:re_review",
-      "comment_id": "5659131319",
-      "comment_version_key": "5659131319:2026-09-14T04:43:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147634#issuecomment-5659131319",
-      "comment_created_at": "2026-09-14T04:43:18Z",
-      "comment_updated_at": "2026-09-14T04:43:18Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147634,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T04:44:48.706Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/own-message-flash-peer-147511",
-        "head_sha": "f384115cb7432762655638a5da0bdbc0fd2b2cf1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123062:5659057918:2026-09-14T04:33:23Z:re_review",
       "comment_id": "5659057918",
@@ -34260,6 +34213,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146050:5646642480:2026-09-14T08:46:08Z:clawsweeper_needs_human",
+      "comment_id": "5646642480",
+      "comment_version_key": "5646642480:2026-09-14T08:46:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146050#issuecomment-5646642480",
+      "comment_created_at": "2026-09-12T14:54:18Z",
+      "comment_updated_at": "2026-09-14T08:46:08Z",
+      "comment_body_sha256": "6dccd99d09aea880feb870d51a2287c5a12969bb44132ff006f5b6052ce4dfd9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146050,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR explicitly leaves screenshot rendering confirmation in both required destinations pending. (sha=240dfe3ae4d42e1966c048732604971dc3fbd77a)",
+      "expected_head_sha": "240dfe3ae4d42e1966c048732604971dc3fbd77a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T08:47:55.883Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/linux-audit-stack-06-updater-recovery-20260912",
+        "head_sha": "240dfe3ae4d42e1966c048732604971dc3fbd77a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
