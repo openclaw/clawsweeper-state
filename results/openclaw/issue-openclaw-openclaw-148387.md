@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148387"
-mode: "autonomous"
-run_id: "34875295802"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34875295802"
+mode: "plan"
+run_id: "34878472938"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34878472938"
 head_sha: "5b8e55a50a363bc8388218797b3ab2d4a5b17d0b"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-14T17:36:34.878Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-14T18:44:27.036Z"
 canonical: "https://github.com/openclaw/openclaw/issues/148387"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/148387"
-canonical_pr: null
-actions_total: 2
+canonical_pr: "https://github.com/openclaw/openclaw/pull/148426"
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34875295802](https://github.com/openclaw/clawsweeper/actions/runs/34875295802)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34878472938](https://github.com/openclaw/clawsweeper/actions/runs/34878472938)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/148387
 
 ## Summary
 
-Source supports the reported warning defect on preflight main. Implementation and runtime reproduction are blocked by the read-only workspace and missing dependencies. Narrow fix artifact prepared; no files or GitHub state changed.
+Keep #148387 open and retain #148426 as the canonical fix PR. A new implementation PR would duplicate existing work. Hydrated state shows #148426 remains unmerged with failing checks, despite a comment claiming it landed. No mutations or runtime validation performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Source supports the reported warning defect on preflight main. Implementation an
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148387 | fix_needed | planned | canonical | The source supports a narrow diagnostic repair. Executable reproduction remains required before implementation; this worker could not run it. |
-| cluster:issue-openclaw-openclaw-148387 | build_fix_artifact | planned |  | Artifact preparation is complete. Implementation and publication readiness remain blocked until a writable executor reproduces the defect and completes validation. |
+| #148387 | keep_canonical | planned | canonical | Preserve the canonical report while the existing fix proceeds through validation; do not create another PR for the same repair. |
+| #148424 | keep_closed | skipped | duplicate | Already closed; retain the contributor's implementation and verification as historical evidence. |
+| #148426 | keep_canonical | planned | canonical | This PR already owns the requested repair. Retaining it is not a merge-readiness verdict; failing checks and missing merge preflight prevent merge or fixed-by-candidate closeout. |
 
 ## Needs Human
 

@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148387",
+  "mode": "plan",
+  "run_id": "34878472938",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34878472938",
+  "head_sha": "5b8e55a50a363bc8388218797b3ab2d4a5b17d0b",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148387.md",
+  "published_at": "2026-09-14T18:44:27.036Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/148387",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/148387",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/148426",
+  "summary": "Keep #148387 open and retain #148426 as the canonical fix PR. A new implementation PR would duplicate existing work. Hydrated state shows #148426 remains unmerged with failing checks, despite a comment claiming it landed. No mutations or runtime validation performed.",
+  "actions": [
+    {
+      "target": "#148387",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148387",
+      "candidate_fix": "#148426",
+      "reason": "Preserve the canonical report while the existing fix proceeds through validation; do not create another PR for the same repair."
+    },
+    {
+      "target": "#148424",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "duplicate",
+      "canonical": "#148426",
+      "candidate_fix": null,
+      "reason": "Already closed; retain the contributor's implementation and verification as historical evidence."
+    },
+    {
+      "target": "#148426",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148426",
+      "candidate_fix": null,
+      "reason": "This PR already owns the requested repair. Retaining it is not a merge-readiness verdict; failing checks and missing merge preflight prevent merge or fixed-by-candidate closeout."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
