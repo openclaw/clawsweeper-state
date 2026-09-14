@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-14T20:06:58.536Z",
+  "updated_at": "2026-09-14T20:06:34.236Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148193:5665279766:2026-09-14T14:07:26Z:re_review",
+      "comment_id": "5665279766",
+      "comment_version_key": "5665279766:2026-09-14T14:07:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148193#issuecomment-5665279766",
+      "comment_created_at": "2026-09-14T14:07:26Z",
+      "comment_updated_at": "2026-09-14T14:07:26Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148193,
+      "author": "duyufansh2008",
+      "author_id": 105097954,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:09:55.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/local-media-auto-setup",
+        "head_sha": "ed8bc0c868443f1d08068b1319f2535e01423326",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148121:5665296350:2026-09-14T14:08:35Z:re_review",
       "comment_id": "5665296350",
@@ -33787,39 +33834,6 @@
         "kind": "pull_request",
         "branch": "dependabot/npm_and_yarn/development-67d701f4c6",
         "head_sha": "989485307493c24ab358ba26ba24bf4b5fcc8d0a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148167:5662749861:2026-09-14T20:06:01Z:clawsweeper_needs_human",
-      "comment_id": "5662749861",
-      "comment_version_key": "5662749861:2026-09-14T20:06:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148167#issuecomment-5662749861",
-      "comment_created_at": "2026-09-14T10:46:36Z",
-      "comment_updated_at": "2026-09-14T20:06:01Z",
-      "comment_body_sha256": "023066d5d0647bbd00d4ffa8293d37dfae29d797d6172754f380e04607fd852b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148167,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing CLI, SDK, or saved automation calls explicitly naming an unlisted primary will fail after upgrade; those callers must use Default where supported or amend their allowlist. Ne... (sha=6e68d47db86b9bf851abb05aadf288ecfc26d5fc)",
-      "expected_head_sha": "6e68d47db86b9bf851abb05aadf288ecfc26d5fc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T20:06:58.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/model-choice-policy",
-        "head_sha": "6e68d47db86b9bf851abb05aadf288ecfc26d5fc",
         "cluster_id": null,
         "job_path": null
       }
