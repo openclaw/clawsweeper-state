@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147546",
+  "mode": "autonomous",
+  "run_id": "34790293765",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34790293765",
+  "head_sha": "4cabb60d21c8322e13ed9d8c7e899b4ec883c30a",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147546.md",
+  "published_at": "2026-09-14T00:12:59.380Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147546",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147546",
+  "canonical_pr": null,
+  "summary": "Reproduced both daily-cap errors in an isolated controller probe. Prepared a narrow fix artifact; implementation and required validation are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#147546",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147546",
+      "candidate_fix": null,
+      "reason": "The existing exhausted-window exclusion misses both reported hyphenated daily-cap messages. Repair the shared evidence matcher without changing failover policy."
+    },
+    {
+      "target": "#134281",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#147546",
+      "candidate_fix": null,
+      "reason": "Already merged; no closeout or branch repair applies."
+    },
+    {
+      "target": "#139465",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#147546",
+      "candidate_fix": null,
+      "reason": "Already merged; retain as historical context."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147546",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#147546",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR remains appropriate; the deterministic executor must implement and validate it in a writable checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147546",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#147546",
+      "candidate_fix": null,
+      "reason": "Blocked until the executor refreshes main, reproduces the regression, implements the fix, completes validation and review, and prepares the authorized branch."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
