@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:36:04.999Z",
+  "updated_at": "2026-09-14T23:36:12.448Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136454:5667911242:2026-09-14T17:21:40Z:re_review",
-      "comment_id": "5667911242",
-      "comment_version_key": "5667911242:2026-09-14T17:21:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136454#issuecomment-5667911242",
-      "comment_created_at": "2026-09-14T17:21:40Z",
-      "comment_updated_at": "2026-09-14T17:21:40Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136454,
-      "author": "HGLUSSY",
-      "author_id": 283802306,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T17:26:31.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/model-resolve-thinking-override",
-        "head_sha": "5c46f311eb2d4c7dbe0cf0f21172d0820026e91a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148377:5667940968:2026-09-14T17:24:11Z:re_review",
       "comment_id": "5667940968",
@@ -33348,6 +33301,39 @@
         "kind": "pull_request",
         "branch": "codex/participant-cache-write-locality",
         "head_sha": "28d732b08a6cc2caafc0a03b9d29172de005f5f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148256:5664282976:2026-09-14T23:34:34Z:clawsweeper_needs_human",
+      "comment_id": "5664282976",
+      "comment_version_key": "5664282976:2026-09-14T23:34:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148256#issuecomment-5664282976",
+      "comment_created_at": "2026-09-14T12:54:51Z",
+      "comment_updated_at": "2026-09-14T23:34:34Z",
+      "comment_body_sha256": "bf259d4ab652ffd58927b2c8b49ae95ff628e32752f94b4a53f1104c7336ccb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148256,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Security-owner review of the latest auth-path additions is not established by the earlier-head approval. (sha=3f453252b7cdd8873612835017d3be60222865c4)",
+      "expected_head_sha": "3f453252b7cdd8873612835017d3be60222865c4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T23:36:12.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/issue-147495-repository-recovery",
+        "head_sha": "3f453252b7cdd8873612835017d3be60222865c4",
         "cluster_id": null,
         "job_path": null
       }
