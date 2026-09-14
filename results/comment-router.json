@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-14T21:52:08.456Z",
+  "updated_at": "2026-09-14T21:53:00.779Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:4886334045:2026-07-05T14:11:44Z:re_review",
-      "comment_id": "4886334045",
-      "comment_version_key": "4886334045:2026-07-05T14:11:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4886334045",
-      "comment_created_at": "2026-07-05T14:11:44Z",
-      "comment_updated_at": "2026-07-05T14:11:44Z",
-      "comment_body_sha256": "709f1a46a46af2128f34a76ed4db9f8a48d9e203b6f55aae4d496b5662d92c5b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T16:38:36.403Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:4886528841:2026-07-05T15:17:17Z:re_review",
       "comment_id": "4886528841",
@@ -33158,6 +33131,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1423:5670643438:2026-09-14T21:51:45Z:clawsweeper_needs_human",
+      "comment_id": "5670643438",
+      "comment_version_key": "5670643438:2026-09-14T21:51:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1423#issuecomment-5670643438",
+      "comment_created_at": "2026-09-14T20:52:03Z",
+      "comment_updated_at": "2026-09-14T21:51:45Z",
+      "comment_body_sha256": "c0ab94a355524ffeb38f18430a2950502f759c1dc4b6da68bee376725b3c162a",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The reported Windows tests exercise URI predicates and a mocked ElevenLabs body, not AllowedAssetDownload’s production transport or an unknown-... (sha=a5e730d2119b26ded4ae1d0b2a1079146a776f56)",
+      "expected_head_sha": "a5e730d2119b26ded4ae1d0b2a1079146a776f56",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T21:53:00.779Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/audio-http-hardening",
+        "head_sha": "a5e730d2119b26ded4ae1d0b2a1079146a776f56",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
