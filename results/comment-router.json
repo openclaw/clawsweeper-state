@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:16:45.455Z",
+  "updated_at": "2026-09-14T05:16:52.769Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147622:5657614294:2026-09-14T01:04:56Z:re_review",
-      "comment_id": "5657614294",
-      "comment_version_key": "5657614294:2026-09-14T01:04:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147622#issuecomment-5657614294",
-      "comment_created_at": "2026-09-14T01:04:56Z",
-      "comment_updated_at": "2026-09-14T01:04:56Z",
-      "comment_body_sha256": "464c0b15ac4a2f1e55dc065f0f85342c68381ca7d48776996da8494bcab395cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147622,
-      "author": "VACInc",
-      "author_id": 3279061,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T01:14:53.222Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix-agent-continuation-diagnostics",
-        "head_sha": "7d6f72497babe23394d5c01278f0afaecd356ea6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147622:5657570853:2026-09-14T01:14:00Z:clawsweeper_needs_human",
       "comment_id": "5657570853",
@@ -33184,6 +33137,39 @@
       "status": "skipped",
       "processed_at": "2026-09-14T05:16:45.455Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147244:5655062491:2026-09-14T05:15:47Z:clawsweeper_needs_human",
+      "comment_id": "5655062491",
+      "comment_version_key": "5655062491:2026-09-14T05:15:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147244#issuecomment-5655062491",
+      "comment_created_at": "2026-09-13T18:02:30Z",
+      "comment_updated_at": "2026-09-14T05:15:47Z",
+      "comment_body_sha256": "dc321ae640a8d620107c90691d4e9a0b28d19eb0ab4c3c2a813575f41bb59acb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147244,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: supplied native TLS receipts on unchanged app sources now cover allowed socket/media I/O, foreign-auth... (sha=eb3b587cd9ab28f7225b8efacc5cce5cfd381cea)",
+      "expected_head_sha": "eb3b587cd9ab28f7225b8efacc5cce5cfd381cea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:16:52.769Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-cloudflare-access-activation-20260913",
+        "head_sha": "eb3b587cd9ab28f7225b8efacc5cce5cfd381cea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
