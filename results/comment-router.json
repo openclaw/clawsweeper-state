@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T17:36:22.209Z",
+  "updated_at": "2026-09-14T17:39:25.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148086:5663062137:2026-09-14T11:14:12Z:re_review",
-      "comment_id": "5663062137",
-      "comment_version_key": "5663062137:2026-09-14T11:14:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148086#issuecomment-5663062137",
-      "comment_created_at": "2026-09-14T11:14:12Z",
-      "comment_updated_at": "2026-09-14T11:14:12Z",
-      "comment_body_sha256": "6e686171ac3a770f8d7f0feb70c70e8dd8cedfd53c642caee52f420490663a87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148086,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T11:24:06.784Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/panel-tab-focus-retention-20260914",
-        "head_sha": "69ad98238d0f98d2bbade606b8c69e2d42d8baa2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148121:5663130515:2026-09-14T11:20:29Z:re_review",
       "comment_id": "5663130515",
@@ -34778,6 +34731,39 @@
         "kind": "pull_request",
         "branch": "codex/session-sql-query-audit",
         "head_sha": "35e25d6d022ab0161e4410d31a2ca3086fbeb595",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148116:5661875630:2026-09-14T17:38:18Z:clawsweeper_needs_human",
+      "comment_id": "5661875630",
+      "comment_version_key": "5661875630:2026-09-14T17:38:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148116#issuecomment-5661875630",
+      "comment_created_at": "2026-09-14T09:28:30Z",
+      "comment_updated_at": "2026-09-14T17:38:18Z",
+      "comment_body_sha256": "9917a8c392d32d14d1f9f34a8d0b12fd40c0be7767537832f1856c833b1b7bfb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148116,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing backend-metadata nodes with changed pinned platform or device-family metadata can now receive a pairing-required response and need operator reapproval; security-owner accepta... (sha=61f8ec131a11d0f338dee48697dc50b626f6e415)",
+      "expected_head_sha": "61f8ec131a11d0f338dee48697dc50b626f6e415",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T17:39:25.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-client-self-pairing-bypass-147149",
+        "head_sha": "61f8ec131a11d0f338dee48697dc50b626f6e415",
         "cluster_id": null,
         "job_path": null
       }
