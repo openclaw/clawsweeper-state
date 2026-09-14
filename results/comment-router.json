@@ -2,53 +2,6 @@
   "updated_at": "2026-09-14T16:07:43.666Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:148032:5661778362:2026-09-14T09:20:39Z:re_review",
-      "comment_id": "5661778362",
-      "comment_version_key": "5661778362:2026-09-14T09:20:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148032#issuecomment-5661778362",
-      "comment_created_at": "2026-09-14T09:20:39Z",
-      "comment_updated_at": "2026-09-14T09:20:39Z",
-      "comment_body_sha256": "83a2a5152381f5dead0660d38c70a9750a61de7c4408dbd1ef2c47ffa4e92d6c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148032,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T09:33:51.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/main-recovery-cpu-selection-20260914",
-        "head_sha": "dd8beec7efcc522fcc064188593813df6d2c54b1",
-        "cluster_id": "automerge-openclaw-openclaw-148032",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148032.md"
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:144737:5661803942:2026-09-14T09:22:44Z:re_review",
       "comment_id": "5661803942",
       "comment_version_key": "5661803942:2026-09-14T09:22:44Z",
@@ -34963,6 +34916,39 @@
         "kind": "pull_request",
         "branch": "codex/zip-read-cleanup",
         "head_sha": "0b4f4764fce92e7bd9bd79cc3777d95edd53ca2d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147188:5654636825:2026-09-14T15:48:21Z:clawsweeper_needs_human",
+      "comment_id": "5654636825",
+      "comment_version_key": "5654636825:2026-09-14T15:48:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147188#issuecomment-5654636825",
+      "comment_created_at": "2026-09-13T16:47:34Z",
+      "comment_updated_at": "2026-09-14T15:48:21Z",
+      "comment_body_sha256": "d9da6c3f30d41689b3abd4387060c00af82143e4abd8f29ad40bf44e3c2a7ff2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147188,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: heartbeat.ts is exercised through injected runner replies and mocked Telegram sends, while the captured... (sha=ff8cf0d196a7ec84e264c45978bb397742b77f78)",
+      "expected_head_sha": "ff8cf0d196a7ec84e264c45978bb397742b77f78",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T16:07:41.673Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-cli-fallback-silent",
+        "head_sha": "ff8cf0d196a7ec84e264c45978bb397742b77f78",
         "cluster_id": null,
         "job_path": null
       }
