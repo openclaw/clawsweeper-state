@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:09:01.104Z",
+  "updated_at": "2026-09-14T02:09:16.278Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:322:5655750877:2026-09-13T20:56:03Z:clawsweeper_needs_human",
-      "comment_id": "5655750877",
-      "comment_version_key": "5655750877:2026-09-13T20:56:03Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/322#issuecomment-5655750877",
-      "comment_created_at": "2026-09-13T20:00:57Z",
-      "comment_updated_at": "2026-09-13T20:56:03Z",
-      "comment_body_sha256": "f488084d6538ba15ac37c077dded8cd7064e08fa46743ec2f3be0528e60ac90c",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 322,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence for fileStoreSync.write reports projected-identity tests and explicitly leaves the revised native Windows ACL run pending... (sha=c5346e64d9552539186800450dd8fc756839eafc)",
-      "expected_head_sha": "c5346e64d9552539186800450dd8fc756839eafc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T21:00:25.064Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/atomic-exact-publication-identity-20260913",
-        "head_sha": "c5346e64d9552539186800450dd8fc756839eafc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147407:5656109945:2026-09-13T21:00:50Z:clawsweeper_needs_human",
       "comment_id": "5656109945",
@@ -33562,6 +33529,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147421:5658032831:2026-09-14T02:08:14Z:re_review",
+      "comment_id": "5658032831",
+      "comment_version_key": "5658032831:2026-09-14T02:08:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147421#issuecomment-5658032831",
+      "comment_created_at": "2026-09-14T02:08:14Z",
+      "comment_updated_at": "2026-09-14T02:08:14Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147421,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T02:09:14.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-network-compat",
+        "head_sha": "c68a7bd691e168c5814ab179d3e79ea8e1151041",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
