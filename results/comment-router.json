@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:28:28.433Z",
+  "updated_at": "2026-09-14T23:30:46.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147490:5661298597:2026-09-14T08:39:49Z:re_review",
-      "comment_id": "5661298597",
-      "comment_version_key": "5661298597:2026-09-14T08:39:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147490#issuecomment-5661298597",
-      "comment_created_at": "2026-09-14T08:39:49Z",
-      "comment_updated_at": "2026-09-14T08:39:49Z",
-      "comment_body_sha256": "f63ca35bc8f3e61f5cf2053fdaeef16ecfe6c21a81e9f34a90b3c325cf889f70",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147490,
-      "author": "Navras98",
-      "author_id": 182986534,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T17:24:55.559Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147490:5661303574:2026-09-14T08:40:18Z:re_review",
       "comment_id": "5661303574",
@@ -33335,6 +33308,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3698:5672243829:2026-09-14T23:29:26Z:clawsweeper_needs_human",
+      "comment_id": "5672243829",
+      "comment_version_key": "5672243829:2026-09-14T23:29:26Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3698#issuecomment-5672243829",
+      "comment_created_at": "2026-09-14T23:29:26Z",
+      "comment_updated_at": "2026-09-14T23:29:26Z",
+      "comment_body_sha256": "9c3a5f93749d3aa6a5df2689b3f7f010d283cedcb3384138d1b75e40a12cf77e",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3698,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported local improvement does not establish safe production concurrency; unpaced saturation still produces transaction conflicts. (sha=c12ef388479abe94f39de8267c168a83c85de1a7)",
+      "expected_head_sha": "c12ef388479abe94f39de8267c168a83c85de1a7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T23:30:46.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/clawscan-claim-contention",
+        "head_sha": "c12ef388479abe94f39de8267c168a83c85de1a7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
