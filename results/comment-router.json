@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T12:16:49.996Z",
+  "updated_at": "2026-09-14T12:18:32.128Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147954:5660471623:2026-09-14T07:23:00Z:re_review",
-      "comment_id": "5660471623",
-      "comment_version_key": "5660471623:2026-09-14T07:23:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147954#issuecomment-5660471623",
-      "comment_created_at": "2026-09-14T07:23:00Z",
-      "comment_updated_at": "2026-09-14T07:23:00Z",
-      "comment_body_sha256": "3d9730f55fe4ec8e2084f6846a9c7c9536ff99138158e8388e47f4e4762cb118",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147954,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T07:24:07.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/control-ui-startup-budget",
-        "head_sha": "cc742a90d86cb7844c7adb5b5b514cb11a44a2bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148037:5660479790:2026-09-14T07:23:50Z:clawsweeper_needs_human",
       "comment_id": "5660479790",
@@ -34977,6 +34930,39 @@
       "status": "skipped",
       "processed_at": "2026-09-14T12:16:49.996Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148228:5663743641:2026-09-14T12:16:58Z:clawsweeper_needs_human",
+      "comment_id": "5663743641",
+      "comment_version_key": "5663743641:2026-09-14T12:16:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148228#issuecomment-5663743641",
+      "comment_created_at": "2026-09-14T12:16:58Z",
+      "comment_updated_at": "2026-09-14T12:16:58Z",
+      "comment_body_sha256": "b4a161ddd95f145f3d20f18d87be87df7d1d8f3a82a4a5ee537c192dc2f10783",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148228,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Signal harness exercises the real forwarder, coordinator, and bootstrap across four handler states, but its outbound delivery spy... (sha=d701647c956d0ed33e938234f5bac114c28f0ee3)",
+      "expected_head_sha": "d701647c956d0ed33e938234f5bac114c28f0ee3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T12:18:32.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/approval-forwarding-native-runtime",
+        "head_sha": "d701647c956d0ed33e938234f5bac114c28f0ee3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
