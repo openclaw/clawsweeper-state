@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T01:33:19.438Z",
+  "updated_at": "2026-09-14T01:33:23.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147283:5655804939:2026-09-13T20:10:05Z:re_review",
-      "comment_id": "5655804939",
-      "comment_version_key": "5655804939:2026-09-13T20:10:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147283#issuecomment-5655804939",
-      "comment_created_at": "2026-09-13T20:10:05Z",
-      "comment_updated_at": "2026-09-13T20:10:05Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147283,
-      "author": "KirDE",
-      "author_id": 12144262,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T20:11:03.053Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cross-chat-async-route",
-        "head_sha": "fa5cc8b3075c471e3dd912538a5c76bd149a6b8c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147345:5655804937:2026-09-13T20:10:05Z:clawsweeper_needs_human",
       "comment_id": "5655804937",
@@ -33487,6 +33440,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/issue-134530",
         "head_sha": "ce10fef217006304b0227e62e44ac0734c27d9aa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147629:5657621092:2026-09-14T01:24:31Z:clawsweeper_needs_human",
+      "comment_id": "5657621092",
+      "comment_version_key": "5657621092:2026-09-14T01:24:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147629#issuecomment-5657621092",
+      "comment_created_at": "2026-09-14T01:05:59Z",
+      "comment_updated_at": "2026-09-14T01:24:31Z",
+      "comment_body_sha256": "f21526694b74ea4fe34a3f81aff2068ce21792d15910293faf0946b143c80edf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147629,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new installation-root transition has no demonstrated full managed-service activation and rollback run; an integration failure could leave the CLI and Gateway using different insta... (sha=85454fec906bf0c59ff8245cb21a8384199d7d47)",
+      "expected_head_sha": "85454fec906bf0c59ff8245cb21a8384199d7d47",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T01:33:23.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-dirty-relocation",
+        "head_sha": "85454fec906bf0c59ff8245cb21a8384199d7d47",
         "cluster_id": null,
         "job_path": null
       }
