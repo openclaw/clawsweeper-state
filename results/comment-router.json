@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:47:38.257Z",
+  "updated_at": "2026-09-14T02:49:13.020Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144521:5656299892:2026-09-13T21:34:13Z:re_review",
-      "comment_id": "5656299892",
-      "comment_version_key": "5656299892:2026-09-13T21:34:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144521#issuecomment-5656299892",
-      "comment_created_at": "2026-09-13T21:34:13Z",
-      "comment_updated_at": "2026-09-13T21:34:13Z",
-      "comment_body_sha256": "1ce80b2a860e15479698908fdb34bb0793523a62dfb767d6ca20956ea14366b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144521,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - revision 8d6d1eba31e: rebased onto current main (merger reworked in #145683 - the guard now sits after the new append fast path, so every offset read stays validated); the un-demonstrable cap-side repair branch is removed, leaving exactly one guard with red->green power; opening claims rewritten to match the negative real-stream result (defensive hardening, #144401 not closed). owner re-ran the suites on this revision",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T21:42:06.780Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-144401-descr",
-        "head_sha": "8d6d1eba31eca0e9c74737aa8ccb9c4cb5b5af3c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144521:5627555289:2026-09-13T21:41:06Z:clawsweeper_needs_human",
       "comment_id": "5627555289",
@@ -33562,6 +33515,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147689:5658270975:2026-09-14T02:43:35Z:re_review",
+      "comment_id": "5658270975",
+      "comment_version_key": "5658270975:2026-09-14T02:43:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147689#issuecomment-5658270975",
+      "comment_created_at": "2026-09-14T02:43:35Z",
+      "comment_updated_at": "2026-09-14T02:43:35Z",
+      "comment_body_sha256": "b3c6d27f03da22200483d47c472c02fe99e0345b8575ccd0393d05b5e4366a0d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147689,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T02:49:09.556Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-voicecall-child-target",
+        "head_sha": "b3166b0b3694fa078465025a8fb2f9092fdcfa26",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
