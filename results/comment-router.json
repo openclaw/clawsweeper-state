@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:43:03.994Z",
+  "updated_at": "2026-09-14T20:43:41.170Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148123:5665813099:2026-09-14T14:45:05Z:re_review",
-      "comment_id": "5665813099",
-      "comment_version_key": "5665813099:2026-09-14T14:45:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5665813099",
-      "comment_created_at": "2026-09-14T14:45:05Z",
-      "comment_updated_at": "2026-09-14T14:45:05Z",
-      "comment_body_sha256": "51d641cc8b5c4ec61e5d9c0e67c75b85f9f41a8343fb94f4486a931bf6abd6af",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148123,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head ec48736e58e onto repaired #148122. the argument-forwarding fix remains included; focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T14:50:01.500Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-inventory-warnings",
-        "head_sha": "b1fccce15ad2f45803f652f92b030032974a22f7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148121:5665812124:2026-09-14T14:45:01Z:re_review",
       "comment_id": "5665812124",
@@ -33672,6 +33625,39 @@
         "kind": "pull_request",
         "branch": "openclaw/remove-limitation-and-land-pr-with-live-test",
         "head_sha": "b2a7a5bc64fe388bff84045bd8ecf7d37adbcf8d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148472:5669298141:2026-09-14T20:42:40Z:clawsweeper_needs_human",
+      "comment_id": "5669298141",
+      "comment_version_key": "5669298141:2026-09-14T20:42:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148472#issuecomment-5669298141",
+      "comment_created_at": "2026-09-14T19:11:25Z",
+      "comment_updated_at": "2026-09-14T20:42:40Z",
+      "comment_body_sha256": "18ba3b60e5f91e1d96d0f95a55a619a3fe215788e21bac8b060a987aa4f14a81",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148472,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Real Kimi consent, refresh-token rotation, account entitlement, and coding-endpoint inference remain unverified; static catalog visibility does not prove account access. (sha=3ce9642999dc9125ae5332887acd201646293cce)",
+      "expected_head_sha": "3ce9642999dc9125ae5332887acd201646293cce",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T20:43:41.170Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/kimi-device-auth",
+        "head_sha": "3ce9642999dc9125ae5332887acd201646293cce",
         "cluster_id": null,
         "job_path": null
       }
