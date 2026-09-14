@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:59:46.970Z",
+  "updated_at": "2026-09-14T21:00:00.812Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148120:5666514138:2026-09-14T15:35:19Z:re_review",
-      "comment_id": "5666514138",
-      "comment_version_key": "5666514138:2026-09-14T15:35:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148120#issuecomment-5666514138",
-      "comment_created_at": "2026-09-14T15:35:19Z",
-      "comment_updated_at": "2026-09-14T15:35:19Z",
-      "comment_body_sha256": "620da4e5582308e2706259e4bdb1b1574fa06c0b1c7f49ac2cddfa8fe5ee9ef2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148120,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — exact head 19ab214cf10 removes the unused maturityinventorymember export reported by ci and rebases onto current main. focused maturity tests, formatting, maturity:check, script lint/types, docs formatting, and deadcode:exports pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T15:36:44.539Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-channel-cohorts",
-        "head_sha": "19ab214cf10f7cdf4739c964a298f88db4d8c861",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:301:5665288765:2026-09-14T15:32:44Z:clawsweeper_auto_repair",
       "comment_id": "5665288765",
@@ -33406,6 +33359,39 @@
         "kind": "pull_request",
         "branch": "fix/wizard-shared-state-test-routing",
         "head_sha": "5650d80e2cefcf56e6433638f1a1fd0d303cc9f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147711:5658145011:2026-09-14T20:55:12Z:clawsweeper_auto_repair",
+      "comment_id": "5658145011",
+      "comment_version_key": "5658145011:2026-09-14T20:55:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147711#issuecomment-5658145011",
+      "comment_created_at": "2026-09-14T02:24:18Z",
+      "comment_updated_at": "2026-09-14T20:55:12Z",
+      "comment_body_sha256": "fbcad240a1e22af305700d2967cacc49480b0c9aa7341610a0fb432287dfdd94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147711,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb48e4a9f747304bbf43b5b12798183cac2e6afc)",
+      "expected_head_sha": "bb48e4a9f747304bbf43b5b12798183cac2e6afc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T21:00:00.812Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-doctor-stale-plugin-migration-ordering",
+        "head_sha": "bb48e4a9f747304bbf43b5b12798183cac2e6afc",
         "cluster_id": null,
         "job_path": null
       }
