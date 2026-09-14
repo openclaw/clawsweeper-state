@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T09:26:22.241Z",
+  "updated_at": "2026-09-14T09:26:30.843Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147897:5659283104:2026-09-14T05:05:48Z:clawsweeper_auto_repair",
-      "comment_id": "5659283104",
-      "comment_version_key": "5659283104:2026-09-14T05:05:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147897#issuecomment-5659283104",
-      "comment_created_at": "2026-09-14T05:05:48Z",
-      "comment_updated_at": "2026-09-14T05:05:48Z",
-      "comment_body_sha256": "1f7061f8cb6b1b726d8eae86aaeb8129bec52a8af3abe8b0ef3828849245d65d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=137dc1a5a5da6e5ab46f457cf69e0515814e4d00)",
-      "expected_head_sha": "137dc1a5a5da6e5ab46f457cf69e0515814e4d00",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T05:06:46.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/feishu-block-streaming-policy",
-        "head_sha": "137dc1a5a5da6e5ab46f457cf69e0515814e4d00",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147858:5658953916:2026-09-14T05:06:30Z:clawsweeper_needs_human",
       "comment_id": "5658953916",
@@ -34350,6 +34317,53 @@
       "status": "skipped",
       "processed_at": "2026-09-14T09:26:22.241Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5661835739:2026-09-14T09:25:15Z:re_review",
+      "comment_id": "5661835739",
+      "comment_version_key": "5661835739:2026-09-14T09:25:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5661835739",
+      "comment_created_at": "2026-09-14T09:25:15Z",
+      "comment_updated_at": "2026-09-14T09:25:15Z",
+      "comment_body_sha256": "5345a43f466ba94204c0c1403a0de5cbe45622a493a36d4e715f7d9c27c9d438",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact rebased head d780c1415da2a438c5614f1a404c2b0b2335b079. the prior node shard failure was an unrelated stale clawhub fixture assertion on base, reproduced on current main and tracked by #148118 / #148129; this pr's 327 focused ui tests, 2 browser handoff e2es, and check:changed pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T09:26:27.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "d780c1415da2a438c5614f1a404c2b0b2335b079",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
