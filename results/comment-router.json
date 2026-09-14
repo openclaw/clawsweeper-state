@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:21:06.095Z",
+  "updated_at": "2026-09-14T02:21:12.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144056:5656196240:2026-09-13T21:16:03Z:re_review",
-      "comment_id": "5656196240",
-      "comment_version_key": "5656196240:2026-09-13T21:16:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144056#issuecomment-5656196240",
-      "comment_created_at": "2026-09-13T21:16:03Z",
-      "comment_updated_at": "2026-09-13T21:16:03Z",
-      "comment_body_sha256": "b5f890ac6b3e60a2faeb5a855311017015cc0aaa7385037f891b40eb502e3c03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144056,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review - revision 3b4f82d8eff: collision classification moved to the transport owner (`retryablecollision`, per-task), predecessor health captured pre-stop, unclassified terminal reports keep their exact previous behavior; branch rebased onto main. owner re-ran red->green (3 failed -> suites green)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T21:17:37.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-138947-descr",
-        "head_sha": "3b4f82d8eff8926056b8cfc203e2f2c78efd7e2b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-09-13T21:15:48Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -33597,6 +33550,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-file-transfer-batches",
         "head_sha": "9305b9cb3867ee6a1fc822229ba419b78b81853f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139878:5557651114:2026-09-14T02:20:12Z:clawsweeper_needs_human",
+      "comment_id": "5557651114",
+      "comment_version_key": "5557651114:2026-09-14T02:20:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139878#issuecomment-5557651114",
+      "comment_created_at": "2026-09-06T07:09:33Z",
+      "comment_updated_at": "2026-09-14T02:20:12Z",
+      "comment_body_sha256": "20a92f0bbcffe4ce3283646f0c2dd15cfbb22d9f7d2cdf9f8772d69ef9e7cdd4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139878,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The real 13-store Linux benchmark positively supports the preflight optimization, and the pinned published-updater first hop passed wi... (sha=051bf9df2838d135942c2a43701b90cdcb7d4a89)",
+      "expected_head_sha": "051bf9df2838d135942c2a43701b90cdcb7d4a89",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T02:21:12.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/bound-agent-db-preflight-concurrency",
+        "head_sha": "051bf9df2838d135942c2a43701b90cdcb7d4a89",
         "cluster_id": null,
         "job_path": null
       }
