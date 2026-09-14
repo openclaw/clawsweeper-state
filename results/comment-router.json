@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T10:56:08.347Z",
+  "updated_at": "2026-09-14T10:56:14.877Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147568:5657203698:2026-09-14T06:02:52Z:clawsweeper_needs_human",
-      "comment_id": "5657203698",
-      "comment_version_key": "5657203698:2026-09-14T06:02:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147568#issuecomment-5657203698",
-      "comment_created_at": "2026-09-14T00:00:29Z",
-      "comment_updated_at": "2026-09-14T06:02:52Z",
-      "comment_body_sha256": "f2eaf889883a9c8909fa87a496f886a167a715db93d0aafbf580062d2ffbda33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147568,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepted downgrade limitation: older single-account writers can discard secondary links or split a person, and re-upgrading cannot reconstruct those links; backup and explicit relinki... (sha=2c60dee2b4dfb39d6dc90d3da05c31b9985f8786)",
-      "expected_head_sha": "2c60dee2b4dfb39d6dc90d3da05c31b9985f8786",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T06:08:23.386Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/we-have-identity-on-the-server-so-steipete-and-peter",
-        "head_sha": "2c60dee2b4dfb39d6dc90d3da05c31b9985f8786",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147707:5658037822:2026-09-14T06:00:48Z:clawsweeper_auto_repair",
       "comment_id": "5658037822",
@@ -34633,6 +34600,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148151:5662851599:2026-09-14T10:55:13Z:re_review",
+      "comment_id": "5662851599",
+      "comment_version_key": "5662851599:2026-09-14T10:55:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148151#issuecomment-5662851599",
+      "comment_created_at": "2026-09-14T10:55:13Z",
+      "comment_updated_at": "2026-09-14T10:55:13Z",
+      "comment_body_sha256": "94ba22538e41d0118aa815616e822c994b88bd97a679183a593377729afdfa87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148151,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T10:56:12.271Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maturity-348158-cron-alert-contract",
+        "head_sha": "d45c0ea7cc35dd11e248a28d77b829b8d004e508",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
