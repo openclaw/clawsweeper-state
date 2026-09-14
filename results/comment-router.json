@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T18:18:45.804Z",
+  "updated_at": "2026-09-14T18:19:01.088Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148216:5663547556:2026-09-14T12:00:12Z:clawsweeper_needs_human",
-      "comment_id": "5663547556",
-      "comment_version_key": "5663547556:2026-09-14T12:00:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148216#issuecomment-5663547556",
-      "comment_created_at": "2026-09-14T12:00:12Z",
-      "comment_updated_at": "2026-09-14T12:00:12Z",
-      "comment_body_sha256": "6119a8f1117d72ab8429b682d04807d5783f639290696d949ec8c9a534ba2fe5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148216,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=77a494970f0fa56a807ac2171aeb44debc7379ed)",
-      "expected_head_sha": "77a494970f0fa56a807ac2171aeb44debc7379ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T12:01:28.158Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/config-unset-pruning-20260914",
-        "head_sha": "77a494970f0fa56a807ac2171aeb44debc7379ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143250:5605201085:2026-09-14T11:56:00Z:clawsweeper_needs_human",
       "comment_id": "5605201085",
@@ -34423,6 +34390,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148432:5668606757:2026-09-14T18:18:04Z:re_review",
+      "comment_id": "5668606757",
+      "comment_version_key": "5668606757:2026-09-14T18:18:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148432#issuecomment-5668606757",
+      "comment_created_at": "2026-09-14T18:18:04Z",
+      "comment_updated_at": "2026-09-14T18:18:04Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148432,
+      "author": "Gabrielnkl",
+      "author_id": 18104911,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T18:18:59.080Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-lease-heartbeat-onlost-idempotency",
+        "head_sha": "0733933885ab4231b7d909da398ddc3147432686",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
