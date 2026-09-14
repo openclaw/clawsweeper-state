@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T18:05:11.812Z",
+  "updated_at": "2026-09-14T18:05:21.444Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5663449084:2026-09-14T11:50:51Z:re_review",
-      "comment_id": "5663449084",
-      "comment_version_key": "5663449084:2026-09-14T11:50:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5663449084",
-      "comment_created_at": "2026-09-14T11:50:51Z",
-      "comment_updated_at": "2026-09-14T11:50:51Z",
-      "comment_body_sha256": "be2d58a7caa1139d94413be4f413eaa8ad605b8e90d1a7f2b9cccb5d71bfbf65",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T11:54:52.074Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "eb13c75938db9cbc089e1113737c5671ea7d7730",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148184:5663456933:2026-09-14T11:51:37Z:re_review",
       "comment_id": "5663456933",
@@ -34509,6 +34462,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabfleet:124:5513540479:2026-09-14T18:04:30Z:clawsweeper_needs_human",
+      "comment_id": "5513540479",
+      "comment_version_key": "5513540479:2026-09-14T18:04:30Z",
+      "comment_url": "https://github.com/openclaw/crabfleet/pull/124#issuecomment-5513540479",
+      "comment_created_at": "2026-09-02T17:21:41Z",
+      "comment_updated_at": "2026-09-14T18:04:30Z",
+      "comment_body_sha256": "2307438168b07b3237b3042aa5d781cdd8aebe718e29df198ef6dc225a8efe0d",
+      "repo": "openclaw/crabfleet",
+      "issue_number": 124,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured evidence exercises src/app/api.js with mocked fetch responses, but does not show the desktop page recovering through real transpor... (sha=46cd19f1156507c055812b3634d7694a61eb3242)",
+      "expected_head_sha": "46cd19f1156507c055812b3634d7694a61eb3242",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T18:05:21.444Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/browser-api-timeout",
+        "head_sha": "46cd19f1156507c055812b3634d7694a61eb3242",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
