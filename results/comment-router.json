@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T01:22:02.577Z",
+  "updated_at": "2026-09-14T01:22:45.504Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137374:5528205164:2026-09-13T19:59:50Z:clawsweeper_needs_human",
-      "comment_id": "5528205164",
-      "comment_version_key": "5528205164:2026-09-13T19:59:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137374#issuecomment-5528205164",
-      "comment_created_at": "2026-09-03T15:41:23Z",
-      "comment_updated_at": "2026-09-13T19:59:50Z",
-      "comment_body_sha256": "36d1d84e071301579e1b865acf776e5f2291088852ebb172a18982425e6692b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137374,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: launcher normalization changes termination eligibility, but current-candidate Windows final-effect pro...; Review finding: [P1] Reject unresolved target expansions before stripping redirections — src/daemon/schtasks-layout.ts:128-132 - [medium] Expanded redirection targets can invalida... (sha=d421cc0b0add8ac39efd55049195cdb8dff3a925)",
-      "expected_head_sha": "d421cc0b0add8ac39efd55049195cdb8dff3a925",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T20:00:52.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/schtasks-launcher-redirect-argv",
-        "head_sha": "4b172a80b694a30e53a96ffca5925ae6db46b3cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144316:5624115460:2026-09-13T19:59:51Z:clawsweeper_auto_repair",
       "comment_id": "5624115460",
@@ -33508,6 +33475,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147574:5657730566:2026-09-14T01:21:47Z:re_review",
+      "comment_id": "5657730566",
+      "comment_version_key": "5657730566:2026-09-14T01:21:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147574#issuecomment-5657730566",
+      "comment_created_at": "2026-09-14T01:21:47Z",
+      "comment_updated_at": "2026-09-14T01:21:47Z",
+      "comment_body_sha256": "05f6cf95d283432468ef604cea10cfcb89992840423498cbcbe10cfa7787de21",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147574,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T01:22:42.857Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/panel-loading-in-place",
+        "head_sha": "e4a6359d21dd8493e367b551db22187a54c125cb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
