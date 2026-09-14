@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147772"
-mode: "autonomous"
-run_id: "34801590451"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34801590451"
+mode: "plan"
+run_id: "34804646981"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34804646981"
 head_sha: "60e9eac3f1cce2d8a4f886c9ebc5f4a9092429dc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-14T03:55:41.877Z"
-canonical: "https://github.com/openclaw/openclaw/issues/147772"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/147772"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-14T04:50:29.460Z"
+canonical: "#147772"
+canonical_issue: "#147772"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34801590451](https://github.com/openclaw/clawsweeper/actions/runs/34801590451)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34804646981](https://github.com/openclaw/clawsweeper/actions/runs/34804646981)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/147772
+Canonical: #147772
 
 ## Summary
 
-Confirmed the defective source path on preflight main b087e603a5c95ec39af4ff6d1065ebdbe6d86a26. Prepared a narrow fix artifact. Implementation, failing regression, CLI transcripts, and validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Plan a narrow fix for the shared OAuth-directory predicate. Checkout matches preflight main 2e5aec77089bd59eff15daa3b3f1df5a961f55a3. No files or GitHub state changed; runtime reproduction and validation remain executor gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Confirmed the defective source path on preflight main b087e603a5c95ec39af4ff6d10
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147772 | fix_needed | planned | canonical | The source supports a narrow repair, but runtime reproduction must succeed before production edits. |
-| #69862 | keep_closed | skipped | related | Historical related work does not fix the reported branch; no close or merge action is authorized. |
-| cluster:issue-openclaw-openclaw-147772 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation and all runtime proof require a writable executor. |
+| #147772 | fix_needed | planned | canonical | A focused diagnostic correction is appropriate without changing authorization, configuration, storage, or plugin contracts. Reproduce on current main before implementation; keep the issue open. |
 
 ## Needs Human
 
