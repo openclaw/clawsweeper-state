@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:41:18.192Z",
+  "updated_at": "2026-09-14T20:41:51.419Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148309:5665581897:2026-09-14T14:28:28Z:re_review",
-      "comment_id": "5665581897",
-      "comment_version_key": "5665581897:2026-09-14T14:28:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148309#issuecomment-5665581897",
-      "comment_created_at": "2026-09-14T14:28:28Z",
-      "comment_updated_at": "2026-09-14T14:28:28Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148309,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T14:39:37.680Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/wizard-shared-state-fork-pool",
-        "head_sha": "a62acae83085b79e643dbdd20b1670cb6cfd1d3b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144984:5665713828:2026-09-14T14:37:59Z:re_review",
       "comment_id": "5665713828",
@@ -33756,6 +33709,39 @@
         "kind": "pull_request",
         "branch": "fix/agent-update-retry-guidance",
         "head_sha": "68bb6346978f42b2e8a96cb1555907484cdff66a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148266:5670509619:2026-09-14T20:40:53Z:clawsweeper_needs_human",
+      "comment_id": "5670509619",
+      "comment_version_key": "5670509619:2026-09-14T20:40:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148266#issuecomment-5670509619",
+      "comment_created_at": "2026-09-14T20:40:53Z",
+      "comment_updated_at": "2026-09-14T20:40:53Z",
+      "comment_body_sha256": "2544e3120401dc2284c3a276d4537f40bcb154119a0960bc3e0d2196dad0498e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148266,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The shared resolver is exercised through mocked CLI and installation tests, but no real after-fix node run/install output demonstrates rejectio... (sha=75f7e5af0533312522ef7500a3ee7b12ed5ff0d4)",
+      "expected_head_sha": "75f7e5af0533312522ef7500a3ee7b12ed5ff0d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T20:41:51.419Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-context-path-blank",
+        "head_sha": "75f7e5af0533312522ef7500a3ee7b12ed5ff0d4",
         "cluster_id": null,
         "job_path": null
       }
