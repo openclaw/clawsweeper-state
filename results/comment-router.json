@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T00:30:43.670Z",
+  "updated_at": "2026-09-14T00:30:49.361Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144271:5655481072:2026-09-13T19:15:45Z:re_review",
-      "comment_id": "5655481072",
-      "comment_version_key": "5655481072:2026-09-13T19:15:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144271#issuecomment-5655481072",
-      "comment_created_at": "2026-09-13T19:15:45Z",
-      "comment_updated_at": "2026-09-13T19:15:45Z",
-      "comment_body_sha256": "ae2e58efaa68757536cb5bc897f44be903c76e99bf4f7f728fbedab170027007",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144271,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T19:16:38.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "work/keyboard-20260909-reply",
-        "head_sha": "43681c5839a478cb5996d3f5b2cde7de0cb5066d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147301:5655436872:2026-09-13T19:08:05Z:re_review",
       "comment_id": "5655436872",
@@ -33407,6 +33360,39 @@
         "kind": "pull_request",
         "branch": "fix/pr-owned-worktree-cleanup-20260914",
         "head_sha": "01052eb6868c8a817205284e5f08f885755ab1d2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:323:5655965833:2026-09-14T00:29:53Z:clawsweeper_auto_repair",
+      "comment_id": "5655965833",
+      "comment_version_key": "5655965833:2026-09-14T00:29:53Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/323#issuecomment-5655965833",
+      "comment_created_at": "2026-09-13T20:37:13Z",
+      "comment_updated_at": "2026-09-14T00:29:53Z",
+      "comment_body_sha256": "ee03dc4f0c6e0689ee4324aa014d518b2f7751c563eff7f4450beb8817f812f3",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 323,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c869d1efb159b3f08ad36c91ff7d4e4055987ead)",
+      "expected_head_sha": "c869d1efb159b3f08ad36c91ff7d4e4055987ead",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T00:30:49.361Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-ads-path-rejection-20260913",
+        "head_sha": "c869d1efb159b3f08ad36c91ff7d4e4055987ead",
         "cluster_id": null,
         "job_path": null
       }
