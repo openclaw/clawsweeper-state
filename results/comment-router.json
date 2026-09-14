@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:02:16.414Z",
+  "updated_at": "2026-09-14T14:02:41.584Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147954:5659691511:2026-09-14T08:19:02Z:clawsweeper_needs_human",
-      "comment_id": "5659691511",
-      "comment_version_key": "5659691511:2026-09-14T08:19:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147954#issuecomment-5659691511",
-      "comment_created_at": "2026-09-14T06:01:22Z",
-      "comment_updated_at": "2026-09-14T08:19:02Z",
-      "comment_body_sha256": "feb0b8c699a67c43cd1549ef68ec507f1bf39d75485924ae2d83ad40f944ca81",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147954,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required originating-chat screenshot delivery is not confirmed in the available evidence. (sha=4baf31fb00338e9c8ec60b762811ffee9f219b23)",
-      "expected_head_sha": "4baf31fb00338e9c8ec60b762811ffee9f219b23",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:21:02.573Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "repair/control-ui-startup-budget",
-        "head_sha": "4baf31fb00338e9c8ec60b762811ffee9f219b23",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126604:5353679197:2026-09-14T08:20:36Z:clawsweeper_auto_repair",
       "comment_id": "5353679197",
@@ -34875,6 +34842,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148175:5665193737:2026-09-14T14:01:13Z:re_review",
+      "comment_id": "5665193737",
+      "comment_version_key": "5665193737:2026-09-14T14:01:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148175#issuecomment-5665193737",
+      "comment_created_at": "2026-09-14T14:01:13Z",
+      "comment_updated_at": "2026-09-14T14:01:13Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148175,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:02:37.345Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-service-retention",
+        "head_sha": "d8b46ddcdf3813fc61db2f9c141603f8846af994",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
