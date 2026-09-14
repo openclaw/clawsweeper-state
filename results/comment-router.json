@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T00:25:45.336Z",
+  "updated_at": "2026-09-14T00:25:45.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147291:5655439738:2026-09-13T19:08:36Z:clawsweeper_needs_human",
-      "comment_id": "5655439738",
-      "comment_version_key": "5655439738:2026-09-13T19:08:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147291#issuecomment-5655439738",
-      "comment_created_at": "2026-09-13T19:08:36Z",
-      "comment_updated_at": "2026-09-13T19:08:36Z",
-      "comment_body_sha256": "c5e51d1652f6c7b600b7036e3274890f80a61fe144b2a089b7d3920ad8a56079",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147291,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing hooks that rewrite an annotated action to an incompatible result can now produce a contract error after the effect occurs; compatibility beyond the covered fixtures remains u... (sha=3a33a876c056901b783d3d333f870270fde3757e)",
-      "expected_head_sha": "3a33a876c056901b783d3d333f870270fde3757e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T19:09:41.064Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/code-mode-action-contracts",
-        "head_sha": "3a33a876c056901b783d3d333f870270fde3757e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/photoscrawl:46:5654933225:2026-09-13T19:09:03Z:clawsweeper_auto_repair",
       "comment_id": "5654933225",
@@ -33359,6 +33326,53 @@
         "kind": "pull_request",
         "branch": "fix/codex-skill-carrier",
         "head_sha": "4c77da35ae69e1276d70e6a0458fd763e94bf5ce",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143295:5657367069:2026-09-14T00:24:48Z:re_review",
+      "comment_id": "5657367069",
+      "comment_version_key": "5657367069:2026-09-14T00:24:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5657367069",
+      "comment_created_at": "2026-09-14T00:24:48Z",
+      "comment_updated_at": "2026-09-14T00:24:48Z",
+      "comment_body_sha256": "69b2689afc93b3b929027983dba2e5d5fba834bf1704d3780aeac73936452270",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143295,
+      "author": "saladinyao-cyber",
+      "author_id": 240252919,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T00:25:43.337Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-search-reader-lifecycle-v2",
+        "head_sha": "fa9165e28c6c22b388df37e74c83a99169a05837",
         "cluster_id": null,
         "job_path": null
       },
