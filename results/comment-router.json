@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-14T10:44:07.137Z",
+  "updated_at": "2026-09-14T10:44:48.674Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135480:5515287342:2026-09-02T19:38:58Z:re_review",
-      "comment_id": "5515287342",
-      "comment_version_key": "5515287342:2026-09-02T19:38:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135480#issuecomment-5515287342",
-      "comment_created_at": "2026-09-02T19:38:58Z",
-      "comment_updated_at": "2026-09-02T19:38:58Z",
-      "comment_body_sha256": "6f3eced4d22c387e1f716372268c3feee3eae6749a7c5cd23f3c671523241ee0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135480,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T06:02:51.382Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147954:5659691511:2026-09-14T06:01:22Z:clawsweeper_auto_repair",
       "comment_id": "5659691511",
@@ -34480,6 +34453,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148117:5661894986:2026-09-14T10:43:40Z:clawsweeper_needs_human",
+      "comment_id": "5661894986",
+      "comment_version_key": "5661894986:2026-09-14T10:43:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148117#issuecomment-5661894986",
+      "comment_created_at": "2026-09-14T09:30:07Z",
+      "comment_updated_at": "2026-09-14T10:43:40Z",
+      "comment_body_sha256": "2c91c8d5d316a35b675d3438076df90051985f58e0899a657b6232cfa0c0ae3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148117,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published-updater-to-candidate qualification and failing-before/passing-after evidence remain unqualified; passing handler tests do not establish those outcomes. (sha=f0017931e41fb8380313610736f6cf6c3bb48496)",
+      "expected_head_sha": "f0017931e41fb8380313610736f6cf6c3bb48496",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T10:44:48.674Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-gateway-failure-evidence-145388",
+        "head_sha": "f0017931e41fb8380313610736f6cf6c3bb48496",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
