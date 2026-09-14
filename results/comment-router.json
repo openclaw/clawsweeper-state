@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T15:10:56.619Z",
+  "updated_at": "2026-09-14T15:16:21.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148061:5661492135:2026-09-14T08:57:19Z:re_review",
-      "comment_id": "5661492135",
-      "comment_version_key": "5661492135:2026-09-14T08:57:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148061#issuecomment-5661492135",
-      "comment_created_at": "2026-09-14T08:57:19Z",
-      "comment_updated_at": "2026-09-14T08:57:19Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148061,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T09:00:44.549Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-service-manager-route",
-        "head_sha": "5ed8137be0ff47a86f359067fbcb3017187ef8b1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-14T08:54:41Z:clawsweeper_needs_human",
       "comment_id": "5611675668",
@@ -34875,6 +34828,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/blucli:9:5666224516:2026-09-14T15:14:25Z:clawsweeper_needs_human",
+      "comment_id": "5666224516",
+      "comment_version_key": "5666224516:2026-09-14T15:14:25Z",
+      "comment_url": "https://github.com/steipete/blucli/pull/9#issuecomment-5666224516",
+      "comment_created_at": "2026-09-14T15:14:25Z",
+      "comment_updated_at": "2026-09-14T15:14:25Z",
+      "comment_body_sha256": "e426cddbb34adedb3ea1c2fd5158064a67f156ba4fdfb3d8f13442d856011a92",
+      "repo": "steipete/blucli",
+      "issue_number": 9,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Tag pushes will no longer publish releases: operators must use manual dispatch with the documented signing credentials and protected-branch prerequisites. The owner explicitly propose... (sha=d2d9319e14641c4e6ffb92e762bb76cd7fc0b911)",
+      "expected_head_sha": "d2d9319e14641c4e6ffb92e762bb76cd7fc0b911",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T15:16:21.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/developer-id-releases",
+        "head_sha": "d2d9319e14641c4e6ffb92e762bb76cd7fc0b911",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
