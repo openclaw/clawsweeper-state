@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:15:16.865Z",
+  "updated_at": "2026-09-14T05:15:35.355Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147639:5657600792:2026-09-14T01:02:44Z:re_review",
-      "comment_id": "5657600792",
-      "comment_version_key": "5657600792:2026-09-14T01:02:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147639#issuecomment-5657600792",
-      "comment_created_at": "2026-09-14T01:02:44Z",
-      "comment_updated_at": "2026-09-14T01:02:44Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147639,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T01:11:16.279Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/wave17-control-ui-github-matrices",
-        "head_sha": "1a989caefd47c5f7345e75e5694a26bca4c4a347",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147639:5657652494:2026-09-14T01:10:23Z:clawsweeper_needs_human",
       "comment_id": "5657652494",
@@ -33278,6 +33231,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147195:5654678022:2026-09-14T05:14:38Z:clawsweeper_needs_human",
+      "comment_id": "5654678022",
+      "comment_version_key": "5654678022:2026-09-14T05:14:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147195#issuecomment-5654678022",
+      "comment_created_at": "2026-09-13T16:55:03Z",
+      "comment_updated_at": "2026-09-14T05:14:38Z",
+      "comment_body_sha256": "054ab0265b4bce046c82f0c6d8614baf6f60b546f015550f29784e84c400d8c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147195,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=496aefc06a93067ff6699a3981abc73f55a8ab7a)",
+      "expected_head_sha": "496aefc06a93067ff6699a3981abc73f55a8ab7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:15:35.355Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-publication-state-ux",
+        "head_sha": "496aefc06a93067ff6699a3981abc73f55a8ab7a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
