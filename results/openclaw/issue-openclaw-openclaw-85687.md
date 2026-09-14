@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-85687"
 mode: "autonomous"
-run_id: "33970683750"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/33970683750"
-head_sha: "42226a81c43c2c8ded17a684a706e58f3a58577a"
+run_id: "34870415036"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34870415036"
+head_sha: "5b8e55a50a363bc8388218797b3ab2d4a5b17d0b"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-05T14:13:17.652Z"
+published_at: "2026-09-14T18:42:48.792Z"
 canonical: "https://github.com/openclaw/openclaw/issues/85687"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/85687"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/33970683750](https://github.com/openclaw/clawsweeper/actions/runs/33970683750)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34870415036](https://github.com/openclaw/clawsweeper/actions/runs/34870415036)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/85687
 
 ## Summary
 
-Prepared a narrow fix artifact. Implementation and reproduction are blocked by the read-only checkout, missing dependencies, and missing sibling Codex source. No files or GitHub state changed; no tests reached collection.
+Source inspection confirms the repair-text leak remains on preflight main. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only host and absent dependencies. The open-fixing-PR recheck also requires unavailable GitHub credentials. No files or GitHub state were changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Prepared a narrow fix artifact. Implementation and reproduction are blocked by t
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #85687 | fix_needed | planned | canonical | Current source supports the reported discrepancy, but the required composed failing reproduction must succeed before production edits or PR creation. |
-| cluster:issue-openclaw-openclaw-85687 | build_fix_artifact | planned |  | Plan is ready for a writable executor. Implementation remains blocked until dependencies and required Codex source are available, the fixing-PR recheck completes, and the production-order regression reproduces on current main. |
+| #85687 | fix_needed | planned | canonical | The source finding remains valid; retain the issue and require a failing production-order regression before implementing the fix. |
+| cluster:issue-openclaw-openclaw-85687 | build_fix_artifact | planned |  | Artifact preparation is complete; local implementation and validation remain blocked by host capabilities. |
 
 ## Needs Human
 
