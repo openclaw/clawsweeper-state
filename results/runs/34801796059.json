@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-147776",
+  "mode": "autonomous",
+  "run_id": "34801796059",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34801796059",
+  "head_sha": "60e9eac3f1cce2d8a4f886c9ebc5f4a9092429dc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-147776.md",
+  "published_at": "2026-09-14T03:50:02.636Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/147776",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/147776",
+  "canonical_pr": null,
+  "summary": "Source confirms incomplete details sanitization on the preflight main SHA. Implementation and runtime reproduction are blocked by the read-only checkout and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#147776",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#147776",
+      "candidate_fix": null,
+      "reason": "The existing sanitizer contract supports a narrow bug fix. Actual failing runner regression and subsequent validation remain required; this host cannot install dependencies or edit files."
+    },
+    {
+      "target": "#104156",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Already merged; preserve its byte-accounting behavior and existing regression coverage."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-147776",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#147776",
+      "candidate_fix": null,
+      "reason": "Return an executable repair plan without claiming completed reproduction, implementation, review, or branch validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
