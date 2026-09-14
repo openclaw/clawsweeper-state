@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-147694"
-mode: "autonomous"
-run_id: "34797832963"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34797832963"
+mode: "plan"
+run_id: "34800994530"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34800994530"
 head_sha: "60e9eac3f1cce2d8a4f886c9ebc5f4a9092429dc"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-14T02:42:18.702Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-14T03:02:14.370Z"
 canonical: "https://github.com/openclaw/openclaw/issues/147694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/147694"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34797832963](https://github.com/openclaw/clawsweeper/actions/runs/34797832963)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34800994530](https://github.com/openclaw/clawsweeper/actions/runs/34800994530)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/147694
 
 ## Summary
 
-The reported queue dependency remains in source at preflight main 2300e1be30bfdbbbbf5e82560aaea126b3d66c6e. Narrow fix artifact prepared. Implementation and required runtime reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state changed.
+Plan a narrow startup-admission fix for #147694. Keep #147693 separate and #103784 closed. No files or GitHub state changed; reproduction, implementation, and validation remain pending. Local HEAD 0a727c3ef49f254cae0d0bc7b5669c422924dc39 differs from preflight main a2ff3a7624b8b4106432375273fc57eede92f23a, so the executor must establish the regression on refreshed main.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The reported queue dependency remains in source at preflight main 2300e1be30bfdb
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #147694 | fix_needed | planned | canonical | The source supports the narrow repair. Execution requires a writable executor with dependencies and a failing current-main regression before production edits. |
-| #147693 | keep_related | planned | related | Different owner and repair; retain as a separate issue. |
-| #103784 | keep_closed | skipped | related | Historical evidence only; no closure action. |
-| cluster:issue-openclaw-openclaw-147694 | build_fix_artifact | planned | canonical | Hand off the bounded repair to the deterministic executor without changing cleanup ownership or transport behavior. |
+| #147694 | fix_needed | planned | canonical | A focused fix is authorized, conditional on reproducing the defect on latest main. The supplied artifact contains no candidate PR. |
+| #147693 | keep_related | planned | related | Different owner and repair; exclude transport changes from this cluster. Synthetic authentication fixtures do not establish a security-boundary bypass. |
+| #103784 | keep_closed | skipped | related | Historical lifecycle context; no action is needed. |
 
 ## Needs Human
 
