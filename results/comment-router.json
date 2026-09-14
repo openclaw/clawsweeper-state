@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:18:27.333Z",
+  "updated_at": "2026-09-14T14:18:39.030Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142967:5598875509:2026-09-14T08:26:37Z:clawsweeper_needs_human",
-      "comment_id": "5598875509",
-      "comment_version_key": "5598875509:2026-09-14T08:26:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142967#issuecomment-5598875509",
-      "comment_created_at": "2026-09-09T08:34:37Z",
-      "comment_updated_at": "2026-09-14T08:26:37Z",
-      "comment_body_sha256": "aa3f77ef4843ca8edd76c5f4f7e50b1ff0aed794fa6ce9e94099c5f8188c233b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142967,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: retain the passing native grant-before-ACK and real Foundation/Gateway TLS/read evidence, plus the par...; Review finding: [medium] Complete stale-authority final-effect evidence — apps/ios/WatchApp/Sources/WatchGatewayController.swift:239 (sha=9e3ababed0fbd148b7fa0d41793348d1cf31cbbb)",
-      "expected_head_sha": "9e3ababed0fbd148b7fa0d41793348d1cf31cbbb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:29:18.325Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat-watch-direct-conversations-20260909",
-        "head_sha": "9e3ababed0fbd148b7fa0d41793348d1cf31cbbb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148085:5661164175:2026-09-14T08:27:29Z:clawsweeper_needs_human",
       "comment_id": "5661164175",
@@ -34889,6 +34856,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148123:5665427453:2026-09-14T14:17:29Z:re_review",
+      "comment_id": "5665427453",
+      "comment_version_key": "5665427453:2026-09-14T14:17:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5665427453",
+      "comment_created_at": "2026-09-14T14:17:29Z",
+      "comment_updated_at": "2026-09-14T14:17:29Z",
+      "comment_body_sha256": "a3bfde288cd82af491623f9a4db210378947f9a63ba1583cf7443497642c153e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148123,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head b8662242d64. the argument-forwarding fix remains included; focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:18:36.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-inventory-warnings",
+        "head_sha": "b8662242d64fc38104fa584b902c25fc6daddc97",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
