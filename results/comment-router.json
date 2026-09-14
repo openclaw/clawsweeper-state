@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T19:55:18.305Z",
+  "updated_at": "2026-09-14T19:55:36.089Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147929:5665135041:2026-09-14T13:56:59Z:re_review",
-      "comment_id": "5665135041",
-      "comment_version_key": "5665135041:2026-09-14T13:56:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147929#issuecomment-5665135041",
-      "comment_created_at": "2026-09-14T13:56:59Z",
-      "comment_updated_at": "2026-09-14T13:56:59Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147929,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T13:58:13.397Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-shared-exit-listener-cleanup",
-        "head_sha": "04b93c898b63398dc9132f5bc9f8ff99aba971c9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148247:5665144222:2026-09-14T13:57:39Z:re_review",
       "comment_id": "5665144222",
@@ -33936,6 +33889,39 @@
         "kind": "pull_request",
         "branch": "fix/attempt-transcript-lifecycle-als-disable",
         "head_sha": "47b55017364b3d4f1c23f5bb9dceb04a84c7e9e6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1422:5669914987:2026-09-14T19:53:11Z:clawsweeper_needs_human",
+      "comment_id": "5669914987",
+      "comment_version_key": "5669914987:2026-09-14T19:53:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1422#issuecomment-5669914987",
+      "comment_created_at": "2026-09-14T19:53:11Z",
+      "comment_updated_at": "2026-09-14T19:53:11Z",
+      "comment_body_sha256": "828b056061ab74e847051d2bac31a3418d50170d8cbeb48fc34f5d8faae4baaf",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removing both capacity and free-memory bounds affects every CUDA GPU. A newly admitted device may download a model or choose a larger profile that later fails to load; the historical... (sha=4723adb7bbc656e7c2a55052f5185e01043a54c0)",
+      "expected_head_sha": "4723adb7bbc656e7c2a55052f5185e01043a54c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T19:55:36.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "shanselman-revert-dxgi-admission-cap",
+        "head_sha": "4723adb7bbc656e7c2a55052f5185e01043a54c0",
         "cluster_id": null,
         "job_path": null
       }
