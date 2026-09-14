@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T13:08:44.450Z",
+  "updated_at": "2026-09-14T13:09:36.050Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148004:5660775076:2026-09-14T07:53:06Z:re_review",
-      "comment_id": "5660775076",
-      "comment_version_key": "5660775076:2026-09-14T07:53:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148004#issuecomment-5660775076",
-      "comment_created_at": "2026-09-14T07:53:06Z",
-      "comment_updated_at": "2026-09-14T07:53:06Z",
-      "comment_body_sha256": "77ec3b190c881e2930c375de09767e8fcb2242e98e0e043ef3f3abf4975ee079",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148004,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T08:00:22.844Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/gateway-cpu-profile-20260914",
-        "head_sha": "e1f102eaa1bbab4c33fb6e3c1d606cd7f716e909",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145942:5660777850:2026-09-14T07:53:22Z:re_review",
       "comment_id": "5660777850",
@@ -34840,6 +34793,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146052:5646640009:2026-09-14T13:03:11Z:clawsweeper_needs_human",
+      "comment_id": "5646640009",
+      "comment_version_key": "5646640009:2026-09-14T13:03:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146052#issuecomment-5646640009",
+      "comment_created_at": "2026-09-12T14:53:51Z",
+      "comment_updated_at": "2026-09-14T13:03:11Z",
+      "comment_body_sha256": "74a989e94728d61fe4a965f13f813619c33dd0a213cb8c663184564f52701957",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146052,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the publisher and detached mirror now revalidate authority before mutations, but supplied CLI tests replace gh,... (sha=4e18df7c09f57c7a7fdba8b46a4c2a882b78f4d4)",
+      "expected_head_sha": "4e18df7c09f57c7a7fdba8b46a4c2a882b78f4d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T13:09:36.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/linux-audit-stack-08-publication-20260912",
+        "head_sha": "4e18df7c09f57c7a7fdba8b46a4c2a882b78f4d4",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
