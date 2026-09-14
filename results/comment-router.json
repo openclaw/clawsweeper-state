@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T07:24:05.191Z",
+  "updated_at": "2026-09-14T07:24:11.270Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/octopool:137:5658609873:2026-09-14T03:34:16Z:clawsweeper_needs_human",
-      "comment_id": "5658609873",
-      "comment_version_key": "5658609873:2026-09-14T03:34:16Z",
-      "comment_url": "https://github.com/openclaw/octopool/pull/137#issuecomment-5658609873",
-      "comment_created_at": "2026-09-14T03:34:16Z",
-      "comment_updated_at": "2026-09-14T03:34:16Z",
-      "comment_body_sha256": "aa10f46d6d3a5eb396c2cdbf86b11ceebf91217f9799ec0f9c8d63e33b4d6833",
-      "repo": "openclaw/octopool",
-      "issue_number": 137,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - During upstream outages, callers that previously received day-long stale terminal CI may reach the existing error/local-fallback path after five minutes; the cold refill and higher re... (sha=254a9a1485b24258468d5c82c62993c42678ab01)",
-      "expected_head_sha": "254a9a1485b24258468d5c82c62993c42678ab01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T03:35:19.207Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mutable-ci-cache-ttl",
-        "head_sha": "254a9a1485b24258468d5c82c62993c42678ab01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147707:5658037822:2026-09-14T03:35:24Z:clawsweeper_needs_human",
       "comment_id": "5658037822",
@@ -32991,6 +32958,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147954:5660471623:2026-09-14T07:23:00Z:re_review",
+      "comment_id": "5660471623",
+      "comment_version_key": "5660471623:2026-09-14T07:23:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147954#issuecomment-5660471623",
+      "comment_created_at": "2026-09-14T07:23:00Z",
+      "comment_updated_at": "2026-09-14T07:23:00Z",
+      "comment_body_sha256": "3d9730f55fe4ec8e2084f6846a9c7c9536ff99138158e8388e47f4e4762cb118",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147954,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T07:24:07.756Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "repair/control-ui-startup-budget",
+        "head_sha": "cc742a90d86cb7844c7adb5b5b514cb11a44a2bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
