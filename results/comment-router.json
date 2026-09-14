@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T00:38:56.454Z",
+  "updated_at": "2026-09-14T00:39:09.833Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147275:5655528968:2026-09-13T19:24:13Z:re_review",
-      "comment_id": "5655528968",
-      "comment_version_key": "5655528968:2026-09-13T19:24:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147275#issuecomment-5655528968",
-      "comment_created_at": "2026-09-13T19:24:13Z",
-      "comment_updated_at": "2026-09-13T19:24:13Z",
-      "comment_body_sha256": "d9421c76b466f09b1fbc0c1e5dee2cc3a814f1b1e693a6883d29d89d66b44ad8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147275,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T19:25:03.327Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-computer",
-        "head_sha": "a3cd089ecc8f599412eb1e0c6d8071a1dd7d3752",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147308:5655528912:2026-09-13T19:24:13Z:clawsweeper_needs_human",
       "comment_id": "5655528912",
@@ -33345,6 +33298,39 @@
         "kind": "pull_request",
         "branch": "fix/matrix-monitor-ignores-task-signal",
         "head_sha": "96c835dfd09924681f4c6a25bf089ca269c4084e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147605:5657451819:2026-09-14T00:38:13Z:clawsweeper_needs_human",
+      "comment_id": "5657451819",
+      "comment_version_key": "5657451819:2026-09-14T00:38:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147605#issuecomment-5657451819",
+      "comment_created_at": "2026-09-14T00:38:13Z",
+      "comment_updated_at": "2026-09-14T00:38:13Z",
+      "comment_body_sha256": "c48f4d419fe4781fd539585a4d0d5e42fed7d9b8be198f63feabba53da5ea18a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147605,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Whole-Gateway latency gains remain unmeasured; the supplied comparison isolates page processing, and cumulative normalization and mirroring still repeat work. (sha=0ad166f97b34a2da347bfe0c5bede20531b555a2)",
+      "expected_head_sha": "0ad166f97b34a2da347bfe0c5bede20531b555a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T00:39:09.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-history-recovery-7006",
+        "head_sha": "0ad166f97b34a2da347bfe0c5bede20531b555a2",
         "cluster_id": null,
         "job_path": null
       }
