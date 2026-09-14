@@ -1,100 +1,6 @@
 {
-  "updated_at": "2026-09-14T18:30:26.401Z",
+  "updated_at": "2026-09-14T18:30:37.537Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148121:5663600603:2026-09-14T12:05:04Z:re_review",
-      "comment_id": "5663600603",
-      "comment_version_key": "5663600603:2026-09-14T12:05:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5663600603",
-      "comment_created_at": "2026-09-14T12:05:04Z",
-      "comment_updated_at": "2026-09-14T12:05:04Z",
-      "comment_body_sha256": "2f057d3010d412557f53628cd658e370e7830fcaa66984e0fd0c8614028ecce1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148121,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 6c9d4f4d911. focused validation passes. compatibility note: this remains an in-memory read-only projection, not a persisted or serialized data-model migration",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T12:06:05.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-provider-cohorts",
-        "head_sha": "6c9d4f4d9116d3af9b448a6858866df89325c44f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148122:5663600842:2026-09-14T12:05:05Z:re_review",
-      "comment_id": "5663600842",
-      "comment_version_key": "5663600842:2026-09-14T12:05:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5663600842",
-      "comment_created_at": "2026-09-14T12:05:05Z",
-      "comment_updated_at": "2026-09-14T12:05:05Z",
-      "comment_body_sha256": "67e3a39dbb90904ea3ffec08f791a938dbed70e41076a5de864a8f7f524f2025",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148122,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 0264aa16f6d. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and docs lint pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T12:06:14.757Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-app-inventory",
-        "head_sha": "0264aa16f6d303459de4886e2a2dbc749c9c44cb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148126:5661993901:2026-09-14T12:05:32Z:clawsweeper_needs_human",
       "comment_id": "5661993901",
@@ -34403,6 +34309,66 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147455:5656378713:2026-09-14T18:05:52Z:clawsweeper_needs_human",
+      "comment_id": "5656378713",
+      "comment_version_key": "5656378713:2026-09-14T18:05:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147455#issuecomment-5656378713",
+      "comment_created_at": "2026-09-13T21:48:11Z",
+      "comment_updated_at": "2026-09-14T18:05:52Z",
+      "comment_body_sha256": "aa1de109f21a23b04bdb693f01d69d2604af372a8cee7f3a8fa813fd65b84cfc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147455,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Real skills check/info output proves generic eligibility on the earlier head, with the relevant code unchanged here. Configured-key de... (sha=f942a4d8908706e18c345273ec627825a6d81ee9)",
+      "expected_head_sha": "f942a4d8908706e18c345273ec627825a6d81ee9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T18:30:37.537Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/sag-anyenv",
+        "head_sha": "f942a4d8908706e18c345273ec627825a6d81ee9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147455:5661465889:2026-09-14T08:54:55Z:re_review",
+      "comment_id": "5661465889",
+      "comment_version_key": "5661465889:2026-09-14T08:54:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147455#issuecomment-5661465889",
+      "comment_created_at": "2026-09-14T08:54:55Z",
+      "comment_updated_at": "2026-09-14T08:54:55Z",
+      "comment_body_sha256": "bd36c619a31b484465533d5ec5ad9773fe02aef9978c49f3433a6b9ddb1ca4d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147455,
+      "author": "Navras98",
+      "author_id": 182986534,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T18:30:37.537Z",
+      "target": null
     }
   ]
 }
