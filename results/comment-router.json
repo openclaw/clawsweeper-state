@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T07:01:08.322Z",
+  "updated_at": "2026-09-14T07:01:45.094Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146868:5658445679:2026-09-14T03:10:40Z:re_review",
-      "comment_id": "5658445679",
-      "comment_version_key": "5658445679:2026-09-14T03:10:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146868#issuecomment-5658445679",
-      "comment_created_at": "2026-09-14T03:10:40Z",
-      "comment_updated_at": "2026-09-14T03:10:40Z",
-      "comment_body_sha256": "f6ea268a7f75358bb9a14fb98e1cdb4274703621547b219ca3576f1879ee9202",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146868,
-      "author": "tttboy123",
-      "author_id": 95002055,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T03:11:29.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/resume-native-identity-claim-137085",
-        "head_sha": "639be4f5fcc00e9115375a557ca3b074189b3c3c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147707:5658037822:2026-09-14T03:05:37Z:clawsweeper_auto_repair",
       "comment_id": "5658037822",
@@ -32938,6 +32891,39 @@
         "kind": "pull_request",
         "branch": "codex/activity-recap-shimmer",
         "head_sha": "aa69e5769cf7aec8e7dcc7bc6153fe5157c5bac9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148022:5660231845:2026-09-14T07:00:46Z:clawsweeper_needs_human",
+      "comment_id": "5660231845",
+      "comment_version_key": "5660231845:2026-09-14T07:00:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148022#issuecomment-5660231845",
+      "comment_created_at": "2026-09-14T07:00:46Z",
+      "comment_updated_at": "2026-09-14T07:00:46Z",
+      "comment_body_sha256": "6ea673edf0b05377ac804e75da9b7821100e46814b5146558d3fdb453364fd1e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148022,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied tests and extracted formatter output support the expected suffix and alignment, but do not show the actual sessions-tail CLI readi... (sha=9eca10b5fb171bc807ed8558edb0e202bd9f4784)",
+      "expected_head_sha": "9eca10b5fb171bc807ed8558edb0e202bd9f4784",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T07:01:45.094Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-tail-utc-marker",
+        "head_sha": "9eca10b5fb171bc807ed8558edb0e202bd9f4784",
         "cluster_id": null,
         "job_path": null
       }
