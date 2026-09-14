@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T08:47:55.883Z",
+  "updated_at": "2026-09-14T08:48:26.407Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123062:5659057918:2026-09-14T04:33:23Z:re_review",
-      "comment_id": "5659057918",
-      "comment_version_key": "5659057918:2026-09-14T04:33:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123062#issuecomment-5659057918",
-      "comment_created_at": "2026-09-14T04:33:23Z",
-      "comment_updated_at": "2026-09-14T04:33:23Z",
-      "comment_body_sha256": "263fac0d81b7c4f8e8ce95d8b33ec3e2436dddce1d8dcb13d34ec6cbc7f078c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123062,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T04:46:29.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "split/gateway-ws-aug13",
-        "head_sha": "4e3b9cb8a5ae7dfaea1c9dd592185671b3069a1a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147771:5659090748:2026-09-14T04:37:44Z:re_review",
       "comment_id": "5659090748",
@@ -34243,6 +34196,39 @@
         "kind": "pull_request",
         "branch": "fix/linux-audit-stack-06-updater-recovery-20260912",
         "head_sha": "240dfe3ae4d42e1966c048732604971dc3fbd77a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148091:5661371379:2026-09-14T08:46:31Z:clawsweeper_needs_human",
+      "comment_id": "5661371379",
+      "comment_version_key": "5661371379:2026-09-14T08:46:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148091#issuecomment-5661371379",
+      "comment_created_at": "2026-09-14T08:46:31Z",
+      "comment_updated_at": "2026-09-14T08:46:31Z",
+      "comment_body_sha256": "65148ecf41c778589c3ea2668854d5ef4dd50ba9f464bbb1a76f6eeb86852bba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148091,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=9af03ca20eeff284d9e2f970f2996de9c270c9e6)",
+      "expected_head_sha": "9af03ca20eeff284d9e2f970f2996de9c270c9e6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T08:48:26.407Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/dream-diary-read-error-classification-20260914",
+        "head_sha": "9af03ca20eeff284d9e2f970f2996de9c270c9e6",
         "cluster_id": null,
         "job_path": null
       }
