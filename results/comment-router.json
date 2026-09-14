@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T13:07:19.468Z",
+  "updated_at": "2026-09-14T13:07:40.839Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147457:5660721732:2026-09-14T07:47:50Z:re_review",
-      "comment_id": "5660721732",
-      "comment_version_key": "5660721732:2026-09-14T07:47:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147457#issuecomment-5660721732",
-      "comment_created_at": "2026-09-14T07:47:50Z",
-      "comment_updated_at": "2026-09-14T07:47:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147457,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T08:00:22.844Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "kit/matrix-key-publication-durability",
-        "head_sha": "3af47c7a3ebe8c3bae438ae9bf8c8f408cc5ebae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148041:5660728128:2026-09-14T07:48:28Z:re_review",
       "comment_id": "5660728128",
@@ -34866,6 +34819,39 @@
         "kind": "pull_request",
         "branch": "codex/r21-explicit-skill-references",
         "head_sha": "0dbbbc7f771e73ff89fbd554e73d0701459e8dd4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1420:5664438946:2026-09-14T13:06:31Z:clawsweeper_needs_human",
+      "comment_id": "5664438946",
+      "comment_version_key": "5664438946:2026-09-14T13:06:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1420#issuecomment-5664438946",
+      "comment_created_at": "2026-09-14T13:06:31Z",
+      "comment_updated_at": "2026-09-14T13:06:31Z",
+      "comment_body_sha256": "225eccbac2bc75d8069145f0fc12c6d0339a35db557352ec6fbdafd7b2ec6452",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1420,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed chat root needs real WinUI selection, rendering, and first-message delivery evidence. The captured Windows run stopped at... (sha=c5d9d2a0dd7a05d51a67947979dd6016c91a3a82)",
+      "expected_head_sha": "c5d9d2a0dd7a05d51a67947979dd6016c91a3a82",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T13:07:40.839Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/1411-pending-new-session",
+        "head_sha": "c5d9d2a0dd7a05d51a67947979dd6016c91a3a82",
         "cluster_id": null,
         "job_path": null
       }
