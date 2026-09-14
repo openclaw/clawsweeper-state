@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148148",
+  "mode": "autonomous",
+  "run_id": "34830887710",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34830887710",
+  "head_sha": "60e9eac3f1cce2d8a4f886c9ebc5f4a9092429dc",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148148.md",
+  "published_at": "2026-09-14T10:20:30.253Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/148148",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/148148",
+  "canonical_pr": null,
+  "summary": "The inspected source supports the reported capture-layout defect. A narrow fix artifact is prepared, but implementation and reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed. The shallow checkout also lacks the preflight main commit, so base reconciliation remains required.",
+  "actions": [
+    {
+      "target": "#148148",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148148",
+      "candidate_fix": null,
+      "reason": "A source-supported ordinary loading bug has a narrow repair path. Establish a failing production-boundary regression on refreshed main before implementing."
+    },
+    {
+      "target": "#102270",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine that installation-policy question for central OpenClaw security handling without reopening or otherwise mutating the closed issue. It does not block the separate capture-layout repair."
+    },
+    {
+      "target": "#145484",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#148148",
+      "candidate_fix": null,
+      "reason": "Historical implementation context, not a repair or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-148148",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148148",
+      "candidate_fix": null,
+      "reason": "The handoff is planned; implementation and PR readiness remain blocked until reproduction, base reconciliation, and validation succeed on an authorized executor."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
