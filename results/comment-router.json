@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T12:46:16.407Z",
+  "updated_at": "2026-09-14T12:46:26.223Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147987:5659897766:2026-09-14T07:27:37Z:clawsweeper_needs_human",
-      "comment_id": "5659897766",
-      "comment_version_key": "5659897766:2026-09-14T07:27:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147987#issuecomment-5659897766",
-      "comment_created_at": "2026-09-14T06:24:11Z",
-      "comment_updated_at": "2026-09-14T07:27:37Z",
-      "comment_body_sha256": "6c75de92c86e92ed309d42eb7c5b8c0fcd9bad857f5b9e57bd6de0f2b3550ffb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147987,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2916be33cde0c738332e87db16b67a29fd0b0398)",
-      "expected_head_sha": "2916be33cde0c738332e87db16b67a29fd0b0398",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T07:41:28.331Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-trajectory-file-inventory-d600",
-        "head_sha": "2916be33cde0c738332e87db16b67a29fd0b0398",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-14T07:39:56Z:clawsweeper_auto_repair",
       "comment_id": "5611675668",
@@ -34914,6 +34881,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-channel-cohorts",
         "head_sha": "ba4defabc35014bb8431633f57a100a880c7edcb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148122:5664143699:2026-09-14T12:44:26Z:re_review",
+      "comment_id": "5664143699",
+      "comment_version_key": "5664143699:2026-09-14T12:44:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5664143699",
+      "comment_created_at": "2026-09-14T12:44:26Z",
+      "comment_updated_at": "2026-09-14T12:44:26Z",
+      "comment_body_sha256": "e26e029154bacec67c559a64334002bd7957fbe372610113062aed8d80fe99df",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148122,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head a1f1ae8af848ae48dda13e9d1e04093057f195ae. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and full docs validation pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T12:46:21.399Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-app-inventory",
+        "head_sha": "a1f1ae8af848ae48dda13e9d1e04093057f195ae",
         "cluster_id": null,
         "job_path": null
       },
