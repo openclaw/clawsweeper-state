@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T09:47:36.374Z",
+  "updated_at": "2026-09-14T09:48:06.486Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:349:5659250501:2026-09-14T05:26:36Z:clawsweeper_needs_human",
-      "comment_id": "5659250501",
-      "comment_version_key": "5659250501:2026-09-14T05:26:36Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/349#issuecomment-5659250501",
-      "comment_created_at": "2026-09-14T05:00:55Z",
-      "comment_updated_at": "2026-09-14T05:26:36Z",
-      "comment_body_sha256": "ed94a7c84c85d6fb71940423dc879ab0af7992eddabf31cdbb55fc6204e856a2",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 349,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports merge conflicts; compatibility with the eventual conflict resolution has not yet been reviewed. (sha=f97dc776abf0e05b2e57557865228adcd8118324)",
-      "expected_head_sha": "f97dc776abf0e05b2e57557865228adcd8118324",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T05:28:16.320Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/path-prefix-20260913",
-        "head_sha": "f0808341828fa8c38fd776fef1f3789bf1b503bf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147923:5659443226:2026-09-14T05:26:35Z:clawsweeper_needs_human",
       "comment_id": "5659443226",
@@ -34528,6 +34495,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148135:5662093334:2026-09-14T09:47:09Z:clawsweeper_needs_human",
+      "comment_id": "5662093334",
+      "comment_version_key": "5662093334:2026-09-14T09:47:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148135#issuecomment-5662093334",
+      "comment_created_at": "2026-09-14T09:47:09Z",
+      "comment_updated_at": "2026-09-14T09:47:09Z",
+      "comment_body_sha256": "35804e0b7db133f7d124801573b898483272ac230610fdfd6d72af6b43b98779",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the added tests observe sender propagation through fake engines but do not show real after-fix recall or that a...; Review finding: [P1] Bind recall-time LLM capabilities to the owning plugin — src/agents/embedded-agent-runner/run/attempt-history-prepare.ts:221-226 - [medium] Recall-time comple... (sha=38f8b3bba6fb2ef8400f8c0039206dec92ffcd34)",
+      "expected_head_sha": "38f8b3bba6fb2ef8400f8c0039206dec92ffcd34",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T09:48:06.486Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-recall-sender-id",
+        "head_sha": "38f8b3bba6fb2ef8400f8c0039206dec92ffcd34",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
