@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T00:24:49.189Z",
+  "updated_at": "2026-09-14T00:24:51.292Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147229:5655436055:2026-09-13T19:07:56Z:re_review",
-      "comment_id": "5655436055",
-      "comment_version_key": "5655436055:2026-09-13T19:07:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147229#issuecomment-5655436055",
-      "comment_created_at": "2026-09-13T19:07:56Z",
-      "comment_updated_at": "2026-09-13T19:07:56Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147229,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T19:08:52.936Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/telegram-rich-message-tool-2",
-        "head_sha": "2f8555f4ca5f6faddf83836e9568b50b3b223467",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147289:5655437671:2026-09-13T19:08:13Z:clawsweeper_needs_human",
       "comment_id": "5655437671",
@@ -33373,6 +33326,39 @@
         "kind": "pull_request",
         "branch": "feat/capability-snapshot",
         "head_sha": "df6d601b195483a2bd4dd10b0a1c38602dca6b67",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140423:5561955680:2026-09-14T00:24:00Z:clawsweeper_needs_human",
+      "comment_id": "5561955680",
+      "comment_version_key": "5561955680:2026-09-14T00:24:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140423#issuecomment-5561955680",
+      "comment_created_at": "2026-09-06T20:27:30Z",
+      "comment_updated_at": "2026-09-14T00:24:00Z",
+      "comment_body_sha256": "b208b39911f572ffa96514db2ff4ede99c36dc16c1d4c127e08ef168c42839e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured body documents real simulator/Gateway preparation, but explicitly leaves the changed Apple picker, rejection-race handlin... (sha=315eaec71ed93e8a0b70b8b103db281e3aa479d7)",
+      "expected_head_sha": "315eaec71ed93e8a0b70b8b103db281e3aa479d7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T00:24:51.292Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ios-branch-switch-active-run",
+        "head_sha": "315eaec71ed93e8a0b70b8b103db281e3aa479d7",
         "cluster_id": null,
         "job_path": null
       }
