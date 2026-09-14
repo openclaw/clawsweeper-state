@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:09:13.698Z",
+  "updated_at": "2026-09-14T14:09:36.044Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148066:5660802475:2026-09-14T08:24:30Z:clawsweeper_needs_human",
-      "comment_id": "5660802475",
-      "comment_version_key": "5660802475:2026-09-14T08:24:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148066#issuecomment-5660802475",
-      "comment_created_at": "2026-09-14T07:55:46Z",
-      "comment_updated_at": "2026-09-14T08:24:30Z",
-      "comment_body_sha256": "81d4a4d77ffaadf3748faece16ef8112a631cfcdc3badf521587705b1ce58a15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148066,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Actual launchd scheduling and a published updater invoking the candidate recovery path remain unqualified; synthetic observations do not establish those platform and upgrade outcomes. (sha=aa683c16b644d2778ca3162dcaed78fe9d321c2a)",
-      "expected_head_sha": "aa683c16b644d2778ca3162dcaed78fe9d321c2a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:25:28.343Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-recovery-supervision-139082",
-        "head_sha": "aa683c16b644d2778ca3162dcaed78fe9d321c2a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147707:5658037822:2026-09-14T08:24:31Z:clawsweeper_needs_human",
       "comment_id": "5658037822",
@@ -34833,6 +34800,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148122:5665296702:2026-09-14T14:08:37Z:re_review",
+      "comment_id": "5665296702",
+      "comment_version_key": "5665296702:2026-09-14T14:08:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5665296702",
+      "comment_created_at": "2026-09-14T14:08:37Z",
+      "comment_updated_at": "2026-09-14T14:08:37Z",
+      "comment_body_sha256": "299334c036c4a0769699746a020fcd737649a96c64848122c45a26cfb0f74bff",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148122,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head 8c7a14793288 onto #148121. focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:09:33.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-app-inventory",
+        "head_sha": "8c7a14793288cf2822275a3d2074745d943a46ca",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
