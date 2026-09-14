@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T07:37:40.254Z",
+  "updated_at": "2026-09-14T07:38:11.447Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145873:5645229011:2026-09-14T03:36:42Z:clawsweeper_auto_repair",
-      "comment_id": "5645229011",
-      "comment_version_key": "5645229011:2026-09-14T03:36:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145873#issuecomment-5645229011",
-      "comment_created_at": "2026-09-12T10:07:01Z",
-      "comment_updated_at": "2026-09-14T03:36:42Z",
-      "comment_body_sha256": "86a3e2b326175a7c28fbdc0e4ce35f65ffc94683ed22a27c8ac480e5dcf1ac2b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145873,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=458b5336d58beef631710a05b993e208b21cabbe)",
-      "expected_head_sha": "458b5336d58beef631710a05b993e208b21cabbe",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T03:49:14.833Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-survivor-635",
-        "head_sha": "458b5336d58beef631710a05b993e208b21cabbe",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146905:5652598275:2026-09-14T03:38:57Z:clawsweeper_needs_human",
       "comment_id": "5652598275",
@@ -32873,6 +32840,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148011:5660179249:2026-09-14T07:36:59Z:clawsweeper_needs_human",
+      "comment_id": "5660179249",
+      "comment_version_key": "5660179249:2026-09-14T07:36:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148011#issuecomment-5660179249",
+      "comment_created_at": "2026-09-14T06:54:58Z",
+      "comment_updated_at": "2026-09-14T07:36:59Z",
+      "comment_body_sha256": "13738953247de9b8f83d062646e1efccb94949c7b04853bdd0860487ee4d0029",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the registry consent gate, HTTP marker, and Gateway synthetic-client selection are tested separately with mocke...; Review finding: [P1] Resolve run consent through the canonical plugin configuration — src/plugins/registry-runtime.ts:203-208 - [medium] Alias consent can survive effective revoca... (sha=ea0cf862c90650b116ac4f04e80cae75fe5c4251)",
+      "expected_head_sha": "ea0cf862c90650b116ac4f04e80cae75fe5c4251",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T07:38:11.447Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-subagent-run-entitlement",
+        "head_sha": "ea0cf862c90650b116ac4f04e80cae75fe5c4251",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
