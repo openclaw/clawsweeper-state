@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T16:12:48.383Z",
+  "updated_at": "2026-09-14T16:12:53.279Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147901:5659178212:2026-09-14T09:37:26Z:clawsweeper_needs_human",
-      "comment_id": "5659178212",
-      "comment_version_key": "5659178212:2026-09-14T09:37:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147901#issuecomment-5659178212",
-      "comment_created_at": "2026-09-14T04:49:57Z",
-      "comment_updated_at": "2026-09-14T09:37:26Z",
-      "comment_body_sha256": "b9728a5db28e48cd91b4be8cbf9a598ac09f94b6127270dd350911e7afe75115",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147901,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=21afc66f26befac841ab1f2d76462dc2b793cda8)",
-      "expected_head_sha": "21afc66f26befac841ab1f2d76462dc2b793cda8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T09:38:19.344Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/activity-recap-shimmer",
-        "head_sha": "21afc66f26befac841ab1f2d76462dc2b793cda8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145874:5645238956:2026-09-14T09:32:41Z:clawsweeper_needs_human",
       "comment_id": "5645238956",
@@ -35059,6 +35026,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-channel-cohorts",
         "head_sha": "afef84b2eebd8d3fa441f3c878fb2c5937f011bf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148121:5667012309:2026-09-14T16:11:33Z:re_review",
+      "comment_id": "5667012309",
+      "comment_version_key": "5667012309:2026-09-14T16:11:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5667012309",
+      "comment_created_at": "2026-09-14T16:11:33Z",
+      "comment_updated_at": "2026-09-14T16:11:33Z",
+      "comment_body_sha256": "07661dd8c283d4906f7a8d785e28923a2d429d0216b9f096fa49f06efb721653",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148121,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head 9a5285e35fd53b73e823c46a0c2d396e0e473db2. focused validation passes. the cohort helper remains an in-memory read-only projection; it does not alter persistent data or require a migration",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T16:12:51.230Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-provider-cohorts",
+        "head_sha": "9a5285e35fd53b73e823c46a0c2d396e0e473db2",
         "cluster_id": null,
         "job_path": null
       },
