@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T10:10:28.615Z",
+  "updated_at": "2026-09-14T10:13:07.885Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147756:5659585062:2026-09-14T05:46:29Z:re_review",
-      "comment_id": "5659585062",
-      "comment_version_key": "5659585062:2026-09-14T05:46:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147756#issuecomment-5659585062",
-      "comment_created_at": "2026-09-14T05:46:29Z",
-      "comment_updated_at": "2026-09-14T05:46:29Z",
-      "comment_body_sha256": "45d448255e755ab4d732dd7138e0b180c4ab7501410714640359cabebc95b966",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147756,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T05:47:33.525Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-evidence-occurrences-20260913",
-        "head_sha": "597c5baffed7ce0b8b1018fef386af05d931e040",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:349:5659250501:2026-09-14T05:46:44Z:clawsweeper_needs_human",
       "comment_id": "5659250501",
@@ -34488,6 +34441,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:240:5662375787:2026-09-14T10:12:02Z:clawsweeper_needs_human",
+      "comment_id": "5662375787",
+      "comment_version_key": "5662375787:2026-09-14T10:12:02Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/240#issuecomment-5662375787",
+      "comment_created_at": "2026-09-14T10:12:02Z",
+      "comment_updated_at": "2026-09-14T10:12:02Z",
+      "comment_body_sha256": "8597403b93a64c54260b19fe7b1a33ac8445f88930aea60d12dd8e11382b9afa",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 240,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the prerequisite stack and mark this draft ready before landing. (sha=bc590ea0cf653b73493645aa2f0642560e416a9c)",
+      "expected_head_sha": "bc590ea0cf653b73493645aa2f0642560e416a9c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T10:13:07.885Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/api-durable-collision-coverage",
+        "head_sha": "bc590ea0cf653b73493645aa2f0642560e416a9c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
