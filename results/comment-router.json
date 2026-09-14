@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T06:07:54.885Z",
+  "updated_at": "2026-09-14T06:07:57.685Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147723:5658040294:2026-09-14T02:09:20Z:re_review",
-      "comment_id": "5658040294",
-      "comment_version_key": "5658040294:2026-09-14T02:09:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147723#issuecomment-5658040294",
-      "comment_created_at": "2026-09-14T02:09:20Z",
-      "comment_updated_at": "2026-09-14T02:09:20Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147723,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T02:19:54.622Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/secret-target-path-matching-20260914",
-        "head_sha": "886cb65edcc6be55551d3cfe6593322dcd361904",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147723:5658110298:2026-09-14T02:18:56Z:clawsweeper_needs_human",
       "comment_id": "5658110298",
@@ -32868,6 +32821,38 @@
       "status": "skipped",
       "processed_at": "2026-09-14T06:07:54.885Z",
       "target": null
+    },
+    {
+      "idempotency_key": "repair-loop-label-sweep:openclaw/endor-clawsweeper-e2e:autofix:2",
+      "comment_id": "repair-loop-label-sweep:autofix:2",
+      "comment_version_key": null,
+      "comment_url": "https://github.com/openclaw/endor-clawsweeper-e2e/pull/2",
+      "comment_created_at": "2026-09-14T06:07:54.701Z",
+      "comment_updated_at": "2026-09-14T06:07:54.701Z",
+      "repo": "openclaw/endor-clawsweeper-e2e",
+      "issue_number": 2,
+      "author": "clawsweeper[bot]",
+      "author_id": null,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "repair_loop_label_sweep",
+      "repair_reason": "scheduled ClawSweeper repair-loop label sweep",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T06:07:57.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "endorlabs-e071/npm_and_yarn/dot-/fast-xml-parser-5.3.5",
+        "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
+        "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
     }
   ]
 }
