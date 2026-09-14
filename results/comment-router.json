@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:36:58.184Z",
+  "updated_at": "2026-09-14T23:37:21.625Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147661:5657792481:2026-09-14T17:20:17Z:clawsweeper_needs_human",
-      "comment_id": "5657792481",
-      "comment_version_key": "5657792481:2026-09-14T17:20:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147661#issuecomment-5657792481",
-      "comment_created_at": "2026-09-14T01:31:20Z",
-      "comment_updated_at": "2026-09-14T17:20:17Z",
-      "comment_body_sha256": "503dc8e10cad2c7339ac7a55d95db67f7ed2c5f2e196ea865ff71864c217f8b3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147661,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded Gateway CI recovery lacks two isolated cases and a completion summary; its successful job status cannot establish a full-suite pass. (sha=7a92b144ed10f753be96485bddffb44cdf6abc49)",
-      "expected_head_sha": "7a92b144ed10f753be96485bddffb44cdf6abc49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T17:27:59.893Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/teams-context-reads",
-        "head_sha": "7a92b144ed10f753be96485bddffb44cdf6abc49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148416:5667984734:2026-09-14T17:27:41Z:freeform_assist",
       "comment_id": "5667984734",
@@ -33323,6 +33290,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:134665:5672323021:2026-09-14T23:35:54Z:re_review",
+      "comment_id": "5672323021",
+      "comment_version_key": "5672323021:2026-09-14T23:35:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/134665#issuecomment-5672323021",
+      "comment_created_at": "2026-09-14T23:35:54Z",
+      "comment_updated_at": "2026-09-14T23:35:54Z",
+      "comment_body_sha256": "3ba714ef4d6b843e68f92a9d0a73d048b062d478dc52ad162ca07f88d938738f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 134665,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T23:37:19.775Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-restart-result",
+        "head_sha": "641e8c6c4d1daddf2e8700128477a7cd47e55a74",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
