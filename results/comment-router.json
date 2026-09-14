@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T04:23:43.793Z",
+  "updated_at": "2026-09-14T04:24:03.106Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142545:5591661214:2026-09-14T00:16:28Z:clawsweeper_needs_human",
-      "comment_id": "5591661214",
-      "comment_version_key": "5591661214:2026-09-14T00:16:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142545#issuecomment-5591661214",
-      "comment_created_at": "2026-09-08T20:48:21Z",
-      "comment_updated_at": "2026-09-14T00:16:28Z",
-      "comment_body_sha256": "60739b4832a7513b8760c56e801abc68fee51eb53ebacfc0dd9618b3857aa912",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142545,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing full or oversized MEMORY.md files may stop receiving promotions until consolidation, freed capacity, or the configured loss allowance permits a fitting write; repeated retrie... (sha=e6411566579cfb53b45b9e00e32563f142628590)",
-      "expected_head_sha": "e6411566579cfb53b45b9e00e32563f142628590",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T00:17:29.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-promotion-bootstrap-budget",
-        "head_sha": "e6411566579cfb53b45b9e00e32563f142628590",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142545:5610752166:2026-09-10T00:28:51Z:re_review",
       "comment_id": "5610752166",
@@ -32942,6 +32909,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147877:5658975282:2026-09-14T04:23:01Z:re_review",
+      "comment_id": "5658975282",
+      "comment_version_key": "5658975282:2026-09-14T04:23:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147877#issuecomment-5658975282",
+      "comment_created_at": "2026-09-14T04:23:01Z",
+      "comment_updated_at": "2026-09-14T04:23:01Z",
+      "comment_body_sha256": "93f1b9f2786d160fb00b6ab6ec2a7418416e6f56f1e3cb3d86f0264903b5ebf8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147877,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T04:24:00.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/android-markdown-source-spans-20260914",
+        "head_sha": "91686ea9dad876be79def4b3647577310b0c4fe6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
