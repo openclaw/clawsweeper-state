@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T12:46:26.223Z",
+  "updated_at": "2026-09-14T12:46:27.859Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-14T07:39:56Z:clawsweeper_auto_repair",
-      "comment_id": "5611675668",
-      "comment_version_key": "5611675668:2026-09-14T07:39:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143610#issuecomment-5611675668",
-      "comment_created_at": "2026-09-10T02:19:14Z",
-      "comment_updated_at": "2026-09-14T07:39:56Z",
-      "comment_body_sha256": "09fffbc6f59eb09b41f1d16333475526dd2ace5217b08dc0cf17b9dbdb366740",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143610,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0f64a1454dc715b3318ad2fc18195ad52961a2c9)",
-      "expected_head_sha": "0f64a1454dc715b3318ad2fc18195ad52961a2c9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T07:41:35.931Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/ios-conversation-actions-20260909",
-        "head_sha": "0f64a1454dc715b3318ad2fc18195ad52961a2c9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147707:5660635465:2026-09-14T07:39:16Z:re_review",
       "comment_id": "5660635465",
@@ -34928,6 +34895,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-app-inventory",
         "head_sha": "a1f1ae8af848ae48dda13e9d1e04093057f195ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148121:5664143412:2026-09-14T12:44:25Z:re_review",
+      "comment_id": "5664143412",
+      "comment_version_key": "5664143412:2026-09-14T12:44:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5664143412",
+      "comment_created_at": "2026-09-14T12:44:25Z",
+      "comment_updated_at": "2026-09-14T12:44:25Z",
+      "comment_body_sha256": "8b4d3971e65648c445f8b39bc47b0eeeae0ae21dbe9786edb268bbafcd57c629",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148121,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head 622ec31f5e57b3fb258a64245f4855c9e3630d61. focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, tsgo:test:root, and full docs validation pass locally. the cohort helper remains an in-memory read-only projection; it does not alter persistent data or require a migration",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T12:46:24.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-provider-cohorts",
+        "head_sha": "622ec31f5e57b3fb258a64245f4855c9e3630d61",
         "cluster_id": null,
         "job_path": null
       },
