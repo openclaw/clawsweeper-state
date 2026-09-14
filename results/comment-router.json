@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T20:02:13.556Z",
+  "updated_at": "2026-09-14T20:04:06.472Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147901:5665278742:2026-09-14T14:07:22Z:re_review",
-      "comment_id": "5665278742",
-      "comment_version_key": "5665278742:2026-09-14T14:07:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147901#issuecomment-5665278742",
-      "comment_created_at": "2026-09-14T14:07:22Z",
-      "comment_updated_at": "2026-09-14T14:07:22Z",
-      "comment_body_sha256": "d3fc110ae30ef3d0b4b2e5e64585cad603a31f12ce163921315b2bcff3048287",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147901,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T14:08:17.773Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/activity-recap-shimmer",
-        "head_sha": "fcd975c437245dd362c1169dd2b6426b63136a50",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/imsg:301:5665288765:2026-09-14T14:08:04Z:clawsweeper_auto_repair",
       "comment_id": "5665288765",
@@ -33876,6 +33829,39 @@
         "kind": "pull_request",
         "branch": "codex/windows-node-fd-bridge-20260914",
         "head_sha": "1943799999fd533ff9c68f16efd4c8b653b7b20a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacrawl:88:5611144493:2026-09-14T20:02:06Z:clawsweeper_needs_human",
+      "comment_id": "5611144493",
+      "comment_version_key": "5611144493:2026-09-14T20:02:06Z",
+      "comment_url": "https://github.com/openclaw/wacrawl/pull/88#issuecomment-5611144493",
+      "comment_created_at": "2026-09-10T01:10:38Z",
+      "comment_updated_at": "2026-09-14T20:02:06Z",
+      "comment_body_sha256": "6ac830893f416d823dc1ce1e06bc46e4eef8b9fdb349ab4b70230be7025a9dcc",
+      "repo": "openclaw/wacrawl",
+      "issue_number": 88,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Opening an existing archive, even through a read command, upgrades it to schema 5 and prevents released schema-3 clients from reopening it. Experimental schema-4 backup clients can si... (sha=c244dbc2680b76a032cddbbca533702890c08108)",
+      "expected_head_sha": "c244dbc2680b76a032cddbbca533702890c08108",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T20:04:06.472Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/whatsapp-relogin-history",
+        "head_sha": "c244dbc2680b76a032cddbbca533702890c08108",
         "cluster_id": null,
         "job_path": null
       }
