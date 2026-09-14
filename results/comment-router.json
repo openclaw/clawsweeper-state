@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:20:21.350Z",
+  "updated_at": "2026-09-14T02:20:37.038Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147407:5656186952:2026-09-13T21:14:23Z:re_review",
-      "comment_id": "5656186952",
-      "comment_version_key": "5656186952:2026-09-13T21:14:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147407#issuecomment-5656186952",
-      "comment_created_at": "2026-09-13T21:14:23Z",
-      "comment_updated_at": "2026-09-13T21:14:23Z",
-      "comment_body_sha256": "2c8f632d69ce17c922ad78ac9d7850e9feca227163556075e2735048f5c067cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147407,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T21:17:37.756Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-rss-unavailable",
-        "head_sha": "5c89a88e963dfc1dd1cc1864b4d40c97b04b10c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147318:5656188751:2026-09-13T21:14:40Z:re_review",
       "comment_id": "5656188751",
@@ -33639,6 +33592,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/plugin-node-capability-approval-current",
         "head_sha": "3552a7f9aab7a7427be537fc25afc1bc0a93237e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147720:5658113512:2026-09-14T02:19:25Z:clawsweeper_needs_human",
+      "comment_id": "5658113512",
+      "comment_version_key": "5658113512:2026-09-14T02:19:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147720#issuecomment-5658113512",
+      "comment_created_at": "2026-09-14T02:19:25Z",
+      "comment_updated_at": "2026-09-14T02:19:25Z",
+      "comment_body_sha256": "34b4bbe3fe3ef6a1383837fc4771190f53ae31b2090b28659dc53748ab0c646f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147720,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Standalone repair can now stop and restore an owned running Gateway, including with --no-restart; the submitted evidence does not include the required published-driver × candidate che... (sha=e2784aaf4c9318daf716f988a0035c9ee2065b06)",
+      "expected_head_sha": "e2784aaf4c9318daf716f988a0035c9ee2065b06",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T02:20:37.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/upd-repair-self-driver-maintenance-entry",
+        "head_sha": "e2784aaf4c9318daf716f988a0035c9ee2065b06",
         "cluster_id": null,
         "job_path": null
       }
