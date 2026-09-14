@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:39:53.691Z",
+  "updated_at": "2026-09-14T14:42:09.560Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147711:5658145011:2026-09-14T08:49:49Z:clawsweeper_needs_human",
-      "comment_id": "5658145011",
-      "comment_version_key": "5658145011:2026-09-14T08:49:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147711#issuecomment-5658145011",
-      "comment_created_at": "2026-09-14T02:24:18Z",
-      "comment_updated_at": "2026-09-14T08:49:49Z",
-      "comment_body_sha256": "5fc81f559462b34656c5773e3148e6da17c2535bfda18f4ed2c466e4491b1498",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147711,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Explicit edits to retained plugin configuration and session.store now fail until migration completes; affected operators must repair the plugin before changing those inputs. (sha=b07c408d9028cb601cac73402f87c41062a96186)",
-      "expected_head_sha": "b07c408d9028cb601cac73402f87c41062a96186",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:57:11.690Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-doctor-stale-plugin-migration-ordering",
-        "head_sha": "b07c408d9028cb601cac73402f87c41062a96186",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147094:5653957683:2026-09-14T08:50:25Z:clawsweeper_needs_human",
       "comment_id": "5653957683",
@@ -34833,6 +34800,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148293:5665754740:2026-09-14T14:40:55Z:re_review",
+      "comment_id": "5665754740",
+      "comment_version_key": "5665754740:2026-09-14T14:40:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148293#issuecomment-5665754740",
+      "comment_created_at": "2026-09-14T14:40:55Z",
+      "comment_updated_at": "2026-09-14T14:40:55Z",
+      "comment_body_sha256": "83425f4fe257a35df35eeb6036fd7168b67513e4975e50585111266f2c64eaf7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148293,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:41:58.068Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-catalog-scope-owner",
+        "head_sha": "659c08fb3b619e9187292125d6d89d5f0960acd5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
