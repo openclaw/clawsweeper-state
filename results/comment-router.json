@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T17:23:23.114Z",
+  "updated_at": "2026-09-14T17:23:25.843Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148120:5662958507:2026-09-14T11:05:07Z:re_review",
-      "comment_id": "5662958507",
-      "comment_version_key": "5662958507:2026-09-14T11:05:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148120#issuecomment-5662958507",
-      "comment_created_at": "2026-09-14T11:05:07Z",
-      "comment_updated_at": "2026-09-14T11:05:07Z",
-      "comment_body_sha256": "3a8a69fb2c224faa32d0edff240468d908bf876b293e20e6d78f59c3867829b0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148120,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head 824279c421f70a5cf04728681cc9966529adf14b",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T11:06:10.724Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-channel-cohorts",
-        "head_sha": "824279c421f70a5cf04728681cc9966529adf14b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148123:5662959081:2026-09-14T11:05:11Z:re_review",
       "comment_id": "5662959081",
@@ -34836,6 +34789,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-wiki-snippet-r12",
         "head_sha": "4eb49e7da98f0eb38fa65c340bb902b8eca06546",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148135:5662093334:2026-09-14T17:10:56Z:clawsweeper_needs_human",
+      "comment_id": "5662093334",
+      "comment_version_key": "5662093334:2026-09-14T17:10:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148135#issuecomment-5662093334",
+      "comment_created_at": "2026-09-14T09:47:09Z",
+      "comment_updated_at": "2026-09-14T17:10:56Z",
+      "comment_body_sha256": "4a37904c506c8a5d4546dd49b07268c58c20499959f24538e8820407259b5eb2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148135,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured body and inspected tests show sender propagation and static allowlist denial, but not real after-f...; Review finding: [medium] Establish retired-owner rejection for recall callbacks — src/agents/embedded-agent-runner/run/attempt-history-prepare.ts:222 (sha=3fdaab7d3da5f5176d6a9a8648c6526448892c22)",
+      "expected_head_sha": "3fdaab7d3da5f5176d6a9a8648c6526448892c22",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T17:23:25.843Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-recall-sender-id",
+        "head_sha": "3fdaab7d3da5f5176d6a9a8648c6526448892c22",
         "cluster_id": null,
         "job_path": null
       }
