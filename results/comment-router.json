@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T14:23:54.830Z",
+  "updated_at": "2026-09-14T14:23:55.634Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148087:5661206729:2026-09-14T08:31:17Z:clawsweeper_needs_human",
-      "comment_id": "5661206729",
-      "comment_version_key": "5661206729:2026-09-14T08:31:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148087#issuecomment-5661206729",
-      "comment_created_at": "2026-09-14T08:31:17Z",
-      "comment_updated_at": "2026-09-14T08:31:17Z",
-      "comment_body_sha256": "e4ea3d7e64580090f55dd015227c30307c0860937cf4d6173e78cf5a3f4f6dd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148087,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing file SecretRefs backed by hardlinked files will stop resolving after upgrade; strict activation can prevent Gateway startup. The intentional restriction is disclosed, but ope... (sha=54bd00f0ef46f99d6746af9ad1e54e7f0cc9bca3)",
-      "expected_head_sha": "54bd00f0ef46f99d6746af9ad1e54e7f0cc9bca3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:33:09.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bump-fs-safe-0.11.0",
-        "head_sha": "54bd00f0ef46f99d6746af9ad1e54e7f0cc9bca3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/mcporter:370:5661210721:2026-09-14T08:31:38Z:clawsweeper_needs_human",
       "comment_id": "5661210721",
@@ -34901,6 +34868,53 @@
         "kind": "pull_request",
         "branch": "audit/maturity-provider-cohorts",
         "head_sha": "73cdb1fd750a5e2fcd070267140fd0a05acd83af",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148123:5665503157:2026-09-14T14:22:51Z:re_review",
+      "comment_id": "5665503157",
+      "comment_version_key": "5665503157:2026-09-14T14:22:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5665503157",
+      "comment_created_at": "2026-09-14T14:22:51Z",
+      "comment_updated_at": "2026-09-14T14:22:51Z",
+      "comment_body_sha256": "bbc907eb49fa8252e527674b9d960a7df5ac42dc12e1c54237cd3351f1183639",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148123,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — rebased exact head b1fccce15ad. the argument-forwarding fix remains included; focused maturity tests, formatting, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T14:23:53.300Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-inventory-warnings",
+        "head_sha": "b1fccce15ad2f45803f652f92b030032974a22f7",
         "cluster_id": null,
         "job_path": null
       },
