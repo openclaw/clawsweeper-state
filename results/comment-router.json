@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T02:02:00.283Z",
+  "updated_at": "2026-09-14T02:02:09.188Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147406:5656098822:2026-09-13T20:59:09Z:clawsweeper_needs_human",
-      "comment_id": "5656098822",
-      "comment_version_key": "5656098822:2026-09-13T20:59:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147406#issuecomment-5656098822",
-      "comment_created_at": "2026-09-13T20:59:09Z",
-      "comment_updated_at": "2026-09-13T20:59:09Z",
-      "comment_body_sha256": "e51f835140d890e49a71e954905b6e25914d0f2cbf6ca1ada1817fcf4a4e8930",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147406,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Linked upstream CLI evidence proves timeout handling, replay rejection, and concurrent single-effect execution, but does not directly... (sha=d073ec7bf8816288b1ebda6b7a8018984eb1ab3f)",
-      "expected_head_sha": "d073ec7bf8816288b1ebda6b7a8018984eb1ab3f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T20:59:58.946Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/lobster-runtime-2026-9-5",
-        "head_sha": "d073ec7bf8816288b1ebda6b7a8018984eb1ab3f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147398:5656099469:2026-09-13T20:59:16Z:clawsweeper_needs_human",
       "comment_id": "5656099469",
@@ -33534,6 +33501,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147679:5657986614:2026-09-14T02:01:09Z:re_review",
+      "comment_id": "5657986614",
+      "comment_version_key": "5657986614:2026-09-14T02:01:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147679#issuecomment-5657986614",
+      "comment_created_at": "2026-09-14T02:01:09Z",
+      "comment_updated_at": "2026-09-14T02:01:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147679,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T02:02:06.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/npm-install-metadata-analysis-20260914",
+        "head_sha": "42dc9a27aa5dee6241fa5a6b9a720709ddecb1a6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
