@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T08:48:49.484Z",
+  "updated_at": "2026-09-14T08:48:53.562Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146868:5659093007:2026-09-14T04:38:02Z:re_review",
-      "comment_id": "5659093007",
-      "comment_version_key": "5659093007:2026-09-14T04:38:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146868#issuecomment-5659093007",
-      "comment_created_at": "2026-09-14T04:38:02Z",
-      "comment_updated_at": "2026-09-14T04:38:02Z",
-      "comment_body_sha256": "5180325a24fe39e80e13c58e94a7999e19c43b3a70b123731ce4d6f7c3ff1483",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146868,
-      "author": "tttboy123",
-      "author_id": 95002055,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T04:46:29.230Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/resume-native-identity-claim-137085",
-        "head_sha": "adf99e1ebc369d9b4831fb8e72c623c27955b0ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147907:5659109620:2026-09-14T04:40:14Z:re_review",
       "comment_id": "5659109620",
@@ -34215,6 +34168,39 @@
         "kind": "pull_request",
         "branch": "refactor/phase-signal-string-normalization-20260914",
         "head_sha": "ab16788c8ee9968f2abdded22885d72d518277d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148059:5660749323:2026-09-14T08:46:53Z:clawsweeper_needs_human",
+      "comment_id": "5660749323",
+      "comment_version_key": "5660749323:2026-09-14T08:46:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148059#issuecomment-5660749323",
+      "comment_created_at": "2026-09-14T07:50:30Z",
+      "comment_updated_at": "2026-09-14T08:46:53Z",
+      "comment_body_sha256": "2d2ea14872d48bd6b7b9cba1f75b767776f9f2742880ed659abf253ba019374d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148059,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Historical browser receipts do not establish execution at the rebased head; the supplied current-head checks were incomplete. (sha=b204047cf9aedb12ceb1eb2d29ddd9bc8a539e6b)",
+      "expected_head_sha": "b204047cf9aedb12ceb1eb2d29ddd9bc8a539e6b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T08:48:53.562Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-website-frame-input-20260914",
+        "head_sha": "b204047cf9aedb12ceb1eb2d29ddd9bc8a539e6b",
         "cluster_id": null,
         "job_path": null
       }
