@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T13:37:25.417Z",
+  "updated_at": "2026-09-14T13:37:49.319Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148042:5660502131:2026-09-14T08:04:36Z:clawsweeper_needs_human",
-      "comment_id": "5660502131",
-      "comment_version_key": "5660502131:2026-09-14T08:04:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148042#issuecomment-5660502131",
-      "comment_created_at": "2026-09-14T07:26:06Z",
-      "comment_updated_at": "2026-09-14T08:04:36Z",
-      "comment_body_sha256": "78317db80e88df092c5c80bacee24777e7dd9462f75877ced39ae5c199f6546a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148042,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The changed regression verifies fallback binding but does not demonstrate selected-helper acquisition from a sparse checkout. (sha=ef6e17e93560d2ee24500fcb10887ab60f242056)",
-      "expected_head_sha": "ef6e17e93560d2ee24500fcb10887ab60f242056",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T08:10:23.266Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-frozen-contracts",
-        "head_sha": "73fff7ba2530e9921ee448e99bcd5c73f1ff6963",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143528:5610502485:2026-09-14T08:04:46Z:clawsweeper_needs_human",
       "comment_id": "5610502485",
@@ -34922,6 +34889,53 @@
         "kind": "pull_request",
         "branch": "fix/maturity-348158-process-contracts",
         "head_sha": "4f6168278e9748c587932b1772db544bcd9162b8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148217:5664846806:2026-09-14T13:36:25Z:re_review",
+      "comment_id": "5664846806",
+      "comment_version_key": "5664846806:2026-09-14T13:36:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148217#issuecomment-5664846806",
+      "comment_created_at": "2026-09-14T13:36:25Z",
+      "comment_updated_at": "2026-09-14T13:36:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148217,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T13:37:45.752Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maturity-348158-slack-progress",
+        "head_sha": "eb64b76d6205ded850cf295a21c746bc55ee7e0c",
         "cluster_id": null,
         "job_path": null
       },
