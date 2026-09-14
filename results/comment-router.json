@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T23:14:52.435Z",
+  "updated_at": "2026-09-14T23:17:11.778Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147981:5659828889:2026-09-14T17:23:53Z:clawsweeper_needs_human",
-      "comment_id": "5659828889",
-      "comment_version_key": "5659828889:2026-09-14T17:23:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147981#issuecomment-5659828889",
-      "comment_created_at": "2026-09-14T06:17:28Z",
-      "comment_updated_at": "2026-09-14T17:23:53Z",
-      "comment_body_sha256": "28560868f83ea4ed6e95b9acc0a42ffe178c413fccadd2ed83fb1be0c2555dfc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147981,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a14efb8864fa4f1572baa951c289908c8ab323a4)",
-      "expected_head_sha": "a14efb8864fa4f1572baa951c289908c8ab323a4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T17:24:53.028Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test-audit/wave19-runtime-env-matrices",
-        "head_sha": "a14efb8864fa4f1572baa951c289908c8ab323a4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147490:5656699061:2026-09-14T17:16:48Z:clawsweeper_needs_human",
       "comment_id": "5656699061",
@@ -33290,6 +33257,53 @@
         "kind": "pull_request",
         "branch": "openclaw/recap-projection-stability",
         "head_sha": "8ed70a481166129f0079469f20dd6d30287114e9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148478:5672099721:2026-09-14T23:16:13Z:re_review",
+      "comment_id": "5672099721",
+      "comment_version_key": "5672099721:2026-09-14T23:16:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148478#issuecomment-5672099721",
+      "comment_created_at": "2026-09-14T23:16:13Z",
+      "comment_updated_at": "2026-09-14T23:16:13Z",
+      "comment_body_sha256": "e0141939dadb860edf04b79016de515526a31c36620ffd30b907e0b004f31532",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148478,
+      "author": "Gabrielnkl",
+      "author_id": 18104911,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — added live gateway proof (pre-fix overwrite + post-fix preservation, real cron maintenance sweeper as completion writer, temp instrumentation removed, diff unchanged) plus unit suites re-run green on the merged tree",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T23:17:09.841Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-cancel-preserve-completion",
+        "head_sha": "e5a1174eb61b0cd49ab4b3a59fddd01e90e07c0e",
         "cluster_id": null,
         "job_path": null
       },
