@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T09:52:36.834Z",
+  "updated_at": "2026-09-14T09:52:53.735Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143329:5659495978:2026-09-14T05:34:17Z:re_review",
-      "comment_id": "5659495978",
-      "comment_version_key": "5659495978:2026-09-14T05:34:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143329#issuecomment-5659495978",
-      "comment_created_at": "2026-09-14T05:34:17Z",
-      "comment_updated_at": "2026-09-14T05:34:17Z",
-      "comment_body_sha256": "08360a56a8ab59e4fedd35f3c6eea948a20baccb50ab6437e24d8a44935402d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143329,
-      "author": "koltyj",
-      "author_id": 200329117,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T05:35:14.020Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-ae-permission-probe-off-cooperative-pool",
-        "head_sha": "621a4a4d8315dab1d2df35fdcefa8edc8e8f0c8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142967:5598875509:2026-09-14T05:34:40Z:clawsweeper_needs_human",
       "comment_id": "5598875509",
@@ -34511,6 +34464,39 @@
         "kind": "pull_request",
         "branch": "feat/exec-task-output-tail",
         "head_sha": "9ea628c1a095c8adb4927c9db7bc25c427f45305",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145001:5636264327:2026-09-14T09:51:45Z:clawsweeper_needs_human",
+      "comment_id": "5636264327",
+      "comment_version_key": "5636264327:2026-09-14T09:51:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145001#issuecomment-5636264327",
+      "comment_created_at": "2026-09-11T14:50:06Z",
+      "comment_updated_at": "2026-09-14T09:51:45Z",
+      "comment_body_sha256": "c8580e7416a36991e0a38bf977537219ba1aa1da016bedd22ab62306b8f501ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145001,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain and record listed secops-owner acceptance of the approvals-history documentation before merge. (sha=7474276862d4299a58c730923de6f396665aa2a6)",
+      "expected_head_sha": "7474276862d4299a58c730923de6f396665aa2a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T09:52:53.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-144950-approvals-history-cli",
+        "head_sha": "7474276862d4299a58c730923de6f396665aa2a6",
         "cluster_id": null,
         "job_path": null
       }
