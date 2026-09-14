@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T03:42:39.087Z",
+  "updated_at": "2026-09-14T03:43:21.133Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147477:5656583184:2026-09-13T23:06:59Z:clawsweeper_needs_human",
-      "comment_id": "5656583184",
-      "comment_version_key": "5656583184:2026-09-13T23:06:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147477#issuecomment-5656583184",
-      "comment_created_at": "2026-09-13T22:25:19Z",
-      "comment_updated_at": "2026-09-13T23:06:59Z",
-      "comment_body_sha256": "2a2d42bfb88b2618e7bc75f12af9a8e49029e5960fda71b3e5501490eadc8990",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147477,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing configurations with undeclared provider references, including inactive references, will reject unrelated configuration writes until those references are repaired or removed;... (sha=781962fb0746516148d502bef51ad395303d5938)",
-      "expected_head_sha": "781962fb0746516148d502bef51ad395303d5938",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-13T23:07:53.194Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/147435-secret-provider-validate",
-        "head_sha": "781962fb0746516148d502bef51ad395303d5938",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147516:5656851834:2026-09-13T23:08:27Z:clawsweeper_needs_human",
       "comment_id": "5656851834",
@@ -33448,6 +33415,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/octopool:135:5658665504:2026-09-14T03:42:27Z:re_review",
+      "comment_id": "5658665504",
+      "comment_version_key": "5658665504:2026-09-14T03:42:27Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/135#issuecomment-5658665504",
+      "comment_created_at": "2026-09-14T03:42:27Z",
+      "comment_updated_at": "2026-09-14T03:42:27Z",
+      "comment_body_sha256": "6199da0a227a6dfc6a1ea7e167077e4a665d478337cdf0a2372130042c07425e",
+      "repo": "openclaw/octopool",
+      "issue_number": 135,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T03:43:19.485Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/coalesce-config-refresh",
+        "head_sha": "c7638bc606dc4c4f8cf5fee513c6f678a10ef418",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
