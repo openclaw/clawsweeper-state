@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T05:30:47.333Z",
+  "updated_at": "2026-09-14T05:30:52.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147671:5657801054:2026-09-14T01:32:42Z:re_review",
-      "comment_id": "5657801054",
-      "comment_version_key": "5657801054:2026-09-14T01:32:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147671#issuecomment-5657801054",
-      "comment_created_at": "2026-09-14T01:32:42Z",
-      "comment_updated_at": "2026-09-14T01:32:42Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147671,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T01:33:42.447Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/cron-invalid-parameter-responses-20260914",
-        "head_sha": "7331152b30d966750b593b142748c1840ce33e21",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139878:5557651114:2026-09-14T01:33:27Z:clawsweeper_needs_human",
       "comment_id": "5557651114",
@@ -33131,6 +33084,39 @@
         "kind": "pull_request",
         "branch": "refactor/provider-auth-patch-recursion-20260914",
         "head_sha": "2a7caf28d1c6b8bd9db67252cf5db88ca9e221b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147756:5658377260:2026-09-14T05:28:50Z:clawsweeper_needs_human",
+      "comment_id": "5658377260",
+      "comment_version_key": "5658377260:2026-09-14T05:28:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147756#issuecomment-5658377260",
+      "comment_created_at": "2026-09-14T03:00:18Z",
+      "comment_updated_at": "2026-09-14T05:28:50Z",
+      "comment_body_sha256": "cadf116628f8a198fedbda267e05de572b4d836559dfdee248a0e59c01d79eb6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147756,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - External v2-only evidence readers will reject new v3 output unless upgraded alongside producers; existing v2 artifacts remain readable. (sha=461aa5b7c559fed86dd003ce142c96b08f53ca70)",
+      "expected_head_sha": "461aa5b7c559fed86dd003ce142c96b08f53ca70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T05:30:52.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/qa-evidence-occurrences-20260913",
+        "head_sha": "461aa5b7c559fed86dd003ce142c96b08f53ca70",
         "cluster_id": null,
         "job_path": null
       }
