@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T06:07:09.392Z",
+  "updated_at": "2026-09-14T06:07:30.825Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147714:5658071930:2026-09-14T02:13:36Z:clawsweeper_needs_human",
-      "comment_id": "5658071930",
-      "comment_version_key": "5658071930:2026-09-14T02:13:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147714#issuecomment-5658071930",
-      "comment_created_at": "2026-09-14T02:13:36Z",
-      "comment_updated_at": "2026-09-14T02:13:36Z",
-      "comment_body_sha256": "c8672dd7724bf267d7815cec2eefbea594e21233d92f4814ac11a30e0841b926",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147714,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Recovery now rewrites persisted plugin entries and policy references, but published-updater parent writeback and rollback compatibility remain unqualified; an older parent could resto... (sha=2bc37ee005a5c522d7c5d854d52d32c1f6ca2189)",
-      "expected_head_sha": "2bc37ee005a5c522d7c5d854d52d32c1f6ca2189",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T02:14:37.825Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-installed-plugin-id-recovery-136025",
-        "head_sha": "2bc37ee005a5c522d7c5d854d52d32c1f6ca2189",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/notcrawl:144:5658075283:2026-09-14T02:14:04Z:clawsweeper_needs_human",
       "comment_id": "5658075283",
@@ -32954,6 +32921,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:146555:5659728498:2026-09-14T06:06:16Z:re_review",
+      "comment_id": "5659728498",
+      "comment_version_key": "5659728498:2026-09-14T06:06:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146555#issuecomment-5659728498",
+      "comment_created_at": "2026-09-14T06:06:16Z",
+      "comment_updated_at": "2026-09-14T06:06:16Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146555,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T06:07:26.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-campaign-reset-owner9",
+        "head_sha": "6ed954d4dfa46875db52be3a9499f2aa50df1999",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
