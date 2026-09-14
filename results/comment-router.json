@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T09:05:18.285Z",
+  "updated_at": "2026-09-14T09:05:26.984Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147915:5659189536:2026-09-14T04:51:37Z:re_review",
-      "comment_id": "5659189536",
-      "comment_version_key": "5659189536:2026-09-14T04:51:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147915#issuecomment-5659189536",
-      "comment_created_at": "2026-09-14T04:51:37Z",
-      "comment_updated_at": "2026-09-14T04:51:37Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147915,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T05:02:11.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/custom-provider-model-definition-20260914",
-        "head_sha": "f0fc9a77cc5be3901f2d0fa52afbc64f05d66916",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145873:5659191942:2026-09-14T04:51:59Z:re_review",
       "comment_id": "5659191942",
@@ -34302,6 +34255,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147667:5657817582:2026-09-14T09:04:23Z:clawsweeper_needs_human",
+      "comment_id": "5657817582",
+      "comment_version_key": "5657817582:2026-09-14T09:04:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147667#issuecomment-5657817582",
+      "comment_created_at": "2026-09-14T01:35:16Z",
+      "comment_updated_at": "2026-09-14T09:04:23Z",
+      "comment_body_sha256": "4c931877863ef79ed300ffb82aa3a2d5fe5e8c24e8a213f2af4db3ed8659dd1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147667,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A rebuilt Feishu package imports an SDK callback absent from released 2026.9.4 cores; coordinated API metadata must prevent incompatible installation before plugin loading. (sha=744b0ac0189e7989b572a90d9874f72959a3fd72)",
+      "expected_head_sha": "744b0ac0189e7989b572a90d9874f72959a3fd72",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T09:05:26.984Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/feishu-read-authority",
+        "head_sha": "744b0ac0189e7989b572a90d9874f72959a3fd72",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
