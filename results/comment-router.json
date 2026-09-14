@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T03:33:24.194Z",
+  "updated_at": "2026-09-14T03:33:25.449Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147446:5656711687:2026-09-13T22:48:52Z:re_review",
-      "comment_id": "5656711687",
-      "comment_version_key": "5656711687:2026-09-13T22:48:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147446#issuecomment-5656711687",
-      "comment_created_at": "2026-09-13T22:48:52Z",
-      "comment_updated_at": "2026-09-13T22:48:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147446,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T22:50:10.494Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-local-first",
-        "head_sha": "27fce1a45b9a7c3dc4afbe9a09006c310ef43209",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-09-13T22:42:04Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -33515,6 +33468,39 @@
         "kind": "pull_request",
         "branch": "fix/truthful-cache-metrics",
         "head_sha": "4c1f123df2d80d6c0e6f3883c6b251744d125610",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:220:5658598407:2026-09-14T03:32:30Z:clawsweeper_needs_human",
+      "comment_id": "5658598407",
+      "comment_version_key": "5658598407:2026-09-14T03:32:30Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/220#issuecomment-5658598407",
+      "comment_created_at": "2026-09-14T03:32:30Z",
+      "comment_updated_at": "2026-09-14T03:32:30Z",
+      "comment_body_sha256": "de73e7df4374c81525abfe76a6c34330101077eec3fd768057cbca4febdc2473",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 220,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After pending work exists, switching to a connector without thread support makes ordinary sync fail until thread support returns; this intentional operator impact is documented and re... (sha=32b0cb8453a7380bfe4f3fa0cb78eab9b1d07cd0)",
+      "expected_head_sha": "32b0cb8453a7380bfe4f3fa0cb78eab9b1d07cd0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T03:33:25.449Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-retained-thread-work",
+        "head_sha": "32b0cb8453a7380bfe4f3fa0cb78eab9b1d07cd0",
         "cluster_id": null,
         "job_path": null
       }
