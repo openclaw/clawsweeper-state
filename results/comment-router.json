@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T21:11:56.623Z",
+  "updated_at": "2026-09-14T21:12:14.157Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148122:5666736085:2026-09-14T15:51:22Z:re_review",
-      "comment_id": "5666736085",
-      "comment_version_key": "5666736085:2026-09-14T15:51:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148122#issuecomment-5666736085",
-      "comment_created_at": "2026-09-14T15:51:22Z",
-      "comment_updated_at": "2026-09-14T15:51:22Z",
-      "comment_body_sha256": "537a1f523a7af9787b07b1745fc2bce059887d6ce8144fb9c3a78b8ae46e6169",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148122,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — rebased exact head fc583886573a96a674a132d9e5743bb0ecbe1b94. focused maturity tests, oxfmt, oxlint, maturity:check, tsgo:scripts, and tsgo:test:root pass locally",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T15:52:33.217Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-app-inventory",
-        "head_sha": "fc583886573a96a674a132d9e5743bb0ecbe1b94",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148121:5666735350:2026-09-14T15:51:20Z:re_review",
       "comment_id": "5666735350",
@@ -33374,6 +33327,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-subagent-read-projection",
         "head_sha": "5aff3e6bc640d56f8a2f036601b28845d2cea0fd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148468:5669125967:2026-09-14T21:10:44Z:clawsweeper_needs_human",
+      "comment_id": "5669125967",
+      "comment_version_key": "5669125967:2026-09-14T21:10:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148468#issuecomment-5669125967",
+      "comment_created_at": "2026-09-14T18:59:41Z",
+      "comment_updated_at": "2026-09-14T21:10:44Z",
+      "comment_body_sha256": "06ded47a1a73548b3fbc3cde04a59e6447950ae4afe00e534f86109a4d43f7e0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148468,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Multipart-heavy or mixed traffic may lose performance despite single-frame gains; the reported cohort does not establish net production benefit, and the refreshed dependency graph was... (sha=4eb198cc6d93874ebc7a4882f5aa0e4d0522dde5)",
+      "expected_head_sha": "4eb198cc6d93874ebc7a4882f5aa0e4d0522dde5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T21:12:14.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-node-duplex-single-fragment-r12",
+        "head_sha": "4eb198cc6d93874ebc7a4882f5aa0e4d0522dde5",
         "cluster_id": null,
         "job_path": null
       }
