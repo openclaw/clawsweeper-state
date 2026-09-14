@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T01:31:51.809Z",
+  "updated_at": "2026-09-14T01:32:20.971Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144993:5655799950:2026-09-13T20:09:11Z:re_review",
-      "comment_id": "5655799950",
-      "comment_version_key": "5655799950:2026-09-13T20:09:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144993#issuecomment-5655799950",
-      "comment_created_at": "2026-09-13T20:09:11Z",
-      "comment_updated_at": "2026-09-13T20:09:11Z",
-      "comment_body_sha256": "24ee8248d55b742b7c140e6d3c089080fd6a70b3183cb25a40f9956caf34ad4e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144993,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-13T20:10:47.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/wear-pr-c2-20260911",
-        "head_sha": "3b99b2318864c194ee733ddced5eebe478127439",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147318:5655755071:2026-09-13T20:01:42Z:clawsweeper_needs_human",
       "comment_id": "5655755071",
@@ -33515,6 +33468,39 @@
         "kind": "pull_request",
         "branch": "codex/optimistic-session-archive",
         "head_sha": "ccf3a5ff9a36f8dec3e161e6697c709828cebc91",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147661:5657792481:2026-09-14T01:31:20Z:clawsweeper_needs_human",
+      "comment_id": "5657792481",
+      "comment_version_key": "5657792481:2026-09-14T01:31:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147661#issuecomment-5657792481",
+      "comment_created_at": "2026-09-14T01:31:20Z",
+      "comment_updated_at": "2026-09-14T01:31:20Z",
+      "comment_body_sha256": "ffd0a3b52e38cb568cf7f361781b03836c7e5e9779849942685c74325c995a2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147661,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installing the updated Teams package against an older core can fail because the required SDK export is absent. The shared compatibility floor is documented, but Teams-specific install... (sha=69a6b26023229a7ecf3551810ff6d8099ad5a13e)",
+      "expected_head_sha": "69a6b26023229a7ecf3551810ff6d8099ad5a13e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T01:32:20.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/teams-context-reads",
+        "head_sha": "69a6b26023229a7ecf3551810ff6d8099ad5a13e",
         "cluster_id": null,
         "job_path": null
       }
