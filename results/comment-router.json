@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T11:23:37.135Z",
+  "updated_at": "2026-09-14T11:23:47.083Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143937:5659970229:2026-09-14T06:31:19Z:re_review",
-      "comment_id": "5659970229",
-      "comment_version_key": "5659970229:2026-09-14T06:31:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143937#issuecomment-5659970229",
-      "comment_created_at": "2026-09-14T06:31:19Z",
-      "comment_updated_at": "2026-09-14T06:31:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143937,
-      "author": "Finn763",
-      "author_id": 165816600,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T06:32:43.826Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/oc-142821-descr",
-        "head_sha": "e014c5e8efe21baaf743589654feedab0e187a63",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144056:5659970468:2026-09-14T06:31:21Z:re_review",
       "comment_id": "5659970468",
@@ -34720,6 +34673,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148150:5662252681:2026-09-14T11:22:44Z:clawsweeper_needs_human",
+      "comment_id": "5662252681",
+      "comment_version_key": "5662252681:2026-09-14T11:22:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148150#issuecomment-5662252681",
+      "comment_created_at": "2026-09-14T10:01:32Z",
+      "comment_updated_at": "2026-09-14T11:22:44Z",
+      "comment_body_sha256": "2f6cf784792ae60f27c71e6d877bc4335ec3a8e8d7ebff6e9595c014b738c215",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148150,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=dbb91a60a3bcff4af55c102a4352c5e7dc37cf79)",
+      "expected_head_sha": "dbb91a60a3bcff4af55c102a4352c5e7dc37cf79",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T11:23:47.083Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/maturity-348158-bundled-skill-agent",
+        "head_sha": "dbb91a60a3bcff4af55c102a4352c5e7dc37cf79",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
