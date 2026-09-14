@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-14T16:05:32.291Z",
+  "updated_at": "2026-09-14T16:07:30.114Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148121:5661643415:2026-09-14T09:10:49Z:re_review",
-      "comment_id": "5661643415",
-      "comment_version_key": "5661643415:2026-09-14T09:10:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148121#issuecomment-5661643415",
-      "comment_created_at": "2026-09-14T09:10:49Z",
-      "comment_updated_at": "2026-09-14T09:10:49Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148121,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T09:33:51.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "audit/maturity-provider-cohorts",
-        "head_sha": "ebc1ca0d2c1508d91323060e09ffa2eae63ad589",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146503:5661747320:2026-09-14T09:18:28Z:re_review",
       "comment_id": "5661747320",
@@ -35024,6 +34977,39 @@
         "kind": "pull_request",
         "branch": "fix/claude-background-cookie-refresh-preflight",
         "head_sha": "2d4e52000266e48f6f7a0f3ef825713e50c3ef3e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:360:5666933319:2026-09-14T16:05:54Z:clawsweeper_needs_human",
+      "comment_id": "5666933319",
+      "comment_version_key": "5666933319:2026-09-14T16:05:54Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/360#issuecomment-5666933319",
+      "comment_created_at": "2026-09-14T16:05:54Z",
+      "comment_updated_at": "2026-09-14T16:05:54Z",
+      "comment_body_sha256": "ce24303ca7677a5a48056b401014ebbf695f73f84bef698215c3c47ca5e75019",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 360,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body reports test-based validation of readArchiveEntry on AWS Crabbox cbx_3bb45a5e7f38. The tests use real JSZip decoders with ins... (sha=0b4f4764fce92e7bd9bd79cc3777d95edd53ca2d)",
+      "expected_head_sha": "0b4f4764fce92e7bd9bd79cc3777d95edd53ca2d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-14T16:07:30.114Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/zip-read-cleanup",
+        "head_sha": "0b4f4764fce92e7bd9bd79cc3777d95edd53ca2d",
         "cluster_id": null,
         "job_path": null
       }
