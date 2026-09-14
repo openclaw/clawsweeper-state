@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-14T17:52:32.364Z",
+  "updated_at": "2026-09-14T17:53:09.126Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148143:5662156747:2026-09-14T11:25:08Z:clawsweeper_needs_human",
-      "comment_id": "5662156747",
-      "comment_version_key": "5662156747:2026-09-14T11:25:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148143#issuecomment-5662156747",
-      "comment_created_at": "2026-09-14T09:52:55Z",
-      "comment_updated_at": "2026-09-14T11:25:08Z",
-      "comment_body_sha256": "bd978d016f7273b1ad1fab7ae96239970a635172068c641a6420fb9b479f9be4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148143,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1d93de0dc6d22ea24d2f193effad702c16ae4545)",
-      "expected_head_sha": "1d93de0dc6d22ea24d2f193effad702c16ae4545",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T11:35:03.371Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/config-stale-draft-recovery-0914",
-        "head_sha": "1d93de0dc6d22ea24d2f193effad702c16ae4545",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148162:5662865234:2026-09-14T11:30:53Z:clawsweeper_needs_human",
       "comment_id": "5662865234",
@@ -34555,6 +34522,53 @@
       "status": "skipped",
       "processed_at": "2026-09-14T17:52:32.364Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148123:5668284948:2026-09-14T17:52:06Z:re_review",
+      "comment_id": "5668284948",
+      "comment_version_key": "5668284948:2026-09-14T17:52:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148123#issuecomment-5668284948",
+      "comment_created_at": "2026-09-14T17:52:06Z",
+      "comment_updated_at": "2026-09-14T17:52:06Z",
+      "comment_body_sha256": "6b69030a9f01b4cc8b4493c156e8fae226280080e0651a191909bc3ad72a3d0b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148123,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — exact head dc29503297fc69f589f2be9b223152b1a9dd0b06. this is read-only maturity catalog projection and warning output; it changes no schema, stored state, migration, or upgrade contract. the current review reports no actionable finding and confirms the earlier argument-forwarding and tokenjuice findings are resolved. please reconcile the stale data-model compatibility gate",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-14T17:53:06.972Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "audit/maturity-inventory-warnings",
+        "head_sha": "dc29503297fc69f589f2be9b223152b1a9dd0b06",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
