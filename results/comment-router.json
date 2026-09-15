@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T12:10:15.844Z",
+  "updated_at": "2026-09-15T12:10:15.995Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148842:5675924142:2026-09-15T06:39:42Z:clawsweeper_needs_human",
-      "comment_id": "5675924142",
-      "comment_version_key": "5675924142:2026-09-15T06:39:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148842#issuecomment-5675924142",
-      "comment_created_at": "2026-09-15T06:39:42Z",
-      "comment_updated_at": "2026-09-15T06:39:42Z",
-      "comment_body_sha256": "361a58d6f617e843bc042264e0eb31ba11928c1a957267681519dc491263a462",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148842,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed parser-to-plugin dispatch is exercised through card.action.trigger with mocked provider calls. The real metadata lookup only confir... (sha=05bb7d4dc3074ca25c3a7462fc775ddcf42f654e)",
-      "expected_head_sha": "05bb7d4dc3074ca25c3a7462fc775ddcf42f654e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T06:40:32.263Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex-feishu-plugin-card-callbacks",
-        "head_sha": "05bb7d4dc3074ca25c3a7462fc775ddcf42f654e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148311:5675930245:2026-09-15T06:40:17Z:re_review",
       "comment_id": "5675930245",
@@ -33639,6 +33606,53 @@
         "kind": "pull_request",
         "branch": "cleanup/wave21-qa-evidence-matrices",
         "head_sha": "e46f8aa711ed254342f3adaa13d4269e7c5bcaf4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149043:5679913102:2026-09-15T12:09:22Z:re_review",
+      "comment_id": "5679913102",
+      "comment_version_key": "5679913102:2026-09-15T12:09:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149043#issuecomment-5679913102",
+      "comment_created_at": "2026-09-15T12:09:22Z",
+      "comment_updated_at": "2026-09-15T12:09:22Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149043,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T12:10:13.929Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cleanup/wave21-config-audit-matrices",
+        "head_sha": "4c0307f75620a2541d8ac699845d2dfd9110b60c",
         "cluster_id": null,
         "job_path": null
       },
