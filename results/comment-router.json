@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T05:05:02.327Z",
+  "updated_at": "2026-09-15T05:05:10.796Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130877:5437893744:2026-09-15T01:05:17Z:clawsweeper_needs_human",
-      "comment_id": "5437893744",
-      "comment_version_key": "5437893744:2026-09-15T01:05:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/130877#issuecomment-5437893744",
-      "comment_created_at": "2026-08-27T10:46:24Z",
-      "comment_updated_at": "2026-09-15T01:05:17Z",
-      "comment_body_sha256": "5e6aa408628666a80f7e25b708405da16c8892255703e7ff16a067f9c61e026b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 130877,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing SQLite sources above 50 MiB that previously exported with sufficient heap will now fail with a size error; explicit maintainer acceptance is not recorded. (sha=bc7ee2787068bcb7db9c732f3dec5ff2667e7e3d)",
-      "expected_head_sha": "bc7ee2787068bcb7db9c732f3dec5ff2667e7e3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T01:29:15.993Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/trajectory-sqlite-byte-budget-127433",
-        "head_sha": "bc7ee2787068bcb7db9c732f3dec5ff2667e7e3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142954:5598452887:2026-09-15T01:26:31Z:clawsweeper_auto_repair",
       "comment_id": "5598452887",
@@ -32177,6 +32144,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148703:5675031181:2026-09-15T05:04:19Z:re_review",
+      "comment_id": "5675031181",
+      "comment_version_key": "5675031181:2026-09-15T05:04:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148703#issuecomment-5675031181",
+      "comment_created_at": "2026-09-15T05:04:19Z",
+      "comment_updated_at": "2026-09-15T05:04:19Z",
+      "comment_body_sha256": "c7fc734b3c182890ac6241862d4d02a220bccd8479c11e9b989a7ffde727fd15",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148703,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T05:05:08.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/node-session-readiness-vacinc",
+        "head_sha": "b23d44c9159092c278a48c42bd82602918cb4a4b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
