@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149255",
+  "mode": "plan",
+  "run_id": "35012112590",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35012112590",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149255.md",
+  "published_at": "2026-09-15T19:37:42.878Z",
+  "canonical": "#149255",
+  "canonical_issue": "#149255",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for #149255; retain #141474 as related. No changes or tests performed. Implementation requires a failing composed regression, exact Codex dependency inspection, and an owning-PR recheck.",
+  "actions": [
+    {
+      "target": "#149255",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149255",
+      "candidate_fix": null,
+      "reason": "A scoped bug repair is justified for investigation; runtime reproduction and dependency-contract verification remain prerequisites to implementation."
+    },
+    {
+      "target": "#141474",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149255",
+      "candidate_fix": null,
+      "reason": "Genuine sessions_yield and collector behavior differ from falsely marking background-media startup as an accepted yield. Preserve this separate issue and its continuation contracts."
+    },
+    {
+      "target": "#92120",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for preserving cron and intentional-yield behavior."
+    },
+    {
+      "target": "#99921",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical media-continuation context, without established shared root cause."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
