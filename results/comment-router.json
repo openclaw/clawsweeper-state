@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T19:29:20.727Z",
+  "updated_at": "2026-09-15T19:30:33.628Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149124:5681600450:2026-09-15T14:09:32Z:re_review",
-      "comment_id": "5681600450",
-      "comment_version_key": "5681600450:2026-09-15T14:09:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149124#issuecomment-5681600450",
-      "comment_created_at": "2026-09-15T14:09:32Z",
-      "comment_updated_at": "2026-09-15T14:09:32Z",
-      "comment_body_sha256": "942f37482b10746dd168bfa34358dee52cfd9859af7cfd4095b4b4e9db96a385",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149124,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T14:10:36.505Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/release-fs-safe-0120-20260915",
-        "head_sha": "269d8cb78493b2d9e310d49d3d9bc1aff3a03ed0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149152:5681642946:2026-09-15T14:11:43Z:clawsweeper_needs_human",
       "comment_id": "5681642946",
@@ -33500,6 +33453,39 @@
         "kind": "pull_request",
         "branch": "refactor/test-audit-lmstudio-base-url-20260915",
         "head_sha": "724d91d7cda671a0a1fa1653e66d3ce208e5a7bf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149358:5686835741:2026-09-15T19:26:32Z:clawsweeper_needs_human",
+      "comment_id": "5686835741",
+      "comment_version_key": "5686835741:2026-09-15T19:26:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149358#issuecomment-5686835741",
+      "comment_created_at": "2026-09-15T19:26:32Z",
+      "comment_updated_at": "2026-09-15T19:26:32Z",
+      "comment_body_sha256": "988929fb2d592af6ce96b7a9854ff7b8bb7b778310948b3bbb9b51f098a05e96",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149358,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - External users of the exported catalog helper’s fallback may observe missing skillsSnapshot and systemPromptReport after upgrading; bundled consumers are compatible, but the intended... (sha=37df656b52c40df1de8e4db9a11cca662c73273d)",
+      "expected_head_sha": "37df656b52c40df1de8e4db9a11cca662c73273d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T19:30:33.628Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-list-projection-metadata-reads",
+        "head_sha": "37df656b52c40df1de8e4db9a11cca662c73273d",
         "cluster_id": null,
         "job_path": null
       }
