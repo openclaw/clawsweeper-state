@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T20:27:26.643Z",
+  "updated_at": "2026-09-15T20:27:34.781Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149157:5682594220:2026-09-15T15:02:51Z:re_review",
-      "comment_id": "5682594220",
-      "comment_version_key": "5682594220:2026-09-15T15:02:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149157#issuecomment-5682594220",
-      "comment_created_at": "2026-09-15T15:02:51Z",
-      "comment_updated_at": "2026-09-15T15:02:51Z",
-      "comment_body_sha256": "f9cb189fa32bcb86b1e7c9ead5f57936bfeaba74fb928037d7077eaa374283f2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149157,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T15:11:01.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-evidence-child-import",
-        "head_sha": "e572a65333e1650202ba2825c155ffdadca8f6c2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149157:5681869184:2026-09-15T15:09:56Z:clawsweeper_needs_human",
       "comment_id": "5681869184",
@@ -33553,6 +33506,39 @@
         "kind": "pull_request",
         "branch": "codex/bun-managed-handoff-fixtures",
         "head_sha": "a27f30554e14d0a7494ced4ceff1854c7b48bb35",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:323:5655965833:2026-09-15T20:10:36Z:clawsweeper_needs_human",
+      "comment_id": "5655965833",
+      "comment_version_key": "5655965833:2026-09-15T20:10:36Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/323#issuecomment-5655965833",
+      "comment_created_at": "2026-09-13T20:37:13Z",
+      "comment_updated_at": "2026-09-15T20:10:36Z",
+      "comment_body_sha256": "b41e0716486fed74a77f9e7672eea9b552391fab1ab78dbdf2783468331f8bfe",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 323,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Windows callers using alternate-stream or directory-index spellings will now fail admission; maintainer acceptance of this deliberate compatibility restriction remains unreco... (sha=de7d8a24342594ed0130de09483069ea8c88d114)",
+      "expected_head_sha": "de7d8a24342594ed0130de09483069ea8c88d114",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T20:27:34.781Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-ads-path-rejection-20260913",
+        "head_sha": "de7d8a24342594ed0130de09483069ea8c88d114",
         "cluster_id": null,
         "job_path": null
       }
