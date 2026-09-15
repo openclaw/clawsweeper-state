@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148796",
+  "mode": "autonomous",
+  "run_id": "34933000400",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34933000400",
+  "head_sha": "f4b109ab7df97f77267f41749edeec2c2f354148",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148796.md",
+  "published_at": "2026-09-15T07:15:22.550Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/148796",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/148796",
+  "canonical_pr": null,
+  "summary": "Confirmed the filename-dependent discovery gap in source at preflight main daa7c061d8937cc09a567bc1cf88288f2aeff05c. A narrow fix artifact is ready, but read-only host permissions block fixture creation, implementation, tests, and real CLI proof. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#148796",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148796",
+      "candidate_fix": null,
+      "reason": "Repair discovery without changing managed ownership or verification scope. Command-level reproduction must precede production edits on a writable executor."
+    },
+    {
+      "target": "#146700",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical ownership-policy context, not a replacement candidate or closure target."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-148796",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#148796",
+      "candidate_fix": null,
+      "reason": "The narrow non-security fix remains appropriate; executable reproduction and implementation require a writable host."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-148796",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#148796",
+      "candidate_fix": null,
+      "reason": "Implementation and publication are blocked pending writable execution, successful reproduction, focused validation, and fresh review. Merge and issue closure remain prohibited."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
