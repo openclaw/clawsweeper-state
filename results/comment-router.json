@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T14:48:40.727Z",
+  "updated_at": "2026-09-15T14:49:13.327Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1593:5677429790:2026-09-15T08:52:19Z:clawsweeper_needs_human",
-      "comment_id": "5677429790",
-      "comment_version_key": "5677429790:2026-09-15T08:52:19Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1593#issuecomment-5677429790",
-      "comment_created_at": "2026-09-15T08:52:19Z",
-      "comment_updated_at": "2026-09-15T08:52:19Z",
-      "comment_body_sha256": "c0c8855b3c2f8bd6c02b15fb6fbfd732f0c970f89759faed11d0a281e5dfe2bd",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1593,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported compiled-worker run uses real POSIX process groups and signals and observes recovery in the changed paths; this is meanin... (sha=568cdc3a986f368a85d0346d78d3b8027b896f9c)",
-      "expected_head_sha": "568cdc3a986f368a85d0346d78d3b8027b896f9c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T08:53:29.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-worker-signal-termination",
-        "head_sha": "568cdc3a986f368a85d0346d78d3b8027b896f9c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:242:5662812752:2026-09-15T08:53:19Z:clawsweeper_needs_human",
       "comment_id": "5662812752",
@@ -33708,6 +33675,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:140508:5682337826:2026-09-15T14:48:10Z:re_review",
+      "comment_id": "5682337826",
+      "comment_version_key": "5682337826:2026-09-15T14:48:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140508#issuecomment-5682337826",
+      "comment_created_at": "2026-09-15T14:48:10Z",
+      "comment_updated_at": "2026-09-15T14:48:10Z",
+      "comment_body_sha256": "5ee76e1d98132fc0f8ad50bd194f3a78f8b97a6cefea8e9859d8389bfc5a68ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140508,
+      "author": "saladinyao-cyber",
+      "author_id": 240252919,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T14:49:10.790Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/memory-embedding-item-limit",
+        "head_sha": "13e53ceac3563371087405844fddedd84b965080",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
