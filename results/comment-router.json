@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-15T10:19:43.279Z",
+  "updated_at": "2026-09-15T10:19:44.278Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148776:5674825750:2026-09-15T04:39:54Z:automerge",
-      "comment_id": "5674825750",
-      "comment_version_key": "5674825750:2026-09-15T04:39:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148776#issuecomment-5674825750",
-      "comment_created_at": "2026-09-15T04:39:54Z",
-      "comment_updated_at": "2026-09-15T04:39:54Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148776,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T04:40:39.369Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-pnpm-hydration-fixtures",
-        "head_sha": "da4228b2eeb82cf52868d1ac17fd4324cf60da6c",
-        "cluster_id": "automerge-openclaw-openclaw-148776",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148776.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148776.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148765:5674830438:2026-09-15T04:40:33Z:re_review",
       "comment_id": "5674830438",
@@ -33816,6 +33757,39 @@
         "kind": "pull_request",
         "branch": "codex/mcp-oauth-read-worker",
         "head_sha": "7cf7fa52d2a787c8371287dc8e51d5deeda5344c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148881:5676679371:2026-09-15T10:18:30Z:clawsweeper_needs_human",
+      "comment_id": "5676679371",
+      "comment_version_key": "5676679371:2026-09-15T10:18:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148881#issuecomment-5676679371",
+      "comment_created_at": "2026-09-15T07:48:43Z",
+      "comment_updated_at": "2026-09-15T10:18:30Z",
+      "comment_body_sha256": "df779d796b909658f87fd2d81b18caeb7c6f9bcf119c60e86001cb58f39023d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=20b9e0f21608c8a6d973fd443a05340ff2066bff)",
+      "expected_head_sha": "20b9e0f21608c8a6d973fd443a05340ff2066bff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T10:19:44.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-more-io-a62da047",
+        "head_sha": "20b9e0f21608c8a6d973fd443a05340ff2066bff",
         "cluster_id": null,
         "job_path": null
       }
