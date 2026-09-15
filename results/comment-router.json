@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:11:19.719Z",
+  "updated_at": "2026-09-15T03:11:31.685Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148135:5662093334:2026-09-14T21:24:16Z:clawsweeper_needs_human",
-      "comment_id": "5662093334",
-      "comment_version_key": "5662093334:2026-09-14T21:24:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148135#issuecomment-5662093334",
-      "comment_created_at": "2026-09-14T09:47:09Z",
-      "comment_updated_at": "2026-09-14T21:24:16Z",
-      "comment_body_sha256": "d6a887308a7d359965f42c2d283a05f8225a967ab70fdd8a972db9aa182e9608",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148135,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured body and inspected tests exercise runner identity, plugin allowlists, and direct-path revocation w...; Review finding: [P1] Carry the parent authority into isolated completions — src/plugins/runtime/runtime-llm.runtime.ts:564-569 - [medium] Isolated completion outlives admitting au... (sha=27178226017b3fe42f96f6e80bbda495dcaf6599)",
-      "expected_head_sha": "27178226017b3fe42f96f6e80bbda495dcaf6599",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T21:25:18.691Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/context-recall-sender-id",
-        "head_sha": "27178226017b3fe42f96f6e80bbda495dcaf6599",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:370:5671018998:2026-09-14T21:25:08Z:clawsweeper_needs_human",
       "comment_id": "5671018998",
@@ -33617,6 +33584,55 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148175:5662862838:2026-09-15T02:58:13Z:clawsweeper_auto_merge",
+      "comment_id": "5662862838",
+      "comment_version_key": "5662862838:2026-09-15T02:58:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148175#issuecomment-5662862838",
+      "comment_created_at": "2026-09-14T10:56:08Z",
+      "comment_updated_at": "2026-09-15T02:58:13Z",
+      "comment_body_sha256": "1c7665c5e0556a7804ab91dbd913a5eca91f14c65ce1c132eec7245b13ad9dfc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=5699742d73082add60859bfea0c6ce07fbdd6faf)",
+      "forced_replay": true,
+      "attempt_id": "completed-review-5673953495-5662862838",
+      "expected_head_sha": "5699742d73082add60859bfea0c6ce07fbdd6faf",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-15T03:11:31.685Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-service-retention",
+        "head_sha": "5699742d73082add60859bfea0c6ce07fbdd6faf",
+        "cluster_id": "automerge-openclaw-openclaw-148175",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148175.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
           "label": null,
           "job_path": null
         }
