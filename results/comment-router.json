@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T19:08:10.086Z",
+  "updated_at": "2026-09-15T19:09:56.532Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149061:5681235456:2026-09-15T13:45:36Z:freeform_assist",
-      "comment_id": "5681235456",
-      "comment_version_key": "5681235456:2026-09-15T13:45:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149061#issuecomment-5681235456",
-      "comment_created_at": "2026-09-15T13:45:36Z",
-      "comment_updated_at": "2026-09-15T13:45:36Z",
-      "comment_body_sha256": "70c125e3e5900d397f548abf13d7131d8733f5986b63645593c72bec19ec4236",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149061,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nplease review exact head `11a5cb0e2af3897a24d0ef6c814db76d8d81aefd`. it is rebased onto current `main` including #147756 repeated-scenario evidence retention. revision 2 remains fixed: terminal runtime-parity aggregates publish transport artifacts once; nested workers stay silent. exact-head local proof: 167 focused tests, both extension type graphs, `pnpm check:changed`, zero runtime cycles, `git diff --check`, and real discord/crabline e2e (1 passed).",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T13:46:37.367Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/qa-crabline-transport-factory",
-        "head_sha": "11a5cb0e2af3897a24d0ef6c814db76d8d81aefd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149131:5681227757:2026-09-15T13:45:05Z:clawsweeper_needs_human",
       "comment_id": "5681227757",
@@ -33582,6 +33535,39 @@
         "kind": "pull_request",
         "branch": "bugloop/subagent-announce-complete-result",
         "head_sha": "18d1265de54fb7986f73b197d92ec898f001cb78",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149342:5686364507:2026-09-15T19:08:43Z:clawsweeper_needs_human",
+      "comment_id": "5686364507",
+      "comment_version_key": "5686364507:2026-09-15T19:08:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149342#issuecomment-5686364507",
+      "comment_created_at": "2026-09-15T18:57:49Z",
+      "comment_updated_at": "2026-09-15T19:08:43Z",
+      "comment_body_sha256": "493e059b5ae168c008d85c5534d6fb3911cac650fcfcb16091821d7701bf9cb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149342,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=288822dfc477e0ae00d519f550789eaeeca8af1a)",
+      "expected_head_sha": "288822dfc477e0ae00d519f550789eaeeca8af1a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T19:09:56.532Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sqlite-cron-row-projection-0915",
+        "head_sha": "288822dfc477e0ae00d519f550789eaeeca8af1a",
         "cluster_id": null,
         "job_path": null
       }
