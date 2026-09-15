@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148584",
+  "mode": "autonomous",
+  "run_id": "34911402470",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34911402470",
+  "head_sha": "f4b109ab7df97f77267f41749edeec2c2f354148",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148584.md",
+  "published_at": "2026-09-15T00:36:35.065Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/148584",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/148584",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the startup ownership defect. A narrow fix artifact is prepared, but implementation and executable reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#148584",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148584",
+      "candidate_fix": null,
+      "reason": "The reported behavior conflicts with an existing CLI ownership contract and appears repairable without changing configuration, authentication, or product policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-148584",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#148584",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow plan to a writable permitted executor. Reconcile current main and establish a failing production-boundary regression before implementation; stop if the defect no longer reproduces."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

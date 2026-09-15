@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148584"
 mode: "autonomous"
-run_id: "34906335436"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34906335436"
+run_id: "34911402470"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34911402470"
 head_sha: "f4b109ab7df97f77267f41749edeec2c2f354148"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-14T23:57:37.021Z"
+published_at: "2026-09-15T00:36:35.065Z"
 canonical: "https://github.com/openclaw/openclaw/issues/148584"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/148584"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34906335436](https://github.com/openclaw/clawsweeper/actions/runs/34906335436)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34911402470](https://github.com/openclaw/clawsweeper/actions/runs/34911402470)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/148584
 
 ## Summary
 
-Source inspection confirms the startup ownership defect on preflight main. A narrow fix artifact is prepared. Implementation and runtime reproduction are blocked by the read-only checkout and absent dependencies; no files or GitHub state changed.
+Source inspection supports the startup ownership defect. A narrow fix artifact is prepared, but implementation and executable reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Source inspection confirms the startup ownership defect on preflight main. A nar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148584 | fix_needed | planned | canonical | Broken documented startup behavior has a narrow repair through existing ownership and activation policy, without changing configuration or authentication. |
-| cluster:issue-openclaw-openclaw-148584 | build_fix_artifact | planned |  | Artifact preparation can proceed; editing, regression execution, and branch validation require a writable permitted executor. |
+| #148584 | fix_needed | planned | canonical | The reported behavior conflicts with an existing CLI ownership contract and appears repairable without changing configuration, authentication, or product policy. |
+| cluster:issue-openclaw-openclaw-148584 | build_fix_artifact | planned |  | Hand off the narrow plan to a writable permitted executor. Reconcile current main and establish a failing production-boundary regression before implementation; stop if the defect no longer reproduces. |
 
 ## Needs Human
 
