@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:33:50.713Z",
+  "updated_at": "2026-09-15T03:34:15.091Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148417:5668217117:2026-09-14T21:47:38Z:clawsweeper_needs_human",
-      "comment_id": "5668217117",
-      "comment_version_key": "5668217117:2026-09-14T21:47:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148417#issuecomment-5668217117",
-      "comment_created_at": "2026-09-14T17:46:29Z",
-      "comment_updated_at": "2026-09-14T21:47:38Z",
-      "comment_body_sha256": "68d2fe7e5518417990c584f387e855f2018f81f120f50de994988433a0fa4d30",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148417,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b473fdc35571cee0ce5d131ea7ab5b7cfd71ee67)",
-      "expected_head_sha": "b473fdc35571cee0ce5d131ea7ab5b7cfd71ee67",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T21:52:08.456Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-telegram-listen-error",
-        "head_sha": "b473fdc35571cee0ce5d131ea7ab5b7cfd71ee67",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148399:5668223576:2026-09-14T21:36:36Z:clawsweeper_needs_human",
       "comment_id": "5668223576",
@@ -33533,6 +33500,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:117151:5674312884:2026-09-15T03:33:20Z:re_review",
+      "comment_id": "5674312884",
+      "comment_version_key": "5674312884:2026-09-15T03:33:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/117151#issuecomment-5674312884",
+      "comment_created_at": "2026-09-15T03:33:20Z",
+      "comment_updated_at": "2026-09-15T03:33:20Z",
+      "comment_body_sha256": "7a79b032d14c2393a6e721dfadd1f10b2b2d6c6a25149a6067f0ce1aa96a5774",
+      "repo": "openclaw/openclaw",
+      "issue_number": 117151,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T03:34:12.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/unix-process-tree-cleanup",
+        "head_sha": "45c9e40348b1c72a85050535569ecd3720332e94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
