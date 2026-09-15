@@ -2,53 +2,6 @@
   "updated_at": "2026-09-15T10:45:44.468Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:148138:5675080569:2026-09-15T05:10:15Z:re_review",
-      "comment_id": "5675080569",
-      "comment_version_key": "5675080569:2026-09-15T05:10:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148138#issuecomment-5675080569",
-      "comment_created_at": "2026-09-15T05:10:15Z",
-      "comment_updated_at": "2026-09-15T05:10:15Z",
-      "comment_body_sha256": "90ec1133c3cfa94dc22c35203bae22767152d010b421c19f99719de264b0bd43",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148138,
-      "author": "slzszyt-ux",
-      "author_id": 264127039,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T05:10:30.381Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/exec-task-output-tail",
-        "head_sha": "85d41311c25ed14d8367497072627371d2e79ea0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-09-05T20:38:46Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
       "comment_version_key": "5160996295:2026-09-05T20:38:46Z",
@@ -33694,6 +33647,39 @@
         "kind": "pull_request",
         "branch": "feat/ios-conversation-actions-20260909",
         "head_sha": "1228a9b2298f55a2508cc4c0a8e988f48622395c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148495:5669881006:2026-09-15T10:40:17Z:clawsweeper_needs_human",
+      "comment_id": "5669881006",
+      "comment_version_key": "5669881006:2026-09-15T10:40:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148495#issuecomment-5669881006",
+      "comment_created_at": "2026-09-14T19:50:34Z",
+      "comment_updated_at": "2026-09-15T10:40:17Z",
+      "comment_body_sha256": "0e2ee374b63b5555433a5a413e0f609a21cfc5f64ca1076a04b70d98e2c11df7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148495,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new selected-job execution path has not been demonstrated on Windows. This PR’s mixed workflow/source changes select the full suites, so ordinary green CI would not establish sele... (sha=867186e50d4b27f49700b4a4bf4470e82c019652)",
+      "expected_head_sha": "867186e50d4b27f49700b4a4bf4470e82c019652",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T10:45:42.443Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-windows-node-shard-2-duration",
+        "head_sha": "867186e50d4b27f49700b4a4bf4470e82c019652",
         "cluster_id": null,
         "job_path": null
       }
