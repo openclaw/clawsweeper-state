@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T05:40:09.360Z",
+  "updated_at": "2026-09-15T05:40:30.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148348:5673496463:2026-09-15T01:56:17Z:re_review",
-      "comment_id": "5673496463",
-      "comment_version_key": "5673496463:2026-09-15T01:56:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148348#issuecomment-5673496463",
-      "comment_created_at": "2026-09-15T01:56:17Z",
-      "comment_updated_at": "2026-09-15T01:56:17Z",
-      "comment_body_sha256": "3f2e41df3f29fb333083e90f764a14c461130692f362ac2865f0c48357fe62b2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148348,
-      "author": "ryannikolaidis",
-      "author_id": 1208590,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:57:10.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "workboard-dispatch-stale-guardrails",
-        "head_sha": "e1ffa170702f9100fc5114cf4a3ffb95bd43dc65",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1425:5673509845:2026-09-15T01:58:04Z:clawsweeper_auto_repair",
       "comment_id": "5673509845",
@@ -31956,6 +31909,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-slack-top-level-source-reply",
         "head_sha": "7ac1347296fd5699a9bc9e227e512577ee26057a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:371:5672191760:2026-09-15T05:33:55Z:clawsweeper_needs_human",
+      "comment_id": "5672191760",
+      "comment_version_key": "5672191760:2026-09-15T05:33:55Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/371#issuecomment-5672191760",
+      "comment_created_at": "2026-09-14T23:25:07Z",
+      "comment_updated_at": "2026-09-15T05:33:55Z",
+      "comment_body_sha256": "e4d423f50285f5a0b899defd4e015944ca224e963914810778ab088be57c4faf",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 371,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: reported Windows timings exercise encoder speed but do not show the exported package separatin... (sha=dc14b3c8d4ee0fbb37d2132e7658c33dced52afb)",
+      "expected_head_sha": "dc14b3c8d4ee0fbb37d2132e7658c33dced52afb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T05:40:30.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/install-name-v2-20260914",
+        "head_sha": "dc14b3c8d4ee0fbb37d2132e7658c33dced52afb",
         "cluster_id": null,
         "job_path": null
       }
