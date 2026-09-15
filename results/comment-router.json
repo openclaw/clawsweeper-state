@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:40:33.434Z",
+  "updated_at": "2026-09-15T04:40:46.739Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148651:5672885189:2026-09-15T01:09:52Z:clawsweeper_needs_human",
-      "comment_id": "5672885189",
-      "comment_version_key": "5672885189:2026-09-15T01:09:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148651#issuecomment-5672885189",
-      "comment_created_at": "2026-09-15T00:38:08Z",
-      "comment_updated_at": "2026-09-15T01:09:52Z",
-      "comment_body_sha256": "f2229312f1d079853491ad4a879dd5f90ed23363eb93b16c5c94ff072c322b9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148651,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The originating-chat screenshot delivery required by repository policy is not established by the supplied evidence. (sha=4756ef634e1ceccbb6e7768f420e6998ae3074e7)",
-      "expected_head_sha": "4756ef634e1ceccbb6e7768f420e6998ae3074e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T01:10:59.329Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-830-model-option-tooltips",
-        "head_sha": "4756ef634e1ceccbb6e7768f420e6998ae3074e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148574:5671738372:2026-09-15T01:05:45Z:clawsweeper_needs_human",
       "comment_id": "5671738372",
@@ -32057,6 +32024,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148776:5674825750:2026-09-15T04:39:54Z:automerge",
+      "comment_id": "5674825750",
+      "comment_version_key": "5674825750:2026-09-15T04:39:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148776#issuecomment-5674825750",
+      "comment_created_at": "2026-09-15T04:39:54Z",
+      "comment_updated_at": "2026-09-15T04:39:54Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148776,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T04:40:39.369Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-pnpm-hydration-fixtures",
+        "head_sha": "da4228b2eeb82cf52868d1ac17fd4324cf60da6c",
+        "cluster_id": "automerge-openclaw-openclaw-148776",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148776.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148776.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
