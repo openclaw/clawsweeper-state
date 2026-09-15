@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T07:55:52.243Z",
+  "updated_at": "2026-09-15T07:56:13.384Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5674486158:2026-09-15T03:54:50Z:re_review",
-      "comment_id": "5674486158",
-      "comment_version_key": "5674486158:2026-09-15T03:54:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5674486158",
-      "comment_created_at": "2026-09-15T03:54:50Z",
-      "comment_updated_at": "2026-09-15T03:54:50Z",
-      "comment_body_sha256": "bd3d9bda0d68164827eaa10841e0222ce2e3dda52d37f4ade485cecac9615b8b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T03:55:54.526Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "27b5a6d8c54bd0f76f93320b6b63cf69a6578535",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148746:5674488649:2026-09-15T03:55:09Z:clawsweeper_needs_human",
       "comment_id": "5674488649",
@@ -32099,6 +32052,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:401:5676753009:2026-09-15T07:55:21Z:clawsweeper_needs_human",
+      "comment_id": "5676753009",
+      "comment_version_key": "5676753009:2026-09-15T07:55:21Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/401#issuecomment-5676753009",
+      "comment_created_at": "2026-09-15T07:55:21Z",
+      "comment_updated_at": "2026-09-15T07:55:21Z",
+      "comment_body_sha256": "508ed776fb6d3b653976f84c392e4fe05b76f495124aa93493686ce06dae70dd",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 401,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Exclude shared backing buffers from name-admission reuse (P1)** - The public buffered preflight preserves SharedArrayBuffer backing through admitZipBuffer and the directory scanner. If another worker changes the...; Review finding: [P1] Exclude shared backing buffers from name-admission reuse — src/archive-zip-names.ts:68-71 - [medium] Mutable input can bypass independent local-name checks —... (sha=1b96a830030c81b05a022d357e46f661bc0f44aa)",
+      "expected_head_sha": "1b96a830030c81b05a022d357e46f661bc0f44aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T07:56:13.384Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pass2-zip-metadata-20260915",
+        "head_sha": "1b96a830030c81b05a022d357e46f661bc0f44aa",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
