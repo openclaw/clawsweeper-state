@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:59:05.783Z",
+  "updated_at": "2026-09-15T13:59:06.161Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/fs-safe:396:5677090135:2026-09-15T08:24:00Z:re_review",
-      "comment_id": "5677090135",
-      "comment_version_key": "5677090135:2026-09-15T08:24:00Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/396#issuecomment-5677090135",
-      "comment_created_at": "2026-09-15T08:24:00Z",
-      "comment_updated_at": "2026-09-15T08:24:00Z",
-      "comment_body_sha256": "1420bbf830a817da29a7531ea5a665813e2479cf98e56bb19bd3b403bfa4e180",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 396,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T08:25:14.521Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "task/fs-safe-mkdir-race-5209566a-20260915",
-        "head_sha": "ae2dccf322b1e78da82fb4ed4ae219f09a40e37a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148911:5677093793:2026-09-15T08:24:19Z:clawsweeper_needs_human",
       "comment_id": "5677093793",
@@ -33755,6 +33708,39 @@
         "kind": "pull_request",
         "branch": "type-improver/b16-codex-schema-normalization-owner",
         "head_sha": "639dc39a61f73f405d43197139f9ddb57bd3fc2e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:369:5670115920:2026-09-15T13:49:10Z:clawsweeper_needs_human",
+      "comment_id": "5670115920",
+      "comment_version_key": "5670115920:2026-09-15T13:49:10Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/369#issuecomment-5670115920",
+      "comment_created_at": "2026-09-14T20:08:53Z",
+      "comment_updated_at": "2026-09-15T13:49:10Z",
+      "comment_body_sha256": "e8799ddd4a55a98ef7593d7d96d33ae41f4922136b8a7f7870d51e1fe729477c",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: readSecureFile now admits the effective owner, but the captured body leaves real split-credential exec... (sha=e82071b837c215362fdb810421896d79e9311d60)",
+      "expected_head_sha": "e82071b837c215362fdb810421896d79e9311d60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T13:59:06.161Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/effective-uid-20260914",
+        "head_sha": "e82071b837c215362fdb810421896d79e9311d60",
         "cluster_id": null,
         "job_path": null
       }
