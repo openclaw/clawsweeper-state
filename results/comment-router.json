@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T21:42:56.945Z",
+  "updated_at": "2026-09-15T21:43:17.446Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149245:5683802047:2026-09-15T16:15:03Z:re_review",
-      "comment_id": "5683802047",
-      "comment_version_key": "5683802047:2026-09-15T16:15:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149245#issuecomment-5683802047",
-      "comment_created_at": "2026-09-15T16:15:03Z",
-      "comment_updated_at": "2026-09-15T16:15:03Z",
-      "comment_body_sha256": "c74dba07eff53e52bfbf89f3a19151b983bba6ddd130dd5bd9fee5f988e33a73",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149245,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T16:16:06.084Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cron-cli-diagnostic-owner",
-        "head_sha": "a029c573139d888a23c8ac4c7df3e8f6b157df18",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148834:5675648480:2026-09-15T16:15:51Z:clawsweeper_auto_repair",
       "comment_id": "5675648480",
@@ -33635,6 +33588,39 @@
         "kind": "pull_request",
         "branch": "fix/chat-history-boundary-loading-copy",
         "head_sha": "527338bd6ee1405fdac9721cc398d3559c38f29f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:130877:5437893744:2026-09-15T21:22:26Z:clawsweeper_needs_human",
+      "comment_id": "5437893744",
+      "comment_version_key": "5437893744:2026-09-15T21:22:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/130877#issuecomment-5437893744",
+      "comment_created_at": "2026-08-27T10:46:24Z",
+      "comment_updated_at": "2026-09-15T21:22:26Z",
+      "comment_body_sha256": "a9628e06fd49ebf7af8139ec3621aae18e84d4c1429d7d7a35eac4aa1c7869e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 130877,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e77051a9ecc3f33cd706a59fc0d6cd0a7d7e61f6)",
+      "expected_head_sha": "e77051a9ecc3f33cd706a59fc0d6cd0a7d7e61f6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T21:43:17.446Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/trajectory-sqlite-byte-budget-127433",
+        "head_sha": "e77051a9ecc3f33cd706a59fc0d6cd0a7d7e61f6",
         "cluster_id": null,
         "job_path": null
       }
