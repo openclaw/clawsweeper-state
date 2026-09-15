@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T11:45:01.349Z",
+  "updated_at": "2026-09-15T11:45:27.738Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147054:5653574598:2026-09-15T06:09:30Z:clawsweeper_needs_human",
-      "comment_id": "5653574598",
-      "comment_version_key": "5653574598:2026-09-15T06:09:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147054#issuecomment-5653574598",
-      "comment_created_at": "2026-09-13T13:29:05Z",
-      "comment_updated_at": "2026-09-15T06:09:30Z",
-      "comment_body_sha256": "220b76831d3bd050f9b0a7eab69b3c3a111a2d7e3f28134e72a232db263839f0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147054,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Exact-head Linux evidence exercises the production recovery wrapper with real child processes, records 3069 ms cleanup, and passes pac... (sha=2123eaeae601a792c90401b66c5bca4e63356bc1)",
-      "expected_head_sha": "2123eaeae601a792c90401b66c5bca4e63356bc1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T06:10:28.133Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr-146956-gateway-drain",
-        "head_sha": "2123eaeae601a792c90401b66c5bca4e63356bc1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147054:5672773848:2026-09-15T00:24:39Z:re_review",
       "comment_id": "5672773848",
@@ -33727,6 +33694,53 @@
         "kind": "pull_request",
         "branch": "codex/fix-slack-top-level-source-reply",
         "head_sha": "7ac1347296fd5699a9bc9e227e512577ee26057a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5679613447:2026-09-15T11:44:26Z:re_review",
+      "comment_id": "5679613447",
+      "comment_version_key": "5679613447:2026-09-15T11:44:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5679613447",
+      "comment_created_at": "2026-09-15T11:44:26Z",
+      "comment_updated_at": "2026-09-15T11:44:26Z",
+      "comment_body_sha256": "2b8c0fad3d53271dc13ac618ae58cf1914e5d3e8107506a99803f276b2e1a559",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head c42fb74f4efddeeec1573b6d54dcf3efebf1cb06. the branch is now rebased onto current main, including the landed base fixes; queued custody remains composer-only until canonical promotion",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T11:45:25.336Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "c42fb74f4efddeeec1573b6d54dcf3efebf1cb06",
         "cluster_id": null,
         "job_path": null
       },
