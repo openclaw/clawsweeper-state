@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149232",
+  "mode": "plan",
+  "run_id": "35001943660",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35001943660",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149232.md",
+  "published_at": "2026-09-15T17:43:49.577Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149232",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149232",
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/149268",
+  "summary": "Keep #149232 open and retain #149268 as its existing fix PR. Do not create a competing implementation. Failing CI blocks merge readiness; broader startup performance remains separate. No mutations or runtime tests were performed.",
+  "actions": [
+    {
+      "target": "#149232",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149232",
+      "candidate_fix": "#149268",
+      "reason": "Preserve the canonical recovery report while the existing fix completes its gates; no competing fix artifact is warranted."
+    },
+    {
+      "target": "#149268",
+      "action": "keep_canonical",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149268",
+      "candidate_fix": null,
+      "reason": "Existing focused implementation already owns the repair. Preserve its author and validation history. CI failures prevent a merge recommendation but do not justify replacement; this job does not authorize merge."
+    },
+    {
+      "target": "#148529",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149232",
+      "candidate_fix": null,
+      "reason": "Related startup surface with distinct remaining performance work; #149268 does not establish resolution of this report."
+    },
+    {
+      "target": "#142476",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no further action."
+    }
+  ],
+  "action_counts": {
+    "keep_canonical": 2,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

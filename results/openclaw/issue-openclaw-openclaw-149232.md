@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-149232"
-mode: "autonomous"
-run_id: "34991996967"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34991996967"
+mode: "plan"
+run_id: "35001943660"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35001943660"
 head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T17:07:10.307Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T17:43:49.577Z"
 canonical: "https://github.com/openclaw/openclaw/issues/149232"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/149232"
-canonical_pr: null
+canonical_pr: "https://github.com/openclaw/openclaw/pull/149268"
 actions_total: 4
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34991996967](https://github.com/openclaw/clawsweeper/actions/runs/34991996967)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35001943660](https://github.com/openclaw/clawsweeper/actions/runs/35001943660)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/149232
 
 ## Summary
 
-Confirmed the configured agentDir discovery omission in source at preflight main 31557782c74924813994c9054247ed20398c3e0b. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state were changed.
+Keep #149232 open and retain #149268 as its existing fix PR. Do not create a competing implementation. Failing CI blocks merge readiness; broader startup performance remains separate. No mutations or runtime tests were performed.
 
 ## Impact
 
@@ -66,10 +66,10 @@ Confirmed the configured agentDir discovery omission in source at preflight main
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #149232 | fix_needed | blocked | canonical | Implementation requires a writable isolated checkout and dependencies. Establish the failing regression against refreshed main before editing; source verification alone is not runtime reproduction. |
-| #148529 | keep_related | planned | related | Keep the broader startup-performance investigation open and outside this fix. |
-| #142476 | keep_closed | skipped | related | Historical context for a separate recurring performance defect. |
-| cluster:issue-openclaw-openclaw-149232 | build_fix_artifact | planned | canonical | A narrow non-security repair is supported by source evidence; the deterministic executor must reproduce, implement, review, and validate before publishing. |
+| #149232 | keep_canonical | planned | canonical | Preserve the canonical recovery report while the existing fix completes its gates; no competing fix artifact is warranted. |
+| #149268 | keep_canonical | planned | canonical | Existing focused implementation already owns the repair. Preserve its author and validation history. CI failures prevent a merge recommendation but do not justify replacement; this job does not authorize merge. |
+| #148529 | keep_related | planned | related | Related startup surface with distinct remaining performance work; #149268 does not establish resolution of this report. |
+| #142476 | keep_closed | skipped | related | Historical context only; no further action. |
 
 ## Needs Human
 
