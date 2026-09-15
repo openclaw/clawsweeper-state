@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T11:47:46.848Z",
+  "updated_at": "2026-09-15T11:48:01.037Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148138:5662141785:2026-09-15T06:04:20Z:clawsweeper_needs_human",
-      "comment_id": "5662141785",
-      "comment_version_key": "5662141785:2026-09-15T06:04:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148138#issuecomment-5662141785",
-      "comment_created_at": "2026-09-14T09:51:33Z",
-      "comment_updated_at": "2026-09-15T06:04:20Z",
-      "comment_body_sha256": "451f15a99e5b72cd1061c8f1259437478bed5ccc38f9815d3b3542dd93b3c67e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Command output becomes durable task data** - The new outputTail field can retain private content that pattern-based masking does not recognize. Existing task readers, including whole-re...; Review finding: [medium] Command output becomes durable task data — src/agents/bash-tools.exec-task-tracking.ts:131 (sha=85d41311c25ed14d8367497072627371d2e79ea0)",
-      "expected_head_sha": "85d41311c25ed14d8367497072627371d2e79ea0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T06:11:35.519Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/exec-task-output-tail",
-        "head_sha": "85d41311c25ed14d8367497072627371d2e79ea0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clickclack:261:5657129206:2026-09-15T06:11:29Z:clawsweeper_needs_human",
       "comment_id": "5657129206",
@@ -33778,6 +33745,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148910:5677137945:2026-09-15T11:46:57Z:clawsweeper_needs_human",
+      "comment_id": "5677137945",
+      "comment_version_key": "5677137945:2026-09-15T11:46:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148910#issuecomment-5677137945",
+      "comment_created_at": "2026-09-15T08:28:02Z",
+      "comment_updated_at": "2026-09-15T11:46:57Z",
+      "comment_body_sha256": "9903987d76cb9cd9e08d02a7b3376d6da579f6e78cae28e5b214955fc3e5e594",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148910,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The issue discussion promises schema-related self-stop attribution that this head does not implement; landing without clarifying scope could leave reporters expecting a restart-loop f... (sha=5947c13a0c7b5ec69c8829fca8570d49181b8c53)",
+      "expected_head_sha": "5947c13a0c7b5ec69c8829fca8570d49181b8c53",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T11:48:01.037Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/admission-drain-reason-148866",
+        "head_sha": "5947c13a0c7b5ec69c8829fca8570d49181b8c53",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
