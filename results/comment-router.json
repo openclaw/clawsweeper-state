@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T23:42:23.867Z",
+  "updated_at": "2026-09-15T23:42:25.475Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149322:5685837813:2026-09-15T18:30:07Z:clawsweeper_needs_human",
-      "comment_id": "5685837813",
-      "comment_version_key": "5685837813:2026-09-15T18:30:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149322#issuecomment-5685837813",
-      "comment_created_at": "2026-09-15T18:30:07Z",
-      "comment_updated_at": "2026-09-15T18:30:07Z",
-      "comment_body_sha256": "d2ff13b2c5702b14c46c18cfe88e93d7992613c6d5bd96d512e78ee0f3da4740",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149322,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The submitted unit tests exercise pending-item construction and oversized replacement, but do not show their output in a running Control UI bef... (sha=2237895ed28a003dfbfffb15fc52e7c21f0d220c)",
-      "expected_head_sha": "2237895ed28a003dfbfffb15fc52e7c21f0d220c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T18:31:12.318Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "restore/pr-134278",
-        "head_sha": "2237895ed28a003dfbfffb15fc52e7c21f0d220c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147201:5654779084:2026-09-15T18:30:19Z:clawsweeper_auto_repair",
       "comment_id": "5654779084",
@@ -33297,6 +33264,53 @@
         "kind": "pull_request",
         "branch": "agent/rust-gateway-client",
         "head_sha": "ca183808926775882281711bd75a22f316693ac1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116450:5689694226:2026-09-15T23:41:25Z:re_review",
+      "comment_id": "5689694226",
+      "comment_version_key": "5689694226:2026-09-15T23:41:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116450#issuecomment-5689694226",
+      "comment_created_at": "2026-09-15T23:41:25Z",
+      "comment_updated_at": "2026-09-15T23:41:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116450,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T23:42:23.087Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "agent/rust-runtime-followup",
+        "head_sha": "5dc484118ee709009f1719804ee4d26cad197bda",
         "cluster_id": null,
         "job_path": null
       },
