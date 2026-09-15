@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:09:02.134Z",
+  "updated_at": "2026-09-15T04:09:09.439Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147255:5655158509:2026-09-14T22:46:28Z:clawsweeper_needs_human",
-      "comment_id": "5655158509",
-      "comment_version_key": "5655158509:2026-09-14T22:46:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147255#issuecomment-5655158509",
-      "comment_created_at": "2026-09-13T18:18:54Z",
-      "comment_updated_at": "2026-09-14T22:46:28Z",
-      "comment_body_sha256": "bc1b54903ea022eabe7d4567e361ddcfbe3d8feb91cee5a4596cd5dac5949de2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147255,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserve the snapshot-matching real LINE/Gateway traces showing signed approval, exec continuation, an...; Review finding: [P1] [P1] Preserve existing group approval rights during upgrade — extensions/line/src/approval-native.ts:97-99 - [high] Native authority can become implicit durin... (sha=f300ebbaeafb4c7ce242dc6e0ade21163e1af779)",
-      "expected_head_sha": "f300ebbaeafb4c7ce242dc6e0ade21163e1af779",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T23:02:10.161Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/line-native-approvals",
-        "head_sha": "f300ebbaeafb4c7ce242dc6e0ade21163e1af779",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147661:5657792481:2026-09-14T22:43:24Z:clawsweeper_needs_human",
       "comment_id": "5657792481",
@@ -33545,6 +33512,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:208:5654857742:2026-09-15T04:08:17Z:clawsweeper_needs_human",
+      "comment_id": "5654857742",
+      "comment_version_key": "5654857742:2026-09-15T04:08:17Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/208#issuecomment-5654857742",
+      "comment_created_at": "2026-09-13T17:25:06Z",
+      "comment_updated_at": "2026-09-15T04:08:17Z",
+      "comment_body_sha256": "f14ee22afcff6ebeb88a70abc0957781abe6d0858c34fb2ffbbf7bf4b3ddc668",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 208,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing native MCP jobs that previously reported success can now exit nonzero and stop dependent scripts despite retaining valid writes; the owner explicitly accepted this transition. (sha=a4279e1cbe8c8cfa64929927639787621a4e787b)",
+      "expected_head_sha": "a4279e1cbe8c8cfa64929927639787621a4e787b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:09:09.439Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-incomplete-history",
+        "head_sha": "a4279e1cbe8c8cfa64929927639787621a4e787b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
