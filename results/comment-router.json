@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-15T09:36:57.483Z",
+  "updated_at": "2026-09-15T09:37:46.269Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5294551373:2026-08-14T14:37:14Z:re_review",
-      "comment_id": "5294551373",
-      "comment_version_key": "5294551373:2026-08-14T14:37:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5294551373",
-      "comment_created_at": "2026-08-14T14:37:14Z",
-      "comment_updated_at": "2026-08-14T14:37:14Z",
-      "comment_body_sha256": "e18c743323c827226538cb8fb5f3726fe8e1a585ea9545841bd01afb8e5a97ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T04:31:53.951Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5295476842:2026-08-14T16:05:07Z:re_review",
       "comment_id": "5295476842",
@@ -33379,6 +33352,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5677966946:2026-09-15T09:35:04Z:re_review",
+      "comment_id": "5677966946",
+      "comment_version_key": "5677966946:2026-09-15T09:35:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5677966946",
+      "comment_created_at": "2026-09-15T09:35:04Z",
+      "comment_updated_at": "2026-09-15T09:35:04Z",
+      "comment_body_sha256": "810828812cdcd1f24ca94b6d85a26340e2a33eb417ac88d3bbbb57ca94ae57d2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `4375ae68b55bc47bb03914758f01654007567b66`. rebased onto current main containing the canonical radius repair from #148504. exact-head local proof is clean: `pnpm check:changed` passed; the exact seven changed ui unit files passed; and the exact two changed ui e2e files passed all 3 tests. no pr-owned repair was needed",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T09:37:43.979Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "4375ae68b55bc47bb03914758f01654007567b66",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
