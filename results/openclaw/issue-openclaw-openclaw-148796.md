@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148796"
-mode: "autonomous"
-run_id: "34933000400"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34933000400"
-head_sha: "f4b109ab7df97f77267f41749edeec2c2f354148"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T07:15:22.550Z"
-canonical: "https://github.com/openclaw/openclaw/issues/148796"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/148796"
+mode: "plan"
+run_id: "34942498842"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34942498842"
+head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T07:40:56.879Z"
+canonical: "#148796"
+canonical_issue: "#148796"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34933000400](https://github.com/openclaw/clawsweeper/actions/runs/34933000400)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34942498842](https://github.com/openclaw/clawsweeper/actions/runs/34942498842)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/148796
+Canonical: #148796
 
 ## Summary
 
-Confirmed the filename-dependent discovery gap in source at preflight main daa7c061d8937cc09a567bc1cf88288f2aeff05c. A narrow fix artifact is ready, but read-only host permissions block fixture creation, implementation, tests, and real CLI proof. No files or GitHub state were changed.
+Plan a narrow SQLite discovery repair for #148796. The checkout matches preflight main aa0f68eca54668e88ee5044d5332fdd637d40a7cdd05824d62d860b7d0dba00a810812. PR #148857 remains useful but has unresolved review and CI failures. No files or GitHub state were changed; command-level reproduction and validation remain pending in this read-only run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed the filename-dependent discovery gap in source at preflight main daa7c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148796 | fix_needed | planned | canonical | Repair discovery without changing managed ownership or verification scope. Command-level reproduction must precede production edits on a writable executor. |
-| #146700 | keep_closed | skipped | related | Historical ownership-policy context, not a replacement candidate or closure target. |
-| cluster:issue-openclaw-openclaw-148796 | build_fix_artifact | planned |  | The narrow non-security fix remains appropriate; executable reproduction and implementation require a writable host. |
-| cluster:issue-openclaw-openclaw-148796 | open_fix_pr | blocked |  | Implementation and publication are blocked pending writable execution, successful reproduction, focused validation, and fresh review. Merge and issue closure remain prohibited. |
+| #148796 | build_fix_artifact | planned | canonical | The existing managed-snapshot and opaque-warning contracts support a focused bug fix. Publication must wait for a failing baseline regression, a validated repair, and real CLI proof. |
+| #148857 | fix_needed | planned | related | Preserve useful contributor work. Read the complete review and failing check logs before reusing its approach; do not assume the branch is uneditable or superseded. |
+| #146700 | keep_closed | skipped | related | Historical ownership-policy evidence; preserve its managed-versus-opaque boundary. |
 
 ## Needs Human
 

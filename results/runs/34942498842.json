@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148796",
+  "mode": "plan",
+  "run_id": "34942498842",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34942498842",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148796.md",
+  "published_at": "2026-09-15T07:40:56.879Z",
+  "canonical": "#148796",
+  "canonical_issue": "#148796",
+  "canonical_pr": null,
+  "summary": "Plan a narrow SQLite discovery repair for #148796. The checkout matches preflight main aa0f68eca54668e88ee5044d5332fdd637d40a7cdd05824d62d860b7d0dba00a810812. PR #148857 remains useful but has unresolved review and CI failures. No files or GitHub state were changed; command-level reproduction and validation remain pending in this read-only run.",
+  "actions": [
+    {
+      "target": "#148796",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148796",
+      "candidate_fix": "#148857",
+      "reason": "The existing managed-snapshot and opaque-warning contracts support a focused bug fix. Publication must wait for a failing baseline regression, a validated repair, and real CLI proof."
+    },
+    {
+      "target": "#148857",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#148796",
+      "candidate_fix": null,
+      "reason": "Preserve useful contributor work. Read the complete review and failing check logs before reusing its approach; do not assume the branch is uneditable or superseded."
+    },
+    {
+      "target": "#146700",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#148796",
+      "candidate_fix": null,
+      "reason": "Historical ownership-policy evidence; preserve its managed-versus-opaque boundary."
+    }
+  ],
+  "action_counts": {
+    "build_fix_artifact": 1,
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
