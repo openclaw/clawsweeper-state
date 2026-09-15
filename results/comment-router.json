@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-15T05:20:22.773Z",
+  "updated_at": "2026-09-15T05:22:33.985Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148175:5673360266:2026-09-15T01:38:42Z:automerge",
-      "comment_id": "5673360266",
-      "comment_version_key": "5673360266:2026-09-15T01:38:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148175#issuecomment-5673360266",
-      "comment_created_at": "2026-09-15T01:38:42Z",
-      "comment_updated_at": "2026-09-15T01:38:42Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148175,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:39:26.909Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-service-retention",
-        "head_sha": "b9dc1410e2a21bc18c4d8987fc640b9cb92aaa19",
-        "cluster_id": "automerge-openclaw-openclaw-148175",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148175.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148175.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148560:5671589671:2026-09-15T01:39:04Z:clawsweeper_needs_human",
       "comment_id": "5671589671",
@@ -32120,6 +32061,39 @@
         "kind": "pull_request",
         "branch": "alix/fix-replay-synthetic-result-text-85687",
         "head_sha": "b99b42b69ffbaf5b71d22fb9fe2b210614d2d057",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148786:5675174896:2026-09-15T05:21:35Z:clawsweeper_needs_human",
+      "comment_id": "5675174896",
+      "comment_version_key": "5675174896:2026-09-15T05:21:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148786#issuecomment-5675174896",
+      "comment_created_at": "2026-09-15T05:21:35Z",
+      "comment_updated_at": "2026-09-15T05:21:35Z",
+      "comment_body_sha256": "81198ad2b6a2f3beadece1b07cf759a2cd9dd53414f04a05152a803a64ad3eca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148786,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the supplied tests exercise Discord ingress with mocked dispatch or preflight, not a real Discord corre... (sha=5a6b01d9eb2f234f5ba127ca3a1114f738ea1ce9)",
+      "expected_head_sha": "5a6b01d9eb2f234f5ba127ca3a1114f738ea1ce9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T05:22:33.985Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-ingress-lane-release-148730",
+        "head_sha": "5a6b01d9eb2f234f5ba127ca3a1114f738ea1ce9",
         "cluster_id": null,
         "job_path": null
       }
