@@ -1,84 +1,6 @@
 {
-  "updated_at": "2026-09-15T15:09:33.425Z",
+  "updated_at": "2026-09-15T15:11:03.457Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148963:5677813299:2026-09-15T09:22:11Z:freeform_assist",
-      "comment_id": "5677813299",
-      "comment_version_key": "5677813299:2026-09-15T09:22:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/148963#issuecomment-5677813299",
-      "comment_created_at": "2026-09-15T09:22:11Z",
-      "comment_updated_at": "2026-09-15T09:22:11Z",
-      "comment_body_sha256": "15ce96ea5a84d3c065349a4ee1220b28a626d2d4775b6f23d2c04e27135581e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148963,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "please provide a read-only design review of the smallest safe fix for this metadata-listing issue. do not start a competing code writer from this request. focus on query-before-hydration and an explicitly bounded listing cache in the existing storage owner, while preserving exact-read observation lifetimes/currentness checks, canonical validation, authorization, archive/facet/pagination semantics, archived parent/model dependencies and runtime child links. current main has selectedkeys/activereads observation handling in session-accessor.sqlite-entry-cache.ts; a list read can expand that owner into a full snapshot. cache eviction must not accidentally invalidate unrelated in-flight observations or turn into repeated full-store reloads. please distinguish the narrow ordinary-list fast path from uncommon full-inventory queries, explain whether a query-scoped listing view can be separated from observation retention without a competing owner, and name the required baseline-failing decode/visit/cache-budget and integration tests. do not duplicate #148868, #148826, #148051 or #147914, and do not assume a new schema, public setting, retention policy or permission change is approved. the existing implementation lane will consume the review and retain single-writer ownership.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T09:23:12.858Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119446:5187123086:2026-09-15T09:22:18Z:clawsweeper_needs_human",
-      "comment_id": "5187123086",
-      "comment_version_key": "5187123086:2026-09-15T09:22:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119446#issuecomment-5187123086",
-      "comment_created_at": "2026-08-05T03:16:18Z",
-      "comment_updated_at": "2026-09-15T09:22:18Z",
-      "comment_body_sha256": "4ba1fe37f8e0665f7c2a560702f40ebfdbb2b402703fc8ef4cc214d3d696038a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119446,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured terminal trace exercises production cookie minting and the auth function, but does not de...; Review finding: [P2] Pass verified request locality to the Origin validator — src/gateway/control-ui-plugin-origin-gate.ts:54-59 - [medium] Resolve the scope of the retained opaqu... (sha=78da8acc4f60718068404d3ff8efa513c2778a18)",
-      "expected_head_sha": "78da8acc4f60718068404d3ff8efa513c2778a18",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T09:23:15.939Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-cookie-origin-check",
-        "head_sha": "78da8acc4f60718068404d3ff8efa513c2778a18",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148959:5677823127:2026-09-15T09:23:00Z:clawsweeper_needs_human",
       "comment_id": "5677823127",
@@ -33602,6 +33524,86 @@
         "kind": "pull_request",
         "branch": "codex/native-mutation-policy-20260914",
         "head_sha": "bc8d6f07804298061b34290c910dcf50928363ad",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149157:5682594220:2026-09-15T15:02:51Z:re_review",
+      "comment_id": "5682594220",
+      "comment_version_key": "5682594220:2026-09-15T15:02:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149157#issuecomment-5682594220",
+      "comment_created_at": "2026-09-15T15:02:51Z",
+      "comment_updated_at": "2026-09-15T15:02:51Z",
+      "comment_body_sha256": "f9cb189fa32bcb86b1e7c9ead5f57936bfeaba74fb928037d7077eaa374283f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149157,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T15:11:01.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-evidence-child-import",
+        "head_sha": "e572a65333e1650202ba2825c155ffdadca8f6c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149157:5681869184:2026-09-15T15:09:56Z:clawsweeper_needs_human",
+      "comment_id": "5681869184",
+      "comment_version_key": "5681869184:2026-09-15T15:09:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149157#issuecomment-5681869184",
+      "comment_created_at": "2026-09-15T14:23:08Z",
+      "comment_updated_at": "2026-09-15T15:09:56Z",
+      "comment_body_sha256": "5abb28fe458a7aef7f1c203b9a757cb000f57b0c32dbeffe6494006ee6b96693",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149157,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e572a65333e1650202ba2825c155ffdadca8f6c2)",
+      "expected_head_sha": "e572a65333e1650202ba2825c155ffdadca8f6c2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T15:11:03.457Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/qa-evidence-child-import",
+        "head_sha": "e572a65333e1650202ba2825c155ffdadca8f6c2",
         "cluster_id": null,
         "job_path": null
       }
