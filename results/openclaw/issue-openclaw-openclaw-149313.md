@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-149313"
-mode: "autonomous"
-run_id: "35005173577"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35005173577"
+mode: "plan"
+run_id: "35009784473"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35009784473"
 head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T18:37:32.858Z"
-canonical: "https://github.com/openclaw/openclaw/issues/149313"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/149313"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T19:47:26.489Z"
+canonical: "#149313"
+canonical_issue: "#149313"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35005173577](https://github.com/openclaw/clawsweeper/actions/runs/35005173577)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35009784473](https://github.com/openclaw/clawsweeper/actions/runs/35009784473)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/149313
+Canonical: #149313
 
 ## Summary
 
-Source confirms the topic identity omission on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed; a narrow executor repair artifact is prepared.
+Plan a narrow Feishu topic-aware text retry fix. The clean checkout matches preflight main fcb4d12acda7db1fd408ca130ca8122af9570a96, and source inspection supports the reported collision. Runtime reproduction, implementation, and validation remain executor gates; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source confirms the topic identity omission on preflight main. Implementation an
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #149313 | fix_needed | planned | canonical | A bounded existing-behavior defect remains source-supported. The required failing receive-handler regression must run before implementation. |
-| #46778 | keep_closed | skipped | related | Historical compatibility context; preserve the existing DM retry behavior. |
-| #93449 | keep_closed | skipped | related | Merged compatibility context, not an open repair candidate or a fix for cross-topic suppression. |
-| cluster:issue-openclaw-openclaw-149313 | build_fix_artifact | planned |  | The executor needs a writable, independently owned checkout to reproduce, implement and validate this narrow repair. |
+| #149313 | fix_needed | planned | canonical | Distinct message-loss bug with a narrow existing owner. Prepare one implementation PR after demonstrating the failing regression; closure and merge are prohibited. |
+| #46778 | keep_closed | skipped | related | Historical compatibility context; no remaining action. |
+| #93449 | keep_closed | skipped | related | Merged compatibility context, not an unresolved candidate or replacement source. |
 
 ## Needs Human
 
