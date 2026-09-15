@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:47:24.457Z",
+  "updated_at": "2026-09-15T03:47:24.835Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148561:5671510782:2026-09-14T22:11:13Z:re_review",
-      "comment_id": "5671510782",
-      "comment_version_key": "5671510782:2026-09-14T22:11:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148561#issuecomment-5671510782",
-      "comment_created_at": "2026-09-14T22:11:13Z",
-      "comment_updated_at": "2026-09-14T22:11:13Z",
-      "comment_body_sha256": "ab397ebbcac98aa87fffca5ddedfe504a2a068b1705ef684376b6492503c041e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148561,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T22:12:14.427Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stable-session-transcript-reconcile-runtime",
-        "head_sha": "3c05ddbe3fce6331d2eb02077e6f186aa6063c01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147936:5659755936:2026-09-14T22:12:12Z:clawsweeper_needs_human",
       "comment_id": "5659755936",
@@ -33592,6 +33545,39 @@
         "kind": "pull_request",
         "branch": "openclaw/investigate-failure-and-open-fix-pr",
         "head_sha": "b8e4c82a5e594241dd3a53b161e143c4ab1b2f86",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:201:5653544820:2026-09-15T03:46:27Z:clawsweeper_needs_human",
+      "comment_id": "5653544820",
+      "comment_version_key": "5653544820:2026-09-15T03:46:27Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/201#issuecomment-5653544820",
+      "comment_created_at": "2026-09-13T13:22:56Z",
+      "comment_updated_at": "2026-09-15T03:46:27Z",
+      "comment_body_sha256": "49beb7d2b756f6ee1046a0f348305621fa83de1fe2d60c9d25550393ba2afac5",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 201,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ac5d10bf3256b080d353bc589115aa5a1bcb636c)",
+      "expected_head_sha": "ac5d10bf3256b080d353bc589115aa5a1bcb636c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T03:47:24.835Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-error-diagnostics",
+        "head_sha": "ac5d10bf3256b080d353bc589115aa5a1bcb636c",
         "cluster_id": null,
         "job_path": null
       }
