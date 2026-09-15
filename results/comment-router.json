@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T07:57:52.729Z",
+  "updated_at": "2026-09-15T07:58:01.598Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144811:5674496405:2026-09-15T03:56:12Z:re_review",
-      "comment_id": "5674496405",
-      "comment_version_key": "5674496405:2026-09-15T03:56:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144811#issuecomment-5674496405",
-      "comment_created_at": "2026-09-15T03:56:12Z",
-      "comment_updated_at": "2026-09-15T03:56:12Z",
-      "comment_body_sha256": "ebd8f10bf378edcd9b26f245d7826d9919f36cb76b7ebd76998a951abe334eb5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144811,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T03:57:09.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-validation-diagnostics",
-        "head_sha": "7de446ede15bc4abec8df00235c81a677ad55238",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:378:5672862631:2026-09-15T03:53:49Z:clawsweeper_needs_human",
       "comment_id": "5672862631",
@@ -32082,6 +32035,39 @@
         "kind": "pull_request",
         "branch": "fix/retry-policy-validation",
         "head_sha": "ec6c8b23f0dea0c07f805f4c3d2de4a010270e29",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148773:5674797066:2026-09-15T07:56:57Z:clawsweeper_needs_human",
+      "comment_id": "5674797066",
+      "comment_version_key": "5674797066:2026-09-15T07:56:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148773#issuecomment-5674797066",
+      "comment_created_at": "2026-09-15T04:35:56Z",
+      "comment_updated_at": "2026-09-15T07:56:57Z",
+      "comment_body_sha256": "1888c196036c48e15f59f3495e3f0674beddd988b9483ef4d5a71c0154a3bc3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148773,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Both reported comparisons contain an adverse CPU cell. The latest run improves every wall-time median, but whether compilation reuse causes a repeatable CPU cost remains unresolved. (sha=3a7f88d547d886dbb6b6a3e44890a07b8234d1c7)",
+      "expected_head_sha": "3a7f88d547d886dbb6b6a3e44890a07b8234d1c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T07:58:01.598Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/session-transcript-prepared-reads-20260915",
+        "head_sha": "3a7f88d547d886dbb6b6a3e44890a07b8234d1c7",
         "cluster_id": null,
         "job_path": null
       }
