@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T19:36:24.038Z",
+  "updated_at": "2026-09-15T19:36:42.209Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149061:5681796905:2026-09-15T14:19:29Z:re_review",
-      "comment_id": "5681796905",
-      "comment_version_key": "5681796905:2026-09-15T14:19:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149061#issuecomment-5681796905",
-      "comment_created_at": "2026-09-15T14:19:29Z",
-      "comment_updated_at": "2026-09-15T14:19:29Z",
-      "comment_body_sha256": "be2034b0816750c91bd08814784554d831796f9f621987a0907ce0be5a7617cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149061,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T14:27:21.866Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/qa-crabline-transport-factory",
-        "head_sha": "eaf7a5aacd6853d1ee98f09b8cf62600c1804ff4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119265:5180980780:2026-09-04T02:15:29Z:clawsweeper_needs_human",
       "comment_id": "5180980780",
@@ -33506,6 +33459,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-724-web-capture",
         "head_sha": "5e05302dcbf5d31013de4d988bc43f8a62e65808",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3632:5593211028:2026-09-15T19:25:03Z:clawsweeper_needs_human",
+      "comment_id": "5593211028",
+      "comment_version_key": "5593211028:2026-09-15T19:25:03Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3632#issuecomment-5593211028",
+      "comment_created_at": "2026-09-08T23:19:53Z",
+      "comment_updated_at": "2026-09-15T19:25:03Z",
+      "comment_body_sha256": "e965bb6f6f9e96b2ffe9fa4fd3388edaccc8431f0cb1675805546b56bbb267d4",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3632,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new durable aggregate and cursor model lacks deployment-continuity evidence; an ingestion restart or incompatible rollout could skip or double-count demand. (sha=d92c2c8a8179caa9f5bc0bc69802cf5535645663)",
+      "expected_head_sha": "d92c2c8a8179caa9f5bc0bc69802cf5535645663",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T19:36:42.209Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-724-search-insights",
+        "head_sha": "9bb9395effd85132f6b815a8f087c71c4eb38ffa",
         "cluster_id": null,
         "job_path": null
       }
