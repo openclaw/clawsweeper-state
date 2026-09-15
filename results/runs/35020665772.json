@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149394",
+  "mode": "autonomous",
+  "run_id": "35020665772",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35020665772",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149394.md",
+  "published_at": "2026-09-15T21:36:47.767Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149394",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149394",
+  "canonical_pr": null,
+  "summary": "Confirmed current-main rejection propagation through the status boundary using an injected probe failure. Prepared a narrow fix plan. Implementation, regression tests, and CLI proof are blocked by the read-only checkout and absent dependencies/build output. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#149394",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#149394",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable isolated checkout with dependencies. Host permissions prohibit edits, installation, and build artifacts; no validated PR branch exists."
+    },
+    {
+      "target": "#139082",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate lifecycle failure; preserve its existing investigation."
+    },
+    {
+      "target": "#142452",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149394",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149394",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair remains appropriate; preparation can proceed independently of this worker's filesystem restrictions."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
