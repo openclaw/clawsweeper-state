@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:01:28.849Z",
+  "updated_at": "2026-09-15T03:02:12.102Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148213:5663507457:2026-09-14T21:09:58Z:clawsweeper_needs_human",
-      "comment_id": "5663507457",
-      "comment_version_key": "5663507457:2026-09-14T21:09:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148213#issuecomment-5663507457",
-      "comment_created_at": "2026-09-14T11:56:27Z",
-      "comment_updated_at": "2026-09-14T21:09:58Z",
-      "comment_body_sha256": "8c723074d2159738a57e9d491cc9de5a39cb970ed481684314ec388bb96d70d5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148213,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The tested composition depends on an unmerged Fleet prerequisite; integration with main has not yet been qualified. (sha=60de731d85406b3974c8a2cca129aaa02a2cb9ff)",
-      "expected_head_sha": "60de731d85406b3974c8a2cca129aaa02a2cb9ff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T21:20:05.547Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mcp-oauth-read-worker",
-        "head_sha": "60de731d85406b3974c8a2cca129aaa02a2cb9ff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148312:5666609915:2026-09-14T21:07:26Z:clawsweeper_needs_human",
       "comment_id": "5666609915",
@@ -33535,6 +33502,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141317:5674013442:2026-09-15T03:01:16Z:re_review",
+      "comment_id": "5674013442",
+      "comment_version_key": "5674013442:2026-09-15T03:01:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141317#issuecomment-5674013442",
+      "comment_created_at": "2026-09-15T03:01:16Z",
+      "comment_updated_at": "2026-09-15T03:01:16Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141317,
+      "author": "hugenshen",
+      "author_id": 16300669,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T03:02:05.860Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/discord-pluralkit-redact-errors",
+        "head_sha": "fa33798e488df7e6753c11e9513a82cd9af97015",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
