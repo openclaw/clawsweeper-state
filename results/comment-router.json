@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:26:42.009Z",
+  "updated_at": "2026-09-15T03:26:54.946Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5634437325:2026-09-11T12:28:22Z:re_review",
-      "comment_id": "5634437325",
-      "comment_version_key": "5634437325:2026-09-11T12:28:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5634437325",
-      "comment_created_at": "2026-09-11T12:28:22Z",
-      "comment_updated_at": "2026-09-11T12:28:22Z",
-      "comment_body_sha256": "35b79e806f27ad39aa9878657b0863b29789f7dbf1281cd3e1e657c7f115e826",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact stack parent 6d8e91f53e7fe8849626d68b21426c34d336468c, child c2ae85bba1de2b20d3ef88157618beff8c3181ab. the cleanup finding is fixed by preserving unconditional cleanupaftergatewaystop for every crabline channel and exposing no early cleanup method. the 67-test sibling/discord suite, full changed gate, and real bundled-plugin crabline e2e pass; the relative discord diff is empty",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T21:46:48.561Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116446:5644631109:2026-09-12T08:06:02Z:re_review",
       "comment_id": "5644631109",
@@ -33664,6 +33637,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:196:5653012631:2026-09-15T03:25:29Z:clawsweeper_needs_human",
+      "comment_id": "5653012631",
+      "comment_version_key": "5653012631:2026-09-15T03:25:29Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/196#issuecomment-5653012631",
+      "comment_created_at": "2026-09-13T11:36:03Z",
+      "comment_updated_at": "2026-09-15T03:25:29Z",
+      "comment_body_sha256": "e1b19a656387445c9bfcc0a05548a1b9f1d2c9926f942eed313bb7236f503a4f",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 196,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously tolerated unknown conversation types under explicit exclusion, or conflicting identities under any setting, now stop API sync. This compatibility change is explicitly appro... (sha=467e8df344c8ab83e656af3929ff0f69d29ea313)",
+      "expected_head_sha": "467e8df344c8ab83e656af3929ff0f69d29ea313",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T03:26:54.946Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/api-conversation-admission",
+        "head_sha": "467e8df344c8ab83e656af3929ff0f69d29ea313",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
