@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T06:29:20.909Z",
+  "updated_at": "2026-09-15T06:31:59.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148138:5662141785:2026-09-15T02:26:41Z:clawsweeper_needs_human",
-      "comment_id": "5662141785",
-      "comment_version_key": "5662141785:2026-09-15T02:26:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148138#issuecomment-5662141785",
-      "comment_created_at": "2026-09-14T09:51:33Z",
-      "comment_updated_at": "2026-09-15T02:26:41Z",
-      "comment_body_sha256": "730dd2b1377e4fd319af2f026cf109d08be432c7e95e2425fd6a9bf34e5cb701",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148138,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied Linux transcript positively exercises real background execution, ledger finalization, and CLI output on 2026.9.4 with the...; Review finding: [P2] Invalidate cached output when list refresh observes completion — ui/src/pages/chat/components/chat-background-tasks.ts:515-521 - [P2] Reject running lookup re... (sha=e50306f1dd1d08b39d6a2ed73ef101706c429e24)",
-      "expected_head_sha": "e50306f1dd1d08b39d6a2ed73ef101706c429e24",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T02:34:04.295Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/exec-task-output-tail",
-        "head_sha": "e50306f1dd1d08b39d6a2ed73ef101706c429e24",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148175:5662862838:2026-09-15T02:10:30Z:clawsweeper_auto_merge",
       "comment_id": "5662862838",
@@ -32128,6 +32095,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148135:5675813836:2026-09-15T06:31:08Z:re_review",
+      "comment_id": "5675813836",
+      "comment_version_key": "5675813836:2026-09-15T06:31:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148135#issuecomment-5675813836",
+      "comment_created_at": "2026-09-15T06:31:08Z",
+      "comment_updated_at": "2026-09-15T06:31:08Z",
+      "comment_body_sha256": "d42c03d0037f836aca97e612a7b2f2f4e1032a13b2640c5a5cdebd3377bc0f24",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148135,
+      "author": "ruel225",
+      "author_id": 300765114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T06:31:57.586Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/context-recall-sender-id",
+        "head_sha": "1353ff74bd91b796cd7e4ff588f1d570104026ae",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
