@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T18:38:39.176Z",
+  "updated_at": "2026-09-15T18:38:58.268Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:144984:5680657669:2026-09-15T13:05:55Z:re_review",
-      "comment_id": "5680657669",
-      "comment_version_key": "5680657669:2026-09-15T13:05:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144984#issuecomment-5680657669",
-      "comment_created_at": "2026-09-15T13:05:55Z",
-      "comment_updated_at": "2026-09-15T13:05:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144984,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T13:06:55.450Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/secrets-remove-unused-scope-param",
-        "head_sha": "28c905b7447cb1657c87944ca6889ced11b72317",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148922:5677290815:2026-09-15T12:57:59Z:clawsweeper_needs_human",
       "comment_id": "5677290815",
@@ -33538,6 +33491,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-empty-coordinator-r12",
         "head_sha": "7e3ddc77fcb1fb5ae5ee26cfc7c2de1b6602802e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:397:5676542347:2026-09-15T18:38:08Z:clawsweeper_needs_human",
+      "comment_id": "5676542347",
+      "comment_version_key": "5676542347:2026-09-15T18:38:08Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/397#issuecomment-5676542347",
+      "comment_created_at": "2026-09-15T07:37:10Z",
+      "comment_updated_at": "2026-09-15T18:38:08Z",
+      "comment_body_sha256": "3b53ba89a402bb29ab57d834a84000852d4a900d9990e420c8f35d1b78a4c876",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The introduced proof step fails in both normal PR-event Linux lanes while exact-head manual runs pass; until the failed receipts are inspected, its reliability as a required PR check... (sha=cb59c23a5bbf9688f50d8e76380de79e90656779)",
+      "expected_head_sha": "cb59c23a5bbf9688f50d8e76380de79e90656779",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T18:38:58.268Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/transfer-options-snapshot-20260915",
+        "head_sha": "cb59c23a5bbf9688f50d8e76380de79e90656779",
         "cluster_id": null,
         "job_path": null
       }
