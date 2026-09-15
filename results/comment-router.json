@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-15T06:18:04.195Z",
+  "updated_at": "2026-09-15T06:18:26.050Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148317:5673748636:2026-09-15T02:27:12Z:automerge",
-      "comment_id": "5673748636",
-      "comment_version_key": "5673748636:2026-09-15T02:27:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148317#issuecomment-5673748636",
-      "comment_created_at": "2026-09-15T02:27:12Z",
-      "comment_updated_at": "2026-09-15T02:27:12Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148317,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T02:28:33.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-http-response-close-abort",
-        "head_sha": "e0a486080562433bf04a0078af4ed135ff6725f7",
-        "cluster_id": "automerge-openclaw-openclaw-148317",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148317.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148699:5673753973:2026-09-15T02:27:53Z:clawsweeper_needs_human",
       "comment_id": "5673753973",
@@ -32137,6 +32084,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-subagent-maintenance-2582",
         "head_sha": "94c96246470f6f0715a33ba77d02fa1036271cbf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148481:5672668304:2026-09-15T06:08:25Z:clawsweeper_needs_human",
+      "comment_id": "5672668304",
+      "comment_version_key": "5672668304:2026-09-15T06:08:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148481#issuecomment-5672668304",
+      "comment_created_at": "2026-09-15T00:14:16Z",
+      "comment_updated_at": "2026-09-15T06:08:25Z",
+      "comment_body_sha256": "2513536fd76e7b663f556c9e2455e73674863638a1fcc7499279c220dc61fe8c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The prompt builder and memory bridge have reported after-fix assertion coverage, and the pre-fix incident supports the diagnosis. Howe... (sha=f20884caa8b17091a9221535bd78540cf907bde0)",
+      "expected_head_sha": "f20884caa8b17091a9221535bd78540cf907bde0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T06:18:26.050Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-deferred-tool-callable-names",
+        "head_sha": "f20884caa8b17091a9221535bd78540cf907bde0",
         "cluster_id": null,
         "job_path": null
       }
