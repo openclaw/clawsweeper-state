@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:28:51.038Z",
+  "updated_at": "2026-09-15T04:29:09.413Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148348:5672589224:2026-09-15T00:05:01Z:re_review",
-      "comment_id": "5672589224",
-      "comment_version_key": "5672589224:2026-09-15T00:05:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148348#issuecomment-5672589224",
-      "comment_created_at": "2026-09-15T00:05:01Z",
-      "comment_updated_at": "2026-09-15T00:05:01Z",
-      "comment_body_sha256": "fb4582fc7c897d802aa1fc1c78b7738a57ed7fc9c39166ac4339ddc037542ad4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148348,
-      "author": "ryannikolaidis",
-      "author_id": 1208590,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T00:05:55.723Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "workboard-dispatch-stale-guardrails",
-        "head_sha": "12257f70dff94144d251a9d97f1fece2e1da01fc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:216:5638462873:2026-09-15T00:04:37Z:clawsweeper_needs_human",
       "comment_id": "5638462873",
@@ -32870,6 +32823,39 @@
         "kind": "pull_request",
         "branch": "fix/api-history-completeness",
         "head_sha": "16a67b8fbcdaaffdeb3d5b7b3566326a5fcae1d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148721:5674207153:2026-09-15T04:28:16Z:clawsweeper_needs_human",
+      "comment_id": "5674207153",
+      "comment_version_key": "5674207153:2026-09-15T04:28:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148721#issuecomment-5674207153",
+      "comment_created_at": "2026-09-15T03:25:34Z",
+      "comment_updated_at": "2026-09-15T04:28:16Z",
+      "comment_body_sha256": "da98bf3e15255a13bcf906a37d4c473c485ee150f716821303a1857235cdc593",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the shared classifier, installed terminal hook, and subscription completion are covered with synthetic... (sha=a6b73145fa1b03f7fdbe1a43c506b25f12eafc20)",
+      "expected_head_sha": "a6b73145fa1b03f7fdbe1a43c506b25f12eafc20",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:29:09.413Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-slack-top-level-source-reply",
+        "head_sha": "a6b73145fa1b03f7fdbe1a43c506b25f12eafc20",
         "cluster_id": null,
         "job_path": null
       }
