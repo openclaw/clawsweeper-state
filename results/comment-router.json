@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:56:15.419Z",
+  "updated_at": "2026-09-15T17:56:20.761Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124438:5305949573:2026-09-15T12:28:31Z:clawsweeper_auto_repair",
-      "comment_id": "5305949573",
-      "comment_version_key": "5305949573:2026-09-15T12:28:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124438#issuecomment-5305949573",
-      "comment_created_at": "2026-08-16T05:40:48Z",
-      "comment_updated_at": "2026-09-15T12:28:31Z",
-      "comment_body_sha256": "585e02fe343e1a7499ec6fd24d0bf6a57ba2ee10033d82d9a1e6679cd1ab0ea0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124438,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9eb1a2b9e027c6427a183bb6c2eb5480f10d6621)",
-      "expected_head_sha": "9eb1a2b9e027c6427a183bb6c2eb5480f10d6621",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T12:29:45.363Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-sdk-channel-runtime",
-        "head_sha": "9eb1a2b9e027c6427a183bb6c2eb5480f10d6621",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148923:5677426584:2026-09-15T12:28:47Z:clawsweeper_needs_human",
       "comment_id": "5677426584",
@@ -33575,6 +33542,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142853:5685293389:2026-09-15T17:55:11Z:re_review",
+      "comment_id": "5685293389",
+      "comment_version_key": "5685293389:2026-09-15T17:55:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142853#issuecomment-5685293389",
+      "comment_created_at": "2026-09-15T17:55:11Z",
+      "comment_updated_at": "2026-09-15T17:55:11Z",
+      "comment_body_sha256": "fc484e6f5a2b27d15e5d2f223f6ffbba82f39572ee57a62c767f8353d5989c3b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142853,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: same exact head; independent 51 unit tests, six chromium scenarios, full changed checks and real-provider same-runtime before/after proof now recorded in the pr body. previous platinum readiness/patch and diamond proof review is older than 12 hours; no prior rank-up findings remain",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T17:56:16.753Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/swarm-parent-active-childOutcome-142189",
+        "head_sha": "3ad1066f6bf72bc71ff4f9fbc98945bb6b927f9c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
