@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:12:50.257Z",
+  "updated_at": "2026-09-15T17:12:53.006Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149047:5679563970:2026-09-15T11:40:14Z:re_review",
-      "comment_id": "5679563970",
-      "comment_version_key": "5679563970:2026-09-15T11:40:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149047#issuecomment-5679563970",
-      "comment_created_at": "2026-09-15T11:40:14Z",
-      "comment_updated_at": "2026-09-15T11:40:14Z",
-      "comment_body_sha256": "6b020c142965f30cb7ead1c40c9f16f05330b1ed1cc51dcfe9126526c2868dfd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149047,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T11:41:07.548Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-sentinel-state-env",
-        "head_sha": "90705978afbb5ee5affdcce551b7276324eb24ee",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3658:5679576027:2026-09-15T11:41:15Z:clawsweeper_auto_repair",
       "comment_id": "5679576027",
@@ -33711,6 +33664,39 @@
         "kind": "pull_request",
         "branch": "codex/memory-r5-sessions",
         "head_sha": "f170ca58a3f736da9f3b289a86e2c61405e6c4cb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148985:5678450616:2026-09-15T17:01:31Z:clawsweeper_needs_human",
+      "comment_id": "5678450616",
+      "comment_version_key": "5678450616:2026-09-15T17:01:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148985#issuecomment-5678450616",
+      "comment_created_at": "2026-09-15T10:13:30Z",
+      "comment_updated_at": "2026-09-15T17:01:31Z",
+      "comment_body_sha256": "ba93253518bc871d11391ec5f61e86551e49338e5ae13a0c6b01aa757befd5ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148985,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The detailed failing CI logs were inaccessible through the review proxy; their classification as unrelated remains supported by the captured PR body rather than independent log inspec... (sha=59d706b95a307ee9c4d90df4606a438f7a082b62)",
+      "expected_head_sha": "59d706b95a307ee9c4d90df4606a438f7a082b62",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T17:12:53.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-fixed-store-discovery-7006",
+        "head_sha": "59d706b95a307ee9c4d90df4606a438f7a082b62",
         "cluster_id": null,
         "job_path": null
       }
