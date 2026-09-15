@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T11:16:20.190Z",
+  "updated_at": "2026-09-15T11:16:29.173Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147711:5658145011:2026-09-15T05:35:24Z:clawsweeper_needs_human",
-      "comment_id": "5658145011",
-      "comment_version_key": "5658145011:2026-09-15T05:35:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147711#issuecomment-5658145011",
-      "comment_created_at": "2026-09-14T02:24:18Z",
-      "comment_updated_at": "2026-09-15T05:35:24Z",
-      "comment_body_sha256": "8c4fe6e77d9204a8ca09d7501b68d8110aaf5d63c99f24ae3b46d1c48c255827",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147711,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The accepted preservation contract temporarily refuses edits that change pending migration inputs; operators must complete recovery before changing those inputs. (sha=a2d3cc3a2cf91f6d07861a7702db4e39bea7be77)",
-      "expected_head_sha": "a2d3cc3a2cf91f6d07861a7702db4e39bea7be77",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T05:42:52.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-doctor-stale-plugin-migration-ordering",
-        "head_sha": "a2d3cc3a2cf91f6d07861a7702db4e39bea7be77",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148311:5666581005:2026-09-15T05:40:19Z:clawsweeper_auto_repair",
       "comment_id": "5666581005",
@@ -33694,6 +33661,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148248:5679268165:2026-09-15T11:15:33Z:re_review",
+      "comment_id": "5679268165",
+      "comment_version_key": "5679268165:2026-09-15T11:15:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148248#issuecomment-5679268165",
+      "comment_created_at": "2026-09-15T11:15:33Z",
+      "comment_updated_at": "2026-09-15T11:15:33Z",
+      "comment_body_sha256": "12a7c6622d67979b2f364d8e90e71ca7af4adc2410a29c7aa00280854c3f33c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148248,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T11:16:27.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigate-failure-and-open-fix-pr",
+        "head_sha": "2434c2469f71f78ca837e674d66d0b3939e3765f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
