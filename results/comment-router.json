@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:47:27.254Z",
+  "updated_at": "2026-09-15T17:47:45.293Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148923:5677426584:2026-09-15T12:21:13Z:clawsweeper_needs_human",
-      "comment_id": "5677426584",
-      "comment_version_key": "5677426584:2026-09-15T12:21:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148923#issuecomment-5677426584",
-      "comment_created_at": "2026-09-15T08:52:02Z",
-      "comment_updated_at": "2026-09-15T12:21:13Z",
-      "comment_body_sha256": "e1d3d4c9532ab1978cc1836692b7b977f2d29dff2817f6266ad4778749d90a80",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148923,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=66d959bb2b83e211efb15e7c1401d5f89847c15d)",
-      "expected_head_sha": "66d959bb2b83e211efb15e7c1401d5f89847c15d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T12:24:09.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/r22-session-context-iteration",
-        "head_sha": "66d959bb2b83e211efb15e7c1401d5f89847c15d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148977:5678287045:2026-09-15T11:55:36Z:clawsweeper_needs_human",
       "comment_id": "5678287045",
@@ -33499,6 +33466,53 @@
       "status": "skipped",
       "processed_at": "2026-09-15T17:47:27.254Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5685166456:2026-09-15T17:46:34Z:re_review",
+      "comment_id": "5685166456",
+      "comment_version_key": "5685166456:2026-09-15T17:46:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5685166456",
+      "comment_created_at": "2026-09-15T17:46:34Z",
+      "comment_updated_at": "2026-09-15T17:46:34Z",
+      "comment_body_sha256": "0d832cc23c72fef7d5617821253900d7defff99656bde75547efbeda2e242452",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `6490395d9cd82c255d9c72fa53a8642d9d68bfa9`. rebasing onto current main brought in the landed ci input-fingerprinting fix for the unrelated stale-cache pr-tooling fixture failures. the rebase was conflict-free; `git diff --check` is clean and the pr remains exclusively `ui/` and `docs/`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T17:47:43.681Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "6490395d9cd82c255d9c72fa53a8642d9d68bfa9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
