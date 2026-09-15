@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:36:33.699Z",
+  "updated_at": "2026-09-15T13:36:43.085Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/slacrawl:225:5676798651:2026-09-15T07:59:12Z:re_review",
-      "comment_id": "5676798651",
-      "comment_version_key": "5676798651:2026-09-15T07:59:12Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/225#issuecomment-5676798651",
-      "comment_created_at": "2026-09-15T07:59:12Z",
-      "comment_updated_at": "2026-09-15T07:59:12Z",
-      "comment_body_sha256": "32971789a790ca8604bad85c65530873a745897c0909c1a7910c47a6b148c88c",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 225,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T07:59:57.492Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/export-projection-artifact",
-        "head_sha": "57714e6864721334c3749fbff24c868c3a163e79",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148769:5674765456:2026-09-15T07:54:06Z:clawsweeper_needs_human",
       "comment_id": "5674765456",
@@ -33809,6 +33762,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-subagent-spawn-fixture-ownership-20260915",
         "head_sha": "cf9d87b440b3fb088d4ad8bc00b0aa0c584b680b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:382:5674612251:2026-09-15T13:28:45Z:clawsweeper_needs_human",
+      "comment_id": "5674612251",
+      "comment_version_key": "5674612251:2026-09-15T13:28:45Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/382#issuecomment-5674612251",
+      "comment_created_at": "2026-09-15T04:11:51Z",
+      "comment_updated_at": "2026-09-15T13:28:45Z",
+      "comment_body_sha256": "ceb1cb88e10660e088cb1bf410ad79453b0dfb92efe7aa10dffbab5fb28f2229",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 382,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body defers runtime work; tests and CI supply no after-fix consumer transcript connecting filename sanitization and callback admis... (sha=d02ec4462e8c552205a093cc618483d966f9c682)",
+      "expected_head_sha": "d02ec4462e8c552205a093cc618483d966f9c682",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T13:36:43.085Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/filename-fallback-20260914",
+        "head_sha": "d02ec4462e8c552205a093cc618483d966f9c682",
         "cluster_id": null,
         "job_path": null
       }
