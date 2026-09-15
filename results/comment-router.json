@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T19:05:59.879Z",
+  "updated_at": "2026-09-15T19:06:15.670Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149129:5681179807:2026-09-15T13:41:56Z:clawsweeper_needs_human",
-      "comment_id": "5681179807",
-      "comment_version_key": "5681179807:2026-09-15T13:41:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149129#issuecomment-5681179807",
-      "comment_created_at": "2026-09-15T13:41:56Z",
-      "comment_updated_at": "2026-09-15T13:41:56Z",
-      "comment_body_sha256": "c146c390db0092c43cc5ef5fdade8e92b58113abb81e4f2b1b744f64977b7f91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149129,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=7a533085869d2b72b1ec40750025161e5c840345)",
-      "expected_head_sha": "7a533085869d2b72b1ec40750025161e5c840345",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T13:42:46.852Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/slack-markdown-preparation-20260915",
-        "head_sha": "7a533085869d2b72b1ec40750025161e5c840345",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148968:5678126310:2026-09-15T13:42:40Z:clawsweeper_auto_repair",
       "comment_id": "5678126310",
@@ -33577,6 +33544,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149336:5686483252:2026-09-15T19:05:13Z:re_review",
+      "comment_id": "5686483252",
+      "comment_version_key": "5686483252:2026-09-15T19:05:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149336#issuecomment-5686483252",
+      "comment_created_at": "2026-09-15T19:05:13Z",
+      "comment_updated_at": "2026-09-15T19:05:13Z",
+      "comment_body_sha256": "8b0ec4bd2e9976e1c88be72266785a23a9d027f8ec19f49cf091eb4e6ef461dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149336,
+      "author": "dclosefuturex",
+      "author_id": 130100793,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T19:06:13.565Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bedrock-tool-result-images",
+        "head_sha": "0d3b19a3c73bfbce67fb4644cc195c8c3c12dcfc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
