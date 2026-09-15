@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T11:21:10.497Z",
+  "updated_at": "2026-09-15T11:21:43.807Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148775:5674858710:2026-09-15T05:29:30Z:clawsweeper_needs_human",
-      "comment_id": "5674858710",
-      "comment_version_key": "5674858710:2026-09-15T05:29:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148775#issuecomment-5674858710",
-      "comment_created_at": "2026-09-15T04:44:28Z",
-      "comment_updated_at": "2026-09-15T05:29:30Z",
-      "comment_body_sha256": "06d7a977b232c21b492287855ef21f15bd4edd673d203626e6ac08b719ea8605",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148775,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recursive-spawn CI failure remains unattributed; available evidence establishes neither a patch regression nor an unrelated baseline failure. (sha=be4cdc61d59a0ef0d1f19b50a7dcf28e1511c7c8)",
-      "expected_head_sha": "be4cdc61d59a0ef0d1f19b50a7dcf28e1511c7c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T05:42:52.443Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/swarm-child-metadata-20260915",
-        "head_sha": "be4cdc61d59a0ef0d1f19b50a7dcf28e1511c7c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148790:5675211235:2026-09-15T05:37:00Z:clawsweeper_auto_repair",
       "comment_id": "5675211235",
@@ -33708,6 +33675,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149005:5679327193:2026-09-15T11:20:29Z:re_review",
+      "comment_id": "5679327193",
+      "comment_version_key": "5679327193:2026-09-15T11:20:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149005#issuecomment-5679327193",
+      "comment_created_at": "2026-09-15T11:20:29Z",
+      "comment_updated_at": "2026-09-15T11:20:29Z",
+      "comment_body_sha256": "b13bbc726cb840ef20704657fe2e6dc46f055290d2a83ff91a2611b514d4c0b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149005,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T11:21:41.787Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stdio-cleanup-completion",
+        "head_sha": "8772836a849011803d29f9f215f0115ce4867c84",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
