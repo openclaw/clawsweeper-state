@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-15T05:33:00.810Z",
+  "updated_at": "2026-09-15T05:33:18.914Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148175:5662862838:2026-09-15T01:49:31Z:clawsweeper_auto_merge",
-      "comment_id": "5662862838",
-      "comment_version_key": "5662862838:2026-09-15T01:49:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148175#issuecomment-5662862838",
-      "comment_created_at": "2026-09-14T10:56:08Z",
-      "comment_updated_at": "2026-09-15T01:49:31Z",
-      "comment_body_sha256": "df770c7ce3d1e7c6be0a8816659402ffa0165e58a1690f2055b438adb86c9780",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148175,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto merge",
-      "intent": "clawsweeper_auto_merge",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: pass (sha=b9dc1410e2a21bc18c4d8987fc640b9cb92aaa19); failed required checks before automerge: checks-node-compact-small-8:FAILURE",
-      "expected_head_sha": "b9dc1410e2a21bc18c4d8987fc640b9cb92aaa19",
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:55:43.167Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-service-retention",
-        "head_sha": "b9dc1410e2a21bc18c4d8987fc640b9cb92aaa19",
-        "cluster_id": "automerge-openclaw-openclaw-148175",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148175.md"
-      },
-      "actions": [
-        {
-          "action": "merge",
-          "status": "repair_needed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148175.md"
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148401:5668098759:2026-09-15T01:50:21Z:clawsweeper_auto_merge",
       "comment_id": "5668098759",
@@ -32022,6 +31969,39 @@
         "kind": "pull_request",
         "branch": "fix/control-ui-forward-recovery",
         "head_sha": "d9641d9a454c95d410f10a88b865ebacf74a3f9b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:370:5671018998:2026-09-15T05:32:28Z:clawsweeper_needs_human",
+      "comment_id": "5671018998",
+      "comment_version_key": "5671018998:2026-09-15T05:32:28Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/370#issuecomment-5671018998",
+      "comment_created_at": "2026-09-14T21:25:08Z",
+      "comment_updated_at": "2026-09-15T05:32:28Z",
+      "comment_body_sha256": "e990630f4d239f279f12fcb6f9ef8bebe45fcafd820158ae216eac138f8d604e",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 370,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Windows/Ubuntu results exercise real filesystem operations through the changed filename, temp-file, and sibling-publication code,... (sha=1e485d7fd2d1021fcb4d249e160423965a8a57aa)",
+      "expected_head_sha": "1e485d7fd2d1021fcb4d249e160423965a8a57aa",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T05:33:18.914Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/windows-device-filenames-20260914",
+        "head_sha": "1e485d7fd2d1021fcb4d249e160423965a8a57aa",
         "cluster_id": null,
         "job_path": null
       }
