@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T07:34:22.235Z",
+  "updated_at": "2026-09-15T07:34:23.233Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147294:5655554037:2026-09-15T03:37:59Z:clawsweeper_needs_human",
-      "comment_id": "5655554037",
-      "comment_version_key": "5655554037:2026-09-15T03:37:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147294#issuecomment-5655554037",
-      "comment_created_at": "2026-09-13T19:28:15Z",
-      "comment_updated_at": "2026-09-15T03:37:59Z",
-      "comment_body_sha256": "1a325597d7083a30d0f21472498aa1d62959c4006351dc2bdff482a49676fda3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147294,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The corrected completed-send scenario has oracle coverage but no completed authenticated live qualification; successful QA cleanup after a failed cell also remains unverified. (sha=22553f8ab3edd842e78ca87dcb7aebd5c45f76ed)",
-      "expected_head_sha": "22553f8ab3edd842e78ca87dcb7aebd5c45f76ed",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T03:39:09.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/issue25592-claude-delivery",
-        "head_sha": "22553f8ab3edd842e78ca87dcb7aebd5c45f76ed",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:373:5672334460:2026-09-15T03:34:56Z:clawsweeper_needs_human",
       "comment_id": "5672334460",
@@ -32023,6 +31990,39 @@
       "status": "skipped",
       "processed_at": "2026-09-15T07:34:22.235Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148876:5676501232:2026-09-15T07:33:27Z:clawsweeper_needs_human",
+      "comment_id": "5676501232",
+      "comment_version_key": "5676501232:2026-09-15T07:33:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148876#issuecomment-5676501232",
+      "comment_created_at": "2026-09-15T07:33:27Z",
+      "comment_updated_at": "2026-09-15T07:33:27Z",
+      "comment_body_sha256": "2048c02590457341f9ca180541f0d9afe2a09b2b118e3e04064f0c818acf695b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148876,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports useful live skipped receipts, but does not expose the receipts or a trace connecting the changed cron waiter to a pat... (sha=39fe9e10e4b6df65813eb0454a687ed2bd006f3d)",
+      "expected_head_sha": "39fe9e10e4b6df65813eb0454a687ed2bd006f3d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T07:34:23.233Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/heartbeat-cron-queue-skip",
+        "head_sha": "39fe9e10e4b6df65813eb0454a687ed2bd006f3d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
