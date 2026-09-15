@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T18:56:59.164Z",
+  "updated_at": "2026-09-15T18:57:14.410Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149067:5680989456:2026-09-15T13:29:18Z:re_review",
-      "comment_id": "5680989456",
-      "comment_version_key": "5680989456:2026-09-15T13:29:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149067#issuecomment-5680989456",
-      "comment_created_at": "2026-09-15T13:29:18Z",
-      "comment_updated_at": "2026-09-15T13:29:18Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149067,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T13:40:13.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/sqlite-scalar-statement-reuse-20260915",
-        "head_sha": "d7f6bcb35d53e610024f4f265a6e1bd17bf0a046",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:122679:5268628266:2026-09-15T13:25:12Z:clawsweeper_auto_repair",
       "comment_id": "5268628266",
@@ -33568,6 +33521,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-compaction-mcp-acquisition-cancellation",
         "head_sha": "ef19f60c5859f44573bd8cca9ae95632092ee9b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149340:5686334167:2026-09-15T18:56:17Z:clawsweeper_needs_human",
+      "comment_id": "5686334167",
+      "comment_version_key": "5686334167:2026-09-15T18:56:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149340#issuecomment-5686334167",
+      "comment_created_at": "2026-09-15T18:56:17Z",
+      "comment_updated_at": "2026-09-15T18:56:17Z",
+      "comment_body_sha256": "2729f3880778b3745ccf8599c28c02af3f3b98c0fe5779f84f4128705c5e4c1a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149340,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=d3b68015c57c243b144e7f844361ad68a9b6348d)",
+      "expected_head_sha": "d3b68015c57c243b144e7f844361ad68a9b6348d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T18:57:14.410Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-memory-postrename-origins-20260915",
+        "head_sha": "d3b68015c57c243b144e7f844361ad68a9b6348d",
         "cluster_id": null,
         "job_path": null
       }
