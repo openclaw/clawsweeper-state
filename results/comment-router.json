@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T22:44:35.752Z",
+  "updated_at": "2026-09-15T22:44:41.818Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149284:5684642979:2026-09-15T17:10:48Z:re_review",
-      "comment_id": "5684642979",
-      "comment_version_key": "5684642979:2026-09-15T17:10:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149284#issuecomment-5684642979",
-      "comment_created_at": "2026-09-15T17:10:48Z",
-      "comment_updated_at": "2026-09-15T17:10:48Z",
-      "comment_body_sha256": "bb0e65320edb9e484023ddc46a393f0049172a0437415b01cceb63db653ec404",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149284,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T17:11:50.969Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/browser-startup-readiness-timeouts",
-        "head_sha": "7a038e8ea352fd4111f7a596c04804af60b90b0b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148574:5671738372:2026-09-15T17:01:53Z:clawsweeper_needs_human",
       "comment_id": "5671738372",
@@ -33593,6 +33546,39 @@
         "kind": "pull_request",
         "branch": "automation/design-system-audit",
         "head_sha": "a468e8e08722d8176d926530e3eb5be59273d147",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2271:5676358090:2026-09-15T22:34:32Z:clawsweeper_needs_human",
+      "comment_id": "5676358090",
+      "comment_version_key": "5676358090:2026-09-15T22:34:32Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2271#issuecomment-5676358090",
+      "comment_created_at": "2026-09-15T07:20:42Z",
+      "comment_updated_at": "2026-09-15T22:34:32Z",
+      "comment_body_sha256": "85a5cb1f7e84e8bf9481313521d8bea8dce764d7236eb3121bc6379255a165d3",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2271,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Acquire, route discovery, and SSH-target construction have recording-runner coverage, but the supplied update explicitly reports no successful... (sha=76d701c066797f9fb430255e4f09e7bea02b7ba4)",
+      "expected_head_sha": "76d701c066797f9fb430255e4f09e7bea02b7ba4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T22:44:41.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exedev-route-hydration",
+        "head_sha": "76d701c066797f9fb430255e4f09e7bea02b7ba4",
         "cluster_id": null,
         "job_path": null
       }
