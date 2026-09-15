@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:38:59.327Z",
+  "updated_at": "2026-09-15T04:39:08.154Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148571:5673124446:2026-09-15T01:08:58Z:automerge",
-      "comment_id": "5673124446",
-      "comment_version_key": "5673124446:2026-09-15T01:08:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148571#issuecomment-5673124446",
-      "comment_created_at": "2026-09-15T01:08:58Z",
-      "comment_updated_at": "2026-09-15T01:08:58Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148571,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:09:51.350Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-tui-fixture-retention",
-        "head_sha": "30784c0b6726d77dba474ca423635711f15e6aa3",
-        "cluster_id": "automerge-openclaw-openclaw-148571",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148571.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148571.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148663:5673125898:2026-09-15T01:09:08Z:clawsweeper_needs_human",
       "comment_id": "5673125898",
@@ -32083,6 +32024,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148155:5663012291:2026-09-15T04:32:33Z:clawsweeper_needs_human",
+      "comment_id": "5663012291",
+      "comment_version_key": "5663012291:2026-09-15T04:32:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148155#issuecomment-5663012291",
+      "comment_created_at": "2026-09-14T11:09:52Z",
+      "comment_updated_at": "2026-09-15T04:32:33Z",
+      "comment_body_sha256": "e406f93de1805c4a71e610eb019a26d680532f14606f45d82562206a705bc3e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148155,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2a3b20cc10e50b012def5395d12328798b6dc499)",
+      "expected_head_sha": "2a3b20cc10e50b012def5395d12328798b6dc499",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:39:08.154Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-batch-archive-confirmation",
+        "head_sha": "2a3b20cc10e50b012def5395d12328798b6dc499",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
