@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:47:33.375Z",
+  "updated_at": "2026-09-15T13:47:41.483Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148851:5676124260:2026-09-15T08:14:10Z:clawsweeper_needs_human",
-      "comment_id": "5676124260",
-      "comment_version_key": "5676124260:2026-09-15T08:14:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148851#issuecomment-5676124260",
-      "comment_created_at": "2026-09-15T06:58:47Z",
-      "comment_updated_at": "2026-09-15T08:14:10Z",
-      "comment_body_sha256": "b5bfb05a8b80a0af41f0a4decab5549a32d0679f50d29edf637c482683fa0eb1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148851,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The rebased acceptance run exposes an unresolved Doctor/rollback failure outside the newly eligible pristine-state path; the successful earlier upgrade cell does not establish full cu... (sha=19d446741eda0ffebec463c525b4f41dc1575b44)",
-      "expected_head_sha": "19d446741eda0ffebec463c525b4f41dc1575b44",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T08:14:58.117Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/pristine-mdns-startup",
-        "head_sha": "19d446741eda0ffebec463c525b4f41dc1575b44",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148879:5676601229:2026-09-15T08:14:19Z:clawsweeper_needs_human",
       "comment_id": "5676601229",
@@ -33716,6 +33683,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149005:5681249123:2026-09-15T13:46:29Z:re_review",
+      "comment_id": "5681249123",
+      "comment_version_key": "5681249123:2026-09-15T13:46:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149005#issuecomment-5681249123",
+      "comment_created_at": "2026-09-15T13:46:29Z",
+      "comment_updated_at": "2026-09-15T13:46:29Z",
+      "comment_body_sha256": "e48be1d694e56cad7fd18fa3c6e91a9e709b9be34e65d0e6884430e0e1020936",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149005,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T13:47:38.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stdio-cleanup-completion",
+        "head_sha": "64c8efbc6f0af6b99dae1a88e99ec4d759fbbd0d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
