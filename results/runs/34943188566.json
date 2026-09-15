@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148878",
+  "mode": "autonomous",
+  "run_id": "34943188566",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34943188566",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148878.md",
+  "published_at": "2026-09-15T08:25:30.633Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/148878",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/148878",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Source inspection supports the reported repeated validation, but implementation and runtime reproduction are blocked by read-only access. Checkout HEAD also differs from preflight main; current-main verification remains required.",
+  "actions": [
+    {
+      "target": "#148878",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148878",
+      "candidate_fix": null,
+      "reason": "The reported mechanism remains present in the inspected checkout. Keep this issue as canonical; require reproduction on verified current main before implementing."
+    },
+    {
+      "target": "#124099",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical validation context only; no closure or repair action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-148878",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#148878",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Local implementation is blocked by the read-only filesystem; verified current-main reproduction must precede any executor patch or PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
