@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148994"
-mode: "autonomous"
-run_id: "34956793186"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34956793186"
+mode: "plan"
+run_id: "34964079907"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34964079907"
 head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T11:15:05.935Z"
-canonical: "https://github.com/openclaw/openclaw/issues/148994"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/148994"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T11:48:52.098Z"
+canonical: "#148994"
+canonical_issue: "#148994"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34956793186](https://github.com/openclaw/clawsweeper/actions/runs/34956793186)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34964079907](https://github.com/openclaw/clawsweeper/actions/runs/34964079907)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/148994
+Canonical: #148994
 
 ## Summary
 
-Confirmed the path-formatting defect on preflight main. Prepared a narrow fix plan; implementation and full CLI validation are blocked by the read-only host and missing dependencies. No files or GitHub state changed.
+Confirmed the reported formatter defect in source at the preflight main SHA. Prepared a narrow fix plan; runtime reproduction, implementation, and validation remain pending in this read-only planning run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed the path-formatting defect on preflight main. Prepared a narrow fix pl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148994 | fix_needed | planned | canonical | An ordinary command-formatting bug has a narrow repair path using existing owners; no parser, schema, or secret-handling change is needed. |
-| cluster:issue-openclaw-openclaw-148994 | build_fix_artifact | planned |  | Artifact preparation is complete. Applying the patch, creating fixtures, installing dependencies, and validating the branch require a writable executor. |
+| #148994 | fix_needed | planned | canonical | Repair the generated command at its formatter owner. Establish the failing reproduction before editing, then validate the complete shell-to-config path round trip. Closure and merge are prohibited. |
 
 ## Needs Human
 
