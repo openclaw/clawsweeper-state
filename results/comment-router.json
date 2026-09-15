@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T08:04:49.653Z",
+  "updated_at": "2026-09-15T08:06:36.133Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148721:5674544336:2026-09-15T04:02:43Z:re_review",
-      "comment_id": "5674544336",
-      "comment_version_key": "5674544336:2026-09-15T04:02:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148721#issuecomment-5674544336",
-      "comment_created_at": "2026-09-15T04:02:43Z",
-      "comment_updated_at": "2026-09-15T04:02:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148721,
-      "author": "adenzhou1350",
-      "author_id": 209601943,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T04:03:42.676Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-slack-top-level-source-reply",
-        "head_sha": "facfc9b6d24ba5fec7940770f6016a23fd644efb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-15T04:02:30Z:clawsweeper_auto_repair",
       "comment_id": "5567489931",
@@ -32068,6 +32021,39 @@
         "kind": "pull_request",
         "branch": "codex/bun-frv-active-node",
         "head_sha": "3aba3e94f663993c834d8837573de50a3952d358",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:236:5661580670:2026-09-15T08:05:42Z:clawsweeper_needs_human",
+      "comment_id": "5661580670",
+      "comment_version_key": "5661580670:2026-09-15T08:05:42Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/236#issuecomment-5661580670",
+      "comment_created_at": "2026-09-14T09:05:26Z",
+      "comment_updated_at": "2026-09-15T08:05:42Z",
+      "comment_body_sha256": "2d1e8a20a54788262a1a5ba698e58ff6edef2ae35bf5f38e0df9402b028e45ad",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 236,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed test merge targets the unmerged prerequisite branch, not fetched main; final integration with main remains unqualified. (sha=b7379e847415f03e0f89355f8825d1217c991d89)",
+      "expected_head_sha": "b7379e847415f03e0f89355f8825d1217c991d89",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T08:06:36.133Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/api-redact-native-diagnostics",
+        "head_sha": "b7379e847415f03e0f89355f8825d1217c991d89",
         "cluster_id": null,
         "job_path": null
       }
