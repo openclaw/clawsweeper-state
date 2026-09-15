@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148967"
-mode: "autonomous"
-run_id: "34952733807"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34952733807"
+mode: "plan"
+run_id: "34958565300"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34958565300"
 head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T10:23:23.816Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T10:48:01.319Z"
 canonical: "https://github.com/openclaw/openclaw/issues/148967"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/148967"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34952733807](https://github.com/openclaw/clawsweeper/actions/runs/34952733807)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34958565300](https://github.com/openclaw/clawsweeper/actions/runs/34958565300)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/148967
 
 ## Summary
 
-Source inspection confirms the defect on preflight main. A narrow fix artifact is ready; implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed.
+Confirmed the reported classification path in the checkout matching preflight main 3c6800b2b1e71206d33f9c228589fc76d0481561. Plan a narrow terminal-observer fix preserving earlier genuine errors. No files or GitHub state changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,7 @@ Source inspection confirms the defect on preflight main. A narrow fix artifact i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148967 | fix_needed | planned | canonical | A structured steering skip incorrectly becomes the terminal error and can replace an earlier genuine failure. No product or security-boundary decision is needed. |
-| #21252 | keep_closed | skipped | related | Historical context with distinct retry semantics. |
-| #39406 | keep_closed | skipped | related | Preserve the established warning policy; repair only steering outcome classification. |
-| #137553 | keep_closed | skipped | related | Historical delivery-recovery context, outside this narrow warning fix. |
-| #137775 | keep_closed | skipped | related | Preserve the landed no-reply guard and configuration retirement. |
-| cluster:issue-openclaw-openclaw-148967 | build_fix_artifact | planned | canonical | The executor must first establish a failing production-boundary regression on current main, then implement and validate the narrow owner fix in a writable checkout. |
+| #148967 | fix_needed | planned | canonical | Fix the existing shared error-state owner so a structured steering skip neither records a failure nor counts as a successful retry. Keep the issue open; close and merge are prohibited. |
 
 ## Needs Human
 
