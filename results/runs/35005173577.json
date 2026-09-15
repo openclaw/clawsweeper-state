@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149313",
+  "mode": "autonomous",
+  "run_id": "35005173577",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35005173577",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149313.md",
+  "published_at": "2026-09-15T18:37:32.858Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149313",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149313",
+  "canonical_pr": null,
+  "summary": "Source confirms the topic identity omission on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed; a narrow executor repair artifact is prepared.",
+  "actions": [
+    {
+      "target": "#149313",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149313",
+      "candidate_fix": null,
+      "reason": "A bounded existing-behavior defect remains source-supported. The required failing receive-handler regression must run before implementation."
+    },
+    {
+      "target": "#46778",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#93449",
+      "reason": "Historical compatibility context; preserve the existing DM retry behavior."
+    },
+    {
+      "target": "#93449",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Merged compatibility context, not an open repair candidate or a fix for cross-topic suppression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149313",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#149313",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable, independently owned checkout to reproduce, implement and validate this narrow repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
