@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-149313"
-mode: "autonomous"
-run_id: "35022689479"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35022689479"
-head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T22:17:08.283Z"
-canonical: "https://github.com/openclaw/openclaw/issues/149313"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/149313"
+mode: "plan"
+run_id: "35031387686"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35031387686"
+head_sha: "9d984f1259333dcc67c3689f467e04a254c30cff"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T22:54:50.313Z"
+canonical: "#149313"
+canonical_issue: "#149313"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35022689479](https://github.com/openclaw/clawsweeper/actions/runs/35022689479)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35031387686](https://github.com/openclaw/clawsweeper/actions/runs/35031387686)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/149313
+Canonical: #149313
 
 ## Summary
 
-Confirmed the missing topic identity in source at preflight main 34d493de2cf7fc86a3b44548c6f81ad7a604b2e5. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no code or GitHub changes were made.
+Plan one narrow Feishu fix for #149313. The clean checkout matches preflight main 5745b61b360a3ac87e39f850cff9a3bde4f5ceec; source inspection confirms text retry keys omit topic identity. Runtime reproduction, implementation, and validation remain for the writable execution phase. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed the missing topic identity in source at preflight main 34d493de2cf7fc8
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #149313 | fix_needed | blocked | canonical | The non-security bug remains supported by current source. Implementation requires a writable executor to demonstrate the failing receive-handler regression before changing production code. |
-| #46778 | keep_closed | skipped | related | Historical compatibility context; no closure or reopening action is needed. |
-| #93449 | keep_closed | skipped | related | Preserve the merged contributor work and its retry guarantees. |
-| cluster:issue-openclaw-openclaw-149313 | build_fix_artifact | planned | canonical | A narrow executor-ready plan is available despite the local implementation blocker. Require a failing runtime regression before applying the production fix. |
+| #149313 | fix_needed | planned | canonical | Distinct cross-topic message-loss defect. Prepare the supplied fix artifact on clawsweeper/issue-openclaw-openclaw-149313, requiring successful reproduction before production edits. |
+| #46778 | keep_closed | skipped | related | Historical compatibility context, not an unresolved duplicate. |
+| #93449 | keep_closed | skipped | related | Preserve the merged retry behavior and contributor credit; do not replace or reopen this PR. |
 
 ## Needs Human
 
