@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:17:03.375Z",
+  "updated_at": "2026-09-15T17:17:11.994Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148721:5679609708:2026-09-15T11:44:06Z:re_review",
-      "comment_id": "5679609708",
-      "comment_version_key": "5679609708:2026-09-15T11:44:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148721#issuecomment-5679609708",
-      "comment_created_at": "2026-09-15T11:44:06Z",
-      "comment_updated_at": "2026-09-15T11:44:06Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148721,
-      "author": "adenzhou1350",
-      "author_id": 209601943,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T11:44:59.372Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-slack-top-level-source-reply",
-        "head_sha": "7ac1347296fd5699a9bc9e227e512577ee26057a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5679613447:2026-09-15T11:44:26Z:re_review",
       "comment_id": "5679613447",
@@ -33697,6 +33650,39 @@
         "kind": "pull_request",
         "branch": "upd/redmain37-pr-fixture-repo-metadata",
         "head_sha": "e1c8eeac5905f71235e2eb441d935503e2894a89",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149287:5684721140:2026-09-15T17:16:14Z:clawsweeper_needs_human",
+      "comment_id": "5684721140",
+      "comment_version_key": "5684721140:2026-09-15T17:16:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149287#issuecomment-5684721140",
+      "comment_created_at": "2026-09-15T17:16:14Z",
+      "comment_updated_at": "2026-09-15T17:16:14Z",
+      "comment_body_sha256": "a786a14b93f2a54b17b4ac9ff4da00dbf0cbfb1ef019b5f8075dc7f822433e25",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149287,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Package-root catalog coverage depends on an unmerged ClawHub companion, which does not backfill existing release summaries; that rollout boundary remains unverified. (sha=86f72f38bc4d923e720197c42668faf0cc3dcb86)",
+      "expected_head_sha": "86f72f38bc4d923e720197c42668faf0cc3dcb86",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T17:17:11.994Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-881-skill-files",
+        "head_sha": "86f72f38bc4d923e720197c42668faf0cc3dcb86",
         "cluster_id": null,
         "job_path": null
       }
