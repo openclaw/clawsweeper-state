@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T01:10:01.915Z",
+  "updated_at": "2026-09-15T01:10:08.615Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148451:5668968909:2026-09-14T18:46:53Z:re_review",
-      "comment_id": "5668968909",
-      "comment_version_key": "5668968909:2026-09-14T18:46:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148451#issuecomment-5668968909",
-      "comment_created_at": "2026-09-14T18:46:53Z",
-      "comment_updated_at": "2026-09-14T18:46:53Z",
-      "comment_body_sha256": "f8cb92d468ba8ed2056d90f026eec0bedb131119fd98461fc36b5c7766145915",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148451,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T18:48:07.239Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/mac-browser-paste",
-        "head_sha": "df6d4dd71e4bded3bdfb856dc5841b9b9b66c15f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148457:5668975012:2026-09-14T18:47:22Z:clawsweeper_needs_human",
       "comment_id": "5668975012",
@@ -33404,6 +33357,39 @@
         "kind": "pull_request",
         "branch": "codex/root-config-resolution-audit",
         "head_sha": "534e8ed661ac2dddcb607e14d49f19091752af38",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148639:5672761026:2026-09-15T01:09:08Z:clawsweeper_needs_human",
+      "comment_id": "5672761026",
+      "comment_version_key": "5672761026:2026-09-15T01:09:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148639#issuecomment-5672761026",
+      "comment_created_at": "2026-09-15T00:23:10Z",
+      "comment_updated_at": "2026-09-15T01:09:08Z",
+      "comment_body_sha256": "3f2a0f2008f3847355c797f9cb580c990185e68a2d1a5608c732bd664aaad473",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148639,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Separately publishing this Codex plugin against an older host could fail on the new SDK imports; publication must honor the documented co-versioned host requirement and synchronized p... (sha=a6581e9993735baa0aaa2626b5217c0455cac4e5)",
+      "expected_head_sha": "a6581e9993735baa0aaa2626b5217c0455cac4e5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T01:10:08.615Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/catalog-phase-diagnostics-20260914",
+        "head_sha": "a6581e9993735baa0aaa2626b5217c0455cac4e5",
         "cluster_id": null,
         "job_path": null
       }
