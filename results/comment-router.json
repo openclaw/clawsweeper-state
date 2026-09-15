@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:51:34.173Z",
+  "updated_at": "2026-09-15T04:53:13.336Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5667200743:2026-09-14T16:25:05Z:re_review",
-      "comment_id": "5667200743",
-      "comment_version_key": "5667200743:2026-09-14T16:25:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5667200743",
-      "comment_created_at": "2026-09-14T16:25:05Z",
-      "comment_updated_at": "2026-09-14T16:25:05Z",
-      "comment_body_sha256": "c24998739ba99ad8d37b8750a94b7e81037c71949a1c24e41ac0d3ef8f487ec1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `c5b0a4a5d3997967e56d0ba4bb407cbc7343eb47`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T01:21:39.559Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148649:5672855329:2026-09-15T01:20:39Z:clawsweeper_auto_repair",
       "comment_id": "5672855329",
@@ -31998,6 +31971,53 @@
       "actions": [
         {
           "action": "merge",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148201:5674917099:2026-09-15T04:52:16Z:re_review",
+      "comment_id": "5674917099",
+      "comment_version_key": "5674917099:2026-09-15T04:52:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148201#issuecomment-5674917099",
+      "comment_created_at": "2026-09-15T04:52:16Z",
+      "comment_updated_at": "2026-09-15T04:52:16Z",
+      "comment_body_sha256": "8fe87a490ebae04964208139bb5f2d8ba2e632362a32a5de1682e1361ec04d40",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148201,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T04:53:10.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/memory-vector-statements-tranche4",
+        "head_sha": "24ead1f90a5b0c7e06e9a6110c57906d8e67da21",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
           "job_path": null
