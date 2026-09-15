@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T18:27:17.230Z",
+  "updated_at": "2026-09-15T18:27:38.467Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148966:5680478601:2026-09-15T12:52:47Z:re_review",
-      "comment_id": "5680478601",
-      "comment_version_key": "5680478601:2026-09-15T12:52:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148966#issuecomment-5680478601",
-      "comment_created_at": "2026-09-15T12:52:47Z",
-      "comment_updated_at": "2026-09-15T12:52:47Z",
-      "comment_body_sha256": "06c9ac712ba66bc23f017a4f9624c05250481cfe7da1992e4e2ad387ea2b495c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148966,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T12:53:44.411Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/tool-description-exclusions-20260915",
-        "head_sha": "deecf6d2cd89151c052723bfb6da443883e6f72e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149084:5680476562:2026-09-15T12:52:38Z:clawsweeper_needs_human",
       "comment_id": "5680476562",
@@ -33607,6 +33560,39 @@
       "status": "skipped",
       "processed_at": "2026-09-15T18:27:17.230Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149320:5685778520:2026-09-15T18:26:35Z:clawsweeper_auto_repair",
+      "comment_id": "5685778520",
+      "comment_version_key": "5685778520:2026-09-15T18:26:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149320#issuecomment-5685778520",
+      "comment_created_at": "2026-09-15T18:26:35Z",
+      "comment_updated_at": "2026-09-15T18:26:35Z",
+      "comment_body_sha256": "86c2252070298847c0f60ccd93ac88e1c7cdac589368ea6fcc0b54028b41e0b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149320,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ea2ac1e9b8208080f11b68a9842a90cd69581ed2)",
+      "expected_head_sha": "ea2ac1e9b8208080f11b68a9842a90cd69581ed2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T18:27:38.467Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/apple-routing-existing-api-20260915",
+        "head_sha": "ea2ac1e9b8208080f11b68a9842a90cd69581ed2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
