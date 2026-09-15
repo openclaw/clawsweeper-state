@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T16:22:48.243Z",
+  "updated_at": "2026-09-15T16:24:20.305Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148962:5677851159:2026-09-15T10:51:57Z:clawsweeper_needs_human",
-      "comment_id": "5677851159",
-      "comment_version_key": "5677851159:2026-09-15T10:51:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148962#issuecomment-5677851159",
-      "comment_created_at": "2026-09-15T09:25:14Z",
-      "comment_updated_at": "2026-09-15T10:51:57Z",
-      "comment_body_sha256": "19a12ecb0d3c496b585f11a8889b3dba1a730c6dc070ae0a20f9e7bb302d20db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148962,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied evidence does not establish that the before/after screenshots also rendered in the originating chat, as required by repository policy. (sha=2ae5afae4acfd7c216d6949692c4f76aee5370cc)",
-      "expected_head_sha": "2ae5afae4acfd7c216d6949692c4f76aee5370cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T10:56:25.562Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gc-outcome-reporting-20260914",
-        "head_sha": "2ae5afae4acfd7c216d6949692c4f76aee5370cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148972:5678130475:2026-09-15T10:51:01Z:clawsweeper_auto_repair",
       "comment_id": "5678130475",
@@ -33580,6 +33547,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawhub:3710:5683935783:2026-09-15T16:23:23Z:re_review",
+      "comment_id": "5683935783",
+      "comment_version_key": "5683935783:2026-09-15T16:23:23Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3710#issuecomment-5683935783",
+      "comment_created_at": "2026-09-15T16:23:23Z",
+      "comment_updated_at": "2026-09-15T16:23:23Z",
+      "comment_body_sha256": "15536f59e890688273a11e4802991fbb1ab52ae917dfe8a12212036a8edb5e7d",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3710,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T16:24:16.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-local-convex-ci-startup",
+        "head_sha": "973484d077809c961c174fa4b9085632000eceb1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
