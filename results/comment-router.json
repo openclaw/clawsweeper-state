@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:38:13.762Z",
+  "updated_at": "2026-09-15T04:38:43.932Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148657:5673111939:2026-09-15T01:07:39Z:automerge",
-      "comment_id": "5673111939",
-      "comment_version_key": "5673111939:2026-09-15T01:07:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148657#issuecomment-5673111939",
-      "comment_created_at": "2026-09-15T01:07:39Z",
-      "comment_updated_at": "2026-09-15T01:07:39Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148657,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:08:28.823Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/testbox-tooling-single-worker",
-        "head_sha": "c9650df10aabae8a8dc097aa724b888e9d6929c0",
-        "cluster_id": "automerge-openclaw-openclaw-148657",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148657.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148657.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148426:5668378931:2026-09-15T01:07:20Z:clawsweeper_needs_human",
       "comment_id": "5668378931",
@@ -32092,6 +32033,39 @@
         "kind": "pull_request",
         "branch": "codex/filename-fallback-20260914",
         "head_sha": "59d3fd4ff760e49ef7718bb1cf86e1ef18f5222a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148290:5666486463:2026-09-15T04:37:05Z:clawsweeper_needs_human",
+      "comment_id": "5666486463",
+      "comment_version_key": "5666486463:2026-09-15T04:37:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148290#issuecomment-5666486463",
+      "comment_created_at": "2026-09-14T15:33:20Z",
+      "comment_updated_at": "2026-09-15T04:37:05Z",
+      "comment_body_sha256": "612bf7dd6223ec0a99d22b167d2716a60407335d0977a2c108101ccbd61a74ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148290,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cached Fleet reads now need temporary space for the entire shared database and can fail during staging where an in-process read previously succeeded. This tradeoff is explicitly accep... (sha=9932375313fecf5e082c156663ebc4b3f919ca28)",
+      "expected_head_sha": "9932375313fecf5e082c156663ebc4b3f919ca28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:38:43.932Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fleet-registry-worker-20260914",
+        "head_sha": "9932375313fecf5e082c156663ebc4b3f919ca28",
         "cluster_id": null,
         "job_path": null
       }
