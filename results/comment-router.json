@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:09:11.989Z",
+  "updated_at": "2026-09-15T13:09:15.745Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/spogo:84:5676546978:2026-09-15T07:37:35Z:clawsweeper_needs_human",
-      "comment_id": "5676546978",
-      "comment_version_key": "5676546978:2026-09-15T07:37:35Z",
-      "comment_url": "https://github.com/openclaw/spogo/pull/84#issuecomment-5676546978",
-      "comment_created_at": "2026-09-15T07:37:35Z",
-      "comment_updated_at": "2026-09-15T07:37:35Z",
-      "comment_body_sha256": "2f07859069fa94a96e960ce70c79e678f2e57450b8f54bf7ea517d0339088b47",
-      "repo": "openclaw/spogo",
-      "issue_number": 84,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a22ff680a380cd0115677156a20c39b303352509)",
-      "expected_head_sha": "a22ff680a380cd0115677156a20c39b303352509",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T07:38:29.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/cli-numeric-boundaries",
-        "head_sha": "a22ff680a380cd0115677156a20c39b303352509",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148051:5660989199:2026-09-15T07:39:06Z:clawsweeper_needs_human",
       "comment_id": "5660989199",
@@ -33850,6 +33817,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5680690815:2026-09-15T13:08:19Z:re_review",
+      "comment_id": "5680690815",
+      "comment_version_key": "5680690815:2026-09-15T13:08:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5680690815",
+      "comment_created_at": "2026-09-15T13:08:19Z",
+      "comment_updated_at": "2026-09-15T13:08:19Z",
+      "comment_body_sha256": "0134ba64f9dfcd8658176ced62c306b266f1c1346b8492852ff57403214b5170",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `526d3a79bc0023620a3a5b993c1793f08c773973`. rebased onto current main to include the landed fixes for the unrelated failing thinking-auth fixtures and model-provider assertions. exact-head local gates are green: `pnpm check:changed`; seven focused ui unit files; the repaired thinking test; and four focused ui e2e files (22 tests), including the pr-owned custody/image cases",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T13:09:13.187Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "526d3a79bc0023620a3a5b993c1793f08c773973",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
