@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149313",
+  "mode": "autonomous",
+  "run_id": "35022689479",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35022689479",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149313.md",
+  "published_at": "2026-09-15T22:17:08.283Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149313",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149313",
+  "canonical_pr": null,
+  "summary": "Confirmed the missing topic identity in source at preflight main 34d493de2cf7fc86a3b44548c6f81ad7a604b2e5. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#149313",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#149313",
+      "candidate_fix": null,
+      "reason": "The non-security bug remains supported by current source. Implementation requires a writable executor to demonstrate the failing receive-handler regression before changing production code."
+    },
+    {
+      "target": "#46778",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical compatibility context; no closure or reopening action is needed."
+    },
+    {
+      "target": "#93449",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the merged contributor work and its retry guarantees."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149313",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149313",
+      "candidate_fix": null,
+      "reason": "A narrow executor-ready plan is available despite the local implementation blocker. Require a failing runtime regression before applying the production fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
