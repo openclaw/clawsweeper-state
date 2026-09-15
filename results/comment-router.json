@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:31:03.703Z",
+  "updated_at": "2026-09-15T03:31:41.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147201:5671124781:2026-09-14T21:34:46Z:re_review",
-      "comment_id": "5671124781",
-      "comment_version_key": "5671124781:2026-09-14T21:34:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147201#issuecomment-5671124781",
-      "comment_created_at": "2026-09-14T21:34:46Z",
-      "comment_updated_at": "2026-09-14T21:34:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147201,
-      "author": "eleqtrizit",
-      "author_id": 31522568,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T21:51:45.263Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "1047",
-        "head_sha": "a69bcd32abad1b6ca9fbd9555e7a04a48132f49c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142470:5590977736:2026-09-14T21:44:32Z:clawsweeper_needs_human",
       "comment_id": "5590977736",
@@ -33560,6 +33513,39 @@
         "kind": "pull_request",
         "branch": "refactor/docker-image-version-parsing",
         "head_sha": "7551b0b94df22255aadf8dd96031fcd37689c129",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148725:5674273966:2026-09-15T03:30:45Z:clawsweeper_needs_human",
+      "comment_id": "5674273966",
+      "comment_version_key": "5674273966:2026-09-15T03:30:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148725#issuecomment-5674273966",
+      "comment_created_at": "2026-09-15T03:30:45Z",
+      "comment_updated_at": "2026-09-15T03:30:45Z",
+      "comment_body_sha256": "4bc8fb630b6a031c38953b40106d1c5f61c35a86c9a4c4bd14d1133ca6b0901b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - End-to-end CPU benefit and small-transcript query-compilation overhead remain unmeasured; the captured evidence also leaves runtime parity validation pending. (sha=56d65719a4abea0b909cec9e422945cb3c831b1d)",
+      "expected_head_sha": "56d65719a4abea0b909cec9e422945cb3c831b1d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T03:31:41.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-transcript-small-reads-cpu-20260915",
+        "head_sha": "56d65719a4abea0b909cec9e422945cb3c831b1d",
         "cluster_id": null,
         "job_path": null
       }
