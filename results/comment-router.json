@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T07:03:40.518Z",
+  "updated_at": "2026-09-15T07:04:25.148Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5674084247:2026-09-15T03:09:56Z:re_review",
-      "comment_id": "5674084247",
-      "comment_version_key": "5674084247:2026-09-15T03:09:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5674084247",
-      "comment_created_at": "2026-09-15T03:09:56Z",
-      "comment_updated_at": "2026-09-15T03:09:56Z",
-      "comment_body_sha256": "0871eb863cee3b6657955fba7e0251ca00ca41773a6b949edbe4aec295fbc385",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `2ea9b59da3170d91184c85fb8a3bfeb9770ee430`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T03:10:59.639Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "2ea9b59da3170d91184c85fb8a3bfeb9770ee430",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148644:5674087197:2026-09-15T03:10:19Z:re_review",
       "comment_id": "5674087197",
@@ -31968,6 +31921,39 @@
         "kind": "pull_request",
         "branch": "codex/temp-workspace-admission-20260914",
         "head_sha": "2be9b71561fa3e15fbc3d88ddceedf6481c099c1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2270:5676172128:2026-09-15T07:03:30Z:clawsweeper_needs_human",
+      "comment_id": "5676172128",
+      "comment_version_key": "5676172128:2026-09-15T07:03:30Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2270#issuecomment-5676172128",
+      "comment_created_at": "2026-09-15T07:03:30Z",
+      "comment_updated_at": "2026-09-15T07:03:30Z",
+      "comment_body_sha256": "5190e3a21c73fbcca1e70c5d18ff3f1801850ee2e129ce31435f5c91580a5f01",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2270,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Required by policy: the recorded not-applicable assessment does not satisfy the current PR proof policy. Put relevant after-change evidence in the main PR body, then request a fresh r... (sha=ee6bf4eccf1db68880db4917a2fe62f7ea52df1b)",
+      "expected_head_sha": "ee6bf4eccf1db68880db4917a2fe62f7ea52df1b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T07:04:25.148Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/release-0.60.0",
+        "head_sha": "ee6bf4eccf1db68880db4917a2fe62f7ea52df1b",
         "cluster_id": null,
         "job_path": null
       }
