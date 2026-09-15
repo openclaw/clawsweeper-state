@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148878"
-mode: "autonomous"
-run_id: "34943188566"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34943188566"
+mode: "plan"
+run_id: "34948753608"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34948753608"
 head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T08:25:30.633Z"
-canonical: "https://github.com/openclaw/openclaw/issues/148878"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/148878"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T08:54:49.664Z"
+canonical: "#148878"
+canonical_issue: "#148878"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34943188566](https://github.com/openclaw/clawsweeper/actions/runs/34943188566)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34948753608](https://github.com/openclaw/clawsweeper/actions/runs/34948753608)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/148878
+Canonical: #148878
 
 ## Summary
 
-Prepared a narrow fix artifact. Source inspection supports the reported repeated validation, but implementation and runtime reproduction are blocked by read-only access. Checkout HEAD also differs from preflight main; current-main verification remains required.
+Plan one narrow performance fix for #148878. Source inspection confirms the reported read loop at preflight main 6be1a9675da07e4f1396daa1f3923abfed8d91b1. No files or GitHub state changed. Runtime reproduction, benchmarks, and implementation validation remain executor prerequisites.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Prepared a narrow fix artifact. Source inspection supports the reported repeated
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148878 | fix_needed | planned | canonical | The reported mechanism remains present in the inspected checkout. Keep this issue as canonical; require reproduction on verified current main before implementing. |
-| #124099 | keep_closed | skipped | related | Historical validation context only; no closure or repair action. |
-| cluster:issue-openclaw-openclaw-148878 | build_fix_artifact | planned |  | Artifact preparation is complete. Local implementation is blocked by the read-only filesystem; verified current-main reproduction must precede any executor patch or PR. |
+| #148878 | fix_needed | planned | canonical | Repair cold session reads through existing per-store facilities while retaining sandbox classification and validation semantics. Require a failing real-entry-point regression before implementation. |
+| #124099 | keep_closed | skipped | related | Historical session-validation context with a different failure mechanism; no reopening or closure action is warranted. |
 
 ## Needs Human
 

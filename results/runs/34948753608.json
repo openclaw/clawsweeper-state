@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148878",
+  "mode": "plan",
+  "run_id": "34948753608",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34948753608",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148878.md",
+  "published_at": "2026-09-15T08:54:49.664Z",
+  "canonical": "#148878",
+  "canonical_issue": "#148878",
+  "canonical_pr": null,
+  "summary": "Plan one narrow performance fix for #148878. Source inspection confirms the reported read loop at preflight main 6be1a9675da07e4f1396daa1f3923abfed8d91b1. No files or GitHub state changed. Runtime reproduction, benchmarks, and implementation validation remain executor prerequisites.",
+  "actions": [
+    {
+      "target": "#148878",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148878",
+      "candidate_fix": null,
+      "reason": "Repair cold session reads through existing per-store facilities while retaining sandbox classification and validation semantics. Require a failing real-entry-point regression before implementation."
+    },
+    {
+      "target": "#124099",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical session-validation context with a different failure mechanism; no reopening or closure action is warranted."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
