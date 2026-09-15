@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T15:12:29.665Z",
+  "updated_at": "2026-09-15T15:14:21.774Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146613:5677747877:2026-09-15T09:17:00Z:re_review",
-      "comment_id": "5677747877",
-      "comment_version_key": "5677747877:2026-09-15T09:17:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146613#issuecomment-5677747877",
-      "comment_created_at": "2026-09-15T09:17:00Z",
-      "comment_updated_at": "2026-09-15T09:17:00Z",
-      "comment_body_sha256": "9206a20ac13679145492a2b2d66912ad53da521e6261554254ff6693966cef0a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146613,
-      "author": "xydigitLybnnnn",
-      "author_id": 280613588,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T09:25:26.486Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/145681-bug-session-stuck-in-running-a",
-        "head_sha": "caf51b3f14c96afdd2c98e55f36e1f2529b04db9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146613:5649898704:2026-09-15T09:23:45Z:clawsweeper_needs_human",
       "comment_id": "5649898704",
@@ -33607,6 +33560,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5682763950:2026-09-15T15:13:10Z:re_review",
+      "comment_id": "5682763950",
+      "comment_version_key": "5682763950:2026-09-15T15:13:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5682763950",
+      "comment_created_at": "2026-09-15T15:13:10Z",
+      "comment_updated_at": "2026-09-15T15:13:10Z",
+      "comment_body_sha256": "9ca91bf4581e1d42e38995225e0dd6e65bf863e15925acb94740d875f7550912",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `13825db35f4`. hosted ci exposed an outdated project-preparation e2e assertion: queued custody now remains in the composer tray and must not fetch authoritative transcript media before canonical promotion. the repaired focused scenario passes locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T15:14:18.953Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "13825db35f44b147c3ce34d1ba3f08b5230444c2",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
