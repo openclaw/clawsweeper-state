@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T22:50:13.510Z",
+  "updated_at": "2026-09-15T22:50:17.303Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149168:5682506996:2026-09-15T17:13:41Z:clawsweeper_needs_human",
-      "comment_id": "5682506996",
-      "comment_version_key": "5682506996:2026-09-15T17:13:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149168#issuecomment-5682506996",
-      "comment_created_at": "2026-09-15T14:57:02Z",
-      "comment_updated_at": "2026-09-15T17:13:41Z",
-      "comment_body_sha256": "89a6e0e1608d5e9d58615dbee7f825b4ec0d4c7a56a48fd7cc2439a41af55256",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149168,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=db5030a5b0be1eb6bed3f8b3fdfe8ee25a93cc50)",
-      "expected_head_sha": "db5030a5b0be1eb6bed3f8b3fdfe8ee25a93cc50",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T17:19:24.145Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/schema-guard-stop-reason-148866",
-        "head_sha": "db5030a5b0be1eb6bed3f8b3fdfe8ee25a93cc50",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149204:5683086107:2026-09-15T17:10:52Z:clawsweeper_auto_repair",
       "comment_id": "5683086107",
@@ -33546,6 +33513,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149416:5688365290:2026-09-15T22:49:24Z:re_review",
+      "comment_id": "5688365290",
+      "comment_version_key": "5688365290:2026-09-15T22:49:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149416#issuecomment-5688365290",
+      "comment_created_at": "2026-09-15T21:30:50Z",
+      "comment_updated_at": "2026-09-15T22:49:24Z",
+      "comment_body_sha256": "37a9e43b55ec381f54ff1a33ea608754dd95ff01e25df36db24920861daa42a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149416,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T22:50:15.314Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-chat-error-presentation-owner-ready",
+        "head_sha": "8e18741fe099b936707fe22d0aa5db5cd8085488",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
