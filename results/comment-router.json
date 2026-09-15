@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T18:06:35.280Z",
+  "updated_at": "2026-09-15T18:07:10.265Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137828:5534943296:2026-09-15T12:27:35Z:clawsweeper_needs_human",
-      "comment_id": "5534943296",
-      "comment_version_key": "5534943296:2026-09-15T12:27:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137828#issuecomment-5534943296",
-      "comment_created_at": "2026-09-04T02:47:10Z",
-      "comment_updated_at": "2026-09-15T12:27:35Z",
-      "comment_body_sha256": "cef6212e94658797f608895e3da660cf56e2883647438b8a5fc4a2c40687b7b5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137828,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=770dc2529473e50b10fa0d7c4077cbae30eba2b0)",
-      "expected_head_sha": "770dc2529473e50b10fa0d7c4077cbae30eba2b0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T12:37:42.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/paired-worker-final-46d1cd",
-        "head_sha": "770dc2529473e50b10fa0d7c4077cbae30eba2b0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148917:5677240449:2026-09-15T12:27:39Z:clawsweeper_needs_human",
       "comment_id": "5677240449",
@@ -33617,6 +33584,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138070:5685464912:2026-09-15T18:06:10Z:re_review",
+      "comment_id": "5685464912",
+      "comment_version_key": "5685464912:2026-09-15T18:06:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138070#issuecomment-5685464912",
+      "comment_created_at": "2026-09-15T18:06:10Z",
+      "comment_updated_at": "2026-09-15T18:06:10Z",
+      "comment_body_sha256": "f18c8ae5a250fb623e6eeb1f295da31ab2e17c6e615f6fd012327661d11242f0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138070,
+      "author": "Patrick-Erichsen",
+      "author_id": 20157849,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review: final66b44619d88e retains immediate remembered-session presentation, fences stale reconnect changes and preserves retry after rejected validation. both lifecycle failures reproduced before repair; final127 tests, full changed checks and clean p2 review. real pty screenshots embedded and verified rendering. prior platinum review is older than12hours",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T18:07:08.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tui-remembered-session-provisional-label-134154",
+        "head_sha": "66b44619d88e1598b97881718925ccd008d860f9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
