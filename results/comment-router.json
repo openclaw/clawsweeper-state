@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T11:43:58.339Z",
+  "updated_at": "2026-09-15T11:43:59.692Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:114199:5675583249:2026-09-15T06:09:20Z:re_review",
-      "comment_id": "5675583249",
-      "comment_version_key": "5675583249:2026-09-15T06:09:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/114199#issuecomment-5675583249",
-      "comment_created_at": "2026-09-15T06:09:20Z",
-      "comment_updated_at": "2026-09-15T06:09:20Z",
-      "comment_body_sha256": "bac686e6be0618aafe7c175a121a78c9ca87fd2f41d091b4c7d7d4a6cd7171ee",
-      "repo": "openclaw/openclaw",
-      "issue_number": 114199,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T06:10:13.674Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "qa-laptop-qa02-c66ca2f",
-        "head_sha": "9cc9e12ea47b140f6bc85ebf1594c9a5ce95569d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147054:5675522862:2026-09-15T06:03:02Z:re_review",
       "comment_id": "5675522862",
@@ -33755,6 +33708,39 @@
         "kind": "pull_request",
         "branch": "cleanup/wave21-config-audit-matrices",
         "head_sha": "5ddaf96c62fadcfa9b09f9376a41b5aafa0c1984",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149002:5678752838:2026-09-15T11:42:56Z:clawsweeper_needs_human",
+      "comment_id": "5678752838",
+      "comment_version_key": "5678752838:2026-09-15T11:42:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149002#issuecomment-5678752838",
+      "comment_created_at": "2026-09-15T10:33:55Z",
+      "comment_updated_at": "2026-09-15T11:42:56Z",
+      "comment_body_sha256": "e6a4abdc81c7b2f58214221577469a300514226c02c38188b4f5c304020e1c13",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149002,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6a2f7e84a7eb09b98adcdba9f6537d341cb2558b)",
+      "expected_head_sha": "6a2f7e84a7eb09b98adcdba9f6537d341cb2558b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T11:43:59.692Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-tool-summary-focus-ring",
+        "head_sha": "ac4b7f87b3452962da6c5a1d6ab340ad0c03b264",
         "cluster_id": null,
         "job_path": null
       }
