@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T01:50:18.115Z",
+  "updated_at": "2026-09-15T01:50:38.511Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147462:5656423629:2026-09-14T19:23:11Z:clawsweeper_needs_human",
-      "comment_id": "5656423629",
-      "comment_version_key": "5656423629:2026-09-14T19:23:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147462#issuecomment-5656423629",
-      "comment_created_at": "2026-09-13T21:56:15Z",
-      "comment_updated_at": "2026-09-14T19:23:11Z",
-      "comment_body_sha256": "7055c3adac16c03f94f572d622696e4017d8db6246ca1dbe9b73ae3d134042ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147462,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=af566a27dc698ded875d42398644e74caec013ba)",
-      "expected_head_sha": "af566a27dc698ded875d42398644e74caec013ba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T19:44:14.891Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-position-rail-stable-anchor",
-        "head_sha": "af566a27dc698ded875d42398644e74caec013ba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148214:5663540005:2026-09-14T19:36:49Z:clawsweeper_needs_human",
       "comment_id": "5663540005",
@@ -33491,6 +33458,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148348:5673444304:2026-09-15T01:49:30Z:re_review",
+      "comment_id": "5673444304",
+      "comment_version_key": "5673444304:2026-09-15T01:49:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148348#issuecomment-5673444304",
+      "comment_created_at": "2026-09-15T01:49:30Z",
+      "comment_updated_at": "2026-09-15T01:49:30Z",
+      "comment_body_sha256": "ea377a374d6735ab654c2814863e845e9fe08595f227aec841c3adce35cc37ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148348,
+      "author": "ryannikolaidis",
+      "author_id": 1208590,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T01:50:36.607Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "workboard-dispatch-stale-guardrails",
+        "head_sha": "12257f70dff94144d251a9d97f1fece2e1da01fc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
