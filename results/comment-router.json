@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-15T08:29:53.978Z",
+  "updated_at": "2026-09-15T08:30:25.582Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:112375:5313426520:2026-08-17T08:04:47Z:re_review",
-      "comment_id": "5313426520",
-      "comment_version_key": "5313426520:2026-08-17T08:04:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112375#issuecomment-5313426520",
-      "comment_created_at": "2026-08-17T08:04:47Z",
-      "comment_updated_at": "2026-08-17T08:04:47Z",
-      "comment_body_sha256": "e18ad622c0802a1549f5bc28f8b06b83036de74c0d977a3e4c3a2741d5d4f058",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112375,
-      "author": "Bartok9",
-      "author_id": 259807879,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T04:12:03.427Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:112375:5313500625:2026-08-17T08:12:33Z:re_review",
       "comment_id": "5313500625",
@@ -32422,6 +32395,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:231:5660738864:2026-09-15T08:29:09Z:clawsweeper_needs_human",
+      "comment_id": "5660738864",
+      "comment_version_key": "5660738864:2026-09-15T08:29:09Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/231#issuecomment-5660738864",
+      "comment_created_at": "2026-09-14T07:49:31Z",
+      "comment_updated_at": "2026-09-15T08:29:09Z",
+      "comment_body_sha256": "209d3c9408c8756bce3d614dba01c6d9eff2a6c4e655e900bfbef04638dc17c2",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 231,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The accepted upgrade behavior stops operations on missing/null collections or successful authentication without a workspace identity; affected credentials require workspace-scoped rep... (sha=d53bc9868597b8793079d156d310aa6465cd5dce)",
+      "expected_head_sha": "d53bc9868597b8793079d156d310aa6465cd5dce",
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-15T08:30:25.582Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/api-native-page-success",
+        "head_sha": "d53bc9868597b8793079d156d310aa6465cd5dce",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
