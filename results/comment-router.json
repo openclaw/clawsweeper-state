@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T02:53:06.150Z",
+  "updated_at": "2026-09-15T02:55:05.271Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148102:5670899662:2026-09-14T21:14:16Z:re_review",
-      "comment_id": "5670899662",
-      "comment_version_key": "5670899662:2026-09-14T21:14:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148102#issuecomment-5670899662",
-      "comment_created_at": "2026-09-14T21:14:16Z",
-      "comment_updated_at": "2026-09-14T21:14:16Z",
-      "comment_body_sha256": "8e3303093f32e379c914b2df2328d35e4d039bfe6571886c653765ca6728a729",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148102,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T21:15:17.003Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-hook-locator-worker",
-        "head_sha": "6b256304e5a2f9b6c7d42df697fa88b0fe948bdf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147795:5658572629:2026-09-14T21:06:14Z:clawsweeper_needs_human",
       "comment_id": "5658572629",
@@ -33513,6 +33466,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148175:5673953495:2026-09-15T02:54:13Z:automerge",
+      "comment_id": "5673953495",
+      "comment_version_key": "5673953495:2026-09-15T02:54:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148175#issuecomment-5673953495",
+      "comment_created_at": "2026-09-15T02:54:13Z",
+      "comment_updated_at": "2026-09-15T02:54:13Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148175,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-15T02:54:57.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-service-retention",
+        "head_sha": "5699742d73082add60859bfea0c6ce07fbdd6faf",
+        "cluster_id": "automerge-openclaw-openclaw-148175",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148175.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
