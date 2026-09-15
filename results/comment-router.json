@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T22:40:24.046Z",
+  "updated_at": "2026-09-15T22:42:27.604Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3702:5683386846:2026-09-15T16:57:39Z:clawsweeper_needs_human",
-      "comment_id": "5683386846",
-      "comment_version_key": "5683386846:2026-09-15T16:57:39Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3702#issuecomment-5683386846",
-      "comment_created_at": "2026-09-15T15:50:12Z",
-      "comment_updated_at": "2026-09-15T16:57:39Z",
-      "comment_body_sha256": "9f927878f5a6e71fa213a38e96ac0bc49ff9a626b013f70fcc04a52d122f6282",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3702,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1471625d697524b50999a13120a0b3d468d26e51)",
-      "expected_head_sha": "1471625d697524b50999a13120a0b3d468d26e51",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T17:01:26.777Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-881-root-skill-metadata",
-        "head_sha": "1471625d697524b50999a13120a0b3d468d26e51",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:224:5652996264:2026-09-15T17:01:01Z:clawsweeper_needs_human",
       "comment_id": "5652996264",
@@ -33596,6 +33563,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149473:5689064945:2026-09-15T22:41:27Z:re_review",
+      "comment_id": "5689064945",
+      "comment_version_key": "5689064945:2026-09-15T22:41:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149473#issuecomment-5689064945",
+      "comment_created_at": "2026-09-15T22:41:27Z",
+      "comment_updated_at": "2026-09-15T22:41:27Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149473,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T22:42:25.735Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-test-runtime-determinism",
+        "head_sha": "7d1668cb19d39a7e2b014d741ad514c262300377",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
