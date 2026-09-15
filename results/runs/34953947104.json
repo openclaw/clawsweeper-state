@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148898",
+  "mode": "plan",
+  "run_id": "34953947104",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34953947104",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148898.md",
+  "published_at": "2026-09-15T09:49:27.427Z",
+  "canonical": "#148898",
+  "canonical_issue": "#148898",
+  "canonical_pr": null,
+  "summary": "Plan one focused fix for #148898. The inspected checkout matches preflight main 140ae96507aed5c58ae6c51e13cfc623c85d157a and retains the reported wall-clock silence calculation. No code or GitHub changes were made. Regression execution and macOS sleep/wake proof remain pending.",
+  "actions": [
+    {
+      "target": "#148898",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148898",
+      "candidate_fix": null,
+      "reason": "A narrow timing-accounting repair fits the authorized bug-only scope. Preserve this issue and create one implementation PR only after reproducing the defect."
+    },
+    {
+      "target": "#40982",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#148898",
+      "candidate_fix": null,
+      "reason": "Changing the silence allowance is distinct from excluding host-freeze time. Retain this separate policy discussion without expanding the repair."
+    },
+    {
+      "target": "#142459",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#148898",
+      "candidate_fix": null,
+      "reason": "The timeout symptom overlaps, but a shared root cause is not established. This requires independent runtime diagnosis."
+    },
+    {
+      "target": "#71803",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#148898",
+      "candidate_fix": null,
+      "reason": "Historical context about outstanding-work grace; no closure or reopening is planned."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
