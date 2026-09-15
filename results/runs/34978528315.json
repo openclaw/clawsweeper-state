@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149064",
+  "mode": "plan",
+  "run_id": "34978528315",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34978528315",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149064.md",
+  "published_at": "2026-09-15T14:05:07.893Z",
+  "canonical": "#149064",
+  "canonical_issue": "#149064",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported source defect at preflight main 1260863645b989f6e33a788489f69d8bf29bc87b. Plan one Discord-owned fix PR for #149064. No files or GitHub state changed; regression tests and live CLI validation remain pending.",
+  "actions": [
+    {
+      "target": "#149064",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149064",
+      "candidate_fix": null,
+      "reason": "Restore the documented exact-message behavior within the existing read action and authorization owner."
+    },
+    {
+      "target": "#81232",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149064",
+      "candidate_fix": null,
+      "reason": "Related exact-message retrieval need, but restoring an existing CLI flag does not fulfill the requested new public capability."
+    },
+    {
+      "target": "#81243",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical feature proposal, not an active repair candidate for the existing read flag."
+    },
+    {
+      "target": "#81272",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical feature proposal; no closure or replacement action is needed."
+    },
+    {
+      "target": "#144914",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route only this item to central OpenClaw security handling, without public mutations or incorporating its changes into #149064."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
