@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T22:03:29.886Z",
+  "updated_at": "2026-09-15T22:03:51.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5683999020:2026-09-15T16:27:36Z:re_review",
-      "comment_id": "5683999020",
-      "comment_version_key": "5683999020:2026-09-15T16:27:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5683999020",
-      "comment_created_at": "2026-09-15T16:27:36Z",
-      "comment_updated_at": "2026-09-15T16:27:36Z",
-      "comment_body_sha256": "c92953fa61ecf06aa74fb9beb07f04c89f6f79d353452e2b0157c819907a35e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `7c6758323a06cb8d12febf17238f80a2e78c770c`. repaired the actionable image-handoff proof defect with stage-specific readiness targets: submitted and canonical image stages wait on the image, queued custody waits on its read-only composer row, metadata loading waits on the canonical bubble, and final cleanup no longer waits on an absent transcript image. both receipt-first and event-first cases pass with `openclaw_capture_ui_proof=1`; `pnpm check:changed` is green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T16:30:36.237Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "ed33a91d95b3324f494029bf042e48ac858e8e39",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149226:5683388215:2026-09-15T16:30:08Z:clawsweeper_needs_human",
       "comment_id": "5683388215",
@@ -33587,6 +33540,39 @@
         "kind": "pull_request",
         "branch": "feat/session-agent-shell",
         "head_sha": "19109030f98c7b3164d5f7a225fdb72ce1236b5e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/gitcrawl:206:5688362273:2026-09-15T21:53:35Z:clawsweeper_auto_repair",
+      "comment_id": "5688362273",
+      "comment_version_key": "5688362273:2026-09-15T21:53:35Z",
+      "comment_url": "https://github.com/openclaw/gitcrawl/pull/206#issuecomment-5688362273",
+      "comment_created_at": "2026-09-15T21:30:34Z",
+      "comment_updated_at": "2026-09-15T21:53:35Z",
+      "comment_body_sha256": "fb391ca136a1d03a1bdba0179df6fac6a75c305d5272ae4d3ecd76f1528f8b84",
+      "repo": "openclaw/gitcrawl",
+      "issue_number": 206,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=abc138ccf487b51c6d7e7969a59d2ee54890f437)",
+      "expected_head_sha": "abc138ccf487b51c6d7e7969a59d2ee54890f437",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-15T22:03:51.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/metrics-collection",
+        "head_sha": "abc138ccf487b51c6d7e7969a59d2ee54890f437",
         "cluster_id": null,
         "job_path": null
       }
