@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-148837",
+  "mode": "plan",
+  "run_id": "34953952092",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34953952092",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-148837.md",
+  "published_at": "2026-09-15T10:19:02.524Z",
+  "canonical": "#148837",
+  "canonical_issue": "#148837",
+  "canonical_pr": null,
+  "summary": "Plan a narrow recovery fix for #148837, contingent on current-main reproduction in secretless isolation. Checkout matches preflight main 77124fdbd35b2e907c6f6c1729f89825dc99cea0. No changes or tests performed; required sibling Codex source is absent. Route #128410 separately to security handling.",
+  "actions": [
+    {
+      "target": "#148837",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#148837",
+      "candidate_fix": null,
+      "reason": "Distinct ordinary recovery bug with a bounded proposed repair. Reproduction and upstream lifecycle verification remain prerequisites; refresh contributor PR state before creating overlapping work."
+    },
+    {
+      "target": "#128410",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer this exact item to central OpenClaw security handling without public mutation. Its authority redesign is excluded from #148837."
+    },
+    {
+      "target": "#142502",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#148837",
+      "candidate_fix": null,
+      "reason": "Different failure stage and unresolved root cause; recovery work does not establish coverage of the tool stall."
+    },
+    {
+      "target": "#138835",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#148837",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or reopening proposed."
+    },
+    {
+      "target": "#139246",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#148837",
+      "candidate_fix": null,
+      "reason": "Merged continuation repair is historical context, not a candidate fix for the remaining unload-recovery failure."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-148837"
-mode: "autonomous"
-run_id: "34950196980"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34950196980"
+mode: "plan"
+run_id: "34953952092"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/34953952092"
 head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T10:16:08.267Z"
-canonical: "https://github.com/openclaw/openclaw/issues/148837"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/148837"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T10:19:02.524Z"
+canonical: "#148837"
+canonical_issue: "#148837"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/34950196980](https://github.com/openclaw/clawsweeper/actions/runs/34950196980)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/34953952092](https://github.com/openclaw/clawsweeper/actions/runs/34953952092)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/148837
+Canonical: #148837
 
 ## Summary
 
-Prepared a narrow fix plan against preflight main b818f745cc92ac058f7c5d10137dc794e5a9a9c0. Implementation and required reproduction are blocked: this host is read-only, dependencies are absent, and ../codex is missing. No files or GitHub state changed.
+Plan a narrow recovery fix for #148837, contingent on current-main reproduction in secretless isolation. Checkout matches preflight main 77124fdbd35b2e907c6f6c1729f89825dc99cea0. No changes or tests performed; required sibling Codex source is absent. Route #128410 separately to security handling.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Prepared a narrow fix plan against preflight main b818f745cc92ac058f7c5d10137dc7
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #148837 | fix_needed | planned | canonical | The hydrated report and inspected source support a distinct remaining recovery bug. A native failing regression is required before implementation or PR publication. |
-| #128410 | route_security | planned | security_sensitive | Refer this exact boundary decision to central OpenClaw security handling without public mutation or incorporating its authority changes into this repair. |
-| #138835 | keep_closed | skipped | related | Historical evidence only. |
-| #139246 | keep_closed | skipped | related | The merged continuation repair is not a candidate fix for this remaining recovery path. |
-| #142502 | keep_related | planned | related | Distinct unresolved handoff failure; configuration-refresh recovery does not prove it fixed. |
-| cluster:issue-openclaw-openclaw-148837 | build_fix_artifact | planned | canonical | Return the authorized preparation artifact without claiming a validated patch or authorizing publication before reproduction. |
+| #148837 | fix_needed | planned | canonical | Distinct ordinary recovery bug with a bounded proposed repair. Reproduction and upstream lifecycle verification remain prerequisites; refresh contributor PR state before creating overlapping work. |
+| #128410 | route_security | planned | security_sensitive | Refer this exact item to central OpenClaw security handling without public mutation. Its authority redesign is excluded from #148837. |
+| #142502 | keep_related | planned | related | Different failure stage and unresolved root cause; recovery work does not establish coverage of the tool stall. |
+| #138835 | keep_closed | skipped | related | Historical context only; no closure or reopening proposed. |
+| #139246 | keep_closed | skipped | related | Merged continuation repair is historical context, not a candidate fix for the remaining unload-recovery failure. |
 
 ## Needs Human
 
