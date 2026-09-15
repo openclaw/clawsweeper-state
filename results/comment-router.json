@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T00:13:51.282Z",
+  "updated_at": "2026-09-15T00:13:59.277Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-14T18:00:36Z:clawsweeper_needs_human",
-      "comment_id": "5611675668",
-      "comment_version_key": "5611675668:2026-09-14T18:00:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143610#issuecomment-5611675668",
-      "comment_created_at": "2026-09-10T02:19:14Z",
-      "comment_updated_at": "2026-09-14T18:00:36Z",
-      "comment_body_sha256": "e5bfe6949d1ea64a6e80319c599f1888b87a2d9ea5d6cdb66488f824bb01164f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143610,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the iOS router, binding, and transport retain account authority across awaits and chat teardown, but t...; Review finding: [medium] Retained native account authority remains unqualified — apps/ios/Sources/Model/IOSNativeActionBinding.swift:57 (sha=f95eb9321c33119ae0ddca2857fb994a3e8f5504)",
-      "expected_head_sha": "f95eb9321c33119ae0ddca2857fb994a3e8f5504",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T18:01:52.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/ios-conversation-actions-20260909",
-        "head_sha": "f95eb9321c33119ae0ddca2857fb994a3e8f5504",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148400:5668423265:2026-09-14T18:03:14Z:clawsweeper_auto_repair",
       "comment_id": "5668423265",
@@ -33405,6 +33372,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142692:5672657167:2026-09-15T00:12:53Z:re_review",
+      "comment_id": "5672657167",
+      "comment_version_key": "5672657167:2026-09-15T00:12:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142692#issuecomment-5672657167",
+      "comment_created_at": "2026-09-15T00:12:53Z",
+      "comment_updated_at": "2026-09-15T00:12:53Z",
+      "comment_body_sha256": "ab70bb8e17fc1475a9d39819e6b597237cb0122cbab236492e1c28bd5c069a7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142692,
+      "author": "chelsealong",
+      "author_id": 14966750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T00:13:56.961Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/meeting-consult-stale-root-admission",
+        "head_sha": "6b739765df4e106f7a3dbc77a8912c205a64ba37",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
