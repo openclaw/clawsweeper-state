@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T08:40:34.568Z",
+  "updated_at": "2026-09-15T08:40:48.355Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148756:5674615313:2026-09-15T04:12:15Z:clawsweeper_needs_human",
-      "comment_id": "5674615313",
-      "comment_version_key": "5674615313:2026-09-15T04:12:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148756#issuecomment-5674615313",
-      "comment_created_at": "2026-09-15T04:12:15Z",
-      "comment_updated_at": "2026-09-15T04:12:15Z",
-      "comment_body_sha256": "2efd576c333b3d75802483642b14afb59a709b767d594360983e8512900c4b4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148756,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required before/after screenshot delivery in the originating chat remains unverified. (sha=d409805d2a18f5c248b10c689be3e74ca1b97981)",
-      "expected_head_sha": "d409805d2a18f5c248b10c689be3e74ca1b97981",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T04:13:12.552Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "bugloop/executing-model-local-display",
-        "head_sha": "d409805d2a18f5c248b10c689be3e74ca1b97981",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148733:5674371457:2026-09-15T04:12:22Z:clawsweeper_needs_human",
       "comment_id": "5674371457",
@@ -32783,6 +32750,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/slacrawl:228:5677282349:2026-09-15T08:39:44Z:re_review",
+      "comment_id": "5677282349",
+      "comment_version_key": "5677282349:2026-09-15T08:39:44Z",
+      "comment_url": "https://github.com/openclaw/slacrawl/pull/228#issuecomment-5677282349",
+      "comment_created_at": "2026-09-15T08:39:44Z",
+      "comment_updated_at": "2026-09-15T08:39:44Z",
+      "comment_body_sha256": "7833d12d8dab08c43b7f4c8ca31a906f242502bbb6ab43f800a98995ebca9bc3",
+      "repo": "openclaw/slacrawl",
+      "issue_number": 228,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T08:40:46.043Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/export-verified-bytes",
+        "head_sha": "50331bea9388b223157b06096ea680328270884b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
