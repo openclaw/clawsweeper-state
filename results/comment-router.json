@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T08:14:47.400Z",
+  "updated_at": "2026-09-15T08:14:58.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148187:5674583663:2026-09-15T04:08:05Z:re_review",
-      "comment_id": "5674583663",
-      "comment_version_key": "5674583663:2026-09-15T04:08:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148187#issuecomment-5674583663",
-      "comment_created_at": "2026-09-15T04:08:05Z",
-      "comment_updated_at": "2026-09-15T04:08:05Z",
-      "comment_body_sha256": "e80662d2f776258cd9d3b7398a4d4a607e7c14f55902776ea9c5c9d6524ff673",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148187,
-      "author": "slzszyt-ux",
-      "author_id": 264127039,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T04:08:58.906Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/browser-panel-viewport-scale",
-        "head_sha": "cd87c1faf707398f01600f9c4a06b97d239a5019",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/slacrawl:208:5654857742:2026-09-15T04:08:17Z:clawsweeper_needs_human",
       "comment_id": "5654857742",
@@ -32177,6 +32130,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148851:5676124260:2026-09-15T08:14:10Z:clawsweeper_needs_human",
+      "comment_id": "5676124260",
+      "comment_version_key": "5676124260:2026-09-15T08:14:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148851#issuecomment-5676124260",
+      "comment_created_at": "2026-09-15T06:58:47Z",
+      "comment_updated_at": "2026-09-15T08:14:10Z",
+      "comment_body_sha256": "b5bfb05a8b80a0af41f0a4decab5549a32d0679f50d29edf637c482683fa0eb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148851,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The rebased acceptance run exposes an unresolved Doctor/rollback failure outside the newly eligible pristine-state path; the successful earlier upgrade cell does not establish full cu... (sha=19d446741eda0ffebec463c525b4f41dc1575b44)",
+      "expected_head_sha": "19d446741eda0ffebec463c525b4f41dc1575b44",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T08:14:58.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pristine-mdns-startup",
+        "head_sha": "19d446741eda0ffebec463c525b4f41dc1575b44",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
