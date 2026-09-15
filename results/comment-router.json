@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:43:49.111Z",
+  "updated_at": "2026-09-15T13:44:17.807Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:134665:5676955893:2026-09-15T08:12:27Z:re_review",
-      "comment_id": "5676955893",
-      "comment_version_key": "5676955893:2026-09-15T08:12:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134665#issuecomment-5676955893",
-      "comment_created_at": "2026-09-15T08:12:27Z",
-      "comment_updated_at": "2026-09-15T08:12:27Z",
-      "comment_body_sha256": "693bc77146e80cae8ae00c6df76b111e538a14cac351660cc3953e3fd15dcb4d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134665,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T08:13:13.320Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/plugin-restart-result",
-        "head_sha": "c7c7cc50ca5eb5f2869117197bd5ccb60a8008a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143610:5611675668:2026-09-15T08:11:38Z:clawsweeper_needs_human",
       "comment_id": "5611675668",
@@ -33741,6 +33694,39 @@
         "kind": "pull_request",
         "branch": "upd/triage-false-repair-148896",
         "head_sha": "82d510757dbbef8e6570b9252cb512307b54c990",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:369:5670115920:2026-09-15T13:42:56Z:clawsweeper_needs_human",
+      "comment_id": "5670115920",
+      "comment_version_key": "5670115920:2026-09-15T13:42:56Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/369#issuecomment-5670115920",
+      "comment_created_at": "2026-09-14T20:08:53Z",
+      "comment_updated_at": "2026-09-15T13:42:56Z",
+      "comment_body_sha256": "632becaee51f4841f3d90a0bfe686ba123844a7cc2fd929f4e6c0b0b874860a9",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 369,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: readSecureFile now admits the effective owner, but the captured body leaves real split-credential exec... (sha=83cb9e36d3b2c5726ab57bcb3489f2848ab5d758)",
+      "expected_head_sha": "83cb9e36d3b2c5726ab57bcb3489f2848ab5d758",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T13:44:17.807Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/effective-uid-20260914",
+        "head_sha": "83cb9e36d3b2c5726ab57bcb3489f2848ab5d758",
         "cluster_id": null,
         "job_path": null
       }
