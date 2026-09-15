@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T19:24:43.970Z",
+  "updated_at": "2026-09-15T19:24:56.039Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149134:5681548544:2026-09-15T14:06:26Z:re_review",
-      "comment_id": "5681548544",
-      "comment_version_key": "5681548544:2026-09-15T14:06:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149134#issuecomment-5681548544",
-      "comment_created_at": "2026-09-15T14:06:26Z",
-      "comment_updated_at": "2026-09-15T14:06:26Z",
-      "comment_body_sha256": "e80d6718e09f710d8661aca3c7ff929ca69be6ebc039defd458751fdd6229edd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149134,
-      "author": "stackingrockss",
-      "author_id": 14251636,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T14:07:29.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-preserve-resume-149119",
-        "head_sha": "2d0e54e9ce2437e0ec7852b631609a1b50319691",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149047:5681566827:2026-09-15T14:07:34Z:re_review",
       "comment_id": "5681566827",
@@ -33522,6 +33475,39 @@
         "kind": "pull_request",
         "branch": "fix/model-diagnostic-terminal-truthfulness-127538",
         "head_sha": "0bcb9ae8fc99f0bb54ae9a91bcead318ca68f135",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149351:5686559556:2026-09-15T19:23:46Z:clawsweeper_auto_repair",
+      "comment_id": "5686559556",
+      "comment_version_key": "5686559556:2026-09-15T19:23:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149351#issuecomment-5686559556",
+      "comment_created_at": "2026-09-15T19:09:52Z",
+      "comment_updated_at": "2026-09-15T19:23:46Z",
+      "comment_body_sha256": "8c331d226130e8c1430402cfd5afdbee6a355660aac3da0045858ad1f1120241",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149351,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=b158d83b52462d223047fb437d72dfa9c0fbda8f)",
+      "expected_head_sha": "b158d83b52462d223047fb437d72dfa9c0fbda8f",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-15T19:24:56.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-annotations-polish",
+        "head_sha": "b158d83b52462d223047fb437d72dfa9c0fbda8f",
         "cluster_id": null,
         "job_path": null
       }
