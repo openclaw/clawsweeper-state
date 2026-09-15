@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:46:40.287Z",
+  "updated_at": "2026-09-15T13:47:33.375Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/slacrawl:227:5676970637:2026-09-15T08:13:44Z:re_review",
-      "comment_id": "5676970637",
-      "comment_version_key": "5676970637:2026-09-15T08:13:44Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/227#issuecomment-5676970637",
-      "comment_created_at": "2026-09-15T08:13:44Z",
-      "comment_updated_at": "2026-09-15T08:13:44Z",
-      "comment_body_sha256": "7a0446cc2a7b828eb35637c63983e583ae47583ee3f6f1cdb1593d2123c9d7f1",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 227,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T08:14:43.872Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/export-offline-cli",
-        "head_sha": "08421240dec4e0831b3d2a0eb42c7f1c446ccb18",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148851:5676124260:2026-09-15T08:14:10Z:clawsweeper_needs_human",
       "comment_id": "5676124260",
@@ -33727,6 +33680,39 @@
         "kind": "pull_request",
         "branch": "fix/teams-current-target",
         "head_sha": "44ede692341545501ebe062795a1209f9d24b137",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149067:5680204882:2026-09-15T13:46:33Z:clawsweeper_needs_human",
+      "comment_id": "5680204882",
+      "comment_version_key": "5680204882:2026-09-15T13:46:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149067#issuecomment-5680204882",
+      "comment_created_at": "2026-09-15T12:32:11Z",
+      "comment_updated_at": "2026-09-15T13:46:33Z",
+      "comment_body_sha256": "d59d07dec64f88f8a8e8a2e933d470c6edbab75b697ac4edcd2ac6083f132fb7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Three frequently executed scalar statements now compete with other queries in the existing 32-entry cache; fewer explicit prepare calls do not establish a net CPU or memory benefit. (sha=d7f6bcb35d53e610024f4f265a6e1bd17bf0a046)",
+      "expected_head_sha": "d7f6bcb35d53e610024f4f265a6e1bd17bf0a046",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T13:47:33.375Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/sqlite-scalar-statement-reuse-20260915",
+        "head_sha": "d7f6bcb35d53e610024f4f265a6e1bd17bf0a046",
         "cluster_id": null,
         "job_path": null
       }
