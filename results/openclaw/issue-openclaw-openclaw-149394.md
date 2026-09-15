@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-149394"
-mode: "autonomous"
-run_id: "35020665772"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35020665772"
-head_sha: "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-15T21:36:47.767Z"
-canonical: "https://github.com/openclaw/openclaw/issues/149394"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/149394"
+mode: "plan"
+run_id: "35028928360"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35028928360"
+head_sha: "9d984f1259333dcc67c3689f467e04a254c30cff"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-15T22:20:04.687Z"
+canonical: "#149394"
+canonical_issue: "#149394"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35020665772](https://github.com/openclaw/clawsweeper/actions/runs/35020665772)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35028928360](https://github.com/openclaw/clawsweeper/actions/runs/35028928360)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/149394
+Canonical: #149394
 
 ## Summary
 
-Confirmed current-main rejection propagation through the status boundary using an injected probe failure. Prepared a narrow fix plan. Implementation, regression tests, and CLI proof are blocked by the read-only checkout and absent dependencies/build output. No files or GitHub state changed.
+Plan a focused status-boundary fix for #149394. The inspected checkout matches preflight main 0f0b61a5f575c91e9515b048c421ed3464660934 and retains the reported error propagation. No changes, runtime reproduction, tests, or GitHub mutations were performed; implementation requires a failing regression first.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed current-main rejection propagation through the status boundary using a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #149394 | fix_needed | blocked | canonical | Implementation requires a writable isolated checkout with dependencies. Host permissions prohibit edits, installation, and build artifacts; no validated PR branch exists. |
-| #139082 | keep_related | planned | related | Separate lifecycle failure; preserve its existing investigation. |
-| #142452 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-149394 | build_fix_artifact | planned | canonical | A narrow non-security repair remains appropriate; preparation can proceed independently of this worker's filesystem restrictions. |
+| #149394 | fix_needed | planned | canonical | An optional update-information failure should not suppress the status report. Establish a failing current-main regression before implementing the attached plan. |
+| #139082 | keep_related | planned | related | Restart verification is separate from optional Git discovery during status collection; retain this report for its own investigation. |
+| #142452 | keep_closed | skipped | related | Historical context only; no closure or implementation action is warranted. |
 
 ## Needs Human
 
