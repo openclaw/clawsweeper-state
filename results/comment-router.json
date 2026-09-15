@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:17:51.611Z",
+  "updated_at": "2026-09-15T17:17:54.313Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149007:5679638875:2026-09-15T11:46:36Z:re_review",
-      "comment_id": "5679638875",
-      "comment_version_key": "5679638875:2026-09-15T11:46:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149007#issuecomment-5679638875",
-      "comment_created_at": "2026-09-15T11:46:36Z",
-      "comment_updated_at": "2026-09-15T11:46:36Z",
-      "comment_body_sha256": "6e6eb4daeb620a7b656258c9c5556e6e8566500d42b14cea416bfa736188f6a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149007,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T11:48:23.792Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/ios-release-inspection-20260915",
-        "head_sha": "db0b39f9cb1c6fed27dfde0fe072f610c51618e9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148995:5678497412:2026-09-15T11:47:22Z:clawsweeper_needs_human",
       "comment_id": "5678497412",
@@ -33672,6 +33625,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5684731731:2026-09-15T17:16:56Z:re_review",
+      "comment_id": "5684731731",
+      "comment_version_key": "5684731731:2026-09-15T17:16:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5684731731",
+      "comment_created_at": "2026-09-15T17:16:56Z",
+      "comment_updated_at": "2026-09-15T17:16:56Z",
+      "comment_body_sha256": "39c84078aa6067c4b1ec8804c0379edc1bcd05842ac08ab36bec3188d61c7124",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `d045de37af4`. rebased the unchanged ui/docs-only series onto current main because hosted ci exposed unrelated stale-base pr-tooling fixture failures (`repos/...` api preflight expectations). the rebase was conflict-free; `git diff --check` is clean and the pr scope remains exclusively `ui/` and `docs/`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T17:17:52.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "d045de37af4d17a690b1f812db4d9ad0af30bb80",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
