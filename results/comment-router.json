@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T16:15:55.766Z",
+  "updated_at": "2026-09-15T16:16:08.398Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149005:5678898176:2026-09-15T10:44:59Z:clawsweeper_needs_human",
-      "comment_id": "5678898176",
-      "comment_version_key": "5678898176:2026-09-15T10:44:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149005#issuecomment-5678898176",
-      "comment_created_at": "2026-09-15T10:44:59Z",
-      "comment_updated_at": "2026-09-15T10:44:59Z",
-      "comment_body_sha256": "5a376019d77a4064e3166a1be36e64df3d403ba0033b7e7d2de0ab0eee72a975",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149005,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The uninstrumented candidate's Linux owner/consumer and original-cohort results remain pending; the earlier instrumented success does not identify or clear the original CUA timeout. (sha=9349a1fe159433684a9bebea90ff9daa58ca915e)",
-      "expected_head_sha": "9349a1fe159433684a9bebea90ff9daa58ca915e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T10:47:43.468Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stdio-cleanup-completion",
-        "head_sha": "9349a1fe159433684a9bebea90ff9daa58ca915e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149007:5678939756:2026-09-15T10:48:09Z:clawsweeper_auto_repair",
       "comment_id": "5678939756",
@@ -33552,6 +33519,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149245:5683802047:2026-09-15T16:15:03Z:re_review",
+      "comment_id": "5683802047",
+      "comment_version_key": "5683802047:2026-09-15T16:15:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149245#issuecomment-5683802047",
+      "comment_created_at": "2026-09-15T16:15:03Z",
+      "comment_updated_at": "2026-09-15T16:15:03Z",
+      "comment_body_sha256": "c74dba07eff53e52bfbf89f3a19151b983bba6ddd130dd5bd9fee5f988e33a73",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149245,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T16:16:06.084Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-cli-diagnostic-owner",
+        "head_sha": "a029c573139d888a23c8ac4c7df3e8f6b157df18",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
