@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T12:47:11.466Z",
+  "updated_at": "2026-09-15T12:47:57.215Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148311:5676364616:2026-09-15T07:21:16Z:re_review",
-      "comment_id": "5676364616",
-      "comment_version_key": "5676364616:2026-09-15T07:21:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148311#issuecomment-5676364616",
-      "comment_created_at": "2026-09-15T07:21:16Z",
-      "comment_updated_at": "2026-09-15T07:21:16Z",
-      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148311,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T07:22:26.544Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mcp-runtime-slot-leak-cleanup-failure-144527",
-        "head_sha": "6a5d4c7383740418b2ecf9bb3072c7d8288bfd23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148773:5676363095:2026-09-15T07:21:08Z:re_review",
       "comment_id": "5676363095",
@@ -33843,6 +33796,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-subagent-scalar-reads-20260915",
         "head_sha": "156f92531dcb67a7f1e7860af35e83ab050a4c74",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/wacli:422:5671453072:2026-09-15T12:46:53Z:clawsweeper_auto_repair",
+      "comment_id": "5671453072",
+      "comment_version_key": "5671453072:2026-09-15T12:46:53Z",
+      "comment_url": "https://github.com/openclaw/wacli/pull/422#issuecomment-5671453072",
+      "comment_created_at": "2026-09-14T22:05:33Z",
+      "comment_updated_at": "2026-09-15T12:46:53Z",
+      "comment_body_sha256": "949d9a58b9256aa120e0f262e5d9c0ba20b508ffb3c31fe130212d6f1ca2c021",
+      "repo": "openclaw/wacli",
+      "issue_number": 422,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8e915a63c653eab5fd21fb8ba2ef711924e98037)",
+      "expected_head_sha": "8e915a63c653eab5fd21fb8ba2ef711924e98037",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T12:47:57.215Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/messages-mark-read",
+        "head_sha": "8e915a63c653eab5fd21fb8ba2ef711924e98037",
         "cluster_id": null,
         "job_path": null
       }
