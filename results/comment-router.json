@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:44:47.201Z",
+  "updated_at": "2026-09-15T13:46:39.022Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5676965248:2026-09-15T08:13:15Z:re_review",
-      "comment_id": "5676965248",
-      "comment_version_key": "5676965248:2026-09-15T08:13:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5676965248",
-      "comment_created_at": "2026-09-15T08:13:15Z",
-      "comment_updated_at": "2026-09-15T08:13:15Z",
-      "comment_body_sha256": "bf20c3539257049c6e94fcf79f2b8f6501d247856def53216c11837eebc94c79",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `7d350dbe02308258fa32c5c6995082cd70ccce8f`. rebased onto current main after the canonical radius repair landed via #148504. exact-head local proof is clean: `pnpm check:changed` passed; the exact seven changed ui unit files passed 784 tests; and the exact two changed ui e2e files passed 3 tests. the corrected shared steering predicate excludes custody, with custody-only and mixed-queue coverage",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T08:14:07.992Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "7d350dbe02308258fa32c5c6995082cd70ccce8f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148785:5675090708:2026-09-15T08:13:38Z:clawsweeper_needs_human",
       "comment_id": "5675090708",
@@ -33727,6 +33680,39 @@
         "kind": "pull_request",
         "branch": "feat/issue-149101-skills-info-alternatives",
         "head_sha": "bead9c8ee7fa8e2a50729c217829d653cdbc1055",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149131:5681227757:2026-09-15T13:45:05Z:clawsweeper_needs_human",
+      "comment_id": "5681227757",
+      "comment_version_key": "5681227757:2026-09-15T13:45:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149131#issuecomment-5681227757",
+      "comment_created_at": "2026-09-15T13:45:05Z",
+      "comment_updated_at": "2026-09-15T13:45:05Z",
+      "comment_body_sha256": "6bb9cce606245d6073f09b18b2eb165058a5bd8c8902db8f47d889b511185818",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149131,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured body reports successful HTTP MCP reactions, but does not establish rejection before provi...; Review finding: [P1] Carry turn liveness through reaction provider I/O — src/gateway/tool-resolution.ts:300-303 - [medium] Revoked turn authority does not fence reaction writes —... (sha=19677bc38d4492edb15ad7711e0a7b9864705043)",
+      "expected_head_sha": "19677bc38d4492edb15ad7711e0a7b9864705043",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T13:46:39.022Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-message-authority",
+        "head_sha": "19677bc38d4492edb15ad7711e0a7b9864705043",
         "cluster_id": null,
         "job_path": null
       }
