@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:41:50.959Z",
+  "updated_at": "2026-09-15T17:42:02.950Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149045:5679913098:2026-09-15T12:09:22Z:re_review",
-      "comment_id": "5679913098",
-      "comment_version_key": "5679913098:2026-09-15T12:09:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149045#issuecomment-5679913098",
-      "comment_created_at": "2026-09-15T12:09:22Z",
-      "comment_updated_at": "2026-09-15T12:09:22Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149045,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T12:11:06.429Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "cleanup/wave21-xai-matrices",
-        "head_sha": "4763ef69bd46c7117a5cd2c1cb695977b42915cf",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144984:5679949280:2026-09-15T12:12:22Z:re_review",
       "comment_id": "5679949280",
@@ -33652,6 +33605,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149300:5685088383:2026-09-15T17:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5685088383",
+      "comment_version_key": "5685088383:2026-09-15T17:41:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149300#issuecomment-5685088383",
+      "comment_created_at": "2026-09-15T17:41:04Z",
+      "comment_updated_at": "2026-09-15T17:41:04Z",
+      "comment_body_sha256": "8773d03a7bb20964abbf9ec65fa3bbb002700304d51e64205f2e28c364c0e7ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=2e0af11db8c655c1f59d300696702b091c62e9a0)",
+      "expected_head_sha": "2e0af11db8c655c1f59d300696702b091c62e9a0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T17:42:02.950Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/lazy-disabled-tool-schema-diagnostics",
+        "head_sha": "2e0af11db8c655c1f59d300696702b091c62e9a0",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
