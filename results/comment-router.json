@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:39:07.743Z",
+  "updated_at": "2026-09-15T03:39:09.849Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148462:5671338085:2026-09-14T21:54:43Z:re_review",
-      "comment_id": "5671338085",
-      "comment_version_key": "5671338085:2026-09-14T21:54:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148462#issuecomment-5671338085",
-      "comment_created_at": "2026-09-14T21:54:43Z",
-      "comment_updated_at": "2026-09-14T21:54:43Z",
-      "comment_body_sha256": "3718fa6b5aa703305510beb389ecbc7ef571543f20875924ef4b45eb9a010c9b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148462,
-      "author": "pfrederiksen",
-      "author_id": 908172,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T22:02:21.386Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-catalog-auth-145994",
-        "head_sha": "9fbf9c702f4af06a695d014ab091fa1f71c1b1aa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119289:5182311959:2026-09-14T21:59:35Z:clawsweeper_auto_repair",
       "comment_id": "5182311959",
@@ -33560,6 +33513,39 @@
         "kind": "pull_request",
         "branch": "codex/remove-parent-admission-20260914",
         "head_sha": "563c3602719b857c2e3bd0f5f0c7111b0f4a6696",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:373:5672334460:2026-09-15T03:34:56Z:clawsweeper_needs_human",
+      "comment_id": "5672334460",
+      "comment_version_key": "5672334460:2026-09-15T03:34:56Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/373#issuecomment-5672334460",
+      "comment_created_at": "2026-09-14T23:36:49Z",
+      "comment_updated_at": "2026-09-15T03:34:56Z",
+      "comment_body_sha256": "f0bbe6e2e9162d636b74babe4f564a84c5da676276a9192ba2f0b51a3aac1205",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 373,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed workspace factories and admission owner have focused tests, but the captured evidence leave... (sha=1e123d3f896b7282101081d607a845d83f2423cc)",
+      "expected_head_sha": "1e123d3f896b7282101081d607a845d83f2423cc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T03:39:09.849Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/temp-workspace-admission-20260914",
+        "head_sha": "1e123d3f896b7282101081d607a845d83f2423cc",
         "cluster_id": null,
         "job_path": null
       }
