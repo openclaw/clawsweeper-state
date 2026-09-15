@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149255",
+  "mode": "plan",
+  "run_id": "35004625536",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35004625536",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149255.md",
+  "published_at": "2026-09-15T19:27:31.532Z",
+  "canonical": "#149255",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149255",
+  "canonical_pr": null,
+  "summary": "Prepared a conditional, narrow fix plan for #149255. No code or GitHub mutations occurred. Runtime reproduction remains pending: the checkout lacks dependencies and the required ../codex source, and its HEAD differs from the preflight main SHA. No owning PR search result was supplied.",
+  "actions": [
+    {
+      "target": "#149255",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149255",
+      "candidate_fix": null,
+      "reason": "Plan separation of background-media notification from accepted yield, retaining existing completion and task owners. Implementation and publication require current-main reproduction and dependency-contract inspection."
+    },
+    {
+      "target": "#141474",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149255",
+      "candidate_fix": null,
+      "reason": "Related settlement symptoms have distinct triggers and remaining work. This fix must preserve genuine yields rather than remove pause guards."
+    },
+    {
+      "target": "#92120",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#149255",
+      "candidate_fix": null,
+      "reason": "Historical evidence for preserving cron and intentional-yield behavior."
+    },
+    {
+      "target": "#99921",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#149255",
+      "candidate_fix": null,
+      "reason": "Historical context with a different trigger; no closure or implementation action."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
