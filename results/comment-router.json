@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T16:26:46.656Z",
+  "updated_at": "2026-09-15T16:26:51.037Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148193:5663827518:2026-09-15T11:01:06Z:clawsweeper_needs_human",
-      "comment_id": "5663827518",
-      "comment_version_key": "5663827518:2026-09-15T11:01:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148193#issuecomment-5663827518",
-      "comment_created_at": "2026-09-14T12:22:32Z",
-      "comment_updated_at": "2026-09-15T11:01:06Z",
-      "comment_body_sha256": "b59f0d46b69a8ffc5cd06a8ca0bf4d9f9f9bd51a9c62c9ff0ec09dcc3dc4c5de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148193,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Opting into setup replaces existing image routes and removes their fallbacks; a missing artifact or local model failure then stops inference on those routes. (sha=2143f1f930a8e0b139c6a65b8c61340bab85ea87)",
-      "expected_head_sha": "2143f1f930a8e0b139c6a65b8c61340bab85ea87",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T11:02:09.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/local-media-auto-setup",
-        "head_sha": "2143f1f930a8e0b139c6a65b8c61340bab85ea87",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148193:5665279766:2026-09-14T14:07:26Z:re_review",
       "comment_id": "5665279766",
@@ -33590,6 +33557,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:137274:5683965604:2026-09-15T16:25:22Z:re_review",
+      "comment_id": "5683965604",
+      "comment_version_key": "5683965604:2026-09-15T16:25:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/137274#issuecomment-5683965604",
+      "comment_created_at": "2026-09-15T16:25:22Z",
+      "comment_updated_at": "2026-09-15T16:25:22Z",
+      "comment_body_sha256": "8c8b397396db00363115371b5519524d58f31ef5736e4df0187d862ca3b81da8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 137274,
+      "author": "xydigitLybnnnn",
+      "author_id": 280613588,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T16:26:48.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/137215-cron-timeout-retry-during-active-execution",
+        "head_sha": "a06f4d26947103058723a8923f85394f454f073a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
