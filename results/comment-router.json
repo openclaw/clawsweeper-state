@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T21:14:34.729Z",
+  "updated_at": "2026-09-15T21:14:43.424Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149193:5683388417:2026-09-15T15:50:18Z:re_review",
-      "comment_id": "5683388417",
-      "comment_version_key": "5683388417:2026-09-15T15:50:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149193#issuecomment-5683388417",
-      "comment_created_at": "2026-09-15T15:50:18Z",
-      "comment_updated_at": "2026-09-15T15:50:18Z",
-      "comment_body_sha256": "676fade55fd0369c7304bac964395eb242be60ab2faab4eb202552527260e5ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149193,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T15:51:16.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr-code-only-wrapper-dependencies-20260915",
-        "head_sha": "b8c067c0f3065a5d14fa14d2c870c977c49a920f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149061:5683358222:2026-09-15T15:48:25Z:re_review",
       "comment_id": "5683358222",
@@ -33523,6 +33476,39 @@
         "kind": "pull_request",
         "branch": "codex/async-task-fresh-owner-projection-stack-20260914",
         "head_sha": "3e25b7d03f35f0d3059ed0aee4e11bb3828dc667",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:52:5686688132:2026-09-15T21:09:17Z:clawsweeper_needs_human",
+      "comment_id": "5686688132",
+      "comment_version_key": "5686688132:2026-09-15T21:09:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/52#issuecomment-5686688132",
+      "comment_created_at": "2026-09-15T19:18:15Z",
+      "comment_updated_at": "2026-09-15T21:09:17Z",
+      "comment_body_sha256": "a90af0d879f4c483d0d19cb960bee503cd48e8f953b486bd3109748187a890c2",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Reject redirected ancestors before recursively clearing state (P1)** - Checking only fullRoot misses junctions in its parents. For example, when Packages/&lt;family>/LocalState redirects elsewhere and its OpenCl...; Review finding: [P1] Reject redirected ancestors before recursively clearing state — src/OpenClaw.Launcher/Session/InstallationStateCleaner.cs:60-63 - [medium] Ancestor junctions... (sha=baa3c4d2a13ac76514c0a0e2100d301cc89732bf)",
+      "expected_head_sha": "baa3c4d2a13ac76514c0a0e2100d301cc89732bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T21:14:43.424Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-fresh-reset",
+        "head_sha": "baa3c4d2a13ac76514c0a0e2100d301cc89732bf",
         "cluster_id": null,
         "job_path": null
       }
