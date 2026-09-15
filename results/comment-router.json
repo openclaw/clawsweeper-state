@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:25:21.706Z",
+  "updated_at": "2026-09-15T13:26:03.397Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148875:5676748622:2026-09-15T07:54:57Z:re_review",
-      "comment_id": "5676748622",
-      "comment_version_key": "5676748622:2026-09-15T07:54:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148875#issuecomment-5676748622",
-      "comment_created_at": "2026-09-15T07:54:57Z",
-      "comment_updated_at": "2026-09-15T07:54:57Z",
-      "comment_body_sha256": "b05ea2bd4409cef9c3819fcadfe5c7187aebd26390ea8c541ee1c8643ed9f7de",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148875,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T07:55:49.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/freebsd-rc-inspector",
-        "head_sha": "f72129f25b4acd0174726205fc75e620ccab7c6a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:401:5676753009:2026-09-15T07:55:21Z:clawsweeper_needs_human",
       "comment_id": "5676753009",
@@ -33838,6 +33791,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149061:5680875880:2026-09-15T13:21:24Z:freeform_assist",
+      "comment_id": "5680875880",
+      "comment_version_key": "5680875880:2026-09-15T13:21:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149061#issuecomment-5680875880",
+      "comment_created_at": "2026-09-15T13:21:24Z",
+      "comment_updated_at": "2026-09-15T13:21:24Z",
+      "comment_body_sha256": "f84b15d6c884a059b6f510e8c5d0ab5582ad845ddc9dcb6a0cbe9ebc242c7f4f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149061,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nplease review exact head `8c78fad4d534423f13bf4911dd980d83807d6a6f`. revision 2 finding is fixed: only the terminal runtime-parity aggregate publishes transport artifacts; nested children remain suppressed. local exact-head validation: 75 focused tests, `pnpm check:changed`, zero runtime cycles, `git diff --check`, and real discord/crabline e2e (1 passed).",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T13:26:00.557Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/qa-crabline-transport-factory",
+        "head_sha": "8c78fad4d534423f13bf4911dd980d83807d6a6f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
