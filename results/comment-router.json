@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:45:44.603Z",
+  "updated_at": "2026-09-15T04:46:30.975Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148657:5673197626:2026-09-15T01:18:10Z:automerge",
-      "comment_id": "5673197626",
-      "comment_version_key": "5673197626:2026-09-15T01:18:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148657#issuecomment-5673197626",
-      "comment_created_at": "2026-09-15T01:18:10Z",
-      "comment_updated_at": "2026-09-15T01:18:10Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148657,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:18:57.643Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/testbox-tooling-single-worker",
-        "head_sha": "c9650df10aabae8a8dc097aa724b888e9d6929c0",
-        "cluster_id": "automerge-openclaw-openclaw-148657",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148657.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148551:5671321046:2026-09-15T01:18:11Z:clawsweeper_needs_human",
       "comment_id": "5671321046",
@@ -32028,6 +31975,39 @@
         "kind": "pull_request",
         "branch": "codex/session-activity-recap-refresh",
         "head_sha": "99645c400a1064b39e21c8ce8fea7b1d22fe0082",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148765:5674735218:2026-09-15T04:45:46Z:clawsweeper_needs_human",
+      "comment_id": "5674735218",
+      "comment_version_key": "5674735218:2026-09-15T04:45:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148765#issuecomment-5674735218",
+      "comment_created_at": "2026-09-15T04:27:53Z",
+      "comment_updated_at": "2026-09-15T04:45:46Z",
+      "comment_body_sha256": "ce9982a2640ab51003e96249279b0d6bf75a3dda62bfeaec19aef2a31f2a9cd0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148765,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A refused or interrupted deletion intentionally blocks later removal until recovery is reconciled; a retained branch can also prevent automatic restore. The maintainer’s new report ex... (sha=1ad3ce5f2b9e6b7cf5516c9d2b48552f406680c7)",
+      "expected_head_sha": "1ad3ce5f2b9e6b7cf5516c9d2b48552f406680c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:46:30.975Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/managed-nonforce-cleanup-20260915",
+        "head_sha": "1ad3ce5f2b9e6b7cf5516c9d2b48552f406680c7",
         "cluster_id": null,
         "job_path": null
       }
