@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T18:56:33.279Z",
+  "updated_at": "2026-09-15T18:56:59.164Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149120:5680841485:2026-09-15T13:19:02Z:re_review",
-      "comment_id": "5680841485",
-      "comment_version_key": "5680841485:2026-09-15T13:19:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149120#issuecomment-5680841485",
-      "comment_created_at": "2026-09-15T13:19:02Z",
-      "comment_updated_at": "2026-09-15T13:19:02Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149120,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T13:40:13.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/crabbox-source-fetch-diagnostics-91009",
-        "head_sha": "5145fb19ee07515ff3dfd7482d245e73f1ad43e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149067:5680989456:2026-09-15T13:29:18Z:re_review",
       "comment_id": "5680989456",
@@ -33582,6 +33535,39 @@
         "kind": "pull_request",
         "branch": "fix/pin-home-parented-sessions-142673",
         "head_sha": "00508e65e4aa6b1dd2c8b6648e7b46906df46642",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149339:5686314925:2026-09-15T18:55:26Z:clawsweeper_needs_human",
+      "comment_id": "5686314925",
+      "comment_version_key": "5686314925:2026-09-15T18:55:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149339#issuecomment-5686314925",
+      "comment_created_at": "2026-09-15T18:55:26Z",
+      "comment_updated_at": "2026-09-15T18:55:26Z",
+      "comment_body_sha256": "ba4d48ce1021b2158ab1bf834e9aa28bc7b77cf0f7213f33b94094c8dbe886ec",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149339,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ef19f60c5859f44573bd8cca9ae95632092ee9b3)",
+      "expected_head_sha": "ef19f60c5859f44573bd8cca9ae95632092ee9b3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T18:56:59.164Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-compaction-mcp-acquisition-cancellation",
+        "head_sha": "ef19f60c5859f44573bd8cca9ae95632092ee9b3",
         "cluster_id": null,
         "job_path": null
       }
