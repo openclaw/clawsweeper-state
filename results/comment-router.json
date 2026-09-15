@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T16:29:25.412Z",
+  "updated_at": "2026-09-15T16:30:38.808Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148141:5662152867:2026-09-15T11:08:45Z:clawsweeper_needs_human",
-      "comment_id": "5662152867",
-      "comment_version_key": "5662152867:2026-09-15T11:08:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148141#issuecomment-5662152867",
-      "comment_created_at": "2026-09-14T09:52:33Z",
-      "comment_updated_at": "2026-09-15T11:08:45Z",
-      "comment_body_sha256": "ae97970e50eb185a2085a3f481e75c962c38151008923a58e436def98039974b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148141,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Honor the author’s explicit merge hold until the qualifying scheduled CI composition and native recovery gates pass. (sha=c0c853e4fab466c865c58b9a8428c32aa88beac7)",
-      "expected_head_sha": "c0c853e4fab466c865c58b9a8428c32aa88beac7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T11:09:53.510Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/qa-web-open-ownership-20260914",
-        "head_sha": "c0c853e4fab466c865c58b9a8428c32aa88beac7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148951:5677723204:2026-09-15T11:09:08Z:clawsweeper_needs_human",
       "comment_id": "5677723204",
@@ -33622,6 +33589,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5683999020:2026-09-15T16:27:36Z:re_review",
+      "comment_id": "5683999020",
+      "comment_version_key": "5683999020:2026-09-15T16:27:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5683999020",
+      "comment_created_at": "2026-09-15T16:27:36Z",
+      "comment_updated_at": "2026-09-15T16:27:36Z",
+      "comment_body_sha256": "c92953fa61ecf06aa74fb9beb07f04c89f6f79d353452e2b0157c819907a35e4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `7c6758323a06cb8d12febf17238f80a2e78c770c`. repaired the actionable image-handoff proof defect with stage-specific readiness targets: submitted and canonical image stages wait on the image, queued custody waits on its read-only composer row, metadata loading waits on the canonical bubble, and final cleanup no longer waits on an absent transcript image. both receipt-first and event-first cases pass with `openclaw_capture_ui_proof=1`; `pnpm check:changed` is green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T16:30:36.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "ed33a91d95b3324f494029bf042e48ac858e8e39",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
