@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T07:09:58.203Z",
+  "updated_at": "2026-09-15T07:10:03.601Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143295:5674087624:2026-09-15T03:10:22Z:re_review",
-      "comment_id": "5674087624",
-      "comment_version_key": "5674087624:2026-09-15T03:10:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143295#issuecomment-5674087624",
-      "comment_created_at": "2026-09-15T03:10:22Z",
-      "comment_updated_at": "2026-09-15T03:10:22Z",
-      "comment_body_sha256": "cd01b791cf1b5bb34bc2677f97276b869e89a1692e4f3a063d6ecc82438cf089",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143295,
-      "author": "saladinyao-cyber",
-      "author_id": 240252919,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T03:17:22.094Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/memory-search-reader-lifecycle-v2",
-        "head_sha": "037ac3aacf8e82c9c183a9b8fecb0efe3adfdcd4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147949:5659613971:2026-09-15T03:16:00Z:clawsweeper_auto_repair",
       "comment_id": "5659613971",
@@ -31916,6 +31869,39 @@
         "kind": "pull_request",
         "branch": "fix/malformed-provider-upgrades",
         "head_sha": "8df04ce2535a53cd40b5be689d39944ac50135a5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147542:5657009595:2026-09-15T07:09:06Z:clawsweeper_needs_human",
+      "comment_id": "5657009595",
+      "comment_version_key": "5657009595:2026-09-15T07:09:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147542#issuecomment-5657009595",
+      "comment_created_at": "2026-09-13T23:25:55Z",
+      "comment_updated_at": "2026-09-15T07:09:06Z",
+      "comment_body_sha256": "c90d89646ce561bf1bcfa08780ec54d53d6d21faf34245d6d23f3b5c65fa7590",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147542,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3dadd2c2e8fd548d3c3cc054be0d4741d22f79f4)",
+      "expected_head_sha": "3dadd2c2e8fd548d3c3cc054be0d4741d22f79f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T07:10:03.601Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-147502-redaction-namespace-marker",
+        "head_sha": "3dadd2c2e8fd548d3c3cc054be0d4741d22f79f4",
         "cluster_id": null,
         "job_path": null
       }
