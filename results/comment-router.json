@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T06:10:42.898Z",
+  "updated_at": "2026-09-15T06:11:30.627Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148682:5673658529:2026-09-15T02:17:29Z:re_review",
-      "comment_id": "5673658529",
-      "comment_version_key": "5673658529:2026-09-15T02:17:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148682#issuecomment-5673658529",
-      "comment_created_at": "2026-09-15T02:17:29Z",
-      "comment_updated_at": "2026-09-15T02:17:29Z",
-      "comment_body_sha256": "cf8f375689fbb284f10030d0124bff3532cd8a559024a0a1ceeac3433ca9604a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148682,
-      "author": "mcaldas",
-      "author_id": 3955907,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T02:18:21.839Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-turn-usage",
-        "head_sha": "1d3c83b9201c9bf5859c43d975a5023b90dcbc39",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148250:5673037162:2026-09-15T02:19:31Z:clawsweeper_needs_human",
       "comment_id": "5673037162",
@@ -32117,6 +32070,39 @@
         "kind": "pull_request",
         "branch": "fix/search-date-order",
         "head_sha": "1919bde2e01da3b70df6cc9f497e54ddf3849ece",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:379:5673167025:2026-09-15T06:04:41Z:clawsweeper_needs_human",
+      "comment_id": "5673167025",
+      "comment_version_key": "5673167025:2026-09-15T06:04:41Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/379#issuecomment-5673167025",
+      "comment_created_at": "2026-09-15T01:14:12Z",
+      "comment_updated_at": "2026-09-15T06:04:41Z",
+      "comment_body_sha256": "482396b158b43fccfe1bd61f8dd144778947d32e1fcaa78bbbb1a91d4ba472f3",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 379,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the native and fallback parent walkers consume cached admissions before filesystem creation, but the body still... (sha=b3dc9ae011f7fd035a858a7f8d3e1344ca9ab54b)",
+      "expected_head_sha": "b3dc9ae011f7fd035a858a7f8d3e1344ca9ab54b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T06:11:30.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-mutation-policy-20260914",
+        "head_sha": "b3dc9ae011f7fd035a858a7f8d3e1344ca9ab54b",
         "cluster_id": null,
         "job_path": null
       }
