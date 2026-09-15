@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:55:57.856Z",
+  "updated_at": "2026-09-15T04:56:03.439Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5673247836:2026-09-15T01:24:39Z:re_review",
-      "comment_id": "5673247836",
-      "comment_version_key": "5673247836:2026-09-15T01:24:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5673247836",
-      "comment_created_at": "2026-09-15T01:24:39Z",
-      "comment_updated_at": "2026-09-15T01:24:39Z",
-      "comment_body_sha256": "3a602d498dbcd55a02a70cfb379121739d4e0cfb9d0158d676312173306279cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T01:25:47.159Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "bbc0c8aeb59763ebfd07c1a6f32ec16dc8e3ea04",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123062:5277800609:2026-09-15T01:25:04Z:clawsweeper_needs_human",
       "comment_id": "5277800609",
@@ -32072,6 +32025,39 @@
         "kind": "pull_request",
         "branch": "fix/feishu-nonstreaming-media-delivery",
         "head_sha": "04aa487928236d8a99a938dd273b39e532d53084",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125345:5317843873:2026-09-15T04:55:01Z:clawsweeper_needs_human",
+      "comment_id": "5317843873",
+      "comment_version_key": "5317843873:2026-09-15T04:55:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125345#issuecomment-5317843873",
+      "comment_created_at": "2026-08-17T16:45:27Z",
+      "comment_updated_at": "2026-09-15T04:55:01Z",
+      "comment_body_sha256": "871892e6687f371138b716cdcb06034c2fe4e028377a1a75b295b575817c01b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125345,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After adoption, downgrading to a pre-v3 reader makes Claws status fail even for other installed Claws; completing adoption removal requires a supporting build. (sha=13d8d1a6fc412e4e8ed71976a8b14fa26b1682b4)",
+      "expected_head_sha": "13d8d1a6fc412e4e8ed71976a8b14fa26b1682b4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:56:03.439Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claws-adopt-configured-agent",
+        "head_sha": "13d8d1a6fc412e4e8ed71976a8b14fa26b1682b4",
         "cluster_id": null,
         "job_path": null
       }
