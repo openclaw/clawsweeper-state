@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T21:58:31.000Z",
+  "updated_at": "2026-09-15T22:03:29.886Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149260:5684010528:2026-09-15T16:28:23Z:clawsweeper_auto_repair",
-      "comment_id": "5684010528",
-      "comment_version_key": "5684010528:2026-09-15T16:28:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149260#issuecomment-5684010528",
-      "comment_created_at": "2026-09-15T16:28:23Z",
-      "comment_updated_at": "2026-09-15T16:28:23Z",
-      "comment_body_sha256": "49b9f86aa9bde587c15c74c273b3d3342cda9e99c92ce2da417bf4a576ae8689",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149260,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=19b68333b724064741a770ff665ccf3af6cd1fd2)",
-      "expected_head_sha": "19b68333b724064741a770ff665ccf3af6cd1fd2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T16:29:25.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-empty-index-deferred-startup-gate",
-        "head_sha": "19b68333b724064741a770ff665ccf3af6cd1fd2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5683999020:2026-09-15T16:27:36Z:re_review",
       "comment_id": "5683999020",
@@ -33590,6 +33557,39 @@
       "status": "skipped",
       "processed_at": "2026-09-15T21:58:31.000Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:47:5686691017:2026-09-15T21:41:52Z:clawsweeper_needs_human",
+      "comment_id": "5686691017",
+      "comment_version_key": "5686691017:2026-09-15T21:41:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/47#issuecomment-5686691017",
+      "comment_created_at": "2026-09-15T19:18:26Z",
+      "comment_updated_at": "2026-09-15T21:41:52Z",
+      "comment_body_sha256": "a043394e3a50a3235372f7216f641ab1c0bdec55b86b9e93387170f989cd8cf1",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 47,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: AgentToolShim.Install performs host writes into the active agent workspace, but the supplied boundary test mock...; Review finding: [P1] [P1] Prevent directory swaps between validation and host writes — src/OpenClaw.Launcher/Session/AgentToolShim.cs:45-49 - [high] Agent-controlled destination c... (sha=19109030f98c7b3164d5f7a225fdb72ce1236b5e)",
+      "expected_head_sha": "19109030f98c7b3164d5f7a225fdb72ce1236b5e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T22:03:29.886Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-agent-shell",
+        "head_sha": "19109030f98c7b3164d5f7a225fdb72ce1236b5e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
