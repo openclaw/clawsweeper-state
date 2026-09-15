@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-15T17:11:52.836Z",
+  "updated_at": "2026-09-15T17:12:48.909Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147756:5659345757:2026-09-14T05:14:18Z:re_review",
-      "comment_id": "5659345757",
-      "comment_version_key": "5659345757:2026-09-14T05:14:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147756#issuecomment-5659345757",
-      "comment_created_at": "2026-09-14T05:14:18Z",
-      "comment_updated_at": "2026-09-14T05:14:18Z",
-      "comment_body_sha256": "2c3badfa40f211391e79a92ce6b210a1e06a72d214f7c9e90ec5838011fd2cc9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147756,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T11:38:09.583Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148910:5677137945:2026-09-15T11:26:43Z:clawsweeper_needs_human",
       "comment_id": "5677137945",
@@ -33708,6 +33681,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148574:5671738372:2026-09-15T17:01:53Z:clawsweeper_needs_human",
+      "comment_id": "5671738372",
+      "comment_version_key": "5671738372:2026-09-15T17:01:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148574#issuecomment-5671738372",
+      "comment_created_at": "2026-09-14T22:35:25Z",
+      "comment_updated_at": "2026-09-15T17:01:53Z",
+      "comment_body_sha256": "3d8f1c79d9558ba41d0b00d369ce51abd6f73334836b486c9cbc98fb082f555b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148574,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Worker-backed restoration now participates in Gateway startup and restart; preservation of existing task/flow state and successful restart under a published updater remain unverified. (sha=69a39f01e2008cc2a69165fe9163c10793e84990)",
+      "expected_head_sha": "69a39f01e2008cc2a69165fe9163c10793e84990",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T17:12:48.909Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/async-task-registry-restoration-stack-20260914",
+        "head_sha": "69a39f01e2008cc2a69165fe9163c10793e84990",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
