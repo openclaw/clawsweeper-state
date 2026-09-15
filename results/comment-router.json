@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T04:18:29.008Z",
+  "updated_at": "2026-09-15T04:18:39.290Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148348:5672476773:2026-09-14T23:50:55Z:re_review",
-      "comment_id": "5672476773",
-      "comment_version_key": "5672476773:2026-09-14T23:50:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148348#issuecomment-5672476773",
-      "comment_created_at": "2026-09-14T23:50:55Z",
-      "comment_updated_at": "2026-09-14T23:50:55Z",
-      "comment_body_sha256": "210b10bfd7145b68bd3882ab2da2127c81fc6f3403c6133498708115701d38e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148348,
-      "author": "ryannikolaidis",
-      "author_id": 1208590,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T23:51:50.855Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "workboard-dispatch-stale-guardrails",
-        "head_sha": "af6b2ec6d0a32b02e27d21d74dcad5d7469f30d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148607:5672311707:2026-09-14T23:50:50Z:clawsweeper_needs_human",
       "comment_id": "5672311707",
@@ -32906,6 +32859,39 @@
         "kind": "pull_request",
         "branch": "feat/feishu-progress-draft",
         "head_sha": "7fe020cc6cd8b880b37b21021558bc3da01a9942",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:374:5672423998:2026-09-15T04:17:46Z:clawsweeper_needs_human",
+      "comment_id": "5672423998",
+      "comment_version_key": "5672423998:2026-09-15T04:17:46Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/374#issuecomment-5672423998",
+      "comment_created_at": "2026-09-14T23:44:22Z",
+      "comment_updated_at": "2026-09-15T04:17:46Z",
+      "comment_body_sha256": "ba295571211965e0e2f904391f49b44f12b58fd76e62b5f7ee07f6f8e008ef3c",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 374,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Posted Windows measurements demonstrate earlier createPrivateDirectory execution, but the supplied evidence does not show current afte... (sha=4a9bb541b3a4a04dd143714171492ec58c48ef49)",
+      "expected_head_sha": "4a9bb541b3a4a04dd143714171492ec58c48ef49",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T04:18:39.290Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/private-directory-object-bound-main-20260914",
+        "head_sha": "4a9bb541b3a4a04dd143714171492ec58c48ef49",
         "cluster_id": null,
         "job_path": null
       }
