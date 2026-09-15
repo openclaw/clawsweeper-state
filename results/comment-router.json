@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T13:03:55.226Z",
+  "updated_at": "2026-09-15T13:04:01.418Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/slacrawl:222:5676490248:2026-09-15T07:32:33Z:re_review",
-      "comment_id": "5676490248",
-      "comment_version_key": "5676490248:2026-09-15T07:32:33Z",
-      "comment_url": "https://github.com/openclaw/slacrawl/pull/222#issuecomment-5676490248",
-      "comment_created_at": "2026-09-15T07:32:33Z",
-      "comment_updated_at": "2026-09-15T07:32:33Z",
-      "comment_body_sha256": "a2bd1d797fa8d103aaeb871b02714357e2b450b5286ee6dc22196a8c5805f618",
-      "repo": "openclaw/slacrawl",
-      "issue_number": 222,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T07:33:35.762Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/slackdump-converted-exports",
-        "head_sha": "e95624956c472c89c15f2aba758f134d0c96b15e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148773:5676492828:2026-09-15T07:32:45Z:re_review",
       "comment_id": "5676492828",
@@ -33846,6 +33799,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149061:5680126416:2026-09-15T13:02:58Z:clawsweeper_auto_repair",
+      "comment_id": "5680126416",
+      "comment_version_key": "5680126416:2026-09-15T13:02:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149061#issuecomment-5680126416",
+      "comment_created_at": "2026-09-15T12:26:12Z",
+      "comment_updated_at": "2026-09-15T13:02:58Z",
+      "comment_body_sha256": "98d962b6504f290eed559bf4ecac27f8823588f0b0ac3f58988214d0e4849a45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149061,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0e2f33190984bef98dbba50c52b905559b2d12e4)",
+      "expected_head_sha": "0e2f33190984bef98dbba50c52b905559b2d12e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T13:04:01.418Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/qa-crabline-transport-factory",
+        "head_sha": "0e2f33190984bef98dbba50c52b905559b2d12e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
