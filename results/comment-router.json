@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T03:26:30.562Z",
+  "updated_at": "2026-09-15T03:26:34.225Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116446:5671141677:2026-09-14T21:36:21Z:re_review",
-      "comment_id": "5671141677",
-      "comment_version_key": "5671141677:2026-09-14T21:36:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116446#issuecomment-5671141677",
-      "comment_created_at": "2026-09-14T21:36:21Z",
-      "comment_updated_at": "2026-09-14T21:36:21Z",
-      "comment_body_sha256": "6d3ae05cfd7670d5eb131e345609e87192bf68946e71ca053fef74909f8ce704",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116446,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-14T21:40:34.935Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/qa-crabline-discord-0.1.13",
-        "head_sha": "c878a9ee9bb014cf3c01796367da1cee5fec1e6c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148542:5671152690:2026-09-14T21:37:24Z:clawsweeper_needs_human",
       "comment_id": "5671152690",
@@ -33616,6 +33569,39 @@
         "kind": "pull_request",
         "branch": "fix/plugin-runtime-owner-lookup-20260915",
         "head_sha": "a460c3bdf1cc08916cfc281064ba764b4a799c96",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148721:5674207153:2026-09-15T03:25:34Z:clawsweeper_auto_repair",
+      "comment_id": "5674207153",
+      "comment_version_key": "5674207153:2026-09-15T03:25:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148721#issuecomment-5674207153",
+      "comment_created_at": "2026-09-15T03:25:34Z",
+      "comment_updated_at": "2026-09-15T03:25:34Z",
+      "comment_body_sha256": "3b73476db4018cd389aa1281cd3f8a754928aad05917bcc666aae58c790bd453",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148721,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9419efa61fb662acb075cb3ad0ed05227dc34a42)",
+      "expected_head_sha": "9419efa61fb662acb075cb3ad0ed05227dc34a42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T03:26:34.225Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-slack-top-level-source-reply",
+        "head_sha": "9419efa61fb662acb075cb3ad0ed05227dc34a42",
         "cluster_id": null,
         "job_path": null
       }
