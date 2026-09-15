@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149232",
+  "mode": "autonomous",
+  "run_id": "34991996967",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/34991996967",
+  "head_sha": "1ed7bd4e13fb03334798e4d027ba3383ac9e5f01",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149232.md",
+  "published_at": "2026-09-15T17:07:10.307Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149232",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149232",
+  "canonical_pr": null,
+  "summary": "Confirmed the configured agentDir discovery omission in source at preflight main 31557782c74924813994c9054247ed20398c3e0b. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#149232",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#149232",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable isolated checkout and dependencies. Establish the failing regression against refreshed main before editing; source verification alone is not runtime reproduction."
+    },
+    {
+      "target": "#148529",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149232",
+      "candidate_fix": null,
+      "reason": "Keep the broader startup-performance investigation open and outside this fix."
+    },
+    {
+      "target": "#142476",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a separate recurring performance defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149232",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149232",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair is supported by source evidence; the deterministic executor must reproduce, implement, review, and validate before publishing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
