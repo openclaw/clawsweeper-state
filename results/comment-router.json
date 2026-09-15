@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T10:19:44.278Z",
+  "updated_at": "2026-09-15T10:20:55.286Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148765:5674830438:2026-09-15T04:40:33Z:re_review",
-      "comment_id": "5674830438",
-      "comment_version_key": "5674830438:2026-09-15T04:40:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148765#issuecomment-5674830438",
-      "comment_created_at": "2026-09-15T04:40:33Z",
-      "comment_updated_at": "2026-09-15T04:40:33Z",
-      "comment_body_sha256": "f7f61a1cc8b7f8e581dcca64d8bc01b4d20e67c5c77401d2d16c4e0b7fa8cdd2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148765,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T04:41:25.863Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/managed-nonforce-cleanup-20260915",
-        "head_sha": "1ad3ce5f2b9e6b7cf5516c9d2b48552f406680c7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147581:5657302852:2026-09-15T04:37:22Z:clawsweeper_needs_human",
       "comment_id": "5657302852",
@@ -33793,6 +33746,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5678536068:2026-09-15T10:19:54Z:re_review",
+      "comment_id": "5678536068",
+      "comment_version_key": "5678536068:2026-09-15T10:19:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5678536068",
+      "comment_created_at": "2026-09-15T10:19:54Z",
+      "comment_updated_at": "2026-09-15T10:19:54Z",
+      "comment_body_sha256": "0aec673eaee26a9bea8b47baf32a1e33c93ec52e3200877bdafec2c997dd96f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `020313a6be11449161de249f7d9c4617c23920e9`. rebased onto current main containing the canonical radius repair from #148504. exact-head local proof is clean: `pnpm check:changed` passed; the exact seven changed ui unit files passed all 796 tests; and the exact two changed ui e2e files passed all 3 tests. the only subsequent main commit before the final rebase changed channel cli files, disjoint from this pr",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T10:20:52.017Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "020313a6be11449161de249f7d9c4617c23920e9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
