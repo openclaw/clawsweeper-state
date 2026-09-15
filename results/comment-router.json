@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-15T08:13:26.738Z",
+  "updated_at": "2026-09-15T08:14:10.427Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135838:5541720882:2026-09-04T14:16:00Z:re_review",
-      "comment_id": "5541720882",
-      "comment_version_key": "5541720882:2026-09-04T14:16:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135838#issuecomment-5541720882",
-      "comment_created_at": "2026-09-04T14:16:00Z",
-      "comment_updated_at": "2026-09-04T14:16:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135838,
-      "author": "sallyom",
-      "author_id": 11166065,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T04:08:18.962Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148212:5663481319:2026-09-15T04:07:31Z:clawsweeper_needs_human",
       "comment_id": "5663481319",
@@ -32169,6 +32142,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5676965248:2026-09-15T08:13:15Z:re_review",
+      "comment_id": "5676965248",
+      "comment_version_key": "5676965248:2026-09-15T08:13:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5676965248",
+      "comment_created_at": "2026-09-15T08:13:15Z",
+      "comment_updated_at": "2026-09-15T08:13:15Z",
+      "comment_body_sha256": "bf20c3539257049c6e94fcf79f2b8f6501d247856def53216c11837eebc94c79",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head `7d350dbe02308258fa32c5c6995082cd70ccce8f`. rebased onto current main after the canonical radius repair landed via #148504. exact-head local proof is clean: `pnpm check:changed` passed; the exact seven changed ui unit files passed 784 tests; and the exact two changed ui e2e files passed 3 tests. the corrected shared steering predicate excludes custody, with custody-only and mixed-queue coverage",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T08:14:07.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "7d350dbe02308258fa32c5c6995082cd70ccce8f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
