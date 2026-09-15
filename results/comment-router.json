@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T01:08:29.885Z",
+  "updated_at": "2026-09-15T01:08:36.010Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145409:5641924462:2026-09-14T18:47:23Z:clawsweeper_auto_repair",
-      "comment_id": "5641924462",
-      "comment_version_key": "5641924462:2026-09-14T18:47:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145409#issuecomment-5641924462",
-      "comment_created_at": "2026-09-11T23:47:58Z",
-      "comment_updated_at": "2026-09-14T18:47:23Z",
-      "comment_body_sha256": "b65ba463d1d31909b71faba6ea97ed1fd3bc4383ae8f3aa9233fd702d3772ce6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145409,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8feb5fadd493dd383389831bd58cf408b242759b)",
-      "expected_head_sha": "8feb5fadd493dd383389831bd58cf408b242759b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T18:47:33.170Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "chazgo-plugin-tab-theme-forwarding",
-        "head_sha": "8feb5fadd493dd383389831bd58cf408b242759b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:367:5668575879:2026-09-14T18:27:09Z:clawsweeper_needs_human",
       "comment_id": "5668575879",
@@ -33322,6 +33289,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148657:5673111939:2026-09-15T01:07:39Z:automerge",
+      "comment_id": "5673111939",
+      "comment_version_key": "5673111939:2026-09-15T01:07:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148657#issuecomment-5673111939",
+      "comment_created_at": "2026-09-15T01:07:39Z",
+      "comment_updated_at": "2026-09-15T01:07:39Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148657,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T01:08:28.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/testbox-tooling-single-worker",
+        "head_sha": "c9650df10aabae8a8dc097aa724b888e9d6929c0",
+        "cluster_id": "automerge-openclaw-openclaw-148657",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148657.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-148657.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148426:5668378931:2026-09-15T01:07:20Z:clawsweeper_needs_human",
