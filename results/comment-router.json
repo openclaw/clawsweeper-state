@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T06:39:59.073Z",
+  "updated_at": "2026-09-15T06:40:32.263Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147711:5673856839:2026-09-15T02:41:09Z:re_review",
-      "comment_id": "5673856839",
-      "comment_version_key": "5673856839:2026-09-15T02:41:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147711#issuecomment-5673856839",
-      "comment_created_at": "2026-09-15T02:41:09Z",
-      "comment_updated_at": "2026-09-15T02:41:09Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147711,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T02:42:03.182Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/upd-doctor-stale-plugin-migration-ordering",
-        "head_sha": "a9559b0a43acd13be5ea4bd3b96281518abfb35c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147807:5673861551:2026-09-15T02:41:48Z:re_review",
       "comment_id": "5673861551",
@@ -32139,6 +32092,39 @@
         "kind": "pull_request",
         "branch": "fix/sqlcipher-locking-page",
         "head_sha": "6c3758d8299397b096befb1c767377ce91965b08",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148842:5675924142:2026-09-15T06:39:42Z:clawsweeper_needs_human",
+      "comment_id": "5675924142",
+      "comment_version_key": "5675924142:2026-09-15T06:39:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148842#issuecomment-5675924142",
+      "comment_created_at": "2026-09-15T06:39:42Z",
+      "comment_updated_at": "2026-09-15T06:39:42Z",
+      "comment_body_sha256": "361a58d6f617e843bc042264e0eb31ba11928c1a957267681519dc491263a462",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148842,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed parser-to-plugin dispatch is exercised through card.action.trigger with mocked provider calls. The real metadata lookup only confir... (sha=05bb7d4dc3074ca25c3a7462fc775ddcf42f654e)",
+      "expected_head_sha": "05bb7d4dc3074ca25c3a7462fc775ddcf42f654e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T06:40:32.263Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex-feishu-plugin-card-callbacks",
+        "head_sha": "05bb7d4dc3074ca25c3a7462fc775ddcf42f654e",
         "cluster_id": null,
         "job_path": null
       }
