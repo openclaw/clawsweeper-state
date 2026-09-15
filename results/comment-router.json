@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T16:01:22.799Z",
+  "updated_at": "2026-09-15T16:01:29.499Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148972:5678130475:2026-09-15T10:33:58Z:clawsweeper_needs_human",
-      "comment_id": "5678130475",
-      "comment_version_key": "5678130475:2026-09-15T10:33:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148972#issuecomment-5678130475",
-      "comment_created_at": "2026-09-15T09:48:20Z",
-      "comment_updated_at": "2026-09-15T10:33:58Z",
-      "comment_body_sha256": "87bbe4d0b319ba069b0bb0c89dce5646d99806d1e53299a5659f87bb81ceaa39",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148972,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Mixed production workloads remain unmeasured: alternating-agent benchmarks showed higher latency and CPU, although the PR explicitly accepts that tradeoff for repeated reads of one ag... (sha=a64e080ffd71be096505ac4c8a38fa30de9924d2)",
-      "expected_head_sha": "a64e080ffd71be096505ac4c8a38fa30de9924d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T10:37:12.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-perf7-readonly",
-        "head_sha": "a64e080ffd71be096505ac4c8a38fa30de9924d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148987:5678365525:2026-09-15T10:33:40Z:clawsweeper_needs_human",
       "comment_id": "5678365525",
@@ -33531,6 +33498,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148961:5683551198:2026-09-15T16:00:25Z:re_review",
+      "comment_id": "5683551198",
+      "comment_version_key": "5683551198:2026-09-15T16:00:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148961#issuecomment-5683551198",
+      "comment_created_at": "2026-09-15T16:00:25Z",
+      "comment_updated_at": "2026-09-15T16:00:25Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148961,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T16:01:26.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/canonical-key-validation-cache-148878",
+        "head_sha": "b138dbd9513a1ec2df4609cae05a791fcc8b6df5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
