@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-15T01:00:43.512Z",
+  "updated_at": "2026-09-15T01:01:59.878Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-09-14T18:38:32Z:clawsweeper_needs_human",
-      "comment_id": "5075679870",
-      "comment_version_key": "5075679870:2026-09-14T18:38:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
-      "comment_created_at": "2026-07-24T23:58:02Z",
-      "comment_updated_at": "2026-09-14T18:38:32Z",
-      "comment_body_sha256": "01757e4257bf5df1d56528dcc11b236a3f7a43bf7c42e2d19e6d165a3dc63f08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 112811,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected Teams screenshot and derived deployment report support multi-bot replies, but not revoke...; Review finding: [medium] Complete cross-account authorization evidence — extensions/msteams/src/approval-card-submit.ts:48 (sha=30c6c9d973cf5e1e7a2a26e28ce6185b21ae33e2)",
-      "expected_head_sha": "30c6c9d973cf5e1e7a2a26e28ce6185b21ae33e2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-14T18:42:32.928Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/msteams-multi-account-replacement-20260722",
-        "head_sha": "30c6c9d973cf5e1e7a2a26e28ce6185b21ae33e2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-09-05T20:38:46Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -33457,6 +33424,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:145074:5673061656:2026-09-15T01:01:08Z:re_review",
+      "comment_id": "5673061656",
+      "comment_version_key": "5673061656:2026-09-15T01:01:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145074#issuecomment-5673061656",
+      "comment_created_at": "2026-09-15T01:01:08Z",
+      "comment_updated_at": "2026-09-15T01:01:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145074,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-15T01:01:58.083Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/node-gateway-host-blank",
+        "head_sha": "8c2524bb01b5f5a017d42cfeb7c975316c6ab5cb",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
