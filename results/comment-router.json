@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-15T14:58:53.908Z",
+  "updated_at": "2026-09-15T14:58:56.045Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148890:5677686573:2026-09-15T09:12:17Z:re_review",
-      "comment_id": "5677686573",
-      "comment_version_key": "5677686573:2026-09-15T09:12:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148890#issuecomment-5677686573",
-      "comment_created_at": "2026-09-15T09:12:17Z",
-      "comment_updated_at": "2026-09-15T09:12:17Z",
-      "comment_body_sha256": "d103c7fcf59ca67ab47f932c4d93626b04e403269c907b4c129102e1f6669a31",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148890,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review — current head 3447d99f7969f881cfa2ceeed23f4bdda562f39e. the pr body distinguishes current focused proof, unchanged build inputs, and remaining ci/windows qualification. review only; no fix, merge, or auto-merge requested",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T09:13:03.932Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-split-filesystem-main-20260915",
-        "head_sha": "3447d99f7969f881cfa2ceeed23f4bdda562f39e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148900:5676994889:2026-09-15T09:12:08Z:clawsweeper_needs_human",
       "comment_id": "5676994889",
@@ -33660,6 +33613,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146115:5646984597:2026-09-15T14:57:40Z:clawsweeper_needs_human",
+      "comment_id": "5646984597",
+      "comment_version_key": "5646984597:2026-09-15T14:57:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146115#issuecomment-5646984597",
+      "comment_created_at": "2026-09-12T15:56:27Z",
+      "comment_updated_at": "2026-09-15T14:57:40Z",
+      "comment_body_sha256": "43d8d41340b21b92ddb62d09466e30978b5d95bc54fdfa077e60cc59a7c741b6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146115,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Worker proof is positive: inspected screenshots show the real Gateway/browser label following a reroute and surviving refresh. Native... (sha=0f2b4aabe75f4a582bbe0bb8de473f1f510dcfc6)",
+      "expected_head_sha": "0f2b4aabe75f4a582bbe0bb8de473f1f510dcfc6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-15T14:58:56.045Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-144837-live-model",
+        "head_sha": "0f2b4aabe75f4a582bbe0bb8de473f1f510dcfc6",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
