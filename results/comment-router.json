@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T03:29:09.177Z",
+  "updated_at": "2026-09-16T03:29:21.634Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148525:5689292440:2026-09-15T23:05:45Z:re_review",
-      "comment_id": "5689292440",
-      "comment_version_key": "5689292440:2026-09-15T23:05:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148525#issuecomment-5689292440",
-      "comment_created_at": "2026-09-15T23:05:45Z",
-      "comment_updated_at": "2026-09-15T23:05:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148525,
-      "author": "he-yufeng",
-      "author_id": 40085740,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T23:06:35.750Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-rewind-context",
-        "head_sha": "7b9008be8e9a2d0b1c62cbf157ea6598e09fe1fd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149308:5685351193:2026-09-15T23:05:41Z:clawsweeper_needs_human",
       "comment_id": "5685351193",
@@ -33237,6 +33190,39 @@
         "kind": "pull_request",
         "branch": "fix/sessions-list-model-provenance",
         "head_sha": "7162448796f71c98a7f8cb105cebf7db98fcf3be",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149581:5690875568:2026-09-16T03:28:24Z:clawsweeper_needs_human",
+      "comment_id": "5690875568",
+      "comment_version_key": "5690875568:2026-09-16T03:28:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149581#issuecomment-5690875568",
+      "comment_created_at": "2026-09-16T01:59:01Z",
+      "comment_updated_at": "2026-09-16T03:28:24Z",
+      "comment_body_sha256": "a18e8a57f4159dcb1dbe283de5f2106734a5ee131ce741747bf04c03358d5f74",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149581,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After profile selection, later full creates use ordinary Git even after full expansion; they may require more disk space and fail admission where a warm clone previously fit. Native m... (sha=d0a090563990944adbb228548910f326d5fccf9a)",
+      "expected_head_sha": "d0a090563990944adbb228548910f326d5fccf9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T03:29:21.634Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/wde-sparse-profiles-20260916",
+        "head_sha": "d0a090563990944adbb228548910f326d5fccf9a",
         "cluster_id": null,
         "job_path": null
       }
