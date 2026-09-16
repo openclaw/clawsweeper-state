@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-150201",
+  "mode": "autonomous",
+  "run_id": "35148208898",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35148208898",
+  "head_sha": "f48f1cee58c5ac867114cc77fb088b172aa4e9a9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-150201.md",
+  "published_at": "2026-09-16T21:29:21.937Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/150201",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/150201",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the archive-warning classification gap on preflight main 62a8182e40d955ddcd509ba977badb37ea691d2a. A narrow repair artifact is prepared. Implementation and executable reproduction are blocked by this read-only Linux host with no installed dependencies; Windows published-driver proof remains outstanding. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#150201",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#150201",
+      "candidate_fix": null,
+      "reason": "The source-supported fix remains needed, but the required failing regression, implementation, and Windows recovery proof cannot be completed on this host."
+    },
+    {
+      "target": "#148545",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#150201",
+      "candidate_fix": null,
+      "reason": "Related update symptoms do not establish the same root cause; retain the independent diagnostic thread."
+    },
+    {
+      "target": "#144688",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; candidate code cannot repair an older updater's failure before candidate execution."
+    },
+    {
+      "target": "#147762",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context; no action on this closed PR."
+    },
+    {
+      "target": "#149956",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context, not a replacement source PR or proof that #150201 is fixed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-150201",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#150201",
+      "candidate_fix": null,
+      "reason": "A narrow executor handoff is justified by current source; local execution blockers do not require a new product decision."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
