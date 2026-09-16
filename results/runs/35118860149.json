@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-150142",
+  "mode": "autonomous",
+  "run_id": "35118860149",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35118860149",
+  "head_sha": "f48f1cee58c5ac867114cc77fb088b172aa4e9a9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-150142.md",
+  "published_at": "2026-09-16T17:19:24.730Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/150142",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/150142",
+  "canonical_pr": null,
+  "summary": "Reproduced the caption defects through production-generated scripts on preflight main ca086327834a8bef1690ab5437ba39c5887745be. Prepared a narrow fix plan; implementation is blocked by the read-only host. No files or GitHub state changed. Targeted tests, review, and real Meet proof remain outstanding.",
+  "actions": [
+    {
+      "target": "#150142",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#150142",
+      "candidate_fix": null,
+      "reason": "The bug is reproduced and the repair scope is clear. Local implementation is blocked by the enforced read-only filesystem; dependencies are also absent. Continue through the writable executor using the cluster fix artifact."
+    },
+    {
+      "target": "#146076",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#150142",
+      "candidate_fix": null,
+      "reason": "Preserve this useful contributor PR as a separate repair. Closing and merging are outside this job's authority."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-150142",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#150142",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate. The artifact can proceed independently of the worker host's implementation restriction."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
