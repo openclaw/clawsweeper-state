@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T06:48:23.342Z",
+  "updated_at": "2026-09-16T06:48:29.452Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149585:5690912101:2026-09-16T02:48:12Z:clawsweeper_needs_human",
-      "comment_id": "5690912101",
-      "comment_version_key": "5690912101:2026-09-16T02:48:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149585#issuecomment-5690912101",
-      "comment_created_at": "2026-09-16T02:04:02Z",
-      "comment_updated_at": "2026-09-16T02:48:12Z",
-      "comment_body_sha256": "b83b0b521279fc754ff606980c01833d05f1a49b1a72dadcb365581583bcd338",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149585,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cold PR creation can now stop on shared-state database failures or the 4–16 GiB disk reserve where ordinary Git previously succeeded, including when acceleration is disabled. (sha=cb577d16c3c8e64a751be2b9fcd4a2b33a3e16c5)",
-      "expected_head_sha": "cb577d16c3c8e64a751be2b9fcd4a2b33a3e16c5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T02:57:17.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/wde-pr-acceleration-20260916",
-        "head_sha": "cb577d16c3c8e64a751be2b9fcd4a2b33a3e16c5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149582:5690938153:2026-09-16T02:56:05Z:clawsweeper_needs_human",
       "comment_id": "5690938153",
@@ -33683,6 +33650,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5693244222:2026-09-16T06:47:29Z:re_review",
+      "comment_id": "5693244222",
+      "comment_version_key": "5693244222:2026-09-16T06:47:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5693244222",
+      "comment_created_at": "2026-09-16T06:47:29Z",
+      "comment_updated_at": "2026-09-16T06:47:29Z",
+      "comment_body_sha256": "9b80f1aacc3472652a23d5674216db8aecd9ed571198053bd242cd11965b65e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T06:48:26.071Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "e915eb9d0a305dabcbc8658cf582bc761428f635",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
