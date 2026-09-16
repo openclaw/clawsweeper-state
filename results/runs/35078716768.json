@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149931",
+  "mode": "autonomous",
+  "run_id": "35078716768",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35078716768",
+  "head_sha": "02cd682921ca0c796212319c1a28c9b1e4bfac58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149931.md",
+  "published_at": "2026-09-16T09:57:30.671Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149931",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149931",
+  "canonical_pr": null,
+  "summary": "Confirmed the synchronous traversal on preflight main b3afbe0d4d78ec9cb9d0e1b1da01869b6af171ce. Prepared a narrow repair plan. Implementation and regression validation are blocked by this host's read-only filesystem and absent node_modules; no code or GitHub changes were made.",
+  "actions": [
+    {
+      "target": "#149931",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149931",
+      "candidate_fix": null,
+      "reason": "The remaining scheduling defect has a narrow collector-owned repair. Keep the issue open pending reproduction, implementation, and validation by the executor."
+    },
+    {
+      "target": "#134488",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the prior repair; it does not supply yielding between distinct store reads."
+    },
+    {
+      "target": "#1",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical unrelated context; no action is warranted."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149931",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149931",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow new-fix-PR path to the writable executor. Reproduction must succeed before production edits or PR creation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
