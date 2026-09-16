@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T20:19:27.033Z",
+  "updated_at": "2026-09-16T20:21:25.383Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137348:5698176806:2026-09-16T13:23:03Z:re_review",
-      "comment_id": "5698176806",
-      "comment_version_key": "5698176806:2026-09-16T13:23:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137348#issuecomment-5698176806",
-      "comment_created_at": "2026-09-16T13:23:03Z",
-      "comment_updated_at": "2026-09-16T13:23:03Z",
-      "comment_body_sha256": "378b4897c29b16b66cadcd5ccd420391f6bc88c42f534838d3ef53ab0ecd18c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137348,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T13:24:34.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-137247",
-        "head_sha": "834ffe3800e30534bb4c9a8bf9cfd8261b2dfa53",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150074:5698201371:2026-09-16T13:24:52Z:clawsweeper_needs_human",
       "comment_id": "5698201371",
@@ -33736,6 +33689,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-ci-android-talk-scope-20260901",
         "head_sha": "03cf20a87e821f1388d302862e2499e13c188da3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150274:5703947648:2026-09-16T20:19:57Z:clawsweeper_needs_human",
+      "comment_id": "5703947648",
+      "comment_version_key": "5703947648:2026-09-16T20:19:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150274#issuecomment-5703947648",
+      "comment_created_at": "2026-09-16T20:19:57Z",
+      "comment_updated_at": "2026-09-16T20:19:57Z",
+      "comment_body_sha256": "79f1b764749ea7507184c4a1946d30c9fe0dfc27a40eb483835235a07cda8323",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150274,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The candidate’s 500-replacement memory acceptance is still pending; the baseline exceeded the unchanged 32 MiB threshold. Short-run object collection does not establish the broader en... (sha=0664456a6c53fdc8d0eeade2351b9fd5574a581a)",
+      "expected_head_sha": "0664456a6c53fdc8d0eeade2351b9fd5574a581a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T20:21:25.383Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-reload-registry-cache-ownership",
+        "head_sha": "0664456a6c53fdc8d0eeade2351b9fd5574a581a",
         "cluster_id": null,
         "job_path": null
       }
