@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T01:13:56.155Z",
+  "updated_at": "2026-09-16T01:14:36.303Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:143433:5687243392:2026-09-15T19:56:41Z:re_review",
-      "comment_id": "5687243392",
-      "comment_version_key": "5687243392:2026-09-15T19:56:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/143433#issuecomment-5687243392",
-      "comment_created_at": "2026-09-15T19:56:41Z",
-      "comment_updated_at": "2026-09-15T19:56:41Z",
-      "comment_body_sha256": "3da8e45d266c1bb6e94fba092c97a7cac5ece66a6ff35567437f8009aeeb1d9b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 143433,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T20:07:34.594Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/heartbeat-mcp-runtime-retire",
-        "head_sha": "b5e33ef9f141b2934e925ac26659a86ad2784295",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149381:5687262500:2026-09-15T19:58:21Z:clawsweeper_needs_human",
       "comment_id": "5687262500",
@@ -33338,6 +33291,39 @@
         "kind": "pull_request",
         "branch": "codex/bun-test-runtime-determinism",
         "head_sha": "28896e92d4a4126636c78c8f83e282a39467dcfb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149372:5687279227:2026-09-16T01:13:25Z:clawsweeper_needs_human",
+      "comment_id": "5687279227",
+      "comment_version_key": "5687279227:2026-09-16T01:13:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149372#issuecomment-5687279227",
+      "comment_created_at": "2026-09-15T19:59:38Z",
+      "comment_updated_at": "2026-09-16T01:13:25Z",
+      "comment_body_sha256": "4ee4c321054a589341c39d1c622bb38fbd5940efaf2b05272e634fec3acfd713",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149372,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Host logout or account switching can leave authenticated reads using the previous native credential for up to 60 seconds; publication may reject a stale account choice during that int... (sha=be2c4214480db099192cca81c3e65617331ccf57)",
+      "expected_head_sha": "be2c4214480db099192cca81c3e65617331ccf57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T01:14:36.303Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/perf-github-options-token-cache-20260915",
+        "head_sha": "be2c4214480db099192cca81c3e65617331ccf57",
         "cluster_id": null,
         "job_path": null
       }
