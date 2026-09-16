@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:21:14.685Z",
+  "updated_at": "2026-09-16T07:21:29.713Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149589:5691697373:2026-09-16T03:42:18Z:re_review",
-      "comment_id": "5691697373",
-      "comment_version_key": "5691697373:2026-09-16T03:42:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149589#issuecomment-5691697373",
-      "comment_created_at": "2026-09-16T03:42:18Z",
-      "comment_updated_at": "2026-09-16T03:42:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149589,
-      "author": "triciah73",
-      "author_id": 63877342,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T03:43:18.099Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ollama-embedding-private-network-ssrf",
-        "head_sha": "eaf65a707be9db9b610663018695df90a5e31a5e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:420:5691545249:2026-09-16T03:42:51Z:clawsweeper_needs_human",
       "comment_id": "5691545249",
@@ -33598,6 +33551,39 @@
         "kind": "pull_request",
         "branch": "fix/completions-no-tools-history",
         "head_sha": "e96dcd968da1efa7550fc1962cdece93cc669773",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:596:5691733865:2026-09-16T07:15:13Z:clawsweeper_needs_human",
+      "comment_id": "5691733865",
+      "comment_version_key": "5691733865:2026-09-16T07:15:13Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/596#issuecomment-5691733865",
+      "comment_created_at": "2026-09-16T03:47:15Z",
+      "comment_updated_at": "2026-09-16T07:15:13Z",
+      "comment_body_sha256": "454986bee0fdc92f0aba3908bb7aab3566b631d2d5e547da28704ec6a988d1ef",
+      "repo": "openclaw/acpx",
+      "issue_number": 596,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The inspection result shape and fresh-session operation become lasting embedding contracts; maintainer acceptance of those conventions is not established in the available discussion. (sha=29534d785c21da9c234638c6ab8a299a726bbccb)",
+      "expected_head_sha": "29534d785c21da9c234638c6ab8a299a726bbccb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T07:21:29.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/acp-harness-discovery",
+        "head_sha": "29534d785c21da9c234638c6ab8a299a726bbccb",
         "cluster_id": null,
         "job_path": null
       }
