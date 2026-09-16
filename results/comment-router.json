@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T17:19:48.834Z",
+  "updated_at": "2026-09-16T17:20:00.279Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149976:5696005924:2026-09-16T10:29:09Z:clawsweeper_needs_human",
-      "comment_id": "5696005924",
-      "comment_version_key": "5696005924:2026-09-16T10:29:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149976#issuecomment-5696005924",
-      "comment_created_at": "2026-09-16T10:29:09Z",
-      "comment_updated_at": "2026-09-16T10:29:09Z",
-      "comment_body_sha256": "9f3e33d8077987f710d21c0584c0cc159ecb2bded69547709824d93c0681d2b1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149976,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Windows execution and application-build validation were not performed; the reported regression evidence isolates environment capture with mocked storage and queue boundaries. (sha=526933f2ee298f34eac9c97edabd233a3949173f)",
-      "expected_head_sha": "526933f2ee298f34eac9c97edabd233a3949173f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T10:32:52.667Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/agent-write-env-capture-20260916",
-        "head_sha": "526933f2ee298f34eac9c97edabd233a3949173f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149977:5696011900:2026-09-16T10:29:38Z:clawsweeper_needs_human",
       "comment_id": "5696011900",
@@ -33273,6 +33240,53 @@
       "status": "skipped",
       "processed_at": "2026-09-16T17:19:48.834Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149987:5701600917:2026-09-16T17:19:02Z:re_review",
+      "comment_id": "5701600917",
+      "comment_version_key": "5701600917:2026-09-16T17:19:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149987#issuecomment-5701600917",
+      "comment_created_at": "2026-09-16T17:19:02Z",
+      "comment_updated_at": "2026-09-16T17:19:02Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149987,
+      "author": "jhaabhijeet864",
+      "author_id": 169458770,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T17:19:57.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149689-codex-compaction-context-window-loop",
+        "head_sha": "fee7c78410534279a51093fba245a4e3a2d93e8c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
