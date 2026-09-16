@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T21:21:37.874Z",
+  "updated_at": "2026-09-16T21:21:58.919Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150059:5699006789:2026-09-16T14:18:40Z:re_review",
-      "comment_id": "5699006789",
-      "comment_version_key": "5699006789:2026-09-16T14:18:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150059#issuecomment-5699006789",
-      "comment_created_at": "2026-09-16T14:18:40Z",
-      "comment_updated_at": "2026-09-16T14:18:40Z",
-      "comment_body_sha256": "6218681dddabd9bc417e45de3e0bf17886bad565334ce38666301d7449f7d664",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150059,
-      "author": "Tosko4",
-      "author_id": 1294707,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T14:19:42.734Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skill-review-implicit-runtime",
-        "head_sha": "0b3304f7235c61fbfbd55b1fc5a5488738ab153c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149708:5692320923:2026-09-16T14:19:49Z:clawsweeper_needs_human",
       "comment_id": "5692320923",
@@ -33494,6 +33447,39 @@
         "kind": "pull_request",
         "branch": "codex/placement-storage-integration-20260916",
         "head_sha": "8e936b8bdd92263df80b08c60a8e0db6d1e56b6e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150191:5701718127:2026-09-16T21:16:25Z:clawsweeper_needs_human",
+      "comment_id": "5701718127",
+      "comment_version_key": "5701718127:2026-09-16T21:16:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150191#issuecomment-5701718127",
+      "comment_created_at": "2026-09-16T17:27:47Z",
+      "comment_updated_at": "2026-09-16T21:16:25Z",
+      "comment_body_sha256": "f280ecfbb9a7c19c074cbeed0fe30a93dcb35e088758d66ed5fd0b12857259b1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150191,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The retained proof covers the stacked head; integration with the eventual main target remains unvalidated while the prerequisites are unmerged. (sha=102787fc731ff7ad17ae35f75c3da26e6cab0fae)",
+      "expected_head_sha": "102787fc731ff7ad17ae35f75c3da26e6cab0fae",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T21:21:58.919Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-message-writes",
+        "head_sha": "102787fc731ff7ad17ae35f75c3da26e6cab0fae",
         "cluster_id": null,
         "job_path": null
       }
