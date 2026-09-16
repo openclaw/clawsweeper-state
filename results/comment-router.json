@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T02:48:21.151Z",
+  "updated_at": "2026-09-16T02:48:51.179Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149047:5688794712:2026-09-15T22:12:03Z:re_review",
-      "comment_id": "5688794712",
-      "comment_version_key": "5688794712:2026-09-15T22:12:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149047#issuecomment-5688794712",
-      "comment_created_at": "2026-09-15T22:12:03Z",
-      "comment_updated_at": "2026-09-15T22:12:03Z",
-      "comment_body_sha256": "abacd6aa2d838f75604e3c5c17476cac7ca533c129ebd5e475aed449539cde2f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149047,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T22:16:13.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-sentinel-state-env",
-        "head_sha": "8e09570ebb04045c9c32e7180df12a84d644351a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149283:5688816878:2026-09-15T22:14:19Z:re_review",
       "comment_id": "5688816878",
@@ -33131,6 +33084,39 @@
         "kind": "pull_request",
         "branch": "triage/babelfish-install-cleanup",
         "head_sha": "56582543f949412f1391c3af2c19358b24111971",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:311:5691289797:2026-09-16T02:48:04Z:clawsweeper_needs_human",
+      "comment_id": "5691289797",
+      "comment_version_key": "5691289797:2026-09-16T02:48:04Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/311#issuecomment-5691289797",
+      "comment_created_at": "2026-09-16T02:48:04Z",
+      "comment_updated_at": "2026-09-16T02:48:04Z",
+      "comment_body_sha256": "db2efa8e8a9f8a1401fa5f6806a8f267731f2c8a427e2c37cca2642985d175b5",
+      "repo": "openclaw/crabpot",
+      "issue_number": 311,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports the relevant AWS provisioning failure and successful 400 GB retry through SSH and workspace preparation, but provides... (sha=e04c775933ae9b300c753789500dccd0e46009f9)",
+      "expected_head_sha": "e04c775933ae9b300c753789500dccd0e46009f9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T02:48:51.179Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/aws-image-root-disk",
+        "head_sha": "e04c775933ae9b300c753789500dccd0e46009f9",
         "cluster_id": null,
         "job_path": null
       }
