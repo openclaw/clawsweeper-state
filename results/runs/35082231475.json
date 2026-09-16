@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149949",
+  "mode": "autonomous",
+  "run_id": "35082231475",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35082231475",
+  "head_sha": "02cd682921ca0c796212319c1a28c9b1e4bfac58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149949.md",
+  "published_at": "2026-09-16T10:35:04.471Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149949",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149949",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the parent-derived child-owner defect. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by the read-only host, absent dependencies, and checkout/preflight SHA mismatch. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#149949",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149949",
+      "candidate_fix": null,
+      "reason": "Both creation entrypoints still omit the parent from initial child-agent selection. Preserve this issue as the narrow canonical repair."
+    },
+    {
+      "target": "#126360",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Broader tracker with distinct remaining work; excluded from this implementation."
+    },
+    {
+      "target": "#145217",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Compaction has a different entrypoint and root-cause location; explicitly outside this job."
+    },
+    {
+      "target": "#146086",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a different parent-key defect."
+    },
+    {
+      "target": "#146246",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain as partial-fix history, not a candidate for repair or closure."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149949",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149949",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Execution requires a writable checkout of verified current main and failing entrypoint regressions before production edits."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
