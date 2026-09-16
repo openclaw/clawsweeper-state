@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:35:48.235Z",
+  "updated_at": "2026-09-16T07:36:04.059Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:310:5691279064:2026-09-16T03:36:51Z:clawsweeper_needs_human",
-      "comment_id": "5691279064",
-      "comment_version_key": "5691279064:2026-09-16T03:36:51Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/310#issuecomment-5691279064",
-      "comment_created_at": "2026-09-16T02:46:51Z",
-      "comment_updated_at": "2026-09-16T03:36:51Z",
-      "comment_body_sha256": "165eb469dec8647f82fad036cbc7eaae558ddd5c54e177e22eccc0acf8b5122f",
-      "repo": "openclaw/crabpot",
-      "issue_number": 310,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The required Windows run leaves supervisor startup and cleanup uncertainty unresolved; the available evidence does not establish whether this candidate contributed to the failure. (sha=adc9fa48d48df628c505fd66325aa653fa65d079)",
-      "expected_head_sha": "adc9fa48d48df628c505fd66325aa653fa65d079",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T03:55:51.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/triage-report-correctness",
-        "head_sha": "adc9fa48d48df628c505fd66325aa653fa65d079",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149647:5691789566:2026-09-16T03:55:00Z:clawsweeper_needs_human",
       "comment_id": "5691789566",
@@ -33681,6 +33648,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/crabbox:2282:5693759649:2026-09-16T07:35:11Z:re_review",
+      "comment_id": "5693759649",
+      "comment_version_key": "5693759649:2026-09-16T07:35:11Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2282#issuecomment-5693759649",
+      "comment_created_at": "2026-09-16T07:35:11Z",
+      "comment_updated_at": "2026-09-16T07:35:11Z",
+      "comment_body_sha256": "b54e5ef41f646c74d389f8407470fef3f52734736ef3a24827fc3226bf31e1e9",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2282,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T07:36:02.079Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/preflight-output-bound-c396",
+        "head_sha": "12dbae4f64e524b776ad80cb27cc49a4c013b862",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
