@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T16:58:20.513Z",
+  "updated_at": "2026-09-16T16:58:35.577Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149884:5695867276:2026-09-16T10:18:16Z:re_review",
-      "comment_id": "5695867276",
-      "comment_version_key": "5695867276:2026-09-16T10:18:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149884#issuecomment-5695867276",
-      "comment_created_at": "2026-09-16T10:18:16Z",
-      "comment_updated_at": "2026-09-16T10:18:16Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149884,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T10:19:17.703Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/trajectory-export-atomic-127581",
-        "head_sha": "a905025fa1bb42a2e683dfebb6ad07ae06e13c58",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149864:5694080449:2026-09-16T10:19:47Z:clawsweeper_auto_repair",
       "comment_id": "5694080449",
@@ -33257,6 +33210,39 @@
       "status": "skipped",
       "processed_at": "2026-09-16T16:58:20.513Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/babelfish:23:5464169279:2026-09-16T16:57:16Z:clawsweeper_auto_repair",
+      "comment_id": "5464169279",
+      "comment_version_key": "5464169279:2026-09-16T16:57:16Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/23#issuecomment-5464169279",
+      "comment_created_at": "2026-08-29T18:39:02Z",
+      "comment_updated_at": "2026-09-16T16:57:16Z",
+      "comment_body_sha256": "d47cff77a8abff5a6de39efaef934155bcfbed1baa9f4b66b8d8ff058633db09",
+      "repo": "openclaw/babelfish",
+      "issue_number": 23,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ebf68395b14ddbcb495d97e76f88f0c39b77161d)",
+      "expected_head_sha": "ebf68395b14ddbcb495d97e76f88f0c39b77161d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T16:58:35.577Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f005-hook-walk-cap",
+        "head_sha": "ebf68395b14ddbcb495d97e76f88f0c39b77161d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
