@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T04:16:08.289Z",
+  "updated_at": "2026-09-16T04:16:11.536Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116050:5689693993:2026-09-15T23:41:23Z:re_review",
-      "comment_id": "5689693993",
-      "comment_version_key": "5689693993:2026-09-15T23:41:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116050#issuecomment-5689693993",
-      "comment_created_at": "2026-09-15T23:41:23Z",
-      "comment_updated_at": "2026-09-15T23:41:23Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116050,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T23:42:12.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/rust-gateway-client",
-        "head_sha": "ca183808926775882281711bd75a22f316693ac1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116450:5689694226:2026-09-15T23:41:25Z:re_review",
       "comment_id": "5689694226",
@@ -33475,6 +33428,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-agent-plugin-gateway-cancellation",
         "head_sha": "817db827c16aa49b4afa0001de4bee96704adc80",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149629:5691582210:2026-09-16T04:04:40Z:clawsweeper_needs_human",
+      "comment_id": "5691582210",
+      "comment_version_key": "5691582210:2026-09-16T04:04:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149629#issuecomment-5691582210",
+      "comment_created_at": "2026-09-16T03:26:18Z",
+      "comment_updated_at": "2026-09-16T04:04:40Z",
+      "comment_body_sha256": "b4f59b87101dbcb462d890cd75f336600122726b679d294057df764db62bf6cc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149629,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=667595aaee1dfd911379c0cb02df98df2225436c)",
+      "expected_head_sha": "667595aaee1dfd911379c0cb02df98df2225436c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T04:16:11.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/self-discovery-20260916",
+        "head_sha": "667595aaee1dfd911379c0cb02df98df2225436c",
         "cluster_id": null,
         "job_path": null
       }
