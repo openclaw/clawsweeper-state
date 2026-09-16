@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:35:07.601Z",
+  "updated_at": "2026-09-16T07:35:08.926Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149598:5691775574:2026-09-16T03:53:04Z:re_review",
-      "comment_id": "5691775574",
-      "comment_version_key": "5691775574:2026-09-16T03:53:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149598#issuecomment-5691775574",
-      "comment_created_at": "2026-09-16T03:53:04Z",
-      "comment_updated_at": "2026-09-16T03:53:04Z",
-      "comment_body_sha256": "3ef39d4d9464079545c2d390db0afaaef419bfced0bd1e96bcdd66234fdc1f8d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149598,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T03:54:05.215Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/update-ledger-busy-admission",
-        "head_sha": "16d86372ce1bed023e23d377fbdbc508f1017d87",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149589:5690970347:2026-09-16T03:53:36Z:clawsweeper_auto_repair",
       "comment_id": "5690970347",
@@ -33692,6 +33645,39 @@
         "kind": "pull_request",
         "branch": "codex/deepseek-transport-retention",
         "head_sha": "82bfae5bcf32d49bcaaa08f654f840be0e2a8528",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149848:5693746292:2026-09-16T07:34:06Z:clawsweeper_needs_human",
+      "comment_id": "5693746292",
+      "comment_version_key": "5693746292:2026-09-16T07:34:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149848#issuecomment-5693746292",
+      "comment_created_at": "2026-09-16T07:34:06Z",
+      "comment_updated_at": "2026-09-16T07:34:06Z",
+      "comment_body_sha256": "632b6248133c34a8ebc3ed67ee8232bd33dd048f92d1e1fbd3bc223486392855",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149848,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b8c36b628181026c26825c413b805a7aca32ec8c)",
+      "expected_head_sha": "b8c36b628181026c26825c413b805a7aca32ec8c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T07:35:08.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ui-stream-frame-diagnostics-20260916",
+        "head_sha": "b8c36b628181026c26825c413b805a7aca32ec8c",
         "cluster_id": null,
         "job_path": null
       }
