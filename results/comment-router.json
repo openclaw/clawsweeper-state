@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T03:00:54.966Z",
+  "updated_at": "2026-09-16T03:00:58.234Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148683:5688983489:2026-09-15T22:32:20Z:re_review",
-      "comment_id": "5688983489",
-      "comment_version_key": "5688983489:2026-09-15T22:32:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148683#issuecomment-5688983489",
-      "comment_created_at": "2026-09-15T22:32:20Z",
-      "comment_updated_at": "2026-09-15T22:32:20Z",
-      "comment_body_sha256": "f8c1a94a93f9e2fd089f108c3070ddc2e66dd39da2e4464839cd1fd8ec83bba0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148683,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T22:33:18.259Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-projection-duplicate-final",
-        "head_sha": "9e4f93c7ea7e4231540041fa93b626e563301bf9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:373:5672334460:2026-09-15T22:36:20Z:clawsweeper_needs_human",
       "comment_id": "5672334460",
@@ -33139,6 +33092,39 @@
         "kind": "pull_request",
         "branch": "upd/schema-preflight-unknown-mode",
         "head_sha": "be57790729a5bc8afbe10b88be73a751e0566576",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/krillswitch:74:5304878124:2026-09-16T02:59:59Z:clawsweeper_needs_human",
+      "comment_id": "5304878124",
+      "comment_version_key": "5304878124:2026-09-16T02:59:59Z",
+      "comment_url": "https://github.com/openclaw/krillswitch/pull/74#issuecomment-5304878124",
+      "comment_created_at": "2026-08-16T00:12:20Z",
+      "comment_updated_at": "2026-09-16T02:59:59Z",
+      "comment_body_sha256": "e4cd9f97d9cb8ff6fb7979c0efd4f5b461a64c56a5ade1c6e63f9161dc039efd",
+      "repo": "openclaw/krillswitch",
+      "issue_number": 74,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing API or Cloudflare Access requests taking more than 30 seconds will now fail unless operators raise or disable the deadline; a timed-out mutation may already have completed. T... (sha=92a2e5f4ba57ca583dea41bc63ee21d5af60a2ad)",
+      "expected_head_sha": "92a2e5f4ba57ca583dea41bc63ee21d5af60a2ad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T03:00:58.234Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-fetch-timeout",
+        "head_sha": "92a2e5f4ba57ca583dea41bc63ee21d5af60a2ad",
         "cluster_id": null,
         "job_path": null
       }
