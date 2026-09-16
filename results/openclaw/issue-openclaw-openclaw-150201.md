@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150201"
-mode: "plan"
-run_id: "35157862917"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35157862917"
+mode: "autonomous"
+run_id: "35158986186"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35158986186"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-16T22:32:30.138Z"
-canonical: "#150201"
-canonical_issue: "#150201"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-16T23:24:33.877Z"
+canonical: "https://github.com/openclaw/openclaw/issues/150201"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/150201"
 canonical_pr: null
-actions_total: 2
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35157862917](https://github.com/openclaw/clawsweeper/actions/runs/35157862917)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35158986186](https://github.com/openclaw/clawsweeper/actions/runs/35158986186)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #150201
+Canonical: https://github.com/openclaw/openclaw/issues/150201
 
 ## Summary
 
-Plan a narrow media-persistence repair for #150201. Source inspection at preflight main 6f08e4ea3c560d456f4ae1a02b0ca275bd24936e supports the reported archive-warning-to-refusal path. No code or GitHub changes were made. Runtime regression, candidate validation, and Windows recovery proof remain pending.
+Confirmed the archive-warning classification gap in source at preflight main 75ba5e3fae5c8aa543e65557db51ce0d0f7b1199. Prepared a narrow fix artifact. Implementation, failing regression, local validation, and published-updater recovery proof remain blocked by this host's read-only filesystem. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,13 @@ Plan a narrow media-persistence repair for #150201. Source inspection at preflig
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150201 | fix_needed | planned | canonical | The scoped ordinary bug has a concrete repair path. Earlier merged snapshot, timeout, and retained-import fixes do not establish resolution of this remaining refusal. Managed-service recovery remains outside this repair. |
-| #148545 | keep_related | planned | related | The update symptom is related, but the available reproduction does not prove the same remaining root cause. |
+| #150201 | fix_needed | planned | canonical | The source supports a narrow owner-local correction; no viable open implementation PR is present in the hydrated inventory. Scheduled Task recovery remains outside this repair. |
+| #148545 | keep_related | planned | related | Keep open as a related diagnostic report. |
+| #144688 | keep_closed | skipped | related | Historical context, not an open repair target. |
+| #145219 | keep_closed | skipped | related | Historical context; timeout work does not correct archive receipt classification. |
+| #147762 | keep_closed | skipped | related | Historical context, not a candidate for this archive-warning fix. |
+| #149956 | keep_closed | skipped | related | Related landed work does not cover the remaining media-persistence refusal. |
+| cluster:issue-openclaw-openclaw-150201 | build_fix_artifact | planned | canonical | Planning is complete; implementation remains blocked on a writable execution environment and must begin with a failing regression. |
 
 ## Needs Human
 
