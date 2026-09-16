@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150117"
-mode: "autonomous"
-run_id: "35111435303"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35111435303"
+mode: "plan"
+run_id: "35116095117"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35116095117"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-16T15:18:36.057Z"
-canonical: "https://github.com/openclaw/openclaw/issues/150117"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/150117"
+published_at: "2026-09-16T15:37:33.862Z"
+canonical: "#150117"
+canonical_issue: "#150117"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35111435303](https://github.com/openclaw/clawsweeper/actions/runs/35111435303)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35116095117](https://github.com/openclaw/clawsweeper/actions/runs/35116095117)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/150117
+Canonical: #150117
 
 ## Summary
 
-Verified the reported defect in source at preflight main 9c2fe2698ba417ed565ff4c581a38dc4a8837284. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked on this read-only host with dependencies absent; no changes or GitHub mutations were made.
+Plan a narrow Discord delivery-result fix for #150117. Source inspection at preflight main 82f2dd2c3cae095fa9986e551f877d3be0e3920c confirms successful sends discard collected message IDs and return the creation snapshot. No changes or GitHub mutations were made. Executable regression, review, and live Discord confirmation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Verified the reported defect in source at preflight main 9c2fe2698ba417ed565ff4c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150117 | fix_needed | planned | canonical | An ordinary successful-delivery reporting defect remains source-verifiable. Executable regression proof must precede implementation on the executor. |
-| #48450 | keep_closed | skipped | related | Historical partial-failure regression context, distinct from successful sends losing delivery confirmation. Preserve its existing behavior. |
-| cluster:issue-openclaw-openclaw-150117 | build_fix_artifact | planned | canonical | The repair is narrow and requires no product decision. The executor must first demonstrate the failing regression on current main, then implement, validate, and review. |
+| #150117 | fix_needed | planned | canonical | Confirmed delivery facts must reach the successful tool result without inventing thread-wide counters or adding a fallible post-send read. Proceed through the fix artifact after reproducing the defect on the executor's current main. |
+| #48450 | keep_closed | skipped | related | Historical regression context covering failure after creation; it does not resolve missing confirmation after a successful send. |
 
 ## Needs Human
 

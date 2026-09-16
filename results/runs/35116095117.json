@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-150117",
+  "mode": "plan",
+  "run_id": "35116095117",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35116095117",
+  "head_sha": "f48f1cee58c5ac867114cc77fb088b172aa4e9a9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-150117.md",
+  "published_at": "2026-09-16T15:37:33.862Z",
+  "canonical": "#150117",
+  "canonical_issue": "#150117",
+  "canonical_pr": null,
+  "summary": "Plan a narrow Discord delivery-result fix for #150117. Source inspection at preflight main 82f2dd2c3cae095fa9986e551f877d3be0e3920c confirms successful sends discard collected message IDs and return the creation snapshot. No changes or GitHub mutations were made. Executable regression, review, and live Discord confirmation remain pending.",
+  "actions": [
+    {
+      "target": "#150117",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#150117",
+      "candidate_fix": null,
+      "reason": "Confirmed delivery facts must reach the successful tool result without inventing thread-wide counters or adding a fallible post-send read. Proceed through the fix artifact after reproducing the defect on the executor's current main."
+    },
+    {
+      "target": "#48450",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#150117",
+      "candidate_fix": null,
+      "reason": "Historical regression context covering failure after creation; it does not resolve missing confirmation after a successful send."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
