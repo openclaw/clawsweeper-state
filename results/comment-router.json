@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T01:32:46.087Z",
+  "updated_at": "2026-09-16T01:33:07.710Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148683:5687425891:2026-09-15T20:11:36Z:re_review",
-      "comment_id": "5687425891",
-      "comment_version_key": "5687425891:2026-09-15T20:11:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148683#issuecomment-5687425891",
-      "comment_created_at": "2026-09-15T20:11:36Z",
-      "comment_updated_at": "2026-09-15T20:11:36Z",
-      "comment_body_sha256": "5b572d85d67441766dce614f2a7768bc6c6c33c46d54d54badbabc80a99cc370",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148683,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T20:28:38.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-projection-duplicate-final",
-        "head_sha": "5f4a54c35d664e3fd9e3c0442e2787c7c0d63394",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:123236:5285843126:2026-09-15T20:22:23Z:clawsweeper_auto_repair",
       "comment_id": "5285843126",
@@ -33314,6 +33267,39 @@
         "kind": "pull_request",
         "branch": "fix/f003-jobqueue-thread-lock",
         "head_sha": "a82b123fb29e491ffefb2012c3e7baefe3e866e4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149520:5689776553:2026-09-16T01:32:16Z:clawsweeper_needs_human",
+      "comment_id": "5689776553",
+      "comment_version_key": "5689776553:2026-09-16T01:32:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149520#issuecomment-5689776553",
+      "comment_created_at": "2026-09-15T23:52:03Z",
+      "comment_updated_at": "2026-09-16T01:32:16Z",
+      "comment_body_sha256": "057f92643cfd32a918d40fe7c4ea2dd79edaa9d5448b28b955d42ed83b06ef94",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149520,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sessions whose newest required frame or boundary exceeds the limit will stop preparation and require /reset or /new, losing active conversation continuity; this tradeoff is e... (sha=2effc2396fc5b9452c475e261df4c51792d52b57)",
+      "expected_head_sha": "2effc2396fc5b9452c475e261df4c51792d52b57",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T01:33:07.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-bounded-mirrored-context",
+        "head_sha": "2effc2396fc5b9452c475e261df4c51792d52b57",
         "cluster_id": null,
         "job_path": null
       }
