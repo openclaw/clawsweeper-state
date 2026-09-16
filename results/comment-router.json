@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T10:37:38.800Z",
+  "updated_at": "2026-09-16T10:37:57.499Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149729:5692508568:2026-09-16T05:57:18Z:clawsweeper_needs_human",
-      "comment_id": "5692508568",
-      "comment_version_key": "5692508568:2026-09-16T05:57:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149729#issuecomment-5692508568",
-      "comment_created_at": "2026-09-16T05:28:52Z",
-      "comment_updated_at": "2026-09-16T05:57:18Z",
-      "comment_body_sha256": "d2311d7382c4fa91bed4cbe84380222a674675b8ccd6fe7650fe03d4f727d37d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149729,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reported CI failures have not been attributed; the available evidence does not establish whether they are related to this patch. (sha=922d74e131b098e34a738cbfad56aa97a91de7c8)",
-      "expected_head_sha": "922d74e131b098e34a738cbfad56aa97a91de7c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T05:58:10.996Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-burden/perf-gateway-agents",
-        "head_sha": "922d74e131b098e34a738cbfad56aa97a91de7c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149180:5682456768:2026-09-16T05:57:23Z:clawsweeper_needs_human",
       "comment_id": "5682456768",
@@ -33816,6 +33783,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149269:5696104835:2026-09-16T10:37:01Z:re_review",
+      "comment_id": "5696104835",
+      "comment_version_key": "5696104835:2026-09-16T10:37:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149269#issuecomment-5696104835",
+      "comment_created_at": "2026-09-16T10:37:01Z",
+      "comment_updated_at": "2026-09-16T10:37:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149269,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T10:37:55.413Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/task-retention-recovery",
+        "head_sha": "4c4a7d777444f7a212801049cde9eba4c8821b81",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
