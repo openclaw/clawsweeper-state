@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T02:46:16.960Z",
+  "updated_at": "2026-09-16T02:46:39.406Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149005:5688283175:2026-09-15T21:23:19Z:re_review",
-      "comment_id": "5688283175",
-      "comment_version_key": "5688283175:2026-09-15T21:23:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149005#issuecomment-5688283175",
-      "comment_created_at": "2026-09-15T21:23:19Z",
-      "comment_updated_at": "2026-09-15T21:23:19Z",
-      "comment_body_sha256": "a5e892e1f4c6bce6040b28065ecaaa5bd346770c70b7fd8d24cd43fca1277d08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149005,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T21:56:19.033Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/stdio-cleanup-completion",
-        "head_sha": "d76ff41275947149b259cbe8b785d4da229dd945",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148890:5688295777:2026-09-15T21:24:27Z:re_review",
       "comment_id": "5688295777",
@@ -33201,6 +33154,39 @@
         "kind": "pull_request",
         "branch": "triage/babelfish-hook-stdin",
         "head_sha": "4cf62f0b6d05df23af67aba296f6a2ba97abea91",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149610:5691268588:2026-09-16T02:45:45Z:clawsweeper_needs_human",
+      "comment_id": "5691268588",
+      "comment_version_key": "5691268588:2026-09-16T02:45:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149610#issuecomment-5691268588",
+      "comment_created_at": "2026-09-16T02:45:45Z",
+      "comment_updated_at": "2026-09-16T02:45:45Z",
+      "comment_body_sha256": "64ddb90497e59c071137379d64c017d8e70bfe1a85a24a6af0f0874a74f90ae0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149610,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=f011c80a4867fa596745a06822635d0b40cc3484)",
+      "expected_head_sha": "f011c80a4867fa596745a06822635d0b40cc3484",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T02:46:39.405Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/bundled-plugin-icons",
+        "head_sha": "f011c80a4867fa596745a06822635d0b40cc3484",
         "cluster_id": null,
         "job_path": null
       }
