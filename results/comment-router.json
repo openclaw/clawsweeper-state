@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T20:03:58.355Z",
+  "updated_at": "2026-09-16T20:06:10.049Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148857:5698004885:2026-09-16T13:10:56Z:re_review",
-      "comment_id": "5698004885",
-      "comment_version_key": "5698004885:2026-09-16T13:10:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148857#issuecomment-5698004885",
-      "comment_created_at": "2026-09-16T13:10:56Z",
-      "comment_updated_at": "2026-09-16T13:10:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148857,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T13:11:52.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-148796-sqlite-suffix-discovery",
-        "head_sha": "b567ce4b376bb255820f1e1acd12d0f456167fa4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149392:5687574450:2026-09-16T13:09:05Z:clawsweeper_auto_repair",
       "comment_id": "5687574450",
@@ -33748,6 +33701,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-723-plugin-import",
         "head_sha": "af8f8033bce8633493a4e7acc0e14ee5949deb22",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150269:5703768971:2026-09-16T20:04:59Z:clawsweeper_needs_human",
+      "comment_id": "5703768971",
+      "comment_version_key": "5703768971:2026-09-16T20:04:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150269#issuecomment-5703768971",
+      "comment_created_at": "2026-09-16T20:04:59Z",
+      "comment_updated_at": "2026-09-16T20:04:59Z",
+      "comment_body_sha256": "545d21a3e0c9683dfdc01146055feac052d40d501e989a9da70916c3c6d684f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150269,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing JSON consumers may fail or misinterpret results when bootstrap counts become null, session details are redacted, and requested audit/compatibility sections become uncollected... (sha=b0286e53ff37eee4acf163ef59b1f0e9c0c412a5)",
+      "expected_head_sha": "b0286e53ff37eee4acf163ef59b1f0e9c0c412a5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T20:06:10.049Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/fleet-status-projection",
+        "head_sha": "b0286e53ff37eee4acf163ef59b1f0e9c0c412a5",
         "cluster_id": null,
         "job_path": null
       }
