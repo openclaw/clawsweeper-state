@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149985",
+  "mode": "autonomous",
+  "run_id": "35086386448",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35086386448",
+  "head_sha": "02cd682921ca0c796212319c1a28c9b1e4bfac58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149985.md",
+  "published_at": "2026-09-16T11:27:19.575Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149985",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149985",
+  "canonical_pr": null,
+  "summary": "Confirmed the persistence omission in source at preflight main 38b51151646d5bd1af2bd27a0e53c7fd4b775115. Prepared a narrow fix artifact. Implementation and SQLite reproduction are blocked by the read-only host; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#149985",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149985",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair remains justified. Execution requires a writable, dependency-ready checkout and a failing regression before production changes."
+    },
+    {
+      "target": "#108349",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#108353",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Non-mutating quarantine only; this concern does not block the independent CLI transcript repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149985",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#149985",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation and publication require the deterministic executor on a writable host."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
