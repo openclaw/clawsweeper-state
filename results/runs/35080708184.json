@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149940",
+  "mode": "autonomous",
+  "run_id": "35080708184",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35080708184",
+  "head_sha": "02cd682921ca0c796212319c1a28c9b1e4bfac58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149940.md",
+  "published_at": "2026-09-16T10:24:32.560Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149940",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149940",
+  "canonical_pr": null,
+  "summary": "The prompt gap remains in the inspected checkout. A narrow fix artifact is prepared, but implementation and regression validation are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#149940",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149940",
+      "candidate_fix": null,
+      "reason": "Complete existing prompt guidance without changing delivery authorization. Refresh issue and matching PR state before implementation or publication."
+    },
+    {
+      "target": "#146503",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149940",
+      "candidate_fix": null,
+      "reason": "Separate tool-availability work; no repair, replacement, or merge is proposed in this cluster."
+    },
+    {
+      "target": "#149156",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#149940",
+      "candidate_fix": null,
+      "reason": "Its delivery-policy scope and unresolved findings remain outside this prompt-only repair. It is not a canonical fix for #149940."
+    },
+    {
+      "target": "#147092",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": "#149549",
+      "reason": "Historical evidence only."
+    },
+    {
+      "target": "#149549",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve this merged contribution as the foundation for the remaining consumer fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149940",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149940",
+      "candidate_fix": null,
+      "reason": "The remaining prompt defect supports a narrow non-security fix artifact."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149940",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#149940",
+      "candidate_fix": null,
+      "reason": "Blocked until the executor reproduces the missing guidance through the runner, implements and validates the patch in a writable checkout, and refreshes matching PR state."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
