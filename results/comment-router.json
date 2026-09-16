@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T04:16:11.536Z",
+  "updated_at": "2026-09-16T04:16:12.265Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116450:5689694226:2026-09-15T23:41:25Z:re_review",
-      "comment_id": "5689694226",
-      "comment_version_key": "5689694226:2026-09-15T23:41:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116450#issuecomment-5689694226",
-      "comment_created_at": "2026-09-15T23:41:25Z",
-      "comment_updated_at": "2026-09-15T23:41:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116450,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T23:42:23.087Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/rust-runtime-followup",
-        "head_sha": "5dc484118ee709009f1719804ee4d26cad197bda",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/ocm:235:5689695146:2026-09-15T23:41:32Z:clawsweeper_needs_human",
       "comment_id": "5689695146",
@@ -33461,6 +33414,39 @@
         "kind": "pull_request",
         "branch": "fix/self-discovery-20260916",
         "head_sha": "667595aaee1dfd911379c0cb02df98df2225436c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:312:5691805470:2026-09-16T04:15:24Z:clawsweeper_needs_human",
+      "comment_id": "5691805470",
+      "comment_version_key": "5691805470:2026-09-16T04:15:24Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/312#issuecomment-5691805470",
+      "comment_created_at": "2026-09-16T03:57:12Z",
+      "comment_updated_at": "2026-09-16T04:15:24Z",
+      "comment_body_sha256": "0d4c65cd7be74fcce2eb0d1e7ed7530bb8d4ce4c68f0388cef8d54075540ce71",
+      "repo": "openclaw/crabpot",
+      "issue_number": 312,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The original six Google Meet runtime calls have no same-target after-fix comparison; faithful loading may expose prerequisite failures, so this adoption cannot establish that those bu... (sha=4a1c3d785693c9d1e99789c1b07a931ca7ff9d71)",
+      "expected_head_sha": "4a1c3d785693c9d1e99789c1b07a931ca7ff9d71",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T04:16:12.265Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/inspector-lazy-runtime-contract",
+        "head_sha": "4a1c3d785693c9d1e99789c1b07a931ca7ff9d71",
         "cluster_id": null,
         "job_path": null
       }
