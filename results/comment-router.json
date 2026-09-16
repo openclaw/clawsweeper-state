@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-16T12:54:22.702Z",
+  "updated_at": "2026-09-16T12:55:02.101Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:131590:5467275467:2026-08-30T07:00:24Z:re_review",
-      "comment_id": "5467275467",
-      "comment_version_key": "5467275467:2026-08-30T07:00:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/131590#issuecomment-5467275467",
-      "comment_created_at": "2026-08-30T07:00:24Z",
-      "comment_updated_at": "2026-08-30T07:00:24Z",
-      "comment_body_sha256": "189b598765e8591c19493a49e5f74cc609d32dc0dbdfa8538709a489a51d74e7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 131590,
-      "author": "lonexreb",
-      "author_id": 95570942,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — head `ffbdcfb4435`: the p1 is fixed by consulting the shared `besteffortsuppressesfailurealert` predicate in the terminal disposition, so a best-effort one-shot whose inherited alert is suppressed falls back to the generic auto-disable notice (regression test `falls back to the auto-disable notice when best-effort suppresses the terminal alert`). the p2 docs gap is closed: docs/cli/cron.md now documents the terminal one-shot exception to `failurealert.after`, its cooldown behavior, and the safety-notice fallback",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T07:12:52.975Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:131590:5474586943:2026-08-31T06:25:50Z:re_review",
       "comment_id": "5474586943",
@@ -33583,6 +33556,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149973:5695981568:2026-09-16T12:54:12Z:clawsweeper_needs_human",
+      "comment_id": "5695981568",
+      "comment_version_key": "5695981568:2026-09-16T12:54:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149973#issuecomment-5695981568",
+      "comment_created_at": "2026-09-16T10:27:08Z",
+      "comment_updated_at": "2026-09-16T12:54:12Z",
+      "comment_body_sha256": "21edeb253b31f5fbe1dd8246eac0fe792abe208478506193cedfc613456d42eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149973,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The toggle-off screenshot pair’s rendering on GitHub remains unverified, leaving the repository’s screenshot-delivery landing gate open. (sha=38d05513e91221056124536920b7556bd1b0f6bf)",
+      "expected_head_sha": "38d05513e91221056124536920b7556bd1b0f6bf",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T12:55:02.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-incognito-query-draft",
+        "head_sha": "38d05513e91221056124536920b7556bd1b0f6bf",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
