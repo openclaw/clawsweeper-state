@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T09:26:30.824Z",
+  "updated_at": "2026-09-16T09:27:16.971Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:116450:5692441752:2026-09-16T05:20:25Z:re_review",
-      "comment_id": "5692441752",
-      "comment_version_key": "5692441752:2026-09-16T05:20:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/116450#issuecomment-5692441752",
-      "comment_created_at": "2026-09-16T05:20:25Z",
-      "comment_updated_at": "2026-09-16T05:20:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 116450,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T05:23:57.968Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "agent/rust-runtime-followup",
-        "head_sha": "43108ddd4ac4ff0b6b33f7a350b19f21852d1cf6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116863:5692442339:2026-09-16T05:20:29Z:re_review",
       "comment_id": "5692442339",
@@ -33761,6 +33714,39 @@
         "kind": "pull_request",
         "branch": "fix/discord-queued-followup-progress-cleanup",
         "head_sha": "6d4a0278786641712167810e88ce948a4462065e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabline:318:5695190380:2026-09-16T09:26:23Z:clawsweeper_needs_human",
+      "comment_id": "5695190380",
+      "comment_version_key": "5695190380:2026-09-16T09:26:23Z",
+      "comment_url": "https://github.com/openclaw/crabline/pull/318#issuecomment-5695190380",
+      "comment_created_at": "2026-09-16T09:26:23Z",
+      "comment_updated_at": "2026-09-16T09:26:23Z",
+      "comment_body_sha256": "2a7821872fd3a159a8a9a14499edac57d48208f187787531480f36ddfdf93b21",
+      "repo": "openclaw/crabline",
+      "issue_number": 318,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The downstream Gateway run is reported successful, but its failed artifact retention leaves that integration result unaudited. (sha=6e803c566bfca29cc814113bd77a6af58d232143)",
+      "expected_head_sha": "6e803c566bfca29cc814113bd77a6af58d232143",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T09:27:16.971Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/slack-p03-format-checkpoint-20260915",
+        "head_sha": "6e803c566bfca29cc814113bd77a6af58d232143",
         "cluster_id": null,
         "job_path": null
       }
