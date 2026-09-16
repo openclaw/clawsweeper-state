@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-150165",
+  "mode": "autonomous",
+  "run_id": "35123290217",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35123290217",
+  "head_sha": "f48f1cee58c5ac867114cc77fb088b172aa4e9a9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-150165.md",
+  "published_at": "2026-09-16T17:18:43.959Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/150165",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/150165",
+  "canonical_pr": null,
+  "summary": "Reproduced missing child attribution through getMessageFeishu. Narrow fix artifact prepared; implementation and after-fix validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#150165",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#150165",
+      "candidate_fix": null,
+      "reason": "The existing formatter emits only child bodies. Restore attribution at that owner without changing routing, permissions, configuration or mention resolution."
+    },
+    {
+      "target": "#39001",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#150165",
+      "candidate_fix": null,
+      "reason": "Historical partial overlap; no reopening, closure or branch replacement is requested."
+    },
+    {
+      "target": "#148184",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#150165",
+      "candidate_fix": null,
+      "reason": "Preserve the existing decoded-item contract; this merged refactor is not an attribution fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-150165",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#150165",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Implementation requires a writable executor that refreshes main, reproduces the regression, applies the narrow fix and validates before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
