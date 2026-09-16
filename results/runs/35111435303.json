@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-150117",
+  "mode": "autonomous",
+  "run_id": "35111435303",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35111435303",
+  "head_sha": "f48f1cee58c5ac867114cc77fb088b172aa4e9a9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-150117.md",
+  "published_at": "2026-09-16T15:18:36.057Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/150117",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/150117",
+  "canonical_pr": null,
+  "summary": "Verified the reported defect in source at preflight main 9c2fe2698ba417ed565ff4c581a38dc4a8837284. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked on this read-only host with dependencies absent; no changes or GitHub mutations were made.",
+  "actions": [
+    {
+      "target": "#150117",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#150117",
+      "candidate_fix": null,
+      "reason": "An ordinary successful-delivery reporting defect remains source-verifiable. Executable regression proof must precede implementation on the executor."
+    },
+    {
+      "target": "#48450",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical partial-failure regression context, distinct from successful sends losing delivery confirmation. Preserve its existing behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-150117",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#150117",
+      "candidate_fix": null,
+      "reason": "The repair is narrow and requires no product decision. The executor must first demonstrate the failing regression on current main, then implement, validate, and review."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
