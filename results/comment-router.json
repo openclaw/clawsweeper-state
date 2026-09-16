@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T18:25:12.807Z",
+  "updated_at": "2026-09-16T18:25:24.866Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149962:5695819365:2026-09-16T11:12:51Z:clawsweeper_needs_human",
-      "comment_id": "5695819365",
-      "comment_version_key": "5695819365:2026-09-16T11:12:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149962#issuecomment-5695819365",
-      "comment_created_at": "2026-09-16T10:14:36Z",
-      "comment_updated_at": "2026-09-16T11:12:51Z",
-      "comment_body_sha256": "888f29b253af6adb6ec0acc7e1f1f51e9d514082ac701ac4f1bd0d8d8f8f8853",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149962,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ffcf63fb88080aba6c6d05a15e164e92beef664c)",
-      "expected_head_sha": "ffcf63fb88080aba6c6d05a15e164e92beef664c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T11:22:56.673Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-outbox-reorder-error",
-        "head_sha": "ffcf63fb88080aba6c6d05a15e164e92beef664c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149968:5695876598:2026-09-16T11:16:54Z:clawsweeper_needs_human",
       "comment_id": "5695876598",
@@ -33385,6 +33352,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147807:5702464651:2026-09-16T18:24:25Z:re_review",
+      "comment_id": "5702464651",
+      "comment_version_key": "5702464651:2026-09-16T18:24:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147807#issuecomment-5702464651",
+      "comment_created_at": "2026-09-16T18:24:25Z",
+      "comment_updated_at": "2026-09-16T18:24:25Z",
+      "comment_body_sha256": "12d42c6eb3fa1f8d6bd805b7ef2489709dbd2d389ba3ee8f831cb40d65421a7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147807,
+      "author": "etzelm",
+      "author_id": 16581152,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T18:25:22.629Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openrouter-per-day-rate-limit",
+        "head_sha": "5dd251d5438f452924c96e6dab9600bc4654308d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
