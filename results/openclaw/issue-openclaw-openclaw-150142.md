@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150142"
 mode: "autonomous"
-run_id: "35118860149"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35118860149"
+run_id: "35127525701"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35127525701"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
 workflow_conclusion: "failure"
-result_status: "planned"
-published_at: "2026-09-16T17:19:24.730Z"
+result_status: "blocked"
+published_at: "2026-09-16T18:01:10.383Z"
 canonical: "https://github.com/openclaw/openclaw/issues/150142"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/150142"
 canonical_pr: null
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35118860149](https://github.com/openclaw/clawsweeper/actions/runs/35118860149)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35127525701](https://github.com/openclaw/clawsweeper/actions/runs/35127525701)
 
 Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
 Canonical: https://github.com/openclaw/openclaw/issues/150142
 
 ## Summary
 
-Reproduced the caption defects through production-generated scripts on preflight main ca086327834a8bef1690ab5437ba39c5887745be. Prepared a narrow fix plan; implementation is blocked by the read-only host. No files or GitHub state changed. Targeted tests, review, and real Meet proof remain outstanding.
+Reproduced caption ingestion defects on preflight main. Narrow fix artifact prepared; implementation is blocked by the read-only host and missing dependencies. Required real Meet proof remains pending. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Reproduced the caption defects through production-generated scripts on preflight
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150142 | fix_needed | blocked | canonical | The bug is reproduced and the repair scope is clear. Local implementation is blocked by the enforced read-only filesystem; dependencies are also absent. Continue through the writable executor using the cluster fix artifact. |
-| #146076 | keep_related | planned | related | Preserve this useful contributor PR as a separate repair. Closing and merging are outside this job's authority. |
-| cluster:issue-openclaw-openclaw-150142 | build_fix_artifact | planned | canonical | A narrow new fix PR is appropriate. The artifact can proceed independently of the worker host's implementation restriction. |
+| #150142 | fix_needed | planned | canonical | Confirmed ordinary ingestion bug with a narrow plugin-owned repair path. Implementation requires a writable executor; no product or security decision remains unresolved. |
+| #146076 | keep_related | planned | related | Distinct useful contributor work. Preserve the PR and its attribution; do not replace, close, or adopt it for this issue. |
+| cluster:issue-openclaw-openclaw-150142 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Applying and validating the repair is blocked on a writable executor with dependencies and an authorized real Meet proof environment. |
 
 ## Needs Human
 
