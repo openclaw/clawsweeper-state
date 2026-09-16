@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150201"
-mode: "autonomous"
-run_id: "35158986186"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35158986186"
+mode: "plan"
+run_id: "35162428435"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35162428435"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-16T23:24:33.877Z"
-canonical: "https://github.com/openclaw/openclaw/issues/150201"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/150201"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-16T23:31:29.331Z"
+canonical: "#150201"
+canonical_issue: "#150201"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35158986186](https://github.com/openclaw/clawsweeper/actions/runs/35158986186)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35162428435](https://github.com/openclaw/clawsweeper/actions/runs/35162428435)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/150201
+Canonical: #150201
 
 ## Summary
 
-Confirmed the archive-warning classification gap in source at preflight main 75ba5e3fae5c8aa543e65557db51ce0d0f7b1199. Prepared a narrow fix artifact. Implementation, failing regression, local validation, and published-updater recovery proof remain blocked by this host's read-only filesystem. No files or GitHub state changed.
+Plan one narrow fix for malformed noncanonical archives becoming Doctor refusals. Source inspection confirms the path at preflight main ab202aa1e12cf5c7612efbc726fa70f8eb9e78c1. Runtime reproduction, implementation, and Windows recovery proof remain pending; this read-only planning run changed nothing.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,8 @@ Confirmed the archive-warning classification gap in source at preflight main 75b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150201 | fix_needed | planned | canonical | The source supports a narrow owner-local correction; no viable open implementation PR is present in the hydrated inventory. Scheduled Task recovery remains outside this repair. |
-| #148545 | keep_related | planned | related | Keep open as a related diagnostic report. |
-| #144688 | keep_closed | skipped | related | Historical context, not an open repair target. |
-| #145219 | keep_closed | skipped | related | Historical context; timeout work does not correct archive receipt classification. |
-| #147762 | keep_closed | skipped | related | Historical context, not a candidate for this archive-warning fix. |
-| #149956 | keep_closed | skipped | related | Related landed work does not cover the remaining media-persistence refusal. |
-| cluster:issue-openclaw-openclaw-150201 | build_fix_artifact | planned | canonical | Planning is complete; implementation remains blocked on a writable execution environment and must begin with a failing regression. |
+| #150201 | fix_needed | planned | canonical | A focused non-security bug fix is supported by source and the job. Establish a failing real-planner regression before implementation; do not claim the broader Windows service problem is resolved. |
+| #148545 | keep_related | planned | related | Related update symptoms do not establish the same remaining root cause. Preserve the existing follow-up. |
 
 ## Needs Human
 
