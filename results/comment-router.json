@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T13:32:07.025Z",
+  "updated_at": "2026-09-16T13:32:09.630Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149706:5693714573:2026-09-16T07:31:35Z:re_review",
-      "comment_id": "5693714573",
-      "comment_version_key": "5693714573:2026-09-16T07:31:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149706#issuecomment-5693714573",
-      "comment_created_at": "2026-09-16T07:31:35Z",
-      "comment_updated_at": "2026-09-16T07:31:35Z",
-      "comment_body_sha256": "d064f47e86a792ba45ed50e177f9ebc22d28b59a9c011e30d312eb8d66293136",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149706,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T07:32:37.491Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/freebsd-service-discovery",
-        "head_sha": "5a85b0d3adde8940a862261dc13cacfe0dd2e20b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149663:5691760339:2026-09-16T03:50:58Z:maintainer_approve_automerge",
       "comment_id": "5691760339",
@@ -33490,6 +33443,39 @@
       "status": "skipped",
       "processed_at": "2026-09-16T13:32:07.025Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:611:5698289096:2026-09-16T13:30:52Z:clawsweeper_needs_human",
+      "comment_id": "5698289096",
+      "comment_version_key": "5698289096:2026-09-16T13:30:52Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/611#issuecomment-5698289096",
+      "comment_created_at": "2026-09-16T13:30:52Z",
+      "comment_updated_at": "2026-09-16T13:30:52Z",
+      "comment_body_sha256": "97e14e0f79705d1f4fce2ba7b49d770c33e0fb6deddd66d4fd4dfd5d5f6527bc",
+      "repo": "openclaw/acpx",
+      "issue_number": 611,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3958d6740b7fdc7198985fc06a6e1a730eb7a7ab)",
+      "expected_head_sha": "3958d6740b7fdc7198985fc06a6e1a730eb7a7ab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T13:32:09.630Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/production-1b16277706",
+        "head_sha": "3958d6740b7fdc7198985fc06a6e1a730eb7a7ab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
