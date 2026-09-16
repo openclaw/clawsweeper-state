@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T14:19:35.989Z",
+  "updated_at": "2026-09-16T14:19:45.002Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3745:5694214722:2026-09-16T08:09:30Z:clawsweeper_needs_human",
-      "comment_id": "5694214722",
-      "comment_version_key": "5694214722:2026-09-16T08:09:30Z",
-      "comment_url": "https://github.com/openclaw/clawhub/pull/3745#issuecomment-5694214722",
-      "comment_created_at": "2026-09-16T08:09:30Z",
-      "comment_updated_at": "2026-09-16T08:09:30Z",
-      "comment_body_sha256": "7596402fa3efb8726cde19f800e6b93dfd99eb3a3d06567df993469aca49c31c",
-      "repo": "openclaw/clawhub",
-      "issue_number": 3745,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Old and new assigned worker releases use different locks and can overlap unless operators drain running and pending assigned work before activation. (sha=ef184c333930c68288b909af4a7df188032e92f2)",
-      "expected_head_sha": "ef184c333930c68288b909af4a7df188032e92f2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T08:10:16.542Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/clawscan-assigned-lanes",
-        "head_sha": "ef184c333930c68288b909af4a7df188032e92f2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabpot:313:5694214773:2026-09-16T08:09:30Z:clawsweeper_needs_human",
       "comment_id": "5694214773",
@@ -33346,6 +33313,53 @@
         "kind": "pull_request",
         "branch": "perf/worker-session-lookup-20260916",
         "head_sha": "3a273a95e9a9084be1515d366286666deca82e76",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150059:5699006789:2026-09-16T14:18:40Z:re_review",
+      "comment_id": "5699006789",
+      "comment_version_key": "5699006789:2026-09-16T14:18:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150059#issuecomment-5699006789",
+      "comment_created_at": "2026-09-16T14:18:40Z",
+      "comment_updated_at": "2026-09-16T14:18:40Z",
+      "comment_body_sha256": "6218681dddabd9bc417e45de3e0bf17886bad565334ce38666301d7449f7d664",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150059,
+      "author": "Tosko4",
+      "author_id": 1294707,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T14:19:42.734Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-review-implicit-runtime",
+        "head_sha": "0b3304f7235c61fbfbd55b1fc5a5488738ab153c",
         "cluster_id": null,
         "job_path": null
       },
