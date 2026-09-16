@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T19:24:58.254Z",
+  "updated_at": "2026-09-16T19:26:17.620Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149729:5692508568:2026-09-16T12:24:50Z:clawsweeper_needs_human",
-      "comment_id": "5692508568",
-      "comment_version_key": "5692508568:2026-09-16T12:24:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149729#issuecomment-5692508568",
-      "comment_created_at": "2026-09-16T05:28:52Z",
-      "comment_updated_at": "2026-09-16T12:24:50Z",
-      "comment_body_sha256": "1b9942e329f54e26de3e010eb2cd982148f206e5b3a28a5d81dd6b3742e1d539",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149729,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=caf6e7638206be2fa87e0c07f8b95ac5cddd50d0)",
-      "expected_head_sha": "caf6e7638206be2fa87e0c07f8b95ac5cddd50d0",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T12:35:45.907Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-burden/perf-gateway-agents",
-        "head_sha": "caf6e7638206be2fa87e0c07f8b95ac5cddd50d0",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149741:5692767893:2026-09-16T12:27:43Z:clawsweeper_needs_human",
       "comment_id": "5692767893",
@@ -33597,6 +33564,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5703270579:2026-09-16T19:25:22Z:re_review",
+      "comment_id": "5703270579",
+      "comment_version_key": "5703270579:2026-09-16T19:25:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5703270579",
+      "comment_created_at": "2026-09-16T19:25:22Z",
+      "comment_updated_at": "2026-09-16T19:25:22Z",
+      "comment_body_sha256": "447092690bdbc158f7bbb9eca7c30c2f00191f8e5eb2ef6bff87f97ab14bec28",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T19:26:15.691Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "7342493dbeb877936d57509a5348600f513cabc8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
