@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T15:39:18.932Z",
+  "updated_at": "2026-09-16T15:39:51.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149911:5694888678:2026-09-16T09:04:21Z:re_review",
-      "comment_id": "5694888678",
-      "comment_version_key": "5694888678:2026-09-16T09:04:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149911#issuecomment-5694888678",
-      "comment_created_at": "2026-09-16T09:04:21Z",
-      "comment_updated_at": "2026-09-16T09:04:21Z",
-      "comment_body_sha256": "cb67c1fcedc9f2bcbdc4065c55373938cffba1ed90081377d5af129ceff45de4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149911,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T09:05:13.091Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/desktop-rustls-0.23.45",
-        "head_sha": "81637ca5a74be1acb5715279b8ed305fa1c08d34",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3678:5694018873:2026-09-16T08:58:45Z:clawsweeper_needs_human",
       "comment_id": "5694018873",
@@ -33340,6 +33293,39 @@
         "kind": "pull_request",
         "branch": "fix/ps-lstart-locale",
         "head_sha": "4a8510571ef7d19f47a55781de281611d543b64a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150011:5696874402:2026-09-16T15:38:49Z:clawsweeper_needs_human",
+      "comment_id": "5696874402",
+      "comment_version_key": "5696874402:2026-09-16T15:38:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150011#issuecomment-5696874402",
+      "comment_created_at": "2026-09-16T11:43:37Z",
+      "comment_updated_at": "2026-09-16T15:38:49Z",
+      "comment_body_sha256": "523b463329e2fdff8d9a5acc51296c476b0d24e7ec616bd51b54de4423fa3a19",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed CLI claim path has mocked writer/receipt assertions and separate SQLite helper coverage, but no after-fix real setup shows a plugin... (sha=b1ac06aa1567b8f60c8e9b3e4f74bd281faef2db)",
+      "expected_head_sha": "b1ac06aa1567b8f60c8e9b3e4f74bd281faef2db",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T15:39:51.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149985-cli-transcript-persist",
+        "head_sha": "b1ac06aa1567b8f60c8e9b3e4f74bd281faef2db",
         "cluster_id": null,
         "job_path": null
       }
