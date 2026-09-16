@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T01:25:23.211Z",
+  "updated_at": "2026-09-16T01:27:02.276Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149150:5687387712:2026-09-15T20:08:28Z:re_review",
-      "comment_id": "5687387712",
-      "comment_version_key": "5687387712:2026-09-15T20:08:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149150#issuecomment-5687387712",
-      "comment_created_at": "2026-09-15T20:08:28Z",
-      "comment_updated_at": "2026-09-15T20:08:28Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149150,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T20:27:23.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-managed-handoff-fixtures",
-        "head_sha": "a27f30554e14d0a7494ced4ceff1854c7b48bb35",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:323:5655965833:2026-09-15T20:10:36Z:clawsweeper_needs_human",
       "comment_id": "5655965833",
@@ -33278,6 +33231,39 @@
         "kind": "pull_request",
         "branch": "fix/memory-vector-query-plan",
         "head_sha": "ce41522e3e872c92cbc98bb22af6e7b112f50ac9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149404:5687838283:2026-09-16T01:25:41Z:clawsweeper_needs_human",
+      "comment_id": "5687838283",
+      "comment_version_key": "5687838283:2026-09-16T01:25:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149404#issuecomment-5687838283",
+      "comment_created_at": "2026-09-15T20:45:24Z",
+      "comment_updated_at": "2026-09-16T01:25:41Z",
+      "comment_body_sha256": "ef92ed8e795a53ee77c12d55e159450200c071b47adefa9cc81e644e2ba09174",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149404,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Integration with later main remains unvalidated: the fixture prerequisite is still open, and the available test merge covers only the older pinned base. (sha=d7a248c5f41f8c5671d335288fab58d6abae4e28)",
+      "expected_head_sha": "d7a248c5f41f8c5671d335288fab58d6abae4e28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T01:27:02.276Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cold-search-reader-scope",
+        "head_sha": "d7a248c5f41f8c5671d335288fab58d6abae4e28",
         "cluster_id": null,
         "job_path": null
       }
