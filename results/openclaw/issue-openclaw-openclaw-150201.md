@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150201"
-mode: "autonomous"
-run_id: "35152925836"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35152925836"
+mode: "plan"
+run_id: "35157862917"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35157862917"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-16T22:14:11.338Z"
-canonical: "https://github.com/openclaw/openclaw/issues/150201"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/150201"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-16T22:32:30.138Z"
+canonical: "#150201"
+canonical_issue: "#150201"
 canonical_pr: null
-actions_total: 7
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35152925836](https://github.com/openclaw/clawsweeper/actions/runs/35152925836)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35157862917](https://github.com/openclaw/clawsweeper/actions/runs/35157862917)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/150201
+Canonical: #150201
 
 ## Summary
 
-Source inspection supports the archive-refusal defect. Prepared a narrow fix plan; implementation and runtime reproduction are blocked by the read-only host. No files or GitHub state changed.
+Plan a narrow media-persistence repair for #150201. Source inspection at preflight main 6f08e4ea3c560d456f4ae1a02b0ca275bd24936e supports the reported archive-warning-to-refusal path. No code or GitHub changes were made. Runtime regression, candidate validation, and Windows recovery proof remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,8 @@ Source inspection supports the archive-refusal defect. Prepared a narrow fix pla
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150201 | fix_needed | planned | canonical | A narrow owner-local repair remains justified by source evidence, subject to failing reproduction on refreshed main before implementation. |
-| #148545 | keep_related | planned | related | Keep open; coverage by the scoped archive repair is unproven. |
-| #144688 | keep_closed | skipped | related | Historical context; distinct from archive warning classification. |
-| #145219 | keep_closed | skipped | related | Historical context; does not establish resolution of the archive refusal. |
-| #147762 | keep_closed | skipped | related | Historical context; preserve its database ownership and update safeguards. |
-| #149956 | keep_closed | skipped | related | Related advisory behavior, but not proof that this separate refusal is fixed. |
-| cluster:issue-openclaw-openclaw-150201 | build_fix_artifact | planned |  | Hand off the narrow repair to a writable isolated executor. Reproduce on refreshed main before changing production code; stop for re-triage if reproduction fails. |
+| #150201 | fix_needed | planned | canonical | The scoped ordinary bug has a concrete repair path. Earlier merged snapshot, timeout, and retained-import fixes do not establish resolution of this remaining refusal. Managed-service recovery remains outside this repair. |
+| #148545 | keep_related | planned | related | The update symptom is related, but the available reproduction does not prove the same remaining root cause. |
 
 ## Needs Human
 
