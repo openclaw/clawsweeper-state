@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T02:06:32.905Z",
+  "updated_at": "2026-09-16T02:07:42.241Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149369:5686979772:2026-09-15T20:55:49Z:clawsweeper_needs_human",
-      "comment_id": "5686979772",
-      "comment_version_key": "5686979772:2026-09-15T20:55:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149369#issuecomment-5686979772",
-      "comment_created_at": "2026-09-15T19:34:56Z",
-      "comment_updated_at": "2026-09-15T20:55:49Z",
-      "comment_body_sha256": "429eeb79f858ec2be1215354d8866d193cea4e0403aef53bbeca83013c0fd6ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149369,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After genuine thaw recovery remains deferred for ten minutes, an account with health monitoring disabled loses the previous eventual thaw retry and may require manual reconnection. (sha=264e875d78246d70c5eeac5ce21e660ebca5c0ea)",
-      "expected_head_sha": "264e875d78246d70c5eeac5ce21e660ebca5c0ea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T21:09:28.194Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-host-thaw-busy-gateway-20260915",
-        "head_sha": "264e875d78246d70c5eeac5ce21e660ebca5c0ea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149378:5687236943:2026-09-15T20:55:51Z:clawsweeper_auto_repair",
       "comment_id": "5687236943",
@@ -33296,6 +33263,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149572:5690932648:2026-09-16T02:06:49Z:re_review",
+      "comment_id": "5690932648",
+      "comment_version_key": "5690932648:2026-09-16T02:06:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149572#issuecomment-5690932648",
+      "comment_created_at": "2026-09-16T02:06:49Z",
+      "comment_updated_at": "2026-09-16T02:06:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149572,
+      "author": "ZengWen-DT",
+      "author_id": 290981215,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T02:07:37.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149253-linux-watchdog-cli-churn",
+        "head_sha": "613daebf549689344f8c03417eee99303f5e1ce7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
