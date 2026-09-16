@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T23:17:07.289Z",
+  "updated_at": "2026-09-16T23:17:10.360Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/babelfish:23:5701252458:2026-09-16T16:53:44Z:re_review",
-      "comment_id": "5701252458",
-      "comment_version_key": "5701252458:2026-09-16T16:53:44Z",
-      "comment_url": "https://github.com/openclaw/babelfish/pull/23#issuecomment-5701252458",
-      "comment_created_at": "2026-09-16T16:53:44Z",
-      "comment_updated_at": "2026-09-16T16:53:44Z",
-      "comment_body_sha256": "fcf672eef8940ca9aabd2538034282c2183a4f60e4679218a6e3e9bb916b7ddd",
-      "repo": "openclaw/babelfish",
-      "issue_number": 23,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T16:54:32.210Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f005-hook-walk-cap",
-        "head_sha": "ebf68395b14ddbcb495d97e76f88f0c39b77161d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/shellbench:77:5701252789:2026-09-16T16:53:45Z:re_review",
       "comment_id": "5701252789",
@@ -33752,6 +33705,39 @@
         "kind": "pull_request",
         "branch": "fix/150204-talk-relay-transcript-barrier",
         "head_sha": "0d94e498f5aa6215b04fe259fba275224fa2cfc0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150331:5705341588:2026-09-16T23:07:59Z:clawsweeper_needs_human",
+      "comment_id": "5705341588",
+      "comment_version_key": "5705341588:2026-09-16T23:07:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150331#issuecomment-5705341588",
+      "comment_created_at": "2026-09-16T22:15:00Z",
+      "comment_updated_at": "2026-09-16T23:07:59Z",
+      "comment_body_sha256": "2ee87005a0a92989ce49bfcd0d75a3758679fad0e6cdd0a8bfaf4fe5026050a9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required before/after screenshot rendering in the PR and originating chat remains unverified because the supplied attachments could not be inspected. (sha=eacd3e586a1b6b0b4cb2af7cc73682e705e460dd)",
+      "expected_head_sha": "eacd3e586a1b6b0b4cb2af7cc73682e705e460dd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T23:17:10.360Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bundled-publishable-ci-01a0a39d",
+        "head_sha": "eacd3e586a1b6b0b4cb2af7cc73682e705e460dd",
         "cluster_id": null,
         "job_path": null
       }
