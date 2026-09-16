@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T21:04:10.824Z",
+  "updated_at": "2026-09-16T21:06:37.880Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150075:5698728284:2026-09-16T14:00:24Z:re_review",
-      "comment_id": "5698728284",
-      "comment_version_key": "5698728284:2026-09-16T14:00:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150075#issuecomment-5698728284",
-      "comment_created_at": "2026-09-16T14:00:24Z",
-      "comment_updated_at": "2026-09-16T14:00:24Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150075,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T14:06:41.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-state-worker-windows-env-case",
-        "head_sha": "a50e67ecacb31b887d3e45eee1790db886eec28a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150075:5698209391:2026-09-16T14:05:38Z:clawsweeper_needs_human",
       "comment_id": "5698209391",
@@ -33694,6 +33647,39 @@
         "kind": "pull_request",
         "branch": "codex/release-fs-safe-0131-20260916",
         "head_sha": "fe2c9a72149a3ca53058bc0cb2518df229d7c9c9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3644:5595283850:2026-09-16T21:00:57Z:clawsweeper_needs_human",
+      "comment_id": "5595283850",
+      "comment_version_key": "5595283850:2026-09-16T21:00:57Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3644#issuecomment-5595283850",
+      "comment_created_at": "2026-09-09T03:23:35Z",
+      "comment_updated_at": "2026-09-16T21:00:57Z",
+      "comment_body_sha256": "52e7fe4c3c7d1423d1dd3d2e4e663b8179ec1ebf9c18a7b72e318023bd3615ed",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3644,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Preserve the original package on version-pinned security audits (P1)** - This prior finding remains. loadPluginSecurityAudit calls fetchPackageDetail(candidateName) without requestedVersion, so the new canonical...; Review finding: [P1] Preserve the original package on version-pinned security audits — convex/httpApiV1/packagesV1.ts:4183-4184 - [P2] Write the failure report before preparing in... (sha=5979ee9a00ad21b1db7ab6203ef4c5669375d380)",
+      "expected_head_sha": "5979ee9a00ad21b1db7ab6203ef4c5669375d380",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T21:06:37.880Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/claw-723-plugin-sync",
+        "head_sha": "5979ee9a00ad21b1db7ab6203ef4c5669375d380",
         "cluster_id": null,
         "job_path": null
       }
