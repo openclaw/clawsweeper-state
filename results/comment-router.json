@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T15:03:37.603Z",
+  "updated_at": "2026-09-16T15:03:43.914Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149878:5694547369:2026-09-16T08:35:51Z:re_review",
-      "comment_id": "5694547369",
-      "comment_version_key": "5694547369:2026-09-16T08:35:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149878#issuecomment-5694547369",
-      "comment_created_at": "2026-09-16T08:35:51Z",
-      "comment_updated_at": "2026-09-16T08:35:51Z",
-      "comment_body_sha256": "755bc787f4cf61c4244c3d5b6c4488c75152fe16bdb47d94b214d6ed5d71f78a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149878,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T08:38:25.301Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/sidebar-projection-performance",
-        "head_sha": "c8f6623b453c3ab27ca23696d4b7932ae52bec23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140272:5560637739:2026-09-16T08:34:48Z:clawsweeper_auto_repair",
       "comment_id": "5560637739",
@@ -33348,6 +33301,39 @@
         "kind": "pull_request",
         "branch": "cursor/sessions-patch-clear-thread-d7db",
         "head_sha": "3df6b01403b99d77f66b866547ac24efd289822c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:131922:5455631041:2026-09-16T14:56:18Z:clawsweeper_needs_human",
+      "comment_id": "5455631041",
+      "comment_version_key": "5455631041:2026-09-16T14:56:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/131922#issuecomment-5455631041",
+      "comment_created_at": "2026-08-28T17:27:02Z",
+      "comment_updated_at": "2026-09-16T14:56:18Z",
+      "comment_body_sha256": "5d234520ad8062ea186dc0bd600f2b163202b8cb36a8202e269a41ec2d6fbecc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 131922,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing explicit page selections can include previously discarded later evidence and produce different answers after upgrade; this tradeoff is explicitly accepted in the PR body. (sha=04ac5e6542852e46366c1317df3d9d3861ffbc30)",
+      "expected_head_sha": "04ac5e6542852e46366c1317df3d9d3861ffbc30",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T15:03:43.914Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fix-document-extraction-propagate-trunca",
+        "head_sha": "04ac5e6542852e46366c1317df3d9d3861ffbc30",
         "cluster_id": null,
         "job_path": null
       }
