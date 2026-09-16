@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T05:24:41.579Z",
+  "updated_at": "2026-09-16T05:25:07.366Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149130:5690471677:2026-09-16T01:06:41Z:re_review",
-      "comment_id": "5690471677",
-      "comment_version_key": "5690471677:2026-09-16T01:06:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149130#issuecomment-5690471677",
-      "comment_created_at": "2026-09-16T01:06:41Z",
-      "comment_updated_at": "2026-09-16T01:06:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149130,
-      "author": "xialonglee",
-      "author_id": 22994703,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T01:07:33.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-148898-cli-watchdog-suspend",
-        "head_sha": "868440f92005233e4f0afd3974e3dc8fa85329bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149558:5690479489:2026-09-16T01:07:45Z:clawsweeper_needs_human",
       "comment_id": "5690479489",
@@ -33675,6 +33628,39 @@
         "kind": "pull_request",
         "branch": "fix/openai-completions-cumulative-delta-replay",
         "head_sha": "e8d38e8670f6c33c10fcc416eb55ca528416f8b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149724:5692459163:2026-09-16T05:22:37Z:clawsweeper_needs_human",
+      "comment_id": "5692459163",
+      "comment_version_key": "5692459163:2026-09-16T05:22:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149724#issuecomment-5692459163",
+      "comment_created_at": "2026-09-16T05:22:37Z",
+      "comment_updated_at": "2026-09-16T05:22:37Z",
+      "comment_body_sha256": "4bec784ef9248ce57d6cc2f744b79cc6293f66d3b9221846e33e1bdc2b787218",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149724,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ca73189e071aff7e52f0d95ae795bdafc7f68f5c)",
+      "expected_head_sha": "ca73189e071aff7e52f0d95ae795bdafc7f68f5c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T05:25:07.365Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-custom-store-owner-inspection",
+        "head_sha": "ca73189e071aff7e52f0d95ae795bdafc7f68f5c",
         "cluster_id": null,
         "job_path": null
       }
