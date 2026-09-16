@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-16T14:13:36.165Z",
+  "updated_at": "2026-09-16T14:14:11.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149676:5693815816:2026-09-16T07:40:22Z:automerge",
-      "comment_id": "5693815816",
-      "comment_version_key": "5693815816:2026-09-16T07:40:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149676#issuecomment-5693815816",
-      "comment_created_at": "2026-09-16T07:40:22Z",
-      "comment_updated_at": "2026-09-16T07:40:22Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149676,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T08:01:36.082Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-egress-websocket",
-        "head_sha": "69f881fbf9222eb3b6a3f410644a56b690a102dc",
-        "cluster_id": "automerge-openclaw-openclaw-149676",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149676.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149591:5690962592:2026-09-16T08:00:51Z:clawsweeper_needs_human",
       "comment_id": "5690962592",
@@ -33360,6 +33307,39 @@
         "kind": "pull_request",
         "branch": "fix/hovercard-narrow-placement-149566",
         "head_sha": "a17b33ea33e98191d54f4020dac13963bb724450",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149533:5689969657:2026-09-16T14:13:13Z:clawsweeper_needs_human",
+      "comment_id": "5689969657",
+      "comment_version_key": "5689969657:2026-09-16T14:13:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149533#issuecomment-5689969657",
+      "comment_created_at": "2026-09-16T00:14:10Z",
+      "comment_updated_at": "2026-09-16T14:13:13Z",
+      "comment_body_sha256": "baff07debf4655b9bc6fa13e2ee0bb52947ec51a18c0eab3c4ce947c2b1649bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149533,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The measured candidate increased warm-request CPU, and changes to underlying readers in the newer integration leave its cold-versus-warm tradeoff unmeasured. (sha=9cd95248a298681b7d7509f5995f2eeeaa710166)",
+      "expected_head_sha": "9cd95248a298681b7d7509f5995f2eeeaa710166",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T14:14:11.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/team-catalog-read-retention-main-20260915",
+        "head_sha": "9cd95248a298681b7d7509f5995f2eeeaa710166",
         "cluster_id": null,
         "job_path": null
       }
