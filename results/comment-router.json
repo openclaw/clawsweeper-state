@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T10:54:56.825Z",
+  "updated_at": "2026-09-16T10:55:56.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149743:5692870819:2026-09-16T06:09:12Z:re_review",
-      "comment_id": "5692870819",
-      "comment_version_key": "5692870819:2026-09-16T06:09:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149743#issuecomment-5692870819",
-      "comment_created_at": "2026-09-16T06:09:12Z",
-      "comment_updated_at": "2026-09-16T06:09:12Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149743,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T06:10:05.171Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-main-ci-budgets",
-        "head_sha": "99f00861bfadd37fe221fc7ef29a60b59c90c3d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149700:5692272519:2026-09-16T06:09:23Z:clawsweeper_needs_human",
       "comment_id": "5692272519",
@@ -33827,6 +33780,39 @@
         "kind": "pull_request",
         "branch": "steipete/ci-cumulative-gates-warn-on-main-20260915",
         "head_sha": "81d26977c1122ae44b667c8c19aed65070188985",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149392:5687574450:2026-09-16T10:54:48Z:clawsweeper_needs_human",
+      "comment_id": "5687574450",
+      "comment_version_key": "5687574450:2026-09-16T10:54:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149392#issuecomment-5687574450",
+      "comment_created_at": "2026-09-15T20:23:54Z",
+      "comment_updated_at": "2026-09-16T10:54:48Z",
+      "comment_body_sha256": "d5ad109c6b9b0de8290619538543e448b8cff5736faafb08a95961d3be53ed9d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149392,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Independent inspection of the reported inventory/Doctor transcript was blocked by the artifact-host allowlist; the captured body provides the outcome and candidate identity. (sha=5abf79ec9681f54e2a9a053f4b1bf020112feb27)",
+      "expected_head_sha": "5abf79ec9681f54e2a9a053f4b1bf020112feb27",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T10:55:56.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/projects-refresh-registration65985-20260915",
+        "head_sha": "5abf79ec9681f54e2a9a053f4b1bf020112feb27",
         "cluster_id": null,
         "job_path": null
       }
