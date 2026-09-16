@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T17:21:34.695Z",
+  "updated_at": "2026-09-16T17:22:43.417Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149269:5696104835:2026-09-16T10:37:01Z:re_review",
-      "comment_id": "5696104835",
-      "comment_version_key": "5696104835:2026-09-16T10:37:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149269#issuecomment-5696104835",
-      "comment_created_at": "2026-09-16T10:37:01Z",
-      "comment_updated_at": "2026-09-16T10:37:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149269,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T10:37:55.413Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/task-retention-recovery",
-        "head_sha": "4c4a7d777444f7a212801049cde9eba4c8821b81",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:377:5672794633:2026-09-16T10:37:59Z:clawsweeper_auto_repair",
       "comment_id": "5672794633",
@@ -33284,6 +33237,39 @@
         "kind": "pull_request",
         "branch": "upd/fleet-startup-maintenance",
         "head_sha": "30cad6454b4eaa26d56c0c15dea2e2f3374a323f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150124:5699887203:2026-09-16T17:21:33Z:clawsweeper_needs_human",
+      "comment_id": "5699887203",
+      "comment_version_key": "5699887203:2026-09-16T17:21:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150124#issuecomment-5699887203",
+      "comment_created_at": "2026-09-16T15:17:47Z",
+      "comment_updated_at": "2026-09-16T17:21:33Z",
+      "comment_body_sha256": "9bc9e9965ce528e9b68c5db8872c765347c8e3d2c15e8bc5cbb6f71b90f85f64",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150124,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The recorded managed-service repair cleanup failure remains unexplained; its relevance to the current stack has not been established. (sha=73d738c042af28e13f7d110bd493aad776cc3d28)",
+      "expected_head_sha": "73d738c042af28e13f7d110bd493aad776cc3d28",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T17:22:43.417Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/async-live-task-flow-retry-stack-20260916",
+        "head_sha": "73d738c042af28e13f7d110bd493aad776cc3d28",
         "cluster_id": null,
         "job_path": null
       }
