@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T22:03:45.384Z",
+  "updated_at": "2026-09-16T22:05:46.455Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149908:5696822818:2026-09-16T15:19:42Z:clawsweeper_needs_human",
-      "comment_id": "5696822818",
-      "comment_version_key": "5696822818:2026-09-16T15:19:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149908#issuecomment-5696822818",
-      "comment_created_at": "2026-09-16T11:39:06Z",
-      "comment_updated_at": "2026-09-16T15:19:42Z",
-      "comment_body_sha256": "92474ec72a7225505e866785c5c2a8223a7463b1297829ae997639e63d803931",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149908,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing remote Lobster workflows using ambient credentials and acpx sessions receiving lines above 64 MiB can stop until operators use the documented explicit credential or size over... (sha=744bc081b459c4e2fe06b3d582d60198df4e025a)",
-      "expected_head_sha": "744bc081b459c4e2fe06b3d582d60198df4e025a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T15:21:01.078Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/dependencies-7day-20260916",
-        "head_sha": "744bc081b459c4e2fe06b3d582d60198df4e025a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150123:5699960936:2026-09-16T15:22:19Z:re_review",
       "comment_id": "5699960936",
@@ -33541,6 +33508,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150315:5705229718:2026-09-16T22:04:08Z:re_review",
+      "comment_id": "5705229718",
+      "comment_version_key": "5705229718:2026-09-16T22:04:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150315#issuecomment-5705229718",
+      "comment_created_at": "2026-09-16T22:04:08Z",
+      "comment_updated_at": "2026-09-16T22:04:08Z",
+      "comment_body_sha256": "9694cb1eeafe3e70b0ad427b95dcccf096342cb6abe49016cf0da10d9531e5ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150315,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T22:05:44.092Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw-e60/automation-run-identity",
+        "head_sha": "e3591e3da37f38cb4626bf7e9973418f0aba5ae9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
