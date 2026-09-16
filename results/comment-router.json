@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:19:05.865Z",
+  "updated_at": "2026-09-16T07:19:08.325Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145766:5691647615:2026-09-16T03:35:16Z:re_review",
-      "comment_id": "5691647615",
-      "comment_version_key": "5691647615:2026-09-16T03:35:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145766#issuecomment-5691647615",
-      "comment_created_at": "2026-09-16T03:35:16Z",
-      "comment_updated_at": "2026-09-16T03:35:16Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145766,
-      "author": "ZengWen-DT",
-      "author_id": 290981215,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T03:36:10.134Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-candidate-output-bounds",
-        "head_sha": "9033f2e4f350f11afe25a922c009f1e1fce54835",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabfleet:145:5691651584:2026-09-16T03:35:50Z:clawsweeper_needs_human",
       "comment_id": "5691651584",
@@ -33640,6 +33593,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-on-exit-fixture-state-20260916",
         "head_sha": "8ec6ce0a83cd9f192ce344c9330e056b8b3b03b1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149474:5689267382:2026-09-16T07:13:57Z:clawsweeper_needs_human",
+      "comment_id": "5689267382",
+      "comment_version_key": "5689267382:2026-09-16T07:13:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149474#issuecomment-5689267382",
+      "comment_created_at": "2026-09-15T23:03:22Z",
+      "comment_updated_at": "2026-09-16T07:13:57Z",
+      "comment_body_sha256": "428865e240f953385a7892f5f34740da5214aacce2dcb31c7e35b561d1931b56",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149474,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The complete Bun walk remains unverified after the observer aborted installation; that interruption establishes neither a product defect nor successful Gateway/RPC qualification. (sha=1ea9d36c5efbe8e3d7263bf550f6a950ce9742ea)",
+      "expected_head_sha": "1ea9d36c5efbe8e3d7263bf550f6a950ce9742ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T07:19:08.325Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/kitchen-sink-rpc-bun-20260916",
+        "head_sha": "1ea9d36c5efbe8e3d7263bf550f6a950ce9742ea",
         "cluster_id": null,
         "job_path": null
       }
