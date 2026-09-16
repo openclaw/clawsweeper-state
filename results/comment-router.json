@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T01:50:45.812Z",
+  "updated_at": "2026-09-16T01:51:20.117Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148617:5687801947:2026-09-15T20:42:21Z:re_review",
-      "comment_id": "5687801947",
-      "comment_version_key": "5687801947:2026-09-15T20:42:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148617#issuecomment-5687801947",
-      "comment_created_at": "2026-09-15T20:42:21Z",
-      "comment_updated_at": "2026-09-15T20:42:21Z",
-      "comment_body_sha256": "93e22e43192dd3c8e0d368e0496ee6fab123fdd7c3f171c015436d4046a0f115",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148617,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T20:53:52.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/settled-turn-idle-timeout-recovery-141072",
-        "head_sha": "0c1df5a2a0e274033a25fd30c3ce360b2f35134a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:144394:5687856629:2026-09-15T20:46:56Z:re_review",
       "comment_id": "5687856629",
@@ -33307,6 +33260,39 @@
         "kind": "pull_request",
         "branch": "sunlit/fix/anthropic-session-catalog-json-cap",
         "head_sha": "f46cc6b0b7a0d78821ca021bc966b0a221c7361c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148988:5678396352:2026-09-16T01:46:50Z:clawsweeper_auto_repair",
+      "comment_id": "5678396352",
+      "comment_version_key": "5678396352:2026-09-16T01:46:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148988#issuecomment-5678396352",
+      "comment_created_at": "2026-09-15T10:09:04Z",
+      "comment_updated_at": "2026-09-16T01:46:50Z",
+      "comment_body_sha256": "e853992468a8aa10ad45113ff9cfcc1e282308aadede80619fe652a827f64fa5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148988,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2c932d098fd1602b95e3f2e3d32802cdea188da0)",
+      "expected_head_sha": "2c932d098fd1602b95e3f2e3d32802cdea188da0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T01:51:20.117Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/pond-inventory-snapshot-20260914",
+        "head_sha": "2c932d098fd1602b95e3f2e3d32802cdea188da0",
         "cluster_id": null,
         "job_path": null
       }
