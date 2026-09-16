@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T06:36:51.903Z",
+  "updated_at": "2026-09-16T06:37:02.736Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabpot:310:5691357595:2026-09-16T02:56:05Z:re_review",
-      "comment_id": "5691357595",
-      "comment_version_key": "5691357595:2026-09-16T02:56:05Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/310#issuecomment-5691357595",
-      "comment_created_at": "2026-09-16T02:56:05Z",
-      "comment_updated_at": "2026-09-16T02:56:05Z",
-      "comment_body_sha256": "4fbfaf13483491f60f795a4dbb71b408db62b29fd7313a7f73fdefc4d4187d50",
-      "repo": "openclaw/crabpot",
-      "issue_number": 310,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T02:56:57.652Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/triage-report-correctness",
-        "head_sha": "40aac46982aac98dc6ba176d203326ca684d464f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148979:5691358201:2026-09-16T02:56:10Z:re_review",
       "comment_id": "5691358201",
@@ -33652,6 +33605,39 @@
         "kind": "pull_request",
         "branch": "fix/oc-140455-descr",
         "head_sha": "0d0b8c7a88816adb2d27023c107c700fbcb50750",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149724:5692459163:2026-09-16T06:35:59Z:clawsweeper_needs_human",
+      "comment_id": "5692459163",
+      "comment_version_key": "5692459163:2026-09-16T06:35:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149724#issuecomment-5692459163",
+      "comment_created_at": "2026-09-16T05:22:37Z",
+      "comment_updated_at": "2026-09-16T06:35:59Z",
+      "comment_body_sha256": "eae9eb16bc13abd42e751bf29e7c04dcea7e7557af7f82718dca7460b7fdf82c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149724,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The Windows Node 24.21 archive-worker native crash remains unattributed: the candidate comparison lacks a verified process exit despite reporting all 21 test assertions passed. (sha=ca73189e071aff7e52f0d95ae795bdafc7f68f5c)",
+      "expected_head_sha": "ca73189e071aff7e52f0d95ae795bdafc7f68f5c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T06:37:02.736Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-custom-store-owner-inspection",
+        "head_sha": "ca73189e071aff7e52f0d95ae795bdafc7f68f5c",
         "cluster_id": null,
         "job_path": null
       }
