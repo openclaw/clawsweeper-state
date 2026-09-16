@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-16T22:05:46.455Z",
+  "updated_at": "2026-09-16T22:05:54.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150123:5699960936:2026-09-16T15:22:19Z:re_review",
-      "comment_id": "5699960936",
-      "comment_version_key": "5699960936:2026-09-16T15:22:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/150123#issuecomment-5699960936",
-      "comment_created_at": "2026-09-16T15:22:19Z",
-      "comment_updated_at": "2026-09-16T15:22:19Z",
-      "comment_body_sha256": "d6843a1b6cfae01835c665042c3fe0e3758f0888de171d6d0f1bb2fe26717c08",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150123,
-      "author": "anthonymellorfca-ai",
-      "author_id": 224699143,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T15:23:55.098Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-09-15T18:29:33Z:autoclose",
       "comment_id": "5176973305",
@@ -33555,6 +33510,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149449:5689021281:2026-09-16T22:04:11Z:clawsweeper_needs_human",
+      "comment_id": "5689021281",
+      "comment_version_key": "5689021281:2026-09-16T22:04:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149449#issuecomment-5689021281",
+      "comment_created_at": "2026-09-15T22:36:33Z",
+      "comment_updated_at": "2026-09-16T22:04:11Z",
+      "comment_body_sha256": "9f1c939355ec3c866e9541463a949c74defce95d82f7e8653203ccac9fa4d9e6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149449,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native-platform qualification of the changed worker launch and cancellation path remains unverified; Linux argv admission does not establish Windows process settlement or scratch clea... (sha=928b78d77d8c3a44e7a3afef38f656b4f8fe4f39)",
+      "expected_head_sha": "928b78d77d8c3a44e7a3afef38f656b4f8fe4f39",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T22:05:54.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/rehearsal-current-native-2114",
+        "head_sha": "928b78d77d8c3a44e7a3afef38f656b4f8fe4f39",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
