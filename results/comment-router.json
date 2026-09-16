@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T11:57:27.785Z",
+  "updated_at": "2026-09-16T11:59:19.220Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149708:5693238173:2026-09-16T06:46:53Z:re_review",
-      "comment_id": "5693238173",
-      "comment_version_key": "5693238173:2026-09-16T06:46:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149708#issuecomment-5693238173",
-      "comment_created_at": "2026-09-16T06:46:53Z",
-      "comment_updated_at": "2026-09-16T06:46:53Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149708,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T06:47:48.099Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hovercard-narrow-placement-149566",
-        "head_sha": "9bf83c6393a5c1553498775c9ae66586e5963569",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3676:5693039145:2026-09-16T06:44:25Z:clawsweeper_auto_repair",
       "comment_id": "5693039145",
@@ -33702,6 +33655,39 @@
       "status": "waiting",
       "processed_at": "2026-09-16T11:57:27.785Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150027:5697046736:2026-09-16T11:58:30Z:clawsweeper_needs_human",
+      "comment_id": "5697046736",
+      "comment_version_key": "5697046736:2026-09-16T11:58:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150027#issuecomment-5697046736",
+      "comment_created_at": "2026-09-16T11:58:30Z",
+      "comment_updated_at": "2026-09-16T11:58:30Z",
+      "comment_body_sha256": "55abe65766bae78e345bfb56509f1b51fe61d9f4706a88ab87e53204f3b832a0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150027,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required secops-owner involvement for the changed auth files has not been established. (sha=affc638dc1d4107152ee5f5c1fd9281bca0ce9a2)",
+      "expected_head_sha": "affc638dc1d4107152ee5f5c1fd9281bca0ce9a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T11:59:19.220Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/stale-dispatch-runtime",
+        "head_sha": "affc638dc1d4107152ee5f5c1fd9281bca0ce9a2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
