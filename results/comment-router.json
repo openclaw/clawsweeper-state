@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T16:52:33.046Z",
+  "updated_at": "2026-09-16T16:54:35.528Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149925:5695128185:2026-09-16T10:08:15Z:clawsweeper_auto_repair",
-      "comment_id": "5695128185",
-      "comment_version_key": "5695128185:2026-09-16T10:08:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149925#issuecomment-5695128185",
-      "comment_created_at": "2026-09-16T09:21:18Z",
-      "comment_updated_at": "2026-09-16T10:08:15Z",
-      "comment_body_sha256": "06facff8aeebc70b1386b70f94d16fa1a2a177bba9cc3bd75efb409d5845aedf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149925,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b42b812e8aa3b4a070cd006b9fe6283a5c0365f8)",
-      "expected_head_sha": "b42b812e8aa3b4a070cd006b9fe6283a5c0365f8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T10:09:19.355Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/steer-answer-segments",
-        "head_sha": "b42b812e8aa3b4a070cd006b9fe6283a5c0365f8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149926:5695035209:2026-09-16T10:09:02Z:clawsweeper_auto_repair",
       "comment_id": "5695035209",
@@ -33291,6 +33258,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/babelfish:23:5701252458:2026-09-16T16:53:44Z:re_review",
+      "comment_id": "5701252458",
+      "comment_version_key": "5701252458:2026-09-16T16:53:44Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/23#issuecomment-5701252458",
+      "comment_created_at": "2026-09-16T16:53:44Z",
+      "comment_updated_at": "2026-09-16T16:53:44Z",
+      "comment_body_sha256": "fcf672eef8940ca9aabd2538034282c2183a4f60e4679218a6e3e9bb916b7ddd",
+      "repo": "openclaw/babelfish",
+      "issue_number": 23,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T16:54:32.210Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f005-hook-walk-cap",
+        "head_sha": "ebf68395b14ddbcb495d97e76f88f0c39b77161d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
