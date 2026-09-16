@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T02:05:15.854Z",
+  "updated_at": "2026-09-16T02:05:48.060Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146913:5652578543:2026-09-15T20:55:05Z:clawsweeper_needs_human",
-      "comment_id": "5652578543",
-      "comment_version_key": "5652578543:2026-09-15T20:55:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146913#issuecomment-5652578543",
-      "comment_created_at": "2026-09-13T09:59:11Z",
-      "comment_updated_at": "2026-09-15T20:55:05Z",
-      "comment_body_sha256": "b1cbaf3ef366b5317cbcf310e076b68223534b0112fde522ce3de53a8d2e672e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146913,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied production Matrix observations positively demonstrate managed reload, provider restart, send, and redaction after the fix... (sha=8da2de2ddbe35519aad028aceb3286bcf48a30df)",
-      "expected_head_sha": "8da2de2ddbe35519aad028aceb3286bcf48a30df",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-15T21:09:28.194Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/matrix-monitor-ignores-task-signal",
-        "head_sha": "8da2de2ddbe35519aad028aceb3286bcf48a30df",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149257:5683842688:2026-09-15T20:55:35Z:clawsweeper_needs_human",
       "comment_id": "5683842688",
@@ -33282,6 +33249,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149283:5690918267:2026-09-16T02:04:52Z:re_review",
+      "comment_id": "5690918267",
+      "comment_version_key": "5690918267:2026-09-16T02:04:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149283#issuecomment-5690918267",
+      "comment_created_at": "2026-09-16T02:04:52Z",
+      "comment_updated_at": "2026-09-16T02:04:52Z",
+      "comment_body_sha256": "71da3e85fa97911af64d1e02e0986ea1eb34b8785316b1a2847bc7527238f9ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149283,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T02:05:46.288Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw-d425/task-preserving-parent-resume",
+        "head_sha": "88d6291881c8b5847353b5964daaa8ece683ffb1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
