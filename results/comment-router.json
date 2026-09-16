@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:43:50.867Z",
+  "updated_at": "2026-09-16T07:44:21.610Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141946:5580859608:2026-09-16T03:59:25Z:clawsweeper_auto_repair",
-      "comment_id": "5580859608",
-      "comment_version_key": "5580859608:2026-09-16T03:59:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141946#issuecomment-5580859608",
-      "comment_created_at": "2026-09-08T07:12:07Z",
-      "comment_updated_at": "2026-09-16T03:59:25Z",
-      "comment_body_sha256": "8cb6d792fcacc0278ad1088a2d904a6bd749f43c06f0a7251b46335c7d223c82",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141946,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=e0e0af317542078028373430b6f46e4b26b15047)",
-      "expected_head_sha": "e0e0af317542078028373430b6f46e4b26b15047",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T04:00:10.830Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-reviewer-reasoning-fallback",
-        "head_sha": "e0e0af317542078028373430b6f46e4b26b15047",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:422:5691821473:2026-09-16T03:59:27Z:clawsweeper_needs_human",
       "comment_id": "5691821473",
@@ -33737,6 +33704,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149000:5693848189:2026-09-16T07:43:19Z:re_review",
+      "comment_id": "5693848189",
+      "comment_version_key": "5693848189:2026-09-16T07:43:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149000#issuecomment-5693848189",
+      "comment_created_at": "2026-09-16T07:43:19Z",
+      "comment_updated_at": "2026-09-16T07:43:19Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149000,
+      "author": "MertBasar0",
+      "author_id": 100199793,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T07:44:19.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/148837-codex-systemerror-client-retire",
+        "head_sha": "65006d9fb86d5b4697909611148104d26d14b397",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
