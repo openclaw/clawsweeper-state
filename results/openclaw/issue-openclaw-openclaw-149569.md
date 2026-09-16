@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-149569"
-mode: "autonomous"
-run_id: "35044854890"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35044854890"
+mode: "plan"
+run_id: "35046402761"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35046402761"
 head_sha: "9d984f1259333dcc67c3689f467e04a254c30cff"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-16T01:44:07.310Z"
-canonical: "https://github.com/openclaw/openclaw/issues/149569"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/149569"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-16T02:04:45.754Z"
+canonical: "#149569"
+canonical_issue: "#149569"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35044854890](https://github.com/openclaw/clawsweeper/actions/runs/35044854890)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35046402761](https://github.com/openclaw/clawsweeper/actions/runs/35046402761)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/149569
+Canonical: #149569
 
 ## Summary
 
-Source confirms the defect on preflight main. A narrow fix artifact is ready; implementation and command reproduction are blocked by the read-only host and missing dependencies/build output. No files or GitHub state changed.
+Confirmed the reported predicate defect on preflight main 6cf521932af06af674a90e2319ccbd6212261e5d. Prepared a narrow repair plan; no files or GitHub state changed. Runtime reproduction and validation remain pending in a writable execution environment.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source confirms the defect on preflight main. A narrow fix artifact is ready; im
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #149569 | fix_needed | blocked | canonical | The source-supported bug remains actionable. Only local implementation and runtime proof are blocked; the executor must establish the failing reproduction before changing production code. |
-| cluster:issue-openclaw-openclaw-149569 | build_fix_artifact | planned |  | A two-file repair can restore documented behavior without adding configuration, changing security policy, or redesigning terminal lifecycle. |
+| #149569 | fix_needed | planned | canonical | Honor --plain in the existing diagnostic color decision and prove the behavior through registered-command coverage before publication. |
 
 ## Needs Human
 
