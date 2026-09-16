@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T06:48:59.396Z",
+  "updated_at": "2026-09-16T06:49:23.568Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149616:5691329679:2026-09-16T02:52:41Z:clawsweeper_needs_human",
-      "comment_id": "5691329679",
-      "comment_version_key": "5691329679:2026-09-16T02:52:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149616#issuecomment-5691329679",
-      "comment_created_at": "2026-09-16T02:52:41Z",
-      "comment_updated_at": "2026-09-16T02:52:41Z",
-      "comment_body_sha256": "d97eac4ff393a701580e7792caa224de8064033788e8978f0059f27312b1b773",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149616,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e20a28d84bcf8c5f03aa39fbdca026f1eb2416b1)",
-      "expected_head_sha": "e20a28d84bcf8c5f03aa39fbdca026f1eb2416b1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T02:57:17.922Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/catalog-wire-waiter-diagnostics",
-        "head_sha": "e20a28d84bcf8c5f03aa39fbdca026f1eb2416b1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-09-05T20:38:46Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -33697,6 +33664,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:126288:5693252374:2026-09-16T06:48:20Z:re_review",
+      "comment_id": "5693252374",
+      "comment_version_key": "5693252374:2026-09-16T06:48:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/126288#issuecomment-5693252374",
+      "comment_created_at": "2026-09-16T06:48:20Z",
+      "comment_updated_at": "2026-09-16T06:48:20Z",
+      "comment_body_sha256": "19d26bd9d93dead27204a701a70acba10d2f65d9a76d4fc68fcea2a069c4e629",
+      "repo": "openclaw/openclaw",
+      "issue_number": 126288,
+      "author": "xydigitLybnnnn",
+      "author_id": 280613588,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T06:49:20.141Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/125284-approval-prompt-not-blocking-exec-v2",
+        "head_sha": "9047d74353709d1b3248c849822d01d002a8889a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
