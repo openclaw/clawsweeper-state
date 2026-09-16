@@ -2,16 +2,16 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150126"
 mode: "autonomous"
-run_id: "35121752743"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35121752743"
+run_id: "35124094119"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35124094119"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-16T16:44:15.890Z"
+published_at: "2026-09-16T17:06:23.864Z"
 canonical: "https://github.com/openclaw/openclaw/issues/150126"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/150126"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35121752743](https://github.com/openclaw/clawsweeper/actions/runs/35121752743)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35124094119](https://github.com/openclaw/clawsweeper/actions/runs/35124094119)
 
 Workflow conclusion: failure
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/150126
 
 ## Summary
 
-Confirmed asynchronous dispatch rejection escapes the current transport boundary. Prepared a narrow fix artifact; implementation and production-path validation are blocked by the read-only workspace and missing dependencies. No files or GitHub state were changed.
+Reproduced the asynchronous dispatch rejection on the available checkout. Prepared a narrow fix plan; implementation and publication remain blocked by the read-only host, missing dependencies, and an unavailable preflight main commit. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Confirmed asynchronous dispatch rejection escapes the current transport boundary
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150126 | fix_needed | planned | canonical | A narrow transport-owned bug fix is supported by observed boundary behavior. Keep the issue open; close and merge are prohibited. |
-| cluster:issue-openclaw-openclaw-150126 | build_fix_artifact | planned | canonical | The deterministic executor can implement the bounded repair in a writable, isolated checkout. No unresolved product or maintainer decision is required. |
+| #150126 | fix_needed | planned | canonical | The available source reproduces the reported containment defect. Refresh and reproduce against current main before implementing; no product or security-boundary decision is required. |
+| cluster:issue-openclaw-openclaw-150126 | build_fix_artifact | planned |  | A narrow non-security fix is appropriate. The artifact is ready for a writable executor, conditional on current-main reproduction and all publication gates. |
+| cluster:issue-openclaw-openclaw-150126 | open_fix_pr | blocked |  | Publication is blocked until the executor refreshes main, reproduces the defect, implements and validates the repair, obtains fresh review, and records isolated production-path recovery evidence. |
 
 ## Needs Human
 
