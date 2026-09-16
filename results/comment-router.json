@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T22:12:21.809Z",
+  "updated_at": "2026-09-16T22:12:47.865Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150110:5699341871:2026-09-16T15:21:02Z:clawsweeper_needs_human",
-      "comment_id": "5699341871",
-      "comment_version_key": "5699341871:2026-09-16T15:21:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150110#issuecomment-5699341871",
-      "comment_created_at": "2026-09-16T14:41:47Z",
-      "comment_updated_at": "2026-09-16T15:21:02Z",
-      "comment_body_sha256": "510bb372d118d56215dcffc155facaeb46e46b15e302d3a950b3c7b0755453b8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150110,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations that relied on startup to rehome legacy history or backfill workspace metadata now need explicit Doctor repair; successful continuation through the published up... (sha=f93d9b1234735484db29925673e1ec5c16ed6341)",
-      "expected_head_sha": "f93d9b1234735484db29925673e1ec5c16ed6341",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T15:24:03.486Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/doctor-only-session-repairs-20260916",
-        "head_sha": "f93d9b1234735484db29925673e1ec5c16ed6341",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150112:5699366744:2026-09-16T15:15:44Z:clawsweeper_needs_human",
       "comment_id": "5699366744",
@@ -33551,6 +33518,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:119604:5705308254:2026-09-16T22:11:38Z:re_review",
+      "comment_id": "5705308254",
+      "comment_version_key": "5705308254:2026-09-16T22:11:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119604#issuecomment-5705308254",
+      "comment_created_at": "2026-09-16T22:11:38Z",
+      "comment_updated_at": "2026-09-16T22:11:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119604,
+      "author": "SweetSophia",
+      "author_id": 44297511,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T22:12:43.608Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-send-loop-guard",
+        "head_sha": "be424e866abae3a1eba1ab5de0cb87cd7ad84cc6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
