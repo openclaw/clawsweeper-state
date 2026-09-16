@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-149887"
-mode: "autonomous"
-run_id: "35074148334"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35074148334"
+mode: "plan"
+run_id: "35080100857"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35080100857"
 head_sha: "02cd682921ca0c796212319c1a28c9b1e4bfac58"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-16T09:07:41.024Z"
-canonical: "https://github.com/openclaw/openclaw/issues/149887"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/149887"
+published_at: "2026-09-16T09:38:18.033Z"
+canonical: "#149887"
+canonical_issue: "#149887"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35074148334](https://github.com/openclaw/clawsweeper/actions/runs/35074148334)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35080100857](https://github.com/openclaw/clawsweeper/actions/runs/35080100857)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/149887
+Canonical: #149887
 
 ## Summary
 
-Confirmed both synchronous failure paths cache a permanent rejection on preflight main. Prepared a narrow repair plan; implementation, browser validation, and screenshot delivery remain blocked by this read-only host.
+Confirmed the cached-rejection defect on preflight main 23fb1c04eaf6ccf995edc4c99008bc3229cf3272. Prepared a narrow repair plan. No files or GitHub state changed; browser validation remains pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Confirmed both synchronous failure paths cache a permanent rejection on prefligh
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #149887 | fix_needed | planned | canonical | A narrow cache-initialization repair is supported. Recheck issue-linked work and the designated branch before implementation to avoid duplicating @holny's work. |
-| #145545 | keep_closed | skipped | related | Historical context whose native-close regression must be retained. |
-| cluster:issue-openclaw-openclaw-149887 | build_fix_artifact | planned | canonical | Hand off the supported repair to the deterministic executor. No GitHub mutation, merge, or issue closure is recommended. |
+| #149887 | fix_needed | planned | canonical | A narrow initialization-cache repair remains warranted. Recheck for holny's work and an existing issue branch before implementation; preserve the intentional blocked-open lifecycle. |
+| #145545 | keep_closed | skipped | related | Historical context only; preserve its native-close regression. |
 
 ## Needs Human
 
