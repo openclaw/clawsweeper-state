@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150240"
 mode: "autonomous"
-run_id: "35138413650"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35138413650"
+run_id: "35141054777"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35141054777"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-16T19:29:29.996Z"
+published_at: "2026-09-16T19:39:36.605Z"
 canonical: "https://github.com/openclaw/openclaw/issues/150240"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/150240"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35138413650](https://github.com/openclaw/clawsweeper/actions/runs/35138413650)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35141054777](https://github.com/openclaw/clawsweeper/actions/runs/35141054777)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/150240
 
 ## Summary
 
-Prepared a narrow schema repair plan. Local source supports the reported omission, but implementation and reproduction are blocked here by read-only access, missing dependencies, and a checkout that differs from preflight main. No files or GitHub state changed.
+Confirmed the Matrix account schema omission on preflight main. Prepared a narrow fix artifact; implementation, runtime reproduction, validation, and screenshots remain blocked by the read-only host and missing dependencies. No files or GitHub state changed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Prepared a narrow schema repair plan. Local source supports the reported omissio
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150240 | fix_needed | planned | canonical | A focused existing-behavior repair is supported by source evidence. Reproduce against refreshed main before implementing; preserve reference-identity checks. |
-| cluster:issue-openclaw-openclaw-150240 | build_fix_artifact | planned |  | Artifact preparation is complete; local implementation and validation are blocked by host constraints. |
+| #150240 | fix_needed | planned | canonical | The source supports a narrow existing-behavior repair. Runtime reproduction must precede implementation in the writable executor. |
+| cluster:issue-openclaw-openclaw-150240 | build_fix_artifact | planned |  | Artifact preparation is complete. Implementation is blocked locally and requires a writable executor with dependencies; no unresolved product decision requires human judgment. |
 
 ## Needs Human
 
