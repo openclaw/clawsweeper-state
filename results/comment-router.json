@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T20:01:06.065Z",
+  "updated_at": "2026-09-16T20:02:17.402Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:415:5690868208:2026-09-16T12:53:15Z:clawsweeper_needs_human",
-      "comment_id": "5690868208",
-      "comment_version_key": "5690868208:2026-09-16T12:53:15Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/415#issuecomment-5690868208",
-      "comment_created_at": "2026-09-16T01:57:58Z",
-      "comment_updated_at": "2026-09-16T12:53:15Z",
-      "comment_body_sha256": "fcdc96fb142d2a46f4d9c04fb00d12f8180a24cb543e3a52f4eaf345a9e81845",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 415,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: cancellation coverage invokes open_tar_source through test reader shims, while benchmarks never abort.... (sha=27092480767893f497cd1c5ce69b8e2cf95ca582)",
-      "expected_head_sha": "27092480767893f497cd1c5ce69b8e2cf95ca582",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T13:07:23.581Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/archive-raw-cancellation-20260915",
-        "head_sha": "27092480767893f497cd1c5ce69b8e2cf95ca582",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150062:5697963712:2026-09-16T13:08:27Z:clawsweeper_needs_human",
       "comment_id": "5697963712",
@@ -33737,6 +33704,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5703719338:2026-09-16T20:01:14Z:re_review",
+      "comment_id": "5703719338",
+      "comment_version_key": "5703719338:2026-09-16T20:01:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5703719338",
+      "comment_created_at": "2026-09-16T20:01:14Z",
+      "comment_updated_at": "2026-09-16T20:01:14Z",
+      "comment_body_sha256": "eb184ed9adf6db70d41735dd3580efa5e03edf07a3f78946302a8a58a05936b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T20:02:15.307Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "9a19eb6e0aefa5e66187578f4f47c4928ba4817c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
