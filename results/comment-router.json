@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:39:37.458Z",
+  "updated_at": "2026-09-16T07:42:05.457Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:312:5691805470:2026-09-16T03:57:12Z:clawsweeper_needs_human",
-      "comment_id": "5691805470",
-      "comment_version_key": "5691805470:2026-09-16T03:57:12Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/312#issuecomment-5691805470",
-      "comment_created_at": "2026-09-16T03:57:12Z",
-      "comment_updated_at": "2026-09-16T03:57:12Z",
-      "comment_body_sha256": "f45223c1bcdf9cd2e9f3844398589a731b01704b84d0ad8d29f23031466fac8c",
-      "repo": "openclaw/crabpot",
-      "issue_number": 312,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The original six Google Meet runtime calls have no demonstrated same-target after-fix comparison; faithful imports may reveal prerequisite failures, as both PR bodies explicitly ackno... (sha=2208d9dbc41eb27fb6aede2618d0c1ab87e700b5)",
-      "expected_head_sha": "2208d9dbc41eb27fb6aede2618d0c1ab87e700b5",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T03:58:02.879Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/inspector-lazy-runtime-contract",
-        "head_sha": "2208d9dbc41eb27fb6aede2618d0c1ab87e700b5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/esp-openclaw-node:32:5466499954:2026-09-16T03:51:47Z:clawsweeper_auto_repair",
       "comment_id": "5466499954",
@@ -33717,6 +33684,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149676:5693815816:2026-09-16T07:40:22Z:automerge",
+      "comment_id": "5693815816",
+      "comment_version_key": "5693815816:2026-09-16T07:40:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149676#issuecomment-5693815816",
+      "comment_created_at": "2026-09-16T07:40:22Z",
+      "comment_updated_at": "2026-09-16T07:40:22Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149676,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-16T07:41:56.855Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/bun-egress-websocket",
+        "head_sha": "69f881fbf9222eb3b6a3f410644a56b690a102dc",
+        "cluster_id": "automerge-openclaw-openclaw-149676",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149676.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-149676.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "waiting",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
