@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T13:16:58.116Z",
+  "updated_at": "2026-09-16T13:17:01.273Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149675:5693617218:2026-09-16T07:23:06Z:re_review",
-      "comment_id": "5693617218",
-      "comment_version_key": "5693617218:2026-09-16T07:23:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149675#issuecomment-5693617218",
-      "comment_created_at": "2026-09-16T07:23:06Z",
-      "comment_updated_at": "2026-09-16T07:23:06Z",
-      "comment_body_sha256": "036e760527298283629d87f1002d06e7cf02a72084716400c35c4752bda8c6c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149675,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T07:29:06.655Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/plugin-reload-resource-handoff",
-        "head_sha": "b7e9fe5e701c3cefc60c78cee95cd5f08a8d843a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149705:5692326318:2026-09-16T07:27:58Z:clawsweeper_needs_human",
       "comment_id": "5692326318",
@@ -33547,6 +33500,39 @@
         "kind": "pull_request",
         "branch": "antigravity/identity-guard",
         "head_sha": "98df78cc6603b933ee418ddb9ddfc709be99bab1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150066:5698078960:2026-09-16T13:16:03Z:clawsweeper_needs_human",
+      "comment_id": "5698078960",
+      "comment_version_key": "5698078960:2026-09-16T13:16:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150066#issuecomment-5698078960",
+      "comment_created_at": "2026-09-16T13:16:03Z",
+      "comment_updated_at": "2026-09-16T13:16:03Z",
+      "comment_body_sha256": "ddd9991431c1de4835485f731fdbf057171df51a2e45874c5bf4c70ed0ab7c65",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150066,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The PR body explicitly leaves verification that both screenshot embeds render on GitHub unresolved; local image inspection does not complete that delivery gate. (sha=62caaed2775c355559c433109cda654e562d44e2)",
+      "expected_head_sha": "62caaed2775c355559c433109cda654e562d44e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T13:17:01.273Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-review-edit-route-transition",
+        "head_sha": "62caaed2775c355559c433109cda654e562d44e2",
         "cluster_id": null,
         "job_path": null
       }
