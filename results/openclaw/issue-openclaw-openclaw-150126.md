@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150126"
-mode: "autonomous"
-run_id: "35124094119"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35124094119"
+mode: "plan"
+run_id: "35125053413"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35125053413"
 head_sha: "f48f1cee58c5ac867114cc77fb088b172aa4e9a9"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-16T17:06:23.864Z"
-canonical: "https://github.com/openclaw/openclaw/issues/150126"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/150126"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-16T17:09:28.287Z"
+canonical: "#150126"
+canonical_issue: "#150126"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35124094119](https://github.com/openclaw/clawsweeper/actions/runs/35124094119)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35125053413](https://github.com/openclaw/clawsweeper/actions/runs/35125053413)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/150126
+Canonical: #150126
 
 ## Summary
 
-Reproduced the asynchronous dispatch rejection on the available checkout. Prepared a narrow fix plan; implementation and publication remain blocked by the read-only host, missing dependencies, and an unavailable preflight main commit. No files or GitHub state changed.
+Plan a narrow transport-owned repair for #150126. The checkout matches preflight main 009991137ae35e422f3ec27e880cb5a58f3238d4 and still discards dispatch callback promises. No files or GitHub state changed. Runtime reproduction, validation, and recovery proof remain execution gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Reproduced the asynchronous dispatch rejection on the available checkout. Prepar
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150126 | fix_needed | planned | canonical | The available source reproduces the reported containment defect. Refresh and reproduce against current main before implementing; no product or security-boundary decision is required. |
-| cluster:issue-openclaw-openclaw-150126 | build_fix_artifact | planned |  | A narrow non-security fix is appropriate. The artifact is ready for a writable executor, conditional on current-main reproduction and all publication gates. |
-| cluster:issue-openclaw-openclaw-150126 | open_fix_pr | blocked |  | Publication is blocked until the executor refreshes main, reproduces the defect, implements and validates the repair, obtains fresh review, and records isolated production-path recovery evidence. |
+| #150126 | fix_needed | planned | canonical | The canonical report has a concrete bug-only repair path. Extend existing transport failure containment to asynchronous rejection, then prove connection retirement and recovery without changing global fatal-error policy. |
 
 ## Needs Human
 
