@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149867",
+  "mode": "autonomous",
+  "run_id": "35072193750",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35072193750",
+  "head_sha": "02cd682921ca0c796212319c1a28c9b1e4bfac58",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149867.md",
+  "published_at": "2026-09-16T08:47:07.023Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/149867",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149867",
+  "canonical_pr": null,
+  "summary": "Verified the marker-eligibility defect on preflight main b47ba1021fff4432404195f893fbb6d6ed728c25. Prepared a narrow fix plan. Read-only host permissions block implementation, SQLite production-path reproduction, and branch validation. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#149867",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149867",
+      "candidate_fix": null,
+      "reason": "The existing documented optimization remains broken for completed workspaces. A focused producer repair is appropriate; full production-path reproduction remains a prerequisite to implementation."
+    },
+    {
+      "target": "#81472",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#109656",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Older overlapping symptom report; retain as historical evidence."
+    },
+    {
+      "target": "#116511",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Credit relevant prior investigation, but do not revive this closed, broader PR or import its CLI changes."
+    },
+    {
+      "target": "#117082",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing reader repair. It does not cover the remaining producer defect."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149867",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149867",
+      "candidate_fix": null,
+      "reason": "One narrow new fix PR can restore existing behavior without schema, configuration, API, storage, or CLI-backend expansion."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-149867",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#149867",
+      "candidate_fix": null,
+      "reason": "The executor must reproduce, implement, review, and validate the fix in a writable isolated checkout before opening or updating the single designated PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 4,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
