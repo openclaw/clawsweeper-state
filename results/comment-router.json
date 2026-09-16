@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T11:43:44.391Z",
+  "updated_at": "2026-09-16T11:43:48.009Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149097:5693100663:2026-09-16T06:33:31Z:re_review",
-      "comment_id": "5693100663",
-      "comment_version_key": "5693100663:2026-09-16T06:33:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149097#issuecomment-5693100663",
-      "comment_created_at": "2026-09-16T06:33:31Z",
-      "comment_updated_at": "2026-09-16T06:33:31Z",
-      "comment_body_sha256": "e47fbfb66b53820564e1458e90ea746bbc91af1774aac27a6887dad9dcd94470",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149097,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T06:35:49.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/live-visual-provider-seam",
-        "head_sha": "e77e60f28901651d040eb5fa8a56fb41c6d68268",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149816:5693118862:2026-09-16T06:35:25Z:re_review",
       "comment_id": "5693118862",
@@ -33747,6 +33700,39 @@
         "kind": "pull_request",
         "branch": "codex/root-windows-rename-identity-20260914",
         "head_sha": "52cd04113f23e9229e054e15f0cbfacf4b3b47d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:417:5690979288:2026-09-16T11:42:56Z:clawsweeper_needs_human",
+      "comment_id": "5690979288",
+      "comment_version_key": "5690979288:2026-09-16T11:42:56Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/417#issuecomment-5690979288",
+      "comment_created_at": "2026-09-16T02:12:58Z",
+      "comment_updated_at": "2026-09-16T11:42:56Z",
+      "comment_body_sha256": "4931ab161c78524196241dbd555ab51ba9d821a13b2a192a4be27d7c11bc15c3",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 417,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The historical baseline/mutant tests and real-filesystem benchmarks provide useful evidence for the earlier cleanup implementation. Th... (sha=f7bfe45391ba370871172814d46078715b93822e)",
+      "expected_head_sha": "f7bfe45391ba370871172814d46078715b93822e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T11:43:48.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/move-cleanup-recheck-20260915",
+        "head_sha": "f7bfe45391ba370871172814d46078715b93822e",
         "cluster_id": null,
         "job_path": null
       }
