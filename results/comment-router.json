@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T01:32:44.658Z",
+  "updated_at": "2026-09-16T01:32:46.087Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145103:5687398860:2026-09-15T20:09:23Z:re_review",
-      "comment_id": "5687398860",
-      "comment_version_key": "5687398860:2026-09-15T20:09:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145103#issuecomment-5687398860",
-      "comment_created_at": "2026-09-15T20:09:23Z",
-      "comment_updated_at": "2026-09-15T20:09:23Z",
-      "comment_body_sha256": "4228773c14a10d4af4313684b24d55cc767c382712605357761f4718dd0b876a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145103,
-      "author": "DasX",
-      "author_id": 1935468,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-15T20:28:38.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-clawhub-plugin-drift-target",
-        "head_sha": "5be45672ff43279896a24a01929805243e47c074",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148683:5687425891:2026-09-15T20:11:36Z:re_review",
       "comment_id": "5687425891",
@@ -33331,6 +33284,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:76:5464099731:2026-09-16T01:31:56Z:clawsweeper_needs_human",
+      "comment_id": "5464099731",
+      "comment_version_key": "5464099731:2026-09-16T01:31:56Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/76#issuecomment-5464099731",
+      "comment_created_at": "2026-08-29T18:24:29Z",
+      "comment_updated_at": "2026-09-16T01:31:56Z",
+      "comment_body_sha256": "e5878054d7e343da931db06737b2af2a1b33d64107acb70ea77fc92a6cb9543c",
+      "repo": "openclaw/shellbench",
+      "issue_number": 76,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a82b123fb29e491ffefb2012c3e7baefe3e866e4)",
+      "expected_head_sha": "a82b123fb29e491ffefb2012c3e7baefe3e866e4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T01:32:46.087Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f003-jobqueue-thread-lock",
+        "head_sha": "a82b123fb29e491ffefb2012c3e7baefe3e866e4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
