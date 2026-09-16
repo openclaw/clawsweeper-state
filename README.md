@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 16, 2026, 23:22 UTC
+Last source update: Sep 16, 2026, 23:31 UTC
 
 ### Fleet
 
@@ -22,9 +22,9 @@ Last source update: Sep 16, 2026, 23:22 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 16, 2026, 23:22 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35159917121) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 16, 2026, 23:20 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35161724884) |
-| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 16, 2026, 11:45 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35092020223) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 16, 2026, 23:28 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35161538086) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 16, 2026, 23:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35162462703) |
+| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 16, 2026, 23:31 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35162617475) |
 
 ### Repositories
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 16, 2026, 22:58 UTC
+Last source update: Sep 16, 2026, 23:31 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1075 | 100% |
-| Run attempts archived | 3252 | audit |
+| Run attempts archived | 3254 | audit |
 | Latest successful clusters | 910 | 84.7% |
 | Latest failed clusters | 163 | 15.2% |
 | Latest cancelled clusters | 2 | 0.2% |
@@ -118,7 +118,7 @@ State: Failed clusters need inspection
 - Latest records: 1075 clusters: 329 maintainer action, 281 automation snapshot, 419 intervention needed, 46 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#108353](https://github.com/openclaw/openclaw/issues/108353) is maintainer_input: Refer only this historical concern to central OpenClaw security handling without public mutation or an exploitability verdict. It does no....
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#119975](https://github.com/openclaw/openclaw/pull/119975) is automation_failed: Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a sepa....
-- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#150322](https://github.com/openclaw/openclaw/pull/150322) is action_planned: The canonical issue describes a bounded projection bug without a boundary-bypass claim. A focused repair artifact is appropriate; closure....
+- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#150201](https://github.com/openclaw/openclaw/pull/150201) is action_planned: A focused non-security bug fix is supported by source and the job. Establish a failing real-planner regression before implementation; do....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
@@ -167,8 +167,8 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#150201](https://github.com/openclaw/openclaw/pull/150201) | action_planned | A focused non-security bug fix is supported by source and the job. Establish a failing real-planner regression before implementation; do not claim... | Sep 16, 2026, 23:31 UTC | [issue-openclaw-openclaw-150201](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-150201.md) | [35162428435](https://github.com/openclaw/clawsweeper/actions/runs/35162428435) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#150322](https://github.com/openclaw/openclaw/pull/150322) | action_planned | The canonical issue describes a bounded projection bug without a boundary-bypass claim. A focused repair artifact is appropriate; closure and merge... | Sep 16, 2026, 22:58 UTC | [issue-openclaw-openclaw-150322](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-150322.md) | [35159863689](https://github.com/openclaw/clawsweeper/actions/runs/35159863689) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#150201](https://github.com/openclaw/openclaw/pull/150201) | action_planned | The scoped ordinary bug has a concrete repair path. Earlier merged snapshot, timeout, and retained-import fixes do not establish resolution of this... | Sep 16, 2026, 22:32 UTC | [issue-openclaw-openclaw-150201](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-150201.md) | [35157862917](https://github.com/openclaw/clawsweeper/actions/runs/35157862917) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#150298](https://github.com/openclaw/openclaw/pull/150298) | action_planned | A bounded regression in established keyboard input has a clear existing owner. Prepare the fix only after a failing registered-route regression is... | Sep 16, 2026, 21:32 UTC | [issue-openclaw-openclaw-150298](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-150298.md) | [35152674963](https://github.com/openclaw/clawsweeper/actions/runs/35152674963) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#150240](https://github.com/openclaw/openclaw/pull/150240) | action_planned | A focused repair path is defined without an unresolved product decision. Establish the failing Gateway round trip before implementation. Keep the i... | Sep 16, 2026, 19:58 UTC | [issue-openclaw-openclaw-150240](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-150240.md) | [35143378437](https://github.com/openclaw/clawsweeper/actions/runs/35143378437) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#150142](https://github.com/openclaw/openclaw/issues/150142) | action_planned | A focused observer repair is warranted. Establish failing coverage through the generated production script before implementation. | Sep 16, 2026, 18:57 UTC | [issue-openclaw-openclaw-150142](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-150142.md) | [35137339817](https://github.com/openclaw/clawsweeper/actions/runs/35137339817) |
