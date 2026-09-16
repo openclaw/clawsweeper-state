@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-149985",
+  "mode": "plan",
+  "run_id": "35090822449",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35090822449",
+  "head_sha": "f48f1cee58c5ac867114cc77fb088b172aa4e9a9",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-149985.md",
+  "published_at": "2026-09-16T11:36:06.932Z",
+  "canonical": "#149985",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/149985",
+  "canonical_pr": null,
+  "summary": "Plan a narrow CLI claimed-reply persistence repair. Source inspection at preflight main cf42c7b766c2fca9365b201b31ce7a721059bd29 confirms the early return bypasses persistence. No files or GitHub state changed; runtime reproduction and validation remain pending.",
+  "actions": [
+    {
+      "target": "#149985",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#149985",
+      "candidate_fix": null,
+      "reason": "This is a distinct persistence omission after successful hook invocation. Keep the issue open and prepare one implementation PR after reproducing the defect."
+    },
+    {
+      "target": "#108349",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#149985",
+      "candidate_fix": null,
+      "reason": "Historical context with a different root cause; no closure or reopening action."
+    },
+    {
+      "target": "#108353",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Refer only this historical concern to central OpenClaw security handling without public mutation or an exploitability verdict. It does not block the independent CLI persistence repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
