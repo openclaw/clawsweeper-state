@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-16T07:07:59.800Z",
+  "updated_at": "2026-09-16T07:08:17.482Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149615:5691304996:2026-09-16T03:06:33Z:clawsweeper_needs_human",
-      "comment_id": "5691304996",
-      "comment_version_key": "5691304996:2026-09-16T03:06:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149615#issuecomment-5691304996",
-      "comment_created_at": "2026-09-16T02:49:47Z",
-      "comment_updated_at": "2026-09-16T03:06:33Z",
-      "comment_body_sha256": "549a91c329e2f4e8b3a0163c881b31fe4d0093946cdf60a1e4fb3feea3f41f34",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149615,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the supplied terminal output invokes buildOpenAIClientHeaders directly, leaving the changed ma... (sha=1875847a485b291d875308be58725770b298e0e7)",
-      "expected_head_sha": "1875847a485b291d875308be58725770b298e0e7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T03:24:55.933Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/openai-completions-session-affinity-148957",
-        "head_sha": "1875847a485b291d875308be58725770b298e0e7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149621:5691390511:2026-09-16T03:00:32Z:clawsweeper_needs_human",
       "comment_id": "5691390511",
@@ -33687,6 +33654,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149708:5693448116:2026-09-16T07:07:17Z:re_review",
+      "comment_id": "5693448116",
+      "comment_version_key": "5693448116:2026-09-16T07:07:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149708#issuecomment-5693448116",
+      "comment_created_at": "2026-09-16T07:07:17Z",
+      "comment_updated_at": "2026-09-16T07:07:17Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149708,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-16T07:08:15.637Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/hovercard-narrow-placement-149566",
+        "head_sha": "1a1d125928d4eb7bc2b02b62affcb45bca4ab1f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
