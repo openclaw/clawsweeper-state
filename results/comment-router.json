@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-16T10:48:15.983Z",
+  "updated_at": "2026-09-16T10:48:16.822Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149765:5692822882:2026-09-16T06:04:45Z:re_review",
-      "comment_id": "5692822882",
-      "comment_version_key": "5692822882:2026-09-16T06:04:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149765#issuecomment-5692822882",
-      "comment_created_at": "2026-09-16T06:04:45Z",
-      "comment_updated_at": "2026-09-16T06:04:45Z",
-      "comment_body_sha256": "24e64a8bdcf9e0718d2a34c1de8421d3ca5db361c8dadacd31a83b35b1621e37",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149765,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T06:05:45.031Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/redmain45-goals-reads",
-        "head_sha": "c30b768d4ed858016b75a05dbf4fa767141a3c8e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:423:5692011204:2026-09-16T05:59:46Z:clawsweeper_needs_human",
       "comment_id": "5692011204",
@@ -33821,6 +33774,39 @@
         "kind": "pull_request",
         "branch": "fix/trajectory-export-atomic-127581",
         "head_sha": "c1246db292bd076a5af60e4d566be5615ed2e86b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149304:5685205026:2026-09-16T10:47:16Z:clawsweeper_needs_human",
+      "comment_id": "5685205026",
+      "comment_version_key": "5685205026:2026-09-16T10:47:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149304#issuecomment-5685205026",
+      "comment_created_at": "2026-09-15T17:49:15Z",
+      "comment_updated_at": "2026-09-16T10:47:16Z",
+      "comment_body_sha256": "19c1c38c979d0744ff10a982fc60269adf843ea88626163cc2fe458e929c268c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149304,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The passing upgrade cell qualifies the combined metadata-plus-Doctor package; landing without the separate Doctor prerequisite would fall outside that compatibility evidence. (sha=52a2005139a50538326289583ceec34d90f2c727)",
+      "expected_head_sha": "52a2005139a50538326289583ceec34d90f2c727",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-16T10:48:16.822Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/outbound-bootstrap-metadata-preparation-20260915",
+        "head_sha": "52a2005139a50538326289583ceec34d90f2c727",
         "cluster_id": null,
         "job_path": null
       }
