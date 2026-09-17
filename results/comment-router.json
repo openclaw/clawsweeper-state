@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:39:27.092Z",
+  "updated_at": "2026-09-17T08:40:35.895Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150376:5706170453:2026-09-17T03:51:39Z:clawsweeper_needs_human",
-      "comment_id": "5706170453",
-      "comment_version_key": "5706170453:2026-09-17T03:51:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150376#issuecomment-5706170453",
-      "comment_created_at": "2026-09-16T23:40:16Z",
-      "comment_updated_at": "2026-09-17T03:51:39Z",
-      "comment_body_sha256": "e805b8df5224603c93e814a17000c06ef51db060c01128681709b7bcaf32d05e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150376,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Package-only downgrade to v2026.9.4 cannot read the new utility-separation marker; recovery depends on retaining and restoring the verified pre-upgrade archive. (sha=f49442e9d1a7323c1772e3f1d0369a242acebc01)",
-      "expected_head_sha": "f49442e9d1a7323c1772e3f1d0369a242acebc01",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:54:58.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/apple-foundation-model-setup",
-        "head_sha": "f49442e9d1a7323c1772e3f1d0369a242acebc01",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150408:5706660944:2026-09-17T03:51:40Z:clawsweeper_needs_human",
       "comment_id": "5706660944",
@@ -33452,6 +33419,53 @@
       "actions": [
         {
           "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150638:5711495158:2026-09-17T08:39:39Z:re_review",
+      "comment_id": "5711495158",
+      "comment_version_key": "5711495158:2026-09-17T08:39:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150638#issuecomment-5711495158",
+      "comment_created_at": "2026-09-17T08:39:39Z",
+      "comment_updated_at": "2026-09-17T08:39:39Z",
+      "comment_body_sha256": "b5c9ff32f4b6ecf25a6bde31bb8333a253e58b5e4605626cfa77183051bcccd3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150638,
+      "author": "onlyysaurabh",
+      "author_id": 122204901,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:40:33.912Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-meet-caption-coalescing-notices",
+        "head_sha": "95a6d6985593eccecb0bdbe0b2dc501706bb7a41",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
           "status": "executed",
           "label": null,
           "job_path": null
