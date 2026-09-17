@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151111",
+  "mode": "autonomous",
+  "run_id": "35271617301",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35271617301",
+  "head_sha": "fdbde19bbbd4c019baf3522586e149ab4749662c",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151111.md",
+  "published_at": "2026-09-17T21:17:35.784Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151111",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151111",
+  "canonical_pr": null,
+  "summary": "Verified the reported control-flow defect on preflight main 85b8a9b8ea36b06f111938cea59085845046d479. Prepared a narrow fix artifact. Implementation and required transport reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151111",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#151111",
+      "candidate_fix": null,
+      "reason": "The source-supported bug remains actionable, but this host permits only reads and node_modules is absent. The authorized executor must establish the failing registered V2 transport regression before editing production code."
+    },
+    {
+      "target": "#122163",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling without public mutation. Its historical flag does not block the separate quota-result bug."
+    },
+    {
+      "target": "#145853",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or repair action."
+    },
+    {
+      "target": "#147901",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or repair action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151111",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151111",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is supported without configuration, dependency, public-contract, persistent-state, or security-boundary changes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
