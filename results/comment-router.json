@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:32:50.729Z",
+  "updated_at": "2026-09-17T13:33:25.669Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150714:5710740853:2026-09-17T07:50:10Z:clawsweeper_needs_human",
-      "comment_id": "5710740853",
-      "comment_version_key": "5710740853:2026-09-17T07:50:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150714#issuecomment-5710740853",
-      "comment_created_at": "2026-09-17T07:34:48Z",
-      "comment_updated_at": "2026-09-17T07:50:10Z",
-      "comment_body_sha256": "fa2c5a5b43c6a47fd5fe001addd767c557a6619cb1ada9635e9daf8a1e749853",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150714,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Docker/Podman owner lacks real final-effect evidence for allowed admission, revoked admission, comm...; Review finding: [P1] [P1] Use signal syntax supported by the sandbox shell — src/agents/sandbox/docker-backend.ts:313 - [P1] [P1] Keep revocation authority outside command-writabl... (sha=a819897a5965507fbdbe06c56827090a6efac5ec)",
-      "expected_head_sha": "a819897a5965507fbdbe06c56827090a6efac5ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:54:29.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-revocable-command",
-        "head_sha": "9e31127c9fb460e712068e936c3dde950f474aad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150716:5710747087:2026-09-17T07:50:24Z:clawsweeper_needs_human",
       "comment_id": "5710747087",
@@ -34634,6 +34601,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150796:5715200714:2026-09-17T13:32:24Z:re_review",
+      "comment_id": "5715200714",
+      "comment_version_key": "5715200714:2026-09-17T13:32:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150796#issuecomment-5715200714",
+      "comment_created_at": "2026-09-17T13:32:24Z",
+      "comment_updated_at": "2026-09-17T13:32:24Z",
+      "comment_body_sha256": "df626936bac94b7f8865ceea97c2c7cf7adf45c89ec4e622a2194497beedf530",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150796,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:33:22.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugins-dedupe-registrar-failures",
+        "head_sha": "84ad66da3457f3f22acf98279b2a6746a60e474e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
