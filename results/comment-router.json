@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T19:21:38.634Z",
+  "updated_at": "2026-09-17T19:21:41.827Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150562:5715138485:2026-09-17T13:27:51Z:re_review",
-      "comment_id": "5715138485",
-      "comment_version_key": "5715138485:2026-09-17T13:27:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5715138485",
-      "comment_created_at": "2026-09-17T13:27:51Z",
-      "comment_updated_at": "2026-09-17T13:27:51Z",
-      "comment_body_sha256": "9f6b83be5e818d62de000e746b40d5136b0ce03b1a17952bc0f45d8d062b1222",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150562,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — fixed p2 findings: configured per-agent stores for proper discovery, added recoverstore spy to verify callback execution between stores",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:28:56.668Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/149935-yield-between-store-recovery",
-        "head_sha": "4f7952a26d7af46e277713af9d22170b6904d7b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1556:5437305236:2026-09-17T13:27:23Z:clawsweeper_auto_repair",
       "comment_id": "5437305236",
@@ -32736,6 +32689,39 @@
         "kind": "pull_request",
         "branch": "fix/chat-forwarded-unresolved-avatar",
         "head_sha": "c5224ea5a6e8e0109ec895f628689911e1f430a4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151080:5719929590:2026-09-17T19:20:22Z:clawsweeper_needs_human",
+      "comment_id": "5719929590",
+      "comment_version_key": "5719929590:2026-09-17T19:20:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151080#issuecomment-5719929590",
+      "comment_created_at": "2026-09-17T19:20:22Z",
+      "comment_updated_at": "2026-09-17T19:20:22Z",
+      "comment_body_sha256": "305cd7c423cc4a55d1f7d709a944ccf465605d3a062b185a2c9afae932f687c8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151080,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=53937e913d5779cb8bf93d392cc537603caa3074)",
+      "expected_head_sha": "53937e913d5779cb8bf93d392cc537603caa3074",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T19:21:41.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-slack-plugin-test-boundary",
+        "head_sha": "53937e913d5779cb8bf93d392cc537603caa3074",
         "cluster_id": null,
         "job_path": null
       }
