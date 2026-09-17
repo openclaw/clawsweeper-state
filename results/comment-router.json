@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:44:12.825Z",
+  "updated_at": "2026-09-17T13:44:14.393Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150702:5711086733:2026-09-17T08:05:30Z:re_review",
-      "comment_id": "5711086733",
-      "comment_version_key": "5711086733:2026-09-17T08:05:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150702#issuecomment-5711086733",
-      "comment_created_at": "2026-09-17T08:05:30Z",
-      "comment_updated_at": "2026-09-17T08:05:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150702,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:06:28.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sec/fail-closed-delegated-tool-cap-v2",
-        "head_sha": "6e60f5f607d2a7470c5dc3b1fb2ccb509ca987ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150705:5711086993:2026-09-17T08:05:31Z:re_review",
       "comment_id": "5711086993",
@@ -34667,6 +34620,39 @@
         "kind": "pull_request",
         "branch": "fix/ui-reduced-motion-transition-property",
         "head_sha": "41f36cc29bb909d440f9b4332880723b6a66a3d5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150840:5713466406:2026-09-17T13:43:05Z:clawsweeper_needs_human",
+      "comment_id": "5713466406",
+      "comment_version_key": "5713466406:2026-09-17T13:43:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150840#issuecomment-5713466406",
+      "comment_created_at": "2026-09-17T11:17:37Z",
+      "comment_updated_at": "2026-09-17T13:43:05Z",
+      "comment_body_sha256": "663300abf04b8c4a093d95f3356f4f108be85f4f05e3db4c144be136f681b852",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150840,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Published-driver upgrade behavior remains unverified because the linked acceptance run stopped before exercising it. (sha=ff58d55da72cff1b76bb7b63158b11592df183fb)",
+      "expected_head_sha": "ff58d55da72cff1b76bb7b63158b11592df183fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:44:14.393Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/plugin-sdk-alias-demand-20260917",
+        "head_sha": "ff58d55da72cff1b76bb7b63158b11592df183fb",
         "cluster_id": null,
         "job_path": null
       }
