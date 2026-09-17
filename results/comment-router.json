@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:38:35.490Z",
+  "updated_at": "2026-09-17T14:39:17.884Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150750:5711651320:2026-09-17T10:07:51Z:clawsweeper_needs_human",
-      "comment_id": "5711651320",
-      "comment_version_key": "5711651320:2026-09-17T10:07:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150750#issuecomment-5711651320",
-      "comment_created_at": "2026-09-17T08:51:50Z",
-      "comment_updated_at": "2026-09-17T10:07:51Z",
-      "comment_body_sha256": "9e5e025f472c3d4e6b8e2706d9a1f7bd90432a84e4127a2735d84b22af5c1c3a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150750,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that depend on shell-backgrounded descendants surviving root-command completion will stop working under the retained-group path; the PR deliberately documents this ch... (sha=c18e6da9a17bc2ddd7cf7cd2fe8a95977336a855)",
-      "expected_head_sha": "c18e6da9a17bc2ddd7cf7cd2fe8a95977336a855",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T10:08:48.681Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/exec-child-group-release",
-        "head_sha": "c18e6da9a17bc2ddd7cf7cd2fe8a95977336a855",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150479:5712581456:2026-09-17T10:08:05Z:re_review",
       "comment_id": "5712581456",
@@ -33693,6 +33660,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150547:5716214471:2026-09-17T14:38:10Z:re_review",
+      "comment_id": "5716214471",
+      "comment_version_key": "5716214471:2026-09-17T14:38:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150547#issuecomment-5716214471",
+      "comment_created_at": "2026-09-17T14:38:10Z",
+      "comment_updated_at": "2026-09-17T14:38:10Z",
+      "comment_body_sha256": "3d34acef35e2707c4edc63a2607061bb9154824cf8d41baa51c50ce4ff79486a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150547,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T14:39:14.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/openai-prompt-cache-stability",
+        "head_sha": "aad2e871693b263e411d441a57869dcaa9be1969",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
