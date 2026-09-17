@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T21:20:38.045Z",
+  "updated_at": "2026-09-17T21:20:47.403Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5135420720:2026-07-30T19:35:48Z:re_review",
-      "comment_id": "5135420720",
-      "comment_version_key": "5135420720:2026-07-30T19:35:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5135420720",
-      "comment_created_at": "2026-07-30T19:35:48Z",
-      "comment_updated_at": "2026-07-30T19:35:48Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:27:02.749Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5199705023:2026-08-06T02:28:50Z:re_review",
       "comment_id": "5199705023",
@@ -33129,6 +33102,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146170:5647152271:2026-09-17T21:19:21Z:clawsweeper_needs_human",
+      "comment_id": "5647152271",
+      "comment_version_key": "5647152271:2026-09-17T21:19:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146170#issuecomment-5647152271",
+      "comment_created_at": "2026-09-12T16:24:14Z",
+      "comment_updated_at": "2026-09-17T21:19:21Z",
+      "comment_body_sha256": "358e888b02c480e0c54f4f347d2fa8483f23e2299ee4fb91ea5b983dbeec13a4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146170,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The published updater has not been observed completing while this changed branch suppresses the no-work configuration write; source and boundary tests support compatibility, but the s... (sha=5a5ef2904b79e7dda54656f01cf61cb7da540666)",
+      "expected_head_sha": "5a5ef2904b79e7dda54656f01cf61cb7da540666",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T21:20:47.403Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-2026.9.5-qualification-8906d2d3c4e5",
+        "head_sha": "5a5ef2904b79e7dda54656f01cf61cb7da540666",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
