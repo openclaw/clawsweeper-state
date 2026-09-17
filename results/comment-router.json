@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T07:16:23.763Z",
+  "updated_at": "2026-09-17T07:16:32.711Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:54:5707601570:2026-09-17T02:36:33Z:re_review",
-      "comment_id": "5707601570",
-      "comment_version_key": "5707601570:2026-09-17T02:36:33Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5707601570",
-      "comment_created_at": "2026-09-17T02:36:33Z",
-      "comment_updated_at": "2026-09-17T02:36:33Z",
-      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
-      "repo": "openclaw/rfcs",
-      "issue_number": 54,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T02:37:33.457Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
-        "head_sha": "1762ac26a9010dcc04aa30a6d5cf6301051ad366",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3702:5707530445:2026-09-17T02:34:03Z:clawsweeper_needs_human",
       "comment_id": "5707530445",
@@ -33458,6 +33411,39 @@
         "kind": "pull_request",
         "branch": "steipete/fix-flake-config-refresh-race-20260917",
         "head_sha": "5af4a6507010153200434e3d9307f8e0ffc8c9f8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144347:5624597271:2026-09-17T07:15:28Z:clawsweeper_needs_human",
+      "comment_id": "5624597271",
+      "comment_version_key": "5624597271:2026-09-17T07:15:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/144347#issuecomment-5624597271",
+      "comment_created_at": "2026-09-10T19:55:01Z",
+      "comment_updated_at": "2026-09-17T07:15:28Z",
+      "comment_body_sha256": "be89b5c8e0f1bf12e545d96ecc66601b61556148371ef02c19d0dac395111572",
+      "repo": "openclaw/openclaw",
+      "issue_number": 144347,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party SDK callers relying on implicit sandbox source-parent expansion will lose attachment access until they supply trusted active-session context; exact-head security review ac... (sha=7b0b2893e49e24572aa16429c2f2c04420ca19da)",
+      "expected_head_sha": "7b0b2893e49e24572aa16429c2f2c04420ca19da",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T07:16:32.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "1036",
+        "head_sha": "7b0b2893e49e24572aa16429c2f2c04420ca19da",
         "cluster_id": null,
         "job_path": null
       }
