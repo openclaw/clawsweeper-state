@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T22:05:59.403Z",
+  "updated_at": "2026-09-17T22:05:59.784Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150562:5716277665:2026-09-17T14:42:36Z:re_review",
-      "comment_id": "5716277665",
-      "comment_version_key": "5716277665:2026-09-17T14:42:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5716277665",
-      "comment_created_at": "2026-09-17T14:42:36Z",
-      "comment_updated_at": "2026-09-17T14:42:36Z",
-      "comment_body_sha256": "71c0476e7f261a6315fcf534cf259c07814ec16dd2048a98d8f41cb401d01943",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150562,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — extracted yield test into separate file (main-session-restart-recovery-yield.test.ts) to satisfy line-cap ratchet",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T14:43:46.213Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/149935-yield-between-store-recovery",
-        "head_sha": "8fc632f74d84192bf75d29b430fdcc25131f59bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150952:5716288688:2026-09-17T14:43:23Z:clawsweeper_needs_human",
       "comment_id": "5716288688",
@@ -33554,6 +33507,39 @@
         "kind": "pull_request",
         "branch": "fix/broadcast-cancel-results",
         "head_sha": "a955a3f52a6ef9a65358daf48c3f8eced158e614",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151160:5721584271:2026-09-17T22:04:50Z:clawsweeper_needs_human",
+      "comment_id": "5721584271",
+      "comment_version_key": "5721584271:2026-09-17T22:04:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151160#issuecomment-5721584271",
+      "comment_created_at": "2026-09-17T21:37:50Z",
+      "comment_updated_at": "2026-09-17T22:04:50Z",
+      "comment_body_sha256": "83171a05ace42ab6679606b12b0164ee38f24c2a16250cb37e8b26f423769932",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151160,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ba12fb994babc90175a44437708e7df724a59666)",
+      "expected_head_sha": "ba12fb994babc90175a44437708e7df724a59666",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T22:05:59.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/nostr-relay-authority",
+        "head_sha": "ba12fb994babc90175a44437708e7df724a59666",
         "cluster_id": null,
         "job_path": null
       }
