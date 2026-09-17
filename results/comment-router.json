@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T17:08:49.667Z",
+  "updated_at": "2026-09-17T17:10:59.535Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150807:5713851071:2026-09-17T11:50:14Z:re_review",
-      "comment_id": "5713851071",
-      "comment_version_key": "5713851071:2026-09-17T11:50:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150807#issuecomment-5713851071",
-      "comment_created_at": "2026-09-17T11:50:14Z",
-      "comment_updated_at": "2026-09-17T11:50:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150807,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T11:51:09.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f05-gateway-down-alarm",
-        "head_sha": "d784d3cf8f5c09b0a841c2b39504b612201d5277",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150834:5713851337:2026-09-17T11:50:16Z:re_review",
       "comment_id": "5713851337",
@@ -33348,6 +33301,39 @@
         "kind": "pull_request",
         "branch": "fix/activity-recaps-skip-cron",
         "head_sha": "f73001599ef93b86289f727020491fe7829ddeb7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150875:5714308586:2026-09-17T17:03:59Z:clawsweeper_needs_human",
+      "comment_id": "5714308586",
+      "comment_version_key": "5714308586:2026-09-17T17:03:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150875#issuecomment-5714308586",
+      "comment_created_at": "2026-09-17T12:24:42Z",
+      "comment_updated_at": "2026-09-17T17:03:59Z",
+      "comment_body_sha256": "f9ee86295124ba00637b3bfc45d72cc4111ef8f4cb4c9d5141db63984ee3352b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150875,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging the registered regression before its production repair would introduce a known failure into the Gateway database-worker suite. (sha=1d2150699af7e3187186cbf9193897866eba0438)",
+      "expected_head_sha": "1d2150699af7e3187186cbf9193897866eba0438",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T17:10:59.535Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-burden/plugin-metadata-reload-scan",
+        "head_sha": "1d2150699af7e3187186cbf9193897866eba0438",
         "cluster_id": null,
         "job_path": null
       }
