@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T04:19:24.497Z",
+  "updated_at": "2026-09-17T04:19:46.225Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150153:5700958005:2026-09-16T23:20:24Z:clawsweeper_needs_human",
-      "comment_id": "5700958005",
-      "comment_version_key": "5700958005:2026-09-16T23:20:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150153#issuecomment-5700958005",
-      "comment_created_at": "2026-09-16T16:31:47Z",
-      "comment_updated_at": "2026-09-16T23:20:24Z",
-      "comment_body_sha256": "d3c0c1918d6de2335cd504a5dabc9666e471605c95c678ff0ef725452ac4c8c4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150153,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Same-install system services now stop the user-service updater from proceeding; affected operators must use their deployment owner’s coordinated workflow. (sha=9cd76c1abbaa2518653a12799060e71a1c2c915c)",
-      "expected_head_sha": "9cd76c1abbaa2518653a12799060e71a1c2c915c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T23:30:58.918Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/task-recovery-reduction",
-        "head_sha": "9cd76c1abbaa2518653a12799060e71a1c2c915c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150196:5701947836:2026-09-16T23:20:56Z:clawsweeper_auto_repair",
       "comment_id": "5701947836",
@@ -33633,6 +33600,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:115670:5708434559:2026-09-17T04:18:46Z:re_review",
+      "comment_id": "5708434559",
+      "comment_version_key": "5708434559:2026-09-17T04:18:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/115670#issuecomment-5708434559",
+      "comment_created_at": "2026-09-17T04:18:46Z",
+      "comment_updated_at": "2026-09-17T04:18:46Z",
+      "comment_body_sha256": "7adec79c3d8c34e7445989e4e7073e3806e4913e5ffa4fd343a5a81c515f60e2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 115670,
+      "author": "jalehman",
+      "author_id": 550978,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T04:19:44.385Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/claws-adopt-existing-workspace",
+        "head_sha": "2c512a775dc6fa51eb53cdb631e0d94cd888485e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
