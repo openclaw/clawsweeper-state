@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151111"
-mode: "autonomous"
-run_id: "35271617301"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35271617301"
+mode: "plan"
+run_id: "35277195932"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35277195932"
 head_sha: "fdbde19bbbd4c019baf3522586e149ab4749662c"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-17T21:17:35.784Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151111"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151111"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-17T21:35:36.623Z"
+canonical: "#151111"
+canonical_issue: "#151111"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35271617301](https://github.com/openclaw/clawsweeper/actions/runs/35271617301)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35277195932](https://github.com/openclaw/clawsweeper/actions/runs/35277195932)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151111
+Canonical: #151111
 
 ## Summary
 
-Verified the reported control-flow defect on preflight main 85b8a9b8ea36b06f111938cea59085845046d479. Prepared a narrow fix artifact. Implementation and required transport reproduction are blocked by the read-only host and absent dependencies; no files or GitHub state changed.
+The reported failure path remains on preflight main 57dd48543d547ab6ef7e3d59d06b05d7aa9014f8. Plan one narrow fix for #151111, conditional on a failing transport regression. Quarantine only #122163. No code or GitHub changes made; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Verified the reported control-flow defect on preflight main 85b8a9b8ea36b06f1119
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151111 | fix_needed | blocked | canonical | The source-supported bug remains actionable, but this host permits only reads and node_modules is absent. The authorized executor must establish the failing registered V2 transport regression before editing production code. |
-| #122163 | route_security | planned | security_sensitive | Quarantine this exact ref for central OpenClaw security handling without public mutation. Its historical flag does not block the separate quota-result bug. |
-| #145853 | keep_closed | skipped | related | Historical context only; no closure or repair action. |
-| #147901 | keep_closed | skipped | related | Historical context only; no closure or repair action. |
-| cluster:issue-openclaw-openclaw-151111 | build_fix_artifact | planned | canonical | A narrow existing-behavior repair is supported without configuration, dependency, public-contract, persistent-state, or security-boundary changes. |
+| #151111 | fix_needed | planned | canonical | Returned failures bypass the existing prepared-attempt loop. A focused repair plan is supported; runtime reproduction must pass its pre-fix failure gate before implementation or PR publication. |
+| #122163 | route_security | planned | security_sensitive | Read-only quarantine to central OpenClaw security handling. No public mutation or repair is proposed for this historical item; #151111 can proceed within the existing boundary. |
+| #145853 | keep_closed | skipped | related | Historical context only; preserve its merged state. |
+| #147901 | keep_closed | skipped | related | Historical context only; preserve its merged state. |
 
 ## Needs Human
 

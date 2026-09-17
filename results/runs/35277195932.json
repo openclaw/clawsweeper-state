@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151111",
+  "mode": "plan",
+  "run_id": "35277195932",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35277195932",
+  "head_sha": "fdbde19bbbd4c019baf3522586e149ab4749662c",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151111.md",
+  "published_at": "2026-09-17T21:35:36.623Z",
+  "canonical": "#151111",
+  "canonical_issue": "#151111",
+  "canonical_pr": null,
+  "summary": "The reported failure path remains on preflight main 57dd48543d547ab6ef7e3d59d06b05d7aa9014f8. Plan one narrow fix for #151111, conditional on a failing transport regression. Quarantine only #122163. No code or GitHub changes made; runtime reproduction and validation remain pending.",
+  "actions": [
+    {
+      "target": "#151111",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151111",
+      "candidate_fix": null,
+      "reason": "Returned failures bypass the existing prepared-attempt loop. A focused repair plan is supported; runtime reproduction must pass its pre-fix failure gate before implementation or PR publication."
+    },
+    {
+      "target": "#122163",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Read-only quarantine to central OpenClaw security handling. No public mutation or repair is proposed for this historical item; #151111 can proceed within the existing boundary."
+    },
+    {
+      "target": "#145853",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#151111",
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve its merged state."
+    },
+    {
+      "target": "#147901",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#151111",
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve its merged state."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
