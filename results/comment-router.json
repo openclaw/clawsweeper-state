@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T05:29:36.666Z",
+  "updated_at": "2026-09-17T05:31:16.887Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150212:5702239073:2026-09-17T01:02:14Z:clawsweeper_needs_human",
-      "comment_id": "5702239073",
-      "comment_version_key": "5702239073:2026-09-17T01:02:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150212#issuecomment-5702239073",
-      "comment_created_at": "2026-09-16T18:07:47Z",
-      "comment_updated_at": "2026-09-17T01:02:14Z",
-      "comment_body_sha256": "2d955c8b41aaae78e3c9874d5df22b74c77017107a727a53ec7b60c528f07bcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150212,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=3d370e73ab37d8b97d1b2730a33aca466e50ff16)",
-      "expected_head_sha": "3d370e73ab37d8b97d1b2730a33aca466e50ff16",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T01:03:12.534Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/qa-inventory-report-argv-consolidation",
-        "head_sha": "3d370e73ab37d8b97d1b2730a33aca466e50ff16",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150428:5706826740:2026-09-17T01:02:36Z:clawsweeper_needs_human",
       "comment_id": "5706826740",
@@ -33559,6 +33526,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149916:5709298427:2026-09-17T05:30:17Z:re_review",
+      "comment_id": "5709298427",
+      "comment_version_key": "5709298427:2026-09-17T05:30:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149916#issuecomment-5709298427",
+      "comment_created_at": "2026-09-17T05:30:17Z",
+      "comment_updated_at": "2026-09-17T05:30:17Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149916,
+      "author": "Aurora-NICExq",
+      "author_id": 239583721,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T05:31:15.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/continuation-skip-completed-workspace-marker",
+        "head_sha": "d1cb5ced179e7554bf669997c9e9f9042e729cda",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
