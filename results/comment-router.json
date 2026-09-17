@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T23:00:46.787Z",
+  "updated_at": "2026-09-17T23:01:19.033Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150324:5705122570:2026-09-17T15:59:32Z:clawsweeper_needs_human",
-      "comment_id": "5705122570",
-      "comment_version_key": "5705122570:2026-09-17T15:59:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150324#issuecomment-5705122570",
-      "comment_created_at": "2026-09-16T21:54:15Z",
-      "comment_updated_at": "2026-09-17T15:59:32Z",
-      "comment_body_sha256": "e46ad645fb1b04fd13410e0b7dba8396a827ef223c5fa87849ae8199c7a9ed57",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150324,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party plugins with exhaustive DiagnosticEventPayload switches can fail compilation when rebuilt against the expanded SDK until they handle model.runtime_choice; owner acceptance... (sha=5d5cd7ab8c49b9c1fa694a5eecd07693ea27d47a)",
-      "expected_head_sha": "5d5cd7ab8c49b9c1fa694a5eecd07693ea27d47a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T16:04:03.882Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/native-runtime-decision-capture-67c2",
-        "head_sha": "5d5cd7ab8c49b9c1fa694a5eecd07693ea27d47a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150913:5715087891:2026-09-17T15:52:56Z:clawsweeper_needs_human",
       "comment_id": "5715087891",
@@ -33423,6 +33390,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150562:5722346204:2026-09-17T23:00:21Z:re_review",
+      "comment_id": "5722346204",
+      "comment_version_key": "5722346204:2026-09-17T23:00:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5722346204",
+      "comment_created_at": "2026-09-17T23:00:21Z",
+      "comment_updated_at": "2026-09-17T23:00:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150562,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T23:01:16.035Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149935-yield-between-store-recovery",
+        "head_sha": "397581f05477d1218f3626231b1ac8707e5de8c6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
