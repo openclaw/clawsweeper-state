@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:11:04.736Z",
+  "updated_at": "2026-09-17T03:11:07.695Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149797:5698836003:2026-09-16T21:56:32Z:re_review",
-      "comment_id": "5698836003",
-      "comment_version_key": "5698836003:2026-09-16T21:56:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/149797#issuecomment-5698836003",
-      "comment_created_at": "2026-09-16T14:07:44Z",
-      "comment_updated_at": "2026-09-16T21:56:32Z",
-      "comment_body_sha256": "029282e2cac96ed2ead3e1f5990ece94bd404dbbe473c4fdf4dbba2fdd56e9f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149797,
-      "author": "santi-h",
-      "author_id": 876161,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T21:57:49.390Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142693:5593623862:2026-09-16T21:56:52Z:clawsweeper_needs_human",
       "comment_id": "5593623862",
@@ -33855,6 +33810,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149725:5692745339:2026-09-17T03:09:35Z:clawsweeper_needs_human",
+      "comment_id": "5692745339",
+      "comment_version_key": "5692745339:2026-09-17T03:09:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149725#issuecomment-5692745339",
+      "comment_created_at": "2026-09-16T05:57:13Z",
+      "comment_updated_at": "2026-09-17T03:09:35Z",
+      "comment_body_sha256": "7174db442aa445bb6bb6201857420734531de3d835b375d89dadf1ca3fafca55",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149725,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct node connections can stop working when the bundled helper is missing, incompatible, or rejected; fresh-install, upgrade, and rollback behavior is not yet demonstrated for the r... (sha=f0ada44a58a0d6dcd587c3245cd3300023655323)",
+      "expected_head_sha": "f0ada44a58a0d6dcd587c3245cd3300023655323",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T03:11:07.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/rfc54-macos-rust-runtime",
+        "head_sha": "f0ada44a58a0d6dcd587c3245cd3300023655323",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
