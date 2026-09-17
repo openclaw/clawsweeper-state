@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T17:45:09.766Z",
+  "updated_at": "2026-09-17T17:45:48.995Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150773:5714331540:2026-09-17T12:26:34Z:re_review",
-      "comment_id": "5714331540",
-      "comment_version_key": "5714331540:2026-09-17T12:26:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150773#issuecomment-5714331540",
-      "comment_created_at": "2026-09-17T12:26:34Z",
-      "comment_updated_at": "2026-09-17T12:26:34Z",
-      "comment_body_sha256": "c1ca4e0613c4366635952cf6d2dfbad9787ce75dbd1b92c4c98895bd7d98c400",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150773,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T12:27:32.929Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-worker-runtime-closure",
-        "head_sha": "f986db1b3ecde91ec5b92d8fc8a95f69127381f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:461:5714049215:2026-09-17T12:16:44Z:clawsweeper_needs_human",
       "comment_id": "5714049215",
@@ -33116,6 +33069,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/plugin-metadata-reload-scan",
         "head_sha": "1d2150699af7e3187186cbf9193897866eba0438",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151011:5718298395:2026-09-17T17:44:47Z:clawsweeper_auto_repair",
+      "comment_id": "5718298395",
+      "comment_version_key": "5718298395:2026-09-17T17:44:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151011#issuecomment-5718298395",
+      "comment_created_at": "2026-09-17T17:06:47Z",
+      "comment_updated_at": "2026-09-17T17:44:47Z",
+      "comment_body_sha256": "00a3df70486dc5c3f765c18da9cce2947c8e2a62faa177e81f1c4f973ea4065d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d84406c129074d85c918321b44402cc43bc3b9c9)",
+      "expected_head_sha": "d84406c129074d85c918321b44402cc43bc3b9c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T17:45:48.995Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release95-reuse-gateway-plugin-metadata",
+        "head_sha": "d84406c129074d85c918321b44402cc43bc3b9c9",
         "cluster_id": null,
         "job_path": null
       }
