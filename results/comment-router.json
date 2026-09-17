@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:02:00.938Z",
+  "updated_at": "2026-09-17T08:02:07.395Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149330:5686175002:2026-09-17T03:24:45Z:clawsweeper_needs_human",
-      "comment_id": "5686175002",
-      "comment_version_key": "5686175002:2026-09-17T03:24:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149330#issuecomment-5686175002",
-      "comment_created_at": "2026-09-15T18:48:54Z",
-      "comment_updated_at": "2026-09-17T03:24:45Z",
-      "comment_body_sha256": "eec69cc9c036829373e35680b5b463fd5827bb1031758d2fbf92266b7aabde18",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149330,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied GitHub snapshot reports merge conflicts; without a verified merge result, integration with newer main changes remains unverified. (sha=af51548ad37eccf29eb2f49ffde0c92e619bd6a9)",
-      "expected_head_sha": "af51548ad37eccf29eb2f49ffde0c92e619bd6a9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:26:26.486Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-882-contextual-help",
-        "head_sha": "af51548ad37eccf29eb2f49ffde0c92e619bd6a9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150497:5707351006:2026-09-17T03:24:32Z:clawsweeper_needs_human",
       "comment_id": "5707351006",
@@ -33293,6 +33260,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150734:5711038730:2026-09-17T08:01:16Z:clawsweeper_needs_human",
+      "comment_id": "5711038730",
+      "comment_version_key": "5711038730:2026-09-17T08:01:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150734#issuecomment-5711038730",
+      "comment_created_at": "2026-09-17T08:01:16Z",
+      "comment_updated_at": "2026-09-17T08:01:16Z",
+      "comment_body_sha256": "a40d4e023b09baa29632aca4e5fc335e144971d4a9de256e87b90b31433e6589",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150734,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported packaged Gateway/node run meaningfully covers document reads, denied reader writes, owner...; Review finding: [P1] Fence and settle node writes before releasing the workspace binding — extensions/file-transfer/src/workspace-service.ts:36-40 - [medium] Retired workspace aut... (sha=cc199e6ad7ebd0ac4188aea611e0c63d58d49187)",
+      "expected_head_sha": "cc199e6ad7ebd0ac4188aea611e0c63d58d49187",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T08:02:07.395Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/node-workspace-files",
+        "head_sha": "cc199e6ad7ebd0ac4188aea611e0c63d58d49187",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
