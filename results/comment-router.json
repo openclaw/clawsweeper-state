@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:08:02.457Z",
+  "updated_at": "2026-09-17T02:08:25.817Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150272:5703812442:2026-09-16T20:08:36Z:clawsweeper_needs_human",
-      "comment_id": "5703812442",
-      "comment_version_key": "5703812442:2026-09-16T20:08:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150272#issuecomment-5703812442",
-      "comment_created_at": "2026-09-16T20:08:36Z",
-      "comment_updated_at": "2026-09-16T20:08:36Z",
-      "comment_body_sha256": "8f49db2a3daae5d9c40a62fff14e8da629a01ab5f262fa4f8e0f2d42f47a4db2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150272,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: inspected screenshots support the visible audience controls, and the body reports integrated live UX a...; Review finding: [P1] [P1] Integrate the audience column with schema admission and migration — src/state/openclaw-state-db-schema-additive.ts:116 - [P1] [P1] Keep selected entries... (sha=307af56b4ce030a1f13fe0e1c5b7bf817cd76c13)",
-      "expected_head_sha": "307af56b4ce030a1f13fe0e1c5b7bf817cd76c13",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T20:09:41.685Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/agent-secret-audience-ui",
-        "head_sha": "307af56b4ce030a1f13fe0e1c5b7bf817cd76c13",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-16T20:08:44Z:clawsweeper_auto_repair",
       "comment_id": "5567489931",
@@ -33495,6 +33462,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149737:5707347961:2026-09-17T02:07:21Z:re_review",
+      "comment_id": "5707347961",
+      "comment_version_key": "5707347961:2026-09-17T02:07:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149737#issuecomment-5707347961",
+      "comment_created_at": "2026-09-17T02:07:21Z",
+      "comment_updated_at": "2026-09-17T02:07:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149737,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T02:08:23.089Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/startup-metadata-snapshot",
+        "head_sha": "6d6c32b0f7cd54c1a1d2c1a6ada1c3ab0117a945",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
