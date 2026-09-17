@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:09:46.936Z",
+  "updated_at": "2026-09-17T16:10:14.504Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150787:5713228593:2026-09-17T10:58:53Z:re_review",
-      "comment_id": "5713228593",
-      "comment_version_key": "5713228593:2026-09-17T10:58:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150787#issuecomment-5713228593",
-      "comment_created_at": "2026-09-17T10:58:53Z",
-      "comment_updated_at": "2026-09-17T10:58:53Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150787,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T11:06:45.946Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-split-heavy-gateway-tests",
-        "head_sha": "a148bb8402b74869dc9721ce1be37911c75edc3b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150787:5712496771:2026-09-17T11:05:39Z:clawsweeper_needs_human",
       "comment_id": "5712496771",
@@ -33714,6 +33667,39 @@
         "kind": "pull_request",
         "branch": "dependabot/bun/development-minor-and-patch-617e509c28",
         "head_sha": "1ff53cf4e13e5db250fafb584a94a17a00342b4c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150982:5717533371:2026-09-17T16:09:19Z:clawsweeper_needs_human",
+      "comment_id": "5717533371",
+      "comment_version_key": "5717533371:2026-09-17T16:09:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150982#issuecomment-5717533371",
+      "comment_created_at": "2026-09-17T16:09:19Z",
+      "comment_updated_at": "2026-09-17T16:09:19Z",
+      "comment_body_sha256": "81fbb8e1566c92680d42d752b67e134319dc895b0d14492d1c7f82603e95a916",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150982,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The preflight estimator is covered by SQLite-backed tests with a mocked compactor, but no real after-fix agent run shows that a compacted healt... (sha=d80ff6e0001215ed0b582d7958a327a35506ae7b)",
+      "expected_head_sha": "d80ff6e0001215ed0b582d7958a327a35506ae7b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T16:10:14.504Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agent-preflight-compacted-window",
+        "head_sha": "d80ff6e0001215ed0b582d7958a327a35506ae7b",
         "cluster_id": null,
         "job_path": null
       }
