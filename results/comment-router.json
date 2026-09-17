@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:19:44.290Z",
+  "updated_at": "2026-09-17T03:19:56.768Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150297:5705357164:2026-09-16T22:16:38Z:re_review",
-      "comment_id": "5705357164",
-      "comment_version_key": "5705357164:2026-09-16T22:16:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150297#issuecomment-5705357164",
-      "comment_created_at": "2026-09-16T22:16:38Z",
-      "comment_updated_at": "2026-09-16T22:16:38Z",
-      "comment_body_sha256": "fba412ef4e98d6fb6eebb326aed4ca547f5ab5fa201a12683900a7840eb0f045",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150297,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T22:17:30.502Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/task-agent-selection-clones-20260917",
-        "head_sha": "8139035b63acae49fc717389aa95552d2a44ab23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150299:5705357660:2026-09-16T22:16:41Z:re_review",
       "comment_id": "5705357660",
@@ -33750,6 +33703,39 @@
         "kind": "pull_request",
         "branch": "fix/voice-consult-transcript-race",
         "head_sha": "b6cebea603238df68dc86228d6e985032aee8336",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150540:5707943970:2026-09-17T03:18:55Z:clawsweeper_needs_human",
+      "comment_id": "5707943970",
+      "comment_version_key": "5707943970:2026-09-17T03:18:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150540#issuecomment-5707943970",
+      "comment_created_at": "2026-09-17T03:18:55Z",
+      "comment_updated_at": "2026-09-17T03:18:55Z",
+      "comment_body_sha256": "634c72420591c1f1f31e5720f6c3e2004a841ddc8877cf3c849895ad43f0240b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150540,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=fa57ba6934a0c597492b813379dd12f7dc14923e)",
+      "expected_head_sha": "fa57ba6934a0c597492b813379dd12f7dc14923e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T03:19:56.768Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/heartbeat-disabled-after-upgrade",
+        "head_sha": "765e2d97cbc4516d18d977dc42835a4801fdc32c",
         "cluster_id": null,
         "job_path": null
       }
