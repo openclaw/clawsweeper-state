@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:15:52.698Z",
+  "updated_at": "2026-09-17T03:16:11.236Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149449:5689021281:2026-09-16T22:04:11Z:clawsweeper_needs_human",
-      "comment_id": "5689021281",
-      "comment_version_key": "5689021281:2026-09-16T22:04:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149449#issuecomment-5689021281",
-      "comment_created_at": "2026-09-15T22:36:33Z",
-      "comment_updated_at": "2026-09-16T22:04:11Z",
-      "comment_body_sha256": "9f1c939355ec3c866e9541463a949c74defce95d82f7e8653203ccac9fa4d9e6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149449,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native-platform qualification of the changed worker launch and cancellation path remains unverified; Linux argv admission does not establish Windows process settlement or scratch clea... (sha=928b78d77d8c3a44e7a3afef38f656b4f8fe4f39)",
-      "expected_head_sha": "928b78d77d8c3a44e7a3afef38f656b4f8fe4f39",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T22:05:54.073Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/rehearsal-current-native-2114",
-        "head_sha": "928b78d77d8c3a44e7a3afef38f656b4f8fe4f39",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:437:5703327106:2026-09-16T22:05:57Z:clawsweeper_needs_human",
       "comment_id": "5703327106",
@@ -33815,6 +33782,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150099:5707912149:2026-09-17T03:14:40Z:re_review",
+      "comment_id": "5707912149",
+      "comment_version_key": "5707912149:2026-09-17T03:14:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150099#issuecomment-5707912149",
+      "comment_created_at": "2026-09-17T03:14:40Z",
+      "comment_updated_at": "2026-09-17T03:14:40Z",
+      "comment_body_sha256": "2b2b821142a7bb8603c63601308ce0580007922da071826a889e21adf75fdea1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150099,
+      "author": "LiuwqGit",
+      "author_id": 7065327,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T03:16:09.040Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-150081-elevated-guidance-stable-prefix",
+        "head_sha": "d674a7437c2c1d29b65e7d911c60fb5ca7b10257",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
