@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T06:23:21.845Z",
+  "updated_at": "2026-09-17T06:23:41.744Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:4892913957:2026-07-06T12:42:56Z:re_review",
-      "comment_id": "4892913957",
-      "comment_version_key": "4892913957:2026-07-06T12:42:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4892913957",
-      "comment_created_at": "2026-07-06T12:42:56Z",
-      "comment_updated_at": "2026-07-06T12:42:56Z",
-      "comment_body_sha256": "69a53b1db81caae0280e5b3dbd528a72c60af5b137cb51dd9f972fb2cefaefb4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T01:56:19.239Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:4894806155:2026-07-06T15:49:13Z:re_review",
       "comment_id": "4894806155",
@@ -33581,6 +33554,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150673:5709904764:2026-09-17T06:22:40Z:clawsweeper_needs_human",
+      "comment_id": "5709904764",
+      "comment_version_key": "5709904764:2026-09-17T06:22:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150673#issuecomment-5709904764",
+      "comment_created_at": "2026-09-17T06:22:40Z",
+      "comment_updated_at": "2026-09-17T06:22:40Z",
+      "comment_body_sha256": "e8db270a17d0ec04d42bcb1e4135f736d43429b3910a6f09b959c1086ee7a640",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150673,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Main and this branch use different valid buffer narrowing in the same test hunk; the conflict-resolved combined tree has not yet been reviewed or validated. (sha=df6a3742c96db545588a430b62ce0e3232b7c5cb)",
+      "expected_head_sha": "df6a3742c96db545588a430b62ce0e3232b7c5cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T06:23:41.743Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-slack-envelope-guard-main-red-20260917",
+        "head_sha": "df6a3742c96db545588a430b62ce0e3232b7c5cb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
