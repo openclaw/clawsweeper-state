@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T18:27:17.141Z",
+  "updated_at": "2026-09-17T18:29:54.695Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150798:5714567401:2026-09-17T12:45:15Z:re_review",
-      "comment_id": "5714567401",
-      "comment_version_key": "5714567401:2026-09-17T12:45:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150798#issuecomment-5714567401",
-      "comment_created_at": "2026-09-17T12:45:15Z",
-      "comment_updated_at": "2026-09-17T12:45:15Z",
-      "comment_body_sha256": "0bd44ef77479f1e1ea2279ce1e0236a6a85269d852926133a7637ae27546b641",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150798,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T12:46:09.417Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/update-promisor-marker-cleanup",
-        "head_sha": "fe2d3fc61d7beec992ae3320ce903245086eaeb2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126611:5353876596:2026-09-17T12:45:05Z:clawsweeper_auto_repair",
       "comment_id": "5353876596",
@@ -33046,6 +32999,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150970:5717210456:2026-09-17T18:28:53Z:clawsweeper_needs_human",
+      "comment_id": "5717210456",
+      "comment_version_key": "5717210456:2026-09-17T18:28:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150970#issuecomment-5717210456",
+      "comment_created_at": "2026-09-17T15:45:35Z",
+      "comment_updated_at": "2026-09-17T18:28:53Z",
+      "comment_body_sha256": "0a99f2d5f0c833b28806640e31733feed5c919d6262e456a07347710152d19d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150970,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=186e3963f36c7cd7cf2941e62b87ef30e548a8d2)",
+      "expected_head_sha": "186e3963f36c7cd7cf2941e62b87ef30e548a8d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T18:29:54.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/ci-exclusive-gateway-isolated-shard",
+        "head_sha": "186e3963f36c7cd7cf2941e62b87ef30e548a8d2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
