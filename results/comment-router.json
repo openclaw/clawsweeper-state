@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T21:21:22.209Z",
+  "updated_at": "2026-09-17T21:22:02.001Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5257625886:2026-08-11T19:06:51Z:re_review",
-      "comment_id": "5257625886",
-      "comment_version_key": "5257625886:2026-08-11T19:06:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5257625886",
-      "comment_created_at": "2026-08-11T19:06:51Z",
-      "comment_updated_at": "2026-08-11T19:06:51Z",
-      "comment_body_sha256": "f0439eaac18523f1214a6468b6a0ca5305f8be1098c7aeb516b70f0e1f2656e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:27:02.749Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5257754586:2026-08-11T19:19:21Z:re_review",
       "comment_id": "5257754586",
@@ -33244,6 +33217,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-facetime:32:5721389428:2026-09-17T21:20:56Z:clawsweeper_needs_human",
+      "comment_id": "5721389428",
+      "comment_version_key": "5721389428:2026-09-17T21:20:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw-facetime/pull/32#issuecomment-5721389428",
+      "comment_created_at": "2026-09-17T21:20:56Z",
+      "comment_updated_at": "2026-09-17T21:20:56Z",
+      "comment_body_sha256": "987859d349faff16f4728530dfb953709be76506ebd61ed5fd02b39bc417faef",
+      "repo": "openclaw/openclaw-facetime",
+      "issue_number": 32,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied macOS terminal evidence demonstrates closed/live pipe handling in CaptureStandardOutputChecks, but does not exercise PCMW...; Review finding: [P1] [P1] Finish carrier termination before publishing the stopping state — native/Sources/FaceTimeAudioCapture/FaceTimeAudioCapture.swift:644-648 - [P1] [P1] Hono... (sha=8dff33631d2e84cfd080c218c7b9407abaa8a18c)",
+      "expected_head_sha": "8dff33631d2e84cfd080c218c7b9407abaa8a18c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T21:22:02.001Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/capture-sigpipe-parent-death",
+        "head_sha": "8dff33631d2e84cfd080c218c7b9407abaa8a18c",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
