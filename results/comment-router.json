@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:30:20.187Z",
+  "updated_at": "2026-09-17T16:31:19.730Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150190:5701719628:2026-09-17T11:25:28Z:clawsweeper_needs_human",
-      "comment_id": "5701719628",
-      "comment_version_key": "5701719628:2026-09-17T11:25:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150190#issuecomment-5701719628",
-      "comment_created_at": "2026-09-16T17:27:54Z",
-      "comment_updated_at": "2026-09-17T11:25:28Z",
-      "comment_body_sha256": "3b1a22dfc6d8b01ee6938e7c07d6873d30e753cce69a7509f76855e02d3a3f2a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150190,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Users whose approvals or queued messages exist only in legacy stores will need Doctor repair before those records become usable; the composed head’s published-updater handoff and fres... (sha=c27288dbf67aa7e5d24fca384f1bcdc421e5c186)",
-      "expected_head_sha": "c27288dbf67aa7e5d24fca384f1bcdc421e5c186",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T11:26:27.194Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/doctor-pairing-outbound-cutover",
-        "head_sha": "c27288dbf67aa7e5d24fca384f1bcdc421e5c186",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2303:5712210138:2026-09-17T11:25:33Z:clawsweeper_needs_human",
       "comment_id": "5712210138",
@@ -33575,6 +33542,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150978:5717832362:2026-09-17T16:30:08Z:re_review",
+      "comment_id": "5717832362",
+      "comment_version_key": "5717832362:2026-09-17T16:30:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150978#issuecomment-5717832362",
+      "comment_created_at": "2026-09-17T16:30:08Z",
+      "comment_updated_at": "2026-09-17T16:30:08Z",
+      "comment_body_sha256": "57e9de92ad411f2cb21b647fdd9dc67c6d5facbe12c15d0811cb871a14ac1959",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150978,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T16:31:17.715Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-canary-config-plugin-doctor",
+        "head_sha": "1f0763ae6525777ff8415e361dd4de1eb49ba169",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
