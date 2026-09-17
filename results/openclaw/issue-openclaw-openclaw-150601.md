@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150601"
-mode: "autonomous"
-run_id: "35184044490"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35184044490"
+mode: "plan"
+run_id: "35186253738"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35186253738"
 head_sha: "f8ec10f29bde7db20dcd442c5b7c64edfee2f976"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-17T05:08:30.676Z"
-canonical: "https://github.com/openclaw/openclaw/issues/150601"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/150601"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-17T05:38:31.197Z"
+canonical: "#150601"
+canonical_issue: "#150601"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35184044490](https://github.com/openclaw/clawsweeper/actions/runs/35184044490)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35186253738](https://github.com/openclaw/clawsweeper/actions/runs/35186253738)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/150601
+Canonical: #150601
 
 ## Summary
 
-Source replay reproduced the included-reference ID loss. A narrow fix artifact is ready; implementation, full regression tests, real-Gateway proof, and screenshots are blocked by this read-only host and missing dependencies. No files or GitHub state were changed.
+Plan a narrow form-submission repair for #150601. Current-main reproduction remains required: the checkout differs from the preflight main revision. No changes, tests, Gateway proof, or screenshot capture were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Source replay reproduced the included-reference ID loss. A narrow fix artifact i
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150601 | fix_needed | planned | canonical | The observed serializer defect supports a narrow UI repair. Keep the issue open while the executor establishes the full failing regression and validates the fix. |
-| cluster:issue-openclaw-openclaw-150601 | build_fix_artifact | planned |  | Prepare one narrow implementation on clawsweeper/issue-openclaw-openclaw-150601; no contributor PR replacement is needed. |
-| cluster:issue-openclaw-openclaw-150601 | open_fix_pr | blocked |  | Implementation and publication require a writable executor with dependencies and browser capture support. Required screenshots must be inspected and visibly delivered in both the originating chat and PR, with rendering verified. |
+| #150601 | fix_needed | planned | canonical | The job provides a focused bug-fix path. Preserve this issue as canonical and require current-main reproduction before implementing or publishing the repair. |
 
 ## Needs Human
 
