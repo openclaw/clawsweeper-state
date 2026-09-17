@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T10:05:38.838Z",
+  "updated_at": "2026-09-17T10:05:43.362Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150244:5703131922:2026-09-17T04:55:46Z:clawsweeper_auto_repair",
-      "comment_id": "5703131922",
-      "comment_version_key": "5703131922:2026-09-17T04:55:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150244#issuecomment-5703131922",
-      "comment_created_at": "2026-09-16T19:14:01Z",
-      "comment_updated_at": "2026-09-17T04:55:46Z",
-      "comment_body_sha256": "2f46d6b1f266c10b6e61d83d8d417ba9d52fb2afcdb888c3a7042910e304d7ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150244,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=58f7970791513218886dae13fe7427c4009ea4d9)",
-      "expected_head_sha": "58f7970791513218886dae13fe7427c4009ea4d9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T04:56:56.711Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/flake-windows-cron-identity-cleanup",
-        "head_sha": "58f7970791513218886dae13fe7427c4009ea4d9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3705:5708861248:2026-09-17T04:56:04Z:clawsweeper_needs_human",
       "comment_id": "5708861248",
@@ -33402,6 +33369,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:452:5712539113:2026-09-17T10:04:33Z:clawsweeper_needs_human",
+      "comment_id": "5712539113",
+      "comment_version_key": "5712539113:2026-09-17T10:04:33Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/452#issuecomment-5712539113",
+      "comment_created_at": "2026-09-17T10:04:33Z",
+      "comment_updated_at": "2026-09-17T10:04:33Z",
+      "comment_body_sha256": "aac3a9c0eedacd3909cda1a0c046ce2f5e6a7251d04e7556604472ecbbacfc93",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 452,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed atomic and synchronous-store settlement paths have regression source but no observed after-fix run showing falsy failures reaching... (sha=ddea6b806b54a165115ec3052bc7df3c48a172b2)",
+      "expected_head_sha": "ddea6b806b54a165115ec3052bc7df3c48a172b2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T10:05:43.362Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/atomic-falsy-settlement-20260917",
+        "head_sha": "ddea6b806b54a165115ec3052bc7df3c48a172b2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
