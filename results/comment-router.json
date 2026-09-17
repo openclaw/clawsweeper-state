@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T21:28:09.240Z",
+  "updated_at": "2026-09-17T21:33:43.237Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5294193098:2026-08-14T14:02:56Z:re_review",
-      "comment_id": "5294193098",
-      "comment_version_key": "5294193098:2026-08-14T14:02:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5294193098",
-      "comment_created_at": "2026-08-14T14:02:56Z",
-      "comment_updated_at": "2026-08-14T14:02:56Z",
-      "comment_body_sha256": "09f5e4d9785a108edc3be869fd109b8364d9308725d433bd89bb4f6cd09d0f1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:27:02.749Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5294213718:2026-08-14T14:04:56Z:re_review",
       "comment_id": "5294213718",
@@ -33317,6 +33290,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150259:5703472957:2026-09-17T21:32:20Z:clawsweeper_needs_human",
+      "comment_id": "5703472957",
+      "comment_version_key": "5703472957:2026-09-17T21:32:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150259#issuecomment-5703472957",
+      "comment_created_at": "2026-09-16T19:40:59Z",
+      "comment_updated_at": "2026-09-17T21:32:20Z",
+      "comment_body_sha256": "720f35197494e39b665b2d797af0912477e56a5e5230cc437a5ba92f2d063d2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150259,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The adapted build has not been replayed against a real Gateway, including a subsequent pending-to-streaming-to-terminal tool flow after cache reuse. (sha=251aaa8ebd05c12feb26d5d3d7e75b4c9747eb58)",
+      "expected_head_sha": "251aaa8ebd05c12feb26d5d3d7e75b4c9747eb58",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T21:33:43.237Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "brzezowski/webui-startup-noop-150229-draft",
+        "head_sha": "251aaa8ebd05c12feb26d5d3d7e75b4c9747eb58",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
