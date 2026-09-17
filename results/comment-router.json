@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:22:19.562Z",
+  "updated_at": "2026-09-17T16:23:25.206Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150786:5713413487:2026-09-17T11:13:29Z:re_review",
-      "comment_id": "5713413487",
-      "comment_version_key": "5713413487:2026-09-17T11:13:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150786#issuecomment-5713413487",
-      "comment_created_at": "2026-09-17T11:13:29Z",
-      "comment_updated_at": "2026-09-17T11:13:29Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150786,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T11:14:31.225Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-shard-main-startup-corpus",
-        "head_sha": "4b4ec7af97bbb44497ebb8784eed30a205a93863",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150834:5713426488:2026-09-17T11:14:32Z:clawsweeper_needs_human",
       "comment_id": "5713426488",
@@ -33612,6 +33565,39 @@
         "kind": "pull_request",
         "branch": "fix/maintainer-validation-friction-20260917",
         "head_sha": "b7f35219d2616810b0d3d2a5f4e09a5da75ca3b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150988:5717736111:2026-09-17T16:22:31Z:clawsweeper_needs_human",
+      "comment_id": "5717736111",
+      "comment_version_key": "5717736111:2026-09-17T16:22:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150988#issuecomment-5717736111",
+      "comment_created_at": "2026-09-17T16:22:31Z",
+      "comment_updated_at": "2026-09-17T16:22:31Z",
+      "comment_body_sha256": "7c1125a05a06d76ab387cfd95aa45ef1300970e01c074c2524ea290a5bbcfeab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150988,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Core now requires the new Memory Core public artifact for implicit memory inspection. Reported validation covers source and emitted artifacts, but does not establish that fresh instal... (sha=1ad9677f06aa01cbf62b8e0ea4afff2d8a89f0d5)",
+      "expected_head_sha": "1ad9677f06aa01cbf62b8e0ea4afff2d8a89f0d5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T16:23:25.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/status-memory-presence-worker-20260917",
+        "head_sha": "1ad9677f06aa01cbf62b8e0ea4afff2d8a89f0d5",
         "cluster_id": null,
         "job_path": null
       }
