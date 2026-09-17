@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:30:59.012Z",
+  "updated_at": "2026-09-17T13:31:11.234Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150706:5710605784:2026-09-17T07:31:53Z:clawsweeper_needs_human",
-      "comment_id": "5710605784",
-      "comment_version_key": "5710605784:2026-09-17T07:31:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150706#issuecomment-5710605784",
-      "comment_created_at": "2026-09-17T07:22:05Z",
-      "comment_updated_at": "2026-09-17T07:31:53Z",
-      "comment_body_sha256": "a60e909bf550e6ab89f953f160e1f55b32e6bd0596a9689cb92d4d7e7ed25551",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150706,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f51e760832f8b7459b28cabf79f1c0c8d7714601)",
-      "expected_head_sha": "f51e760832f8b7459b28cabf79f1c0c8d7714601",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:54:29.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-recap-generation-5152",
-        "head_sha": "f51e760832f8b7459b28cabf79f1c0c8d7714601",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150715:5710669890:2026-09-17T07:42:36Z:clawsweeper_needs_human",
       "comment_id": "5710669890",
@@ -34606,6 +34573,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150848:5715168107:2026-09-17T13:30:04Z:re_review",
+      "comment_id": "5715168107",
+      "comment_version_key": "5715168107:2026-09-17T13:30:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150848#issuecomment-5715168107",
+      "comment_created_at": "2026-09-17T13:30:04Z",
+      "comment_updated_at": "2026-09-17T13:30:04Z",
+      "comment_body_sha256": "21574142c54d6c07be03531ddbfa4efa538d718bb1c7fd238428076646a83cdc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150848,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:31:08.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f08-doctor-lock-before-stop-v2",
+        "head_sha": "9150517d0b66fea0a9bbf978101a2a2b9fd4dae4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
