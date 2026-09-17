@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:21:29.952Z",
+  "updated_at": "2026-09-17T03:21:31.711Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119604:5381057414:2026-08-22T15:04:00Z:re_review",
-      "comment_id": "5381057414",
-      "comment_version_key": "5381057414:2026-08-22T15:04:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119604#issuecomment-5381057414",
-      "comment_created_at": "2026-08-22T15:04:00Z",
-      "comment_updated_at": "2026-08-22T15:04:00Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119604,
-      "author": "SweetSophia",
-      "author_id": 44297511,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T22:20:22.706Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137052:5705374334:2026-09-16T22:18:22Z:re_review",
       "comment_id": "5705374334",
@@ -33743,6 +33716,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150510:5707566157:2026-09-17T03:13:26Z:clawsweeper_needs_human",
+      "comment_id": "5707566157",
+      "comment_version_key": "5707566157:2026-09-17T03:13:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150510#issuecomment-5707566157",
+      "comment_created_at": "2026-09-17T02:32:13Z",
+      "comment_updated_at": "2026-09-17T03:13:26Z",
+      "comment_body_sha256": "125358f6f941bff9c2c5a3ebf2aee157c35fc4dc59a638b4648cfa07f8cc5773",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150510,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fewer returned rows establish reduced materialization, but elapsed-time and process-memory effects remain unmeasured; the query still scans keys. (sha=b5db4650154b492d3cf8305bc9853ae5ad05e02a)",
+      "expected_head_sha": "b5db4650154b492d3cf8305bc9853ae5ad05e02a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T03:21:31.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sqlite-mcp-prefix-filter-0916",
+        "head_sha": "b5db4650154b492d3cf8305bc9853ae5ad05e02a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
