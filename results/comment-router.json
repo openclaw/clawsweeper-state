@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T01:38:21.196Z",
+  "updated_at": "2026-09-17T01:39:10.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149987:5702983884:2026-09-16T19:02:07Z:re_review",
-      "comment_id": "5702983884",
-      "comment_version_key": "5702983884:2026-09-16T19:02:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149987#issuecomment-5702983884",
-      "comment_created_at": "2026-09-16T19:02:07Z",
-      "comment_updated_at": "2026-09-16T19:02:07Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149987,
-      "author": "jhaabhijeet864",
-      "author_id": 169458770,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T19:03:03.179Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/149689-codex-compaction-context-window-loop",
-        "head_sha": "34b58a0366f4691f91525de3f8bfd5b0722cd7a5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3690:5699425241:2026-09-16T19:00:17Z:clawsweeper_needs_human",
       "comment_id": "5699425241",
@@ -33682,6 +33635,39 @@
         "kind": "pull_request",
         "branch": "pe/rfc54-macos-rust-runtime",
         "head_sha": "d1ac57f8fd97000cf09cfe619760d0aa24dd3370",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150308:5704702400:2026-09-17T01:38:10Z:clawsweeper_needs_human",
+      "comment_id": "5704702400",
+      "comment_version_key": "5704702400:2026-09-17T01:38:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150308#issuecomment-5704702400",
+      "comment_created_at": "2026-09-16T21:22:17Z",
+      "comment_updated_at": "2026-09-17T01:38:10Z",
+      "comment_body_sha256": "a426acfa18ca8d8e08605b7922cbce5515f3d5e4039f68e840f6253cf0a890de",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150308,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After adopting the new requester facts, an older writer can discard them and stop scheduled native edits until reauthorization; older Discord adapters also lack this native path. (sha=ce6cc1fcf6551bd581cbd038975bedfa740e1da3)",
+      "expected_head_sha": "ce6cc1fcf6551bd581cbd038975bedfa740e1da3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T01:39:10.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-channel-requester",
+        "head_sha": "ce6cc1fcf6551bd581cbd038975bedfa740e1da3",
         "cluster_id": null,
         "job_path": null
       }
