@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T20:35:32.581Z",
+  "updated_at": "2026-09-17T20:38:06.363Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5643795899:2026-09-12T05:30:53Z:re_review",
-      "comment_id": "5643795899",
-      "comment_version_key": "5643795899:2026-09-12T05:30:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5643795899",
-      "comment_created_at": "2026-09-12T05:30:53Z",
-      "comment_updated_at": "2026-09-12T05:30:53Z",
-      "comment_body_sha256": "aad1fec6e05dcdb1356aec557c9d2995a4965379b148d3d1c6ca5ca44a7a7341",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:27:02.748Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5644083321:2026-09-12T06:07:11Z:re_review",
       "comment_id": "5644083321",
@@ -32740,6 +32713,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151063:5719504012:2026-09-17T20:36:58Z:clawsweeper_needs_human",
+      "comment_id": "5719504012",
+      "comment_version_key": "5719504012:2026-09-17T20:36:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151063#issuecomment-5719504012",
+      "comment_created_at": "2026-09-17T18:44:48Z",
+      "comment_updated_at": "2026-09-17T20:36:58Z",
+      "comment_body_sha256": "9bbcd106120dbd0b7e8820fe58b550387ba4ee036cf15fc32ffb1dec6c6c54b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151063,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported 2026.9.4 Matrix smoke observed one reply without an abort or duplicate, but does not identify the deployed implementation... (sha=4878c8fa5c96d88be8bdc783cac6ed11a89c008d)",
+      "expected_head_sha": "4878c8fa5c96d88be8bdc783cac6ed11a89c008d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T20:38:06.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/matrix-detached-send-abort",
+        "head_sha": "4878c8fa5c96d88be8bdc783cac6ed11a89c008d",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
