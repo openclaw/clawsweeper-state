@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T05:13:41.837Z",
+  "updated_at": "2026-09-17T05:13:48.253Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117849:5706689482:2026-09-17T00:45:13Z:re_review",
-      "comment_id": "5706689482",
-      "comment_version_key": "5706689482:2026-09-17T00:45:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117849#issuecomment-5706689482",
-      "comment_created_at": "2026-09-17T00:45:13Z",
-      "comment_updated_at": "2026-09-17T00:45:13Z",
-      "comment_body_sha256": "bbcd60d6205133593a3ef664ee1b547ff002bc47d3ee599dae7d3c81a7c4f2c5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117849,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T00:55:56.980Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-google-embedding-vector-ceb8-aug01",
-        "head_sha": "f01c6d6e4e99e6b068b9714df742369a86e623c5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149233:5706766685:2026-09-17T00:55:01Z:re_review",
       "comment_id": "5706766685",
@@ -33556,6 +33509,39 @@
         "kind": "pull_request",
         "branch": "docs/vertex-adc-sentinel-credential",
         "head_sha": "9630d5e1931b08f5e5316b83643eb3e2e89e19fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150526:5707779502:2026-09-17T05:12:49Z:clawsweeper_needs_human",
+      "comment_id": "5707779502",
+      "comment_version_key": "5707779502:2026-09-17T05:12:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150526#issuecomment-5707779502",
+      "comment_created_at": "2026-09-17T02:57:07Z",
+      "comment_updated_at": "2026-09-17T05:12:49Z",
+      "comment_body_sha256": "fb6ccb829a43f97eb78e82a586fb8b30d4bebc17afc8eafdbcb31c86d0e0b796",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150526,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=d4e4788364be4429d308ea76b75cff6988057997)",
+      "expected_head_sha": "d4e4788364be4429d308ea76b75cff6988057997",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T05:13:48.253Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/update-engine-preflight",
+        "head_sha": "d4e4788364be4429d308ea76b75cff6988057997",
         "cluster_id": null,
         "job_path": null
       }
