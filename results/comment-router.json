@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:01:58.750Z",
+  "updated_at": "2026-09-17T08:02:00.938Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150490:5707280596:2026-09-17T03:25:17Z:clawsweeper_needs_human",
-      "comment_id": "5707280596",
-      "comment_version_key": "5707280596:2026-09-17T03:25:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150490#issuecomment-5707280596",
-      "comment_created_at": "2026-09-17T01:59:30Z",
-      "comment_updated_at": "2026-09-17T03:25:17Z",
-      "comment_body_sha256": "5ddf0b7151e1d7532f1aac4c1e0a6c3625887eb4bf889c71d2a65d6e4f34e63d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show that current and replayed sender labels cannot cause native plugin selection or MCP requirements...; Review finding: [P2] [P2] Neutralize whitespace-bearing plugin links in sender metadata — extensions/codex/src/app-server/turn-params.ts:78-81 - [medium] Sender labels can become... (sha=fa5ff11e3323b39a8e053e77e997831503cc4465)",
-      "expected_head_sha": "fa5ff11e3323b39a8e053e77e997831503cc4465",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:26:16.761Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-provenance-live",
-        "head_sha": "fa5ff11e3323b39a8e053e77e997831503cc4465",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149330:5686175002:2026-09-17T03:24:45Z:clawsweeper_needs_human",
       "comment_id": "5686175002",
@@ -33279,6 +33246,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147949:5711035303:2026-09-17T08:00:58Z:re_review",
+      "comment_id": "5711035303",
+      "comment_version_key": "5711035303:2026-09-17T08:00:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5711035303",
+      "comment_created_at": "2026-09-17T08:00:58Z",
+      "comment_updated_at": "2026-09-17T08:00:58Z",
+      "comment_body_sha256": "12589806c1f32b525a61c250e440ba438c00c7e24ba0782462c979a9599b8362",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147949,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 70ec28c4f1e510166f969defcb0e7a3cba056735 with that owner decision resolved",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:01:59.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/pending-input-state-clarity",
+        "head_sha": "70ec28c4f1e510166f969defcb0e7a3cba056735",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
