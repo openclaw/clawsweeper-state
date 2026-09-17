@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T00:33:21.082Z",
+  "updated_at": "2026-09-17T00:34:00.097Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150010:5696862083:2026-09-16T17:47:18Z:clawsweeper_needs_human",
-      "comment_id": "5696862083",
-      "comment_version_key": "5696862083:2026-09-16T17:47:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150010#issuecomment-5696862083",
-      "comment_created_at": "2026-09-16T11:42:34Z",
-      "comment_updated_at": "2026-09-16T17:47:18Z",
-      "comment_body_sha256": "0992ef6e017c89730e182df6af296c211a7dba721d89fba9bbfe9975ac7a4148",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150010,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8f8bb9c37e1055be6bb8401714791289f92e4f49)",
-      "expected_head_sha": "8f8bb9c37e1055be6bb8401714791289f92e4f49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T17:49:19.065Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/projects-windows-env-capture-20260916",
-        "head_sha": "8f8bb9c37e1055be6bb8401714791289f92e4f49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150116:5699405601:2026-09-16T17:44:23Z:clawsweeper_needs_human",
       "comment_id": "5699405601",
@@ -33655,6 +33622,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150064:5706590128:2026-09-17T00:32:55Z:re_review",
+      "comment_id": "5706590128",
+      "comment_version_key": "5706590128:2026-09-17T00:32:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150064#issuecomment-5706590128",
+      "comment_created_at": "2026-09-17T00:32:55Z",
+      "comment_updated_at": "2026-09-17T00:32:55Z",
+      "comment_body_sha256": "d1aad6b07bcb0fc49c0899052ddfca60336c0f1d6e253b8e4eb156fbffe909c6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150064,
+      "author": "chelsealong",
+      "author_id": 14966750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T00:33:58.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/health-fleet-event-loop-yield-149931",
+        "head_sha": "fb8a0114cf80cabd4c8e75853d9ddbb56083ea7d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
