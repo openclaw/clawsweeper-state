@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151055"
-mode: "autonomous"
-run_id: "35259879896"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35259879896"
+mode: "plan"
+run_id: "35265804966"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35265804966"
 head_sha: "09f41a00561625480636e67500a70c45b2aec9d1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-17T19:02:38.898Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151055"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151055"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-17T19:39:37.311Z"
+canonical: "#151055"
+canonical_issue: "#151055"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35259879896](https://github.com/openclaw/clawsweeper/actions/runs/35259879896)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35265804966](https://github.com/openclaw/clawsweeper/actions/runs/35265804966)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151055
+Canonical: #151055
 
 ## Summary
 
-Current-main source supports the stale provider-config defect. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by this host's read-only filesystem and missing node_modules. No files or GitHub state changed.
+Plan a narrow repair for #151055. The clean checkout matches preflight main c9ab1cff77ecd3986b46078243a5c7c8498e9f42, and source inspection supports the stale-config mechanism. Runtime reproduction, implementation, and tests remain pending in this read-only planning run. No GitHub mutations are proposed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Current-main source supports the stale provider-config defect. A narrow fix arti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151055 | fix_needed | blocked | canonical | Implementation requires a writable executor with dependencies. First demonstrate the failing regression on current main; do not publish a PR if reproduction fails. |
-| #96534 | keep_related | planned | related | Distinct recovery work; leave open and outside this implementation. |
-| #116562 | keep_closed | skipped | related | Historical related work, not a replacement source or canonical fix for #151055. |
-| cluster:issue-openclaw-openclaw-151055 | build_fix_artifact | planned | canonical | A narrow existing-behavior repair remains appropriate; artifact preparation is complete, while local implementation and validation remain blocked. |
+| #151055 | fix_needed | planned | canonical | Provider-config hot reload requires a focused manager-reuse repair. Reproduce on refreshed main before changing production code; stop if the regression does not reproduce. |
+| #96534 | keep_related | planned | related | Related Memory Core lifecycle behavior with a distinct trigger and remaining work. Leave it outside this implementation. |
+| #116562 | keep_closed | skipped | related | Preserve its closed state and contributor attribution. Do not reopen, supersede, or adopt this distinct recovery implementation. |
 
 ## Needs Human
 

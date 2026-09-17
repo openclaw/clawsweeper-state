@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151055",
+  "mode": "plan",
+  "run_id": "35265804966",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35265804966",
+  "head_sha": "09f41a00561625480636e67500a70c45b2aec9d1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151055.md",
+  "published_at": "2026-09-17T19:39:37.311Z",
+  "canonical": "#151055",
+  "canonical_issue": "#151055",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for #151055. The clean checkout matches preflight main c9ab1cff77ecd3986b46078243a5c7c8498e9f42, and source inspection supports the stale-config mechanism. Runtime reproduction, implementation, and tests remain pending in this read-only planning run. No GitHub mutations are proposed.",
+  "actions": [
+    {
+      "target": "#151055",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151055",
+      "candidate_fix": null,
+      "reason": "Provider-config hot reload requires a focused manager-reuse repair. Reproduce on refreshed main before changing production code; stop if the regression does not reproduce."
+    },
+    {
+      "target": "#96534",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#151055",
+      "candidate_fix": null,
+      "reason": "Related Memory Core lifecycle behavior with a distinct trigger and remaining work. Leave it outside this implementation."
+    },
+    {
+      "target": "#116562",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#151055",
+      "candidate_fix": null,
+      "reason": "Preserve its closed state and contributor attribution. Do not reopen, supersede, or adopt this distinct recovery implementation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
