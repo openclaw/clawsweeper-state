@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:44:58.128Z",
+  "updated_at": "2026-09-17T16:44:59.651Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150834:5713693437:2026-09-17T11:36:58Z:re_review",
-      "comment_id": "5713693437",
-      "comment_version_key": "5713693437:2026-09-17T11:36:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150834#issuecomment-5713693437",
-      "comment_created_at": "2026-09-17T11:36:58Z",
-      "comment_updated_at": "2026-09-17T11:36:58Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150834,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T11:38:04.175Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f06-update-run-history",
-        "head_sha": "afac29e4748aa69a2278f8bb450be2b9b4970481",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150479:5713569179:2026-09-17T11:25:55Z:re_review",
       "comment_id": "5713569179",
@@ -33524,6 +33477,39 @@
         "kind": "pull_request",
         "branch": "fix/fix-989",
         "head_sha": "ef13d6ba9cb05c9e4fd269e785df489f65de870f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2311:5718006949:2026-09-17T16:44:08Z:clawsweeper_needs_human",
+      "comment_id": "5718006949",
+      "comment_version_key": "5718006949:2026-09-17T16:44:08Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2311#issuecomment-5718006949",
+      "comment_created_at": "2026-09-17T16:44:08Z",
+      "comment_updated_at": "2026-09-17T16:44:08Z",
+      "comment_body_sha256": "78b5a38dc840ed45962a1e460dde9df3443bacc2872955f9072eff4de69beb71",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2311,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=5c9821f1ace8b04cf232b84d60a18bf27f4a0e14)",
+      "expected_head_sha": "5c9821f1ace8b04cf232b84d60a18bf27f4a0e14",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T16:44:59.651Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloudflare-sizing-n145",
+        "head_sha": "5c9821f1ace8b04cf232b84d60a18bf27f4a0e14",
         "cluster_id": null,
         "job_path": null
       }
