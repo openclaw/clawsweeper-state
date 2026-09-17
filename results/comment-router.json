@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:17:49.674Z",
+  "updated_at": "2026-09-17T03:19:23.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119604:5705308254:2026-09-16T22:11:38Z:re_review",
-      "comment_id": "5705308254",
-      "comment_version_key": "5705308254:2026-09-16T22:11:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119604#issuecomment-5705308254",
-      "comment_created_at": "2026-09-16T22:11:38Z",
-      "comment_updated_at": "2026-09-16T22:11:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119604,
-      "author": "SweetSophia",
-      "author_id": 44297511,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T22:12:43.608Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-send-loop-guard",
-        "head_sha": "be424e866abae3a1eba1ab5de0cb87cd7ad84cc6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92223:4683056941:2026-09-16T22:11:53Z:clawsweeper_needs_human",
       "comment_id": "4683056941",
@@ -33764,6 +33717,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
         "head_sha": "8e8ff2ded996a8adf69dfffed372c0192850e666",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:440:5705044980:2026-09-17T03:08:36Z:clawsweeper_needs_human",
+      "comment_id": "5705044980",
+      "comment_version_key": "5705044980:2026-09-17T03:08:36Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/440#issuecomment-5705044980",
+      "comment_created_at": "2026-09-16T21:47:15Z",
+      "comment_updated_at": "2026-09-17T03:08:36Z",
+      "comment_body_sha256": "8169512afd3b5e1b4dd9bd3539164a875c4e19ba8a395e857f8a0f2447fb5f12",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 440,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The linked real source/control measurements exercised the earlier resolver at 1e3de7b6 and explicitly rejected acceptance; they do not... (sha=d0da4b032e511cfa4ae8bc95ef0d4b1960916cd9)",
+      "expected_head_sha": "d0da4b032e511cfa4ae8bc95ef0d4b1960916cd9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T03:19:23.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/path-prefix-linear-queue-20260916",
+        "head_sha": "d0da4b032e511cfa4ae8bc95ef0d4b1960916cd9",
         "cluster_id": null,
         "job_path": null
       }
