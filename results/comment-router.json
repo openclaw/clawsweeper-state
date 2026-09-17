@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:45:39.777Z",
+  "updated_at": "2026-09-17T13:45:52.143Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150714:5711149627:2026-09-17T08:10:50Z:re_review",
-      "comment_id": "5711149627",
-      "comment_version_key": "5711149627:2026-09-17T08:10:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150714#issuecomment-5711149627",
-      "comment_created_at": "2026-09-17T08:10:50Z",
-      "comment_updated_at": "2026-09-17T08:10:50Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150714,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:11:45.425Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-revocable-command",
-        "head_sha": "54ee1bcfb917b9a2799d2b50f69095f1f3529b23",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150716:5711149904:2026-09-17T08:10:51Z:re_review",
       "comment_id": "5711149904",
@@ -34569,6 +34522,39 @@
         "kind": "pull_request",
         "branch": "fix/f06-update-run-history",
         "head_sha": "209fc1509dff2e04e2193c036a21285ab7154d50",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150927:5715393510:2026-09-17T13:44:48Z:clawsweeper_needs_human",
+      "comment_id": "5715393510",
+      "comment_version_key": "5715393510:2026-09-17T13:44:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150927#issuecomment-5715393510",
+      "comment_created_at": "2026-09-17T13:44:48Z",
+      "comment_updated_at": "2026-09-17T13:44:48Z",
+      "comment_body_sha256": "85e2009e095f329d4872803d074b22355ffb3787675298fe623999660026a09d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150927,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The candidate-only replay leaves the published updater’s migration handoff unverified, including preservation of imported TTS state through completion of the older update process. (sha=ddae7da2130db0d0420074e925c822003db33211)",
+      "expected_head_sha": "ddae7da2130db0d0420074e925c822003db33211",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:45:52.143Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/config-migration-convergence-71",
+        "head_sha": "ddae7da2130db0d0420074e925c822003db33211",
         "cluster_id": null,
         "job_path": null
       }
