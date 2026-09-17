@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T10:31:39.652Z",
+  "updated_at": "2026-09-17T10:32:16.009Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123236:5709198618:2026-09-17T05:21:52Z:re_review",
-      "comment_id": "5709198618",
-      "comment_version_key": "5709198618:2026-09-17T05:21:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123236#issuecomment-5709198618",
-      "comment_created_at": "2026-09-17T05:21:52Z",
-      "comment_updated_at": "2026-09-17T05:21:52Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123236,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T05:23:06.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-exec-authority-boundary",
-        "head_sha": "da79f72de951ea8cbaeb3957b31ae16a59dfbb01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:90864:5709133997:2026-09-17T05:16:16Z:re_review",
       "comment_id": "5709133997",
@@ -33573,6 +33526,39 @@
         "kind": "pull_request",
         "branch": "cursor/sessions-patch-clear-thread-d7db",
         "head_sha": "660ad093b4d19c7bb25553834aa3c54ef97fc562",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140428:5562018969:2026-09-17T10:31:19Z:clawsweeper_needs_human",
+      "comment_id": "5562018969",
+      "comment_version_key": "5562018969:2026-09-17T10:31:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/140428#issuecomment-5562018969",
+      "comment_created_at": "2026-09-06T20:38:31Z",
+      "comment_updated_at": "2026-09-17T10:31:19Z",
+      "comment_body_sha256": "810692b09648ca31be850636ca81ae15f859044a8c4ab5907b520fd00604193b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 140428,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed reply-preparation cleanup has mocked regression coverage, but no real primary-change turn, status result, or restart demonstrates d... (sha=7e0f499d9afc8fd7bf8580dffba5c3f8b0b7b4cb)",
+      "expected_head_sha": "7e0f499d9afc8fd7bf8580dffba5c3f8b0b7b4cb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T10:32:16.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/session-last-used-primary-d7db",
+        "head_sha": "7e0f499d9afc8fd7bf8580dffba5c3f8b0b7b4cb",
         "cluster_id": null,
         "job_path": null
       }
