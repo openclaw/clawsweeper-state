@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T00:47:22.928Z",
+  "updated_at": "2026-09-17T00:48:07.833Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149720:5702305947:2026-09-16T18:12:42Z:re_review",
-      "comment_id": "5702305947",
-      "comment_version_key": "5702305947:2026-09-16T18:12:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149720#issuecomment-5702305947",
-      "comment_created_at": "2026-09-16T18:12:42Z",
-      "comment_updated_at": "2026-09-16T18:12:42Z",
-      "comment_body_sha256": "9cf824ad2985017a83e0b7c90e5af1eda77c9c7b1eabe1de48a30909aa6945e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149720,
-      "author": "ruel225",
-      "author_id": 300765114,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T18:13:38.616Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/discord-queued-followup-progress-cleanup",
-        "head_sha": "8938e0924506eaface6f909c16f328ae401117d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:116450:5702329380:2026-09-16T18:14:26Z:re_review",
       "comment_id": "5702329380",
@@ -33688,6 +33641,39 @@
         "kind": "pull_request",
         "branch": "codex/claw-882-contextual-help",
         "head_sha": "7edb9c86695850a0bcb5be30c96042b5a240a683",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150409:5706705197:2026-09-17T00:47:12Z:clawsweeper_needs_human",
+      "comment_id": "5706705197",
+      "comment_version_key": "5706705197:2026-09-17T00:47:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150409#issuecomment-5706705197",
+      "comment_created_at": "2026-09-17T00:47:12Z",
+      "comment_updated_at": "2026-09-17T00:47:12Z",
+      "comment_body_sha256": "a450cb4ae2357a89794a537c485498d2f8e182aa05d29a680e81da7e4311d7ce",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150409,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=058513f5dbbc5b4ef127ec3f1fe258f280a1caeb)",
+      "expected_head_sha": "058513f5dbbc5b4ef127ec3f1fe258f280a1caeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T00:48:07.833Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/test-audit-deepinfra-video-container-20260917",
+        "head_sha": "058513f5dbbc5b4ef127ec3f1fe258f280a1caeb",
         "cluster_id": null,
         "job_path": null
       }
