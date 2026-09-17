@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:59:18.485Z",
+  "updated_at": "2026-09-17T03:59:22.211Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:80921:5705822461:2026-09-16T23:09:05Z:re_review",
-      "comment_id": "5705822461",
-      "comment_version_key": "5705822461:2026-09-16T23:09:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/80921#issuecomment-5705822461",
-      "comment_created_at": "2026-09-16T23:09:05Z",
-      "comment_updated_at": "2026-09-16T23:09:05Z",
-      "comment_body_sha256": "ebd77ac9368c2253f5d8cecc6b321dba489fa613445deb71f2361215965d3b8a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 80921,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T23:09:58.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/can-bind-to-host-timeout",
-        "head_sha": "3cd1f9eda85ecf1ca2227916e71407ea9de6427e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150295:5704513917:2026-09-16T23:05:49Z:clawsweeper_needs_human",
       "comment_id": "5704513917",
@@ -33652,6 +33605,39 @@
         "kind": "pull_request",
         "branch": "fix/mobile-command-palette-icon",
         "head_sha": "bf89c211debb165448b72f20ee3bc6474742da37",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150494:5707336271:2026-09-17T03:58:22Z:clawsweeper_needs_human",
+      "comment_id": "5707336271",
+      "comment_version_key": "5707336271:2026-09-17T03:58:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150494#issuecomment-5707336271",
+      "comment_created_at": "2026-09-17T02:06:02Z",
+      "comment_updated_at": "2026-09-17T03:58:22Z",
+      "comment_body_sha256": "aacf04dd432991d37cd2d24726be25b448590ee0a1a4f6561369bc42aef17687",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Unavailable inspection now permits package changes without automatically stopping or restarting the Gateway, even when restart was requested. An existing process may retain old code o... (sha=8b04630b1638039a4e0e87b4e1511941ab3ecc9d)",
+      "expected_head_sha": "8b04630b1638039a4e0e87b4e1511941ab3ecc9d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T03:59:22.211Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/managed-service-preflight-unavailable",
+        "head_sha": "8b04630b1638039a4e0e87b4e1511941ab3ecc9d",
         "cluster_id": null,
         "job_path": null
       }
