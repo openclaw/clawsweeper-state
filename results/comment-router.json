@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T09:11:50.716Z",
+  "updated_at": "2026-09-17T09:12:09.487Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149737:5692751282:2026-09-17T04:15:33Z:clawsweeper_needs_human",
-      "comment_id": "5692751282",
-      "comment_version_key": "5692751282:2026-09-17T04:15:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149737#issuecomment-5692751282",
-      "comment_created_at": "2026-09-16T05:57:58Z",
-      "comment_updated_at": "2026-09-17T04:15:33Z",
-      "comment_body_sha256": "2d9787d2828835410c5f0cc9a2725fc495fe9bb96eea0cc81a34059ad0673f23",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149737,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Current-revision Windows measurements establish successful startup and shutdown, but host variability prevents a reliable speedup claim. (sha=9898225582a3cb1c63bd104ee202fc11dcd782de)",
-      "expected_head_sha": "9898225582a3cb1c63bd104ee202fc11dcd782de",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T04:20:59.323Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/startup-metadata-snapshot",
-        "head_sha": "9898225582a3cb1c63bd104ee202fc11dcd782de",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150526:5707779502:2026-09-17T04:11:22Z:clawsweeper_auto_repair",
       "comment_id": "5707779502",
@@ -33455,6 +33422,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148290:5666486463:2026-09-17T09:11:05Z:clawsweeper_needs_human",
+      "comment_id": "5666486463",
+      "comment_version_key": "5666486463:2026-09-17T09:11:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148290#issuecomment-5666486463",
+      "comment_created_at": "2026-09-14T15:33:20Z",
+      "comment_updated_at": "2026-09-17T09:11:05Z",
+      "comment_body_sha256": "2a6c3936d9df530ea4b10682cd0cf4657c084ffbdc9e4a32945b63598887f533",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148290,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cached Fleet reads now require whole-database snapshot staging; disk-space or quota exhaustion can make previously working reads fail, and cold-disk/concurrent-read costs remain unmea... (sha=3c52f16c0efe9bfe206977f054d7ab96bba9cded)",
+      "expected_head_sha": "3c52f16c0efe9bfe206977f054d7ab96bba9cded",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T09:12:09.487Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fleet-registry-worker-20260914",
+        "head_sha": "3c52f16c0efe9bfe206977f054d7ab96bba9cded",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
