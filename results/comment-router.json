@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:41:31.078Z",
+  "updated_at": "2026-09-17T11:41:34.519Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149864:5694080449:2026-09-17T06:16:55Z:clawsweeper_needs_human",
-      "comment_id": "5694080449",
-      "comment_version_key": "5694080449:2026-09-17T06:16:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149864#issuecomment-5694080449",
-      "comment_created_at": "2026-09-16T08:00:40Z",
-      "comment_updated_at": "2026-09-17T06:16:55Z",
-      "comment_body_sha256": "10994aaa40be7cc2ed2969a2495fc60f805bc5a4fb1042acf653e48fb7961111",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149864,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Downgrading with pending native work can discard recovery receipts when an older binding writer updates the row; operators must let that work settle first. (sha=4f803591bd51cb0be4c2dcfad673614103518b49)",
-      "expected_head_sha": "4f803591bd51cb0be4c2dcfad673614103518b49",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T06:25:20.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-followup-recovery-integrated-20260915",
-        "head_sha": "4f803591bd51cb0be4c2dcfad673614103518b49",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149916:5694927009:2026-09-17T06:16:43Z:clawsweeper_needs_human",
       "comment_id": "5694927009",
@@ -33870,6 +33837,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150847:5713733672:2026-09-17T11:40:31Z:re_review",
+      "comment_id": "5713733672",
+      "comment_version_key": "5713733672:2026-09-17T11:40:31Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150847#issuecomment-5713733672",
+      "comment_created_at": "2026-09-17T11:40:31Z",
+      "comment_updated_at": "2026-09-17T11:40:31Z",
+      "comment_body_sha256": "0cb23d384bed3abefd07cb847c0339f5d691ac55222014ada3f4e573cb6d4ccb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150847,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T11:41:32.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/doctor-lint-json-version",
+        "head_sha": "c38d7787582562c6f8080fd9f72d6cf14955b1ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
