@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:50:34.162Z",
+  "updated_at": "2026-09-17T13:50:34.638Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150705:5711181184:2026-09-17T08:13:30Z:re_review",
-      "comment_id": "5711181184",
-      "comment_version_key": "5711181184:2026-09-17T08:13:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150705#issuecomment-5711181184",
-      "comment_created_at": "2026-09-17T08:13:30Z",
-      "comment_updated_at": "2026-09-17T08:13:30Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150705,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:14:30.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sec/cap-delegated-session-tools",
-        "head_sha": "d4960e16c27fd9d66a38bfba6b0f01c62f398ddd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150283:5704110342:2026-09-17T08:13:30Z:clawsweeper_auto_repair",
       "comment_id": "5704110342",
@@ -34583,6 +34536,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/plugin-metadata-reload-scan",
         "head_sha": "34445cc555f4a0587fb670a7305eac23343cceaf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150190:5701719628:2026-09-17T13:49:26Z:clawsweeper_needs_human",
+      "comment_id": "5701719628",
+      "comment_version_key": "5701719628:2026-09-17T13:49:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150190#issuecomment-5701719628",
+      "comment_created_at": "2026-09-16T17:27:54Z",
+      "comment_updated_at": "2026-09-17T13:49:26Z",
+      "comment_body_sha256": "5d81721303a50924e654d1cec601f9b055f8df62e2cd94cfa89809c430bc13af",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Users who bypass the updater and start with legacy-only approvals or queued messages must stop the Gateway and run Doctor before those records become usable; this intentional change i... (sha=c93d3081e59cf2877ae86fdb8175ac201709eca6)",
+      "expected_head_sha": "c93d3081e59cf2877ae86fdb8175ac201709eca6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:50:34.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-pairing-outbound-cutover",
+        "head_sha": "c93d3081e59cf2877ae86fdb8175ac201709eca6",
         "cluster_id": null,
         "job_path": null
       }
