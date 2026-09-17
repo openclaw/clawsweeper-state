@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T12:01:41.967Z",
+  "updated_at": "2026-09-17T12:03:41.987Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150658:5709782792:2026-09-17T06:19:17Z:clawsweeper_needs_human",
-      "comment_id": "5709782792",
-      "comment_version_key": "5709782792:2026-09-17T06:19:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150658#issuecomment-5709782792",
-      "comment_created_at": "2026-09-17T06:10:39Z",
-      "comment_updated_at": "2026-09-17T06:19:17Z",
-      "comment_body_sha256": "f3e02d20a3e751428c94b1416306eea372d92db1846c2bc5e2173b66bd5ea001",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150658,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Required before/after screenshot delivery in both destinations has not been demonstrated. (sha=ec990d30bd4d6a88588d41c35c61340288169d82)",
-      "expected_head_sha": "ec990d30bd4d6a88588d41c35c61340288169d82",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T06:39:49.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-flake-config-refresh-race-20260917",
-        "head_sha": "ec990d30bd4d6a88588d41c35c61340288169d82",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150659:5709808142:2026-09-17T06:36:54Z:clawsweeper_auto_repair",
       "comment_id": "5709808142",
@@ -34052,6 +34019,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150793:5714020910:2026-09-17T12:02:43Z:re_review",
+      "comment_id": "5714020910",
+      "comment_version_key": "5714020910:2026-09-17T12:02:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150793#issuecomment-5714020910",
+      "comment_created_at": "2026-09-17T12:02:43Z",
+      "comment_updated_at": "2026-09-17T12:02:43Z",
+      "comment_body_sha256": "3ea8d42d95fcc149f92950feab175a8e20e6976379e12413d7e4a4d43f67e45c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150793,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T12:03:39.646Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/update-partial-clone-diagnostic",
+        "head_sha": "11665eac312efe5592dd55b6bf2ab758e5a98b0f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
