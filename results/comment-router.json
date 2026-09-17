@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T06:17:13.618Z",
+  "updated_at": "2026-09-17T06:17:31.439Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150415:5707236938:2026-09-17T01:54:01Z:freeform_assist",
-      "comment_id": "5707236938",
-      "comment_version_key": "5707236938:2026-09-17T01:54:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150415#issuecomment-5707236938",
-      "comment_created_at": "2026-09-17T01:54:01Z",
-      "comment_updated_at": "2026-09-17T01:54:01Z",
-      "comment_body_sha256": "4538dfbdf0ba4a10873784f3c76f57e1265984d9d1945f570e6be68de5a41705",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150415,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review\\n\\nthe two prior checklist items are addressed on `66980ad09d3`: each subagent alias fixture now directly asserts `assistantcallssessionsyield(...) === true` before output suppression, and the pr body records that no persisted format or migration changes—only read-time classification is consolidated. focused suite: 71 passed; full `check-changed`: passed; exact p0–p2 autoreview: clean.",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T01:54:50.045Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "type-improver/b17-tool-block-contract-owner",
-        "head_sha": "66980ad09d379b5f5fcb0599154591d0d7b6cefe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:46:5687308925:2026-09-17T01:53:13Z:clawsweeper_needs_human",
       "comment_id": "5687308925",
@@ -33522,6 +33475,39 @@
         "kind": "pull_request",
         "branch": "fix/scheduled-local-source",
         "head_sha": "fbbda903073619eb7c1ca4813ee753a96d750206",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150666:5709835287:2026-09-17T06:16:23Z:clawsweeper_needs_human",
+      "comment_id": "5709835287",
+      "comment_version_key": "5709835287:2026-09-17T06:16:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150666#issuecomment-5709835287",
+      "comment_created_at": "2026-09-17T06:16:23Z",
+      "comment_updated_at": "2026-09-17T06:16:23Z",
+      "comment_body_sha256": "57eebbe33bb1055613ae300299b2f9c8b8febc7cbab0c63af26a1f6c6b13dbb1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150666,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e7482909fb7f5b757a4251e0a3fe5834a70620be)",
+      "expected_head_sha": "e7482909fb7f5b757a4251e0a3fe5834a70620be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T06:17:31.439Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/733-security-extension-fixtures",
+        "head_sha": "e7482909fb7f5b757a4251e0a3fe5834a70620be",
         "cluster_id": null,
         "job_path": null
       }
