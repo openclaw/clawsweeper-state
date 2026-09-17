@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T19:06:15.977Z",
+  "updated_at": "2026-09-17T19:06:55.294Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150562:5714890789:2026-09-17T13:09:59Z:re_review",
-      "comment_id": "5714890789",
-      "comment_version_key": "5714890789:2026-09-17T13:09:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5714890789",
-      "comment_created_at": "2026-09-17T13:09:59Z",
-      "comment_updated_at": "2026-09-17T13:09:59Z",
-      "comment_body_sha256": "7258cccb42306a66b59d66ca8502868647c6d51a005feb3826de4fc70a115618",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150562,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — fixed p2 findings: removed unsupported sessionsdir from discovery mock, corrected yield assertion (≥2), added recovery count assertions",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:20:46.673Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/149935-yield-between-store-recovery",
-        "head_sha": "ba8bbfb3e107c8f0204d3571c494df3d7cc912d1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-09-05T20:38:46Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -32728,6 +32681,39 @@
         "kind": "pull_request",
         "branch": "fix/session-lifecycle-recovery",
         "head_sha": "e456f4fef592af99c523fe748c68909fd55dc347",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151075:5719760365:2026-09-17T19:06:00Z:clawsweeper_auto_repair",
+      "comment_id": "5719760365",
+      "comment_version_key": "5719760365:2026-09-17T19:06:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151075#issuecomment-5719760365",
+      "comment_created_at": "2026-09-17T19:06:00Z",
+      "comment_updated_at": "2026-09-17T19:06:00Z",
+      "comment_body_sha256": "2b20a4c6ee8dfe85c285ca31fe1e39e2e89faf4f65b956199a0f8abfe23dfc08",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151075,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=62fbd1d412298b5d19c7d40571a73beda411286f)",
+      "expected_head_sha": "62fbd1d412298b5d19c7d40571a73beda411286f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T19:06:55.294Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/rel95-fix-qa-harness",
+        "head_sha": "62fbd1d412298b5d19c7d40571a73beda411286f",
         "cluster_id": null,
         "job_path": null
       }
