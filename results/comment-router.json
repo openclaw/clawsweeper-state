@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:49:43.407Z",
+  "updated_at": "2026-09-17T02:50:14.281Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150299:5704817571:2026-09-16T21:31:09Z:re_review",
-      "comment_id": "5704817571",
-      "comment_version_key": "5704817571:2026-09-16T21:31:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150299#issuecomment-5704817571",
-      "comment_created_at": "2026-09-16T21:31:09Z",
-      "comment_updated_at": "2026-09-16T21:31:09Z",
-      "comment_body_sha256": "84fa604ec529efec8a3cb6ff61166c0a5bcfc88b2dbf4ceda5066f40cfd03743",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150299,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head 02b386b3d4d9a17a8718acac4fdfd07adab9a62f. the test-only getter binding fixes the unbound-method lint error; production bytes and assertions are unchanged. the pr body distinguishes the parent runtime proof from pending successor validation",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T21:32:54.789Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/work-lane-group-snapshot-20260917",
-        "head_sha": "02b386b3d4d9a17a8718acac4fdfd07adab9a62f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:92223:4683056941:2026-09-16T21:24:33Z:clawsweeper_needs_human",
       "comment_id": "4683056941",
@@ -33680,6 +33633,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
         "head_sha": "49660b02d7c10fc6c485c3c247ab365f23448537",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150278:5703971607:2026-09-17T02:49:06Z:clawsweeper_needs_human",
+      "comment_id": "5703971607",
+      "comment_version_key": "5703971607:2026-09-17T02:49:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150278#issuecomment-5703971607",
+      "comment_created_at": "2026-09-16T20:21:56Z",
+      "comment_updated_at": "2026-09-17T02:49:06Z",
+      "comment_body_sha256": "d9d5d7f8522104266e7848246cd958369ee3d0bf0a32334ec144322f59c5d78a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150278,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Older account jobs without recorded creator origin can lose previously provider-permitted bundled reads until authenticated reauthorization or recreation; the PR documents and demonst... (sha=2c85b0f2d65de5c38c3acab497c4b0f61bdb765d)",
+      "expected_head_sha": "2c85b0f2d65de5c38c3acab497c4b0f61bdb765d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:50:14.281Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-account-reads",
+        "head_sha": "2c85b0f2d65de5c38c3acab497c4b0f61bdb765d",
         "cluster_id": null,
         "job_path": null
       }
