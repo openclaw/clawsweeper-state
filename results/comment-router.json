@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T04:59:58.864Z",
+  "updated_at": "2026-09-17T05:00:00.352Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150064:5706590128:2026-09-17T00:32:55Z:re_review",
-      "comment_id": "5706590128",
-      "comment_version_key": "5706590128:2026-09-17T00:32:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150064#issuecomment-5706590128",
-      "comment_created_at": "2026-09-17T00:32:55Z",
-      "comment_updated_at": "2026-09-17T00:32:55Z",
-      "comment_body_sha256": "d1aad6b07bcb0fc49c0899052ddfca60336c0f1d6e253b8e4eb156fbffe909c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150064,
-      "author": "chelsealong",
-      "author_id": 14966750,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T00:33:58.016Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/health-fleet-event-loop-yield-149931",
-        "head_sha": "fb8a0114cf80cabd4c8e75853d9ddbb56083ea7d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149082:5680432625:2026-09-17T00:28:23Z:clawsweeper_needs_human",
       "comment_id": "5680432625",
@@ -33753,6 +33706,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150588:5708879191:2026-09-17T04:57:16Z:clawsweeper_auto_repair",
+      "comment_id": "5708879191",
+      "comment_version_key": "5708879191:2026-09-17T04:57:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150588#issuecomment-5708879191",
+      "comment_created_at": "2026-09-17T04:57:16Z",
+      "comment_updated_at": "2026-09-17T04:57:16Z",
+      "comment_body_sha256": "c55a5695b8f2e9b81848a82be2703609c14875a92912f4d5e55b4bdd3a18e0fd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bee7fb75a415bd3e466caf3671b84ce71d45fa56)",
+      "expected_head_sha": "bee7fb75a415bd3e466caf3671b84ce71d45fa56",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T05:00:00.352Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-150143-meet-shutdown-cleanup",
+        "head_sha": "bee7fb75a415bd3e466caf3671b84ce71d45fa56",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
