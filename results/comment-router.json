@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T10:38:52.897Z",
+  "updated_at": "2026-09-17T10:40:21.827Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150501:5707381765:2026-09-17T05:27:48Z:clawsweeper_needs_human",
-      "comment_id": "5707381765",
-      "comment_version_key": "5707381765:2026-09-17T05:27:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150501#issuecomment-5707381765",
-      "comment_created_at": "2026-09-17T02:11:07Z",
-      "comment_updated_at": "2026-09-17T05:27:48Z",
-      "comment_body_sha256": "21e175bcc5f21121f96422990c0c117dc5242f46a2d88d6fb32c8defdc2d2476",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150501,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=fea9a7af2c0c0597444b13e7ca7ab357094294ad)",
-      "expected_head_sha": "fea9a7af2c0c0597444b13e7ca7ab357094294ad",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T05:35:09.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/frv-opencode-live-session",
-        "head_sha": "fea9a7af2c0c0597444b13e7ca7ab357094294ad",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150474:5707164497:2026-09-17T05:27:06Z:clawsweeper_needs_human",
       "comment_id": "5707164497",
@@ -33460,6 +33427,53 @@
       "status": "skipped",
       "processed_at": "2026-09-17T10:38:52.897Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150536:5712986573:2026-09-17T10:39:24Z:re_review",
+      "comment_id": "5712986573",
+      "comment_version_key": "5712986573:2026-09-17T10:39:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150536#issuecomment-5712986573",
+      "comment_created_at": "2026-09-17T10:39:24Z",
+      "comment_updated_at": "2026-09-17T10:39:24Z",
+      "comment_body_sha256": "ac0951d263725be4425c8860c941ecf7e3d9077345b39b0edc00789ed5d8eee9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150536,
+      "author": "Marvinthebored",
+      "author_id": 262704729,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T10:40:19.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/voice-consult-transcript-race",
+        "head_sha": "b09d219518969ac6c3cab20aed050d89733e312a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
