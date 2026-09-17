@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T20:29:48.590Z",
+  "updated_at": "2026-09-17T20:30:35.854Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5437922019:2026-08-27T10:49:22Z:re_review",
-      "comment_id": "5437922019",
-      "comment_version_key": "5437922019:2026-08-27T10:49:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5437922019",
-      "comment_created_at": "2026-08-27T10:49:22Z",
-      "comment_updated_at": "2026-08-27T10:49:22Z",
-      "comment_body_sha256": "3cbfe785290a69cf5ba206c46e253106e9a80a87b88af6151a6d292cf3a921e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:27:02.748Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5438155995:2026-08-27T11:12:48Z:re_review",
       "comment_id": "5438155995",
@@ -32661,6 +32634,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151107:5720800300:2026-09-17T20:29:27Z:clawsweeper_needs_human",
+      "comment_id": "5720800300",
+      "comment_version_key": "5720800300:2026-09-17T20:29:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151107#issuecomment-5720800300",
+      "comment_created_at": "2026-09-17T20:29:27Z",
+      "comment_updated_at": "2026-09-17T20:29:27Z",
+      "comment_body_sha256": "6358bf7956b0051c4efaafbea4696cd85eafa6807d45e0bd7c2d270ff8e9511f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151107,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: agent-core termination, stale-Gateway cleanup, and Doctor claim recovery are covered with simulated pro... (sha=d0b9f35b79cbb4ed0d6aeb2c4c902f21cec85efe)",
+      "expected_head_sha": "d0b9f35b79cbb4ed0d6aeb2c4c902f21cec85efe",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T20:30:35.854Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-pid-liveness-convergence",
+        "head_sha": "d0b9f35b79cbb4ed0d6aeb2c4c902f21cec85efe",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
