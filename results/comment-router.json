@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:33:23.799Z",
+  "updated_at": "2026-09-17T08:34:55.561Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150324:5705122570:2026-09-17T03:52:06Z:clawsweeper_needs_human",
-      "comment_id": "5705122570",
-      "comment_version_key": "5705122570:2026-09-17T03:52:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150324#issuecomment-5705122570",
-      "comment_created_at": "2026-09-16T21:54:15Z",
-      "comment_updated_at": "2026-09-17T03:52:06Z",
-      "comment_body_sha256": "8601dc9e09351efb4588d72d98a36113da5b942a7419d231cd0eeeeced7148fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150324,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party plugins rebuilding exhaustive switches over DiagnosticEventPayload may fail compilation until they handle the additive variant; the PR now documents this source-compatibil... (sha=5f7ccad039e33dae8df44dfbffaa5a60cd1f5a9f)",
-      "expected_head_sha": "5f7ccad039e33dae8df44dfbffaa5a60cd1f5a9f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:54:58.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/native-runtime-decision-capture-67c2",
-        "head_sha": "5f7ccad039e33dae8df44dfbffaa5a60cd1f5a9f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150337:5705443010:2026-09-17T03:31:27Z:clawsweeper_needs_human",
       "comment_id": "5705443010",
@@ -33421,6 +33388,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150669:5711415787:2026-09-17T08:33:47Z:re_review",
+      "comment_id": "5711415787",
+      "comment_version_key": "5711415787:2026-09-17T08:33:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150669#issuecomment-5711415787",
+      "comment_created_at": "2026-09-17T08:33:47Z",
+      "comment_updated_at": "2026-09-17T08:33:47Z",
+      "comment_body_sha256": "b01d17568cd70e0cd2833af91a0c2c2bd4e6dab6ab428738ffc5bc233b6c963d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150669,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review — the required sanitized before/after screenshots are now attached in https://github.com/openclaw/openclaw/pull/150669#issuecomment-5711413029 and linked from the pr body. the four rendered images cover the authorization row and completed account summary before and after",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:34:52.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/github-auth-profile-ui",
+        "head_sha": "30ec54b8a6b86f57940feae2ab6a2cc796d8b0ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
