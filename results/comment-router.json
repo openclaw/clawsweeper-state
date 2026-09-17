@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:36:33.532Z",
+  "updated_at": "2026-09-17T14:36:40.724Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150048:5697541284:2026-09-17T09:58:50Z:clawsweeper_auto_repair",
-      "comment_id": "5697541284",
-      "comment_version_key": "5697541284:2026-09-17T09:58:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150048#issuecomment-5697541284",
-      "comment_created_at": "2026-09-16T12:37:54Z",
-      "comment_updated_at": "2026-09-17T09:58:50Z",
-      "comment_body_sha256": "666734d6dd877b2f783298e27181a003bd084d5c3246d7cfb7987fc242fe40dc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150048,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bb63a0b6f30910d680960886020243e7ef0d9aa7)",
-      "expected_head_sha": "bb63a0b6f30910d680960886020243e7ef0d9aa7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T09:59:54.343Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/telegram-async-thread-binding-restore",
-        "head_sha": "bb63a0b6f30910d680960886020243e7ef0d9aa7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150748:5711439486:2026-09-17T09:59:20Z:clawsweeper_needs_human",
       "comment_id": "5711439486",
@@ -33773,6 +33740,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150841:5716175817:2026-09-17T14:35:33Z:re_review",
+      "comment_id": "5716175817",
+      "comment_version_key": "5716175817:2026-09-17T14:35:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150841#issuecomment-5716175817",
+      "comment_created_at": "2026-09-17T14:35:33Z",
+      "comment_updated_at": "2026-09-17T14:35:33Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150841,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T14:36:38.693Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/auth-health-runtime-masks-oauth-150818",
+        "head_sha": "3d1c3375a6cec84effc73605cfd578f1df2cce7e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
