@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T07:52:33.908Z",
+  "updated_at": "2026-09-17T07:52:38.129Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150099:5707912149:2026-09-17T03:14:40Z:re_review",
-      "comment_id": "5707912149",
-      "comment_version_key": "5707912149:2026-09-17T03:14:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150099#issuecomment-5707912149",
-      "comment_created_at": "2026-09-17T03:14:40Z",
-      "comment_updated_at": "2026-09-17T03:14:40Z",
-      "comment_body_sha256": "2b2b821142a7bb8603c63601308ce0580007922da071826a889e21adf75fdea1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150099,
-      "author": "LiuwqGit",
-      "author_id": 7065327,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T03:16:09.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-150081-elevated-guidance-stable-prefix",
-        "head_sha": "d674a7437c2c1d29b65e7d911c60fb5ca7b10257",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150535:5707919779:2026-09-17T03:15:41Z:clawsweeper_needs_human",
       "comment_id": "5707919779",
@@ -33282,6 +33235,39 @@
         "kind": "pull_request",
         "branch": "upd/flake-server-close-port-reservation",
         "head_sha": "950b7ce5d43df42098d6ca3a3322ff901b984470",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142018:5581685474:2026-09-17T07:51:35Z:clawsweeper_needs_human",
+      "comment_id": "5581685474",
+      "comment_version_key": "5581685474:2026-09-17T07:51:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142018#issuecomment-5581685474",
+      "comment_created_at": "2026-09-08T08:19:36Z",
+      "comment_updated_at": "2026-09-17T07:51:35Z",
+      "comment_body_sha256": "fccccf1658e5ddbf72db6a2143dc4c7091882b0619d7346d01d8118f75e0e705",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142018,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Storage-owner acceptance of publishing a prepared base plus a concurrently written tail remains unrecorded; an incorrect classification at this boundary could expose stale history or... (sha=ed94965154da48411a6b73a5b189a3f022a1abc0)",
+      "expected_head_sha": "ed94965154da48411a6b73a5b189a3f022a1abc0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T07:52:38.129Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-projection-convergence",
+        "head_sha": "ed94965154da48411a6b73a5b189a3f022a1abc0",
         "cluster_id": null,
         "job_path": null
       }
