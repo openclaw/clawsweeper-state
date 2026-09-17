@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:31:31.481Z",
+  "updated_at": "2026-09-17T14:31:45.329Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150780:5712420092:2026-09-17T09:55:01Z:clawsweeper_auto_repair",
-      "comment_id": "5712420092",
-      "comment_version_key": "5712420092:2026-09-17T09:55:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150780#issuecomment-5712420092",
-      "comment_created_at": "2026-09-17T09:55:01Z",
-      "comment_updated_at": "2026-09-17T09:55:01Z",
-      "comment_body_sha256": "d6da2771320bab0c90d66963276fdb88123b810095b7d05c9bf11e54118ad1be",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150780,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=59c852dd2472727c8ff791d889f683efa4e8c715)",
-      "expected_head_sha": "59c852dd2472727c8ff791d889f683efa4e8c715",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T09:55:53.541Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-health-channel-verdict",
-        "head_sha": "59c852dd2472727c8ff791d889f683efa4e8c715",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150761:5711885621:2026-09-17T09:54:55Z:clawsweeper_needs_human",
       "comment_id": "5711885621",
@@ -33773,6 +33740,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:99556:5716102533:2026-09-17T14:30:37Z:re_review",
+      "comment_id": "5716102533",
+      "comment_version_key": "5716102533:2026-09-17T14:30:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-5716102533",
+      "comment_created_at": "2026-09-17T14:30:37Z",
+      "comment_updated_at": "2026-09-17T14:30:37Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 99556,
+      "author": "ly85206559",
+      "author_id": 12526624,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T14:31:42.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chat-history-sanitize-input-image",
+        "head_sha": "c15875d2e96d19594829cf53200709b255383570",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
