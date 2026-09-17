@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:02:52.001Z",
+  "updated_at": "2026-09-17T14:03:26.531Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150499:5707369876:2026-09-17T08:26:25Z:clawsweeper_needs_human",
-      "comment_id": "5707369876",
-      "comment_version_key": "5707369876:2026-09-17T08:26:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150499#issuecomment-5707369876",
-      "comment_created_at": "2026-09-17T02:09:47Z",
-      "comment_updated_at": "2026-09-17T08:26:25Z",
-      "comment_body_sha256": "123d6a33f7a9726340dd4f21b9347efd702ecae6a86787d238d67166dbf5883a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150499,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, scripts invoking Gateway-backed agent turns or operator message RPCs from any marked agent shell will fail, including top-level workflows outside main’s subagent-only r... (sha=570f8a4967990c5ce4cf90eed056202be31bf71d)",
-      "expected_head_sha": "570f8a4967990c5ce4cf90eed056202be31bf71d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T08:32:42.151Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigating-release-steering-messages",
-        "head_sha": "570f8a4967990c5ce4cf90eed056202be31bf71d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150536:5707942899:2026-09-17T08:19:27Z:clawsweeper_needs_human",
       "comment_id": "5707942899",
@@ -34552,6 +34519,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:81190:5715655811:2026-09-17T14:02:27Z:re_review",
+      "comment_id": "5715655811",
+      "comment_version_key": "5715655811:2026-09-17T14:02:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/81190#issuecomment-5715655811",
+      "comment_created_at": "2026-09-17T14:02:27Z",
+      "comment_updated_at": "2026-09-17T14:02:27Z",
+      "comment_body_sha256": "21ba88fc98c88163ac86e6b08da77f21e6fbfe89bba6db1c2ea8bd154f82e067",
+      "repo": "openclaw/openclaw",
+      "issue_number": 81190,
+      "author": "LLagoon3",
+      "author_id": 115124830,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review latest head",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T14:03:24.482Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-tool-result-truncation-first",
+        "head_sha": "29e0740b35127bb84b88fe7cacec55cdcb5f70b6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
