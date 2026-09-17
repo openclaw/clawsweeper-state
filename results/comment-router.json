@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:03:00.174Z",
+  "updated_at": "2026-09-17T03:03:02.547Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111051:5013429040:2026-09-16T21:49:58Z:clawsweeper_needs_human",
-      "comment_id": "5013429040",
-      "comment_version_key": "5013429040:2026-09-16T21:49:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111051#issuecomment-5013429040",
-      "comment_created_at": "2026-07-19T00:01:24Z",
-      "comment_updated_at": "2026-09-16T21:49:58Z",
-      "comment_body_sha256": "6794fb52230fd2a3b0bef3bae767566ccbd376afce2f414cacd6bbbe6f435f45",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111051,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The accepted platform change makes native Windows Mantis runs fail before command execution; affected operators must use Linux or macOS. Native Windows execution is not claimed by the... (sha=40d49da3b0c98cc1080d59a40703abbe56a1d0eb)",
-      "expected_head_sha": "40d49da3b0c98cc1080d59a40703abbe56a1d0eb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T21:52:46.393Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/mantis-command-deadline",
-        "head_sha": "40d49da3b0c98cc1080d59a40703abbe56a1d0eb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117232:5150003405:2026-09-16T21:50:21Z:clawsweeper_auto_repair",
       "comment_id": "5150003405",
@@ -33782,6 +33749,53 @@
         "kind": "pull_request",
         "branch": "pe/rfc54-macos-rust-runtime",
         "head_sha": "f0ada44a58a0d6dcd587c3245cd3300023655323",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/rfcs:54:5707815949:2026-09-17T03:02:00Z:re_review",
+      "comment_id": "5707815949",
+      "comment_version_key": "5707815949:2026-09-17T03:02:00Z",
+      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5707815949",
+      "comment_created_at": "2026-09-17T03:02:00Z",
+      "comment_updated_at": "2026-09-17T03:02:00Z",
+      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
+      "repo": "openclaw/rfcs",
+      "issue_number": 54,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T03:03:00.441Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
+        "head_sha": "8e8ff2ded996a8adf69dfffed372c0192850e666",
         "cluster_id": null,
         "job_path": null
       },
