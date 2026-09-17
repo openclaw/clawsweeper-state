@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T09:38:33.473Z",
+  "updated_at": "2026-09-17T09:38:43.357Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149708:5708639721:2026-09-17T04:38:21Z:re_review",
-      "comment_id": "5708639721",
-      "comment_version_key": "5708639721:2026-09-17T04:38:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149708#issuecomment-5708639721",
-      "comment_created_at": "2026-09-17T04:38:21Z",
-      "comment_updated_at": "2026-09-17T04:38:21Z",
-      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149708,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T04:45:43.649Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/hovercard-narrow-placement-149566",
-        "head_sha": "658dc6350df0f9b2b124ef8c041cdd1985ea1a01",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150235:5703012355:2026-09-17T04:44:45Z:clawsweeper_needs_human",
       "comment_id": "5703012355",
@@ -33465,6 +33418,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2303:5712210138:2026-09-17T09:37:49Z:clawsweeper_needs_human",
+      "comment_id": "5712210138",
+      "comment_version_key": "5712210138:2026-09-17T09:37:49Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2303#issuecomment-5712210138",
+      "comment_created_at": "2026-09-17T09:37:49Z",
+      "comment_updated_at": "2026-09-17T09:37:49Z",
+      "comment_body_sha256": "8708b38ea84370ee2468192181fcf79442719997297aa157a80ea3aea5495c62",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2303,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed provider specification routes boat to the existing backend, but the complete body and discussion contain no after-change CLI result... (sha=38ca635bf470c37a288521f5c515798144800867)",
+      "expected_head_sha": "38ca635bf470c37a288521f5c515798144800867",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T09:38:43.357Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "boat-provider-rebrand",
+        "head_sha": "38ca635bf470c37a288521f5c515798144800867",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
