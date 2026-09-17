@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T15:08:24.110Z",
+  "updated_at": "2026-09-17T15:08:59.840Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126611:5353876596:2026-09-17T10:32:09Z:clawsweeper_auto_repair",
-      "comment_id": "5353876596",
-      "comment_version_key": "5353876596:2026-09-17T10:32:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126611#issuecomment-5353876596",
-      "comment_created_at": "2026-08-20T09:14:40Z",
-      "comment_updated_at": "2026-09-17T10:32:09Z",
-      "comment_body_sha256": "3f9a8bf4a79d4b959cf3b8dea50ae44b2d403439a543bda733cac0744b5c3655",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126611,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=3d5e676cb7b182002c3569911913e540a7b4aa92)",
-      "expected_head_sha": "3d5e676cb7b182002c3569911913e540a7b4aa92",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T10:34:26.224Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/custom-provider-reasoning-max-tokens",
-        "head_sha": "3d5e676cb7b182002c3569911913e540a7b4aa92",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126616:5354020666:2026-09-17T10:31:35Z:clawsweeper_auto_repair",
       "comment_id": "5354020666",
@@ -33657,6 +33624,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150954:5716648353:2026-09-17T15:07:59Z:clawsweeper_needs_human",
+      "comment_id": "5716648353",
+      "comment_version_key": "5716648353:2026-09-17T15:07:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150954#issuecomment-5716648353",
+      "comment_created_at": "2026-09-17T15:07:59Z",
+      "comment_updated_at": "2026-09-17T15:07:59Z",
+      "comment_body_sha256": "0aeef34e061019c5c1ff600a8c753e4149dff479ecb177a3c763aed15da7087f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150954,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing short-timeout units receive shorter drain and requested-restart waits; the published-updater path has not demonstrated preservation of service settings and recovery of interr... (sha=3a248e7f550d91cc27cfc6afdcf1c233806ec874)",
+      "expected_head_sha": "3a248e7f550d91cc27cfc6afdcf1c233806ec874",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T15:08:59.840Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-gateway-stop-drain-timeout-20260917",
+        "head_sha": "3a248e7f550d91cc27cfc6afdcf1c233806ec874",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
