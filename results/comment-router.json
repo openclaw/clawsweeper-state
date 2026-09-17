@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T21:12:41.008Z",
+  "updated_at": "2026-09-17T21:13:10.892Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5099000197:2026-07-28T01:51:59Z:re_review",
-      "comment_id": "5099000197",
-      "comment_version_key": "5099000197:2026-07-28T01:51:59Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5099000197",
-      "comment_created_at": "2026-07-28T01:51:59Z",
-      "comment_updated_at": "2026-07-28T01:51:59Z",
-      "comment_body_sha256": "25f579af5f072fd3814558f1577bee830118f9c1b0ae774331e8b550ad543a87",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:27:02.749Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5099064527:2026-07-28T02:02:26Z:re_review",
       "comment_id": "5099064527",
@@ -33029,6 +33002,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151067:5719759847:2026-09-17T21:12:20Z:clawsweeper_needs_human",
+      "comment_id": "5719759847",
+      "comment_version_key": "5719759847:2026-09-17T21:12:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151067#issuecomment-5719759847",
+      "comment_created_at": "2026-09-17T19:05:57Z",
+      "comment_updated_at": "2026-09-17T21:12:20Z",
+      "comment_body_sha256": "d9f8bbc6123d0f0b7cf0344f041c7c01dcd120ba7ceec5287a23474f18f94058",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the scheduled tool/Gateway tests use synthetic provider callbacks. Merged Slack and A2A evidence is useful prer...; Review finding: [medium] Qualify revocation at actual provider I/O — src/agents/tools/message-tool-execution.ts:624 (sha=d1fd46f9b85d6b9917b61d0064e79d732f21ee43)",
+      "expected_head_sha": "d1fd46f9b85d6b9917b61d0064e79d732f21ee43",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T21:13:10.892Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-message-lifetime",
+        "head_sha": "d1fd46f9b85d6b9917b61d0064e79d732f21ee43",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
