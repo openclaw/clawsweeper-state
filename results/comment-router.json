@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T07:45:30.790Z",
+  "updated_at": "2026-09-17T07:47:50.222Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:54:5707876559:2026-09-17T03:10:00Z:re_review",
-      "comment_id": "5707876559",
-      "comment_version_key": "5707876559:2026-09-17T03:10:00Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5707876559",
-      "comment_created_at": "2026-09-17T03:10:00Z",
-      "comment_updated_at": "2026-09-17T03:10:00Z",
-      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
-      "repo": "openclaw/rfcs",
-      "issue_number": 54,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T03:11:02.010Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
-        "head_sha": "8e8ff2ded996a8adf69dfffed372c0192850e666",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149725:5692745339:2026-09-17T03:09:35Z:clawsweeper_needs_human",
       "comment_id": "5692745339",
@@ -33282,6 +33235,39 @@
         "kind": "pull_request",
         "branch": "fix/google-meet-caption-coalescing-notices",
         "head_sha": "73e237d3b3f7483db4f2bf023c5a7cf805bb0146",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150623:5709368034:2026-09-17T07:41:04Z:clawsweeper_needs_human",
+      "comment_id": "5709368034",
+      "comment_version_key": "5709368034:2026-09-17T07:41:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150623#issuecomment-5709368034",
+      "comment_created_at": "2026-09-17T05:36:04Z",
+      "comment_updated_at": "2026-09-17T07:41:04Z",
+      "comment_body_sha256": "3dffcc94ff75dfaa8a4f4511eaf6ebcc54d061251bcb72d9468edfa3d65456ba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150623,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The preflight estimator is exercised against isolated SQLite transcripts, but compaction and agent execution are mocked; no after-fix real agen... (sha=ddea444ca9fedb15db8ddc0d9fd87f3a4ab9131a)",
+      "expected_head_sha": "ddea444ca9fedb15db8ddc0d9fd87f3a4ab9131a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T07:47:50.222Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/active-window-token-estimate",
+        "head_sha": "4ae6c8ed90133576944b66b9f81d08b776754c5a",
         "cluster_id": null,
         "job_path": null
       }
