@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T04:17:07.838Z",
+  "updated_at": "2026-09-17T04:19:22.781Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149725:5692745339:2026-09-16T23:29:05Z:clawsweeper_auto_repair",
-      "comment_id": "5692745339",
-      "comment_version_key": "5692745339:2026-09-16T23:29:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149725#issuecomment-5692745339",
-      "comment_created_at": "2026-09-16T05:57:13Z",
-      "comment_updated_at": "2026-09-16T23:29:05Z",
-      "comment_body_sha256": "6085b5d746594d55e2dccba9f49af284a2aa6a44b4e51a19f2493f232b63a1e8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149725,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=551f662139b4f8567d97208cd934be5d6f7b2d52)",
-      "expected_head_sha": "551f662139b4f8567d97208cd934be5d6f7b2d52",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T23:30:58.918Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/rfc54-macos-rust-runtime",
-        "head_sha": "551f662139b4f8567d97208cd934be5d6f7b2d52",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149916:5694927009:2026-09-16T23:29:40Z:clawsweeper_needs_human",
       "comment_id": "5694927009",
@@ -33619,6 +33586,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150562:5708430537:2026-09-17T04:18:23Z:re_review",
+      "comment_id": "5708430537",
+      "comment_version_key": "5708430537:2026-09-17T04:18:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5708430537",
+      "comment_created_at": "2026-09-17T04:18:23Z",
+      "comment_updated_at": "2026-09-17T04:18:23Z",
+      "comment_body_sha256": "b3f284cc0a1beeb328412bb94d58a200ad138ad6fd36e0a5c0a3e9d0d48a538c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150562,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review – added a new test that asserts is invoked between store recoveries. also added an integration run to validate event-loop responsiveness on usb storage. see commit 37a027b0d5aec44742b2f8f1fee59c7ac3455ebf",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T04:19:20.949Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149935-yield-between-store-recovery",
+        "head_sha": "37a027b0d5aec44742b2f8f1fee59c7ac3455ebf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
