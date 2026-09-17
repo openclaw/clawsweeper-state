@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151055",
+  "mode": "autonomous",
+  "run_id": "35259879896",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35259879896",
+  "head_sha": "09f41a00561625480636e67500a70c45b2aec9d1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151055.md",
+  "published_at": "2026-09-17T19:02:38.898Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151055",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151055",
+  "canonical_pr": null,
+  "summary": "Current-main source supports the stale provider-config defect. A narrow fix artifact is ready, but implementation and runtime reproduction are blocked by this host's read-only filesystem and missing node_modules. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151055",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#151055",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with dependencies. First demonstrate the failing regression on current main; do not publish a PR if reproduction fails."
+    },
+    {
+      "target": "#96534",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct recovery work; leave open and outside this implementation."
+    },
+    {
+      "target": "#116562",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related work, not a replacement source or canonical fix for #151055."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151055",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151055",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair remains appropriate; artifact preparation is complete, while local implementation and validation remain blocked."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
