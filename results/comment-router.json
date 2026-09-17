@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:28:53.532Z",
+  "updated_at": "2026-09-17T13:28:58.990Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150611:5709163988:2026-09-17T07:46:17Z:clawsweeper_needs_human",
-      "comment_id": "5709163988",
-      "comment_version_key": "5709163988:2026-09-17T07:46:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150611#issuecomment-5709163988",
-      "comment_created_at": "2026-09-17T05:18:50Z",
-      "comment_updated_at": "2026-09-17T07:46:17Z",
-      "comment_body_sha256": "641283f32585dda4c4081549d408b2c50fb19f9dbb5e719297f301bc827b4710",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150611,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied workflow exercises checkpoint staging with real Git, filesystem, and SQLite effects, but operation closure is injected through a s... (sha=83c82c94f506575a25c0683db87e50382ff2febd)",
-      "expected_head_sha": "83c82c94f506575a25c0683db87e50382ff2febd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:54:29.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pr135838-checkpoint-authority",
-        "head_sha": "83c82c94f506575a25c0683db87e50382ff2febd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150633:5709540534:2026-09-17T07:49:35Z:clawsweeper_needs_human",
       "comment_id": "5709540534",
@@ -34578,6 +34545,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150562:5715138485:2026-09-17T13:27:51Z:re_review",
+      "comment_id": "5715138485",
+      "comment_version_key": "5715138485:2026-09-17T13:27:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5715138485",
+      "comment_created_at": "2026-09-17T13:27:51Z",
+      "comment_updated_at": "2026-09-17T13:27:51Z",
+      "comment_body_sha256": "9f6b83be5e818d62de000e746b40d5136b0ce03b1a17952bc0f45d8d062b1222",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150562,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — fixed p2 findings: configured per-agent stores for proper discovery, added recoverstore spy to verify callback execution between stores",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:28:56.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149935-yield-between-store-recovery",
+        "head_sha": "4f7952a26d7af46e277713af9d22170b6904d7b0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
