@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T12:58:20.092Z",
+  "updated_at": "2026-09-17T12:58:46.961Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150711:5710637137:2026-09-17T07:25:04Z:clawsweeper_needs_human",
-      "comment_id": "5710637137",
-      "comment_version_key": "5710637137:2026-09-17T07:25:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150711#issuecomment-5710637137",
-      "comment_created_at": "2026-09-17T07:25:04Z",
-      "comment_updated_at": "2026-09-17T07:25:04Z",
-      "comment_body_sha256": "6a5fc72c431cfb0f21e7b64a7a538374fb1aa3ff37082def7fdf1b89049b0348",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150711,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, legitimate 1:1 DM interactions without a channel object can stop with a retry response when REST is slow or unavailable; previously they proceeded under assumed DM iden... (sha=0a86459acf681351695326ba2fe1f91b49ef70aa)",
-      "expected_head_sha": "0a86459acf681351695326ba2fe1f91b49ef70aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:27:20.197Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agent-components-context-f486fe",
-        "head_sha": "0a86459acf681351695326ba2fe1f91b49ef70aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150712:5710644925:2026-09-17T07:25:50Z:clawsweeper_needs_human",
       "comment_id": "5710644925",
@@ -34274,6 +34241,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150834:5714727698:2026-09-17T12:57:42Z:re_review",
+      "comment_id": "5714727698",
+      "comment_version_key": "5714727698:2026-09-17T12:57:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150834#issuecomment-5714727698",
+      "comment_created_at": "2026-09-17T12:57:42Z",
+      "comment_updated_at": "2026-09-17T12:57:42Z",
+      "comment_body_sha256": "201cd8eeb5024145956dc0d0ac2b82b6c5a3b15988a1d49c51ae7c1875c2b330",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150834,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T12:58:44.696Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f06-update-run-history",
+        "head_sha": "d27883541e8d8677bc7caa2320f4a66679ec6311",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
