@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:39:44.284Z",
+  "updated_at": "2026-09-17T02:39:51.818Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149518:5704619764:2026-09-16T21:15:39Z:re_review",
-      "comment_id": "5704619764",
-      "comment_version_key": "5704619764:2026-09-16T21:15:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149518#issuecomment-5704619764",
-      "comment_created_at": "2026-09-16T21:15:39Z",
-      "comment_updated_at": "2026-09-16T21:15:39Z",
-      "comment_body_sha256": "89024e7016612f5736e60cb5cdd3d3a340a390cf29c807b85e63d89d0c7d46fe",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149518,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T21:16:42.330Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/149239-session-placement-settlement-fallback",
-        "head_sha": "4486c68747df3bf06ceb579b8a588b8ae6c32ed7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150299:5704634203:2026-09-16T21:16:49Z:clawsweeper_needs_human",
       "comment_id": "5704634203",
@@ -33678,6 +33631,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/node-runtime-conformance-ci",
         "head_sha": "3083030ee1a27afdfdfb81850427eba8a75e821e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150223:5702730152:2026-09-17T02:38:43Z:clawsweeper_needs_human",
+      "comment_id": "5702730152",
+      "comment_version_key": "5702730152:2026-09-17T02:38:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150223#issuecomment-5702730152",
+      "comment_created_at": "2026-09-16T18:43:32Z",
+      "comment_updated_at": "2026-09-17T02:38:43Z",
+      "comment_body_sha256": "33ff19ea38325cbbb3b66dac9cad9cd5abaeab05a5e33161f560e53f20693c2b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150223,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installed plugins that mutate api.config descendants may throw or silently ignore writes after upgrade; the maintainer explicitly leaves this compatibility unverified. (sha=236f82ccf2c8bdd4dfcc7ac260a0c4b6794e4969)",
+      "expected_head_sha": "236f82ccf2c8bdd4dfcc7ac260a0c4b6794e4969",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:39:51.818Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/fleet-snapshot-batch-block",
+        "head_sha": "236f82ccf2c8bdd4dfcc7ac260a0c4b6794e4969",
         "cluster_id": null,
         "job_path": null
       }
