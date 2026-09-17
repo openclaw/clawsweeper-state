@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:44:15.823Z",
+  "updated_at": "2026-09-17T13:44:23.917Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150716:5711087401:2026-09-17T08:05:34Z:re_review",
-      "comment_id": "5711087401",
-      "comment_version_key": "5711087401:2026-09-17T08:05:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150716#issuecomment-5711087401",
-      "comment_created_at": "2026-09-17T08:05:34Z",
-      "comment_updated_at": "2026-09-17T08:05:34Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150716,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:06:33.602Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-core-mount-grants",
-        "head_sha": "20f29870c26fb5e818add435e5c3f9b648856251",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150704:5711086194:2026-09-17T08:05:27Z:re_review",
       "comment_id": "5711086194",
@@ -34625,6 +34578,39 @@
         "kind": "pull_request",
         "branch": "fix/cron-mutation-guards",
         "head_sha": "fd15c922c112fec6b8fdf054dbfef02fdcbb6f36",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149438:5688623135:2026-09-17T13:43:16Z:clawsweeper_needs_human",
+      "comment_id": "5688623135",
+      "comment_version_key": "5688623135:2026-09-17T13:43:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149438#issuecomment-5688623135",
+      "comment_created_at": "2026-09-15T21:55:03Z",
+      "comment_updated_at": "2026-09-17T13:43:16Z",
+      "comment_body_sha256": "f66e677246f6aeb035fc43e49949e3882e379e3cee4021961401a95e7819e10c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149438,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The startup-time and RSS benefit remains unquantified, so the practical payoff of the additional eligibility logic is uncertain. (sha=6829bf40210fa6ef1c89796f2054dffacdc37adb)",
+      "expected_head_sha": "6829bf40210fa6ef1c89796f2054dffacdc37adb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:44:23.917Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/spawn-selection-main-integration-20260915",
+        "head_sha": "6829bf40210fa6ef1c89796f2054dffacdc37adb",
         "cluster_id": null,
         "job_path": null
       }
