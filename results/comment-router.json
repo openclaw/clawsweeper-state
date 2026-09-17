@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T04:52:36.359Z",
+  "updated_at": "2026-09-17T04:52:52.499Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:54:5706491708:2026-09-17T00:20:36Z:re_review",
-      "comment_id": "5706491708",
-      "comment_version_key": "5706491708:2026-09-17T00:20:36Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5706491708",
-      "comment_created_at": "2026-09-17T00:20:36Z",
-      "comment_updated_at": "2026-09-17T00:20:36Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/rfcs",
-      "issue_number": 54,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T00:21:30.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
-        "head_sha": "bb710af0d87bb48227e7cb5f2656f787a4107378",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:149330:5706440229:2026-09-17T00:14:04Z:re_review",
       "comment_id": "5706440229",
@@ -33728,6 +33681,39 @@
         "kind": "pull_request",
         "branch": "steipete/diagnostics-heap-profile-20260917",
         "head_sha": "ea8b924a434cc3761bf24495a3cc6e72fdebcced",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150324:5705122570:2026-09-17T04:51:30Z:clawsweeper_needs_human",
+      "comment_id": "5705122570",
+      "comment_version_key": "5705122570:2026-09-17T04:51:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150324#issuecomment-5705122570",
+      "comment_created_at": "2026-09-16T21:54:15Z",
+      "comment_updated_at": "2026-09-17T04:51:30Z",
+      "comment_body_sha256": "1435c15b5d63153101469c345e112720f4a03c804e44003feea38d161a2d935b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150324,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Third-party plugins rebuilding exhaustive DiagnosticEventPayload switches may fail compilation until they handle the additive variant; the PR documents this implication, but external... (sha=ceafb62a231b1e27f59d0b5ed6a0419239633812)",
+      "expected_head_sha": "ceafb62a231b1e27f59d0b5ed6a0419239633812",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T04:52:52.499Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/native-runtime-decision-capture-67c2",
+        "head_sha": "ceafb62a231b1e27f59d0b5ed6a0419239633812",
         "cluster_id": null,
         "job_path": null
       }
