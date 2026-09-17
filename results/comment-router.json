@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:45:17.102Z",
+  "updated_at": "2026-09-17T14:51:42.965Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150780:5712619665:2026-09-17T10:10:48Z:re_review",
-      "comment_id": "5712619665",
-      "comment_version_key": "5712619665:2026-09-17T10:10:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150780#issuecomment-5712619665",
-      "comment_created_at": "2026-09-17T10:10:48Z",
-      "comment_updated_at": "2026-09-17T10:10:48Z",
-      "comment_body_sha256": "1cde9124a18b3534ff4f2903e2c64d44d88fed53bbcc3dbda7718866b89eee85",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150780,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review: the additive repair now preserves gateway snapshot/rpc connectivity semantics and projects configured-channel health only at the `openclaw health --json` boundary. the regression test asserts both outcomes",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T10:18:19.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-health-channel-verdict",
-        "head_sha": "1efa90772a721c8bfba0e6ef59c1dfa17667240b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150780:5712420092:2026-09-17T10:17:15Z:clawsweeper_auto_repair",
       "comment_id": "5712420092",
@@ -33725,6 +33678,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150562:5708301612:2026-09-17T14:49:01Z:clawsweeper_auto_repair",
+      "comment_id": "5708301612",
+      "comment_version_key": "5708301612:2026-09-17T14:49:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5708301612",
+      "comment_created_at": "2026-09-17T04:05:36Z",
+      "comment_updated_at": "2026-09-17T14:49:01Z",
+      "comment_body_sha256": "06b0c6b4fb0924b88a215ab6ccf7d1e79457bea3afff13bfe5df003cdfed8f89",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150562,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=8fc632f74d84192bf75d29b430fdcc25131f59bd)",
+      "expected_head_sha": "8fc632f74d84192bf75d29b430fdcc25131f59bd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T14:51:42.965Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149935-yield-between-store-recovery",
+        "head_sha": "8fc632f74d84192bf75d29b430fdcc25131f59bd",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
