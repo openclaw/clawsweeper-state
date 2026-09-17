@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:04:54.923Z",
+  "updated_at": "2026-09-17T08:06:31.425Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150223:5702730152:2026-09-17T03:16:12Z:clawsweeper_needs_human",
-      "comment_id": "5702730152",
-      "comment_version_key": "5702730152:2026-09-17T03:16:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150223#issuecomment-5702730152",
-      "comment_created_at": "2026-09-16T18:43:32Z",
-      "comment_updated_at": "2026-09-17T03:16:12Z",
-      "comment_body_sha256": "1d867cbf790dba673a83ee35a9827347135049eb52f8e4e2a146d94279fe0af8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150223,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Accepted compatibility risk: installed plugins that mutate api.config descendants may fail after upgrade; installed-plugin mutation compatibility and published-driver upgrade behavior... (sha=241983f40eec14e037f37b4065595f4f54eb4198)",
-      "expected_head_sha": "241983f40eec14e037f37b4065595f4f54eb4198",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:26:26.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/fleet-snapshot-batch-block",
-        "head_sha": "241983f40eec14e037f37b4065595f4f54eb4198",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150235:5703012355:2026-09-17T03:07:52Z:clawsweeper_needs_human",
       "comment_id": "5703012355",
@@ -33315,6 +33282,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150702:5711086733:2026-09-17T08:05:30Z:re_review",
+      "comment_id": "5711086733",
+      "comment_version_key": "5711086733:2026-09-17T08:05:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150702#issuecomment-5711086733",
+      "comment_created_at": "2026-09-17T08:05:30Z",
+      "comment_updated_at": "2026-09-17T08:05:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150702,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:06:28.711Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sec/fail-closed-delegated-tool-cap-v2",
+        "head_sha": "6e60f5f607d2a7470c5dc3b1fb2ccb509ca987ff",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
