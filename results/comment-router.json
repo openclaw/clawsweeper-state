@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:11:14.217Z",
+  "updated_at": "2026-09-17T14:11:52.041Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150742:5711540205:2026-09-17T08:43:20Z:re_review",
-      "comment_id": "5711540205",
-      "comment_version_key": "5711540205:2026-09-17T08:43:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150742#issuecomment-5711540205",
-      "comment_created_at": "2026-09-17T08:43:20Z",
-      "comment_updated_at": "2026-09-17T08:43:20Z",
-      "comment_body_sha256": "b153481d869aace239db05547c118d631a95e94b7694d17f6257c7730b80a651",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150742,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:44:22.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release95-qa-fixtures-20260917T0743",
-        "head_sha": "4d70559db7ccddba06c0fb61e4fc9e8e48d8a05b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150694:5710441485:2026-09-17T08:34:48Z:clawsweeper_needs_human",
       "comment_id": "5710441485",
@@ -34489,6 +34442,39 @@
         "kind": "pull_request",
         "branch": "feat/webui-external-link-arrow",
         "head_sha": "408124559ed85625d574106ac4440486779b9b08",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81190:4435224992:2026-09-17T14:10:21Z:clawsweeper_needs_human",
+      "comment_id": "4435224992",
+      "comment_version_key": "4435224992:2026-09-17T14:10:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/81190#issuecomment-4435224992",
+      "comment_created_at": "2026-05-12T22:10:27Z",
+      "comment_updated_at": "2026-09-17T14:10:21Z",
+      "comment_body_sha256": "86495da9ea5561673aa23224ce84c2269e756895fc0fb1abc629b12393939efe",
+      "repo": "openclaw/openclaw",
+      "issue_number": 81190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sessions can lose useful tool detail from active model context before a summarizer sees it. Original transcript rows remain retained, but successful recovery proof does not e... (sha=29e0740b35127bb84b88fe7cacec55cdcb5f70b6)",
+      "expected_head_sha": "29e0740b35127bb84b88fe7cacec55cdcb5f70b6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T14:11:52.041Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-tool-result-truncation-first",
+        "head_sha": "29e0740b35127bb84b88fe7cacec55cdcb5f70b6",
         "cluster_id": null,
         "job_path": null
       }
