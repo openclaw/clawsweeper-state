@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151006"
-mode: "autonomous"
-run_id: "35250803039"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35250803039"
+mode: "plan"
+run_id: "35256152569"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35256152569"
 head_sha: "971582747fe2d14b96aea8f4ffdf2f559f7e55c4"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-17T17:48:11.676Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151006"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151006"
+published_at: "2026-09-17T18:04:47.446Z"
+canonical: "#151006"
+canonical_issue: "#151006"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35250803039](https://github.com/openclaw/clawsweeper/actions/runs/35250803039)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35256152569](https://github.com/openclaw/clawsweeper/actions/runs/35256152569)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151006
+Canonical: #151006
 
 ## Summary
 
-The defect remains source-confirmed on preflight main. A narrow fix artifact is ready; local implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state were changed.
+Plan a narrow terminal-preview fix. Checkout matches preflight main c5650f149fcc682535bc693a88ba8840e811b0bd; source still omits detail limits. No edits or runtime tests performed. Existing-PR recheck requires executor GitHub access.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ The defect remains source-confirmed on preflight main. A narrow fix artifact is 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151006 | fix_needed | planned | canonical | A bounded display repair fits the existing sanitizer contract without changing task storage, notification policy, or security boundaries. |
-| cluster:issue-openclaw-openclaw-151006 | build_fix_artifact | planned | canonical | The executor can implement the narrow plan after restoring dependencies in a writable checkout and establishing the required failing regression. |
-| cluster:issue-openclaw-openclaw-151006 | open_fix_pr | blocked | canonical | Publication is blocked until the executor completes duplicate detection, reproduces the defect on current main, implements the fix, and passes focused tests, pnpm check:changed, and fresh review. This lane must neither merge nor close the issue. |
+| #151006 | fix_needed | planned | canonical | The existing formatter can own this bounded bug fix without configuration, storage, or policy changes. Reproduce on refreshed main before implementation; keep the issue open. |
 
 ## Needs Human
 
