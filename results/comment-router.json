@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T18:32:05.602Z",
+  "updated_at": "2026-09-17T18:35:07.551Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150798:5712642702:2026-09-17T12:53:46Z:clawsweeper_needs_human",
-      "comment_id": "5712642702",
-      "comment_version_key": "5712642702:2026-09-17T12:53:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150798#issuecomment-5712642702",
-      "comment_created_at": "2026-09-17T10:12:26Z",
-      "comment_updated_at": "2026-09-17T12:53:46Z",
-      "comment_body_sha256": "961da49cb435cacf42b17efb509baa7203c5bc86c0b366aa4322c471d2fc653c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150798,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=fe2d3fc61d7beec992ae3320ce903245086eaeb2)",
-      "expected_head_sha": "fe2d3fc61d7beec992ae3320ce903245086eaeb2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T12:54:48.811Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/update-promisor-marker-cleanup",
-        "head_sha": "fe2d3fc61d7beec992ae3320ce903245086eaeb2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150898:5714682301:2026-09-17T12:54:09Z:clawsweeper_auto_repair",
       "comment_id": "5714682301",
@@ -32893,6 +32860,53 @@
       "status": "skipped",
       "processed_at": "2026-09-17T18:32:05.602Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151040:5719373343:2026-09-17T18:34:07Z:re_review",
+      "comment_id": "5719373343",
+      "comment_version_key": "5719373343:2026-09-17T18:34:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151040#issuecomment-5719373343",
+      "comment_created_at": "2026-09-17T18:34:07Z",
+      "comment_updated_at": "2026-09-17T18:34:07Z",
+      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151040,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T18:35:05.312Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-ingress-broker-context",
+        "head_sha": "01b4c306939a14427c185e5c1e02454f54964fc6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
