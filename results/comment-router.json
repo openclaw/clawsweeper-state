@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:50:51.001Z",
+  "updated_at": "2026-09-17T11:51:07.578Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149097:5680556958:2026-09-17T06:04:10Z:clawsweeper_needs_human",
-      "comment_id": "5680556958",
-      "comment_version_key": "5680556958:2026-09-17T06:04:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149097#issuecomment-5680556958",
-      "comment_created_at": "2026-09-15T12:58:36Z",
-      "comment_updated_at": "2026-09-17T06:04:10Z",
-      "comment_body_sha256": "3f969b53e394e290c91f338c63cc12c609951e5cfe73bf7ece49fef9f1150001",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149097,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Plugins adopting the new public subpath cannot use it on v2026.9.4; publishing them before a supporting core release would leave the visual path unavailable. (sha=e77e60f28901651d040eb5fa8a56fb41c6d68268)",
-      "expected_head_sha": "e77e60f28901651d040eb5fa8a56fb41c6d68268",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T06:39:49.715Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/live-visual-provider-seam",
-        "head_sha": "e77e60f28901651d040eb5fa8a56fb41c6d68268",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149291:5684790318:2026-09-17T06:10:30Z:clawsweeper_needs_human",
       "comment_id": "5684790318",
@@ -33890,6 +33857,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150856:5713850374:2026-09-17T11:50:11Z:re_review",
+      "comment_id": "5713850374",
+      "comment_version_key": "5713850374:2026-09-17T11:50:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150856#issuecomment-5713850374",
+      "comment_created_at": "2026-09-17T11:50:11Z",
+      "comment_updated_at": "2026-09-17T11:50:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150856,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T11:51:05.784Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-bundle-mcp-requester-isolation",
+        "head_sha": "340022637c03b54436c4253e3f1312462de804c0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
