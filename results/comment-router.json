@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T18:57:42.756Z",
+  "updated_at": "2026-09-17T18:58:27.770Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150834:5714942363:2026-09-17T13:13:49Z:re_review",
-      "comment_id": "5714942363",
-      "comment_version_key": "5714942363:2026-09-17T13:13:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150834#issuecomment-5714942363",
-      "comment_created_at": "2026-09-17T13:13:49Z",
-      "comment_updated_at": "2026-09-17T13:13:49Z",
-      "comment_body_sha256": "3833092621403242fe38dc03f8db9a19aecda4196d8649e18da868b12d77463b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150834,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:14:40.433Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f06-update-run-history",
-        "head_sha": "9d9b60e00d020b233e854b40a76857a916afe229",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150799:5714941906:2026-09-17T13:13:47Z:re_review",
       "comment_id": "5714941906",
@@ -32710,6 +32663,39 @@
         "kind": "pull_request",
         "branch": "codex/team-auth-collator-20260917",
         "head_sha": "36db94ab7e30f47ef272f4f8498f7e2c567b5b02",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150681:5710124316:2026-09-17T18:56:54Z:clawsweeper_needs_human",
+      "comment_id": "5710124316",
+      "comment_version_key": "5710124316:2026-09-17T18:56:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150681#issuecomment-5710124316",
+      "comment_created_at": "2026-09-17T06:37:47Z",
+      "comment_updated_at": "2026-09-17T18:56:54Z",
+      "comment_body_sha256": "d29f3ca66f7ca2cdcb9365e61931fd9f860acfde04ebbe7dfe55d66962f0257b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150681,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=991e8f60ee71c5af5f74ed7babec7f68848b3c4d)",
+      "expected_head_sha": "991e8f60ee71c5af5f74ed7babec7f68848b3c4d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T18:58:27.770Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/attachment-hydration-owner-20260917",
+        "head_sha": "991e8f60ee71c5af5f74ed7babec7f68848b3c4d",
         "cluster_id": null,
         "job_path": null
       }
