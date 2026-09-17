@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T07:24:56.051Z",
+  "updated_at": "2026-09-17T07:25:49.940Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82290:4462884081:2026-09-17T02:40:08Z:clawsweeper_needs_human",
-      "comment_id": "4462884081",
-      "comment_version_key": "4462884081:2026-09-17T02:40:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82290#issuecomment-4462884081",
-      "comment_created_at": "2026-05-15T19:42:38Z",
-      "comment_updated_at": "2026-09-17T02:40:08Z",
-      "comment_body_sha256": "c1eec07ba79ac6b1e1b0660bdf3547afb41ae9450cb4d19cb171f9e89fd79214",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82290,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=c0c61c60aad5f3489ef7c63676e73366d97f4083)",
-      "expected_head_sha": "c0c61c60aad5f3489ef7c63676e73366d97f4083",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T02:47:51.137Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-runtime-path-install",
-        "head_sha": "c0c61c60aad5f3489ef7c63676e73366d97f4083",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:54:5123890342:2026-09-17T02:47:06Z:clawsweeper_needs_human",
       "comment_id": "5123890342",
@@ -33517,6 +33484,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150704:5710632660:2026-09-17T07:24:37Z:clawsweeper_needs_human",
+      "comment_id": "5710632660",
+      "comment_version_key": "5710632660:2026-09-17T07:24:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150704#issuecomment-5710632660",
+      "comment_created_at": "2026-09-17T07:24:37Z",
+      "comment_updated_at": "2026-09-17T07:24:37Z",
+      "comment_body_sha256": "861671311b3f4ee5b3c8f742530f5e429b3269e09a0fc1ffad67a07856b6afae",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150704,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: this head demonstrates rejection at a mocked stream callback, but does not exercise the real Side Chat policy-t...; Review finding: [medium] Revocation after the wrapper check remains unproven — src/agents/embedded-agent-runner/run/attempt-stream.ts:183 (sha=7d30c9524f951f6d331e14e70b1ae4ac2a98421a)",
+      "expected_head_sha": "7d30c9524f951f6d331e14e70b1ae4ac2a98421a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T07:25:49.940Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/side-chat-run-authority",
+        "head_sha": "7d30c9524f951f6d331e14e70b1ae4ac2a98421a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
