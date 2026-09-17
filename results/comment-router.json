@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:45:52.143Z",
+  "updated_at": "2026-09-17T13:48:54.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150716:5711149904:2026-09-17T08:10:51Z:re_review",
-      "comment_id": "5711149904",
-      "comment_version_key": "5711149904:2026-09-17T08:10:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150716#issuecomment-5711149904",
-      "comment_created_at": "2026-09-17T08:10:51Z",
-      "comment_updated_at": "2026-09-17T08:10:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150716,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:11:47.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sandbox-core-mount-grants",
-        "head_sha": "700335e61007cc6db793f5592bf604afa24946f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150619:5709306662:2026-09-17T08:05:47Z:clawsweeper_needs_human",
       "comment_id": "5709306662",
@@ -34555,6 +34508,39 @@
         "kind": "pull_request",
         "branch": "upd/config-migration-convergence-71",
         "head_sha": "ddae7da2130db0d0420074e925c822003db33211",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150911:5715015802:2026-09-17T13:47:32Z:clawsweeper_needs_human",
+      "comment_id": "5715015802",
+      "comment_version_key": "5715015802:2026-09-17T13:47:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150911#issuecomment-5715015802",
+      "comment_created_at": "2026-09-17T13:18:55Z",
+      "comment_updated_at": "2026-09-17T13:47:32Z",
+      "comment_body_sha256": "a9a0f50321c462d10850aac854af9a4eb6328910b44ff086aaf65b937de09f6f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150911,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured Chromium transcript reports the changed Skills renderer failing before and passing after collapse-and-filter at 1280×720,... (sha=1844d59fbd69aea17b8b54d8e7627d1fd7e43e68)",
+      "expected_head_sha": "1844d59fbd69aea17b8b54d8e7627d1fd7e43e68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:48:54.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skills-group-keyed-render-150345",
+        "head_sha": "1844d59fbd69aea17b8b54d8e7627d1fd7e43e68",
         "cluster_id": null,
         "job_path": null
       }
