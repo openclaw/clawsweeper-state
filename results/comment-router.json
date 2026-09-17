@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T17:45:48.995Z",
+  "updated_at": "2026-09-17T17:46:01.703Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:461:5714049215:2026-09-17T12:16:44Z:clawsweeper_needs_human",
-      "comment_id": "5714049215",
-      "comment_version_key": "5714049215:2026-09-17T12:16:44Z",
-      "comment_url": "https://github.com/openclaw/fs-safe/pull/461#issuecomment-5714049215",
-      "comment_created_at": "2026-09-17T12:05:02Z",
-      "comment_updated_at": "2026-09-17T12:16:44Z",
-      "comment_body_sha256": "5422218ff991cf63c63664f1e667c6854e0014cdf2a30c724a338cd53a51c7e9",
-      "repo": "openclaw/fs-safe",
-      "issue_number": 461,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The async temp owner has real-filesystem regression test code, but the supplied evidence remains tests, CI, and static review; no observed afte... (sha=79574c64fa72d66677e8a694c424b4c8ce8a7765)",
-      "expected_head_sha": "79574c64fa72d66677e8a694c424b4c8ce8a7765",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T12:27:45.185Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/async-temp-handle-exact-once-20260917",
-        "head_sha": "79574c64fa72d66677e8a694c424b4c8ce8a7765",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149438:5688623135:2026-09-17T12:16:34Z:clawsweeper_needs_human",
       "comment_id": "5688623135",
@@ -33105,6 +33072,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150995:5718780551:2026-09-17T17:45:03Z:re_review",
+      "comment_id": "5718780551",
+      "comment_version_key": "5718780551:2026-09-17T17:45:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150995#issuecomment-5718780551",
+      "comment_created_at": "2026-09-17T17:45:03Z",
+      "comment_updated_at": "2026-09-17T17:45:03Z",
+      "comment_body_sha256": "d65b00c5795a6d47439f04b4e51bf80e0e9ba0df508ce229bd489868b37db925",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150995,
+      "author": "anyech",
+      "author_id": 8743351,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T17:45:59.365Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/native-yield-progress-current",
+        "head_sha": "4c57b7f5d487ace9c9e5215b596798c59f77866e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
