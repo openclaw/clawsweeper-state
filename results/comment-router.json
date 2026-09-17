@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T19:29:43.433Z",
+  "updated_at": "2026-09-17T19:30:17.260Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150911:5715326007:2026-09-17T13:40:10Z:re_review",
-      "comment_id": "5715326007",
-      "comment_version_key": "5715326007:2026-09-17T13:40:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150911#issuecomment-5715326007",
-      "comment_created_at": "2026-09-17T13:40:10Z",
-      "comment_updated_at": "2026-09-17T13:40:10Z",
-      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150911,
-      "author": "SunnyShu0925",
-      "author_id": 265248434,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:42:19.808Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/skills-group-keyed-render-150345",
-        "head_sha": "1844d59fbd69aea17b8b54d8e7627d1fd7e43e68",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150796:5712577664:2026-09-17T13:41:01Z:clawsweeper_needs_human",
       "comment_id": "5712577664",
@@ -32650,6 +32603,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-account-switch-blank-card-3709",
         "head_sha": "1da91e2bdb1299a3cb906399126645f84965739e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151025:5718635195:2026-09-17T19:29:08Z:clawsweeper_needs_human",
+      "comment_id": "5718635195",
+      "comment_version_key": "5718635195:2026-09-17T19:29:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151025#issuecomment-5718635195",
+      "comment_created_at": "2026-09-17T17:33:24Z",
+      "comment_updated_at": "2026-09-17T19:29:08Z",
+      "comment_body_sha256": "259765e58817ef3d5fa0fe273a3cb9dcbabf96357dec13810a7c72c32c483395",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151025,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Historical April RPC upgrades can complete while leaving restart notices or continuations undelivered; subsequent Doctor repair may retire recreated JSON without replay when a receipt... (sha=643b9fd7908ac0db0a3172a0ff3c9fdde5922400)",
+      "expected_head_sha": "643b9fd7908ac0db0a3172a0ff3c9fdde5922400",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T19:30:17.260Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-readiness-integrated-01a0a39d",
+        "head_sha": "643b9fd7908ac0db0a3172a0ff3c9fdde5922400",
         "cluster_id": null,
         "job_path": null
       }
