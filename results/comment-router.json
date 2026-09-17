@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T21:57:19.495Z",
+  "updated_at": "2026-09-17T21:57:57.029Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:5556665583:2026-09-06T03:36:56Z:re_review",
-      "comment_id": "5556665583",
-      "comment_version_key": "5556665583:2026-09-06T03:36:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-5556665583",
-      "comment_created_at": "2026-09-06T03:36:56Z",
-      "comment_updated_at": "2026-09-06T03:36:56Z",
-      "comment_body_sha256": "a106010972b84b036034780ff2d0a3639676daa10052e82b2b077ab107f75de5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T14:38:18.164Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:5557960142:2026-09-06T08:13:56Z:re_review",
       "comment_id": "5557960142",
@@ -33553,6 +33526,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151175:5721772370:2026-09-17T21:56:53Z:clawsweeper_needs_human",
+      "comment_id": "5721772370",
+      "comment_version_key": "5721772370:2026-09-17T21:56:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151175#issuecomment-5721772370",
+      "comment_created_at": "2026-09-17T21:56:53Z",
+      "comment_updated_at": "2026-09-17T21:56:53Z",
+      "comment_body_sha256": "450ce8686ebe5f3b45595867f7bff88b1a198729c207c8fa0982159fb12f9184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151175,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - With an open cached native writer, previously working Blob reads can now fail when temporary storage cannot hold a shared-database snapshot; repeated or concurrent reads also add unme... (sha=f1da7a935a1812b40435baeb836567c8dc483bad)",
+      "expected_head_sha": "f1da7a935a1812b40435baeb836567c8dc483bad",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T21:57:57.029Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-blob-fleet972-20260917",
+        "head_sha": "f1da7a935a1812b40435baeb836567c8dc483bad",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
