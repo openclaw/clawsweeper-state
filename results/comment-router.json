@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:44:14.538Z",
+  "updated_at": "2026-09-17T13:44:15.823Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150283:5711087863:2026-09-17T08:05:36Z:re_review",
-      "comment_id": "5711087863",
-      "comment_version_key": "5711087863:2026-09-17T08:05:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150283#issuecomment-5711087863",
-      "comment_created_at": "2026-09-17T08:05:36Z",
-      "comment_updated_at": "2026-09-17T08:05:36Z",
-      "comment_body_sha256": "0c994268e51c082485d8d4e2a31e2df994fa7a4e69fe91b9ee0addef0203497c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150283,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:06:31.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/150204-talk-relay-transcript-barrier",
-        "head_sha": "9c44ab429fafe4b2624ac6fd0eebb156b9e35895",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150716:5711087401:2026-09-17T08:05:34Z:re_review",
       "comment_id": "5711087401",
@@ -34639,6 +34592,39 @@
         "kind": "pull_request",
         "branch": "fix/node-runtime-permission-probe-20260917",
         "head_sha": "b4115136f02bb96a344f9fe0e58c216cbafdb8c3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150906:5714906259:2026-09-17T13:37:12Z:clawsweeper_needs_human",
+      "comment_id": "5714906259",
+      "comment_version_key": "5714906259:2026-09-17T13:37:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150906#issuecomment-5714906259",
+      "comment_created_at": "2026-09-17T13:11:08Z",
+      "comment_updated_at": "2026-09-17T13:37:12Z",
+      "comment_body_sha256": "819583a3f2224dcf6457556d525084b13f85e9dd64befd9155191ab21b7d405a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150906,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The linked Testbox log stream could not be independently inspected because its artifact host is blocked in this review environment. (sha=fd15c922c112fec6b8fdf054dbfef02fdcbb6f36)",
+      "expected_head_sha": "fd15c922c112fec6b8fdf054dbfef02fdcbb6f36",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:44:15.823Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-mutation-guards",
+        "head_sha": "fd15c922c112fec6b8fdf054dbfef02fdcbb6f36",
         "cluster_id": null,
         "job_path": null
       }
