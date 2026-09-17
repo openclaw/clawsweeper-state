@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T09:07:53.015Z",
+  "updated_at": "2026-09-17T09:08:00.886Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90864:5708330896:2026-09-17T04:09:18Z:re_review",
-      "comment_id": "5708330896",
-      "comment_version_key": "5708330896:2026-09-17T04:09:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90864#issuecomment-5708330896",
-      "comment_created_at": "2026-09-17T04:09:18Z",
-      "comment_updated_at": "2026-09-17T04:09:18Z",
-      "comment_body_sha256": "7a48bb4b398f7b18e03d6de8124549d4f7700018641fdbeff88dc5eef3470d46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90864,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T04:10:12.276Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/progress-only-completion-results",
-        "head_sha": "bf60d11ba85c525e9954c350b5219d8acbed7b44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3678:5694018873:2026-09-17T03:57:30Z:clawsweeper_needs_human",
       "comment_id": "5694018873",
@@ -33516,6 +33469,39 @@
         "kind": "pull_request",
         "branch": "upd/sqlite-startup-integrity-budget",
         "head_sha": "3f2d72bbc84647c3d9d49e2a944f0c85969c3b1a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:450:5711832957:2026-09-17T09:07:05Z:clawsweeper_needs_human",
+      "comment_id": "5711832957",
+      "comment_version_key": "5711832957:2026-09-17T09:07:05Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/450#issuecomment-5711832957",
+      "comment_created_at": "2026-09-17T09:07:05Z",
+      "comment_updated_at": "2026-09-17T09:07:05Z",
+      "comment_body_sha256": "c57e8fe9ba4deee6f15f6bf4fcf163f4a9490f689d3528bae5307dd16d30bd5f",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The captured body supplies static acceptance but no GitHub Actions observation showing this workflow's registration, accepted inputs, and inten... (sha=d30c63e88389faa2a030d771a96a3dfc65301bb0)",
+      "expected_head_sha": "d30c63e88389faa2a030d771a96a3dfc65301bb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T09:08:00.886Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/register-sync-lock-root-performance-20260917",
+        "head_sha": "d30c63e88389faa2a030d771a96a3dfc65301bb0",
         "cluster_id": null,
         "job_path": null
       }
