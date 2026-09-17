@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:48:16.488Z",
+  "updated_at": "2026-09-17T02:48:26.078Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150279:5704732145:2026-09-16T21:24:38Z:re_review",
-      "comment_id": "5704732145",
-      "comment_version_key": "5704732145:2026-09-16T21:24:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150279#issuecomment-5704732145",
-      "comment_created_at": "2026-09-16T21:24:38Z",
-      "comment_updated_at": "2026-09-16T21:24:38Z",
-      "comment_body_sha256": "3c73fa824c3acb924339ab34b3c4c991898e63e6db571a1fd1a100b00432485e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150279,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T21:26:36.533Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-openclaw-remote-portal-routing",
-        "head_sha": "e73de38c2b3baaaf40ebc5efd12ea622775029ce",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150312:5704765817:2026-09-16T21:27:11Z:clawsweeper_needs_human",
       "comment_id": "5704765817",
@@ -33694,6 +33647,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
         "head_sha": "49660b02d7c10fc6c485c3c247ab365f23448537",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:445:5707700770:2026-09-17T02:47:26Z:clawsweeper_needs_human",
+      "comment_id": "5707700770",
+      "comment_version_key": "5707700770:2026-09-17T02:47:26Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/445#issuecomment-5707700770",
+      "comment_created_at": "2026-09-17T02:47:26Z",
+      "comment_updated_at": "2026-09-17T02:47:26Z",
+      "comment_body_sha256": "c5b7fa48fcbe1e8ef396851411f2ca221845a3e752a9297676a64367223bada4",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 445,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied validation does not show the new workflow running on GitHub Actions and producing its refusal message and failed job; review verdi... (sha=204300e7f09d4f2f5b271aaa25daaf7fba0b4357)",
+      "expected_head_sha": "204300e7f09d4f2f5b271aaa25daaf7fba0b4357",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:48:26.078Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/register-path-prefix-performance-20260916",
+        "head_sha": "204300e7f09d4f2f5b271aaa25daaf7fba0b4357",
         "cluster_id": null,
         "job_path": null
       }
