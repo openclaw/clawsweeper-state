@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T12:30:55.255Z",
+  "updated_at": "2026-09-17T12:31:25.005Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150153:5700958005:2026-09-17T06:56:53Z:clawsweeper_needs_human",
-      "comment_id": "5700958005",
-      "comment_version_key": "5700958005:2026-09-17T06:56:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150153#issuecomment-5700958005",
-      "comment_created_at": "2026-09-16T16:31:47Z",
-      "comment_updated_at": "2026-09-17T06:56:53Z",
-      "comment_body_sha256": "1e46124bb1849cc20a3346715657a70b53119f28c30a2c837007c2562d7d88ba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150153,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The updater intentionally refuses shared-install system services; affected operators must use their deployment owner's update workflow. (sha=7be29196eb222a46be47a60179ace2df09fe1147)",
-      "expected_head_sha": "7be29196eb222a46be47a60179ace2df09fe1147",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:01:37.538Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/task-recovery-reduction",
-        "head_sha": "7be29196eb222a46be47a60179ace2df09fe1147",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150224:5702717593:2026-09-17T06:58:58Z:clawsweeper_needs_human",
       "comment_id": "5702717593",
@@ -34242,6 +34209,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150847:5714375052:2026-09-17T12:30:05Z:re_review",
+      "comment_id": "5714375052",
+      "comment_version_key": "5714375052:2026-09-17T12:30:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150847#issuecomment-5714375052",
+      "comment_created_at": "2026-09-17T12:30:05Z",
+      "comment_updated_at": "2026-09-17T12:30:05Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150847,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T12:31:13.341Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "improve/doctor-lint-json-version",
+        "head_sha": "ff25640539ca07b670a694e38f84a3efa0d77575",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
