@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T18:25:01.351Z",
+  "updated_at": "2026-09-17T18:25:04.624Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150773:5714541081:2026-09-17T12:43:15Z:re_review",
-      "comment_id": "5714541081",
-      "comment_version_key": "5714541081:2026-09-17T12:43:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150773#issuecomment-5714541081",
-      "comment_created_at": "2026-09-17T12:43:15Z",
-      "comment_updated_at": "2026-09-17T12:43:15Z",
-      "comment_body_sha256": "e0494a5c0d56e227c2c8f551e6d98a382122232bb653e669bf9e1cf998fdb8a9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150773,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T12:44:21.471Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-worker-runtime-closure",
-        "head_sha": "51a1afa6ba33878aa15fa2cd0f25bb0e4996a9f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140429:5562019742:2026-09-17T12:43:47Z:clawsweeper_needs_human",
       "comment_id": "5562019742",
@@ -33044,6 +32997,39 @@
         "kind": "pull_request",
         "branch": "fix/skill-usage-inventory",
         "head_sha": "58449db56918792ff2862ad0e1f972d74fe2dcef",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150989:5717805570:2026-09-17T18:24:03Z:clawsweeper_needs_human",
+      "comment_id": "5717805570",
+      "comment_version_key": "5717805570:2026-09-17T18:24:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150989#issuecomment-5717805570",
+      "comment_created_at": "2026-09-17T16:28:01Z",
+      "comment_updated_at": "2026-09-17T18:24:03Z",
+      "comment_body_sha256": "c4d14f5d11a41e0372fcaa31f913ccb398dc54a44c04e0e35ee5edb619bbd36b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150989,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied GitHub snapshot reports merge conflicts. Integration with main's newer refresh-loop optimization has not been verified in a pinned merge result. (sha=4a9b167467abe8adc00d616cea154907246dcf35)",
+      "expected_head_sha": "4a9b167467abe8adc00d616cea154907246dcf35",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T18:25:04.624Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "steipete/fix-projection-transcript-probe-20260917",
+        "head_sha": "4a9b167467abe8adc00d616cea154907246dcf35",
         "cluster_id": null,
         "job_path": null
       }
