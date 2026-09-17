@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T05:32:08.749Z",
+  "updated_at": "2026-09-17T05:32:19.519Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150425:5706839800:2026-09-17T01:04:18Z:clawsweeper_needs_human",
-      "comment_id": "5706839800",
-      "comment_version_key": "5706839800:2026-09-17T01:04:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150425#issuecomment-5706839800",
-      "comment_created_at": "2026-09-17T01:04:18Z",
-      "comment_updated_at": "2026-09-17T01:04:18Z",
-      "comment_body_sha256": "7a338ca8a3286e536639f8bb3ea5b56d92471b940bc27ea14e40f0aee8ffe102",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150425,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **\\[P1\\] Keep quarantined audit files behind the backup sanitizer (P1)** - Renaming a rewritten raw archive to .raw.quarantined-* makes it invisible to both hasLegacyAuditBackupSources and isLegacyAuditMigrationBa...; Review finding: [P1] [P1] Keep quarantined audit files behind the backup sanitizer — src/infra/state-migrations.audit-logs.ts:281-285 - [high] Unsanitized quarantine bytes enter p... (sha=b17adfaa68f7572cdbf55a65046ba9baf15455d2)",
-      "expected_head_sha": "b17adfaa68f7572cdbf55a65046ba9baf15455d2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T01:05:15.295Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/doctor-audit-archive-mismatch",
-        "head_sha": "b17adfaa68f7572cdbf55a65046ba9baf15455d2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145169:5639303517:2026-09-17T00:56:13Z:clawsweeper_needs_human",
       "comment_id": "5639303517",
@@ -33559,6 +33526,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123236:5709303501:2026-09-17T05:30:41Z:re_review",
+      "comment_id": "5709303501",
+      "comment_version_key": "5709303501:2026-09-17T05:30:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123236#issuecomment-5709303501",
+      "comment_created_at": "2026-09-17T05:30:41Z",
+      "comment_updated_at": "2026-09-17T05:30:41Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123236,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T05:32:17.147Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/worker-exec-authority-boundary",
+        "head_sha": "3dc078b07cf812327de90c17562203e0e5eeff21",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
