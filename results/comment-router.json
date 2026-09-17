@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T03:21:31.711Z",
+  "updated_at": "2026-09-17T03:21:45.861Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137052:5705374334:2026-09-16T22:18:22Z:re_review",
-      "comment_id": "5705374334",
-      "comment_version_key": "5705374334:2026-09-16T22:18:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137052#issuecomment-5705374334",
-      "comment_created_at": "2026-09-16T22:18:22Z",
-      "comment_updated_at": "2026-09-16T22:18:22Z",
-      "comment_body_sha256": "1293832698d9dc53b9fd99fd62c31637791f013dfd47f63fdbfeb77e08228b94",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137052,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T22:20:45.452Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-134430",
-        "head_sha": "bfb5bc69a235bfeed280cc39e8ddb82558677553",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119160:5176973305:2026-09-15T18:29:33Z:autoclose",
       "comment_id": "5176973305",
@@ -33746,6 +33699,39 @@
         "kind": "pull_request",
         "branch": "codex/sqlite-mcp-prefix-filter-0916",
         "head_sha": "b5db4650154b492d3cf8305bc9853ae5ad05e02a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3776:5707958156:2026-09-17T03:20:51Z:clawsweeper_needs_human",
+      "comment_id": "5707958156",
+      "comment_version_key": "5707958156:2026-09-17T03:20:51Z",
+      "comment_url": "https://github.com/openclaw/clawhub/pull/3776#issuecomment-5707958156",
+      "comment_created_at": "2026-09-17T03:20:51Z",
+      "comment_updated_at": "2026-09-17T03:20:51Z",
+      "comment_body_sha256": "bc896c8f1179a49acbe3ed10fa1e632737d682f32712fb2daff603d782f1c496",
+      "repo": "openclaw/clawhub",
+      "issue_number": 3776,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Once numeric slots have been persisted, restoring the old runtime without complete slot cleanup can violate the 64-job cap; rollback must retain the new admission and release paths. (sha=d6373871e7c1470f507675a7b4d942cf8ce20555)",
+      "expected_head_sha": "d6373871e7c1470f507675a7b4d942cf8ce20555",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T03:21:45.861Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/skill-card-claim-capacity-20260917",
+        "head_sha": "d6373871e7c1470f507675a7b4d942cf8ce20555",
         "cluster_id": null,
         "job_path": null
       }
