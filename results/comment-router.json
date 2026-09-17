@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:26:52.225Z",
+  "updated_at": "2026-09-17T11:26:55.548Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150659:5709808142:2026-09-17T06:13:20Z:clawsweeper_auto_repair",
-      "comment_id": "5709808142",
-      "comment_version_key": "5709808142:2026-09-17T06:13:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150659#issuecomment-5709808142",
-      "comment_created_at": "2026-09-17T06:13:20Z",
-      "comment_updated_at": "2026-09-17T06:13:20Z",
-      "comment_body_sha256": "c9e785b9e20fd552284b1f3b1c421bcc0791449cbb8b10155a3ccec7256ed524",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150659,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=dcd47f3d25dbcab970c082f39cce6173b3bba2a3)",
-      "expected_head_sha": "dcd47f3d25dbcab970c082f39cce6173b3bba2a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T06:14:22.247Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-resident-session-catalog-20260917",
-        "head_sha": "b15dff034117dd4c1dbb9edb7311dd300ca36ea2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136581:5516063502:2026-09-17T06:13:37Z:clawsweeper_needs_human",
       "comment_id": "5516063502",
@@ -33664,6 +33631,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150844:5713569539:2026-09-17T11:25:57Z:clawsweeper_needs_human",
+      "comment_id": "5713569539",
+      "comment_version_key": "5713569539:2026-09-17T11:25:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150844#issuecomment-5713569539",
+      "comment_created_at": "2026-09-17T11:25:57Z",
+      "comment_updated_at": "2026-09-17T11:25:57Z",
+      "comment_body_sha256": "a3dfae13329b5912acb9cfeecddbc90f6d4140f48f74df03904b7fffa3d2935c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150844,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Keep the Signal allowance out of the frozen 9.4 inventory (P2)** - Placing this entry before the 9.4 snapshot makes release/2026.9.4 accept these findings. However, the verified v2026.9.4 tree at 3a9d69db306cd7f...; Review finding: [P2] Keep the Signal allowance out of the frozen 9.4 inventory — scripts/lib/plugin-npm-security-scan.mts:179-184 - [low] Unshipped fixture admitted to a frozen se... (sha=a0f93c69b845823f932c65b3719edefedd03bed0)",
+      "expected_head_sha": "a0f93c69b845823f932c65b3719edefedd03bed0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T11:26:55.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/signal-security-fixture-inventory-20260917",
+        "head_sha": "a0f93c69b845823f932c65b3719edefedd03bed0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
