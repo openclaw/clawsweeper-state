@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T23:35:58.345Z",
+  "updated_at": "2026-09-17T23:35:59.917Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150992:5717963441:2026-09-17T16:40:36Z:re_review",
-      "comment_id": "5717963441",
-      "comment_version_key": "5717963441:2026-09-17T16:40:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150992#issuecomment-5717963441",
-      "comment_created_at": "2026-09-17T16:40:36Z",
-      "comment_updated_at": "2026-09-17T16:40:36Z",
-      "comment_body_sha256": "fbee6da486d5da123bb73d99bdd324e701062e3dbfdfdf011887e928ad01ae75",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150992,
-      "author": "wangmiao0668000666",
-      "author_id": 290215524,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T16:41:32.998Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/onboard-keep-gateway-auth-mode",
-        "head_sha": "43bbc507eec975aea24361f6afe9ccc7b8cd4898",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:46:5687308925:2026-09-17T16:40:33Z:clawsweeper_needs_human",
       "comment_id": "5687308925",
@@ -33476,6 +33429,39 @@
         "kind": "pull_request",
         "branch": "codex/directory-mode-prechmod-check-20260917",
         "head_sha": "536924a695f8cef456ec3f21a5e1894f17e7a5de",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:455:5713147411:2026-09-17T23:34:53Z:clawsweeper_needs_human",
+      "comment_id": "5713147411",
+      "comment_version_key": "5713147411:2026-09-17T23:34:53Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/455#issuecomment-5713147411",
+      "comment_created_at": "2026-09-17T10:52:09Z",
+      "comment_updated_at": "2026-09-17T23:34:53Z",
+      "comment_body_sha256": "e0ea8443fbd6b943f4ca964ebfccaba67c995a87094d9dcbd166234c55c29deb",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 455,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed cleanup owner is covered by injected Vitest failures and reported checks, but the supplied body and discussion contain no after-fix... (sha=427eac95a3ae16cae6ce11739cd734edc030903f)",
+      "expected_head_sha": "427eac95a3ae16cae6ce11739cd734edc030903f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T23:35:59.917Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/temp-workspace-falsy-cleanup-20260917",
+        "head_sha": "427eac95a3ae16cae6ce11739cd734edc030903f",
         "cluster_id": null,
         "job_path": null
       }
