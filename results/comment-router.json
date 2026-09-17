@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T04:52:52.499Z",
+  "updated_at": "2026-09-17T04:53:24.474Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149330:5706440229:2026-09-17T00:14:04Z:re_review",
-      "comment_id": "5706440229",
-      "comment_version_key": "5706440229:2026-09-17T00:14:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149330#issuecomment-5706440229",
-      "comment_created_at": "2026-09-17T00:14:04Z",
-      "comment_updated_at": "2026-09-17T00:14:04Z",
-      "comment_body_sha256": "56ae5e7722251ef31544742ce3bd68a8fbaa84fc62e7af1c10fc92c879726303",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149330,
-      "author": "Patrick-Erichsen",
-      "author_id": 20157849,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T00:21:49.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/claw-882-contextual-help",
-        "head_sha": "54f5cb9d45cec695ee08cb2a261781208f63eaac",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149330:5686175002:2026-09-17T00:20:57Z:clawsweeper_needs_human",
       "comment_id": "5686175002",
@@ -33714,6 +33667,39 @@
         "kind": "pull_request",
         "branch": "openclaw/native-runtime-decision-capture-67c2",
         "head_sha": "ceafb62a231b1e27f59d0b5ed6a0419239633812",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150274:5703947648:2026-09-17T04:49:32Z:clawsweeper_needs_human",
+      "comment_id": "5703947648",
+      "comment_version_key": "5703947648:2026-09-17T04:49:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150274#issuecomment-5703947648",
+      "comment_created_at": "2026-09-16T20:19:57Z",
+      "comment_updated_at": "2026-09-17T04:49:32Z",
+      "comment_body_sha256": "6def510922d1e9543fe250501f1ca59232dbe195fc86cee787f4a2c97c871a50",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150274,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The remaining total heap growth has not been fully attributed or bounded; successful collection of plugin markers does not establish the declared overall memory target. (sha=1a66de752b84db80e3b6e6c3513a7338cceea206)",
+      "expected_head_sha": "1a66de752b84db80e3b6e6c3513a7338cceea206",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T04:53:24.474Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "pe/plugin-reload-registry-cache-ownership",
+        "head_sha": "1a66de752b84db80e3b6e6c3513a7338cceea206",
         "cluster_id": null,
         "job_path": null
       }
