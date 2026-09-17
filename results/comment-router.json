@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T18:35:07.551Z",
+  "updated_at": "2026-09-17T18:35:19.214Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150898:5714682301:2026-09-17T12:54:09Z:clawsweeper_auto_repair",
-      "comment_id": "5714682301",
-      "comment_version_key": "5714682301:2026-09-17T12:54:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150898#issuecomment-5714682301",
-      "comment_created_at": "2026-09-17T12:54:09Z",
-      "comment_updated_at": "2026-09-17T12:54:09Z",
-      "comment_body_sha256": "1685d82e1bac55f431719b112a49ba1924c31252165bdea5b699f5ed8e24ef9e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150898,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=eb2c16ea58b61b1f5d9f5301921ccc325d82051d)",
-      "expected_head_sha": "eb2c16ea58b61b1f5d9f5301921ccc325d82051d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T12:55:15.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/service-install-drift",
-        "head_sha": "eb2c16ea58b61b1f5d9f5301921ccc325d82051d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150773:5714712052:2026-09-17T12:56:28Z:re_review",
       "comment_id": "5714712052",
@@ -32907,6 +32874,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145874:5645238956:2026-09-17T18:34:17Z:clawsweeper_needs_human",
+      "comment_id": "5645238956",
+      "comment_version_key": "5645238956:2026-09-17T18:34:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145874#issuecomment-5645238956",
+      "comment_created_at": "2026-09-12T10:09:12Z",
+      "comment_updated_at": "2026-09-17T18:34:17Z",
+      "comment_body_sha256": "c9986e885ede80604826160f10cf9c8cad61956279f81cd0fba2ebde54c0177a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145874,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Complete discovery can make previously passing but incomplete historical requests exceed 256 jobs and stop before validation; operators must split those requests across runs. The PR b... (sha=4b78d51bb2fb3378757ecc81acfde6358eb01e04)",
+      "expected_head_sha": "4b78d51bb2fb3378757ecc81acfde6358eb01e04",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T18:35:19.214Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exhaustive-upgrade-release-discovery",
+        "head_sha": "4b78d51bb2fb3378757ecc81acfde6358eb01e04",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
