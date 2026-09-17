@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:09:05.816Z",
+  "updated_at": "2026-09-17T13:09:13.818Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147949:5659613971:2026-09-17T07:35:01Z:clawsweeper_needs_human",
-      "comment_id": "5659613971",
-      "comment_version_key": "5659613971:2026-09-17T07:35:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5659613971",
-      "comment_created_at": "2026-09-14T05:50:37Z",
-      "comment_updated_at": "2026-09-17T07:35:01Z",
-      "comment_body_sha256": "5ac64c194eeb9d99f4b30a1f3a311af3f5afde7c31a1b4cd58aeecf907323b97",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two open branches disagree about where queued input first discovered in a background session should appear; landing either establishes a different user-visible policy. (sha=70ec28c4f1e510166f969defcb0e7a3cba056735)",
-      "expected_head_sha": "70ec28c4f1e510166f969defcb0e7a3cba056735",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:36:27.974Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "70ec28c4f1e510166f969defcb0e7a3cba056735",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5660558527:2026-09-14T07:31:31Z:re_review",
       "comment_id": "5660558527",
@@ -34354,6 +34321,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148964:5714865841:2026-09-17T13:08:07Z:re_review",
+      "comment_id": "5714865841",
+      "comment_version_key": "5714865841:2026-09-17T13:08:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148964#issuecomment-5714865841",
+      "comment_created_at": "2026-09-17T13:08:07Z",
+      "comment_updated_at": "2026-09-17T13:08:07Z",
+      "comment_body_sha256": "8c53dcfccfb46f6351d027e33787045592eadec9f5d9a32ac7770a1f7f805bbf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148964,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:09:11.636Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-doctor-heartbeat-public-boundary",
+        "head_sha": "d22faa691b9b65747ec81710f554823c57c23f94",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
