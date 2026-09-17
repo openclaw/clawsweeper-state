@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T14:21:45.371Z",
+  "updated_at": "2026-09-17T14:22:37.697Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150655:5709766768:2026-09-17T08:48:15Z:clawsweeper_needs_human",
-      "comment_id": "5709766768",
-      "comment_version_key": "5709766768:2026-09-17T08:48:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150655#issuecomment-5709766768",
-      "comment_created_at": "2026-09-17T06:08:55Z",
-      "comment_updated_at": "2026-09-17T08:48:15Z",
-      "comment_body_sha256": "597de318cbae5edeaf568ffe703082909ff7f51f2e271cafb3f904a952e3a73c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150655,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=59bf297a4099b83b8caa2c50a4c07b63f8d25848)",
-      "expected_head_sha": "59bf297a4099b83b8caa2c50a4c07b63f8d25848",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T08:49:09.781Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/bun-runtime-final-compat",
-        "head_sha": "59bf297a4099b83b8caa2c50a4c07b63f8d25848",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1606:5711619321:2026-09-17T08:49:11Z:clawsweeper_needs_human",
       "comment_id": "5711619321",
@@ -34534,6 +34501,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150562:5715950671:2026-09-17T14:21:33Z:re_review",
+      "comment_id": "5715950671",
+      "comment_version_key": "5715950671:2026-09-17T14:21:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5715950671",
+      "comment_created_at": "2026-09-17T14:21:33Z",
+      "comment_updated_at": "2026-09-17T14:21:33Z",
+      "comment_body_sha256": "4d978d91d3be26fa5c398e757ae0884ff9fb456545ca330a9f551950047389b0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150562,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — fixed p2 findings: eslint promise executor warning and typescript spread error on setimmediate",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T14:22:35.643Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149935-yield-between-store-recovery",
+        "head_sha": "1c9c73687de5bf15a416e48e782eea0d1fe1c000",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
