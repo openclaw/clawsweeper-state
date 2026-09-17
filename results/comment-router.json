@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:28:29.399Z",
+  "updated_at": "2026-09-17T11:28:30.908Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:90864:5709830511:2026-09-17T06:15:52Z:re_review",
-      "comment_id": "5709830511",
-      "comment_version_key": "5709830511:2026-09-17T06:15:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/90864#issuecomment-5709830511",
-      "comment_created_at": "2026-09-17T06:15:52Z",
-      "comment_updated_at": "2026-09-17T06:15:52Z",
-      "comment_body_sha256": "1ff39cc2e38a9601e276570f084abea562e7000e7ea848741376a864d38020c7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 90864,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T06:16:46.910Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/progress-only-completion-results",
-        "head_sha": "9c535171e9846b90dbaff56ff6b37f66cdd270ae",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150667:5709831917:2026-09-17T06:16:00Z:clawsweeper_needs_human",
       "comment_id": "5709831917",
@@ -33689,6 +33642,39 @@
         "kind": "pull_request",
         "branch": "codex/sync-raw-callback-arbitration-20260916",
         "head_sha": "344444d88f6498aa313c4bd38bad091aede9995e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147283:5655383591:2026-09-17T11:27:23Z:clawsweeper_needs_human",
+      "comment_id": "5655383591",
+      "comment_version_key": "5655383591:2026-09-17T11:27:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147283#issuecomment-5655383591",
+      "comment_created_at": "2026-09-13T18:58:48Z",
+      "comment_updated_at": "2026-09-17T11:27:23Z",
+      "comment_body_sha256": "8925aa2dc8f527e1530f4d7951a0b90cef8588da9a028a6bc3371bf5f1de0a5c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147283,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured c01ec6d results exercise a real background process through OpenClaw routing owners with substitute...; Review finding: [P1] Preserve completions for explicitly targeted standalone cron jobs — src/cron/isolated-agent/run-prepare.ts:688-689 - [medium] Prove revocation across every co... (sha=715216c2fcc453dfcea8d41440cc46d92f78f82d)",
+      "expected_head_sha": "715216c2fcc453dfcea8d41440cc46d92f78f82d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T11:28:30.908Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cross-chat-async-route",
+        "head_sha": "715216c2fcc453dfcea8d41440cc46d92f78f82d",
         "cluster_id": null,
         "job_path": null
       }
