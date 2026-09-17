@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T10:36:36.772Z",
+  "updated_at": "2026-09-17T10:38:10.172Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150308:5704702400:2026-09-17T05:27:55Z:clawsweeper_needs_human",
-      "comment_id": "5704702400",
-      "comment_version_key": "5704702400:2026-09-17T05:27:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150308#issuecomment-5704702400",
-      "comment_created_at": "2026-09-16T21:22:17Z",
-      "comment_updated_at": "2026-09-17T05:27:55Z",
-      "comment_body_sha256": "8500c3a41281499bafcf75d4031a32886c4fa28dfc9c8bc0e45a8915058eba56",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150308,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An older writer can discard saved requester authorization, stopping subsequent native scheduled edits until reauthorization; an older Discord adapter cannot serve the new path. (sha=bf1b37f1ed0ef2bbe56c3144e6437c1a646b1a56)",
-      "expected_head_sha": "bf1b37f1ed0ef2bbe56c3144e6437c1a646b1a56",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T05:29:10.894Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scheduled-channel-requester",
-        "head_sha": "bf1b37f1ed0ef2bbe56c3144e6437c1a646b1a56",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150513:5709273906:2026-09-17T05:28:09Z:re_review",
       "comment_id": "5709273906",
@@ -33548,6 +33515,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150757:5712960088:2026-09-17T10:37:08Z:re_review",
+      "comment_id": "5712960088",
+      "comment_version_key": "5712960088:2026-09-17T10:37:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150757#issuecomment-5712960088",
+      "comment_created_at": "2026-09-17T10:37:08Z",
+      "comment_updated_at": "2026-09-17T10:37:08Z",
+      "comment_body_sha256": "0c3fa2c48f7969df0b8d6715f2a250ede18b4f9457f3eec753b8f05224c51aea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150757,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T10:38:07.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/installer-historical-warning-20260917",
+        "head_sha": "6c745834ed25e9545b0ab7d7c7068bb6a558ee9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
