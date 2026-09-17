@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:46:16.487Z",
+  "updated_at": "2026-09-17T16:46:49.250Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150799:5713668712:2026-09-17T11:34:46Z:re_review",
-      "comment_id": "5713668712",
-      "comment_version_key": "5713668712:2026-09-17T11:34:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150799#issuecomment-5713668712",
-      "comment_created_at": "2026-09-17T11:34:46Z",
-      "comment_updated_at": "2026-09-17T11:34:46Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150799,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T11:38:12.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f03-detached-update-exit",
-        "head_sha": "78e2cb3f86f4f84eef7091352816fe2f88155e44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118830:5170577085:2026-09-17T11:28:45Z:clawsweeper_needs_human",
       "comment_id": "5170577085",
@@ -33468,6 +33421,39 @@
         "kind": "pull_request",
         "branch": "fix/update-canary-config-plugin-doctor",
         "head_sha": "1f0763ae6525777ff8415e361dd4de1eb49ba169",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151000:5718028501:2026-09-17T16:45:46Z:clawsweeper_needs_human",
+      "comment_id": "5718028501",
+      "comment_version_key": "5718028501:2026-09-17T16:45:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151000#issuecomment-5718028501",
+      "comment_created_at": "2026-09-17T16:45:46Z",
+      "comment_updated_at": "2026-09-17T16:45:46Z",
+      "comment_body_sha256": "5f18767ecef1c220abd265c606071ad7b04c007b41caf21cf4a62f6aae2cc80a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151000,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9d5fb5d139e87da861953fef841e5b0eff20b4e7)",
+      "expected_head_sha": "9d5fb5d139e87da861953fef841e5b0eff20b4e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T16:46:49.250Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release95-compaction-plugin-isolation",
+        "head_sha": "9d5fb5d139e87da861953fef841e5b0eff20b4e7",
         "cluster_id": null,
         "job_path": null
       }
