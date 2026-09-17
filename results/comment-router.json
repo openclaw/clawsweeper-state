@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:10:36.572Z",
+  "updated_at": "2026-09-17T08:11:16.404Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150479:5707217626:2026-09-17T03:22:20Z:clawsweeper_needs_human",
-      "comment_id": "5707217626",
-      "comment_version_key": "5707217626:2026-09-17T03:22:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150479#issuecomment-5707217626",
-      "comment_created_at": "2026-09-17T01:51:35Z",
-      "comment_updated_at": "2026-09-17T03:22:20Z",
-      "comment_body_sha256": "c171b7b82a2f9422f0b47bd2cd117e529954b07f65195d15b53ee22699f60794",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150479,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the captured evidence reports tests and static checks, but does not show allowed and forbidden callers through...; Review finding: [P1] [P1] Authorize the actual worktree under the allocation lease — src/gateway/session-worktree-preparation.ts:191-199 - [P2] [P2] Forget deleted sessions even w... (sha=a1f54a5620dd8c6d11b9521ae983f84b294847bb)",
-      "expected_head_sha": "a1f54a5620dd8c6d11b9521ae983f84b294847bb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:26:26.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shared-session-worktrees",
-        "head_sha": "a1f54a5620dd8c6d11b9521ae983f84b294847bb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150480:5707227975:2026-09-17T03:22:52Z:clawsweeper_needs_human",
       "comment_id": "5707227975",
@@ -33399,6 +33366,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150731:5711143183:2026-09-17T08:10:19Z:re_review",
+      "comment_id": "5711143183",
+      "comment_version_key": "5711143183:2026-09-17T08:10:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150731#issuecomment-5711143183",
+      "comment_created_at": "2026-09-17T08:10:19Z",
+      "comment_updated_at": "2026-09-17T08:10:19Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150731,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:11:14.555Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-read-policy",
+        "head_sha": "529186aa69bc623e83016cc42f27adc09cbc8592",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
