@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:29:02.309Z",
+  "updated_at": "2026-09-17T13:29:17.066Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150633:5709540534:2026-09-17T07:49:35Z:clawsweeper_needs_human",
-      "comment_id": "5709540534",
-      "comment_version_key": "5709540534:2026-09-17T07:49:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150633#issuecomment-5709540534",
-      "comment_created_at": "2026-09-17T05:48:37Z",
-      "comment_updated_at": "2026-09-17T07:49:35Z",
-      "comment_body_sha256": "89e01ef19b76c82b88e84e5c90e264bdd195f6fe23f34aa87e65818ee020de5c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150633,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=fefb85ef70f1a0c9c140a203bc17774945fe02bd)",
-      "expected_head_sha": "fefb85ef70f1a0c9c140a203bc17774945fe02bd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:54:29.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/self-model-flow-20260917",
-        "head_sha": "fefb85ef70f1a0c9c140a203bc17774945fe02bd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150642:5709650408:2026-09-17T07:46:56Z:clawsweeper_needs_human",
       "comment_id": "5709650408",
@@ -34592,6 +34559,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149269:5715129517:2026-09-17T13:27:13Z:re_review",
+      "comment_id": "5715129517",
+      "comment_version_key": "5715129517:2026-09-17T13:27:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149269#issuecomment-5715129517",
+      "comment_created_at": "2026-09-17T13:27:13Z",
+      "comment_updated_at": "2026-09-17T13:27:13Z",
+      "comment_body_sha256": "8516f2dbb5d23d774200146d690f78cce0f1d1f600f9e0f8d424b92f760651a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149269,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — new head adds an os-process-restart proof and a committed subprocess regression test that fails on the pre-fix source",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:29:14.550Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/task-retention-recovery",
+        "head_sha": "81c62d837f11d2ee6f1407bc4feeffa8f2368b6e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
