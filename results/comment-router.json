@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:25:20.518Z",
+  "updated_at": "2026-09-17T13:25:59.621Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150071:5698216509:2026-09-17T07:26:09Z:clawsweeper_needs_human",
-      "comment_id": "5698216509",
-      "comment_version_key": "5698216509:2026-09-17T07:26:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150071#issuecomment-5698216509",
-      "comment_created_at": "2026-09-16T13:25:59Z",
-      "comment_updated_at": "2026-09-17T07:26:09Z",
-      "comment_body_sha256": "5ae531873ac8479c3c60dab0d37356d259623ff9f759b73efc9e35800d6ac49d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150071,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=a01aedbab6746e10bbb71e7c86c23d2d111ce552)",
-      "expected_head_sha": "a01aedbab6746e10bbb71e7c86c23d2d111ce552",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T07:54:29.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/self-cron-20260916",
-        "head_sha": "a01aedbab6746e10bbb71e7c86c23d2d111ce552",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150244:5703131922:2026-09-17T07:49:39Z:clawsweeper_auto_repair",
       "comment_id": "5703131922",
@@ -34536,6 +34503,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150919:5715077297:2026-09-17T13:23:25Z:re_review",
+      "comment_id": "5715077297",
+      "comment_version_key": "5715077297:2026-09-17T13:23:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150919#issuecomment-5715077297",
+      "comment_created_at": "2026-09-17T13:23:25Z",
+      "comment_updated_at": "2026-09-17T13:23:25Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150919,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:25:57.893Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/146331-replay-normalization-boundary",
+        "head_sha": "492e0efdc06b7ccb118ae19776c5e315ab8e4e54",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
