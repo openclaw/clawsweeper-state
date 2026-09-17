@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-150974"
-mode: "autonomous"
-run_id: "35243270419"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35243270419"
+mode: "plan"
+run_id: "35247635537"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35247635537"
 head_sha: "971582747fe2d14b96aea8f4ffdf2f559f7e55c4"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-17T16:25:36.662Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-17T16:40:53.203Z"
 canonical: "https://github.com/openclaw/openclaw/issues/150974"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/150974"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35243270419](https://github.com/openclaw/clawsweeper/actions/runs/35243270419)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35247635537](https://github.com/openclaw/clawsweeper/actions/runs/35247635537)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/150974
 
 ## Summary
 
-Confirmed the reported encoding path on preflight main. Prepared a narrow fix plan; implementation and required native Windows reproduction are blocked by this read-only Linux host and missing dependencies. No files or GitHub state changed.
+Plan a narrow Windows shim encoding fix. Source inspection supports the reported defect at preflight main bbb65802dc880fc84c121b709e7d156a2cc831d1. Native Windows reproduction and validation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed the reported encoding path on preflight main. Prepared a narrow fix pl
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #150974 | fix_needed | planned | canonical | The source-supported defect remains on the supplied current main. Keep the issue open while the executor establishes the required regression and implements one bounded fix. |
-| cluster:issue-openclaw-openclaw-150974 | build_fix_artifact | planned |  | Artifact preparation is complete. Applying and validating it requires a writable executor with dependencies and native Windows access; publication remains gated on reproduction and preservation of startup behavior. |
+| https://github.com/openclaw/openclaw/issues/150974 | fix_needed | planned | canonical | A bounded existing-behavior repair has a clear owner. Keep the issue open while the executor establishes the required failing native regression and validates the repair. |
 
 ## Needs Human
 
