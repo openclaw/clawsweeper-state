@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:55:29.058Z",
+  "updated_at": "2026-09-17T13:55:39.968Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150742:5711338957:2026-09-17T08:26:57Z:re_review",
-      "comment_id": "5711338957",
-      "comment_version_key": "5711338957:2026-09-17T08:26:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150742#issuecomment-5711338957",
-      "comment_created_at": "2026-09-17T08:26:57Z",
-      "comment_updated_at": "2026-09-17T08:26:57Z",
-      "comment_body_sha256": "9a5882a6ee93e9899fd6d0cdfa264077f7a764d9f49922e4fa6e497bd49c0bb6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150742,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:32:25.519Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release95-qa-fixtures-20260917T0743",
-        "head_sha": "4d70559db7ccddba06c0fb61e4fc9e8e48d8a05b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150691:5711378800:2026-09-17T08:30:31Z:re_review",
       "comment_id": "5711378800",
@@ -34535,6 +34488,39 @@
         "kind": "pull_request",
         "branch": "fix/f03-detached-update-exit",
         "head_sha": "31704d70a5292ea9c0b359fd4f5d66e8b4c064b7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:1556:5437305236:2026-09-17T13:54:41Z:clawsweeper_needs_human",
+      "comment_id": "5437305236",
+      "comment_version_key": "5437305236:2026-09-17T13:54:41Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/1556#issuecomment-5437305236",
+      "comment_created_at": "2026-08-27T09:50:41Z",
+      "comment_updated_at": "2026-09-17T13:54:41Z",
+      "comment_body_sha256": "48fb5911268f56bbef9c1980a88caa47807db39c3cd61660e1c9a0bce6d43099",
+      "repo": "openclaw/crabbox",
+      "issue_number": 1556,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured current-head CLI and real SSH observations substantiate benign adoption, interrupted jour... (sha=901654f884d9de3b80a5af5ed4db069d01a6d07e)",
+      "expected_head_sha": "901654f884d9de3b80a5af5ed4db069d01a6d07e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:55:39.968Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/remote-runner-protocol",
+        "head_sha": "901654f884d9de3b80a5af5ed4db069d01a6d07e",
         "cluster_id": null,
         "job_path": null
       }
