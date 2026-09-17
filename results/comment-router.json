@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T07:22:08.097Z",
+  "updated_at": "2026-09-17T07:22:08.445Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:54:5707654226:2026-09-17T02:43:15Z:re_review",
-      "comment_id": "5707654226",
-      "comment_version_key": "5707654226:2026-09-17T02:43:15Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/54#issuecomment-5707654226",
-      "comment_created_at": "2026-09-17T02:43:15Z",
-      "comment_updated_at": "2026-09-17T02:43:15Z",
-      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
-      "repo": "openclaw/rfcs",
-      "issue_number": 54,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T02:44:07.083Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0028-openclaw-rust-runtime",
-        "head_sha": "49660b02d7c10fc6c485c3c247ab365f23448537",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150475:5707178558:2026-09-17T02:43:23Z:clawsweeper_needs_human",
       "comment_id": "5707178558",
@@ -33488,6 +33441,39 @@
         "kind": "pull_request",
         "branch": "upd/heartbeat-disabled-after-upgrade",
         "head_sha": "76a85a591b15622e15bdae75a63c0b6b400e3084",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150705:5710596847:2026-09-17T07:21:12Z:clawsweeper_needs_human",
+      "comment_id": "5710596847",
+      "comment_version_key": "5710596847:2026-09-17T07:21:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150705#issuecomment-5710596847",
+      "comment_created_at": "2026-09-17T07:21:12Z",
+      "comment_updated_at": "2026-09-17T07:21:12Z",
+      "comment_body_sha256": "9e0146e23253d41fec34f365cb4851abfe74633f05d451803247f2626c2deaad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150705,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the new capture and receiving-run owners need allowed, sender-denied, and post-admission source-revoca...; Review finding: [P1] [P1] Capture the session-send cap after the MCP grant filter — src/gateway/tool-resolution.ts:661 - [P1] [P1] Enforce the transferred names as an exact ceilin... (sha=5aa9c712bd79d6b72faa432f66b0b3ca555fb0c7)",
+      "expected_head_sha": "5aa9c712bd79d6b72faa432f66b0b3ca555fb0c7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T07:22:08.445Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sec/cap-delegated-session-tools",
+        "head_sha": "5aa9c712bd79d6b72faa432f66b0b3ca555fb0c7",
         "cluster_id": null,
         "job_path": null
       }
