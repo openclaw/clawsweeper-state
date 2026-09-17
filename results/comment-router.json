@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:44:23.917Z",
+  "updated_at": "2026-09-17T13:44:25.517Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150704:5711086194:2026-09-17T08:05:27Z:re_review",
-      "comment_id": "5711086194",
-      "comment_version_key": "5711086194:2026-09-17T08:05:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150704#issuecomment-5711086194",
-      "comment_created_at": "2026-09-17T08:05:27Z",
-      "comment_updated_at": "2026-09-17T08:05:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150704,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T08:06:34.800Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/side-chat-run-authority",
-        "head_sha": "798aa3ceedcdb7865b186ddb27929d3c7ab5d1c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150714:5711087192:2026-09-17T08:05:33Z:re_review",
       "comment_id": "5711087192",
@@ -34611,6 +34564,39 @@
         "kind": "pull_request",
         "branch": "codex/spawn-selection-main-integration-20260915",
         "head_sha": "6829bf40210fa6ef1c89796f2054dffacdc37adb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150311:5704811223:2026-09-17T13:43:09Z:clawsweeper_needs_human",
+      "comment_id": "5704811223",
+      "comment_version_key": "5704811223:2026-09-17T13:43:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150311#issuecomment-5704811223",
+      "comment_created_at": "2026-09-16T21:30:41Z",
+      "comment_updated_at": "2026-09-17T13:43:09Z",
+      "comment_body_sha256": "be2d3cd1f5daf33a759bdcc4d93ee392c41def84951d8b8e711b7287400ef5bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150311,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Executable edits without fresh authorization intentionally stop reads for existing origin-bearing account jobs; an older writer can also discard the saved origin, requiring explicit l... (sha=361af20554f384709c35dc35540ad66d961525cd)",
+      "expected_head_sha": "361af20554f384709c35dc35540ad66d961525cd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:44:25.517Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-local-source",
+        "head_sha": "361af20554f384709c35dc35540ad66d961525cd",
         "cluster_id": null,
         "job_path": null
       }
