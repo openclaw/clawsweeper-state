@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T09:26:11.635Z",
+  "updated_at": "2026-09-17T09:26:26.151Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150581:5708526340:2026-09-17T04:27:26Z:clawsweeper_needs_human",
-      "comment_id": "5708526340",
-      "comment_version_key": "5708526340:2026-09-17T04:27:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150581#issuecomment-5708526340",
-      "comment_created_at": "2026-09-17T04:27:26Z",
-      "comment_updated_at": "2026-09-17T04:27:26Z",
-      "comment_body_sha256": "abb553ee692fbce844b3d5628a1e3a2826c34b927d2bc7ae3a5234591b1f2c46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150581,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 20-file ceiling bounds workload size, but completed hosted results have not yet established the slowest resulting job duration. (sha=e8c93067a17f62755c7be6e69250a03e49c029ea)",
-      "expected_head_sha": "e8c93067a17f62755c7be6e69250a03e49c029ea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T04:29:06.719Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-database-worker-job-bounds",
-        "head_sha": "e8c93067a17f62755c7be6e69250a03e49c029ea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:90864:4637682457:2026-09-17T04:28:36Z:clawsweeper_auto_repair",
       "comment_id": "4637682457",
@@ -33415,6 +33382,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/fs-safe:451:5712063124:2026-09-17T09:25:26Z:re_review",
+      "comment_id": "5712063124",
+      "comment_version_key": "5712063124:2026-09-17T09:25:26Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/451#issuecomment-5712063124",
+      "comment_created_at": "2026-09-17T09:25:26Z",
+      "comment_updated_at": "2026-09-17T09:25:26Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 451,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T09:26:23.436Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/fs-safe-0.14.0",
+        "head_sha": "b06c32f452ad747fad370a863175f75a5097b784",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
