@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:08:25.817Z",
+  "updated_at": "2026-09-17T02:08:39.070Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141004:5567489931:2026-09-16T20:08:44Z:clawsweeper_auto_repair",
-      "comment_id": "5567489931",
-      "comment_version_key": "5567489931:2026-09-16T20:08:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5567489931",
-      "comment_created_at": "2026-09-07T08:12:30Z",
-      "comment_updated_at": "2026-09-16T20:08:44Z",
-      "comment_body_sha256": "85ec7f1bf32f072c93de98f9177af89e28242c0e1f337949a7efb8788ed0e6fb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=9a19eb6e0aefa5e66187578f4f47c4928ba4817c)",
-      "expected_head_sha": "9a19eb6e0aefa5e66187578f4f47c4928ba4817c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T20:10:06.081Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "9a19eb6e0aefa5e66187578f4f47c4928ba4817c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5682785218:2026-09-15T15:14:20Z:re_review",
       "comment_id": "5682785218",
@@ -33509,6 +33476,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150497:5707351006:2026-09-17T02:07:41Z:clawsweeper_needs_human",
+      "comment_id": "5707351006",
+      "comment_version_key": "5707351006:2026-09-17T02:07:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150497#issuecomment-5707351006",
+      "comment_created_at": "2026-09-17T02:07:41Z",
+      "comment_updated_at": "2026-09-17T02:07:41Z",
+      "comment_body_sha256": "bd6ff68b05576dc328de1784025c8afbd3f611aaed58020e692d3c2bc77f4d2a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150497,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scripts that intentionally pass an empty channel to request inference will now exit unsuccessfully; operators must omit --channel instead. (sha=f43b84dc3ef03ec2fe0755ae17b985c53e356b3b)",
+      "expected_head_sha": "f43b84dc3ef03ec2fe0755ae17b985c53e356b3b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:08:39.070Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channel-auth-819921",
+        "head_sha": "f43b84dc3ef03ec2fe0755ae17b985c53e356b3b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
