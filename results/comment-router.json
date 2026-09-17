@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T19:21:05.963Z",
+  "updated_at": "2026-09-17T19:21:19.581Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150844:5715120856:2026-09-17T13:26:35Z:re_review",
-      "comment_id": "5715120856",
-      "comment_version_key": "5715120856:2026-09-17T13:26:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150844#issuecomment-5715120856",
-      "comment_created_at": "2026-09-17T13:26:35Z",
-      "comment_updated_at": "2026-09-17T13:26:35Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150844,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:28:49.336Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/signal-security-fixture-inventory-20260917",
-        "head_sha": "4b1db8bb91a9d610298b55fb7a025d91b1ace583",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150791:5712532850:2026-09-17T13:21:54Z:clawsweeper_needs_human",
       "comment_id": "5712532850",
@@ -32753,6 +32706,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151079:5719927972:2026-09-17T19:20:13Z:clawsweeper_needs_human",
+      "comment_id": "5719927972",
+      "comment_version_key": "5719927972:2026-09-17T19:20:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151079#issuecomment-5719927972",
+      "comment_created_at": "2026-09-17T19:20:13Z",
+      "comment_updated_at": "2026-09-17T19:20:13Z",
+      "comment_body_sha256": "abbea6ba57de35c5880a5eae39fe8688145b99e4e5981e9cc74df2fcd85e8b60",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151079,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Physical CameraX capture, audible replies, and background/lock-screen operation remain unverified; the supplied fixtures deliberately replace or defer those native paths. (sha=2185e0b5a8a1461a837317b04c47f47d5bbad69b)",
+      "expected_head_sha": "2185e0b5a8a1461a837317b04c47f47d5bbad69b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T19:21:19.581Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/android-live-agent-v1-20260916",
+        "head_sha": "2185e0b5a8a1461a837317b04c47f47d5bbad69b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
