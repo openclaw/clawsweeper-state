@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T19:36:12.399Z",
+  "updated_at": "2026-09-17T19:36:14.162Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150799:5715451250:2026-09-17T13:48:33Z:re_review",
-      "comment_id": "5715451250",
-      "comment_version_key": "5715451250:2026-09-17T13:48:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150799#issuecomment-5715451250",
-      "comment_created_at": "2026-09-17T13:48:33Z",
-      "comment_updated_at": "2026-09-17T13:48:33Z",
-      "comment_body_sha256": "03db41f04870b82ae510b9d91082db631f2a3636fbe0a7291c3eb7b9706e2f50",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150799,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:49:36.883Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/f03-detached-update-exit",
-        "head_sha": "31704d70a5292ea9c0b359fd4f5d66e8b4c064b7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148676:5673326531:2026-09-17T13:53:38Z:clawsweeper_auto_repair",
       "comment_id": "5673326531",
@@ -32554,6 +32507,39 @@
         "kind": "pull_request",
         "branch": "feat/session-isolated-lifecycle",
         "head_sha": "130242b2b7c7fc1f212057e75e265243a59bc761",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151011:5718298395:2026-09-17T19:34:50Z:clawsweeper_needs_human",
+      "comment_id": "5718298395",
+      "comment_version_key": "5718298395:2026-09-17T19:34:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151011#issuecomment-5718298395",
+      "comment_created_at": "2026-09-17T17:06:47Z",
+      "comment_updated_at": "2026-09-17T19:34:50Z",
+      "comment_body_sha256": "b8602be85838cd2f8af272573b7747e32dd5364563e038b427d89cee73b95bc2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151011,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6a73c707526dd86d43e4a43e95e0b11fa987aa7c)",
+      "expected_head_sha": "6a73c707526dd86d43e4a43e95e0b11fa987aa7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T19:36:14.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release95-reuse-gateway-plugin-metadata",
+        "head_sha": "6a73c707526dd86d43e4a43e95e0b11fa987aa7c",
         "cluster_id": null,
         "job_path": null
       }
