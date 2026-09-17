@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T23:04:21.133Z",
+  "updated_at": "2026-09-17T23:06:01.110Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/rfcs:62:5717446107:2026-09-17T16:03:11Z:re_review",
-      "comment_id": "5717446107",
-      "comment_version_key": "5717446107:2026-09-17T16:03:11Z",
-      "comment_url": "https://github.com/openclaw/rfcs/pull/62#issuecomment-5717446107",
-      "comment_created_at": "2026-09-17T16:03:11Z",
-      "comment_updated_at": "2026-09-17T16:03:11Z",
-      "comment_body_sha256": "6744da74f8fdf608361f3a34de1cd8e3b3a9b09e6f2d3939bd9749f050dbb080",
-      "repo": "openclaw/rfcs",
-      "issue_number": 62,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T16:08:06.995Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/rfc-0029-handshake-capabilities",
-        "head_sha": "33b3058804e89e89aaa748cbcb2129afb2934fb5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/rfcs:62:5374539403:2026-09-17T16:07:01Z:clawsweeper_needs_human",
       "comment_id": "5374539403",
@@ -33437,6 +33390,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150959:5716669784:2026-09-17T23:05:01Z:clawsweeper_needs_human",
+      "comment_id": "5716669784",
+      "comment_version_key": "5716669784:2026-09-17T23:05:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150959#issuecomment-5716669784",
+      "comment_created_at": "2026-09-17T15:09:16Z",
+      "comment_updated_at": "2026-09-17T23:05:01Z",
+      "comment_body_sha256": "653fc2bac49d9b73bf2026b96d0dc652beaeb6bc0f8ff9b11d6483229bac21a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150959,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Unconfirmed cleanup intentionally suppresses compensation and repair; an update that already stopped the Gateway can remain pending and prolong downtime. (sha=22230cac90ffc709fd9fd2fa96ab1e5062374868)",
+      "expected_head_sha": "22230cac90ffc709fd9fd2fa96ab1e5062374868",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T23:06:01.110Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/process-scope-settlement-mainc801-20260917",
+        "head_sha": "22230cac90ffc709fd9fd2fa96ab1e5062374868",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
