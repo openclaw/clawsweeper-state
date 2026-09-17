@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:52:49.742Z",
+  "updated_at": "2026-09-17T02:52:55.933Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110657:5704901052:2026-09-16T21:41:38Z:re_review",
-      "comment_id": "5704901052",
-      "comment_version_key": "5704901052:2026-09-16T21:41:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110657#issuecomment-5704901052",
-      "comment_created_at": "2026-09-16T21:36:42Z",
-      "comment_updated_at": "2026-09-16T21:41:38Z",
-      "comment_body_sha256": "ad6c82c68f358caa624233de9fc2e9691fef8cd675918ebdd211e8fc750261e4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110657,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T21:42:54.558Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue/bound-installer-download-file",
-        "head_sha": "d5ac97491ad784394f685a86a8c0b9a8dba5a70e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150321:5704969098:2026-09-16T21:40:59Z:re_review",
       "comment_id": "5704969098",
@@ -33723,6 +33676,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150502:5707397441:2026-09-17T02:52:06Z:clawsweeper_needs_human",
+      "comment_id": "5707397441",
+      "comment_version_key": "5707397441:2026-09-17T02:52:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150502#issuecomment-5707397441",
+      "comment_created_at": "2026-09-17T02:12:55Z",
+      "comment_updated_at": "2026-09-17T02:52:06Z",
+      "comment_body_sha256": "63b0de3f1a24f04af9c04a176f9d3dedcec6dca75f1e969a4bb1f48a2977960f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150502,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when its coordinated integration work is ready. (sha=99bf2e4f840700e4b862c84a1b36d7f9c6414e9e)",
+      "expected_head_sha": "99bf2e4f840700e4b862c84a1b36d7f9c6414e9e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:52:55.933Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-preflight-test-runtime",
+        "head_sha": "99bf2e4f840700e4b862c84a1b36d7f9c6414e9e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
