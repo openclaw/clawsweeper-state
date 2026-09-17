@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:59:24.532Z",
+  "updated_at": "2026-09-17T17:00:17.505Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150786:5712488149:2026-09-17T11:42:35Z:clawsweeper_auto_repair",
-      "comment_id": "5712488149",
-      "comment_version_key": "5712488149:2026-09-17T11:42:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150786#issuecomment-5712488149",
-      "comment_created_at": "2026-09-17T10:00:36Z",
-      "comment_updated_at": "2026-09-17T11:42:35Z",
-      "comment_body_sha256": "056f70a5049c5640b6fb27ac6f337c28cba7ac1cd6e535b4c12b82887332aa31",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150786,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c736022144b196bf5f5d6fe2ff6151d8a781fbc6)",
-      "expected_head_sha": "c736022144b196bf5f5d6fe2ff6151d8a781fbc6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T11:44:19.840Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/ci-shard-main-startup-corpus",
-        "head_sha": "c736022144b196bf5f5d6fe2ff6151d8a781fbc6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150807:5713693237:2026-09-17T11:36:56Z:re_review",
       "comment_id": "5713693237",
@@ -33429,6 +33396,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:52:5686688132:2026-09-17T16:58:58Z:clawsweeper_needs_human",
+      "comment_id": "5686688132",
+      "comment_version_key": "5686688132:2026-09-17T16:58:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/52#issuecomment-5686688132",
+      "comment_created_at": "2026-09-15T19:18:15Z",
+      "comment_updated_at": "2026-09-17T16:58:58Z",
+      "comment_body_sha256": "3d2bc12b40a783486e6cf2e4a1cab6467bcbb878124bfbf0cae0217b2756bd6f",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: captured integrated x64 observations establish ordinary setup and gateway output, but do not exercise...; Review finding: [P2] Preserve automatic direct startup without package identity — src/OpenClaw.Launcher/Program.cs:220-227 - [P3] Consume the full ANSI sequence before resuming lo... (sha=abc70202f13f827853b8fbf75d29dedffbfd8ede)",
+      "expected_head_sha": "abc70202f13f827853b8fbf75d29dedffbfd8ede",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T17:00:17.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-fresh-reset",
+        "head_sha": "abc70202f13f827853b8fbf75d29dedffbfd8ede",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
