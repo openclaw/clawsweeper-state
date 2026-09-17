@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T16:39:03.634Z",
+  "updated_at": "2026-09-17T16:39:43.225Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149516:5689831333:2026-09-17T11:25:18Z:clawsweeper_needs_human",
-      "comment_id": "5689831333",
-      "comment_version_key": "5689831333:2026-09-17T11:25:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149516#issuecomment-5689831333",
-      "comment_created_at": "2026-09-15T23:59:25Z",
-      "comment_updated_at": "2026-09-17T11:25:18Z",
-      "comment_body_sha256": "829d0c2ec88d615cde5386a258418bfc3d81b8331e1624c5ac434bcb07acdc41",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149516,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=d533860bdd06870c48e742c92b5f6c80349e4a7b)",
-      "expected_head_sha": "d533860bdd06870c48e742c92b5f6c80349e4a7b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T11:29:54.449Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-149480-sqlite-op-context",
-        "head_sha": "d533860bdd06870c48e742c92b5f6c80349e4a7b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:456:5713267625:2026-09-17T11:22:57Z:clawsweeper_needs_human",
       "comment_id": "5713267625",
@@ -33527,6 +33494,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150978:5717942033:2026-09-17T16:38:50Z:re_review",
+      "comment_id": "5717942033",
+      "comment_version_key": "5717942033:2026-09-17T16:38:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150978#issuecomment-5717942033",
+      "comment_created_at": "2026-09-17T16:38:50Z",
+      "comment_updated_at": "2026-09-17T16:38:50Z",
+      "comment_body_sha256": "0f738a3fa24fb4f107d56e233e51b622097fdf15e5448530f9ac4dffd7d78539",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150978,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T16:39:41.373Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-canary-config-plugin-doctor",
+        "head_sha": "1f0763ae6525777ff8415e361dd4de1eb49ba169",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
