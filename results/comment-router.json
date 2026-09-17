@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:11:49.624Z",
+  "updated_at": "2026-09-17T02:12:08.195Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148683:5703988282:2026-09-16T20:23:18Z:re_review",
-      "comment_id": "5703988282",
-      "comment_version_key": "5703988282:2026-09-16T20:23:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148683#issuecomment-5703988282",
-      "comment_created_at": "2026-09-16T20:23:18Z",
-      "comment_updated_at": "2026-09-16T20:23:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148683,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T20:24:17.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-projection-duplicate-final",
-        "head_sha": "d28dcfbdd03d75424b43ce94aaf4b9d8fdd701cc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3688:5697690838:2026-09-16T20:23:29Z:clawsweeper_auto_repair",
       "comment_id": "5697690838",
@@ -33380,6 +33333,39 @@
         "kind": "pull_request",
         "branch": "fix/scheduled-local-source",
         "head_sha": "dda36c938c82047c14033293f5e250ca2ac9d33e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148464:5669083301:2026-09-17T02:10:56Z:clawsweeper_needs_human",
+      "comment_id": "5669083301",
+      "comment_version_key": "5669083301:2026-09-17T02:10:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148464#issuecomment-5669083301",
+      "comment_created_at": "2026-09-14T18:56:14Z",
+      "comment_updated_at": "2026-09-17T02:10:56Z",
+      "comment_body_sha256": "d3936d821ad29858264709d4fd930875b1bf1c6526371c366afb468cbc1fd6fc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148464,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing users whose plugins.allow omits github lose hover previews until they explicitly opt in; the published-updater-to-candidate recovery path has not been demonstrated. (sha=4c302c455c8b39c897cf5a6b001754451e695606)",
+      "expected_head_sha": "4c302c455c8b39c897cf5a6b001754451e695606",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:12:08.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/i-want-to-show-github-issues-commits-prs-in-sidebar-kinda-like",
+        "head_sha": "4c302c455c8b39c897cf5a6b001754451e695606",
         "cluster_id": null,
         "job_path": null
       }
