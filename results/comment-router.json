@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T10:31:36.803Z",
+  "updated_at": "2026-09-17T10:31:39.652Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150616:5709193622:2026-09-17T05:21:25Z:clawsweeper_needs_human",
-      "comment_id": "5709193622",
-      "comment_version_key": "5709193622:2026-09-17T05:21:25Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150616#issuecomment-5709193622",
-      "comment_created_at": "2026-09-17T05:21:25Z",
-      "comment_updated_at": "2026-09-17T05:21:25Z",
-      "comment_body_sha256": "0e9dbe24199a52ec610514d8e78f0c85f8b0759d70552de3e75bebdc76c9cf33",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150616,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The lifecycle and archive capture tests exercise production entrypoints with mocked platform, paths, and database boundaries, but provide no ob... (sha=7031810044dc7c27377e14489ab1a48bd5993eff)",
-      "expected_head_sha": "7031810044dc7c27377e14489ab1a48bd5993eff",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T05:22:22.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-windows-lifecycle-env",
-        "head_sha": "7031810044dc7c27377e14489ab1a48bd5993eff",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123236:5709198618:2026-09-17T05:21:52Z:re_review",
       "comment_id": "5709198618",
@@ -33512,6 +33479,53 @@
         "kind": "pull_request",
         "branch": "fix/update-health-channel-verdict",
         "head_sha": "788cfb11b62d56eb4c081d23dc8951c25e40344e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150513:5712881107:2026-09-17T10:30:33Z:re_review",
+      "comment_id": "5712881107",
+      "comment_version_key": "5712881107:2026-09-17T10:30:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150513#issuecomment-5712881107",
+      "comment_created_at": "2026-09-17T10:30:33Z",
+      "comment_updated_at": "2026-09-17T10:30:33Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150513,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T10:31:36.745Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-recovery-budget-renew-150447",
+        "head_sha": "8d0fa51de1dda34cce7c943ab035fbd5ed7e5504",
         "cluster_id": null,
         "job_path": null
       },
