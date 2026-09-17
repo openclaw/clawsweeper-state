@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:06:30.467Z",
+  "updated_at": "2026-09-17T02:06:41.128Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5703719338:2026-09-16T20:01:14Z:re_review",
-      "comment_id": "5703719338",
-      "comment_version_key": "5703719338:2026-09-16T20:01:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5703719338",
-      "comment_created_at": "2026-09-16T20:01:14Z",
-      "comment_updated_at": "2026-09-16T20:01:14Z",
-      "comment_body_sha256": "eb184ed9adf6db70d41735dd3580efa5e03edf07a3f78946302a8a58a05936b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T20:02:15.307Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "memorytunning-pr-v2",
-        "head_sha": "9a19eb6e0aefa5e66187578f4f47c4928ba4817c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149331:5686151212:2026-09-16T19:55:07Z:clawsweeper_needs_human",
       "comment_id": "5686151212",
@@ -33520,6 +33473,39 @@
         "kind": "pull_request",
         "branch": "codex/pr-disable-auto-maintenance-20260916",
         "head_sha": "4a137f13e142a1bdc9d68621dbe8845ddcabf721",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:52:5686688132:2026-09-17T02:05:24Z:clawsweeper_needs_human",
+      "comment_id": "5686688132",
+      "comment_version_key": "5686688132:2026-09-17T02:05:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/52#issuecomment-5686688132",
+      "comment_created_at": "2026-09-15T19:18:15Z",
+      "comment_updated_at": "2026-09-17T02:05:24Z",
+      "comment_body_sha256": "f4ead7b2a61cb51d063937810c1ff7f29050f29ba052e173c88b60317b2885ae",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 52,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show allowed-owner execution and rejection of foreign or mismatched saved ownership before host launch...; Review finding: [P1] Validate saved ownership before selecting automatic host fallback — src/OpenClaw.Launcher/Program.cs:187-192 - [P2] Propagate native cleanup failures before r... (sha=dac892217becaf91c83139a427a5e72893166390)",
+      "expected_head_sha": "dac892217becaf91c83139a427a5e72893166390",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:06:41.128Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-fresh-reset",
+        "head_sha": "dac892217becaf91c83139a427a5e72893166390",
         "cluster_id": null,
         "job_path": null
       }
