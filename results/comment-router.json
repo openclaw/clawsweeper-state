@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T00:03:04.925Z",
+  "updated_at": "2026-09-17T00:04:34.750Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150106:5701651989:2026-09-16T17:22:39Z:re_review",
-      "comment_id": "5701651989",
-      "comment_version_key": "5701651989:2026-09-16T17:22:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150106#issuecomment-5701651989",
-      "comment_created_at": "2026-09-16T17:22:39Z",
-      "comment_updated_at": "2026-09-16T17:22:39Z",
-      "comment_body_sha256": "fa274f2cf6e0573353b15460567a8ea2885c0ed9103e63debb093cca9d843b1b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150106,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T17:23:34.786Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/thinking-models-audit-20260916",
-        "head_sha": "fed27afbdaf366d8296d45ffae7fee931098029e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150185:5701666297:2026-09-16T17:23:47Z:clawsweeper_needs_human",
       "comment_id": "5701666297",
@@ -33724,6 +33677,39 @@
         "kind": "pull_request",
         "branch": "user/giodl/native-node-ownership-seams",
         "head_sha": "ffac53d92ce024fd8e9d5858222dfa4dfdeff976",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:49:5687313870:2026-09-17T00:03:19Z:clawsweeper_needs_human",
+      "comment_id": "5687313870",
+      "comment_version_key": "5687313870:2026-09-17T00:03:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/49#issuecomment-5687313870",
+      "comment_created_at": "2026-09-15T20:02:19Z",
+      "comment_updated_at": "2026-09-17T00:03:19Z",
+      "comment_body_sha256": "f741502ba317c67cf597d58e0f32fd272d63110d5a2cfeeba2fd0446023d51b1",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 49,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The updated body positively describes GatewayPersistenceManager's native task activation, package upgr...; Review finding: [P1] Bind recurring activation to the registering package — src/OpenClaw.Launcher/Gateway/GatewayRuntime.cs:39-43 - [P2] Match CMD decoding to both generated UTF-8... (sha=5758bd6a44a7bd1a7a3c9f1a26cd100a76934e5f)",
+      "expected_head_sha": "5758bd6a44a7bd1a7a3c9f1a26cd100a76934e5f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T00:04:34.750Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/session-gateway-recovery",
+        "head_sha": "5758bd6a44a7bd1a7a3c9f1a26cd100a76934e5f",
         "cluster_id": null,
         "job_path": null
       }
