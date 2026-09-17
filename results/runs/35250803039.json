@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151006",
+  "mode": "autonomous",
+  "run_id": "35250803039",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35250803039",
+  "head_sha": "971582747fe2d14b96aea8f4ffdf2f559f7e55c4",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151006.md",
+  "published_at": "2026-09-17T17:48:11.676Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151006",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151006",
+  "canonical_pr": null,
+  "summary": "The defect remains source-confirmed on preflight main. A narrow fix artifact is ready; local implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#151006",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151006",
+      "candidate_fix": null,
+      "reason": "A bounded display repair fits the existing sanitizer contract without changing task storage, notification policy, or security boundaries."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151006",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151006",
+      "candidate_fix": null,
+      "reason": "The executor can implement the narrow plan after restoring dependencies in a writable checkout and establishing the required failing regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151006",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#151006",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor completes duplicate detection, reproduces the defect on current main, implements the fix, and passes focused tests, pnpm check:changed, and fresh review. This lane must neither merge nor close the issue."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
