@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:31:00.682Z",
+  "updated_at": "2026-09-17T11:33:45.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150426:5709855612:2026-09-17T06:18:27Z:re_review",
-      "comment_id": "5709855612",
-      "comment_version_key": "5709855612:2026-09-17T06:18:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150426#issuecomment-5709855612",
-      "comment_created_at": "2026-09-17T06:18:27Z",
-      "comment_updated_at": "2026-09-17T06:18:27Z",
-      "comment_body_sha256": "bc4a5491ab3fae83cad302dedf7177f8aab0e7eddb6eeed90526ecbcdc7d3320",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150426,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T06:19:25.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/control-ui-worktree-picker",
-        "head_sha": "ad7cbb2e306f2e472ec59512b65dadce5a7808b8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150630:5709486540:2026-09-17T06:17:55Z:clawsweeper_needs_human",
       "comment_id": "5709486540",
@@ -33675,6 +33628,39 @@
         "kind": "pull_request",
         "branch": "codex/directory-mode-falsy-check-20260917",
         "head_sha": "d19f89099cc44045e67fc2063ae089da7ae0d7e9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:458:5713645733:2026-09-17T11:32:43Z:clawsweeper_needs_human",
+      "comment_id": "5713645733",
+      "comment_version_key": "5713645733:2026-09-17T11:32:43Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/458#issuecomment-5713645733",
+      "comment_created_at": "2026-09-17T11:32:43Z",
+      "comment_updated_at": "2026-09-17T11:32:43Z",
+      "comment_body_sha256": "88896ac3eb4d97d6562fd41ca5e753bf490edb2a6498d79eb3a2a58b7dc239cc",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied validation consists of tests and review/CI claims; it does not show an observed after-fix Windows public merge rejecting the one-s... (sha=bb2d8533ba7a9538675713512a7951f9d7e59a18)",
+      "expected_head_sha": "bb2d8533ba7a9538675713512a7951f9d7e59a18",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T11:33:45.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/directory-mode-prechmod-check-20260917",
+        "head_sha": "bb2d8533ba7a9538675713512a7951f9d7e59a18",
         "cluster_id": null,
         "job_path": null
       }
