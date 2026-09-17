@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T01:04:21.505Z",
+  "updated_at": "2026-09-17T01:05:15.295Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150095:5698801795:2026-09-16T18:36:22Z:clawsweeper_needs_human",
-      "comment_id": "5698801795",
-      "comment_version_key": "5698801795:2026-09-16T18:36:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150095#issuecomment-5698801795",
-      "comment_created_at": "2026-09-16T14:05:23Z",
-      "comment_updated_at": "2026-09-16T18:36:22Z",
-      "comment_body_sha256": "eae39ce44d6c055599fa61e74ac7395ad73d85b3b9cbc125ce46c14170e9ac09",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150095,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflict-resolved combination with main’s materialization/presentation split and newer refresh coordinator has not been reviewed or validated. (sha=82367066f1633437911e5dc30efc219acfba7215)",
-      "expected_head_sha": "82367066f1633437911e5dc30efc219acfba7215",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T18:38:48.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/cause-of-the-sidebar-jitter",
-        "head_sha": "82367066f1633437911e5dc30efc219acfba7215",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150188:5701619487:2026-09-16T18:34:04Z:clawsweeper_needs_human",
       "comment_id": "5701619487",
@@ -33707,6 +33674,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150425:5706839800:2026-09-17T01:04:18Z:clawsweeper_needs_human",
+      "comment_id": "5706839800",
+      "comment_version_key": "5706839800:2026-09-17T01:04:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150425#issuecomment-5706839800",
+      "comment_created_at": "2026-09-17T01:04:18Z",
+      "comment_updated_at": "2026-09-17T01:04:18Z",
+      "comment_body_sha256": "7a338ca8a3286e536639f8bb3ea5b56d92471b940bc27ea14e40f0aee8ffe102",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150425,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **\\[P1\\] Keep quarantined audit files behind the backup sanitizer (P1)** - Renaming a rewritten raw archive to .raw.quarantined-* makes it invisible to both hasLegacyAuditBackupSources and isLegacyAuditMigrationBa...; Review finding: [P1] [P1] Keep quarantined audit files behind the backup sanitizer — src/infra/state-migrations.audit-logs.ts:281-285 - [high] Unsanitized quarantine bytes enter p... (sha=b17adfaa68f7572cdbf55a65046ba9baf15455d2)",
+      "expected_head_sha": "b17adfaa68f7572cdbf55a65046ba9baf15455d2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T01:05:15.295Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/doctor-audit-archive-mismatch",
+        "head_sha": "b17adfaa68f7572cdbf55a65046ba9baf15455d2",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
