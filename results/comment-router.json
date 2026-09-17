@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T23:23:59.827Z",
+  "updated_at": "2026-09-17T23:24:12.731Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150979:5717495029:2026-09-17T16:16:40Z:clawsweeper_needs_human",
-      "comment_id": "5717495029",
-      "comment_version_key": "5717495029:2026-09-17T16:16:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150979#issuecomment-5717495029",
-      "comment_created_at": "2026-09-17T16:06:35Z",
-      "comment_updated_at": "2026-09-17T16:16:40Z",
-      "comment_body_sha256": "1a97482bd8d136563f5800af1d5b76f42bdb5d59b2aca6c6d75b3e76fdd53881",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150979,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=da9f209ac3a4598d414d5f839eebedb014231a2a)",
-      "expected_head_sha": "da9f209ac3a4598d414d5f839eebedb014231a2a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T16:26:15.163Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-flake-openai-image-generation-20260917",
-        "head_sha": "da9f209ac3a4598d414d5f839eebedb014231a2a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150990:5717753774:2026-09-17T16:23:54Z:clawsweeper_needs_human",
       "comment_id": "5717753774",
@@ -33447,6 +33414,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151222:5722545081:2026-09-17T23:23:07Z:re_review",
+      "comment_id": "5722545081",
+      "comment_version_key": "5722545081:2026-09-17T23:23:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151222#issuecomment-5722545081",
+      "comment_created_at": "2026-09-17T23:23:07Z",
+      "comment_updated_at": "2026-09-17T23:23:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151222,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T23:24:09.343Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workflow-checker-python-floor",
+        "head_sha": "6cd24adeaacc1ec0b50a60c8e64ad8a4cc33e47e",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
