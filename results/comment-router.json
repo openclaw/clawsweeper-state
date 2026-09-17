@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:44:19.840Z",
+  "updated_at": "2026-09-17T11:45:01.795Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148001:5709969767:2026-09-17T06:27:02Z:re_review",
-      "comment_id": "5709969767",
-      "comment_version_key": "5709969767:2026-09-17T06:27:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148001#issuecomment-5709969767",
-      "comment_created_at": "2026-09-17T06:27:02Z",
-      "comment_updated_at": "2026-09-17T06:27:02Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148001,
-      "author": "HiOSheep",
-      "author_id": 160826995,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T06:28:09.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/egress-proxy-basic-credential-substitution",
-        "head_sha": "9ef498e8c8c09a5588818a8287c54af06adfe316",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150675:5709973286:2026-09-17T06:27:16Z:clawsweeper_needs_human",
       "comment_id": "5709973286",
@@ -33867,6 +33820,39 @@
         "kind": "pull_request",
         "branch": "fix/ci-shard-main-startup-corpus",
         "head_sha": "c736022144b196bf5f5d6fe2ff6151d8a781fbc6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:81190:4435224992:2026-09-17T11:43:50Z:clawsweeper_needs_human",
+      "comment_id": "4435224992",
+      "comment_version_key": "4435224992:2026-09-17T11:43:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/81190#issuecomment-4435224992",
+      "comment_created_at": "2026-05-12T22:10:27Z",
+      "comment_updated_at": "2026-09-17T11:43:50Z",
+      "comment_body_sha256": "ce2554ad3c7b6893a8f9fc143e4463aa565ea724531c6f17cdb2daa5e6da30dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 81190,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing sessions can lose useful tool detail from active model context before a summarizer sees it; original transcript rows remain retained, but the latency-versus-context tradeoff... (sha=4de2de66e1d726895b05460342c3f67e503dfb24)",
+      "expected_head_sha": "4de2de66e1d726895b05460342c3f67e503dfb24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T11:45:01.795Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-tool-result-truncation-first",
+        "head_sha": "4de2de66e1d726895b05460342c3f67e503dfb24",
         "cluster_id": null,
         "job_path": null
       }
