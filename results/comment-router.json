@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:49:36.735Z",
+  "updated_at": "2026-09-17T13:49:40.684Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150150:5700603746:2026-09-17T08:11:45Z:clawsweeper_needs_human",
-      "comment_id": "5700603746",
-      "comment_version_key": "5700603746:2026-09-17T08:11:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150150#issuecomment-5700603746",
-      "comment_created_at": "2026-09-16T16:05:37Z",
-      "comment_updated_at": "2026-09-17T08:11:45Z",
-      "comment_body_sha256": "bb0f93257c4783c23c45cb757bdf9a9123041419caae4a4f6c8955f190cb58bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150150,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Explicitly accept the dependency cooldown exceptions** - The patch exempts ACPX and nine dependency versions, including native fs-safe binaries, from the normal waiting period. The exac...; Review finding: [medium] Explicitly accept the dependency cooldown exceptions — pnpm-workspace.yaml:13 (sha=5aaed2debb44f902f8ce4b439b4fc24c91d8a634)",
-      "expected_head_sha": "5aaed2debb44f902f8ce4b439b4fc24c91d8a634",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T08:12:59.846Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/acp-runtime-consolidation",
-        "head_sha": "5aaed2debb44f902f8ce4b439b4fc24c91d8a634",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150505:5707460731:2026-09-17T08:09:16Z:clawsweeper_needs_human",
       "comment_id": "5707460731",
@@ -34572,6 +34539,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150799:5715451250:2026-09-17T13:48:33Z:re_review",
+      "comment_id": "5715451250",
+      "comment_version_key": "5715451250:2026-09-17T13:48:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150799#issuecomment-5715451250",
+      "comment_created_at": "2026-09-17T13:48:33Z",
+      "comment_updated_at": "2026-09-17T13:48:33Z",
+      "comment_body_sha256": "03db41f04870b82ae510b9d91082db631f2a3636fbe0a7291c3eb7b9706e2f50",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150799,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T13:49:36.883Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f03-detached-update-exit",
+        "head_sha": "31704d70a5292ea9c0b359fd4f5d66e8b4c064b7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
