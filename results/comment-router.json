@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T01:51:29.962Z",
+  "updated_at": "2026-09-17T01:51:31.698Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149702:5703255970:2026-09-16T19:24:09Z:re_review",
-      "comment_id": "5703255970",
-      "comment_version_key": "5703255970:2026-09-16T19:24:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149702#issuecomment-5703255970",
-      "comment_created_at": "2026-09-16T19:24:09Z",
-      "comment_updated_at": "2026-09-16T19:24:09Z",
-      "comment_body_sha256": "f49b6380c1e3e893248f7b068e6daaa3dff4ac3692ef4aae402f5757ad757732",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149702,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T19:30:15.382Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/vcpu-scaling-20260916",
-        "head_sha": "30793cb3c7d01b7dfeaf832ddb3e2643f6ae494d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117976:5157740894:2026-09-05T13:45:24Z:clawsweeper_auto_repair",
       "comment_id": "5157740894",
@@ -33568,6 +33521,39 @@
         "kind": "pull_request",
         "branch": "fix/blacksmith-shell-boundary",
         "head_sha": "3c7fcfe9a77d51085c7d546feb815709108c269b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150421:5706910203:2026-09-17T01:50:25Z:clawsweeper_needs_human",
+      "comment_id": "5706910203",
+      "comment_version_key": "5706910203:2026-09-17T01:50:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150421#issuecomment-5706910203",
+      "comment_created_at": "2026-09-17T01:13:33Z",
+      "comment_updated_at": "2026-09-17T01:50:25Z",
+      "comment_body_sha256": "9e20d2faf3ad05afb58a74ed4368a0d0769acb47b4aee9ace269c9ebd0354f57",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150421,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: file-write regressions exercise real files, but July Gateway revocation uses a mocked node transport. Supply re... (sha=250a63783120e8751310c0bdcfde098adfcbc643)",
+      "expected_head_sha": "250a63783120e8751310c0bdcfde098adfcbc643",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T01:51:31.698Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport/733-security-ghsa-batch",
+        "head_sha": "250a63783120e8751310c0bdcfde098adfcbc643",
         "cluster_id": null,
         "job_path": null
       }
