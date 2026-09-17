@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:13:08.342Z",
+  "updated_at": "2026-09-17T02:13:36.074Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149971:5696030899:2026-09-16T20:28:04Z:clawsweeper_needs_human",
-      "comment_id": "5696030899",
-      "comment_version_key": "5696030899:2026-09-16T20:28:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149971#issuecomment-5696030899",
-      "comment_created_at": "2026-09-16T10:31:06Z",
-      "comment_updated_at": "2026-09-16T20:28:04Z",
-      "comment_body_sha256": "956a8a62e8418cb52ceca028112a10839d8e430e1dbc21823c5c4907a6080ef7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149971,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **\\[P1\\] Preserve TypeBox registry identity through tool dispatch (P1)** - This prior finding remains unfixed. Bundling TypeBox here gives session extensions a bundled Format registry, while actual tool dispatch c...; Review finding: [P1] [P1] Preserve TypeBox registry identity through tool dispatch — scripts/lib/runtime-process-core-build-entries.mts:31-33 - [medium] Custom-format checks can d... (sha=6938eb193d30d1894f37f76f3e83fe029d225947)",
-      "expected_head_sha": "6938eb193d30d1894f37f76f3e83fe029d225947",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T20:29:01.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/async-session-metadata-ylwzwjhe",
-        "head_sha": "6938eb193d30d1894f37f76f3e83fe029d225947",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2292:5704047540:2026-09-16T20:28:17Z:clawsweeper_needs_human",
       "comment_id": "5704047540",
@@ -33369,6 +33336,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150421:5707393072:2026-09-17T02:12:24Z:re_review",
+      "comment_id": "5707393072",
+      "comment_version_key": "5707393072:2026-09-17T02:12:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150421#issuecomment-5707393072",
+      "comment_created_at": "2026-09-17T02:12:24Z",
+      "comment_updated_at": "2026-09-17T02:12:24Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150421,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T02:13:33.770Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "backport/733-security-ghsa-batch",
+        "head_sha": "de6ca8193a4b8371cec5f96b75d002aacd2e3a4f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
