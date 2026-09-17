@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:20:31.143Z",
+  "updated_at": "2026-09-17T13:20:33.549Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124467:5710801938:2026-09-17T07:40:26Z:re_review",
-      "comment_id": "5710801938",
-      "comment_version_key": "5710801938:2026-09-17T07:40:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5710801938",
-      "comment_created_at": "2026-09-17T07:40:26Z",
-      "comment_updated_at": "2026-09-17T07:40:26Z",
-      "comment_body_sha256": "6f67c5db7429b7672def6e175df602140d4c0ff09cff7ef488b977a55da21d59",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124467,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T07:41:20.368Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/crabline-structured-identity",
-        "head_sha": "3f1d29314966fcc6e4bdfdb5ae92c7d16cee53d5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117369:5151159652:2026-09-17T07:40:24Z:clawsweeper_auto_repair",
       "comment_id": "5151159652",
@@ -34589,6 +34542,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:466:5715024791:2026-09-17T13:19:34Z:clawsweeper_needs_human",
+      "comment_id": "5715024791",
+      "comment_version_key": "5715024791:2026-09-17T13:19:34Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/466#issuecomment-5715024791",
+      "comment_created_at": "2026-09-17T13:19:34Z",
+      "comment_updated_at": "2026-09-17T13:19:34Z",
+      "comment_body_sha256": "cd4d6656309d06327bbcf2a2f119499c3aeed6774b8d8944dc9b81b333a83dc3",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 466,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed destination-close owner is exercised by inspected public-API test definitions, but no recorded after-fix run demonstrates close-err... (sha=9582cfa898fd7bcf296349dbbb509b345cdd1e24)",
+      "expected_head_sha": "9582cfa898fd7bcf296349dbbb509b345cdd1e24",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:20:33.549Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/copy-fallback-close-20260917",
+        "head_sha": "9582cfa898fd7bcf296349dbbb509b345cdd1e24",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
