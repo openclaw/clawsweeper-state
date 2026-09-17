@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T15:46:37.477Z",
+  "updated_at": "2026-09-17T15:50:42.191Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126618:5354060596:2026-09-17T10:50:00Z:clawsweeper_auto_repair",
-      "comment_id": "5354060596",
-      "comment_version_key": "5354060596:2026-09-17T10:50:00Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126618#issuecomment-5354060596",
-      "comment_created_at": "2026-08-20T09:31:51Z",
-      "comment_updated_at": "2026-09-17T10:50:00Z",
-      "comment_body_sha256": "7635abf58724aca6fb52cb55bec7c8b392929e7eced314b7b577f588177fdefd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126618,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=057fb2c924c6429c7ccb3bb55ed5ef204e6aea33)",
-      "expected_head_sha": "057fb2c924c6429c7ccb3bb55ed5ef204e6aea33",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T10:55:07.878Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-search-native-core-tools",
-        "head_sha": "057fb2c924c6429c7ccb3bb55ed5ef204e6aea33",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141190:5570175370:2026-09-17T10:54:00Z:clawsweeper_needs_human",
       "comment_id": "5570175370",
@@ -33743,6 +33710,53 @@
       "status": "skipped",
       "processed_at": "2026-09-17T15:46:37.477Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150562:5717267060:2026-09-17T15:49:42Z:re_review",
+      "comment_id": "5717267060",
+      "comment_version_key": "5717267060:2026-09-17T15:49:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5717267060",
+      "comment_created_at": "2026-09-17T15:49:42Z",
+      "comment_updated_at": "2026-09-17T15:49:42Z",
+      "comment_body_sha256": "6e0b32e3fbecf41d6e06990d40bf5822c3b00381a9c775f7eaa14379458006ab",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150562,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — fixed sqlite agent mismatch: store entries now use correct agent-scoped session keys",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T15:50:40.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/149935-yield-between-store-recovery",
+        "head_sha": "9ec664abe9cd7926304d90ef85199ba1675231d5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
