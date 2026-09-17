@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T18:48:19.346Z",
+  "updated_at": "2026-09-17T18:48:19.617Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150793:5714893300:2026-09-17T13:10:11Z:re_review",
-      "comment_id": "5714893300",
-      "comment_version_key": "5714893300:2026-09-17T13:10:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150793#issuecomment-5714893300",
-      "comment_created_at": "2026-09-17T13:10:11Z",
-      "comment_updated_at": "2026-09-17T13:10:11Z",
-      "comment_body_sha256": "87eca885d25bf97cd37f0b8f52ee06875244816f16d9b972c2a24192795b3e15",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150793,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T13:11:07.604Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "improve/update-partial-clone-diagnostic",
-        "head_sha": "bef6208337a2383110f6a73489f525c946b4d0c0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150882:5714397237:2026-09-17T13:10:11Z:clawsweeper_needs_human",
       "comment_id": "5714397237",
@@ -32741,6 +32694,39 @@
       "status": "skipped",
       "processed_at": "2026-09-17T18:48:19.346Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151037:5718957203:2026-09-17T18:47:22Z:clawsweeper_needs_human",
+      "comment_id": "5718957203",
+      "comment_version_key": "5718957203:2026-09-17T18:47:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151037#issuecomment-5718957203",
+      "comment_created_at": "2026-09-17T17:59:46Z",
+      "comment_updated_at": "2026-09-17T18:47:22Z",
+      "comment_body_sha256": "611df64b2c3d87a5a333567662307964cd0ff00d2cf9daa5ef574e9242a0ce1b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151037,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6088e77686c091ce431d359f277b623eebaadc7f)",
+      "expected_head_sha": "6088e77686c091ce431d359f277b623eebaadc7f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T18:48:19.617Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/chrome-empty-cleanup-latch",
+        "head_sha": "6088e77686c091ce431d359f277b623eebaadc7f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
