@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:41:50.114Z",
+  "updated_at": "2026-09-17T08:42:06.190Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150499:5707369876:2026-09-17T03:25:04Z:clawsweeper_needs_human",
-      "comment_id": "5707369876",
-      "comment_version_key": "5707369876:2026-09-17T03:25:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150499#issuecomment-5707369876",
-      "comment_created_at": "2026-09-17T02:09:47Z",
-      "comment_updated_at": "2026-09-17T03:25:04Z",
-      "comment_body_sha256": "4408f52122f1d98354aab9e3b18842b7df4a7e025213d2389fde644032dc1ae3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150499,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing agent-exec scripts that use operator message commands will fail after upgrade; maintainers must accept the documented transition to attributed session tools or normal complet... (sha=1723f62fc44f0a9344d418249c4b23457a608aec)",
-      "expected_head_sha": "1723f62fc44f0a9344d418249c4b23457a608aec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:54:58.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigating-release-steering-messages",
-        "head_sha": "1723f62fc44f0a9344d418249c4b23457a608aec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150504:5707452125:2026-09-17T03:32:27Z:clawsweeper_needs_human",
       "comment_id": "5707452125",
@@ -33477,6 +33444,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150479:5711513786:2026-09-17T08:41:08Z:re_review",
+      "comment_id": "5711513786",
+      "comment_version_key": "5711513786:2026-09-17T08:41:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150479#issuecomment-5711513786",
+      "comment_created_at": "2026-09-17T08:41:08Z",
+      "comment_updated_at": "2026-09-17T08:41:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150479,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:42:04.423Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/shared-session-worktrees",
+        "head_sha": "072257aa04cdf8e52c0f8f836961a31961ab1bc8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
