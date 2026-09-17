@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:11:47.771Z",
+  "updated_at": "2026-09-17T08:11:50.097Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150494:5707336271:2026-09-17T03:19:28Z:clawsweeper_needs_human",
-      "comment_id": "5707336271",
-      "comment_version_key": "5707336271:2026-09-17T03:19:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150494#issuecomment-5707336271",
-      "comment_created_at": "2026-09-17T02:06:02Z",
-      "comment_updated_at": "2026-09-17T03:19:28Z",
-      "comment_body_sha256": "7dda1103cbda647798c3e47901381b348109b5beabf05c156e3fae4233c7bfce",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150494,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Unavailable inspection now permits package changes while skipping automatic stop and restart, even when restart was requested. A running Gateway can retain old code or block Doctor ma... (sha=b6c94245ce1b5159bb0be5807e2e8b9f5228c05f)",
-      "expected_head_sha": "b6c94245ce1b5159bb0be5807e2e8b9f5228c05f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:26:26.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/managed-service-preflight-unavailable",
-        "head_sha": "b6c94245ce1b5159bb0be5807e2e8b9f5228c05f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150509:5707545043:2026-09-17T03:10:21Z:clawsweeper_needs_human",
       "comment_id": "5707545043",
@@ -33410,6 +33377,53 @@
         "kind": "pull_request",
         "branch": "fix/sandbox-revocable-command",
         "head_sha": "54ee1bcfb917b9a2799d2b50f69095f1f3529b23",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150716:5711149904:2026-09-17T08:10:51Z:re_review",
+      "comment_id": "5711149904",
+      "comment_version_key": "5711149904:2026-09-17T08:10:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150716#issuecomment-5711149904",
+      "comment_created_at": "2026-09-17T08:10:51Z",
+      "comment_updated_at": "2026-09-17T08:10:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150716,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:11:47.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sandbox-core-mount-grants",
+        "head_sha": "700335e61007cc6db793f5592bf604afa24946f1",
         "cluster_id": null,
         "job_path": null
       },
