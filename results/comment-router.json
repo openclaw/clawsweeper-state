@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T06:17:13.482Z",
+  "updated_at": "2026-09-17T06:17:13.618Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149880:5694417690:2026-09-17T01:53:33Z:clawsweeper_auto_repair",
-      "comment_id": "5694417690",
-      "comment_version_key": "5694417690:2026-09-17T01:53:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149880#issuecomment-5694417690",
-      "comment_created_at": "2026-09-16T08:25:02Z",
-      "comment_updated_at": "2026-09-17T01:53:33Z",
-      "comment_body_sha256": "3cfbe6601a0dadbd33861489f387be38c3b23dd7994a3ed1a6d5f6dc4b7a2c9c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149880,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fb661beb7160670379493e956bfeab7822748cea)",
-      "expected_head_sha": "fb661beb7160670379493e956bfeab7822748cea",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T01:54:45.145Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "iapi",
-        "head_sha": "fb661beb7160670379493e956bfeab7822748cea",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150415:5707236938:2026-09-17T01:54:01Z:freeform_assist",
       "comment_id": "5707236938",
@@ -33525,6 +33492,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150311:5704811223:2026-09-17T06:10:33Z:clawsweeper_needs_human",
+      "comment_id": "5704811223",
+      "comment_version_key": "5704811223:2026-09-17T06:10:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150311#issuecomment-5704811223",
+      "comment_created_at": "2026-09-16T21:30:41Z",
+      "comment_updated_at": "2026-09-17T06:10:33Z",
+      "comment_body_sha256": "46c22965c892eedd7b4746a39161acf9863bdbb39f916dfd9e2cfbf9228daf97",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150311,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Executable edits without fresh authorization intentionally stop subsequent reads for existing origin-bearing account jobs; operators may need explicit local reauthorization. (sha=fbbda903073619eb7c1ca4813ee753a96d750206)",
+      "expected_head_sha": "fbbda903073619eb7c1ca4813ee753a96d750206",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T06:17:13.618Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-local-source",
+        "head_sha": "fbbda903073619eb7c1ca4813ee753a96d750206",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
