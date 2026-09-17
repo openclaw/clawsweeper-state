@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T11:26:57.701Z",
+  "updated_at": "2026-09-17T11:28:22.105Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150663:5709820029:2026-09-17T06:14:43Z:clawsweeper_needs_human",
-      "comment_id": "5709820029",
-      "comment_version_key": "5709820029:2026-09-17T06:14:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150663#issuecomment-5709820029",
-      "comment_created_at": "2026-09-17T06:14:43Z",
-      "comment_updated_at": "2026-09-17T06:14:43Z",
-      "comment_body_sha256": "1c55e6310ebed702c91342d3e63986edd1ad46e20c98f023397b2ee90d801261",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150663,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b12daa16187c09b652a5b92e8f89b808595ec9e9)",
-      "expected_head_sha": "b12daa16187c09b652a5b92e8f89b808595ec9e9",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T06:15:46.448Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/flake-gemini-first-response-deadline",
-        "head_sha": "b12daa16187c09b652a5b92e8f89b808595ec9e9",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149443:5688753698:2026-09-17T06:14:56Z:clawsweeper_needs_human",
       "comment_id": "5688753698",
@@ -33664,6 +33631,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150807:5713585927:2026-09-17T11:27:24Z:re_review",
+      "comment_id": "5713585927",
+      "comment_version_key": "5713585927:2026-09-17T11:27:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150807#issuecomment-5713585927",
+      "comment_created_at": "2026-09-17T11:27:24Z",
+      "comment_updated_at": "2026-09-17T11:27:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150807,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T11:28:19.708Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f05-gateway-down-alarm",
+        "head_sha": "bfdeaf3fe7153399eeab83034f7237fd9c370fc8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
