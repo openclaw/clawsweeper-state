@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T13:22:48.819Z",
+  "updated_at": "2026-09-17T13:22:56.699Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150490:5710907524:2026-09-17T07:49:41Z:re_review",
-      "comment_id": "5710907524",
-      "comment_version_key": "5710907524:2026-09-17T07:49:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150490#issuecomment-5710907524",
-      "comment_created_at": "2026-09-17T07:49:41Z",
-      "comment_updated_at": "2026-09-17T07:49:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150490,
-      "author": "compoodment",
-      "author_id": 153792487,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T07:50:33.104Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/native-provenance-live",
-        "head_sha": "6a94d96813417f96ee398377006e522740857085",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:448:5709523871:2026-09-17T07:46:15Z:clawsweeper_needs_human",
       "comment_id": "5709523871",
@@ -34567,6 +34520,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-150447-overflow-recovery-budget",
         "head_sha": "0f21871d3aa8a380449cafdfc57c5280986ebcc6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:124993:5311242227:2026-09-17T13:21:58Z:clawsweeper_needs_human",
+      "comment_id": "5311242227",
+      "comment_version_key": "5311242227:2026-09-17T13:21:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124993#issuecomment-5311242227",
+      "comment_created_at": "2026-08-17T02:53:59Z",
+      "comment_updated_at": "2026-09-17T13:21:58Z",
+      "comment_body_sha256": "82d0e6b2453f1ecfeef6484d23962a0953e68fe4a637967419e8603730ac2477",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124993,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The causes of two failed CI checks remain unclassified because their annotations contain only exit codes and full logs were unavailable. (sha=8a9700088faf9d42a74bce95f3658954c928fe70)",
+      "expected_head_sha": "8a9700088faf9d42a74bce95f3658954c928fe70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T13:22:56.699Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sunlit/fix/fleet-restore-recovery",
+        "head_sha": "8a9700088faf9d42a74bce95f3658954c928fe70",
         "cluster_id": null,
         "job_path": null
       }
