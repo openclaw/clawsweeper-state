@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-17T08:34:55.561Z",
+  "updated_at": "2026-09-17T08:36:01.230Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150337:5705443010:2026-09-17T03:31:27Z:clawsweeper_needs_human",
-      "comment_id": "5705443010",
-      "comment_version_key": "5705443010:2026-09-17T03:31:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150337#issuecomment-5705443010",
-      "comment_created_at": "2026-09-16T22:25:17Z",
-      "comment_updated_at": "2026-09-17T03:31:27Z",
-      "comment_body_sha256": "3ee70e708e11921a7b015c8a4be06353ecda70abe0f4de93d55ca6121da3f7ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150337,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve security concern: Confirm the release-specific unresolved advisory acceptance** - The 2026.9.5 entry allows dependency evidence generation despite GHSA-3pq3-5fj3-cg6v. Its bounds are enforced, but the in...; Review finding: [medium] Confirm the release-specific unresolved advisory acceptance — scripts/lib/release-dependency-risk-acceptance.mts:34 (sha=ffc6b2cb6584f75acf1d193d8096d94e51aeb87b)",
-      "expected_head_sha": "ffc6b2cb6584f75acf1d193d8096d94e51aeb87b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T03:54:58.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-validation-tooling-20260916",
-        "head_sha": "281d682fb14fb3d5731a94834d512316cd97091d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150346:5705579734:2026-09-17T03:50:07Z:clawsweeper_needs_human",
       "comment_id": "5705579734",
@@ -33418,6 +33385,53 @@
         "kind": "pull_request",
         "branch": "fix/github-auth-profile-ui",
         "head_sha": "30ec54b8a6b86f57940feae2ab6a2cc796d8b0ea",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:124467:5711429221:2026-09-17T08:34:56Z:re_review",
+      "comment_id": "5711429221",
+      "comment_version_key": "5711429221:2026-09-17T08:34:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/124467#issuecomment-5711429221",
+      "comment_created_at": "2026-09-17T08:34:56Z",
+      "comment_updated_at": "2026-09-17T08:34:56Z",
+      "comment_body_sha256": "9d46f3c588604f373fa3ec276150c17eb6f59b49e2a5f72a458f859be8bad412",
+      "repo": "openclaw/openclaw",
+      "issue_number": 124467,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-17T08:35:58.216Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/crabline-structured-identity",
+        "head_sha": "9c0d6107b7db0cd2fa5d5577110a1fe2de7e9d16",
         "cluster_id": null,
         "job_path": null
       },
