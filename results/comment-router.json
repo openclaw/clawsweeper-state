@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T07:39:17.285Z",
+  "updated_at": "2026-09-17T07:39:19.976Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149725:5707815459:2026-09-17T03:01:56Z:re_review",
-      "comment_id": "5707815459",
-      "comment_version_key": "5707815459:2026-09-17T03:01:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149725#issuecomment-5707815459",
-      "comment_created_at": "2026-09-17T03:01:56Z",
-      "comment_updated_at": "2026-09-17T03:01:56Z",
-      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149725,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T03:02:58.165Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "pe/rfc54-macos-rust-runtime",
-        "head_sha": "f0ada44a58a0d6dcd587c3245cd3300023655323",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/rfcs:54:5707815949:2026-09-17T03:02:00Z:re_review",
       "comment_id": "5707815949",
@@ -33310,6 +33263,39 @@
         "kind": "pull_request",
         "branch": "fix/dashboard-plugin-reads",
         "head_sha": "ee6b99a84ca3a0743260d7d50a60cedc5f42d078",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150494:5707336271:2026-09-17T07:28:28Z:clawsweeper_needs_human",
+      "comment_id": "5707336271",
+      "comment_version_key": "5707336271:2026-09-17T07:28:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150494#issuecomment-5707336271",
+      "comment_created_at": "2026-09-17T02:06:02Z",
+      "comment_updated_at": "2026-09-17T07:28:28Z",
+      "comment_body_sha256": "7c4e25ded067765341d1ca307b8d3a067be3a3e7368374512d97543a4c057772",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150494,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Unavailable inspection now permits package replacement without automatic service stop or restart, including when restart was requested; a running Gateway may retain old code or block... (sha=5960b2458f18c4f186736e76378cfa10a84a08b0)",
+      "expected_head_sha": "5960b2458f18c4f186736e76378cfa10a84a08b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T07:39:19.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/managed-service-preflight-unavailable",
+        "head_sha": "5960b2458f18c4f186736e76378cfa10a84a08b0",
         "cluster_id": null,
         "job_path": null
       }
