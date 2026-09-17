@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-17T00:58:34.127Z",
+  "updated_at": "2026-09-17T00:59:13.887Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147807:5665972091:2026-09-14T14:56:33Z:re_review",
-      "comment_id": "5665972091",
-      "comment_version_key": "5665972091:2026-09-14T14:56:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147807#issuecomment-5665972091",
-      "comment_created_at": "2026-09-14T14:56:33Z",
-      "comment_updated_at": "2026-09-14T14:56:33Z",
-      "comment_body_sha256": "5fff203ac0e6742371f5cdb976bfd8e231caedcdc51a60cd7e3f44e03406705c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147807,
-      "author": "etzelm",
-      "author_id": 16581152,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-16T18:31:05.549Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147807:5666950294:2026-09-14T16:07:08Z:re_review",
       "comment_id": "5666950294",
@@ -33703,6 +33676,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149533:5689969657:2026-09-17T00:58:21Z:clawsweeper_needs_human",
+      "comment_id": "5689969657",
+      "comment_version_key": "5689969657:2026-09-17T00:58:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149533#issuecomment-5689969657",
+      "comment_created_at": "2026-09-16T00:14:10Z",
+      "comment_updated_at": "2026-09-17T00:58:21Z",
+      "comment_body_sha256": "7df37306ff1f5f7297c05c57e92d77046f4f1eb576e279f65428159f4f1eebe3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149533,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Merging could increase CPU for held-reader and settled-cache workloads. The plain comparison shows substantial increases, while the instrumented diagnostic gives mixed results; neithe... (sha=7e2745d9740c6b968030d94db5183b31cdda16ff)",
+      "expected_head_sha": "7e2745d9740c6b968030d94db5183b31cdda16ff",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T00:59:13.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/team-catalog-read-retention-main-20260915",
+        "head_sha": "7e2745d9740c6b968030d94db5183b31cdda16ff",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
