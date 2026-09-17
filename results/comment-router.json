@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-17T02:07:19.461Z",
+  "updated_at": "2026-09-17T02:07:28.614Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150265:5703772639:2026-09-16T20:05:15Z:re_review",
-      "comment_id": "5703772639",
-      "comment_version_key": "5703772639:2026-09-16T20:05:15Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150265#issuecomment-5703772639",
-      "comment_created_at": "2026-09-16T20:05:15Z",
-      "comment_updated_at": "2026-09-16T20:05:15Z",
-      "comment_body_sha256": "6837d59357af8ce11fcaac072383f48d33421eeabc623cb1d0cc2ba6239fda1e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150265,
-      "author": "jhaabhijeet864",
-      "author_id": 169458770,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-16T20:06:13.815Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/150248-image-generate-multi-image-description",
-        "head_sha": "72f1a1c1ae94c8d401e05dabc3c45a66a4b2f124",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149897:5694642552:2026-09-16T19:57:51Z:clawsweeper_needs_human",
       "comment_id": "5694642552",
@@ -33506,6 +33459,39 @@
         "kind": "pull_request",
         "branch": "feat/session-agent-shell",
         "head_sha": "d8ef914c0d9e8f80e2f54b0928b44488f4246595",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2297:5707340294:2026-09-17T02:06:30Z:clawsweeper_needs_human",
+      "comment_id": "5707340294",
+      "comment_version_key": "5707340294:2026-09-17T02:06:30Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2297#issuecomment-5707340294",
+      "comment_created_at": "2026-09-17T02:06:30Z",
+      "comment_updated_at": "2026-09-17T02:06:30Z",
+      "comment_body_sha256": "662e7935d150bca265d7bd335f4cb9897442829bf197c422932b6571ab14361b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2297,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed GCP cleanup and Azure recovery paths have fake-client regression coverage, but the complete supplied body contains no after-fix rea... (sha=8ed56c08bd13132d974d9f6c1e34a6424e0ffaa7)",
+      "expected_head_sha": "8ed56c08bd13132d974d9f6c1e34a6424e0ffaa7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-17T02:07:28.614Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cleanup-decisions-c396-n110",
+        "head_sha": "8ed56c08bd13132d974d9f6c1e34a6424e0ffaa7",
         "cluster_id": null,
         "job_path": null
       }
