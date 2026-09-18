@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T01:02:30.308Z",
+  "updated_at": "2026-09-18T01:02:55.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151040:5719373343:2026-09-17T18:34:07Z:re_review",
-      "comment_id": "5719373343",
-      "comment_version_key": "5719373343:2026-09-17T18:34:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151040#issuecomment-5719373343",
-      "comment_created_at": "2026-09-17T18:34:07Z",
-      "comment_updated_at": "2026-09-17T18:34:07Z",
-      "comment_body_sha256": "67d43fa190f29a35565a1af7ccb5e1fd02d64e1e43f8e38f1c0aa273b9a8b7ad",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151040,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T18:35:05.312Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-ingress-broker-context",
-        "head_sha": "01b4c306939a14427c185e5c1e02454f54964fc6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145874:5645238956:2026-09-17T18:34:17Z:clawsweeper_needs_human",
       "comment_id": "5645238956",
@@ -33526,6 +33479,39 @@
         "kind": "pull_request",
         "branch": "codex/task-recovery-reduction",
         "head_sha": "5dc7317102c8f033ed86d081dfc5c92bd0055dee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:446:5708542763:2026-09-18T00:56:49Z:clawsweeper_needs_human",
+      "comment_id": "5708542763",
+      "comment_version_key": "5708542763:2026-09-18T00:56:49Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/446#issuecomment-5708542763",
+      "comment_created_at": "2026-09-17T04:29:16Z",
+      "comment_updated_at": "2026-09-18T00:56:49Z",
+      "comment_body_sha256": "7208a4defb2d959e5ff563535aac1e468c7ab6e54e0d15a306f8a38022cb7100",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 446,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed acquisition, retained Root cleanup, and stale-removal owners need observed allowed operati...; Review finding: [P1] [P1] Use the same Windows target identity for raw and Root locks — src/file-lock-sync-root.ts:469-475 - [medium] Cross-route admission can admit two owners on... (sha=e45ef8d93926b8852f8565309e3f86245dd520bc)",
+      "expected_head_sha": "e45ef8d93926b8852f8565309e3f86245dd520bc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T01:02:55.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sync-raw-callback-arbitration-20260916",
+        "head_sha": "e45ef8d93926b8852f8565309e3f86245dd520bc",
         "cluster_id": null,
         "job_path": null
       }
