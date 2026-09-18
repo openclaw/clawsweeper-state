@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T16:57:39.171Z",
+  "updated_at": "2026-09-18T16:58:41.026Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150929:5729058318:2026-09-18T11:01:48Z:re_review",
-      "comment_id": "5729058318",
-      "comment_version_key": "5729058318:2026-09-18T11:01:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5729058318",
-      "comment_created_at": "2026-09-18T11:01:48Z",
-      "comment_updated_at": "2026-09-18T11:01:48Z",
-      "comment_body_sha256": "ce27b697e8a144523916f16f60992cf1258f4018ffd860b995feee4041e6251c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150929,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — both revision-2 p1 findings are fixed and pushed as 882ddd663. p1-a: the legacy rule now matches the whole agents object and iterates the keyed entries map values (and the legacy list form), so keyed maps are detected and applylegacycompatibilitystep no longer early-returns with the migration unrun. p1-b: discovery/plugin-metadata workspace resolution (listagentworkspacedirs, runwithcurrentpluginmetadata, the repair sequence scope) treats a saved blank as omitted so the strict resolver cannot abort doctor before the shared migration strips the blank; a real doctor-config-flow test drives a sole-agent config with a saved blank through repair and asserts the blank is stripped and persisted. real-runtime proof (blank-workspace-proof.mts) adds part c (keyed-map detection) and part d (discovery no-abort, strict resolver still rejects)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T11:02:43.887Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-reject-blank-workspace",
-        "head_sha": "882ddd663bfc4c38caf73a5fe44cc47f2da71526",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151617:5727435324:2026-09-18T11:01:52Z:clawsweeper_needs_human",
       "comment_id": "5727435324",
@@ -33439,6 +33392,39 @@
         "kind": "pull_request",
         "branch": "perf/telegram-rich-span-expiry-m4-20260918",
         "head_sha": "c894b80d2f8449d8efd73436f517440355ec23f2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3742:5733328211:2026-09-18T16:57:45Z:clawsweeper_needs_human",
+      "comment_id": "5733328211",
+      "comment_version_key": "5733328211:2026-09-18T16:57:45Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3742#issuecomment-5733328211",
+      "comment_created_at": "2026-09-18T16:57:45Z",
+      "comment_updated_at": "2026-09-18T16:57:45Z",
+      "comment_body_sha256": "a2880dba382e2057019e1a4f85a3c582858555b8faee145dc75dd193e2d2e29a",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3742,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show managed selection reaching billing only with the selected account, including competing pasted/bro...; Review finding: [P1] Preserve ambient credentials when managed routing is not selected — Sources/CodexBar/ProviderRegistry.swift:199-205 - [P1] Apply managed account routing to or... (sha=7e8ef3b3a3fb12c0637f78aa20faa12237261008)",
+      "expected_head_sha": "7e8ef3b3a3fb12c0637f78aa20faa12237261008",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T16:58:41.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/grok-managed-oauth-accounts",
+        "head_sha": "7e8ef3b3a3fb12c0637f78aa20faa12237261008",
         "cluster_id": null,
         "job_path": null
       }
