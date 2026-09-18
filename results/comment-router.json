@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T14:56:52.267Z",
+  "updated_at": "2026-09-18T14:57:22.960Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151360:5725040302:2026-09-18T08:53:39Z:clawsweeper_needs_human",
-      "comment_id": "5725040302",
-      "comment_version_key": "5725040302:2026-09-18T08:53:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151360#issuecomment-5725040302",
-      "comment_created_at": "2026-09-18T04:12:38Z",
-      "comment_updated_at": "2026-09-18T08:53:39Z",
-      "comment_body_sha256": "c0ee3768041f87c6c466aaa92263d05d369c09f2343c432b2386aa65e979e280",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151360,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Longer sidecar cleanup and a broker that survives supervisor signals have not been demonstrated together through the published updater within an installed service's stop deadline; an... (sha=40fd4ab094ec63eb162e81c81cd5e54c4a4ada4e)",
-      "expected_head_sha": "40fd4ab094ec63eb162e81c81cd5e54c4a4ada4e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T09:00:53.442Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/fix-service-child-exit-deadline-20260918",
-        "head_sha": "40fd4ab094ec63eb162e81c81cd5e54c4a4ada4e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151435:5725857503:2026-09-18T08:57:29Z:clawsweeper_needs_human",
       "comment_id": "5725857503",
@@ -33294,6 +33261,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151076:5731827666:2026-09-18T14:56:18Z:re_review",
+      "comment_id": "5731827666",
+      "comment_version_key": "5731827666:2026-09-18T14:56:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151076#issuecomment-5731827666",
+      "comment_created_at": "2026-09-18T14:56:18Z",
+      "comment_updated_at": "2026-09-18T14:56:18Z",
+      "comment_body_sha256": "57f9b94d21da5576232e1f60f0078496ecf0c093809993711032a21aefdc93dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151076,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T14:57:20.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-recovery-noop-budget",
+        "head_sha": "4d920ed927fc3c4965e003e23c67e6730a540799",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
