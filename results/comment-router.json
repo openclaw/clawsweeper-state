@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T06:22:31.921Z",
+  "updated_at": "2026-09-18T06:23:16.460Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151282:5723392377:2026-09-18T02:22:43Z:clawsweeper_needs_human",
-      "comment_id": "5723392377",
-      "comment_version_key": "5723392377:2026-09-18T02:22:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151282#issuecomment-5723392377",
-      "comment_created_at": "2026-09-18T00:59:34Z",
-      "comment_updated_at": "2026-09-18T02:22:43Z",
-      "comment_body_sha256": "8c44671988f7643a254351854f74716ce04a8fc6cb60e9bbf26621ef053930fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151282,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The related merged PR explicitly leaves broader recovery paused; the review request does not establish whether that release-scope pause is lifted. (sha=b49bb1c458724507cae5d81f70889e4b4627546a)",
-      "expected_head_sha": "b49bb1c458724507cae5d81f70889e4b4627546a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T02:23:37.673Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/extended-stable-plugin-workflow-recovery",
-        "head_sha": "b49bb1c458724507cae5d81f70889e4b4627546a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-packaging:69:5723486522:2026-09-18T02:10:19Z:clawsweeper_auto_repair",
       "comment_id": "5723486522",
@@ -31685,6 +31652,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150837:5726055012:2026-09-18T06:22:29Z:re_review",
+      "comment_id": "5726055012",
+      "comment_version_key": "5726055012:2026-09-18T06:22:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150837#issuecomment-5726055012",
+      "comment_created_at": "2026-09-18T06:22:29Z",
+      "comment_updated_at": "2026-09-18T06:22:29Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150837,
+      "author": "xialonglee",
+      "author_id": 22994703,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T06:23:14.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-truncate-utf16-safe",
+        "head_sha": "5e520f6208fb5d4999a63f67dbb82bd40d596ece",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
