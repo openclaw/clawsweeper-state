@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151792"
-mode: "plan"
-run_id: "35350719344"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35350719344"
-head_sha: "f3b7e8dbb5d7735202c46c94043a641f26a15f56"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-18T13:38:55.709Z"
-canonical: "#151792"
-canonical_issue: "#151792"
+mode: "autonomous"
+run_id: "35352807159"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35352807159"
+head_sha: "e24c74c8d322d8d77ce422101aa4802631861f71"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-18T14:23:25.645Z"
+canonical: "https://github.com/openclaw/openclaw/issues/151792"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/151792"
 canonical_pr: null
-actions_total: 1
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35350719344](https://github.com/openclaw/clawsweeper/actions/runs/35350719344)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35352807159](https://github.com/openclaw/clawsweeper/actions/runs/35352807159)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #151792
+Canonical: https://github.com/openclaw/openclaw/issues/151792
 
 ## Summary
 
-Plan one narrow Feishu fix for #151792. Source inspection at preflight main 85c3605a4a7bf9009975411dd87969852d67b9e7 confirms the files[] omission and document classification problem. No edits, runtime tests, GitHub mutations, or live Feishu validation were performed.
+Reproduced attachment loss in the actual post parser at preflight main SHA 22d4773dd12481c746b84eda85e7907ca76281b6. A narrow fix artifact is ready. Implementation is blocked on this read-only host; dependencies are absent, inbound regression tests and real Feishu proof remain outstanding. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,9 @@ Plan one narrow Feishu fix for #151792. Source inspection at preflight main 85c3
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151792 | fix_needed | planned | canonical | The reported failure has a bounded existing-owner repair. Keep the issue open and prepare one implementation PR, conditional on reproducing the defect through inbound dispatch. |
+| #151792 | fix_needed | planned | canonical | The defect remains reproducible at the parser boundary and has a bounded plugin-local repair. Full inbound reproduction remains required before implementation. |
+| cluster:issue-openclaw-openclaw-151792 | build_fix_artifact | planned |  | Prepare one narrow new-fix PR through the deterministic executor; no product or security decision is unresolved. |
+| cluster:issue-openclaw-openclaw-151792 | open_fix_pr | blocked |  | Implementation and PR preparation require a writable executor with dependencies. Complete failing inbound coverage, the repair, required checks, review, and redacted real Feishu evidence before claiming completion. |
 
 ## Needs Human
 

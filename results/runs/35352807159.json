@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151792",
+  "mode": "autonomous",
+  "run_id": "35352807159",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35352807159",
+  "head_sha": "e24c74c8d322d8d77ce422101aa4802631861f71",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151792.md",
+  "published_at": "2026-09-18T14:23:25.645Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151792",
+  "canonical_pr": null,
+  "summary": "Reproduced attachment loss in the actual post parser at preflight main SHA 22d4773dd12481c746b84eda85e7907ca76281b6. A narrow fix artifact is ready. Implementation is blocked on this read-only host; dependencies are absent, inbound regression tests and real Feishu proof remain outstanding. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151792",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151792",
+      "candidate_fix": null,
+      "reason": "The defect remains reproducible at the parser boundary and has a bounded plugin-local repair. Full inbound reproduction remains required before implementation."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#151792",
+      "candidate_fix": null,
+      "reason": "Prepare one narrow new-fix PR through the deterministic executor; no product or security decision is unresolved."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151792",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#151792",
+      "candidate_fix": null,
+      "reason": "Implementation and PR preparation require a writable executor with dependencies. Complete failing inbound coverage, the repair, required checks, review, and redacted real Feishu evidence before claiming completion."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
