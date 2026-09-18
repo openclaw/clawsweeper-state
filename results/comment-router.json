@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T15:57:39.792Z",
+  "updated_at": "2026-09-18T16:00:45.632Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150217:5702513883:2026-09-18T09:52:38Z:clawsweeper_needs_human",
-      "comment_id": "5702513883",
-      "comment_version_key": "5702513883:2026-09-18T09:52:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150217#issuecomment-5702513883",
-      "comment_created_at": "2026-09-16T18:28:04Z",
-      "comment_updated_at": "2026-09-18T09:52:38Z",
-      "comment_body_sha256": "d89ba93e7b8aa97dfaba16060111c8fc96478e01f8563ef4799aafa56405e9c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150217,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The current-head transcript-position CI failure remains unexplained; neither the passing Side chat evidence nor the available failure annotation establishes its cause. (sha=7a38ba662da5bd434647833680f261f4284d70aa)",
-      "expected_head_sha": "7a38ba662da5bd434647833680f261f4284d70aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T09:55:55.616Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-manual-side-focus",
-        "head_sha": "7a38ba662da5bd434647833680f261f4284d70aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150605:5709018663:2026-09-18T09:53:42Z:clawsweeper_needs_human",
       "comment_id": "5709018663",
@@ -33504,6 +33471,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151581:5732629465:2026-09-18T15:59:30Z:re_review",
+      "comment_id": "5732629465",
+      "comment_version_key": "5732629465:2026-09-18T15:59:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151581#issuecomment-5732629465",
+      "comment_created_at": "2026-09-18T15:59:30Z",
+      "comment_updated_at": "2026-09-18T15:59:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151581,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T16:00:43.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-reader-wal",
+        "head_sha": "49f01e60d9bda1fb3ca84342c83867f6ff48d1c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
