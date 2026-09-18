@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T04:30:00.181Z",
+  "updated_at": "2026-09-18T04:30:18.264Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151067:5719759847:2026-09-17T23:57:29Z:clawsweeper_needs_human",
-      "comment_id": "5719759847",
-      "comment_version_key": "5719759847:2026-09-17T23:57:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151067#issuecomment-5719759847",
-      "comment_created_at": "2026-09-17T19:05:57Z",
-      "comment_updated_at": "2026-09-17T23:57:29Z",
-      "comment_body_sha256": "477fc58bdeeb6effe6f58675ff2d476946fafbbdd2a33f8f2c34d91f74ec6a36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151067,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scheduled invocations that specify Gateway overrides will now fail; Gateway-backed actions without a bound host also stop. The intended support boundary and recovery guidance... (sha=20f19a99429ce27f57168ddb9f5e495cf4a73618)",
-      "expected_head_sha": "20f19a99429ce27f57168ddb9f5e495cf4a73618",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T23:59:19.385Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/scheduled-message-lifetime",
-        "head_sha": "20f19a99429ce27f57168ddb9f5e495cf4a73618",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151176:5721773392:2026-09-17T23:55:00Z:clawsweeper_needs_human",
       "comment_id": "5721773392",
@@ -31767,6 +31734,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151356:5725164665:2026-09-18T04:29:14Z:re_review",
+      "comment_id": "5725164665",
+      "comment_version_key": "5725164665:2026-09-18T04:29:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151356#issuecomment-5725164665",
+      "comment_created_at": "2026-09-18T04:29:14Z",
+      "comment_updated_at": "2026-09-18T04:29:14Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151356,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T04:30:15.642Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cli-diagnostics-unbound-emit",
+        "head_sha": "3ebb4a3f5e66d824b7421f28392abb2fe5b26401",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
