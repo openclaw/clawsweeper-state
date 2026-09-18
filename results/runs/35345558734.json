@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151789",
+  "mode": "autonomous",
+  "run_id": "35345558734",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35345558734",
+  "head_sha": "f3b7e8dbb5d7735202c46c94043a641f26a15f56",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151789.md",
+  "published_at": "2026-09-18T13:14:54.562Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151789",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151789",
+  "canonical_pr": null,
+  "summary": "Confirmed the unsafe filename behavior with a failing in-memory resolver assertion. Prepared a narrow fix artifact. Implementation and lifecycle tests are blocked by the read-only host; native Windows proof and reconciliation with the preflight main SHA remain required. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151789",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "The narrow bug remains evident in inspected source, but implementation requires a writable executor, current-main verification, a failing lifecycle regression, and native Windows proof."
+    },
+    {
+      "target": "#150616",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "Same Windows deletion surface, different root cause. Keep the contributor PR open and outside this implementation."
+    },
+    {
+      "target": "#135349",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "Historical context for filename bounds and identity preservation; no closure or branch replacement action applies."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151789",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix PR is appropriate once executor-side reproduction and validation requirements are satisfied."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
