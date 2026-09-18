@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T10:29:03.283Z",
+  "updated_at": "2026-09-18T10:29:25.274Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/plugin-inspector:87:5725628045:2026-09-18T05:30:24Z:re_review",
-      "comment_id": "5725628045",
-      "comment_version_key": "5725628045:2026-09-18T05:30:24Z",
-      "comment_url": "https://github.com/openclaw/plugin-inspector/pull/87#issuecomment-5725628045",
-      "comment_created_at": "2026-09-18T05:30:24Z",
-      "comment_updated_at": "2026-09-18T05:30:24Z",
-      "comment_body_sha256": "187ba6cb971f48d5c1789ae04ec931060966b3073ad22afd61b868073aef75dc",
-      "repo": "openclaw/plugin-inspector",
-      "issue_number": 87,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T05:30:32.869Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/conversation-access-probe",
-        "head_sha": "006c7008094c3fd728d01d604ec58f6e90cf80e4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/plugin-inspector:87:5725429237:2026-09-18T05:29:08Z:clawsweeper_needs_human",
       "comment_id": "5725429237",
@@ -33281,6 +33234,39 @@
         "kind": "pull_request",
         "branch": "codex/audit-history",
         "head_sha": "13f250f6b4dbd56d59df1579ff7778712e2b5f63",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151138:5721269228:2026-09-18T10:21:51Z:clawsweeper_needs_human",
+      "comment_id": "5721269228",
+      "comment_version_key": "5721269228:2026-09-18T10:21:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151138#issuecomment-5721269228",
+      "comment_created_at": "2026-09-17T21:10:21Z",
+      "comment_updated_at": "2026-09-18T10:21:51Z",
+      "comment_body_sha256": "c8d5c7f0eef1b6fe98bd3cb269fa23e5c75045c4fe97d85041ff767865cb1664",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151138,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: demonstrate allowed retrieval and rejection of an unrelated or revoked reader reusing a newly staged r...; Review finding: [P1] Preserve the explicit boundary between inspection and presentation — src/agents/tool-images.ts:472-473 - [P2] Keep fallback image-tool descriptions accurate —... (sha=3373030655788dce27f6eff615304f185bd98b84)",
+      "expected_head_sha": "3373030655788dce27f6eff615304f185bd98b84",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T10:29:25.274Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/omitted-inline-images",
+        "head_sha": "3373030655788dce27f6eff615304f185bd98b84",
         "cluster_id": null,
         "job_path": null
       }
