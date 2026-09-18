@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137265",
+  "mode": "autonomous",
+  "run_id": "35307894109",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35307894109",
+  "head_sha": "f3b7e8dbb5d7735202c46c94043a641f26a15f56",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137265.md",
+  "published_at": "2026-09-18T05:22:06.150Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137265",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137265",
+  "canonical_pr": null,
+  "summary": "Confirmed the extraction omission in local main source. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. A narrow executor fix artifact is prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#137265",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137265",
+      "candidate_fix": null,
+      "reason": "A narrow existing-behavior repair is supported by source evidence. Refresh main and demonstrate the failing buildSessionEntry regression before implementation."
+    },
+    {
+      "target": "#137937",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#137265",
+      "candidate_fix": null,
+      "reason": "Historical contributor work only. Preserve credit in the new issue implementation PR; do not reopen or close this item."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137265",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#137265",
+      "candidate_fix": null,
+      "reason": "The scoped artifact is actionable by a writable executor without a product or policy decision."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137265",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#137265",
+      "candidate_fix": null,
+      "reason": "Publication requires a writable executor to reconcile current main, recheck existing PR ownership, reproduce, implement, review, and pass validation. The deterministic applicator owns publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
