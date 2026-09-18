@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151792"
-mode: "autonomous"
-run_id: "35345725662"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35345725662"
+mode: "plan"
+run_id: "35350719344"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35350719344"
 head_sha: "f3b7e8dbb5d7735202c46c94043a641f26a15f56"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-18T13:26:29.695Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151792"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151792"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-18T13:38:55.709Z"
+canonical: "#151792"
+canonical_issue: "#151792"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35345725662](https://github.com/openclaw/clawsweeper/actions/runs/35345725662)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35350719344](https://github.com/openclaw/clawsweeper/actions/runs/35350719344)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151792
+Canonical: #151792
 
 ## Summary
 
-Confirmed attachment loss in the parser on preflight main. Narrow fix artifact prepared; implementation is blocked by the read-only host. Dispatch tests and changed checks cannot start without dependencies. No files or GitHub state changed.
+Plan one narrow Feishu fix for #151792. Source inspection at preflight main 85c3605a4a7bf9009975411dd87969852d67b9e7 confirms the files[] omission and document classification problem. No edits, runtime tests, GitHub mutations, or live Feishu validation were performed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Confirmed attachment loss in the parser on preflight main. Narrow fix artifact p
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151792 | fix_needed | planned | canonical | A focused repair of existing inbound attachment handling is supported by source and parser execution. No product or security-boundary decision is needed. |
-| cluster:issue-openclaw-openclaw-151792 | build_fix_artifact | planned |  | The repair plan is actionable in a writable executor without configuration, SDK, storage, or retention changes. |
-| cluster:issue-openclaw-openclaw-151792 | open_fix_pr | blocked |  | Implementation, failing ingress regression coverage, after-fix validation, and live Feishu proof must precede completion. The deterministic executor owns branch publication and PR creation. |
+| #151792 | fix_needed | planned | canonical | The reported failure has a bounded existing-owner repair. Keep the issue open and prepare one implementation PR, conditional on reproducing the defect through inbound dispatch. |
 
 ## Needs Human
 
