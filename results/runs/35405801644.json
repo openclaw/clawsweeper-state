@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152185",
+  "mode": "plan",
+  "run_id": "35405801644",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35405801644",
+  "head_sha": "150c3bb8539ebed7877c950ff9557e2c38788a11",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152185.md",
+  "published_at": "2026-09-18T23:33:32.900Z",
+  "canonical": "#152185",
+  "canonical_issue": "#152185",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for silent-turn usage accounting. Source inspection supports the reported defect at checkout HEAD 6131ca3a52ac423d7d3d952125037ad3777203e4. Runtime reproduction and validation remain pending; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#152185",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152185",
+      "candidate_fix": null,
+      "reason": "Existing reply finalization can omit accounting solely because no message is delivered. A scoped relocation and entry-point regression can repair this without changing telemetry contracts."
+    },
+    {
+      "target": "#109944",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#152185",
+      "candidate_fix": null,
+      "reason": "Related telemetry work with a separate scope and product decision. Leave it open and outside this repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
