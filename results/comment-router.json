@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T06:35:55.485Z",
+  "updated_at": "2026-09-18T06:36:06.000Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3722:5724419010:2026-09-18T02:49:25Z:re_review",
-      "comment_id": "5724419010",
-      "comment_version_key": "5724419010:2026-09-18T02:49:25Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3722#issuecomment-5724419010",
-      "comment_created_at": "2026-09-18T02:49:25Z",
-      "comment_updated_at": "2026-09-18T02:49:25Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3722,
-      "author": "Chipagosfinest",
-      "author_id": 44984861,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T02:54:33.030Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/share-card-spend-trend",
-        "head_sha": "8a8ea46256eaae4f9787c224791402ec941a93f3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3722:5721844043:2026-09-18T02:53:23Z:clawsweeper_auto_repair",
       "comment_id": "5721844043",
@@ -31632,6 +31585,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-heartbeat-broadcast-failure-outcome-20260825",
         "head_sha": "522419a7382ccfe6ee96917f0f3af77c57bf6749",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150837:5713431866:2026-09-18T06:35:10Z:clawsweeper_needs_human",
+      "comment_id": "5713431866",
+      "comment_version_key": "5713431866:2026-09-18T06:35:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150837#issuecomment-5713431866",
+      "comment_created_at": "2026-09-17T11:14:57Z",
+      "comment_updated_at": "2026-09-18T06:35:10Z",
+      "comment_body_sha256": "8a01b9bc310b4b90efa40c46193c85ceadc2c7148ef5abbabdb98a1d32f9d20b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150837,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Doctor handoff evidence demonstrates the corrected 499-unit result at the pinned head. Workshop now exercises the real failure handler... (sha=5e520f6208fb5d4999a63f67dbb82bd40d596ece)",
+      "expected_head_sha": "5e520f6208fb5d4999a63f67dbb82bd40d596ece",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T06:36:06.000Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gap-truncate-utf16-safe",
+        "head_sha": "5e520f6208fb5d4999a63f67dbb82bd40d596ece",
         "cluster_id": null,
         "job_path": null
       }
