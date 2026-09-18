@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137781"
-mode: "autonomous"
-run_id: "35304169563"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35304169563"
+mode: "plan"
+run_id: "35308753326"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35308753326"
 head_sha: "f3b7e8dbb5d7735202c46c94043a641f26a15f56"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-18T04:44:36.927Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137781"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137781"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-18T04:59:05.097Z"
+canonical: "#137781"
+canonical_issue: "#137781"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35304169563](https://github.com/openclaw/clawsweeper/actions/runs/35304169563)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35308753326](https://github.com/openclaw/clawsweeper/actions/runs/35308753326)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/137781
+Canonical: #137781
 
 ## Summary
 
-Source confirms the metadata downgrade path on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed; a narrow executor fix artifact is provided. The reported UNIQUE failure remains unverified.
+Plan a narrow metadata-owner fix for #137781. The clean checkout matches preflight main 52c88f048e84d1213bb4d0657623713ddc3f2a83 and supports the reported identity downgrade. Runtime reproduction, subsequent inbound behavior, and the UNIQUE failure remain unverified. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Source confirms the metadata downgrade path on preflight main. Implementation an
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137781 | fix_needed | blocked | canonical | The canonical bug has a supported source path, but the required failing regression and locally validated implementation need a writable executor environment. |
-| #139011 | keep_closed | skipped | related | Historical context only, as explicitly required by the job. |
-| cluster:issue-openclaw-openclaw-137781 | build_fix_artifact | planned | canonical | A narrow prevention fix remains appropriate; artifact preparation is complete despite the local implementation blocker. |
+| #137781 | fix_needed | planned | canonical | The source-supported bug has a narrow existing owner and no viable open candidate PR. Proceed through the fix artifact only after establishing a failing regression on current main. |
+| #139011 | keep_closed | skipped | related | Retain as historical context and acknowledge the contributor; do not reopen, close again, or adopt its coercion as the complete repair. |
 
 ## Needs Human
 
