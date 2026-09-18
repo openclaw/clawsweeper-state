@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T06:17:44.134Z",
+  "updated_at": "2026-09-18T06:18:54.582Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150416:5706744408:2026-09-18T02:17:12Z:clawsweeper_needs_human",
-      "comment_id": "5706744408",
-      "comment_version_key": "5706744408:2026-09-18T02:17:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150416#issuecomment-5706744408",
-      "comment_created_at": "2026-09-17T00:52:05Z",
-      "comment_updated_at": "2026-09-18T02:17:12Z",
-      "comment_body_sha256": "6d3850cae4ff6f628398adba31bfcbbc3d50abd3df7ce7dd8938e9ad42d415bb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150416,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The real Teams handler and debouncer now have stronger body/session-key assertions, but Graph, agent dispatch, and outbound delivery remain moc... (sha=205239e384f512ee06bada65f928599783be90b8)",
-      "expected_head_sha": "205239e384f512ee06bada65f928599783be90b8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T02:18:07.228Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/session-affinity-headers",
-        "head_sha": "205239e384f512ee06bada65f928599783be90b8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127672:5724023118:2026-09-18T02:09:09Z:re_review",
       "comment_id": "5724023118",
@@ -31707,6 +31674,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151397:5726016150:2026-09-18T06:18:03Z:re_review",
+      "comment_id": "5726016150",
+      "comment_version_key": "5726016150:2026-09-18T06:18:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151397#issuecomment-5726016150",
+      "comment_created_at": "2026-09-18T06:18:03Z",
+      "comment_updated_at": "2026-09-18T06:18:03Z",
+      "comment_body_sha256": "8ded7a4a471409c089f3429712fc992f11397d0c867318727d698c009b3a8aef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151397,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T06:18:52.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessionstore-agentid-clear-151376",
+        "head_sha": "b92656c10b8964cbd51c0cb836cdfb69e057da2c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
