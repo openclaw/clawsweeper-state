@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151794"
-mode: "autonomous"
-run_id: "35345985822"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35345985822"
+mode: "plan"
+run_id: "35350716253"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35350716253"
 head_sha: "f3b7e8dbb5d7735202c46c94043a641f26a15f56"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-18T13:20:59.380Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151794"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151794"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-18T13:39:53.889Z"
+canonical: "#151794"
+canonical_issue: "#151794"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35345985822](https://github.com/openclaw/clawsweeper/actions/runs/35345985822)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35350716253](https://github.com/openclaw/clawsweeper/actions/runs/35350716253)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151794
+Canonical: #151794
 
 ## Summary
 
-Confirmed the reported failure path in source at preflight main f702d7a539dd82f147d9a0083e5a7f20f936d08f. Prepared a narrow fix artifact. Implementation, executable reproduction, and validation are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Plan one narrow update-completion fix for #151794. Source inspection at preflight main 85c3605a4a7bf9009975411dd87969852d67b9e7 confirms the snapshot rejection remains. No files or GitHub state changed; runtime reproduction, validation, and published-updater qualification remain pending. Route #151795 separately.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,8 @@ Confirmed the reported failure path in source at preflight main f702d7a539dd82f1
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151794 | fix_needed | blocked | canonical | The bug remains supported by current-source evidence and has no viable open PR in the hydrated inventory. A writable executor must establish the failing real-caller regression before implementing the artifact. |
-| #146958 | keep_closed | skipped | related | Historical evidence only; no closure action. |
-| #147009 | keep_closed | skipped | related | Preserve its linked path-source behavior; it does not fix the npm-record/local-selection case. |
-| #151795 | route_security | planned | security_sensitive | Route only this item to central OpenClaw security handling and plugin/SDK owners. Do not mutate it or include trust changes in the update-completion repair. |
-| cluster:issue-openclaw-openclaw-151794 | build_fix_artifact | planned | canonical | The fix plan is ready for an authorized writable executor. Implementation remains blocked on this host; reproduction is a prerequisite, not claimed completed evidence. |
+| #151794 | fix_needed | planned | canonical | Contain the recognized maintenance failure at the convergence owner while preserving strict mutation checks. No viable open implementation PR is present in the hydrated cluster. |
+| #151795 | route_security | planned | security_sensitive | Refer only this item to central OpenClaw security handling and plugin/SDK owners. No vulnerability verdict or public mutation is proposed. |
 
 ## Needs Human
 
