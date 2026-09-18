@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T05:33:50.864Z",
+  "updated_at": "2026-09-18T05:34:01.193Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150919:5723557478:2026-09-18T01:20:03Z:re_review",
-      "comment_id": "5723557478",
-      "comment_version_key": "5723557478:2026-09-18T01:20:03Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150919#issuecomment-5723557478",
-      "comment_created_at": "2026-09-18T01:20:03Z",
-      "comment_updated_at": "2026-09-18T01:20:03Z",
-      "comment_body_sha256": "895f12e10383ff1d21a71f39a85adaa58908c7316fc0a2e7fd49b0e8c37865e3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150919,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T01:20:54.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/146331-replay-normalization-boundary",
-        "head_sha": "df851db5f27e423bc116722f77f067912f8c7363",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:126924:5723563366:2026-09-18T01:20:45Z:re_review",
       "comment_id": "5723563366",
@@ -31752,6 +31705,39 @@
         "kind": "pull_request",
         "branch": "codex/worker-environment-noop-publication",
         "head_sha": "61fdcb32c80c2fea6037894d1d8136527ad25788",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150499:5707369876:2026-09-18T05:33:00Z:clawsweeper_needs_human",
+      "comment_id": "5707369876",
+      "comment_version_key": "5707369876:2026-09-18T05:33:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150499#issuecomment-5707369876",
+      "comment_created_at": "2026-09-17T02:09:47Z",
+      "comment_updated_at": "2026-09-18T05:33:00Z",
+      "comment_body_sha256": "bba4ac03fc90e3c2b1c91652d7bfe642fca1fd58df290f32cad4853178a2c93d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150499,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - After upgrade, existing scripts invoking Gateway-backed agent turns or operator message RPCs from top-level marked agent shells will fail before connecting; maintainer acceptance of t... (sha=6e0228342a649ae35f1a1295e7cedca7f96fb911)",
+      "expected_head_sha": "6e0228342a649ae35f1a1295e7cedca7f96fb911",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T05:34:01.193Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/investigating-release-steering-messages",
+        "head_sha": "6e0228342a649ae35f1a1295e7cedca7f96fb911",
         "cluster_id": null,
         "job_path": null
       }
