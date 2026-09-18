@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151792",
+  "mode": "autonomous",
+  "run_id": "35345725662",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35345725662",
+  "head_sha": "f3b7e8dbb5d7735202c46c94043a641f26a15f56",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151792.md",
+  "published_at": "2026-09-18T13:26:29.695Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151792",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151792",
+  "canonical_pr": null,
+  "summary": "Confirmed attachment loss in the parser on preflight main. Narrow fix artifact prepared; implementation is blocked by the read-only host. Dispatch tests and changed checks cannot start without dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151792",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151792",
+      "candidate_fix": null,
+      "reason": "A focused repair of existing inbound attachment handling is supported by source and parser execution. No product or security-boundary decision is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151792",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#151792",
+      "candidate_fix": null,
+      "reason": "The repair plan is actionable in a writable executor without configuration, SDK, storage, or retention changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151792",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#151792",
+      "candidate_fix": null,
+      "reason": "Implementation, failing ingress regression coverage, after-fix validation, and live Feishu proof must precede completion. The deterministic executor owns branch publication and PR creation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
