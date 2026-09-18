@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151789",
+  "mode": "plan",
+  "run_id": "35353532141",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35353532141",
+  "head_sha": "e24c74c8d322d8d77ce422101aa4802631861f71",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151789.md",
+  "published_at": "2026-09-18T14:04:59.567Z",
+  "canonical": "#151789",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151789",
+  "canonical_pr": null,
+  "summary": "Plan one narrow filename repair for #151789. The clean checkout matches preflight main f89cd4fb18f21984c05a1153d74f18043e0adc1e and still preserves unsafe short IDs. No code or GitHub changes were made; failing regression, focused checks, and native Windows proof remain execution gates.",
+  "actions": [
+    {
+      "target": "#151789",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "A focused ordinary bug fix is supported. Neither hydrated PR supplies this repair. Establish a failing lifecycle regression before production edits, then validate the implementation before PR publication."
+    },
+    {
+      "target": "#150616",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "Related Windows deletion behavior with a distinct root cause. Preserve this contributor PR independently; its passing checks do not establish a fix for unsafe archive filenames."
+    },
+    {
+      "target": "#135349",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "Historical context only. Preserve its identity and readback lessons without reopening, replacing, or closing it again."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
