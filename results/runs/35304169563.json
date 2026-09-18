@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-137781",
+  "mode": "autonomous",
+  "run_id": "35304169563",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35304169563",
+  "head_sha": "f3b7e8dbb5d7735202c46c94043a641f26a15f56",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-137781.md",
+  "published_at": "2026-09-18T04:44:36.927Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/137781",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/137781",
+  "canonical_pr": null,
+  "summary": "Source confirms the metadata downgrade path on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed; a narrow executor fix artifact is provided. The reported UNIQUE failure remains unverified.",
+  "actions": [
+    {
+      "target": "#137781",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#137781",
+      "candidate_fix": null,
+      "reason": "The canonical bug has a supported source path, but the required failing regression and locally validated implementation need a writable executor environment."
+    },
+    {
+      "target": "#139011",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#137781",
+      "candidate_fix": null,
+      "reason": "Historical context only, as explicitly required by the job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-137781",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#137781",
+      "candidate_fix": null,
+      "reason": "A narrow prevention fix remains appropriate; artifact preparation is complete despite the local implementation blocker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
