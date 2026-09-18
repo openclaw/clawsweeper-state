@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-18T02:01:21.418Z",
+  "updated_at": "2026-09-18T02:03:41.060Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150562:5708555141:2026-09-17T04:30:29Z:re_review",
-      "comment_id": "5708555141",
-      "comment_version_key": "5708555141:2026-09-17T04:30:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150562#issuecomment-5708555141",
-      "comment_created_at": "2026-09-17T04:30:29Z",
-      "comment_updated_at": "2026-09-17T04:30:29Z",
-      "comment_body_sha256": "ff5084b2280fd6ede0867cc128b3ff76ded1f966a68eddf77db84c0a71a0530d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150562,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — fixed two test findings: (1) advanced setimmediate in retry-backoff test via vi.advancetimersbytimeasync(0), (2) exercised two discoverable stores by mocking resolveallagentsessionstoretargetssync to return both targets",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T19:33:18.564Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150562:5710615315:2026-09-17T07:23:02Z:re_review",
       "comment_id": "5710615315",
@@ -33473,6 +33446,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150929:5715467315:2026-09-18T02:02:30Z:clawsweeper_auto_repair",
+      "comment_id": "5715467315",
+      "comment_version_key": "5715467315:2026-09-18T02:02:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5715467315",
+      "comment_created_at": "2026-09-17T13:49:39Z",
+      "comment_updated_at": "2026-09-18T02:02:30Z",
+      "comment_body_sha256": "39f080640cba4bfc70c8bc0ee5246324985573d9400ea084293dde7535503bfa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150929,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ac58001273be3141826a803653aa7ffabe78c0f1)",
+      "expected_head_sha": "ac58001273be3141826a803653aa7ffabe78c0f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T02:03:41.060Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-reject-blank-workspace",
+        "head_sha": "ac58001273be3141826a803653aa7ffabe78c0f1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
