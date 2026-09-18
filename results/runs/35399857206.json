@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152185",
+  "mode": "autonomous",
+  "run_id": "35399857206",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35399857206",
+  "head_sha": "150c3bb8539ebed7877c950ff9557e2c38788a11",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152185.md",
+  "published_at": "2026-09-18T22:52:12.293Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152185",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152185",
+  "canonical_pr": null,
+  "summary": "Source confirms silent reply paths still skip usage diagnostics. A narrow fix artifact is ready; implementation and before/after regression proof are blocked by this read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#152185",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#152185",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with dependencies. Establish a failing runReplyAgent regression on refreshed main before applying the planned fix; source inspection alone is not runtime reproduction."
+    },
+    {
+      "target": "#109944",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#152185",
+      "candidate_fix": null,
+      "reason": "Separate telemetry contract; preserve its existing maintainer-decision path outside this bug repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152185",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152185",
+      "candidate_fix": null,
+      "reason": "Narrow existing-behavior repair is supported by source. The executor must complete reproduction, implementation, validation, and fresh review before publication."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
