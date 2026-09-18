@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T01:53:53.691Z",
+  "updated_at": "2026-09-18T01:54:29.219Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151011:5720017452:2026-09-17T19:27:47Z:re_review",
-      "comment_id": "5720017452",
-      "comment_version_key": "5720017452:2026-09-17T19:27:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151011#issuecomment-5720017452",
-      "comment_created_at": "2026-09-17T19:27:47Z",
-      "comment_updated_at": "2026-09-17T19:27:47Z",
-      "comment_body_sha256": "646cab53445b8c2a083bab75b6425956e61850322fc18e27ec9244a29c8d7274",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151011,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T19:28:23.933Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release95-reuse-gateway-plugin-metadata",
-        "head_sha": "6a73c707526dd86d43e4a43e95e0b11fa987aa7c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151083:5720010844:2026-09-17T19:27:15Z:clawsweeper_needs_human",
       "comment_id": "5720010844",
@@ -33412,6 +33365,39 @@
         "kind": "pull_request",
         "branch": "steipete/rel95-security-scan-codex-perf-support",
         "head_sha": "2d1f28d11c260a235f3f734285484e77eed307c7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151246:5722710597:2026-09-18T01:53:30Z:clawsweeper_needs_human",
+      "comment_id": "5722710597",
+      "comment_version_key": "5722710597:2026-09-18T01:53:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151246#issuecomment-5722710597",
+      "comment_created_at": "2026-09-17T23:39:55Z",
+      "comment_updated_at": "2026-09-18T01:53:30Z",
+      "comment_body_sha256": "f5cffbf50873f88fbada72c2d3ade2e45e6562e243823502a1242ed773db0545",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151246,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed head has a failed streaming-budget gate, and its reported clean-main equivalence has not been independently verified in this review. (sha=f03ea0499790ae9fe3f43b808eb82d8a15c05c70)",
+      "expected_head_sha": "f03ea0499790ae9fe3f43b808eb82d8a15c05c70",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T01:54:29.219Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/composer-reply-strip",
+        "head_sha": "f03ea0499790ae9fe3f43b808eb82d8a15c05c70",
         "cluster_id": null,
         "job_path": null
       }
