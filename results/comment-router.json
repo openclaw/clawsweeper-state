@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T16:51:31.867Z",
+  "updated_at": "2026-09-18T16:52:27.941Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151245:5729013113:2026-09-18T10:57:18Z:re_review",
-      "comment_id": "5729013113",
-      "comment_version_key": "5729013113:2026-09-18T10:57:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151245#issuecomment-5729013113",
-      "comment_created_at": "2026-09-18T10:57:18Z",
-      "comment_updated_at": "2026-09-18T10:57:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151245,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T10:58:25.897Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-plugin-realpath-alias",
-        "head_sha": "496247f1806f24a3892ff64fc10a173ba9d7e997",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151560:5726686769:2026-09-18T10:58:57Z:clawsweeper_auto_repair",
       "comment_id": "5726686769",
@@ -33425,6 +33378,39 @@
         "kind": "pull_request",
         "branch": "codex/windows-installed-startup-diagnostic",
         "head_sha": "d9145840b4d20da742924816a8487dca503327a6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151946:5732983289:2026-09-18T16:51:20Z:clawsweeper_needs_human",
+      "comment_id": "5732983289",
+      "comment_version_key": "5732983289:2026-09-18T16:51:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151946#issuecomment-5732983289",
+      "comment_created_at": "2026-09-18T16:28:15Z",
+      "comment_updated_at": "2026-09-18T16:51:20Z",
+      "comment_body_sha256": "719149686b995c6f8bf97c26b634deda56831ff28e3e36b205d07823031409b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151946,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b9f4f62b2bc6d57f8299d222d3dab42410737c0a)",
+      "expected_head_sha": "b9f4f62b2bc6d57f8299d222d3dab42410737c0a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T16:52:27.941Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/flake83c-cli-exit-no-signal",
+        "head_sha": "b9f4f62b2bc6d57f8299d222d3dab42410737c0a",
         "cluster_id": null,
         "job_path": null
       }
