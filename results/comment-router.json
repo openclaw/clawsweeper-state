@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-18T09:08:49.059Z",
+  "updated_at": "2026-09-18T09:10:20.992Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:121450:5254147471:2026-08-11T13:57:10Z:re_review",
-      "comment_id": "5254147471",
-      "comment_version_key": "5254147471:2026-08-11T13:57:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121450#issuecomment-5254147471",
-      "comment_created_at": "2026-08-11T13:57:10Z",
-      "comment_updated_at": "2026-08-11T13:57:10Z",
-      "comment_body_sha256": "6bb56665414b4557d181a3aee15b1245b1d816cf25a05482f730eb4bb9b3391b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121450,
-      "author": "nachopenclaw-svg",
-      "author_id": 283039601,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T04:28:38.123Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:121450:5255142319:2026-08-11T17:12:24Z:re_review",
       "comment_id": "5255142319",
@@ -33170,6 +33143,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:436:5702507500:2026-09-18T09:05:38Z:clawsweeper_needs_human",
+      "comment_id": "5702507500",
+      "comment_version_key": "5702507500:2026-09-18T09:05:38Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/436#issuecomment-5702507500",
+      "comment_created_at": "2026-09-16T18:27:34Z",
+      "comment_updated_at": "2026-09-18T09:05:38Z",
+      "comment_body_sha256": "655b0b0a5214860fefdf77459e899d6e87ad311bc163dccbab02b22f63a2bb05",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 436,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: supplied correctness evidence covers source tests and CI, while timings do not show FileStore pruning p... (sha=fd7fcdc647a02894f1306e68478534440e964fab)",
+      "expected_head_sha": "fd7fcdc647a02894f1306e68478534440e964fab",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T09:10:20.992Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/file-store-prune-dir-type-fence-20260916",
+        "head_sha": "fd7fcdc647a02894f1306e68478534440e964fab",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
