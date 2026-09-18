@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152182",
+  "mode": "autonomous",
+  "run_id": "35399285176",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35399285176",
+  "head_sha": "150c3bb8539ebed7877c950ff9557e2c38788a11",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152182.md",
+  "published_at": "2026-09-18T22:29:01.011Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152182",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152182",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the reported failure path on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. A narrow repair artifact is ready for the executor; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#152182",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#152182",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on a writable execution host with dependencies. Establish the required failing real-tool regression before production edits; stop and return to triage if it does not reproduce on refreshed main."
+    },
+    {
+      "target": "#96534",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#152182",
+      "candidate_fix": null,
+      "reason": "Keep open; do not expand this repair into alternate-provider recovery."
+    },
+    {
+      "target": "#113553",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or implementation action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152182",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152182",
+      "candidate_fix": null,
+      "reason": "Emit a non-mutating repair plan despite the current implementation blocker."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
