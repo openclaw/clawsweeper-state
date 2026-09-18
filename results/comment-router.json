@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-18T22:27:14.798Z",
+  "updated_at": "2026-09-18T22:27:44.247Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:89526:5248089972:2026-08-11T01:46:02Z:re_review",
-      "comment_id": "5248089972",
-      "comment_version_key": "5248089972:2026-08-11T01:46:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-5248089972",
-      "comment_created_at": "2026-08-11T01:46:02Z",
-      "comment_updated_at": "2026-08-11T01:46:02Z",
-      "comment_body_sha256": "27f9a0e52263e2806562e748cfdd51593aa4b550bd7f7aaeffe53da14e242148",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "amittell",
-      "author_id": 1388680,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review this exact head, please",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T18:19:34.251Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89526:5289449295:2026-08-14T04:22:28Z:re_review",
       "comment_id": "5289449295",
@@ -32335,6 +32308,39 @@
       "status": "skipped",
       "processed_at": "2026-09-18T22:27:14.798Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150584:5708565186:2026-09-18T22:18:49Z:clawsweeper_needs_human",
+      "comment_id": "5708565186",
+      "comment_version_key": "5708565186:2026-09-18T22:18:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150584#issuecomment-5708565186",
+      "comment_created_at": "2026-09-17T04:31:31Z",
+      "comment_updated_at": "2026-09-18T22:18:49Z",
+      "comment_body_sha256": "30fb0d71780cfeead482646fd263335fab8d4239298669a0c94c981b0960f407",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150584,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Downstream host adoption is not deployment-proven here: missing source-aware reads can block bootstrap, and unsupported Memory classifiers exclude automatic remote context. (sha=014e0ccd3f256ba6554f7fea8b988120c7592273)",
+      "expected_head_sha": "014e0ccd3f256ba6554f7fea8b988120c7592273",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T22:27:44.247Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/workspace-access-foundation",
+        "head_sha": "014e0ccd3f256ba6554f7fea8b988120c7592273",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
