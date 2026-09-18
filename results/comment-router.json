@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T00:24:49.432Z",
+  "updated_at": "2026-09-18T00:25:50.314Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151025:5718635195:2026-09-17T17:33:24Z:clawsweeper_needs_human",
-      "comment_id": "5718635195",
-      "comment_version_key": "5718635195:2026-09-17T17:33:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151025#issuecomment-5718635195",
-      "comment_created_at": "2026-09-17T17:33:24Z",
-      "comment_updated_at": "2026-09-17T17:33:24Z",
-      "comment_body_sha256": "0491969117c9f61a0775ae2821714eb09312c7e09905a54e0ef80abbe1225bd8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151025,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing installations with unmigrated config or node credentials can now stop at startup until an operator runs Doctor. (sha=600565162384cf272ef1250a84a5d89605ff0ebd)",
-      "expected_head_sha": "600565162384cf272ef1250a84a5d89605ff0ebd",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T17:34:31.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/doctor-readiness-integrated-01a0a39d",
-        "head_sha": "600565162384cf272ef1250a84a5d89605ff0ebd",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:469:5718601753:2026-09-17T17:34:18Z:clawsweeper_auto_repair",
       "comment_id": "5718601753",
@@ -33412,6 +33379,53 @@
         "kind": "pull_request",
         "branch": "fix/pin-handoff",
         "head_sha": "0c6a50a8877ac1d693064ae2de70c4b8f4eab03d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118555:5723110640:2026-09-18T00:24:57Z:re_review",
+      "comment_id": "5723110640",
+      "comment_version_key": "5723110640:2026-09-18T00:24:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118555#issuecomment-5723110640",
+      "comment_created_at": "2026-09-18T00:24:57Z",
+      "comment_updated_at": "2026-09-18T00:24:57Z",
+      "comment_body_sha256": "f33bb5888c799349e0c798b7accb294a8d740cb8f2728e159c4c62211d9533ac",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118555,
+      "author": "zeroaltitude",
+      "author_id": 102749,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review `8980acf0a020d0f11ddd2f534c2c4a91cede2dd8`",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T00:25:46.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/prompt-build-drop-marker",
+        "head_sha": "8980acf0a020d0f11ddd2f534c2c4a91cede2dd8",
         "cluster_id": null,
         "job_path": null
       },
