@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T08:03:16.583Z",
+  "updated_at": "2026-09-18T08:03:18.695Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151245:5724876608:2026-09-18T03:49:42Z:re_review",
-      "comment_id": "5724876608",
-      "comment_version_key": "5724876608:2026-09-18T03:49:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151245#issuecomment-5724876608",
-      "comment_created_at": "2026-09-18T03:49:42Z",
-      "comment_updated_at": "2026-09-18T03:49:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151245,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T03:50:35.536Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-plugin-realpath-alias",
-        "head_sha": "e36f2521c6aa68eb80cf71628813462de143b802",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151157:5724876491:2026-09-18T03:49:41Z:re_review",
       "comment_id": "5724876491",
@@ -32497,6 +32450,39 @@
         "kind": "pull_request",
         "branch": "codex/home-sidebar-single-entry",
         "head_sha": "c6b88579ee093b4015ab2a68e5ee717f5829f86a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151603:5727072156:2026-09-18T08:02:17Z:clawsweeper_needs_human",
+      "comment_id": "5727072156",
+      "comment_version_key": "5727072156:2026-09-18T08:02:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151603#issuecomment-5727072156",
+      "comment_created_at": "2026-09-18T08:02:17Z",
+      "comment_updated_at": "2026-09-18T08:02:17Z",
+      "comment_body_sha256": "d93ac969a82bcd5fc4e7cf9dc90a9b4e94c6631e0a8c259db26f8570e8498116",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151603,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Resident-memory effects remain unmeasured in the supplied evidence; sampled allocation churn does not establish before/after RSS. (sha=f65385978f840b3aeba22283d7f89c0ad450da87)",
+      "expected_head_sha": "f65385978f840b3aeba22283d7f89c0ad450da87",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T08:03:18.695Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-provider-prompt-serialization-7006",
+        "head_sha": "f65385978f840b3aeba22283d7f89c0ad450da87",
         "cluster_id": null,
         "job_path": null
       }
