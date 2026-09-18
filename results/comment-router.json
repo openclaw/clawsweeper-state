@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T21:00:10.256Z",
+  "updated_at": "2026-09-18T21:00:12.816Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawgo:9:5733223421:2026-09-18T16:48:13Z:re_review",
-      "comment_id": "5733223421",
-      "comment_version_key": "5733223421:2026-09-18T16:48:13Z",
-      "comment_url": "https://github.com/openclaw/clawgo/pull/9#issuecomment-5733223421",
-      "comment_created_at": "2026-09-18T16:48:13Z",
-      "comment_updated_at": "2026-09-18T16:48:13Z",
-      "comment_body_sha256": "e013aa0179448de9b0214b405744b4b4ed62d19c6fbf7e9f38082e43d24f213f",
-      "repo": "openclaw/clawgo",
-      "issue_number": 9,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T16:52:50.528Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/readloop-tts-deadline",
-        "head_sha": "b286a2b9cefd11515b716db9b3d22468f1d9e6b2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawgo:9:5513058422:2026-09-18T16:51:45Z:clawsweeper_needs_human",
       "comment_id": "5513058422",
@@ -32465,6 +32418,39 @@
         "kind": "pull_request",
         "branch": "fix/steady-fallback-steering",
         "head_sha": "ada2f12565f9fde5b71fddc076c6fe5161c8f790",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151242:5722663281:2026-09-18T20:58:52Z:clawsweeper_auto_repair",
+      "comment_id": "5722663281",
+      "comment_version_key": "5722663281:2026-09-18T20:58:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151242#issuecomment-5722663281",
+      "comment_created_at": "2026-09-17T23:33:42Z",
+      "comment_updated_at": "2026-09-18T20:58:52Z",
+      "comment_body_sha256": "3b89cb45e95b58bfafa148cbbfc6c77fb334a426d9f838f4fd2080a5943041fb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151242,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ba2fb53f2355891cb21744f8083e0b19afaa2599)",
+      "expected_head_sha": "ba2fb53f2355891cb21744f8083e0b19afaa2599",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T21:00:12.816Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedded-long-link-chunks",
+        "head_sha": "ba2fb53f2355891cb21744f8083e0b19afaa2599",
         "cluster_id": null,
         "job_path": null
       }
