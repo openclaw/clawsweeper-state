@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152125"
-mode: "autonomous"
-run_id: "35389541417"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35389541417"
+mode: "plan"
+run_id: "35396882408"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35396882408"
 head_sha: "150c3bb8539ebed7877c950ff9557e2c38788a11"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-18T20:57:43.211Z"
-canonical: "https://github.com/openclaw/openclaw/issues/152125"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/152125"
+published_at: "2026-09-18T21:30:40.440Z"
+canonical: "#152125"
+canonical_issue: "#152125"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35389541417](https://github.com/openclaw/clawsweeper/actions/runs/35389541417)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35396882408](https://github.com/openclaw/clawsweeper/actions/runs/35396882408)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/152125
+Canonical: #152125
 
 ## Summary
 
-Source confirms the identifier-discovery defect on preflight main 24caac494ee4858989e58300925c5775a4dd45b2. Narrow fix artifact prepared. Implementation and executable regression proof are blocked by this host's read-only filesystem; no changes or GitHub mutations were made.
+Plan a narrow identifier-discovery fix. Checkout matches preflight main e73121691a6314c8a6f4c0b7807fff0e807d23d3. No changes or regression tests were executed; implementation and validation remain executor work.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source confirms the identifier-discovery defect on preflight main 24caac494ee485
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152125 | fix_needed | planned | canonical | Repair the scoped result presentation only. The maintainer explicitly selected this approach; cancellation aliases and disclosure changes are outside scope. |
-| cluster:issue-openclaw-openclaw-152125 | build_fix_artifact | planned |  | The repair is narrow and requires no new resolver, schema, configuration, or product-policy decision. |
+| #152125 | fix_needed | planned | canonical | The authorized discovery repair is clear and does not require a security-boundary or product-policy change. Keep the issue open; neither closure nor merge is authorized. |
 
 ## Needs Human
 
