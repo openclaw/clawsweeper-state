@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T19:57:48.530Z",
+  "updated_at": "2026-09-18T19:57:54.310Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149090:5732381049:2026-09-18T15:39:57Z:re_review",
-      "comment_id": "5732381049",
-      "comment_version_key": "5732381049:2026-09-18T15:39:57Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149090#issuecomment-5732381049",
-      "comment_created_at": "2026-09-18T15:39:57Z",
-      "comment_updated_at": "2026-09-18T15:39:57Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149090,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T15:40:54.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/android-quote-scanner-20260915",
-        "head_sha": "a0fb8ab94ec78cc98bcf7dd17612b2984cb133f4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151896:5732178583:2026-09-18T15:40:09Z:clawsweeper_auto_repair",
       "comment_id": "5732178583",
@@ -32623,6 +32576,39 @@
         "kind": "pull_request",
         "branch": "codex/guarded-stop-main",
         "head_sha": "9f66e229deb546341672a0b83534c80e8021b34c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152041:5734354056:2026-09-18T19:56:55Z:clawsweeper_needs_human",
+      "comment_id": "5734354056",
+      "comment_version_key": "5734354056:2026-09-18T19:56:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152041#issuecomment-5734354056",
+      "comment_created_at": "2026-09-18T18:22:02Z",
+      "comment_updated_at": "2026-09-18T19:56:55Z",
+      "comment_body_sha256": "bbdac6513275c6826a3b49d0c58617d6a0fd4b6a6b16c8fa44de1fff0dd2c2e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152041,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Robolectric captures do not establish that touch scrolling, rotary focus, and TalkBack can reach the complete reply and reader controls on a watch. (sha=e6d5f28545502431389a385a11eaef0298950ada)",
+      "expected_head_sha": "e6d5f28545502431389a385a11eaef0298950ada",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T19:57:54.310Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/wear-full-replies-20260918",
+        "head_sha": "e6d5f28545502431389a385a11eaef0298950ada",
         "cluster_id": null,
         "job_path": null
       }
