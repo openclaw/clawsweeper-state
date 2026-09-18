@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T18:19:52.485Z",
+  "updated_at": "2026-09-18T18:20:51.764Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150929:5730560738:2026-09-18T13:18:09Z:re_review",
-      "comment_id": "5730560738",
-      "comment_version_key": "5730560738:2026-09-18T13:18:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5730560738",
-      "comment_created_at": "2026-09-18T13:18:09Z",
-      "comment_updated_at": "2026-09-18T13:18:09Z",
-      "comment_body_sha256": "6668c1fc424cbab3b437eb7ba4a9a8c30af5b3db9bc2c8e8d06b4c3fc3a662c2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150929,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — p1-c fixed: the remaining discovery path is closed. resolvestatemigrationconfiginput keeps the raw saved config as plugindoctorconfig (a legacy locator must survive until its state migration completes), and preflight hands it to plugin migration discovery; there tryresolveconfiguredagentworkspacedir now resolves with blankasomitted so a saved blank enumerates the default directory instead of throwing and refusing the migration. real preflight coverage (not a mocked boundary): state-migrations.plugin-doctor drives the real runpostsessionplugindoctorstaterepairs detection with a saved blank and asserts the migration receives the default serviceworkspacedir with no detection warning. both new regression tests fail on the pre-fix source. core tsgo + agents-root + infra test typecheck lanes pass; focused suites green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T13:19:08.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-reject-blank-workspace",
-        "head_sha": "a693dc0d7c17b10eaaa72d71bbe19bd7c7c5a952",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150898:5714682301:2026-09-18T13:18:23Z:clawsweeper_needs_human",
       "comment_id": "5714682301",
@@ -32911,6 +32864,39 @@
         "kind": "pull_request",
         "branch": "codex/worker-launch-diagnostics",
         "head_sha": "3609d39657e350e07f9872ecaa8d9c63e07b258f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152038:5734325922:2026-09-18T18:19:46Z:clawsweeper_needs_human",
+      "comment_id": "5734325922",
+      "comment_version_key": "5734325922:2026-09-18T18:19:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152038#issuecomment-5734325922",
+      "comment_created_at": "2026-09-18T18:19:46Z",
+      "comment_updated_at": "2026-09-18T18:19:46Z",
+      "comment_body_sha256": "cb4e22458032650bb16176c2333f713821064fbe795b65fef88327fdfc3b2671",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152038,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e69dfa2977bc7daf650835d001722c7d49f09b60)",
+      "expected_head_sha": "e69dfa2977bc7daf650835d001722c7d49f09b60",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T18:20:51.764Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/deflake-dreaming-startup-ownership",
+        "head_sha": "e69dfa2977bc7daf650835d001722c7d49f09b60",
         "cluster_id": null,
         "job_path": null
       }
