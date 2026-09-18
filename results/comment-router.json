@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T05:12:09.158Z",
+  "updated_at": "2026-09-18T05:12:33.340Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136554:5723368647:2026-09-18T00:56:26Z:re_review",
-      "comment_id": "5723368647",
-      "comment_version_key": "5723368647:2026-09-18T00:56:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136554#issuecomment-5723368647",
-      "comment_created_at": "2026-09-18T00:56:26Z",
-      "comment_updated_at": "2026-09-18T00:56:26Z",
-      "comment_body_sha256": "5b0c505dda5c5776cfcdbe1bf52519d3fe342e52edc3f67803464e90cb23a8ff",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136554,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review `d4f55c52c1bd786428ddd8621934b4a7349979d0`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T00:57:13.854Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-timeout-disposition",
-        "head_sha": "d4f55c52c1bd786428ddd8621934b4a7349979d0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151281:5723369911:2026-09-18T00:56:35Z:clawsweeper_needs_human",
       "comment_id": "5723369911",
@@ -31709,6 +31662,39 @@
       "status": "skipped",
       "processed_at": "2026-09-18T05:12:09.158Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151067:5719759847:2026-09-18T05:03:27Z:clawsweeper_needs_human",
+      "comment_id": "5719759847",
+      "comment_version_key": "5719759847:2026-09-18T05:03:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151067#issuecomment-5719759847",
+      "comment_created_at": "2026-09-17T19:05:57Z",
+      "comment_updated_at": "2026-09-18T05:03:27Z",
+      "comment_body_sha256": "14e6bd2320f27feeb4ae32e89712667bc7a2436ed51db1dca97bae3fd876f511",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151067,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scheduled Gateway calls containing gatewayUrl or gatewayToken will stop until their prompt/template is changed; calls without a live host binding also stop. Removing fields o... (sha=8fd38e7ea4fe3583bd5fec00a6414a93436c7402)",
+      "expected_head_sha": "8fd38e7ea4fe3583bd5fec00a6414a93436c7402",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T05:12:33.340Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/scheduled-message-lifetime",
+        "head_sha": "8fd38e7ea4fe3583bd5fec00a6414a93436c7402",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
