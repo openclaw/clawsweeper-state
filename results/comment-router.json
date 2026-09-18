@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T19:20:16.147Z",
+  "updated_at": "2026-09-18T19:21:07.104Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151760:5729691623:2026-09-18T14:38:02Z:clawsweeper_needs_human",
-      "comment_id": "5729691623",
-      "comment_version_key": "5729691623:2026-09-18T14:38:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151760#issuecomment-5729691623",
-      "comment_created_at": "2026-09-18T12:02:19Z",
-      "comment_updated_at": "2026-09-18T14:38:02Z",
-      "comment_body_sha256": "5c82a6c75fce8540e7e7476e9e64ed722335c028cd255c9a7269cd108fc69b9d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151760,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed composition uses an unmerged stack parent; integration against main remains to be checked after that dependency lands. (sha=9dd5dd3f8b1315df3c3316b6e5ba61a4dd6b62a1)",
-      "expected_head_sha": "9dd5dd3f8b1315df3c3316b6e5ba61a4dd6b62a1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T14:46:27.884Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/meeting-transcript-next-worker-20260918",
-        "head_sha": "9dd5dd3f8b1315df3c3316b6e5ba61a4dd6b62a1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151801:5730228245:2026-09-18T14:41:54Z:clawsweeper_needs_human",
       "comment_id": "5730228245",
@@ -33074,6 +33041,53 @@
       "status": "skipped",
       "processed_at": "2026-09-18T19:20:15.056Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:138439:5735039172:2026-09-18T19:19:18Z:re_review",
+      "comment_id": "5735039172",
+      "comment_version_key": "5735039172:2026-09-18T19:19:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/138439#issuecomment-5735039172",
+      "comment_created_at": "2026-09-18T19:19:18Z",
+      "comment_updated_at": "2026-09-18T19:19:18Z",
+      "comment_body_sha256": "aa6c874ab8e7ba3612cc1ed9696f21726403a51ab2bcc3bfecfddb445cd54b5d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 138439,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T19:21:05.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-schema-depth-guard",
+        "head_sha": "62611562b6e8d8f872394c2ff554fec9f2c59427",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
