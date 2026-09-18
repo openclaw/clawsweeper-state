@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T23:51:26.099Z",
+  "updated_at": "2026-09-18T23:51:49.713Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142532:5735028878:2026-09-18T19:18:24Z:re_review",
-      "comment_id": "5735028878",
-      "comment_version_key": "5735028878:2026-09-18T19:18:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142532#issuecomment-5735028878",
-      "comment_created_at": "2026-09-18T19:18:24Z",
-      "comment_updated_at": "2026-09-18T19:18:24Z",
-      "comment_body_sha256": "a29c30967c5adbe2df101757b98dfb78dd43883fafbb47d04c7025c217c9ad03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142532,
-      "author": "synthalorian",
-      "author_id": 212206047,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — live behavior proof posted above, ci green. requesting proof-label re-evaluation",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T19:19:15.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/142336-telegram-dashboard-collision",
-        "head_sha": "8f3de726ca76f9cf6d9c57f65d57041474517c9f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:142534:5735028559:2026-09-18T19:18:22Z:re_review",
       "comment_id": "5735028559",
@@ -32284,6 +32237,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152238:5737443081:2026-09-18T23:50:44Z:clawsweeper_needs_human",
+      "comment_id": "5737443081",
+      "comment_version_key": "5737443081:2026-09-18T23:50:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152238#issuecomment-5737443081",
+      "comment_created_at": "2026-09-18T23:32:20Z",
+      "comment_updated_at": "2026-09-18T23:50:44Z",
+      "comment_body_sha256": "5e6e0ba3c59be618ab44180517ac72feebd4393e3ef8ade09e46421db0e61cc4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152238,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: show trusted-host admission, rejection of an unrelated host before runtime activation, and capture retirement a...; Review finding: [P1] Encode certificate digests in the release host allowlist — apps/android/app/src/main/res/values/car_hosts.xml:4-6 - [P1] Declare the Android Auto discovery me... (sha=259095380af130ecfc061f24aa7318d3b9111c9a)",
+      "expected_head_sha": "259095380af130ecfc061f24aa7318d3b9111c9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T23:51:49.713Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feature/android-auto",
+        "head_sha": "259095380af130ecfc061f24aa7318d3b9111c9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
