@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T15:20:52.773Z",
+  "updated_at": "2026-09-18T15:23:35.131Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118359:5161475717:2026-09-18T09:17:44Z:clawsweeper_auto_repair",
-      "comment_id": "5161475717",
-      "comment_version_key": "5161475717:2026-09-18T09:17:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/118359#issuecomment-5161475717",
-      "comment_created_at": "2026-08-03T01:47:38Z",
-      "comment_updated_at": "2026-09-18T09:17:44Z",
-      "comment_body_sha256": "02325b4bdcd4984010ae7a06ef23c9bde5ac8403cb5297912c0ed2638985cf78",
-      "repo": "openclaw/openclaw",
-      "issue_number": 118359,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=0bffb4095a64cc919416d2d2356e350fb8ba19cf)",
-      "expected_head_sha": "0bffb4095a64cc919416d2d2356e350fb8ba19cf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T09:25:21.730Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/reply-retire-queued-cancellation-on-freeze-118028",
-        "head_sha": "0bffb4095a64cc919416d2d2356e350fb8ba19cf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149309:5685456926:2026-09-18T09:22:21Z:clawsweeper_needs_human",
       "comment_id": "5685456926",
@@ -33328,6 +33295,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151076:5732153342:2026-09-18T15:23:04Z:re_review",
+      "comment_id": "5732153342",
+      "comment_version_key": "5732153342:2026-09-18T15:23:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151076#issuecomment-5732153342",
+      "comment_created_at": "2026-09-18T15:22:16Z",
+      "comment_updated_at": "2026-09-18T15:23:04Z",
+      "comment_body_sha256": "20f51a88f1cfa401cda3e8fb034e0d14422e5685143eb6e14b757f57f0083b3d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151076,
+      "author": "linhongyu510",
+      "author_id": 204567536,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T15:23:31.502Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/overflow-recovery-noop-budget",
+        "head_sha": "3c58090a8449c3b2f9ff47e3857812b322bfc2c9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
