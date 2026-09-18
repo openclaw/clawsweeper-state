@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T09:56:06.601Z",
+  "updated_at": "2026-09-18T09:56:07.556Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151392:5725442528:2026-09-18T05:05:34Z:clawsweeper_needs_human",
-      "comment_id": "5725442528",
-      "comment_version_key": "5725442528:2026-09-18T05:05:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151392#issuecomment-5725442528",
-      "comment_created_at": "2026-09-18T05:05:34Z",
-      "comment_updated_at": "2026-09-18T05:05:34Z",
-      "comment_body_sha256": "0cf692a77abc420d16b0fe1aec117b974fd6b2522686d1072b535ea4129c3a84",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151392,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An older updater that invokes Doctor without repair flags will no longer import legacy Workshop artifacts during that pass or subsequent startup; affected users may need explicit Doct... (sha=879ff463e575e318f24438fadfd995228daf998f)",
-      "expected_head_sha": "879ff463e575e318f24438fadfd995228daf998f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T05:06:25.859Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/workshop-doctor-only",
-        "head_sha": "879ff463e575e318f24438fadfd995228daf998f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151390:5725396782:2026-09-18T05:05:42Z:clawsweeper_needs_human",
       "comment_id": "5725396782",
@@ -33191,6 +33158,53 @@
         "kind": "pull_request",
         "branch": "fix/windows-plugin-realpath-alias",
         "head_sha": "496247f1806f24a3892ff64fc10a173ba9d7e997",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151157:5728356722:2026-09-18T09:55:09Z:re_review",
+      "comment_id": "5728356722",
+      "comment_version_key": "5728356722:2026-09-18T09:55:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5728356722",
+      "comment_created_at": "2026-09-18T09:55:09Z",
+      "comment_updated_at": "2026-09-18T09:55:09Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151157,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T09:56:05.026Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-schtasks-draining-owner",
+        "head_sha": "c6df9ed0cc737bfa9e8d62b2cc293229ea046ef9",
         "cluster_id": null,
         "job_path": null
       },
