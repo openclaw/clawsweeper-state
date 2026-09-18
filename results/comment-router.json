@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T20:37:15.425Z",
+  "updated_at": "2026-09-18T20:44:58.120Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151079:5719927972:2026-09-18T16:20:49Z:clawsweeper_needs_human",
-      "comment_id": "5719927972",
-      "comment_version_key": "5719927972:2026-09-18T16:20:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151079#issuecomment-5719927972",
-      "comment_created_at": "2026-09-17T19:20:13Z",
-      "comment_updated_at": "2026-09-18T16:20:49Z",
-      "comment_body_sha256": "f7a1bcafcc0b126c0429917f554b1e41972c2204ead4622f64e4db6571fb4c47",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151079,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new background-retention path could leave audio silent or incorrectly active on real Android devices; foreground-service, lock/unlock, and interruption behavior remain unverified. (sha=5459adfd2302c64e9ad73fa1670f71b9a41a03b6)",
-      "expected_head_sha": "5459adfd2302c64e9ad73fa1670f71b9a41a03b6",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T16:26:06.692Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/android-live-agent-v1-20260916",
-        "head_sha": "5459adfd2302c64e9ad73fa1670f71b9a41a03b6",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151683:5728463152:2026-09-18T16:22:51Z:clawsweeper_needs_human",
       "comment_id": "5728463152",
@@ -32582,6 +32549,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151242:5735947900:2026-09-18T20:43:44Z:re_review",
+      "comment_id": "5735947900",
+      "comment_version_key": "5735947900:2026-09-18T20:43:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151242#issuecomment-5735947900",
+      "comment_created_at": "2026-09-18T20:43:29Z",
+      "comment_updated_at": "2026-09-18T20:43:44Z",
+      "comment_body_sha256": "9d032402b7d8089121d3712c06566ed1bfb43aba4e37afedb5c0174cdf3e33d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151242,
+      "author": "giodl73-repo",
+      "author_id": 235387111,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T20:44:55.392Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/embedded-long-link-chunks",
+        "head_sha": "ba2fb53f2355891cb21744f8083e0b19afaa2599",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
