@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-18T07:17:56.654Z",
+  "updated_at": "2026-09-18T07:18:10.621Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5438155995:2026-08-27T11:12:48Z:re_review",
-      "comment_id": "5438155995",
-      "comment_version_key": "5438155995:2026-08-27T11:12:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5438155995",
-      "comment_created_at": "2026-08-27T11:12:48Z",
-      "comment_updated_at": "2026-08-27T11:12:48Z",
-      "comment_body_sha256": "1bf5f91ad43165595152c037cae30e2c74c22e1105461b61b8c31b8197ac29a6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T03:07:49.858Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5439537956:2026-08-27T13:03:55Z:re_review",
       "comment_id": "5439537956",
@@ -32235,6 +32208,39 @@
       "status": "skipped",
       "processed_at": "2026-09-18T07:17:56.654Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147961:5659708396:2026-09-18T07:12:59Z:clawsweeper_needs_human",
+      "comment_id": "5659708396",
+      "comment_version_key": "5659708396:2026-09-18T07:12:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147961#issuecomment-5659708396",
+      "comment_created_at": "2026-09-14T06:03:40Z",
+      "comment_updated_at": "2026-09-18T07:12:59Z",
+      "comment_body_sha256": "3581f9c329cbe7146a339bdcc5a404316355f9f0cdc3ad7c812003af23cc526f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147961,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The current-head CI shard failure remains unexplained because its artifact log could not be inspected; the body also discloses an unresolved inventory-test timeout. (sha=b5b654248d8427c1b1e259551849f5c338ad3bee)",
+      "expected_head_sha": "b5b654248d8427c1b1e259551849f5c338ad3bee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T07:18:10.621Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/test-system-agent-timeout-boundary",
+        "head_sha": "b5b654248d8427c1b1e259551849f5c338ad3bee",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
