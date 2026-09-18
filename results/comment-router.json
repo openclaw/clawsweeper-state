@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T02:11:38.375Z",
+  "updated_at": "2026-09-18T02:11:49.505Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151083:5720133624:2026-09-17T19:37:19Z:re_review",
-      "comment_id": "5720133624",
-      "comment_version_key": "5720133624:2026-09-17T19:37:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151083#issuecomment-5720133624",
-      "comment_created_at": "2026-09-17T19:37:19Z",
-      "comment_updated_at": "2026-09-17T19:37:19Z",
-      "comment_body_sha256": "461170c2c0b49eb967495a1fdc8f579788fbc2a34a18cbc1228e60f0d86cb9d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151083,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T19:38:11.315Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-thread-test-boundary-pr148360",
-        "head_sha": "35775ff702143114febf573320a6dcd63b076243",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138338:5542318458:2026-09-17T19:36:22Z:clawsweeper_needs_human",
       "comment_id": "5542318458",
@@ -33513,6 +33466,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151313:5724040115:2026-09-18T02:10:53Z:clawsweeper_needs_human",
+      "comment_id": "5724040115",
+      "comment_version_key": "5724040115:2026-09-18T02:10:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151313#issuecomment-5724040115",
+      "comment_created_at": "2026-09-18T02:10:53Z",
+      "comment_updated_at": "2026-09-18T02:10:53Z",
+      "comment_body_sha256": "f206da62647d73ca044dc3ddeb87ee4faaecf13fbc7f3a6369ddedc12963aca5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151313,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied Vitest evidence exercises the media-migration helper with temporary SQLite/files and constructed receipt inputs, but does not show... (sha=fc6e50e5e88f5502f2b7e360ae27bfaae961c7ea)",
+      "expected_head_sha": "fc6e50e5e88f5502f2b7e360ae27bfaae961c7ea",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T02:11:49.505Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/archive-refusal-recoverable-150201",
+        "head_sha": "fc6e50e5e88f5502f2b7e360ae27bfaae961c7ea",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
