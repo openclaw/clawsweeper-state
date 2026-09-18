@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T16:08:34.518Z",
+  "updated_at": "2026-09-18T16:08:43.454Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151157:5728356722:2026-09-18T09:55:09Z:re_review",
-      "comment_id": "5728356722",
-      "comment_version_key": "5728356722:2026-09-18T09:55:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5728356722",
-      "comment_created_at": "2026-09-18T09:55:09Z",
-      "comment_updated_at": "2026-09-18T09:55:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151157,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T09:56:05.026Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-schtasks-draining-owner",
-        "head_sha": "c6df9ed0cc737bfa9e8d62b2cc293229ea046ef9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151680:5728361132:2026-09-18T09:55:33Z:clawsweeper_needs_human",
       "comment_id": "5728361132",
@@ -33559,6 +33512,39 @@
         "kind": "pull_request",
         "branch": "refactor/packed-openclaw-tarball-cleanup",
         "head_sha": "274914849842e5555579fd07b0aeab4f1d1d77d3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141843:5579437105:2026-09-18T16:06:53Z:clawsweeper_needs_human",
+      "comment_id": "5579437105",
+      "comment_version_key": "5579437105:2026-09-18T16:06:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141843#issuecomment-5579437105",
+      "comment_created_at": "2026-09-08T04:51:42Z",
+      "comment_updated_at": "2026-09-18T16:06:53Z",
+      "comment_body_sha256": "96f869aafb216cbd39ae91e0834c70fc5658571c096d8994e133e3ec46b0cd5f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141843,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the matching-body transcript proves real Responses transport failures reach the changed classi... (sha=38d5567aedff0ef916e01d7886d12fd9a65489c9)",
+      "expected_head_sha": "38d5567aedff0ef916e01d7886d12fd9a65489c9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T16:08:43.454Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/failover-5xx-server-error",
+        "head_sha": "38d5567aedff0ef916e01d7886d12fd9a65489c9",
         "cluster_id": null,
         "job_path": null
       }
