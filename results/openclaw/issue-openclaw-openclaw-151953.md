@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151953"
-mode: "autonomous"
-run_id: "35369599049"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35369599049"
+mode: "plan"
+run_id: "35377385717"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35377385717"
 head_sha: "0781fb7c4cb4645fae809ba113d7ade36605a576"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-18T17:33:58.797Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151953"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151953"
+published_at: "2026-09-18T18:02:34.797Z"
+canonical: "#151953"
+canonical_issue: "#151953"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35369599049](https://github.com/openclaw/clawsweeper/actions/runs/35369599049)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35377385717](https://github.com/openclaw/clawsweeper/actions/runs/35377385717)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151953
+Canonical: #151953
 
 ## Summary
 
-Source inspection confirms the reasoning-visibility gap at preflight main d9111c3f73f791274c170f30b755935192e37435. A focused fix artifact is ready; implementation, failing regression, Apple validation, and screenshots remain blocked on this read-only Linux host. No files or GitHub state changed.
+Plan one focused native chat fix for #151953. Source inspection at preflight main b40b81637df70461910a4ba529a9bf096b2eb0e0 supports the reported metadata/rendering gap. No files or GitHub state changed. Executable reproduction, Apple builds, device validation, and screenshot delivery remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection confirms the reasoning-visibility gap at preflight main d9111c
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151953 | fix_needed | blocked | canonical | Implementation is blocked by read-only filesystem permissions. The required failing native regression, Apple builds, real iOS flow, and screenshot delivery need an authorized Apple execution environment; source inspection alone does not satisfy those gates. |
-| cluster:issue-openclaw-openclaw-151953 | build_fix_artifact | planned |  | The non-security bug has an existing native owner and existing Gateway metadata; no new configuration, protocol, or persistence schema is needed. |
+| #151953 | fix_needed | planned | canonical | The canonical issue describes a bounded existing-behavior defect. Preserve it open while the planned fix establishes executable reproduction and completes native validation. |
 
 ## Needs Human
 
