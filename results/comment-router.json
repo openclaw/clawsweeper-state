@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T17:42:54.228Z",
+  "updated_at": "2026-09-18T17:43:03.249Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151691:5728513315:2026-09-18T11:59:58Z:clawsweeper_needs_human",
-      "comment_id": "5728513315",
-      "comment_version_key": "5728513315:2026-09-18T11:59:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151691#issuecomment-5728513315",
-      "comment_created_at": "2026-09-18T10:09:32Z",
-      "comment_updated_at": "2026-09-18T11:59:58Z",
-      "comment_body_sha256": "33bd28d0850ae22abfbffe8274f15758edfd7d6280632e2777d36411f40c32a3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151691,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Windows installations that previously entered Startup fallback after uncertain task inspection or registration can now stop with an error and require operator recovery. (sha=560be80a97c43781a4a15e95949186727be5d4e1)",
-      "expected_head_sha": "560be80a97c43781a4a15e95949186727be5d4e1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T12:01:36.101Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/service-definition-reconcile",
-        "head_sha": "560be80a97c43781a4a15e95949186727be5d4e1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151759:5729675765:2026-09-18T12:00:59Z:clawsweeper_needs_human",
       "comment_id": "5729675765",
@@ -33326,6 +33293,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148630:5733884699:2026-09-18T17:41:58Z:re_review",
+      "comment_id": "5733884699",
+      "comment_version_key": "5733884699:2026-09-18T17:41:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148630#issuecomment-5733884699",
+      "comment_created_at": "2026-09-18T17:41:58Z",
+      "comment_updated_at": "2026-09-18T17:41:58Z",
+      "comment_body_sha256": "cd4e5308d4c1e64c9678af3ccbe101431a112bf191022dd32a1590eaf30aee83",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148630,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T17:43:00.246Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/session-maintenance-worker-integration",
+        "head_sha": "c6f1808773a04f5c30b25b8c4b4b9f4915775be0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
