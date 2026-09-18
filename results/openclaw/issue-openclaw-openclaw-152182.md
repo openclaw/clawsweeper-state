@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152182"
-mode: "autonomous"
-run_id: "35399285176"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35399285176"
+mode: "plan"
+run_id: "35403532416"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35403532416"
 head_sha: "150c3bb8539ebed7877c950ff9557e2c38788a11"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-18T22:29:01.011Z"
-canonical: "https://github.com/openclaw/openclaw/issues/152182"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/152182"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-18T22:57:30.064Z"
+canonical: "#152182"
+canonical_issue: "#152182"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35399285176](https://github.com/openclaw/clawsweeper/actions/runs/35399285176)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35403532416](https://github.com/openclaw/clawsweeper/actions/runs/35403532416)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/152182
+Canonical: #152182
 
 ## Summary
 
-Source inspection confirms the reported failure path on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. A narrow repair artifact is ready for the executor; no files or GitHub state were changed.
+Plan a narrow repair for #152182. Source inspection at preflight main ed8267612dccd8053f0fe9bac8b9ac44dff1d843 supports the reported lifecycle/status inconsistency. Runtime reproduction and validation remain pending; no files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source inspection confirms the reported failure path on preflight main. Implemen
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152182 | fix_needed | blocked | canonical | Implementation is blocked on a writable execution host with dependencies. Establish the required failing real-tool regression before production edits; stop and return to triage if it does not reproduce on refreshed main. |
-| #96534 | keep_related | planned | related | Keep open; do not expand this repair into alternate-provider recovery. |
-| #113553 | keep_closed | skipped | related | Historical context only; no closure or implementation action. |
-| cluster:issue-openclaw-openclaw-152182 | build_fix_artifact | planned | canonical | Emit a non-mutating repair plan despite the current implementation blocker. |
+| #152182 | fix_needed | planned | canonical | The report describes broken documented keyword fallback, with a narrow existing owner. Require a failing regression before implementation; keep the issue open. |
+| #96534 | keep_related | planned | related | Different provider transition and recovery scope; preserve its separate repair path. |
+| #113553 | keep_closed | skipped | related | Historical context for a distinct resolved initialization defect. |
 
 ## Needs Human
 
