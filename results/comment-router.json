@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T01:33:18.572Z",
+  "updated_at": "2026-09-18T01:33:19.956Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151065:5719831764:2026-09-17T19:12:05Z:re_review",
-      "comment_id": "5719831764",
-      "comment_version_key": "5719831764:2026-09-17T19:12:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151065#issuecomment-5719831764",
-      "comment_created_at": "2026-09-17T19:12:05Z",
-      "comment_updated_at": "2026-09-17T19:12:05Z",
-      "comment_body_sha256": "dbb357b2c056a1e5d68821f242d855fdccd3ef497dff19809abbd022dc39dcf2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151065,
-      "author": "stackingrockss",
-      "author_id": 14251636,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T19:13:00.565Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/151007-unattended-completion",
-        "head_sha": "0bc706583cc6db4991fb89188b65701b24828955",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150224:5702717593:2026-09-17T19:14:42Z:clawsweeper_needs_human",
       "comment_id": "5702717593",
@@ -33436,6 +33389,39 @@
         "kind": "pull_request",
         "branch": "openclaw/fix-openclaw-remote-portal-routing",
         "head_sha": "e3a193122245ad229b52f94c7804117697d4716e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:465:5714982396:2026-09-18T01:23:58Z:clawsweeper_needs_human",
+      "comment_id": "5714982396",
+      "comment_version_key": "5714982396:2026-09-18T01:23:58Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/465#issuecomment-5714982396",
+      "comment_created_at": "2026-09-17T13:16:37Z",
+      "comment_updated_at": "2026-09-18T01:23:58Z",
+      "comment_body_sha256": "9828630d668fa0af669d89c95f1296b33ddefad78384bc68617f8915a19adb3b",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 465,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the Linux timings exercise successful replaceFileAtomicSync routes, while paired admission-and... (sha=df2f83bb957f78909e7edd0a4720c3a0dc0a903a)",
+      "expected_head_sha": "df2f83bb957f78909e7edd0a4720c3a0dc0a903a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T01:33:19.956Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/copy-fallback-sync-primary-20260917",
+        "head_sha": "df2f83bb957f78909e7edd0a4720c3a0dc0a903a",
         "cluster_id": null,
         "job_path": null
       }
