@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T01:20:29.407Z",
+  "updated_at": "2026-09-18T01:20:56.159Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148574:5671738372:2026-09-17T18:50:09Z:clawsweeper_needs_human",
-      "comment_id": "5671738372",
-      "comment_version_key": "5671738372:2026-09-17T18:50:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148574#issuecomment-5671738372",
-      "comment_created_at": "2026-09-14T22:35:25Z",
-      "comment_updated_at": "2026-09-17T18:50:09Z",
-      "comment_body_sha256": "2d7493c23553f6646fd82756b52de45e5de9e0e94f55bc0859b8d1fe44eb9c07",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148574,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The supplied evidence does not qualify a published updater activating this candidate with retained operator state. A worker initialization or reopen failure could prevent Gateway read... (sha=f05cfd7f21fa9cea60b71660ccb12270c0f6065d)",
-      "expected_head_sha": "f05cfd7f21fa9cea60b71660ccb12270c0f6065d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T18:55:53.013Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/async-task-registry-restoration-stack-20260914",
-        "head_sha": "f05cfd7f21fa9cea60b71660ccb12270c0f6065d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150428:5706826740:2026-09-17T18:54:21Z:clawsweeper_needs_human",
       "comment_id": "5706826740",
@@ -33489,6 +33456,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150919:5723557478:2026-09-18T01:20:03Z:re_review",
+      "comment_id": "5723557478",
+      "comment_version_key": "5723557478:2026-09-18T01:20:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150919#issuecomment-5723557478",
+      "comment_created_at": "2026-09-18T01:20:03Z",
+      "comment_updated_at": "2026-09-18T01:20:03Z",
+      "comment_body_sha256": "895f12e10383ff1d21a71f39a85adaa58908c7316fc0a2e7fd49b0e8c37865e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150919,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T01:20:54.101Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/146331-replay-normalization-boundary",
+        "head_sha": "df851db5f27e423bc116722f77f067912f8c7363",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
