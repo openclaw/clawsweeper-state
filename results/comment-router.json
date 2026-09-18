@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T20:54:16.551Z",
+  "updated_at": "2026-09-18T20:55:10.081Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5733108394:2026-09-18T16:38:05Z:re_review",
-      "comment_id": "5733108394",
-      "comment_version_key": "5733108394:2026-09-18T16:38:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5733108394",
-      "comment_created_at": "2026-09-18T16:38:05Z",
-      "comment_updated_at": "2026-09-18T16:38:05Z",
-      "comment_body_sha256": "2d106a5cacc70323e3369125fa6b08b1f35c8f9382ae4c76f36a0ad756e6334c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T16:39:08.631Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-119992-per-turn-send-budget",
-        "head_sha": "97eb46dc643270e2aeef3d372dfcd198d642624d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1444:5733109854:2026-09-18T16:38:13Z:clawsweeper_needs_human",
       "comment_id": "5733109854",
@@ -32593,6 +32546,39 @@
         "kind": "pull_request",
         "branch": "upd/update-run-abandoned-after-success",
         "head_sha": "1fa5e9c9c3d2d233b39a2eb5898aa3514bf6f2e8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:486:5735844365:2026-09-18T20:53:55Z:clawsweeper_needs_human",
+      "comment_id": "5735844365",
+      "comment_version_key": "5735844365:2026-09-18T20:53:55Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/486#issuecomment-5735844365",
+      "comment_created_at": "2026-09-18T20:33:07Z",
+      "comment_updated_at": "2026-09-18T20:53:55Z",
+      "comment_body_sha256": "8d7cc38841e0cc79e5897cb215541fd235462cc93e824235910c8c21fbc574f4",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 486,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports installed public-API runs through JavaScript and native creation on macOS and Linux, including complete payloads and... (sha=476c36cd63ed39fc41a8f470ef798f9893fa4cd0)",
+      "expected_head_sha": "476c36cd63ed39fc41a8f470ef798f9893fa4cd0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T20:55:10.081Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-atomic-create-20260918",
+        "head_sha": "476c36cd63ed39fc41a8f470ef798f9893fa4cd0",
         "cluster_id": null,
         "job_path": null
       }
