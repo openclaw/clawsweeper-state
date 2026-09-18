@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T08:08:50.710Z",
+  "updated_at": "2026-09-18T08:08:57.205Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150277:5724901282:2026-09-18T03:53:19Z:re_review",
-      "comment_id": "5724901282",
-      "comment_version_key": "5724901282:2026-09-18T03:53:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150277#issuecomment-5724901282",
-      "comment_created_at": "2026-09-18T03:53:19Z",
-      "comment_updated_at": "2026-09-18T03:53:19Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150277,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T03:54:12.412Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/cron-natural-slot-check-20260917",
-        "head_sha": "e96dc9e02b8a59ac92f9006ec8f6dda497bb09c1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151324:5724906336:2026-09-18T03:54:05Z:re_review",
       "comment_id": "5724906336",
@@ -32405,6 +32358,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-cost-duplicate-usage-rows",
         "head_sha": "3d2cb74cc0bad41f8e8a6255ccd23bab1d2ef1ec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2331:5726956498:2026-09-18T08:04:48Z:clawsweeper_needs_human",
+      "comment_id": "5726956498",
+      "comment_version_key": "5726956498:2026-09-18T08:04:48Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2331#issuecomment-5726956498",
+      "comment_created_at": "2026-09-18T07:51:02Z",
+      "comment_updated_at": "2026-09-18T08:04:48Z",
+      "comment_body_sha256": "96ec041cfeee10a649546a1f33a043625b8b8a904aa1c0be507cea0456ebec8b",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - GitHub reports a merge conflict; the eventual resolved merge result has not been reviewed. (sha=d1a671e538be6111375109f8d26b5d277e7d3b84)",
+      "expected_head_sha": "d1a671e538be6111375109f8d26b5d277e7d3b84",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T08:08:57.205Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/heartbeat-access-budget",
+        "head_sha": "d1a671e538be6111375109f8d26b5d277e7d3b84",
         "cluster_id": null,
         "job_path": null
       }
