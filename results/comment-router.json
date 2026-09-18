@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-18T09:54:59.593Z",
+  "updated_at": "2026-09-18T09:55:07.779Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5520300589:2026-09-03T04:21:32Z:re_review",
-      "comment_id": "5520300589",
-      "comment_version_key": "5520300589:2026-09-03T04:21:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5520300589",
-      "comment_created_at": "2026-09-03T04:21:32Z",
-      "comment_updated_at": "2026-09-03T04:21:32Z",
-      "comment_body_sha256": "836ad8a53f36a240a832c1a9defb22fdaeeaeba2819a99e13717fa6b7eef7ac8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — please review the exact head `453211f7af4d7f2d1bdae3f62b4e0f247fbf2b65`. the only delta from the previously reviewed head is the two-line knip config registration above; no production code changed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T04:52:54.300Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151377:5725224047:2026-09-18T04:52:24Z:clawsweeper_needs_human",
       "comment_id": "5725224047",
@@ -33246,6 +33219,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151644:5728291646:2026-09-18T09:54:19Z:re_review",
+      "comment_id": "5728291646",
+      "comment_version_key": "5728291646:2026-09-18T09:54:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151644#issuecomment-5728291646",
+      "comment_created_at": "2026-09-18T09:49:28Z",
+      "comment_updated_at": "2026-09-18T09:54:19Z",
+      "comment_body_sha256": "bcb11d7caaf70fb9185f2656f4dc8e25a90c17cb4551016ea47c7dbc25f49e91",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151644,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T09:55:05.171Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-lease-kind-type",
+        "head_sha": "3907abadd1ac440e0c22a47ea9946647cdc52503",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
