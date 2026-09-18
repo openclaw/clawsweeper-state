@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T16:39:07.720Z",
+  "updated_at": "2026-09-18T16:39:11.018Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151610:5727235557:2026-09-18T10:49:17Z:clawsweeper_needs_human",
-      "comment_id": "5727235557",
-      "comment_version_key": "5727235557:2026-09-18T10:49:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151610#issuecomment-5727235557",
-      "comment_created_at": "2026-09-18T08:16:57Z",
-      "comment_updated_at": "2026-09-18T10:49:17Z",
-      "comment_body_sha256": "82f43c4bd97119b658521a4a54322b5095589eec373a0e1b2a22878d25e03869",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151610,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted branch has not been validated against main's merged registry-borrow implementation; the final reconciliation must preserve its release-callback contract and cleanup own... (sha=70c6952e360660808aba605b33b56d3334c2e66c)",
-      "expected_head_sha": "70c6952e360660808aba605b33b56d3334c2e66c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T10:50:56.824Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/retry-window-progress",
-        "head_sha": "70c6952e360660808aba605b33b56d3334c2e66c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151633:5727533321:2026-09-18T10:34:01Z:clawsweeper_needs_human",
       "comment_id": "5727533321",
@@ -33442,6 +33409,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120491:5733108394:2026-09-18T16:38:05Z:re_review",
+      "comment_id": "5733108394",
+      "comment_version_key": "5733108394:2026-09-18T16:38:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5733108394",
+      "comment_created_at": "2026-09-18T16:38:05Z",
+      "comment_updated_at": "2026-09-18T16:38:05Z",
+      "comment_body_sha256": "2d106a5cacc70323e3369125fa6b08b1f35c8f9382ae4c76f36a0ad756e6334c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120491,
+      "author": "Jerry-Xin",
+      "author_id": 3401616,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T16:39:08.631Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-119992-per-turn-send-budget",
+        "head_sha": "97eb46dc643270e2aeef3d372dfcd198d642624d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
