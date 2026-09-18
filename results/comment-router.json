@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T12:04:03.478Z",
+  "updated_at": "2026-09-18T12:04:14.663Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151245:5726276804:2026-09-18T06:46:19Z:re_review",
-      "comment_id": "5726276804",
-      "comment_version_key": "5726276804:2026-09-18T06:46:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151245#issuecomment-5726276804",
-      "comment_created_at": "2026-09-18T06:46:19Z",
-      "comment_updated_at": "2026-09-18T06:46:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151245,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T06:47:14.795Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-plugin-realpath-alias",
-        "head_sha": "c27324e752dc87843e71530f3a1e96890387f2ef",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127775:5726281964:2026-09-18T06:46:50Z:re_review",
       "comment_id": "5726281964",
@@ -33211,6 +33164,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-projection-lazy-archived-rows-20260918",
         "head_sha": "441e9e2f8df4b7405c1dbf45be5fe5a1e3a144b7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151649:5728039277:2026-09-18T12:03:05Z:clawsweeper_needs_human",
+      "comment_id": "5728039277",
+      "comment_version_key": "5728039277:2026-09-18T12:03:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151649#issuecomment-5728039277",
+      "comment_created_at": "2026-09-18T09:27:36Z",
+      "comment_updated_at": "2026-09-18T12:03:05Z",
+      "comment_body_sha256": "feb68e61430fa11ddcd87f10d2040fc1c9676f5d83795bb55f8fbcf1ec4d01b7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151649,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing non-Git installation with an unreadable or missing OpenClaw manifest now skips before package-manager lookup or service-root redirection; compatibility with supported upgr... (sha=4d8310e498bf509eb75b1caf94ccb47923847abd)",
+      "expected_head_sha": "4d8310e498bf509eb75b1caf94ccb47923847abd",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T12:04:14.663Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/target-metadata-preflight",
+        "head_sha": "4d8310e498bf509eb75b1caf94ccb47923847abd",
         "cluster_id": null,
         "job_path": null
       }
