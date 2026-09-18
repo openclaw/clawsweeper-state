@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T05:06:16.966Z",
+  "updated_at": "2026-09-18T05:06:25.859Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151176:5721773392:2026-09-18T00:40:29Z:clawsweeper_needs_human",
-      "comment_id": "5721773392",
-      "comment_version_key": "5721773392:2026-09-18T00:40:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151176#issuecomment-5721773392",
-      "comment_created_at": "2026-09-17T21:56:59Z",
-      "comment_updated_at": "2026-09-18T00:40:29Z",
-      "comment_body_sha256": "97f6375e7ae0244a049079a55de5f8c962504b8b46b406a3401e82764e21b4b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151176,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured Docker Gateway observations positively cover hosted execution, reuse, recovery, steering,...; Review finding: [P1] Retain cancellation authority until disposal actually drains — extensions/openai/agentsapi-harness.ts:76-82 - [P2] Dispatch completion hooks before returning... (sha=5eb25acf8e1b2b2008735df4ccda0114c3a3acbf)",
-      "expected_head_sha": "5eb25acf8e1b2b2008735df4ccda0114c3a3acbf",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T00:56:17.877Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "sjf/agentsapi-mvp",
-        "head_sha": "5eb25acf8e1b2b2008735df4ccda0114c3a3acbf",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151214:5722342608:2026-09-18T00:32:02Z:clawsweeper_needs_human",
       "comment_id": "5722342608",
@@ -31785,6 +31752,39 @@
       "status": "skipped",
       "processed_at": "2026-09-18T05:06:16.966Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151392:5725442528:2026-09-18T05:05:34Z:clawsweeper_needs_human",
+      "comment_id": "5725442528",
+      "comment_version_key": "5725442528:2026-09-18T05:05:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151392#issuecomment-5725442528",
+      "comment_created_at": "2026-09-18T05:05:34Z",
+      "comment_updated_at": "2026-09-18T05:05:34Z",
+      "comment_body_sha256": "0cf692a77abc420d16b0fe1aec117b974fd6b2522686d1072b535ea4129c3a84",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151392,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An older updater that invokes Doctor without repair flags will no longer import legacy Workshop artifacts during that pass or subsequent startup; affected users may need explicit Doct... (sha=879ff463e575e318f24438fadfd995228daf998f)",
+      "expected_head_sha": "879ff463e575e318f24438fadfd995228daf998f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T05:06:25.859Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/workshop-doctor-only",
+        "head_sha": "879ff463e575e318f24438fadfd995228daf998f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
