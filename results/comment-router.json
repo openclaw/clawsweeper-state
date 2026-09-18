@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T05:59:22.847Z",
+  "updated_at": "2026-09-18T05:59:25.896Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150929:5723849073:2026-09-18T01:51:36Z:re_review",
-      "comment_id": "5723849073",
-      "comment_version_key": "5723849073:2026-09-18T01:51:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5723849073",
-      "comment_created_at": "2026-09-18T01:51:36Z",
-      "comment_updated_at": "2026-09-18T01:51:36Z",
-      "comment_body_sha256": "39558be42c40accec3d4c788b7058fc34361d9662151c7ac5b783183f0004f44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150929,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — p1 fixed via doctor migration (strip-blank-agent-workspaces) that removes saved blank workspace keys and preserves each agent's established default workspace directory; p2 fixed via field-level blank-workspace validation before avatar resolution (no thrown errors). added a real runtime trace: real validateconfigobject returns a clean field-level issue for a blank workspace + avatar, and the real doctor migration runner transforms a v2026.9.4-shaped saved-blank config with no effective-directory change",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T01:57:57.501Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-reject-blank-workspace",
-        "head_sha": "ac58001273be3141826a803653aa7ffabe78c0f1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:118309:5160996295:2026-09-05T20:38:46Z:clawsweeper_auto_repair",
       "comment_id": "5160996295",
@@ -31734,6 +31687,39 @@
         "kind": "pull_request",
         "branch": "codex/ci-stream-startup-single-owner",
         "head_sha": "013a0421a35ea06771ac29b9cf82d2b954592ccc",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151416:5725847010:2026-09-18T05:58:33Z:clawsweeper_needs_human",
+      "comment_id": "5725847010",
+      "comment_version_key": "5725847010:2026-09-18T05:58:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151416#issuecomment-5725847010",
+      "comment_created_at": "2026-09-18T05:58:33Z",
+      "comment_updated_at": "2026-09-18T05:58:33Z",
+      "comment_body_sha256": "a175ecc225094c1fa0efd48d6c68e7d73f9c469ea3474d210046ca9e9d7e349e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151416,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewer could not independently inspect the reported live transcript or fully attribute remaining CI failures because GitHub log downloads redirected to a blocked host. (sha=c1d6170222a1b5e10dbac57acfb8a5dfc71ca181)",
+      "expected_head_sha": "c1d6170222a1b5e10dbac57acfb8a5dfc71ca181",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T05:59:25.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-split-provider",
+        "head_sha": "c1d6170222a1b5e10dbac57acfb8a5dfc71ca181",
         "cluster_id": null,
         "job_path": null
       }
