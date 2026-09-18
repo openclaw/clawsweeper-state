@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T14:37:35.766Z",
+  "updated_at": "2026-09-18T14:37:48.415Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127091:5367081444:2026-09-18T08:41:29Z:clawsweeper_needs_human",
-      "comment_id": "5367081444",
-      "comment_version_key": "5367081444:2026-09-18T08:41:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127091#issuecomment-5367081444",
-      "comment_created_at": "2026-08-21T08:03:10Z",
-      "comment_updated_at": "2026-09-18T08:41:29Z",
-      "comment_body_sha256": "28e6cde18553c287cba93fab36313fea1bcfccd66bdb985148e23b11829513d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127091,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The August 25 terminal trace proves helper substitutions at 305ea08, but does not exercise configured agent request assembly, native C...; Review finding: [P1] [P1] Cover native home instructions in Codex PII mode — extensions/codex/src/app-server/project-doc-thread-config.ts:20-21 - [P2] [P2] Honor the system-prompt... (sha=2fece4129ad025aa8333ab057e694f542043ae29)",
-      "expected_head_sha": "2fece4129ad025aa8333ab057e694f542043ae29",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T08:42:49.594Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "privacy/payload-redaction-v2",
-        "head_sha": "2fece4129ad025aa8333ab057e694f542043ae29",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151157:5721473622:2026-09-17T21:27:11Z:re_review",
       "comment_id": "5721473622",
@@ -33344,6 +33311,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151862:5731572043:2026-09-18T14:36:54Z:clawsweeper_needs_human",
+      "comment_id": "5731572043",
+      "comment_version_key": "5731572043:2026-09-18T14:36:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151862#issuecomment-5731572043",
+      "comment_created_at": "2026-09-18T14:36:54Z",
+      "comment_updated_at": "2026-09-18T14:36:54Z",
+      "comment_body_sha256": "db49c61c42eae2c45474c991305ccf842e474e4502207a8708ad1bad568627d1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151862,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The captured evidence does not yet establish preparation interruption, blocked-stdin cancellation, unjoined-output retention, removal-error handling, real retained-Testbox reuse, or n... (sha=fbb683c10c0ab13fe281c8de15a9b4a7e9664497)",
+      "expected_head_sha": "fbb683c10c0ab13fe281c8de15a9b4a7e9664497",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T14:37:48.415Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/crabbox-cancel-cleanup",
+        "head_sha": "fbb683c10c0ab13fe281c8de15a9b4a7e9664497",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
