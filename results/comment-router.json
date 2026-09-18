@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T13:23:06.738Z",
+  "updated_at": "2026-09-18T13:23:36.315Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135481:5726658510:2026-09-18T07:46:54Z:re_review",
-      "comment_id": "5726658510",
-      "comment_version_key": "5726658510:2026-09-18T07:46:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135481#issuecomment-5726658510",
-      "comment_created_at": "2026-09-18T07:24:02Z",
-      "comment_updated_at": "2026-09-18T07:46:54Z",
-      "comment_body_sha256": "78bc36226a0dc64b8fa36172ce25dfcec9712f1545b235538b7ac40fbe03e598",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135481,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review `f2e35abca78be0c882dce1f42357a219f0d14e88`",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T07:48:24.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/announce-lane-defer-drain",
-        "head_sha": "f2e35abca78be0c882dce1f42357a219f0d14e88",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:145907:5726917855:2026-09-18T07:47:08Z:re_review",
       "comment_id": "5726917855",
@@ -33321,6 +33274,39 @@
         "kind": "pull_request",
         "branch": "codex/copilot-tenant-ownership-20260905",
         "head_sha": "6b19b81459398a56f155300d3dc8e3aebd32870c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151310:5724025954:2026-09-18T13:11:00Z:clawsweeper_needs_human",
+      "comment_id": "5724025954",
+      "comment_version_key": "5724025954:2026-09-18T13:11:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151310#issuecomment-5724025954",
+      "comment_created_at": "2026-09-18T02:09:27Z",
+      "comment_updated_at": "2026-09-18T13:11:00Z",
+      "comment_body_sha256": "acaa44c2aa60e14627feb37750258c2a9bfaa783788a6e9c41644f23f29f59d3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151310,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=23a773242b80161d92d3c3d16732340d412243ee)",
+      "expected_head_sha": "23a773242b80161d92d3c3d16732340d412243ee",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T13:23:36.315Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/flake86-tasks-list-perf",
+        "head_sha": "23a773242b80161d92d3c3d16732340d412243ee",
         "cluster_id": null,
         "job_path": null
       }
