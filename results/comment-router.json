@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T06:36:49.853Z",
+  "updated_at": "2026-09-18T06:37:52.348Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:135418:5724449931:2026-09-18T02:53:43Z:re_review",
-      "comment_id": "5724449931",
-      "comment_version_key": "5724449931:2026-09-18T02:53:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/135418#issuecomment-5724449931",
-      "comment_created_at": "2026-09-18T02:53:43Z",
-      "comment_updated_at": "2026-09-18T02:53:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 135418,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T02:54:37.646Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fractional-media-byte-limit",
-        "head_sha": "b44640a8665e9d1e5374c8f9aef8df10b96e68f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:5724447111:2026-09-18T02:53:21Z:re_review",
       "comment_id": "5724447111",
@@ -31620,6 +31573,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129483:5414387133:2026-09-18T06:29:21Z:clawsweeper_needs_human",
+      "comment_id": "5414387133",
+      "comment_version_key": "5414387133:2026-09-18T06:29:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/129483#issuecomment-5414387133",
+      "comment_created_at": "2026-08-25T17:45:41Z",
+      "comment_updated_at": "2026-09-18T06:29:21Z",
+      "comment_body_sha256": "193dcea31860d32910277de33be13171ec815848cd3581d103763026265b9b45",
+      "repo": "openclaw/openclaw",
+      "issue_number": 129483,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Animated WebP attachments exceeding hard limits will now fail instead of arriving as static images. This is explicitly intended, but downstream chat error presentation and animation p... (sha=c7c5142cd7a9d7958571587a0bea02cb8d93f204)",
+      "expected_head_sha": "c7c5142cd7a9d7958571587a0bea02cb8d93f204",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T06:37:52.348Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/qa-media-animated-webp-preservation",
+        "head_sha": "c7c5142cd7a9d7958571587a0bea02cb8d93f204",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
