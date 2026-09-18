@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T13:18:28.502Z",
+  "updated_at": "2026-09-18T13:18:39.601Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127091:5726876312:2026-09-18T07:42:56Z:re_review",
-      "comment_id": "5726876312",
-      "comment_version_key": "5726876312:2026-09-18T07:42:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127091#issuecomment-5726876312",
-      "comment_created_at": "2026-09-18T07:42:56Z",
-      "comment_updated_at": "2026-09-18T07:42:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127091,
-      "author": "parthamehta123",
-      "author_id": 25328046,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T07:43:47.541Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "privacy/payload-redaction-v2",
-        "head_sha": "4d0285a23b670a4070ba94a6ee356280d48367ca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150871:5726880747:2026-09-18T07:43:22Z:re_review",
       "comment_id": "5726880747",
@@ -33349,6 +33302,39 @@
         "kind": "pull_request",
         "branch": "fix/markdown-details-client-cap",
         "head_sha": "8f5303917431d31afa24b93d1e65fefcc0769ec9",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151157:5721592111:2026-09-18T13:12:10Z:clawsweeper_needs_human",
+      "comment_id": "5721592111",
+      "comment_version_key": "5721592111:2026-09-18T13:12:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5721592111",
+      "comment_created_at": "2026-09-17T21:38:37Z",
+      "comment_updated_at": "2026-09-18T13:12:10Z",
+      "comment_body_sha256": "a7de3c1a3c3c4176dc86c65887e9b3bafbe216f443d5598e590726cce00a1541",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151157,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Direct tasklist checks now govern termination across stop, restart, and installation takeover; native fresh-install and published-updater compatibility results remain unestablished. (sha=ed7b66b94af904c71cbdfd1950ccc63becf96049)",
+      "expected_head_sha": "ed7b66b94af904c71cbdfd1950ccc63becf96049",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T13:18:39.601Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-schtasks-draining-owner",
+        "head_sha": "ed7b66b94af904c71cbdfd1950ccc63becf96049",
         "cluster_id": null,
         "job_path": null
       }
