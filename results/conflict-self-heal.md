@@ -1,6 +1,6 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-18T03:40:36.827Z
+Generated: 2026-09-18T04:36:59.746Z
 Repository: openclaw/openclaw
 
 ## Summary
@@ -17,7 +17,7 @@ Repository: openclaw/openclaw
 
 | PR | Title | Branch | Mergeable | Merge State | Status | Reason |
 | --- | --- | --- | --- | --- | --- | --- |
-| [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | UNKNOWN | UNKNOWN | skipped | head branch does not start with clawsweeper/ |
+| [#126728](https://github.com/openclaw/openclaw/pull/126728) | fix(ci): activate dependency approval commands | fix/dependency-guard-comment-trigger | MERGEABLE | BLOCKED | skipped | head branch does not start with clawsweeper/ |
 | [#121050](https://github.com/openclaw/openclaw/pull/121050) | fix(control-ui): retain webchat context for config restarts | clawsweeper/issue-openclaw-openclaw-55372 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#120569](https://github.com/openclaw/openclaw/pull/120569) | fix(ai): mark missing OpenAI Completions usage unavailable | clawsweeper/issue-openclaw-openclaw-120356 | CONFLICTING | DIRTY | skipped | head repository is unknown |
 | [#120150](https://github.com/openclaw/openclaw/pull/120150) | fix(discord): identify native-command empty reply outcomes | clawsweeper/issue-openclaw-openclaw-120142 | CONFLICTING | DIRTY | skipped | head repository is unknown |
