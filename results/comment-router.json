@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T12:31:36.952Z",
+  "updated_at": "2026-09-18T12:32:04.006Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151452:5726510190:2026-09-18T07:10:51Z:re_review",
-      "comment_id": "5726510190",
-      "comment_version_key": "5726510190:2026-09-18T07:10:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151452#issuecomment-5726510190",
-      "comment_created_at": "2026-09-18T07:10:51Z",
-      "comment_updated_at": "2026-09-18T07:10:51Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151452,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T07:11:47.867Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/2026.8.33-backports",
-        "head_sha": "aef339040ff4efbe4dd896b8d64732e1cf9b0bba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151464:5726512729:2026-09-18T07:11:04Z:clawsweeper_needs_human",
       "comment_id": "5726512729",
@@ -33307,6 +33260,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149309:5685456926:2026-09-18T12:31:01Z:clawsweeper_needs_human",
+      "comment_id": "5685456926",
+      "comment_version_key": "5685456926:2026-09-18T12:31:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149309#issuecomment-5685456926",
+      "comment_created_at": "2026-09-15T18:05:37Z",
+      "comment_updated_at": "2026-09-18T12:31:01Z",
+      "comment_body_sha256": "3181a779573045035826711291d0c5fffe2edb7aa1c6005f6a1ca8ad425fcf3e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149309,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Fresh child startup and teardown may increase model-preparation latency and aggregate memory use; before/after measurements are not supplied. (sha=4e1f69f407085a7f0ce24f5e564a43e9fcaaaaa4)",
+      "expected_head_sha": "4e1f69f407085a7f0ce24f5e564a43e9fcaaaaa4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T12:32:04.006Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/runtime-auth-async-read-publication",
+        "head_sha": "4e1f69f407085a7f0ce24f5e564a43e9fcaaaaa4",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
