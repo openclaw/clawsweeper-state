@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T12:30:51.022Z",
+  "updated_at": "2026-09-18T12:30:59.553Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151157:5721592111:2026-09-18T07:06:08Z:clawsweeper_needs_human",
-      "comment_id": "5721592111",
-      "comment_version_key": "5721592111:2026-09-18T07:06:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5721592111",
-      "comment_created_at": "2026-09-17T21:38:37Z",
-      "comment_updated_at": "2026-09-18T07:06:08Z",
-      "comment_body_sha256": "71e1457160f8f48d0eea84feb287379170f57bbcdec8d2330dcb7c2be6899635",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151157,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The changed exit probe also controls existing Windows login items and installation takeover; completed native and published-updater evidence has not yet established that those workflo... (sha=6ad58d04cae39bd3863d40fb5656b60ea21f1b1e)",
-      "expected_head_sha": "6ad58d04cae39bd3863d40fb5656b60ea21f1b1e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T07:07:28.753Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-schtasks-draining-owner",
-        "head_sha": "6ad58d04cae39bd3863d40fb5656b60ea21f1b1e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151157:5723470469:2026-09-18T01:09:28Z:re_review",
       "comment_id": "5723470469",
@@ -33228,6 +33195,53 @@
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:75299:5730004769:2026-09-18T12:30:05Z:re_review",
+      "comment_id": "5730004769",
+      "comment_version_key": "5730004769:2026-09-18T12:30:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/75299#issuecomment-5730004769",
+      "comment_created_at": "2026-09-18T12:30:05Z",
+      "comment_updated_at": "2026-09-18T12:30:05Z",
+      "comment_body_sha256": "efbeb9956b6e604ebbda842747f4bf0d9e2752622af282e3254a9d31ab7e77ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 75299,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T12:30:57.582Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/command-queue-priority",
+        "head_sha": "574a0eee19a47393bd4b94323717f82743cb08e4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
