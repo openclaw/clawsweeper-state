@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T12:02:01.267Z",
+  "updated_at": "2026-09-18T12:03:37.406Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/CodexBar:3710:5726214321:2026-09-18T06:39:31Z:re_review",
-      "comment_id": "5726214321",
-      "comment_version_key": "5726214321:2026-09-18T06:39:31Z",
-      "comment_url": "https://github.com/steipete/CodexBar/pull/3710#issuecomment-5726214321",
-      "comment_created_at": "2026-09-18T06:39:31Z",
-      "comment_updated_at": "2026-09-18T06:39:31Z",
-      "comment_body_sha256": "f383c5dba7f411b2570c77ec6fe61e9a6ff1a59c7d06d33b06aad5ec46a7439c",
-      "repo": "steipete/CodexBar",
-      "issue_number": 3710,
-      "author": "JoPaMu",
-      "author_id": 288898800,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T06:44:38.421Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/mistral-included-allowances",
-        "head_sha": "0a0a11cf2dfe6ebc8e1169c331319d46585aad6f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3710:5715295722:2026-09-18T06:43:47Z:clawsweeper_auto_repair",
       "comment_id": "5715295722",
@@ -33225,6 +33178,39 @@
         "kind": "pull_request",
         "branch": "codex/qa-transcript-search-escape",
         "head_sha": "e0299aea8f44161026ed2367087365fea76a76fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151760:5729691623:2026-09-18T12:02:19Z:clawsweeper_needs_human",
+      "comment_id": "5729691623",
+      "comment_version_key": "5729691623:2026-09-18T12:02:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151760#issuecomment-5729691623",
+      "comment_created_at": "2026-09-18T12:02:19Z",
+      "comment_updated_at": "2026-09-18T12:02:19Z",
+      "comment_body_sha256": "68a1b09df1fecebeb0b7adb7818f91b58fad8410430d460a6398350e793eda87",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151760,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The reviewed composition uses an unmerged stack parent; integration against main remains to be checked after that dependency lands. (sha=9dd5dd3f8b1315df3c3316b6e5ba61a4dd6b62a1)",
+      "expected_head_sha": "9dd5dd3f8b1315df3c3316b6e5ba61a4dd6b62a1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T12:03:37.406Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/meeting-transcript-next-worker-20260918",
+        "head_sha": "9dd5dd3f8b1315df3c3316b6e5ba61a4dd6b62a1",
         "cluster_id": null,
         "job_path": null
       }
