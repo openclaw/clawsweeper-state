@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T05:29:03.216Z",
+  "updated_at": "2026-09-18T05:29:35.040Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145975:5723529212:2026-09-18T01:16:34Z:re_review",
-      "comment_id": "5723529212",
-      "comment_version_key": "5723529212:2026-09-18T01:16:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145975#issuecomment-5723529212",
-      "comment_created_at": "2026-09-18T01:16:34Z",
-      "comment_updated_at": "2026-09-18T01:16:34Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145975,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T01:17:36.621Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-catalog-version-20260912",
-        "head_sha": "826f30fc2f4582c25f67fdc4957ca84481f096fe",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127671:5462236923:2026-08-29T11:46:09Z:re_review",
       "comment_id": "5462236923",
@@ -31746,6 +31699,39 @@
         "kind": "pull_request",
         "branch": "fix/progress-card-submit-flicker",
         "head_sha": "92784c5e48baf9ef5ab9eced79f81e2b5ae58f2c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151397:5725489868:2026-09-18T05:28:32Z:clawsweeper_needs_human",
+      "comment_id": "5725489868",
+      "comment_version_key": "5725489868:2026-09-18T05:28:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151397#issuecomment-5725489868",
+      "comment_created_at": "2026-09-18T05:11:46Z",
+      "comment_updated_at": "2026-09-18T05:28:32Z",
+      "comment_body_sha256": "55144cbed8ace0f4313a528f6c7d744976ef9759d7d94f74b67ab5213b39a0cf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151397,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied terminal trace executes the changed identity helper, but never reaches config persistence or reads the owner back afterwa... (sha=2324b2d57df0fa41dce3b3f68344962d506b2159)",
+      "expected_head_sha": "2324b2d57df0fa41dce3b3f68344962d506b2159",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T05:29:35.039Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessionstore-agentid-clear-151376",
+        "head_sha": "2324b2d57df0fa41dce3b3f68344962d506b2159",
         "cluster_id": null,
         "job_path": null
       }
