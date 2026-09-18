@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T00:45:36.155Z",
+  "updated_at": "2026-09-18T00:47:07.228Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148290:5666486463:2026-09-17T17:45:07Z:clawsweeper_needs_human",
-      "comment_id": "5666486463",
-      "comment_version_key": "5666486463:2026-09-17T17:45:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148290#issuecomment-5666486463",
-      "comment_created_at": "2026-09-14T15:33:20Z",
-      "comment_updated_at": "2026-09-17T17:45:07Z",
-      "comment_body_sha256": "c521f4a75b4f719ab6b03cabee6f511b43de68c316a99e5c9bb001708d418dc5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148290,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Cached Fleet reads can now fail when whole-database snapshot staging exhausts disk space or quota; representative cold-disk and concurrent-reader costs remain unmeasured. (sha=8d1367eb371405dac78d14b3a283f9e7a28c27a3)",
-      "expected_head_sha": "8d1367eb371405dac78d14b3a283f9e7a28c27a3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T17:52:43.288Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fleet-registry-worker-20260914",
-        "head_sha": "8d1367eb371405dac78d14b3a283f9e7a28c27a3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150413:5706725049:2026-09-17T17:47:05Z:clawsweeper_needs_human",
       "comment_id": "5706725049",
@@ -33409,6 +33376,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150992:5723287162:2026-09-18T00:46:15Z:re_review",
+      "comment_id": "5723287162",
+      "comment_version_key": "5723287162:2026-09-18T00:46:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150992#issuecomment-5723287162",
+      "comment_created_at": "2026-09-18T00:46:15Z",
+      "comment_updated_at": "2026-09-18T00:46:15Z",
+      "comment_body_sha256": "ed4ac346d99413a8ef6d4500515888fa21bd57c283142187ff9b66fb5c83a8b8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150992,
+      "author": "wangmiao0668000666",
+      "author_id": 290215524,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T00:47:04.567Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/onboard-keep-gateway-auth-mode",
+        "head_sha": "3fdf4e7e29cc746612b3ebe8395a35e1791ad81f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
