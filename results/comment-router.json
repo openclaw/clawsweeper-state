@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T08:23:32.835Z",
+  "updated_at": "2026-09-18T08:23:56.490Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:121567:5239844511:2026-09-18T04:00:12Z:clawsweeper_auto_repair",
-      "comment_id": "5239844511",
-      "comment_version_key": "5239844511:2026-09-18T04:00:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/121567#issuecomment-5239844511",
-      "comment_created_at": "2026-08-10T12:03:35Z",
-      "comment_updated_at": "2026-09-18T04:00:12Z",
-      "comment_body_sha256": "8bffab2086729f3c32badbf94487ea9ff6ad91c401b2905cd033307597683608",
-      "repo": "openclaw/openclaw",
-      "issue_number": 121567,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cfd8400b9acb7c10cf4079d76b953b7b3bd2b493)",
-      "expected_head_sha": "cfd8400b9acb7c10cf4079d76b953b7b3bd2b493",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T04:02:10.354Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/claude-cli-commentary-classification",
-        "head_sha": "cfd8400b9acb7c10cf4079d76b953b7b3bd2b493",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149702:5692256339:2026-09-18T04:01:22Z:clawsweeper_needs_human",
       "comment_id": "5692256339",
@@ -32472,6 +32439,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148185:5727298177:2026-09-18T08:22:51Z:re_review",
+      "comment_id": "5727298177",
+      "comment_version_key": "5727298177:2026-09-18T08:22:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148185#issuecomment-5727298177",
+      "comment_created_at": "2026-09-18T08:22:51Z",
+      "comment_updated_at": "2026-09-18T08:22:51Z",
+      "comment_body_sha256": "a475da7937b1a0d3155f36364d045245572eec437e752e16283e92dfadef450d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148185,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T08:23:53.751Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/r21-windows-startup-diagnostics",
+        "head_sha": "6cef6398efa08fc820052bef819046cbe3971835",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
