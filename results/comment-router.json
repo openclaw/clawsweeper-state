@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-18T21:01:15.093Z",
+  "updated_at": "2026-09-18T21:00:42.739Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147457:5733299124:2026-09-18T16:55:04Z:re_review",
+      "comment_id": "5733299124",
+      "comment_version_key": "5733299124:2026-09-18T16:55:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147457#issuecomment-5733299124",
+      "comment_created_at": "2026-09-18T16:55:04Z",
+      "comment_updated_at": "2026-09-18T16:55:04Z",
+      "comment_body_sha256": "8a236b6c30210955196e107e42c56778c653a6c4cf7d494a94fc40400d516a67",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147457,
+      "author": "shad0wca7",
+      "author_id": 9969843,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T16:56:30.896Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kit/matrix-key-publication-durability",
+        "head_sha": "104fd26d2f4e62f86dd65405ab19fe9a35ac09da",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:120491:5224970607:2026-09-18T16:48:37Z:clawsweeper_needs_human",
       "comment_id": "5224970607",
@@ -32418,39 +32465,6 @@
         "kind": "pull_request",
         "branch": "codex/device-auth-worker-cutover",
         "head_sha": "f57991b4a43e3b8d1c5317331962d64aabc71def",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:136518:5514537216:2026-09-18T21:00:14Z:clawsweeper_needs_human",
-      "comment_id": "5514537216",
-      "comment_version_key": "5514537216:2026-09-18T21:00:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136518#issuecomment-5514537216",
-      "comment_created_at": "2026-09-02T18:39:19Z",
-      "comment_updated_at": "2026-09-18T21:00:14Z",
-      "comment_body_sha256": "4988d016ef8968579677e2d840510939c23dc46ae16d21bdae5eaa05e78a3692",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136518,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing Canvas pages, including local documents, will stop opening file, SMB, editor, and other custom handlers; rejected destinations receive a debug-log reason rather than a visibl... (sha=e3c3ed8ba446b4feda61cda1dbdcabb401061de1)",
-      "expected_head_sha": "e3c3ed8ba446b4feda61cda1dbdcabb401061de1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T21:01:15.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/macos-canvas-url-scheme-allowlist",
-        "head_sha": "e3c3ed8ba446b4feda61cda1dbdcabb401061de1",
         "cluster_id": null,
         "job_path": null
       }
