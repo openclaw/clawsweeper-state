@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T02:18:50.449Z",
+  "updated_at": "2026-09-18T02:20:01.361Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151077:5719738719:2026-09-17T19:35:17Z:clawsweeper_needs_human",
-      "comment_id": "5719738719",
-      "comment_version_key": "5719738719:2026-09-17T19:35:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151077#issuecomment-5719738719",
-      "comment_created_at": "2026-09-17T19:04:13Z",
-      "comment_updated_at": "2026-09-17T19:35:17Z",
-      "comment_body_sha256": "90feb189525272394dd3e738edc3e2292742c0cfaa04afd8b47d0297b188c117",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151077,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b71595500c35fcbed76aa343c144f1eea75fa47d)",
-      "expected_head_sha": "b71595500c35fcbed76aa343c144f1eea75fa47d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T19:43:28.670Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/ci-preflight-node-runtime",
-        "head_sha": "b71595500c35fcbed76aa343c144f1eea75fa47d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151092:5720172809:2026-09-17T19:40:39Z:clawsweeper_needs_human",
       "comment_id": "5720172809",
@@ -33543,6 +33510,53 @@
       "status": "skipped",
       "processed_at": "2026-09-18T02:18:50.449Z",
       "target": null
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151157:5724131320:2026-09-18T02:19:08Z:re_review",
+      "comment_id": "5724131320",
+      "comment_version_key": "5724131320:2026-09-18T02:19:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5724131320",
+      "comment_created_at": "2026-09-18T02:19:08Z",
+      "comment_updated_at": "2026-09-18T02:19:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151157,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T02:19:59.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/windows-schtasks-draining-owner",
+        "head_sha": "dc5928e080a0c59829895a0531812025cd551583",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
