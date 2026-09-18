@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T03:32:12.234Z",
+  "updated_at": "2026-09-18T03:32:41.328Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150279:5721905066:2026-09-17T22:10:17Z:re_review",
-      "comment_id": "5721905066",
-      "comment_version_key": "5721905066:2026-09-17T22:10:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150279#issuecomment-5721905066",
-      "comment_created_at": "2026-09-17T22:10:17Z",
-      "comment_updated_at": "2026-09-17T22:10:17Z",
-      "comment_body_sha256": "2e73352530f770929cb6add4e0a7b23ec14d910bb2e3ff9e7dbdd4c3255d88a7",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150279,
-      "author": "jalehman",
-      "author_id": 550978,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T22:18:41.512Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-openclaw-remote-portal-routing",
-        "head_sha": "1ae7e6eb5f15203a910b4392e878bd224df80f6f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150279:5704732145:2026-09-16T21:24:38Z:re_review",
       "comment_id": "5704732145",
@@ -32558,6 +32511,39 @@
         "kind": "pull_request",
         "branch": "openclaw/plugin-swap-outage-investigation",
         "head_sha": "0cf13474eb25e46821dc8d7b7bcc215903629705",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151346:5724745312:2026-09-18T03:31:15Z:clawsweeper_needs_human",
+      "comment_id": "5724745312",
+      "comment_version_key": "5724745312:2026-09-18T03:31:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151346#issuecomment-5724745312",
+      "comment_created_at": "2026-09-18T03:31:15Z",
+      "comment_updated_at": "2026-09-18T03:31:15Z",
+      "comment_body_sha256": "2604be00a5d157a6113318a00cf8ca2abc07440cbad006480952cb805375d729",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151346,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the changed Telegram preview gate is covered by mocked draft-construction tests, and the related issue...; Review finding: [medium] Progress drafts are not content-free — extensions/telegram/src/preview-streaming.ts:46 (sha=3a480b1a393fe38db50242f3e6292ad698024126)",
+      "expected_head_sha": "3a480b1a393fe38db50242f3e6292ad698024126",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T03:32:41.328Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/telegram-progress-draft-with-hooks",
+        "head_sha": "3a480b1a393fe38db50242f3e6292ad698024126",
         "cluster_id": null,
         "job_path": null
       }
