@@ -1,6 +1,53 @@
 {
-  "updated_at": "2026-09-18T20:00:42.606Z",
+  "updated_at": "2026-09-18T20:00:33.559Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151581:5732629465:2026-09-18T15:59:30Z:re_review",
+      "comment_id": "5732629465",
+      "comment_version_key": "5732629465:2026-09-18T15:59:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151581#issuecomment-5732629465",
+      "comment_created_at": "2026-09-18T15:59:30Z",
+      "comment_updated_at": "2026-09-18T15:59:30Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151581,
+      "author": "galiniliev",
+      "author_id": 5711535,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T16:00:43.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sqlite-reader-wal",
+        "head_sha": "49f01e60d9bda1fb3ca84342c83867f6ff48d1c5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151915:5732631740:2026-09-18T15:59:42Z:clawsweeper_needs_human",
       "comment_id": "5732631740",
@@ -32492,39 +32539,6 @@
         "kind": "pull_request",
         "branch": "upd/service-definition-update-repair",
         "head_sha": "5a3d8bad7fbe77c9308e8a92f639b2e5a00dd6e5",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152071:5734862674:2026-09-18T19:59:28Z:clawsweeper_needs_human",
-      "comment_id": "5734862674",
-      "comment_version_key": "5734862674:2026-09-18T19:59:28Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152071#issuecomment-5734862674",
-      "comment_created_at": "2026-09-18T19:04:53Z",
-      "comment_updated_at": "2026-09-18T19:59:28Z",
-      "comment_body_sha256": "675a0f0971471f8cd9551e80c212726064836088e8f642af73191f40e8e6e29d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152071,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflict-resolved dispatcher has not been reviewed or validated; it must retain current main’s Doctor Workshop handler. (sha=a83348a835c1063950a4e0eba341d36670d9e100)",
-      "expected_head_sha": "a83348a835c1063950a4e0eba341d36670d9e100",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T20:00:42.606Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/gateway-shared-worker-command-preparation",
-        "head_sha": "a83348a835c1063950a4e0eba341d36670d9e100",
         "cluster_id": null,
         "job_path": null
       }
