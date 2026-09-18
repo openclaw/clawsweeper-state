@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151792"
-mode: "autonomous"
-run_id: "35357058720"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35357058720"
+mode: "plan"
+run_id: "35359162574"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35359162574"
 head_sha: "0781fb7c4cb4645fae809ba113d7ade36605a576"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-18T15:11:01.416Z"
-canonical: "https://github.com/openclaw/openclaw/issues/151792"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/151792"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-18T15:14:13.645Z"
+canonical: "#151792"
+canonical_issue: "#151792"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35357058720](https://github.com/openclaw/clawsweeper/actions/runs/35357058720)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35359162574](https://github.com/openclaw/clawsweeper/actions/runs/35359162574)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/151792
+Canonical: #151792
 
 ## Summary
 
-Reproduced attachment loss through the local post parser. Prepared a narrow fix artifact; implementation remains blocked by the read-only checkout, missing dependencies, unavailable GitHub access, and outstanding live Feishu proof. No files or GitHub state changed.
+Plan one narrow Feishu repair PR. Source inspection supports the reported attachment loss; runtime reproduction, implementation, tests, and live Feishu proof remain pending. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Reproduced attachment loss through the local post parser. Prepared a narrow fix 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151792 | fix_needed | planned | canonical | The reported omission remains reproducible in the available checkout and has a narrow plugin-local repair. Verification against refreshed main remains a prerequisite to implementation. |
-| cluster:issue-openclaw-openclaw-151792 | build_fix_artifact | planned |  | Prepare one new fix PR on the designated branch after the executor verifies current main and establishes failing dispatch regression coverage. |
-| cluster:issue-openclaw-openclaw-151792 | open_fix_pr | blocked |  | A writable executor with dependencies and GitHub access must reproduce on refreshed main, implement and review the fix, complete required checks, and obtain the requested live Feishu evidence before claiming readiness. |
+| #151792 | fix_needed | planned | canonical | The existing post parser and resource-saving path can absorb this repair without configuration, SDK, storage, or policy changes. Keep the issue open while the executor reproduces and validates the fix. |
 
 ## Needs Human
 
