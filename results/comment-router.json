@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T13:19:01.757Z",
+  "updated_at": "2026-09-18T13:19:11.115Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150946:5716071361:2026-09-18T07:43:45Z:clawsweeper_needs_human",
-      "comment_id": "5716071361",
-      "comment_version_key": "5716071361:2026-09-18T07:43:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150946#issuecomment-5716071361",
-      "comment_created_at": "2026-09-17T14:28:42Z",
-      "comment_updated_at": "2026-09-18T07:43:45Z",
-      "comment_body_sha256": "5280383f8ae3a3edd9c6ee3ae44b0ad5307f755c0810d22f61b623b53ff749e5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150946,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: native-worker discovery and npm execution provide useful positive evidence, but do not show denied des...; Review finding: [P1] [P1] Carry binding authority into final Skill publication — src/agents/workspace-access.ts:349-357 - [P1] [P1] Retain the original binding through ClawHub ins... (sha=eb6a29ef6e68ab5a50a3dacab261c73e65cb159d)",
-      "expected_head_sha": "eb6a29ef6e68ab5a50a3dacab261c73e65cb159d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T07:45:02.509Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/workspace-memory-worker",
-        "head_sha": "eb6a29ef6e68ab5a50a3dacab261c73e65cb159d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151218:5726892740:2026-09-18T07:44:36Z:re_review",
       "comment_id": "5726892740",
@@ -33324,6 +33291,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150929:5730560738:2026-09-18T13:18:09Z:re_review",
+      "comment_id": "5730560738",
+      "comment_version_key": "5730560738:2026-09-18T13:18:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5730560738",
+      "comment_created_at": "2026-09-18T13:18:09Z",
+      "comment_updated_at": "2026-09-18T13:18:09Z",
+      "comment_body_sha256": "6668c1fc424cbab3b437eb7ba4a9a8c30af5b3db9bc2c8e8d06b4c3fc3a662c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150929,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — p1-c fixed: the remaining discovery path is closed. resolvestatemigrationconfiginput keeps the raw saved config as plugindoctorconfig (a legacy locator must survive until its state migration completes), and preflight hands it to plugin migration discovery; there tryresolveconfiguredagentworkspacedir now resolves with blankasomitted so a saved blank enumerates the default directory instead of throwing and refusing the migration. real preflight coverage (not a mocked boundary): state-migrations.plugin-doctor drives the real runpostsessionplugindoctorstaterepairs detection with a saved blank and asserts the migration receives the default serviceworkspacedir with no detection warning. both new regression tests fail on the pre-fix source. core tsgo + agents-root + infra test typecheck lanes pass; focused suites green",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T13:19:08.664Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-reject-blank-workspace",
+        "head_sha": "a693dc0d7c17b10eaaa72d71bbe19bd7c7c5a952",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
