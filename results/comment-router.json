@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T18:43:15.027Z",
+  "updated_at": "2026-09-18T18:43:16.184Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151057:5730842343:2026-09-18T13:41:20Z:re_review",
-      "comment_id": "5730842343",
-      "comment_version_key": "5730842343:2026-09-18T13:41:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151057#issuecomment-5730842343",
-      "comment_created_at": "2026-09-18T13:41:20Z",
-      "comment_updated_at": "2026-09-18T13:41:20Z",
-      "comment_body_sha256": "d8d5acca3f02397a24b82d6067bff8790970583b9642cd61d79fd32801a15289",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151057,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T13:44:28.201Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-cross-repo-github-references-20260917",
-        "head_sha": "6fa7ff7c6f23b349e7eb2d2cd0e07a27c4dd7d4c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151831:5730868113:2026-09-18T13:43:26Z:clawsweeper_needs_human",
       "comment_id": "5730868113",
@@ -32911,6 +32864,39 @@
         "kind": "pull_request",
         "branch": "dependabot/github_actions/actions-15837aacb6",
         "head_sha": "100b3583bb4007a8c8e17f66d81c8119dd3ab958",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:481:5733744581:2026-09-18T18:41:55Z:clawsweeper_auto_repair",
+      "comment_id": "5733744581",
+      "comment_version_key": "5733744581:2026-09-18T18:41:55Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/481#issuecomment-5733744581",
+      "comment_created_at": "2026-09-18T17:30:46Z",
+      "comment_updated_at": "2026-09-18T18:41:55Z",
+      "comment_body_sha256": "0afe273ef4bbb397d90c67ca01c1e8e6968e652e76d681e02aeac150aaa3d26a",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 481,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=c0f194795814e88951f3e358cffa2ce14b6a86da)",
+      "expected_head_sha": "c0f194795814e88951f3e358cffa2ce14b6a86da",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-18T18:43:16.184Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/development-5a423bc483",
+        "head_sha": "c0f194795814e88951f3e358cffa2ce14b6a86da",
         "cluster_id": null,
         "job_path": null
       }
