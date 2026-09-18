@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T09:25:21.731Z",
+  "updated_at": "2026-09-18T09:27:07.529Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:136847:5725206135:2026-09-18T04:35:07Z:re_review",
-      "comment_id": "5725206135",
-      "comment_version_key": "5725206135:2026-09-18T04:35:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/136847#issuecomment-5725206135",
-      "comment_created_at": "2026-09-18T04:35:07Z",
-      "comment_updated_at": "2026-09-18T04:35:07Z",
-      "comment_body_sha256": "20ebfeb5a8f52c1e48a4af503f569974fde712d629b396f06f2202a719612189",
-      "repo": "openclaw/openclaw",
-      "issue_number": 136847,
-      "author": "Weiming-Hu",
-      "author_id": 16421338,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T04:39:35.548Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/voice-agentic-loop-stability",
-        "head_sha": "b0ab64de683ec0369d6df767cc0472e34585e650",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148447:5725226460:2026-09-18T04:37:57Z:re_review",
       "comment_id": "5725226460",
@@ -33293,6 +33246,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151447:5725953892:2026-09-18T09:26:05Z:clawsweeper_needs_human",
+      "comment_id": "5725953892",
+      "comment_version_key": "5725953892:2026-09-18T09:26:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151447#issuecomment-5725953892",
+      "comment_created_at": "2026-09-18T06:10:56Z",
+      "comment_updated_at": "2026-09-18T09:26:05Z",
+      "comment_body_sha256": "5b190ff8056f33603db1be5db741a9290e345a0fb3edbf1d1b6da385437121ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151447,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The original hosted survivor timeout lacks phase/process artifacts; the successful isolated replay does not establish its cause. (sha=f7c29ac4f9fc072fecfd63a4ad47009002811a2d)",
+      "expected_head_sha": "f7c29ac4f9fc072fecfd63a4ad47009002811a2d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T09:27:07.529Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-split-updater",
+        "head_sha": "f7c29ac4f9fc072fecfd63a4ad47009002811a2d",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
