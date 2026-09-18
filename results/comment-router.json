@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T12:52:55.091Z",
+  "updated_at": "2026-09-18T12:55:03.378Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151452:5726163630:2026-09-18T07:23:43Z:clawsweeper_needs_human",
-      "comment_id": "5726163630",
-      "comment_version_key": "5726163630:2026-09-18T07:23:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151452#issuecomment-5726163630",
-      "comment_created_at": "2026-09-18T06:34:03Z",
-      "comment_updated_at": "2026-09-18T07:23:43Z",
-      "comment_body_sha256": "c606d84e6642db24728ace44c2de6aaec8e1b33ba76a35e62e1a2fb652652420",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151452,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing scope-restricted Prometheus scrapers will receive 403 until granted read scope; model defaults, SDK changes, and replay persistence also affect upgrades. These impacts are ex... (sha=aef339040ff4efbe4dd896b8d64732e1cf9b0bba)",
-      "expected_head_sha": "aef339040ff4efbe4dd896b8d64732e1cf9b0bba",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T07:25:00.941Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/2026.8.33-backports",
-        "head_sha": "aef339040ff4efbe4dd896b8d64732e1cf9b0bba",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3705:5708861248:2026-09-18T07:24:18Z:clawsweeper_needs_human",
       "comment_id": "5708861248",
@@ -33280,6 +33247,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151780:5730087157:2026-09-18T12:37:33Z:re_review",
+      "comment_id": "5730087157",
+      "comment_version_key": "5730087157:2026-09-18T12:37:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151780#issuecomment-5730087157",
+      "comment_created_at": "2026-09-18T12:37:33Z",
+      "comment_updated_at": "2026-09-18T12:37:33Z",
+      "comment_body_sha256": "610e3f959faf4dc920124f2e1857d17fcc6104868d67b525b07bdf1257aaeffa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151780,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-09-18T12:55:03.377Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-tool-meta-path-grouping-20260918",
+        "head_sha": "72314f58b878350f91c155e8b1a4c2d16aa15353",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
