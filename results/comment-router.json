@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T09:02:35.373Z",
+  "updated_at": "2026-09-18T09:03:25.012Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151157:5725093777:2026-09-18T04:19:56Z:re_review",
-      "comment_id": "5725093777",
-      "comment_version_key": "5725093777:2026-09-18T04:19:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5725093777",
-      "comment_created_at": "2026-09-18T04:19:56Z",
-      "comment_updated_at": "2026-09-18T04:19:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151157,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T04:21:15.557Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-schtasks-draining-owner",
-        "head_sha": "2dee00403d9e5b185bbffa6186192cc595d8c32e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144947:5635344060:2026-09-18T04:20:58Z:clawsweeper_auto_repair",
       "comment_id": "5635344060",
@@ -33164,6 +33117,39 @@
       "status": "skipped",
       "processed_at": "2026-09-18T09:02:35.373Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:472:5724334508:2026-09-18T09:02:37Z:clawsweeper_needs_human",
+      "comment_id": "5724334508",
+      "comment_version_key": "5724334508:2026-09-18T09:02:37Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/472#issuecomment-5724334508",
+      "comment_created_at": "2026-09-18T02:38:37Z",
+      "comment_updated_at": "2026-09-18T09:02:37Z",
+      "comment_body_sha256": "3304bb4445c3f8820a89367815b614cedeeb91c16ea35c9bdf89e5028ea7a98e",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 472,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Needs real behavior proof before merge: the loader feeds extractArchive and readArchiveEntry, but the captured integration claims and... (sha=a718e472e7ddf04d05609f64d5c3828666d7f7d6)",
+      "expected_head_sha": "a718e472e7ddf04d05609f64d5c3828666d7f7d6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T09:03:25.012Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/portable-archive-codecs-20260918",
+        "head_sha": "a718e472e7ddf04d05609f64d5c3828666d7f7d6",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
