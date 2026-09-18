@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T22:22:18.390Z",
+  "updated_at": "2026-09-18T22:22:51.603Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:89526:4604300916:2026-09-18T18:17:50Z:clawsweeper_auto_repair",
-      "comment_id": "4604300916",
-      "comment_version_key": "4604300916:2026-09-18T18:17:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/89526#issuecomment-4604300916",
-      "comment_created_at": "2026-06-02T16:06:17Z",
-      "comment_updated_at": "2026-09-18T18:17:50Z",
-      "comment_body_sha256": "f3ef4f4684e4de45f7c4a8ffd97860e24b32c0ced2c58b34224c987521b8c1a2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 89526,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=183d408dceeb618b4c8756e8a0c19e8ea662b4ec)",
-      "expected_head_sha": "183d408dceeb618b4c8756e8a0c19e8ea662b4ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T18:19:34.251Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/restart-required-reload-diagnostics",
-        "head_sha": "183d408dceeb618b4c8756e8a0c19e8ea662b4ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:89526:4687683893:2026-06-12T05:14:36Z:re_review",
       "comment_id": "4687683893",
@@ -32285,6 +32252,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152168:5736219786:2026-09-18T22:21:59Z:clawsweeper_needs_human",
+      "comment_id": "5736219786",
+      "comment_version_key": "5736219786:2026-09-18T22:21:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152168#issuecomment-5736219786",
+      "comment_created_at": "2026-09-18T21:09:39Z",
+      "comment_updated_at": "2026-09-18T22:21:59Z",
+      "comment_body_sha256": "6ac01c55755f4bea31cf8b81cbeab63539cfee4050c00d31be6633697ed26c4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed A2A delivery callback is covered by mocked dispatch and a real in-memory task store. The issue’s separate local-patch canaries supp... (sha=ba649e489d5b5604afd51e65558012394cef16b0)",
+      "expected_head_sha": "ba649e489d5b5604afd51e65558012394cef16b0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T22:22:51.603Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/a2a-fallback-notice-completion-152105",
+        "head_sha": "ba649e489d5b5604afd51e65558012394cef16b0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
