@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T22:35:37.576Z",
+  "updated_at": "2026-09-18T22:36:47.602Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152016:5734063166:2026-09-18T18:22:05Z:clawsweeper_needs_human",
-      "comment_id": "5734063166",
-      "comment_version_key": "5734063166:2026-09-18T18:22:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152016#issuecomment-5734063166",
-      "comment_created_at": "2026-09-18T17:57:28Z",
-      "comment_updated_at": "2026-09-18T18:22:05Z",
-      "comment_body_sha256": "07805e3c3bf5177f3ac9caa2eba599e5c9917ac9ec23c875eabb9cd7a2be6ed8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152016,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=549770fb1e23350c19de25688a0c4b4738b5ee1e)",
-      "expected_head_sha": "549770fb1e23350c19de25688a0c4b4738b5ee1e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T18:27:19.403Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/auth-readonly-session-reuse-20260918",
-        "head_sha": "549770fb1e23350c19de25688a0c4b4738b5ee1e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152043:5734401721:2026-09-18T18:25:46Z:clawsweeper_needs_human",
       "comment_id": "5734401721",
@@ -32275,6 +32242,33 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:139396:5737007524:2026-09-18T22:35:42Z:freeform_assist",
+      "comment_id": "5737007524",
+      "comment_version_key": "5737007524:2026-09-18T22:35:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139396#issuecomment-5737007524",
+      "comment_created_at": "2026-09-18T22:35:42Z",
+      "comment_updated_at": "2026-09-18T22:35:42Z",
+      "comment_body_sha256": "bfb3709077a9fa6dbbadb666d7c426b9569fd48b17f6f2d9f98fff93402517c2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139396,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "> forgetprocessedfeishumessage() does not settle an active replay claim. a failed direct send leaks the claim inflight forever. fixed on `e69cab4afe9`. failed direct sends now call `persistclaim.handle.release()`. the new test retries in the same process without resetting `feishudedupestate`. > sending is still stubbed, so production transport delivery and failed-send recovery are unproven. production `handlefeishucardaction` plus the production lark send client now talk to a local http feishu-shaped server. dummy loopback app credentials only. ```console $ node /tmp/proof-139396-loopback.mjs http post /open-apis/auth/v3/tenant_access_token/internal http post /open-apis/im/v1/messages threw feishu send failed: feishu_code 230027 http post /open-apis/im/v1/messages retry_done true phase replay pid 94744 feishu[default]: skipping duplicate card action token proof_ok production_send_loopback_fail_release_retry_then_restart_suppressed ``` same process: first send failed, claim released, retry posted `/open-apis/im/v1/messages` again. new process, same sqlite store: replay skipped, no extra message post. > should direct feishu card-action outcomes inherit the message store's 24-hour retention and shared 10k budget? owner decision, not implemented here. successful direct effects still use the existing 24-hour store. same-process inflight stays at 15 minutes. failed sends no longer persist. please pick whether successful direct outcomes should keep the 24-hour window or expire with the original 15-minute callback map. @clawsweeper re-review",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-18T22:36:47.602Z",
+      "target": null
     }
   ]
 }
