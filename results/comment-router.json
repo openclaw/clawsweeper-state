@@ -2,53 +2,6 @@
   "updated_at": "2026-09-18T08:08:50.710Z",
   "commands": [
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:149702:5724901063:2026-09-18T03:53:17Z:re_review",
-      "comment_id": "5724901063",
-      "comment_version_key": "5724901063:2026-09-18T03:53:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149702#issuecomment-5724901063",
-      "comment_created_at": "2026-09-18T03:53:17Z",
-      "comment_updated_at": "2026-09-18T03:53:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149702,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T03:54:12.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/vcpu-scaling-20260916",
-        "head_sha": "2a2b7dc96e7fbb433ebb925a233f33c10568010a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:150277:5724901282:2026-09-18T03:53:19Z:re_review",
       "comment_id": "5724901282",
       "comment_version_key": "5724901282:2026-09-18T03:53:19Z",
@@ -32386,6 +32339,39 @@
         "kind": "pull_request",
         "branch": "openclaw/remove-obsolete-observer-notice-protocol-wording",
         "head_sha": "b16655bd08e34c8580de7e5f0e1dba148300adbb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151607:5727135711:2026-09-18T08:07:56Z:clawsweeper_needs_human",
+      "comment_id": "5727135711",
+      "comment_version_key": "5727135711:2026-09-18T08:07:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151607#issuecomment-5727135711",
+      "comment_created_at": "2026-09-18T08:07:56Z",
+      "comment_updated_at": "2026-09-18T08:07:56Z",
+      "comment_body_sha256": "a81dfb58c2ac36283d1fd4f634263a1f5c2e896e8f4be80aefd35b390d1a1024",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151607,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=46847ffb12c804e291200908b939414ae04a3693)",
+      "expected_head_sha": "46847ffb12c804e291200908b939414ae04a3693",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T08:08:50.494Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-split-survivor",
+        "head_sha": "46847ffb12c804e291200908b939414ae04a3693",
         "cluster_id": null,
         "job_path": null
       }
