@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137781"
-mode: "autonomous"
-run_id: "35315647377"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35315647377"
+mode: "plan"
+run_id: "35316464413"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35316464413"
 head_sha: "f3b7e8dbb5d7735202c46c94043a641f26a15f56"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-18T07:17:37.631Z"
-canonical: "https://github.com/openclaw/openclaw/issues/137781"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/137781"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-18T07:19:59.257Z"
+canonical: "#137781"
+canonical_issue: "#137781"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35315647377](https://github.com/openclaw/clawsweeper/actions/runs/35315647377)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35316464413](https://github.com/openclaw/clawsweeper/actions/runs/35316464413)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/137781
+Canonical: #137781
 
 ## Summary
 
-Current-main source supports the identity downgrade. Implementation and end-to-end reproduction are blocked by the read-only host and absent dependencies. A narrow fix artifact is prepared; no files or GitHub state changed.
+Plan a narrow metadata-owner fix for #137781. The clean checkout matches preflight main 6e3cfa91dc7e779a02012ffe05e45cdc585b4a5f and supports the reported chat-type downgrade. Runtime reproduction, subsequent inbound behavior, and the UNIQUE exception remain unverified. No files or GitHub state changed; no tests ran.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current-main source supports the identity downgrade. Implementation and end-to-e
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137781 | fix_needed | planned | canonical | Keep the issue open. A shared metadata-owner prevention fix remains justified, but implementation must first establish the required failing regression in a writable executor. |
-| #139011 | keep_closed | skipped | related | Historical context only, as explicitly required by the job; no reopening, replacement closeout, or merge is planned. |
-| cluster:issue-openclaw-openclaw-137781 | build_fix_artifact | planned |  | Artifact preparation is complete. Applying it and establishing regression proof require a writable checkout with repository dependencies; publication remains gated on that proof. |
+| #137781 | fix_needed | planned | canonical | A focused producer-side repair is justified, subject to a failing regression on current main before implementation. |
+| #139011 | keep_closed | skipped | related | No active contributor branch repair or closure is appropriate; preserve acknowledgment of the earlier proposal. |
 
 ## Needs Human
 
