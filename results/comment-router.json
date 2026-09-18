@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T01:12:36.149Z",
+  "updated_at": "2026-09-18T01:12:40.279Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:146868:5719446450:2026-09-17T18:40:08Z:re_review",
-      "comment_id": "5719446450",
-      "comment_version_key": "5719446450:2026-09-17T18:40:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/146868#issuecomment-5719446450",
-      "comment_created_at": "2026-09-17T18:40:08Z",
-      "comment_updated_at": "2026-09-17T18:40:08Z",
-      "comment_body_sha256": "bd2600f020b821c2d274b6a65663da8514624e1485f6e3769260bf67acf11cea",
-      "repo": "openclaw/openclaw",
-      "issue_number": 146868,
-      "author": "tttboy123",
-      "author_id": 95002055,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-17T18:46:42.693Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/resume-native-identity-claim-137085",
-        "head_sha": "adf99e1ebc369d9b4831fb8e72c623c27955b0ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151062:5719517172:2026-09-17T18:45:54Z:clawsweeper_needs_human",
       "comment_id": "5719517172",
@@ -33468,6 +33421,39 @@
         "kind": "pull_request",
         "branch": "feat/clawctl-json",
         "head_sha": "a6f47a4eea4c7ded23e548a3dd5a2880dbb8d15c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151292:5723489634:2026-09-18T01:11:50Z:clawsweeper_needs_human",
+      "comment_id": "5723489634",
+      "comment_version_key": "5723489634:2026-09-18T01:11:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151292#issuecomment-5723489634",
+      "comment_created_at": "2026-09-18T01:11:50Z",
+      "comment_updated_at": "2026-09-18T01:11:50Z",
+      "comment_body_sha256": "d305418c6aeaa253059a7af549edd7c568554f83b87677739c6364e44bf7150d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151292,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed account normalizer feeds Discord credential and access-policy selection, but the captured body supp...; Review finding: [P1] Preserve existing account identities before stripping underscores — src/routing/account-id.ts:28 - [P2] Lowercase the input before checking reserved account n... (sha=a3a602ebda82659eb56452d2f00bfb99bcfed3c0)",
+      "expected_head_sha": "a3a602ebda82659eb56452d2f00bfb99bcfed3c0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T01:12:40.279Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/accounts-strip-leading-underscores",
+        "head_sha": "a3a602ebda82659eb56452d2f00bfb99bcfed3c0",
         "cluster_id": null,
         "job_path": null
       }
