@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T11:41:27.521Z",
+  "updated_at": "2026-09-18T11:41:28.851Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150647:5726111390:2026-09-18T06:28:43Z:re_review",
-      "comment_id": "5726111390",
-      "comment_version_key": "5726111390:2026-09-18T06:28:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150647#issuecomment-5726111390",
-      "comment_created_at": "2026-09-18T06:28:43Z",
-      "comment_updated_at": "2026-09-18T06:28:43Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150647,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T06:29:37.981Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-native-merge-admission-diagnostic",
-        "head_sha": "9ea00ac3fc4958cd96c19502287a2ebe56456469",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150350:5726113535:2026-09-18T06:28:58Z:re_review",
       "comment_id": "5726113535",
@@ -33229,6 +33182,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-skills-watch-churn-20260918",
         "head_sha": "2995620749e9c99821bd7e6cfd448b2f325f2c8b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149905:5694730214:2026-09-18T11:31:58Z:clawsweeper_needs_human",
+      "comment_id": "5694730214",
+      "comment_version_key": "5694730214:2026-09-18T11:31:58Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149905#issuecomment-5694730214",
+      "comment_created_at": "2026-09-16T08:51:09Z",
+      "comment_updated_at": "2026-09-18T11:31:58Z",
+      "comment_body_sha256": "71384a734c7d58ff033038fb91d67a8974b7e45fb1a7c0891e2d1bd0828e4a77",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149905,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=69880c16d3672a16e8f6c38a18b78a66b0585bb0)",
+      "expected_head_sha": "69880c16d3672a16e8f6c38a18b78a66b0585bb0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T11:41:28.851Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-workshop-read-worker-20260916",
+        "head_sha": "69880c16d3672a16e8f6c38a18b78a66b0585bb0",
         "cluster_id": null,
         "job_path": null
       }
