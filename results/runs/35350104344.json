@@ -1,0 +1,84 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151789",
+  "mode": "autonomous",
+  "run_id": "35350104344",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35350104344",
+  "head_sha": "f3b7e8dbb5d7735202c46c94043a641f26a15f56",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151789.md",
+  "published_at": "2026-09-18T14:00:50.718Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151789",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151789",
+  "canonical_pr": null,
+  "summary": "Confirmed the filename defect on preflight main 3c4c111b0f71d00f7f94a9f31d5030436370aa4f. Prepared a narrow fix plan. Implementation is blocked by the read-only workspace; lifecycle regression, changed checks, and native Windows validation remain unrun. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151789",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "An ordinary filesystem compatibility bug remains in the existing registered archive filename owner."
+    },
+    {
+      "target": "#150616",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct root cause in the same deletion flow; retain its existing contributor PR independently of this fix."
+    },
+    {
+      "target": "#135349",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical design evidence only; preserve original SQLite identity and existing registry-based readers."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151789",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "One existing resolver can absorb the repair without schema, policy, or migration-owner changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151789",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#151789",
+      "candidate_fix": null,
+      "reason": "Implementation and PR readiness require a writable executor and native Windows proof. Reuse clawsweeper/issue-openclaw-openclaw-151789; the deterministic applicator owns publication after validation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
