@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T02:40:21.172Z",
+  "updated_at": "2026-09-18T02:41:37.561Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151088:5720040639:2026-09-17T19:47:37Z:clawsweeper_needs_human",
-      "comment_id": "5720040639",
-      "comment_version_key": "5720040639:2026-09-17T19:47:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151088#issuecomment-5720040639",
-      "comment_created_at": "2026-09-17T19:29:42Z",
-      "comment_updated_at": "2026-09-17T19:47:37Z",
-      "comment_body_sha256": "5c7680cfe8478cfc77249c4dd531fef7eb383815391a2f3c244d56c3fc19695e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151088,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Strip endpoint metadata from projected libuv handles (P2)** - The prior finding remains unresolved. On supported Node 24.16.0, --report-exclude-network skips reverse DNS but still emits localEndpoint and remoteE...; Review finding: [P2] Strip endpoint metadata from projected libuv handles — src/cli/cli-process-child.test-helpers.ts:50-52 - [medium] Socket endpoints survive the exclusion flag... (sha=053be8861d811fd968ccf2eb00b977381720b947)",
-      "expected_head_sha": "053be8861d811fd968ccf2eb00b977381720b947",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-17T19:52:53.722Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "ci-burden/update-finalization-exit-hang",
-        "head_sha": "053be8861d811fd968ccf2eb00b977381720b947",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151086:5720057009:2026-09-17T19:43:31Z:clawsweeper_needs_human",
       "comment_id": "5720057009",
@@ -33625,6 +33592,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/hermit:48:5707043834:2026-09-18T02:40:50Z:clawsweeper_auto_repair",
+      "comment_id": "5707043834",
+      "comment_version_key": "5707043834:2026-09-18T02:40:50Z",
+      "comment_url": "https://github.com/openclaw/hermit/pull/48#issuecomment-5707043834",
+      "comment_created_at": "2026-09-17T01:30:53Z",
+      "comment_updated_at": "2026-09-18T02:40:50Z",
+      "comment_body_sha256": "14df34f2e979d3e03a6c1e10439fc313ddd9f6480c6fe873927c6c6461a25bc8",
+      "repo": "openclaw/hermit",
+      "issue_number": 48,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=29cbfde2d26e156b9ebd10fd982ff9255a3dab7c)",
+      "expected_head_sha": "29cbfde2d26e156b9ebd10fd982ff9255a3dab7c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T02:41:37.561Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ai-detection-krill",
+        "head_sha": "29cbfde2d26e156b9ebd10fd982ff9255a3dab7c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
