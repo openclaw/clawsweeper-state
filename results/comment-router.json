@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-18T11:02:36.038Z",
+  "updated_at": "2026-09-18T11:02:46.216Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123585:5292293163:2026-08-14T10:30:36Z:re_review",
-      "comment_id": "5292293163",
-      "comment_version_key": "5292293163:2026-08-14T10:30:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123585#issuecomment-5292293163",
-      "comment_created_at": "2026-08-14T10:30:36Z",
-      "comment_updated_at": "2026-08-14T10:30:36Z",
-      "comment_body_sha256": "eb50d856b2da6be33e854b3a77a2c9e3d81deb5664bc2ef8aac2128e99c1b3a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123585,
-      "author": "Chinmayrawat15",
-      "author_id": 88652081,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T05:58:06.413Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:123585:5292897544:2026-08-14T11:43:07Z:re_review",
       "comment_id": "5292897544",
@@ -33196,6 +33169,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150929:5729058318:2026-09-18T11:01:48Z:re_review",
+      "comment_id": "5729058318",
+      "comment_version_key": "5729058318:2026-09-18T11:01:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5729058318",
+      "comment_created_at": "2026-09-18T11:01:48Z",
+      "comment_updated_at": "2026-09-18T11:01:48Z",
+      "comment_body_sha256": "ce27b697e8a144523916f16f60992cf1258f4018ffd860b995feee4041e6251c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150929,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — both revision-2 p1 findings are fixed and pushed as 882ddd663. p1-a: the legacy rule now matches the whole agents object and iterates the keyed entries map values (and the legacy list form), so keyed maps are detected and applylegacycompatibilitystep no longer early-returns with the migration unrun. p1-b: discovery/plugin-metadata workspace resolution (listagentworkspacedirs, runwithcurrentpluginmetadata, the repair sequence scope) treats a saved blank as omitted so the strict resolver cannot abort doctor before the shared migration strips the blank; a real doctor-config-flow test drives a sole-agent config with a saved blank through repair and asserts the blank is stripped and persisted. real-runtime proof (blank-workspace-proof.mts) adds part c (keyed-map detection) and part d (discovery no-abort, strict resolver still rejects)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T11:02:43.887Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-reject-blank-workspace",
+        "head_sha": "882ddd663bfc4c38caf73a5fe44cc47f2da71526",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
