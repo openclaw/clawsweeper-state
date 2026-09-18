@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T11:08:05.050Z",
+  "updated_at": "2026-09-18T11:08:20.331Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:129483:5414387133:2026-09-18T05:59:50Z:clawsweeper_needs_human",
-      "comment_id": "5414387133",
-      "comment_version_key": "5414387133:2026-09-18T05:59:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/129483#issuecomment-5414387133",
-      "comment_created_at": "2026-08-25T17:45:41Z",
-      "comment_updated_at": "2026-09-18T05:59:50Z",
-      "comment_body_sha256": "c81b0b8b4392bd360eedc49932939deb3da9fa8c8e0ce1cd7d0a0891e51692d9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 129483,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Animated WebP attachments exceeding byte or hard-dimension limits will now fail instead of being delivered as static images. The author explicitly selects this tradeoff, but downstrea... (sha=03b7b4061ca85c53a8781b6b5592f9c3004c4af1)",
-      "expected_head_sha": "03b7b4061ca85c53a8781b6b5592f9c3004c4af1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T06:02:14.884Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/qa-media-animated-webp-preservation",
-        "head_sha": "03b7b4061ca85c53a8781b6b5592f9c3004c4af1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:141271:5572269375:2026-09-18T05:55:15Z:clawsweeper_auto_repair",
       "comment_id": "5572269375",
@@ -33312,6 +33279,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:127091:5729117629:2026-09-18T11:07:24Z:re_review",
+      "comment_id": "5729117629",
+      "comment_version_key": "5729117629:2026-09-18T11:07:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/127091#issuecomment-5729117629",
+      "comment_created_at": "2026-09-18T11:07:24Z",
+      "comment_updated_at": "2026-09-18T11:07:24Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 127091,
+      "author": "parthamehta123",
+      "author_id": 25328046,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T11:08:18.330Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "privacy/payload-redaction-v2",
+        "head_sha": "cf2dc2b624b157eddd6e5affec64b439c4deaaa5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
