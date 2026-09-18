@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T14:20:42.519Z",
+  "updated_at": "2026-09-18T14:27:11.091Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151157:5727363602:2026-09-18T08:29:04Z:re_review",
-      "comment_id": "5727363602",
-      "comment_version_key": "5727363602:2026-09-18T08:29:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151157#issuecomment-5727363602",
-      "comment_created_at": "2026-09-18T08:29:04Z",
-      "comment_updated_at": "2026-09-18T08:29:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151157,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T08:30:07.659Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-schtasks-draining-owner",
-        "head_sha": "a997940e455d6e79bfe5c3daedb3962920c243eb",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151467:5727365800:2026-09-18T08:29:17Z:re_review",
       "comment_id": "5727365800",
@@ -33308,6 +33261,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151805:5730327148:2026-09-18T14:16:44Z:clawsweeper_needs_human",
+      "comment_id": "5730327148",
+      "comment_version_key": "5730327148:2026-09-18T14:16:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151805#issuecomment-5730327148",
+      "comment_created_at": "2026-09-18T12:58:51Z",
+      "comment_updated_at": "2026-09-18T14:16:44Z",
+      "comment_body_sha256": "eaecff48a379717b68725ab122496057d84a6651ea9db440f4503cb03ce03546",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151805,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Canonical validation now survives restart through a same-version SQLite column; compatibility coverage exists, but explicit acceptance of that persistent contract is not recorded. (sha=7fb04e0a14c41417150b17894ea12701045810d4)",
+      "expected_head_sha": "7fb04e0a14c41417150b17894ea12701045810d4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T14:27:11.091Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/fleet-gateway-startup-phases",
+        "head_sha": "6473e453226ae110f1af6a777018bfd92c871b06",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
