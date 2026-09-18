@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T13:23:36.315Z",
+  "updated_at": "2026-09-18T13:23:37.752Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145907:5726917855:2026-09-18T07:47:08Z:re_review",
-      "comment_id": "5726917855",
-      "comment_version_key": "5726917855:2026-09-18T07:47:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145907#issuecomment-5726917855",
-      "comment_created_at": "2026-09-18T07:47:08Z",
-      "comment_updated_at": "2026-09-18T07:47:08Z",
-      "comment_body_sha256": "3150e8ce96637b8d59579995d52d2b982bd353a51fc9c24791c751ce47795c38",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145907,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T07:48:24.961Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf20-reply-preview-retirement",
-        "head_sha": "6dad1726711b248d23900ca5859b6caf49a9b17d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:127091:5367081444:2026-09-18T07:44:55Z:clawsweeper_needs_human",
       "comment_id": "5367081444",
@@ -33307,6 +33260,39 @@
         "kind": "pull_request",
         "branch": "upd/flake86-tasks-list-perf",
         "head_sha": "23a773242b80161d92d3c3d16732340d412243ee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151801:5730228245:2026-09-18T13:22:45Z:clawsweeper_needs_human",
+      "comment_id": "5730228245",
+      "comment_version_key": "5730228245:2026-09-18T13:22:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151801#issuecomment-5730228245",
+      "comment_created_at": "2026-09-18T12:49:58Z",
+      "comment_updated_at": "2026-09-18T13:22:45Z",
+      "comment_body_sha256": "bcd898d35316406bbfb23c3884aa876fb6e327a60c50748702cc5a797a982283",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151801,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The explicitly required Windows comparison is unfinished, so the startup latency effect remains unmeasured. (sha=b0b7650affc9f05eb0c04e53688432a342a841b9)",
+      "expected_head_sha": "b0b7650affc9f05eb0c04e53688432a342a841b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T13:23:37.752Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/startup-recovery-backup-eligibility",
+        "head_sha": "b0b7650affc9f05eb0c04e53688432a342a841b9",
         "cluster_id": null,
         "job_path": null
       }
