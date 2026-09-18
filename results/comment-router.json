@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-18T06:04:04.148Z",
+  "updated_at": "2026-09-18T06:04:15.080Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150929:5715467315:2026-09-18T02:02:30Z:clawsweeper_auto_repair",
-      "comment_id": "5715467315",
-      "comment_version_key": "5715467315:2026-09-18T02:02:30Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5715467315",
-      "comment_created_at": "2026-09-17T13:49:39Z",
-      "comment_updated_at": "2026-09-18T02:02:30Z",
-      "comment_body_sha256": "39f080640cba4bfc70c8bc0ee5246324985573d9400ea084293dde7535503bfa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150929,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ac58001273be3141826a803653aa7ffabe78c0f1)",
-      "expected_head_sha": "ac58001273be3141826a803653aa7ffabe78c0f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T02:03:41.060Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/agents-reject-blank-workspace",
-        "head_sha": "ac58001273be3141826a803653aa7ffabe78c0f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150923:5715326784:2026-09-18T02:04:08Z:clawsweeper_needs_human",
       "comment_id": "5715326784",
@@ -31703,6 +31670,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151370:5725884861:2026-09-18T06:03:11Z:re_review",
+      "comment_id": "5725884861",
+      "comment_version_key": "5725884861:2026-09-18T06:03:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151370#issuecomment-5725884861",
+      "comment_created_at": "2026-09-18T06:03:11Z",
+      "comment_updated_at": "2026-09-18T06:03:11Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151370,
+      "author": "masatohoshino",
+      "author_id": 246810661,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-18T06:04:10.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/state-migrations-meeting-transcripts-05c8d6",
+        "head_sha": "a65a7236c7a1f98ac1c173f8041eff8e3c766631",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
