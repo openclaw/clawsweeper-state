@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-18T13:19:11.115Z",
+  "updated_at": "2026-09-18T13:19:35.459Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151218:5726892740:2026-09-18T07:44:36Z:re_review",
-      "comment_id": "5726892740",
-      "comment_version_key": "5726892740:2026-09-18T07:44:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151218#issuecomment-5726892740",
-      "comment_created_at": "2026-09-18T07:44:36Z",
-      "comment_updated_at": "2026-09-18T07:44:36Z",
-      "comment_body_sha256": "93d710a6debed4324487741c9344b298c780207b63bc19d4ecd876ac125f9904",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151218,
-      "author": "fransqaas",
-      "author_id": 128794406,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T07:45:27.495Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/active-memory-escalation-provider-51",
-        "head_sha": "25418dbb048adece0d565d1f578ec2fb0485966c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151590:5726892935:2026-09-18T07:44:37Z:clawsweeper_needs_human",
       "comment_id": "5726892935",
@@ -33338,6 +33291,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150898:5714682301:2026-09-18T13:18:23Z:clawsweeper_needs_human",
+      "comment_id": "5714682301",
+      "comment_version_key": "5714682301:2026-09-18T13:18:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150898#issuecomment-5714682301",
+      "comment_created_at": "2026-09-17T12:54:09Z",
+      "comment_updated_at": "2026-09-18T13:18:23Z",
+      "comment_body_sha256": "ef3dccc75121c9efbfb2d7a7645d6c8da1ccf01b814c68cfc655bf0f5548844e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150898,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the complete matching-source body proves real Linux update/Doctor handoffs and pending-recovery refusa...; Review finding: [P1] [P1] Preserve confirmation for aggressive service rewrites — src/commands/doctor-gateway-services.ts:726-729 - [P1] [P1] Preserve successful task changes when... (sha=2996a7f574493daf93019c1e81f628f4a73693f4)",
+      "expected_head_sha": "2996a7f574493daf93019c1e81f628f4a73693f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-18T13:19:35.459Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/service-install-drift",
+        "head_sha": "2996a7f574493daf93019c1e81f628f4a73693f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
