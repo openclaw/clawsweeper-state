@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-151986"
 mode: "autonomous"
-run_id: "35374111001"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35374111001"
+run_id: "35376811564"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35376811564"
 head_sha: "0781fb7c4cb4645fae809ba113d7ade36605a576"
 workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-18T17:29:58.891Z"
+published_at: "2026-09-18T17:57:08.687Z"
 canonical: "https://github.com/openclaw/openclaw/issues/151986"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/151986"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35374111001](https://github.com/openclaw/clawsweeper/actions/runs/35374111001)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35376811564](https://github.com/openclaw/clawsweeper/actions/runs/35376811564)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/151986
 
 ## Summary
 
-Verified the failed-send Discard gap in source at preflight main 861e65d8c9fb28406c33dcf49c74532228f8d165. Prepared a narrow fix plan. Local implementation, rendered regression execution, and screenshots are blocked by the read-only host and absent dependencies; no files or GitHub state changed.
+Verified the failed-send Discard gap on preflight main b40b81637df70461910a4ba529a9bf096b2eb0e0. Prepared a narrow executor fix plan. Implementation, runtime regression proof, validation, and screenshots remain blocked on this read-only host with no installed dependencies.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Verified the failed-send Discard gap in source at preflight main 861e65d8c9fb284
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #151986 | fix_needed | planned | canonical | An ordinary UI recovery bug with a narrow existing-owner fix; no security-boundary or product-policy change is needed. |
-| #133440 | keep_closed | skipped | related | Historical contract evidence, not an open repair or closure target. |
-| cluster:issue-openclaw-openclaw-151986 | build_fix_artifact | planned |  | A writable executor can implement the bounded repair on clawsweeper/issue-openclaw-openclaw-151986 after establishing the required failing regression. |
+| #151986 | fix_needed | planned | canonical | A narrow existing-behavior repair is supported by current source. The executor must establish a failing rendered regression before changing production code. |
+| #133440 | keep_closed | skipped | related | Already merged historical context, not an open repair candidate or evidence that #151986 is fully fixed. |
+| cluster:issue-openclaw-openclaw-151986 | build_fix_artifact | planned | canonical | The fix artifact is ready for the authorized executor. Reproduction, patching, review, validation, and screenshot delivery remain required before claiming completion. |
 
 ## Needs Human
 
