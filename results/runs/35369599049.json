@@ -1,0 +1,53 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-151953",
+  "mode": "autonomous",
+  "run_id": "35369599049",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35369599049",
+  "head_sha": "0781fb7c4cb4645fae809ba113d7ade36605a576",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-151953.md",
+  "published_at": "2026-09-18T17:33:58.797Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/151953",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/151953",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the reasoning-visibility gap at preflight main d9111c3f73f791274c170f30b755935192e37435. A focused fix artifact is ready; implementation, failing regression, Apple validation, and screenshots remain blocked on this read-only Linux host. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#151953",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#151953",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked by read-only filesystem permissions. The required failing native regression, Apple builds, real iOS flow, and screenshot delivery need an authorized Apple execution environment; source inspection alone does not satisfy those gates."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-151953",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#151953",
+      "candidate_fix": null,
+      "reason": "The non-security bug has an existing native owner and existing Gateway metadata; no new configuration, protocol, or persistence schema is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
