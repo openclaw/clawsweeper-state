@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-137781"
 mode: "autonomous"
-run_id: "35311276962"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35311276962"
+run_id: "35315647377"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35315647377"
 head_sha: "f3b7e8dbb5d7735202c46c94043a641f26a15f56"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-18T06:11:09.110Z"
+published_at: "2026-09-18T07:17:37.631Z"
 canonical: "https://github.com/openclaw/openclaw/issues/137781"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/137781"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35311276962](https://github.com/openclaw/clawsweeper/actions/runs/35311276962)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35315647377](https://github.com/openclaw/clawsweeper/actions/runs/35315647377)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/137781
 
 ## Summary
 
-Source confirms the metadata overwrite path at preflight main ec7fed2142847413b3f582f2b5e622c19c4175a8. Narrow fix artifact prepared; implementation and production-flow reproduction are blocked by the read-only host and absent dependencies. No files or GitHub state changed.
+Current-main source supports the identity downgrade. Implementation and end-to-end reproduction are blocked by the read-only host and absent dependencies. A narrow fix artifact is prepared; no files or GitHub state changed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Source confirms the metadata overwrite path at preflight main ec7fed2142847413b3
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #137781 | fix_needed | planned | canonical | The metadata owner remains a plausible narrow repair target. Reproduce through Gateway preparation, session initialization and SQLite before editing; the complete incident is not yet proven. |
-| #139011 | keep_closed | skipped | related | Preserve historical credit without reopening, replacing or closing this already-closed PR. |
-| cluster:issue-openclaw-openclaw-137781 | build_fix_artifact | planned |  | Provide an executable handoff for the authorized executor. Local implementation remains blocked by host restrictions; failing-before/passing-after proof is mandatory before publication. |
+| #137781 | fix_needed | planned | canonical | Keep the issue open. A shared metadata-owner prevention fix remains justified, but implementation must first establish the required failing regression in a writable executor. |
+| #139011 | keep_closed | skipped | related | Historical context only, as explicitly required by the job; no reopening, replacement closeout, or merge is planned. |
+| cluster:issue-openclaw-openclaw-137781 | build_fix_artifact | planned |  | Artifact preparation is complete. Applying it and establishing regression proof require a writable checkout with repository dependencies; publication remains gated on that proof. |
 
 ## Needs Human
 
