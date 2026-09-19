@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T01:38:30.818Z",
+  "updated_at": "2026-09-19T01:38:51.834Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152060:5734681637:2026-09-18T20:32:38Z:clawsweeper_needs_human",
-      "comment_id": "5734681637",
-      "comment_version_key": "5734681637:2026-09-18T20:32:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152060#issuecomment-5734681637",
-      "comment_created_at": "2026-09-18T18:49:05Z",
-      "comment_updated_at": "2026-09-18T20:32:38Z",
-      "comment_body_sha256": "09164cb56a971109069becdfce5f5f216542feef7767d89aae1b2ff4e29c70a4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152060,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: demonstrate allowed desktop I/O and wrong/reassigned Windows-account rejection, plus signed Mac deskto...; Review finding: [medium] Prove native authority remains valid through final desktop I/O — extensions/crabbox/src/crabbox-worker-desktop-windows.ts:57 (sha=6b9c9016b83c9496fb357b24426a0b63039d6273)",
-      "expected_head_sha": "6b9c9016b83c9496fb357b24426a0b63039d6273",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T20:33:38.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-desktop-macos-windows-20260918",
-        "head_sha": "6b9c9016b83c9496fb357b24426a0b63039d6273",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152024:5734166511:2026-09-18T20:32:52Z:clawsweeper_needs_human",
       "comment_id": "5734166511",
@@ -32830,6 +32797,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:136454:5738311245:2026-09-19T01:37:53Z:re_review",
+      "comment_id": "5738311245",
+      "comment_version_key": "5738311245:2026-09-19T01:37:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/136454#issuecomment-5738311245",
+      "comment_created_at": "2026-09-19T01:37:53Z",
+      "comment_updated_at": "2026-09-19T01:37:53Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 136454,
+      "author": "HGLUSSY",
+      "author_id": 283802306,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T01:38:49.719Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/model-resolve-thinking-override",
+        "head_sha": "98b7df09d474d71c57432d963beb560e7f6cb4c6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
