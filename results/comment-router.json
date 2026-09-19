@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T21:47:26.924Z",
+  "updated_at": "2026-09-19T21:47:52.085Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153004:5743342857:2026-09-19T16:27:01Z:clawsweeper_needs_human",
-      "comment_id": "5743342857",
-      "comment_version_key": "5743342857:2026-09-19T16:27:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153004#issuecomment-5743342857",
-      "comment_created_at": "2026-09-19T16:07:03Z",
-      "comment_updated_at": "2026-09-19T16:27:01Z",
-      "comment_body_sha256": "13d9d77336a6c592c6b54e1d11ff40ad5826e407cf66573126e636284785ac03",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153004,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional imageMethod expands the public plugin contract: a plugin declaring a missing, differently owned, or non-read method loses reader discovery; third-party adoption must foll... (sha=bcfb3476d7edea6dae6f1cae144210e738dac1e1)",
-      "expected_head_sha": "bcfb3476d7edea6dae6f1cae144210e738dac1e1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T16:27:59.611Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-link-reader-images",
-        "head_sha": "bcfb3476d7edea6dae6f1cae144210e738dac1e1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152984:5743087885:2026-09-19T16:22:40Z:clawsweeper_auto_repair",
       "comment_id": "5743087885",
@@ -33021,6 +32988,53 @@
         "kind": "pull_request",
         "branch": "fix/agents-reject-blank-agentdir",
         "head_sha": "587dfb6fb8865fb78df38fbdb831e88368c698b3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153093:5745531144:2026-09-19T21:46:52Z:re_review",
+      "comment_id": "5745531144",
+      "comment_version_key": "5745531144:2026-09-19T21:46:52Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153093#issuecomment-5745531144",
+      "comment_created_at": "2026-09-19T21:46:52Z",
+      "comment_updated_at": "2026-09-19T21:46:52Z",
+      "comment_body_sha256": "98f88ed4d1e8a860db662e94b975bea2fd59e5f2caaf1a897e34fa0466819228",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153093,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T21:47:50.104Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/package-lifecycle-ownership",
+        "head_sha": "8084376e59719992d94fe23683dcfad196e6fed0",
         "cluster_id": null,
         "job_path": null
       },
