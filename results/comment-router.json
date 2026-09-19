@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T22:13:08.308Z",
+  "updated_at": "2026-09-19T22:13:11.651Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:58373:5743694639:2026-09-19T16:57:23Z:re_review",
-      "comment_id": "5743694639",
-      "comment_version_key": "5743694639:2026-09-19T16:57:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/58373#issuecomment-5743694639",
-      "comment_created_at": "2026-09-19T16:57:23Z",
-      "comment_updated_at": "2026-09-19T16:57:23Z",
-      "comment_body_sha256": "ae891fc8c6e6037f98f27e1531d9f2cfd4c15e46bb88fdd1cedf7ba4bd2121e9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 58373,
-      "author": "xiangri678",
-      "author_id": 90504308,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T17:01:37.195Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/non-main-models-bootstrap",
-        "head_sha": "7ae50e0cd4f9d7de566fa9f4a6dbe818e0ec1845",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153042:5743715352:2026-09-19T17:00:09Z:re_review",
       "comment_id": "5743715352",
@@ -33232,6 +33185,39 @@
         "kind": "pull_request",
         "branch": "fix/include-write-through",
         "head_sha": "b4f02ea7dc580af49412198e3424a92d7e1f583f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153110:5744533208:2026-09-19T22:12:18Z:clawsweeper_needs_human",
+      "comment_id": "5744533208",
+      "comment_version_key": "5744533208:2026-09-19T22:12:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153110#issuecomment-5744533208",
+      "comment_created_at": "2026-09-19T18:59:15Z",
+      "comment_updated_at": "2026-09-19T22:12:18Z",
+      "comment_body_sha256": "0a5f76d8379fd153fdcb5b0afaed6eb1b10a2687d05f0f24ccc704f266906e22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Confirm acceptance of the browser-only collapsed layout, including retained Search and integrated history marks, before promoting the preview for merge. (sha=7c66527618cfc9154f27b5c7f7421db04c63d807)",
+      "expected_head_sha": "7c66527618cfc9154f27b5c7f7421db04c63d807",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T22:13:11.651Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/preview-collapsed-sidebar-icon-layout",
+        "head_sha": "7c66527618cfc9154f27b5c7f7421db04c63d807",
         "cluster_id": null,
         "job_path": null
       }
