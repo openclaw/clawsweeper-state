@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152879"
-mode: "autonomous"
-run_id: "35444813446"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35444813446"
+mode: "plan"
+run_id: "35447300369"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35447300369"
 head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-19T13:34:52.744Z"
-canonical: "https://github.com/openclaw/openclaw/issues/152879"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/152879"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-19T14:00:38.005Z"
+canonical: "#152879"
+canonical_issue: "#152879"
 canonical_pr: null
-actions_total: 5
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35444813446](https://github.com/openclaw/clawsweeper/actions/runs/35444813446)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35447300369](https://github.com/openclaw/clawsweeper/actions/runs/35447300369)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/152879
+Canonical: #152879
 
 ## Summary
 
-Current-main source supports the remaining Doctor restoration timeout. Implementation and runtime reproduction are blocked by the read-only host and missing Vitest dependencies. A narrow executor fix artifact is provided; no files or GitHub state were changed.
+Keep the canonical issue open and preserve the existing contributor fix candidate. Do not create a competing PR. Local HEAD matches preflight main; source inspection supports the reported deadline path, but runtime reproduction and candidate validation remain outstanding. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,8 @@ Current-main source supports the remaining Doctor restoration timeout. Implement
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152879 | fix_needed | planned | canonical | A distinct remaining bug is supported by source. Reproduce through finish and the real command reader on a writable executor before changing production code. |
-| #145070 | keep_closed | skipped | related | Historical context only. |
-| #149970 | keep_closed | skipped | related | Merged predecessor, not a viable open repair branch or complete fix for this issue. |
-| #150942 | keep_closed | skipped | related | Historical context only; no closure or reopening proposed. |
-| cluster:issue-openclaw-openclaw-152879 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Implementation remains blocked on a writable executor; PR publication requires successful current-main reproduction and completed validation. |
+| #152879 | keep_canonical | planned | canonical | This is a distinct remaining restoration failure. Keep the report open until a candidate satisfies the required proof; closure is prohibited by this job. |
+| #152917 | keep_related | planned | related | Preserve the contributor candidate and attribution. Inspect the exact diff and failed review output, reproduce through Doctor finish with the real command reader on current main, then validate both transport routes and the required native/updater flows. Prefer repairing this editable branch if needed; the available evidence does not justify replacement, merge, or fixed-by-candidate closeout. |
 
 ## Needs Human
 
