@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T04:04:49.338Z",
+  "updated_at": "2026-09-19T04:05:02.195Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152188:5737224856:2026-09-18T23:03:08Z:re_review",
-      "comment_id": "5737224856",
-      "comment_version_key": "5737224856:2026-09-18T23:03:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152188#issuecomment-5737224856",
-      "comment_created_at": "2026-09-18T23:03:08Z",
-      "comment_updated_at": "2026-09-18T23:03:08Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152188,
-      "author": "MertBasar0",
-      "author_id": 100199793,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T23:04:07.900Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/151986-webchat-discard-failed-send",
-        "head_sha": "de7405437544d5610e798cfc1f907ebb6f44947a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148630:5672696102:2026-09-18T23:03:17Z:clawsweeper_needs_human",
       "comment_id": "5672696102",
@@ -33133,6 +33086,39 @@
         "kind": "pull_request",
         "branch": "openclaw/visualize-session-worktree-status",
         "head_sha": "f46804581d84e4bb9d8d1a096975945ef126b10f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152361:5738413925:2026-09-19T04:03:33Z:clawsweeper_needs_human",
+      "comment_id": "5738413925",
+      "comment_version_key": "5738413925:2026-09-19T04:03:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152361#issuecomment-5738413925",
+      "comment_created_at": "2026-09-19T01:54:24Z",
+      "comment_updated_at": "2026-09-19T04:03:33Z",
+      "comment_body_sha256": "7aee4b51554847e023dd51edc51cdf6f2718680e1baf867d84238106e13ed708",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The previously observed Windows ACP cleanup timeout has not yet been resolved or attributed by completed current-head evidence; Linux passes do not settle that platform-specific uncer... (sha=9bc8fc0a2d5ee9f351884fe585c67c1e6ce66210)",
+      "expected_head_sha": "9bc8fc0a2d5ee9f351884fe585c67c1e6ce66210",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T04:05:02.195Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/fix-plugin-state-lifecycle-custody",
+        "head_sha": "9bc8fc0a2d5ee9f351884fe585c67c1e6ce66210",
         "cluster_id": null,
         "job_path": null
       }
