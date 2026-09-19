@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:50:39.902Z",
+  "updated_at": "2026-09-19T11:52:26.827Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152467:5739855431:2026-09-19T06:12:02Z:automerge",
-      "comment_id": "5739855431",
-      "comment_version_key": "5739855431:2026-09-19T06:12:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152467#issuecomment-5739855431",
-      "comment_created_at": "2026-09-19T06:12:02Z",
-      "comment_updated_at": "2026-09-19T06:12:02Z",
-      "comment_body_sha256": "ad6f63fcf602c0de28db5b4370c8586f1633734145c5f65f2735e4dda03fc741",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152467,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "automerge enabled; current checks are failing: review (152467, 11ff3da5e0554e838c9443c90bb566a6fbb00bda):FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T06:12:54.707Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tool-runtime-deslop",
-        "head_sha": "11ff3da5e0554e838c9443c90bb566a6fbb00bda",
-        "cluster_id": "automerge-openclaw-openclaw-152467",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152467.md"
-      },
-      "actions": [
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152467.md"
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152512:5739499988:2026-09-19T06:12:16Z:clawsweeper_needs_human",
       "comment_id": "5739499988",
@@ -33265,6 +33212,39 @@
         "kind": "pull_request",
         "branch": "openclaw/mention-badge-polish",
         "head_sha": "b1800b9e9b345650b965004c06b203b5b92f2980",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152833:5741619597:2026-09-19T11:51:33Z:clawsweeper_needs_human",
+      "comment_id": "5741619597",
+      "comment_version_key": "5741619597:2026-09-19T11:51:33Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152833#issuecomment-5741619597",
+      "comment_created_at": "2026-09-19T11:51:33Z",
+      "comment_updated_at": "2026-09-19T11:51:33Z",
+      "comment_body_sha256": "210e70ffb8042e69043c85831846a95e00b2bd59f2b45b43bd02d16946b25e03",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152833,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The effect on premature model completion remains unmeasured after the patch; stronger instructions cannot guarantee compliance. (sha=2e147ae5f77585e87ad9507bc958de757a3e551e)",
+      "expected_head_sha": "2e147ae5f77585e87ad9507bc958de757a3e551e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T11:52:26.827Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/continue-after-progress-promises",
+        "head_sha": "2e147ae5f77585e87ad9507bc958de757a3e551e",
         "cluster_id": null,
         "job_path": null
       }
