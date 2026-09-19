@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T07:56:08.428Z",
+  "updated_at": "2026-09-19T07:56:15.113Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152389:5738744943:2026-09-19T03:38:43Z:clawsweeper_auto_repair",
-      "comment_id": "5738744943",
-      "comment_version_key": "5738744943:2026-09-19T03:38:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152389#issuecomment-5738744943",
-      "comment_created_at": "2026-09-19T02:50:17Z",
-      "comment_updated_at": "2026-09-19T03:38:43Z",
-      "comment_body_sha256": "220f7e8b525594df203398efaefb1991a167df6a50a13d0784304e76fdcdc7c0",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5d191b5fb7a8890d65086dd3a590112c1a8a476b)",
-      "expected_head_sha": "5d191b5fb7a8890d65086dd3a590112c1a8a476b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T03:40:06.890Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/judgment-compaction-curation",
-        "head_sha": "dd83dc76c25bf18244c3a94e1877f25cca5ec839",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151016:5718451791:2026-09-19T03:38:47Z:clawsweeper_needs_human",
       "comment_id": "5718451791",
@@ -32706,6 +32673,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151648:5727874804:2026-09-19T07:51:20Z:clawsweeper_needs_human",
+      "comment_id": "5727874804",
+      "comment_version_key": "5727874804:2026-09-19T07:51:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151648#issuecomment-5727874804",
+      "comment_created_at": "2026-09-18T09:14:00Z",
+      "comment_updated_at": "2026-09-19T07:51:20Z",
+      "comment_body_sha256": "d73c59a5cb62cf46e53c97b7bfbd602031f3f4f08aeabd6b030b9d6adbbecacb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151648,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing maintenance sessions will stop when their bound model fails, even if another configured model is healthy; recovery requires fresh admission and a new conversation. The HTTP e... (sha=51413269e969590c7a7e3266ffea338c0528ebed)",
+      "expected_head_sha": "51413269e969590c7a7e3266ffea338c0528ebed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T07:56:15.113Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/system-expert-configured-model-fallback-20260918",
+        "head_sha": "51413269e969590c7a7e3266ffea338c0528ebed",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
