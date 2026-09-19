@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:06:32.791Z",
+  "updated_at": "2026-09-19T11:07:05.918Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4607931039:2026-06-02T23:57:49Z:re_review",
-      "comment_id": "4607931039",
-      "comment_version_key": "4607931039:2026-06-02T23:57:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4607931039",
-      "comment_created_at": "2026-06-02T23:57:49Z",
-      "comment_updated_at": "2026-06-02T23:57:49Z",
-      "comment_body_sha256": "90a8f8ed207dbd5853ab9003b7e2b511ad663ae38d251e8eb9dc509ad809d557",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — head `3a5baafd3` adds doctor migration + fresh-install + conflict tests for followup_queue_entries (see pr body proof). @openclaw-mantis telegram desktop proof: verify this pr by queuing a telegram followup during an active turn, restarting the gateway, and confirming the queued reply is delivered exactly once with reply context intact",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T06:00:20.596Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4608247916:2026-06-03T01:12:55Z:re_review",
       "comment_id": "4608247916",
@@ -32732,6 +32705,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152423:5741312427:2026-09-19T11:06:18Z:re_review",
+      "comment_id": "5741312427",
+      "comment_version_key": "5741312427:2026-09-19T11:06:18Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152423#issuecomment-5741312427",
+      "comment_created_at": "2026-09-19T11:06:18Z",
+      "comment_updated_at": "2026-09-19T11:06:18Z",
+      "comment_body_sha256": "901beb42ad7f7ef485389bd223ed999b1894ba3fbd1ee5ca023599d67cc6164b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152423,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — current head is 0c50264b2144994cd2627420099f64a06f06fb8a. the originating-chat screenshot delivery/readback is recovered in #issuecomment-5741248477 and linked from the updated body. main’s landed oauth settlement owner is retained unchanged; the obsolete branch retry delta is removed. the remaining six badge/fixture/doc files are unchanged, 18 focused composition tests pass, and fresh independent p0–p2 review is clean. current exact-head ci is still running; no gate bypass is requested",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T11:07:04.278Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/mention-badge-polish",
+        "head_sha": "0c50264b2144994cd2627420099f64a06f06fb8a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
