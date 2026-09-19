@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152562",
+  "mode": "autonomous",
+  "run_id": "35425407960",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35425407960",
+  "head_sha": "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152562.md",
+  "published_at": "2026-09-19T06:34:11.873Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152562",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152562",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the status-projection defect on preflight main. Implementation and regression proof are blocked by the read-only host and missing dependencies. No files or GitHub state changed; a narrow fix artifact is prepared.",
+  "actions": [
+    {
+      "target": "#152562",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#152562",
+      "candidate_fix": null,
+      "reason": "The host permits reads only, preventing dependency installation, regression-test edits, and implementation. Establish a failing current-main regression in a writable executor before repairing or publishing."
+    },
+    {
+      "target": "#141458",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#152562",
+      "candidate_fix": null,
+      "reason": "Separate behavior and repair scope; preserve the contributor PR without merging, replacing, or closing it in this job."
+    },
+    {
+      "target": "#91165",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; not a landing branch or closure target."
+    },
+    {
+      "target": "#91596",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Index validity and displayed model are distinct; retain as historical evidence."
+    },
+    {
+      "target": "#91706",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the existing adapter owner; do not resurrect the historical implementation."
+    },
+    {
+      "target": "#144464",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Configuration contract context, not the displayed-model fix; no SDK changes are needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152562",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#152562",
+      "candidate_fix": null,
+      "reason": "A narrow non-security reporting repair has an existing owner and no viable hydrated PR for this specific defect."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
