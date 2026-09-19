@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T17:31:59.771Z",
+  "updated_at": "2026-09-19T17:32:01.970Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:124980:5741288207:2026-09-19T11:02:38Z:re_review",
-      "comment_id": "5741288207",
-      "comment_version_key": "5741288207:2026-09-19T11:02:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/124980#issuecomment-5741288207",
-      "comment_created_at": "2026-09-19T11:02:38Z",
-      "comment_updated_at": "2026-09-19T11:02:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 124980,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T11:03:27.511Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/docs-secrets-quick-path-120355",
-        "head_sha": "c7d6738503d5cc29bf575b22ac2846a4c4b87753",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:146144:5741289050:2026-09-19T11:02:45Z:re_review",
       "comment_id": "5741289050",
@@ -33170,6 +33123,39 @@
         "kind": "pull_request",
         "branch": "codex/trim-shared-worker-host-imports",
         "head_sha": "18ef3fec0573bb3f005dfd4cbe8b38525d77fdd6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153057:5743935859:2026-09-19T17:30:30Z:clawsweeper_needs_human",
+      "comment_id": "5743935859",
+      "comment_version_key": "5743935859:2026-09-19T17:30:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153057#issuecomment-5743935859",
+      "comment_created_at": "2026-09-19T17:30:30Z",
+      "comment_updated_at": "2026-09-19T17:30:30Z",
+      "comment_body_sha256": "430394bccfb4e97a15d9b32f57b2002ccfe26b05c88239c1c3d358cf0cb9e1c5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153057,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=95f684633fded3ee90404e970f96126f51c99d78)",
+      "expected_head_sha": "95f684633fded3ee90404e970f96126f51c99d78",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T17:32:01.970Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/follow-up-on-removing-undo-feature",
+        "head_sha": "95f684633fded3ee90404e970f96126f51c99d78",
         "cluster_id": null,
         "job_path": null
       }
