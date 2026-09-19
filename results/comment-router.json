@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T15:38:04.624Z",
+  "updated_at": "2026-09-19T15:38:25.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152487:5740570673:2026-09-19T08:46:12Z:re_review",
-      "comment_id": "5740570673",
-      "comment_version_key": "5740570673:2026-09-19T08:46:12Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152487#issuecomment-5740570673",
-      "comment_created_at": "2026-09-19T08:46:12Z",
-      "comment_updated_at": "2026-09-19T08:46:12Z",
-      "comment_body_sha256": "208a34393ddb2523c54dd307257f6bcb51ada96c723441e4742124e0247a412a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152487,
-      "author": "kchuang1015",
-      "author_id": 7856561,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T08:47:04.790Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/wiki-query-skip-link-extraction",
-        "head_sha": "ebf1a3a7677012ed3e7240de1d8cac170c502c72",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3135:5377914134:2026-09-19T08:44:59Z:clawsweeper_auto_repair",
       "comment_id": "5377914134",
@@ -33050,6 +33003,39 @@
         "kind": "pull_request",
         "branch": "leon/feature-9876-macos-session-20260829",
         "head_sha": "a49725c176da7f6f4d90a5703d09ac2224b8c630",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152924:5742567135:2026-09-19T15:33:16Z:clawsweeper_needs_human",
+      "comment_id": "5742567135",
+      "comment_version_key": "5742567135:2026-09-19T15:33:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152924#issuecomment-5742567135",
+      "comment_created_at": "2026-09-19T14:15:19Z",
+      "comment_updated_at": "2026-09-19T15:33:16Z",
+      "comment_body_sha256": "b2a31538f4e6631827e9f512739055d7bcffabb24c81dc541a39bad4fbbad661",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152924,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured c033946 CLI output proves config acceptance and canonicalization, but not final sender au...; Review finding: [P1] [P1] Restrict alias migration to channels that use flat DM fields — src/config/validation.ts:148-157 - [P2] [P2] Preserve caller-owned source config during no... (sha=fd9943ae46b30c9ea47081781a0b5494e9027a01)",
+      "expected_head_sha": "fd9943ae46b30c9ea47081781a0b5494e9027a01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T15:38:25.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/dm-nested-config-152564",
+        "head_sha": "fd9943ae46b30c9ea47081781a0b5494e9027a01",
         "cluster_id": null,
         "job_path": null
       }
