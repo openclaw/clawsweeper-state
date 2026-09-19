@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:54:32.739Z",
+  "updated_at": "2026-09-19T11:54:39.678Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119702:5739879348:2026-09-19T06:17:04Z:re_review",
-      "comment_id": "5739879348",
-      "comment_version_key": "5739879348:2026-09-19T06:17:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5739879348",
-      "comment_created_at": "2026-09-19T06:17:04Z",
-      "comment_updated_at": "2026-09-19T06:17:04Z",
-      "comment_body_sha256": "c73360dbd067364c205450cae3f549743b54c6c416ebb7e0ce020780249a2acd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T06:18:15.286Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/json-schema-patternproperties-redos-undici-lock",
-        "head_sha": "398b9319d407f71869f202f38a1a41ba1e319716",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:151823:5739846794:2026-09-19T06:10:06Z:re_review",
       "comment_id": "5739846794",
@@ -33239,6 +33192,39 @@
         "kind": "pull_request",
         "branch": "fix/codex-image-refusal-diagnostics",
         "head_sha": "8bdde98f8848be72fbb29c73c80c4199a08bab20",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152793:5741239490:2026-09-19T11:53:37Z:clawsweeper_needs_human",
+      "comment_id": "5741239490",
+      "comment_version_key": "5741239490:2026-09-19T11:53:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152793#issuecomment-5741239490",
+      "comment_created_at": "2026-09-19T10:55:45Z",
+      "comment_updated_at": "2026-09-19T11:53:37Z",
+      "comment_body_sha256": "d820e6fdae8b1a9196ec741acd6a2edc24242f0100bb36b8524c9b0078024783",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152793,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Compatibility through a published updater remains unverified, although source inspection found no changed migration policy or stored format. (sha=df7ccfe7f6cde6793f22eae4fc9a4dce81273d4f)",
+      "expected_head_sha": "df7ccfe7f6cde6793f22eae4fc9a4dce81273d4f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T11:54:39.678Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/doctor-pending-read-preparation-v1",
+        "head_sha": "df7ccfe7f6cde6793f22eae4fc9a4dce81273d4f",
         "cluster_id": null,
         "job_path": null
       }
