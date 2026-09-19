@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T07:54:43.676Z",
+  "updated_at": "2026-09-19T07:54:46.124Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152118:5735452568:2026-09-19T03:36:31Z:clawsweeper_needs_human",
-      "comment_id": "5735452568",
-      "comment_version_key": "5735452568:2026-09-19T03:36:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152118#issuecomment-5735452568",
-      "comment_created_at": "2026-09-18T19:57:06Z",
-      "comment_updated_at": "2026-09-19T03:36:31Z",
-      "comment_body_sha256": "fc9b5f3b80cab69806ff63eb725aa69cc01191b95bb68fc428d68bf7b707d111",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152118,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Existing installations with eligible fallback chains would automatically continue additional work where quota exhaustion previously stopped the turn; acceptance and upgrade behavior f... (sha=baf0483a2cb22888c96d163687b377761887e170)",
-      "expected_head_sha": "baf0483a2cb22888c96d163687b377761887e170",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T03:37:40.513Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/quota-safe-continuation-20260918",
-        "head_sha": "baf0483a2cb22888c96d163687b377761887e170",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1446:5734373005:2026-09-19T03:36:34Z:clawsweeper_needs_human",
       "comment_id": "5734373005",
@@ -32678,6 +32645,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152618:5740322078:2026-09-19T07:53:50Z:re_review",
+      "comment_id": "5740322078",
+      "comment_version_key": "5740322078:2026-09-19T07:53:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152618#issuecomment-5740322078",
+      "comment_created_at": "2026-09-19T07:53:50Z",
+      "comment_updated_at": "2026-09-19T07:53:50Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152618,
+      "author": "zyz619963502zyz",
+      "author_id": 13896935,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T07:54:43.886Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/memory-status-local-model",
+        "head_sha": "ce1748e53eefed804f5516dbed8e4432bc5a0e04",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
