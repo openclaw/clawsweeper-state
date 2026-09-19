@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T13:36:37.162Z",
+  "updated_at": "2026-09-19T13:36:54.163Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119702:5197143667:2026-09-19T07:12:50Z:clawsweeper_needs_human",
-      "comment_id": "5197143667",
-      "comment_version_key": "5197143667:2026-09-19T07:12:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5197143667",
-      "comment_created_at": "2026-08-05T20:46:06Z",
-      "comment_updated_at": "2026-09-19T07:12:50Z",
-      "comment_body_sha256": "4233d2d50dd67a1a0cf82599423b56462edf6f1fa0c56455af39dcb9d8d9069d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Parse group prefixes before relaxing shared regex rejection (P1)** - The prior blocker remains. For ^(?:a|aaa)+$, tokenization ignores the orphan ? and records : as the first consuming atom. The new overlap cond...; Review finding: [P1] Parse group prefixes before relaxing shared regex rejection — src/security/safe-regex.ts:280-286 - [P1] Treat backreferences as unknown prefix languages — src... (sha=313dda44acadfa396f4468b66bbe0e5da7fc9ea3)",
-      "expected_head_sha": "313dda44acadfa396f4468b66bbe0e5da7fc9ea3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T07:22:58.473Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/json-schema-patternproperties-redos-undici-lock",
-        "head_sha": "313dda44acadfa396f4468b66bbe0e5da7fc9ea3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142863:5596651280:2026-09-19T07:01:57Z:clawsweeper_needs_human",
       "comment_id": "5596651280",
@@ -32943,6 +32910,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152727:5742308929:2026-09-19T13:35:23Z:re_review",
+      "comment_id": "5742308929",
+      "comment_version_key": "5742308929:2026-09-19T13:35:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152727#issuecomment-5742308929",
+      "comment_created_at": "2026-09-19T13:35:23Z",
+      "comment_updated_at": "2026-09-19T13:35:23Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152727,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T13:36:51.853Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-interrupt-stall-152542",
+        "head_sha": "8d20ec13d35ee6dc1447cbf677f3e9f210279221",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
