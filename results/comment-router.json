@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T17:43:04.903Z",
+  "updated_at": "2026-09-19T17:43:35.900Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:steipete/RepoBar:134:5741409910:2026-09-19T11:21:36Z:re_review",
-      "comment_id": "5741409910",
-      "comment_version_key": "5741409910:2026-09-19T11:21:36Z",
-      "comment_url": "https://github.com/steipete/RepoBar/pull/134#issuecomment-5741409910",
-      "comment_created_at": "2026-09-19T11:21:36Z",
-      "comment_updated_at": "2026-09-19T11:21:36Z",
-      "comment_body_sha256": "b09f6f414e277007c6aad89cfcac02392640156b17b43dabb396308493ff4976",
-      "repo": "steipete/RepoBar",
-      "issue_number": 134,
-      "author": "prakersh",
-      "author_id": 20132441,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T11:25:27.592Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/package-app-set-u",
-        "head_sha": "8cff8806da9a7976dd8ca037f1ba59f92b4ffe82",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/RepoBar:134:5741392010:2026-09-19T11:24:39Z:clawsweeper_needs_human",
       "comment_id": "5741392010",
@@ -33136,6 +33089,39 @@
         "kind": "pull_request",
         "branch": "upd/sqlite-worker-native-writes-cleanup-pump",
         "head_sha": "f9d06fe95e1728005cbeceaf6f965cb8d2e7dfcf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153054:5743878581:2026-09-19T17:42:44Z:clawsweeper_auto_repair",
+      "comment_id": "5743878581",
+      "comment_version_key": "5743878581:2026-09-19T17:42:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153054#issuecomment-5743878581",
+      "comment_created_at": "2026-09-19T17:22:50Z",
+      "comment_updated_at": "2026-09-19T17:42:44Z",
+      "comment_body_sha256": "c6fb536155a97e348ea8410e2bf3e603aa4fd408bce7d6a07d881ee8389c90cb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153054,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=1dd3adf00df28f9519dd0c67d17450694036ce6b)",
+      "expected_head_sha": "1dd3adf00df28f9519dd0c67d17450694036ce6b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T17:43:35.900Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/android-talk-split-03-owner-20260919",
+        "head_sha": "1dd3adf00df28f9519dd0c67d17450694036ce6b",
         "cluster_id": null,
         "job_path": null
       }
