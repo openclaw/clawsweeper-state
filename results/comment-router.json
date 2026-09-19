@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T07:54:17.995Z",
+  "updated_at": "2026-09-19T07:54:43.676Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150329:5739038014:2026-09-19T03:35:29Z:re_review",
-      "comment_id": "5739038014",
-      "comment_version_key": "5739038014:2026-09-19T03:35:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150329#issuecomment-5739038014",
-      "comment_created_at": "2026-09-19T03:35:29Z",
-      "comment_updated_at": "2026-09-19T03:35:29Z",
-      "comment_body_sha256": "19985a465a67b3ab60596f17d31245a98e6352bce06fa67a4f4ec589bc28f767",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150329,
-      "author": "giodl73-repo",
-      "author_id": 235387111,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T03:36:31.269Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "user/giodl/node-runtime-conformance-ci",
-        "head_sha": "d27f83c5cc1e13e4624136591300b558cadb48d9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152118:5735452568:2026-09-19T03:36:31Z:clawsweeper_needs_human",
       "comment_id": "5735452568",
@@ -32689,6 +32642,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-maintenance-warm-noop",
         "head_sha": "86cd2f537fc99ac4223f29e4dd2507f888407245",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152460:5739245748:2026-09-19T07:53:43Z:clawsweeper_needs_human",
+      "comment_id": "5739245748",
+      "comment_version_key": "5739245748:2026-09-19T07:53:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152460#issuecomment-5739245748",
+      "comment_created_at": "2026-09-19T04:07:59Z",
+      "comment_updated_at": "2026-09-19T07:53:43Z",
+      "comment_body_sha256": "9e68a52420dde62a64d84edecb0630f30da44b5fe452bfbed7102ebff47e2d00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152460,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=6b0bc580aa58d55eec3f82ede6484e33afcb49df)",
+      "expected_head_sha": "6b0bc580aa58d55eec3f82ede6484e33afcb49df",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T07:54:43.676Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-theme-catalog",
+        "head_sha": "6b0bc580aa58d55eec3f82ede6484e33afcb49df",
         "cluster_id": null,
         "job_path": null
       }
