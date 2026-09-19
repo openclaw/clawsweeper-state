@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T05:49:34.800Z",
+  "updated_at": "2026-09-19T05:50:04.938Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132396:5737905365:2026-09-19T00:36:50Z:re_review",
-      "comment_id": "5737905365",
-      "comment_version_key": "5737905365:2026-09-19T00:36:50Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132396#issuecomment-5737905365",
-      "comment_created_at": "2026-09-19T00:36:50Z",
-      "comment_updated_at": "2026-09-19T00:36:50Z",
-      "comment_body_sha256": "2f21b1d1e4d8a3e3238805aa8c648b5bdd4c596ca201e0508cab51b6e527f7f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132396,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T00:44:29.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/usage-cost-direct-refresh-deadline",
-        "head_sha": "7b487b2f4b2b6586d9c767a6bbafffe5e41cb02f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:132396:5460618663:2026-09-19T00:43:30Z:clawsweeper_needs_human",
       "comment_id": "5460618663",
@@ -33167,6 +33120,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119291:5182357915:2026-09-19T05:48:54Z:clawsweeper_needs_human",
+      "comment_id": "5182357915",
+      "comment_version_key": "5182357915:2026-09-19T05:48:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/119291#issuecomment-5182357915",
+      "comment_created_at": "2026-08-04T17:18:47Z",
+      "comment_updated_at": "2026-09-19T05:48:54Z",
+      "comment_body_sha256": "5aeb8b12d931a13f75fadfa29242acef49883a72bde28ad5c9ec0f173c7d0397",
+      "repo": "openclaw/openclaw",
+      "issue_number": 119291,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected historical owner-call transcript and reported sustained native call support allowed oper...; Review finding: [P1] [P1] Require retained carrier peers before accepting action absence — extensions/facetime/src/runtime-call-control.ts:249-254 - [high] Suppression can end bef... (sha=da0905f8787f0bb82966d626f398799a096328f7)",
+      "expected_head_sha": "da0905f8787f0bb82966d626f398799a096328f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T05:50:04.938Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "omarshahine/facetime-experimental",
+        "head_sha": "da0905f8787f0bb82966d626f398799a096328f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
