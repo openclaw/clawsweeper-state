@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:02:11.583Z",
+  "updated_at": "2026-09-19T11:02:20.061Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5443621724:2026-08-27T18:38:10Z:re_review",
-      "comment_id": "5443621724",
-      "comment_version_key": "5443621724:2026-08-27T18:38:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5443621724",
-      "comment_created_at": "2026-08-27T18:38:10Z",
-      "comment_updated_at": "2026-08-27T18:38:10Z",
-      "comment_body_sha256": "9899a262e261c435ce5d2cd146b0fa09b1ae1a1fd7edbd8aac461a0549793d72",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T06:00:20.595Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5444057950:2026-08-27T19:14:35Z:re_review",
       "comment_id": "5444057950",
@@ -32590,6 +32563,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152801:5741280909:2026-09-19T11:01:32Z:clawsweeper_needs_human",
+      "comment_id": "5741280909",
+      "comment_version_key": "5741280909:2026-09-19T11:01:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152801#issuecomment-5741280909",
+      "comment_created_at": "2026-09-19T11:01:32Z",
+      "comment_updated_at": "2026-09-19T11:01:32Z",
+      "comment_body_sha256": "63cb08e8d68cbcb94ab58da7c101664c01e3991a957a29edca6426fb9443c95b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152801,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Real-browser latency benefit remains unmeasured; the synthetic benchmark has adverse ordinary and dense cases and cannot establish a general speedup. (sha=8192db4fd842365863244c25a13dc4035b5ac9e0)",
+      "expected_head_sha": "8192db4fd842365863244c25a13dc4035b5ac9e0",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T11:02:20.061Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-r2-browser-snapshot-lines-20260919",
+        "head_sha": "8192db4fd842365863244c25a13dc4035b5ac9e0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
