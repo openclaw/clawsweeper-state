@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T01:12:12.300Z",
+  "updated_at": "2026-09-19T01:12:14.235Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148630:5735582506:2026-09-18T20:08:49Z:re_review",
-      "comment_id": "5735582506",
-      "comment_version_key": "5735582506:2026-09-18T20:08:49Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148630#issuecomment-5735582506",
-      "comment_created_at": "2026-09-18T20:08:49Z",
-      "comment_updated_at": "2026-09-18T20:08:49Z",
-      "comment_body_sha256": "70d280363a37a699cb86192ea165722547c055c5ceecdcfed24fea8f5aaa2965",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148630,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T20:09:46.593Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/session-maintenance-worker-integration",
-        "head_sha": "3646a35861c9681fefa9ef5fff39796e52c66a7f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152120:5735478077:2026-09-18T20:09:09Z:clawsweeper_auto_repair",
       "comment_id": "5735478077",
@@ -32826,6 +32779,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152325:5738102711:2026-09-19T01:11:02Z:clawsweeper_auto_merge",
+      "comment_id": "5738102711",
+      "comment_version_key": "5738102711:2026-09-19T01:11:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152325#issuecomment-5738102711",
+      "comment_created_at": "2026-09-19T01:06:00Z",
+      "comment_updated_at": "2026-09-19T01:11:02Z",
+      "comment_body_sha256": "0f06242b1167b8b327f1f617a8314353a26d477450b80dd37b13e1d7be6c72e3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152325,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=c83e4f783075791842eb663d03329dc79e003568)",
+      "expected_head_sha": "c83e4f783075791842eb663d03329dc79e003568",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T01:12:14.235Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-2026-7-34-validation",
+        "head_sha": "c83e4f783075791842eb663d03329dc79e003568",
+        "cluster_id": "automerge-openclaw-openclaw-152325",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152325.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
+          "status": "blocked",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
