@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-152703"
-mode: "autonomous"
-run_id: "35432023343"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35432023343"
+mode: "plan"
+run_id: "35433235159"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35433235159"
 head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-19T08:48:22.150Z"
-canonical: "#152703"
+published_at: "2026-09-19T08:57:45.146Z"
+canonical: "https://github.com/openclaw/openclaw/pull/152703"
 canonical_issue: null
-canonical_pr: "#152703"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/152703"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35432023343](https://github.com/openclaw/clawsweeper/actions/runs/35432023343)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35433235159](https://github.com/openclaw/clawsweeper/actions/runs/35433235159)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: #152703
+Canonical: https://github.com/openclaw/openclaw/pull/152703
 
 ## Summary
 
-Make PR #152703 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+The canonical PR is already merged. No repair or GitHub mutation is needed.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Make PR #152703 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152703 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| https://github.com/openclaw/openclaw/pull/152703 | keep_closed | skipped | canonical | The requested repair was overtaken by the completed merge. Preserve the closed PR and existing contributor history. |
 
 ## Needs Human
 
