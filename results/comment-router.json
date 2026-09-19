@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T20:13:52.180Z",
+  "updated_at": "2026-09-19T20:14:16.106Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152923:5742549689:2026-09-19T14:12:52Z:clawsweeper_needs_human",
@@ -33200,65 +33200,6 @@
       }
     },
     {
-      "idempotency_key": "comment-router:openclaw/openclaw:153154:5744975738:2026-09-19T20:13:05Z:automerge",
-      "comment_id": "5744975738",
-      "comment_version_key": "5744975738:2026-09-19T20:13:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153154#issuecomment-5744975738",
-      "comment_created_at": "2026-09-19T20:13:05Z",
-      "comment_updated_at": "2026-09-19T20:13:05Z",
-      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153154,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": "automerge enabled; current checks are failing: openclaw/dependency-review:FAILURE",
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-09-19T20:13:45.177Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-artifact-blacksmith",
-        "head_sha": "975e2bb4604a9544128424c3ab02efcf7b6b64b9",
-        "cluster_id": "automerge-openclaw-openclaw-153154",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153154.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153154.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_repair",
-          "status": "waiting",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153154.md"
-        },
-        {
-          "action": "comment",
-          "status": "pending",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
-    {
       "idempotency_key": "comment-router:openclaw/openclaw:153152:5744975761:2026-09-19T20:13:05Z:automerge",
       "comment_id": "5744975761",
       "comment_version_key": "5744975761:2026-09-19T20:13:05Z",
@@ -33349,6 +33290,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153154:5744975738:2026-09-19T20:13:05Z:automerge",
+      "comment_id": "5744975738",
+      "comment_version_key": "5744975738:2026-09-19T20:13:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153154#issuecomment-5744975738",
+      "comment_created_at": "2026-09-19T20:13:05Z",
+      "comment_updated_at": "2026-09-19T20:13:05Z",
+      "comment_body_sha256": "a64364ae63376a8649f3d9f0c9757698d69f1be3316731b45511fe5dc16ddc46",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153154,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "automerge",
+      "intent": "automerge",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T20:14:08.541Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-artifact-blacksmith",
+        "head_sha": "975e2bb4604a9544128424c3ab02efcf7b6b64b9",
+        "cluster_id": "automerge-openclaw-openclaw-153154",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153154.md"
+      },
+      "actions": [
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:automerge",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
