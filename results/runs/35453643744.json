@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152970",
+  "mode": "plan",
+  "run_id": "35453643744",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35453643744",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152970.md",
+  "published_at": "2026-09-19T16:07:51.062Z",
+  "canonical": "#152970",
+  "canonical_issue": "#152970",
+  "canonical_pr": null,
+  "summary": "The initial Doctor readiness gap remains in the inspected preflight main commit 52bf22b509d74e6596137d1aaac560637d1d3584. Plan one narrow fix PR. No files or GitHub state changed; runtime reproduction and validation remain pending.",
+  "actions": [
+    {
+      "target": "#152970",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152970",
+      "candidate_fix": null,
+      "reason": "Initial readiness handling needs its own repair; merged post-restart handling does not cover this entry path. Proceed only after the executor demonstrates the regression on its current main."
+    },
+    {
+      "target": "#152965",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Plugin recovery and persistent channel outages are distinct from premature Doctor diagnostics and remain outside this repair."
+    },
+    {
+      "target": "#149422",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#152970",
+      "candidate_fix": null,
+      "reason": "Historical readiness-budget context only; preserve existing post-restart behavior."
+    },
+    {
+      "target": "#2648",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Unrelated historical context; no action required."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
