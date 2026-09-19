@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T14:27:11.072Z",
+  "updated_at": "2026-09-19T14:27:56.759Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151218:5740330721:2026-09-19T07:58:45Z:re_review",
-      "comment_id": "5740330721",
-      "comment_version_key": "5740330721:2026-09-19T07:58:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151218#issuecomment-5740330721",
-      "comment_created_at": "2026-09-19T07:55:56Z",
-      "comment_updated_at": "2026-09-19T07:58:45Z",
-      "comment_body_sha256": "2219d322d5d771f3f1ccb5af549c0fb2deac240132bae92928d5f3f86845f665",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151218,
-      "author": "fransqaas",
-      "author_id": 128794406,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T07:59:42.096Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/active-memory-escalation-provider-51",
-        "head_sha": "0edfbb62d9f2197aa1b4191729de04d8dbfacc44",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3743:5734112236:2026-09-19T07:55:30Z:clawsweeper_needs_human",
       "comment_id": "5734112236",
@@ -32943,6 +32896,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3585:5645450717:2026-09-19T14:27:08Z:clawsweeper_auto_repair",
+      "comment_id": "5645450717",
+      "comment_version_key": "5645450717:2026-09-19T14:27:08Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3585#issuecomment-5645450717",
+      "comment_created_at": "2026-09-12T10:56:04Z",
+      "comment_updated_at": "2026-09-19T14:27:08Z",
+      "comment_body_sha256": "980444ffb491d63197840d744cfdd3bfb32bfc793a7d8a0ace8d8da0008ffb16",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3585,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper marker: fix-required (finding=review-feedback sha=5565a0a9bc70706a0802c71551b2f2f87d830cb0)",
+      "expected_head_sha": "5565a0a9bc70706a0802c71551b2f2f87d830cb0",
+      "finding_id": "review-feedback",
+      "status": "skipped",
+      "processed_at": "2026-09-19T14:27:56.759Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/per-account-widgets",
+        "head_sha": "5565a0a9bc70706a0802c71551b2f2f87d830cb0",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
