@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "automerge-openclaw-openclaw-153107",
+  "mode": "plan",
+  "run_id": "35464400198",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35464400198",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153107.md",
+  "published_at": "2026-09-19T19:30:51.723Z",
+  "canonical": "#153107",
+  "canonical_issue": null,
+  "canonical_pr": "https://github.com/openclaw/openclaw/pull/153107",
+  "summary": "The adopted PR is already merged, so no branch repair is needed. Its body contains a credential-exposure claim requiring read-only security routing under the job policy. Both linked historical PRs remain closed.",
+  "actions": [
+    {
+      "target": "#153107",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": "#153107",
+      "candidate_fix": null,
+      "reason": "Recommend central OpenClaw security handling for the sensitive claim without determining exploitability or changing GitHub state. The merged PR requires no repair artifact."
+    },
+    {
+      "target": "#152703",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#153107",
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or other mutation is warranted."
+    },
+    {
+      "target": "#153108",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#153107",
+      "candidate_fix": null,
+      "reason": "Related backport is already merged and remains historical evidence only."
+    }
+  ],
+  "action_counts": {
+    "route_security": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
