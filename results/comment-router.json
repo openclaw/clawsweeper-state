@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T04:30:55.135Z",
+  "updated_at": "2026-09-19T04:30:58.394Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152227:5737417827:2026-09-18T23:28:35Z:re_review",
-      "comment_id": "5737417827",
-      "comment_version_key": "5737417827:2026-09-18T23:28:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152227#issuecomment-5737417827",
-      "comment_created_at": "2026-09-18T23:28:35Z",
-      "comment_updated_at": "2026-09-18T23:28:35Z",
-      "comment_body_sha256": "8e5cbe31780a1ae81143158d32ae56447e6d861254cdfa35a04566b57f719703",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152227,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T23:30:23.625Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/startup-native-alias-fastpath-b0a1",
-        "head_sha": "19beb0f793e30e3c140c0d3ac9fd60440d74f648",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111020:5013302283:2026-09-18T23:25:50Z:clawsweeper_needs_human",
       "comment_id": "5013302283",
@@ -33145,6 +33098,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-error-objects-hot-path-20260919",
         "head_sha": "ee207e0525152fc2afdbf18ce64010871a028976",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152060:5734681637:2026-09-19T04:30:02Z:clawsweeper_needs_human",
+      "comment_id": "5734681637",
+      "comment_version_key": "5734681637:2026-09-19T04:30:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152060#issuecomment-5734681637",
+      "comment_created_at": "2026-09-18T18:49:05Z",
+      "comment_updated_at": "2026-09-19T04:30:02Z",
+      "comment_body_sha256": "93fb109b14a58ae9f1ea7fb19f231f86357f97ea0f4f549be2180cabf80dea2d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152060,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: The supplied AWS Windows observations and inspected screenshots support interaction, replay continuity...; Review finding: [medium] Mac authority retirement remains unverified — apps/macos/Sources/OpenClaw/CloudWorkerHost.swift:245 (sha=f8e45a61c2ac3d5caad99a3d39b9bb2f3734e769)",
+      "expected_head_sha": "f8e45a61c2ac3d5caad99a3d39b9bb2f3734e769",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T04:30:58.394Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-desktop-macos-windows-20260918",
+        "head_sha": "f8e45a61c2ac3d5caad99a3d39b9bb2f3734e769",
         "cluster_id": null,
         "job_path": null
       }
