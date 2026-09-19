@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-19T18:45:22.931Z",
+  "updated_at": "2026-09-19T18:44:48.352Z",
   "commands": [
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:140413:5561896385:2026-09-19T12:05:03Z:clawsweeper_needs_human",
@@ -33177,11 +33177,11 @@
       "trusted_bot": false,
       "trusted_bot_author": null,
       "automation_source": null,
-      "repair_reason": "automerge enabled; current checks are failing: openclaw/ci-gate:FAILURE, openclaw/dependency-review:FAILURE",
+      "repair_reason": "automerge enabled; current checks are failing: openclaw/ci-gate:FAILURE",
       "expected_head_sha": null,
       "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T18:45:06.329Z",
+      "status": "waiting",
+      "processed_at": "2026-09-19T18:44:44.639Z",
       "target": {
         "kind": "pull_request",
         "branch": "fix/release-opencode-go-fallback-pool",
@@ -33191,6 +33191,12 @@
       },
       "actions": [
         {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153107.md"
+        },
+        {
           "action": "label",
           "status": "executed",
           "label": "clawsweeper:automerge",
@@ -33198,13 +33204,13 @@
         },
         {
           "action": "dispatch_repair",
-          "status": "executed",
+          "status": "waiting",
           "label": null,
           "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153107.md"
         },
         {
           "action": "comment",
-          "status": "executed",
+          "status": "pending",
           "label": null,
           "job_path": null
         }
