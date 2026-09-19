@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T23:14:40.813Z",
+  "updated_at": "2026-09-19T23:15:39.396Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153075:5744178972:2026-09-19T18:04:02Z:clawsweeper_needs_human",
-      "comment_id": "5744178972",
-      "comment_version_key": "5744178972:2026-09-19T18:04:02Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153075#issuecomment-5744178972",
-      "comment_created_at": "2026-09-19T18:04:02Z",
-      "comment_updated_at": "2026-09-19T18:04:02Z",
-      "comment_body_sha256": "f44f92cf6a389fa60fe11b724e9feba6375e6bc5e80b903cc7eaec5342ca34fc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153075,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: demonstrate that a non-allowlisted historical bot is rejected before media hydration and the final mod...; Review finding: [P1] Apply sender allowlists to recovered Slack bot messages — extensions/slack/src/monitor/message-handler/prepare-room-history.ts:83-85 - [P2] Update resumed roo... (sha=ead7986e3600fbca919043a2130fce8d60547db3)",
-      "expected_head_sha": "ead7986e3600fbca919043a2130fce8d60547db3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T18:05:06.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/slack-discord-retained-history",
-        "head_sha": "ead7986e3600fbca919043a2130fce8d60547db3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3538:5617861289:2026-09-19T18:04:29Z:clawsweeper_needs_human",
       "comment_id": "5617861289",
@@ -33195,6 +33162,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150348:5746035169:2026-09-19T23:14:43Z:re_review",
+      "comment_id": "5746035169",
+      "comment_version_key": "5746035169:2026-09-19T23:14:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150348#issuecomment-5746035169",
+      "comment_created_at": "2026-09-19T23:14:43Z",
+      "comment_updated_at": "2026-09-19T23:14:43Z",
+      "comment_body_sha256": "a0d34a4a8cbf0fda044f028305679203e21d98b72ec83de181454b09b5b5e1bd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150348,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 017f293318260fba9fb115dffd6c6ec9d001eb5c — deterministic task-event drain addresses the reproduced exact-head ci registry-root failure",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T23:15:36.794Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/include-write-through",
+        "head_sha": "017f293318260fba9fb115dffd6c6ec9d001eb5c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
