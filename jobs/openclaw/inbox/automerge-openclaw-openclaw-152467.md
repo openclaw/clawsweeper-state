@@ -33,7 +33,7 @@ target_branch: clawsweeper/automerge-openclaw-openclaw-152467
 source: pr_automerge
 requested_by: "steipete"
 requested_by_id: "58493"
-request_comment_url: "https://github.com/openclaw/openclaw/pull/152467#issuecomment-5739855431"
+request_comment_url: "https://github.com/openclaw/openclaw/pull/152467#issuecomment-5740158535"
 ---
 
 # ClawSweeper adopted PR repair candidate
@@ -41,7 +41,7 @@ request_comment_url: "https://github.com/openclaw/openclaw/pull/152467#issuecomm
 Maintainer opted #152467 into ClawSweeper automerge.
 
 Requested by: steipete
-Request comment: https://github.com/openclaw/openclaw/pull/152467#issuecomment-5739855431
+Request comment: https://github.com/openclaw/openclaw/pull/152467#issuecomment-5740158535
 
 
 Source PR: https://github.com/openclaw/openclaw/pull/152467
@@ -58,7 +58,5 @@ ClawSweeper should use this job only for the bounded ClawSweeper review/fix loop
 
 Maintainer special instructions:
 
-Please land this reviewed cleanup at head `11ff3da5e0554e838c9443c90bb566a6fbb00bda` through the normal guarded workflow. Its exact-head `openclaw/ci-gate` and [CI run](https://github.com/openclaw/openclaw/actions/runs/35424904228) passed, and the latest ClawSweeper review confirms the SDK finding is addressed with no actionable findings.
-
-Preserve the shared catalog/publication owners, explicit public SDK projection, retained persisted-auth cases, and the 1,000-line net reduction. Limit any refresh to an equivalent branch integration and revalidate the normal review and CI gates before merging.
+Fresh maintainer authorization after the previous stop: land the existing reviewed head `11ff3da5e0554e838c9443c90bb566a6fbb00bda` through the normal exact-head review, CI, mergeability, and permission gates. Source, main CI, security review, independent review, and local validation are complete. Preserve the 1,000-line reduction and existing behavior; any necessary branch refresh must keep the reviewed change equivalent.
 
