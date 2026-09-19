@@ -1,0 +1,86 @@
+---
+repo: "openclaw/openclaw"
+cluster_id: "issue-openclaw-openclaw-152499"
+mode: "autonomous"
+run_id: "35422501807"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35422501807"
+head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
+workflow_conclusion: "success"
+result_status: "blocked"
+published_at: "2026-09-19T05:33:05.444Z"
+canonical: "https://github.com/openclaw/openclaw/issues/152499"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/152499"
+canonical_pr: null
+actions_total: 13
+fix_executed: 0
+fix_failed: 0
+fix_blocked: 1
+apply_executed: 0
+apply_blocked: 0
+apply_skipped: 0
+needs_human_count: 0
+---
+
+# issue-openclaw-openclaw-152499
+
+Repo: openclaw/openclaw
+
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35422501807](https://github.com/openclaw/clawsweeper/actions/runs/35422501807)
+
+Workflow conclusion: success
+
+Worker result: blocked
+
+Canonical: https://github.com/openclaw/openclaw/issues/152499
+
+## Summary
+
+Confirmed the reported producer-ordering defect in source at preflight main e05c43bc107b07fe1cc0f4d1fc761cbe20cdd15c. Prepared a narrow repair artifact. Implementation and executable reproduction are blocked by the read-only host and missing target dependencies; no code or GitHub state changed.
+
+## Impact
+
+| Metric | Count |
+| --- | ---: |
+| Worker actions | 13 |
+| Fix executed | 0 |
+| Fix failed | 0 |
+| Fix blocked | 1 |
+| Applied executions | 0 |
+| Apply blocked | 0 |
+| Apply skipped | 0 |
+| Needs human | 0 |
+
+## Fix Execution Actions
+
+| Action | Status | Target | Branch | Reason |
+| --- | --- | --- | --- | --- |
+| execute_fix | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/gateway/server-methods/chat-send-commentary-media.test.ts: core test [check:changed] src/gateway/server-methods/chat-send-commentary-media.ts: core production [check:changed] conflict markers $ node scripts/check-no-conflict-markers.mjs [check:changed] line-cap growth ratchet $ node --import ./scripts/tsx.mjs scripts/check-line-cap-ratchet.mts --base origin/main [check:changed] max-lines suppression ratchet $ node --import ./scripts/tsx.mjs scripts/check-max-lines-ratchet.mts --base origin/main [check:changed] assertion SAFETY comment ratchet $ node --import ./scripts/tsx.mjs scripts/check-assertion-safety-ratchet.mts --base origin/main [check:changed] changelog attributions $ node --import ./scripts/tsx.mjs scripts/check-changelog-attributions.mts [check:changed] doctor deprecation registry $ node --import ./scripts/tsx.mjs scripts/check-doctor-deprecation-registry.ts [check:changed] guarded extension wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-extension-wildcard-reexports.mts [check:changed] plugin-sdk wildcard re-exports $ node --import ./scripts/tsx.mjs scripts/check-plugin-sdk-wildcard-reexports.mts [check:changed] duplicate scan target coverage $ node scripts/check-duplicates.mjs --coverage [check:changed] dependency pin guard $ node --import ./scripts/tsx.mjs scripts/check-dependency-pins.mts [check:changed] format changed files $ oxfmt --check --no-error-on-unmatched-pattern -- src/gateway/server-methods/chat-send-commentary-media.test.ts src/gateway/server-methods/chat-send-commentary-media.ts [check:changed] config docs baseline $ node --import ./scripts/tsx.mjs scripts/generate-config-doc-baseline.ts --check [check:changed] plugin boundaries $ node --import ./scripts/tsx.mjs scripts/plugin-boundary-report.ts --summary --fail-on-eligible-compat [check:changed] wrapper shadowing $ node --import ./scripts/tsx.mjs scripts/check-wrapper-shadowing.mts [check:changed] package patch guard $ node --import ./scripts/tsx.mjs scripts/check-package-patches.mts [check:changed] test temp creation report (warning-only) No new test temp-directory migration warnings found. [check:changed] core tsgo graph boundary $ node --import ./scripts/tsx.mjs scripts/check-tsgo-core-boundary.mts [check:changed] typecheck core $ node scripts/run-tsgo.mjs -p tsconfig.core.json --incremental --tsBuildInfoFile .artifacts/tsgo-cache/core.tsbuildinfo file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/lib/dist-artifact-ownership.mts:95 throw new Error( ^ Error: Could not acquire /tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/.artifacts/dist-artifacts.lock. Inspect owner.json and verify all associated build/check processes, including detached descendants, have stopped before manually removing this lock directory and retrying. PID death alone is not sufficient. at withDistArtifactOwnership (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/lib/dist-artifact-ownership.mts:95:11) at async main (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/run-tsgo.mts:99:5) at async file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/run-tsgo.mts:123:3 { [cause]: Error: file lock stale for /tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/.artifacts/dist-artifacts.lock/owner.json at acquireSidecarLock (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/node_modules/.pnpm/@openclaw+fs-safe@0.13.1/node_modules/@openclaw/fs-safe/dist/sidecar-lock-acquire.js:364:41) at async Object.acquire (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/node_modules/.pnpm/@openclaw+fs-safe@0.13.1/node_modules/@openclaw/fs-safe/dist/sidecar-lock.js:216:16) at async Object.acquire (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/node_modules/.pnpm/@openclaw+fs-safe@0.13.1/node_modules/@openclaw/fs-safe/dist/file-lock.js:45:20) at async acquireFileLock (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/node_modules/.pnpm/@openclaw+fs-safe@0.13.1/node_modules/@openclaw/fs-safe/dist/file-lock.js:34:12) at async withDistArtifactOwnership (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/lib/dist-artifact-ownership.mts:60:12) at async main (file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/run-tsgo.mts:99:5) at async file:///tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/scripts/run-tsgo.mts:123:3 { code: 'file_lock_stale', lockPath: '/tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/.artifacts/dist-artifacts.lock/owner.json', normalizedTargetPath: '/tmp/clawsweeper-repair-target-elCuw4/openclaw-openclaw/.artifacts/dist-artifacts.lock/owner.json' } } Node.js v24.21.0 [tsgo] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. [check:changed] summary 183ms ok conflict markers 277ms ok line-cap growth ratchet 7.98s ok max-lines suppression ratchet 7.47s ok assertion SAFETY comment ratchet 166ms ok changelog attributions 134ms ok doctor deprecation registry 142ms ok guarded extension wildcard re-exports 141ms ok plugin-sdk wildcard re-exports 222ms ok duplicate scan target coverage 181ms ok dependency pin guard 124ms ok format changed files 28.62s ok config docs baseline 1.10s ok plugin boundaries 4.78s ok wrapper shadowing 377ms ok package patch guard 428ms ok test temp creation report (warning-only) 43.44s ok core tsgo graph boundary 168ms failed:1 typecheck core [check:changed] FAILED (exit 1) [ELIFECYCLE] Command failed with exit code 1. Line-cap ratchet OK: 2 changed source files; no new violations or over-cap growth. max-lines ratchet OK: 814 grandfathered suppressions. OPENCLAW_* count 492/492 assertion SAFETY ratchet OK: 3778 files, 10957 grandfathered assertions. [doctor-deprecation-registry] OK as of 2026-09-19 No guarded extension wildcard re-exports found. No plugin-sdk wildcard re-exports found in extension API barrels. [dup:check] target coverage ok PASS direct dependency pin guard: checked 680 directly declared dependency specs across 188 tracked package manifests; 0 violations. Checking formatting... All matched files use the correct format. Finished in 4ms on 2 files using 4 threads. OK docs/.generated/config-baseline.sha256 and docs/.generated/config-baseline.counts.json Plugin Boundary Report compat deprecated=21 eligibleForRemoval=0 removalPending=9 removalPendingDue=1 removal-pending 2026-09-08 sdk-untrusted-context-identifier-aliases due=true blocker=`MsgContext.ChannelPromptContext`, `MsgContext.ChannelStructuredContext`, `ChannelStructuredContextEntry`, `SupplementalContextFacts.channelStructuredContext`, and `buildChannelMetadata`; retain the aliases until migration of published plugin readers is verified and explicit breaking-release approval is granted readerRefs=7431 readers=extensions/a2a/index.ts,extensions/a2a/setup-entry.ts,extensions/a2a/src/accounts.ts,extensions/a2a/src/channel-base.ts,extensions/a2a/src/channel.test.ts removal-pending 2026-09-30 plugin-sdk-media-understanding-public-demotion due=false blocker=`api.registerMediaUnderstandingProvider(...)` with provider-owned request helpers and types from `openclaw/plugin-sdk/plugin-entry`; retain the public subpath through the 2026-09-30 window while official plugin consumers migrate readerRefs=52 readers=extensions/anthropic/media-understanding-provider.ts,extensions/browser/src/browser/vision.ts,extensions/browser/src/cli/browser-cli-extension.test.ts,extensions/browser/src/cli/browser-cli.test.ts,extensions/browser/src/sdk-setup-tools.ts removal-pending 2026-09-30 plugin-sdk-memory-host-core-public-demotion due=false blocker=host-prepared memory prompts via `openclaw/plugin-sdk/core` and memory capability registration through the injected plugin API; retain the facade through the 2026-09-30 window and until a focused public-artifact read seam exists readerRefs=27 readers=extensions/active-memory/index.test.ts,extensions/active-memory/index.ts,extensions/codex/src/app-server/attempt-context.test.ts,extensions/memory-core/src/memory-get-corpus.test.ts,extensions/memory-core/src/public-artifacts.ts removal-pending 2026-10-01 plugin-sdk-channel-lifecycle-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound`; retain until supported external plugin migration is verified readerRefs=1 readers=src/plugins/contracts/plugin-sdk-subpaths.test.ts removal-pending 2026-10-01 plugin-sdk-channel-message-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound` and `openclaw/plugin-sdk/channel-inbound`; retain until supported external plugin migration is verified readerRefs=3 readers=src/plugin-sdk/channel-message.test.ts,src/plugins/plugin-sdk-native-resolver.test.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 plugin-sdk-channel-reply-pipeline-subpath due=false blocker=`openclaw/plugin-sdk/channel-outbound`; retain until supported external plugin migration is verified readerRefs=3 readers=src/plugin-sdk/channel-message.test.ts,src/plugins/contracts/plugin-sdk-subpaths.test.ts,test/scripts/check-deprecated-api-usage.test.ts removal-pending 2026-10-01 plugin-sdk-config-runtime-subpath due=false blocker=`api.pluginConfig`, `openclaw/plugin-sdk/config-mutation`, `openclaw/plugin-sdk/runtime-config-snapshot`, and `openclaw/plugin-sdk/config-contracts`; retain until supported external plugin migration is verified readerRefs=3 readers=scripts/check-no-monolithic-plugin-sdk-entry-imports.ts,scripts/lib/config-boundary-guard.mts,src/plugins/contracts/config-boundary-guard.test.ts removal-pending 2026-10-01 plugin-sdk-infra-runtime-subpath due=false blocker=focused subpaths including `openclaw/plugin-sdk/delivery-queue-runtime`, `openclaw/plugin-sdk/diagnostic-runtime`, `openclaw/plugin-sdk/error-runtime`, `openclaw/plugin-sdk/exec-approvals-runtime`, `openclaw/plugin-sdk/fetch-runtime`, and `openclaw/plugin-sdk/ssrf-runtime`; retain until supported external plugin migration is verified and system-event snapshot inspection and consumption have a modern public replacement readerRefs=1 readers=scripts/check-no-monolithic-plugin-sdk-entry-imports.ts removal-pending 2026-12-01 plugin-sdk-plugin-config-runtime-public-demotion due=false blocker=`api.pluginConfig`, runtime tool context config, and focused `config-contracts`, `runtime-config-snapshot`, or `config-mutation` subpaths; retain the public subpath through the 2026-12-01 window while official plugin consumers migrate readerRefs=60 readers=extensions/active-memory/index.ts,extensions/active-memory/session-policy.ts,extensions/amazon-bedrock-mantle/register.sync.runtime.ts,extensions/amazon-bedrock/register.sync.runtime.ts,extensions/browser/src/sdk-config.ts plugin-sdk entrypoints=363 supportedBundledFacade=2 publicPluginOwned=1 memory-host-sdk implementation=private-package-core-integrated private=true exports=10 sourceBridgeFiles=0 coreReferenceFiles=20 wrapper shadowing guard passed. PASS package patch guard: no new pnpm patches; 6 approved patches allowlisted. |
+| issue_implementation_status_comment | updated | #152499 |  |  |
+
+## Apply Actions
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| _None_ |  |  |  |  |
+
+## Worker Action Matrix
+
+| Target | Action | Status | Classification | Reason |
+| --- | --- | --- | --- | --- |
+| #152499 | fix_needed | blocked | canonical | Implementation requires a writable executor with target dependencies. Establish the failing real-SQLite regression before applying the proposed repair; source inspection is not an executed reproduction. |
+| cluster:issue-openclaw-openclaw-152499 | build_fix_artifact | planned | canonical | A producer-only repair can reuse existing lifecycle owners without changing schemas, retention policy, permissions, or other producers. |
+| #128033 | keep_related | planned | related | Distinct inbound-retention work; preserve its existing review path without replacing, merging, or closing it in this cluster. |
+| #139670 | keep_related | planned | related | Distinct reachability and retention scope; this producer-ordering repair does not resolve it. |
+| #152079 | route_security | planned | security_sensitive | Quarantine this exact reference for central OpenClaw security handling without public mutation; ordinary commentary lifecycle repair remains separate. |
+| #117266 | keep_closed | skipped | related | Already closed and outside the narrow producer repair. |
+| #119088 | keep_closed | skipped | related | Historical evidence for a different cleanup path. |
+| #119090 | keep_closed | skipped | related | Distinct availability failure; historical context only. |
+| #119260 | keep_closed | skipped | related | Historical evidence, not an available commentary fix branch. |
+| #119764 | keep_closed | skipped | related | Existing lifecycle protection should be reused, not replaced. |
+| #133237 | keep_closed | skipped | related | Useful sibling implementation context, not proof that commentary is fixed. |
+| #148795 | keep_closed | skipped | related | Historical implementation context only. |
+| #152219 | keep_closed | skipped | related | No reopening, replacement, or permission changes are proposed. |
+
+## Needs Human
+
+- none
