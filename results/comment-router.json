@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T02:26:56.247Z",
+  "updated_at": "2026-09-19T02:27:55.856Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152128:5735558389:2026-09-18T21:24:34Z:clawsweeper_needs_human",
-      "comment_id": "5735558389",
-      "comment_version_key": "5735558389:2026-09-18T21:24:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152128#issuecomment-5735558389",
-      "comment_created_at": "2026-09-18T20:06:28Z",
-      "comment_updated_at": "2026-09-18T21:24:34Z",
-      "comment_body_sha256": "b3602caeac5d9f73b8972cd024784779b83cc0c9560df31603dc81ef2c8c90c9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152128,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Synthetic catalogs and shared-host measurements do not establish whole-turn speedups or lower memory use; Node 26 mean whole-process peak RSS increased by about 21 MiB. (sha=ba00f051b69f7c8e5005e3a9086aca1ea62df14f)",
-      "expected_head_sha": "ba00f051b69f7c8e5005e3a9086aca1ea62df14f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T21:26:08.912Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-catalog-lookup-dc66",
-        "head_sha": "ba00f051b69f7c8e5005e3a9086aca1ea62df14f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151618:5727377057:2026-09-18T21:25:25Z:clawsweeper_needs_human",
       "comment_id": "5727377057",
@@ -32764,6 +32731,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152340:5738607099:2026-09-19T02:27:03Z:re_review",
+      "comment_id": "5738607099",
+      "comment_version_key": "5738607099:2026-09-19T02:27:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152340#issuecomment-5738607099",
+      "comment_created_at": "2026-09-19T02:27:03Z",
+      "comment_updated_at": "2026-09-19T02:27:03Z",
+      "comment_body_sha256": "9689c1c124c671c2a237ab83802fa8962ae14f132b869bf4b8ddc661a33736d5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152340,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T02:27:53.976Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-load-facts-sep18",
+        "head_sha": "61329a6e9ac1eacc04e4ab247b2dccd42d8539cf",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
