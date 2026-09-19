@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:46:00.251Z",
+  "updated_at": "2026-09-19T11:47:15.289Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152507:5739495056:2026-09-19T05:59:56Z:clawsweeper_needs_human",
-      "comment_id": "5739495056",
-      "comment_version_key": "5739495056:2026-09-19T05:59:56Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152507#issuecomment-5739495056",
-      "comment_created_at": "2026-09-19T04:58:17Z",
-      "comment_updated_at": "2026-09-19T05:59:56Z",
-      "comment_body_sha256": "208e587ef4f07be3c69e2bb2bff08985d509274e96ed9ee1c2ebc03271d5342e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152507,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=aa77a44883d0ac61f694e621f823c04cd677def7)",
-      "expected_head_sha": "aa77a44883d0ac61f694e621f823c04cd677def7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T06:02:44.579Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/deslop-cli-task-activity",
-        "head_sha": "aa77a44883d0ac61f694e621f823c04cd677def7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152519:5739515356:2026-09-19T05:54:15Z:clawsweeper_needs_human",
       "comment_id": "5739515356",
@@ -33262,6 +33229,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150929:5741584425:2026-09-19T11:46:23Z:re_review",
+      "comment_id": "5741584425",
+      "comment_version_key": "5741584425:2026-09-19T11:46:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5741584425",
+      "comment_created_at": "2026-09-19T11:46:23Z",
+      "comment_updated_at": "2026-09-19T11:46:23Z",
+      "comment_body_sha256": "69617a311533591a139f1cc709532c57490a0c2744fcde6ff3ae0a0dbb770563",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150929,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — revision 8's recommendation (preserve the public fallback) is adopted and the branch is re-merged with current main (mergeable)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T11:47:13.715Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-reject-blank-workspace",
+        "head_sha": "d40433503fc15e784aaf5e2d7302d17306fef22c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
