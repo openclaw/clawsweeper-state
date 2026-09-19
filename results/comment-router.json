@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T20:26:04.678Z",
+  "updated_at": "2026-09-19T20:27:04.834Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152896:5742334654:2026-09-19T14:38:51Z:clawsweeper_needs_human",
-      "comment_id": "5742334654",
-      "comment_version_key": "5742334654:2026-09-19T14:38:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152896#issuecomment-5742334654",
-      "comment_created_at": "2026-09-19T13:39:17Z",
-      "comment_updated_at": "2026-09-19T14:38:51Z",
-      "comment_body_sha256": "f5840cc6640726f6005678f4ecf7c6e684f01e81073eb92ba3ce661213d34c10",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152896,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native Windows behavior remains unverified; the reported runtime validation used macOS native processes and a fake container engine. (sha=b2be746297598c8bd43548a0f6bf55ead8a60074)",
-      "expected_head_sha": "b2be746297598c8bd43548a0f6bf55ead8a60074",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T14:45:30.564Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/node-environment-stop-settlement-20260919",
-        "head_sha": "b2be746297598c8bd43548a0f6bf55ead8a60074",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152612:5739937206:2026-09-19T14:37:51Z:clawsweeper_needs_human",
       "comment_id": "5739937206",
@@ -33076,6 +33043,53 @@
       "actions": [
         {
           "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153154:5745016733:2026-09-19T20:24:37Z:clawsweeper_auto_merge",
+      "comment_id": "5745016733",
+      "comment_version_key": "5745016733:2026-09-19T20:24:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153154#issuecomment-5745016733",
+      "comment_created_at": "2026-09-19T20:19:19Z",
+      "comment_updated_at": "2026-09-19T20:24:37Z",
+      "comment_body_sha256": "50f3f22372968e03ed923a8804f239ae286da728d48707a781867e6ef01e61f4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153154,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto merge",
+      "intent": "clawsweeper_auto_merge",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: pass (sha=975e2bb4604a9544128424c3ab02efcf7b6b64b9)",
+      "expected_head_sha": "975e2bb4604a9544128424c3ab02efcf7b6b64b9",
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T20:27:04.834Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-artifact-blacksmith",
+        "head_sha": "975e2bb4604a9544128424c3ab02efcf7b6b64b9",
+        "cluster_id": "automerge-openclaw-openclaw-153154",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153154.md"
+      },
+      "actions": [
+        {
+          "action": "merge",
           "status": "executed",
           "label": null,
           "job_path": null
