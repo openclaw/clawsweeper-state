@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153155"
-mode: "autonomous"
-run_id: "35467567187"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35467567187"
+mode: "plan"
+run_id: "35470562494"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35470562494"
 head_sha: "542a494c98f482f59f82253e514e599c565f7839"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "blocked"
-published_at: "2026-09-19T21:00:12.776Z"
+published_at: "2026-09-19T21:31:42.057Z"
 canonical: "https://github.com/openclaw/openclaw/issues/153155"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/153155"
 canonical_pr: null
-actions_total: 5
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35467567187](https://github.com/openclaw/clawsweeper/actions/runs/35467567187)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35470562494](https://github.com/openclaw/clawsweeper/actions/runs/35470562494)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: blocked
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/153155
 
 ## Summary
 
-Confirmed the immediate post-stop acquisition path on preflight main. Prepared a narrow Doctor repair artifact. Implementation and executable reproduction are blocked by the read-only checkout, absent dependencies, and unavailable macOS fixture. No files or GitHub state changed.
+Automatic implementation is blocked by the canonical issue's manual-only designation and explicit maintainer reservation for the update-reliability campaign. Classification is complete; no competing fix artifact, code changes, or GitHub mutations were produced. Reproduction and validation were not run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,10 @@ Confirmed the immediate post-stop acquisition path on preflight main. Prepared a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153155 | fix_needed | blocked | canonical | The source supports a narrow repair, but this read-only Linux environment cannot create the required SQLite regression fixture or implementation. No executable reproduction or completed fix is claimed. |
-| #152879 | keep_related | planned | related | Keep open in its own repair path; shared restoration symptoms do not establish duplication. |
-| #152744 | keep_independent | planned | independent | The migration failure is independent of Doctor's post-stop coordinator handoff. |
-| #146142 | keep_closed | skipped | related | Historical context only; no closure or reopening action. |
-| cluster:issue-openclaw-openclaw-153155 | build_fix_artifact | planned | canonical | A narrow executor handoff is supported despite local implementation blockers. Reproduce on refreshed main before patching; stop if the regression does not reproduce. |
+| https://github.com/openclaw/openclaw/issues/153155 | keep_canonical | planned | canonical | Preserve the existing repair owner and await its linked PR and macOS restoration evidence. The hydrated opt-out blocks a competing implementation artifact. |
+| https://github.com/openclaw/openclaw/issues/152879 | keep_related | planned | related | Related restoration symptom, but a distinct platform and failure mechanism. |
+| https://github.com/openclaw/openclaw/issues/152744 | keep_independent | planned | independent | Separate migration work with its own repair path; no duplicate or closeout recommendation. |
+| https://github.com/openclaw/openclaw/issues/146142 | keep_closed | skipped | related | Historical lifecycle-contention context; it does not establish that Doctor's macOS restoration path is fixed. |
 
 ## Needs Human
 
