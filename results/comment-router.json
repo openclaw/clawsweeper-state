@@ -1,51 +1,6 @@
 {
-  "updated_at": "2026-09-19T05:24:42.070Z",
+  "updated_at": "2026-09-19T05:24:57.332Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152252:5737888693:2026-09-19T00:34:24Z:re_review",
-      "comment_id": "5737888693",
-      "comment_version_key": "5737888693:2026-09-19T00:34:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/issues/152252#issuecomment-5737888693",
-      "comment_created_at": "2026-09-19T00:34:24Z",
-      "comment_updated_at": "2026-09-19T00:34:24Z",
-      "comment_body_sha256": "78de5d188b2ca23829c1400f7db1da1d5abbf5d9251a5abee7a673bbb914124c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152252,
-      "author": "DonnieFi",
-      "author_id": 44792682,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T00:35:39.352Z",
-      "target": {
-        "kind": "issue",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152012:5733991595:2026-09-19T00:34:47Z:clawsweeper_auto_repair",
       "comment_id": "5733991595",
@@ -33056,6 +33011,39 @@
         "kind": "pull_request",
         "branch": "codex/stress-runtime-cleanup-20260918",
         "head_sha": "f52fc08eab1dc68a6fea1020f45309640bc4b912",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152547:5739636785:2026-09-19T05:24:08Z:clawsweeper_needs_human",
+      "comment_id": "5739636785",
+      "comment_version_key": "5739636785:2026-09-19T05:24:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152547#issuecomment-5739636785",
+      "comment_created_at": "2026-09-19T05:24:08Z",
+      "comment_updated_at": "2026-09-19T05:24:08Z",
+      "comment_body_sha256": "cab445b4fcb9d34751167cac846757ebb1f59c69baafc11095d68d00af06b005",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152547,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Mark the draft ready for review when the author considers it complete. (sha=a382018ab7a6299ad5e43becf44fdf796f5643e8)",
+      "expected_head_sha": "a382018ab7a6299ad5e43becf44fdf796f5643e8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T05:24:57.332Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/memory-r20-status-windows",
+        "head_sha": "a382018ab7a6299ad5e43becf44fdf796f5643e8",
         "cluster_id": null,
         "job_path": null
       }
