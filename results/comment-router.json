@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T06:06:12.194Z",
+  "updated_at": "2026-09-19T06:06:17.120Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119702:5738421151:2026-09-19T01:55:42Z:re_review",
-      "comment_id": "5738421151",
-      "comment_version_key": "5738421151:2026-09-19T01:55:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5738421151",
-      "comment_created_at": "2026-09-19T01:55:42Z",
-      "comment_updated_at": "2026-09-19T01:55:42Z",
-      "comment_body_sha256": "25294d874659006a26dc2ada1ec3d4dc55d0f44604b4f193f4dcca6854bd4577",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T01:57:24.641Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/json-schema-patternproperties-redos-undici-lock",
-        "head_sha": "addb939008833bc6fb6966e29b9ec5375f54c428",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:492:5738277092:2026-09-19T01:53:20Z:clawsweeper_needs_human",
       "comment_id": "5738277092",
@@ -32254,6 +32207,39 @@
         "kind": "pull_request",
         "branch": "openclaw/common-free-keyboard-shortcut-options",
         "head_sha": "dd9a464a0e89dcca485bf040197cb4ef25925b0c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152565:5739744792:2026-09-19T06:05:19Z:clawsweeper_auto_repair",
+      "comment_id": "5739744792",
+      "comment_version_key": "5739744792:2026-09-19T06:05:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152565#issuecomment-5739744792",
+      "comment_created_at": "2026-09-19T05:47:43Z",
+      "comment_updated_at": "2026-09-19T06:05:19Z",
+      "comment_body_sha256": "594006ed95db034b2638587acd22a11a44e058c5c2f8cb1ef5d9ef607030e329",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152565,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5432b706b676a913f2fbcc89d1d2212d248a2f7d)",
+      "expected_head_sha": "5432b706b676a913f2fbcc89d1d2212d248a2f7d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T06:06:17.120Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-152509-config-lgg-promotion",
+        "head_sha": "5432b706b676a913f2fbcc89d1d2212d248a2f7d",
         "cluster_id": null,
         "job_path": null
       }
