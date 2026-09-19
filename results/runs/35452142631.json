@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152942",
+  "mode": "plan",
+  "run_id": "35452142631",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35452142631",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152942.md",
+  "published_at": "2026-09-19T16:02:45.421Z",
+  "canonical": "#152942",
+  "canonical_issue": "#152942",
+  "canonical_pr": null,
+  "summary": "Plan a narrow repair for cross-model fast-mode inheritance. The checkout matches preflight main 3ba1da784f70f44c006ccf241c53ced502f17497. Source inspection supports the finding; runtime regression and implementation remain pending. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#152942",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152942",
+      "candidate_fix": null,
+      "reason": "Implicit requester fast mode must only propagate when requester and child resolve to the same provider/model. Preserve explicit overrides and existing model-selection contracts."
+    },
+    {
+      "target": "#125310",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#152942",
+      "candidate_fix": null,
+      "reason": "The policy proposal has distinct scope and is unnecessary for repairing child-session inheritance."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
