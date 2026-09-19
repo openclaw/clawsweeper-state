@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T18:06:01.374Z",
+  "updated_at": "2026-09-19T18:06:37.534Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152683:5740369234:2026-09-19T11:42:35Z:clawsweeper_needs_human",
-      "comment_id": "5740369234",
-      "comment_version_key": "5740369234:2026-09-19T11:42:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152683#issuecomment-5740369234",
-      "comment_created_at": "2026-09-19T08:04:47Z",
-      "comment_updated_at": "2026-09-19T11:42:35Z",
-      "comment_body_sha256": "6ac23851a9832e179fd827d68d727e854c2b7c8235b9ebe1e1155b5fb8b375b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152683,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Performance outside duplicate-heavy warmed history remains uncertain: smaller workloads and first calls often measured slower, while unchanged bypass paths also drifted substantially. (sha=f8495b9b39169c4d178b77de65aaad1144e1b7f3)",
-      "expected_head_sha": "f8495b9b39169c4d178b77de65aaad1144e1b7f3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T11:43:28.000Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-r2-project-recents-20260918",
-        "head_sha": "f8495b9b39169c4d178b77de65aaad1144e1b7f3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150929:5723849073:2026-09-18T01:51:36Z:re_review",
       "comment_id": "5723849073",
@@ -33070,6 +33037,53 @@
       "processed_at": "2026-09-19T18:05:59.183Z",
       "target": {
         "kind": "issue",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151222:5744191669:2026-09-19T18:05:43Z:re_review",
+      "comment_id": "5744191669",
+      "comment_version_key": "5744191669:2026-09-19T18:05:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151222#issuecomment-5744191669",
+      "comment_created_at": "2026-09-19T18:05:43Z",
+      "comment_updated_at": "2026-09-19T18:05:43Z",
+      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151222,
+      "author": "altaywtf",
+      "author_id": 9790196,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T18:06:35.186Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/workflow-checker-python-floor",
+        "head_sha": "bbe0567edaa9bc0584c729578ece3f4a10743c40",
         "cluster_id": null,
         "job_path": null
       },
