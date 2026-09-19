@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-19T10:59:20.963Z",
+  "updated_at": "2026-09-19T10:59:22.850Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5441389034:2026-08-27T15:28:20Z:re_review",
-      "comment_id": "5441389034",
-      "comment_version_key": "5441389034:2026-08-27T15:28:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5441389034",
-      "comment_created_at": "2026-08-27T15:28:20Z",
-      "comment_updated_at": "2026-08-27T15:28:20Z",
-      "comment_body_sha256": "abaff46f5cae87587d1aa350264b9b50d2293fda26796ef5f7e947ba2629ea01",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T06:00:20.595Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5441878647:2026-08-27T16:08:20Z:re_review",
       "comment_id": "5441878647",
@@ -32551,6 +32524,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152466:5739275320:2026-09-19T10:58:19Z:clawsweeper_needs_human",
+      "comment_id": "5739275320",
+      "comment_version_key": "5739275320:2026-09-19T10:58:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152466#issuecomment-5739275320",
+      "comment_created_at": "2026-09-19T04:14:17Z",
+      "comment_updated_at": "2026-09-19T10:58:19Z",
+      "comment_body_sha256": "bde3ab098b7be70d2024aaef140b27e4916952c2e128f5a6ed273549edc8cddb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152466,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If a fresh process cannot start after activation, the foreground Gateway remains stopped for recovery instead of reopening its replaced runtime. (sha=271816c59832cdc8bdcd3e218514efaee602e360)",
+      "expected_head_sha": "271816c59832cdc8bdcd3e218514efaee602e360",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T10:59:22.850Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-handoff-independent",
+        "head_sha": "271816c59832cdc8bdcd3e218514efaee602e360",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
