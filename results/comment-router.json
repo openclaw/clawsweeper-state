@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:43:34.555Z",
+  "updated_at": "2026-09-19T11:43:41.413Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152432:5739157578:2026-09-19T05:53:10Z:clawsweeper_needs_human",
-      "comment_id": "5739157578",
-      "comment_version_key": "5739157578:2026-09-19T05:53:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152432#issuecomment-5739157578",
-      "comment_created_at": "2026-09-19T03:52:51Z",
-      "comment_updated_at": "2026-09-19T05:53:10Z",
-      "comment_body_sha256": "6da45c3b9398ac6a83df2d33c8c0aa3132fc068f170cae68ae760f9e0810a902",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152432,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Downstream parent failure can interrupt unfinished ClawHub publication, requiring full-parent or explicit ClawHub recovery rather than Docker-only recovery; the maintainer explicitly... (sha=bfc0302edbaf985cd3ff9f8e521d417f9b5e3a59)",
-      "expected_head_sha": "bfc0302edbaf985cd3ff9f8e521d417f9b5e3a59",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T06:02:44.579Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/publish-resume-clawhub-20260918",
-        "head_sha": "bfc0302edbaf985cd3ff9f8e521d417f9b5e3a59",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152460:5739245748:2026-09-19T05:55:31Z:clawsweeper_needs_human",
       "comment_id": "5739245748",
@@ -33248,6 +33215,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152820:5741560032:2026-09-19T11:43:07Z:re_review",
+      "comment_id": "5741560032",
+      "comment_version_key": "5741560032:2026-09-19T11:43:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152820#issuecomment-5741560032",
+      "comment_created_at": "2026-09-19T11:42:51Z",
+      "comment_updated_at": "2026-09-19T11:43:07Z",
+      "comment_body_sha256": "c2afef2b835a26ec7b0d74f7f02e2a59ae8205c928adc37a2125a90a2c0dff90",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152820,
+      "author": "fuller-stack-dev",
+      "author_id": 263060202,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T11:43:39.679Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-process-state-worker-20260919",
+        "head_sha": "f61bfc0908ce708da50980c5fcfd58329c0e01d4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
