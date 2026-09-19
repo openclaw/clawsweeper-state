@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152508"
-mode: "autonomous"
-run_id: "35422665845"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35422665845"
+mode: "plan"
+run_id: "35425168146"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35425168146"
 head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-19T05:38:53.919Z"
-canonical: "https://github.com/openclaw/openclaw/issues/152508"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/152508"
+published_at: "2026-09-19T05:59:46.796Z"
+canonical: "#152508"
+canonical_issue: "#152508"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35422665845](https://github.com/openclaw/clawsweeper/actions/runs/35422665845)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35425168146](https://github.com/openclaw/clawsweeper/actions/runs/35425168146)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/152508
+Canonical: #152508
 
 ## Summary
 
-Prepared a narrow fix artifact. Isolated conversion reproduces comparison-text loss, but full reproduction, implementation, and validation remain blocked by read-only access, missing dependencies, and unavailable GitHub DNS. No files or GitHub state changed.
+Plan a narrow shared-sanitizer repair. Current checkout matches preflight main 9793727430e6c354e5c1aa8b637b26e8888209c6 and retains the reported matcher. Runtime reproduction was blocked by missing workspace dependencies. No files or GitHub state changed. Quarantine the separate runtime-scaffolding issue.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Prepared a narrow fix artifact. Isolated conversion reproduces comparison-text l
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152508 | fix_needed | planned | canonical | The shared-owner defect remains supported by source and isolated execution. The executor must reproduce through the complete sanitizer on freshly verified main before editing. |
-| #116943 | route_security | planned | security_sensitive | Route this item alone to central OpenClaw security handling without public mutation; preserve existing runtime-content checks in the ordinary bug fix. |
-| cluster:issue-openclaw-openclaw-152508 | build_fix_artifact | planned | canonical | Prepare one new fix PR on clawsweeper/issue-openclaw-openclaw-152508, reusing that branch and PR if present. Implementation is blocked on this host; the artifact remains actionable for the authorized executor after fresh-main reproduction. |
+| #152508 | fix_needed | planned | canonical | The comparison-prose defect remains source-supported and has a bounded repair path. Establish failing regressions before implementation; this planning run did not establish runtime proof. |
+| #116943 | route_security | planned | security_sensitive | Read-only referral to central OpenClaw security handling. This distinct policy question does not block the ordinary comparison-prose repair. |
 
 ## Needs Human
 
