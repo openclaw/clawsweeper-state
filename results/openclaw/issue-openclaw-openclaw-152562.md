@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152562"
-mode: "autonomous"
-run_id: "35425407960"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35425407960"
+mode: "plan"
+run_id: "35427356976"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35427356976"
 head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-19T06:34:11.873Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-19T06:58:21.567Z"
 canonical: "https://github.com/openclaw/openclaw/issues/152562"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/152562"
 canonical_pr: null
-actions_total: 7
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35425407960](https://github.com/openclaw/clawsweeper/actions/runs/35425407960)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35427356976](https://github.com/openclaw/clawsweeper/actions/runs/35427356976)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/152562
 
 ## Summary
 
-Source inspection confirms the status-projection defect on preflight main. Implementation and regression proof are blocked by the read-only host and missing dependencies. No files or GitHub state changed; a narrow fix artifact is prepared.
+Plan a narrow Memory Core status fix. Source inspection confirms the model-display mismatch remains in the clean local main checkout. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 7 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,13 +66,7 @@ Source inspection confirms the status-projection defect on preflight main. Imple
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152562 | fix_needed | blocked | canonical | The host permits reads only, preventing dependency installation, regression-test edits, and implementation. Establish a failing current-main regression in a writable executor before repairing or publishing. |
-| #141458 | keep_related | planned | related | Separate behavior and repair scope; preserve the contributor PR without merging, replacing, or closing it in this job. |
-| #91165 | keep_closed | skipped | related | Historical context only; not a landing branch or closure target. |
-| #91596 | keep_closed | skipped | related | Index validity and displayed model are distinct; retain as historical evidence. |
-| #91706 | keep_closed | skipped | related | Preserve the existing adapter owner; do not resurrect the historical implementation. |
-| #144464 | keep_closed | skipped | related | Configuration contract context, not the displayed-model fix; no SDK changes are needed. |
-| cluster:issue-openclaw-openclaw-152562 | build_fix_artifact | planned |  | A narrow non-security reporting repair has an existing owner and no viable hydrated PR for this specific defect. |
+| #152562 | fix_needed | planned | canonical | A producer-side reporting repair fits the authorized bug-only scope. Require a failing current-main regression before implementation and publication. |
 
 ## Needs Human
 
