@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-19T18:06:37.534Z",
+  "updated_at": "2026-09-19T18:08:01.093Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150929:5723849073:2026-09-18T01:51:36Z:re_review",
-      "comment_id": "5723849073",
-      "comment_version_key": "5723849073:2026-09-18T01:51:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150929#issuecomment-5723849073",
-      "comment_created_at": "2026-09-18T01:51:36Z",
-      "comment_updated_at": "2026-09-18T01:51:36Z",
-      "comment_body_sha256": "39558be42c40accec3d4c788b7058fc34361d9662151c7ac5b783183f0004f44",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150929,
-      "author": "tzy-17",
-      "author_id": 56995822,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — p1 fixed via doctor migration (strip-blank-agent-workspaces) that removes saved blank workspace keys and preserves each agent's established default workspace directory; p2 fixed via field-level blank-workspace validation before avatar resolution (no thrown errors). added a real runtime trace: real validateconfigobject returns a clean field-level issue for a blank workspace + avatar, and the real doctor migration runner transforms a v2026.9.4-shaped saved-blank config with no effective-directory change",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T11:43:34.040Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150929:5729058318:2026-09-18T11:01:48Z:re_review",
       "comment_id": "5729058318",
@@ -33101,6 +33074,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152448:5739172607:2026-09-19T18:07:08Z:clawsweeper_needs_human",
+      "comment_id": "5739172607",
+      "comment_version_key": "5739172607:2026-09-19T18:07:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152448#issuecomment-5739172607",
+      "comment_created_at": "2026-09-19T03:55:22Z",
+      "comment_updated_at": "2026-09-19T18:07:08Z",
+      "comment_body_sha256": "8225f1e011b05edfcae0d8d816f0f80f51518508fd37736a3d53922c0d284a06",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152448,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=98ceacb3634ba4bcf3362eee1dff56aba66bc5b9)",
+      "expected_head_sha": "98ceacb3634ba4bcf3362eee1dff56aba66bc5b9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T18:08:01.093Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/perf-r2-node-imports-20260918",
+        "head_sha": "98ceacb3634ba4bcf3362eee1dff56aba66bc5b9",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
