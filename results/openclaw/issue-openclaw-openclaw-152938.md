@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152938"
-mode: "autonomous"
-run_id: "35449097161"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35449097161"
-head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "35452143969"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35452143969"
+head_sha: "542a494c98f482f59f82253e514e599c565f7839"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-19T14:58:51.180Z"
-canonical: "https://github.com/openclaw/openclaw/issues/152938"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/152938"
+published_at: "2026-09-19T15:37:47.029Z"
+canonical: "#152938"
+canonical_issue: "#152938"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35449097161](https://github.com/openclaw/clawsweeper/actions/runs/35449097161)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35452143969](https://github.com/openclaw/clawsweeper/actions/runs/35452143969)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/152938
+Canonical: #152938
 
 ## Summary
 
-Confirmed all three filename failures with a read-only probe of the source sanitizer. Prepared a narrow fix plan; filesystem staging reproduction, implementation, and validation are blocked on this read-only host with no installed dependencies.
+Prepare a narrow terminal-upload filename repair. The checkout matches the preflight main SHA and retains the reported normalization order. No files or GitHub state changed; staging reproduction and validation remain pending in a writable executor.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Confirmed all three filename failures with a read-only probe of the source sanit
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152938 | fix_needed | planned | canonical | A narrow existing-behavior bug remains reproducible in the checked-out main source. No product decision or security-boundary change is needed. |
-| cluster:issue-openclaw-openclaw-152938 | build_fix_artifact | planned | canonical | The executable repair plan can proceed in a writable executor without further maintainer judgment. No GitHub mutations were performed. |
+| #152938 | fix_needed | planned | canonical | A bounded portability defect has a clear repair path. Implement only after demonstrating failing regressions through stageTerminalUpload on refreshed main. Closing and merging are prohibited. |
 
 ## Needs Human
 
