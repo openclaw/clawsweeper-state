@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T16:05:28.953Z",
+  "updated_at": "2026-09-19T16:06:22.350Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152309:5740542334:2026-09-19T08:50:29Z:clawsweeper_needs_human",
-      "comment_id": "5740542334",
-      "comment_version_key": "5740542334:2026-09-19T08:50:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152309#issuecomment-5740542334",
-      "comment_created_at": "2026-09-19T08:40:05Z",
-      "comment_updated_at": "2026-09-19T08:50:29Z",
-      "comment_body_sha256": "6c1f23b9381ccf18473dc73b46c0b05fd75e235f00364de564f019b3cd3e6cbb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152309,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e6115b6b40ce66cb88ad4545754beef9f3989c8f)",
-      "expected_head_sha": "e6115b6b40ce66cb88ad4545754beef9f3989c8f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T08:59:37.061Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/investigate-isolated-gateway-readiness-timeouts",
-        "head_sha": "e6115b6b40ce66cb88ad4545754beef9f3989c8f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152726:5740574499:2026-09-19T08:56:49Z:clawsweeper_needs_human",
       "comment_id": "5740574499",
@@ -33183,6 +33150,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:116176:5743331733:2026-09-19T16:05:34Z:re_review",
+      "comment_id": "5743331733",
+      "comment_version_key": "5743331733:2026-09-19T16:05:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/116176#issuecomment-5743331733",
+      "comment_created_at": "2026-09-19T16:05:34Z",
+      "comment_updated_at": "2026-09-19T16:05:34Z",
+      "comment_body_sha256": "6504bb8c38381f53163af56e7c2cc6571575111fc580af8be5dab6f47f31d5cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 116176,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T16:06:20.052Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/signal-autostart-httpurl-port",
+        "head_sha": "16826614ceea3cb7e59064e478bdca151b87a3e7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
