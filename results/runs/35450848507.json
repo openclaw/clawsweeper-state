@@ -1,0 +1,82 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152970",
+  "mode": "autonomous",
+  "run_id": "35450848507",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35450848507",
+  "head_sha": "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152970.md",
+  "published_at": "2026-09-19T15:38:56.208Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152970",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152970",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the initial Doctor readiness gap on preflight main. A narrow fix artifact is prepared, but implementation and runtime reproduction are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#152970",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152970",
+      "candidate_fix": null,
+      "reason": "The canonical bug remains supported by current source. Implementation must resume on a writable executor and establish the requested failing regression before production edits."
+    },
+    {
+      "target": "#152965",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate root cause and validation requirements; leave open outside this implementation."
+    },
+    {
+      "target": "#149422",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical readiness-budget context; it does not fix the initial diagnostic."
+    },
+    {
+      "target": "#2648",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Closed historical context only."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152970",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152970",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR remains appropriate, conditional on reproducing the defect before editing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_independent": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
