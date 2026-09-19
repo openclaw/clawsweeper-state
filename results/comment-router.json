@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T20:29:10.462Z",
+  "updated_at": "2026-09-19T20:29:11.157Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119702:5742829345:2026-09-19T14:53:37Z:re_review",
-      "comment_id": "5742829345",
-      "comment_version_key": "5742829345:2026-09-19T14:53:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5742829345",
-      "comment_created_at": "2026-09-19T14:53:37Z",
-      "comment_updated_at": "2026-09-19T14:53:37Z",
-      "comment_body_sha256": "4df29651bb7d8581e6b3bc642b511baf0a1386e62646db7b7e3de66eafed4769",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T14:54:25.695Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/json-schema-patternproperties-redos-undici-lock",
-        "head_sha": "e3230bb0bbb4644468ce908c46b2aafa6fcb70ba",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151329:5724587936:2026-09-19T14:54:16Z:clawsweeper_needs_human",
       "comment_id": "5724587936",
@@ -33098,6 +33051,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-r2-responses-parsed-arguments-20260919",
         "head_sha": "00e8f40dde46ae6b509f4ac20f8a949ec87830ba",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151292:5723489634:2026-09-19T20:28:16Z:clawsweeper_needs_human",
+      "comment_id": "5723489634",
+      "comment_version_key": "5723489634:2026-09-19T20:28:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151292#issuecomment-5723489634",
+      "comment_created_at": "2026-09-18T01:11:50Z",
+      "comment_updated_at": "2026-09-19T20:28:16Z",
+      "comment_body_sha256": "87ab469fc54fd9ac90c1df21fc08eb2cec16999f3765586c5e7e88e79cef75e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151292,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured terminal traces exercise the real normalization and lookup helpers with synthetic inputs, but stop before configured Disc... (sha=c1a81569bb3232ca49ac815321d069da9fe8eef6)",
+      "expected_head_sha": "c1a81569bb3232ca49ac815321d069da9fe8eef6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T20:29:11.157Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/accounts-strip-leading-underscores",
+        "head_sha": "c1a81569bb3232ca49ac815321d069da9fe8eef6",
         "cluster_id": null,
         "job_path": null
       }
