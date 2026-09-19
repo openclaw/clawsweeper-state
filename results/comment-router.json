@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T14:30:05.741Z",
+  "updated_at": "2026-09-19T14:31:16.588Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152057:5734708885:2026-09-19T08:00:01Z:clawsweeper_auto_repair",
-      "comment_id": "5734708885",
-      "comment_version_key": "5734708885:2026-09-19T08:00:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152057#issuecomment-5734708885",
-      "comment_created_at": "2026-09-18T18:51:30Z",
-      "comment_updated_at": "2026-09-19T08:00:01Z",
-      "comment_body_sha256": "51dfe86263a37ee4b92b1bdfe920f0eb5e37f4ecbc95bacfc310f0313182a62f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152057,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bae151abed05adbdbbfccc13c93718619cf96687)",
-      "expected_head_sha": "bae151abed05adbdbbfccc13c93718619cf96687",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T08:01:49.947Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/chrome-setup-pairing-investigation-20260918",
-        "head_sha": "bae151abed05adbdbbfccc13c93718619cf96687",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152120:5735478077:2026-09-19T07:58:57Z:clawsweeper_needs_human",
       "comment_id": "5735478077",
@@ -32895,6 +32862,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152875:5742670427:2026-09-19T14:30:28Z:re_review",
+      "comment_id": "5742670427",
+      "comment_version_key": "5742670427:2026-09-19T14:30:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152875#issuecomment-5742670427",
+      "comment_created_at": "2026-09-19T14:30:28Z",
+      "comment_updated_at": "2026-09-19T14:30:28Z",
+      "comment_body_sha256": "c1af364098a2c6ec96dc4caf07b1a727e5a5002d627086a0ed24a65a2256433b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152875,
+      "author": "DonnieFi",
+      "author_id": 44792682,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T14:31:14.729Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/152284-refuse-live-dist-build",
+        "head_sha": "ad9ab4dfe2559ba301c98d0d9f2d5662b852185b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
