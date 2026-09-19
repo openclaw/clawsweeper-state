@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153145",
+  "mode": "autonomous",
+  "run_id": "35466358549",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35466358549",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153145.md",
+  "published_at": "2026-09-19T20:13:33.401Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153145",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153145",
+  "canonical_pr": null,
+  "summary": "Confirmed the bounded Talk reply waits on preflight main. Prepared a narrow fix artifact; implementation, failing regression, native validation, and screenshots are blocked by this read-only Linux host. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#153145",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153145",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor and disposable macOS runner. Establish the required failing regression before patching or opening the PR; source inspection alone does not fulfill that gate."
+    },
+    {
+      "target": "#60636",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for a different timeout owner; no reopening or closure action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153145",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153145",
+      "candidate_fix": null,
+      "reason": "Existing request and observation contracts support a narrow bug fix without settings, provider changes, or protocol policy changes. Execution remains conditional on reproducing the defect on refreshed main."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
