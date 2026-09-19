@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153003",
+  "mode": "autonomous",
+  "run_id": "35453409829",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35453409829",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153003.md",
+  "published_at": "2026-09-19T16:54:35.737Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153003",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153003",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the missing-retention failure on preflight main. Implementation and runtime reproduction are blocked by the read-only host, missing dependencies, and unavailable sibling Codex source. No files or GitHub state changed; a narrow executor fix plan is provided.",
+  "actions": [
+    {
+      "target": "#153003",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153003",
+      "candidate_fix": null,
+      "reason": "A narrow repair remains warranted; runtime reproduction must precede production edits in a writable executor."
+    },
+    {
+      "target": "#143187",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep its durable-binding ownership repair outside this implementation."
+    },
+    {
+      "target": "#148837",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct from an idle subscribed connection whose retained owner is absent."
+    },
+    {
+      "target": "#149000",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical recovery implementation, not a fixing candidate for the missing-retention idle-thread case."
+    },
+    {
+      "target": "#152275",
+      "action": "keep_independent",
+      "status": "planned",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "This Codex subscription repair does not establish or fix that publication outage."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153003",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#153003",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation remains blocked on a writable, dependency-equipped executor with the pinned Codex source. Reproduce before patching or publishing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "keep_independent": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 4,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
