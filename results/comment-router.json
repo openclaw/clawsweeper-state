@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T05:21:54.412Z",
+  "updated_at": "2026-09-19T05:22:20.558Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:111737:5737822267:2026-09-19T00:26:17Z:re_review",
-      "comment_id": "5737822267",
-      "comment_version_key": "5737822267:2026-09-19T00:26:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/111737#issuecomment-5737822267",
-      "comment_created_at": "2026-09-19T00:26:17Z",
-      "comment_updated_at": "2026-09-19T00:26:17Z",
-      "comment_body_sha256": "88781c7b5ee70623ba5fcd9d777bdc83b25dea3d1adc17c264abe60c59b374c3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 111737,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T00:32:13.963Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/xai-invalid-utf8-oauth",
-        "head_sha": "6b27db42d548d6f10962400c2de561c00275a407",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:111737:5021492620:2026-09-19T00:31:18Z:clawsweeper_needs_human",
       "comment_id": "5021492620",
@@ -33100,6 +33053,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152489:5739416983:2026-09-19T05:21:27Z:clawsweeper_needs_human",
+      "comment_id": "5739416983",
+      "comment_version_key": "5739416983:2026-09-19T05:21:27Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152489#issuecomment-5739416983",
+      "comment_created_at": "2026-09-19T04:42:43Z",
+      "comment_updated_at": "2026-09-19T05:21:27Z",
+      "comment_body_sha256": "f8afaf4cfc6b8c79e2b3da5136efb43086909e3d4886e722f08658e7d8c176bc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152489,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed direct-completion owner is covered by mocked acquisition, health persistence, and provider responses. The supplied evidence does no... (sha=1a9efd69e950f535549a24e2d72bed204c28e0e2)",
+      "expected_head_sha": "1a9efd69e950f535549a24e2d72bed204c28e0e2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T05:22:20.558Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/issue-152360-llm-complete-profile-failover",
+        "head_sha": "1a9efd69e950f535549a24e2d72bed204c28e0e2",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
