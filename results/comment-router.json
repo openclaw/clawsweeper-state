@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-19T17:39:53.369Z",
+  "updated_at": "2026-09-19T17:40:04.263Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152635:5740076276:2026-09-19T11:14:18Z:clawsweeper_needs_human",
-      "comment_id": "5740076276",
-      "comment_version_key": "5740076276:2026-09-19T11:14:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152635#issuecomment-5740076276",
-      "comment_created_at": "2026-09-19T06:58:44Z",
-      "comment_updated_at": "2026-09-19T11:14:18Z",
-      "comment_body_sha256": "b6425ea9e5b181910ce0179b5e68d89d9a2deb47d72cdea03379be8a27822b1c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152635,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Downstream adapters importing the new SDK exports cannot run against the latest supplied release; their supported host-version contract must account for that before adoption. (sha=4ca85ab1808d32709366881eb10f30592d4ce9b2)",
-      "expected_head_sha": "4ca85ab1808d32709366881eb10f30592d4ce9b2",
-      "finding_id": null,
-      "status": "waiting",
-      "processed_at": "2026-09-19T11:17:26.619Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119702:5197143667:2026-09-19T11:17:07Z:clawsweeper_needs_human",
       "comment_id": "5197143667",
@@ -33118,6 +33091,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153046:5743995723:2026-09-19T17:39:07Z:clawsweeper_needs_human",
+      "comment_id": "5743995723",
+      "comment_version_key": "5743995723:2026-09-19T17:39:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153046#issuecomment-5743995723",
+      "comment_created_at": "2026-09-19T17:39:07Z",
+      "comment_updated_at": "2026-09-19T17:39:07Z",
+      "comment_body_sha256": "8e546c85a6cfdb91fcd29f44796573a7f5efe537a78c636c285a22e5575998f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153046,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the real-store regression reaches transaction-current account-mismatch rejection, but does not demonst...; Review finding: [P2] Recheck cancellation at the managed credential write boundary — src/commands/models/auth.ts:403-408 - [medium] Canceled login retains credential-write capabil... (sha=16846cdf83e315e1482574b545d1277d987a4740)",
+      "expected_head_sha": "16846cdf83e315e1482574b545d1277d987a4740",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T17:40:04.263Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/kevinlin/oce-managed-oauth-login",
+        "head_sha": "16846cdf83e315e1482574b545d1277d987a4740",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
