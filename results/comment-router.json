@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T02:31:39.847Z",
+  "updated_at": "2026-09-19T02:31:41.594Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:149282:5736433549:2026-09-18T21:32:07Z:re_review",
-      "comment_id": "5736433549",
-      "comment_version_key": "5736433549:2026-09-18T21:32:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/149282#issuecomment-5736433549",
-      "comment_created_at": "2026-09-18T21:32:07Z",
-      "comment_updated_at": "2026-09-18T21:32:07Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 149282,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T21:33:12.379Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/tool-call-aux-queue-20260916",
-        "head_sha": "abe92197df90771248a96991ebf1f18a37f4185a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:steipete/CodexBar:3748:5736397901:2026-09-18T21:28:12Z:re_review",
       "comment_id": "5736397901",
@@ -32663,6 +32616,39 @@
         "kind": "pull_request",
         "branch": "fix/150571-hidrata-o-inalterada-regrava-snapshots",
         "head_sha": "aa947c0243f7d6df6b7cbaa2f1825a0f1b1ae449",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152372:5738627032:2026-09-19T02:30:40Z:clawsweeper_needs_human",
+      "comment_id": "5738627032",
+      "comment_version_key": "5738627032:2026-09-19T02:30:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152372#issuecomment-5738627032",
+      "comment_created_at": "2026-09-19T02:30:40Z",
+      "comment_updated_at": "2026-09-19T02:30:40Z",
+      "comment_body_sha256": "ae63b2fa991996b88f3b773e33eb68c8106dc7a9b6312211d7e29586063eef7e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152372,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Actual channel rendering and transport behavior remain unverified; the supplied regression establishes callback ownership using synthetic external sends. (sha=6dd236464bcc91eba8452f4b3f15c1d901bb389f)",
+      "expected_head_sha": "6dd236464bcc91eba8452f4b3f15c1d901bb389f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T02:31:41.594Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/slack-queued-progress-routing",
+        "head_sha": "6dd236464bcc91eba8452f4b3f15c1d901bb389f",
         "cluster_id": null,
         "job_path": null
       }
