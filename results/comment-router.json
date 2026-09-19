@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T23:20:26.508Z",
+  "updated_at": "2026-09-19T23:23:52.547Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153086:5744313492:2026-09-19T18:22:58Z:clawsweeper_needs_human",
-      "comment_id": "5744313492",
-      "comment_version_key": "5744313492:2026-09-19T18:22:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153086#issuecomment-5744313492",
-      "comment_created_at": "2026-09-19T18:22:58Z",
-      "comment_updated_at": "2026-09-19T18:22:58Z",
-      "comment_body_sha256": "79556dc3fd1e30648b87af7604f57ecb034b1266359c6d3c0654f8721de7f7db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153086,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the acknowledgement owner is exercised through isolated SQLite tests, but no after-fix runtime trace de... (sha=df39e395e93e10960d89d3a2c8da63adfbf3a39c)",
-      "expected_head_sha": "df39e395e93e10960d89d3a2c8da63adfbf3a39c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T18:24:06.740Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-claimless-delivery-ack",
-        "head_sha": "df39e395e93e10960d89d3a2c8da63adfbf3a39c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153085:5744317619:2026-09-19T18:23:40Z:clawsweeper_auto_repair",
       "comment_id": "5744317619",
@@ -33183,6 +33150,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149755:5746078247:2026-09-19T23:22:21Z:re_review",
+      "comment_id": "5746078247",
+      "comment_version_key": "5746078247:2026-09-19T23:22:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149755#issuecomment-5746078247",
+      "comment_created_at": "2026-09-19T23:22:21Z",
+      "comment_updated_at": "2026-09-19T23:22:21Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149755,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T23:23:44.448Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/issue-149612-provider-reload-lane",
+        "head_sha": "d245e363c8e6fe5aad0cf70dd57de79d0fe107f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
