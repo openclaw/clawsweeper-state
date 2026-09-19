@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T05:24:37.564Z",
+  "updated_at": "2026-09-19T05:24:42.070Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:126924:5737887688:2026-09-19T00:34:17Z:re_review",
-      "comment_id": "5737887688",
-      "comment_version_key": "5737887688:2026-09-19T00:34:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/126924#issuecomment-5737887688",
-      "comment_created_at": "2026-09-19T00:34:17Z",
-      "comment_updated_at": "2026-09-19T00:34:17Z",
-      "comment_body_sha256": "2dc8dbcf25c4e61c6d75dafb6f093594d502968353770a3e22a3d6153179d44c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 126924,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T00:35:12.402Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/subagent-wait-expiry-not-death",
-        "head_sha": "fefbb288fa90f0ac8b76744f0f1f2cc71d219464",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152252:5737888693:2026-09-19T00:34:24Z:re_review",
       "comment_id": "5737888693",
@@ -33070,6 +33023,39 @@
         "kind": "pull_request",
         "branch": "fix/talk-relay-cancellation-recovery",
         "head_sha": "7c2d473c7f02036a94c714f8f022165e787041ec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152480:5739359878:2026-09-19T05:23:48Z:clawsweeper_needs_human",
+      "comment_id": "5739359878",
+      "comment_version_key": "5739359878:2026-09-19T05:23:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152480#issuecomment-5739359878",
+      "comment_created_at": "2026-09-19T04:31:13Z",
+      "comment_updated_at": "2026-09-19T05:23:48Z",
+      "comment_body_sha256": "54d3fad43933cc5e13ca7d206c66a896811558790e185f1656a7068a0befeec0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152480,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The conflicted integration with main has not been reviewed; the final combined implementation remains unknown. (sha=f52fc08eab1dc68a6fea1020f45309640bc4b912)",
+      "expected_head_sha": "f52fc08eab1dc68a6fea1020f45309640bc4b912",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T05:24:42.070Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/stress-runtime-cleanup-20260918",
+        "head_sha": "f52fc08eab1dc68a6fea1020f45309640bc4b912",
         "cluster_id": null,
         "job_path": null
       }
