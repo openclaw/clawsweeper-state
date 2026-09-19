@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T16:32:32.711Z",
+  "updated_at": "2026-09-19T16:32:33.872Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:139033:5740797413:2026-09-19T09:35:42Z:re_review",
-      "comment_id": "5740797413",
-      "comment_version_key": "5740797413:2026-09-19T09:35:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/139033#issuecomment-5740797413",
-      "comment_created_at": "2026-09-19T09:35:42Z",
-      "comment_updated_at": "2026-09-19T09:35:42Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 139033,
-      "author": "jcorrius",
-      "author_id": 77185,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T09:36:30.326Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/i18n-catalan",
-        "head_sha": "b6a96412aaef44b88841c8ba2d2b454d6b7acafa",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152752:5740798372:2026-09-19T09:35:55Z:clawsweeper_needs_human",
       "comment_id": "5740798372",
@@ -33222,6 +33175,39 @@
         "kind": "pull_request",
         "branch": "fix/update-status-reason-20260915",
         "head_sha": "5f1d0cbcb3168f8c8ad1a831d41aceceec99a42d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153027:5743507498:2026-09-19T16:31:42Z:clawsweeper_auto_repair",
+      "comment_id": "5743507498",
+      "comment_version_key": "5743507498:2026-09-19T16:31:42Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153027#issuecomment-5743507498",
+      "comment_created_at": "2026-09-19T16:31:42Z",
+      "comment_updated_at": "2026-09-19T16:31:42Z",
+      "comment_body_sha256": "e85e5048651e7e2ccc5b049f66a2a9ffc83ecbb84f5ce29106e8df49f02cd2e8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153027,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=bd6dff5666076228759db1cc441f7773e0f3c4dc)",
+      "expected_head_sha": "bd6dff5666076228759db1cc441f7773e0f3c4dc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T16:32:33.872Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/official-plugin-drift-repair",
+        "head_sha": "bd6dff5666076228759db1cc441f7773e0f3c4dc",
         "cluster_id": null,
         "job_path": null
       }
