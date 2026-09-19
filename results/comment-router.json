@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-19T11:07:05.918Z",
+  "updated_at": "2026-09-19T11:07:47.196Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:4608247916:2026-06-03T01:12:55Z:re_review",
-      "comment_id": "4608247916",
-      "comment_version_key": "4608247916:2026-06-03T01:12:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-4608247916",
-      "comment_created_at": "2026-06-03T01:12:55Z",
-      "comment_updated_at": "2026-06-03T01:12:55Z",
-      "comment_body_sha256": "32cd430bea827b371ea0a3c9babb4f5c78cf5afc976a2adcf01963b9a47bb3db",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review — head `8066e406c` addresses the inbound-context p1: persists `currentinboundeventkind`, `currentinboundaudio`, and `currentinboundcontext` with restart tests for room_event, quoted reply, and bare session reset. pr body proof updated",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T06:00:20.596Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:4608766346:2026-06-03T03:15:05Z:re_review",
       "comment_id": "4608766346",
@@ -32752,6 +32725,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145169:5639303517:2026-09-19T11:06:41Z:clawsweeper_needs_human",
+      "comment_id": "5639303517",
+      "comment_version_key": "5639303517:2026-09-19T11:06:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/145169#issuecomment-5639303517",
+      "comment_created_at": "2026-09-11T18:59:52Z",
+      "comment_updated_at": "2026-09-19T11:06:41Z",
+      "comment_body_sha256": "c6aa010e989de6162c8d6b38a3f69a7ebf5e50e47fb67bfe354837c3bf56bc3a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 145169,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: retain credit for the earlier published-updater runs and actual executor-release retirement coverage w...; Review finding: [P2] Describe forward recovery instead of promising automatic restoration — docs/cli/update/repair-and-recovery.md:200-203 - [medium] Transferred writer revocation... (sha=f6feb6b75d08785dc61da204fa9b0d4ea581693c)",
+      "expected_head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T11:07:47.196Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/migration-rollback-preservation-20260911",
+        "head_sha": "f6feb6b75d08785dc61da204fa9b0d4ea581693c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
