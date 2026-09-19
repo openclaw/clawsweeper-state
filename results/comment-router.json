@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T22:09:47.637Z",
+  "updated_at": "2026-09-19T22:09:52.556Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145103:5638845379:2026-09-19T16:49:23Z:clawsweeper_needs_human",
-      "comment_id": "5638845379",
-      "comment_version_key": "5638845379:2026-09-19T16:49:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145103#issuecomment-5638845379",
-      "comment_created_at": "2026-09-11T18:17:54Z",
-      "comment_updated_at": "2026-09-19T16:49:23Z",
-      "comment_body_sha256": "2eff6f2cc1e92972fbff769714878f3b49ac1596fa7f97fbc56d87e128125f86",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145103,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The matching full-body terminal transcript demonstrates the real resolver and post-upgrade probe on isolated Linux state at 5be45672,... (sha=e0ee7476373d07a5b9d0c9ea4cf7f7a616921f3d)",
-      "expected_head_sha": "e0ee7476373d07a5b9d0c9ea4cf7f7a616921f3d",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T16:52:04.181Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/doctor-clawhub-plugin-drift-target",
-        "head_sha": "e0ee7476373d07a5b9d0c9ea4cf7f7a616921f3d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150153:5700958005:2026-09-19T16:49:31Z:clawsweeper_auto_repair",
       "comment_id": "5700958005",
@@ -33143,6 +33110,53 @@
         "kind": "pull_request",
         "branch": "fix/agents-reject-blank-agentdir",
         "head_sha": "37b204940faf9ad4b1195359ee5306609caa0e78",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151091:5745652762:2026-09-19T22:08:55Z:re_review",
+      "comment_id": "5745652762",
+      "comment_version_key": "5745652762:2026-09-19T22:08:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151091#issuecomment-5745652762",
+      "comment_created_at": "2026-09-19T22:08:55Z",
+      "comment_updated_at": "2026-09-19T22:08:55Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151091,
+      "author": "tzy-17",
+      "author_id": 56995822,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T22:09:49.874Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/agents-reject-blank-cwd",
+        "head_sha": "7bf63923b84b84af6e2f630cbd8879b80a785748",
         "cluster_id": null,
         "job_path": null
       },
