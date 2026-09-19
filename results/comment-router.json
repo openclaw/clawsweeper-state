@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T17:52:18.407Z",
+  "updated_at": "2026-09-19T17:52:21.949Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137189:5523010706:2026-09-19T11:30:14Z:clawsweeper_needs_human",
-      "comment_id": "5523010706",
-      "comment_version_key": "5523010706:2026-09-19T11:30:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137189#issuecomment-5523010706",
-      "comment_created_at": "2026-09-03T08:39:56Z",
-      "comment_updated_at": "2026-09-19T11:30:14Z",
-      "comment_body_sha256": "ff93fef15f4ce86839b7973a9342c7de1e165ec6f1c8eee29b5d73dbfc9ced3c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137189,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A human-authored row would be suppressed if Messages marks it is_from_me=false in a verified self-chat and it repeats a recorded outbound parent's normalized body within four seconds;... (sha=7cff7816890f630a8cc50d14a499c956c93b1910)",
-      "expected_head_sha": "7cff7816890f630a8cc50d14a499c956c93b1910",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T11:39:28.664Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/issue-135704",
-        "head_sha": "7cff7816890f630a8cc50d14a499c956c93b1910",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143350:5607668509:2026-09-19T11:38:01Z:clawsweeper_needs_human",
       "comment_id": "5607668509",
@@ -33058,6 +33025,53 @@
         "kind": "pull_request",
         "branch": "fix/imessage-allowlist-store-fail",
         "head_sha": "b2c2aaf5ca1688dedd7534fec8d40c4a9e3a2ddc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/acpx:622:5744087785:2026-09-19T17:51:33Z:re_review",
+      "comment_id": "5744087785",
+      "comment_version_key": "5744087785:2026-09-19T17:51:33Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/622#issuecomment-5744087785",
+      "comment_created_at": "2026-09-19T17:51:33Z",
+      "comment_updated_at": "2026-09-19T17:51:33Z",
+      "comment_body_sha256": "e113a031a90738a3a90c5f326770b020b6f1404a708fa17150f2b8acf4020044",
+      "repo": "openclaw/acpx",
+      "issue_number": 622,
+      "author": "obviyus",
+      "author_id": 22031114,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T17:52:18.363Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/runtime-final-prompt-admission",
+        "head_sha": "8b0ffb6991b7fd38d7b351ad84af3cab3a974641",
         "cluster_id": null,
         "job_path": null
       },
