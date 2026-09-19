@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T15:08:59.672Z",
+  "updated_at": "2026-09-19T15:09:24.455Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119702:5740446922:2026-09-19T08:20:54Z:re_review",
-      "comment_id": "5740446922",
-      "comment_version_key": "5740446922:2026-09-19T08:20:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119702#issuecomment-5740446922",
-      "comment_created_at": "2026-09-19T08:20:54Z",
-      "comment_updated_at": "2026-09-19T08:20:54Z",
-      "comment_body_sha256": "f9e446c9fba52a5195f567c3e65d4e3d21b7b8ec38895079df77abc6ead37320",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119702,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T08:26:29.123Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/json-schema-patternproperties-redos-undici-lock",
-        "head_sha": "31e6b79eeaceb19b18a57b972b928db10ecc0f80",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152309:5740472587:2026-09-19T08:25:43Z:re_review",
       "comment_id": "5740472587",
@@ -32994,6 +32947,39 @@
         "kind": "pull_request",
         "branch": "fix/failover-5xx-server-error",
         "head_sha": "1baa2cf6cc8324792a764b31fca1434d17e3e01a",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150898:5714682301:2026-09-19T15:06:34Z:clawsweeper_auto_repair",
+      "comment_id": "5714682301",
+      "comment_version_key": "5714682301:2026-09-19T15:06:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150898#issuecomment-5714682301",
+      "comment_created_at": "2026-09-17T12:54:09Z",
+      "comment_updated_at": "2026-09-19T15:06:34Z",
+      "comment_body_sha256": "a56b0c9c8c6f92b35c560d61a2b2865a3aea106896e10b53e058dbac5bdc300c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150898,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=5097fc1c3bb745b6db87416de1d791432f369aef)",
+      "expected_head_sha": "5097fc1c3bb745b6db87416de1d791432f369aef",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T15:09:24.455Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/service-install-drift",
+        "head_sha": "5097fc1c3bb745b6db87416de1d791432f369aef",
         "cluster_id": null,
         "job_path": null
       }
