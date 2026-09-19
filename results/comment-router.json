@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T02:18:59.450Z",
+  "updated_at": "2026-09-19T02:19:33.785Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148630:5736208598:2026-09-18T21:08:37Z:re_review",
-      "comment_id": "5736208598",
-      "comment_version_key": "5736208598:2026-09-18T21:08:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148630#issuecomment-5736208598",
-      "comment_created_at": "2026-09-18T21:08:37Z",
-      "comment_updated_at": "2026-09-18T21:08:37Z",
-      "comment_body_sha256": "cf714708909d9456aa0c1e2239b867fa0f556c92db22af47227dc65e3c6058ef",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148630,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T21:09:39.342Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/session-maintenance-worker-integration",
-        "head_sha": "60ada1f87d53b9696872efbacf0ac29e21ee2ce1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152162:5736210745:2026-09-18T21:08:49Z:clawsweeper_needs_human",
       "comment_id": "5736210745",
@@ -32914,6 +32867,39 @@
       "status": "skipped",
       "processed_at": "2026-09-19T02:18:59.450Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150898:5714682301:2026-09-19T02:13:41Z:clawsweeper_needs_human",
+      "comment_id": "5714682301",
+      "comment_version_key": "5714682301:2026-09-19T02:13:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150898#issuecomment-5714682301",
+      "comment_created_at": "2026-09-17T12:54:09Z",
+      "comment_updated_at": "2026-09-19T02:13:41Z",
+      "comment_body_sha256": "056e224d4c7a45c3e9a489fb0a665263ba2bbb7c7232a84b7d1a47b73a739c86",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150898,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - If reconciliation fails after state maintenance, the older Gateway can remain stopped and require the reported installer command. (sha=c1d5aafc7fb2e95ac0294c590e6546d55ec7b2f4)",
+      "expected_head_sha": "c1d5aafc7fb2e95ac0294c590e6546d55ec7b2f4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T02:19:33.785Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/service-install-drift",
+        "head_sha": "c1d5aafc7fb2e95ac0294c590e6546d55ec7b2f4",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
