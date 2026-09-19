@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152508",
+  "mode": "autonomous",
+  "run_id": "35422665845",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35422665845",
+  "head_sha": "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152508.md",
+  "published_at": "2026-09-19T05:38:53.919Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152508",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152508",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Isolated conversion reproduces comparison-text loss, but full reproduction, implementation, and validation remain blocked by read-only access, missing dependencies, and unavailable GitHub DNS. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#152508",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152508",
+      "candidate_fix": null,
+      "reason": "The shared-owner defect remains supported by source and isolated execution. The executor must reproduce through the complete sanitizer on freshly verified main before editing."
+    },
+    {
+      "target": "#116943",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Route this item alone to central OpenClaw security handling without public mutation; preserve existing runtime-content checks in the ordinary bug fix."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152508",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152508",
+      "candidate_fix": null,
+      "reason": "Prepare one new fix PR on clawsweeper/issue-openclaw-openclaw-152508, reusing that branch and PR if present. Implementation is blocked on this host; the artifact remains actionable for the authorized executor after fresh-main reproduction."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
