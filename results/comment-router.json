@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T01:32:07.971Z",
+  "updated_at": "2026-09-19T01:32:49.476Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152045:5735782410:2026-09-18T20:27:32Z:re_review",
-      "comment_id": "5735782410",
-      "comment_version_key": "5735782410:2026-09-18T20:27:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152045#issuecomment-5735782410",
-      "comment_created_at": "2026-09-18T20:27:32Z",
-      "comment_updated_at": "2026-09-18T20:27:32Z",
-      "comment_body_sha256": "a51ecf0b9709f5ee352d9146c2ea20675659cb35b1f138bb4aec12d3b0a9c10f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152045,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T20:32:01.093Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/activity-image-previews",
-        "head_sha": "f7956559e62876a7cf0c6777e1fd2de1e4282226",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138439:5544449069:2026-09-18T20:29:42Z:clawsweeper_auto_repair",
       "comment_id": "5544449069",
@@ -32813,6 +32766,39 @@
         "kind": "pull_request",
         "branch": "fix/issue-152182",
         "head_sha": "e7cbe56bce1bf6f5f9c026f6b5a08f8c621ad29f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-windows-node:1450:5738278074:2026-09-19T01:32:03Z:clawsweeper_needs_human",
+      "comment_id": "5738278074",
+      "comment_version_key": "5738278074:2026-09-19T01:32:03Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-node/pull/1450#issuecomment-5738278074",
+      "comment_created_at": "2026-09-19T01:32:03Z",
+      "comment_updated_at": "2026-09-19T01:32:03Z",
+      "comment_body_sha256": "f1fdeca7e47b1db13f682bbf9573809545522595d03d88d0342ddfcda913683b",
+      "repo": "openclaw/openclaw-windows-node",
+      "issue_number": 1450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The supplied tree checks show alias removal, but not a real agent discovering retained instructions after the root import is deleted;... (sha=679b6771dab33db7fba5ffbb7e919c2d4c98804c)",
+      "expected_head_sha": "679b6771dab33db7fba5ffbb7e919c2d4c98804c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T01:32:49.476Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/retire-claude-md-20260918",
+        "head_sha": "679b6771dab33db7fba5ffbb7e919c2d4c98804c",
         "cluster_id": null,
         "job_path": null
       }
