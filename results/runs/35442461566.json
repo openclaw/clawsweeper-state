@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152847",
+  "mode": "autonomous",
+  "run_id": "35442461566",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35442461566",
+  "head_sha": "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152847.md",
+  "published_at": "2026-09-19T12:48:39.491Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152847",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152847",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms unbounded document recursion on preflight main. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. A narrow executor fix plan is provided; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#152847",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152847",
+      "candidate_fix": null,
+      "reason": "The reported reliability defect remains source-supported; preserve this issue as canonical while the executor establishes runtime reproduction."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152847",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#152847",
+      "candidate_fix": null,
+      "reason": "A narrow non-security repair is appropriate once the executor can reproduce and validate it."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152847",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#152847",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor with installed dependencies. Reproduce first and refresh the related-PR inventory before preparing the single implementation PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
