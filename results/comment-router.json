@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T22:18:15.091Z",
+  "updated_at": "2026-09-19T22:18:52.836Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153042:5743779778:2026-09-19T17:08:54Z:re_review",
-      "comment_id": "5743779778",
-      "comment_version_key": "5743779778:2026-09-19T17:08:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153042#issuecomment-5743779778",
-      "comment_created_at": "2026-09-19T17:08:54Z",
-      "comment_updated_at": "2026-09-19T17:08:54Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153042,
-      "author": "MasterSwords1",
-      "author_id": 142840981,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T17:16:19.328Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/151859-acp-discard-close-owner-repair",
-        "head_sha": "67ae37bd7c8ea360da42e797322e6058b139eb74",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:117734:5154495090:2026-09-19T17:14:30Z:clawsweeper_needs_human",
       "comment_id": "5154495090",
@@ -33050,6 +33003,39 @@
         "kind": "pull_request",
         "branch": "codex/storage-independent-attachments",
         "head_sha": "25f434b040bbf6993d86f8e6e03181080879e1f3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153126:5744787710:2026-09-19T22:17:53Z:clawsweeper_needs_human",
+      "comment_id": "5744787710",
+      "comment_version_key": "5744787710:2026-09-19T22:17:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153126#issuecomment-5744787710",
+      "comment_created_at": "2026-09-19T19:42:32Z",
+      "comment_updated_at": "2026-09-19T22:17:53Z",
+      "comment_body_sha256": "1c80d7caf25ff4fa3591ee8ed0bc6d6b00232b1097f52487df268ad5d74c72f2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153126,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: inspected fixtures exercise mapped reads, worker materialization and stop rejection, but the captured...; Review finding: [P1] Reject retained remote snapshots when their reader disappears — src/skills/runtime/resources.ts:138-139 - [P3] Document the preserved document-only skill beha... (sha=18a65ccbc31fc2f630bbe3d5bc27015eec85edc4)",
+      "expected_head_sha": "18a65ccbc31fc2f630bbe3d5bc27015eec85edc4",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T22:18:52.836Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/storage-skill-discovery",
+        "head_sha": "18a65ccbc31fc2f630bbe3d5bc27015eec85edc4",
         "cluster_id": null,
         "job_path": null
       }
