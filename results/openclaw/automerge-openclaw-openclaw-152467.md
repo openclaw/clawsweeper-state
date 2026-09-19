@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "automerge-openclaw-openclaw-152467"
-mode: "autonomous"
-run_id: "35426009681"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35426009681"
+mode: "plan"
+run_id: "35427355009"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35427355009"
 head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-19T06:28:15.907Z"
+published_at: "2026-09-19T07:30:49.406Z"
 canonical: "#152467"
 canonical_issue: null
-canonical_pr: "#152467"
+canonical_pr: "https://github.com/openclaw/openclaw/pull/152467"
 actions_total: 1
 fix_executed: 0
 fix_failed: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35426009681](https://github.com/openclaw/clawsweeper/actions/runs/35426009681)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35427355009](https://github.com/openclaw/clawsweeper/actions/runs/35427355009)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,7 +35,7 @@ Canonical: #152467
 
 ## Summary
 
-Make PR #152467 merge-ready for ClawSweeper automerge. Rebase onto latest main, address PR comments and review findings, fix CI/check failures, preserve release-note context, and validate before returning.
+Prepare the existing contributor branch for guarded finalization. CI and the latest review report pass, but the failed review workflow check requires reconciliation. No mutations or tests performed.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Make PR #152467 merge-ready for ClawSweeper automerge. Rebase onto latest main, 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152467 | build_fix_artifact | planned | canonical | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-only planning pass. |
+| #152467 | fix_needed | planned | canonical | Reconcile the failed review check and current integration requirements through the existing guarded workflow. No source defect or need for a replacement PR is established. |
 
 ## Needs Human
 
