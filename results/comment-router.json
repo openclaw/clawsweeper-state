@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T07:56:38.621Z",
+  "updated_at": "2026-09-19T07:56:56.475Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152361:5738413925:2026-09-19T03:35:04Z:clawsweeper_needs_human",
-      "comment_id": "5738413925",
-      "comment_version_key": "5738413925:2026-09-19T03:35:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152361#issuecomment-5738413925",
-      "comment_created_at": "2026-09-19T01:54:24Z",
-      "comment_updated_at": "2026-09-19T03:35:04Z",
-      "comment_body_sha256": "e42ccd0defe2abeeb9eddd6b8eb064570c4e9051a2574b3f49049cabecc6b74f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152361,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P2)** - The Windows leased ACP test still has an unresolved timeout on the preceding head; current diagnostics have not yet established whether cleanup is affected by this change. The prior j... (sha=dd1d199ef178908d23b08c749ee75ef177bbd6cc)",
-      "expected_head_sha": "dd1d199ef178908d23b08c749ee75ef177bbd6cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T03:42:14.550Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-plugin-state-lifecycle-custody",
-        "head_sha": "dd1d199ef178908d23b08c749ee75ef177bbd6cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2349:5739079921:2026-09-19T03:41:44Z:clawsweeper_needs_human",
       "comment_id": "5739079921",
@@ -32706,6 +32673,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151218:5740330721:2026-09-19T07:55:56Z:re_review",
+      "comment_id": "5740330721",
+      "comment_version_key": "5740330721:2026-09-19T07:55:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151218#issuecomment-5740330721",
+      "comment_created_at": "2026-09-19T07:55:56Z",
+      "comment_updated_at": "2026-09-19T07:55:56Z",
+      "comment_body_sha256": "bede41fc70febb32f59daa2d96ead6d24eac851b3aca1e606e3665e940942451",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151218,
+      "author": "fransqaas",
+      "author_id": 128794406,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T07:56:54.492Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/active-memory-escalation-provider-51",
+        "head_sha": "0edfbb62d9f2197aa1b4191729de04d8dbfacc44",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
