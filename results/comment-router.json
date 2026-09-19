@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T17:37:18.407Z",
+  "updated_at": "2026-09-19T17:37:31.611Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152423:5741312427:2026-09-19T11:06:18Z:re_review",
-      "comment_id": "5741312427",
-      "comment_version_key": "5741312427:2026-09-19T11:06:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152423#issuecomment-5741312427",
-      "comment_created_at": "2026-09-19T11:06:18Z",
-      "comment_updated_at": "2026-09-19T11:06:18Z",
-      "comment_body_sha256": "901beb42ad7f7ef485389bd223ed999b1894ba3fbd1ee5ca023599d67cc6164b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152423,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — current head is 0c50264b2144994cd2627420099f64a06f06fb8a. the originating-chat screenshot delivery/readback is recovered in #issuecomment-5741248477 and linked from the updated body. main’s landed oauth settlement owner is retained unchanged; the obsolete branch retry delta is removed. the remaining six badge/fixture/doc files are unchanged, 18 focused composition tests pass, and fresh independent p0–p2 review is clean. current exact-head ci is still running; no gate bypass is requested",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T11:07:04.278Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/mention-badge-polish",
-        "head_sha": "0c50264b2144994cd2627420099f64a06f06fb8a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145169:5639303517:2026-09-19T11:06:41Z:clawsweeper_needs_human",
       "comment_id": "5639303517",
@@ -33132,6 +33085,39 @@
         "kind": "pull_request",
         "branch": "fix/agents-reject-blank-workspace",
         "head_sha": "d40433503fc15e784aaf5e2d7302d17306fef22c",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/telemetry:23:5743974133:2026-09-19T17:36:02Z:clawsweeper_auto_repair",
+      "comment_id": "5743974133",
+      "comment_version_key": "5743974133:2026-09-19T17:36:02Z",
+      "comment_url": "https://github.com/openclaw/telemetry/pull/23#issuecomment-5743974133",
+      "comment_created_at": "2026-09-19T17:36:02Z",
+      "comment_updated_at": "2026-09-19T17:36:02Z",
+      "comment_body_sha256": "b587f2ca2e205434fdfe4ab20144effb444c1644a2573c0911ba2c34a1c04388",
+      "repo": "openclaw/telemetry",
+      "issue_number": 23,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=960dd6597bdb9881bd859ed1c8822cc2c719013f)",
+      "expected_head_sha": "960dd6597bdb9881bd859ed1c8822cc2c719013f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T17:37:31.611Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/update-outcome-receiver-20260919",
+        "head_sha": "960dd6597bdb9881bd859ed1c8822cc2c719013f",
         "cluster_id": null,
         "job_path": null
       }
