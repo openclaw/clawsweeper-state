@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T04:33:16.774Z",
+  "updated_at": "2026-09-19T04:34:29.336Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152203:5737164196:2026-09-18T23:28:48Z:clawsweeper_auto_repair",
-      "comment_id": "5737164196",
-      "comment_version_key": "5737164196:2026-09-18T23:28:48Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152203#issuecomment-5737164196",
-      "comment_created_at": "2026-09-18T22:56:40Z",
-      "comment_updated_at": "2026-09-18T23:28:48Z",
-      "comment_body_sha256": "127a546fe3f3027a0bbb42d8d1e6f93cba73564856dc5af53239084505015895",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152203,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=822ee8b77b4bc6228d836d4f89125b8021192c03)",
-      "expected_head_sha": "822ee8b77b4bc6228d836d4f89125b8021192c03",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-18T23:30:31.321Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/flake107-matrix-doctor-account-state",
-        "head_sha": "822ee8b77b4bc6228d836d4f89125b8021192c03",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152219:5737169095:2026-09-18T23:28:20Z:clawsweeper_needs_human",
       "comment_id": "5737169095",
@@ -33134,6 +33101,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:152161:5739365757:2026-09-19T04:32:26Z:re_review",
+      "comment_id": "5739365757",
+      "comment_version_key": "5739365757:2026-09-19T04:32:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152161#issuecomment-5739365757",
+      "comment_created_at": "2026-09-19T04:32:26Z",
+      "comment_updated_at": "2026-09-19T04:32:26Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152161,
+      "author": "ChrisCantwell",
+      "author_id": 130045959,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T04:34:27.020Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/secret-assignment-broker-plugin",
+        "head_sha": "2c39e83ffe44b569fc81daf3ddb45c8e713ae3a9",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
