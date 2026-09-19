@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-19T04:25:06.564Z",
+  "updated_at": "2026-09-19T04:25:43.365Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152230:5737398172:2026-09-18T23:25:44Z:automerge",
-      "comment_id": "5737398172",
-      "comment_version_key": "5737398172:2026-09-18T23:25:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152230#issuecomment-5737398172",
-      "comment_created_at": "2026-09-18T23:25:44Z",
-      "comment_updated_at": "2026-09-18T23:25:44Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152230,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T23:26:31.751Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-2026-7-34-frozen-sdk",
-        "head_sha": "ec8256234081e134924d3b75937020ff11704a30",
-        "cluster_id": "automerge-openclaw-openclaw-152230",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152230.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152230.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152181:5736696691:2026-09-18T23:18:57Z:clawsweeper_needs_human",
       "comment_id": "5736696691",
@@ -33211,6 +33152,39 @@
         "kind": "pull_request",
         "branch": "fix/update-compat-inventory-20260918",
         "head_sha": "1baca004a2dc42314dbc464eacf2acda1594e9b8",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152458:5739230025:2026-09-19T04:24:39Z:clawsweeper_needs_human",
+      "comment_id": "5739230025",
+      "comment_version_key": "5739230025:2026-09-19T04:24:39Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152458#issuecomment-5739230025",
+      "comment_created_at": "2026-09-19T04:05:03Z",
+      "comment_updated_at": "2026-09-19T04:24:39Z",
+      "comment_body_sha256": "42614df97cbbe9cbcbb6dddc35bb249126741e20df2727acecd375c85bb08a0c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152458,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=f7c043fd06f61df6f685009711eec57c122e616a)",
+      "expected_head_sha": "f7c043fd06f61df6f685009711eec57c122e616a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T04:25:43.365Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/release-validation-package-closure",
+        "head_sha": "f7c043fd06f61df6f685009711eec57c122e616a",
         "cluster_id": null,
         "job_path": null
       }
