@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-19T23:25:35.372Z",
+  "updated_at": "2026-09-19T23:25:42.318Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:148580:5744362035:2026-09-19T18:29:58Z:re_review",
-      "comment_id": "5744362035",
-      "comment_version_key": "5744362035:2026-09-19T18:29:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/148580#issuecomment-5744362035",
-      "comment_created_at": "2026-09-19T18:29:58Z",
-      "comment_updated_at": "2026-09-19T18:29:58Z",
-      "comment_body_sha256": "97abd1c77f8e344c280e07ae79dc90eda06c8401e3fc833e7055418a70b9bdcf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 148580,
-      "author": "altaywtf",
-      "author_id": 9790196,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T18:31:01.384Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/rate-limit-retry-after-fallback",
-        "head_sha": "1207422ed4ae901e5ec341f6bbed0d55fc95e6a3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117174:5744377460:2026-09-19T18:32:18Z:re_review",
       "comment_id": "5744377460",
@@ -33180,6 +33133,39 @@
         "kind": "pull_request",
         "branch": "codex/perf-r2-node-imports-20260918",
         "head_sha": "7dcdeecf15c737e71cafa7a87fb7ec381b3e1251",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:125286:5316846440:2026-09-19T23:24:29Z:clawsweeper_needs_human",
+      "comment_id": "5316846440",
+      "comment_version_key": "5316846440:2026-09-19T23:24:29Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/125286#issuecomment-5316846440",
+      "comment_created_at": "2026-08-17T13:48:15Z",
+      "comment_updated_at": "2026-09-19T23:24:29Z",
+      "comment_body_sha256": "2730ea0319b0d9e4f2228a14759369d5ece985727e0a680a25d59fbb8f2aa59a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 125286,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Removing the pinned Node executable intentionally stops the installed command until the installer repairs it; PATH no longer provides a fallback. (sha=e1229a7f10afe0f487d9ed1adba974aa9a8129d9)",
+      "expected_head_sha": "e1229a7f10afe0f487d9ed1adba974aa9a8129d9",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T23:25:42.318Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/autoqa-windows-git-node-binding",
+        "head_sha": "e1229a7f10afe0f487d9ed1adba974aa9a8129d9",
         "cluster_id": null,
         "job_path": null
       }
