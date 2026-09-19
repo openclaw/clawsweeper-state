@@ -1,65 +1,6 @@
 {
-  "updated_at": "2026-09-19T04:28:29.393Z",
+  "updated_at": "2026-09-19T04:28:38.478Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152242:5737411281:2026-09-18T23:27:43Z:automerge",
-      "comment_id": "5737411281",
-      "comment_version_key": "5737411281:2026-09-18T23:27:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152242#issuecomment-5737411281",
-      "comment_created_at": "2026-09-18T23:27:43Z",
-      "comment_updated_at": "2026-09-18T23:27:43Z",
-      "comment_body_sha256": "b20841dd047d73b0d7cf464b323b7162a153e6790811fed6e52ea044ec073391",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152242,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "automerge",
-      "intent": "automerge",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-18T23:28:30.682Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/release-prepare-ai-shrinkwrap",
-        "head_sha": "2d43fd1be8757e799a82b0aa5014cf4d6d162a62",
-        "cluster_id": "automerge-openclaw-openclaw-152242",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152242.md"
-      },
-      "actions": [
-        {
-          "action": "ensure_automerge_job",
-          "status": "executed",
-          "label": null,
-          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-152242.md"
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:automerge",
-          "job_path": null
-        },
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152233:5737410445:2026-09-18T23:27:35Z:clawsweeper_needs_human",
       "comment_id": "5737410445",
@@ -33185,6 +33126,39 @@
         "kind": "pull_request",
         "branch": "codex/task-recovery-reduction",
         "head_sha": "5dc7317102c8f033ed86d081dfc5c92bd0055dee",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152460:5739245748:2026-09-19T04:27:41Z:clawsweeper_needs_human",
+      "comment_id": "5739245748",
+      "comment_version_key": "5739245748:2026-09-19T04:27:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152460#issuecomment-5739245748",
+      "comment_created_at": "2026-09-19T04:07:59Z",
+      "comment_updated_at": "2026-09-19T04:27:41Z",
+      "comment_body_sha256": "16b827e8a38d796c687f3a28aa335daf760a6eb991b1a824a5266a5bd05e6eb5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152460,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=254d7a35a8b13fcac0e154c8b67eea0bc959bcf2)",
+      "expected_head_sha": "254d7a35a8b13fcac0e154c8b67eea0bc959bcf2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-19T04:28:38.478Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/plugin-theme-catalog",
+        "head_sha": "254d7a35a8b13fcac0e154c8b67eea0bc959bcf2",
         "cluster_id": null,
         "job_path": null
       }
