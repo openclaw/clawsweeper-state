@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T02:09:41.231Z",
+  "updated_at": "2026-09-20T02:10:03.456Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151426:5745153131:2026-09-19T20:42:35Z:re_review",
-      "comment_id": "5745153131",
-      "comment_version_key": "5745153131:2026-09-19T20:42:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151426#issuecomment-5745153131",
-      "comment_created_at": "2026-09-19T20:42:35Z",
-      "comment_updated_at": "2026-09-19T20:42:35Z",
-      "comment_body_sha256": "6ded07a33e03ddb20480b5f396d781734fdd867e05c4906730001b29d2406316",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151426,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T20:57:21.291Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/ci-plugin-boundary-source-cache",
-        "head_sha": "fe90dbc64de0bd0f9023730e9a4bfc03ea1d7b96",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153157:5745087461:2026-09-19T20:57:47Z:clawsweeper_needs_human",
       "comment_id": "5745087461",
@@ -33468,6 +33421,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/perf-infra-process",
         "head_sha": "59b291ad74656eb804c2a44d341e2236efe07b98",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152727:5740572147:2026-09-20T02:09:05Z:clawsweeper_needs_human",
+      "comment_id": "5740572147",
+      "comment_version_key": "5740572147:2026-09-20T02:09:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/152727#issuecomment-5740572147",
+      "comment_created_at": "2026-09-19T08:46:30Z",
+      "comment_updated_at": "2026-09-20T02:09:05Z",
+      "comment_body_sha256": "6d115ce1f4d2a7dc965d7af86be890e3517d13242a502d8145dc4536f5bd382f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 152727,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The real systemd and HTTP observations provide useful partial evidence, but build-ID mismatch exercises an existing early exit and ver... (sha=8819d1043331cd69dacc33bc96e262d8664d0034)",
+      "expected_head_sha": "8819d1043331cd69dacc33bc96e262d8664d0034",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T02:10:03.456Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-interrupt-stall-152542",
+        "head_sha": "8819d1043331cd69dacc33bc96e262d8664d0034",
         "cluster_id": null,
         "job_path": null
       }
