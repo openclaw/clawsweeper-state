@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T09:05:50.991Z",
+  "updated_at": "2026-09-20T09:06:08.875Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:110450:5040184543:2026-07-21T23:41:09Z:re_review",
-      "comment_id": "5040184543",
-      "comment_version_key": "5040184543:2026-07-21T23:41:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/110450#issuecomment-5040184543",
-      "comment_created_at": "2026-07-21T23:41:09Z",
-      "comment_updated_at": "2026-07-21T23:41:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 110450,
-      "author": "RileyJJY",
-      "author_id": 255106757,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T03:36:48.504Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:110450:5081551739:2026-07-26T02:08:45Z:re_review",
       "comment_id": "5081551739",
@@ -33029,6 +33002,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2376:5748843408:2026-09-20T09:05:21Z:clawsweeper_needs_human",
+      "comment_id": "5748843408",
+      "comment_version_key": "5748843408:2026-09-20T09:05:21Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2376#issuecomment-5748843408",
+      "comment_created_at": "2026-09-20T09:05:21Z",
+      "comment_updated_at": "2026-09-20T09:05:21Z",
+      "comment_body_sha256": "c3f1d9039218d97e4eda7d1e9698e2eb8efe49ab7d8cd9b78dc57339daf1c3e6",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2376,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed GCP adapter is exercised through createImage and getImage using mocked fetch responses; the reported checks explicitly exclude nati... (sha=cc350e78df255902f1fc84a12edaf1addc55e337)",
+      "expected_head_sha": "cc350e78df255902f1fc84a12edaf1addc55e337",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T09:06:08.875Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gcp-image-observation-n651",
+        "head_sha": "cc350e78df255902f1fc84a12edaf1addc55e337",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
