@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T07:43:33.106Z",
+  "updated_at": "2026-09-20T07:43:46.588Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5747102339:2026-09-20T02:38:37Z:re_review",
-      "comment_id": "5747102339",
-      "comment_version_key": "5747102339:2026-09-20T02:38:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5747102339",
-      "comment_created_at": "2026-09-20T02:38:37Z",
-      "comment_updated_at": "2026-09-20T02:38:37Z",
-      "comment_body_sha256": "73512ece1d31c153df68256bdb30269cc4d10019de256037b2075ba87f4a739e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T02:39:38.125Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "3d339d9e02dc9d56f417cefde6cca99f78b2c5c4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151312:5724023116:2026-09-20T02:33:00Z:clawsweeper_needs_human",
       "comment_id": "5724023116",
@@ -33024,6 +32977,39 @@
         "kind": "pull_request",
         "branch": "feat/stepfun-step-5-preview",
         "head_sha": "ea9c40135e17fa3d25b2f4ff02da40cb6552885d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153539:5748465224:2026-09-20T07:42:54Z:clawsweeper_needs_human",
+      "comment_id": "5748465224",
+      "comment_version_key": "5748465224:2026-09-20T07:42:54Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153539#issuecomment-5748465224",
+      "comment_created_at": "2026-09-20T07:42:54Z",
+      "comment_updated_at": "2026-09-20T07:42:54Z",
+      "comment_body_sha256": "110813068196e0f2392fb6c3b84940ec1df057fd9d1df90f0fe36e2695908a22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153539,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Completed comparable full-file timing and peak-RSS measurements are unavailable, so the total performance benefit and cost of retaining roots until suite teardown remain unquantified. (sha=58169af72a80ecb2b22fce826d0ba5ce3eb4e146)",
+      "expected_head_sha": "58169af72a80ecb2b22fce826d0ba5ce3eb4e146",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T07:43:46.588Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-burden/perf-codex",
+        "head_sha": "58169af72a80ecb2b22fce826d0ba5ce3eb4e146",
         "cluster_id": null,
         "job_path": null
       }
