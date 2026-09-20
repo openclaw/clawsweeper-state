@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T14:40:52.968Z",
+  "updated_at": "2026-09-20T14:41:30.262Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:127775:5660617549:2026-09-14T07:37:26Z:re_review",
-      "comment_id": "5660617549",
-      "comment_version_key": "5660617549:2026-09-14T07:37:26Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/127775#issuecomment-5660617549",
-      "comment_created_at": "2026-09-14T07:37:26Z",
-      "comment_updated_at": "2026-09-14T07:37:26Z",
-      "comment_body_sha256": "4005388333aff38e97776d6ace906da35003e2179c8f1916ca9ab95c340b5588",
-      "repo": "openclaw/openclaw",
-      "issue_number": 127775,
-      "author": "shad0wca7",
-      "author_id": 9969843,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T08:49:21.428Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:127775:5726281964:2026-09-18T06:46:50Z:re_review",
       "comment_id": "5726281964",
@@ -32498,6 +32471,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:630:5748654737:2026-09-20T14:40:43Z:clawsweeper_needs_human",
+      "comment_id": "5748654737",
+      "comment_version_key": "5748654737:2026-09-20T14:40:43Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/630#issuecomment-5748654737",
+      "comment_created_at": "2026-09-20T08:24:20Z",
+      "comment_updated_at": "2026-09-20T14:40:43Z",
+      "comment_body_sha256": "f86a7269d4034356f7f9876c882a8f80217f01654b89a26b39531334deee4c97",
+      "repo": "openclaw/acpx",
+      "issue_number": 630,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the captured codex-acp transcript supports real skill discovery, but does not exercise AcpClient-to-Fi...; Review finding: [P1] Clear filesystem grants when reconnect drops directories — src/acp/client.ts:1096-1101 - [P2] Preserve saved directories when queued prompts omit the flags —... (sha=ee2c5f5cc65e3a9596f345e8ca0f30c4a5667b37)",
+      "expected_head_sha": "ee2c5f5cc65e3a9596f345e8ca0f30c4a5667b37",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T14:41:30.262Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/skills-dir",
+        "head_sha": "ee2c5f5cc65e3a9596f345e8ca0f30c4a5667b37",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
