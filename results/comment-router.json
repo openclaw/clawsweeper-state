@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T19:09:22.160Z",
+  "updated_at": "2026-09-20T19:09:42.785Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153625:5749221337:2026-09-20T13:43:07Z:clawsweeper_auto_repair",
-      "comment_id": "5749221337",
-      "comment_version_key": "5749221337:2026-09-20T13:43:07Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153625#issuecomment-5749221337",
-      "comment_created_at": "2026-09-20T10:26:00Z",
-      "comment_updated_at": "2026-09-20T13:43:07Z",
-      "comment_body_sha256": "75c10b10cdd95fdb7cbbae912f81c350ee4621b927115083f7f1e0bf930faa55",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153625,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=7a97fda5cc708504a59dee11956f1ea614cce48b)",
-      "expected_head_sha": "7a97fda5cc708504a59dee11956f1ea614cce48b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T13:51:52.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/swarm-cognitive-replicas",
-        "head_sha": "7a97fda5cc708504a59dee11956f1ea614cce48b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153627:5749223067:2026-09-20T13:44:04Z:clawsweeper_auto_repair",
       "comment_id": "5749223067",
@@ -33409,6 +33376,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153879:5751979707:2026-09-20T19:08:44Z:re_review",
+      "comment_id": "5751979707",
+      "comment_version_key": "5751979707:2026-09-20T19:08:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153879#issuecomment-5751979707",
+      "comment_created_at": "2026-09-20T19:08:44Z",
+      "comment_updated_at": "2026-09-20T19:08:44Z",
+      "comment_body_sha256": "6435fdc7e533ba52064f40377c7abb6237ecb7408b550607d3015711566d1ffd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153879,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T19:09:38.488Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/mcp-loopback-idle-keepalive",
+        "head_sha": "a17bbe36257f58b72169bb8184a999b7c40d736f",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
