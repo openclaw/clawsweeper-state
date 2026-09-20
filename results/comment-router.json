@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T13:23:29.952Z",
+  "updated_at": "2026-09-20T13:24:38.100Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:99556:4886528841:2026-07-05T15:17:17Z:re_review",
-      "comment_id": "4886528841",
-      "comment_version_key": "4886528841:2026-07-05T15:17:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/99556#issuecomment-4886528841",
-      "comment_created_at": "2026-07-05T15:17:17Z",
-      "comment_updated_at": "2026-07-05T15:17:17Z",
-      "comment_body_sha256": "315c82df0704fc7ed7b40b2549f534ff91051d144fef983e84b78aa7e678d153",
-      "repo": "openclaw/openclaw",
-      "issue_number": 99556,
-      "author": "ly85206559",
-      "author_id": 12526624,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T07:59:14.398Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:99556:4886702133:2026-07-05T16:16:22Z:re_review",
       "comment_id": "4886702133",
@@ -32207,6 +32180,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153643:5749363193:2026-09-20T13:23:46Z:clawsweeper_needs_human",
+      "comment_id": "5749363193",
+      "comment_version_key": "5749363193:2026-09-20T13:23:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153643#issuecomment-5749363193",
+      "comment_created_at": "2026-09-20T10:57:20Z",
+      "comment_updated_at": "2026-09-20T13:23:46Z",
+      "comment_body_sha256": "a5e889baa5757a6586c1967a0078156f4b33a6c10f3dbe8f6202424987bdf56e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153643,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - Removing the standalone Windows helper changes Scheduled Task and fallback restart execution; an existing installation could remain stopped if the replacement path cannot activate it.... (sha=2b3e9ca8abda3484ed6af419b9c2c3bd838b19f5)",
+      "expected_head_sha": "2b3e9ca8abda3484ed6af419b9c2c3bd838b19f5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T13:24:38.100Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/update-restart-native-owner",
+        "head_sha": "2b3e9ca8abda3484ed6af419b9c2c3bd838b19f5",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
