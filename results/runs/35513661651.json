@@ -1,0 +1,83 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153682",
+  "mode": "autonomous",
+  "run_id": "35513661651",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35513661651",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153682.md",
+  "published_at": "2026-09-20T13:43:39.975Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153682",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153682",
+  "canonical_pr": null,
+  "summary": "Verified the repeated-clamping defect on preflight main and prepared a narrow fix plan. Local implementation and filesystem regression testing are blocked by the read-only host and absent dependencies. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#153682",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153682",
+      "candidate_fix": null,
+      "reason": "Local implementation is blocked by enforced read-only filesystem access. The executor must establish the failing owner-boundary regression before applying the planned fix and completing acceptance gates."
+    },
+    {
+      "target": "#126642",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep the contributor PR open as a separate repair path; do not borrow, replace, or merge it for this defect."
+    },
+    {
+      "target": "#138403",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct timeout/configuration work remains outside this narrow bug fix."
+    },
+    {
+      "target": "#107815",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve the existing Unicode-safe truncation behavior."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153682",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153682",
+      "candidate_fix": null,
+      "reason": "A narrow new fix PR is appropriate after executor reproduction, implementation, review, and validation. Reuse the designated branch and any recoverable prior implementation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
