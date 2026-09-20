@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T18:08:55.747Z",
+  "updated_at": "2026-09-20T18:09:13.758Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawrouter:153:5729461756:2026-09-18T11:40:33Z:re_review",
-      "comment_id": "5729461756",
-      "comment_version_key": "5729461756:2026-09-18T11:40:33Z",
-      "comment_url": "https://github.com/openclaw/clawrouter/pull/153#issuecomment-5729461756",
-      "comment_created_at": "2026-09-18T11:40:33Z",
-      "comment_updated_at": "2026-09-18T11:40:33Z",
-      "comment_body_sha256": "f42a6e730000d2deab210c3ac94edfc94a50454d2a5d285b5cdff66102192198",
-      "repo": "openclaw/clawrouter",
-      "issue_number": 153,
-      "author": "CHYYX",
-      "author_id": 248444602,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T11:51:43.149Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153658:5749501565:2026-09-20T11:52:27Z:clawsweeper_needs_human",
       "comment_id": "5749501565",
@@ -33339,6 +33312,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153881:5751519584:2026-09-20T18:02:10Z:clawsweeper_needs_human",
+      "comment_id": "5751519584",
+      "comment_version_key": "5751519584:2026-09-20T18:02:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153881#issuecomment-5751519584",
+      "comment_created_at": "2026-09-20T17:46:16Z",
+      "comment_updated_at": "2026-09-20T18:02:10Z",
+      "comment_body_sha256": "132ac644176c8445709caa1c91fb885c77f802632ed92fe373cebb5dbdd2961d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153881,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing identity-authenticated automations that relied on the shipped missing-session bypass will receive HTTP 403 or a forbidden RPC result; affected clients must select an allowed... (sha=35f0c7019d4b82c7147f10f025bea995133bbc9f)",
+      "expected_head_sha": "35f0c7019d4b82c7147f10f025bea995133bbc9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T18:09:13.758Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tool-call-role-authority",
+        "head_sha": "35f0c7019d4b82c7147f10f025bea995133bbc9f",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
