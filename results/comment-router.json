@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T18:18:20.552Z",
+  "updated_at": "2026-09-20T18:18:52.942Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153657:5749676714:2026-09-20T12:03:51Z:freeform_assist",
-      "comment_id": "5749676714",
-      "comment_version_key": "5749676714:2026-09-20T12:03:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153657#issuecomment-5749676714",
-      "comment_created_at": "2026-09-20T12:03:51Z",
-      "comment_updated_at": "2026-09-20T12:03:51Z",
-      "comment_body_sha256": "5a753052e35d683120219538446ad53a1f039556f67ff4db57161c0a3d1edf36",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153657,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "please redo the read-only p0–p2 review of this uncommitted integration. the first assist correctly refused its truncated input. this smaller input is complete: every resolution edit across all three conflict files, relative to git's automatic merge of reviewed24f3d834 and main2be44718. minus lines include conflict markers; plus lines are the final resolution. unchanged surrounding code retains those two parents. no tests or mutations. do not review the unchanged pr head instead. the executor cleanup tail below is unchanged. earlier code awaits its operation and child settlement; this tail rejects unconfirmed cleanup and releases all retained native ownership before returning. doctor maintenance is still awaited within the inner resume, which returns the prepared result to the outer executor. no independent verdict for the integration yet. confirm scoped-clean or list actionable findings; if context remains insufficient, name it without treating missing context as a defect. ```diff diff --git a/src/cli/update-cli/update-command-doctor-authority-callers.test.ts b/src/cli/update-cli/update-command-doctor-authority-callers.test.ts index fef8c79728d..b98b9c1faad 100644 --- a/src/cli/update-cli/update-command-doctor-authority-callers.test.ts +++ b/src/cli/update-cli/update-command-doctor-authority-callers.test.ts @@ -152,3 +152,2 @@ function firstrefusal() { describe(\"unproved doctor authority callers\", () => { -<<<<<<< head it.each([\"2026.9.3\", \"2026.9.4\"])( @@ -161,3 +160,19 @@ describe(\"unproved doctor authority callers\", () => { vi.stubenv(\"openclaw_update_post_core\", \"1\"); -======= + await resumepostcoreupdate({ + root: state.root, + channel: \"stable\", + opts: { json: true, yes: true }, + timeoutms: 5_000, + }); + expect(dispatched).toequal([\"repair\", \"validate\", \"readiness\"]); + expect(defaultruntime.writejson).tohavebeencalledwith( + expect.objectcontaining({ + runid: run.runid, + steps: [expect.objectcontaining({ doctorlintfindings: [] })], + }), + ); + expect(defaultruntime.exit).tohavebeencalledexactlyoncewith(0); + }, + ); + it.each([false, true])( @@ -221,3 +236,2 @@ describe(\"unproved doctor authority callers\", () => { ->>>>>>> 2be44718645afa84bedd433ceb226d212d6547ea await resumepostcoreupdate({ @@ -228,6 +242,2 @@ describe(\"unproved doctor authority callers\", () => { }); -<<<<<<< head - expect(dispatched).toequal([\"repair\", \"validate\", \"readiness\"]); - expect(defaultruntime.exit).tohavebeencalledexactlyoncewith(0); -======= @@ -236,3 +246,2 @@ describe(\"unproved doctor authority callers\", () => { expect(defaultruntime.log).not.tohavebeencalled(); ->>>>>>> 2be44718645afa84bedd433ceb226d212d6547ea }, diff --git a/src/cli/update-cli/update-command-resume.ts b/src/cli/update-cli/update-command-resume.ts index a70475fb264..7f2aa566f1f 100644 --- a/src/cli/update-cli/update-command-resume.ts +++ b/src/cli/update-cli/update-command-resume.ts @@ -10,3 +10,3 @@ import { import { hasdeferredupdatemodelretirement } from \"../../infra/update-deferred-model-retirement.js\"; -<<<<<<< head +import { writeupdaterunreportartifact } from \"../../infra/update-failure-report-artifact.js\"; import { resolveupdateinstallroot } from \"../../infra/update-install-root.js\"; @@ -14,5 +14,2 @@ import { createmanagedhandoffprocessidentityreader } from \"../../infra/update-ma import type { handoffprocessidentity } from \"../../infra/update-managed-service-handoff-schema.js\"; -======= -import { writeupdaterunreportartifact } from \"../../infra/update-failure-report-artifact.js\"; ->>>>>>> 2be44718645afa84bedd433ceb226d212d6547ea import { @@ -102,3 +99,3 @@ export async function resumepostcoreupdate(params: resumepostcoreupdateparams): runid && !params.opts.run && !parentownscompletion ? getupdaterun(runid, { env }) : undefined; - let pluginupdate: postcorepluginupdateresult; + let completed: awaited<returntype<typeof resumepostcoreupdateinternal>>; if (runid && record && isunfencedupdatedriver(record.before.version)) { @@ -148,3 +145,3 @@ export async function resumepostcoreupdate(params: resumepostcoreupdateparams): } - pluginupdate = await withupdatecommandexecutor( + completed = await withupdatecommandexecutor( runid, @@ -187,4 +184,5 @@ export async function resumepostcoreupdate(params: resumepostcoreupdateparams): } else { - pluginupdate = await resumepostcoreupdateinternal(resumed); + completed = await resumepostcoreupdateinternal(resumed); } + const { pluginupdate, result } = completed; // shipped parents may stop this child as soon as this file appears. publish @@ -198,10 +196,3 @@ export async function resumepostcoreupdate(params: resumepostcoreupdateparams): if (params.opts.json && !process.env[post_core_update_result_path_env]) { - defaultruntime.writejson({ - status: pluginupdate.status === \"error\" ? \"error\" : \"ok\", - mode: \"unknown\", - root: params.root, - steps: [], - durationms: 0, - postupdate: { plugins: pluginupdate }, - } satisfies updaterunresult); + defaultruntime.writejson(result); } @@ -223,3 +214,3 @@ async function resumepostcoreupdateinternal( params: resumepostcoreupdateparams, -): promise<postcorepluginupdateresult> { +): promise<{ pluginupdate: postcorepluginupdateresult; result: updaterunresult }> { const { assertcurrent } = createupdatecommandauthority({ opts: params.opts }, \"post-core update\"); @@ -402,17 +393,3 @@ async function resumepostcoreupdateinternal( assertcurrent?.(); -<<<<<<< head - return pluginupdate; -======= - if (process.env[post_core_update_result_path_env]) { - await writepostcorepluginupdateresultfile( - process.env[post_core_update_result_path_env], - pluginupdate, - ); - } - assertcurrent?.(); - if (params.opts.json && !process.env[post_core_update_result_path_env]) { - defaultruntime.writejson(result); - } - defaultruntime.exit(0); ->>>>>>> 2be44718645afa84bedd433ceb226d212d6547ea + return { pluginupdate, result }; } diff --git a/src/flows/doctor-health.ts b/src/flows/doctor-health.ts index a99995e6672..137406c777c 100644 --- a/src/flows/doctor-health.ts +++ b/src/flows/doctor-health.ts @@ -66,21 +66,2 @@ export async function rundoctorhealthflow( const resultpath = process.env[update_post_install_doctor_result_path_env]?.trim(); -<<<<<<< head - return resultpath - ? captureupdatedoctorconfigwrites( - resolveconfigpath(), - (capture) => - rundoctorhealthflowwithresult( - runtime, - options, - preparedpreflight, - { - resultpath, - capture, - }, - writeauthority, - ), - writeauthority, - ) - : rundoctorhealthflowwithresult(runtime, options, preparedpreflight, undefined, writeauthority); -======= return withpluginloaddiagnostics((diagnostics) => @@ -90,11 +71,21 @@ export async function rundoctorhealthflow( (capture) => - rundoctorhealthflowwithresult(runtime, options, databasepreflight, diagnostics, { - resultpath, - capture, - }), + rundoctorhealthflowwithresult( + runtime, + options, + preparedpreflight, + diagnostics, + { resultpath, capture }, + writeauthority, + ), writeauthority, ) - : rundoctorhealthflowwithresult(runtime, options, databasepreflight, diagnostics), + : rundoctorhealthflowwithresult( + runtime, + options, + preparedpreflight, + diagnostics, + undefined, + writeauthority, + ), ); ->>>>>>> 2be44718645afa84bedd433ceb226d212d6547ea } ``` unchanged executor settlement tail, exact same bytes in24f and the proposed tree: ```ts admittedrunids.delete(fence); retainedowners.delete(fence); if (\"error\" in outcome && hascommandprocesscleanuperror(outcome.error)) { throw new updatecommandrecoverypendingerror( \"command cleanup is unconfirmed; update ownership remains retained.\", { cause: outcome.error }, ); } try { if (servicelease && store && (servicelease.version === 3 || !store.release(servicelease))) { throw new updatecommandrecoverypendingerror( \"managed service executor release could not be confirmed.\", ); } if (legacytarget && store && !store.release(legacytarget)) { throw new updatecommandrecoverypendingerror(\"active package generation has not settled.\"); } if (legacychild && store && !store.release(legacychild)) { throw new updatecommandrecoverypendingerror(\"legacy finalizer has not settled.\"); } if ( lease && store && (lease.version === 3 || (!borrowed && (lease.version === 1 || !(options?.legacypackageparent ? releaselegacypackageupdateparent(store, lease) : store.release(lease))))) ) { throw new updatecommandrecoverypendingerror( \"update executor release could not be confirmed.\", ); } } catch (cause) { if (\"error\" in outcome) { throw new updatecommandrecoverypendingerror( \"update failed and executor release remains pending\", { cause: new aggregateerror([outcome.error, cause], \"update executor cleanup failed\", { cause: outcome.error, }), }, ); } throw cause; } if (\"error\" in outcome) { throw outcome.error; } return outcome.result; }, activation.signal), ); } ```",
-      "intent": "freeform_assist",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T12:04:40.486Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/legacy-postcore-admission",
-        "head_sha": "24f3d834da46bf4d995b0e092039ffce4d9285f4",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_assist",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153643:5749363193:2026-09-20T12:02:28Z:clawsweeper_needs_human",
       "comment_id": "5749363193",
@@ -33427,6 +33380,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:535:5751694951:2026-09-20T18:18:04Z:clawsweeper_needs_human",
+      "comment_id": "5751694951",
+      "comment_version_key": "5751694951:2026-09-20T18:18:04Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/535#issuecomment-5751694951",
+      "comment_created_at": "2026-09-20T18:18:04Z",
+      "comment_updated_at": "2026-09-20T18:18:04Z",
+      "comment_body_sha256": "7b017dc7b97e8d3117e8c80fafb692b348377b64c7ece55d8cf4fe7e658a0156",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 535,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied body and discussion contain no after-change real filesystem run demonstrating the consolidated archive publication, secret admissi... (sha=5e1a6b8fa776b3d487d0b793745b985f44fc0427)",
+      "expected_head_sha": "5e1a6b8fa776b3d487d0b793745b985f44fc0427",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T18:18:52.942Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deslop-under-50k-20260920",
+        "head_sha": "5e1a6b8fa776b3d487d0b793745b985f44fc0427",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
