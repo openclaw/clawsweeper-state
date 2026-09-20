@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T21:03:31.056Z",
+  "updated_at": "2026-09-20T21:03:39.570Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153857:5751266189:2026-09-20T17:01:11Z:clawsweeper_needs_human",
-      "comment_id": "5751266189",
-      "comment_version_key": "5751266189:2026-09-20T17:01:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153857#issuecomment-5751266189",
-      "comment_created_at": "2026-09-20T17:01:11Z",
-      "comment_updated_at": "2026-09-20T17:01:11Z",
-      "comment_body_sha256": "7945923bf879218bc82537da6cf021cd7d99c31c4c6d4a9473bd6f35cb9b942e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153857,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Recorded validation covers the pinned hydration parent; behavior after both dependencies land and the branch is carried onto main remains unqualified. (sha=723daccabb824076c8c97de46c3b4fb7e444b81f)",
-      "expected_head_sha": "723daccabb824076c8c97de46c3b4fb7e444b81f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T17:02:30.787Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/progress-card-read-worker-h-20260920",
-        "head_sha": "723daccabb824076c8c97de46c3b4fb7e444b81f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153739:5750274405:2026-09-20T17:01:25Z:clawsweeper_auto_repair",
       "comment_id": "5750274405",
@@ -33145,6 +33112,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154078:5752638477:2026-09-20T21:02:38Z:re_review",
+      "comment_id": "5752638477",
+      "comment_version_key": "5752638477:2026-09-20T21:02:38Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154078#issuecomment-5752638477",
+      "comment_created_at": "2026-09-20T21:02:38Z",
+      "comment_updated_at": "2026-09-20T21:02:38Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154078,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T21:03:36.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "release/2026.8.33-baseline-routing",
+        "head_sha": "b268d30b72586d57622f44e01f184ceff911ada8",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
