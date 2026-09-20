@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T08:01:58.722Z",
+  "updated_at": "2026-09-20T08:01:59.088Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153289:5747159498:2026-09-20T02:51:51Z:re_review",
-      "comment_id": "5747159498",
-      "comment_version_key": "5747159498:2026-09-20T02:51:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153289#issuecomment-5747159498",
-      "comment_created_at": "2026-09-20T02:51:51Z",
-      "comment_updated_at": "2026-09-20T02:51:51Z",
-      "comment_body_sha256": "52addb4cbebe9a2f888242202f9fe365655c5d3525873989e7ca871c7ca4125e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153289,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T02:52:42.245Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/chrome-extension-native-upgrade",
-        "head_sha": "db6450f90f4b8aea00c5220edf2dce0535510098",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150348:5705645084:2026-09-20T02:51:50Z:clawsweeper_needs_human",
       "comment_id": "5705645084",
@@ -32850,6 +32803,39 @@
         "kind": "pull_request",
         "branch": "fix/isolated-completion-chat-template-kwargs",
         "head_sha": "81c737e8447f7905a97d7321ece48a4a9904a160",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146361:5648240432:2026-09-20T07:54:16Z:clawsweeper_needs_human",
+      "comment_id": "5648240432",
+      "comment_version_key": "5648240432:2026-09-20T07:54:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/146361#issuecomment-5648240432",
+      "comment_created_at": "2026-09-12T19:42:14Z",
+      "comment_updated_at": "2026-09-20T07:54:16Z",
+      "comment_body_sha256": "1fb80d43bcb9f3010c5dd3dc8d4aacdb88879e1f0e8223b8d64edf3baf1b0df6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 146361,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=1956cf95c19678d65ce487812de2a14bb4c229f1)",
+      "expected_head_sha": "1956cf95c19678d65ce487812de2a14bb4c229f1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T08:01:59.088Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/integrate-streamed-delivery-main05e41b8",
+        "head_sha": "1956cf95c19678d65ce487812de2a14bb4c229f1",
         "cluster_id": null,
         "job_path": null
       }
