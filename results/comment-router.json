@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T00:48:01.805Z",
+  "updated_at": "2026-09-20T00:48:04.857Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:145335:5641227076:2026-09-19T19:42:16Z:clawsweeper_needs_human",
-      "comment_id": "5641227076",
-      "comment_version_key": "5641227076:2026-09-19T19:42:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145335#issuecomment-5641227076",
-      "comment_created_at": "2026-09-11T22:13:14Z",
-      "comment_updated_at": "2026-09-19T19:42:16Z",
-      "comment_body_sha256": "05649aa826ea7e52fc8ff6308c08509a33bf4a5387a80aab7177197af44c667b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145335,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: historical Linux/systemd recovery is useful, but the revised executor and restoration paths still lack...; Review finding: [medium] Qualify revocation at the native effect boundary — src/cli/update-cli/update-command-retained-service.ts:46 (sha=59a14b249bcc8134c8a36bb7b0aea513adf81390)",
-      "expected_head_sha": "59a14b249bcc8134c8a36bb7b0aea513adf81390",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T19:43:28.620Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/107930-node-upgrade-continuity-land",
-        "head_sha": "59a14b249bcc8134c8a36bb7b0aea513adf81390",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153125:5744788888:2026-09-19T19:42:44Z:clawsweeper_needs_human",
       "comment_id": "5744788888",
@@ -33111,6 +33078,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153245:5746507599:2026-09-20T00:47:06Z:re_review",
+      "comment_id": "5746507599",
+      "comment_version_key": "5746507599:2026-09-20T00:47:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153245#issuecomment-5746507599",
+      "comment_created_at": "2026-09-20T00:47:06Z",
+      "comment_updated_at": "2026-09-20T00:47:06Z",
+      "comment_body_sha256": "3d061c2346277639f1e185b0beceff3b015d1ab42f77939d5d1e6f509e26b9f8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153245,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T00:48:02.652Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/history-loading-experiments",
+        "head_sha": "f1a6c6a40386a2d66d5d9f30f0e957af6504fee5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
