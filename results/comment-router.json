@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T01:32:03.464Z",
+  "updated_at": "2026-09-20T01:33:09.866Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5650794467:2026-09-13T03:31:23Z:re_review",
-      "comment_id": "5650794467",
-      "comment_version_key": "5650794467:2026-09-13T03:31:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5650794467",
-      "comment_created_at": "2026-09-13T03:31:23Z",
-      "comment_updated_at": "2026-09-13T03:31:23Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T20:25:50.334Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:118748:5745048660:2026-09-19T20:24:57Z:re_review",
       "comment_id": "5745048660",
@@ -33465,6 +33438,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153289:5746470290:2026-09-20T01:32:14Z:clawsweeper_needs_human",
+      "comment_id": "5746470290",
+      "comment_version_key": "5746470290:2026-09-20T01:32:14Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153289#issuecomment-5746470290",
+      "comment_created_at": "2026-09-20T00:38:58Z",
+      "comment_updated_at": "2026-09-20T01:32:14Z",
+      "comment_body_sha256": "ce7b2b12f7294aada62cabc2ddf0ab34b69262a15e4da0b3979398a6ea3852a1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153289,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Main’s independently merged containment repair overlaps the branch’s CSS change. The supplied snapshot reports conflicts, the later API read reports unknown mergeability, and no verif... (sha=8f2d24044d447e9458c4970878b65d8981434465)",
+      "expected_head_sha": "8f2d24044d447e9458c4970878b65d8981434465",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T01:33:09.866Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/chrome-extension-native-upgrade",
+        "head_sha": "8f2d24044d447e9458c4970878b65d8981434465",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
