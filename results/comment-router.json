@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T18:39:06.488Z",
+  "updated_at": "2026-09-20T18:40:25.893Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153601:5749011665:2026-09-20T12:35:52Z:clawsweeper_needs_human",
-      "comment_id": "5749011665",
-      "comment_version_key": "5749011665:2026-09-20T12:35:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153601#issuecomment-5749011665",
-      "comment_created_at": "2026-09-20T09:41:11Z",
-      "comment_updated_at": "2026-09-20T12:35:52Z",
-      "comment_body_sha256": "6032b47135ccdb54e6d4f94f34f78fc5a5f5c0568d9d54b37407a5bb7aae99e1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153601,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Removing count-based eviction makes descriptor and memory occupancy grow with databases touched during the idle window; the documented single-thread samples do not establish deployed... (sha=29fb68526da047f549c50872190fafd9cf29d358)",
-      "expected_head_sha": "29fb68526da047f549c50872190fafd9cf29d358",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T12:45:55.614Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-db-handle-lifecycle-20260919",
-        "head_sha": "29fb68526da047f549c50872190fafd9cf29d358",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153665:5749629118:2026-09-20T12:39:18Z:clawsweeper_needs_human",
       "comment_id": "5749629118",
@@ -33485,6 +33452,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:120522:5751809135:2026-09-20T18:39:22Z:re_review",
+      "comment_id": "5751809135",
+      "comment_version_key": "5751809135:2026-09-20T18:39:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/120522#issuecomment-5751809135",
+      "comment_created_at": "2026-09-20T18:38:09Z",
+      "comment_updated_at": "2026-09-20T18:39:22Z",
+      "comment_body_sha256": "ff42ad26fb4fcbd58bce9594cb7ff8acbea2e6faa22af2707c47048bd8e9cc07",
+      "repo": "openclaw/openclaw",
+      "issue_number": 120522,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T18:40:23.638Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/extended-stable-github-release",
+        "head_sha": "c2df60a8d7a88592ea8c61f636a31677aa19f752",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
