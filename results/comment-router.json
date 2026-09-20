@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T23:59:12.491Z",
+  "updated_at": "2026-09-20T23:59:45.463Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153936:5752105530:2026-09-20T19:29:01Z:re_review",
-      "comment_id": "5752105530",
-      "comment_version_key": "5752105530:2026-09-20T19:29:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153936#issuecomment-5752105530",
-      "comment_created_at": "2026-09-20T19:29:01Z",
-      "comment_updated_at": "2026-09-20T19:29:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153936,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T19:30:06.694Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/b20-host-config-types",
-        "head_sha": "e55268e898992228c30f3d2d3418b0af49884f9a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153938:5752105538:2026-09-20T19:29:01Z:re_review",
       "comment_id": "5752105538",
@@ -33244,6 +33197,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154132:5753259828:2026-09-20T23:58:45Z:clawsweeper_needs_human",
+      "comment_id": "5753259828",
+      "comment_version_key": "5753259828:2026-09-20T23:58:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154132#issuecomment-5753259828",
+      "comment_created_at": "2026-09-20T22:53:07Z",
+      "comment_updated_at": "2026-09-20T23:58:45Z",
+      "comment_body_sha256": "e06e2c1c64d15a8ed29619be8f8cd6bc423f139b1652084a3248a66b24e7e175",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154132,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete and record the flake-validation requirement in docs/help/testing/writing-tests.md: 20 clean standalone runs, three clean original-shard-order runs, and owner sibling coverage... (sha=36de1e5df48e04c2ba0d69f694735ed7478e246e)",
+      "expected_head_sha": "36de1e5df48e04c2ba0d69f694735ed7478e246e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T23:59:45.463Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/fs-safe-project-test-isolation-20260920",
+        "head_sha": "36de1e5df48e04c2ba0d69f694735ed7478e246e",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
