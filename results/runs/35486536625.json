@@ -1,0 +1,93 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153391",
+  "mode": "autonomous",
+  "run_id": "35486536625",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35486536625",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153391.md",
+  "published_at": "2026-09-20T04:03:39.789Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153391",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153391",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the parameter-loss path on preflight main dd04e9114cc957c8fc08aa872d378723bf4c8ca6. A narrow fix artifact is prepared. Implementation and runtime reproduction are blocked by the read-only filesystem and absent dependencies; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#153391",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153391",
+      "candidate_fix": null,
+      "reason": "Restore existing configured payload behavior through a shared internal owner. Establish a failing production-boundary regression before editing production code."
+    },
+    {
+      "target": "#142310",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#153391",
+      "candidate_fix": null,
+      "reason": "No evidence establishes the same configured-parameter root cause or complete coverage by this repair."
+    },
+    {
+      "target": "#86669",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#86689",
+      "candidate_fix": "#86689",
+      "reason": "Historical evidence for a different request path; no action required."
+    },
+    {
+      "target": "#86689",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain as historical context, not the canonical fix for this cluster."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153391",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153391",
+      "candidate_fix": null,
+      "reason": "A bounded internal extraction can restore the custom openai-completions utility path without changing public configuration or observer policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153391",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153391",
+      "candidate_fix": null,
+      "reason": "The executor must reproduce, implement, validate, and review the narrow fix before opening or updating the single designated PR. Publication belongs to the deterministic applicator."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
