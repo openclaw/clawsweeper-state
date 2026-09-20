@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T10:02:25.562Z",
+  "updated_at": "2026-09-20T10:04:04.371Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152797:5747666745:2026-09-20T04:39:42Z:re_review",
-      "comment_id": "5747666745",
-      "comment_version_key": "5747666745:2026-09-20T04:39:42Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152797#issuecomment-5747666745",
-      "comment_created_at": "2026-09-20T04:39:42Z",
-      "comment_updated_at": "2026-09-20T04:39:42Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152797,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T04:41:23.144Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-r2-health-json-imports-20260919",
-        "head_sha": "6c9fdced74746e475326919d7fffcf91242cf6ff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152730:5747667024:2026-09-20T04:39:47Z:re_review",
       "comment_id": "5747667024",
@@ -32640,6 +32593,39 @@
         "kind": "pull_request",
         "branch": "codex/audit-filesystem-path",
         "head_sha": "e971e120e3064596fd1e98a838fca0bf7913097f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153325:5746776036:2026-09-20T10:03:06Z:clawsweeper_needs_human",
+      "comment_id": "5746776036",
+      "comment_version_key": "5746776036:2026-09-20T10:03:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153325#issuecomment-5746776036",
+      "comment_created_at": "2026-09-20T01:38:37Z",
+      "comment_updated_at": "2026-09-20T10:03:06Z",
+      "comment_body_sha256": "fa472574588ecd96bd27463aa4ac6237b79e9929429647bb07b9cdedce1c3f27",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153325,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Plugins adopting the new asynchronous methods must prepare storage through the creation or Doctor owner first; unlike synchronous opens, these methods reject missing or unprepared dat... (sha=21fb89d8245967a5b590c3c089170940671fbd66)",
+      "expected_head_sha": "21fb89d8245967a5b590c3c089170940671fbd66",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T10:04:04.371Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/session-hydration-publication-20260919",
+        "head_sha": "21fb89d8245967a5b590c3c089170940671fbd66",
         "cluster_id": null,
         "job_path": null
       }
