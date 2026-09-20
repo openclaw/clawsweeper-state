@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T21:48:12.907Z",
+  "updated_at": "2026-09-20T21:48:28.895Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153274:5751414763:2026-09-20T17:27:14Z:re_review",
-      "comment_id": "5751414763",
-      "comment_version_key": "5751414763:2026-09-20T17:27:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153274#issuecomment-5751414763",
-      "comment_created_at": "2026-09-20T17:27:14Z",
-      "comment_updated_at": "2026-09-20T17:27:14Z",
-      "comment_body_sha256": "a724523c08ff52e6ea11ba6962441144aa8b708f39bfe62c10821b53c7a9130e",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153274,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T17:28:20.980Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/polish-native-pr-view-with-ci-states",
-        "head_sha": "4df6f54115cde20d9225f791805a82b4bfcf3898",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147886:5659092617:2026-09-20T17:26:43Z:clawsweeper_needs_human",
       "comment_id": "5659092617",
@@ -33500,6 +33453,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/o1-job-overhead",
         "head_sha": "8d8ab7b216f0ae423b09af2b6267d185c2e1989e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154093:5752910628:2026-09-20T21:47:35Z:clawsweeper_needs_human",
+      "comment_id": "5752910628",
+      "comment_version_key": "5752910628:2026-09-20T21:47:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154093#issuecomment-5752910628",
+      "comment_created_at": "2026-09-20T21:47:35Z",
+      "comment_updated_at": "2026-09-20T21:47:35Z",
+      "comment_body_sha256": "aa6ac4853b5284b0e0b5945667f7f64130e3eddefa5a17d82bde3a8ac51b2daa",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154093,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Inspected emulator screenshots establish settings and call presentation, but the instrumentation replaces microphone/provider callback... (sha=c0b1dc9d3eae83a57a74ab06d21eb183670adb11)",
+      "expected_head_sha": "c0b1dc9d3eae83a57a74ab06d21eb183670adb11",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T21:48:28.895Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/android-incoming-data-calls",
+        "head_sha": "c0b1dc9d3eae83a57a74ab06d21eb183670adb11",
         "cluster_id": null,
         "job_path": null
       }
