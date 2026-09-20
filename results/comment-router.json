@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T21:07:49.241Z",
+  "updated_at": "2026-09-20T21:08:02.843Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:749:5751283623:2026-09-20T17:04:08Z:clawsweeper_needs_human",
-      "comment_id": "5751283623",
-      "comment_version_key": "5751283623:2026-09-20T17:04:08Z",
-      "comment_url": "https://github.com/openclaw/Peekaboo/pull/749#issuecomment-5751283623",
-      "comment_created_at": "2026-09-20T17:04:08Z",
-      "comment_updated_at": "2026-09-20T17:04:08Z",
-      "comment_body_sha256": "b570d7c62761b2847de4505fc49caf6f4a1b4ac27b6b844dfd06553b331cc783",
-      "repo": "openclaw/Peekaboo",
-      "issue_number": 749,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=33a8f09b0d4be711d5b012e01f9aa2503bccce00)",
-      "expected_head_sha": "33a8f09b0d4be711d5b012e01f9aa2503bccce00",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T17:05:36.036Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/current-performance-cleanup",
-        "head_sha": "33a8f09b0d4be711d5b012e01f9aa2503bccce00",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153789:5750779427:2026-09-20T17:00:33Z:clawsweeper_needs_human",
       "comment_id": "5750779427",
@@ -33159,6 +33126,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/clawsweeper:1627:5752664354:2026-09-20T21:06:56Z:re_review",
+      "comment_id": "5752664354",
+      "comment_version_key": "5752664354:2026-09-20T21:06:56Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1627#issuecomment-5752664354",
+      "comment_created_at": "2026-09-20T21:06:56Z",
+      "comment_updated_at": "2026-09-20T21:06:56Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1627,
+      "author": "saariuslystoned",
+      "author_id": 159389674,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T21:07:52.391Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/upstream-label-noop-20260920",
+        "head_sha": "6a60c8a4e166b4e91ecce855e266026dea8f9932",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
