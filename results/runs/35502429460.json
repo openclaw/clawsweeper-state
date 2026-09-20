@@ -1,0 +1,101 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153594",
+  "mode": "autonomous",
+  "run_id": "35502429460",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35502429460",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153594.md",
+  "published_at": "2026-09-20T10:04:53.885Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153594",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153594",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix plan against preflight main 03e1d2043091cc9c2d50fd122443c21823c5cc71. Source inspection supports the reported gap. Runtime reproduction was blocked by missing dependencies; this read-only host cannot implement or validate the fix. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#153594",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153594",
+      "candidate_fix": null,
+      "reason": "Only local implementation is blocked: filesystem access is read-only and dependencies are absent. The executor must establish the failing regression on refreshed main before changing production code."
+    },
+    {
+      "target": "#88128",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#89151",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve existing behavior and contributor credit; no reopening or replacement."
+    },
+    {
+      "target": "#94832",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine for central OpenClaw security handling without public mutation or reuse as a repair candidate."
+    },
+    {
+      "target": "#97750",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Do not revive its broader parsing or promotion work."
+    },
+    {
+      "target": "#132863",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Configuration and narration policy are outside this bug-only job."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153594",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153594",
+      "candidate_fix": null,
+      "reason": "A narrow non-security fix remains plausible; no maintainer product decision is needed for the complete-block case."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
