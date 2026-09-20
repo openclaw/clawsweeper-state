@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T12:38:38.928Z",
+  "updated_at": "2026-09-20T12:40:13.709Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144318:5624108480:2026-09-20T07:08:32Z:clawsweeper_needs_human",
-      "comment_id": "5624108480",
-      "comment_version_key": "5624108480:2026-09-20T07:08:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/144318#issuecomment-5624108480",
-      "comment_created_at": "2026-09-10T19:15:12Z",
-      "comment_updated_at": "2026-09-20T07:08:32Z",
-      "comment_body_sha256": "60c0460f75750c67aeeea69c691a712149b78a211b28f7ff385db472226ab418",
-      "repo": "openclaw/openclaw",
-      "issue_number": 144318,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: preserve the reported Darwin crash-cut, standalone-helper, and retained-executor results at their reco...; Review finding: [medium] Qualify revoked recovery authority at filesystem effects — src/infra/package-update-activation.ts:725 (sha=f2a7deaa30e9e6b127ec03c1e5a6fad4adf62758)",
-      "expected_head_sha": "f2a7deaa30e9e6b127ec03c1e5a6fad4adf62758",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T07:23:56.389Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "stack/update-v6-package-publication",
-        "head_sha": "f2a7deaa30e9e6b127ec03c1e5a6fad4adf62758",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152929:5742584688:2026-09-20T07:06:16Z:clawsweeper_needs_human",
       "comment_id": "5742584688",
@@ -32121,6 +32088,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:147457:5749849489:2026-09-20T12:38:49Z:re_review",
+      "comment_id": "5749849489",
+      "comment_version_key": "5749849489:2026-09-20T12:38:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147457#issuecomment-5749849489",
+      "comment_created_at": "2026-09-20T12:38:49Z",
+      "comment_updated_at": "2026-09-20T12:38:49Z",
+      "comment_body_sha256": "bf7477731f07d40f100ffef2a81af8d00c0eb1d00d39ba1bd3feb5dd3d589eee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147457,
+      "author": "shad0wca7",
+      "author_id": 9969843,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T12:40:11.768Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "kit/matrix-key-publication-durability",
+        "head_sha": "c591b31d2319fdde1316c9420244c92094d1bced",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
