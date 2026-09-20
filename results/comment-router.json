@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T15:26:57.397Z",
+  "updated_at": "2026-09-20T15:27:01.680Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153564:5748841023:2026-09-20T09:04:55Z:re_review",
-      "comment_id": "5748841023",
-      "comment_version_key": "5748841023:2026-09-20T09:04:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153564#issuecomment-5748841023",
-      "comment_created_at": "2026-09-20T09:04:55Z",
-      "comment_updated_at": "2026-09-20T09:04:55Z",
-      "comment_body_sha256": "173354ca4c08248d3c0631fb52b7b33ee225672b3b00242c7cd00c6725962eb1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153564,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T09:05:42.986Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tauri-quick-chat-redesign",
-        "head_sha": "34aedbaf3ca16a541c5d9075a9e3b9002a78970f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2376:5748843408:2026-09-20T09:05:21Z:clawsweeper_needs_human",
       "comment_id": "5748843408",
@@ -32666,6 +32619,39 @@
         "kind": "pull_request",
         "branch": "feat/parallels-fixed-lease-ids",
         "head_sha": "bf6ae24f5e9e39548e7206ca864a0a0a84ca8fd3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-09-20T15:20:45Z:clawsweeper_needs_human",
+      "comment_id": "5075679870",
+      "comment_version_key": "5075679870:2026-09-20T15:20:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/112811#issuecomment-5075679870",
+      "comment_created_at": "2026-07-24T23:58:02Z",
+      "comment_updated_at": "2026-09-20T15:20:45Z",
+      "comment_body_sha256": "2ee138028d136058f8981f3df652a813ce553dd726e50ac931c24c91f047a0b4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 112811,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the inspected Teams screenshot and contribution-derived 15-listener deployment support multi-bot repli...; Review finding: [medium] Final-effect account isolation remains unproven — extensions/msteams/src/approval-card-submit.ts:48 (sha=24b8a6c4bfd907eb02594fab2880cc49acc48da5)",
+      "expected_head_sha": "24b8a6c4bfd907eb02594fab2880cc49acc48da5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T15:27:01.680Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/msteams-multi-account-replacement-20260722",
+        "head_sha": "24b8a6c4bfd907eb02594fab2880cc49acc48da5",
         "cluster_id": null,
         "job_path": null
       }
