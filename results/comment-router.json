@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T06:42:56.563Z",
+  "updated_at": "2026-09-20T06:42:58.648Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152897:5742329250:2026-09-20T01:59:32Z:clawsweeper_needs_human",
-      "comment_id": "5742329250",
-      "comment_version_key": "5742329250:2026-09-20T01:59:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152897#issuecomment-5742329250",
-      "comment_created_at": "2026-09-19T13:38:25Z",
-      "comment_updated_at": "2026-09-20T01:59:32Z",
-      "comment_body_sha256": "6f644ff6929ce56c4d9fea8e54636e288d8a9efb4f042d7a8e6bea27b8531dac",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152897,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=e8ba8cd4d3d712251c29054c28528ee115d383c8)",
-      "expected_head_sha": "e8ba8cd4d3d712251c29054c28528ee115d383c8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T02:00:44.863Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-r2-config-model-ref-map-20260919",
-        "head_sha": "e8ba8cd4d3d712251c29054c28528ee115d383c8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153345:5746891770:2026-09-20T01:59:52Z:clawsweeper_needs_human",
       "comment_id": "5746891770",
@@ -33078,6 +33045,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150063:5748189777:2026-09-20T06:42:06Z:re_review",
+      "comment_id": "5748189777",
+      "comment_version_key": "5748189777:2026-09-20T06:42:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150063#issuecomment-5748189777",
+      "comment_created_at": "2026-09-20T06:42:06Z",
+      "comment_updated_at": "2026-09-20T06:42:06Z",
+      "comment_body_sha256": "35a543883228ec4d0dc2210cf91a606782f5c3519e7f14b8dabf93ee4d14df57",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150063,
+      "author": "chelsealong",
+      "author_id": 14966750,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T06:42:56.830Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-secrets-149933-yield-auth-store-load",
+        "head_sha": "573c0c00726a1a87079ee7436bcb8d9a568a60d6",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
