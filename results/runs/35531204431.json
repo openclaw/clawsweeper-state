@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153952",
+  "mode": "autonomous",
+  "run_id": "35531204431",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35531204431",
+  "head_sha": "a83727ad66d69815a839badba8de275bce59c7de",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153952.md",
+  "published_at": "2026-09-20T19:46:38.103Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153952",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153952",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow config-publication repair plan. Implementation and runtime reproduction are blocked by the read-only sandbox, missing dependencies, and checkout/preflight SHA mismatch. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#153952",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153952",
+      "candidate_fix": null,
+      "reason": "The narrow fix remains supported by the hydrated report and local call chain, but a writable executor must verify current main and establish the required failing registered-command regression before editing."
+    },
+    {
+      "target": "#120362",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling without public mutation. It does not block the separate non-security config-write repair."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153952",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#153952",
+      "candidate_fix": null,
+      "reason": "A narrow owner-level repair is plausible without a product or policy decision. Return an executable handoff rather than claiming an unperformed repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
