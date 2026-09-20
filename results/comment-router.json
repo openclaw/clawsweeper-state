@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T20:55:21.619Z",
+  "updated_at": "2026-09-20T20:56:24.991Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153852:5751185708:2026-09-20T16:46:44Z:clawsweeper_needs_human",
-      "comment_id": "5751185708",
-      "comment_version_key": "5751185708:2026-09-20T16:46:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153852#issuecomment-5751185708",
-      "comment_created_at": "2026-09-20T16:46:44Z",
-      "comment_updated_at": "2026-09-20T16:46:44Z",
-      "comment_body_sha256": "d3e0bd91cedf38714eeb85f4046cd6ecb8205772427e390bc4a2d82440c09416",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153852,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Required by policy: the recorded not-applicable assessment does not satisfy the current PR proof policy. Put relevant after-change evidence in the main PR body, then request a fresh r... (sha=2630153f26105e991fc85ee90ba791f3025252cb)",
-      "expected_head_sha": "2630153f26105e991fc85ee90ba791f3025252cb",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T16:47:43.727Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/perf-flow-dirty-refresh-20260920",
-        "head_sha": "2630153f26105e991fc85ee90ba791f3025252cb",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2391:5751186582:2026-09-20T16:46:54Z:clawsweeper_auto_repair",
       "comment_id": "5751186582",
@@ -33237,6 +33204,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154065:5752600305:2026-09-20T20:55:37Z:re_review",
+      "comment_id": "5752600305",
+      "comment_version_key": "5752600305:2026-09-20T20:55:37Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154065#issuecomment-5752600305",
+      "comment_created_at": "2026-09-20T20:55:37Z",
+      "comment_updated_at": "2026-09-20T20:55:37Z",
+      "comment_body_sha256": "607299a37ea4a7ec4deb1b2ed33e7b0f189e27dd835a24c8a4f2d346f3a78bba",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154065,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T20:56:23.440Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/readable-update-artifact-ids",
+        "head_sha": "8046512de8c664a5e6aa82362a914d192284ab44",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
