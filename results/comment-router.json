@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T22:54:56.925Z",
+  "updated_at": "2026-09-20T22:55:24.473Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153862:5751362596:2026-09-20T18:30:52Z:clawsweeper_needs_human",
-      "comment_id": "5751362596",
-      "comment_version_key": "5751362596:2026-09-20T18:30:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153862#issuecomment-5751362596",
-      "comment_created_at": "2026-09-20T17:17:59Z",
-      "comment_updated_at": "2026-09-20T18:30:52Z",
-      "comment_body_sha256": "bd3406846eadfaf1df25fca87191fa909542b0db571b8ba7e88bfb7f5ab53eb9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153862,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Upgrading intentionally stops applying existing v1 snoozes, so previously hidden alerts can reappear once; the PR documents this tradeoff and preserves the original browser records. (sha=3fe740c02cf55c9b8494a5919ba5f113c17d1d3f)",
-      "expected_head_sha": "3fe740c02cf55c9b8494a5919ba5f113c17d1d3f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T18:36:10.280Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/team-inbox-account-isolation",
-        "head_sha": "3fe740c02cf55c9b8494a5919ba5f113c17d1d3f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153868:5751410466:2026-09-20T18:31:51Z:clawsweeper_needs_human",
       "comment_id": "5751410466",
@@ -33479,6 +33446,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/babelfish:22:5753266663:2026-09-20T22:54:27Z:re_review",
+      "comment_id": "5753266663",
+      "comment_version_key": "5753266663:2026-09-20T22:54:27Z",
+      "comment_url": "https://github.com/openclaw/babelfish/pull/22#issuecomment-5753266663",
+      "comment_created_at": "2026-09-20T22:54:27Z",
+      "comment_updated_at": "2026-09-20T22:54:27Z",
+      "comment_body_sha256": "8d5aafc3e2f0b714e2255a8c79933e7770daba06420f25145fadada78f18dce8",
+      "repo": "openclaw/babelfish",
+      "issue_number": 22,
+      "author": "SebTardif",
+      "author_id": 1413412,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T22:55:21.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/f004-task-start-cap",
+        "head_sha": "112723adff606c54ae6c8e689ea57d968fb8fdb3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
