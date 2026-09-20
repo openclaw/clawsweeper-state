@@ -1,0 +1,54 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153357",
+  "mode": "plan",
+  "run_id": "35486992177",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35486992177",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153357.md",
+  "published_at": "2026-09-20T03:39:38.096Z",
+  "canonical": "#153357",
+  "canonical_issue": "#153357",
+  "canonical_pr": "#153370",
+  "summary": "The diagnostic repair remains justified. One routing decision is unresolved: the job mandates a new implementation branch and one PR, but a useful, writable contributor PR already exists. No files or GitHub state changed; runtime reproduction and validation remain pending.",
+  "actions": [
+    {
+      "target": "#153357",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153357",
+      "candidate_fix": "#153370",
+      "reason": "Keep the issue open. Plan a narrow diagnostic repair, conditional on an executed failing regression against refreshed main. Investigating the reporter's underlying latency remains separate."
+    },
+    {
+      "target": "#153370",
+      "action": "needs_human",
+      "status": "planned",
+      "classification": "needs_human",
+      "canonical": "#153357",
+      "candidate_fix": null,
+      "reason": "Retain the useful contributor PR. Resolve only whether to adopt it or explicitly authorize a separate implementation PR; missing runtime proof does not justify declaring the branch uneditable or superseded."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "needs_human": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Choose the implementation destination: adopt the existing writable contributor PR, or explicitly allow a separate PR from clawsweeper/issue-openclaw-openclaw-153357 despite the one-PR guardrail. Adoption is recommended."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
