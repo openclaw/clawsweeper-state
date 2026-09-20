@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T04:12:38.721Z",
+  "updated_at": "2026-09-20T04:12:39.098Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152205:5746220190:2026-09-19T23:51:06Z:re_review",
-      "comment_id": "5746220190",
-      "comment_version_key": "5746220190:2026-09-19T23:51:06Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152205#issuecomment-5746220190",
-      "comment_created_at": "2026-09-19T23:51:06Z",
-      "comment_updated_at": "2026-09-19T23:51:06Z",
-      "comment_body_sha256": "b73d9c10024160cf3b08e0ff4339afdb7c72bdaa73b1d4bccdede6ae63304cb3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152205,
-      "author": "azuretek",
-      "author_id": 17463699,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-19T23:52:01.136Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-completion-steering",
-        "head_sha": "89ec3ca9673ebe764ed748ced451dc4d603389ea",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:119778:5199641212:2026-09-19T23:51:15Z:clawsweeper_auto_merge",
       "comment_id": "5199641212",
@@ -32993,6 +32946,39 @@
         "kind": "pull_request",
         "branch": "codex/deflake-ci-20260919",
         "head_sha": "cfae4a44417ba02b0815298e902d5a1898ff0724",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153263:5746298630:2026-09-20T04:11:44Z:clawsweeper_needs_human",
+      "comment_id": "5746298630",
+      "comment_version_key": "5746298630:2026-09-20T04:11:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153263#issuecomment-5746298630",
+      "comment_created_at": "2026-09-20T00:07:45Z",
+      "comment_updated_at": "2026-09-20T04:11:44Z",
+      "comment_body_sha256": "abe34ccd3087f93ad9f912baf36346e30426b5e1c12ecb0169a6ad731046ebe0",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153263,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Previously denied Screen Recording and Accessibility now lose the page's direct System Settings action in favor of native requests; recovery and subsequent granted-status refresh have... (sha=3fa2d975d0f2a5dbc26dae1a9a02d4d0eb774366)",
+      "expected_head_sha": "3fa2d975d0f2a5dbc26dae1a9a02d4d0eb774366",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T04:12:39.098Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/debug-why-if-i-click-on-permissions-this-app-is-not-showing-up",
+        "head_sha": "3fa2d975d0f2a5dbc26dae1a9a02d4d0eb774366",
         "cluster_id": null,
         "job_path": null
       }
