@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T16:09:23.020Z",
+  "updated_at": "2026-09-20T16:09:38.143Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150237:5703026832:2026-09-20T09:07:45Z:clawsweeper_needs_human",
-      "comment_id": "5703026832",
-      "comment_version_key": "5703026832:2026-09-20T09:07:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150237#issuecomment-5703026832",
-      "comment_created_at": "2026-09-16T19:05:34Z",
-      "comment_updated_at": "2026-09-20T09:07:45Z",
-      "comment_body_sha256": "a35d1f949ed6f0ebf7e0dcd7e1932b9f2eebecd7a7ce82f4cacb16d22984e70a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150237,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the approval.resolve worker transition needs observed rejection before durable verdict persistence when its dis...; Review finding: [P1] Preserve device revocation across the asynchronous verdict lookup — src/gateway/server-methods/approval.ts:491-495 - [high] Revoked device can complete an in-... (sha=48b6eefcb3ed3a74b6d0720c40650fcf4f5cd0ec)",
-      "expected_head_sha": "48b6eefcb3ed3a74b6d0720c40650fcf4f5cd0ec",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T09:22:20.463Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/operator-approval-lookup-followup-20260916",
-        "head_sha": "48b6eefcb3ed3a74b6d0720c40650fcf4f5cd0ec",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150270:5703877521:2026-09-20T09:20:26Z:clawsweeper_auto_repair",
       "comment_id": "5703877521",
@@ -33081,6 +33048,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153587:5750959823:2026-09-20T16:08:46Z:re_review",
+      "comment_id": "5750959823",
+      "comment_version_key": "5750959823:2026-09-20T16:08:46Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153587#issuecomment-5750959823",
+      "comment_created_at": "2026-09-20T16:08:46Z",
+      "comment_updated_at": "2026-09-20T16:08:46Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153587,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T16:09:36.501Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/block-chunker-indented-code-078",
+        "head_sha": "7e3b47b9fd6ff4da5efe81b65c02091bcbb73df5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
