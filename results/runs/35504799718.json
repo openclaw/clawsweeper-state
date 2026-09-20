@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153622",
+  "mode": "autonomous",
+  "run_id": "35504799718",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35504799718",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153622.md",
+  "published_at": "2026-09-20T10:25:47.763Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153622",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153622",
+  "canonical_pr": null,
+  "summary": "The reported consumer call sequence remains on preflight main. A narrow fix artifact is prepared, but implementation is blocked: this read-only Linux host cannot establish the required native regression, and GitHub DNS access failed while retrieving the pinned Peekaboo contract. No code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#153622",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153622",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable disposable macOS environment, inspection of the exact pinned dependency, and a failing regression before editing. Source inspection corroborates the reported consumer sequence but does not replace those gates."
+    },
+    {
+      "target": "#148541",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or paired-schema work is proposed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153622",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#153622",
+      "candidate_fix": null,
+      "reason": "The non-mutating artifact can proceed to a suitably provisioned executor. Implementation and publication remain blocked until reproduction and validation requirements are met."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
