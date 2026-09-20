@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T22:09:25.772Z",
+  "updated_at": "2026-09-20T22:09:44.758Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153573:5751638984:2026-09-20T18:08:04Z:re_review",
-      "comment_id": "5751638984",
-      "comment_version_key": "5751638984:2026-09-20T18:08:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153573#issuecomment-5751638984",
-      "comment_created_at": "2026-09-20T18:08:04Z",
-      "comment_updated_at": "2026-09-20T18:08:04Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153573,
-      "author": "juyterman1000",
-      "author_id": 208309368,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T18:08:53.892Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/issue-153543-heartbeat-crosschannel",
-        "head_sha": "e1cf8209cdaa2e42fe609000338eb3f7ccf953e5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153881:5751519584:2026-09-20T18:02:10Z:clawsweeper_needs_human",
       "comment_id": "5751519584",
@@ -33504,6 +33457,39 @@
         "kind": "pull_request",
         "branch": "fix/tail-log-regular-file",
         "head_sha": "d0ed8e8877c5a11af2159439965cbf1c4888db0b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154043:5752497740:2026-09-20T22:08:56Z:clawsweeper_needs_human",
+      "comment_id": "5752497740",
+      "comment_version_key": "5752497740:2026-09-20T22:08:56Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154043#issuecomment-5752497740",
+      "comment_created_at": "2026-09-20T20:36:36Z",
+      "comment_updated_at": "2026-09-20T22:08:56Z",
+      "comment_body_sha256": "607b3cba1f97fef940009d035afbca61efd80926e2b8a8accc0ff7fa52b595dc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154043,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new public header-provider and context APIs establish third-party credential, lifetime, and shared-server ownership contracts without recorded SDK/MCP owner acceptance. (sha=15fdd82159c21a3167b68aad70aa6c3351294cbc)",
+      "expected_head_sha": "15fdd82159c21a3167b68aad70aa6c3351294cbc",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T22:09:44.758Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/mcp-per-request-header-provider",
+        "head_sha": "15fdd82159c21a3167b68aad70aa6c3351294cbc",
         "cluster_id": null,
         "job_path": null
       }
