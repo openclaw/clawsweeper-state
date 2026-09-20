@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T16:38:39.783Z",
+  "updated_at": "2026-09-20T16:38:55.442Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82950:5749163650:2026-09-20T10:13:40Z:re_review",
-      "comment_id": "5749163650",
-      "comment_version_key": "5749163650:2026-09-20T10:13:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-5749163650",
-      "comment_created_at": "2026-09-20T10:13:40Z",
-      "comment_updated_at": "2026-09-20T10:13:40Z",
-      "comment_body_sha256": "fdc1004497497a7756ccd83eff2e7c15935dbb77118a0ec546dee1f3ecf91450",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T10:14:33.189Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "fc01e55c879466afdd1dc19a0b86bcc2a340b9cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:530:5749164351:2026-09-20T10:13:50Z:clawsweeper_needs_human",
       "comment_id": "5749164351",
@@ -33078,6 +33031,39 @@
         "kind": "pull_request",
         "branch": "codex/swarm-lifecycle-followup",
         "head_sha": "614affa312aafa3879b5830d158cdf05ebd98442",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153839:5751131045:2026-09-20T16:37:21Z:clawsweeper_needs_human",
+      "comment_id": "5751131045",
+      "comment_version_key": "5751131045:2026-09-20T16:37:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153839#issuecomment-5751131045",
+      "comment_created_at": "2026-09-20T16:37:21Z",
+      "comment_updated_at": "2026-09-20T16:37:21Z",
+      "comment_body_sha256": "ce18da93a5eaaeefc128583fd9d676e0d06c501fe0181965af7f7c022fedfd93",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153839,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The installed 2026.9.4 updater can still fail before staging this candidate; the first upgrade crossing remains dependent on the documented manual recovery path. (sha=84d4bc718ba440e5daa957160ce45f21a3accf8d)",
+      "expected_head_sha": "84d4bc718ba440e5daa957160ce45f21a3accf8d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T16:38:55.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/readonly-snapshot-stabilize",
+        "head_sha": "84d4bc718ba440e5daa957160ce45f21a3accf8d",
         "cluster_id": null,
         "job_path": null
       }
