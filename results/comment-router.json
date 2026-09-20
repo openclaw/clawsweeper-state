@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T04:26:51.395Z",
+  "updated_at": "2026-09-20T04:26:59.567Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153213:5745781040:2026-09-20T00:00:47Z:clawsweeper_needs_human",
-      "comment_id": "5745781040",
-      "comment_version_key": "5745781040:2026-09-20T00:00:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153213#issuecomment-5745781040",
-      "comment_created_at": "2026-09-19T22:30:16Z",
-      "comment_updated_at": "2026-09-20T00:00:47Z",
-      "comment_body_sha256": "3fa5e75f32002e2f08314713a018971b3e04f5e0a24223f6a68a487269aec78d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153213,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported Chromium run exercises the production UI against a mocked Gateway, but its inspected suite serializes updates and covers... (sha=065bc34a66f1f85bee10484418d46ad1d8a0db9a)",
-      "expected_head_sha": "065bc34a66f1f85bee10484418d46ad1d8a0db9a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T00:01:41.396Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/progress-card-refresh-coalescing",
-        "head_sha": "065bc34a66f1f85bee10484418d46ad1d8a0db9a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/gogcli:1140:5746239540:2026-09-20T00:02:14Z:clawsweeper_needs_human",
       "comment_id": "5746239540",
@@ -33060,6 +33027,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151297:5747610060:2026-09-20T04:26:07Z:re_review",
+      "comment_id": "5747610060",
+      "comment_version_key": "5747610060:2026-09-20T04:26:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151297#issuecomment-5747610060",
+      "comment_created_at": "2026-09-20T04:26:07Z",
+      "comment_updated_at": "2026-09-20T04:26:07Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151297,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T04:26:57.806Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/sessions-send-source-reply-bounce",
+        "head_sha": "b3f965cae02b03b9a865b6136dd44b480d179ebd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
