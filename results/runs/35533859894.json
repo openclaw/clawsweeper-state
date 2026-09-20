@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153952",
+  "mode": "plan",
+  "run_id": "35533859894",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35533859894",
+  "head_sha": "ed28f5951f5c82c5a244ad811a0123165f949496",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153952.md",
+  "published_at": "2026-09-20T19:59:58.064Z",
+  "canonical": "#153952",
+  "canonical_issue": "#153952",
+  "canonical_pr": null,
+  "summary": "Plan a narrow config-publication repair. The clean checkout matches preflight main b5adef0c1bb278f9c2298515472e69cbea171507. Runtime reproduction, implementation, and validation remain pending in this read-only planning run. No GitHub mutations are proposed.",
+  "actions": [
+    {
+      "target": "#153952",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153952",
+      "candidate_fix": null,
+      "reason": "Prepare one config-only fix PR after reproducing the failure on current main. Leave the issue open and preserve the unverified worktree report for separate investigation."
+    },
+    {
+      "target": "#120362",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact ref for central OpenClaw security handling without public mutation or further security triage. Its classification does not block the independent config repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
