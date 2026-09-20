@@ -45,3 +45,21 @@ test("readJson throws on malformed JSON without a fallback", () => {
     fs.rmSync(dir, { recursive: true, force: true });
   }
 });
+
+test("readJson does not wrap directory I/O failures as malformed JSON", () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "clawsweeper-source-"));
+  try {
+    const file = path.join(dir, "not-a-file.json");
+    fs.mkdirSync(file);
+    assert.throws(
+      () => readJson(file),
+      (error) => {
+        assert.doesNotMatch(String(error.message), /malformed JSON/);
+        assert.match(String(error.code ?? error.cause?.code ?? ""), /EISDIR|EPERM/);
+        return true;
+      },
+    );
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
+});
