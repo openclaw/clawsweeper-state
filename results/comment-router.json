@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T15:08:48.362Z",
+  "updated_at": "2026-09-20T15:09:42.170Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153402:5747477324:2026-09-20T09:00:40Z:clawsweeper_needs_human",
-      "comment_id": "5747477324",
-      "comment_version_key": "5747477324:2026-09-20T09:00:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153402#issuecomment-5747477324",
-      "comment_created_at": "2026-09-20T03:55:51Z",
-      "comment_updated_at": "2026-09-20T09:00:40Z",
-      "comment_body_sha256": "ef294f9138f921eb2b664286d00a9b18e71fd775787aba31f596223f987f822a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153402,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - A failure after package commit can leave the candidate installed and the Gateway stopped; recovery may require compatible-build Doctor repair or the retained archive instead of automa... (sha=916d71361253ae7fefcfd869112115a0930c0ea7)",
-      "expected_head_sha": "916d71361253ae7fefcfd869112115a0930c0ea7",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T09:01:59.481Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update92-agent-schema-handoff",
-        "head_sha": "916d71361253ae7fefcfd869112115a0930c0ea7",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153451:5747910102:2026-09-20T08:59:27Z:clawsweeper_needs_human",
       "comment_id": "5747910102",
@@ -32525,6 +32492,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:149755:5750633143:2026-09-20T15:08:51Z:re_review",
+      "comment_id": "5750633143",
+      "comment_version_key": "5750633143:2026-09-20T15:08:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149755#issuecomment-5750633143",
+      "comment_created_at": "2026-09-20T15:08:51Z",
+      "comment_updated_at": "2026-09-20T15:08:51Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149755,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T15:09:40.155Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/issue-149612-provider-reload-lane",
+        "head_sha": "d245e363c8e6fe5aad0cf70dd57de79d0fe107f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
