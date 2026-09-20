@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T00:01:02.598Z",
+  "updated_at": "2026-09-20T00:01:41.396Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5709835494:2026-09-17T06:16:24Z:re_review",
-      "comment_id": "5709835494",
-      "comment_version_key": "5709835494:2026-09-17T06:16:24Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5709835494",
-      "comment_created_at": "2026-09-17T06:16:24Z",
-      "comment_updated_at": "2026-09-17T06:16:24Z",
-      "comment_body_sha256": "cbf49389eb7702af7eb637a884d05a01065b918799877f932f54e03faac843fa",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T19:14:26.276Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5712930296:2026-09-17T10:34:39Z:re_review",
       "comment_id": "5712930296",
@@ -33051,6 +33024,39 @@
       "status": "skipped",
       "processed_at": "2026-09-20T00:01:02.598Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153213:5745781040:2026-09-20T00:00:47Z:clawsweeper_needs_human",
+      "comment_id": "5745781040",
+      "comment_version_key": "5745781040:2026-09-20T00:00:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153213#issuecomment-5745781040",
+      "comment_created_at": "2026-09-19T22:30:16Z",
+      "comment_updated_at": "2026-09-20T00:00:47Z",
+      "comment_body_sha256": "3fa5e75f32002e2f08314713a018971b3e04f5e0a24223f6a68a487269aec78d",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153213,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The reported Chromium run exercises the production UI against a mocked Gateway, but its inspected suite serializes updates and covers... (sha=065bc34a66f1f85bee10484418d46ad1d8a0db9a)",
+      "expected_head_sha": "065bc34a66f1f85bee10484418d46ad1d8a0db9a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T00:01:41.396Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "perf/progress-card-refresh-coalescing",
+        "head_sha": "065bc34a66f1f85bee10484418d46ad1d8a0db9a",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
