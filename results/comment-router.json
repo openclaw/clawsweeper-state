@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T10:52:05.018Z",
+  "updated_at": "2026-09-20T10:52:36.606Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153450:5747903878:2026-09-20T05:36:13Z:re_review",
-      "comment_id": "5747903878",
-      "comment_version_key": "5747903878:2026-09-20T05:36:13Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153450#issuecomment-5747903878",
-      "comment_created_at": "2026-09-20T05:36:13Z",
-      "comment_updated_at": "2026-09-20T05:36:13Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153450,
-      "author": "omarshahine",
-      "author_id": 10343873,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T05:36:58.938Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "docs/facetime-setup-guide",
-        "head_sha": "db161990aebfb8bee13c3f66c782cf6297ce646a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153302:5746539556:2026-09-20T05:36:04Z:clawsweeper_needs_human",
       "comment_id": "5746539556",
@@ -32290,6 +32243,39 @@
         "kind": "pull_request",
         "branch": "feat/swarm-cognitive-replicas",
         "head_sha": "7a97fda5cc708504a59dee11956f1ea614cce48b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153331:5746816428:2026-09-20T10:51:32Z:clawsweeper_needs_human",
+      "comment_id": "5746816428",
+      "comment_version_key": "5746816428:2026-09-20T10:51:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153331#issuecomment-5746816428",
+      "comment_created_at": "2026-09-20T01:45:52Z",
+      "comment_updated_at": "2026-09-20T10:51:32Z",
+      "comment_body_sha256": "0c57432e49bb1b3dc3508dd8ca96cd209d4da22164a26a5e11b4c683716dc985",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The eventual composition against main remains unvalidated while the hydration prerequisite is open. (sha=d737eb22e9fd8aaa81390de54ac7c492b0268bf8)",
+      "expected_head_sha": "d737eb22e9fd8aaa81390de54ac7c492b0268bf8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T10:52:36.606Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-session-hydration-20260920",
+        "head_sha": "d737eb22e9fd8aaa81390de54ac7c492b0268bf8",
         "cluster_id": null,
         "job_path": null
       }
