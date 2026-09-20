@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T20:58:02.098Z",
+  "updated_at": "2026-09-20T20:58:15.073Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153511:5751194403:2026-09-20T16:48:17Z:re_review",
-      "comment_id": "5751194403",
-      "comment_version_key": "5751194403:2026-09-20T16:48:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153511#issuecomment-5751194403",
-      "comment_created_at": "2026-09-20T16:48:17Z",
-      "comment_updated_at": "2026-09-20T16:48:17Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153511,
-      "author": "xydt-juyaohui",
-      "author_id": 266015826,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T16:49:04.267Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/wait-for-abort-signal-releases-listener",
-        "head_sha": "3b68c7078b8523be3c8f8455c50e525bec13eefc",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153796:5750872800:2026-09-20T16:48:19Z:clawsweeper_needs_human",
       "comment_id": "5750872800",
@@ -33254,6 +33207,39 @@
         "kind": "pull_request",
         "branch": "codex/upstream-label-noop-20260920",
         "head_sha": "6a60c8a4e166b4e91ecce855e266026dea8f9932",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147914:5659299532:2026-09-20T20:57:25Z:clawsweeper_needs_human",
+      "comment_id": "5659299532",
+      "comment_version_key": "5659299532:2026-09-20T20:57:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147914#issuecomment-5659299532",
+      "comment_created_at": "2026-09-14T05:08:11Z",
+      "comment_updated_at": "2026-09-20T20:57:25Z",
+      "comment_body_sha256": "b8347c2eb72ee981e0b0a55b999d127a2ab12752bd96e9b8e2f1204fee60fc76",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147914,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Land the hydration dependency, retarget this PR to main, and verify the resulting integration before merge. (sha=d26a124f8c3fcc8d1f92183ec256e351a802b05e)",
+      "expected_head_sha": "d26a124f8c3fcc8d1f92183ec256e351a802b05e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T20:58:15.073Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sqlite-cold-history-preparation",
+        "head_sha": "d26a124f8c3fcc8d1f92183ec256e351a802b05e",
         "cluster_id": null,
         "job_path": null
       }
