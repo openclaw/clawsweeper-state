@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153682"
-mode: "autonomous"
-run_id: "35510881333"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35510881333"
+mode: "plan"
+run_id: "35512268550"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35512268550"
 head_sha: "542a494c98f482f59f82253e514e599c565f7839"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-20T12:48:46.946Z"
-canonical: "https://github.com/openclaw/openclaw/issues/153682"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/153682"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-20T13:05:44.625Z"
+canonical: "#153682"
+canonical_issue: "#153682"
 canonical_pr: null
-actions_total: 5
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35510881333](https://github.com/openclaw/clawsweeper/actions/runs/35510881333)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35512268550](https://github.com/openclaw/clawsweeper/actions/runs/35512268550)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/153682
+Canonical: #153682
 
 ## Summary
 
-Confirmed the comparison defect on preflight main and prepared a narrow fix artifact. This host is read-only: implementation, the required on-disk regression, and branch validation remain blocked. No files or GitHub state changed.
+Plan one narrow diary publication fix. Clean checkout matches preflight main 4248b914fd25bbcc6d0761376ad7aa799b6473f6 and retains the reported comparison. No files or GitHub state changed; runtime reproduction and validation remain execution gates.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,9 @@ Confirmed the comparison defect on preflight main and prepared a narrow fix arti
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153682 | fix_needed | planned | canonical | A narrow comparison repair is supported by current source. The required runtime regression and implementation need a writable executor. |
-| #126642 | keep_related | planned | related | Keep the contributor's separate work open; it does not implement this publication comparison fix. |
-| #138403 | keep_related | planned | related | Separate timeout/configuration work does not affect the narrow comparison repair. |
-| #107815 | keep_closed | skipped | related | Preserve the existing UTF-16 fix; no action on this closed report. |
-| cluster:issue-openclaw-openclaw-153682 | build_fix_artifact | planned |  | Artifact preparation is complete; applying and validating it is blocked by the host's read-only filesystem. |
+| #153682 | fix_needed | planned | canonical | Compare already-prepared context strings directly against current diary context; reproduce through runDreamNarrative before implementation. |
+| #126642 | keep_related | planned | related | Preserve this contributor PR for its separate scope; it does not repair publication comparison. |
+| #138403 | keep_related | planned | related | Separate timeout behavior and product decision; leave its existing follow-up intact. |
 
 ## Needs Human
 
