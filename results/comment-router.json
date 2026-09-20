@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T15:41:16.555Z",
+  "updated_at": "2026-09-20T15:42:17.055Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:120491:5375896090:2026-08-21T22:06:08Z:re_review",
-      "comment_id": "5375896090",
-      "comment_version_key": "5375896090:2026-08-21T22:06:08Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/120491#issuecomment-5375896090",
-      "comment_created_at": "2026-08-21T22:06:08Z",
-      "comment_updated_at": "2026-08-21T22:06:08Z",
-      "comment_body_sha256": "db15e3024343ef96a94320a3bc34ff7ba9817529640b66832f32e2e436d0965c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 120491,
-      "author": "Jerry-Xin",
-      "author_id": 3401616,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — rebased onto latest main (new head 50ed96eccdfc5d64a8bfc4149f0eca1dbb660948)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T09:11:36.948Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:120491:5376967803:2026-08-22T01:09:05Z:re_review",
       "comment_id": "5376967803",
@@ -32951,6 +32924,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153587:5748867720:2026-09-20T15:41:12Z:clawsweeper_needs_human",
+      "comment_id": "5748867720",
+      "comment_version_key": "5748867720:2026-09-20T15:41:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153587#issuecomment-5748867720",
+      "comment_created_at": "2026-09-20T09:10:24Z",
+      "comment_updated_at": "2026-09-20T15:41:12Z",
+      "comment_body_sha256": "cad7e05f49d0654638a22453d09695c3773f417c2fbf350f91cd665a1c2d2613",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153587,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The updated terminal trace exercises the real subscriber → chunker → final flush → onBlockReply path and now demonstrates the oversize... (sha=5e2059b5b3e8546ab99b48d8e93f110cef735706)",
+      "expected_head_sha": "5e2059b5b3e8546ab99b48d8e93f110cef735706",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T15:42:17.055Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/block-chunker-indented-code-078",
+        "head_sha": "5e2059b5b3e8546ab99b48d8e93f110cef735706",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
