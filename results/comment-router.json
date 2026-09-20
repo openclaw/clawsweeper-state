@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T07:26:12.755Z",
+  "updated_at": "2026-09-20T07:29:49.668Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119674:5747097725:2026-09-20T02:37:43Z:re_review",
-      "comment_id": "5747097725",
-      "comment_version_key": "5747097725:2026-09-20T02:37:43Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119674#issuecomment-5747097725",
-      "comment_created_at": "2026-09-20T02:37:43Z",
-      "comment_updated_at": "2026-09-20T02:37:43Z",
-      "comment_body_sha256": "53db656ba1b4e0443b947e1ee712124b0cb8e4b66fc7fd7e6b551330d0ecdabc",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119674,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T02:39:22.672Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/119648-doctor-profile-service-identity",
-        "head_sha": "1f932791f98779a0ab7b57b3328ad60d0aeb9b8c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:143099:5601981859:2026-09-20T02:38:34Z:clawsweeper_needs_human",
       "comment_id": "5601981859",
@@ -33037,6 +32990,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/h8-extension-envelopes",
         "head_sha": "6dfc8e98bcebb0a3ca5e0de842991a3ff02c060f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153462:5747978919:2026-09-20T07:24:22Z:clawsweeper_needs_human",
+      "comment_id": "5747978919",
+      "comment_version_key": "5747978919:2026-09-20T07:24:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153462#issuecomment-5747978919",
+      "comment_created_at": "2026-09-20T05:54:34Z",
+      "comment_updated_at": "2026-09-20T07:24:22Z",
+      "comment_body_sha256": "795a88c3821f1537f38075a8b7ef5ac0435eea56e5c3c3c323b11a33a8b74383",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153462,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing custom scripts that send SIGUSR1 to restart will instead activate Node’s inspector after upgrade; operators must migrate them to SIGUSR2 or the CLI. This compatibility change... (sha=b61bafee61559bdf7ef0e021346165354e153eac)",
+      "expected_head_sha": "b61bafee61559bdf7ef0e021346165354e153eac",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T07:29:49.668Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/gateway-restart-sigusr2",
+        "head_sha": "b61bafee61559bdf7ef0e021346165354e153eac",
         "cluster_id": null,
         "job_path": null
       }
