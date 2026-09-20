@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T17:42:56.982Z",
+  "updated_at": "2026-09-20T17:43:08.328Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153635:5749276799:2026-09-20T11:12:31Z:clawsweeper_needs_human",
-      "comment_id": "5749276799",
-      "comment_version_key": "5749276799:2026-09-20T11:12:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153635#issuecomment-5749276799",
-      "comment_created_at": "2026-09-20T10:37:57Z",
-      "comment_updated_at": "2026-09-20T11:12:31Z",
-      "comment_body_sha256": "1e361337602813396c454e4a5fcf6ea62f0e13953c4118ed3e8c73fd9a2c9735",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153635,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the captured body demonstrates isolated matcher tests, not the production normalizer and Telegram deliv...; Review finding: [P1] Stop parameter matching at its structural closing boundary — src/auto-reply/tokens.ts:16-17 - [P1] Bound rejection time for repeated invocation blocks — src/a... (sha=6df286f8e1ae47eda773ba9e38411c736f4c9fb8)",
-      "expected_head_sha": "6df286f8e1ae47eda773ba9e38411c736f4c9fb8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T11:18:19.753Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tool-call-markup-artifact",
-        "head_sha": "6df286f8e1ae47eda773ba9e38411c736f4c9fb8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153634:5749293975:2026-09-20T11:15:42Z:clawsweeper_needs_human",
       "comment_id": "5749293975",
@@ -33321,6 +33288,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:118755:5751497792:2026-09-20T17:42:16Z:re_review",
+      "comment_id": "5751497792",
+      "comment_version_key": "5751497792:2026-09-20T17:42:16Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/118755#issuecomment-5751497792",
+      "comment_created_at": "2026-09-20T17:42:16Z",
+      "comment_updated_at": "2026-09-20T17:42:16Z",
+      "comment_body_sha256": "7bce84f23de14da3512619133beffc6468c89e103c444c2eee947836dddd0412",
+      "repo": "openclaw/openclaw",
+      "issue_number": 118755,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T17:43:06.740Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-75184-bootstrap-schema-help",
+        "head_sha": "ba10086d2f8256c3f3941de36fe78ddf30c01497",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
