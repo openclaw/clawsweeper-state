@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T18:35:27.938Z",
+  "updated_at": "2026-09-20T18:35:39.192Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:152161:5740423312:2026-09-19T08:16:45Z:re_review",
-      "comment_id": "5740423312",
-      "comment_version_key": "5740423312:2026-09-19T08:16:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152161#issuecomment-5740423312",
-      "comment_created_at": "2026-09-19T08:16:45Z",
-      "comment_updated_at": "2026-09-19T08:16:45Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152161,
-      "author": "ChrisCantwell",
-      "author_id": 130045959,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T12:30:02.718Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152161:5743183803:2026-09-19T15:43:30Z:re_review",
       "comment_id": "5743183803",
@@ -33484,6 +33457,39 @@
         "head_sha": "5b3495b31a5bc82948cf80cf25d7b15c97e14a22",
         "cluster_id": "automerge-openclaw-endor-clawsweeper-e2e-2",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-endor-clawsweeper-e2e-2.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153779:5750678455:2026-09-20T18:34:44Z:clawsweeper_needs_human",
+      "comment_id": "5750678455",
+      "comment_version_key": "5750678455:2026-09-20T18:34:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153779#issuecomment-5750678455",
+      "comment_created_at": "2026-09-20T15:17:04Z",
+      "comment_updated_at": "2026-09-20T18:34:44Z",
+      "comment_body_sha256": "d71496229ba617369ab541ed93e0f316bafa5c60207a6741e063df346a95fbad",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153779,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The combined successful-yield and retained-error path has no recorded after-fix execution or focused regression coverage. (sha=87cfd386144fc69d503d0865d9baab4020699c7a)",
+      "expected_head_sha": "87cfd386144fc69d503d0865d9baab4020699c7a",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T18:35:39.192Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/yield-stale-tool-error",
+        "head_sha": "87cfd386144fc69d503d0865d9baab4020699c7a",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
