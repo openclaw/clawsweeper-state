@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T16:19:54.444Z",
+  "updated_at": "2026-09-20T16:20:41.047Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150094:5748998525:2026-09-20T09:38:17Z:re_review",
-      "comment_id": "5748998525",
-      "comment_version_key": "5748998525:2026-09-20T09:38:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150094#issuecomment-5748998525",
-      "comment_created_at": "2026-09-20T09:38:17Z",
-      "comment_updated_at": "2026-09-20T09:38:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150094,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T09:39:06.868Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/feishu-replay-settlement-prerequisite-20260916",
-        "head_sha": "88969d4190a71667a49335904ad57664e9e30a27",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153581:5748798340:2026-09-20T09:38:30Z:clawsweeper_needs_human",
       "comment_id": "5748798340",
@@ -33084,6 +33037,39 @@
         "kind": "pull_request",
         "branch": "openclaw/trace-code-fence-design-regressions",
         "head_sha": "bf8fd7696028a3d66ed3b7ce3421b18133afefec",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153826:5751030022:2026-09-20T16:19:51Z:clawsweeper_needs_human",
+      "comment_id": "5751030022",
+      "comment_version_key": "5751030022:2026-09-20T16:19:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153826#issuecomment-5751030022",
+      "comment_created_at": "2026-09-20T16:19:51Z",
+      "comment_updated_at": "2026-09-20T16:19:51Z",
+      "comment_body_sha256": "b9bbe40ea5cf982a437654c4d3c98db2c23ea6616ad440d85d8e7e37e0e9fb00",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153826,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The projector and attempt tests exercise terminal metadata and skipped context capture with mocked tools/app-server input; no after-fix real Co... (sha=2994124f7de095e8d301804c421b458bbe786ed8)",
+      "expected_head_sha": "2994124f7de095e8d301804c421b458bbe786ed8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T16:20:41.047Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-terminal-meta-153712",
+        "head_sha": "2994124f7de095e8d301804c421b458bbe786ed8",
         "cluster_id": null,
         "job_path": null
       }
