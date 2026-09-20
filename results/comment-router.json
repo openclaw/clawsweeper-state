@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T20:49:06.292Z",
+  "updated_at": "2026-09-20T20:49:20.466Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153815:5751081841:2026-09-20T16:28:41Z:re_review",
-      "comment_id": "5751081841",
-      "comment_version_key": "5751081841:2026-09-20T16:28:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153815#issuecomment-5751081841",
-      "comment_created_at": "2026-09-20T16:28:41Z",
-      "comment_updated_at": "2026-09-20T16:28:41Z",
-      "comment_body_sha256": "db38c4e08df72f55839b4aba96db7f00f036c2de3e02e9df08e0da6abc420523",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153815,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T16:32:35.758Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/chat-stream-dom-retention-20260920",
-        "head_sha": "636942b32f2cbaa90d3857e2aff5b72a05922f48",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153837:5751099648:2026-09-20T16:31:49Z:clawsweeper_needs_human",
       "comment_id": "5751099648",
@@ -33458,6 +33411,39 @@
         "kind": "pull_request",
         "branch": "codex/unify-operator-scope-authority",
         "head_sha": "af6f73b7ea3469b200048f5249aaca91c96ea59d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150237:5703026832:2026-09-20T20:48:26Z:clawsweeper_needs_human",
+      "comment_id": "5703026832",
+      "comment_version_key": "5703026832:2026-09-20T20:48:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150237#issuecomment-5703026832",
+      "comment_created_at": "2026-09-16T19:05:34Z",
+      "comment_updated_at": "2026-09-20T20:48:26Z",
+      "comment_body_sha256": "f0d0c7cfd3715bb0f8e7fe0c6f286b04ade9d69e0673d2cf5f71cd6bc27f52eb",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150237,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: production-handler and physical SQLite-worker coverage supports allowed operation, but revocation cove...; Review finding: [medium] Revocation during worker lookup remains unproven — src/gateway/server-methods/approval.ts:256 (sha=26ed90ba170002c660429383c815857d6c46d072)",
+      "expected_head_sha": "26ed90ba170002c660429383c815857d6c46d072",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T20:49:20.466Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/operator-approval-lookup-followup-20260916",
+        "head_sha": "26ed90ba170002c660429383c815857d6c46d072",
         "cluster_id": null,
         "job_path": null
       }
