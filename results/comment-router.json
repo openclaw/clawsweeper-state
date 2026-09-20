@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T06:00:18.284Z",
+  "updated_at": "2026-09-20T06:00:45.666Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153289:5746787886:2026-09-20T01:40:46Z:re_review",
-      "comment_id": "5746787886",
-      "comment_version_key": "5746787886:2026-09-20T01:40:46Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153289#issuecomment-5746787886",
-      "comment_created_at": "2026-09-20T01:40:46Z",
-      "comment_updated_at": "2026-09-20T01:40:46Z",
-      "comment_body_sha256": "66c0bb1d236a6fcb63f38047beaf71d6a21e45cecde429976c5c963690a187d1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153289,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T01:41:38.973Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/chrome-extension-native-upgrade",
-        "head_sha": "6b2558fddbeb5ff003cf5d76180bafb51bed7f87",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152466:5739275320:2026-09-20T01:31:07Z:clawsweeper_auto_repair",
       "comment_id": "5739275320",
@@ -33097,6 +33050,39 @@
         "kind": "pull_request",
         "branch": "fix/153067-sqlite-state-readonly-churn",
         "head_sha": "55d582a5c3327ffd08f8852b51ebe6c94b1541b5",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:149068:5680206645:2026-09-20T05:59:53Z:clawsweeper_needs_human",
+      "comment_id": "5680206645",
+      "comment_version_key": "5680206645:2026-09-20T05:59:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/149068#issuecomment-5680206645",
+      "comment_created_at": "2026-09-15T12:32:20Z",
+      "comment_updated_at": "2026-09-20T05:59:53Z",
+      "comment_body_sha256": "daa538ec03fc6d4a5e3a2591769319ba4856a48cdabdbee11588fbe79bf0e75a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 149068,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Acceptance of corrected-candidate READY as landing authority while the incoming verdict remains NEEDS WORK is explicitly unresolved. (sha=bb0c07e0dd84099d8ae4f6c6b02507b9988baf01)",
+      "expected_head_sha": "bb0c07e0dd84099d8ae4f6c6b02507b9988baf01",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T06:00:45.665Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/pr-correction-admission-20260915",
+        "head_sha": "bb0c07e0dd84099d8ae4f6c6b02507b9988baf01",
         "cluster_id": null,
         "job_path": null
       }
