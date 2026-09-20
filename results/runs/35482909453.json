@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153313",
+  "mode": "plan",
+  "run_id": "35482909453",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35482909453",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "needs_human",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153313.md",
+  "published_at": "2026-09-20T02:06:23.921Z",
+  "canonical": "#153313",
+  "canonical_issue": "#153313",
+  "canonical_pr": null,
+  "summary": "Classification complete. Automatic PR creation needs a scoped ownership decision: the job requests a new PR, while hydrated state records manual-only handling and an existing editable contributor PR. No mutations or tests were performed. Current-main reproduction and performance proof remain outstanding; the clean local checkout differs from the preflight main SHA.",
+  "actions": [
+    {
+      "target": "#153313",
+      "action": "needs_human",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#153313",
+      "candidate_fix": "#153326",
+      "reason": "Retain this as the canonical report. Resolve the conflicting implementation ownership instructions before emitting an executable new-PR artifact. Reproduction has not been established in this read-only planning run."
+    },
+    {
+      "target": "#153326",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#153313",
+      "candidate_fix": null,
+      "reason": "Keep this useful contributor work related and open, preserving SunnyShu0925's credit. Downgrade the fix_needed action because no executable fix artifact can safely resolve the recorded implementation-ownership conflict or supply the missing current-main reproduction. Neither supersession nor merge is justified. After ownership is resolved, repair requires real normalization and policy-resolution regressions, bounded lease-admission proof, resolution of the reported review findings, and before/after behavior and performance evidence."
+    },
+    {
+      "target": "#152981",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#153313",
+      "candidate_fix": null,
+      "reason": "Related startup symptoms do not establish the same normalization root cause. Preserve the distinct platform reproduction and ongoing investigation."
+    },
+    {
+      "target": "#153257",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#153313",
+      "candidate_fix": null,
+      "reason": "The broader incident contains distinct remaining work and cannot be treated as a duplicate or covered by the normalization repair."
+    }
+  ],
+  "action_counts": {
+    "needs_human": 1,
+    "keep_related": 3
+  },
+  "action_status_counts": {
+    "planned": 4
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [
+    "Resolve implementation ownership: does this job intentionally override the recorded manual-only instruction and authorize a separate implementation PR, or should repair remain on the existing writable contributor PR? Preserve contributor credit and avoid opening competing PRs."
+  ],
+  "fix_actions": [],
+  "apply_actions": []
+}
