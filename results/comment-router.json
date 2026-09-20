@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-19T23:59:53.646Z",
+  "updated_at": "2026-09-19T23:59:56.855Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152633:5740046614:2026-09-19T19:08:23Z:clawsweeper_needs_human",
-      "comment_id": "5740046614",
-      "comment_version_key": "5740046614:2026-09-19T19:08:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152633#issuecomment-5740046614",
-      "comment_created_at": "2026-09-19T06:52:05Z",
-      "comment_updated_at": "2026-09-19T19:08:23Z",
-      "comment_body_sha256": "9571d7f7c8e330c93401fd3390284435b0ca4ff9af798e965ea12d97601ffa52",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152633,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The optional plugin contracts create an ongoing compatibility commitment: older hosts cannot prepare these attachments, and adapters enabling remote output deliberately stop using loc... (sha=3545745f52e8c4c0ec422535c1c72e562447e7f1)",
-      "expected_head_sha": "3545745f52e8c4c0ec422535c1c72e562447e7f1",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T19:09:15.953Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/storage-output-attachments",
-        "head_sha": "3545745f52e8c4c0ec422535c1c72e562447e7f1",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153109:5744554130:2026-09-19T19:08:47Z:clawsweeper_auto_repair",
       "comment_id": "5744554130",
@@ -33043,6 +33010,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/gogcli:1140:5746255411:2026-09-19T23:59:06Z:re_review",
+      "comment_id": "5746255411",
+      "comment_version_key": "5746255411:2026-09-19T23:59:06Z",
+      "comment_url": "https://github.com/openclaw/gogcli/pull/1140#issuecomment-5746255411",
+      "comment_created_at": "2026-09-19T23:59:06Z",
+      "comment_updated_at": "2026-09-19T23:59:06Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/gogcli",
+      "issue_number": 1140,
+      "author": "kazuyuki-eguchi",
+      "author_id": 201872039,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-19T23:59:55.327Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gmail-watch-equal-history-push",
+        "head_sha": "3b123527ffbb70427b4298e61f646c30db619e0a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
