@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T01:06:33.044Z",
+  "updated_at": "2026-09-20T01:07:09.634Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153109:5744554130:2026-09-19T20:07:39Z:clawsweeper_needs_human",
-      "comment_id": "5744554130",
-      "comment_version_key": "5744554130:2026-09-19T20:07:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153109#issuecomment-5744554130",
-      "comment_created_at": "2026-09-19T19:02:50Z",
-      "comment_updated_at": "2026-09-19T20:07:39Z",
-      "comment_body_sha256": "234c47bb7cb3d2ed967182e428ebf7ee863327f2696d77786dfc7d1060b399cf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153109,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Raw behavior and upgrade artifacts could not be independently inspected on this host; qualification is reported in the verified captured body, with manual restart explicitly disclosed. (sha=1f5548761b7e287dc3b2505e60fb6c3b28811c88)",
-      "expected_head_sha": "1f5548761b7e287dc3b2505e60fb6c3b28811c88",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T20:14:55.253Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/post-core-plugin-work-budget",
-        "head_sha": "1f5548761b7e287dc3b2505e60fb6c3b28811c88",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153126:5744787710:2026-09-19T20:08:23Z:clawsweeper_auto_repair",
       "comment_id": "5744787710",
@@ -33155,6 +33122,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:150348:5746592694:2026-09-20T01:06:09Z:re_review",
+      "comment_id": "5746592694",
+      "comment_version_key": "5746592694:2026-09-20T01:06:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150348#issuecomment-5746592694",
+      "comment_created_at": "2026-09-20T01:06:09Z",
+      "comment_updated_at": "2026-09-20T01:06:09Z",
+      "comment_body_sha256": "85a737b35a3db55e6983351fbfa59ec63d9bf4b4d9a4957efc57b12874d14acc",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150348,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head e375c2784d8c118e01f4278bf5096a5ec184cb8d. follow-up: the custom non-isolated runner required runtime domock registration after resetmodules; the previously failing compact-large-12 exact 229-file/two-worker selection now passes the target test locally",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T01:07:07.876Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/include-write-through",
+        "head_sha": "e375c2784d8c118e01f4278bf5096a5ec184cb8d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
