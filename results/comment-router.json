@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T15:18:32.188Z",
+  "updated_at": "2026-09-20T15:18:57.534Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:141004:5702552498:2026-09-16T18:30:34Z:re_review",
-      "comment_id": "5702552498",
-      "comment_version_key": "5702552498:2026-09-16T18:30:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5702552498",
-      "comment_created_at": "2026-09-16T18:30:34Z",
-      "comment_updated_at": "2026-09-16T18:30:34Z",
-      "comment_body_sha256": "92a4264b7873d67d8d3124b445a2b88ce6667d6388df9aea2d91ca73fa8bd79d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 141004,
-      "author": "wiecon-dev",
-      "author_id": 61579505,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T09:04:07.574Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:141004:5703270579:2026-09-16T19:25:22Z:re_review",
       "comment_id": "5703270579",
@@ -32614,6 +32587,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153780:5750684061:2026-09-20T15:18:05Z:clawsweeper_needs_human",
+      "comment_id": "5750684061",
+      "comment_version_key": "5750684061:2026-09-20T15:18:05Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153780#issuecomment-5750684061",
+      "comment_created_at": "2026-09-20T15:18:05Z",
+      "comment_updated_at": "2026-09-20T15:18:05Z",
+      "comment_body_sha256": "2474fb1f297aafdf74c56fab34e30f07a4c7acd1c3f04f8882761a25bfea4286",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153780,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the recovery owner is exercised through CronService tests, but execution and notification delivery are... (sha=696151df74311ea9d78008ccc769ab59f378d7c3)",
+      "expected_head_sha": "696151df74311ea9d78008ccc769ab59f378d7c3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T15:18:57.534Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cron-failure-only-20260920",
+        "head_sha": "696151df74311ea9d78008ccc769ab59f378d7c3",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
