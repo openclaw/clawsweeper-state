@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 20, 2026, 10:34 UTC
+Last source update: Sep 20, 2026, 10:44 UTC
 
 ### Fleet
 
@@ -22,9 +22,9 @@ Last source update: Sep 20, 2026, 10:34 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 20, 2026, 10:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35503607135) |
-| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 20, 2026, 10:30 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35505206966) |
-| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 20, 2026, 07:34 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35497212572) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 20, 2026, 10:40 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35505032386) |
+| [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 20, 2026, 10:42 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35505732329) |
+| [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 20, 2026, 10:44 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35505861162) |
 
 ### Repositories
 
@@ -91,16 +91,16 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 20, 2026, 10:25 UTC
+Last source update: Sep 20, 2026, 10:38 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1124 | 100% |
-| Run attempts archived | 3364 | audit |
-| Latest successful clusters | 954 | 84.9% |
-| Latest failed clusters | 167 | 14.9% |
+| Run attempts archived | 3365 | audit |
+| Latest successful clusters | 955 | 85.0% |
+| Latest failed clusters | 166 | 14.8% |
 | Latest cancelled clusters | 3 | 0.3% |
 | Needs-human clusters | 126 | 11.2% |
 | Fix actions failed | 34 | 4.6% |
@@ -116,7 +116,7 @@ State: Failed clusters need inspection
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
 - Latest records: 1124 clusters: 338 maintainer action, 314 automation snapshot, 424 intervention needed, 48 no pending action, 0 completed.
-- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#94832](https://github.com/openclaw/openclaw/issues/94832) is maintainer_input: Quarantine for central OpenClaw security handling without public mutation or reuse as a repair candidate..
+- Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#94832](https://github.com/openclaw/openclaw/issues/94832) is maintainer_input: Central OpenClaw security handling only; do not mutate or adopt its broader repair path..
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#153622](https://github.com/openclaw/openclaw/pull/153622) is automation_failed: Implementation requires a writable disposable macOS environment, inspection of the exact pinned dependency, and a failing regression befo....
 - Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#153502](https://github.com/openclaw/openclaw/pull/153502) is action_planned: The historical-warning combination needs its own regression and repair; related merged work does not establish that this report is fixed.....
 - Completed latest: no completed action in the latest records.
@@ -147,7 +147,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded need | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#94832](https://github.com/openclaw/openclaw/issues/94832) | maintainer_input | Quarantine for central OpenClaw security handling without public mutation or reuse as a repair candidate. | Sep 20, 2026, 10:04 UTC | [issue-openclaw-openclaw-153594](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153594.md) | [35502429460](https://github.com/openclaw/clawsweeper/actions/runs/35502429460) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#94832](https://github.com/openclaw/openclaw/issues/94832) | maintainer_input | Central OpenClaw security handling only; do not mutate or adopt its broader repair path. | Sep 20, 2026, 10:38 UTC | [issue-openclaw-openclaw-153594](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153594.md) | [35505501546](https://github.com/openclaw/clawsweeper/actions/runs/35505501546) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#153370](https://github.com/openclaw/openclaw/issues/153370) | maintainer_input | Choose the implementation destination: adopt the existing writable contributor PR, or explicitly allow a separate PR from clawsweeper/issue-opencla... | Sep 20, 2026, 03:39 UTC | [issue-openclaw-openclaw-153357](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153357.md) | [35486992177](https://github.com/openclaw/clawsweeper/actions/runs/35486992177) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#153313](https://github.com/openclaw/openclaw/pull/153313) | maintainer_input | Resolve implementation ownership: does this job intentionally override the recorded manual-only instruction and authorize a separate implementation... | Sep 20, 2026, 02:06 UTC | [issue-openclaw-openclaw-153313](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153313.md) | [35482909453](https://github.com/openclaw/clawsweeper/actions/runs/35482909453) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#153250](https://github.com/openclaw/openclaw/issues/153250) | maintainer_input | Resolve whether automatic implementation should proceed despite the current clawsweeper:manual-only label and @holny's implementation offer. The su... | Sep 20, 2026, 01:13 UTC | [issue-openclaw-openclaw-153250](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153250.md) | [35480720221](https://github.com/openclaw/clawsweeper/actions/runs/35480720221) |
