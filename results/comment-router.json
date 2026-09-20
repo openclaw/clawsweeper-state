@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T19:30:04.765Z",
+  "updated_at": "2026-09-20T19:30:10.494Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153756:5750414635:2026-09-20T14:28:19Z:clawsweeper_needs_human",
-      "comment_id": "5750414635",
-      "comment_version_key": "5750414635:2026-09-20T14:28:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153756#issuecomment-5750414635",
-      "comment_created_at": "2026-09-20T14:28:19Z",
-      "comment_updated_at": "2026-09-20T14:28:19Z",
-      "comment_body_sha256": "ab4c12919e4a17b632b435b71422571584c313f48989234d70e6f57c34af86b4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153756,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - An existing ACP agent with a valid per-agent model will switch its local model calls to the global default. If that provider lacks credentials or differs from the operator's intended... (sha=e4a1044a6b27ea8c629c2a8952ae41df9e915990)",
-      "expected_head_sha": "e4a1044a6b27ea8c629c2a8952ae41df9e915990",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T14:30:52.204Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/acp-model-ref-native-dispatch-leak",
-        "head_sha": "e4a1044a6b27ea8c629c2a8952ae41df9e915990",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153758:5750417103:2026-09-20T14:28:48Z:clawsweeper_needs_human",
       "comment_id": "5750417103",
@@ -33367,6 +33334,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153936:5752105530:2026-09-20T19:29:01Z:re_review",
+      "comment_id": "5752105530",
+      "comment_version_key": "5752105530:2026-09-20T19:29:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153936#issuecomment-5752105530",
+      "comment_created_at": "2026-09-20T19:29:01Z",
+      "comment_updated_at": "2026-09-20T19:29:01Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153936,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T19:30:06.694Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/b20-host-config-types",
+        "head_sha": "e55268e898992228c30f3d2d3418b0af49884f9a",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
