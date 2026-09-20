@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T21:33:29.421Z",
+  "updated_at": "2026-09-20T21:34:13.544Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153741:5750324945:2026-09-20T17:09:52Z:clawsweeper_needs_human",
-      "comment_id": "5750324945",
-      "comment_version_key": "5750324945:2026-09-20T17:09:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153741#issuecomment-5750324945",
-      "comment_created_at": "2026-09-20T14:11:43Z",
-      "comment_updated_at": "2026-09-20T17:09:52Z",
-      "comment_body_sha256": "3bcb666c0d393e97048a5413d6d9102557f393edaf8e66fec7a8de78b73acbe5",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153741,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Updating only the Gateway can switch an unchanged Android client from native speech to realtime relay; that mixed-version combination remains untested. The PR body records maintainer... (sha=98f9988334520790da850c29185822f9a262373e)",
-      "expected_head_sha": "98f9988334520790da850c29185822f9a262373e",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T17:20:08.100Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/fix-153298-android-talk-recovered",
-        "head_sha": "98f9988334520790da850c29185822f9a262373e",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153661:5749554988:2026-09-20T17:16:54Z:clawsweeper_needs_human",
       "comment_id": "5749554988",
@@ -33461,6 +33428,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154025:5752816727:2026-09-20T21:33:23Z:re_review",
+      "comment_id": "5752816727",
+      "comment_version_key": "5752816727:2026-09-20T21:33:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154025#issuecomment-5752816727",
+      "comment_created_at": "2026-09-20T21:33:23Z",
+      "comment_updated_at": "2026-09-20T21:33:23Z",
+      "comment_body_sha256": "bd7ce874fbafa172fe1785f043091b67dfce85c668355ec29fed6ce68203190a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154025,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T21:34:11.189Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sqlite-snapshot-retry",
+        "head_sha": "52f421491dbdaf9396e3263e1c3c5d2b3ff697e1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
