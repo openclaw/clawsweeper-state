@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T10:18:59.615Z",
+  "updated_at": "2026-09-20T10:19:02.261Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:151297:5747680345:2026-09-20T04:43:01Z:re_review",
-      "comment_id": "5747680345",
-      "comment_version_key": "5747680345:2026-09-20T04:43:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151297#issuecomment-5747680345",
-      "comment_created_at": "2026-09-20T04:43:01Z",
-      "comment_updated_at": "2026-09-20T04:43:01Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151297,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T04:50:55.821Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/sessions-send-source-reply-bounce",
-        "head_sha": "32aa3ca9e00ccc7b6005b1712f36aa2e810fcd89",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152727:5747706101:2026-09-20T04:49:20Z:re_review",
       "comment_id": "5747706101",
@@ -32584,6 +32537,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/perf-infra-socks",
         "head_sha": "4d00c353caa5b064ba2b52f644bb65641b07153b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:150588:5708879191:2026-09-20T10:11:24Z:clawsweeper_needs_human",
+      "comment_id": "5708879191",
+      "comment_version_key": "5708879191:2026-09-20T10:11:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/150588#issuecomment-5708879191",
+      "comment_created_at": "2026-09-17T04:57:16Z",
+      "comment_updated_at": "2026-09-20T10:11:24Z",
+      "comment_body_sha256": "a83139e23ab1aa97aa63e2bce954ed40b27fd206b4efa2d860abdcbb3b5b134e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 150588,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - New sequential Meet cleanup can extend Gateway shutdown; response deadlines do not guarantee that tracked handlers settle. (sha=b936ad8687b0b3a74b03ff3462868df68b575a41)",
+      "expected_head_sha": "b936ad8687b0b3a74b03ff3462868df68b575a41",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T10:19:02.261Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/issue-150143-meet-shutdown-cleanup",
+        "head_sha": "b936ad8687b0b3a74b03ff3462868df68b575a41",
         "cluster_id": null,
         "job_path": null
       }
