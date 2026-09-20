@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153502"
-mode: "autonomous"
-run_id: "35494650988"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35494650988"
+mode: "plan"
+run_id: "35497291658"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35497291658"
 head_sha: "542a494c98f482f59f82253e514e599c565f7839"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-20T07:21:49.338Z"
-canonical: "https://github.com/openclaw/openclaw/issues/153502"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/153502"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-20T07:40:05.746Z"
+canonical: "#153502"
+canonical_issue: "#153502"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35494650988](https://github.com/openclaw/clawsweeper/actions/runs/35494650988)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35497291658](https://github.com/openclaw/clawsweeper/actions/runs/35497291658)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/153502
+Canonical: #153502
 
 ## Summary
 
-Source inspection supports the reported receipt-eligibility defect. A narrow fix artifact is prepared, but implementation and production-entrypoint reproduction are blocked by this host's read-only filesystem. No code or GitHub state changed; runtime validation remains outstanding.
+Plan a narrow Doctor receipt-eligibility repair. Source inspection at preflight main 760c9667f5c958d317d9ae3a65b0bd22aee26eb7 supports the reported failure path. Runtime reproduction, implementation, and validation remain pending; no files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Source inspection supports the reported receipt-eligibility defect. A narrow fix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153502 | fix_needed | blocked | canonical | Implementation is blocked on a writable executor. Reproduce against refreshed main before editing; stop for retriage if the specified failure does not occur. |
-| #149956 | keep_closed | skipped | related | Historical contract evidence, not an open target or complete fix for the reported combination. |
-| #153097 | keep_closed | skipped | related | Preserve the merged receipt-reuse and plugin-settlement contracts; no closure or reopening action is needed. |
-| cluster:issue-openclaw-openclaw-153502 | build_fix_artifact | planned |  | A bounded bug-fix path is supported by source and existing contracts. The executor must establish the failing production-entrypoint regression before implementing or publishing it. |
+| #153502 | fix_needed | planned | canonical | The historical-warning combination needs its own regression and repair; related merged work does not establish that this report is fixed. Proceed only after reproducing the failure on current main. |
+| #149956 | keep_closed | skipped | related | Historical contract evidence only; preserve its source-verification and retry guarantees. |
+| #153097 | keep_closed | skipped | related | Historical contract evidence only; extend the existing receipt and settlement owners. |
 
 ## Needs Human
 
