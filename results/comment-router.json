@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T13:51:52.564Z",
+  "updated_at": "2026-09-20T13:52:21.244Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153551:5748600341:2026-09-20T08:12:40Z:re_review",
-      "comment_id": "5748600341",
-      "comment_version_key": "5748600341:2026-09-20T08:12:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153551#issuecomment-5748600341",
-      "comment_created_at": "2026-09-20T08:12:40Z",
-      "comment_updated_at": "2026-09-20T08:12:40Z",
-      "comment_body_sha256": "a9c28b7300663f960edba909f2f8dbda20ba0d02c5936c7b4cda2d1dd78e94f6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153551,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T08:13:28.499Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/tool-result-prepared-counts-20260920",
-        "head_sha": "191844e963e303a05bab1fa44a0b12ccb76a03c8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153463:5747988292:2026-09-20T08:12:45Z:clawsweeper_needs_human",
       "comment_id": "5747988292",
@@ -32390,6 +32343,39 @@
         "head_sha": "f5adb31d1ceabb86894dfc2fe524d419137c095d",
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153178:5745452008:2026-09-20T13:51:11Z:clawsweeper_needs_human",
+      "comment_id": "5745452008",
+      "comment_version_key": "5745452008:2026-09-20T13:51:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153178#issuecomment-5745452008",
+      "comment_created_at": "2026-09-19T21:32:37Z",
+      "comment_updated_at": "2026-09-20T13:51:11Z",
+      "comment_body_sha256": "2e23b5bf276b629f75f1a9110defeabcec822ec2e8cbd6c34e7ab37febff22a2",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153178,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The integrated maintenance-restoration and atomic recovery-recording path has not been exercised in the retained installed runs; compatibility of that composition with published-drive... (sha=be9f769da45b7db62f1c691f76afb7ee6c52f7fb)",
+      "expected_head_sha": "be9f769da45b7db62f1c691f76afb7ee6c52f7fb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T13:52:21.244Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/95-post-update-phases",
+        "head_sha": "be9f769da45b7db62f1c691f76afb7ee6c52f7fb",
+        "cluster_id": null,
+        "job_path": null
       }
     }
   ]
