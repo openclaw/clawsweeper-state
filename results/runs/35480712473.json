@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153313",
+  "mode": "autonomous",
+  "run_id": "35480712473",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35480712473",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153313.md",
+  "published_at": "2026-09-20T01:42:19.054Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153313",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153313",
+  "canonical_pr": null,
+  "summary": "The normalization defect remains source-supported on preflight main 8ebc8cd021e47c8ff2771a89cac0f16dd07b06c8. Implementation and executed reproduction are blocked: this host is read-only, and the focused test command failed before loading tests because dependencies are missing. A narrow executor fix artifact is prepared. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#153313",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153313",
+      "candidate_fix": null,
+      "reason": "The fix is narrow and needs no unresolved product decision. A writable executor must install repository dependencies and demonstrate failing normalization and bounded lease regressions before editing production code."
+    },
+    {
+      "target": "#152981",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as related evidence. The narrow normalization repair cannot claim to resolve the complete Windows startup incident."
+    },
+    {
+      "target": "#153257",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Keep open as a broader related incident with unique remaining work and active discussion."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153313",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#153313",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete; implementation remains blocked by host filesystem restrictions and missing dependencies."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
