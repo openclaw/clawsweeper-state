@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T18:27:53.100Z",
+  "updated_at": "2026-09-20T18:28:34.901Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:132668:5651713564:2026-09-13T06:39:34Z:re_review",
-      "comment_id": "5651713564",
-      "comment_version_key": "5651713564:2026-09-13T06:39:34Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/132668#issuecomment-5651713564",
-      "comment_created_at": "2026-09-13T06:39:34Z",
-      "comment_updated_at": "2026-09-13T06:39:34Z",
-      "comment_body_sha256": "582c70a1935891e71d8cfb02127b21b2e0d8a5a58e01795f4deb351b3faeff48",
-      "repo": "openclaw/openclaw",
-      "issue_number": 132668,
-      "author": "zhangguiping-xydt",
-      "author_id": 275915537,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T12:28:20.099Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:144507:5627151742:2026-09-20T12:27:22Z:clawsweeper_auto_repair",
       "comment_id": "5627151742",
@@ -33411,6 +33384,39 @@
       "status": "skipped",
       "processed_at": "2026-09-20T18:27:53.100Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153916:5751749656:2026-09-20T18:27:44Z:clawsweeper_needs_human",
+      "comment_id": "5751749656",
+      "comment_version_key": "5751749656:2026-09-20T18:27:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153916#issuecomment-5751749656",
+      "comment_created_at": "2026-09-20T18:27:44Z",
+      "comment_updated_at": "2026-09-20T18:27:44Z",
+      "comment_body_sha256": "750f605255a4e4071a29f191cb461a919dace8e5de30f764abfa84ecb8488be6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153916,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Opted-in runs await Decision-provider settlement during tool-result delivery and cleanup; an abort-ignoring provider can stall beyond the advertised cooperative budget. (sha=d03818a58944075df8e7590e1d5cf77d9c7ad051)",
+      "expected_head_sha": "d03818a58944075df8e7590e1d5cf77d9c7ad051",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T18:28:34.901Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/semantic-stall-replan",
+        "head_sha": "d03818a58944075df8e7590e1d5cf77d9c7ad051",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
