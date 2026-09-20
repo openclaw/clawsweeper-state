@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T06:21:40.778Z",
+  "updated_at": "2026-09-20T06:23:17.195Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142102:5583566516:2026-09-20T01:41:27Z:clawsweeper_needs_human",
-      "comment_id": "5583566516",
-      "comment_version_key": "5583566516:2026-09-20T01:41:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142102#issuecomment-5583566516",
-      "comment_created_at": "2026-09-08T10:16:52Z",
-      "comment_updated_at": "2026-09-20T01:41:27Z",
-      "comment_body_sha256": "c2c0ca8b2bf7721ca061cd86de299f6a94326eac19ef0d06ade6cce4bc207737",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142102,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The 64-file ceiling bounds workload, but completed hosted storage/state timings have not yet shown whether the new partitions finish within the existing deadline. (sha=394d5e973ffe9115720db645c9e360aee78628d3)",
-      "expected_head_sha": "394d5e973ffe9115720db645c9e360aee78628d3",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T01:56:38.886Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-handoff-swap-enoent",
-        "head_sha": "394d5e973ffe9115720db645c9e360aee78628d3",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:142203:5586358503:2026-09-20T01:30:46Z:clawsweeper_auto_repair",
       "comment_id": "5586358503",
@@ -33036,6 +33003,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153276:5748100924:2026-09-20T06:22:23Z:re_review",
+      "comment_id": "5748100924",
+      "comment_version_key": "5748100924:2026-09-20T06:22:23Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153276#issuecomment-5748100924",
+      "comment_created_at": "2026-09-20T06:22:23Z",
+      "comment_updated_at": "2026-09-20T06:22:23Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153276,
+      "author": "MasterSwords1",
+      "author_id": 142840981,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T06:23:15.040Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/153067-sqlite-state-readonly-churn",
+        "head_sha": "53f2ab6942e3ee8d6fd80be0f5c4a047b1558f0b",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
