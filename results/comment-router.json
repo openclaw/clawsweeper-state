@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T18:33:16.273Z",
+  "updated_at": "2026-09-20T18:33:43.056Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152161:5736090798:2026-09-20T12:29:01Z:clawsweeper_needs_human",
-      "comment_id": "5736090798",
-      "comment_version_key": "5736090798:2026-09-20T12:29:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152161#issuecomment-5736090798",
-      "comment_created_at": "2026-09-18T20:58:01Z",
-      "comment_updated_at": "2026-09-20T12:29:01Z",
-      "comment_body_sha256": "6b036f146c004f27dc3ade2511110abe012006179c803d17e67ddbd8b5714215",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152161,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the hash-matched body and inspected harnesses establish real-child assigned/unassigned delivery and re...; Review finding: [P1] Carry secret authorization through the native launch fence — src/agents/bash-tools.exec-run.ts:610-614 - [high] Revoked assignments can survive successful pre... (sha=1bd4a9ac81cf52d8beb1d03469bd130dbb187364)",
-      "expected_head_sha": "1bd4a9ac81cf52d8beb1d03469bd130dbb187364",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T12:30:02.718Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/secret-assignment-broker-plugin",
-        "head_sha": "1bd4a9ac81cf52d8beb1d03469bd130dbb187364",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:152161:5739365757:2026-09-19T04:32:26Z:re_review",
       "comment_id": "5739365757",
@@ -33467,6 +33434,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153509:5748173830:2026-09-20T18:32:53Z:clawsweeper_auto_repair",
+      "comment_id": "5748173830",
+      "comment_version_key": "5748173830:2026-09-20T18:32:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153509#issuecomment-5748173830",
+      "comment_created_at": "2026-09-20T06:38:29Z",
+      "comment_updated_at": "2026-09-20T18:32:53Z",
+      "comment_body_sha256": "cce73a1f60451cb9e6011a63a968ebb2f51732e4754b858d6987a8f089904f4e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153509,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=ad0c11d699cb55d6c59d55041bc902960d25c0a6)",
+      "expected_head_sha": "ad0c11d699cb55d6c59d55041bc902960d25c0a6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T18:33:43.056Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/task-identifiers-doctor-20260920",
+        "head_sha": "b58a1e9938867c026be72fe6732b6376a03fbd4b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
