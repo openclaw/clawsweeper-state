@@ -1,16 +1,16 @@
 # ClawSweeper Conflict Self-Heal
 
-Generated: 2026-09-19T23:31:02.457Z
+Generated: 2026-09-20T01:10:28.798Z
 Repository: openclaw/openclaw
 
 ## Summary
 
 | Metric | Count |
 | --- | ---: |
-| open_clawsweeper_prs | 28 |
+| open_clawsweeper_prs | 27 |
 | candidates | 0 |
 | waiting | 0 |
-| skipped | 29 |
+| skipped | 28 |
 | conflicting_or_dirty | 0 |
 
 ## Pull Requests
@@ -24,7 +24,6 @@ Repository: openclaw/openclaw
 | [#120143](https://github.com/openclaw/openclaw/pull/120143) | fix(matrix): warn when open DMs lack an allowlist wildcard | clawsweeper/issue-openclaw-openclaw-89254 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119983](https://github.com/openclaw/openclaw/pull/119983) | fix(workboard): include operator notes in Start prompt | clawsweeper/issue-openclaw-openclaw-119962 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119975](https://github.com/openclaw/openclaw/pull/119975) | fix(gateway): report active unmanaged restart startup accurately | clawsweeper/issue-openclaw-openclaw-119958 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
-| [#119778](https://github.com/openclaw/openclaw/pull/119778) | fix(gateway): return retryable chat send error during transcript rebuild | clawsweeper/issue-openclaw-openclaw-119754 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119737](https://github.com/openclaw/openclaw/pull/119737) | fix(slack): require confirmed thread placement for terminal receipts | clawsweeper/issue-openclaw-openclaw-96692 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119735](https://github.com/openclaw/openclaw/pull/119735) | fix(whatsapp): refresh activity for pending inbound work | clawsweeper/issue-openclaw-openclaw-114169 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
 | [#119722](https://github.com/openclaw/openclaw/pull/119722) | fix(uninstall): remove owned shell completion registrations with state | clawsweeper/issue-openclaw-openclaw-112625 | UNKNOWN | UNKNOWN | skipped | head repository is unknown |
