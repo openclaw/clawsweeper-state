@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T19:09:42.785Z",
+  "updated_at": "2026-09-20T19:10:02.465Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153627:5749223067:2026-09-20T13:44:04Z:clawsweeper_auto_repair",
-      "comment_id": "5749223067",
-      "comment_version_key": "5749223067:2026-09-20T13:44:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153627#issuecomment-5749223067",
-      "comment_created_at": "2026-09-20T10:26:23Z",
-      "comment_updated_at": "2026-09-20T13:44:04Z",
-      "comment_body_sha256": "455e603647ce2331f6db9545774fba25e42490f124ad079e1094ac52322e9eba",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153627,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=cb4853b76a27e3995500a3bf2b580122a37f95a8)",
-      "expected_head_sha": "cb4853b76a27e3995500a3bf2b580122a37f95a8",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T13:51:52.563Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/swarm-population-dynamics",
-        "head_sha": "cb4853b76a27e3995500a3bf2b580122a37f95a8",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153628:5749228946:2026-09-20T13:44:29Z:clawsweeper_auto_repair",
       "comment_id": "5749228946",
@@ -33423,6 +33390,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153756:5750414635:2026-09-20T19:08:59Z:clawsweeper_needs_human",
+      "comment_id": "5750414635",
+      "comment_version_key": "5750414635:2026-09-20T19:08:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153756#issuecomment-5750414635",
+      "comment_created_at": "2026-09-20T14:28:19Z",
+      "comment_updated_at": "2026-09-20T19:08:59Z",
+      "comment_body_sha256": "b8de2dbb9f6cee7c32e3f379616b74d06e6613382e0a8e82c689b8d0f50ba4cd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153756,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing ACP configurations can change native provider, account, billing route, or data destination; calls can fail when the native default lacks credentials. This transition is docum... (sha=bfbf998923156c178ac743aac03dfd4e12e99b96)",
+      "expected_head_sha": "bfbf998923156c178ac743aac03dfd4e12e99b96",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T19:10:02.465Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acp-model-ref-native-dispatch-leak",
+        "head_sha": "bfbf998923156c178ac743aac03dfd4e12e99b96",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
