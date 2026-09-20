@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-154036"
-mode: "autonomous"
-run_id: "35535790015"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35535790015"
+mode: "plan"
+run_id: "35537166478"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35537166478"
 head_sha: "a09e6cefb31adcd12bba10e1658cae5fced08c80"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-20T20:36:26.863Z"
-canonical: "https://github.com/openclaw/openclaw/issues/154036"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/154036"
+published_at: "2026-09-20T21:00:30.633Z"
+canonical: "#154036"
+canonical_issue: "#154036"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35535790015](https://github.com/openclaw/clawsweeper/actions/runs/35535790015)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35537166478](https://github.com/openclaw/clawsweeper/actions/runs/35537166478)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/154036
+Canonical: #154036
 
 ## Summary
 
-Current source confirms the missing Markdown presentation. Prepared a narrow fix artifact; implementation, failing-regression execution, validation, and screenshots remain blocked on this read-only host with no installed dependencies. No files or GitHub state changed.
+Confirmed the textarea-only prompt path at preflight main d0b5c46fa7ee198a74d160f5e45548d78600589d. Plan a narrow Markdown-view restoration. No files or GitHub state changed; executable reproduction, tests, review, and screenshots remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Current source confirms the missing Markdown presentation. Prepared a narrow fix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #154036 | fix_needed | planned | canonical | A focused presentation repair is supported by current source and supplied historical evidence; no viable open implementation PR appears in the hydrated inventory. |
-| #72777 | keep_closed | skipped | related | Historical implementation and contributor credit only; it does not establish that current main fixes the regression. |
-| cluster:issue-openclaw-openclaw-154036 | build_fix_artifact | planned |  | The deterministic executor can implement this bounded artifact after establishing a failing regression in a writable checkout. |
-| cluster:issue-openclaw-openclaw-154036 | open_fix_pr | blocked |  | Implementation and publication require the executor's writable checkout, completed regression proof, focused validation, fresh review, and required screenshot delivery. |
+| #154036 | fix_needed | planned | canonical | The established behavior supports a bounded regression repair without a new product decision. Establish a failing detail-view regression before implementation. |
+| #72777 | keep_closed | skipped | related | Historical implementation evidence only; retain contributor credit without reopening or replacing the merged PR. |
 
 ## Needs Human
 
