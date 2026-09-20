@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T03:44:43.442Z",
+  "updated_at": "2026-09-20T03:45:12.243Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:82950:4469526858:2026-09-19T23:17:54Z:clawsweeper_needs_human",
-      "comment_id": "4469526858",
-      "comment_version_key": "4469526858:2026-09-19T23:17:54Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82950#issuecomment-4469526858",
-      "comment_created_at": "2026-05-17T05:54:16Z",
-      "comment_updated_at": "2026-09-19T23:17:54Z",
-      "comment_body_sha256": "3122493e9722f4b5c3ee83e71e531eac35e03657cddfd9b14b3902d0be2c9450",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82950,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The captured exact-head macOS/Node terminal trace exercises production matching, redaction, and persisted Doctor repair and supports b...; Review finding: [P1] Preserve literal identity when comparing decoded atoms — src/security/safe-regex-tokens.ts:375-379 - [P1] Limit octal escapes starting with 4–7 to two digits... (sha=8c2d63db76cb288bafff56b88a3688b9b493365b)",
-      "expected_head_sha": "8c2d63db76cb288bafff56b88a3688b9b493365b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T23:28:53.552Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/exec-approval-redos-guard",
-        "head_sha": "8c2d63db76cb288bafff56b88a3688b9b493365b",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:146361:5648240432:2026-09-19T23:25:42Z:clawsweeper_needs_human",
       "comment_id": "5648240432",
@@ -32846,6 +32813,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153320:5747406064:2026-09-20T03:44:21Z:re_review",
+      "comment_id": "5747406064",
+      "comment_version_key": "5747406064:2026-09-20T03:44:21Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153320#issuecomment-5747406064",
+      "comment_created_at": "2026-09-20T03:44:21Z",
+      "comment_updated_at": "2026-09-20T03:44:21Z",
+      "comment_body_sha256": "0811d18e4e4436385de24e21ebb5c25942d1fcc7c64615b9991c0107a0f588dd",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153320,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T03:45:10.649Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/compaction-stopword-asks",
+        "head_sha": "84a1924e4874fc19e7c9990f38c2c44f67372850",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
