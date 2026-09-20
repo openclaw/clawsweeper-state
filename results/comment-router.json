@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-20T04:06:23.747Z",
+  "updated_at": "2026-09-20T04:06:37.121Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137411:5536128321:2026-09-04T05:26:40Z:re_review",
-      "comment_id": "5536128321",
-      "comment_version_key": "5536128321:2026-09-04T05:26:40Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137411#issuecomment-5536128321",
-      "comment_created_at": "2026-09-04T05:26:40Z",
-      "comment_updated_at": "2026-09-04T05:26:40Z",
-      "comment_body_sha256": "1e79f094b01a21c592760721ac3ce8d3709c09192e3506ef5b433861a417bddf",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137411,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-19T23:48:10.980Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:137411:5531148014:2026-09-03T19:40:44Z:re_review",
       "comment_id": "5531148014",
@@ -32946,6 +32919,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/uirouter:21:5304826827:2026-09-20T03:53:29Z:clawsweeper_needs_human",
+      "comment_id": "5304826827",
+      "comment_version_key": "5304826827:2026-09-20T03:53:29Z",
+      "comment_url": "https://github.com/openclaw/uirouter/pull/21#issuecomment-5304826827",
+      "comment_created_at": "2026-08-15T23:58:21Z",
+      "comment_updated_at": "2026-09-20T03:53:29Z",
+      "comment_body_sha256": "8c3d6b53344537c93b4aba7bd778c208dbd3c59d6b5c06604887f1cfbe2756aa",
+      "repo": "openclaw/uirouter",
+      "issue_number": 21,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing consumers with terminating chains longer than ten redirects will receive navigation or preload errors after upgrading; acceptance of that compatibility change remains unresol... (sha=ef429488c6398954bab38b2142185f3e23c555f7)",
+      "expected_head_sha": "ef429488c6398954bab38b2142185f3e23c555f7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-20T04:06:37.121Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/redirect-hop-limit",
+        "head_sha": "ef429488c6398954bab38b2142185f3e23c555f7",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
