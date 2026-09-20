@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153391"
-mode: "autonomous"
-run_id: "35486536625"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35486536625"
+mode: "plan"
+run_id: "35489542875"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35489542875"
 head_sha: "542a494c98f482f59f82253e514e599c565f7839"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-20T04:03:39.789Z"
-canonical: "https://github.com/openclaw/openclaw/issues/153391"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/153391"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-20T04:38:57.642Z"
+canonical: "#153391"
+canonical_issue: "#153391"
 canonical_pr: null
-actions_total: 6
+actions_total: 4
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35486536625](https://github.com/openclaw/clawsweeper/actions/runs/35486536625)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35489542875](https://github.com/openclaw/clawsweeper/actions/runs/35489542875)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/153391
+Canonical: #153391
 
 ## Summary
 
-Source inspection confirms the parameter-loss path on preflight main dd04e9114cc957c8fc08aa872d378723bf4c8ca6. A narrow fix artifact is prepared. Implementation and runtime reproduction are blocked by the read-only filesystem and absent dependencies; no code or GitHub state changed.
+Plan one narrow fix for configured payload parameters lost on isolated utility completions. Keep the related WebChat issue open. No files or GitHub state changed; runtime reproduction and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 4 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,10 @@ Source inspection confirms the parameter-loss path on preflight main dd04e9114cc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153391 | fix_needed | planned | canonical | Restore existing configured payload behavior through a shared internal owner. Establish a failing production-boundary regression before editing production code. |
-| #142310 | keep_related | planned | related | No evidence establishes the same configured-parameter root cause or complete coverage by this repair. |
-| #86669 | keep_closed | skipped | related | Historical evidence for a different request path; no action required. |
-| #86689 | keep_closed | skipped | related | Retain as historical context, not the canonical fix for this cluster. |
-| cluster:issue-openclaw-openclaw-153391 | build_fix_artifact | planned | canonical | A bounded internal extraction can restore the custom openai-completions utility path without changing public configuration or observer policy. |
-| cluster:issue-openclaw-openclaw-153391 | open_fix_pr | blocked | canonical | The executor must reproduce, implement, validate, and review the narrow fix before opening or updating the single designated PR. Publication belongs to the deterministic applicator. |
+| #153391 | fix_needed | planned | canonical | Restore existing configuration behavior through shared payload handling, preserving isolated-completion constraints. Reproduction must precede implementation. |
+| #142310 | keep_related | planned | related | Related observer symptoms have distinct unresolved reproduction and UI behavior; the proposed utility fix cannot establish coverage. |
+| #86669 | keep_closed | skipped | related | Historical context addresses a different request path. |
+| #86689 | keep_closed | skipped | related | Retain as historical evidence, not a current repair candidate. |
 
 ## Needs Human
 
