@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-153971"
-mode: "autonomous"
-run_id: "35532355043"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35532355043"
-head_sha: "a83727ad66d69815a839badba8de275bce59c7de"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-20T19:59:16.265Z"
+mode: "plan"
+run_id: "35535990353"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35535990353"
+head_sha: "a09e6cefb31adcd12bba10e1658cae5fced08c80"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-20T20:37:05.551Z"
 canonical: "https://github.com/openclaw/openclaw/issues/153971"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/153971"
+canonical_issue: "#153971"
 canonical_pr: null
-actions_total: 5
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35532355043](https://github.com/openclaw/clawsweeper/actions/runs/35532355043)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35535990353](https://github.com/openclaw/clawsweeper/actions/runs/35535990353)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/153971
 
 ## Summary
 
-The reported cache-instance dependency remains on preflight main f5ee0986606fa0b8f578bff8c2d4ba57be2e6dc3. A narrow plugin-owned fix is planned. Implementation and runtime reproduction are blocked on this read-only host, which has no installed dependencies. No files or GitHub state were changed.
+Plan a plugin-owned credential refresh fix. The clean checkout matches preflight main f62c407778746f4654c3320842faa9e9ead7dd12 and retains the reported cache-refresh wiring. Runtime reproduction, implementation, tests, npm upgrade validation, and live proof remain pending; this read-only planning environment has no installed dependencies.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,7 @@ The reported cache-instance dependency remains on preflight main f5ee0986606fa0b
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #153971 | fix_needed | planned | canonical | Source supports a narrow repair, but reproduction must succeed before production edits. Credential rotation failure does not claim a security-boundary bypass. |
-| #77551 | keep_closed | skipped | related | Historical context only; no reopening or closure action. |
-| #1 | keep_closed | skipped | independent | Unrelated closed context; not a canonical candidate. |
-| #2 | keep_closed | skipped | independent | Unrelated closed context. |
-| cluster:issue-openclaw-openclaw-153971 | build_fix_artifact | planned | canonical | Provide a concrete executor handoff without claiming a reproduced, implemented, or validated fix. |
+| #153971 | fix_needed | planned | canonical | Preserve the canonical report and pursue the reproduction-gated fix. This is credential freshness behavior without a reported leak or trust-boundary bypass. Closed historical references need no action. |
 
 ## Needs Human
 
