@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-20T14:27:07.002Z",
+  "updated_at": "2026-09-20T14:28:08.618Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152466:5739275320:2026-09-20T08:41:20Z:clawsweeper_auto_repair",
-      "comment_id": "5739275320",
-      "comment_version_key": "5739275320:2026-09-20T08:41:20Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152466#issuecomment-5739275320",
-      "comment_created_at": "2026-09-19T04:14:17Z",
-      "comment_updated_at": "2026-09-20T08:41:20Z",
-      "comment_body_sha256": "5f66e3f2779f3881b851e65f872a528460879c862ef0511053dfc01fdf80226b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152466,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=d022533b6af52fff5ff2fdb5acac7ddb390b73cc)",
-      "expected_head_sha": "d022533b6af52fff5ff2fdb5acac7ddb390b73cc",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T08:42:17.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-handoff-independent",
-        "head_sha": "d022533b6af52fff5ff2fdb5acac7ddb390b73cc",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152060:5734681637:2026-09-20T08:36:31Z:clawsweeper_needs_human",
       "comment_id": "5734681637",
@@ -32459,6 +32426,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153269:5750408817:2026-09-20T14:27:11Z:re_review",
+      "comment_id": "5750408817",
+      "comment_version_key": "5750408817:2026-09-20T14:27:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153269#issuecomment-5750408817",
+      "comment_created_at": "2026-09-20T14:27:11Z",
+      "comment_updated_at": "2026-09-20T14:27:11Z",
+      "comment_body_sha256": "bcdd5d2b27d11f42550ba5f67850523943e19337e0d016f7464aaa6876fc2822",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153269,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-20T14:28:06.484Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/trace-image-skeleton-loading-regression",
+        "head_sha": "bcf5f2a4a05712e8b5d39bd292d77aeabef045bd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
