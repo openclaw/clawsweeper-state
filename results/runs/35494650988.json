@@ -1,0 +1,73 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-153502",
+  "mode": "autonomous",
+  "run_id": "35494650988",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35494650988",
+  "head_sha": "542a494c98f482f59f82253e514e599c565f7839",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-153502.md",
+  "published_at": "2026-09-20T07:21:49.338Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/153502",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/153502",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the reported receipt-eligibility defect. A narrow fix artifact is prepared, but implementation and production-entrypoint reproduction are blocked by this host's read-only filesystem. No code or GitHub state changed; runtime validation remains outstanding.",
+  "actions": [
+    {
+      "target": "#153502",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on a writable executor. Reproduce against refreshed main before editing; stop for retriage if the specified failure does not occur."
+    },
+    {
+      "target": "#149956",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical contract evidence, not an open target or complete fix for the reported combination."
+    },
+    {
+      "target": "#153097",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve the merged receipt-reuse and plugin-settlement contracts; no closure or reopening action is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-153502",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#153502",
+      "candidate_fix": null,
+      "reason": "A bounded bug-fix path is supported by source and existing contracts. The executor must establish the failing production-entrypoint regression before implementing or publishing it."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 2,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
