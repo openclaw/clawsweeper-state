@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T16:09:05.786Z",
+  "updated_at": "2026-09-21T16:09:07.016Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154691:5758722262:2026-09-21T10:04:19Z:re_review",
-      "comment_id": "5758722262",
-      "comment_version_key": "5758722262:2026-09-21T10:04:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154691#issuecomment-5758722262",
-      "comment_created_at": "2026-09-21T10:04:19Z",
-      "comment_updated_at": "2026-09-21T10:04:19Z",
-      "comment_body_sha256": "c39d08479146094ef826107f7f2559c420331f869a837816ac5b38a650bd9f91",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154691,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T10:24:49.869Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "backport/frv-ultra-wire-scope",
-        "head_sha": "2921e54b0d39b751d239154a39c023d6f3cc8948",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154694:5758910671:2026-09-21T10:19:30Z:re_review",
       "comment_id": "5758910671",
@@ -33639,6 +33592,39 @@
       "status": "skipped",
       "processed_at": "2026-09-21T16:09:05.786Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154945:5763614360:2026-09-21T16:08:01Z:clawsweeper_needs_human",
+      "comment_id": "5763614360",
+      "comment_version_key": "5763614360:2026-09-21T16:08:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154945#issuecomment-5763614360",
+      "comment_created_at": "2026-09-21T16:08:01Z",
+      "comment_updated_at": "2026-09-21T16:08:01Z",
+      "comment_body_sha256": "819f792d4b3f613d0e5767cee09e646b77271498b535299dbfd829944609faca",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154945,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Complete the planned relay regression and pinned-native validation, and record the results and measured test cost in the PR body. (sha=e7e0981f5167b01f20183d0a308f5d20de49d72e)",
+      "expected_head_sha": "e7e0981f5167b01f20183d0a308f5d20de49d72e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T16:09:07.016Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/codex-proxy-turn-lifetime-20260921",
+        "head_sha": "e7e0981f5167b01f20183d0a308f5d20de49d72e",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
