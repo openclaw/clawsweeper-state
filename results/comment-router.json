@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-20T23:59:59.458Z",
+  "updated_at": "2026-09-21T00:00:24.786Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1622:5752112004:2026-09-20T19:30:04Z:re_review",
-      "comment_id": "5752112004",
-      "comment_version_key": "5752112004:2026-09-20T19:30:04Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1622#issuecomment-5752112004",
-      "comment_created_at": "2026-09-20T19:30:04Z",
-      "comment_updated_at": "2026-09-20T19:30:04Z",
-      "comment_body_sha256": "6ef924ce347395708428fbea928cfacaa777a8978df3fda410fd70b51b734540",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1622,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T19:30:59.527Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/review-accepted-risks",
-        "head_sha": "05b0b06a221626b88da4ecf75009476e1f4cb156",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153892:5751602006:2026-09-20T19:29:58Z:clawsweeper_needs_human",
       "comment_id": "5751602006",
@@ -33205,6 +33158,39 @@
       "status": "skipped",
       "processed_at": "2026-09-20T23:59:59.458Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:543:5753683583:2026-09-20T23:59:20Z:clawsweeper_needs_human",
+      "comment_id": "5753683583",
+      "comment_version_key": "5753683583:2026-09-20T23:59:20Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/543#issuecomment-5753683583",
+      "comment_created_at": "2026-09-20T23:59:20Z",
+      "comment_updated_at": "2026-09-20T23:59:20Z",
+      "comment_body_sha256": "46139dcbd94ed0632fc339bb7f229600626c2447f12892cefd51e2d4d6d54191",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 543,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied evidence reports compiler equivalence and declaration/package checks for the pinned-write types, but does not show an after-change... (sha=2b43d7043136ca0014c3ffc9e5342833f28f8f00)",
+      "expected_head_sha": "2b43d7043136ca0014c3ffc9e5342833f28f8f00",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T00:00:24.786Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deslop-pinned-request-types-20260920",
+        "head_sha": "2b43d7043136ca0014c3ffc9e5342833f28f8f00",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
