@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T00:36:50.060Z",
+  "updated_at": "2026-09-21T00:37:09.272Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153877:5751525091:2026-09-20T19:55:53Z:clawsweeper_needs_human",
-      "comment_id": "5751525091",
-      "comment_version_key": "5751525091:2026-09-20T19:55:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153877#issuecomment-5751525091",
-      "comment_created_at": "2026-09-20T17:47:18Z",
-      "comment_updated_at": "2026-09-20T19:55:53Z",
-      "comment_body_sha256": "aa728fdddb5c10326a7211dbe780578da0a28501a57ce20c35f9504c4c4924eb",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153877,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Integration with newer main remains unverified: the extracted case passes a session-store path to a helper that now expects a fixture root, and the pending-response default needs reco... (sha=99d82c25bff7fcaea8cac618a16d0020cd892637)",
-      "expected_head_sha": "99d82c25bff7fcaea8cac618a16d0020cd892637",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T19:58:10.046Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/flake-task-registry-agent-methods",
-        "head_sha": "99d82c25bff7fcaea8cac618a16d0020cd892637",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153920:5751790587:2026-09-20T19:49:14Z:clawsweeper_needs_human",
       "comment_id": "5751790587",
@@ -33099,6 +33066,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:151176:5753919167:2026-09-21T00:36:17Z:re_review",
+      "comment_id": "5753919167",
+      "comment_version_key": "5753919167:2026-09-21T00:36:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151176#issuecomment-5753919167",
+      "comment_created_at": "2026-09-21T00:36:17Z",
+      "comment_updated_at": "2026-09-21T00:36:17Z",
+      "comment_body_sha256": "fdd29afd65c28566758fb94da2653ec9b92b73ef9e40c1b7270ab72557289388",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151176,
+      "author": "sjf-oa",
+      "author_id": 257630655,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T00:37:07.079Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sjf/agentsapi-mvp",
+        "head_sha": "60b479b44696fed2e8827adae2b3ad070928ba51",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
