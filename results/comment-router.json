@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T07:14:43.135Z",
+  "updated_at": "2026-09-21T07:15:07.133Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154259:5754895383:2026-09-21T03:13:05Z:re_review",
-      "comment_id": "5754895383",
-      "comment_version_key": "5754895383:2026-09-21T03:13:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154259#issuecomment-5754895383",
-      "comment_created_at": "2026-09-21T03:13:05Z",
-      "comment_updated_at": "2026-09-21T03:13:05Z",
-      "comment_body_sha256": "1cb04664d3da9e83a799f81c2b710022589eca3ac81ab0d6f1ddd1e99e41d478",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154259,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T03:14:04.610Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/generic-copy-payload-lifetime-20260921",
-        "head_sha": "826b826d1e9af0a8c5deefd1ac51e39604dc9239",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2410:5754900831:2026-09-21T03:13:50Z:clawsweeper_needs_human",
       "comment_id": "5754900831",
@@ -33059,6 +33012,39 @@
         "kind": "pull_request",
         "branch": "triage/20260921-kimi",
         "head_sha": "3367b6631268521c915b25337f5d632a22e20594",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153935:5751875596:2026-09-21T07:14:09Z:clawsweeper_needs_human",
+      "comment_id": "5751875596",
+      "comment_version_key": "5751875596:2026-09-21T07:14:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153935#issuecomment-5751875596",
+      "comment_created_at": "2026-09-20T18:50:05Z",
+      "comment_updated_at": "2026-09-21T07:14:09Z",
+      "comment_body_sha256": "40ceda5a8c81f594d15d603c31cc2b734420c890fbd113b54ec211897494a2f6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153935,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Review config compatibility** - Confirm compatibility and upgrade impact for the changed config or default surface before merge. (sha=7e63670f73282ec41dc841009a3f5fb8576b91f2)",
+      "expected_head_sha": "7e63670f73282ec41dc841009a3f5fb8576b91f2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T07:15:07.133Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/b20-core-channel-types",
+        "head_sha": "7e63670f73282ec41dc841009a3f5fb8576b91f2",
         "cluster_id": null,
         "job_path": null
       }
