@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T12:58:45.638Z",
+  "updated_at": "2026-09-21T12:59:53.817Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:134220:5480593519:2026-09-21T08:17:18Z:clawsweeper_needs_human",
-      "comment_id": "5480593519",
-      "comment_version_key": "5480593519:2026-09-21T08:17:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/134220#issuecomment-5480593519",
-      "comment_created_at": "2026-08-31T15:31:35Z",
-      "comment_updated_at": "2026-09-21T08:17:18Z",
-      "comment_body_sha256": "eb4580696f9e19be2adfb0dea8f30530ea7cdaa263f4a2f8d800c4d712d0d6a1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 134220,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The pinned head was reported as conflicting with main, and no validated merge result establishes that integration is now clean. (sha=867646b532d92b6b5e37e044bf5e881975cd450f)",
-      "expected_head_sha": "867646b532d92b6b5e37e044bf5e881975cd450f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T08:36:05.427Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/line-quoted-message-context",
-        "head_sha": "3e4b301c08ee1211183266be0f5ae369aeec553a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:126392:5346286100:2026-09-21T08:17:27Z:clawsweeper_needs_human",
       "comment_id": "5346286100",
@@ -33283,6 +33250,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154702:5760863072:2026-09-21T12:58:32Z:re_review",
+      "comment_id": "5760863072",
+      "comment_version_key": "5760863072:2026-09-21T12:58:32Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154702#issuecomment-5760863072",
+      "comment_created_at": "2026-09-21T12:58:32Z",
+      "comment_updated_at": "2026-09-21T12:58:32Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154702,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T12:59:51.149Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-generation-credential-abort-signal-080",
+        "head_sha": "44a7c9e9f461b8a2de86d42f56a37ebffd3d62c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
