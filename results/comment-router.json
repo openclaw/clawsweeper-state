@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T23:17:29.294Z",
+  "updated_at": "2026-09-21T23:17:44.477Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151226:5722457278:2026-09-21T16:26:45Z:clawsweeper_needs_human",
-      "comment_id": "5722457278",
-      "comment_version_key": "5722457278:2026-09-21T16:26:45Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/151226#issuecomment-5722457278",
-      "comment_created_at": "2026-09-17T23:13:16Z",
-      "comment_updated_at": "2026-09-21T16:26:45Z",
-      "comment_body_sha256": "5ca4a4e31054e32f62a0b0d24f25ad774fe2bf61afa62d1ad56034db4e3acc12",
-      "repo": "openclaw/openclaw",
-      "issue_number": 151226,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The two optional artwork filenames establish a public plugin package contract with ongoing compatibility obligations; maintainer acceptance remains outstanding. (sha=efe8987f313c2bc20093e60de1cb02bedd57b06a)",
-      "expected_head_sha": "efe8987f313c2bc20093e60de1cb02bedd57b06a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T17:17:55.549Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/plugin-theme-icons",
-        "head_sha": "efe8987f313c2bc20093e60de1cb02bedd57b06a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151896:5732178583:2026-09-21T16:08:32Z:clawsweeper_auto_repair",
       "comment_id": "5732178583",
@@ -33745,6 +33712,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155132:5768828657:2026-09-21T23:16:45Z:re_review",
+      "comment_id": "5768828657",
+      "comment_version_key": "5768828657:2026-09-21T23:16:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155132#issuecomment-5768828657",
+      "comment_created_at": "2026-09-21T23:16:45Z",
+      "comment_updated_at": "2026-09-21T23:16:45Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155132,
+      "author": "kevinlin-openai",
+      "author_id": 177054202,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T23:17:42.044Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/ci-gateway-port-reservation",
+        "head_sha": "efba443aa588df63f5d214c30530a2081f4fce90",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
