@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T15:03:38.119Z",
+  "updated_at": "2026-09-21T15:06:07.780Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154490:5756154593:2026-09-21T09:38:47Z:clawsweeper_needs_human",
-      "comment_id": "5756154593",
-      "comment_version_key": "5756154593:2026-09-21T09:38:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154490#issuecomment-5756154593",
-      "comment_created_at": "2026-09-21T06:12:40Z",
-      "comment_updated_at": "2026-09-21T09:38:47Z",
-      "comment_body_sha256": "53e95a1ada693634686189463c697c3faced3768f231fb657eda2f40cb9c18bd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154490,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=10d751a0ec3d1fb62a6277fbcaddf906cb483b6a)",
-      "expected_head_sha": "10d751a0ec3d1fb62a6277fbcaddf906cb483b6a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T09:54:11.304Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-sidebar-capture-cleanup",
-        "head_sha": "10d751a0ec3d1fb62a6277fbcaddf906cb483b6a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154518:5756507422:2026-09-21T09:39:27Z:clawsweeper_needs_human",
       "comment_id": "5756507422",
@@ -33519,6 +33486,53 @@
         {
           "action": "comment",
           "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:143327:5762647593:2026-09-21T15:01:48Z:re_review",
+      "comment_id": "5762647593",
+      "comment_version_key": "5762647593:2026-09-21T15:01:48Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/143327#issuecomment-5762647593",
+      "comment_created_at": "2026-09-21T15:01:48Z",
+      "comment_updated_at": "2026-09-21T15:01:48Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 143327,
+      "author": "qingminglong",
+      "author_id": 34085845,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T15:06:05.215Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-embedded-approval-monotonic-budget-20260910-v4",
+        "head_sha": "2a35bbdb3ef4177690f5c2112441af4dba4295b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
           "label": null,
           "job_path": null
         }
