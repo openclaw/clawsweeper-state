@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-21T01:27:14.479Z",
+  "updated_at": "2026-09-21T01:27:17.948Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5684430083:2026-09-15T16:56:09Z:re_review",
-      "comment_id": "5684430083",
-      "comment_version_key": "5684430083:2026-09-15T16:56:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5684430083",
-      "comment_created_at": "2026-09-15T16:56:09Z",
-      "comment_updated_at": "2026-09-15T16:56:09Z",
-      "comment_body_sha256": "aef54b7de4c6d19d7a765c10f671872ba91dcb6d97c969e66dc9619dd144ed9a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `b07244d7193`. refreshed the already-verified stage-specific capture repair because github kept the pr ref pinned to its parent after the first push. both capture-enabled ordering cases pass; `pnpm check:changed` is green",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T20:51:39.821Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5684731731:2026-09-15T17:16:56Z:re_review",
       "comment_id": "5684731731",
@@ -32767,6 +32740,39 @@
       "status": "skipped",
       "processed_at": "2026-09-21T01:27:14.479Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154238:5754220121:2026-09-21T01:26:26Z:clawsweeper_needs_human",
+      "comment_id": "5754220121",
+      "comment_version_key": "5754220121:2026-09-21T01:26:26Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154238#issuecomment-5754220121",
+      "comment_created_at": "2026-09-21T01:26:26Z",
+      "comment_updated_at": "2026-09-21T01:26:26Z",
+      "comment_body_sha256": "4506ad11f3dc518643fcf2a6ffd5f9e4d5cc4fa1da9bb92130f6dc0993ffefd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154238,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=2a3853b5ad151096dd0478f0ba8baf50b41dda13)",
+      "expected_head_sha": "2a3853b5ad151096dd0478f0ba8baf50b41dda13",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T01:27:17.948Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/seed-session-read-fixtures",
+        "head_sha": "2a3853b5ad151096dd0478f0ba8baf50b41dda13",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
