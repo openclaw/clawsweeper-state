@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-154887"
-mode: "autonomous"
-run_id: "35608382270"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35608382270"
+mode: "plan"
+run_id: "35616388445"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35616388445"
 head_sha: "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-21T14:44:56.827Z"
+published_at: "2026-09-21T15:16:43.145Z"
 canonical: "https://github.com/openclaw/openclaw/issues/154887"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/154887"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,9 +25,9 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35608382270](https://github.com/openclaw/clawsweeper/actions/runs/35608382270)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35616388445](https://github.com/openclaw/clawsweeper/actions/runs/35616388445)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
@@ -35,13 +35,13 @@ Canonical: https://github.com/openclaw/openclaw/issues/154887
 
 ## Summary
 
-Verified the diagnostic defect in source at preflight main 353adfc2e61d738aa5e37176d8f53fb9ac5556d0. Prepared a narrow fix plan preserving existing claim behavior. Implementation and runtime reproduction are blocked on this read-only host with no installed dependencies; no files or GitHub state changed.
+Plan a diagnostic-only Workboard fix. Source inspection at preflight main 28acdfc4504d43403ffa83c5090d260f27d636c1 confirms the reported error path. Runtime reproduction and validation remain required before publication; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Verified the diagnostic defect in source at preflight main 353adfc2e61d738aa5e37
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #154887 | fix_needed | blocked | canonical | Local implementation requires a writable executor with dependencies and SQLite fixture support. Establish a failing public-store or registered-tool regression before editing production code. |
-| #111794 | keep_related | planned | related | Keep the existing force-promotion work separate; the job explicitly excludes force-promotion persistence. |
-| #139711 | keep_related | planned | related | Leave open under its existing review path; no override or scheduling changes belong in this fix. |
-| #104050 | keep_closed | skipped | related | Historical context only. |
-| #104065 | keep_closed | skipped | related | Historical implementation context; no repair or closure action. |
-| cluster:issue-openclaw-openclaw-154887 | build_fix_artifact | planned |  | A narrow non-security diagnostic fix is supported by source and the explicit maintainer scope; runtime reproduction remains an executor prerequisite. |
+| #154887 | fix_needed | planned | canonical | Preserve the existing rejection while explaining blocked status and explicit recovery. Establish a failing public-store or registered-tool regression before changing production code. |
+| #111794 | keep_related | planned | related | Different workflow defect with an existing implementation path; leave outside this repair. |
+| #139711 | keep_related | planned | related | Related recovery surface, but the diagnostic fix neither resolves nor depends on its product decision. |
+| #104050 | keep_closed | skipped | related | Historical regression context only. |
+| #104065 | keep_closed | skipped | related | Preserve its established behavior; no branch repair or closure is needed. |
 
 ## Needs Human
 

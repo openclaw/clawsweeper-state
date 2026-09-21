@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-154887",
+  "mode": "plan",
+  "run_id": "35616388445",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35616388445",
+  "head_sha": "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-154887.md",
+  "published_at": "2026-09-21T15:16:43.145Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/154887",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/154887",
+  "canonical_pr": null,
+  "summary": "Plan a diagnostic-only Workboard fix. Source inspection at preflight main 28acdfc4504d43403ffa83c5090d260f27d636c1 confirms the reported error path. Runtime reproduction and validation remain required before publication; no files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#154887",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#154887",
+      "candidate_fix": null,
+      "reason": "Preserve the existing rejection while explaining blocked status and explicit recovery. Establish a failing public-store or registered-tool regression before changing production code."
+    },
+    {
+      "target": "#111794",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#154887",
+      "candidate_fix": null,
+      "reason": "Different workflow defect with an existing implementation path; leave outside this repair."
+    },
+    {
+      "target": "#139711",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#154887",
+      "candidate_fix": null,
+      "reason": "Related recovery surface, but the diagnostic fix neither resolves nor depends on its product decision."
+    },
+    {
+      "target": "#104050",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#154887",
+      "candidate_fix": null,
+      "reason": "Historical regression context only."
+    },
+    {
+      "target": "#104065",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#154887",
+      "candidate_fix": null,
+      "reason": "Preserve its established behavior; no branch repair or closure is needed."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 2,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
