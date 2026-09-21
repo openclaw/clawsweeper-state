@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-21T16:22:26.875Z",
+  "updated_at": "2026-09-21T16:22:42.086Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5680690815:2026-09-15T13:08:19Z:re_review",
-      "comment_id": "5680690815",
-      "comment_version_key": "5680690815:2026-09-15T13:08:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5680690815",
-      "comment_created_at": "2026-09-15T13:08:19Z",
-      "comment_updated_at": "2026-09-15T13:08:19Z",
-      "comment_body_sha256": "0134ba64f9dfcd8658176ced62c306b266f1c1346b8492852ff57403214b5170",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `526d3a79bc0023620a3a5b993c1793f08c773973`. rebased onto current main to include the landed fixes for the unrelated failing thinking-auth fixtures and model-provider assertions. exact-head local gates are green: `pnpm check:changed`; seven focused ui unit files; the repaired thinking test; and four focused ui e2e files (22 tests), including the pr-owned custody/image cases",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T10:30:37.652Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5682763950:2026-09-15T15:13:10Z:re_review",
       "comment_id": "5682763950",
@@ -33711,6 +33684,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/homebrew-tap:63:5763813306:2026-09-21T16:21:27Z:clawsweeper_needs_human",
+      "comment_id": "5763813306",
+      "comment_version_key": "5763813306:2026-09-21T16:21:27Z",
+      "comment_url": "https://github.com/openclaw/homebrew-tap/pull/63#issuecomment-5763813306",
+      "comment_created_at": "2026-09-21T16:21:27Z",
+      "comment_updated_at": "2026-09-21T16:21:27Z",
+      "comment_body_sha256": "fc184967698bd0abd61d703b8281cfbbfecdcf28563082130f933d6ffd7c4e6d",
+      "repo": "openclaw/homebrew-tap",
+      "issue_number": 63,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b15645ea294ef9317d9ca99d4b3ba8d5122fee93)",
+      "expected_head_sha": "b15645ea294ef9317d9ca99d4b3ba8d5122fee93",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T16:22:42.086Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/macos-single-archive-transition-20260922",
+        "head_sha": "b15645ea294ef9317d9ca99d4b3ba8d5122fee93",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
