@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T07:15:57.289Z",
+  "updated_at": "2026-09-21T07:16:34.573Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154282:5754912776:2026-09-21T03:15:27Z:re_review",
-      "comment_id": "5754912776",
-      "comment_version_key": "5754912776:2026-09-21T03:15:27Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154282#issuecomment-5754912776",
-      "comment_created_at": "2026-09-21T03:15:27Z",
-      "comment_updated_at": "2026-09-21T03:15:27Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154282,
-      "author": "masatohoshino",
-      "author_id": 246810661,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T03:16:18.587Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/call-fe641c",
-        "head_sha": "8bf82df37ef52ac4414136ea7ee84e5f82d4c7a0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154193:5753868982:2026-09-21T03:15:25Z:clawsweeper_needs_human",
       "comment_id": "5753868982",
@@ -33033,6 +32986,39 @@
         "kind": "pull_request",
         "branch": "fix/tts-media-supplement",
         "head_sha": "b6769cee465f5fca6b99ce8aeec7a9e6fb27c424",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154331:5754849941:2026-09-21T07:15:35Z:clawsweeper_needs_human",
+      "comment_id": "5754849941",
+      "comment_version_key": "5754849941:2026-09-21T07:15:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154331#issuecomment-5754849941",
+      "comment_created_at": "2026-09-21T03:06:44Z",
+      "comment_updated_at": "2026-09-21T07:15:35Z",
+      "comment_body_sha256": "a3c4b0e171d51ee99500ed757a4cd0892f48e498f2c867472b0893568cf80dd1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154331,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The final installed candidate has not yet completed native Windows startup qualification; the successful earlier run predates changes to resolution-provenance comparison and installat... (sha=44457d1a866c5e4934ab5686ddf5561397a8eede)",
+      "expected_head_sha": "44457d1a866c5e4934ab5686ddf5561397a8eede",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T07:16:34.573Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "upd/windows-config-snapshot-parity",
+        "head_sha": "44457d1a866c5e4934ab5686ddf5561397a8eede",
         "cluster_id": null,
         "job_path": null
       }
