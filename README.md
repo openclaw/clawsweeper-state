@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 21, 2026, 23:17 UTC
+Last source update: Sep 21, 2026, 23:43 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Sep 21, 2026, 23:17 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 21, 2026, 23:17 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35663992263) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply in progress | Sep 21, 2026, 23:43 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35667534590) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Planning review | Sep 21, 2026, 22:29 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35662902324) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 21, 2026, 17:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35634499590) |
 
@@ -91,20 +91,20 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 21, 2026, 23:33 UTC
+Last source update: Sep 21, 2026, 23:47 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
-| Latest clusters reviewed | 1145 | 100% |
+| Latest clusters reviewed | 1146 | 100% |
 | Run attempts archived | 3413 | audit |
-| Latest successful clusters | 974 | 85.1% |
-| Latest failed clusters | 168 | 14.7% |
+| Latest successful clusters | 974 | 85.0% |
+| Latest failed clusters | 169 | 14.7% |
 | Latest cancelled clusters | 3 | 0.3% |
 | Needs-human clusters | 126 | 11.0% |
 | Fix actions failed | 34 | 4.6% |
-| Fix actions blocked | 158 | 21.3% |
+| Fix actions blocked | 159 | 21.4% |
 | Completed close actions | 0 | 0.0% |
 | Completed merge actions | 0 | 0.0% |
 | Blocked mutation attempts | 322 | 99.7% |
@@ -115,17 +115,17 @@ State: Failed clusters need inspection
 #### Recap
 
 - Snapshot only: lane states reflect the latest durable run records, not live GitHub state; verify linked items before action.
-- Latest records: 1145 clusters: 339 maintainer action, 331 automation snapshot, 426 intervention needed, 49 no pending action, 0 completed.
+- Latest records: 1146 clusters: 339 maintainer action, 330 automation snapshot, 428 intervention needed, 49 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#120362](https://github.com/openclaw/openclaw/issues/120362) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling without public mutation or further security triage. Its classification d....
-- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#154787](https://github.com/openclaw/openclaw/pull/154787) is automation_failed: A narrow UI repair remains justified. Before editing, the executor must recheck contributor work and establish a failing picker-opening r....
-- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#152564](https://github.com/openclaw/openclaw/pull/152564) is action_planned: The remaining public-validation mismatch has a bounded repair path. Historical merged fixes are context, not evidence that this report is....
+- Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-79797](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79797.md) is automation_blocked: fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1.
+- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#155190](https://github.com/openclaw/openclaw/pull/155190) is action_planned: The direct-startup defect has a narrow existing owner and a concrete socket-boundary regression path. Telephony changes require separate....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
 | --- | ---: | --- |
 | Maintainer Action | 339 | explicit decision, access, or merge authority recorded |
-| Automation Snapshot | 331 | repair, check, or planned action recorded; verify live status |
-| Intervention Needed | 426 | automation failure or blocker recorded |
+| Automation Snapshot | 330 | repair, check, or planned action recorded; verify live status |
+| Intervention Needed | 428 | automation failure or blocker recorded |
 | No Pending Action | 49 | latest record proposes no repair or apply action |
 | Completed | 0 | latest record contains an executed merge or close |
 
@@ -137,9 +137,9 @@ State: Failed clusters need inspection
 | checks_blocked | 43 |
 | repair_open | 1 |
 | automation_active | 0 |
-| action_planned | 287 |
-| automation_failed | 182 |
-| automation_blocked | 244 |
+| action_planned | 286 |
+| automation_failed | 183 |
+| automation_blocked | 245 |
 | reviewed_no_action | 49 |
 | completed | 0 |
 
@@ -167,7 +167,6 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#152564](https://github.com/openclaw/openclaw/pull/152564) | action_planned | The remaining public-validation mismatch has a bounded repair path. Historical merged fixes are context, not evidence that this report is resolved.... | Sep 21, 2026, 23:33 UTC | [issue-openclaw-openclaw-152564](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152564.md) | [35663877612](https://github.com/openclaw/clawsweeper/actions/runs/35663877612) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#155190](https://github.com/openclaw/openclaw/pull/155190) | action_planned | The direct-startup defect has a narrow existing owner and a concrete socket-boundary regression path. Telephony changes require separate failing bo... | Sep 21, 2026, 22:01 UTC | [issue-openclaw-openclaw-155190](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-155190.md) | [35660020763](https://github.com/openclaw/clawsweeper/actions/runs/35660020763) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#155061](https://github.com/openclaw/openclaw/pull/155061) | action_planned | Normalize blank optional selectors while retaining meaningful selection errors, session binding, attachment authority, and existing fallback policy. | Sep 21, 2026, 19:07 UTC | [issue-openclaw-openclaw-155061](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-155061.md) | [35642301045](https://github.com/openclaw/clawsweeper/actions/runs/35642301045) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#154887](https://github.com/openclaw/openclaw/pull/154887) | action_planned | Preserve the existing rejection while explaining blocked status and explicit recovery. Establish a failing public-store or registered-tool regressi... | Sep 21, 2026, 15:16 UTC | [issue-openclaw-openclaw-154887](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-154887.md) | [35616388445](https://github.com/openclaw/clawsweeper/actions/runs/35616388445) |
@@ -182,11 +181,14 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#154180](https://github.com/openclaw/openclaw/pull/154180) | action_planned | A bounded startup repair is justified. Require an actual failing capture-layout regression before editing, then validate source and packaged startu... | Sep 21, 2026, 01:15 UTC | [issue-openclaw-openclaw-154180](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-154180.md) | [35550044058](https://github.com/openclaw/clawsweeper/actions/runs/35550044058) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#154112](https://github.com/openclaw/openclaw/pull/154112) | action_planned | A focused plugin-owned bug fix is supported. Establish failing boundary regressions before production edits, then validate and prepare the single a... | Sep 20, 2026, 22:57 UTC | [issue-openclaw-openclaw-154112](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-154112.md) | [35543054050](https://github.com/openclaw/clawsweeper/actions/runs/35543054050) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#154036](https://github.com/openclaw/openclaw/pull/154036) | action_planned | The established behavior supports a bounded regression repair without a new product decision. Establish a failing detail-view regression before imp... | Sep 20, 2026, 21:00 UTC | [issue-openclaw-openclaw-154036](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-154036.md) | [35537166478](https://github.com/openclaw/clawsweeper/actions/runs/35537166478) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#153971](https://github.com/openclaw/openclaw/pull/153971) | action_planned | Preserve the canonical report and pursue the reproduction-gated fix. This is credential freshness behavior without a reported leak or trust-boundar... | Sep 20, 2026, 20:37 UTC | [issue-openclaw-openclaw-153971](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153971.md) | [35535990353](https://github.com/openclaw/clawsweeper/actions/runs/35535990353) |
 
 #### Intervention Needed
 
 | Repository | Item | Lane state | Recorded blocker | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | Sep 21, 2026, 23:47 UTC | [issue-openclaw-openclaw-79797](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79797.md) | [35668813847](https://github.com/openclaw/clawsweeper/actions/runs/35668813847) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#152564](https://github.com/openclaw/openclaw/pull/152564) | automation_failed | Implementation is blocked on a writable executor checkout with installed dependencies and a failing public-boundary regression using semantically v... | Sep 21, 2026, 21:58 UTC | [issue-openclaw-openclaw-152564](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152564.md) | [35653164759](https://github.com/openclaw/clawsweeper/actions/runs/35653164759) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#154787](https://github.com/openclaw/openclaw/pull/154787) | automation_failed | A narrow UI repair remains justified. Before editing, the executor must recheck contributor work and establish a failing picker-opening regression... | Sep 21, 2026, 12:04 UTC | [issue-openclaw-openclaw-154787](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-154787.md) | [35596211994](https://github.com/openclaw/clawsweeper/actions/runs/35596211994) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#154145](https://github.com/openclaw/openclaw/pull/154145) | automation_failed | The source finding remains valid and supports a focused new fix PR. Keep the issue open; this job prohibits closing and merging. | Sep 20, 2026, 23:38 UTC | [issue-openclaw-openclaw-154145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-154145.md) | [35544413683](https://github.com/openclaw/clawsweeper/actions/runs/35544413683) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#153622](https://github.com/openclaw/openclaw/pull/153622) | automation_failed | Implementation requires a writable disposable macOS environment, inspection of the exact pinned dependency, and a failing regression before editing... | Sep 20, 2026, 10:25 UTC | [issue-openclaw-openclaw-153622](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153622.md) | [35504799718](https://github.com/openclaw/clawsweeper/actions/runs/35504799718) |
@@ -200,8 +202,6 @@ State: Failed clusters need inspection
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=all [check:changed] extension-impact... | Sep 15, 2026, 22:32 UTC | [automerge-openclaw-openclaw-146737](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-146737.md) | [35026098014](https://github.com/openclaw/clawsweeper/actions/runs/35026098014) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [cluster:issue-openclaw-openclaw-85687](cluster:issue-openclaw-openclaw-85687) | automation_failed | Publication is blocked until an authorized executor checks for existing work, reproduces the defect on refreshed main, implements the narrow repair... | Sep 14, 2026, 22:16 UTC | [issue-openclaw-openclaw-85687](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-85687.md) | [34899160324](https://github.com/openclaw/clawsweeper/actions/runs/34899160324) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#118303](https://github.com/openclaw/openclaw/pull/118303) | automation_failed | Maintainer opted this PR into ClawSweeper automerge/autofix repair; run the direct Codex edit loop after live hydration instead of a separate read-... | Sep 14, 2026, 14:19 UTC | [automerge-openclaw-openclaw-118303](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/automerge-openclaw-openclaw-118303.md) | [34851068337](https://github.com/openclaw/clawsweeper/actions/runs/34851068337) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#147258](https://github.com/openclaw/openclaw/pull/147258) | automation_failed | The existing discovery/recovery contract can be repaired within Memory Core without changing indexing, visibility, configuration, persisted state,... | Sep 13, 2026, 19:12 UTC | [issue-openclaw-openclaw-147258](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-147258.md) | [34774386338](https://github.com/openclaw/clawsweeper/actions/runs/34774386338) |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) |  | automation_failed | Codex fix worker timed out after 1800000ms | Sep 13, 2026, 18:45 UTC | [issue-openclaw-openclaw-147168](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-147168.md) | [34767652813](https://github.com/openclaw/clawsweeper/actions/runs/34767652813) |
 
 #### No Pending Action
 
@@ -233,6 +233,7 @@ State: Failed clusters need inspection
 
 | Cluster | State | Reason | Report | Run |
 | --- | --- | --- | --- | --- |
+| issue-openclaw-openclaw-79797 | execute_fix blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [issue-openclaw-openclaw-79797](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79797.md) | [35668813847](https://github.com/openclaw/clawsweeper/actions/runs/35668813847) |
 | issue-openclaw-openclaw-153357 | needs human | Choose the implementation destination: adopt the existing writable contributor PR, or explicitly allow a separate PR from clawsweeper/issue-opencla... | [issue-openclaw-openclaw-153357](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153357.md) | [35486992177](https://github.com/openclaw/clawsweeper/actions/runs/35486992177) |
 | issue-openclaw-openclaw-153313 | needs human | Resolve implementation ownership: does this job intentionally override the recorded manual-only instruction and authorize a separate implementation... | [issue-openclaw-openclaw-153313](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153313.md) | [35482909453](https://github.com/openclaw/clawsweeper/actions/runs/35482909453) |
 | issue-openclaw-openclaw-153250 | needs human | Resolve whether automatic implementation should proceed despite the current clawsweeper:manual-only label and @holny's implementation offer. The su... | [issue-openclaw-openclaw-153250](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-153250.md) | [35480720221](https://github.com/openclaw/clawsweeper/actions/runs/35480720221) |
@@ -262,12 +263,12 @@ State: Failed clusters need inspection
 | issue-openclaw-openclaw-138812 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=extensions, extensionTests [check:changed] e... | [issue-openclaw-openclaw-138812](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138812.md) | [33942593176](https://github.com/openclaw/clawsweeper/actions/runs/33942593176) |
 | issue-openclaw-openclaw-138763 | needs human | {"type":"thread.started","thread_id":"01a06f3e-edf8-7511-8ecc-8f61278a4a01"} {"type":"item.completed","item":{"id":"item_0","type":"error","message... | [issue-openclaw-openclaw-138763](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138763.md) | [33937107698](https://github.com/openclaw/clawsweeper/actions/runs/33937107698) |
 | issue-openclaw-openclaw-114067 | execute_fix blocked | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [issue-openclaw-openclaw-114067](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-114067.md) | [33935565243](https://github.com/openclaw/clawsweeper/actions/runs/33935565243) |
-| issue-openclaw-openclaw-138561 | execute_fix blocked | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=extensions, extensionTests [check:changed] e... | [issue-openclaw-openclaw-138561](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-138561.md) | [33918957084](https://github.com/openclaw/clawsweeper/actions/runs/33918957084) |
 
 ### Fix Failure Queue
 
 | Cluster | Status | Target | Branch/PR | Reason | Run |
 | --- | --- | --- | --- | --- | --- |
+| [issue-openclaw-openclaw-79797](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-79797.md) | blocked |  |  | fix artifact is too broad for autonomous execution; split into narrower jobs or explicitly set CLAWSWEEPER_ALLOW_BROAD_FIX_ARTIFACTS=1 | [35668813847](https://github.com/openclaw/clawsweeper/actions/runs/35668813847) |
 | [issue-openclaw-openclaw-152499](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152499.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [35422501807](https://github.com/openclaw/clawsweeper/actions/runs/35422501807) |
 | [issue-openclaw-openclaw-152145](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152145.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=coreTests, ui [check:changed] ui/src... | [35392189093](https://github.com/openclaw/clawsweeper/actions/runs/35392189093) |
 | [issue-openclaw-openclaw-149933](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-149933.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:changed] src/... | [35078947217](https://github.com/openclaw/clawsweeper/actions/runs/35078947217) |
@@ -292,7 +293,6 @@ State: Failed clusters need inspection
 | [issue-openclaw-openclaw-140455](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-140455.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=extensions, extensionTests [check:changed] e... | [34061128507](https://github.com/openclaw/clawsweeper/actions/runs/34061128507) |
 | [issue-openclaw-openclaw-140128](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-140128.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=testRoot, apps, tooling [check:changed] apps... | [34035617980](https://github.com/openclaw/clawsweeper/actions/runs/34035617980) |
 | [issue-openclaw-openclaw-139838](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-139838.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=extensions, extensionTests [check:changed] e... | [34016690564](https://github.com/openclaw/clawsweeper/actions/runs/34016690564) |
-| [issue-openclaw-openclaw-139669](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-139669.md) | blocked |  |  | validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs [check:changed] lanes=extensions, extensionTests [check:changed] e... | [34008961849](https://github.com/openclaw/clawsweeper/actions/runs/34008961849) |
 
 ### Top Blocked Reasons
 
