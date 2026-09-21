@@ -1,16 +1,16 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155193"
-mode: "autonomous"
-run_id: "35655556067"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35655556067"
+mode: "plan"
+run_id: "35660017682"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35660017682"
 head_sha: "ffdff711463380f2636e8e9f7fb152770f26b9c3"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-21T21:44:46.846Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-21T22:40:34.341Z"
 canonical: "https://github.com/openclaw/openclaw/issues/155193"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155193"
-canonical_pr: null
+canonical_issue: "#155193"
+canonical_pr: "#155211"
 actions_total: 2
 fix_executed: 0
 fix_failed: 0
@@ -25,17 +25,17 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35655556067](https://github.com/openclaw/clawsweeper/actions/runs/35655556067)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35660017682](https://github.com/openclaw/clawsweeper/actions/runs/35660017682)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/155193
 
 ## Summary
 
-Source inspection supports a narrow diagnostic fix. Implementation and reproduction are blocked by the read-only host and missing dependencies. The checkout also differs from the preflight main SHA. A conditional executor artifact is provided; no files or GitHub state were changed.
+Keep the issue open and preserve the existing contributor implementation. The candidate PR needs CI investigation and validation; a competing implementation PR is not justified. No files or GitHub state were changed, and no runtime reproduction was performed.
 
 ## Impact
 
@@ -66,8 +66,8 @@ Source inspection supports a narrow diagnostic fix. Implementation and reproduct
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155193 | fix_needed | planned | canonical | The report remains source-supported on the available checkout. Keep the issue open and require reproduction against refreshed main before implementation. |
-| cluster:issue-openclaw-openclaw-155193 | build_fix_artifact | planned |  | A narrow new fix PR is appropriate if the required regression reproduces on refreshed main. No product or security decision requires human escalation. |
+| #155193 | keep_canonical | planned | canonical | Retain the canonical report until the existing implementation is validated. Candidate CI failures preclude fixed-by-candidate closeout. |
+| #155211 | keep_related | planned | related | Keep the useful contributor PR related and preserve LiuwqGit's credit. Downgrade the unsupported fix action because the provided artifacts lack the full diff, failing-check logs, and required current-main reproduction needed to establish a concrete repair. Inspect those inputs before planning branch changes, then validate bounded diagnostics, recovery, retirement, re-tracking, and revoked claims using the job's focused suites, mapped checks, and isolated managed-browser evidence. Keep CHANGELOG.md unchanged. No executable fix artifact or competing PR is proposed. |
 
 ## Needs Human
 
