@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T08:04:10.929Z",
+  "updated_at": "2026-09-21T08:04:18.465Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154376:5755267552:2026-09-21T04:10:09Z:re_review",
-      "comment_id": "5755267552",
-      "comment_version_key": "5755267552:2026-09-21T04:10:09Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154376#issuecomment-5755267552",
-      "comment_created_at": "2026-09-21T04:10:09Z",
-      "comment_updated_at": "2026-09-21T04:10:09Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154376,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T04:11:12.151Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/pr-rest-first-fallback",
-        "head_sha": "7d575b149e875cea08c6ac3a47a31106d52462d8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151993:5733802720:2026-09-21T04:10:23Z:clawsweeper_needs_human",
       "comment_id": "5733802720",
@@ -33132,6 +33085,39 @@
         "kind": "pull_request",
         "branch": "codex/ci-update-auxiliary-identity",
         "head_sha": "ac003e46479135318897fa692ba2007f57e1d12e",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2423:5757080131:2026-09-21T07:58:05Z:clawsweeper_needs_human",
+      "comment_id": "5757080131",
+      "comment_version_key": "5757080131:2026-09-21T07:58:05Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2423#issuecomment-5757080131",
+      "comment_created_at": "2026-09-21T07:41:37Z",
+      "comment_updated_at": "2026-09-21T07:58:05Z",
+      "comment_body_sha256": "b8b68b694ae7377102af076201d3d4d30164c751d9fde9304b527a572f4bf8b7",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2423,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the remote race suite exercises fake SSH and synthetic command runners, without showing the extracted o... (sha=237fd93aa4e2f2b81df5bfbd5d68f12b473417ed)",
+      "expected_head_sha": "237fd93aa4e2f2b81df5bfbd5d68f12b473417ed",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T08:04:18.465Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/triage-20260920-dedup-d2",
+        "head_sha": "237fd93aa4e2f2b81df5bfbd5d68f12b473417ed",
         "cluster_id": null,
         "job_path": null
       }
