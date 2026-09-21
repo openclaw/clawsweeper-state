@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-21T06:57:57.021Z",
+  "updated_at": "2026-09-21T06:58:05.460Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:119052:5545154430:2026-09-04T18:57:11Z:re_review",
-      "comment_id": "5545154430",
-      "comment_version_key": "5545154430:2026-09-04T18:57:11Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/119052#issuecomment-5545154430",
-      "comment_created_at": "2026-09-04T18:57:11Z",
-      "comment_updated_at": "2026-09-04T18:57:11Z",
-      "comment_body_sha256": "da6f8be26f8ba900feb5fcbb918eb43e392b54326ae8c26f06d017982bb992cd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 119052,
-      "author": "MoerAI",
-      "author_id": 26067127,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T02:33:53.745Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:119052:5174074268:2026-08-04T02:56:38Z:re_review",
       "comment_id": "5174074268",
@@ -33106,6 +33079,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:151896:5732178583:2026-09-21T06:57:07Z:clawsweeper_needs_human",
+      "comment_id": "5732178583",
+      "comment_version_key": "5732178583:2026-09-21T06:57:07Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/151896#issuecomment-5732178583",
+      "comment_created_at": "2026-09-18T15:24:21Z",
+      "comment_updated_at": "2026-09-21T06:57:07Z",
+      "comment_body_sha256": "86e56c62932e3a3e9817735dc861430f725124e977805d514ae2d871345d3337",
+      "repo": "openclaw/openclaw",
+      "issue_number": 151896,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The changed parser and media resolver reach handler context assertions, but the resource saver is mocked and the captured body explicitly leave... (sha=73399908772f24069c83f4450bf3fa0176ade2b8)",
+      "expected_head_sha": "73399908772f24069c83f4450bf3fa0176ade2b8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T06:58:05.460Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "cursor/feishu-post-files-9c93",
+        "head_sha": "73399908772f24069c83f4450bf3fa0176ade2b8",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
