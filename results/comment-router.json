@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T00:54:40.754Z",
+  "updated_at": "2026-09-21T00:55:29.592Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154014:5752334582:2026-09-20T20:07:19Z:re_review",
-      "comment_id": "5752334582",
-      "comment_version_key": "5752334582:2026-09-20T20:07:19Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154014#issuecomment-5752334582",
-      "comment_created_at": "2026-09-20T20:07:19Z",
-      "comment_updated_at": "2026-09-20T20:07:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154014,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T20:08:12.279Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/changed-lanes-skip-ui-e2e-stylelint-20260920",
-        "head_sha": "de5c75ae010c5254f79ba9045073baf7d4e45ea5",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154001:5752271212:2026-09-20T20:07:15Z:clawsweeper_auto_repair",
       "comment_id": "5752271212",
@@ -33070,6 +33023,39 @@
         "kind": "pull_request",
         "branch": "codex/facetime-native-eof-handoff",
         "head_sha": "5405af92aa7816b79f5459c6e4d0b8cefa234fc4",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153902:5751647058:2026-09-21T00:49:45Z:clawsweeper_needs_human",
+      "comment_id": "5751647058",
+      "comment_version_key": "5751647058:2026-09-21T00:49:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153902#issuecomment-5751647058",
+      "comment_created_at": "2026-09-20T18:09:32Z",
+      "comment_updated_at": "2026-09-21T00:49:45Z",
+      "comment_body_sha256": "c464063c89efdd9da9c7f6bbbeaa8d1e2ba5707ab422b2129d9c1686473acc39",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Codex admission owner has only mocked transport/persistence evidence, reported for the preceding re...; Review finding: [P2] Deep-clone loaded messages before passing them to policy hooks — extensions/codex/src/app-server/run-attempt-turn-start.ts:76 - [P2] Document the actual Codex... (sha=17aacddb880292cb5e6941f08dc1afd954e65f31)",
+      "expected_head_sha": "17aacddb880292cb5e6941f08dc1afd954e65f31",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T00:55:29.592Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "adam/eng-366-enforce-linear-pickup-authorization-on-native-codex",
+        "head_sha": "17aacddb880292cb5e6941f08dc1afd954e65f31",
         "cluster_id": null,
         "job_path": null
       }
