@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155061"
-mode: "autonomous"
-run_id: "35635504194"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35635504194"
-head_sha: "c4ddf95d7aa0d3607f993ec1bb73f873201b87b9"
-workflow_conclusion: "failure"
+mode: "plan"
+run_id: "35642301045"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35642301045"
+head_sha: "c19a620e63af7118bed74b6bbcd76fad7958940f"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-21T18:37:16.547Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155061"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155061"
+published_at: "2026-09-21T19:07:36.453Z"
+canonical: "#155061"
+canonical_issue: "#155061"
 canonical_pr: null
-actions_total: 4
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35635504194](https://github.com/openclaw/clawsweeper/actions/runs/35635504194)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35642301045](https://github.com/openclaw/clawsweeper/actions/runs/35642301045)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155061
+Canonical: #155061
 
 ## Summary
 
-Verified the selector defect in source at preflight main 05f3f8928e2951c396ba74a73896786585620c5f and prepared a narrow fix plan. Implementation and runtime validation are blocked on this read-only host with missing dependencies. The contributor-PR recheck requires executor credentials. No files or GitHub state changed.
+Plan a narrow selector-normalization fix. The clean checkout matches preflight main aca0c60535cb3cbc14768ebea991090acf9750f9 and still contains the reported validation path. Runtime reproduction, implementation, tests, and contributor-PR recheck remain execution prerequisites. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,8 @@ Verified the selector defect in source at preflight main 05f3f8928e2951c396ba74a
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155061 | fix_needed | planned | canonical | A narrow input-normalization defect remains source-proven. Preserve existing selection and authority contracts; establish the failing entry-point regression before production edits. |
-| #152094 | keep_closed | skipped | related | Historical context only; no reopening, closure, or repair action. |
-| cluster:issue-openclaw-openclaw-155061 | build_fix_artifact | planned | canonical | The attached artifact defines a bounded executor task without new configuration, schemas, providers, dependencies, or policy. |
-| cluster:issue-openclaw-openclaw-155061 | open_fix_pr | blocked | canonical | Publication is blocked until the executor refreshes issue/PR ownership and main, reproduces the defect, implements and reviews the narrow fix, and passes required validation. GitHub writes remain applicator-owned. |
+| #155061 | fix_needed | planned | canonical | Normalize blank optional selectors while retaining meaningful selection errors, session binding, attachment authority, and existing fallback policy. |
+| #152094 | keep_closed | skipped | related | Historical context only; no closeout or repair action. |
 
 ## Needs Human
 
