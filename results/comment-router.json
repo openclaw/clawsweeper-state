@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T03:22:24.923Z",
+  "updated_at": "2026-09-21T03:22:33.890Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153764:5750510355:2026-09-20T22:20:51Z:clawsweeper_needs_human",
-      "comment_id": "5750510355",
-      "comment_version_key": "5750510355:2026-09-20T22:20:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153764#issuecomment-5750510355",
-      "comment_created_at": "2026-09-20T14:46:23Z",
-      "comment_updated_at": "2026-09-20T22:20:51Z",
-      "comment_body_sha256": "06917d43b191e4c3561bd25536ca750f8b48dbcb8deccd41b4956b5a7f22c4b9",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153764,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native qualification of the reviewed candidate still fails when updating back to published 2026.9.5 before target post-core delegation. Successful rollback limits the observed impact,... (sha=ac6611a25d4e7d41bc564dc00a3dcd5b89702891)",
-      "expected_head_sha": "ac6611a25d4e7d41bc564dc00a3dcd5b89702891",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T22:25:54.415Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/recovery-runner-final-896",
-        "head_sha": "ac6611a25d4e7d41bc564dc00a3dcd5b89702891",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:539:5752907731:2026-09-20T22:19:00Z:clawsweeper_needs_human",
       "comment_id": "5752907731",
@@ -32525,6 +32492,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:148962:5754953266:2026-09-21T03:21:41Z:re_review",
+      "comment_id": "5754953266",
+      "comment_version_key": "5754953266:2026-09-21T03:21:41Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148962#issuecomment-5754953266",
+      "comment_created_at": "2026-09-21T03:21:41Z",
+      "comment_updated_at": "2026-09-21T03:21:41Z",
+      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148962,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T03:22:32.180Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/gc-outcome-reporting-20260914",
+        "head_sha": "449b74524d2d93c7184a3a897376c67d340c33cc",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
