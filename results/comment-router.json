@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T10:08:51.119Z",
+  "updated_at": "2026-09-21T10:08:55.176Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153902:5751647058:2026-09-21T06:27:47Z:clawsweeper_needs_human",
-      "comment_id": "5751647058",
-      "comment_version_key": "5751647058:2026-09-21T06:27:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153902#issuecomment-5751647058",
-      "comment_created_at": "2026-09-20T18:09:32Z",
-      "comment_updated_at": "2026-09-21T06:27:47Z",
-      "comment_body_sha256": "b61bc2d123423abc88aef36aac8609d5d36c00297b38bc475ec3fb69230a2912",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153902,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Codex submission owner has only mocked transport/persistence coverage. Provide native traces of all...; Review finding: [medium] Native admission enforcement remains unproven — extensions/codex/src/app-server/run-attempt-turn-start.ts:72 (sha=c511fde70f184c743800cddc0e3941476b9ed5a2)",
-      "expected_head_sha": "c511fde70f184c743800cddc0e3941476b9ed5a2",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T06:38:37.289Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "adam/eng-366-enforce-linear-pickup-authorization-on-native-codex",
-        "head_sha": "c511fde70f184c743800cddc0e3941476b9ed5a2",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:148962:5756397822:2026-09-21T06:37:41Z:re_review",
       "comment_id": "5756397822",
@@ -33336,6 +33303,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154576:5758716361:2026-09-21T10:03:49Z:re_review",
+      "comment_id": "5758716361",
+      "comment_version_key": "5758716361:2026-09-21T10:03:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154576#issuecomment-5758716361",
+      "comment_created_at": "2026-09-21T10:03:49Z",
+      "comment_updated_at": "2026-09-21T10:03:49Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154576,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T10:08:52.836Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/ci-prune-automation-json-e2e",
+        "head_sha": "735769020e7d6bf5c0cc0340db4b7a3cbd073832",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
