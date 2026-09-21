@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-154446"
-mode: "autonomous"
-run_id: "35563862786"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35563862786"
+mode: "plan"
+run_id: "35565115139"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35565115139"
 head_sha: "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-21T05:31:38.734Z"
-canonical: "https://github.com/openclaw/openclaw/issues/154446"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/154446"
+published_at: "2026-09-21T05:39:49.123Z"
+canonical: "#154446"
+canonical_issue: "#154446"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35563862786](https://github.com/openclaw/clawsweeper/actions/runs/35563862786)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35565115139](https://github.com/openclaw/clawsweeper/actions/runs/35565115139)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/154446
+Canonical: #154446
 
 ## Summary
 
-Current source supports the reported layout defect. Prepared a narrow fix artifact; implementation, browser reproduction, screenshots, and validation are blocked on this read-only host, which lacks dependencies and Chromium. No files or GitHub state changed.
+Plan a narrow presentation fix with browser regression coverage. Checkout matches preflight main ee5a62621763934696491dfe00832c4ab0b656c6. No files or GitHub state changed; browser reproduction, validation, and screenshots remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Current source supports the reported layout defect. Prepared a narrow fix artifa
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #154446 | fix_needed | planned | canonical | A narrow CSS repair and browser regression are appropriate. Browser failure on current main must be established before production edits. |
-| #149108 | keep_closed | skipped | related | Historical context only. Preserve its long-name and phone behavior. |
-| cluster:issue-openclaw-openclaw-154446 | build_fix_artifact | planned | canonical | Return the scoped artifact for a writable executor. Do not publish a fix PR until browser reproduction, repair, review, validation, and screenshot delivery are complete. |
+| #154446 | fix_needed | planned | canonical | A focused repair is warranted, conditional on reproducing the geometry failure on current main before changing production CSS. No closure or merge is authorized. |
+| #149108 | keep_closed | skipped | related | Historical context whose long-name behavior must remain intact; no replacement or closeout is needed. |
 
 ## Needs Human
 
