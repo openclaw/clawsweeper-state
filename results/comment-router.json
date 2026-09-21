@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T10:35:33.464Z",
+  "updated_at": "2026-09-21T10:35:35.019Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:142190:5756642362:2026-09-21T07:01:36Z:re_review",
-      "comment_id": "5756642362",
-      "comment_version_key": "5756642362:2026-09-21T07:01:36Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/142190#issuecomment-5756642362",
-      "comment_created_at": "2026-09-21T07:01:36Z",
-      "comment_updated_at": "2026-09-21T07:01:36Z",
-      "comment_body_sha256": "163b9db190f1d568cae4f7d964a369abb8e8ba3e4b9c559eaf802c0e73f516a8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 142190,
-      "author": "Shagrat2",
-      "author_id": 3027562,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — the last review landed on `4effeb43bf0`; the same-channel propagation fix is `b6769cee465` (policy on the payload as `ttssupplement.liveonly`, honored once in `sendmessagebatch`, with regressions against the durable sender itself)",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T07:02:38.623Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/tts-media-supplement",
-        "head_sha": "b6769cee465f5fca6b99ce8aeec7a9e6fb27c424",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154443:5755902175:2026-09-21T06:55:06Z:re_review",
       "comment_id": "5755902175",
@@ -33217,6 +33170,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-model-diagnostic-batching-20260919",
         "head_sha": "c6b876b8049b5eee5904f0e3d77fe7718def6e1b",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154722:5759086062:2026-09-21T10:34:35Z:clawsweeper_needs_human",
+      "comment_id": "5759086062",
+      "comment_version_key": "5759086062:2026-09-21T10:34:35Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154722#issuecomment-5759086062",
+      "comment_created_at": "2026-09-21T10:34:35Z",
+      "comment_updated_at": "2026-09-21T10:34:35Z",
+      "comment_body_sha256": "a101415dc0f28b559126f401f2d7dd10353da0cc3791d5f2ee04561473b66d7b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154722,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=6dc111e00c6f7fb2a2793f2e6a5a4e8e0405771d)",
+      "expected_head_sha": "6dc111e00c6f7fb2a2793f2e6a5a4e8e0405771d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T10:35:35.019Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/frv-bedrock-ordered-20260921",
+        "head_sha": "6dc111e00c6f7fb2a2793f2e6a5a4e8e0405771d",
         "cluster_id": null,
         "job_path": null
       }
