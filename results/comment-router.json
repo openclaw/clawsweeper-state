@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T22:03:25.899Z",
+  "updated_at": "2026-09-21T22:03:38.118Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154893:5763810913:2026-09-21T16:21:17Z:re_review",
-      "comment_id": "5763810913",
-      "comment_version_key": "5763810913:2026-09-21T16:21:17Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154893#issuecomment-5763810913",
-      "comment_created_at": "2026-09-21T16:21:17Z",
-      "comment_updated_at": "2026-09-21T16:21:17Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154893,
-      "author": "shakkernerd",
-      "author_id": 165377636,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T16:22:24.428Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/guest-model-policy",
-        "head_sha": "c159c9326209225214f4afc4daecbf8537dcc21f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:138596:5546344506:2026-09-21T16:21:19Z:clawsweeper_auto_repair",
       "comment_id": "5546344506",
@@ -33194,6 +33147,39 @@
         "kind": "pull_request",
         "branch": "fix/extended-stable-menu-pointer-cleanup",
         "head_sha": "68a4789cffdd146563373ed71028c23b27d1aa47",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148066:5660802475:2026-09-21T22:02:24Z:clawsweeper_needs_human",
+      "comment_id": "5660802475",
+      "comment_version_key": "5660802475:2026-09-21T22:02:24Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148066#issuecomment-5660802475",
+      "comment_created_at": "2026-09-14T07:55:46Z",
+      "comment_updated_at": "2026-09-21T22:02:24Z",
+      "comment_body_sha256": "974184dfff387489060c7e12097376df5215d0b58fc632018b7e43e51b57fe61",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148066,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installed upgrade compatibility remains unqualified: the changed shared waiter now performs native supervision inspection for additional recovery callers, but the candidate package ha... (sha=c14ee7115ccdfda7ce8a6d98708145d093562e59)",
+      "expected_head_sha": "c14ee7115ccdfda7ce8a6d98708145d093562e59",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T22:03:38.118Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-recovery-supervision-139082",
+        "head_sha": "c14ee7115ccdfda7ce8a6d98708145d093562e59",
         "cluster_id": null,
         "job_path": null
       }
