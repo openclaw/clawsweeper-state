@@ -1,59 +1,6 @@
 {
-  "updated_at": "2026-09-21T11:39:08.244Z",
+  "updated_at": "2026-09-21T11:39:10.793Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153836:5757204430:2026-09-21T07:53:53Z:stop",
-      "comment_id": "5757204430",
-      "comment_version_key": "5757204430:2026-09-21T07:53:53Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153836#issuecomment-5757204430",
-      "comment_created_at": "2026-09-21T07:53:53Z",
-      "comment_updated_at": "2026-09-21T07:53:53Z",
-      "comment_body_sha256": "2dd23916fb5f069294f36e6996b9072e01f15aad125f3bd5c993b3f2e01e456f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153836,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "stop",
-      "intent": "stop",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T07:55:55.386Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/review-keyboard-shortcut-issues",
-        "head_sha": "bc1d8e1bc8f59dd82ef6453454293cc75db7befc",
-        "cluster_id": "automerge-openclaw-openclaw-153836",
-        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153836.md"
-      },
-      "actions": [
-        {
-          "action": "remove_label",
-          "status": "executed",
-          "label": "clawsweeper:autofix",
-          "job_path": null
-        },
-        {
-          "action": "label",
-          "status": "executed",
-          "label": "clawsweeper:human-review",
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:665:5757214719:2026-09-21T07:54:53Z:clawsweeper_needs_human",
       "comment_id": "5757214719",
@@ -33278,6 +33225,39 @@
         "kind": "pull_request",
         "branch": "refactor/video-provider-object-readers-20260921",
         "head_sha": "a48061b2e9f00ca33a56cb5f7d3bb896fce132dd",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154750:5759672314:2026-09-21T11:36:11Z:clawsweeper_needs_human",
+      "comment_id": "5759672314",
+      "comment_version_key": "5759672314:2026-09-21T11:36:11Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154750#issuecomment-5759672314",
+      "comment_created_at": "2026-09-21T11:22:48Z",
+      "comment_updated_at": "2026-09-21T11:36:11Z",
+      "comment_body_sha256": "fd570714ceb56bc1670830e13bfce6907346b6e2d8fc9092a3a1cab4dae8b44c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154750,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the registered subscription tests exercise storage and broadcaster logic but replace the loader and socket. Pro...; Review finding: [P2] [P2] Move the default loader’s lifetime capture off the Gateway thread — src/gateway/control-ui-session-prs.ts:507 - [medium] Retained reader authority needs... (sha=ff570f4a8bee41c03f590cfcfde14b7a60ee2593)",
+      "expected_head_sha": "ff570f4a8bee41c03f590cfcfde14b7a60ee2593",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T11:39:10.792Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-pr-readers",
+        "head_sha": "ff570f4a8bee41c03f590cfcfde14b7a60ee2593",
         "cluster_id": null,
         "job_path": null
       }
