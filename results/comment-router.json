@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T08:08:34.925Z",
+  "updated_at": "2026-09-21T08:09:17.528Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154389:5755281430:2026-09-21T04:12:21Z:clawsweeper_needs_human",
-      "comment_id": "5755281430",
-      "comment_version_key": "5755281430:2026-09-21T04:12:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154389#issuecomment-5755281430",
-      "comment_created_at": "2026-09-21T04:12:21Z",
-      "comment_updated_at": "2026-09-21T04:12:21Z",
-      "comment_body_sha256": "ab130582a9cff4c9ff6153cd417c2eb5111972a930b60814c8abfefd15334136",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154389,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=70db42833cab512f962f5f4f4e895c1f382e7cb4)",
-      "expected_head_sha": "70db42833cab512f962f5f4f4e895c1f382e7cb4",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T04:14:19.301Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "steipete/perf-micro-redaction-hot-paths-20260919",
-        "head_sha": "70db42833cab512f962f5f4f4e895c1f382e7cb4",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153987:5752264254:2026-09-21T04:09:16Z:clawsweeper_needs_human",
       "comment_id": "5752264254",
@@ -33121,6 +33088,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154562:5757293305:2026-09-21T08:02:34Z:freeform_assist",
+      "comment_id": "5757293305",
+      "comment_version_key": "5757293305:2026-09-21T08:02:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154562#issuecomment-5757293305",
+      "comment_created_at": "2026-09-21T08:02:34Z",
+      "comment_updated_at": "2026-09-21T08:02:34Z",
+      "comment_body_sha256": "d0fb7560ee2f35e7764387a604d61287d8706f5c113e3b41ad935c17d1da2a44",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154562,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\nthe reported data-model blocker is a false positive: this pr adds only a qa lab scenario catalog yaml that points to an existing test. it does not change vector/embedding metadata, persisted schemas, migrations, or runtime storage. please re-evaluate the stored-data-model classification against the introduced diff.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T08:09:15.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/qa-memory-dreaming-provenance",
+        "head_sha": "5c935f3659adc02d238115a53e01cdba5ccb6dc5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
