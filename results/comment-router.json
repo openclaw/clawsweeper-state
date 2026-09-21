@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T13:02:03.584Z",
+  "updated_at": "2026-09-21T13:02:06.243Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:2425:5757575806:2026-09-21T08:27:28Z:re_review",
-      "comment_id": "5757575806",
-      "comment_version_key": "5757575806:2026-09-21T08:27:28Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2425#issuecomment-5757575806",
-      "comment_created_at": "2026-09-21T08:27:28Z",
-      "comment_updated_at": "2026-09-21T08:27:28Z",
-      "comment_body_sha256": "5fe1d449d9d4e28587c47e9aa57fe62c730c710a92314cc2239cd541401f8279",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2425,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T08:39:07.405Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/brev-first-class-20260921",
-        "head_sha": "42b257471ce56304d5a5550b6b66fe6e29ac4aff",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2425:5757367147:2026-09-21T08:35:10Z:clawsweeper_needs_human",
       "comment_id": "5757367147",
@@ -33314,6 +33267,39 @@
         "kind": "pull_request",
         "branch": "feat/guest-model-discovery",
         "head_sha": "90017881bdea5d1a687402bf932e503f993c70cf",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147238:5655037192:2026-09-21T12:52:04Z:clawsweeper_needs_human",
+      "comment_id": "5655037192",
+      "comment_version_key": "5655037192:2026-09-21T12:52:04Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147238#issuecomment-5655037192",
+      "comment_created_at": "2026-09-13T17:58:01Z",
+      "comment_updated_at": "2026-09-21T12:52:04Z",
+      "comment_body_sha256": "08e1818f958b32611728ab7b15a7250f202d339c1f247950d808d2a2433154e5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147238,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new Keychain-backed profile association lacks the explicitly required fresh-install and same-signer installed-old-binary proof that profiles, selection, service headers, settings,... (sha=24ad130435f5cb0558a9de93ac1fddc0c9b91ac8)",
+      "expected_head_sha": "24ad130435f5cb0558a9de93ac1fddc0c9b91ac8",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T13:02:06.243Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/ios-cloudflare-ingress-20260913",
+        "head_sha": "24ad130435f5cb0558a9de93ac1fddc0c9b91ac8",
         "cluster_id": null,
         "job_path": null
       }
