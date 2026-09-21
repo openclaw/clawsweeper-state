@@ -1,0 +1,72 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-154685",
+  "mode": "autonomous",
+  "run_id": "35585193351",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35585193351",
+  "head_sha": "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-154685.md",
+  "published_at": "2026-09-21T10:43:44.876Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/154685",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/154685",
+  "canonical_pr": null,
+  "summary": "Confirmed the unguarded forwarding callback on preflight main and reproduced Node's header-order exception with a direct runtime probe. Implementation and production-proxy regression remain blocked by the read-only checkout and absent dependencies. Narrow fix artifact prepared; no files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#154685",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#154685",
+      "candidate_fix": null,
+      "reason": "Source and runtime evidence support a narrow bug fix. Production-boundary reproduction must pass its failing-regression gate before implementation."
+    },
+    {
+      "target": "#48578",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical related work; no mutation or replacement of this already-closed PR is needed."
+    },
+    {
+      "target": "#48788",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "The broader feature proposal is not required for this response-forwarding bug."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-154685",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#154685",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Execution requires a writable, dependency-equipped checkout and a failing regression through the production TLS proxy before editing."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
