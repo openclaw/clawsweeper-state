@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-154227"
-mode: "autonomous"
-run_id: "35550000708"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35550000708"
+mode: "plan"
+run_id: "35553023606"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35553023606"
 head_sha: "a09e6cefb31adcd12bba10e1658cae5fced08c80"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-21T01:48:56.544Z"
-canonical: "https://github.com/openclaw/openclaw/issues/154227"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/154227"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-21T02:10:24.762Z"
+canonical: "#154227"
+canonical_issue: "#154227"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35550000708](https://github.com/openclaw/clawsweeper/actions/runs/35550000708)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35553023606](https://github.com/openclaw/clawsweeper/actions/runs/35553023606)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/154227
+Canonical: #154227
 
 ## Summary
 
-Source inspection supports the reported snapshot mutation on preflight main c729f693d3fe657782928fe055f9c86853a1d2be. Implementation and executable reproduction are blocked by the read-only checkout and missing dependencies. A narrow fix artifact is prepared; no code or GitHub state changed.
+Plan a narrow source-snapshot immutability repair. Source inspection supports the reported defect at local main 0ef87e5ff859ec724c1a9d86477719c3fb0de585. No implementation, failing regression, or Windows startup proof was completed in this read-only planning run.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports the reported snapshot mutation on preflight main c729
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #154227 | fix_needed | planned | canonical | A producer-side isolation repair is supported by source evidence. Runtime reproduction remains unverified, so implementation must begin with a failing real-reader regression. |
-| cluster:issue-openclaw-openclaw-154227 | build_fix_artifact | planned |  | Artifact preparation is complete. Applying and validating it requires a writable executor with repository dependencies and native Windows proof; no maintainer product decision is outstanding. |
+| #154227 | fix_needed | planned | canonical | A focused producer-side repair is supported by the report and source inspection. Execution must first demonstrate the failure on freshly verified main; no maintainer product decision is currently required. |
 
 ## Needs Human
 
