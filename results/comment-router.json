@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-21T03:55:27.053Z",
+  "updated_at": "2026-09-21T03:58:19.703Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117734:5608899903:2026-09-09T21:19:35Z:re_review",
-      "comment_id": "5608899903",
-      "comment_version_key": "5608899903:2026-09-09T21:19:35Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117734#issuecomment-5608899903",
-      "comment_created_at": "2026-09-09T21:19:35Z",
-      "comment_updated_at": "2026-09-09T21:19:35Z",
-      "comment_body_sha256": "31c798fcfa63e93154f52f4d163e8f493b82a814f1f67e40cdf1373f2536a474",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117734,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T23:22:13.995Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:135480:5499705128:2026-09-01T20:04:39Z:re_review",
       "comment_id": "5499705128",
@@ -32423,6 +32396,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154354:5754976374:2026-09-21T03:57:20Z:clawsweeper_needs_human",
+      "comment_id": "5754976374",
+      "comment_version_key": "5754976374:2026-09-21T03:57:20Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154354#issuecomment-5754976374",
+      "comment_created_at": "2026-09-21T03:25:21Z",
+      "comment_updated_at": "2026-09-21T03:57:20Z",
+      "comment_body_sha256": "6783172baedc0c691d68a2f9e919d061a5f98169956f62af52353a4c41b840f1",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154354,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Native FreeBSD qualification remains unresolved: inspect the failed job, distinguish harness failure from product failure, and establish the nonempty snapshot/repair and installed Doc... (sha=b581b136ff05f7c98c00989645fe7d6bd70dc492)",
+      "expected_head_sha": "b581b136ff05f7c98c00989645fe7d6bd70dc492",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T03:58:19.703Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/freebsd-plugin-snapshot-copy",
+        "head_sha": "b581b136ff05f7c98c00989645fe7d6bd70dc492",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
