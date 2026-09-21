@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T18:03:49.488Z",
+  "updated_at": "2026-09-21T18:04:27.175Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145959:5760557007:2026-09-21T12:34:18Z:re_review",
-      "comment_id": "5760557007",
-      "comment_version_key": "5760557007:2026-09-21T12:34:18Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145959#issuecomment-5760557007",
-      "comment_created_at": "2026-09-21T12:34:18Z",
-      "comment_updated_at": "2026-09-21T12:34:18Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145959,
-      "author": "qingminglong",
-      "author_id": 34085845,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T12:35:12.487Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-test-pid-receipt-20260912",
-        "head_sha": "dd9606a3b4de187efb7c67106fcd2254f53c0e86",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154813:5760443183:2026-09-21T12:33:42Z:clawsweeper_needs_human",
       "comment_id": "5760443183",
@@ -33514,6 +33467,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-cron-scratch-cleanup",
         "head_sha": "3e49333709714693f39d393f03f0c3ab92cedb74",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155059:5765153092:2026-09-21T18:02:51Z:clawsweeper_needs_human",
+      "comment_id": "5765153092",
+      "comment_version_key": "5765153092:2026-09-21T18:02:51Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155059#issuecomment-5765153092",
+      "comment_created_at": "2026-09-21T18:02:51Z",
+      "comment_updated_at": "2026-09-21T18:02:51Z",
+      "comment_body_sha256": "fb65e3513c9a75cc3e9f44070b66219ebdce5aafd2e575bfca699413f84c3a22",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155059,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The new whole-index preparation runs during offline Doctor maintenance; completion within the published updater’s budget and recovery on existing large stores remain unverified by the... (sha=231a05f1ef5aaf901af4ead2dd7ebfba894bd19e)",
+      "expected_head_sha": "231a05f1ef5aaf901af4ead2dd7ebfba894bd19e",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T18:04:27.175Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/legacy-fts-preparation",
+        "head_sha": "231a05f1ef5aaf901af4ead2dd7ebfba894bd19e",
         "cluster_id": null,
         "job_path": null
       }
