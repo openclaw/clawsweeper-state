@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T04:21:02.071Z",
+  "updated_at": "2026-09-21T04:21:45.689Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154158:5753560877:2026-09-20T23:34:21Z:re_review",
-      "comment_id": "5753560877",
-      "comment_version_key": "5753560877:2026-09-20T23:34:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154158#issuecomment-5753560877",
-      "comment_created_at": "2026-09-20T23:34:21Z",
-      "comment_updated_at": "2026-09-20T23:34:21Z",
-      "comment_body_sha256": "81376c4df333744108c201cdd3512e141bee6449a8e19d10ca60d5bbd816c644",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154158,
-      "author": "ayoakouh",
-      "author_id": 185819768,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — updated to 890d1e7e4. removed the unused cache-loader dependency and corrected the in-flight cancellation fixture flagged by ci. the dependency contract passes 475 tests and the lifecycle file passes 12 tests; proofs and limitations are updated in the pr body",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T23:41:18.521Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/153971-bedrock-credential-rotation",
-        "head_sha": "890d1e7e45d46b976e294f0712b279cfbfdabed6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:112811:5075679870:2026-09-20T23:38:43Z:clawsweeper_needs_human",
       "comment_id": "5075679870",
@@ -32620,6 +32573,39 @@
         "kind": "pull_request",
         "branch": "codex/fs-safe-hash-pool",
         "head_sha": "68f2adb36f36b1b76905e5bf28a6ed39164013f7",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/stats-store:341:5755341713:2026-09-21T04:20:46Z:clawsweeper_needs_human",
+      "comment_id": "5755341713",
+      "comment_version_key": "5755341713:2026-09-21T04:20:46Z",
+      "comment_url": "https://github.com/steipete/stats-store/pull/341#issuecomment-5755341713",
+      "comment_created_at": "2026-09-21T04:20:46Z",
+      "comment_updated_at": "2026-09-21T04:20:46Z",
+      "comment_body_sha256": "3c875863afa94dc2c6a492069fc33105fb5f42b203f97d742837b1fd33eef64f",
+      "repo": "steipete/stats-store",
+      "issue_number": 341,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=377778d60851c7182d348d8070c8a9cca80eb27b)",
+      "expected_head_sha": "377778d60851c7182d348d8070c8a9cca80eb27b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T04:21:45.689Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dependabot/npm_and_yarn/oxlint-tsgolint-7.0.2002",
+        "head_sha": "377778d60851c7182d348d8070c8a9cca80eb27b",
         "cluster_id": null,
         "job_path": null
       }
