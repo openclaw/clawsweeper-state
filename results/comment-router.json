@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T00:55:35.450Z",
+  "updated_at": "2026-09-21T00:55:44.299Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/crabbox:2402:5752321921:2026-09-20T20:05:12Z:re_review",
-      "comment_id": "5752321921",
-      "comment_version_key": "5752321921:2026-09-20T20:05:12Z",
-      "comment_url": "https://github.com/openclaw/crabbox/pull/2402#issuecomment-5752321921",
-      "comment_created_at": "2026-09-20T20:05:12Z",
-      "comment_updated_at": "2026-09-20T20:05:12Z",
-      "comment_body_sha256": "4c2498ce88fa3137df184abb7a62262fba3057cd56d9d45f9aa8e6499148f45b",
-      "repo": "openclaw/crabbox",
-      "issue_number": 2402,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T20:09:00.627Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/controller-warmup-clock-n728",
-        "head_sha": "16b54f38a6e24249cf91a5895e2ae3b6547808cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153935:5751875596:2026-09-20T20:07:59Z:clawsweeper_auto_repair",
       "comment_id": "5751875596",
@@ -33056,6 +33009,39 @@
         "kind": "pull_request",
         "branch": "sjf/agentsapi-tools",
         "head_sha": "a27da4770ab3816ca6995e778bc604a17590d995",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/octopool:168:5753924099:2026-09-21T00:54:48Z:clawsweeper_needs_human",
+      "comment_id": "5753924099",
+      "comment_version_key": "5753924099:2026-09-21T00:54:48Z",
+      "comment_url": "https://github.com/openclaw/octopool/pull/168#issuecomment-5753924099",
+      "comment_created_at": "2026-09-21T00:37:03Z",
+      "comment_updated_at": "2026-09-21T00:54:48Z",
+      "comment_body_sha256": "7f37fec98cf135159d3d8a07068ce379b325534f600cd605a326e9c7d6d693d8",
+      "repo": "openclaw/octopool",
+      "issue_number": 168,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the changed CLI-to-Worker pooled GraphQL path is covered by fake relay and mocked-fetch tests; the live... (sha=20dd274ffe35d75639c3162c11197e2909f0b7c5)",
+      "expected_head_sha": "20dd274ffe35d75639c3162c11197e2909f0b7c5",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T00:55:44.299Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/scripts-pr-cache-coverage",
+        "head_sha": "20dd274ffe35d75639c3162c11197e2909f0b7c5",
         "cluster_id": null,
         "job_path": null
       }
