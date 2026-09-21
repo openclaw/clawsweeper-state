@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T14:55:41.859Z",
+  "updated_at": "2026-09-21T14:56:15.276Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154417:5755494321:2026-09-21T09:44:23Z:clawsweeper_auto_repair",
-      "comment_id": "5755494321",
-      "comment_version_key": "5755494321:2026-09-21T09:44:23Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154417#issuecomment-5755494321",
-      "comment_created_at": "2026-09-21T04:40:34Z",
-      "comment_updated_at": "2026-09-21T09:44:23Z",
-      "comment_body_sha256": "30ced830aaeef4227501fc0cd58793bd05c8f26d049d7e7440965ab1b2c12842",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154417,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=b31bd647d0363d6c93cca4eb6ae02fdbea6ee35f)",
-      "expected_head_sha": "b31bd647d0363d6c93cca4eb6ae02fdbea6ee35f",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T09:54:11.304Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-delivery-notice-in-flight",
-        "head_sha": "b31bd647d0363d6c93cca4eb6ae02fdbea6ee35f",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154426:5755536939:2026-09-21T09:45:49Z:clawsweeper_needs_human",
       "comment_id": "5755536939",
@@ -33481,6 +33448,53 @@
         "cluster_id": "automerge-openclaw-openclaw-76744",
         "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-76744.md"
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154773:5762552789:2026-09-21T14:55:19Z:re_review",
+      "comment_id": "5762552789",
+      "comment_version_key": "5762552789:2026-09-21T14:55:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154773#issuecomment-5762552789",
+      "comment_created_at": "2026-09-21T14:55:19Z",
+      "comment_updated_at": "2026-09-21T14:55:19Z",
+      "comment_body_sha256": "14a698681d459e74b6152891ea602fc7ed0291b6ace263f61d7ccd3e2bee731a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154773,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T14:56:12.548Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-video-generation-credential-abort-signal-080",
+        "head_sha": "e5411896bda545ac0def8227d743aa6f9153a5f4",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
