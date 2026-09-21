@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155190"
 mode: "plan"
-run_id: "35657684759"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35657684759"
+run_id: "35660020763"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35660020763"
 head_sha: "ffdff711463380f2636e8e9f7fb152770f26b9c3"
 workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-21T21:56:51.824Z"
+published_at: "2026-09-21T22:01:23.997Z"
 canonical: "#155190"
 canonical_issue: "#155190"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35657684759](https://github.com/openclaw/clawsweeper/actions/runs/35657684759)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35660020763](https://github.com/openclaw/clawsweeper/actions/runs/35660020763)
 
 Workflow conclusion: success
 
@@ -35,7 +35,7 @@ Canonical: #155190
 
 ## Summary
 
-Plan a narrow direct-bridge startup fix. Source inspection supports the ordering defect; the silent-call symptom remains unverified. No files or GitHub state changed, and no tests ran.
+Plan a narrow direct-bridge startup repair. The checkout matches preflight main 5e12ad2acd5e2427c9d51a1d17e3d54cd6cc6e42. No files or GitHub state changed; regression execution and validation remain pending. The silent-call symptom remains unverified.
 
 ## Impact
 
@@ -66,7 +66,7 @@ Plan a narrow direct-bridge startup fix. Source inspection supports the ordering
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155190 | fix_needed | planned | canonical | A focused correction fits the authorized bug-only scope. Reproduction and validation remain required before publication; closure and merge are prohibited. |
+| #155190 | fix_needed | planned | canonical | The direct-startup defect has a narrow existing owner and a concrete socket-boundary regression path. Telephony changes require separate failing boundary evidence. |
 
 ## Needs Human
 
