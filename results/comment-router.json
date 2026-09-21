@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T12:43:46.000Z",
+  "updated_at": "2026-09-21T12:45:04.448Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154594:5757346008:2026-09-21T08:07:39Z:clawsweeper_needs_human",
-      "comment_id": "5757346008",
-      "comment_version_key": "5757346008:2026-09-21T08:07:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154594#issuecomment-5757346008",
-      "comment_created_at": "2026-09-21T08:07:39Z",
-      "comment_updated_at": "2026-09-21T08:07:39Z",
-      "comment_body_sha256": "2a18bb5203ea831c8a8ce558102fe136e47a1fca012f703483cafda2b5d306ab",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154594,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports after-fix outputs from the changed timeout resolver, but does not show the startup bot-info request completing withou... (sha=e5f23db94192d8600f75777c7e4eeb93abe66c90)",
-      "expected_head_sha": "e5f23db94192d8600f75777c7e4eeb93abe66c90",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T08:11:43.490Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/fix-feishu-startup-timeout-clamp",
-        "head_sha": "e5f23db94192d8600f75777c7e4eeb93abe66c90",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154589:5757189434:2026-09-21T08:07:48Z:clawsweeper_needs_human",
       "comment_id": "5757189434",
@@ -33375,6 +33342,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154702:5760677144:2026-09-21T12:43:59Z:re_review",
+      "comment_id": "5760677144",
+      "comment_version_key": "5760677144:2026-09-21T12:43:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154702#issuecomment-5760677144",
+      "comment_created_at": "2026-09-21T12:43:59Z",
+      "comment_updated_at": "2026-09-21T12:43:59Z",
+      "comment_body_sha256": "6115c8368ff4a477c7582590b9b83fea13caa57d6011c4db4be0046e41bb7770",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154702,
+      "author": "SunnyShu0925",
+      "author_id": 265248434,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T12:45:00.524Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/google-generation-credential-abort-signal-080",
+        "head_sha": "44a7c9e9f461b8a2de86d42f56a37ebffd3d62c7",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
