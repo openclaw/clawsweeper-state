@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T00:17:29.363Z",
+  "updated_at": "2026-09-21T00:17:39.596Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152060:5734681637:2026-09-20T19:40:04Z:clawsweeper_needs_human",
-      "comment_id": "5734681637",
-      "comment_version_key": "5734681637:2026-09-20T19:40:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152060#issuecomment-5734681637",
-      "comment_created_at": "2026-09-18T18:49:05Z",
-      "comment_updated_at": "2026-09-20T19:40:04Z",
-      "comment_body_sha256": "e9ee0c6455c6ba0d348541a5ebb07432f744556f92092b837f69d264a61867f3",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152060,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the signed Mac CloudWorkerHost must show authorized access and rejection of retained viewer/computer o...; Review finding: [medium] Mac revocation remains unverified at the final effect — apps/macos/Sources/OpenClaw/CloudWorkerHost.swift:438 (sha=486dd11847a7397bee7eaceeb7278245db5ad4aa)",
-      "expected_head_sha": "486dd11847a7397bee7eaceeb7278245db5ad4aa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-20T19:49:51.508Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-desktop-macos-windows-20260918",
-        "head_sha": "486dd11847a7397bee7eaceeb7278245db5ad4aa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153054:5743878581:2026-09-20T19:37:36Z:clawsweeper_needs_human",
       "comment_id": "5743878581",
@@ -33177,6 +33144,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154144:5753798334:2026-09-21T00:16:45Z:re_review",
+      "comment_id": "5753798334",
+      "comment_version_key": "5753798334:2026-09-21T00:16:45Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154144#issuecomment-5753798334",
+      "comment_created_at": "2026-09-21T00:16:45Z",
+      "comment_updated_at": "2026-09-21T00:16:45Z",
+      "comment_body_sha256": "19602203aec83875a86b9c36a335e8abe38db9b28605b8245c43795d4fa25985",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154144,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T00:17:37.811Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/sidebar-inline-archive",
+        "head_sha": "dbb27f467f3d6a5795e998d7161308b377bd82d1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
