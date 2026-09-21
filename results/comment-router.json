@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T08:09:17.528Z",
+  "updated_at": "2026-09-21T08:09:26.375Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153987:5752264254:2026-09-21T04:09:16Z:clawsweeper_needs_human",
-      "comment_id": "5752264254",
-      "comment_version_key": "5752264254:2026-09-21T04:09:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153987#issuecomment-5752264254",
-      "comment_created_at": "2026-09-20T19:55:32Z",
-      "comment_updated_at": "2026-09-21T04:09:16Z",
-      "comment_body_sha256": "31132ebd2f1e71bd4eecab3c96e13f9a8813ea745602746960060a6c48209911",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153987,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: real SQLite coverage supports transaction fencing and committed settlement, but the captured body leav...; Review finding: [medium] Qualify original caller authority at final effects — extensions/visitor-access/src/tools.ts:22 (sha=e33f403e2c27eb03b26ee091b963ba180b77af4c)",
-      "expected_head_sha": "e33f403e2c27eb03b26ee091b963ba180b77af4c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T04:14:31.265Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/visitor-invitations",
-        "head_sha": "e33f403e2c27eb03b26ee091b963ba180b77af4c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154392:5755290598:2026-09-21T04:13:50Z:clawsweeper_needs_human",
       "comment_id": "5755290598",
@@ -33118,6 +33085,53 @@
         "kind": "pull_request",
         "branch": "test/qa-memory-dreaming-provenance",
         "head_sha": "5c935f3659adc02d238115a53e01cdba5ccb6dc5",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_assist",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154550:5757292414:2026-09-21T08:02:28Z:freeform_assist",
+      "comment_id": "5757292414",
+      "comment_version_key": "5757292414:2026-09-21T08:02:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154550#issuecomment-5757292414",
+      "comment_created_at": "2026-09-21T08:02:28Z",
+      "comment_updated_at": "2026-09-21T08:02:28Z",
+      "comment_body_sha256": "074f4e1895a19c4b2c9d4505c5f9d5e492392a92e9025cedcb48357e82a434b3",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154550,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review\\n\\naddressed the p3 wording finding at a53cf4c085e: the scenario and pr now describe routing after restart, not pre/post restart continuity.",
+      "intent": "freeform_assist",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T08:09:23.390Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/qa-heartbeat-session-routing",
+        "head_sha": "a53cf4c085ea532722bdad3c11a3aaa9a0c97dac",
         "cluster_id": null,
         "job_path": null
       },
