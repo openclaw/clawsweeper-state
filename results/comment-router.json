@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T22:01:21.916Z",
+  "updated_at": "2026-09-21T22:02:16.033Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:385:5752367966:2026-09-21T16:07:56Z:clawsweeper_auto_repair",
-      "comment_id": "5752367966",
-      "comment_version_key": "5752367966:2026-09-21T16:07:56Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/385#issuecomment-5752367966",
-      "comment_created_at": "2026-09-20T20:13:06Z",
-      "comment_updated_at": "2026-09-21T16:07:56Z",
-      "comment_body_sha256": "3465e8c87232e17fb1feed7bcec9ad3e21d36acb9aca8a7622d2583c27cb8288",
-      "repo": "openclaw/mcporter",
-      "issue_number": 385,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=2ccc865025732b688f6ccbbffe90c5d0e78a0955)",
-      "expected_head_sha": "2ccc865025732b688f6ccbbffe90c5d0e78a0955",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T16:09:24.839Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-spaced-command-path",
-        "head_sha": "2ccc865025732b688f6ccbbffe90c5d0e78a0955",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/Peekaboo:758:5751992742:2026-09-21T16:08:37Z:clawsweeper_auto_repair",
       "comment_id": "5751992742",
@@ -33173,6 +33140,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155132:5768118906:2026-09-21T22:01:08Z:re_review",
+      "comment_id": "5768118906",
+      "comment_version_key": "5768118906:2026-09-21T22:01:08Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155132#issuecomment-5768118906",
+      "comment_created_at": "2026-09-21T22:01:08Z",
+      "comment_updated_at": "2026-09-21T22:01:08Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155132,
+      "author": "kevinslin",
+      "author_id": 409321,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T22:02:13.897Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "dev/stevenlee/ci-gateway-port-reservation",
+        "head_sha": "e3b625c341e932a11072a116a74c35fe6ca5ded3",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
