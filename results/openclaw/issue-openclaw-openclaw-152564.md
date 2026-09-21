@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152564"
-mode: "plan"
-run_id: "35427358801"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35427358801"
-head_sha: "bfc6b9dd78e3b0e25415ed1c87c1be0cefd2ba31"
-workflow_conclusion: "success"
+mode: "autonomous"
+run_id: "35653164759"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35653164759"
+head_sha: "ffdff711463380f2636e8e9f7fb152770f26b9c3"
+workflow_conclusion: "failure"
 result_status: "planned"
-published_at: "2026-09-19T06:45:47.894Z"
-canonical: "#152564"
-canonical_issue: "#152564"
+published_at: "2026-09-21T21:58:44.699Z"
+canonical: "https://github.com/openclaw/openclaw/issues/152564"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/152564"
 canonical_pr: null
-actions_total: 1
+actions_total: 6
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35427358801](https://github.com/openclaw/clawsweeper/actions/runs/35427358801)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35653164759](https://github.com/openclaw/clawsweeper/actions/runs/35653164759)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
 Worker result: planned
 
-Canonical: #152564
+Canonical: https://github.com/openclaw/openclaw/issues/152564
 
 ## Summary
 
-Plan one narrow compatibility fix. Source inspection confirms the reported validation mismatch on the preflight main SHA. Public-entry-point reproduction and validation remain pending; no files or GitHub state were changed.
+Prepared a narrow repair artifact for the source-confirmed validation mismatch. Implementation and executable reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed; no passing tests or Doctor deadlock are claimed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 1 |
+| Worker actions | 6 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,7 +66,12 @@ Plan one narrow compatibility fix. Source inspection confirms the reported valid
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152564 | fix_needed | planned | canonical | Keep this issue as the canonical repair target. Historical merged fixes establish compatibility intent but do not establish that the current public validation boundary works. Close and merge actions are prohibited. |
+| #152564 | fix_needed | blocked | canonical | Implementation is blocked on a writable executor checkout with installed dependencies and a failing public-boundary regression using semantically valid legacy inputs. Do not open a PR if that regression cannot reproduce on current main. |
+| #71757 | keep_closed | skipped | related | Historical context only; preserve Matrix semantics. |
+| #85010 | keep_closed | skipped | related | Historical context only. |
+| #113317 | keep_closed | skipped | related | Retain the existing Doctor sequencing owner. |
+| #125359 | keep_closed | skipped | related | Preserve and reuse the existing compatibility work. |
+| cluster:issue-openclaw-openclaw-152564 | build_fix_artifact | planned | canonical | A narrow compatibility repair remains justified by current source; the executor must establish failing executable proof before making changes. |
 
 ## Needs Human
 

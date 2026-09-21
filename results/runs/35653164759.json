@@ -1,0 +1,91 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-152564",
+  "mode": "autonomous",
+  "run_id": "35653164759",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35653164759",
+  "head_sha": "ffdff711463380f2636e8e9f7fb152770f26b9c3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-152564.md",
+  "published_at": "2026-09-21T21:58:44.699Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/152564",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/152564",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow repair artifact for the source-confirmed validation mismatch. Implementation and executable reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed; no passing tests or Doctor deadlock are claimed.",
+  "actions": [
+    {
+      "target": "#152564",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#152564",
+      "candidate_fix": null,
+      "reason": "Implementation is blocked on a writable executor checkout with installed dependencies and a failing public-boundary regression using semantically valid legacy inputs. Do not open a PR if that regression cannot reproduce on current main."
+    },
+    {
+      "target": "#71757",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; preserve Matrix semantics."
+    },
+    {
+      "target": "#85010",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#113317",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Retain the existing Doctor sequencing owner."
+    },
+    {
+      "target": "#125359",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Preserve and reuse the existing compatibility work."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-152564",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#152564",
+      "candidate_fix": null,
+      "reason": "A narrow compatibility repair remains justified by current source; the executor must establish failing executable proof before making changes."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 4,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 4,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
