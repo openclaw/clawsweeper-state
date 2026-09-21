@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T06:26:00.619Z",
+  "updated_at": "2026-09-21T06:26:08.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154119:5753863771:2026-09-21T01:58:37Z:re_review",
-      "comment_id": "5753863771",
-      "comment_version_key": "5753863771:2026-09-21T01:58:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154119#issuecomment-5753863771",
-      "comment_created_at": "2026-09-21T00:26:34Z",
-      "comment_updated_at": "2026-09-21T01:58:37Z",
-      "comment_body_sha256": "b82a524df51dad07044ea59750fdb92d9fa61ad8786a9aa534b7f37e28ede1b6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154119,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T02:00:39.475Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/move-audio-processing-to-worker-thread",
-        "head_sha": "f9a800750efdfe5a0aba0fa3d2405f7d2a8b710a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:150075:5754375403:2026-09-21T01:49:54Z:re_review",
       "comment_id": "5754375403",
@@ -32908,6 +32861,39 @@
         "kind": "pull_request",
         "branch": "codex/audit-capability-snapshots",
         "head_sha": "2cbf2b0a417015581089cb52812c54d227a1e00f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153764:5750510355:2026-09-21T06:25:00Z:clawsweeper_needs_human",
+      "comment_id": "5750510355",
+      "comment_version_key": "5750510355:2026-09-21T06:25:00Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153764#issuecomment-5750510355",
+      "comment_created_at": "2026-09-20T14:46:23Z",
+      "comment_updated_at": "2026-09-21T06:25:00Z",
+      "comment_body_sha256": "ea903b703f3547164102bcb1097d566a651e1811a38f031c05263b37f1e257c7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153764,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Installed-package compatibility remains unqualified for the new retention and delegation boundary: an older-target transition could still fail on incompatible worker commands or recov... (sha=d561f32f342cadef65ad175786b3f70e48dfa451)",
+      "expected_head_sha": "d561f32f342cadef65ad175786b3f70e48dfa451",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T06:26:08.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/recovery-runner-final-896",
+        "head_sha": "d561f32f342cadef65ad175786b3f70e48dfa451",
         "cluster_id": null,
         "job_path": null
       }
