@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-155061",
+  "mode": "autonomous",
+  "run_id": "35635504194",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35635504194",
+  "head_sha": "c4ddf95d7aa0d3607f993ec1bb73f873201b87b9",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-155061.md",
+  "published_at": "2026-09-21T18:37:16.547Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/155061",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/155061",
+  "canonical_pr": null,
+  "summary": "Verified the selector defect in source at preflight main 05f3f8928e2951c396ba74a73896786585620c5f and prepared a narrow fix plan. Implementation and runtime validation are blocked on this read-only host with missing dependencies. The contributor-PR recheck requires executor credentials. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#155061",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155061",
+      "candidate_fix": null,
+      "reason": "A narrow input-normalization defect remains source-proven. Preserve existing selection and authority contracts; establish the failing entry-point regression before production edits."
+    },
+    {
+      "target": "#152094",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no reopening, closure, or repair action."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155061",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155061",
+      "candidate_fix": null,
+      "reason": "The attached artifact defines a bounded executor task without new configuration, schemas, providers, dependencies, or policy."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155061",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#155061",
+      "candidate_fix": null,
+      "reason": "Publication is blocked until the executor refreshes issue/PR ownership and main, reproduces the defect, implements and reviews the narrow fix, and passes required validation. GitHub writes remain applicator-owned."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
