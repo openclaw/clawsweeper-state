@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T06:38:31.873Z",
+  "updated_at": "2026-09-21T06:38:37.289Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:378:5754501874:2026-09-21T02:10:19Z:re_review",
-      "comment_id": "5754501874",
-      "comment_version_key": "5754501874:2026-09-21T02:10:19Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/378#issuecomment-5754501874",
-      "comment_created_at": "2026-09-21T02:10:19Z",
-      "comment_updated_at": "2026-09-21T02:10:19Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/mcporter",
-      "issue_number": 378,
-      "author": "nathanvale",
-      "author_id": 6100206,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T02:11:08.017Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/emit-ts-object-argument-clients",
-        "head_sha": "de686e6be3c9b5a9f7eb6d6efc34603bbf48473e",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154119:5753127829:2026-09-21T02:10:26Z:clawsweeper_needs_human",
       "comment_id": "5753127829",
@@ -32914,6 +32867,39 @@
         "kind": "pull_request",
         "branch": "codex/fix-explicit-auto-classic-owner",
         "head_sha": "8956bd9295b9ea7993e843d603e23d6ab8fa89a0",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153902:5751647058:2026-09-21T06:27:47Z:clawsweeper_needs_human",
+      "comment_id": "5751647058",
+      "comment_version_key": "5751647058:2026-09-21T06:27:47Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153902#issuecomment-5751647058",
+      "comment_created_at": "2026-09-20T18:09:32Z",
+      "comment_updated_at": "2026-09-21T06:27:47Z",
+      "comment_body_sha256": "b61bc2d123423abc88aef36aac8609d5d36c00297b38bc475ec3fb69230a2912",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153902,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Authority-chain proof required: the changed Codex submission owner has only mocked transport/persistence coverage. Provide native traces of all...; Review finding: [medium] Native admission enforcement remains unproven — extensions/codex/src/app-server/run-attempt-turn-start.ts:72 (sha=c511fde70f184c743800cddc0e3941476b9ed5a2)",
+      "expected_head_sha": "c511fde70f184c743800cddc0e3941476b9ed5a2",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T06:38:37.289Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "adam/eng-366-enforce-linear-pickup-authorization-on-native-codex",
+        "head_sha": "c511fde70f184c743800cddc0e3941476b9ed5a2",
         "cluster_id": null,
         "job_path": null
       }
