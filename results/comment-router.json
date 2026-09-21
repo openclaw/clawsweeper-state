@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-21T22:17:14.708Z",
+  "updated_at": "2026-09-21T22:17:26.559Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147061:5692437756:2026-09-16T05:19:55Z:re_review",
-      "comment_id": "5692437756",
-      "comment_version_key": "5692437756:2026-09-16T05:19:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147061#issuecomment-5692437756",
-      "comment_created_at": "2026-09-16T05:19:55Z",
-      "comment_updated_at": "2026-09-16T05:19:55Z",
-      "comment_body_sha256": "27b98c8ea0dc9261503d813de11b061a3d4e238b14b8ffa5608d4d597d207443",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147061,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T16:31:03.762Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154792:5760232908:2026-09-21T16:27:47Z:clawsweeper_needs_human",
       "comment_id": "5760232908",
@@ -33293,6 +33266,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153745:5768268904:2026-09-21T22:15:34Z:re_review",
+      "comment_id": "5768268904",
+      "comment_version_key": "5768268904:2026-09-21T22:15:34Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153745#issuecomment-5768268904",
+      "comment_created_at": "2026-09-21T22:15:34Z",
+      "comment_updated_at": "2026-09-21T22:15:34Z",
+      "comment_body_sha256": "0828c3a29145291fb67a735fff0ad5697b070879afbcc2d3483c1b878d48228a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153745,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — head 8712c3ca25bc8bcfffb941978393138b67f5688c now includes the verified cpu-bound ci fallback repair; before/after proof and test timings are in the pr body. the prior completed review is older than 12 hours",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T22:17:15.579Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/xai-oauth-f49419",
+        "head_sha": "8712c3ca25bc8bcfffb941978393138b67f5688c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
