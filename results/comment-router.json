@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T01:19:37.377Z",
+  "updated_at": "2026-09-21T01:19:45.132Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:123906:5752467993:2026-09-20T20:31:14Z:re_review",
-      "comment_id": "5752467993",
-      "comment_version_key": "5752467993:2026-09-20T20:31:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5752467993",
-      "comment_created_at": "2026-09-20T20:31:14Z",
-      "comment_updated_at": "2026-09-20T20:31:14Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 123906,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T20:51:38.940Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/update-close-stale-tui-clients",
-        "head_sha": "a6bed4e2a0fd4426dd30a4a72adc8ed607f3ccb1",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5660558527:2026-09-14T07:31:31Z:re_review",
       "comment_id": "5660558527",
@@ -32694,6 +32647,39 @@
         "kind": "pull_request",
         "branch": "fix/mobile-message-gap",
         "head_sha": "5c086b43d715252e974a82f119fe1f59b4d0712f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153989:5752227653:2026-09-21T01:10:28Z:clawsweeper_needs_human",
+      "comment_id": "5752227653",
+      "comment_version_key": "5752227653:2026-09-21T01:10:28Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153989#issuecomment-5752227653",
+      "comment_created_at": "2026-09-20T19:49:04Z",
+      "comment_updated_at": "2026-09-21T01:10:28Z",
+      "comment_body_sha256": "a524dd143f078f868cc7a2a07cc87889704bb0ac158663404f8bfc7b8d9bd554",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153989,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: reported remote registered-agent controls support original-scope denial and source custody after reque...; Review finding: [P1] Preserve scoped SDK dispatch when retaining operator authority — src/gateway/server-plugin-in-process-dispatch.ts:296-299 - [high] Retained authority can over... (sha=c73b316e5055ffce796e2b21b19596c67fac66e7)",
+      "expected_head_sha": "c73b316e5055ffce796e2b21b19596c67fac66e7",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T01:19:45.132Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/queued-operator-authority",
+        "head_sha": "c73b316e5055ffce796e2b21b19596c67fac66e7",
         "cluster_id": null,
         "job_path": null
       }
