@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T07:55:39.172Z",
+  "updated_at": "2026-09-21T07:55:55.386Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154160:5753588096:2026-09-21T03:41:39Z:clawsweeper_needs_human",
-      "comment_id": "5753588096",
-      "comment_version_key": "5753588096:2026-09-21T03:41:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154160#issuecomment-5753588096",
-      "comment_created_at": "2026-09-20T23:39:54Z",
-      "comment_updated_at": "2026-09-21T03:41:39Z",
-      "comment_body_sha256": "739287889d5023f84255e457e5aab5d452e9a2d21d24dfafd0669f0d6843c829",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154160,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Resolve the verified merge conflict, qualify the resulting package, and refresh review for any substantive resolution changes. (sha=88cf3a6cc3c01e1955731a676f55606af1bbdf7b)",
-      "expected_head_sha": "88cf3a6cc3c01e1955731a676f55606af1bbdf7b",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T03:51:36.380Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/remove-unnecessary-check-and-merge-pr",
-        "head_sha": "b716aa1b3b16383216533ce93956fddb14772f9d",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154175:5753706306:2026-09-21T03:35:14Z:clawsweeper_auto_repair",
       "comment_id": "5753706306",
@@ -33197,6 +33164,59 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153836:5757204430:2026-09-21T07:53:53Z:stop",
+      "comment_id": "5757204430",
+      "comment_version_key": "5757204430:2026-09-21T07:53:53Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153836#issuecomment-5757204430",
+      "comment_created_at": "2026-09-21T07:53:53Z",
+      "comment_updated_at": "2026-09-21T07:53:53Z",
+      "comment_body_sha256": "2dd23916fb5f069294f36e6996b9072e01f15aad125f3bd5c993b3f2e01e456f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153836,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "stop",
+      "intent": "stop",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T07:55:55.386Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/review-keyboard-shortcut-issues",
+        "head_sha": "bc1d8e1bc8f59dd82ef6453454293cc75db7befc",
+        "cluster_id": "automerge-openclaw-openclaw-153836",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153836.md"
+      },
+      "actions": [
+        {
+          "action": "remove_label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:human-review",
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
