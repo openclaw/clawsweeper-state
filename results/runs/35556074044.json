@@ -1,0 +1,64 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-154325",
+  "mode": "autonomous",
+  "run_id": "35556074044",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35556074044",
+  "head_sha": "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-154325.md",
+  "published_at": "2026-09-21T04:08:01.662Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/154325",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/154325",
+  "canonical_pr": null,
+  "summary": "Confirmed the reported registration-before-persistence path on preflight main 6bb897a7231a3cb681186b0645a9c1cdd1dcf3b3. Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked on this read-only host; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#154325",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#154325",
+      "candidate_fix": null,
+      "reason": "The non-security bug has a narrow repair path. Only local implementation and validation are blocked by host restrictions; the executor must demonstrate the failing regression before changing production code."
+    },
+    {
+      "target": "#145710",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; neither a repairable open contributor branch nor a candidate fix for this issue."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-154325",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#154325",
+      "candidate_fix": null,
+      "reason": "A writable, isolated executor can reproduce and repair the existing loader path without changing public configuration, schemas, permissions, or product policy."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "skipped": 1,
+    "planned": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
