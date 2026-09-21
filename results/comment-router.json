@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-21T10:34:05.099Z",
+  "updated_at": "2026-09-21T10:34:34.201Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5731491980:2026-09-18T14:30:58Z:re_review",
-      "comment_id": "5731491980",
-      "comment_version_key": "5731491980:2026-09-18T14:30:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5731491980",
-      "comment_created_at": "2026-09-18T14:30:58Z",
-      "comment_updated_at": "2026-09-18T14:30:58Z",
-      "comment_body_sha256": "c5b24bdb751b2968ac8b35ad64203629d7720ad712bf6480b0d31b8849af9a64",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T07:01:45.807Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154408:5755547007:2026-09-21T07:00:28Z:clawsweeper_needs_human",
       "comment_id": "5755547007",
@@ -33214,6 +33187,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:563:5759068547:2026-09-21T10:33:10Z:clawsweeper_needs_human",
+      "comment_id": "5759068547",
+      "comment_version_key": "5759068547:2026-09-21T10:33:10Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/563#issuecomment-5759068547",
+      "comment_created_at": "2026-09-21T10:33:10Z",
+      "comment_updated_at": "2026-09-21T10:33:10Z",
+      "comment_body_sha256": "e2ba82fada5fa6c2f0ac0fd690be09359a82d52855440231bad466089f66404d",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 563,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: the Windows native syscall owner is covered only by reported static/layout checks so far; the captured... (sha=7f4e14f412ed9dde8860ee9decfbf57e332c5063)",
+      "expected_head_sha": "7f4e14f412ed9dde8860ee9decfbf57e332c5063",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T10:34:34.201Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/native-windows-sdk-bindings-20260921",
+        "head_sha": "7f4e14f412ed9dde8860ee9decfbf57e332c5063",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
