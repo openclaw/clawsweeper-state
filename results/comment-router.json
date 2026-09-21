@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T09:20:13.938Z",
+  "updated_at": "2026-09-21T09:20:20.344Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154246:5755946970:2026-09-21T05:45:10Z:re_review",
-      "comment_id": "5755946970",
-      "comment_version_key": "5755946970:2026-09-21T05:45:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154246#issuecomment-5755946970",
-      "comment_created_at": "2026-09-21T05:45:10Z",
-      "comment_updated_at": "2026-09-21T05:45:10Z",
-      "comment_body_sha256": "0f5ca6aaecba88a8c3058ddb5d003fa994a8bee4d2dff42ab0408c9afa7f4e23",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154246,
-      "author": "LLagoon3",
-      "author_id": 115124830,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T05:46:20.985Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "test/browser-policy-abort-lifecycle-regression",
-        "head_sha": "ec4ab7d37d5f55f2dd59db3f21a8f8a565599dc6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154443:5755902175:2026-09-21T05:46:31Z:re_review",
       "comment_id": "5755902175",
@@ -33529,6 +33482,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147305:5655595618:2026-09-21T09:18:59Z:clawsweeper_needs_human",
+      "comment_id": "5655595618",
+      "comment_version_key": "5655595618:2026-09-21T09:18:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147305#issuecomment-5655595618",
+      "comment_created_at": "2026-09-13T19:34:49Z",
+      "comment_updated_at": "2026-09-21T09:18:59Z",
+      "comment_body_sha256": "d09dc77ba8650b8dde916fd2c9003c1cd7f3f103fb09ed287e74a42cc1ee36bf",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147305,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the new Controller/Store-to-GatewaySession HTTPS and streaming scenarios have not been executed, so al...; Review finding: [medium] Complete forbidden and stale-grant boundary evidence — apps/android/app/src/main/java/ai/openclaw/app/gateway/GatewayIngressController.kt:1124 (sha=dd4f0eb58dd98d870d03569187e427f418a8d762)",
+      "expected_head_sha": "dd4f0eb58dd98d870d03569187e427f418a8d762",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T09:20:20.344Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/android-cloudflare-ingress-20260913",
+        "head_sha": "dd4f0eb58dd98d870d03569187e427f418a8d762",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
