@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T13:59:18.342Z",
+  "updated_at": "2026-09-21T13:59:48.575Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152060:5734681637:2026-09-21T09:17:10Z:clawsweeper_needs_human",
-      "comment_id": "5734681637",
-      "comment_version_key": "5734681637:2026-09-21T09:17:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152060#issuecomment-5734681637",
-      "comment_created_at": "2026-09-18T18:49:05Z",
-      "comment_updated_at": "2026-09-21T09:17:10Z",
-      "comment_body_sha256": "55f350a9308a626c45054521943b45b51cecfd76397a802e19948f8628cec959",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152060,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: historical signed Mac capture/input and Windows reuse remain positive evidence, but the new Mac host l...; Review finding: [medium] Native revocation remains unverified — apps/macos/Sources/OpenClaw/CloudWorkerHost.swift:426 (sha=8c7ebe77d7c884fc81be075e0a41113c958e4286)",
-      "expected_head_sha": "8c7ebe77d7c884fc81be075e0a41113c958e4286",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T09:18:17.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/cloud-desktop-macos-windows-20260918",
-        "head_sha": "8c7ebe77d7c884fc81be075e0a41113c958e4286",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154652:5757977143:2026-09-21T09:17:27Z:clawsweeper_needs_human",
       "comment_id": "5757977143",
@@ -33339,6 +33306,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153897:5761684561:2026-09-21T13:58:12Z:re_review",
+      "comment_id": "5761684561",
+      "comment_version_key": "5761684561:2026-09-21T13:58:12Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153897#issuecomment-5761684561",
+      "comment_created_at": "2026-09-21T13:58:12Z",
+      "comment_updated_at": "2026-09-21T13:58:12Z",
+      "comment_body_sha256": "36a23c4bd57ae00a9baff13ee93d86a3562963abad3f8a1de10c843981dd18ef",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153897,
+      "author": "Alix-007",
+      "author_id": 267018309,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T13:59:40.038Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "alix/fix-tool-call-markup-artifact-20260921",
+        "head_sha": "a48aa279795501c49ff326c53eee6e477b43845c",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
