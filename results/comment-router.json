@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T19:12:19.423Z",
+  "updated_at": "2026-09-21T19:12:36.218Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147611:5761300079:2026-09-21T13:30:14Z:re_review",
-      "comment_id": "5761300079",
-      "comment_version_key": "5761300079:2026-09-21T13:30:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147611#issuecomment-5761300079",
-      "comment_created_at": "2026-09-21T13:30:14Z",
-      "comment_updated_at": "2026-09-21T13:30:14Z",
-      "comment_body_sha256": "3cefc276db63b19e014cf19a4b23b8b5f0f774995e79caa6e38942f04e3ab72a",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147611,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T13:32:06.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/continue-transcript-after-malformed-tool-call",
-        "head_sha": "059dd8cbb5eb00a74252d60988128a9d83ed32d3",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154870:5761304873:2026-09-21T13:30:35Z:clawsweeper_needs_human",
       "comment_id": "5761304873",
@@ -33343,6 +33296,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/shellbench:86:5764624944:2026-09-21T19:11:33Z:clawsweeper_needs_human",
+      "comment_id": "5764624944",
+      "comment_version_key": "5764624944:2026-09-21T19:11:33Z",
+      "comment_url": "https://github.com/openclaw/shellbench/pull/86#issuecomment-5764624944",
+      "comment_created_at": "2026-09-21T17:21:55Z",
+      "comment_updated_at": "2026-09-21T19:11:33Z",
+      "comment_body_sha256": "d1ec1c0759f920d5decd4b09885552c7f7e2b1c15b1dcfb49e90c9c6261a2c5d",
+      "repo": "openclaw/shellbench",
+      "issue_number": 86,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: show the actual native runner capturing a valid completed session and rejecting actor-created symlinks...; Review finding: [P1] Reject unsafe native-state files before reading them on the host — clawbench/alignment/session_tree.py:108-111 - [P1] Remove browser Origin from the backend-c... (sha=a71d4f043e0500e6f34cc86225a4a488ee10795b)",
+      "expected_head_sha": "a71d4f043e0500e6f34cc86225a4a488ee10795b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T19:12:36.218Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/alignment-pilot",
+        "head_sha": "a71d4f043e0500e6f34cc86225a4a488ee10795b",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
