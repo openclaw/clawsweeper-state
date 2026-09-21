@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T01:51:53.819Z",
+  "updated_at": "2026-09-21T01:52:49.471Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawsweeper:1627:5752664354:2026-09-20T21:06:56Z:re_review",
-      "comment_id": "5752664354",
-      "comment_version_key": "5752664354:2026-09-20T21:06:56Z",
-      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1627#issuecomment-5752664354",
-      "comment_created_at": "2026-09-20T21:06:56Z",
-      "comment_updated_at": "2026-09-20T21:06:56Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/clawsweeper",
-      "issue_number": 1627,
-      "author": "saariuslystoned",
-      "author_id": 159389674,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T21:07:52.391Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/upstream-label-noop-20260920",
-        "head_sha": "6a60c8a4e166b4e91ecce855e266026dea8f9932",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154073:5752665652:2026-09-20T21:07:10Z:clawsweeper_needs_human",
       "comment_id": "5752665652",
@@ -32744,6 +32697,39 @@
         "kind": "pull_request",
         "branch": "codex/test-tooling-fixture-inventory",
         "head_sha": "65b55703e23f7ca95e2a2e39b5df58bc54613773",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153829:5751045115:2026-09-21T01:51:40Z:clawsweeper_needs_human",
+      "comment_id": "5751045115",
+      "comment_version_key": "5751045115:2026-09-21T01:51:40Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153829#issuecomment-5751045115",
+      "comment_created_at": "2026-09-20T16:22:27Z",
+      "comment_updated_at": "2026-09-21T01:51:40Z",
+      "comment_body_sha256": "77f43ce9533c926511d9a9e6dd1dad2f4a9a20abc12bc192a6c01f5d906375c4",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153829,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Provide live Telegram evidence for overlapping command delivery and cross-topic stop while unrelated pending input remains intact. (sha=e0f259ee35db1dfde89b2a48c03f7306994fcd30)",
+      "expected_head_sha": "e0f259ee35db1dfde89b2a48c03f7306994fcd30",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T01:52:49.471Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/telegram-immediate-control-commands",
+        "head_sha": "e0f259ee35db1dfde89b2a48c03f7306994fcd30",
         "cluster_id": null,
         "job_path": null
       }
