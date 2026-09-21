@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T13:00:10.695Z",
+  "updated_at": "2026-09-21T13:00:23.585Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5757471827:2026-09-21T08:17:52Z:re_review",
-      "comment_id": "5757471827",
-      "comment_version_key": "5757471827:2026-09-21T08:17:52Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5757471827",
-      "comment_created_at": "2026-09-21T08:17:52Z",
-      "comment_updated_at": "2026-09-21T08:17:52Z",
-      "comment_body_sha256": "a07acd98707af09cedcbea8b38ba2cf3a83463c05ee2884e902ea1c60e8a389d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact synchronized head `13e97ab7fe6ee1e75afff2f71c22541a68bfea30`. same validated tree as the prior request; this fresh sha only retriggered github pr synchronization after its merge ref remained pinned. please evaluate the reconstructed control ui-only projection fix and disregard all pre-reconstruction custody/docs findings",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T08:36:14.300Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "13e97ab7fe6ee1e75afff2f71c22541a68bfea30",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147949:5659613971:2026-09-21T08:28:52Z:clawsweeper_auto_repair",
       "comment_id": "5659613971",
@@ -33294,6 +33247,39 @@
         "kind": "pull_request",
         "branch": "codex/fs-safe-stream-downloads-verified",
         "head_sha": "d080bba91cc7b85b98f5515d991bc882cfde77fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154794:5760380871:2026-09-21T12:58:19Z:clawsweeper_needs_human",
+      "comment_id": "5760380871",
+      "comment_version_key": "5760380871:2026-09-21T12:58:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154794#issuecomment-5760380871",
+      "comment_created_at": "2026-09-21T12:20:06Z",
+      "comment_updated_at": "2026-09-21T12:58:19Z",
+      "comment_body_sha256": "accde61c634a74b96749fd9514cd787d0e8551cc695cdf6105da02f859760310",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154794,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=32ca9ebe53e22099e16ad8ed3a3908c3521c1a68)",
+      "expected_head_sha": "32ca9ebe53e22099e16ad8ed3a3908c3521c1a68",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T13:00:23.585Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/cloud-reconnect-admission",
+        "head_sha": "32ca9ebe53e22099e16ad8ed3a3908c3521c1a68",
         "cluster_id": null,
         "job_path": null
       }
