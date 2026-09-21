@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T02:54:05.874Z",
+  "updated_at": "2026-09-21T02:54:15.130Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/mcporter:385:5753002879:2026-09-20T22:04:35Z:re_review",
-      "comment_id": "5753002879",
-      "comment_version_key": "5753002879:2026-09-20T22:04:35Z",
-      "comment_url": "https://github.com/openclaw/mcporter/pull/385#issuecomment-5753002879",
-      "comment_created_at": "2026-09-20T22:04:35Z",
-      "comment_updated_at": "2026-09-20T22:04:35Z",
-      "comment_body_sha256": "0d9ba83527386af88fb461895fd3a025438a00f7a7e6eb470de241e0a131a557",
-      "repo": "openclaw/mcporter",
-      "issue_number": 385,
-      "author": "SebTardif",
-      "author_id": 1413412,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T22:05:26.874Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/windows-spaced-command-path",
-        "head_sha": "cd89b116e47a359b7afec4fb0a0a0f063183e64f",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/mcporter:388:5753002959:2026-09-20T22:04:36Z:re_review",
       "comment_id": "5753002959",
@@ -32494,6 +32447,39 @@
         "kind": "pull_request",
         "branch": "fix/updater-admission-pipe-20260920",
         "head_sha": "cb3cabef7a4d8d791138d9debbdaea49ee60f264",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154248:5754278262:2026-09-21T02:45:50Z:clawsweeper_needs_human",
+      "comment_id": "5754278262",
+      "comment_version_key": "5754278262:2026-09-21T02:45:50Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154248#issuecomment-5754278262",
+      "comment_created_at": "2026-09-21T01:34:24Z",
+      "comment_updated_at": "2026-09-21T02:45:50Z",
+      "comment_body_sha256": "613f1126e4eddae38a9f436029aa9457ef6c7a5f8abd4d0f220e734e45225ece",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154248,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Update the PR evidence with focused-test wall and CI timing, and reconcile the 14 local typecheck diagnostics with passing exact-head production CI by identifying their causes and any... (sha=938c5873af3e00a2b80dfa35823c963cf0237c9f)",
+      "expected_head_sha": "938c5873af3e00a2b80dfa35823c963cf0237c9f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T02:54:15.130Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/exec-cwd-unsupported",
+        "head_sha": "938c5873af3e00a2b80dfa35823c963cf0237c9f",
         "cluster_id": null,
         "job_path": null
       }
