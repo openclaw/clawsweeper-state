@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T05:15:21.879Z",
+  "updated_at": "2026-09-21T05:16:11.497Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:137609:5754004358:2026-09-21T00:50:44Z:re_review",
-      "comment_id": "5754004358",
-      "comment_version_key": "5754004358:2026-09-21T00:50:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/137609#issuecomment-5754004358",
-      "comment_created_at": "2026-09-21T00:50:44Z",
-      "comment_updated_at": "2026-09-21T00:50:44Z",
-      "comment_body_sha256": "c30848e69db5492afe9b920b7f3025e695ffdedc379be7c96569adfe67f1a406",
-      "repo": "openclaw/openclaw",
-      "issue_number": 137609,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T00:51:44.488Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/test-provider-usage-fetch-call-guard",
-        "head_sha": "67813212e39b457c4489b3905909125c3327b980",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154215:5754007149:2026-09-21T00:51:15Z:re_review",
       "comment_id": "5754007149",
@@ -32582,6 +32535,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/c2-changed-set",
         "head_sha": "d17b2721fa81fc666e4de71af093432579ff2ba6",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154450:5755729071:2026-09-21T05:15:13Z:clawsweeper_needs_human",
+      "comment_id": "5755729071",
+      "comment_version_key": "5755729071:2026-09-21T05:15:13Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154450#issuecomment-5755729071",
+      "comment_created_at": "2026-09-21T05:15:13Z",
+      "comment_updated_at": "2026-09-21T05:15:13Z",
+      "comment_body_sha256": "9f6a589a3305aaec74649390272202a03dab6b86a1e6793ab79d21cdaef24167",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154450,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Required by policy: the recorded not-applicable assessment does not satisfy the current PR proof policy. Put relevant after-change evidence in the main PR body, then request a fresh r... (sha=549b58f5b83852d17e459e77e6619167c63ac20f)",
+      "expected_head_sha": "549b58f5b83852d17e459e77e6619167c63ac20f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T05:16:11.497Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/web-push-profile-read-reuse",
+        "head_sha": "549b58f5b83852d17e459e77e6619167c63ac20f",
         "cluster_id": null,
         "job_path": null
       }
