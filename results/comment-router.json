@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T07:50:44.227Z",
+  "updated_at": "2026-09-21T07:51:58.388Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154343:5754924518:2026-09-21T03:42:01Z:clawsweeper_needs_human",
-      "comment_id": "5754924518",
-      "comment_version_key": "5754924518:2026-09-21T03:42:01Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154343#issuecomment-5754924518",
-      "comment_created_at": "2026-09-21T03:17:06Z",
-      "comment_updated_at": "2026-09-21T03:42:01Z",
-      "comment_body_sha256": "3ffd0c4d9bf67b0d41623807ed6d87b63e4e484d3df3f61fa7e0498fd9e7c324",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154343,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=0a5acd6552ffede03a119692cdb7e7425497a173)",
-      "expected_head_sha": "0a5acd6552ffede03a119692cdb7e7425497a173",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T03:42:57.797Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "automation/control-ui-locale-refresh",
-        "head_sha": "0a5acd6552ffede03a119692cdb7e7425497a173",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:154355:5755087486:2026-09-21T03:42:58Z:status",
       "comment_id": "5755087486",
@@ -33179,6 +33146,65 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:153836:5757135433:2026-09-21T07:47:09Z:autofix",
+      "comment_id": "5757135433",
+      "comment_version_key": "5757135433:2026-09-21T07:47:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/153836#issuecomment-5757135433",
+      "comment_created_at": "2026-09-21T07:47:09Z",
+      "comment_updated_at": "2026-09-21T07:47:09Z",
+      "comment_body_sha256": "f2cd0059ef7bbcad6ae32e954571173dff52e7aa8ac2c70c3fb656555fc74184",
+      "repo": "openclaw/openclaw",
+      "issue_number": 153836,
+      "author": "roboclaw-bot",
+      "author_id": 309084314,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "autofix",
+      "intent": "autofix",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": "autofix enabled; current checks are failing: checks-node-compact-small-41:FAILURE, openclaw/ci-gate:FAILURE, openclaw/ci-gate:FAILURE",
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "waiting",
+      "processed_at": "2026-09-21T07:51:53.111Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "openclaw/review-keyboard-shortcut-issues",
+        "head_sha": "bc1d8e1bc8f59dd82ef6453454293cc75db7befc",
+        "cluster_id": "automerge-openclaw-openclaw-153836",
+        "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153836.md"
+      },
+      "actions": [
+        {
+          "action": "ensure_automerge_job",
+          "status": "executed",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153836.md"
+        },
+        {
+          "action": "label",
+          "status": "executed",
+          "label": "clawsweeper:autofix",
+          "job_path": null
+        },
+        {
+          "action": "dispatch_repair",
+          "status": "waiting",
+          "label": null,
+          "job_path": "jobs/openclaw/inbox/automerge-openclaw-openclaw-153836.md"
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
