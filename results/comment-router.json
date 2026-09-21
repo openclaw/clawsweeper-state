@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T01:49:39.653Z",
+  "updated_at": "2026-09-21T01:49:41.162Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154078:5752638477:2026-09-20T21:02:38Z:re_review",
-      "comment_id": "5752638477",
-      "comment_version_key": "5752638477:2026-09-20T21:02:38Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154078#issuecomment-5752638477",
-      "comment_created_at": "2026-09-20T21:02:38Z",
-      "comment_updated_at": "2026-09-20T21:02:38Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154078,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T21:03:36.324Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "release/2026.8.33-baseline-routing",
-        "head_sha": "b268d30b72586d57622f44e01f184ceff911ada8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154069:5752643760:2026-09-20T21:03:32Z:clawsweeper_needs_human",
       "comment_id": "5752643760",
@@ -32758,6 +32711,39 @@
         "kind": "pull_request",
         "branch": "feat/webui-external-link-arrow",
         "head_sha": "daedb2336469069ab045d2f38323ee48f2955a33",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154224:5754069611:2026-09-21T01:40:22Z:clawsweeper_auto_repair",
+      "comment_id": "5754069611",
+      "comment_version_key": "5754069611:2026-09-21T01:40:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154224#issuecomment-5754069611",
+      "comment_created_at": "2026-09-21T01:02:30Z",
+      "comment_updated_at": "2026-09-21T01:40:22Z",
+      "comment_body_sha256": "2d63f3e8478dce8a6638a99b60e010036b716a108ab3753680ce17d1b125d5ee",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154224,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper auto repair",
+      "intent": "clawsweeper_auto_repair",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=fb52ee27e4521f2a01e2daf4d8084184f6663114)",
+      "expected_head_sha": "fb52ee27e4521f2a01e2daf4d8084184f6663114",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T01:49:41.162Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/backup-skip-worktree-dependencies",
+        "head_sha": "fb52ee27e4521f2a01e2daf4d8084184f6663114",
         "cluster_id": null,
         "job_path": null
       }
