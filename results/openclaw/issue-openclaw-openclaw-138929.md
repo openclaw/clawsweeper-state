@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-138929"
-mode: "autonomous"
-run_id: "35565959046"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35565959046"
+mode: "plan"
+run_id: "35570897318"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35570897318"
 head_sha: "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-21T06:41:52.413Z"
-canonical: "https://github.com/openclaw/openclaw/issues/138929"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/138929"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-21T07:03:45.301Z"
+canonical: "#138929"
+canonical_issue: "#138929"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35565959046](https://github.com/openclaw/clawsweeper/actions/runs/35565959046)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35570897318](https://github.com/openclaw/clawsweeper/actions/runs/35570897318)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/138929
+Canonical: #138929
 
 ## Summary
 
-Source inspection supports a narrow recovery fix on preflight main 784a74bed115dd28bd92dfacebf053c8b45577af. Implementation and runtime reproduction are blocked by the read-only host and missing dependencies. The focused test command failed during Corepack setup before executing tests. No files or GitHub state changed.
+Plan a narrow bounded-recovery fix. No files or GitHub state changed; reproduction and validation remain pending. The checkout SHA differs from the preflight main SHA, so execution must establish the current base before reproducing.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source inspection supports a narrow recovery fix on preflight main 784a74bed115d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #138929 | fix_needed | planned | canonical | The non-mutating classification is clear. A writable executor must establish the failing production-boundary regression before implementation; no maintainer product decision is needed. |
-| cluster:issue-openclaw-openclaw-138929 | build_fix_artifact | planned |  | Prepare an executor handoff without claiming a patch or runtime reproduction. No merge or closure is authorized. |
+| #138929 | fix_needed | planned | canonical | The report supports a focused repair within the existing recovery owner. Executable reproduction must first confirm that current stream normalization and outer fallback do not already recover the response. |
 
 ## Needs Human
 
