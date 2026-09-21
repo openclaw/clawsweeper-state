@@ -2,39 +2,6 @@
   "updated_at": "2026-09-21T16:37:18.789Z",
   "commands": [
     {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154300:5754688866:2026-09-21T10:26:05Z:clawsweeper_needs_human",
-      "comment_id": "5754688866",
-      "comment_version_key": "5754688866:2026-09-21T10:26:05Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154300#issuecomment-5754688866",
-      "comment_created_at": "2026-09-21T02:39:54Z",
-      "comment_updated_at": "2026-09-21T10:26:05Z",
-      "comment_body_sha256": "414b82028247075c41112e3d6f2156907aac273a46578e2e5ee434b034a43fca",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154300,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The repaired 45-second legacy drain and bounded cleanup have not been qualified with the unchanged published CLI against a packaged candidate. Existing callers could still report rest... (sha=6823d531987dc19277e18e1f3b7ce28d06bdfe4c)",
-      "expected_head_sha": "6823d531987dc19277e18e1f3b7ce28d06bdfe4c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T10:38:53.764Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "upd/force-restart-drain",
-        "head_sha": "6823d531987dc19277e18e1f3b7ce28d06bdfe4c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154366:5755183668:2026-09-21T10:26:26Z:clawsweeper_needs_human",
       "comment_id": "5755183668",
       "comment_version_key": "5755183668:2026-09-21T10:26:26Z",
@@ -33746,6 +33713,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:154486:5763977583:2026-09-21T16:33:30Z:re_review",
+      "comment_id": "5763977583",
+      "comment_version_key": "5763977583:2026-09-21T16:33:30Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154486#issuecomment-5763977583",
+      "comment_created_at": "2026-09-21T16:33:30Z",
+      "comment_updated_at": "2026-09-21T16:33:30Z",
+      "comment_body_sha256": "7907c4b626775706e027ee07a8feab625bffce879f0c3ec103100d402224f5e9",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154486,
+      "author": "steipete",
+      "author_id": 58493,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-09-21T16:37:16.710Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/question-delivery-state-20260921",
+        "head_sha": "ed20fc68740789679ac78213ff920ba75eecb812",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
+          "label": null,
+          "job_path": null
+        }
+      ]
     },
     {
       "idempotency_key": "comment-router:openclaw/clawsweeper:1635:5764013040:2026-09-21T16:36:10Z:re_review",
