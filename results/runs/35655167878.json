@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-155190",
+  "mode": "autonomous",
+  "run_id": "35655167878",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35655167878",
+  "head_sha": "ffdff711463380f2636e8e9f7fb152770f26b9c3",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-155190.md",
+  "published_at": "2026-09-21T21:25:54.480Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/155190",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/155190",
+  "canonical_pr": null,
+  "summary": "Source confirms the direct startup ordering defect on preflight main. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only checkout and absent dependencies. No files or GitHub state changed. The silent-call symptom remains unverified.",
+  "actions": [
+    {
+      "target": "#155190",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155190",
+      "candidate_fix": null,
+      "reason": "A narrow existing-owner repair is supported by source. Runtime reproduction must precede implementation in a writable executor checkout."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155190",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#155190",
+      "candidate_fix": null,
+      "reason": "Emit the executor handoff without claiming a patched or validated branch. Reuse the designated branch and require failing socket-boundary proof before repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
