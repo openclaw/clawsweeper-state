@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T13:22:20.084Z",
+  "updated_at": "2026-09-21T13:22:21.686Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5757727280:2026-09-21T08:41:14Z:re_review",
-      "comment_id": "5757727280",
-      "comment_version_key": "5757727280:2026-09-21T08:41:14Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5757727280",
-      "comment_created_at": "2026-09-21T08:41:14Z",
-      "comment_updated_at": "2026-09-21T08:41:14Z",
-      "comment_body_sha256": "782ad5edfd1452e64505cdff0d7400ea099afac69a93d1be7715f4d3ce96d65d",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `336c9d35552ff989dfcb8d7f71a45d09561d38b0`. hosted ci exposed one stale full-suite expectation from the removed global custody behavior; it now verifies that pending gateway acceptance preserves the original editable local row while canonical transcript history retires it. the full chat-view/action set passes 490/490 and `pnpm check:changed` is green. please evaluate only this reconstructed control ui-only head",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T08:51:30.949Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/pending-input-state-clarity",
-        "head_sha": "336c9d35552ff989dfcb8d7f71a45d09561d38b0",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154654:5757838572:2026-09-21T08:51:14Z:clawsweeper_auto_repair",
       "comment_id": "5757838572",
@@ -33334,6 +33287,39 @@
         "kind": "pull_request",
         "branch": "codex/test-sqlite-loader-imports",
         "head_sha": "c481f1d60ab4330696e307bee3616498f2fea3fa",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154414:5755458247:2026-09-21T13:01:25Z:clawsweeper_needs_human",
+      "comment_id": "5755458247",
+      "comment_version_key": "5755458247:2026-09-21T13:01:25Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154414#issuecomment-5755458247",
+      "comment_created_at": "2026-09-21T04:35:41Z",
+      "comment_updated_at": "2026-09-21T13:01:25Z",
+      "comment_body_sha256": "68a47679b2ed75e8971017ac2f7ab0fef49827782ae77f845eb54b68cf27c32f",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154414,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=f1dcc2114f536310f47cf3b246f8de8ade55b052)",
+      "expected_head_sha": "f1dcc2114f536310f47cf3b246f8de8ade55b052",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T13:22:21.686Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/meeting-export-digest-integration-20260920",
+        "head_sha": "f1dcc2114f536310f47cf3b246f8de8ade55b052",
         "cluster_id": null,
         "job_path": null
       }
