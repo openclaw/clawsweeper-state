@@ -1,47 +1,6 @@
 {
-  "updated_at": "2026-09-21T07:51:58.388Z",
+  "updated_at": "2026-09-21T07:52:08.549Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:154355:5755087486:2026-09-21T03:42:58Z:status",
-      "comment_id": "5755087486",
-      "comment_version_key": "5755087486:2026-09-21T03:42:58Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/154355#issuecomment-5755087486",
-      "comment_created_at": "2026-09-21T03:42:58Z",
-      "comment_updated_at": "2026-09-21T03:42:58Z",
-      "comment_body_sha256": "8842817649fab235185e3c8a24d486ca04ede484043a60ce749522662d32a79f",
-      "repo": "openclaw/openclaw",
-      "issue_number": 154355,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "status",
-      "intent": "status",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T03:43:49.739Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/worker-harness-cleanup-20260921",
-        "head_sha": "bfebfac6885badf256b5cc6316b7031b54f80db8",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154122:5753136867:2026-09-21T03:36:21Z:clawsweeper_auto_repair",
       "comment_id": "5753136867",
@@ -33205,6 +33164,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154461:5755883968:2026-09-21T07:46:59Z:clawsweeper_needs_human",
+      "comment_id": "5755883968",
+      "comment_version_key": "5755883968:2026-09-21T07:46:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154461#issuecomment-5755883968",
+      "comment_created_at": "2026-09-21T05:36:45Z",
+      "comment_updated_at": "2026-09-21T07:46:59Z",
+      "comment_body_sha256": "2e9ee418ac87b4ee8d6c035d8d464f1c4a961f20242f6045c5b79a121ff249a5",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154461,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: native registration/GC and SQLite commit checks support their specific contracts, and the alias-retire...; Review finding: [medium] Complete the retained-authority proof — src/gateway/operator-run-cancellation.ts:33 (sha=f21c5574da79f2252d7c1ce77e5a101afdcc0ef3)",
+      "expected_head_sha": "f21c5574da79f2252d7c1ce77e5a101afdcc0ef3",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T07:52:08.549Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/visitor-active-access",
+        "head_sha": "f21c5574da79f2252d7c1ce77e5a101afdcc0ef3",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
