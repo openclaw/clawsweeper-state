@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T03:50:04.958Z",
+  "updated_at": "2026-09-21T03:50:32.082Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/acpx:656:5753414218:2026-09-20T23:16:11Z:re_review",
-      "comment_id": "5753414218",
-      "comment_version_key": "5753414218:2026-09-20T23:16:11Z",
-      "comment_url": "https://github.com/openclaw/acpx/pull/656#issuecomment-5753414218",
-      "comment_created_at": "2026-09-20T23:16:11Z",
-      "comment_updated_at": "2026-09-20T23:16:11Z",
-      "comment_body_sha256": "aaacc7b6f9940166c28f55b4b4f334d99ecc2e81dbc16d4d595e67654c5cb1ee",
-      "repo": "openclaw/acpx",
-      "issue_number": 656,
-      "author": "steipete",
-      "author_id": 58493,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-20T23:17:01.040Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/audit-flow-attempt-lifetime",
-        "head_sha": "8a676552a1927f0f0b33459b5d6fbe642c0579d7",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawgo:10:5513381338:2026-09-20T23:17:10Z:clawsweeper_needs_human",
       "comment_id": "5513381338",
@@ -32369,6 +32322,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154232:5754138383:2026-09-21T03:42:59Z:clawsweeper_needs_human",
+      "comment_id": "5754138383",
+      "comment_version_key": "5754138383:2026-09-21T03:42:59Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154232#issuecomment-5754138383",
+      "comment_created_at": "2026-09-21T01:13:52Z",
+      "comment_updated_at": "2026-09-21T03:42:59Z",
+      "comment_body_sha256": "f2cb658fbd13d01dbbac6134fc86508682a1e2660b2a98ecbf1842f38913e28b",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154232,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Respect the explicit “Do not merge” hold; the author must withdraw it before this PR can become a landing candidate. (sha=9c1ed5d35e6f2f6e24100f35c430575a37d7ce90)",
+      "expected_head_sha": "9c1ed5d35e6f2f6e24100f35c430575a37d7ce90",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T03:50:32.082Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-burden/r2-runson-pilot",
+        "head_sha": "9c1ed5d35e6f2f6e24100f35c430575a37d7ce90",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
