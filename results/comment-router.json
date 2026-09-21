@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T04:48:03.593Z",
+  "updated_at": "2026-09-21T04:48:15.442Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153940:5753694151:2026-09-21T00:01:22Z:re_review",
-      "comment_id": "5753694151",
-      "comment_version_key": "5753694151:2026-09-21T00:01:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153940#issuecomment-5753694151",
-      "comment_created_at": "2026-09-21T00:01:22Z",
-      "comment_updated_at": "2026-09-21T00:01:22Z",
-      "comment_body_sha256": "764c6417d3329cab8191c53116e3b55b946e1f76cbd4ed23a611ccd710872420",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153940,
-      "author": "shakkernerd",
-      "author_id": 165377636,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T00:02:20.092Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/oidc-github-credit",
-        "head_sha": "7639fc21e0aa1ba5fc13e64dae74c9d2193a0d72",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154174:5753697841:2026-09-21T00:02:04Z:clawsweeper_needs_human",
       "comment_id": "5753697841",
@@ -32652,6 +32605,39 @@
         "kind": "pull_request",
         "branch": "ci-burden/h9-tooling-parallel",
         "head_sha": "7343012cb34937301f5fc3788e030b3dbb724b6d",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154426:5755536939:2026-09-21T04:47:10Z:clawsweeper_needs_human",
+      "comment_id": "5755536939",
+      "comment_version_key": "5755536939:2026-09-21T04:47:10Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154426#issuecomment-5755536939",
+      "comment_created_at": "2026-09-21T04:47:10Z",
+      "comment_updated_at": "2026-09-21T04:47:10Z",
+      "comment_body_sha256": "dceafa9583da0b40f2ba42430fe393e5da7b5f82a50bf6be0959057413207659",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154426,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - The integrated worker and cleanup changes have not yet received the promised full parallel qualification; prior-base results do not settle contention or shared-state failures across t... (sha=497cc87e0250161ccfe07df1095ca36b09166d67)",
+      "expected_head_sha": "497cc87e0250161ccfe07df1095ca36b09166d67",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T04:48:15.442Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "ci-burden/s-agents-embedded-parallel",
+        "head_sha": "497cc87e0250161ccfe07df1095ca36b09166d67",
         "cluster_id": null,
         "job_path": null
       }
