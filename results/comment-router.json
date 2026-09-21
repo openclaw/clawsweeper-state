@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T14:40:20.316Z",
+  "updated_at": "2026-09-21T14:41:29.387Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:150479:5758588166:2026-09-21T09:52:31Z:re_review",
-      "comment_id": "5758588166",
-      "comment_version_key": "5758588166:2026-09-21T09:52:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/150479#issuecomment-5758588166",
-      "comment_created_at": "2026-09-21T09:52:31Z",
-      "comment_updated_at": "2026-09-21T09:52:31Z",
-      "comment_body_sha256": "f167fb5154efd567615442a9e352d3addc530d638e85a139a7e275254b509109",
-      "repo": "openclaw/openclaw",
-      "issue_number": 150479,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T09:53:48.911Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/shared-session-worktrees",
-        "head_sha": "64fb787aa001937021c728d4fac6a538536835b6",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:137184:5523006036:2026-09-21T09:49:58Z:clawsweeper_needs_human",
       "comment_id": "5523006036",
@@ -33458,6 +33411,39 @@
         "kind": "pull_request",
         "branch": "fix/acpx-queue-owner-process-identity-20260921",
         "head_sha": "b601c96231da7c0b18fb12ecf4f512e1ce03e98f",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:566:5760119171:2026-09-21T14:40:26Z:clawsweeper_needs_human",
+      "comment_id": "5760119171",
+      "comment_version_key": "5760119171:2026-09-21T14:40:26Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/566#issuecomment-5760119171",
+      "comment_created_at": "2026-09-21T11:58:52Z",
+      "comment_updated_at": "2026-09-21T14:40:26Z",
+      "comment_body_sha256": "700f0d201017003a36543e11acfc7759df5ff53bcbe2ff1f851905901a6675a0",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 566,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The body reports an installed-package Node 24/Bun run through both synchronous /secret readers, but provides no observable results sho... (sha=c28c50c7de5bb3b4aa5e6beec334fe44eb19eff6)",
+      "expected_head_sha": "c28c50c7de5bb3b4aa5e6beec334fe44eb19eff6",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T14:41:29.387Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fix-secret-read-close-error-20260921",
+        "head_sha": "c28c50c7de5bb3b4aa5e6beec334fe44eb19eff6",
         "cluster_id": null,
         "job_path": null
       }
