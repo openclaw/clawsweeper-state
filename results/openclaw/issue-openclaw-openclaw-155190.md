@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155190"
-mode: "autonomous"
-run_id: "35655167878"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35655167878"
+mode: "plan"
+run_id: "35657684759"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35657684759"
 head_sha: "ffdff711463380f2636e8e9f7fb152770f26b9c3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-21T21:25:54.480Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155190"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155190"
+published_at: "2026-09-21T21:56:51.824Z"
+canonical: "#155190"
+canonical_issue: "#155190"
 canonical_pr: null
-actions_total: 2
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35655167878](https://github.com/openclaw/clawsweeper/actions/runs/35655167878)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35657684759](https://github.com/openclaw/clawsweeper/actions/runs/35657684759)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155190
+Canonical: #155190
 
 ## Summary
 
-Source confirms the direct startup ordering defect on preflight main. Narrow fix artifact prepared; implementation and runtime reproduction are blocked by the read-only checkout and absent dependencies. No files or GitHub state changed. The silent-call symptom remains unverified.
+Plan a narrow direct-bridge startup fix. Source inspection supports the ordering defect; the silent-call symptom remains unverified. No files or GitHub state changed, and no tests ran.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,7 @@ Source confirms the direct startup ordering defect on preflight main. Narrow fix
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155190 | fix_needed | planned | canonical | A narrow existing-owner repair is supported by source. Runtime reproduction must precede implementation in a writable executor checkout. |
-| cluster:issue-openclaw-openclaw-155190 | build_fix_artifact | planned |  | Emit the executor handoff without claiming a patched or validated branch. Reuse the designated branch and require failing socket-boundary proof before repair. |
+| #155190 | fix_needed | planned | canonical | A focused correction fits the authorized bug-only scope. Reproduction and validation remain required before publication; closure and merge are prohibited. |
 
 ## Needs Human
 
