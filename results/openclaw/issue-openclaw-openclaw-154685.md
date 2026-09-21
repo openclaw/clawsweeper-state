@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-154685"
-mode: "autonomous"
-run_id: "35585193351"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35585193351"
+mode: "plan"
+run_id: "35591525074"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35591525074"
 head_sha: "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-21T10:43:44.876Z"
-canonical: "https://github.com/openclaw/openclaw/issues/154685"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/154685"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-21T11:01:58.291Z"
+canonical: "#154685"
+canonical_issue: "#154685"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35585193351](https://github.com/openclaw/clawsweeper/actions/runs/35585193351)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35591525074](https://github.com/openclaw/clawsweeper/actions/runs/35591525074)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/154685
+Canonical: #154685
 
 ## Summary
 
-Confirmed the unguarded forwarding callback on preflight main and reproduced Node's header-order exception with a direct runtime probe. Implementation and production-proxy regression remain blocked by the read-only checkout and absent dependencies. Narrow fix artifact prepared; no files or GitHub state changed.
+Plan a narrow response-serialization fix with a mandatory failing TLS proxy regression first. Checkout matches preflight main 1c573c4802ff2b40af85f16e0a32bdc9f65ffb88. No changes or runtime tests were performed; implementation, review, and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ Confirmed the unguarded forwarding callback on preflight main and reproduced Nod
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #154685 | fix_needed | planned | canonical | Source and runtime evidence support a narrow bug fix. Production-boundary reproduction must pass its failing-regression gate before implementation. |
-| #48578 | keep_closed | skipped | related | Historical related work; no mutation or replacement of this already-closed PR is needed. |
-| #48788 | keep_closed | skipped | related | The broader feature proposal is not required for this response-forwarding bug. |
-| cluster:issue-openclaw-openclaw-154685 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Execution requires a writable, dependency-equipped checkout and a failing regression through the production TLS proxy before editing. |
+| #154685 | fix_needed | planned | canonical | A bounded ordinary bug repair is appropriate, conditional on reproducing the reported mechanism on current main. Related historical filename-decoding work does not address response serialization. |
+| #48578 | keep_closed | skipped | related | Historical decoding work is related context, not a branch to repair or a fix for the forwarding crash. |
+| #48788 | keep_closed | skipped | related | The broader feature proposal is not required for this local serialization repair. |
 
 ## Needs Human
 

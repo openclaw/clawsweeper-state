@@ -1,0 +1,62 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-154685",
+  "mode": "plan",
+  "run_id": "35591525074",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35591525074",
+  "head_sha": "71fbed1ffe4ae51659be3ea9c1e2b7e18858acb1",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-154685.md",
+  "published_at": "2026-09-21T11:01:58.291Z",
+  "canonical": "#154685",
+  "canonical_issue": "#154685",
+  "canonical_pr": null,
+  "summary": "Plan a narrow response-serialization fix with a mandatory failing TLS proxy regression first. Checkout matches preflight main 1c573c4802ff2b40af85f16e0a32bdc9f65ffb88. No changes or runtime tests were performed; implementation, review, and validation remain pending.",
+  "actions": [
+    {
+      "target": "#154685",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#154685",
+      "candidate_fix": null,
+      "reason": "A bounded ordinary bug repair is appropriate, conditional on reproducing the reported mechanism on current main. Related historical filename-decoding work does not address response serialization."
+    },
+    {
+      "target": "#48578",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#154685",
+      "candidate_fix": null,
+      "reason": "Historical decoding work is related context, not a branch to repair or a fix for the forwarding crash."
+    },
+    {
+      "target": "#48788",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#154685",
+      "candidate_fix": null,
+      "reason": "The broader feature proposal is not required for this local serialization repair."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 2
+  },
+  "action_status_counts": {
+    "planned": 1,
+    "skipped": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
