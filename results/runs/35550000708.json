@@ -1,0 +1,52 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-154227",
+  "mode": "autonomous",
+  "run_id": "35550000708",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35550000708",
+  "head_sha": "a09e6cefb31adcd12bba10e1658cae5fced08c80",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-154227.md",
+  "published_at": "2026-09-21T01:48:56.544Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/154227",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/154227",
+  "canonical_pr": null,
+  "summary": "Source inspection supports the reported snapshot mutation on preflight main c729f693d3fe657782928fe055f9c86853a1d2be. Implementation and executable reproduction are blocked by the read-only checkout and missing dependencies. A narrow fix artifact is prepared; no code or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#154227",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#154227",
+      "candidate_fix": null,
+      "reason": "A producer-side isolation repair is supported by source evidence. Runtime reproduction remains unverified, so implementation must begin with a failing real-reader regression."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-154227",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#154227",
+      "candidate_fix": null,
+      "reason": "Artifact preparation is complete. Applying and validating it requires a writable executor with repository dependencies and native Windows proof; no maintainer product decision is outstanding."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
