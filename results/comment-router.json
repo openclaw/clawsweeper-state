@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-21T10:04:22.047Z",
+  "updated_at": "2026-09-21T10:04:33.837Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:145241:5756341693:2026-09-21T06:31:44Z:re_review",
-      "comment_id": "5756341693",
-      "comment_version_key": "5756341693:2026-09-21T06:31:44Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/145241#issuecomment-5756341693",
-      "comment_created_at": "2026-09-21T06:31:44Z",
-      "comment_updated_at": "2026-09-21T06:31:44Z",
-      "comment_body_sha256": "e91119b08f68a29e28c09a16c2651694023704d0800fc549b80081789fa074c6",
-      "repo": "openclaw/openclaw",
-      "issue_number": 145241,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T06:32:53.779Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/gateway-shutdown-deadline-completion-20260911",
-        "head_sha": "d03fdc2525e0d28752b1064250fcc57ffcf2ee3a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153242:5746153121:2026-09-21T06:26:32Z:clawsweeper_auto_repair",
       "comment_id": "5746153121",
@@ -33339,6 +33292,39 @@
         "kind": "pull_request",
         "branch": "backport/frv-gemini-live-model-cohort",
         "head_sha": "92e880f52febe17804ab458dba996cb2a5bf6637",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabbox:2411:5755061118:2026-09-21T10:03:37Z:clawsweeper_needs_human",
+      "comment_id": "5755061118",
+      "comment_version_key": "5755061118:2026-09-21T10:03:37Z",
+      "comment_url": "https://github.com/openclaw/crabbox/pull/2411#issuecomment-5755061118",
+      "comment_created_at": "2026-09-21T03:38:42Z",
+      "comment_updated_at": "2026-09-21T10:03:37Z",
+      "comment_body_sha256": "a8330d885489099325d5e287b00f935da8a43dfc807bfd3f7e23a2e3b17e9ad6",
+      "repo": "openclaw/crabbox",
+      "issue_number": 2411,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: Hyper-V acquisition, endpoint resolution, and durable heartbeat are exercised only through synthetic co... (sha=503c1b5ed88e44f7d9285e97fa3fcd30ac93896f)",
+      "expected_head_sha": "503c1b5ed88e44f7d9285e97fa3fcd30ac93896f",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-21T10:04:33.837Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/hyperv-durable-lifecycle-n788",
+        "head_sha": "503c1b5ed88e44f7d9285e97fa3fcd30ac93896f",
         "cluster_id": null,
         "job_path": null
       }
