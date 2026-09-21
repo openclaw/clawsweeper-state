@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-21T07:01:51.343Z",
+  "updated_at": "2026-09-21T07:02:40.935Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:152707:5740436583:2026-09-21T02:27:22Z:clawsweeper_auto_repair",
-      "comment_id": "5740436583",
-      "comment_version_key": "5740436583:2026-09-21T02:27:22Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/152707#issuecomment-5740436583",
-      "comment_created_at": "2026-09-19T08:19:04Z",
-      "comment_updated_at": "2026-09-21T02:27:22Z",
-      "comment_body_sha256": "153ab96d62a2084677ad87e2b6429168fcc5c509ccedce858d0fffd4b8c035d4",
-      "repo": "openclaw/openclaw",
-      "issue_number": 152707,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper auto repair",
-      "intent": "clawsweeper_auto_repair",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper needs-human verdict with repairable P-severity findings (sha=c0d9b1546401ac2508c9b1669eee0865135c915a)",
-      "expected_head_sha": "c0d9b1546401ac2508c9b1669eee0865135c915a",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-21T02:34:55.513Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/composer-skill-chip",
-        "head_sha": "c0d9b1546401ac2508c9b1669eee0865135c915a",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:153178:5745452008:2026-09-21T02:27:09Z:clawsweeper_needs_human",
       "comment_id": "5745452008",
@@ -33122,6 +33089,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:142190:5756642362:2026-09-21T07:01:36Z:re_review",
+      "comment_id": "5756642362",
+      "comment_version_key": "5756642362:2026-09-21T07:01:36Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/142190#issuecomment-5756642362",
+      "comment_created_at": "2026-09-21T07:01:36Z",
+      "comment_updated_at": "2026-09-21T07:01:36Z",
+      "comment_body_sha256": "163b9db190f1d568cae4f7d964a369abb8e8ba3e4b9c559eaf802c0e73f516a8",
+      "repo": "openclaw/openclaw",
+      "issue_number": 142190,
+      "author": "Shagrat2",
+      "author_id": 3027562,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "mention",
+      "command": "re-review — the last review landed on `4effeb43bf0`; the same-channel propagation fix is `b6769cee465` (policy on the payload as `ttssupplement.liveonly`, honored once in `sendmessagebatch`, with regressions against the durable sender itself)",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-21T07:02:38.623Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/tts-media-supplement",
+        "head_sha": "b6769cee465f5fca6b99ce8aeec7a9e6fb27c424",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
