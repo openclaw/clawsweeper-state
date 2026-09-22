@@ -2,12 +2,12 @@
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
 mode: "autonomous"
-run_id: "35705399798"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35705399798"
+run_id: "35712525402"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35712525402"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
 workflow_conclusion: "failure"
 result_status: "blocked"
-published_at: "2026-09-22T09:44:37.221Z"
+published_at: "2026-09-22T10:29:20.381Z"
 canonical: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
@@ -25,7 +25,7 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35705399798](https://github.com/openclaw/clawsweeper/actions/runs/35705399798)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35712525402](https://github.com/openclaw/clawsweeper/actions/runs/35712525402)
 
 Workflow conclusion: failure
 
@@ -35,7 +35,7 @@ Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host, absent dependencies, and unavailable preflight main commit. No code or GitHub state changed.
+Prepared a narrow fix plan against preflight main 41f119f66004c2944a79e1aaede0bc77dd35c4d2. Implementation and runtime reproduction are blocked: this host is read-only and target dependencies are absent. No files or GitHub state changed; no validated fix is claimed.
 
 ## Impact
 
@@ -66,9 +66,9 @@ Prepared a narrow fix artifact. Implementation and runtime reproduction are bloc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | The hydrated report and inspected source support a narrow repair, but the executor must reproduce it on verified current main before editing. |
-| #103699 | keep_closed | skipped | related | Leave the historical PR closed and follow the maintainer's dependency-authoritative repair direction. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | planned |  | Return an actionable, reproduction-gated plan without claiming an implemented or validated fix. |
+| #103694 | fix_needed | planned | canonical | The report remains supported by current source and hydrated evidence. Execute reproduction first on a writable, dependency-ready host before implementing or opening a PR. |
+| #103699 | keep_closed | skipped | related | Preserve the maintainer decision and contributor attribution without reopening, closing again, or treating historical checks as current fix proof. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | planned |  | Provide the authorized executor a bounded new-PR plan, conditional on reproducing the warning with the pinned dependencies before edits. |
 
 ## Needs Human
 
