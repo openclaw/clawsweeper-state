@@ -1,0 +1,92 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "35710461895",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35710461895",
+  "head_sha": "f23003eb07f58d2895a9cc639d814d7ce75a2e49",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-22T10:14:20.236Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Source confirms the remaining offloaded-image handoff gap at preflight main 4cf81a5c196e331f4eacb038c964d337af88d146. A narrow fix artifact is prepared. Implementation, failing regression, runtime upload proof, and validation are blocked by the read-only host and missing dependencies. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Implementation requires a writable executor. This host cannot create the required failing regression, install missing node_modules, stage synthetic uploads, or validate a repaired branch."
+    },
+    {
+      "target": "#142313",
+      "action": "keep_related",
+      "status": "planned",
+      "classification": "related",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Keep open; exercise captionless uploads in the canonical regression without claiming this repair resolves every reported symptom."
+    },
+    {
+      "target": "#143753",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Historical partial fix to preserve and credit; no replacement or closure action."
+    },
+    {
+      "target": "#103254",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Historical attempt only. Do not revive pseudo-reference handling or treat this as an open contributor replacement."
+    },
+    {
+      "target": "#86371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "independent",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Separate historical root cause; no action needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow plan to a writable executor. Require a failing production-boundary regression before implementation; this artifact is not permission to skip reproduction or publish an unvalidated fix."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_related": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "blocked": 1,
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
