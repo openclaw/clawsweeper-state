@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T22:29:34.889Z",
+  "updated_at": "2026-09-22T22:30:08.292Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155817:5779945955:2026-09-22T16:33:16Z:clawsweeper_needs_human",
-      "comment_id": "5779945955",
-      "comment_version_key": "5779945955:2026-09-22T16:33:16Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155817#issuecomment-5779945955",
-      "comment_created_at": "2026-09-22T16:14:33Z",
-      "comment_updated_at": "2026-09-22T16:33:16Z",
-      "comment_body_sha256": "eaa0f00c13d56212093b6fc70d0e788c85abb95bcd15361e5e7785fdd3f7bb11",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155817,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=1f34b8b10649d8a9d65d84e969e8d5c63ffeab77)",
-      "expected_head_sha": "1f34b8b10649d8a9d65d84e969e8d5c63ffeab77",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T16:50:10.244Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/codex-turn-currentness",
-        "head_sha": "1f34b8b10649d8a9d65d84e969e8d5c63ffeab77",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155825:5780062282:2026-09-22T16:22:50Z:clawsweeper_needs_human",
       "comment_id": "5780062282",
@@ -33353,6 +33320,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:141004:5785268676:2026-09-22T22:29:06Z:re_review",
+      "comment_id": "5785268676",
+      "comment_version_key": "5785268676:2026-09-22T22:29:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/141004#issuecomment-5785268676",
+      "comment_created_at": "2026-09-22T22:29:06Z",
+      "comment_updated_at": "2026-09-22T22:29:06Z",
+      "comment_body_sha256": "93cbc74583efd2be4b7c75c85be4aa8618d42c32b37feee430118df53bd2996a",
+      "repo": "openclaw/openclaw",
+      "issue_number": 141004,
+      "author": "wiecon-dev",
+      "author_id": 61579505,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "mention",
+      "command": "re-review please — branch merged upstream/main (head 55a355331, clean auto-merge, no conflicts). skill-selection focused tests pass locally (6/6). 3 red ci shards on prior head are timing-sensitive tests in files untouched by this pr (codex output-fidelity, terminal-file-upload, worktree gc) — look like flakes, fresh ci running on new head will confirm",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T22:30:05.224Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "memorytunning-pr-v2",
+        "head_sha": "55a35533158e6e2dd71cb94c0cd288cc1512d9b1",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
