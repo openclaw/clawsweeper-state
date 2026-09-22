@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T10:10:32.534Z",
+  "updated_at": "2026-09-22T10:10:59.926Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155204:5771481814:2026-09-22T05:05:55Z:re_review",
-      "comment_id": "5771481814",
-      "comment_version_key": "5771481814:2026-09-22T05:05:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155204#issuecomment-5771481814",
-      "comment_created_at": "2026-09-22T05:05:55Z",
-      "comment_updated_at": "2026-09-22T05:05:55Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155204,
-      "author": "jason-allen-oneal",
-      "author_id": 8335428,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T05:58:55.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/auth-profile-compaction-stickiness-148829",
-        "head_sha": "d22ff0a70edff41d88bd2dc8eff624b8b533db9b",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155442:5771516282:2026-09-22T05:10:33Z:re_review",
       "comment_id": "5771516282",
@@ -33581,6 +33534,39 @@
         "kind": "pull_request",
         "branch": "automation/native-app-locale-refresh",
         "head_sha": "2321a9114aafe9848a5fffdbdfa6b3384fcbe536",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155398:5771352565:2026-09-22T10:09:44Z:clawsweeper_needs_human",
+      "comment_id": "5771352565",
+      "comment_version_key": "5771352565:2026-09-22T10:09:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155398#issuecomment-5771352565",
+      "comment_created_at": "2026-09-22T04:47:50Z",
+      "comment_updated_at": "2026-09-22T10:09:44Z",
+      "comment_body_sha256": "5d36e327de3b512266c2d20ff42ec0edc099b11a70e6c4ebe62c78eba63c098c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155398,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Have an authorized maintainer reconcile and clear the current-revision dependency and security approval gates against the verified three-file diff. (sha=21289db70600ad06d46cb1eda523abd68c66ae42)",
+      "expected_head_sha": "21289db70600ad06d46cb1eda523abd68c66ae42",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T10:10:59.926Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/cli-session-canonical-model-provider",
+        "head_sha": "21289db70600ad06d46cb1eda523abd68c66ae42",
         "cluster_id": null,
         "job_path": null
       }
