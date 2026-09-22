@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T10:01:44.912Z",
+  "updated_at": "2026-09-22T10:01:47.622Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/clawscan:55:5771727261:2026-09-22T05:38:46Z:re_review",
-      "comment_id": "5771727261",
-      "comment_version_key": "5771727261:2026-09-22T05:38:46Z",
-      "comment_url": "https://github.com/openclaw/clawscan/pull/55#issuecomment-5771727261",
-      "comment_created_at": "2026-09-22T05:38:46Z",
-      "comment_updated_at": "2026-09-22T05:38:46Z",
-      "comment_body_sha256": "11baeecaa71a2dbb3423953d7c97be6687644e1981bf1d904620a4316b3bbaeb",
-      "repo": "openclaw/clawscan",
-      "issue_number": 55,
-      "author": "jesse-merhi",
-      "author_id": 79823012,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "slash",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T05:39:35.467Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "jesse/endor-local-scanner",
-        "head_sha": "41d779ab8da2a78669a162285279c675de8b34f9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/acpx:715:5771741612:2026-09-22T05:40:35Z:clawsweeper_needs_human",
       "comment_id": "5771741612",
@@ -33592,6 +33545,39 @@
       "status": "skipped",
       "processed_at": "2026-09-22T10:01:44.912Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:133110:5467105682:2026-09-22T10:00:49Z:clawsweeper_needs_human",
+      "comment_id": "5467105682",
+      "comment_version_key": "5467105682:2026-09-22T10:00:49Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/133110#issuecomment-5467105682",
+      "comment_created_at": "2026-08-30T06:16:21Z",
+      "comment_updated_at": "2026-09-22T10:00:49Z",
+      "comment_body_sha256": "f0a0c1408a8742acb4206f218e1c705552bf40dc062aff1e675a8237227758db",
+      "repo": "openclaw/openclaw",
+      "issue_number": 133110,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=b1545feef4e30cf153f70df732a7df3a24e78e08)",
+      "expected_head_sha": "b1545feef4e30cf153f70df732a7df3a24e78e08",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T10:01:47.622Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "leon/feature-session-category-json-20260830",
+        "head_sha": "b1545feef4e30cf153f70df732a7df3a24e78e08",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
