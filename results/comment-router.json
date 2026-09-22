@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T04:31:14.115Z",
+  "updated_at": "2026-09-22T04:31:26.957Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155036:5768175293:2026-09-21T22:06:21Z:re_review",
-      "comment_id": "5768175293",
-      "comment_version_key": "5768175293:2026-09-21T22:06:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155036#issuecomment-5768175293",
-      "comment_created_at": "2026-09-21T22:06:21Z",
-      "comment_updated_at": "2026-09-21T22:06:21Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155036,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T22:07:16.977Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/android-five-voice-note-20260921",
-        "head_sha": "0afc5a91a71fa65f274f2039f5e203ed525dbdcd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153352:5768177284:2026-09-21T22:06:32Z:re_review",
       "comment_id": "5768177284",
@@ -32871,6 +32824,39 @@
         "kind": "pull_request",
         "branch": "review/browser-status-fixture-20260921",
         "head_sha": "88a63355b892ba4b27fccaecbd3ab0c9e40fbae1",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154477:5756012593:2026-09-22T04:30:19Z:clawsweeper_needs_human",
+      "comment_id": "5756012593",
+      "comment_version_key": "5756012593:2026-09-22T04:30:19Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/154477#issuecomment-5756012593",
+      "comment_created_at": "2026-09-21T05:54:21Z",
+      "comment_updated_at": "2026-09-22T04:30:19Z",
+      "comment_body_sha256": "6a7b097f4e12cbcc59f0f2f0ad763c50d65723acf26c1b5a5f937309942a2979",
+      "repo": "openclaw/openclaw",
+      "issue_number": 154477,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Schema 18 prevents older binaries from reopening migrated state, and unfinished legacy shared publications require fresh admission after reconciliation. The required acceptance of thi... (sha=36f84f37db5c592e473cbeae5b2c043a63a17a52)",
+      "expected_head_sha": "36f84f37db5c592e473cbeae5b2c043a63a17a52",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T04:31:26.957Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/publication-request-authority",
+        "head_sha": "36f84f37db5c592e473cbeae5b2c043a63a17a52",
         "cluster_id": null,
         "job_path": null
       }
