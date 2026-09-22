@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:10:13.400Z",
+  "updated_at": "2026-09-22T11:10:23.052Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155487:5772215529:2026-09-22T06:36:10Z:re_review",
-      "comment_id": "5772215529",
-      "comment_version_key": "5772215529:2026-09-22T06:36:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155487#issuecomment-5772215529",
-      "comment_created_at": "2026-09-22T06:36:10Z",
-      "comment_updated_at": "2026-09-22T06:36:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155487,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T06:50:31.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/b22-skills-state",
-        "head_sha": "49545aa15b60df44033bb6fdeebf5431f17413a9",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155484:5772225021:2026-09-22T06:37:13Z:re_review",
       "comment_id": "5772225021",
@@ -33643,6 +33596,39 @@
         "kind": "pull_request",
         "branch": "codex/fs-safe-secrets-audit-20260922",
         "head_sha": "47116c12a3b6f7313d13e7874387e248ca757461",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:139620:5556256725:2026-09-22T11:09:17Z:clawsweeper_needs_human",
+      "comment_id": "5556256725",
+      "comment_version_key": "5556256725:2026-09-22T11:09:17Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/139620#issuecomment-5556256725",
+      "comment_created_at": "2026-09-06T02:07:45Z",
+      "comment_updated_at": "2026-09-22T11:09:17Z",
+      "comment_body_sha256": "c2ac2c3369510a63b87b832f1085078af81794201794b6344ca0c3aa8bbd948e",
+      "repo": "openclaw/openclaw",
+      "issue_number": 139620,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: Authority-chain proof required: the reported standalone run now demonstrates real file-effect suppression through production ingress,...; Review finding: [medium] Verify expiry through the actual delegated application owner — src/auto-reply/reply/get-reply.gateway-authority.delegated-effect.test.ts:100 (sha=0c4d0a8f00a714d3fb02ec4962b1b3010dda899b)",
+      "expected_head_sha": "0c4d0a8f00a714d3fb02ec4962b1b3010dda899b",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:10:23.052Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/channel-session-gateway-owner",
+        "head_sha": "0c4d0a8f00a714d3fb02ec4962b1b3010dda899b",
         "cluster_id": null,
         "job_path": null
       }
