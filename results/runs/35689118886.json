@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103694",
+  "mode": "autonomous",
+  "run_id": "35689118886",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35689118886",
+  "head_sha": "00c29ac106374502253e8056c48a5203c57acd54",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103694.md",
+  "published_at": "2026-09-22T05:49:37.807Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103694",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked: the checkout has no installed MCP SDK, and this host is read-only. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103694",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "The artifact and current source support a narrow repair, but reproducing the defect and implementing it require a writable executor with installed pinned dependencies."
+    },
+    {
+      "target": "#103699",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Preserve the maintainer decision and contributor context without reopening, replacing, or closing this historical PR."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103694",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103694",
+      "candidate_fix": null,
+      "reason": "Hand off the narrow repair to the deterministic executor; require successful pre-fix reproduction before implementation."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
