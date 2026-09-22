@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155728"
-mode: "autonomous"
-run_id: "35730772295"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35730772295"
+mode: "plan"
+run_id: "35736919649"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35736919649"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T13:08:59.646Z"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T14:06:04.455Z"
 canonical: "https://github.com/openclaw/openclaw/issues/155728"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/155728"
 canonical_pr: null
-actions_total: 4
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35730772295](https://github.com/openclaw/clawsweeper/actions/runs/35730772295)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35736919649](https://github.com/openclaw/clawsweeper/actions/runs/35736919649)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
 Canonical: https://github.com/openclaw/openclaw/issues/155728
 
 ## Summary
 
-The reported whole-file allocation mechanism remains in preflight main 8c001ebde9333e0dfe4402e6b0cdc0778d16a079. A narrow repair artifact is prepared. Implementation, runtime reproduction, measurements, and validation are blocked by this read-only host; dependencies are also absent. No files or GitHub state were changed.
+Prepared a narrow capture-allocation repair plan against preflight main 05804bcfdad6daa29fba9cf21b100637824fb489. No code or GitHub changes made. Runtime reproduction, implementation, memory measurements, and validation remain pending.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 4 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,10 +66,9 @@ The reported whole-file allocation mechanism remains in preflight main 8c001ebde
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155728 | fix_needed | blocked | canonical | Implementation requires a writable executor. Establish the required failing capture-entrypoint regression or isolated baseline before editing; stop if it does not reproduce on refreshed main. |
-| #131492 | keep_related | planned | related | Keep open as a distinct memory-operations follow-up outside this implementation scope. |
-| #153588 | keep_closed | skipped | related | Historical context only. |
-| cluster:issue-openclaw-openclaw-155728 | build_fix_artifact | planned | canonical | A narrow non-security repair is supported by source inspection; execution remains gated on reproduction and a writable environment. |
+| #155728 | fix_needed | planned | canonical | The allocation producer has a narrow existing owner and an explicit bug-only repair contract. Execute the attached fix plan after reproducing through capturePluginGenerationArtifact. |
+| #131492 | keep_related | planned | related | Related memory symptoms do not establish the same root cause. The capture repair cannot resolve this broader report or its guidance decision. |
+| #153588 | keep_closed | skipped | related | Historical capture-lifecycle context; disk reclamation differs from transient whole-file memory allocation. |
 
 ## Needs Human
 
