@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-22T06:21:09.276Z",
+  "updated_at": "2026-09-22T06:22:05.169Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:117074:5520300589:2026-09-03T04:21:32Z:re_review",
-      "comment_id": "5520300589",
-      "comment_version_key": "5520300589:2026-09-03T04:21:32Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/117074#issuecomment-5520300589",
-      "comment_created_at": "2026-09-03T04:21:32Z",
-      "comment_updated_at": "2026-09-03T04:21:32Z",
-      "comment_body_sha256": "836ad8a53f36a240a832c1a9defb22fdaeeaeba2819a99e13717fa6b7eef7ac8",
-      "repo": "openclaw/openclaw",
-      "issue_number": 117074,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review — please review the exact head `453211f7af4d7f2d1bdae3f62b4e0f247fbf2b65`. the only delta from the previously reviewed head is the two-line knip config registration above; no production code changed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T01:02:37.189Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:117074:5722799417:2026-09-17T23:51:45Z:re_review",
       "comment_id": "5722799417",
@@ -32781,6 +32754,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155516:5772075146:2026-09-22T06:21:02Z:clawsweeper_needs_human",
+      "comment_id": "5772075146",
+      "comment_version_key": "5772075146:2026-09-22T06:21:02Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155516#issuecomment-5772075146",
+      "comment_created_at": "2026-09-22T06:21:02Z",
+      "comment_updated_at": "2026-09-22T06:21:02Z",
+      "comment_body_sha256": "75bc41b940c3c68eef879fcbe7a8079e5ab9fb02df7f9766a9ef6647f0001cea",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155516,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Add the measured wall times for the two changed test files to the PR evidence, plus CI duration when available, as required by AGENTS.md. (sha=7bd774b5f610963c48a7f6735446fd9b0516a698)",
+      "expected_head_sha": "7bd774b5f610963c48a7f6735446fd9b0516a698",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T06:22:05.169Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/proxy-capture-borrow",
+        "head_sha": "7bd774b5f610963c48a7f6735446fd9b0516a698",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
