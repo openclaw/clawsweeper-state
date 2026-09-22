@@ -24,11 +24,16 @@ export function profileForSlug(slug) {
 }
 
 export function readText(file) {
-  return fs.existsSync(file) ? fs.readFileSync(file, "utf8") : "";
+  const stats = lstatOrMissing(file);
+  if (!stats) return "";
+  assertNotSymlink(file, stats);
+  return fs.readFileSync(file, "utf8");
 }
 
 export function readJson(file, fallback = null) {
-  if (!fs.existsSync(file)) return fallback;
+  const stats = lstatOrMissing(file);
+  if (!stats) return fallback;
+  assertNotSymlink(file, stats);
   try {
     return JSON.parse(fs.readFileSync(file, "utf8"));
   } catch (error) {
@@ -42,21 +47,43 @@ export function writeText(file, text) {
 }
 
 export function markdownFiles(dir) {
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((name) => name.endsWith(".md"))
-    .sort()
-    .map((name) => path.join(dir, name));
+  return listedFiles(dir, ".md");
 }
 
 export function jsonFiles(dir) {
-  if (!fs.existsSync(dir)) return [];
-  return fs
-    .readdirSync(dir)
-    .filter((name) => name.endsWith(".json"))
-    .sort()
-    .map((name) => path.join(dir, name));
+  return listedFiles(dir, ".json");
+}
+
+function lstatOrMissing(file) {
+  try {
+    return fs.lstatSync(file);
+  } catch (error) {
+    if (error?.code === "ENOENT") return null;
+    throw error;
+  }
+}
+
+function assertNotSymlink(file, stats) {
+  if (stats.isSymbolicLink()) {
+    throw new Error(`[clawsweeper-state] source contains symlink: ${file}`);
+  }
+}
+
+function listedFiles(dir, suffix) {
+  const dirStats = lstatOrMissing(dir);
+  if (!dirStats) return [];
+  assertNotSymlink(dir, dirStats);
+  const files = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true }).sort((a, b) =>
+    a.name.localeCompare(b.name),
+  )) {
+    const file = path.join(dir, entry.name);
+    if (entry.isSymbolicLink()) {
+      throw new Error(`[clawsweeper-state] source contains symlink: ${file}`);
+    }
+    if (entry.isFile() && entry.name.endsWith(suffix)) files.push(file);
+  }
+  return files;
 }
 
 export function parseFrontMatter(markdown) {
