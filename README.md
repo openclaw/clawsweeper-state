@@ -4,7 +4,7 @@ Generated from the durable state branch for [openclaw/clawsweeper](https://githu
 
 ## Sweep Dashboard
 
-Last source update: Sep 22, 2026, 05:07 UTC
+Last source update: Sep 22, 2026, 05:27 UTC
 
 ### Fleet
 
@@ -22,7 +22,7 @@ Last source update: Sep 22, 2026, 05:07 UTC
 
 | Repository | State | Updated | Run |
 | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Review publish complete | Sep 22, 2026, 05:07 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35687758648) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | Apply finished | Sep 22, 2026, 05:27 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35690295252) |
 | [openclaw/clawhub](https://github.com/openclaw/clawhub) | Apply idle | Sep 22, 2026, 04:57 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35688722126) |
 | [openclaw/clawsweeper](https://github.com/openclaw/clawsweeper) | Planning review | Sep 21, 2026, 17:51 UTC | [run](https://github.com/openclaw/clawsweeper/actions/runs/35634499590) |
 
@@ -91,14 +91,14 @@ Current indexes and this dashboard section are replaceable projections, never mu
 
 ## Repair Dashboard
 
-Last source update: Sep 22, 2026, 04:57 UTC
+Last source update: Sep 22, 2026, 05:24 UTC
 
 State: Failed clusters need inspection
 
 | Metric | Count | Rate |
 | --- | ---: | ---: |
 | Latest clusters reviewed | 1147 | 100% |
-| Run attempts archived | 3419 | audit |
+| Run attempts archived | 3421 | audit |
 | Latest successful clusters | 976 | 85.1% |
 | Latest failed clusters | 168 | 14.6% |
 | Latest cancelled clusters | 3 | 0.3% |
@@ -118,7 +118,7 @@ State: Failed clusters need inspection
 - Latest records: 1147 clusters: 339 maintainer action, 331 automation snapshot, 428 intervention needed, 49 no pending action, 0 completed.
 - Maintainer first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#120362](https://github.com/openclaw/openclaw/issues/120362) is maintainer_input: Quarantine this exact ref for central OpenClaw security handling without public mutation or further security triage. Its classification d....
 - Intervention first: [openclaw/openclaw](https://github.com/openclaw/openclaw) [issue-openclaw-openclaw-103694](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103694.md) is automation_blocked: validation command failed (pnpm check:changed): $ node scripts/check-changed.mjs --timed [check:changed] lanes=core, coreTests [check:cha....
-- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#103198](https://github.com/openclaw/openclaw/pull/103198) is action_planned: The remaining producer-side media handoff warrants a focused repair plan. Establish a failing regression on refreshed main before editing....
+- Automation latest: [openclaw/openclaw](https://github.com/openclaw/openclaw) [#103198](https://github.com/openclaw/openclaw/issues/103198) is action_planned: Carry validated offloaded image facts into the existing staging flow without changing file-access permissions. Establish a failing regres....
 - Completed latest: no completed action in the latest records.
 
 | Bucket | Count | Operator read |
@@ -167,7 +167,7 @@ State: Failed clusters need inspection
 
 | Repository | Item | Lane state | Recorded status | Updated | Cluster | Run |
 | --- | --- | --- | --- | --- | --- | --- |
-| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#103198](https://github.com/openclaw/openclaw/pull/103198) | action_planned | The remaining producer-side media handoff warrants a focused repair plan. Establish a failing regression on refreshed main before editing; closure... | Sep 22, 2026, 04:38 UTC | [issue-openclaw-openclaw-103198](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103198.md) | [35683951644](https://github.com/openclaw/clawsweeper/actions/runs/35683951644) |
+| [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#103198](https://github.com/openclaw/openclaw/issues/103198) | action_planned | Carry validated offloaded image facts into the existing staging flow without changing file-access permissions. Establish a failing regression on re... | Sep 22, 2026, 05:24 UTC | [issue-openclaw-openclaw-103198](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-103198.md) | [35687558672](https://github.com/openclaw/clawsweeper/actions/runs/35687558672) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#152564](https://github.com/openclaw/openclaw/pull/152564) | action_planned | Retain the issue as canonical and prepare one bug-only implementation. Require a failing public-boundary regression on current main before editing;... | Sep 22, 2026, 02:41 UTC | [issue-openclaw-openclaw-152564](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-152564.md) | [35676780369](https://github.com/openclaw/clawsweeper/actions/runs/35676780369) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#155190](https://github.com/openclaw/openclaw/pull/155190) | action_planned | The direct-startup defect has a narrow existing owner and a concrete socket-boundary regression path. Telephony changes require separate failing bo... | Sep 21, 2026, 22:01 UTC | [issue-openclaw-openclaw-155190](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-155190.md) | [35660020763](https://github.com/openclaw/clawsweeper/actions/runs/35660020763) |
 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | [#155061](https://github.com/openclaw/openclaw/pull/155061) | action_planned | Normalize blank optional selectors while retaining meaningful selection errors, session binding, attachment authority, and existing fallback policy. | Sep 21, 2026, 19:07 UTC | [issue-openclaw-openclaw-155061](https://github.com/openclaw/clawsweeper-state/blob/state/results/openclaw/issue-openclaw-openclaw-155061.md) | [35642301045](https://github.com/openclaw/clawsweeper/actions/runs/35642301045) |
