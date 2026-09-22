@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-152564"
-mode: "autonomous"
-run_id: "35653164759"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35653164759"
+mode: "plan"
+run_id: "35669904776"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35669904776"
 head_sha: "ffdff711463380f2636e8e9f7fb152770f26b9c3"
-workflow_conclusion: "failure"
+workflow_conclusion: "success"
 result_status: "planned"
-published_at: "2026-09-21T21:58:44.699Z"
-canonical: "https://github.com/openclaw/openclaw/issues/152564"
+published_at: "2026-09-22T00:01:49.555Z"
+canonical: "#152564"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/152564"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35653164759](https://github.com/openclaw/clawsweeper/actions/runs/35653164759)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35669904776](https://github.com/openclaw/clawsweeper/actions/runs/35669904776)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
 Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/152564
+Canonical: #152564
 
 ## Summary
 
-Prepared a narrow repair artifact for the source-confirmed validation mismatch. Implementation and executable reproduction are blocked by the read-only checkout and missing dependencies. No files or GitHub state changed; no passing tests or Doctor deadlock are claimed.
+Plan one narrow Discord/Slack DM alias compatibility repair. Latest-main reproduction and validation remain required; no files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,7 @@ Prepared a narrow repair artifact for the source-confirmed validation mismatch. 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #152564 | fix_needed | blocked | canonical | Implementation is blocked on a writable executor checkout with installed dependencies and a failing public-boundary regression using semantically valid legacy inputs. Do not open a PR if that regression cannot reproduce on current main. |
-| #71757 | keep_closed | skipped | related | Historical context only; preserve Matrix semantics. |
-| #85010 | keep_closed | skipped | related | Historical context only. |
-| #113317 | keep_closed | skipped | related | Retain the existing Doctor sequencing owner. |
-| #125359 | keep_closed | skipped | related | Preserve and reuse the existing compatibility work. |
-| cluster:issue-openclaw-openclaw-152564 | build_fix_artifact | planned | canonical | A narrow compatibility repair remains justified by current source; the executor must establish failing executable proof before making changes. |
+| #152564 | fix_needed | planned | canonical | A bounded compatibility repair is supported by the supplied evidence. Reproduce on verified current main before implementation; preserve the issue as canonical throughout this lane. |
 
 ## Needs Human
 
