@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-22T06:30:53.349Z",
+  "updated_at": "2026-09-22T06:34:31.536Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:82572:5098081326:2026-07-27T23:42:04Z:re_review",
-      "comment_id": "5098081326",
-      "comment_version_key": "5098081326:2026-07-27T23:42:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/82572#issuecomment-5098081326",
-      "comment_created_at": "2026-07-27T23:42:04Z",
-      "comment_updated_at": "2026-07-27T23:42:04Z",
-      "comment_body_sha256": "237a3e03b6dd990167656075f3d6a9a43bf5c9fae7caa649be947f3afede1b67",
-      "repo": "openclaw/openclaw",
-      "issue_number": 82572,
-      "author": "jewseppi",
-      "author_id": 6901751,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T01:45:27.104Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:82572:5098127788:2026-07-27T23:48:31Z:re_review",
       "comment_id": "5098127788",
@@ -32681,6 +32654,39 @@
       "status": "skipped",
       "processed_at": "2026-09-22T06:30:53.349Z",
       "target": null
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/mcporter:384:5752353392:2026-09-22T06:33:34Z:clawsweeper_needs_human",
+      "comment_id": "5752353392",
+      "comment_version_key": "5752353392:2026-09-22T06:33:34Z",
+      "comment_url": "https://github.com/openclaw/mcporter/pull/384#issuecomment-5752353392",
+      "comment_created_at": "2026-09-20T20:10:35Z",
+      "comment_updated_at": "2026-09-22T06:33:34Z",
+      "comment_body_sha256": "009aae5f372f6bdba77c94cce3a1cf306af92af4fe580d6be74296de2c36f3c2",
+      "repo": "openclaw/mcporter",
+      "issue_number": 384,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs stronger real behavior proof before merge: The changed parser and runner need artifact-backed CLI evidence: the current tests inject metadata directly, while the previously revi... (sha=e2240df189c540d0024dd4fae5c952b7b73b823d)",
+      "expected_head_sha": "e2240df189c540d0024dd4fae5c952b7b73b823d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T06:34:31.536Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/generate-from-timeout",
+        "head_sha": "e2240df189c540d0024dd4fae5c952b7b73b823d",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
