@@ -1,0 +1,63 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-155820",
+  "mode": "autonomous",
+  "run_id": "35753271463",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35753271463",
+  "head_sha": "f23003eb07f58d2895a9cc639d814d7ce75a2e49",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-155820.md",
+  "published_at": "2026-09-22T16:37:41.535Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/155820",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/155820",
+  "canonical_pr": null,
+  "summary": "Reproduced the scoped channel-name defect through the production resolver using an in-memory fixture. Prepared a narrow fix artifact. Implementation is blocked by the read-only checkout, missing dependencies, and an unverified preflight base. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#155820",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#155820",
+      "candidate_fix": null,
+      "reason": "Repair the established name-resolution bug only; no security-boundary or DM authorization change is needed."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155820",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#155820",
+      "candidate_fix": null,
+      "reason": "A narrow new-fix PR is appropriate once current-main reproduction and executor prerequisites are satisfied."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-155820",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#155820",
+      "candidate_fix": null,
+      "reason": "The executor must establish current main, reproduce with the existing Vitest fixture, implement and validate the patch, and obtain fresh review before opening or updating the PR."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
