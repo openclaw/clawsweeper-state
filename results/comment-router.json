@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:46:26.007Z",
+  "updated_at": "2026-09-22T11:46:53.206Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw-facetime:45:5763377819:2026-09-22T06:59:21Z:clawsweeper_needs_human",
-      "comment_id": "5763377819",
-      "comment_version_key": "5763377819:2026-09-22T06:59:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw-facetime/pull/45#issuecomment-5763377819",
-      "comment_created_at": "2026-09-21T15:52:18Z",
-      "comment_updated_at": "2026-09-22T06:59:21Z",
-      "comment_body_sha256": "5aeca4d605023252326c97d4417bb219c6cf0ba985fff9a7aac7b1c0b031add6",
-      "repo": "openclaw/openclaw-facetime",
-      "issue_number": 45,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "NONE",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The reported macOS fixture compiles FaceTimeHelper's fallback against a synthetic controller; it does not exercise the full authenticated dispa... (sha=5a907dd0ca0a0e270213e1d7865df95164100ffa)",
-      "expected_head_sha": "5a907dd0ca0a0e270213e1d7865df95164100ffa",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T07:00:24.245Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/helper-unknown-action-reply",
-        "head_sha": "5a907dd0ca0a0e270213e1d7865df95164100ffa",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155277:5769186584:2026-09-22T06:59:19Z:clawsweeper_auto_repair",
       "comment_id": "5769186584",
@@ -33566,6 +33533,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/acpx:723:5775836310:2026-09-22T11:43:46Z:clawsweeper_needs_human",
+      "comment_id": "5775836310",
+      "comment_version_key": "5775836310:2026-09-22T11:43:46Z",
+      "comment_url": "https://github.com/openclaw/acpx/pull/723#issuecomment-5775836310",
+      "comment_created_at": "2026-09-22T11:43:46Z",
+      "comment_updated_at": "2026-09-22T11:43:46Z",
+      "comment_body_sha256": "d151c06529482a9024521eab00667bf04e2b9b7dc6192c9481dfeb49320f3934",
+      "repo": "openclaw/acpx",
+      "issue_number": 723,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Existing paused-reader workflows that exceed the new byte or observer limits will disconnect; saturated control commands may execute without delivering their responses. Confirm accept... (sha=c9029e621b0d55ee8753ee5ae8caadcf9882fe4c)",
+      "expected_head_sha": "c9029e621b0d55ee8753ee5ae8caadcf9882fe4c",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:46:53.206Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/acpx-queue-output-spool-20260922",
+        "head_sha": "c9029e621b0d55ee8753ee5ae8caadcf9882fe4c",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
