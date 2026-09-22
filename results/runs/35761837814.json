@@ -1,0 +1,81 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112160",
+  "mode": "plan",
+  "run_id": "35761837814",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35761837814",
+  "head_sha": "f23003eb07f58d2895a9cc639d814d7ce75a2e49",
+  "workflow_conclusion": "success",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "planned",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112160.md",
+  "published_at": "2026-09-22T17:42:32.932Z",
+  "canonical": "#112160",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_pr": null,
+  "summary": "Plan a narrow inbound SSH staging repair. Source inspection at preflight main efc15b8fd4ccd9a9349c9d6987e9a8a23a02d8fc confirms local-only staging and skipped uploads for reused runtimes. Runtime reproduction and validation remain pending. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#112160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "Preserve the canonical issue and prepare one implementation PR. Closure and merging are prohibited by this job."
+    },
+    {
+      "target": "#119687",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this exact PR for central OpenClaw security handling without public mutation. Its historical work does not block an independent repair within existing permissions."
+    },
+    {
+      "target": "#87089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context for preprocessing order, distinct from post-seed SSH workspace staging."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct source-fetch timing problem; retain existing bounded retry behavior."
+    },
+    {
+      "target": "#144025",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct discovery failure; no additional action belongs in this cluster."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 3
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}

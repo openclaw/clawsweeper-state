@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112160"
-mode: "autonomous"
-run_id: "35757368531"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35757368531"
+mode: "plan"
+run_id: "35761837814"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35761837814"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T17:39:12.307Z"
-canonical: "https://github.com/openclaw/openclaw/issues/112160"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T17:42:32.932Z"
+canonical: "#112160"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112160"
 canonical_pr: null
-actions_total: 6
+actions_total: 5
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35757368531](https://github.com/openclaw/clawsweeper/actions/runs/35757368531)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35761837814](https://github.com/openclaw/clawsweeper/actions/runs/35761837814)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/112160
+Canonical: #112160
 
 ## Summary
 
-Source inspection confirms the staging defect on preflight main 94b54e94f496ae06c389edd8342c4a0984ae7c20. Narrow repair artifact prepared. Implementation and required reproduction are blocked by the read-only host and absent dependencies; no code or GitHub changes were made.
+Plan a narrow inbound SSH staging repair. Source inspection at preflight main efc15b8fd4ccd9a9349c9d6987e9a8a23a02d8fc confirms local-only staging and skipped uploads for reused runtimes. Runtime reproduction and validation remain pending. No files or GitHub state changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 5 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,11 @@ Source inspection confirms the staging defect on preflight main 94b54e94f496ae06
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112160 | fix_needed | blocked | canonical | The canonical bug remains supported by current source. A writable isolated executor must establish the failing stageSandboxMedia regression before implementing or opening a PR. |
-| #119687 | route_security | planned | security_sensitive | Quarantine this exact PR for central OpenClaw security handling without public mutation. Its historical evidence does not block an independent repair using existing permissions. |
-| #87089 | keep_closed | skipped | related | Historical context only; no closure or implementation action. |
-| #135860 | keep_closed | skipped | related | Distinct source-fetch failure; preserve existing retry behavior during the scoped repair. |
-| #144025 | keep_closed | skipped | related | Distinct discovery failure; historical context only. |
-| cluster:issue-openclaw-openclaw-112160 | build_fix_artifact | planned | canonical | Prepare the bounded executor handoff despite local implementation being blocked. Reproduction remains mandatory before production edits. |
+| #112160 | fix_needed | planned | canonical | Preserve the canonical issue and prepare one implementation PR. Closure and merging are prohibited by this job. |
+| #119687 | route_security | planned | security_sensitive | Quarantine this exact PR for central OpenClaw security handling without public mutation. Its historical work does not block an independent repair within existing permissions. |
+| #87089 | keep_closed | skipped | related | Historical context for preprocessing order, distinct from post-seed SSH workspace staging. |
+| #135860 | keep_closed | skipped | related | Distinct source-fetch timing problem; retain existing bounded retry behavior. |
+| #144025 | keep_closed | skipped | related | Distinct discovery failure; no additional action belongs in this cluster. |
 
 ## Needs Human
 
