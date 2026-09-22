@@ -1,6 +1,86 @@
 {
-  "updated_at": "2026-09-22T16:56:23.275Z",
+  "updated_at": "2026-09-22T16:53:55.837Z",
   "commands": [
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155465:5775293947:2026-09-22T11:01:09Z:re_review",
+      "comment_id": "5775293947",
+      "comment_version_key": "5775293947:2026-09-22T11:01:09Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155465#issuecomment-5775293947",
+      "comment_created_at": "2026-09-22T11:01:09Z",
+      "comment_updated_at": "2026-09-22T11:01:09Z",
+      "comment_body_sha256": "d000db96375142ee513167dcf3d68a1cd2ed7de81ae889cf903b5bb69461a781",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155465,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T11:02:44.878Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "refactor/workboard-workspace-preflight-failures-20260922",
+        "head_sha": "6946edef9136b13c3c6f88657e15c505738cae1d",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/birdclaw:227:5775302726:2026-09-22T11:01:56Z:clawsweeper_needs_human",
+      "comment_id": "5775302726",
+      "comment_version_key": "5775302726:2026-09-22T11:01:56Z",
+      "comment_url": "https://github.com/steipete/birdclaw/pull/227#issuecomment-5775302726",
+      "comment_created_at": "2026-09-22T11:01:56Z",
+      "comment_updated_at": "2026-09-22T11:01:56Z",
+      "comment_body_sha256": "21f26a9812a7f00151be3ada77cffeca1344981f50bd58f56b49a7af0f85d2d9",
+      "repo": "steipete/birdclaw",
+      "issue_number": 227,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=9586d44e74b84a74bf01d1769f651f2d3552cffb)",
+      "expected_head_sha": "9586d44e74b84a74bf01d1769f651f2d3552cffb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:02:51.204Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "sweep-3/archive-arrays",
+        "head_sha": "9586d44e74b84a74bf01d1769f651f2d3552cffb",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155419:5771214955:2026-09-22T10:55:33Z:clawsweeper_needs_human",
       "comment_id": "5771214955",
@@ -33173,86 +33253,6 @@
       "status": "skipped",
       "processed_at": "2026-09-22T16:53:55.837Z",
       "target": null
-    },
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:354:5780528834:2026-09-22T16:55:11Z:clawsweeper_needs_human",
-      "comment_id": "5780528834",
-      "comment_version_key": "5780528834:2026-09-22T16:55:11Z",
-      "comment_url": "https://github.com/openclaw/crabpot/pull/354#issuecomment-5780528834",
-      "comment_created_at": "2026-09-22T16:55:11Z",
-      "comment_updated_at": "2026-09-22T16:55:11Z",
-      "comment_body_sha256": "087337707a5b3faf501f6c4f1fd2d5648fdca810998a7df710ea03826e287dd4",
-      "repo": "openclaw/crabpot",
-      "issue_number": 354,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Keep this PR draft until https://github.com/openclaw/crabpot/pull/353 lands, then retarget it to main and mark it ready. (sha=77293e4ae1bd5dfb02cf89850d14cb26679f940c)",
-      "expected_head_sha": "77293e4ae1bd5dfb02cf89850d14cb26679f940c",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T16:56:17.806Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/plugin-resource-beam-20260923",
-        "head_sha": "77293e4ae1bd5dfb02cf89850d14cb26679f940c",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155701:5780532996:2026-09-22T16:55:29Z:re_review",
-      "comment_id": "5780532996",
-      "comment_version_key": "5780532996:2026-09-22T16:55:29Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155701#issuecomment-5780532996",
-      "comment_created_at": "2026-09-22T16:55:29Z",
-      "comment_updated_at": "2026-09-22T16:55:29Z",
-      "comment_body_sha256": "0f543e9b253efe13a56a67ec0f109dff8b467d80186c3dfb7392e620f299d609",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155701,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T16:56:21.079Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-archive-readiness-20260922",
-        "head_sha": "acab2af1208e598bb5585954398c8fbefe9f6764",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
     }
   ]
 }
