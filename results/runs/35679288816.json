@@ -1,0 +1,74 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-103198",
+  "mode": "autonomous",
+  "run_id": "35679288816",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35679288816",
+  "head_sha": "5704037ac1cf9550353a0b69f28e88fb9c4fac38",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-103198.md",
+  "published_at": "2026-09-22T03:01:58.488Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/103198",
+  "canonical_pr": null,
+  "summary": "Source inspection confirms the remaining offloaded-image handoff gap on preflight main eab403af8431e285f3a87c963622e83bfcf13de0. A narrow fix is planned; implementation and failing-regression proof are blocked by the read-only checkout and absent dependencies. GitHub authentication is unavailable for the required fixing-PR and assignee recheck. No files or GitHub state changed.",
+  "actions": [
+    {
+      "target": "#103198",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "Keep the issue open and repair the producer handoff, conditional on a failing regression through the real chat-send boundary."
+    },
+    {
+      "target": "#86371",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only; no closure or other mutation is appropriate."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "A bounded producer-side repair appears viable without configuration, schema, permission, or product changes."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-103198",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": null,
+      "canonical": "#103198",
+      "candidate_fix": null,
+      "reason": "The executor needs a writable checkout with dependencies, must recheck fixing PRs and coordinate with obviyus, then demonstrate the failing regression before editing. Publication remains blocked until implementation, focused validation, changed checks, and review complete."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "keep_closed": 1,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 2,
+    "skipped": 1,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
