@@ -1,39 +1,6 @@
 {
-  "updated_at": "2026-09-22T19:37:46.410Z",
+  "updated_at": "2026-09-22T19:38:04.628Z",
   "commands": [
-    {
-      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155743:5777316191:2026-09-22T14:17:51Z:clawsweeper_needs_human",
-      "comment_id": "5777316191",
-      "comment_version_key": "5777316191:2026-09-22T14:17:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155743#issuecomment-5777316191",
-      "comment_created_at": "2026-09-22T13:22:25Z",
-      "comment_updated_at": "2026-09-22T14:17:51Z",
-      "comment_body_sha256": "d0110729bb0f464bdd9b48c54885614c57bcde3866ab43ecc7ab798cb9ac87ae",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155743,
-      "author": "clawsweeper[bot]",
-      "author_id": 274271284,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "trusted_bot",
-      "command": "clawsweeper needs human",
-      "intent": "clawsweeper_needs_human",
-      "trusted_bot": true,
-      "trusted_bot_author": "clawsweeper[bot]",
-      "automation_source": "clawsweeper",
-      "repair_reason": "- [ ] **Complete next step (P2)** - Obtain independent openclaw/openclaw-secops approval for the security-review workflow change before merge. (sha=cee5231cd0d80b80cd1929bfd4721672801c4501)",
-      "expected_head_sha": "cee5231cd0d80b80cd1929bfd4721672801c4501",
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T14:19:00.814Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "codex/frv-security-checkout-scope-20260922",
-        "head_sha": "cee5231cd0d80b80cd1929bfd4721672801c4501",
-        "cluster_id": null,
-        "job_path": null
-      }
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:154893:5761760302:2026-09-22T14:18:45Z:clawsweeper_needs_human",
       "comment_id": "5761760302",
@@ -33351,6 +33318,53 @@
         {
           "action": "comment",
           "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw-windows-packaging:93:5782697310:2026-09-22T19:31:44Z:re_review",
+      "comment_id": "5782697310",
+      "comment_version_key": "5782697310:2026-09-22T19:31:44Z",
+      "comment_url": "https://github.com/openclaw/openclaw-windows-packaging/pull/93#issuecomment-5782697310",
+      "comment_created_at": "2026-09-22T19:31:44Z",
+      "comment_updated_at": "2026-09-22T19:31:44Z",
+      "comment_body_sha256": "7dd11eb5dd06efff24eb4aae79680e5f6de28429962306cbc66ea4a5d17e6402",
+      "repo": "openclaw/openclaw-windows-packaging",
+      "issue_number": 93,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "claimed",
+      "processed_at": "2026-09-22T19:38:04.627Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/partner-center-package-identity",
+        "head_sha": "a2418fae59833bd8d0ad131769d9e2f77d727f87",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "claimed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "pending",
           "label": null,
           "job_path": null
         }
