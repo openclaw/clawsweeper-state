@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T05:53:33.943Z",
+  "updated_at": "2026-09-22T05:53:56.316Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153215:5769126842:2026-09-21T23:42:37Z:re_review",
-      "comment_id": "5769126842",
-      "comment_version_key": "5769126842:2026-09-21T23:42:37Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153215#issuecomment-5769126842",
-      "comment_created_at": "2026-09-21T23:42:37Z",
-      "comment_updated_at": "2026-09-21T23:42:37Z",
-      "comment_body_sha256": "bdd6ed4a04a2e98c2d4360f6c6f3d4a34dd00607fa518f653416d564ee16a936",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153215,
-      "author": "roboclaw-bot",
-      "author_id": 309084314,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T23:55:45.475Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "perf/streaming-markdown-normalization",
-        "head_sha": "19747452b0d7bc9604818c557855877a9d2e8b3c",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155204:5769161808:2026-09-21T23:45:55Z:re_review",
       "comment_id": "5769161808",
@@ -32636,6 +32589,39 @@
         "kind": "pull_request",
         "branch": "fix/155333-preserve-active-dispatch",
         "head_sha": "ef0770ced4bed2da49168189c02c54790cce0418",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147821:5658743660:2026-09-22T05:49:01Z:clawsweeper_needs_human",
+      "comment_id": "5658743660",
+      "comment_version_key": "5658743660:2026-09-22T05:49:01Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/147821#issuecomment-5658743660",
+      "comment_created_at": "2026-09-14T03:54:09Z",
+      "comment_updated_at": "2026-09-22T05:49:01Z",
+      "comment_body_sha256": "bf773e40ac58a23c5aabd1975c857b372d612072810f66eee87c86ed6375258c",
+      "repo": "openclaw/openclaw",
+      "issue_number": 147821,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Complete next step (P2)** - Record and inspect the completed current-head Package Acceptance result, including the strengthened backup-preservation assertions, before merge. (sha=3de44fda5b28d1337912091ffe2aaf12ce74c251)",
+      "expected_head_sha": "3de44fda5b28d1337912091ffe2aaf12ce74c251",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T05:53:56.316Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "test/update-first-hop-config-preservation",
+        "head_sha": "3de44fda5b28d1337912091ffe2aaf12ce74c251",
         "cluster_id": null,
         "job_path": null
       }
