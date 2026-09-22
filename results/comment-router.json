@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T10:10:59.926Z",
+  "updated_at": "2026-09-22T10:11:14.324Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155442:5771516282:2026-09-22T05:10:33Z:re_review",
-      "comment_id": "5771516282",
-      "comment_version_key": "5771516282:2026-09-22T05:10:33Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155442#issuecomment-5771516282",
-      "comment_created_at": "2026-09-22T05:10:33Z",
-      "comment_updated_at": "2026-09-22T05:10:33Z",
-      "comment_body_sha256": "b63003ef6c6a87027e1802fc3ec52d210c38b93efe7ea9177745b8030120e710",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155442,
-      "author": "zozo123",
-      "author_id": 553010,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T05:58:55.955Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/liquid-adaptive-test-time-compute",
-        "head_sha": "006a8ea21b823b77767e06d6bf5a40dc111e400a",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155436:5771537818:2026-09-22T05:36:05Z:re_review",
       "comment_id": "5771537818",
@@ -33567,6 +33520,39 @@
         "kind": "pull_request",
         "branch": "fix/cli-session-canonical-model-provider",
         "head_sha": "21289db70600ad06d46cb1eda523abd68c66ae42",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155608:5773816428:2026-09-22T10:10:06Z:clawsweeper_needs_human",
+      "comment_id": "5773816428",
+      "comment_version_key": "5773816428:2026-09-22T10:10:06Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155608#issuecomment-5773816428",
+      "comment_created_at": "2026-09-22T08:59:43Z",
+      "comment_updated_at": "2026-09-22T10:10:06Z",
+      "comment_body_sha256": "9d352f789c3d1f886f59346be5d687a1595934797c78d1812fd1bce827226c54",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155608,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=ba703e7e1cad5e2f1a909ecaf92fb7eba73923be)",
+      "expected_head_sha": "ba703e7e1cad5e2f1a909ecaf92fb7eba73923be",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T10:11:14.324Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix-doctor-maintenance-target-admission-20260922",
+        "head_sha": "ba703e7e1cad5e2f1a909ecaf92fb7eba73923be",
         "cluster_id": null,
         "job_path": null
       }
