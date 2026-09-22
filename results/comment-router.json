@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T22:10:55.910Z",
+  "updated_at": "2026-09-22T22:12:11.477Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155841:5780329892:2026-09-22T16:41:31Z:re_review",
-      "comment_id": "5780329892",
-      "comment_version_key": "5780329892:2026-09-22T16:41:31Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155841#issuecomment-5780329892",
-      "comment_created_at": "2026-09-22T16:41:31Z",
-      "comment_updated_at": "2026-09-22T16:41:31Z",
-      "comment_body_sha256": "6a7457c0bcb39a00c450c6040856d02010beff386380aeb01e8687271d9bb470",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155841,
-      "author": "bill-starfoundry",
-      "author_id": 181293782,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T16:49:52.594Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/slack-socket-mode-proxy-dispatcher",
-        "head_sha": "65a8a0e061238fe38700241138440444f4eea60d",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147609:5780356002:2026-09-22T16:43:28Z:re_review",
       "comment_id": "5780356002",
@@ -33604,6 +33557,39 @@
         "kind": "pull_request",
         "branch": "docs/freebsd-model-runtime-guidance",
         "head_sha": "5264f18802cf1c33aaa404da0b8b21de63be3129",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/fs-safe:622:5784983271:2026-09-22T22:11:09Z:clawsweeper_needs_human",
+      "comment_id": "5784983271",
+      "comment_version_key": "5784983271:2026-09-22T22:11:09Z",
+      "comment_url": "https://github.com/openclaw/fs-safe/pull/622#issuecomment-5784983271",
+      "comment_created_at": "2026-09-22T22:07:23Z",
+      "comment_updated_at": "2026-09-22T22:11:09Z",
+      "comment_body_sha256": "dbc06ba542f9072345d8015607c839a47d3d5ad658b80d4532755ef5ece3a14f",
+      "repo": "openclaw/fs-safe",
+      "issue_number": 622,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: Needs real behavior proof before merge: secure-root selection and temporary-file cleanup are covered by tests with injected observations, but t... (sha=e2efdebda4f3378f3f9e9472ab5d73f741e96967)",
+      "expected_head_sha": "e2efdebda4f3378f3f9e9472ab5d73f741e96967",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T22:12:11.477Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/deslop-temp-errno-owner-20260922",
+        "head_sha": "e2efdebda4f3378f3f9e9472ab5d73f741e96967",
         "cluster_id": null,
         "job_path": null
       }
