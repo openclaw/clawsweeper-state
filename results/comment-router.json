@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:09:59.893Z",
+  "updated_at": "2026-09-22T11:10:13.400Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155485:5772215506:2026-09-22T06:36:10Z:re_review",
-      "comment_id": "5772215506",
-      "comment_version_key": "5772215506:2026-09-22T06:36:10Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155485#issuecomment-5772215506",
-      "comment_created_at": "2026-09-22T06:36:10Z",
-      "comment_updated_at": "2026-09-22T06:36:10Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155485,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T06:50:31.305Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "refactor/b22-channels-state",
-        "head_sha": "ceb4a292346ef5ca7fb30e606c4e2c5ab16914d2",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155487:5772215529:2026-09-22T06:36:10Z:re_review",
       "comment_id": "5772215529",
@@ -33657,6 +33610,39 @@
         "kind": "pull_request",
         "branch": "steipete/perf-micro-sessions-list-dirty-materialize-20260919",
         "head_sha": "5185044bcfa2dd20312e08d78392acfb9bf21080",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155683:5775387205:2026-09-22T11:09:15Z:clawsweeper_needs_human",
+      "comment_id": "5775387205",
+      "comment_version_key": "5775387205:2026-09-22T11:09:15Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155683#issuecomment-5775387205",
+      "comment_created_at": "2026-09-22T11:09:15Z",
+      "comment_updated_at": "2026-09-22T11:09:15Z",
+      "comment_body_sha256": "ecafbddb5e24e3c10ee96a90e6999a311f0e0310d8ee746e6344090ac4e624d6",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155683,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add data-model compatibility proof** - Confirm migration or upgrade compatibility proof before merge. (sha=47116c12a3b6f7313d13e7874387e248ca757461)",
+      "expected_head_sha": "47116c12a3b6f7313d13e7874387e248ca757461",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T11:10:13.400Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "codex/fs-safe-secrets-audit-20260922",
+        "head_sha": "47116c12a3b6f7313d13e7874387e248ca757461",
         "cluster_id": null,
         "job_path": null
       }
