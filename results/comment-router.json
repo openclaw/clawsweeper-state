@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-22T19:11:03.219Z",
+  "updated_at": "2026-09-22T19:12:12.185Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155703:5777507180:2026-09-22T13:35:21Z:re_review",
-      "comment_id": "5777507180",
-      "comment_version_key": "5777507180:2026-09-22T13:35:21Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155703#issuecomment-5777507180",
-      "comment_created_at": "2026-09-22T13:35:21Z",
-      "comment_updated_at": "2026-09-22T13:35:21Z",
-      "comment_body_sha256": "4bc2f135b62cebdcd220616e83f8f65b96e4c202659cb67f2f0b56a7057bcbbd",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155703,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T13:58:03.267Z",
-      "target": null
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155751:5777700233:2026-09-22T13:48:24Z:clawsweeper_needs_human",
       "comment_id": "5777700233",
@@ -33305,6 +33278,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:123906:5782409249:2026-09-22T19:10:55Z:re_review",
+      "comment_id": "5782409249",
+      "comment_version_key": "5782409249:2026-09-22T19:10:55Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/123906#issuecomment-5782409249",
+      "comment_created_at": "2026-09-22T19:10:55Z",
+      "comment_updated_at": "2026-09-22T19:10:55Z",
+      "comment_body_sha256": "f4fd7dfd390c44d643094e4d358e3cf62d674326586246d2f5aea479dedb32e7",
+      "repo": "openclaw/openclaw",
+      "issue_number": 123906,
+      "author": "RomneyDa",
+      "author_id": 6581799,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review exact head 3f6b1f33d9fb18c9e59dfb9b400d2ec71c63a9f0 with data-model proof: this pr changes no persisted schema, config shape, state store, migration, backfill, or repair. `src/commands/doctor-whatsapp-responsiveness.ts` only replaces its local read-only process listing with `listlocaltuiprocesses({ targetroot: undefined })`; it does not read or write stored data. the exact-head review itself records “no stored user-data contract changes” and reports no actionable findings. please clear the residual generic data-model checklist item",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T19:11:57.009Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-close-stale-tui-clients",
+        "head_sha": "3f6b1f33d9fb18c9e59dfb9b400d2ec71c63a9f0",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
