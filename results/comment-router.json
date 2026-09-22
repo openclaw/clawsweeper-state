@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-22T20:28:08.875Z",
+  "updated_at": "2026-09-22T20:28:19.390Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155335:5772091320:2026-09-22T06:22:51Z:re_review",
-      "comment_id": "5772091320",
-      "comment_version_key": "5772091320:2026-09-22T06:22:51Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155335#issuecomment-5772091320",
-      "comment_created_at": "2026-09-22T06:22:51Z",
-      "comment_updated_at": "2026-09-22T06:22:51Z",
-      "comment_body_sha256": "4ca45acb7b6e915c9bfda45dd56248d8d69209f102a717ed577140a450d604c1",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155335,
-      "author": "vincentkoc",
-      "author_id": 25068,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T15:07:50.136Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:155335:5772335948:2026-09-22T06:48:56Z:re_review",
       "comment_id": "5772335948",
@@ -33525,6 +33498,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/crabpot:362:5781460391:2026-09-22T20:18:38Z:clawsweeper_needs_human",
+      "comment_id": "5781460391",
+      "comment_version_key": "5781460391:2026-09-22T20:18:38Z",
+      "comment_url": "https://github.com/openclaw/crabpot/pull/362#issuecomment-5781460391",
+      "comment_created_at": "2026-09-22T18:03:23Z",
+      "comment_updated_at": "2026-09-22T20:18:38Z",
+      "comment_body_sha256": "72b0f9376505de662b4dcfed70e53097d0dcd7846d0a08d6fa7687ac55b1f6cd",
+      "repo": "openclaw/crabpot",
+      "issue_number": 362,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Windows fixture preparation still lacks confirmed command readiness and cleanup; the reported EOWNERSTART/EOWNERCLEANUP failures require platform qualification before merge. (sha=42057057a87c84e909fb84c06c2baa4a5b941fc1)",
+      "expected_head_sha": "42057057a87c84e909fb84c06c2baa4a5b941fc1",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T20:28:19.390Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "feat/plugin-resource-tokenjuice-20260923",
+        "head_sha": "42057057a87c84e909fb84c06c2baa4a5b941fc1",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
