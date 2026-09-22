@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
-mode: "plan"
-run_id: "35692623267"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35692623267"
+mode: "autonomous"
+run_id: "35693115665"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35693115665"
 head_sha: "10bbffc1f3020ff56d52d9f89de7b0cb904e3269"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-22T06:00:18.809Z"
-canonical: "#103694"
-canonical_issue: "#103694"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-22T06:43:43.181Z"
+canonical: "https://github.com/openclaw/openclaw/issues/103694"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35692623267](https://github.com/openclaw/clawsweeper/actions/runs/35692623267)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35693115665](https://github.com/openclaw/clawsweeper/actions/runs/35693115665)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #103694
+Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-Plan a narrow shared-validator fix. The clean checkout matches preflight main 4d50b52bce2bd7b18a39d888ea464f167a29ce11. Dependencies are absent; runtime reproduction, implementation, and validation remain executor prerequisites. No files or GitHub state changed.
+The reported validator path remains on preflight main. Implementation and runtime reproduction are blocked because this host is read-only and the pinned SDK dependencies are absent. No files or GitHub state changed. A narrow fix artifact is prepared for the executor, with reproduction required before implementation.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Plan a narrow shared-validator fix. The clean checkout matches preflight main 4d
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | The canonical bug has no viable open fix PR. Prepare one implementation on the designated branch after proving the failure with pinned dependencies. |
-| #103699 | keep_closed | skipped | related | Retain as historical implementation and contributor-credit context. Its historical checks do not validate a new repair. |
+| #103694 | fix_needed | planned | canonical | The source path and hydrated findings support a narrow repair. Local execution is blocked by host constraints, not an unresolved product decision. |
+| #103699 | keep_closed | skipped | related | Preserve the maintainer decision and contributor credit. Do not reopen, close again, or reuse the rejected registry. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | planned | canonical | Artifact preparation is complete. Applying and validating it requires a writable checkout with installed dependencies; reproduce the warning before editing production code. |
 
 ## Needs Human
 
