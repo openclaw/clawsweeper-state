@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-112160"
-mode: "plan"
-run_id: "35761837814"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35761837814"
-head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-22T17:42:32.932Z"
-canonical: "#112160"
+mode: "autonomous"
+run_id: "35762827741"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35762827741"
+head_sha: "efd9be863116673997c5935ba4c06321a3f122c8"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-22T18:27:26.784Z"
+canonical: "https://github.com/openclaw/openclaw/issues/112160"
 canonical_issue: "https://github.com/openclaw/openclaw/issues/112160"
 canonical_pr: null
-actions_total: 5
+actions_total: 7
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35761837814](https://github.com/openclaw/clawsweeper/actions/runs/35761837814)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35762827741](https://github.com/openclaw/clawsweeper/actions/runs/35762827741)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #112160
+Canonical: https://github.com/openclaw/openclaw/issues/112160
 
 ## Summary
 
-Plan a narrow inbound SSH staging repair. Source inspection at preflight main efc15b8fd4ccd9a9349c9d6987e9a8a23a02d8fc confirms local-only staging and skipped uploads for reused runtimes. Runtime reproduction and validation remain pending. No files or GitHub state changed.
+Prepared a narrow fix artifact. Source inspection supports the staging defect, but implementation and runtime reproduction are blocked by the read-only host and missing dependencies. The checkout also differs from preflight main. No files or GitHub state were changed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 5 |
+| Worker actions | 7 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,11 +66,13 @@ Plan a narrow inbound SSH staging repair. Source inspection at preflight main ef
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #112160 | fix_needed | planned | canonical | Preserve the canonical issue and prepare one implementation PR. Closure and merging are prohibited by this job. |
-| #119687 | route_security | planned | security_sensitive | Quarantine this exact PR for central OpenClaw security handling without public mutation. Its historical work does not block an independent repair within existing permissions. |
-| #87089 | keep_closed | skipped | related | Historical context for preprocessing order, distinct from post-seed SSH workspace staging. |
-| #135860 | keep_closed | skipped | related | Distinct source-fetch timing problem; retain existing bounded retry behavior. |
-| #144025 | keep_closed | skipped | related | Distinct discovery failure; no additional action belongs in this cluster. |
+| #112160 | fix_needed | planned | canonical | The canonical report has a source-supported ordinary bug and no viable hydrated open PR. Runtime reproduction must precede implementation. |
+| #119687 | route_security | planned | security_sensitive | Quarantine this historical proposal for central OpenClaw security handling. Do not reopen, modify, adopt its patch, or treat its historical checks as validation for this repair. |
+| #87089 | keep_closed | skipped | related | Historical context only. |
+| #135860 | keep_closed | skipped | related | Distinct historical transport-retry report; preserve existing retry behavior. |
+| #144025 | keep_closed | skipped | related | Distinct historical discovery report. |
+| cluster:issue-openclaw-openclaw-112160 | build_fix_artifact | planned | canonical | A bounded repair appears feasible within existing write permissions, subject to reproduction on reconciled latest main. |
+| cluster:issue-openclaw-openclaw-112160 | open_fix_pr | blocked | canonical | Implementation and publication require a writable isolated executor to reconcile main, reproduce first, implement, review, and validate. Reuse clawsweeper/issue-openclaw-openclaw-112160; do not merge or close. |
 
 ## Needs Human
 

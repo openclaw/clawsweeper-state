@@ -1,0 +1,102 @@
+{
+  "repo": "openclaw/openclaw",
+  "cluster_id": "issue-openclaw-openclaw-112160",
+  "mode": "autonomous",
+  "run_id": "35762827741",
+  "run_url": "https://github.com/openclaw/clawsweeper/actions/runs/35762827741",
+  "head_sha": "efd9be863116673997c5935ba4c06321a3f122c8",
+  "workflow_conclusion": "failure",
+  "workflow_status": null,
+  "workflow_created_at": null,
+  "workflow_updated_at": null,
+  "result_status": "blocked",
+  "automerge_session_id": null,
+  "source_job": "jobs/openclaw/inbox/issue-openclaw-openclaw-112160.md",
+  "published_at": "2026-09-22T18:27:26.784Z",
+  "canonical": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_issue": "https://github.com/openclaw/openclaw/issues/112160",
+  "canonical_pr": null,
+  "summary": "Prepared a narrow fix artifact. Source inspection supports the staging defect, but implementation and runtime reproduction are blocked by the read-only host and missing dependencies. The checkout also differs from preflight main. No files or GitHub state were changed.",
+  "actions": [
+    {
+      "target": "#112160",
+      "action": "fix_needed",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "The canonical report has a source-supported ordinary bug and no viable hydrated open PR. Runtime reproduction must precede implementation."
+    },
+    {
+      "target": "#119687",
+      "action": "route_security",
+      "status": "planned",
+      "classification": "security_sensitive",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Quarantine this historical proposal for central OpenClaw security handling. Do not reopen, modify, adopt its patch, or treat its historical checks as validation for this repair."
+    },
+    {
+      "target": "#87089",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Historical context only."
+    },
+    {
+      "target": "#135860",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct historical transport-retry report; preserve existing retry behavior."
+    },
+    {
+      "target": "#144025",
+      "action": "keep_closed",
+      "status": "skipped",
+      "classification": "related",
+      "canonical": null,
+      "candidate_fix": null,
+      "reason": "Distinct historical discovery report."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112160",
+      "action": "build_fix_artifact",
+      "status": "planned",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "A bounded repair appears feasible within existing write permissions, subject to reproduction on reconciled latest main."
+    },
+    {
+      "target": "cluster:issue-openclaw-openclaw-112160",
+      "action": "open_fix_pr",
+      "status": "blocked",
+      "classification": "canonical",
+      "canonical": "#112160",
+      "candidate_fix": null,
+      "reason": "Implementation and publication require a writable isolated executor to reconcile main, reproduce first, implement, review, and validate. Reuse clawsweeper/issue-openclaw-openclaw-112160; do not merge or close."
+    }
+  ],
+  "action_counts": {
+    "fix_needed": 1,
+    "route_security": 1,
+    "keep_closed": 3,
+    "build_fix_artifact": 1,
+    "open_fix_pr": 1
+  },
+  "action_status_counts": {
+    "planned": 3,
+    "skipped": 3,
+    "blocked": 1
+  },
+  "fix_counts": {},
+  "apply_counts": {},
+  "needs_human": [],
+  "fix_actions": [],
+  "apply_actions": []
+}
