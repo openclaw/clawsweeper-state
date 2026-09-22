@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T06:08:07.388Z",
+  "updated_at": "2026-09-22T06:08:13.615Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155268:5769261326:2026-09-21T23:56:39Z:re_review",
-      "comment_id": "5769261326",
-      "comment_version_key": "5769261326:2026-09-21T23:56:39Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155268#issuecomment-5769261326",
-      "comment_created_at": "2026-09-21T23:56:39Z",
-      "comment_updated_at": "2026-09-21T23:56:39Z",
-      "comment_body_sha256": "e1484e895dcb3c7dde261ae8a6215b4645c1f07a8d21364e777c9e2f2246811c",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155268,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T23:58:09.282Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "backport/extended-stable-macos-pipe-drain",
-        "head_sha": "107469111c1c9c26df8e46a3dc7f0665c143a066",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/clawhub:3794:5769268389:2026-09-21T23:57:34Z:clawsweeper_needs_human",
       "comment_id": "5769268389",
@@ -32782,6 +32735,39 @@
         "kind": "pull_request",
         "branch": "perf/test-acp-poll-latency",
         "head_sha": "90798ecf6ef358fa12083a5d033d13a08bcd82b3",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155300:5771891877:2026-09-22T05:59:57Z:clawsweeper_needs_human",
+      "comment_id": "5771891877",
+      "comment_version_key": "5771891877:2026-09-22T05:59:57Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155300#issuecomment-5771891877",
+      "comment_created_at": "2026-09-22T05:59:57Z",
+      "comment_updated_at": "2026-09-22T05:59:57Z",
+      "comment_body_sha256": "2031e662e50acda7c25e6552a56b92b36cae56f71d5351e8b3d0eea8fe36c568",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155300,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Add real behavior proof** - Needs real behavior proof before merge: The supplied tests exercise config publication and projection dirtiness, but do not show a real Gateway completing sessions.list under repeated... (sha=a2557ac8f1831b30dfa803af482d433bf8b93586)",
+      "expected_head_sha": "a2557ac8f1831b30dfa803af482d433bf8b93586",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T06:08:13.615Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/session-projection-config-republish",
+        "head_sha": "a2557ac8f1831b30dfa803af482d433bf8b93586",
         "cluster_id": null,
         "job_path": null
       }
