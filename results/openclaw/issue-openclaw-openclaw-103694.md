@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
-mode: "autonomous"
-run_id: "35705399798"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35705399798"
+mode: "plan"
+run_id: "35706066330"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35706066330"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T09:44:37.221Z"
-canonical: "https://github.com/openclaw/openclaw/issues/103694"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T09:47:16.848Z"
+canonical: "#103694"
+canonical_issue: "#103694"
 canonical_pr: null
-actions_total: 3
+actions_total: 2
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35705399798](https://github.com/openclaw/clawsweeper/actions/runs/35705399798)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35706066330](https://github.com/openclaw/clawsweeper/actions/runs/35706066330)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/103694
+Canonical: #103694
 
 ## Summary
 
-Prepared a narrow fix artifact. Implementation and runtime reproduction are blocked by the read-only host, absent dependencies, and unavailable preflight main commit. No code or GitHub state changed.
+Plan one narrow MCP validator fix. Checkout matches preflight main 41f119f66004c2944a79e1aaede0bc77dd35c4d2. No changes or runtime tests were performed; dependencies are absent in this read-only checkout. Implementation must first reproduce the warnings.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 2 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,8 @@ Prepared a narrow fix artifact. Implementation and runtime reproduction are bloc
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | The hydrated report and inspected source support a narrow repair, but the executor must reproduce it on verified current main before editing. |
-| #103699 | keep_closed | skipped | related | Leave the historical PR closed and follow the maintainer's dependency-authoritative repair direction. |
-| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | planned |  | Return an actionable, reproduction-gated plan without claiming an implemented or validated fix. |
+| #103694 | fix_needed | planned | canonical | The canonical bug has no active candidate fix. Prepare one implementation on the designated branch, contingent on a failing current-main regression. |
+| #103699 | keep_closed | skipped | related | Historical implementation evidence only. Preserve contributor attribution without reopening, closing again, or treating it as a viable merge candidate. |
 
 ## Needs Human
 
