@@ -1,33 +1,6 @@
 {
-  "updated_at": "2026-09-22T11:05:57.262Z",
+  "updated_at": "2026-09-22T11:06:21.914Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147949:5677966946:2026-09-15T09:35:04Z:re_review",
-      "comment_id": "5677966946",
-      "comment_version_key": "5677966946:2026-09-15T09:35:04Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147949#issuecomment-5677966946",
-      "comment_created_at": "2026-09-15T09:35:04Z",
-      "comment_updated_at": "2026-09-15T09:35:04Z",
-      "comment_body_sha256": "810828812cdcd1f24ca94b6d85a26340e2a33eb417ac88d3bbbb57ca94ae57d2",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147949,
-      "author": "RomneyDa",
-      "author_id": 6581799,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review exact head `4375ae68b55bc47bb03914758f01654007567b66`. rebased onto current main containing the canonical radius repair from #148504. exact-head local proof is clean: `pnpm check:changed` passed; the exact seven changed ui unit files passed; and the exact two changed ui e2e files passed all 3 tests. no pr-owned repair was needed",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "skipped",
-      "processed_at": "2026-09-22T06:30:53.349Z",
-      "target": null
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:147949:5678536068:2026-09-15T10:19:54Z:re_review",
       "comment_id": "5678536068",
@@ -33518,6 +33491,53 @@
         "cluster_id": null,
         "job_path": null
       }
+    },
+    {
+      "idempotency_key": "comment-router:openclaw/openclaw:155679:5775341964:2026-09-22T11:05:22Z:re_review",
+      "comment_id": "5775341964",
+      "comment_version_key": "5775341964:2026-09-22T11:05:22Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/155679#issuecomment-5775341964",
+      "comment_created_at": "2026-09-22T11:05:22Z",
+      "comment_updated_at": "2026-09-22T11:05:22Z",
+      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
+      "repo": "openclaw/openclaw",
+      "issue_number": 155679,
+      "author": "vincentkoc",
+      "author_id": 25068,
+      "author_name": null,
+      "author_association": "MEMBER",
+      "trigger": "mention",
+      "command": "re-review",
+      "intent": "re_review",
+      "trusted_bot": false,
+      "trusted_bot_author": null,
+      "automation_source": null,
+      "repair_reason": null,
+      "expected_head_sha": null,
+      "finding_id": null,
+      "status": "executed",
+      "processed_at": "2026-09-22T11:06:19.609Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/ci-matrix-doctor-fixture-lifetime-20260922",
+        "head_sha": "acce3e8787432d5a1210a9b97abe9de5efab1bcd",
+        "cluster_id": null,
+        "job_path": null
+      },
+      "actions": [
+        {
+          "action": "dispatch_clawsweeper",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        },
+        {
+          "action": "comment",
+          "status": "executed",
+          "label": null,
+          "job_path": null
+        }
+      ]
     }
   ]
 }
