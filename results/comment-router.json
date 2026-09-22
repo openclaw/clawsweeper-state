@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T04:14:03.540Z",
+  "updated_at": "2026-09-22T04:14:12.882Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:155169:5767763482:2026-09-21T21:27:47Z:re_review",
-      "comment_id": "5767763482",
-      "comment_version_key": "5767763482:2026-09-21T21:27:47Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/155169#issuecomment-5767763482",
-      "comment_created_at": "2026-09-21T21:27:47Z",
-      "comment_updated_at": "2026-09-21T21:27:47Z",
-      "comment_body_sha256": "1b64c496cfa8608c1097fed395a478d1f2a39111dc7f9a4b6c0a4f193357c70b",
-      "repo": "openclaw/openclaw",
-      "issue_number": 155169,
-      "author": "fuller-stack-dev",
-      "author_id": 263060202,
-      "author_name": null,
-      "author_association": "MEMBER",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T21:28:37.249Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "openclaw/exact-state-retirement-20260921",
-        "head_sha": "d1a5d299a43707f0413189e93bbf65617cdb93ca",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:155204:5767768353:2026-09-21T21:28:13Z:clawsweeper_auto_repair",
       "comment_id": "5767768353",
@@ -32875,6 +32828,39 @@
         "kind": "pull_request",
         "branch": "codex/plugin-enable-primary",
         "head_sha": "d2dc15a06a09f5083003224f5b0d5903b582a6e2",
+        "cluster_id": null,
+        "job_path": null
+      }
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/openclaw:148066:5660802475:2026-09-22T04:11:43Z:clawsweeper_needs_human",
+      "comment_id": "5660802475",
+      "comment_version_key": "5660802475:2026-09-22T04:11:43Z",
+      "comment_url": "https://github.com/openclaw/openclaw/pull/148066#issuecomment-5660802475",
+      "comment_created_at": "2026-09-14T07:55:46Z",
+      "comment_updated_at": "2026-09-22T04:11:43Z",
+      "comment_body_sha256": "b499c4881600e0aeb8460e50ff494a45882cd215044f461ef0d63577e7c0a631",
+      "repo": "openclaw/openclaw",
+      "issue_number": 148066,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P1)** - Additional macOS recovery callers now spend part of their existing deadline inspecting launchd and defer stopped/free failure when the service is loaded. Installed-updater acceptance... (sha=4261e25fb34c49eb7a5f3bdc218c091831e7836d)",
+      "expected_head_sha": "4261e25fb34c49eb7a5f3bdc218c091831e7836d",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T04:14:12.882Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "fix/update-recovery-supervision-139082",
+        "head_sha": "4261e25fb34c49eb7a5f3bdc218c091831e7836d",
         "cluster_id": null,
         "job_path": null
       }
