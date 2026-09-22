@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T04:33:27.069Z",
+  "updated_at": "2026-09-22T04:35:32.159Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:153628:5768189614:2026-09-21T22:07:41Z:re_review",
-      "comment_id": "5768189614",
-      "comment_version_key": "5768189614:2026-09-21T22:07:41Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/153628#issuecomment-5768189614",
-      "comment_created_at": "2026-09-21T22:07:41Z",
-      "comment_updated_at": "2026-09-21T22:07:41Z",
-      "comment_body_sha256": "1f73b9fdcd39a5084718ee3ed5bb9ce8746b74a4c0cbb0916cda890988dc8ced",
-      "repo": "openclaw/openclaw",
-      "issue_number": 153628,
-      "author": "zozo123",
-      "author_id": 553010,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-21T22:08:38.303Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "feat/swarm-evidence-convergence",
-        "head_sha": "8d201328a14205c792f7964ac023c0a3c598a8cd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "comment-router:openclaw/openclaw:153627:5768189117:2026-09-21T22:07:38Z:re_review",
       "comment_id": "5768189117",
@@ -32846,6 +32799,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:openclaw/clawsweeper:1632:5760619480:2026-09-22T04:07:44Z:clawsweeper_needs_human",
+      "comment_id": "5760619480",
+      "comment_version_key": "5760619480:2026-09-22T04:07:44Z",
+      "comment_url": "https://github.com/openclaw/clawsweeper/pull/1632#issuecomment-5760619480",
+      "comment_created_at": "2026-09-21T12:39:20Z",
+      "comment_updated_at": "2026-09-22T04:07:44Z",
+      "comment_body_sha256": "63477448092e6413988743a850f466cc0ab4e2148b5232cbe8f1700a5df481d0",
+      "repo": "openclaw/clawsweeper",
+      "issue_number": 1632,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "CONTRIBUTOR",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "structured ClawSweeper verdict: needs-human (sha=8eae6c0dde0739e4509e1e9f9293574903f57bda)",
+      "expected_head_sha": "8eae6c0dde0739e4509e1e9f9293574903f57bda",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T04:35:32.159Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "jesse/endor-enrollment-review-race",
+        "head_sha": "8eae6c0dde0739e4509e1e9f9293574903f57bda",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
