@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-103694"
-mode: "plan"
-run_id: "35696564376"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35696564376"
+mode: "autonomous"
+run_id: "35697372545"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35697372545"
 head_sha: "0faf028616ec7e71e4331cd644bcd990c64b0d83"
-workflow_conclusion: "success"
-result_status: "planned"
-published_at: "2026-09-22T06:52:52.686Z"
-canonical: "#103694"
-canonical_issue: "#103694"
+workflow_conclusion: "failure"
+result_status: "blocked"
+published_at: "2026-09-22T08:06:45.317Z"
+canonical: "https://github.com/openclaw/openclaw/issues/103694"
+canonical_issue: "https://github.com/openclaw/openclaw/issues/103694"
 canonical_pr: null
-actions_total: 2
+actions_total: 3
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35696564376](https://github.com/openclaw/clawsweeper/actions/runs/35696564376)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35697372545](https://github.com/openclaw/clawsweeper/actions/runs/35697372545)
 
-Workflow conclusion: success
+Workflow conclusion: failure
 
-Worker result: planned
+Worker result: blocked
 
-Canonical: #103694
+Canonical: https://github.com/openclaw/openclaw/issues/103694
 
 ## Summary
 
-Plan one narrow MCP validator fix. The clean checkout matches preflight main fd090e2f35dd15fdbcc0a99a067fbff889fb2c5e. Runtime reproduction and tests remain pending: dependencies are absent and this worker is read-only. No files or GitHub state changed.
+Prepared a narrow fix artifact. Implementation and reproduction are blocked by the read-only host, missing dependencies, and an unavailable preflight main commit. No files or GitHub state changed; no runtime validation claimed.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 2 |
+| Worker actions | 3 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,8 +66,9 @@ Plan one narrow MCP validator fix. The clean checkout matches preflight main fd0
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #103694 | fix_needed | planned | canonical | An ordinary warning-noise bug has a clear owner and approved scope. Prepare implementation only after reproducing against the pinned dependencies on current main. |
-| #103699 | keep_closed | skipped | related | Retain as historical implementation and review context. Preserve contributor credit without reopening or reusing the rejected registry. |
+| #103694 | fix_needed | planned | canonical | The hydrated report supports a narrow warning fix, but the executor must reproduce it on verified current main before editing. |
+| #103699 | keep_closed | skipped | related | Historical implementation evidence only. Preserve contributor credit and the maintainer's design constraint without reopening or closing this PR. |
+| cluster:issue-openclaw-openclaw-103694 | build_fix_artifact | planned |  | Artifact preparation is complete; implementation remains blocked on a writable executor with verified current main and installed dependencies. |
 
 ## Needs Human
 
