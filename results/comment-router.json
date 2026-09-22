@@ -1,53 +1,6 @@
 {
-  "updated_at": "2026-09-22T19:48:19.285Z",
+  "updated_at": "2026-09-22T19:48:46.662Z",
   "commands": [
-    {
-      "idempotency_key": "comment-router:openclaw/openclaw:147026:5778119435:2026-09-22T14:14:55Z:re_review",
-      "comment_id": "5778119435",
-      "comment_version_key": "5778119435:2026-09-22T14:14:55Z",
-      "comment_url": "https://github.com/openclaw/openclaw/pull/147026#issuecomment-5778119435",
-      "comment_created_at": "2026-09-22T14:14:55Z",
-      "comment_updated_at": "2026-09-22T14:14:55Z",
-      "comment_body_sha256": "55a2734699d9170ac5ac6cf3ef22073742fac4dcbcb0ecc5b893911ff6914414",
-      "repo": "openclaw/openclaw",
-      "issue_number": 147026,
-      "author": "zeroaltitude",
-      "author_id": 102749,
-      "author_name": null,
-      "author_association": "CONTRIBUTOR",
-      "trigger": "mention",
-      "command": "re-review",
-      "intent": "re_review",
-      "trusted_bot": false,
-      "trusted_bot_author": null,
-      "automation_source": null,
-      "repair_reason": null,
-      "expected_head_sha": null,
-      "finding_id": null,
-      "status": "executed",
-      "processed_at": "2026-09-22T14:28:41.172Z",
-      "target": {
-        "kind": "pull_request",
-        "branch": "fix/followup-drain-terminal",
-        "head_sha": "352f622015490c41df8e1ec398f41b58a005c5bd",
-        "cluster_id": null,
-        "job_path": null
-      },
-      "actions": [
-        {
-          "action": "dispatch_clawsweeper",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        },
-        {
-          "action": "comment",
-          "status": "executed",
-          "label": null,
-          "job_path": null
-        }
-      ]
-    },
     {
       "idempotency_key": "clawsweeper-repair:openclaw/openclaw:147026:5653354698:2026-09-22T14:27:27Z:clawsweeper_needs_human",
       "comment_id": "5653354698",
@@ -33425,6 +33378,39 @@
           "job_path": null
         }
       ]
+    },
+    {
+      "idempotency_key": "clawsweeper-repair:steipete/CodexBar:3878:5782945759:2026-09-22T19:47:42Z:clawsweeper_needs_human",
+      "comment_id": "5782945759",
+      "comment_version_key": "5782945759:2026-09-22T19:47:42Z",
+      "comment_url": "https://github.com/steipete/CodexBar/pull/3878#issuecomment-5782945759",
+      "comment_created_at": "2026-09-22T19:47:42Z",
+      "comment_updated_at": "2026-09-22T19:47:42Z",
+      "comment_body_sha256": "85997e90c4bddec07c0888a512aee3bfac9f9f99a6c1a529bb4d32ca2f0268ad",
+      "repo": "steipete/CodexBar",
+      "issue_number": 3878,
+      "author": "clawsweeper[bot]",
+      "author_id": 274271284,
+      "author_name": null,
+      "author_association": "NONE",
+      "trigger": "trusted_bot",
+      "command": "clawsweeper needs human",
+      "intent": "clawsweeper_needs_human",
+      "trusted_bot": true,
+      "trusted_bot_author": "clawsweeper[bot]",
+      "automation_source": "clawsweeper",
+      "repair_reason": "- [ ] **Resolve merge risk (P2)** - A reviewer with video playback should inspect the already-supplied recording to independently confirm the Help click opens the README; local video preparation and the web fallback wer... (sha=6336404a3fd047986dec42993fa9cd1751abaaeb)",
+      "expected_head_sha": "6336404a3fd047986dec42993fa9cd1751abaaeb",
+      "finding_id": null,
+      "status": "skipped",
+      "processed_at": "2026-09-22T19:48:46.662Z",
+      "target": {
+        "kind": "pull_request",
+        "branch": "help-button-docs-link",
+        "head_sha": "6336404a3fd047986dec42993fa9cd1751abaaeb",
+        "cluster_id": null,
+        "job_path": null
+      }
     }
   ]
 }
