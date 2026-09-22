@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155588"
-mode: "autonomous"
-run_id: "35706910009"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35706910009"
+mode: "plan"
+run_id: "35711064415"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35711064415"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T08:57:57.567Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155588"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155588"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T09:40:12.695Z"
+canonical: "#155588"
+canonical_issue: "#155588"
 canonical_pr: null
-actions_total: 6
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35706910009](https://github.com/openclaw/clawsweeper/actions/runs/35706910009)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35711064415](https://github.com/openclaw/clawsweeper/actions/runs/35711064415)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155588
+Canonical: #155588
 
 ## Summary
 
-Source inspection confirms the remaining notification-destination defect on preflight main. A narrow fix artifact is ready for the executor. Implementation, failing regression, and browser validation are blocked on this read-only host with dependencies absent. No files or GitHub state changed.
+Plan a narrow repair for completed automation Web Push navigation. Preserve the released run-history fix and open the notification's historical transcript through the existing automation route. No changes or runtime tests were performed; latest-main reproduction remains a prerequisite.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 6 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,12 +66,7 @@ Source inspection confirms the remaining notification-destination defect on pref
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155588 | fix_needed | planned | canonical | The run-history repair is present, but completion notification navigation still depends on a disposable session alias. Runtime reproduction remains an executor prerequisite. |
-| #131816 | keep_closed | skipped | related | Preserve existing missing-session behavior; no action on this closed reference. |
-| #134373 | keep_closed | skipped | related | Historical context only; session cleanup changes are outside this repair. |
-| #148211 | keep_closed | skipped | related | Preserve and reuse the shipped transcript repair. It does not fully cover the remaining notification defect. |
-| cluster:issue-openclaw-openclaw-155588 | build_fix_artifact | planned |  | A narrow bug repair can reuse existing routing and retained history without a new persistence or configuration contract. |
-| cluster:issue-openclaw-openclaw-155588 | open_fix_pr | blocked |  | Executor must establish the failing regression on refreshed main, implement and validate the repair, obtain fresh review, then create or update the single authorized PR. |
+| #155588 | fix_needed | planned | canonical | The remaining notification defect has a bounded repair path. Historical closed references require no actions, and the supplied evidence does not establish that the remaining defect is already fixed. |
 
 ## Needs Human
 
