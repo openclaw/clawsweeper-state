@@ -1,17 +1,17 @@
 ---
 repo: "openclaw/openclaw"
 cluster_id: "issue-openclaw-openclaw-155820"
-mode: "autonomous"
-run_id: "35753271463"
-run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35753271463"
+mode: "plan"
+run_id: "35758144364"
+run_url: "https://github.com/openclaw/clawsweeper/actions/runs/35758144364"
 head_sha: "f23003eb07f58d2895a9cc639d814d7ce75a2e49"
-workflow_conclusion: "failure"
-result_status: "blocked"
-published_at: "2026-09-22T16:37:41.535Z"
-canonical: "https://github.com/openclaw/openclaw/issues/155820"
-canonical_issue: "https://github.com/openclaw/openclaw/issues/155820"
+workflow_conclusion: "success"
+result_status: "planned"
+published_at: "2026-09-22T17:37:02.391Z"
+canonical: "#155820"
+canonical_issue: "#155820"
 canonical_pr: null
-actions_total: 3
+actions_total: 1
 fix_executed: 0
 fix_failed: 0
 fix_blocked: 0
@@ -25,23 +25,23 @@ needs_human_count: 0
 
 Repo: openclaw/openclaw
 
-Run: [https://github.com/openclaw/clawsweeper/actions/runs/35753271463](https://github.com/openclaw/clawsweeper/actions/runs/35753271463)
+Run: [https://github.com/openclaw/clawsweeper/actions/runs/35758144364](https://github.com/openclaw/clawsweeper/actions/runs/35758144364)
 
-Workflow conclusion: failure
+Workflow conclusion: success
 
-Worker result: blocked
+Worker result: planned
 
-Canonical: https://github.com/openclaw/openclaw/issues/155820
+Canonical: #155820
 
 ## Summary
 
-Reproduced the scoped channel-name defect through the production resolver using an in-memory fixture. Prepared a narrow fix artifact. Implementation is blocked by the read-only checkout, missing dependencies, and an unverified preflight base. No files or GitHub state changed.
+Plan a narrow repair for the secondary Slack channel-name classification bug. Checkout matches preflight main ddde193e26f808cc66fddc544511dbb1d276407d. No files or GitHub state changed; runtime reproduction and validation remain required.
 
 ## Impact
 
 | Metric | Count |
 | --- | ---: |
-| Worker actions | 3 |
+| Worker actions | 1 |
 | Fix executed | 0 |
 | Fix failed | 0 |
 | Fix blocked | 0 |
@@ -66,9 +66,7 @@ Reproduced the scoped channel-name defect through the production resolver using 
 
 | Target | Action | Status | Classification | Reason |
 | --- | --- | --- | --- | --- |
-| #155820 | fix_needed | planned | canonical | Repair the established name-resolution bug only; no security-boundary or DM authorization change is needed. |
-| cluster:issue-openclaw-openclaw-155820 | build_fix_artifact | planned |  | A narrow new-fix PR is appropriate once current-main reproduction and executor prerequisites are satisfied. |
-| cluster:issue-openclaw-openclaw-155820 | open_fix_pr | blocked |  | The executor must establish current main, reproduce with the existing Vitest fixture, implement and validate the patch, and obtain fresh review before opening or updating the PR. |
+| #155820 | fix_needed | planned | canonical | The ordinary parsing defect has a narrow repair path. The reported DM denial remains outside that repair's demonstrated coverage. |
 
 ## Needs Human
 
